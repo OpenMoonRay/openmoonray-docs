@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_deeec87419ea9eb9b92502c518cd46b4.html">lpe</a></li><li class="navelem"><a class="el" href="dir_6cc303e4507bd7b7f09f277bcb561ba4.html">osl</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('lpexp_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">lpexp.h</div></div>
 </div><!--header-->
@@ -51,8 +67,10 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2016 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file lpexp.h</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Brian Green</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"></span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">Copyright (c) 2009-2010 Sony Pictures Imageworks Inc., et al.</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">All Rights Reserved.</span></div>
@@ -93,8 +111,9 @@ $(function() {
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// This is just a pair of states, see the use of the function genAuto in LPexp</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// for a justification of this type that we use throughout all the regexp code</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="namespacelpexp.html#a4487868d5aa11faafc330ab1e465010b">   48</a></span><span class="keyword">typedef</span> std::pair&lt;NdfAutomata::State *, NdfAutomata::State *&gt; <a class="code hl_typedef" href="namespacelpexp.html#a4487868d5aa11faafc330ab1e465010b">FirstLast</a>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="namespacelpexp.html#a17a89e98bfd8d490194978fa7b72f76c">   51</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"></span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">/// LPexp atom type for the getType method</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="namespacelpexp.html#a17a89e98bfd8d490194978fa7b72f76c">   51</a></span><span class="comment"></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="namespacelpexp.html#a17a89e98bfd8d490194978fa7b72f76ca8df8e6ecdffc48b3d822cc4ade147215">   52</a></span>    <a class="code hl_enumvalue" href="namespacelpexp.html#a17a89e98bfd8d490194978fa7b72f76ca8df8e6ecdffc48b3d822cc4ade147215">CAT</a>,</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="namespacelpexp.html#a17a89e98bfd8d490194978fa7b72f76ca128364d634b63ad551286fdaa076ef31">   53</a></span>    <a class="code hl_enumvalue" href="namespacelpexp.html#a17a89e98bfd8d490194978fa7b72f76ca128364d634b63ad551286fdaa076ef31">OR</a>,</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="namespacelpexp.html#a17a89e98bfd8d490194978fa7b72f76caa92cb1f660496fb68e6347d10573169c">   54</a></span>    <a class="code hl_enumvalue" href="namespacelpexp.html#a17a89e98bfd8d490194978fa7b72f76caa92cb1f660496fb68e6347d10573169c">SYMBOL</a>,</div>
@@ -104,20 +123,46 @@ $(function() {
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="namespacelpexp.html#a17a89e98bfd8d490194978fa7b72f76ca55094ea59fda02297df7686325e62b3b">   58</a></span>}<a class="code hl_enumeration" href="namespacelpexp.html#a17a89e98bfd8d490194978fa7b72f76c">Regtype</a>;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">//</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"></span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">/// Base class for a light path expression</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"></span><span class="comment">//</span><span class="comment"></span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">/// Light path expressions are arranged as an abstract syntax tree. All the</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">/// nodes in that tree satisfy this interface that basicaly makes the automate</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">/// generation easy and clear.</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">///</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">/// The node types for this tree are:</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">///     CAT:      Concatenation of regexps like abcde or (abcde)</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">///     OR:        Ored union of two or more expressions like a|b|c|d</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">///     SYMBOL    Just a symbol like G or &#39;customlabel&#39;</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">///     WILDCARD The wildcard regexp for . or [^GS]</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">///     REPEAT    Generic unlimited repetition of the child expression (exp)*</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">///     NREPEAT  Bounded repetition of the child expression like (exp){n,m}</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">///</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classlpexp_1_1_l_pexp.html">   76</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classlpexp_1_1_l_pexp.html">LPexp</a> {</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classlpexp_1_1_l_pexp.html#a46172faa4d80d5b9803a918ca56ebd70">   78</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classlpexp_1_1_l_pexp.html#a46172faa4d80d5b9803a918ca56ebd70">~LPexp</a>() {};</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classlpexp_1_1_l_pexp.html#ae1946e62fec1d7b4bd17e1d6b9720475">   88</a></span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacelpexp.html#a4487868d5aa11faafc330ab1e465010b">FirstLast</a> <a class="code hl_function" href="classlpexp_1_1_l_pexp.html#ae1946e62fec1d7b4bd17e1d6b9720475">genAuto</a>(<a class="code hl_class" href="class_ndf_automata.html">NdfAutomata</a> &amp;automata)<span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classlpexp_1_1_l_pexp.html#aa45b9e8c424ea79053b8f69ba451198f">   90</a></span>        <span class="keyword">virtual</span> <a class="code hl_enumeration" href="namespacelpexp.html#a17a89e98bfd8d490194978fa7b72f76c">Regtype</a> <a class="code hl_function" href="classlpexp_1_1_l_pexp.html#aa45b9e8c424ea79053b8f69ba451198f">getType</a>()<span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classlpexp_1_1_l_pexp.html#abb052579d7f4abd7b704bd5bdfe7abfe">   94</a></span>        <span class="keyword">virtual</span> <a class="code hl_class" href="classlpexp_1_1_l_pexp.html">LPexp</a> * <a class="code hl_function" href="classlpexp_1_1_l_pexp.html#abb052579d7f4abd7b704bd5bdfe7abfe">clone</a>()<span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"></span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">        /// Generate automata states for this subtree</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">        ///</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">        /// This method recursively builds all the needed automata states of</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">        /// the tree rooted by this node and returns the begin and end states</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">        /// for it. That means that if it were the only thing in the automata,</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">        /// making retvalue.first initial state and retvalue.second final state,</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">        /// would be the right thing to do.</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">        ///</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classlpexp_1_1_l_pexp.html#ae1946e62fec1d7b4bd17e1d6b9720475">   88</a></span><span class="comment"></span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacelpexp.html#a4487868d5aa11faafc330ab1e465010b">FirstLast</a> <a class="code hl_function" href="classlpexp_1_1_l_pexp.html#ae1946e62fec1d7b4bd17e1d6b9720475">genAuto</a>(<a class="code hl_class" href="class_ndf_automata.html">NdfAutomata</a> &amp;automata)<span class="keyword">const</span> = 0;<span class="comment"></span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">        /// Get the type for this node</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classlpexp_1_1_l_pexp.html#aa45b9e8c424ea79053b8f69ba451198f">   90</a></span><span class="comment"></span>        <span class="keyword">virtual</span> <a class="code hl_enumeration" href="namespacelpexp.html#a17a89e98bfd8d490194978fa7b72f76c">Regtype</a> <a class="code hl_function" href="classlpexp_1_1_l_pexp.html#aa45b9e8c424ea79053b8f69ba451198f">getType</a>()<span class="keyword">const</span> = 0;<span class="comment"></span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">        /// For the parser&#39;s convenience. It is easy to implement things like a+</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">        /// as aa*. So the amount of regexp classes gets reduced. For doing that</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">        /// it needs an abstract clone function</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classlpexp_1_1_l_pexp.html#abb052579d7f4abd7b704bd5bdfe7abfe">   94</a></span><span class="comment"></span>        <span class="keyword">virtual</span> <a class="code hl_class" href="classlpexp_1_1_l_pexp.html">LPexp</a> * <a class="code hl_function" href="classlpexp_1_1_l_pexp.html#abb052579d7f4abd7b704bd5bdfe7abfe">clone</a>()<span class="keyword">const</span> = 0;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>};</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classlpexp_1_1_cat.html">  100</a></span><span class="keyword">class </span><a class="code hl_class" href="classlpexp_1_1_cat.html">Cat</a> : <span class="keyword">public</span> <a class="code hl_class" href="classlpexp_1_1_l_pexp.html">LPexp</a> {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"></span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">/// LPexp concatenation</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classlpexp_1_1_cat.html">  100</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classlpexp_1_1_cat.html">Cat</a> : <span class="keyword">public</span> <a class="code hl_class" href="classlpexp_1_1_l_pexp.html">LPexp</a> {</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classlpexp_1_1_cat.html#a0bd6d6f955bdcbe74f0118c74779cdf8">~Cat</a>();</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classlpexp_1_1_cat.html#aacae95585b9850df2192fbeac789132e">append</a>(<a class="code hl_class" href="classlpexp_1_1_l_pexp.html">LPexp</a> *regexp);</div>
@@ -130,8 +175,9 @@ $(function() {
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>};</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classlpexp_1_1_symbol.html">  115</a></span><span class="keyword">class </span><a class="code hl_class" href="classlpexp_1_1_symbol.html">Symbol</a> : <span class="keyword">public</span> <a class="code hl_class" href="classlpexp_1_1_l_pexp.html">LPexp</a> {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment"></span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">/// Basic symbol like G or &#39;customlabel&#39;</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classlpexp_1_1_symbol.html">  115</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classlpexp_1_1_symbol.html">Symbol</a> : <span class="keyword">public</span> <a class="code hl_class" href="classlpexp_1_1_l_pexp.html">LPexp</a> {</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="classlpexp_1_1_symbol.html#a382391ea8b1026d2ffc4893f77b67eb1">  117</a></span>        <a class="code hl_function" href="classlpexp_1_1_symbol.html#a382391ea8b1026d2ffc4893f77b67eb1">Symbol</a>(ustring sym) : <a class="code hl_variable" href="classlpexp_1_1_symbol.html#a5ef1fbefbbc170fa8d950cab8021601c">m_sym</a>(sym) { };</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="classlpexp_1_1_symbol.html#adcd001b42ac0124e4ada0a9d47a98e15">  118</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classlpexp_1_1_symbol.html#adcd001b42ac0124e4ada0a9d47a98e15">~Symbol</a>() {};</div>
@@ -146,8 +192,11 @@ $(function() {
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>};</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="classlpexp_1_1_wildexp.html">  134</a></span><span class="keyword">class </span><a class="code hl_class" href="classlpexp_1_1_wildexp.html">Wildexp</a> : <span class="keyword">public</span> <a class="code hl_class" href="classlpexp_1_1_l_pexp.html">LPexp</a> {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment"></span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">/// Wildcard regexp</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">///</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">/// Named like this to avoid confusion with the automata Wildcard class</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="classlpexp_1_1_wildexp.html">  134</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classlpexp_1_1_wildexp.html">Wildexp</a> : <span class="keyword">public</span> <a class="code hl_class" href="classlpexp_1_1_l_pexp.html">LPexp</a> {</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="classlpexp_1_1_wildexp.html#a0ab9916f61e6dfe249159f77bfae5e4d">  136</a></span>        <a class="code hl_function" href="classlpexp_1_1_wildexp.html#a0ab9916f61e6dfe249159f77bfae5e4d">Wildexp</a>(<a class="code hl_typedef" href="automata_8h.html#a9ec64fac8f9f3cd17ae3d70c7b3915d5">SymbolSet</a> &amp;minus):<a class="code hl_variable" href="classlpexp_1_1_wildexp.html#a18ca8db1ef069b69132d2d2e8ce8d486">m_wildcard</a>(minus) {};</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="classlpexp_1_1_wildexp.html#a02f76aa14d88fd5fd9d79253c8c7028a">  137</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classlpexp_1_1_wildexp.html#a02f76aa14d88fd5fd9d79253c8c7028a">~Wildexp</a>() {};</div>
@@ -162,8 +211,9 @@ $(function() {
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>};</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="classlpexp_1_1_orlist.html">  151</a></span><span class="keyword">class </span><a class="code hl_class" href="classlpexp_1_1_orlist.html">Orlist</a> : <span class="keyword">public</span> <a class="code hl_class" href="classlpexp_1_1_l_pexp.html">LPexp</a> {</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment"></span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">/// Ored list of expressions</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="classlpexp_1_1_orlist.html">  151</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classlpexp_1_1_orlist.html">Orlist</a> : <span class="keyword">public</span> <a class="code hl_class" href="classlpexp_1_1_l_pexp.html">LPexp</a> {</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classlpexp_1_1_orlist.html#a92405b7e12a278d726ec82d3908f34cf">~Orlist</a>();</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classlpexp_1_1_orlist.html#a33c85d68cae98310e284bd8ebd490708">append</a>(<a class="code hl_class" href="classlpexp_1_1_l_pexp.html">LPexp</a> *regexp);</div>
@@ -207,8 +257,14 @@ $(function() {
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>};</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="classlpexp_1_1_rule.html">  202</a></span><span class="keyword">class </span><a class="code hl_class" href="classlpexp_1_1_rule.html">Rule</a></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment"></span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">/// Toplevel rule definition</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">///</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">/// Note that although it has almost the same interface, this is not</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">/// a LPexp. It actually binds a light path expression to a certain rule.</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">/// Making the begin state initial and the end state final. It can&#39;t be</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">/// nested in other light path expressions, it is the root of the tree.</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="classlpexp_1_1_rule.html">  202</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classlpexp_1_1_rule.html">Rule</a></div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>{</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="classlpexp_1_1_rule.html#a0501c505796ff91c9453407334a147bf">  205</a></span>        <a class="code hl_function" href="classlpexp_1_1_rule.html#a0501c505796ff91c9453407334a147bf">Rule</a>(<a class="code hl_class" href="classlpexp_1_1_l_pexp.html">LPexp</a> *child, <span class="keywordtype">void</span> *rule):<a class="code hl_variable" href="classlpexp_1_1_rule.html#a5f48bcccdd8f2b721b2d787c39fdc576">m_child</a>(child), <a class="code hl_variable" href="classlpexp_1_1_rule.html#a24df090c6dcf18c3057c3d4cb7fcf6ca">m_rule</a>(rule) {};</div>
@@ -299,9 +355,13 @@ $(function() {
 <div class="ttc" id="aoslconfig_8h_html_ad4b1897c99edd5e6ecd8c1c26b6238c6"><div class="ttname"><a href="oslconfig_8h.html#ad4b1897c99edd5e6ecd8c1c26b6238c6">OSL_NAMESPACE_EXIT</a></div><div class="ttdeci">#define OSL_NAMESPACE_EXIT</div><div class="ttdef"><b>Definition:</b> <a href="oslconfig_8h_source.html#l00047">oslconfig.h:47</a></div></div>
 <div class="ttc" id="astruct_wildcard_html"><div class="ttname"><a href="struct_wildcard.html">Wildcard</a></div><div class="ttdef"><b>Definition:</b> <a href="automata_8h_source.html#l00078">automata.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_f5606880827968bf57135260db82a82e.html">lpe</a></li><li class="navelem"><a class="el" href="dir_6c52073d31cd8bdda894701b87673579.html">osl</a></li><li class="navelem"><a class="el" href="lpexp_8h.html">lpexp.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

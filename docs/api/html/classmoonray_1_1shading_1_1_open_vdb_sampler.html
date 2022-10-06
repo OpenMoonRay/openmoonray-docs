@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,28 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">OpenVdbSampler</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_open_vdb_sampler.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_open_vdb_sampler-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::OpenVdbSampler Class Reference</div></div>
 </div><!--header-->
@@ -80,6 +97,23 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7c1c672b38f7452e5e79f7c36805615f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f56ffa00f28ff08c86278df47bbaa28"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a7f56ffa00f28ff08c86278df47bbaa28">getValueType</a> () const</td></tr>
 <tr class="separator:a7f56ffa00f28ff08c86278df47bbaa28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac6ce499be63d6db1fe234e72520e96be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ac6ce499be63d6db1fe234e72520e96be">mIsInitialized</a></td></tr>
+<tr class="separator:ac6ce499be63d6db1fe234e72520e96be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b9a7e221a98e289e04a50f72b5145a"><td class="memItemLeft" align="right" valign="top">openvdb::GridBase::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a90b9a7e221a98e289e04a50f72b5145a">mGrid</a></td></tr>
+<tr class="separator:a90b9a7e221a98e289e04a50f72b5145a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ea1a373154786452ff454847b1805c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classmoonray_1_1texture_1_1_v_d_b_sampler.html">moonray::texture::VDBSampler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ab8ea1a373154786452ff454847b1805c">mSampler</a></td></tr>
+<tr class="separator:ab8ea1a373154786452ff454847b1805c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add13e2b8e50176cdd074b9fdd5354c9b"><td class="memItemLeft" align="right" valign="top">const scene_rdl2::math::Mat4d *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#add13e2b8e50176cdd074b9fdd5354c9b">mR2W</a></td></tr>
+<tr class="separator:add13e2b8e50176cdd074b9fdd5354c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d1ae83e2eb4470260f615234bd2982d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a7d1ae83e2eb4470260f615234bd2982d">mFileName</a></td></tr>
+<tr class="separator:a7d1ae83e2eb4470260f615234bd2982d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9acd34870328744d406e0d91db5d8ded"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a9acd34870328744d406e0d91db5d8ded">mGridName</a></td></tr>
+<tr class="separator:a9acd34870328744d406e0d91db5d8ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8dfedbcfd0127c3570b8367e5904aa9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ab8dfedbcfd0127c3570b8367e5904aa9">mValueType</a></td></tr>
+<tr class="separator:ab8dfedbcfd0127c3570b8367e5904aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -111,7 +145,15 @@ Public Member Functions</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="_open_vdb_sampler_8h_source.html#l00032">32</a> of file <a class="el" href="_open_vdb_sampler_8h_source.html">OpenVdbSampler.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   33</span>    {</div>
+<div class="line"><span class="lineno">   34</span>        <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a0c8da5055a8c778bac15b6c74b3a94c0a2a3cd5946cfd317eb99c3d32e35e2d4c">Point</a>,</div>
+<div class="line"><span class="lineno">   35</span>        <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a0c8da5055a8c778bac15b6c74b3a94c0a3cfce651e667ab85486dd42a8185f98a">Box</a>,</div>
+<div class="line"><span class="lineno">   36</span>        <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a0c8da5055a8c778bac15b6c74b3a94c0a8b2972385ed28d0e199ae2985d6fea4c">Quadratic</a>,</div>
+<div class="line"><span class="lineno">   37</span>    };</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_open_vdb_sampler_html_a0c8da5055a8c778bac15b6c74b3a94c0a2a3cd5946cfd317eb99c3d32e35e2d4c"><div class="ttname"><a href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a0c8da5055a8c778bac15b6c74b3a94c0a2a3cd5946cfd317eb99c3d32e35e2d4c">moonray::shading::OpenVdbSampler::Interpolation::Point</a></div><div class="ttdeci">@ Point</div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_open_vdb_sampler_html_a0c8da5055a8c778bac15b6c74b3a94c0a3cfce651e667ab85486dd42a8185f98a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a0c8da5055a8c778bac15b6c74b3a94c0a3cfce651e667ab85486dd42a8185f98a">moonray::shading::OpenVdbSampler::Interpolation::Box</a></div><div class="ttdeci">@ Box</div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_open_vdb_sampler_html_a0c8da5055a8c778bac15b6c74b3a94c0a8b2972385ed28d0e199ae2985d6fea4c"><div class="ttname"><a href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a0c8da5055a8c778bac15b6c74b3a94c0a8b2972385ed28d0e199ae2985d6fea4c">moonray::shading::OpenVdbSampler::Interpolation::Quadratic</a></div><div class="ttdeci">@ Quadratic</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -131,7 +173,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_open_vdb_sampler_8cc_source.html#l00074">74</a> of file <a class="el" href="_open_vdb_sampler_8cc_source.html">OpenVdbSampler.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   74</span>                               :</div>
+<div class="line"><span class="lineno">   75</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ac6ce499be63d6db1fe234e72520e96be">mIsInitialized</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#add13e2b8e50176cdd074b9fdd5354c9b">mR2W</a>(<span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   77</span>{</div>
+<div class="line"><span class="lineno">   78</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_open_vdb_sampler_html_ac6ce499be63d6db1fe234e72520e96be"><div class="ttname"><a href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ac6ce499be63d6db1fe234e72520e96be">moonray::shading::OpenVdbSampler::mIsInitialized</a></div><div class="ttdeci">bool mIsInitialized</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_sampler_8h_source.html#l00089">OpenVdbSampler.h:89</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_open_vdb_sampler_html_add13e2b8e50176cdd074b9fdd5354c9b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#add13e2b8e50176cdd074b9fdd5354c9b">moonray::shading::OpenVdbSampler::mR2W</a></div><div class="ttdeci">const scene_rdl2::math::Mat4d * mR2W</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_sampler_8h_source.html#l00092">OpenVdbSampler.h:92</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab54ec3ed4865eb8f9d07af5d5545539f" name="ab54ec3ed4865eb8f9d07af5d5545539f"></a>
@@ -150,7 +199,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_open_vdb_sampler_8cc_source.html#l00080">80</a> of file <a class="el" href="_open_vdb_sampler_8cc_source.html">OpenVdbSampler.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   80</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -178,7 +228,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_open_vdb_sampler_8h_source.html#l00084">84</a> of file <a class="el" href="_open_vdb_sampler_8h_source.html">OpenVdbSampler.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   84</span>{ MNRY_ASSERT_REQUIRE(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ac6ce499be63d6db1fe234e72520e96be">mIsInitialized</a>); <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a7d1ae83e2eb4470260f615234bd2982d">mFileName</a>; }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_open_vdb_sampler_html_a7d1ae83e2eb4470260f615234bd2982d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a7d1ae83e2eb4470260f615234bd2982d">moonray::shading::OpenVdbSampler::mFileName</a></div><div class="ttdeci">std::string mFileName</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_sampler_8h_source.html#l00095">OpenVdbSampler.h:95</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7c1c672b38f7452e5e79f7c36805615f" name="a7c1c672b38f7452e5e79f7c36805615f"></a>
@@ -205,7 +257,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_open_vdb_sampler_8h_source.html#l00085">85</a> of file <a class="el" href="_open_vdb_sampler_8h_source.html">OpenVdbSampler.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   85</span>{ MNRY_ASSERT_REQUIRE(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ac6ce499be63d6db1fe234e72520e96be">mIsInitialized</a>); <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a9acd34870328744d406e0d91db5d8ded">mGridName</a>; }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_open_vdb_sampler_html_a9acd34870328744d406e0d91db5d8ded"><div class="ttname"><a href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a9acd34870328744d406e0d91db5d8ded">moonray::shading::OpenVdbSampler::mGridName</a></div><div class="ttdeci">std::string mGridName</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_sampler_8h_source.html#l00096">OpenVdbSampler.h:96</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8338d4e989e0f5d287b58a69562d13e9" name="a8338d4e989e0f5d287b58a69562d13e9"></a>
@@ -235,7 +289,26 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_open_vdb_sampler_8cc_source.html#l00146">146</a> of file <a class="el" href="_open_vdb_sampler_8cc_source.html">OpenVdbSampler.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  148</span>{</div>
+<div class="line"><span class="lineno">  149</span>    MNRY_ASSERT_REQUIRE(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ac6ce499be63d6db1fe234e72520e96be">mIsInitialized</a>);</div>
+<div class="line"><span class="lineno">  150</span> </div>
+<div class="line"><span class="lineno">  151</span>    openvdb::Vec3d p;</div>
+<div class="line"><span class="lineno">  152</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#add13e2b8e50176cdd074b9fdd5354c9b">mR2W</a>) {</div>
+<div class="line"><span class="lineno">  153</span>        scene_rdl2::math::Vec3f pw = <a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a472053acc157ccb20c9d68bf2fdaa824">transformPoint</a>(*<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#add13e2b8e50176cdd074b9fdd5354c9b">mR2W</a>, pos);</div>
+<div class="line"><span class="lineno">  154</span>        p[0] = pw[0];</div>
+<div class="line"><span class="lineno">  155</span>        p[1] = pw[1];</div>
+<div class="line"><span class="lineno">  156</span>        p[2] = pw[2];</div>
+<div class="line"><span class="lineno">  157</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  158</span>        p[0] = pos[0];</div>
+<div class="line"><span class="lineno">  159</span>        p[1] = pos[1];</div>
+<div class="line"><span class="lineno">  160</span>        p[2] = pos[2];</div>
+<div class="line"><span class="lineno">  161</span>    }</div>
+<div class="line"><span class="lineno">  162</span> </div>
+<div class="line"><span class="lineno">  163</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ab8ea1a373154786452ff454847b1805c">mSampler</a>-&gt;getIsActive(tls-&gt;mThreadIdx, p);</div>
+<div class="line"><span class="lineno">  164</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_open_vdb_sampler_html_ab8ea1a373154786452ff454847b1805c"><div class="ttname"><a href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ab8ea1a373154786452ff454847b1805c">moonray::shading::OpenVdbSampler::mSampler</a></div><div class="ttdeci">std::unique_ptr&lt; moonray::texture::VDBSampler &gt; mSampler</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_sampler_8h_source.html#l00091">OpenVdbSampler.h:91</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a472053acc157ccb20c9d68bf2fdaa824"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a472053acc157ccb20c9d68bf2fdaa824">moonray::geom::internal::transformPoint</a></div><div class="ttdeci">Vec3f transformPoint(const scene_rdl2::math::Mat4f mat[2], const scene_rdl2::math::Vec3f &amp;point, const float time, bool isMotionBlurOn)</div><div class="ttdef"><b>Definition:</b> <a href="geom_2prim_2_util_8cc_source.html#l00231">Util.cc:231</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7f56ffa00f28ff08c86278df47bbaa28" name="a7f56ffa00f28ff08c86278df47bbaa28"></a>
@@ -262,7 +335,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_open_vdb_sampler_8h_source.html#l00086">86</a> of file <a class="el" href="_open_vdb_sampler_8h_source.html">OpenVdbSampler.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   86</span>{ MNRY_ASSERT_REQUIRE(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ac6ce499be63d6db1fe234e72520e96be">mIsInitialized</a>); <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ab8dfedbcfd0127c3570b8367e5904aa9">mValueType</a>; }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_open_vdb_sampler_html_ab8dfedbcfd0127c3570b8367e5904aa9"><div class="ttname"><a href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ab8dfedbcfd0127c3570b8367e5904aa9">moonray::shading::OpenVdbSampler::mValueType</a></div><div class="ttdeci">std::string mValueType</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_sampler_8h_source.html#l00097">OpenVdbSampler.h:97</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0d1c4a3d11c926b6fd8c2435b03da26e" name="a0d1c4a3d11c926b6fd8c2435b03da26e"></a>
@@ -310,7 +385,65 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_open_vdb_sampler_8cc_source.html#l00083">83</a> of file <a class="el" href="_open_vdb_sampler_8cc_source.html">OpenVdbSampler.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   88</span>{</div>
+<div class="line"><span class="lineno">   89</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ac6ce499be63d6db1fe234e72520e96be">mIsInitialized</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>    <span class="comment">// try/catch to catch exceptions that could be thrown from</span></div>
+<div class="line"><span class="lineno">   92</span>    <span class="comment">// the openvdb library itself, to prevent users of this class</span></div>
+<div class="line"><span class="lineno">   93</span>    <span class="comment">// from needing to try/catch to prevent moonray from crashing.</span></div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   95</span>        std::string foundGrid;</div>
+<div class="line"><span class="lineno">   96</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a90b9a7e221a98e289e04a50f72b5145a">mGrid</a> = <a class="code hl_function" href="namespaceanonymous__namespace_02_open_vdb_sampler_8cc_03.html#aefc01433ffdda4fad86fd0f1656a40f5">readGrid</a>(fileName, gridName, foundGrid, errorMsg);</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a90b9a7e221a98e289e04a50f72b5145a">mGrid</a>) {</div>
+<div class="line"><span class="lineno">   99</span>            <span class="comment">// errorMsg is already set</span></div>
+<div class="line"><span class="lineno">  100</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  101</span>        }</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ab8dfedbcfd0127c3570b8367e5904aa9">mValueType</a> = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a90b9a7e221a98e289e04a50f72b5145a">mGrid</a>-&gt;valueType();</div>
+<div class="line"><span class="lineno">  104</span> </div>
+<div class="line"><span class="lineno">  105</span>        <span class="comment">// Append any additional transform provided by the user</span></div>
+<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">if</span> (grid2world) {</div>
+<div class="line"><span class="lineno">  107</span>            <span class="keyword">const</span> scene_rdl2::math::Vec4d &amp;r0 = grid2world-&gt;row0();</div>
+<div class="line"><span class="lineno">  108</span>            <span class="keyword">const</span> scene_rdl2::math::Vec4d &amp;r1 = grid2world-&gt;row1();</div>
+<div class="line"><span class="lineno">  109</span>            <span class="keyword">const</span> scene_rdl2::math::Vec4d &amp;r2 = grid2world-&gt;row2();</div>
+<div class="line"><span class="lineno">  110</span>            <span class="keyword">const</span> scene_rdl2::math::Vec4d &amp;r3 = grid2world-&gt;row3();</div>
+<div class="line"><span class="lineno">  111</span>            <span class="keyword">const</span> openvdb::Mat4R xform(</div>
+<div class="line"><span class="lineno">  112</span>                r0[0], r0[1], r0[2], r0[3],</div>
+<div class="line"><span class="lineno">  113</span>                r1[0], r1[1], r1[2], r1[3],</div>
+<div class="line"><span class="lineno">  114</span>                r2[0], r2[1], r2[2], r2[3],</div>
+<div class="line"><span class="lineno">  115</span>                r3[0], r3[1], r3[2], r3[3]</div>
+<div class="line"><span class="lineno">  116</span>            );</div>
+<div class="line"><span class="lineno">  117</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a90b9a7e221a98e289e04a50f72b5145a">mGrid</a>-&gt;transform().postMult(xform);</div>
+<div class="line"><span class="lineno">  118</span>        }</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span>        <span class="comment">// create the appropriate TypedVDBSampler for this grid type</span></div>
+<div class="line"><span class="lineno">  121</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a90b9a7e221a98e289e04a50f72b5145a">mGrid</a>-&gt;isType&lt;openvdb::FloatGrid&gt;()) {</div>
+<div class="line"><span class="lineno">  122</span>            openvdb::FloatGrid::ConstPtr g = openvdb::gridConstPtrCast&lt;openvdb::FloatGrid&gt;(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a90b9a7e221a98e289e04a50f72b5145a">mGrid</a>);</div>
+<div class="line"><span class="lineno">  123</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ab8ea1a373154786452ff454847b1805c">mSampler</a> = fauxstd::make_unique&lt;TypedVDBSampler&lt;openvdb::FloatGrid&gt;&gt;(*g);</div>
+<div class="line"><span class="lineno">  124</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a90b9a7e221a98e289e04a50f72b5145a">mGrid</a>-&gt;isType&lt;openvdb::VectorGrid&gt;()) {</div>
+<div class="line"><span class="lineno">  125</span>            openvdb::VectorGrid::ConstPtr g = openvdb::gridConstPtrCast&lt;openvdb::VectorGrid&gt;(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a90b9a7e221a98e289e04a50f72b5145a">mGrid</a>);</div>
+<div class="line"><span class="lineno">  126</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ab8ea1a373154786452ff454847b1805c">mSampler</a> = fauxstd::make_unique&lt;TypedVDBSampler&lt;openvdb::VectorGrid&gt;&gt;(*g);</div>
+<div class="line"><span class="lineno">  127</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  128</span>            <span class="comment">// TODO: provide more information to user</span></div>
+<div class="line"><span class="lineno">  129</span>            <span class="comment">// eg. filename, gridname, which gridtype is it that is unsupported...</span></div>
+<div class="line"><span class="lineno">  130</span>            errorMsg = <span class="stringliteral">&quot;unsupported grid type&quot;</span>;</div>
+<div class="line"><span class="lineno">  131</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  132</span>        }</div>
+<div class="line"><span class="lineno">  133</span> </div>
+<div class="line"><span class="lineno">  134</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a7d1ae83e2eb4470260f615234bd2982d">mFileName</a> = fileName;</div>
+<div class="line"><span class="lineno">  135</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a9acd34870328744d406e0d91db5d8ded">mGridName</a> = foundGrid;</div>
+<div class="line"><span class="lineno">  136</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#add13e2b8e50176cdd074b9fdd5354c9b">mR2W</a> = render2world;</div>
+<div class="line"><span class="lineno">  137</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ac6ce499be63d6db1fe234e72520e96be">mIsInitialized</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  138</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;e) {</div>
+<div class="line"><span class="lineno">  139</span>        errorMsg = e.what();</div>
+<div class="line"><span class="lineno">  140</span>    }</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ac6ce499be63d6db1fe234e72520e96be">mIsInitialized</a>;</div>
+<div class="line"><span class="lineno">  143</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_open_vdb_sampler_html_a90b9a7e221a98e289e04a50f72b5145a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a90b9a7e221a98e289e04a50f72b5145a">moonray::shading::OpenVdbSampler::mGrid</a></div><div class="ttdeci">openvdb::GridBase::Ptr mGrid</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_sampler_8h_source.html#l00090">OpenVdbSampler.h:90</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_open_vdb_sampler_8cc_03_html_aefc01433ffdda4fad86fd0f1656a40f5"><div class="ttname"><a href="namespaceanonymous__namespace_02_open_vdb_sampler_8cc_03.html#aefc01433ffdda4fad86fd0f1656a40f5">anonymous_namespace{OpenVdbSampler.cc}::readGrid</a></div><div class="ttdeci">openvdb::GridBase::Ptr readGrid(const std::string &amp;fileName, const std::string &amp;gridName, std::string &amp;foundGrid, std::string &amp;errorMsg)</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_sampler_8cc_source.html#l00026">OpenVdbSampler.cc:26</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9f24027a0c5d2d488ca124989db7a8c7" name="a9f24027a0c5d2d488ca124989db7a8c7"></a>
@@ -346,6 +479,217 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_open_vdb_sampler_8cc_source.html#l00167">167</a> of file <a class="el" href="_open_vdb_sampler_8cc_source.html">OpenVdbSampler.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  170</span>{</div>
+<div class="line"><span class="lineno">  171</span>    MNRY_ASSERT_REQUIRE(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ac6ce499be63d6db1fe234e72520e96be">mIsInitialized</a>);</div>
+<div class="line"><span class="lineno">  172</span> </div>
+<div class="line"><span class="lineno">  173</span>    scene_rdl2::math::Color result(0.f, 0.f, 0.f);</div>
+<div class="line"><span class="lineno">  174</span> </div>
+<div class="line"><span class="lineno">  175</span>    <span class="comment">// convert to VDBSampler::Interpolation</span></div>
+<div class="line"><span class="lineno">  176</span>    <span class="keyword">const</span> VDBSampler::Interpolation interpolation =</div>
+<div class="line"><span class="lineno">  177</span>        <span class="keyword">static_cast&lt;</span>VDBSampler::Interpolation<span class="keyword">&gt;</span>(interp);</div>
+<div class="line"><span class="lineno">  178</span> </div>
+<div class="line"><span class="lineno">  179</span>    openvdb::Vec3d p;</div>
+<div class="line"><span class="lineno">  180</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#add13e2b8e50176cdd074b9fdd5354c9b">mR2W</a>) {</div>
+<div class="line"><span class="lineno">  181</span>        scene_rdl2::math::Vec3f pw = <a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a472053acc157ccb20c9d68bf2fdaa824">transformPoint</a>(*<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#add13e2b8e50176cdd074b9fdd5354c9b">mR2W</a>, pos);</div>
+<div class="line"><span class="lineno">  182</span>        p[0] = pw[0];</div>
+<div class="line"><span class="lineno">  183</span>        p[1] = pw[1];</div>
+<div class="line"><span class="lineno">  184</span>        p[2] = pw[2];</div>
+<div class="line"><span class="lineno">  185</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  186</span>        p[0] = pos[0];</div>
+<div class="line"><span class="lineno">  187</span>        p[1] = pos[1];</div>
+<div class="line"><span class="lineno">  188</span>        p[2] = pos[2];</div>
+<div class="line"><span class="lineno">  189</span>    }</div>
+<div class="line"><span class="lineno">  190</span> </div>
+<div class="line"><span class="lineno">  191</span>    <span class="comment">// cast to appropriate type and sample</span></div>
+<div class="line"><span class="lineno">  192</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a90b9a7e221a98e289e04a50f72b5145a">mGrid</a>-&gt;isType&lt;openvdb::FloatGrid&gt;()) {</div>
+<div class="line"><span class="lineno">  193</span>        <a class="code hl_class" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html">TypedVDBSampler&lt;openvdb::FloatGrid&gt;</a>* sampler =</div>
+<div class="line"><span class="lineno">  194</span>            <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html">TypedVDBSampler&lt;openvdb::FloatGrid&gt;</a>*<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ab8ea1a373154786452ff454847b1805c">mSampler</a>.get());</div>
+<div class="line"><span class="lineno">  195</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> val = sampler-&gt;<a class="code hl_function" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#a9ea535e1798a1e7c835108c30550c79c">sample</a>(tls-&gt;mThreadIdx, p, interpolation);</div>
+<div class="line"><span class="lineno">  196</span>        result = scene_rdl2::math::Color(val, val, val);</div>
+<div class="line"><span class="lineno">  197</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a90b9a7e221a98e289e04a50f72b5145a">mGrid</a>-&gt;isType&lt;openvdb::VectorGrid&gt;()) {</div>
+<div class="line"><span class="lineno">  198</span>        <a class="code hl_class" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html">TypedVDBSampler&lt;openvdb::VectorGrid&gt;</a>* sampler =</div>
+<div class="line"><span class="lineno">  199</span>            <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html">TypedVDBSampler&lt;openvdb::VectorGrid&gt;</a>*<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ab8ea1a373154786452ff454847b1805c">mSampler</a>.get());</div>
+<div class="line"><span class="lineno">  200</span>        <span class="keyword">const</span> openvdb::Vec3f val = sampler-&gt;<a class="code hl_function" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#a9ea535e1798a1e7c835108c30550c79c">sample</a>(tls-&gt;mThreadIdx, p, interpolation);</div>
+<div class="line"><span class="lineno">  201</span>        result = scene_rdl2::math::Color(val[0], val[1], val[2]);</div>
+<div class="line"><span class="lineno">  202</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  203</span>        <span class="comment">// Programming error. This object should have thrown an</span></div>
+<div class="line"><span class="lineno">  204</span>        <span class="comment">// exception in the ctor if the grid type is unsupported</span></div>
+<div class="line"><span class="lineno">  205</span>        MNRY_ASSERT_REQUIRE(<span class="keyword">false</span>, <span class="stringliteral">&quot;only FloatGrid and VectorGrid types currently supported&quot;</span>);</div>
+<div class="line"><span class="lineno">  206</span>    }</div>
+<div class="line"><span class="lineno">  207</span> </div>
+<div class="line"><span class="lineno">  208</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  209</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1texture_1_1_typed_v_d_b_sampler_html"><div class="ttname"><a href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html">moonray::texture::TypedVDBSampler</a></div><div class="ttdef"><b>Definition:</b> <a href="_v_d_b_sampler_8h_source.html#l00046">VDBSampler.h:47</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1texture_1_1_typed_v_d_b_sampler_html_a9ea535e1798a1e7c835108c30550c79c"><div class="ttname"><a href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#a9ea535e1798a1e7c835108c30550c79c">moonray::texture::TypedVDBSampler::sample</a></div><div class="ttdeci">ValueT sample(const uint32_t threadIdx, const openvdb::Vec3d &amp;pos, Interpolation mode) const</div><div class="ttdef"><b>Definition:</b> <a href="_v_d_b_sampler_8h_source.html#l00071">VDBSampler.h:71</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7d1ae83e2eb4470260f615234bd2982d" name="a7d1ae83e2eb4470260f615234bd2982d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d1ae83e2eb4470260f615234bd2982d">&#9670;&#160;</a></span>mFileName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string moonray::shading::OpenVdbSampler::mFileName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_open_vdb_sampler_8h_source.html#l00095">95</a> of file <a class="el" href="_open_vdb_sampler_8h_source.html">OpenVdbSampler.h</a>.</p>
+
+</div>
+</div>
+<a id="a90b9a7e221a98e289e04a50f72b5145a" name="a90b9a7e221a98e289e04a50f72b5145a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b9a7e221a98e289e04a50f72b5145a">&#9670;&#160;</a></span>mGrid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">openvdb::GridBase::Ptr moonray::shading::OpenVdbSampler::mGrid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_open_vdb_sampler_8h_source.html#l00090">90</a> of file <a class="el" href="_open_vdb_sampler_8h_source.html">OpenVdbSampler.h</a>.</p>
+
+</div>
+</div>
+<a id="a9acd34870328744d406e0d91db5d8ded" name="a9acd34870328744d406e0d91db5d8ded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9acd34870328744d406e0d91db5d8ded">&#9670;&#160;</a></span>mGridName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string moonray::shading::OpenVdbSampler::mGridName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_open_vdb_sampler_8h_source.html#l00096">96</a> of file <a class="el" href="_open_vdb_sampler_8h_source.html">OpenVdbSampler.h</a>.</p>
+
+</div>
+</div>
+<a id="ac6ce499be63d6db1fe234e72520e96be" name="ac6ce499be63d6db1fe234e72520e96be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6ce499be63d6db1fe234e72520e96be">&#9670;&#160;</a></span>mIsInitialized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::shading::OpenVdbSampler::mIsInitialized</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_open_vdb_sampler_8h_source.html#l00089">89</a> of file <a class="el" href="_open_vdb_sampler_8h_source.html">OpenVdbSampler.h</a>.</p>
+
+</div>
+</div>
+<a id="add13e2b8e50176cdd074b9fdd5354c9b" name="add13e2b8e50176cdd074b9fdd5354c9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add13e2b8e50176cdd074b9fdd5354c9b">&#9670;&#160;</a></span>mR2W</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const scene_rdl2::math::Mat4d* moonray::shading::OpenVdbSampler::mR2W</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_open_vdb_sampler_8h_source.html#l00092">92</a> of file <a class="el" href="_open_vdb_sampler_8h_source.html">OpenVdbSampler.h</a>.</p>
+
+</div>
+</div>
+<a id="ab8ea1a373154786452ff454847b1805c" name="ab8ea1a373154786452ff454847b1805c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8ea1a373154786452ff454847b1805c">&#9670;&#160;</a></span>mSampler</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classmoonray_1_1texture_1_1_v_d_b_sampler.html">moonray::texture::VDBSampler</a>&gt; moonray::shading::OpenVdbSampler::mSampler</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_open_vdb_sampler_8h_source.html#l00091">91</a> of file <a class="el" href="_open_vdb_sampler_8h_source.html">OpenVdbSampler.h</a>.</p>
+
+</div>
+</div>
+<a id="ab8dfedbcfd0127c3570b8367e5904aa9" name="ab8dfedbcfd0127c3570b8367e5904aa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8dfedbcfd0127c3570b8367e5904aa9">&#9670;&#160;</a></span>mValueType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string moonray::shading::OpenVdbSampler::mValueType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_open_vdb_sampler_8h_source.html#l00097">97</a> of file <a class="el" href="_open_vdb_sampler_8h_source.html">OpenVdbSampler.h</a>.</p>
 
 </div>
 </div>
@@ -354,9 +698,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/<a class="el" href="_open_vdb_sampler_8cc_source.html">OpenVdbSampler.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">OpenVdbSampler</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

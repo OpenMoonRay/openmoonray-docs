@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_55a2e35f6359da48a03f898576e722e1.html">rndr</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_display_filter_driver_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">DisplayFilterDriver.h</div></div>
 </div><!--header-->
@@ -114,7 +130,7 @@ $(function() {
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1rndr_1_1_display_filter_driver_1_1_impl.html">Impl</a>;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    std::unique_ptr&lt;Impl&gt; mImpl;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_display_filter_driver.html#aed92ae025245be80ea1fb1f466a724d7">   68</a></span>    std::unique_ptr&lt;Impl&gt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_display_filter_driver.html#aed92ae025245be80ea1fb1f466a724d7">mImpl</a>;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>} <span class="comment">// namespace rndr</span></div>
@@ -132,15 +148,20 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_display_filter_driver_html_a8c594ce2c55f3d7bd31085ab8848c1be"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_display_filter_driver.html#a8c594ce2c55f3d7bd31085ab8848c1be">moonray::rndr::DisplayFilterDriver::init</a></div><div class="ttdeci">void init(rndr::Film *films, const rndr::RenderOutputDriver *roDriver, const std::vector&lt; scene_rdl2::fb_util::Tile &gt; *tiles, const uint32_t *tileIndices, const scene_rdl2::math::Viewport &amp;viewport, unsigned int threadCount)</div><div class="ttdef"><b>Definition:</b> <a href="_display_filter_driver_8cc_source.html#l01059">DisplayFilterDriver.cc:1059</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_display_filter_driver_html_ac27a9bedffd0749c548c2d5f69d1f91f"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_display_filter_driver.html#ac27a9bedffd0749c548c2d5f69d1f91f">moonray::rndr::DisplayFilterDriver::~DisplayFilterDriver</a></div><div class="ttdeci">~DisplayFilterDriver()</div><div class="ttdef"><b>Definition:</b> <a href="_display_filter_driver_8cc_source.html#l01053">DisplayFilterDriver.cc:1053</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_display_filter_driver_html_ac62416100d266f3d347b6f8d1bd732e8"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_display_filter_driver.html#ac62416100d266f3d347b6f8d1bd732e8">moonray::rndr::DisplayFilterDriver::getAovBuffer</a></div><div class="ttdeci">scene_rdl2::fb_util::VariablePixelBuffer * getAovBuffer(unsigned int aovIdx) const</div><div class="ttdef"><b>Definition:</b> <a href="_display_filter_driver_8cc_source.html#l01082">DisplayFilterDriver.cc:1082</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_display_filter_driver_html_aed92ae025245be80ea1fb1f466a724d7"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_display_filter_driver.html#aed92ae025245be80ea1fb1f466a724d7">moonray::rndr::DisplayFilterDriver::mImpl</a></div><div class="ttdeci">std::unique_ptr&lt; Impl &gt; mImpl</div><div class="ttdef"><b>Definition:</b> <a href="_display_filter_driver_8h_source.html#l00068">DisplayFilterDriver.h:68</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_display_filter_driver_html_afc87fa23874f14cc3403d25c5d5ffa2d"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_display_filter_driver.html#afc87fa23874f14cc3403d25c5d5ffa2d">moonray::rndr::DisplayFilterDriver::isAovRequired</a></div><div class="ttdeci">bool isAovRequired(unsigned int aovIdx) const</div><div class="ttdef"><b>Definition:</b> <a href="_display_filter_driver_8cc_source.html#l01076">DisplayFilterDriver.cc:1076</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_film_html"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_film.html">moonray::rndr::Film</a></div><div class="ttdef"><b>Definition:</b> <a href="_film_8h_source.html#l00057">Film.h:58</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_output_driver_html"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_output_driver.html">moonray::rndr::RenderOutputDriver</a></div><div class="ttdef"><b>Definition:</b> <a href="_render_output_driver_8h_source.html#l00044">RenderOutputDriver.h:45</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_dispatch_computation_8cc_source.html#l00044">McrtRtDispatchComputation.cc:44</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_c8c2fc2658195a2d790ef72565bd36e7.html">rndr</a></li><li class="navelem"><a class="el" href="_display_filter_driver_8h.html">DisplayFilterDriver.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

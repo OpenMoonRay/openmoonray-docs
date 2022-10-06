@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,16 +42,33 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html">AdaptiveRegions</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1rndr_1_1_adaptive_regions.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classmoonray_1_1rndr_1_1_adaptive_regions-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::rndr::AdaptiveRegions Class Reference</div></div>
 </div><!--header-->
@@ -55,9 +76,14 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1rndr_1_1_adaptive_regions_1_1_region_tile_count.html">RegionTileCount</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:adf5a5d01940ae5050aa5f79709db941a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#adf5a5d01940ae5050aa5f79709db941a">VisitedArray</a> = std::array&lt; bool, sMaxNRegions &gt;</td></tr>
+<tr class="memitem:adf5a5d01940ae5050aa5f79709db941a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#adf5a5d01940ae5050aa5f79709db941a">VisitedArray</a> = std::array&lt; bool, <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a> &gt;</td></tr>
 <tr class="separator:adf5a5d01940ae5050aa5f79709db941a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -80,11 +106,198 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2b0b6568a5265f107fc91b48f101fc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a4df69e3cc6dc3c2d86353088db81af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a7a4df69e3cc6dc3c2d86353088db81af">done</a> () const</td></tr>
 <tr class="separator:a7a4df69e3cc6dc3c2d86353088db81af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a2b278065739463650b8f100f79b372fc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a2b278065739463650b8f100f79b372fc">Regions</a> = <a class="el" href="classmoonray_1_1rndr_1_1_overlapping_regions.html">OverlappingRegions</a>&lt; <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a68037f9f1a12d640763e0be1e5a4b93c">sRegionOverlap</a>, <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#addc07e99d2447a1c4db07d743f244970">sTileWidth</a>, <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ab538eb3da2efa5f4e92be9af7d6dca46">sTileHeight</a>, <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae5e87342d0fa2f0f37fa3d90af8fee89">sDesiredNRegionsPerDimension</a> &gt;</td></tr>
+<tr class="separator:a2b278065739463650b8f100f79b372fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf75699bc51ba4c98cdceaa40c8b41d8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#aaf75699bc51ba4c98cdceaa40c8b41d8">MutexType</a> = scene_rdl2::util::ReaderWriterMutex</td></tr>
+<tr class="separator:aaf75699bc51ba4c98cdceaa40c8b41d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5237d1de4a5cc56218579900827f8947"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5237d1de4a5cc56218579900827f8947">ReadLock</a> = scene_rdl2::util::ReadLock</td></tr>
+<tr class="separator:a5237d1de4a5cc56218579900827f8947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9acd99ddf05a2e5b73e2501330b451f9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a9acd99ddf05a2e5b73e2501330b451f9">IndexArray</a> = typename <a class="el" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#a4198318e8eadee9dd00f1e3c489a8e9e">Regions::IndexArray</a></td></tr>
+<tr class="separator:a9acd99ddf05a2e5b73e2501330b451f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9eca7d5acece927d0075e5ceef3e8d6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ab9eca7d5acece927d0075e5ceef3e8d6">MutexPool</a> = <a class="el" href="classmoonray_1_1_mutex_pool2_d.html">MutexPool2D</a>&lt; <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a9a1293d6c5ec435d05da62c4db7f593a">sLogMutexCount</a>, <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#aaf75699bc51ba4c98cdceaa40c8b41d8">MutexType</a> &gt;</td></tr>
+<tr class="separator:ab9eca7d5acece927d0075e5ceef3e8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aea4043d6f7efeb73e78fe0755ed1f28a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#aea4043d6f7efeb73e78fe0755ed1f28a">savePixelErrorsByPPM</a> (const int adaptiveRegionTreeId) const</td></tr>
+<tr class="separator:aea4043d6f7efeb73e78fe0755ed1f28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5affb8980f6108690f628194778f0e53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5affb8980f6108690f628194778f0e53">saveRenderBufferByPPM</a> (const int adaptiveRegionTreeId, const scene_rdl2::fb_util::Tiler &amp;tiler, const scene_rdl2::fb_util::RenderBuffer &amp;renderBuf, const bool odd) const</td></tr>
+<tr class="separator:a5affb8980f6108690f628194778f0e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a772e9bdd68704b4a1297fdadb3b760e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a772e9bdd68704b4a1297fdadb3b760e1">saveFloatBufferByPPM</a> (const int adaptiveRegionTreeId, const scene_rdl2::fb_util::Tiler &amp;tiler, const scene_rdl2::fb_util::FloatBuffer &amp;floatBuf) const</td></tr>
+<tr class="separator:a772e9bdd68704b4a1297fdadb3b760e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ad9b46c06174bc8edb71775ad04bd4c33"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ad9b46c06174bc8edb71775ad04bd4c33">tilesHorizontal</a> (int width)</td></tr>
+<tr class="separator:ad9b46c06174bc8edb71775ad04bd4c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e3d79b354dad45c1335ce2eae40d95b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a7e3d79b354dad45c1335ce2eae40d95b">tilesVertical</a> (int height)</td></tr>
+<tr class="separator:a7e3d79b354dad45c1335ce2eae40d95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:afc0dc8a406b483235cdc7db58ac603e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#afc0dc8a406b483235cdc7db58ac603e2">mVectorized</a></td></tr>
+<tr class="separator:afc0dc8a406b483235cdc7db58ac603e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af64de2ea44f4a5654684838a21dc2964"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a2b278065739463650b8f100f79b372fc">Regions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#af64de2ea44f4a5654684838a21dc2964">mRegions</a></td></tr>
+<tr class="separator:af64de2ea44f4a5654684838a21dc2964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84a3214e90b68de17c3972261194fd22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmoonray_1_1rndr_1_1_adaptive_regions_1_1_region_tile_count.html">RegionTileCount</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a84a3214e90b68de17c3972261194fd22">mRegionTileCount</a> [<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a>]</td></tr>
+<tr class="separator:a84a3214e90b68de17c3972261194fd22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5528fe5b55c25224ac8ea303d8558a3b"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5528fe5b55c25224ac8ea303d8558a3b">mRegionError</a> [<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a>]</td></tr>
+<tr class="separator:a5528fe5b55c25224ac8ea303d8558a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a154f26c3893e10ac134c3c48770de512"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a154f26c3893e10ac134c3c48770de512">mDone</a> [<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a>]</td></tr>
+<tr class="separator:a154f26c3893e10ac134c3c48770de512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f264c348b9240b09f194a02a502b259"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ab9eca7d5acece927d0075e5ceef3e8d6">MutexPool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a3f264c348b9240b09f194a02a502b259">mMutexPool</a> [<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a>]</td></tr>
+<tr class="separator:a3f264c348b9240b09f194a02a502b259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76d15c70f8cae4b1c607aba04883f3b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_region_tree.html">AdaptiveRegionTree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a76d15c70f8cae4b1c607aba04883f3b6">mTrees</a> [<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a>]</td></tr>
+<tr class="separator:a76d15c70f8cae4b1c607aba04883f3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5644f2515910ef71a1e8d76f367a1264"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5644f2515910ef71a1e8d76f367a1264">mNumTiles</a> [<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a>]</td></tr>
+<tr class="separator:a5644f2515910ef71a1e8d76f367a1264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a307028cde908ba23208ac50e94f71e29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1rndr_1_1_update_sentinel.html">UpdateSentinel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a307028cde908ba23208ac50e94f71e29">mUpdateSentinel</a></td></tr>
+<tr class="separator:a307028cde908ba23208ac50e94f71e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdf3da31c053c84df0345ad62c7fa8e2"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#acdf3da31c053c84df0345ad62c7fa8e2">mAdaptiveTreeUpdateCounter</a> [<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a>]</td></tr>
+<tr class="separator:acdf3da31c053c84df0345ad62c7fa8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:ae5e87342d0fa2f0f37fa3d90af8fee89"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae5e87342d0fa2f0f37fa3d90af8fee89">sDesiredNRegionsPerDimension</a> = 4</td></tr>
+<tr class="separator:ae5e87342d0fa2f0f37fa3d90af8fee89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4ff2576a452eded89dee3f280719fca"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a> = <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae5e87342d0fa2f0f37fa3d90af8fee89">sDesiredNRegionsPerDimension</a>*<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae5e87342d0fa2f0f37fa3d90af8fee89">sDesiredNRegionsPerDimension</a></td></tr>
+<tr class="separator:ae4ff2576a452eded89dee3f280719fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc07e99d2447a1c4db07d743f244970"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#addc07e99d2447a1c4db07d743f244970">sTileWidth</a> = COARSE_TILE_SIZE</td></tr>
+<tr class="separator:addc07e99d2447a1c4db07d743f244970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab538eb3da2efa5f4e92be9af7d6dca46"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ab538eb3da2efa5f4e92be9af7d6dca46">sTileHeight</a> = COARSE_TILE_SIZE</td></tr>
+<tr class="separator:ab538eb3da2efa5f4e92be9af7d6dca46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68037f9f1a12d640763e0be1e5a4b93c"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a68037f9f1a12d640763e0be1e5a4b93c">sRegionOverlap</a> = COARSE_TILE_SIZE</td></tr>
+<tr class="separator:a68037f9f1a12d640763e0be1e5a4b93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a1293d6c5ec435d05da62c4db7f593a"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a9a1293d6c5ec435d05da62c4db7f593a">sLogMutexCount</a> = 8</td></tr>
+<tr class="separator:a9a1293d6c5ec435d05da62c4db7f593a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00036">36</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a9acd99ddf05a2e5b73e2501330b451f9" name="a9acd99ddf05a2e5b73e2501330b451f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9acd99ddf05a2e5b73e2501330b451f9">&#9670;&#160;</a></span>IndexArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a9acd99ddf05a2e5b73e2501330b451f9">moonray::rndr::AdaptiveRegions::IndexArray</a> =  typename <a class="el" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#a4198318e8eadee9dd00f1e3c489a8e9e">Regions::IndexArray</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00055">55</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="ab9eca7d5acece927d0075e5ceef3e8d6" name="ab9eca7d5acece927d0075e5ceef3e8d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9eca7d5acece927d0075e5ceef3e8d6">&#9670;&#160;</a></span>MutexPool</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ab9eca7d5acece927d0075e5ceef3e8d6">moonray::rndr::AdaptiveRegions::MutexPool</a> =  <a class="el" href="classmoonray_1_1_mutex_pool2_d.html">MutexPool2D</a>&lt;<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a9a1293d6c5ec435d05da62c4db7f593a">sLogMutexCount</a>, <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#aaf75699bc51ba4c98cdceaa40c8b41d8">MutexType</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00105">105</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="aaf75699bc51ba4c98cdceaa40c8b41d8" name="aaf75699bc51ba4c98cdceaa40c8b41d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf75699bc51ba4c98cdceaa40c8b41d8">&#9670;&#160;</a></span>MutexType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#aaf75699bc51ba4c98cdceaa40c8b41d8">moonray::rndr::AdaptiveRegions::MutexType</a> =  scene_rdl2::util::ReaderWriterMutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00053">53</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="a5237d1de4a5cc56218579900827f8947" name="a5237d1de4a5cc56218579900827f8947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5237d1de4a5cc56218579900827f8947">&#9670;&#160;</a></span>ReadLock</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5237d1de4a5cc56218579900827f8947">moonray::rndr::AdaptiveRegions::ReadLock</a> =  scene_rdl2::util::ReadLock</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00054">54</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="a2b278065739463650b8f100f79b372fc" name="a2b278065739463650b8f100f79b372fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b278065739463650b8f100f79b372fc">&#9670;&#160;</a></span>Regions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a2b278065739463650b8f100f79b372fc">moonray::rndr::AdaptiveRegions::Regions</a> =  <a class="el" href="classmoonray_1_1rndr_1_1_overlapping_regions.html">OverlappingRegions</a>&lt;<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a68037f9f1a12d640763e0be1e5a4b93c">sRegionOverlap</a>, <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#addc07e99d2447a1c4db07d743f244970">sTileWidth</a>, <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ab538eb3da2efa5f4e92be9af7d6dca46">sTileHeight</a>, <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae5e87342d0fa2f0f37fa3d90af8fee89">sDesiredNRegionsPerDimension</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00052">52</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
 <a id="adf5a5d01940ae5050aa5f79709db941a" name="adf5a5d01940ae5050aa5f79709db941a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf5a5d01940ae5050aa5f79709db941a">&#9670;&#160;</a></span>VisitedArray</h2>
 
@@ -92,7 +305,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#adf5a5d01940ae5050aa5f79709db941a">moonray::rndr::AdaptiveRegions::VisitedArray</a> =  std::array&lt;bool, sMaxNRegions&gt;</td>
+          <td class="memname">using <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#adf5a5d01940ae5050aa5f79709db941a">moonray::rndr::AdaptiveRegions::VisitedArray</a> =  std::array&lt;bool, <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -152,7 +365,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00130">130</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  131</span>{</div>
+<div class="line"><span class="lineno">  132</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a307028cde908ba23208ac50e94f71e29">mUpdateSentinel</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_update_sentinel.html#ab76a27c6ed1f3b6aa86edc2b86e3aac1">disableAdjustUpdateTiming</a>();</div>
+<div class="line"><span class="lineno">  133</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_a307028cde908ba23208ac50e94f71e29"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a307028cde908ba23208ac50e94f71e29">moonray::rndr::AdaptiveRegions::mUpdateSentinel</a></div><div class="ttdeci">UpdateSentinel mUpdateSentinel</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00116">AdaptiveRegions.h:116</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_update_sentinel_html_ab76a27c6ed1f3b6aa86edc2b86e3aac1"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_update_sentinel.html#ab76a27c6ed1f3b6aa86edc2b86e3aac1">moonray::rndr::UpdateSentinel::disableAdjustUpdateTiming</a></div><div class="ttdeci">void disableAdjustUpdateTiming()</div><div class="ttdef"><b>Definition:</b> <a href="_update_sentinel_8h_source.html#l00048">UpdateSentinel.h:48</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7a4df69e3cc6dc3c2d86353088db81af" name="a7a4df69e3cc6dc3c2d86353088db81af"></a>
@@ -179,7 +397,20 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00162">162</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  163</span>{</div>
+<div class="line"><span class="lineno">  164</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a7a4df69e3cc6dc3c2d86353088db81af">done</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  165</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; e : <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a154f26c3893e10ac134c3c48770de512">mDone</a>) {</div>
+<div class="line"><span class="lineno">  166</span>        <span class="keywordflow">if</span> (e.load(std::memory_order_relaxed) == <span class="keyword">false</span>) {</div>
+<div class="line"><span class="lineno">  167</span>            <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a7a4df69e3cc6dc3c2d86353088db81af">done</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  168</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  169</span>        }</div>
+<div class="line"><span class="lineno">  170</span>    }</div>
+<div class="line"><span class="lineno">  171</span>    std::atomic_thread_fence(std::memory_order_release);</div>
+<div class="line"><span class="lineno">  172</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a7a4df69e3cc6dc3c2d86353088db81af">done</a>;</div>
+<div class="line"><span class="lineno">  173</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_a154f26c3893e10ac134c3c48770de512"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a154f26c3893e10ac134c3c48770de512">moonray::rndr::AdaptiveRegions::mDone</a></div><div class="ttdeci">std::atomic&lt; bool &gt; mDone[sMaxNRegions]</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00111">AdaptiveRegions.h:111</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_a7a4df69e3cc6dc3c2d86353088db81af"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a7a4df69e3cc6dc3c2d86353088db81af">moonray::rndr::AdaptiveRegions::done</a></div><div class="ttdeci">bool done() const</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00162">AdaptiveRegions.h:162</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a51b1a88e6e35ec34cbb56d29127d460f" name="a51b1a88e6e35ec34cbb56d29127d460f"></a>
@@ -207,7 +438,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00136">136</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  137</span>{</div>
+<div class="line"><span class="lineno">  138</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a307028cde908ba23208ac50e94f71e29">mUpdateSentinel</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_update_sentinel.html#a9101f75a5db902849285ba3503219144">enableAdjustUpdateTiming</a>(adaptiveIterationPixSampleIdTbl);</div>
+<div class="line"><span class="lineno">  139</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_update_sentinel_html_a9101f75a5db902849285ba3503219144"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_update_sentinel.html#a9101f75a5db902849285ba3503219144">moonray::rndr::UpdateSentinel::enableAdjustUpdateTiming</a></div><div class="ttdeci">void enableAdjustUpdateTiming(const std::vector&lt; unsigned &gt; &amp;adaptiveIterationPixSampleIdTbl)</div><div class="ttdef"><b>Definition:</b> <a href="_update_sentinel_8h_source.html#l00055">UpdateSentinel.h:55</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2b0b6568a5265f107fc91b48f101fc71" name="a2b0b6568a5265f107fc91b48f101fc71"></a>
@@ -234,7 +469,16 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00152">152</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  153</span>{</div>
+<div class="line"><span class="lineno">  154</span>    <span class="keywordtype">float</span> error = 0.0f;</div>
+<div class="line"><span class="lineno">  155</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; e : <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5528fe5b55c25224ac8ea303d8558a3b">mRegionError</a>) {</div>
+<div class="line"><span class="lineno">  156</span>        error = scene_rdl2::math::max(e.load(std::memory_order_relaxed), error);</div>
+<div class="line"><span class="lineno">  157</span>    }</div>
+<div class="line"><span class="lineno">  158</span>    std::atomic_thread_fence(std::memory_order_release);</div>
+<div class="line"><span class="lineno">  159</span>    <span class="keywordflow">return</span> error;</div>
+<div class="line"><span class="lineno">  160</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_a5528fe5b55c25224ac8ea303d8558a3b"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5528fe5b55c25224ac8ea303d8558a3b">moonray::rndr::AdaptiveRegions::mRegionError</a></div><div class="ttdeci">std::atomic&lt; float &gt; mRegionError[sMaxNRegions]</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00110">AdaptiveRegions.h:110</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1185bfe34faf7e0773ea343152c0267f" name="a1185bfe34faf7e0773ea343152c0267f"></a>
@@ -272,7 +516,26 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00141">141</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  142</span>{</div>
+<div class="line"><span class="lineno">  143</span>    <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(tls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a9091d2fe3d8d125bf5ebc4cd79afa02c">EXCL_QUERY_ADAPTIVE_TREE</a>);</div>
+<div class="line"><span class="lineno">  144</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> idx = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#af64de2ea44f4a5654684838a21dc2964">mRegions</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#abf31b714c0fc3f16f8508f6120e8bf71">getRegionIndex</a>(tile);</div>
+<div class="line"><span class="lineno">  145</span> </div>
+<div class="line"><span class="lineno">  146</span>    <span class="comment">// It&#39;s possible that another thread is updating the tree, so we need to lock on our read.</span></div>
+<div class="line"><span class="lineno">  147</span>    <span class="comment">// Divide by the tile dimensions so that neighboring tiles access the mutex pool with different indices.</span></div>
+<div class="line"><span class="lineno">  148</span>    <a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5237d1de4a5cc56218579900827f8947">ReadLock</a> lock(<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a3f264c348b9240b09f194a02a502b259">mMutexPool</a>[idx].getMutex(tile.lower[0]/<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#addc07e99d2447a1c4db07d743f244970">sTileWidth</a>, tile.lower[1]/<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ab538eb3da2efa5f4e92be9af7d6dca46">sTileHeight</a>));</div>
+<div class="line"><span class="lineno">  149</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a76d15c70f8cae4b1c607aba04883f3b6">mTrees</a>[idx].<a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_region_tree.html#a4b6259a0de9d827c3c35d9a7c95c20d5">getSampleArea</a>(tile);</div>
+<div class="line"><span class="lineno">  150</span>}</div>
+<div class="ttc" id="a_profile_accumulator_handles_8h_html_a6335af8746974a0365ae8756b7d5d73f"><div class="ttname"><a href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a></div><div class="ttdeci">#define EXCL_ACCUMULATOR_PROFILE(tls, type)</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_handles_8h_source.html#l00020">ProfileAccumulatorHandles.h:20</a></div></div>
+<div class="ttc" id="a_profile_accumulator_handles_8hh_html_ae7f4a146d68256e9f19dcbde6c38c9b2a9091d2fe3d8d125bf5ebc4cd79afa02c"><div class="ttname"><a href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a9091d2fe3d8d125bf5ebc4cd79afa02c">EXCL_QUERY_ADAPTIVE_TREE</a></div><div class="ttdeci">@ EXCL_QUERY_ADAPTIVE_TREE</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_handles_8hh_source.html#l00114">ProfileAccumulatorHandles.hh:114</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_region_tree_html_a4b6259a0de9d827c3c35d9a7c95c20d5"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_region_tree.html#a4b6259a0de9d827c3c35d9a7c95c20d5">moonray::rndr::AdaptiveRegionTree::getSampleArea</a></div><div class="ttdeci">scene_rdl2::math::BBox2i getSampleArea(const scene_rdl2::math::BBox2i &amp;toCheck) const</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_region_tree_8h_source.html#l00381">AdaptiveRegionTree.h:381</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_a3f264c348b9240b09f194a02a502b259"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a3f264c348b9240b09f194a02a502b259">moonray::rndr::AdaptiveRegions::mMutexPool</a></div><div class="ttdeci">MutexPool mMutexPool[sMaxNRegions]</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00112">AdaptiveRegions.h:112</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_a5237d1de4a5cc56218579900827f8947"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5237d1de4a5cc56218579900827f8947">moonray::rndr::AdaptiveRegions::ReadLock</a></div><div class="ttdeci">scene_rdl2::util::ReadLock ReadLock</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00054">AdaptiveRegions.h:54</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_a76d15c70f8cae4b1c607aba04883f3b6"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a76d15c70f8cae4b1c607aba04883f3b6">moonray::rndr::AdaptiveRegions::mTrees</a></div><div class="ttdeci">AdaptiveRegionTree mTrees[sMaxNRegions]</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00113">AdaptiveRegions.h:113</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_ab538eb3da2efa5f4e92be9af7d6dca46"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ab538eb3da2efa5f4e92be9af7d6dca46">moonray::rndr::AdaptiveRegions::sTileHeight</a></div><div class="ttdeci">static constexpr int sTileHeight</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00049">AdaptiveRegions.h:49</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_addc07e99d2447a1c4db07d743f244970"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#addc07e99d2447a1c4db07d743f244970">moonray::rndr::AdaptiveRegions::sTileWidth</a></div><div class="ttdeci">static constexpr int sTileWidth</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00048">AdaptiveRegions.h:48</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_af64de2ea44f4a5654684838a21dc2964"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#af64de2ea44f4a5654684838a21dc2964">moonray::rndr::AdaptiveRegions::mRegions</a></div><div class="ttdeci">Regions mRegions</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00108">AdaptiveRegions.h:108</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_overlapping_regions_html_abf31b714c0fc3f16f8508f6120e8bf71"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_overlapping_regions.html#abf31b714c0fc3f16f8508f6120e8bf71">moonray::rndr::OverlappingRegions::getRegionIndex</a></div><div class="ttdeci">int getRegionIndex(scene_rdl2::math::Vec2i p) const</div><div class="ttdef"><b>Definition:</b> <a href="_overlapping_regions_8h_source.html#l00157">OverlappingRegions.h:157</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae2c66526863dc5c5ce53882d5988750e" name="ae2c66526863dc5c5ce53882d5988750e"></a>
@@ -302,7 +565,254 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_adaptive_regions_8cc_source.html#l00042">42</a> of file <a class="el" href="_adaptive_regions_8cc_source.html">AdaptiveRegions.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>{</div>
+<div class="line"><span class="lineno">   44</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#afc0dc8a406b483235cdc7db58ac603e2">mVectorized</a> = vectorized;</div>
+<div class="line"><span class="lineno">   45</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#af64de2ea44f4a5654684838a21dc2964">mRegions</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#a14a6a1451663cdd057f73a53b561df0a">init</a>(renderBounds);</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#af64de2ea44f4a5654684838a21dc2964">mRegions</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#aab130ecf23e30da53663e8526169359d">getNumRegions</a>(); ++i) {</div>
+<div class="line"><span class="lineno">   47</span>        <span class="keyword">const</span> scene_rdl2::math::BBox2i bounds = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#af64de2ea44f4a5654684838a21dc2964">mRegions</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#afba02b9e07bbea431abf1807436c5b2b">getOverlappingRegionBounds</a>(i);</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a76d15c70f8cae4b1c607aba04883f3b6">mTrees</a>[i] = AdaptiveRegionTree(bounds);</div>
+<div class="line"><span class="lineno">   50</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5528fe5b55c25224ac8ea303d8558a3b">mRegionError</a>[i] = std::numeric_limits&lt;float&gt;::max();</div>
+<div class="line"><span class="lineno">   51</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a154f26c3893e10ac134c3c48770de512">mDone</a>[i] = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   52</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a84a3214e90b68de17c3972261194fd22">mRegionTileCount</a>[i].<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_adaptive_regions_1_1_region_tile_count.html#ad19380effaca4d3e1d546f52284c611a">value</a> = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5644f2515910ef71a1e8d76f367a1264">mNumTiles</a>[i] = <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ad9b46c06174bc8edb71775ad04bd4c33">tilesHorizontal</a>(extents(bounds, 0)) *</div>
+<div class="line"><span class="lineno">   53</span>                                                   <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a7e3d79b354dad45c1335ce2eae40d95b">tilesVertical</a>(extents(bounds, 1));</div>
+<div class="line"><span class="lineno">   54</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#acdf3da31c053c84df0345ad62c7fa8e2">mAdaptiveTreeUpdateCounter</a>[i] = 0;</div>
+<div class="line"><span class="lineno">   55</span>    }</div>
+<div class="line"><span class="lineno">   56</span>    <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5f4130baa67e4590bc14cda93c83233e">disableAdjustUpdateTiming</a>();</div>
+<div class="line"><span class="lineno">   57</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_a5644f2515910ef71a1e8d76f367a1264"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5644f2515910ef71a1e8d76f367a1264">moonray::rndr::AdaptiveRegions::mNumTiles</a></div><div class="ttdeci">int mNumTiles[sMaxNRegions]</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00114">AdaptiveRegions.h:114</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_a5f4130baa67e4590bc14cda93c83233e"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5f4130baa67e4590bc14cda93c83233e">moonray::rndr::AdaptiveRegions::disableAdjustUpdateTiming</a></div><div class="ttdeci">void disableAdjustUpdateTiming()</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00130">AdaptiveRegions.h:130</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_a7e3d79b354dad45c1335ce2eae40d95b"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a7e3d79b354dad45c1335ce2eae40d95b">moonray::rndr::AdaptiveRegions::tilesVertical</a></div><div class="ttdeci">static int tilesVertical(int height)</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00062">AdaptiveRegions.h:62</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_a84a3214e90b68de17c3972261194fd22"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a84a3214e90b68de17c3972261194fd22">moonray::rndr::AdaptiveRegions::mRegionTileCount</a></div><div class="ttdeci">RegionTileCount mRegionTileCount[sMaxNRegions]</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00109">AdaptiveRegions.h:109</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_acdf3da31c053c84df0345ad62c7fa8e2"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#acdf3da31c053c84df0345ad62c7fa8e2">moonray::rndr::AdaptiveRegions::mAdaptiveTreeUpdateCounter</a></div><div class="ttdeci">unsigned mAdaptiveTreeUpdateCounter[sMaxNRegions]</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00118">AdaptiveRegions.h:118</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_ad9b46c06174bc8edb71775ad04bd4c33"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ad9b46c06174bc8edb71775ad04bd4c33">moonray::rndr::AdaptiveRegions::tilesHorizontal</a></div><div class="ttdeci">static int tilesHorizontal(int width)</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00057">AdaptiveRegions.h:57</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_afc0dc8a406b483235cdc7db58ac603e2"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#afc0dc8a406b483235cdc7db58ac603e2">moonray::rndr::AdaptiveRegions::mVectorized</a></div><div class="ttdeci">bool mVectorized</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00107">AdaptiveRegions.h:107</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_overlapping_regions_html_a14a6a1451663cdd057f73a53b561df0a"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_overlapping_regions.html#a14a6a1451663cdd057f73a53b561df0a">moonray::rndr::OverlappingRegions::init</a></div><div class="ttdeci">void init(scene_rdl2::math::BBox2i bounds)</div><div class="ttdef"><b>Definition:</b> <a href="_overlapping_regions_8h_source.html#l00069">OverlappingRegions.h:69</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_overlapping_regions_html_aab130ecf23e30da53663e8526169359d"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_overlapping_regions.html#aab130ecf23e30da53663e8526169359d">moonray::rndr::OverlappingRegions::getNumRegions</a></div><div class="ttdeci">int getNumRegions() const</div><div class="ttdef"><b>Definition:</b> <a href="_overlapping_regions_8h_source.html#l00123">OverlappingRegions.h:123</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_overlapping_regions_html_afba02b9e07bbea431abf1807436c5b2b"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_overlapping_regions.html#afba02b9e07bbea431abf1807436c5b2b">moonray::rndr::OverlappingRegions::getOverlappingRegionBounds</a></div><div class="ttdeci">scene_rdl2::math::BBox2i getOverlappingRegionBounds(int idx) const</div><div class="ttdef"><b>Definition:</b> <a href="_overlapping_regions_8h_source.html#l00131">OverlappingRegions.h:131</a></div></div>
+<div class="ttc" id="astructmoonray_1_1rndr_1_1_adaptive_regions_1_1_region_tile_count_html_ad19380effaca4d3e1d546f52284c611a"><div class="ttname"><a href="structmoonray_1_1rndr_1_1_adaptive_regions_1_1_region_tile_count.html#ad19380effaca4d3e1d546f52284c611a">moonray::rndr::AdaptiveRegions::RegionTileCount::value</a></div><div class="ttdeci">std::atomic_int value</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00099">AdaptiveRegions.h:99</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a772e9bdd68704b4a1297fdadb3b760e1" name="a772e9bdd68704b4a1297fdadb3b760e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a772e9bdd68704b4a1297fdadb3b760e1">&#9670;&#160;</a></span>saveFloatBufferByPPM()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::rndr::AdaptiveRegions::saveFloatBufferByPPM </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>adaptiveRegionTreeId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const scene_rdl2::fb_util::Tiler &amp;&#160;</td>
+          <td class="paramname"><em>tiler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const scene_rdl2::fb_util::FloatBuffer &amp;&#160;</td>
+          <td class="paramname"><em>floatBuf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8cc_source.html#l00219">219</a> of file <a class="el" href="_adaptive_regions_8cc_source.html">AdaptiveRegions.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  222</span>{</div>
+<div class="line"><span class="lineno">  223</span>    std::ostringstream ostr;</div>
+<div class="line"><span class="lineno">  224</span>    ostr &lt;&lt; <span class="stringliteral">&quot;floatBuff_region&quot;</span> &lt;&lt; adaptiveRegionTreeId &lt;&lt; <span class="stringliteral">&quot;_&quot;</span></div>
+<div class="line"><span class="lineno">  225</span>         &lt;&lt; std::setw(2) &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>)</div>
+<div class="line"><span class="lineno">  226</span>         &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#acdf3da31c053c84df0345ad62c7fa8e2">mAdaptiveTreeUpdateCounter</a>[adaptiveRegionTreeId] &lt;&lt; <span class="stringliteral">&quot;.ppm&quot;</span>;</div>
+<div class="line"><span class="lineno">  227</span>    std::string filename = ostr.str();</div>
+<div class="line"><span class="lineno">  228</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a76d15c70f8cae4b1c607aba04883f3b6">mTrees</a>[adaptiveRegionTreeId].<a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a772e9bdd68704b4a1297fdadb3b760e1">saveFloatBufferByPPM</a>(filename, tiler, floatBuf)) {</div>
+<div class="line"><span class="lineno">  229</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;floatBuf PPM output filename:&quot;</span> &lt;&lt; filename &lt;&lt; <span class="stringliteral">&quot; done&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  230</span>    }</div>
+<div class="line"><span class="lineno">  231</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_a772e9bdd68704b4a1297fdadb3b760e1"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a772e9bdd68704b4a1297fdadb3b760e1">moonray::rndr::AdaptiveRegions::saveFloatBufferByPPM</a></div><div class="ttdeci">void saveFloatBufferByPPM(const int adaptiveRegionTreeId, const scene_rdl2::fb_util::Tiler &amp;tiler, const scene_rdl2::fb_util::FloatBuffer &amp;floatBuf) const</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8cc_source.html#l00219">AdaptiveRegions.cc:219</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aea4043d6f7efeb73e78fe0755ed1f28a" name="aea4043d6f7efeb73e78fe0755ed1f28a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea4043d6f7efeb73e78fe0755ed1f28a">&#9670;&#160;</a></span>savePixelErrorsByPPM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::rndr::AdaptiveRegions::savePixelErrorsByPPM </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>adaptiveRegionTreeId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8cc_source.html#l00183">183</a> of file <a class="el" href="_adaptive_regions_8cc_source.html">AdaptiveRegions.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  188</span>{</div>
+<div class="line"><span class="lineno">  189</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;AdaptiveRegions.cc savePixelErrorsByPPM() q:&quot;</span> &lt;&lt; adaptiveRegionTreeId</div>
+<div class="line"><span class="lineno">  190</span>              &lt;&lt; <span class="stringliteral">&quot; counter:&quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#acdf3da31c053c84df0345ad62c7fa8e2">mAdaptiveTreeUpdateCounter</a>[adaptiveRegionTreeId] &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  191</span> </div>
+<div class="line"><span class="lineno">  192</span>    std::ostringstream ostr;</div>
+<div class="line"><span class="lineno">  193</span>    ostr &lt;&lt; <span class="stringliteral">&quot;pixError_region&quot;</span> &lt;&lt; adaptiveRegionTreeId &lt;&lt; <span class="stringliteral">&quot;_&quot;</span></div>
+<div class="line"><span class="lineno">  194</span>         &lt;&lt; std::setw(2) &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>)</div>
+<div class="line"><span class="lineno">  195</span>         &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#acdf3da31c053c84df0345ad62c7fa8e2">mAdaptiveTreeUpdateCounter</a>[adaptiveRegionTreeId] &lt;&lt; <span class="stringliteral">&quot;.ppm&quot;</span>;</div>
+<div class="line"><span class="lineno">  196</span>    std::string filename = ostr.str();</div>
+<div class="line"><span class="lineno">  197</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a76d15c70f8cae4b1c607aba04883f3b6">mTrees</a>[adaptiveRegionTreeId].<a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#aea4043d6f7efeb73e78fe0755ed1f28a">savePixelErrorsByPPM</a>(filename)) {</div>
+<div class="line"><span class="lineno">  198</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;pixError PPM output filename:&quot;</span> &lt;&lt; filename &lt;&lt; <span class="stringliteral">&quot; done&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  199</span>    }</div>
+<div class="line"><span class="lineno">  200</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_aea4043d6f7efeb73e78fe0755ed1f28a"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#aea4043d6f7efeb73e78fe0755ed1f28a">moonray::rndr::AdaptiveRegions::savePixelErrorsByPPM</a></div><div class="ttdeci">void savePixelErrorsByPPM(const int adaptiveRegionTreeId) const</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8cc_source.html#l00183">AdaptiveRegions.cc:183</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5affb8980f6108690f628194778f0e53" name="a5affb8980f6108690f628194778f0e53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5affb8980f6108690f628194778f0e53">&#9670;&#160;</a></span>saveRenderBufferByPPM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::rndr::AdaptiveRegions::saveRenderBufferByPPM </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>adaptiveRegionTreeId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const scene_rdl2::fb_util::Tiler &amp;&#160;</td>
+          <td class="paramname"><em>tiler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const scene_rdl2::fb_util::RenderBuffer &amp;&#160;</td>
+          <td class="paramname"><em>renderBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>odd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8cc_source.html#l00203">203</a> of file <a class="el" href="_adaptive_regions_8cc_source.html">AdaptiveRegions.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  207</span>{</div>
+<div class="line"><span class="lineno">  208</span>    std::ostringstream ostr;</div>
+<div class="line"><span class="lineno">  209</span>    ostr &lt;&lt; <span class="stringliteral">&quot;renderBuff_&quot;</span> &lt;&lt; ((odd)? <span class="stringliteral">&quot;odd&quot;</span>: <span class="stringliteral">&quot;all&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;_region&quot;</span> &lt;&lt; adaptiveRegionTreeId &lt;&lt; <span class="stringliteral">&quot;_&quot;</span></div>
+<div class="line"><span class="lineno">  210</span>         &lt;&lt; std::setw(2) &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>)</div>
+<div class="line"><span class="lineno">  211</span>         &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#acdf3da31c053c84df0345ad62c7fa8e2">mAdaptiveTreeUpdateCounter</a>[adaptiveRegionTreeId] &lt;&lt; <span class="stringliteral">&quot;.ppm&quot;</span>;</div>
+<div class="line"><span class="lineno">  212</span>    std::string filename = ostr.str();</div>
+<div class="line"><span class="lineno">  213</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a76d15c70f8cae4b1c607aba04883f3b6">mTrees</a>[adaptiveRegionTreeId].<a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5affb8980f6108690f628194778f0e53">saveRenderBufferByPPM</a>(filename, tiler, renderBuf)) {</div>
+<div class="line"><span class="lineno">  214</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;renderBuf PPM output filename:&quot;</span> &lt;&lt; filename &lt;&lt; <span class="stringliteral">&quot; done&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  215</span>    }</div>
+<div class="line"><span class="lineno">  216</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_a5affb8980f6108690f628194778f0e53"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5affb8980f6108690f628194778f0e53">moonray::rndr::AdaptiveRegions::saveRenderBufferByPPM</a></div><div class="ttdeci">void saveRenderBufferByPPM(const int adaptiveRegionTreeId, const scene_rdl2::fb_util::Tiler &amp;tiler, const scene_rdl2::fb_util::RenderBuffer &amp;renderBuf, const bool odd) const</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8cc_source.html#l00203">AdaptiveRegions.cc:203</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad9b46c06174bc8edb71775ad04bd4c33" name="ad9b46c06174bc8edb71775ad04bd4c33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b46c06174bc8edb71775ad04bd4c33">&#9670;&#160;</a></span>tilesHorizontal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int moonray::rndr::AdaptiveRegions::tilesHorizontal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00057">57</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>    {</div>
+<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespacemoonray_1_1rndr.html#a1f1fbbb035b6cf41cfe512af62b244d7">roundUpDivision</a>(width, <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#addc07e99d2447a1c4db07d743f244970">sTileWidth</a>);</div>
+<div class="line"><span class="lineno">   60</span>    }</div>
+<div class="ttc" id="anamespacemoonray_1_1rndr_html_a1f1fbbb035b6cf41cfe512af62b244d7"><div class="ttname"><a href="namespacemoonray_1_1rndr.html#a1f1fbbb035b6cf41cfe512af62b244d7">moonray::rndr::roundUpDivision</a></div><div class="ttdeci">constexpr int roundUpDivision(int x, int y) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_overlapping_regions_8h_source.html#l00020">OverlappingRegions.h:20</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7e3d79b354dad45c1335ce2eae40d95b" name="a7e3d79b354dad45c1335ce2eae40d95b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e3d79b354dad45c1335ce2eae40d95b">&#9670;&#160;</a></span>tilesVertical()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int moonray::rndr::AdaptiveRegions::tilesVertical </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00062">62</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>    {</div>
+<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespacemoonray_1_1rndr.html#a1f1fbbb035b6cf41cfe512af62b244d7">roundUpDivision</a>(height, <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ab538eb3da2efa5f4e92be9af7d6dca46">sTileHeight</a>);</div>
+<div class="line"><span class="lineno">   65</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2debd5f310b402f86f5607e950e4f55d" name="a2debd5f310b402f86f5607e950e4f55d"></a>
@@ -368,7 +878,106 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_adaptive_regions_8cc_source.html#l00064">64</a> of file <a class="el" href="_adaptive_regions_8cc_source.html">AdaptiveRegions.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   72</span>{</div>
+<div class="line"><span class="lineno">   73</span>    <span class="comment">// This function must be called for EVERY tile, even if the tile ends up doing no rendering work. If this isn&#39;t</span></div>
+<div class="line"><span class="lineno">   74</span>    <span class="comment">// adhered to, the load balancing will become off.</span></div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>    <span class="comment">// Our regions overlap to help reduce seams. getOverlappedRegions returns an array of (potentially redundant)</span></div>
+<div class="line"><span class="lineno">   77</span>    <span class="comment">// valid region indices for this tile, and adds a -1 at the end of valid indices. Instead of sorting the array</span></div>
+<div class="line"><span class="lineno">   78</span>    <span class="comment">// and removing redundant elements, we keep track of which regions we have already visited and skip those.</span></div>
+<div class="line"><span class="lineno">   79</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno">   80</span>    <span class="comment">// Sorting a nine-element array, even with a hard-coded sorting network, and then running std::unique on it is</span></div>
+<div class="line"><span class="lineno">   81</span>    <span class="comment">// much less efficient than just going through the array once and keeping track of what we&#39;ve seen.</span></div>
+<div class="line"><span class="lineno">   82</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno">   83</span>    <span class="comment">// The overlapped regions do not incur more rendering costs, it simply expands are area of interest when</span></div>
+<div class="line"><span class="lineno">   84</span>    <span class="comment">// calculating error. When a tile is rendered, it is only checked against its primary region (getSampleArea).</span></div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>    <a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a9acd99ddf05a2e5b73e2501330b451f9">IndexArray</a> indices;</div>
+<div class="line"><span class="lineno">   87</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#af64de2ea44f4a5654684838a21dc2964">mRegions</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#a1caed2d4248ad62d7f40952183ed766e">getOverlappedRegions</a>(tile, indices);</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>    <a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#adf5a5d01940ae5050aa5f79709db941a">VisitedArray</a> visited = { <span class="keyword">false</span> };</div>
+<div class="line"><span class="lineno">   90</span>    MNRY_ASSERT(std::all_of(visited.cbegin(), visited.cend(), [](<span class="keywordtype">bool</span> b) { return b == false; }));</div>
+<div class="line"><span class="lineno">   91</span> </div>
+<div class="line"><span class="lineno">   92</span>    <span class="comment">// Keep track of what region this thread was last in for queue flushing purposes.</span></div>
+<div class="line"><span class="lineno">   93</span>    <span class="keyword">static</span> <span class="keyword">thread_local</span> <span class="keywordtype">int</span> localRegionID = -1;</div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> idx : indices) {</div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">if</span> (idx &lt; 0) {</div>
+<div class="line"><span class="lineno">   96</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   97</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (visited[idx]) {</div>
+<div class="line"><span class="lineno">   98</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">   99</span>        }</div>
+<div class="line"><span class="lineno">  100</span>        visited[idx] = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  101</span> </div>
+<div class="line"><span class="lineno">  102</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5644f2515910ef71a1e8d76f367a1264">mNumTiles</a>[idx] == 0) {</div>
+<div class="line"><span class="lineno">  103</span>            <span class="comment">// This can happen when, for example, we&#39;re doing debug pixels and we have a screen-space quad with no</span></div>
+<div class="line"><span class="lineno">  104</span>            <span class="comment">// area.</span></div>
+<div class="line"><span class="lineno">  105</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  106</span>        }</div>
+<div class="line"><span class="lineno">  107</span> </div>
+<div class="line"><span class="lineno">  108</span>        <span class="comment">// Decrement the number of tiles that have been rendered in this quad. If we&#39;re the last thread, we update</span></div>
+<div class="line"><span class="lineno">  109</span>        <span class="comment">// the AdaptiveRegionTree.</span></div>
+<div class="line"><span class="lineno">  110</span>        <span class="keywordflow">if</span> (--<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a84a3214e90b68de17c3972261194fd22">mRegionTileCount</a>[idx].value == 0) {</div>
+<div class="line"><span class="lineno">  111</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#afc0dc8a406b483235cdc7db58ac603e2">mVectorized</a>) {</div>
+<div class="line"><span class="lineno">  112</span>                <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_adaptive_regions_8cc_03.html#ad6341f18a6188ebef39a61396e708d8a">doFlush</a>(tls);</div>
+<div class="line"><span class="lineno">  113</span>            }</div>
+<div class="line"><span class="lineno">  114</span> </div>
+<div class="line"><span class="lineno">  115</span>            <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(tls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a95fdc9e32a1d5a15981c4fa319800dda">EXCL_EXCL_LOCK_ADAPTIVE_TREE</a>);</div>
+<div class="line"><span class="lineno">  116</span>            <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a3f264c348b9240b09f194a02a502b259">mMutexPool</a>[idx].<a class="code hl_function" href="classmoonray_1_1_mutex_pool2_d.html#a9828a4f982a29510c6b3437cde5aa598">exclusiveLockAll</a>();</div>
+<div class="line"><span class="lineno">  117</span>            <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(tls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a00f966bd5941c01bc543e9bc10d4879b">EXCL_BUILD_ADAPTIVE_TREE</a>);</div>
+<div class="line"><span class="lineno">  118</span> </div>
+<div class="line"><span class="lineno">  119</span>            <span class="comment">// The memory ordering specifies how non-atomic memory is accessed around an atomic read or write.</span></div>
+<div class="line"><span class="lineno">  120</span>            <span class="comment">// Relaxed memory order specifies neither ordering nor synchronization, but we don&#39;t need to do that in</span></div>
+<div class="line"><span class="lineno">  121</span>            <span class="comment">// these cases, as the lock above ensures proper ordering and synchronization. If we put more</span></div>
+<div class="line"><span class="lineno">  122</span>            <span class="comment">// constrained memory ordering, we&#39;re simply paying the price twice.</span></div>
+<div class="line"><span class="lineno">  123</span>            <span class="keywordtype">int</span> qpc = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a84a3214e90b68de17c3972261194fd22">mRegionTileCount</a>[idx].<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_adaptive_regions_1_1_region_tile_count.html#ad19380effaca4d3e1d546f52284c611a">value</a>.load(std::memory_order_relaxed);</div>
+<div class="line"><span class="lineno">  124</span>            <span class="comment">//PRINT3(idx, qpc, mNumTiles[idx]);</span></div>
+<div class="line"><span class="lineno">  125</span>            <span class="keywordflow">while</span> (qpc &lt;= 0) {</div>
+<div class="line"><span class="lineno">  126</span>                <span class="comment">// More threads may have come through between first read of mRegionTileCount and the lock, causing</span></div>
+<div class="line"><span class="lineno">  127</span>                <span class="comment">// the value to go negative, so we have to increment until positive to account for these possible</span></div>
+<div class="line"><span class="lineno">  128</span>                <span class="comment">// accesses. This means that fewer than mNumTiles[idx] are rendered by threads on the next pass,</span></div>
+<div class="line"><span class="lineno">  129</span>                <span class="comment">// which is a form of automatic load balancing.</span></div>
+<div class="line"><span class="lineno">  130</span>                qpc += <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5644f2515910ef71a1e8d76f367a1264">mNumTiles</a>[idx];</div>
+<div class="line"><span class="lineno">  131</span>            }</div>
+<div class="line"><span class="lineno">  132</span>            <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a84a3214e90b68de17c3972261194fd22">mRegionTileCount</a>[idx].<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_adaptive_regions_1_1_region_tile_count.html#ad19380effaca4d3e1d546f52284c611a">value</a>.store(qpc, std::memory_order_relaxed);</div>
+<div class="line"><span class="lineno">  133</span> </div>
+<div class="line"><span class="lineno">  134</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a307028cde908ba23208ac50e94f71e29">mUpdateSentinel</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_update_sentinel.html#af695cce45d17c08b5b98323135c2c85b">shouldUpdate</a>(endSampleIdx)) {</div>
+<div class="line"><span class="lineno">  135</span>                <span class="comment">// useful debug dump functions for input of adaptive tree update</span></div>
+<div class="line"><span class="lineno">  136</span>                <span class="comment">// saveRenderBufferByPPM(idx, tiler, renderBuf, false);</span></div>
+<div class="line"><span class="lineno">  137</span>                <span class="comment">// saveRenderBufferByPPM(idx, tiler, renderBufOdd, true);</span></div>
+<div class="line"><span class="lineno">  138</span>                <span class="comment">// saveFloatBufferByPPM(idx, tiler, numSamplesBuf);</span></div>
+<div class="line"><span class="lineno">  139</span> </div>
+<div class="line"><span class="lineno">  140</span>                <span class="comment">// We have to update adaptive tree</span></div>
+<div class="line"><span class="lineno">  141</span>                <span class="keyword">const</span> <span class="keywordtype">float</span> error = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a76d15c70f8cae4b1c607aba04883f3b6">mTrees</a>[idx].<a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_region_tree.html#a474f1ce30c14473b9a9bd45cd848f0d1">update</a>(tiler, renderBuf, numSamplesBuf, renderBufOdd, targetError);</div>
+<div class="line"><span class="lineno">  142</span>                <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5528fe5b55c25224ac8ea303d8558a3b">mRegionError</a>[idx].store(error, std::memory_order_relaxed);</div>
+<div class="line"><span class="lineno">  143</span>                <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a154f26c3893e10ac134c3c48770de512">mDone</a>[idx].store(<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a76d15c70f8cae4b1c607aba04883f3b6">mTrees</a>[idx].<a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a7a4df69e3cc6dc3c2d86353088db81af">done</a>(), std::memory_order_relaxed);</div>
+<div class="line"><span class="lineno">  144</span> </div>
+<div class="line"><span class="lineno">  145</span>                <span class="comment">// savePixelErrorsByPPM(idx); // useful debug dump all pixelError info to the disk as image</span></div>
+<div class="line"><span class="lineno">  146</span>                ++<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#acdf3da31c053c84df0345ad62c7fa8e2">mAdaptiveTreeUpdateCounter</a>[idx];</div>
+<div class="line"><span class="lineno">  147</span>            }</div>
+<div class="line"><span class="lineno">  148</span>            <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a3f264c348b9240b09f194a02a502b259">mMutexPool</a>[idx].<a class="code hl_function" href="classmoonray_1_1_mutex_pool2_d.html#a64911db736a3bd5c2d52cb71d7e0c434">unlockAll</a>();</div>
+<div class="line"><span class="lineno">  149</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#afc0dc8a406b483235cdc7db58ac603e2">mVectorized</a> &amp;&amp; idx != localRegionID) {</div>
+<div class="line"><span class="lineno">  150</span>            <span class="comment">// We don&#39;t want to flush too often, so we do it once per thread per adaptive region by keeping track of the</span></div>
+<div class="line"><span class="lineno">  151</span>            <span class="comment">// last region we were in. This falls down a bit if we restart the render (we may miss a flush).</span></div>
+<div class="line"><span class="lineno">  152</span>            <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_adaptive_regions_8cc_03.html#ad6341f18a6188ebef39a61396e708d8a">doFlush</a>(tls);</div>
+<div class="line"><span class="lineno">  153</span><span class="preprocessor">#pragma warning push</span></div>
+<div class="line"><span class="lineno">  154</span><span class="preprocessor">#pragma warning disable 1711</span></div>
+<div class="line"><span class="lineno">  155</span>            <span class="comment">// warning #1711: assignment to statically allocated variable</span></div>
+<div class="line"><span class="lineno">  156</span>            localRegionID = idx;</div>
+<div class="line"><span class="lineno">  157</span><span class="preprocessor">#pragma warning pop</span></div>
+<div class="line"><span class="lineno">  158</span>        }</div>
+<div class="line"><span class="lineno">  159</span>    }</div>
+<div class="line"><span class="lineno">  160</span>}</div>
+<div class="ttc" id="a_profile_accumulator_handles_8hh_html_ae7f4a146d68256e9f19dcbde6c38c9b2a00f966bd5941c01bc543e9bc10d4879b"><div class="ttname"><a href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a00f966bd5941c01bc543e9bc10d4879b">EXCL_BUILD_ADAPTIVE_TREE</a></div><div class="ttdeci">@ EXCL_BUILD_ADAPTIVE_TREE</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_handles_8hh_source.html#l00111">ProfileAccumulatorHandles.hh:111</a></div></div>
+<div class="ttc" id="a_profile_accumulator_handles_8hh_html_ae7f4a146d68256e9f19dcbde6c38c9b2a95fdc9e32a1d5a15981c4fa319800dda"><div class="ttname"><a href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a95fdc9e32a1d5a15981c4fa319800dda">EXCL_EXCL_LOCK_ADAPTIVE_TREE</a></div><div class="ttdeci">@ EXCL_EXCL_LOCK_ADAPTIVE_TREE</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_handles_8hh_source.html#l00117">ProfileAccumulatorHandles.hh:117</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1_mutex_pool2_d_html_a64911db736a3bd5c2d52cb71d7e0c434"><div class="ttname"><a href="classmoonray_1_1_mutex_pool2_d.html#a64911db736a3bd5c2d52cb71d7e0c434">moonray::MutexPool2D::unlockAll</a></div><div class="ttdeci">void unlockAll()</div><div class="ttdef"><b>Definition:</b> <a href="_mutex_pool2_d_8h_source.html#l00077">MutexPool2D.h:77</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1_mutex_pool2_d_html_a9828a4f982a29510c6b3437cde5aa598"><div class="ttname"><a href="classmoonray_1_1_mutex_pool2_d.html#a9828a4f982a29510c6b3437cde5aa598">moonray::MutexPool2D::exclusiveLockAll</a></div><div class="ttdeci">void exclusiveLockAll()</div><div class="ttdef"><b>Definition:</b> <a href="_mutex_pool2_d_8h_source.html#l00070">MutexPool2D.h:70</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_region_tree_html_a474f1ce30c14473b9a9bd45cd848f0d1"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_region_tree.html#a474f1ce30c14473b9a9bd45cd848f0d1">moonray::rndr::AdaptiveRegionTree::update</a></div><div class="ttdeci">float update(const scene_rdl2::fb_util::Tiler &amp;tiler, const scene_rdl2::fb_util::RenderBuffer &amp;renderBuf, const scene_rdl2::fb_util::FloatBuffer &amp;numSamplesBuf, const scene_rdl2::fb_util::RenderBuffer &amp;renderBufOdd, float targetError)</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_region_tree_8cc_source.html#l00079">AdaptiveRegionTree.cc:79</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_a9acd99ddf05a2e5b73e2501330b451f9"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a9acd99ddf05a2e5b73e2501330b451f9">moonray::rndr::AdaptiveRegions::IndexArray</a></div><div class="ttdeci">typename Regions::IndexArray IndexArray</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00055">AdaptiveRegions.h:55</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_adf5a5d01940ae5050aa5f79709db941a"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#adf5a5d01940ae5050aa5f79709db941a">moonray::rndr::AdaptiveRegions::VisitedArray</a></div><div class="ttdeci">std::array&lt; bool, sMaxNRegions &gt; VisitedArray</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00070">AdaptiveRegions.h:70</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_overlapping_regions_html_a1caed2d4248ad62d7f40952183ed766e"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_overlapping_regions.html#a1caed2d4248ad62d7f40952183ed766e">moonray::rndr::OverlappingRegions::getOverlappedRegions</a></div><div class="ttdeci">void getOverlappedRegions(const scene_rdl2::math::BBox2i &amp;tile, IndexArray &amp;indices) const</div><div class="ttdef"><b>Definition:</b> <a href="_overlapping_regions_8h_source.html#l00177">OverlappingRegions.h:177</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_update_sentinel_html_af695cce45d17c08b5b98323135c2c85b"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_update_sentinel.html#af695cce45d17c08b5b98323135c2c85b">moonray::rndr::UpdateSentinel::shouldUpdate</a></div><div class="ttdeci">bool shouldUpdate(const unsigned endSampleId)</div><div class="ttdef"><b>Definition:</b> <a href="_update_sentinel_8h_source.html#l00062">UpdateSentinel.h:62</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1rndr_1_1anonymous__namespace_02_adaptive_regions_8cc_03_html_ad6341f18a6188ebef39a61396e708d8a"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_adaptive_regions_8cc_03.html#ad6341f18a6188ebef39a61396e708d8a">moonray::rndr::anonymous_namespace{AdaptiveRegions.cc}::doFlush</a></div><div class="ttdeci">void doFlush(mcrt_common::ThreadLocalState *tls)</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8cc_source.html#l00028">AdaptiveRegions.cc:28</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3b3d2028c17f8818de8886594167bd35" name="a3b3d2028c17f8818de8886594167bd35"></a>
@@ -416,6 +1025,401 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_adaptive_regions_8cc_source.html#l00163">163</a> of file <a class="el" href="_adaptive_regions_8cc_source.html">AdaptiveRegions.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  172</span>{</div>
+<div class="line"><span class="lineno">  173</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> idx = 0; idx &lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a>; ++idx) { <span class="comment">// Can we do by MT?</span></div>
+<div class="line"><span class="lineno">  174</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> error = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a76d15c70f8cae4b1c607aba04883f3b6">mTrees</a>[idx].<a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_region_tree.html#a474f1ce30c14473b9a9bd45cd848f0d1">update</a>(tiler, renderBuf, numSamplesBuf, renderBufOdd, targetError);</div>
+<div class="line"><span class="lineno">  175</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5528fe5b55c25224ac8ea303d8558a3b">mRegionError</a>[idx].store(error, std::memory_order_relaxed);</div>
+<div class="line"><span class="lineno">  176</span> </div>
+<div class="line"><span class="lineno">  177</span>        <span class="comment">// savePixelErrorsByPPM(idx); // useful debug dump all pixelError info to the disk as image</span></div>
+<div class="line"><span class="lineno">  178</span>        ++<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#acdf3da31c053c84df0345ad62c7fa8e2">mAdaptiveTreeUpdateCounter</a>[idx];</div>
+<div class="line"><span class="lineno">  179</span>    }</div>
+<div class="line"><span class="lineno">  180</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_regions_html_ae4ff2576a452eded89dee3f280719fca"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">moonray::rndr::AdaptiveRegions::sMaxNRegions</a></div><div class="ttdeci">static constexpr int sMaxNRegions</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8h_source.html#l00047">AdaptiveRegions.h:47</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="acdf3da31c053c84df0345ad62c7fa8e2" name="acdf3da31c053c84df0345ad62c7fa8e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdf3da31c053c84df0345ad62c7fa8e2">&#9670;&#160;</a></span>mAdaptiveTreeUpdateCounter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned moonray::rndr::AdaptiveRegions::mAdaptiveTreeUpdateCounter[<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00118">118</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="a154f26c3893e10ac134c3c48770de512" name="a154f26c3893e10ac134c3c48770de512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a154f26c3893e10ac134c3c48770de512">&#9670;&#160;</a></span>mDone</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;bool&gt; moonray::rndr::AdaptiveRegions::mDone[<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00111">111</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="a3f264c348b9240b09f194a02a502b259" name="a3f264c348b9240b09f194a02a502b259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f264c348b9240b09f194a02a502b259">&#9670;&#160;</a></span>mMutexPool</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ab9eca7d5acece927d0075e5ceef3e8d6">MutexPool</a> moonray::rndr::AdaptiveRegions::mMutexPool[<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00112">112</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="a5644f2515910ef71a1e8d76f367a1264" name="a5644f2515910ef71a1e8d76f367a1264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5644f2515910ef71a1e8d76f367a1264">&#9670;&#160;</a></span>mNumTiles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int moonray::rndr::AdaptiveRegions::mNumTiles[<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00114">114</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="a5528fe5b55c25224ac8ea303d8558a3b" name="a5528fe5b55c25224ac8ea303d8558a3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5528fe5b55c25224ac8ea303d8558a3b">&#9670;&#160;</a></span>mRegionError</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;float&gt; moonray::rndr::AdaptiveRegions::mRegionError[<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00110">110</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="af64de2ea44f4a5654684838a21dc2964" name="af64de2ea44f4a5654684838a21dc2964"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af64de2ea44f4a5654684838a21dc2964">&#9670;&#160;</a></span>mRegions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a2b278065739463650b8f100f79b372fc">Regions</a> moonray::rndr::AdaptiveRegions::mRegions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00108">108</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="a84a3214e90b68de17c3972261194fd22" name="a84a3214e90b68de17c3972261194fd22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84a3214e90b68de17c3972261194fd22">&#9670;&#160;</a></span>mRegionTileCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmoonray_1_1rndr_1_1_adaptive_regions_1_1_region_tile_count.html">RegionTileCount</a> moonray::rndr::AdaptiveRegions::mRegionTileCount[<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00109">109</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="a76d15c70f8cae4b1c607aba04883f3b6" name="a76d15c70f8cae4b1c607aba04883f3b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76d15c70f8cae4b1c607aba04883f3b6">&#9670;&#160;</a></span>mTrees</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_region_tree.html">AdaptiveRegionTree</a> moonray::rndr::AdaptiveRegions::mTrees[<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae4ff2576a452eded89dee3f280719fca">sMaxNRegions</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00113">113</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="a307028cde908ba23208ac50e94f71e29" name="a307028cde908ba23208ac50e94f71e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a307028cde908ba23208ac50e94f71e29">&#9670;&#160;</a></span>mUpdateSentinel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1rndr_1_1_update_sentinel.html">UpdateSentinel</a> moonray::rndr::AdaptiveRegions::mUpdateSentinel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00116">116</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="afc0dc8a406b483235cdc7db58ac603e2" name="afc0dc8a406b483235cdc7db58ac603e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc0dc8a406b483235cdc7db58ac603e2">&#9670;&#160;</a></span>mVectorized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::rndr::AdaptiveRegions::mVectorized</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00107">107</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="ae5e87342d0fa2f0f37fa3d90af8fee89" name="ae5e87342d0fa2f0f37fa3d90af8fee89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5e87342d0fa2f0f37fa3d90af8fee89">&#9670;&#160;</a></span>sDesiredNRegionsPerDimension</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int moonray::rndr::AdaptiveRegions::sDesiredNRegionsPerDimension = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00046">46</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="a9a1293d6c5ec435d05da62c4db7f593a" name="a9a1293d6c5ec435d05da62c4db7f593a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a1293d6c5ec435d05da62c4db7f593a">&#9670;&#160;</a></span>sLogMutexCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int moonray::rndr::AdaptiveRegions::sLogMutexCount = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00104">104</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="ae4ff2576a452eded89dee3f280719fca" name="ae4ff2576a452eded89dee3f280719fca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4ff2576a452eded89dee3f280719fca">&#9670;&#160;</a></span>sMaxNRegions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int moonray::rndr::AdaptiveRegions::sMaxNRegions = <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae5e87342d0fa2f0f37fa3d90af8fee89">sDesiredNRegionsPerDimension</a>*<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#ae5e87342d0fa2f0f37fa3d90af8fee89">sDesiredNRegionsPerDimension</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00047">47</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="a68037f9f1a12d640763e0be1e5a4b93c" name="a68037f9f1a12d640763e0be1e5a4b93c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68037f9f1a12d640763e0be1e5a4b93c">&#9670;&#160;</a></span>sRegionOverlap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int moonray::rndr::AdaptiveRegions::sRegionOverlap = COARSE_TILE_SIZE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00050">50</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="ab538eb3da2efa5f4e92be9af7d6dca46" name="ab538eb3da2efa5f4e92be9af7d6dca46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab538eb3da2efa5f4e92be9af7d6dca46">&#9670;&#160;</a></span>sTileHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int moonray::rndr::AdaptiveRegions::sTileHeight = COARSE_TILE_SIZE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00049">49</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
+
+</div>
+</div>
+<a id="addc07e99d2447a1c4db07d743f244970" name="addc07e99d2447a1c4db07d743f244970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addc07e99d2447a1c4db07d743f244970">&#9670;&#160;</a></span>sTileWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int moonray::rndr::AdaptiveRegions::sTileWidth = COARSE_TILE_SIZE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_adaptive_regions_8h_source.html#l00048">48</a> of file <a class="el" href="_adaptive_regions_8h_source.html">AdaptiveRegions.h</a>.</p>
 
 </div>
 </div>
@@ -424,9 +1428,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/rndr/adaptive/<a class="el" href="_adaptive_regions_8cc_source.html">AdaptiveRegions.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html">AdaptiveRegions</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

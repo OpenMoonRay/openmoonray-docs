@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html">LayerAssignmentId</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1_layer_assignment_id.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1geom_1_1_layer_assignment_id-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::geom::LayerAssignmentId Class Reference</div></div>
 </div><!--header-->
@@ -108,6 +126,23 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae1fe4b3b659d5bbf5bd98b459afbf11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a386c03c8d51ca35d5a8e65b3048e606e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a386c03c8d51ca35d5a8e65b3048e606e">hasValidAssignment</a> () const</td></tr>
 <tr class="separator:a386c03c8d51ca35d5a8e65b3048e606e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a87e5d190268255d560257e94d6cb6942"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a87e5d190268255d560257e94d6cb6942">swapConstVarying</a> (<a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html">LayerAssignmentId</a> &amp;a, <a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html">LayerAssignmentId</a> &amp;b) noexcept</td></tr>
+<tr class="separator:a87e5d190268255d560257e94d6cb6942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a96d7b36ca365b8fee8b8d671ec63cc1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a96d7b36ca365b8fee8b8d671ec63cc1f">mType</a></td></tr>
+<tr class="separator:a96d7b36ca365b8fee8b8d671ec63cc1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7214d2da274bb934f3d170417cbaf534"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:aa0c33d3809226b5b4654d937d8a1ed89"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ae6c857ba0851bfdbddac6beba554a2cd">ValueType</a>&#160;&#160;&#160;<a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ae0c5a3426cbadecb34afc81cd4c8c537">mConstId</a></td></tr>
+<tr class="separator:aa0c33d3809226b5b4654d937d8a1ed89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af119d83fba9e42ea6a60bc5606e697e2"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a9c99ca5f4884237ab7f55b1704dac1b9">ContainerType</a>&#160;&#160;&#160;<a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a6c089127d186807d3c90558c83a07877">mVaryingId</a></td></tr>
+<tr class="separator:af119d83fba9e42ea6a60bc5606e697e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7214d2da274bb934f3d170417cbaf534"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a7214d2da274bb934f3d170417cbaf534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This class represents the mapping from each sub-primitive (face/curve) to a corresponding layer assignment id. Each primitive is constructed with one <a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html" title="This class represents the mapping from each sub-primitive (face/curve) to a corresponding layer assig...">LayerAssignmentId</a> so that it can locate the material shader assignment for each sub-primitive. If the whole primitive shares one material assignment, one ValueType is used to represent the id (CONSTANT). If the primitive is composed of several parts, a std::vector&lt;ValueType&gt; with size of sub-primitive count (for example, curves count in <a class="el" href="classmoonray_1_1geom_1_1_curves.html" title="Primitive that contains multiple curves.">Curves</a> primitive) is used to represent the id (VARYING) </p>
@@ -174,7 +209,13 @@ Public Member Functions</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00046">46</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   47</span>    {</div>
+<div class="line"><span class="lineno">   48</span>        <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">CONSTANT</a>, <span class="comment">///&lt;all sub-primitives share one assignment id</span></div>
+<div class="line"><span class="lineno">   49</span>        <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c">VARYING</a>   <span class="comment">///&lt;each sub-primitive maps to its corresponding assignment id</span></div>
+<div class="line"><span class="lineno">   50</span>    };</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">moonray::geom::LayerAssignmentId::Type::CONSTANT</a></div><div class="ttdeci">@ CONSTANT</div><div class="ttdoc">all sub-primitives share one assignment id</div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c">moonray::geom::LayerAssignmentId::Type::VARYING</a></div><div class="ttdeci">@ VARYING</div><div class="ttdoc">each sub-primitive maps to its corresponding assignment id</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -205,7 +246,14 @@ Public Member Functions</h2></td></tr>
 <p>construct CONSTANT rate <a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html" title="This class represents the mapping from each sub-primitive (face/curve) to a corresponding layer assig...">LayerAssignmentId</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00053">53</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   53</span>                                                      :</div>
+<div class="line"><span class="lineno">   54</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a96d7b36ca365b8fee8b8d671ec63cc1f">mType</a>(<a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">Type::CONSTANT</a>),</div>
+<div class="line"><span class="lineno">   55</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ae0c5a3426cbadecb34afc81cd4c8c537">mConstId</a>(<span class="keywordtype">id</span>)</div>
+<div class="line"><span class="lineno">   56</span>    {</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a96d7b36ca365b8fee8b8d671ec63cc1f"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a96d7b36ca365b8fee8b8d671ec63cc1f">moonray::geom::LayerAssignmentId::mType</a></div><div class="ttdeci">Type mType</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00212">LayerAssignmentId.h:212</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_ae0c5a3426cbadecb34afc81cd4c8c537"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ae0c5a3426cbadecb34afc81cd4c8c537">moonray::geom::LayerAssignmentId::mConstId</a></div><div class="ttdeci">ValueType mConstId</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00215">LayerAssignmentId.h:215</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac3b9f4d04e02f20798de086f94c1e42e" name="ac3b9f4d04e02f20798de086f94c1e42e"></a>
@@ -235,7 +283,13 @@ Public Member Functions</h2></td></tr>
 <p>construct VARYING rate <a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html" title="This class represents the mapping from each sub-primitive (face/curve) to a corresponding layer assig...">LayerAssignmentId</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00060">60</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   60</span>                                                        :</div>
+<div class="line"><span class="lineno">   61</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a96d7b36ca365b8fee8b8d671ec63cc1f">mType</a>(<a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c">Type::VARYING</a>),</div>
+<div class="line"><span class="lineno">   62</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a6c089127d186807d3c90558c83a07877">mVaryingId</a>(<span class="keywordtype">id</span>)</div>
+<div class="line"><span class="lineno">   63</span>    {</div>
+<div class="line"><span class="lineno">   64</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a6c089127d186807d3c90558c83a07877"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a6c089127d186807d3c90558c83a07877">moonray::geom::LayerAssignmentId::mVaryingId</a></div><div class="ttdeci">ContainerType mVaryingId</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00216">LayerAssignmentId.h:216</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acbf25f9c5be11633dca7a3ed09444284" name="acbf25f9c5be11633dca7a3ed09444284"></a>
@@ -265,7 +319,12 @@ Public Member Functions</h2></td></tr>
 <p>construct VARYING rate <a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html" title="This class represents the mapping from each sub-primitive (face/curve) to a corresponding layer assig...">LayerAssignmentId</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00067">67</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   67</span>                                                   :</div>
+<div class="line"><span class="lineno">   68</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a96d7b36ca365b8fee8b8d671ec63cc1f">mType</a>(<a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c">Type::VARYING</a>),</div>
+<div class="line"><span class="lineno">   69</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a6c089127d186807d3c90558c83a07877">mVaryingId</a>(std::move(<span class="keywordtype">id</span>))</div>
+<div class="line"><span class="lineno">   70</span>    {</div>
+<div class="line"><span class="lineno">   71</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0e16038896745c09c24f783f3ace909b" name="a0e16038896745c09c24f783f3ace909b"></a>
@@ -295,7 +354,12 @@ Public Member Functions</h2></td></tr>
 <p>construct VARYING rate <a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html" title="This class represents the mapping from each sub-primitive (face/curve) to a corresponding layer assig...">LayerAssignmentId</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00074">74</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   74</span>                                                           :</div>
+<div class="line"><span class="lineno">   75</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a96d7b36ca365b8fee8b8d671ec63cc1f">mType</a>(<a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c">Type::VARYING</a>),</div>
+<div class="line"><span class="lineno">   76</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a6c089127d186807d3c90558c83a07877">mVaryingId</a>(list.begin(), list.end())</div>
+<div class="line"><span class="lineno">   77</span>    {</div>
+<div class="line"><span class="lineno">   78</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aabc36fb00c2e166f123a1b0b377a7c00" name="aabc36fb00c2e166f123a1b0b377a7c00"></a>
@@ -325,7 +389,21 @@ Public Member Functions</h2></td></tr>
 <p>copy constructor </p>
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00081">81</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   81</span>                                                      :</div>
+<div class="line"><span class="lineno">   82</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a96d7b36ca365b8fee8b8d671ec63cc1f">mType</a>(other.mType)</div>
+<div class="line"><span class="lineno">   83</span>    {</div>
+<div class="line"><span class="lineno">   84</span>        <span class="keywordflow">switch</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a96d7b36ca365b8fee8b8d671ec63cc1f">mType</a>) {</div>
+<div class="line"><span class="lineno">   85</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">Type::CONSTANT</a>:</div>
+<div class="line"><span class="lineno">   86</span>                <span class="keyword">new</span> (&amp;<a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ae0c5a3426cbadecb34afc81cd4c8c537">mConstId</a>) <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ae6c857ba0851bfdbddac6beba554a2cd">ValueType</a>(other.mConstId);</div>
+<div class="line"><span class="lineno">   87</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   88</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c">Type::VARYING</a>:</div>
+<div class="line"><span class="lineno">   89</span>                <span class="keyword">new</span> (&amp;<a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a6c089127d186807d3c90558c83a07877">mVaryingId</a>) <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a9c99ca5f4884237ab7f55b1704dac1b9">ContainerType</a>(other.mVaryingId);</div>
+<div class="line"><span class="lineno">   90</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   91</span>        }</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a9c99ca5f4884237ab7f55b1704dac1b9"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a9c99ca5f4884237ab7f55b1704dac1b9">moonray::geom::LayerAssignmentId::ContainerType</a></div><div class="ttdeci">std::vector&lt; ValueType &gt; ContainerType</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00044">LayerAssignmentId.h:44</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_ae6c857ba0851bfdbddac6beba554a2cd"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ae6c857ba0851bfdbddac6beba554a2cd">moonray::geom::LayerAssignmentId::ValueType</a></div><div class="ttdeci">int ValueType</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00043">LayerAssignmentId.h:43</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac696d5fcb25dfc61f2765786ee4c1615" name="ac696d5fcb25dfc61f2765786ee4c1615"></a>
@@ -355,7 +433,19 @@ Public Member Functions</h2></td></tr>
 <p>move constructor </p>
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00095">95</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   95</span>                                                          :</div>
+<div class="line"><span class="lineno">   96</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a96d7b36ca365b8fee8b8d671ec63cc1f">mType</a>(other.mType)</div>
+<div class="line"><span class="lineno">   97</span>    {</div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">switch</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a96d7b36ca365b8fee8b8d671ec63cc1f">mType</a>) {</div>
+<div class="line"><span class="lineno">   99</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">Type::CONSTANT</a>:</div>
+<div class="line"><span class="lineno">  100</span>                <span class="keyword">new</span> (&amp;<a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ae0c5a3426cbadecb34afc81cd4c8c537">mConstId</a>) <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ae6c857ba0851bfdbddac6beba554a2cd">ValueType</a>(std::move(other.mConstId));</div>
+<div class="line"><span class="lineno">  101</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  102</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c">Type::VARYING</a>:</div>
+<div class="line"><span class="lineno">  103</span>                <span class="keyword">new</span> (&amp;<a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a6c089127d186807d3c90558c83a07877">mVaryingId</a>) <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a9c99ca5f4884237ab7f55b1704dac1b9">ContainerType</a>(std::move(other.mVaryingId));</div>
+<div class="line"><span class="lineno">  104</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  105</span>        }</div>
+<div class="line"><span class="lineno">  106</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a643c1907555f02497dbb3ae22a3fb35f" name="a643c1907555f02497dbb3ae22a3fb35f"></a>
@@ -382,7 +472,18 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00123">123</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  124</span>    {</div>
+<div class="line"><span class="lineno">  125</span>        <span class="keywordflow">switch</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a96d7b36ca365b8fee8b8d671ec63cc1f">mType</a>) {</div>
+<div class="line"><span class="lineno">  126</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">Type::CONSTANT</a>:</div>
+<div class="line"><span class="lineno">  127</span>                <a class="code hl_function" href="namespacemoonray_1_1geom_1_1detail.html#ab979561a1f78f16a4031f41394a14d74">detail::destroy</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ae0c5a3426cbadecb34afc81cd4c8c537">mConstId</a>);</div>
+<div class="line"><span class="lineno">  128</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  129</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c">Type::VARYING</a>:</div>
+<div class="line"><span class="lineno">  130</span>                <a class="code hl_function" href="namespacemoonray_1_1geom_1_1detail.html#ab979561a1f78f16a4031f41394a14d74">detail::destroy</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a6c089127d186807d3c90558c83a07877">mVaryingId</a>);</div>
+<div class="line"><span class="lineno">  131</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  132</span>        }</div>
+<div class="line"><span class="lineno">  133</span>    }</div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1detail_html_ab979561a1f78f16a4031f41394a14d74"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1detail.html#ab979561a1f78f16a4031f41394a14d74">moonray::geom::detail::destroy</a></div><div class="ttdeci">void destroy(T &amp;t)</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00023">LayerAssignmentId.h:23</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -410,7 +511,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00160">160</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  161</span>    {</div>
+<div class="line"><span class="lineno">  162</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a96d7b36ca365b8fee8b8d671ec63cc1f">mType</a> == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">Type::CONSTANT</a>);</div>
+<div class="line"><span class="lineno">  163</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ae0c5a3426cbadecb34afc81cd4c8c537">mConstId</a>;</div>
+<div class="line"><span class="lineno">  164</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae1fe4b3b659d5bbf5bd98b459afbf11c" name="ae1fe4b3b659d5bbf5bd98b459afbf11c"></a>
@@ -437,7 +542,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00178">178</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  178</span>                             {</div>
+<div class="line"><span class="lineno">  179</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0b2d21ef3df121422a79526b079c580e">getType</a>() == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">Type::CONSTANT</a> ?</div>
+<div class="line"><span class="lineno">  180</span>            <span class="keyword">sizeof</span>(<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0901f0462cb73c781bfc788e13f797d6">LayerAssignmentId</a>) :</div>
+<div class="line"><span class="lineno">  181</span>            scene_rdl2::util::getVectorMemory(<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0e7e74cdce226e48699f4d43b79c1fd1">getVaryingId</a>());</div>
+<div class="line"><span class="lineno">  182</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a0901f0462cb73c781bfc788e13f797d6"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0901f0462cb73c781bfc788e13f797d6">moonray::geom::LayerAssignmentId::LayerAssignmentId</a></div><div class="ttdeci">LayerAssignmentId(ValueType id) noexcept</div><div class="ttdoc">construct CONSTANT rate LayerAssignmentId</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00053">LayerAssignmentId.h:53</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a0b2d21ef3df121422a79526b079c580e"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0b2d21ef3df121422a79526b079c580e">moonray::geom::LayerAssignmentId::getType</a></div><div class="ttdeci">Type getType() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00155">LayerAssignmentId.h:155</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a0e7e74cdce226e48699f4d43b79c1fd1"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0e7e74cdce226e48699f4d43b79c1fd1">moonray::geom::LayerAssignmentId::getVaryingId</a></div><div class="ttdeci">const ContainerType &amp; getVaryingId() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00166">LayerAssignmentId.h:166</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0b2d21ef3df121422a79526b079c580e" name="a0b2d21ef3df121422a79526b079c580e"></a>
@@ -464,7 +577,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00155">155</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  156</span>    {</div>
+<div class="line"><span class="lineno">  157</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a96d7b36ca365b8fee8b8d671ec63cc1f">mType</a>;</div>
+<div class="line"><span class="lineno">  158</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0e7e74cdce226e48699f4d43b79c1fd1" name="a0e7e74cdce226e48699f4d43b79c1fd1"></a>
@@ -491,7 +607,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00166">166</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  167</span>    {</div>
+<div class="line"><span class="lineno">  168</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a96d7b36ca365b8fee8b8d671ec63cc1f">mType</a> == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c">Type::VARYING</a>);</div>
+<div class="line"><span class="lineno">  169</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a6c089127d186807d3c90558c83a07877">mVaryingId</a>;</div>
+<div class="line"><span class="lineno">  170</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0db53795c337aedd0a84eb756c29dcca" name="a0db53795c337aedd0a84eb756c29dcca"></a>
@@ -518,7 +638,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00172">172</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  173</span>    {</div>
+<div class="line"><span class="lineno">  174</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a96d7b36ca365b8fee8b8d671ec63cc1f">mType</a> == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c">Type::VARYING</a>);</div>
+<div class="line"><span class="lineno">  175</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a6c089127d186807d3c90558c83a07877">mVaryingId</a>;</div>
+<div class="line"><span class="lineno">  176</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a386c03c8d51ca35d5a8e65b3048e606e" name="a386c03c8d51ca35d5a8e65b3048e606e"></a>
@@ -545,7 +669,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00184">184</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  184</span>                                    {</div>
+<div class="line"><span class="lineno">  185</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a96d7b36ca365b8fee8b8d671ec63cc1f">mType</a> == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">Type::CONSTANT</a>) {</div>
+<div class="line"><span class="lineno">  186</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ae0c5a3426cbadecb34afc81cd4c8c537">mConstId</a> &gt;= 0;</div>
+<div class="line"><span class="lineno">  187</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  188</span>            <span class="keywordflow">return</span> std::any_of(<a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a6c089127d186807d3c90558c83a07877">mVaryingId</a>.begin(), <a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a6c089127d186807d3c90558c83a07877">mVaryingId</a>.end(),</div>
+<div class="line"><span class="lineno">  189</span>                [](<a class="code hl_typedef" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ae6c857ba0851bfdbddac6beba554a2cd">ValueType</a> <span class="keywordtype">id</span>) { return id &gt;= 0; });</div>
+<div class="line"><span class="lineno">  190</span>        }</div>
+<div class="line"><span class="lineno">  191</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6f33914ac0573d04387e64f71c3beb2f" name="a6f33914ac0573d04387e64f71c3beb2f"></a>
@@ -573,7 +705,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00109">109</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  110</span>    {</div>
+<div class="line"><span class="lineno">  111</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0901f0462cb73c781bfc788e13f797d6">LayerAssignmentId</a> lid(other);</div>
+<div class="line"><span class="lineno">  112</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ac772444c357b94375153e746242e1c3c">swap</a>(lid);</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  114</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_ac772444c357b94375153e746242e1c3c"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ac772444c357b94375153e746242e1c3c">moonray::geom::LayerAssignmentId::swap</a></div><div class="ttdeci">void swap(LayerAssignmentId &amp;other) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00135">LayerAssignmentId.h:135</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a75b51bb38990740bff3eab0c730d9a63" name="a75b51bb38990740bff3eab0c730d9a63"></a>
@@ -601,7 +739,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00116">116</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  117</span>    {</div>
+<div class="line"><span class="lineno">  118</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0901f0462cb73c781bfc788e13f797d6">LayerAssignmentId</a> lid(std::move(other));</div>
+<div class="line"><span class="lineno">  119</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ac772444c357b94375153e746242e1c3c">swap</a>(lid);</div>
+<div class="line"><span class="lineno">  120</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  121</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac772444c357b94375153e746242e1c3c" name="ac772444c357b94375153e746242e1c3c"></a>
@@ -629,10 +772,98 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00135">135</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  136</span>    {</div>
+<div class="line"><span class="lineno">  137</span>        <span class="keyword">using </span><a class="code hl_function" href="namespacestd.html#a7ffc9a83d505624d453906655627414d">std::swap</a>; <span class="comment">// Allow ADL</span></div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>        <span class="keyword">const</span> <a class="code hl_enumeration" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34">Type</a> thisType = this-&gt;<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0b2d21ef3df121422a79526b079c580e">getType</a>();</div>
+<div class="line"><span class="lineno">  140</span>        <span class="keyword">const</span> <a class="code hl_enumeration" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34">Type</a> otherType = other.getType();</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>        <span class="keywordflow">if</span> (thisType == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">Type::CONSTANT</a> &amp;&amp; otherType == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">Type::CONSTANT</a>) {</div>
+<div class="line"><span class="lineno">  143</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ac772444c357b94375153e746242e1c3c">swap</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ae0c5a3426cbadecb34afc81cd4c8c537">mConstId</a>, other.mConstId);</div>
+<div class="line"><span class="lineno">  144</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (thisType == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c">Type::VARYING</a> &amp;&amp; otherType == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c">Type::VARYING</a>) {</div>
+<div class="line"><span class="lineno">  145</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ac772444c357b94375153e746242e1c3c">swap</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a6c089127d186807d3c90558c83a07877">mVaryingId</a>, other.mVaryingId);</div>
+<div class="line"><span class="lineno">  146</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (thisType == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">Type::CONSTANT</a> &amp;&amp; otherType == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c">Type::VARYING</a>) {</div>
+<div class="line"><span class="lineno">  147</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a87e5d190268255d560257e94d6cb6942">swapConstVarying</a>(*<span class="keyword">this</span>, other);</div>
+<div class="line"><span class="lineno">  148</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (thisType == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c">Type::VARYING</a> &amp;&amp; otherType == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">Type::CONSTANT</a>) {</div>
+<div class="line"><span class="lineno">  149</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a87e5d190268255d560257e94d6cb6942">swapConstVarying</a>(other, *<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  150</span>        }</div>
+<div class="line"><span class="lineno">  151</span> </div>
+<div class="line"><span class="lineno">  152</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ac772444c357b94375153e746242e1c3c">swap</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a96d7b36ca365b8fee8b8d671ec63cc1f">mType</a>, other.mType);</div>
+<div class="line"><span class="lineno">  153</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a80d6a4a2907c0a0b57d0dc66ddaa8c34"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34">moonray::geom::LayerAssignmentId::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00046">LayerAssignmentId.h:47</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a87e5d190268255d560257e94d6cb6942"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a87e5d190268255d560257e94d6cb6942">moonray::geom::LayerAssignmentId::swapConstVarying</a></div><div class="ttdeci">static void swapConstVarying(LayerAssignmentId &amp;a, LayerAssignmentId &amp;b) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00195">LayerAssignmentId.h:195</a></div></div>
+<div class="ttc" id="anamespacestd_html_a7ffc9a83d505624d453906655627414d"><div class="ttname"><a href="namespacestd.html#a7ffc9a83d505624d453906655627414d">std::swap</a></div><div class="ttdeci">void swap(StaticVector&lt; T, N &gt; &amp;a, StaticVector&lt; T, N &gt; &amp;b) noexcept(noexcept(a.swap(b)))</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2point__generation__cmd_2_static_vector_8h_source.html#l00552">StaticVector.h:552</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a87e5d190268255d560257e94d6cb6942" name="a87e5d190268255d560257e94d6cb6942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87e5d190268255d560257e94d6cb6942">&#9670;&#160;</a></span>swapConstVarying()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void moonray::geom::LayerAssignmentId::swapConstVarying </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html">LayerAssignmentId</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html">LayerAssignmentId</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00195">195</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  197</span>    {</div>
+<div class="line"><span class="lineno">  198</span>        <span class="comment">// Technically, we don&#39;t have to destroy an int, but it doesn&#39;t hurt.</span></div>
+<div class="line"><span class="lineno">  199</span>        <span class="comment">// Let&#39;s be consistent.</span></div>
+<div class="line"><span class="lineno">  200</span>        <span class="keyword">auto</span> <span class="keywordtype">id</span> = std::move(<a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a>.mConstId);</div>
+<div class="line"><span class="lineno">  201</span>        <a class="code hl_function" href="namespacemoonray_1_1geom_1_1detail.html#ab979561a1f78f16a4031f41394a14d74">detail::destroy</a>(<a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a>.mConstId);</div>
+<div class="line"><span class="lineno">  202</span> </div>
+<div class="line"><span class="lineno">  203</span>        <span class="comment">// Move the vector from b to a, making sure to call the constructor of</span></div>
+<div class="line"><span class="lineno">  204</span>        <span class="comment">// the new vector.</span></div>
+<div class="line"><span class="lineno">  205</span>        <span class="keyword">new</span> (&amp;<a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a>.mVaryingId) <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a9c99ca5f4884237ab7f55b1704dac1b9">ContainerType</a>(std::move(b.mVaryingId));</div>
+<div class="line"><span class="lineno">  206</span>        <a class="code hl_function" href="namespacemoonray_1_1geom_1_1detail.html#ab979561a1f78f16a4031f41394a14d74">detail::destroy</a>(b.mVaryingId);</div>
+<div class="line"><span class="lineno">  207</span> </div>
+<div class="line"><span class="lineno">  208</span>        <span class="comment">// Move the saved int to b.</span></div>
+<div class="line"><span class="lineno">  209</span>        <span class="keyword">new</span> (&amp;b.mConstId) <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#ae6c857ba0851bfdbddac6beba554a2cd">ValueType</a>(std::move(<span class="keywordtype">id</span>));</div>
+<div class="line"><span class="lineno">  210</span>    }</div>
+<div class="ttc" id="anamespacesequence__discrepancy_html_a06f968c2f5ed1f9d42f00351b2b1efb2"><div class="ttname"><a href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">sequence_discrepancy.a</a></div><div class="ttdeci">def a</div><div class="ttdef"><b>Definition:</b> <a href="sequence__discrepancy_8py_source.html#l00038">sequence_discrepancy.py:38</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7214d2da274bb934f3d170417cbaf534" name="a7214d2da274bb934f3d170417cbaf534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7214d2da274bb934f3d170417cbaf534">&#9670;&#160;</a></span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union  { ... }  moonray::geom::LayerAssignmentId::@5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae0c5a3426cbadecb34afc81cd4c8c537" name="ae0c5a3426cbadecb34afc81cd4c8c537"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0c5a3426cbadecb34afc81cd4c8c537">&#9670;&#160;</a></span>mConstId</h2>
 
@@ -646,6 +877,30 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00215">215</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
+
+</div>
+</div>
+<a id="a96d7b36ca365b8fee8b8d671ec63cc1f" name="a96d7b36ca365b8fee8b8d671ec63cc1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d7b36ca365b8fee8b8d671ec63cc1f">&#9670;&#160;</a></span>mType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34">Type</a> moonray::geom::LayerAssignmentId::mType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_layer_assignment_id_8h_source.html#l00212">212</a> of file <a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a>.</p>
 
 </div>
 </div>
@@ -669,9 +924,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/geom/<a class="el" href="_layer_assignment_id_8h_source.html">LayerAssignmentId.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1_layer_assignment_id.html">LayerAssignmentId</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

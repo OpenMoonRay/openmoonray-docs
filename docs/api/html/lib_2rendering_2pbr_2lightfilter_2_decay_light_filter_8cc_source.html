@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_0a2a2b866d7615677c0b171a63da29b0.html">lightfilter</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('lib_2rendering_2pbr_2lightfilter_2_decay_light_filter_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">DecayLightFilter.cc</div></div>
 </div><!--header-->
@@ -51,8 +67,9 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2017-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @author Marianna Neubauer</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"></span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_decay_light_filter_8h.html">DecayLightFilter.h</a>&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;rendering/pbr/lightfilter/DecayLightFilter_ispc_stubs.h&gt;</span></div>
@@ -64,13 +81,13 @@ $(function() {
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacescene__rdl2.html">scene_rdl2</a>;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacescene__rdl2_1_1math.html">scene_rdl2::math</a>;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">bool</span> DecayLightFilter::sAttributeKeyInitialized;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Bool&gt; DecayLightFilter::sFalloffNearKey;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Bool&gt; DecayLightFilter::sFalloffFarKey;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt; DecayLightFilter::sNearStartKey;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt; DecayLightFilter::sNearEndKey;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt; DecayLightFilter::sFarStartKey;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt; DecayLightFilter::sFarEndKey;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">bool</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a5ba67f20da1d9d94013fb479e07bfeb8">DecayLightFilter::sAttributeKeyInitialized</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Bool&gt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a864db62cc33ad16928f725c28aa51973">DecayLightFilter::sFalloffNearKey</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Bool&gt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a4267fa7b7e3e48417aaeb736206544d4">DecayLightFilter::sFalloffFarKey</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a1f795f80a9cf61b0d84246d0cadf78fd">DecayLightFilter::sNearStartKey</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a66d819ead179c369f7c0e1cba29feac9">DecayLightFilter::sNearEndKey</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#ac2a18c6af41292401db1b9e87f5d73f4">DecayLightFilter::sFarStartKey</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a6551131041691bef21faf9565afb4ec2">DecayLightFilter::sFarEndKey</a>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#ae50f3f14dc9d4a2f4a7fc04f79d0b26b">   27</a></span><a class="code hl_function" href="namespacemoonray_1_1shading.html#a4165bb31802420806b511be919235c34">HUD_VALIDATOR</a>(<a class="code hl_class" href="classmoonray_1_1pbr_1_1_decay_light_filter.html">DecayLightFilter</a>);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
@@ -89,20 +106,20 @@ $(function() {
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a88dafb2cabdeb0d76286f22db7db25f7">   42</a></span><a class="code hl_function" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a88dafb2cabdeb0d76286f22db7db25f7">DecayLightFilter::initAttributeKeys</a>(<span class="keyword">const</span> scene_rdl2::rdl2::SceneClass &amp;sc)</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">if</span> (sAttributeKeyInitialized) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a5ba67f20da1d9d94013fb479e07bfeb8">sAttributeKeyInitialized</a>) {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_define" href="moonray__static__check_8h.html#ae87f12215947fe7d7703094b9fa857a9">MOONRAY_START_NON_THREADSAFE_STATIC_WRITE</a></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    sAttributeKeyInitialized = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a5ba67f20da1d9d94013fb479e07bfeb8">sAttributeKeyInitialized</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    sFalloffNearKey = sc.getAttributeKey&lt;scene_rdl2::rdl2::Bool&gt;(<span class="stringliteral">&quot;falloff_near&quot;</span>);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    sFalloffFarKey = sc.getAttributeKey&lt;scene_rdl2::rdl2::Bool&gt;(<span class="stringliteral">&quot;falloff_far&quot;</span>);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    sNearStartKey = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;near_start&quot;</span>);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    sNearEndKey = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;near_end&quot;</span>);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    sFarStartKey = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;far_start&quot;</span>);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    sFarEndKey = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;far_end&quot;</span>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a864db62cc33ad16928f725c28aa51973">sFalloffNearKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::Bool&gt;(<span class="stringliteral">&quot;falloff_near&quot;</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a4267fa7b7e3e48417aaeb736206544d4">sFalloffFarKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::Bool&gt;(<span class="stringliteral">&quot;falloff_far&quot;</span>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a1f795f80a9cf61b0d84246d0cadf78fd">sNearStartKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;near_start&quot;</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a66d819ead179c369f7c0e1cba29feac9">sNearEndKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;near_end&quot;</span>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#ac2a18c6af41292401db1b9e87f5d73f4">sFarStartKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;far_start&quot;</span>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a6551131041691bef21faf9565afb4ec2">sFarEndKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;far_end&quot;</span>);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_define" href="moonray__static__check_8h.html#acd5373f1dc116d01f690f774c8d96015">MOONRAY_FINISH_NON_THREADSAFE_STATIC_WRITE</a></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
@@ -114,17 +131,17 @@ $(function() {
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">if</span> (!mRdlLightFilter) {</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    mFalloffNear = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Bool&gt;(sFalloffNearKey);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    mFalloffFar = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Bool&gt;(sFalloffFarKey);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    mNearStart = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(sNearStartKey);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    mNearEnd = scene_rdl2::math::max(mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(sNearEndKey), mNearStart);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    mFarStart = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(sFarStartKey);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    mFalloffNear = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Bool&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a864db62cc33ad16928f725c28aa51973">sFalloffNearKey</a>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    mFalloffFar = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Bool&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a4267fa7b7e3e48417aaeb736206544d4">sFalloffFarKey</a>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    mNearStart = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a1f795f80a9cf61b0d84246d0cadf78fd">sNearStartKey</a>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    mNearEnd = scene_rdl2::math::max(mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a66d819ead179c369f7c0e1cba29feac9">sNearEndKey</a>), mNearStart);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    mFarStart = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#ac2a18c6af41292401db1b9e87f5d73f4">sFarStartKey</a>);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// If there is a near falloff, we want the far falloff to start afterwards,</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">// otherwise there is a discontinuity in the light decay.</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">if</span> (mFalloffNear) {</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        mFarStart = scene_rdl2::math::max(mFarStart, mNearEnd);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    mFarEnd = scene_rdl2::math::max(mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(sFarEndKey), mFarStart);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    mFarEnd = scene_rdl2::math::max(mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a6551131041691bef21faf9565afb4ec2">sFarEndKey</a>), mFarStart);</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keywordtype">bool</span></div>
@@ -179,10 +196,17 @@ $(function() {
 <div class="ttc" id="a_decay_light_filter_8h_html"><div class="ttname"><a href="_decay_light_filter_8h.html">DecayLightFilter.h</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_decay_light_filter_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_decay_light_filter.html">moonray::pbr::DecayLightFilter</a></div><div class="ttdef"><b>Definition:</b> <a href="_decay_light_filter_8h_source.html#l00024">DecayLightFilter.h:25</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_decay_light_filter_html_a08b4992f0554ffead7b7a9b5abcf5310"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a08b4992f0554ffead7b7a9b5abcf5310">moonray::pbr::DecayLightFilter::update</a></div><div class="ttdeci">virtual void update(const LightFilterMap &amp;lightFilters, const scene_rdl2::math::Mat4d &amp;world2render) override</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_decay_light_filter_8cc_source.html#l00063">DecayLightFilter.cc:63</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_decay_light_filter_html_a1f795f80a9cf61b0d84246d0cadf78fd"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a1f795f80a9cf61b0d84246d0cadf78fd">moonray::pbr::DecayLightFilter::sNearStartKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sNearStartKey</div><div class="ttdef"><b>Definition:</b> <a href="_decay_light_filter_8h_source.html#l00053">DecayLightFilter.h:53</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_decay_light_filter_html_a4267fa7b7e3e48417aaeb736206544d4"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a4267fa7b7e3e48417aaeb736206544d4">moonray::pbr::DecayLightFilter::sFalloffFarKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Bool &gt; sFalloffFarKey</div><div class="ttdef"><b>Definition:</b> <a href="_decay_light_filter_8h_source.html#l00052">DecayLightFilter.h:52</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_decay_light_filter_html_a447c3b9538d2dc9e82b180fc20e76de2"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a447c3b9538d2dc9e82b180fc20e76de2">moonray::pbr::DecayLightFilter::canIlluminate</a></div><div class="ttdeci">virtual bool canIlluminate(const CanIlluminateData &amp;data) const override</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_decay_light_filter_8cc_source.html#l00083">DecayLightFilter.cc:83</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_decay_light_filter_html_a5ba67f20da1d9d94013fb479e07bfeb8"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a5ba67f20da1d9d94013fb479e07bfeb8">moonray::pbr::DecayLightFilter::sAttributeKeyInitialized</a></div><div class="ttdeci">static bool sAttributeKeyInitialized</div><div class="ttdef"><b>Definition:</b> <a href="_decay_light_filter_8h_source.html#l00050">DecayLightFilter.h:50</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_decay_light_filter_html_a6551131041691bef21faf9565afb4ec2"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a6551131041691bef21faf9565afb4ec2">moonray::pbr::DecayLightFilter::sFarEndKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sFarEndKey</div><div class="ttdef"><b>Definition:</b> <a href="_decay_light_filter_8h_source.html#l00056">DecayLightFilter.h:56</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_decay_light_filter_html_a66d819ead179c369f7c0e1cba29feac9"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a66d819ead179c369f7c0e1cba29feac9">moonray::pbr::DecayLightFilter::sNearEndKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sNearEndKey</div><div class="ttdef"><b>Definition:</b> <a href="_decay_light_filter_8h_source.html#l00054">DecayLightFilter.h:54</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_decay_light_filter_html_a864db62cc33ad16928f725c28aa51973"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a864db62cc33ad16928f725c28aa51973">moonray::pbr::DecayLightFilter::sFalloffNearKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Bool &gt; sFalloffNearKey</div><div class="ttdef"><b>Definition:</b> <a href="_decay_light_filter_8h_source.html#l00051">DecayLightFilter.h:51</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_decay_light_filter_html_a88dafb2cabdeb0d76286f22db7db25f7"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a88dafb2cabdeb0d76286f22db7db25f7">moonray::pbr::DecayLightFilter::initAttributeKeys</a></div><div class="ttdeci">void initAttributeKeys(const scene_rdl2::rdl2::SceneClass &amp;sc)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_decay_light_filter_8cc_source.html#l00042">DecayLightFilter.cc:42</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_decay_light_filter_html_a8bb461ae5747b05a94738e379d6d3c6b"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a8bb461ae5747b05a94738e379d6d3c6b">moonray::pbr::DecayLightFilter::DecayLightFilter</a></div><div class="ttdeci">DecayLightFilter()</div><div class="ttdef"><b>Definition:</b> <a href="_decay_light_filter_8h_source.html#l00029">DecayLightFilter.h:29</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_decay_light_filter_html_aaf922aef411ea152cb49d5cbfe6ba8a4"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_decay_light_filter.html#aaf922aef411ea152cb49d5cbfe6ba8a4">moonray::pbr::DecayLightFilter::eval</a></div><div class="ttdeci">virtual scene_rdl2::math::Color eval(const EvalData &amp;data) const override</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_decay_light_filter_8cc_source.html#l00107">DecayLightFilter.cc:107</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_decay_light_filter_html_ac2a18c6af41292401db1b9e87f5d73f4"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_decay_light_filter.html#ac2a18c6af41292401db1b9e87f5d73f4">moonray::pbr::DecayLightFilter::sFarStartKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sFarStartKey</div><div class="ttdef"><b>Definition:</b> <a href="_decay_light_filter_8h_source.html#l00055">DecayLightFilter.h:55</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_filter_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_filter.html">moonray::pbr::LightFilter</a></div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8h_source.html#l00041">LightFilter.h:42</a></div></div>
 <div class="ttc" id="amoonray__static__check_8h_html"><div class="ttname"><a href="moonray__static__check_8h.html">moonray_static_check.h</a></div></div>
 <div class="ttc" id="amoonray__static__check_8h_html_acd5373f1dc116d01f690f774c8d96015"><div class="ttname"><a href="moonray__static__check_8h.html#acd5373f1dc116d01f690f774c8d96015">MOONRAY_FINISH_NON_THREADSAFE_STATIC_WRITE</a></div><div class="ttdeci">#define MOONRAY_FINISH_NON_THREADSAFE_STATIC_WRITE</div><div class="ttdef"><b>Definition:</b> <a href="moonray__static__check_8h_source.html#l00106">moonray_static_check.h:106</a></div></div>
@@ -201,9 +225,13 @@ $(function() {
 <div class="ttc" id="astructmoonray_1_1pbr_1_1_light_filter_1_1_eval_data_html_a1035a9cd81896283cdd6cb381e27c481"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_filter_1_1_eval_data.html#a1035a9cd81896283cdd6cb381e27c481">moonray::pbr::LightFilter::EvalData::isect</a></div><div class="ttdeci">const LightIntersection * isect</div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8h_source.html#l00077">LightFilter.h:77</a></div></div>
 <div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersection_html_ab4b601b0f47a6c6bc229b9744a021a83"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersection.html#ab4b601b0f47a6c6bc229b9744a021a83">moonray::pbr::LightIntersection::distance</a></div><div class="ttdeci">float distance</div><div class="ttdoc">distance traveled along ray to the hit point</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00043">LightUtil.h:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_ec0373f1e45928918058d4e27767808d.html">lightfilter</a></li><li class="navelem"><a class="el" href="lib_2rendering_2pbr_2lightfilter_2_decay_light_filter_8cc.html">DecayLightFilter.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_203f3a5f827b58ae1def3979c9063c7a.html">camera</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_spherical_camera_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">SphericalCamera.h</div></div>
 </div><!--header-->
@@ -64,22 +80,23 @@ $(function() {
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_spherical_camera.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1pbr_1_1_spherical_camera.html">SphericalCamera</a> : <span class="keyword">public</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_camera.html">Camera</a></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_spherical_camera.html">SphericalCamera</a>(<span class="keyword">const</span> scene_rdl2::rdl2::Camera* rdlCamera);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">    /// Constructor</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"></span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_spherical_camera.html">SphericalCamera</a>(<span class="keyword">const</span> scene_rdl2::rdl2::Camera* rdlCamera);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">bool</span> getIsDofEnabledImpl() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_spherical_camera.html#a003bc2c259e13849ad3de9e5bf2e43a7">getIsDofEnabledImpl</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span> updateImpl(<span class="keyword">const</span> scene_rdl2::math::Mat4d&amp; world2render) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_spherical_camera.html#ad75788306cba6d3d0fba8375150f0610">updateImpl</a>(<span class="keyword">const</span> scene_rdl2::math::Mat4d&amp; world2render) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> createRayImpl(<a class="code hl_class" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html">mcrt_common::RayDifferential</a>* dstRay,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                       <span class="keywordtype">float</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                       <span class="keywordtype">float</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_spherical_camera.html#ab5adf74fbc079fd8f6578b83aea88acb">createRayImpl</a>(<a class="code hl_class" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html">mcrt_common::RayDifferential</a>* dstRay,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                       <span class="keywordtype">float</span> x,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                       <span class="keywordtype">float</span> y,</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                       <span class="keywordtype">float</span> time,</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                       <span class="keywordtype">float</span> lensU,</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                       <span class="keywordtype">float</span> lensV) <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    scene_rdl2::math::Vec3f createDirection(<span class="keywordtype">float</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <span class="keywordtype">float</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    scene_rdl2::math::Vec3f <a class="code hl_function" href="classmoonray_1_1pbr_1_1_spherical_camera.html#a66678e80b7a8224bbcb087ca5ea9e5e7">createDirection</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
@@ -91,16 +108,22 @@ $(function() {
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="ttc" id="a_camera_8h_html"><div class="ttname"><a href="_camera_8h.html">Camera.h</a></div></div>
-<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
-<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_ray_differential_html"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_ray_differential.html">moonray::mcrt_common::RayDifferential</a></div><div class="ttdoc">Tracks a ray and its differentials through reflections/refractions.</div><div class="ttdef"><b>Definition:</b> <a href="_ray_8h_source.html#l00232">Ray.h:233</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html">moonray::pbr::Camera</a></div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00031">Camera.h:32</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_spherical_camera_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_spherical_camera.html">moonray::pbr::SphericalCamera</a></div><div class="ttdef"><b>Definition:</b> <a href="_spherical_camera_8h_source.html#l00016">SphericalCamera.h:17</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_spherical_camera_html_a003bc2c259e13849ad3de9e5bf2e43a7"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_spherical_camera.html#a003bc2c259e13849ad3de9e5bf2e43a7">moonray::pbr::SphericalCamera::getIsDofEnabledImpl</a></div><div class="ttdeci">bool getIsDofEnabledImpl() const override</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2camera_2_spherical_camera_8cc_source.html#l00019">SphericalCamera.cc:19</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_spherical_camera_html_a66678e80b7a8224bbcb087ca5ea9e5e7"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_spherical_camera.html#a66678e80b7a8224bbcb087ca5ea9e5e7">moonray::pbr::SphericalCamera::createDirection</a></div><div class="ttdeci">scene_rdl2::math::Vec3f createDirection(float x, float y) const</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2camera_2_spherical_camera_8cc_source.html#l00052">SphericalCamera.cc:52</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_spherical_camera_html_ab5adf74fbc079fd8f6578b83aea88acb"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_spherical_camera.html#ab5adf74fbc079fd8f6578b83aea88acb">moonray::pbr::SphericalCamera::createRayImpl</a></div><div class="ttdeci">void createRayImpl(mcrt_common::RayDifferential *dstRay, float x, float y, float time, float lensU, float lensV) const override</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2camera_2_spherical_camera_8cc_source.html#l00028">SphericalCamera.cc:28</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_spherical_camera_html_ad75788306cba6d3d0fba8375150f0610"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_spherical_camera.html#ad75788306cba6d3d0fba8375150f0610">moonray::pbr::SphericalCamera::updateImpl</a></div><div class="ttdeci">void updateImpl(const scene_rdl2::math::Mat4d &amp;world2render) override</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2camera_2_spherical_camera_8cc_source.html#l00024">SphericalCamera.cc:24</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_c88f59078831dd1baeaa27ff14ac6c27.html">camera</a></li><li class="navelem"><a class="el" href="_spherical_camera_8h.html">SphericalCamera.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

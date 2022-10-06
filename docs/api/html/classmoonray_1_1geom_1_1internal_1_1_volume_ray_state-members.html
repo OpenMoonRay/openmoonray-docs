@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">VolumeRayState</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">moonray::geom::internal::VolumeRayState Member List</div></div>
 </div><!--header-->
@@ -68,19 +84,32 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a520d264e0ae0e852b684c399f0fd4d19">isOff</a>(int volumeId) const</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a5e3d83dcd1b35448e268a57751c70a8e">isOn</a>(int volumeId) const</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#ae9adf289e4b173cc7aa73925618c62a0">isVisited</a>(int volumeId) const</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#acce5f5360f9f2d6a9ae967cd2b9e29ca">ORIGIN_VOLUME_EMPTY</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a3bfbee99d63ce55ef5d77da2959c997e">ORIGIN_VOLUME_INIT</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a16fefab1a699672073b963507336eb9c">resetState</a>(float tEnd, bool estimateInScatter)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#ae5bf6a4171ae66293881ceb48164602c">setOriginVolumeId</a>(int id)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a506232ea7d84f994bad2f2dcf8272c02">setVisited</a>(int volumeId)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a6ea0cb1582916c292c08989cd1225d37">mEstimateInScatter</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#aa0c06f62d680fafc2e09129e862b9bcd">mIntervalCount</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#acbcf73494d248269ea035b155d4abd35">mOriginVolumeId</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a96eae7bf5591a0f3cb432263b0f39318">mTEnd</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a686b9df359f7b98961dc66473ad9a7f3">mVisitedVolumes</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a5b7392327b1228c65cadea719c9b787d">mVolumeAssignmentTable</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a44bc5e7b40951796627020c93ea94b1c">mVolumeIntervals</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a33f8740f011c32e498a8a2e097864b38">mVolumeRegions</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#ae2dd9e029f742efc06d82e187e280aa0">mVolumeSampleInfo</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#acce5f5360f9f2d6a9ae967cd2b9e29ca">ORIGIN_VOLUME_EMPTY</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a3bfbee99d63ce55ef5d77da2959c997e">ORIGIN_VOLUME_INIT</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a16fefab1a699672073b963507336eb9c">resetState</a>(float tEnd, bool estimateInScatter)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#ae5bf6a4171ae66293881ceb48164602c">setOriginVolumeId</a>(int id)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a506232ea7d84f994bad2f2dcf8272c02">setVisited</a>(int volumeId)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a0aba9bfa1b8817168a3fbc78a04677c6">sMaxIntervalCount</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a7eb9946c5ae2b931235cb0949cc27835">toggle</a>(int volumeId)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#ad04489eaa690cb45a4f929c1af12c250">turnOff</a>(int volumeId)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a818fb57b7d098bd28a475c3b5cd3e4e4">turnOn</a>(int volumeId)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html#a3eb6a6e20b782dd72067b420e21c6712">VolumeRayState</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_volume_ray_state.html">moonray::geom::internal::VolumeRayState</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

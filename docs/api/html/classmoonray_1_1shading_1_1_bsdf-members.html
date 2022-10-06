@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">Bsdf</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_bsdf.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">moonray::shading::Bsdf Member List</div></div>
 </div><!--header-->
@@ -53,6 +69,8 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a76bcbeff2e82938d8b44fdb306f974d5">addLobe</a>(BsdfLobe *lobe)</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#ad82f99abb7bbb81681454146a9ed62fc">albedo</a>(const BsdfSlice &amp;slice) const</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#af196ce167c5b394539088116a269cc36">Bsdf</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a2331b6d4a68f0227532f5a843b14f0d9">Bsdf</a>(const Bsdf &amp;other)=delete</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#ad20ee52d6f4d6d17d6e2d9e2ecfd02cd">BsdfLobePtrArray</a> typedef</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#ada5a885a88eec85df58e1b5cf2e1010d">eval</a>(const BsdfSlice &amp;slice, const scene_rdl2::math::Vec3f &amp;wi, float &amp;pdf) const</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#aad1cd835ac0e94f8dedd1e58be93f5a2">getBssrdf</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#aa13cbc856c456f97ceb5da609b0ef835">getBssrdf</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -72,6 +90,18 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a84fa1c66c673745dda886183f7d61ee2">getVolumeSubsurface</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#abf76926aacc706bbedc39ccd38dc819d">hasSubsurface</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a4131d6090c070e8e02a0ba4b46deb886">maxLobes</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a298b2c4eeeaafc29af4b0c5fd7548a49">mBssrdf</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a83c5b42372dbcd905fd87f7fe1afb2b2">mEarlyTermination</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#abf92830551d36a25226cd790f6005205">mGeomLabelId</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a2c7c87a83a1ff83215c363f233950dba">mIsSpherical</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#af49f44465115f0ed22ee97505d8d3c3c">mLpeMaterialLabelId</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a630a5d5c17e6ae63bbf98470d5d118ea">mMaterialLabelId</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a40ff5d87ca5832523e93401950996267">mPostScatterExtraAovs</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a1b57f7e643d642e95f5f51247a4a84d5">mSelfEmission</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a5752525362375dc7625115dbf94bc5ce">mType</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a5ef5067b0c5b7a999d4943d4f20729d8">mVolumeSubsurface</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a136b01d593c218b4bf80f46d976d1bfa">operator=</a>(const Bsdf &amp;other)=delete</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#ae440c9b084766b7752fe2ab7270bd063">setBssrdf</a>(Bssrdf *bssrdf)</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#ae09bb5118af5d53c97c209fed2376c18">setEarlyTermination</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a42b5ef7383f716ee57be101073ef51d0">setLabelIds</a>(int materialLabelId, int lpeMaterialLabelId, int geomLabelId)</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -81,9 +111,12 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#ab899abb8b2223c88ebc2318b50671d31">show</a>(const std::string &amp;sceneClass, const std::string &amp;name, std::ostream &amp;os) const</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a72596ed7a1281b8fd5ddbbafc35148e7">~Bsdf</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

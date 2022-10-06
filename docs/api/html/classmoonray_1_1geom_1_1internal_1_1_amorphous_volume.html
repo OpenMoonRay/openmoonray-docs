@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html">AmorphousVolume</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -472,7 +488,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="prim_2_amorphous_volume_8cc_source.html#l00044">44</a> of file <a class="el" href="prim_2_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   49</span>                                                                                   :</div>
+<div class="line"><span class="lineno">   50</span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a3632187d91be456b436f1b7af543d3ed">VdbVolume</a>(vdbFilePath,</div>
+<div class="line"><span class="lineno">   51</span>              densityGridName,</div>
+<div class="line"><span class="lineno">   52</span>              <span class="stringliteral">&quot;&quot;</span>, <span class="comment">// Emission grid name is only used for non-amorphous</span></div>
+<div class="line"><span class="lineno">   53</span>                  <span class="comment">// vdb rendering so we leave this empty.  For Amorphous</span></div>
+<div class="line"><span class="lineno">   54</span>                  <span class="comment">// vdbs the emission grid name is stored in the file&#39;s</span></div>
+<div class="line"><span class="lineno">   55</span>                  <span class="comment">// meta-data.</span></div>
+<div class="line"><span class="lineno">   56</span>              velocityGridName,</div>
+<div class="line"><span class="lineno">   57</span>              motionBlurParams,</div>
+<div class="line"><span class="lineno">   58</span>              std::move(layerAssignmentId),</div>
+<div class="line"><span class="lineno">   59</span>              std::move(primitiveAttributeTable)),</div>
+<div class="line"><span class="lineno">   60</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#aea7f585308327bd860171ef61c15fc1a">mUseAmorphousSampler</a>(<span class="keyword">false</span>)</div>
+<div class="line"><span class="lineno">   61</span>{</div>
+<div class="line"><span class="lineno">   62</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_amorphous_volume_html_aea7f585308327bd860171ef61c15fc1a"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#aea7f585308327bd860171ef61c15fc1a">moonray::geom::internal::AmorphousVolume::mUseAmorphousSampler</a></div><div class="ttdeci">bool mUseAmorphousSampler</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_amorphous_volume_8h_source.html#l00228">AmorphousVolume.h:228</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html_a3632187d91be456b436f1b7af543d3ed"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a3632187d91be456b436f1b7af543d3ed">moonray::geom::internal::VdbVolume::VdbVolume</a></div><div class="ttdeci">VdbVolume(const std::string &amp;vdbFilePath, const std::string &amp;densityGridName, const std::string &amp;emissionGridName, const std::string &amp;velocityGridName, const MotionBlurParams &amp;motionBlurParams, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;primitiveAttributeTable)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2prim_2_vdb_volume_8cc_source.html#l00358">VdbVolume.cc:358</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aef49d5415a7eea03c0813fc3a81671ac" name="aef49d5415a7eea03c0813fc3a81671ac"></a>
@@ -528,7 +560,59 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a963e62602395e8b81b633821a3d35fe7">moonray::geom::internal::VdbVolume</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="prim_2_amorphous_volume_8cc_source.html#l00076">76</a> of file <a class="el" href="prim_2_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   77</span>{</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#ad496384151d250248051243a164240f0">mHasEmissionField</a> || !<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#aea7f585308327bd860171ef61c15fc1a">mUseAmorphousSampler</a> || !<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#a98cf4a09eea70c2ffb5862de02b6bf8d">mAmorphousSampler</a>.<a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#a24e8f2737a35bca2ba8d8f074fc3503d">mMasterSampler</a>) {</div>
+<div class="line"><span class="lineno">   79</span>        <span class="comment">// There is no amorphous data but there is a emission from a volume shader.</span></div>
+<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#aeba886c7b279f21cf9ee2a8252d4907f">Primitive::computeEmissionDistribution</a>(volumeShader);</div>
+<div class="line"><span class="lineno">   81</span>    }</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>    openvdb::GridBase::ConstPtr emissionGrid = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#a98cf4a09eea70c2ffb5862de02b6bf8d">mAmorphousSampler</a>.<a class="code hl_function" href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#aaba61c1ce70c8fd9f52fee0833ba2c0d">getIncandGrid</a>();</div>
+<div class="line"><span class="lineno">   84</span>    <span class="keyword">const</span> amorphous::SScatterSampler&amp; scatterSampler = *<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#a98cf4a09eea70c2ffb5862de02b6bf8d">mAmorphousSampler</a>.<a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#a24e8f2737a35bca2ba8d8f074fc3503d">mMasterSampler</a>.get();</div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>    MNRY_ASSERT_REQUIRE(emissionGrid);</div>
+<div class="line"><span class="lineno">   87</span>    MNRY_ASSERT_REQUIRE(emissionGrid-&gt;transform().isLinear());</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>    std::unique_ptr&lt;EmissionDistribution&gt; distribution;</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>    <span class="comment">// TODO: fix the dual usage of VdbVolume&#39;s mPrimToRender matrices, then we can pass mPrimToRender into</span></div>
+<div class="line"><span class="lineno">   92</span>    <span class="comment">// computeEmissionDistributionImpl() in both the calls here. We can&#39;t at present because it may be being used to</span></div>
+<div class="line"><span class="lineno">   93</span>    <span class="comment">// store something different</span></div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">if</span> (emissionGrid-&gt;isType&lt;amorphous::ScalarGridType&gt;()) {</div>
+<div class="line"><span class="lineno">   95</span> </div>
+<div class="line"><span class="lineno">   96</span>        std::vector&lt;float&gt; values = <a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_amorphous_volume_8cc_03.html#ab8a6ef200c1f526e2b7823578df2b6f6">getGridLuminance</a>(scatterSampler,</div>
+<div class="line"><span class="lineno">   97</span>            *<span class="keyword">static_cast&lt;</span><span class="keyword">const </span>amorphous::ScalarGridType*<span class="keyword">&gt;</span>(emissionGrid.get()));</div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">   99</span>        distribution = <a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_vdb_volume_8h_03.html#ae3f3a98f4e6cd66ce20a186a5d85579a">computeEmissionDistributionImpl</a>(</div>
+<div class="line"><span class="lineno">  100</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a8423b3ab313c799b521cb8b9bc0bbfe3">getRdlGeometry</a>(),</div>
+<div class="line"><span class="lineno">  101</span>            *<span class="keyword">static_cast&lt;</span><span class="keyword">const </span>amorphous::ScalarGridType*<span class="keyword">&gt;</span>(emissionGrid.get()),</div>
+<div class="line"><span class="lineno">  102</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a17510fc7fe8f26fec102d93145337234">mRenderToPrim</a>,</div>
+<div class="line"><span class="lineno">  103</span>            values,</div>
+<div class="line"><span class="lineno">  104</span>            volumeShader);</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (emissionGrid-&gt;isType&lt;amorphous::RGBGridType&gt;()) {</div>
+<div class="line"><span class="lineno">  107</span> </div>
+<div class="line"><span class="lineno">  108</span>        std::vector&lt;float&gt; values = <a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_amorphous_volume_8cc_03.html#ab8a6ef200c1f526e2b7823578df2b6f6">getGridLuminance</a>(scatterSampler,</div>
+<div class="line"><span class="lineno">  109</span>            *<span class="keyword">static_cast&lt;</span><span class="keyword">const </span>amorphous::RGBGridType*<span class="keyword">&gt;</span>(emissionGrid.get()));</div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>        distribution = <a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_vdb_volume_8h_03.html#ae3f3a98f4e6cd66ce20a186a5d85579a">computeEmissionDistributionImpl</a>(</div>
+<div class="line"><span class="lineno">  112</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a8423b3ab313c799b521cb8b9bc0bbfe3">getRdlGeometry</a>(),</div>
+<div class="line"><span class="lineno">  113</span>            *<span class="keyword">static_cast&lt;</span><span class="keyword">const </span>amorphous::RGBGridType*<span class="keyword">&gt;</span>(emissionGrid.get()),</div>
+<div class="line"><span class="lineno">  114</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a17510fc7fe8f26fec102d93145337234">mRenderToPrim</a>,</div>
+<div class="line"><span class="lineno">  115</span>            values,</div>
+<div class="line"><span class="lineno">  116</span>            volumeShader);</div>
+<div class="line"><span class="lineno">  117</span>    }</div>
+<div class="line"><span class="lineno">  118</span>    <span class="keywordflow">return</span> distribution;</div>
+<div class="line"><span class="lineno">  119</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_amorphous_volume_html_a98cf4a09eea70c2ffb5862de02b6bf8d"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#a98cf4a09eea70c2ffb5862de02b6bf8d">moonray::geom::internal::AmorphousVolume::mAmorphousSampler</a></div><div class="ttdeci">AmorphousSampler mAmorphousSampler</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_amorphous_volume_8h_source.html#l00229">AmorphousVolume.h:229</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html_a8423b3ab313c799b521cb8b9bc0bbfe3"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a8423b3ab313c799b521cb8b9bc0bbfe3">moonray::geom::internal::Primitive::getRdlGeometry</a></div><div class="ttdeci">const scene_rdl2::rdl2::Geometry * getRdlGeometry() const</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8h_source.html#l00257">Primitive.h:257</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html_aeba886c7b279f21cf9ee2a8252d4907f"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#aeba886c7b279f21cf9ee2a8252d4907f">moonray::geom::internal::Primitive::computeEmissionDistribution</a></div><div class="ttdeci">virtual std::unique_ptr&lt; EmissionDistribution &gt; computeEmissionDistribution(const scene_rdl2::rdl2::VolumeShader *volumeShader) const</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8cc_source.html#l00040">Primitive.cc:40</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html_a17510fc7fe8f26fec102d93145337234"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a17510fc7fe8f26fec102d93145337234">moonray::geom::internal::VdbVolume::mRenderToPrim</a></div><div class="ttdeci">scene_rdl2::math::Mat4f mRenderToPrim[2]</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_vdb_volume_8h_source.html#l00514">VdbVolume.h:514</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html_ad496384151d250248051243a164240f0"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#ad496384151d250248051243a164240f0">moonray::geom::internal::VdbVolume::mHasEmissionField</a></div><div class="ttdeci">bool mHasEmissionField</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_vdb_volume_8h_source.html#l00542">VdbVolume.h:542</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_amorphous_volume_8cc_03_html_ab8a6ef200c1f526e2b7823578df2b6f6"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_amorphous_volume_8cc_03.html#ab8a6ef200c1f526e2b7823578df2b6f6">moonray::geom::internal::anonymous_namespace{AmorphousVolume.cc}::getGridLuminance</a></div><div class="ttdeci">std::vector&lt; float &gt; getGridLuminance(const amorphous::SScatterSampler &amp;sampler, const GridType &amp;emissionGrid)</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_amorphous_volume_8cc_source.html#l00028">AmorphousVolume.cc:28</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_vdb_volume_8h_03_html_ae3f3a98f4e6cd66ce20a186a5d85579a"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_vdb_volume_8h_03.html#ae3f3a98f4e6cd66ce20a186a5d85579a">moonray::geom::internal::anonymous_namespace{VdbVolume.h}::computeEmissionDistributionImpl</a></div><div class="ttdeci">std::unique_ptr&lt; EmissionDistribution &gt; computeEmissionDistributionImpl(const scene_rdl2::rdl2::Geometry *rdlGeometry, const GridType &amp;emissionGrid, const scene_rdl2::math::Mat4f(&amp;renderToPrim)[2], const std::vector&lt; float &gt; &amp;values, const scene_rdl2::rdl2::VolumeShader *volumeShader)</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_vdb_volume_8h_source.html#l00047">VdbVolume.h:47</a></div></div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler_html_a24e8f2737a35bca2ba8d8f074fc3503d"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#a24e8f2737a35bca2ba8d8f074fc3503d">moonray::geom::internal::AmorphousVolume::AmorphousSampler::mMasterSampler</a></div><div class="ttdeci">std::unique_ptr&lt; ScatterSampler &gt; mMasterSampler</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_amorphous_volume_8h_source.html#l00222">AmorphousVolume.h:222</a></div></div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler_html_aaba61c1ce70c8fd9f52fee0833ba2c0d"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#aaba61c1ce70c8fd9f52fee0833ba2c0d">moonray::geom::internal::AmorphousVolume::AmorphousSampler::getIncandGrid</a></div><div class="ttdeci">amorphous::BaseGridCPtr getIncandGrid() const</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_amorphous_volume_8h_source.html#l00181">AmorphousVolume.h:181</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5b646b55b3205bda2ab00014d8eac669" name="a5b646b55b3205bda2ab00014d8eac669"></a>
@@ -574,7 +658,25 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a55174e65dc2f9b8af5f81351183c64d1">moonray::geom::internal::VdbVolume</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="prim_2_amorphous_volume_8cc_source.html#l00122">122</a> of file <a class="el" href="prim_2_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  125</span>{</div>
+<div class="line"><span class="lineno">  126</span>    <span class="keyword">const</span> openvdb::Vec3d p(pSample[0], pSample[1], pSample[2]);</div>
+<div class="line"><span class="lineno">  127</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#aea7f585308327bd860171ef61c15fc1a">mUseAmorphousSampler</a>) {</div>
+<div class="line"><span class="lineno">  128</span>        <span class="comment">// for shadow attenuation, always use the cheapest interpolation</span></div>
+<div class="line"><span class="lineno">  129</span>        <span class="keyword">const</span> Color density = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#a98cf4a09eea70c2ffb5862de02b6bf8d">mAmorphousSampler</a>.<a class="code hl_function" href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#aae2c374021cf14dd084124a67616a362">extinct</a>(tls, volumeId, p, <a class="code hl_enumvalue" href="namespacemoonray_1_1geom_1_1internal.html#a27d23c09d485fb56a860b6eb56a192ddaaebdbcb765394d25d6a604589a890f82">Interpolation::POINT</a>);</div>
+<div class="line"><span class="lineno">  130</span>        Color retVal = density * <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#ab8d697a3760907b5853741ab995e041c">sampleBakedDensity</a>(tls, volumeId, p);</div>
+<div class="line"><span class="lineno">  131</span>        <span class="keywordflow">return</span> retVal;</div>
+<div class="line"><span class="lineno">  132</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  133</span>        <span class="keyword">const</span> Color density = Color(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a353a1b8bdb03929112de6e322877ba48">mDensitySampler</a>.<a class="code hl_function" href="structmoonray_1_1geom_1_1internal_1_1_v_d_b_sampler.html#a8e916830dac88d7f2c151fbb42025b65">eval</a>(tls, volumeId, p, <a class="code hl_enumvalue" href="namespacemoonray_1_1geom_1_1internal.html#a27d23c09d485fb56a860b6eb56a192ddaaebdbcb765394d25d6a604589a890f82">Interpolation::POINT</a>));</div>
+<div class="line"><span class="lineno">  134</span>        Color retVal = density * <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#ab8d697a3760907b5853741ab995e041c">sampleBakedDensity</a>(tls, volumeId, p);</div>
+<div class="line"><span class="lineno">  135</span>        <span class="keywordflow">return</span> retVal;</div>
+<div class="line"><span class="lineno">  136</span>    }</div>
+<div class="line"><span class="lineno">  137</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html_a353a1b8bdb03929112de6e322877ba48"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a353a1b8bdb03929112de6e322877ba48">moonray::geom::internal::VdbVolume::mDensitySampler</a></div><div class="ttdeci">VDBSampler&lt; openvdb::FloatGrid &gt; mDensitySampler</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_vdb_volume_8h_source.html#l00540">VdbVolume.h:540</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html_ab8d697a3760907b5853741ab995e041c"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#ab8d697a3760907b5853741ab995e041c">moonray::geom::internal::VdbVolume::sampleBakedDensity</a></div><div class="ttdeci">scene_rdl2::math::Color sampleBakedDensity(mcrt_common::ThreadLocalState *tls, uint32_t volumeId, const openvdb::Vec3d &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2prim_2_vdb_volume_8cc_source.html#l00662">VdbVolume.cc:662</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a27d23c09d485fb56a860b6eb56a192ddaaebdbcb765394d25d6a604589a890f82"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a27d23c09d485fb56a860b6eb56a192ddaaebdbcb765394d25d6a604589a890f82">moonray::geom::internal::Interpolation::POINT</a></div><div class="ttdeci">@ POINT</div></div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler_html_aae2c374021cf14dd084124a67616a362"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#aae2c374021cf14dd084124a67616a362">moonray::geom::internal::AmorphousVolume::AmorphousSampler::extinct</a></div><div class="ttdeci">scene_rdl2::math::Color extinct(mcrt_common::ThreadLocalState *tls, uint32_t volumeId, const openvdb::Vec3d &amp;p, Interpolation mode) const</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_amorphous_volume_8h_source.html#l00137">AmorphousVolume.h:137</a></div></div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_v_d_b_sampler_html_a8e916830dac88d7f2c151fbb42025b65"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_v_d_b_sampler.html#a8e916830dac88d7f2c151fbb42025b65">moonray::geom::internal::VDBSampler::eval</a></div><div class="ttdeci">ValueT eval(mcrt_common::ThreadLocalState *tls, uint32_t volumeId, const openvdb::Vec3d &amp;p, Interpolation mode) const</div><div class="ttdef"><b>Definition:</b> <a href="_grid_sampler_8h_source.html#l00124">GridSampler.h:124</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7437e3e6354f52707165101cec7dc8f4" name="a7437e3e6354f52707165101cec7dc8f4"></a>
@@ -620,7 +722,18 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#ab6d5b6f3bfb8a3bcf8a9e92846bbbea2">moonray::geom::internal::VdbVolume</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="prim_2_amorphous_volume_8cc_source.html#l00169">169</a> of file <a class="el" href="prim_2_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  172</span>{</div>
+<div class="line"><span class="lineno">  173</span>    <span class="keyword">const</span> openvdb::Vec3d p(pSample[0], pSample[1], pSample[2]);</div>
+<div class="line"><span class="lineno">  174</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#aea7f585308327bd860171ef61c15fc1a">mUseAmorphousSampler</a>) {</div>
+<div class="line"><span class="lineno">  175</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#a98cf4a09eea70c2ffb5862de02b6bf8d">mAmorphousSampler</a>.<a class="code hl_function" href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#a113eff0661b737cc07d932bc26cfe478">incand</a>(tls, volumeId, p, <a class="code hl_enumvalue" href="namespacemoonray_1_1geom_1_1internal.html#a27d23c09d485fb56a860b6eb56a192ddaaebdbcb765394d25d6a604589a890f82">Interpolation::POINT</a>);</div>
+<div class="line"><span class="lineno">  176</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  177</span>        <span class="keyword">const</span> <span class="keyword">auto</span> colorVector = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a878e8e96879c6c5e15c3899c36997c1b">mEmissionSampler</a>.<a class="code hl_function" href="structmoonray_1_1geom_1_1internal_1_1_v_d_b_sampler.html#a8e916830dac88d7f2c151fbb42025b65">eval</a>(tls, volumeId, p, <a class="code hl_enumvalue" href="namespacemoonray_1_1geom_1_1internal.html#a27d23c09d485fb56a860b6eb56a192ddaaebdbcb765394d25d6a604589a890f82">Interpolation::POINT</a>);</div>
+<div class="line"><span class="lineno">  178</span>        <span class="keywordflow">return</span> Color(colorVector.x(), colorVector.y(), colorVector.z());</div>
+<div class="line"><span class="lineno">  179</span>    }</div>
+<div class="line"><span class="lineno">  180</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html_a878e8e96879c6c5e15c3899c36997c1b"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a878e8e96879c6c5e15c3899c36997c1b">moonray::geom::internal::VdbVolume::mEmissionSampler</a></div><div class="ttdeci">VDBSampler&lt; openvdb::Vec3SGrid &gt; mEmissionSampler</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_vdb_volume_8h_source.html#l00544">VdbVolume.h:544</a></div></div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler_html_a113eff0661b737cc07d932bc26cfe478"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#a113eff0661b737cc07d932bc26cfe478">moonray::geom::internal::AmorphousVolume::AmorphousSampler::incand</a></div><div class="ttdeci">scene_rdl2::math::Color incand(mcrt_common::ThreadLocalState *tls, uint32_t volumeId, const openvdb::Vec3d &amp;p, Interpolation mode) const</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_amorphous_volume_8h_source.html#l00162">AmorphousVolume.h:162</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abb082a57f6be4ee5a8d3efc82af6e41f" name="abb082a57f6be4ee5a8d3efc82af6e41f"></a>
@@ -690,7 +803,31 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a28426abecbc7b23aada46317487f405e">moonray::geom::internal::VdbVolume</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="prim_2_amorphous_volume_8cc_source.html#l00140">140</a> of file <a class="el" href="prim_2_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  147</span>{</div>
+<div class="line"><span class="lineno">  148</span>    <span class="keyword">const</span> openvdb::Vec3d p(pSample[0], pSample[1], pSample[2]);</div>
+<div class="line"><span class="lineno">  149</span>    <a class="code hl_enumeration" href="namespacemoonray_1_1geom_1_1internal.html#a27d23c09d485fb56a860b6eb56a192dd">Interpolation</a> mode = highQuality ? <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a01d8bf6e67026c19ddcc271c20fd28e0">mInterpolationMode</a> : <a class="code hl_enumvalue" href="namespacemoonray_1_1geom_1_1internal.html#a27d23c09d485fb56a860b6eb56a192ddaaebdbcb765394d25d6a604589a890f82">Interpolation::POINT</a>;</div>
+<div class="line"><span class="lineno">  150</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#aea7f585308327bd860171ef61c15fc1a">mUseAmorphousSampler</a>) {</div>
+<div class="line"><span class="lineno">  151</span>        *extinction = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#a98cf4a09eea70c2ffb5862de02b6bf8d">mAmorphousSampler</a>.<a class="code hl_function" href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#aae2c374021cf14dd084124a67616a362">extinct</a>(tls, volumeId, p, mode);</div>
+<div class="line"><span class="lineno">  152</span>        *<a class="code hl_function" href="namespacemoonray_1_1shading.html#ac5f48ddb1befc06e27b287ddc95e615e">albedo</a> = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#a98cf4a09eea70c2ffb5862de02b6bf8d">mAmorphousSampler</a>.<a class="code hl_function" href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#a468eb1040057fb982aa2eb9fbf24404c">albedo</a>(tls, volumeId, p, mode);</div>
+<div class="line"><span class="lineno">  153</span>        <span class="keywordflow">if</span> (temperature) {</div>
+<div class="line"><span class="lineno">  154</span>            *temperature = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#a98cf4a09eea70c2ffb5862de02b6bf8d">mAmorphousSampler</a>.<a class="code hl_function" href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#a113eff0661b737cc07d932bc26cfe478">incand</a>(tls, volumeId, p, mode);</div>
+<div class="line"><span class="lineno">  155</span>        }</div>
+<div class="line"><span class="lineno">  156</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  157</span>        *extinction = Color(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a353a1b8bdb03929112de6e322877ba48">mDensitySampler</a>.<a class="code hl_function" href="structmoonray_1_1geom_1_1internal_1_1_v_d_b_sampler.html#a8e916830dac88d7f2c151fbb42025b65">eval</a>(tls, volumeId, p, mode));</div>
+<div class="line"><span class="lineno">  158</span>        *<a class="code hl_function" href="namespacemoonray_1_1shading.html#ac5f48ddb1befc06e27b287ddc95e615e">albedo</a> = Color(1.0f);</div>
+<div class="line"><span class="lineno">  159</span>        <span class="keywordflow">if</span> (temperature) {</div>
+<div class="line"><span class="lineno">  160</span>            <span class="keyword">const</span> <span class="keyword">auto</span> colorVector = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a878e8e96879c6c5e15c3899c36997c1b">mEmissionSampler</a>.<a class="code hl_function" href="structmoonray_1_1geom_1_1internal_1_1_v_d_b_sampler.html#a8e916830dac88d7f2c151fbb42025b65">eval</a>(tls, volumeId, p, <a class="code hl_enumvalue" href="namespacemoonray_1_1geom_1_1internal.html#a27d23c09d485fb56a860b6eb56a192ddaaebdbcb765394d25d6a604589a890f82">Interpolation::POINT</a>);</div>
+<div class="line"><span class="lineno">  161</span>            *temperature = Color(colorVector.x(), colorVector.y(), colorVector.z());</div>
+<div class="line"><span class="lineno">  162</span>        }</div>
+<div class="line"><span class="lineno">  163</span>    }</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>    *extinction *= <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#ab8d697a3760907b5853741ab995e041c">sampleBakedDensity</a>(tls, volumeId, p);</div>
+<div class="line"><span class="lineno">  166</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html_a01d8bf6e67026c19ddcc271c20fd28e0"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a01d8bf6e67026c19ddcc271c20fd28e0">moonray::geom::internal::VdbVolume::mInterpolationMode</a></div><div class="ttdeci">Interpolation mInterpolationMode</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_vdb_volume_8h_source.html#l00546">VdbVolume.h:546</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a27d23c09d485fb56a860b6eb56a192dd"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a27d23c09d485fb56a860b6eb56a192dd">moonray::geom::internal::Interpolation</a></div><div class="ttdeci">Interpolation</div><div class="ttdef"><b>Definition:</b> <a href="_grid_sampler_8h_source.html#l00040">GridSampler.h:41</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_ac5f48ddb1befc06e27b287ddc95e615e"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ac5f48ddb1befc06e27b287ddc95e615e">moonray::shading::albedo</a></div><div class="ttdeci">scene_rdl2::math::Color albedo(const BsdfLobev &amp;lobev, const BsdfSlicev &amp;slicev, int lane)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdfv_8cc_source.html#l00035">Bsdfv.cc:35</a></div></div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler_html_a468eb1040057fb982aa2eb9fbf24404c"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#a468eb1040057fb982aa2eb9fbf24404c">moonray::geom::internal::AmorphousVolume::AmorphousSampler::albedo</a></div><div class="ttdeci">scene_rdl2::math::Color albedo(mcrt_common::ThreadLocalState *tls, uint32_t volumeId, const openvdb::Vec3d &amp;p, Interpolation mode) const</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_amorphous_volume_8h_source.html#l00149">AmorphousVolume.h:149</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae5d79cefd9d50adf4e51829cc32e2c18" name="ae5d79cefd9d50adf4e51829cc32e2c18"></a>
@@ -721,7 +858,17 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a9414db6a50765146af48eb25b42d0d68">moonray::geom::internal::VdbVolume</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="prim_2_amorphous_volume_8cc_source.html#l00065">65</a> of file <a class="el" href="prim_2_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   66</span>{</div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordtype">size_t</span> mem = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a9414db6a50765146af48eb25b42d0d68">VdbVolume::getMemory</a>();</div>
+<div class="line"><span class="lineno">   68</span> </div>
+<div class="line"><span class="lineno">   69</span>    <span class="comment">// AmorphousSampler loads a few grids into memory</span></div>
+<div class="line"><span class="lineno">   70</span>    mem += <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#a98cf4a09eea70c2ffb5862de02b6bf8d">mAmorphousSampler</a>.<a class="code hl_function" href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#a5772d5b212425e22f66a5d4d15907ff7">getMemory</a>();</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">return</span> mem;</div>
+<div class="line"><span class="lineno">   73</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html_a9414db6a50765146af48eb25b42d0d68"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a9414db6a50765146af48eb25b42d0d68">moonray::geom::internal::VdbVolume::getMemory</a></div><div class="ttdeci">virtual size_t getMemory() const override</div><div class="ttdoc">Get the memory usage of this Primitive in byte.</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2prim_2_vdb_volume_8cc_source.html#l00383">VdbVolume.cc:383</a></div></div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler_html_a5772d5b212425e22f66a5d4d15907ff7"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#a5772d5b212425e22f66a5d4d15907ff7">moonray::geom::internal::AmorphousVolume::AmorphousSampler::getMemory</a></div><div class="ttdeci">size_t getMemory() const</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_amorphous_volume_8h_source.html#l00200">AmorphousVolume.h:200</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1052828c2c99f430651aa75990d18eae" name="a1052828c2c99f430651aa75990d18eae"></a>
@@ -777,7 +924,39 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="prim_2_amorphous_volume_8cc_source.html#l00183">183</a> of file <a class="el" href="prim_2_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  188</span>{</div>
+<div class="line"><span class="lineno">  189</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> emissionSampleRate = scene_rdl2::math::clamp(</div>
+<div class="line"><span class="lineno">  190</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#ad4582769739dc25312b4a041e4be62c6">mVdbVolumeData</a>-&gt;mEmissionSampleRate);</div>
+<div class="line"><span class="lineno">  191</span> </div>
+<div class="line"><span class="lineno">  192</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#a98cf4a09eea70c2ffb5862de02b6bf8d">mAmorphousSampler</a>.<a class="code hl_function" href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#a64e790ae65d2aab44d9823954e6bcce1">initialize</a>(vdbFilePath,</div>
+<div class="line"><span class="lineno">  193</span>                                      densityGridName,</div>
+<div class="line"><span class="lineno">  194</span>                                      rdlGeometry,</div>
+<div class="line"><span class="lineno">  195</span>                                      emissionSampleRate,</div>
+<div class="line"><span class="lineno">  196</span>                                      volumeIds)) {</div>
+<div class="line"><span class="lineno">  197</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  198</span>    }</div>
+<div class="line"><span class="lineno">  199</span> </div>
+<div class="line"><span class="lineno">  200</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a055f9091d5e4412f2a767897372d0f27">mTopologyGrid</a> = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#a98cf4a09eea70c2ffb5862de02b6bf8d">mAmorphousSampler</a>.<a class="code hl_function" href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#aa4e829ac2a884f35cb4b4a84eb4e2db9">getDensityGrid</a>();</div>
+<div class="line"><span class="lineno">  201</span>    <span class="comment">// padding extra voxels for motion blur usage</span></div>
+<div class="line"><span class="lineno">  202</span>    <span class="keywordflow">if</span> (velocityGrid) {</div>
+<div class="line"><span class="lineno">  203</span>        <span class="keywordtype">float</span> shutterOpen, shutterClose;</div>
+<div class="line"><span class="lineno">  204</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a44ce23b2b4c958e0ee928cf6873f5cf0">mVdbVelocity</a>-&gt;getShutterOpenAndClose(shutterOpen, shutterClose);</div>
+<div class="line"><span class="lineno">  205</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a9d95cb1b0619f367850d7fd6a123c273">initMotionBlurBoundary</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a055f9091d5e4412f2a767897372d0f27">mTopologyGrid</a>, velocityGrid,</div>
+<div class="line"><span class="lineno">  206</span>            shutterOpen, shutterClose);</div>
+<div class="line"><span class="lineno">  207</span>    }</div>
+<div class="line"><span class="lineno">  208</span> </div>
+<div class="line"><span class="lineno">  209</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#ad496384151d250248051243a164240f0">mHasEmissionField</a> = (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#a98cf4a09eea70c2ffb5862de02b6bf8d">mAmorphousSampler</a>.<a class="code hl_function" href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#aaba61c1ce70c8fd9f52fee0833ba2c0d">getIncandGrid</a>() != <span class="keyword">nullptr</span>) &amp;&amp;</div>
+<div class="line"><span class="lineno">  210</span>        (!<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#a98cf4a09eea70c2ffb5862de02b6bf8d">mAmorphousSampler</a>.<a class="code hl_function" href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#aaba61c1ce70c8fd9f52fee0833ba2c0d">getIncandGrid</a>()-&gt;empty());</div>
+<div class="line"><span class="lineno">  211</span> </div>
+<div class="line"><span class="lineno">  212</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  213</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html_a44ce23b2b4c958e0ee928cf6873f5cf0"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a44ce23b2b4c958e0ee928cf6873f5cf0">moonray::geom::internal::Primitive::mVdbVelocity</a></div><div class="ttdeci">std::unique_ptr&lt; VDBVelocity &gt; mVdbVelocity</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8h_source.html#l00371">Primitive.h:371</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html_a055f9091d5e4412f2a767897372d0f27"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a055f9091d5e4412f2a767897372d0f27">moonray::geom::internal::VdbVolume::mTopologyGrid</a></div><div class="ttdeci">openvdb::FloatGrid::Ptr mTopologyGrid</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_vdb_volume_8h_source.html#l00534">VdbVolume.h:534</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html_a9d95cb1b0619f367850d7fd6a123c273"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a9d95cb1b0619f367850d7fd6a123c273">moonray::geom::internal::VdbVolume::initMotionBlurBoundary</a></div><div class="ttdeci">void initMotionBlurBoundary(openvdb::FloatGrid::Ptr &amp;topologyGrid, openvdb::VectorGrid::Ptr velocityGrid, float tShutterOpen, float tShutterClose)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2prim_2_vdb_volume_8cc_source.html#l00891">VdbVolume.cc:891</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html_ad4582769739dc25312b4a041e4be62c6"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#ad4582769739dc25312b4a041e4be62c6">moonray::geom::internal::VdbVolume::mVdbVolumeData</a></div><div class="ttdeci">std::unique_ptr&lt; VdbVolumeData &gt; mVdbVolumeData</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_vdb_volume_8h_source.html#l00549">VdbVolume.h:549</a></div></div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler_html_a64e790ae65d2aab44d9823954e6bcce1"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#a64e790ae65d2aab44d9823954e6bcce1">moonray::geom::internal::AmorphousVolume::AmorphousSampler::initialize</a></div><div class="ttdeci">bool initialize(const ScatterParams &amp;scatterParams, const std::vector&lt; int &gt; &amp;volumeIds, const scene_rdl2::rdl2::Geometry *rdlGeometry=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_amorphous_volume_8h_source.html#l00076">AmorphousVolume.h:76</a></div></div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler_html_aa4e829ac2a884f35cb4b4a84eb4e2db9"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html#aa4e829ac2a884f35cb4b4a84eb4e2db9">moonray::geom::internal::AmorphousVolume::AmorphousSampler::getDensityGrid</a></div><div class="ttdeci">openvdb::FloatGrid::Ptr getDensityGrid()</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_amorphous_volume_8h_source.html#l00175">AmorphousVolume.h:175</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a67ab9aa89e2933e9eba729066f142573" name="a67ab9aa89e2933e9eba729066f142573"></a>
@@ -823,7 +1002,76 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a4c8c78c3e583194ce94f12e55a2c28a7">moonray::geom::internal::VdbVolume</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="prim_2_amorphous_volume_8cc_source.html#l00216">216</a> of file <a class="el" href="prim_2_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  219</span>{</div>
+<div class="line"><span class="lineno">  220</span>    <span class="keyword">const</span> std::string&amp; vdbFilePath = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#ad4582769739dc25312b4a041e4be62c6">mVdbVolumeData</a>-&gt;mFilePath;</div>
+<div class="line"><span class="lineno">  221</span>    <span class="keywordflow">if</span> (vdbFilePath.empty()) {</div>
+<div class="line"><span class="lineno">  222</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  223</span>    }</div>
+<div class="line"><span class="lineno">  224</span> </div>
+<div class="line"><span class="lineno">  225</span>    openvdb::io::File file(vdbFilePath);</div>
+<div class="line"><span class="lineno">  226</span>    openvdb::GridPtrVecPtr grids;</div>
+<div class="line"><span class="lineno">  227</span>    openvdb::VectorGrid::Ptr velocityGrid;</div>
+<div class="line"><span class="lineno">  228</span>    std::vector&lt;int&gt; volumeIds;</div>
+<div class="line"><span class="lineno">  229</span> </div>
+<div class="line"><span class="lineno">  230</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a3a42e6b96301d83b4a924199b4b77129">initializePhase1</a>(vdbFilePath,</div>
+<div class="line"><span class="lineno">  231</span>                          file,</div>
+<div class="line"><span class="lineno">  232</span>                          rdlGeometry,</div>
+<div class="line"><span class="lineno">  233</span>                          layer,</div>
+<div class="line"><span class="lineno">  234</span>                          volumeAssignmentTable,</div>
+<div class="line"><span class="lineno">  235</span>                          volumeIds,</div>
+<div class="line"><span class="lineno">  236</span>                          grids,</div>
+<div class="line"><span class="lineno">  237</span>                          velocityGrid)) {</div>
+<div class="line"><span class="lineno">  238</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  239</span>    }</div>
+<div class="line"><span class="lineno">  240</span> </div>
+<div class="line"><span class="lineno">  241</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#a1052828c2c99f430651aa75990d18eae">initAmorphousSampler</a>(vdbFilePath,</div>
+<div class="line"><span class="lineno">  242</span>                             <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#ad4582769739dc25312b4a041e4be62c6">mVdbVolumeData</a>-&gt;mDensityGridName,</div>
+<div class="line"><span class="lineno">  243</span>                             rdlGeometry,</div>
+<div class="line"><span class="lineno">  244</span>                             velocityGrid,</div>
+<div class="line"><span class="lineno">  245</span>                             volumeIds)) {</div>
+<div class="line"><span class="lineno">  246</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#aea7f585308327bd860171ef61c15fc1a">mUseAmorphousSampler</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  247</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  248</span>        rdlGeometry.warn(<span class="stringliteral">&quot;fallback to default grid loading solution&quot;</span>);</div>
+<div class="line"><span class="lineno">  249</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#aea7f585308327bd860171ef61c15fc1a">mUseAmorphousSampler</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  250</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#add9bf4347e1e2d7a0914d141131e5c84">initDensitySampler</a>(file,</div>
+<div class="line"><span class="lineno">  251</span>                                grids,</div>
+<div class="line"><span class="lineno">  252</span>                                <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#ad4582769739dc25312b4a041e4be62c6">mVdbVolumeData</a>-&gt;mDensityGridName,</div>
+<div class="line"><span class="lineno">  253</span>                                rdlGeometry,</div>
+<div class="line"><span class="lineno">  254</span>                                velocityGrid,</div>
+<div class="line"><span class="lineno">  255</span>                                volumeIds)) {</div>
+<div class="line"><span class="lineno">  256</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  257</span>        }</div>
+<div class="line"><span class="lineno">  258</span> </div>
+<div class="line"><span class="lineno">  259</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#ad4582769739dc25312b4a041e4be62c6">mVdbVolumeData</a>-&gt;mEmissionGridName.empty()) {</div>
+<div class="line"><span class="lineno">  260</span>            <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a23a0fd2f9f4870567a7652838c9158c5">initEmissionSampler</a>(file,</div>
+<div class="line"><span class="lineno">  261</span>                                     grids,</div>
+<div class="line"><span class="lineno">  262</span>                                     <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#ad4582769739dc25312b4a041e4be62c6">mVdbVolumeData</a>-&gt;mEmissionGridName,</div>
+<div class="line"><span class="lineno">  263</span>                                     rdlGeometry,</div>
+<div class="line"><span class="lineno">  264</span>                                     velocityGrid,</div>
+<div class="line"><span class="lineno">  265</span>                                     volumeIds)) {</div>
+<div class="line"><span class="lineno">  266</span>                <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#ad496384151d250248051243a164240f0">mHasEmissionField</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  267</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  268</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  269</span>                <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#ad496384151d250248051243a164240f0">mHasEmissionField</a> = !<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a878e8e96879c6c5e15c3899c36997c1b">mEmissionSampler</a>.<a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_v_d_b_sampler.html#ae7cb36a903dca4b483ae774d60289fdc">mGrid</a>-&gt;empty();</div>
+<div class="line"><span class="lineno">  270</span>            }</div>
+<div class="line"><span class="lineno">  271</span>        }</div>
+<div class="line"><span class="lineno">  272</span>    }</div>
+<div class="line"><span class="lineno">  273</span> </div>
+<div class="line"><span class="lineno">  274</span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a4d0088e3bc27bd980c99e064a981b247">initializePhase2</a>(rdlGeometry,</div>
+<div class="line"><span class="lineno">  275</span>                     layer,</div>
+<div class="line"><span class="lineno">  276</span>                     volumeAssignmentTable,</div>
+<div class="line"><span class="lineno">  277</span>                     volumeIds,</div>
+<div class="line"><span class="lineno">  278</span>                     velocityGrid);</div>
+<div class="line"><span class="lineno">  279</span> </div>
+<div class="line"><span class="lineno">  280</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  281</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_amorphous_volume_html_a1052828c2c99f430651aa75990d18eae"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#a1052828c2c99f430651aa75990d18eae">moonray::geom::internal::AmorphousVolume::initAmorphousSampler</a></div><div class="ttdeci">bool initAmorphousSampler(const std::string &amp;vdbFilePath, const std::string &amp;densityGridName, const scene_rdl2::rdl2::Geometry &amp;rdlGeometry, openvdb::VectorGrid::Ptr velocityGrid, const std::vector&lt; int &gt; &amp;volumeIds)</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_amorphous_volume_8cc_source.html#l00183">AmorphousVolume.cc:183</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html_a23a0fd2f9f4870567a7652838c9158c5"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a23a0fd2f9f4870567a7652838c9158c5">moonray::geom::internal::VdbVolume::initEmissionSampler</a></div><div class="ttdeci">bool initEmissionSampler(openvdb::io::File &amp;file, openvdb::GridPtrVecPtr grids, const std::string &amp;emissionGridName, const scene_rdl2::rdl2::Geometry &amp;rdlGeometry, openvdb::VectorGrid::Ptr velocityGrid, const std::vector&lt; int &gt; &amp;volumeIds)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2prim_2_vdb_volume_8cc_source.html#l01294">VdbVolume.cc:1294</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html_a3a42e6b96301d83b4a924199b4b77129"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a3a42e6b96301d83b4a924199b4b77129">moonray::geom::internal::VdbVolume::initializePhase1</a></div><div class="ttdeci">bool initializePhase1(const std::string &amp;vdbFilePath, openvdb::io::File &amp;file, const scene_rdl2::rdl2::Geometry &amp;rdlGeometry, const scene_rdl2::rdl2::Layer *layer, const VolumeAssignmentTable *volumeAssignmentTable, std::vector&lt; int &gt; &amp;volumeIds, openvdb::GridPtrVecPtr &amp;grids, openvdb::VectorGrid::Ptr &amp;velocityGrid)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2prim_2_vdb_volume_8cc_source.html#l01032">VdbVolume.cc:1032</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html_a4d0088e3bc27bd980c99e064a981b247"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a4d0088e3bc27bd980c99e064a981b247">moonray::geom::internal::VdbVolume::initializePhase2</a></div><div class="ttdeci">void initializePhase2(const scene_rdl2::rdl2::Geometry &amp;rdlGeometry, const scene_rdl2::rdl2::Layer *layer, const VolumeAssignmentTable *volumeAssignmentTable, const std::vector&lt; int &gt; &amp;volumeIds, openvdb::VectorGrid::Ptr &amp;velocityGrid)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2prim_2_vdb_volume_8cc_source.html#l01102">VdbVolume.cc:1102</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html_add9bf4347e1e2d7a0914d141131e5c84"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#add9bf4347e1e2d7a0914d141131e5c84">moonray::geom::internal::VdbVolume::initDensitySampler</a></div><div class="ttdeci">bool initDensitySampler(openvdb::io::File &amp;file, openvdb::GridPtrVecPtr grids, const std::string &amp;densityGridName, const scene_rdl2::rdl2::Geometry &amp;rdlGeometry, openvdb::VectorGrid::Ptr velocityGrid, const std::vector&lt; int &gt; &amp;volumeIds)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2prim_2_vdb_volume_8cc_source.html#l01253">VdbVolume.cc:1253</a></div></div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_v_d_b_sampler_html_ae7cb36a903dca4b483ae774d60289fdc"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_v_d_b_sampler.html#ae7cb36a903dca4b483ae774d60289fdc">moonray::geom::internal::VDBSampler::mGrid</a></div><div class="ttdeci">GridConstPtr mGrid</div><div class="ttdef"><b>Definition:</b> <a href="_grid_sampler_8h_source.html#l00161">GridSampler.h:161</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -880,9 +1128,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/geom/prim/<a class="el" href="prim_2_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html">AmorphousVolume</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

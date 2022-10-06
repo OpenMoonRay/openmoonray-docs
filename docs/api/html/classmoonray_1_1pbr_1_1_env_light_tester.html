@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_env_light_tester.html">EnvLightTester</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_env_light_tester.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -147,7 +163,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_light_testers_8h_source.html#l00373">373</a> of file <a class="el" href="_light_testers_8h_source.html">LightTesters.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  373</span>                                                                          :</div>
+<div class="line"><span class="lineno">  374</span>        <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_tester.html#a933485e9d5bd5c9fbcf8b8f6aead42fd">LightTester</a>(std::static_pointer_cast&lt;const Light&gt;(light), desc, <span class="keyword">true</span>, 0) {}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_tester_html_a933485e9d5bd5c9fbcf8b8f6aead42fd"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_tester.html#a933485e9d5bd5c9fbcf8b8f6aead42fd">moonray::pbr::LightTester::LightTester</a></div><div class="ttdeci">LightTester(std::shared_ptr&lt; const Light &gt; light, const char *desc, bool infinite, unsigned isectDataFieldsUsed)</div><div class="ttdef"><b>Definition:</b> <a href="_light_testers_8h_source.html#l00072">LightTesters.h:72</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -177,7 +196,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1pbr_1_1_light_tester.html#ae7d3fea4ef8a3082de019afdd49a47da">moonray::pbr::LightTester</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_light_testers_8h_source.html#l00391">391</a> of file <a class="el" href="_light_testers_8h_source.html">LightTesters.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  392</span>    {</div>
+<div class="line"><span class="lineno">  393</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>EnvLight *<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_light_tester.html#abcb5d72a55c1e1f839c8f1defb358969">mLight</a>.get());</div>
+<div class="line"><span class="lineno">  394</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_tester_html_abcb5d72a55c1e1f839c8f1defb358969"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_tester.html#abcb5d72a55c1e1f839c8f1defb358969">moonray::pbr::LightTester::mLight</a></div><div class="ttdeci">std::shared_ptr&lt; const Light &gt; mLight</div><div class="ttdef"><b>Definition:</b> <a href="_light_testers_8h_source.html#l00138">LightTesters.h:138</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adeeacd60775fc372c0adcd56eb4fce1c" name="adeeacd60775fc372c0adcd56eb4fce1c"></a>
@@ -206,7 +229,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_light_tester.html#a2a11b20acbd567d242b3dd647000510b">moonray::pbr::LightTester</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_light_testers_8h_source.html#l00396">396</a> of file <a class="el" href="_light_testers_8h_source.html">LightTesters.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  397</span>    {</div>
+<div class="line"><span class="lineno">  398</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;EnvLight&quot;</span>;</div>
+<div class="line"><span class="lineno">  399</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5c2c336fd6d1dcef122dfd7cb77d98c4" name="a5c2c336fd6d1dcef122dfd7cb77d98c4"></a>
@@ -259,16 +285,36 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1pbr_1_1_light_tester.html#a928482fd99c5ec928b53e68389a8f27a">moonray::pbr::LightTester</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_light_testers_8h_source.html#l00377">377</a> of file <a class="el" href="_light_testers_8h_source.html">LightTesters.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  378</span>    {</div>
+<div class="line"><span class="lineno">  379</span>        scene_rdl2::math::Vec3f wi;</div>
+<div class="line"><span class="lineno">  380</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1pbr_1_1_env_light_tester.html#af46b0abb191b7140627967feaeab27f5">getLight</a>()-&gt;mHemispherical) {</div>
+<div class="line"><span class="lineno">  381</span>            wi = <a class="code hl_function" href="namespacemoonray_1_1shading.html#abf0c8becd7819f8f349483e2ce583e9d">shading::sampleLocalHemisphereUniform</a>(r0, r1);</div>
+<div class="line"><span class="lineno">  382</span>            wi = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_env_light_tester.html#af46b0abb191b7140627967feaeab27f5">getLight</a>()-&gt;mFrame.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_env_light.html#a584cfc28a56910d14ff83a2ad6bc4d99">localToGlobal</a>(wi);</div>
+<div class="line"><span class="lineno">  383</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  384</span>            wi = <a class="code hl_function" href="namespacemoonray_1_1shading.html#aa5c7801afc9d11082b7a6146c44a5e82">shading::sampleSphereUniform</a>(r0, r1);</div>
+<div class="line"><span class="lineno">  385</span>        }</div>
+<div class="line"><span class="lineno">  386</span>        isect-&gt;init(scene_rdl2::math::zero, wi, -wi);</div>
+<div class="line"><span class="lineno">  387</span>        isect-&gt;mDistance = FLT_MAX;</div>
+<div class="line"><span class="lineno">  388</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  389</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_env_light_html_a584cfc28a56910d14ff83a2ad6bc4d99"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_env_light.html#a584cfc28a56910d14ff83a2ad6bc4d99">moonray::pbr::EnvLight::localToGlobal</a></div><div class="ttdeci">scene_rdl2::math::Vec3f localToGlobal(const scene_rdl2::math::Vec3f &amp;v, float time) const</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2light_2_env_light_8cc_source.html#l00094">EnvLight.cc:94</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_env_light_tester_html_af46b0abb191b7140627967feaeab27f5"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_env_light_tester.html#af46b0abb191b7140627967feaeab27f5">moonray::pbr::EnvLightTester::getLight</a></div><div class="ttdeci">virtual const EnvLight * getLight() const override</div><div class="ttdef"><b>Definition:</b> <a href="_light_testers_8h_source.html#l00391">LightTesters.h:391</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_aa5c7801afc9d11082b7a6146c44a5e82"><div class="ttname"><a href="namespacemoonray_1_1shading.html#aa5c7801afc9d11082b7a6146c44a5e82">moonray::shading::sampleSphereUniform</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f sampleSphereUniform(float r1, float r2)</div><div class="ttdoc">pdf = 1.0 / (4.0 * PI)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00564">Util.h:564</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_abf0c8becd7819f8f349483e2ce583e9d"><div class="ttname"><a href="namespacemoonray_1_1shading.html#abf0c8becd7819f8f349483e2ce583e9d">moonray::shading::sampleLocalHemisphereUniform</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f sampleLocalHemisphereUniform(float r1, float r2)</div><div class="ttdoc">pdf = 1.0 / (2.0 * PI)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00492">Util.h:492</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/unittest/<a class="el" href="_light_testers_8h_source.html">LightTesters.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_env_light_tester.html">EnvLightTester</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

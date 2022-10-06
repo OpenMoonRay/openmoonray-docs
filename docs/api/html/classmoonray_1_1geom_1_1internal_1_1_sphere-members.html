@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html">Sphere</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1internal_1_1_sphere.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">moonray::geom::internal::Sphere Member List</div></div>
 </div><!--header-->
@@ -110,12 +126,22 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a0981e2ab21bd9258fe9715336c538e67">mDensityColor</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">moonray::geom::internal::Primitive</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a4732cb52c73277fb3bf7b19f7da1dd4c">mFeatureSize</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">moonray::geom::internal::Primitive</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a92d6bf5be0cee4234d9c18797c6e80e0">mInstanceFeatureSize</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">moonray::geom::internal::Primitive</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a177b7f2f01b64e5a2ac4fe4d04d8689f">mIsReference</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">moonray::geom::internal::Primitive</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html">moonray::geom::internal::NamedPrimitive</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a8e337493c8498bc0e07a90fd5fd69eff">mName</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html">moonray::geom::internal::NamedPrimitive</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html#ae4e0495418f588e308387db69c3a023d">mIsNormalReversed</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html">moonray::geom::internal::Sphere</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a177b7f2f01b64e5a2ac4fe4d04d8689f">mIsReference</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">moonray::geom::internal::Primitive</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html#a25d193d80495650d33372090a58c6638">mIsSingleSided</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html">moonray::geom::internal::Sphere</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html#aad77e49b472620ef554ab2ea8cb6a1cc">mL2P</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html">moonray::geom::internal::Sphere</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html">moonray::geom::internal::NamedPrimitive</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a8e337493c8498bc0e07a90fd5fd69eff">mName</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html">moonray::geom::internal::NamedPrimitive</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html#ab9fe7cd6f5b1c509eeb76da382784ef3">mP2L</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html">moonray::geom::internal::Sphere</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html#ac232df3b683e26f496d2d5059d412534">mPhiMax</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html">moonray::geom::internal::Sphere</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html#afa0e8840ae61852a0fa80871adb651b8">mRadius</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html">moonray::geom::internal::Sphere</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a819c30e910f56a35a298b9a158464b4b">mRdlGeometry</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">moonray::geom::internal::Primitive</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a1efe03f99e8948cefe9a625ce4077159">mShadowLinkings</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html">moonray::geom::internal::NamedPrimitive</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html#ae41a27eefb741434125f27638f2ef6ea">mThetaMax</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html">moonray::geom::internal::Sphere</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html#a0cbc1924fc47c6673e5965fc0901d974">mThetaMin</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html">moonray::geom::internal::Sphere</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a44ce23b2b4c958e0ee928cf6873f5cf0">mVdbVelocity</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">moonray::geom::internal::Primitive</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html#aa4a7530f30d81c3a77a7d5e44d363ac4">mZMax</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html">moonray::geom::internal::Sphere</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html#a3b13cf801ec98305ed3bfe4cba8cfb1c">mZMin</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html">moonray::geom::internal::Sphere</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a3bde174b322df7ab4b6983ec8f0cc5d9">NamedPrimitive</a>(LayerAssignmentId &amp;&amp;layerAssignmentId)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html">moonray::geom::internal::NamedPrimitive</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#ab8b0f4de0cd2918707c6d7e450f9a887">NamedPrimitive</a>(const NamedPrimitive &amp;)=delete</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html">moonray::geom::internal::NamedPrimitive</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#abac9f6ddbe92d3a551420ca3c0aadcf6">operator=</a>(const NamedPrimitive &amp;)=delete</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html">moonray::geom::internal::NamedPrimitive</a></td><td class="entry"></td></tr>
@@ -147,9 +173,12 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a83c088e833fa660e3c5a2a661b82ae5a">~NamedPrimitive</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html">moonray::geom::internal::NamedPrimitive</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a0c833d7259413cecfc049e1c691f2d55">~Primitive</a>()=default</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">moonray::geom::internal::Primitive</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

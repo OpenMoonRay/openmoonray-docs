@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,28 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html">CheckpointController</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1rndr_1_1_checkpoint_controller.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1rndr_1_1_checkpoint_controller-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::rndr::CheckpointController Class Reference</div></div>
 </div><!--header-->
@@ -75,6 +93,34 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7345a2faf519b40b2652433cfe9d325a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25ac4a6370270f1ac33a52401b8ad93a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a25ac4a6370270f1ac33a52401b8ad93a">output</a> (bool checkpointBgWrite, bool twoStageOutput, <a class="el" href="classmoonray_1_1rndr_1_1_render_context.html">RenderContext</a> *renderContext, const std::string &amp;checkpointPostScript, const unsigned endSampleId)</td></tr>
 <tr class="separator:a25ac4a6370270f1ac33a52401b8ad93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a93b5641e31ca8163ca1e236dc0f0af42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a93b5641e31ca8163ca1e236dc0f0af42">resetRemainingIntervalSec</a> ()</td></tr>
+<tr class="separator:a93b5641e31ca8163ca1e236dc0f0af42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7720879f60f2f88bd6700a0f2e00c2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#ae7720879f60f2f88bd6700a0f2e00c2e">fileOutputMain</a> (bool checkpointBgWrite, bool twoStageOutput, bool memorySnapshot, <a class="el" href="classmoonray_1_1rndr_1_1_render_context.html">RenderContext</a> *renderContext, const std::string &amp;checkpointPostScript, const unsigned endSampleId)</td></tr>
+<tr class="separator:ae7720879f60f2f88bd6700a0f2e00c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0770db0ca4b6774eef6b931c4a235448"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a0770db0ca4b6774eef6b931c4a235448">mRemainingIntervalSec</a></td></tr>
+<tr class="separator:a0770db0ca4b6774eef6b931c4a235448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630da059e6be1be747c7f4e9bc5f8bc4"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a630da059e6be1be747c7f4e9bc5f8bc4">mCurrDeltaSampleStartId</a></td></tr>
+<tr class="separator:a630da059e6be1be747c7f4e9bc5f8bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9249baae5a0dab650658ea8557103f1e"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a9249baae5a0dab650658ea8557103f1e">mCurrDeltaSampleEndId</a></td></tr>
+<tr class="separator:a9249baae5a0dab650658ea8557103f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc9d24499c4ef0b21a91526f7e95b2ec"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#adc9d24499c4ef0b21a91526f7e95b2ec">mMaxDeltaSamples</a></td></tr>
+<tr class="separator:adc9d24499c4ef0b21a91526f7e95b2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1187fe8a21ff35706f5fbd5eb6a94ce8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_ray_cost_estimator.html">CheckpointRayCostEstimator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a1187fe8a21ff35706f5fbd5eb6a94ce8">mRayCostEstimator</a></td></tr>
+<tr class="separator:a1187fe8a21ff35706f5fbd5eb6a94ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47b518f27c0e5abed952efbb348a381f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_snapshot_estimator.html">CheckpointSnapshotEstimator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a47b518f27c0e5abed952efbb348a381f">mSnapshotEstimator</a></td></tr>
+<tr class="separator:a47b518f27c0e5abed952efbb348a381f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42746dbb5465cd51a33bce202d91e4d"><td class="memItemLeft" align="right" valign="top">scene_rdl2::rec_time::RecTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#aa42746dbb5465cd51a33bce202d91e4d">mRayCostEvalTime</a></td></tr>
+<tr class="separator:aa42746dbb5465cd51a33bce202d91e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c973cdb248d49b9c81172d18d81e73"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#ab1c973cdb248d49b9c81172d18d81e73">mLastSnapshotIntervalSec</a></td></tr>
+<tr class="separator:ab1c973cdb248d49b9c81172d18d81e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae49937e31e104b46cf78c9a63527ec9e"><td class="memItemLeft" align="right" valign="top">scene_rdl2::rec_time::RecTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#ae49937e31e104b46cf78c9a63527ec9e">mSnapshotIntervalTime</a></td></tr>
+<tr class="separator:ae49937e31e104b46cf78c9a63527ec9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -104,7 +150,19 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8h_source.html#l00135">135</a> of file <a class="el" href="_checkpoint_controller_8h_source.html">CheckpointController.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  135</span>                           :</div>
+<div class="line"><span class="lineno">  136</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a0770db0ca4b6774eef6b931c4a235448">mRemainingIntervalSec</a>(0.0f),</div>
+<div class="line"><span class="lineno">  137</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a630da059e6be1be747c7f4e9bc5f8bc4">mCurrDeltaSampleStartId</a>(0),</div>
+<div class="line"><span class="lineno">  138</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a9249baae5a0dab650658ea8557103f1e">mCurrDeltaSampleEndId</a>(0),</div>
+<div class="line"><span class="lineno">  139</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#adc9d24499c4ef0b21a91526f7e95b2ec">mMaxDeltaSamples</a>(0),</div>
+<div class="line"><span class="lineno">  140</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#ab1c973cdb248d49b9c81172d18d81e73">mLastSnapshotIntervalSec</a>(0.0f)</div>
+<div class="line"><span class="lineno">  141</span>    {}        </div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_controller_html_a0770db0ca4b6774eef6b931c4a235448"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a0770db0ca4b6774eef6b931c4a235448">moonray::rndr::CheckpointController::mRemainingIntervalSec</a></div><div class="ttdeci">float mRemainingIntervalSec</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8h_source.html#l00187">CheckpointController.h:187</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_controller_html_a630da059e6be1be747c7f4e9bc5f8bc4"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a630da059e6be1be747c7f4e9bc5f8bc4">moonray::rndr::CheckpointController::mCurrDeltaSampleStartId</a></div><div class="ttdeci">unsigned mCurrDeltaSampleStartId</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8h_source.html#l00188">CheckpointController.h:188</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_controller_html_a9249baae5a0dab650658ea8557103f1e"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a9249baae5a0dab650658ea8557103f1e">moonray::rndr::CheckpointController::mCurrDeltaSampleEndId</a></div><div class="ttdeci">unsigned mCurrDeltaSampleEndId</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8h_source.html#l00189">CheckpointController.h:189</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_controller_html_ab1c973cdb248d49b9c81172d18d81e73"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#ab1c973cdb248d49b9c81172d18d81e73">moonray::rndr::CheckpointController::mLastSnapshotIntervalSec</a></div><div class="ttdeci">float mLastSnapshotIntervalSec</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8h_source.html#l00197">CheckpointController.h:197</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_controller_html_adc9d24499c4ef0b21a91526f7e95b2ec"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#adc9d24499c4ef0b21a91526f7e95b2ec">moonray::rndr::CheckpointController::mMaxDeltaSamples</a></div><div class="ttdeci">unsigned mMaxDeltaSamples</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8h_source.html#l00190">CheckpointController.h:190</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -135,7 +193,229 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8cc_source.html#l00314">314</a> of file <a class="el" href="_checkpoint_controller_8cc_source.html">CheckpointController.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  318</span>{</div>
+<div class="line"><span class="lineno">  319</span>    <span class="keyword">auto</span> sampleClip = [&amp;](<span class="keywordtype">unsigned</span> samples) -&gt; <span class="keywordtype">unsigned</span> {</div>
+<div class="line"><span class="lineno">  320</span>        <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  321</span>        <span class="comment">// We have a cap to increase sample delta.</span></div>
+<div class="line"><span class="lineno">  322</span>        <span class="comment">// The new sample total should be less than some scaled value of max sample deltas from the frame</span></div>
+<div class="line"><span class="lineno">  323</span>        <span class="comment">// start. This scale value (i.e. maxScale) was heuristically defined based on the several test</span></div>
+<div class="line"><span class="lineno">  324</span>        <span class="comment">// scenes.</span></div>
+<div class="line"><span class="lineno">  325</span>        <span class="comment">// This idea is safety logic to avoid executing too many samples in the early stage of rendering.</span></div>
+<div class="line"><span class="lineno">  326</span>        <span class="comment">// In most cases, the estimated sample delta is not accurate due to a lack of statistical information</span></div>
+<div class="line"><span class="lineno">  327</span>        <span class="comment">// at the early stage of rendering. However, the estimated result would be enhanced time goes by and</span></div>
+<div class="line"><span class="lineno">  328</span>        <span class="comment">// brush up to the pretty accurate value in the end.</span></div>
+<div class="line"><span class="lineno">  329</span>        <span class="comment">//        </span></div>
+<div class="line"><span class="lineno">  330</span>        <span class="keyword">constexpr</span> <span class="keywordtype">float</span> maxScale = 2.5f;</div>
+<div class="line"><span class="lineno">  331</span>        <span class="keywordtype">unsigned</span> maxSamples =</div>
+<div class="line"><span class="lineno">  332</span>        <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(std::max(<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#adc9d24499c4ef0b21a91526f7e95b2ec">mMaxDeltaSamples</a>, 1U)) * maxScale);</div>
+<div class="line"><span class="lineno">  333</span>        <span class="keywordflow">return</span> scene_rdl2::math::clamp(samples, 1U, maxSamples);</div>
+<div class="line"><span class="lineno">  334</span>    };</div>
+<div class="line"><span class="lineno">  335</span> </div>
+<div class="line"><span class="lineno">  336</span>    <span class="keywordtype">float</span> estimatedRayCost = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a1187fe8a21ff35706f5fbd5eb6a94ce8">mRayCostEstimator</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_checkpoint_ray_cost_estimator.html#a0a2dc2866239cff8fa3aab517bb9e288">estimateRayCost</a>();</div>
+<div class="line"><span class="lineno">  337</span>    <span class="keywordtype">unsigned</span> deltaSamples = 1;</div>
+<div class="line"><span class="lineno">  338</span>    <span class="keywordflow">if</span> (estimatedRayCost &gt; 0.0f) {</div>
+<div class="line"><span class="lineno">  339</span>        deltaSamples = sampleClip(<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a0770db0ca4b6774eef6b931c4a235448">mRemainingIntervalSec</a> / estimatedRayCost);</div>
+<div class="line"><span class="lineno">  340</span> </div>
+<div class="line"><span class="lineno">  341</span>        <span class="comment">// Tracking max delta samples value. This is important for sampleClip() operation</span></div>
+<div class="line"><span class="lineno">  342</span>        <span class="keywordflow">if</span> (deltaSamples &gt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#adc9d24499c4ef0b21a91526f7e95b2ec">mMaxDeltaSamples</a>) <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#adc9d24499c4ef0b21a91526f7e95b2ec">mMaxDeltaSamples</a> = deltaSamples;</div>
+<div class="line"><span class="lineno">  343</span>    }</div>
+<div class="line"><span class="lineno">  344</span> </div>
+<div class="line"><span class="lineno">  345</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a630da059e6be1be747c7f4e9bc5f8bc4">mCurrDeltaSampleStartId</a> = startSampleId;</div>
+<div class="line"><span class="lineno">  346</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a9249baae5a0dab650658ea8557103f1e">mCurrDeltaSampleEndId</a> = startSampleId + deltaSamples;</div>
+<div class="line"><span class="lineno">  347</span>    <span class="keywordflow">if</span> (endSampleId &lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a9249baae5a0dab650658ea8557103f1e">mCurrDeltaSampleEndId</a>) <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a9249baae5a0dab650658ea8557103f1e">mCurrDeltaSampleEndId</a> = endSampleId;</div>
+<div class="line"><span class="lineno">  348</span> </div>
+<div class="line"><span class="lineno">  349</span><span class="preprocessor">#   ifdef DEBUG_MSG</span></div>
+<div class="line"><span class="lineno">  350</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;&gt;&gt; CheckpointController.cc estimateEndSampleId&quot;</span></div>
+<div class="line"><span class="lineno">  351</span>              &lt;&lt; <span class="stringliteral">&quot; rayCost:&quot;</span> &lt;&lt; estimatedRayCost</div>
+<div class="line"><span class="lineno">  352</span>              &lt;&lt; <span class="stringliteral">&quot; startId:&quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a630da059e6be1be747c7f4e9bc5f8bc4">mCurrDeltaSampleStartId</a></div>
+<div class="line"><span class="lineno">  353</span>              &lt;&lt; <span class="stringliteral">&quot; endId:&quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a9249baae5a0dab650658ea8557103f1e">mCurrDeltaSampleEndId</a></div>
+<div class="line"><span class="lineno">  354</span>              &lt;&lt; <span class="stringliteral">&quot; delta:&quot;</span> &lt;&lt; (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a9249baae5a0dab650658ea8557103f1e">mCurrDeltaSampleEndId</a> - <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a630da059e6be1be747c7f4e9bc5f8bc4">mCurrDeltaSampleStartId</a>)</div>
+<div class="line"><span class="lineno">  355</span>              &lt;&lt; <span class="stringliteral">&quot; maxDelta:&quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#adc9d24499c4ef0b21a91526f7e95b2ec">mMaxDeltaSamples</a></div>
+<div class="line"><span class="lineno">  356</span>              &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  357</span><span class="preprocessor">#   endif </span><span class="comment">// end DEBUG_MSG</span></div>
+<div class="line"><span class="lineno">  358</span> </div>
+<div class="line"><span class="lineno">  359</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a9249baae5a0dab650658ea8557103f1e">mCurrDeltaSampleEndId</a>;</div>
+<div class="line"><span class="lineno">  360</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_controller_html_a1187fe8a21ff35706f5fbd5eb6a94ce8"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a1187fe8a21ff35706f5fbd5eb6a94ce8">moonray::rndr::CheckpointController::mRayCostEstimator</a></div><div class="ttdeci">CheckpointRayCostEstimator mRayCostEstimator</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8h_source.html#l00192">CheckpointController.h:192</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_ray_cost_estimator_html_a0a2dc2866239cff8fa3aab517bb9e288"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_ray_cost_estimator.html#a0a2dc2866239cff8fa3aab517bb9e288">moonray::rndr::CheckpointRayCostEstimator::estimateRayCost</a></div><div class="ttdeci">float estimateRayCost() const</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8cc_source.html#l00075">CheckpointController.cc:75</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae7720879f60f2f88bd6700a0f2e00c2e" name="ae7720879f60f2f88bd6700a0f2e00c2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7720879f60f2f88bd6700a0f2e00c2e">&#9670;&#160;</a></span>fileOutputMain()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::rndr::CheckpointController::fileOutputMain </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>checkpointBgWrite</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>twoStageOutput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>memorySnapshot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1rndr_1_1_render_context.html">RenderContext</a> *&#160;</td>
+          <td class="paramname"><em>renderContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>checkpointPostScript</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>endSampleId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8cc_source.html#l00519">519</a> of file <a class="el" href="_checkpoint_controller_8cc_source.html">CheckpointController.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  525</span>{</div>
+<div class="line"><span class="lineno">  526</span>    <span class="keyword">const</span> RenderOutputDriver *renderOutputDriver = renderContext-&gt;getRenderOutputDriver();</div>
+<div class="line"><span class="lineno">  527</span>    <span class="keywordflow">if</span> (!renderOutputDriver) <span class="keywordflow">return</span>; <span class="comment">// skip output. just in case</span></div>
+<div class="line"><span class="lineno">  528</span> </div>
+<div class="line"><span class="lineno">  529</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a7345a2faf519b40b2652433cfe9d325a">snapshotOnly</a>) {</div>
+<div class="line"><span class="lineno">  530</span>        <span class="comment">// just in case. we use checkpointBgWrite=true, twoStageOutput=true when</span></div>
+<div class="line"><span class="lineno">  531</span>        <span class="comment">// snapshotOnly situation</span></div>
+<div class="line"><span class="lineno">  532</span>        checkpointBgWrite = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  533</span>        twoStageOutput = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  534</span>    }</div>
+<div class="line"><span class="lineno">  535</span> </div>
+<div class="line"><span class="lineno">  536</span>    <span class="comment">// We can generate deep buffer checkpoint file data but not support deep buffer resume render yet.</span></div>
+<div class="line"><span class="lineno">  537</span>    <span class="keyword">const</span> pbr::DeepBuffer *deepBuffer = renderContext-&gt;getDeepBuffer();</div>
+<div class="line"><span class="lineno">  538</span>    pbr::CryptomatteBuffer *cryptomatteBuffer = renderContext-&gt;getCryptomatteBuffer();</div>
+<div class="line"><span class="lineno">  539</span>    scene_rdl2::fb_util::HeatMapBuffer heatMapBuffer;</div>
+<div class="line"><span class="lineno">  540</span>    renderContext-&gt;snapshotHeatMapBuffer(&amp;heatMapBuffer, <span class="keyword">true</span>, <span class="keyword">true</span>); <span class="comment">// only do if it has data</span></div>
+<div class="line"><span class="lineno">  541</span>    scene_rdl2::fb_util::FloatBuffer weightBuffer;</div>
+<div class="line"><span class="lineno">  542</span>    renderContext-&gt;snapshotWeightBuffer(&amp;weightBuffer, <span class="keyword">true</span>, <span class="keyword">true</span>); <span class="comment">// only do if it has data</span></div>
+<div class="line"><span class="lineno">  543</span>    scene_rdl2::fb_util::RenderBuffer renderBufferOdd;</div>
+<div class="line"><span class="lineno">  544</span>    renderContext-&gt;snapshotRenderBufferOdd(&amp;renderBufferOdd, <span class="keyword">true</span>, <span class="keyword">true</span>); <span class="comment">// only do if it has data</span></div>
+<div class="line"><span class="lineno">  545</span>    std::vector&lt;scene_rdl2::fb_util::VariablePixelBuffer&gt; aovBuffers;</div>
+<div class="line"><span class="lineno">  546</span>    renderContext-&gt;snapshotAovBuffers(aovBuffers, <span class="keyword">true</span>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  547</span>    std::vector&lt;scene_rdl2::fb_util::VariablePixelBuffer&gt; displayFilterBuffers;</div>
+<div class="line"><span class="lineno">  548</span>    renderContext-&gt;snapshotDisplayFilterBuffers(displayFilterBuffers, <span class="keyword">true</span>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  549</span> </div>
+<div class="line"><span class="lineno">  550</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a7345a2faf519b40b2652433cfe9d325a">snapshotOnly</a> &amp;&amp; checkpointBgWrite) {</div>
+<div class="line"><span class="lineno">  551</span>        <span class="comment">// Non memorySnapshot only situation : conditional wait until we have enough bg cache memory capacity</span></div>
+<div class="line"><span class="lineno">  552</span>        <a class="code hl_function" href="classmoonray_1_1rndr_1_1_image_write_driver.html#ae0eb2c7e5e99654ed1580c416e236829">ImageWriteDriver::get</a>()-&gt;waitUntilBgWriteReady();</div>
+<div class="line"><span class="lineno">  553</span>    }</div>
+<div class="line"><span class="lineno">  554</span> </div>
+<div class="line"><span class="lineno">  555</span>    <a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_image_write_driver.html#ad5c91293d273be562661cfdd888be191">ImageWriteDriver::ImageWriteCacheUqPtr</a> cache;</div>
+<div class="line"><span class="lineno">  556</span>    <span class="keywordflow">if</span> (checkpointBgWrite ||</div>
+<div class="line"><span class="lineno">  557</span>        twoStageOutput ||</div>
+<div class="line"><span class="lineno">  558</span>        (!checkpointPostScript.empty())) {</div>
+<div class="line"><span class="lineno">  559</span>        <span class="comment">// checkpoint file is written by background thread and run parallel with MCRT threads</span></div>
+<div class="line"><span class="lineno">  560</span>        <span class="comment">// or post checkpoint script is set. Or two stage output mode is enable.</span></div>
+<div class="line"><span class="lineno">  561</span>        <span class="comment">// In this case, We need ImageWriteCache object.</span></div>
+<div class="line"><span class="lineno">  562</span>        cache = <a class="code hl_function" href="classmoonray_1_1rndr_1_1_image_write_driver.html#ae0eb2c7e5e99654ed1580c416e236829">ImageWriteDriver::get</a>()-&gt;newImageWriteCache(renderOutputDriver, <a class="code hl_function" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a7345a2faf519b40b2652433cfe9d325a">snapshotOnly</a>);</div>
+<div class="line"><span class="lineno">  563</span>        cache-&gt;setPostCheckpointScript(checkpointPostScript);</div>
+<div class="line"><span class="lineno">  564</span>        cache-&gt;setTwoStageOutput(twoStageOutput);</div>
+<div class="line"><span class="lineno">  565</span>        <span class="keywordflow">if</span> (checkpointBgWrite) {</div>
+<div class="line"><span class="lineno">  566</span>            cache-&gt;setupEnqMode(); <span class="comment">// cache internal mode is ENQ</span></div>
+<div class="line"><span class="lineno">  567</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  568</span>            <span class="comment">// cache internal mode is STD</span></div>
+<div class="line"><span class="lineno">  569</span>        }</div>
+<div class="line"><span class="lineno">  570</span> </div>
+<div class="line"><span class="lineno">  571</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  572</span>        <span class="comment">// Stop all MCRT threads and checkpoint file write is exclusively executed.</span></div>
+<div class="line"><span class="lineno">  573</span>        <span class="comment">// Also no post checkpoint script is specified. Also two stage output is disabled.</span></div>
+<div class="line"><span class="lineno">  574</span>        <span class="comment">// This case cache is nullptr</span></div>
+<div class="line"><span class="lineno">  575</span>        MNRY_ASSERT(!cache);</div>
+<div class="line"><span class="lineno">  576</span>    }</div>
+<div class="line"><span class="lineno">  577</span> </div>
+<div class="line"><span class="lineno">  578</span>    renderOutputDriver-&gt;writeCheckpointEnq(<span class="keyword">false</span>, <span class="comment">// checkpointMultiVersion</span></div>
+<div class="line"><span class="lineno">  579</span>                                           deepBuffer,</div>
+<div class="line"><span class="lineno">  580</span>                                           cryptomatteBuffer,</div>
+<div class="line"><span class="lineno">  581</span>                                           &amp;heatMapBuffer,</div>
+<div class="line"><span class="lineno">  582</span>                                           &amp;weightBuffer,</div>
+<div class="line"><span class="lineno">  583</span>                                           &amp;renderBufferOdd,</div>
+<div class="line"><span class="lineno">  584</span>                                           aovBuffers,</div>
+<div class="line"><span class="lineno">  585</span>                                           displayFilterBuffers,</div>
+<div class="line"><span class="lineno">  586</span>                                           endSampleId,</div>
+<div class="line"><span class="lineno">  587</span>                                           cache.get());</div>
+<div class="line"><span class="lineno">  588</span>    renderOutputDriver-&gt;loggingErrorAndInfo(cache.get());</div>
+<div class="line"><span class="lineno">  589</span> </div>
+<div class="line"><span class="lineno">  590</span>    <span class="keywordflow">if</span> (cache) {</div>
+<div class="line"><span class="lineno">  591</span>        cache-&gt;calcFinalBlockInternalDataSize();</div>
+<div class="line"><span class="lineno">  592</span>    }</div>
+<div class="line"><span class="lineno">  593</span> </div>
+<div class="line"><span class="lineno">  594</span>    <span class="keywordflow">if</span> (checkpointBgWrite) {</div>
+<div class="line"><span class="lineno">  595</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a7345a2faf519b40b2652433cfe9d325a">snapshotOnly</a>) {</div>
+<div class="line"><span class="lineno">  596</span>            <a class="code hl_function" href="classmoonray_1_1rndr_1_1_image_write_driver.html#ae0eb2c7e5e99654ed1580c416e236829">ImageWriteDriver::get</a>()-&gt;updateSnapshotData(cache);</div>
+<div class="line"><span class="lineno">  597</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  598</span>            <a class="code hl_function" href="classmoonray_1_1rndr_1_1_image_write_driver.html#ae0eb2c7e5e99654ed1580c416e236829">ImageWriteDriver::get</a>()-&gt;resetSnapshotData(); <span class="comment">// clear snapshot data</span></div>
+<div class="line"><span class="lineno">  599</span>            <a class="code hl_function" href="classmoonray_1_1rndr_1_1_image_write_driver.html#ae0eb2c7e5e99654ed1580c416e236829">ImageWriteDriver::get</a>()-&gt;enqImageWriteCache(cache);</div>
+<div class="line"><span class="lineno">  600</span>        }</div>
+<div class="line"><span class="lineno">  601</span> </div>
+<div class="line"><span class="lineno">  602</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  603</span>        <span class="keywordflow">if</span> (!twoStageOutput) {</div>
+<div class="line"><span class="lineno">  604</span>            <span class="comment">// We need to output checkpointMultiVersion data here when non-bgOutput mode</span></div>
+<div class="line"><span class="lineno">  605</span>            <span class="comment">// with non-twoStage mode. If we are overwite=true case, following function</span></div>
+<div class="line"><span class="lineno">  606</span>            <span class="comment">// return quickly without doing anything.</span></div>
+<div class="line"><span class="lineno">  607</span>            renderOutputDriver-&gt;writeCheckpointEnq(<span class="keyword">true</span>, <span class="comment">// checkpointMultiVersion</span></div>
+<div class="line"><span class="lineno">  608</span>                                                   deepBuffer,</div>
+<div class="line"><span class="lineno">  609</span>                                                   cryptomatteBuffer,</div>
+<div class="line"><span class="lineno">  610</span>                                                   &amp;heatMapBuffer,</div>
+<div class="line"><span class="lineno">  611</span>                                                   &amp;weightBuffer,</div>
+<div class="line"><span class="lineno">  612</span>                                                   &amp;renderBufferOdd,</div>
+<div class="line"><span class="lineno">  613</span>                                                   aovBuffers,</div>
+<div class="line"><span class="lineno">  614</span>                                                   displayFilterBuffers,</div>
+<div class="line"><span class="lineno">  615</span>                                                   endSampleId,</div>
+<div class="line"><span class="lineno">  616</span>                                                   <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  617</span>            renderOutputDriver-&gt;loggingErrorAndInfo(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  618</span>        }</div>
+<div class="line"><span class="lineno">  619</span> </div>
+<div class="line"><span class="lineno">  620</span>        <span class="keywordflow">if</span> (cache) {</div>
+<div class="line"><span class="lineno">  621</span>            <span class="comment">// TwoStage=on</span></div>
+<div class="line"><span class="lineno">  622</span>            <span class="keywordflow">if</span> (cache-&gt;getTwoStageOutput()) {</div>
+<div class="line"><span class="lineno">  623</span>                <span class="comment">// copy and rename for checkpoint file</span></div>
+<div class="line"><span class="lineno">  624</span>                cache-&gt;allFinalizeCheckpointFile();</div>
+<div class="line"><span class="lineno">  625</span>            }</div>
+<div class="line"><span class="lineno">  626</span>            <span class="keywordflow">if</span> (!cache-&gt;getCheckpointOverwrite()) {</div>
+<div class="line"><span class="lineno">  627</span>                <span class="comment">// We need to output checkpoint multi-version files. Data already be written as tmpFile.</span></div>
+<div class="line"><span class="lineno">  628</span>                <span class="comment">// copy and rename for checkpoint multi version file</span></div>
+<div class="line"><span class="lineno">  629</span>                cache-&gt;allFinalizeCheckpointMultiVersionFile();</div>
+<div class="line"><span class="lineno">  630</span>            }</div>
+<div class="line"><span class="lineno">  631</span>            <span class="keywordflow">if</span> (cache-&gt;hasPostCheckpointScript()) cache-&gt;runPostCheckpointScript();</div>
+<div class="line"><span class="lineno">  632</span> </div>
+<div class="line"><span class="lineno">  633</span>            <a class="code hl_function" href="classmoonray_1_1rndr_1_1_image_write_driver.html#ae0eb2c7e5e99654ed1580c416e236829">ImageWriteDriver::get</a>()-&gt;setLastImageWriteCache(cache);</div>
+<div class="line"><span class="lineno">  634</span>        }</div>
+<div class="line"><span class="lineno">  635</span>    }</div>
+<div class="line"><span class="lineno">  636</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_controller_html_a7345a2faf519b40b2652433cfe9d325a"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a7345a2faf519b40b2652433cfe9d325a">moonray::rndr::CheckpointController::snapshotOnly</a></div><div class="ttdeci">void snapshotOnly(RenderContext *renderContext, const std::string &amp;checkpointPostScript, const unsigned endSampleId)</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8cc_source.html#l00383">CheckpointController.cc:383</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_image_write_driver_html_ad5c91293d273be562661cfdd888be191"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_image_write_driver.html#ad5c91293d273be562661cfdd888be191">moonray::rndr::ImageWriteDriver::ImageWriteCacheUqPtr</a></div><div class="ttdeci">std::unique_ptr&lt; ImageWriteCache &gt; ImageWriteCacheUqPtr</div><div class="ttdef"><b>Definition:</b> <a href="_image_write_driver_8h_source.html#l00031">ImageWriteDriver.h:31</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_image_write_driver_html_ae0eb2c7e5e99654ed1580c416e236829"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_image_write_driver.html#ae0eb2c7e5e99654ed1580c416e236829">moonray::rndr::ImageWriteDriver::get</a></div><div class="ttdeci">static ImageWriteDriverShPtr get()</div><div class="ttdef"><b>Definition:</b> <a href="_image_write_driver_8cc_source.html#l00526">ImageWriteDriver.cc:526</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac584d0b4f685c126dcc8965a01050ca4" name="ac584d0b4f685c126dcc8965a01050ca4"></a>
@@ -162,7 +442,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8h_source.html#l00158">158</a> of file <a class="el" href="_checkpoint_controller_8h_source.html">CheckpointController.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  158</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#ab1c973cdb248d49b9c81172d18d81e73">mLastSnapshotIntervalSec</a>; } <span class="comment">// for debug</span></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a96316b4c7aed804e255f72b4a4c3de2b" name="a96316b4c7aed804e255f72b4a4c3de2b"></a>
@@ -181,7 +462,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8cc_source.html#l00308">308</a> of file <a class="el" href="_checkpoint_controller_8cc_source.html">CheckpointController.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  309</span>{</div>
+<div class="line"><span class="lineno">  310</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a47b518f27c0e5abed952efbb348a381f">mSnapshotEstimator</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_checkpoint_snapshot_estimator.html#aefde1f6a7dba4f29c73a80a4c7e84719">isActive</a>();</div>
+<div class="line"><span class="lineno">  311</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_controller_html_a47b518f27c0e5abed952efbb348a381f"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a47b518f27c0e5abed952efbb348a381f">moonray::rndr::CheckpointController::mSnapshotEstimator</a></div><div class="ttdeci">CheckpointSnapshotEstimator mSnapshotEstimator</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8h_source.html#l00193">CheckpointController.h:193</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_snapshot_estimator_html_aefde1f6a7dba4f29c73a80a4c7e84719"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_snapshot_estimator.html#aefde1f6a7dba4f29c73a80a4c7e84719">moonray::rndr::CheckpointSnapshotEstimator::isActive</a></div><div class="ttdeci">bool isActive() const</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8cc_source.html#l00178">CheckpointController.cc:178</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8ec967896aa2b6bf7d0b8dbb8faad642" name="a8ec967896aa2b6bf7d0b8dbb8faad642"></a>
@@ -200,7 +486,21 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8cc_source.html#l00369">369</a> of file <a class="el" href="_checkpoint_controller_8cc_source.html">CheckpointController.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  370</span>{</div>
+<div class="line"><span class="lineno">  371</span>    <span class="keywordtype">float</span> deltaSec = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#aa42746dbb5465cd51a33bce202d91e4d">mRayCostEvalTime</a>.end();</div>
+<div class="line"><span class="lineno">  372</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a1187fe8a21ff35706f5fbd5eb6a94ce8">mRayCostEstimator</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_checkpoint_ray_cost_estimator.html#a03d01093d8030313f44a9cea9771bfc0">push</a>(deltaSec, <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a630da059e6be1be747c7f4e9bc5f8bc4">mCurrDeltaSampleStartId</a>, <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a9249baae5a0dab650658ea8557103f1e">mCurrDeltaSampleEndId</a>);</div>
+<div class="line"><span class="lineno">  373</span> </div>
+<div class="line"><span class="lineno">  374</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a0770db0ca4b6774eef6b931c4a235448">mRemainingIntervalSec</a> -= deltaSec;</div>
+<div class="line"><span class="lineno">  375</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a0770db0ca4b6774eef6b931c4a235448">mRemainingIntervalSec</a> &lt;= 0.0f) {</div>
+<div class="line"><span class="lineno">  376</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#ab1c973cdb248d49b9c81172d18d81e73">mLastSnapshotIntervalSec</a> = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#ae49937e31e104b46cf78c9a63527ec9e">mSnapshotIntervalTime</a>.end(); <span class="comment">// for debug</span></div>
+<div class="line"><span class="lineno">  377</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;            <span class="comment">// we need snapshot</span></div>
+<div class="line"><span class="lineno">  378</span>    }</div>
+<div class="line"><span class="lineno">  379</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  380</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_controller_html_aa42746dbb5465cd51a33bce202d91e4d"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#aa42746dbb5465cd51a33bce202d91e4d">moonray::rndr::CheckpointController::mRayCostEvalTime</a></div><div class="ttdeci">scene_rdl2::rec_time::RecTime mRayCostEvalTime</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8h_source.html#l00195">CheckpointController.h:195</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_controller_html_ae49937e31e104b46cf78c9a63527ec9e"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#ae49937e31e104b46cf78c9a63527ec9e">moonray::rndr::CheckpointController::mSnapshotIntervalTime</a></div><div class="ttdeci">scene_rdl2::rec_time::RecTime mSnapshotIntervalTime</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8h_source.html#l00198">CheckpointController.h:198</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_ray_cost_estimator_html_a03d01093d8030313f44a9cea9771bfc0"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_ray_cost_estimator.html#a03d01093d8030313f44a9cea9771bfc0">moonray::rndr::CheckpointRayCostEstimator::push</a></div><div class="ttdeci">void push(float deltaSec, unsigned deltaSampleStart, unsigned deltaSampleEnd)</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8cc_source.html#l00056">CheckpointController.cc:56</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a93c7139eaf5d3e6a0eb449c1d6ea0188" name="a93c7139eaf5d3e6a0eb449c1d6ea0188"></a>
@@ -219,7 +519,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8cc_source.html#l00363">363</a> of file <a class="el" href="_checkpoint_controller_8cc_source.html">CheckpointController.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  364</span>{</div>
+<div class="line"><span class="lineno">  365</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#aa42746dbb5465cd51a33bce202d91e4d">mRayCostEvalTime</a>.start();</div>
+<div class="line"><span class="lineno">  366</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a25ac4a6370270f1ac33a52401b8ad93a" name="a25ac4a6370270f1ac33a52401b8ad93a"></a>
@@ -267,7 +570,24 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8cc_source.html#l00416">416</a> of file <a class="el" href="_checkpoint_controller_8cc_source.html">CheckpointController.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  424</span>{</div>
+<div class="line"><span class="lineno">  425</span>    <a class="code hl_function" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#ae7720879f60f2f88bd6700a0f2e00c2e">fileOutputMain</a>(checkpointBgWrite,</div>
+<div class="line"><span class="lineno">  426</span>                   twoStageOutput,</div>
+<div class="line"><span class="lineno">  427</span>                   <span class="keyword">false</span>, <span class="comment">// snapshotOnly</span></div>
+<div class="line"><span class="lineno">  428</span>                   renderContext,</div>
+<div class="line"><span class="lineno">  429</span>                   checkpointPostScript,</div>
+<div class="line"><span class="lineno">  430</span>                   endSampleId);</div>
+<div class="line"><span class="lineno">  431</span> </div>
+<div class="line"><span class="lineno">  432</span>    <a class="code hl_function" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a93b5641e31ca8163ca1e236dc0f0af42">resetRemainingIntervalSec</a>();</div>
+<div class="line"><span class="lineno">  433</span> </div>
+<div class="line"><span class="lineno">  434</span><span class="preprocessor">#   ifdef DEBUG_MSG</span></div>
+<div class="line"><span class="lineno">  435</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;&gt;&gt; CheckpointController.cc CheckpointController::output() &quot;</span></div>
+<div class="line"><span class="lineno">  436</span>              &lt;&lt; scene_rdl2::time_util::timeStr(scene_rdl2::time_util::getCurrentTime()) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  437</span><span class="preprocessor">#   endif </span><span class="comment">// end DEBUG_MSG</span></div>
+<div class="line"><span class="lineno">  438</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_controller_html_a93b5641e31ca8163ca1e236dc0f0af42"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a93b5641e31ca8163ca1e236dc0f0af42">moonray::rndr::CheckpointController::resetRemainingIntervalSec</a></div><div class="ttdeci">void resetRemainingIntervalSec()</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8cc_source.html#l00443">CheckpointController.cc:443</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_controller_html_ae7720879f60f2f88bd6700a0f2e00c2e"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#ae7720879f60f2f88bd6700a0f2e00c2e">moonray::rndr::CheckpointController::fileOutputMain</a></div><div class="ttdeci">void fileOutputMain(bool checkpointBgWrite, bool twoStageOutput, bool memorySnapshot, RenderContext *renderContext, const std::string &amp;checkpointPostScript, const unsigned endSampleId)</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8cc_source.html#l00519">CheckpointController.cc:519</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5897a3a8b321eb65a99f1076dbd4088b" name="a5897a3a8b321eb65a99f1076dbd4088b"></a>
@@ -286,7 +606,52 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8cc_source.html#l00293">293</a> of file <a class="el" href="_checkpoint_controller_8cc_source.html">CheckpointController.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  294</span>{</div>
+<div class="line"><span class="lineno">  295</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a0770db0ca4b6774eef6b931c4a235448">mRemainingIntervalSec</a> = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a47b518f27c0e5abed952efbb348a381f">mSnapshotEstimator</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_checkpoint_snapshot_estimator.html#ad2672abc8af20a6d94032bcc3a04280c">estimateSnapshotInterval</a>();</div>
+<div class="line"><span class="lineno">  296</span> </div>
+<div class="line"><span class="lineno">  297</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a630da059e6be1be747c7f4e9bc5f8bc4">mCurrDeltaSampleStartId</a> = 0;</div>
+<div class="line"><span class="lineno">  298</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a9249baae5a0dab650658ea8557103f1e">mCurrDeltaSampleEndId</a> = 0;</div>
+<div class="line"><span class="lineno">  299</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#adc9d24499c4ef0b21a91526f7e95b2ec">mMaxDeltaSamples</a> = 1;</div>
+<div class="line"><span class="lineno">  300</span> </div>
+<div class="line"><span class="lineno">  301</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a1187fe8a21ff35706f5fbd5eb6a94ce8">mRayCostEstimator</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_checkpoint_ray_cost_estimator.html#ad7a0c0b78b715833405a2a2a813ac7f4">reset</a>();</div>
+<div class="line"><span class="lineno">  302</span> </div>
+<div class="line"><span class="lineno">  303</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#ab1c973cdb248d49b9c81172d18d81e73">mLastSnapshotIntervalSec</a> = 0.0f;</div>
+<div class="line"><span class="lineno">  304</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#ae49937e31e104b46cf78c9a63527ec9e">mSnapshotIntervalTime</a>.start(); <span class="comment">// for debug</span></div>
+<div class="line"><span class="lineno">  305</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_ray_cost_estimator_html_ad7a0c0b78b715833405a2a2a813ac7f4"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_ray_cost_estimator.html#ad7a0c0b78b715833405a2a2a813ac7f4">moonray::rndr::CheckpointRayCostEstimator::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8h_source.html#l00055">CheckpointController.h:55</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_snapshot_estimator_html_ad2672abc8af20a6d94032bcc3a04280c"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_snapshot_estimator.html#ad2672abc8af20a6d94032bcc3a04280c">moonray::rndr::CheckpointSnapshotEstimator::estimateSnapshotInterval</a></div><div class="ttdeci">float estimateSnapshotInterval()</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8cc_source.html#l00217">CheckpointController.cc:217</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a93b5641e31ca8163ca1e236dc0f0af42" name="a93b5641e31ca8163ca1e236dc0f0af42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b5641e31ca8163ca1e236dc0f0af42">&#9670;&#160;</a></span>resetRemainingIntervalSec()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::rndr::CheckpointController::resetRemainingIntervalSec </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8cc_source.html#l00443">443</a> of file <a class="el" href="_checkpoint_controller_8cc_source.html">CheckpointController.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  444</span>{</div>
+<div class="line"><span class="lineno">  445</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a0770db0ca4b6774eef6b931c4a235448">mRemainingIntervalSec</a> = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a47b518f27c0e5abed952efbb348a381f">mSnapshotEstimator</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_checkpoint_snapshot_estimator.html#ad2672abc8af20a6d94032bcc3a04280c">estimateSnapshotInterval</a>();</div>
+<div class="line"><span class="lineno">  446</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#ae49937e31e104b46cf78c9a63527ec9e">mSnapshotIntervalTime</a>.start(); <span class="comment">// for debug</span></div>
+<div class="line"><span class="lineno">  447</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af34ee25313f11c113497942030c7159f" name="af34ee25313f11c113497942030c7159f"></a>
@@ -316,7 +681,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8cc_source.html#l00286">286</a> of file <a class="el" href="_checkpoint_controller_8cc_source.html">CheckpointController.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  288</span>{</div>
+<div class="line"><span class="lineno">  289</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a47b518f27c0e5abed952efbb348a381f">mSnapshotEstimator</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_checkpoint_snapshot_estimator.html#a7dac967347630422c97453ffde0a137e">set</a>(snapshotIntervalMinute, snapshotOverheadFraction);</div>
+<div class="line"><span class="lineno">  290</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_snapshot_estimator_html_a7dac967347630422c97453ffde0a137e"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_snapshot_estimator.html#a7dac967347630422c97453ffde0a137e">moonray::rndr::CheckpointSnapshotEstimator::set</a></div><div class="ttdeci">void set(float snapshotIntervalMinute, float snapshotOverheadFraction)</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8cc_source.html#l00157">CheckpointController.cc:157</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7345a2faf519b40b2652433cfe9d325a" name="a7345a2faf519b40b2652433cfe9d325a"></a>
@@ -352,6 +721,248 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8cc_source.html#l00383">383</a> of file <a class="el" href="_checkpoint_controller_8cc_source.html">CheckpointController.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  390</span>{</div>
+<div class="line"><span class="lineno">  391</span>    scene_rdl2::rec_time::RecTime time;</div>
+<div class="line"><span class="lineno">  392</span>    time.start();</div>
+<div class="line"><span class="lineno">  393</span>    <a class="code hl_function" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#ae7720879f60f2f88bd6700a0f2e00c2e">fileOutputMain</a>(<span class="keyword">true</span>, <span class="comment">// checkpointBgWrite</span></div>
+<div class="line"><span class="lineno">  394</span>                   <span class="keyword">true</span>, <span class="comment">// twoStageOutput</span></div>
+<div class="line"><span class="lineno">  395</span>                   <span class="keyword">true</span>, <span class="comment">// snapshotOnly</span></div>
+<div class="line"><span class="lineno">  396</span>                   renderContext,</div>
+<div class="line"><span class="lineno">  397</span>                   checkpointPostScript,</div>
+<div class="line"><span class="lineno">  398</span>                   endSampleId);</div>
+<div class="line"><span class="lineno">  399</span>    <span class="keywordtype">float</span> snapshotActionSec = time.end();</div>
+<div class="line"><span class="lineno">  400</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a47b518f27c0e5abed952efbb348a381f">mSnapshotEstimator</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_checkpoint_snapshot_estimator.html#ada7a7d1b585159f91e67c7a602a70c1a">pushSnapshotCost</a>(snapshotActionSec);</div>
+<div class="line"><span class="lineno">  401</span> </div>
+<div class="line"><span class="lineno">  402</span>    <a class="code hl_function" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#a93b5641e31ca8163ca1e236dc0f0af42">resetRemainingIntervalSec</a>();</div>
+<div class="line"><span class="lineno">  403</span> </div>
+<div class="line"><span class="lineno">  404</span><span class="preprocessor">#   ifdef DEBUG_MSG</span></div>
+<div class="line"><span class="lineno">  405</span>    <span class="keywordtype">float</span> overhead = snapshotActionSec / <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#ab1c973cdb248d49b9c81172d18d81e73">mLastSnapshotIntervalSec</a> * 100.0f;</div>
+<div class="line"><span class="lineno">  406</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;&gt;&gt; CheckpointController.cc CheckpointController::snapshotOnly() &quot;</span></div>
+<div class="line"><span class="lineno">  407</span>              &lt;&lt; scene_rdl2::time_util::timeStr(scene_rdl2::time_util::getCurrentTime())</div>
+<div class="line"><span class="lineno">  408</span>              &lt;&lt; <span class="stringliteral">&quot; snapshot:&quot;</span> &lt;&lt; snapshotActionSec &lt;&lt; <span class="stringliteral">&quot; sec&quot;</span></div>
+<div class="line"><span class="lineno">  409</span>              &lt;&lt; <span class="stringliteral">&quot; interval:&quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html#ab1c973cdb248d49b9c81172d18d81e73">mLastSnapshotIntervalSec</a> &lt;&lt; <span class="stringliteral">&quot; sec&quot;</span></div>
+<div class="line"><span class="lineno">  410</span>              &lt;&lt; <span class="stringliteral">&quot; overhead:&quot;</span> &lt;&lt; std::setw(6) &lt;&lt; std::fixed &lt;&lt; std::setprecision(3) &lt;&lt; overhead &lt;&lt; <span class="stringliteral">&quot;%\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  411</span>    <span class="comment">// std::cerr &lt;&lt; ImageWriteDriver::get()-&gt;showMemUsage() &lt;&lt; &#39;\n&#39;; // for debug</span></div>
+<div class="line"><span class="lineno">  412</span><span class="preprocessor">#   endif </span><span class="comment">// end DEBUG_MSG</span></div>
+<div class="line"><span class="lineno">  413</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_checkpoint_snapshot_estimator_html_ada7a7d1b585159f91e67c7a602a70c1a"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_checkpoint_snapshot_estimator.html#ada7a7d1b585159f91e67c7a602a70c1a">moonray::rndr::CheckpointSnapshotEstimator::pushSnapshotCost</a></div><div class="ttdeci">void pushSnapshotCost(float snapshotSec)</div><div class="ttdef"><b>Definition:</b> <a href="_checkpoint_controller_8cc_source.html#l00194">CheckpointController.cc:194</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a9249baae5a0dab650658ea8557103f1e" name="a9249baae5a0dab650658ea8557103f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9249baae5a0dab650658ea8557103f1e">&#9670;&#160;</a></span>mCurrDeltaSampleEndId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned moonray::rndr::CheckpointController::mCurrDeltaSampleEndId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8h_source.html#l00189">189</a> of file <a class="el" href="_checkpoint_controller_8h_source.html">CheckpointController.h</a>.</p>
+
+</div>
+</div>
+<a id="a630da059e6be1be747c7f4e9bc5f8bc4" name="a630da059e6be1be747c7f4e9bc5f8bc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630da059e6be1be747c7f4e9bc5f8bc4">&#9670;&#160;</a></span>mCurrDeltaSampleStartId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned moonray::rndr::CheckpointController::mCurrDeltaSampleStartId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8h_source.html#l00188">188</a> of file <a class="el" href="_checkpoint_controller_8h_source.html">CheckpointController.h</a>.</p>
+
+</div>
+</div>
+<a id="ab1c973cdb248d49b9c81172d18d81e73" name="ab1c973cdb248d49b9c81172d18d81e73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c973cdb248d49b9c81172d18d81e73">&#9670;&#160;</a></span>mLastSnapshotIntervalSec</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::rndr::CheckpointController::mLastSnapshotIntervalSec</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8h_source.html#l00197">197</a> of file <a class="el" href="_checkpoint_controller_8h_source.html">CheckpointController.h</a>.</p>
+
+</div>
+</div>
+<a id="adc9d24499c4ef0b21a91526f7e95b2ec" name="adc9d24499c4ef0b21a91526f7e95b2ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc9d24499c4ef0b21a91526f7e95b2ec">&#9670;&#160;</a></span>mMaxDeltaSamples</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned moonray::rndr::CheckpointController::mMaxDeltaSamples</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8h_source.html#l00190">190</a> of file <a class="el" href="_checkpoint_controller_8h_source.html">CheckpointController.h</a>.</p>
+
+</div>
+</div>
+<a id="a1187fe8a21ff35706f5fbd5eb6a94ce8" name="a1187fe8a21ff35706f5fbd5eb6a94ce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1187fe8a21ff35706f5fbd5eb6a94ce8">&#9670;&#160;</a></span>mRayCostEstimator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_ray_cost_estimator.html">CheckpointRayCostEstimator</a> moonray::rndr::CheckpointController::mRayCostEstimator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8h_source.html#l00192">192</a> of file <a class="el" href="_checkpoint_controller_8h_source.html">CheckpointController.h</a>.</p>
+
+</div>
+</div>
+<a id="aa42746dbb5465cd51a33bce202d91e4d" name="aa42746dbb5465cd51a33bce202d91e4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42746dbb5465cd51a33bce202d91e4d">&#9670;&#160;</a></span>mRayCostEvalTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rec_time::RecTime moonray::rndr::CheckpointController::mRayCostEvalTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8h_source.html#l00195">195</a> of file <a class="el" href="_checkpoint_controller_8h_source.html">CheckpointController.h</a>.</p>
+
+</div>
+</div>
+<a id="a0770db0ca4b6774eef6b931c4a235448" name="a0770db0ca4b6774eef6b931c4a235448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0770db0ca4b6774eef6b931c4a235448">&#9670;&#160;</a></span>mRemainingIntervalSec</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::rndr::CheckpointController::mRemainingIntervalSec</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8h_source.html#l00187">187</a> of file <a class="el" href="_checkpoint_controller_8h_source.html">CheckpointController.h</a>.</p>
+
+</div>
+</div>
+<a id="a47b518f27c0e5abed952efbb348a381f" name="a47b518f27c0e5abed952efbb348a381f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47b518f27c0e5abed952efbb348a381f">&#9670;&#160;</a></span>mSnapshotEstimator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_snapshot_estimator.html">CheckpointSnapshotEstimator</a> moonray::rndr::CheckpointController::mSnapshotEstimator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8h_source.html#l00193">193</a> of file <a class="el" href="_checkpoint_controller_8h_source.html">CheckpointController.h</a>.</p>
+
+</div>
+</div>
+<a id="ae49937e31e104b46cf78c9a63527ec9e" name="ae49937e31e104b46cf78c9a63527ec9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae49937e31e104b46cf78c9a63527ec9e">&#9670;&#160;</a></span>mSnapshotIntervalTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rec_time::RecTime moonray::rndr::CheckpointController::mSnapshotIntervalTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_checkpoint_controller_8h_source.html#l00198">198</a> of file <a class="el" href="_checkpoint_controller_8h_source.html">CheckpointController.h</a>.</p>
 
 </div>
 </div>
@@ -360,9 +971,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/rndr/<a class="el" href="_checkpoint_controller_8cc_source.html">CheckpointController.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rndr_1_1_checkpoint_controller.html">CheckpointController</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

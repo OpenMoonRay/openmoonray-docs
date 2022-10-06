@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_28705856019153616deb2bfeeafe0625.html">unittest</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_test_light_util_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">TestLightUtil.h</div></div>
 </div><!--header-->
@@ -67,14 +83,14 @@ $(function() {
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_light_util.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1pbr_1_1_test_light_util.html">TestLightUtil</a> : <span class="keyword">public</span> CppUnit::TestFixture</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    CPPUNIT_TEST_SUITE(<a class="code hl_class" href="classmoonray_1_1pbr_1_1_test_light_util.html">TestLightUtil</a>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_light_util.html#a9fc0e7511928a1047c9bd96651ecafa2">   21</a></span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_light_util.html#a9fc0e7511928a1047c9bd96651ecafa2">CPPUNIT_TEST_SUITE</a>(<a class="code hl_class" href="classmoonray_1_1pbr_1_1_test_light_util.html">TestLightUtil</a>);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#if 1</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    CPPUNIT_TEST(<a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_light_util.html#a59cf8e6ef026ec794c5b772a08746051">testPlane</a>);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    CPPUNIT_TEST(<a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_light_util.html#a9eb2a597942e58a8652f7089ad4a41d1">testFalloffCurve</a>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_light_util.html#abac5483ffd63dcc73c54dda2e3919e4e">   24</a></span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_light_util.html#abac5483ffd63dcc73c54dda2e3919e4e">CPPUNIT_TEST</a>(<a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_light_util.html#a59cf8e6ef026ec794c5b772a08746051">testPlane</a>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_light_util.html#a9d1a56d1d4b426bfb58022964fe546e3">   25</a></span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_light_util.html#a9d1a56d1d4b426bfb58022964fe546e3">CPPUNIT_TEST</a>(<a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_light_util.html#a9eb2a597942e58a8652f7089ad4a41d1">testFalloffCurve</a>);</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    CPPUNIT_TEST_SUITE_END();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_light_util.html#ad08048a895680e00e1c3fb3c956a6f0b">   28</a></span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_light_util.html#ad08048a895680e00e1c3fb3c956a6f0b">CPPUNIT_TEST_SUITE_END</a>();</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_light_util.html#a59cf8e6ef026ec794c5b772a08746051">testPlane</a>();</div>
@@ -91,12 +107,20 @@ $(function() {
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_light_util_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_light_util.html">moonray::pbr::TestLightUtil</a></div><div class="ttdef"><b>Definition:</b> <a href="_test_light_util_8h_source.html#l00019">TestLightUtil.h:20</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_light_util_html_a59cf8e6ef026ec794c5b772a08746051"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_light_util.html#a59cf8e6ef026ec794c5b772a08746051">moonray::pbr::TestLightUtil::testPlane</a></div><div class="ttdeci">void testPlane()</div><div class="ttdef"><b>Definition:</b> <a href="_test_light_util_8cc_source.html#l00056">TestLightUtil.cc:56</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_light_util_html_a9d1a56d1d4b426bfb58022964fe546e3"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_light_util.html#a9d1a56d1d4b426bfb58022964fe546e3">moonray::pbr::TestLightUtil::CPPUNIT_TEST</a></div><div class="ttdeci">CPPUNIT_TEST(testFalloffCurve)</div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_light_util_html_a9eb2a597942e58a8652f7089ad4a41d1"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_light_util.html#a9eb2a597942e58a8652f7089ad4a41d1">moonray::pbr::TestLightUtil::testFalloffCurve</a></div><div class="ttdeci">void testFalloffCurve()</div><div class="ttdef"><b>Definition:</b> <a href="_test_light_util_8cc_source.html#l00126">TestLightUtil.cc:126</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_light_util_html_a9fc0e7511928a1047c9bd96651ecafa2"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_light_util.html#a9fc0e7511928a1047c9bd96651ecafa2">moonray::pbr::TestLightUtil::CPPUNIT_TEST_SUITE</a></div><div class="ttdeci">CPPUNIT_TEST_SUITE(TestLightUtil)</div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_light_util_html_abac5483ffd63dcc73c54dda2e3919e4e"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_light_util.html#abac5483ffd63dcc73c54dda2e3919e4e">moonray::pbr::TestLightUtil::CPPUNIT_TEST</a></div><div class="ttdeci">CPPUNIT_TEST(testPlane)</div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_light_util_html_ad08048a895680e00e1c3fb3c956a6f0b"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_light_util.html#ad08048a895680e00e1c3fb3c956a6f0b">moonray::pbr::TestLightUtil::CPPUNIT_TEST_SUITE_END</a></div><div class="ttdeci">CPPUNIT_TEST_SUITE_END()</div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_e9cc9f5f9c03e3b4eff73c33091953ed.html">unittest</a></li><li class="navelem"><a class="el" href="_test_light_util_8h.html">TestLightUtil.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

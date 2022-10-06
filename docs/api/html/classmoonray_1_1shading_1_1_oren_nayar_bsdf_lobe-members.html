@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html">OrenNayarBsdfLobe</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">moonray::shading::OrenNayarBsdfLobe Member List</div></div>
 </div><!--header-->
@@ -84,9 +100,17 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2a70019c07d2794221212c441b7bface">matchesFlags</a>(Type flags) const</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">moonray::shading::BsdfLobe</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#abf1dcf0f072c0e0be0a140087e2d4991">matchesFlags</a>(int flags) const</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">moonray::shading::BsdfLobe</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html#a0575e2bac65c9f6af4ebdde0723f6849">mB</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html">moonray::shading::OrenNayarBsdfLobe</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html#a1e59fe7b2c0eb11f7d12054feaf37086">mFrame</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html">moonray::shading::OrenNayarBsdfLobe</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#adf3f3353dae9c1c34323423ffc70264e">mDifferentialFlags</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">moonray::shading::BsdfLobe</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html#a1e59fe7b2c0eb11f7d12054feaf37086">mFrame</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html">moonray::shading::OrenNayarBsdfLobe</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#ab14456d9337c74204d8f8b156f46835b">mFresnel</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">moonray::shading::BsdfLobe</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa64cc302ce6273484db08f1987b5cf337">MIRROR</a> enum value</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">moonray::shading::BsdfLobe</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a9cae2ddb784584d530b8bd25c0d2855b">mIsHair</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">moonray::shading::BsdfLobe</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1897e8382a382bc146ada9c731e57393">mIsSpherical</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">moonray::shading::BsdfLobe</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a5a33217d0ea993ff76f1871f4a490ccb">mLabel</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">moonray::shading::BsdfLobe</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#ab49999f60efe5099fb6ccd6463d000e6">mPropertyFlags</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">moonray::shading::BsdfLobe</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html#a02b028a3dde84de7e671dac45a852241">mRoughness</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html">moonray::shading::OrenNayarBsdfLobe</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a55fd6e6bafa9400c8ad9cf493f4c76cd">mScale</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">moonray::shading::BsdfLobe</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aa5a81899b568a2455317223265123349">mType</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">moonray::shading::BsdfLobe</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa8e8640c6f6218f03be1636c113121fed">NONE</a> enum value</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">moonray::shading::BsdfLobe</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html#af70e5b676fec76b462f394ad0ad62d3f">OrenNayarBsdfLobe</a>(const scene_rdl2::math::Vec3f &amp;N, const scene_rdl2::math::Color &amp;albedo, float roughness, bool reflection)</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html">moonray::shading::OrenNayarBsdfLobe</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3f">Property</a> enum name</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">moonray::shading::BsdfLobe</a></td><td class="entry"></td></tr>
@@ -108,9 +132,12 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">Type</a> enum name</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">moonray::shading::BsdfLobe</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#ad97a40985284f4c87f69f9f63804eca2">~BsdfLobe</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">moonray::shading::BsdfLobe</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

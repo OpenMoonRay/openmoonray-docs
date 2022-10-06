@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute.html">PrimitiveAttribute</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_primitive_attribute.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_primitive_attribute-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::PrimitiveAttribute&lt; T &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -211,6 +229,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a24519afbe439ea3965d8e6803afc8a62 inherit pub_methods_classmoonray_1_1shading_1_1_primitive_attribute_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8445edeebdb6daec4c8412a76fb6bed5 inherit pub_methods_classmoonray_1_1shading_1_1_primitive_attribute_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_base.html#a8445edeebdb6daec4c8412a76fb6bed5">copyInPlace</a> (size_t src, size_t dst)=0</td></tr>
 <tr class="separator:a8445edeebdb6daec4c8412a76fb6bed5 inherit pub_methods_classmoonray_1_1shading_1_1_primitive_attribute_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a63685fdbcbb9a117c7ea1907e239e268"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a8859a4339456aab86be4cc94fb2dd582">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a63685fdbcbb9a117c7ea1907e239e268">toNonConst</a> (const <a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a30f4b6b8ee1826b6ebf52a711f7fd34b">list_type</a> &amp;list, <a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a18a4e4cb8750582b0fbf826c55ebc72b">const_iterator</a> citer)</td></tr>
+<tr class="separator:a63685fdbcbb9a117c7ea1907e239e268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad685e50c44f986c2f79ee6372bae0fdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a30f4b6b8ee1826b6ebf52a711f7fd34b">list_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a></td></tr>
+<tr class="separator:ad685e50c44f986c2f79ee6372bae0fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -460,7 +488,13 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00118">118</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  118</span>                                                                                {}):</div>
+<div class="line"><span class="lineno">  119</span>            <a class="code hl_function" href="classmoonray_1_1shading_1_1_primitive_attribute_base.html#a9760c2952b33f4231a7ea75681804c54">PrimitiveAttributeBase</a>(rate), <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>(list)</div>
+<div class="line"><span class="lineno">  120</span>    {</div>
+<div class="line"><span class="lineno">  121</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_primitive_attribute_base_html_a9760c2952b33f4231a7ea75681804c54"><div class="ttname"><a href="classmoonray_1_1shading_1_1_primitive_attribute_base.html#a9760c2952b33f4231a7ea75681804c54">moonray::shading::PrimitiveAttributeBase::PrimitiveAttributeBase</a></div><div class="ttdeci">PrimitiveAttributeBase(AttributeRate rate)</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00044">PrimitiveAttribute.h:44</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_primitive_attribute_html_ad685e50c44f986c2f79ee6372bae0fdd"><div class="ttname"><a href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">moonray::shading::PrimitiveAttribute::mList</a></div><div class="ttdeci">list_type mList</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00318">PrimitiveAttribute.h:318</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -492,7 +526,10 @@ template&lt;typename T &gt; </div>
 <p>Return iterator to beginning. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00204">204</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  205</span>    {</div>
+<div class="line"><span class="lineno">  206</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.begin();</div>
+<div class="line"><span class="lineno">  207</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="affb74e783f25a588575aacf2c1eb28df" name="affb74e783f25a588575aacf2c1eb28df"></a>
@@ -523,7 +560,10 @@ template&lt;typename T &gt; </div>
 <p>Return const_iterator to beginning. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00210">210</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  211</span>    {</div>
+<div class="line"><span class="lineno">  212</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.begin();</div>
+<div class="line"><span class="lineno">  213</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6617414f23c2d01aaf394d1cfee4833b" name="a6617414f23c2d01aaf394d1cfee4833b"></a>
@@ -554,7 +594,10 @@ template&lt;typename T &gt; </div>
 <p>Return const_iterator to beginning. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00216">216</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  217</span>    {</div>
+<div class="line"><span class="lineno">  218</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.cbegin();</div>
+<div class="line"><span class="lineno">  219</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adff2bb83a386653e57c01c00d13dff05" name="adff2bb83a386653e57c01c00d13dff05"></a>
@@ -585,7 +628,10 @@ template&lt;typename T &gt; </div>
 <p>Return const_iterator to end. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00234">234</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  235</span>    {</div>
+<div class="line"><span class="lineno">  236</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.cend();</div>
+<div class="line"><span class="lineno">  237</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8e06493c4876cfa6641cccc0e91bab29" name="a8e06493c4876cfa6641cccc0e91bab29"></a>
@@ -614,7 +660,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00198">198</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  199</span>    {</div>
+<div class="line"><span class="lineno">  200</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.clear();</div>
+<div class="line"><span class="lineno">  201</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0f0438c8ca848702d664ff36defca261" name="a0f0438c8ca848702d664ff36defca261"></a>
@@ -656,7 +705,10 @@ template&lt;typename T &gt; </div>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_base.html#a8445edeebdb6daec4c8412a76fb6bed5">moonray::shading::PrimitiveAttributeBase</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00303">303</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  304</span>    {</div>
+<div class="line"><span class="lineno">  305</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>[dst] = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>[src];</div>
+<div class="line"><span class="lineno">  306</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a82586bb888df6c700d646291941b4e0d" name="a82586bb888df6c700d646291941b4e0d"></a>
@@ -687,7 +739,10 @@ template&lt;typename T &gt; </div>
 <p>Return const_reverse_iterator to reverse beginning. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00252">252</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  253</span>    {</div>
+<div class="line"><span class="lineno">  254</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.crbegin();</div>
+<div class="line"><span class="lineno">  255</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afea32f9849fa33cf05b4741efbffce7a" name="afea32f9849fa33cf05b4741efbffce7a"></a>
@@ -718,7 +773,10 @@ template&lt;typename T &gt; </div>
 <p>Return const_reverse_iterator to reverse end. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00270">270</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  271</span>    {</div>
+<div class="line"><span class="lineno">  272</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.crend();</div>
+<div class="line"><span class="lineno">  273</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aced3230cb82bf04eb33abd16d4fc5cb2" name="aced3230cb82bf04eb33abd16d4fc5cb2"></a>
@@ -752,7 +810,10 @@ template&lt;class... Args&gt; </div>
 <p>Construct and insert element at the end. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00145">145</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  146</span>    {</div>
+<div class="line"><span class="lineno">  147</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.emplace_back(std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><span class="lineno">  148</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a94fd1f6f0306e5a15648b56d3a43157d" name="a94fd1f6f0306e5a15648b56d3a43157d"></a>
@@ -783,7 +844,10 @@ template&lt;typename T &gt; </div>
 <p>Return iterator to end. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00222">222</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  223</span>    {</div>
+<div class="line"><span class="lineno">  224</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.end();</div>
+<div class="line"><span class="lineno">  225</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a77688e2158e648ca0d09607d7c7e5e7f" name="a77688e2158e648ca0d09607d7c7e5e7f"></a>
@@ -814,7 +878,10 @@ template&lt;typename T &gt; </div>
 <p>Return const_iterator to end. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00228">228</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  229</span>    {</div>
+<div class="line"><span class="lineno">  230</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.end();</div>
+<div class="line"><span class="lineno">  231</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a91a7fc2fca66cbcb8345717b59d15935" name="a91a7fc2fca66cbcb8345717b59d15935"></a>
@@ -854,7 +921,11 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00188">188</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  189</span>    {</div>
+<div class="line"><span class="lineno">  190</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.erase(<a class="code hl_function" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a63685fdbcbb9a117c7ea1907e239e268">toNonConst</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>, first), <a class="code hl_function" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a63685fdbcbb9a117c7ea1907e239e268">toNonConst</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>, last));</div>
+<div class="line"><span class="lineno">  191</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_primitive_attribute_html_a63685fdbcbb9a117c7ea1907e239e268"><div class="ttname"><a href="classmoonray_1_1shading_1_1_primitive_attribute.html#a63685fdbcbb9a117c7ea1907e239e268">moonray::shading::PrimitiveAttribute::toNonConst</a></div><div class="ttdeci">static iterator toNonConst(const list_type &amp;list, const_iterator citer)</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00309">PrimitiveAttribute.h:309</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad1b49406e8e21c0ebb9e156b6aa9f156" name="ad1b49406e8e21c0ebb9e156b6aa9f156"></a>
@@ -884,7 +955,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00183">183</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  184</span>    {</div>
+<div class="line"><span class="lineno">  185</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.erase(<a class="code hl_function" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a63685fdbcbb9a117c7ea1907e239e268">toNonConst</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>, pos));</div>
+<div class="line"><span class="lineno">  186</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab48a8dbfd802206af5ac86497d042229" name="ab48a8dbfd802206af5ac86497d042229"></a>
@@ -924,7 +998,13 @@ template&lt;typename T &gt; </div>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_base.html#a24519afbe439ea3965d8e6803afc8a62">moonray::shading::PrimitiveAttributeBase</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00372">372</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  373</span>{</div>
+<div class="line"><span class="lineno">  374</span>    <span class="keyword">const</span> std::string* strPtr = <a class="code hl_function" href="namespacemoonray_1_1util.html#a70931d48d1ef375f576ec6a767ee6045">util::getStringPool</a>().<a class="code hl_function" href="classmoonray_1_1util_1_1_string_pool.html#a4f38d08f5f1cf36ee05691479edc84d2">get</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>[offset]);</div>
+<div class="line"><span class="lineno">  375</span>    *(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>std::string **<span class="keyword">&gt;</span>(data)) = strPtr;</div>
+<div class="line"><span class="lineno">  376</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1util_1_1_string_pool_html_a4f38d08f5f1cf36ee05691479edc84d2"><div class="ttname"><a href="classmoonray_1_1util_1_1_string_pool.html#a4f38d08f5f1cf36ee05691479edc84d2">moonray::util::StringPool::get</a></div><div class="ttdeci">const std::string * get(const std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="_string_pool_8h_source.html#l00039">StringPool.h:39</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1util_html_a70931d48d1ef375f576ec6a767ee6045"><div class="ttname"><a href="namespacemoonray_1_1util.html#a70931d48d1ef375f576ec6a767ee6045">moonray::util::getStringPool</a></div><div class="ttdeci">StringPool &amp; getStringPool()</div><div class="ttdef"><b>Definition:</b> <a href="_string_pool_8cc_source.html#l00011">StringPool.cc:11</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac447b5e615b608a46b19a7e0cde52463" name="ac447b5e615b608a46b19a7e0cde52463"></a>
@@ -968,7 +1048,10 @@ template&lt;typename T &gt; </div>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_base.html#a24519afbe439ea3965d8e6803afc8a62">moonray::shading::PrimitiveAttributeBase</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00365">365</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  366</span>{</div>
+<div class="line"><span class="lineno">  367</span>    *(<span class="keyword">reinterpret_cast&lt;</span>T *<span class="keyword">&gt;</span>(data)) = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>[offset];</div>
+<div class="line"><span class="lineno">  368</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac057f29871350706323a37c5e1ff41cc" name="ac057f29871350706323a37c5e1ff41cc"></a>
@@ -1008,7 +1091,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00150">150</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  151</span>    {</div>
+<div class="line"><span class="lineno">  152</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.insert(<a class="code hl_function" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a63685fdbcbb9a117c7ea1907e239e268">toNonConst</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>, pos), value);</div>
+<div class="line"><span class="lineno">  153</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aec42d42871580cc7683f5e072ddd3ed6" name="aec42d42871580cc7683f5e072ddd3ed6"></a>
@@ -1056,7 +1142,10 @@ template&lt;typename InputIt &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00173">173</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  174</span>    {</div>
+<div class="line"><span class="lineno">  175</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.insert(<a class="code hl_function" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a63685fdbcbb9a117c7ea1907e239e268">toNonConst</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>, pos), first, last);</div>
+<div class="line"><span class="lineno">  176</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7f15d75a212079b0fb1c5144cf902cb8" name="a7f15d75a212079b0fb1c5144cf902cb8"></a>
@@ -1102,7 +1191,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00161">161</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  162</span>    {</div>
+<div class="line"><span class="lineno">  163</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>(<a class="code hl_function" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a63685fdbcbb9a117c7ea1907e239e268">toNonConst</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>, pos), count, value);</div>
+<div class="line"><span class="lineno">  164</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ada96393a84e864cc436883fbe26cf74f" name="ada96393a84e864cc436883fbe26cf74f"></a>
@@ -1142,7 +1234,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00178">178</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  179</span>    {</div>
+<div class="line"><span class="lineno">  180</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.insert(<a class="code hl_function" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a63685fdbcbb9a117c7ea1907e239e268">toNonConst</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>, pos), ilist);</div>
+<div class="line"><span class="lineno">  181</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a58578d7af1e033b2b3f1639e9c767f9c" name="a58578d7af1e033b2b3f1639e9c767f9c"></a>
@@ -1182,7 +1277,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00155">155</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  156</span>    {</div>
+<div class="line"><span class="lineno">  157</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.insert(<a class="code hl_function" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a63685fdbcbb9a117c7ea1907e239e268">toNonConst</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>, pos), std::forward&lt;T&gt;(value));</div>
+<div class="line"><span class="lineno">  158</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7ea6bd546494f8231d271796c6d7d159" name="a7ea6bd546494f8231d271796c6d7d159"></a>
@@ -1214,7 +1312,10 @@ template&lt;typename T &gt; </div>
 <p>Access element. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00288">288</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  289</span>    {</div>
+<div class="line"><span class="lineno">  290</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>[n];</div>
+<div class="line"><span class="lineno">  291</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad17072bc769c0b598222ac68407d73df" name="ad17072bc769c0b598222ac68407d73df"></a>
@@ -1246,7 +1347,10 @@ template&lt;typename T &gt; </div>
 <p>Access element. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00294">294</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  295</span>    {</div>
+<div class="line"><span class="lineno">  296</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>[n];</div>
+<div class="line"><span class="lineno">  297</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a198bea20c32937318be910bf0bbdaedf" name="a198bea20c32937318be910bf0bbdaedf"></a>
@@ -1278,7 +1382,10 @@ template&lt;typename T &gt; </div>
 <p>Add element at the end. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00132">132</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  133</span>    {</div>
+<div class="line"><span class="lineno">  134</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.push_back(value);</div>
+<div class="line"><span class="lineno">  135</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afe91c343445dc235a7c16010f9ef6867" name="afe91c343445dc235a7c16010f9ef6867"></a>
@@ -1310,7 +1417,10 @@ template&lt;typename T &gt; </div>
 <p>Add element at the end. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00138">138</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  139</span>    {</div>
+<div class="line"><span class="lineno">  140</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.push_back(std::forward&lt;T&gt;(value));</div>
+<div class="line"><span class="lineno">  141</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a48f663efa343752f663b9515f1179672" name="a48f663efa343752f663b9515f1179672"></a>
@@ -1341,7 +1451,10 @@ template&lt;typename T &gt; </div>
 <p>Return reverse_iterator to reverse beginning. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00240">240</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  241</span>    {</div>
+<div class="line"><span class="lineno">  242</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.rbegin();</div>
+<div class="line"><span class="lineno">  243</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad7036de2adb4a176ae0da791a1363572" name="ad7036de2adb4a176ae0da791a1363572"></a>
@@ -1372,7 +1485,10 @@ template&lt;typename T &gt; </div>
 <p>Return const_reverse_iterator to reverse beginning. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00246">246</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  247</span>    {</div>
+<div class="line"><span class="lineno">  248</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.rbegin();</div>
+<div class="line"><span class="lineno">  249</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abc4bb5bae41659f16384efcd0f1d756d" name="abc4bb5bae41659f16384efcd0f1d756d"></a>
@@ -1403,7 +1519,10 @@ template&lt;typename T &gt; </div>
 <p>Return reverse_iterator to reverse end. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00258">258</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  259</span>    {</div>
+<div class="line"><span class="lineno">  260</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.rend();</div>
+<div class="line"><span class="lineno">  261</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a14f42b855d76d3dcdb1b9caec1495f48" name="a14f42b855d76d3dcdb1b9caec1495f48"></a>
@@ -1434,7 +1553,10 @@ template&lt;typename T &gt; </div>
 <p>Return const_reverse_iterator to reverse end. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00264">264</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  265</span>    {</div>
+<div class="line"><span class="lineno">  266</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.rend();</div>
+<div class="line"><span class="lineno">  267</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aaeaa060c8b4e06f03d44f351a3faae85" name="aaeaa060c8b4e06f03d44f351a3faae85"></a>
@@ -1464,7 +1586,11 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00193">193</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  194</span>    {</div>
+<div class="line"><span class="lineno">  195</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.reserve(<a class="code hl_function" href="classmoonray_1_1shading_1_1_primitive_attribute.html#aa45c83b4206160b8bcecc2ec74dc9220">size</a>);</div>
+<div class="line"><span class="lineno">  196</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_primitive_attribute_html_aa45c83b4206160b8bcecc2ec74dc9220"><div class="ttname"><a href="classmoonray_1_1shading_1_1_primitive_attribute.html#aa45c83b4206160b8bcecc2ec74dc9220">moonray::shading::PrimitiveAttribute::size</a></div><div class="ttdeci">virtual size_t size() const noexcept override</div><div class="ttdoc">Return size.</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00276">PrimitiveAttribute.h:276</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ada00b9150e6a90e39b5578632c5258fb" name="ada00b9150e6a90e39b5578632c5258fb"></a>
@@ -1498,7 +1624,10 @@ template&lt;typename T &gt; </div>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_base.html#a46f8d78b46855883dc4f065e24f6f0e9">moonray::shading::PrimitiveAttributeBase</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00282">282</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  283</span>    {</div>
+<div class="line"><span class="lineno">  284</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.resize(n);</div>
+<div class="line"><span class="lineno">  285</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa45c83b4206160b8bcecc2ec74dc9220" name="aa45c83b4206160b8bcecc2ec74dc9220"></a>
@@ -1531,7 +1660,10 @@ template&lt;typename T &gt; </div>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute_base.html#ac2a7984ff0e3b8971a649469943d58d9">moonray::shading::PrimitiveAttributeBase</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00276">276</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  277</span>    {</div>
+<div class="line"><span class="lineno">  278</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.size();</div>
+<div class="line"><span class="lineno">  279</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad65fe5060c0f20f7f15bda25f101b5bd" name="ad65fe5060c0f20f7f15bda25f101b5bd"></a>
@@ -1563,6 +1695,90 @@ template&lt;typename T &gt; </div>
 <p>Swap content. </p>
 
 <p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00124">124</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  125</span>    {</div>
+<div class="line"><span class="lineno">  126</span>        <span class="keyword">using </span><a class="code hl_function" href="namespacestd.html#a7ffc9a83d505624d453906655627414d">std::swap</a>; <span class="comment">// Allow ADL</span></div>
+<div class="line"><span class="lineno">  127</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad65fe5060c0f20f7f15bda25f101b5bd">swap</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute_base.html#af99c48bd74c9cebaeda3ec7ff8c6f254">mRate</a>, other.mRate);</div>
+<div class="line"><span class="lineno">  128</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd">mList</a>.swap(other.mList);</div>
+<div class="line"><span class="lineno">  129</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_primitive_attribute_base_html_af99c48bd74c9cebaeda3ec7ff8c6f254"><div class="ttname"><a href="classmoonray_1_1shading_1_1_primitive_attribute_base.html#af99c48bd74c9cebaeda3ec7ff8c6f254">moonray::shading::PrimitiveAttributeBase::mRate</a></div><div class="ttdeci">AttributeRate mRate</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00085">PrimitiveAttribute.h:85</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_primitive_attribute_html_ad65fe5060c0f20f7f15bda25f101b5bd"><div class="ttname"><a href="classmoonray_1_1shading_1_1_primitive_attribute.html#ad65fe5060c0f20f7f15bda25f101b5bd">moonray::shading::PrimitiveAttribute::swap</a></div><div class="ttdeci">void swap(PrimitiveAttribute &amp;other) noexcept(noexceptMemberSwap&lt; list_type &gt;())</div><div class="ttdoc">Swap content.</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00124">PrimitiveAttribute.h:124</a></div></div>
+<div class="ttc" id="anamespacestd_html_a7ffc9a83d505624d453906655627414d"><div class="ttname"><a href="namespacestd.html#a7ffc9a83d505624d453906655627414d">std::swap</a></div><div class="ttdeci">void swap(StaticVector&lt; T, N &gt; &amp;a, StaticVector&lt; T, N &gt; &amp;b) noexcept(noexcept(a.swap(b)))</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2point__generation__cmd_2_static_vector_8h_source.html#l00552">StaticVector.h:552</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a63685fdbcbb9a117c7ea1907e239e268" name="a63685fdbcbb9a117c7ea1907e239e268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63685fdbcbb9a117c7ea1907e239e268">&#9670;&#160;</a></span>toNonConst()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a8859a4339456aab86be4cc94fb2dd582">iterator</a> <a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute.html">moonray::shading::PrimitiveAttribute</a>&lt; T &gt;::toNonConst </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a30f4b6b8ee1826b6ebf52a711f7fd34b">list_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a18a4e4cb8750582b0fbf826c55ebc72b">const_iterator</a>&#160;</td>
+          <td class="paramname"><em>citer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00309">309</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  310</span>    {</div>
+<div class="line"><span class="lineno">  311</span>        <span class="comment">// We have to jump through hoops because C++11 allows its operations to</span></div>
+<div class="line"><span class="lineno">  312</span>        <span class="comment">// work on const_iterators, but our standard library doesn&#39;t support</span></div>
+<div class="line"><span class="lineno">  313</span>        <span class="comment">// the interface yet.</span></div>
+<div class="line"><span class="lineno">  314</span>        <span class="keyword">const</span> <span class="keyword">auto</span> diff = citer - list.cbegin();</div>
+<div class="line"><span class="lineno">  315</span>        <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span><a class="code hl_typedef" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a30f4b6b8ee1826b6ebf52a711f7fd34b">list_type</a>&amp;<span class="keyword">&gt;</span>(list).<a class="code hl_function" href="classmoonray_1_1shading_1_1_primitive_attribute.html#aacbe5c8d12335b2ff993a7823810f14f">begin</a>() + diff;</div>
+<div class="line"><span class="lineno">  316</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_primitive_attribute_html_a30f4b6b8ee1826b6ebf52a711f7fd34b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_primitive_attribute.html#a30f4b6b8ee1826b6ebf52a711f7fd34b">moonray::shading::PrimitiveAttribute::list_type</a></div><div class="ttdeci">std::vector&lt; T &gt; list_type</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00106">PrimitiveAttribute.h:106</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_primitive_attribute_html_aacbe5c8d12335b2ff993a7823810f14f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_primitive_attribute.html#aacbe5c8d12335b2ff993a7823810f14f">moonray::shading::PrimitiveAttribute::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdoc">Return iterator to beginning.</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00204">PrimitiveAttribute.h:204</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad685e50c44f986c2f79ee6372bae0fdd" name="ad685e50c44f986c2f79ee6372bae0fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad685e50c44f986c2f79ee6372bae0fdd">&#9670;&#160;</a></span>mList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute.html#a30f4b6b8ee1826b6ebf52a711f7fd34b">list_type</a> <a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute.html">moonray::shading::PrimitiveAttribute</a>&lt; T &gt;::mList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_primitive_attribute_8h_source.html#l00318">318</a> of file <a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a>.</p>
 
 </div>
 </div>
@@ -1570,9 +1786,13 @@ template&lt;typename T &gt; </div>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/bvh/shading/<a class="el" href="_primitive_attribute_8h_source.html">PrimitiveAttribute.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_primitive_attribute.html">PrimitiveAttribute</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

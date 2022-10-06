@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_55b3e8b76a6a129d85f7ec9f20e593af.html">cmd</a></li><li class="navelem"><a class="el" href="dir_7c57a4c63cdddfca27542ceb71d34fef.html">brdf_cmd</a></li><li class="navelem"><a class="el" href="dir_510d296b4b16e8e1888376c681929a5c.html">brdf_cylinder_extract</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_edge_detect_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
@@ -55,6 +71,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a5aebac607939b8de3bb90bacd39b2600"><td class="memItemLeft" align="right" valign="top">static Vec2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_edge_detect_8cc.html#a5aebac607939b8de3bb90bacd39b2600">computeEdgeSample</a> (const <a class="el" href="class_image.html">Image</a> &amp;image, int yEdge, int x, float threshold)</td></tr>
+<tr class="separator:a5aebac607939b8de3bb90bacd39b2600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83208d2be25643be14a1c7ebcb596d8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_edge_detect_8cc.html#a83208d2be25643be14a1c7ebcb596d8d">detectEdgeSamples</a> (const <a class="el" href="class_image.html">Image</a> &amp;image, int xMin, int xMax, float threshold, std::vector&lt; Vec2f &gt; &amp;topEdgeSamples, std::vector&lt; Vec2f &gt; &amp;bottomEdgeSamples)</td></tr>
 <tr class="separator:a83208d2be25643be14a1c7ebcb596d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c3a07a7aeddf80f1a111ddd8afbd472"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_edge_detect_8cc.html#a3c3a07a7aeddf80f1a111ddd8afbd472">drawEdgeSamples</a> (const std::vector&lt; Vec2f &gt; &amp;edgeSamples, <a class="el" href="class_image.html">Image</a> &amp;image)</td></tr>
@@ -65,6 +83,81 @@ Functions</h2></td></tr>
 <tr class="separator:ab019076922c77920ab73f223884406a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a5aebac607939b8de3bb90bacd39b2600" name="a5aebac607939b8de3bb90bacd39b2600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aebac607939b8de3bb90bacd39b2600">&#9670;&#160;</a></span>computeEdgeSample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Vec2f computeEdgeSample </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>yEdge</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>threshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_edge_detect_8cc_source.html#l00017">17</a> of file <a class="el" href="_edge_detect_8cc_source.html">EdgeDetect.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   18</span>{</div>
+<div class="line"><span class="lineno">   19</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> yMin = max(yEdge - 2, 0);</div>
+<div class="line"><span class="lineno">   20</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> yMax = min(yEdge + 2, image.<a class="code hl_function" href="class_image.html#a1cd7587f88b6932b5269051d1ba08ff9">getHeight</a>() - 1);</div>
+<div class="line"><span class="lineno">   21</span> </div>
+<div class="line"><span class="lineno">   22</span>    <span class="comment">// Compute weighted average: y = sum(y_i * g_i) / sum(g_i) + 0.5</span></div>
+<div class="line"><span class="lineno">   23</span>    <span class="keywordtype">float</span> sumYG = 0.0f;</div>
+<div class="line"><span class="lineno">   24</span>    <span class="keywordtype">float</span> sumG = 0.0f;</div>
+<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = yMin; y &lt;= yMax; y++) {</div>
+<div class="line"><span class="lineno">   26</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> index = image.<a class="code hl_function" href="class_image.html#ac7546e8a4c28f61ddd6656220b6e65ab">getPixelIndex</a>(x, y);</div>
+<div class="line"><span class="lineno">   27</span>        <span class="keyword">const</span> Color c = image.<a class="code hl_function" href="class_image.html#ac394f41d4efa216a91d78e0d82c5c265">getPixel</a>(index);</div>
+<div class="line"><span class="lineno">   28</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> g = c.r - threshold;</div>
+<div class="line"><span class="lineno">   29</span>        <span class="keywordflow">if</span> (g &gt; 0.0f) {</div>
+<div class="line"><span class="lineno">   30</span>            sumYG += y * g;</div>
+<div class="line"><span class="lineno">   31</span>            sumG += g;</div>
+<div class="line"><span class="lineno">   32</span>        }</div>
+<div class="line"><span class="lineno">   33</span>    }</div>
+<div class="line"><span class="lineno">   34</span> </div>
+<div class="line"><span class="lineno">   35</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> <a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>(x + 0.5f, sumYG / sumG + 0.5f);</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>;</div>
+<div class="line"><span class="lineno">   37</span>}</div>
+<div class="ttc" id="a_attribute_map_8cc_html_ab527eec89029a7b166a67dd899129255"><div class="ttname"><a href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a></div><div class="ttdeci">static void sample(const scene_rdl2::rdl2::Map *self, moonray::shading::TLState *tls, const moonray::shading::State &amp;state, Color *sample)</div></div>
+<div class="ttc" id="aclass_image_html_a1cd7587f88b6932b5269051d1ba08ff9"><div class="ttname"><a href="class_image.html#a1cd7587f88b6932b5269051d1ba08ff9">Image::getHeight</a></div><div class="ttdeci">int getHeight() const</div><div class="ttdef"><b>Definition:</b> <a href="_image_8h_source.html#l00065">Image.h:65</a></div></div>
+<div class="ttc" id="aclass_image_html_ac394f41d4efa216a91d78e0d82c5c265"><div class="ttname"><a href="class_image.html#ac394f41d4efa216a91d78e0d82c5c265">Image::getPixel</a></div><div class="ttdeci">finline scene_rdl2::math::Color getPixel(int index) const</div><div class="ttdef"><b>Definition:</b> <a href="_image_8h_source.html#l00069">Image.h:69</a></div></div>
+<div class="ttc" id="aclass_image_html_ac7546e8a4c28f61ddd6656220b6e65ab"><div class="ttname"><a href="class_image.html#ac7546e8a4c28f61ddd6656220b6e65ab">Image::getPixelIndex</a></div><div class="ttdeci">finline int getPixelIndex(int x, int y) const</div><div class="ttdef"><b>Definition:</b> <a href="_image_8h_source.html#l00068">Image.h:68</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a8ff976ca38d834d434f1d00f2a03359b"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">moonray::geom::Vec2f</a></div><div class="ttdeci">scene_rdl2::math::Vec2f Vec2f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00038">Types.h:38</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a83208d2be25643be14a1c7ebcb596d8d" name="a83208d2be25643be14a1c7ebcb596d8d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a83208d2be25643be14a1c7ebcb596d8d">&#9670;&#160;</a></span>detectEdgeSamples()</h2>
 
@@ -116,7 +209,49 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_edge_detect_8cc_source.html#l00045">45</a> of file <a class="el" href="_edge_detect_8cc_source.html">EdgeDetect.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   47</span>{</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> yCenter = image.<a class="code hl_function" href="class_image.html#a1cd7587f88b6932b5269051d1ba08ff9">getHeight</a>() / 2;</div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>    <span class="comment">// Loop over pixel columns in the center portion</span></div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = xMin; x &lt; xMax; x++) {</div>
+<div class="line"><span class="lineno">   52</span>        Vec2i yEdge(-1, -1);</div>
+<div class="line"><span class="lineno">   53</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> gMax(0.0f, 0.0f);</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>        <span class="comment">// Detect approximate top-most edge</span></div>
+<div class="line"><span class="lineno">   56</span>         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = yCenter; y &lt; image.<a class="code hl_function" href="class_image.html#a1cd7587f88b6932b5269051d1ba08ff9">getHeight</a>(); y++) {</div>
+<div class="line"><span class="lineno">   57</span>            <span class="keywordtype">int</span> index = image.<a class="code hl_function" href="class_image.html#ac7546e8a4c28f61ddd6656220b6e65ab">getPixelIndex</a>(x, y);</div>
+<div class="line"><span class="lineno">   58</span>            <span class="keyword">const</span> Color c = image.<a class="code hl_function" href="class_image.html#ac394f41d4efa216a91d78e0d82c5c265">getPixel</a>(index);</div>
+<div class="line"><span class="lineno">   59</span>            <span class="keywordflow">if</span> (c.r &gt; threshold  &amp;&amp;  c.r &gt; gMax[0]) {</div>
+<div class="line"><span class="lineno">   60</span>                gMax[0] = c.r;</div>
+<div class="line"><span class="lineno">   61</span>                yEdge[0] = y;</div>
+<div class="line"><span class="lineno">   62</span>            }</div>
+<div class="line"><span class="lineno">   63</span>        }</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span>        <span class="comment">// Detect approximate bottom-most edge</span></div>
+<div class="line"><span class="lineno">   66</span>         <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = yCenter; y &gt;= 0; y--) {</div>
+<div class="line"><span class="lineno">   67</span>            <span class="keywordtype">int</span> index = image.<a class="code hl_function" href="class_image.html#ac7546e8a4c28f61ddd6656220b6e65ab">getPixelIndex</a>(x, y);</div>
+<div class="line"><span class="lineno">   68</span>            <span class="keyword">const</span> Color c = image.<a class="code hl_function" href="class_image.html#ac394f41d4efa216a91d78e0d82c5c265">getPixel</a>(index);</div>
+<div class="line"><span class="lineno">   69</span>            <span class="keywordflow">if</span> (c.r &gt; threshold  &amp;&amp;  c.r &gt; gMax[1]) {</div>
+<div class="line"><span class="lineno">   70</span>                gMax[1] = c.r;</div>
+<div class="line"><span class="lineno">   71</span>                yEdge[1] = y;</div>
+<div class="line"><span class="lineno">   72</span>            }</div>
+<div class="line"><span class="lineno">   73</span>        }</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>        <span class="comment">// Compute floating point (x,y) coordinates for each edge point sample</span></div>
+<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">if</span> (yEdge[0] &gt; 0) {</div>
+<div class="line"><span class="lineno">   77</span>            <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> edgeSample = <a class="code hl_function" href="_edge_detect_8cc.html#a5aebac607939b8de3bb90bacd39b2600">computeEdgeSample</a>(image, yEdge[0], x, threshold);</div>
+<div class="line"><span class="lineno">   78</span>            topEdgeSamples.push_back(edgeSample);</div>
+<div class="line"><span class="lineno">   79</span>            <span class="comment">//std::cout &lt;&lt; &quot;Top = (&quot; &lt;&lt; x &lt;&lt; &quot;, &quot; &lt;&lt; yEdge[0] &lt;&lt; &quot;) --&gt; &quot; &lt;&lt; edgeSample &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">   80</span>        }</div>
+<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">if</span> (yEdge[1] &gt; 0) {</div>
+<div class="line"><span class="lineno">   82</span>            <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> edgeSample = <a class="code hl_function" href="_edge_detect_8cc.html#a5aebac607939b8de3bb90bacd39b2600">computeEdgeSample</a>(image, yEdge[1], x, threshold);</div>
+<div class="line"><span class="lineno">   83</span>            bottomEdgeSamples.push_back(edgeSample);</div>
+<div class="line"><span class="lineno">   84</span>            <span class="comment">//std::cout &lt;&lt; &quot;Bottom = (&quot; &lt;&lt; x &lt;&lt; &quot;, &quot; &lt;&lt; yEdge[1] &lt;&lt; &quot;) --&gt; &quot; &lt;&lt; edgeSample &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">   85</span>        }</div>
+<div class="line"><span class="lineno">   86</span>    }</div>
+<div class="line"><span class="lineno">   87</span>}</div>
+<div class="ttc" id="a_edge_detect_8cc_html_a5aebac607939b8de3bb90bacd39b2600"><div class="ttname"><a href="_edge_detect_8cc.html#a5aebac607939b8de3bb90bacd39b2600">computeEdgeSample</a></div><div class="ttdeci">static Vec2f computeEdgeSample(const Image &amp;image, int yEdge, int x, float threshold)</div><div class="ttdef"><b>Definition:</b> <a href="_edge_detect_8cc_source.html#l00017">EdgeDetect.cc:17</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab019076922c77920ab73f223884406a6" name="ab019076922c77920ab73f223884406a6"></a>
@@ -152,7 +287,17 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_edge_detect_8cc_source.html#l00127">127</a> of file <a class="el" href="_edge_detect_8cc_source.html">EdgeDetect.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  128</span>{</div>
+<div class="line"><span class="lineno">  129</span>    <span class="keywordtype">int</span> width = image.<a class="code hl_function" href="class_image.html#a36bcae4838228d574738249a87dc4464">getWidth</a>();</div>
+<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x=0; x &lt; width; x++) {</div>
+<div class="line"><span class="lineno">  131</span>        <span class="keywordtype">float</span> y = <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> * (x + 0.5f) + b;</div>
+<div class="line"><span class="lineno">  132</span>        image.<a class="code hl_function" href="class_image.html#a07f12ff0997827ef9846878eaf59a2cf">drawPixel</a>(x, y, Color(0.0f, 1.0f, 0.0f));</div>
+<div class="line"><span class="lineno">  133</span>    }</div>
+<div class="line"><span class="lineno">  134</span>}</div>
+<div class="ttc" id="aclass_image_html_a07f12ff0997827ef9846878eaf59a2cf"><div class="ttname"><a href="class_image.html#a07f12ff0997827ef9846878eaf59a2cf">Image::drawPixel</a></div><div class="ttdeci">void drawPixel(int xi, float y, const scene_rdl2::math::Color &amp;color)</div><div class="ttdef"><b>Definition:</b> <a href="_image_8cc_source.html#l00124">Image.cc:124</a></div></div>
+<div class="ttc" id="aclass_image_html_a36bcae4838228d574738249a87dc4464"><div class="ttname"><a href="class_image.html#a36bcae4838228d574738249a87dc4464">Image::getWidth</a></div><div class="ttdeci">int getWidth() const</div><div class="ttdef"><b>Definition:</b> <a href="_image_8h_source.html#l00064">Image.h:64</a></div></div>
+<div class="ttc" id="anamespacesequence__discrepancy_html_a06f968c2f5ed1f9d42f00351b2b1efb2"><div class="ttname"><a href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">sequence_discrepancy.a</a></div><div class="ttdeci">def a</div><div class="ttdef"><b>Definition:</b> <a href="sequence__discrepancy_8py_source.html#l00038">sequence_discrepancy.py:38</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3c3a07a7aeddf80f1a111ddd8afbd472" name="a3c3a07a7aeddf80f1a111ddd8afbd472"></a>
@@ -182,7 +327,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_edge_detect_8cc_source.html#l00091">91</a> of file <a class="el" href="_edge_detect_8cc_source.html">EdgeDetect.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   92</span>{</div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;iter : edgeSamples) {</div>
+<div class="line"><span class="lineno">   94</span>        <span class="keywordtype">int</span> x = int(floor(iter.x));</div>
+<div class="line"><span class="lineno">   95</span>        image.<a class="code hl_function" href="class_image.html#a07f12ff0997827ef9846878eaf59a2cf">drawPixel</a>(x, iter.y, Color(1.0f));</div>
+<div class="line"><span class="lineno">   96</span>    }</div>
+<div class="line"><span class="lineno">   97</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afd10358c806c558bb343387e2a8a47db" name="afd10358c806c558bb343387e2a8a47db"></a>
@@ -218,13 +369,38 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_edge_detect_8cc_source.html#l00103">103</a> of file <a class="el" href="_edge_detect_8cc_source.html">EdgeDetect.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  104</span>{</div>
+<div class="line"><span class="lineno">  105</span>    resultA = resultB = 0.0f;</div>
+<div class="line"><span class="lineno">  106</span> </div>
+<div class="line"><span class="lineno">  107</span>    <span class="comment">// Average various line samples</span></div>
+<div class="line"><span class="lineno">  108</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> = edgeSamples.size() / 4;</div>
+<div class="line"><span class="lineno">  109</span>    MNRY_ASSERT(count &gt; 0);</div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>; i++) {</div>
+<div class="line"><span class="lineno">  112</span>        <span class="keywordtype">int</span> j = edgeSamples.size() - <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> + i;</div>
+<div class="line"><span class="lineno">  113</span> </div>
+<div class="line"><span class="lineno">  114</span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> = (edgeSamples[j].y - edgeSamples[i].y) /</div>
+<div class="line"><span class="lineno">  115</span>                  (edgeSamples[j].x - edgeSamples[i].x);</div>
+<div class="line"><span class="lineno">  116</span>        <span class="keywordtype">float</span> b = edgeSamples[i].y - <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> * edgeSamples[i].x;</div>
+<div class="line"><span class="lineno">  117</span> </div>
+<div class="line"><span class="lineno">  118</span>        resultA += <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a>;</div>
+<div class="line"><span class="lineno">  119</span>        resultB += b;</div>
+<div class="line"><span class="lineno">  120</span>    }</div>
+<div class="line"><span class="lineno">  121</span>    resultA /= <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>;</div>
+<div class="line"><span class="lineno">  122</span>    resultB /= <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>;</div>
+<div class="line"><span class="lineno">  123</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03_html_ac002aa9e7f277e6c84e4fe1aeb5bb8cb"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">moonray::rndr::unittest::anonymous_namespace{TestOverlappingRegions.cc}::count</a></div><div class="ttdeci">void count(const OverlappingRegions&lt; sRegionOverlap, sTileWidth, sTileHeight, sDesiredRegionsPerDimension &gt; &amp;regions, int line)</div><div class="ttdef"><b>Definition:</b> <a href="_test_overlapping_regions_8cc_source.html#l00024">TestOverlappingRegions.cc:24</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_1d5181f7ddc67e55cdef6ebe6c9b692d.html">cmd</a></li><li class="navelem"><a class="el" href="dir_88fae694fb28bac3e87c23435ccffe6f.html">brdf_cmd</a></li><li class="navelem"><a class="el" href="dir_f76d8679dd0049e3d8a2e8f0554f2198.html">brdf_cylinder_extract</a></li><li class="navelem"><a class="el" href="_edge_detect_8cc.html">EdgeDetect.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

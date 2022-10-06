@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_3ffafe8d4194a26e471fc283bfe39627.html">shading</a></li><li class="navelem"><a class="el" href="dir_dc7d4ea0feddfdece5425e1d6c4bcd38.html">bsdf</a></li><li class="navelem"><a class="el" href="dir_e5cbe7d1b5cdbd18dc2f0996dbbdcdc4.html">fabric</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_bsdf_dwa_fabric_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">BsdfDwaFabric.cc</div></div>
 </div><!--header-->
@@ -50,7 +66,12 @@ $(function() {
 <a href="_bsdf_dwa_fabric_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2002-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file FabricBsdfLobe.cc</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Priyamvad Deshmukh</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// $Id$</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">///</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_bsdf_fabric_8h.html">BsdfFabric.h</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
@@ -58,13 +79,18 @@ $(function() {
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span>shading {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacescene__rdl2_1_1math.html">scene_rdl2::math</a>;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"></span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">///</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/// @class DwaFabricBsdfLobe BsdfFabric.h &lt;pbr/fabric/BsdfFabric.h&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/// @brief DreamWorks specific fabric specular - (1 - |sin(thetaH)|)^N</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/// thetaH = 0.5*(thetaO+thetaI), theta wrt normal plane to hair tangent</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/// Results in really sharp specular peaks with a long tail, preferable for fabrics.</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"></span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Precomputed Normalization Integrals for This Model</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// Precomputed List of 1 / (4*pi*integral (1-sin(x))^N*(1-2*sin^2(x))), x from 0 to pi/4</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// N from 0 to 30</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">static</span> <span class="keyword">const</span> std::vector&lt;float&gt;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>precomputedDwaFabricNormalizationFactor = {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1shading.html#a3cd8adcd6f4623860ae76897de17e5b4">   28</a></span><a class="code hl_variable" href="namespacemoonray_1_1shading.html#a3cd8adcd6f4623860ae76897de17e5b4">precomputedDwaFabricNormalizationFactor</a> = {</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                                           0.41788f, 0.52691f, 0.64072f, 0.76163f, 0.88620f,</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                                           1.00729f, 1.13352f, 1.26158f, 1.39352f, 1.52527f,</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                                           1.64034f, 1.78520f, 1.91616f, 2.01158f, 2.18194f,</div>
@@ -86,12 +112,12 @@ $(function() {
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                                                              roughness,</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                                                              color)</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    calculateNormalizationFactor();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_function" href="classmoonray_1_1shading_1_1_dwa_fabric_bsdf_lobe.html#a77915c29a4c2c97cf1fc5d8d2d5ffbec">calculateNormalizationFactor</a>();</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">// Initialize Specular Exponent and NormalizationFactor</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>DwaFabricBsdfLobe::calculateNormalizationFactor()</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_dwa_fabric_bsdf_lobe.html#a77915c29a4c2c97cf1fc5d8d2d5ffbec">   55</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1_dwa_fabric_bsdf_lobe.html#a77915c29a4c2c97cf1fc5d8d2d5ffbec">DwaFabricBsdfLobe::calculateNormalizationFactor</a>()</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// Roughness remapping, [0,1] -&gt; [1,30]</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// Square the roughness for a visually linear effect</span></div>
@@ -99,7 +125,7 @@ $(function() {
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a744f4483aa82d7d75ce03ac40e7073e0">mSpecularExponent</a> = scene_rdl2::math::ceil(1.0f + 29.0f * rgh*rgh);</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a607a07dac61735b9e4bc9ea41b490e8a">mNormalizationFactor</a> =</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            precomputedDwaFabricNormalizationFactor[<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(clamp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a744f4483aa82d7d75ce03ac40e7073e0">mSpecularExponent</a>-1, 0.0f, 30.0f))];</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <a class="code hl_variable" href="namespacemoonray_1_1shading.html#a3cd8adcd6f4623860ae76897de17e5b4">precomputedDwaFabricNormalizationFactor</a>[<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(clamp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a744f4483aa82d7d75ce03ac40e7073e0">mSpecularExponent</a>-1, 0.0f, 30.0f))];</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">// (1-|sin(thetaH)|)^N lobe</span></div>
@@ -164,7 +190,7 @@ $(function() {
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    Vec3f omegaI;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    sampleVector(slice.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a18a6705047093d3570417b3d7a044712">getWo</a>(), r1, r2, omegaI);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <a class="code hl_function" href="classmoonray_1_1shading_1_1_dwa_fabric_bsdf_lobe.html#ad5cfa73230a49b3a4b6d0faf434d40f7">sampleVector</a>(slice.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a18a6705047093d3570417b3d7a044712">getWo</a>(), r1, r2, omegaI);</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="comment">// Convert back in Global Space</span></div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    wi = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a780200f38275fce38c8722f60bb6871a">mFrame</a>.localToGlobal(omegaI));</div>
@@ -174,7 +200,7 @@ $(function() {
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>DwaFabricBsdfLobe::sampleVector(<span class="keyword">const</span> Vec3f&amp; wo,</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_dwa_fabric_bsdf_lobe.html#ad5cfa73230a49b3a4b6d0faf434d40f7">  138</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1_dwa_fabric_bsdf_lobe.html#ad5cfa73230a49b3a4b6d0faf434d40f7">DwaFabricBsdfLobe::sampleVector</a>(<span class="keyword">const</span> Vec3f&amp; wo,</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                                <span class="keywordtype">float</span> r1, <span class="keywordtype">float</span> r2,</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                                Vec3f&amp; wi)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="keyword"></span>{</div>
@@ -216,6 +242,8 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_slice_html_a22c2f88d06df65d435a95b8ab59946be"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_slice.html#a22c2f88d06df65d435a95b8ab59946be">moonray::shading::BsdfSlice::computeShadowTerminatorFix</a></div><div class="ttdeci">float computeShadowTerminatorFix(const scene_rdl2::math::Vec3f &amp;N, const scene_rdl2::math::Vec3f &amp;wi) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_slice_8cc_source.html#l00033">BsdfSlice.cc:33</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_dwa_fabric_bsdf_lobe_html_a002757795cd44da8f4b7d115ba71e727"><div class="ttname"><a href="classmoonray_1_1shading_1_1_dwa_fabric_bsdf_lobe.html#a002757795cd44da8f4b7d115ba71e727">moonray::shading::DwaFabricBsdfLobe::eval</a></div><div class="ttdeci">scene_rdl2::math::Color eval(const BsdfSlice &amp;slice, const scene_rdl2::math::Vec3f &amp;wi, float *pdf=NULL) const override</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_dwa_fabric_8cc_source.html#l00068">BsdfDwaFabric.cc:68</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_dwa_fabric_bsdf_lobe_html_a0cbc245d281082d7ebc281e6a627272f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_dwa_fabric_bsdf_lobe.html#a0cbc245d281082d7ebc281e6a627272f">moonray::shading::DwaFabricBsdfLobe::DwaFabricBsdfLobe</a></div><div class="ttdeci">DwaFabricBsdfLobe(const scene_rdl2::math::Vec3f &amp;N, const scene_rdl2::math::Vec3f &amp;T, const scene_rdl2::math::Vec3f &amp;threadDirection, const float threadElevation, const float roughness, const scene_rdl2::math::Color &amp;color=scene_rdl2::math::sWhite)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_dwa_fabric_8cc_source.html#l00039">BsdfDwaFabric.cc:39</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_dwa_fabric_bsdf_lobe_html_a77915c29a4c2c97cf1fc5d8d2d5ffbec"><div class="ttname"><a href="classmoonray_1_1shading_1_1_dwa_fabric_bsdf_lobe.html#a77915c29a4c2c97cf1fc5d8d2d5ffbec">moonray::shading::DwaFabricBsdfLobe::calculateNormalizationFactor</a></div><div class="ttdeci">void calculateNormalizationFactor()</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_dwa_fabric_8cc_source.html#l00055">BsdfDwaFabric.cc:55</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_dwa_fabric_bsdf_lobe_html_ad5cfa73230a49b3a4b6d0faf434d40f7"><div class="ttname"><a href="classmoonray_1_1shading_1_1_dwa_fabric_bsdf_lobe.html#ad5cfa73230a49b3a4b6d0faf434d40f7">moonray::shading::DwaFabricBsdfLobe::sampleVector</a></div><div class="ttdeci">void sampleVector(const scene_rdl2::math::Vec3f &amp;wo, float r1, float r2, scene_rdl2::math::Vec3f &amp;wi) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_dwa_fabric_8cc_source.html#l00138">BsdfDwaFabric.cc:138</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_dwa_fabric_bsdf_lobe_html_afd7875b0247a635ab8e1680a23647c06"><div class="ttname"><a href="classmoonray_1_1shading_1_1_dwa_fabric_bsdf_lobe.html#afd7875b0247a635ab8e1680a23647c06">moonray::shading::DwaFabricBsdfLobe::sample</a></div><div class="ttdeci">scene_rdl2::math::Color sample(const BsdfSlice &amp;slice, float r1, float r2, scene_rdl2::math::Vec3f &amp;wi, float &amp;pdf) const override</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_dwa_fabric_8cc_source.html#l00116">BsdfDwaFabric.cc:116</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_fabric_bsdf_lobe_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html">moonray::shading::FabricBsdfLobe</a></div><div class="ttdoc">The fabric BSDF Interface common functions, inherit from this.</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_fabric_8h_source.html#l00034">BsdfFabric.h:35</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_fabric_bsdf_lobe_html_a2067839a82e0c3ef5a0e92fbef85985a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a2067839a82e0c3ef5a0e92fbef85985a">moonray::shading::FabricBsdfLobe::mThreadDirection</a></div><div class="ttdeci">scene_rdl2::math::Vec3f mThreadDirection</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_fabric_8h_source.html#l00102">BsdfFabric.h:102</a></div></div>
@@ -225,13 +253,18 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_fabric_bsdf_lobe_html_a744f4483aa82d7d75ce03ac40e7073e0"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a744f4483aa82d7d75ce03ac40e7073e0">moonray::shading::FabricBsdfLobe::mSpecularExponent</a></div><div class="ttdeci">float mSpecularExponent</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_fabric_8h_source.html#l00097">BsdfFabric.h:97</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_fabric_bsdf_lobe_html_a780200f38275fce38c8722f60bb6871a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a780200f38275fce38c8722f60bb6871a">moonray::shading::FabricBsdfLobe::mFrame</a></div><div class="ttdeci">scene_rdl2::math::ReferenceFrame mFrame</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_fabric_8h_source.html#l00095">BsdfFabric.h:95</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_fabric_bsdf_lobe_html_a7dc1df98d7a6f3de700d98d1ccbefdcc"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a7dc1df98d7a6f3de700d98d1ccbefdcc">moonray::shading::FabricBsdfLobe::mColor</a></div><div class="ttdeci">scene_rdl2::math::Color mColor</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_fabric_8h_source.html#l00104">BsdfFabric.h:104</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a3cd8adcd6f4623860ae76897de17e5b4"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a3cd8adcd6f4623860ae76897de17e5b4">moonray::shading::precomputedDwaFabricNormalizationFactor</a></div><div class="ttdeci">static const std::vector&lt; float &gt; precomputedDwaFabricNormalizationFactor</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_dwa_fabric_8cc_source.html#l00028">BsdfDwaFabric.cc:28</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1shading_html_ac1f48777ae4c4285108902cd6e16146b"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ac1f48777ae4c4285108902cd6e16146b">moonray::shading::computeNormalizedHalfVector</a></div><div class="ttdeci">finline bool computeNormalizedHalfVector(const scene_rdl2::math::Vec3f &amp;wo, const scene_rdl2::math::Vec3f &amp;wi, scene_rdl2::math::Vec3f &amp;H)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00418">Util.h:418</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1math_html"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html">scene_rdl2::math</a></div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8h_source.html#l00017">InputBuffer.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ffbcf3a8cac23adad179e74a09117904.html">shading</a></li><li class="navelem"><a class="el" href="dir_475738c250334a966655aa4f1c4fd0a3.html">bsdf</a></li><li class="navelem"><a class="el" href="dir_750c930319187b075df5c95ce71aa44c.html">fabric</a></li><li class="navelem"><a class="el" href="_bsdf_dwa_fabric_8cc.html">BsdfDwaFabric.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

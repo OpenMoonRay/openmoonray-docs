@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_970eb28d9e8309e3f9c24dd3deed196f.html">bvh</a></li><li class="navelem"><a class="el" href="dir_ad019efe26eb16360a7aab047243505d.html">shading</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_mip_selector_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">MipSelector.cc</div></div>
 </div><!--header-->
@@ -51,8 +67,10 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2016-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file MipSelector.h</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Mark Lee</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"></span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_mip_selector_8h.html">MipSelector.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_mip_selector_8hh.html">MipSelector.hh</a>&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -63,25 +81,25 @@ $(function() {
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacescene__rdl2_1_1math.html">scene_rdl2::math</a>;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html">   19</a></span><span class="keyword">namespace</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#pragma warning(disable:177)   </span><span class="comment">// #177: function was declared but never referenced</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">inline</span> <span class="keywordtype">float</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>computeAreaHeuristic(Vec2f dx, Vec2f dy)</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#a54d3010bfc87d0490347c99f95d8f773">   25</a></span><a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#a54d3010bfc87d0490347c99f95d8f773">computeAreaHeuristic</a>(Vec2f dx, Vec2f dy)</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="comment">// Treat dx and dy as edges of a parallelogram and compute the area.</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">float</span> len = max(<a class="code hl_function" href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a>(dx), 0.00000001f);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> normA = dx / len;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    Vec2f normA = dx / len;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> perp(-normA.y, normA.x);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    Vec2f perp(-normA.y, normA.x);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">float</span> height = fabsf(<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(perp, dy));</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">return</span> len * height;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">inline</span> <span class="keywordtype">float</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>computeMinHeuristic(Vec2f dx, Vec2f dy)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#a2c0de481828d79473e19154a2de39e36">   37</a></span><a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#a2c0de481828d79473e19154a2de39e36">computeMinHeuristic</a>(Vec2f dx, Vec2f dy)</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">float</span> dx2 = lengthSqr(dx);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">float</span> dy2 = lengthSqr(dy);</div>
@@ -89,7 +107,7 @@ $(function() {
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">inline</span> <span class="keywordtype">float</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>computeMaxHeuristic(Vec2f dx, Vec2f dy)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#a802a3c99d74460ac8aab9b1ce0bbcdb5">   45</a></span><a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#a802a3c99d74460ac8aab9b1ce0bbcdb5">computeMaxHeuristic</a>(Vec2f dx, Vec2f dy)</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">float</span> dx2 = lengthSqr(dx);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">float</span> dy2 = lengthSqr(dy);</div>
@@ -97,7 +115,7 @@ $(function() {
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">inline</span> <span class="keywordtype">float</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>computeAvgHeuristic(Vec2f dx, Vec2f dy)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#ad10f3ccbc48964d345dd49e38900d5cf">   53</a></span><a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#ad10f3ccbc48964d345dd49e38900d5cf">computeAvgHeuristic</a>(Vec2f dx, Vec2f dy)</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">float</span> dx2 = lengthSqr(dx);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">float</span> dy2 = lengthSqr(dy);</div>
@@ -105,23 +123,23 @@ $(function() {
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">inline</span> <span class="keywordtype">float</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>computeCustomMipSelector(<span class="keyword">const</span> Vec2f dx, <span class="keyword">const</span> Vec2f dy)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#ad25497e5133300a084cc8e66720ba955">   61</a></span><a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#ad25497e5133300a084cc8e66720ba955">computeCustomMipSelector</a>(<span class="keyword">const</span> Vec2f dx, <span class="keyword">const</span> Vec2f dy)</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>{</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#if DEFAULT_MIP_FILTER == MIP_FILTER_MIN</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">float</span> driver = computeMinHeuristic(dx, dy);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">float</span> driver = <a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#a2c0de481828d79473e19154a2de39e36">computeMinHeuristic</a>(dx, dy);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#elif DEFAULT_MIP_FILTER == MIP_FILTER_MAX</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">float</span> driver = computeMaxHeuristic(dx, dy);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">float</span> driver = <a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#a802a3c99d74460ac8aab9b1ce0bbcdb5">computeMaxHeuristic</a>(dx, dy);</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#elif DEFAULT_MIP_FILTER == MIP_FILTER_AVG</span></div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">float</span> driver = computeAvgHeuristic(dx, dy);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">float</span> driver = <a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#ad10f3ccbc48964d345dd49e38900d5cf">computeAvgHeuristic</a>(dx, dy);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#elif DEFAULT_MIP_FILTER == MIP_FILTER_AREA</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">float</span> driver = computeAreaHeuristic(dx, dy);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">float</span> driver = <a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#a54d3010bfc87d0490347c99f95d8f773">computeAreaHeuristic</a>(dx, dy);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    </div>
@@ -136,7 +154,7 @@ $(function() {
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">inline</span> <span class="keywordtype">float</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>computeOIIOMipSelector(Vec2f dx, Vec2f dy)</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#a7c0b8fc78a882c9cd5dcae9c734d9870">   92</a></span><a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#a7c0b8fc78a882c9cd5dcae9c734d9870">computeOIIOMipSelector</a>(Vec2f dx, Vec2f dy)</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>{</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">float</span> dsdx = dx.x;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordtype">float</span> dtdx = dx.y; </div>
@@ -238,14 +256,23 @@ $(function() {
 <div class="ttc" id="a_mip_selector_8h_html"><div class="ttname"><a href="_mip_selector_8h.html">MipSelector.h</a></div></div>
 <div class="ttc" id="a_mip_selector_8hh_html"><div class="ttname"><a href="_mip_selector_8hh.html">MipSelector.hh</a></div></div>
 <div class="ttc" id="a_n_point_8h_html_a16747d68c1e06270b0ed335d631b66f3"><div class="ttname"><a href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a></div><div class="ttdeci">float dot(const NPoint&lt; D &gt; &amp;a, const NPoint&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00271">NPoint.h:271</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1geom_html_a8ff976ca38d834d434f1d00f2a03359b"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">moonray::geom::Vec2f</a></div><div class="ttdeci">scene_rdl2::math::Vec2f Vec2f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00038">Types.h:38</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03_html_a2c0de481828d79473e19154a2de39e36"><div class="ttname"><a href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#a2c0de481828d79473e19154a2de39e36">moonray::shading::anonymous_namespace{MipSelector.cc}::computeMinHeuristic</a></div><div class="ttdeci">float computeMinHeuristic(Vec2f dx, Vec2f dy)</div><div class="ttdef"><b>Definition:</b> <a href="_mip_selector_8cc_source.html#l00037">MipSelector.cc:37</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03_html_a54d3010bfc87d0490347c99f95d8f773"><div class="ttname"><a href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#a54d3010bfc87d0490347c99f95d8f773">moonray::shading::anonymous_namespace{MipSelector.cc}::computeAreaHeuristic</a></div><div class="ttdeci">float computeAreaHeuristic(Vec2f dx, Vec2f dy)</div><div class="ttdef"><b>Definition:</b> <a href="_mip_selector_8cc_source.html#l00025">MipSelector.cc:25</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03_html_a7c0b8fc78a882c9cd5dcae9c734d9870"><div class="ttname"><a href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#a7c0b8fc78a882c9cd5dcae9c734d9870">moonray::shading::anonymous_namespace{MipSelector.cc}::computeOIIOMipSelector</a></div><div class="ttdeci">float computeOIIOMipSelector(Vec2f dx, Vec2f dy)</div><div class="ttdef"><b>Definition:</b> <a href="_mip_selector_8cc_source.html#l00092">MipSelector.cc:92</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03_html_a802a3c99d74460ac8aab9b1ce0bbcdb5"><div class="ttname"><a href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#a802a3c99d74460ac8aab9b1ce0bbcdb5">moonray::shading::anonymous_namespace{MipSelector.cc}::computeMaxHeuristic</a></div><div class="ttdeci">float computeMaxHeuristic(Vec2f dx, Vec2f dy)</div><div class="ttdef"><b>Definition:</b> <a href="_mip_selector_8cc_source.html#l00045">MipSelector.cc:45</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03_html_ad10f3ccbc48964d345dd49e38900d5cf"><div class="ttname"><a href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#ad10f3ccbc48964d345dd49e38900d5cf">moonray::shading::anonymous_namespace{MipSelector.cc}::computeAvgHeuristic</a></div><div class="ttdeci">float computeAvgHeuristic(Vec2f dx, Vec2f dy)</div><div class="ttdef"><b>Definition:</b> <a href="_mip_selector_8cc_source.html#l00053">MipSelector.cc:53</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03_html_ad25497e5133300a084cc8e66720ba955"><div class="ttname"><a href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_mip_selector_8cc_03.html#ad25497e5133300a084cc8e66720ba955">moonray::shading::anonymous_namespace{MipSelector.cc}::computeCustomMipSelector</a></div><div class="ttdeci">float computeCustomMipSelector(const Vec2f dx, const Vec2f dy)</div><div class="ttdef"><b>Definition:</b> <a href="_mip_selector_8cc_source.html#l00061">MipSelector.cc:61</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1shading_html_a0f10d292b6e8ea9c918a9933a20bc29e"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a0f10d292b6e8ea9c918a9933a20bc29e">moonray::shading::computeMipSelector</a></div><div class="ttdeci">float computeMipSelector(float dsdx, float dtdx, float dsdy, float dtdy)</div><div class="ttdef"><b>Definition:</b> <a href="_mip_selector_8cc_source.html#l00170">MipSelector.cc:170</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1math_html"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html">scene_rdl2::math</a></div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8h_source.html#l00017">InputBuffer.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_b14206e23fbe78be729adaae3c0369fc.html">bvh</a></li><li class="navelem"><a class="el" href="dir_499edcba0d3485301ece78066854f3d4.html">shading</a></li><li class="navelem"><a class="el" href="_mip_selector_8cc.html">MipSelector.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

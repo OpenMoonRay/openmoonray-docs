@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="class_ndf_automata.html">NdfAutomata</a></li><li class="navelem"><a class="el" href="class_ndf_automata_1_1_state.html">State</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_ndf_automata_1_1_state.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -127,7 +143,17 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="automata_8h_source.html#l00105">105</a> of file <a class="el" href="automata_8h_source.html">automata.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  106</span>                {</div>
+<div class="line"><span class="lineno">  107</span>                    <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#adbd411c6d95df147721b97c3390b3d20">m_id</a> = id;</div>
+<div class="line"><span class="lineno">  108</span>                    <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#ac078cc102fdd24622d588fef80f9ba3b">m_wildcard_trans</a> = -1;</div>
+<div class="line"><span class="lineno">  109</span>                    <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#abdb30aa1b82caa282ac0e8f89b721b8c">m_wildcard</a> = NULL;</div>
+<div class="line"><span class="lineno">  110</span>                    <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#af86141b013f1bd67392dd2b27bf72fd9">m_rule</a> = NULL;</div>
+<div class="line"><span class="lineno">  111</span>                };</div>
+<div class="ttc" id="aclass_ndf_automata_1_1_state_html_abdb30aa1b82caa282ac0e8f89b721b8c"><div class="ttname"><a href="class_ndf_automata_1_1_state.html#abdb30aa1b82caa282ac0e8f89b721b8c">NdfAutomata::State::m_wildcard</a></div><div class="ttdeci">Wildcard * m_wildcard</div><div class="ttdef"><b>Definition:</b> <a href="automata_8h_source.html#l00155">automata.h:155</a></div></div>
+<div class="ttc" id="aclass_ndf_automata_1_1_state_html_ac078cc102fdd24622d588fef80f9ba3b"><div class="ttname"><a href="class_ndf_automata_1_1_state.html#ac078cc102fdd24622d588fef80f9ba3b">NdfAutomata::State::m_wildcard_trans</a></div><div class="ttdeci">int m_wildcard_trans</div><div class="ttdef"><b>Definition:</b> <a href="automata_8h_source.html#l00153">automata.h:153</a></div></div>
+<div class="ttc" id="aclass_ndf_automata_1_1_state_html_adbd411c6d95df147721b97c3390b3d20"><div class="ttname"><a href="class_ndf_automata_1_1_state.html#adbd411c6d95df147721b97c3390b3d20">NdfAutomata::State::m_id</a></div><div class="ttdeci">int m_id</div><div class="ttdef"><b>Definition:</b> <a href="automata_8h_source.html#l00148">automata.h:148</a></div></div>
+<div class="ttc" id="aclass_ndf_automata_1_1_state_html_af86141b013f1bd67392dd2b27bf72fd9"><div class="ttname"><a href="class_ndf_automata_1_1_state.html#af86141b013f1bd67392dd2b27bf72fd9">NdfAutomata::State::m_rule</a></div><div class="ttdeci">void * m_rule</div><div class="ttdef"><b>Definition:</b> <a href="automata_8h_source.html#l00157">automata.h:157</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a457a84bbd6776342118b38f9aa2f6438" name="a457a84bbd6776342118b38f9aa2f6438"></a>
@@ -154,7 +180,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="automata_8h_source.html#l00112">112</a> of file <a class="el" href="automata_8h_source.html">automata.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  112</span>{ <span class="keyword">delete</span> <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#abdb30aa1b82caa282ac0e8f89b721b8c">m_wildcard</a>; };</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -187,7 +214,11 @@ Friends</h2></td></tr>
 <p>Add a standar transition (also valid for lambda) </p>
 
 <p class="definition">Definition at line <a class="el" href="automata_8cc_source.html#l00085">85</a> of file <a class="el" href="automata_8cc_source.html">automata.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   86</span>{</div>
+<div class="line"><span class="lineno">   87</span>    <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#a751c488a67a49db2c41095f016e54b16">m_symbol_trans</a>[symbol].insert(state-&gt;<a class="code hl_variable" href="class_ndf_automata_1_1_state.html#adbd411c6d95df147721b97c3390b3d20">m_id</a>);</div>
+<div class="line"><span class="lineno">   88</span>}</div>
+<div class="ttc" id="aclass_ndf_automata_1_1_state_html_a751c488a67a49db2c41095f016e54b16"><div class="ttname"><a href="class_ndf_automata_1_1_state.html#a751c488a67a49db2c41095f016e54b16">NdfAutomata::State::m_symbol_trans</a></div><div class="ttdeci">SymbolToIntList m_symbol_trans</div><div class="ttdef"><b>Definition:</b> <a href="automata_8h_source.html#l00150">automata.h:150</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad9b0f83239bc41fdf237a235f627e833" name="ad9b0f83239bc41fdf237a235f627e833"></a>
@@ -219,7 +250,13 @@ Friends</h2></td></tr>
 <p >Note that the state is going to take ownership of the wildcard pointer. So it should be newly allocated on heap and you don't have to delete ir </p>
 
 <p class="definition">Definition at line <a class="el" href="automata_8cc_source.html#l00093">93</a> of file <a class="el" href="automata_8cc_source.html">automata.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   94</span>{</div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_ndf_automata_1_1_state.html#abdb30aa1b82caa282ac0e8f89b721b8c">m_wildcard</a>)</div>
+<div class="line"><span class="lineno">   96</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;[pathexp] redefining wildcard transition&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   97</span>    <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#abdb30aa1b82caa282ac0e8f89b721b8c">m_wildcard</a> = wildcard;</div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#ac078cc102fdd24622d588fef80f9ba3b">m_wildcard_trans</a> = state-&gt;<a class="code hl_variable" href="class_ndf_automata_1_1_state.html#adbd411c6d95df147721b97c3390b3d20">m_id</a>;</div>
+<div class="line"><span class="lineno">   99</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9f00c34fd3688a38ea9cb76ea6f67f74" name="a9f00c34fd3688a38ea9cb76ea6f67f74"></a>
@@ -246,7 +283,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="automata_8h_source.html#l00140">140</a> of file <a class="el" href="automata_8h_source.html">automata.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  140</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#adbd411c6d95df147721b97c3390b3d20">m_id</a>; };</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a11b307da8da901e05e84e260008cc57e" name="a11b307da8da901e05e84e260008cc57e"></a>
@@ -267,7 +305,21 @@ Friends</h2></td></tr>
 <p >Returns the state collection as a pair of iterators [begin, end) </p>
 
 <p class="definition">Definition at line <a class="el" href="automata_8cc_source.html#l00068">68</a> of file <a class="el" href="automata_8cc_source.html">automata.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   69</span>{</div>
+<div class="line"><span class="lineno">   70</span>    std::pair &lt;IntSet::const_iterator, IntSet::const_iterator&gt; res;</div>
+<div class="line"><span class="lineno">   71</span>    SymbolToIntList::const_iterator s = <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#a751c488a67a49db2c41095f016e54b16">m_symbol_trans</a>.find(<a class="code hl_variable" href="automata_8h.html#af1b71fb55148c46632418eaf2104250d">lambda</a>);</div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">if</span> (s != <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#a751c488a67a49db2c41095f016e54b16">m_symbol_trans</a>.end()) {</div>
+<div class="line"><span class="lineno">   73</span>        res.first = s-&gt;second.begin();</div>
+<div class="line"><span class="lineno">   74</span>        res.second = s-&gt;second.end();</div>
+<div class="line"><span class="lineno">   75</span>    }</div>
+<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   77</span>        <span class="comment">// We use a static empty list to return an empty range</span></div>
+<div class="line"><span class="lineno">   78</span>        res.first = res.second = <a class="code hl_variable" href="automata_8cc.html#a35419749b54ebd408d4fbfc7ac7abb0c">_emptyset</a>.end();</div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">return</span> res;</div>
+<div class="line"><span class="lineno">   80</span>}</div>
+<div class="ttc" id="aautomata_8cc_html_a35419749b54ebd408d4fbfc7ac7abb0c"><div class="ttname"><a href="automata_8cc.html#a35419749b54ebd408d4fbfc7ac7abb0c">_emptyset</a></div><div class="ttdeci">static IntSet _emptyset</div><div class="ttdef"><b>Definition:</b> <a href="automata_8cc_source.html#l00065">automata.cc:65</a></div></div>
+<div class="ttc" id="aautomata_8h_html_af1b71fb55148c46632418eaf2104250d"><div class="ttname"><a href="automata_8h.html#af1b71fb55148c46632418eaf2104250d">lambda</a></div><div class="ttdeci">ustring lambda</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a347b95507ee8e86a757a94482a97ff9f" name="a347b95507ee8e86a757a94482a97ff9f"></a>
@@ -294,7 +346,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="automata_8h_source.html#l00139">139</a> of file <a class="el" href="automata_8h_source.html">automata.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  139</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#af86141b013f1bd67392dd2b27bf72fd9">m_rule</a>; };</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a47521f73e174ddc0bf0aaa489683da79" name="a47521f73e174ddc0bf0aaa489683da79"></a>
@@ -326,7 +379,16 @@ Friends</h2></td></tr>
 <p >It doesn't clean the given result set, so you can use this function to accumulate states. </p>
 
 <p class="definition">Definition at line <a class="el" href="automata_8cc_source.html#l00054">54</a> of file <a class="el" href="automata_8cc_source.html">automata.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   55</span>{</div>
+<div class="line"><span class="lineno">   56</span>    SymbolToIntList::const_iterator s = <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#a751c488a67a49db2c41095f016e54b16">m_symbol_trans</a>.find(symbol);</div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">if</span> (s != <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#a751c488a67a49db2c41095f016e54b16">m_symbol_trans</a>.end())</div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">for</span> (IntSet::const_iterator i = s-&gt;second.begin(); i != s-&gt;second.end(); ++i)</div>
+<div class="line"><span class="lineno">   59</span>            out_states.insert(*i);</div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_ndf_automata_1_1_state.html#abdb30aa1b82caa282ac0e8f89b721b8c">m_wildcard</a> &amp;&amp; <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#abdb30aa1b82caa282ac0e8f89b721b8c">m_wildcard</a>-&gt;<a class="code hl_function" href="struct_wildcard.html#a7dbf9826689b0269b02528e8dbdabb5c">matches</a>(symbol))</div>
+<div class="line"><span class="lineno">   61</span>        out_states.insert(<a class="code hl_variable" href="class_ndf_automata_1_1_state.html#ac078cc102fdd24622d588fef80f9ba3b">m_wildcard_trans</a>);</div>
+<div class="line"><span class="lineno">   62</span>}</div>
+<div class="ttc" id="astruct_wildcard_html_a7dbf9826689b0269b02528e8dbdabb5c"><div class="ttname"><a href="struct_wildcard.html#a7dbf9826689b0269b02528e8dbdabb5c">Wildcard::matches</a></div><div class="ttdeci">bool matches(ustring symbol) const</div><div class="ttdef"><b>Definition:</b> <a href="automata_8h_source.html#l00082">automata.h:82</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1072ae32b59b7f6522a62b151618eb45" name="a1072ae32b59b7f6522a62b151618eb45"></a>
@@ -355,7 +417,8 @@ Friends</h2></td></tr>
 <p >For final states, this sets the associated rule. Which can be any kind of pointer </p>
 
 <p class="definition">Definition at line <a class="el" href="automata_8h_source.html#l00137">137</a> of file <a class="el" href="automata_8h_source.html">automata.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  137</span>{ <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#af86141b013f1bd67392dd2b27bf72fd9">m_rule</a> = rule; };</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a861319d020c00610e47bd97416b4b4d9" name="a861319d020c00610e47bd97416b4b4d9"></a>
@@ -376,7 +439,56 @@ Friends</h2></td></tr>
 <p>For debuging purposes. </p>
 
 <p class="definition">Definition at line <a class="el" href="automata_8cc_source.html#l00104">104</a> of file <a class="el" href="automata_8cc_source.html">automata.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  105</span>{</div>
+<div class="line"><span class="lineno">  106</span>    std::string s = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  107</span>    <span class="comment">// output the transitions</span></div>
+<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">for</span> (SymbolToIntList::const_iterator i = <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#a751c488a67a49db2c41095f016e54b16">m_symbol_trans</a>.begin(); i != <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#a751c488a67a49db2c41095f016e54b16">m_symbol_trans</a>.end(); ++i) {</div>
+<div class="line"><span class="lineno">  109</span>        ustring sym = i-&gt;first;</div>
+<div class="line"><span class="lineno">  110</span>        <span class="keyword">const</span> <a class="code hl_variable" href="automata_8h.html#ad0de3637cb166ba7aab42d3c100d5cad">IntSet</a> &amp;dest = i-&gt;second;</div>
+<div class="line"><span class="lineno">  111</span>        <span class="keywordflow">if</span> (s.size())</div>
+<div class="line"><span class="lineno">  112</span>            s += <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">if</span> (sym == <a class="code hl_variable" href="automata_8h.html#af1b71fb55148c46632418eaf2104250d">lambda</a>)</div>
+<div class="line"><span class="lineno">  114</span>            s += <span class="stringliteral">&quot;@&quot;</span>;</div>
+<div class="line"><span class="lineno">  115</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  116</span>            s += sym.c_str();</div>
+<div class="line"><span class="lineno">  117</span>        s += <span class="stringliteral">&quot;:{&quot;</span>;</div>
+<div class="line"><span class="lineno">  118</span>        <span class="keywordflow">for</span> (IntSet::const_iterator j = dest.begin(); j != dest.end(); ++j) {</div>
+<div class="line"><span class="lineno">  119</span>            <span class="keywordflow">if</span> (s[s.size()-1] != <span class="charliteral">&#39;{&#39;</span>)</div>
+<div class="line"><span class="lineno">  120</span>                s += <span class="stringliteral">&quot;, &quot;</span>;</div>
+<div class="line"><span class="lineno">  121</span>            s += Strutil::format(<span class="stringliteral">&quot;%d&quot;</span>, *j);</div>
+<div class="line"><span class="lineno">  122</span>        }</div>
+<div class="line"><span class="lineno">  123</span>        s += <span class="stringliteral">&quot;}&quot;</span>;</div>
+<div class="line"><span class="lineno">  124</span>    }</div>
+<div class="line"><span class="lineno">  125</span>    <span class="comment">// In case there is a wildcard transition ...</span></div>
+<div class="line"><span class="lineno">  126</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_ndf_automata_1_1_state.html#abdb30aa1b82caa282ac0e8f89b721b8c">m_wildcard</a>) {</div>
+<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">if</span> (s.size())</div>
+<div class="line"><span class="lineno">  128</span>            s += <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">  129</span>        <span class="comment">// No symbols in the black list, print just .</span></div>
+<div class="line"><span class="lineno">  130</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_ndf_automata_1_1_state.html#abdb30aa1b82caa282ac0e8f89b721b8c">m_wildcard</a>-&gt;<a class="code hl_variable" href="struct_wildcard.html#a6f1f607cc74f0244934456e256ffb62b">m_minus</a>.empty())</div>
+<div class="line"><span class="lineno">  131</span>            s += <span class="stringliteral">&quot;.:&quot;</span>;</div>
+<div class="line"><span class="lineno">  132</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  133</span>            <span class="comment">// Standard regexp notation [^abcd]</span></div>
+<div class="line"><span class="lineno">  134</span>            s += <span class="stringliteral">&quot;[^&quot;</span>;</div>
+<div class="line"><span class="lineno">  135</span>            <span class="keywordflow">for</span> (SymbolSet::const_iterator i = <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#abdb30aa1b82caa282ac0e8f89b721b8c">m_wildcard</a>-&gt;<a class="code hl_variable" href="struct_wildcard.html#a6f1f607cc74f0244934456e256ffb62b">m_minus</a>.begin(); i != <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#abdb30aa1b82caa282ac0e8f89b721b8c">m_wildcard</a>-&gt;<a class="code hl_variable" href="struct_wildcard.html#a6f1f607cc74f0244934456e256ffb62b">m_minus</a>.end(); ++i) {</div>
+<div class="line"><span class="lineno">  136</span>                <span class="keywordflow">if</span> (!i-&gt;c_str())</div>
+<div class="line"><span class="lineno">  137</span>                    s += <span class="stringliteral">&quot;_&quot;</span>;</div>
+<div class="line"><span class="lineno">  138</span>                <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  139</span>                    s += i-&gt;c_str();</div>
+<div class="line"><span class="lineno">  140</span>            }</div>
+<div class="line"><span class="lineno">  141</span>            s += <span class="stringliteral">&quot;]:&quot;</span>;</div>
+<div class="line"><span class="lineno">  142</span>        }</div>
+<div class="line"><span class="lineno">  143</span>        s += Strutil::format(<span class="stringliteral">&quot;%d&quot;</span>, <a class="code hl_variable" href="class_ndf_automata_1_1_state.html#ac078cc102fdd24622d588fef80f9ba3b">m_wildcard_trans</a>);</div>
+<div class="line"><span class="lineno">  144</span>    }</div>
+<div class="line"><span class="lineno">  145</span>    <span class="comment">// and finally the rule if we have it</span></div>
+<div class="line"><span class="lineno">  146</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_ndf_automata_1_1_state.html#af86141b013f1bd67392dd2b27bf72fd9">m_rule</a>) {</div>
+<div class="line"><span class="lineno">  147</span>        s += <span class="stringliteral">&quot; | &quot;</span>;</div>
+<div class="line"><span class="lineno">  148</span>        s += Strutil::format(<span class="stringliteral">&quot;%lx&quot;</span>, (<span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)<a class="code hl_variable" href="class_ndf_automata_1_1_state.html#af86141b013f1bd67392dd2b27bf72fd9">m_rule</a>);</div>
+<div class="line"><span class="lineno">  149</span>    }</div>
+<div class="line"><span class="lineno">  150</span>    <span class="keywordflow">return</span> s;</div>
+<div class="line"><span class="lineno">  151</span>}</div>
+<div class="ttc" id="aautomata_8h_html_ad0de3637cb166ba7aab42d3c100d5cad"><div class="ttname"><a href="automata_8h.html#ad0de3637cb166ba7aab42d3c100d5cad">IntSet</a></div><div class="ttdeci">OSL_NAMESPACE_ENTER typedef std::set&lt; int &gt; IntSet</div><div class="ttdef"><b>Definition:</b> <a href="automata_8h_source.html#l00055">automata.h:55</a></div></div>
+<div class="ttc" id="astruct_wildcard_html_a6f1f607cc74f0244934456e256ffb62b"><div class="ttname"><a href="struct_wildcard.html#a6f1f607cc74f0244934456e256ffb62b">Wildcard::m_minus</a></div><div class="ttdeci">SymbolSet m_minus</div><div class="ttdef"><b>Definition:</b> <a href="automata_8h_source.html#l00089">automata.h:89</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
@@ -530,9 +642,13 @@ Friends</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/lpe/osl/<a class="el" href="automata_8cc_source.html">automata.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_ndf_automata.html">NdfAutomata</a></li><li class="navelem"><a class="el" href="class_ndf_automata_1_1_state.html">State</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

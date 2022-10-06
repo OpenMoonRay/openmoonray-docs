@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_aov_schema.html">AovSchema</a></li><li class="navelem"><a class="el" href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html">EntryData</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -104,7 +120,26 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8h_source.html#l00200">200</a> of file <a class="el" href="_aov_8h_source.html">Aov.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  200</span>                             :</div>
+<div class="line"><span class="lineno">  201</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#ac28b49115d108ff6a634c9fb20a230e3">schemaID</a>(-1),</div>
+<div class="line"><span class="lineno">  202</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#adc38d224c1a328ed16304293e404468f">filter</a>(<a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a379c6c62453097cf1de461a2e56fd923a7f2b4e45f43441c80fbcf44ec534ea72">AovFilter::AOV_FILTER_AVG</a>),</div>
+<div class="line"><span class="lineno">  203</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#ab9ac6c0567b3b22538040932abab504a">varianceIndex</a>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_aov_schema.html#a0aba321905924196f782cdb194c20e44">sNoVarianceKey</a>),</div>
+<div class="line"><span class="lineno">  204</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#a95ac512ee4ff63fa457b6abd39576608">storageType</a>(<a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a52dc235764c11050cfe5152961e0e483a1c04cc3823d476c3017238679a0fdf52">AovStorageType::UNSPECIFIED</a>),</div>
+<div class="line"><span class="lineno">  205</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#a5bd7e79897ffae9b200ce3646c4e166f">cameraId</a>(0),</div>
+<div class="line"><span class="lineno">  206</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#a94841def4d756b6c3f23e69f0afa536f">lpePrefixFlags</a>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_aov_schema.html#a053ec152df927a30b0c45eb156642519">sLpePrefixNone</a>)</div>
+<div class="line"><span class="lineno">  207</span>        {</div>
+<div class="line"><span class="lineno">  208</span>        }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_aov_schema_html_a053ec152df927a30b0c45eb156642519"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_aov_schema.html#a053ec152df927a30b0c45eb156642519">moonray::pbr::AovSchema::sLpePrefixNone</a></div><div class="ttdeci">static constexpr int sLpePrefixNone</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00195">Aov.h:195</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_aov_schema_html_a0aba321905924196f782cdb194c20e44"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_aov_schema.html#a0aba321905924196f782cdb194c20e44">moonray::pbr::AovSchema::sNoVarianceKey</a></div><div class="ttdeci">static constexpr int sNoVarianceKey</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00193">Aov.h:193</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a379c6c62453097cf1de461a2e56fd923a7f2b4e45f43441c80fbcf44ec534ea72"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a379c6c62453097cf1de461a2e56fd923a7f2b4e45f43441c80fbcf44ec534ea72">moonray::pbr::AOV_FILTER_AVG</a></div><div class="ttdeci">@ AOV_FILTER_AVG</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00150">Aov.h:150</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a52dc235764c11050cfe5152961e0e483a1c04cc3823d476c3017238679a0fdf52"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a52dc235764c11050cfe5152961e0e483a1c04cc3823d476c3017238679a0fdf52">moonray::pbr::AovStorageType::UNSPECIFIED</a></div><div class="ttdeci">@ UNSPECIFIED</div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data_html_a5bd7e79897ffae9b200ce3646c4e166f"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#a5bd7e79897ffae9b200ce3646c4e166f">moonray::pbr::AovSchema::EntryData::cameraId</a></div><div class="ttdeci">int cameraId</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00214">Aov.h:214</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data_html_a94841def4d756b6c3f23e69f0afa536f"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#a94841def4d756b6c3f23e69f0afa536f">moonray::pbr::AovSchema::EntryData::lpePrefixFlags</a></div><div class="ttdeci">int lpePrefixFlags</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00215">Aov.h:215</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data_html_a95ac512ee4ff63fa457b6abd39576608"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#a95ac512ee4ff63fa457b6abd39576608">moonray::pbr::AovSchema::EntryData::storageType</a></div><div class="ttdeci">AovStorageType storageType</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00213">Aov.h:213</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data_html_ab9ac6c0567b3b22538040932abab504a"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#ab9ac6c0567b3b22538040932abab504a">moonray::pbr::AovSchema::EntryData::varianceIndex</a></div><div class="ttdeci">int varianceIndex</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00212">Aov.h:212</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data_html_ac28b49115d108ff6a634c9fb20a230e3"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#ac28b49115d108ff6a634c9fb20a230e3">moonray::pbr::AovSchema::EntryData::schemaID</a></div><div class="ttdeci">int schemaID</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00210">Aov.h:210</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data_html_adc38d224c1a328ed16304293e404468f"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#adc38d224c1a328ed16304293e404468f">moonray::pbr::AovSchema::EntryData::filter</a></div><div class="ttdeci">AovFilter filter</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00211">Aov.h:211</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -124,7 +159,22 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l00266">266</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  267</span>{</div>
+<div class="line"><span class="lineno">  268</span>    std::ostringstream ostr;</div>
+<div class="line"><span class="lineno">  269</span>    ostr &lt;&lt; <span class="stringliteral">&quot;EntryData {\n&quot;</span></div>
+<div class="line"><span class="lineno">  270</span>         &lt;&lt; <span class="stringliteral">&quot;  schemaId:&quot;</span> &lt;&lt; <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#ac28b49115d108ff6a634c9fb20a230e3">schemaID</a> &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a88e500b05a0a0831f39518de04c3cac9">aovSchemaIdToString</a>((<a class="code hl_enumeration" href="namespacemoonray_1_1pbr.html#a1a4e28f5312500e8ff93712b9e49b21d">AovSchemaId</a>)<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#ac28b49115d108ff6a634c9fb20a230e3">schemaID</a>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
+<div class="line"><span class="lineno">  271</span>         &lt;&lt; <span class="stringliteral">&quot;  filter:&quot;</span> &lt;&lt; <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a7d21d91dd3310cbfdab26fbe240e43ce">aovFilterToString</a>(<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#adc38d224c1a328ed16304293e404468f">filter</a>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
+<div class="line"><span class="lineno">  272</span>         &lt;&lt; <span class="stringliteral">&quot;  varianceIndex:&quot;</span> &lt;&lt; <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#ab9ac6c0567b3b22538040932abab504a">varianceIndex</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
+<div class="line"><span class="lineno">  273</span>         &lt;&lt; <span class="stringliteral">&quot;  storageType:&quot;</span> &lt;&lt; <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ae81203e0602b1d9795aeb2a8864adfd6">aovStorageTypeToString</a>(<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#a95ac512ee4ff63fa457b6abd39576608">storageType</a>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
+<div class="line"><span class="lineno">  274</span>         &lt;&lt; <span class="stringliteral">&quot;  cameraId:&quot;</span> &lt;&lt; <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html#a5bd7e79897ffae9b200ce3646c4e166f">cameraId</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
+<div class="line"><span class="lineno">  275</span>         &lt;&lt; <span class="stringliteral">&quot;}&quot;</span>;</div>
+<div class="line"><span class="lineno">  276</span>    <span class="keywordflow">return</span> ostr.str();</div>
+<div class="line"><span class="lineno">  277</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a1a4e28f5312500e8ff93712b9e49b21d"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a1a4e28f5312500e8ff93712b9e49b21d">moonray::pbr::AovSchemaId</a></div><div class="ttdeci">AovSchemaId</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00062">Aov.h:62</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a7d21d91dd3310cbfdab26fbe240e43ce"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a7d21d91dd3310cbfdab26fbe240e43ce">moonray::pbr::aovFilterToString</a></div><div class="ttdeci">std::string aovFilterToString(const AovFilter &amp;aovFilter)</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8cc_source.html#l00118">Aov.cc:118</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a88e500b05a0a0831f39518de04c3cac9"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a88e500b05a0a0831f39518de04c3cac9">moonray::pbr::aovSchemaIdToString</a></div><div class="ttdeci">std::string aovSchemaIdToString(const AovSchemaId &amp;aovSchemaId)</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8cc_source.html#l00043">Aov.cc:43</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_ae81203e0602b1d9795aeb2a8864adfd6"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ae81203e0602b1d9795aeb2a8864adfd6">moonray::pbr::aovStorageTypeToString</a></div><div class="ttdeci">std::string aovStorageTypeToString(const AovStorageType &amp;aovStorageType)</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8cc_source.html#l00151">Aov.cc:151</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -229,9 +279,13 @@ Public Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/core/<a class="el" href="_aov_8cc_source.html">Aov.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_aov_schema.html">AovSchema</a></li><li class="navelem"><a class="el" href="structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html">EntryData</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,28 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_dense_emission_distribution.html">DenseEmissionDistribution</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1internal_1_1_dense_emission_distribution.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1geom_1_1internal_1_1_dense_emission_distribution-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::geom::internal::DenseEmissionDistribution Class Reference</div></div>
 </div><!--header-->
@@ -89,6 +107,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4371f8b94e8ddccfa7fb3a5e219b0c8d inherit pub_methods_classmoonray_1_1geom_1_1internal_1_1_emission_distribution"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5869d79dd3a48950c740f745689b402b inherit pub_methods_classmoonray_1_1geom_1_1internal_1_1_emission_distribution"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution_1_1_transform.html">Transform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a5869d79dd3a48950c740f745689b402b">getTransform</a> () const</td></tr>
 <tr class="separator:a5869d79dd3a48950c740f745689b402b inherit pub_methods_classmoonray_1_1geom_1_1internal_1_1_emission_distribution"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a632fbe812a08e771b9c6f6478df50117"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_dense_emission_distribution.html#a632fbe812a08e771b9c6f6478df50117">pdfDiscrete</a> (const scene_rdl2::math::Vec3i &amp;pos) const override</td></tr>
+<tr class="separator:a632fbe812a08e771b9c6f6478df50117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aa5049dac99059ec87f7d6089494bc85e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_distribution3_d.html">Distribution3D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_dense_emission_distribution.html#aa5049dac99059ec87f7d6089494bc85e">mDistribution</a></td></tr>
+<tr class="separator:aa5049dac99059ec87f7d6089494bc85e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -153,7 +181,17 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_emission_distribution_8h_source.html#l00136">136</a> of file <a class="el" href="_emission_distribution_8h_source.html">EmissionDistribution.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  139</span>                                              :</div>
+<div class="line"><span class="lineno">  140</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a0508cf95f07c3fcc191b25661884bc13">EmissionDistribution</a>(res, distToRender, invUnitVolume)</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>    {</div>
+<div class="line"><span class="lineno">  143</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_dense_emission_distribution.html#aa5049dac99059ec87f7d6089494bc85e">mDistribution</a>.reset(<span class="keyword">new</span> Distribution3D(histogram.data(),</div>
+<div class="line"><span class="lineno">  144</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#accbcd33d5735b52805a547ea403a011e">mRes</a>[0], <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#accbcd33d5735b52805a547ea403a011e">mRes</a>[1], <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#accbcd33d5735b52805a547ea403a011e">mRes</a>[2]));</div>
+<div class="line"><span class="lineno">  145</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_dense_emission_distribution_html_aa5049dac99059ec87f7d6089494bc85e"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_dense_emission_distribution.html#aa5049dac99059ec87f7d6089494bc85e">moonray::geom::internal::DenseEmissionDistribution::mDistribution</a></div><div class="ttdeci">std::unique_ptr&lt; Distribution3D &gt; mDistribution</div><div class="ttdef"><b>Definition:</b> <a href="_emission_distribution_8h_source.html#l00167">EmissionDistribution.h:167</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_emission_distribution_html_a0508cf95f07c3fcc191b25661884bc13"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a0508cf95f07c3fcc191b25661884bc13">moonray::geom::internal::EmissionDistribution::EmissionDistribution</a></div><div class="ttdeci">EmissionDistribution(const scene_rdl2::math::Vec3i &amp;res, const scene_rdl2::math::Mat4f distToRender[2], float invUnitVolume)</div><div class="ttdef"><b>Definition:</b> <a href="_emission_distribution_8h_source.html#l00056">EmissionDistribution.h:56</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_emission_distribution_html_accbcd33d5735b52805a547ea403a011e"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#accbcd33d5735b52805a547ea403a011e">moonray::geom::internal::EmissionDistribution::mRes</a></div><div class="ttdeci">scene_rdl2::math::Vec3i mRes</div><div class="ttdef"><b>Definition:</b> <a href="_emission_distribution_8h_source.html#l00099">EmissionDistribution.h:99</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4b0f198a4b697492eb66976e8270e8a1" name="a4b0f198a4b697492eb66976e8270e8a1"></a>
@@ -208,7 +246,43 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a8dcf48d96317ce5910870eea6bc286b1">moonray::geom::internal::EmissionDistribution</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_emission_distribution_8h_source.html#l00149">149</a> of file <a class="el" href="_emission_distribution_8h_source.html">EmissionDistribution.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  150</span>    {</div>
+<div class="line"><span class="lineno">  151</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_dense_emission_distribution.html#aa5049dac99059ec87f7d6089494bc85e">mDistribution</a>-&gt;count();</div>
+<div class="line"><span class="lineno">  152</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a632fbe812a08e771b9c6f6478df50117" name="a632fbe812a08e771b9c6f6478df50117"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a632fbe812a08e771b9c6f6478df50117">&#9670;&#160;</a></span>pdfDiscrete()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::geom::internal::DenseEmissionDistribution::pdfDiscrete </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Vec3i &amp;&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a35032ef0162dbde3ffe5ebcffe4201c4">moonray::geom::internal::EmissionDistribution</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_emission_distribution_8cc_source.html#l00140">140</a> of file <a class="el" href="_emission_distribution_8cc_source.html">EmissionDistribution.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  141</span>{</div>
+<div class="line"><span class="lineno">  142</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_dense_emission_distribution.html#aa5049dac99059ec87f7d6089494bc85e">mDistribution</a>-&gt;pdfDiscrete(pos);</div>
+<div class="line"><span class="lineno">  143</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a00c5d13e4a34165517ee72f56096a991" name="a00c5d13e4a34165517ee72f56096a991"></a>
@@ -290,7 +364,27 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#ad0c725f80ac709bdcb28f6603be3851d">moonray::geom::internal::EmissionDistribution</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_emission_distribution_8cc_source.html#l00107">107</a> of file <a class="el" href="_emission_distribution_8cc_source.html">EmissionDistribution.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  109</span>{</div>
+<div class="line"><span class="lineno">  110</span>    <span class="keywordtype">float</span> pdfIndex;</div>
+<div class="line"><span class="lineno">  111</span>    <span class="keywordtype">float</span> uxRemapped, uyRemapped, uzRemapped;</div>
+<div class="line"><span class="lineno">  112</span>    scene_rdl2::math::Vec3i coord = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_dense_emission_distribution.html#aa5049dac99059ec87f7d6089494bc85e">mDistribution</a>-&gt;sampleDiscrete(u1, u2, u3,</div>
+<div class="line"><span class="lineno">  113</span>        &amp;pdfIndex, &amp;uxRemapped, &amp;uyRemapped, &amp;uzRemapped);</div>
+<div class="line"><span class="lineno">  114</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> pDist(</div>
+<div class="line"><span class="lineno">  115</span>        coord[0] + uxRemapped,</div>
+<div class="line"><span class="lineno">  116</span>        coord[1] + uyRemapped,</div>
+<div class="line"><span class="lineno">  117</span>        coord[2] + uzRemapped);</div>
+<div class="line"><span class="lineno">  118</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> pt = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a9a1ec777c7e863364fa1905e9d257ee8">mIsMotionBlurOn</a> ? scene_rdl2::math::transformPoint(xform.getDistToRender(time), pDist) :</div>
+<div class="line"><span class="lineno">  119</span>                                 <a class="code hl_namespace" href="namespacescene__rdl2.html">scene_rdl2</a>::math::<a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a472053acc157ccb20c9d68bf2fdaa824">transformPoint</a>(xform.getDistToRender()[0], pDist);</div>
+<div class="line"><span class="lineno">  120</span>    wi = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(pt - p);</div>
+<div class="line"><span class="lineno">  121</span>    pdfWi = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a4371f8b94e8ddccfa7fb3a5e219b0c8d">pdf</a>(xform, p, wi, tEnd, time);</div>
+<div class="line"><span class="lineno">  122</span>}</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a26b3f6b7b842544058f3766b0da79257"><div class="ttname"><a href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a></div><div class="ttdeci">__host__ __device__ float3 normalize(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00165">GPUMath.h:165</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_emission_distribution_html_a4371f8b94e8ddccfa7fb3a5e219b0c8d"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a4371f8b94e8ddccfa7fb3a5e219b0c8d">moonray::geom::internal::EmissionDistribution::pdf</a></div><div class="ttdeci">float pdf(const Transform &amp;xform, const scene_rdl2::math::Vec3f &amp;pRender, const scene_rdl2::math::Vec3f &amp;wiRender, float &amp;tEnd, float time) const</div><div class="ttdef"><b>Definition:</b> <a href="_emission_distribution_8cc_source.html#l00018">EmissionDistribution.cc:18</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_emission_distribution_html_a9a1ec777c7e863364fa1905e9d257ee8"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a9a1ec777c7e863364fa1905e9d257ee8">moonray::geom::internal::EmissionDistribution::mIsMotionBlurOn</a></div><div class="ttdeci">bool mIsMotionBlurOn</div><div class="ttdef"><b>Definition:</b> <a href="_emission_distribution_8h_source.html#l00097">EmissionDistribution.h:97</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a472053acc157ccb20c9d68bf2fdaa824"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a472053acc157ccb20c9d68bf2fdaa824">moonray::geom::internal::transformPoint</a></div><div class="ttdeci">Vec3f transformPoint(const scene_rdl2::math::Mat4f mat[2], const scene_rdl2::math::Vec3f &amp;point, const float time, bool isMotionBlurOn)</div><div class="ttdef"><b>Definition:</b> <a href="geom_2prim_2_util_8cc_source.html#l00231">Util.cc:231</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+<div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_dispatch_computation_8cc_source.html#l00044">McrtRtDispatchComputation.cc:44</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af76397208505e78eeb940e88ccbd8782" name="af76397208505e78eeb940e88ccbd8782"></a>
@@ -348,6 +442,43 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a3dcbfd2378b1c34ef6972bf0c6d7150b">moonray::geom::internal::EmissionDistribution</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_emission_distribution_8cc_source.html#l00125">125</a> of file <a class="el" href="_emission_distribution_8cc_source.html">EmissionDistribution.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  126</span>{</div>
+<div class="line"><span class="lineno">  127</span>    <span class="keywordtype">float</span> pdfIndex;</div>
+<div class="line"><span class="lineno">  128</span>    <span class="keywordtype">float</span> uxRemapped, uyRemapped, uzRemapped;</div>
+<div class="line"><span class="lineno">  129</span>    scene_rdl2::math::Vec3i coord = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_dense_emission_distribution.html#aa5049dac99059ec87f7d6089494bc85e">mDistribution</a>-&gt;sampleDiscrete(u1, u2, u3,</div>
+<div class="line"><span class="lineno">  130</span>        &amp;pdfIndex, &amp;uxRemapped, &amp;uyRemapped, &amp;uzRemapped);</div>
+<div class="line"><span class="lineno">  131</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> pDist(</div>
+<div class="line"><span class="lineno">  132</span>        coord[0] + uxRemapped,</div>
+<div class="line"><span class="lineno">  133</span>        coord[1] + uyRemapped,</div>
+<div class="line"><span class="lineno">  134</span>        coord[2] + uzRemapped);</div>
+<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a9a1ec777c7e863364fa1905e9d257ee8">mIsMotionBlurOn</a> ? scene_rdl2::math::transformPoint(xform.getDistToRender(time), pDist) :</div>
+<div class="line"><span class="lineno">  136</span>                             <a class="code hl_namespace" href="namespacescene__rdl2.html">scene_rdl2</a>::math::<a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a472053acc157ccb20c9d68bf2fdaa824">transformPoint</a>(xform.getDistToRender()[0], pDist);</div>
+<div class="line"><span class="lineno">  137</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa5049dac99059ec87f7d6089494bc85e" name="aa5049dac99059ec87f7d6089494bc85e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5049dac99059ec87f7d6089494bc85e">&#9670;&#160;</a></span>mDistribution</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="structmoonray_1_1geom_1_1internal_1_1_distribution3_d.html">Distribution3D</a>&gt; moonray::geom::internal::DenseEmissionDistribution::mDistribution</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_emission_distribution_8h_source.html#l00167">167</a> of file <a class="el" href="_emission_distribution_8h_source.html">EmissionDistribution.h</a>.</p>
 
 </div>
 </div>
@@ -356,9 +487,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/geom/prim/<a class="el" href="_emission_distribution_8cc_source.html">EmissionDistribution.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_dense_emission_distribution.html">DenseEmissionDistribution</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

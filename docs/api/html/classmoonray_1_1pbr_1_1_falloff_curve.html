@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_falloff_curve.html">FalloffCurve</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_falloff_curve.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -107,7 +123,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_light_util_8h_source.html#l00123">123</a> of file <a class="el" href="_light_util_8h_source.html">LightUtil.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  123</span>                   :</div>
+<div class="line"><span class="lineno">  124</span>        mType(FALLOFF_CURVE_TYPE_LINEAR) {}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a886db401e5ca3ba9ef52a15aad235ed1" name="a886db401e5ca3ba9ef52a15aad235ed1"></a>
@@ -135,7 +153,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_light_util_8h_source.html#l00126">126</a> of file <a class="el" href="_light_util_8h_source.html">LightUtil.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  127</span>    {</div>
+<div class="line"><span class="lineno">  128</span>        <a class="code hl_function" href="classmoonray_1_1pbr_1_1_falloff_curve.html#a64caf735a154bf494d021ccba7eac881">init</a>(curveType);</div>
+<div class="line"><span class="lineno">  129</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_falloff_curve_html_a64caf735a154bf494d021ccba7eac881"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_falloff_curve.html#a64caf735a154bf494d021ccba7eac881">moonray::pbr::FalloffCurve::init</a></div><div class="ttdeci">void init(FalloffCurveType curveType)</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00131">LightUtil.h:131</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -164,7 +186,25 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_light_util_8h_source.html#l00141">141</a> of file <a class="el" href="_light_util_8h_source.html">LightUtil.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  142</span>    {</div>
+<div class="line"><span class="lineno">  143</span>        t = scene_rdl2::math::saturate(t);</div>
+<div class="line"><span class="lineno">  144</span> </div>
+<div class="line"><span class="lineno">  145</span>        <span class="keywordflow">switch</span> (mType) {</div>
+<div class="line"><span class="lineno">  146</span>        <span class="keywordflow">case</span> FALLOFF_CURVE_TYPE_NONE:</div>
+<div class="line"><span class="lineno">  147</span>            <span class="keywordflow">return</span> (t &gt; 0.0f) ? 1.0f : 0.0f;</div>
+<div class="line"><span class="lineno">  148</span>        <span class="keywordflow">case</span> FALLOFF_CURVE_TYPE_LINEAR:</div>
+<div class="line"><span class="lineno">  149</span>            <span class="keywordflow">return</span> t;</div>
+<div class="line"><span class="lineno">  150</span>        <span class="keywordflow">case</span> FALLOFF_CURVE_TYPE_EASEIN:</div>
+<div class="line"><span class="lineno">  151</span>            <span class="keywordflow">return</span> t * t;</div>
+<div class="line"><span class="lineno">  152</span>        <span class="keywordflow">case</span> FALLOFF_CURVE_TYPE_EASEOUT:</div>
+<div class="line"><span class="lineno">  153</span>            <span class="keywordflow">return</span> t * (2.0f - t);</div>
+<div class="line"><span class="lineno">  154</span>        <span class="keywordflow">case</span> FALLOFF_CURVE_TYPE_EASEINOUT:</div>
+<div class="line"><span class="lineno">  155</span>            <span class="keywordflow">return</span> t * t * (3.0f - 2.0f * t);</div>
+<div class="line"><span class="lineno">  156</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  157</span>            <span class="keywordflow">return</span> t;</div>
+<div class="line"><span class="lineno">  158</span>        }</div>
+<div class="line"><span class="lineno">  159</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac9c4ac80351ea905508d675627b35787" name="ac9c4ac80351ea905508d675627b35787"></a>
@@ -212,7 +252,13 @@ Protected Attributes</h2></td></tr>
 <p>HUD validation and type casting. </p>
 
 <p class="definition">Definition at line <a class="el" href="_light_util_8cc_source.html#l00032">32</a> of file <a class="el" href="_light_util_8cc_source.html">LightUtil.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{</div>
+<div class="line"><span class="lineno">   34</span>    <a class="code hl_define" href="_light_util_8hh.html#a4ea85bce34568edb2044425c4e9102e0">FALLOFF_CURVE_TYPE_ENUM_VALIDATION</a>;</div>
+<div class="line"><span class="lineno">   35</span>    <a class="code hl_define" href="_light_util_8hh.html#aa0a39777f6dcd70ee0cf47c79c8a182f">FALLOFF_CURVE_VALIDATION</a>;</div>
+<div class="line"><span class="lineno">   36</span>}</div>
+<div class="ttc" id="a_light_util_8hh_html_a4ea85bce34568edb2044425c4e9102e0"><div class="ttname"><a href="_light_util_8hh.html#a4ea85bce34568edb2044425c4e9102e0">FALLOFF_CURVE_TYPE_ENUM_VALIDATION</a></div><div class="ttdeci">#define FALLOFF_CURVE_TYPE_ENUM_VALIDATION</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8hh_source.html#l00034">LightUtil.hh:34</a></div></div>
+<div class="ttc" id="a_light_util_8hh_html_aa0a39777f6dcd70ee0cf47c79c8a182f"><div class="ttname"><a href="_light_util_8hh.html#aa0a39777f6dcd70ee0cf47c79c8a182f">FALLOFF_CURVE_VALIDATION</a></div><div class="ttdeci">#define FALLOFF_CURVE_VALIDATION</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8hh_source.html#l00042">LightUtil.hh:42</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a64caf735a154bf494d021ccba7eac881" name="a64caf735a154bf494d021ccba7eac881"></a>
@@ -240,7 +286,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_light_util_8h_source.html#l00131">131</a> of file <a class="el" href="_light_util_8h_source.html">LightUtil.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  132</span>    {</div>
+<div class="line"><span class="lineno">  133</span>        mType = (<a class="code hl_enumeration" href="namespacemoonray_1_1pbr.html#a2343fadb44abcfeb905cdad8e834d3a9">FalloffCurveType</a>)scene_rdl2::math::min(curveType, FALLOFF_CURVE_TYPE_NUM_TYPES - 1);</div>
+<div class="line"><span class="lineno">  134</span>    }</div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a2343fadb44abcfeb905cdad8e834d3a9"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a2343fadb44abcfeb905cdad8e834d3a9">moonray::pbr::FalloffCurveType</a></div><div class="ttdeci">FalloffCurveType</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00114">LightUtil.h:115</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -273,9 +323,13 @@ Protected Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/light/<a class="el" href="_light_util_8cc_source.html">LightUtil.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_falloff_curve.html">FalloffCurve</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

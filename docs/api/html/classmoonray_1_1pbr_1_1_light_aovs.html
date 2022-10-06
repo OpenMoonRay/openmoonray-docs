@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,16 +42,32 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_light_aovs.html">LightAovs</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_light_aovs.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1pbr_1_1_light_aovs-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::pbr::LightAovs Class Reference</div></div>
 </div><!--header-->
@@ -109,11 +129,67 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a637f7f6d597e901e2f60588d18de78"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_light_aovs.html#a1a637f7f6d597e901e2f60588d18de78">hudValidation</a> (bool verbose)</td></tr>
 <tr class="separator:a1a637f7f6d597e901e2f60588d18de78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a46650ec52794090dfb5838f5ae47bfe3"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_light_aovs.html#a46650ec52794090dfb5838f5ae47bfe3">LabelSubstitutions</a></td></tr>
+<tr class="separator:a46650ec52794090dfb5838f5ae47bfe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a89b8be35deedb94e18dbe06babe5c09f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_light_aovs.html#a89b8be35deedb94e18dbe06babe5c09f">MNRY_STATIC_ASSERT</a> (sizeof(<a class="el" href="classmoonray_1_1lpe_1_1_state_machine.html">lpe::StateMachine</a>)==<a class="el" href="_aov_8hh.html#ab3f5cf0543e2fef7a541074d782b4078">SIZEOF_LPE_STATEMACHINE</a>)</td></tr>
+<tr class="separator:a89b8be35deedb94e18dbe06babe5c09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ced5a1303f1c44620d3a35e49de7c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_light_aovs.html#a50ced5a1303f1c44620d3a35e49de7c7">MNRY_STATIC_ASSERT</a> (sizeof(<a class="el" href="classmoonray_1_1pbr_1_1_light_aovs.html#a46650ec52794090dfb5838f5ae47bfe3">LabelSubstitutions</a>)==<a class="el" href="_aov_8hh.html#a0d023a2ef9776f5ebce960393e5ed24d">SIZEOF_LABELSUBSTITUTIONS</a>)</td></tr>
+<tr class="separator:a50ced5a1303f1c44620d3a35e49de7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59b174e8eea9aa1d5d4ec368c364f6c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_light_aovs.html#ac59b174e8eea9aa1d5d4ec368c364f6c">expandLpeLabels</a> (const std::string &amp;lpe) const</td></tr>
+<tr class="separator:ac59b174e8eea9aa1d5d4ec368c364f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a842c6e60bb7ba70c420ed22eec4e9387"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_light_aovs.html#a842c6e60bb7ba70c420ed22eec4e9387">buildLabelSubstitutions</a> (const scene_rdl2::rdl2::Layer &amp;layer)</td></tr>
+<tr class="separator:a842c6e60bb7ba70c420ed22eec4e9387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ac4e9fa881316958c1b94a0e1d8f63db5"><td class="memTemplParams" colspan="2">template&lt;typename LobeType &gt; </td></tr>
+<tr class="memitem:ac4e9fa881316958c1b94a0e1d8f63db5"><td class="memTemplItemLeft" align="right" valign="top">static int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_light_aovs.html#ac4e9fa881316958c1b94a0e1d8f63db5">computeScatterEventLabelId</a> (const <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">shading::Bsdf</a> &amp;bsdf, const LobeType *lobe)</td></tr>
+<tr class="separator:ac4e9fa881316958c1b94a0e1d8f63db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf23b56b675b894ad28d5d4b2694ecac"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_light_aovs.html#aaf23b56b675b894ad28d5d4b2694ecac">computeScatterEventLabelIdVector</a> (const shading::Bsdfv &amp;bsdf, const shading::BsdfLobev *lobe)</td></tr>
+<tr class="separator:aaf23b56b675b894ad28d5d4b2694ecac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa87bfcf5dc17ddf905b6c5a470ae6f4b"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_light_aovs.html#aa87bfcf5dc17ddf905b6c5a470ae6f4b">replaceLpeAliases</a> (const std::string &amp;lpe)</td></tr>
+<tr class="separator:aa87bfcf5dc17ddf905b6c5a470ae6f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:acfc1679b2830b040e531eddb3bc2d8ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_light_aovs.html#acfc1679b2830b040e531eddb3bc2d8ff">LIGHT_AOVS_MEMBERS</a></td></tr>
+<tr class="separator:acfc1679b2830b040e531eddb3bc2d8ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_aov_8h_source.html#l00779">779</a> of file <a class="el" href="_aov_8h_source.html">Aov.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a46650ec52794090dfb5838f5ae47bfe3" name="a46650ec52794090dfb5838f5ae47bfe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46650ec52794090dfb5838f5ae47bfe3">&#9670;&#160;</a></span>LabelSubstitutions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::unordered_map&lt;std::string, std::string&gt; <a class="el" href="classmoonray_1_1pbr_1_1_light_aovs.html#a46650ec52794090dfb5838f5ae47bfe3">moonray::pbr::LightAovs::LabelSubstitutions</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_aov_8h_source.html#l00891">891</a> of file <a class="el" href="_aov_8h_source.html">Aov.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a38735f920880563f38081e38c2affade" name="a38735f920880563f38081e38c2affade"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38735f920880563f38081e38c2affade">&#9670;&#160;</a></span>LightAovs()</h2>
 
@@ -139,10 +215,136 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03070">3070</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 3070</span>                                                    :</div>
+<div class="line"><span class="lineno"> 3071</span>    mNextLightAovSchemaId(<a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a1a4e28f5312500e8ff93712b9e49b21da3a9fe1072c9d67d3104001142f25c956">AOV_SCHEMA_ID_LIGHT_AOV</a>),</div>
+<div class="line"><span class="lineno"> 3072</span>    mNextVisibilityAovSchemaId(<a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a1a4e28f5312500e8ff93712b9e49b21dae25e15f479cbc3f2eb992980f20cc95e">AOV_SCHEMA_ID_VISIBILITY_AOV</a>),</div>
+<div class="line"><span class="lineno"> 3073</span>    mFinalized(<span class="keyword">false</span>)</div>
+<div class="line"><span class="lineno"> 3074</span>{</div>
+<div class="line"><span class="lineno"> 3075</span>    <span class="comment">// layer can be null if there are no render</span></div>
+<div class="line"><span class="lineno"> 3076</span>    <span class="comment">// output objects in the scene</span></div>
+<div class="line"><span class="lineno"> 3077</span>    <span class="keywordflow">if</span> (layer) {</div>
+<div class="line"><span class="lineno"> 3078</span>        <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#a842c6e60bb7ba70c420ed22eec4e9387">buildLabelSubstitutions</a>(*layer);</div>
+<div class="line"><span class="lineno"> 3079</span>    }</div>
+<div class="line"><span class="lineno"> 3080</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_aovs_html_a842c6e60bb7ba70c420ed22eec4e9387"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_aovs.html#a842c6e60bb7ba70c420ed22eec4e9387">moonray::pbr::LightAovs::buildLabelSubstitutions</a></div><div class="ttdeci">void buildLabelSubstitutions(const scene_rdl2::rdl2::Layer &amp;layer)</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8cc_source.html#l03452">Aov.cc:3452</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a1a4e28f5312500e8ff93712b9e49b21da3a9fe1072c9d67d3104001142f25c956"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a1a4e28f5312500e8ff93712b9e49b21da3a9fe1072c9d67d3104001142f25c956">moonray::pbr::AOV_SCHEMA_ID_LIGHT_AOV</a></div><div class="ttdeci">@ AOV_SCHEMA_ID_LIGHT_AOV</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00109">Aov.h:109</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a1a4e28f5312500e8ff93712b9e49b21dae25e15f479cbc3f2eb992980f20cc95e"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a1a4e28f5312500e8ff93712b9e49b21dae25e15f479cbc3f2eb992980f20cc95e">moonray::pbr::AOV_SCHEMA_ID_VISIBILITY_AOV</a></div><div class="ttdeci">@ AOV_SCHEMA_ID_VISIBILITY_AOV</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00108">Aov.h:108</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a842c6e60bb7ba70c420ed22eec4e9387" name="a842c6e60bb7ba70c420ed22eec4e9387"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a842c6e60bb7ba70c420ed22eec4e9387">&#9670;&#160;</a></span>buildLabelSubstitutions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::pbr::LightAovs::buildLabelSubstitutions </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::rdl2::Layer &amp;&#160;</td>
+          <td class="paramname"><em>layer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03452">3452</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 3453</span>{</div>
+<div class="line"><span class="lineno"> 3454</span>    <span class="comment">// build an unordered map that maps material labels and lobe</span></div>
+<div class="line"><span class="lineno"> 3455</span>    <span class="comment">// labels to strings that match all possible material_label.lobe_label</span></div>
+<div class="line"><span class="lineno"> 3456</span>    <span class="comment">// combinations.  For example:</span></div>
+<div class="line"><span class="lineno"> 3457</span>    <span class="comment">//    mat0 -&gt; [&#39;mat0&#39;&#39;mat0.clearcoat&#39;&#39;mat0.diffuse&#39;&#39;mat0.specular&#39;]</span></div>
+<div class="line"><span class="lineno"> 3458</span>    mLabelSubstitutions.clear();</div>
+<div class="line"><span class="lineno"> 3459</span> </div>
+<div class="line"><span class="lineno"> 3460</span>    <span class="comment">// FIXME: no direct way to access the materials from a const Layer</span></div>
+<div class="line"><span class="lineno"> 3461</span>    <span class="comment">// need to lookup the secret &quot;surface shaders&quot; attribute.</span></div>
+<div class="line"><span class="lineno"> 3462</span>    <span class="comment">// this call will throw an exception, which we don&#39;t catch if</span></div>
+<div class="line"><span class="lineno"> 3463</span>    <span class="comment">// &quot;surface shaders&quot; does not exist as an attribute</span></div>
+<div class="line"><span class="lineno"> 3464</span>    <span class="keyword">const</span> scene_rdl2::rdl2::SceneObjectVector &amp;materialVector = layer.get&lt;scene_rdl2::rdl2::SceneObjectVector&gt;(</div>
+<div class="line"><span class="lineno"> 3465</span>        <span class="stringliteral">&quot;surface_shaders&quot;</span>);</div>
+<div class="line"><span class="lineno"> 3466</span>    std::unordered_set&lt;const scene_rdl2::rdl2::Material *&gt; materials;</div>
+<div class="line"><span class="lineno"> 3467</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> scene_rdl2::rdl2::SceneObject *s : materialVector) {</div>
+<div class="line"><span class="lineno"> 3468</span>        <span class="keywordflow">if</span> (!s) {</div>
+<div class="line"><span class="lineno"> 3469</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno"> 3470</span>        }</div>
+<div class="line"><span class="lineno"> 3471</span>        scene_rdl2::rdl2::ConstSceneObjectSet b;</div>
+<div class="line"><span class="lineno"> 3472</span>        s-&gt;getBindingTransitiveClosure(b);</div>
+<div class="line"><span class="lineno"> 3473</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> scene_rdl2::rdl2::SceneObject * obj : b) {</div>
+<div class="line"><span class="lineno"> 3474</span>            <span class="keywordflow">if</span> (obj &amp;&amp; obj-&gt;isA&lt;scene_rdl2::rdl2::Material&gt;()) {</div>
+<div class="line"><span class="lineno"> 3475</span>                materials.insert(obj-&gt;asA&lt;scene_rdl2::rdl2::Material&gt;());</div>
+<div class="line"><span class="lineno"> 3476</span>            }</div>
+<div class="line"><span class="lineno"> 3477</span>        }</div>
+<div class="line"><span class="lineno"> 3478</span>    }</div>
+<div class="line"><span class="lineno"> 3479</span> </div>
+<div class="line"><span class="lineno"> 3480</span>    <span class="comment">// all possible lobe labels for a material label</span></div>
+<div class="line"><span class="lineno"> 3481</span>    <span class="keyword">typedef</span> std::unordered_map&lt;std::string, std::unordered_set&lt;std::string&gt;&gt; MatLabel2LobeLabels;</div>
+<div class="line"><span class="lineno"> 3482</span>    MatLabel2LobeLabels matLabel2LobeLabels;</div>
+<div class="line"><span class="lineno"> 3483</span> </div>
+<div class="line"><span class="lineno"> 3484</span>    <span class="comment">// all possible material labels for a lobe label</span></div>
+<div class="line"><span class="lineno"> 3485</span>    <span class="keyword">typedef</span> std::unordered_map&lt;std::string, std::unordered_set&lt;std::string&gt;&gt; LobeLabels2MatLabels;</div>
+<div class="line"><span class="lineno"> 3486</span>    LobeLabels2MatLabels lobeLabels2MatLabels;</div>
+<div class="line"><span class="lineno"> 3487</span> </div>
+<div class="line"><span class="lineno"> 3488</span>    <span class="comment">// collect the needed mappings</span></div>
+<div class="line"><span class="lineno"> 3489</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> scene_rdl2::rdl2::Material *mat : materials) {</div>
+<div class="line"><span class="lineno"> 3490</span>        <span class="comment">// get the material label and lobe labels for this material</span></div>
+<div class="line"><span class="lineno"> 3491</span>        <span class="keyword">const</span> scene_rdl2::rdl2::String &amp;matLabel = mat-&gt;get(scene_rdl2::rdl2::Material::sLabel);</div>
+<div class="line"><span class="lineno"> 3492</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> *lobeLabels = mat-&gt;getSceneClass().getDataPtr&lt;<span class="keyword">const</span> <span class="keywordtype">char</span> *&gt;(<span class="stringliteral">&quot;labels&quot;</span>);</div>
+<div class="line"><span class="lineno"> 3493</span>        <span class="keywordflow">if</span> (lobeLabels &amp;&amp; !matLabel.empty()) {</div>
+<div class="line"><span class="lineno"> 3494</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; lobeLabels[i] != <span class="keyword">nullptr</span>; ++i) {</div>
+<div class="line"><span class="lineno"> 3495</span>                <span class="keyword">const</span> std::string lobeLabel = lobeLabels[i];</div>
+<div class="line"><span class="lineno"> 3496</span>                matLabel2LobeLabels[matLabel].insert(lobeLabel);</div>
+<div class="line"><span class="lineno"> 3497</span>                lobeLabels2MatLabels[lobeLabel].insert(matLabel);</div>
+<div class="line"><span class="lineno"> 3498</span>            }</div>
+<div class="line"><span class="lineno"> 3499</span>        }</div>
+<div class="line"><span class="lineno"> 3500</span>    }</div>
+<div class="line"><span class="lineno"> 3501</span> </div>
+<div class="line"><span class="lineno"> 3502</span>    <span class="comment">// insert the material label substitutions</span></div>
+<div class="line"><span class="lineno"> 3503</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : matLabel2LobeLabels) {</div>
+<div class="line"><span class="lineno"> 3504</span>        <span class="keyword">const</span> std::string matLabel = e.first;</div>
+<div class="line"><span class="lineno"> 3505</span>        <span class="keyword">const</span> std::unordered_set&lt;std::string&gt; &amp;lobeLabels = e.second;</div>
+<div class="line"><span class="lineno"> 3506</span>        std::string target = <span class="stringliteral">&quot;[&#39;&quot;</span> + matLabel + <span class="stringliteral">&quot;&#39;&quot;</span>;</div>
+<div class="line"><span class="lineno"> 3507</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> std::string &amp;lobeLabel : lobeLabels) {</div>
+<div class="line"><span class="lineno"> 3508</span>            target += <span class="stringliteral">&quot;&#39;&quot;</span> + matLabel + <span class="stringliteral">&quot;.&quot;</span> + lobeLabel + <span class="stringliteral">&quot;&#39;&quot;</span>;</div>
+<div class="line"><span class="lineno"> 3509</span>        }</div>
+<div class="line"><span class="lineno"> 3510</span>        target += <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><span class="lineno"> 3511</span>        mLabelSubstitutions.insert({ matLabel, target });</div>
+<div class="line"><span class="lineno"> 3512</span>    }</div>
+<div class="line"><span class="lineno"> 3513</span> </div>
+<div class="line"><span class="lineno"> 3514</span>    <span class="comment">// insert the lobe label substitutions</span></div>
+<div class="line"><span class="lineno"> 3515</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : lobeLabels2MatLabels) {</div>
+<div class="line"><span class="lineno"> 3516</span>        <span class="keyword">const</span> std::string lobeLabel = e.first;</div>
+<div class="line"><span class="lineno"> 3517</span>        <span class="comment">// it is possible that a user may create a material label that matches</span></div>
+<div class="line"><span class="lineno"> 3518</span>        <span class="comment">// a lobe label.  in that case, we favor the material label substitutions</span></div>
+<div class="line"><span class="lineno"> 3519</span>        <span class="comment">// over the lobe label substitutions</span></div>
+<div class="line"><span class="lineno"> 3520</span>        <span class="keywordflow">if</span> (mLabelSubstitutions.find(lobeLabel) == mLabelSubstitutions.end()) {</div>
+<div class="line"><span class="lineno"> 3521</span>            <span class="keyword">const</span> std::unordered_set&lt;std::string&gt; &amp;matLabels = e.second;</div>
+<div class="line"><span class="lineno"> 3522</span>            std::string target = <span class="stringliteral">&quot;[&#39;&quot;</span> + lobeLabel + <span class="stringliteral">&quot;&#39;&quot;</span>;</div>
+<div class="line"><span class="lineno"> 3523</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> std::string &amp;matLabel : matLabels) {</div>
+<div class="line"><span class="lineno"> 3524</span>                target += <span class="stringliteral">&quot;&#39;&quot;</span> + matLabel + <span class="stringliteral">&quot;.&quot;</span> + lobeLabel + <span class="stringliteral">&quot;&#39;&quot;</span>;</div>
+<div class="line"><span class="lineno"> 3525</span>            }</div>
+<div class="line"><span class="lineno"> 3526</span>            target += <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><span class="lineno"> 3527</span>            mLabelSubstitutions.insert({ lobeLabel, target });</div>
+<div class="line"><span class="lineno"> 3528</span>        }</div>
+<div class="line"><span class="lineno"> 3529</span>    }</div>
+<div class="line"><span class="lineno"> 3530</span> </div>
+<div class="line"><span class="lineno"> 3531</span>    <span class="comment">// DEBUG</span></div>
+<div class="line"><span class="lineno"> 3532</span>    <span class="comment">// uncomment to print the substituion tabel</span></div>
+<div class="line"><span class="lineno"> 3533</span>    <span class="comment">// for (const auto &amp;e : mLabelSubstitutions) {</span></div>
+<div class="line"><span class="lineno"> 3534</span>    <span class="comment">//    std::cerr &lt;&lt; &quot;labelSubstitution: &quot; &lt;&lt; &#39;\&#39;&#39; &lt;&lt; e.first &lt;&lt; &#39;\&#39;&#39; &lt;&lt; &quot; ==&gt; &quot; &lt;&lt; e.second &lt;&lt; &#39;\n&#39;;</span></div>
+<div class="line"><span class="lineno"> 3535</span>    <span class="comment">// }</span></div>
+<div class="line"><span class="lineno"> 3536</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="abcc2a198e49c803a800a3935ffbbfa25" name="abcc2a198e49c803a800a3935ffbbfa25"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abcc2a198e49c803a800a3935ffbbfa25">&#9670;&#160;</a></span>cameraEventTransition()</h2>
 
@@ -160,7 +362,133 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03156">3156</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 3157</span>{</div>
+<div class="line"><span class="lineno"> 3158</span>    MNRY_ASSERT(mFinalized);</div>
+<div class="line"><span class="lineno"> 3159</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#a66ba250a271f997fa9403c8963e1a1c8">hasEntries</a>()) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno"> 3160</span> </div>
+<div class="line"><span class="lineno"> 3161</span>    <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(pbrTls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a74ab84f96e330b4fa651881c3828f23a">EXCL_ACCUM_AOVS</a>);</div>
+<div class="line"><span class="lineno"> 3162</span> </div>
+<div class="line"><span class="lineno"> 3163</span>    <span class="keywordflow">return</span> mLpeStateMachine.transition(<a class="code hl_variable" href="classmoonray_1_1lpe_1_1_state_machine.html#a9b748c9e74024755b5be0107bc7856f8">lpe::StateMachine::sInitialStateId</a>,</div>
+<div class="line"><span class="lineno"> 3164</span>                                       lpe::EVENT_TYPE_CAMERA,</div>
+<div class="line"><span class="lineno"> 3165</span>                                       lpe::EVENT_SCATTERING_TYPE_NONE,</div>
+<div class="line"><span class="lineno"> 3166</span>                                       <a class="code hl_variable" href="namespacemoonray_1_1lpe.html#afc7042fdd4a1c528313a0f1ceb20c15a">lpe::sNoLabel</a>);</div>
+<div class="line"><span class="lineno"> 3167</span>}</div>
+<div class="ttc" id="a_profile_accumulator_handles_8h_html_a6335af8746974a0365ae8756b7d5d73f"><div class="ttname"><a href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a></div><div class="ttdeci">#define EXCL_ACCUMULATOR_PROFILE(tls, type)</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_handles_8h_source.html#l00020">ProfileAccumulatorHandles.h:20</a></div></div>
+<div class="ttc" id="a_profile_accumulator_handles_8hh_html_ae7f4a146d68256e9f19dcbde6c38c9b2a74ab84f96e330b4fa651881c3828f23a"><div class="ttname"><a href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a74ab84f96e330b4fa651881c3828f23a">EXCL_ACCUM_AOVS</a></div><div class="ttdeci">@ EXCL_ACCUM_AOVS</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_handles_8hh_source.html#l00022">ProfileAccumulatorHandles.hh:22</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_html_a9b748c9e74024755b5be0107bc7856f8"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine.html#a9b748c9e74024755b5be0107bc7856f8">moonray::lpe::StateMachine::sInitialStateId</a></div><div class="ttdeci">static const int sInitialStateId</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8h_source.html#l00027">StateMachine.h:27</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_aovs_html_a66ba250a271f997fa9403c8963e1a1c8"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_aovs.html#a66ba250a271f997fa9403c8963e1a1c8">moonray::pbr::LightAovs::hasEntries</a></div><div class="ttdeci">bool hasEntries() const</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00880">Aov.h:880</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1lpe_html_afc7042fdd4a1c528313a0f1ceb20c15a"><div class="ttname"><a href="namespacemoonray_1_1lpe.html#afc7042fdd4a1c528313a0f1ceb20c15a">moonray::lpe::sNoLabel</a></div><div class="ttdeci">const int sNoLabel</div><div class="ttdef"><b>Definition:</b> <a href="_event_8h_source.html#l00024">Event.h:24</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac4e9fa881316958c1b94a0e1d8f63db5" name="ac4e9fa881316958c1b94a0e1d8f63db5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4e9fa881316958c1b94a0e1d8f63db5">&#9670;&#160;</a></span>computeScatterEventLabelId()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename LobeType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int moonray::pbr::LightAovs::computeScatterEventLabelId </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">shading::Bsdf</a> &amp;&#160;</td>
+          <td class="paramname"><em>bsdf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const LobeType *&#160;</td>
+          <td class="paramname"><em>lobe</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l02985">2985</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 2986</span>{</div>
+<div class="line"><span class="lineno"> 2987</span>    <span class="keywordtype">int</span> result = <a class="code hl_variable" href="namespacemoonray_1_1lpe.html#afc7042fdd4a1c528313a0f1ceb20c15a">lpe::sNoLabel</a>; <span class="comment">// no labels</span></div>
+<div class="line"><span class="lineno"> 2988</span> </div>
+<div class="line"><span class="lineno"> 2989</span>    <span class="keywordflow">if</span> (lobe &amp;&amp; <a class="code hl_function" href="namespacemoonray_1_1shading.html#a3f48fc9ed6daa4215bb482a701f34cfd">shading::aovLabelIsTransformed</a>(lobe-&gt;getLabel())) {</div>
+<div class="line"><span class="lineno"> 2990</span>        result = <a class="code hl_function" href="namespacemoonray_1_1shading.html#afc249d4da4d230bdd6bcd555fd387d92">shading::aovDecodeLpeLabel</a>(lobe-&gt;getLabel());</div>
+<div class="line"><span class="lineno"> 2991</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno"> 2992</span>        <span class="comment">// no lobe, or a lobe with label = 0 (no label assigned)</span></div>
+<div class="line"><span class="lineno"> 2993</span>        <span class="comment">// will use the material label, if assigned</span></div>
+<div class="line"><span class="lineno"> 2994</span>        MNRY_ASSERT(!lobe || lobe-&gt;getLabel() == 0);</div>
+<div class="line"><span class="lineno"> 2995</span>        result = bsdf.getLpeMaterialLabelId();</div>
+<div class="line"><span class="lineno"> 2996</span>    }</div>
+<div class="line"><span class="lineno"> 2997</span> </div>
+<div class="line"><span class="lineno"> 2998</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno"> 2999</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a3f48fc9ed6daa4215bb482a701f34cfd"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a3f48fc9ed6daa4215bb482a701f34cfd">moonray::shading::aovLabelIsTransformed</a></div><div class="ttdeci">bool aovLabelIsTransformed(int label)</div><div class="ttdef"><b>Definition:</b> <a href="_aov_labels_8h_source.html#l00030">AovLabels.h:30</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_afc249d4da4d230bdd6bcd555fd387d92"><div class="ttname"><a href="namespacemoonray_1_1shading.html#afc249d4da4d230bdd6bcd555fd387d92">moonray::shading::aovDecodeLpeLabel</a></div><div class="ttdeci">int aovDecodeLpeLabel(int encodedLabel)</div><div class="ttdef"><b>Definition:</b> <a href="_aov_labels_8h_source.html#l00042">AovLabels.h:42</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaf23b56b675b894ad28d5d4b2694ecac" name="aaf23b56b675b894ad28d5d4b2694ecac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf23b56b675b894ad28d5d4b2694ecac">&#9670;&#160;</a></span>computeScatterEventLabelIdVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int moonray::pbr::LightAovs::computeScatterEventLabelIdVector </td>
+          <td>(</td>
+          <td class="paramtype">const shading::Bsdfv &amp;&#160;</td>
+          <td class="paramname"><em>bsdf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const shading::BsdfLobev *&#160;</td>
+          <td class="paramname"><em>lobe</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03003">3003</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 3004</span>{</div>
+<div class="line"><span class="lineno"> 3005</span>    <span class="keywordtype">int</span> result = <a class="code hl_variable" href="namespacemoonray_1_1lpe.html#afc7042fdd4a1c528313a0f1ceb20c15a">lpe::sNoLabel</a>; <span class="comment">// no labels</span></div>
+<div class="line"><span class="lineno"> 3006</span> </div>
+<div class="line"><span class="lineno"> 3007</span>    <span class="keywordflow">if</span> (lobe &amp;&amp; <a class="code hl_function" href="namespacemoonray_1_1shading.html#a3f48fc9ed6daa4215bb482a701f34cfd">shading::aovLabelIsTransformed</a>(<a class="code hl_function" href="namespacemoonray_1_1shading.html#a0cb0c27a942b8d2db769ca77b0d3a078">shading::getLabel</a>(*lobe))) {</div>
+<div class="line"><span class="lineno"> 3008</span>        result = <a class="code hl_function" href="namespacemoonray_1_1shading.html#afc249d4da4d230bdd6bcd555fd387d92">shading::aovDecodeLpeLabel</a>(<a class="code hl_function" href="namespacemoonray_1_1shading.html#a0cb0c27a942b8d2db769ca77b0d3a078">shading::getLabel</a>(*lobe));</div>
+<div class="line"><span class="lineno"> 3009</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno"> 3010</span>        <span class="comment">// no lobe, or a lobe with label = 0 (no label assigned)</span></div>
+<div class="line"><span class="lineno"> 3011</span>        <span class="comment">// will use the material label, if assigned</span></div>
+<div class="line"><span class="lineno"> 3012</span>        MNRY_ASSERT(!lobe || <a class="code hl_function" href="namespacemoonray_1_1shading.html#a0cb0c27a942b8d2db769ca77b0d3a078">shading::getLabel</a>(*lobe) == 0);</div>
+<div class="line"><span class="lineno"> 3013</span>        result = <a class="code hl_function" href="namespacemoonray_1_1shading.html#a70f90dacddd8a9af976f661dcfbecc16">shading::getLpeMaterialLabelId</a>(bsdf);</div>
+<div class="line"><span class="lineno"> 3014</span>    }</div>
+<div class="line"><span class="lineno"> 3015</span> </div>
+<div class="line"><span class="lineno"> 3016</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno"> 3017</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a0cb0c27a942b8d2db769ca77b0d3a078"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a0cb0c27a942b8d2db769ca77b0d3a078">moonray::shading::getLabel</a></div><div class="ttdeci">int getLabel(const BsdfLobev &amp;lobev)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdfv_8h_source.html#l00044">Bsdfv.h:44</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a70f90dacddd8a9af976f661dcfbecc16"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a70f90dacddd8a9af976f661dcfbecc16">moonray::shading::getLpeMaterialLabelId</a></div><div class="ttdeci">int getLpeMaterialLabelId(const Bsdfv &amp;bsdfv)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdfv_8h_source.html#l00032">Bsdfv.h:32</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3ae95923076178bf452e70b7728054b5" name="a3ae95923076178bf452e70b7728054b5"></a>
@@ -196,7 +524,51 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03083">3083</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 3084</span>{</div>
+<div class="line"><span class="lineno"> 3085</span>    MNRY_ASSERT(!mFinalized);</div>
+<div class="line"><span class="lineno"> 3086</span>    <span class="keywordflow">if</span> (mFinalized) <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a1a4e28f5312500e8ff93712b9e49b21dabe149cd99f78431b324e2282ef81e7d2">AOV_SCHEMA_ID_UNKNOWN</a>;</div>
+<div class="line"><span class="lineno"> 3087</span> </div>
+<div class="line"><span class="lineno"> 3088</span>    <span class="keywordtype">int</span> result = <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a1a4e28f5312500e8ff93712b9e49b21dabe149cd99f78431b324e2282ef81e7d2">AOV_SCHEMA_ID_UNKNOWN</a>;</div>
+<div class="line"><span class="lineno"> 3089</span> </div>
+<div class="line"><span class="lineno"> 3090</span>    std::string newLpe = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a7c4444ab8f526a624353922287cfc5a4">parseFlagsFromLpePrefix</a>(lpe, prefixFlags);</div>
+<div class="line"><span class="lineno"> 3091</span>    newLpe = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#aa87bfcf5dc17ddf905b6c5a470ae6f4b">replaceLpeAliases</a>(newLpe);</div>
+<div class="line"><span class="lineno"> 3092</span>    newLpe = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#ac59b174e8eea9aa1d5d4ec368c364f6c">expandLpeLabels</a>(newLpe);</div>
+<div class="line"><span class="lineno"> 3093</span> </div>
+<div class="line"><span class="lineno"> 3094</span>    <span class="comment">// Both light and visibility aovs use the same state machine</span></div>
+<div class="line"><span class="lineno"> 3095</span>    <span class="comment">// but they have different start points to their ids</span></div>
+<div class="line"><span class="lineno"> 3096</span>    <span class="comment">// which distinguishes a light aov from a visibility aov.</span></div>
+<div class="line"><span class="lineno"> 3097</span>    <span class="keywordflow">if</span> (visibility) {</div>
+<div class="line"><span class="lineno"> 3098</span>        <span class="comment">// If there are so many visibility aovs that the id moves into the</span></div>
+<div class="line"><span class="lineno"> 3099</span>        <span class="comment">// light aov range, then we do not create the entry.</span></div>
+<div class="line"><span class="lineno"> 3100</span>        <span class="keywordflow">if</span> (mNextVisibilityAovSchemaId &gt;= <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a1a4e28f5312500e8ff93712b9e49b21da3a9fe1072c9d67d3104001142f25c956">AOV_SCHEMA_ID_LIGHT_AOV</a>) {</div>
+<div class="line"><span class="lineno"> 3101</span>            scene_rdl2::logging::Logger::error</div>
+<div class="line"><span class="lineno"> 3102</span>                (scene_rdl2::util::buildString(<span class="stringliteral">&quot;There are too many visibility aovs &quot;</span></div>
+<div class="line"><span class="lineno"> 3103</span>                                   <span class="stringliteral">&quot;already in use. Maximum allowed: &quot;</span>,</div>
+<div class="line"><span class="lineno"> 3104</span>                                   std::to_string(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#ac8301e048c9958169f998710e3ce18b4">AOV_MAX_RANGE_TYPE</a> - 1)));</div>
+<div class="line"><span class="lineno"> 3105</span>            <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno"> 3106</span>        }</div>
+<div class="line"><span class="lineno"> 3107</span>        <span class="keywordtype">int</span> error = mLpeStateMachine.addExpression(newLpe, mNextVisibilityAovSchemaId);</div>
+<div class="line"><span class="lineno"> 3108</span>        <span class="keywordflow">if</span> (!error) {</div>
+<div class="line"><span class="lineno"> 3109</span>            result = mNextVisibilityAovSchemaId;</div>
+<div class="line"><span class="lineno"> 3110</span>            ++mNextVisibilityAovSchemaId;</div>
+<div class="line"><span class="lineno"> 3111</span>        }</div>
+<div class="line"><span class="lineno"> 3112</span> </div>
+<div class="line"><span class="lineno"> 3113</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno"> 3114</span>        <span class="keywordtype">int</span> error = mLpeStateMachine.addExpression(newLpe, mNextLightAovSchemaId);</div>
+<div class="line"><span class="lineno"> 3115</span>        <span class="keywordflow">if</span> (!error) {</div>
+<div class="line"><span class="lineno"> 3116</span>            result = mNextLightAovSchemaId;</div>
+<div class="line"><span class="lineno"> 3117</span>            ++mNextLightAovSchemaId;</div>
+<div class="line"><span class="lineno"> 3118</span>        }</div>
+<div class="line"><span class="lineno"> 3119</span>    }</div>
+<div class="line"><span class="lineno"> 3120</span> </div>
+<div class="line"><span class="lineno"> 3121</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno"> 3122</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_aovs_html_aa87bfcf5dc17ddf905b6c5a470ae6f4b"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_aovs.html#aa87bfcf5dc17ddf905b6c5a470ae6f4b">moonray::pbr::LightAovs::replaceLpeAliases</a></div><div class="ttdeci">static std::string replaceLpeAliases(const std::string &amp;lpe)</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8cc_source.html#l03020">Aov.cc:3020</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_aovs_html_ac59b174e8eea9aa1d5d4ec368c364f6c"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_aovs.html#ac59b174e8eea9aa1d5d4ec368c364f6c">moonray::pbr::LightAovs::expandLpeLabels</a></div><div class="ttdeci">std::string expandLpeLabels(const std::string &amp;lpe) const</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8cc_source.html#l03384">Aov.cc:3384</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a1a4e28f5312500e8ff93712b9e49b21dabe149cd99f78431b324e2282ef81e7d2"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a1a4e28f5312500e8ff93712b9e49b21dabe149cd99f78431b324e2282ef81e7d2">moonray::pbr::AOV_SCHEMA_ID_UNKNOWN</a></div><div class="ttdeci">@ AOV_SCHEMA_ID_UNKNOWN</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00063">Aov.h:63</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a7c4444ab8f526a624353922287cfc5a4"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a7c4444ab8f526a624353922287cfc5a4">moonray::pbr::parseFlagsFromLpePrefix</a></div><div class="ttdeci">static std::string parseFlagsFromLpePrefix(const std::string &amp;lpe, int &amp;flag)</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8cc_source.html#l03046">Aov.cc:3046</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_ac8301e048c9958169f998710e3ce18b4"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ac8301e048c9958169f998710e3ce18b4">moonray::pbr::AOV_MAX_RANGE_TYPE</a></div><div class="ttdeci">static const int AOV_MAX_RANGE_TYPE</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00045">Aov.h:45</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aeb6070132e1302b81652dcac13f9c20a" name="aeb6070132e1302b81652dcac13f9c20a"></a>
@@ -232,7 +604,21 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03323">3323</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 3324</span>{</div>
+<div class="line"><span class="lineno"> 3325</span>    MNRY_ASSERT(mFinalized);</div>
+<div class="line"><span class="lineno"> 3326</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#a66ba250a271f997fa9403c8963e1a1c8">hasEntries</a>()) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno"> 3327</span>    <span class="keywordflow">if</span> (lpeStateId &lt; 0) <span class="keywordflow">return</span> lpeStateId;</div>
+<div class="line"><span class="lineno"> 3328</span> </div>
+<div class="line"><span class="lineno"> 3329</span>    <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(pbrTls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a74ab84f96e330b4fa651881c3828f23a">EXCL_ACCUM_AOVS</a>);</div>
+<div class="line"><span class="lineno"> 3330</span> </div>
+<div class="line"><span class="lineno"> 3331</span>    <span class="comment">// labels</span></div>
+<div class="line"><span class="lineno"> 3332</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> labelId = computeScatterEventLabelId&lt;shading::BsdfLobe&gt;(bsdf, <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno"> 3333</span> </div>
+<div class="line"><span class="lineno"> 3334</span>    <span class="keywordflow">return</span> mLpeStateMachine.transition(lpeStateId, lpe::EVENT_TYPE_EMISSION,</div>
+<div class="line"><span class="lineno"> 3335</span>                                       lpe::EVENT_SCATTERING_TYPE_NONE,</div>
+<div class="line"><span class="lineno"> 3336</span>                                       labelId);</div>
+<div class="line"><span class="lineno"> 3337</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac719345281dc21af1ecd9cc6e46f7436" name="ac719345281dc21af1ecd9cc6e46f7436"></a>
@@ -268,7 +654,111 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03340">3340</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 3341</span>{</div>
+<div class="line"><span class="lineno"> 3342</span>    MNRY_ASSERT(mFinalized);</div>
+<div class="line"><span class="lineno"> 3343</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#a66ba250a271f997fa9403c8963e1a1c8">hasEntries</a>()) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno"> 3344</span>    <span class="keywordflow">if</span> (lpeStateId &lt; 0) <span class="keywordflow">return</span> lpeStateId;</div>
+<div class="line"><span class="lineno"> 3345</span> </div>
+<div class="line"><span class="lineno"> 3346</span>    <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(pbrTls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a74ab84f96e330b4fa651881c3828f23a">EXCL_ACCUM_AOVS</a>);</div>
+<div class="line"><span class="lineno"> 3347</span>    <span class="keywordflow">return</span> mLpeStateMachine.transition(lpeStateId, lpe::EVENT_TYPE_EMISSION,</div>
+<div class="line"><span class="lineno"> 3348</span>                                       lpe::EVENT_SCATTERING_TYPE_NONE,</div>
+<div class="line"><span class="lineno"> 3349</span>                                       volumeLabelId);</div>
+<div class="line"><span class="lineno"> 3350</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac59b174e8eea9aa1d5d4ec368c364f6c" name="ac59b174e8eea9aa1d5d4ec368c364f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac59b174e8eea9aa1d5d4ec368c364f6c">&#9670;&#160;</a></span>expandLpeLabels()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string moonray::pbr::LightAovs::expandLpeLabels </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>lpe</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03384">3384</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 3385</span>{</div>
+<div class="line"><span class="lineno"> 3386</span>    <span class="comment">// Events that take place on bsdf and bssrdf lobes can</span></div>
+<div class="line"><span class="lineno"> 3387</span>    <span class="comment">// have a single, user defined label.  A label on a lobe is</span></div>
+<div class="line"><span class="lineno"> 3388</span>    <span class="comment">// built from 2 parts: a material_label and a lobe_label.  The</span></div>
+<div class="line"><span class="lineno"> 3389</span>    <span class="comment">// material_label is set by the end user as an attribute on the</span></div>
+<div class="line"><span class="lineno"> 3390</span>    <span class="comment">// material itself.  The lobe label is defined by the shader</span></div>
+<div class="line"><span class="lineno"> 3391</span>    <span class="comment">// writer and is set in code.  When only a lobe label is provided,</span></div>
+<div class="line"><span class="lineno"> 3392</span>    <span class="comment">// the label used to match in light path expressions is just &#39;lobe_label&#39;.</span></div>
+<div class="line"><span class="lineno"> 3393</span>    <span class="comment">// simiarly, when only a material_label is provided, the lpe label is</span></div>
+<div class="line"><span class="lineno"> 3394</span>    <span class="comment">// &#39;material_label&#39;.  When both are provided the matching label is</span></div>
+<div class="line"><span class="lineno"> 3395</span>    <span class="comment">// a concatenation of the two &#39;material_label.lobe_label&#39;.</span></div>
+<div class="line"><span class="lineno"> 3396</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno"> 3397</span>    <span class="comment">// Unfortunately, a consequence of this behavior is that specifying just</span></div>
+<div class="line"><span class="lineno"> 3398</span>    <span class="comment">// &#39;material_label&#39; to match all lobes in a material or &#39;lobe_label&#39;</span></div>
+<div class="line"><span class="lineno"> 3399</span>    <span class="comment">// to match all lobes with this label regardless of material does not work.</span></div>
+<div class="line"><span class="lineno"> 3400</span>    <span class="comment">// Once both a lobe label and material label exist, the concatendated label</span></div>
+<div class="line"><span class="lineno"> 3401</span>    <span class="comment">// must be used or else the event will not match.</span></div>
+<div class="line"><span class="lineno"> 3402</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno"> 3403</span>    <span class="comment">// Consider a material that defines 3 lobe labels: clearcoat, diffuse, and specular.</span></div>
+<div class="line"><span class="lineno"> 3404</span>    <span class="comment">// Further assume the user assigns a material label, &#39;poppy&#39;.  Then in order</span></div>
+<div class="line"><span class="lineno"> 3405</span>    <span class="comment">// to match all the lobes in material poppy, the lpe must be written as</span></div>
+<div class="line"><span class="lineno"> 3406</span>    <span class="comment">//    [&#39;poppy.clearcoat&#39;&#39;poppy.diffuse&#39;&#39;poppy.specular&#39;]</span></div>
+<div class="line"><span class="lineno"> 3407</span>    <span class="comment">// this is verbose and error prone.  If the intention is to capture all of poppy,</span></div>
+<div class="line"><span class="lineno"> 3408</span>    <span class="comment">// then a shader writer just adding a single new label to the material will</span></div>
+<div class="line"><span class="lineno"> 3409</span>    <span class="comment">// break the expression.</span></div>
+<div class="line"><span class="lineno"> 3410</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno"> 3411</span>    <span class="comment">// To solve this problem, this function searches the expression for labels that</span></div>
+<div class="line"><span class="lineno"> 3412</span>    <span class="comment">// match known material labels in the scene.  It then replaces this label with</span></div>
+<div class="line"><span class="lineno"> 3413</span>    <span class="comment">// the expanded set of labels.  In the previous example:</span></div>
+<div class="line"><span class="lineno"> 3414</span>    <span class="comment">//    &#39;poppy&#39; =&gt; [&#39;poppy&#39;&#39;poppy.clearcoat&#39;&#39;poppy.diffuse&#39;&#39;poppy.specular&#39;]</span></div>
+<div class="line"><span class="lineno"> 3415</span>    <span class="comment">// Note that we keep the original &#39;poppy&#39; in the LPE  as well.  This is to</span></div>
+<div class="line"><span class="lineno"> 3416</span>    <span class="comment">// handle the case where some materials with the label &#39;poppy&#39; define</span></div>
+<div class="line"><span class="lineno"> 3417</span>    <span class="comment">// lobes and some do not.  This could happen when instances of different</span></div>
+<div class="line"><span class="lineno"> 3418</span>    <span class="comment">// classes define the same material label.</span></div>
+<div class="line"><span class="lineno"> 3419</span> </div>
+<div class="line"><span class="lineno"> 3420</span>    std::string newLpe = lpe;</div>
+<div class="line"><span class="lineno"> 3421</span>    <span class="keywordtype">size_t</span> tickOpen = newLpe.find_first_of(<span class="charliteral">&#39;\&#39;&#39;</span>);</div>
+<div class="line"><span class="lineno"> 3422</span>    <span class="keywordflow">while</span> (tickOpen != std::string::npos) {</div>
+<div class="line"><span class="lineno"> 3423</span>        <span class="keywordtype">size_t</span> tickClose = newLpe.find_first_of(<span class="charliteral">&#39;\&#39;&#39;</span>, tickOpen + 1);</div>
+<div class="line"><span class="lineno"> 3424</span>        <span class="keywordflow">if</span> (!tickClose) {</div>
+<div class="line"><span class="lineno"> 3425</span>            <span class="comment">// This indicates a parse error, it will be reported when</span></div>
+<div class="line"><span class="lineno"> 3426</span>            <span class="comment">// the lpe is parsed.  For now we just abandon the substitution</span></div>
+<div class="line"><span class="lineno"> 3427</span>            <span class="comment">// and return the unmodified input</span></div>
+<div class="line"><span class="lineno"> 3428</span>            <span class="keywordflow">return</span> lpe;</div>
+<div class="line"><span class="lineno"> 3429</span>        }</div>
+<div class="line"><span class="lineno"> 3430</span>        <span class="comment">// get the label</span></div>
+<div class="line"><span class="lineno"> 3431</span>        <span class="keyword">const</span> std::string label = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#abceb285c9915098872654198bf5b0b16">trim</a>(newLpe.substr(tickOpen + 1, tickClose - tickOpen - 1));</div>
+<div class="line"><span class="lineno"> 3432</span>        LabelSubstitutions::const_iterator itr = mLabelSubstitutions.find(label);</div>
+<div class="line"><span class="lineno"> 3433</span>        <span class="keywordflow">if</span> (itr != mLabelSubstitutions.end()) {</div>
+<div class="line"><span class="lineno"> 3434</span>            newLpe.replace(tickOpen, tickClose - tickOpen + 1, itr-&gt;second);</div>
+<div class="line"><span class="lineno"> 3435</span>            <span class="comment">// search for next tick</span></div>
+<div class="line"><span class="lineno"> 3436</span>            tickOpen = newLpe.find_first_of(<span class="charliteral">&#39;\&#39;&#39;</span>, tickOpen + itr-&gt;second.length());</div>
+<div class="line"><span class="lineno"> 3437</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno"> 3438</span>            <span class="comment">// label is fine as is</span></div>
+<div class="line"><span class="lineno"> 3439</span>            tickOpen = newLpe.find_first_of(<span class="charliteral">&#39;\&#39;&#39;</span>, tickClose + 1);</div>
+<div class="line"><span class="lineno"> 3440</span>        }</div>
+<div class="line"><span class="lineno"> 3441</span>    }</div>
+<div class="line"><span class="lineno"> 3442</span> </div>
+<div class="line"><span class="lineno"> 3443</span>    <span class="comment">// DEBUG</span></div>
+<div class="line"><span class="lineno"> 3444</span>    <span class="keywordflow">if</span> (newLpe != lpe) {</div>
+<div class="line"><span class="lineno"> 3445</span>        scene_rdl2::logging::Logger::info(<span class="stringliteral">&quot;[MCRT-RENDER] LPE label expansion: &quot;</span>, lpe, <span class="stringliteral">&quot; ==&gt; &quot;</span>, newLpe);</div>
+<div class="line"><span class="lineno"> 3446</span>    }</div>
+<div class="line"><span class="lineno"> 3447</span> </div>
+<div class="line"><span class="lineno"> 3448</span>    <span class="keywordflow">return</span> newLpe;</div>
+<div class="line"><span class="lineno"> 3449</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_abceb285c9915098872654198bf5b0b16"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#abceb285c9915098872654198bf5b0b16">moonray::pbr::trim</a></div><div class="ttdeci">static std::string trim(const std::string &amp;in)</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8cc_source.html#l01110">Aov.cc:1110</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8ec4e21f0dfe2b53894486f88e93ee2d" name="a8ec4e21f0dfe2b53894486f88e93ee2d"></a>
@@ -304,7 +794,20 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03264">3264</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 3265</span>{</div>
+<div class="line"><span class="lineno"> 3266</span>    MNRY_ASSERT(mFinalized);</div>
+<div class="line"><span class="lineno"> 3267</span>    MNRY_ASSERT(labelId &gt;= 0);  <span class="comment">// extra aov events require labels</span></div>
+<div class="line"><span class="lineno"> 3268</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#a66ba250a271f997fa9403c8963e1a1c8">hasEntries</a>()) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno"> 3269</span>    <span class="keywordflow">if</span> (lpeStateId &lt; 0) <span class="keywordflow">return</span> lpeStateId;</div>
+<div class="line"><span class="lineno"> 3270</span> </div>
+<div class="line"><span class="lineno"> 3271</span>    <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(pbrTls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a74ab84f96e330b4fa651881c3828f23a">EXCL_ACCUM_AOVS</a>);</div>
+<div class="line"><span class="lineno"> 3272</span> </div>
+<div class="line"><span class="lineno"> 3273</span>    <span class="keywordflow">return</span> mLpeStateMachine.transition(lpeStateId,</div>
+<div class="line"><span class="lineno"> 3274</span>                                       lpe::EVENT_TYPE_EXTRA,</div>
+<div class="line"><span class="lineno"> 3275</span>                                       lpe::EVENT_SCATTERING_TYPE_NONE,</div>
+<div class="line"><span class="lineno"> 3276</span>                                       labelId);</div>
+<div class="line"><span class="lineno"> 3277</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af731f086d50cc92356fc2f9221263df2" name="af731f086d50cc92356fc2f9221263df2"></a>
@@ -323,7 +826,25 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03137">3137</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 3138</span>{</div>
+<div class="line"><span class="lineno"> 3139</span>    MNRY_ASSERT(!mFinalized);</div>
+<div class="line"><span class="lineno"> 3140</span>    <span class="keywordflow">if</span> (mFinalized) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno"> 3141</span> </div>
+<div class="line"><span class="lineno"> 3142</span>    <span class="comment">// only build the machine if we have entries</span></div>
+<div class="line"><span class="lineno"> 3143</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#a66ba250a271f997fa9403c8963e1a1c8">hasEntries</a>()) {</div>
+<div class="line"><span class="lineno"> 3144</span>        mLpeStateMachine.build();</div>
+<div class="line"><span class="lineno"> 3145</span>    }</div>
+<div class="line"><span class="lineno"> 3146</span> </div>
+<div class="line"><span class="lineno"> 3147</span>    <span class="comment">// get label ids for the background extra aovs</span></div>
+<div class="line"><span class="lineno"> 3148</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_aovs_1_1_background_extra_aovs.html#aa22d96361c2f2e28b0ba4f784a4b5adb">BackgroundExtraAovs::sNum</a>; ++i) {</div>
+<div class="line"><span class="lineno"> 3149</span>        mBackgroundExtraAovs[i].mLabelId = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#a382e86772ee5847432e42a4256cbe37a">getLabelId</a>(mBackgroundExtraAovs[i].mLabel);</div>
+<div class="line"><span class="lineno"> 3150</span>    }</div>
+<div class="line"><span class="lineno"> 3151</span> </div>
+<div class="line"><span class="lineno"> 3152</span>    mFinalized = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno"> 3153</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_aovs_html_a382e86772ee5847432e42a4256cbe37a"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_aovs.html#a382e86772ee5847432e42a4256cbe37a">moonray::pbr::LightAovs::getLabelId</a></div><div class="ttdeci">int getLabelId(const std::string &amp;label) const</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8cc_source.html#l03125">Aov.cc:3125</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_light_aovs_1_1_background_extra_aovs_html_aa22d96361c2f2e28b0ba4f784a4b5adb"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_aovs_1_1_background_extra_aovs.html#aa22d96361c2f2e28b0ba4f784a4b5adb">moonray::pbr::LightAovs::BackgroundExtraAovs::sNum</a></div><div class="ttdeci">static const int sNum</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00793">Aov.h:793</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7fbcb892db701a94467ba224be3351c4" name="a7fbcb892db701a94467ba224be3351c4"></a>
@@ -350,7 +871,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8h_source.html#l00814">814</a> of file <a class="el" href="_aov_8h_source.html">Aov.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  814</span>{ <span class="keywordflow">return</span> mBackgroundExtraAovs; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a382e86772ee5847432e42a4256cbe37a" name="a382e86772ee5847432e42a4256cbe37a"></a>
@@ -370,7 +892,10 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03125">3125</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 3126</span>{</div>
+<div class="line"><span class="lineno"> 3127</span>    <span class="keywordflow">return</span> mLpeStateMachine.getLabelId(label);</div>
+<div class="line"><span class="lineno"> 3128</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aee5ebf602878ae7cd6169b8604c2bf29" name="aee5ebf602878ae7cd6169b8604c2bf29"></a>
@@ -390,7 +915,10 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03131">3131</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 3132</span>{</div>
+<div class="line"><span class="lineno"> 3133</span>    <span class="keywordflow">return</span> mLpeStateMachine.getLabelId(label);</div>
+<div class="line"><span class="lineno"> 3134</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a66ba250a271f997fa9403c8963e1a1c8" name="a66ba250a271f997fa9403c8963e1a1c8"></a>
@@ -417,7 +945,11 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8h_source.html#l00880">880</a> of file <a class="el" href="_aov_8h_source.html">Aov.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  880</span>                            {</div>
+<div class="line"><span class="lineno">  881</span>        <span class="keywordflow">return</span> mNextLightAovSchemaId &gt; <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a1a4e28f5312500e8ff93712b9e49b21da3a9fe1072c9d67d3104001142f25c956">AOV_SCHEMA_ID_LIGHT_AOV</a> ||</div>
+<div class="line"><span class="lineno">  882</span>               mNextVisibilityAovSchemaId &gt; <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a1a4e28f5312500e8ff93712b9e49b21dae25e15f479cbc3f2eb992980f20cc95e">AOV_SCHEMA_ID_VISIBILITY_AOV</a>;</div>
+<div class="line"><span class="lineno">  883</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2a266a8afba1922294f579f48d37e232" name="a2a266a8afba1922294f579f48d37e232"></a>
@@ -444,7 +976,10 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8h_source.html#l00886">886</a> of file <a class="el" href="_aov_8h_source.html">Aov.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  886</span>                                      {</div>
+<div class="line"><span class="lineno">  887</span>        <span class="keywordflow">return</span> mNextVisibilityAovSchemaId &gt; <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a1a4e28f5312500e8ff93712b9e49b21dae25e15f479cbc3f2eb992980f20cc95e">AOV_SCHEMA_ID_VISIBILITY_AOV</a>;</div>
+<div class="line"><span class="lineno">  888</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1a637f7f6d597e901e2f60588d18de78" name="a1a637f7f6d597e901e2f60588d18de78"></a>
@@ -472,7 +1007,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8h_source.html#l00800">800</a> of file <a class="el" href="_aov_8h_source.html">Aov.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  800</span>{ <a class="code hl_define" href="_aov_8hh.html#a8782a43f6d4c863e5ee8e97434168ceb">LIGHT_AOVS_VALIDATION</a>; }</div>
+<div class="ttc" id="a_aov_8hh_html_a8782a43f6d4c863e5ee8e97434168ceb"><div class="ttname"><a href="_aov_8hh.html#a8782a43f6d4c863e5ee8e97434168ceb">LIGHT_AOVS_VALIDATION</a></div><div class="ttdeci">#define LIGHT_AOVS_VALIDATION</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8hh_source.html#l00094">Aov.hh:94</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afb5aed5a6cb72e9222869f8728ee6a69" name="afb5aed5a6cb72e9222869f8728ee6a69"></a>
@@ -508,7 +1045,16 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03372">3372</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 3373</span>{</div>
+<div class="line"><span class="lineno"> 3374</span>    MNRY_ASSERT(mFinalized);</div>
+<div class="line"><span class="lineno"> 3375</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#a66ba250a271f997fa9403c8963e1a1c8">hasEntries</a>()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno"> 3376</span>    <span class="keywordflow">if</span> (lpeStateId &lt; 0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno"> 3377</span> </div>
+<div class="line"><span class="lineno"> 3378</span>    <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(pbrTls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a74ab84f96e330b4fa651881c3828f23a">EXCL_ACCUM_AOVS</a>);</div>
+<div class="line"><span class="lineno"> 3379</span> </div>
+<div class="line"><span class="lineno"> 3380</span>    <span class="keywordflow">return</span> mLpeStateMachine.isValid(lpeStateId, aovSchemaId);</div>
+<div class="line"><span class="lineno"> 3381</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa0643888a11a113863444ee5af45faf6" name="aa0643888a11a113863444ee5af45faf6"></a>
@@ -544,7 +1090,20 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03248">3248</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 3249</span>{</div>
+<div class="line"><span class="lineno"> 3250</span>    MNRY_ASSERT(mFinalized);</div>
+<div class="line"><span class="lineno"> 3251</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#a66ba250a271f997fa9403c8963e1a1c8">hasEntries</a>()) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno"> 3252</span>    <span class="keywordflow">if</span> (lpeStateId &lt; 0) <span class="keywordflow">return</span> lpeStateId;</div>
+<div class="line"><span class="lineno"> 3253</span>    <span class="keywordflow">if</span> (!light) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno"> 3254</span> </div>
+<div class="line"><span class="lineno"> 3255</span>    <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(pbrTls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a74ab84f96e330b4fa651881c3828f23a">EXCL_ACCUM_AOVS</a>);</div>
+<div class="line"><span class="lineno"> 3256</span> </div>
+<div class="line"><span class="lineno"> 3257</span>    <span class="comment">// labels</span></div>
+<div class="line"><span class="lineno"> 3258</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> labelId = light-&gt;getLabelId();</div>
+<div class="line"><span class="lineno"> 3259</span>    <span class="keywordflow">return</span> mLpeStateMachine.transition(lpeStateId, lpe::EVENT_TYPE_LIGHT,</div>
+<div class="line"><span class="lineno"> 3260</span>                                       lpe::EVENT_SCATTERING_TYPE_NONE, labelId);</div>
+<div class="line"><span class="lineno"> 3261</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a508cbc2a6714113cd686f3e99003329d" name="a508cbc2a6714113cd686f3e99003329d"></a>
@@ -580,7 +1139,123 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03280">3280</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 3281</span>{</div>
+<div class="line"><span class="lineno"> 3282</span>    MNRY_ASSERT(mFinalized);</div>
+<div class="line"><span class="lineno"> 3283</span>    MNRY_ASSERT(labelId &gt;= 0);  <span class="comment">// material aov events require labels</span></div>
+<div class="line"><span class="lineno"> 3284</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#a66ba250a271f997fa9403c8963e1a1c8">hasEntries</a>()) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno"> 3285</span>    <span class="keywordflow">if</span> (lpeStateId &lt; 0) <span class="keywordflow">return</span> lpeStateId;</div>
+<div class="line"><span class="lineno"> 3286</span> </div>
+<div class="line"><span class="lineno"> 3287</span>    <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(pbrTls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a74ab84f96e330b4fa651881c3828f23a">EXCL_ACCUM_AOVS</a>);</div>
+<div class="line"><span class="lineno"> 3288</span> </div>
+<div class="line"><span class="lineno"> 3289</span>    <span class="keywordflow">return</span> mLpeStateMachine.transition(lpeStateId,</div>
+<div class="line"><span class="lineno"> 3290</span>                                       lpe::EVENT_TYPE_MATERIAL,</div>
+<div class="line"><span class="lineno"> 3291</span>                                       lpe::EVENT_SCATTERING_TYPE_NONE,</div>
+<div class="line"><span class="lineno"> 3292</span>                                       labelId);</div>
+<div class="line"><span class="lineno"> 3293</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a50ced5a1303f1c44620d3a35e49de7c7" name="a50ced5a1303f1c44620d3a35e49de7c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50ced5a1303f1c44620d3a35e49de7c7">&#9670;&#160;</a></span>MNRY_STATIC_ASSERT() <span class="overload">[1/2]</span></h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moonray::pbr::LightAovs::MNRY_STATIC_ASSERT </td>
+          <td>(</td>
+          <td class="paramtype">sizeof(<a class="el" href="classmoonray_1_1pbr_1_1_light_aovs.html#a46650ec52794090dfb5838f5ae47bfe3">LabelSubstitutions</a>)&#160;</td>
+          <td class="paramname"> = <code>=<a class="el" href="_aov_8hh.html#a0d023a2ef9776f5ebce960393e5ed24d">SIZEOF_LABELSUBSTITUTIONS</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89b8be35deedb94e18dbe06babe5c09f" name="a89b8be35deedb94e18dbe06babe5c09f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89b8be35deedb94e18dbe06babe5c09f">&#9670;&#160;</a></span>MNRY_STATIC_ASSERT() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moonray::pbr::LightAovs::MNRY_STATIC_ASSERT </td>
+          <td>(</td>
+          <td class="paramtype">sizeof(<a class="el" href="classmoonray_1_1lpe_1_1_state_machine.html">lpe::StateMachine</a>)&#160;</td>
+          <td class="paramname"> = <code>=<a class="el" href="_aov_8hh.html#ab3f5cf0543e2fef7a541074d782b4078">SIZEOF_LPE_STATEMACHINE</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa87bfcf5dc17ddf905b6c5a470ae6f4b" name="aa87bfcf5dc17ddf905b6c5a470ae6f4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa87bfcf5dc17ddf905b6c5a470ae6f4b">&#9670;&#160;</a></span>replaceLpeAliases()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string moonray::pbr::LightAovs::replaceLpeAliases </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>lpe</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03020">3020</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 3021</span>{</div>
+<div class="line"><span class="lineno"> 3022</span>    std::string val = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#abceb285c9915098872654198bf5b0b16">trim</a>(lpe);</div>
+<div class="line"><span class="lineno"> 3023</span>    <span class="keywordflow">if</span> (val == <span class="stringliteral">&quot;caustic&quot;</span>) {</div>
+<div class="line"><span class="lineno"> 3024</span>        <span class="comment">// add in G?</span></div>
+<div class="line"><span class="lineno"> 3025</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;CD[S]+[&lt;L.&gt;O]&quot;</span>;</div>
+<div class="line"><span class="lineno"> 3026</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (val == <span class="stringliteral">&quot;diffuse&quot;</span>) {</div>
+<div class="line"><span class="lineno"> 3027</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;CD[&lt;L.&gt;O]&quot;</span>;</div>
+<div class="line"><span class="lineno"> 3028</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (val == <span class="stringliteral">&quot;emission&quot;</span>) {</div>
+<div class="line"><span class="lineno"> 3029</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;CO&quot;</span>;</div>
+<div class="line"><span class="lineno"> 3030</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (val == <span class="stringliteral">&quot;glossy&quot;</span>) {</div>
+<div class="line"><span class="lineno"> 3031</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;CG[&lt;L.&gt;O]&quot;</span>;</div>
+<div class="line"><span class="lineno"> 3032</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (val == <span class="stringliteral">&quot;mirror&quot;</span>) {</div>
+<div class="line"><span class="lineno"> 3033</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;CS[&lt;L.&gt;O]&quot;</span>;</div>
+<div class="line"><span class="lineno"> 3034</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (val == <span class="stringliteral">&quot;reflection&quot;</span>) {</div>
+<div class="line"><span class="lineno"> 3035</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;C&lt;RS&gt;[DSG]+[&lt;L.&gt;O]&quot;</span>;</div>
+<div class="line"><span class="lineno"> 3036</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (val == <span class="stringliteral">&quot;translucent&quot;</span>) {</div>
+<div class="line"><span class="lineno"> 3037</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;C&lt;TD&gt;[DSG]+[&lt;L.&gt;O]&quot;</span>;</div>
+<div class="line"><span class="lineno"> 3038</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (val == <span class="stringliteral">&quot;transmission&quot;</span>) {</div>
+<div class="line"><span class="lineno"> 3039</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;C&lt;TS&gt;[DSG]+[&lt;L.&gt;O]&quot;</span>;</div>
+<div class="line"><span class="lineno"> 3040</span>    }</div>
+<div class="line"><span class="lineno"> 3041</span> </div>
+<div class="line"><span class="lineno"> 3042</span>    <span class="keywordflow">return</span> lpe;</div>
+<div class="line"><span class="lineno"> 3043</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a88cab8e534e23480706f5d43d7a38773" name="a88cab8e534e23480706f5d43d7a38773"></a>
@@ -622,7 +1297,42 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03170">3170</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 3172</span>{</div>
+<div class="line"><span class="lineno"> 3173</span>    MNRY_ASSERT(mFinalized);</div>
+<div class="line"><span class="lineno"> 3174</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#a66ba250a271f997fa9403c8963e1a1c8">hasEntries</a>()) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno"> 3175</span>    <span class="keywordflow">if</span> (lpeStateId &lt; 0) <span class="keywordflow">return</span> lpeStateId;</div>
+<div class="line"><span class="lineno"> 3176</span> </div>
+<div class="line"><span class="lineno"> 3177</span>    <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(pbrTls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a74ab84f96e330b4fa651881c3828f23a">EXCL_ACCUM_AOVS</a>);</div>
+<div class="line"><span class="lineno"> 3178</span> </div>
+<div class="line"><span class="lineno"> 3179</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> lobeType = lobe.getType();</div>
+<div class="line"><span class="lineno"> 3180</span> </div>
+<div class="line"><span class="lineno"> 3181</span>    <span class="comment">// Construct an event and event scattering type based on the lobe type</span></div>
+<div class="line"><span class="lineno"> 3182</span>    <a class="code hl_enumeration" href="namespacemoonray_1_1lpe.html#a3d10a93fe84cb87fa6efaf84aff8a633">lpe::EventType</a> ev = lpe::EVENT_TYPE_NONE;</div>
+<div class="line"><span class="lineno"> 3183</span>    <span class="keywordflow">if</span> (lobeType &amp; <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896">shading::BsdfLobe::REFLECTION</a>) ev = lpe::EVENT_TYPE_REFLECTION;</div>
+<div class="line"><span class="lineno"> 3184</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (lobeType &amp; <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aab7c69e9aa7cc2ad7de411f5b79c7c2e3">shading::BsdfLobe::TRANSMISSION</a>) ev = lpe::EVENT_TYPE_TRANSMISSION;</div>
+<div class="line"><span class="lineno"> 3185</span> </div>
+<div class="line"><span class="lineno"> 3186</span>    <a class="code hl_enumeration" href="namespacemoonray_1_1lpe.html#a48cb4376262c258114ddff2a70936ef1">lpe::EventScatteringType</a> evs = lpe::EVENT_SCATTERING_TYPE_NONE;</div>
+<div class="line"><span class="lineno"> 3187</span>    <span class="keywordflow">if</span> (lobeType &amp; <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aae808419a5284646a830fe444237f9024">shading::BsdfLobe::DIFFUSE</a>) evs = lpe::EVENT_SCATTERING_TYPE_DIFFUSE;</div>
+<div class="line"><span class="lineno"> 3188</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (lobeType &amp; <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa5dfce546f93a2a18aee27e4b801c198b">shading::BsdfLobe::GLOSSY</a>) evs = lpe::EVENT_SCATTERING_TYPE_GLOSSY;</div>
+<div class="line"><span class="lineno"> 3189</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (lobeType &amp; <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa64cc302ce6273484db08f1987b5cf337">shading::BsdfLobe::MIRROR</a>) evs = lpe::EVENT_SCATTERING_TYPE_MIRROR;</div>
+<div class="line"><span class="lineno"> 3190</span> </div>
+<div class="line"><span class="lineno"> 3191</span>    MNRY_ASSERT(ev != lpe::EVENT_TYPE_NONE);</div>
+<div class="line"><span class="lineno"> 3192</span>    MNRY_ASSERT(evs != lpe::EVENT_SCATTERING_TYPE_NONE);</div>
+<div class="line"><span class="lineno"> 3193</span> </div>
+<div class="line"><span class="lineno"> 3194</span>    <span class="comment">// labels</span></div>
+<div class="line"><span class="lineno"> 3195</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> labelId = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#ac4e9fa881316958c1b94a0e1d8f63db5">computeScatterEventLabelId</a>(bsdf, &amp;lobe);</div>
+<div class="line"><span class="lineno"> 3196</span> </div>
+<div class="line"><span class="lineno"> 3197</span>    <span class="keywordflow">return</span> mLpeStateMachine.transition(lpeStateId, ev, evs, labelId);</div>
+<div class="line"><span class="lineno"> 3198</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_aovs_html_ac4e9fa881316958c1b94a0e1d8f63db5"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_aovs.html#ac4e9fa881316958c1b94a0e1d8f63db5">moonray::pbr::LightAovs::computeScatterEventLabelId</a></div><div class="ttdeci">static int computeScatterEventLabelId(const shading::Bsdf &amp;bsdf, const LobeType *lobe)</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8cc_source.html#l02985">Aov.cc:2985</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896">moonray::shading::BsdfLobe::REFLECTION</a></div><div class="ttdeci">@ REFLECTION</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00079">Bsdf.h:79</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43aa5dfce546f93a2a18aee27e4b801c198b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa5dfce546f93a2a18aee27e4b801c198b">moonray::shading::BsdfLobe::GLOSSY</a></div><div class="ttdeci">@ GLOSSY</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00087">Bsdf.h:87</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43aa64cc302ce6273484db08f1987b5cf337"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa64cc302ce6273484db08f1987b5cf337">moonray::shading::BsdfLobe::MIRROR</a></div><div class="ttdeci">@ MIRROR</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00088">Bsdf.h:88</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43aab7c69e9aa7cc2ad7de411f5b79c7c2e3"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aab7c69e9aa7cc2ad7de411f5b79c7c2e3">moonray::shading::BsdfLobe::TRANSMISSION</a></div><div class="ttdeci">@ TRANSMISSION</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00080">Bsdf.h:80</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43aae808419a5284646a830fe444237f9024"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aae808419a5284646a830fe444237f9024">moonray::shading::BsdfLobe::DIFFUSE</a></div><div class="ttdeci">@ DIFFUSE</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00086">Bsdf.h:86</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1lpe_html_a3d10a93fe84cb87fa6efaf84aff8a633"><div class="ttname"><a href="namespacemoonray_1_1lpe.html#a3d10a93fe84cb87fa6efaf84aff8a633">moonray::lpe::EventType</a></div><div class="ttdeci">EventType</div><div class="ttdef"><b>Definition:</b> <a href="_event_8h_source.html#l00016">Event.h:16</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1lpe_html_a48cb4376262c258114ddff2a70936ef1"><div class="ttname"><a href="namespacemoonray_1_1lpe.html#a48cb4376262c258114ddff2a70936ef1">moonray::lpe::EventScatteringType</a></div><div class="ttdeci">EventScatteringType</div><div class="ttdef"><b>Definition:</b> <a href="_event_8h_source.html#l00020">Event.h:20</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac693541d0180aebf88dd2bb704aad35c" name="ac693541d0180aebf88dd2bb704aad35c"></a>
@@ -664,7 +1374,36 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03201">3201</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 3203</span>{</div>
+<div class="line"><span class="lineno"> 3204</span>    MNRY_ASSERT(mFinalized);</div>
+<div class="line"><span class="lineno"> 3205</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#a66ba250a271f997fa9403c8963e1a1c8">hasEntries</a>()) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno"> 3206</span>    <span class="keywordflow">if</span> (lpeStateId &lt; 0) <span class="keywordflow">return</span> lpeStateId;</div>
+<div class="line"><span class="lineno"> 3207</span> </div>
+<div class="line"><span class="lineno"> 3208</span>    <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(pbrTls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a74ab84f96e330b4fa651881c3828f23a">EXCL_ACCUM_AOVS</a>);</div>
+<div class="line"><span class="lineno"> 3209</span> </div>
+<div class="line"><span class="lineno"> 3210</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> lobeType = <a class="code hl_function" href="namespacemoonray_1_1shading.html#a1908bd355c464f7989bdc9d69ad6bbe0">shading::getType</a>(lobe);</div>
+<div class="line"><span class="lineno"> 3211</span> </div>
+<div class="line"><span class="lineno"> 3212</span>    <span class="comment">// Construct an event and event scattering type based on the lobe type</span></div>
+<div class="line"><span class="lineno"> 3213</span>    <a class="code hl_enumeration" href="namespacemoonray_1_1lpe.html#a3d10a93fe84cb87fa6efaf84aff8a633">lpe::EventType</a> ev = lpe::EVENT_TYPE_NONE;</div>
+<div class="line"><span class="lineno"> 3214</span>    <span class="keywordflow">if</span> (lobeType &amp; <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896">shading::BsdfLobe::REFLECTION</a>) ev = lpe::EVENT_TYPE_REFLECTION;</div>
+<div class="line"><span class="lineno"> 3215</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (lobeType &amp; <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aab7c69e9aa7cc2ad7de411f5b79c7c2e3">shading::BsdfLobe::TRANSMISSION</a>) ev = lpe::EVENT_TYPE_TRANSMISSION;</div>
+<div class="line"><span class="lineno"> 3216</span> </div>
+<div class="line"><span class="lineno"> 3217</span>    <a class="code hl_enumeration" href="namespacemoonray_1_1lpe.html#a48cb4376262c258114ddff2a70936ef1">lpe::EventScatteringType</a> evs = lpe::EVENT_SCATTERING_TYPE_NONE;</div>
+<div class="line"><span class="lineno"> 3218</span>    <span class="keywordflow">if</span> (lobeType &amp; <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aae808419a5284646a830fe444237f9024">shading::BsdfLobe::DIFFUSE</a>) evs = lpe::EVENT_SCATTERING_TYPE_DIFFUSE;</div>
+<div class="line"><span class="lineno"> 3219</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (lobeType &amp; <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa5dfce546f93a2a18aee27e4b801c198b">shading::BsdfLobe::GLOSSY</a>) evs = lpe::EVENT_SCATTERING_TYPE_GLOSSY;</div>
+<div class="line"><span class="lineno"> 3220</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (lobeType &amp; <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa64cc302ce6273484db08f1987b5cf337">shading::BsdfLobe::MIRROR</a>) evs = lpe::EVENT_SCATTERING_TYPE_MIRROR;</div>
+<div class="line"><span class="lineno"> 3221</span> </div>
+<div class="line"><span class="lineno"> 3222</span>    MNRY_ASSERT(ev != lpe::EVENT_TYPE_NONE);</div>
+<div class="line"><span class="lineno"> 3223</span>    MNRY_ASSERT(evs != lpe::EVENT_SCATTERING_TYPE_NONE);</div>
+<div class="line"><span class="lineno"> 3224</span> </div>
+<div class="line"><span class="lineno"> 3225</span>    <span class="comment">// labels</span></div>
+<div class="line"><span class="lineno"> 3226</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> labelId = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#aaf23b56b675b894ad28d5d4b2694ecac">computeScatterEventLabelIdVector</a>(bsdf, &amp;lobe);</div>
+<div class="line"><span class="lineno"> 3227</span> </div>
+<div class="line"><span class="lineno"> 3228</span>    <span class="keywordflow">return</span> mLpeStateMachine.transition(lpeStateId, ev, evs, labelId);</div>
+<div class="line"><span class="lineno"> 3229</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_aovs_html_aaf23b56b675b894ad28d5d4b2694ecac"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_aovs.html#aaf23b56b675b894ad28d5d4b2694ecac">moonray::pbr::LightAovs::computeScatterEventLabelIdVector</a></div><div class="ttdeci">static int computeScatterEventLabelIdVector(const shading::Bsdfv &amp;bsdf, const shading::BsdfLobev *lobe)</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8cc_source.html#l03003">Aov.cc:3003</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a1908bd355c464f7989bdc9d69ad6bbe0"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a1908bd355c464f7989bdc9d69ad6bbe0">moonray::shading::getType</a></div><div class="ttdeci">BsdfLobe::Type getType(const BsdfLobev &amp;lobev)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdfv_8h_source.html#l00036">Bsdfv.h:36</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2db58b37eb10932f897b6bc46fa1d48e" name="a2db58b37eb10932f897b6bc46fa1d48e"></a>
@@ -694,7 +1433,20 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03232">3232</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 3233</span>{</div>
+<div class="line"><span class="lineno"> 3234</span>    MNRY_ASSERT(mFinalized);</div>
+<div class="line"><span class="lineno"> 3235</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#a66ba250a271f997fa9403c8963e1a1c8">hasEntries</a>()) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno"> 3236</span>    <span class="keywordflow">if</span> (lpeStateId &lt; 0) <span class="keywordflow">return</span> lpeStateId;</div>
+<div class="line"><span class="lineno"> 3237</span> </div>
+<div class="line"><span class="lineno"> 3238</span>    <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(pbrTls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a74ab84f96e330b4fa651881c3828f23a">EXCL_ACCUM_AOVS</a>);</div>
+<div class="line"><span class="lineno"> 3239</span> </div>
+<div class="line"><span class="lineno"> 3240</span>    <span class="comment">// Construct an event and event scattering type based on the lobe type</span></div>
+<div class="line"><span class="lineno"> 3241</span>    <a class="code hl_enumeration" href="namespacemoonray_1_1lpe.html#a3d10a93fe84cb87fa6efaf84aff8a633">lpe::EventType</a> ev = lpe::EVENT_TYPE_TRANSMISSION;</div>
+<div class="line"><span class="lineno"> 3242</span>    <a class="code hl_enumeration" href="namespacemoonray_1_1lpe.html#a48cb4376262c258114ddff2a70936ef1">lpe::EventScatteringType</a> evs = lpe::EVENT_SCATTERING_TYPE_STRAIGHT;</div>
+<div class="line"><span class="lineno"> 3243</span> </div>
+<div class="line"><span class="lineno"> 3244</span>    <span class="keywordflow">return</span> mLpeStateMachine.transition(lpeStateId, ev, evs, <a class="code hl_variable" href="namespacemoonray_1_1lpe.html#afc7042fdd4a1c528313a0f1ceb20c15a">lpe::sNoLabel</a>);</div>
+<div class="line"><span class="lineno"> 3245</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab49037e737e8874fa4653103aa7f7f5b" name="ab49037e737e8874fa4653103aa7f7f5b"></a>
@@ -730,7 +1482,31 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03296">3296</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 3297</span>{</div>
+<div class="line"><span class="lineno"> 3298</span>    MNRY_ASSERT(mFinalized);</div>
+<div class="line"><span class="lineno"> 3299</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#a66ba250a271f997fa9403c8963e1a1c8">hasEntries</a>()) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno"> 3300</span>    <span class="keywordflow">if</span> (lpeStateId &lt; 0) <span class="keywordflow">return</span> lpeStateId;</div>
+<div class="line"><span class="lineno"> 3301</span> </div>
+<div class="line"><span class="lineno"> 3302</span>    <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(pbrTls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a74ab84f96e330b4fa651881c3828f23a">EXCL_ACCUM_AOVS</a>);</div>
+<div class="line"><span class="lineno"> 3303</span> </div>
+<div class="line"><span class="lineno"> 3304</span>    <span class="keyword">const</span> shading::Bssrdf* bssrdf = bsdf.getBssrdf();</div>
+<div class="line"><span class="lineno"> 3305</span>    <span class="keyword">const</span> shading::VolumeSubsurface* volumeSubsurface = bsdf.getVolumeSubsurface();</div>
+<div class="line"><span class="lineno"> 3306</span> </div>
+<div class="line"><span class="lineno"> 3307</span>    MNRY_ASSERT(bssrdf != <span class="keyword">nullptr</span> || volumeSubsurface != <span class="keyword">nullptr</span>,</div>
+<div class="line"><span class="lineno"> 3308</span>        <span class="stringliteral">&quot;subsurface event requires Bssrdf or VolumeSubsurface&quot;</span>);</div>
+<div class="line"><span class="lineno"> 3309</span> </div>
+<div class="line"><span class="lineno"> 3310</span>    <span class="comment">// labels</span></div>
+<div class="line"><span class="lineno"> 3311</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> labelId = (bssrdf != <span class="keyword">nullptr</span>) ?</div>
+<div class="line"><span class="lineno"> 3312</span>        <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#ac4e9fa881316958c1b94a0e1d8f63db5">computeScatterEventLabelId</a>(bsdf, bssrdf) :</div>
+<div class="line"><span class="lineno"> 3313</span>        <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#ac4e9fa881316958c1b94a0e1d8f63db5">computeScatterEventLabelId</a>(bsdf, volumeSubsurface);</div>
+<div class="line"><span class="lineno"> 3314</span> </div>
+<div class="line"><span class="lineno"> 3315</span>    <span class="comment">// TODO: we don&#39;t really have a subsurface event in our machine</span></div>
+<div class="line"><span class="lineno"> 3316</span>    <span class="comment">// RIS uses &lt;TD&gt; to indicate the start of a subsurface event, we&#39;ll</span></div>
+<div class="line"><span class="lineno"> 3317</span>    <span class="comment">// do the same for now.</span></div>
+<div class="line"><span class="lineno"> 3318</span>    <span class="keywordflow">return</span> mLpeStateMachine.transition(lpeStateId,</div>
+<div class="line"><span class="lineno"> 3319</span>        lpe::EVENT_TYPE_TRANSMISSION, lpe::EVENT_SCATTERING_TYPE_DIFFUSE, labelId);</div>
+<div class="line"><span class="lineno"> 3320</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acbb63f771350d27488b246299dce7253" name="acbb63f771350d27488b246299dce7253"></a>
@@ -760,6 +1536,47 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8cc_source.html#l03353">3353</a> of file <a class="el" href="_aov_8cc_source.html">Aov.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 3354</span>{</div>
+<div class="line"><span class="lineno"> 3355</span>    MNRY_ASSERT(mFinalized);</div>
+<div class="line"><span class="lineno"> 3356</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_aovs.html#a66ba250a271f997fa9403c8963e1a1c8">hasEntries</a>()) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno"> 3357</span>    <span class="keywordflow">if</span> (lpeStateId &lt; 0) <span class="keywordflow">return</span> lpeStateId;</div>
+<div class="line"><span class="lineno"> 3358</span> </div>
+<div class="line"><span class="lineno"> 3359</span>    <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(pbrTls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a74ab84f96e330b4fa651881c3828f23a">EXCL_ACCUM_AOVS</a>);</div>
+<div class="line"><span class="lineno"> 3360</span> </div>
+<div class="line"><span class="lineno"> 3361</span>    <span class="comment">// Set scattering type to none is a bit confusing. This is a volume</span></div>
+<div class="line"><span class="lineno"> 3362</span>    <span class="comment">// scattering event but not a surface scattering event, thus</span></div>
+<div class="line"><span class="lineno"> 3363</span>    <span class="comment">// reflection/transmission both not make sense to set.</span></div>
+<div class="line"><span class="lineno"> 3364</span>    <span class="comment">// We basically follow the industry convention for this notation</span></div>
+<div class="line"><span class="lineno"> 3365</span>    <span class="comment">// (use V token alone to represent a volume scattering event)</span></div>
+<div class="line"><span class="lineno"> 3366</span>    <span class="keywordflow">return</span> mLpeStateMachine.transition(lpeStateId, lpe::EVENT_TYPE_VOLUME,</div>
+<div class="line"><span class="lineno"> 3367</span>                                       lpe::EVENT_SCATTERING_TYPE_NONE,</div>
+<div class="line"><span class="lineno"> 3368</span>                                       <a class="code hl_variable" href="namespacemoonray_1_1lpe.html#afc7042fdd4a1c528313a0f1ceb20c15a">lpe::sNoLabel</a>);</div>
+<div class="line"><span class="lineno"> 3369</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="acfc1679b2830b040e531eddb3bc2d8ff" name="acfc1679b2830b040e531eddb3bc2d8ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfc1679b2830b040e531eddb3bc2d8ff">&#9670;&#160;</a></span>LIGHT_AOVS_MEMBERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moonray::pbr::LightAovs::LIGHT_AOVS_MEMBERS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_aov_8h_source.html#l00910">910</a> of file <a class="el" href="_aov_8h_source.html">Aov.h</a>.</p>
 
 </div>
 </div>
@@ -768,9 +1585,13 @@ Static Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/core/<a class="el" href="_aov_8cc_source.html">Aov.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_light_aovs.html">LightAovs</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

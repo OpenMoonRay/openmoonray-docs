@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,28 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html">TransmissionAlbedo</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_transmission_albedo.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_transmission_albedo-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::TransmissionAlbedo Class Reference</div></div>
 </div><!--header-->
@@ -61,6 +79,28 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ac62a752db9b45560fa30ddfb57c0f7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f8cf1d0ed418ced68e47251c51e46b5"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a8f8cf1d0ed418ced68e47251c51e46b5">netaRange</a> (float eta)</td></tr>
 <tr class="separator:a8f8cf1d0ed418ced68e47251c51e46b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ab900f748d6c3c9f54dc7af23b4d885df"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#ab900f748d6c3c9f54dc7af23b4d885df">index</a> (float eta, float cosTheta, float roughness, float &amp;w, size_t &amp;iLow, size_t &amp;iHigh)</td></tr>
+<tr class="separator:ab900f748d6c3c9f54dc7af23b4d885df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d9f040e803f39391c35528d5f1203ed"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a6d9f040e803f39391c35528d5f1203ed">rIndex</a> (float eta, float roughness, float &amp;weight)</td></tr>
+<tr class="separator:a6d9f040e803f39391c35528d5f1203ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d8b1271f92cc903734137e4aeeb244c"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a5d8b1271f92cc903734137e4aeeb244c">nIndex</a> (float eta)</td></tr>
+<tr class="separator:a5d8b1271f92cc903734137e4aeeb244c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a938028d5b3fa44a4687aa1aeaa537dcf"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a> = 33</td></tr>
+<tr class="separator:a938028d5b3fa44a4687aa1aeaa537dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1587510ef43dd545f58cdc219f70b51"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#aa1587510ef43dd545f58cdc219f70b51">mE</a> [<a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a> *<a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a> *<a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a>]</td></tr>
+<tr class="separator:aa1587510ef43dd545f58cdc219f70b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c83ce3ce37d0a4bbb12f66a5c8d75d"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#ac1c83ce3ce37d0a4bbb12f66a5c8d75d">mEExit</a> [<a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a> *<a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a> *<a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a>]</td></tr>
+<tr class="separator:ac1c83ce3ce37d0a4bbb12f66a5c8d75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a197b02480d4bdb66df3cd8932f3b1b68"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a197b02480d4bdb66df3cd8932f3b1b68">mOneMinusEavg</a> [<a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a> *<a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a>]</td></tr>
+<tr class="separator:a197b02480d4bdb66df3cd8932f3b1b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af871d87c4947a6935f1d8d11b65b0693"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#af871d87c4947a6935f1d8d11b65b0693">mOneMinusEavgExit</a> [<a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a> *<a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a>]</td></tr>
+<tr class="separator:af871d87c4947a6935f1d8d11b65b0693"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -107,7 +147,104 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_transmission_albedo_8h_source.html#l00038">38</a> of file <a class="el" href="_transmission_albedo_8h_source.html">TransmissionAlbedo.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   41</span>    {</div>
+<div class="line"><span class="lineno">   42</span>        <span class="keywordtype">float</span> w;</div>
+<div class="line"><span class="lineno">   43</span>        <span class="keywordtype">size_t</span> iLow, iHigh;</div>
+<div class="line"><span class="lineno">   44</span>        <span class="keywordtype">float</span> e = 0.0f;</div>
+<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">if</span> (eta &lt; 1.0f) {</div>
+<div class="line"><span class="lineno">   46</span>            <a class="code hl_function" href="classmoonray_1_1shading_1_1_transmission_albedo.html#ab900f748d6c3c9f54dc7af23b4d885df">index</a>(1.0f/eta, cosTheta, roughness,</div>
+<div class="line"><span class="lineno">   47</span>                  w, iLow, iHigh);</div>
+<div class="line"><span class="lineno">   48</span>            e = scene_rdl2::math::lerp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#ac1c83ce3ce37d0a4bbb12f66a5c8d75d">mEExit</a>[iLow],</div>
+<div class="line"><span class="lineno">   49</span>                     <a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#ac1c83ce3ce37d0a4bbb12f66a5c8d75d">mEExit</a>[iHigh],</div>
+<div class="line"><span class="lineno">   50</span>                     w);</div>
+<div class="line"><span class="lineno">   51</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   52</span>            <a class="code hl_function" href="classmoonray_1_1shading_1_1_transmission_albedo.html#ab900f748d6c3c9f54dc7af23b4d885df">index</a>(eta, cosTheta, roughness,</div>
+<div class="line"><span class="lineno">   53</span>                  w, iLow, iHigh);</div>
+<div class="line"><span class="lineno">   54</span>            e = scene_rdl2::math::lerp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#aa1587510ef43dd545f58cdc219f70b51">mE</a>[iLow],</div>
+<div class="line"><span class="lineno">   55</span>                     <a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#aa1587510ef43dd545f58cdc219f70b51">mE</a>[iHigh],</div>
+<div class="line"><span class="lineno">   56</span>                     w);</div>
+<div class="line"><span class="lineno">   57</span>        }</div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">return</span> e;</div>
+<div class="line"><span class="lineno">   59</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_transmission_albedo_html_aa1587510ef43dd545f58cdc219f70b51"><div class="ttname"><a href="classmoonray_1_1shading_1_1_transmission_albedo.html#aa1587510ef43dd545f58cdc219f70b51">moonray::shading::TransmissionAlbedo::mE</a></div><div class="ttdeci">static const float mE[COMP *COMP *COMP]</div><div class="ttdef"><b>Definition:</b> <a href="_transmission_albedo_8h_source.html#l00127">TransmissionAlbedo.h:127</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_transmission_albedo_html_ab900f748d6c3c9f54dc7af23b4d885df"><div class="ttname"><a href="classmoonray_1_1shading_1_1_transmission_albedo.html#ab900f748d6c3c9f54dc7af23b4d885df">moonray::shading::TransmissionAlbedo::index</a></div><div class="ttdeci">static void index(float eta, float cosTheta, float roughness, float &amp;w, size_t &amp;iLow, size_t &amp;iHigh)</div><div class="ttdef"><b>Definition:</b> <a href="_transmission_albedo_8h_source.html#l00089">TransmissionAlbedo.h:89</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_transmission_albedo_html_ac1c83ce3ce37d0a4bbb12f66a5c8d75d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_transmission_albedo.html#ac1c83ce3ce37d0a4bbb12f66a5c8d75d">moonray::shading::TransmissionAlbedo::mEExit</a></div><div class="ttdeci">static const float mEExit[COMP *COMP *COMP]</div><div class="ttdef"><b>Definition:</b> <a href="_transmission_albedo_8h_source.html#l00128">TransmissionAlbedo.h:128</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab900f748d6c3c9f54dc7af23b4d885df" name="ab900f748d6c3c9f54dc7af23b4d885df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab900f748d6c3c9f54dc7af23b4d885df">&#9670;&#160;</a></span>index()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void moonray::shading::TransmissionAlbedo::index </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>eta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>cosTheta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>roughness</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>iLow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>iHigh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transmission_albedo_8h_source.html#l00089">89</a> of file <a class="el" href="_transmission_albedo_8h_source.html">TransmissionAlbedo.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>    {</div>
+<div class="line"><span class="lineno">   96</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> lIndex = <a class="code hl_function" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a6d9f040e803f39391c35528d5f1203ed">rIndex</a>(eta, roughness, w);</div>
+<div class="line"><span class="lineno">   97</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> hIndex = scene_rdl2::math::min(lIndex+1, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a>*<a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a>-1);</div>
+<div class="line"><span class="lineno">   98</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> if1 = lIndex * <a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a> +</div>
+<div class="line"><span class="lineno">   99</span>                  cosTheta * (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a> - 1);</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> if2 = hIndex * <a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a> +</div>
+<div class="line"><span class="lineno">  101</span>                  cosTheta * (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a> - 1);</div>
+<div class="line"><span class="lineno">  102</span>        <span class="comment">// Take cosTheta&#39;s ceiling for the index</span></div>
+<div class="line"><span class="lineno">  103</span>        iLow = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(ceil(if1));</div>
+<div class="line"><span class="lineno">  104</span>        iHigh = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(ceil(if2));</div>
+<div class="line"><span class="lineno">  105</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_transmission_albedo_html_a6d9f040e803f39391c35528d5f1203ed"><div class="ttname"><a href="classmoonray_1_1shading_1_1_transmission_albedo.html#a6d9f040e803f39391c35528d5f1203ed">moonray::shading::TransmissionAlbedo::rIndex</a></div><div class="ttdeci">static size_t rIndex(float eta, float roughness, float &amp;weight)</div><div class="ttdef"><b>Definition:</b> <a href="_transmission_albedo_8h_source.html#l00107">TransmissionAlbedo.h:107</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_transmission_albedo_html_a938028d5b3fa44a4687aa1aeaa537dcf"><div class="ttname"><a href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">moonray::shading::TransmissionAlbedo::COMP</a></div><div class="ttdeci">static const size_t COMP</div><div class="ttdef"><b>Definition:</b> <a href="_transmission_albedo_8h_source.html#l00126">TransmissionAlbedo.h:126</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8f8cf1d0ed418ced68e47251c51e46b5" name="a8f8cf1d0ed418ced68e47251c51e46b5"></a>
@@ -135,7 +272,46 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_transmission_albedo_8h_source.html#l00083">83</a> of file <a class="el" href="_transmission_albedo_8h_source.html">TransmissionAlbedo.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>    {</div>
+<div class="line"><span class="lineno">   85</span>        <span class="comment">// IOR has been calculated for the range [1.05, 3.0]</span></div>
+<div class="line"><span class="lineno">   86</span>        <span class="keywordflow">return</span> (eta-1.05f)/(3.05f-1.05f);</div>
+<div class="line"><span class="lineno">   87</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5d8b1271f92cc903734137e4aeeb244c" name="a5d8b1271f92cc903734137e4aeeb244c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d8b1271f92cc903734137e4aeeb244c">&#9670;&#160;</a></span>nIndex()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t moonray::shading::TransmissionAlbedo::nIndex </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>eta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transmission_albedo_8h_source.html#l00118">118</a> of file <a class="el" href="_transmission_albedo_8h_source.html">TransmissionAlbedo.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  119</span>    {</div>
+<div class="line"><span class="lineno">  120</span>        <span class="keywordtype">float</span> nZeroToOne = <a class="code hl_function" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a8f8cf1d0ed418ced68e47251c51e46b5">netaRange</a>(eta);</div>
+<div class="line"><span class="lineno">  121</span>        nZeroToOne = scene_rdl2::math::clamp(nZeroToOne, 0.0f, 1.0f);</div>
+<div class="line"><span class="lineno">  122</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> i = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>((nZeroToOne*(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a>-1)));</div>
+<div class="line"><span class="lineno">  123</span>        <span class="keywordflow">return</span> i;</div>
+<div class="line"><span class="lineno">  124</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_transmission_albedo_html_a8f8cf1d0ed418ced68e47251c51e46b5"><div class="ttname"><a href="classmoonray_1_1shading_1_1_transmission_albedo.html#a8f8cf1d0ed418ced68e47251c51e46b5">moonray::shading::TransmissionAlbedo::netaRange</a></div><div class="ttdeci">static float netaRange(float eta)</div><div class="ttdef"><b>Definition:</b> <a href="_transmission_albedo_8h_source.html#l00083">TransmissionAlbedo.h:83</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac62a752db9b45560fa30ddfb57c0f7db" name="ac62a752db9b45560fa30ddfb57c0f7db"></a>
@@ -173,6 +349,200 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_transmission_albedo_8h_source.html#l00061">61</a> of file <a class="el" href="_transmission_albedo_8h_source.html">TransmissionAlbedo.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>    {</div>
+<div class="line"><span class="lineno">   64</span>        <span class="keywordtype">float</span> w;</div>
+<div class="line"><span class="lineno">   65</span>        <span class="keywordtype">size_t</span> iLow, iHigh;</div>
+<div class="line"><span class="lineno">   66</span>        <span class="keywordtype">float</span> e = 0.0f;</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">if</span> (eta &lt; 1.0f) {</div>
+<div class="line"><span class="lineno">   68</span>            iLow = <a class="code hl_function" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a6d9f040e803f39391c35528d5f1203ed">rIndex</a>(1.0f/eta, roughness, w);</div>
+<div class="line"><span class="lineno">   69</span>            iHigh = scene_rdl2::math::min(iLow+1, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a>*<a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a>-1);</div>
+<div class="line"><span class="lineno">   70</span>            e = scene_rdl2::math::lerp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#af871d87c4947a6935f1d8d11b65b0693">mOneMinusEavgExit</a>[iLow],</div>
+<div class="line"><span class="lineno">   71</span>                     <a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#af871d87c4947a6935f1d8d11b65b0693">mOneMinusEavgExit</a>[iHigh],</div>
+<div class="line"><span class="lineno">   72</span>                     w);</div>
+<div class="line"><span class="lineno">   73</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   74</span>            iLow = <a class="code hl_function" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a6d9f040e803f39391c35528d5f1203ed">rIndex</a>(eta, roughness, w);</div>
+<div class="line"><span class="lineno">   75</span>            iHigh = scene_rdl2::math::min(iLow+1, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a>*<a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a>-1);</div>
+<div class="line"><span class="lineno">   76</span>            e = scene_rdl2::math::lerp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a197b02480d4bdb66df3cd8932f3b1b68">mOneMinusEavg</a>[iLow],</div>
+<div class="line"><span class="lineno">   77</span>                     <a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a197b02480d4bdb66df3cd8932f3b1b68">mOneMinusEavg</a>[iHigh],</div>
+<div class="line"><span class="lineno">   78</span>                     w);</div>
+<div class="line"><span class="lineno">   79</span>        }</div>
+<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> e;</div>
+<div class="line"><span class="lineno">   81</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_transmission_albedo_html_a197b02480d4bdb66df3cd8932f3b1b68"><div class="ttname"><a href="classmoonray_1_1shading_1_1_transmission_albedo.html#a197b02480d4bdb66df3cd8932f3b1b68">moonray::shading::TransmissionAlbedo::mOneMinusEavg</a></div><div class="ttdeci">static const float mOneMinusEavg[COMP *COMP]</div><div class="ttdef"><b>Definition:</b> <a href="_transmission_albedo_8h_source.html#l00129">TransmissionAlbedo.h:129</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_transmission_albedo_html_af871d87c4947a6935f1d8d11b65b0693"><div class="ttname"><a href="classmoonray_1_1shading_1_1_transmission_albedo.html#af871d87c4947a6935f1d8d11b65b0693">moonray::shading::TransmissionAlbedo::mOneMinusEavgExit</a></div><div class="ttdeci">static const float mOneMinusEavgExit[COMP *COMP]</div><div class="ttdef"><b>Definition:</b> <a href="_transmission_albedo_8h_source.html#l00130">TransmissionAlbedo.h:130</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6d9f040e803f39391c35528d5f1203ed" name="a6d9f040e803f39391c35528d5f1203ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d9f040e803f39391c35528d5f1203ed">&#9670;&#160;</a></span>rIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t moonray::shading::TransmissionAlbedo::rIndex </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>eta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>roughness</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>weight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transmission_albedo_8h_source.html#l00107">107</a> of file <a class="el" href="_transmission_albedo_8h_source.html">TransmissionAlbedo.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  110</span>    {</div>
+<div class="line"><span class="lineno">  111</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> i = <a class="code hl_function" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a5d8b1271f92cc903734137e4aeeb244c">nIndex</a>(eta) * <a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a> +</div>
+<div class="line"><span class="lineno">  112</span>                        roughness * (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_transmission_albedo.html#a938028d5b3fa44a4687aa1aeaa537dcf">COMP</a> - 1);</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> indexI = floor(i);</div>
+<div class="line"><span class="lineno">  114</span>        weight = (i-indexI);</div>
+<div class="line"><span class="lineno">  115</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(indexI);</div>
+<div class="line"><span class="lineno">  116</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_transmission_albedo_html_a5d8b1271f92cc903734137e4aeeb244c"><div class="ttname"><a href="classmoonray_1_1shading_1_1_transmission_albedo.html#a5d8b1271f92cc903734137e4aeeb244c">moonray::shading::TransmissionAlbedo::nIndex</a></div><div class="ttdeci">static size_t nIndex(float eta)</div><div class="ttdef"><b>Definition:</b> <a href="_transmission_albedo_8h_source.html#l00118">TransmissionAlbedo.h:118</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a938028d5b3fa44a4687aa1aeaa537dcf" name="a938028d5b3fa44a4687aa1aeaa537dcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a938028d5b3fa44a4687aa1aeaa537dcf">&#9670;&#160;</a></span>COMP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t moonray::shading::TransmissionAlbedo::COMP = 33</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transmission_albedo_8h_source.html#l00126">126</a> of file <a class="el" href="_transmission_albedo_8h_source.html">TransmissionAlbedo.h</a>.</p>
+
+</div>
+</div>
+<a id="aa1587510ef43dd545f58cdc219f70b51" name="aa1587510ef43dd545f58cdc219f70b51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1587510ef43dd545f58cdc219f70b51">&#9670;&#160;</a></span>mE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float moonray::shading::TransmissionAlbedo::mE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transmission_albedo_8h_source.html#l00127">127</a> of file <a class="el" href="_transmission_albedo_8h_source.html">TransmissionAlbedo.h</a>.</p>
+
+</div>
+</div>
+<a id="ac1c83ce3ce37d0a4bbb12f66a5c8d75d" name="ac1c83ce3ce37d0a4bbb12f66a5c8d75d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1c83ce3ce37d0a4bbb12f66a5c8d75d">&#9670;&#160;</a></span>mEExit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float moonray::shading::TransmissionAlbedo::mEExit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transmission_albedo_8h_source.html#l00128">128</a> of file <a class="el" href="_transmission_albedo_8h_source.html">TransmissionAlbedo.h</a>.</p>
+
+</div>
+</div>
+<a id="a197b02480d4bdb66df3cd8932f3b1b68" name="a197b02480d4bdb66df3cd8932f3b1b68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a197b02480d4bdb66df3cd8932f3b1b68">&#9670;&#160;</a></span>mOneMinusEavg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float moonray::shading::TransmissionAlbedo::mOneMinusEavg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transmission_albedo_8h_source.html#l00129">129</a> of file <a class="el" href="_transmission_albedo_8h_source.html">TransmissionAlbedo.h</a>.</p>
+
+</div>
+</div>
+<a id="af871d87c4947a6935f1d8d11b65b0693" name="af871d87c4947a6935f1d8d11b65b0693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af871d87c4947a6935f1d8d11b65b0693">&#9670;&#160;</a></span>mOneMinusEavgExit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float moonray::shading::TransmissionAlbedo::mOneMinusEavgExit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transmission_albedo_8h_source.html#l00130">130</a> of file <a class="el" href="_transmission_albedo_8h_source.html">TransmissionAlbedo.h</a>.</p>
 
 </div>
 </div>
@@ -180,9 +550,13 @@ Static Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/bsdf/cook_torrance/energy_compensation/<a class="el" href="_transmission_albedo_8h_source.html">TransmissionAlbedo.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_transmission_albedo.html">TransmissionAlbedo</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

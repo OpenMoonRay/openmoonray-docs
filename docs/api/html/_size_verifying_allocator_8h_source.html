@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_02f99361fbe6a8c61cf6ccdd2c3bf288.html">geom</a></li><li class="navelem"><a class="el" href="dir_fe107766350dd0ecec17d630ba770ff9.html">unittest</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_size_verifying_allocator_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">SizeVerifyingAllocator.h</div></div>
 </div><!--header-->
@@ -84,13 +100,13 @@ $(function() {
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_size_verifying_allocator.html#aa842e7f834e3e3fb5c228142a9fedae8">   35</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="class_size_verifying_allocator.html#aa842e7f834e3e3fb5c228142a9fedae8">is_always_equal</a> = std::false_type;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_size_verifying_allocator.html#a6d9e2b7baf5f2054f4121631608c2873">   37</a></span>    <a class="code hl_function" href="class_size_verifying_allocator.html#a6d9e2b7baf5f2054f4121631608c2873">SizeVerifyingAllocator</a>() :</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        mMap(new <a class="code hl_typedef" href="class_size_verifying_allocator.html#aa75c0ccd801060973710d070f61c41f9">MapType</a>)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_variable" href="class_size_verifying_allocator.html#ab1d782993502e0c2cd7b8616c762388a">mMap</a>(new <a class="code hl_typedef" href="class_size_verifying_allocator.html#aa75c0ccd801060973710d070f61c41f9">MapType</a>)</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    {</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> U&gt;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_size_verifying_allocator.html#a75622e91c6a0964a35c22fa82e842686">   43</a></span>    <a class="code hl_function" href="class_size_verifying_allocator.html#a75622e91c6a0964a35c22fa82e842686">SizeVerifyingAllocator</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_size_verifying_allocator.html">SizeVerifyingAllocator&lt;U&gt;</a>&amp; other) :</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        mMap(other.<a class="code hl_function" href="class_size_verifying_allocator.html#a66998d21ed0d33c81158c5e88f7dffb1">get_map</a>())</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <a class="code hl_variable" href="class_size_verifying_allocator.html#ab1d782993502e0c2cd7b8616c762388a">mMap</a>(other.<a class="code hl_function" href="class_size_verifying_allocator.html#a66998d21ed0d33c81158c5e88f7dffb1">get_map</a>())</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
@@ -104,8 +120,8 @@ $(function() {
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_size_verifying_allocator.html#a1683020b53d44e9accd2793b254a19e9">   55</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_size_verifying_allocator.html#a1683020b53d44e9accd2793b254a19e9">deallocate</a>(T *ptr, std::size_t n)</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    {</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">if</span> (ptr) {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keyword">const</span> <span class="keyword">auto</span> it = mMap-&gt;find(ptr);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            CPPUNIT_ASSERT(it != mMap-&gt;end());</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keyword">const</span> <span class="keyword">auto</span> it = <a class="code hl_variable" href="class_size_verifying_allocator.html#ab1d782993502e0c2cd7b8616c762388a">mMap</a>-&gt;find(ptr);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            CPPUNIT_ASSERT(it != <a class="code hl_variable" href="class_size_verifying_allocator.html#ab1d782993502e0c2cd7b8616c762388a">mMap</a>-&gt;end());</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            CPPUNIT_ASSERT(it-&gt;second == n);</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            std::allocator&lt;T&gt;().deallocate(ptr, n);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
@@ -113,11 +129,11 @@ $(function() {
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_size_verifying_allocator.html#a66998d21ed0d33c81158c5e88f7dffb1">   65</a></span>    <a class="code hl_typedef" href="class_size_verifying_allocator.html#a2b06acfc08e4e86d342536efe1953cee">MapTypePointer</a> <a class="code hl_function" href="class_size_verifying_allocator.html#a66998d21ed0d33c81158c5e88f7dffb1">get_map</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span> mMap;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_size_verifying_allocator.html#ab1d782993502e0c2cd7b8616c762388a">mMap</a>;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_typedef" href="class_size_verifying_allocator.html#a2b06acfc08e4e86d342536efe1953cee">MapTypePointer</a> mMap;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_size_verifying_allocator.html#ab1d782993502e0c2cd7b8616c762388a">   71</a></span>    <a class="code hl_typedef" href="class_size_verifying_allocator.html#a2b06acfc08e4e86d342536efe1953cee">MapTypePointer</a> <a class="code hl_variable" href="class_size_verifying_allocator.html#ab1d782993502e0c2cd7b8616c762388a">mMap</a>;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_size_verifying_allocator.html#a613ee18210013a354abdf1545102b150">   74</a></span>    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code hl_friend" href="class_size_verifying_allocator.html#a613ee18210013a354abdf1545102b150">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_size_verifying_allocator.html">SizeVerifyingAllocator&lt;T1&gt;</a> a, <span class="keyword">const</span> <a class="code hl_class" href="class_size_verifying_allocator.html">SizeVerifyingAllocator&lt;T2&gt;</a>&amp;b);</div>
@@ -126,7 +142,7 @@ $(function() {
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="_size_verifying_allocator_8h.html#ac6491cd865a3d079ddbc9a7344bcb0ce">   78</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="_size_verifying_allocator_8h.html#ac6491cd865a3d079ddbc9a7344bcb0ce">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_size_verifying_allocator.html">SizeVerifyingAllocator&lt;T&gt;</a> &amp;a, <span class="keyword">const</span> <a class="code hl_class" href="class_size_verifying_allocator.html">SizeVerifyingAllocator&lt;U&gt;</a>&amp;b)</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>{</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">return</span> a.mMap == b.mMap;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">return</span> a.mMap == b.<a class="code hl_variable" href="class_size_verifying_allocator.html#ab1d782993502e0c2cd7b8616c762388a">mMap</a>;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
@@ -154,11 +170,16 @@ $(function() {
 <div class="ttc" id="aclass_size_verifying_allocator_html_aa6dcb8f5ad62b3e1f9b17f2e0ba116a5"><div class="ttname"><a href="class_size_verifying_allocator.html#aa6dcb8f5ad62b3e1f9b17f2e0ba116a5">SizeVerifyingAllocator::propagate_on_container_move_assignment</a></div><div class="ttdeci">std::true_type propagate_on_container_move_assignment</div><div class="ttdef"><b>Definition:</b> <a href="_size_verifying_allocator_8h_source.html#l00033">SizeVerifyingAllocator.h:33</a></div></div>
 <div class="ttc" id="aclass_size_verifying_allocator_html_aa75c0ccd801060973710d070f61c41f9"><div class="ttname"><a href="class_size_verifying_allocator.html#aa75c0ccd801060973710d070f61c41f9">SizeVerifyingAllocator::MapType</a></div><div class="ttdeci">std::map&lt; void *, std::size_t &gt; MapType</div><div class="ttdef"><b>Definition:</b> <a href="_size_verifying_allocator_8h_source.html#l00024">SizeVerifyingAllocator.h:24</a></div></div>
 <div class="ttc" id="aclass_size_verifying_allocator_html_aa842e7f834e3e3fb5c228142a9fedae8"><div class="ttname"><a href="class_size_verifying_allocator.html#aa842e7f834e3e3fb5c228142a9fedae8">SizeVerifyingAllocator::is_always_equal</a></div><div class="ttdeci">std::false_type is_always_equal</div><div class="ttdef"><b>Definition:</b> <a href="_size_verifying_allocator_8h_source.html#l00035">SizeVerifyingAllocator.h:35</a></div></div>
+<div class="ttc" id="aclass_size_verifying_allocator_html_ab1d782993502e0c2cd7b8616c762388a"><div class="ttname"><a href="class_size_verifying_allocator.html#ab1d782993502e0c2cd7b8616c762388a">SizeVerifyingAllocator::mMap</a></div><div class="ttdeci">MapTypePointer mMap</div><div class="ttdef"><b>Definition:</b> <a href="_size_verifying_allocator_8h_source.html#l00071">SizeVerifyingAllocator.h:71</a></div></div>
 <div class="ttc" id="aclass_size_verifying_allocator_html_afdae813582eda6c6d51fdc77eb2e8251"><div class="ttname"><a href="class_size_verifying_allocator.html#afdae813582eda6c6d51fdc77eb2e8251">SizeVerifyingAllocator::value_type</a></div><div class="ttdeci">T value_type</div><div class="ttdef"><b>Definition:</b> <a href="_size_verifying_allocator_8h_source.html#l00023">SizeVerifyingAllocator.h:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_0486ff0a15d68326ffdea20a24729a76.html">geom</a></li><li class="navelem"><a class="el" href="dir_c5cd6ab9c7db6c8de406ebb2def0b9d6.html">unittest</a></li><li class="navelem"><a class="el" href="_size_verifying_allocator_8h.html">SizeVerifyingAllocator.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

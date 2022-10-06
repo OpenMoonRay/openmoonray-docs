@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1time.html">time</a></li><li class="navelem"><a class="el" href="classmoonray_1_1time_1_1_timer.html">Timer</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1time_1_1_timer.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1time_1_1_timer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::time::Timer&lt; T &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -71,6 +89,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2c8f9dc6d759423dfe5ad18523e8948a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a906ae7f789bbdc06cd5341ba544d1627"><td class="memItemLeft" align="right" valign="top">__forceinline void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1time_1_1_timer.html#a906ae7f789bbdc06cd5341ba544d1627">lap</a> ()</td></tr>
 <tr class="separator:a906ae7f789bbdc06cd5341ba544d1627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad3928d430f381ca44f60cb3920887c67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1time_1_1_timer.html#ad3928d430f381ca44f60cb3920887c67">MNRY_DURING_ASSERTS</a> (bool mStarted)</td></tr>
+<tr class="separator:ad3928d430f381ca44f60cb3920887c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aa835f7615d6b168e933f8357aec98799"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1time_1_1_timer.html#aa835f7615d6b168e933f8357aec98799">mStat</a></td></tr>
+<tr class="separator:aa835f7615d6b168e933f8357aec98799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f186700668095294f24446a3d4c94e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1time_1_1_timer.html#ae6f186700668095294f24446a3d4c94e">mStart</a></td></tr>
+<tr class="separator:ae6f186700668095294f24446a3d4c94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
@@ -123,7 +153,16 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_timer_8h_source.html#l00071">71</a> of file <a class="el" href="_timer_8h_source.html">Timer.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   71</span>                                 {</div>
+<div class="line"><span class="lineno">   72</span>        <a class="code hl_function" href="classmoonray_1_1time_1_1_timer.html#ad3928d430f381ca44f60cb3920887c67">MNRY_DURING_ASSERTS</a>(mStarted = <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   73</span>        <a class="code hl_variable" href="classmoonray_1_1time_1_1_timer.html#aa835f7615d6b168e933f8357aec98799">mStat</a> = &amp;stat;</div>
+<div class="line"><span class="lineno">   74</span>        <a class="code hl_variable" href="classmoonray_1_1time_1_1_timer.html#ae6f186700668095294f24446a3d4c94e">mStart</a> = <a class="code hl_function" href="namespacemoonray_1_1time.html#a717cca4830d2eea83a6da579e2c422cb">getTime</a>();</div>
+<div class="line"><span class="lineno">   75</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1time_1_1_timer_html_aa835f7615d6b168e933f8357aec98799"><div class="ttname"><a href="classmoonray_1_1time_1_1_timer.html#aa835f7615d6b168e933f8357aec98799">moonray::time::Timer::mStat</a></div><div class="ttdeci">T * mStat</div><div class="ttdef"><b>Definition:</b> <a href="_timer_8h_source.html#l00098">Timer.h:98</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1time_1_1_timer_html_ad3928d430f381ca44f60cb3920887c67"><div class="ttname"><a href="classmoonray_1_1time_1_1_timer.html#ad3928d430f381ca44f60cb3920887c67">moonray::time::Timer::MNRY_DURING_ASSERTS</a></div><div class="ttdeci">MNRY_DURING_ASSERTS(bool mStarted)</div></div>
+<div class="ttc" id="aclassmoonray_1_1time_1_1_timer_html_ae6f186700668095294f24446a3d4c94e"><div class="ttname"><a href="classmoonray_1_1time_1_1_timer.html#ae6f186700668095294f24446a3d4c94e">moonray::time::Timer::mStart</a></div><div class="ttdeci">double mStart</div><div class="ttdef"><b>Definition:</b> <a href="_timer_8h_source.html#l00099">Timer.h:99</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1time_html_a717cca4830d2eea83a6da579e2c422cb"><div class="ttname"><a href="namespacemoonray_1_1time.html#a717cca4830d2eea83a6da579e2c422cb">moonray::time::getTime</a></div><div class="ttdeci">__forceinline double getTime()</div><div class="ttdef"><b>Definition:</b> <a href="_timer_8h_source.html#l00025">Timer.h:25</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7dc390c53ba4ebc9f2b8c10c3a9c2fcd" name="a7dc390c53ba4ebc9f2b8c10c3a9c2fcd"></a>
@@ -152,7 +191,8 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_timer_8h_source.html#l00076">76</a> of file <a class="el" href="_timer_8h_source.html">Timer.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   76</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -182,6 +222,40 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_timer_8h_source.html#l00090">90</a> of file <a class="el" href="_timer_8h_source.html">Timer.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   90</span>                             {</div>
+<div class="line"><span class="lineno">   91</span>        MNRY_ASSERT(mStarted == <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   92</span>        <span class="keywordtype">double</span> tick = <a class="code hl_function" href="namespacemoonray_1_1time.html#a717cca4830d2eea83a6da579e2c422cb">getTime</a>();</div>
+<div class="line"><span class="lineno">   93</span>        (*mStat) += (tick - <a class="code hl_variable" href="classmoonray_1_1time_1_1_timer.html#ae6f186700668095294f24446a3d4c94e">mStart</a>);</div>
+<div class="line"><span class="lineno">   94</span>        <a class="code hl_variable" href="classmoonray_1_1time_1_1_timer.html#ae6f186700668095294f24446a3d4c94e">mStart</a> = tick;</div>
+<div class="line"><span class="lineno">   95</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad3928d430f381ca44f60cb3920887c67" name="ad3928d430f381ca44f60cb3920887c67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3928d430f381ca44f60cb3920887c67">&#9670;&#160;</a></span>MNRY_DURING_ASSERTS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1time_1_1_timer.html">moonray::time::Timer</a>&lt; T &gt;::MNRY_DURING_ASSERTS </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>mStarted</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -211,7 +285,12 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_timer_8h_source.html#l00078">78</a> of file <a class="el" href="_timer_8h_source.html">Timer.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   78</span>                               {</div>
+<div class="line"><span class="lineno">   79</span>        MNRY_ASSERT(mStarted == <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   80</span>        <a class="code hl_function" href="classmoonray_1_1time_1_1_timer.html#ad3928d430f381ca44f60cb3920887c67">MNRY_DURING_ASSERTS</a>(mStarted = <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   81</span>        <a class="code hl_variable" href="classmoonray_1_1time_1_1_timer.html#ae6f186700668095294f24446a3d4c94e">mStart</a> = <a class="code hl_function" href="namespacemoonray_1_1time.html#a717cca4830d2eea83a6da579e2c422cb">getTime</a>();</div>
+<div class="line"><span class="lineno">   82</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2c8f9dc6d759423dfe5ad18523e8948a" name="a2c8f9dc6d759423dfe5ad18523e8948a"></a>
@@ -240,6 +319,64 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_timer_8h_source.html#l00084">84</a> of file <a class="el" href="_timer_8h_source.html">Timer.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>                              {</div>
+<div class="line"><span class="lineno">   85</span>        MNRY_ASSERT(mStarted == <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   86</span>        <a class="code hl_function" href="classmoonray_1_1time_1_1_timer.html#ad3928d430f381ca44f60cb3920887c67">MNRY_DURING_ASSERTS</a>(mStarted = <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   87</span>        (*mStat) += (<a class="code hl_function" href="namespacemoonray_1_1time.html#a717cca4830d2eea83a6da579e2c422cb">getTime</a>() - <a class="code hl_variable" href="classmoonray_1_1time_1_1_timer.html#ae6f186700668095294f24446a3d4c94e">mStart</a>);</div>
+<div class="line"><span class="lineno">   88</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae6f186700668095294f24446a3d4c94e" name="ae6f186700668095294f24446a3d4c94e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f186700668095294f24446a3d4c94e">&#9670;&#160;</a></span>mStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classmoonray_1_1time_1_1_timer.html">moonray::time::Timer</a>&lt; T &gt;::mStart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_timer_8h_source.html#l00099">99</a> of file <a class="el" href="_timer_8h_source.html">Timer.h</a>.</p>
+
+</div>
+</div>
+<a id="aa835f7615d6b168e933f8357aec98799" name="aa835f7615d6b168e933f8357aec98799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa835f7615d6b168e933f8357aec98799">&#9670;&#160;</a></span>mStat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T* <a class="el" href="classmoonray_1_1time_1_1_timer.html">moonray::time::Timer</a>&lt; T &gt;::mStat</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_timer_8h_source.html#l00098">98</a> of file <a class="el" href="_timer_8h_source.html">Timer.h</a>.</p>
 
 </div>
 </div>
@@ -247,9 +384,13 @@ template&lt;typename T &gt; </div>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/common/time/<a class="el" href="_timer_8h_source.html">Timer.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1time.html">time</a></li><li class="navelem"><a class="el" href="classmoonray_1_1time_1_1_timer.html">Timer</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

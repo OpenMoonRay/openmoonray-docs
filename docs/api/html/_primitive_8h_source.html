@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_02f99361fbe6a8c61cf6ccdd2c3bf288.html">geom</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_primitive_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">Primitive.h</div></div>
 </div><!--header-->
@@ -50,7 +66,12 @@ $(function() {
 <a href="_primitive_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2015-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file Primitive.h</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Wayne Huang</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// $Id$</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">///</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
@@ -83,8 +104,10 @@ $(function() {
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">class </span>State;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1geom.html#a51ae5cde5ee89aa3d2bd4759b49f6918">   41</a></span><span class="keyword">typedef</span> tbb::concurrent_vector&lt;internal::Primitive*&gt; <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a51ae5cde5ee89aa3d2bd4759b49f6918">InternalPrimitiveList</a>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html">   45</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1geom_1_1_primitive.html">Primitive</a></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"></span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">/// @class Primitive</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">/// @brief base class for all primitive types.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html">   45</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1geom_1_1_primitive.html">Primitive</a></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// expose private method transformPrimitive/getPrimitiveImpl</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// for internal renderer use</span></div>
@@ -93,15 +116,21 @@ $(function() {
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html#a6ec1e752af007a2007fe341be5aa5810">   52</a></span>    <span class="keyword">typedef</span> uint32_t <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_primitive.html#a6ec1e752af007a2007fe341be5aa5810">size_type</a>;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html#adbece00593ce87679dbb45ac906073bd">   53</a></span>    <span class="keyword">typedef</span> uint32_t <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_primitive.html#adbece00593ce87679dbb45ac906073bd">IndexType</a>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html#aff577e14a875dcb8f4a766bd4d907a3a">   59</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="classmoonray_1_1geom_1_1_primitive.html#aff577e14a875dcb8f4a766bd4d907a3a">Modifiability</a>: uint8_t</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"></span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">    /// @remark For realtime rendering use. Feature film shader development</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">    ///     does not require this functionality.</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">    /// @brief enum for specifiying how the Primitive can be modified during</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">    ///     Procedural::update stage</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html#aff577e14a875dcb8f4a766bd4d907a3a">   59</a></span><span class="comment"></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="classmoonray_1_1geom_1_1_primitive.html#aff577e14a875dcb8f4a766bd4d907a3a">Modifiability</a>: uint8_t</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_primitive.html#aff577e14a875dcb8f4a766bd4d907a3aafe6f99ef1ec99efbdc19a9786cf1facc">STATIC</a>,    </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_primitive.html#aff577e14a875dcb8f4a766bd4d907a3aa5561e11142ce59d67da73372acb30ded">DEFORMABLE</a>,</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_primitive.html#aff577e14a875dcb8f4a766bd4d907a3aa0fcc90da4811c877ba9f9c12f7d60bc9">DYNAMIC</a>    </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_primitive.html#aff577e14a875dcb8f4a766bd4d907a3aafe6f99ef1ec99efbdc19a9786cf1facc">STATIC</a>,    <span class="comment">///&lt;all primitive data can&#39;t be modified after creation</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_primitive.html#aff577e14a875dcb8f4a766bd4d907a3aa5561e11142ce59d67da73372acb30ded">DEFORMABLE</a>,<span class="comment">///&lt;transform and geometry vertices may change between frames</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_primitive.html#aff577e14a875dcb8f4a766bd4d907a3aa0fcc90da4811c877ba9f9c12f7d60bc9">DYNAMIC</a>    <span class="comment">///&lt;topology of the geometry may changes between frames</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    };</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html#a5013abfc5a53a70a1658afcec6937e70">   68</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="classmoonray_1_1geom_1_1_primitive.html#a5013abfc5a53a70a1658afcec6937e70">DataValidness</a></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"></span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">    /// enum for specifying the primitive data (VertexBuffer, IndexBuffer,</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">    /// shading::PrimitiveAttribute) validness</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html#a5013abfc5a53a70a1658afcec6937e70">   68</a></span><span class="comment"></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="classmoonray_1_1geom_1_1_primitive.html#a5013abfc5a53a70a1658afcec6937e70">DataValidness</a></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    {</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_primitive.html#a5013abfc5a53a70a1658afcec6937e70ac9f1a6384b1c466d4612f513bd8e13ea">VALID</a>,</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_primitive.html#a5013abfc5a53a70a1658afcec6937e70ada139deab637b338e4d46673ab5faf18">INVALID_VERTEX_BUFFER</a>,</div>
@@ -118,20 +147,38 @@ $(function() {
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html#a7701e2f8af7d8f3b69955e26d93881c6">   82</a></span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#a7701e2f8af7d8f3b69955e26d93881c6">Primitive</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1_primitive.html">Primitive</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html#a72de56a471752a063890a6ccc43304d5">   83</a></span>    <a class="code hl_class" href="classmoonray_1_1geom_1_1_primitive.html">Primitive</a>&amp; <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#a72de56a471752a063890a6ccc43304d5">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1_primitive.html">Primitive</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html#a0fadd0fc93b3f8a2c2f4fefa65fa0c3c">   84</a></span>    <a class="code hl_class" href="classmoonray_1_1geom_1_1_primitive.html">Primitive</a>&amp; <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#a0fadd0fc93b3f8a2c2f4fefa65fa0c3c">operator=</a>(<a class="code hl_class" href="classmoonray_1_1geom_1_1_primitive.html">Primitive</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#aecdc3d10e900a74a4a85ee29aa28e79e">accept</a>(<a class="code hl_class" href="classmoonray_1_1geom_1_1_primitive_visitor.html">PrimitiveVisitor</a>&amp; v);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#a2c9de28d660eab9137b53e8e82041793">setUpdated</a>(<span class="keywordtype">bool</span> updated = <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#aaa619ea87737cc38ac1cb74447395aa1">getUpdated</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#aa2779c4ab5d56c2290e275b8b02ad020">setModifiability</a>(<a class="code hl_enumeration" href="classmoonray_1_1geom_1_1_primitive.html#aff577e14a875dcb8f4a766bd4d907a3a">Modifiability</a> m = <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_primitive.html#aff577e14a875dcb8f4a766bd4d907a3aafe6f99ef1ec99efbdc19a9786cf1facc">Modifiability::STATIC</a>);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <a class="code hl_enumeration" href="classmoonray_1_1geom_1_1_primitive.html#aff577e14a875dcb8f4a766bd4d907a3a">Modifiability</a> <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#ab719fbd600bd973dbeb03ce2a8ef9ebc">getModifiability</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html#a7cea19ec192eb4c509d9f27c3e74a04c">  113</a></span>    <span class="keyword">virtual</span> <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_primitive.html#a6ec1e752af007a2007fe341be5aa5810">size_type</a> <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#a7cea19ec192eb4c509d9f27c3e74a04c">getMemory</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html#a6ef8c77ab9e7fd5dcc9a27d645703cd6">  116</a></span>    <span class="keyword">virtual</span> <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_primitive.html#a6ec1e752af007a2007fe341be5aa5810">size_type</a> <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#a6ef8c77ab9e7fd5dcc9a27d645703cd6">getMotionSamplesCount</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"></span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">    /// @remark For realtime rendering use. Feature film shader development</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">    ///     does not require this functionality.</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#aecdc3d10e900a74a4a85ee29aa28e79e">accept</a>(<a class="code hl_class" href="classmoonray_1_1geom_1_1_primitive_visitor.html">PrimitiveVisitor</a>&amp; v);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"></span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">    /// @remark For realtime rendering use. Feature film shader development</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">    ///     does not require this functionality.</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment"></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#a2c9de28d660eab9137b53e8e82041793">setUpdated</a>(<span class="keywordtype">bool</span> updated = <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment"></span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">    /// @remark For realtime rendering use. Feature film shader development</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">    ///     does not require this functionality.</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#aaa619ea87737cc38ac1cb74447395aa1">getUpdated</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment"></span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">    /// @remark For realtime rendering use. Feature film shader development</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">    ///     does not require this functionality.</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">    /// @brief flag primitive&#39;s modifiability to STATIC/DYNAMIC/DEFORMABLE,</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">    ///     do not call this method unless the procedural plugin contains</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">    /// update() method implementation</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#aa2779c4ab5d56c2290e275b8b02ad020">setModifiability</a>(<a class="code hl_enumeration" href="classmoonray_1_1geom_1_1_primitive.html#aff577e14a875dcb8f4a766bd4d907a3a">Modifiability</a> m = <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_primitive.html#aff577e14a875dcb8f4a766bd4d907a3aafe6f99ef1ec99efbdc19a9786cf1facc">Modifiability::STATIC</a>);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"></span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">    /// @remark For realtime rendering use. Feature film shader development</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">    ///     does not require this functionality.</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">    /// @brief query primitive&#39;s modifiability (STATIC/DYNAMIC/DEFORMABLE),</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">    ///     do not call this method unless the procedural plugin contains</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">    ///     update() method implementation</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"></span>    <a class="code hl_enumeration" href="classmoonray_1_1geom_1_1_primitive.html#aff577e14a875dcb8f4a766bd4d907a3a">Modifiability</a> <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#ab719fbd600bd973dbeb03ce2a8ef9ebc">getModifiability</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment"></span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">    /// return the memory usage of this primitive in bytes</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html#a7cea19ec192eb4c509d9f27c3e74a04c">  113</a></span><span class="comment"></span>    <span class="keyword">virtual</span> <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_primitive.html#a6ec1e752af007a2007fe341be5aa5810">size_type</a> <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#a7cea19ec192eb4c509d9f27c3e74a04c">getMemory</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment"></span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">    /// return the number of motion samples</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html#a6ef8c77ab9e7fd5dcc9a27d645703cd6">  116</a></span><span class="comment"></span>    <span class="keyword">virtual</span> <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_primitive.html#a6ec1e752af007a2007fe341be5aa5810">size_type</a> <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#a6ef8c77ab9e7fd5dcc9a27d645703cd6">getMotionSamplesCount</a>() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
@@ -647,16 +694,29 @@ $(function() {
 <div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>    }</div>
 <div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span> </div>
 <div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span> </div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">internal::Primitive</a>* getPrimitiveImpl() = 0;</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span> </div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> transformPrimitive(</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span><span class="keyword">private</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span><span class="comment">    /// @remark For renderer internal use, procedural should never call this</span></div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html#a7603a07d5116fc515edbeb2aa714a4ab">  634</a></span><span class="comment"></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">internal::Primitive</a>* <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#a7603a07d5116fc515edbeb2aa714a4ab">getPrimitiveImpl</a>() = 0;</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span><span class="comment"></span> </div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span><span class="comment">    /// @brief transform local space primitive to render space</span></div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span><span class="comment">    /// @remark For renderer internal use, procedural should never call this</span></div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span><span class="comment">    ///</span></div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span><span class="comment">    /// transform the Primitive to rendering space and linear interpolate</span></div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span><span class="comment">    /// primitive data based on motion steps/shutter info.</span></div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span><span class="comment">    /// The motion steps and shutter open/close time are in</span></div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span><span class="comment">    /// frame relative coordinate</span></div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span><span class="comment">    /// (-1 stands for previous frame, and 0 stands for current frame)</span></div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span><span class="comment">    ///</span></div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span><span class="comment">    /// @param proceduralContext per procedural/layer context that is passed in</span></div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span><span class="comment">    ///     from Procedural::generate()/Procedural::update() method</span></div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span><span class="comment">    /// @param prim2render primitive space to rendering space transform</span></div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html#a8a9d605ec9262d447cba3424d443d826">  648</a></span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#a8a9d605ec9262d447cba3424d443d826">transformPrimitive</a>(</div>
 <div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>            <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1_motion_blur_params.html">MotionBlurParams</a> &amp;motionBlurParams,</div>
 <div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a>&amp; prim2render) = 0;</div>
 <div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span> </div>
 <div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>    <span class="keyword">struct </span>Impl;</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>    std::unique_ptr&lt;Impl&gt; mImpl;</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structmoonray_1_1geom_1_1_primitive_1_1_impl.html">Impl</a>;</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_primitive.html#a53709388dcaebebda5a602a1440ea77e">  654</a></span>    std::unique_ptr&lt;Impl&gt; <a class="code hl_variable" href="classmoonray_1_1geom_1_1_primitive.html#a53709388dcaebebda5a602a1440ea77e">mImpl</a>;</div>
 <div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>};</div>
 <div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span> </div>
 <div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span> </div>
@@ -693,14 +753,17 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a5013abfc5a53a70a1658afcec6937e70ac9f1a6384b1c466d4612f513bd8e13ea"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a5013abfc5a53a70a1658afcec6937e70ac9f1a6384b1c466d4612f513bd8e13ea">moonray::geom::Primitive::DataValidness::VALID</a></div><div class="ttdeci">@ VALID</div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a5013abfc5a53a70a1658afcec6937e70ada139deab637b338e4d46673ab5faf18"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a5013abfc5a53a70a1658afcec6937e70ada139deab637b338e4d46673ab5faf18">moonray::geom::Primitive::DataValidness::INVALID_VERTEX_BUFFER</a></div><div class="ttdeci">@ INVALID_VERTEX_BUFFER</div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a5013abfc5a53a70a1658afcec6937e70add9b7b8b308bd5960511c4e6d8b2b15c"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a5013abfc5a53a70a1658afcec6937e70add9b7b8b308bd5960511c4e6d8b2b15c">moonray::geom::Primitive::DataValidness::INVALID_CONSTANT_ATTRIBUTE</a></div><div class="ttdeci">@ INVALID_CONSTANT_ATTRIBUTE</div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a53709388dcaebebda5a602a1440ea77e"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a53709388dcaebebda5a602a1440ea77e">moonray::geom::Primitive::mImpl</a></div><div class="ttdeci">std::unique_ptr&lt; Impl &gt; mImpl</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_8h_source.html#l00654">Primitive.h:654</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a5509e42534d73c7d4809dfa38fdaacdd"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a5509e42534d73c7d4809dfa38fdaacdd">moonray::geom::Primitive::Primitive</a></div><div class="ttdeci">Primitive()</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_8cc_source.html#l00026">Primitive.cc:26</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a6df9f6a68ad7c127a04058187843dca5"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a6df9f6a68ad7c127a04058187843dca5">moonray::geom::Primitive::~Primitive</a></div><div class="ttdeci">virtual ~Primitive()</div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a6ec1e752af007a2007fe341be5aa5810"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a6ec1e752af007a2007fe341be5aa5810">moonray::geom::Primitive::size_type</a></div><div class="ttdeci">uint32_t size_type</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_8h_source.html#l00052">Primitive.h:52</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a6ef8c77ab9e7fd5dcc9a27d645703cd6"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a6ef8c77ab9e7fd5dcc9a27d645703cd6">moonray::geom::Primitive::getMotionSamplesCount</a></div><div class="ttdeci">virtual size_type getMotionSamplesCount() const =0</div><div class="ttdoc">return the number of motion samples</div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a72de56a471752a063890a6ccc43304d5"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a72de56a471752a063890a6ccc43304d5">moonray::geom::Primitive::operator=</a></div><div class="ttdeci">Primitive &amp; operator=(const Primitive &amp;)=delete</div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a7603a07d5116fc515edbeb2aa714a4ab"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a7603a07d5116fc515edbeb2aa714a4ab">moonray::geom::Primitive::getPrimitiveImpl</a></div><div class="ttdeci">virtual internal::Primitive * getPrimitiveImpl()=0</div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a7701e2f8af7d8f3b69955e26d93881c6"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a7701e2f8af7d8f3b69955e26d93881c6">moonray::geom::Primitive::Primitive</a></div><div class="ttdeci">Primitive(const Primitive &amp;)=delete</div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a7c251c4d9daa4184f7060a237da46fa8"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a7c251c4d9daa4184f7060a237da46fa8">moonray::geom::Primitive::applyTransformationToSingleTimeStep</a></div><div class="ttdeci">void applyTransformationToSingleTimeStep(VertexBuffer&lt; VecType, Traits &gt; &amp;vertices, const scene_rdl2::math::Xform3f &amp;p2r, int timeStep)</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_8h_source.html#l00518">Primitive.h:518</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a7cea19ec192eb4c509d9f27c3e74a04c"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a7cea19ec192eb4c509d9f27c3e74a04c">moonray::geom::Primitive::getMemory</a></div><div class="ttdeci">virtual size_type getMemory() const =0</div><div class="ttdoc">return the memory usage of this primitive in bytes</div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a8a9d605ec9262d447cba3424d443d826"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a8a9d605ec9262d447cba3424d443d826">moonray::geom::Primitive::transformPrimitive</a></div><div class="ttdeci">virtual void transformPrimitive(const MotionBlurParams &amp;motionBlurParams, const shading::XformSamples &amp;prim2render)=0</div><div class="ttdoc">transform local space primitive to render space</div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a8c4a419a09d670f9f1b1272e7526bc23"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a8c4a419a09d670f9f1b1272e7526bc23">moonray::geom::Primitive::generateBezierPolygons</a></div><div class="ttdeci">void generateBezierPolygons(VertexBuffer&lt; VecType, Traits &gt; &amp;vertices, const MotionBlurParams &amp;motionBlurParams, const shading::PrimitiveAttributeTable *primAttrTab)</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_8h_source.html#l00125">Primitive.h:125</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a938c9dfcac727de7829bea2b8bcf212f"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a938c9dfcac727de7829bea2b8bcf212f">moonray::geom::Primitive::generateBezierPolygons</a></div><div class="ttdeci">void generateBezierPolygons(VertexBuffer&lt; Vec3fa, Traits &gt; &amp;vertices, const MotionBlurParams &amp;motionBlurParams, const shading::PrimitiveAttributeTable *primAttrTab)</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_8h_source.html#l00267">Primitive.h:267</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_aa2779c4ab5d56c2290e275b8b02ad020"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#aa2779c4ab5d56c2290e275b8b02ad020">moonray::geom::Primitive::setModifiability</a></div><div class="ttdeci">void setModifiability(Modifiability m=Modifiability::STATIC)</div><div class="ttdoc">flag primitive's modifiability to STATIC/DYNAMIC/DEFORMABLE, do not call this method unless the proce...</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_8cc_source.html#l00051">Primitive.cc:51</a></div></div>
@@ -731,10 +794,15 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_1_1geom_html_a51ae5cde5ee89aa3d2bd4759b49f6918"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a51ae5cde5ee89aa3d2bd4759b49f6918">moonray::geom::InternalPrimitiveList</a></div><div class="ttdeci">tbb::concurrent_vector&lt; internal::Primitive * &gt; InternalPrimitiveList</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_8h_source.html#l00041">Primitive.h:41</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1shading_html_ac42657410f98444ece5b9a1b39839f4e"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">moonray::shading::XformSamples</a></div><div class="ttdeci">std::vector&lt; scene_rdl2::math::Xform3f &gt; XformSamples</div><div class="ttdef"><b>Definition:</b> <a href="_xform_8h_source.html#l00024">Xform.h:24</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1_primitive_1_1_impl_html"><div class="ttname"><a href="structmoonray_1_1geom_1_1_primitive_1_1_impl.html">moonray::geom::Primitive::Impl</a></div><div class="ttdef"><b>Definition:</b> <a href="_primitive_8cc_source.html#l00018">Primitive.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_0486ff0a15d68326ffdea20a24729a76.html">geom</a></li><li class="navelem"><a class="el" href="_primitive_8h.html">Primitive.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html">TessellatedVertexLookup</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -124,7 +140,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00342">342</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  342</span>                             : <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a8f986ecebb79c8c932fac113a797d9fd">mTotalVertexCount</a>(0)</div>
+<div class="line"><span class="lineno">  343</span>    {}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup_html_a8f986ecebb79c8c932fac113a797d9fd"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a8f986ecebb79c8c932fac113a797d9fd">moonray::geom::internal::TessellatedVertexLookup::mTotalVertexCount</a></div><div class="ttdeci">size_t mTotalVertexCount</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8h_source.html#l00352">MeshTessellationUtil.h:352</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6bb2f5b8a5693e726f61be6a11b6df17" name="a6bb2f5b8a5693e726f61be6a11b6df17"></a>
@@ -178,7 +197,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00317">317</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  318</span>    {</div>
+<div class="line"><span class="lineno">  319</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[edgeId];</div>
+<div class="line"><span class="lineno">  320</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup_html_aad934a9b75fca4c9ef2b0c2a33c95b1d"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">moonray::geom::internal::TessellatedVertexLookup::mOuterEdgeVertexIdsCount</a></div><div class="ttdeci">std::vector&lt; int &gt; mOuterEdgeVertexIdsCount</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8h_source.html#l00350">MeshTessellationUtil.h:350</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a312c3a60c17c4c1028092034d78f382d" name="a312c3a60c17c4c1028092034d78f382d"></a>
@@ -228,7 +251,12 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00327">327</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  329</span>    {</div>
+<div class="line"><span class="lineno">  330</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a0bfa68ce7239e8bef547e7bb8497d58d">mInteriorVertexIdsStart</a>[face] +</div>
+<div class="line"><span class="lineno">  331</span>            interiorColVertexCount * row + col;</div>
+<div class="line"><span class="lineno">  332</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup_html_a0bfa68ce7239e8bef547e7bb8497d58d"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a0bfa68ce7239e8bef547e7bb8497d58d">moonray::geom::internal::TessellatedVertexLookup::mInteriorVertexIdsStart</a></div><div class="ttdeci">std::vector&lt; int &gt; mInteriorVertexIdsStart</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8h_source.html#l00351">MeshTessellationUtil.h:351</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8488ca8a8627121f89f0262195e9428b" name="a8488ca8a8627121f89f0262195e9428b"></a>
@@ -255,7 +283,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00322">322</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  323</span>    {</div>
+<div class="line"><span class="lineno">  324</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a8f986ecebb79c8c932fac113a797d9fd">mTotalVertexCount</a>;</div>
+<div class="line"><span class="lineno">  325</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7dcda95e78650944e75da41a6d47cf57" name="a7dcda95e78650944e75da41a6d47cf57"></a>
@@ -283,7 +314,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00334">334</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  335</span>    {</div>
+<div class="line"><span class="lineno">  336</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a31f5e798b511c599f8ac9e4521831aee">mOuterRingVertexIds</a>[controlVertexId];</div>
+<div class="line"><span class="lineno">  337</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup_html_a31f5e798b511c599f8ac9e4521831aee"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a31f5e798b511c599f8ac9e4521831aee">moonray::geom::internal::TessellatedVertexLookup::mOuterRingVertexIds</a></div><div class="ttdeci">std::vector&lt; int &gt; mOuterRingVertexIds</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8h_source.html#l00348">MeshTessellationUtil.h:348</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -411,9 +446,13 @@ Protected Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/geom/prim/<a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html">TessellatedVertexLookup</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,16 +42,31 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">Bsdf</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_bsdf.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_bsdf-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::Bsdf Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
@@ -133,14 +152,78 @@ Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a4131d6090c070e8e02a0ba4b46deb886"><td class="memItemLeft" align="right" valign="top">static const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a4131d6090c070e8e02a0ba4b46deb886">maxLobes</a> = 16</td></tr>
 <tr class="separator:a4131d6090c070e8e02a0ba4b46deb886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:ad20ee52d6f4d6d17d6e2d9e2ecfd02cd"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classmoonray_1_1util_1_1_static_vector.html">util::StaticVector</a>&lt; <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">BsdfLobe</a> *, <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a4131d6090c070e8e02a0ba4b46deb886">maxLobes</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#ad20ee52d6f4d6d17d6e2d9e2ecfd02cd">BsdfLobePtrArray</a></td></tr>
+<tr class="separator:ad20ee52d6f4d6d17d6e2d9e2ecfd02cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a2331b6d4a68f0227532f5a843b14f0d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a2331b6d4a68f0227532f5a843b14f0d9">Bsdf</a> (const <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">Bsdf</a> &amp;other)=delete</td></tr>
+<tr class="separator:a2331b6d4a68f0227532f5a843b14f0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136b01d593c218b4bf80f46d976d1bfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">Bsdf</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a136b01d593c218b4bf80f46d976d1bfa">operator=</a> (const <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">Bsdf</a> &amp;other)=delete</td></tr>
+<tr class="separator:a136b01d593c218b4bf80f46d976d1bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a4d66545d3a14d857df00ddded56a1b1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#ad20ee52d6f4d6d17d6e2d9e2ecfd02cd">BsdfLobePtrArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a></td></tr>
+<tr class="separator:a4d66545d3a14d857df00ddded56a1b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a298b2c4eeeaafc29af4b0c5fd7548a49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html">Bssrdf</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a298b2c4eeeaafc29af4b0c5fd7548a49">mBssrdf</a></td></tr>
+<tr class="separator:a298b2c4eeeaafc29af4b0c5fd7548a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ef5067b0c5b7a999d4943d4f20729d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1shading_1_1_volume_subsurface.html">VolumeSubsurface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a5ef5067b0c5b7a999d4943d4f20729d8">mVolumeSubsurface</a></td></tr>
+<tr class="separator:a5ef5067b0c5b7a999d4943d4f20729d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b57f7e643d642e95f5f51247a4a84d5"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a1b57f7e643d642e95f5f51247a4a84d5">mSelfEmission</a></td></tr>
+<tr class="separator:a1b57f7e643d642e95f5f51247a4a84d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83c5b42372dbcd905fd87f7fe1afb2b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a83c5b42372dbcd905fd87f7fe1afb2b2">mEarlyTermination</a></td></tr>
+<tr class="separator:a83c5b42372dbcd905fd87f7fe1afb2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5752525362375dc7625115dbf94bc5ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">BsdfLobe::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a5752525362375dc7625115dbf94bc5ce">mType</a></td></tr>
+<tr class="memdesc:a5752525362375dc7625115dbf94bc5ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of all contained lobes or'ed together.  <a href="classmoonray_1_1shading_1_1_bsdf.html#a5752525362375dc7625115dbf94bc5ce">More...</a><br /></td></tr>
+<tr class="separator:a5752525362375dc7625115dbf94bc5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c7c87a83a1ff83215c363f233950dba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a2c7c87a83a1ff83215c363f233950dba">mIsSpherical</a></td></tr>
+<tr class="separator:a2c7c87a83a1ff83215c363f233950dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630a5d5c17e6ae63bbf98470d5d118ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a630a5d5c17e6ae63bbf98470d5d118ea">mMaterialLabelId</a></td></tr>
+<tr class="memdesc:a630a5d5c17e6ae63bbf98470d5d118ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a42b5ef7383f716ee57be101073ef51d0">setLabelIds()</a> comment for explanation.  <a href="classmoonray_1_1shading_1_1_bsdf.html#a630a5d5c17e6ae63bbf98470d5d118ea">More...</a><br /></td></tr>
+<tr class="separator:a630a5d5c17e6ae63bbf98470d5d118ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49f44465115f0ed22ee97505d8d3c3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#af49f44465115f0ed22ee97505d8d3c3c">mLpeMaterialLabelId</a></td></tr>
+<tr class="separator:af49f44465115f0ed22ee97505d8d3c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf92830551d36a25226cd790f6005205"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#abf92830551d36a25226cd790f6005205">mGeomLabelId</a></td></tr>
+<tr class="separator:abf92830551d36a25226cd790f6005205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40ff5d87ca5832523e93401950996267"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmoonray_1_1shading_1_1_bsdf_1_1_extra_aovs.html">ExtraAovs</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a40ff5d87ca5832523e93401950996267">mPostScatterExtraAovs</a></td></tr>
+<tr class="separator:a40ff5d87ca5832523e93401950996267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Define the <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html" title="Define the Bsdf object, used to represent multi-lobe bsdfs.">Bsdf</a> object, used to represent multi-lobe bsdfs. </p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00349">349</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ad20ee52d6f4d6d17d6e2d9e2ecfd02cd" name="ad20ee52d6f4d6d17d6e2d9e2ecfd02cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20ee52d6f4d6d17d6e2d9e2ecfd02cd">&#9670;&#160;</a></span>BsdfLobePtrArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classmoonray_1_1util_1_1_static_vector.html">util::StaticVector</a>&lt;<a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">BsdfLobe</a> *, <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a4131d6090c070e8e02a0ba4b46deb886">maxLobes</a>&gt; <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#ad20ee52d6f4d6d17d6e2d9e2ecfd02cd">moonray::shading::Bsdf::BsdfLobePtrArray</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00487">487</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af196ce167c5b394539088116a269cc36" name="af196ce167c5b394539088116a269cc36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af196ce167c5b394539088116a269cc36">&#9670;&#160;</a></span>Bsdf()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af196ce167c5b394539088116a269cc36">&#9670;&#160;</a></span>Bsdf() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +248,25 @@ Static Public Attributes</h2></td></tr>
 <p>Constructor / Destructor. </p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00370">370</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  370</span>           : <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>(), <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a298b2c4eeeaafc29af4b0c5fd7548a49">mBssrdf</a>(<span class="keyword">nullptr</span>), <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a5ef5067b0c5b7a999d4943d4f20729d8">mVolumeSubsurface</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  371</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a1b57f7e643d642e95f5f51247a4a84d5">mSelfEmission</a>(scene_rdl2::math::sBlack),</div>
+<div class="line"><span class="lineno">  372</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a83c5b42372dbcd905fd87f7fe1afb2b2">mEarlyTermination</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">  373</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a5752525362375dc7625115dbf94bc5ce">mType</a>(<a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">BsdfLobe::Type</a>(0)), <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a2c7c87a83a1ff83215c363f233950dba">mIsSpherical</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">  374</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a630a5d5c17e6ae63bbf98470d5d118ea">mMaterialLabelId</a>(-1), <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#af49f44465115f0ed22ee97505d8d3c3c">mLpeMaterialLabelId</a>(-1),</div>
+<div class="line"><span class="lineno">  375</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#abf92830551d36a25226cd790f6005205">mGeomLabelId</a>(-1)</div>
+<div class="line"><span class="lineno">  376</span>    {}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_html_a1b57f7e643d642e95f5f51247a4a84d5"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf.html#a1b57f7e643d642e95f5f51247a4a84d5">moonray::shading::Bsdf::mSelfEmission</a></div><div class="ttdeci">scene_rdl2::math::Color mSelfEmission</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00495">Bsdf.h:495</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_html_a298b2c4eeeaafc29af4b0c5fd7548a49"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf.html#a298b2c4eeeaafc29af4b0c5fd7548a49">moonray::shading::Bsdf::mBssrdf</a></div><div class="ttdeci">Bssrdf * mBssrdf</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00493">Bsdf.h:493</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_html_a2c7c87a83a1ff83215c363f233950dba"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf.html#a2c7c87a83a1ff83215c363f233950dba">moonray::shading::Bsdf::mIsSpherical</a></div><div class="ttdeci">bool mIsSpherical</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00501">Bsdf.h:501</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_html_a4d66545d3a14d857df00ddded56a1b1a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">moonray::shading::Bsdf::mLobeArray</a></div><div class="ttdeci">BsdfLobePtrArray mLobeArray</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00492">Bsdf.h:492</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_html_a5752525362375dc7625115dbf94bc5ce"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf.html#a5752525362375dc7625115dbf94bc5ce">moonray::shading::Bsdf::mType</a></div><div class="ttdeci">BsdfLobe::Type mType</div><div class="ttdoc">The type of all contained lobes or'ed together.</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00499">Bsdf.h:499</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_html_a5ef5067b0c5b7a999d4943d4f20729d8"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf.html#a5ef5067b0c5b7a999d4943d4f20729d8">moonray::shading::Bsdf::mVolumeSubsurface</a></div><div class="ttdeci">VolumeSubsurface * mVolumeSubsurface</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00494">Bsdf.h:494</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_html_a630a5d5c17e6ae63bbf98470d5d118ea"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf.html#a630a5d5c17e6ae63bbf98470d5d118ea">moonray::shading::Bsdf::mMaterialLabelId</a></div><div class="ttdeci">int mMaterialLabelId</div><div class="ttdoc">See setLabelIds() comment for explanation.</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00504">Bsdf.h:504</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_html_a83c5b42372dbcd905fd87f7fe1afb2b2"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf.html#a83c5b42372dbcd905fd87f7fe1afb2b2">moonray::shading::Bsdf::mEarlyTermination</a></div><div class="ttdeci">bool mEarlyTermination</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00496">Bsdf.h:496</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_html_abf92830551d36a25226cd790f6005205"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf.html#abf92830551d36a25226cd790f6005205">moonray::shading::Bsdf::mGeomLabelId</a></div><div class="ttdeci">int mGeomLabelId</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00506">Bsdf.h:506</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_html_af49f44465115f0ed22ee97505d8d3c3c"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf.html#af49f44465115f0ed22ee97505d8d3c3c">moonray::shading::Bsdf::mLpeMaterialLabelId</a></div><div class="ttdeci">int mLpeMaterialLabelId</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00505">Bsdf.h:505</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">moonray::shading::BsdfLobe::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00074">Bsdf.h:74</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a72596ed7a1281b8fd5ddbbafc35148e7" name="a72596ed7a1281b8fd5ddbbafc35148e7"></a>
@@ -184,6 +285,34 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8cc_source.html#l00079">79</a> of file <a class="el" href="_bsdf_8cc_source.html">Bsdf.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   80</span>{</div>
+<div class="line"><span class="lineno">   81</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2331b6d4a68f0227532f5a843b14f0d9" name="a2331b6d4a68f0227532f5a843b14f0d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2331b6d4a68f0227532f5a843b14f0d9">&#9670;&#160;</a></span>Bsdf() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moonray::shading::Bsdf::Bsdf </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">Bsdf</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -214,7 +343,16 @@ Static Public Attributes</h2></td></tr>
 <p >Add Lobes. The <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html" title="Define the Bsdf object, used to represent multi-lobe bsdfs.">Bsdf</a> DOES take ownership of the lobes. Adding a lobe instance more than once is not supported, it will cause it to be deleted more than once in <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a72596ed7a1281b8fd5ddbbafc35148e7">~Bsdf()</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00382">382</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  382</span>                                         {</div>
+<div class="line"><span class="lineno">  383</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>.<a class="code hl_function" href="classmoonray_1_1util_1_1_static_vector.html#a89ee63742ced2a326750d1d6369ca349">size</a>() &lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4131d6090c070e8e02a0ba4b46deb886">maxLobes</a>);</div>
+<div class="line"><span class="lineno">  384</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a5752525362375dc7625115dbf94bc5ce">mType</a> = <a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">BsdfLobe::Type</a>(<span class="keywordtype">unsigned</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a5752525362375dc7625115dbf94bc5ce">mType</a>) | <span class="keywordtype">unsigned</span>(lobe-&gt;getType()));</div>
+<div class="line"><span class="lineno">  385</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a2c7c87a83a1ff83215c363f233950dba">mIsSpherical</a> |= lobe-&gt;getIsSpherical();</div>
+<div class="line"><span class="lineno">  386</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>.<a class="code hl_function" href="classmoonray_1_1util_1_1_static_vector.html#ac8542ba4c1123b0e3569be2f068841a6">push_back</a>(lobe);</div>
+<div class="line"><span class="lineno">  387</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_html_a4131d6090c070e8e02a0ba4b46deb886"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf.html#a4131d6090c070e8e02a0ba4b46deb886">moonray::shading::Bsdf::maxLobes</a></div><div class="ttdeci">static const std::size_t maxLobes</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00352">Bsdf.h:352</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1util_1_1_static_vector_html_a89ee63742ced2a326750d1d6369ca349"><div class="ttname"><a href="classmoonray_1_1util_1_1_static_vector.html#a89ee63742ced2a326750d1d6369ca349">moonray::util::StaticVector::size</a></div><div class="ttdeci">size_type size() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="lib_2common_2mcrt__util_2_static_vector_8h_source.html#l00265">StaticVector.h:265</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1util_1_1_static_vector_html_ac8542ba4c1123b0e3569be2f068841a6"><div class="ttname"><a href="classmoonray_1_1util_1_1_static_vector.html#ac8542ba4c1123b0e3569be2f068841a6">moonray::util::StaticVector::push_back</a></div><div class="ttdeci">void push_back(const T &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2common_2mcrt__util_2_static_vector_8h_source.html#l00364">StaticVector.h:364</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad82f99abb7bbb81681454146a9ed62fc" name="ad82f99abb7bbb81681454146a9ed62fc"></a>
@@ -234,7 +372,22 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8cc_source.html#l00131">131</a> of file <a class="el" href="_bsdf_8cc_source.html">Bsdf.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  132</span>{</div>
+<div class="line"><span class="lineno">  133</span>    Color result(zero);</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>    <span class="comment">// Add up all matching lobes&#39; albedo()</span></div>
+<div class="line"><span class="lineno">  136</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a> = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>.<a class="code hl_function" href="classmoonray_1_1util_1_1_static_vector.html#a89ee63742ced2a326750d1d6369ca349">size</a>();</div>
+<div class="line"><span class="lineno">  137</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> l=0; l &lt; <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a>; l++) {</div>
+<div class="line"><span class="lineno">  138</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>[l]-&gt;<a class="code hl_function" href="namespacemoonray_1_1shading.html#ab39b070530cee3ebe43a5e47aba12f08">matchesFlags</a>(slice.getFlags())) {</div>
+<div class="line"><span class="lineno">  139</span>            result += <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>[l]-&gt;albedo(slice);</div>
+<div class="line"><span class="lineno">  140</span>        }</div>
+<div class="line"><span class="lineno">  141</span>    }</div>
+<div class="line"><span class="lineno">  142</span> </div>
+<div class="line"><span class="lineno">  143</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  144</span>}</div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_resume_history_meta_data_8cc_03_html_a9a38a2aa0f811fa9e3761cd0049c46b8"><div class="ttname"><a href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">anonymous_namespace{ResumeHistoryMetaData.cc}::size</a></div><div class="ttdeci">MAYBE_UNUSED std::size_t size(const std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="_resume_history_meta_data_8cc_source.html#l00047">ResumeHistoryMetaData.cc:47</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_ab39b070530cee3ebe43a5e47aba12f08"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ab39b070530cee3ebe43a5e47aba12f08">moonray::shading::matchesFlags</a></div><div class="ttdeci">bool matchesFlags(const BsdfLobev &amp;lobev, int flags)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdfv_8h_source.html#l00038">Bsdfv.h:38</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ada5a885a88eec85df58e1b5cf2e1010d" name="ada5a885a88eec85df58e1b5cf2e1010d"></a>
@@ -271,7 +424,33 @@ Static Public Attributes</h2></td></tr>
 <p >The following evaluation API follows mostly the same rules and conventions from the <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html" title="Define the BsdfLobe interface. You can derive this class to define specific (single) Bsdf lobes.">BsdfLobe</a> class. The pdf returned by eval assumes equiprobability of all lobes within the <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html" title="Define the Bsdf object, used to represent multi-lobe bsdfs.">Bsdf</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8cc_source.html#l00099">99</a> of file <a class="el" href="_bsdf_8cc_source.html">Bsdf.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  100</span>{</div>
+<div class="line"><span class="lineno">  101</span>    <a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">BsdfLobe::Type</a> flags = slice.getSurfaceFlags(*<span class="keyword">this</span>, wi);</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>    <span class="comment">// Add up all matching lobes&#39; eval()</span></div>
+<div class="line"><span class="lineno">  104</span>    Color f(zero);</div>
+<div class="line"><span class="lineno">  105</span>    pdf = 0.0f;</div>
+<div class="line"><span class="lineno">  106</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a> = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>.<a class="code hl_function" href="classmoonray_1_1util_1_1_static_vector.html#a89ee63742ced2a326750d1d6369ca349">size</a>();</div>
+<div class="line"><span class="lineno">  107</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> l=0; l &lt; <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a>; l++) {</div>
+<div class="line"><span class="lineno">  108</span>        BsdfLobe* <span class="keyword">const</span> lobe = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>[l];</div>
+<div class="line"><span class="lineno">  109</span> </div>
+<div class="line"><span class="lineno">  110</span>        <span class="comment">// We need to account for lobe pdf, even if the surface flag doesn&#39;t match</span></div>
+<div class="line"><span class="lineno">  111</span>        <span class="keywordtype">float</span> tmpPdf = 0.0f;</div>
+<div class="line"><span class="lineno">  112</span>        Color color = lobe-&gt;eval(slice, wi, &amp;tmpPdf);</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">if</span> (lobe-&gt;matchesFlags(flags)) {</div>
+<div class="line"><span class="lineno">  114</span>            f += color;</div>
+<div class="line"><span class="lineno">  115</span>        }</div>
+<div class="line"><span class="lineno">  116</span>        pdf += tmpPdf;</div>
+<div class="line"><span class="lineno">  117</span>    }</div>
+<div class="line"><span class="lineno">  118</span> </div>
+<div class="line"><span class="lineno">  119</span>    <span class="comment">// Assumes all lobes are equi-probable</span></div>
+<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">if</span> (size &gt; 1) {</div>
+<div class="line"><span class="lineno">  121</span>        pdf /= <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a>;</div>
+<div class="line"><span class="lineno">  122</span>    }</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>    <span class="keywordflow">return</span> f;</div>
+<div class="line"><span class="lineno">  125</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa13cbc856c456f97ceb5da609b0ef835" name="aa13cbc856c456f97ceb5da609b0ef835"></a>
@@ -298,7 +477,8 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00405">405</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  405</span>{  <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a298b2c4eeeaafc29af4b0c5fd7548a49">mBssrdf</a>;  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aad1cd835ac0e94f8dedd1e58be93f5a2" name="aad1cd835ac0e94f8dedd1e58be93f5a2"></a>
@@ -325,7 +505,8 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00404">404</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  404</span>{  <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a298b2c4eeeaafc29af4b0c5fd7548a49">mBssrdf</a>;  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa56394acb2ce92ad8a345bd3f6f547db" name="aa56394acb2ce92ad8a345bd3f6f547db"></a>
@@ -352,7 +533,8 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00434">434</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  434</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a83c5b42372dbcd905fd87f7fe1afb2b2">mEarlyTermination</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a61f2a55993991a4a9fe84ef8d45f9130" name="a61f2a55993991a4a9fe84ef8d45f9130"></a>
@@ -380,7 +562,8 @@ Static Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>id of geom label used in material aov expressions </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00470">470</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  470</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#abf92830551d36a25226cd790f6005205">mGeomLabelId</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa6f0fba50e2c95094a41e133b10221a6" name="aa6f0fba50e2c95094a41e133b10221a6"></a>
@@ -409,7 +592,8 @@ Static Public Attributes</h2></td></tr>
 <p>Returns true if at least one lobe is spherical and false otherwise. </p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00440">440</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  440</span>{  <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a2c7c87a83a1ff83215c363f233950dba">mIsSpherical</a>;  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae1bbee4ff8054e6f18fc99cebfa6d975" name="ae1bbee4ff8054e6f18fc99cebfa6d975"></a>
@@ -437,7 +621,8 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00396">396</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  397</span>            {  <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>[index];  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a41564b391fb82dda160110490c57dd27" name="a41564b391fb82dda160110490c57dd27"></a>
@@ -467,7 +652,8 @@ Static Public Attributes</h2></td></tr>
 <p>Get a specific lobe. </p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00394">394</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  395</span>            {  <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>[index];  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9ce3dc929202fb7dea96224c8f46e8e1" name="a9ce3dc929202fb7dea96224c8f46e8e1"></a>
@@ -496,7 +682,8 @@ Static Public Attributes</h2></td></tr>
 <p>How many lobes do we have (that match the given flags) </p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00390">390</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  390</span>{  <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>.<a class="code hl_function" href="classmoonray_1_1util_1_1_static_vector.html#a89ee63742ced2a326750d1d6369ca349">size</a>();  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aaeaa8a0aa41b56fc998313533153503a" name="aaeaa8a0aa41b56fc998313533153503a"></a>
@@ -516,7 +703,18 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8cc_source.html#l00085">85</a> of file <a class="el" href="_bsdf_8cc_source.html">Bsdf.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   86</span>{</div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> = 0;</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a> = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>.<a class="code hl_function" href="classmoonray_1_1util_1_1_static_vector.html#a89ee63742ced2a326750d1d6369ca349">size</a>();</div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> l=0; l &lt; <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a>; l++) {</div>
+<div class="line"><span class="lineno">   91</span>        <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> += (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>[l]-&gt;matchesFlags(flags)  ?  1  : 0);</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>;</div>
+<div class="line"><span class="lineno">   95</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03_html_ac002aa9e7f277e6c84e4fe1aeb5bb8cb"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">moonray::rndr::unittest::anonymous_namespace{TestOverlappingRegions.cc}::count</a></div><div class="ttdeci">void count(const OverlappingRegions&lt; sRegionOverlap, sTileWidth, sTileHeight, sDesiredRegionsPerDimension &gt; &amp;regions, int line)</div><div class="ttdef"><b>Definition:</b> <a href="_test_overlapping_regions_8cc_source.html#l00024">TestOverlappingRegions.cc:24</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8821ceffbdf55649e9477990ae11af5e" name="a8821ceffbdf55649e9477990ae11af5e"></a>
@@ -544,7 +742,8 @@ Static Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>id of material label used in light path aov expressions </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00467">467</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  467</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#af49f44465115f0ed22ee97505d8d3c3c">mLpeMaterialLabelId</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0fc209dc90a28189fc46b42b60afcd9c" name="a0fc209dc90a28189fc46b42b60afcd9c"></a>
@@ -572,7 +771,8 @@ Static Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>id of material label used in material aov expressions </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00464">464</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  464</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a630a5d5c17e6ae63bbf98470d5d118ea">mMaterialLabelId</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a437f4fc4c02bf42c74dc1257227bd4e5" name="a437f4fc4c02bf42c74dc1257227bd4e5"></a>
@@ -599,7 +799,9 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00484">484</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  484</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a40ff5d87ca5832523e93401950996267">mPostScatterExtraAovs</a>; }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_html_a40ff5d87ca5832523e93401950996267"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf.html#a40ff5d87ca5832523e93401950996267">moonray::shading::Bsdf::mPostScatterExtraAovs</a></div><div class="ttdeci">ExtraAovs mPostScatterExtraAovs</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00508">Bsdf.h:508</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1942725833db33a6f0d0f8167a141be9" name="a1942725833db33a6f0d0f8167a141be9"></a>
@@ -626,7 +828,8 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00427">427</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  427</span>{  <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a1b57f7e643d642e95f5f51247a4a84d5">mSelfEmission</a>;  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7b738f698adf298af35478b1593f6e10" name="a7b738f698adf298af35478b1593f6e10"></a>
@@ -655,7 +858,8 @@ Static Public Attributes</h2></td></tr>
 <p>Returns the type of all contained BsdfLobes or'ed together. </p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00437">437</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  437</span>{  <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a5752525362375dc7625115dbf94bc5ce">mType</a>;  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a84fa1c66c673745dda886183f7d61ee2" name="a84fa1c66c673745dda886183f7d61ee2"></a>
@@ -682,7 +886,10 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00414">414</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  414</span>                                                    {</div>
+<div class="line"><span class="lineno">  415</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a5ef5067b0c5b7a999d4943d4f20729d8">mVolumeSubsurface</a>;</div>
+<div class="line"><span class="lineno">  416</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a15563a5ddd76ce63540b245a89a505ad" name="a15563a5ddd76ce63540b245a89a505ad"></a>
@@ -709,7 +916,10 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00411">411</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  411</span>                                                                {</div>
+<div class="line"><span class="lineno">  412</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a5ef5067b0c5b7a999d4943d4f20729d8">mVolumeSubsurface</a>;</div>
+<div class="line"><span class="lineno">  413</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abf76926aacc706bbedc39ccd38dc819d" name="abf76926aacc706bbedc39ccd38dc819d"></a>
@@ -736,6 +946,36 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00418">418</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  418</span>                                       {</div>
+<div class="line"><span class="lineno">  419</span>        <span class="keywordflow">return</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a298b2c4eeeaafc29af4b0c5fd7548a49">mBssrdf</a> != <span class="keyword">nullptr</span> ||</div>
+<div class="line"><span class="lineno">  420</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a5ef5067b0c5b7a999d4943d4f20729d8">mVolumeSubsurface</a> != <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  421</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a136b01d593c218b4bf80f46d976d1bfa" name="a136b01d593c218b4bf80f46d976d1bfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a136b01d593c218b4bf80f46d976d1bfa">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">Bsdf</a> &amp; moonray::shading::Bsdf::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">Bsdf</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -765,7 +1005,8 @@ Static Public Attributes</h2></td></tr>
 <p >Set/get a <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html" title="Base class to implement a Bssrdf with importance sampling.">Bssrdf</a>. The <a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html" title="Base class to implement a Bssrdf with importance sampling.">Bssrdf</a> is owned by the <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html" title="Define the Bsdf object, used to represent multi-lobe bsdfs.">Bsdf</a> and will be destroyed in the <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html" title="Define the Bsdf object, used to represent multi-lobe bsdfs.">Bsdf</a> destructor. TODO: This is a temporary shortcut. We probably want this to be returned by a surface shader separately from the <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html" title="Define the Bsdf object, used to represent multi-lobe bsdfs.">Bsdf</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00403">403</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  403</span>{  <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a298b2c4eeeaafc29af4b0c5fd7548a49">mBssrdf</a> = bssrdf;  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae09bb5118af5d53c97c209fed2376c18" name="ae09bb5118af5d53c97c209fed2376c18"></a>
@@ -793,7 +1034,10 @@ Static Public Attributes</h2></td></tr>
 <p >Signals that the BSDF should not be sampled, and tracing should immediately terminate. </p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00431">431</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  431</span>                                       {</div>
+<div class="line"><span class="lineno">  432</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a83c5b42372dbcd905fd87f7fe1afb2b2">mEarlyTermination</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  433</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a42b5ef7383f716ee57be101073ef51d0" name="a42b5ef7383f716ee57be101073ef51d0"></a>
@@ -845,7 +1089,12 @@ Static Public Attributes</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00455">455</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  457</span>    {</div>
+<div class="line"><span class="lineno">  458</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a630a5d5c17e6ae63bbf98470d5d118ea">mMaterialLabelId</a>    = materialLabelId;</div>
+<div class="line"><span class="lineno">  459</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#af49f44465115f0ed22ee97505d8d3c3c">mLpeMaterialLabelId</a> = lpeMaterialLabelId;</div>
+<div class="line"><span class="lineno">  460</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#abf92830551d36a25226cd790f6005205">mGeomLabelId</a>        = geomLabelId;</div>
+<div class="line"><span class="lineno">  461</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a62c7ef35ea8574cedfe852f16fbdcaf6" name="a62c7ef35ea8574cedfe852f16fbdcaf6"></a>
@@ -881,7 +1130,10 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8cc_source.html#l00178">178</a> of file <a class="el" href="_bsdf_8cc_source.html">Bsdf.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  179</span>{</div>
+<div class="line"><span class="lineno">  180</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a40ff5d87ca5832523e93401950996267">mPostScatterExtraAovs</a> = { numExtraAovs, labelIds, colors };</div>
+<div class="line"><span class="lineno">  181</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae8aacb2d5c1b16a836ea248a61074ab2" name="ae8aacb2d5c1b16a836ea248a61074ab2"></a>
@@ -910,7 +1162,8 @@ Static Public Attributes</h2></td></tr>
 <p >Set/get self emission TODO: This is a temporary shortcut. We probably want this to be returned by a surface shader separately from the <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html" title="Define the Bsdf object, used to represent multi-lobe bsdfs.">Bsdf</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00426">426</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  426</span>{  <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a1b57f7e643d642e95f5f51247a4a84d5">mSelfEmission</a> = color;  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac0772f2ae37a3c36e9b1f83d101b1d1f" name="ac0772f2ae37a3c36e9b1f83d101b1d1f"></a>
@@ -938,7 +1191,10 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00407">407</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  407</span>                                                                         {</div>
+<div class="line"><span class="lineno">  408</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a5ef5067b0c5b7a999d4943d4f20729d8">mVolumeSubsurface</a> = volumeSubsurface;</div>
+<div class="line"><span class="lineno">  409</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab899abb8b2223c88ebc2318b50671d31" name="ab899abb8b2223c88ebc2318b50671d31"></a>
@@ -974,7 +1230,37 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8cc_source.html#l00147">147</a> of file <a class="el" href="_bsdf_8cc_source.html">Bsdf.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  148</span>{</div>
+<div class="line"><span class="lineno">  149</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> numLobes = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>.<a class="code hl_function" href="classmoonray_1_1util_1_1_static_vector.html#a89ee63742ced2a326750d1d6369ca349">size</a>();</div>
+<div class="line"><span class="lineno">  150</span> </div>
+<div class="line"><span class="lineno">  151</span>    os &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  152</span>    os &lt;&lt; <span class="stringliteral">&quot;==========================================================\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  153</span>    os &lt;&lt; <span class="stringliteral">&quot;BSDF @ &quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot; for &quot;</span> &lt;&lt; sceneClass &lt;&lt; <span class="stringliteral">&quot;: &#39;&quot;</span> &lt;&lt; <a class="code hl_variable" href="namespacepackage.html#a781101519999e91f2fc32335a8969fc2">name</a> &lt;&lt; <span class="stringliteral">&quot;&#39;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  154</span>    os &lt;&lt; <span class="stringliteral">&quot;==========================================================\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  155</span>    os &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  156</span> </div>
+<div class="line"><span class="lineno">  157</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; numLobes; ++i) {</div>
+<div class="line"><span class="lineno">  158</span>        <span class="keyword">const</span> BsdfLobe* <span class="keyword">const</span> lobe = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>[i];</div>
+<div class="line"><span class="lineno">  159</span>        lobe-&gt;show(os, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  160</span>        os &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  161</span>    }</div>
+<div class="line"><span class="lineno">  162</span> </div>
+<div class="line"><span class="lineno">  163</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a298b2c4eeeaafc29af4b0c5fd7548a49">mBssrdf</a>) {</div>
+<div class="line"><span class="lineno">  164</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a298b2c4eeeaafc29af4b0c5fd7548a49">mBssrdf</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_bssrdf.html#a95f008b6b9a9b91d80944c8af65dc2eb">show</a>(os, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  165</span>        os &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  166</span>    }</div>
+<div class="line"><span class="lineno">  167</span> </div>
+<div class="line"><span class="lineno">  168</span>    os &lt;&lt; <span class="stringliteral">&quot;[emission] = &quot;</span></div>
+<div class="line"><span class="lineno">  169</span>        &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a1b57f7e643d642e95f5f51247a4a84d5">mSelfEmission</a>.r &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><span class="lineno">  170</span>        &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a1b57f7e643d642e95f5f51247a4a84d5">mSelfEmission</a>.g &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><span class="lineno">  171</span>        &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a1b57f7e643d642e95f5f51247a4a84d5">mSelfEmission</a>.b &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  172</span> </div>
+<div class="line"><span class="lineno">  173</span>    os &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  174</span>    os &lt;&lt; <span class="stringliteral">&quot;==========================================================\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  175</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_a95f008b6b9a9b91d80944c8af65dc2eb"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#a95f008b6b9a9b91d80944c8af65dc2eb">moonray::shading::Bssrdf::show</a></div><div class="ttdeci">virtual void show(std::ostream &amp;os, const std::string &amp;indent) const =0</div></div>
+<div class="ttc" id="anamespacepackage_html_a781101519999e91f2fc32335a8969fc2"><div class="ttname"><a href="namespacepackage.html#a781101519999e91f2fc32335a8969fc2">package.name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> <a href="package_8py_source.html#l00007">package.py:7</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1002,14 +1288,286 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a298b2c4eeeaafc29af4b0c5fd7548a49" name="a298b2c4eeeaafc29af4b0c5fd7548a49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a298b2c4eeeaafc29af4b0c5fd7548a49">&#9670;&#160;</a></span>mBssrdf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html">Bssrdf</a>* moonray::shading::Bsdf::mBssrdf</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00493">493</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
+
+</div>
+</div>
+<a id="a83c5b42372dbcd905fd87f7fe1afb2b2" name="a83c5b42372dbcd905fd87f7fe1afb2b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83c5b42372dbcd905fd87f7fe1afb2b2">&#9670;&#160;</a></span>mEarlyTermination</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::shading::Bsdf::mEarlyTermination</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00496">496</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
+
+</div>
+</div>
+<a id="abf92830551d36a25226cd790f6005205" name="abf92830551d36a25226cd790f6005205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf92830551d36a25226cd790f6005205">&#9670;&#160;</a></span>mGeomLabelId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int moonray::shading::Bsdf::mGeomLabelId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00506">506</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
+
+</div>
+</div>
+<a id="a2c7c87a83a1ff83215c363f233950dba" name="a2c7c87a83a1ff83215c363f233950dba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c7c87a83a1ff83215c363f233950dba">&#9670;&#160;</a></span>mIsSpherical</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::shading::Bsdf::mIsSpherical</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00501">501</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
+
+</div>
+</div>
+<a id="a4d66545d3a14d857df00ddded56a1b1a" name="a4d66545d3a14d857df00ddded56a1b1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d66545d3a14d857df00ddded56a1b1a">&#9670;&#160;</a></span>mLobeArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#ad20ee52d6f4d6d17d6e2d9e2ecfd02cd">BsdfLobePtrArray</a> moonray::shading::Bsdf::mLobeArray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00492">492</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
+
+</div>
+</div>
+<a id="af49f44465115f0ed22ee97505d8d3c3c" name="af49f44465115f0ed22ee97505d8d3c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af49f44465115f0ed22ee97505d8d3c3c">&#9670;&#160;</a></span>mLpeMaterialLabelId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int moonray::shading::Bsdf::mLpeMaterialLabelId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00505">505</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
+
+</div>
+</div>
+<a id="a630a5d5c17e6ae63bbf98470d5d118ea" name="a630a5d5c17e6ae63bbf98470d5d118ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630a5d5c17e6ae63bbf98470d5d118ea">&#9670;&#160;</a></span>mMaterialLabelId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int moonray::shading::Bsdf::mMaterialLabelId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>See <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a42b5ef7383f716ee57be101073ef51d0">setLabelIds()</a> comment for explanation. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00504">504</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
+
+</div>
+</div>
+<a id="a40ff5d87ca5832523e93401950996267" name="a40ff5d87ca5832523e93401950996267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40ff5d87ca5832523e93401950996267">&#9670;&#160;</a></span>mPostScatterExtraAovs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmoonray_1_1shading_1_1_bsdf_1_1_extra_aovs.html">ExtraAovs</a> moonray::shading::Bsdf::mPostScatterExtraAovs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00508">508</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
+
+</div>
+</div>
+<a id="a1b57f7e643d642e95f5f51247a4a84d5" name="a1b57f7e643d642e95f5f51247a4a84d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b57f7e643d642e95f5f51247a4a84d5">&#9670;&#160;</a></span>mSelfEmission</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Color moonray::shading::Bsdf::mSelfEmission</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00495">495</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
+
+</div>
+</div>
+<a id="a5752525362375dc7625115dbf94bc5ce" name="a5752525362375dc7625115dbf94bc5ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5752525362375dc7625115dbf94bc5ce">&#9670;&#160;</a></span>mType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">BsdfLobe::Type</a> moonray::shading::Bsdf::mType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The type of all contained lobes or'ed together. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00499">499</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
+
+</div>
+</div>
+<a id="a5ef5067b0c5b7a999d4943d4f20729d8" name="a5ef5067b0c5b7a999d4943d4f20729d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ef5067b0c5b7a999d4943d4f20729d8">&#9670;&#160;</a></span>mVolumeSubsurface</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1shading_1_1_volume_subsurface.html">VolumeSubsurface</a>* moonray::shading::Bsdf::mVolumeSubsurface</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_8h_source.html#l00494">494</a> of file <a class="el" href="_bsdf_8h_source.html">Bsdf.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/bsdf/<a class="el" href="_bsdf_8h_source.html">Bsdf.h</a></li>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/bsdf/<a class="el" href="_bsdf_8cc_source.html">Bsdf.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">Bsdf</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

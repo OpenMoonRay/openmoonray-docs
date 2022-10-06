@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_3ffafe8d4194a26e471fc283bfe39627.html">shading</a></li><li class="navelem"><a class="el" href="dir_dc7d4ea0feddfdece5425e1d6c4bcd38.html">bsdf</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_light_stage_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">LightStage.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -70,6 +88,30 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a823e7ca861e609024bbbcd6cb90a926a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_light_stage_8cc.html#a823e7ca861e609024bbbcd6cb90a926a">PBR_LIGHTSTAGE_DEBUG</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a823e7ca861e609024bbbcd6cb90a926a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad245c2998c12ed4d733f917b9bca9df0"><td class="memItemLeft" align="right" valign="top">static Vec3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#ad245c2998c12ed4d733f917b9bca9df0">moonray::shading::rotate</a> (const Vec3f &amp;vector, const Vec3f &amp;axis, float angle)</td></tr>
+<tr class="separator:ad245c2998c12ed4d733f917b9bca9df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad254fac4362091c7515d797ae3122042"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#ad254fac4362091c7515d797ae3122042">moonray::shading::intersect</a> (const Vec3f &amp;P, const Vec3f &amp;wi, const Vec3f Plight[3], Vec3f &amp;weights)</td></tr>
+<tr class="separator:ad254fac4362091c7515d797ae3122042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad962956013236ddce08a1f72f63dc1b8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#ad962956013236ddce08a1f72f63dc1b8">moonray::shading::getFaceLightOrderIndex</a> (const Vec3f &amp;P, const Vec3f &amp;wi, Vec3i &amp;lightOrderIndex, Vec3f &amp;weights)</td></tr>
+<tr class="separator:ad962956013236ddce08a1f72f63dc1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ac06e9b9cac2928429c7f4af52d3b757b"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#ac06e9b9cac2928429c7f4af52d3b757b">moonray::shading::sLightCount</a> = 346</td></tr>
+<tr class="separator:ac06e9b9cac2928429c7f4af52d3b757b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbae937f50d621a2c2a0169f33896524"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#adbae937f50d621a2c2a0169f33896524">moonray::shading::sLightPosition</a> [sLightCount][3]</td></tr>
+<tr class="separator:adbae937f50d621a2c2a0169f33896524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab872c328ed6d87e29774bba9211d68e1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#ab872c328ed6d87e29774bba9211d68e1">moonray::shading::sSeparatedLightIndex</a> [LightStage::sSeparatedLightCount]</td></tr>
+<tr class="separator:ab872c328ed6d87e29774bba9211d68e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ca1984ab8c9d7399d8c44e295add599"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a7ca1984ab8c9d7399d8c44e295add599">moonray::shading::sCombinedLightIndex</a> [LightStage::sCombinedLightCount]</td></tr>
+<tr class="separator:a7ca1984ab8c9d7399d8c44e295add599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcfb59e62b4e27be0fb06c0939a2d636"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#adcfb59e62b4e27be0fb06c0939a2d636">moonray::shading::sFaceCount</a> = 177</td></tr>
+<tr class="separator:adcfb59e62b4e27be0fb06c0939a2d636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b20394826208920e134f2073afe4b7b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a8b20394826208920e134f2073afe4b7b">moonray::shading::sFaces</a> [sFaceCount][3]</td></tr>
+<tr class="separator:a8b20394826208920e134f2073afe4b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a823e7ca861e609024bbbcd6cb90a926a" name="a823e7ca861e609024bbbcd6cb90a926a"></a>
@@ -89,9 +131,13 @@ Macros</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ffbcf3a8cac23adad179e74a09117904.html">shading</a></li><li class="navelem"><a class="el" href="dir_475738c250334a966655aa4f1c4fd0a3.html">bsdf</a></li><li class="navelem"><a class="el" href="_light_stage_8cc.html">LightStage.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

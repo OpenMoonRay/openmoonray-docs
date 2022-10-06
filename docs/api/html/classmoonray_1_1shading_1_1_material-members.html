@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_material.html">Material</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_material.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">moonray::shading::Material Member List</div></div>
 </div><!--header-->
@@ -84,7 +100,9 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html#ab242b8a22dbb3da7cd68fc32b6d63932">mLpeMaterialLabelId</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html">moonray::shading::Material</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_root_shader.html#a4362666dea32f241b95710c456bdf2df">mMaterialId</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_root_shader.html">moonray::shading::RootShader</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html#a4b74b8d1cd67f759be2483c86077cbac">mMaterialLabelId</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html">moonray::shading::Material</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html#a2c027326f2f030b6e7e78ae2b216810b">mPostScatterExtraAovs</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html">moonray::shading::Material</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_root_shader.html#aea2081ea4c8b189df12d1d8fc94fe19a">mOwner</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_root_shader.html">moonray::shading::RootShader</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html#a2c027326f2f030b6e7e78ae2b216810b">mPostScatterExtraAovs</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html">moonray::shading::Material</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_root_shader.html#a62adb75e17c667923493fee9abd4a309">mPrimitiveAttributeTable</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_root_shader.html">moonray::shading::RootShader</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html#ab7721bbc2970c0164bbc657c137f3624">mShadeEntries</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html">moonray::shading::Material</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html#a9f4ce269ac44aabb0d0c69ef4ad4b8cf">mShadeQueue</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html">moonray::shading::Material</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html#a57aeaf01c702eec03d80d84afa841a8c">printDeferredEntryWarnings</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html">moonray::shading::Material</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
@@ -107,9 +125,12 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html#aa96076e07ddc4afdbc05eeed07e1ffd3">sTotalDeferredEntries</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html">moonray::shading::Material</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html#a955730531cf1787a89577b7bdb3a1d71">~Material</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_material.html">moonray::shading::Material</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

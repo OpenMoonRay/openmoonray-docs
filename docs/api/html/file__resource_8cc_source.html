@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_6980d87992044b0cad36d4edf582ac03.html">common</a></li><li class="navelem"><a class="el" href="dir_b379d5e0af216b0b40b9a2534947c32e.html">file_resource</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('file__resource_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">file_resource.cc</div></div>
 </div><!--header-->
@@ -69,21 +85,21 @@ $(function() {
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classmoonray_1_1file__resource_1_1_impl.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1file__resource_1_1_impl.html">Impl</a></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classmoonray_1_1file__resource_1_1_impl.html#ad25ccedc92d8f503f20a116073e21f81">   23</a></span>    <a class="code hl_function" href="classmoonray_1_1file__resource_1_1_impl.html#ad25ccedc92d8f503f20a116073e21f81">Impl</a>() : mInitialized(false) {}</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classmoonray_1_1file__resource_1_1_impl.html#ad25ccedc92d8f503f20a116073e21f81">   23</a></span>    <a class="code hl_function" href="classmoonray_1_1file__resource_1_1_impl.html#ad25ccedc92d8f503f20a116073e21f81">Impl</a>() : <a class="code hl_variable" href="classmoonray_1_1file__resource_1_1_impl.html#ada43fb0487b1def8db51738a2e6bb53c">mInitialized</a>(false) {}</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classmoonray_1_1file__resource_1_1_impl.html#ad9a4cf38fdaf3dcbd6ff695165d95d24">initialize</a>();</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_class" href="classmoonray_1_1file__resource_1_1_file_resource.html">FileResource</a>* <a class="code hl_function" href="classmoonray_1_1file__resource_1_1_impl.html#a5f788bcc08cf55b4e0df75713a32dc81">getFileResource</a>(<span class="keyword">const</span> std::string&amp; name);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">bool</span> mInitialized;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classmoonray_1_1file__resource_1_1_impl.html#ada43fb0487b1def8db51738a2e6bb53c">   30</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classmoonray_1_1file__resource_1_1_impl.html#ada43fb0487b1def8db51738a2e6bb53c">mInitialized</a>;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">bool</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classmoonray_1_1file__resource_1_1_impl.html#ad9a4cf38fdaf3dcbd6ff695165d95d24">   34</a></span><a class="code hl_function" href="classmoonray_1_1file__resource_1_1_impl.html#ad9a4cf38fdaf3dcbd6ff695165d95d24">Impl::initialize</a>()</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span> (!mInitialized) {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        mInitialized = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1file__resource_1_1_impl.html#ada43fb0487b1def8db51738a2e6bb53c">mInitialized</a>) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_variable" href="classmoonray_1_1file__resource_1_1_impl.html#ada43fb0487b1def8db51738a2e6bb53c">mInitialized</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
@@ -130,6 +146,7 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1file__resource_1_1_impl_html_a5f788bcc08cf55b4e0df75713a32dc81"><div class="ttname"><a href="classmoonray_1_1file__resource_1_1_impl.html#a5f788bcc08cf55b4e0df75713a32dc81">moonray::file_resource::Impl::getFileResource</a></div><div class="ttdeci">FileResource * getFileResource(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="file__resource_8cc_source.html#l00043">file_resource.cc:43</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1file__resource_1_1_impl_html_ad25ccedc92d8f503f20a116073e21f81"><div class="ttname"><a href="classmoonray_1_1file__resource_1_1_impl.html#ad25ccedc92d8f503f20a116073e21f81">moonray::file_resource::Impl::Impl</a></div><div class="ttdeci">Impl()</div><div class="ttdef"><b>Definition:</b> <a href="file__resource_8cc_source.html#l00023">file_resource.cc:23</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1file__resource_1_1_impl_html_ad9a4cf38fdaf3dcbd6ff695165d95d24"><div class="ttname"><a href="classmoonray_1_1file__resource_1_1_impl.html#ad9a4cf38fdaf3dcbd6ff695165d95d24">moonray::file_resource::Impl::initialize</a></div><div class="ttdeci">bool initialize()</div><div class="ttdef"><b>Definition:</b> <a href="file__resource_8cc_source.html#l00034">file_resource.cc:34</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1file__resource_1_1_impl_html_ada43fb0487b1def8db51738a2e6bb53c"><div class="ttname"><a href="classmoonray_1_1file__resource_1_1_impl.html#ada43fb0487b1def8db51738a2e6bb53c">moonray::file_resource::Impl::mInitialized</a></div><div class="ttdeci">bool mInitialized</div><div class="ttdef"><b>Definition:</b> <a href="file__resource_8cc_source.html#l00030">file_resource.cc:30</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1file__resource_1_1_u_n_i_x_file_resource_html"><div class="ttname"><a href="classmoonray_1_1file__resource_1_1_u_n_i_x_file_resource.html">moonray::file_resource::UNIXFileResource</a></div><div class="ttdef"><b>Definition:</b> <a href="_u_n_i_x_file_resource_8h_source.html#l00021">UNIXFileResource.h:22</a></div></div>
 <div class="ttc" id="afile__resource_8h_html"><div class="ttname"><a href="file__resource_8h.html">file_resource.h</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1file__resource_html_a036de34d9390ffd0f284a7d0f1362f66"><div class="ttname"><a href="namespacemoonray_1_1file__resource.html#a036de34d9390ffd0f284a7d0f1362f66">moonray::file_resource::fileExists</a></div><div class="ttdeci">bool fileExists(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="file__resource_8cc_source.html#l00061">file_resource.cc:61</a></div></div>
@@ -138,9 +155,13 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_1_1file__resource_html_a921360ab5d385a662b27c303c7b40405"><div class="ttname"><a href="namespacemoonray_1_1file__resource.html#a921360ab5d385a662b27c303c7b40405">moonray::file_resource::initialize</a></div><div class="ttdeci">bool initialize()</div><div class="ttdef"><b>Definition:</b> <a href="file__resource_8cc_source.html#l00051">file_resource.cc:51</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_bda6758a1f39cbab2ecdac1c1381710b.html">common</a></li><li class="navelem"><a class="el" href="dir_9dfc5d8e506eb3e5d9afc36c73211041.html">file_resource</a></li><li class="navelem"><a class="el" href="file__resource_8cc.html">file_resource.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

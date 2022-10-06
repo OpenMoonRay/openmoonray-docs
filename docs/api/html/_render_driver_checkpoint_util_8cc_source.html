@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_55a2e35f6359da48a03f898576e722e1.html">rndr</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_render_driver_checkpoint_util_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">RenderDriverCheckpointUtil.cc</div></div>
 </div><!--header-->
@@ -59,7 +75,7 @@ $(function() {
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;scene_rdl2/common/rec_time/RecTime.h&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;scene_rdl2/render/util/StrUtil.h&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html">   13</a></span><span class="keyword">namespace </span>{</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// This directive is used for debug of internal table dump of qstep loop finding main logic.</span></div>
@@ -115,7 +131,7 @@ $(function() {
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif </span><span class="comment">// end DEBUG_NFILE_QSTEP</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>std::string</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>showCheckpointSampleTable(<span class="keywordtype">int</span> userDefinedNumFiles, <span class="keywordtype">int</span> min, <span class="keywordtype">int</span> max, <span class="keywordtype">int</span> steps,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a81176a1eca4a79d34a50eb7e5623f287">   69</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a81176a1eca4a79d34a50eb7e5623f287">showCheckpointSampleTable</a>(<span class="keywordtype">int</span> userDefinedNumFiles, <span class="keywordtype">int</span> min, <span class="keywordtype">int</span> max, <span class="keywordtype">int</span> steps,</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                          <span class="keyword">const</span> std::vector&lt;unsigned&gt; *sequenceTbl,</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                          <span class="keywordtype">int</span> *totalFilesForVerify = <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">//</span></div>
@@ -161,7 +177,7 @@ $(function() {
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="keywordtype">int</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>calcStepsBlockCount(<span class="keywordtype">int</span> totalSteps, <span class="keywordtype">int</span> steps)</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#adab8c76ba6dee9a6672c8372e548f4df">  115</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#adab8c76ba6dee9a6672c8372e548f4df">calcStepsBlockCount</a>(<span class="keywordtype">int</span> totalSteps, <span class="keywordtype">int</span> steps)</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">//</span></div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">// Calculate block number from given totalSteps and single block steps</span></div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">//    </span></div>
@@ -179,7 +195,7 @@ $(function() {
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keywordtype">int</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>calcQualitySteps(<span class="keywordtype">int</span> totalSteps, <span class="keywordtype">int</span> requestedNumFiles)</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a88f896379e0da06afb60d494b8dea8a8">  133</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a88f896379e0da06afb60d494b8dea8a8">calcQualitySteps</a>(<span class="keywordtype">int</span> totalSteps, <span class="keywordtype">int</span> requestedNumFiles)</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">//</span></div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">// Return quality steps of each checkpoint render based on the total steps and</span></div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">// requested total number of files.</span></div>
@@ -217,8 +233,8 @@ $(function() {
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <span class="comment">// we evaluate both of 2 possible steps and pick closer numbers to requestedNumFiles.</span></div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="keywordtype">int</span> stepsA = totalSteps / requestedNumFiles;</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        <span class="keywordtype">int</span> stepsB = stepsA + 1;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordtype">int</span> fileTotalA = calcStepsBlockCount(totalSteps, stepsA);</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keywordtype">int</span> fileTotalB = calcStepsBlockCount(totalSteps, stepsB);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordtype">int</span> fileTotalA = <a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#adab8c76ba6dee9a6672c8372e548f4df">calcStepsBlockCount</a>(totalSteps, stepsA);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keywordtype">int</span> fileTotalB = <a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#adab8c76ba6dee9a6672c8372e548f4df">calcStepsBlockCount</a>(totalSteps, stepsB);</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keywordflow">if</span> (abs(fileTotalA - requestedNumFiles) &lt; abs(fileTotalB - requestedNumFiles)) {</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            steps = stepsA;</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        } <span class="keywordflow">else</span> {</div>
@@ -241,7 +257,7 @@ $(function() {
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>}</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="keywordtype">int</span></div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>calcTotalCheckpoint(<span class="keywordtype">int</span> totalSteps, <span class="keywordtype">int</span> qualitySteps, <span class="keywordtype">int</span> minSPP, <span class="keyword">const</span> std::vector&lt;unsigned&gt; *sequenceTbl)</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a34fdd5c2f709a8cfc6adaf75be1286ba">  195</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a34fdd5c2f709a8cfc6adaf75be1286ba">calcTotalCheckpoint</a>(<span class="keywordtype">int</span> totalSteps, <span class="keywordtype">int</span> qualitySteps, <span class="keywordtype">int</span> minSPP, <span class="keyword">const</span> std::vector&lt;unsigned&gt; *sequenceTbl)</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">//</span></div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">// Return total checkpoint files based on the totalSteps qualityStep minStep and sequenceTbl.</span></div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">//</span></div>
@@ -257,7 +273,7 @@ $(function() {
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">// sequenceTbl : specify KJ sequence table pointer for adaptive sampling, set nullptr for uniform sampling</span></div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">//</span></div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>{</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keywordtype">int</span> totalFiles = calcStepsBlockCount(totalSteps, qualitySteps);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keywordtype">int</span> totalFiles = <a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#adab8c76ba6dee9a6672c8372e548f4df">calcStepsBlockCount</a>(totalSteps, qualitySteps);</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <span class="keywordflow">if</span> (minSPP &lt;= 0) {</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        <span class="comment">// no minimum steps control case, we can use entire step sequence range.</span></div>
@@ -295,7 +311,7 @@ $(function() {
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>}</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="keywordtype">int</span></div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>calcQualityStepsWithSampleStartControl(<span class="keywordtype">int</span> minSPP, <span class="keywordtype">int</span> maxSPP, <span class="keywordtype">int</span> requestedNumFiles,</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a52e0edcb63babb42efbac0582c6ea058">  249</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a52e0edcb63babb42efbac0582c6ea058">calcQualityStepsWithSampleStartControl</a>(<span class="keywordtype">int</span> minSPP, <span class="keywordtype">int</span> maxSPP, <span class="keywordtype">int</span> requestedNumFiles,</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                                       <span class="keyword">const</span> std::vector&lt;unsigned&gt; *sequenceTbl)</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment">//</span></div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment">// You can specify checkpoint start sample as minSPP</span></div>
@@ -314,7 +330,7 @@ $(function() {
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    }</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    <span class="keywordflow">if</span> (minSPP &lt;= 0) {</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        <span class="keywordflow">return</span> calcQualitySteps(totalSteps, requestedNumFiles); <span class="comment">// no minimum steps control</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a88f896379e0da06afb60d494b8dea8a8">calcQualitySteps</a>(totalSteps, requestedNumFiles); <span class="comment">// no minimum steps control</span></div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    }</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    </div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="comment">//</span></div>
@@ -324,8 +340,8 @@ $(function() {
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <span class="comment">// so important.</span></div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="comment">//        </span></div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keywordtype">int</span> currReqNumFiles = requestedNumFiles;</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keywordtype">int</span> currSteps = calcQualitySteps(totalSteps, currReqNumFiles);</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <span class="keywordtype">int</span> currTotalFiles = calcTotalCheckpoint(totalSteps, currSteps, minSPP, sequenceTbl);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keywordtype">int</span> currSteps = <a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a88f896379e0da06afb60d494b8dea8a8">calcQualitySteps</a>(totalSteps, currReqNumFiles);</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <span class="keywordtype">int</span> currTotalFiles = <a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a34fdd5c2f709a8cfc6adaf75be1286ba">calcTotalCheckpoint</a>(totalSteps, currSteps, minSPP, sequenceTbl);</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <span class="keywordtype">int</span> bestSteps = currSteps;</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    <span class="keywordtype">int</span> bestTotalFiles = currTotalFiles;</div>
@@ -371,8 +387,8 @@ $(function() {
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    };</div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    <span class="keywordflow">for</span> (++currReqNumFiles; currReqNumFiles &lt;= totalSteps; ++currReqNumFiles) {</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        currSteps = calcQualitySteps(totalSteps, currReqNumFiles);</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        currTotalFiles = calcTotalCheckpoint(totalSteps, currSteps, minSPP, sequenceTbl);</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        currSteps = <a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a88f896379e0da06afb60d494b8dea8a8">calcQualitySteps</a>(totalSteps, currReqNumFiles);</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        currTotalFiles = <a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a34fdd5c2f709a8cfc6adaf75be1286ba">calcTotalCheckpoint</a>(totalSteps, currSteps, minSPP, sequenceTbl);</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        <span class="keywordflow">if</span> (currTotalFiles &gt; bestTotalFiles + requestedNumFiles) {</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>            <span class="comment">// Search all the cases would be overkill and too costly.</span></div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>            <span class="comment">// We already have best guess value and best result should be some where between</span></div>
@@ -398,7 +414,7 @@ $(function() {
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>}</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="keywordtype">bool</span>    </div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>verifyConvertTotalCheckpointToQStepsMainLogic(<span class="keywordtype">int</span> checkpointStartSPP,</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a7db3c538a57565ed9431e324ab5555a7">  352</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a7db3c538a57565ed9431e324ab5555a7">verifyConvertTotalCheckpointToQStepsMainLogic</a>(<span class="keywordtype">int</span> checkpointStartSPP,</div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>                                              <span class="keywordtype">int</span> maxSPP,</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>                                              <span class="keywordtype">int</span> userDefinedTotalCheckpointFiles,</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>                                              <span class="keywordtype">int</span> verifyQSteps,</div>
@@ -430,7 +446,7 @@ $(function() {
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>             &lt;&lt; <span class="stringliteral">&quot;  totalSteps:&quot;</span> &lt;&lt; totalSteps &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    }</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span> </div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    <span class="keywordtype">int</span> currTotal = calcTotalCheckpoint(totalSteps, verifyQSteps, checkpointStartSPP, sequenceTbl);</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    <span class="keywordtype">int</span> currTotal = <a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a34fdd5c2f709a8cfc6adaf75be1286ba">calcTotalCheckpoint</a>(totalSteps, verifyQSteps, checkpointStartSPP, sequenceTbl);</div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    <span class="keywordflow">if</span> (currTotal == internalTotalCheckpointFiles) {</div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        <span class="keywordflow">if</span> (verifyMsg) {</div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>            ostr &lt;&lt; <span class="stringliteral">&quot;  currTotal:&quot;</span> &lt;&lt; currTotal</div>
@@ -455,7 +471,7 @@ $(function() {
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>             &lt;&lt; <span class="stringliteral">&quot;  qStep verify loop = {\n&quot;</span>;</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    }</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> qSteps = 1; qSteps &lt;= totalSteps; ++qSteps) {</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>        currTotal = calcTotalCheckpoint(totalSteps, qSteps, checkpointStartSPP, sequenceTbl);</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>        currTotal = <a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a34fdd5c2f709a8cfc6adaf75be1286ba">calcTotalCheckpoint</a>(totalSteps, qSteps, checkpointStartSPP, sequenceTbl);</div>
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        <span class="keywordtype">int</span> currTotalDelta = std::abs(currTotal - internalTotalCheckpointFiles);</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>        <span class="keywordflow">if</span> (verifyMsg) {</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>            ostr &lt;&lt; <span class="stringliteral">&quot;    qSteps:&quot;</span> &lt;&lt; qSteps</div>
@@ -509,7 +525,7 @@ $(function() {
 <div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>}</div>
 <div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span> </div>
 <div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span><span class="keywordtype">bool</span>    </div>
-<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>verifyConvertTotalCheckpointToQStepsLogMessage(<span class="keywordtype">int</span> checkpointStartSPP,</div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a848d84902bd1b01650f9eaacaa0394f0">  463</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a848d84902bd1b01650f9eaacaa0394f0">verifyConvertTotalCheckpointToQStepsLogMessage</a>(<span class="keywordtype">int</span> checkpointStartSPP,</div>
 <div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>                                               <span class="keywordtype">int</span> maxSPP,</div>
 <div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>                                               <span class="keywordtype">int</span> userDefinedTotalCheckpointFiles,</div>
 <div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>                                               <span class="keywordtype">int</span> verifyQSteps,</div>
@@ -534,7 +550,7 @@ $(function() {
 <div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>             &lt;&lt; <span class="stringliteral">&quot;  totalSteps:&quot;</span> &lt;&lt; totalSteps &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>    }</div>
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span> </div>
-<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>    <span class="keywordtype">int</span> totalFiles = calcTotalCheckpoint(totalSteps, verifyQSteps, checkpointStartSPP, sequenceTbl);</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>    <span class="keywordtype">int</span> totalFiles = <a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a34fdd5c2f709a8cfc6adaf75be1286ba">calcTotalCheckpoint</a>(totalSteps, verifyQSteps, checkpointStartSPP, sequenceTbl);</div>
 <div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span> </div>
 <div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>    <span class="keywordflow">if</span> (verifyMsg) {</div>
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>        ostr &lt;&lt; <span class="stringliteral">&quot;  totalFiles:&quot;</span> &lt;&lt; totalFiles &lt;&lt; <span class="stringliteral">&quot; + 1 = &quot;</span> &lt;&lt; totalFiles + 1 &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
@@ -542,7 +558,7 @@ $(function() {
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span> </div>
 <div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>    std::string workLogBuffer;</div>
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>    <span class="keywordtype">int</span> workTotalFiles;</div>
-<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>    workLogBuffer = showCheckpointSampleTable(userDefinedTotalCheckpointFiles,</div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>    workLogBuffer = <a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a81176a1eca4a79d34a50eb7e5623f287">showCheckpointSampleTable</a>(userDefinedTotalCheckpointFiles,</div>
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>                                              checkpointStartSPP,</div>
 <div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>                                              maxSPP,</div>
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>                                              verifyQSteps,</div>
@@ -597,7 +613,7 @@ $(function() {
 <div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>    <span class="keywordflow">if</span> (mode == <a class="code hl_enumvalue" href="namespacemoonray_1_1rndr.html#a5de5c1d6313b7563d80eb65e13a1a06ea891f35a29c3d51d02ffd42dd6dcc69b2">SamplingMode::UNIFORM</a>) {</div>
 <div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>        tblPtr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>        tbl = createKJSequenceTable(maxSPP);</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>        tbl = <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_driver.html#a7b182400fd05239245ff2de440afc15d">createKJSequenceTable</a>(maxSPP);</div>
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>        tblPtr = &amp;tbl;</div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>    }</div>
 <div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span> </div>
@@ -624,7 +640,7 @@ $(function() {
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span><span class="comment">// Verify KJ sequence table which is used to calculate tile sampleId start/end span for checkpoint interval.</span></div>
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span><span class="comment">//    </span></div>
 <div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>{</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    std::vector&lt;unsigned&gt; table = RenderDriver::createKJSequenceTable(maxSampleId);</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    std::vector&lt;unsigned&gt; table = <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_driver.html#a7b182400fd05239245ff2de440afc15d">RenderDriver::createKJSequenceTable</a>(maxSampleId);</div>
 <div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span> </div>
 <div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>    <span class="keyword">auto</span> dumpTblSimple = [&amp;](<span class="keyword">const</span> std::vector&lt;unsigned&gt; &amp;tbl) -&gt; std::string {</div>
 <div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>        std::ostringstream ostr;</div>
@@ -678,7 +694,7 @@ $(function() {
 <div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>    <span class="keywordflow">if</span> (mode == <a class="code hl_enumvalue" href="namespacemoonray_1_1rndr.html#a5de5c1d6313b7563d80eb65e13a1a06ea891f35a29c3d51d02ffd42dd6dcc69b2">SamplingMode::UNIFORM</a>) {</div>
 <div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>        tblPtr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>        tbl = createKJSequenceTable(maxSPP);</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>        tbl = <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_driver.html#a7b182400fd05239245ff2de440afc15d">createKJSequenceTable</a>(maxSPP);</div>
 <div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>        tblPtr = &amp;tbl;</div>
 <div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    }</div>
 <div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span> </div>
@@ -833,7 +849,7 @@ $(function() {
 <div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>        }</div>
 <div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span> </div>
 <div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>        <span class="keywordtype">int</span> fileCountMax =</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>            (mode == <a class="code hl_enumvalue" href="namespacemoonray_1_1rndr.html#a5de5c1d6313b7563d80eb65e13a1a06ea891f35a29c3d51d02ffd42dd6dcc69b2">SamplingMode::UNIFORM</a>) ? currMaxSPP : createKJSequenceTable(currMaxSPP).size();</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>            (mode == <a class="code hl_enumvalue" href="namespacemoonray_1_1rndr.html#a5de5c1d6313b7563d80eb65e13a1a06ea891f35a29c3d51d02ffd42dd6dcc69b2">SamplingMode::UNIFORM</a>) ? currMaxSPP : <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_driver.html#a7b182400fd05239245ff2de440afc15d">createKJSequenceTable</a>(currMaxSPP).size();</div>
 <div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>        <span class="keywordflow">if</span> (fileCountEndCap &gt;= 1 &amp;&amp; fileCountMax &gt; fileCountEndCap) {</div>
 <div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>            <span class="comment">// It does not makesense production creates too many checkpoint files like 128 or more for</span></div>
 <div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>            <span class="comment">// example. So it is a good idea to clip the test range by proper value of fileCountEndCap.</span></div>
@@ -971,7 +987,7 @@ $(function() {
 <div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>        <span class="comment">//</span></div>
 <div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>        <span class="comment">// multi thread mode</span></div>
 <div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>        <span class="comment">//</span></div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>        <span class="keywordtype">int</span> size = maxSPPTbl.size();</div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a> = maxSPPTbl.size();</div>
 <div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>        std::vector&lt;std::string&gt; verifyErrorMessageArray;</div>
 <div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>        <span class="keywordflow">if</span> (verifyMessagePtr) {</div>
 <div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>            verifyErrorMessageArray.resize(size);</div>
@@ -999,7 +1015,7 @@ $(function() {
 <div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>            });</div>
 <div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span> </div>
 <div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>        <span class="comment">// Gathering result</span></div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; size; ++i) {</div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a>; ++i) {</div>
 <div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>            <span class="keywordflow">if</span> (verifyMessagePtr &amp;&amp; !verifyErrorMessageArray[i].empty()) {</div>
 <div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>                (*verifyMessagePtr) += verifyErrorMessageArray[i];</div>
 <div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>            }</div>
@@ -1037,16 +1053,29 @@ $(function() {
 <div class="ttc" id="a_variance_a_o_v_map_8h_html_a8b3c0ee88191b7d4a40b4271037faaee"><div class="ttname"><a href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a></div><div class="ttdeci">VarianceAOVMap::SourceToVarianceIterator end(const VarianceAOVMap::SourceToVarianceRange &amp;range)</div><div class="ttdef"><b>Definition:</b> <a href="_variance_a_o_v_map_8h_source.html#l00153">VarianceAOVMap.h:153</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_driver_html_a3c41bb00440ad8503d196c9bb020d59e"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_driver.html#a3c41bb00440ad8503d196c9bb020d59e">moonray::rndr::RenderDriver::verifyKJSequenceTable</a></div><div class="ttdeci">static bool verifyKJSequenceTable(const unsigned maxSampleId, std::string *tblStr=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_checkpoint_util_8cc_source.html#l00572">RenderDriverCheckpointUtil.cc:572</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_driver_html_a502da9482bff49c8fbbe8c682b08d1a6"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_driver.html#a502da9482bff49c8fbbe8c682b08d1a6">moonray::rndr::RenderDriver::verifyTotalCheckpointToQualitySteps</a></div><div class="ttdeci">static bool verifyTotalCheckpointToQualitySteps(SamplingMode mode, int checkpointStartSPP, int maxSPP, int userDefinedTotalCheckpointFiles, int verifyQSteps, std::string *verifyErrorMessage, std::string *logMessage=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_checkpoint_util_8cc_source.html#l00615">RenderDriverCheckpointUtil.cc:615</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_driver_html_a7b182400fd05239245ff2de440afc15d"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_driver.html#a7b182400fd05239245ff2de440afc15d">moonray::rndr::RenderDriver::createKJSequenceTable</a></div><div class="ttdeci">static std::vector&lt; unsigned &gt; createKJSequenceTable(const unsigned maxSampleId)</div><div class="ttdef"><b>Definition:</b> <a href="_render_frame_checkpoint_resume_8cc_source.html#l00435">RenderFrameCheckpointResume.cc:435</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_driver_html_a8a2e228522d74aac7fc4b0b6f13f64af"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_driver.html#a8a2e228522d74aac7fc4b0b6f13f64af">moonray::rndr::RenderDriver::convertTotalCheckpointToQualitySteps</a></div><div class="ttdeci">static int convertTotalCheckpointToQualitySteps(SamplingMode mode, int checkpointStartSPP, int maxSPP, int numCheckpointFiles, std::string &amp;logMessage)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_checkpoint_util_8cc_source.html#l00531">RenderDriverCheckpointUtil.cc:531</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_driver_html_ac328eac061cec4e88ae44828b0ff69cc"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_driver.html#ac328eac061cec4e88ae44828b0ff69cc">moonray::rndr::RenderDriver::verifyTotalCheckpointToQualityStepsExhaust</a></div><div class="ttdeci">static bool verifyTotalCheckpointToQualityStepsExhaust(SamplingMode mode, int maxSPP, int fileCountEndCap, int startSPPEndCap, bool liveMessage, bool deepVerifyMessage, std::string *verifyErrorMessage, bool multiThreadA, bool multiThreadB)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_checkpoint_util_8cc_source.html#l00675">RenderDriverCheckpointUtil.cc:675</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03_html_a34fdd5c2f709a8cfc6adaf75be1286ba"><div class="ttname"><a href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a34fdd5c2f709a8cfc6adaf75be1286ba">anonymous_namespace{RenderDriverCheckpointUtil.cc}::calcTotalCheckpoint</a></div><div class="ttdeci">int calcTotalCheckpoint(int totalSteps, int qualitySteps, int minSPP, const std::vector&lt; unsigned &gt; *sequenceTbl)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_checkpoint_util_8cc_source.html#l00195">RenderDriverCheckpointUtil.cc:195</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03_html_a52e0edcb63babb42efbac0582c6ea058"><div class="ttname"><a href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a52e0edcb63babb42efbac0582c6ea058">anonymous_namespace{RenderDriverCheckpointUtil.cc}::calcQualityStepsWithSampleStartControl</a></div><div class="ttdeci">int calcQualityStepsWithSampleStartControl(int minSPP, int maxSPP, int requestedNumFiles, const std::vector&lt; unsigned &gt; *sequenceTbl)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_checkpoint_util_8cc_source.html#l00249">RenderDriverCheckpointUtil.cc:249</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03_html_a7db3c538a57565ed9431e324ab5555a7"><div class="ttname"><a href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a7db3c538a57565ed9431e324ab5555a7">anonymous_namespace{RenderDriverCheckpointUtil.cc}::verifyConvertTotalCheckpointToQStepsMainLogic</a></div><div class="ttdeci">bool verifyConvertTotalCheckpointToQStepsMainLogic(int checkpointStartSPP, int maxSPP, int userDefinedTotalCheckpointFiles, int verifyQSteps, const std::vector&lt; unsigned &gt; *sequenceTbl, std::string *verifyMsg)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_checkpoint_util_8cc_source.html#l00352">RenderDriverCheckpointUtil.cc:352</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03_html_a81176a1eca4a79d34a50eb7e5623f287"><div class="ttname"><a href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a81176a1eca4a79d34a50eb7e5623f287">anonymous_namespace{RenderDriverCheckpointUtil.cc}::showCheckpointSampleTable</a></div><div class="ttdeci">std::string showCheckpointSampleTable(int userDefinedNumFiles, int min, int max, int steps, const std::vector&lt; unsigned &gt; *sequenceTbl, int *totalFilesForVerify=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_checkpoint_util_8cc_source.html#l00069">RenderDriverCheckpointUtil.cc:69</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03_html_a848d84902bd1b01650f9eaacaa0394f0"><div class="ttname"><a href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a848d84902bd1b01650f9eaacaa0394f0">anonymous_namespace{RenderDriverCheckpointUtil.cc}::verifyConvertTotalCheckpointToQStepsLogMessage</a></div><div class="ttdeci">bool verifyConvertTotalCheckpointToQStepsLogMessage(int checkpointStartSPP, int maxSPP, int userDefinedTotalCheckpointFiles, int verifyQSteps, const std::vector&lt; unsigned &gt; *sequenceTbl, std::string *verifyMsg)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_checkpoint_util_8cc_source.html#l00463">RenderDriverCheckpointUtil.cc:463</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03_html_a88f896379e0da06afb60d494b8dea8a8"><div class="ttname"><a href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a88f896379e0da06afb60d494b8dea8a8">anonymous_namespace{RenderDriverCheckpointUtil.cc}::calcQualitySteps</a></div><div class="ttdeci">int calcQualitySteps(int totalSteps, int requestedNumFiles)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_checkpoint_util_8cc_source.html#l00133">RenderDriverCheckpointUtil.cc:133</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03_html_adab8c76ba6dee9a6672c8372e548f4df"><div class="ttname"><a href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#adab8c76ba6dee9a6672c8372e548f4df">anonymous_namespace{RenderDriverCheckpointUtil.cc}::calcStepsBlockCount</a></div><div class="ttdeci">int calcStepsBlockCount(int totalSteps, int steps)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_checkpoint_util_8cc_source.html#l00115">RenderDriverCheckpointUtil.cc:115</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_resume_history_meta_data_8cc_03_html_a9a38a2aa0f811fa9e3761cd0049c46b8"><div class="ttname"><a href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">anonymous_namespace{ResumeHistoryMetaData.cc}::size</a></div><div class="ttdeci">MAYBE_UNUSED std::size_t size(const std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="_resume_history_meta_data_8cc_source.html#l00047">ResumeHistoryMetaData.cc:47</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_1_1unittest_html_a7801a665e80f0996a71831b8623847be"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1unittest.html#a7801a665e80f0996a71831b8623847be">moonray::geom::unittest::verifyResult</a></div><div class="ttdeci">bool verifyResult(const TypedAttributeKey&lt; bool &gt; &amp;key, const shading::Interpolator &amp;interpolator, const bool &amp;canonical)</div><div class="ttdef"><b>Definition:</b> <a href="_test_interpolator_8cc_source.html#l00066">TestInterpolator.cc:66</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1rndr_html_a5de5c1d6313b7563d80eb65e13a1a06e"><div class="ttname"><a href="namespacemoonray_1_1rndr.html#a5de5c1d6313b7563d80eb65e13a1a06e">moonray::rndr::SamplingMode</a></div><div class="ttdeci">SamplingMode</div><div class="ttdef"><b>Definition:</b> <a href="rndr_2_types_8h_source.html#l00074">Types.h:75</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1rndr_html_a5de5c1d6313b7563d80eb65e13a1a06ea891f35a29c3d51d02ffd42dd6dcc69b2"><div class="ttname"><a href="namespacemoonray_1_1rndr.html#a5de5c1d6313b7563d80eb65e13a1a06ea891f35a29c3d51d02ffd42dd6dcc69b2">moonray::rndr::SamplingMode::UNIFORM</a></div><div class="ttdeci">@ UNIFORM</div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_c8c2fc2658195a2d790ef72565bd36e7.html">rndr</a></li><li class="navelem"><a class="el" href="_render_driver_checkpoint_util_8cc.html">RenderDriverCheckpointUtil.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

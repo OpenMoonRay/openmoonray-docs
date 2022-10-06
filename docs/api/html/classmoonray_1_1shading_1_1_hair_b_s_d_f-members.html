@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">HairBSDF</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_hair_b_s_d_f.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">moonray::shading::HairBSDF Member List</div></div>
 </div><!--header-->
@@ -81,13 +97,44 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#adbab2c15e0c8a054be6215d40c245e05">getTintTRT</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a1b44cafe07327db75a3621df553f33ae">getTintTT</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a8e73209a27f6541cdc737264f2cb8043">HairBSDF</a>(const scene_rdl2::math::Vec3f &amp;hairDir, const scene_rdl2::math::Vec2f &amp;hairUV, const float ior, const ispc::HairFresnelType fresnelType, const float cuticleLayerThickness, bool showR, float shiftR, float roughnessR, const scene_rdl2::math::Color &amp;tintR, bool showTT, float shiftTT, float roughnessTT, float azimuthalRoughnessTT, const scene_rdl2::math::Color &amp;tintTT, float saturationTT, bool showTRT, float shiftTRT, float roughnessTRT, const scene_rdl2::math::Color &amp;tintTRT, bool showGlint, float roughnessGlint, float eccentricityGlint, float saturationGlint, float hairRotation, const scene_rdl2::math::Vec3f &amp;hairNormal, bool showTRRT, const scene_rdl2::math::Color &amp;hairColor)</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a0814dd1075541db692b8def074227029">mAziRoughnessTT</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a1efaaf36e2d4d2cf5771c6fa92c984ea">mCuticleLayerThickness</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a4e8318e9513f5aa8f08af87f9ea16722">mEccentricityGlint</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a7824b79c1f0702a50678547abad00b41">mFresnelType</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ae6926ee4f8cca1eee769e51d5da93d85">mHairColor</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ac26a80f6eb840560c4e7ce3ef633d7d6">mHairDir</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#af8253584f24126f49fe6d4be04b13d9e">mHairNormal</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a4b5e6494451924d908e3c35aa9d4d11e">mHairRotation</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a62ec254db5e5bfbc18f646addcdf169e">mHairUV</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#af7c977174b8e71044506660aeba6d33e">mIOR</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html#a3d70f6a01030a7bb5c423945c29c1897">mIridescence</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html">moonray::shading::BsdfComponent</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a7f66428382df3e298c5e41d37042d057">mRoughnessGlint</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a3ab7c5557bdd26bf0fc76564ccd42134">mRoughnessR</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a68c4aa9a22fa6e7953dee11a6e37ed4e">mRoughnessTRT</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ae3d73487e691c91fa916d1a53a78c924">mRoughnessTT</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a0bda4fc8c2b1c3f6d47da0dfce989ffc">mSaturationGlint</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a582c1dd411ee743b174fc4a888688874">mSaturationTT</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a6ca9de10916a20b0518d47515f6d4753">mShiftR</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a851262ad0a9bb7d09d86e218b1775a14">mShiftTRT</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ab3cfa1f4b114f59f9f59cc1fed323f73">mShiftTT</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#add845dbf3c1bf777e80d021bfd0897b5">mShowGlint</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ae36106b6cfe2a56469cdccb363ea18ff">mShowR</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#aab2c11ba3e86d901b06cfed06fc4bf20">mShowTRRT</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a43cfa0e6c71c5cf0cc7d99a73d3e7cf9">mShowTRT</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a6f7a0d8627e207238ddd4e5925c7fd50">mShowTT</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#aa3637ae49bee7a5cc4d8650f1892600d">mTintR</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a962a5cb13a26995888f0dbcfc0ba57ed">mTintTRT</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a5b24f411f407bcc8f37410ce0af58d47">mTintTT</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html#ade9beef66195237d2338872664638b28">operator=</a>(const BsdfComponent &amp;other)=delete</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html">moonray::shading::BsdfComponent</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html#a8400cb1f3798f84b4e1d8a3de04792c3">~BsdfComponent</a>()=0</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html">moonray::shading::BsdfComponent</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a65e2011f37e2d91b85158fd049a8f38d">~HairBSDF</a>() override</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">moonray::shading::HairBSDF</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

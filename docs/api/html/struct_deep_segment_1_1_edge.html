@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="class_deep_segment.html">DeepSegment</a></li><li class="navelem"><a class="el" href="struct_deep_segment_1_1_edge.html">Edge</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('struct_deep_segment_1_1_edge.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -101,7 +117,15 @@ Public Attributes</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l00231">231</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  232</span>        {</div>
+<div class="line"><span class="lineno">  233</span>            <a class="code hl_enumvalue" href="struct_deep_segment_1_1_edge.html#a67678d5b50c8af89a648de0fcec80d87afe2cf7b89d736e34e00225954809ad02">THIN</a>  = -1,     <span class="comment">// Segment has no depth (Zf == Zb, depth = Zf)</span></div>
+<div class="line"><span class="lineno">  234</span>            <a class="code hl_enumvalue" href="struct_deep_segment_1_1_edge.html#a67678d5b50c8af89a648de0fcec80d87a471226e75feed1178a5b2fa70871b674">FRONT</a> =  0,     <span class="comment">// Front edge of segment (depth = Zf)</span></div>
+<div class="line"><span class="lineno">  235</span>            <a class="code hl_enumvalue" href="struct_deep_segment_1_1_edge.html#a67678d5b50c8af89a648de0fcec80d87ad1fe0bb58e11ec12fe2504f845005a3c">BACK</a>  =  1      <span class="comment">// Back edge of segment (depth = Zb)</span></div>
+<div class="line"><span class="lineno">  236</span>        };</div>
+<div class="ttc" id="astruct_deep_segment_1_1_edge_html_a67678d5b50c8af89a648de0fcec80d87a471226e75feed1178a5b2fa70871b674"><div class="ttname"><a href="struct_deep_segment_1_1_edge.html#a67678d5b50c8af89a648de0fcec80d87a471226e75feed1178a5b2fa70871b674">DeepSegment::Edge::FRONT</a></div><div class="ttdeci">@ FRONT</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00234">DcxDeepPixel.h:234</a></div></div>
+<div class="ttc" id="astruct_deep_segment_1_1_edge_html_a67678d5b50c8af89a648de0fcec80d87ad1fe0bb58e11ec12fe2504f845005a3c"><div class="ttname"><a href="struct_deep_segment_1_1_edge.html#a67678d5b50c8af89a648de0fcec80d87ad1fe0bb58e11ec12fe2504f845005a3c">DeepSegment::Edge::BACK</a></div><div class="ttdeci">@ BACK</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00236">DcxDeepPixel.h:235</a></div></div>
+<div class="ttc" id="astruct_deep_segment_1_1_edge_html_a67678d5b50c8af89a648de0fcec80d87afe2cf7b89d736e34e00225954809ad02"><div class="ttname"><a href="struct_deep_segment_1_1_edge.html#a67678d5b50c8af89a648de0fcec80d87afe2cf7b89d736e34e00225954809ad02">DeepSegment::Edge::THIN</a></div><div class="ttdeci">@ THIN</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00233">DcxDeepPixel.h:233</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -146,7 +170,17 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01238">1238</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1238</span>                                                                                       :</div>
+<div class="line"><span class="lineno"> 1239</span>    <a class="code hl_variable" href="struct_deep_segment_1_1_edge.html#aa492a5b6a145d4d464df1ec0325634c0">depth</a>(_depth),</div>
+<div class="line"><span class="lineno"> 1240</span>    <a class="code hl_variable" href="struct_deep_segment_1_1_edge.html#a04c4f7145e8092786f7a53fa53f286d1">segment</a>(_segment),</div>
+<div class="line"><span class="lineno"> 1241</span>    <a class="code hl_variable" href="struct_deep_segment_1_1_edge.html#afc0ebc96563f68af4f09439adae7da3b">type</a>(_type)</div>
+<div class="line"><span class="lineno"> 1242</span>{</div>
+<div class="line"><span class="lineno"> 1243</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno"> 1244</span>}</div>
+<div class="ttc" id="astruct_deep_segment_1_1_edge_html_a04c4f7145e8092786f7a53fa53f286d1"><div class="ttname"><a href="struct_deep_segment_1_1_edge.html#a04c4f7145e8092786f7a53fa53f286d1">DeepSegment::Edge::segment</a></div><div class="ttdeci">uint32_t segment</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00239">DcxDeepPixel.h:239</a></div></div>
+<div class="ttc" id="astruct_deep_segment_1_1_edge_html_aa492a5b6a145d4d464df1ec0325634c0"><div class="ttname"><a href="struct_deep_segment_1_1_edge.html#aa492a5b6a145d4d464df1ec0325634c0">DeepSegment::Edge::depth</a></div><div class="ttdeci">float depth</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00238">DcxDeepPixel.h:238</a></div></div>
+<div class="ttc" id="astruct_deep_segment_1_1_edge_html_afc0ebc96563f68af4f09439adae7da3b"><div class="ttname"><a href="struct_deep_segment_1_1_edge.html#afc0ebc96563f68af4f09439adae7da3b">DeepSegment::Edge::type</a></div><div class="ttdeci">Type type</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00240">DcxDeepPixel.h:240</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -175,7 +209,14 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01245">1245</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1246</span>{</div>
+<div class="line"><span class="lineno"> 1247</span>    <span class="keywordflow">if</span>      (<a class="code hl_variable" href="struct_deep_segment_1_1_edge.html#aa492a5b6a145d4d464df1ec0325634c0">depth</a>   &lt; b.depth  ) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno"> 1248</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_deep_segment_1_1_edge.html#aa492a5b6a145d4d464df1ec0325634c0">depth</a>   &gt; b.depth  ) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno"> 1249</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_deep_segment_1_1_edge.html#a04c4f7145e8092786f7a53fa53f286d1">segment</a> &lt; b.segment) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno"> 1250</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="struct_deep_segment_1_1_edge.html#a04c4f7145e8092786f7a53fa53f286d1">segment</a> &gt; b.segment) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno"> 1251</span>    <span class="keywordflow">return</span> (<a class="code hl_variable" href="struct_deep_segment_1_1_edge.html#afc0ebc96563f68af4f09439adae7da3b">type</a> &lt; b.type);</div>
+<div class="line"><span class="lineno"> 1252</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -231,9 +272,13 @@ Public Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/deepfile/<a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_deep_segment.html">DeepSegment</a></li><li class="navelem"><a class="el" href="struct_deep_segment_1_1_edge.html">Edge</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

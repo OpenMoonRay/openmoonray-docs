@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_02f99361fbe6a8c61cf6ccdd2c3bf288.html">geom</a></li><li class="navelem"><a class="el" href="dir_f871d1e4df57f93e703e4b9c83a931fa.html">prim</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('prim_2_instance_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">Instance.cc</div></div>
 </div><!--header-->
@@ -50,7 +66,12 @@ $(function() {
 <a href="prim_2_instance_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2016-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file Instance.cc</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Wayne Huang</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// $Id$</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">///</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="prim_2_instance_8h.html">Instance.h</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
@@ -67,11 +88,11 @@ $(function() {
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span>internal {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>boundsFunc(<span class="keyword">const</span> RTCBoundsFunctionArguments* args)</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1geom_1_1internal.html#a80807ac6ad0892f5ed2510d0f590c6b4">   26</a></span><a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a80807ac6ad0892f5ed2510d0f590c6b4">boundsFunc</a>(<span class="keyword">const</span> RTCBoundsFunctionArguments* args)</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">const</span> BVHUserData* userData = (<span class="keyword">const</span> BVHUserData*)args-&gt;geometryUserPtr;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">const</span> Instance* instance = (<span class="keyword">const</span> Instance*)userData-&gt;mPrimitive;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a0f7237d1fa0a8544984c7889b6f5fe28">BBox3f</a> bound = instance-&gt;computeAABB();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1geom_1_1internal_1_1_b_v_h_user_data.html">BVHUserData</a>* userData = (<span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1geom_1_1internal_1_1_b_v_h_user_data.html">BVHUserData</a>*)args-&gt;geometryUserPtr;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_instance.html">Instance</a>* instance = (<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_instance.html">Instance</a>*)userData-&gt;<a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_b_v_h_user_data.html#a89627677aecbafa7f32a873e9e5d055c">mPrimitive</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a0f7237d1fa0a8544984c7889b6f5fe28">BBox3f</a> bound = instance-&gt;<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a489859bc41ebeee8a047e899f1d805be">computeAABB</a>();</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    RTCBounds* output = args-&gt;bounds_o;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    output-&gt;lower_x = bound.lower.x;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    output-&gt;lower_y = bound.lower.y;</div>
@@ -84,7 +105,7 @@ $(function() {
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>RTCBoundsFunction</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_instance.html#ac42094d91cb019c869253452066cf576">   41</a></span><a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_instance.html#ac42094d91cb019c869253452066cf576">Instance::getBoundsFunction</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">return</span> &amp;boundsFunc;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">return</span> &amp;<a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a80807ac6ad0892f5ed2510d0f590c6b4">boundsFunc</a>;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// Intersection is a bit tricky with instancing.</span></div>
@@ -93,7 +114,7 @@ $(function() {
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// set ray.geomID to invalid, which will be assigned to a valid geom id</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">// when a new intersection is found.</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>intersectFunc(<span class="keyword">const</span> RTCIntersectFunctionNArguments* args)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1geom_1_1internal.html#a2a48e33ba788a98f3e3d243507ef0d0d">   52</a></span><a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a2a48e33ba788a98f3e3d243507ef0d0d">intersectFunc</a>(<span class="keyword">const</span> RTCIntersectFunctionNArguments* args)</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">int</span>* valid = (<span class="keywordtype">int</span>*)args-&gt;valid;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N = args-&gt;N;</div>
@@ -114,7 +135,7 @@ $(function() {
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">if</span> (valid[index] == 0) {</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#ab7892247efa392e8a034ebe31f7bebd3">Mat43</a> inL2R = rayExtension.l2r;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1mcrt__common.html#a3cff5ff71bac922b0dc934ae9ae289f6">Mat43</a> inL2R = rayExtension.l2r;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordtype">void</span>* inUserData = rayExtension.userData;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keyword">const</span> <span class="keywordtype">void</span>* inInstance0 = rayExtension.instance0OrLight;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keyword">const</span> <span class="keywordtype">void</span>* inInstance1 = rayExtension.instance1;</div>
@@ -124,7 +145,7 @@ $(function() {
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> inVolumeInstanceState = rayExtension.volumeInstanceState;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordtype">float</span> time = RTCRayN_time(rays, N, index);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#ab7892247efa392e8a034ebe31f7bebd3">Mat43</a> L2P, P2L;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <a class="code hl_typedef" href="namespacemoonray_1_1mcrt__common.html#a3cff5ff71bac922b0dc934ae9ae289f6">Mat43</a> L2P, P2L;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">if</span> (xform.<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_motion_transform.html#a31ae5805079546a4e6f8279a49c1fd59">isStatic</a>()) {</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            L2P = xform.<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_motion_transform.html#aab9afb2b293090853bb5ba9ccce2171c">getStaticXform</a>();</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            P2L = xform.<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_motion_transform.html#a45d5186108ac6d65ed2215ddca69a32a">getStaticInverse</a>();</div>
@@ -179,12 +200,12 @@ $(function() {
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="comment">// state is valid, -1 otherwise (invalid transition, or not a volume instance)</span></div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="comment">// currently, only volume rays have a non-null geomTls</span></div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> state = topLevel ? 0 : rayExtension.volumeInstanceState;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <span class="keyword">const</span> geom::internal::TLState *geomTls = <span class="keyword">static_cast&lt;</span>geom::internal::TLState *<span class="keyword">&gt;</span>(rayExtension.geomTls);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">geom::internal::TLState</a> *geomTls = <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">geom::internal::TLState</a> *<span class="keyword">&gt;</span>(rayExtension.geomTls);</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        <span class="keywordflow">if</span> (state &gt;= 0 &amp;&amp; geomTls) {</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            MNRY_ASSERT(geomTls-&gt;mVolumeRayState.getVolumeAssignmentTable() != <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <span class="keyword">const</span> geom::internal::VolumeIdFSM &amp;fsm =</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_volume_id_f_s_m.html">geom::internal::VolumeIdFSM</a> &amp;fsm =</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                geomTls-&gt;mVolumeRayState.getVolumeAssignmentTable()-&gt;getInstanceVolumeIds();</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            rayExtension.volumeInstanceState = fsm.transition(state, instance);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            rayExtension.volumeInstanceState = fsm.<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_volume_id_f_s_m.html#a1f0fa19e48e54ee3039cb50cf0f921bf">transition</a>(state, instance);</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        }</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        rtcIntersect1(referenceScene, &amp;context-&gt;<a class="code hl_variable" href="structmoonray_1_1mcrt__common_1_1_intersect_context.html#a38487311e17a7ba1d5fce109a4b7f32a">mRtcContext</a>, &amp;localRay);</div>
@@ -252,17 +273,17 @@ $(function() {
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>RTCIntersectFunctionN</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_instance.html#ac78840b7a845da9f2884db1e5c1d7306">  209</a></span><a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_instance.html#ac78840b7a845da9f2884db1e5c1d7306">Instance::getIntersectFunction</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keywordflow">return</span> &amp;intersectFunc;</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keywordflow">return</span> &amp;<a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a2a48e33ba788a98f3e3d243507ef0d0d">intersectFunc</a>;</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>}</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>occludedFunc(<span class="keyword">const</span> RTCOccludedFunctionNArguments* args)</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1geom_1_1internal.html#a04abaf0a4a387a82e715d556b32d0ea9">  215</a></span><a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a04abaf0a4a387a82e715d556b32d0ea9">occludedFunc</a>(<span class="keyword">const</span> RTCOccludedFunctionNArguments* args)</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>{</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <span class="keywordtype">int</span>* valid = (<span class="keywordtype">int</span>*)args-&gt;valid;</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N = args-&gt;N;</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    RTCRayN* rays = args-&gt;ray;</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1geom_1_1internal_1_1_b_v_h_user_data.html">BVHUserData</a>* userData = (<span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1geom_1_1internal_1_1_b_v_h_user_data.html">BVHUserData</a>*)args-&gt;geometryUserPtr;</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_instance.html">Instance</a>* instance = (<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_instance.html">Instance</a>*)userData-&gt;<a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_b_v_h_user_data.html#a89627677aecbafa7f32a873e9e5d055c">mPrimitive</a>;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_instance.html">Instance</a>* instance = (<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_instance.html">Instance</a>*)userData-&gt;mPrimitive;</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_motion_transform.html">MotionTransform</a>&amp; xform = instance-&gt;<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_instance.html#aca02549c526b43daf02cc481e011b2e3">getLocal2Parent</a>();</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <span class="keyword">const</span> RTCScene referenceScene = instance-&gt;<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_instance.html#a6ed2d3612347048183b379c0e43a5278">getReferenceScene</a>();</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <a class="code hl_struct" href="structmoonray_1_1mcrt__common_1_1_intersect_context.html">mcrt_common::IntersectContext</a>* context =</div>
@@ -274,8 +295,8 @@ $(function() {
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> localOrg;</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> localDir;</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        <span class="keywordtype">float</span> time = RTCRayN_time(rays, N, index);</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#ab7892247efa392e8a034ebe31f7bebd3">Mat43</a> P2L = xform.<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_motion_transform.html#a31ae5805079546a4e6f8279a49c1fd59">isStatic</a>() ?</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            xform.<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_motion_transform.html#a45d5186108ac6d65ed2215ddca69a32a">getStaticInverse</a>() : xform.<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_motion_transform.html#a15c3e298f7c5ca3e4f72cce3233e2ffd">eval</a>(time).inverse();</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1mcrt__common.html#a3cff5ff71bac922b0dc934ae9ae289f6">Mat43</a> P2L = xform.isStatic() ?</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            xform.getStaticInverse() : xform.eval(time).inverse();</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        <span class="comment">// transform ray to local space</span></div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        localOrg = scene_rdl2::math::transformPoint(P2L, <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            RTCRayN_org_x(rays, N, index),</div>
@@ -307,7 +328,7 @@ $(function() {
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>RTCOccludedFunctionN</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_instance.html#ad77f8c9f7e954269dba2bde610dc1500">  264</a></span><a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_instance.html#ad77f8c9f7e954269dba2bde610dc1500">Instance::getOccludedFunction</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    <span class="keywordflow">return</span> &amp;occludedFunc;</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    <span class="keywordflow">return</span> &amp;<a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a04abaf0a4a387a82e715d556b32d0ea9">occludedFunc</a>;</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>}</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a0f7237d1fa0a8544984c7889b6f5fe28">BBox3f</a></div>
@@ -423,10 +444,16 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_motion_transform_html_a45d5186108ac6d65ed2215ddca69a32a"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_motion_transform.html#a45d5186108ac6d65ed2215ddca69a32a">moonray::geom::internal::MotionTransform::getStaticInverse</a></div><div class="ttdeci">const Mat43 &amp; getStaticInverse() const</div><div class="ttdef"><b>Definition:</b> <a href="_motion_transform_8h_source.html#l00063">MotionTransform.h:63</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_motion_transform_html_aab9afb2b293090853bb5ba9ccce2171c"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_motion_transform.html#aab9afb2b293090853bb5ba9ccce2171c">moonray::geom::internal::MotionTransform::getStaticXform</a></div><div class="ttdeci">const Mat43 &amp; getStaticXform() const</div><div class="ttdef"><b>Definition:</b> <a href="_motion_transform_8h_source.html#l00057">MotionTransform.h:57</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html_a35de83ab0288c615c6c35cc4412c2eaf"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a35de83ab0288c615c6c35cc4412c2eaf">moonray::geom::internal::Primitive::getGeomID</a></div><div class="ttdeci">uint32_t getGeomID() const</div><div class="ttdoc">Query the geometry ID in BVH for this primitive.</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8h_source.html#l00247">Primitive.h:247</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html_a489859bc41ebeee8a047e899f1d805be"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a489859bc41ebeee8a047e899f1d805be">moonray::geom::internal::Primitive::computeAABB</a></div><div class="ttdeci">virtual BBox3f computeAABB() const</div><div class="ttdoc">Calculate the axis-aligned bounding box.</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8h_source.html#l00202">Primitive.h:202</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_private_access_html_a4ab0b267f3e064b13740d98733ac9e70"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive_private_access.html#a4ab0b267f3e064b13740d98733ac9e70">moonray::geom::internal::PrimitivePrivateAccess::getPrimitiveImpl</a></div><div class="ttdeci">static Primitive * getPrimitiveImpl(geom::Primitive *handle)</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_private_access_8h_source.html#l00030">PrimitivePrivateAccess.h:30</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_volume_id_f_s_m_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_volume_id_f_s_m.html">moonray::geom::internal::VolumeIdFSM</a></div><div class="ttdef"><b>Definition:</b> <a href="_volume_assignment_table_8h_source.html#l00033">VolumeAssignmentTable.h:34</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_volume_id_f_s_m_html_a1f0fa19e48e54ee3039cb50cf0f921bf"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_volume_id_f_s_m.html#a1f0fa19e48e54ee3039cb50cf0f921bf">moonray::geom::internal::VolumeIdFSM::transition</a></div><div class="ttdeci">int transition(int state, const geom::internal::Instance *to) const</div><div class="ttdef"><b>Definition:</b> <a href="_volume_assignment_table_8cc_source.html#l00366">VolumeAssignmentTable.cc:366</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_t_l_state_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a></div><div class="ttdef"><b>Definition:</b> <a href="_shading_t_l_state_8h_source.html#l00025">ShadingTLState.h:26</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a04abaf0a4a387a82e715d556b32d0ea9"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a04abaf0a4a387a82e715d556b32d0ea9">moonray::geom::internal::occludedFunc</a></div><div class="ttdeci">static void occludedFunc(const RTCOccludedFunctionNArguments *args)</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_box_8cc_source.html#l00331">Box.cc:331</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a2a48e33ba788a98f3e3d243507ef0d0d"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a2a48e33ba788a98f3e3d243507ef0d0d">moonray::geom::internal::intersectFunc</a></div><div class="ttdeci">static void intersectFunc(const RTCIntersectFunctionNArguments *args)</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_box_8cc_source.html#l00256">Box.cc:256</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a80807ac6ad0892f5ed2510d0f590c6b4"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a80807ac6ad0892f5ed2510d0f590c6b4">moonray::geom::internal::boundsFunc</a></div><div class="ttdeci">static void boundsFunc(const RTCBoundsFunctionArguments *args)</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_box_8cc_source.html#l00193">Box.cc:193</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_html_a0f7237d1fa0a8544984c7889b6f5fe28"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a0f7237d1fa0a8544984c7889b6f5fe28">moonray::geom::BBox3f</a></div><div class="ttdeci">scene_rdl2::math::BBox3f BBox3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00035">Types.h:35</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1geom_html_ab7892247efa392e8a034ebe31f7bebd3"><div class="ttname"><a href="namespacemoonray_1_1geom.html#ab7892247efa392e8a034ebe31f7bebd3">moonray::geom::Mat43</a></div><div class="ttdeci">scene_rdl2::math::Xform3f Mat43</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00037">Types.h:37</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1mcrt__common_html_a3cff5ff71bac922b0dc934ae9ae289f6"><div class="ttname"><a href="namespacemoonray_1_1mcrt__common.html#a3cff5ff71bac922b0dc934ae9ae289f6">moonray::mcrt_common::Mat43</a></div><div class="ttdeci">scene_rdl2::math::Xform3f Mat43</div><div class="ttdef"><b>Definition:</b> <a href="mcrt__common_2_types_8h_source.html#l00032">Types.h:32</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="aprim_2_instance_8h_html"><div class="ttname"><a href="prim_2_instance_8h.html">Instance.h</a></div></div>
@@ -437,9 +464,13 @@ $(function() {
 <div class="ttc" id="astructmoonray_1_1mcrt__common_1_1_intersect_context_html_a832ae7bb35ca11b43a84adb6aa9d83ec"><div class="ttname"><a href="structmoonray_1_1mcrt__common_1_1_intersect_context.html#a832ae7bb35ca11b43a84adb6aa9d83ec">moonray::mcrt_common::IntersectContext::mRayExtension</a></div><div class="ttdeci">RayExtension * mRayExtension</div><div class="ttdef"><b>Definition:</b> <a href="_ray_8h_source.html#l00420">Ray.h:420</a></div></div>
 <div class="ttc" id="astructmoonray_1_1mcrt__common_1_1_ray_extension_html"><div class="ttname"><a href="structmoonray_1_1mcrt__common_1_1_ray_extension.html">moonray::mcrt_common::RayExtension</a></div><div class="ttdef"><b>Definition:</b> <a href="_ray_8h_source.html#l00045">Ray.h:46</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_0486ff0a15d68326ffdea20a24729a76.html">geom</a></li><li class="navelem"><a class="el" href="dir_5ea21d31850ee446955c5d9316b10017.html">prim</a></li><li class="navelem"><a class="el" href="prim_2_instance_8cc.html">Instance.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

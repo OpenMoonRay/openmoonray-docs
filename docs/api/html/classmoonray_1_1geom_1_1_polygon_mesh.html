@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,16 +42,30 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1_polygon_mesh.html">PolygonMesh</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1_polygon_mesh.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1geom_1_1_polygon_mesh-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::geom::PolygonMesh Class Reference</div></div>
 </div><!--header-->
@@ -200,6 +218,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6ef8c77ab9e7fd5dcc9a27d645703cd6 inherit pub_methods_classmoonray_1_1geom_1_1_primitive"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the number of motion samples  <a href="classmoonray_1_1geom_1_1_primitive.html#a6ef8c77ab9e7fd5dcc9a27d645703cd6">More...</a><br /></td></tr>
 <tr class="separator:a6ef8c77ab9e7fd5dcc9a27d645703cd6 inherit pub_methods_classmoonray_1_1geom_1_1_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad64c1d33eeb01794382cb541ac323d2c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">internal::Primitive</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ad64c1d33eeb01794382cb541ac323d2c">getPrimitiveImpl</a> () override</td></tr>
+<tr class="separator:ad64c1d33eeb01794382cb541ac323d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ad15d85b5db61c1c92902071e7b2057"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_polygon_mesh.html#a3ad15d85b5db61c1c92902071e7b2057">transformPrimitive</a> (const <a class="el" href="classmoonray_1_1geom_1_1_motion_blur_params.html">MotionBlurParams</a> &amp;motionBlurParams, const <a class="el" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> &amp;prim2render) override</td></tr>
+<tr class="separator:a3ad15d85b5db61c1c92902071e7b2057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac032e9f0deeeb03eaaaab334f3b9bf2e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structmoonray_1_1geom_1_1_polygon_mesh_1_1_impl.html">Impl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a></td></tr>
+<tr class="separator:ac032e9f0deeeb03eaaaab334f3b9bf2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classmoonray_1_1geom_1_1_primitive"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmoonray_1_1geom_1_1_primitive')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></td></tr>
@@ -342,7 +372,39 @@ Additional Inherited Members</h2></td></tr>
 <p>the constructor for ngons </p>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00031">31</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   36</span>{</div>
+<div class="line"><span class="lineno">   37</span>    <span class="comment">// n-gon to triangle</span></div>
+<div class="line"><span class="lineno">   38</span>    <span class="comment">// nTriangle = n - 2</span></div>
+<div class="line"><span class="lineno">   39</span>    <span class="comment">// e.g. pentagon(5) -&gt; 3 triangles; quad(4) -&gt; 2 triangles</span></div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordtype">size_t</span> outputTriFaceCount = std::accumulate(</div>
+<div class="line"><span class="lineno">   41</span>            faceVertexCount.begin(), faceVertexCount.end(), 0,</div>
+<div class="line"><span class="lineno">   42</span>            [](<span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp; faceCount, <span class="keywordtype">size_t</span> curFaceVerts) {</div>
+<div class="line"><span class="lineno">   43</span>                return faceCount + (curFaceVerts - 2);</div>
+<div class="line"><span class="lineno">   44</span>            });</div>
+<div class="line"><span class="lineno">   45</span>    <span class="comment">// n-gon to quad</span></div>
+<div class="line"><span class="lineno">   46</span>    <span class="comment">// nQuad = (n - 1) / 2</span></div>
+<div class="line"><span class="lineno">   47</span>    <span class="comment">// e.g. triangle(3) -&gt; 1 quad</span></div>
+<div class="line"><span class="lineno">   48</span>    <span class="comment">//      pentagon(5) -&gt; 1 quad + 1 triangle -&gt; 2 quads</span></div>
+<div class="line"><span class="lineno">   49</span>    <span class="comment">//      hexagon (6) -&gt; 2 quads</span></div>
+<div class="line"><span class="lineno">   50</span>    <span class="comment">//      heptagon(7) -&gt; 2 quads+ 1 triangle -&gt; 3 quads</span></div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordtype">size_t</span> outputQuadFaceCount = std::accumulate(</div>
+<div class="line"><span class="lineno">   52</span>            faceVertexCount.begin(), faceVertexCount.end(), 0,</div>
+<div class="line"><span class="lineno">   53</span>            [](<span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp; faceCount, <span class="keywordtype">size_t</span> curFaceVerts) {</div>
+<div class="line"><span class="lineno">   54</span>                return faceCount + ((curFaceVerts - 1) &gt;&gt; 1);</div>
+<div class="line"><span class="lineno">   55</span>            });</div>
+<div class="line"><span class="lineno">   56</span>    <span class="comment">// compare the total storage of indices of tessellated mesh</span></div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">if</span> (outputQuadFaceCount * 4 &lt; outputTriFaceCount * 3) {</div>
+<div class="line"><span class="lineno">   58</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a> = fauxstd::make_unique&lt;Impl&gt;(<span class="keyword">new</span> internal::QuadMesh(outputQuadFaceCount,</div>
+<div class="line"><span class="lineno">   59</span>                std::move(faceVertexCount), std::move(indices), std::move(vertices),</div>
+<div class="line"><span class="lineno">   60</span>                std::move(layerAssignmentId), std::move(primitiveAttributeTable)));</div>
+<div class="line"><span class="lineno">   61</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   62</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a> = fauxstd::make_unique&lt;Impl&gt;(<span class="keyword">new</span> internal::TriMesh(outputTriFaceCount,</div>
+<div class="line"><span class="lineno">   63</span>                std::move(faceVertexCount), std::move(indices), std::move(vertices),</div>
+<div class="line"><span class="lineno">   64</span>                std::move(layerAssignmentId), std::move(primitiveAttributeTable)));</div>
+<div class="line"><span class="lineno">   65</span>    }</div>
+<div class="line"><span class="lineno">   66</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_polygon_mesh_html_ac032e9f0deeeb03eaaaab334f3b9bf2e"><div class="ttname"><a href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">moonray::geom::PolygonMesh::mImpl</a></div><div class="ttdeci">std::unique_ptr&lt; Impl &gt; mImpl</div><div class="ttdef"><b>Definition:</b> <a href="_polygon_mesh_8h_source.html#l00167">PolygonMesh.h:167</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab80c1f706808fa755f78f30b91da7f75" name="ab80c1f706808fa755f78f30b91da7f75"></a>
@@ -399,7 +461,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_primitive.html#aecdc3d10e900a74a4a85ee29aa28e79e">moonray::geom::Primitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00071">71</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   72</span>{</div>
+<div class="line"><span class="lineno">   73</span>    v.visitPolygonMesh(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   74</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4c9b9e1c13b015206144ca9c271025b3" name="a4c9b9e1c13b015206144ca9c271025b3"></a>
@@ -418,7 +483,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00077">77</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   78</span>{</div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;getTessellatedMeshFaceCount();</div>
+<div class="line"><span class="lineno">   80</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab079a825410d85f8812e3651f8cb749b" name="ab079a825410d85f8812e3651f8cb749b"></a>
@@ -439,7 +507,10 @@ Additional Inherited Members</h2></td></tr>
 <p>get whether normals are reversed </p>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00148">148</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  149</span>{</div>
+<div class="line"><span class="lineno">  150</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;getIsNormalReversed();</div>
+<div class="line"><span class="lineno">  151</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a18a34b1d1d8400f044288c26b2433292" name="a18a34b1d1d8400f044288c26b2433292"></a>
@@ -460,7 +531,10 @@ Additional Inherited Members</h2></td></tr>
 <p>get whether orientation is reversed </p>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00160">160</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  161</span>{</div>
+<div class="line"><span class="lineno">  162</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;getIsOrientationReversed();</div>
+<div class="line"><span class="lineno">  163</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adb4f5582bf8bbf98b1a729f8ca18b0bb" name="adb4f5582bf8bbf98b1a729f8ca18b0bb"></a>
@@ -481,7 +555,10 @@ Additional Inherited Members</h2></td></tr>
 <p>get whether the mesh is single sided </p>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00136">136</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  137</span>{</div>
+<div class="line"><span class="lineno">  138</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;getIsSingleSided();</div>
+<div class="line"><span class="lineno">  139</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0a8cfaf3610e159d9ba3ebe08f8aa768" name="a0a8cfaf3610e159d9ba3ebe08f8aa768"></a>
@@ -512,7 +589,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a7cea19ec192eb4c509d9f27c3e74a04c">moonray::geom::Primitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00083">83</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   84</span>{</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code hl_function" href="classmoonray_1_1geom_1_1_polygon_mesh.html#a639328e9b80d57b81da708e2f54edfd8">PolygonMesh</a>) + <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;getMemory();</div>
+<div class="line"><span class="lineno">   86</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_polygon_mesh_html_a639328e9b80d57b81da708e2f54edfd8"><div class="ttname"><a href="classmoonray_1_1geom_1_1_polygon_mesh.html#a639328e9b80d57b81da708e2f54edfd8">moonray::geom::PolygonMesh::PolygonMesh</a></div><div class="ttdeci">PolygonMesh(FaceVertexCount &amp;&amp;faceVertexCount, IndexBuffer &amp;&amp;indices, VertexBuffer &amp;&amp;vertices, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;primitiveAttributeTable)</div><div class="ttdoc">the constructor for ngons</div><div class="ttdef"><b>Definition:</b> <a href="_polygon_mesh_8cc_source.html#l00031">PolygonMesh.cc:31</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8b68199a2bf1f9fd21846fd6a49fbabb" name="a8b68199a2bf1f9fd21846fd6a49fbabb"></a>
@@ -543,7 +624,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a6ef8c77ab9e7fd5dcc9a27d645703cd6">moonray::geom::Primitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00089">89</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   90</span>{</div>
+<div class="line"><span class="lineno">   91</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;getMotionSamplesCount();</div>
+<div class="line"><span class="lineno">   92</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1232140db3d2f2912b3b00d574b823b4" name="a1232140db3d2f2912b3b00d574b823b4"></a>
@@ -563,7 +647,43 @@ Additional Inherited Members</h2></td></tr>
 <p >get the primitive name </p><dl class="section return"><dt>Returns</dt><dd>name the name of this primitive </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00118">118</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  119</span>{</div>
+<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;getName();</div>
+<div class="line"><span class="lineno">  121</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad64c1d33eeb01794382cb541ac323d2c" name="ad64c1d33eeb01794382cb541ac323d2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad64c1d33eeb01794382cb541ac323d2c">&#9670;&#160;</a></span>getPrimitiveImpl()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">internal::Primitive</a> * moonray::geom::PolygonMesh::getPrimitiveImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section remark"><dt>Remarks</dt><dd>For renderer internal use, procedural should never call this </dd></dl>
+
+<p>Implements <a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a7603a07d5116fc515edbeb2aa714a4ab">moonray::geom::Primitive</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00203">203</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  204</span>{</div>
+<div class="line"><span class="lineno">  205</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh.get();</div>
+<div class="line"><span class="lineno">  206</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a730f590f0eb024412e5f585aa7104319" name="a730f590f0eb024412e5f585aa7104319"></a>
@@ -584,7 +704,10 @@ Additional Inherited Members</h2></td></tr>
 <p>get whether the mesh automatically calculates smooth shading normal </p>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00172">172</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  173</span>{</div>
+<div class="line"><span class="lineno">  174</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;getSmoothNormal();</div>
+<div class="line"><span class="lineno">  175</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7c3649ce6c522c2f854a2b6d7853bc5f" name="a7c3649ce6c522c2f854a2b6d7853bc5f"></a>
@@ -605,7 +728,10 @@ Additional Inherited Members</h2></td></tr>
 <p>get the control mesh vertex buffer </p>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00095">95</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   95</span>                             {</div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;getVertexBuffer();</div>
+<div class="line"><span class="lineno">   97</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6cd33f564ff1d36d19351ad3e7ee0652" name="a6cd33f564ff1d36d19351ad3e7ee0652"></a>
@@ -626,7 +752,10 @@ Additional Inherited Members</h2></td></tr>
 <p>return the number of vertices in this polygon mesh </p>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00224">224</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  225</span>{</div>
+<div class="line"><span class="lineno">  226</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;getVertexCount();</div>
+<div class="line"><span class="lineno">  227</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a59ad4f9bba7bb8c10d109ce45c7bdec5" name="a59ad4f9bba7bb8c10d109ce45c7bdec5"></a>
@@ -645,7 +774,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00218">218</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  219</span>{</div>
+<div class="line"><span class="lineno">  220</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;recomputeVertexNormals();</div>
+<div class="line"><span class="lineno">  221</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6bfde7e9726da7bcd9c498aa6e3bf299" name="a6bfde7e9726da7bcd9c498aa6e3bf299"></a>
@@ -666,7 +798,10 @@ Additional Inherited Members</h2></td></tr>
 <p >set the maximum allowable difference in pixels for adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptiveError is set to n) </p>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00112">112</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  113</span>{</div>
+<div class="line"><span class="lineno">  114</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;setAdaptiveError(adaptiveError);</div>
+<div class="line"><span class="lineno">  115</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4b92e309736f6a9bb4bc169e4471082d" name="a4b92e309736f6a9bb4bc169e4471082d"></a>
@@ -686,7 +821,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00178">178</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  179</span>{</div>
+<div class="line"><span class="lineno">  180</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;setCurvedMotionBlurSampleCount(count);</div>
+<div class="line"><span class="lineno">  181</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9181cdf33bd9c4196e68a0d7240c8342" name="a9181cdf33bd9c4196e68a0d7240c8342"></a>
@@ -708,7 +846,10 @@ Additional Inherited Members</h2></td></tr>
 <p>set whether normals are reversed </p>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00142">142</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  143</span>{</div>
+<div class="line"><span class="lineno">  144</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;setIsNormalReversed(isNormalReversed);</div>
+<div class="line"><span class="lineno">  145</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0e3a35bdcd48e258b4b06552db5f18fb" name="a0e3a35bdcd48e258b4b06552db5f18fb"></a>
@@ -730,7 +871,10 @@ Additional Inherited Members</h2></td></tr>
 <p>set whether orientation is reversed </p>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00154">154</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  155</span>{</div>
+<div class="line"><span class="lineno">  156</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;setIsOrientationReversed(reverseOrientation);</div>
+<div class="line"><span class="lineno">  157</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab6cfe906d92f641dbf8000e9aa677803" name="ab6cfe906d92f641dbf8000e9aa677803"></a>
@@ -752,7 +896,10 @@ Additional Inherited Members</h2></td></tr>
 <p>set whether the mesh is single sided </p>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00130">130</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  131</span>{</div>
+<div class="line"><span class="lineno">  132</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;setIsSingleSided(isSingleSided);</div>
+<div class="line"><span class="lineno">  133</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9126eb211a42f1a28ff590e42c5aeb5a" name="a9126eb211a42f1a28ff590e42c5aeb5a"></a>
@@ -773,7 +920,10 @@ Additional Inherited Members</h2></td></tr>
 <p >set the mesh resolution (each edge in control face would be split into n segments when resolution is n) </p>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00106">106</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  107</span>{</div>
+<div class="line"><span class="lineno">  108</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;setMeshResolution(meshResolution);</div>
+<div class="line"><span class="lineno">  109</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a008df1e7e6817042c80892f9772eab19" name="a008df1e7e6817042c80892f9772eab19"></a>
@@ -799,7 +949,10 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00100">100</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  101</span>{</div>
+<div class="line"><span class="lineno">  102</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;setName(name);</div>
+<div class="line"><span class="lineno">  103</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a33ee1bf558d6e8f6e3a575f783e31b6d" name="a33ee1bf558d6e8f6e3a575f783e31b6d"></a>
@@ -829,7 +982,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00124">124</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  125</span>{</div>
+<div class="line"><span class="lineno">  126</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;setParts(partCount, std::move(faceToPart));</div>
+<div class="line"><span class="lineno">  127</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad477d92e36da5997570986f2df382988" name="ad477d92e36da5997570986f2df382988"></a>
@@ -851,7 +1007,68 @@ Additional Inherited Members</h2></td></tr>
 <p>set whether the mesh automatically calculates smooth shadint normal </p>
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00166">166</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  167</span>{</div>
+<div class="line"><span class="lineno">  168</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;setSmoothNormal(smoothNormal);</div>
+<div class="line"><span class="lineno">  169</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3ad15d85b5db61c1c92902071e7b2057" name="a3ad15d85b5db61c1c92902071e7b2057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ad15d85b5db61c1c92902071e7b2057">&#9670;&#160;</a></span>transformPrimitive()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::geom::PolygonMesh::transformPrimitive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1geom_1_1_motion_blur_params.html">MotionBlurParams</a> &amp;&#160;</td>
+          <td class="paramname"><em>motionBlurParams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> &amp;&#160;</td>
+          <td class="paramname"><em>prim2render</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section remark"><dt>Remarks</dt><dd>For renderer internal use, procedural should never call this </dd></dl>
+
+<p>Implements <a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a8a9d605ec9262d447cba3424d443d826">moonray::geom::Primitive</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00184">184</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  187</span>{</div>
+<div class="line"><span class="lineno">  188</span>    <span class="keywordtype">size_t</span> motionSamplesCount = <a class="code hl_function" href="classmoonray_1_1geom_1_1_polygon_mesh.html#a8b68199a2bf1f9fd21846fd6a49fbabb">getMotionSamplesCount</a>();</div>
+<div class="line"><span class="lineno">  189</span>    <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> p2r = prim2render;</div>
+<div class="line"><span class="lineno">  190</span>    <span class="keywordflow">if</span> (motionSamplesCount &gt; 1 &amp;&amp; prim2render.size() == 1) {</div>
+<div class="line"><span class="lineno">  191</span>        p2r.resize(motionSamplesCount, prim2render[0]);</div>
+<div class="line"><span class="lineno">  192</span>    }</div>
+<div class="line"><span class="lineno">  193</span>    <span class="keyword">const</span> shading::PrimitiveAttributeTable* primAttrTab = <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;getPrimitiveAttributeTable();</div>
+<div class="line"><span class="lineno">  194</span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#ab419eab3c2c3d53be9894b5bddbdce1c">transformVertexBuffer</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;getVertexBuffer(), p2r, motionBlurParams,</div>
+<div class="line"><span class="lineno">  195</span>                          <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;getMotionBlurType(), <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;getCurvedMotionBlurSampleCount(),</div>
+<div class="line"><span class="lineno">  196</span>                          primAttrTab);</div>
+<div class="line"><span class="lineno">  197</span>    <span class="keywordtype">float</span> shutterOpenDelta, shutterCloseDelta;</div>
+<div class="line"><span class="lineno">  198</span>    motionBlurParams.getMotionBlurDelta(shutterOpenDelta, shutterCloseDelta);</div>
+<div class="line"><span class="lineno">  199</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;setTransform(p2r, shutterOpenDelta, shutterCloseDelta);</div>
+<div class="line"><span class="lineno">  200</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_polygon_mesh_html_a8b68199a2bf1f9fd21846fd6a49fbabb"><div class="ttname"><a href="classmoonray_1_1geom_1_1_polygon_mesh.html#a8b68199a2bf1f9fd21846fd6a49fbabb">moonray::geom::PolygonMesh::getMotionSamplesCount</a></div><div class="ttdeci">virtual size_type getMotionSamplesCount() const override</div><div class="ttdoc">return the number of motion samples</div><div class="ttdef"><b>Definition:</b> <a href="_polygon_mesh_8cc_source.html#l00089">PolygonMesh.cc:89</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_ab419eab3c2c3d53be9894b5bddbdce1c"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#ab419eab3c2c3d53be9894b5bddbdce1c">moonray::geom::Primitive::transformVertexBuffer</a></div><div class="ttdeci">void transformVertexBuffer(VertexBuffer&lt; VecType, Traits &gt; &amp;vertices, const shading::XformSamples &amp;prim2render, const MotionBlurParams &amp;motionBlurParams, scene_rdl2::rdl2::MotionBlurType motionBlurType, int curvedMotionBlurSampleCount, const shading::PrimitiveAttributeTable *primAttrTab)</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_8h_source.html#l00580">Primitive.h:580</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_ac42657410f98444ece5b9a1b39839f4e"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">moonray::shading::XformSamples</a></div><div class="ttdeci">std::vector&lt; scene_rdl2::math::Xform3f &gt; XformSamples</div><div class="ttdef"><b>Definition:</b> <a href="_xform_8h_source.html#l00024">Xform.h:24</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a56975b4a92ab101d5377153b0c6b084d" name="a56975b4a92ab101d5377153b0c6b084d"></a>
@@ -881,6 +1098,36 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_polygon_mesh_8cc_source.html#l00209">209</a> of file <a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  211</span>{</div>
+<div class="line"><span class="lineno">  212</span>    <span class="keywordflow">if</span> (vertexData.size() &gt; 0) {</div>
+<div class="line"><span class="lineno">  213</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ac032e9f0deeeb03eaaaab334f3b9bf2e">mImpl</a>-&gt;mPolyMesh-&gt;updateVertexData(vertexData, prim2render);</div>
+<div class="line"><span class="lineno">  214</span>    }</div>
+<div class="line"><span class="lineno">  215</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac032e9f0deeeb03eaaaab334f3b9bf2e" name="ac032e9f0deeeb03eaaaab334f3b9bf2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac032e9f0deeeb03eaaaab334f3b9bf2e">&#9670;&#160;</a></span>mImpl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="structmoonray_1_1geom_1_1_polygon_mesh_1_1_impl.html">Impl</a>&gt; moonray::geom::PolygonMesh::mImpl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_polygon_mesh_8h_source.html#l00167">167</a> of file <a class="el" href="_polygon_mesh_8h_source.html">PolygonMesh.h</a>.</p>
 
 </div>
 </div>
@@ -889,9 +1136,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/geom/<a class="el" href="_polygon_mesh_8cc_source.html">PolygonMesh.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1_polygon_mesh.html">PolygonMesh</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

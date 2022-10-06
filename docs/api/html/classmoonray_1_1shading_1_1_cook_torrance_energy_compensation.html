@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html">CookTorranceEnergyCompensation</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
@@ -127,7 +143,33 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_cook_torrance_energy_compensation_8cc_source.html#l00039">39</a> of file <a class="el" href="_cook_torrance_energy_compensation_8cc_source.html">CookTorranceEnergyCompensation.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   46</span>{</div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordtype">float</span> compensation =</div>
+<div class="line"><span class="lineno">   48</span>            (1.0f - <a class="code hl_function" href="classmoonray_1_1shading_1_1_reflection_albedo.html#a92703b1b124114f8ccccc700f0f00ebd">ReflectionAlbedo::E</a>(type,</div>
+<div class="line"><span class="lineno">   49</span>                                        cosNO, roughness)) *</div>
+<div class="line"><span class="lineno">   50</span>            (1.0f - <a class="code hl_function" href="classmoonray_1_1shading_1_1_reflection_albedo.html#a92703b1b124114f8ccccc700f0f00ebd">ReflectionAlbedo::E</a>(type,</div>
+<div class="line"><span class="lineno">   51</span>                                        cosNI, roughness));</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> divisor = <a class="code hl_function" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ad2dfe037c1bbd14ef26e7d08ec878792">ReflectionAlbedo::oneMinusAvg</a>(type,</div>
+<div class="line"><span class="lineno">   53</span>                                                        roughness);</div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> (!scene_rdl2::math::isZero(divisor)) {</div>
+<div class="line"><span class="lineno">   55</span>        compensation /= divisor;</div>
+<div class="line"><span class="lineno">   56</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   57</span>        compensation = 0.0f;</div>
+<div class="line"><span class="lineno">   58</span>    }</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> eavg = 1.0f - <a class="code hl_function" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ad2dfe037c1bbd14ef26e7d08ec878792">ReflectionAlbedo::oneMinusAvg</a>(type,</div>
+<div class="line"><span class="lineno">   61</span>                                                            roughness);</div>
+<div class="line"><span class="lineno">   62</span>    <span class="keyword">const</span> Color multiplier = favg * favg * eavg /</div>
+<div class="line"><span class="lineno">   63</span>            (scene_rdl2::math::sWhite - favg*(1.0f - eavg));</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span>    <span class="keyword">const</span> Color comp = compensation * multiplier * sOneOverPi;</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">return</span> (comp *</div>
+<div class="line"><span class="lineno">   68</span>            (includeCosineTerm  ?  cosNI : 1.0f));</div>
+<div class="line"><span class="lineno">   69</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_reflection_albedo_html_a92703b1b124114f8ccccc700f0f00ebd"><div class="ttname"><a href="classmoonray_1_1shading_1_1_reflection_albedo.html#a92703b1b124114f8ccccc700f0f00ebd">moonray::shading::ReflectionAlbedo::E</a></div><div class="ttdeci">static float E(ispc::MicrofacetDistribution type, float cosTheta, float roughness)</div><div class="ttdef"><b>Definition:</b> <a href="_reflection_albedo_8h_source.html#l00036">ReflectionAlbedo.h:36</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_reflection_albedo_html_ad2dfe037c1bbd14ef26e7d08ec878792"><div class="ttname"><a href="classmoonray_1_1shading_1_1_reflection_albedo.html#ad2dfe037c1bbd14ef26e7d08ec878792">moonray::shading::ReflectionAlbedo::oneMinusAvg</a></div><div class="ttdeci">static float oneMinusAvg(ispc::MicrofacetDistribution type, float roughness)</div><div class="ttdef"><b>Definition:</b> <a href="_reflection_albedo_8h_source.html#l00060">ReflectionAlbedo.h:60</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae1ec4e5c5f58e7e8450b481f2bbdb0ab" name="ae1ec4e5c5f58e7e8450b481f2bbdb0ab"></a>
@@ -171,7 +213,18 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_cook_torrance_energy_compensation_8cc_source.html#l00106">106</a> of file <a class="el" href="_cook_torrance_energy_compensation_8cc_source.html">CookTorranceEnergyCompensation.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  110</span>{</div>
+<div class="line"><span class="lineno">  111</span>    <span class="keywordtype">float</span> result = 0.0f;</div>
+<div class="line"><span class="lineno">  112</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> norm = sPi * <a class="code hl_function" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ad2dfe037c1bbd14ef26e7d08ec878792">ReflectionAlbedo::oneMinusAvg</a>(type,</div>
+<div class="line"><span class="lineno">  113</span>                                                           roughness);</div>
+<div class="line"><span class="lineno">  114</span>    <span class="keywordflow">if</span> (isZero(norm)) <span class="keywordflow">return</span> 0.0f;</div>
+<div class="line"><span class="lineno">  115</span>    result = (cosNI * (1.0f - <a class="code hl_function" href="classmoonray_1_1shading_1_1_reflection_albedo.html#a92703b1b124114f8ccccc700f0f00ebd">ReflectionAlbedo::E</a>(type,</div>
+<div class="line"><span class="lineno">  116</span>                                                  cosNI,</div>
+<div class="line"><span class="lineno">  117</span>                                                  roughness)));</div>
+<div class="line"><span class="lineno">  118</span>    result /= norm;</div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">return</span> max(0.0f, result);</div>
+<div class="line"><span class="lineno">  120</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab25aaf48fa15e3cc3ccb0459dcca1d78" name="ab25aaf48fa15e3cc3ccb0459dcca1d78"></a>
@@ -233,7 +286,28 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_cook_torrance_energy_compensation_8cc_source.html#l00076">76</a> of file <a class="el" href="_cook_torrance_energy_compensation_8cc_source.html">CookTorranceEnergyCompensation.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   82</span>{</div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordtype">float</span> cosThetaI;</div>
+<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">switch</span>(type) {</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">case</span> ispc::MICROFACET_DISTRIBUTION_BECKMANN:</div>
+<div class="line"><span class="lineno">   86</span>        cosThetaI = pow(r1,</div>
+<div class="line"><span class="lineno">   87</span>                        2.767f*r*r-5.4f*r+2.99412f);</div>
+<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">case</span> ispc::MICROFACET_DISTRIBUTION_GGX:</div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">   91</span>        cosThetaI = pow(r1,</div>
+<div class="line"><span class="lineno">   92</span>                        1.1933f*r*r-2.0969f*r+1.3698f);</div>
+<div class="line"><span class="lineno">   93</span>    }</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> sinThetaI = sqrt(1.0f - cosThetaI*cosThetaI);</div>
+<div class="line"><span class="lineno">   96</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> phiI = 2.0f * sPi * r2;</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> m = <a class="code hl_function" href="namespacemoonray_1_1shading.html#afab5611fd6c3c0b984fa12f088b62c20">computeLocalSphericalDirection</a>(cosThetaI, sinThetaI, phiI);</div>
+<div class="line"><span class="lineno">   99</span>    wi = frame.localToGlobal(m);</div>
+<div class="line"><span class="lineno">  100</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_afab5611fd6c3c0b984fa12f088b62c20"><div class="ttname"><a href="namespacemoonray_1_1shading.html#afab5611fd6c3c0b984fa12f088b62c20">moonray::shading::computeLocalSphericalDirection</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f computeLocalSphericalDirection(float cosTheta, float sinTheta, float phi)</div><div class="ttdoc">See ReferenceFrame for local sphere parameterization (Z-up)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00215">Util.h:215</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af24abc0731312f50d513f3db33ecb223" name="af24abc0731312f50d513f3db33ecb223"></a>
@@ -261,7 +335,11 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_cook_torrance_energy_compensation_8cc_source.html#l00123">123</a> of file <a class="el" href="_cook_torrance_energy_compensation_8cc_source.html">CookTorranceEnergyCompensation.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  125</span>{</div>
+<div class="line"><span class="lineno">  126</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> w = max(0.0f, (roughness-0.5f))*1.0f;</div>
+<div class="line"><span class="lineno">  127</span>    <span class="keywordflow">return</span> w;</div>
+<div class="line"><span class="lineno">  128</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -269,9 +347,13 @@ Static Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/bsdf/cook_torrance/energy_compensation/<a class="el" href="_cook_torrance_energy_compensation_8cc_source.html">CookTorranceEnergyCompensation.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html">CookTorranceEnergyCompensation</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_26bab4ce23f451d8d22db1f5975a2369.html">deepfile</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_dcx_deep_pixel_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
@@ -162,7 +178,10 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00083">83</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   84</span>{</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">return</span> std::max((T)0, std::min((T)1, v));</div>
+<div class="line"><span class="lineno">   86</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3d2ce134291a1bc9ad84533cfb6dc48e" name="a3d2ce134291a1bc9ad84533cfb6dc48e"></a>
@@ -236,7 +255,48 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00771">771</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  779</span>{</div>
+<div class="line"><span class="lineno">  780</span>    <a class="code hl_class" href="class_channel_set.html">ChannelSet</a> compare = compare_channels;</div>
+<div class="line"><span class="lineno">  781</span>    compare &amp;= dp.channels();</div>
+<div class="line"><span class="lineno">  782</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nZMatches = segment_indices.<a class="code hl_function" href="class_channel_set.html#af93840d96f2d24204f41b8b2aba34a7a">size</a>();</div>
+<div class="line"><span class="lineno">  783</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i=0; i &lt; nZMatches; ++i)</div>
+<div class="line"><span class="lineno">  784</span>    {</div>
+<div class="line"><span class="lineno">  785</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> index = segment_indices[i];</div>
+<div class="line"><span class="lineno">  786</span>        <span class="keywordflow">if</span> (index &lt; 0 || index &gt;= (<span class="keywordtype">int</span>)dp.size())</div>
+<div class="line"><span class="lineno">  787</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  788</span>        <span class="keyword">const</span> <a class="code hl_class" href="class_deep_segment.html">DeepSegment</a>&amp; segment = dp.getSegment(index);</div>
+<div class="line"><span class="lineno">  789</span>        <span class="comment">// Compare flags and partial-counts:</span></div>
+<div class="line"><span class="lineno">  790</span>        <span class="keywordflow">if</span> (segment.<a class="code hl_function" href="class_deep_segment.html#a67e2bf3d8c7dbfd23efc973c40699d26">flags</a>() != match_flags ||</div>
+<div class="line"><span class="lineno">  791</span>            (match_spbin_count &gt;= 0 &amp;&amp; (<span class="keywordtype">int</span>)segment.<a class="code hl_function" href="class_deep_segment.html#a97073fb6eef97c03e3bd167083e646fc">getSpCoverageCount</a>() != match_spbin_count))</div>
+<div class="line"><span class="lineno">  792</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  793</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (match_spmask!=<a class="code hl_variable" href="class_sp_mask8.html#a924e8546055332433e1f9b445629c34f">SpMask8::fullCoverage</a> &amp;&amp; !(match_spmask &amp; segment.<a class="code hl_function" href="class_deep_segment.html#adcda9f820682d7ff8e43c472364530e0">spMask</a>()))</div>
+<div class="line"><span class="lineno">  794</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  795</span>        <span class="comment">// Compare color channels:</span></div>
+<div class="line"><span class="lineno">  796</span>        <span class="keyword">const</span> <a class="code hl_class" href="class_pixel.html">Pixelf</a>&amp; ap = dp.getSegmentPixel(segment);</div>
+<div class="line"><span class="lineno">  797</span>        <span class="keywordtype">bool</span> cmatched = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  798</span>        <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, compare) {</div>
+<div class="line"><span class="lineno">  799</span>            <span class="keywordflow">if</span> (fabsf(ap[z] - color[z]) &gt; combine_ctx.<a class="code hl_variable" href="struct_deep_pixel_1_1_combine_context.html#a826916bd41e50a6202b0ca610e108be9">color_threshold</a>) {</div>
+<div class="line"><span class="lineno">  800</span>                cmatched = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  801</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  802</span>            }</div>
+<div class="line"><span class="lineno">  803</span>        }</div>
+<div class="line"><span class="lineno">  804</span>        <span class="keywordflow">if</span> (cmatched)</div>
+<div class="line"><span class="lineno">  805</span>            <span class="keywordflow">return</span> segment_indices[i];</div>
+<div class="line"><span class="lineno">  806</span>    }</div>
+<div class="line"><span class="lineno">  807</span> </div>
+<div class="line"><span class="lineno">  808</span>    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">  809</span>}</div>
+<div class="ttc" id="a_dcx_channel_set_8h_html_a1a8a3195f4006c505fa4bec8a1c60ae2"><div class="ttname"><a href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a></div><div class="ttdeci">#define foreach_channel(CHAN, CHANNELS)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00312">DcxChannelSet.h:312</a></div></div>
+<div class="ttc" id="aclass_channel_set_html"><div class="ttname"><a href="class_channel_set.html">ChannelSet</a></div><div class="ttdoc">rst:left-align::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00135">DcxChannelSet.h:136</a></div></div>
+<div class="ttc" id="aclass_channel_set_html_af93840d96f2d24204f41b8b2aba34a7a"><div class="ttname"><a href="class_channel_set.html#af93840d96f2d24204f41b8b2aba34a7a">ChannelSet::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00400">DcxChannelSet.h:400</a></div></div>
+<div class="ttc" id="aclass_deep_segment_html"><div class="ttname"><a href="class_deep_segment.html">DeepSegment</a></div><div class="ttdoc">rst:left-align::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00219">DcxDeepPixel.h:220</a></div></div>
+<div class="ttc" id="aclass_deep_segment_html_a67e2bf3d8c7dbfd23efc973c40699d26"><div class="ttname"><a href="class_deep_segment.html#a67e2bf3d8c7dbfd23efc973c40699d26">DeepSegment::flags</a></div><div class="ttdeci">const DeepFlags &amp; flags() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01181">DcxDeepPixel.h:1181</a></div></div>
+<div class="ttc" id="aclass_deep_segment_html_a97073fb6eef97c03e3bd167083e646fc"><div class="ttname"><a href="class_deep_segment.html#a97073fb6eef97c03e3bd167083e646fc">DeepSegment::getSpCoverageCount</a></div><div class="ttdeci">uint32_t getSpCoverageCount() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01193">DcxDeepPixel.h:1193</a></div></div>
+<div class="ttc" id="aclass_deep_segment_html_adcda9f820682d7ff8e43c472364530e0"><div class="ttname"><a href="class_deep_segment.html#adcda9f820682d7ff8e43c472364530e0">DeepSegment::spMask</a></div><div class="ttdeci">SpMask8 &amp; spMask()</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01198">DcxDeepPixel.h:1198</a></div></div>
+<div class="ttc" id="aclass_pixel_html"><div class="ttname"><a href="class_pixel.html">Pixel</a></div><div class="ttdoc">rst:cpp:begin::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_8h_source.html#l00093">DcxPixel.h:94</a></div></div>
+<div class="ttc" id="aclass_sp_mask8_html_a924e8546055332433e1f9b445629c34f"><div class="ttname"><a href="class_sp_mask8.html#a924e8546055332433e1f9b445629c34f">SpMask8::fullCoverage</a></div><div class="ttdeci">static const SpMask8 fullCoverage</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_sp_mask_8h_source.html#l00122">DcxSpMask.h:122</a></div></div>
+<div class="ttc" id="astruct_deep_pixel_1_1_combine_context_html_a826916bd41e50a6202b0ca610e108be9"><div class="ttname"><a href="struct_deep_pixel_1_1_combine_context.html#a826916bd41e50a6202b0ca610e108be9">DeepPixel::CombineContext::color_threshold</a></div><div class="ttdeci">float color_threshold</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00595">DcxDeepPixel.h:595</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9251ecf6e4c04641de70c008fcca124e" name="a9251ecf6e4c04641de70c008fcca124e"></a>
@@ -292,7 +352,26 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00744">744</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  749</span>{</div>
+<div class="line"><span class="lineno">  750</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nZMatches = segment_indices.size();</div>
+<div class="line"><span class="lineno">  751</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i=0; i &lt; nZMatches; ++i)</div>
+<div class="line"><span class="lineno">  752</span>    {</div>
+<div class="line"><span class="lineno">  753</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> index = segment_indices[i];</div>
+<div class="line"><span class="lineno">  754</span>        <span class="keywordflow">if</span> (index &lt; 0 || index &gt;= (<span class="keywordtype">int</span>)dp.size())</div>
+<div class="line"><span class="lineno">  755</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  756</span>        <span class="keyword">const</span> <a class="code hl_class" href="class_deep_segment.html">DeepSegment</a>&amp; segment = dp.getSegment(index);</div>
+<div class="line"><span class="lineno">  757</span>        <span class="comment">// Compare flags and partial-counts:</span></div>
+<div class="line"><span class="lineno">  758</span>        <span class="keywordflow">if</span> (segment.<a class="code hl_function" href="class_deep_segment.html#a67e2bf3d8c7dbfd23efc973c40699d26">flags</a>() != match_flags ||</div>
+<div class="line"><span class="lineno">  759</span>            (match_spbin_count &gt;= 0 &amp;&amp; (<span class="keywordtype">int</span>)segment.<a class="code hl_function" href="class_deep_segment.html#a97073fb6eef97c03e3bd167083e646fc">getSpCoverageCount</a>() != match_spbin_count))</div>
+<div class="line"><span class="lineno">  760</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  761</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (match_spmask!=<a class="code hl_variable" href="class_sp_mask8.html#a924e8546055332433e1f9b445629c34f">SpMask8::fullCoverage</a> &amp;&amp; !(match_spmask &amp; segment.<a class="code hl_function" href="class_deep_segment.html#adcda9f820682d7ff8e43c472364530e0">spMask</a>()))</div>
+<div class="line"><span class="lineno">  762</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  763</span>        <span class="keywordflow">return</span> (<span class="keywordtype">int</span>)i;</div>
+<div class="line"><span class="lineno">  764</span>    }</div>
+<div class="line"><span class="lineno">  765</span> </div>
+<div class="line"><span class="lineno">  766</span>    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">  767</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aae2f05f7cbdd1073f99acee113537528" name="aae2f05f7cbdd1073f99acee113537528"></a>
@@ -322,7 +401,22 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00114">114</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  117</span>{</div>
+<div class="line"><span class="lineno">  118</span>    os &lt;&lt; <span class="stringliteral">&quot;0x&quot;</span>;</div>
+<div class="line"><span class="lineno">  119</span>    <span class="keyword">const</span> std::ios_base::fmtflags osflags = os.flags();</div>
+<div class="line"><span class="lineno">  120</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> fill = os.fill();</div>
+<div class="line"><span class="lineno">  121</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> w = (int)os.width();</div>
+<div class="line"><span class="lineno">  122</span>    os.fill(<span class="charliteral">&#39;0&#39;</span>);</div>
+<div class="line"><span class="lineno">  123</span>    os.width(16);</div>
+<div class="line"><span class="lineno">  124</span>    os &lt;&lt; std::hex &lt;&lt; flags.<a class="code hl_variable" href="class_deep_flags.html#a1ecfce1024cb641a49ac1976024496fe">bits</a>;</div>
+<div class="line"><span class="lineno">  125</span>    os.flags(osflags);</div>
+<div class="line"><span class="lineno">  126</span>    os.fill(fill);</div>
+<div class="line"><span class="lineno">  127</span>    os.width(w);</div>
+<div class="line"><span class="lineno">  128</span> </div>
+<div class="line"><span class="lineno">  129</span>    <span class="keywordflow">return</span> os;</div>
+<div class="line"><span class="lineno">  130</span>}</div>
+<div class="ttc" id="aclass_deep_flags_html_a1ecfce1024cb641a49ac1976024496fe"><div class="ttname"><a href="class_deep_flags.html#a1ecfce1024cb641a49ac1976024496fe">DeepFlags::bits</a></div><div class="ttdeci">uint32_t bits</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_flags_8h_source.html#l00289">DcxDeepFlags.h:289</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a60c0cf6a8a77685e42b35b2b5b8aace3" name="a60c0cf6a8a77685e42b35b2b5b8aace3"></a>
@@ -352,7 +446,16 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00230">230</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  233</span>{</div>
+<div class="line"><span class="lineno">  234</span>    os &lt;&lt; <span class="stringliteral">&quot;[flags=&quot;</span> &lt;&lt; metadata.<a class="code hl_variable" href="struct_deep_metadata.html#a71748026ce682d1e52099d6de5545494">flags</a>;</div>
+<div class="line"><span class="lineno">  235</span>    os &lt;&lt; <span class="stringliteral">&quot;, spCvg=&quot;</span> &lt;&lt; metadata.<a class="code hl_function" href="struct_deep_metadata.html#a0cd20f00760afdf3c078b88270c47b86">getSpCoverageWeight</a>();</div>
+<div class="line"><span class="lineno">  236</span>    os &lt;&lt; <span class="stringliteral">&quot;, spMask=&quot;</span> &lt;&lt; std::hex &lt;&lt; metadata.<a class="code hl_variable" href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">spmask</a> &lt;&lt; std::dec &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><span class="lineno">  237</span>    <span class="keywordflow">return</span> os;</div>
+<div class="line"><span class="lineno">  238</span>}</div>
+<div class="ttc" id="astruct_deep_metadata_html_a0cd20f00760afdf3c078b88270c47b86"><div class="ttname"><a href="struct_deep_metadata.html#a0cd20f00760afdf3c078b88270c47b86">DeepMetadata::getSpCoverageWeight</a></div><div class="ttdeci">float getSpCoverageWeight() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01142">DcxDeepPixel.h:1142</a></div></div>
+<div class="ttc" id="astruct_deep_metadata_html_a631d684087012d692f09e94ba0d1b5da"><div class="ttname"><a href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">DeepMetadata::spmask</a></div><div class="ttdeci">SpMask8 spmask</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00108">DcxDeepPixel.h:108</a></div></div>
+<div class="ttc" id="astruct_deep_metadata_html_a71748026ce682d1e52099d6de5545494"><div class="ttname"><a href="struct_deep_metadata.html#a71748026ce682d1e52099d6de5545494">DeepMetadata::flags</a></div><div class="ttdeci">DeepFlags flags</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00109">DcxDeepPixel.h:109</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5760853a74619c434c6b66eb73e51ba5" name="a5760853a74619c434c6b66eb73e51ba5"></a>
@@ -382,7 +485,17 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00246">246</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  249</span>{</div>
+<div class="line"><span class="lineno">  250</span>    os &lt;&lt; <span class="stringliteral">&quot;[Zf=&quot;</span> &lt;&lt; ds.<a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a> &lt;&lt; <span class="stringliteral">&quot;, Zb=&quot;</span> &lt;&lt; ds.<a class="code hl_variable" href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">Zb</a> &lt;&lt; <span class="stringliteral">&quot;, flags=&quot;</span> &lt;&lt; ds.<a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a71748026ce682d1e52099d6de5545494">flags</a>;</div>
+<div class="line"><span class="lineno">  251</span>    os &lt;&lt; <span class="stringliteral">&quot;, spCvg=&quot;</span> &lt;&lt; ds.<a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_function" href="struct_deep_metadata.html#a0cd20f00760afdf3c078b88270c47b86">getSpCoverageWeight</a>();</div>
+<div class="line"><span class="lineno">  252</span>    os &lt;&lt; <span class="stringliteral">&quot;, spMask=&quot;</span> &lt;&lt; std::hex &lt;&lt; ds.<a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">spmask</a> &lt;&lt; std::dec &lt;&lt; <span class="stringliteral">&quot;, coverage=&quot;</span> &lt;&lt; ds.<a class="code hl_function" href="class_deep_segment.html#a78aaff5e5229c7b410d8cea566607bff">getCoverage</a>() &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><span class="lineno">  253</span>    <span class="keywordflow">return</span> os;</div>
+<div class="line"><span class="lineno">  254</span>}</div>
+<div class="ttc" id="aclass_deep_segment_html_a2d54a2b8eef54c3055daed2bfb8d4cad"><div class="ttname"><a href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">DeepSegment::Zb</a></div><div class="ttdeci">float Zb</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00250">DcxDeepPixel.h:250</a></div></div>
+<div class="ttc" id="aclass_deep_segment_html_a68a7fee464e31b18b2be6d788bd1bdfb"><div class="ttname"><a href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">DeepSegment::Zf</a></div><div class="ttdeci">float Zf</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00250">DcxDeepPixel.h:250</a></div></div>
+<div class="ttc" id="aclass_deep_segment_html_a6eee4b9680ce58ee5dbbb57dbf74d4d2"><div class="ttname"><a href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">DeepSegment::metadata</a></div><div class="ttdeci">DeepMetadata metadata</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00252">DcxDeepPixel.h:252</a></div></div>
+<div class="ttc" id="aclass_deep_segment_html_a78aaff5e5229c7b410d8cea566607bff"><div class="ttname"><a href="class_deep_segment.html#a78aaff5e5229c7b410d8cea566607bff">DeepSegment::getCoverage</a></div><div class="ttdeci">float getCoverage() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01211">DcxDeepPixel.h:1211</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2924f77eada5a2125eb3b3b3a999de7f" name="a2924f77eada5a2125eb3b3b3a999de7f"></a>
@@ -412,7 +525,21 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00094">94</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   97</span>{</div>
+<div class="line"><span class="lineno">   98</span>    os &lt;&lt; <span class="stringliteral">&quot;0x&quot;</span>;</div>
+<div class="line"><span class="lineno">   99</span>    <span class="keyword">const</span> std::ios_base::fmtflags flags = os.flags();</div>
+<div class="line"><span class="lineno">  100</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> fill = os.fill();</div>
+<div class="line"><span class="lineno">  101</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> w = (int)os.width();</div>
+<div class="line"><span class="lineno">  102</span>    os.fill(<span class="charliteral">&#39;0&#39;</span>);</div>
+<div class="line"><span class="lineno">  103</span>    os.width(16);</div>
+<div class="line"><span class="lineno">  104</span>    os &lt;&lt; std::hex &lt;&lt; mask.<a class="code hl_function" href="class_sp_mask8.html#a0e999c7004c3fb1de71fb1ac7b536fe9">value</a>();</div>
+<div class="line"><span class="lineno">  105</span>    os.flags(flags);</div>
+<div class="line"><span class="lineno">  106</span>    os.fill(fill);</div>
+<div class="line"><span class="lineno">  107</span>    os.width(w);</div>
+<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">return</span> os;</div>
+<div class="line"><span class="lineno">  109</span>}</div>
+<div class="ttc" id="aclass_sp_mask8_html_a0e999c7004c3fb1de71fb1ac7b536fe9"><div class="ttname"><a href="class_sp_mask8.html#a0e999c7004c3fb1de71fb1ac7b536fe9">SpMask8::value</a></div><div class="ttdeci">uint64_t value() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_sp_mask_8h_source.html#l00329">DcxSpMask.h:329</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac7e59d2b713d9376ced5ed04d40704a7" name="ac7e59d2b713d9376ced5ed04d40704a7"></a>
@@ -442,13 +569,38 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00260">260</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  263</span>{</div>
+<div class="line"><span class="lineno">  264</span>    dp.<a class="code hl_function" href="class_deep_pixel.html#ac55b5139ecd644d3a963b5f7d575e8a0">sort</a>(<span class="keyword">true</span><span class="comment">/*force*/</span>); <span class="comment">// Get global info up to date</span></div>
+<div class="line"><span class="lineno">  265</span>    os &lt;&lt; <span class="stringliteral">&quot;{&quot;</span>;</div>
+<div class="line"><span class="lineno">  266</span>    <span class="keywordflow">if</span> (dp.<a class="code hl_function" href="class_deep_pixel.html#a29cc8fb6c9269abe5f7b39d75f971ad7">size</a>() &gt; 0)</div>
+<div class="line"><span class="lineno">  267</span>    {</div>
+<div class="line"><span class="lineno">  268</span>        <span class="keywordflow">for</span> (uint32_t i=0; i &lt; dp.<a class="code hl_function" href="class_deep_pixel.html#a29cc8fb6c9269abe5f7b39d75f971ad7">size</a>(); ++i)</div>
+<div class="line"><span class="lineno">  269</span>        {</div>
+<div class="line"><span class="lineno">  270</span>            <span class="keywordflow">if</span> (i &gt; 0)</div>
+<div class="line"><span class="lineno">  271</span>                os &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">  272</span>            os &lt;&lt; dp[i].Zf &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; dp[i].Zb &lt;&lt; <span class="stringliteral">&quot;[&quot;</span>;</div>
+<div class="line"><span class="lineno">  273</span>            <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, dp.<a class="code hl_function" href="class_deep_pixel.html#a24e3f7f5370d8a86a7757043104a52c5">channels</a>())</div>
+<div class="line"><span class="lineno">  274</span>                os &lt;&lt; &quot; &quot; &lt;&lt; dp.getChannel(i, z);</div>
+<div class="line"><span class="lineno">  275</span>            os &lt;&lt; &quot; ]&quot;;</div>
+<div class="line"><span class="lineno">  276</span>        }</div>
+<div class="line"><span class="lineno">  277</span>    }</div>
+<div class="line"><span class="lineno">  278</span>    os &lt;&lt; &quot;}&quot;;</div>
+<div class="line"><span class="lineno">  279</span>    return os;</div>
+<div class="line"><span class="lineno">  280</span>}</div>
+<div class="ttc" id="aclass_deep_pixel_html_a24e3f7f5370d8a86a7757043104a52c5"><div class="ttname"><a href="class_deep_pixel.html#a24e3f7f5370d8a86a7757043104a52c5">DeepPixel::channels</a></div><div class="ttdeci">const ChannelSet &amp; channels() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01326">DcxDeepPixel.h:1326</a></div></div>
+<div class="ttc" id="aclass_deep_pixel_html_a29cc8fb6c9269abe5f7b39d75f971ad7"><div class="ttname"><a href="class_deep_pixel.html#a29cc8fb6c9269abe5f7b39d75f971ad7">DeepPixel::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01355">DcxDeepPixel.h:1355</a></div></div>
+<div class="ttc" id="aclass_deep_pixel_html_ac55b5139ecd644d3a963b5f7d575e8a0"><div class="ttname"><a href="class_deep_pixel.html#ac55b5139ecd644d3a963b5f7d575e8a0">DeepPixel::sort</a></div><div class="ttdeci">void sort(bool force=false)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8cpp_source.html#l00486">DcxDeepPixel.cpp:486</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_72b1453eb3d56651fce76e1c2eebfac7.html">deepfile</a></li><li class="navelem"><a class="el" href="_dcx_deep_pixel_8cpp.html">DcxDeepPixel.cpp</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

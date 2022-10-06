@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_quadratic_b_spline_pixel_filter.html">QuadraticBSplinePixelFilter</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_quadratic_b_spline_pixel_filter.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classmoonray_1_1pbr_1_1_quadratic_b_spline_pixel_filter-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::pbr::QuadraticBSplinePixelFilter Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
@@ -73,6 +90,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acf2027c7f56f38532ede1031c3ec3871 inherit pub_methods_classmoonray_1_1pbr_1_1_pixel_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae00fb180940f829ce32268a41c3132e7 inherit pub_methods_classmoonray_1_1pbr_1_1_pixel_filter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_pixel_filter.html#ae00fb180940f829ce32268a41c3132e7">apply</a> (<a class="el" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> dataSize, float *data) const</td></tr>
 <tr class="separator:ae00fb180940f829ce32268a41c3132e7 inherit pub_methods_classmoonray_1_1pbr_1_1_pixel_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a784f2001991a1b18908dd739ea947b6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_quadratic_b_spline_pixel_filter.html#a784f2001991a1b18908dd739ea947b6e">applyFilter</a> (<a class="el" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> dataSize, float *data) const override</td></tr>
+<tr class="separator:a784f2001991a1b18908dd739ea947b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff916aadec32066f100ec401381b6ec4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_quadratic_b_spline_pixel_filter.html#aff916aadec32066f100ec401381b6ec4">applyOffset</a> (<a class="el" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> dataSize, float *data) const override</td></tr>
+<tr class="separator:aff916aadec32066f100ec401381b6ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -109,16 +133,118 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_pixel_filter_8h_source.html#l00094">94</a> of file <a class="el" href="_pixel_filter_8h_source.html">PixelFilter.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>                                                          :</div>
+<div class="line"><span class="lineno">   95</span>        <a class="code hl_function" href="classmoonray_1_1pbr_1_1_pixel_filter.html#a4003ab9a35322f149e3b4bb20c408a42">PixelFilter</a>(footprint)</div>
+<div class="line"><span class="lineno">   96</span>    {</div>
+<div class="line"><span class="lineno">   97</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_pixel_filter_html_a4003ab9a35322f149e3b4bb20c408a42"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_pixel_filter.html#a4003ab9a35322f149e3b4bb20c408a42">moonray::pbr::PixelFilter::PixelFilter</a></div><div class="ttdeci">PixelFilter(float footprint)</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_filter_8h_source.html#l00019">PixelFilter.h:19</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a784f2001991a1b18908dd739ea947b6e" name="a784f2001991a1b18908dd739ea947b6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a784f2001991a1b18908dd739ea947b6e">&#9670;&#160;</a></span>applyFilter()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::pbr::QuadraticBSplinePixelFilter::applyFilter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a>&#160;</td>
+          <td class="paramname"><em>dataSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_pixel_filter.html#a3d4fa6d49eda6c7376de2b266b6dffb2">moonray::pbr::PixelFilter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_pixel_filter_8h_source.html#l00100">100</a> of file <a class="el" href="_pixel_filter_8h_source.html">PixelFilter.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  101</span>    {</div>
+<div class="line"><span class="lineno">  102</span>        ispc::PBR_quadraticBSplineWarp(dataSize, data);</div>
+<div class="line"><span class="lineno">  103</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aff916aadec32066f100ec401381b6ec4" name="aff916aadec32066f100ec401381b6ec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff916aadec32066f100ec401381b6ec4">&#9670;&#160;</a></span>applyOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::pbr::QuadraticBSplinePixelFilter::applyOffset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a>&#160;</td>
+          <td class="paramname"><em>dataSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_pixel_filter.html#acfb248d1ecfc69f7806407b2a5eb2af2">moonray::pbr::PixelFilter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_pixel_filter_8h_source.html#l00105">105</a> of file <a class="el" href="_pixel_filter_8h_source.html">PixelFilter.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  106</span>    {</div>
+<div class="line"><span class="lineno">  107</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> filterFootprint = 3.0f;</div>
+<div class="line"><span class="lineno">  108</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> widthMultiplier = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_pixel_filter.html#addc17a1b925b7f4a4b70bd3775eac680">getDesiredFootprint</a>()/filterFootprint;</div>
+<div class="line"><span class="lineno">  109</span> </div>
+<div class="line"><span class="lineno">  110</span>        <span class="comment">// The pixel filters will move the sample so that the mean is around</span></div>
+<div class="line"><span class="lineno">  111</span>        <span class="comment">// zero. Without the pixel filters, the mean is 0.5.</span></div>
+<div class="line"><span class="lineno">  112</span>        ispc::PBR_filterOffset(dataSize, data, widthMultiplier);</div>
+<div class="line"><span class="lineno">  113</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_pixel_filter_html_addc17a1b925b7f4a4b70bd3775eac680"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_pixel_filter.html#addc17a1b925b7f4a4b70bd3775eac680">moonray::pbr::PixelFilter::getDesiredFootprint</a></div><div class="ttdeci">float getDesiredFootprint() const</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_filter_8h_source.html#l00030">PixelFilter.h:30</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/sampler/<a class="el" href="_pixel_filter_8h_source.html">PixelFilter.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_quadratic_b_spline_pixel_filter.html">QuadraticBSplinePixelFilter</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

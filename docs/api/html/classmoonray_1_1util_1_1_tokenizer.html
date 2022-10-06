@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,31 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1util.html">util</a></li><li class="navelem"><a class="el" href="classmoonray_1_1util_1_1_tokenizer.html">Tokenizer</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1util_1_1_tokenizer.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classmoonray_1_1util_1_1_tokenizer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::util::Tokenizer Class Reference</div></div>
 </div><!--header-->
@@ -97,6 +117,29 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab16ebb607ede9a52f1e0e9342feb664f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b905ca5f244babcf8cbf1a628e620a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1util_1_1_tokenizer.html#ad3a68b24da6873a06f4b90601624e560">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1util_1_1_tokenizer.html#a2b905ca5f244babcf8cbf1a628e620a3">cend</a> () const</td></tr>
 <tr class="separator:a2b905ca5f244babcf8cbf1a628e620a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:ac9ed7f9df2db62b229fe0446a0b341a1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1util_1_1_tokenizer.html#ac9ed7f9df2db62b229fe0446a0b341a1">container</a> = std::vector&lt; <a class="el" href="classmoonray_1_1util_1_1_tokenizer.html#ab46241af0b64eec68f04403a0ae1d5a9">value_type</a> &gt;</td></tr>
+<tr class="separator:ac9ed7f9df2db62b229fe0446a0b341a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a5323ccc488e39dad47d640b4fc1813d5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1util_1_1_tokenizer.html#a5323ccc488e39dad47d640b4fc1813d5">isToken</a> (char c, const char *const tokens, std::size_t tokensLength)</td></tr>
+<tr class="separator:a5323ccc488e39dad47d640b4fc1813d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d61ca38ae95cc80c34f17525dce37d9"><td class="memTemplParams" colspan="2">template&lt;typename TokenRecognizer &gt; </td></tr>
+<tr class="memitem:a7d61ca38ae95cc80c34f17525dce37d9"><td class="memTemplItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmoonray_1_1util_1_1_tokenizer.html#a7d61ca38ae95cc80c34f17525dce37d9">tokenize</a> (const std::string &amp;s, TokenRecognizer tokenRecognizer)</td></tr>
+<tr class="separator:a7d61ca38ae95cc80c34f17525dce37d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad1c139a9437248606ecd19ee7d1190cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1util_1_1_tokenizer.html#ac9ed7f9df2db62b229fe0446a0b341a1">container</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a></td></tr>
+<tr class="separator:ad1c139a9437248606ecd19ee7d1190cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:ad3a6e33166127d40bdb305ab2e165876"><td class="memItemLeft" align="right" valign="top">static constexpr const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1util_1_1_tokenizer.html#ad3a6e33166127d40bdb305ab2e165876">sWhiteSpace</a> = &quot; \t\n\r&quot;</td></tr>
+<tr class="separator:ad3a6e33166127d40bdb305ab2e165876"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -147,6 +190,30 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00040">40</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
+
+</div>
+</div>
+<a id="ac9ed7f9df2db62b229fe0446a0b341a1" name="ac9ed7f9df2db62b229fe0446a0b341a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9ed7f9df2db62b229fe0446a0b341a1">&#9670;&#160;</a></span>container</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmoonray_1_1util_1_1_tokenizer.html#ac9ed7f9df2db62b229fe0446a0b341a1">moonray::util::Tokenizer::container</a> =  std::vector&lt;<a class="el" href="classmoonray_1_1util_1_1_tokenizer.html#ab46241af0b64eec68f04403a0ae1d5a9">value_type</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00034">34</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
 
 </div>
 </div>
@@ -240,7 +307,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00044">44</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   45</span>    : <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>(<a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#a7d61ca38ae95cc80c34f17525dce37d9">tokenize</a>(s, [] (<span class="keywordtype">char</span> c) { <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#a5323ccc488e39dad47d640b4fc1813d5">isToken</a>(c, <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad3a6e33166127d40bdb305ab2e165876">sWhiteSpace</a>, <a class="code hl_function" href="namespacemoonray_1_1util.html#a63e299a347c5655e58419b2fe021db8d">length</a>(<a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad3a6e33166127d40bdb305ab2e165876">sWhiteSpace</a>)); }))</div>
+<div class="line"><span class="lineno">   46</span>    {</div>
+<div class="line"><span class="lineno">   47</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_a5323ccc488e39dad47d640b4fc1813d5"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#a5323ccc488e39dad47d640b4fc1813d5">moonray::util::Tokenizer::isToken</a></div><div class="ttdeci">static bool isToken(char c, const char *const tokens, std::size_t tokensLength)</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00109">Tokenizer.h:109</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_a7d61ca38ae95cc80c34f17525dce37d9"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#a7d61ca38ae95cc80c34f17525dce37d9">moonray::util::Tokenizer::tokenize</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; tokenize(const std::string &amp;s, TokenRecognizer tokenRecognizer)</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00120">Tokenizer.h:120</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_ad1c139a9437248606ecd19ee7d1190cd"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">moonray::util::Tokenizer::mTokens</a></div><div class="ttdeci">container mTokens</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00138">Tokenizer.h:138</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_ad3a6e33166127d40bdb305ab2e165876"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#ad3a6e33166127d40bdb305ab2e165876">moonray::util::Tokenizer::sWhiteSpace</a></div><div class="ttdeci">static constexpr const char *const sWhiteSpace</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00137">Tokenizer.h:137</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1util_html_a63e299a347c5655e58419b2fe021db8d"><div class="ttname"><a href="namespacemoonray_1_1util.html#a63e299a347c5655e58419b2fe021db8d">moonray::util::length</a></div><div class="ttdeci">constexpr std::size_t length(const char *c)</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00018">Tokenizer.h:18</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a18024c8748117990af99a39a70702f38" name="a18024c8748117990af99a39a70702f38"></a>
@@ -278,7 +353,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00049">49</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   50</span>    : <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>(<a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#a7d61ca38ae95cc80c34f17525dce37d9">tokenize</a>(s, [&amp;tokens] (<span class="keywordtype">char</span> c) { <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#a5323ccc488e39dad47d640b4fc1813d5">isToken</a>(c, tokens.c_str(), <a class="code hl_function" href="namespacemoonray_1_1util.html#a63e299a347c5655e58419b2fe021db8d">length</a>(tokens)); }))</div>
+<div class="line"><span class="lineno">   51</span>    {</div>
+<div class="line"><span class="lineno">   52</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -306,7 +384,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00076">76</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   77</span>    {</div>
+<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>.begin();</div>
+<div class="line"><span class="lineno">   79</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3dca83bddb703680909f6f4f7e762864" name="a3dca83bddb703680909f6f4f7e762864"></a>
@@ -333,7 +414,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00086">86</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   87</span>    {</div>
+<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>.begin();</div>
+<div class="line"><span class="lineno">   89</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab16ebb607ede9a52f1e0e9342feb664f" name="ab16ebb607ede9a52f1e0e9342feb664f"></a>
@@ -360,7 +444,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00096">96</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   97</span>    {</div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>.begin();</div>
+<div class="line"><span class="lineno">   99</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2b905ca5f244babcf8cbf1a628e620a3" name="a2b905ca5f244babcf8cbf1a628e620a3"></a>
@@ -387,7 +474,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00101">101</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  102</span>    {</div>
+<div class="line"><span class="lineno">  103</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>.end();</div>
+<div class="line"><span class="lineno">  104</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3b1ac2399cc17c29b6a9ed16c4e76b9d" name="a3b1ac2399cc17c29b6a9ed16c4e76b9d"></a>
@@ -414,7 +504,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00059">59</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   60</span>    {</div>
+<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>.empty();</div>
+<div class="line"><span class="lineno">   62</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa10a81016f79f1debe14e3fb222849e6" name="aa10a81016f79f1debe14e3fb222849e6"></a>
@@ -441,7 +534,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00081">81</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   82</span>    {</div>
+<div class="line"><span class="lineno">   83</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>.end();</div>
+<div class="line"><span class="lineno">   84</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad95aaa08482bafb4b3b7a59565cf1153" name="ad95aaa08482bafb4b3b7a59565cf1153"></a>
@@ -468,7 +564,62 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00091">91</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>    {</div>
+<div class="line"><span class="lineno">   93</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>.end();</div>
+<div class="line"><span class="lineno">   94</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5323ccc488e39dad47d640b4fc1813d5" name="a5323ccc488e39dad47d640b4fc1813d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5323ccc488e39dad47d640b4fc1813d5">&#9670;&#160;</a></span>isToken()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool moonray::util::Tokenizer::isToken </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>tokens</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>tokensLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00109">109</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  110</span>    {</div>
+<div class="line"><span class="lineno">  111</span>        <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; tokensLength; ++i) {</div>
+<div class="line"><span class="lineno">  112</span>            <span class="keywordflow">if</span> (c == tokens[i]) {</div>
+<div class="line"><span class="lineno">  113</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  114</span>            }</div>
+<div class="line"><span class="lineno">  115</span>        }</div>
+<div class="line"><span class="lineno">  116</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  117</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad72909fa69d789013d1052209d3fc2b9" name="ad72909fa69d789013d1052209d3fc2b9"></a>
@@ -496,7 +647,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00070">70</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   71</span>    {</div>
+<div class="line"><span class="lineno">   72</span>        assert(idx &lt; <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#ad332c2567694ae52e51c8e623e6a9af2">size</a>());</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>[idx];</div>
+<div class="line"><span class="lineno">   74</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_ad332c2567694ae52e51c8e623e6a9af2"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#ad332c2567694ae52e51c8e623e6a9af2">moonray::util::Tokenizer::size</a></div><div class="ttdeci">std::size_t size() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00054">Tokenizer.h:54</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae7c04d36f5c4f15189ee9d2b55b7ad33" name="ae7c04d36f5c4f15189ee9d2b55b7ad33"></a>
@@ -524,7 +680,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00064">64</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   65</span>    {</div>
+<div class="line"><span class="lineno">   66</span>        assert(idx &lt; <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#ad332c2567694ae52e51c8e623e6a9af2">size</a>());</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>[idx];</div>
+<div class="line"><span class="lineno">   68</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad332c2567694ae52e51c8e623e6a9af2" name="ad332c2567694ae52e51c8e623e6a9af2"></a>
@@ -551,6 +711,114 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00054">54</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>    {</div>
+<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>.size();</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7d61ca38ae95cc80c34f17525dce37d9" name="a7d61ca38ae95cc80c34f17525dce37d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d61ca38ae95cc80c34f17525dce37d9">&#9670;&#160;</a></span>tokenize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TokenRecognizer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::vector&lt; std::string &gt; moonray::util::Tokenizer::tokenize </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TokenRecognizer&#160;</td>
+          <td class="paramname"><em>tokenRecognizer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00120">120</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  121</span>    {</div>
+<div class="line"><span class="lineno">  122</span>        <span class="comment">// Speaking in terms of whitespace...</span></div>
+<div class="line"><span class="lineno">  123</span>        <span class="comment">// first should point to the next non-whitespace character</span></div>
+<div class="line"><span class="lineno">  124</span>        <span class="comment">// last should point to the following first whitespace character</span></div>
+<div class="line"><span class="lineno">  125</span> </div>
+<div class="line"><span class="lineno">  126</span>        std::vector&lt;std::string&gt; ret;</div>
+<div class="line"><span class="lineno">  127</span>        <span class="keyword">using </span><a class="code hl_typedef" href="classmoonray_1_1util_1_1_tokenizer.html#ad3a68b24da6873a06f4b90601624e560">const_iterator</a> = std::string::const_iterator;</div>
+<div class="line"><span class="lineno">  128</span>        <a class="code hl_typedef" href="classmoonray_1_1util_1_1_tokenizer.html#ad3a68b24da6873a06f4b90601624e560">const_iterator</a> first = std::find_if_not(s.cbegin(), s.cend(), tokenRecognizer);</div>
+<div class="line"><span class="lineno">  129</span>        <span class="keywordflow">while</span> (first != s.cend()) {</div>
+<div class="line"><span class="lineno">  130</span>            <a class="code hl_typedef" href="classmoonray_1_1util_1_1_tokenizer.html#ad3a68b24da6873a06f4b90601624e560">const_iterator</a> last = std::find_if(first, s.cend(), tokenRecognizer);</div>
+<div class="line"><span class="lineno">  131</span>            ret.emplace_back(first, last);</div>
+<div class="line"><span class="lineno">  132</span>            first = std::find_if_not(last, s.cend(), tokenRecognizer);</div>
+<div class="line"><span class="lineno">  133</span>        }</div>
+<div class="line"><span class="lineno">  134</span>        <span class="keywordflow">return</span> ret;</div>
+<div class="line"><span class="lineno">  135</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_ad3a68b24da6873a06f4b90601624e560"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#ad3a68b24da6873a06f4b90601624e560">moonray::util::Tokenizer::const_iterator</a></div><div class="ttdeci">container::const_iterator const_iterator</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00038">Tokenizer.h:38</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad1c139a9437248606ecd19ee7d1190cd" name="ad1c139a9437248606ecd19ee7d1190cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1c139a9437248606ecd19ee7d1190cd">&#9670;&#160;</a></span>mTokens</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1util_1_1_tokenizer.html#ac9ed7f9df2db62b229fe0446a0b341a1">container</a> moonray::util::Tokenizer::mTokens</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00138">138</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
+
+</div>
+</div>
+<a id="ad3a6e33166127d40bdb305ab2e165876" name="ad3a6e33166127d40bdb305ab2e165876"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3a6e33166127d40bdb305ab2e165876">&#9670;&#160;</a></span>sWhiteSpace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char* const moonray::util::Tokenizer::sWhiteSpace = &quot; \t\n\r&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_tokenizer_8h_source.html#l00137">137</a> of file <a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a>.</p>
 
 </div>
 </div>
@@ -558,9 +826,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/common/mcrt_util/<a class="el" href="_tokenizer_8h_source.html">Tokenizer.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1util.html">util</a></li><li class="navelem"><a class="el" href="classmoonray_1_1util_1_1_tokenizer.html">Tokenizer</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

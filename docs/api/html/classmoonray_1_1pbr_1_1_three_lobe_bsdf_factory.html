@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_three_lobe_bsdf_factory.html">ThreeLobeBsdfFactory</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_three_lobe_bsdf_factory.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1pbr_1_1_three_lobe_bsdf_factory-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::pbr::ThreeLobeBsdfFactory Class Reference</div></div>
 </div><!--header-->
@@ -77,6 +94,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a369277d5da3630c10938c3fc4476b563 inherit pub_methods_classmoonray_1_1pbr_1_1_bsdf_factory"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a573c442293f5c4deb9e47f985cf5ae71 inherit pub_methods_classmoonray_1_1pbr_1_1_bsdf_factory"><td class="memItemLeft" align="right" valign="top">virtual shading::Bsdfv *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_bsdf_factory.html#a573c442293f5c4deb9e47f985cf5ae71">getBsdfv</a> (scene_rdl2::alloc::Arena &amp;arena, const scene_rdl2::math::ReferenceFrame &amp;frame) const =0</td></tr>
 <tr class="separator:a573c442293f5c4deb9e47f985cf5ae71 inherit pub_methods_classmoonray_1_1pbr_1_1_bsdf_factory"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0dfa7d1634ef0369eabf0980d3a72aba"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_three_lobe_bsdf_factory.html#a0dfa7d1634ef0369eabf0980d3a72aba">mRoughness1</a></td></tr>
+<tr class="separator:a0dfa7d1634ef0369eabf0980d3a72aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ceb50659a5625d982357a6cbacf0de"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_three_lobe_bsdf_factory.html#a99ceb50659a5625d982357a6cbacf0de">mRoughness2</a></td></tr>
+<tr class="separator:a99ceb50659a5625d982357a6cbacf0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -125,7 +149,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_factory_8h_source.html#l00590">590</a> of file <a class="el" href="_bsdf_factory_8h_source.html">BsdfFactory.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  590</span>                                                             :</div>
+<div class="line"><span class="lineno">  591</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_three_lobe_bsdf_factory.html#a0dfa7d1634ef0369eabf0980d3a72aba">mRoughness1</a>(roughness1), <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_three_lobe_bsdf_factory.html#a99ceb50659a5625d982357a6cbacf0de">mRoughness2</a>(roughness2)  {}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_three_lobe_bsdf_factory_html_a0dfa7d1634ef0369eabf0980d3a72aba"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_three_lobe_bsdf_factory.html#a0dfa7d1634ef0369eabf0980d3a72aba">moonray::pbr::ThreeLobeBsdfFactory::mRoughness1</a></div><div class="ttdeci">float mRoughness1</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_factory_8h_source.html#l00618">BsdfFactory.h:618</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_three_lobe_bsdf_factory_html_a99ceb50659a5625d982357a6cbacf0de"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_three_lobe_bsdf_factory.html#a99ceb50659a5625d982357a6cbacf0de">moonray::pbr::ThreeLobeBsdfFactory::mRoughness2</a></div><div class="ttdeci">float mRoughness2</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_factory_8h_source.html#l00619">BsdfFactory.h:619</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -166,7 +194,14 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_bsdf_factory.html#a573c442293f5c4deb9e47f985cf5ae71">moonray::pbr::BsdfFactory</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_factory_8h_source.html#l00611">611</a> of file <a class="el" href="_bsdf_factory_8h_source.html">BsdfFactory.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  612</span>    {</div>
+<div class="line"><span class="lineno">  613</span>        shading::Bsdfv *bsdfv =</div>
+<div class="line"><span class="lineno">  614</span>            ispc::ThreeLobeBsdfFactory(<a class="code hl_function" href="classmoonray_1_1pbr_1_1_bsdf_factory.html#a686cc34b2b7c6ea7505a3e777cf0a1ef">ispcArena</a>(arena), <a class="code hl_function" href="classmoonray_1_1pbr_1_1_bsdf_factory.html#ab25d63f51cbcdc9cafc94e154217d11a">ispcFrame</a>(frame), <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_three_lobe_bsdf_factory.html#a0dfa7d1634ef0369eabf0980d3a72aba">mRoughness1</a>, <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_three_lobe_bsdf_factory.html#a99ceb50659a5625d982357a6cbacf0de">mRoughness2</a>);</div>
+<div class="line"><span class="lineno">  615</span>        <span class="keywordflow">return</span> bsdfv;</div>
+<div class="line"><span class="lineno">  616</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_bsdf_factory_html_a686cc34b2b7c6ea7505a3e777cf0a1ef"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_bsdf_factory.html#a686cc34b2b7c6ea7505a3e777cf0a1ef">moonray::pbr::BsdfFactory::ispcArena</a></div><div class="ttdeci">ispc::Arena * ispcArena(scene_rdl2::alloc::Arena &amp;arena) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_factory_8h_source.html#l00049">BsdfFactory.h:49</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_bsdf_factory_html_ab25d63f51cbcdc9cafc94e154217d11a"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_bsdf_factory.html#ab25d63f51cbcdc9cafc94e154217d11a">moonray::pbr::BsdfFactory::ispcFrame</a></div><div class="ttdeci">const ispc::ReferenceFrame * ispcFrame(const scene_rdl2::math::ReferenceFrame &amp;frame) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_factory_8h_source.html#l00051">BsdfFactory.h:51</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5fb4e5413979a18b5efdc575a0ed45d0" name="a5fb4e5413979a18b5efdc575a0ed45d0"></a>
@@ -206,6 +241,73 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_bsdf_factory.html#a369277d5da3630c10938c3fc4476b563">moonray::pbr::BsdfFactory</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_factory_8h_source.html#l00592">592</a> of file <a class="el" href="_bsdf_factory_8h_source.html">BsdfFactory.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  593</span>    {</div>
+<div class="line"><span class="lineno">  594</span>        <span class="comment">// TODO: This bsdf is not energy preserving</span></div>
+<div class="line"><span class="lineno">  595</span>        shading::Bsdf *bsdf = arena.allocWithCtor&lt;shading::Bsdf&gt;();</div>
+<div class="line"><span class="lineno">  596</span>        shading::BsdfLobe *lobe1 = arena.allocWithArgs&lt;shading::LambertBsdfLobe&gt;(frame.getN(), scene_rdl2::math::sWhite, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  597</span>        shading::BsdfLobe *lobe2 = arena.allocWithArgs&lt;shading::CookTorranceBsdfLobe&gt;(</div>
+<div class="line"><span class="lineno">  598</span>                frame.getN(), <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_three_lobe_bsdf_factory.html#a99ceb50659a5625d982357a6cbacf0de">mRoughness2</a>);</div>
+<div class="line"><span class="lineno">  599</span>        shading::BsdfLobe *lobe3 = arena.allocWithArgs&lt;shading::CookTorranceBsdfLobe&gt;(</div>
+<div class="line"><span class="lineno">  600</span>                frame.getN(), <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_three_lobe_bsdf_factory.html#a0dfa7d1634ef0369eabf0980d3a72aba">mRoughness1</a>);</div>
+<div class="line"><span class="lineno">  601</span>        lobe1-&gt;setScale(scene_rdl2::math::Color(0.1f, 0.1f, 0.1f));</div>
+<div class="line"><span class="lineno">  602</span>        lobe2-&gt;setFresnel(arena.allocWithArgs&lt;shading::SchlickFresnel&gt;(</div>
+<div class="line"><span class="lineno">  603</span>                scene_rdl2::math::Color(0.5f, 0.5f, 0.5f), 1.0f));</div>
+<div class="line"><span class="lineno">  604</span>        lobe3-&gt;setFresnel(arena.allocWithArgs&lt;shading::SchlickFresnel&gt;(</div>
+<div class="line"><span class="lineno">  605</span>                scene_rdl2::math::Color(0.3f, 0.3f, 0.3f), 1.0f));</div>
+<div class="line"><span class="lineno">  606</span>        bsdf-&gt;addLobe(lobe1);</div>
+<div class="line"><span class="lineno">  607</span>        bsdf-&gt;addLobe(lobe2);</div>
+<div class="line"><span class="lineno">  608</span>        bsdf-&gt;addLobe(lobe3);</div>
+<div class="line"><span class="lineno">  609</span>        <span class="keywordflow">return</span> bsdf;</div>
+<div class="line"><span class="lineno">  610</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a0dfa7d1634ef0369eabf0980d3a72aba" name="a0dfa7d1634ef0369eabf0980d3a72aba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dfa7d1634ef0369eabf0980d3a72aba">&#9670;&#160;</a></span>mRoughness1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::pbr::ThreeLobeBsdfFactory::mRoughness1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_factory_8h_source.html#l00618">618</a> of file <a class="el" href="_bsdf_factory_8h_source.html">BsdfFactory.h</a>.</p>
+
+</div>
+</div>
+<a id="a99ceb50659a5625d982357a6cbacf0de" name="a99ceb50659a5625d982357a6cbacf0de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99ceb50659a5625d982357a6cbacf0de">&#9670;&#160;</a></span>mRoughness2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::pbr::ThreeLobeBsdfFactory::mRoughness2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_factory_8h_source.html#l00619">619</a> of file <a class="el" href="_bsdf_factory_8h_source.html">BsdfFactory.h</a>.</p>
 
 </div>
 </div>
@@ -213,9 +315,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/unittest/<a class="el" href="_bsdf_factory_8h_source.html">BsdfFactory.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_three_lobe_bsdf_factory.html">ThreeLobeBsdfFactory</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

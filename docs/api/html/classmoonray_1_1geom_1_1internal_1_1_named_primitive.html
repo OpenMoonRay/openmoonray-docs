@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html">NamedPrimitive</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1internal_1_1_named_primitive.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -305,7 +321,15 @@ Additional Inherited Members</h2></td></tr>
 <p>Constructor / Destructor. </p>
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8h_source.html#l00034">34</a> of file <a class="el" href="_named_primitive_8h_source.html">NamedPrimitive.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   34</span>                                                         :</div>
+<div class="line"><span class="lineno">   35</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>(), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>(std::move(layerAssignmentId))</div>
+<div class="line"><span class="lineno">   36</span>    {</div>
+<div class="line"><span class="lineno">   37</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a34a6971240a91b3a90cf47807bde2417">resetShadowLinking</a>();</div>
+<div class="line"><span class="lineno">   38</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_a219a79e9a4079197f79aff19f5cf889e"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">moonray::geom::internal::NamedPrimitive::mLayerAssignmentId</a></div><div class="ttdeci">LayerAssignmentId mLayerAssignmentId</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00148">NamedPrimitive.h:148</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_a34a6971240a91b3a90cf47807bde2417"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a34a6971240a91b3a90cf47807bde2417">moonray::geom::internal::NamedPrimitive::resetShadowLinking</a></div><div class="ttdeci">void resetShadowLinking()</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8cc_source.html#l00117">NamedPrimitive.cc:117</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_a5a2f04f73c5f819d4e76c10bbd71cac5"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">moonray::geom::internal::NamedPrimitive::mAttributes</a></div><div class="ttdeci">std::unique_ptr&lt; shading::Attributes &gt; mAttributes</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00146">NamedPrimitive.h:146</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a83c088e833fa660e3c5a2a661b82ae5a" name="a83c088e833fa660e3c5a2a661b82ae5a"></a>
@@ -332,7 +356,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8h_source.html#l00040">40</a> of file <a class="el" href="_named_primitive_8h_source.html">NamedPrimitive.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   41</span>    {</div>
+<div class="line"><span class="lineno">   42</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a34a6971240a91b3a90cf47807bde2417">resetShadowLinking</a>();</div>
+<div class="line"><span class="lineno">   43</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab8b0f4de0cd2918707c6d7e450f9a887" name="ab8b0f4de0cd2918707c6d7e450f9a887"></a>
@@ -397,7 +424,12 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8h_source.html#l00120">120</a> of file <a class="el" href="_named_primitive_8h_source.html">NamedPrimitive.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  121</span>    {</div>
+<div class="line"><span class="lineno">  122</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a1efe03f99e8948cefe9a625ce4077159">mShadowLinkings</a>[casterId]);</div>
+<div class="line"><span class="lineno">  123</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a1efe03f99e8948cefe9a625ce4077159">mShadowLinkings</a>[casterId]-&gt;addReceiver(receiverId);</div>
+<div class="line"><span class="lineno">  124</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_a1efe03f99e8948cefe9a625ce4077159"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a1efe03f99e8948cefe9a625ce4077159">moonray::geom::internal::NamedPrimitive::mShadowLinkings</a></div><div class="ttdeci">std::unordered_map&lt; int, ShadowLinking * &gt; mShadowLinkings</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00149">NamedPrimitive.h:149</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac33ddd2f0d5a1be7a1e3498693e374fe" name="ac33ddd2f0d5a1be7a1e3498693e374fe"></a>
@@ -435,7 +467,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8h_source.html#l00114">114</a> of file <a class="el" href="_named_primitive_8h_source.html">NamedPrimitive.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  115</span>    {</div>
+<div class="line"><span class="lineno">  116</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a1efe03f99e8948cefe9a625ce4077159">mShadowLinkings</a>[casterId]);</div>
+<div class="line"><span class="lineno">  117</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a1efe03f99e8948cefe9a625ce4077159">mShadowLinkings</a>[casterId]-&gt;addLight(light);</div>
+<div class="line"><span class="lineno">  118</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5db7b8595e7bbb7209d34f76cd680516" name="a5db7b8595e7bbb7209d34f76cd680516"></a>
@@ -473,7 +509,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8h_source.html#l00109">109</a> of file <a class="el" href="_named_primitive_8h_source.html">NamedPrimitive.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  110</span>    {</div>
+<div class="line"><span class="lineno">  111</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a1efe03f99e8948cefe9a625ce4077159">mShadowLinkings</a>[casterId] = <span class="keyword">new</span> ShadowLinking(complementReceiverSet);</div>
+<div class="line"><span class="lineno">  112</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad5b8644a92dcedda239e576044ba6ed2" name="ad5b8644a92dcedda239e576044ba6ed2"></a>
@@ -500,7 +539,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8h_source.html#l00097">97</a> of file <a class="el" href="_named_primitive_8h_source.html">NamedPrimitive.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   98</span>    {</div>
+<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>.get();</div>
+<div class="line"><span class="lineno">  100</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adcad361b92ad30a1f4c8307392d3169d" name="adcad361b92ad30a1f4c8307392d3169d"></a>
@@ -527,7 +569,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_box.html#a3c9b8f84592b898cadc96776e37fa242">moonray::geom::internal::Box</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a5e7891fd440d1bb7a820dbb33da781aa">moonray::geom::internal::Curves</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_points.html#a6381308677d15a4598145589dca1ee39">moonray::geom::internal::Points</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#ae0e84e612d4c62bd781cf849b6f84162">moonray::geom::internal::PolyMesh</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html#a16ce0439aaaf1893886f40de083ac8e0">moonray::geom::internal::Sphere</a>, and <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a6c5ab438478bd21192fbbaea9d8ad8b8">moonray::geom::internal::VdbVolume</a>.</p>
+<p>Implemented in <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_box.html#a3c9b8f84592b898cadc96776e37fa242">moonray::geom::internal::Box</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a5e7891fd440d1bb7a820dbb33da781aa">moonray::geom::internal::Curves</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_open_subdiv_mesh.html#aff8c3d905cabc060594a1e4565ef6396">moonray::geom::internal::OpenSubdivMesh</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_points.html#a6381308677d15a4598145589dca1ee39">moonray::geom::internal::Points</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#ae0e84e612d4c62bd781cf849b6f84162">moonray::geom::internal::PolyMesh</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html#a16ce0439aaaf1893886f40de083ac8e0">moonray::geom::internal::Sphere</a>, and <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a6c5ab438478bd21192fbbaea9d8ad8b8">moonray::geom::internal::VdbVolume</a>.</p>
 
 </div>
 </div>
@@ -561,7 +603,17 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented in <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html#a4e1ed537ae500a02ff21fdc78a9e1789">moonray::geom::internal::SubdMesh</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html#ae5d79cefd9d50adf4e51829cc32e2c18">moonray::geom::internal::AmorphousVolume</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_box.html#a2358697a9ad19e8512e16de3a370cac5">moonray::geom::internal::Box</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#ae20779e834e26720afcb916ac8dd3c7d">moonray::geom::internal::Curves</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a95f4a9e72db24bc5901f891499ff7bab">moonray::geom::internal::Mesh</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_open_subdiv_mesh.html#ad1c3798eed9e03d7aa05918e0dca9de7">moonray::geom::internal::OpenSubdivMesh</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_points.html#a3807633e64a7ad91bea09ea6a6fdfb96">moonray::geom::internal::Points</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#aefeb2e4f93fc2290d346c5ac12c0bd95">moonray::geom::internal::PolyMesh</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sphere.html#ab976eedfec4f552b2ae2af0b4ad86776">moonray::geom::internal::Sphere</a>, and <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a9414db6a50765146af48eb25b42d0d68">moonray::geom::internal::VdbVolume</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8h_source.html#l00060">60</a> of file <a class="el" href="_named_primitive_8h_source.html">NamedPrimitive.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   61</span>    {</div>
+<div class="line"><span class="lineno">   62</span>        <span class="keywordtype">size_t</span> mem = <span class="keyword">sizeof</span>(<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a3bde174b322df7ab4b6983ec8f0cc5d9">NamedPrimitive</a>) - <span class="keyword">sizeof</span>(<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a9f18ce4d60b7f2bf1a5cf45c7a7ae923">Primitive</a>) + <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a0e432bdd9dfabe175a9527c2a2eaf57c">Primitive::getMemory</a>();</div>
+<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>) {</div>
+<div class="line"><span class="lineno">   64</span>            mem += <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMemory();</div>
+<div class="line"><span class="lineno">   65</span>        }</div>
+<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">return</span> mem;</div>
+<div class="line"><span class="lineno">   67</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_a3bde174b322df7ab4b6983ec8f0cc5d9"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a3bde174b322df7ab4b6983ec8f0cc5d9">moonray::geom::internal::NamedPrimitive::NamedPrimitive</a></div><div class="ttdeci">NamedPrimitive(LayerAssignmentId &amp;&amp;layerAssignmentId)</div><div class="ttdoc">Constructor / Destructor.</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00034">NamedPrimitive.h:34</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html_a0e432bdd9dfabe175a9527c2a2eaf57c"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a0e432bdd9dfabe175a9527c2a2eaf57c">moonray::geom::internal::Primitive::getMemory</a></div><div class="ttdeci">virtual size_t getMemory() const</div><div class="ttdoc">Get the memory usage of this Primitive in byte.</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8cc_source.html#l00024">Primitive.cc:24</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html_a9f18ce4d60b7f2bf1a5cf45c7a7ae923"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a9f18ce4d60b7f2bf1a5cf45c7a7ae923">moonray::geom::internal::Primitive::Primitive</a></div><div class="ttdeci">Primitive()</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8h_source.html#l00101">Primitive.h:101</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aac4b291c9b3f21021c725213606c1494" name="aac4b291c9b3f21021c725213606c1494"></a>
@@ -588,7 +640,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8h_source.html#l00055">55</a> of file <a class="el" href="_named_primitive_8h_source.html">NamedPrimitive.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   56</span>    {</div>
+<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a8e337493c8498bc0e07a90fd5fd69eff">mName</a>;</div>
+<div class="line"><span class="lineno">   58</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_a8e337493c8498bc0e07a90fd5fd69eff"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a8e337493c8498bc0e07a90fd5fd69eff">moonray::geom::internal::NamedPrimitive::mName</a></div><div class="ttdeci">std::string mName</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00147">NamedPrimitive.h:147</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8a53bbd7fcc94e0ce30eb5780629d064" name="a8a53bbd7fcc94e0ce30eb5780629d064"></a>
@@ -616,7 +672,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8h_source.html#l00126">126</a> of file <a class="el" href="_named_primitive_8h_source.html">NamedPrimitive.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  127</span>    {</div>
+<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a1efe03f99e8948cefe9a625ce4077159">mShadowLinkings</a>.at(casterId);</div>
+<div class="line"><span class="lineno">  129</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a153fe91b6de2da80febc807e1bd8186d" name="a153fe91b6de2da80febc807e1bd8186d"></a>
@@ -643,7 +702,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8h_source.html#l00136">136</a> of file <a class="el" href="_named_primitive_8h_source.html">NamedPrimitive.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  137</span>    {</div>
+<div class="line"><span class="lineno">  138</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a1efe03f99e8948cefe9a625ce4077159">mShadowLinkings</a>;</div>
+<div class="line"><span class="lineno">  139</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a42e8f3d3d3f52f8adc8de241db6142c0" name="a42e8f3d3d3f52f8adc8de241db6142c0"></a>
@@ -663,7 +725,21 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8cc_source.html#l00154">154</a> of file <a class="el" href="_named_primitive_8cc_source.html">NamedPrimitive.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  156</span>{</div>
+<div class="line"><span class="lineno">  157</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0b2d21ef3df121422a79526b079c580e">getType</a>() == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">LayerAssignmentId::Type::CONSTANT</a>) {</div>
+<div class="line"><span class="lineno">  158</span>        uniqueAssignmentIds.insert(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a7029086f3349b566ea752fd6f4a85d31">getConstId</a>());</div>
+<div class="line"><span class="lineno">  159</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  160</span>        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; assignmentIds = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0e7e74cdce226e48699f4d43b79c1fd1">getVaryingId</a>();</div>
+<div class="line"><span class="lineno">  161</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keywordtype">id</span> : assignmentIds) {</div>
+<div class="line"><span class="lineno">  162</span>            uniqueAssignmentIds.insert(<span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">  163</span>        }</div>
+<div class="line"><span class="lineno">  164</span>    }</div>
+<div class="line"><span class="lineno">  165</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a0b2d21ef3df121422a79526b079c580e"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0b2d21ef3df121422a79526b079c580e">moonray::geom::LayerAssignmentId::getType</a></div><div class="ttdeci">Type getType() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00155">LayerAssignmentId.h:155</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a0e7e74cdce226e48699f4d43b79c1fd1"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0e7e74cdce226e48699f4d43b79c1fd1">moonray::geom::LayerAssignmentId::getVaryingId</a></div><div class="ttdeci">const ContainerType &amp; getVaryingId() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00166">LayerAssignmentId.h:166</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a7029086f3349b566ea752fd6f4a85d31"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a7029086f3349b566ea752fd6f4a85d31">moonray::geom::LayerAssignmentId::getConstId</a></div><div class="ttdeci">ValueType getConstId() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00160">LayerAssignmentId.h:160</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">moonray::geom::LayerAssignmentId::Type::CONSTANT</a></div><div class="ttdeci">@ CONSTANT</div><div class="ttdoc">all sub-primitives share one assignment id</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afa216ecd540709db84fc339e671692de" name="afa216ecd540709db84fc339e671692de"></a>
@@ -693,7 +769,20 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#ac252ee00b4b6d9db16c29c22e3a5fd8b">moonray::geom::internal::Primitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8cc_source.html#l00029">29</a> of file <a class="el" href="_named_primitive_8cc_source.html">NamedPrimitive.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   30</span>{</div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0b2d21ef3df121422a79526b079c580e">getType</a>() == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">LayerAssignmentId::Type::CONSTANT</a>) {</div>
+<div class="line"><span class="lineno">   32</span>        <span class="keywordflow">return</span> assignmentId == <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a7029086f3349b566ea752fd6f4a85d31">getConstId</a>();</div>
+<div class="line"><span class="lineno">   33</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   34</span>        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; assignmentIds = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0e7e74cdce226e48699f4d43b79c1fd1">getVaryingId</a>();</div>
+<div class="line"><span class="lineno">   35</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keywordtype">id</span> : assignmentIds) {</div>
+<div class="line"><span class="lineno">   36</span>            <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == assignmentId) {</div>
+<div class="line"><span class="lineno">   37</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   38</span>            }</div>
+<div class="line"><span class="lineno">   39</span>        }</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   41</span>    }</div>
+<div class="line"><span class="lineno">   42</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1f39fb051f1528aeb25ec00b3a25b4d9" name="a1f39fb051f1528aeb25ec00b3a25b4d9"></a>
@@ -723,7 +812,12 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented in <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_open_subdiv_mesh.html#adff7dfaac76a36205ac1797719cb79e1">moonray::geom::internal::OpenSubdivMesh</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8h_source.html#l00072">72</a> of file <a class="el" href="_named_primitive_8h_source.html">NamedPrimitive.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   73</span>    {</div>
+<div class="line"><span class="lineno">   74</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#ad5b8644a92dcedda239e576044ba6ed2">getAttributes</a>()-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_attributes.html#ac39af4761397f87c0bbc129f767693e1">hasAttribute</a>(key);</div>
+<div class="line"><span class="lineno">   75</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_ad5b8644a92dcedda239e576044ba6ed2"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#ad5b8644a92dcedda239e576044ba6ed2">moonray::geom::internal::NamedPrimitive::getAttributes</a></div><div class="ttdeci">shading::Attributes * getAttributes() const</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00097">NamedPrimitive.h:97</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attributes_html_ac39af4761397f87c0bbc129f767693e1"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attributes.html#ac39af4761397f87c0bbc129f767693e1">moonray::shading::Attributes::hasAttribute</a></div><div class="ttdeci">finline bool hasAttribute(AttributeKey key) const</div><div class="ttdef"><b>Definition:</b> <a href="_attributes_8h_source.html#l00327">Attributes.h:327</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a895a5deba1af68b1853903f28efc3dcd" name="a895a5deba1af68b1853903f28efc3dcd"></a>
@@ -743,7 +837,28 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8cc_source.html#l00045">45</a> of file <a class="el" href="_named_primitive_8cc_source.html">NamedPrimitive.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   46</span>{</div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0b2d21ef3df121422a79526b079c580e">getType</a>() == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">LayerAssignmentId::Type::CONSTANT</a>) {</div>
+<div class="line"><span class="lineno">   48</span>        <span class="keywordtype">int</span> assignmentId = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a7029086f3349b566ea752fd6f4a85d31">getConstId</a>();</div>
+<div class="line"><span class="lineno">   49</span>        <span class="keywordflow">if</span> (assignmentId == -1) {</div>
+<div class="line"><span class="lineno">   50</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   51</span>        }</div>
+<div class="line"><span class="lineno">   52</span>        <span class="keywordflow">return</span> (layer-&gt;lookupDisplacement(assignmentId) != <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">   53</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   54</span>        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; assignmentIds = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0e7e74cdce226e48699f4d43b79c1fd1">getVaryingId</a>();</div>
+<div class="line"><span class="lineno">   55</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keywordtype">id</span> : assignmentIds) {</div>
+<div class="line"><span class="lineno">   56</span>            <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == -1) {</div>
+<div class="line"><span class="lineno">   57</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">   58</span>            }</div>
+<div class="line"><span class="lineno">   59</span>            <span class="keywordflow">if</span> (layer-&gt;lookupDisplacement(<span class="keywordtype">id</span>) != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">   60</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   61</span>            }</div>
+<div class="line"><span class="lineno">   62</span>        }</div>
+<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   64</span>    }</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0f1da636e4578ab9cdd3823fe27e591a" name="a0f1da636e4578ab9cdd3823fe27e591a"></a>
@@ -763,7 +878,22 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8cc_source.html#l00137">137</a> of file <a class="el" href="_named_primitive_8cc_source.html">NamedPrimitive.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  138</span>{</div>
+<div class="line"><span class="lineno">  139</span>    std::unordered_set&lt;int&gt; casterIds;</div>
+<div class="line"><span class="lineno">  140</span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a42e8f3d3d3f52f8adc8de241db6142c0">getUniqueAssignmentIds</a>(casterIds);</div>
+<div class="line"><span class="lineno">  141</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> casterId : casterIds) {</div>
+<div class="line"><span class="lineno">  142</span>        <span class="keywordflow">if</span> (casterId &lt; 0) {</div>
+<div class="line"><span class="lineno">  143</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  144</span>        }</div>
+<div class="line"><span class="lineno">  145</span>        <span class="keyword">const</span> scene_rdl2::rdl2::ShadowSet* shadowSet = layer-&gt;lookupShadowSet(casterId);</div>
+<div class="line"><span class="lineno">  146</span>        <span class="keywordflow">if</span> (shadowSet) {</div>
+<div class="line"><span class="lineno">  147</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  148</span>        }</div>
+<div class="line"><span class="lineno">  149</span>    }</div>
+<div class="line"><span class="lineno">  150</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  151</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_a42e8f3d3d3f52f8adc8de241db6142c0"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a42e8f3d3d3f52f8adc8de241db6142c0">moonray::geom::internal::NamedPrimitive::getUniqueAssignmentIds</a></div><div class="ttdeci">void getUniqueAssignmentIds(std::unordered_set&lt; int &gt; &amp;uniqueAssignmentIds) const</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8cc_source.html#l00154">NamedPrimitive.cc:154</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad4a6a1bc2aaa67c94511ba85d364dd1b" name="ad4a6a1bc2aaa67c94511ba85d364dd1b"></a>
@@ -791,7 +921,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8h_source.html#l00131">131</a> of file <a class="el" href="_named_primitive_8h_source.html">NamedPrimitive.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  132</span>    {</div>
+<div class="line"><span class="lineno">  133</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a1efe03f99e8948cefe9a625ce4077159">mShadowLinkings</a>.find(casterId) != <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a1efe03f99e8948cefe9a625ce4077159">mShadowLinkings</a>.end();</div>
+<div class="line"><span class="lineno">  134</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0c92d88b8baa2a6143e539b2de235e0a" name="a0c92d88b8baa2a6143e539b2de235e0a"></a>
@@ -811,7 +944,29 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8cc_source.html#l00069">69</a> of file <a class="el" href="_named_primitive_8cc_source.html">NamedPrimitive.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   70</span>{</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0b2d21ef3df121422a79526b079c580e">getType</a>() == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">LayerAssignmentId::Type::CONSTANT</a>) {</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordtype">int</span> assignmentId = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a7029086f3349b566ea752fd6f4a85d31">getConstId</a>();</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">if</span> (assignmentId == -1) {</div>
+<div class="line"><span class="lineno">   74</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   75</span>        }</div>
+<div class="line"><span class="lineno">   76</span>        <span class="keyword">const</span> scene_rdl2::rdl2::Material* material = layer-&gt;lookupMaterial(assignmentId);</div>
+<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">return</span> (material != <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">   78</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; assignmentIds = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0e7e74cdce226e48699f4d43b79c1fd1">getVaryingId</a>();</div>
+<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keywordtype">id</span> : assignmentIds) {</div>
+<div class="line"><span class="lineno">   81</span>            <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == -1) {</div>
+<div class="line"><span class="lineno">   82</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">   83</span>            }</div>
+<div class="line"><span class="lineno">   84</span>            <span class="keyword">const</span> scene_rdl2::rdl2::Material* material = layer-&gt;lookupMaterial(<span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">   85</span>            <span class="keywordflow">if</span> (material != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">   86</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   87</span>            }</div>
+<div class="line"><span class="lineno">   88</span>        }</div>
+<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   90</span>    }</div>
+<div class="line"><span class="lineno">   91</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3c1c77bc9a73da36cb3aafa84a027445" name="a3c1c77bc9a73da36cb3aafa84a027445"></a>
@@ -831,7 +986,27 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8cc_source.html#l00094">94</a> of file <a class="el" href="_named_primitive_8cc_source.html">NamedPrimitive.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   95</span>{</div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0b2d21ef3df121422a79526b079c580e">getType</a>() == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">LayerAssignmentId::Type::CONSTANT</a>) {</div>
+<div class="line"><span class="lineno">   97</span>        <span class="keywordtype">int</span> assignmentId = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a7029086f3349b566ea752fd6f4a85d31">getConstId</a>();</div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">if</span> (assignmentId == -1) {</div>
+<div class="line"><span class="lineno">   99</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  100</span>        }</div>
+<div class="line"><span class="lineno">  101</span>        <span class="keywordflow">return</span> (layer-&gt;lookupVolumeShader(assignmentId) != <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  102</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  103</span>        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; assignmentIds = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0e7e74cdce226e48699f4d43b79c1fd1">getVaryingId</a>();</div>
+<div class="line"><span class="lineno">  104</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keywordtype">id</span> : assignmentIds) {</div>
+<div class="line"><span class="lineno">  105</span>            <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == -1) {</div>
+<div class="line"><span class="lineno">  106</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  107</span>            }</div>
+<div class="line"><span class="lineno">  108</span>            <span class="keywordflow">if</span> (layer-&gt;lookupVolumeShader(<span class="keywordtype">id</span>) != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  109</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  110</span>            }</div>
+<div class="line"><span class="lineno">  111</span>        }</div>
+<div class="line"><span class="lineno">  112</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  113</span>    }</div>
+<div class="line"><span class="lineno">  114</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a53686c7e94df9e62c2f7513c3b287c64" name="a53686c7e94df9e62c2f7513c3b287c64"></a>
@@ -897,7 +1072,16 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented in <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a1f55601e08ff8c3c691fa3f893d75316">moonray::geom::internal::VdbVolume</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8cc_source.html#l00016">16</a> of file <a class="el" href="_named_primitive_8cc_source.html">NamedPrimitive.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   20</span>{</div>
+<div class="line"><span class="lineno">   21</span>    <span class="comment">// if we have an instance feature id for this volume id, use it</span></div>
+<div class="line"><span class="lineno">   22</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> featureSize = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a69770bec9542315bf1dfa5d8585762a0">getInstanceFeatureSize</a>(volumeId);</div>
+<div class="line"><span class="lineno">   23</span>    info-&gt;initialize(<span class="keyword">this</span>, volumeShader, rayOrg, rayDir, featureSize,</div>
+<div class="line"><span class="lineno">   24</span>        (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a819c30e910f56a35a298b9a158464b4b">mRdlGeometry</a>-&gt;getVisibilityMask() &amp; scene_rdl2::rdl2::SHADOW) != 0,</div>
+<div class="line"><span class="lineno">   25</span>        <span class="comment">/* isVDB = */</span> <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   26</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html_a69770bec9542315bf1dfa5d8585762a0"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a69770bec9542315bf1dfa5d8585762a0">moonray::geom::internal::Primitive::getInstanceFeatureSize</a></div><div class="ttdeci">float getInstanceFeatureSize(int volumeId) const</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8h_source.html#l00278">Primitive.h:278</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html_a819c30e910f56a35a298b9a158464b4b"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a819c30e910f56a35a298b9a158464b4b">moonray::geom::internal::Primitive::mRdlGeometry</a></div><div class="ttdeci">const scene_rdl2::rdl2::Geometry * mRdlGeometry</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8h_source.html#l00357">Primitive.h:357</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abac9f6ddbe92d3a551420ca3c0aadcf6" name="abac9f6ddbe92d3a551420ca3c0aadcf6"></a>
@@ -968,7 +1152,24 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8cc_source.html#l00117">117</a> of file <a class="el" href="_named_primitive_8cc_source.html">NamedPrimitive.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  118</span>{</div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a1efe03f99e8948cefe9a625ce4077159">mShadowLinkings</a>.begin(); it != <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a1efe03f99e8948cefe9a625ce4077159">mShadowLinkings</a>.end(); ++it) {</div>
+<div class="line"><span class="lineno">  120</span>        <span class="keywordflow">if</span> (it-&gt;second != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  121</span>            <span class="keyword">delete</span> it-&gt;second;</div>
+<div class="line"><span class="lineno">  122</span>            it-&gt;second = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  123</span>        }</div>
+<div class="line"><span class="lineno">  124</span>    }</div>
+<div class="line"><span class="lineno">  125</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a1efe03f99e8948cefe9a625ce4077159">mShadowLinkings</a>.clear();</div>
+<div class="line"><span class="lineno">  126</span>    std::unordered_set&lt;int&gt; casterIds;</div>
+<div class="line"><span class="lineno">  127</span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a42e8f3d3d3f52f8adc8de241db6142c0">getUniqueAssignmentIds</a>(casterIds);</div>
+<div class="line"><span class="lineno">  128</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> casterId : casterIds) {</div>
+<div class="line"><span class="lineno">  129</span>        <span class="keywordflow">if</span> (casterId &lt; 0) {</div>
+<div class="line"><span class="lineno">  130</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  131</span>        }</div>
+<div class="line"><span class="lineno">  132</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a1efe03f99e8948cefe9a625ce4077159">mShadowLinkings</a>[casterId] = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  133</span>    }</div>
+<div class="line"><span class="lineno">  134</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab3751638c668e22d04bbc71bf2cf8585" name="ab3751638c668e22d04bbc71bf2cf8585"></a>
@@ -996,7 +1197,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8h_source.html#l00102">102</a> of file <a class="el" href="_named_primitive_8h_source.html">NamedPrimitive.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  103</span>    {</div>
+<div class="line"><span class="lineno">  104</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a> = std::move(attributes);</div>
+<div class="line"><span class="lineno">  105</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6d26269ad540ab6ad4315421d18f1458" name="a6d26269ad540ab6ad4315421d18f1458"></a>
@@ -1026,7 +1230,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Modify / Access the state associated with this primitive. </p>
 
 <p class="definition">Definition at line <a class="el" href="_named_primitive_8h_source.html#l00050">50</a> of file <a class="el" href="_named_primitive_8h_source.html">NamedPrimitive.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   51</span>    {</div>
+<div class="line"><span class="lineno">   52</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a8e337493c8498bc0e07a90fd5fd69eff">mName</a> = <a class="code hl_variable" href="namespacepackage.html#a781101519999e91f2fc32335a8969fc2">name</a>;</div>
+<div class="line"><span class="lineno">   53</span>    }</div>
+<div class="ttc" id="anamespacepackage_html_a781101519999e91f2fc32335a8969fc2"><div class="ttname"><a href="namespacepackage.html#a781101519999e91f2fc32335a8969fc2">package.name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> <a href="package_8py_source.html#l00007">package.py:7</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1131,9 +1339,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/geom/prim/<a class="el" href="_named_primitive_8cc_source.html">NamedPrimitive.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html">NamedPrimitive</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

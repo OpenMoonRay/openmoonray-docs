@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,30 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_6980d87992044b0cad36d4edf582ac03.html">common</a></li><li class="navelem"><a class="el" href="dir_f09188fccba6e1a5150d42534f4f9ba7.html">mcrt_util</a></li><li class="navelem"><a class="el" href="dir_5d76758dfd2a407b849076a539e2f504.html">unittest</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('test__wait_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">test_wait.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -60,10 +80,196 @@ $(function() {
 </div>
 <p><a href="test__wait_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02test__wait_8cc_03_1_1_non_scalar.html">anonymous_namespace{test_wait.cc}::NonScalar</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads_helper_3_01_t_00_01false_01_4.html">anonymous_namespace{test_wait.cc}::MaxThreadsHelper&lt; T, false &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads_helper_3_01_t_00_01true_01_4.html">anonymous_namespace{test_wait.cc}::MaxThreadsHelper&lt; T, true &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads.html">anonymous_namespace{test_wait.cc}::MaxThreads&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads_3_01float_01_4.html">anonymous_namespace{test_wait.cc}::MaxThreads&lt; float &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads_3_01_non_scalar_01_4.html">anonymous_namespace{test_wait.cc}::MaxThreads&lt; NonScalar &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02test__wait_8cc_03_1_1_increment_helper_3_01false_01_4.html">anonymous_namespace{test_wait.cc}::IncrementHelper&lt; false &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02test__wait_8cc_03_1_1_increment_helper_3_01true_01_4.html">anonymous_namespace{test_wait.cc}::IncrementHelper&lt; true &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceanonymous__namespace_02test__wait_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html">anonymous_namespace{test_wait.cc}</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:acc2c7b1f47ee5b3360d36f14360928c9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9">anonymous_namespace{test_wait.cc}::Enum1</a> { <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9a96325e718bb3e10a87b8fc96a6270047">anonymous_namespace{test_wait.cc}::ALPHA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9a1f00cbaafea1c972fdf73a4d30628432">anonymous_namespace{test_wait.cc}::BETA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9a3454ffae58feb9a4bcbe1560d386e2c3">anonymous_namespace{test_wait.cc}::GAMMA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9a36b612030b7bdc54188cab1bae5fa068">anonymous_namespace{test_wait.cc}::DELTA</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9a9e2fd1899d6fcf87c89eefdf473806f4">anonymous_namespace{test_wait.cc}::EPSILON</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9a4b9737b0d432197066b09343d4ea49c9">anonymous_namespace{test_wait.cc}::ZETA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9a5f6b78e83fac2e27e4d702199887c74e">anonymous_namespace{test_wait.cc}::ETA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9a2b777f09b9e14d3ec2cb5651478b0d17">anonymous_namespace{test_wait.cc}::THETA</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9a61b9efd6b5e536318dfa36ed60c79db1">anonymous_namespace{test_wait.cc}::IOTA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9a1e71746bfaeff25a7f72111690dc65b8">anonymous_namespace{test_wait.cc}::KAPPA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9a842af3f2fc9a0ab19be291cb648210a1">anonymous_namespace{test_wait.cc}::LAMBDA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9a1018dd7f7c6cbecbdc4740ab0401ad7d">anonymous_namespace{test_wait.cc}::MU</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9af82211efc17d9845576b984d5b936a89">anonymous_namespace{test_wait.cc}::NU</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9a67c02d9606595f50147d5795166b78e7">anonymous_namespace{test_wait.cc}::XI</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9af086fc4b3e3777d5ce8af9e59b9e754f">anonymous_namespace{test_wait.cc}::OMICRON</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9a8afd333d1662c8245e1125b398e5ce85">anonymous_namespace{test_wait.cc}::PI</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#acc2c7b1f47ee5b3360d36f14360928c9a7b3d5ad9f3d9d11ce5494aba0a750636">anonymous_namespace{test_wait.cc}::NUM_VALUES</a>
+<br />
+ }</td></tr>
+<tr class="separator:acc2c7b1f47ee5b3360d36f14360928c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330d7978429a6183e06a718ab866e6f6"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6">anonymous_namespace{test_wait.cc}::Enum2</a> : std::uint8_t { <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6a002101f8725e5c78d9f30d87f3fa4c87">anonymous_namespace{test_wait.cc}::ALPHA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6a36b84f8e3fba5bf993e3ba352d62d146">anonymous_namespace{test_wait.cc}::BETA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6a469bb22a9f1f560331b06cd6ef0da944">anonymous_namespace{test_wait.cc}::GAMMA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6aa789408ec4ddae81bd2f72ad5ec6bf3b">anonymous_namespace{test_wait.cc}::DELTA</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6a48d3e3d06977ae5b32d170485108630a">anonymous_namespace{test_wait.cc}::EPSILON</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6a50c26816bdd3bb2a02def8e11a5cd5a3">anonymous_namespace{test_wait.cc}::ZETA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6a5e567bf650640c58e9455ad2eb4b05bc">anonymous_namespace{test_wait.cc}::ETA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6a9b450ec4004f161c8681fbd7a7bb890a">anonymous_namespace{test_wait.cc}::THETA</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6acf48de754f3c78f9f785b889369e7794">anonymous_namespace{test_wait.cc}::IOTA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6a55b8000cc76d015e79c6faf29593a5b6">anonymous_namespace{test_wait.cc}::KAPPA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6a64cd1dd4b2628444bae372942cc36e91">anonymous_namespace{test_wait.cc}::LAMBDA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6ae5919ba9cf2e803bdbc98334a7f64daa">anonymous_namespace{test_wait.cc}::MU</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6a9393cb701efd9874f38be79bca77cfb9">anonymous_namespace{test_wait.cc}::NU</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6a1d5f160217ce219beab02b9a8ee9e52c">anonymous_namespace{test_wait.cc}::XI</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6aa69a86ecd19acd93fe2a7a0e83533dcb">anonymous_namespace{test_wait.cc}::OMICRON</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6a3a372b04b95323b72c2b2f9a5d24e67b">anonymous_namespace{test_wait.cc}::PI</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a330d7978429a6183e06a718ab866e6f6a5d3bda6e830ebb4dcd727a41dcafc842">anonymous_namespace{test_wait.cc}::NUM_VALUES</a>
+<br />
+ }</td></tr>
+<tr class="separator:a330d7978429a6183e06a718ab866e6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a8f1b1e3bcc244eec72be0b940b4f7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7">anonymous_namespace{test_wait.cc}::Enum3</a> : std::uint32_t { <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7a002101f8725e5c78d9f30d87f3fa4c87">anonymous_namespace{test_wait.cc}::ALPHA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7a36b84f8e3fba5bf993e3ba352d62d146">anonymous_namespace{test_wait.cc}::BETA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7a469bb22a9f1f560331b06cd6ef0da944">anonymous_namespace{test_wait.cc}::GAMMA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7aa789408ec4ddae81bd2f72ad5ec6bf3b">anonymous_namespace{test_wait.cc}::DELTA</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7a48d3e3d06977ae5b32d170485108630a">anonymous_namespace{test_wait.cc}::EPSILON</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7a50c26816bdd3bb2a02def8e11a5cd5a3">anonymous_namespace{test_wait.cc}::ZETA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7a5e567bf650640c58e9455ad2eb4b05bc">anonymous_namespace{test_wait.cc}::ETA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7a9b450ec4004f161c8681fbd7a7bb890a">anonymous_namespace{test_wait.cc}::THETA</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7acf48de754f3c78f9f785b889369e7794">anonymous_namespace{test_wait.cc}::IOTA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7a55b8000cc76d015e79c6faf29593a5b6">anonymous_namespace{test_wait.cc}::KAPPA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7a64cd1dd4b2628444bae372942cc36e91">anonymous_namespace{test_wait.cc}::LAMBDA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7ae5919ba9cf2e803bdbc98334a7f64daa">anonymous_namespace{test_wait.cc}::MU</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7a9393cb701efd9874f38be79bca77cfb9">anonymous_namespace{test_wait.cc}::NU</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7a1d5f160217ce219beab02b9a8ee9e52c">anonymous_namespace{test_wait.cc}::XI</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7aa69a86ecd19acd93fe2a7a0e83533dcb">anonymous_namespace{test_wait.cc}::OMICRON</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7a3a372b04b95323b72c2b2f9a5d24e67b">anonymous_namespace{test_wait.cc}::PI</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af2a8f1b1e3bcc244eec72be0b940b4f7a5d3bda6e830ebb4dcd727a41dcafc842">anonymous_namespace{test_wait.cc}::NUM_VALUES</a>
+<br />
+ }</td></tr>
+<tr class="separator:af2a8f1b1e3bcc244eec72be0b940b4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62144f9d4472a131c48f0d090094654e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654e">anonymous_namespace{test_wait.cc}::Enum4</a> : std::uint64_t { <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654ea002101f8725e5c78d9f30d87f3fa4c87">anonymous_namespace{test_wait.cc}::ALPHA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654ea36b84f8e3fba5bf993e3ba352d62d146">anonymous_namespace{test_wait.cc}::BETA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654ea469bb22a9f1f560331b06cd6ef0da944">anonymous_namespace{test_wait.cc}::GAMMA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654eaa789408ec4ddae81bd2f72ad5ec6bf3b">anonymous_namespace{test_wait.cc}::DELTA</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654ea48d3e3d06977ae5b32d170485108630a">anonymous_namespace{test_wait.cc}::EPSILON</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654ea50c26816bdd3bb2a02def8e11a5cd5a3">anonymous_namespace{test_wait.cc}::ZETA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654ea5e567bf650640c58e9455ad2eb4b05bc">anonymous_namespace{test_wait.cc}::ETA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654ea9b450ec4004f161c8681fbd7a7bb890a">anonymous_namespace{test_wait.cc}::THETA</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654eacf48de754f3c78f9f785b889369e7794">anonymous_namespace{test_wait.cc}::IOTA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654ea55b8000cc76d015e79c6faf29593a5b6">anonymous_namespace{test_wait.cc}::KAPPA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654ea64cd1dd4b2628444bae372942cc36e91">anonymous_namespace{test_wait.cc}::LAMBDA</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654eae5919ba9cf2e803bdbc98334a7f64daa">anonymous_namespace{test_wait.cc}::MU</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654ea9393cb701efd9874f38be79bca77cfb9">anonymous_namespace{test_wait.cc}::NU</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654ea1d5f160217ce219beab02b9a8ee9e52c">anonymous_namespace{test_wait.cc}::XI</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654eaa69a86ecd19acd93fe2a7a0e83533dcb">anonymous_namespace{test_wait.cc}::OMICRON</a>
+, <a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654ea3a372b04b95323b72c2b2f9a5d24e67b">anonymous_namespace{test_wait.cc}::PI</a>
+, <br />
+&#160;&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a62144f9d4472a131c48f0d090094654ea5d3bda6e830ebb4dcd727a41dcafc842">anonymous_namespace{test_wait.cc}::NUM_VALUES</a>
+<br />
+ }</td></tr>
+<tr class="separator:a62144f9d4472a131c48f0d090094654e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8cbdad717bf1d41126f98c643844d107"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__wait_8cc.html#a8cbdad717bf1d41126f98c643844d107">CPPUNIT_TEST_SUITE_REGISTRATION</a> (<a class="el" href="class_test_wait.html">TestWait</a>)</td></tr>
 <tr class="separator:a8cbdad717bf1d41126f98c643844d107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae22bffc8642c2da88219c73e82b675bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#ae22bffc8642c2da88219c73e82b675bb">anonymous_namespace{test_wait.cc}::operator==</a> (const NonScalar &amp;a, const NonScalar &amp;b) noexcept</td></tr>
+<tr class="separator:ae22bffc8642c2da88219c73e82b675bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b1f8e9ad0302e53d7ade06ac5f5dee2"><td class="memItemLeft" align="right" valign="top">NonScalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a2b1f8e9ad0302e53d7ade06ac5f5dee2">anonymous_namespace{test_wait.cc}::operator+</a> (const NonScalar &amp;a, const NonScalar &amp;b) noexcept</td></tr>
+<tr class="separator:a2b1f8e9ad0302e53d7ade06ac5f5dee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99711d253a856ff53310b14a6300581"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#aa99711d253a856ff53310b14a6300581">anonymous_namespace{test_wait.cc}::operator&lt;&lt;</a> (std::ostream &amp;outs, const NonScalar &amp;a) noexcept</td></tr>
+<tr class="separator:aa99711d253a856ff53310b14a6300581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4145cec7a228d785957484423ade7f09"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a4145cec7a228d785957484423ade7f09">anonymous_namespace{test_wait.cc}::operator&lt;&lt;</a> (std::ostream &amp;outs, Enum1 e)</td></tr>
+<tr class="separator:a4145cec7a228d785957484423ade7f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45515dd3e719c3d0addb1a9a6128e29f"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a45515dd3e719c3d0addb1a9a6128e29f">anonymous_namespace{test_wait.cc}::operator&lt;&lt;</a> (std::ostream &amp;outs, Enum2 e)</td></tr>
+<tr class="separator:a45515dd3e719c3d0addb1a9a6128e29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37178c94db6b0842cfaedd84e688c948"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a37178c94db6b0842cfaedd84e688c948">anonymous_namespace{test_wait.cc}::operator&lt;&lt;</a> (std::ostream &amp;outs, Enum3 e)</td></tr>
+<tr class="separator:a37178c94db6b0842cfaedd84e688c948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab062a47e730e30171fc644b5b713f225"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#ab062a47e730e30171fc644b5b713f225">anonymous_namespace{test_wait.cc}::operator&lt;&lt;</a> (std::ostream &amp;outs, Enum4 e)</td></tr>
+<tr class="separator:ab062a47e730e30171fc644b5b713f225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae27d72fed40632320f70922b625b74d0"><td class="memTemplParams" colspan="2">template&lt;typename Enum &gt; </td></tr>
+<tr class="memitem:ae27d72fed40632320f70922b625b74d0"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::underlying_type_t&lt; Enum &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#ae27d72fed40632320f70922b625b74d0">anonymous_namespace{test_wait.cc}::to_underlying</a> (Enum e) noexcept</td></tr>
+<tr class="separator:ae27d72fed40632320f70922b625b74d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b25d2e274a883266dbaeeef16a9c97"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a21b25d2e274a883266dbaeeef16a9c97"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a21b25d2e274a883266dbaeeef16a9c97">anonymous_namespace{test_wait.cc}::zero</a> (static_cast&lt; T &gt;(0))</td></tr>
+<tr class="separator:a21b25d2e274a883266dbaeeef16a9c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a608a1b33b2e05e509ebaa7e2dc53d746"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a608a1b33b2e05e509ebaa7e2dc53d746"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a608a1b33b2e05e509ebaa7e2dc53d746">anonymous_namespace{test_wait.cc}::one</a> (static_cast&lt; T &gt;(1))</td></tr>
+<tr class="separator:a608a1b33b2e05e509ebaa7e2dc53d746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2817c5194070844a501a30f9976a961"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad2817c5194070844a501a30f9976a961"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#ad2817c5194070844a501a30f9976a961">anonymous_namespace{test_wait.cc}::two</a> (static_cast&lt; T &gt;(2))</td></tr>
+<tr class="separator:ad2817c5194070844a501a30f9976a961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad457eb6a797777624460caa675a7b6b2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad457eb6a797777624460caa675a7b6b2"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#ad457eb6a797777624460caa675a7b6b2">anonymous_namespace{test_wait.cc}::increment</a> (T a) noexcept</td></tr>
+<tr class="separator:ad457eb6a797777624460caa675a7b6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88893d0b9d8abcc74e1123580b38bcbf"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a88893d0b9d8abcc74e1123580b38bcbf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a88893d0b9d8abcc74e1123580b38bcbf">anonymous_namespace{test_wait.cc}::atomic_increment</a> (std::atomic&lt; T &gt; &amp;a) noexcept</td></tr>
+<tr class="separator:a88893d0b9d8abcc74e1123580b38bcbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93076ab7f4ff87099a99b089c49b2885"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a93076ab7f4ff87099a99b089c49b2885"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a93076ab7f4ff87099a99b089c49b2885">anonymous_namespace{test_wait.cc}::notifyOneThread</a> (std::atomic&lt; T &gt; &amp;a, std::atomic&lt; bool &gt; &amp;ready)</td></tr>
+<tr class="separator:a93076ab7f4ff87099a99b089c49b2885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48bcc4f512ef2f8867b2d2876ba8f4fb"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a48bcc4f512ef2f8867b2d2876ba8f4fb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a48bcc4f512ef2f8867b2d2876ba8f4fb">anonymous_namespace{test_wait.cc}::doTestNotifyOne</a> ()</td></tr>
+<tr class="separator:a48bcc4f512ef2f8867b2d2876ba8f4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2de2dc4cbc0816aed6038ea5d021eaa9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2de2dc4cbc0816aed6038ea5d021eaa9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a2de2dc4cbc0816aed6038ea5d021eaa9">anonymous_namespace{test_wait.cc}::notifyAllThreads</a> (std::atomic&lt; T &gt; &amp;a, std::atomic&lt; int &gt; &amp;launchCount)</td></tr>
+<tr class="separator:a2de2dc4cbc0816aed6038ea5d021eaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49dee2d26155857799154ace5696c74"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af49dee2d26155857799154ace5696c74"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#af49dee2d26155857799154ace5696c74">anonymous_namespace{test_wait.cc}::getNumThreads</a> ()</td></tr>
+<tr class="separator:af49dee2d26155857799154ace5696c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d51a9b899dda0e8bfcc472b03ec3695"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9d51a9b899dda0e8bfcc472b03ec3695"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a9d51a9b899dda0e8bfcc472b03ec3695">anonymous_namespace{test_wait.cc}::doTestNotifyAll</a> ()</td></tr>
+<tr class="separator:a9d51a9b899dda0e8bfcc472b03ec3695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a0b43487152a9a63ae836a3143a64e440"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a0b43487152a9a63ae836a3143a64e440"><td class="memTemplItemLeft" align="right" valign="top">constexpr NonScalar&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a0b43487152a9a63ae836a3143a64e440">anonymous_namespace{test_wait.cc}::zero&lt; NonScalar &gt;</a> { 0.0f, 0.0f }</td></tr>
+<tr class="separator:a0b43487152a9a63ae836a3143a64e440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed8ac2b04a1cff57abf5f53e469d0d12"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:aed8ac2b04a1cff57abf5f53e469d0d12"><td class="memTemplItemLeft" align="right" valign="top">constexpr NonScalar&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#aed8ac2b04a1cff57abf5f53e469d0d12">anonymous_namespace{test_wait.cc}::one&lt; NonScalar &gt;</a> { 1.0f, 1.0f }</td></tr>
+<tr class="separator:aed8ac2b04a1cff57abf5f53e469d0d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2952f1296cabbaadd0d83a07ee97a37"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:ab2952f1296cabbaadd0d83a07ee97a37"><td class="memTemplItemLeft" align="right" valign="top">constexpr NonScalar&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#ab2952f1296cabbaadd0d83a07ee97a37">anonymous_namespace{test_wait.cc}::two&lt; NonScalar &gt;</a> { 2.0f, 2.0f }</td></tr>
+<tr class="separator:ab2952f1296cabbaadd0d83a07ee97a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a8cbdad717bf1d41126f98c643844d107" name="a8cbdad717bf1d41126f98c643844d107"></a>
@@ -85,9 +291,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_bda6758a1f39cbab2ecdac1c1381710b.html">common</a></li><li class="navelem"><a class="el" href="dir_a547db14673c9e6969183ead1900a33c.html">mcrt_util</a></li><li class="navelem"><a class="el" href="dir_80fe3bc8c73dc0570478066cb2244db9.html">unittest</a></li><li class="navelem"><a class="el" href="test__wait_8cc.html">test_wait.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

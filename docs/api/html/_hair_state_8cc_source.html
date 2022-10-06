@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_3ffafe8d4194a26e471fc283bfe39627.html">shading</a></li><li class="navelem"><a class="el" href="dir_dc7d4ea0feddfdece5425e1d6c4bcd38.html">bsdf</a></li><li class="navelem"><a class="el" href="dir_cc7f4a0026a6919491bbacf751e721ad.html">hair</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_hair_state_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">HairState.cc</div></div>
 </div><!--header-->
@@ -50,7 +66,12 @@ $(function() {
 <a href="_hair_state_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2002-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file BsdfHair.cc</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Parashar Krishnamachari, Eric Tabellion</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// $Id$</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">///</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_hair_state_8h.html">HairState.h</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="lib_2rendering_2shading_2util_8h.html">rendering/shading/Util.h</a>&gt;</span></div>
@@ -63,7 +84,7 @@ $(function() {
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemoonray.html">moonray</a> {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span>shading {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">constexpr</span> <span class="keywordtype">float</span> HairState::sPhiO;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">constexpr</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_state.html#aeb09c395dab6dc8e9bc5de317b5274e2">HairState::sPhiO</a>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_state.html#aaaa0cca1da57eb3d2f20f99d879686da">HairState::HairState</a>(<span class="keyword">const</span> Vec3f &amp;wo,</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                     <span class="keyword">const</span> Vec3f &amp;wi,</div>
@@ -144,7 +165,7 @@ $(function() {
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>HairState::calculateHairFrame(<span class="keyword">const</span> Vec3f&amp; wo,</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_hair_state.html#a4c01a3dc6dbbb55ebde552f31f49dddd">  103</a></span>HairState::calculateHairFrame(<span class="keyword">const</span> Vec3f&amp; wo,</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                              <span class="keyword">const</span> Vec3f&amp; hairDir,</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                              <span class="keyword">const</span> <span class="keywordtype">float</span> hairRotation,</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                              <span class="keyword">const</span> Vec3f&amp; hairNormal)</div>
@@ -153,9 +174,9 @@ $(function() {
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    UdotO = clamp(UdotO, -1.0f, 1.0f);</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keywordflow">if</span> (mUsingCustomNormal) {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        mHairNorm = <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(hairNormal);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        mHairNorm = Vec3f(hairNormal);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        scene_rdl2::math::Mat4f mat = scene_rdl2::math::Mat4f::rotate(hairDir, hairRotation);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        mHairNorm = <a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a4a82962fcf039c5097066854273b14ad">transformVector</a>(mat, mHairNorm);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        mHairNorm = transformVector(mat, mHairNorm);</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="comment">// Set hair normal to align with eyeDir&#39;s projection onto normal plane</span></div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="comment">// to ease of computation</span></div>
@@ -247,7 +268,7 @@ $(function() {
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">// and in the range [-pi, pi] when mUsingCustomNormal</span></div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">// WARNING: Don&#39;t use these angles to sample directions!!!</span></div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>HairState::computeAngles(<span class="keyword">const</span> Vec3f &amp;direction,</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_hair_state.html#a375fc14edefc221bf7d306a0b4586eff">  206</a></span>HairState::computeAngles(<span class="keyword">const</span> Vec3f &amp;direction,</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                         <span class="keyword">const</span> Vec3f &amp;hairDir,</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                         <span class="keywordtype">float</span> &amp;outTheta,</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                         <span class="keywordtype">float</span> &amp;outPhi)<span class="keyword"> const</span></div>
@@ -257,7 +278,7 @@ $(function() {
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    outTheta = sHalfPi - acos(clamp(cosTheta, -1.0f, 1.0f));</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <span class="comment">// Project direction into azimuth plane</span></div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> proj = direction - hairDir * <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(direction, hairDir);</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    Vec3f proj = direction - hairDir * <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(direction, hairDir);</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <span class="keywordtype">float</span> l = lengthSqr(proj);</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keywordflow">if</span> (l &lt;= sEpsilon) { outPhi = 0.0f; <span class="keywordflow">return</span>; }</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    proj /= sqrt(l);</div>
@@ -324,15 +345,18 @@ $(function() {
 <div class="ttc" id="a_hair_state_8h_html"><div class="ttname"><a href="_hair_state_8h.html">HairState.h</a></div></div>
 <div class="ttc" id="a_n_point_8h_html_a16747d68c1e06270b0ed335d631b66f3"><div class="ttname"><a href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a></div><div class="ttdeci">float dot(const NPoint&lt; D &gt; &amp;a, const NPoint&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00271">NPoint.h:271</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_state_html_aaaa0cca1da57eb3d2f20f99d879686da"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_state.html#aaaa0cca1da57eb3d2f20f99d879686da">moonray::shading::HairState::HairState</a></div><div class="ttdeci">HairState(const scene_rdl2::math::Vec3f &amp;wo, const scene_rdl2::math::Vec3f &amp;wi, const scene_rdl2::math::Vec3f &amp;hairDirection, const float h, const float refractiveIndex, const scene_rdl2::math::Color &amp;sigmaA, const float hairRotation=0.f, const scene_rdl2::math::Vec3f &amp;hairNormal=scene_rdl2::math::Vec3f(0.f))</div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_state_html_aeb09c395dab6dc8e9bc5de317b5274e2"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_state.html#aeb09c395dab6dc8e9bc5de317b5274e2">moonray::shading::HairState::sPhiO</a></div><div class="ttdeci">static constexpr float sPhiO</div><div class="ttdef"><b>Definition:</b> <a href="_hair_state_8h_source.html#l00179">HairState.h:179</a></div></div>
 <div class="ttc" id="alib_2rendering_2shading_2util_8h_html"><div class="ttname"><a href="lib_2rendering_2shading_2util_8h.html">Util.h</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a4a82962fcf039c5097066854273b14ad"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a4a82962fcf039c5097066854273b14ad">moonray::geom::internal::transformVector</a></div><div class="ttdeci">Vec3f transformVector(const scene_rdl2::math::Mat4f mat[2], const scene_rdl2::math::Vec3f &amp;vec, const float time, bool isMotionBlurOn)</div><div class="ttdef"><b>Definition:</b> <a href="geom_2prim_2_util_8cc_source.html#l00242">Util.cc:242</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1math_html"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html">scene_rdl2::math</a></div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8h_source.html#l00017">InputBuffer.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ffbcf3a8cac23adad179e74a09117904.html">shading</a></li><li class="navelem"><a class="el" href="dir_475738c250334a966655aa4f1c4fd0a3.html">bsdf</a></li><li class="navelem"><a class="el" href="dir_8b4d1f7235cfda081d4f13da2be66365.html">hair</a></li><li class="navelem"><a class="el" href="_hair_state_8cc.html">HairState.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

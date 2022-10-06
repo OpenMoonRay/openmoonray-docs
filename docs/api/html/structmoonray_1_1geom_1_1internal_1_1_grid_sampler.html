@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html">GridSampler</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -214,7 +230,18 @@ template&lt;typename GridType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_grid_sampler_8h_source.html#l00056">56</a> of file <a class="el" href="_grid_sampler_8h_source.html">GridSampler.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   56</span>                 :</div>
+<div class="line"><span class="lineno">   57</span>        <a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#ad1be9f807cea3180546f0efc09d2b43f">mAccessor</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">   58</span>        <a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#a3a9989b74f5ef44fd6b4cdb9b3a9d9d0">mPointSampler</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">   59</span>        <a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#a65a07e82a059b7a6e12bfa79df0023a0">mBoxSampler</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">   60</span>        <a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#abbdd01bf5b1efc4299271f445bb91363">mQuadraticSampler</a>(<span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   61</span>    {</div>
+<div class="line"><span class="lineno">   62</span>    }</div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_grid_sampler_html_a3a9989b74f5ef44fd6b4cdb9b3a9d9d0"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#a3a9989b74f5ef44fd6b4cdb9b3a9d9d0">moonray::geom::internal::GridSampler::mPointSampler</a></div><div class="ttdeci">PointSampler mPointSampler</div><div class="ttdef"><b>Definition:</b> <a href="_grid_sampler_8h_source.html#l00088">GridSampler.h:88</a></div></div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_grid_sampler_html_a65a07e82a059b7a6e12bfa79df0023a0"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#a65a07e82a059b7a6e12bfa79df0023a0">moonray::geom::internal::GridSampler::mBoxSampler</a></div><div class="ttdeci">BoxSampler mBoxSampler</div><div class="ttdef"><b>Definition:</b> <a href="_grid_sampler_8h_source.html#l00089">GridSampler.h:89</a></div></div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_grid_sampler_html_abbdd01bf5b1efc4299271f445bb91363"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#abbdd01bf5b1efc4299271f445bb91363">moonray::geom::internal::GridSampler::mQuadraticSampler</a></div><div class="ttdeci">QuadraticSampler mQuadraticSampler</div><div class="ttdef"><b>Definition:</b> <a href="_grid_sampler_8h_source.html#l00090">GridSampler.h:90</a></div></div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_grid_sampler_html_ad1be9f807cea3180546f0efc09d2b43f"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#ad1be9f807cea3180546f0efc09d2b43f">moonray::geom::internal::GridSampler::mAccessor</a></div><div class="ttdeci">ConstAccessor mAccessor</div><div class="ttdef"><b>Definition:</b> <a href="_grid_sampler_8h_source.html#l00087">GridSampler.h:87</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af4d2f640339e9b178d4214df2ddec64c" name="af4d2f640339e9b178d4214df2ddec64c"></a>
@@ -244,7 +271,14 @@ template&lt;typename GridType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_grid_sampler_8h_source.html#l00064">64</a> of file <a class="el" href="_grid_sampler_8h_source.html">GridSampler.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   64</span>                                     :</div>
+<div class="line"><span class="lineno">   65</span>        <a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#ad1be9f807cea3180546f0efc09d2b43f">mAccessor</a>(grid.getConstAccessor()),</div>
+<div class="line"><span class="lineno">   66</span>        <a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#a3a9989b74f5ef44fd6b4cdb9b3a9d9d0">mPointSampler</a>(<a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#ad1be9f807cea3180546f0efc09d2b43f">mAccessor</a>, grid.transform()),</div>
+<div class="line"><span class="lineno">   67</span>        <a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#a65a07e82a059b7a6e12bfa79df0023a0">mBoxSampler</a>(<a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#ad1be9f807cea3180546f0efc09d2b43f">mAccessor</a>, grid.transform()),</div>
+<div class="line"><span class="lineno">   68</span>        <a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#abbdd01bf5b1efc4299271f445bb91363">mQuadraticSampler</a>(<a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#ad1be9f807cea3180546f0efc09d2b43f">mAccessor</a>, grid.transform())</div>
+<div class="line"><span class="lineno">   69</span>    {</div>
+<div class="line"><span class="lineno">   70</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -275,7 +309,10 @@ template&lt;typename GridType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_grid_sampler_8h_source.html#l00077">77</a> of file <a class="el" href="_grid_sampler_8h_source.html">GridSampler.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   78</span>    {</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#a65a07e82a059b7a6e12bfa79df0023a0">mBoxSampler</a>.wsSample(p);</div>
+<div class="line"><span class="lineno">   80</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9d3e8ffd1c7ecf3c4cf8af3cf3ad0970" name="a9d3e8ffd1c7ecf3c4cf8af3cf3ad0970"></a>
@@ -305,7 +342,10 @@ template&lt;typename GridType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_grid_sampler_8h_source.html#l00072">72</a> of file <a class="el" href="_grid_sampler_8h_source.html">GridSampler.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   73</span>    {</div>
+<div class="line"><span class="lineno">   74</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#a3a9989b74f5ef44fd6b4cdb9b3a9d9d0">mPointSampler</a>.wsSample(p);</div>
+<div class="line"><span class="lineno">   75</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab9b184ebccc52d162d4ee69737ec8253" name="ab9b184ebccc52d162d4ee69737ec8253"></a>
@@ -335,7 +375,10 @@ template&lt;typename GridType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_grid_sampler_8h_source.html#l00082">82</a> of file <a class="el" href="_grid_sampler_8h_source.html">GridSampler.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   83</span>    {</div>
+<div class="line"><span class="lineno">   84</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html#abbdd01bf5b1efc4299271f445bb91363">mQuadraticSampler</a>.wsSample(p);</div>
+<div class="line"><span class="lineno">   85</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -415,9 +458,13 @@ template&lt;typename GridType &gt; </div>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/geom/prim/<a class="el" href="_grid_sampler_8h_source.html">GridSampler.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html">GridSampler</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

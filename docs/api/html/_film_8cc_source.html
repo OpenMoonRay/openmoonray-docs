@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_55a2e35f6359da48a03f898576e722e1.html">rndr</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_film_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">Film.cc</div></div>
 </div><!--header-->
@@ -83,12 +99,12 @@ $(function() {
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemoonray.html">moonray</a> {</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">namespace </span>rndr {</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">namespace</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03.html">   37</a></span><span class="keyword">namespace</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// Atomic free version of mathFilter, suitable for vector execution.</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>atomicMathFilter(<span class="keywordtype">float</span> *dest, <span class="keyword">const</span> <span class="keywordtype">float</span> *src, <span class="keyword">const</span> <span class="keywordtype">size_t</span> sz, <span class="keywordtype">float</span> depth, <span class="keyword">const</span> <a class="code hl_enumeration" href="namespacemoonray_1_1pbr.html#a379c6c62453097cf1de461a2e56fd923">pbr::AovFilter</a> filter)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03.html#a5220731f83f17319f5b4e2a0e812ce1b">   42</a></span><a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03.html#a5220731f83f17319f5b4e2a0e812ce1b">atomicMathFilter</a>(<span class="keywordtype">float</span> *dest, <span class="keyword">const</span> <span class="keywordtype">float</span> *src, <span class="keyword">const</span> <span class="keywordtype">size_t</span> sz, <span class="keywordtype">float</span> depth, <span class="keyword">const</span> <a class="code hl_enumeration" href="namespacemoonray_1_1pbr.html#a379c6c62453097cf1de461a2e56fd923">pbr::AovFilter</a> filter)</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">if</span> (filter == <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a379c6c62453097cf1de461a2e56fd923a00c7f65e27c4fbcaf558206a75384d0f">pbr::AOV_FILTER_CLOSEST</a>) {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
@@ -99,7 +115,7 @@ $(function() {
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            }</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keyword">alignas</span>(16) <span class="keywordtype">float</span> newVal[4];</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            newVal[3] = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a9121792970cb0e80a1f349433b131ce3">depth</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            newVal[3] = depth;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordflow">switch</span> (sz) {</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordflow">case</span> 1:</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                newVal[0] = src[0];</div>
@@ -152,7 +168,7 @@ $(function() {
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#ifdef DEBUG</span></div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keywordtype">bool</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>areBundledEntriesValid(mcrt_common::ThreadLocalState *tls, <span class="keywordtype">unsigned</span> numEntries,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>areBundledEntriesValid(<a class="code hl_class" href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html">mcrt_common::ThreadLocalState</a> *tls, <span class="keywordtype">unsigned</span> numEntries,</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                       pbr::BundledRadiance **entries)</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>{</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    MNRY_ASSERT(numEntries);</div>
@@ -207,7 +223,7 @@ $(function() {
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>scene_rdl2::fb_util::VariablePixelBuffer::Format</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>aovBufferFormat(<a class="code hl_enumeration" href="namespacemoonray_1_1pbr.html#a52dc235764c11050cfe5152961e0e483">pbr::AovStorageType</a> type)</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03.html#a69f0b7dbda8b7a694fe285f7a7e22256">  161</a></span><a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03.html#a69f0b7dbda8b7a694fe285f7a7e22256">aovBufferFormat</a>(<a class="code hl_enumeration" href="namespacemoonray_1_1pbr.html#a52dc235764c11050cfe5152961e0e483">pbr::AovStorageType</a> type)</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>{</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordflow">switch</span> (type) {</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a52dc235764c11050cfe5152961e0e483ae738c26bf4ce1037fa81b039a915cbf6">pbr::AovStorageType::FLOAT</a>:          <span class="keywordflow">return</span> scene_rdl2::fb_util::VariablePixelBuffer::FLOAT;</div>
@@ -228,7 +244,7 @@ $(function() {
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>}</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>extrapolatePartialTileV2(scene_rdl2::fb_util::RenderColor *__restrict dst,</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03.html#ab4502e989fcb0eed89a0f79e1cc61101">  182</a></span><a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03.html#ab4502e989fcb0eed89a0f79e1cc61101">extrapolatePartialTileV2</a>(scene_rdl2::fb_util::RenderColor *__restrict dst,</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                         <span class="keyword">const</span> scene_rdl2::fb_util::RenderColor *__restrict srcColor,</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                         <span class="keyword">const</span> <span class="keywordtype">float</span> *__restrict srcWeight,</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                         <span class="keywordtype">unsigned</span> minX, <span class="keywordtype">unsigned</span> maxX, <span class="keywordtype">unsigned</span> minY, <span class="keywordtype">unsigned</span> maxY,</div>
@@ -239,9 +255,9 @@ $(function() {
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    scene_rdl2::fb_util::RenderColor workPixel[64];</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    uint64_t activePixelMask = (uint64_t)0x0;</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = minY; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; maxY; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = minX; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; maxX; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            <span class="keywordtype">unsigned</span> offset = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = minY; y &lt; maxY; ++y) {</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> x = minX; x &lt; maxX; ++x) {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            <span class="keywordtype">unsigned</span> offset = (y &lt;&lt; 3) + x;</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            <span class="keywordflow">if</span> (srcWeight[offset] &gt; 0.f) {</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                workPixel[offset] = srcColor[offset] * (1.f / srcWeight[offset]);</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                activePixelMask |= ((uint64_t)0x1 &lt;&lt; offset);</div>
@@ -253,16 +269,16 @@ $(function() {
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    tileExtrapolation-&gt;searchActiveNearestPixel(activePixelMask, extrapolatePixIdArray,</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                                                minX, maxX, minY, maxY);</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = minY; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; maxY; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = minX; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; maxX; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            <span class="keywordtype">unsigned</span> offset = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = minY; y &lt; maxY; ++y) {</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> x = minX; x &lt; maxX; ++x) {</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            <span class="keywordtype">unsigned</span> offset = (y &lt;&lt; 3) + x;</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            dst[offset] = workPixel[extrapolatePixIdArray[offset]];</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        }</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    }</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>}</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>copyPixIdTable(<span class="keyword">const</span> std::vector&lt;uint8_t&gt; &amp;src, uint8_t dst[64])</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03.html#a5cb4c1423c454a8d1719a3f1b572f224">  216</a></span><a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03.html#a5cb4c1423c454a8d1719a3f1b572f224">copyPixIdTable</a>(<span class="keyword">const</span> std::vector&lt;uint8_t&gt; &amp;src, uint8_t dst[64])</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>{</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; 64; ++i) {</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        dst[i] = src[i];</div>
@@ -631,7 +647,7 @@ $(function() {
 <div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>}</div>
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span> </div>
 <div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>Film::addAovSamplesToBuffer(std::vector&lt;scene_rdl2::fb_util::VariablePixelBuffer&gt; &amp;aovBuf,</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_film.html#a850605ece2993b1ef7926cf88afb379c">  585</a></span>Film::addAovSamplesToBuffer(std::vector&lt;scene_rdl2::fb_util::VariablePixelBuffer&gt; &amp;aovBuf,</div>
 <div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>                            <span class="keyword">const</span> std::vector&lt;pbr::AovSchema::Entry&gt; &amp;aovEntries,</div>
 <div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>                            <span class="keywordtype">unsigned</span> px, <span class="keywordtype">unsigned</span> py, <span class="keyword">const</span> <span class="keywordtype">float</span> *depths, <span class="keyword">const</span> <span class="keywordtype">float</span> *aovs)</div>
 <div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>{</div>
@@ -695,7 +711,7 @@ $(function() {
 <div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span><span class="comment">// the scalar case where we can assume that any given camera was only used once</span></div>
 <div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span><span class="comment">// to create the aovs array.</span></div>
 <div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>Film::addAovSamplesToBufferSafe(std::vector&lt;scene_rdl2::fb_util::VariablePixelBuffer&gt; &amp;aovBuf,</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_film.html#ae8f14dd7cbcda4bc9bd2f622c4e79774">  649</a></span>Film::addAovSamplesToBufferSafe(std::vector&lt;scene_rdl2::fb_util::VariablePixelBuffer&gt; &amp;aovBuf,</div>
 <div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>                                <span class="keyword">const</span> std::vector&lt;pbr::AovSchema::Entry&gt; &amp;aovEntries,</div>
 <div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>                                <span class="keywordtype">unsigned</span> px, <span class="keywordtype">unsigned</span> py, <span class="keyword">const</span> <span class="keywordtype">float</span> *depths, <span class="keyword">const</span> <span class="keywordtype">float</span> *aovs)</div>
 <div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>{</div>
@@ -703,7 +719,7 @@ $(function() {
 <div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>        scene_rdl2::fb_util::VariablePixelBuffer &amp;buf = aovBuf[b];</div>
 <div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>        <span class="keyword">const</span> <a class="code hl_enumeration" href="namespacemoonray_1_1pbr.html#a379c6c62453097cf1de461a2e56fd923">pbr::AovFilter</a> &amp;filter = aovEntries[b].filter();</div>
 <div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> numFloats = aovEntries[b].numChannels();</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a9121792970cb0e80a1f349433b131ce3">depth</a> = depths ? depths[b] : scene_rdl2::math::inf;</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> depth = depths ? depths[b] : scene_rdl2::math::inf;</div>
 <div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span> </div>
 <div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>        MNRY_ASSERT(filter != <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a379c6c62453097cf1de461a2e56fd923a00c7f65e27c4fbcaf558206a75384d0f">pbr::AOV_FILTER_CLOSEST</a> ||</div>
 <div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>                   buf.getFormat() == scene_rdl2::fb_util::VariablePixelBuffer::FLOAT4);</div>
@@ -765,7 +781,7 @@ $(function() {
 <div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>}</div>
 <div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span> </div>
 <div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>Film::addTileSamplesToDisplayFilterBuffer(scene_rdl2::fb_util::VariablePixelBuffer &amp;buf,</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_film.html#abdaae30b5c6275cefe04b81a1b3e0e61">  719</a></span>Film::addTileSamplesToDisplayFilterBuffer(scene_rdl2::fb_util::VariablePixelBuffer &amp;buf,</div>
 <div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>                                          <span class="keywordtype">unsigned</span> startX, <span class="keywordtype">unsigned</span> startY,</div>
 <div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>                                          <span class="keywordtype">unsigned</span> <a class="code hl_function" href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a>,</div>
 <div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>                                          <span class="keyword">const</span> uint8_t *values)</div>
@@ -841,15 +857,15 @@ $(function() {
 <div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> w = std::min(dstRenderBuffer-&gt;getWidth(), srcRenderBuffer-&gt;getWidth());</div>
 <div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> h = std::min(dstRenderBuffer-&gt;getHeight(), srcRenderBuffer-&gt;getHeight());</div>
 <div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span> </div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>    <a class="code hl_function" href="namespacemoonray_1_1rndr.html#a5474c04b824db31c27e5dc5b685f2f2c">simpleLoop</a>(parallel, 0u, h, [&amp;](<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>    <a class="code hl_function" href="namespacemoonray_1_1rndr.html#a5474c04b824db31c27e5dc5b685f2f2c">simpleLoop</a>(parallel, 0u, h, [&amp;](<span class="keywordtype">unsigned</span> y) {</div>
 <div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span> </div>
 <div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>            <span class="comment">// The use of __restrict here tells the compiler that these arrays</span></div>
 <div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>            <span class="comment">// don&#39;t alias each so it&#39;s free to generate code with that assumption.</span></div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>            scene_rdl2::fb_util::RenderColor *__restrict dstRow = dstRenderBuffer-&gt;getRow(<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>);</div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>            <span class="keyword">const</span> scene_rdl2::fb_util::RenderColor *__restrict srcColor = srcRenderBuffer-&gt;getRow(<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>);</div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> *__restrict srcWeight = mWeightBuf.getRow(<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>);</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>            scene_rdl2::fb_util::RenderColor *__restrict dstRow = dstRenderBuffer-&gt;getRow(y);</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>            <span class="keyword">const</span> scene_rdl2::fb_util::RenderColor *__restrict srcColor = srcRenderBuffer-&gt;getRow(y);</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> *__restrict srcWeight = mWeightBuf.getRow(y);</div>
 <div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span> </div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; w; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> x = 0; x &lt; w; ++x) {</div>
 <div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span> </div>
 <div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>                <span class="keywordflow">if</span> (*srcWeight &gt; 0.f) {</div>
 <div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>                    *dstRow = *srcColor * (1.f / *srcWeight);</div>
@@ -1404,7 +1420,7 @@ $(function() {
 <div class="line"><a id="l01355" name="l01355"></a><span class="lineno"> 1355</span> </div>
 <div class="line"><a id="l01356" name="l01356"></a><span class="lineno"> 1356</span>        <span class="comment">// Update aov buffer</span></div>
 <div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span>        film-&gt;<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_film.html#a686845cb94acdd7164a5628473c28c84">mTiler</a>.linearToTiledCoords(px, py, &amp;px, &amp;py);</div>
-<div class="line"><a id="l01358" name="l01358"></a><span class="lineno"> 1358</span>        film-&gt;addAovSamplesToBufferSafe(film-&gt;<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_film.html#a141361ce8d06603b55b532b7baebe99a">mAovBuf</a>, film-&gt;<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_film.html#a40e3b59ba6233fec845f8139b7099073">mAovEntries</a>, px, py, localDepths, localAovs);</div>
+<div class="line"><a id="l01358" name="l01358"></a><span class="lineno"> 1358</span>        film-&gt;<a class="code hl_function" href="classmoonray_1_1rndr_1_1_film.html#ae8f14dd7cbcda4bc9bd2f622c4e79774">addAovSamplesToBufferSafe</a>(film-&gt;<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_film.html#a141361ce8d06603b55b532b7baebe99a">mAovBuf</a>, film-&gt;<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_film.html#a40e3b59ba6233fec845f8139b7099073">mAovEntries</a>, px, py, localDepths, localAovs);</div>
 <div class="line"><a id="l01359" name="l01359"></a><span class="lineno"> 1359</span> </div>
 <div class="line"><a id="l01360" name="l01360"></a><span class="lineno"> 1360</span>        MNRY_ASSERT(entriesRemaining &gt;= numLocalSamples);</div>
 <div class="line"><a id="l01361" name="l01361"></a><span class="lineno"> 1361</span>        entriesRemaining -= numLocalSamples;</div>
@@ -1562,8 +1578,6 @@ $(function() {
 <div class="ttc" id="a_profile_accumulator_handles_8hh_html_ae7f4a146d68256e9f19dcbde6c38c9b2a1a6e20c0f69583ac198e647f8796eebc"><div class="ttname"><a href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a1a6e20c0f69583ac198e647f8796eebc">EXCL_ACCUM_ADD_HEAT_MAP_HANDLER</a></div><div class="ttdeci">@ EXCL_ACCUM_ADD_HEAT_MAP_HANDLER</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_handles_8hh_source.html#l00025">ProfileAccumulatorHandles.hh:25</a></div></div>
 <div class="ttc" id="a_profile_accumulator_handles_8hh_html_ae7f4a146d68256e9f19dcbde6c38c9b2a74ab84f96e330b4fa651881c3828f23a"><div class="ttname"><a href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a74ab84f96e330b4fa651881c3828f23a">EXCL_ACCUM_AOVS</a></div><div class="ttdeci">@ EXCL_ACCUM_AOVS</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_handles_8hh_source.html#l00022">ProfileAccumulatorHandles.hh:22</a></div></div>
 <div class="ttc" id="a_profile_accumulator_handles_8hh_html_ae7f4a146d68256e9f19dcbde6c38c9b2a8787b06230296f2311d01bfd7c2135cd"><div class="ttname"><a href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a8787b06230296f2311d01bfd7c2135cd">EXCL_ACCUM_ADD_SAMPLE_HANDLER</a></div><div class="ttdeci">@ EXCL_ACCUM_ADD_SAMPLE_HANDLER</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_handles_8hh_source.html#l00029">ProfileAccumulatorHandles.hh:29</a></div></div>
-<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
-<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_thread_local_state_html"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html">moonray::mcrt_common::ThreadLocalState</a></div><div class="ttdef"><b>Definition:</b> <a href="_thread_local_state_8h_source.html#l00170">ThreadLocalState.h:171</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_thread_local_state_html_a4638edcd20653209a54b2f58a53b8fe1"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html#a4638edcd20653209a54b2f58a53b8fe1">moonray::mcrt_common::ThreadLocalState::mArena</a></div><div class="ttdeci">scene_rdl2::alloc::Arena mArena</div><div class="ttdef"><b>Definition:</b> <a href="_thread_local_state_8h_source.html#l00191">ThreadLocalState.h:191</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_thread_local_state_html_abe5454e9b38ebf1156b59553c7fa6512"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html#abe5454e9b38ebf1156b59553c7fa6512">moonray::mcrt_common::ThreadLocalState::mPbrTls</a></div><div class="ttdeci">std::shared_ptr&lt; pbr::TLState &gt; mPbrTls</div><div class="ttdef"><b>Definition:</b> <a href="_thread_local_state_8h_source.html#l00203">ThreadLocalState.h:203</a></div></div>
@@ -1601,6 +1615,7 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_film_html_aceb8625fad9bf329db50ab96042c5f76"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_film.html#aceb8625fad9bf329db50ab96042c5f76">moonray::rndr::Film::mAovIdxToBufIdx</a></div><div class="ttdeci">std::vector&lt; unsigned &gt; mAovIdxToBufIdx</div><div class="ttdef"><b>Definition:</b> <a href="_film_8h_source.html#l00416">Film.h:416</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_film_html_adb2e10c1646381f850deb6cd9805103e"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_film.html#adb2e10c1646381f850deb6cd9805103e">moonray::rndr::Film::mDeepBuf</a></div><div class="ttdeci">pbr::DeepBuffer * mDeepBuf</div><div class="ttdef"><b>Definition:</b> <a href="_film_8h_source.html#l00404">Film.h:404</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_film_html_ae35eaaf4eaf8c860fb2089d42922b096"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_film.html#ae35eaaf4eaf8c860fb2089d42922b096">moonray::rndr::Film::mHeatMapBuf</a></div><div class="ttdeci">scene_rdl2::fb_util::HeatMapBuffer * mHeatMapBuf</div><div class="ttdef"><b>Definition:</b> <a href="_film_8h_source.html#l00431">Film.h:431</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_film_html_ae8f14dd7cbcda4bc9bd2f622c4e79774"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_film.html#ae8f14dd7cbcda4bc9bd2f622c4e79774">moonray::rndr::Film::addAovSamplesToBufferSafe</a></div><div class="ttdeci">static void addAovSamplesToBufferSafe(std::vector&lt; scene_rdl2::fb_util::VariablePixelBuffer &gt; &amp;aovBuf, const std::vector&lt; pbr::AovSchema::Entry &gt; &amp;aovEntries, unsigned px, unsigned py, const float *depths, const float *aovs)</div><div class="ttdef"><b>Definition:</b> <a href="_film_8cc_source.html#l00649">Film.cc:649</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_film_html_aff88f7637f662944f0e90f9c3cf8bfe2"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_film.html#aff88f7637f662944f0e90f9c3cf8bfe2">moonray::rndr::Film::mWeightBuf</a></div><div class="ttdeci">scene_rdl2::fb_util::FloatBuffer mWeightBuf</div><div class="ttdef"><b>Definition:</b> <a href="_film_8h_source.html#l00394">Film.h:394</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_t_l_state_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a></div><div class="ttdef"><b>Definition:</b> <a href="_shading_t_l_state_8h_source.html#l00025">ShadingTLState.h:26</a></div></div>
 <div class="ttc" id="alib_2rendering_2shading_2util_8h_html"><div class="ttname"><a href="lib_2rendering_2shading_2util_8h.html">Util.h</a></div></div>
@@ -1630,8 +1645,11 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a52dc235764c11050cfe5152961e0e483aee190f7a0572504036effa0134dc5d88"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a52dc235764c11050cfe5152961e0e483aee190f7a0572504036effa0134dc5d88">moonray::pbr::AovStorageType::VEC4</a></div><div class="ttdeci">@ VEC4</div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a700cdac9d1494de8f2041b95c641045e"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a700cdac9d1494de8f2041b95c641045e">moonray::pbr::getFilm</a></div><div class="ttdeci">finline uint32_t getFilm(uint32_t tilePassAndFilm)</div><div class="ttdef"><b>Definition:</b> <a href="pbr_2_types_8h_source.html#l00083">Types.h:83</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a7bc3081bbd02a246b0c933fe03239126"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a7bc3081bbd02a246b0c933fe03239126">moonray::pbr::getPass</a></div><div class="ttdeci">finline uint32_t getPass(uint32_t tilePassAndFilm)</div><div class="ttdef"><b>Definition:</b> <a href="pbr_2_types_8h_source.html#l00077">Types.h:77</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1pbr_html_a9121792970cb0e80a1f349433b131ce3"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a9121792970cb0e80a1f349433b131ce3">moonray::pbr::depth</a></div><div class="ttdeci">scene_rdl2::util::SManip&lt; long &gt; depth(long n)</div><div class="ttdef"><b>Definition:</b> <a href="_sample_partition_8h_source.html#l00222">SamplePartition.h:222</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_aa1d06c279c3cb1b1916405beb88634fa"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#aa1d06c279c3cb1b1916405beb88634fa">moonray::pbr::DeepFormat</a></div><div class="ttdeci">DeepFormat</div><div class="ttdef"><b>Definition:</b> <a href="_deep_buffer_8h_source.html#l00030">DeepBuffer.h:31</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03_html_a5220731f83f17319f5b4e2a0e812ce1b"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03.html#a5220731f83f17319f5b4e2a0e812ce1b">moonray::rndr::anonymous_namespace{Film.cc}::atomicMathFilter</a></div><div class="ttdeci">void atomicMathFilter(float *dest, const float *src, const size_t sz, float depth, const pbr::AovFilter filter)</div><div class="ttdef"><b>Definition:</b> <a href="_film_8cc_source.html#l00042">Film.cc:42</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03_html_a5cb4c1423c454a8d1719a3f1b572f224"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03.html#a5cb4c1423c454a8d1719a3f1b572f224">moonray::rndr::anonymous_namespace{Film.cc}::copyPixIdTable</a></div><div class="ttdeci">void copyPixIdTable(const std::vector&lt; uint8_t &gt; &amp;src, uint8_t dst[64])</div><div class="ttdef"><b>Definition:</b> <a href="_film_8cc_source.html#l00216">Film.cc:216</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03_html_a69f0b7dbda8b7a694fe285f7a7e22256"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03.html#a69f0b7dbda8b7a694fe285f7a7e22256">moonray::rndr::anonymous_namespace{Film.cc}::aovBufferFormat</a></div><div class="ttdeci">scene_rdl2::fb_util::VariablePixelBuffer::Format aovBufferFormat(pbr::AovStorageType type)</div><div class="ttdef"><b>Definition:</b> <a href="_film_8cc_source.html#l00161">Film.cc:161</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03_html_ab4502e989fcb0eed89a0f79e1cc61101"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03.html#ab4502e989fcb0eed89a0f79e1cc61101">moonray::rndr::anonymous_namespace{Film.cc}::extrapolatePartialTileV2</a></div><div class="ttdeci">void extrapolatePartialTileV2(scene_rdl2::fb_util::RenderColor *__restrict dst, const scene_rdl2::fb_util::RenderColor *__restrict srcColor, const float *__restrict srcWeight, unsigned minX, unsigned maxX, unsigned minY, unsigned maxY, const scene_rdl2::fb_util::TileExtrapolation *tileExtrapolation)</div><div class="ttdef"><b>Definition:</b> <a href="_film_8cc_source.html#l00182">Film.cc:182</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1rndr_html_a5474c04b824db31c27e5dc5b685f2f2c"><div class="ttname"><a href="namespacemoonray_1_1rndr.html#a5474c04b824db31c27e5dc5b685f2f2c">moonray::rndr::simpleLoop</a></div><div class="ttdeci">finline void simpleLoop(bool parallel, T start, T end, const FUNC &amp;func)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2rndr_2util_8h_source.html#l00019">Util.h:19</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1rndr_html_a8346742aed88da2746226b72234aae5b"><div class="ttname"><a href="namespacemoonray_1_1rndr.html#a8346742aed88da2746226b72234aae5b">moonray::rndr::gScrambledPixelFillOrder</a></div><div class="ttdeci">uint8_t gScrambledPixelFillOrder[1024][64]</div><div class="ttdef"><b>Definition:</b> <a href="_film_8cc_source.html#l00299">Film.cc:299</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1rndr_html_adc4b1ecb6f6fc7470150fe03019dd873"><div class="ttname"><a href="namespacemoonray_1_1rndr.html#adc4b1ecb6f6fc7470150fe03019dd873">moonray::rndr::gPixelFillOrder</a></div><div class="ttdeci">const uint8_t gPixelFillOrder[64]</div><div class="ttdef"><b>Definition:</b> <a href="_film_8cc_source.html#l00271">Film.cc:271</a></div></div>
@@ -1644,9 +1662,13 @@ $(function() {
 <div class="ttc" id="astructmoonray_1_1pbr_1_1_cryptomatte_data_html"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_cryptomatte_data.html">moonray::pbr::CryptomatteData</a></div><div class="ttdef"><b>Definition:</b> <a href="pbr_2_types_8h_source.html#l00274">Types.h:275</a></div></div>
 <div class="ttc" id="astructmoonray_1_1pbr_1_1_deep_data_html"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_deep_data.html">moonray::pbr::DeepData</a></div><div class="ttdef"><b>Definition:</b> <a href="pbr_2_types_8h_source.html#l00264">Types.h:265</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_c8c2fc2658195a2d790ef72565bd36e7.html">rndr</a></li><li class="navelem"><a class="el" href="_film_8cc.html">Film.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

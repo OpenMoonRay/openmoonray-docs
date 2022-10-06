@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_material_aovs.html">MaterialAovs</a></li><li class="navelem"><a class="el" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html">ComputeParamsv</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -177,7 +193,32 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8h_source.html#l00457">457</a> of file <a class="el" href="_aov_8h_source.html">Aov.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  467</span>                                                                    :</div>
+<div class="line"><span class="lineno">  468</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#ae1d8debb4153ed0ec2bd31b89bd8a77a">mEntry</a>(entry),</div>
+<div class="line"><span class="lineno">  469</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#aea4cedbef76a815df4041f706eb53ab1">mIsect</a>(isect),</div>
+<div class="line"><span class="lineno">  470</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#a33a062fa65d38be7373d92c3d074724d">mRay</a>(ray),</div>
+<div class="line"><span class="lineno">  471</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#a1b2254e1d56acc07b8d51f21155e98a9">mScene</a>(scene),</div>
+<div class="line"><span class="lineno">  472</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#a5bbcf72dd9709ac9f64999f71916aa7a">mBsdf</a>(bsdf),</div>
+<div class="line"><span class="lineno">  473</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#a2956c2c34e4f23f00d491d3991a46c7c">mSsAov</a>(ssAov),</div>
+<div class="line"><span class="lineno">  474</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#a855d9dfadd8a7c4da746076c1671e9b9">mBSampler</a>(bSampler),</div>
+<div class="line"><span class="lineno">  475</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#a0c18364a9a28e2e8588c8f64f958c57c">mBsmps</a>(bsmps),</div>
+<div class="line"><span class="lineno">  476</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#a40a1a2e25c1ffe831df70ee424e7e8fc">mBsdfSlice</a>(bsdfSlice),</div>
+<div class="line"><span class="lineno">  477</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#aa774f7d44fdf53ec72b38e5bee0dd2b1">mPixelWeight</a>(pixelWeight),</div>
+<div class="line"><span class="lineno">  478</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#a987e26c8a3071cd0d04a1c4a842e3903">mLanemask</a>(lanemask)</div>
+<div class="line"><span class="lineno">  479</span>        {</div>
+<div class="line"><span class="lineno">  480</span>        }</div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv_html_a0c18364a9a28e2e8588c8f64f958c57c"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#a0c18364a9a28e2e8588c8f64f958c57c">moonray::pbr::MaterialAovs::ComputeParamsv::mBsmps</a></div><div class="ttdeci">const BsdfSamplev * mBsmps</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00489">Aov.h:489</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv_html_a1b2254e1d56acc07b8d51f21155e98a9"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#a1b2254e1d56acc07b8d51f21155e98a9">moonray::pbr::MaterialAovs::ComputeParamsv::mScene</a></div><div class="ttdeci">const Scene &amp; mScene</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00485">Aov.h:485</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv_html_a2956c2c34e4f23f00d491d3991a46c7c"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#a2956c2c34e4f23f00d491d3991a46c7c">moonray::pbr::MaterialAovs::ComputeParamsv::mSsAov</a></div><div class="ttdeci">const Colorv &amp; mSsAov</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00487">Aov.h:487</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv_html_a33a062fa65d38be7373d92c3d074724d"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#a33a062fa65d38be7373d92c3d074724d">moonray::pbr::MaterialAovs::ComputeParamsv::mRay</a></div><div class="ttdeci">const mcrt_common::RayDifferentialv &amp; mRay</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00484">Aov.h:484</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv_html_a40a1a2e25c1ffe831df70ee424e7e8fc"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#a40a1a2e25c1ffe831df70ee424e7e8fc">moonray::pbr::MaterialAovs::ComputeParamsv::mBsdfSlice</a></div><div class="ttdeci">const shading::BsdfSlicev * mBsdfSlice</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00490">Aov.h:490</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv_html_a5bbcf72dd9709ac9f64999f71916aa7a"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#a5bbcf72dd9709ac9f64999f71916aa7a">moonray::pbr::MaterialAovs::ComputeParamsv::mBsdf</a></div><div class="ttdeci">const shading::Bsdfv &amp; mBsdf</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00486">Aov.h:486</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv_html_a855d9dfadd8a7c4da746076c1671e9b9"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#a855d9dfadd8a7c4da746076c1671e9b9">moonray::pbr::MaterialAovs::ComputeParamsv::mBSampler</a></div><div class="ttdeci">const BsdfSamplerv * mBSampler</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00488">Aov.h:488</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv_html_a987e26c8a3071cd0d04a1c4a842e3903"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#a987e26c8a3071cd0d04a1c4a842e3903">moonray::pbr::MaterialAovs::ComputeParamsv::mLanemask</a></div><div class="ttdeci">uint32_t mLanemask</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00492">Aov.h:492</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv_html_aa774f7d44fdf53ec72b38e5bee0dd2b1"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#aa774f7d44fdf53ec72b38e5bee0dd2b1">moonray::pbr::MaterialAovs::ComputeParamsv::mPixelWeight</a></div><div class="ttdeci">const float * mPixelWeight</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00491">Aov.h:491</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv_html_ae1d8debb4153ed0ec2bd31b89bd8a77a"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#ae1d8debb4153ed0ec2bd31b89bd8a77a">moonray::pbr::MaterialAovs::ComputeParamsv::mEntry</a></div><div class="ttdeci">const Entry &amp; mEntry</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00482">Aov.h:482</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv_html_aea4cedbef76a815df4041f706eb53ab1"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html#aea4cedbef76a815df4041f706eb53ab1">moonray::pbr::MaterialAovs::ComputeParamsv::mIsect</a></div><div class="ttdeci">const shading::Intersectionv &amp; mIsect</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00483">Aov.h:483</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -361,9 +402,13 @@ Public Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/core/<a class="el" href="_aov_8h_source.html">Aov.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_material_aovs.html">MaterialAovs</a></li><li class="navelem"><a class="el" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_paramsv.html">ComputeParamsv</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

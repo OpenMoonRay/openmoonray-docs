@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,11 +43,28 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('functions_func_w.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="contents">
 &#160;
 
 <h3><a id="index_w" name="index_w"></a>- w -</h3><ul>
 <li>w()&#160;:&#160;<a class="el" href="class_pixel_tile.html#a45799dabb016e6668d7a35137f890961">PixelTile</a></li>
+<li>wait()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_render_driver_1_1_render_thread_state_manager.html#a56d94d6b95f8f0aa1e62499e5b51ef5a">moonray::rndr::RenderDriver::RenderThreadStateManager</a></li>
 <li>waitForChange()&#160;:&#160;<a class="el" href="classmoonray_1_1_change_watcher.html#a9ff32cd4c5efbab53d23e3ccce899896">moonray::ChangeWatcher</a></li>
 <li>waitUntilBgWriteReady()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_image_write_driver.html#a733691805d2c80d5c3e4cebfd58ff1a3">moonray::rndr::ImageWriteDriver</a></li>
 <li>WardBsdfLobe()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_ward_bsdf_lobe.html#a50bdc2cef74c6099e4871b9030e140b6">moonray::shading::WardBsdfLobe</a></li>
@@ -66,21 +87,30 @@ $(function() {
 <li>Wildexp()&#160;:&#160;<a class="el" href="classlpexp_1_1_wildexp.html#a0ab9916f61e6dfe249159f77bfae5e4d">lpexp::Wildexp</a></li>
 <li>windowToNdc()&#160;:&#160;<a class="el" href="class_image_format.html#a4eb2918ff36e9c5f138a79c60698de06">ImageFormat</a></li>
 <li>wo()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_hair_state.html#ab301ebbb7a889f77ffee9a1dda64ac2e">moonray::shading::HairState</a></li>
+<li>WorkDistributor()&#160;:&#160;<a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_work_distributor.html#ab0018d5038e7c8dedbdcb388e144ca0c">anonymous_namespace{test_ring_buffer.cc}::WorkDistributor&lt; IntType &gt;</a></li>
 <li>WrappedDistanceSquared()&#160;:&#160;<a class="el" href="struct_wrapped_distance_squared.html#a2e54f14e15e1755b5eb4b0503549bf5a">WrappedDistanceSquared&lt; D &gt;</a></li>
 <li>writable()&#160;:&#160;<a class="el" href="class_deep_tile.html#a55953cb6aa1ec115377eda72bef2bd21">DeepTile</a></li>
 <li>write()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_deep_buffer.html#abec59d36dd834dd63af17c3415e67c39">moonray::pbr::DeepBuffer</a>, <a class="el" href="classmoonray_1_1rndr_1_1_render_output_driver_1_1_impl.html#a6f6335bb70914dc66be7e2ff4e1fb9e9">moonray::rndr::RenderOutputDriver::Impl</a>, <a class="el" href="classmoonray_1_1rndr_1_1_render_output_driver.html#a21fc0d7ce6fa89afc4323fa881c17456">moonray::rndr::RenderOutputDriver</a>, <a class="el" href="classmoonray_1_1stats_1_1_socket.html#a419a609dabd49223839c10c83a9d7f3e">moonray::stats::Socket</a></li>
+<li>write_to_socket()&#160;:&#160;<a class="el" href="classmoonray_1_1stats_1_1_socket_streambuf.html#a9e288e88174285c577bd956bccd15835">moonray::stats::SocketStreambuf</a></li>
 <li>writeAccessMode()&#160;:&#160;<a class="el" href="class_deep_tile.html#ac2867f69debb70438ed5c4285f8836c0">DeepTile</a></li>
 <li>writeCheckpointDeq()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_render_output_driver.html#afa956fb13749e6f11f8d2b7253f63c7a">moonray::rndr::RenderOutputDriver</a></li>
 <li>writeCheckpointEnq()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_render_output_driver.html#a3976c40869296677d2bd8bfb9551001e">moonray::rndr::RenderOutputDriver</a></li>
+<li>writeCheckpointResumeMetadata()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_render_output_driver_1_1_impl.html#a3e33ba9c7ad6936b044564d346d8df71">moonray::rndr::RenderOutputDriver::Impl</a></li>
 <li>writeDeq()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_render_output_driver_1_1_impl.html#ab2c29cc39ea54ba732ca07132fac352c">moonray::rndr::RenderOutputDriver::Impl</a></li>
+<li>writeHardSurfaceSegments()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_deep_buffer.html#adb90415b243b980531092e1a1eb4a78b">moonray::pbr::DeepBuffer</a></li>
+<li>writeHardSurfaceSegmentsNoMask()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_deep_buffer.html#a41a7299ca408bf6cae9745d64bf2e113">moonray::pbr::DeepBuffer</a></li>
 <li>writePoints()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_test_qmc.html#ab26b36e4745958668a82f667611ca936">moonray::pbr::TestQmc</a></li>
 <li>writeScanline()&#160;:&#160;<a class="el" href="class_deep_image_output_tile.html#a1a276117925ae0469dd3a0ca960a5a08">DeepImageOutputTile</a></li>
 <li>writeTile()&#160;:&#160;<a class="el" href="class_deep_image_output_tile.html#aa3f1c188bc40c89269f1b5ab9f673a82">DeepImageOutputTile</a></li>
+<li>writeVolumeSegments()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_deep_buffer.html#a45cc4b705db4c132a5392669a92b665a">moonray::pbr::DeepBuffer</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

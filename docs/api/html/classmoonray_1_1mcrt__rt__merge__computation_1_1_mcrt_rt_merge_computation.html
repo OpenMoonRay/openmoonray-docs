@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1mcrt__rt__merge__computation.html">mcrt_rt_merge_computation</a></li><li class="navelem"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html">McrtRtMergeComputation</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation Class Reference</div></div>
 </div><!--header-->
@@ -73,6 +91,80 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a90de9775baf6cd77bbccff3c6995e432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3168127e08c13f9d052ae3877f2e989c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a3168127e08c13f9d052ae3877f2e989c">onMessage</a> (const moonray::network::Message::Ptr msg)</td></tr>
 <tr class="separator:a3168127e08c13f9d052ae3877f2e989c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a5f3f569687d3b31f282c766b913a275f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a5f3f569687d3b31f282c766b913a275f">onViewportChanged</a> (const network::PartialFrame &amp;msg)</td></tr>
+<tr class="separator:a5f3f569687d3b31f282c766b913a275f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bc35678eac84ac1e0eaa47aa7ac19d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a5bc35678eac84ac1e0eaa47aa7ac19d3">fpsIntervalPassed</a> ()</td></tr>
+<tr class="separator:a5bc35678eac84ac1e0eaa47aa7ac19d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ad5a76ca60a753ccb3d44dc5a375bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ab1ad5a76ca60a753ccb3d44dc5a375bb">onIdle_mocap</a> ()</td></tr>
+<tr class="separator:ab1ad5a76ca60a753ccb3d44dc5a375bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4fff84f118dff11bdf86e526e86125f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad4fff84f118dff11bdf86e526e86125f">onMessage_mocap</a> (const moonray::network::Message::Ptr msg)</td></tr>
+<tr class="separator:ad4fff84f118dff11bdf86e526e86125f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a84c0e86803a6b9c57a7aa00e3469eefe"><td class="memItemLeft" align="right" valign="top">util::Ref&lt; alloc::ArenaBlockPool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a84c0e86803a6b9c57a7aa00e3469eefe">mArenaBlockPool</a></td></tr>
+<tr class="separator:a84c0e86803a6b9c57a7aa00e3469eefe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c88e88ed5fe351abccde176f42b491"><td class="memItemLeft" align="right" valign="top">alloc::Arena&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ac0c88e88ed5fe351abccde176f42b491">mArena</a></td></tr>
+<tr class="separator:ac0c88e88ed5fe351abccde176f42b491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e89d4af3404c4b9c8d9f3676e54458b"><td class="memItemLeft" align="right" valign="top">math::Viewport&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a></td></tr>
+<tr class="separator:a8e89d4af3404c4b9c8d9f3676e54458b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc1af58ed6fbcffd1d592ea6fa6b4dbf"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classmoonray_1_1rndr_1_1_tile_scheduler.html">rndr::TileScheduler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#abc1af58ed6fbcffd1d592ea6fa6b4dbf">mTileScheduler</a></td></tr>
+<tr class="separator:abc1af58ed6fbcffd1d592ea6fa6b4dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532efbb3ea264fae5618b4aabaab165c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html">RenderFbArray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a532efbb3ea264fae5618b4aabaab165c">mFbArray</a></td></tr>
+<tr class="separator:a532efbb3ea264fae5618b4aabaab165c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d295345389211f06d3fe37c7221813"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a73d295345389211f06d3fe37c7221813">mUpstreamBuffers</a></td></tr>
+<tr class="separator:a73d295345389211f06d3fe37c7221813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a059111f1b5f5458cd1e8adc2ddae83a6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; fb_util::PixelInfoBuffer::PixelType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a059111f1b5f5458cd1e8adc2ddae83a6">mUpstreamPixelInfoBuffers</a></td></tr>
+<tr class="separator:a059111f1b5f5458cd1e8adc2ddae83a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc8a65f7516797ee4a1aadf221f8ae6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; fb_util::Tile &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a1dc8a65f7516797ee4a1aadf221f8ae6">mTiles</a></td></tr>
+<tr class="separator:a1dc8a65f7516797ee4a1aadf221f8ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa245d9145d7555ac75086041920be3ae"><td class="memItemLeft" align="right" valign="top">network::BaseFrame::ImageEncoding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#aa245d9145d7555ac75086041920be3ae">mImageEncoding</a></td></tr>
+<tr class="separator:aa245d9145d7555ac75086041920be3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b9703ebcf235daeb922484d14ae6232"><td class="memItemLeft" align="right" valign="top">fb_util::VariablePixelBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a9b9703ebcf235daeb922484d14ae6232">mTiledFrame</a></td></tr>
+<tr class="separator:a9b9703ebcf235daeb922484d14ae6232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1bac70c84b416250fed6a88c3a046f"><td class="memItemLeft" align="right" valign="top">fb_util::VariablePixelBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a></td></tr>
+<tr class="separator:a7f1bac70c84b416250fed6a88c3a046f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af614492be8a73abb0770e409f4343d25"><td class="memItemLeft" align="right" valign="top">fb_util::PixelInfoBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#af614492be8a73abb0770e409f4343d25">mPixelInfoTiledFrame</a></td></tr>
+<tr class="separator:af614492be8a73abb0770e409f4343d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5964469aa63f2ab43083ce4dbc2e7f5"><td class="memItemLeft" align="right" valign="top">fb_util::PixelInfoBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ae5964469aa63f2ab43083ce4dbc2e7f5">mFinalPixelInfoFrame</a></td></tr>
+<tr class="separator:ae5964469aa63f2ab43083ce4dbc2e7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ace32808dc41fa1d56c9e9e04becdf"><td class="memItemLeft" align="right" valign="top">fb_util::VariablePixelBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a35ace32808dc41fa1d56c9e9e04becdf">mRoiPixelBuffer</a></td></tr>
+<tr class="memdesc:a35ace32808dc41fa1d56c9e9e04becdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds buffers for ROI.  <a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a35ace32808dc41fa1d56c9e9e04becdf">More...</a><br /></td></tr>
+<tr class="separator:a35ace32808dc41fa1d56c9e9e04becdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a1145867f269cdf16b19d2a1ca79327"><td class="memItemLeft" align="right" valign="top">fb_util::PixelInfoBuffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8a1145867f269cdf16b19d2a1ca79327">mRoiPixelInfoBuffer</a></td></tr>
+<tr class="separator:a8a1145867f269cdf16b19d2a1ca79327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a375a98dbbca1e7a952496cfc7176edda"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a></td></tr>
+<tr class="separator:a375a98dbbca1e7a952496cfc7176edda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad815af73f7a6c7e6f9e839ccc7e3e675"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; network::BaseFrame::Status[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad815af73f7a6c7e6f9e839ccc7e3e675">mStatus</a></td></tr>
+<tr class="separator:ad815af73f7a6c7e6f9e839ccc7e3e675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3af03737eec78bb9ec9b18748fc193d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; float[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ac3af03737eec78bb9ec9b18748fc193d">mProgress</a></td></tr>
+<tr class="separator:ac3af03737eec78bb9ec9b18748fc193d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b4d4f0c798443a877580943ace32de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a12b4d4f0c798443a877580943ace32de">mHasPixelInfo</a></td></tr>
+<tr class="separator:a12b4d4f0c798443a877580943ace32de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d933da6e8f9cd295e5f0f2df3ddeb3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a5d933da6e8f9cd295e5f0f2df3ddeb3a">mHasPartialFrame</a></td></tr>
+<tr class="separator:a5d933da6e8f9cd295e5f0f2df3ddeb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a6df628508b4260dd658a57715121c3"><td class="memItemLeft" align="right" valign="top">network::BaseFrame::Viewport&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a2a6df628508b4260dd658a57715121c3">mRezedViewport</a></td></tr>
+<tr class="separator:a2a6df628508b4260dd658a57715121c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a47c3c7b152d3ef14b8a77ccbc534c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a67a47c3c7b152d3ef14b8a77ccbc534c">mFrameWidth</a></td></tr>
+<tr class="separator:a67a47c3c7b152d3ef14b8a77ccbc534c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b1871ec41bea20d6e49083cbe3207c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a74b1871ec41bea20d6e49083cbe3207c">mFrameHeight</a></td></tr>
+<tr class="separator:a74b1871ec41bea20d6e49083cbe3207c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bbb088ef3c741a18b7a62909e676c76"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a6bbb088ef3c741a18b7a62909e676c76">mFirstFrame</a></td></tr>
+<tr class="separator:a6bbb088ef3c741a18b7a62909e676c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bfc91ad5315c4f6d13905780162e868"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a2bfc91ad5315c4f6d13905780162e868">mNeedsStartedSent</a></td></tr>
+<tr class="separator:a2bfc91ad5315c4f6d13905780162e868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d6e91e90682f9087dccdef4882fcefe"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a9d6e91e90682f9087dccdef4882fcefe">mLastTime</a></td></tr>
+<tr class="separator:a9d6e91e90682f9087dccdef4882fcefe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92b6a29372bc28b7955e26a9aacd740"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ab92b6a29372bc28b7955e26a9aacd740">mFps</a></td></tr>
+<tr class="separator:ab92b6a29372bc28b7955e26a9aacd740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502fd0dc865dde7d711f24a2ffb172f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a502fd0dc865dde7d711f24a2ffb172f5">mUsingROI</a></td></tr>
+<tr class="memdesc:a502fd0dc865dde7d711f24a2ffb172f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag to indicate that we have a region of interest viewport set  <a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a502fd0dc865dde7d711f24a2ffb172f5">More...</a><br /></td></tr>
+<tr class="separator:a502fd0dc865dde7d711f24a2ffb172f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad072260a1b64bf41b7bebdafcbbebeb7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad072260a1b64bf41b7bebdafcbbebeb7">mMotionCaptureMode</a></td></tr>
+<tr class="separator:ad072260a1b64bf41b7bebdafcbbebeb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -94,7 +186,48 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8cc_source.html#l00082">82</a> of file <a class="el" href="_mcrt_rt_merge_computation_8cc_source.html">McrtRtMergeComputation.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   82</span>                                               :</div>
+<div class="line"><span class="lineno">   83</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a84c0e86803a6b9c57a7aa00e3469eefe">mArenaBlockPool</a>(util::alignedMallocCtorArgs&lt;alloc::ArenaBlockPool&gt;(CACHE_LINE_SIZE)),</div>
+<div class="line"><span class="lineno">   84</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a532efbb3ea264fae5618b4aabaab165c">mFbArray</a>(),</div>
+<div class="line"><span class="lineno">   85</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a73d295345389211f06d3fe37c7221813">mUpstreamBuffers</a>(),</div>
+<div class="line"><span class="lineno">   86</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a059111f1b5f5458cd1e8adc2ddae83a6">mUpstreamPixelInfoBuffers</a>(),</div>
+<div class="line"><span class="lineno">   87</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#aa245d9145d7555ac75086041920be3ae">mImageEncoding</a>(BaseFrame::ImageEncoding::ENCODING_RGB888),</div>
+<div class="line"><span class="lineno">   88</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a>(0),</div>
+<div class="line"><span class="lineno">   89</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad815af73f7a6c7e6f9e839ccc7e3e675">mStatus</a>(),</div>
+<div class="line"><span class="lineno">   90</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ac3af03737eec78bb9ec9b18748fc193d">mProgress</a>(),</div>
+<div class="line"><span class="lineno">   91</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a12b4d4f0c798443a877580943ace32de">mHasPixelInfo</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a5d933da6e8f9cd295e5f0f2df3ddeb3a">mHasPartialFrame</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">   93</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a67a47c3c7b152d3ef14b8a77ccbc534c">mFrameWidth</a>(0),</div>
+<div class="line"><span class="lineno">   94</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a74b1871ec41bea20d6e49083cbe3207c">mFrameHeight</a>(0),</div>
+<div class="line"><span class="lineno">   95</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a6bbb088ef3c741a18b7a62909e676c76">mFirstFrame</a>(<span class="keyword">true</span>),</div>
+<div class="line"><span class="lineno">   96</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a2bfc91ad5315c4f6d13905780162e868">mNeedsStartedSent</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">   97</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a9d6e91e90682f9087dccdef4882fcefe">mLastTime</a>(0.0),</div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ab92b6a29372bc28b7955e26a9aacd740">mFps</a>(5.0f),</div>
+<div class="line"><span class="lineno">   99</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a502fd0dc865dde7d711f24a2ffb172f5">mUsingROI</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">  100</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad072260a1b64bf41b7bebdafcbbebeb7">mMotionCaptureMode</a>(<span class="keyword">false</span>)</div>
+<div class="line"><span class="lineno">  101</span>{</div>
+<div class="line"><span class="lineno">  102</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ac0c88e88ed5fe351abccde176f42b491">mArena</a>.init(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a84c0e86803a6b9c57a7aa00e3469eefe">mArenaBlockPool</a>.get());</div>
+<div class="line"><span class="lineno">  103</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a059111f1b5f5458cd1e8adc2ddae83a6"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a059111f1b5f5458cd1e8adc2ddae83a6">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mUpstreamPixelInfoBuffers</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; fb_util::PixelInfoBuffer::PixelType &gt; &gt; mUpstreamPixelInfoBuffers</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00062">McrtRtMergeComputation.h:62</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a12b4d4f0c798443a877580943ace32de"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a12b4d4f0c798443a877580943ace32de">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mHasPixelInfo</a></div><div class="ttdeci">bool mHasPixelInfo</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00085">McrtRtMergeComputation.h:85</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a2bfc91ad5315c4f6d13905780162e868"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a2bfc91ad5315c4f6d13905780162e868">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mNeedsStartedSent</a></div><div class="ttdeci">bool mNeedsStartedSent</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00098">McrtRtMergeComputation.h:98</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a375a98dbbca1e7a952496cfc7176edda"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mNumMachines</a></div><div class="ttdeci">unsigned int mNumMachines</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00080">McrtRtMergeComputation.h:80</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a502fd0dc865dde7d711f24a2ffb172f5"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a502fd0dc865dde7d711f24a2ffb172f5">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mUsingROI</a></div><div class="ttdeci">bool mUsingROI</div><div class="ttdoc">flag to indicate that we have a region of interest viewport set</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00103">McrtRtMergeComputation.h:103</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a532efbb3ea264fae5618b4aabaab165c"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a532efbb3ea264fae5618b4aabaab165c">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mFbArray</a></div><div class="ttdeci">std::unique_ptr&lt; RenderFbArray &gt; mFbArray</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00057">McrtRtMergeComputation.h:57</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a5d933da6e8f9cd295e5f0f2df3ddeb3a"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a5d933da6e8f9cd295e5f0f2df3ddeb3a">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mHasPartialFrame</a></div><div class="ttdeci">bool mHasPartialFrame</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00086">McrtRtMergeComputation.h:86</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a67a47c3c7b152d3ef14b8a77ccbc534c"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a67a47c3c7b152d3ef14b8a77ccbc534c">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mFrameWidth</a></div><div class="ttdeci">unsigned int mFrameWidth</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00089">McrtRtMergeComputation.h:89</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a6bbb088ef3c741a18b7a62909e676c76"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a6bbb088ef3c741a18b7a62909e676c76">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mFirstFrame</a></div><div class="ttdeci">bool mFirstFrame</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00097">McrtRtMergeComputation.h:97</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a73d295345389211f06d3fe37c7221813"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a73d295345389211f06d3fe37c7221813">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mUpstreamBuffers</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; uint8_t &gt; &gt; mUpstreamBuffers</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00061">McrtRtMergeComputation.h:61</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a74b1871ec41bea20d6e49083cbe3207c"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a74b1871ec41bea20d6e49083cbe3207c">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mFrameHeight</a></div><div class="ttdeci">unsigned int mFrameHeight</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00090">McrtRtMergeComputation.h:90</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a84c0e86803a6b9c57a7aa00e3469eefe"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a84c0e86803a6b9c57a7aa00e3469eefe">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mArenaBlockPool</a></div><div class="ttdeci">util::Ref&lt; alloc::ArenaBlockPool &gt; mArenaBlockPool</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00050">McrtRtMergeComputation.h:50</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a9d6e91e90682f9087dccdef4882fcefe"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a9d6e91e90682f9087dccdef4882fcefe">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mLastTime</a></div><div class="ttdeci">double mLastTime</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00099">McrtRtMergeComputation.h:99</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_aa245d9145d7555ac75086041920be3ae"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#aa245d9145d7555ac75086041920be3ae">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mImageEncoding</a></div><div class="ttdeci">network::BaseFrame::ImageEncoding mImageEncoding</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00066">McrtRtMergeComputation.h:66</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_ab92b6a29372bc28b7955e26a9aacd740"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ab92b6a29372bc28b7955e26a9aacd740">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mFps</a></div><div class="ttdeci">float mFps</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00100">McrtRtMergeComputation.h:100</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_ac0c88e88ed5fe351abccde176f42b491"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ac0c88e88ed5fe351abccde176f42b491">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mArena</a></div><div class="ttdeci">alloc::Arena mArena</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00051">McrtRtMergeComputation.h:51</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_ac3af03737eec78bb9ec9b18748fc193d"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ac3af03737eec78bb9ec9b18748fc193d">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mProgress</a></div><div class="ttdeci">std::unique_ptr&lt; float[]&gt; mProgress</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00083">McrtRtMergeComputation.h:83</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_ad072260a1b64bf41b7bebdafcbbebeb7"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad072260a1b64bf41b7bebdafcbbebeb7">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mMotionCaptureMode</a></div><div class="ttdeci">bool mMotionCaptureMode</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00105">McrtRtMergeComputation.h:105</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_ad815af73f7a6c7e6f9e839ccc7e3e675"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad815af73f7a6c7e6f9e839ccc7e3e675">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mStatus</a></div><div class="ttdeci">std::unique_ptr&lt; network::BaseFrame::Status[]&gt; mStatus</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00082">McrtRtMergeComputation.h:82</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -123,7 +256,86 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8cc_source.html#l00106">106</a> of file <a class="el" href="_mcrt_rt_merge_computation_8cc_source.html">McrtRtMergeComputation.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  107</span>{</div>
+<div class="line"><span class="lineno">  108</span>    MOONRAY_LOG_INFO(<span class="stringliteral">&quot;&gt;&gt;&gt; McrtRtMergeComputation &lt;&lt;&lt; ...&quot;</span>);</div>
+<div class="line"><span class="lineno">  109</span> </div>
+<div class="line"><span class="lineno">  110</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad072260a1b64bf41b7bebdafcbbebeb7">mMotionCaptureMode</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  111</span>    <span class="keyword">const</span> std::string <a class="code hl_variable" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#ad89e124f38aaf7eeed77d2c900ab5c9f">sApplicationMode</a> = <span class="stringliteral">&quot;applicationMode&quot;</span>;</div>
+<div class="line"><span class="lineno">  112</span>    <span class="keywordflow">if</span> (!aConfig[sApplicationMode].isNull()) {</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">if</span> (aConfig[sApplicationMode].value().asInt() == 1) {</div>
+<div class="line"><span class="lineno">  114</span>            <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad072260a1b64bf41b7bebdafcbbebeb7">mMotionCaptureMode</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  115</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  116</span>            MOONRAY_LOG_ERROR(<span class="stringliteral">&quot;APPLICATION MODE SET TO UNDEFIND&quot;</span>);</div>
+<div class="line"><span class="lineno">  117</span>        }</div>
+<div class="line"><span class="lineno">  118</span>    }</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">if</span> (!aConfig[<span class="stringliteral">&quot;numMachines&quot;</span>].isNull()) {</div>
+<div class="line"><span class="lineno">  121</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a> = aConfig[<span class="stringliteral">&quot;numMachines&quot;</span>];</div>
+<div class="line"><span class="lineno">  122</span>        MNRY_ASSERT_REQUIRE(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a> &gt; 0);</div>
+<div class="line"><span class="lineno">  123</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a73d295345389211f06d3fe37c7221813">mUpstreamBuffers</a>.resize(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a>);</div>
+<div class="line"><span class="lineno">  124</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a059111f1b5f5458cd1e8adc2ddae83a6">mUpstreamPixelInfoBuffers</a>.resize(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a>);</div>
+<div class="line"><span class="lineno">  125</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a1dc8a65f7516797ee4a1aadf221f8ae6">mTiles</a>.resize(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a>);</div>
+<div class="line"><span class="lineno">  126</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad815af73f7a6c7e6f9e839ccc7e3e675">mStatus</a>.reset(<span class="keyword">new</span> BaseFrame::Status[<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a>]);</div>
+<div class="line"><span class="lineno">  127</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ac3af03737eec78bb9ec9b18748fc193d">mProgress</a>.reset(<span class="keyword">new</span> <span class="keywordtype">float</span>[<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a>]);</div>
+<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a>; ++i) {</div>
+<div class="line"><span class="lineno">  129</span>            <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad815af73f7a6c7e6f9e839ccc7e3e675">mStatus</a>[i] = BaseFrame::ERROR;</div>
+<div class="line"><span class="lineno">  130</span>            <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ac3af03737eec78bb9ec9b18748fc193d">mProgress</a>[i] = 0.0;</div>
+<div class="line"><span class="lineno">  131</span>        }</div>
+<div class="line"><span class="lineno">  132</span>        <span class="keywordtype">int</span> totalCacheFrame = 6;</div>
+<div class="line"><span class="lineno">  133</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a532efbb3ea264fae5618b4aabaab165c">mFbArray</a>.reset(<span class="keyword">new</span> RenderFbArray(totalCacheFrame, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a>));</div>
+<div class="line"><span class="lineno">  134</span>        </div>
+<div class="line"><span class="lineno">  135</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  136</span>        MNRY_ASSERT_REQUIRE(<span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">  137</span>            <span class="stringliteral">&quot;numMachines is a required config setting for the mcrt_merge computation&quot;</span>);</div>
+<div class="line"><span class="lineno">  138</span>    }</div>
+<div class="line"><span class="lineno">  139</span> </div>
+<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">if</span> (!aConfig[<span class="stringliteral">&quot;imageEncoding&quot;</span>].isNull()) {</div>
+<div class="line"><span class="lineno">  141</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#aa245d9145d7555ac75086041920be3ae">mImageEncoding</a> = <span class="keyword">static_cast&lt;</span>BaseFrame::ImageEncoding<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>((aConfig[<span class="stringliteral">&quot;imageEncoding&quot;</span>])));</div>
+<div class="line"><span class="lineno">  142</span>    }</div>
+<div class="line"><span class="lineno">  143</span> </div>
+<div class="line"><span class="lineno">  144</span>    <span class="keywordflow">if</span> (!aConfig[<span class="stringliteral">&quot;fps&quot;</span>].isNull()) {</div>
+<div class="line"><span class="lineno">  145</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ab92b6a29372bc28b7955e26a9aacd740">mFps</a> = aConfig[<span class="stringliteral">&quot;fps&quot;</span>];</div>
+<div class="line"><span class="lineno">  146</span>    }</div>
+<div class="line"><span class="lineno">  147</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a1dc8a65f7516797ee4a1aadf221f8ae6"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a1dc8a65f7516797ee4a1aadf221f8ae6">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mTiles</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; fb_util::Tile &gt; &gt; mTiles</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00063">McrtRtMergeComputation.h:63</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03_html_ad89e124f38aaf7eeed77d2c900ab5c9f"><div class="ttname"><a href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#ad89e124f38aaf7eeed77d2c900ab5c9f">moonray::anonymous_namespace{McrtRtComputation.cc}::sApplicationMode</a></div><div class="ttdeci">const std::string sApplicationMode</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_computation_8cc_source.html#l00130">McrtRtComputation.cc:130</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5bc35678eac84ac1e0eaa47aa7ac19d3" name="a5bc35678eac84ac1e0eaa47aa7ac19d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bc35678eac84ac1e0eaa47aa7ac19d3">&#9670;&#160;</a></span>fpsIntervalPassed()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::fpsIntervalPassed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8cc_source.html#l00150">150</a> of file <a class="el" href="_mcrt_rt_merge_computation_8cc_source.html">McrtRtMergeComputation.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  151</span>{</div>
+<div class="line"><span class="lineno">  152</span>    <span class="comment">// In a single machine setup, frame gating is handled here.</span></div>
+<div class="line"><span class="lineno">  153</span>    <span class="keywordtype">double</span> now = util::getSeconds();</div>
+<div class="line"><span class="lineno">  154</span>    <span class="keywordflow">if</span> (now - <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a9d6e91e90682f9087dccdef4882fcefe">mLastTime</a> &lt; (1.0f / <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ab92b6a29372bc28b7955e26a9aacd740">mFps</a>)) {</div>
+<div class="line"><span class="lineno">  155</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  156</span>    }</div>
+<div class="line"><span class="lineno">  157</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a9d6e91e90682f9087dccdef4882fcefe">mLastTime</a> = now;</div>
+<div class="line"><span class="lineno">  158</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  159</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a90de9775baf6cd77bbccff3c6995e432" name="a90de9775baf6cd77bbccff3c6995e432"></a>
@@ -150,7 +362,284 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8cc_source.html#l00162">162</a> of file <a class="el" href="_mcrt_rt_merge_computation_8cc_source.html">McrtRtMergeComputation.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  163</span>{</div>
+<div class="line"><span class="lineno">  164</span>    <span class="comment">// If we don&#39;t have any upstream buffers, don&#39;t bother.</span></div>
+<div class="line"><span class="lineno">  165</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad072260a1b64bf41b7bebdafcbbebeb7">mMotionCaptureMode</a>) {</div>
+<div class="line"><span class="lineno">  166</span>        <a class="code hl_function" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ab1ad5a76ca60a753ccb3d44dc5a375bb">onIdle_mocap</a>();</div>
+<div class="line"><span class="lineno">  167</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  168</span>    }</div>
+<div class="line"><span class="lineno">  169</span> </div>
+<div class="line"><span class="lineno">  170</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a> == 0 || <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a73d295345389211f06d3fe37c7221813">mUpstreamBuffers</a>.empty() || <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.getArea() == 0 || !<a class="code hl_function" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a5bc35678eac84ac1e0eaa47aa7ac19d3">fpsIntervalPassed</a>()) {</div>
+<div class="line"><span class="lineno">  171</span>        <span class="comment">//MOONRAY_LOG_DEBUG(&quot;Returning early: mNumMachines: %d | mUpstreamBuffers.empty(): %s | mFinalFrame.getArea(): %d | fpsIntervalPassed: %s&quot;, mNumMachines, boolToString(mUpstreamBuffers.empty()), mFinalFrame.getArea(), boolToString(fpsIntervalPassed()));</span></div>
+<div class="line"><span class="lineno">  172</span>        <span class="comment">//MOONRAY_LOG_DEBUG_STR(&quot;Returning early: mNumMachines:&quot; &lt;&lt; mNumMachines &lt;&lt; &quot; | mUpstreamBuffers.empty(): &quot; &lt;&lt; boolToString(mUpstreamBuffers.empty()) &lt;&lt; &quot; | mFinalFrame.getArea(): &quot; &lt;&lt; mFinalFrame.getArea() &lt;&lt; &quot; | fpsIntervalPassed: &quot; &lt;&lt; boolToString(fpsIntervalPassed()));</span></div>
+<div class="line"><span class="lineno">  173</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  174</span>    }</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>    <span class="keywordtype">float</span> progress = 0.f;</div>
+<div class="line"><span class="lineno">  177</span>    <span class="keywordtype">bool</span> hasUpstreamBuffer = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a>; ++i) {</div>
+<div class="line"><span class="lineno">  179</span>        <span class="comment">// This makes sure we at least have some</span></div>
+<div class="line"><span class="lineno">  180</span>        <span class="comment">// part of the frame to show.</span></div>
+<div class="line"><span class="lineno">  181</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a73d295345389211f06d3fe37c7221813">mUpstreamBuffers</a>[i].<a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a>() != 0) {</div>
+<div class="line"><span class="lineno">  182</span>            hasUpstreamBuffer = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  183</span>        }</div>
+<div class="line"><span class="lineno">  184</span>        progress += <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ac3af03737eec78bb9ec9b18748fc193d">mProgress</a>[i];</div>
+<div class="line"><span class="lineno">  185</span>    }</div>
+<div class="line"><span class="lineno">  186</span>    </div>
+<div class="line"><span class="lineno">  187</span>    <span class="keywordflow">if</span> (!hasUpstreamBuffer) {</div>
+<div class="line"><span class="lineno">  188</span>        MOONRAY_LOG_DEBUG(<span class="stringliteral">&quot;Returning early: hasUpstreamBuffer %s&quot;</span>, <a class="code hl_function" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_merge_computation_8cc_03.html#ac9f0b10e7ef71e4326ad3e03ad6f8685">boolToString</a>(hasUpstreamBuffer));</div>
+<div class="line"><span class="lineno">  189</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  190</span>    }</div>
+<div class="line"><span class="lineno">  191</span>    progress = std::min(progress, 1.0f);</div>
+<div class="line"><span class="lineno">  192</span> </div>
+<div class="line"><span class="lineno">  193</span>    BaseFrame::Status status = BaseFrame::FINISHED;</div>
+<div class="line"><span class="lineno">  194</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a>; ++i) {</div>
+<div class="line"><span class="lineno">  195</span>        <span class="comment">// It seems like it is possible that by the time</span></div>
+<div class="line"><span class="lineno">  196</span>        <span class="comment">// the first frame is ready to be sent after applying</span></div>
+<div class="line"><span class="lineno">  197</span>        <span class="comment">// an update all the nodes could be on </span></div>
+<div class="line"><span class="lineno">  198</span>        <span class="comment">// BaseFrame::RENDERING but it is</span></div>
+<div class="line"><span class="lineno">  199</span>        <span class="comment">// Important that at least one STARTED notice is sent</span></div>
+<div class="line"><span class="lineno">  200</span>        <span class="comment">// at the begining</span></div>
+<div class="line"><span class="lineno">  201</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a2bfc91ad5315c4f6d13905780162e868">mNeedsStartedSent</a>) {</div>
+<div class="line"><span class="lineno">  202</span>            status = BaseFrame::STARTED;</div>
+<div class="line"><span class="lineno">  203</span>            <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a2bfc91ad5315c4f6d13905780162e868">mNeedsStartedSent</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  204</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  205</span>        }</div>
+<div class="line"><span class="lineno">  206</span>        <span class="comment">// If at least one machine is not finished make sure we don&#39;t report finished.</span></div>
+<div class="line"><span class="lineno">  207</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad815af73f7a6c7e6f9e839ccc7e3e675">mStatus</a>[i] != BaseFrame::FINISHED) {</div>
+<div class="line"><span class="lineno">  208</span>            status = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad815af73f7a6c7e6f9e839ccc7e3e675">mStatus</a>[i];</div>
+<div class="line"><span class="lineno">  209</span>        }</div>
+<div class="line"><span class="lineno">  210</span>    }</div>
+<div class="line"><span class="lineno">  211</span> </div>
+<div class="line"><span class="lineno">  212</span>     <span class="comment">// If we haven&#39;t gotten any new frames just return</span></div>
+<div class="line"><span class="lineno">  213</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a5d933da6e8f9cd295e5f0f2df3ddeb3a">mHasPartialFrame</a>) {</div>
+<div class="line"><span class="lineno">  214</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  215</span>    }</div>
+<div class="line"><span class="lineno">  216</span> </div>
+<div class="line"><span class="lineno">  217</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a5d933da6e8f9cd295e5f0f2df3ddeb3a">mHasPartialFrame</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  218</span> </div>
+<div class="line"><span class="lineno">  219</span>    <span class="comment">// Send it downstream.</span></div>
+<div class="line"><span class="lineno">  220</span>    RenderedFrame::Ptr frameMsg(<span class="keyword">new</span> RenderedFrame);</div>
+<div class="line"><span class="lineno">  221</span> </div>
+<div class="line"><span class="lineno">  222</span>    frameMsg-&gt;mHeader.mRezedViewport = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a2a6df628508b4260dd658a57715121c3">mRezedViewport</a>;</div>
+<div class="line"><span class="lineno">  223</span>    frameMsg-&gt;mHeader.mStatus = status;</div>
+<div class="line"><span class="lineno">  224</span>    frameMsg-&gt;mHeader.mProgress = progress;</div>
+<div class="line"><span class="lineno">  225</span> </div>
+<div class="line"><span class="lineno">  226</span>    <span class="comment">// Copy each upstream buffer into the final frame buffer.</span></div>
+<div class="line"><span class="lineno">  227</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a73d295345389211f06d3fe37c7221813">mUpstreamBuffers</a>.size(); ++i) {</div>
+<div class="line"><span class="lineno">  228</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a1dc8a65f7516797ee4a1aadf221f8ae6">mTiles</a>[i].empty() &amp;&amp; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a73d295345389211f06d3fe37c7221813">mUpstreamBuffers</a>[i].<a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a>() != 0) {</div>
+<div class="line"><span class="lineno">  229</span>            <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a9b9703ebcf235daeb922484d14ae6232">mTiledFrame</a>.unpackSparseTiles(&amp;<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a73d295345389211f06d3fe37c7221813">mUpstreamBuffers</a>[i][0], <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a1dc8a65f7516797ee4a1aadf221f8ae6">mTiles</a>[i]);</div>
+<div class="line"><span class="lineno">  230</span>        }</div>
+<div class="line"><span class="lineno">  231</span>    }</div>
+<div class="line"><span class="lineno">  232</span> </div>
+<div class="line"><span class="lineno">  233</span>    <span class="comment">// Untile buffer.</span></div>
+<div class="line"><span class="lineno">  234</span>    fb_util::Tiler tiler(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.getWidth(), <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.getHeight());</div>
+<div class="line"><span class="lineno">  235</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.untile(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a9b9703ebcf235daeb922484d14ae6232">mTiledFrame</a>, tiler, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  236</span> </div>
+<div class="line"><span class="lineno">  237</span><span class="preprocessor">#   ifdef ALPHA_VIEW_TEST</span></div>
+<div class="line"><span class="lineno">  238</span>    tmpHack(&amp;<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>);      <span class="comment">// test code to view alpha value</span></div>
+<div class="line"><span class="lineno">  239</span><span class="preprocessor">#   endif </span><span class="comment">// end ALPHA_VIEW_TEST</span></div>
+<div class="line"><span class="lineno">  240</span> </div>
+<div class="line"><span class="lineno">  241</span> </div>
+<div class="line"><span class="lineno">  242</span>    <span class="comment">// Image buffer as unsigned char</span></div>
+<div class="line"><span class="lineno">  243</span>    moonray::network::DataPtr buffer;</div>
+<div class="line"><span class="lineno">  244</span> </div>
+<div class="line"><span class="lineno">  245</span>    <span class="comment">// Size of image buffer in bytes</span></div>
+<div class="line"><span class="lineno">  246</span>    <span class="keywordtype">size_t</span> bufferLength;</div>
+<div class="line"><span class="lineno">  247</span> </div>
+<div class="line"><span class="lineno">  248</span>    math::Viewport fullViewport(0, 0, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a67a47c3c7b152d3ef14b8a77ccbc534c">mFrameWidth</a> - 1, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a74b1871ec41bea20d6e49083cbe3207c">mFrameHeight</a> - 1);</div>
+<div class="line"><span class="lineno">  249</span> </div>
+<div class="line"><span class="lineno">  250</span>    <span class="comment">// If we&#39;re using an ROI viewport, then copy the contents of the final frame into our smaller buffer</span></div>
+<div class="line"><span class="lineno">  251</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a502fd0dc865dde7d711f24a2ffb172f5">mUsingROI</a>) {</div>
+<div class="line"><span class="lineno">  252</span>        frameMsg-&gt;mHeader.setViewport(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.mMinX, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.mMinY, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.mMaxX, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.mMaxY);</div>
+<div class="line"><span class="lineno">  253</span>        MOONRAY_LOG_DEBUG(<span class="stringliteral">&quot;Using ROI Viewport: (%d, %d, %d, %d) (%d x %d)&quot;</span>, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.mMinX, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.mMinY, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.mMaxX, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.mMaxY, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.width(), <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.height());</div>
+<div class="line"><span class="lineno">  254</span>            fb_util::copyRoiBuffer&lt;uint8_t&gt;</div>
+<div class="line"><span class="lineno">  255</span>                       (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>, fullViewport, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.getSizeOfPixel(),</div>
+<div class="line"><span class="lineno">  256</span>                        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a35ace32808dc41fa1d56c9e9e04becdf">mRoiPixelBuffer</a>.getData(),</div>
+<div class="line"><span class="lineno">  257</span>                        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.getData(), bufferLength);</div>
+<div class="line"><span class="lineno">  258</span>            buffer = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a35ace32808dc41fa1d56c9e9e04becdf">mRoiPixelBuffer</a>.getDataShared();</div>
+<div class="line"><span class="lineno">  259</span>    } <span class="keywordflow">else</span> { <span class="comment">// Otherwise, use the full buffer</span></div>
+<div class="line"><span class="lineno">  260</span>        frameMsg-&gt;mHeader.mViewport.reset();</div>
+<div class="line"><span class="lineno">  261</span>        buffer = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.getDataShared();</div>
+<div class="line"><span class="lineno">  262</span>        bufferLength = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.getArea() * <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.getSizeOfPixel();</div>
+<div class="line"><span class="lineno">  263</span>    }</div>
+<div class="line"><span class="lineno">  264</span> </div>
+<div class="line"><span class="lineno">  265</span>    frameMsg-&gt;addBuffer(buffer, bufferLength, <span class="stringliteral">&quot;beauty&quot;</span>, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#aa245d9145d7555ac75086041920be3ae">mImageEncoding</a>);</div>
+<div class="line"><span class="lineno">  266</span> </div>
+<div class="line"><span class="lineno">  267</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a12b4d4f0c798443a877580943ace32de">mHasPixelInfo</a>) {</div>
+<div class="line"><span class="lineno">  268</span>        <span class="comment">// Copy each upstream pixel buffer into the final pixel info buffer.</span></div>
+<div class="line"><span class="lineno">  269</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a059111f1b5f5458cd1e8adc2ddae83a6">mUpstreamPixelInfoBuffers</a>.size(); ++i) {</div>
+<div class="line"><span class="lineno">  270</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a1dc8a65f7516797ee4a1aadf221f8ae6">mTiles</a>[i].empty() &amp;&amp; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a059111f1b5f5458cd1e8adc2ddae83a6">mUpstreamPixelInfoBuffers</a>[i].<a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a>() != 0) {</div>
+<div class="line"><span class="lineno">  271</span>                fb_util::unpackSparseTiles(&amp;<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#af614492be8a73abb0770e409f4343d25">mPixelInfoTiledFrame</a>, &amp;<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a059111f1b5f5458cd1e8adc2ddae83a6">mUpstreamPixelInfoBuffers</a>[i][0], <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a1dc8a65f7516797ee4a1aadf221f8ae6">mTiles</a>[i]);</div>
+<div class="line"><span class="lineno">  272</span>            }</div>
+<div class="line"><span class="lineno">  273</span>        }</div>
+<div class="line"><span class="lineno">  274</span> </div>
+<div class="line"><span class="lineno">  275</span>        <span class="comment">// Untile buffer.</span></div>
+<div class="line"><span class="lineno">  276</span>        fb_util::Tiler tiler(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ae5964469aa63f2ab43083ce4dbc2e7f5">mFinalPixelInfoFrame</a>.getWidth(), <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ae5964469aa63f2ab43083ce4dbc2e7f5">mFinalPixelInfoFrame</a>.getHeight());</div>
+<div class="line"><span class="lineno">  277</span>        fb_util::untile(&amp;<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ae5964469aa63f2ab43083ce4dbc2e7f5">mFinalPixelInfoFrame</a>, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#af614492be8a73abb0770e409f4343d25">mPixelInfoTiledFrame</a>, tiler, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">  278</span>                        [](<span class="keyword">const</span> fb_util::PixelInfoBuffer::PixelType &amp;pixel, <span class="keywordtype">unsigned</span>)</div>
+<div class="line"><span class="lineno">  279</span>                        -&gt; <span class="keyword">const</span> fb_util::PixelInfoBuffer::PixelType &amp; {</div>
+<div class="line"><span class="lineno">  280</span>                            <span class="keywordflow">return</span> pixel;</div>
+<div class="line"><span class="lineno">  281</span>                        });</div>
+<div class="line"><span class="lineno">  282</span> </div>
+<div class="line"><span class="lineno">  283</span> </div>
+<div class="line"><span class="lineno">  284</span>        <span class="comment">// Handle ROI for the pixel buffer</span></div>
+<div class="line"><span class="lineno">  285</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a502fd0dc865dde7d711f24a2ffb172f5">mUsingROI</a>) {</div>
+<div class="line"><span class="lineno">  286</span>            fb_util::copyRoiBuffer&lt;float&gt;</div>
+<div class="line"><span class="lineno">  287</span>                        (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>, fullViewport, 1,</div>
+<div class="line"><span class="lineno">  288</span>                         <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">float</span> *<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8a1145867f269cdf16b19d2a1ca79327">mRoiPixelInfoBuffer</a>.getData()),</div>
+<div class="line"><span class="lineno">  289</span>                         <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">float</span> *<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ae5964469aa63f2ab43083ce4dbc2e7f5">mFinalPixelInfoFrame</a>.getData()), bufferLength);</div>
+<div class="line"><span class="lineno">  290</span>            buffer = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8a1145867f269cdf16b19d2a1ca79327">mRoiPixelInfoBuffer</a>.getDataSharedAs&lt;uint8_t&gt;();</div>
+<div class="line"><span class="lineno">  291</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  292</span>            buffer = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ae5964469aa63f2ab43083ce4dbc2e7f5">mFinalPixelInfoFrame</a>.getDataSharedAs&lt;uint8_t&gt;();</div>
+<div class="line"><span class="lineno">  293</span>            bufferLength = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ae5964469aa63f2ab43083ce4dbc2e7f5">mFinalPixelInfoFrame</a>.getArea() * <span class="keyword">sizeof</span>(<span class="keyword">decltype</span>(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ae5964469aa63f2ab43083ce4dbc2e7f5">mFinalPixelInfoFrame</a>)::PixelType); <span class="comment">// 1 float per pixel</span></div>
+<div class="line"><span class="lineno">  294</span>        }</div>
+<div class="line"><span class="lineno">  295</span> </div>
+<div class="line"><span class="lineno">  296</span>        MOONRAY_LOG_DEBUG(<span class="stringliteral">&quot;Adding pixel info buffer&quot;</span>);</div>
+<div class="line"><span class="lineno">  297</span>        frameMsg-&gt;addBuffer(buffer, bufferLength, <span class="stringliteral">&quot;depth&quot;</span>, BaseFrame::ENCODING_FLOAT);</div>
+<div class="line"><span class="lineno">  298</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a12b4d4f0c798443a877580943ace32de">mHasPixelInfo</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  299</span>    }</div>
+<div class="line"><span class="lineno">  300</span> </div>
+<div class="line"><span class="lineno">  301</span>    <span class="comment">// TODO... At this point we have a full sized linear buffer containing the final frame.</span></div>
+<div class="line"><span class="lineno">  302</span>    <span class="comment">// If there is an active ROI, we&#39;ll need to extract the relevant pixels into the</span></div>
+<div class="line"><span class="lineno">  303</span>    <span class="comment">// smaller ROI buffer right here.</span></div>
+<div class="line"><span class="lineno">  304</span> </div>
+<div class="line"><span class="lineno">  305</span>    MOONRAY_LOG_DEBUG(<span class="stringliteral">&quot;Sending frame!&quot;</span>);</div>
+<div class="line"><span class="lineno">  306</span>    send(frameMsg);</div>
+<div class="line"><span class="lineno">  307</span> </div>
+<div class="line"><span class="lineno">  308</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a6bbb088ef3c741a18b7a62909e676c76">mFirstFrame</a> == <span class="keyword">true</span>) {</div>
+<div class="line"><span class="lineno">  309</span>        moonray::network::GenericMessage::Ptr firstFrameMsg(<span class="keyword">new</span> moonray::network::GenericMessage);</div>
+<div class="line"><span class="lineno">  310</span>        firstFrameMsg-&gt;mValue = <span class="stringliteral">&quot;MCRT Rendered First Frame&quot;</span>;</div>
+<div class="line"><span class="lineno">  311</span>        send (firstFrameMsg);</div>
+<div class="line"><span class="lineno">  312</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a6bbb088ef3c741a18b7a62909e676c76">mFirstFrame</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  313</span>        MOONRAY_LOG_INFO(<span class="stringliteral">&quot;McrtMerge Sent first frame message&quot;</span>);</div>
+<div class="line"><span class="lineno">  314</span>    }</div>
+<div class="line"><span class="lineno">  315</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a2a6df628508b4260dd658a57715121c3"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a2a6df628508b4260dd658a57715121c3">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mRezedViewport</a></div><div class="ttdeci">network::BaseFrame::Viewport mRezedViewport</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00088">McrtRtMergeComputation.h:88</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a35ace32808dc41fa1d56c9e9e04becdf"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a35ace32808dc41fa1d56c9e9e04becdf">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mRoiPixelBuffer</a></div><div class="ttdeci">fb_util::VariablePixelBuffer mRoiPixelBuffer</div><div class="ttdoc">Holds buffers for ROI.</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00076">McrtRtMergeComputation.h:76</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a5bc35678eac84ac1e0eaa47aa7ac19d3"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a5bc35678eac84ac1e0eaa47aa7ac19d3">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::fpsIntervalPassed</a></div><div class="ttdeci">bool fpsIntervalPassed()</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8cc_source.html#l00150">McrtRtMergeComputation.cc:150</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a7f1bac70c84b416250fed6a88c3a046f"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mFinalFrame</a></div><div class="ttdeci">fb_util::VariablePixelBuffer mFinalFrame</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00070">McrtRtMergeComputation.h:70</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a8a1145867f269cdf16b19d2a1ca79327"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8a1145867f269cdf16b19d2a1ca79327">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mRoiPixelInfoBuffer</a></div><div class="ttdeci">fb_util::PixelInfoBuffer mRoiPixelInfoBuffer</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00077">McrtRtMergeComputation.h:77</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a8e89d4af3404c4b9c8d9f3676e54458b"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mViewport</a></div><div class="ttdeci">math::Viewport mViewport</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00053">McrtRtMergeComputation.h:53</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a9b9703ebcf235daeb922484d14ae6232"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a9b9703ebcf235daeb922484d14ae6232">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mTiledFrame</a></div><div class="ttdeci">fb_util::VariablePixelBuffer mTiledFrame</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00069">McrtRtMergeComputation.h:69</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_ab1ad5a76ca60a753ccb3d44dc5a375bb"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ab1ad5a76ca60a753ccb3d44dc5a375bb">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::onIdle_mocap</a></div><div class="ttdeci">void onIdle_mocap()</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8cc_source.html#l00318">McrtRtMergeComputation.cc:318</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_ae5964469aa63f2ab43083ce4dbc2e7f5"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ae5964469aa63f2ab43083ce4dbc2e7f5">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mFinalPixelInfoFrame</a></div><div class="ttdeci">fb_util::PixelInfoBuffer mFinalPixelInfoFrame</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00073">McrtRtMergeComputation.h:73</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_af614492be8a73abb0770e409f4343d25"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#af614492be8a73abb0770e409f4343d25">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mPixelInfoTiledFrame</a></div><div class="ttdeci">fb_util::PixelInfoBuffer mPixelInfoTiledFrame</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00072">McrtRtMergeComputation.h:72</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_resume_history_meta_data_8cc_03_html_a9a38a2aa0f811fa9e3761cd0049c46b8"><div class="ttname"><a href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">anonymous_namespace{ResumeHistoryMetaData.cc}::size</a></div><div class="ttdeci">MAYBE_UNUSED std::size_t size(const std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="_resume_history_meta_data_8cc_source.html#l00047">ResumeHistoryMetaData.cc:47</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1anonymous__namespace_02_mcrt_rt_merge_computation_8cc_03_html_ac9f0b10e7ef71e4326ad3e03ad6f8685"><div class="ttname"><a href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_merge_computation_8cc_03.html#ac9f0b10e7ef71e4326ad3e03ad6f8685">moonray::anonymous_namespace{McrtRtMergeComputation.cc}::boolToString</a></div><div class="ttdeci">const char * boolToString(bool v)</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8cc_source.html#l00071">McrtRtMergeComputation.cc:71</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab1ad5a76ca60a753ccb3d44dc5a375bb" name="ab1ad5a76ca60a753ccb3d44dc5a375bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1ad5a76ca60a753ccb3d44dc5a375bb">&#9670;&#160;</a></span>onIdle_mocap()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::onIdle_mocap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8cc_source.html#l00318">318</a> of file <a class="el" href="_mcrt_rt_merge_computation_8cc_source.html">McrtRtMergeComputation.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  319</span>{</div>
+<div class="line"><span class="lineno">  320</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a> == 0 || !<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a532efbb3ea264fae5618b4aabaab165c">mFbArray</a> || <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.getArea() == 0) {</div>
+<div class="line"><span class="lineno">  321</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  322</span>    }</div>
+<div class="line"><span class="lineno">  323</span> </div>
+<div class="line"><span class="lineno">  324</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a532efbb3ea264fae5618b4aabaab165c">mFbArray</a>-&gt;isActive()) {</div>
+<div class="line"><span class="lineno">  325</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  326</span>    }</div>
+<div class="line"><span class="lineno">  327</span> </div>
+<div class="line"><span class="lineno">  328</span>    <span class="keywordtype">double</span> now = util::getSeconds();</div>
+<div class="line"><span class="lineno">  329</span>    <span class="keywordflow">if</span> (now - <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a9d6e91e90682f9087dccdef4882fcefe">mLastTime</a> &lt; (1.0f / 60.0f)) {</div>
+<div class="line"><span class="lineno">  330</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  331</span>    }</div>
+<div class="line"><span class="lineno">  332</span> </div>
+<div class="line"><span class="lineno">  333</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a532efbb3ea264fae5618b4aabaab165c">mFbArray</a>-&gt;completeTestAndShift()) {</div>
+<div class="line"><span class="lineno">  334</span>        <span class="keywordflow">return</span>;                 <span class="comment">// could not find completed renderFb yet.</span></div>
+<div class="line"><span class="lineno">  335</span>    }</div>
+<div class="line"><span class="lineno">  336</span> </div>
+<div class="line"><span class="lineno">  337</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a9d6e91e90682f9087dccdef4882fcefe">mLastTime</a> = now;</div>
+<div class="line"><span class="lineno">  338</span> </div>
+<div class="line"><span class="lineno">  339</span>    RenderFb * cRenderFb = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a532efbb3ea264fae5618b4aabaab165c">mFbArray</a>-&gt;getLocal(0); <span class="comment">// get first frame data in the fbArray</span></div>
+<div class="line"><span class="lineno">  340</span>    <span class="keywordtype">float</span> progress = cRenderFb-&gt;unpackSparseTiles(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a1dc8a65f7516797ee4a1aadf221f8ae6">mTiles</a>, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a9b9703ebcf235daeb922484d14ae6232">mTiledFrame</a>);</div>
+<div class="line"><span class="lineno">  341</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a532efbb3ea264fae5618b4aabaab165c">mFbArray</a>-&gt;shiftFbTbl();     <span class="comment">// shift one frame</span></div>
+<div class="line"><span class="lineno">  342</span> </div>
+<div class="line"><span class="lineno">  343</span>    <span class="comment">// basically, mocap case, we always report as FINISHED.</span></div>
+<div class="line"><span class="lineno">  344</span>    <span class="comment">/*</span></div>
+<div class="line"><span class="lineno">  345</span><span class="comment">    BaseFrame::Status status = BaseFrame::FINISHED;</span></div>
+<div class="line"><span class="lineno">  346</span><span class="comment">    if (mNeedsStartedSent) {</span></div>
+<div class="line"><span class="lineno">  347</span><span class="comment">        // It is important that at least one STARTED notice is sent at the begining</span></div>
+<div class="line"><span class="lineno">  348</span><span class="comment">        status = BaseFrame::STARTED;</span></div>
+<div class="line"><span class="lineno">  349</span><span class="comment">        mNeedsStartedSent = false;</span></div>
+<div class="line"><span class="lineno">  350</span><span class="comment">    }</span></div>
+<div class="line"><span class="lineno">  351</span><span class="comment">    */</span></div>
+<div class="line"><span class="lineno">  352</span>    BaseFrame::Status status = BaseFrame::STARTED;</div>
+<div class="line"><span class="lineno">  353</span> </div>
+<div class="line"><span class="lineno">  354</span>    <span class="comment">// Untile buffer.</span></div>
+<div class="line"><span class="lineno">  355</span>    fb_util::Tiler tiler(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.getWidth(), <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.getHeight());</div>
+<div class="line"><span class="lineno">  356</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.untile(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a9b9703ebcf235daeb922484d14ae6232">mTiledFrame</a>, tiler, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  357</span> </div>
+<div class="line"><span class="lineno">  358</span>    <span class="comment">// Send it downstream.</span></div>
+<div class="line"><span class="lineno">  359</span>    RenderedFrame::Ptr frameMsg(<span class="keyword">new</span> RenderedFrame);</div>
+<div class="line"><span class="lineno">  360</span> </div>
+<div class="line"><span class="lineno">  361</span>    frameMsg-&gt;mHeader.mRezedViewport = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a2a6df628508b4260dd658a57715121c3">mRezedViewport</a>;</div>
+<div class="line"><span class="lineno">  362</span>    frameMsg-&gt;mHeader.mStatus = status;</div>
+<div class="line"><span class="lineno">  363</span>    frameMsg-&gt;mHeader.mProgress = progress;</div>
+<div class="line"><span class="lineno">  364</span> </div>
+<div class="line"><span class="lineno">  365</span>    <span class="comment">// Image buffer as unsigned char</span></div>
+<div class="line"><span class="lineno">  366</span>    moonray::network::DataPtr buffer;</div>
+<div class="line"><span class="lineno">  367</span> </div>
+<div class="line"><span class="lineno">  368</span>    <span class="comment">// Size of image buffer in bytes</span></div>
+<div class="line"><span class="lineno">  369</span>    <span class="keywordtype">size_t</span> bufferLength;</div>
+<div class="line"><span class="lineno">  370</span> </div>
+<div class="line"><span class="lineno">  371</span>    math::Viewport fullViewport(0, 0, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a67a47c3c7b152d3ef14b8a77ccbc534c">mFrameWidth</a> - 1, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a74b1871ec41bea20d6e49083cbe3207c">mFrameHeight</a> - 1);</div>
+<div class="line"><span class="lineno">  372</span> </div>
+<div class="line"><span class="lineno">  373</span>    <span class="comment">// If we&#39;re using an ROI viewport, then copy the contents of the final frame into our smaller buffer</span></div>
+<div class="line"><span class="lineno">  374</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a502fd0dc865dde7d711f24a2ffb172f5">mUsingROI</a>) {</div>
+<div class="line"><span class="lineno">  375</span>        frameMsg-&gt;mHeader.setViewport(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.mMinX, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.mMinY, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.mMaxX, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.mMaxY);</div>
+<div class="line"><span class="lineno">  376</span>        MOONRAY_LOG_DEBUG(<span class="stringliteral">&quot;Using ROI Viewport: (%d, %d, %d, %d) (%d x %d)&quot;</span>,</div>
+<div class="line"><span class="lineno">  377</span>                        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.mMinX, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.mMinY, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.mMaxX, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.mMaxY,</div>
+<div class="line"><span class="lineno">  378</span>                        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.width(), <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.height());</div>
+<div class="line"><span class="lineno">  379</span>        fb_util::copyRoiBuffer&lt;uint8_t&gt;(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>, fullViewport, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.getSizeOfPixel(),</div>
+<div class="line"><span class="lineno">  380</span>                                     <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a35ace32808dc41fa1d56c9e9e04becdf">mRoiPixelBuffer</a>.getData(),</div>
+<div class="line"><span class="lineno">  381</span>                                     <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.getData(), bufferLength);</div>
+<div class="line"><span class="lineno">  382</span>        buffer = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a35ace32808dc41fa1d56c9e9e04becdf">mRoiPixelBuffer</a>.getDataShared();</div>
+<div class="line"><span class="lineno">  383</span>    } <span class="keywordflow">else</span> { <span class="comment">// Otherwise, use the full buffer</span></div>
+<div class="line"><span class="lineno">  384</span>        frameMsg-&gt;mHeader.mViewport.reset();</div>
+<div class="line"><span class="lineno">  385</span>        buffer = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.getDataShared();</div>
+<div class="line"><span class="lineno">  386</span>        bufferLength = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.getArea() * <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.getSizeOfPixel();</div>
+<div class="line"><span class="lineno">  387</span>    }</div>
+<div class="line"><span class="lineno">  388</span> </div>
+<div class="line"><span class="lineno">  389</span>    frameMsg-&gt;addBuffer(buffer, bufferLength, <span class="stringliteral">&quot;beauty&quot;</span>, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#aa245d9145d7555ac75086041920be3ae">mImageEncoding</a>);</div>
+<div class="line"><span class="lineno">  390</span> </div>
+<div class="line"><span class="lineno">  391</span>    <span class="comment">// Not support pixelInfo mode for mocap</span></div>
+<div class="line"><span class="lineno">  392</span> </div>
+<div class="line"><span class="lineno">  393</span>    MOONRAY_LOG_DEBUG(<span class="stringliteral">&quot;Sending frame!&quot;</span>);</div>
+<div class="line"><span class="lineno">  394</span>    send(frameMsg);</div>
+<div class="line"><span class="lineno">  395</span> </div>
+<div class="line"><span class="lineno">  396</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a6bbb088ef3c741a18b7a62909e676c76">mFirstFrame</a> == <span class="keyword">true</span> ) {</div>
+<div class="line"><span class="lineno">  397</span>        moonray::network::GenericMessage::Ptr firstFrameMsg(<span class="keyword">new</span> moonray::network::GenericMessage);</div>
+<div class="line"><span class="lineno">  398</span>        firstFrameMsg-&gt;mValue = <span class="stringliteral">&quot;MCRT Rendered First Frame&quot;</span>;</div>
+<div class="line"><span class="lineno">  399</span>        send(firstFrameMsg);</div>
+<div class="line"><span class="lineno">  400</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a6bbb088ef3c741a18b7a62909e676c76">mFirstFrame</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  401</span>        MOONRAY_LOG_INFO(<span class="stringliteral">&quot;McrtMerge Sent first frame message&quot;</span>);</div>
+<div class="line"><span class="lineno">  402</span>    }</div>
+<div class="line"><span class="lineno">  403</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3168127e08c13f9d052ae3877f2e989c" name="a3168127e08c13f9d052ae3877f2e989c"></a>
@@ -178,6 +667,917 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8cc_source.html#l00406">406</a> of file <a class="el" href="_mcrt_rt_merge_computation_8cc_source.html">McrtRtMergeComputation.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  407</span>{</div>
+<div class="line"><span class="lineno">  408</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad072260a1b64bf41b7bebdafcbbebeb7">mMotionCaptureMode</a>) {</div>
+<div class="line"><span class="lineno">  409</span>        <a class="code hl_function" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad4fff84f118dff11bdf86e526e86125f">onMessage_mocap</a>(aMsg);</div>
+<div class="line"><span class="lineno">  410</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  411</span>    }</div>
+<div class="line"><span class="lineno">  412</span> </div>
+<div class="line"><span class="lineno">  413</span>    <span class="keywordflow">if</span> (aMsg-&gt;id() == PartialFrame::ID) {</div>
+<div class="line"><span class="lineno">  414</span>        PartialFrame&amp; partial = <span class="keyword">static_cast&lt;</span>PartialFrame&amp;<span class="keyword">&gt;</span>(*aMsg);</div>
+<div class="line"><span class="lineno">  415</span>        <a class="code hl_function" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a5f3f569687d3b31f282c766b913a275f">onViewportChanged</a>(partial);</div>
+<div class="line"><span class="lineno">  416</span> </div>
+<div class="line"><span class="lineno">  417</span>        <span class="keywordtype">int</span> machineId = partial.mMachineId;</div>
+<div class="line"><span class="lineno">  418</span>        <span class="comment">//MOONRAY_LOG_DEBUG(&quot;machineId: %s vs mNumMachines; %d&quot;, machineId, mNumMachines);</span></div>
+<div class="line"><span class="lineno">  419</span>        MNRY_ASSERT_REQUIRE((<span class="keywordtype">unsigned</span>)machineId &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a>);</div>
+<div class="line"><span class="lineno">  420</span> </div>
+<div class="line"><span class="lineno">  421</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; buffer: partial.mBuffers) {</div>
+<div class="line"><span class="lineno">  422</span>            <span class="comment">// TODO: Extract buffers by type</span></div>
+<div class="line"><span class="lineno">  423</span>            <span class="keywordflow">if</span> (!std::strcmp(buffer.mName, <span class="stringliteral">&quot;beauty&quot;</span>)) {</div>
+<div class="line"><span class="lineno">  424</span>                <span class="keyword">auto</span> &amp;buf = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a73d295345389211f06d3fe37c7221813">mUpstreamBuffers</a>[machineId];</div>
+<div class="line"><span class="lineno">  425</span>                MNRY_ASSERT(buffer.mDataLength);</div>
+<div class="line"><span class="lineno">  426</span>                buf.resize(buffer.mDataLength);</div>
+<div class="line"><span class="lineno">  427</span>                memcpy(&amp;buf[0], buffer.mData.get(), buffer.mDataLength);</div>
+<div class="line"><span class="lineno">  428</span>                <span class="keywordflow">if</span> (partial.getStatus() == BaseFrame::STARTED) {</div>
+<div class="line"><span class="lineno">  429</span>                    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a2bfc91ad5315c4f6d13905780162e868">mNeedsStartedSent</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  430</span>                }</div>
+<div class="line"><span class="lineno">  431</span>                <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a5d933da6e8f9cd295e5f0f2df3ddeb3a">mHasPartialFrame</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  432</span>                <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad815af73f7a6c7e6f9e839ccc7e3e675">mStatus</a>[machineId] = partial.getStatus();</div>
+<div class="line"><span class="lineno">  433</span>                <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ac3af03737eec78bb9ec9b18748fc193d">mProgress</a>[machineId] = partial.getProgress();</div>
+<div class="line"><span class="lineno">  434</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!std::strcmp(buffer.mName, <span class="stringliteral">&quot;depth&quot;</span>)) {</div>
+<div class="line"><span class="lineno">  435</span>                <span class="keyword">auto</span> &amp;buf = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a059111f1b5f5458cd1e8adc2ddae83a6">mUpstreamPixelInfoBuffers</a>[machineId];</div>
+<div class="line"><span class="lineno">  436</span>                MNRY_ASSERT(buffer.mDataLength &amp;&amp;</div>
+<div class="line"><span class="lineno">  437</span>                           (buffer.mDataLength % <span class="keyword">sizeof</span>(fb_util::PixelInfoBuffer::PixelType) == 0));</div>
+<div class="line"><span class="lineno">  438</span>                buf.resize(buffer.mDataLength);</div>
+<div class="line"><span class="lineno">  439</span>                memcpy(&amp;buf[0], buffer.mData.get(), buffer.mDataLength);</div>
+<div class="line"><span class="lineno">  440</span>                <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a12b4d4f0c798443a877580943ace32de">mHasPixelInfo</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  441</span>            }</div>
+<div class="line"><span class="lineno">  442</span>        }</div>
+<div class="line"><span class="lineno">  443</span>    }</div>
+<div class="line"><span class="lineno">  444</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_a5f3f569687d3b31f282c766b913a275f"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a5f3f569687d3b31f282c766b913a275f">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::onViewportChanged</a></div><div class="ttdeci">void onViewportChanged(const network::PartialFrame &amp;msg)</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8cc_source.html#l00460">McrtRtMergeComputation.cc:460</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_ad4fff84f118dff11bdf86e526e86125f"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ad4fff84f118dff11bdf86e526e86125f">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::onMessage_mocap</a></div><div class="ttdeci">void onMessage_mocap(const moonray::network::Message::Ptr msg)</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8cc_source.html#l00447">McrtRtMergeComputation.cc:447</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad4fff84f118dff11bdf86e526e86125f" name="ad4fff84f118dff11bdf86e526e86125f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4fff84f118dff11bdf86e526e86125f">&#9670;&#160;</a></span>onMessage_mocap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::onMessage_mocap </td>
+          <td>(</td>
+          <td class="paramtype">const moonray::network::Message::Ptr&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8cc_source.html#l00447">447</a> of file <a class="el" href="_mcrt_rt_merge_computation_8cc_source.html">McrtRtMergeComputation.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  448</span>{</div>
+<div class="line"><span class="lineno">  449</span>    MOONRAY_LOG_INFO(<span class="stringliteral">&quot;Merge received message: %s&quot;</span>, aMsg-&gt;name());</div>
+<div class="line"><span class="lineno">  450</span> </div>
+<div class="line"><span class="lineno">  451</span>    <span class="keywordflow">if</span> (aMsg-&gt;id() == PartialFrame::ID) {</div>
+<div class="line"><span class="lineno">  452</span>        PartialFrame&amp; partial = <span class="keyword">static_cast&lt;</span>PartialFrame&amp;<span class="keyword">&gt;</span>(*aMsg);</div>
+<div class="line"><span class="lineno">  453</span>        <a class="code hl_function" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a5f3f569687d3b31f282c766b913a275f">onViewportChanged</a>(partial);</div>
+<div class="line"><span class="lineno">  454</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a532efbb3ea264fae5618b4aabaab165c">mFbArray</a>-&gt;storePartialFrame(partial, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>);</div>
+<div class="line"><span class="lineno">  455</span>        <span class="comment">// mFbArray-&gt;show();</span></div>
+<div class="line"><span class="lineno">  456</span>    }</div>
+<div class="line"><span class="lineno">  457</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5f3f569687d3b31f282c766b913a275f" name="a5f3f569687d3b31f282c766b913a275f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f3f569687d3b31f282c766b913a275f">&#9670;&#160;</a></span>onViewportChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::onViewportChanged </td>
+          <td>(</td>
+          <td class="paramtype">const network::PartialFrame &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8cc_source.html#l00460">460</a> of file <a class="el" href="_mcrt_rt_merge_computation_8cc_source.html">McrtRtMergeComputation.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  461</span>{</div>
+<div class="line"><span class="lineno">  462</span> </div>
+<div class="line"><span class="lineno">  463</span>    <span class="keywordtype">bool</span> shouldReinit = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  464</span>    <span class="keyword">const</span> BaseFrame::Viewport&amp; viewport(msg.getViewport());</div>
+<div class="line"><span class="lineno">  465</span> </div>
+<div class="line"><span class="lineno">  466</span>    <span class="comment">// Check if we&#39;re using an ROI, and/or if it&#39;s different than our current viewport</span></div>
+<div class="line"><span class="lineno">  467</span>    math::Viewport roiViewport;</div>
+<div class="line"><span class="lineno">  468</span>    <span class="keywordflow">if</span> (viewport.hasViewport()) {</div>
+<div class="line"><span class="lineno">  469</span>        roiViewport = math::Viewport(viewport.minX(), viewport.minY(), viewport.maxX(), viewport.maxY());</div>
+<div class="line"><span class="lineno">  470</span>        <span class="keywordflow">if</span> (roiViewport != <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>) {</div>
+<div class="line"><span class="lineno">  471</span>            shouldReinit = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  472</span>        }</div>
+<div class="line"><span class="lineno">  473</span>    <span class="comment">// If we were using ROI, and we no longer have an input viewport, then we&#39;re cancelling ROI</span></div>
+<div class="line"><span class="lineno">  474</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a502fd0dc865dde7d711f24a2ffb172f5">mUsingROI</a>) {</div>
+<div class="line"><span class="lineno">  475</span>        shouldReinit = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  476</span>    }</div>
+<div class="line"><span class="lineno">  477</span> </div>
+<div class="line"><span class="lineno">  478</span>    <span class="keywordflow">if</span> (msg.getRezedViewport().height() != <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a74b1871ec41bea20d6e49083cbe3207c">mFrameHeight</a> || msg.getRezedViewport().width() != <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a67a47c3c7b152d3ef14b8a77ccbc534c">mFrameWidth</a>) {</div>
+<div class="line"><span class="lineno">  479</span>        shouldReinit = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  480</span>    }</div>
+<div class="line"><span class="lineno">  481</span> </div>
+<div class="line"><span class="lineno">  482</span>    <span class="comment">// If we haven&#39;t changed our frame width or height, or we&#39;re not using a different ROI, early exit</span></div>
+<div class="line"><span class="lineno">  483</span>    <span class="keywordflow">if</span> (!shouldReinit) {</div>
+<div class="line"><span class="lineno">  484</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  485</span>    }</div>
+<div class="line"><span class="lineno">  486</span> </div>
+<div class="line"><span class="lineno">  487</span>    <span class="comment">/* Useful debug code</span></div>
+<div class="line"><span class="lineno">  488</span><span class="comment">    std::cout &lt;&lt; &quot;&gt;&gt;&gt; McrtRtMergeComputation.cc onViewportChanged() viewport changed!&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  489</span><span class="comment">    std::cout &lt;&lt; &quot;&gt;&gt;&gt; McrtRtMergeComputation.cc&quot;</span></div>
+<div class="line"><span class="lineno">  490</span><span class="comment">              &lt;&lt; &quot; mFrameWidth:&quot; &lt;&lt; mFrameWidth &lt;&lt; &quot; -&gt; &quot; &lt;&lt; msg.getRezedViewport().width()</span></div>
+<div class="line"><span class="lineno">  491</span><span class="comment">              &lt;&lt; &quot; mFrameHeight:&quot; &lt;&lt; mFrameHeight &lt;&lt; &quot; -&gt; &quot; &lt;&lt; msg.getRezedViewport().height()</span></div>
+<div class="line"><span class="lineno">  492</span><span class="comment">              &lt;&lt; &quot; minX:&quot; &lt;&lt; viewport.minX()</span></div>
+<div class="line"><span class="lineno">  493</span><span class="comment">              &lt;&lt; &quot; minY:&quot; &lt;&lt; viewport.minY()</span></div>
+<div class="line"><span class="lineno">  494</span><span class="comment">              &lt;&lt; &quot; maxX:&quot; &lt;&lt; viewport.maxX()</span></div>
+<div class="line"><span class="lineno">  495</span><span class="comment">              &lt;&lt; &quot; maxY:&quot; &lt;&lt; viewport.maxY()</span></div>
+<div class="line"><span class="lineno">  496</span><span class="comment">              &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  497</span><span class="comment">    */</span></div>
+<div class="line"><span class="lineno">  498</span> </div>
+<div class="line"><span class="lineno">  499</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a2a6df628508b4260dd658a57715121c3">mRezedViewport</a> = msg.getRezedViewport();</div>
+<div class="line"><span class="lineno">  500</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a67a47c3c7b152d3ef14b8a77ccbc534c">mFrameWidth</a> = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a2a6df628508b4260dd658a57715121c3">mRezedViewport</a>.width();</div>
+<div class="line"><span class="lineno">  501</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a74b1871ec41bea20d6e49083cbe3207c">mFrameHeight</a> = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a2a6df628508b4260dd658a57715121c3">mRezedViewport</a>.height();</div>
+<div class="line"><span class="lineno">  502</span> </div>
+<div class="line"><span class="lineno">  503</span>    <span class="keywordflow">if</span> (viewport.hasViewport()) {</div>
+<div class="line"><span class="lineno">  504</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a> = roiViewport;</div>
+<div class="line"><span class="lineno">  505</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a502fd0dc865dde7d711f24a2ffb172f5">mUsingROI</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  506</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  507</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a> = math::Viewport(0, 0, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a67a47c3c7b152d3ef14b8a77ccbc534c">mFrameWidth</a> - 1, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a74b1871ec41bea20d6e49083cbe3207c">mFrameHeight</a> - 1);</div>
+<div class="line"><span class="lineno">  508</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a502fd0dc865dde7d711f24a2ffb172f5">mUsingROI</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  509</span>    }</div>
+<div class="line"><span class="lineno">  510</span> </div>
+<div class="line"><span class="lineno">  511</span>    MOONRAY_LOG_DEBUG_STR(<span class="stringliteral">&quot;onViewportChanged (&quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a67a47c3c7b152d3ef14b8a77ccbc534c">mFrameWidth</a> &lt;&lt; <span class="stringliteral">&quot; x &quot;</span> &lt;&lt;  <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a74b1871ec41bea20d6e49083cbe3207c">mFrameHeight</a> &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>);</div>
+<div class="line"><span class="lineno">  512</span> </div>
+<div class="line"><span class="lineno">  513</span>    MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a73d295345389211f06d3fe37c7221813">mUpstreamBuffers</a>.size() == <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a>);</div>
+<div class="line"><span class="lineno">  514</span> </div>
+<div class="line"><span class="lineno">  515</span>    <span class="comment">// Reset upstream buffers.</span></div>
+<div class="line"><span class="lineno">  516</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a>; ++i) {</div>
+<div class="line"><span class="lineno">  517</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a73d295345389211f06d3fe37c7221813">mUpstreamBuffers</a>[i].clear();</div>
+<div class="line"><span class="lineno">  518</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a059111f1b5f5458cd1e8adc2ddae83a6">mUpstreamPixelInfoBuffers</a>[i].clear();</div>
+<div class="line"><span class="lineno">  519</span>    }</div>
+<div class="line"><span class="lineno">  520</span> </div>
+<div class="line"><span class="lineno">  521</span>    <span class="comment">// Create tile configurations for each upstream buffer.</span></div>
+<div class="line"><span class="lineno">  522</span>    <span class="comment">// </span></div>
+<div class="line"><span class="lineno">  523</span>    <span class="comment">// TODO: The tiling mode here needs to be kept in sync with the tiling</span></div>
+<div class="line"><span class="lineno">  524</span>    <span class="comment">// mode which the partial frames were generated with. Ideally this</span></div>
+<div class="line"><span class="lineno">  525</span>    <span class="comment">// information would be transmitted in a message but for now it&#39;s</span></div>
+<div class="line"><span class="lineno">  526</span>    <span class="comment">// just hardcoded.</span></div>
+<div class="line"><span class="lineno">  527</span>    <span class="keyword">auto</span> tileSchedulerType = <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_tile_scheduler.html#a28dace3c1db193355a540990692a91a4a6a248742e8267465f1d29af843cdc8f0">rndr::TileScheduler::SPIRAL_SQUARE</a>;</div>
+<div class="line"><span class="lineno">  528</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#abc1af58ed6fbcffd1d592ea6fa6b4dbf">mTileScheduler</a> = <a class="code hl_function" href="classmoonray_1_1rndr_1_1_tile_scheduler.html#a930371c4cb0190b505c6bba5de8b6c39">rndr::TileScheduler::create</a>(tileSchedulerType);</div>
+<div class="line"><span class="lineno">  529</span> </div>
+<div class="line"><span class="lineno">  530</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a>; ++i) {</div>
+<div class="line"><span class="lineno">  531</span>        SCOPED_MEM(&amp;<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ac0c88e88ed5fe351abccde176f42b491">mArena</a>);</div>
+<div class="line"><span class="lineno">  532</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a1dc8a65f7516797ee4a1aadf221f8ae6">mTiles</a>[i].clear();</div>
+<div class="line"><span class="lineno">  533</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#abc1af58ed6fbcffd1d592ea6fa6b4dbf">mTileScheduler</a>-&gt;generateTiles(&amp;<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ac0c88e88ed5fe351abccde176f42b491">mArena</a>, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a67a47c3c7b152d3ef14b8a77ccbc534c">mFrameWidth</a>, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a74b1871ec41bea20d6e49083cbe3207c">mFrameHeight</a>, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>, i, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a375a98dbbca1e7a952496cfc7176edda">mNumMachines</a>)) {</div>
+<div class="line"><span class="lineno">  534</span>            <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a1dc8a65f7516797ee4a1aadf221f8ae6">mTiles</a>[i] = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#abc1af58ed6fbcffd1d592ea6fa6b4dbf">mTileScheduler</a>-&gt;getTiles();</div>
+<div class="line"><span class="lineno">  535</span>        }</div>
+<div class="line"><span class="lineno">  536</span>    }</div>
+<div class="line"><span class="lineno">  537</span> </div>
+<div class="line"><span class="lineno">  538</span>    <span class="comment">// Init buffers.</span></div>
+<div class="line"><span class="lineno">  539</span>    <span class="keywordtype">unsigned</span> tiledWidth  = util::alignUp(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a67a47c3c7b152d3ef14b8a77ccbc534c">mFrameWidth</a>, COARSE_TILE_SIZE);</div>
+<div class="line"><span class="lineno">  540</span>    <span class="keywordtype">unsigned</span> tiledHeight = util::alignUp(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a74b1871ec41bea20d6e49083cbe3207c">mFrameHeight</a>, COARSE_TILE_SIZE);</div>
+<div class="line"><span class="lineno">  541</span> </div>
+<div class="line"><span class="lineno">  542</span>    <span class="keyword">auto</span> format = <a class="code hl_function" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a16722b66c74504a912b0f8de10d2e734">convertImageEncoding</a>(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#aa245d9145d7555ac75086041920be3ae">mImageEncoding</a>);</div>
+<div class="line"><span class="lineno">  543</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a9b9703ebcf235daeb922484d14ae6232">mTiledFrame</a>.init(format, tiledWidth, tiledHeight);</div>
+<div class="line"><span class="lineno">  544</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a7f1bac70c84b416250fed6a88c3a046f">mFinalFrame</a>.init(format, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a67a47c3c7b152d3ef14b8a77ccbc534c">mFrameWidth</a>, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a74b1871ec41bea20d6e49083cbe3207c">mFrameHeight</a>);</div>
+<div class="line"><span class="lineno">  545</span> </div>
+<div class="line"><span class="lineno">  546</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#af614492be8a73abb0770e409f4343d25">mPixelInfoTiledFrame</a>.init(tiledWidth, tiledHeight);</div>
+<div class="line"><span class="lineno">  547</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#ae5964469aa63f2ab43083ce4dbc2e7f5">mFinalPixelInfoFrame</a>.init(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a67a47c3c7b152d3ef14b8a77ccbc534c">mFrameWidth</a>, <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a74b1871ec41bea20d6e49083cbe3207c">mFrameHeight</a>);</div>
+<div class="line"><span class="lineno">  548</span> </div>
+<div class="line"><span class="lineno">  549</span>    <span class="comment">// Reinitialize our ROI buffers on any change</span></div>
+<div class="line"><span class="lineno">  550</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a502fd0dc865dde7d711f24a2ffb172f5">mUsingROI</a>) {</div>
+<div class="line"><span class="lineno">  551</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a35ace32808dc41fa1d56c9e9e04becdf">mRoiPixelBuffer</a>.init(<a class="code hl_function" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a16722b66c74504a912b0f8de10d2e734">convertImageEncoding</a>(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#aa245d9145d7555ac75086041920be3ae">mImageEncoding</a>), (<span class="keywordtype">unsigned</span>)<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.width(), (<span class="keywordtype">unsigned</span>)<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.height());</div>
+<div class="line"><span class="lineno">  552</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8a1145867f269cdf16b19d2a1ca79327">mRoiPixelInfoBuffer</a>.init((<span class="keywordtype">unsigned</span>)<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.width(), (<span class="keywordtype">unsigned</span>)<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8e89d4af3404c4b9c8d9f3676e54458b">mViewport</a>.height());</div>
+<div class="line"><span class="lineno">  553</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  554</span>        <span class="comment">// We&#39;re not using ROI at the moment, so free the buffers that may have been allocated</span></div>
+<div class="line"><span class="lineno">  555</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a35ace32808dc41fa1d56c9e9e04becdf">mRoiPixelBuffer</a>.cleanUp();</div>
+<div class="line"><span class="lineno">  556</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a8a1145867f269cdf16b19d2a1ca79327">mRoiPixelInfoBuffer</a>.cleanUp();</div>
+<div class="line"><span class="lineno">  557</span>    }</div>
+<div class="line"><span class="lineno">  558</span> </div>
+<div class="line"><span class="lineno">  559</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#a9d6e91e90682f9087dccdef4882fcefe">mLastTime</a> = util::getSeconds();</div>
+<div class="line"><span class="lineno">  560</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation_html_abc1af58ed6fbcffd1d592ea6fa6b4dbf"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html#abc1af58ed6fbcffd1d592ea6fa6b4dbf">moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mTileScheduler</a></div><div class="ttdeci">std::unique_ptr&lt; rndr::TileScheduler &gt; mTileScheduler</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_8h_source.html#l00055">McrtRtMergeComputation.h:55</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_tile_scheduler_html_a28dace3c1db193355a540990692a91a4a6a248742e8267465f1d29af843cdc8f0"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_tile_scheduler.html#a28dace3c1db193355a540990692a91a4a6a248742e8267465f1d29af843cdc8f0">moonray::rndr::TileScheduler::SPIRAL_SQUARE</a></div><div class="ttdeci">@ SPIRAL_SQUARE</div><div class="ttdef"><b>Definition:</b> <a href="_tile_scheduler_8h_source.html#l00036">TileScheduler.h:36</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_tile_scheduler_html_a930371c4cb0190b505c6bba5de8b6c39"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_tile_scheduler.html#a930371c4cb0190b505c6bba5de8b6c39">moonray::rndr::TileScheduler::create</a></div><div class="ttdeci">static std::unique_ptr&lt; TileScheduler &gt; create(TileScheduler::Type type)</div><div class="ttdef"><b>Definition:</b> <a href="_tile_scheduler_8cc_source.html#l00140">TileScheduler.cc:140</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03_html_a16722b66c74504a912b0f8de10d2e734"><div class="ttname"><a href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a16722b66c74504a912b0f8de10d2e734">moonray::anonymous_namespace{McrtRtComputation.cc}::convertImageEncoding</a></div><div class="ttdeci">fb_util::VariablePixelBuffer::Format convertImageEncoding(BaseFrame::ImageEncoding encoding)</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_computation_8cc_source.html#l00142">McrtRtComputation.cc:142</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac0c88e88ed5fe351abccde176f42b491" name="ac0c88e88ed5fe351abccde176f42b491"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0c88e88ed5fe351abccde176f42b491">&#9670;&#160;</a></span>mArena</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">alloc::Arena moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mArena</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00051">51</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a84c0e86803a6b9c57a7aa00e3469eefe" name="a84c0e86803a6b9c57a7aa00e3469eefe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84c0e86803a6b9c57a7aa00e3469eefe">&#9670;&#160;</a></span>mArenaBlockPool</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">util::Ref&lt;alloc::ArenaBlockPool&gt; moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mArenaBlockPool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00050">50</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a532efbb3ea264fae5618b4aabaab165c" name="a532efbb3ea264fae5618b4aabaab165c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a532efbb3ea264fae5618b4aabaab165c">&#9670;&#160;</a></span>mFbArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html">RenderFbArray</a>&gt; moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mFbArray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00057">57</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a7f1bac70c84b416250fed6a88c3a046f" name="a7f1bac70c84b416250fed6a88c3a046f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f1bac70c84b416250fed6a88c3a046f">&#9670;&#160;</a></span>mFinalFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">fb_util::VariablePixelBuffer moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mFinalFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00070">70</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="ae5964469aa63f2ab43083ce4dbc2e7f5" name="ae5964469aa63f2ab43083ce4dbc2e7f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5964469aa63f2ab43083ce4dbc2e7f5">&#9670;&#160;</a></span>mFinalPixelInfoFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">fb_util::PixelInfoBuffer moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mFinalPixelInfoFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00073">73</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a6bbb088ef3c741a18b7a62909e676c76" name="a6bbb088ef3c741a18b7a62909e676c76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bbb088ef3c741a18b7a62909e676c76">&#9670;&#160;</a></span>mFirstFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mFirstFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00097">97</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="ab92b6a29372bc28b7955e26a9aacd740" name="ab92b6a29372bc28b7955e26a9aacd740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab92b6a29372bc28b7955e26a9aacd740">&#9670;&#160;</a></span>mFps</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mFps</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00100">100</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a74b1871ec41bea20d6e49083cbe3207c" name="a74b1871ec41bea20d6e49083cbe3207c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74b1871ec41bea20d6e49083cbe3207c">&#9670;&#160;</a></span>mFrameHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mFrameHeight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00090">90</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a67a47c3c7b152d3ef14b8a77ccbc534c" name="a67a47c3c7b152d3ef14b8a77ccbc534c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67a47c3c7b152d3ef14b8a77ccbc534c">&#9670;&#160;</a></span>mFrameWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mFrameWidth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00089">89</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a5d933da6e8f9cd295e5f0f2df3ddeb3a" name="a5d933da6e8f9cd295e5f0f2df3ddeb3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d933da6e8f9cd295e5f0f2df3ddeb3a">&#9670;&#160;</a></span>mHasPartialFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mHasPartialFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00086">86</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a12b4d4f0c798443a877580943ace32de" name="a12b4d4f0c798443a877580943ace32de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12b4d4f0c798443a877580943ace32de">&#9670;&#160;</a></span>mHasPixelInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mHasPixelInfo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00085">85</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="aa245d9145d7555ac75086041920be3ae" name="aa245d9145d7555ac75086041920be3ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa245d9145d7555ac75086041920be3ae">&#9670;&#160;</a></span>mImageEncoding</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">network::BaseFrame::ImageEncoding moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mImageEncoding</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00066">66</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a9d6e91e90682f9087dccdef4882fcefe" name="a9d6e91e90682f9087dccdef4882fcefe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d6e91e90682f9087dccdef4882fcefe">&#9670;&#160;</a></span>mLastTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mLastTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00099">99</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="ad072260a1b64bf41b7bebdafcbbebeb7" name="ad072260a1b64bf41b7bebdafcbbebeb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad072260a1b64bf41b7bebdafcbbebeb7">&#9670;&#160;</a></span>mMotionCaptureMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mMotionCaptureMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00105">105</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a2bfc91ad5315c4f6d13905780162e868" name="a2bfc91ad5315c4f6d13905780162e868"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bfc91ad5315c4f6d13905780162e868">&#9670;&#160;</a></span>mNeedsStartedSent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mNeedsStartedSent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00098">98</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a375a98dbbca1e7a952496cfc7176edda" name="a375a98dbbca1e7a952496cfc7176edda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a375a98dbbca1e7a952496cfc7176edda">&#9670;&#160;</a></span>mNumMachines</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mNumMachines</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00080">80</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="af614492be8a73abb0770e409f4343d25" name="af614492be8a73abb0770e409f4343d25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af614492be8a73abb0770e409f4343d25">&#9670;&#160;</a></span>mPixelInfoTiledFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">fb_util::PixelInfoBuffer moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mPixelInfoTiledFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00072">72</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="ac3af03737eec78bb9ec9b18748fc193d" name="ac3af03737eec78bb9ec9b18748fc193d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3af03737eec78bb9ec9b18748fc193d">&#9670;&#160;</a></span>mProgress</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;float[]&gt; moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mProgress</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00083">83</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a2a6df628508b4260dd658a57715121c3" name="a2a6df628508b4260dd658a57715121c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a6df628508b4260dd658a57715121c3">&#9670;&#160;</a></span>mRezedViewport</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">network::BaseFrame::Viewport moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mRezedViewport</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00088">88</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a35ace32808dc41fa1d56c9e9e04becdf" name="a35ace32808dc41fa1d56c9e9e04becdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35ace32808dc41fa1d56c9e9e04becdf">&#9670;&#160;</a></span>mRoiPixelBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">fb_util::VariablePixelBuffer moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mRoiPixelBuffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Holds buffers for ROI. </p>
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00076">76</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a8a1145867f269cdf16b19d2a1ca79327" name="a8a1145867f269cdf16b19d2a1ca79327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a1145867f269cdf16b19d2a1ca79327">&#9670;&#160;</a></span>mRoiPixelInfoBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">fb_util::PixelInfoBuffer moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mRoiPixelInfoBuffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00077">77</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="ad815af73f7a6c7e6f9e839ccc7e3e675" name="ad815af73f7a6c7e6f9e839ccc7e3e675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad815af73f7a6c7e6f9e839ccc7e3e675">&#9670;&#160;</a></span>mStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;network::BaseFrame::Status[]&gt; moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mStatus</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00082">82</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a9b9703ebcf235daeb922484d14ae6232" name="a9b9703ebcf235daeb922484d14ae6232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b9703ebcf235daeb922484d14ae6232">&#9670;&#160;</a></span>mTiledFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">fb_util::VariablePixelBuffer moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mTiledFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00069">69</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a1dc8a65f7516797ee4a1aadf221f8ae6" name="a1dc8a65f7516797ee4a1aadf221f8ae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dc8a65f7516797ee4a1aadf221f8ae6">&#9670;&#160;</a></span>mTiles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;fb_util::Tile&gt; &gt; moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mTiles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00063">63</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="abc1af58ed6fbcffd1d592ea6fa6b4dbf" name="abc1af58ed6fbcffd1d592ea6fa6b4dbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc1af58ed6fbcffd1d592ea6fa6b4dbf">&#9670;&#160;</a></span>mTileScheduler</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classmoonray_1_1rndr_1_1_tile_scheduler.html">rndr::TileScheduler</a>&gt; moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mTileScheduler</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00055">55</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a73d295345389211f06d3fe37c7221813" name="a73d295345389211f06d3fe37c7221813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d295345389211f06d3fe37c7221813">&#9670;&#160;</a></span>mUpstreamBuffers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;uint8_t&gt; &gt; moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mUpstreamBuffers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00061">61</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a059111f1b5f5458cd1e8adc2ddae83a6" name="a059111f1b5f5458cd1e8adc2ddae83a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a059111f1b5f5458cd1e8adc2ddae83a6">&#9670;&#160;</a></span>mUpstreamPixelInfoBuffers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;fb_util::PixelInfoBuffer::PixelType&gt; &gt; moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mUpstreamPixelInfoBuffers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00062">62</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a502fd0dc865dde7d711f24a2ffb172f5" name="a502fd0dc865dde7d711f24a2ffb172f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a502fd0dc865dde7d711f24a2ffb172f5">&#9670;&#160;</a></span>mUsingROI</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mUsingROI</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>flag to indicate that we have a region of interest viewport set </p>
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00103">103</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
+
+</div>
+</div>
+<a id="a8e89d4af3404c4b9c8d9f3676e54458b" name="a8e89d4af3404c4b9c8d9f3676e54458b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e89d4af3404c4b9c8d9f3676e54458b">&#9670;&#160;</a></span>mViewport</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">math::Viewport moonray::mcrt_rt_merge_computation::McrtRtMergeComputation::mViewport</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_8h_source.html#l00053">53</a> of file <a class="el" href="_mcrt_rt_merge_computation_8h_source.html">McrtRtMergeComputation.h</a>.</p>
 
 </div>
 </div>
@@ -186,9 +1586,13 @@ Protected Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/dso/computation/mcrt_rt_merge/<a class="el" href="_mcrt_rt_merge_computation_8cc_source.html">McrtRtMergeComputation.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1mcrt__rt__merge__computation.html">mcrt_rt_merge_computation</a></li><li class="navelem"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_mcrt_rt_merge_computation.html">McrtRtMergeComputation</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

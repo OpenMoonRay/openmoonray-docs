@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_toon_bsdf_lobe.html">ToonBsdfLobe</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_toon_bsdf_lobe.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_toon_bsdf_lobe-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::ToonBsdfLobe Class Reference</div></div>
 </div><!--header-->
@@ -146,6 +163,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a53e300f416eddc450bef32b46f45e3ef inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_lobe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32cda370918eb2aa16ee7004b6bb7262 inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_lobe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a32cda370918eb2aa16ee7004b6bb7262">show</a> (std::ostream &amp;os, const std::string &amp;indent) const =0</td></tr>
 <tr class="separator:a32cda370918eb2aa16ee7004b6bb7262 inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_lobe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8a84241ff3b0f496fabeb28ebf8fc45c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1shading_1_1_color_ramp_control.html">ColorRampControl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_toon_bsdf_lobe.html#a8a84241ff3b0f496fabeb28ebf8fc45c">mRampControl</a></td></tr>
+<tr class="separator:a8a84241ff3b0f496fabeb28ebf8fc45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af123726657246d9a3871e4867599d138"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_toon_bsdf_lobe.html#af123726657246d9a3871e4867599d138">mExtendRamp</a></td></tr>
+<tr class="separator:af123726657246d9a3871e4867599d138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -259,7 +283,19 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_toon_8h_source.html#l00177">177</a> of file <a class="el" href="_bsdf_toon_8h_source.html">BsdfToon.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  183</span>                                        :</div>
+<div class="line"><span class="lineno">  184</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_lambert_bsdf_lobe.html#aa7613105338380209d8c68e90cbbbdee">LambertBsdfLobe</a>(N, <a class="code hl_function" href="classmoonray_1_1shading_1_1_lambert_bsdf_lobe.html#a096262c2fd8c04af1eb13a3d956eb26c">albedo</a>, <span class="keyword">true</span>),</div>
+<div class="line"><span class="lineno">  185</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_toon_bsdf_lobe.html#af123726657246d9a3871e4867599d138">mExtendRamp</a>(extendRamp)</div>
+<div class="line"><span class="lineno">  186</span>    {</div>
+<div class="line"><span class="lineno">  187</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_toon_bsdf_lobe.html#a8a84241ff3b0f496fabeb28ebf8fc45c">mRampControl</a>.<a class="code hl_function" href="classmoonray_1_1shading_1_1_color_ramp_control.html#a06a9e7c9cb9077e6fe9298b6f1a7e894">init</a>(numRampPoints, rampPositions, rampColors, rampInterpolators,</div>
+<div class="line"><span class="lineno">  188</span>                          ispc::COLOR_RAMP_CONTROL_SPACE_RGB);</div>
+<div class="line"><span class="lineno">  189</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_color_ramp_control_html_a06a9e7c9cb9077e6fe9298b6f1a7e894"><div class="ttname"><a href="classmoonray_1_1shading_1_1_color_ramp_control.html#a06a9e7c9cb9077e6fe9298b6f1a7e894">moonray::shading::ColorRampControl::init</a></div><div class="ttdeci">void init(const int numEntries, const float *inputs, const scene_rdl2::math::Color *outputs, const ispc::RampInterpolatorMode *interpolatorTypes, ispc::ColorRampControlSpace colorSpace, const bool applyHueBlendAdjustment=true)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00654">RampControl.cc:654</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_lambert_bsdf_lobe_html_a096262c2fd8c04af1eb13a3d956eb26c"><div class="ttname"><a href="classmoonray_1_1shading_1_1_lambert_bsdf_lobe.html#a096262c2fd8c04af1eb13a3d956eb26c">moonray::shading::LambertBsdfLobe::albedo</a></div><div class="ttdeci">finline scene_rdl2::math::Color albedo(const BsdfSlice &amp;slice) const override</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_lambert_8h_source.html#l00085">BsdfLambert.h:85</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_lambert_bsdf_lobe_html_aa7613105338380209d8c68e90cbbbdee"><div class="ttname"><a href="classmoonray_1_1shading_1_1_lambert_bsdf_lobe.html#aa7613105338380209d8c68e90cbbbdee">moonray::shading::LambertBsdfLobe::LambertBsdfLobe</a></div><div class="ttdeci">LambertBsdfLobe(const scene_rdl2::math::Vec3f &amp;N, const scene_rdl2::math::Color &amp;albedo, bool reflection)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_lambert_8h_source.html#l00041">BsdfLambert.h:41</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_toon_bsdf_lobe_html_a8a84241ff3b0f496fabeb28ebf8fc45c"><div class="ttname"><a href="classmoonray_1_1shading_1_1_toon_bsdf_lobe.html#a8a84241ff3b0f496fabeb28ebf8fc45c">moonray::shading::ToonBsdfLobe::mRampControl</a></div><div class="ttdeci">ColorRampControl mRampControl</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_toon_8h_source.html#l00198">BsdfToon.h:198</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_toon_bsdf_lobe_html_af123726657246d9a3871e4867599d138"><div class="ttname"><a href="classmoonray_1_1shading_1_1_toon_bsdf_lobe.html#af123726657246d9a3871e4867599d138">moonray::shading::ToonBsdfLobe::mExtendRamp</a></div><div class="ttdeci">bool mExtendRamp</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_toon_8h_source.html#l00199">BsdfToon.h:199</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -313,7 +349,56 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1shading_1_1_lambert_bsdf_lobe.html#a7d2d609c39434837c303c511408d070f">moonray::shading::LambertBsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_toon_8cc_source.html#l00320">320</a> of file <a class="el" href="_bsdf_toon_8cc_source.html">BsdfToon.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  323</span>{</div>
+<div class="line"><span class="lineno">  324</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> N = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_lambert_bsdf_lobe.html#a3be580845dd5bee616f9a198aa8b6399">mFrame</a>.getN();</div>
+<div class="line"><span class="lineno">  325</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_toon_bsdf_lobe.html#af123726657246d9a3871e4867599d138">mExtendRamp</a> &amp;&amp; <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(N, wi) &lt; 0) {</div>
+<div class="line"><span class="lineno">  326</span>        <span class="comment">// Make shading normal perpendicular to light direction</span></div>
+<div class="line"><span class="lineno">  327</span>        <span class="comment">// and nudge towards light with lerp</span></div>
+<div class="line"><span class="lineno">  328</span>        N = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(<a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(<a class="code hl_function" href="_g_p_u_math_8h.html#aac515f5a1286dde7b231d1d6e47c77f4">cross</a>(wi, <a class="code hl_function" href="_g_p_u_math_8h.html#aac515f5a1286dde7b231d1d6e47c77f4">cross</a>(N, wi)),</div>
+<div class="line"><span class="lineno">  329</span>                      wi,</div>
+<div class="line"><span class="lineno">  330</span>                      sEpsilon));  <span class="comment">// Must be &gt; 1e-9</span></div>
+<div class="line"><span class="lineno">  331</span>    }</div>
+<div class="line"><span class="lineno">  332</span>    <span class="keywordtype">float</span> cosThetaWi = max(<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(N, wi), 0.0f);</div>
+<div class="line"><span class="lineno">  333</span> </div>
+<div class="line"><span class="lineno">  334</span>    <span class="keywordflow">if</span> (pdf != NULL) {</div>
+<div class="line"><span class="lineno">  335</span>        *pdf = cosThetaWi * sOneOverPi;</div>
+<div class="line"><span class="lineno">  336</span>    }</div>
+<div class="line"><span class="lineno">  337</span> </div>
+<div class="line"><span class="lineno">  338</span>    <span class="comment">// Note: we assume this lobe has been setup with a OneMinus*Fresnel</span></div>
+<div class="line"><span class="lineno">  339</span>    <span class="comment">// as we want to use 1 - specular_fresnel. Also notice we use</span></div>
+<div class="line"><span class="lineno">  340</span>    <span class="comment">// cosThetaWo to evaluate the fresnel term, as an approximation of what</span></div>
+<div class="line"><span class="lineno">  341</span>    <span class="comment">// hDotWi would be for the specular lobe.</span></div>
+<div class="line"><span class="lineno">  342</span>    <span class="keywordtype">float</span> cosThetaWo = 1.0f;</div>
+<div class="line"><span class="lineno">  343</span> </div>
+<div class="line"><span class="lineno">  344</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">getFresnel</a>()) {</div>
+<div class="line"><span class="lineno">  345</span>        cosThetaWo = max(<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(N, slice.getWo()), 0.0f);</div>
+<div class="line"><span class="lineno">  346</span>    }</div>
+<div class="line"><span class="lineno">  347</span> </div>
+<div class="line"><span class="lineno">  348</span>    Color ramp = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_toon_bsdf_lobe.html#a8a84241ff3b0f496fabeb28ebf8fc45c">mRampControl</a>.<a class="code hl_function" href="classmoonray_1_1shading_1_1_color_ramp_control.html#a18774ee44fdc525e75d0288714e25b5b">eval1D</a>(1.0f - cosThetaWi);</div>
+<div class="line"><span class="lineno">  349</span> </div>
+<div class="line"><span class="lineno">  350</span>    <span class="keyword">const</span> Color <a class="code hl_function" href="classmoonray_1_1shading_1_1_lambert_bsdf_lobe.html#a096262c2fd8c04af1eb13a3d956eb26c">albedo</a> = clamp(ramp*<a class="code hl_variable" href="classmoonray_1_1shading_1_1_lambert_bsdf_lobe.html#ac06b064bb3afbe059f66d7b519205de9">mAlbedo</a>, sBlack, sWhite);</div>
+<div class="line"><span class="lineno">  351</span>    <span class="comment">// Soften hard shadow terminator due to shading normals</span></div>
+<div class="line"><span class="lineno">  352</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> Gs = slice.computeShadowTerminatorFix(N, wi);</div>
+<div class="line"><span class="lineno">  353</span> </div>
+<div class="line"><span class="lineno">  354</span>    <span class="comment">// We use the upper bound of 1/2pi as the normalization factor</span></div>
+<div class="line"><span class="lineno">  355</span>    <span class="comment">// for the maximum possible toon step function</span></div>
+<div class="line"><span class="lineno">  356</span>    <span class="comment">// TODO: a more accurate normalization factor for the varying</span></div>
+<div class="line"><span class="lineno">  357</span>    <span class="comment">// step can be computed if so desired.</span></div>
+<div class="line"><span class="lineno">  358</span>    Color result = Gs * <a class="code hl_function" href="classmoonray_1_1shading_1_1_lambert_bsdf_lobe.html#a096262c2fd8c04af1eb13a3d956eb26c">albedo</a> *</div>
+<div class="line"><span class="lineno">  359</span>                   <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a27762201a758a03b80bef6e822ecee11">computeScaleAndFresnel</a>(cosThetaWo) * sOneOverTwoPi;</div>
+<div class="line"><span class="lineno">  360</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  361</span>}</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a26b3f6b7b842544058f3766b0da79257"><div class="ttname"><a href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a></div><div class="ttdeci">__host__ __device__ float3 normalize(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00165">GPUMath.h:165</a></div></div>
+<div class="ttc" id="a_g_p_u_math_8h_html_aac515f5a1286dde7b231d1d6e47c77f4"><div class="ttname"><a href="_g_p_u_math_8h.html#aac515f5a1286dde7b231d1d6e47c77f4">cross</a></div><div class="ttdeci">__host__ __device__ float3 cross(const float3 &amp;a, const float3 &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00151">GPUMath.h:151</a></div></div>
+<div class="ttc" id="a_n_point_8h_html_a16747d68c1e06270b0ed335d631b66f3"><div class="ttname"><a href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a></div><div class="ttdeci">float dot(const NPoint&lt; D &gt; &amp;a, const NPoint&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00271">NPoint.h:271</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a1325952270070249bd3a4197660a1d7b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">moonray::shading::BsdfLobe::getFresnel</a></div><div class="ttdeci">finline const Fresnel * getFresnel() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00164">Bsdf.h:164</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a27762201a758a03b80bef6e822ecee11"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a27762201a758a03b80bef6e822ecee11">moonray::shading::BsdfLobe::computeScaleAndFresnel</a></div><div class="ttdeci">finline scene_rdl2::math::Color computeScaleAndFresnel(float cosWi) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00179">Bsdf.h:179</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_color_ramp_control_html_a18774ee44fdc525e75d0288714e25b5b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_color_ramp_control.html#a18774ee44fdc525e75d0288714e25b5b">moonray::shading::ColorRampControl::eval1D</a></div><div class="ttdeci">scene_rdl2::math::Color eval1D(float t) const</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00729">RampControl.cc:729</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_lambert_bsdf_lobe_html_a3be580845dd5bee616f9a198aa8b6399"><div class="ttname"><a href="classmoonray_1_1shading_1_1_lambert_bsdf_lobe.html#a3be580845dd5bee616f9a198aa8b6399">moonray::shading::LambertBsdfLobe::mFrame</a></div><div class="ttdeci">scene_rdl2::math::ReferenceFrame mFrame</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_lambert_8h_source.html#l00177">BsdfLambert.h:177</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_lambert_bsdf_lobe_html_ac06b064bb3afbe059f66d7b519205de9"><div class="ttname"><a href="classmoonray_1_1shading_1_1_lambert_bsdf_lobe.html#ac06b064bb3afbe059f66d7b519205de9">moonray::shading::LambertBsdfLobe::mAlbedo</a></div><div class="ttdeci">scene_rdl2::math::Color mAlbedo</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_lambert_8h_source.html#l00178">BsdfLambert.h:178</a></div></div>
+<div class="ttc" id="acmd_2point__generation__cmd_2util_8h_html_a29663946660b920710cf69b9bbcf8a7d"><div class="ttname"><a href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a></div><div class="ttdeci">float lerp(float u, float min, float max)</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2point__generation__cmd_2util_8h_source.html#l00044">util.h:44</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a957c206f8102b92ef4cf66bad8db48a7" name="a957c206f8102b92ef4cf66bad8db48a7"></a>
@@ -353,6 +438,68 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1shading_1_1_lambert_bsdf_lobe.html#ae9a83a7584222b2483d6b6d8e5a8d708">moonray::shading::LambertBsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_toon_8cc_source.html#l00364">364</a> of file <a class="el" href="_bsdf_toon_8cc_source.html">BsdfToon.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  366</span>{</div>
+<div class="line"><span class="lineno">  367</span>    <span class="keyword">const</span> Color&amp; scale = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aec44d64391394390189c9f6bbc42f671">getScale</a>();</div>
+<div class="line"><span class="lineno">  368</span>    <span class="keyword">const</span> Fresnel * <span class="keyword">const</span> fresnel = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">getFresnel</a>();</div>
+<div class="line"><span class="lineno">  369</span>    os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;[ToonBsdfLobe]\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  370</span>    os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;scale: &quot;</span></div>
+<div class="line"><span class="lineno">  371</span>        &lt;&lt; scale.r &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; scale.g &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; scale.b &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  372</span>    os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;base color: &quot;</span></div>
+<div class="line"><span class="lineno">  373</span>        &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_lambert_bsdf_lobe.html#ac06b064bb3afbe059f66d7b519205de9">mAlbedo</a>.r &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_lambert_bsdf_lobe.html#ac06b064bb3afbe059f66d7b519205de9">mAlbedo</a>.g &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_lambert_bsdf_lobe.html#ac06b064bb3afbe059f66d7b519205de9">mAlbedo</a>.b &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  374</span>    <span class="keywordflow">if</span> (fresnel) {</div>
+<div class="line"><span class="lineno">  375</span>        fresnel-&gt;show(os, indent + <span class="stringliteral">&quot;    &quot;</span>);</div>
+<div class="line"><span class="lineno">  376</span>    }</div>
+<div class="line"><span class="lineno">  377</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_aec44d64391394390189c9f6bbc42f671"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aec44d64391394390189c9f6bbc42f671">moonray::shading::BsdfLobe::getScale</a></div><div class="ttdeci">finline const scene_rdl2::math::Color &amp; getScale() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00160">Bsdf.h:160</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af123726657246d9a3871e4867599d138" name="af123726657246d9a3871e4867599d138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af123726657246d9a3871e4867599d138">&#9670;&#160;</a></span>mExtendRamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::shading::ToonBsdfLobe::mExtendRamp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_toon_8h_source.html#l00199">199</a> of file <a class="el" href="_bsdf_toon_8h_source.html">BsdfToon.h</a>.</p>
+
+</div>
+</div>
+<a id="a8a84241ff3b0f496fabeb28ebf8fc45c" name="a8a84241ff3b0f496fabeb28ebf8fc45c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a84241ff3b0f496fabeb28ebf8fc45c">&#9670;&#160;</a></span>mRampControl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1shading_1_1_color_ramp_control.html">ColorRampControl</a> moonray::shading::ToonBsdfLobe::mRampControl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_toon_8h_source.html#l00198">198</a> of file <a class="el" href="_bsdf_toon_8h_source.html">BsdfToon.h</a>.</p>
 
 </div>
 </div>
@@ -361,9 +508,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/bsdf/npr/<a class="el" href="_bsdf_toon_8cc_source.html">BsdfToon.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_toon_bsdf_lobe.html">ToonBsdfLobe</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

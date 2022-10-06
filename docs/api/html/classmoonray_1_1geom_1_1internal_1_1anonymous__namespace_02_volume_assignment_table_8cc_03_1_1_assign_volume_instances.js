@@ -1,0 +1,18 @@
+var classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances =
+[
+    [ "AssignVolumeInstances", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances.html#ab8032be854851a4cf8e5dfcff14d7bc4", null ],
+    [ "visitInstance", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances.html#a8ce70f6a9be3f65d326829dc8e580364", null ],
+    [ "visitPrimitiveGroup", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances.html#a0c3af56bbd0fdbd635fac4d0a8031cd3", null ],
+    [ "mAssignmentIdToVolumeIds", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances.html#a354ddf0b35b20d0c2d9228fba676b214", null ],
+    [ "mInstanceSequence", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances.html#a473a04c6c9bbd5f74ff5ee2608a91912", null ],
+    [ "mInstanceVisibilityMask", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances.html#a0e3bbb5e3e7a24a5d1d8aa3594db71f9", null ],
+    [ "mInstanceVisibilityMasks", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances.html#a093de4a3326344d3ac23ea4fcab23fce", null ],
+    [ "mInstanceXform", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances.html#a8a9c70a6e11d0eb8b9b1b1f3f3102320", null ],
+    [ "mInstanceXforms", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances.html#a31da72620086dd337b462050f8cf5354", null ],
+    [ "mMaxVolumeCount", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances.html#a25d1199522431c41e4bccefa3a9f6852", null ],
+    [ "mRefAssignments", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances.html#ad9be194c2fee7d617dc7d980029c6489", null ],
+    [ "mVisibilityMasks", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances.html#aaeaa6d96fcfb3b9db923b2eb0031115c", null ],
+    [ "mVolumeCount", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances.html#a18c224c3802adeeadb87182573438e20", null ],
+    [ "mVolumeIdFSM", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances.html#a2227bfc18721756b1fed0d5884cf15db", null ],
+    [ "mVolumeIdToAssignmentId", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances.html#afc2ad9573e7c5bce61370c8b07feef8e", null ]
+];

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_e8636fe16f0c9a46fe2eb47f132af4e0.html">dso</a></li><li class="navelem"><a class="el" href="dir_414b0e7e865f3bb590382b00e45fe3e8.html">camera</a></li><li class="navelem"><a class="el" href="dir_39d8095769fae743691f6a0c42460e88.html">PerspectiveCamera</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('dso_2camera_2_perspective_camera_2_perspective_camera_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
@@ -106,7 +122,88 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="dso_2camera_2_perspective_camera_2_perspective_camera_8cc_source.html#l00029">29</a> of file <a class="el" href="dso_2camera_2_perspective_camera_2_perspective_camera_8cc_source.html">PerspectiveCamera.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   30</span>    {</div>
+<div class="line"><span class="lineno">   31</span>        <span class="comment">// Get focal length (mm)</span></div>
+<div class="line"><span class="lineno">   32</span>        <span class="keywordtype">float</span> focal = get(<a class="code hl_variable" href="dso_2camera_2_perspective_camera_2attributes_8cc.html#aab7507f63df07cbc899e5db4c41f08e4">attrFocalKey</a>, t);</div>
+<div class="line"><span class="lineno">   33</span>        focal = max(focal, 0.00001f);</div>
+<div class="line"><span class="lineno">   34</span> </div>
+<div class="line"><span class="lineno">   35</span>        <span class="comment">// Get film-back width (mm)</span></div>
+<div class="line"><span class="lineno">   36</span>        <span class="keywordtype">float</span> filmWidth = get(<a class="code hl_variable" href="dso_2camera_2_orthographic_camera_2attributes_8cc.html#aef508a3387f30faede183b82d7535226">attrFilmWidthApertureKey</a>);</div>
+<div class="line"><span class="lineno">   37</span>        filmWidth = max(filmWidth, 0.00001f);</div>
+<div class="line"><span class="lineno">   38</span>        <span class="keywordtype">float</span> halfFilmWidth = filmWidth * 0.5f;</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>        <span class="comment">// Get near plane</span></div>
+<div class="line"><span class="lineno">   41</span>        <span class="keywordtype">float</span> near = get(rdl2::Camera::sNearKey);</div>
+<div class="line"><span class="lineno">   42</span>        near = max(near, 0.00001f);</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>        <span class="comment">// Get far plane</span></div>
+<div class="line"><span class="lineno">   45</span>        <span class="keywordtype">float</span> far = get(rdl2::Camera::sFarKey);</div>
+<div class="line"><span class="lineno">   46</span>        far = max(far, 0.00001f);</div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>        <span class="comment">// Get film back offset</span></div>
+<div class="line"><span class="lineno">   49</span>        <span class="keywordtype">float</span> filmOffsetX = get(<a class="code hl_variable" href="dso_2camera_2_orthographic_camera_2attributes_8cc.html#a4e4f47c9f6951d4f773b0ab53f91be7f">attrHorizontalFilmOffset</a>);</div>
+<div class="line"><span class="lineno">   50</span>        <span class="keywordtype">float</span> filmOffsetY = get(<a class="code hl_variable" href="dso_2camera_2_orthographic_camera_2attributes_8cc.html#a98d90fbfb99030fb5da197bda2c75325">attrVerticalFilmOffset</a>);</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>        <span class="comment">// Get pixel aspect ratio</span></div>
+<div class="line"><span class="lineno">   53</span>        <span class="keywordtype">float</span> par = get(<a class="code hl_variable" href="dso_2camera_2_orthographic_camera_2attributes_8cc.html#a0b866ab48d0f1ea4c263eb0877e78745">attrPixelAspectRatio</a>);</div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(par, 0.0f)) {</div>
+<div class="line"><span class="lineno">   55</span>            par = 1.0f;</div>
+<div class="line"><span class="lineno">   56</span>        }</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>        <span class="comment">// Compute additional horizontal film offset and translation due to stereo</span></div>
+<div class="line"><span class="lineno">   59</span>        <span class="comment">// See diagram pbr/doc/stereo_projection_top_view.jpg for details.</span></div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordtype">float</span> convergenceDistance = get(<a class="code hl_variable" href="dso_2camera_2_perspective_camera_2attributes_8cc.html#a2e86a011befad9ca494b200cd2ac717c">attrStereoConvergenceDistance</a>);</div>
+<div class="line"><span class="lineno">   61</span>        convergenceDistance = max(convergenceDistance, 0.00001f);</div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span>        <span class="keywordtype">float</span> stereoFilmOffsetX = interocularOffset * focal / convergenceDistance;</div>
+<div class="line"><span class="lineno">   64</span>        filmOffsetX += stereoFilmOffsetX;</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>        <span class="comment">// Compute window corners on the near plane</span></div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordtype">float</span> factor = near / focal;</div>
+<div class="line"><span class="lineno">   68</span>        <span class="keywordtype">float</span> windowNear[4];</div>
+<div class="line"><span class="lineno">   69</span>        windowNear[0] = (window[0] * halfFilmWidth + filmOffsetX) * factor;</div>
+<div class="line"><span class="lineno">   70</span>        windowNear[1] = (window[1] * halfFilmWidth + filmOffsetY) * factor / par;</div>
+<div class="line"><span class="lineno">   71</span>        windowNear[2] = (window[2] * halfFilmWidth + filmOffsetX) * factor;</div>
+<div class="line"><span class="lineno">   72</span>        windowNear[3] = (window[3] * halfFilmWidth + filmOffsetY) * factor / par;</div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>        <span class="comment">// Center view to stereo view camera translation</span></div>
+<div class="line"><span class="lineno">   75</span>        Mat4f stereoTranslation = Mat4f::translate(</div>
+<div class="line"><span class="lineno">   76</span>            <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a9e759f29bca3ea7593c72a2acfb487a4">Vec4f</a>(interocularOffset, 0.0f, 0.0f, 1.0f));</div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>        <span class="comment">// See Appendix C.5 of the SGI Graphics Library Programming Guide</span></div>
+<div class="line"><span class="lineno">   79</span>        <span class="comment">// for format of projection matrix.</span></div>
+<div class="line"><span class="lineno">   80</span>        Mat4f c2s;</div>
+<div class="line"><span class="lineno">   81</span>        c2s[0][0] = (2.0f * near) / (windowNear[2] - windowNear[0]);</div>
+<div class="line"><span class="lineno">   82</span>        c2s[0][1] = 0.0f;</div>
+<div class="line"><span class="lineno">   83</span>        c2s[0][2] = 0.0f;</div>
+<div class="line"><span class="lineno">   84</span>        c2s[0][3] = 0.0f;</div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>        c2s[1][0] = 0.0f;</div>
+<div class="line"><span class="lineno">   87</span>        c2s[1][1] = (2.0f * near) / (windowNear[3] - windowNear[1]);</div>
+<div class="line"><span class="lineno">   88</span>        c2s[1][2] = 0.0f;</div>
+<div class="line"><span class="lineno">   89</span>        c2s[1][3] = 0.0f;</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>        c2s[2][0] = (windowNear[2] + windowNear[0]) / (windowNear[2] - windowNear[0]);</div>
+<div class="line"><span class="lineno">   92</span>        c2s[2][1] = (windowNear[3] + windowNear[1]) / (windowNear[3] - windowNear[1]);</div>
+<div class="line"><span class="lineno">   93</span>        c2s[2][2] = -(far + near) / (far - near);</div>
+<div class="line"><span class="lineno">   94</span>        c2s[2][3] = -1.0f;</div>
+<div class="line"><span class="lineno">   95</span> </div>
+<div class="line"><span class="lineno">   96</span>        c2s[3][0] = 0.0f;</div>
+<div class="line"><span class="lineno">   97</span>        c2s[3][1] = 0.0f;</div>
+<div class="line"><span class="lineno">   98</span>        c2s[3][2] = -(2.0f * far * near) / (far - near);</div>
+<div class="line"><span class="lineno">   99</span>        c2s[3][3] = 0.0f;</div>
+<div class="line"><span class="lineno">  100</span> </div>
+<div class="line"><span class="lineno">  101</span>        <span class="keywordflow">return</span> stereoTranslation * c2s;</div>
+<div class="line"><span class="lineno">  102</span>    }</div>
+<div class="ttc" id="adso_2camera_2_orthographic_camera_2attributes_8cc_html_a0b866ab48d0f1ea4c263eb0877e78745"><div class="ttname"><a href="dso_2camera_2_orthographic_camera_2attributes_8cc.html#a0b866ab48d0f1ea4c263eb0877e78745">attrPixelAspectRatio</a></div><div class="ttdeci">rdl2::AttributeKey&lt; rdl2::Float &gt; attrPixelAspectRatio</div><div class="ttdef"><b>Definition:</b> <a href="dso_2camera_2_orthographic_camera_2attributes_8cc_source.html#l00017">attributes.cc:17</a></div></div>
+<div class="ttc" id="adso_2camera_2_orthographic_camera_2attributes_8cc_html_a4e4f47c9f6951d4f773b0ab53f91be7f"><div class="ttname"><a href="dso_2camera_2_orthographic_camera_2attributes_8cc.html#a4e4f47c9f6951d4f773b0ab53f91be7f">attrHorizontalFilmOffset</a></div><div class="ttdeci">RDL2_DSO_ATTR_DECLARE rdl2::AttributeKey&lt; rdl2::Float &gt; attrHorizontalFilmOffset</div><div class="ttdef"><b>Definition:</b> <a href="dso_2camera_2_orthographic_camera_2attributes_8cc_source.html#l00014">attributes.cc:14</a></div></div>
+<div class="ttc" id="adso_2camera_2_orthographic_camera_2attributes_8cc_html_a98d90fbfb99030fb5da197bda2c75325"><div class="ttname"><a href="dso_2camera_2_orthographic_camera_2attributes_8cc.html#a98d90fbfb99030fb5da197bda2c75325">attrVerticalFilmOffset</a></div><div class="ttdeci">rdl2::AttributeKey&lt; rdl2::Float &gt; attrVerticalFilmOffset</div><div class="ttdef"><b>Definition:</b> <a href="dso_2camera_2_orthographic_camera_2attributes_8cc_source.html#l00015">attributes.cc:15</a></div></div>
+<div class="ttc" id="adso_2camera_2_orthographic_camera_2attributes_8cc_html_aef508a3387f30faede183b82d7535226"><div class="ttname"><a href="dso_2camera_2_orthographic_camera_2attributes_8cc.html#aef508a3387f30faede183b82d7535226">attrFilmWidthApertureKey</a></div><div class="ttdeci">rdl2::AttributeKey&lt; rdl2::Float &gt; attrFilmWidthApertureKey</div><div class="ttdef"><b>Definition:</b> <a href="dso_2camera_2_orthographic_camera_2attributes_8cc_source.html#l00016">attributes.cc:16</a></div></div>
+<div class="ttc" id="adso_2camera_2_perspective_camera_2attributes_8cc_html_a2e86a011befad9ca494b200cd2ac717c"><div class="ttname"><a href="dso_2camera_2_perspective_camera_2attributes_8cc.html#a2e86a011befad9ca494b200cd2ac717c">attrStereoConvergenceDistance</a></div><div class="ttdeci">rdl2::AttributeKey&lt; rdl2::Float &gt; attrStereoConvergenceDistance</div><div class="ttdef"><b>Definition:</b> <a href="dso_2camera_2_perspective_camera_2attributes_8cc_source.html#l00016">attributes.cc:16</a></div></div>
+<div class="ttc" id="adso_2camera_2_perspective_camera_2attributes_8cc_html_aab7507f63df07cbc899e5db4c41f08e4"><div class="ttname"><a href="dso_2camera_2_perspective_camera_2attributes_8cc.html#aab7507f63df07cbc899e5db4c41f08e4">attrFocalKey</a></div><div class="ttdeci">RDL2_DSO_ATTR_DECLARE rdl2::AttributeKey&lt; rdl2::Float &gt; attrFocalKey</div><div class="ttdef"><b>Definition:</b> <a href="dso_2camera_2_perspective_camera_2attributes_8cc_source.html#l00012">attributes.cc:12</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1unittest_html_aca9de8dd11f6a3cf125acd13c8b3b636"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">moonray::geom::unittest::isEqual</a></div><div class="ttdeci">__forceinline bool isEqual(const scene_rdl2::math::Color4 &amp;lhs, const scene_rdl2::math::Color4 &amp;rhs)</div><div class="ttdef"><b>Definition:</b> <a href="_test_prim_utils_8h_source.html#l00125">TestPrimUtils.h:125</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a9e759f29bca3ea7593c72a2acfb487a4"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a9e759f29bca3ea7593c72a2acfb487a4">moonray::geom::Vec4f</a></div><div class="ttdeci">scene_rdl2::math::Vec4f Vec4f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00041">Types.h:41</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa78a964a1ab93519f644815a9168f900" name="aa78a964a1ab93519f644815a9168f900"></a>
@@ -133,7 +230,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="dso_2camera_2_perspective_camera_2_perspective_camera_8cc_source.html#l00024">24</a> of file <a class="el" href="dso_2camera_2_perspective_camera_2_perspective_camera_8cc_source.html">PerspectiveCamera.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   25</span>    {</div>
+<div class="line"><span class="lineno">   26</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   27</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a73a1979fd3aa32a0422c5966dc90853f" name="a73a1979fd3aa32a0422c5966dc90853f"></a>
@@ -161,13 +261,21 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="dso_2camera_2_perspective_camera_2_perspective_camera_8cc_source.html#l00019">19</a> of file <a class="el" href="dso_2camera_2_perspective_camera_2_perspective_camera_8cc_source.html">PerspectiveCamera.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   20</span>    {</div>
+<div class="line"><span class="lineno">   21</span>        this-&gt;set&lt;rdl2::Float&gt;(<a class="code hl_variable" href="dso_2camera_2_perspective_camera_2attributes_8cc.html#aab7507f63df07cbc899e5db4c41f08e4">attrFocalKey</a>, <a class="code hl_function" href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a>);</div>
+<div class="line"><span class="lineno">   22</span>    }</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a25c3c0d490b4f6a95f0595760efbc351"><div class="ttname"><a href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a></div><div class="ttdeci">__host__ __device__ float length(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00159">GPUMath.h:159</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_6a52a9733426c3f6f80e6f7bd53e6965.html">dso</a></li><li class="navelem"><a class="el" href="dir_bf4348ba1729026d417fed4cddc18c88.html">camera</a></li><li class="navelem"><a class="el" href="dir_4f6e32c3460d424e9963c932a485019e.html">PerspectiveCamera</a></li><li class="navelem"><a class="el" href="dso_2camera_2_perspective_camera_2_perspective_camera_8cc.html">PerspectiveCamera.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

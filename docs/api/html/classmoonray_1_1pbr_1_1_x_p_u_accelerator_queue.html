@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html">XPUAcceleratorQueue</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -201,7 +217,37 @@ template&lt;typename EntryType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_x_p_u_occlusion_ray_queue_8h_source.html#l00076">76</a> of file <a class="el" href="_x_p_u_occlusion_ray_queue_8h_source.html">XPUOcclusionRayQueue.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   80</span>                                           :</div>
+<div class="line"><span class="lineno">   81</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a1599c21e68f00eb43253187766e8caba">mNumCPUThreads</a>(numCPUThreads),</div>
+<div class="line"><span class="lineno">   82</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a8e9dffbc5444f5ea2ad2531e71a52105">mCPUThreadQueueSize</a>(cpuThreadQueueSize),</div>
+<div class="line"><span class="lineno">   83</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a77d20e26399ba3c4a5646fe717605454">mCPUThreadQueueHandler</a>(cpuThreadQueueHandler),</div>
+<div class="line"><span class="lineno">   84</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#ab373dd570c7f70b2b03c84f6818283ca">mGPUQueueHandler</a>(gpuQueueHandler),</div>
+<div class="line"><span class="lineno">   85</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a3337d0f724244f9c472f1efee69e5a99">mHandlerData</a>(handlerData)</div>
+<div class="line"><span class="lineno">   86</span>    {</div>
+<div class="line"><span class="lineno">   87</span>        MNRY_ASSERT(numCPUThreads);</div>
+<div class="line"><span class="lineno">   88</span>        MNRY_ASSERT(cpuThreadQueueSize);</div>
+<div class="line"><span class="lineno">   89</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a77d20e26399ba3c4a5646fe717605454">mCPUThreadQueueHandler</a>);</div>
+<div class="line"><span class="lineno">   90</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#ab373dd570c7f70b2b03c84f6818283ca">mGPUQueueHandler</a>);</div>
+<div class="line"><span class="lineno">   91</span> </div>
+<div class="line"><span class="lineno">   92</span>        <span class="comment">// Create a queue for each CPU thread</span></div>
+<div class="line"><span class="lineno">   93</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#af773d3a46f7a52817a598f4ccd0ae18f">mCPUThreadQueueEntries</a>.resize(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a1599c21e68f00eb43253187766e8caba">mNumCPUThreads</a>);</div>
+<div class="line"><span class="lineno">   94</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a5b9f262667b1d0805f5145d1b277c638">mCPUThreadQueueNumQueued</a>.resize(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a1599c21e68f00eb43253187766e8caba">mNumCPUThreads</a>);</div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; numCPUThreads; i++) {</div>
+<div class="line"><span class="lineno">   96</span>            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#af773d3a46f7a52817a598f4ccd0ae18f">mCPUThreadQueueEntries</a>[i] = scene_rdl2::util::alignedMallocArray&lt;EntryType&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a8e9dffbc5444f5ea2ad2531e71a52105">mCPUThreadQueueSize</a>, CACHE_LINE_SIZE);</div>
+<div class="line"><span class="lineno">   97</span>            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a5b9f262667b1d0805f5145d1b277c638">mCPUThreadQueueNumQueued</a>[i] = 0;</div>
+<div class="line"><span class="lineno">   98</span>        }</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#ae6b06089d13f1b674ed4cc9758ee99e0">mThreadsWaitingForGPU</a> = 0;</div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_x_p_u_accelerator_queue_html_a1599c21e68f00eb43253187766e8caba"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a1599c21e68f00eb43253187766e8caba">moonray::pbr::XPUAcceleratorQueue::mNumCPUThreads</a></div><div class="ttdeci">unsigned mNumCPUThreads</div><div class="ttdef"><b>Definition:</b> <a href="_x_p_u_occlusion_ray_queue_8h_source.html#l00252">XPUOcclusionRayQueue.h:252</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_x_p_u_accelerator_queue_html_a3337d0f724244f9c472f1efee69e5a99"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a3337d0f724244f9c472f1efee69e5a99">moonray::pbr::XPUAcceleratorQueue::mHandlerData</a></div><div class="ttdeci">void * mHandlerData</div><div class="ttdef"><b>Definition:</b> <a href="_x_p_u_occlusion_ray_queue_8h_source.html#l00260">XPUOcclusionRayQueue.h:260</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_x_p_u_accelerator_queue_html_a5b9f262667b1d0805f5145d1b277c638"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a5b9f262667b1d0805f5145d1b277c638">moonray::pbr::XPUAcceleratorQueue::mCPUThreadQueueNumQueued</a></div><div class="ttdeci">std::vector&lt; unsigned &gt; mCPUThreadQueueNumQueued</div><div class="ttdef"><b>Definition:</b> <a href="_x_p_u_occlusion_ray_queue_8h_source.html#l00255">XPUOcclusionRayQueue.h:255</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_x_p_u_accelerator_queue_html_a77d20e26399ba3c4a5646fe717605454"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a77d20e26399ba3c4a5646fe717605454">moonray::pbr::XPUAcceleratorQueue::mCPUThreadQueueHandler</a></div><div class="ttdeci">CPUHandler mCPUThreadQueueHandler</div><div class="ttdef"><b>Definition:</b> <a href="_x_p_u_occlusion_ray_queue_8h_source.html#l00256">XPUOcclusionRayQueue.h:256</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_x_p_u_accelerator_queue_html_a8e9dffbc5444f5ea2ad2531e71a52105"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a8e9dffbc5444f5ea2ad2531e71a52105">moonray::pbr::XPUAcceleratorQueue::mCPUThreadQueueSize</a></div><div class="ttdeci">unsigned mCPUThreadQueueSize</div><div class="ttdef"><b>Definition:</b> <a href="_x_p_u_occlusion_ray_queue_8h_source.html#l00253">XPUOcclusionRayQueue.h:253</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_x_p_u_accelerator_queue_html_ab373dd570c7f70b2b03c84f6818283ca"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#ab373dd570c7f70b2b03c84f6818283ca">moonray::pbr::XPUAcceleratorQueue::mGPUQueueHandler</a></div><div class="ttdeci">GPUHandler mGPUQueueHandler</div><div class="ttdef"><b>Definition:</b> <a href="_x_p_u_occlusion_ray_queue_8h_source.html#l00258">XPUOcclusionRayQueue.h:258</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_x_p_u_accelerator_queue_html_ae6b06089d13f1b674ed4cc9758ee99e0"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#ae6b06089d13f1b674ed4cc9758ee99e0">moonray::pbr::XPUAcceleratorQueue::mThreadsWaitingForGPU</a></div><div class="ttdeci">std::atomic&lt; int &gt; mThreadsWaitingForGPU</div><div class="ttdef"><b>Definition:</b> <a href="_x_p_u_occlusion_ray_queue_8h_source.html#l00257">XPUOcclusionRayQueue.h:257</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_x_p_u_accelerator_queue_html_af773d3a46f7a52817a598f4ccd0ae18f"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#af773d3a46f7a52817a598f4ccd0ae18f">moonray::pbr::XPUAcceleratorQueue::mCPUThreadQueueEntries</a></div><div class="ttdeci">std::vector&lt; EntryType * &gt; mCPUThreadQueueEntries</div><div class="ttdef"><b>Definition:</b> <a href="_x_p_u_occlusion_ray_queue_8h_source.html#l00254">XPUOcclusionRayQueue.h:254</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad3f8f46768cdb8c5506591711f633cd6" name="ad3f8f46768cdb8c5506591711f633cd6"></a>
@@ -230,7 +276,13 @@ template&lt;typename EntryType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_x_p_u_occlusion_ray_queue_8h_source.html#l00103">103</a> of file <a class="el" href="_x_p_u_occlusion_ray_queue_8h_source.html">XPUOcclusionRayQueue.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  104</span>    {</div>
+<div class="line"><span class="lineno">  105</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a1599c21e68f00eb43253187766e8caba">mNumCPUThreads</a>; i++) {</div>
+<div class="line"><span class="lineno">  106</span>            MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a5b9f262667b1d0805f5145d1b277c638">mCPUThreadQueueNumQueued</a>[i] == 0);</div>
+<div class="line"><span class="lineno">  107</span>            scene_rdl2::util::alignedFree(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#af773d3a46f7a52817a598f4ccd0ae18f">mCPUThreadQueueEntries</a>[i]);</div>
+<div class="line"><span class="lineno">  108</span>        }</div>
+<div class="line"><span class="lineno">  109</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -277,7 +329,53 @@ template&lt;typename EntryType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_x_p_u_occlusion_ray_queue_8h_source.html#l00123">123</a> of file <a class="el" href="_x_p_u_occlusion_ray_queue_8h_source.html">XPUOcclusionRayQueue.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  126</span>    {</div>
+<div class="line"><span class="lineno">  127</span>        MNRY_ASSERT(tls);</div>
+<div class="line"><span class="lineno">  128</span>        MNRY_ASSERT(numEntries);</div>
+<div class="line"><span class="lineno">  129</span>        MNRY_ASSERT(entries);</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>        <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(tls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a6d9c5454eed92d0aee576062cd857d35">EXCL_ACCUM_QUEUE_LOGIC</a>);</div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>        <span class="keywordflow">while</span> (numEntries &gt;= <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a8e9dffbc5444f5ea2ad2531e71a52105">mCPUThreadQueueSize</a>) {</div>
+<div class="line"><span class="lineno">  134</span>            <span class="comment">// The number of rays that have been submitted exceeds or equals the</span></div>
+<div class="line"><span class="lineno">  135</span>            <span class="comment">// CPU thread queue size.  Process them in batches of mCPUThreadQueueSize.</span></div>
+<div class="line"><span class="lineno">  136</span>            <a class="code hl_function" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a1ce23927ff87a17544b1482a4ac52614">processRays</a>(tls, <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a8e9dffbc5444f5ea2ad2531e71a52105">mCPUThreadQueueSize</a>, entries);</div>
+<div class="line"><span class="lineno">  137</span>            entries += <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a8e9dffbc5444f5ea2ad2531e71a52105">mCPUThreadQueueSize</a>;</div>
+<div class="line"><span class="lineno">  138</span>            numEntries -= <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a8e9dffbc5444f5ea2ad2531e71a52105">mCPUThreadQueueSize</a>;</div>
+<div class="line"><span class="lineno">  139</span>        }</div>
+<div class="line"><span class="lineno">  140</span> </div>
+<div class="line"><span class="lineno">  141</span>        <span class="keywordtype">int</span> threadIdx = tls-&gt;mThreadIdx;</div>
+<div class="line"><span class="lineno">  142</span> </div>
+<div class="line"><span class="lineno">  143</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a5b9f262667b1d0805f5145d1b277c638">mCPUThreadQueueNumQueued</a>[threadIdx] &lt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a8e9dffbc5444f5ea2ad2531e71a52105">mCPUThreadQueueSize</a>);</div>
+<div class="line"><span class="lineno">  144</span>        <span class="keywordtype">unsigned</span> totalEntries = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a5b9f262667b1d0805f5145d1b277c638">mCPUThreadQueueNumQueued</a>[threadIdx] + numEntries;</div>
+<div class="line"><span class="lineno">  145</span> </div>
+<div class="line"><span class="lineno">  146</span>        <span class="comment">// Is there enough room in the CPU thread queue for the new entries?</span></div>
+<div class="line"><span class="lineno">  147</span>        <span class="keywordflow">if</span> (totalEntries &lt;= <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a8e9dffbc5444f5ea2ad2531e71a52105">mCPUThreadQueueSize</a>) {</div>
+<div class="line"><span class="lineno">  148</span>            <span class="comment">// Copy entries into CPU thread&#39;s queue as there is room for them in that queue.</span></div>
+<div class="line"><span class="lineno">  149</span>            memcpy(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#af773d3a46f7a52817a598f4ccd0ae18f">mCPUThreadQueueEntries</a>[threadIdx] + <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a5b9f262667b1d0805f5145d1b277c638">mCPUThreadQueueNumQueued</a>[threadIdx],</div>
+<div class="line"><span class="lineno">  150</span>                   entries,</div>
+<div class="line"><span class="lineno">  151</span>                   numEntries * <span class="keyword">sizeof</span>(EntryType));</div>
+<div class="line"><span class="lineno">  152</span>            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a5b9f262667b1d0805f5145d1b277c638">mCPUThreadQueueNumQueued</a>[threadIdx] = totalEntries;</div>
+<div class="line"><span class="lineno">  153</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  154</span>        }</div>
+<div class="line"><span class="lineno">  155</span> </div>
+<div class="line"><span class="lineno">  156</span>        <span class="comment">// Else there isn&#39;t enough room in the CPU thread&#39;s queue for all of the new</span></div>
+<div class="line"><span class="lineno">  157</span>        <span class="comment">// entries.  We need to flush the queue to free up space.</span></div>
+<div class="line"><span class="lineno">  158</span>        <a class="code hl_function" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a1ce23927ff87a17544b1482a4ac52614">processRays</a>(tls, <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a5b9f262667b1d0805f5145d1b277c638">mCPUThreadQueueNumQueued</a>[threadIdx], <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#af773d3a46f7a52817a598f4ccd0ae18f">mCPUThreadQueueEntries</a>[threadIdx]);</div>
+<div class="line"><span class="lineno">  159</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a5b9f262667b1d0805f5145d1b277c638">mCPUThreadQueueNumQueued</a>[threadIdx] = 0;</div>
+<div class="line"><span class="lineno">  160</span> </div>
+<div class="line"><span class="lineno">  161</span>        <span class="comment">// Now that the queue is empty, we can add the new entries.</span></div>
+<div class="line"><span class="lineno">  162</span>        memcpy(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#af773d3a46f7a52817a598f4ccd0ae18f">mCPUThreadQueueEntries</a>[threadIdx],</div>
+<div class="line"><span class="lineno">  163</span>               entries,</div>
+<div class="line"><span class="lineno">  164</span>               numEntries * <span class="keyword">sizeof</span>(EntryType));</div>
+<div class="line"><span class="lineno">  165</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a5b9f262667b1d0805f5145d1b277c638">mCPUThreadQueueNumQueued</a>[threadIdx] = numEntries;</div>
+<div class="line"><span class="lineno">  166</span> </div>
+<div class="line"><span class="lineno">  167</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a5b9f262667b1d0805f5145d1b277c638">mCPUThreadQueueNumQueued</a>[threadIdx] &lt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a8e9dffbc5444f5ea2ad2531e71a52105">mCPUThreadQueueSize</a>);</div>
+<div class="line"><span class="lineno">  168</span>    }</div>
+<div class="ttc" id="a_profile_accumulator_handles_8h_html_a6335af8746974a0365ae8756b7d5d73f"><div class="ttname"><a href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a></div><div class="ttdeci">#define EXCL_ACCUMULATOR_PROFILE(tls, type)</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_handles_8h_source.html#l00020">ProfileAccumulatorHandles.h:20</a></div></div>
+<div class="ttc" id="a_profile_accumulator_handles_8hh_html_ae7f4a146d68256e9f19dcbde6c38c9b2a6d9c5454eed92d0aee576062cd857d35"><div class="ttname"><a href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a6d9c5454eed92d0aee576062cd857d35">EXCL_ACCUM_QUEUE_LOGIC</a></div><div class="ttdeci">@ EXCL_ACCUM_QUEUE_LOGIC</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_handles_8hh_source.html#l00075">ProfileAccumulatorHandles.hh:75</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_x_p_u_accelerator_queue_html_a1ce23927ff87a17544b1482a4ac52614"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a1ce23927ff87a17544b1482a4ac52614">moonray::pbr::XPUAcceleratorQueue::processRays</a></div><div class="ttdeci">void processRays(mcrt_common::ThreadLocalState *tls, unsigned numRays, EntryType *rays)</div><div class="ttdef"><b>Definition:</b> <a href="_x_p_u_occlusion_ray_queue_8h_source.html#l00188">XPUOcclusionRayQueue.h:188</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afd91d35a41f0a8d91e8ee7e6fd8912f1" name="afd91d35a41f0a8d91e8ee7e6fd8912f1"></a>
@@ -317,7 +415,20 @@ template&lt;typename EntryType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_x_p_u_occlusion_ray_queue_8h_source.html#l00171">171</a> of file <a class="el" href="_x_p_u_occlusion_ray_queue_8h_source.html">XPUOcclusionRayQueue.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  172</span>    {</div>
+<div class="line"><span class="lineno">  173</span>        <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(tls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a6d9c5454eed92d0aee576062cd857d35">EXCL_ACCUM_QUEUE_LOGIC</a>);</div>
+<div class="line"><span class="lineno">  174</span> </div>
+<div class="line"><span class="lineno">  175</span>        <span class="keywordtype">int</span> threadIdx = tls-&gt;mThreadIdx;</div>
+<div class="line"><span class="lineno">  176</span> </div>
+<div class="line"><span class="lineno">  177</span>        <span class="keywordtype">int</span> numFlushed = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a5b9f262667b1d0805f5145d1b277c638">mCPUThreadQueueNumQueued</a>[threadIdx];</div>
+<div class="line"><span class="lineno">  178</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a5b9f262667b1d0805f5145d1b277c638">mCPUThreadQueueNumQueued</a>[threadIdx]) {</div>
+<div class="line"><span class="lineno">  179</span>            <a class="code hl_function" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a1ce23927ff87a17544b1482a4ac52614">processRays</a>(tls, <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a5b9f262667b1d0805f5145d1b277c638">mCPUThreadQueueNumQueued</a>[threadIdx], <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#af773d3a46f7a52817a598f4ccd0ae18f">mCPUThreadQueueEntries</a>[threadIdx]);</div>
+<div class="line"><span class="lineno">  180</span>            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a5b9f262667b1d0805f5145d1b277c638">mCPUThreadQueueNumQueued</a>[threadIdx] = 0;</div>
+<div class="line"><span class="lineno">  181</span>        }</div>
+<div class="line"><span class="lineno">  182</span> </div>
+<div class="line"><span class="lineno">  183</span>        <span class="keywordflow">return</span> numFlushed;</div>
+<div class="line"><span class="lineno">  184</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a851f50c9d71708e5349852d808a5de22" name="a851f50c9d71708e5349852d808a5de22"></a>
@@ -346,7 +457,10 @@ template&lt;typename EntryType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_x_p_u_occlusion_ray_queue_8h_source.html#l00111">111</a> of file <a class="el" href="_x_p_u_occlusion_ray_queue_8h_source.html">XPUOcclusionRayQueue.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  112</span>    {</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">return</span> (<span class="keyword">sizeof</span>(EntryType) * <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a8e9dffbc5444f5ea2ad2531e71a52105">mCPUThreadQueueSize</a> * <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a1599c21e68f00eb43253187766e8caba">mNumCPUThreads</a>) + <span class="keyword">sizeof</span>(*this);</div>
+<div class="line"><span class="lineno">  114</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1c36f80d28fb43912eb27aaea4a48d30" name="a1c36f80d28fb43912eb27aaea4a48d30"></a>
@@ -375,7 +489,11 @@ template&lt;typename EntryType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_x_p_u_occlusion_ray_queue_8h_source.html#l00116">116</a> of file <a class="el" href="_x_p_u_occlusion_ray_queue_8h_source.html">XPUOcclusionRayQueue.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  117</span>    {</div>
+<div class="line"><span class="lineno">  118</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#ab373dd570c7f70b2b03c84f6818283ca">mGPUQueueHandler</a>);</div>
+<div class="line"><span class="lineno">  119</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  120</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1ce23927ff87a17544b1482a4ac52614" name="a1ce23927ff87a17544b1482a4ac52614"></a>
@@ -421,7 +539,68 @@ template&lt;typename EntryType &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_x_p_u_occlusion_ray_queue_8h_source.html#l00188">188</a> of file <a class="el" href="_x_p_u_occlusion_ray_queue_8h_source.html">XPUOcclusionRayQueue.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  191</span>    {</div>
+<div class="line"><span class="lineno">  192</span>        <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(tls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a6d9c5454eed92d0aee576062cd857d35">EXCL_ACCUM_QUEUE_LOGIC</a>);</div>
+<div class="line"><span class="lineno">  193</span> </div>
+<div class="line"><span class="lineno">  194</span>        MNRY_ASSERT(numRays);</div>
+<div class="line"><span class="lineno">  195</span> </div>
+<div class="line"><span class="lineno">  196</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#ae6b06089d13f1b674ed4cc9758ee99e0">mThreadsWaitingForGPU</a>.load() &lt; 3 &amp;&amp; numRays &gt; 1024) {</div>
+<div class="line"><span class="lineno">  197</span>            <span class="comment">// There are an acceptable number of threads waiting to access the GPU, so we</span></div>
+<div class="line"><span class="lineno">  198</span>            <span class="comment">// just wait our turn.  But, before we try to acquire the GPU lock, we get the</span></div>
+<div class="line"><span class="lineno">  199</span>            <span class="comment">// buffer of rays ready for the GPU.</span></div>
+<div class="line"><span class="lineno">  200</span>            <span class="comment">// The value 2 was determined empirically.  Higher values do not provide benefit.</span></div>
+<div class="line"><span class="lineno">  201</span> </div>
+<div class="line"><span class="lineno">  202</span>            <span class="comment">// Another thread can sneak in here before we increment, but it doesn&#39;t matter</span></div>
+<div class="line"><span class="lineno">  203</span>            <span class="comment">// because 2 is just a heuristic anyway and it doesn&#39;t matter if there&#39;s a small</span></div>
+<div class="line"><span class="lineno">  204</span>            <span class="comment">// chance we end up with 3.</span></div>
+<div class="line"><span class="lineno">  205</span>            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#ae6b06089d13f1b674ed4cc9758ee99e0">mThreadsWaitingForGPU</a>++;</div>
+<div class="line"><span class="lineno">  206</span> </div>
+<div class="line"><span class="lineno">  207</span>            pbr::TLState *pbrTls = tls-&gt;mPbrTls.get();</div>
+<div class="line"><span class="lineno">  208</span>            scene_rdl2::alloc::Arena *arena = &amp;tls-&gt;mArena;</div>
+<div class="line"><span class="lineno">  209</span>            rt::GPUOcclusionRay* gpuRays = arena-&gt;allocArray&lt;rt::GPUOcclusionRay&gt;(numRays, CACHE_LINE_SIZE);</div>
+<div class="line"><span class="lineno">  210</span> </div>
+<div class="line"><span class="lineno">  211</span>            <span class="comment">// Now that the thread knows it&#39;s running on the GPU, it still needs to wait its</span></div>
+<div class="line"><span class="lineno">  212</span>            <span class="comment">// turn for the GPU.  Before waiting, it needs to prepare the GPUOcclusionRays.</span></div>
+<div class="line"><span class="lineno">  213</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; numRays; ++i) {</div>
+<div class="line"><span class="lineno">  214</span>                <span class="keyword">const</span> BundledOcclRay &amp;occlRay = rays[i];</div>
+<div class="line"><span class="lineno">  215</span>                MNRY_ASSERT(occlRay.isValid());</div>
+<div class="line"><span class="lineno">  216</span> </div>
+<div class="line"><span class="lineno">  217</span>                gpuRays[i].mOriginX = occlRay.mOrigin.x;</div>
+<div class="line"><span class="lineno">  218</span>                gpuRays[i].mOriginY = occlRay.mOrigin.y;</div>
+<div class="line"><span class="lineno">  219</span>                gpuRays[i].mOriginZ = occlRay.mOrigin.z;</div>
+<div class="line"><span class="lineno">  220</span>                gpuRays[i].mDirX = occlRay.mDir.x;</div>
+<div class="line"><span class="lineno">  221</span>                gpuRays[i].mDirY = occlRay.mDir.y;</div>
+<div class="line"><span class="lineno">  222</span>                gpuRays[i].mDirZ = occlRay.mDir.z;</div>
+<div class="line"><span class="lineno">  223</span>                gpuRays[i].mMinT = occlRay.mMinT;</div>
+<div class="line"><span class="lineno">  224</span>                gpuRays[i].mMaxT = occlRay.mMaxT;</div>
+<div class="line"><span class="lineno">  225</span>                gpuRays[i].mTime = occlRay.mTime;</div>
+<div class="line"><span class="lineno">  226</span>                <span class="keyword">const</span> scene_rdl2::rdl2::Light* light = <span class="keyword">static_cast&lt;</span>BundledOcclRayData *<span class="keyword">&gt;</span>(</div>
+<div class="line"><span class="lineno">  227</span>                    pbrTls-&gt;getListItem(occlRay.mDataPtrHandle, 0))-&gt;mLight-&gt;getRdlLight();</div>
+<div class="line"><span class="lineno">  228</span>                gpuRays[i].mLightId = <span class="keyword">reinterpret_cast&lt;</span>intptr_t<span class="keyword">&gt;</span>(light);</div>
+<div class="line"><span class="lineno">  229</span>            }</div>
+<div class="line"><span class="lineno">  230</span> </div>
+<div class="line"><span class="lineno">  231</span>            <span class="comment">// Acquire the GPU.</span></div>
+<div class="line"><span class="lineno">  232</span>            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a7a402fa50d306fd67c679026bc089e03">mGPUDeviceMutex</a>.lock();</div>
+<div class="line"><span class="lineno">  233</span> </div>
+<div class="line"><span class="lineno">  234</span>            <span class="comment">// This thread is no longer waiting to access the GPU, because it has the GPU.</span></div>
+<div class="line"><span class="lineno">  235</span>            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#ae6b06089d13f1b674ed4cc9758ee99e0">mThreadsWaitingForGPU</a>--;</div>
+<div class="line"><span class="lineno">  236</span> </div>
+<div class="line"><span class="lineno">  237</span>            <span class="comment">// The handler unlocks the GPU device mutex internally once the GPU</span></div>
+<div class="line"><span class="lineno">  238</span>            <span class="comment">// is finished but there is still some CPU code left for this thread to run.</span></div>
+<div class="line"><span class="lineno">  239</span>            (*mGPUQueueHandler)(tls,</div>
+<div class="line"><span class="lineno">  240</span>                                numRays,</div>
+<div class="line"><span class="lineno">  241</span>                                rays,</div>
+<div class="line"><span class="lineno">  242</span>                                gpuRays,</div>
+<div class="line"><span class="lineno">  243</span>                                <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a7a402fa50d306fd67c679026bc089e03">mGPUDeviceMutex</a>);</div>
+<div class="line"><span class="lineno">  244</span> </div>
+<div class="line"><span class="lineno">  245</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  246</span>            <span class="comment">// There&#39;s too many threads already waiting for the GPU, and we would need to wait</span></div>
+<div class="line"><span class="lineno">  247</span>            <span class="comment">// too long.  Process these rays on the CPU instead.</span></div>
+<div class="line"><span class="lineno">  248</span>            (*mCPUThreadQueueHandler)(tls, numRays, rays, <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a3337d0f724244f9c472f1efee69e5a99">mHandlerData</a>);            </div>
+<div class="line"><span class="lineno">  249</span>        }</div>
+<div class="line"><span class="lineno">  250</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_x_p_u_accelerator_queue_html_a7a402fa50d306fd67c679026bc089e03"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html#a7a402fa50d306fd67c679026bc089e03">moonray::pbr::XPUAcceleratorQueue::mGPUDeviceMutex</a></div><div class="ttdeci">tbb::spin_mutex mGPUDeviceMutex</div><div class="ttdef"><b>Definition:</b> <a href="_x_p_u_occlusion_ray_queue_8h_source.html#l00259">XPUOcclusionRayQueue.h:259</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -664,9 +843,13 @@ template&lt;typename EntryType &gt; </div>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/core/<a class="el" href="_x_p_u_occlusion_ray_queue_8h_source.html">XPUOcclusionRayQueue.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html">XPUAcceleratorQueue</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

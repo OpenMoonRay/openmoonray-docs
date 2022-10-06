@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">Iridescence</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_iridescence.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">moonray::shading::Iridescence Member List</div></div>
 </div><!--header-->
@@ -67,11 +83,29 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#a164d53c9a50de9b12233eda29eac9c1b">getThickness</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#af50d25b0840c5057ad745cb2bf52b0e2">Iridescence</a>(const scene_rdl2::math::Vec3f &amp;N, const float strength, const scene_rdl2::math::Color &amp;primary, const scene_rdl2::math::Color &amp;secondary, const bool flipHue, const float thickness, const float exponent, const float iridescenceAt0, const float iridescenceAt90)</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#a30c21723be8423e7fcb532383d721459">Iridescence</a>(const scene_rdl2::math::Vec3f &amp;N, const float strength, const ispc::ColorRampControlSpace rampInterpolationMode, const int numRampPoints, const float *rampPositions, const ispc::RampInterpolatorMode *rampInterpolators, const scene_rdl2::math::Color *rampColors, const float thickness, const float exponent, const float iridescenceAt0, const float iridescenceAt90)</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#a87de2e534ef320306996ca1f6eb053f7">~Iridescence</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#a5bca4d28f5bdc2dc53f5221944f17b88">mColorControl</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#a5c6c508c2b18a2dfed14f015b56cff26">mExponent</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#acb4da3b251ebd58d9d33c8811a7a4aec">mFlipHue</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#ab4c0eaf929850f3139038c411f2dd1c8">mIridescenceAt0</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#a1cc5fa25cdb0e4db84a093184370001d">mIridescenceAt90</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#a08f44b8fd2bb934e3a5accbf340e0ae1">mN</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#ad5c7509b32fa33f911d0256c7facbddd">mPrimary</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#a5f11c22c804d7955b9e4cdbddc379a42">mRampColors</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#ad4d995bcb922173b8dbd8da2c3a64f5b">mRampInterpolationMode</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#acb35ba728037eb8b76b3d72a02d371fe">mRampInterpolators</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#a4365c7a77affcbe586092b5115ed89ef">mRampNumPoints</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#ac0a41e01ba3c0c106feef200b14dbf56">mRampPositions</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#a7f5fe498bf113b045c44a222c181e49f">mSecondary</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#a21a1fad4438ef0a155d8e5164d0dc5f5">mStrength</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#aa4497666b245f7716d16b9e63bd87bde">mThickness</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html#a87de2e534ef320306996ca1f6eb053f7">~Iridescence</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_iridescence.html">moonray::shading::Iridescence</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

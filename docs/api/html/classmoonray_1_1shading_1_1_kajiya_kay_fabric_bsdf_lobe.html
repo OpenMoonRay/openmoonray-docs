@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html">KajiyaKayFabricBsdfLobe</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::KajiyaKayFabricBsdfLobe Class Reference</div></div>
 </div><!--header-->
@@ -138,6 +155,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a53e300f416eddc450bef32b46f45e3ef inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_lobe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32cda370918eb2aa16ee7004b6bb7262 inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_lobe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a32cda370918eb2aa16ee7004b6bb7262">show</a> (std::ostream &amp;os, const std::string &amp;indent) const =0</td></tr>
 <tr class="separator:a32cda370918eb2aa16ee7004b6bb7262 inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_lobe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a6441f28bc55d967fcb6b602c5c6b41fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#a6441f28bc55d967fcb6b602c5c6b41fe">calculateNormalizationFactor</a> ()</td></tr>
+<tr class="separator:a6441f28bc55d967fcb6b602c5c6b41fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73771beb5a7aedfcf655da640e6cc991"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#a73771beb5a7aedfcf655da640e6cc991">sampleVector</a> (const scene_rdl2::math::Vec3f &amp;wo, float r1, float r2, scene_rdl2::math::Vec3f &amp;wi) const</td></tr>
+<tr class="separator:a73771beb5a7aedfcf655da640e6cc991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -273,7 +297,26 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_kajiya_kay_fabric_8cc_source.html#l00031">31</a> of file <a class="el" href="_bsdf_kajiya_kay_fabric_8cc_source.html">BsdfKajiyaKayFabric.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   35</span>                                                      :</div>
+<div class="line"><span class="lineno">   36</span>                                       <a class="code hl_function" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a2a51de85e06fd63184eaea4ffe6728db">FabricBsdfLobe</a>(N, T,</div>
+<div class="line"><span class="lineno">   37</span>                                                      threadDirection, threadElevation,</div>
+<div class="line"><span class="lineno">   38</span>                                                      roughness)</div>
+<div class="line"><span class="lineno">   39</span>{</div>
+<div class="line"><span class="lineno">   40</span>    <span class="comment">// Convert the Roughness-&gt;Exponent</span></div>
+<div class="line"><span class="lineno">   41</span>    <span class="comment">// Square the roughness for a visually linear effect</span></div>
+<div class="line"><span class="lineno">   42</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> oneOverR2 = 1.0 / (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a413b5343459e55e4374fe54fcdda25a9">mRoughness</a>*<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a413b5343459e55e4374fe54fcdda25a9">mRoughness</a>);</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    <span class="comment">// Using the Conversion from:</span></div>
+<div class="line"><span class="lineno">   45</span>    <span class="comment">// Walter et al, EGSR 2007, &quot;Microfacet Models for Refraction through Rough Surfaces&quot;</span></div>
+<div class="line"><span class="lineno">   46</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a744f4483aa82d7d75ce03ac40e7073e0">mSpecularExponent</a> = 2.0*oneOverR2*oneOverR2;</div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>    <a class="code hl_function" href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#a6441f28bc55d967fcb6b602c5c6b41fe">calculateNormalizationFactor</a>();</div>
+<div class="line"><span class="lineno">   49</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_fabric_bsdf_lobe_html_a2a51de85e06fd63184eaea4ffe6728db"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a2a51de85e06fd63184eaea4ffe6728db">moonray::shading::FabricBsdfLobe::FabricBsdfLobe</a></div><div class="ttdeci">FabricBsdfLobe(const scene_rdl2::math::Vec3f &amp;N, const scene_rdl2::math::Vec3f &amp;T, const scene_rdl2::math::Vec3f &amp;threadDirection, const float threadElevation, const float roughness, const scene_rdl2::math::Color &amp;color=scene_rdl2::math::sWhite)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_fabric_8cc_source.html#l00020">BsdfFabric.cc:20</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_fabric_bsdf_lobe_html_a413b5343459e55e4374fe54fcdda25a9"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a413b5343459e55e4374fe54fcdda25a9">moonray::shading::FabricBsdfLobe::mRoughness</a></div><div class="ttdeci">float mRoughness</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_fabric_8h_source.html#l00096">BsdfFabric.h:96</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_fabric_bsdf_lobe_html_a744f4483aa82d7d75ce03ac40e7073e0"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a744f4483aa82d7d75ce03ac40e7073e0">moonray::shading::FabricBsdfLobe::mSpecularExponent</a></div><div class="ttdeci">float mSpecularExponent</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_fabric_8h_source.html#l00097">BsdfFabric.h:97</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe_html_a6441f28bc55d967fcb6b602c5c6b41fe"><div class="ttname"><a href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#a6441f28bc55d967fcb6b602c5c6b41fe">moonray::shading::KajiyaKayFabricBsdfLobe::calculateNormalizationFactor</a></div><div class="ttdeci">void calculateNormalizationFactor()</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_kajiya_kay_fabric_8cc_source.html#l00053">BsdfKajiyaKayFabric.cc:53</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abc116f8c3864883db683e13afcfb080c" name="abc116f8c3864883db683e13afcfb080c"></a>
@@ -300,10 +343,45 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_fabric_8h_source.html#l00191">191</a> of file <a class="el" href="_bsdf_fabric_8h_source.html">BsdfFabric.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  191</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6441f28bc55d967fcb6b602c5c6b41fe" name="a6441f28bc55d967fcb6b602c5c6b41fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6441f28bc55d967fcb6b602c5c6b41fe">&#9670;&#160;</a></span>calculateNormalizationFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::shading::KajiyaKayFabricBsdfLobe::calculateNormalizationFactor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_kajiya_kay_fabric_8cc_source.html#l00053">53</a> of file <a class="el" href="_bsdf_kajiya_kay_fabric_8cc_source.html">BsdfKajiyaKayFabric.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>{</div>
+<div class="line"><span class="lineno">   55</span>    <span class="comment">// Normalization factor = gamma((n+3)/2) / gamma((n+2)/2) / pi^1.5</span></div>
+<div class="line"><span class="lineno">   56</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a607a07dac61735b9e4bc9ea41b490e8a">mNormalizationFactor</a> = scene_rdl2::math::exp(lgammaf(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a744f4483aa82d7d75ce03ac40e7073e0">mSpecularExponent</a>*0.5f+1.5f) - lgammaf(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a744f4483aa82d7d75ce03ac40e7073e0">mSpecularExponent</a>*0.5+1.0f));</div>
+<div class="line"><span class="lineno">   57</span>    <span class="comment">// 1/powf(pi,1.5) = 0.1795871;</span></div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a607a07dac61735b9e4bc9ea41b490e8a">mNormalizationFactor</a> *= 0.1795871f;</div>
+<div class="line"><span class="lineno">   59</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_fabric_bsdf_lobe_html_a607a07dac61735b9e4bc9ea41b490e8a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a607a07dac61735b9e4bc9ea41b490e8a">moonray::shading::FabricBsdfLobe::mNormalizationFactor</a></div><div class="ttdeci">float mNormalizationFactor</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_fabric_8h_source.html#l00100">BsdfFabric.h:100</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ad71d33dc703d407f43f159bcd3317fee" name="ad71d33dc703d407f43f159bcd3317fee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad71d33dc703d407f43f159bcd3317fee">&#9670;&#160;</a></span>eval()</h2>
 
@@ -354,7 +432,71 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a1dfa483788fedcd025b57395a655e280">moonray::shading::FabricBsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_kajiya_kay_fabric_8cc_source.html#l00064">64</a> of file <a class="el" href="_bsdf_kajiya_kay_fabric_8cc_source.html">BsdfKajiyaKayFabric.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   67</span>{</div>
+<div class="line"><span class="lineno">   68</span>    <span class="comment">// Prepare for early exit</span></div>
+<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">if</span> (pdf != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">   70</span>        *pdf = 0.0f;</div>
+<div class="line"><span class="lineno">   71</span>    }</div>
+<div class="line"><span class="lineno">   72</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaWi = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a780200f38275fce38c8722f60bb6871a">mFrame</a>.getN(), wi);</div>
+<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">if</span> (cosThetaWi &lt;= sEpsilon) <span class="keywordflow">return</span> sBlack;</div>
+<div class="line"><span class="lineno">   74</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaWo = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a780200f38275fce38c8722f60bb6871a">mFrame</a>.getN(), slice.getWo());</div>
+<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">if</span> (cosThetaWo &lt;= sEpsilon) <span class="keywordflow">return</span> sBlack;</div>
+<div class="line"><span class="lineno">   76</span> </div>
+<div class="line"><span class="lineno">   77</span>    <span class="comment">// BRDF = cos^N(thetaD)</span></div>
+<div class="line"><span class="lineno">   78</span>    <span class="comment">// BRDF = cos^N(thetaIPrime - thetaO)</span></div>
+<div class="line"><span class="lineno">   79</span>    <span class="comment">// BRDF = (cos(thetaIPrime)*cos(thetaO) + sin(thetaIPrime)*sin(thetaO))^N</span></div>
+<div class="line"><span class="lineno">   80</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaO = clamp(<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a2067839a82e0c3ef5a0e92fbef85985a">mThreadDirection</a>, slice.getWo()), -0.99f, 0.99f);</div>
+<div class="line"><span class="lineno">   81</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> sinThetaO = scene_rdl2::math::sqrt(1 - cosThetaO*cosThetaO);</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>    <span class="comment">// IPrime is I reflected across the normal plane</span></div>
+<div class="line"><span class="lineno">   84</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaIPrime = (-1) * clamp(<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a2067839a82e0c3ef5a0e92fbef85985a">mThreadDirection</a>, wi), -0.99f, 0.99f);</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> sinThetaIPrime = scene_rdl2::math::sqrt(1 - cosThetaIPrime*cosThetaIPrime);</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>    <span class="comment">// cos(thetaD) = cos(thetaIPrime - thetaO);</span></div>
+<div class="line"><span class="lineno">   88</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaD = cosThetaO*cosThetaIPrime + sinThetaO*sinThetaIPrime;</div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">if</span> (cosThetaD &lt; sEpsilon || cosThetaD &gt; 1.f) {</div>
+<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">return</span> sBlack;</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaDPow = powf(cosThetaD, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a744f4483aa82d7d75ce03ac40e7073e0">mSpecularExponent</a>);</div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordtype">float</span> fabricBRDF = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a607a07dac61735b9e4bc9ea41b490e8a">mNormalizationFactor</a> * cosThetaDPow;</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>    <span class="comment">// PDF</span></div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">if</span> (pdf != <span class="keyword">nullptr</span> &amp;&amp; sinThetaIPrime &gt; sEpsilon) {</div>
+<div class="line"><span class="lineno">   99</span>        <span class="comment">// We sample theta_d, so to convert the PDF to sample theta_i we divide by</span></div>
+<div class="line"><span class="lineno">  100</span>        <span class="comment">// the Jacobian (dOmegaI/dOmegaD) = sin(thetaI) / sin(thetaD)</span></div>
+<div class="line"><span class="lineno">  101</span>        <span class="comment">// PDF for sampling theta_d is (n+1)/2pi * powf(costhetaD, n)</span></div>
+<div class="line"><span class="lineno">  102</span>        *pdf = (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a744f4483aa82d7d75ce03ac40e7073e0">mSpecularExponent</a>+1)*sOneOverTwoPi*cosThetaDPow;</div>
+<div class="line"><span class="lineno">  103</span> </div>
+<div class="line"><span class="lineno">  104</span>        <span class="comment">// Converting the PDF from sampling theta_d to sampling theta_i</span></div>
+<div class="line"><span class="lineno">  105</span>        <span class="comment">// Divide by jacobian (dOmegaI/dOmegaD)</span></div>
+<div class="line"><span class="lineno">  106</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> sinThetaD = scene_rdl2::math::sqrt(clamp(1 - cosThetaD*cosThetaD, 0.0f, 1.0f));</div>
+<div class="line"><span class="lineno">  107</span>        *pdf *= sinThetaD;</div>
+<div class="line"><span class="lineno">  108</span>        *pdf /= sinThetaIPrime; <span class="comment">// sinThetaI = sinThetaIPrime</span></div>
+<div class="line"><span class="lineno">  109</span>        <span class="comment">// Control Variance Spikes - www.pbrt.org/hair.pdf (Section 1.8)</span></div>
+<div class="line"><span class="lineno">  110</span>        <span class="comment">// If the ratio of pdf in theta_d with the BRDF gets too high, clamp it</span></div>
+<div class="line"><span class="lineno">  111</span>        <span class="comment">// to control variance spikes. A ratio more than 4 seems satisfactory in tests.</span></div>
+<div class="line"><span class="lineno">  112</span>        <span class="keywordflow">if</span> (fabricBRDF/(*pdf) &gt; 4) {</div>
+<div class="line"><span class="lineno">  113</span>            *pdf = fabricBRDF/4;</div>
+<div class="line"><span class="lineno">  114</span>        }</div>
+<div class="line"><span class="lineno">  115</span>    }</div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  117</span>    <span class="keyword">const</span> Fresnel *F = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">getFresnel</a>();</div>
+<div class="line"><span class="lineno">  118</span>    <span class="keyword">const</span> Color fresnel = (F != <span class="keyword">nullptr</span>  ?  F-&gt;eval(cosThetaWo)  :  Color(1.0f));</div>
+<div class="line"><span class="lineno">  119</span>    <span class="keyword">const</span> Color f =  fresnel * <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aec44d64391394390189c9f6bbc42f671">getScale</a>() * fabricBRDF;</div>
+<div class="line"><span class="lineno">  120</span> </div>
+<div class="line"><span class="lineno">  121</span>    <span class="comment">// Soften hard shadow terminator due to shading normals</span></div>
+<div class="line"><span class="lineno">  122</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> Gs = slice.computeShadowTerminatorFix(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a780200f38275fce38c8722f60bb6871a">mFrame</a>.getN(), wi);</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>    <span class="keywordflow">return</span> Gs * f;</div>
+<div class="line"><span class="lineno">  125</span>}</div>
+<div class="ttc" id="a_n_point_8h_html_a16747d68c1e06270b0ed335d631b66f3"><div class="ttname"><a href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a></div><div class="ttdeci">float dot(const NPoint&lt; D &gt; &amp;a, const NPoint&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00271">NPoint.h:271</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a1325952270070249bd3a4197660a1d7b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">moonray::shading::BsdfLobe::getFresnel</a></div><div class="ttdeci">finline const Fresnel * getFresnel() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00164">Bsdf.h:164</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_aec44d64391394390189c9f6bbc42f671"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aec44d64391394390189c9f6bbc42f671">moonray::shading::BsdfLobe::getScale</a></div><div class="ttdeci">finline const scene_rdl2::math::Color &amp; getScale() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00160">Bsdf.h:160</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_fabric_bsdf_lobe_html_a2067839a82e0c3ef5a0e92fbef85985a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a2067839a82e0c3ef5a0e92fbef85985a">moonray::shading::FabricBsdfLobe::mThreadDirection</a></div><div class="ttdeci">scene_rdl2::math::Vec3f mThreadDirection</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_fabric_8h_source.html#l00102">BsdfFabric.h:102</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_fabric_bsdf_lobe_html_a780200f38275fce38c8722f60bb6871a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a780200f38275fce38c8722f60bb6871a">moonray::shading::FabricBsdfLobe::mFrame</a></div><div class="ttdeci">scene_rdl2::math::ReferenceFrame mFrame</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_fabric_8h_source.html#l00095">BsdfFabric.h:95</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad3f7bdcb60c32ac40c6bfe98ce905f95" name="ad3f7bdcb60c32ac40c6bfe98ce905f95"></a>
@@ -421,7 +563,107 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a934750ae867407dc1f8adf39672fa00b">moonray::shading::FabricBsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_kajiya_kay_fabric_8cc_source.html#l00128">128</a> of file <a class="el" href="_bsdf_kajiya_kay_fabric_8cc_source.html">BsdfKajiyaKayFabric.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  132</span>{</div>
+<div class="line"><span class="lineno">  133</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cosNO = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a780200f38275fce38c8722f60bb6871a">mFrame</a>.getN(), slice.getWo());</div>
+<div class="line"><span class="lineno">  134</span>    <span class="keywordflow">if</span> (cosNO &lt;= sEpsilon) {</div>
+<div class="line"><span class="lineno">  135</span>        pdf = 0.0f;</div>
+<div class="line"><span class="lineno">  136</span>        <span class="keywordflow">return</span> sBlack;</div>
+<div class="line"><span class="lineno">  137</span>    }</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> omegaI;</div>
+<div class="line"><span class="lineno">  140</span>    <a class="code hl_function" href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#a73771beb5a7aedfcf655da640e6cc991">sampleVector</a>(slice.getWo(), r1, r2, omegaI);</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>    <span class="comment">// Convert back in Global Space</span></div>
+<div class="line"><span class="lineno">  143</span>    wi = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a780200f38275fce38c8722f60bb6871a">mFrame</a>.localToGlobal(omegaI));</div>
+<div class="line"><span class="lineno">  144</span> </div>
+<div class="line"><span class="lineno">  145</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#ad71d33dc703d407f43f159bcd3317fee">eval</a>(slice, wi, &amp;pdf);</div>
+<div class="line"><span class="lineno">  146</span>}</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a26b3f6b7b842544058f3766b0da79257"><div class="ttname"><a href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a></div><div class="ttdeci">__host__ __device__ float3 normalize(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00165">GPUMath.h:165</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe_html_a73771beb5a7aedfcf655da640e6cc991"><div class="ttname"><a href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#a73771beb5a7aedfcf655da640e6cc991">moonray::shading::KajiyaKayFabricBsdfLobe::sampleVector</a></div><div class="ttdeci">void sampleVector(const scene_rdl2::math::Vec3f &amp;wo, float r1, float r2, scene_rdl2::math::Vec3f &amp;wi) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_kajiya_kay_fabric_8cc_source.html#l00149">BsdfKajiyaKayFabric.cc:149</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe_html_ad71d33dc703d407f43f159bcd3317fee"><div class="ttname"><a href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#ad71d33dc703d407f43f159bcd3317fee">moonray::shading::KajiyaKayFabricBsdfLobe::eval</a></div><div class="ttdeci">scene_rdl2::math::Color eval(const BsdfSlice &amp;slice, const scene_rdl2::math::Vec3f &amp;wi, float *pdf=NULL) const override</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_kajiya_kay_fabric_8cc_source.html#l00064">BsdfKajiyaKayFabric.cc:64</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a73771beb5a7aedfcf655da640e6cc991" name="a73771beb5a7aedfcf655da640e6cc991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73771beb5a7aedfcf655da640e6cc991">&#9670;&#160;</a></span>sampleVector()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::shading::KajiyaKayFabricBsdfLobe::sampleVector </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Vec3f &amp;&#160;</td>
+          <td class="paramname"><em>wo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>r1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>r2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">scene_rdl2::math::Vec3f &amp;&#160;</td>
+          <td class="paramname"><em>wi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_kajiya_kay_fabric_8cc_source.html#l00149">149</a> of file <a class="el" href="_bsdf_kajiya_kay_fabric_8cc_source.html">BsdfKajiyaKayFabric.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  152</span>{</div>
+<div class="line"><span class="lineno">  153</span>    <span class="comment">// Theta is wrt the hair tangent</span></div>
+<div class="line"><span class="lineno">  154</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> thetaO = <a class="code hl_function" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#ae54405f8be2ea83451ad36e6fc68127e">safeACos</a>(<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a2067839a82e0c3ef5a0e92fbef85985a">mThreadDirection</a>, wo));</div>
+<div class="line"><span class="lineno">  155</span> </div>
+<div class="line"><span class="lineno">  156</span>    <span class="comment">// We sample theta_d and then convert it into the sample vector omega_i</span></div>
+<div class="line"><span class="lineno">  157</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> thetaD = scene_rdl2::math::acos(powf(r1, 1/(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a744f4483aa82d7d75ce03ac40e7073e0">mSpecularExponent</a>+1)));</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>    <span class="comment">// theta_d = fabs(theta_o - theta_i_prime)</span></div>
+<div class="line"><span class="lineno">  160</span>    <span class="comment">// so, theta_i_prime = theta_o - theta_d || theta_i_prime = theta_o + theta_d</span></div>
+<div class="line"><span class="lineno">  161</span>    <span class="keywordtype">float</span> thetaIPrime = thetaO + thetaD;</div>
+<div class="line"><span class="lineno">  162</span>    <span class="keywordflow">if</span> (thetaIPrime &gt;= sPi) {</div>
+<div class="line"><span class="lineno">  163</span>        thetaIPrime = thetaO - thetaD;</div>
+<div class="line"><span class="lineno">  164</span>    }</div>
+<div class="line"><span class="lineno">  165</span>    <span class="keywordflow">if</span> ((thetaD &lt; thetaO) &amp;&amp; (r2 &lt; 0.5)) {</div>
+<div class="line"><span class="lineno">  166</span>        thetaIPrime = thetaO - thetaD;</div>
+<div class="line"><span class="lineno">  167</span>    }</div>
+<div class="line"><span class="lineno">  168</span> </div>
+<div class="line"><span class="lineno">  169</span>    <span class="keywordtype">float</span> cosThetaI, sinThetaI;</div>
+<div class="line"><span class="lineno">  170</span>    sincos(thetaIPrime, &amp;sinThetaI, &amp;cosThetaI);</div>
+<div class="line"><span class="lineno">  171</span> </div>
+<div class="line"><span class="lineno">  172</span>    <span class="comment">// Phi Sampling</span></div>
+<div class="line"><span class="lineno">  173</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> phiM = sPi*r2;</div>
+<div class="line"><span class="lineno">  174</span>    <span class="keywordtype">float</span> cosPhi, sinPhi;</div>
+<div class="line"><span class="lineno">  175</span>    sincos(phiM, &amp;sinPhi, &amp;cosPhi);</div>
+<div class="line"><span class="lineno">  176</span> </div>
+<div class="line"><span class="lineno">  177</span>    <span class="comment">// Theta wrt tangent</span></div>
+<div class="line"><span class="lineno">  178</span>    wi.x = -cosThetaI;</div>
+<div class="line"><span class="lineno">  179</span>    wi.y =  sinThetaI * cosPhi;</div>
+<div class="line"><span class="lineno">  180</span>    wi.z =  sinThetaI * sinPhi;</div>
+<div class="line"><span class="lineno">  181</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_fabric_bsdf_lobe_html_ae54405f8be2ea83451ad36e6fc68127e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#ae54405f8be2ea83451ad36e6fc68127e">moonray::shading::FabricBsdfLobe::safeACos</a></div><div class="ttdeci">float safeACos(float cosTheta) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_fabric_8h_source.html#l00118">BsdfFabric.h:118</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8364dffb04d5f3b8ca6d596aa3a1e04d" name="a8364dffb04d5f3b8ca6d596aa3a1e04d"></a>
@@ -461,7 +703,17 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a674857639261896b9f4723a3dcf88e05">moonray::shading::FabricBsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_fabric_8h_source.html#l00201">201</a> of file <a class="el" href="_bsdf_fabric_8h_source.html">BsdfFabric.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  202</span>    {</div>
+<div class="line"><span class="lineno">  203</span>        <span class="keyword">const</span> scene_rdl2::math::Color&amp; scale = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aec44d64391394390189c9f6bbc42f671">getScale</a>();</div>
+<div class="line"><span class="lineno">  204</span>        <span class="keyword">const</span> Fresnel * fresnel = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">getFresnel</a>();</div>
+<div class="line"><span class="lineno">  205</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;[KajiyaKayFabricBsdfLobe]\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  206</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;scale: &quot;</span></div>
+<div class="line"><span class="lineno">  207</span>            &lt;&lt; scale.r &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; scale.g &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; scale.b &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  208</span>        <span class="keywordflow">if</span> (fresnel) {</div>
+<div class="line"><span class="lineno">  209</span>            fresnel-&gt;show(os, indent + <span class="stringliteral">&quot;    &quot;</span>);</div>
+<div class="line"><span class="lineno">  210</span>        }</div>
+<div class="line"><span class="lineno">  211</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -469,9 +721,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/bsdf/fabric/<a class="el" href="_bsdf_kajiya_kay_fabric_8cc_source.html">BsdfKajiyaKayFabric.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html">KajiyaKayFabricBsdfLobe</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

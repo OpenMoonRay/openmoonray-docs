@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,28 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html">CubicSpline</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::geom::internal::CubicSpline Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -284,6 +301,35 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a10ea6b2ad0320a3cfb767c262e1c3ec8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a10ea6b2ad0320a3cfb767c262e1c3ec8">intersectionFilter</a> (const RTCFilterFunctionNArguments *args)</td></tr>
 <tr class="separator:a10ea6b2ad0320a3cfb767c262e1c3ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a95d52856f84c71169839e6b2248e2d05"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a95d52856f84c71169839e6b2248e2d05">getSpansInChain</a> (const uint32_t chain) const =0</td></tr>
+<tr class="separator:a95d52856f84c71169839e6b2248e2d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00de0aa46855f9c87db1a6ac446e8caa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a00de0aa46855f9c87db1a6ac446e8caa">evalWeights</a> (const float &amp;t, float &amp;w0, float &amp;w1, float &amp;w2, float &amp;w3) const =0</td></tr>
+<tr class="separator:a00de0aa46855f9c87db1a6ac446e8caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b1b396d5b77c3c3afdabce58d2d1caa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a2b1b396d5b77c3c3afdabce58d2d1caa">evalDerivWeights</a> (const float &amp;t, float &amp;w0, float &amp;w1, float &amp;w2) const =0</td></tr>
+<tr class="separator:a2b1b396d5b77c3c3afdabce58d2d1caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b48524d49ae8d9b2054b23bf430679"><td class="memTemplParams" colspan="2">template&lt;typename CvType &gt; </td></tr>
+<tr class="memitem:a13b48524d49ae8d9b2054b23bf430679"><td class="memTemplItemLeft" align="right" valign="top">CvType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a13b48524d49ae8d9b2054b23bf430679">evalCubic</a> (const float &amp;t, const CvType &amp;cv0, const CvType &amp;cv1, const CvType &amp;cv2, const CvType &amp;cv3) const</td></tr>
+<tr class="separator:a13b48524d49ae8d9b2054b23bf430679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeffd633511d9f4387583c19afc6e7b8"><td class="memTemplParams" colspan="2">template&lt;typename CvType &gt; </td></tr>
+<tr class="memitem:aeeffd633511d9f4387583c19afc6e7b8"><td class="memTemplItemLeft" align="right" valign="top">CvType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#aeeffd633511d9f4387583c19afc6e7b8">evalCubicDeriv</a> (const float &amp;t, const CvType &amp;cv0, const CvType &amp;cv1, const CvType &amp;cv2, const CvType &amp;cv3) const</td></tr>
+<tr class="separator:aeeffd633511d9f4387583c19afc6e7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9059febe31cfc71434fc303cdbcd44c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#af9059febe31cfc71434fc303cdbcd44c">computeAttributesDerivatives</a> (const <a class="el" href="classmoonray_1_1shading_1_1_attribute_table.html">shading::AttributeTable</a> *table, float u, float invDs, int chain, int varyingOffset, int faceVaryingOffset, int vertexOffset, float time, <a class="el" href="classmoonray_1_1shading_1_1_intersection.html">shading::Intersection</a> &amp;intersection) const</td></tr>
+<tr class="separator:af9059febe31cfc71434fc303cdbcd44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac78b36c44e4ad488ac0b3cd0e3a7169e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac78b36c44e4ad488ac0b3cd0e3a7169e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#ac78b36c44e4ad488ac0b3cd0e3a7169e">computeVaryingAttributeDerivatives</a> (<a class="el" href="classmoonray_1_1shading_1_1_typed_attribute_key.html">shading::TypedAttributeKey</a>&lt; T &gt; key, float invDs, int varyingOffset, float time, <a class="el" href="classmoonray_1_1shading_1_1_intersection.html">shading::Intersection</a> &amp;intersection) const</td></tr>
+<tr class="separator:ac78b36c44e4ad488ac0b3cd0e3a7169e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7dbf27773657e580bacacb8b476faea"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab7dbf27773657e580bacacb8b476faea"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#ab7dbf27773657e580bacacb8b476faea">computeFaceVaryingAttributeDerivatives</a> (<a class="el" href="classmoonray_1_1shading_1_1_typed_attribute_key.html">shading::TypedAttributeKey</a>&lt; T &gt; key, float invDs, int fid, int faceVaryingOffset, float time, <a class="el" href="classmoonray_1_1shading_1_1_intersection.html">shading::Intersection</a> &amp;intersection) const</td></tr>
+<tr class="separator:ab7dbf27773657e580bacacb8b476faea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f87bf3ddaa1fc098ca9fa790740a6d2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2f87bf3ddaa1fc098ca9fa790740a6d2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a2f87bf3ddaa1fc098ca9fa790740a6d2">computeVertexAttributeDerivatives</a> (<a class="el" href="classmoonray_1_1shading_1_1_typed_attribute_key.html">shading::TypedAttributeKey</a>&lt; T &gt; key, float u, int vertexOffset, float time, <a class="el" href="classmoonray_1_1shading_1_1_intersection.html">shading::Intersection</a> &amp;intersection) const</td></tr>
+<tr class="separator:a2f87bf3ddaa1fc098ca9fa790740a6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a5bcc216e51565818058a7087193bf2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2a5bcc216e51565818058a7087193bf2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a2a5bcc216e51565818058a7087193bf2">computeAttributeDerivatives</a> (<a class="el" href="classmoonray_1_1shading_1_1_typed_attribute_key.html">shading::TypedAttributeKey</a>&lt; T &gt; key, float u, float invDs, int chain, int varyingOffset, int faceVaryingOffset, int vertexOffset, float time, <a class="el" href="classmoonray_1_1shading_1_1_intersection.html">shading::Intersection</a> &amp;intersection) const</td></tr>
+<tr class="separator:a2a5bcc216e51565818058a7087193bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classmoonray_1_1geom_1_1internal_1_1_curves"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmoonray_1_1geom_1_1internal_1_1_curves')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_curves.html">moonray::geom::internal::Curves</a></td></tr>
@@ -418,7 +464,19 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_cubic_spline_8cc_source.html#l00028">28</a> of file <a class="el" href="_cubic_spline_8cc_source.html">CubicSpline.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   34</span>                                                                 :</div>
+<div class="line"><span class="lineno">   35</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a24616df22e1ee5952c93d1a3221722b6">Curves</a>(type,</div>
+<div class="line"><span class="lineno">   36</span>               <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a152a2e6aeb9ef3eb5de1a00186eccc05">Curves::SubType</a><span class="keyword">&gt;</span>(subtype),</div>
+<div class="line"><span class="lineno">   37</span>               std::move(curvesVertexCount),</div>
+<div class="line"><span class="lineno">   38</span>               std::move(vertices),</div>
+<div class="line"><span class="lineno">   39</span>               std::move(layerAssignmentId),</div>
+<div class="line"><span class="lineno">   40</span>               std::move(primitiveAttributeTable))</div>
+<div class="line"><span class="lineno">   41</span>{</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_a152a2e6aeb9ef3eb5de1a00186eccc05"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a152a2e6aeb9ef3eb5de1a00186eccc05">moonray::geom::internal::Curves::SubType</a></div><div class="ttdeci">SubType</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_curves_8h_source.html#l00037">Curves.h:37</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_a24616df22e1ee5952c93d1a3221722b6"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a24616df22e1ee5952c93d1a3221722b6">moonray::geom::internal::Curves::Curves</a></div><div class="ttdeci">Curves(Curves::Type type, SubType subtype, geom::Curves::CurvesVertexCount &amp;&amp;curvesVertexCount, geom::Curves::VertexBuffer &amp;&amp;vertices, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;primitiveAttributeTable)</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_curves_8h_source.html#l00042">Curves.h:42</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -449,7 +507,318 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#ac8e034ee66da4494c05559897b5ebdc5">moonray::geom::internal::Primitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_cubic_spline_8h_source.html#l00043">43</a> of file <a class="el" href="_cubic_spline_8h_source.html">CubicSpline.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2a5bcc216e51565818058a7087193bf2" name="a2a5bcc216e51565818058a7087193bf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a5bcc216e51565818058a7087193bf2">&#9670;&#160;</a></span>computeAttributeDerivatives()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::geom::internal::CubicSpline::computeAttributeDerivatives </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_typed_attribute_key.html">shading::TypedAttributeKey</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>invDs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>chain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>varyingOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>faceVaryingOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vertexOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_intersection.html">shading::Intersection</a> &amp;&#160;</td>
+          <td class="paramname"><em>intersection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cubic_spline_8h_source.html#l00161">161</a> of file <a class="el" href="_cubic_spline_8h_source.html">CubicSpline.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  165</span>    {</div>
+<div class="line"><span class="lineno">  166</span>        <span class="keywordflow">switch</span> (<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#ad5b8644a92dcedda239e576044ba6ed2">getAttributes</a>()-&gt;getRate(key)) {</div>
+<div class="line"><span class="lineno">  167</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aa1c5806ff92f3c93d36155f7fff70a954">shading::RATE_VARYING</a>:</div>
+<div class="line"><span class="lineno">  168</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#ac78b36c44e4ad488ac0b3cd0e3a7169e">computeVaryingAttributeDerivatives</a>(key, invDs, varyingOffset,</div>
+<div class="line"><span class="lineno">  169</span>                time, intersection);</div>
+<div class="line"><span class="lineno">  170</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  171</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aac24e157886f371409e90e8217fb71a7a">shading::RATE_FACE_VARYING</a>:</div>
+<div class="line"><span class="lineno">  172</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#ab7dbf27773657e580bacacb8b476faea">computeFaceVaryingAttributeDerivatives</a>(key, invDs, chain,</div>
+<div class="line"><span class="lineno">  173</span>                faceVaryingOffset, time, intersection);</div>
+<div class="line"><span class="lineno">  174</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  175</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aae24dbc59b66badb50d493a8f2fd01e65">shading::RATE_VERTEX</a>:</div>
+<div class="line"><span class="lineno">  176</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a2f87bf3ddaa1fc098ca9fa790740a6d2">computeVertexAttributeDerivatives</a>(key, u, vertexOffset,</div>
+<div class="line"><span class="lineno">  177</span>                time, intersection);</div>
+<div class="line"><span class="lineno">  178</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  179</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  180</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  181</span>        }</div>
+<div class="line"><span class="lineno">  182</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_cubic_spline_html_a2f87bf3ddaa1fc098ca9fa790740a6d2"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a2f87bf3ddaa1fc098ca9fa790740a6d2">moonray::geom::internal::CubicSpline::computeVertexAttributeDerivatives</a></div><div class="ttdeci">void computeVertexAttributeDerivatives(shading::TypedAttributeKey&lt; T &gt; key, float u, int vertexOffset, float time, shading::Intersection &amp;intersection) const</div><div class="ttdef"><b>Definition:</b> <a href="_cubic_spline_8h_source.html#l00135">CubicSpline.h:135</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_cubic_spline_html_ab7dbf27773657e580bacacb8b476faea"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#ab7dbf27773657e580bacacb8b476faea">moonray::geom::internal::CubicSpline::computeFaceVaryingAttributeDerivatives</a></div><div class="ttdeci">void computeFaceVaryingAttributeDerivatives(shading::TypedAttributeKey&lt; T &gt; key, float invDs, int fid, int faceVaryingOffset, float time, shading::Intersection &amp;intersection) const</div><div class="ttdef"><b>Definition:</b> <a href="_cubic_spline_8h_source.html#l00115">CubicSpline.h:115</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_cubic_spline_html_ac78b36c44e4ad488ac0b3cd0e3a7169e"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#ac78b36c44e4ad488ac0b3cd0e3a7169e">moonray::geom::internal::CubicSpline::computeVaryingAttributeDerivatives</a></div><div class="ttdeci">void computeVaryingAttributeDerivatives(shading::TypedAttributeKey&lt; T &gt; key, float invDs, int varyingOffset, float time, shading::Intersection &amp;intersection) const</div><div class="ttdef"><b>Definition:</b> <a href="_cubic_spline_8h_source.html#l00095">CubicSpline.h:95</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_ad5b8644a92dcedda239e576044ba6ed2"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#ad5b8644a92dcedda239e576044ba6ed2">moonray::geom::internal::NamedPrimitive::getAttributes</a></div><div class="ttdeci">shading::Attributes * getAttributes() const</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00097">NamedPrimitive.h:97</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a672e4fc4798efc5e148e0d6ba1e8198aa1c5806ff92f3c93d36155f7fff70a954"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aa1c5806ff92f3c93d36155f7fff70a954">moonray::shading::RATE_VARYING</a></div><div class="ttdeci">@ RATE_VARYING</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00027">PrimitiveAttribute.h:27</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a672e4fc4798efc5e148e0d6ba1e8198aac24e157886f371409e90e8217fb71a7a"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aac24e157886f371409e90e8217fb71a7a">moonray::shading::RATE_FACE_VARYING</a></div><div class="ttdeci">@ RATE_FACE_VARYING</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00028">PrimitiveAttribute.h:28</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a672e4fc4798efc5e148e0d6ba1e8198aae24dbc59b66badb50d493a8f2fd01e65"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aae24dbc59b66badb50d493a8f2fd01e65">moonray::shading::RATE_VERTEX</a></div><div class="ttdeci">@ RATE_VERTEX</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00029">PrimitiveAttribute.h:29</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af9059febe31cfc71434fc303cdbcd44c" name="af9059febe31cfc71434fc303cdbcd44c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9059febe31cfc71434fc303cdbcd44c">&#9670;&#160;</a></span>computeAttributesDerivatives()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::geom::internal::CubicSpline::computeAttributesDerivatives </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_attribute_table.html">shading::AttributeTable</a> *&#160;</td>
+          <td class="paramname"><em>table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>invDs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>chain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>varyingOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>faceVaryingOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vertexOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_intersection.html">shading::Intersection</a> &amp;&#160;</td>
+          <td class="paramname"><em>intersection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cubic_spline_8cc_source.html#l00303">303</a> of file <a class="el" href="_cubic_spline_8cc_source.html">CubicSpline.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  307</span>{</div>
+<div class="line"><span class="lineno">  308</span>    Attributes* attrs = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#ad5b8644a92dcedda239e576044ba6ed2">getAttributes</a>();</div>
+<div class="line"><span class="lineno">  309</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> key: table-&gt;getDifferentialAttributes()) {</div>
+<div class="line"><span class="lineno">  310</span>        <span class="keywordflow">if</span> (!attrs-&gt;isSupported(key)) {</div>
+<div class="line"><span class="lineno">  311</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  312</span>        }</div>
+<div class="line"><span class="lineno">  313</span>        <span class="keywordflow">switch</span> (key.getType()) {</div>
+<div class="line"><span class="lineno">  314</span>        <span class="keywordflow">case</span> scene_rdl2::rdl2::TYPE_FLOAT:</div>
+<div class="line"><span class="lineno">  315</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a2a5bcc216e51565818058a7087193bf2">computeAttributeDerivatives</a>(TypedAttributeKey&lt;float&gt;(key),</div>
+<div class="line"><span class="lineno">  316</span>                u, invDs, chain, varyingOffset, faceVaryingOffset, vertexOffset,</div>
+<div class="line"><span class="lineno">  317</span>                time, intersection);</div>
+<div class="line"><span class="lineno">  318</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  319</span>        <span class="keywordflow">case</span> scene_rdl2::rdl2::TYPE_RGB:</div>
+<div class="line"><span class="lineno">  320</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a2a5bcc216e51565818058a7087193bf2">computeAttributeDerivatives</a>(TypedAttributeKey&lt;scene_rdl2::math::Color&gt;(key),</div>
+<div class="line"><span class="lineno">  321</span>                u, invDs, chain, varyingOffset, faceVaryingOffset, vertexOffset,</div>
+<div class="line"><span class="lineno">  322</span>                time, intersection);</div>
+<div class="line"><span class="lineno">  323</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  324</span>        <span class="keywordflow">case</span> scene_rdl2::rdl2::TYPE_RGBA:</div>
+<div class="line"><span class="lineno">  325</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a2a5bcc216e51565818058a7087193bf2">computeAttributeDerivatives</a>(TypedAttributeKey&lt;scene_rdl2::math::Color4&gt;(key),</div>
+<div class="line"><span class="lineno">  326</span>                u, invDs, chain, varyingOffset, faceVaryingOffset, vertexOffset,</div>
+<div class="line"><span class="lineno">  327</span>                time, intersection);</div>
+<div class="line"><span class="lineno">  328</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  329</span>        <span class="keywordflow">case</span> scene_rdl2::rdl2::TYPE_VEC2F:</div>
+<div class="line"><span class="lineno">  330</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a2a5bcc216e51565818058a7087193bf2">computeAttributeDerivatives</a>(TypedAttributeKey&lt;scene_rdl2::math::Vec2f&gt;(key),</div>
+<div class="line"><span class="lineno">  331</span>                u, invDs, chain, varyingOffset, faceVaryingOffset, vertexOffset,</div>
+<div class="line"><span class="lineno">  332</span>                time, intersection);</div>
+<div class="line"><span class="lineno">  333</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  334</span>        <span class="keywordflow">case</span> scene_rdl2::rdl2::TYPE_VEC3F:</div>
+<div class="line"><span class="lineno">  335</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a2a5bcc216e51565818058a7087193bf2">computeAttributeDerivatives</a>(TypedAttributeKey&lt;scene_rdl2::math::Vec3f&gt;(key),</div>
+<div class="line"><span class="lineno">  336</span>                u, invDs, chain, varyingOffset, faceVaryingOffset, vertexOffset,</div>
+<div class="line"><span class="lineno">  337</span>                time, intersection);</div>
+<div class="line"><span class="lineno">  338</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  339</span>        <span class="keywordflow">case</span> scene_rdl2::rdl2::TYPE_MAT4F:</div>
+<div class="line"><span class="lineno">  340</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a2a5bcc216e51565818058a7087193bf2">computeAttributeDerivatives</a>(TypedAttributeKey&lt;scene_rdl2::math::Mat4f&gt;(key),</div>
+<div class="line"><span class="lineno">  341</span>                u, invDs, chain, varyingOffset, faceVaryingOffset, vertexOffset,</div>
+<div class="line"><span class="lineno">  342</span>                time, intersection);</div>
+<div class="line"><span class="lineno">  343</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  344</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  345</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  346</span>        }</div>
+<div class="line"><span class="lineno">  347</span>    }</div>
+<div class="line"><span class="lineno">  348</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_cubic_spline_html_a2a5bcc216e51565818058a7087193bf2"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a2a5bcc216e51565818058a7087193bf2">moonray::geom::internal::CubicSpline::computeAttributeDerivatives</a></div><div class="ttdeci">void computeAttributeDerivatives(shading::TypedAttributeKey&lt; T &gt; key, float u, float invDs, int chain, int varyingOffset, int faceVaryingOffset, int vertexOffset, float time, shading::Intersection &amp;intersection) const</div><div class="ttdef"><b>Definition:</b> <a href="_cubic_spline_8h_source.html#l00161">CubicSpline.h:161</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab7dbf27773657e580bacacb8b476faea" name="ab7dbf27773657e580bacacb8b476faea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7dbf27773657e580bacacb8b476faea">&#9670;&#160;</a></span>computeFaceVaryingAttributeDerivatives()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::geom::internal::CubicSpline::computeFaceVaryingAttributeDerivatives </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_typed_attribute_key.html">shading::TypedAttributeKey</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>invDs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>faceVaryingOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_intersection.html">shading::Intersection</a> &amp;&#160;</td>
+          <td class="paramname"><em>intersection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cubic_spline_8h_source.html#l00115">115</a> of file <a class="el" href="_cubic_spline_8h_source.html">CubicSpline.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  118</span>    {</div>
+<div class="line"><span class="lineno">  119</span>        <span class="keywordtype">int</span> fvid0 = faceVaryingOffset;</div>
+<div class="line"><span class="lineno">  120</span>        <span class="keywordtype">int</span> fvid1 = faceVaryingOffset + 1;</div>
+<div class="line"><span class="lineno">  121</span>        T dfds;</div>
+<div class="line"><span class="lineno">  122</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getTimeSampleCount(key) &gt; 1) {</div>
+<div class="line"><span class="lineno">  123</span>            T f0 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMotionBlurFaceVarying(key, fid, fvid0, time);</div>
+<div class="line"><span class="lineno">  124</span>            T f1 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMotionBlurFaceVarying(key, fid, fvid1, time);</div>
+<div class="line"><span class="lineno">  125</span>            dfds = (f1 - f0) * invDs;</div>
+<div class="line"><span class="lineno">  126</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  127</span>            <span class="keyword">const</span> T&amp; f0 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getFaceVarying(key, fid, fvid0);</div>
+<div class="line"><span class="lineno">  128</span>            <span class="keyword">const</span> T&amp; f1 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getFaceVarying(key, fid, fvid1);</div>
+<div class="line"><span class="lineno">  129</span>            dfds = (f1 - f0) * invDs;</div>
+<div class="line"><span class="lineno">  130</span>        }</div>
+<div class="line"><span class="lineno">  131</span>        intersection.setdAttributeds(key, dfds);</div>
+<div class="line"><span class="lineno">  132</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_a5a2f04f73c5f819d4e76c10bbd71cac5"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">moonray::geom::internal::NamedPrimitive::mAttributes</a></div><div class="ttdeci">std::unique_ptr&lt; shading::Attributes &gt; mAttributes</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00146">NamedPrimitive.h:146</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8de1912422cb8b4dc7ff584f4bd17807" name="a8de1912422cb8b4dc7ff584f4bd17807"></a>
@@ -502,6 +871,430 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#addbbc06f984c3a94dac72b1351ef0eda">moonray::geom::internal::Primitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_cubic_spline_8cc_source.html#l00291">291</a> of file <a class="el" href="_cubic_spline_8cc_source.html">CubicSpline.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  293</span>{</div>
+<div class="line"><span class="lineno">  294</span>    <span class="comment">// dNds and dNdt are not geometrically useful because the cuve is a flat</span></div>
+<div class="line"><span class="lineno">  295</span>    <span class="comment">// ribbon whose normal faces the ray. This means N is dependent on</span></div>
+<div class="line"><span class="lineno">  296</span>    <span class="comment">// ray direction rather than on the geometry of the curve alone.</span></div>
+<div class="line"><span class="lineno">  297</span>    dNds = <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(0.0f, 0.0f, 0.0f);</div>
+<div class="line"><span class="lineno">  298</span>    dNdt = <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(0.0f, 0.0f, 0.0f);</div>
+<div class="line"><span class="lineno">  299</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  300</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac78b36c44e4ad488ac0b3cd0e3a7169e" name="ac78b36c44e4ad488ac0b3cd0e3a7169e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac78b36c44e4ad488ac0b3cd0e3a7169e">&#9670;&#160;</a></span>computeVaryingAttributeDerivatives()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::geom::internal::CubicSpline::computeVaryingAttributeDerivatives </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_typed_attribute_key.html">shading::TypedAttributeKey</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>invDs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>varyingOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_intersection.html">shading::Intersection</a> &amp;&#160;</td>
+          <td class="paramname"><em>intersection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cubic_spline_8h_source.html#l00095">95</a> of file <a class="el" href="_cubic_spline_8h_source.html">CubicSpline.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   98</span>    {</div>
+<div class="line"><span class="lineno">   99</span>        <span class="keywordtype">int</span> vid0 = varyingOffset;</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordtype">int</span> vid1 = varyingOffset + 1;</div>
+<div class="line"><span class="lineno">  101</span>        T dfds;</div>
+<div class="line"><span class="lineno">  102</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getTimeSampleCount(key) &gt; 1) {</div>
+<div class="line"><span class="lineno">  103</span>            T f0 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMotionBlurVarying(key, vid0, time);</div>
+<div class="line"><span class="lineno">  104</span>            T f1 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMotionBlurVarying(key, vid1, time);</div>
+<div class="line"><span class="lineno">  105</span>            dfds = (f1 - f0) * invDs;</div>
+<div class="line"><span class="lineno">  106</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  107</span>            T f0 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getVarying(key, vid0);</div>
+<div class="line"><span class="lineno">  108</span>            T f1 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getVarying(key, vid1);</div>
+<div class="line"><span class="lineno">  109</span>            dfds = (f1 - f0) * invDs;</div>
+<div class="line"><span class="lineno">  110</span>        }</div>
+<div class="line"><span class="lineno">  111</span>        intersection.setdAttributeds(key, dfds);</div>
+<div class="line"><span class="lineno">  112</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2f87bf3ddaa1fc098ca9fa790740a6d2" name="a2f87bf3ddaa1fc098ca9fa790740a6d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f87bf3ddaa1fc098ca9fa790740a6d2">&#9670;&#160;</a></span>computeVertexAttributeDerivatives()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::geom::internal::CubicSpline::computeVertexAttributeDerivatives </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_typed_attribute_key.html">shading::TypedAttributeKey</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vertexOffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_intersection.html">shading::Intersection</a> &amp;&#160;</td>
+          <td class="paramname"><em>intersection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cubic_spline_8h_source.html#l00135">135</a> of file <a class="el" href="_cubic_spline_8h_source.html">CubicSpline.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  138</span>    {</div>
+<div class="line"><span class="lineno">  139</span>        <span class="keywordtype">int</span> vid0 = vertexOffset;</div>
+<div class="line"><span class="lineno">  140</span>        <span class="keywordtype">int</span> vid1 = vertexOffset + 1;</div>
+<div class="line"><span class="lineno">  141</span>        <span class="keywordtype">int</span> vid2 = vertexOffset + 2;</div>
+<div class="line"><span class="lineno">  142</span>        <span class="keywordtype">int</span> vid3 = vertexOffset + 3;</div>
+<div class="line"><span class="lineno">  143</span>        T dfds;</div>
+<div class="line"><span class="lineno">  144</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getTimeSampleCount(key) &gt; 1) {</div>
+<div class="line"><span class="lineno">  145</span>            T f0 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMotionBlurVertex(key, vid0, time);</div>
+<div class="line"><span class="lineno">  146</span>            T f1 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMotionBlurVertex(key, vid1, time);</div>
+<div class="line"><span class="lineno">  147</span>            T f2 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMotionBlurVertex(key, vid2, time);</div>
+<div class="line"><span class="lineno">  148</span>            T f3 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMotionBlurVertex(key, vid3, time);</div>
+<div class="line"><span class="lineno">  149</span>            dfds = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#aeeffd633511d9f4387583c19afc6e7b8">evalCubicDeriv</a>(u, f0, f1, f2, f3);</div>
+<div class="line"><span class="lineno">  150</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  151</span>            <span class="keyword">const</span> T&amp; f0 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getVertex(key, vid0);</div>
+<div class="line"><span class="lineno">  152</span>            <span class="keyword">const</span> T&amp; f1 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getVertex(key, vid1);</div>
+<div class="line"><span class="lineno">  153</span>            <span class="keyword">const</span> T&amp; f2 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getVertex(key, vid2);</div>
+<div class="line"><span class="lineno">  154</span>            <span class="keyword">const</span> T&amp; f3 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getVertex(key, vid3);</div>
+<div class="line"><span class="lineno">  155</span>            dfds = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#aeeffd633511d9f4387583c19afc6e7b8">evalCubicDeriv</a>(u, f0, f1, f2, f3);</div>
+<div class="line"><span class="lineno">  156</span>        }</div>
+<div class="line"><span class="lineno">  157</span>        intersection.setdAttributeds(key, dfds);</div>
+<div class="line"><span class="lineno">  158</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_cubic_spline_html_aeeffd633511d9f4387583c19afc6e7b8"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#aeeffd633511d9f4387583c19afc6e7b8">moonray::geom::internal::CubicSpline::evalCubicDeriv</a></div><div class="ttdeci">CvType evalCubicDeriv(const float &amp;t, const CvType &amp;cv0, const CvType &amp;cv1, const CvType &amp;cv2, const CvType &amp;cv3) const</div><div class="ttdef"><b>Definition:</b> <a href="_cubic_spline_8h_source.html#l00080">CubicSpline.h:80</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a13b48524d49ae8d9b2054b23bf430679" name="a13b48524d49ae8d9b2054b23bf430679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13b48524d49ae8d9b2054b23bf430679">&#9670;&#160;</a></span>evalCubic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CvType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CvType moonray::geom::internal::CubicSpline::evalCubic </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CvType &amp;&#160;</td>
+          <td class="paramname"><em>cv0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CvType &amp;&#160;</td>
+          <td class="paramname"><em>cv1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CvType &amp;&#160;</td>
+          <td class="paramname"><em>cv2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CvType &amp;&#160;</td>
+          <td class="paramname"><em>cv3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cubic_spline_8h_source.html#l00070">70</a> of file <a class="el" href="_cubic_spline_8h_source.html">CubicSpline.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   73</span>    {</div>
+<div class="line"><span class="lineno">   74</span>        <span class="keywordtype">float</span> w0, w1, w2, w3;</div>
+<div class="line"><span class="lineno">   75</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a00de0aa46855f9c87db1a6ac446e8caa">evalWeights</a>(t, w0, w1, w2, w3);</div>
+<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">return</span> w0 * cv0 + w1 * cv1 + w2 * cv2 + w3 * cv3;</div>
+<div class="line"><span class="lineno">   77</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_cubic_spline_html_a00de0aa46855f9c87db1a6ac446e8caa"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a00de0aa46855f9c87db1a6ac446e8caa">moonray::geom::internal::CubicSpline::evalWeights</a></div><div class="ttdeci">virtual void evalWeights(const float &amp;t, float &amp;w0, float &amp;w1, float &amp;w2, float &amp;w3) const =0</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aeeffd633511d9f4387583c19afc6e7b8" name="aeeffd633511d9f4387583c19afc6e7b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeffd633511d9f4387583c19afc6e7b8">&#9670;&#160;</a></span>evalCubicDeriv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CvType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CvType moonray::geom::internal::CubicSpline::evalCubicDeriv </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CvType &amp;&#160;</td>
+          <td class="paramname"><em>cv0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CvType &amp;&#160;</td>
+          <td class="paramname"><em>cv1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CvType &amp;&#160;</td>
+          <td class="paramname"><em>cv2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CvType &amp;&#160;</td>
+          <td class="paramname"><em>cv3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cubic_spline_8h_source.html#l00080">80</a> of file <a class="el" href="_cubic_spline_8h_source.html">CubicSpline.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   83</span>    {</div>
+<div class="line"><span class="lineno">   84</span>         <span class="keywordtype">float</span> w0, w1, w2;</div>
+<div class="line"><span class="lineno">   85</span>         <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a2b1b396d5b77c3c3afdabce58d2d1caa">evalDerivWeights</a>(t, w0, w1, w2);</div>
+<div class="line"><span class="lineno">   86</span>         <span class="keywordflow">return</span> w0 * (cv1 - cv0) + w1 * (cv2 - cv1) + w2 * (cv3 - cv2);</div>
+<div class="line"><span class="lineno">   87</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_cubic_spline_html_a2b1b396d5b77c3c3afdabce58d2d1caa"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a2b1b396d5b77c3c3afdabce58d2d1caa">moonray::geom::internal::CubicSpline::evalDerivWeights</a></div><div class="ttdeci">virtual void evalDerivWeights(const float &amp;t, float &amp;w0, float &amp;w1, float &amp;w2) const =0</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2b1b396d5b77c3c3afdabce58d2d1caa" name="a2b1b396d5b77c3c3afdabce58d2d1caa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b1b396d5b77c3c3afdabce58d2d1caa">&#9670;&#160;</a></span>evalDerivWeights()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void moonray::geom::internal::CubicSpline::evalDerivWeights </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>w0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>w1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>w2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_bezier_span_chains.html#a614f16efe2a8a2d405f24e3fe4f0744c">moonray::geom::internal::BezierSpanChains</a>, and <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html#a9a2cf58a4b17ffcd648e543681d42303">moonray::geom::internal::BSpline</a>.</p>
+
+</div>
+</div>
+<a id="a00de0aa46855f9c87db1a6ac446e8caa" name="a00de0aa46855f9c87db1a6ac446e8caa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00de0aa46855f9c87db1a6ac446e8caa">&#9670;&#160;</a></span>evalWeights()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void moonray::geom::internal::CubicSpline::evalWeights </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>w0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>w1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>w2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>w3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_bezier_span_chains.html#afa6e88fc43793b10978addf14b692010">moonray::geom::internal::BezierSpanChains</a>, and <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html#a63cea747665bfaa6d1d7c140a77fd44a">moonray::geom::internal::BSpline</a>.</p>
+
+</div>
+</div>
+<a id="a95d52856f84c71169839e6b2248e2d05" name="a95d52856f84c71169839e6b2248e2d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95d52856f84c71169839e6b2248e2d05">&#9670;&#160;</a></span>getSpansInChain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint32_t moonray::geom::internal::CubicSpline::getSpansInChain </td>
+          <td>(</td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>chain</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_bezier_span_chains.html#a4acb0c7612614fd343e65f6c3c9895c1">moonray::geom::internal::BezierSpanChains</a>, and <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html#a148a787d104632b67bba0fe831d70c4b">moonray::geom::internal::BSpline</a>.</p>
 
 </div>
 </div>
@@ -581,7 +1374,237 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#ad1ea269eeb6d29434d740f04a3b027f9">moonray::geom::internal::Primitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_cubic_spline_8cc_source.html#l00086">86</a> of file <a class="el" href="_cubic_spline_8cc_source.html">CubicSpline.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   89</span>{</div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordtype">int</span> spanId = ray.primID;</div>
+<div class="line"><span class="lineno">   91</span>    <span class="keyword">const</span> IndexData&amp; index = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#ad2d1831d8485bf3ec817f99749bbc2f3">mIndexBuffer</a>[spanId];</div>
+<div class="line"><span class="lineno">   92</span>    <span class="keyword">const</span> uint32_t chain = index.mChain;</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordtype">int</span> assignmentId =</div>
+<div class="line"><span class="lineno">   95</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0b2d21ef3df121422a79526b079c580e">getType</a>() == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">LayerAssignmentId::Type::CONSTANT</a> ?</div>
+<div class="line"><span class="lineno">   96</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a7029086f3349b566ea752fd6f4a85d31">getConstId</a>() :</div>
+<div class="line"><span class="lineno">   97</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0e7e74cdce226e48699f4d43b79c1fd1">getVaryingId</a>()[chain];</div>
+<div class="line"><span class="lineno">   98</span>    intersection.setLayerAssignments(assignmentId, layer);</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>    <span class="keyword">const</span> AttributeTable *table =</div>
+<div class="line"><span class="lineno">  101</span>        intersection.getMaterial()-&gt;get&lt;shading::RootShader&gt;().<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#aae78b628f7633e1eedded63ab93e176e">getPrimitiveAttributeTable</a>();</div>
+<div class="line"><span class="lineno">  102</span>    intersection.setTable(&amp;tls.mArena, table);</div>
+<div class="line"><span class="lineno">  103</span>    <a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a7925f95b6702e686242723fb518ba504">overrideInstanceAttrs</a>(ray, intersection);</div>
+<div class="line"><span class="lineno">  104</span> </div>
+<div class="line"><span class="lineno">  105</span>    <span class="keyword">const</span> uint32_t vertexOffset = index.mVertex;</div>
+<div class="line"><span class="lineno">  106</span> </div>
+<div class="line"><span class="lineno">  107</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a152ff20265a172b1706124804dd6710c">Vec3fa</a> cv[4];</div>
+<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a0ab0ad5c8a764946af8ee85c1c3a5269">isMotionBlurOn</a>()) {</div>
+<div class="line"><span class="lineno">  109</span>        <span class="comment">// Grab the CVs</span></div>
+<div class="line"><span class="lineno">  110</span>        cv[0] = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 0);</div>
+<div class="line"><span class="lineno">  111</span>        cv[1] = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 1);</div>
+<div class="line"><span class="lineno">  112</span>        cv[2] = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 2);</div>
+<div class="line"><span class="lineno">  113</span>        cv[3] = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 3);</div>
+<div class="line"><span class="lineno">  114</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  115</span>        <span class="comment">// only support two time samples for motionblur at this moment</span></div>
+<div class="line"><span class="lineno">  116</span>        MNRY_ASSERT(<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a3de98f2652dcdac725a972fb64be29d1">getMotionSamplesCount</a>() == 2);</div>
+<div class="line"><span class="lineno">  117</span>        <span class="keywordtype">float</span> wt = ray.time;</div>
+<div class="line"><span class="lineno">  118</span>        cv[0] = <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 0, 0), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 0, 1), wt);</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span>        cv[1] = <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 1, 0), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 1, 1), wt);</div>
+<div class="line"><span class="lineno">  121</span> </div>
+<div class="line"><span class="lineno">  122</span>        cv[2] = <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 2, 0), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 2, 1), wt);</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>        cv[3] = <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 3, 0), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 3, 1), wt);</div>
+<div class="line"><span class="lineno">  125</span>    }</div>
+<div class="line"><span class="lineno">  126</span> </div>
+<div class="line"><span class="lineno">  127</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> Ng, N, dPds, dPdt;</div>
+<div class="line"><span class="lineno">  128</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> St;</div>
+<div class="line"><span class="lineno">  129</span> </div>
+<div class="line"><span class="lineno">  130</span>    <span class="comment">// Partial with respect to S is easy enough -- its the tangent vector</span></div>
+<div class="line"><span class="lineno">  131</span>    <span class="comment">// TODO: This isn&#39;t varying with R down the curve in the direction of</span></div>
+<div class="line"><span class="lineno">  132</span>    <span class="comment">//       the tangent vector, which it should.  We should slope down by R&#39;.</span></div>
+<div class="line"><span class="lineno">  133</span>    dPds = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#aeeffd633511d9f4387583c19afc6e7b8">evalCubicDeriv</a>(ray.u, cv[0], cv[1], cv[2], cv[3]);</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a3032e975b55235dc9738e0ccf804ea42">mSubType</a> == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a152a2e6aeb9ef3eb5de1a00186eccc05a8b091ad74c8e41867042d3527b584ae7">SubType::RAY_FACING</a>) {</div>
+<div class="line"><span class="lineno">  136</span>        <span class="comment">// Use the flipped ray direction to compute the normal. But, this may be an</span></div>
+<div class="line"><span class="lineno">  137</span>        <span class="comment">// instance, so we need to transform the ray direction into the local</span></div>
+<div class="line"><span class="lineno">  138</span>        <span class="comment">// space.  It gets transformed back to render space later on.</span></div>
+<div class="line"><span class="lineno">  139</span>        <span class="comment">// Note that it looks like we should be using r2l to get from render to</span></div>
+<div class="line"><span class="lineno">  140</span>        <span class="comment">// local space, but recall that when transforming normals we use the transpose</span></div>
+<div class="line"><span class="lineno">  141</span>        <span class="comment">// of the inverse, which is l2r transposed.  The transformNormal() function</span></div>
+<div class="line"><span class="lineno">  142</span>        <span class="comment">// uses the inverse of the transform (l2r) and applies the transpose.</span></div>
+<div class="line"><span class="lineno">  143</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> flippedRayDir = ray.isInstanceHit() ?</div>
+<div class="line"><span class="lineno">  144</span>            <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(transformNormal(ray.ext.l2r, -ray.dir)) :</div>
+<div class="line"><span class="lineno">  145</span>            <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(-ray.dir);</div>
+<div class="line"><span class="lineno">  146</span> </div>
+<div class="line"><span class="lineno">  147</span>        <span class="comment">// Lacking much better options, we&#39;ll construct dPdt wrt the other two</span></div>
+<div class="line"><span class="lineno">  148</span>        <span class="comment">// components of the ostensibly orthonormal frame we have</span></div>
+<div class="line"><span class="lineno">  149</span>        dPdt = <a class="code hl_function" href="_g_p_u_math_8h.html#aac515f5a1286dde7b231d1d6e47c77f4">cross</a>(dPds, flippedRayDir);</div>
+<div class="line"><span class="lineno">  150</span> </div>
+<div class="line"><span class="lineno">  151</span>        <span class="keywordflow">if</span> (unlikely(lengthSqr(dPdt) &lt; scene_rdl2::math::sEpsilon)) {</div>
+<div class="line"><span class="lineno">  152</span>            <span class="comment">// Degened dPds or dPdt. The reason can be either clustered cv points</span></div>
+<div class="line"><span class="lineno">  153</span>            <span class="comment">// or ray direction is parallel to dPds. Use ReferenceFrame as fallback</span></div>
+<div class="line"><span class="lineno">  154</span>            N = flippedRayDir;</div>
+<div class="line"><span class="lineno">  155</span>            scene_rdl2::math::ReferenceFrame frame(N);</div>
+<div class="line"><span class="lineno">  156</span>            dPds = frame.getX();</div>
+<div class="line"><span class="lineno">  157</span>            dPdt = frame.getY();</div>
+<div class="line"><span class="lineno">  158</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  159</span>            <span class="comment">// Cross the partials to get the normal</span></div>
+<div class="line"><span class="lineno">  160</span>            N = <a class="code hl_function" href="_g_p_u_math_8h.html#aac515f5a1286dde7b231d1d6e47c77f4">cross</a>(dPdt, dPds);</div>
+<div class="line"><span class="lineno">  161</span>        }</div>
+<div class="line"><span class="lineno">  162</span>        N.normalize();</div>
+<div class="line"><span class="lineno">  163</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a3032e975b55235dc9738e0ccf804ea42">mSubType</a> == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a152a2e6aeb9ef3eb5de1a00186eccc05a2ea77cf582892014b30e6fa7e558350d">SubType::ROUND</a>) {</div>
+<div class="line"><span class="lineno">  164</span>        <span class="comment">// round curves just use the geom normal</span></div>
+<div class="line"><span class="lineno">  165</span>        N = ray.getNg();</div>
+<div class="line"><span class="lineno">  166</span>        N.normalize();</div>
+<div class="line"><span class="lineno">  167</span> </div>
+<div class="line"><span class="lineno">  168</span>        dPdt = <a class="code hl_function" href="_g_p_u_math_8h.html#aac515f5a1286dde7b231d1d6e47c77f4">cross</a>(dPds, N);</div>
+<div class="line"><span class="lineno">  169</span>        <span class="keywordflow">if</span> (unlikely(lengthSqr(dPdt) &lt; scene_rdl2::math::sEpsilon)) {</div>
+<div class="line"><span class="lineno">  170</span>            <span class="comment">// Degened dPds or dPdt. The reason can be either clustered cv points</span></div>
+<div class="line"><span class="lineno">  171</span>            <span class="comment">// or ray direction is parallel to dPds. Use ReferenceFrame as fallback</span></div>
+<div class="line"><span class="lineno">  172</span>            scene_rdl2::math::ReferenceFrame frame(N);</div>
+<div class="line"><span class="lineno">  173</span>            dPds = frame.getX();</div>
+<div class="line"><span class="lineno">  174</span>            dPdt = frame.getY();</div>
+<div class="line"><span class="lineno">  175</span>        }</div>
+<div class="line"><span class="lineno">  176</span>    }</div>
+<div class="line"><span class="lineno">  177</span> </div>
+<div class="line"><span class="lineno">  178</span>    <span class="comment">// Geometric normal equals shading normal for a cubic spline</span></div>
+<div class="line"><span class="lineno">  179</span>    Ng = N;</div>
+<div class="line"><span class="lineno">  180</span> </div>
+<div class="line"><span class="lineno">  181</span>    <span class="keyword">const</span> uint32_t spansInChain = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a95d52856f84c71169839e6b2248e2d05">getSpansInChain</a>(chain);</div>
+<div class="line"><span class="lineno">  182</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> stSpanRange = 1.0f / spansInChain;</div>
+<div class="line"><span class="lineno">  183</span>    <span class="keyword">const</span> uint32_t indexInChain = index.mSpan;</div>
+<div class="line"><span class="lineno">  184</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> uv;</div>
+<div class="line"><span class="lineno">  185</span>    <span class="keyword">const</span> Attributes* attributes = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#ad5b8644a92dcedda239e576044ba6ed2">getAttributes</a>();</div>
+<div class="line"><span class="lineno">  186</span>    <span class="keywordflow">if</span> (intersection.isProvided(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#af942a43054eedd9b1ca3f202118efca5">StandardAttributes::sUv</a>)) {</div>
+<div class="line"><span class="lineno">  187</span>        uv = intersection.getAttribute&lt;<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>&gt;(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#af942a43054eedd9b1ca3f202118efca5">StandardAttributes::sUv</a>);</div>
+<div class="line"><span class="lineno">  188</span>        St.x = uv.x;</div>
+<div class="line"><span class="lineno">  189</span>        St.y = uv.y;</div>
+<div class="line"><span class="lineno">  190</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (getAttribute&lt;Vec3f&gt;(attributes,</div>
+<div class="line"><span class="lineno">  191</span>                                   <a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#af942a43054eedd9b1ca3f202118efca5">StandardAttributes::sUv</a>,</div>
+<div class="line"><span class="lineno">  192</span>                                   vertexOffset,</div>
+<div class="line"><span class="lineno">  193</span>                                   ray.primID,</div>
+<div class="line"><span class="lineno">  194</span>                                   uv)) {</div>
+<div class="line"><span class="lineno">  195</span>        St.x = uv.x;</div>
+<div class="line"><span class="lineno">  196</span>        St.y = uv.y;</div>
+<div class="line"><span class="lineno">  197</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  198</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> stStart = stSpanRange * indexInChain;</div>
+<div class="line"><span class="lineno">  199</span>        St[0] = stStart + ray.u * stSpanRange;</div>
+<div class="line"><span class="lineno">  200</span>        <span class="comment">// ray.v is in (-1,1) so we need to remap to (0,1)</span></div>
+<div class="line"><span class="lineno">  201</span>        St[1] = ray.v * 0.5f + 0.5f;</div>
+<div class="line"><span class="lineno">  202</span>    }</div>
+<div class="line"><span class="lineno">  203</span> </div>
+<div class="line"><span class="lineno">  204</span>    intersection.setDifferentialGeometry(Ng, N, St, dPds, dPdt, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  205</span> </div>
+<div class="line"><span class="lineno">  206</span>    <span class="keywordtype">float</span> w0, w1, w2, w3;</div>
+<div class="line"><span class="lineno">  207</span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a00de0aa46855f9c87db1a6ac446e8caa">evalWeights</a>(ray.u, w0, w1, w2, w3);</div>
+<div class="line"><span class="lineno">  208</span> </div>
+<div class="line"><span class="lineno">  209</span>    <span class="keyword">const</span> scene_rdl2::rdl2::Geometry* geometry = intersection.getGeometryObject();</div>
+<div class="line"><span class="lineno">  210</span>    MNRY_ASSERT(geometry != <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  211</span>    <span class="keywordflow">if</span> (geometry-&gt;getRayEpsilon() &lt;= 0.0f) {</div>
+<div class="line"><span class="lineno">  212</span>        <span class="comment">// Use the 1.5 times the curve radius as the next ray epsilon hint.</span></div>
+<div class="line"><span class="lineno">  213</span>        <span class="comment">// This lets shadow and continuation rays escape</span></div>
+<div class="line"><span class="lineno">  214</span>        <span class="comment">// the intersected hair, instead of self-intersecting.</span></div>
+<div class="line"><span class="lineno">  215</span>        <span class="keywordtype">float</span> curveRadius = w0 * cv[0].w + w1 * cv[1].w + w2 * cv[2].w + w3 * cv[3].w;</div>
+<div class="line"><span class="lineno">  216</span>        intersection.setEpsilonHint( 1.5 * curveRadius );</div>
+<div class="line"><span class="lineno">  217</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  218</span>        intersection.setEpsilonHint( geometry-&gt;getRayEpsilon() );</div>
+<div class="line"><span class="lineno">  219</span>    }</div>
+<div class="line"><span class="lineno">  220</span> </div>
+<div class="line"><span class="lineno">  221</span>    <span class="keywordtype">int</span> varyingOffset = chain + spanId;</div>
+<div class="line"><span class="lineno">  222</span>    CubicSplineInterpolator interpolator(<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#ad5b8644a92dcedda239e576044ba6ed2">getAttributes</a>(), ray.time, chain,</div>
+<div class="line"><span class="lineno">  223</span>        varyingOffset, indexInChain, ray.u, vertexOffset, w0, w1, w2, w3);</div>
+<div class="line"><span class="lineno">  224</span>    intersection.setRequiredAttributes(interpolator);</div>
+<div class="line"><span class="lineno">  225</span> </div>
+<div class="line"><span class="lineno">  226</span>    <span class="comment">// calculate dfds/dfdt for primitive attributes that request derivatives</span></div>
+<div class="line"><span class="lineno">  227</span>    <span class="keywordflow">if</span> (table-&gt;requestDerivatives()) {</div>
+<div class="line"><span class="lineno">  228</span>        <span class="comment">// ds = stSpanRange -&gt; 1 / ds = 1 / stSpanRange = spansInChain</span></div>
+<div class="line"><span class="lineno">  229</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#af9059febe31cfc71434fc303cdbcd44c">computeAttributesDerivatives</a>(table, ray.u, (<span class="keywordtype">float</span>)spansInChain,</div>
+<div class="line"><span class="lineno">  230</span>            chain, varyingOffset, indexInChain, vertexOffset,</div>
+<div class="line"><span class="lineno">  231</span>            ray.time, intersection);</div>
+<div class="line"><span class="lineno">  232</span>    }</div>
+<div class="line"><span class="lineno">  233</span> </div>
+<div class="line"><span class="lineno">  234</span>    <span class="comment">// &quot;polygon&quot; vertices</span></div>
+<div class="line"><span class="lineno">  235</span>    <span class="keywordflow">if</span> (table-&gt;requests(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a27c9e6c41ef45c905b03b252c429d32c">StandardAttributes::sNumPolyVertices</a>)) {</div>
+<div class="line"><span class="lineno">  236</span>        intersection.setAttribute(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a27c9e6c41ef45c905b03b252c429d32c">StandardAttributes::sNumPolyVertices</a>, 4);</div>
+<div class="line"><span class="lineno">  237</span>    }</div>
+<div class="line"><span class="lineno">  238</span>    <span class="keywordflow">if</span> (table-&gt;requests(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a37dac578fb97e4ad23bfa55b9d69e487">StandardAttributes::sPolyVertexType</a>)) {</div>
+<div class="line"><span class="lineno">  239</span>        intersection.setAttribute(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a37dac578fb97e4ad23bfa55b9d69e487">StandardAttributes::sPolyVertexType</a>,</div>
+<div class="line"><span class="lineno">  240</span>            <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_standard_attributes.html#a35012a7b4c6e5a6245ec3ad40672905ea45704e1238000edf4e37f18a939fd313">StandardAttributes::POLYVERTEX_TYPE_CUBIC_SPLINE</a>));</div>
+<div class="line"><span class="lineno">  241</span>    }</div>
+<div class="line"><span class="lineno">  242</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iVert = 0; iVert &lt; 4; iVert++) {</div>
+<div class="line"><span class="lineno">  243</span>        <span class="keywordflow">if</span> (table-&gt;requests(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a8a12c844ac7c806039b431a6e63b005c">StandardAttributes::sPolyVertices</a>[iVert])) {</div>
+<div class="line"><span class="lineno">  244</span>            <span class="comment">// may need to move the vertices to render space</span></div>
+<div class="line"><span class="lineno">  245</span>            <span class="comment">// for instancing object since they are ray traced in local space</span></div>
+<div class="line"><span class="lineno">  246</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> v = ray.isInstanceHit() ? <a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a472053acc157ccb20c9d68bf2fdaa824">transformPoint</a>(ray.ext.l2r, cv[iVert].asVec3f())</div>
+<div class="line"><span class="lineno">  247</span>                                                : cv[iVert].asVec3f();</div>
+<div class="line"><span class="lineno">  248</span>            intersection.setAttribute(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a8a12c844ac7c806039b431a6e63b005c">StandardAttributes::sPolyVertices</a>[iVert], v);</div>
+<div class="line"><span class="lineno">  249</span>        }</div>
+<div class="line"><span class="lineno">  250</span>    }</div>
+<div class="line"><span class="lineno">  251</span> </div>
+<div class="line"><span class="lineno">  252</span>    <span class="comment">// motion vectors</span></div>
+<div class="line"><span class="lineno">  253</span>    <span class="keywordflow">if</span> (table-&gt;requests(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a565123a1a638f4e4c33e9108e0b0a65e">StandardAttributes::sMotion</a>)) {</div>
+<div class="line"><span class="lineno">  254</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> pos0, pos1;</div>
+<div class="line"><span class="lineno">  255</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> *pos1Ptr = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  256</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a0ab0ad5c8a764946af8ee85c1c3a5269">isMotionBlurOn</a>()) {</div>
+<div class="line"><span class="lineno">  257</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a152ff20265a172b1706124804dd6710c">Vec3fa</a> v0 = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a13b48524d49ae8d9b2054b23bf430679">evalCubic</a>(ray.u,</div>
+<div class="line"><span class="lineno">  258</span>                <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 0, 0), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 1, 0),</div>
+<div class="line"><span class="lineno">  259</span>                <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 2, 0), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 3, 0));</div>
+<div class="line"><span class="lineno">  260</span>            pos0 = v0.asVec3f();</div>
+<div class="line"><span class="lineno">  261</span>            pos1Ptr = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  262</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  263</span>            <span class="keywordtype">float</span> wc = ray.getTime() - <a class="code hl_variable" href="namespacemoonray_1_1geom_1_1internal.html#a70f345aecee7b6a45b138e92edd69fcd">sHalfDt</a>;</div>
+<div class="line"><span class="lineno">  264</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a152ff20265a172b1706124804dd6710c">Vec3fa</a> v0 = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a13b48524d49ae8d9b2054b23bf430679">evalCubic</a>(ray.u,</div>
+<div class="line"><span class="lineno">  265</span>                <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 0, 0), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 0, 1), wc),</div>
+<div class="line"><span class="lineno">  266</span>                <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 1, 0), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 1, 1), wc),</div>
+<div class="line"><span class="lineno">  267</span>                <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 2, 0), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 2, 1), wc),</div>
+<div class="line"><span class="lineno">  268</span>                <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 3, 0), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 3, 1), wc));</div>
+<div class="line"><span class="lineno">  269</span>            wc = ray.getTime() + <a class="code hl_variable" href="namespacemoonray_1_1geom_1_1internal.html#a70f345aecee7b6a45b138e92edd69fcd">sHalfDt</a>;</div>
+<div class="line"><span class="lineno">  270</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a152ff20265a172b1706124804dd6710c">Vec3fa</a> v1 = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a13b48524d49ae8d9b2054b23bf430679">evalCubic</a>(ray.u,</div>
+<div class="line"><span class="lineno">  271</span>                <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 0, 0), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 0, 1), wc),</div>
+<div class="line"><span class="lineno">  272</span>                <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 1, 0), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 1, 1), wc),</div>
+<div class="line"><span class="lineno">  273</span>                <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 2, 0), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 2, 1), wc),</div>
+<div class="line"><span class="lineno">  274</span>                <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 3, 0), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">mVertexBuffer</a>(vertexOffset + 3, 1), wc));</div>
+<div class="line"><span class="lineno">  275</span>            pos0 = v0.asVec3f();</div>
+<div class="line"><span class="lineno">  276</span>            pos1 = v1.asVec3f();</div>
+<div class="line"><span class="lineno">  277</span>            pos1Ptr = &amp;pos1;</div>
+<div class="line"><span class="lineno">  278</span>        }</div>
+<div class="line"><span class="lineno">  279</span> </div>
+<div class="line"><span class="lineno">  280</span>        <span class="comment">// Motion vectors only support a single instance level, hence we only care</span></div>
+<div class="line"><span class="lineno">  281</span>        <span class="comment">// about ray.instance0.</span></div>
+<div class="line"><span class="lineno">  282</span>        <span class="keyword">const</span> Instance *instance = (ray.isInstanceHit())?</div>
+<div class="line"><span class="lineno">  283</span>            <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>Instance *<span class="keyword">&gt;</span>(ray.ext.instance0OrLight) : <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  284</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> motion = <a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#afc2632cf558586dca95b5bcccdb8396d">computePrimitiveMotion</a>(pos0, pos1Ptr, ray.getTime(), instance);</div>
+<div class="line"><span class="lineno">  285</span>        intersection.setAttribute(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a565123a1a638f4e4c33e9108e0b0a65e">StandardAttributes::sMotion</a>, motion);</div>
+<div class="line"><span class="lineno">  286</span>    }</div>
+<div class="line"><span class="lineno">  287</span>}</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a26b3f6b7b842544058f3766b0da79257"><div class="ttname"><a href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a></div><div class="ttdeci">__host__ __device__ float3 normalize(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00165">GPUMath.h:165</a></div></div>
+<div class="ttc" id="a_g_p_u_math_8h_html_aac515f5a1286dde7b231d1d6e47c77f4"><div class="ttname"><a href="_g_p_u_math_8h.html#aac515f5a1286dde7b231d1d6e47c77f4">cross</a></div><div class="ttdeci">__host__ __device__ float3 cross(const float3 &amp;a, const float3 &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00151">GPUMath.h:151</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a0b2d21ef3df121422a79526b079c580e"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0b2d21ef3df121422a79526b079c580e">moonray::geom::LayerAssignmentId::getType</a></div><div class="ttdeci">Type getType() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00155">LayerAssignmentId.h:155</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a0e7e74cdce226e48699f4d43b79c1fd1"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0e7e74cdce226e48699f4d43b79c1fd1">moonray::geom::LayerAssignmentId::getVaryingId</a></div><div class="ttdeci">const ContainerType &amp; getVaryingId() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00166">LayerAssignmentId.h:166</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a7029086f3349b566ea752fd6f4a85d31"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a7029086f3349b566ea752fd6f4a85d31">moonray::geom::LayerAssignmentId::getConstId</a></div><div class="ttdeci">ValueType getConstId() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00160">LayerAssignmentId.h:160</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">moonray::geom::LayerAssignmentId::Type::CONSTANT</a></div><div class="ttdeci">@ CONSTANT</div><div class="ttdoc">all sub-primitives share one assignment id</div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_cubic_spline_html_a13b48524d49ae8d9b2054b23bf430679"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a13b48524d49ae8d9b2054b23bf430679">moonray::geom::internal::CubicSpline::evalCubic</a></div><div class="ttdeci">CvType evalCubic(const float &amp;t, const CvType &amp;cv0, const CvType &amp;cv1, const CvType &amp;cv2, const CvType &amp;cv3) const</div><div class="ttdef"><b>Definition:</b> <a href="_cubic_spline_8h_source.html#l00070">CubicSpline.h:70</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_cubic_spline_html_a95d52856f84c71169839e6b2248e2d05"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a95d52856f84c71169839e6b2248e2d05">moonray::geom::internal::CubicSpline::getSpansInChain</a></div><div class="ttdeci">virtual uint32_t getSpansInChain(const uint32_t chain) const =0</div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_cubic_spline_html_af9059febe31cfc71434fc303cdbcd44c"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#af9059febe31cfc71434fc303cdbcd44c">moonray::geom::internal::CubicSpline::computeAttributesDerivatives</a></div><div class="ttdeci">void computeAttributesDerivatives(const shading::AttributeTable *table, float u, float invDs, int chain, int varyingOffset, int faceVaryingOffset, int vertexOffset, float time, shading::Intersection &amp;intersection) const</div><div class="ttdef"><b>Definition:</b> <a href="_cubic_spline_8cc_source.html#l00303">CubicSpline.cc:303</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_a152a2e6aeb9ef3eb5de1a00186eccc05a2ea77cf582892014b30e6fa7e558350d"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a152a2e6aeb9ef3eb5de1a00186eccc05a2ea77cf582892014b30e6fa7e558350d">moonray::geom::internal::Curves::SubType::ROUND</a></div><div class="ttdeci">@ ROUND</div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_a152a2e6aeb9ef3eb5de1a00186eccc05a8b091ad74c8e41867042d3527b584ae7"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a152a2e6aeb9ef3eb5de1a00186eccc05a8b091ad74c8e41867042d3527b584ae7">moonray::geom::internal::Curves::SubType::RAY_FACING</a></div><div class="ttdeci">@ RAY_FACING</div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_a3032e975b55235dc9738e0ccf804ea42"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a3032e975b55235dc9738e0ccf804ea42">moonray::geom::internal::Curves::mSubType</a></div><div class="ttdeci">SubType mSubType</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_curves_8h_source.html#l00248">Curves.h:248</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_a3de98f2652dcdac725a972fb64be29d1"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a3de98f2652dcdac725a972fb64be29d1">moonray::geom::internal::Curves::getMotionSamplesCount</a></div><div class="ttdeci">virtual size_t getMotionSamplesCount() const override</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_curves_8h_source.html#l00187">Curves.h:187</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_a57cebfdf1a66e2518229ee83db2bb781"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781">moonray::geom::internal::Curves::mVertexBuffer</a></div><div class="ttdeci">geom::Curves::VertexBuffer mVertexBuffer</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_curves_8h_source.html#l00250">Curves.h:250</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_aae78b628f7633e1eedded63ab93e176e"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#aae78b628f7633e1eedded63ab93e176e">moonray::geom::internal::Curves::getPrimitiveAttributeTable</a></div><div class="ttdeci">const shading::PrimitiveAttributeTable * getPrimitiveAttributeTable() const</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_curves_8h_source.html#l00132">Curves.h:132</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_ad2d1831d8485bf3ec817f99749bbc2f3"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#ad2d1831d8485bf3ec817f99749bbc2f3">moonray::geom::internal::Curves::mIndexBuffer</a></div><div class="ttdeci">std::vector&lt; IndexData &gt; mIndexBuffer</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_curves_8h_source.html#l00251">Curves.h:251</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_a219a79e9a4079197f79aff19f5cf889e"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">moonray::geom::internal::NamedPrimitive::mLayerAssignmentId</a></div><div class="ttdeci">LayerAssignmentId mLayerAssignmentId</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00148">NamedPrimitive.h:148</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html_a0ab0ad5c8a764946af8ee85c1c3a5269"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a0ab0ad5c8a764946af8ee85c1c3a5269">moonray::geom::internal::Primitive::isMotionBlurOn</a></div><div class="ttdeci">bool isMotionBlurOn() const</div><div class="ttdoc">Query whether thre are multiple frame samples for this Primitive.</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8h_source.html#l00221">Primitive.h:221</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_standard_attributes_html_a27c9e6c41ef45c905b03b252c429d32c"><div class="ttname"><a href="classmoonray_1_1shading_1_1_standard_attributes.html#a27c9e6c41ef45c905b03b252c429d32c">moonray::shading::StandardAttributes::sNumPolyVertices</a></div><div class="ttdeci">static TypedAttributeKey&lt; int &gt; sNumPolyVertices</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00176">AttributeKey.h:176</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_standard_attributes_html_a35012a7b4c6e5a6245ec3ad40672905ea45704e1238000edf4e37f18a939fd313"><div class="ttname"><a href="classmoonray_1_1shading_1_1_standard_attributes.html#a35012a7b4c6e5a6245ec3ad40672905ea45704e1238000edf4e37f18a939fd313">moonray::shading::StandardAttributes::POLYVERTEX_TYPE_CUBIC_SPLINE</a></div><div class="ttdeci">@ POLYVERTEX_TYPE_CUBIC_SPLINE</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00141">AttributeKey.h:141</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_standard_attributes_html_a37dac578fb97e4ad23bfa55b9d69e487"><div class="ttname"><a href="classmoonray_1_1shading_1_1_standard_attributes.html#a37dac578fb97e4ad23bfa55b9d69e487">moonray::shading::StandardAttributes::sPolyVertexType</a></div><div class="ttdeci">static TypedAttributeKey&lt; int &gt; sPolyVertexType</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00177">AttributeKey.h:177</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_standard_attributes_html_a565123a1a638f4e4c33e9108e0b0a65e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_standard_attributes.html#a565123a1a638f4e4c33e9108e0b0a65e">moonray::shading::StandardAttributes::sMotion</a></div><div class="ttdeci">static TypedAttributeKey&lt; scene_rdl2::math::Vec3f &gt; sMotion</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00174">AttributeKey.h:174</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_standard_attributes_html_a8a12c844ac7c806039b431a6e63b005c"><div class="ttname"><a href="classmoonray_1_1shading_1_1_standard_attributes.html#a8a12c844ac7c806039b431a6e63b005c">moonray::shading::StandardAttributes::sPolyVertices</a></div><div class="ttdeci">static TypedAttributeKey&lt; scene_rdl2::math::Vec3f &gt; sPolyVertices[MAX_NUM_POLYVERTICES]</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00175">AttributeKey.h:175</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_standard_attributes_html_af942a43054eedd9b1ca3f202118efca5"><div class="ttname"><a href="classmoonray_1_1shading_1_1_standard_attributes.html#af942a43054eedd9b1ca3f202118efca5">moonray::shading::StandardAttributes::sUv</a></div><div class="ttdeci">static TypedAttributeKey&lt; scene_rdl2::math::Vec3f &gt; sUv</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00146">AttributeKey.h:146</a></div></div>
+<div class="ttc" id="acmd_2point__generation__cmd_2util_8h_html_a29663946660b920710cf69b9bbcf8a7d"><div class="ttname"><a href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a></div><div class="ttdeci">float lerp(float u, float min, float max)</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2point__generation__cmd_2util_8h_source.html#l00044">util.h:44</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a472053acc157ccb20c9d68bf2fdaa824"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a472053acc157ccb20c9d68bf2fdaa824">moonray::geom::internal::transformPoint</a></div><div class="ttdeci">Vec3f transformPoint(const scene_rdl2::math::Mat4f mat[2], const scene_rdl2::math::Vec3f &amp;point, const float time, bool isMotionBlurOn)</div><div class="ttdef"><b>Definition:</b> <a href="geom_2prim_2_util_8cc_source.html#l00231">Util.cc:231</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a70f345aecee7b6a45b138e92edd69fcd"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a70f345aecee7b6a45b138e92edd69fcd">moonray::geom::internal::sHalfDt</a></div><div class="ttdeci">static const float sHalfDt</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2prim_2util_8h_source.html#l00092">Util.h:92</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a7925f95b6702e686242723fb518ba504"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a7925f95b6702e686242723fb518ba504">moonray::geom::internal::overrideInstanceAttrs</a></div><div class="ttdeci">void overrideInstanceAttrs(const mcrt_common::Ray &amp;ray, shading::Intersection &amp;intersection)</div><div class="ttdef"><b>Definition:</b> <a href="geom_2prim_2_util_8cc_source.html#l00279">Util.cc:279</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_afc2632cf558586dca95b5bcccdb8396d"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#afc2632cf558586dca95b5bcccdb8396d">moonray::geom::internal::computePrimitiveMotion</a></div><div class="ttdeci">Vec3f computePrimitiveMotion(const Vec3f &amp;pos0, const Vec3f *pos1, float rayTime, const Instance *instance)</div><div class="ttdef"><b>Definition:</b> <a href="geom_2prim_2_util_8cc_source.html#l00203">Util.cc:203</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a152ff20265a172b1706124804dd6710c"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a152ff20265a172b1706124804dd6710c">moonray::geom::Vec3fa</a></div><div class="ttdeci">scene_rdl2::math::Vec3fa Vec3fa</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00040">Types.h:40</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a8ff976ca38d834d434f1d00f2a03359b"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">moonray::geom::Vec2f</a></div><div class="ttdeci">scene_rdl2::math::Vec2f Vec2f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00038">Types.h:38</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -589,9 +1612,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/geom/prim/<a class="el" href="_cubic_spline_8cc_source.html">CubicSpline.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html">CubicSpline</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_float_ramp_control.html">FloatRampControl</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_float_ramp_control.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_float_ramp_control-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::FloatRampControl Class Reference</div></div>
 </div><!--header-->
@@ -71,6 +88,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3c4c9c1ce97ea18a2ca4f1bcc578e746"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_float_ramp_control.html#a3c4c9c1ce97ea18a2ca4f1bcc578e746">HUD_AS_ISPC_METHODS</a> (<a class="el" href="classmoonray_1_1shading_1_1_float_ramp_control.html">FloatRampControl</a>)</td></tr>
 <tr class="memdesc:a3c4c9c1ce97ea18a2ca4f1bcc578e746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets ispc object for vector mode.  <a href="classmoonray_1_1shading_1_1_float_ramp_control.html#a3c4c9c1ce97ea18a2ca4f1bcc578e746">More...</a><br /></td></tr>
 <tr class="separator:a3c4c9c1ce97ea18a2ca4f1bcc578e746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aab4932c903bb18a2152d21b1b03eeb3f"><td class="memItemLeft" align="right" valign="top">ispc::FloatRampControl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a></td></tr>
+<tr class="separator:aab4932c903bb18a2152d21b1b03eeb3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Helper class that maps a set of float inputs to float outputs and performs interpolation between 2 control points based on interpolationTypes. </p>
@@ -101,7 +123,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ramp_control_8h_source.html#l00023">23</a> of file <a class="el" href="_ramp_control_8h_source.html">RampControl.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   23</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a22165feab40468f0cc612cf0f1dda893" name="a22165feab40468f0cc612cf0f1dda893"></a>
@@ -128,7 +151,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ramp_control_8h_source.html#l00024">24</a> of file <a class="el" href="_ramp_control_8h_source.html">RampControl.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -156,7 +180,18 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>float result based on ramp control and input 't' </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_ramp_control_8cc_source.html#l00629">629</a> of file <a class="el" href="_ramp_control_8cc_source.html">RampControl.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  629</span>                                      {</div>
+<div class="line"><span class="lineno">  630</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mNumEntries == 0) {</div>
+<div class="line"><span class="lineno">  631</span>        <span class="keywordflow">return</span>  0.0f;</div>
+<div class="line"><span class="lineno">  632</span>    }</div>
+<div class="line"><span class="lineno">  633</span>    <span class="keyword">auto</span> blendAdjustmentCallback = [&amp;](<span class="keyword">const</span> <span class="keywordtype">float</span>&amp;, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp;) { };</div>
+<div class="line"><span class="lineno">  634</span>    <span class="keywordtype">float</span> result = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a31f6603cf2be11d9b81792370e7bb70d">eval1DRamp</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mNumEntries, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInputs, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mOutputs, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInterpolators,</div>
+<div class="line"><span class="lineno">  635</span>                             <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mSlopes, t, blendAdjustmentCallback);</div>
+<div class="line"><span class="lineno">  636</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  637</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_float_ramp_control_html_aab4932c903bb18a2152d21b1b03eeb3f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">moonray::shading::FloatRampControl::mIspc</a></div><div class="ttdeci">ispc::FloatRampControl mIspc</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8h_source.html#l00048">RampControl.h:48</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_a31f6603cf2be11d9b81792370e7bb70d"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a31f6603cf2be11d9b81792370e7bb70d">anonymous_namespace{RampControl.cc}::eval1DRamp</a></div><div class="ttdeci">OutputType eval1DRamp(const int numEntries, const float *inputs, const OutputType *outputs, const ispc::RampInterpolatorMode *interpolators, const OutputType *slopes, float t, const BlendAdjustmentCallbackType &amp;blendAdjustmentCallback)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00448">RampControl.cc:448</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ace6ac4a590a88578314c0a33101ace7f" name="ace6ac4a590a88578314c0a33101ace7f"></a>
@@ -201,7 +236,18 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>float result based on ramp control and input 'uv' </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_ramp_control_8cc_source.html#l00640">640</a> of file <a class="el" href="_ramp_control_8cc_source.html">RampControl.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  642</span>                                                      {</div>
+<div class="line"><span class="lineno">  643</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mNumEntries == 0) {</div>
+<div class="line"><span class="lineno">  644</span>        <span class="keywordflow">return</span> 1.0f;</div>
+<div class="line"><span class="lineno">  645</span>    }</div>
+<div class="line"><span class="lineno">  646</span>    <span class="keyword">auto</span> blendAdjustmentCallback = [&amp;](<span class="keywordtype">float</span>&amp; left, <span class="keywordtype">float</span>&amp; right) { };</div>
+<div class="line"><span class="lineno">  647</span>    <span class="keywordtype">float</span> result = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#abbefcc063e6678ce568593f206685b2c">eval2DRamp</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mNumEntries, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInputs, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mOutputs, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInterpolators,</div>
+<div class="line"><span class="lineno">  648</span>                             <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mSlopes, uv, rampType2D, inputRamp, blendAdjustmentCallback);</div>
+<div class="line"><span class="lineno">  649</span> </div>
+<div class="line"><span class="lineno">  650</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  651</span>}</div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_abbefcc063e6678ce568593f206685b2c"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#abbefcc063e6678ce568593f206685b2c">anonymous_namespace{RampControl.cc}::eval2DRamp</a></div><div class="ttdeci">OutputType eval2DRamp(const int numEntries, const float *inputs, const OutputType *outputs, const ispc::RampInterpolatorMode *interpolators, const OutputType *slopes, Vec2f uv, ispc::RampInterpolator2DType rampType2D, float inputRamp, const BlendAdjustmentCallbackType &amp;blendAdjustmentCallback)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00515">RampControl.cc:515</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3c4c9c1ce97ea18a2ca4f1bcc578e746" name="a3c4c9c1ce97ea18a2ca4f1bcc578e746"></a>
@@ -263,6 +309,54 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ramp_control_8cc_source.html#l00602">602</a> of file <a class="el" href="_ramp_control_8cc_source.html">RampControl.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  606</span>{</div>
+<div class="line"><span class="lineno">  607</span>    <span class="comment">// ignore any extra points</span></div>
+<div class="line"><span class="lineno">  608</span>    numEntries = math::min(numEntries, ispc::RAMP_MAX_POINTS);</div>
+<div class="line"><span class="lineno">  609</span> </div>
+<div class="line"><span class="lineno">  610</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mNumEntries = numEntries;</div>
+<div class="line"><span class="lineno">  611</span> </div>
+<div class="line"><span class="lineno">  612</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; numEntries; ++i) {</div>
+<div class="line"><span class="lineno">  613</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInputs[i] = inputs[i];</div>
+<div class="line"><span class="lineno">  614</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mOutputs[i] = outputs[i];</div>
+<div class="line"><span class="lineno">  615</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInterpolators[i] = interpolators[i];</div>
+<div class="line"><span class="lineno">  616</span>    }</div>
+<div class="line"><span class="lineno">  617</span> </div>
+<div class="line"><span class="lineno">  618</span>    <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a11a236d067a323fc28df0afc221153e8">sortEntries</a>(numEntries, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInputs, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mOutputs, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInterpolators);</div>
+<div class="line"><span class="lineno">  619</span> </div>
+<div class="line"><span class="lineno">  620</span>    <span class="comment">// compute slopes</span></div>
+<div class="line"><span class="lineno">  621</span>    <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ad02fb7f40ce9f57e8257d80fa0798c54">evaluateMonotoneSlopes</a>(numEntries,</div>
+<div class="line"><span class="lineno">  622</span>                           <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInputs,</div>
+<div class="line"><span class="lineno">  623</span>                           <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mOutputs,</div>
+<div class="line"><span class="lineno">  624</span>                           <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInterpolators,</div>
+<div class="line"><span class="lineno">  625</span>                           <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mSlopes);</div>
+<div class="line"><span class="lineno">  626</span>}</div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_a11a236d067a323fc28df0afc221153e8"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a11a236d067a323fc28df0afc221153e8">anonymous_namespace{RampControl.cc}::sortEntries</a></div><div class="ttdeci">void sortEntries(const uint32_t numEntries, float *const inputs, OutputType *const outputs, ispc::RampInterpolatorMode *const interpolators)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00294">RampControl.cc:294</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_ad02fb7f40ce9f57e8257d80fa0798c54"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ad02fb7f40ce9f57e8257d80fa0798c54">anonymous_namespace{RampControl.cc}::evaluateMonotoneSlopes</a></div><div class="ttdeci">void evaluateMonotoneSlopes(const int numEntries, const float *const inputs, const float *const outputs, const ispc::RampInterpolatorMode *const interpolators, float *const slopes)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00184">RampControl.cc:184</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aab4932c903bb18a2152d21b1b03eeb3f" name="aab4932c903bb18a2152d21b1b03eeb3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab4932c903bb18a2152d21b1b03eeb3f">&#9670;&#160;</a></span>mIspc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ispc::FloatRampControl moonray::shading::FloatRampControl::mIspc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ramp_control_8h_source.html#l00048">48</a> of file <a class="el" href="_ramp_control_8h_source.html">RampControl.h</a>.</p>
 
 </div>
 </div>
@@ -271,9 +365,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/<a class="el" href="_ramp_control_8cc_source.html">RampControl.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_float_ramp_control.html">FloatRampControl</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

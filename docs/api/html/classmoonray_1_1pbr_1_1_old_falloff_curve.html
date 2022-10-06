@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,16 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_old_falloff_curve.html">OldFalloffCurve</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_old_falloff_curve.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classmoonray_1_1pbr_1_1_old_falloff_curve-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::pbr::OldFalloffCurve Class Reference</div></div>
 </div><!--header-->
@@ -78,6 +95,17 @@ Static Public Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a463ae6ee704ec816d34cb3f72e51bba5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#a463ae6ee704ec816d34cb3f72e51bba5">OLD_FALLOFF_CURVE_MEMBERS</a></td></tr>
 <tr class="separator:a463ae6ee704ec816d34cb3f72e51bba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aeb367741ced725dfccdec8f34f2a0ec6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#aeb367741ced725dfccdec8f34f2a0ec6">naturalOldFalloff</a> (float x) const</td></tr>
+<tr class="separator:aeb367741ced725dfccdec8f34f2a0ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd59b340254044ee7de8dc2f8e8af56"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#aefd59b340254044ee7de8dc2f8e8af56">f</a> (float x) const</td></tr>
+<tr class="separator:aefd59b340254044ee7de8dc2f8e8af56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a5323dcabb85ba71be355db4c359ad"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#a93a5323dcabb85ba71be355db4c359ad">g</a> (float x) const</td></tr>
+<tr class="separator:a93a5323dcabb85ba71be355db4c359ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2495ae20cc6472a6a719a5a328721b39"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#a2495ae20cc6472a6a719a5a328721b39">h</a> (float x) const</td></tr>
+<tr class="separator:a2495ae20cc6472a6a719a5a328721b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -107,7 +135,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_light_util_8h_source.html#l00177">177</a> of file <a class="el" href="_light_util_8h_source.html">LightUtil.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  177</span>                      :</div>
+<div class="line"><span class="lineno">  178</span>        mType(OLD_FALLOFF_CURVE_TYPE_NONE), mExp(1.0f), mG1(0.0f), mInvH0(0.0f) {}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2f09890b3306fb72bea6f1195d2bfcbf" name="a2f09890b3306fb72bea6f1195d2bfcbf"></a>
@@ -145,7 +175,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_light_util_8h_source.html#l00180">180</a> of file <a class="el" href="_light_util_8h_source.html">LightUtil.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  181</span>    {</div>
+<div class="line"><span class="lineno">  182</span>        <a class="code hl_function" href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#ad58a25a0781a2f2b4dc34a559666425d">init</a>(curveType, exp);</div>
+<div class="line"><span class="lineno">  183</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_old_falloff_curve_html_ad58a25a0781a2f2b4dc34a559666425d"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#ad58a25a0781a2f2b4dc34a559666425d">moonray::pbr::OldFalloffCurve::init</a></div><div class="ttdeci">void init(OldFalloffCurveType curveType, float exp)</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00185">LightUtil.h:185</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -174,7 +208,119 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_light_util_8h_source.html#l00198">198</a> of file <a class="el" href="_light_util_8h_source.html">LightUtil.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  199</span>    {</div>
+<div class="line"><span class="lineno">  200</span>        t = scene_rdl2::math::saturate(t);</div>
+<div class="line"><span class="lineno">  201</span> </div>
+<div class="line"><span class="lineno">  202</span>        <span class="keywordflow">switch</span> (mType) {</div>
+<div class="line"><span class="lineno">  203</span>        <span class="keywordflow">case</span> OLD_FALLOFF_CURVE_TYPE_NONE:</div>
+<div class="line"><span class="lineno">  204</span>            <span class="keywordflow">return</span> t;</div>
+<div class="line"><span class="lineno">  205</span>        <span class="keywordflow">case</span> OLD_FALLOFF_CURVE_TYPE_EASEOUT:</div>
+<div class="line"><span class="lineno">  206</span>            <span class="keywordflow">return</span> scene_rdl2::math::pow(3.0f * t * t - 2.0f * t * t * t, mExp);</div>
+<div class="line"><span class="lineno">  207</span>        <span class="keywordflow">case</span> OLD_FALLOFF_CURVE_TYPE_GAUSSIAN:</div>
+<div class="line"><span class="lineno">  208</span>            <span class="keywordflow">return</span> scene_rdl2::math::pow((scene_rdl2::math::cos((1.0f - t) * scene_rdl2::math::sPi) + 1.0f) * 0.5f,</div>
+<div class="line"><span class="lineno">  209</span>                                         mExp);</div>
+<div class="line"><span class="lineno">  210</span>        <span class="keywordflow">case</span> OLD_FALLOFF_CURVE_TYPE_LINEAR:</div>
+<div class="line"><span class="lineno">  211</span>            <span class="keywordflow">return</span> scene_rdl2::math::pow(t, mExp);</div>
+<div class="line"><span class="lineno">  212</span>        <span class="keywordflow">case</span> OLD_FALLOFF_CURVE_TYPE_SQUARED:</div>
+<div class="line"><span class="lineno">  213</span>            <span class="keywordflow">return</span> t * t;</div>
+<div class="line"><span class="lineno">  214</span>        <span class="keywordflow">case</span> OLD_FALLOFF_CURVE_TYPE_NATURAL:</div>
+<div class="line"><span class="lineno">  215</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#aeb367741ced725dfccdec8f34f2a0ec6">naturalOldFalloff</a>(t);</div>
+<div class="line"><span class="lineno">  216</span>        }</div>
+<div class="line"><span class="lineno">  217</span>        <span class="keywordflow">return</span> t;</div>
+<div class="line"><span class="lineno">  218</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_old_falloff_curve_html_aeb367741ced725dfccdec8f34f2a0ec6"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#aeb367741ced725dfccdec8f34f2a0ec6">moonray::pbr::OldFalloffCurve::naturalOldFalloff</a></div><div class="ttdeci">float naturalOldFalloff(float x) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00242">LightUtil.h:242</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aefd59b340254044ee7de8dc2f8e8af56" name="aefd59b340254044ee7de8dc2f8e8af56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefd59b340254044ee7de8dc2f8e8af56">&#9670;&#160;</a></span>f()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::pbr::OldFalloffCurve::f </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_light_util_8h_source.html#l00244">244</a> of file <a class="el" href="_light_util_8h_source.html">LightUtil.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  244</span>{ <span class="keywordflow">return</span> 1.0f / scene_rdl2::math::pow(x, mExp); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a93a5323dcabb85ba71be355db4c359ad" name="a93a5323dcabb85ba71be355db4c359ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93a5323dcabb85ba71be355db4c359ad">&#9670;&#160;</a></span>g()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::pbr::OldFalloffCurve::g </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_light_util_8h_source.html#l00245">245</a> of file <a class="el" href="_light_util_8h_source.html">LightUtil.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  245</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#aefd59b340254044ee7de8dc2f8e8af56">f</a>(<a class="code hl_define" href="_light_util_8h.html#a4011d0eedab28ec620742babd412fecc">OLD_FALLOFF_TAIL</a> * x + <a class="code hl_define" href="_light_util_8h.html#a5e7f47e68071b653b0662e0e914b357f">OLD_FALLOFF_HEAD</a>); }</div>
+<div class="ttc" id="a_light_util_8h_html_a4011d0eedab28ec620742babd412fecc"><div class="ttname"><a href="_light_util_8h.html#a4011d0eedab28ec620742babd412fecc">OLD_FALLOFF_TAIL</a></div><div class="ttdeci">#define OLD_FALLOFF_TAIL</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00240">LightUtil.h:240</a></div></div>
+<div class="ttc" id="a_light_util_8h_html_a5e7f47e68071b653b0662e0e914b357f"><div class="ttname"><a href="_light_util_8h.html#a5e7f47e68071b653b0662e0e914b357f">OLD_FALLOFF_HEAD</a></div><div class="ttdeci">#define OLD_FALLOFF_HEAD</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00239">LightUtil.h:239</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_old_falloff_curve_html_aefd59b340254044ee7de8dc2f8e8af56"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#aefd59b340254044ee7de8dc2f8e8af56">moonray::pbr::OldFalloffCurve::f</a></div><div class="ttdeci">float f(float x) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00244">LightUtil.h:244</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2495ae20cc6472a6a719a5a328721b39" name="a2495ae20cc6472a6a719a5a328721b39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2495ae20cc6472a6a719a5a328721b39">&#9670;&#160;</a></span>h()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::pbr::OldFalloffCurve::h </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_light_util_8h_source.html#l00246">246</a> of file <a class="el" href="_light_util_8h_source.html">LightUtil.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  246</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#a93a5323dcabb85ba71be355db4c359ad">g</a>(x) - mG1; }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_old_falloff_curve_html_a93a5323dcabb85ba71be355db4c359ad"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#a93a5323dcabb85ba71be355db4c359ad">moonray::pbr::OldFalloffCurve::g</a></div><div class="ttdeci">float g(float x) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00245">LightUtil.h:245</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8bd2791a4958ddd20862b248c6e1d10" name="aa8bd2791a4958ddd20862b248c6e1d10"></a>
@@ -258,7 +404,44 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_light_util_8h_source.html#l00185">185</a> of file <a class="el" href="_light_util_8h_source.html">LightUtil.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  186</span>    {</div>
+<div class="line"><span class="lineno">  187</span>        mType = (<a class="code hl_enumeration" href="namespacemoonray_1_1pbr.html#ad09218dfe65695abdadaeb8da2fbfb3d">OldFalloffCurveType</a>)scene_rdl2::math::min(curveType, OLD_FALLOFF_CURVE_TYPE_NUM_TYPES - 1);</div>
+<div class="line"><span class="lineno">  188</span>        mExp = exp;</div>
+<div class="line"><span class="lineno">  189</span>        mG1 = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#a93a5323dcabb85ba71be355db4c359ad">g</a>(1.0f);  <span class="comment">// initialize this before mInvH0!</span></div>
+<div class="line"><span class="lineno">  190</span>        mInvH0 = 1.0f / <a class="code hl_function" href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#a2495ae20cc6472a6a719a5a328721b39">h</a>(0.0f);</div>
+<div class="line"><span class="lineno">  191</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_old_falloff_curve_html_a2495ae20cc6472a6a719a5a328721b39"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#a2495ae20cc6472a6a719a5a328721b39">moonray::pbr::OldFalloffCurve::h</a></div><div class="ttdeci">float h(float x) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00246">LightUtil.h:246</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_ad09218dfe65695abdadaeb8da2fbfb3d"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ad09218dfe65695abdadaeb8da2fbfb3d">moonray::pbr::OldFalloffCurveType</a></div><div class="ttdeci">OldFalloffCurveType</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00168">LightUtil.h:169</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aeb367741ced725dfccdec8f34f2a0ec6" name="aeb367741ced725dfccdec8f34f2a0ec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb367741ced725dfccdec8f34f2a0ec6">&#9670;&#160;</a></span>naturalOldFalloff()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::pbr::OldFalloffCurve::naturalOldFalloff </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_light_util_8h_source.html#l00242">242</a> of file <a class="el" href="_light_util_8h_source.html">LightUtil.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  242</span>{ <span class="keywordflow">return</span> 1.0f - (<a class="code hl_function" href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#a2495ae20cc6472a6a719a5a328721b39">h</a>(x) * mInvH0); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -290,9 +473,13 @@ Protected Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/light/<a class="el" href="_light_util_8h_source.html">LightUtil.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_old_falloff_curve.html">OldFalloffCurve</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

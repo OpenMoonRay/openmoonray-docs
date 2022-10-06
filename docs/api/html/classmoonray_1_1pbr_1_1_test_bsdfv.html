@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_test_bsdfv.html">TestBsdfv</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_test_bsdfv.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -178,7 +194,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00088">88</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   89</span>{</div>
+<div class="line"><span class="lineno">   90</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2a033682a28b42ca9b06c8c526d9e7dc" name="a2a033682a28b42ca9b06c8c526d9e7dc"></a>
@@ -197,7 +215,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00092">92</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   93</span>{</div>
+<div class="line"><span class="lineno">   94</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -612,7 +632,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00078">78</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   79</span>{</div>
+<div class="line"><span class="lineno">   80</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a9d9f23b89fdbad0a1301f05a985fac79">setupThreadLocalData</a>();</div>
+<div class="line"><span class="lineno">   81</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a9d9f23b89fdbad0a1301f05a985fac79"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a9d9f23b89fdbad0a1301f05a985fac79">moonray::pbr::setupThreadLocalData</a></div><div class="ttdeci">void setupThreadLocalData()</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00661">TestUtil.h:661</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6999a5ee5441f1c496a279522f90646d" name="a6999a5ee5441f1c496a279522f90646d"></a>
@@ -631,7 +655,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00083">83</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   84</span>{</div>
+<div class="line"><span class="lineno">   85</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a1ab764bbb235fddf3e8e09547529b24c">cleanupThreadLocalData</a>();</div>
+<div class="line"><span class="lineno">   86</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a1ab764bbb235fddf3e8e09547529b24c"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a1ab764bbb235fddf3e8e09547529b24c">moonray::pbr::cleanupThreadLocalData</a></div><div class="ttdeci">void cleanupThreadLocalData()</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00676">TestUtil.h:676</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="add410db4f501fdab8d86e7a6a757da03" name="add410db4f501fdab8d86e7a6a757da03"></a>
@@ -650,7 +678,35 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00151">151</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  152</span>{</div>
+<div class="line"><span class="lineno">  153</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  154</span> </div>
+<div class="line"><span class="lineno">  155</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testAnisoCookTorrance() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  156</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  157</span>        <span class="keywordtype">int</span> j = (i + 4) % <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>;</div>
+<div class="line"><span class="lineno">  158</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f and %f ====================&quot;</span>,</div>
+<div class="line"><span class="lineno">  159</span>                <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i], <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[j]);</div>
+<div class="line"><span class="lineno">  160</span> </div>
+<div class="line"><span class="lineno">  161</span>        <span class="keywordtype">int</span> sampleCount = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]) +</div>
+<div class="line"><span class="lineno">  162</span>                          <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[j]);</div>
+<div class="line"><span class="lineno">  163</span> </div>
+<div class="line"><span class="lineno">  164</span>        AnisoCookTorranceBsdfFactory factory(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i], <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[j]);</div>
+<div class="line"><span class="lineno">  165</span>        TestBsdfSettings test(factory, frame, <span class="keyword">true</span>, 0.002, 0.03,</div>
+<div class="line"><span class="lineno">  166</span>                (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[j] &gt; 0.1f  &amp;&amp;</div>
+<div class="line"><span class="lineno">  167</span>                 <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &lt; 0.7f  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[j] &lt; 0.7f),</div>
+<div class="line"><span class="lineno">  168</span>                <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[j] &gt; 0.1f,</div>
+<div class="line"><span class="lineno">  169</span>                <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  170</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, sampleCount);</div>
+<div class="line"><span class="lineno">  171</span>    }</div>
+<div class="line"><span class="lineno">  172</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a095dd0c08268947a9fa1355901dfebe7"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">moonray::pbr::sRoughnessCount</a></div><div class="ttdeci">static const int sRoughnessCount</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_one_sampler_8cc_source.html#l00036">TestBsdfOneSampler.cc:36</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a56ae37a2ab70472ac70ae80f28ca553d"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">moonray::pbr::sViewAnglesTheta</a></div><div class="ttdeci">static const int sViewAnglesTheta</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_one_sampler_8cc_source.html#l00035">TestBsdfOneSampler.cc:35</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a80723c67d00a29582d0259209f60c7da"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">moonray::pbr::getSampleCount</a></div><div class="ttdeci">finline int getSampleCount(float roughness)</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00301">TestBsdfCommon.h:301</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_aa7fcd2476c52f7410396cb6876149fa9"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">moonray::pbr::sRoughness</a></div><div class="ttdeci">static const float sRoughness[sRoughnessCount]</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_one_sampler_8cc_source.html#l00037">TestBsdfOneSampler.cc:37</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_ad73efe508ba70b16fc2516603ce9bfae"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">moonray::pbr::runTest</a></div><div class="ttdeci">static void runTest(const TestBsdfSettings &amp;test, int sampleCount, ProducerArgs &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8cc_source.html#l00321">TestBsdfCommon.cc:321</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_aead4368f4b907ca49f2eb4d498b7fadc"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">moonray::pbr::printInfo</a></div><div class="ttdeci">void printInfo(const char *format,...)</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00077">TestUtil.h:77</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_settings_html_a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">moonray::pbr::TestBsdfSettings::BSDFV</a></div><div class="ttdeci">@ BSDFV</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00035">TestBsdfCommon.h:35</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa3a6d832cfa1275ae808a012d136d896" name="aa3a6d832cfa1275ae808a012d136d896"></a>
@@ -669,7 +725,20 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00308">308</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  309</span>{</div>
+<div class="line"><span class="lineno">  310</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  311</span> </div>
+<div class="line"><span class="lineno">  312</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testAshikminhShirley() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  313</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  314</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f ====================&quot;</span>, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  315</span> </div>
+<div class="line"><span class="lineno">  316</span>        AshikminhShirleyBsdfFactory factory(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  317</span>        TestBsdfSettings test(factory, frame, <span class="keyword">true</span>, 0.008, 0.03,</div>
+<div class="line"><span class="lineno">  318</span>                (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f), (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f), <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  319</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]));</div>
+<div class="line"><span class="lineno">  320</span>    }</div>
+<div class="line"><span class="lineno">  321</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aaa82ef82285bb2b8e065bf847c2dd124" name="aaa82ef82285bb2b8e065bf847c2dd124"></a>
@@ -688,7 +757,24 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00325">325</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  326</span>{</div>
+<div class="line"><span class="lineno">  327</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  328</span> </div>
+<div class="line"><span class="lineno">  329</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testAshikminhShirleyFull() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  330</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  331</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f ====================&quot;</span>, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  332</span> </div>
+<div class="line"><span class="lineno">  333</span>        <span class="keywordtype">int</span> sampleCount = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]) +</div>
+<div class="line"><span class="lineno">  334</span>                          <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a> - 1]);</div>
+<div class="line"><span class="lineno">  335</span> </div>
+<div class="line"><span class="lineno">  336</span>        AshikminhShirleyFullBsdfFactory factory(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  337</span>        TestBsdfSettings test(factory, frame, <span class="keyword">true</span>, 0.008, 0.02,</div>
+<div class="line"><span class="lineno">  338</span>                (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f),</div>
+<div class="line"><span class="lineno">  339</span>                (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f), <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  340</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, sampleCount);</div>
+<div class="line"><span class="lineno">  341</span>    }</div>
+<div class="line"><span class="lineno">  342</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a87bfabce0fc68f4e833d04aa253b00a9" name="a87bfabce0fc68f4e833d04aa253b00a9"></a>
@@ -707,7 +793,22 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00115">115</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  116</span>{</div>
+<div class="line"><span class="lineno">  117</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  118</span> </div>
+<div class="line"><span class="lineno">  119</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testCookTorrance() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  121</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f ====================&quot;</span>, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  122</span> </div>
+<div class="line"><span class="lineno">  123</span>        <a class="code hl_class" href="class_cook_torrance_bsdf_factory.html">CookTorranceBsdfFactory</a> factory(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  124</span>        TestBsdfSettings test(factory, frame, <span class="keyword">true</span>, 0.002, 0.03,</div>
+<div class="line"><span class="lineno">  125</span>                (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &lt; 0.7f),</div>
+<div class="line"><span class="lineno">  126</span>                (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f), <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  127</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]));</div>
+<div class="line"><span class="lineno">  128</span>    }</div>
+<div class="line"><span class="lineno">  129</span>}</div>
+<div class="ttc" id="aclass_cook_torrance_bsdf_factory_html"><div class="ttname"><a href="class_cook_torrance_bsdf_factory.html">CookTorranceBsdfFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html#l00045">main.cc:45</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3ab9fad3c81051263d4fca6883fdfc14" name="a3ab9fad3c81051263d4fca6883fdfc14"></a>
@@ -726,7 +827,23 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00266">266</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  267</span>{</div>
+<div class="line"><span class="lineno">  268</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  269</span> </div>
+<div class="line"><span class="lineno">  270</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testDwaFabric() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  271</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  272</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f ====================&quot;</span>, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  273</span>        DwaFabricBsdfFactory factory(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  274</span>        <span class="comment">// The integrals are evaluated using uniform sampling which makes it an</span></div>
+<div class="line"><span class="lineno">  275</span>        <span class="comment">// error-prone calculation. Ideally, we&#39;d have higher tolerance for sharper lobes.</span></div>
+<div class="line"><span class="lineno">  276</span>        <span class="comment">// Right now we set it up to &#39;fail&#39; only for higher roughness values.</span></div>
+<div class="line"><span class="lineno">  277</span>        TestBsdfSettings test(factory, frame, <span class="keyword">true</span>, 0.002, 0.03,</div>
+<div class="line"><span class="lineno">  278</span>                              (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &lt; 0.7f),</div>
+<div class="line"><span class="lineno">  279</span>                              (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f), <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  280</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]));</div>
+<div class="line"><span class="lineno">  281</span>    }</div>
+<div class="line"><span class="lineno">  282</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7d60a5666c7e1f06e0681c6588512ef3" name="a7d60a5666c7e1f06e0681c6588512ef3"></a>
@@ -745,7 +862,24 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00244">244</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  245</span>{</div>
+<div class="line"><span class="lineno">  246</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  247</span> </div>
+<div class="line"><span class="lineno">  248</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testEyeCaustic() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  249</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  250</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f ====================&quot;</span>, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  251</span> </div>
+<div class="line"><span class="lineno">  252</span>        EyeCausticBsdfFactory factory(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  253</span>        <span class="comment">// The integrals are evaluated using uniform sampling which makes it an</span></div>
+<div class="line"><span class="lineno">  254</span>        <span class="comment">// error-prone calculation. Ideally, we&#39;d have higher tolerance for sharper lobes.</span></div>
+<div class="line"><span class="lineno">  255</span>        <span class="comment">// Right now we set it up to &#39;fail&#39; only for higher roughness values.</span></div>
+<div class="line"><span class="lineno">  256</span>        TestBsdfSettings test(factory, frame, <span class="keyword">false</span>, 0.002, 0.04,</div>
+<div class="line"><span class="lineno">  257</span>                              (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &lt; 0.7f),</div>
+<div class="line"><span class="lineno">  258</span>                              (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f), <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  259</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]));</div>
+<div class="line"><span class="lineno">  260</span>    }</div>
+<div class="line"><span class="lineno">  261</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac2ef842d972e2494b35e111c46d19a9d" name="ac2ef842d972e2494b35e111c46d19a9d"></a>
@@ -764,7 +898,21 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00133">133</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  134</span>{</div>
+<div class="line"><span class="lineno">  135</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  136</span> </div>
+<div class="line"><span class="lineno">  137</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testGGXCookTorrance() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  138</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  139</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f ====================&quot;</span>, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  140</span> </div>
+<div class="line"><span class="lineno">  141</span>        GGXCookTorranceBsdfFactory factory(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  142</span>        TestBsdfSettings test(factory, frame, <span class="keyword">true</span>, 0.002, 0.03,</div>
+<div class="line"><span class="lineno">  143</span>                (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &lt; 0.4f),</div>
+<div class="line"><span class="lineno">  144</span>                (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &lt; 0.4f), <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  145</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]));</div>
+<div class="line"><span class="lineno">  146</span>    }</div>
+<div class="line"><span class="lineno">  147</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aeea795e459fc7081cd41cb56b6093d94" name="aeea795e459fc7081cd41cb56b6093d94"></a>
@@ -783,7 +931,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00384">384</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  385</span>{</div>
+<div class="line"><span class="lineno">  386</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  387</span> </div>
+<div class="line"><span class="lineno">  388</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testHairDiffuse() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  389</span>    HairDiffuseBsdfFactory factory;</div>
+<div class="line"><span class="lineno">  390</span>    TestBsdfSettings test(factory, frame, <span class="keyword">true</span>, 0.002, 0.01, <span class="keyword">true</span>, <span class="keyword">true</span>, <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  391</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a> - 1]));</div>
+<div class="line"><span class="lineno">  392</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac892c4d778042adc3faf15c78e1d74d3" name="ac892c4d778042adc3faf15c78e1d74d3"></a>
@@ -802,7 +958,31 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00396">396</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  397</span>{</div>
+<div class="line"><span class="lineno">  398</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  399</span> </div>
+<div class="line"><span class="lineno">  400</span>    <span class="comment">// running into some numerical issues where</span></div>
+<div class="line"><span class="lineno">  401</span>    <span class="comment">// consistency tests fail intermittently so increasing the</span></div>
+<div class="line"><span class="lineno">  402</span>    <span class="comment">// threshold to 0.08</span></div>
+<div class="line"><span class="lineno">  403</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> toleranceConsistency = 0.08f;</div>
+<div class="line"><span class="lineno">  404</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> toleranceIntegrals   = 0.08f;</div>
+<div class="line"><span class="lineno">  405</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testHairR() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  406</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  407</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f ====================&quot;</span>, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  408</span> </div>
+<div class="line"><span class="lineno">  409</span>        HairRBsdfFactory factory(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i], 0.0f);</div>
+<div class="line"><span class="lineno">  410</span>        TestBsdfSettings test(factory,</div>
+<div class="line"><span class="lineno">  411</span>                              frame,</div>
+<div class="line"><span class="lineno">  412</span>                              <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">  413</span>                              toleranceConsistency,</div>
+<div class="line"><span class="lineno">  414</span>                              toleranceIntegrals,</div>
+<div class="line"><span class="lineno">  415</span>                              (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f),</div>
+<div class="line"><span class="lineno">  416</span>                              <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">  417</span>                              <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  418</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]));</div>
+<div class="line"><span class="lineno">  419</span>    }</div>
+<div class="line"><span class="lineno">  420</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae387d034e3b6ab9c86060d8a9a8f5983" name="ae387d034e3b6ab9c86060d8a9a8f5983"></a>
@@ -821,7 +1001,36 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00424">424</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  425</span>{</div>
+<div class="line"><span class="lineno">  426</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  427</span> </div>
+<div class="line"><span class="lineno">  428</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> aziRoughness = 0.5f;</div>
+<div class="line"><span class="lineno">  429</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> offset = 0.0f;</div>
+<div class="line"><span class="lineno">  430</span>    <span class="comment">// running into some numerical issues where</span></div>
+<div class="line"><span class="lineno">  431</span>    <span class="comment">// consistency tests fail intermittently so increasing the</span></div>
+<div class="line"><span class="lineno">  432</span>    <span class="comment">// threshold to 0.08</span></div>
+<div class="line"><span class="lineno">  433</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> toleranceConsistency = 0.08f;</div>
+<div class="line"><span class="lineno">  434</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> toleranceIntegrals   = 0.08f;</div>
+<div class="line"><span class="lineno">  435</span> </div>
+<div class="line"><span class="lineno">  436</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testHairTT() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  437</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  438</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f ====================&quot;</span>, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  439</span> </div>
+<div class="line"><span class="lineno">  440</span>        HairTTBsdfFactory factory(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i],</div>
+<div class="line"><span class="lineno">  441</span>                                  aziRoughness,</div>
+<div class="line"><span class="lineno">  442</span>                                  offset);</div>
+<div class="line"><span class="lineno">  443</span>        TestBsdfSettings test(factory,</div>
+<div class="line"><span class="lineno">  444</span>                              frame,</div>
+<div class="line"><span class="lineno">  445</span>                              <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">  446</span>                              toleranceConsistency,</div>
+<div class="line"><span class="lineno">  447</span>                              toleranceIntegrals,</div>
+<div class="line"><span class="lineno">  448</span>                              (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f),</div>
+<div class="line"><span class="lineno">  449</span>                              <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">  450</span>                              <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  451</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]));</div>
+<div class="line"><span class="lineno">  452</span>    }</div>
+<div class="line"><span class="lineno">  453</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aff1c5565db8d554fff72c48ffec69536" name="aff1c5565db8d554fff72c48ffec69536"></a>
@@ -840,7 +1049,32 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00192">192</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  193</span>{</div>
+<div class="line"><span class="lineno">  194</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  195</span> </div>
+<div class="line"><span class="lineno">  196</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a> = 2;</div>
+<div class="line"><span class="lineno">  197</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> positions[<a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a>] = {0.f, 1.f};</div>
+<div class="line"><span class="lineno">  198</span>    <span class="keyword">const</span> ispc::RampInterpolatorMode interpolators[<a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a>] = {</div>
+<div class="line"><span class="lineno">  199</span>        ispc::RAMP_INTERPOLATOR_MODE_SMOOTH, </div>
+<div class="line"><span class="lineno">  200</span>        ispc::RAMP_INTERPOLATOR_MODE_SMOOTH };</div>
+<div class="line"><span class="lineno">  201</span>    <span class="keyword">const</span> scene_rdl2::math::Color colors[<a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a>] = {scene_rdl2::math::Color(1.f, 0.f, 0.f), scene_rdl2::math::Color(1.f, 0.f, 1.f)};</div>
+<div class="line"><span class="lineno">  202</span> </div>
+<div class="line"><span class="lineno">  203</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testIridescence() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  204</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  205</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f ====================&quot;</span>, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  206</span> </div>
+<div class="line"><span class="lineno">  207</span>        IridescenceBsdfFactory factory(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i], 1.0f, ispc::SHADING_IRIDESCENCE_COLOR_USE_HUE_INTERPOLATION,</div>
+<div class="line"><span class="lineno">  208</span>                scene_rdl2::math::Color(1.f, 0.f, 0.f), scene_rdl2::math::Color(1.f, 0.f, 1.f), <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">  209</span>                ispc::COLOR_RAMP_CONTROL_SPACE_RGB, size, positions, interpolators, colors,</div>
+<div class="line"><span class="lineno">  210</span>                2.f, 1.f, 1.f, 1.f);</div>
+<div class="line"><span class="lineno">  211</span>        TestBsdfSettings test(factory, frame, <span class="keyword">true</span>, 0.002, 0.06,</div>
+<div class="line"><span class="lineno">  212</span>                (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &lt; 0.5),</div>
+<div class="line"><span class="lineno">  213</span>                (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1), <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  214</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]));</div>
+<div class="line"><span class="lineno">  215</span>    }</div>
+<div class="line"><span class="lineno">  216</span>}</div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_resume_history_meta_data_8cc_03_html_a9a38a2aa0f811fa9e3761cd0049c46b8"><div class="ttname"><a href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">anonymous_namespace{ResumeHistoryMetaData.cc}::size</a></div><div class="ttdeci">MAYBE_UNUSED std::size_t size(const std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="_resume_history_meta_data_8cc_source.html#l00047">ResumeHistoryMetaData.cc:47</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae13d51e4ff7906a055b8ef82504ffc7f" name="ae13d51e4ff7906a055b8ef82504ffc7f"></a>
@@ -859,7 +1093,23 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00287">287</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  288</span>{</div>
+<div class="line"><span class="lineno">  289</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  290</span> </div>
+<div class="line"><span class="lineno">  291</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testKajiyaKayFabric() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  292</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  293</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f ====================&quot;</span>, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  294</span>        KajiyaKayFabricBsdfFactory factory(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  295</span>        <span class="comment">// The integrals are evaluated using uniform sampling which makes it an</span></div>
+<div class="line"><span class="lineno">  296</span>        <span class="comment">// error-prone calculation. Ideally, we&#39;d have higher tolerance for sharper lobes.</span></div>
+<div class="line"><span class="lineno">  297</span>        <span class="comment">// Right now we set it up to &#39;fail&#39; only for higher roughness values.</span></div>
+<div class="line"><span class="lineno">  298</span>        TestBsdfSettings test(factory, frame, <span class="keyword">true</span>, 0.002, 0.03,</div>
+<div class="line"><span class="lineno">  299</span>                              (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &lt; 0.7f),</div>
+<div class="line"><span class="lineno">  300</span>                              (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f), <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  301</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]));</div>
+<div class="line"><span class="lineno">  302</span>    }</div>
+<div class="line"><span class="lineno">  303</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a24dbc1ace02dca664cf1854313d5d4f8" name="a24dbc1ace02dca664cf1854313d5d4f8"></a>
@@ -878,7 +1128,16 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00100">100</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  101</span>{</div>
+<div class="line"><span class="lineno">  102</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  103</span> </div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testLambert() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  105</span>    LambertBsdfFactory factory;</div>
+<div class="line"><span class="lineno">  106</span>    TestBsdfSettings test(factory, frame, <span class="keyword">true</span>, 0.002, 0.01, <span class="keyword">true</span>, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">  107</span>            <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  108</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a> - 1]));</div>
+<div class="line"><span class="lineno">  109</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a859bd1d86a243cc21bfd71e1dd6cd1da" name="a859bd1d86a243cc21bfd71e1dd6cd1da"></a>
@@ -897,7 +1156,24 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00222">222</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  223</span>{</div>
+<div class="line"><span class="lineno">  224</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  225</span> </div>
+<div class="line"><span class="lineno">  226</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testRetroreflection() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  227</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  228</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f ====================&quot;</span>, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  229</span> </div>
+<div class="line"><span class="lineno">  230</span>        RetroreflectionBsdfFactory factory(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  231</span>        <span class="comment">// The integrals are evaluated using uniform sampling which makes it an</span></div>
+<div class="line"><span class="lineno">  232</span>        <span class="comment">// error-prone calculation. Ideally, we&#39;d have higher tolerance for sharper lobes.</span></div>
+<div class="line"><span class="lineno">  233</span>        <span class="comment">// Right now we set it up to &#39;fail&#39; only for higher roughness values.</span></div>
+<div class="line"><span class="lineno">  234</span>        TestBsdfSettings test(factory, frame, <span class="keyword">true</span>, 0.002, 0.08,</div>
+<div class="line"><span class="lineno">  235</span>                              (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &lt; 0.7f),</div>
+<div class="line"><span class="lineno">  236</span>                              (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f), <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  237</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]));</div>
+<div class="line"><span class="lineno">  238</span>    }</div>
+<div class="line"><span class="lineno">  239</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a40819987239f33d2fc513d7ebd593e02" name="a40819987239f33d2fc513d7ebd593e02"></a>
@@ -916,7 +1192,39 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00504">504</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  505</span>{</div>
+<div class="line"><span class="lineno">  506</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  507</span> </div>
+<div class="line"><span class="lineno">  508</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> flakesDataSize = 100;</div>
+<div class="line"><span class="lineno">  509</span> </div>
+<div class="line"><span class="lineno">  510</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testStochasticFlakes() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  511</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  512</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f ====================&quot;</span>, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  513</span> </div>
+<div class="line"><span class="lineno">  514</span>        <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a8a2e787dd5884c256c806b16978d13b0">Vec3Array</a> normals;</div>
+<div class="line"><span class="lineno">  515</span>        <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a0896683474c27651e8b5f7c15d1fe0ee">ColorArray</a> colors;</div>
+<div class="line"><span class="lineno">  516</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a08f31a9abe35eb8fcbf06c343c4d759d">generateGGXNormals</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] * <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i], flakesDataSize, normals);</div>
+<div class="line"><span class="lineno">  517</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5733874ca95fe29239aaf6100f023a89">generateWeightedFlakeColors</a>(flakesDataSize, colors);</div>
+<div class="line"><span class="lineno">  518</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; flakesDataSize; ++j) {</div>
+<div class="line"><span class="lineno">  519</span>            normals[j] = frame.localToGlobal(normals[j]);</div>
+<div class="line"><span class="lineno">  520</span>        }</div>
+<div class="line"><span class="lineno">  521</span> </div>
+<div class="line"><span class="lineno">  522</span>        StochasticFlakesBsdfFactory factory(&amp;normals[0], &amp;colors[0], flakesDataSize, 0.1f, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  523</span>        TestBsdfSettings test(factory, frame, <span class="keyword">true</span>, 0.008, 0.03,</div>
+<div class="line"><span class="lineno">  524</span>                              (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &lt; 0.4f),</div>
+<div class="line"><span class="lineno">  525</span>                              (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &lt; 0.4f),</div>
+<div class="line"><span class="lineno">  526</span>                              <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  527</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]));</div>
+<div class="line"><span class="lineno">  528</span> </div>
+<div class="line"><span class="lineno">  529</span>        normals.clear();</div>
+<div class="line"><span class="lineno">  530</span>        colors.clear();</div>
+<div class="line"><span class="lineno">  531</span>    }</div>
+<div class="line"><span class="lineno">  532</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a0896683474c27651e8b5f7c15d1fe0ee"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a0896683474c27651e8b5f7c15d1fe0ee">moonray::pbr::ColorArray</a></div><div class="ttdeci">std::vector&lt; scene_rdl2::math::Color, scene_rdl2::alloc::AlignedAllocator&lt; scene_rdl2::math::Color, SIMD_MEMORY_ALIGNMENT &gt; &gt; ColorArray</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00071">TestUtil.h:71</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a08f31a9abe35eb8fcbf06c343c4d759d"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a08f31a9abe35eb8fcbf06c343c4d759d">moonray::pbr::generateGGXNormals</a></div><div class="ttdeci">finline void generateGGXNormals(float aRandomness, uint32_t size, Vec3Array &amp;normals)</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00621">TestUtil.h:621</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a5733874ca95fe29239aaf6100f023a89"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a5733874ca95fe29239aaf6100f023a89">moonray::pbr::generateWeightedFlakeColors</a></div><div class="ttdeci">finline void generateWeightedFlakeColors(uint32_t size, ColorArray &amp;colors)</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00651">TestUtil.h:651</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a8a2e787dd5884c256c806b16978d13b0"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a8a2e787dd5884c256c806b16978d13b0">moonray::pbr::Vec3Array</a></div><div class="ttdeci">std::vector&lt; scene_rdl2::math::Vec3f, scene_rdl2::alloc::AlignedAllocator&lt; scene_rdl2::math::Vec3f, SIMD_MEMORY_ALIGNMENT &gt; &gt; Vec3Array</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00069">TestUtil.h:69</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a56b1cb70a05a7b617e078f965ceed2a3" name="a56b1cb70a05a7b617e078f965ceed2a3"></a>
@@ -935,7 +1243,28 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00479">479</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  480</span>{</div>
+<div class="line"><span class="lineno">  481</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  482</span> </div>
+<div class="line"><span class="lineno">  483</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testThreeLobes() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  484</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  485</span>        <span class="keywordtype">int</span> j = (i + 4) % <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>;</div>
+<div class="line"><span class="lineno">  486</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f and %f ====================&quot;</span>,</div>
+<div class="line"><span class="lineno">  487</span>                <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i], <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[j]);</div>
+<div class="line"><span class="lineno">  488</span> </div>
+<div class="line"><span class="lineno">  489</span>        <span class="keywordtype">int</span> sampleCount = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]) +</div>
+<div class="line"><span class="lineno">  490</span>                          <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[j]) +</div>
+<div class="line"><span class="lineno">  491</span>                          <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a> - 1]);</div>
+<div class="line"><span class="lineno">  492</span> </div>
+<div class="line"><span class="lineno">  493</span>        ThreeLobeBsdfFactory factory(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i], <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[j]);</div>
+<div class="line"><span class="lineno">  494</span>        TestBsdfSettings test(factory, frame, <span class="keyword">true</span>, 0.002, 0.02,</div>
+<div class="line"><span class="lineno">  495</span>                (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[j] &gt; 0.1f  &amp;&amp;</div>
+<div class="line"><span class="lineno">  496</span>                 <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &lt; 0.7f  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[j] &lt; 0.7f),</div>
+<div class="line"><span class="lineno">  497</span>                <span class="keyword">true</span>, <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  498</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, sampleCount);</div>
+<div class="line"><span class="lineno">  499</span>    }</div>
+<div class="line"><span class="lineno">  500</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9e7609489f57a3102d64e1c739535d71" name="a9e7609489f57a3102d64e1c739535d71"></a>
@@ -954,7 +1283,21 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00175">175</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  176</span>{</div>
+<div class="line"><span class="lineno">  177</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  178</span> </div>
+<div class="line"><span class="lineno">  179</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testTransmissionCookTorrance() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  180</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  181</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f ====================&quot;</span>, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  182</span> </div>
+<div class="line"><span class="lineno">  183</span>        TransmissionCookTorranceBsdfFactory factory(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  184</span>        TestBsdfSettings test(factory, frame, <span class="keyword">false</span>, 0.002, 0.05,</div>
+<div class="line"><span class="lineno">  185</span>                (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.2f  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &lt; 0.7f),</div>
+<div class="line"><span class="lineno">  186</span>                (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.2f), <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  187</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, 4 * <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]));</div>
+<div class="line"><span class="lineno">  188</span>    }</div>
+<div class="line"><span class="lineno">  189</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3852e78880f82fdf79de37ae6ce6f387" name="a3852e78880f82fdf79de37ae6ce6f387"></a>
@@ -973,7 +1316,24 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00458">458</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  459</span>{</div>
+<div class="line"><span class="lineno">  460</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  461</span> </div>
+<div class="line"><span class="lineno">  462</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testTwoLobes() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  463</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  464</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f ====================&quot;</span>, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  465</span> </div>
+<div class="line"><span class="lineno">  466</span>        <span class="keywordtype">int</span> sampleCount = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]) +</div>
+<div class="line"><span class="lineno">  467</span>                          <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a> - 1]);</div>
+<div class="line"><span class="lineno">  468</span> </div>
+<div class="line"><span class="lineno">  469</span>        TwoLobeBsdfFactory factory(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  470</span>        TestBsdfSettings test(factory, frame, <span class="keyword">true</span>, 0.002, 0.02,</div>
+<div class="line"><span class="lineno">  471</span>                (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &lt; 0.7f),</div>
+<div class="line"><span class="lineno">  472</span>                (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f), <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  473</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, sampleCount);</div>
+<div class="line"><span class="lineno">  474</span>    }</div>
+<div class="line"><span class="lineno">  475</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae04df5e76ed5c75eba589a710d8c70a5" name="ae04df5e76ed5c75eba589a710d8c70a5"></a>
@@ -992,7 +1352,21 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00346">346</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  347</span>{</div>
+<div class="line"><span class="lineno">  348</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  349</span> </div>
+<div class="line"><span class="lineno">  350</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testWardCorrected() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  351</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  352</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f ====================&quot;</span>, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  353</span> </div>
+<div class="line"><span class="lineno">  354</span>        WardCorrectedBsdfFactory factory(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  355</span>        TestBsdfSettings test(factory, frame, <span class="keyword">true</span>, 0.008, 0.03,</div>
+<div class="line"><span class="lineno">  356</span>                (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f  &amp;&amp;  <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &lt; 0.7f),</div>
+<div class="line"><span class="lineno">  357</span>                (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f), <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  358</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]));</div>
+<div class="line"><span class="lineno">  359</span>    }</div>
+<div class="line"><span class="lineno">  360</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac38ad43bb120d8dcb9642e1e7328b214" name="ac38ad43bb120d8dcb9642e1e7328b214"></a>
@@ -1011,7 +1385,21 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_8cc_source.html#l00364">364</a> of file <a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  365</span>{</div>
+<div class="line"><span class="lineno">  366</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  367</span> </div>
+<div class="line"><span class="lineno">  368</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;##### TestBsdfv::testWardDuer() ####################&quot;</span>);</div>
+<div class="line"><span class="lineno">  369</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  370</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;===== Roughness: %f ====================&quot;</span>, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  371</span> </div>
+<div class="line"><span class="lineno">  372</span>        WardDuerBsdfFactory factory(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  373</span>        TestBsdfSettings test(factory, frame, <span class="keyword">true</span>, 0.002, 0.03,</div>
+<div class="line"><span class="lineno">  374</span>                <span class="comment">// TODO: Why does the pdf integrate to values &gt; 1 ?!?!</span></div>
+<div class="line"><span class="lineno">  375</span>                <span class="keyword">false</span>, (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] &gt; 0.1f), <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>);</div>
+<div class="line"><span class="lineno">  376</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">runTest</a>(test, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a80723c67d00a29582d0259209f60c7da">getSampleCount</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]));</div>
+<div class="line"><span class="lineno">  377</span>    }</div>
+<div class="line"><span class="lineno">  378</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -1019,9 +1407,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/unittest/<a class="el" href="_test_bsdfv_8cc_source.html">TestBsdfv.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_test_bsdfv.html">TestBsdfv</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

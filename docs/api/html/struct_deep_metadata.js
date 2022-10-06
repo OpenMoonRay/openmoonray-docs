@@ -1,0 +1,25 @@
+var struct_deep_metadata =
+[
+    [ "DeepMetadata", "struct_deep_metadata.html#a58c806a9c1aceb62b7a2719a758e0973", null ],
+    [ "DeepMetadata", "struct_deep_metadata.html#a7a01c0ead5f2fcdf4c6024c2263da16e", null ],
+    [ "clearSpCoverageCount", "struct_deep_metadata.html#ad314d17eff1a298cba2119b3415cbaa1", null ],
+    [ "getSpCoverageCount", "struct_deep_metadata.html#ac27d97fec7df6d8cca11078011079b5b", null ],
+    [ "getSpCoverageWeight", "struct_deep_metadata.html#a0cd20f00760afdf3c078b88270c47b86", null ],
+    [ "hasFullSpCoverage", "struct_deep_metadata.html#a227c0c6788ccc49a847d9b895f1d900f", null ],
+    [ "hasPartialSpCoverage", "struct_deep_metadata.html#aed8b3043b58008cc95b970d84248f430", null ],
+    [ "isAdditive", "struct_deep_metadata.html#ab7a5d3fd69eb1810773fd1deee71fe39", null ],
+    [ "isHardSurface", "struct_deep_metadata.html#a62b301a97e141123a7a3e346003753ad", null ],
+    [ "isMatte", "struct_deep_metadata.html#a1a172cd67ee510b6bca1de6ed771a4c1", null ],
+    [ "isThick", "struct_deep_metadata.html#a96f58203b7220d9acf9a802b99f9dfec", null ],
+    [ "isThin", "struct_deep_metadata.html#a0a03e43117ddf87566b524dfdf13a803", null ],
+    [ "isVolumetric", "struct_deep_metadata.html#a6c1f816ee721adf3a19162bf9baf413c", null ],
+    [ "partialCoverageBits", "struct_deep_metadata.html#a07fd5c02c5bb5b650d096d6c5cf89ba2", null ],
+    [ "printFlags", "struct_deep_metadata.html#a6eff7e7ebe48cd43167cd0a8ca8406f1", null ],
+    [ "setSpCoverageCount", "struct_deep_metadata.html#a8298faa2453e0289bc854a46f9e5c813", null ],
+    [ "setSpCoverageWeight", "struct_deep_metadata.html#ad05c8dbedddf4bf73dbf3e61a39ab400", null ],
+    [ "surfaceFlags", "struct_deep_metadata.html#a0bac6529c7284b228e6f720b0fb1d22b", null ],
+    [ "thickness", "struct_deep_metadata.html#a0496711ecdb30b4364a2b642e18e2af1", null ],
+    [ "operator<<", "struct_deep_metadata.html#ae673f7573a17d6709da914beb7b33828", null ],
+    [ "flags", "struct_deep_metadata.html#a71748026ce682d1e52099d6de5545494", null ],
+    [ "spmask", "struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da", null ]
+];

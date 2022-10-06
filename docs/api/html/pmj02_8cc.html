@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_55b3e8b76a6a129d85f7ec9f20e593af.html">cmd</a></li><li class="navelem"><a class="el" href="dir_0ffd86f0315ad7cec995cb22c196ce91.html">point_generation_cmd</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('pmj02_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -163,7 +179,85 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="pmj02_8cc_source.html#l00259">259</a> of file <a class="el" href="pmj02_8cc_source.html">pmj02.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  260</span>{</div>
+<div class="line"><span class="lineno">  261</span>    std::vector&lt;Sample&gt; samples;</div>
+<div class="line"><span class="lineno">  262</span>    samples.reserve(numSamples);</div>
+<div class="line"><span class="lineno">  263</span> </div>
+<div class="line"><span class="lineno">  264</span>    <a class="code hl_class" href="class_static_hyper_grid.html">Grid</a> grid;</div>
+<div class="line"><span class="lineno">  265</span> </div>
+<div class="line"><span class="lineno">  266</span>    <a class="code hl_class" href="class_progress_bar.html">ProgressBar</a> progress(numSamples);</div>
+<div class="line"><span class="lineno">  267</span> </div>
+<div class="line"><span class="lineno">  268</span>    <span class="comment">// Keep memory allocated here so we don&#39;t keep reallocating memory.</span></div>
+<div class="line"><span class="lineno">  269</span>    std::vector&lt;uint64_t&gt; xoffsets, yoffsets;</div>
+<div class="line"><span class="lineno">  270</span> </div>
+<div class="line"><span class="lineno">  271</span>    <span class="comment">// Generate initial sampling point:</span></div>
+<div class="line"><span class="lineno">  272</span>    <a class="code hl_class" href="class_strata.html">Strata</a> strata;</div>
+<div class="line"><span class="lineno">  273</span>    samples.emplace_back(strata.<a class="code hl_function" href="class_strata.html#a04f921be2301e2ac12cda38dfbb5c0e9">genSample</a>(grid, numCandidates, 0, 0, rng, xoffsets, yoffsets));</div>
+<div class="line"><span class="lineno">  274</span> </div>
+<div class="line"><span class="lineno">  275</span>    std::bernoulli_distribution coinflip(0.5);</div>
+<div class="line"><span class="lineno">  276</span> </div>
+<div class="line"><span class="lineno">  277</span>    <span class="keywordflow">for</span> (uint64_t n = 1; n &lt; numSamples; n *= 4) {</div>
+<div class="line"><span class="lineno">  278</span>        strata.<a class="code hl_function" href="class_strata.html#ab25e3c6f7ea7142488141ed7af6608e5">subdivideStrata</a>(samples);</div>
+<div class="line"><span class="lineno">  279</span> </div>
+<div class="line"><span class="lineno">  280</span>        std::uniform_int_distribution&lt;uint64_t&gt; shuffleDist(0, n - 1);</div>
+<div class="line"><span class="lineno">  281</span> </div>
+<div class="line"><span class="lineno">  282</span>        <span class="comment">// Now we go through and calculate the diagonal values at our specific grid level:</span></div>
+<div class="line"><span class="lineno">  283</span>        uint64_t oldShuffle = shuffleDist(rng);</div>
+<div class="line"><span class="lineno">  284</span>        <span class="keywordflow">for</span> (uint64_t i = 0; (i &lt; n) &amp;&amp; (n + i &lt; numSamples); ++i) {</div>
+<div class="line"><span class="lineno">  285</span>            <span class="keyword">const</span> <a class="code hl_struct" href="struct_sample.html">Sample</a>&amp; s = samples[i ^ oldShuffle];</div>
+<div class="line"><span class="lineno">  286</span>            <span class="keyword">const</span> uint64_t x = s.<a class="code hl_variable" href="struct_sample.html#a9be4d34ae6ee4dcaf4916aeb854dcadc">x</a> * strata.<a class="code hl_function" href="class_strata.html#ae98d4f173c4f79714af8002ee71c0b2c">getDim</a>();</div>
+<div class="line"><span class="lineno">  287</span>            <span class="keyword">const</span> uint64_t y = s.<a class="code hl_variable" href="struct_sample.html#a5d632ca5366a90bf895d8d8f3c2356f0">y</a> * strata.<a class="code hl_function" href="class_strata.html#ae98d4f173c4f79714af8002ee71c0b2c">getDim</a>();</div>
+<div class="line"><span class="lineno">  288</span>            samples.emplace_back(strata.<a class="code hl_function" href="class_strata.html#a04f921be2301e2ac12cda38dfbb5c0e9">genSample</a>(grid, numCandidates, x ^ 1, y ^ 1, rng, xoffsets, yoffsets));</div>
+<div class="line"><span class="lineno">  289</span> </div>
+<div class="line"><span class="lineno">  290</span>            progress.update();</div>
+<div class="line"><span class="lineno">  291</span>            progress.draw();</div>
+<div class="line"><span class="lineno">  292</span>        }</div>
+<div class="line"><span class="lineno">  293</span> </div>
+<div class="line"><span class="lineno">  294</span>        strata.<a class="code hl_function" href="class_strata.html#ab25e3c6f7ea7142488141ed7af6608e5">subdivideStrata</a>(samples);</div>
+<div class="line"><span class="lineno">  295</span> </div>
+<div class="line"><span class="lineno">  296</span>        <span class="comment">// Now we should have stratum that are square. When picking diagonals here, we use Simon Brown&#39;s</span></div>
+<div class="line"><span class="lineno">  297</span>        <span class="comment">// rust implementation idea of randomly swapping a value.</span></div>
+<div class="line"><span class="lineno">  298</span>        oldShuffle = shuffleDist(rng);</div>
+<div class="line"><span class="lineno">  299</span>        <span class="keyword">const</span> uint64_t flip = coinflip(rng);</div>
+<div class="line"><span class="lineno">  300</span>        <span class="keywordflow">for</span> (uint64_t i = 0; (i &lt; n) &amp;&amp; (2 * n + i &lt; numSamples); ++i) {</div>
+<div class="line"><span class="lineno">  301</span>            <span class="keyword">const</span> <a class="code hl_struct" href="struct_sample.html">Sample</a>&amp; s = samples[i ^ oldShuffle];</div>
+<div class="line"><span class="lineno">  302</span>            <span class="keyword">const</span> uint64_t x = s.<a class="code hl_variable" href="struct_sample.html#a9be4d34ae6ee4dcaf4916aeb854dcadc">x</a> * strata.<a class="code hl_function" href="class_strata.html#ae98d4f173c4f79714af8002ee71c0b2c">getDim</a>();</div>
+<div class="line"><span class="lineno">  303</span>            <span class="keyword">const</span> uint64_t y = s.<a class="code hl_variable" href="struct_sample.html#a5d632ca5366a90bf895d8d8f3c2356f0">y</a> * strata.<a class="code hl_function" href="class_strata.html#ae98d4f173c4f79714af8002ee71c0b2c">getDim</a>();</div>
+<div class="line"><span class="lineno">  304</span>            samples.emplace_back(strata.<a class="code hl_function" href="class_strata.html#a04f921be2301e2ac12cda38dfbb5c0e9">genSample</a>(grid, numCandidates, x ^ flip, y ^ flip ^ 1, rng, xoffsets, yoffsets));</div>
+<div class="line"><span class="lineno">  305</span> </div>
+<div class="line"><span class="lineno">  306</span>            progress.update();</div>
+<div class="line"><span class="lineno">  307</span>            progress.draw();</div>
+<div class="line"><span class="lineno">  308</span>        }</div>
+<div class="line"><span class="lineno">  309</span> </div>
+<div class="line"><span class="lineno">  310</span>        <span class="comment">// Now we find the diagonal of the quads we placed above. To do this, we need to pick a diagonal for</span></div>
+<div class="line"><span class="lineno">  311</span>        <span class="comment">// the numbers we just appended. Those happen to be at the 2n position, so we can do [(n &lt;&lt; 1) | (i)] to</span></div>
+<div class="line"><span class="lineno">  312</span>        <span class="comment">// index these values (it might make more sense to just perform an addition here...)</span></div>
+<div class="line"><span class="lineno">  313</span>        oldShuffle = shuffleDist(rng);</div>
+<div class="line"><span class="lineno">  314</span>        <span class="keywordflow">for</span> (uint64_t i = 0; (i &lt; n) &amp;&amp; (3 * n + i &lt; numSamples); ++i) {</div>
+<div class="line"><span class="lineno">  315</span>            <span class="keyword">const</span> <a class="code hl_struct" href="struct_sample.html">Sample</a>&amp; s = samples[(n &lt;&lt; 1) | (i ^ oldShuffle)];</div>
+<div class="line"><span class="lineno">  316</span>            <span class="keyword">const</span> uint64_t x = s.<a class="code hl_variable" href="struct_sample.html#a9be4d34ae6ee4dcaf4916aeb854dcadc">x</a> * strata.<a class="code hl_function" href="class_strata.html#ae98d4f173c4f79714af8002ee71c0b2c">getDim</a>();</div>
+<div class="line"><span class="lineno">  317</span>            <span class="keyword">const</span> uint64_t y = s.<a class="code hl_variable" href="struct_sample.html#a5d632ca5366a90bf895d8d8f3c2356f0">y</a> * strata.<a class="code hl_function" href="class_strata.html#ae98d4f173c4f79714af8002ee71c0b2c">getDim</a>();</div>
+<div class="line"><span class="lineno">  318</span>            samples.emplace_back(strata.<a class="code hl_function" href="class_strata.html#a04f921be2301e2ac12cda38dfbb5c0e9">genSample</a>(grid, numCandidates, x ^ 1, y ^ 1, rng, xoffsets, yoffsets));</div>
+<div class="line"><span class="lineno">  319</span> </div>
+<div class="line"><span class="lineno">  320</span>            progress.update();</div>
+<div class="line"><span class="lineno">  321</span>            progress.draw();</div>
+<div class="line"><span class="lineno">  322</span>        }</div>
+<div class="line"><span class="lineno">  323</span>    }</div>
+<div class="line"><span class="lineno">  324</span> </div>
+<div class="line"><span class="lineno">  325</span>    std::cout &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  326</span> </div>
+<div class="line"><span class="lineno">  327</span>    <span class="keywordflow">return</span> samples;</div>
+<div class="line"><span class="lineno">  328</span>}</div>
+<div class="ttc" id="aclass_progress_bar_html"><div class="ttname"><a href="class_progress_bar.html">ProgressBar</a></div><div class="ttdef"><b>Definition:</b> <a href="_progress_bar_8h_source.html#l00008">ProgressBar.h:9</a></div></div>
+<div class="ttc" id="aclass_static_hyper_grid_html"><div class="ttname"><a href="class_static_hyper_grid.html">StaticHyperGrid</a></div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00056">StaticHyperGrid.h:57</a></div></div>
+<div class="ttc" id="aclass_strata_html"><div class="ttname"><a href="class_strata.html">Strata</a></div><div class="ttdef"><b>Definition:</b> <a href="pmj02_8cc_source.html#l00107">pmj02.cc:108</a></div></div>
+<div class="ttc" id="aclass_strata_html_a04f921be2301e2ac12cda38dfbb5c0e9"><div class="ttname"><a href="class_strata.html#a04f921be2301e2ac12cda38dfbb5c0e9">Strata::genSample</a></div><div class="ttdeci">Sample genSample(Grid &amp;grid, uint64_t numCandidates, uint64_t x, uint64_t y, RNG &amp;rng, std::vector&lt; uint64_t &gt; &amp;xoffsets, std::vector&lt; uint64_t &gt; &amp;yoffsets)</div><div class="ttdef"><b>Definition:</b> <a href="pmj02_8cc_source.html#l00140">pmj02.cc:140</a></div></div>
+<div class="ttc" id="aclass_strata_html_ab25e3c6f7ea7142488141ed7af6608e5"><div class="ttname"><a href="class_strata.html#ab25e3c6f7ea7142488141ed7af6608e5">Strata::subdivideStrata</a></div><div class="ttdeci">void subdivideStrata(const std::vector&lt; Sample &gt; &amp;samples)</div><div class="ttdef"><b>Definition:</b> <a href="pmj02_8cc_source.html#l00118">pmj02.cc:118</a></div></div>
+<div class="ttc" id="aclass_strata_html_ae98d4f173c4f79714af8002ee71c0b2c"><div class="ttname"><a href="class_strata.html#ae98d4f173c4f79714af8002ee71c0b2c">Strata::getDim</a></div><div class="ttdeci">int getDim() const</div><div class="ttdef"><b>Definition:</b> <a href="pmj02_8cc_source.html#l00115">pmj02.cc:115</a></div></div>
+<div class="ttc" id="astruct_sample_html"><div class="ttname"><a href="struct_sample.html">Sample</a></div><div class="ttdef"><b>Definition:</b> <a href="pmj02_8cc_source.html#l00019">pmj02.cc:20</a></div></div>
+<div class="ttc" id="astruct_sample_html_a5d632ca5366a90bf895d8d8f3c2356f0"><div class="ttname"><a href="struct_sample.html#a5d632ca5366a90bf895d8d8f3c2356f0">Sample::y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition:</b> <a href="pmj02_8cc_source.html#l00024">pmj02.cc:24</a></div></div>
+<div class="ttc" id="astruct_sample_html_a9be4d34ae6ee4dcaf4916aeb854dcadc"><div class="ttname"><a href="struct_sample.html#a9be4d34ae6ee4dcaf4916aeb854dcadc">Sample::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition:</b> <a href="pmj02_8cc_source.html#l00024">pmj02.cc:24</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad3c09634aed16d500028f7ee00254e75" name="ad3c09634aed16d500028f7ee00254e75"></a>
@@ -182,7 +276,16 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="pmj02_8cc_source.html#l00051">51</a> of file <a class="el" href="pmj02_8cc_source.html">pmj02.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   52</span>{</div>
+<div class="line"><span class="lineno">   53</span><span class="preprocessor">#if defined(PMJ02_RANDOM_SEED)</span></div>
+<div class="line"><span class="lineno">   54</span>    std::random_device rd;</div>
+<div class="line"><span class="lineno">   55</span>    std::uniform_int_distribution&lt;uint_fast64_t&gt; dist;</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> dist(rd);</div>
+<div class="line"><span class="lineno">   57</span><span class="preprocessor">#else</span></div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">return</span> 8074967353239662646;</div>
+<div class="line"><span class="lineno">   59</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">   60</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac494427f258607356adacb9de7adef89" name="ac494427f258607356adacb9de7adef89"></a>
@@ -202,7 +305,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="pmj02_8cc_source.html#l00063">63</a> of file <a class="el" href="pmj02_8cc_source.html">pmj02.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   64</span>{</div>
+<div class="line"><span class="lineno">   65</span>    <span class="comment">// Check that it&#39;s a power of 2. This is technically not necessary</span></div>
+<div class="line"><span class="lineno">   66</span>    <span class="comment">// as this function is used in context where n is guaranteed to be a power of 2.</span></div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">if</span> (n == 0 || (n &amp; (n - 1)) != 0) { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><span class="lineno">   68</span>    <span class="comment">// Check that the number of trailing zeroes is even:</span></div>
+<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> n &amp; 0x5555555555555555ULL;</div>
+<div class="line"><span class="lineno">   70</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
@@ -232,13 +342,48 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="pmj02_8cc_source.html#l00334">334</a> of file <a class="el" href="pmj02_8cc_source.html">pmj02.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  335</span>{</div>
+<div class="line"><span class="lineno">  336</span>    <span class="keywordflow">if</span> (argc != 4) {</div>
+<div class="line"><span class="lineno">  337</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Usage: &lt;num_samples_per_grid&gt; &lt;num_candidates&gt; &lt;output_file_name&gt;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  338</span>        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">  339</span>    }</div>
+<div class="line"><span class="lineno">  340</span> </div>
+<div class="line"><span class="lineno">  341</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* fileName = argv[3];</div>
+<div class="line"><span class="lineno">  342</span> </div>
+<div class="line"><span class="lineno">  343</span>    <span class="keyword">const</span> uint64_t numSamples    = std::stoull(argv[1]) * 64 * 64; <span class="comment">// 64 by 64 grid.</span></div>
+<div class="line"><span class="lineno">  344</span>    <span class="keyword">const</span> uint64_t numCandidates = std::stoull(argv[2]);</div>
+<div class="line"><span class="lineno">  345</span> </div>
+<div class="line"><span class="lineno">  346</span>    <a class="code hl_typedef" href="pd__progressive__generation_8cc.html#acea5f43431fabbaac7123a4b77ed414d">RNG</a> rng(<a class="code hl_function" href="pmj02_8cc.html#ad3c09634aed16d500028f7ee00254e75">getSeed</a>());</div>
+<div class="line"><span class="lineno">  347</span>    <span class="keyword">const</span> <span class="keyword">auto</span> points = <a class="code hl_function" href="pmj02_8cc.html#aabb827710d87ed7abff2b9d07c0c49d3">genSamples</a>(numSamples, numCandidates, rng);</div>
+<div class="line"><span class="lineno">  348</span> </div>
+<div class="line"><span class="lineno">  349</span>    <span class="comment">// Write the points (this is like NPoint&#39;s &quot;writePoints&quot;, but support for double precision).</span></div>
+<div class="line"><span class="lineno">  350</span> </div>
+<div class="line"><span class="lineno">  351</span>    std::ofstream outputfile(fileName);</div>
+<div class="line"><span class="lineno">  352</span> </div>
+<div class="line"><span class="lineno">  353</span>    <a class="code hl_class" href="class_i_o_state_saver.html">IOStateSaver</a> stateraii(outputfile);</div>
+<div class="line"><span class="lineno">  354</span>    outputfile.exceptions(std::ios_base::failbit);</div>
+<div class="line"><span class="lineno">  355</span>    outputfile.precision(9);</div>
+<div class="line"><span class="lineno">  356</span>    outputfile.setf(std::ios_base::fixed | std::ios_base::showpoint);</div>
+<div class="line"><span class="lineno">  357</span> </div>
+<div class="line"><span class="lineno">  358</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; p : points) {</div>
+<div class="line"><span class="lineno">  359</span>        outputfile &lt;&lt; p.x &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; p.y &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  360</span>    }</div>
+<div class="line"><span class="lineno">  361</span>}</div>
+<div class="ttc" id="aclass_i_o_state_saver_html"><div class="ttname"><a href="class_i_o_state_saver.html">IOStateSaver</a></div><div class="ttdef"><b>Definition:</b> <a href="cmd_2point__generation__cmd_2util_8h_source.html#l00014">util.h:15</a></div></div>
+<div class="ttc" id="apd__progressive__generation_8cc_html_acea5f43431fabbaac7123a4b77ed414d"><div class="ttname"><a href="pd__progressive__generation_8cc.html#acea5f43431fabbaac7123a4b77ed414d">RNG</a></div><div class="ttdeci">std::mt19937 RNG</div><div class="ttdef"><b>Definition:</b> <a href="pd__progressive__generation_8cc_source.html#l00019">pd_progressive_generation.cc:19</a></div></div>
+<div class="ttc" id="apmj02_8cc_html_aabb827710d87ed7abff2b9d07c0c49d3"><div class="ttname"><a href="pmj02_8cc.html#aabb827710d87ed7abff2b9d07c0c49d3">genSamples</a></div><div class="ttdeci">std::vector&lt; Sample &gt; genSamples(uint64_t numSamples, uint64_t numCandidates, RNG &amp;rng)</div><div class="ttdef"><b>Definition:</b> <a href="pmj02_8cc_source.html#l00259">pmj02.cc:259</a></div></div>
+<div class="ttc" id="apmj02_8cc_html_ad3c09634aed16d500028f7ee00254e75"><div class="ttname"><a href="pmj02_8cc.html#ad3c09634aed16d500028f7ee00254e75">getSeed</a></div><div class="ttdeci">uint_fast64_t getSeed()</div><div class="ttdef"><b>Definition:</b> <a href="pmj02_8cc_source.html#l00051">pmj02.cc:51</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_1d5181f7ddc67e55cdef6ebe6c9b692d.html">cmd</a></li><li class="navelem"><a class="el" href="dir_9db75a9d37a8d3d7abd087d56d5231aa.html">point_generation_cmd</a></li><li class="navelem"><a class="el" href="pmj02_8cc.html">pmj02.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

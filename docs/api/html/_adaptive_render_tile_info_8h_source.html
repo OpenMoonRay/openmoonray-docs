@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_55a2e35f6359da48a03f898576e722e1.html">rndr</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_adaptive_render_tile_info_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">AdaptiveRenderTileInfo.h</div></div>
 </div><!--header-->
@@ -74,45 +90,45 @@ $(function() {
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    };</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a3b2112090b48fca8a4c93d320e31b7fb">   27</a></span>    <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a3b2112090b48fca8a4c93d320e31b7fb">AdaptiveRenderTileInfo</a>() :</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        mStage(<a class="code hl_enumeration" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133ee">Stage</a>::<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133eea16574e485dbc8e67775920e0deffb199">UNIFORM_STAGE</a>),</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        mCompletedSamples(0)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a494c2a37ca3dc483824045f2e525de6c">mStage</a>(<a class="code hl_enumeration" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133ee">Stage</a>::<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133eea16574e485dbc8e67775920e0deffb199">UNIFORM_STAGE</a>),</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a8723ef99301ce5b31c85a6f52f7158ac">mCompletedSamples</a>(0)</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    {}</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    finline <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a655989e2947a471506ecfd415e293e1d">reset</a>();</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#af83344d50dd06ef7b0fd9977a62c5dfa">   34</a></span>    <a class="code hl_enumeration" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133ee">Stage</a> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#af83344d50dd06ef7b0fd9977a62c5dfa">getCondition</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> mStage; }</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ac5068374d9e3a37844405b43f2ac6bf0">   35</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ac5068374d9e3a37844405b43f2ac6bf0">setCondition</a>(<a class="code hl_enumeration" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133ee">Stage</a> c) { mStage = c; }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#af83344d50dd06ef7b0fd9977a62c5dfa">   34</a></span>    <a class="code hl_enumeration" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133ee">Stage</a> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#af83344d50dd06ef7b0fd9977a62c5dfa">getCondition</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a494c2a37ca3dc483824045f2e525de6c">mStage</a>; }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ac5068374d9e3a37844405b43f2ac6bf0">   35</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ac5068374d9e3a37844405b43f2ac6bf0">setCondition</a>(<a class="code hl_enumeration" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133ee">Stage</a> c) { <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a494c2a37ca3dc483824045f2e525de6c">mStage</a> = c; }</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a1fef6a14bf67f02a5042db0c0064a741">   37</a></span>    finline <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a1fef6a14bf67f02a5042db0c0064a741">update</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> addedSamples) { mCompletedSamples += addedSamples; }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a1fef6a14bf67f02a5042db0c0064a741">   37</a></span>    finline <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a1fef6a14bf67f02a5042db0c0064a741">update</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> addedSamples) { <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a8723ef99301ce5b31c85a6f52f7158ac">mCompletedSamples</a> += addedSamples; }</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// return delta completed samples of this tile from previous call.</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    finline <span class="keywordtype">unsigned</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a981afec0937d965f34cf6d89c5d60c04">complete</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> maxSamplesPerPixel);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a81d67b1a03bd2727d8cf6bf2069b24a5">   42</a></span>    finline <span class="keywordtype">bool</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a81d67b1a03bd2727d8cf6bf2069b24a5">isCompleted</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (mStage == <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133eea8f7afecbc8fbc4cd0f50a57d1172482e">Stage::COMPLETED</a>); }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a81d67b1a03bd2727d8cf6bf2069b24a5">   42</a></span>    finline <span class="keywordtype">bool</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a81d67b1a03bd2727d8cf6bf2069b24a5">isCompleted</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a494c2a37ca3dc483824045f2e525de6c">mStage</a> == <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133eea8f7afecbc8fbc4cd0f50a57d1172482e">Stage::COMPLETED</a>); }</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    std::string <a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a44ae94a697584c8a9e265af03add0cb8">show</a>(<span class="keyword">const</span> std::string &amp;hd) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_enumeration" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133ee">Stage</a> mStage;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">unsigned</span> mCompletedSamples; <span class="comment">// total completed samples for this tile (= sum of all completed pix samples).</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a494c2a37ca3dc483824045f2e525de6c">   47</a></span>    <a class="code hl_enumeration" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133ee">Stage</a> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a494c2a37ca3dc483824045f2e525de6c">mStage</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a8723ef99301ce5b31c85a6f52f7158ac">   48</a></span>    <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a8723ef99301ce5b31c85a6f52f7158ac">mCompletedSamples</a>; <span class="comment">// total completed samples for this tile (= sum of all completed pix samples).</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>finline <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a655989e2947a471506ecfd415e293e1d">   52</a></span><a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a655989e2947a471506ecfd415e293e1d">AdaptiveRenderTileInfo::reset</a>()</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    mStage = <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133eea16574e485dbc8e67775920e0deffb199">Stage::UNIFORM_STAGE</a>;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    mCompletedSamples = 0;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a494c2a37ca3dc483824045f2e525de6c">mStage</a> = <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133eea16574e485dbc8e67775920e0deffb199">Stage::UNIFORM_STAGE</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a8723ef99301ce5b31c85a6f52f7158ac">mCompletedSamples</a> = 0;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>finline <span class="keywordtype">unsigned</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a981afec0937d965f34cf6d89c5d60c04">   59</a></span><a class="code hl_function" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a981afec0937d965f34cf6d89c5d60c04">AdaptiveRenderTileInfo::complete</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> maxSamplesPerPixel)</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">// return delta completed samples of this tile from previous call.</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    mStage = <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133eea8f7afecbc8fbc4cd0f50a57d1172482e">Stage::COMPLETED</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a494c2a37ca3dc483824045f2e525de6c">mStage</a> = <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133eea8f7afecbc8fbc4cd0f50a57d1172482e">Stage::COMPLETED</a>;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">unsigned</span> oldCompletedSamples = mCompletedSamples;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    mCompletedSamples = maxSamplesPerPixel * 64;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">return</span> mCompletedSamples - oldCompletedSamples;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">unsigned</span> oldCompletedSamples = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a8723ef99301ce5b31c85a6f52f7158ac">mCompletedSamples</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a8723ef99301ce5b31c85a6f52f7158ac">mCompletedSamples</a> = maxSamplesPerPixel * 64;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a8723ef99301ce5b31c85a6f52f7158ac">mCompletedSamples</a> - oldCompletedSamples;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>} <span class="comment">// namespace rndr</span></div>
@@ -125,8 +141,10 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_render_tile_info_html_a1fef6a14bf67f02a5042db0c0064a741"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a1fef6a14bf67f02a5042db0c0064a741">moonray::rndr::AdaptiveRenderTileInfo::update</a></div><div class="ttdeci">finline void update(const unsigned addedSamples)</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_render_tile_info_8h_source.html#l00037">AdaptiveRenderTileInfo.h:37</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_render_tile_info_html_a3b2112090b48fca8a4c93d320e31b7fb"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a3b2112090b48fca8a4c93d320e31b7fb">moonray::rndr::AdaptiveRenderTileInfo::AdaptiveRenderTileInfo</a></div><div class="ttdeci">AdaptiveRenderTileInfo()</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_render_tile_info_8h_source.html#l00027">AdaptiveRenderTileInfo.h:27</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_render_tile_info_html_a44ae94a697584c8a9e265af03add0cb8"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a44ae94a697584c8a9e265af03add0cb8">moonray::rndr::AdaptiveRenderTileInfo::show</a></div><div class="ttdeci">std::string show(const std::string &amp;hd) const</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_render_tile_info_8cc_source.html#l00016">AdaptiveRenderTileInfo.cc:16</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_render_tile_info_html_a494c2a37ca3dc483824045f2e525de6c"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a494c2a37ca3dc483824045f2e525de6c">moonray::rndr::AdaptiveRenderTileInfo::mStage</a></div><div class="ttdeci">Stage mStage</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_render_tile_info_8h_source.html#l00047">AdaptiveRenderTileInfo.h:47</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_render_tile_info_html_a655989e2947a471506ecfd415e293e1d"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a655989e2947a471506ecfd415e293e1d">moonray::rndr::AdaptiveRenderTileInfo::reset</a></div><div class="ttdeci">finline void reset()</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_render_tile_info_8h_source.html#l00052">AdaptiveRenderTileInfo.h:52</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_render_tile_info_html_a81d67b1a03bd2727d8cf6bf2069b24a5"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a81d67b1a03bd2727d8cf6bf2069b24a5">moonray::rndr::AdaptiveRenderTileInfo::isCompleted</a></div><div class="ttdeci">finline bool isCompleted() const</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_render_tile_info_8h_source.html#l00042">AdaptiveRenderTileInfo.h:42</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_render_tile_info_html_a8723ef99301ce5b31c85a6f52f7158ac"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a8723ef99301ce5b31c85a6f52f7158ac">moonray::rndr::AdaptiveRenderTileInfo::mCompletedSamples</a></div><div class="ttdeci">unsigned mCompletedSamples</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_render_tile_info_8h_source.html#l00048">AdaptiveRenderTileInfo.h:48</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_render_tile_info_html_a981afec0937d965f34cf6d89c5d60c04"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#a981afec0937d965f34cf6d89c5d60c04">moonray::rndr::AdaptiveRenderTileInfo::complete</a></div><div class="ttdeci">finline unsigned complete(const unsigned maxSamplesPerPixel)</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_render_tile_info_8h_source.html#l00059">AdaptiveRenderTileInfo.h:59</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_render_tile_info_html_ab098f755555490edb8412906aaa133ee"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133ee">moonray::rndr::AdaptiveRenderTileInfo::Stage</a></div><div class="ttdeci">Stage</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_render_tile_info_8h_source.html#l00021">AdaptiveRenderTileInfo.h:21</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_render_tile_info_html_ab098f755555490edb8412906aaa133eea16574e485dbc8e67775920e0deffb199"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#ab098f755555490edb8412906aaa133eea16574e485dbc8e67775920e0deffb199">moonray::rndr::AdaptiveRenderTileInfo::Stage::UNIFORM_STAGE</a></div><div class="ttdeci">@ UNIFORM_STAGE</div></div>
@@ -136,9 +154,13 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_adaptive_render_tile_info_html_af83344d50dd06ef7b0fd9977a62c5dfa"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html#af83344d50dd06ef7b0fd9977a62c5dfa">moonray::rndr::AdaptiveRenderTileInfo::getCondition</a></div><div class="ttdeci">Stage getCondition() const</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_render_tile_info_8h_source.html#l00034">AdaptiveRenderTileInfo.h:34</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_c8c2fc2658195a2d790ef72565bd36e7.html">rndr</a></li><li class="navelem"><a class="el" href="_adaptive_render_tile_info_8h.html">AdaptiveRenderTileInfo.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

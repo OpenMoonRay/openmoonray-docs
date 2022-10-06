@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,6 +43,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -46,6 +66,9 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">DynamicHyperGrid&lt; T, 1, IncomingRange &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -53,6 +76,11 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4_1_1_node.html">Node</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a125d2b5f24ba1a6e5875e3d57a52bee4"><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a125d2b5f24ba1a6e5875e3d57a52bee4">value_type</a></td></tr>
@@ -72,11 +100,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a435ea232ce1bfb4fa3eaa3051a765afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9a9577e706604df09af2594f75956f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#aa9a9577e706604df09af2594f75956f4">DynamicHyperGrid</a> (<a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a> size)</td></tr>
 <tr class="separator:aa9a9577e706604df09af2594f75956f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad95b97d058bcd94ffd4fc2811811fecc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ad95b97d058bcd94ffd4fc2811811fecc">left</a> (<a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a> <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) const noexcept</td></tr>
+<tr class="memitem:ad95b97d058bcd94ffd4fc2811811fecc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ad95b97d058bcd94ffd4fc2811811fecc">left</a> (<a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a> x) const noexcept</td></tr>
 <tr class="separator:ad95b97d058bcd94ffd4fc2811811fecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e115cc9f371ed0e20218b3065a975a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a6e115cc9f371ed0e20218b3065a975a3">center</a> (<a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a> <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) const noexcept</td></tr>
+<tr class="memitem:a6e115cc9f371ed0e20218b3065a975a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a6e115cc9f371ed0e20218b3065a975a3">center</a> (<a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a> x) const noexcept</td></tr>
 <tr class="separator:a6e115cc9f371ed0e20218b3065a975a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21d6bf1c51914cc59f2b016a22b07258"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a21d6bf1c51914cc59f2b016a22b07258">right</a> (<a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a> <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) const noexcept</td></tr>
+<tr class="memitem:a21d6bf1c51914cc59f2b016a22b07258"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a21d6bf1c51914cc59f2b016a22b07258">right</a> (<a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a> x) const noexcept</td></tr>
 <tr class="separator:a21d6bf1c51914cc59f2b016a22b07258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e08e5528de3e502395031d868a5b6c8"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
 <tr class="memitem:a3e08e5528de3e502395031d868a5b6c8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a09f0f9f56642ee357a87bd94e4e0454f">ResultReturnType</a>&lt; F &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a3e08e5528de3e502395031d868a5b6c8">visitNeighbors</a> (F &amp;&amp;f, const T &amp;p) const</td></tr>
@@ -109,12 +137,89 @@ Static Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a3b3151a3319de09ae2ba6de354e245d6"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a3b3151a3319de09ae2ba6de354e245d6">DynamicHyperGrid&lt; T, 2, IncomingRange &gt;</a></td></tr>
 <tr class="separator:a3b3151a3319de09ae2ba6de354e245d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:aed7d1c8d17c8041b98fb8dcff7be840e"><td class="memItemLeft" align="right" valign="top">typedef Node&lt; <a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a125d2b5f24ba1a6e5875e3d57a52bee4">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#aed7d1c8d17c8041b98fb8dcff7be840e">NodeType</a></td></tr>
+<tr class="separator:aed7d1c8d17c8041b98fb8dcff7be840e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a905a9d29254fb2717c77646ef8487aa3"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#aed7d1c8d17c8041b98fb8dcff7be840e">NodeType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a905a9d29254fb2717c77646ef8487aa3">ContainerType</a></td></tr>
+<tr class="separator:a905a9d29254fb2717c77646ef8487aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a82a0b6eb5657d62a18b1bf7a18f52080"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a82a0b6eb5657d62a18b1bf7a18f52080">unsafeAdd</a> (const T &amp;t)</td></tr>
+<tr class="separator:a82a0b6eb5657d62a18b1bf7a18f52080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa212e8aa8d26fc193f15f27481d55f05"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#aa212e8aa8d26fc193f15f27481d55f05">privateAdd</a> (const T &amp;t)</td></tr>
+<tr class="separator:aa212e8aa8d26fc193f15f27481d55f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad289eec302ab8ed4b1ee06a6a6733963"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ad289eec302ab8ed4b1ee06a6a6733963">offset</a> (const T &amp;p) const noexcept</td></tr>
+<tr class="separator:ad289eec302ab8ed4b1ee06a6a6733963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83df3f0d8af2824c0c61bc09dda7dd9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a83df3f0d8af2824c0c61bc09dda7dd9b">repartition</a> ()</td></tr>
+<tr class="separator:a83df3f0d8af2824c0c61bc09dda7dd9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a31c8e2d20ab75c096a22ca1c4d2fa613"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a31c8e2d20ab75c096a22ca1c4d2fa613">mOrder</a></td></tr>
+<tr class="separator:a31c8e2d20ab75c096a22ca1c4d2fa613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8b9b80d00defa4a1739b8b3ada35ce7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a905a9d29254fb2717c77646ef8487aa3">ContainerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ab8b9b80d00defa4a1739b8b3ada35ce7">mData</a></td></tr>
+<tr class="separator:ab8b9b80d00defa4a1739b8b3ada35ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, typename IncomingRange&gt;<br />
 class DynamicHyperGrid&lt; T, 1, IncomingRange &gt;</div>
 <p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00291">291</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a905a9d29254fb2717c77646ef8487aa3" name="a905a9d29254fb2717c77646ef8487aa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a905a9d29254fb2717c77646ef8487aa3">&#9670;&#160;</a></span>ContainerType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename IncomingRange &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#aed7d1c8d17c8041b98fb8dcff7be840e">NodeType</a>&gt; <a class="el" href="class_dynamic_hyper_grid.html">DynamicHyperGrid</a>&lt; T, 1, IncomingRange &gt;::ContainerType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00495">495</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
+
+</div>
+</div>
+<a id="aed7d1c8d17c8041b98fb8dcff7be840e" name="aed7d1c8d17c8041b98fb8dcff7be840e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed7d1c8d17c8041b98fb8dcff7be840e">&#9670;&#160;</a></span>NodeType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename IncomingRange &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Node&lt;<a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a125d2b5f24ba1a6e5875e3d57a52bee4">value_type</a>&gt; <a class="el" href="class_dynamic_hyper_grid.html">DynamicHyperGrid</a>&lt; T, 1, IncomingRange &gt;::NodeType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00494">494</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
+
+</div>
+</div>
 <a id="a09f0f9f56642ee357a87bd94e4e0454f" name="a09f0f9f56642ee357a87bd94e4e0454f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a09f0f9f56642ee357a87bd94e4e0454f">&#9670;&#160;</a></span>ResultReturnType</h2>
 
@@ -218,7 +323,14 @@ template&lt;typename T , typename IncomingRange &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00308">308</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  308</span>                       :</div>
+<div class="line"><span class="lineno">  309</span>        <a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a31c8e2d20ab75c096a22ca1c4d2fa613">mOrder</a>(1),</div>
+<div class="line"><span class="lineno">  310</span>        <a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ab8b9b80d00defa4a1739b8b3ada35ce7">mData</a>(1)</div>
+<div class="line"><span class="lineno">  311</span>    {</div>
+<div class="line"><span class="lineno">  312</span>    }</div>
+<div class="ttc" id="aclass_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4_html_a31c8e2d20ab75c096a22ca1c4d2fa613"><div class="ttname"><a href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a31c8e2d20ab75c096a22ca1c4d2fa613">DynamicHyperGrid&lt; T, 1, IncomingRange &gt;::mOrder</a></div><div class="ttdeci">size_type mOrder</div><div class="ttdef"><b>Definition:</b> <a href="_dynamic_hyper_grid_8h_source.html#l00497">DynamicHyperGrid.h:497</a></div></div>
+<div class="ttc" id="aclass_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4_html_ab8b9b80d00defa4a1739b8b3ada35ce7"><div class="ttname"><a href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ab8b9b80d00defa4a1739b8b3ada35ce7">DynamicHyperGrid&lt; T, 1, IncomingRange &gt;::mData</a></div><div class="ttdeci">ContainerType mData</div><div class="ttdef"><b>Definition:</b> <a href="_dynamic_hyper_grid_8h_source.html#l00498">DynamicHyperGrid.h:498</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa9a9577e706604df09af2594f75956f4" name="aa9a9577e706604df09af2594f75956f4"></a>
@@ -248,7 +360,12 @@ template&lt;typename T , typename IncomingRange &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00314">314</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  314</span>                                              :</div>
+<div class="line"><span class="lineno">  315</span>        <a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a31c8e2d20ab75c096a22ca1c4d2fa613">mOrder</a>(size),</div>
+<div class="line"><span class="lineno">  316</span>        <a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ab8b9b80d00defa4a1739b8b3ada35ce7">mData</a>(size)</div>
+<div class="line"><span class="lineno">  317</span>    {</div>
+<div class="line"><span class="lineno">  318</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -279,7 +396,16 @@ template&lt;typename T , typename IncomingRange &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00409">409</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  410</span>    {</div>
+<div class="line"><span class="lineno">  411</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#aa212e8aa8d26fc193f15f27481d55f05">privateAdd</a>(t)) {</div>
+<div class="line"><span class="lineno">  412</span>            <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a83df3f0d8af2824c0c61bc09dda7dd9b">repartition</a>();</div>
+<div class="line"><span class="lineno">  413</span>            <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#aed401ab7535fdff3681a2c19aca9c407">add</a>(t);</div>
+<div class="line"><span class="lineno">  414</span>        }</div>
+<div class="line"><span class="lineno">  415</span>    }</div>
+<div class="ttc" id="aclass_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4_html_a83df3f0d8af2824c0c61bc09dda7dd9b"><div class="ttname"><a href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a83df3f0d8af2824c0c61bc09dda7dd9b">DynamicHyperGrid&lt; T, 1, IncomingRange &gt;::repartition</a></div><div class="ttdeci">void repartition()</div><div class="ttdef"><b>Definition:</b> <a href="_dynamic_hyper_grid_8h_source.html#l00462">DynamicHyperGrid.h:462</a></div></div>
+<div class="ttc" id="aclass_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4_html_aa212e8aa8d26fc193f15f27481d55f05"><div class="ttname"><a href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#aa212e8aa8d26fc193f15f27481d55f05">DynamicHyperGrid&lt; T, 1, IncomingRange &gt;::privateAdd</a></div><div class="ttdeci">bool privateAdd(const T &amp;t)</div><div class="ttdef"><b>Definition:</b> <a href="_dynamic_hyper_grid_8h_source.html#l00440">DynamicHyperGrid.h:440</a></div></div>
+<div class="ttc" id="aclass_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4_html_aed401ab7535fdff3681a2c19aca9c407"><div class="ttname"><a href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#aed401ab7535fdff3681a2c19aca9c407">DynamicHyperGrid&lt; T, 1, IncomingRange &gt;::add</a></div><div class="ttdeci">void add(const T &amp;t)</div><div class="ttdef"><b>Definition:</b> <a href="_dynamic_hyper_grid_8h_source.html#l00409">DynamicHyperGrid.h:409</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6e115cc9f371ed0e20218b3065a975a3" name="a6e115cc9f371ed0e20218b3065a975a3"></a>
@@ -309,7 +435,10 @@ template&lt;typename T , typename IncomingRange &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00325">325</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  326</span>    {</div>
+<div class="line"><span class="lineno">  327</span>        <span class="keywordflow">return</span> x;</div>
+<div class="line"><span class="lineno">  328</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad95b97d058bcd94ffd4fc2811811fecc" name="ad95b97d058bcd94ffd4fc2811811fecc"></a>
@@ -339,7 +468,10 @@ template&lt;typename T , typename IncomingRange &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00320">320</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  321</span>    {</div>
+<div class="line"><span class="lineno">  322</span>        <span class="keywordflow">return</span> (x == 0) ? <a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a31c8e2d20ab75c096a22ca1c4d2fa613">mOrder</a> - 1u : x - 1u;</div>
+<div class="line"><span class="lineno">  323</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af44e98b140fd46ee9e2cda8ca7aed3bc" name="af44e98b140fd46ee9e2cda8ca7aed3bc"></a>
@@ -368,7 +500,46 @@ template&lt;typename T , typename IncomingRange &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00335">335</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  336</span>    {</div>
+<div class="line"><span class="lineno">  337</span>        <span class="keywordflow">return</span> 3u * NodeType::sMaxElements;</div>
+<div class="line"><span class="lineno">  338</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad289eec302ab8ed4b1ee06a6a6733963" name="ad289eec302ab8ed4b1ee06a6a6733963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad289eec302ab8ed4b1ee06a6a6733963">&#9670;&#160;</a></span>offset()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename IncomingRange &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a> <a class="el" href="class_dynamic_hyper_grid.html">DynamicHyperGrid</a>&lt; T, 1, IncomingRange &gt;::offset </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00455">455</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  456</span>    {</div>
+<div class="line"><span class="lineno">  457</span>        assert(p[0] &gt;= IncomingRange::min);</div>
+<div class="line"><span class="lineno">  458</span>        assert(p[0] &lt;  IncomingRange::max);</div>
+<div class="line"><span class="lineno">  459</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a><span class="keyword">&gt;</span>(RangeScale::scale&lt;double, IncomingRange&gt;(p[0], 0, <a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a31c8e2d20ab75c096a22ca1c4d2fa613">mOrder</a>));</div>
+<div class="line"><span class="lineno">  460</span>    }</div>
+<div class="ttc" id="aclass_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4_html_a71173240bb60756b77f25cc55605514b"><div class="ttname"><a href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">DynamicHyperGrid&lt; T, 1, IncomingRange &gt;::size_type</a></div><div class="ttdeci">unsigned size_type</div><div class="ttdef"><b>Definition:</b> <a href="_dynamic_hyper_grid_8h_source.html#l00297">DynamicHyperGrid.h:297</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a28db45e6f37770e7c3bb0abff8b1ead8" name="a28db45e6f37770e7c3bb0abff8b1ead8"></a>
@@ -397,7 +568,103 @@ template&lt;typename T , typename IncomingRange &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00417">417</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  418</span>    {</div>
+<div class="line"><span class="lineno">  419</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a31c8e2d20ab75c096a22ca1c4d2fa613">mOrder</a>;</div>
+<div class="line"><span class="lineno">  420</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa212e8aa8d26fc193f15f27481d55f05" name="aa212e8aa8d26fc193f15f27481d55f05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa212e8aa8d26fc193f15f27481d55f05">&#9670;&#160;</a></span>privateAdd()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename IncomingRange &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_dynamic_hyper_grid.html">DynamicHyperGrid</a>&lt; T, 1, IncomingRange &gt;::privateAdd </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00440">440</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  441</span>    {</div>
+<div class="line"><span class="lineno">  442</span>        <span class="comment">// Find cell</span></div>
+<div class="line"><span class="lineno">  443</span>        <span class="keyword">const</span> <span class="keyword">auto</span> idx = <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ad289eec302ab8ed4b1ee06a6a6733963">offset</a>(t);</div>
+<div class="line"><span class="lineno">  444</span>        assert(idx &lt; <a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ab8b9b80d00defa4a1739b8b3ada35ce7">mData</a>.size());</div>
+<div class="line"><span class="lineno">  445</span> </div>
+<div class="line"><span class="lineno">  446</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ab8b9b80d00defa4a1739b8b3ada35ce7">mData</a>[idx].full()) {</div>
+<div class="line"><span class="lineno">  447</span>            <span class="comment">// If there is room in the cell, add the point</span></div>
+<div class="line"><span class="lineno">  448</span>            <a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ab8b9b80d00defa4a1739b8b3ada35ce7">mData</a>[idx].mData.push_back(t);</div>
+<div class="line"><span class="lineno">  449</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  450</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  451</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  452</span>        }</div>
+<div class="line"><span class="lineno">  453</span>    }</div>
+<div class="ttc" id="aclass_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4_html_ad289eec302ab8ed4b1ee06a6a6733963"><div class="ttname"><a href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ad289eec302ab8ed4b1ee06a6a6733963">DynamicHyperGrid&lt; T, 1, IncomingRange &gt;::offset</a></div><div class="ttdeci">size_type offset(const T &amp;p) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_dynamic_hyper_grid_8h_source.html#l00455">DynamicHyperGrid.h:455</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a83df3f0d8af2824c0c61bc09dda7dd9b" name="a83df3f0d8af2824c0c61bc09dda7dd9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83df3f0d8af2824c0c61bc09dda7dd9b">&#9670;&#160;</a></span>repartition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename IncomingRange &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_dynamic_hyper_grid.html">DynamicHyperGrid</a>&lt; T, 1, IncomingRange &gt;::repartition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00462">462</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  463</span>    {</div>
+<div class="line"><span class="lineno">  464</span>        <span class="comment">// Although it&#39;s been shown that 1.5 is a better multiplier than 2 when</span></div>
+<div class="line"><span class="lineno">  465</span>        <span class="comment">// rescaling containers, we do 2. By doing 2, we can split the strata</span></div>
+<div class="line"><span class="lineno">  466</span>        <span class="comment">// in half, guaranteeing that we have, at most, as many points in any</span></div>
+<div class="line"><span class="lineno">  467</span>        <span class="comment">// stratum as we had before, making it so that we can do an unsafe add.</span></div>
+<div class="line"><span class="lineno">  468</span>        <span class="comment">// If we had another multiplier, our strata extents change, and we no</span></div>
+<div class="line"><span class="lineno">  469</span>        <span class="comment">// longer have that guarantee.</span></div>
+<div class="line"><span class="lineno">  470</span>        <a class="code hl_class" href="class_dynamic_hyper_grid.html">DynamicHyperGrid</a> other(<a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a31c8e2d20ab75c096a22ca1c4d2fa613">mOrder</a> * 2u);</div>
+<div class="line"><span class="lineno">  471</span> </div>
+<div class="line"><span class="lineno">  472</span>        <span class="comment">// Partition points...</span></div>
+<div class="line"><span class="lineno">  473</span>        <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a6c61eeb0a18c6923a27d02eb7789600e">visitAll</a>([&amp;other](<span class="keyword">const</span> T&amp; p) {</div>
+<div class="line"><span class="lineno">  474</span>            other.unsafeAdd(p);</div>
+<div class="line"><span class="lineno">  475</span>        });</div>
+<div class="line"><span class="lineno">  476</span> </div>
+<div class="line"><span class="lineno">  477</span>        <span class="comment">// Do non-throwing work at the end</span></div>
+<div class="line"><span class="lineno">  478</span>        <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#afaa202b474451c5486c5576c5d1f40d3">swap</a>(other);</div>
+<div class="line"><span class="lineno">  479</span>    }</div>
+<div class="ttc" id="aclass_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4_html_a6c61eeb0a18c6923a27d02eb7789600e"><div class="ttname"><a href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a6c61eeb0a18c6923a27d02eb7789600e">DynamicHyperGrid&lt; T, 1, IncomingRange &gt;::visitAll</a></div><div class="ttdeci">ResultReturnType&lt; F &gt; visitAll(F &amp;&amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="_dynamic_hyper_grid_8h_source.html#l00387">DynamicHyperGrid.h:387</a></div></div>
+<div class="ttc" id="aclass_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4_html_afaa202b474451c5486c5576c5d1f40d3"><div class="ttname"><a href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#afaa202b474451c5486c5576c5d1f40d3">DynamicHyperGrid&lt; T, 1, IncomingRange &gt;::swap</a></div><div class="ttdeci">void swap(DynamicHyperGrid &amp;other) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_dynamic_hyper_grid_8h_source.html#l00422">DynamicHyperGrid.h:422</a></div></div>
+<div class="ttc" id="aclass_dynamic_hyper_grid_html"><div class="ttname"><a href="class_dynamic_hyper_grid.html">DynamicHyperGrid</a></div><div class="ttdef"><b>Definition:</b> <a href="_dynamic_hyper_grid_8h_source.html#l00056">DynamicHyperGrid.h:57</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a21d6bf1c51914cc59f2b016a22b07258" name="a21d6bf1c51914cc59f2b016a22b07258"></a>
@@ -427,7 +694,10 @@ template&lt;typename T , typename IncomingRange &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00330">330</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  331</span>    {</div>
+<div class="line"><span class="lineno">  332</span>        <span class="keywordflow">return</span> (x == <a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a31c8e2d20ab75c096a22ca1c4d2fa613">mOrder</a> - 1u) ? 0u : x + 1u;</div>
+<div class="line"><span class="lineno">  333</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afaa202b474451c5486c5576c5d1f40d3" name="afaa202b474451c5486c5576c5d1f40d3"></a>
@@ -457,7 +727,52 @@ template&lt;typename T , typename IncomingRange &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00422">422</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  423</span>    {</div>
+<div class="line"><span class="lineno">  424</span>        <span class="keyword">using </span><a class="code hl_function" href="namespacestd.html#a7ffc9a83d505624d453906655627414d">std::swap</a>; <span class="comment">// Allow adl</span></div>
+<div class="line"><span class="lineno">  425</span>        <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#afaa202b474451c5486c5576c5d1f40d3">swap</a>(<a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a31c8e2d20ab75c096a22ca1c4d2fa613">mOrder</a>, other.<a class="code hl_variable" href="class_dynamic_hyper_grid.html#a6161a8fcfc4c3d72f3f5733ff8bf2708">mOrder</a>);</div>
+<div class="line"><span class="lineno">  426</span>        <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#afaa202b474451c5486c5576c5d1f40d3">swap</a>(<a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ab8b9b80d00defa4a1739b8b3ada35ce7">mData</a>, other.<a class="code hl_variable" href="class_dynamic_hyper_grid.html#a0ed79d320d1e14ef8500b3374fe5a216">mData</a>);</div>
+<div class="line"><span class="lineno">  427</span>    }</div>
+<div class="ttc" id="aclass_dynamic_hyper_grid_html_a0ed79d320d1e14ef8500b3374fe5a216"><div class="ttname"><a href="class_dynamic_hyper_grid.html#a0ed79d320d1e14ef8500b3374fe5a216">DynamicHyperGrid::mData</a></div><div class="ttdeci">ContainerType mData</div><div class="ttdef"><b>Definition:</b> <a href="_dynamic_hyper_grid_8h_source.html#l00287">DynamicHyperGrid.h:287</a></div></div>
+<div class="ttc" id="aclass_dynamic_hyper_grid_html_a6161a8fcfc4c3d72f3f5733ff8bf2708"><div class="ttname"><a href="class_dynamic_hyper_grid.html#a6161a8fcfc4c3d72f3f5733ff8bf2708">DynamicHyperGrid::mOrder</a></div><div class="ttdeci">size_type mOrder</div><div class="ttdef"><b>Definition:</b> <a href="_dynamic_hyper_grid_8h_source.html#l00286">DynamicHyperGrid.h:286</a></div></div>
+<div class="ttc" id="anamespacestd_html_a7ffc9a83d505624d453906655627414d"><div class="ttname"><a href="namespacestd.html#a7ffc9a83d505624d453906655627414d">std::swap</a></div><div class="ttdeci">void swap(StaticVector&lt; T, N &gt; &amp;a, StaticVector&lt; T, N &gt; &amp;b) noexcept(noexcept(a.swap(b)))</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2point__generation__cmd_2_static_vector_8h_source.html#l00552">StaticVector.h:552</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a82a0b6eb5657d62a18b1bf7a18f52080" name="a82a0b6eb5657d62a18b1bf7a18f52080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82a0b6eb5657d62a18b1bf7a18f52080">&#9670;&#160;</a></span>unsafeAdd()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename IncomingRange &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_dynamic_hyper_grid.html">DynamicHyperGrid</a>&lt; T, 1, IncomingRange &gt;::unsafeAdd </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00431">431</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  432</span>    {</div>
+<div class="line"><span class="lineno">  433</span>        <span class="comment">// Find cell</span></div>
+<div class="line"><span class="lineno">  434</span>        <span class="keyword">const</span> <span class="keyword">auto</span> idx = <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ad289eec302ab8ed4b1ee06a6a6733963">offset</a>(t);</div>
+<div class="line"><span class="lineno">  435</span>        assert(idx &lt; <a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ab8b9b80d00defa4a1739b8b3ada35ce7">mData</a>.size());</div>
+<div class="line"><span class="lineno">  436</span>        assert(!<a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ab8b9b80d00defa4a1739b8b3ada35ce7">mData</a>[idx].full());</div>
+<div class="line"><span class="lineno">  437</span>        <a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ab8b9b80d00defa4a1739b8b3ada35ce7">mData</a>[idx].mData.push_back(t);</div>
+<div class="line"><span class="lineno">  438</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6c61eeb0a18c6923a27d02eb7789600e" name="a6c61eeb0a18c6923a27d02eb7789600e"></a>
@@ -489,7 +804,17 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00387">387</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  388</span>    {</div>
+<div class="line"><span class="lineno">  389</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; n : <a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ab8b9b80d00defa4a1739b8b3ada35ce7">mData</a>) {</div>
+<div class="line"><span class="lineno">  390</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; p : n.mData) {</div>
+<div class="line"><span class="lineno">  391</span>                <span class="keywordflow">if</span> (f(p) == SearchResult::TERMINATED_EARLY) {</div>
+<div class="line"><span class="lineno">  392</span>                    <span class="keywordflow">return</span> SearchResult::TERMINATED_EARLY;</div>
+<div class="line"><span class="lineno">  393</span>                }</div>
+<div class="line"><span class="lineno">  394</span>            }</div>
+<div class="line"><span class="lineno">  395</span>        }</div>
+<div class="line"><span class="lineno">  396</span>        <span class="keywordflow">return</span> SearchResult::SEARCH_COMPLETE;</div>
+<div class="line"><span class="lineno">  397</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7a1bb1b23e05933ac2620cab233f1d3b" name="a7a1bb1b23e05933ac2620cab233f1d3b"></a>
@@ -521,7 +846,14 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00400">400</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  401</span>    {</div>
+<div class="line"><span class="lineno">  402</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; n : <a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ab8b9b80d00defa4a1739b8b3ada35ce7">mData</a>) {</div>
+<div class="line"><span class="lineno">  403</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; p : n.mData) {</div>
+<div class="line"><span class="lineno">  404</span>                f(p);</div>
+<div class="line"><span class="lineno">  405</span>            }</div>
+<div class="line"><span class="lineno">  406</span>        }</div>
+<div class="line"><span class="lineno">  407</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3e08e5528de3e502395031d868a5b6c8" name="a3e08e5528de3e502395031d868a5b6c8"></a>
@@ -563,7 +895,28 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00341">341</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  342</span>    {</div>
+<div class="line"><span class="lineno">  343</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a31c8e2d20ab75c096a22ca1c4d2fa613">mOrder</a> &lt;= 3) {</div>
+<div class="line"><span class="lineno">  344</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a6c61eeb0a18c6923a27d02eb7789600e">visitAll</a>(std::forward&lt;F&gt;(f));</div>
+<div class="line"><span class="lineno">  345</span>        }</div>
+<div class="line"><span class="lineno">  346</span> </div>
+<div class="line"><span class="lineno">  347</span>        <span class="comment">// Find cell</span></div>
+<div class="line"><span class="lineno">  348</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a> cell = <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ad289eec302ab8ed4b1ee06a6a6733963">offset</a>(p);</div>
+<div class="line"><span class="lineno">  349</span>        <span class="keyword">const</span> std::array&lt;size_type, 3&gt; vals = { { <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ad95b97d058bcd94ffd4fc2811811fecc">left</a>(cell), <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a6e115cc9f371ed0e20218b3065a975a3">center</a>(cell), <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a21d6bf1c51914cc59f2b016a22b07258">right</a>(cell) } };</div>
+<div class="line"><span class="lineno">  350</span> </div>
+<div class="line"><span class="lineno">  351</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> current : vals) {</div>
+<div class="line"><span class="lineno">  352</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; p : <a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ab8b9b80d00defa4a1739b8b3ada35ce7">mData</a>[current].<a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ab8b9b80d00defa4a1739b8b3ada35ce7">mData</a>) {</div>
+<div class="line"><span class="lineno">  353</span>                <span class="keywordflow">if</span> (f(p) == SearchResult::TERMINATED_EARLY) {</div>
+<div class="line"><span class="lineno">  354</span>                    <span class="keywordflow">return</span> SearchResult::TERMINATED_EARLY;</div>
+<div class="line"><span class="lineno">  355</span>                }</div>
+<div class="line"><span class="lineno">  356</span>            }</div>
+<div class="line"><span class="lineno">  357</span>        }</div>
+<div class="line"><span class="lineno">  358</span>        <span class="keywordflow">return</span> SearchResult::SEARCH_COMPLETE;</div>
+<div class="line"><span class="lineno">  359</span>    }</div>
+<div class="ttc" id="aclass_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4_html_a21d6bf1c51914cc59f2b016a22b07258"><div class="ttname"><a href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a21d6bf1c51914cc59f2b016a22b07258">DynamicHyperGrid&lt; T, 1, IncomingRange &gt;::right</a></div><div class="ttdeci">size_type right(size_type x) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_dynamic_hyper_grid_8h_source.html#l00330">DynamicHyperGrid.h:330</a></div></div>
+<div class="ttc" id="aclass_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4_html_a6e115cc9f371ed0e20218b3065a975a3"><div class="ttname"><a href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a6e115cc9f371ed0e20218b3065a975a3">DynamicHyperGrid&lt; T, 1, IncomingRange &gt;::center</a></div><div class="ttdeci">size_type center(size_type x) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_dynamic_hyper_grid_8h_source.html#l00325">DynamicHyperGrid.h:325</a></div></div>
+<div class="ttc" id="aclass_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4_html_ad95b97d058bcd94ffd4fc2811811fecc"><div class="ttname"><a href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ad95b97d058bcd94ffd4fc2811811fecc">DynamicHyperGrid&lt; T, 1, IncomingRange &gt;::left</a></div><div class="ttdeci">size_type left(size_type x) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_dynamic_hyper_grid_8h_source.html#l00320">DynamicHyperGrid.h:320</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aaf336b3430a6c4aa3c4718f79ec17e07" name="aaf336b3430a6c4aa3c4718f79ec17e07"></a>
@@ -605,7 +958,22 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00362">362</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  363</span>    {</div>
+<div class="line"><span class="lineno">  364</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a31c8e2d20ab75c096a22ca1c4d2fa613">mOrder</a> &lt;= 3) {</div>
+<div class="line"><span class="lineno">  365</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a6c61eeb0a18c6923a27d02eb7789600e">visitAll</a>(f);</div>
+<div class="line"><span class="lineno">  366</span>        }</div>
+<div class="line"><span class="lineno">  367</span> </div>
+<div class="line"><span class="lineno">  368</span>        <span class="comment">// Find cell</span></div>
+<div class="line"><span class="lineno">  369</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a> cell = <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ad289eec302ab8ed4b1ee06a6a6733963">offset</a>(p);</div>
+<div class="line"><span class="lineno">  370</span>        <span class="keyword">const</span> std::array&lt;size_type, 3&gt; vals = { { <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ad95b97d058bcd94ffd4fc2811811fecc">left</a>(cell), <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a6e115cc9f371ed0e20218b3065a975a3">center</a>(cell), <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a21d6bf1c51914cc59f2b016a22b07258">right</a>(cell) } };</div>
+<div class="line"><span class="lineno">  371</span> </div>
+<div class="line"><span class="lineno">  372</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> current : vals) {</div>
+<div class="line"><span class="lineno">  373</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; p : <a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ab8b9b80d00defa4a1739b8b3ada35ce7">mData</a>[current].<a class="code hl_variable" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#ab8b9b80d00defa4a1739b8b3ada35ce7">mData</a>) {</div>
+<div class="line"><span class="lineno">  374</span>                f(p);</div>
+<div class="line"><span class="lineno">  375</span>            }</div>
+<div class="line"><span class="lineno">  376</span>        }</div>
+<div class="line"><span class="lineno">  377</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a27b59940167b29d873c639215b000293" name="a27b59940167b29d873c639215b000293"></a>
@@ -647,7 +1015,11 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00380">380</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  381</span>    {</div>
+<div class="line"><span class="lineno">  382</span>        <span class="comment">// We&#39;re just one dimension.</span></div>
+<div class="line"><span class="lineno">  383</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a6c61eeb0a18c6923a27d02eb7789600e">visitAll</a>(f);</div>
+<div class="line"><span class="lineno">  384</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -669,13 +1041,69 @@ template&lt;typename T , typename IncomingRange &gt; </div>
 
 </div>
 </div>
+<a id="ab8b9b80d00defa4a1739b8b3ada35ce7" name="ab8b9b80d00defa4a1739b8b3ada35ce7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8b9b80d00defa4a1739b8b3ada35ce7">&#9670;&#160;</a></span>mData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename IncomingRange &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a905a9d29254fb2717c77646ef8487aa3">ContainerType</a> <a class="el" href="class_dynamic_hyper_grid.html">DynamicHyperGrid</a>&lt; T, 1, IncomingRange &gt;::mData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00498">498</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
+
+</div>
+</div>
+<a id="a31c8e2d20ab75c096a22ca1c4d2fa613" name="a31c8e2d20ab75c096a22ca1c4d2fa613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31c8e2d20ab75c096a22ca1c4d2fa613">&#9670;&#160;</a></span>mOrder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename IncomingRange &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a71173240bb60756b77f25cc55605514b">size_type</a> <a class="el" href="class_dynamic_hyper_grid.html">DynamicHyperGrid</a>&lt; T, 1, IncomingRange &gt;::mOrder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00497">497</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/cmd/point_generation_cmd/<a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html">DynamicHyperGrid&lt; T, 1, IncomingRange &gt;</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

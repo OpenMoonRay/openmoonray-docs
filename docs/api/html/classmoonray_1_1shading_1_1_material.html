@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_material.html">Material</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_material.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -267,7 +283,28 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8cc_source.html#l00025">25</a> of file <a class="el" href="_material_8cc_source.html">Material.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   25</span>                                                          :</div>
+<div class="line"><span class="lineno">   26</span>    <a class="code hl_function" href="classmoonray_1_1shading_1_1_root_shader.html#a00c4387e213013eaa5193f857bc0f69a">RootShader</a>(owner),</div>
+<div class="line"><span class="lineno">   27</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a9f4ce269ac44aabb0d0c69ef4ad4b8cf">mShadeQueue</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">   28</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ab7721bbc2970c0164bbc657c137f3624">mShadeEntries</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">   29</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a4b74b8d1cd67f759be2483c86077cbac">mMaterialLabelId</a>(-1),   <span class="comment">// no material label</span></div>
+<div class="line"><span class="lineno">   30</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ab242b8a22dbb3da7cd68fc32b6d63932">mLpeMaterialLabelId</a>(-1) <span class="comment">// no lpe material label</span></div>
+<div class="line"><span class="lineno">   31</span>{</div>
+<div class="line"><span class="lineno">   32</span>    tbb::mutex::scoped_lock lock(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aaa36ea21954ef51d12125c8093368f43">sMaterialListMutex</a>);</div>
+<div class="line"><span class="lineno">   33</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a675d4b1a92a4d510eb0d811a26ac3a41">sAllMaterials</a>.push_back(<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   34</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ab17fb102269d72c455c103446f0f5380">sQueuelessMaterials</a>.push_back(<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   35</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_root_shader.html#a4362666dea32f241b95710c456bdf2df">mMaterialId</a> = 0;</div>
+<div class="line"><span class="lineno">   36</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_a4b74b8d1cd67f759be2483c86077cbac"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#a4b74b8d1cd67f759be2483c86077cbac">moonray::shading::Material::mMaterialLabelId</a></div><div class="ttdeci">int32_t mMaterialLabelId</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00159">Material.h:159</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_a675d4b1a92a4d510eb0d811a26ac3a41"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#a675d4b1a92a4d510eb0d811a26ac3a41">moonray::shading::Material::sAllMaterials</a></div><div class="ttdeci">static MaterialPtrList sAllMaterials</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00176">Material.h:176</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_a9f4ce269ac44aabb0d0c69ef4ad4b8cf"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#a9f4ce269ac44aabb0d0c69ef4ad4b8cf">moonray::shading::Material::mShadeQueue</a></div><div class="ttdeci">ShadeQueue * mShadeQueue</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00149">Material.h:149</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_aaa36ea21954ef51d12125c8093368f43"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#aaa36ea21954ef51d12125c8093368f43">moonray::shading::Material::sMaterialListMutex</a></div><div class="ttdeci">static tbb::mutex sMaterialListMutex</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00175">Material.h:175</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_ab17fb102269d72c455c103446f0f5380"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#ab17fb102269d72c455c103446f0f5380">moonray::shading::Material::sQueuelessMaterials</a></div><div class="ttdeci">static MaterialPtrList sQueuelessMaterials</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00177">Material.h:177</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_ab242b8a22dbb3da7cd68fc32b6d63932"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#ab242b8a22dbb3da7cd68fc32b6d63932">moonray::shading::Material::mLpeMaterialLabelId</a></div><div class="ttdeci">int32_t mLpeMaterialLabelId</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00161">Material.h:161</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_ab7721bbc2970c0164bbc657c137f3624"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#ab7721bbc2970c0164bbc657c137f3624">moonray::shading::Material::mShadeEntries</a></div><div class="ttdeci">ShadeQueue::EntryType * mShadeEntries</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00150">Material.h:150</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_root_shader_html_a00c4387e213013eaa5193f857bc0f69a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_root_shader.html#a00c4387e213013eaa5193f857bc0f69a">moonray::shading::RootShader::RootShader</a></div><div class="ttdeci">RootShader(const scene_rdl2::rdl2::SceneObject &amp;owner)</div><div class="ttdef"><b>Definition:</b> <a href="_root_shader_8h_source.html#l00019">RootShader.h:19</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_root_shader_html_a4362666dea32f241b95710c456bdf2df"><div class="ttname"><a href="classmoonray_1_1shading_1_1_root_shader.html#a4362666dea32f241b95710c456bdf2df">moonray::shading::RootShader::mMaterialId</a></div><div class="ttdeci">uint32_t mMaterialId</div><div class="ttdef"><b>Definition:</b> <a href="_root_shader_8h_source.html#l00054">RootShader.h:54</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a955730531cf1787a89577b7bdb3a1d71" name="a955730531cf1787a89577b7bdb3a1d71"></a>
@@ -294,7 +331,45 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8cc_source.html#l00038">38</a> of file <a class="el" href="_material_8cc_source.html">Material.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   39</span>{</div>
+<div class="line"><span class="lineno">   40</span>    <span class="comment">// Not thread safe, all objects should be created/destroyed on a single thread.</span></div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a9f4ce269ac44aabb0d0c69ef4ad4b8cf">mShadeQueue</a>) {</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>        {</div>
+<div class="line"><span class="lineno">   44</span>            tbb::mutex::scoped_lock lock(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a9e9a6ac355a3037481a1941301ffe952">sShadeQueueMutex</a>);</div>
+<div class="line"><span class="lineno">   45</span> </div>
+<div class="line"><span class="lineno">   46</span>            <span class="comment">// Check the shade queue size also since it may have already been destroyed</span></div>
+<div class="line"><span class="lineno">   47</span>            <span class="comment">// during global program destruction time.</span></div>
+<div class="line"><span class="lineno">   48</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aca22980cb25e55e3b47cdd74851e63d4">sShadeQueues</a>.size()) {</div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>                <span class="comment">// Remove ourselves from global list of shade queues.</span></div>
+<div class="line"><span class="lineno">   51</span>                <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aca22980cb25e55e3b47cdd74851e63d4">sShadeQueues</a>.begin(); it != <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aca22980cb25e55e3b47cdd74851e63d4">sShadeQueues</a>.end(); ++it) {</div>
+<div class="line"><span class="lineno">   52</span>                    <span class="keywordflow">if</span> (*it == <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a9f4ce269ac44aabb0d0c69ef4ad4b8cf">mShadeQueue</a>) {</div>
+<div class="line"><span class="lineno">   53</span>                        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aca22980cb25e55e3b47cdd74851e63d4">sShadeQueues</a>.erase(it);</div>
+<div class="line"><span class="lineno">   54</span>                        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   55</span>                    }</div>
+<div class="line"><span class="lineno">   56</span>                }</div>
+<div class="line"><span class="lineno">   57</span>            }</div>
+<div class="line"><span class="lineno">   58</span>        }</div>
+<div class="line"><span class="lineno">   59</span>        scene_rdl2::util::alignedFreeArray(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ab7721bbc2970c0164bbc657c137f3624">mShadeEntries</a>);</div>
+<div class="line"><span class="lineno">   60</span>        scene_rdl2::util::alignedFreeDtor(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a9f4ce269ac44aabb0d0c69ef4ad4b8cf">mShadeQueue</a>);</div>
+<div class="line"><span class="lineno">   61</span>    }</div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span>    {</div>
+<div class="line"><span class="lineno">   64</span>        tbb::mutex::scoped_lock lock(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aaa36ea21954ef51d12125c8093368f43">sMaterialListMutex</a>);</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>        <span class="comment">// Remove ourselves from global list of Materials.</span></div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a675d4b1a92a4d510eb0d811a26ac3a41">sAllMaterials</a>.begin(); it != <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a675d4b1a92a4d510eb0d811a26ac3a41">sAllMaterials</a>.end(); ++it) {</div>
+<div class="line"><span class="lineno">   68</span>            <span class="keywordflow">if</span> (*it == <span class="keyword">this</span>) {</div>
+<div class="line"><span class="lineno">   69</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a675d4b1a92a4d510eb0d811a26ac3a41">sAllMaterials</a>.erase(it);</div>
+<div class="line"><span class="lineno">   70</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   71</span>            }</div>
+<div class="line"><span class="lineno">   72</span>        }</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="line"><span class="lineno">   74</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_a9e9a6ac355a3037481a1941301ffe952"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#a9e9a6ac355a3037481a1941301ffe952">moonray::shading::Material::sShadeQueueMutex</a></div><div class="ttdeci">static tbb::mutex sShadeQueueMutex</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00179">Material.h:179</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_aca22980cb25e55e3b47cdd74851e63d4"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#aca22980cb25e55e3b47cdd74851e63d4">moonray::shading::Material::sShadeQueues</a></div><div class="ttdeci">static ShadeQueueList sShadeQueues</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00180">Material.h:180</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -333,7 +408,24 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8cc_source.html#l00255">255</a> of file <a class="el" href="_material_8cc_source.html">Material.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  256</span>{</div>
+<div class="line"><span class="lineno">  257</span>    <span class="comment">// This should only ever get called once at most per material.</span></div>
+<div class="line"><span class="lineno">  258</span>    MNRY_ASSERT(!<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a9f4ce269ac44aabb0d0c69ef4ad4b8cf">mShadeQueue</a>);</div>
+<div class="line"><span class="lineno">  259</span> </div>
+<div class="line"><span class="lineno">  260</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a9f4ce269ac44aabb0d0c69ef4ad4b8cf">mShadeQueue</a> = scene_rdl2::util::alignedMallocCtor&lt;ShadeQueue&gt;(CACHE_LINE_SIZE);</div>
+<div class="line"><span class="lineno">  261</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ab7721bbc2970c0164bbc657c137f3624">mShadeEntries</a> = scene_rdl2::util::alignedMallocArray&lt;ShadeQueue::EntryType&gt;(shadeQueueSize, CACHE_LINE_SIZE);</div>
+<div class="line"><span class="lineno">  262</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a9f4ce269ac44aabb0d0c69ef4ad4b8cf">mShadeQueue</a>-&gt;<a class="code hl_function" href="classmoonray_1_1mcrt__common_1_1_shared_queue.html#a7a89b78056ad6b05abd66b6d274c20ca">init</a>(shadeQueueSize, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ab7721bbc2970c0164bbc657c137f3624">mShadeEntries</a>);</div>
+<div class="line"><span class="lineno">  263</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a9f4ce269ac44aabb0d0c69ef4ad4b8cf">mShadeQueue</a>-&gt;<a class="code hl_function" href="classmoonray_1_1mcrt__common_1_1_shared_queue.html#a754f8b934d97b69b24983f546e89f567">setHandler</a>(handler, <span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  264</span> </div>
+<div class="line"><span class="lineno">  265</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aca22980cb25e55e3b47cdd74851e63d4">sShadeQueues</a>.push_back(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a9f4ce269ac44aabb0d0c69ef4ad4b8cf">mShadeQueue</a>);</div>
+<div class="line"><span class="lineno">  266</span> </div>
+<div class="line"><span class="lineno">  267</span>    <span class="comment">// TODO: We don&#39;t support deleting primitives currently. We&#39;ll need to add</span></div>
+<div class="line"><span class="lineno">  268</span>    <span class="comment">// some extra logic to maintain a valid bundled id when that gets implemented.</span></div>
+<div class="line"><span class="lineno">  269</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_root_shader.html#a4362666dea32f241b95710c456bdf2df">mMaterialId</a> = uint32_t(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aca22980cb25e55e3b47cdd74851e63d4">sShadeQueues</a>.size());</div>
+<div class="line"><span class="lineno">  270</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_shared_queue_html_a754f8b934d97b69b24983f546e89f567"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_shared_queue.html#a754f8b934d97b69b24983f546e89f567">moonray::mcrt_common::SharedQueue::setHandler</a></div><div class="ttdeci">void setHandler(Handler handler, void *handlerData)</div><div class="ttdef"><b>Definition:</b> <a href="_bundle_8h_source.html#l00571">Bundle.h:571</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_shared_queue_html_a7a89b78056ad6b05abd66b6d274c20ca"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_shared_queue.html#a7a89b78056ad6b05abd66b6d274c20ca">moonray::mcrt_common::SharedQueue::init</a></div><div class="ttdeci">void init(unsigned maxEntries, void *entryMemory)</div><div class="ttdef"><b>Definition:</b> <a href="_bundle_8h_source.html#l00546">Bundle.h:546</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3cf5b07c57251f34152f031f44bc3546" name="a3cf5b07c57251f34152f031f44bc3546"></a>
@@ -371,7 +463,17 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8cc_source.html#l00154">154</a> of file <a class="el" href="_material_8cc_source.html">Material.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  155</span>{</div>
+<div class="line"><span class="lineno">  156</span>    tbb::mutex::scoped_lock lockMaterialMutex(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aaa36ea21954ef51d12125c8093368f43">sMaterialListMutex</a>);</div>
+<div class="line"><span class="lineno">  157</span>    tbb::mutex::scoped_lock lockShadeQueueMutex(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a9e9a6ac355a3037481a1941301ffe952">sShadeQueueMutex</a>);</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ab17fb102269d72c455c103446f0f5380">sQueuelessMaterials</a>.begin(); it != <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ab17fb102269d72c455c103446f0f5380">sQueuelessMaterials</a>.end(); ++it) {</div>
+<div class="line"><span class="lineno">  160</span>        (*it)-&gt;allocShadeQueue(shadeQueueSize, handler);</div>
+<div class="line"><span class="lineno">  161</span>    }</div>
+<div class="line"><span class="lineno">  162</span> </div>
+<div class="line"><span class="lineno">  163</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ab17fb102269d72c455c103446f0f5380">sQueuelessMaterials</a>.clear();</div>
+<div class="line"><span class="lineno">  164</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acacff0710514b17937208e7496bf2d2a" name="acacff0710514b17937208e7496bf2d2a"></a>
@@ -398,7 +500,24 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8cc_source.html#l00178">178</a> of file <a class="el" href="_material_8cc_source.html">Material.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  179</span>{</div>
+<div class="line"><span class="lineno">  180</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aca22980cb25e55e3b47cdd74851e63d4">sShadeQueues</a>.begin(); it != <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aca22980cb25e55e3b47cdd74851e63d4">sShadeQueues</a>.end(); ++it) {</div>
+<div class="line"><span class="lineno">  181</span>        <span class="keywordflow">if</span> (!(*it)-&gt;isEmpty()) {</div>
+<div class="line"><span class="lineno">  182</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  183</span>        }</div>
+<div class="line"><span class="lineno">  184</span>    }</div>
+<div class="line"><span class="lineno">  185</span> </div>
+<div class="line"><span class="lineno">  186</span>    <span class="comment">// We also need to check for the case where a Material&#39;s queue may be empty</span></div>
+<div class="line"><span class="lineno">  187</span>    <span class="comment">// but it could still have some entries stored for deferred processing.</span></div>
+<div class="line"><span class="lineno">  188</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a675d4b1a92a4d510eb0d811a26ac3a41">sAllMaterials</a>.begin(); it != <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a675d4b1a92a4d510eb0d811a26ac3a41">sAllMaterials</a>.end(); ++it) {</div>
+<div class="line"><span class="lineno">  189</span>        <span class="keywordflow">if</span> (!(*it)-&gt;mDeferredEntries.empty()) {</div>
+<div class="line"><span class="lineno">  190</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  191</span>        }</div>
+<div class="line"><span class="lineno">  192</span>    }</div>
+<div class="line"><span class="lineno">  193</span> </div>
+<div class="line"><span class="lineno">  194</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  195</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae206272c2149b1aebdb2c5363c01f88d" name="ae206272c2149b1aebdb2c5363c01f88d"></a>
@@ -434,7 +553,42 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8cc_source.html#l00077">77</a> of file <a class="el" href="_material_8cc_source.html">Material.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   80</span>{</div>
+<div class="line"><span class="lineno">   81</span>    <span class="keywordflow">if</span> (!numEntries) {</div>
+<div class="line"><span class="lineno">   82</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   83</span>    }</div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>    <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(tls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a0550ce47438d4ed6c3ae19975c2a2f40">EXCL_ACCUM_DEFER_SHADE_ENTRIES</a>);</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>    <span class="comment">// Keep track of calls, if this gets too high then we&#39;ll need to investigate.</span></div>
+<div class="line"><span class="lineno">   88</span>    ++<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ae1e28ad93df4dfdca2de85846d3e6d06">sDeferredEntryCalls</a>;</div>
+<div class="line"><span class="lineno">   89</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aa96076e07ddc4afdbc05eeed07e1ffd3">sTotalDeferredEntries</a> += numEntries;</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>    <span class="keywordtype">unsigned</span> deferredCalls = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ae1e28ad93df4dfdca2de85846d3e6d06">sDeferredEntryCalls</a>;</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> maxCallsToLog = 5;</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">if</span> (deferredCalls &lt; maxCallsToLog) {</div>
+<div class="line"><span class="lineno">   96</span>        mcrt_common::ExclusiveAccumulators *acc = MNRY_VERIFY(<a class="code hl_function" href="namespacemoonray.html#a4c4ee1724ace2148353e21fc694917cf">getExclusiveAccumulators</a>(tls));</div>
+<div class="line"><span class="lineno">   97</span>        <span class="keywordtype">unsigned</span> accStack = acc-&gt;getStackSize();</div>
+<div class="line"><span class="lineno">   98</span>        scene_rdl2::logging::Logger::warn(<span class="stringliteral">&quot;Call to Material::deferEntriesForLaterProcessing encountered (accumulator stack = &quot;</span>, accStack, <span class="stringliteral">&quot;, handler stack = &quot;</span>, tls-&gt;mHandlerStackDepth, <span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="line"><span class="lineno">   99</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (deferredCalls == maxCallsToLog) {</div>
+<div class="line"><span class="lineno">  100</span>        scene_rdl2::logging::Logger::warn(<span class="stringliteral">&quot;Multiple calls to Material::deferEntriesForLaterProcessing encountered, no more will be reported this frame.&quot;</span>);</div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>    {</div>
+<div class="line"><span class="lineno">  104</span>        tbb::mutex::scoped_lock lock(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ad343add176c8f4ec00eef8b81bd43cde">mDeferredEntryMutex</a>);</div>
+<div class="line"><span class="lineno">  105</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#acf6cef255b5224005bffc5a62784af3a">mDeferredEntries</a>.insert(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#acf6cef255b5224005bffc5a62784af3a">mDeferredEntries</a>.end(), entries, entries + numEntries);</div>
+<div class="line"><span class="lineno">  106</span>    }</div>
+<div class="line"><span class="lineno">  107</span>}</div>
+<div class="ttc" id="a_profile_accumulator_handles_8h_html_a6335af8746974a0365ae8756b7d5d73f"><div class="ttname"><a href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a></div><div class="ttdeci">#define EXCL_ACCUMULATOR_PROFILE(tls, type)</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_handles_8h_source.html#l00020">ProfileAccumulatorHandles.h:20</a></div></div>
+<div class="ttc" id="a_profile_accumulator_handles_8hh_html_ae7f4a146d68256e9f19dcbde6c38c9b2a0550ce47438d4ed6c3ae19975c2a2f40"><div class="ttname"><a href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a0550ce47438d4ed6c3ae19975c2a2f40">EXCL_ACCUM_DEFER_SHADE_ENTRIES</a></div><div class="ttdeci">@ EXCL_ACCUM_DEFER_SHADE_ENTRIES</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_handles_8hh_source.html#l00035">ProfileAccumulatorHandles.hh:35</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_aa96076e07ddc4afdbc05eeed07e1ffd3"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#aa96076e07ddc4afdbc05eeed07e1ffd3">moonray::shading::Material::sTotalDeferredEntries</a></div><div class="ttdeci">static tbb::atomic&lt; uint32_t &gt; sTotalDeferredEntries</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00189">Material.h:189</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_acf6cef255b5224005bffc5a62784af3a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#acf6cef255b5224005bffc5a62784af3a">moonray::shading::Material::mDeferredEntries</a></div><div class="ttdeci">std::vector&lt; SortedRayState &gt; mDeferredEntries</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00173">Material.h:173</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_ad343add176c8f4ec00eef8b81bd43cde"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#ad343add176c8f4ec00eef8b81bd43cde">moonray::shading::Material::mDeferredEntryMutex</a></div><div class="ttdeci">tbb::mutex mDeferredEntryMutex</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00172">Material.h:172</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_ae1e28ad93df4dfdca2de85846d3e6d06"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#ae1e28ad93df4dfdca2de85846d3e6d06">moonray::shading::Material::sDeferredEntryCalls</a></div><div class="ttdeci">static tbb::atomic&lt; uint32_t &gt; sDeferredEntryCalls</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00188">Material.h:188</a></div></div>
+<div class="ttc" id="anamespacemoonray_html_a4c4ee1724ace2148353e21fc694917cf"><div class="ttname"><a href="namespacemoonray.html#a4c4ee1724ace2148353e21fc694917cf">moonray::getExclusiveAccumulators</a></div><div class="ttdeci">mcrt_common::ExclusiveAccumulators * getExclusiveAccumulators(shading::TLState *tls)</div><div class="ttdef"><b>Definition:</b> <a href="_shading_t_l_state_8h_source.html#l00098">ShadingTLState.h:98</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a465b7d365fa025e79aaad6f0ea4710ee" name="a465b7d365fa025e79aaad6f0ea4710ee"></a>
@@ -462,7 +616,64 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8cc_source.html#l00198">198</a> of file <a class="el" href="_material_8cc_source.html">Material.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  199</span>{</div>
+<div class="line"><span class="lineno">  200</span>    <span class="comment">// Always force sFlushCycleIdx to increment by at least 1.</span></div>
+<div class="line"><span class="lineno">  201</span>    <span class="keywordtype">size_t</span> startIdx = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a9b29d50c6fc1de1aa6a7feb90aa4f471">sFlushCycleIdx</a>++;</div>
+<div class="line"><span class="lineno">  202</span> </div>
+<div class="line"><span class="lineno">  203</span>    scene_rdl2::alloc::Arena *arena = &amp;tls-&gt;mArena;</div>
+<div class="line"><span class="lineno">  204</span>    SCOPED_MEM(arena);</div>
+<div class="line"><span class="lineno">  205</span> </div>
+<div class="line"><span class="lineno">  206</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aca22980cb25e55e3b47cdd74851e63d4">sShadeQueues</a>.size(); ++i) {</div>
+<div class="line"><span class="lineno">  207</span> </div>
+<div class="line"><span class="lineno">  208</span>        <span class="keywordtype">size_t</span> cycleIdx = startIdx + i;</div>
+<div class="line"><span class="lineno">  209</span>        <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#a4072ea3eef33972a8b026e3b51c45df9">ShadeQueue</a> *queue = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aca22980cb25e55e3b47cdd74851e63d4">sShadeQueues</a>[cycleIdx % <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aca22980cb25e55e3b47cdd74851e63d4">sShadeQueues</a>.size()];</div>
+<div class="line"><span class="lineno">  210</span><span class="preprocessor">#if 1</span></div>
+<div class="line"><span class="lineno">  211</span>        <span class="keywordtype">unsigned</span> flushed = queue-&gt;drain(tls, VLEN, arena);</div>
+<div class="line"><span class="lineno">  212</span><span class="preprocessor">#else</span></div>
+<div class="line"><span class="lineno">  213</span>        <span class="keywordtype">unsigned</span> flushed = queue-&gt;flush(tls, arena);</div>
+<div class="line"><span class="lineno">  214</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  215</span> </div>
+<div class="line"><span class="lineno">  216</span>        <span class="keywordflow">if</span> (flushed) {</div>
+<div class="line"><span class="lineno">  217</span> </div>
+<div class="line"><span class="lineno">  218</span>            <span class="comment">// There is a harmless race here (so we can avoid any heavier synchronization).</span></div>
+<div class="line"><span class="lineno">  219</span>            <span class="comment">// Overall it&#39;s fine and won&#39;t cause any problems.</span></div>
+<div class="line"><span class="lineno">  220</span>            <span class="keywordflow">if</span> (cycleIdx &gt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a9b29d50c6fc1de1aa6a7feb90aa4f471">sFlushCycleIdx</a>) {</div>
+<div class="line"><span class="lineno">  221</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a9b29d50c6fc1de1aa6a7feb90aa4f471">sFlushCycleIdx</a> = cycleIdx;</div>
+<div class="line"><span class="lineno">  222</span>            }</div>
+<div class="line"><span class="lineno">  223</span>            <span class="keywordflow">return</span> flushed;</div>
+<div class="line"><span class="lineno">  224</span>        }</div>
+<div class="line"><span class="lineno">  225</span>    }</div>
+<div class="line"><span class="lineno">  226</span> </div>
+<div class="line"><span class="lineno">  227</span>    <span class="comment">// We also need to check for the case where a Material&#39;s queue may be empty</span></div>
+<div class="line"><span class="lineno">  228</span>    <span class="comment">// but it could still have some entries stored for deferred processing.</span></div>
+<div class="line"><span class="lineno">  229</span>    <span class="comment">// In this case we move the deferred entries into the actual shader</span></div>
+<div class="line"><span class="lineno">  230</span>    <span class="comment">// queues and return signal that there is still shade queues which contain</span></div>
+<div class="line"><span class="lineno">  231</span>    <span class="comment">// entries.</span></div>
+<div class="line"><span class="lineno">  232</span>    <span class="keywordtype">unsigned</span> numDeferredEntries = 0;</div>
+<div class="line"><span class="lineno">  233</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a675d4b1a92a4d510eb0d811a26ac3a41">sAllMaterials</a>.begin(); it != <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a675d4b1a92a4d510eb0d811a26ac3a41">sAllMaterials</a>.end(); ++it) {</div>
+<div class="line"><span class="lineno">  234</span>        <span class="keywordflow">if</span> (!(*it)-&gt;mDeferredEntries.empty()) {</div>
+<div class="line"><span class="lineno">  235</span>            <a class="code hl_function" href="classmoonray_1_1shading_1_1_material.html#a04961e070603d6f76edf8b82d6b48235">Material</a> *material = *it;</div>
+<div class="line"><span class="lineno">  236</span>            <span class="keywordtype">unsigned</span> numEntries = 0;</div>
+<div class="line"><span class="lineno">  237</span>            SortedRayState *entries = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  238</span>            material-&gt;retrieveDeferredEntries(tls, arena, numEntries, entries);</div>
+<div class="line"><span class="lineno">  239</span> </div>
+<div class="line"><span class="lineno">  240</span>            <span class="comment">// This check is here since another thread may have stolen the</span></div>
+<div class="line"><span class="lineno">  241</span>            <span class="comment">// deferred entries in the meantime.</span></div>
+<div class="line"><span class="lineno">  242</span>            <span class="keywordflow">if</span> (numEntries &amp;&amp; entries) {</div>
+<div class="line"><span class="lineno">  243</span>                numDeferredEntries += numEntries;</div>
+<div class="line"><span class="lineno">  244</span>                <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#a4072ea3eef33972a8b026e3b51c45df9">ShadeQueue</a> *queue = material-&gt;mShadeQueue;</div>
+<div class="line"><span class="lineno">  245</span>                MNRY_VERIFY(queue)-&gt;addEntries(tls, numEntries, entries, arena);</div>
+<div class="line"><span class="lineno">  246</span>            }</div>
+<div class="line"><span class="lineno">  247</span>        }</div>
+<div class="line"><span class="lineno">  248</span>    }</div>
+<div class="line"><span class="lineno">  249</span> </div>
+<div class="line"><span class="lineno">  250</span>    <span class="comment">// This is expected to be zero 99.99% of the time.</span></div>
+<div class="line"><span class="lineno">  251</span>    <span class="keywordflow">return</span> numDeferredEntries;</div>
+<div class="line"><span class="lineno">  252</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_a04961e070603d6f76edf8b82d6b48235"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#a04961e070603d6f76edf8b82d6b48235">moonray::shading::Material::Material</a></div><div class="ttdeci">Material(const scene_rdl2::rdl2::SceneObject &amp;owner)</div><div class="ttdef"><b>Definition:</b> <a href="_material_8cc_source.html#l00025">Material.cc:25</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_a9b29d50c6fc1de1aa6a7feb90aa4f471"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#a9b29d50c6fc1de1aa6a7feb90aa4f471">moonray::shading::Material::sFlushCycleIdx</a></div><div class="ttdeci">static tbb::atomic&lt; size_t &gt; sFlushCycleIdx</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00185">Material.h:185</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a4072ea3eef33972a8b026e3b51c45df9"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a4072ea3eef33972a8b026e3b51c45df9">moonray::shading::ShadeQueue</a></div><div class="ttdeci">mcrt_common::SharedQueue&lt; SortedRayState, true, offsetof(SortedRayState, mSortKey)&gt; ShadeQueue</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00022">Material.h:22</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a247905ed0d9f389ac5ec0d9e7d936bb3" name="a247905ed0d9f389ac5ec0d9e7d936bb3"></a>
@@ -489,7 +700,8 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8h_source.html#l00126">126</a> of file <a class="el" href="_material_8h_source.html">Material.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  126</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aca22980cb25e55e3b47cdd74851e63d4">sShadeQueues</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a63b87a9a251fc95092f6cbfef7739965" name="a63b87a9a251fc95092f6cbfef7739965"></a>
@@ -516,7 +728,9 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8h_source.html#l00055">55</a> of file <a class="el" href="_material_8h_source.html">Material.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   55</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ab31271d59c4580996e615081b2a68a89">mAovFlags</a>; }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_ab31271d59c4580996e615081b2a68a89"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#ab31271d59c4580996e615081b2a68a89">moonray::shading::Material::mAovFlags</a></div><div class="ttdeci">std::vector&lt; char &gt; mAovFlags</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00153">Material.h:153</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a24e7b0a12451f3a8476124fdcf145de2" name="a24e7b0a12451f3a8476124fdcf145de2"></a>
@@ -543,7 +757,8 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8h_source.html#l00056">56</a> of file <a class="el" href="_material_8h_source.html">Material.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   56</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ab31271d59c4580996e615081b2a68a89">mAovFlags</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acf6e1a6a3776d17448b0dd1cf14647cc" name="acf6e1a6a3776d17448b0dd1cf14647cc"></a>
@@ -570,7 +785,9 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8h_source.html#l00087">87</a> of file <a class="el" href="_material_8h_source.html">Material.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   87</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ae68efbdb4c045eb173690f4af86c3b29">mExtraAovs</a>; }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_ae68efbdb4c045eb173690f4af86c3b29"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#ae68efbdb4c045eb173690f4af86c3b29">moonray::shading::Material::mExtraAovs</a></div><div class="ttdeci">std::vector&lt; ExtraAov &gt; mExtraAovs</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00163">Material.h:163</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0e157071d677e45076ace905e4161234" name="a0e157071d677e45076ace905e4161234"></a>
@@ -597,7 +814,9 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8h_source.html#l00061">61</a> of file <a class="el" href="_material_8h_source.html">Material.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   61</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a63231c85d1e650c80b245c06a348abb4">mLobeLabelIds</a>; }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_a63231c85d1e650c80b245c06a348abb4"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#a63231c85d1e650c80b245c06a348abb4">moonray::shading::Material::mLobeLabelIds</a></div><div class="ttdeci">LobeLabelIds mLobeLabelIds</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00155">Material.h:155</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a68b8574c543434cb2c1f9303aed50da6" name="a68b8574c543434cb2c1f9303aed50da6"></a>
@@ -624,7 +843,8 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8h_source.html#l00062">62</a> of file <a class="el" href="_material_8h_source.html">Material.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   62</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a63231c85d1e650c80b245c06a348abb4">mLobeLabelIds</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa7098f3c116cf2987ca4ae07fd268c83" name="aa7098f3c116cf2987ca4ae07fd268c83"></a>
@@ -651,7 +871,9 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8h_source.html#l00067">67</a> of file <a class="el" href="_material_8h_source.html">Material.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   67</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ac0f4496257da2c194ca6c5bd0033f31a">mLpeLobeLabelIds</a>; }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_ac0f4496257da2c194ca6c5bd0033f31a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#ac0f4496257da2c194ca6c5bd0033f31a">moonray::shading::Material::mLpeLobeLabelIds</a></div><div class="ttdeci">LpeLobeLabelIds mLpeLobeLabelIds</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00157">Material.h:157</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aee2721eb0d290f88f66e1cfbb25e7595" name="aee2721eb0d290f88f66e1cfbb25e7595"></a>
@@ -678,7 +900,8 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8h_source.html#l00068">68</a> of file <a class="el" href="_material_8h_source.html">Material.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   68</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ac0f4496257da2c194ca6c5bd0033f31a">mLpeLobeLabelIds</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a47307c175c22248de7c3e5b0500fd03d" name="a47307c175c22248de7c3e5b0500fd03d"></a>
@@ -705,7 +928,8 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8h_source.html#l00080">80</a> of file <a class="el" href="_material_8h_source.html">Material.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   80</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ab242b8a22dbb3da7cd68fc32b6d63932">mLpeMaterialLabelId</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab5fc964471a553afae7f17c83ca89065" name="ab5fc964471a553afae7f17c83ca89065"></a>
@@ -732,7 +956,8 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8h_source.html#l00074">74</a> of file <a class="el" href="_material_8h_source.html">Material.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   74</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a4b74b8d1cd67f759be2483c86077cbac">mMaterialLabelId</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4def62c29cd6a3a39dac7118f5f12a1b" name="a4def62c29cd6a3a39dac7118f5f12a1b"></a>
@@ -759,7 +984,9 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8h_source.html#l00088">88</a> of file <a class="el" href="_material_8h_source.html">Material.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   88</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a2c027326f2f030b6e7e78ae2b216810b">mPostScatterExtraAovs</a>; }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_a2c027326f2f030b6e7e78ae2b216810b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#a2c027326f2f030b6e7e78ae2b216810b">moonray::shading::Material::mPostScatterExtraAovs</a></div><div class="ttdeci">std::vector&lt; ExtraAov &gt; mPostScatterExtraAovs</div><div class="ttdef"><b>Definition:</b> <a href="_material_8h_source.html#l00164">Material.h:164</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6353c835dbb089d81a5b21c0b2366ae3" name="a6353c835dbb089d81a5b21c0b2366ae3"></a>
@@ -786,7 +1013,8 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8h_source.html#l00095">95</a> of file <a class="el" href="_material_8h_source.html">Material.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   95</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a9f4ce269ac44aabb0d0c69ef4ad4b8cf">mShadeQueue</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a83720437c249f2f7b8fe498b0eca554a" name="a83720437c249f2f7b8fe498b0eca554a"></a>
@@ -813,7 +1041,15 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8cc_source.html#l00167">167</a> of file <a class="el" href="_material_8cc_source.html">Material.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  168</span>{</div>
+<div class="line"><span class="lineno">  169</span>    uint32_t <span class="keywordtype">id</span> = 1;</div>
+<div class="line"><span class="lineno">  170</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ab17fb102269d72c455c103446f0f5380">sQueuelessMaterials</a>.begin(); it != <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ab17fb102269d72c455c103446f0f5380">sQueuelessMaterials</a>.end(); ++it) {</div>
+<div class="line"><span class="lineno">  171</span>        (*it)-&gt;setMaterialId(<span class="keywordtype">id</span>++);</div>
+<div class="line"><span class="lineno">  172</span>    }</div>
+<div class="line"><span class="lineno">  173</span> </div>
+<div class="line"><span class="lineno">  174</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ab17fb102269d72c455c103446f0f5380">sQueuelessMaterials</a>.clear();</div>
+<div class="line"><span class="lineno">  175</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a57aeaf01c702eec03d80d84afa841a8c" name="a57aeaf01c702eec03d80d84afa841a8c"></a>
@@ -840,7 +1076,15 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8cc_source.html#l00273">273</a> of file <a class="el" href="_material_8cc_source.html">Material.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  274</span>{</div>
+<div class="line"><span class="lineno">  275</span>    <span class="keywordtype">unsigned</span> numCalls = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ae1e28ad93df4dfdca2de85846d3e6d06">sDeferredEntryCalls</a>;</div>
+<div class="line"><span class="lineno">  276</span>    <span class="keywordtype">unsigned</span> numEntries = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aa96076e07ddc4afdbc05eeed07e1ffd3">sTotalDeferredEntries</a>;</div>
+<div class="line"><span class="lineno">  277</span> </div>
+<div class="line"><span class="lineno">  278</span>    <span class="keywordflow">if</span> (numCalls) {</div>
+<div class="line"><span class="lineno">  279</span>        scene_rdl2::logging::Logger::warn(numCalls, <span class="stringliteral">&quot; call(s) to Material::deferEntriesForLaterProcessing containing &quot;</span>, numEntries, <span class="stringliteral">&quot; entries.&quot;</span>);</div>
+<div class="line"><span class="lineno">  280</span>    }</div>
+<div class="line"><span class="lineno">  281</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a83173edd3fef15aa8b19c7ab4b48b884" name="a83173edd3fef15aa8b19c7ab4b48b884"></a>
@@ -867,7 +1111,17 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8cc_source.html#l00284">284</a> of file <a class="el" href="_material_8cc_source.html">Material.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  285</span>{</div>
+<div class="line"><span class="lineno">  286</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a675d4b1a92a4d510eb0d811a26ac3a41">sAllMaterials</a>.begin(); it != <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a675d4b1a92a4d510eb0d811a26ac3a41">sAllMaterials</a>.end(); ++it) {</div>
+<div class="line"><span class="lineno">  287</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_material.html#a04961e070603d6f76edf8b82d6b48235">Material</a> *material = *it;</div>
+<div class="line"><span class="lineno">  288</span>        tbb::mutex::scoped_lock lock(material-&gt;mDeferredEntryMutex);</div>
+<div class="line"><span class="lineno">  289</span>        material-&gt;mDeferredEntries.clear();</div>
+<div class="line"><span class="lineno">  290</span>    }</div>
+<div class="line"><span class="lineno">  291</span> </div>
+<div class="line"><span class="lineno">  292</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ae1e28ad93df4dfdca2de85846d3e6d06">sDeferredEntryCalls</a> = 0;</div>
+<div class="line"><span class="lineno">  293</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#aa96076e07ddc4afdbc05eeed07e1ffd3">sTotalDeferredEntries</a> = 0;</div>
+<div class="line"><span class="lineno">  294</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae1eb537729dd58f77994d31df815bf48" name="ae1eb537729dd58f77994d31df815bf48"></a>
@@ -909,7 +1163,43 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8cc_source.html#l00110">110</a> of file <a class="el" href="_material_8cc_source.html">Material.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  114</span>{</div>
+<div class="line"><span class="lineno">  115</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#acf6cef255b5224005bffc5a62784af3a">mDeferredEntries</a>.empty()) {</div>
+<div class="line"><span class="lineno">  116</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  117</span>    }</div>
+<div class="line"><span class="lineno">  118</span> </div>
+<div class="line"><span class="lineno">  119</span>    <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(tls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a0550ce47438d4ed6c3ae19975c2a2f40">EXCL_ACCUM_DEFER_SHADE_ENTRIES</a>);</div>
+<div class="line"><span class="lineno">  120</span> </div>
+<div class="line"><span class="lineno">  121</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ad343add176c8f4ec00eef8b81bd43cde">mDeferredEntryMutex</a>.lock();</div>
+<div class="line"><span class="lineno">  122</span> </div>
+<div class="line"><span class="lineno">  123</span>    <span class="keywordtype">unsigned</span> numDeferredEntries = (unsigned)<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#acf6cef255b5224005bffc5a62784af3a">mDeferredEntries</a>.size();</div>
+<div class="line"><span class="lineno">  124</span>    <span class="keywordtype">unsigned</span> totalEntries = numEntries + numDeferredEntries;</div>
+<div class="line"><span class="lineno">  125</span> </div>
+<div class="line"><span class="lineno">  126</span>    SortedRayState *allEntries = arena-&gt;allocArray&lt;SortedRayState&gt;(totalEntries);</div>
+<div class="line"><span class="lineno">  127</span> </div>
+<div class="line"><span class="lineno">  128</span>    memcpy(allEntries, &amp;<a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#acf6cef255b5224005bffc5a62784af3a">mDeferredEntries</a>[0], numDeferredEntries * <span class="keyword">sizeof</span>(SortedRayState));</div>
+<div class="line"><span class="lineno">  129</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#acf6cef255b5224005bffc5a62784af3a">mDeferredEntries</a>.clear();</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>    <span class="comment">// Don&#39;t hold the lock any longer than we strictly have to.</span></div>
+<div class="line"><span class="lineno">  132</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ad343add176c8f4ec00eef8b81bd43cde">mDeferredEntryMutex</a>.unlock();</div>
+<div class="line"><span class="lineno">  133</span> </div>
+<div class="line"><span class="lineno">  134</span>    memcpy(allEntries + numDeferredEntries, entries, numEntries * <span class="keyword">sizeof</span>(SortedRayState));</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>    numEntries = totalEntries;</div>
+<div class="line"><span class="lineno">  137</span>    entries = allEntries;</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>    <span class="comment">// The shadeBundleHandler expects sorted entries so redo that sort since</span></div>
+<div class="line"><span class="lineno">  140</span>    <span class="comment">// we&#39;re concatenating various SortRayState arrays from different threads.</span></div>
+<div class="line"><span class="lineno">  141</span>    std::sort(entries, entries + numEntries,</div>
+<div class="line"><span class="lineno">  142</span>              [](<span class="keyword">const</span> SortedRayState &amp;a, <span class="keyword">const</span> SortedRayState &amp;b) -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><span class="lineno">  143</span>    {</div>
+<div class="line"><span class="lineno">  144</span>        <span class="keywordflow">return</span> EXTRACT_KEY32(a, offsetof(SortedRayState, mSortKey)) &lt;</div>
+<div class="line"><span class="lineno">  145</span>               EXTRACT_KEY32(b, offsetof(SortedRayState, mSortKey));</div>
+<div class="line"><span class="lineno">  146</span>    });</div>
+<div class="line"><span class="lineno">  147</span> </div>
+<div class="line"><span class="lineno">  148</span>    MNRY_ASSERT( (scene_rdl2::util::isSorted32&lt;SortedRayState, offsetof(SortedRayState, mSortKey)&gt;(numEntries, entries)) );</div>
+<div class="line"><span class="lineno">  149</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afe90d9605580e9c644385410a1eab198" name="afe90d9605580e9c644385410a1eab198"></a>
@@ -937,7 +1227,8 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8h_source.html#l00085">85</a> of file <a class="el" href="_material_8h_source.html">Material.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   85</span>{ <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ae68efbdb4c045eb173690f4af86c3b29">mExtraAovs</a> = ea; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a82aebc26ef245fde18edb0ebb2ce7083" name="a82aebc26ef245fde18edb0ebb2ce7083"></a>
@@ -965,7 +1256,8 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8h_source.html#l00079">79</a> of file <a class="el" href="_material_8h_source.html">Material.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   79</span>{ <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#ab242b8a22dbb3da7cd68fc32b6d63932">mLpeMaterialLabelId</a> = labelId; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae418bc640ac57f7d1cc2bb61d47516a8" name="ae418bc640ac57f7d1cc2bb61d47516a8"></a>
@@ -993,7 +1285,8 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8h_source.html#l00147">147</a> of file <a class="el" href="_material_8h_source.html">Material.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  147</span>{ <a class="code hl_variable" href="classmoonray_1_1shading_1_1_root_shader.html#a4362666dea32f241b95710c456bdf2df">mMaterialId</a> = id; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a97d10cd2b8e2037b707932295eec07c1" name="a97d10cd2b8e2037b707932295eec07c1"></a>
@@ -1021,7 +1314,8 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8h_source.html#l00073">73</a> of file <a class="el" href="_material_8h_source.html">Material.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   73</span>{ <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a4b74b8d1cd67f759be2483c86077cbac">mMaterialLabelId</a> = labelId; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae812a866d86022db525c10b450ce638b" name="ae812a866d86022db525c10b450ce638b"></a>
@@ -1049,7 +1343,8 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_material_8h_source.html#l00086">86</a> of file <a class="el" href="_material_8h_source.html">Material.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   86</span>{ <a class="code hl_variable" href="classmoonray_1_1shading_1_1_material.html#a2c027326f2f030b6e7e78ae2b216810b">mPostScatterExtraAovs</a> = ea; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1514,9 +1809,13 @@ Static Protected Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/<a class="el" href="_material_8cc_source.html">Material.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_material.html">Material</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

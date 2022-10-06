@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_55a2e35f6359da48a03f898576e722e1.html">rndr</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_pix_sample_runtime_verify_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">PixSampleRuntimeVerify.h</div></div>
 </div><!--header-->
@@ -86,12 +102,12 @@ $(function() {
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    PixSampleCountRuntimeVerify(<span class="keywordtype">unsigned</span> width, <span class="keywordtype">unsigned</span> height);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    ~PixSampleCountRuntimeVerify() {};</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> add(<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, <span class="keywordtype">unsigned</span> sample) { mPix[pixOffset(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)] += <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>; }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> add(<span class="keywordtype">unsigned</span> x, <span class="keywordtype">unsigned</span> y, <span class="keywordtype">unsigned</span> <a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>) { mPix[pixOffset(x, y)] += <a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>; }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    std::string show() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">private</span>:    </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">unsigned</span> pixOffset(<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> * mWidth + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>; }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">unsigned</span> pixOffset(<span class="keywordtype">unsigned</span> x, <span class="keywordtype">unsigned</span> y)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> y * mWidth + x; }</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">unsigned</span> getMax()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *std::max_element(mPix.begin(), mPix.end()); }</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">unsigned</span> mWidth, mHeight;</div>
@@ -198,9 +214,9 @@ $(function() {
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                <span class="keyword">const</span> <span class="keywordtype">unsigned</span> startSampleId,</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                <span class="keyword">const</span> FloatBuffer &amp;lastWeightBuff) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    std::string show(<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    std::string show(<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>,</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                     <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>,</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    std::string show(<span class="keywordtype">unsigned</span> x, <span class="keywordtype">unsigned</span> y) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    std::string show(<span class="keywordtype">unsigned</span> x,</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                     <span class="keywordtype">unsigned</span> y,</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                     <span class="keyword">const</span> SampleIdBuff *startSampleIdBuff,</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                     <span class="keyword">const</span> <span class="keywordtype">unsigned</span> startSampleId,</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                     <span class="keyword">const</span> FloatBuffer &amp;lastWeightBuff) <span class="keyword">const</span>;</div>
@@ -217,9 +233,9 @@ $(function() {
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    crawlAllPix(F pixFunc)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; mHeight; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; mWidth; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                <span class="keywordflow">if</span> (!pixFunc(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = 0; y &lt; mHeight; ++y) {</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> x = 0; x &lt; mWidth; ++x) {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                <span class="keywordflow">if</span> (!pixFunc(x, y)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            }</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        }</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -240,16 +256,18 @@ $(function() {
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">// TM and (c) 2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="ttc" id="a_attribute_map_8cc_html_ab527eec89029a7b166a67dd899129255"><div class="ttname"><a href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a></div><div class="ttdeci">static void sample(const scene_rdl2::rdl2::Map *self, moonray::shading::TLState *tls, const moonray::shading::State &amp;state, Color *sample)</div></div>
 <div class="ttc" id="a_n_point_8h_html_aa10407f612bf984e944c943166ca3db8"><div class="ttname"><a href="_n_point_8h.html#aa10407f612bf984e944c943166ca3db8">operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const NPoint&lt; D &gt; &amp;a, const NPoint&lt; D &gt; &amp;b) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00246">NPoint.h:246</a></div></div>
 <div class="ttc" id="a_run_time_verify_8h_html"><div class="ttname"><a href="_run_time_verify_8h.html">RunTimeVerify.h</a></div></div>
-<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
-<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1shading_html_a891596c3133fe5228ad4169dc149b987"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">moonray::shading::sample</a></div><div class="ttdeci">scene_rdl2::math::Color sample(const BsdfLobev &amp;lobev, const BsdfSlicev &amp;slicev, float r1, float r2, int lane, scene_rdl2::math::Vec3f &amp;wi, float &amp;pdf)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdfv_8cc_source.html#l00053">Bsdfv.cc:53</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_c8c2fc2658195a2d790ef72565bd36e7.html">rndr</a></li><li class="navelem"><a class="el" href="_pix_sample_runtime_verify_8h.html">PixSampleRuntimeVerify.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_deeec87419ea9eb9b92502c518cd46b4.html">lpe</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_state_machine_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">StateMachine.cc</div></div>
 </div><!--header-->
@@ -51,8 +67,10 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2016-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file StateMachine.cc</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Brian Green</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"></span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_state_machine_8h.html">StateMachine.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="automata_8h.html">osl/automata.h</a>&quot;</span></div>
@@ -85,15 +103,15 @@ $(function() {
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#ac313bfc0b355eea9f42e4333baac086b">isValid</a>(<span class="keywordtype">int</span> stateId, <span class="keywordtype">int</span> <span class="keywordtype">id</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">typedef</span> std::vector&lt;std::tuple&lt;std::string, int, osl::lpexp::LPexp *&gt; &gt; Expressions;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">typedef</span> std::vector&lt;osl::ustring&gt; <a class="code hl_class" href="class_labels.html">Labels</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a6e9541d921775c34e4ac00ce6a4413ac">   41</a></span>    <span class="keyword">typedef</span> std::vector&lt;std::tuple&lt;std::string, int, osl::lpexp::LPexp *&gt; &gt; <a class="code hl_typedef" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a6e9541d921775c34e4ac00ce6a4413ac">Expressions</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a59e5b0b1193c0e24b1321aba2a51d7db">   42</a></span>    <span class="keyword">typedef</span> std::vector&lt;osl::ustring&gt; <a class="code hl_typedef" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a59e5b0b1193c0e24b1321aba2a51d7db">Labels</a>;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    Expressions mExpressions;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_class" href="class_labels.html">Labels</a> mLabels;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">const</span> osl::ustring mExtraLabel;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">const</span> osl::ustring mMaterialLabel; <span class="comment">// For material AOVs that have an LPE</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    osl::DfOptimizedAutomata mOptFsm;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">bool</span> mBuilt;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#ab119d6ccd04812514ddd0b0d48bee9ad">   44</a></span>    <a class="code hl_typedef" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a6e9541d921775c34e4ac00ce6a4413ac">Expressions</a> <a class="code hl_variable" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#ab119d6ccd04812514ddd0b0d48bee9ad">mExpressions</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a8544e88812dbe2550fcbcf454d4933fc">   45</a></span>    <a class="code hl_class" href="class_labels.html">Labels</a> <a class="code hl_variable" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a8544e88812dbe2550fcbcf454d4933fc">mLabels</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#ace9d914ba674aa493cd9a3c3b5d245f3">   46</a></span>    <span class="keyword">const</span> osl::ustring <a class="code hl_variable" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#ace9d914ba674aa493cd9a3c3b5d245f3">mExtraLabel</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a029697800a5f2254f9c42c63378374be">   47</a></span>    <span class="keyword">const</span> osl::ustring <a class="code hl_variable" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a029697800a5f2254f9c42c63378374be">mMaterialLabel</a>; <span class="comment">// For material AOVs that have an LPE</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#aa07feefa88f3c12ca0da4a197cc533db">   48</a></span>    osl::DfOptimizedAutomata <a class="code hl_variable" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#aa07feefa88f3c12ca0da4a197cc533db">mOptFsm</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a3c606dba312971130d4ec6775fe79417">   49</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a3c606dba312971130d4ec6775fe79417">mBuilt</a>;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a3bb533aebc0fb64cd20450891a0b6eb8">   52</a></span><a class="code hl_function" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a3bb533aebc0fb64cd20450891a0b6eb8">StateMachine::Impl::Impl</a>():</div>
@@ -115,7 +133,7 @@ $(function() {
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">static</span> std::string</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>trim(<span class="keyword">const</span> std::string &amp;in)</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1lpe.html#a4b0c1c1f2ff85679587dbd2bbcc325ef">   71</a></span><a class="code hl_function" href="namespacemoonray_1_1lpe.html#a4b0c1c1f2ff85679587dbd2bbcc325ef">trim</a>(<span class="keyword">const</span> std::string &amp;in)</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// trim leading and trailing white space</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">const</span> std::string ws = <span class="stringliteral">&quot; \t&quot;</span>;</div>
@@ -155,7 +173,7 @@ $(function() {
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">while</span> (t0 != std::string::npos) {</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keyword">auto</span> t1 = lp.find_first_of(<span class="charliteral">&#39;\&#39;&#39;</span>, t0 + 1);</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        MNRY_ASSERT(t1 != std::string::npos); <span class="comment">// otherwise p.parse would have failed</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        addLabel(trim(lp.substr(t0 + 1, t1 - t0 - 1)));</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        addLabel(<a class="code hl_function" href="namespacemoonray_1_1lpe.html#a4b0c1c1f2ff85679587dbd2bbcc325ef">trim</a>(lp.substr(t0 + 1, t1 - t0 - 1)));</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        t0 = lp.find_first_of(<span class="charliteral">&#39;\&#39;&#39;</span>, t1 + 1);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
@@ -324,7 +342,7 @@ $(function() {
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="classmoonray_1_1lpe_1_1_state_machine.html#ae3b2a9164a6089018dc4b732d138834a">  279</a></span><a class="code hl_function" href="classmoonray_1_1lpe_1_1_state_machine.html#ae3b2a9164a6089018dc4b732d138834a">StateMachine::StateMachine</a>():</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    mImpl { new <a class="code hl_class" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html">Impl</a> }</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <a class="code hl_variable" href="classmoonray_1_1lpe_1_1_state_machine.html#a341b812394f8417026b9482bc0bcc151">mImpl</a> { new <a class="code hl_class" href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html">Impl</a> }</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>{</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>}</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
@@ -335,31 +353,31 @@ $(function() {
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="keywordtype">int</span></div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="classmoonray_1_1lpe_1_1_state_machine.html#a10934f8d6d7eef11ac30a1bf6ca5e4f6">  289</a></span><a class="code hl_function" href="classmoonray_1_1lpe_1_1_state_machine.html#a10934f8d6d7eef11ac30a1bf6ca5e4f6">StateMachine::addExpression</a>(std::string <span class="keyword">const</span> &amp;lp, <span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>{</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keywordflow">return</span> mImpl-&gt;addExpression(lp, <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1lpe_1_1_state_machine.html#a341b812394f8417026b9482bc0bcc151">mImpl</a>-&gt;addExpression(lp, <span class="keywordtype">id</span>);</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>}</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="keywordtype">int</span></div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="classmoonray_1_1lpe_1_1_state_machine.html#a398a248a2a403536894c4558845d9138">  295</a></span><a class="code hl_function" href="classmoonray_1_1lpe_1_1_state_machine.html#a398a248a2a403536894c4558845d9138">StateMachine::getLabelId</a>(std::string <span class="keyword">const</span> &amp;label)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <span class="keywordflow">return</span> mImpl-&gt;getLabelId(label);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1lpe_1_1_state_machine.html#a341b812394f8417026b9482bc0bcc151">mImpl</a>-&gt;getLabelId(label);</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>}</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno"><a class="line" href="classmoonray_1_1lpe_1_1_state_machine.html#a176d34dde46b0e4b0e83ab617dbad410">  301</a></span><a class="code hl_function" href="classmoonray_1_1lpe_1_1_state_machine.html#a176d34dde46b0e4b0e83ab617dbad410">StateMachine::build</a>()</div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>{</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    mImpl-&gt;build();</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <a class="code hl_variable" href="classmoonray_1_1lpe_1_1_state_machine.html#a341b812394f8417026b9482bc0bcc151">mImpl</a>-&gt;build();</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>}</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span><span class="keywordtype">int</span></div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="classmoonray_1_1lpe_1_1_state_machine.html#a209a5704c43c55f59e57b2db072f1032">  307</a></span><a class="code hl_function" href="classmoonray_1_1lpe_1_1_state_machine.html#a209a5704c43c55f59e57b2db072f1032">StateMachine::transition</a>(<span class="keywordtype">int</span> stateId, <a class="code hl_enumeration" href="namespacemoonray_1_1lpe.html#a3d10a93fe84cb87fa6efaf84aff8a633">EventType</a> ev, <a class="code hl_enumeration" href="namespacemoonray_1_1lpe.html#a48cb4376262c258114ddff2a70936ef1">EventScatteringType</a> evs, <span class="keywordtype">int</span> labelId)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <span class="keywordflow">return</span> mImpl-&gt;transition(stateId, ev, evs, labelId);</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1lpe_1_1_state_machine.html#a341b812394f8417026b9482bc0bcc151">mImpl</a>-&gt;transition(stateId, ev, evs, labelId);</div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>}</div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="classmoonray_1_1lpe_1_1_state_machine.html#a9f9494390b1cf5f05d0c314ac90248ed">  313</a></span><a class="code hl_function" href="classmoonray_1_1lpe_1_1_state_machine.html#a9f9494390b1cf5f05d0c314ac90248ed">StateMachine::isValid</a>(<span class="keywordtype">int</span> stateId, <span class="keywordtype">int</span> <span class="keywordtype">id</span>)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>   <span class="keywordflow">return</span> mImpl-&gt;isValid(stateId, <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>   <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1lpe_1_1_state_machine.html#a341b812394f8417026b9482bc0bcc151">mImpl</a>-&gt;isValid(stateId, <span class="keywordtype">id</span>);</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>}</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
@@ -385,18 +403,27 @@ $(function() {
 <div class="ttc" id="aautomata_8h_html"><div class="ttname"><a href="automata_8h.html">automata.h</a></div></div>
 <div class="ttc" id="aclass_labels_html"><div class="ttname"><a href="class_labels.html">Labels</a></div><div class="ttdef"><b>Definition:</b> <a href="oslclosure_8h_source.html#l00057">oslclosure.h:57</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_1_1_impl_html"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html">moonray::lpe::StateMachine::Impl</a></div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00027">StateMachine.cc:28</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_1_1_impl_html_a029697800a5f2254f9c42c63378374be"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a029697800a5f2254f9c42c63378374be">moonray::lpe::StateMachine::Impl::mMaterialLabel</a></div><div class="ttdeci">const osl::ustring mMaterialLabel</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00047">StateMachine.cc:47</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_1_1_impl_html_a245c85b291ab36f9c5e9f44890eff9d8"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a245c85b291ab36f9c5e9f44890eff9d8">moonray::lpe::StateMachine::Impl::addLabel</a></div><div class="ttdeci">void addLabel(std::string const &amp;label)</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00119">StateMachine.cc:119</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_1_1_impl_html_a25ebad832fd687f892463b90c3ee052d"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a25ebad832fd687f892463b90c3ee052d">moonray::lpe::StateMachine::Impl::~Impl</a></div><div class="ttdeci">~Impl()</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00059">StateMachine.cc:59</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_1_1_impl_html_a3bb533aebc0fb64cd20450891a0b6eb8"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a3bb533aebc0fb64cd20450891a0b6eb8">moonray::lpe::StateMachine::Impl::Impl</a></div><div class="ttdeci">Impl()</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00052">StateMachine.cc:52</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_1_1_impl_html_a3c606dba312971130d4ec6775fe79417"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a3c606dba312971130d4ec6775fe79417">moonray::lpe::StateMachine::Impl::mBuilt</a></div><div class="ttdeci">bool mBuilt</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00049">StateMachine.cc:49</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_1_1_impl_html_a59e5b0b1193c0e24b1321aba2a51d7db"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a59e5b0b1193c0e24b1321aba2a51d7db">moonray::lpe::StateMachine::Impl::Labels</a></div><div class="ttdeci">std::vector&lt; osl::ustring &gt; Labels</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00042">StateMachine.cc:42</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_1_1_impl_html_a68b686596ca03ad52bc4a969c6156ee4"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a68b686596ca03ad52bc4a969c6156ee4">moonray::lpe::StateMachine::Impl::getLabelId</a></div><div class="ttdeci">int getLabelId(std::string const &amp;label) const</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00132">StateMachine.cc:132</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_1_1_impl_html_a6e9541d921775c34e4ac00ce6a4413ac"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a6e9541d921775c34e4ac00ce6a4413ac">moonray::lpe::StateMachine::Impl::Expressions</a></div><div class="ttdeci">std::vector&lt; std::tuple&lt; std::string, int, osl::lpexp::LPexp * &gt; &gt; Expressions</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00041">StateMachine.cc:41</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_1_1_impl_html_a735724c6b784457a858dab7b7af92a16"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a735724c6b784457a858dab7b7af92a16">moonray::lpe::StateMachine::Impl::transition</a></div><div class="ttdeci">int transition(int stateId, EventType ev, EventScatteringType evs, int labelId) const</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00174">StateMachine.cc:174</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_1_1_impl_html_a8544e88812dbe2550fcbcf454d4933fc"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a8544e88812dbe2550fcbcf454d4933fc">moonray::lpe::StateMachine::Impl::mLabels</a></div><div class="ttdeci">Labels mLabels</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00045">StateMachine.cc:45</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_1_1_impl_html_a9157409dc82df5ca248841c1224cb38d"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#a9157409dc82df5ca248841c1224cb38d">moonray::lpe::StateMachine::Impl::build</a></div><div class="ttdeci">void build()</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00144">StateMachine.cc:144</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_1_1_impl_html_aa07feefa88f3c12ca0da4a197cc533db"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#aa07feefa88f3c12ca0da4a197cc533db">moonray::lpe::StateMachine::Impl::mOptFsm</a></div><div class="ttdeci">osl::DfOptimizedAutomata mOptFsm</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00048">StateMachine.cc:48</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_1_1_impl_html_ab119d6ccd04812514ddd0b0d48bee9ad"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#ab119d6ccd04812514ddd0b0d48bee9ad">moonray::lpe::StateMachine::Impl::mExpressions</a></div><div class="ttdeci">Expressions mExpressions</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00044">StateMachine.cc:44</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_1_1_impl_html_ac313bfc0b355eea9f42e4333baac086b"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#ac313bfc0b355eea9f42e4333baac086b">moonray::lpe::StateMachine::Impl::isValid</a></div><div class="ttdeci">bool isValid(int stateId, int id) const</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00257">StateMachine.cc:257</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_1_1_impl_html_ace9d914ba674aa493cd9a3c3b5d245f3"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#ace9d914ba674aa493cd9a3c3b5d245f3">moonray::lpe::StateMachine::Impl::mExtraLabel</a></div><div class="ttdeci">const osl::ustring mExtraLabel</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00046">StateMachine.cc:46</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_1_1_impl_html_af2d9af711f174d1ef46ee4b78ad53f8d"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine_1_1_impl.html#af2d9af711f174d1ef46ee4b78ad53f8d">moonray::lpe::StateMachine::Impl::addExpression</a></div><div class="ttdeci">int addExpression(std::string const &amp;lp, int id)</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00084">StateMachine.cc:84</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_html"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine.html">moonray::lpe::StateMachine</a></div><div class="ttdoc">Implements a finite state machine for light path expressions.</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8h_source.html#l00022">StateMachine.h:23</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_html_a10934f8d6d7eef11ac30a1bf6ca5e4f6"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine.html#a10934f8d6d7eef11ac30a1bf6ca5e4f6">moonray::lpe::StateMachine::addExpression</a></div><div class="ttdeci">int addExpression(std::string const &amp;lp, int id)</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00289">StateMachine.cc:289</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_html_a176d34dde46b0e4b0e83ab617dbad410"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine.html#a176d34dde46b0e4b0e83ab617dbad410">moonray::lpe::StateMachine::build</a></div><div class="ttdeci">void build()</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00301">StateMachine.cc:301</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_html_a209a5704c43c55f59e57b2db072f1032"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine.html#a209a5704c43c55f59e57b2db072f1032">moonray::lpe::StateMachine::transition</a></div><div class="ttdeci">int transition(int stateId, EventType ev, EventScatteringType evs, int labelId) const</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00307">StateMachine.cc:307</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_html_a341b812394f8417026b9482bc0bcc151"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine.html#a341b812394f8417026b9482bc0bcc151">moonray::lpe::StateMachine::mImpl</a></div><div class="ttdeci">std::unique_ptr&lt; Impl &gt; mImpl</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8h_source.html#l00065">StateMachine.h:65</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_html_a398a248a2a403536894c4558845d9138"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine.html#a398a248a2a403536894c4558845d9138">moonray::lpe::StateMachine::getLabelId</a></div><div class="ttdeci">int getLabelId(std::string const &amp;label) const</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00295">StateMachine.cc:295</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_html_a9f9494390b1cf5f05d0c314ac90248ed"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine.html#a9f9494390b1cf5f05d0c314ac90248ed">moonray::lpe::StateMachine::isValid</a></div><div class="ttdeci">bool isValid(int stateId, int id) const</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00313">StateMachine.cc:313</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1lpe_1_1_state_machine_html_ae3b2a9164a6089018dc4b732d138834a"><div class="ttname"><a href="classmoonray_1_1lpe_1_1_state_machine.html#ae3b2a9164a6089018dc4b732d138834a">moonray::lpe::StateMachine::StateMachine</a></div><div class="ttdeci">StateMachine()</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00279">StateMachine.cc:279</a></div></div>
@@ -406,13 +433,18 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_1_1lpe_html_a0df94da6d2ed6b0037e3f52b44b6064d"><div class="ttname"><a href="namespacemoonray_1_1lpe.html#a0df94da6d2ed6b0037e3f52b44b6064d">moonray::lpe::CPP_LpeStateMachine_transition</a></div><div class="ttdeci">int CPP_LpeStateMachine_transition(const uint8_t *stateMachine, int stateId, EventType ev, EventScatteringType evs, int labelId)</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00321">StateMachine.cc:321</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1lpe_html_a3d10a93fe84cb87fa6efaf84aff8a633"><div class="ttname"><a href="namespacemoonray_1_1lpe.html#a3d10a93fe84cb87fa6efaf84aff8a633">moonray::lpe::EventType</a></div><div class="ttdeci">EventType</div><div class="ttdef"><b>Definition:</b> <a href="_event_8h_source.html#l00016">Event.h:16</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1lpe_html_a48cb4376262c258114ddff2a70936ef1"><div class="ttname"><a href="namespacemoonray_1_1lpe.html#a48cb4376262c258114ddff2a70936ef1">moonray::lpe::EventScatteringType</a></div><div class="ttdeci">EventScatteringType</div><div class="ttdef"><b>Definition:</b> <a href="_event_8h_source.html#l00020">Event.h:20</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1lpe_html_a4b0c1c1f2ff85679587dbd2bbcc325ef"><div class="ttname"><a href="namespacemoonray_1_1lpe.html#a4b0c1c1f2ff85679587dbd2bbcc325ef">moonray::lpe::trim</a></div><div class="ttdeci">static std::string trim(const std::string &amp;in)</div><div class="ttdef"><b>Definition:</b> <a href="_state_machine_8cc_source.html#l00071">StateMachine.cc:71</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="aoptautomata_8h_html"><div class="ttname"><a href="optautomata_8h.html">optautomata.h</a></div></div>
 <div class="ttc" id="aoslclosure_8h_html"><div class="ttname"><a href="oslclosure_8h.html">oslclosure.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_f5606880827968bf57135260db82a82e.html">lpe</a></li><li class="navelem"><a class="el" href="_state_machine_8cc.html">StateMachine.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

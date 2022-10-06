@@ -1,0 +1,48 @@
+var classmoonray_1_1geom_1_1internal_1_1_curves =
+[
+    [ "IndexData", "structmoonray_1_1geom_1_1internal_1_1_curves_1_1_index_data.html", "structmoonray_1_1geom_1_1internal_1_1_curves_1_1_index_data" ],
+    [ "Spans", "classmoonray_1_1geom_1_1internal_1_1_curves_1_1_spans.html", "classmoonray_1_1geom_1_1internal_1_1_curves_1_1_spans" ],
+    [ "SubType", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a152a2e6aeb9ef3eb5de1a00186eccc05", [
+      [ "RAY_FACING", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a152a2e6aeb9ef3eb5de1a00186eccc05a8b091ad74c8e41867042d3527b584ae7", null ],
+      [ "ROUND", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a152a2e6aeb9ef3eb5de1a00186eccc05a2ea77cf582892014b30e6fa7e558350d", null ]
+    ] ],
+    [ "Type", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a4794b7aec0f30dbaee7ef611cd182201", [
+      [ "LINEAR", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a4794b7aec0f30dbaee7ef611cd182201aaac544aacc3615aada24897a215f5046", null ],
+      [ "BEZIER", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a4794b7aec0f30dbaee7ef611cd182201afb3a475897a8191c6716da148569802d", null ],
+      [ "BSPLINE", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a4794b7aec0f30dbaee7ef611cd182201a123732cee284ea8ed914cfe1bb999a8d", null ],
+      [ "UNKNOWN", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a4794b7aec0f30dbaee7ef611cd182201a696b031073e74bf2cb98e5ef201d4aa3", null ]
+    ] ],
+    [ "Curves", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a24616df22e1ee5952c93d1a3221722b6", null ],
+    [ "computeAABB", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a548773575890554bd2a0081293625be8", null ],
+    [ "computeAABBAtTimeStep", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a99aefb120148369e8a1a058526f3cb3c", null ],
+    [ "getBakedAttribute", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a3efa2b81c3c7b607b66b36f448e3e4d7", null ],
+    [ "getBakedAttributeData", "classmoonray_1_1geom_1_1internal_1_1_curves.html#aad37c3ede806adb39e380de212dc0116", null ],
+    [ "getBakedAttributeData", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a78034597afeacc6ad8f1ed20ebb180b8", null ],
+    [ "getBakedCurves", "classmoonray_1_1geom_1_1internal_1_1_curves.html#ac957d1c2ce05b5c81b08e3d53e72bf60", null ],
+    [ "getCurvedMotionBlurSampleCount", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a5ca178a83c6798e87f7c7da4a42f9b21", null ],
+    [ "getCurvesCount", "classmoonray_1_1geom_1_1internal_1_1_curves.html#acf7880f5fc91226f446fe09397c0172d", null ],
+    [ "getCurvesVertexCount", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a28af3cca13419617ff617434cd01a591", null ],
+    [ "getIntersectionAssignmentId", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a5e7891fd440d1bb7a820dbb33da781aa", null ],
+    [ "getIntersectionMaterial", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a6f7c1d179875cb8d4779b62dcc3e0d5e", null ],
+    [ "getMemory", "classmoonray_1_1geom_1_1internal_1_1_curves.html#ae20779e834e26720afcb916ac8dd3c7d", null ],
+    [ "getMotionBlurType", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a91de5539482ef5afd2f1357c0809565b", null ],
+    [ "getMotionSamplesCount", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a3de98f2652dcdac725a972fb64be29d1", null ],
+    [ "getPrimitiveAttributeTable", "classmoonray_1_1geom_1_1internal_1_1_curves.html#aae78b628f7633e1eedded63ab93e176e", null ],
+    [ "getSpanCount", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a7ec3a89d3e5233898df3efa5c4eb43c2", null ],
+    [ "getSubType", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a660488ab913c93e387d5ddcf4d8154ff", null ],
+    [ "getTessellatedSpans", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a3be0a9b6a57d0f55ee7aef0625fe293e", null ],
+    [ "getType", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a97ef1bcc0d74f797d712ddd88daa16b1", null ],
+    [ "getVertexBuffer", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a81896c93f6aad08ec6a4d48528080393", null ],
+    [ "getVertexBuffer", "classmoonray_1_1geom_1_1internal_1_1_curves.html#ac8ba1261d90a1f0c57e138ce4e1876e8", null ],
+    [ "getVertexCount", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a8b777ecbef0538dd2fc206590183ad41", null ],
+    [ "setCurvedMotionBlurSampleCount", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a4400c6fcc5aa2f6786af19e78842aa11", null ],
+    [ "mCurvedMotionBlurSampleCount", "classmoonray_1_1geom_1_1internal_1_1_curves.html#ae89d3295d4fb8c6b5be7c4249b155ebf", null ],
+    [ "mCurvesVertexCount", "classmoonray_1_1geom_1_1internal_1_1_curves.html#af71c8a389f57147238c200e8b306ec91", null ],
+    [ "mIndexBuffer", "classmoonray_1_1geom_1_1internal_1_1_curves.html#ad2d1831d8485bf3ec817f99749bbc2f3", null ],
+    [ "mMotionBlurType", "classmoonray_1_1geom_1_1internal_1_1_curves.html#ae477ff102b6395936bac79f86bebc8c8", null ],
+    [ "mPrimitiveAttributeTable", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a79ce4a3435feddc38796f12a5caebff7", null ],
+    [ "mSpanCount", "classmoonray_1_1geom_1_1internal_1_1_curves.html#af550f23f0fbdf102f9e2d098ffafaa37", null ],
+    [ "mSubType", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a3032e975b55235dc9738e0ccf804ea42", null ],
+    [ "mType", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a53feb2473dd6420acfbb65fb03500e9d", null ],
+    [ "mVertexBuffer", "classmoonray_1_1geom_1_1internal_1_1_curves.html#a57cebfdf1a66e2518229ee83db2bb781", null ]
+];

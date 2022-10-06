@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html">BsdfOneSampler</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_bsdf_one_sampler.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1pbr_1_1_bsdf_one_sampler-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::pbr::BsdfOneSampler Class Reference</div></div>
 </div><!--header-->
@@ -78,6 +96,29 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8fcbbe596a0d46c568eed3da7ad67cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e5926e1f683a73caf33b8842808b8c7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">shading::BsdfLobe</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a4e5926e1f683a73caf33b8842808b8c7">sampleLobe</a> (float r, float &amp;pdf) const</td></tr>
 <tr class="separator:a4e5926e1f683a73caf33b8842808b8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a2e900ae0e99e1ceeab637e95eeab7072"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a2e900ae0e99e1ceeab637e95eeab7072">BsdfOneSampler</a> (const <a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html">BsdfOneSampler</a> &amp;other)</td></tr>
+<tr class="memdesc:a2e900ae0e99e1ceeab637e95eeab7072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy is disabled (for now)  <a href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a2e900ae0e99e1ceeab637e95eeab7072">More...</a><br /></td></tr>
+<tr class="separator:a2e900ae0e99e1ceeab637e95eeab7072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add94925f084184063d509a60b6fe65ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html">BsdfOneSampler</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#add94925f084184063d509a60b6fe65ae">operator=</a> (const <a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html">BsdfOneSampler</a> &amp;other)</td></tr>
+<tr class="separator:add94925f084184063d509a60b6fe65ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af18181c402a335929942b9ce6ac4a180"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#af18181c402a335929942b9ce6ac4a180">sampleCdf</a> (float r, float &amp;pdf) const</td></tr>
+<tr class="separator:af18181c402a335929942b9ce6ac4a180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a10884244ec37e62ce69bb6ac83387c29"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">shading::Bsdf</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a10884244ec37e62ce69bb6ac83387c29">mBsdf</a></td></tr>
+<tr class="separator:a10884244ec37e62ce69bb6ac83387c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab355e001b4fbf7155069b17b772b1eab"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmoonray_1_1shading_1_1_bsdf_slice.html">shading::BsdfSlice</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#ab355e001b4fbf7155069b17b772b1eab">mSlice</a></td></tr>
+<tr class="separator:ab355e001b4fbf7155069b17b772b1eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528884d65020fc032c60dd986e702a67"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a> [<a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a4131d6090c070e8e02a0ba4b46deb886">shading::Bsdf::maxLobes</a>]</td></tr>
+<tr class="separator:a528884d65020fc032c60dd986e702a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3706d40e0a2a9cfaa1ac53a5ea2c8c58"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a3706d40e0a2a9cfaa1ac53a5ea2c8c58">mLobeIndex</a> [<a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a4131d6090c070e8e02a0ba4b46deb886">shading::Bsdf::maxLobes</a>]</td></tr>
+<tr class="separator:a3706d40e0a2a9cfaa1ac53a5ea2c8c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9460a6c367645f883396905e503434eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a9460a6c367645f883396905e503434eb">mLobeCount</a></td></tr>
+<tr class="separator:a9460a6c367645f883396905e503434eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A <a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html" title="A BsdfOneSampler object is used to efficiently sample multi-lobe bsdfs.">BsdfOneSampler</a> object is used to efficiently sample multi-lobe bsdfs. </p>
@@ -85,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_bsdf_one_sampler_8h_source.html#l00038">38</a> of file <a class="el" href="_bsdf_one_sampler_8h_source.html">BsdfOneSampler.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0c74a3123cd6a3462b8d5babb73f6bb3" name="a0c74a3123cd6a3462b8d5babb73f6bb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c74a3123cd6a3462b8d5babb73f6bb3">&#9670;&#160;</a></span>BsdfOneSampler()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c74a3123cd6a3462b8d5babb73f6bb3">&#9670;&#160;</a></span>BsdfOneSampler() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -112,7 +153,72 @@ Public Member Functions</h2></td></tr>
 <p >A bsdf slice is defined given a surface geometric normal Ng and observer direction wo. We are also narrowing down on only the lobes that match the given flags. </p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_one_sampler_8cc_source.html#l00029">29</a> of file <a class="el" href="_bsdf_one_sampler_8cc_source.html">BsdfOneSampler.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   29</span>                                                                                     :</div>
+<div class="line"><span class="lineno">   30</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a10884244ec37e62ce69bb6ac83387c29">mBsdf</a>(bsdf),</div>
+<div class="line"><span class="lineno">   31</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#ab355e001b4fbf7155069b17b772b1eab">mSlice</a>(slice)</div>
+<div class="line"><span class="lineno">   32</span>{</div>
+<div class="line"><span class="lineno">   33</span>    <span class="comment">// Allocate and initialize lobe cdf and index arrays</span></div>
+<div class="line"><span class="lineno">   34</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a9460a6c367645f883396905e503434eb">mLobeCount</a> = bsdf.getLobeCount();</div>
+<div class="line"><span class="lineno">   35</span>    memset(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>, 0, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[0]) * <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a9460a6c367645f883396905e503434eb">mLobeCount</a>);</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> l=0; l &lt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a9460a6c367645f883396905e503434eb">mLobeCount</a>; l++) {</div>
+<div class="line"><span class="lineno">   37</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a3706d40e0a2a9cfaa1ac53a5ea2c8c58">mLobeIndex</a>[l] = l;</div>
+<div class="line"><span class="lineno">   38</span>    }</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>    <span class="comment">// Bubble-up the lobes that match the flags at the beginning of the array,</span></div>
+<div class="line"><span class="lineno">   41</span>    <span class="comment">// and compute their approximated albedo.</span></div>
+<div class="line"><span class="lineno">   42</span>    <span class="comment">// Note: since we use the approximated albedo, our sampling decisions might</span></div>
+<div class="line"><span class="lineno">   43</span>    <span class="comment">// be slightly off in cases where a lobe crosses the surface (at grazing</span></div>
+<div class="line"><span class="lineno">   44</span>    <span class="comment">// angles). In these cases, we may spend slightly more samples than we</span></div>
+<div class="line"><span class="lineno">   45</span>    <span class="comment">// should.</span></div>
+<div class="line"><span class="lineno">   46</span>    <span class="comment">// TODO: We should find a way to devote only a single sample to mirror ?</span></div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordtype">int</span> last = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a9460a6c367645f883396905e503434eb">mLobeCount</a> - 1;</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordtype">int</span> current = 0;</div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordtype">float</span> <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a> = 0.0f;</div>
+<div class="line"><span class="lineno">   50</span>    <a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">shading::BsdfLobe::Type</a> flags = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#ab355e001b4fbf7155069b17b772b1eab">mSlice</a>.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#ae2b5a42cb77a0ccdf0277d39b04d7e81">getFlags</a>();</div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">while</span> (current &lt;= last) {</div>
+<div class="line"><span class="lineno">   52</span>        <span class="keyword">const</span> shading::BsdfLobe *lobe = bsdf.getLobe(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a3706d40e0a2a9cfaa1ac53a5ea2c8c58">mLobeIndex</a>[current]);</div>
+<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">if</span> (lobe-&gt;matchesFlags(flags)) {</div>
+<div class="line"><span class="lineno">   54</span>            <span class="comment">// Use the mirror reflection direction assumption to compute the</span></div>
+<div class="line"><span class="lineno">   55</span>            <span class="comment">// albedo approximaion, which drives our lobe sampling decisions.</span></div>
+<div class="line"><span class="lineno">   56</span>            <span class="comment">// A negative albedo shouldn&#39;t happen, the abs() is for paranoia.</span></div>
+<div class="line"><span class="lineno">   57</span>            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[current] = scene_rdl2::math::abs(luminance(lobe-&gt;albedo(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#ab355e001b4fbf7155069b17b772b1eab">mSlice</a>)));</div>
+<div class="line"><span class="lineno">   58</span>            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[current] = max(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[current], sEpsilon);</div>
+<div class="line"><span class="lineno">   59</span>            <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a> += <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[current];</div>
+<div class="line"><span class="lineno">   60</span>            current++;</div>
+<div class="line"><span class="lineno">   61</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   62</span>            <a class="code hl_function" href="namespacestd.html#a7ffc9a83d505624d453906655627414d">std::swap</a>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a3706d40e0a2a9cfaa1ac53a5ea2c8c58">mLobeIndex</a>[current], <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a3706d40e0a2a9cfaa1ac53a5ea2c8c58">mLobeIndex</a>[last]);</div>
+<div class="line"><span class="lineno">   63</span>            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[current] = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[last];</div>
+<div class="line"><span class="lineno">   64</span>            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[last] = 0;</div>
+<div class="line"><span class="lineno">   65</span>            last--;</div>
+<div class="line"><span class="lineno">   66</span>        }</div>
+<div class="line"><span class="lineno">   67</span>    }</div>
+<div class="line"><span class="lineno">   68</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a9460a6c367645f883396905e503434eb">mLobeCount</a> = last + 1;</div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>    <span class="comment">// Handle if no lobes match</span></div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a9460a6c367645f883396905e503434eb">mLobeCount</a> == 0) {</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>    <span class="comment">// Normalize the albedos and integrate into a cdf, all in one pass</span></div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a> = 1.0f / <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>;</div>
+<div class="line"><span class="lineno">   77</span>    <span class="keywordtype">float</span> cdf = 0.0f;</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> l=0; l &lt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a9460a6c367645f883396905e503434eb">mLobeCount</a>; l++) {</div>
+<div class="line"><span class="lineno">   79</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[l] *= <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>;</div>
+<div class="line"><span class="lineno">   80</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[l] += cdf;</div>
+<div class="line"><span class="lineno">   81</span>        cdf = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[l];</div>
+<div class="line"><span class="lineno">   82</span>    }</div>
+<div class="line"><span class="lineno">   83</span>    MNRY_ASSERT(isOne(cdf));</div>
+<div class="line"><span class="lineno">   84</span>}</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a26b3f6b7b842544058f3766b0da79257"><div class="ttname"><a href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a></div><div class="ttdeci">__host__ __device__ float3 normalize(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00165">GPUMath.h:165</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_bsdf_one_sampler_html_a10884244ec37e62ce69bb6ac83387c29"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a10884244ec37e62ce69bb6ac83387c29">moonray::pbr::BsdfOneSampler::mBsdf</a></div><div class="ttdeci">const shading::Bsdf &amp; mBsdf</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_one_sampler_8h_source.html#l00075">BsdfOneSampler.h:75</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_bsdf_one_sampler_html_a3706d40e0a2a9cfaa1ac53a5ea2c8c58"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a3706d40e0a2a9cfaa1ac53a5ea2c8c58">moonray::pbr::BsdfOneSampler::mLobeIndex</a></div><div class="ttdeci">char mLobeIndex[shading::Bsdf::maxLobes]</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_one_sampler_8h_source.html#l00082">BsdfOneSampler.h:82</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_bsdf_one_sampler_html_a528884d65020fc032c60dd986e702a67"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">moonray::pbr::BsdfOneSampler::mLobeCdf</a></div><div class="ttdeci">float mLobeCdf[shading::Bsdf::maxLobes]</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_one_sampler_8h_source.html#l00081">BsdfOneSampler.h:81</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_bsdf_one_sampler_html_a9460a6c367645f883396905e503434eb"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a9460a6c367645f883396905e503434eb">moonray::pbr::BsdfOneSampler::mLobeCount</a></div><div class="ttdeci">int mLobeCount</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_one_sampler_8h_source.html#l00083">BsdfOneSampler.h:83</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_bsdf_one_sampler_html_ab355e001b4fbf7155069b17b772b1eab"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#ab355e001b4fbf7155069b17b772b1eab">moonray::pbr::BsdfOneSampler::mSlice</a></div><div class="ttdeci">const shading::BsdfSlice &amp; mSlice</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_one_sampler_8h_source.html#l00076">BsdfOneSampler.h:76</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">moonray::shading::BsdfLobe::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00074">Bsdf.h:74</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_slice_html_ae2b5a42cb77a0ccdf0277d39b04d7e81"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_slice.html#ae2b5a42cb77a0ccdf0277d39b04d7e81">moonray::shading::BsdfSlice::getFlags</a></div><div class="ttdeci">BsdfLobe::Type getFlags() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_slice_8h_source.html#l00056">BsdfSlice.h:56</a></div></div>
+<div class="ttc" id="anamespacestd_html_a7ffc9a83d505624d453906655627414d"><div class="ttname"><a href="namespacestd.html#a7ffc9a83d505624d453906655627414d">std::swap</a></div><div class="ttdeci">void swap(StaticVector&lt; T, N &gt; &amp;a, StaticVector&lt; T, N &gt; &amp;b) noexcept(noexcept(a.swap(b)))</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2point__generation__cmd_2_static_vector_8h_source.html#l00552">StaticVector.h:552</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a417b3e7872ca68af4bb67f69c41b8963" name="a417b3e7872ca68af4bb67f69c41b8963"></a>
@@ -131,6 +237,36 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_one_sampler_8cc_source.html#l00087">87</a> of file <a class="el" href="_bsdf_one_sampler_8cc_source.html">BsdfOneSampler.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>{</div>
+<div class="line"><span class="lineno">   89</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2e900ae0e99e1ceeab637e95eeab7072" name="a2e900ae0e99e1ceeab637e95eeab7072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e900ae0e99e1ceeab637e95eeab7072">&#9670;&#160;</a></span>BsdfOneSampler() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moonray::pbr::BsdfOneSampler::BsdfOneSampler </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html">BsdfOneSampler</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy is disabled (for now) </p>
 
 </div>
 </div>
@@ -169,7 +305,41 @@ Public Member Functions</h2></td></tr>
 <p >The following sampling API implements Veach's one-sample model. The API follows mostly the same rules and conventions from the BsdfLobe class. </p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_one_sampler_8cc_source.html#l00095">95</a> of file <a class="el" href="_bsdf_one_sampler_8cc_source.html">BsdfOneSampler.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   97</span>{</div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">shading::BsdfLobe::Type</a> flags = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#ab355e001b4fbf7155069b17b772b1eab">mSlice</a>.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a4d1d69764bb4fabe816691de7ca07549">getSurfaceFlags</a>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a10884244ec37e62ce69bb6ac83387c29">mBsdf</a>, wi);</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">if</span> (lobesContribution != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  101</span>        lobesContribution-&gt;mMatchedLobeCount = 0;</div>
+<div class="line"><span class="lineno">  102</span>    }</div>
+<div class="line"><span class="lineno">  103</span>    <span class="comment">// Add up all the matching lobe&#39;s contributions and pdfs</span></div>
+<div class="line"><span class="lineno">  104</span>    Color f(zero);</div>
+<div class="line"><span class="lineno">  105</span>    pdf = 0.0f;</div>
+<div class="line"><span class="lineno">  106</span>    <span class="keywordtype">float</span> prevCdf = 0.0f;</div>
+<div class="line"><span class="lineno">  107</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> l=0; l &lt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a9460a6c367645f883396905e503434eb">mLobeCount</a>; l++) {</div>
+<div class="line"><span class="lineno">  108</span>        <span class="keyword">const</span> shading::BsdfLobe * <span class="keyword">const</span> lobe = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a10884244ec37e62ce69bb6ac83387c29">mBsdf</a>.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf.html#a41564b391fb82dda160110490c57dd27">getLobe</a>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a3706d40e0a2a9cfaa1ac53a5ea2c8c58">mLobeIndex</a>[l]);</div>
+<div class="line"><span class="lineno">  109</span> </div>
+<div class="line"><span class="lineno">  110</span>        <span class="comment">// We need to account for lobe pdf, even if the surface flag doesn&#39;t match</span></div>
+<div class="line"><span class="lineno">  111</span>        <span class="keywordtype">float</span> tmpPdf = 0.0f;</div>
+<div class="line"><span class="lineno">  112</span>        Color color = lobe-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a9c4e3bbff247bebc35005287dd23c6f9">eval</a>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#ab355e001b4fbf7155069b17b772b1eab">mSlice</a>, wi, &amp;tmpPdf);</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">if</span> (lobe-&gt;matchesFlags(flags)) {</div>
+<div class="line"><span class="lineno">  114</span>            f += color;</div>
+<div class="line"><span class="lineno">  115</span>            <span class="keywordflow">if</span> (lobesContribution != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  116</span>                <span class="keywordtype">int</span>&amp; index = lobesContribution-&gt;mMatchedLobeCount;</div>
+<div class="line"><span class="lineno">  117</span>                lobesContribution-&gt;mFs[index] = color;</div>
+<div class="line"><span class="lineno">  118</span>                lobesContribution-&gt;mLobes[index] = lobe;</div>
+<div class="line"><span class="lineno">  119</span>                index++;</div>
+<div class="line"><span class="lineno">  120</span>            }</div>
+<div class="line"><span class="lineno">  121</span>        }</div>
+<div class="line"><span class="lineno">  122</span>        pdf += tmpPdf * (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[l] - prevCdf);</div>
+<div class="line"><span class="lineno">  123</span>        prevCdf = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[l];</div>
+<div class="line"><span class="lineno">  124</span>    }</div>
+<div class="line"><span class="lineno">  125</span> </div>
+<div class="line"><span class="lineno">  126</span>    <span class="keywordflow">return</span> f;</div>
+<div class="line"><span class="lineno">  127</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_html_a41564b391fb82dda160110490c57dd27"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf.html#a41564b391fb82dda160110490c57dd27">moonray::shading::Bsdf::getLobe</a></div><div class="ttdeci">finline const BsdfLobe * getLobe(int index) const</div><div class="ttdoc">Get a specific lobe.</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00394">Bsdf.h:394</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a9c4e3bbff247bebc35005287dd23c6f9"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a9c4e3bbff247bebc35005287dd23c6f9">moonray::shading::BsdfLobe::eval</a></div><div class="ttdeci">virtual scene_rdl2::math::Color eval(const BsdfSlice &amp;slice, const scene_rdl2::math::Vec3f &amp;wi, float *pdf=nullptr) const =0</div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_slice_html_a4d1d69764bb4fabe816691de7ca07549"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_slice.html#a4d1d69764bb4fabe816691de7ca07549">moonray::shading::BsdfSlice::getSurfaceFlags</a></div><div class="ttdeci">finline BsdfLobe::Type getSurfaceFlags(const Bsdf &amp;bsdf, const scene_rdl2::math::Vec3f &amp;wi) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_slice_8h_source.html#l00078">BsdfSlice.h:78</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a91ec8dc5746f84d965ccf6932fc251f8" name="a91ec8dc5746f84d965ccf6932fc251f8"></a>
@@ -196,7 +366,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_one_sampler_8h_source.html#l00054">54</a> of file <a class="el" href="_bsdf_one_sampler_8h_source.html">BsdfOneSampler.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   54</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a10884244ec37e62ce69bb6ac83387c29">mBsdf</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a40b0b8f4da7e87ba3d1b27c56ea7ee38" name="a40b0b8f4da7e87ba3d1b27c56ea7ee38"></a>
@@ -223,6 +394,33 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_one_sampler_8h_source.html#l00055">55</a> of file <a class="el" href="_bsdf_one_sampler_8h_source.html">BsdfOneSampler.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#ab355e001b4fbf7155069b17b772b1eab">mSlice</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="add94925f084184063d509a60b6fe65ae" name="add94925f084184063d509a60b6fe65ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add94925f084184063d509a60b6fe65ae">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html">BsdfOneSampler</a> &amp; moonray::pbr::BsdfOneSampler::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html">BsdfOneSampler</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -277,7 +475,136 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_one_sampler_8cc_source.html#l00162">162</a> of file <a class="el" href="_bsdf_one_sampler_8cc_source.html">BsdfOneSampler.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  164</span>{</div>
+<div class="line"><span class="lineno">  165</span>    <span class="keywordflow">if</span> (lobesContribution != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  166</span>        lobesContribution-&gt;mMatchedLobeCount = 0;</div>
+<div class="line"><span class="lineno">  167</span>    }</div>
+<div class="line"><span class="lineno">  168</span>    <span class="comment">// If there is no matching lobes, just return an invalid sample</span></div>
+<div class="line"><span class="lineno">  169</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a9460a6c367645f883396905e503434eb">mLobeCount</a> == 0) {</div>
+<div class="line"><span class="lineno">  170</span>        pdf = 0.0f;</div>
+<div class="line"><span class="lineno">  171</span>        <span class="keywordflow">return</span> sBlack;</div>
+<div class="line"><span class="lineno">  172</span>    }</div>
+<div class="line"><span class="lineno">  173</span> </div>
+<div class="line"><span class="lineno">  174</span>    <span class="keywordtype">float</span> lobePdf;</div>
+<div class="line"><span class="lineno">  175</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> cdfIndex = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#af18181c402a335929942b9ce6ac4a180">sampleCdf</a>(r0, lobePdf);</div>
+<div class="line"><span class="lineno">  176</span>    <span class="keyword">const</span> shading::BsdfLobe *lobe = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a10884244ec37e62ce69bb6ac83387c29">mBsdf</a>.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf.html#a41564b391fb82dda160110490c57dd27">getLobe</a>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a3706d40e0a2a9cfaa1ac53a5ea2c8c58">mLobeIndex</a>[cdfIndex]);</div>
+<div class="line"><span class="lineno">  177</span> </div>
+<div class="line"><span class="lineno">  178</span>    <span class="comment">// Sample that lobe</span></div>
+<div class="line"><span class="lineno">  179</span>    Color f = lobe-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a59f21649b0273a5e24a19b3e29aee570">sample</a>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#ab355e001b4fbf7155069b17b772b1eab">mSlice</a>, r1, r2, wi, pdf);</div>
+<div class="line"><span class="lineno">  180</span> </div>
+<div class="line"><span class="lineno">  181</span>    <span class="comment">// Treat invalid samples</span></div>
+<div class="line"><span class="lineno">  182</span>    <span class="keywordflow">if</span> (pdf == 0.0f) {</div>
+<div class="line"><span class="lineno">  183</span>        <span class="keywordflow">return</span> sBlack;</div>
+<div class="line"><span class="lineno">  184</span>    }</div>
+<div class="line"><span class="lineno">  185</span> </div>
+<div class="line"><span class="lineno">  186</span>    <span class="comment">// Include the discrete probability of picking this lobe</span></div>
+<div class="line"><span class="lineno">  187</span>    pdf *= lobePdf;</div>
+<div class="line"><span class="lineno">  188</span>    <span class="keywordflow">if</span> (lobesContribution != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  189</span>        lobesContribution-&gt;mFs[lobesContribution-&gt;mMatchedLobeCount] = f;</div>
+<div class="line"><span class="lineno">  190</span>        lobesContribution-&gt;mLobes[lobesContribution-&gt;mMatchedLobeCount] = lobe;</div>
+<div class="line"><span class="lineno">  191</span>        lobesContribution-&gt;mMatchedLobeCount++;</div>
+<div class="line"><span class="lineno">  192</span>    }</div>
+<div class="line"><span class="lineno">  193</span> </div>
+<div class="line"><span class="lineno">  194</span>    <span class="comment">// Note: This code and the whole mirror sampling rules assume the lobe</span></div>
+<div class="line"><span class="lineno">  195</span>    <span class="comment">// types are mutually exclusive.</span></div>
+<div class="line"><span class="lineno">  196</span>    <span class="comment">// TODO: Do we change this by sampling mirror lobes separately (see other</span></div>
+<div class="line"><span class="lineno">  197</span>    <span class="comment">// comment related to that in BsdfOneSampler::init()).</span></div>
+<div class="line"><span class="lineno">  198</span>    <span class="keywordtype">bool</span> lobeIsNotMirror = !lobe-&gt;matchesFlag(<a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa64cc302ce6273484db08f1987b5cf337">shading::BsdfLobe::MIRROR</a>);</div>
+<div class="line"><span class="lineno">  199</span>    <span class="keywordflow">if</span> (lobeIsNotMirror) {</div>
+<div class="line"><span class="lineno">  200</span> </div>
+<div class="line"><span class="lineno">  201</span>        <span class="comment">// Ignore btdfs or brdfs based on geometric surface normal</span></div>
+<div class="line"><span class="lineno">  202</span>        <a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">shading::BsdfLobe::Type</a> flags = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#ab355e001b4fbf7155069b17b772b1eab">mSlice</a>.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a4d1d69764bb4fabe816691de7ca07549">getSurfaceFlags</a>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a10884244ec37e62ce69bb6ac83387c29">mBsdf</a>, wi);</div>
+<div class="line"><span class="lineno">  203</span> </div>
+<div class="line"><span class="lineno">  204</span>        <span class="comment">// Compute the overall bsdf for the sampled direction</span></div>
+<div class="line"><span class="lineno">  205</span> </div>
+<div class="line"><span class="lineno">  206</span>        <span class="comment">// First make sure to re-test the sampled lobe with new flags</span></div>
+<div class="line"><span class="lineno">  207</span>        <span class="comment">// TODO: bug, like in PBRT, we&#39;re not testing this for mirror lobes</span></div>
+<div class="line"><span class="lineno">  208</span>        <span class="keywordflow">if</span> (!lobe-&gt;matchesFlags(flags)) {</div>
+<div class="line"><span class="lineno">  209</span>            f = sBlack;</div>
+<div class="line"><span class="lineno">  210</span>        }</div>
+<div class="line"><span class="lineno">  211</span> </div>
+<div class="line"><span class="lineno">  212</span>        <span class="comment">// Then add up all the other lobe&#39;s contributions</span></div>
+<div class="line"><span class="lineno">  213</span>        <span class="keywordtype">float</span> prevCdf = 0.0f;</div>
+<div class="line"><span class="lineno">  214</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> cI = 0; cI &lt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a9460a6c367645f883396905e503434eb">mLobeCount</a>; ++cI) {</div>
+<div class="line"><span class="lineno">  215</span>            <span class="keywordflow">if</span> (cI != cdfIndex) {</div>
+<div class="line"><span class="lineno">  216</span>                lobe = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a10884244ec37e62ce69bb6ac83387c29">mBsdf</a>.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf.html#a41564b391fb82dda160110490c57dd27">getLobe</a>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a3706d40e0a2a9cfaa1ac53a5ea2c8c58">mLobeIndex</a>[cI]);</div>
+<div class="line"><span class="lineno">  217</span> </div>
+<div class="line"><span class="lineno">  218</span>                <span class="comment">// We need to account for lobe pdf, even if the surface flag</span></div>
+<div class="line"><span class="lineno">  219</span>                <span class="comment">// doesn&#39;t match</span></div>
+<div class="line"><span class="lineno">  220</span>                <span class="keywordtype">float</span> tmpPdf = 0.0f;</div>
+<div class="line"><span class="lineno">  221</span>                Color color = lobe-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a9c4e3bbff247bebc35005287dd23c6f9">eval</a>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#ab355e001b4fbf7155069b17b772b1eab">mSlice</a>, wi, &amp;tmpPdf);</div>
+<div class="line"><span class="lineno">  222</span>                <span class="keywordflow">if</span> (lobe-&gt;matchesFlags(flags)) {</div>
+<div class="line"><span class="lineno">  223</span>                    f += color;</div>
+<div class="line"><span class="lineno">  224</span>                    <span class="keywordflow">if</span> (lobesContribution != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  225</span>                        lobesContribution-&gt;mFs[lobesContribution-&gt;mMatchedLobeCount] = color;</div>
+<div class="line"><span class="lineno">  226</span>                        lobesContribution-&gt;mLobes[lobesContribution-&gt;mMatchedLobeCount] = lobe;</div>
+<div class="line"><span class="lineno">  227</span>                        lobesContribution-&gt;mMatchedLobeCount++;</div>
+<div class="line"><span class="lineno">  228</span>                    }</div>
+<div class="line"><span class="lineno">  229</span>                }</div>
+<div class="line"><span class="lineno">  230</span>                pdf += tmpPdf * (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[cI] - prevCdf);</div>
+<div class="line"><span class="lineno">  231</span>            }</div>
+<div class="line"><span class="lineno">  232</span>            prevCdf = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[cI];</div>
+<div class="line"><span class="lineno">  233</span>        }</div>
+<div class="line"><span class="lineno">  234</span>    }</div>
+<div class="line"><span class="lineno">  235</span> </div>
+<div class="line"><span class="lineno">  236</span>    <span class="keywordflow">return</span> f;</div>
+<div class="line"><span class="lineno">  237</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_bsdf_one_sampler_html_af18181c402a335929942b9ce6ac4a180"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#af18181c402a335929942b9ce6ac4a180">moonray::pbr::BsdfOneSampler::sampleCdf</a></div><div class="ttdeci">int sampleCdf(float r, float &amp;pdf) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_one_sampler_8cc_source.html#l00130">BsdfOneSampler.cc:130</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43aa64cc302ce6273484db08f1987b5cf337"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa64cc302ce6273484db08f1987b5cf337">moonray::shading::BsdfLobe::MIRROR</a></div><div class="ttdeci">@ MIRROR</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00088">Bsdf.h:88</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a59f21649b0273a5e24a19b3e29aee570"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a59f21649b0273a5e24a19b3e29aee570">moonray::shading::BsdfLobe::sample</a></div><div class="ttdeci">virtual scene_rdl2::math::Color sample(const BsdfSlice &amp;slice, float r1, float r2, scene_rdl2::math::Vec3f &amp;wi, float &amp;pdf) const =0</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af18181c402a335929942b9ce6ac4a180" name="af18181c402a335929942b9ce6ac4a180"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af18181c402a335929942b9ce6ac4a180">&#9670;&#160;</a></span>sampleCdf()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int moonray::pbr::BsdfOneSampler::sampleCdf </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>pdf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_one_sampler_8cc_source.html#l00130">130</a> of file <a class="el" href="_bsdf_one_sampler_8cc_source.html">BsdfOneSampler.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  131</span>{</div>
+<div class="line"><span class="lineno">  132</span>    MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a9460a6c367645f883396905e503434eb">mLobeCount</a> &gt; 0);</div>
+<div class="line"><span class="lineno">  133</span> </div>
+<div class="line"><span class="lineno">  134</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> *ptr = std::upper_bound(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>, <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a> + <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a9460a6c367645f883396905e503434eb">mLobeCount</a> - 1, r);</div>
+<div class="line"><span class="lineno">  135</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> cdfIndex = ptr - <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>;</div>
+<div class="line"><span class="lineno">  136</span>    MNRY_ASSERT(cdfIndex &gt;= 0);</div>
+<div class="line"><span class="lineno">  137</span>    MNRY_ASSERT(cdfIndex &lt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a9460a6c367645f883396905e503434eb">mLobeCount</a>);</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>    pdf = (cdfIndex == 0)  ?</div>
+<div class="line"><span class="lineno">  140</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[cdfIndex] :</div>
+<div class="line"><span class="lineno">  141</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[cdfIndex] - <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a528884d65020fc032c60dd986e702a67">mLobeCdf</a>[cdfIndex - 1];</div>
+<div class="line"><span class="lineno">  142</span> </div>
+<div class="line"><span class="lineno">  143</span>    <span class="keywordflow">return</span> cdfIndex;</div>
+<div class="line"><span class="lineno">  144</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4e5926e1f683a73caf33b8842808b8c7" name="a4e5926e1f683a73caf33b8842808b8c7"></a>
@@ -307,6 +634,139 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_one_sampler_8cc_source.html#l00148">148</a> of file <a class="el" href="_bsdf_one_sampler_8cc_source.html">BsdfOneSampler.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  149</span>{</div>
+<div class="line"><span class="lineno">  150</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a9460a6c367645f883396905e503434eb">mLobeCount</a> == 0) {</div>
+<div class="line"><span class="lineno">  151</span>        pdf = 0.0f;</div>
+<div class="line"><span class="lineno">  152</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  153</span>    }</div>
+<div class="line"><span class="lineno">  154</span> </div>
+<div class="line"><span class="lineno">  155</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> cdfIndex = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#af18181c402a335929942b9ce6ac4a180">sampleCdf</a>(r, pdf);</div>
+<div class="line"><span class="lineno">  156</span>    <span class="keyword">const</span> shading::BsdfLobe *lobe = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a10884244ec37e62ce69bb6ac83387c29">mBsdf</a>.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf.html#a41564b391fb82dda160110490c57dd27">getLobe</a>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html#a3706d40e0a2a9cfaa1ac53a5ea2c8c58">mLobeIndex</a>[cdfIndex]);</div>
+<div class="line"><span class="lineno">  157</span> </div>
+<div class="line"><span class="lineno">  158</span>    <span class="keywordflow">return</span> lobe;</div>
+<div class="line"><span class="lineno">  159</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a10884244ec37e62ce69bb6ac83387c29" name="a10884244ec37e62ce69bb6ac83387c29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10884244ec37e62ce69bb6ac83387c29">&#9670;&#160;</a></span>mBsdf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmoonray_1_1shading_1_1_bsdf.html">shading::Bsdf</a>&amp; moonray::pbr::BsdfOneSampler::mBsdf</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_one_sampler_8h_source.html#l00075">75</a> of file <a class="el" href="_bsdf_one_sampler_8h_source.html">BsdfOneSampler.h</a>.</p>
+
+</div>
+</div>
+<a id="a528884d65020fc032c60dd986e702a67" name="a528884d65020fc032c60dd986e702a67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a528884d65020fc032c60dd986e702a67">&#9670;&#160;</a></span>mLobeCdf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::pbr::BsdfOneSampler::mLobeCdf[<a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a4131d6090c070e8e02a0ba4b46deb886">shading::Bsdf::maxLobes</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >The lobes' sampling CDF and index array are ordered with an increasing cdf Note: Using 8 bit lobe indices supports up to 256 lobes which should be more than enough! </p>
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_one_sampler_8h_source.html#l00081">81</a> of file <a class="el" href="_bsdf_one_sampler_8h_source.html">BsdfOneSampler.h</a>.</p>
+
+</div>
+</div>
+<a id="a9460a6c367645f883396905e503434eb" name="a9460a6c367645f883396905e503434eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9460a6c367645f883396905e503434eb">&#9670;&#160;</a></span>mLobeCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int moonray::pbr::BsdfOneSampler::mLobeCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_one_sampler_8h_source.html#l00083">83</a> of file <a class="el" href="_bsdf_one_sampler_8h_source.html">BsdfOneSampler.h</a>.</p>
+
+</div>
+</div>
+<a id="a3706d40e0a2a9cfaa1ac53a5ea2c8c58" name="a3706d40e0a2a9cfaa1ac53a5ea2c8c58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3706d40e0a2a9cfaa1ac53a5ea2c8c58">&#9670;&#160;</a></span>mLobeIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char moonray::pbr::BsdfOneSampler::mLobeIndex[<a class="el" href="classmoonray_1_1shading_1_1_bsdf.html#a4131d6090c070e8e02a0ba4b46deb886">shading::Bsdf::maxLobes</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_one_sampler_8h_source.html#l00082">82</a> of file <a class="el" href="_bsdf_one_sampler_8h_source.html">BsdfOneSampler.h</a>.</p>
+
+</div>
+</div>
+<a id="ab355e001b4fbf7155069b17b772b1eab" name="ab355e001b4fbf7155069b17b772b1eab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab355e001b4fbf7155069b17b772b1eab">&#9670;&#160;</a></span>mSlice</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmoonray_1_1shading_1_1_bsdf_slice.html">shading::BsdfSlice</a>&amp; moonray::pbr::BsdfOneSampler::mSlice</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_one_sampler_8h_source.html#l00076">76</a> of file <a class="el" href="_bsdf_one_sampler_8h_source.html">BsdfOneSampler.h</a>.</p>
 
 </div>
 </div>
@@ -315,9 +775,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/integrator/<a class="el" href="_bsdf_one_sampler_8cc_source.html">BsdfOneSampler.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_bsdf_one_sampler.html">BsdfOneSampler</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_cylinder_light_tester.html">CylinderLightTester</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_cylinder_light_tester.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -147,7 +163,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_light_testers_8h_source.html#l00187">187</a> of file <a class="el" href="_light_testers_8h_source.html">LightTesters.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  187</span>                                                                                    :</div>
+<div class="line"><span class="lineno">  188</span>        <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_tester.html#a933485e9d5bd5c9fbcf8b8f6aead42fd">LightTester</a>(std::static_pointer_cast&lt;const Light&gt;(light), desc, <span class="keyword">false</span>, 0) {}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_tester_html_a933485e9d5bd5c9fbcf8b8f6aead42fd"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_tester.html#a933485e9d5bd5c9fbcf8b8f6aead42fd">moonray::pbr::LightTester::LightTester</a></div><div class="ttdeci">LightTester(std::shared_ptr&lt; const Light &gt; light, const char *desc, bool infinite, unsigned isectDataFieldsUsed)</div><div class="ttdef"><b>Definition:</b> <a href="_light_testers_8h_source.html#l00072">LightTesters.h:72</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -177,7 +196,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1pbr_1_1_light_tester.html#ae7d3fea4ef8a3082de019afdd49a47da">moonray::pbr::LightTester</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_light_testers_8h_source.html#l00211">211</a> of file <a class="el" href="_light_testers_8h_source.html">LightTesters.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  212</span>    {</div>
+<div class="line"><span class="lineno">  213</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>CylinderLight *<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_light_tester.html#abcb5d72a55c1e1f839c8f1defb358969">mLight</a>.get());</div>
+<div class="line"><span class="lineno">  214</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_tester_html_abcb5d72a55c1e1f839c8f1defb358969"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_tester.html#abcb5d72a55c1e1f839c8f1defb358969">moonray::pbr::LightTester::mLight</a></div><div class="ttdeci">std::shared_ptr&lt; const Light &gt; mLight</div><div class="ttdef"><b>Definition:</b> <a href="_light_testers_8h_source.html#l00138">LightTesters.h:138</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afda4ba84c7bda91ea5d641081bfeff4b" name="afda4ba84c7bda91ea5d641081bfeff4b"></a>
@@ -206,7 +229,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_light_tester.html#a2a11b20acbd567d242b3dd647000510b">moonray::pbr::LightTester</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_light_testers_8h_source.html#l00216">216</a> of file <a class="el" href="_light_testers_8h_source.html">LightTesters.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  217</span>    {</div>
+<div class="line"><span class="lineno">  218</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;CylinderLight&quot;</span>;</div>
+<div class="line"><span class="lineno">  219</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5dc988de1ba94ac60ef5c81a76bad390" name="a5dc988de1ba94ac60ef5c81a76bad390"></a>
@@ -259,16 +285,41 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1pbr_1_1_light_tester.html#a928482fd99c5ec928b53e68389a8f27a">moonray::pbr::LightTester</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_light_testers_8h_source.html#l00191">191</a> of file <a class="el" href="_light_testers_8h_source.html">LightTesters.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  192</span>    {</div>
+<div class="line"><span class="lineno">  193</span>        <span class="keyword">const</span> CylinderLight *light = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_cylinder_light_tester.html#a6aea60a4dd6db49ccfd55d6fee98ec88">getLight</a>();</div>
+<div class="line"><span class="lineno">  194</span> </div>
+<div class="line"><span class="lineno">  195</span>        <span class="keyword">const</span> scene_rdl2::math::Vec3f localP = light-&gt;uv2local(scene_rdl2::math::Vec2f(r0, r1));</div>
+<div class="line"><span class="lineno">  196</span>        <span class="keyword">const</span> scene_rdl2::math::Vec3f localN = scene_rdl2::math::Vec3f(localP.x, 0.0f, localP.z);</div>
+<div class="line"><span class="lineno">  197</span> </div>
+<div class="line"><span class="lineno">  198</span>        <span class="keyword">const</span> scene_rdl2::math::Vec3f renderP = light-&gt;xformPointLocal2Render(localP, 0.f);</div>
+<div class="line"><span class="lineno">  199</span>        <span class="keyword">const</span> scene_rdl2::math::Vec3f renderN = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(light-&gt;xformNormalLocal2Render(localN, 0.f));</div>
+<div class="line"><span class="lineno">  200</span> </div>
+<div class="line"><span class="lineno">  201</span>        <span class="comment">// We don&#39;t cast light from points not visible from p.</span></div>
+<div class="line"><span class="lineno">  202</span>        scene_rdl2::math::Vec3f wi = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(renderP - p);</div>
+<div class="line"><span class="lineno">  203</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(renderN, wi) &gt; -scene_rdl2::math::sEpsilon) {</div>
+<div class="line"><span class="lineno">  204</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  205</span>        }</div>
+<div class="line"><span class="lineno">  206</span> </div>
+<div class="line"><span class="lineno">  207</span>        isect-&gt;init(p, renderP, renderN);</div>
+<div class="line"><span class="lineno">  208</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  209</span>    }</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a26b3f6b7b842544058f3766b0da79257"><div class="ttname"><a href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a></div><div class="ttdeci">__host__ __device__ float3 normalize(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00165">GPUMath.h:165</a></div></div>
+<div class="ttc" id="a_n_point_8h_html_a16747d68c1e06270b0ed335d631b66f3"><div class="ttname"><a href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a></div><div class="ttdeci">float dot(const NPoint&lt; D &gt; &amp;a, const NPoint&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00271">NPoint.h:271</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cylinder_light_tester_html_a6aea60a4dd6db49ccfd55d6fee98ec88"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cylinder_light_tester.html#a6aea60a4dd6db49ccfd55d6fee98ec88">moonray::pbr::CylinderLightTester::getLight</a></div><div class="ttdeci">virtual const CylinderLight * getLight() const override</div><div class="ttdef"><b>Definition:</b> <a href="_light_testers_8h_source.html#l00211">LightTesters.h:211</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/unittest/<a class="el" href="_light_testers_8h_source.html">LightTesters.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_cylinder_light_tester.html">CylinderLightTester</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

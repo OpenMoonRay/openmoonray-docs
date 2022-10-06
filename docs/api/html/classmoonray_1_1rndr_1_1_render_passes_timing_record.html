@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html">RenderPassesTimingRecord</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1rndr_1_1_render_passes_timing_record.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -158,7 +174,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00123">123</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  123</span>{ <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a55bcb533e4b9f282b43a2ba136b2a911">init</a>(); }</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_passes_timing_record_html_a55bcb533e4b9f282b43a2ba136b2a911"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a55bcb533e4b9f282b43a2ba136b2a911">moonray::rndr::RenderPassesTimingRecord::init</a></div><div class="ttdeci">void init()</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00130">RenderTimingRecord.h:130</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0bb07b6b9fb1fc2d7e554a10c3e1df1e" name="a0bb07b6b9fb1fc2d7e554a10c3e1df1e"></a>
@@ -238,7 +256,47 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00157">157</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  157</span>                                {</div>
+<div class="line"><span class="lineno">  158</span>        <span class="keywordtype">double</span> now = scene_rdl2::util::getSeconds();</div>
+<div class="line"><span class="lineno">  159</span> </div>
+<div class="line"><span class="lineno">  160</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a439ea5e8aa99471a6a083f619a66eec3">mRenderEngineMin</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a23b570fc4b1d4cbec319452ac18a7530">init</a>(DBL_MAX);</div>
+<div class="line"><span class="lineno">  161</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a6298b7cfb8629f9620ff10163f316b34">mRenderEngineMax</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a23b570fc4b1d4cbec319452ac18a7530">init</a>();</div>
+<div class="line"><span class="lineno">  162</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a7b4e487e69cb88f899e22e2f09d750b0">mRenderEngineAverage</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a23b570fc4b1d4cbec319452ac18a7530">init</a>();</div>
+<div class="line"><span class="lineno">  163</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#ad7f2023ec29155cc548dab6687ee4c82">mSamplesAll</a> = 0;</div>
+<div class="line"><span class="lineno">  164</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;currEng : <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#aa4a7612d4641addd2d204d57d43120a3">mRenderEngines</a>) {</div>
+<div class="line"><span class="lineno">  165</span>            <span class="keywordtype">double</span> currGap = now - currEng.get(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3caf83d52cbed7cc99fb3ad30d731ae15e4">RenderEngineTimingRecord::Tag::ENDGAP</a>);</div>
+<div class="line"><span class="lineno">  166</span>            currEng.set(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3caf83d52cbed7cc99fb3ad30d731ae15e4">RenderEngineTimingRecord::Tag::ENDGAP</a>, currGap); <span class="comment">// update by proper gap duration.</span></div>
+<div class="line"><span class="lineno">  167</span> </div>
+<div class="line"><span class="lineno">  168</span>            <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a439ea5e8aa99471a6a083f619a66eec3">mRenderEngineMin</a> != currEng; <span class="comment">// min value update</span></div>
+<div class="line"><span class="lineno">  169</span>            <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a6298b7cfb8629f9620ff10163f316b34">mRenderEngineMax</a> ^= currEng; <span class="comment">// max value update</span></div>
+<div class="line"><span class="lineno">  170</span>            <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a7b4e487e69cb88f899e22e2f09d750b0">mRenderEngineAverage</a> += currEng; <span class="comment">// add</span></div>
+<div class="line"><span class="lineno">  171</span>            <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#ad7f2023ec29155cc548dab6687ee4c82">mSamplesAll</a> += <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(currEng.get(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca47745487dcf78cdbbe010a614a859b9d">RenderEngineTimingRecord::Tag::PROCESSEDSAMPLETOTAL</a>));</div>
+<div class="line"><span class="lineno">  172</span>        }</div>
+<div class="line"><span class="lineno">  173</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a7b4e487e69cb88f899e22e2f09d750b0">mRenderEngineAverage</a> *= <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(1.0 / (double)(std::max(<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#aa4a7612d4641addd2d204d57d43120a3">mRenderEngines</a>.size(), (size_t)1)));</div>
+<div class="line"><span class="lineno">  174</span> </div>
+<div class="line"><span class="lineno">  175</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a2ebcefcb8a3d3baead275e1652e14e85">mEndTime</a> = scene_rdl2::util::getSeconds();</div>
+<div class="line"><span class="lineno">  176</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#ae12afef14eb32db03f19dc2e2f11b596">mDuration</a> = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a2ebcefcb8a3d3baead275e1652e14e85">mEndTime</a> - <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a3cde92d32b9b487fdbe2be30ccdbe409">mStartTime</a>;</div>
+<div class="line"><span class="lineno">  177</span> </div>
+<div class="line"><span class="lineno">  178</span>        <span class="keywordtype">double</span> averageActiveDuration = <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a352f6078736ec153cc98f8957f8db102">getActiveDuration</a>();</div>
+<div class="line"><span class="lineno">  179</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a9b6d8f1aec90956bc614f46bcb80290f">mSampleCost</a> = averageActiveDuration / <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(std::max(<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a31c1bffea1c66ac06bf7033b6b005891">mSamplesPerTile</a>, (<span class="keywordtype">unsigned</span>)1));</div>
+<div class="line"><span class="lineno">  180</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#acea94269f37a00516614a425b44d177d">mOverheadCost</a> = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#ae12afef14eb32db03f19dc2e2f11b596">mDuration</a> - averageActiveDuration;</div>
+<div class="line"><span class="lineno">  181</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a23b570fc4b1d4cbec319452ac18a7530"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a23b570fc4b1d4cbec319452ac18a7530">moonray::rndr::RenderEngineTimingRecord::init</a></div><div class="ttdeci">void init(const double v=0.0)</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00086">RenderTimingRecord.h:86</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a788650eb48c3121d006f5c707522df3ca47745487dcf78cdbbe010a614a859b9d"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca47745487dcf78cdbbe010a614a859b9d">moonray::rndr::RenderEngineTimingRecord::Tag::PROCESSEDSAMPLETOTAL</a></div><div class="ttdeci">@ PROCESSEDSAMPLETOTAL</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a788650eb48c3121d006f5c707522df3caf83d52cbed7cc99fb3ad30d731ae15e4"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3caf83d52cbed7cc99fb3ad30d731ae15e4">moonray::rndr::RenderEngineTimingRecord::Tag::ENDGAP</a></div><div class="ttdeci">@ ENDGAP</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_passes_timing_record_html_a2ebcefcb8a3d3baead275e1652e14e85"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a2ebcefcb8a3d3baead275e1652e14e85">moonray::rndr::RenderPassesTimingRecord::mEndTime</a></div><div class="ttdeci">double mEndTime</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00204">RenderTimingRecord.h:204</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_passes_timing_record_html_a31c1bffea1c66ac06bf7033b6b005891"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a31c1bffea1c66ac06bf7033b6b005891">moonray::rndr::RenderPassesTimingRecord::mSamplesPerTile</a></div><div class="ttdeci">unsigned mSamplesPerTile</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00207">RenderTimingRecord.h:207</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_passes_timing_record_html_a352f6078736ec153cc98f8957f8db102"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a352f6078736ec153cc98f8957f8db102">moonray::rndr::RenderPassesTimingRecord::getActiveDuration</a></div><div class="ttdeci">double getActiveDuration() const</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00191">RenderTimingRecord.h:191</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_passes_timing_record_html_a3cde92d32b9b487fdbe2be30ccdbe409"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a3cde92d32b9b487fdbe2be30ccdbe409">moonray::rndr::RenderPassesTimingRecord::mStartTime</a></div><div class="ttdeci">double mStartTime</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00203">RenderTimingRecord.h:203</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_passes_timing_record_html_a439ea5e8aa99471a6a083f619a66eec3"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a439ea5e8aa99471a6a083f619a66eec3">moonray::rndr::RenderPassesTimingRecord::mRenderEngineMin</a></div><div class="ttdeci">RenderEngineTimingRecord mRenderEngineMin</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00211">RenderTimingRecord.h:211</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_passes_timing_record_html_a6298b7cfb8629f9620ff10163f316b34"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a6298b7cfb8629f9620ff10163f316b34">moonray::rndr::RenderPassesTimingRecord::mRenderEngineMax</a></div><div class="ttdeci">RenderEngineTimingRecord mRenderEngineMax</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00212">RenderTimingRecord.h:212</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_passes_timing_record_html_a7b4e487e69cb88f899e22e2f09d750b0"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a7b4e487e69cb88f899e22e2f09d750b0">moonray::rndr::RenderPassesTimingRecord::mRenderEngineAverage</a></div><div class="ttdeci">RenderEngineTimingRecord mRenderEngineAverage</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00213">RenderTimingRecord.h:213</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_passes_timing_record_html_a9b6d8f1aec90956bc614f46bcb80290f"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a9b6d8f1aec90956bc614f46bcb80290f">moonray::rndr::RenderPassesTimingRecord::mSampleCost</a></div><div class="ttdeci">double mSampleCost</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00215">RenderTimingRecord.h:215</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_passes_timing_record_html_aa4a7612d4641addd2d204d57d43120a3"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#aa4a7612d4641addd2d204d57d43120a3">moonray::rndr::RenderPassesTimingRecord::mRenderEngines</a></div><div class="ttdeci">std::vector&lt; RenderEngineTimingRecord &gt; mRenderEngines</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00210">RenderTimingRecord.h:210</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_passes_timing_record_html_acea94269f37a00516614a425b44d177d"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#acea94269f37a00516614a425b44d177d">moonray::rndr::RenderPassesTimingRecord::mOverheadCost</a></div><div class="ttdeci">double mOverheadCost</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00216">RenderTimingRecord.h:216</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_passes_timing_record_html_ad7f2023ec29155cc548dab6687ee4c82"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#ad7f2023ec29155cc548dab6687ee4c82">moonray::rndr::RenderPassesTimingRecord::mSamplesAll</a></div><div class="ttdeci">unsigned mSamplesAll</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00208">RenderTimingRecord.h:208</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_passes_timing_record_html_ae12afef14eb32db03f19dc2e2f11b596"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#ae12afef14eb32db03f19dc2e2f11b596">moonray::rndr::RenderPassesTimingRecord::mDuration</a></div><div class="ttdeci">double mDuration</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00205">RenderTimingRecord.h:205</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a352f6078736ec153cc98f8957f8db102" name="a352f6078736ec153cc98f8957f8db102"></a>
@@ -265,7 +323,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00191">191</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  191</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a7b4e487e69cb88f899e22e2f09d750b0">mRenderEngineAverage</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a675c10626acbca199bb7a34fd23ee759">get</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca18ff74f43da410c5529f7d6fca84f115">RenderEngineTimingRecord::Tag::ACTIVE</a>); }</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a675c10626acbca199bb7a34fd23ee759"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a675c10626acbca199bb7a34fd23ee759">moonray::rndr::RenderEngineTimingRecord::get</a></div><div class="ttdeci">double get(const Tag &amp;tag) const</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00099">RenderTimingRecord.h:99</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a788650eb48c3121d006f5c707522df3ca18ff74f43da410c5529f7d6fca84f115"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca18ff74f43da410c5529f7d6fca84f115">moonray::rndr::RenderEngineTimingRecord::Tag::ACTIVE</a></div><div class="ttdeci">@ ACTIVE</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5a0e0c43df98b67e46c596d201360e23" name="a5a0e0c43df98b67e46c596d201360e23"></a>
@@ -292,7 +353,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00184">184</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  184</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a2ebcefcb8a3d3baead275e1652e14e85">mEndTime</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acfede5c6982c50b35a33401b6b40c285" name="acfede5c6982c50b35a33401b6b40c285"></a>
@@ -320,7 +382,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00186">186</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  186</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#aa4a7612d4641addd2d204d57d43120a3">mRenderEngines</a>[id]; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af9cbf16cc22fd853230b8a8aa2b4370a" name="af9cbf16cc22fd853230b8a8aa2b4370a"></a>
@@ -347,7 +410,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00192">192</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  192</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#acea94269f37a00516614a425b44d177d">mOverheadCost</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac1d432a01fb792b5ac9ce7e692f44453" name="ac1d432a01fb792b5ac9ce7e692f44453"></a>
@@ -374,7 +438,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00190">190</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  190</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a9b6d8f1aec90956bc614f46bcb80290f">mSampleCost</a>; } <span class="comment">// only valid when realtime/progressiveCheckpoint renderMode</span></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a14a3ee84cda6c918ba9e7ddfa36a28a2" name="a14a3ee84cda6c918ba9e7ddfa36a28a2"></a>
@@ -401,7 +466,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00189">189</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  189</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#ad7f2023ec29155cc548dab6687ee4c82">mSamplesAll</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a63a3b5ce0a5637ed1bfa53ad66fbc407" name="a63a3b5ce0a5637ed1bfa53ad66fbc407"></a>
@@ -428,7 +494,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00188">188</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  188</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a31c1bffea1c66ac06bf7033b6b005891">mSamplesPerTile</a>; } <span class="comment">// only valid when realtime/progressiveCheckpoint renderMode</span></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae6a048d7b9489d5e6276068fb7fe7ad7" name="ae6a048d7b9489d5e6276068fb7fe7ad7"></a>
@@ -455,7 +522,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00183">183</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  183</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a3cde92d32b9b487fdbe2be30ccdbe409">mStartTime</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a55bcb533e4b9f282b43a2ba136b2a911" name="a55bcb533e4b9f282b43a2ba136b2a911"></a>
@@ -482,7 +550,25 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00130">130</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  130</span>                {</div>
+<div class="line"><span class="lineno">  131</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a03fe3a765ca009d9d116bc05abb72357">mTimeBudget</a> = 0.0;</div>
+<div class="line"><span class="lineno">  132</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a3cde92d32b9b487fdbe2be30ccdbe409">mStartTime</a> = 0.0;</div>
+<div class="line"><span class="lineno">  133</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a2ebcefcb8a3d3baead275e1652e14e85">mEndTime</a> = 0.0;</div>
+<div class="line"><span class="lineno">  134</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#ae12afef14eb32db03f19dc2e2f11b596">mDuration</a> = 0.0;</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a31c1bffea1c66ac06bf7033b6b005891">mSamplesPerTile</a> = 0;</div>
+<div class="line"><span class="lineno">  137</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#ad7f2023ec29155cc548dab6687ee4c82">mSamplesAll</a> = 0;</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;currEng : <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#aa4a7612d4641addd2d204d57d43120a3">mRenderEngines</a>) currEng.init();</div>
+<div class="line"><span class="lineno">  140</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a439ea5e8aa99471a6a083f619a66eec3">mRenderEngineMin</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a23b570fc4b1d4cbec319452ac18a7530">init</a>(DBL_MAX);</div>
+<div class="line"><span class="lineno">  141</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a6298b7cfb8629f9620ff10163f316b34">mRenderEngineMax</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a23b570fc4b1d4cbec319452ac18a7530">init</a>();</div>
+<div class="line"><span class="lineno">  142</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a7b4e487e69cb88f899e22e2f09d750b0">mRenderEngineAverage</a>.<a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a23b570fc4b1d4cbec319452ac18a7530">init</a>();</div>
+<div class="line"><span class="lineno">  143</span> </div>
+<div class="line"><span class="lineno">  144</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a9b6d8f1aec90956bc614f46bcb80290f">mSampleCost</a> = 0.0;</div>
+<div class="line"><span class="lineno">  145</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#acea94269f37a00516614a425b44d177d">mOverheadCost</a> = 0.0;</div>
+<div class="line"><span class="lineno">  146</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_passes_timing_record_html_a03fe3a765ca009d9d116bc05abb72357"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a03fe3a765ca009d9d116bc05abb72357">moonray::rndr::RenderPassesTimingRecord::mTimeBudget</a></div><div class="ttdeci">double mTimeBudget</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00202">RenderTimingRecord.h:202</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a53246e6b8294ca85823f6cf819f5c9fe" name="a53246e6b8294ca85823f6cf819f5c9fe"></a>
@@ -562,7 +648,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00151">151</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  151</span>{ <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a31c1bffea1c66ac06bf7033b6b005891">mSamplesPerTile</a> = v; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae665b6bd2af0b8b3182575ed7f77b282" name="ae665b6bd2af0b8b3182575ed7f77b282"></a>
@@ -590,7 +677,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00148">148</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  148</span>{ <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a03fe3a765ca009d9d116bc05abb72357">mTimeBudget</a> = sec; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5022f81316aaa44a6b64108bbe48adb1" name="a5022f81316aaa44a6b64108bbe48adb1"></a>
@@ -620,7 +708,29 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8cc_source.html#l00056">56</a> of file <a class="el" href="_render_timing_record_8cc_source.html">RenderTimingRecord.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   57</span>{</div>
+<div class="line"><span class="lineno">   58</span>    ostr &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;renderPasses {\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   59</span>    {</div>
+<div class="line"><span class="lineno">   60</span>        std::string nhd = hd + <span class="stringliteral">&quot;  &quot;</span>;</div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>        <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a0256a598479f6cea56ba43898dded2d6">showRenderEngines</a>(ostr, nhd);</div>
+<div class="line"><span class="lineno">   63</span>        <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a2221d2964d6b296163c6c187ac6b46da">showRecord</a>(ostr, <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a6298b7cfb8629f9620ff10163f316b34">mRenderEngineMax</a>, nhd, <span class="stringliteral">&quot;max&quot;</span>);</div>
+<div class="line"><span class="lineno">   64</span>        <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a2221d2964d6b296163c6c187ac6b46da">showRecord</a>(ostr, <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a439ea5e8aa99471a6a083f619a66eec3">mRenderEngineMin</a>, nhd, <span class="stringliteral">&quot;min&quot;</span>);</div>
+<div class="line"><span class="lineno">   65</span>        <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a2221d2964d6b296163c6c187ac6b46da">showRecord</a>(ostr, <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a7b4e487e69cb88f899e22e2f09d750b0">mRenderEngineAverage</a>, nhd, <span class="stringliteral">&quot;average&quot;</span>);</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>        ostr &lt;&lt; nhd &lt;&lt; <span class="stringliteral">&quot;    mTimeBudget:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a03fe3a765ca009d9d116bc05abb72357">mTimeBudget</a> * 1000.0 &lt;&lt; <span class="stringliteral">&quot; ms : time budget of renderPasses\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   68</span>        ostr &lt;&lt; nhd &lt;&lt; <span class="stringliteral">&quot;      mDuration:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#ae12afef14eb32db03f19dc2e2f11b596">mDuration</a> * 1000.0 &lt;&lt; <span class="stringliteral">&quot; ms : duration of renderPasses\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   69</span>        ostr &lt;&lt; nhd &lt;&lt; <span class="stringliteral">&quot;mSamplesPerTile:&quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a31c1bffea1c66ac06bf7033b6b005891">mSamplesPerTile</a> &lt;&lt; <span class="stringliteral">&quot; samples : samples per tile of renderPasses()\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   70</span>        ostr &lt;&lt; nhd &lt;&lt; <span class="stringliteral">&quot;    mSamplesAll:&quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#ad7f2023ec29155cc548dab6687ee4c82">mSamplesAll</a> &lt;&lt; <span class="stringliteral">&quot; samples : total samples of renderPasses()\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   71</span>        ostr &lt;&lt; nhd &lt;&lt; <span class="stringliteral">&quot;    mSampleCost:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a9b6d8f1aec90956bc614f46bcb80290f">mSampleCost</a> * 1000.0 &lt;&lt; <span class="stringliteral">&quot; ms : sample cost of this renderPasses\n&quot;</span></div>
+<div class="line"><span class="lineno">   72</span>             &lt;&lt; nhd &lt;&lt; <span class="stringliteral">&quot;  mOverheadCost:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#acea94269f37a00516614a425b44d177d">mOverheadCost</a> * 1000.0 &lt;&lt; <span class="stringliteral">&quot; ms : overhead cost of this renderPasses\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="line"><span class="lineno">   74</span>    ostr &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;}\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   75</span>}</div>
+<div class="ttc" id="a_render_timing_record_8cc_html_a702108ef2f7688e24ef2253d865d30f1"><div class="ttname"><a href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a></div><div class="ttdeci">#define _F7_3</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8cc_source.html#l00016">RenderTimingRecord.cc:16</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_passes_timing_record_html_a0256a598479f6cea56ba43898dded2d6"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a0256a598479f6cea56ba43898dded2d6">moonray::rndr::RenderPassesTimingRecord::showRenderEngines</a></div><div class="ttdeci">void showRenderEngines(std::ostringstream &amp;ostr, const std::string &amp;hd) const</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8cc_source.html#l00078">RenderTimingRecord.cc:78</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_passes_timing_record_html_a2221d2964d6b296163c6c187ac6b46da"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a2221d2964d6b296163c6c187ac6b46da">moonray::rndr::RenderPassesTimingRecord::showRecord</a></div><div class="ttdeci">void showRecord(std::ostringstream &amp;ostr, const RenderEngineTimingRecord &amp;rec, const std::string &amp;hd, const std::string &amp;msg) const</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8cc_source.html#l00088">RenderTimingRecord.cc:88</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2221d2964d6b296163c6c187ac6b46da" name="a2221d2964d6b296163c6c187ac6b46da"></a>
@@ -670,7 +780,14 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8cc_source.html#l00088">88</a> of file <a class="el" href="_render_timing_record_8cc_source.html">RenderTimingRecord.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   91</span>{</div>
+<div class="line"><span class="lineno">   92</span>    ostr &lt;&lt; hd &lt;&lt; msg &lt;&lt; <span class="stringliteral">&quot; {\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   93</span>    {</div>
+<div class="line"><span class="lineno">   94</span>        rec.showDetail(ostr, hd + <span class="stringliteral">&quot;  &quot;</span>);</div>
+<div class="line"><span class="lineno">   95</span>    }</div>
+<div class="line"><span class="lineno">   96</span>    ostr &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;}\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   97</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0256a598479f6cea56ba43898dded2d6" name="a0256a598479f6cea56ba43898dded2d6"></a>
@@ -708,7 +825,14 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8cc_source.html#l00078">78</a> of file <a class="el" href="_render_timing_record_8cc_source.html">RenderTimingRecord.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   79</span>{</div>
+<div class="line"><span class="lineno">   80</span>    ostr &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;engine timing detail (total:&quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#aa4a7612d4641addd2d204d57d43120a3">mRenderEngines</a>.size() &lt;&lt; <span class="stringliteral">&quot;) {\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   81</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;currEng : <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#aa4a7612d4641addd2d204d57d43120a3">mRenderEngines</a>) {</div>
+<div class="line"><span class="lineno">   82</span>        currEng.showSimple(ostr, hd + <span class="stringliteral">&quot;  &quot;</span>);</div>
+<div class="line"><span class="lineno">   83</span>    }</div>
+<div class="line"><span class="lineno">   84</span>    ostr &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;}\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   85</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af6191940c8222d0ae9535696590faa3d" name="af6191940c8222d0ae9535696590faa3d"></a>
@@ -736,7 +860,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00153">153</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  153</span>                                                     {</div>
+<div class="line"><span class="lineno">  154</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#a3cde92d32b9b487fdbe2be30ccdbe409">mStartTime</a> = scene_rdl2::util::getSeconds();</div>
+<div class="line"><span class="lineno">  155</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#aa4a7612d4641addd2d204d57d43120a3">mRenderEngines</a>.size() &lt; totalEngine) <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html#aa4a7612d4641addd2d204d57d43120a3">mRenderEngines</a>.resize(totalEngine);</div>
+<div class="line"><span class="lineno">  156</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1033,9 +1161,13 @@ Protected Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/rndr/<a class="el" href="_render_timing_record_8cc_source.html">RenderTimingRecord.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rndr_1_1_render_passes_timing_record.html">RenderPassesTimingRecord</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

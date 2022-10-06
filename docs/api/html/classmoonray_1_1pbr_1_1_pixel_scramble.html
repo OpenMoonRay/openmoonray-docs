@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,16 +42,32 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_pixel_scramble.html">PixelScramble</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_pixel_scramble.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classmoonray_1_1pbr_1_1_pixel_scramble-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::pbr::PixelScramble Class Reference</div></div>
 </div><!--header-->
@@ -101,11 +121,58 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a320539c3316dbdbc6b6c3d3f2e27d39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a183144492b2580c30f40784e086efb7f"><td class="memItemLeft" align="right" valign="top">static constexpr std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a183144492b2580c30f40784e086efb7f">sFactorialsRoundDownPow2</a> []</td></tr>
 <tr class="separator:a183144492b2580c30f40784e086efb7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a7eea51fcc3f32ea1fb60c009d4a37a5f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a7eea51fcc3f32ea1fb60c009d4a37a5f">Container</a> = std::vector&lt; <a class="el" href="class_array8.html">Array8</a>, scene_rdl2::alloc::AlignedAllocator&lt; <a class="el" href="class_array8.html">Array8</a>, <a class="el" href="namespacemoonray_1_1pbr.html#adb53cd5aff508e3fb754cdeaf05f5f9f">kSIMDAlignment</a> &gt; &gt;</td></tr>
+<tr class="separator:a7eea51fcc3f32ea1fb60c009d4a37a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:aa67546546afa8febd222102e9c6303da"><td class="memItemLeft" align="right" valign="top">static constexpr std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#aa67546546afa8febd222102e9c6303da">roundDownToMultiple</a> (std::uint32_t n, std::uint32_t multiple) noexcept</td></tr>
+<tr class="separator:aa67546546afa8febd222102e9c6303da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2deb92c1693b5e571d0cee09d56d3489"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a7eea51fcc3f32ea1fb60c009d4a37a5f">Container</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a2deb92c1693b5e571d0cee09d56d3489">generate8ElementPermutations</a> ()</td></tr>
+<tr class="separator:a2deb92c1693b5e571d0cee09d56d3489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a4957fdd92d005b5c4bd4a6e1ea108d68"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a4957fdd92d005b5c4bd4a6e1ea108d68">mSeed</a></td></tr>
+<tr class="separator:a4957fdd92d005b5c4bd4a6e1ea108d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a1699c2fb9757cb841720ed6a5e23a5ba"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a7eea51fcc3f32ea1fb60c009d4a37a5f">Container</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a1699c2fb9757cb841720ed6a5e23a5ba">s8Permutations</a> = <a class="el" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a2deb92c1693b5e571d0cee09d56d3489">PixelScramble::generate8ElementPermutations</a>()</td></tr>
+<tr class="separator:a1699c2fb9757cb841720ed6a5e23a5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_pixel_scramble_8h_source.html#l00109">109</a> of file <a class="el" href="_pixel_scramble_8h_source.html">PixelScramble.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a7eea51fcc3f32ea1fb60c009d4a37a5f" name="a7eea51fcc3f32ea1fb60c009d4a37a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eea51fcc3f32ea1fb60c009d4a37a5f">&#9670;&#160;</a></span>Container</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a7eea51fcc3f32ea1fb60c009d4a37a5f">moonray::pbr::PixelScramble::Container</a> =  std::vector&lt;<a class="el" href="class_array8.html">Array8</a>, scene_rdl2::alloc::AlignedAllocator&lt;<a class="el" href="class_array8.html">Array8</a>, <a class="el" href="namespacemoonray_1_1pbr.html#adb53cd5aff508e3fb754cdeaf05f5f9f">kSIMDAlignment</a>&gt; &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_pixel_scramble_8h_source.html#l00253">253</a> of file <a class="el" href="_pixel_scramble_8h_source.html">PixelScramble.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9811198af573d8134c2ad8e9a078d6b3" name="a9811198af573d8134c2ad8e9a078d6b3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9811198af573d8134c2ad8e9a078d6b3">&#9670;&#160;</a></span>PixelScramble() <span class="overload">[1/3]</span></h2>
 
@@ -130,7 +197,11 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_pixel_scramble_8h_source.html#l00187">187</a> of file <a class="el" href="_pixel_scramble_8h_source.html">PixelScramble.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  188</span>    : <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a4957fdd92d005b5c4bd4a6e1ea108d68">mSeed</a>(0)</div>
+<div class="line"><span class="lineno">  189</span>    {</div>
+<div class="line"><span class="lineno">  190</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_pixel_scramble_html_a4957fdd92d005b5c4bd4a6e1ea108d68"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a4957fdd92d005b5c4bd4a6e1ea108d68">moonray::pbr::PixelScramble::mSeed</a></div><div class="ttdeci">std::uint32_t mSeed</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_scramble_8h_source.html#l00263">PixelScramble.h:263</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2b91ae6f33bc1007a995fecdb7fe6b5d" name="a2b91ae6f33bc1007a995fecdb7fe6b5d"></a>
@@ -158,7 +229,10 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_pixel_scramble_8h_source.html#l00192">192</a> of file <a class="el" href="_pixel_scramble_8h_source.html">PixelScramble.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  193</span>    : <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a4957fdd92d005b5c4bd4a6e1ea108d68">mSeed</a>(seed)</div>
+<div class="line"><span class="lineno">  194</span>    {</div>
+<div class="line"><span class="lineno">  195</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a911ba7c6742a52e3cab2425470136864" name="a911ba7c6742a52e3cab2425470136864"></a>
@@ -208,10 +282,67 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_pixel_scramble_8h_source.html#l00197">197</a> of file <a class="el" href="_pixel_scramble_8h_source.html">PixelScramble.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  198</span>    {</div>
+<div class="line"><span class="lineno">  199</span>        <span class="keyword">const</span> <span class="keyword">auto</span> stereoSeed = <span class="keyword">static_cast&lt;</span>std::uint32_t<span class="keyword">&gt;</span>(stereoView);</div>
+<div class="line"><span class="lineno">  200</span>        std::uint32_t idx = (px &lt;&lt; 16u) | py;</div>
+<div class="line"><span class="lineno">  201</span>        <span class="comment">// Quick scramble of frameNumber and stereoSeed</span></div>
+<div class="line"><span class="lineno">  202</span>        <span class="comment">// stereoSeed is generally zero-based, so add one to it to make sure it</span></div>
+<div class="line"><span class="lineno">  203</span>        <span class="comment">// doesn&#39;t interfere with frameNumber. The multiplication number is an</span></div>
+<div class="line"><span class="lineno">  204</span>        <span class="comment">// arbitrarily largish number, prime so that it&#39;s less likely to interfere</span></div>
+<div class="line"><span class="lineno">  205</span>        <span class="comment">// with the mod below, to make sure different stereo views are decently far</span></div>
+<div class="line"><span class="lineno">  206</span>        <span class="comment">// apart.</span></div>
+<div class="line"><span class="lineno">  207</span>        idx ^= __builtin_bswap32(frameNumber + 2000291 * (stereoSeed + 1));</div>
+<div class="line"><span class="lineno">  208</span>        <span class="comment">//idx ^= _byteswap_ulong(frameNumber + 2000291 * (stereoSeed + 1));</span></div>
+<div class="line"><span class="lineno">  209</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a4957fdd92d005b5c4bd4a6e1ea108d68">mSeed</a> = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a684cb3e883b7fec7f3b49874068e809c">gphash</a>(idx);</div>
+<div class="line"><span class="lineno">  210</span>    }</div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a684cb3e883b7fec7f3b49874068e809c"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a684cb3e883b7fec7f3b49874068e809c">moonray::pbr::gphash</a></div><div class="ttdeci">std::uint32_t gphash(std::uint32_t in, std::uint32_t seed=65521u) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="gphash_8h_source.html#l00032">gphash.h:32</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2deb92c1693b5e571d0cee09d56d3489" name="a2deb92c1693b5e571d0cee09d56d3489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2deb92c1693b5e571d0cee09d56d3489">&#9670;&#160;</a></span>generate8ElementPermutations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a7eea51fcc3f32ea1fb60c009d4a37a5f">PixelScramble::Container</a> moonray::pbr::PixelScramble::generate8ElementPermutations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_pixel_scramble_8cc_source.html#l00043">43</a> of file <a class="el" href="_pixel_scramble_8cc_source.html">PixelScramble.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>{</div>
+<div class="line"><span class="lineno">   45</span>    <a class="code hl_typedef" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a7eea51fcc3f32ea1fb60c009d4a37a5f">Container</a> values;</div>
+<div class="line"><span class="lineno">   46</span>    values.resize(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a3b4c7395b2c3114950a32d88368a143e">s8Factorial</a>);</div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">for</span> (std::uint32_t i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a3b4c7395b2c3114950a32d88368a143e">s8Factorial</a>; ++i) {</div>
+<div class="line"><span class="lineno">   49</span>        <span class="keyword">const</span> <a class="code hl_class" href="class_array8.html">Array8</a> factoradic  = <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1permutations.html#a5b05b572ecfd6dae22e2e4f35039e2b8">permutations::base10ToFactoradic</a>(i);</div>
+<div class="line"><span class="lineno">   50</span>        <span class="keyword">const</span> <a class="code hl_class" href="class_array8.html">Array8</a> permutation = <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1permutations.html#ae72d221fbf21eac0236798898426e55b">permutations::convertFactoradicNumberToPermutation</a>(factoradic);</div>
+<div class="line"><span class="lineno">   51</span>        values.at(i) = permutation;</div>
+<div class="line"><span class="lineno">   52</span>    }</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">return</span> values;</div>
+<div class="line"><span class="lineno">   54</span>}</div>
+<div class="ttc" id="aclass_array8_html"><div class="ttname"><a href="class_array8.html">Array8</a></div><div class="ttdef"><b>Definition:</b> <a href="_array8_8h_source.html#l00018">Array8.h:19</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_pixel_scramble_html_a3b4c7395b2c3114950a32d88368a143e"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a3b4c7395b2c3114950a32d88368a143e">moonray::pbr::PixelScramble::s8Factorial</a></div><div class="ttdeci">static constexpr std::uint32_t s8Factorial</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_scramble_8h_source.html#l00112">PixelScramble.h:112</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_pixel_scramble_html_a7eea51fcc3f32ea1fb60c009d4a37a5f"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a7eea51fcc3f32ea1fb60c009d4a37a5f">moonray::pbr::PixelScramble::Container</a></div><div class="ttdeci">std::vector&lt; Array8, scene_rdl2::alloc::AlignedAllocator&lt; Array8, kSIMDAlignment &gt; &gt; Container</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_scramble_8h_source.html#l00253">PixelScramble.h:253</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_1_1permutations_html_a5b05b572ecfd6dae22e2e4f35039e2b8"><div class="ttname"><a href="namespacemoonray_1_1pbr_1_1permutations.html#a5b05b572ecfd6dae22e2e4f35039e2b8">moonray::pbr::permutations::base10ToFactoradic</a></div><div class="ttdeci">Array8 base10ToFactoradic(std::uint32_t n) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_scramble_8h_source.html#l00050">PixelScramble.h:50</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_1_1permutations_html_ae72d221fbf21eac0236798898426e55b"><div class="ttname"><a href="namespacemoonray_1_1pbr_1_1permutations.html#ae72d221fbf21eac0236798898426e55b">moonray::pbr::permutations::convertFactoradicNumberToPermutation</a></div><div class="ttdeci">Array8 convertFactoradicNumberToPermutation(const Array8 &amp;factoradic) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_scramble_8h_source.html#l00063">PixelScramble.h:63</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a6b387e07c51988ed4a64de3041cfd34a" name="a6b387e07c51988ed4a64de3041cfd34a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6b387e07c51988ed4a64de3041cfd34a">&#9670;&#160;</a></span>getPermutationsPointer()</h2>
 
@@ -236,7 +367,14 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_pixel_scramble_8cc_source.html#l00056">56</a> of file <a class="el" href="_pixel_scramble_8cc_source.html">PixelScramble.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   57</span>{</div>
+<div class="line"><span class="lineno">   58</span>    MNRY_ASSERT(!<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a1699c2fb9757cb841720ed6a5e23a5ba">s8Permutations</a>.empty());</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(<a class="code hl_class" href="class_array8.html">Array8</a>) == <span class="keyword">sizeof</span>(std::uint32_t), <span class="stringliteral">&quot;We&#39;re treating Array8s as uint32_ts&quot;</span>);</div>
+<div class="line"><span class="lineno">   60</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_array8.html">Array8</a>&amp; front = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a1699c2fb9757cb841720ed6a5e23a5ba">s8Permutations</a>.front();</div>
+<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>std::uint32_t*<span class="keyword">&gt;</span>(std::addressof(front));</div>
+<div class="line"><span class="lineno">   62</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_pixel_scramble_html_a1699c2fb9757cb841720ed6a5e23a5ba"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a1699c2fb9757cb841720ed6a5e23a5ba">moonray::pbr::PixelScramble::s8Permutations</a></div><div class="ttdeci">static Container s8Permutations</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_scramble_8h_source.html#l00262">PixelScramble.h:262</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a53a03f0d239096c6af30f1b039866311" name="a53a03f0d239096c6af30f1b039866311"></a>
@@ -263,7 +401,10 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_pixel_scramble_8h_source.html#l00245">245</a> of file <a class="el" href="_pixel_scramble_8h_source.html">PixelScramble.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  246</span>    {</div>
+<div class="line"><span class="lineno">  247</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a4957fdd92d005b5c4bd4a6e1ea108d68">mSeed</a>;</div>
+<div class="line"><span class="lineno">  248</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7499ed29abecf61e84af3e7c13720930" name="a7499ed29abecf61e84af3e7c13720930"></a>
@@ -301,7 +442,26 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_pixel_scramble_8h_source.html#l00215">215</a> of file <a class="el" href="_pixel_scramble_8h_source.html">PixelScramble.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  216</span>    {</div>
+<div class="line"><span class="lineno">  217</span>        MNRY_ASSERT(nelements &lt;= 8);</div>
+<div class="line"><span class="lineno">  218</span>        <span class="keyword">const</span> std::div_t d = std::div(<span class="keyword">static_cast&lt;</span>std::int32_t<span class="keyword">&gt;</span>(absoluteIndex),</div>
+<div class="line"><span class="lineno">  219</span>                                      <span class="keyword">static_cast&lt;</span>std::int32_t<span class="keyword">&gt;</span>(nelements));</div>
+<div class="line"><span class="lineno">  220</span>        <span class="keyword">const</span> std::uint32_t&amp; permutationIndex = d.quot;</div>
+<div class="line"><span class="lineno">  221</span>        <span class="keyword">const</span> std::uint32_t&amp; index            = d.rem;</div>
+<div class="line"><span class="lineno">  222</span> </div>
+<div class="line"><span class="lineno">  223</span>        <span class="comment">// For every n elements, we want a different permutation.</span></div>
+<div class="line"><span class="lineno">  224</span>        <span class="comment">// E.g. if nelements == 4</span></div>
+<div class="line"><span class="lineno">  225</span>        <span class="comment">// 0 1 2 3 | 0 1 2 3 | 0 1 2 3</span></div>
+<div class="line"><span class="lineno">  226</span>        <span class="comment">// may become</span></div>
+<div class="line"><span class="lineno">  227</span>        <span class="comment">// 2 0 1 3 | 0 2 3 1 | 3 2 0 1</span></div>
+<div class="line"><span class="lineno">  228</span>        <span class="comment">// as absolute index increases beyond nelements</span></div>
+<div class="line"><span class="lineno">  229</span>        <span class="keyword">const</span> std::uint32_t seed = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a4957fdd92d005b5c4bd4a6e1ea108d68">mSeed</a> * permutationIndex + 1ul;</div>
+<div class="line"><span class="lineno">  230</span>        <span class="keyword">const</span> std::uint32_t indexHash = (permutationIndex * <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a320539c3316dbdbc6b6c3d3f2e27d39c">sStrides</a>[nelements] + seed) % <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a859dbb409759c31f39d8e36761cef596">sFactorials</a>[nelements];</div>
+<div class="line"><span class="lineno">  231</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a1699c2fb9757cb841720ed6a5e23a5ba">s8Permutations</a>[indexHash][index];</div>
+<div class="line"><span class="lineno">  232</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_pixel_scramble_html_a320539c3316dbdbc6b6c3d3f2e27d39c"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a320539c3316dbdbc6b6c3d3f2e27d39c">moonray::pbr::PixelScramble::sStrides</a></div><div class="ttdeci">static constexpr std::uint32_t sStrides[]</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_scramble_8h_source.html#l00163">PixelScramble.h:163</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_pixel_scramble_html_a859dbb409759c31f39d8e36761cef596"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a859dbb409759c31f39d8e36761cef596">moonray::pbr::PixelScramble::sFactorials</a></div><div class="ttdeci">static constexpr std::uint32_t sFactorials[]</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_scramble_8h_source.html#l00122">PixelScramble.h:122</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7e580f150b075bc7ae68a34de5551f14" name="a7e580f150b075bc7ae68a34de5551f14"></a>
@@ -339,10 +499,81 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_pixel_scramble_8h_source.html#l00239">239</a> of file <a class="el" href="_pixel_scramble_8h_source.html">PixelScramble.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  240</span>    {</div>
+<div class="line"><span class="lineno">  241</span>        <span class="keyword">const</span> std::uint32_t index = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a7499ed29abecf61e84af3e7c13720930">permuteIndex</a>(absoluteIndex, nelements);</div>
+<div class="line"><span class="lineno">  242</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#aa67546546afa8febd222102e9c6303da">roundDownToMultiple</a>(absoluteIndex, nelements) + index;</div>
+<div class="line"><span class="lineno">  243</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_pixel_scramble_html_a7499ed29abecf61e84af3e7c13720930"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a7499ed29abecf61e84af3e7c13720930">moonray::pbr::PixelScramble::permuteIndex</a></div><div class="ttdeci">std::uint32_t permuteIndex(std::uint32_t absoluteIndex, std::uint32_t nelements) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_scramble_8h_source.html#l00215">PixelScramble.h:215</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_pixel_scramble_html_aa67546546afa8febd222102e9c6303da"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_pixel_scramble.html#aa67546546afa8febd222102e9c6303da">moonray::pbr::PixelScramble::roundDownToMultiple</a></div><div class="ttdeci">static constexpr std::uint32_t roundDownToMultiple(std::uint32_t n, std::uint32_t multiple) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_scramble_8h_source.html#l00255">PixelScramble.h:255</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa67546546afa8febd222102e9c6303da" name="aa67546546afa8febd222102e9c6303da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa67546546afa8febd222102e9c6303da">&#9670;&#160;</a></span>roundDownToMultiple()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr std::uint32_t moonray::pbr::PixelScramble::roundDownToMultiple </td>
+          <td>(</td>
+          <td class="paramtype">std::uint32_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::uint32_t&#160;</td>
+          <td class="paramname"><em>multiple</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_pixel_scramble_8h_source.html#l00255">255</a> of file <a class="el" href="_pixel_scramble_8h_source.html">PixelScramble.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  256</span>    {</div>
+<div class="line"><span class="lineno">  257</span>        <span class="keywordflow">return</span> n/multiple * multiple;</div>
+<div class="line"><span class="lineno">  258</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4957fdd92d005b5c4bd4a6e1ea108d68" name="a4957fdd92d005b5c4bd4a6e1ea108d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4957fdd92d005b5c4bd4a6e1ea108d68">&#9670;&#160;</a></span>mSeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t moonray::pbr::PixelScramble::mSeed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_pixel_scramble_8h_source.html#l00263">263</a> of file <a class="el" href="_pixel_scramble_8h_source.html">PixelScramble.h</a>.</p>
+
+</div>
+</div>
 <a id="af87539ef6dad2db57e3230d27b19f3fb" name="af87539ef6dad2db57e3230d27b19f3fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af87539ef6dad2db57e3230d27b19f3fb">&#9670;&#160;</a></span>s0Factorial</h2>
 
@@ -559,6 +790,30 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1699c2fb9757cb841720ed6a5e23a5ba" name="a1699c2fb9757cb841720ed6a5e23a5ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1699c2fb9757cb841720ed6a5e23a5ba">&#9670;&#160;</a></span>s8Permutations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a7eea51fcc3f32ea1fb60c009d4a37a5f">PixelScramble::Container</a> moonray::pbr::PixelScramble::s8Permutations = <a class="el" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a2deb92c1693b5e571d0cee09d56d3489">PixelScramble::generate8ElementPermutations</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_pixel_scramble_8h_source.html#l00262">262</a> of file <a class="el" href="_pixel_scramble_8h_source.html">PixelScramble.h</a>.</p>
+
+</div>
+</div>
 <a id="a859dbb409759c31f39d8e36761cef596" name="a859dbb409759c31f39d8e36761cef596"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a859dbb409759c31f39d8e36761cef596">&#9670;&#160;</a></span>sFactorials</h2>
 
@@ -590,7 +845,6 @@ Static Public Attributes</h2></td></tr>
 <div class="line">            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a3b4c7395b2c3114950a32d88368a143e">s8Factorial</a></div>
 <div class="line">    }</div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_pixel_scramble_html_a18c201b8d8b6798157eb6693e2923588"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a18c201b8d8b6798157eb6693e2923588">moonray::pbr::PixelScramble::s6Factorial</a></div><div class="ttdeci">static constexpr std::uint32_t s6Factorial</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_scramble_8h_source.html#l00114">PixelScramble.h:114</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1pbr_1_1_pixel_scramble_html_a3b4c7395b2c3114950a32d88368a143e"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a3b4c7395b2c3114950a32d88368a143e">moonray::pbr::PixelScramble::s8Factorial</a></div><div class="ttdeci">static constexpr std::uint32_t s8Factorial</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_scramble_8h_source.html#l00112">PixelScramble.h:112</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_pixel_scramble_html_a6115abbcd998b8569c0d6f002d21c050"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a6115abbcd998b8569c0d6f002d21c050">moonray::pbr::PixelScramble::s4Factorial</a></div><div class="ttdeci">static constexpr std::uint32_t s4Factorial</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_scramble_8h_source.html#l00116">PixelScramble.h:116</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_pixel_scramble_html_a65e645c1a65f95d919135044a4999711"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a65e645c1a65f95d919135044a4999711">moonray::pbr::PixelScramble::s7Factorial</a></div><div class="ttdeci">static constexpr std::uint32_t s7Factorial</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_scramble_8h_source.html#l00113">PixelScramble.h:113</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_pixel_scramble_html_ab7c6a40de22dd6e6a07e0aa6d0ce601f"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_pixel_scramble.html#ab7c6a40de22dd6e6a07e0aa6d0ce601f">moonray::pbr::PixelScramble::s1Factorial</a></div><div class="ttdeci">static constexpr std::uint32_t s1Factorial</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_scramble_8h_source.html#l00119">PixelScramble.h:119</a></div></div>
@@ -679,9 +933,13 @@ Static Public Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/sampler/<a class="el" href="_pixel_scramble_8cc_source.html">PixelScramble.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_pixel_scramble.html">PixelScramble</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

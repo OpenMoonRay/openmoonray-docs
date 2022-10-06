@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_poly_topology_id_lookup.html">PolyTopologyIdLookup</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1internal_1_1_poly_topology_id_lookup.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -128,7 +144,34 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8cc_source.html#l00017">17</a> of file <a class="el" href="_mesh_tessellation_util_8cc_source.html">MeshTessellationUtil.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   19</span>                                              :</div>
+<div class="line"><span class="lineno">   20</span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_topology_id_lookup.html#a181c52db3fcabc795ddb98aa84095d88">TopologyIdLookup</a>(vertexCount)</div>
+<div class="line"><span class="lineno">   21</span>{</div>
+<div class="line"><span class="lineno">   22</span>    MNRY_ASSERT_REQUIRE(faceVertexCount == <a class="code hl_variable" href="namespacemoonray_1_1geom_1_1internal.html#acb6818809dd604a8277c8dfd60c5ec3f">sQuadVertexCount</a> ||</div>
+<div class="line"><span class="lineno">   23</span>        faceVertexCount == <a class="code hl_variable" href="namespacemoonray_1_1geom_1_1internal.html#a262b08f44beec9e232e50116706775a7">sTriangleVertexCount</a>);</div>
+<div class="line"><span class="lineno">   24</span>    MNRY_ASSERT_REQUIRE(indices.size() % faceVertexCount == 0);</div>
+<div class="line"><span class="lineno">   25</span> </div>
+<div class="line"><span class="lineno">   26</span>    <span class="keywordtype">int</span> faceCount = indices.size() / faceVertexCount;</div>
+<div class="line"><span class="lineno">   27</span>    <span class="keywordtype">int</span> indexOffset = 0;</div>
+<div class="line"><span class="lineno">   28</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> f = 0; f &lt; faceCount; ++f) {</div>
+<div class="line"><span class="lineno">   29</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> v = 0; v &lt; faceVertexCount; ++v) {</div>
+<div class="line"><span class="lineno">   30</span>            <span class="keywordtype">int</span> v0 = indices[indexOffset + v];</div>
+<div class="line"><span class="lineno">   31</span>            <span class="keywordtype">int</span> v1 = indices[indexOffset + (v + 1) % faceVertexCount];</div>
+<div class="line"><span class="lineno">   32</span>            int64_t edgeKey = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_topology_id_lookup.html#a0cc910c76c314a43f1cd1006d50016da">getEdgeKey</a>(v0, v1);</div>
+<div class="line"><span class="lineno">   33</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_topology_id_lookup.html#a220ac0dcdf31072745dc2566eab76a13">mEdgeIds</a>.find(edgeKey) == <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_topology_id_lookup.html#a220ac0dcdf31072745dc2566eab76a13">mEdgeIds</a>.end()) {</div>
+<div class="line"><span class="lineno">   34</span>                <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_topology_id_lookup.html#a220ac0dcdf31072745dc2566eab76a13">mEdgeIds</a>[edgeKey] = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_topology_id_lookup.html#a49b025b0bfbeab37cd49d0962bfd4427">mCoarseEdgeCount</a>++;</div>
+<div class="line"><span class="lineno">   35</span>            }</div>
+<div class="line"><span class="lineno">   36</span>        }</div>
+<div class="line"><span class="lineno">   37</span>        indexOffset += faceVertexCount;</div>
+<div class="line"><span class="lineno">   38</span>    }</div>
+<div class="line"><span class="lineno">   39</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_topology_id_lookup_html_a0cc910c76c314a43f1cd1006d50016da"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_topology_id_lookup.html#a0cc910c76c314a43f1cd1006d50016da">moonray::geom::internal::TopologyIdLookup::getEdgeKey</a></div><div class="ttdeci">int64_t getEdgeKey(int64_t v0, int64_t v1) const</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8h_source.html#l00227">MeshTessellationUtil.h:227</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_topology_id_lookup_html_a181c52db3fcabc795ddb98aa84095d88"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_topology_id_lookup.html#a181c52db3fcabc795ddb98aa84095d88">moonray::geom::internal::TopologyIdLookup::TopologyIdLookup</a></div><div class="ttdeci">TopologyIdLookup(const int coarseVertexCount)</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8h_source.html#l00221">MeshTessellationUtil.h:221</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_topology_id_lookup_html_a220ac0dcdf31072745dc2566eab76a13"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_topology_id_lookup.html#a220ac0dcdf31072745dc2566eab76a13">moonray::geom::internal::TopologyIdLookup::mEdgeIds</a></div><div class="ttdeci">std::unordered_map&lt; int64_t, int &gt; mEdgeIds</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8h_source.html#l00233">MeshTessellationUtil.h:233</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_topology_id_lookup_html_a49b025b0bfbeab37cd49d0962bfd4427"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_topology_id_lookup.html#a49b025b0bfbeab37cd49d0962bfd4427">moonray::geom::internal::TopologyIdLookup::mCoarseEdgeCount</a></div><div class="ttdeci">int mCoarseEdgeCount</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8h_source.html#l00235">MeshTessellationUtil.h:235</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a262b08f44beec9e232e50116706775a7"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a262b08f44beec9e232e50116706775a7">moonray::geom::internal::sTriangleVertexCount</a></div><div class="ttdeci">static constexpr size_t sTriangleVertexCount</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00033">Mesh.h:33</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_acb6818809dd604a8277c8dfd60c5ec3f"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#acb6818809dd604a8277c8dfd60c5ec3f">moonray::geom::internal::sQuadVertexCount</a></div><div class="ttdeci">static constexpr size_t sQuadVertexCount</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00032">Mesh.h:32</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -136,9 +179,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/geom/prim/<a class="el" href="_mesh_tessellation_util_8cc_source.html">MeshTessellationUtil.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_poly_topology_id_lookup.html">PolyTopologyIdLookup</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

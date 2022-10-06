@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_55a2e35f6359da48a03f898576e722e1.html">rndr</a></li><li class="navelem"><a class="el" href="dir_da6e1a462bf0f57ce3664e2ecc4fc74f.html">adaptive</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_update_sentinel_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">UpdateSentinel.h</div></div>
 </div><!--header-->
@@ -76,7 +92,7 @@ $(function() {
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_update_sentinel.html#a1eb39c38c31f25d2f5f74ddc3538359c">   29</a></span>    <a class="code hl_function" href="classmoonray_1_1rndr_1_1_update_sentinel.html#a1eb39c38c31f25d2f5f74ddc3538359c">UpdateSentinel</a>() :</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        mAdjustUpdateTimingCondition(false)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_update_sentinel.html#a08dc933adc3417d26590de7136df1bb2">mAdjustUpdateTimingCondition</a>(false)</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    {}</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_update_sentinel.html#ab76a27c6ed1f3b6aa86edc2b86e3aac1">disableAdjustUpdateTiming</a>();</div>
@@ -87,35 +103,35 @@ $(function() {
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_update_sentinel.html#aa3b8171124582dfc9c759bfcc08ea0d0">   38</a></span>    <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_update_sentinel.html#aa3b8171124582dfc9c759bfcc08ea0d0">getUpdateCounter</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> adaptiveRegionTreeId) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">bool</span> mAdjustUpdateTimingCondition;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_update_sentinel.html#a08dc933adc3417d26590de7136df1bb2">   41</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_update_sentinel.html#a08dc933adc3417d26590de7136df1bb2">mAdjustUpdateTimingCondition</a>;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// pixel variant evaluation sample count endSampleId sequence</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    std::vector&lt;unsigned&gt; mAdaptiveIterationPixSampleIdTable;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_update_sentinel.html#a4c64cfc0a31a54206ac80c6d6218b0d6">   44</a></span>    std::vector&lt;unsigned&gt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_update_sentinel.html#a4c64cfc0a31a54206ac80c6d6218b0d6">mAdaptiveIterationPixSampleIdTable</a>;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">inline</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_update_sentinel.html#ab76a27c6ed1f3b6aa86edc2b86e3aac1">   48</a></span><a class="code hl_function" href="classmoonray_1_1rndr_1_1_update_sentinel.html#ab76a27c6ed1f3b6aa86edc2b86e3aac1">UpdateSentinel::disableAdjustUpdateTiming</a>()</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    mAdjustUpdateTimingCondition = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    mAdaptiveIterationPixSampleIdTable.clear();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_update_sentinel.html#a08dc933adc3417d26590de7136df1bb2">mAdjustUpdateTimingCondition</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_update_sentinel.html#a4c64cfc0a31a54206ac80c6d6218b0d6">mAdaptiveIterationPixSampleIdTable</a>.clear();</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">inline</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_update_sentinel.html#a9101f75a5db902849285ba3503219144">   55</a></span><a class="code hl_function" href="classmoonray_1_1rndr_1_1_update_sentinel.html#a9101f75a5db902849285ba3503219144">UpdateSentinel::enableAdjustUpdateTiming</a>(<span class="keyword">const</span> std::vector&lt;unsigned&gt; &amp;adaptiveIterationPixSampleIdTbl)</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    mAdjustUpdateTimingCondition = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    mAdaptiveIterationPixSampleIdTable = adaptiveIterationPixSampleIdTbl;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_update_sentinel.html#a08dc933adc3417d26590de7136df1bb2">mAdjustUpdateTimingCondition</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_update_sentinel.html#a4c64cfc0a31a54206ac80c6d6218b0d6">mAdaptiveIterationPixSampleIdTable</a> = adaptiveIterationPixSampleIdTbl;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">inline</span> <span class="keywordtype">bool</span>    </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_update_sentinel.html#af695cce45d17c08b5b98323135c2c85b">   62</a></span><a class="code hl_function" href="classmoonray_1_1rndr_1_1_update_sentinel.html#af695cce45d17c08b5b98323135c2c85b">UpdateSentinel::shouldUpdate</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> endSampleIdx)</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">if</span> (!mAdjustUpdateTimingCondition) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_update_sentinel.html#a08dc933adc3417d26590de7136df1bb2">mAdjustUpdateTimingCondition</a>) {</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>; <span class="comment">// If adjust update timing logic condition is disable, we always evaluate adaptiveTree</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">auto</span> itr = std::lower_bound(mAdaptiveIterationPixSampleIdTable.begin(),</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                                mAdaptiveIterationPixSampleIdTable.end(),</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">auto</span> itr = std::lower_bound(<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_update_sentinel.html#a4c64cfc0a31a54206ac80c6d6218b0d6">mAdaptiveIterationPixSampleIdTable</a>.begin(),</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                                <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_update_sentinel.html#a4c64cfc0a31a54206ac80c6d6218b0d6">mAdaptiveIterationPixSampleIdTable</a>.end(),</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                                endSampleIdx);</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">if</span> (*itr != endSampleIdx) {</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">// endSampleId is not a boundary of adaptiveTree update sample number interval</span></div>
@@ -131,7 +147,9 @@ $(function() {
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_update_sentinel_html"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_update_sentinel.html">moonray::rndr::UpdateSentinel</a></div><div class="ttdef"><b>Definition:</b> <a href="_update_sentinel_8h_source.html#l00026">UpdateSentinel.h:27</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_update_sentinel_html_a08dc933adc3417d26590de7136df1bb2"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_update_sentinel.html#a08dc933adc3417d26590de7136df1bb2">moonray::rndr::UpdateSentinel::mAdjustUpdateTimingCondition</a></div><div class="ttdeci">bool mAdjustUpdateTimingCondition</div><div class="ttdef"><b>Definition:</b> <a href="_update_sentinel_8h_source.html#l00041">UpdateSentinel.h:41</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_update_sentinel_html_a1eb39c38c31f25d2f5f74ddc3538359c"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_update_sentinel.html#a1eb39c38c31f25d2f5f74ddc3538359c">moonray::rndr::UpdateSentinel::UpdateSentinel</a></div><div class="ttdeci">UpdateSentinel()</div><div class="ttdef"><b>Definition:</b> <a href="_update_sentinel_8h_source.html#l00029">UpdateSentinel.h:29</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_update_sentinel_html_a4c64cfc0a31a54206ac80c6d6218b0d6"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_update_sentinel.html#a4c64cfc0a31a54206ac80c6d6218b0d6">moonray::rndr::UpdateSentinel::mAdaptiveIterationPixSampleIdTable</a></div><div class="ttdeci">std::vector&lt; unsigned &gt; mAdaptiveIterationPixSampleIdTable</div><div class="ttdef"><b>Definition:</b> <a href="_update_sentinel_8h_source.html#l00044">UpdateSentinel.h:44</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_update_sentinel_html_a9101f75a5db902849285ba3503219144"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_update_sentinel.html#a9101f75a5db902849285ba3503219144">moonray::rndr::UpdateSentinel::enableAdjustUpdateTiming</a></div><div class="ttdeci">void enableAdjustUpdateTiming(const std::vector&lt; unsigned &gt; &amp;adaptiveIterationPixSampleIdTbl)</div><div class="ttdef"><b>Definition:</b> <a href="_update_sentinel_8h_source.html#l00055">UpdateSentinel.h:55</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_update_sentinel_html_aa3b8171124582dfc9c759bfcc08ea0d0"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_update_sentinel.html#aa3b8171124582dfc9c759bfcc08ea0d0">moonray::rndr::UpdateSentinel::getUpdateCounter</a></div><div class="ttdeci">unsigned getUpdateCounter(const unsigned adaptiveRegionTreeId) const</div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_update_sentinel_html_ab76a27c6ed1f3b6aa86edc2b86e3aac1"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_update_sentinel.html#ab76a27c6ed1f3b6aa86edc2b86e3aac1">moonray::rndr::UpdateSentinel::disableAdjustUpdateTiming</a></div><div class="ttdeci">void disableAdjustUpdateTiming()</div><div class="ttdef"><b>Definition:</b> <a href="_update_sentinel_8h_source.html#l00048">UpdateSentinel.h:48</a></div></div>
@@ -139,9 +157,13 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_dispatch_computation_8cc_source.html#l00044">McrtRtDispatchComputation.cc:44</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_c8c2fc2658195a2d790ef72565bd36e7.html">rndr</a></li><li class="navelem"><a class="el" href="dir_9c1f2a6c13023472c796807bc2ebc1e3.html">adaptive</a></li><li class="navelem"><a class="el" href="_update_sentinel_8h.html">UpdateSentinel.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

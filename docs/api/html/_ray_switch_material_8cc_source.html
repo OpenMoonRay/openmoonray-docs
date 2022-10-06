@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_e8636fe16f0c9a46fe2eb47f132af4e0.html">dso</a></li><li class="navelem"><a class="el" href="dir_04804282e0548e8d8ab2caee9c3b849d.html">material</a></li><li class="navelem"><a class="el" href="dir_47fb0a05ada01a178c32f36f6e76098f.html">RaySwitch</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_ray_switch_material_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">RaySwitchMaterial.cc</div></div>
 </div><!--header-->
@@ -76,20 +92,20 @@ $(function() {
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">const</span> scene_rdl2::rdl2::Material* <a class="code hl_function" href="_ray_switch_material_8cc.html#ad214b16e60d3c54fb09c8d3a08a12df4">raySwitch</a>(<span class="keyword">const</span> scene_rdl2::rdl2::RaySwitchContext&amp; ctx) <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> shade(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="_ray_switch_material_8cc.html#ace9c5b20bbf47da39e211ce3fac3864d">   30</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="_ray_switch_material_8cc.html#ace9c5b20bbf47da39e211ce3fac3864d">shade</a>(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                      <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                      <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">State</a>&amp; state,</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                      <a class="code hl_class" href="classmoonray_1_1shading_1_1_bsdf_builder.html">BsdfBuilder</a>&amp; bsdfBuilder);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">static</span> <span class="keywordtype">float</span> presence(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code hl_function" href="_ray_switch_material_8cc.html#a292943d9fba2379152bfc81d81a5bf0b">presence</a>(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                          <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                          <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">moonray::shading::State</a>&amp; state);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">static</span> <span class="keywordtype">float</span> ior(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code hl_function" href="_ray_switch_material_8cc.html#a2c3d7201cc33b39ba638e0d97a3f54e3">ior</a>(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                     <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                     <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">moonray::shading::State</a>&amp; state);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    ispc::RaySwitchMaterial mIspc;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="_ray_switch_material_8cc.html#a9e782e3558b110f6182908d280a57b8b">   43</a></span>    ispc::RaySwitchMaterial <a class="code hl_variable" href="_ray_switch_material_8cc.html#a9e782e3558b110f6182908d280a57b8b">mIspc</a>;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>RDL2_DSO_CLASS_END(<a class="code hl_function" href="_ray_switch_material_8cc.html#a5cef66a24b4156372d669b86981cf0de">RaySwitchMaterial</a>)</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
@@ -103,8 +119,8 @@ $(function() {
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    mShadeFunc = RaySwitchMaterial::shade;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    mShadeFuncv = (scene_rdl2::rdl2::ShadeFuncv) ispc::RaySwitchMaterial_getShadeFunc();</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    mPresenceFunc = RaySwitchMaterial::presence;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    mIspc.mDefaultMaterialObj = 0;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    mIspc.mCutoutCameraRays = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_variable" href="_ray_switch_material_8cc.html#a9e782e3558b110f6182908d280a57b8b">mIspc</a>.mDefaultMaterialObj = 0;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_variable" href="_ray_switch_material_8cc.html#a9e782e3558b110f6182908d280a57b8b">mIspc</a>.mCutoutCameraRays = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="_ray_switch_material_8cc.html#a298be82d4b806f1aa3a06cb5e4e842ed">   61</a></span>RaySwitchMaterial::~RaySwitchMaterial()</div>
@@ -114,8 +130,8 @@ $(function() {
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>RaySwitchMaterial::update()</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>{</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    mIspc.mDefaultMaterialObj = (intptr_t) get(attrDefaultMaterial);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    mIspc.mCutoutCameraRays = get(attrCutoutCameraRays);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_variable" href="_ray_switch_material_8cc.html#a9e782e3558b110f6182908d280a57b8b">mIspc</a>.mDefaultMaterialObj = (intptr_t) get(attrDefaultMaterial);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_variable" href="_ray_switch_material_8cc.html#a9e782e3558b110f6182908d280a57b8b">mIspc</a>.mCutoutCameraRays = get(attrCutoutCameraRays);</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keywordtype">void</span></div>
@@ -140,7 +156,7 @@ $(function() {
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keywordtype">float</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>RaySwitchMaterial::presence(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="_ray_switch_material_8cc.html#a292943d9fba2379152bfc81d81a5bf0b">   94</a></span>RaySwitchMaterial::presence(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                            <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                            <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">moonray::shading::State</a>&amp; state)</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>{</div>
@@ -153,7 +169,7 @@ $(function() {
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keywordtype">float</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>RaySwitchMaterial::ior(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="_ray_switch_material_8cc.html#a2c3d7201cc33b39ba638e0d97a3f54e3">  107</a></span>RaySwitchMaterial::ior(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                       <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                       <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">moonray::shading::State</a>&amp; state)</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>{</div>
@@ -216,8 +232,12 @@ $(function() {
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="ttc" id="a_material_api_8h_html"><div class="ttname"><a href="_material_api_8h.html">MaterialApi.h</a></div></div>
+<div class="ttc" id="a_ray_switch_material_8cc_html_a292943d9fba2379152bfc81d81a5bf0b"><div class="ttname"><a href="_ray_switch_material_8cc.html#a292943d9fba2379152bfc81d81a5bf0b">presence</a></div><div class="ttdeci">static float presence(const scene_rdl2::rdl2::Material *self, moonray::shading::TLState *tls, const moonray::shading::State &amp;state)</div><div class="ttdef"><b>Definition:</b> <a href="_ray_switch_material_8cc_source.html#l00094">RaySwitchMaterial.cc:94</a></div></div>
 <div class="ttc" id="a_ray_switch_material_8cc_html_a298be82d4b806f1aa3a06cb5e4e842ed"><div class="ttname"><a href="_ray_switch_material_8cc.html#a298be82d4b806f1aa3a06cb5e4e842ed">~RaySwitchMaterial</a></div><div class="ttdeci">~RaySwitchMaterial()</div><div class="ttdef"><b>Definition:</b> <a href="_ray_switch_material_8cc_source.html#l00061">RaySwitchMaterial.cc:61</a></div></div>
+<div class="ttc" id="a_ray_switch_material_8cc_html_a2c3d7201cc33b39ba638e0d97a3f54e3"><div class="ttname"><a href="_ray_switch_material_8cc.html#a2c3d7201cc33b39ba638e0d97a3f54e3">ior</a></div><div class="ttdeci">static float ior(const scene_rdl2::rdl2::Material *self, moonray::shading::TLState *tls, const moonray::shading::State &amp;state)</div><div class="ttdef"><b>Definition:</b> <a href="_ray_switch_material_8cc_source.html#l00107">RaySwitchMaterial.cc:107</a></div></div>
 <div class="ttc" id="a_ray_switch_material_8cc_html_a5cef66a24b4156372d669b86981cf0de"><div class="ttname"><a href="_ray_switch_material_8cc.html#a5cef66a24b4156372d669b86981cf0de">RaySwitchMaterial</a></div><div class="ttdeci">RaySwitchMaterial(const scene_rdl2::rdl2::SceneClass &amp;sceneClass, const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="_ray_switch_material_8cc_source.html#l00050">RaySwitchMaterial.cc:50</a></div></div>
+<div class="ttc" id="a_ray_switch_material_8cc_html_a9e782e3558b110f6182908d280a57b8b"><div class="ttname"><a href="_ray_switch_material_8cc.html#a9e782e3558b110f6182908d280a57b8b">mIspc</a></div><div class="ttdeci">ispc::RaySwitchMaterial mIspc</div><div class="ttdef"><b>Definition:</b> <a href="_ray_switch_material_8cc_source.html#l00043">RaySwitchMaterial.cc:43</a></div></div>
+<div class="ttc" id="a_ray_switch_material_8cc_html_ace9c5b20bbf47da39e211ce3fac3864d"><div class="ttname"><a href="_ray_switch_material_8cc.html#ace9c5b20bbf47da39e211ce3fac3864d">shade</a></div><div class="ttdeci">static void shade(const scene_rdl2::rdl2::Material *self, moonray::shading::TLState *tls, const State &amp;state, BsdfBuilder &amp;bsdfBuilder)</div></div>
 <div class="ttc" id="a_ray_switch_material_8cc_html_ad214b16e60d3c54fb09c8d3a08a12df4"><div class="ttname"><a href="_ray_switch_material_8cc.html#ad214b16e60d3c54fb09c8d3a08a12df4">raySwitch</a></div><div class="ttdeci">const scene_rdl2::rdl2::Material * raySwitch(const scene_rdl2::rdl2::RaySwitchContext &amp;ctx) const override</div><div class="ttdef"><b>Definition:</b> <a href="_ray_switch_material_8cc_source.html#l00120">RaySwitchMaterial.cc:120</a></div></div>
 <div class="ttc" id="a_ray_switch_material_8cc_html_af9f317a6530155acd7adfb119bed731c"><div class="ttname"><a href="_ray_switch_material_8cc.html#af9f317a6530155acd7adfb119bed731c">update</a></div><div class="ttdeci">virtual void update() override</div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_builder_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_builder.html">moonray::shading::BsdfBuilder</a></div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_builder_8h_source.html#l00055">BsdfBuilder.h:56</a></div></div>
@@ -233,9 +253,13 @@ $(function() {
 <div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_dispatch_computation_8cc_source.html#l00044">McrtRtDispatchComputation.cc:44</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00583">NPoint.h:583</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_6a52a9733426c3f6f80e6f7bd53e6965.html">dso</a></li><li class="navelem"><a class="el" href="dir_7e36e2561e5e17b014d83019c50ecdc0.html">material</a></li><li class="navelem"><a class="el" href="dir_3e87ba5c576188e17ec87fec8d02e42f.html">RaySwitch</a></li><li class="navelem"><a class="el" href="_ray_switch_material_8cc.html">RaySwitchMaterial.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

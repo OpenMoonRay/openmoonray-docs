@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_28705856019153616deb2bfeeafe0625.html">unittest</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_test_bsdf_common_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">TestBsdfCommon.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -69,20 +87,74 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemoonray_1_1pbr"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html">moonray::pbr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a91e998e9890c6d99b3ac46bb00de53fa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a91e998e9890c6d99b3ac46bb00de53fa"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#a91e998e9890c6d99b3ac46bb00de53fa">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}::TaskQueueType</a> = <a class="el" href="_ring_buffer_8h.html#a3503ec2b57e147a67880ec676b479ada">RingBufferSingleProducer</a>&lt; T, kLogTaskQueueSize &gt;</td></tr>
+<tr class="separator:a91e998e9890c6d99b3ac46bb00de53fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03db8e86d136d12cfd7a4b3d07329eef"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a03db8e86d136d12cfd7a4b3d07329eef"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#a03db8e86d136d12cfd7a4b3d07329eef">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}::ResultQueueType</a> = <a class="el" href="_ring_buffer_8h.html#a08b4c8fbb6ee4110ba88c63b8ca9b0a8">RingBufferSingleConsumer</a>&lt; T, kLogResultQueueSize &gt;</td></tr>
+<tr class="separator:a03db8e86d136d12cfd7a4b3d07329eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a99b554db8b7a85e958cdec1dc95f671c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#a99b554db8b7a85e958cdec1dc95f671c">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}::accumulate</a> (TestBsdfConsistencyTask::Result &amp;aggregate, const TestBsdfConsistencyTask::Result &amp;task)</td></tr>
+<tr class="separator:a99b554db8b7a85e958cdec1dc95f671c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9c8eac06867af98e37af5ab0d374118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#ae9c8eac06867af98e37af5ab0d374118">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}::check</a> (const TestBsdfSettings &amp;, const TestBsdfConsistencyTask::Result &amp;results)</td></tr>
+<tr class="separator:ae9c8eac06867af98e37af5ab0d374118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a792cdd1f7ea2725be77b9361b34ff470"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#a792cdd1f7ea2725be77b9361b34ff470">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}::accumulate</a> (TestBsdfPdfIntegralTask::Result &amp;aggregate, const TestBsdfPdfIntegralTask::Result &amp;task)</td></tr>
+<tr class="separator:a792cdd1f7ea2725be77b9361b34ff470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b7f75fb1602735ca392d70de199fcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#a34b7f75fb1602735ca392d70de199fcf">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}::check</a> (const TestBsdfSettings &amp;test, const TestBsdfPdfIntegralTask::Result &amp;results)</td></tr>
+<tr class="separator:a34b7f75fb1602735ca392d70de199fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e9fa259d02ba993924d910578c7625f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#a6e9fa259d02ba993924d910578c7625f">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}::accumulate</a> (TestBsdfEvalIntegralTask::Result &amp;aggregate, const TestBsdfEvalIntegralTask::Result &amp;task)</td></tr>
+<tr class="separator:a6e9fa259d02ba993924d910578c7625f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5777109eba54811eb1be549ceb552a7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#a5777109eba54811eb1be549ceb552a7e">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}::check</a> (const TestBsdfSettings &amp;test, const TestBsdfEvalIntegralTask::Result &amp;results)</td></tr>
+<tr class="separator:a5777109eba54811eb1be549ceb552a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60485b8a207b188ee3844a3ff862ac8a"><td class="memTemplParams" colspan="2">template&lt;typename Task , typename... Args&gt; </td></tr>
+<tr class="memitem:a60485b8a207b188ee3844a3ff862ac8a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#a60485b8a207b188ee3844a3ff862ac8a">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}::runProducer</a> (TaskQueueType&lt; Task &gt; &amp;queueTasks, unsigned totalSamples, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a60485b8a207b188ee3844a3ff862ac8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a458d37ca880684f07ab7db2ea0ea2ff9"><td class="memTemplParams" colspan="2">template&lt;typename Task , typename Result &gt; </td></tr>
+<tr class="memitem:a458d37ca880684f07ab7db2ea0ea2ff9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#a458d37ca880684f07ab7db2ea0ea2ff9">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}::runTasks</a> (std::atomic&lt; unsigned &gt; &amp;toConsume, TaskQueueType&lt; Task &gt; &amp;queueTasks, ResultQueueType&lt; Result &gt; &amp;queueResults)</td></tr>
+<tr class="separator:a458d37ca880684f07ab7db2ea0ea2ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a284dc57b116f4a6917ba1910daf76598"><td class="memTemplParams" colspan="2">template&lt;typename Aggregate , typename Result &gt; </td></tr>
+<tr class="memitem:a284dc57b116f4a6917ba1910daf76598"><td class="memTemplItemLeft" align="right" valign="top">Aggregate&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#a284dc57b116f4a6917ba1910daf76598">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}::runConsumer</a> (unsigned toConsume, ResultQueueType&lt; Result &gt; &amp;queueResults)</td></tr>
+<tr class="separator:a284dc57b116f4a6917ba1910daf76598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad73efe508ba70b16fc2516603ce9bfae"><td class="memTemplParams" colspan="2">template&lt;typename Aggregate , typename Task , typename Result , typename... ProducerArgs&gt; </td></tr>
+<tr class="memitem:ad73efe508ba70b16fc2516603ce9bfae"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">moonray::pbr::runTest</a> (const TestBsdfSettings &amp;test, int sampleCount, ProducerArgs &amp;&amp;... args)</td></tr>
+<tr class="separator:ad73efe508ba70b16fc2516603ce9bfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e687ff5ebc88afc5472cba374c6786"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a97e687ff5ebc88afc5472cba374c6786">moonray::pbr::testConsistency</a> (const TestBsdfSettings &amp;test, int sampleCount)</td></tr>
+<tr class="separator:a97e687ff5ebc88afc5472cba374c6786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a066d4679e046bf605ccc5a8ba9b486a8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a066d4679e046bf605ccc5a8ba9b486a8">moonray::pbr::testPdfIntegral</a> (const TestBsdfSettings &amp;test, const Vec3f &amp;wo, int sampleCount, bool doAssert=false)</td></tr>
+<tr class="separator:a066d4679e046bf605ccc5a8ba9b486a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9290f101bb98b26d26106ea70d7197b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#ae9290f101bb98b26d26106ea70d7197b">moonray::pbr::testEvalIntegral</a> (const TestBsdfSettings &amp;test, const Vec3f &amp;wo, int sampleCount, bool doAssert=false)</td></tr>
+<tr class="separator:ae9290f101bb98b26d26106ea70d7197b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0d9678b6d7a964fbf3344c37aa46c1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#af0d9678b6d7a964fbf3344c37aa46c1d">moonray::pbr::runBsdfTest</a> (const TestBsdfSettings &amp;test, int viewAnglesTheta, int viewAnglesPhy, int sampleCount)</td></tr>
 <tr class="separator:af0d9678b6d7a964fbf3344c37aa46c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab9c09b987d059262615fe22457e533eb"><td class="memItemLeft" align="right" valign="top">constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#ab9c09b987d059262615fe22457e533eb">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}::numTasks</a> = 512u</td></tr>
+<tr class="separator:ab9c09b987d059262615fe22457e533eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bbb5ea7ba4e0c0b93e9b1282b03d094"><td class="memItemLeft" align="right" valign="top">constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#a6bbb5ea7ba4e0c0b93e9b1282b03d094">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}::kLogTaskQueueSize</a> = 9u</td></tr>
+<tr class="separator:a6bbb5ea7ba4e0c0b93e9b1282b03d094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34c0529bea9a0452f77a8378292f193"><td class="memItemLeft" align="right" valign="top">constexpr unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#ab34c0529bea9a0452f77a8378292f193">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}::kLogResultQueueSize</a> = 9u</td></tr>
+<tr class="separator:ab34c0529bea9a0452f77a8378292f193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Eric Tabellion $Id$ </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="_test_bsdf_common_8cc_source.html">TestBsdfCommon.cc</a>.</p>
 </div></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_e9cc9f5f9c03e3b4eff73c33091953ed.html">unittest</a></li><li class="navelem"><a class="el" href="_test_bsdf_common_8cc.html">TestBsdfCommon.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

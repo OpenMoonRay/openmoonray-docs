@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_3ffafe8d4194a26e471fc283bfe39627.html">shading</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_bsdf_builder_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">BsdfBuilder.h</div></div>
 </div><!--header-->
@@ -353,7 +369,7 @@ $(function() {
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1shading_1_1_bsdf_builder_1_1_impl.html">Impl</a>;</div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_bsdf_builder_1_1_impl.html">Impl</a>* mImpl;</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_bsdf_builder.html#a335b79dd599d6ad4f7bdc4627cf7b880">  307</a></span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_bsdf_builder_1_1_impl.html">Impl</a>* <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf_builder.html#a335b79dd599d6ad4f7bdc4627cf7b880">mImpl</a>;</div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>};</div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="comment">// ispc vector types</span></div>
@@ -379,6 +395,7 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_builder_html_a212874639b143d83d0f5faa891c5e040"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_builder.html#a212874639b143d83d0f5faa891c5e040">moonray::shading::BsdfBuilder::BsdfBuilder</a></div><div class="ttdeci">BsdfBuilder(const BsdfBuilder &amp;other)=delete</div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_builder_html_a2b6654fa1f47384bf06355a28b6c2e02"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_builder.html#a2b6654fa1f47384bf06355a28b6c2e02">moonray::shading::BsdfBuilder::addMicrofacetIsotropicBTDF</a></div><div class="ttdeci">void addMicrofacetIsotropicBTDF(const MicrofacetIsotropicBTDF &amp;btdf, float weight, ispc::BsdfBuilderBehavior combineBehavior, int label)</div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_builder_html_a2bd539c47e8f830925d069362b8f4cd4"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_builder.html#a2bd539c47e8f830925d069362b8f4cd4">moonray::shading::BsdfBuilder::addHairTRRTBRDF</a></div><div class="ttdeci">void addHairTRRTBRDF(const HairTRRTBRDF &amp;brdf, float weight, ispc::BsdfBuilderBehavior combineBehavior, int label)</div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_builder_html_a335b79dd599d6ad4f7bdc4627cf7b880"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_builder.html#a335b79dd599d6ad4f7bdc4627cf7b880">moonray::shading::BsdfBuilder::mImpl</a></div><div class="ttdeci">Impl * mImpl</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_builder_8h_source.html#l00307">BsdfBuilder.h:307</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_builder_html_a3924f00fee6bd6b9b239076189c0149f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_builder.html#a3924f00fee6bd6b9b239076189c0149f">moonray::shading::BsdfBuilder::addHairToonSpecularBRDF</a></div><div class="ttdeci">void addHairToonSpecularBRDF(const HairToonSpecularBRDF &amp;brdf, const float weight, ispc::BsdfBuilderBehavior combineBehavior, const int label)</div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_builder_html_a3aad262b210bb601f5ecfdf6c832ff08"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_builder.html#a3aad262b210bb601f5ecfdf6c832ff08">moonray::shading::BsdfBuilder::addGlitterFlakeBRDF</a></div><div class="ttdeci">void addGlitterFlakeBRDF(const GlitterFlakeBRDF &amp;brdf, float weight, ispc::BsdfBuilderBehavior combineBehavior, int label)</div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_builder_html_a40ece28f065ec83d67aaefc3982e8c8e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_builder.html#a40ece28f065ec83d67aaefc3982e8c8e">moonray::shading::BsdfBuilder::startAdjacentComponents</a></div><div class="ttdeci">void startAdjacentComponents()</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_builder_8cc_source.html#l02236">BsdfBuilder.cc:2236</a></div></div>
@@ -451,9 +468,13 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_1_1shading_html_aee1b173843a9c9b500b07b17a9e8ce03"><div class="ttname"><a href="namespacemoonray_1_1shading.html#aee1b173843a9c9b500b07b17a9e8ce03">moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</a></div><div class="ttdeci">ISPC_UTIL_TYPEDEF_STRUCT(AshikhminShirleyDiffuseBsdfLobe, AshikhminShirleyDiffuseBsdfLobev)</div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ffbcf3a8cac23adad179e74a09117904.html">shading</a></li><li class="navelem"><a class="el" href="_bsdf_builder_8h.html">BsdfBuilder.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

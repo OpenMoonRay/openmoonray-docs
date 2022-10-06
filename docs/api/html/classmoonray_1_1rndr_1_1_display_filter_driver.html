@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,28 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rndr_1_1_display_filter_driver.html">DisplayFilterDriver</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1rndr_1_1_display_filter_driver.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1rndr_1_1_display_filter_driver-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::rndr::DisplayFilterDriver Class Reference</div></div>
 </div><!--header-->
@@ -77,6 +94,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a09cd1ee0eeeba25c6a3c8ea47f76df4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a192fd390fa792176857400b75f87a167"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_display_filter_driver.html#a192fd390fa792176857400b75f87a167">requestTileUpdate</a> (unsigned int tileIdx) const</td></tr>
 <tr class="separator:a192fd390fa792176857400b75f87a167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aed92ae025245be80ea1fb1f466a724d7"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classmoonray_1_1rndr_1_1_display_filter_driver_1_1_impl.html">Impl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_display_filter_driver.html#aed92ae025245be80ea1fb1f466a724d7">mImpl</a></td></tr>
+<tr class="separator:aed92ae025245be80ea1fb1f466a724d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -98,7 +120,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_display_filter_driver_8cc_source.html#l01048">1048</a> of file <a class="el" href="_display_filter_driver_8cc_source.html">DisplayFilterDriver.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1049</span>{</div>
+<div class="line"><span class="lineno"> 1050</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_display_filter_driver.html#aed92ae025245be80ea1fb1f466a724d7">mImpl</a>.reset(<span class="keyword">new</span> Impl());</div>
+<div class="line"><span class="lineno"> 1051</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_display_filter_driver_html_aed92ae025245be80ea1fb1f466a724d7"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_display_filter_driver.html#aed92ae025245be80ea1fb1f466a724d7">moonray::rndr::DisplayFilterDriver::mImpl</a></div><div class="ttdeci">std::unique_ptr&lt; Impl &gt; mImpl</div><div class="ttdef"><b>Definition:</b> <a href="_display_filter_driver_8h_source.html#l00068">DisplayFilterDriver.h:68</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac27a9bedffd0749c548c2d5f69d1f91f" name="ac27a9bedffd0749c548c2d5f69d1f91f"></a>
@@ -117,7 +143,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_display_filter_driver_8cc_source.html#l01053">1053</a> of file <a class="el" href="_display_filter_driver_8cc_source.html">DisplayFilterDriver.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1054</span>{</div>
+<div class="line"><span class="lineno"> 1055</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_display_filter_driver.html#aed92ae025245be80ea1fb1f466a724d7">mImpl</a>.reset();</div>
+<div class="line"><span class="lineno"> 1056</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -138,7 +167,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_display_filter_driver_8cc_source.html#l01082">1082</a> of file <a class="el" href="_display_filter_driver_8cc_source.html">DisplayFilterDriver.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1083</span>{</div>
+<div class="line"><span class="lineno"> 1084</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_display_filter_driver.html#aed92ae025245be80ea1fb1f466a724d7">mImpl</a>-&gt;getAovBuffer(aovIdx);</div>
+<div class="line"><span class="lineno"> 1085</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a339ff08858d2390f3f8157da73913a4d" name="a339ff08858d2390f3f8157da73913a4d"></a>
@@ -157,7 +189,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_display_filter_driver_8cc_source.html#l01070">1070</a> of file <a class="el" href="_display_filter_driver_8cc_source.html">DisplayFilterDriver.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1071</span>{</div>
+<div class="line"><span class="lineno"> 1072</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_display_filter_driver.html#aed92ae025245be80ea1fb1f466a724d7">mImpl</a>-&gt;hasDisplayFilters();</div>
+<div class="line"><span class="lineno"> 1073</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8c594ce2c55f3d7bd31085ab8848c1be" name="a8c594ce2c55f3d7bd31085ab8848c1be"></a>
@@ -211,7 +246,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_display_filter_driver_8cc_source.html#l01059">1059</a> of file <a class="el" href="_display_filter_driver_8cc_source.html">DisplayFilterDriver.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1065</span>{</div>
+<div class="line"><span class="lineno"> 1066</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_display_filter_driver.html#aed92ae025245be80ea1fb1f466a724d7">mImpl</a>-&gt;init(films, roDriver, tiles, tileIndices, viewport, threadCount);</div>
+<div class="line"><span class="lineno"> 1067</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afc87fa23874f14cc3403d25c5d5ffa2d" name="afc87fa23874f14cc3403d25c5d5ffa2d"></a>
@@ -231,7 +269,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_display_filter_driver_8cc_source.html#l01076">1076</a> of file <a class="el" href="_display_filter_driver_8cc_source.html">DisplayFilterDriver.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1077</span>{</div>
+<div class="line"><span class="lineno"> 1078</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_display_filter_driver.html#aed92ae025245be80ea1fb1f466a724d7">mImpl</a>-&gt;isAovRequired(aovIdx);</div>
+<div class="line"><span class="lineno"> 1079</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a192fd390fa792176857400b75f87a167" name="a192fd390fa792176857400b75f87a167"></a>
@@ -251,7 +292,10 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_display_filter_driver_8cc_source.html#l01088">1088</a> of file <a class="el" href="_display_filter_driver_8cc_source.html">DisplayFilterDriver.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1089</span>{</div>
+<div class="line"><span class="lineno"> 1090</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_display_filter_driver.html#aed92ae025245be80ea1fb1f466a724d7">mImpl</a>-&gt;requestTileUpdate(tileIdx);</div>
+<div class="line"><span class="lineno"> 1091</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a09cd1ee0eeeba25c6a3c8ea47f76df4f" name="a09cd1ee0eeeba25c6a3c8ea47f76df4f"></a>
@@ -281,6 +325,34 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_display_filter_driver_8cc_source.html#l01094">1094</a> of file <a class="el" href="_display_filter_driver_8cc_source.html">DisplayFilterDriver.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1096</span>{</div>
+<div class="line"><span class="lineno"> 1097</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_display_filter_driver.html#aed92ae025245be80ea1fb1f466a724d7">mImpl</a>-&gt;runDisplayFilters(tileIdx, threadId);</div>
+<div class="line"><span class="lineno"> 1098</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aed92ae025245be80ea1fb1f466a724d7" name="aed92ae025245be80ea1fb1f466a724d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed92ae025245be80ea1fb1f466a724d7">&#9670;&#160;</a></span>mImpl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classmoonray_1_1rndr_1_1_display_filter_driver_1_1_impl.html">Impl</a>&gt; moonray::rndr::DisplayFilterDriver::mImpl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_display_filter_driver_8h_source.html#l00068">68</a> of file <a class="el" href="_display_filter_driver_8h_source.html">DisplayFilterDriver.h</a>.</p>
 
 </div>
 </div>
@@ -289,9 +361,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/rndr/<a class="el" href="_display_filter_driver_8cc_source.html">DisplayFilterDriver.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rndr_1_1_display_filter_driver.html">DisplayFilterDriver</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

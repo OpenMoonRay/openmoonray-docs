@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,16 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_attribute_key.html">AttributeKey</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_attribute_key.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_attribute_key-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::AttributeKey Class Reference</div></div>
 </div><!--header-->
@@ -63,14 +80,14 @@ Inheritance diagram for moonray::shading::AttributeKey:</div>
  <div class="center">
   <img src="classmoonray_1_1shading_1_1_attribute_key.png" usemap="#moonray::shading::AttributeKey_map" alt=""/>
   <map id="moonray::shading::AttributeKey_map" name="moonray::shading::AttributeKey_map">
-<area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; bool &gt;" shape="rect" coords="394,56,778,80"/>
-<area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; int &gt;" shape="rect" coords="394,112,778,136"/>
-<area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; long &gt;" shape="rect" coords="394,168,778,192"/>
-<area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; float &gt;" shape="rect" coords="394,224,778,248"/>
-<area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; std::string &gt;" shape="rect" coords="394,280,778,304"/>
-<area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; scene_rdl2::math::Color &gt;" shape="rect" coords="394,336,778,360"/>
-<area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; scene_rdl2::math::Color4 &gt;" shape="rect" coords="394,392,778,416"/>
-<area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; scene_rdl2::math::Vec2f &gt;" shape="rect" coords="394,448,778,472"/>
+<area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; scene_rdl2::math::Vec2f &gt;" shape="rect" coords="394,56,778,80"/>
+<area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; bool &gt;" shape="rect" coords="394,112,778,136"/>
+<area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; int &gt;" shape="rect" coords="394,168,778,192"/>
+<area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; long &gt;" shape="rect" coords="394,224,778,248"/>
+<area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; float &gt;" shape="rect" coords="394,280,778,304"/>
+<area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; std::string &gt;" shape="rect" coords="394,336,778,360"/>
+<area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; scene_rdl2::math::Color &gt;" shape="rect" coords="394,392,778,416"/>
+<area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; scene_rdl2::math::Color4 &gt;" shape="rect" coords="394,448,778,472"/>
 <area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; scene_rdl2::math::Vec3f &gt;" shape="rect" coords="394,504,778,528"/>
 <area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" alt="moonray::shading::TypedAttributeKey&lt; scene_rdl2::math::Mat4f &gt;" shape="rect" coords="394,560,778,584"/>
 <area href="classmoonray_1_1shading_1_1_typed_attribute_key.html" title="A templated version of AttributeKey for type safety when possible." alt="moonray::shading::TypedAttributeKey&lt; T &gt;" shape="rect" coords="394,616,778,640"/>
@@ -133,6 +150,23 @@ Static Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ab870fdc00b00347178b9f3ae8cd5fc97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_attribute_key.html#ab870fdc00b00347178b9f3ae8cd5fc97">mIndex</a></td></tr>
 <tr class="separator:ab870fdc00b00347178b9f3ae8cd5fc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:aace0aa8c5c3ac082dc76441984d380c8"><td class="memItemLeft" align="right" valign="top">static tbb::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_attribute_key.html#aace0aa8c5c3ac082dc76441984d380c8">sRegisterMutex</a></td></tr>
+<tr class="separator:aace0aa8c5c3ac082dc76441984d380c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec6fa7352ba522589237626e6a8a85c5"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_attribute_key.html#aec6fa7352ba522589237626e6a8a85c5">sKeyNames</a></td></tr>
+<tr class="separator:aec6fa7352ba522589237626e6a8a85c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fa2447e47522a324bfbb5aa837de079"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; AttributeType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_attribute_key.html#a3fa2447e47522a324bfbb5aa837de079">sKeyTypes</a></td></tr>
+<tr class="separator:a3fa2447e47522a324bfbb5aa837de079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c2e8d6fa8a4ba3fda156e17cfe4b4e7"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_attribute_key.html#a2c2e8d6fa8a4ba3fda156e17cfe4b4e7">sKeySizes</a></td></tr>
+<tr class="separator:a2c2e8d6fa8a4ba3fda156e17cfe4b4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43e209f8be0ad7a25b32f87bd3ec8f8c"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; int8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_attribute_key.html#a43e209f8be0ad7a25b32f87bd3ec8f8c">sHasDerivatives</a></td></tr>
+<tr class="separator:a43e209f8be0ad7a25b32f87bd3ec8f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e61c7a2d79edb8c14efb940258a867"><td class="memItemLeft" align="right" valign="top">static std::map&lt; std::pair&lt; std::string, AttributeType &gt;, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_attribute_key.html#a39e61c7a2d79edb8c14efb940258a867">sTable</a></td></tr>
+<tr class="separator:a39e61c7a2d79edb8c14efb940258a867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1400e25c322c910684e66b0bad2e3e58"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_attribute_key.html#a1400e25c322c910684e66b0bad2e3e58">sNumKeys</a> = 0</td></tr>
+<tr class="separator:a1400e25c322c910684e66b0bad2e3e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >a light weight index with type/name/size info for fast lookup primitive attributes </p>
@@ -157,7 +191,11 @@ Protected Attributes</h2></td></tr>
 <p >Creates an invalid <a class="el" href="classmoonray_1_1shading_1_1_attribute_key.html" title="a light weight index with type/name/size info for fast lookup primitive attributes">AttributeKey</a>. In general, this should only be used when the key will be initialized at a later point. </p>
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00195">195</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  196</span>{</div>
+<div class="line"><span class="lineno">  197</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#ab870fdc00b00347178b9f3ae8cd5fc97">mIndex</a> = -1;</div>
+<div class="line"><span class="lineno">  198</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_ab870fdc00b00347178b9f3ae8cd5fc97"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#ab870fdc00b00347178b9f3ae8cd5fc97">moonray::shading::AttributeKey::mIndex</a></div><div class="ttdeci">int mIndex</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00070">AttributeKey.h:70</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8a2750e959a73cefd8245e3202d2ffbb" name="a8a2750e959a73cefd8245e3202d2ffbb"></a>
@@ -177,7 +215,12 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00200">200</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  201</span>{</div>
+<div class="line"><span class="lineno">  202</span>    MNRY_ASSERT(<a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a918aa07b01301bf6a45c4fd47a33b5a8">isValid</a>(idx));</div>
+<div class="line"><span class="lineno">  203</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#ab870fdc00b00347178b9f3ae8cd5fc97">mIndex</a> = idx;</div>
+<div class="line"><span class="lineno">  204</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a918aa07b01301bf6a45c4fd47a33b5a8"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a918aa07b01301bf6a45c4fd47a33b5a8">moonray::shading::AttributeKey::isValid</a></div><div class="ttdeci">finline bool isValid() const</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00253">AttributeKey.h:253</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae65b658f0468e467988475822e958051" name="ae65b658f0468e467988475822e958051"></a>
@@ -197,7 +240,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00206">206</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  207</span>{</div>
+<div class="line"><span class="lineno">  208</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#ab870fdc00b00347178b9f3ae8cd5fc97">mIndex</a> = other.mIndex;</div>
+<div class="line"><span class="lineno">  209</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -217,7 +263,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00218">218</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  219</span>{</div>
+<div class="line"><span class="lineno">  220</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#ab870fdc00b00347178b9f3ae8cd5fc97">mIndex</a>;</div>
+<div class="line"><span class="lineno">  221</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad3a8c7fc2fa1f449eecdb4d7966a582d" name="ad3a8c7fc2fa1f449eecdb4d7966a582d"></a>
@@ -236,7 +285,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00230">230</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  231</span>{</div>
+<div class="line"><span class="lineno">  232</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#ad3a8c7fc2fa1f449eecdb4d7966a582d">getName</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  233</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_ad3a8c7fc2fa1f449eecdb4d7966a582d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#ad3a8c7fc2fa1f449eecdb4d7966a582d">moonray::shading::AttributeKey::getName</a></div><div class="ttdeci">finline const char * getName() const</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00230">AttributeKey.h:230</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae7e31e5a3956d01ca5e05d7a6d1ae12f" name="ae7e31e5a3956d01ca5e05d7a6d1ae12f"></a>
@@ -264,7 +317,15 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00351">351</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  352</span>{</div>
+<div class="line"><span class="lineno">  353</span>    <span class="keywordflow">if</span> (key.isValid()) {</div>
+<div class="line"><span class="lineno">  354</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#aec6fa7352ba522589237626e6a8a85c5">sKeyNames</a>[key].c_str();</div>
+<div class="line"><span class="lineno">  355</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  356</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;INVALID&quot;</span>;</div>
+<div class="line"><span class="lineno">  357</span>    }</div>
+<div class="line"><span class="lineno">  358</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_aec6fa7352ba522589237626e6a8a85c5"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#aec6fa7352ba522589237626e6a8a85c5">moonray::shading::AttributeKey::sKeyNames</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; sKeyNames</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00093">AttributeKey.h:93</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adaaf112f78237f92a4f8274b6f37f651" name="adaaf112f78237f92a4f8274b6f37f651"></a>
@@ -283,7 +344,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00224">224</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  225</span>{</div>
+<div class="line"><span class="lineno">  226</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#adaaf112f78237f92a4f8274b6f37f651">getSize</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  227</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_adaaf112f78237f92a4f8274b6f37f651"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#adaaf112f78237f92a4f8274b6f37f651">moonray::shading::AttributeKey::getSize</a></div><div class="ttdeci">finline size_t getSize() const</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00224">AttributeKey.h:224</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aaec148d5ee38c3c892dd9b1540f7db40" name="aaec148d5ee38c3c892dd9b1540f7db40"></a>
@@ -311,7 +376,15 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00371">371</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  372</span>{</div>
+<div class="line"><span class="lineno">  373</span>    <span class="keywordflow">if</span> (key.isValid()) {</div>
+<div class="line"><span class="lineno">  374</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a2c2e8d6fa8a4ba3fda156e17cfe4b4e7">sKeySizes</a>[key];</div>
+<div class="line"><span class="lineno">  375</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  376</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  377</span>    }</div>
+<div class="line"><span class="lineno">  378</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a2c2e8d6fa8a4ba3fda156e17cfe4b4e7"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a2c2e8d6fa8a4ba3fda156e17cfe4b4e7">moonray::shading::AttributeKey::sKeySizes</a></div><div class="ttdeci">static std::vector&lt; size_t &gt; sKeySizes</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00095">AttributeKey.h:95</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9741569f534f40cc3dc272913fceb8b3" name="a9741569f534f40cc3dc272913fceb8b3"></a>
@@ -330,7 +403,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00236">236</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  237</span>{</div>
+<div class="line"><span class="lineno">  238</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a9741569f534f40cc3dc272913fceb8b3">getType</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  239</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a9741569f534f40cc3dc272913fceb8b3"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a9741569f534f40cc3dc272913fceb8b3">moonray::shading::AttributeKey::getType</a></div><div class="ttdeci">finline AttributeType getType() const</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00236">AttributeKey.h:236</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a51524afb5dcd3d82b673b1958eec68ef" name="a51524afb5dcd3d82b673b1958eec68ef"></a>
@@ -358,7 +435,15 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00361">361</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  362</span>{</div>
+<div class="line"><span class="lineno">  363</span>    <span class="keywordflow">if</span> (key.isValid()) {</div>
+<div class="line"><span class="lineno">  364</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a3fa2447e47522a324bfbb5aa837de079">sKeyTypes</a>[key];</div>
+<div class="line"><span class="lineno">  365</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  366</span>        <span class="keywordflow">return</span> scene_rdl2::rdl2::TYPE_UNKNOWN;</div>
+<div class="line"><span class="lineno">  367</span>    }</div>
+<div class="line"><span class="lineno">  368</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a3fa2447e47522a324bfbb5aa837de079"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a3fa2447e47522a324bfbb5aa837de079">moonray::shading::AttributeKey::sKeyTypes</a></div><div class="ttdeci">static std::vector&lt; AttributeType &gt; sKeyTypes</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00094">AttributeKey.h:94</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a52b3d47df2192de031d40faa890b262d" name="a52b3d47df2192de031d40faa890b262d"></a>
@@ -377,7 +462,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00242">242</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  243</span>{</div>
+<div class="line"><span class="lineno">  244</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a52b3d47df2192de031d40faa890b262d">hasDerivatives</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  245</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a52b3d47df2192de031d40faa890b262d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a52b3d47df2192de031d40faa890b262d">moonray::shading::AttributeKey::hasDerivatives</a></div><div class="ttdeci">finline bool hasDerivatives() const</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00242">AttributeKey.h:242</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a45c49fa543c3373a8cc7f9be4a206658" name="a45c49fa543c3373a8cc7f9be4a206658"></a>
@@ -405,7 +494,15 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00381">381</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  382</span>{</div>
+<div class="line"><span class="lineno">  383</span>    <span class="keywordflow">if</span> (key.isValid()) {</div>
+<div class="line"><span class="lineno">  384</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a43e209f8be0ad7a25b32f87bd3ec8f8c">sHasDerivatives</a>[key];</div>
+<div class="line"><span class="lineno">  385</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  386</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  387</span>    }</div>
+<div class="line"><span class="lineno">  388</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a43e209f8be0ad7a25b32f87bd3ec8f8c"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a43e209f8be0ad7a25b32f87bd3ec8f8c">moonray::shading::AttributeKey::sHasDerivatives</a></div><div class="ttdeci">static std::vector&lt; int8_t &gt; sHasDerivatives</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00096">AttributeKey.h:96</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1a739779112ebe0052037796a1561f67" name="a1a739779112ebe0052037796a1561f67"></a>
@@ -475,7 +572,38 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00297">297</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  298</span>{</div>
+<div class="line"><span class="lineno">  299</span>    AttributeType type = attributeType&lt;T&gt;();</div>
+<div class="line"><span class="lineno">  300</span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a> = getAttributeTypeSize&lt;T&gt;();</div>
+<div class="line"><span class="lineno">  301</span>    std::pair&lt;std::string, AttributeType&gt; <a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a07ff1fc7f08611a058dc961dc83fad14">lookup</a>(name, type);</div>
+<div class="line"><span class="lineno">  302</span>    <span class="keywordtype">int</span> index = -1;</div>
+<div class="line"><span class="lineno">  303</span>    {</div>
+<div class="line"><span class="lineno">  304</span>        tbb::mutex::scoped_lock lock(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#aace0aa8c5c3ac082dc76441984d380c8">sRegisterMutex</a>);</div>
+<div class="line"><span class="lineno">  305</span>        <span class="keyword">auto</span> it = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a39e61c7a2d79edb8c14efb940258a867">sTable</a>.find(<a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a07ff1fc7f08611a058dc961dc83fad14">lookup</a>);</div>
+<div class="line"><span class="lineno">  306</span>        <span class="keywordflow">if</span> (it == <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a39e61c7a2d79edb8c14efb940258a867">sTable</a>.end()) {</div>
+<div class="line"><span class="lineno">  307</span>            index = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#aec6fa7352ba522589237626e6a8a85c5">sKeyNames</a>.size());</div>
+<div class="line"><span class="lineno">  308</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a39e61c7a2d79edb8c14efb940258a867">sTable</a>[<a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a07ff1fc7f08611a058dc961dc83fad14">lookup</a>] = index;</div>
+<div class="line"><span class="lineno">  309</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#aec6fa7352ba522589237626e6a8a85c5">sKeyNames</a>.push_back(name);</div>
+<div class="line"><span class="lineno">  310</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a2c2e8d6fa8a4ba3fda156e17cfe4b4e7">sKeySizes</a>.push_back(size);</div>
+<div class="line"><span class="lineno">  311</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a3fa2447e47522a324bfbb5aa837de079">sKeyTypes</a>.push_back(type);</div>
+<div class="line"><span class="lineno">  312</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a43e209f8be0ad7a25b32f87bd3ec8f8c">sHasDerivatives</a>.push_back(0);</div>
+<div class="line"><span class="lineno">  313</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  314</span>            index = it-&gt;second;</div>
+<div class="line"><span class="lineno">  315</span>        }</div>
+<div class="line"><span class="lineno">  316</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#adce208c1f194444ea668f1f4d3563741">requestDerivatives</a> &amp;&amp;</div>
+<div class="line"><span class="lineno">  317</span>            type != scene_rdl2::rdl2::TYPE_BOOL &amp;&amp; type != scene_rdl2::rdl2::TYPE_INT &amp;&amp;</div>
+<div class="line"><span class="lineno">  318</span>            type != scene_rdl2::rdl2::TYPE_LONG &amp;&amp; type != scene_rdl2::rdl2::TYPE_STRING) {</div>
+<div class="line"><span class="lineno">  319</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a43e209f8be0ad7a25b32f87bd3ec8f8c">sHasDerivatives</a>[index] = 1;</div>
+<div class="line"><span class="lineno">  320</span>        }</div>
+<div class="line"><span class="lineno">  321</span>    }</div>
+<div class="line"><span class="lineno">  322</span>    <span class="keywordflow">return</span> index;</div>
+<div class="line"><span class="lineno">  323</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a07ff1fc7f08611a058dc961dc83fad14"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a07ff1fc7f08611a058dc961dc83fad14">moonray::shading::AttributeKey::lookup</a></div><div class="ttdeci">static finline int lookup(const std::string &amp;name)</div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a39e61c7a2d79edb8c14efb940258a867"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a39e61c7a2d79edb8c14efb940258a867">moonray::shading::AttributeKey::sTable</a></div><div class="ttdeci">static std::map&lt; std::pair&lt; std::string, AttributeType &gt;, int &gt; sTable</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00097">AttributeKey.h:97</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_aace0aa8c5c3ac082dc76441984d380c8"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#aace0aa8c5c3ac082dc76441984d380c8">moonray::shading::AttributeKey::sRegisterMutex</a></div><div class="ttdeci">static tbb::mutex sRegisterMutex</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00092">AttributeKey.h:92</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_adce208c1f194444ea668f1f4d3563741"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#adce208c1f194444ea668f1f4d3563741">moonray::shading::AttributeKey::requestDerivatives</a></div><div class="ttdeci">finline bool requestDerivatives() const</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00259">AttributeKey.h:259</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_resume_history_meta_data_8cc_03_html_a9a38a2aa0f811fa9e3761cd0049c46b8"><div class="ttname"><a href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">anonymous_namespace{ResumeHistoryMetaData.cc}::size</a></div><div class="ttdeci">MAYBE_UNUSED std::size_t size(const std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="_resume_history_meta_data_8cc_source.html#l00047">ResumeHistoryMetaData.cc:47</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a918aa07b01301bf6a45c4fd47a33b5a8" name="a918aa07b01301bf6a45c4fd47a33b5a8"></a>
@@ -494,7 +622,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00253">253</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  254</span>{</div>
+<div class="line"><span class="lineno">  255</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#ab870fdc00b00347178b9f3ae8cd5fc97">mIndex</a> != -1;</div>
+<div class="line"><span class="lineno">  256</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae9c6b9bd81b312ab0029a79825fbb843" name="ae9c6b9bd81b312ab0029a79825fbb843"></a>
@@ -522,7 +653,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00344">344</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  345</span>{</div>
+<div class="line"><span class="lineno">  346</span>    <span class="keywordflow">return</span> index &gt;= 0 &amp;&amp; index &lt; (int)<a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#aec6fa7352ba522589237626e6a8a85c5">sKeyNames</a>.size();</div>
+<div class="line"><span class="lineno">  347</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a07ff1fc7f08611a058dc961dc83fad14" name="a07ff1fc7f08611a058dc961dc83fad14"></a>
@@ -572,7 +706,22 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00327">327</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  328</span>{</div>
+<div class="line"><span class="lineno">  329</span>    AttributeType type = attributeType&lt;T&gt;();</div>
+<div class="line"><span class="lineno">  330</span>    std::pair&lt;std::string, AttributeType&gt; lu(name, type);</div>
+<div class="line"><span class="lineno">  331</span> </div>
+<div class="line"><span class="lineno">  332</span>    <span class="keyword">auto</span> it = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a39e61c7a2d79edb8c14efb940258a867">sTable</a>.find(lu);</div>
+<div class="line"><span class="lineno">  333</span>    <span class="keywordflow">if</span> (it == <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a39e61c7a2d79edb8c14efb940258a867">sTable</a>.end()) {</div>
+<div class="line"><span class="lineno">  334</span>        std::stringstream ss;</div>
+<div class="line"><span class="lineno">  335</span>        ss &lt;&lt; <span class="stringliteral">&quot;Key not found:&quot;</span> &lt;&lt; <a class="code hl_variable" href="namespacepackage.html#a781101519999e91f2fc32335a8969fc2">name</a> &lt;&lt; <span class="stringliteral">&quot; Type:(&quot;</span> &lt;&lt; type &lt;&lt; <span class="stringliteral">&quot;). Add key before using.&quot;</span>;</div>
+<div class="line"><span class="lineno">  336</span>        MNRY_ASSERT(0, ss.str().c_str());</div>
+<div class="line"><span class="lineno">  337</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">  338</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  339</span>        <span class="keywordflow">return</span> it-&gt;second;</div>
+<div class="line"><span class="lineno">  340</span>    }</div>
+<div class="line"><span class="lineno">  341</span>}</div>
+<div class="ttc" id="anamespacepackage_html_a781101519999e91f2fc32335a8969fc2"><div class="ttname"><a href="namespacepackage.html#a781101519999e91f2fc32335a8969fc2">package.name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> <a href="package_8py_source.html#l00007">package.py:7</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7a4a5c305ad24cc8f35171f16c9cd7cc" name="a7a4a5c305ad24cc8f35171f16c9cd7cc"></a>
@@ -591,7 +740,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00247">247</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  248</span>{</div>
+<div class="line"><span class="lineno">  249</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#ab870fdc00b00347178b9f3ae8cd5fc97">mIndex</a>;</div>
+<div class="line"><span class="lineno">  250</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5e6c4e0538b07ecfa893211c06fd3a30" name="a5e6c4e0538b07ecfa893211c06fd3a30"></a>
@@ -611,7 +763,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00212">212</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  213</span>{</div>
+<div class="line"><span class="lineno">  214</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#ab870fdc00b00347178b9f3ae8cd5fc97">mIndex</a> == other.mIndex;</div>
+<div class="line"><span class="lineno">  215</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adce208c1f194444ea668f1f4d3563741" name="adce208c1f194444ea668f1f4d3563741"></a>
@@ -630,7 +785,23 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00259">259</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  260</span>{</div>
+<div class="line"><span class="lineno">  261</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a918aa07b01301bf6a45c4fd47a33b5a8">isValid</a>()) {</div>
+<div class="line"><span class="lineno">  262</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  263</span>    }</div>
+<div class="line"><span class="lineno">  264</span>    <span class="comment">// unable to compute differential for non float type attributes</span></div>
+<div class="line"><span class="lineno">  265</span>    AttributeType type = <a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a9741569f534f40cc3dc272913fceb8b3">getType</a>();</div>
+<div class="line"><span class="lineno">  266</span>    <span class="keywordflow">if</span> (type == scene_rdl2::rdl2::TYPE_BOOL || type == scene_rdl2::rdl2::TYPE_INT ||</div>
+<div class="line"><span class="lineno">  267</span>        type == scene_rdl2::rdl2::TYPE_LONG || type == scene_rdl2::rdl2::TYPE_STRING) {</div>
+<div class="line"><span class="lineno">  268</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  269</span>    }</div>
+<div class="line"><span class="lineno">  270</span>    {</div>
+<div class="line"><span class="lineno">  271</span>        tbb::mutex::scoped_lock lock(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#aace0aa8c5c3ac082dc76441984d380c8">sRegisterMutex</a>);</div>
+<div class="line"><span class="lineno">  272</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a43e209f8be0ad7a25b32f87bd3ec8f8c">sHasDerivatives</a>[<a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#ab870fdc00b00347178b9f3ae8cd5fc97">mIndex</a>] = 1;</div>
+<div class="line"><span class="lineno">  273</span>    }</div>
+<div class="line"><span class="lineno">  274</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  275</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -658,14 +829,186 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a43e209f8be0ad7a25b32f87bd3ec8f8c" name="a43e209f8be0ad7a25b32f87bd3ec8f8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43e209f8be0ad7a25b32f87bd3ec8f8c">&#9670;&#160;</a></span>sHasDerivatives</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; int8_t &gt; moonray::shading::AttributeKey::sHasDerivatives</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00096">96</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
+
+</div>
+</div>
+<a id="aec6fa7352ba522589237626e6a8a85c5" name="aec6fa7352ba522589237626e6a8a85c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec6fa7352ba522589237626e6a8a85c5">&#9670;&#160;</a></span>sKeyNames</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; moonray::shading::AttributeKey::sKeyNames</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00093">93</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
+
+</div>
+</div>
+<a id="a2c2e8d6fa8a4ba3fda156e17cfe4b4e7" name="a2c2e8d6fa8a4ba3fda156e17cfe4b4e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c2e8d6fa8a4ba3fda156e17cfe4b4e7">&#9670;&#160;</a></span>sKeySizes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; size_t &gt; moonray::shading::AttributeKey::sKeySizes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00095">95</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
+
+</div>
+</div>
+<a id="a3fa2447e47522a324bfbb5aa837de079" name="a3fa2447e47522a324bfbb5aa837de079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fa2447e47522a324bfbb5aa837de079">&#9670;&#160;</a></span>sKeyTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; AttributeType &gt; moonray::shading::AttributeKey::sKeyTypes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00094">94</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
+
+</div>
+</div>
+<a id="a1400e25c322c910684e66b0bad2e3e58" name="a1400e25c322c910684e66b0bad2e3e58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1400e25c322c910684e66b0bad2e3e58">&#9670;&#160;</a></span>sNumKeys</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int moonray::shading::AttributeKey::sNumKeys = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00098">98</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
+
+</div>
+</div>
+<a id="aace0aa8c5c3ac082dc76441984d380c8" name="aace0aa8c5c3ac082dc76441984d380c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aace0aa8c5c3ac082dc76441984d380c8">&#9670;&#160;</a></span>sRegisterMutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tbb::mutex moonray::shading::AttributeKey::sRegisterMutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00092">92</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
+
+</div>
+</div>
+<a id="a39e61c7a2d79edb8c14efb940258a867" name="a39e61c7a2d79edb8c14efb940258a867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e61c7a2d79edb8c14efb940258a867">&#9670;&#160;</a></span>sTable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; std::pair&lt; std::string, AttributeType &gt;, int &gt; moonray::shading::AttributeKey::sTable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_attribute_key_8h_source.html#l00097">97</a> of file <a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/bvh/shading/<a class="el" href="_attribute_key_8h_source.html">AttributeKey.h</a></li>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/bvh/shading/<a class="el" href="_attribute_key_8cc_source.html">AttributeKey.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_attribute_key.html">AttributeKey</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

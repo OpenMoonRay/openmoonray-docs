@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,16 +42,28 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_26bab4ce23f451d8d22db1f5975a2369.html">deepfile</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_dcx_deep_tile_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">DcxDeepTile.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_dcx_deep_tile_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<a href="_dcx_deep_tile_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">///////////////////////////////////////////////////////////////////////////</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright (c) 2016-2022 DreamWorks Animation LLC. </span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
@@ -79,7 +95,10 @@ $(function() {
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">//</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">//</span><span class="comment"></span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">///////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">///</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/// @file DcxDeepTile.h</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"></span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#ifndef INCLUDED_DCX_DEEPTILE_H</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#define INCLUDED_DCX_DEEPTILE_H</span></div>
@@ -95,7 +114,8 @@ $(function() {
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#include &quot;<a class="code" href="_dcx_channel_alias_8h.html">DcxChannelAlias.h</a>&quot;</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">//-------------------------</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">//-------------------------</span><span class="comment"></span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">//!rst:cpp:begin::</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"></span><span class="comment">//.. _deeptile_class:</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">//</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">//DeepTile</span></div>
@@ -208,7 +228,7 @@ $(function() {
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="comment">// Returns the number of deep samples at pixel x,y.</span></div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="class_deep_tile.html#ac52031c392840da4003e432226d12b6d">  166</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_deep_tile.html#ac52031c392840da4003e432226d12b6d">getNumSamplesAt</a> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) <span class="keyword">const</span>=0;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="class_deep_tile.html#ac52031c392840da4003e432226d12b6d">  166</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="class_deep_tile.html#ac52031c392840da4003e432226d12b6d">getNumSamplesAt</a> (<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) <span class="keyword">const</span>=0;</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="comment">// Reads deep samples from a pixel-space location (x, y) into a deep pixel.</span></div>
@@ -216,13 +236,13 @@ $(function() {
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="comment">// Must be implemented by subclasses.</span></div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="class_deep_tile.html#a5aceb6c014add3fa2972c6a6d77ae5f2">  174</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_deep_tile.html#a5aceb6c014add3fa2972c6a6d77ae5f2">getDeepPixel</a> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>,</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                               <span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>,</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="class_deep_tile.html#a5aceb6c014add3fa2972c6a6d77ae5f2">  174</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_deep_tile.html#a5aceb6c014add3fa2972c6a6d77ae5f2">getDeepPixel</a> (<span class="keywordtype">int</span> x,</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                               <span class="keywordtype">int</span> y,</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                               OPENDCX_INTERNAL_NAMESPACE::DeepPixel&amp; pixel) <span class="keyword">const</span>=0;</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="class_deep_tile.html#a29bb2414c945322e872df5ce1c561b7e">  178</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_deep_tile.html#a29bb2414c945322e872df5ce1c561b7e">getSampleMetadata</a> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>,</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                                    <span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>,</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                                    <span class="keywordtype">size_t</span> sample,</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="class_deep_tile.html#a29bb2414c945322e872df5ce1c561b7e">  178</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_deep_tile.html#a29bb2414c945322e872df5ce1c561b7e">getSampleMetadata</a> (<span class="keywordtype">int</span> x,</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                                    <span class="keywordtype">int</span> y,</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                                    <span class="keywordtype">size_t</span> <a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>,</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                                    OPENDCX_INTERNAL_NAMESPACE::DeepMetadata&amp; metadata) <span class="keyword">const</span>=0;</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
@@ -235,8 +255,8 @@ $(function() {
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="comment">// Base class returns false.</span></div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> setDeepPixel (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>,</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                               <span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>,</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> setDeepPixel (<span class="keywordtype">int</span> x,</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                               <span class="keywordtype">int</span> y,</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                               <span class="keyword">const</span> OPENDCX_INTERNAL_NAMESPACE::DeepPixel&amp; pixel);</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
@@ -248,8 +268,8 @@ $(function() {
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="comment">// Base class returns false.</span></div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> clearDeepPixel (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>,</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                                 <span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> clearDeepPixel (<span class="keywordtype">int</span> x,</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                                 <span class="keywordtype">int</span> y);</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="comment">//</span></div>
@@ -285,7 +305,8 @@ $(function() {
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">//--------------</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">//--------------</span><span class="comment"></span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment">//!rst:cpp:end::</span></div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment"></span><span class="comment">//--------------</span></div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="comment">//-----------------</span></div>
@@ -304,12 +325,11 @@ $(function() {
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><a class="code hl_define" href="version_8h.html#a918a6357c45c4f1e23b796ec20742fdb">OPENDCX_INTERNAL_NAMESPACE_HEADER_EXIT</a></div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="preprocessor">#endif </span><span class="comment">// INCLUDED_DCX_DEEPTILE_H</span></div>
+<div class="ttc" id="a_attribute_map_8cc_html_ab527eec89029a7b166a67dd899129255"><div class="ttname"><a href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a></div><div class="ttdeci">static void sample(const scene_rdl2::rdl2::Map *self, moonray::shading::TLState *tls, const moonray::shading::State &amp;state, Color *sample)</div></div>
 <div class="ttc" id="a_dcx_a_p_i_8h_html_a0f405d19dd63de0fb67d71a988e9ca57"><div class="ttname"><a href="_dcx_a_p_i_8h.html#a0f405d19dd63de0fb67d71a988e9ca57">DCX_EXPORT</a></div><div class="ttdeci">#define DCX_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_a_p_i_8h_source.html#l00053">DcxAPI.h:53</a></div></div>
 <div class="ttc" id="a_dcx_channel_alias_8h_html"><div class="ttname"><a href="_dcx_channel_alias_8h.html">DcxChannelAlias.h</a></div></div>
 <div class="ttc" id="a_dcx_deep_pixel_8h_html"><div class="ttname"><a href="_dcx_deep_pixel_8h.html">DcxDeepPixel.h</a></div></div>
 <div class="ttc" id="a_dcx_pixel_tile_8h_html"><div class="ttname"><a href="_dcx_pixel_tile_8h.html">DcxPixelTile.h</a></div></div>
-<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
-<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 <div class="ttc" id="aclass_channel_context_html"><div class="ttname"><a href="class_channel_context.html">ChannelContext</a></div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_context_8h_source.html#l00125">DcxChannelContext.h:126</a></div></div>
 <div class="ttc" id="aclass_channel_set_html"><div class="ttname"><a href="class_channel_set.html">ChannelSet</a></div><div class="ttdoc">rst:left-align::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00135">DcxChannelSet.h:136</a></div></div>
 <div class="ttc" id="aclass_deep_tile_html"><div class="ttname"><a href="class_deep_tile.html">DeepTile</a></div><div class="ttdoc">rst:cpp:begin::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_tile_8h_source.html#l00083">DcxDeepTile.h:84</a></div></div>
@@ -334,9 +354,13 @@ $(function() {
 <div class="ttc" id="aversion_8h_html_a918a6357c45c4f1e23b796ec20742fdb"><div class="ttname"><a href="version_8h.html#a918a6357c45c4f1e23b796ec20742fdb">OPENDCX_INTERNAL_NAMESPACE_HEADER_EXIT</a></div><div class="ttdeci">#define OPENDCX_INTERNAL_NAMESPACE_HEADER_EXIT</div><div class="ttdef"><b>Definition:</b> <a href="version_8h_source.html#l00081">version.h:81</a></div></div>
 <div class="ttc" id="aversion_8h_html_adc94498f00d0738db6a806e8be179b66"><div class="ttname"><a href="version_8h.html#adc94498f00d0738db6a806e8be179b66">OPENDCX_INTERNAL_NAMESPACE_HEADER_ENTER</a></div><div class="ttdeci">#define OPENDCX_INTERNAL_NAMESPACE_HEADER_ENTER</div><div class="ttdef"><b>Definition:</b> <a href="version_8h_source.html#l00080">version.h:80</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_72b1453eb3d56651fce76e1c2eebfac7.html">deepfile</a></li><li class="navelem"><a class="el" href="_dcx_deep_tile_8h.html">DcxDeepTile.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

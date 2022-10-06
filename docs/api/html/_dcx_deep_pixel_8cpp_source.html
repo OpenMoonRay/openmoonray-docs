@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,16 +42,28 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_26bab4ce23f451d8d22db1f5975a2369.html">deepfile</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_dcx_deep_pixel_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">DcxDeepPixel.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_dcx_deep_pixel_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<a href="_dcx_deep_pixel_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">///////////////////////////////////////////////////////////////////////////</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright (c) 2016-2022 DreamWorks Animation LLC.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
@@ -79,7 +95,10 @@ $(function() {
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">//</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">//</span><span class="comment"></span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">///////////////////////////////////////////////////////////////////////////</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">///</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/// @file DcxDeepPixel.cpp</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"></span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &quot;<a class="code" href="_dcx_deep_pixel_8h.html">DcxDeepPixel.h</a>&quot;</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
@@ -1170,8 +1189,8 @@ $(function() {
 <div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span>            {</div>
 <div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span>                <span class="comment">// Add partial segments into opaque segment:</span></div>
 <div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span>                new_segment.<a class="code hl_function" href="class_deep_segment.html#a23ed90798656036684c117f3912d039a">clearSpCoverageCount</a>(); <span class="comment">// turn off partial coverage</span></div>
-<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span>                <span class="keywordflow">if</span> ((new_pixel[Chan_A] + in_pixel[Chan_A]) &gt;= 1.0f)</div>
-<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span>                    new_pixel += in_pixel*((1.0f - new_pixel[Chan_A]) / in_pixel[Chan_A]);</div>
+<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span>                <span class="keywordflow">if</span> ((new_pixel[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>] + in_pixel[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>]) &gt;= 1.0f)</div>
+<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span>                    new_pixel += in_pixel*((1.0f - new_pixel[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>]) / in_pixel[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>]);</div>
 <div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span>                <span class="keywordflow">else</span></div>
 <div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span>                    new_pixel += in_pixel;</div>
 <div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span> </div>
@@ -1400,14 +1419,14 @@ $(function() {
 <div class="line"><a id="l01354" name="l01354"></a><span class="lineno"> 1354</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01355" name="l01355"></a><span class="lineno"> 1355</span> </div>
 <div class="line"><a id="l01356" name="l01356"></a><span class="lineno"> 1356</span>        <span class="comment">// Only apply alpha correction if alpha is a grey value:</span></div>
-<div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> interp_alpha = segment_color[Chan_A];</div>
+<div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> interp_alpha = segment_color[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>];</div>
 <div class="line"><a id="l01358" name="l01358"></a><span class="lineno"> 1358</span>        subsection_color = segment_color;</div>
 <div class="line"><a id="l01359" name="l01359"></a><span class="lineno"> 1359</span>        <span class="keywordflow">if</span> (segment.<a class="code hl_function" href="class_deep_segment.html#a06c495a5823b0c0270df5e7357472f75">isMatte</a>())</div>
 <div class="line"><a id="l01360" name="l01360"></a><span class="lineno"> 1360</span>        {</div>
 <div class="line"><a id="l01361" name="l01361"></a><span class="lineno"> 1361</span>            <span class="comment">// Matte object, blacken color channels except alpha:</span></div>
-<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> a = subsection_color[Chan_A];</div>
+<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> a = subsection_color[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>];</div>
 <div class="line"><a id="l01363" name="l01363"></a><span class="lineno"> 1363</span>            subsection_color.<a class="code hl_function" href="class_pixel.html#a385f656e26dca0209b27ca7c1b46155c">erase</a>(<a class="code hl_function" href="class_deep_pixel.html#a24e3f7f5370d8a86a7757043104a52c5">channels</a>);</div>
-<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span>            subsection_color[Chan_A] = a;</div>
+<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span>            subsection_color[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>] = a;</div>
 <div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span><span class="preprocessor">#ifdef DCX_DEBUG_FLATTENER</span></div>
 <div class="line"><a id="l01366" name="l01366"></a><span class="lineno"> 1366</span>        <span class="keywordflow">if</span> (debug_enable) std::cout &lt;&lt; <span class="stringliteral">&quot;, MATTE&quot;</span>;</div>
 <div class="line"><a id="l01367" name="l01367"></a><span class="lineno"> 1367</span><span class="preprocessor">#endif</span></div>
@@ -1416,7 +1435,7 @@ $(function() {
 <div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l01371" name="l01371"></a><span class="lineno"> 1371</span>        {</div>
 <div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span>            merged_all_matte = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span>            subsection_color[Chan_ACutout] = subsection_color[Chan_A];</div>
+<div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span>            subsection_color[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>] = subsection_color[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>];</div>
 <div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span>        }</div>
 <div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span> </div>
 <div class="line"><a id="l01376" name="l01376"></a><span class="lineno"> 1376</span>        <span class="comment">// Composite with final alpha for all samples at this segment:</span></div>
@@ -1434,7 +1453,7 @@ $(function() {
 <div class="line"><a id="l01388" name="l01388"></a><span class="lineno"> 1388</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> correction = subsection_alpha / interp_alpha;</div>
 <div class="line"><a id="l01389" name="l01389"></a><span class="lineno"> 1389</span>            <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_function" href="class_deep_pixel.html#a24e3f7f5370d8a86a7757043104a52c5">channels</a>)</div>
 <div class="line"><a id="l01390" name="l01390"></a><span class="lineno"> 1390</span>                subsection_color[z] *= correction;</div>
-<div class="line"><a id="l01391" name="l01391"></a><span class="lineno"> 1391</span>            subsection_color[Chan_A] = subsection_alpha;</div>
+<div class="line"><a id="l01391" name="l01391"></a><span class="lineno"> 1391</span>            subsection_color[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>] = subsection_alpha;</div>
 <div class="line"><a id="l01392" name="l01392"></a><span class="lineno"> 1392</span> </div>
 <div class="line"><a id="l01393" name="l01393"></a><span class="lineno"> 1393</span>            merged_alpha = merged_alpha*(1.0f - subsection_alpha) + subsection_alpha;</div>
 <div class="line"><a id="l01394" name="l01394"></a><span class="lineno"> 1394</span><span class="preprocessor">#ifdef DCX_DEBUG_FLATTENER</span></div>
@@ -1442,7 +1461,7 @@ $(function() {
 <div class="line"><a id="l01396" name="l01396"></a><span class="lineno"> 1396</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01397" name="l01397"></a><span class="lineno"> 1397</span>        }</div>
 <div class="line"><a id="l01398" name="l01398"></a><span class="lineno"> 1398</span> </div>
-<div class="line"><a id="l01399" name="l01399"></a><span class="lineno"> 1399</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> subsection_alpha = subsection_color[Chan_A];</div>
+<div class="line"><a id="l01399" name="l01399"></a><span class="lineno"> 1399</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> subsection_alpha = subsection_color[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>];</div>
 <div class="line"><a id="l01400" name="l01400"></a><span class="lineno"> 1400</span>        <span class="keywordflow">if</span> (subsection_alpha &lt;= 0.0f)</div>
 <div class="line"><a id="l01401" name="l01401"></a><span class="lineno"> 1401</span>        {</div>
 <div class="line"><a id="l01402" name="l01402"></a><span class="lineno"> 1402</span>            <span class="comment">// Alpha transparent, skip it</span></div>
@@ -1492,8 +1511,8 @@ $(function() {
 <div class="line"><a id="l01446" name="l01446"></a><span class="lineno"> 1446</span>        <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_function" href="class_deep_pixel.html#a24e3f7f5370d8a86a7757043104a52c5">channels</a>)</div>
 <div class="line"><a id="l01447" name="l01447"></a><span class="lineno"> 1447</span>            out[z] = float(<span class="keywordtype">double</span>(out[z]) * absorption_accum)*merged_alpha;</div>
 <div class="line"><a id="l01448" name="l01448"></a><span class="lineno"> 1448</span>    }</div>
-<div class="line"><a id="l01449" name="l01449"></a><span class="lineno"> 1449</span>    out[Chan_A] = merged_alpha;</div>
-<div class="line"><a id="l01450" name="l01450"></a><span class="lineno"> 1450</span>    out[Chan_SpCoverage] = 1.0f; <span class="comment">// legacy segments are always have full spcoverage</span></div>
+<div class="line"><a id="l01449" name="l01449"></a><span class="lineno"> 1449</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>] = merged_alpha;</div>
+<div class="line"><a id="l01450" name="l01450"></a><span class="lineno"> 1450</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a9b72bc71dac0f07215aea9a421628641">Chan_SpCoverage</a>] = 1.0f; <span class="comment">// legacy segments are always have full spcoverage</span></div>
 <div class="line"><a id="l01451" name="l01451"></a><span class="lineno"> 1451</span> </div>
 <div class="line"><a id="l01452" name="l01452"></a><span class="lineno"> 1452</span>    <span class="keywordflow">if</span> (merged_all_matte)</div>
 <div class="line"><a id="l01453" name="l01453"></a><span class="lineno"> 1453</span>        merged_metadata.<a class="code hl_variable" href="struct_deep_metadata.html#a71748026ce682d1e52099d6de5545494">flags</a> |= <a class="code hl_variable" href="class_deep_flags.html#a7b6b94010825f24aa48a543343d186a0">DeepFlags::MATTE_OBJECT</a>;</div>
@@ -1549,8 +1568,8 @@ $(function() {
 <div class="line"><a id="l01503" name="l01503"></a><span class="lineno"> 1503</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01504" name="l01504"></a><span class="lineno"> 1504</span> </div>
 <div class="line"><a id="l01505" name="l01505"></a><span class="lineno"> 1505</span>    out.<a class="code hl_function" href="class_pixel.html#a385f656e26dca0209b27ca7c1b46155c">erase</a>(out_channels);</div>
-<div class="line"><a id="l01506" name="l01506"></a><span class="lineno"> 1506</span>    out[Chan_ZFront] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
-<div class="line"><a id="l01507" name="l01507"></a><span class="lineno"> 1507</span>    out[Chan_ZBack ] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
+<div class="line"><a id="l01506" name="l01506"></a><span class="lineno"> 1506</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a187f15db7f68e75e94e1ba1b7fe0ecf2">Chan_ZFront</a>] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
+<div class="line"><a id="l01507" name="l01507"></a><span class="lineno"> 1507</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a> ] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
 <div class="line"><a id="l01508" name="l01508"></a><span class="lineno"> 1508</span> </div>
 <div class="line"><a id="l01509" name="l01509"></a><span class="lineno"> 1509</span>    <a class="code hl_class" href="class_pixel.html">Pixelf</a> flattened(out_channels);</div>
 <div class="line"><a id="l01510" name="l01510"></a><span class="lineno"> 1510</span> </div>
@@ -1570,14 +1589,14 @@ $(function() {
 <div class="line"><a id="l01524" name="l01524"></a><span class="lineno"> 1524</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l01525" name="l01525"></a><span class="lineno"> 1525</span>            <a class="code hl_function" href="class_deep_pixel.html#ab0e00350352e0c121e18edc4b8a6f208">flattenOverlapping</a>(out_channels, flattened, sp_mask, interpolation); <span class="comment">// Merge overlapping deep segments</span></div>
 <div class="line"><a id="l01526" name="l01526"></a><span class="lineno"> 1526</span> </div>
-<div class="line"><a id="l01527" name="l01527"></a><span class="lineno"> 1527</span>        <span class="keywordflow">if</span> (flattened[Chan_A] &lt; <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>)</div>
+<div class="line"><a id="l01527" name="l01527"></a><span class="lineno"> 1527</span>        <span class="keywordflow">if</span> (flattened[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>] &lt; <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>)</div>
 <div class="line"><a id="l01528" name="l01528"></a><span class="lineno"> 1528</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l01529" name="l01529"></a><span class="lineno"> 1529</span> </div>
 <div class="line"><a id="l01530" name="l01530"></a><span class="lineno"> 1530</span>        <span class="comment">// Add the flattened subpixel color to accumulation pixel and handle Z&#39;s:</span></div>
 <div class="line"><a id="l01531" name="l01531"></a><span class="lineno"> 1531</span>        out += flattened;</div>
 <div class="line"><a id="l01532" name="l01532"></a><span class="lineno"> 1532</span><span class="preprocessor">#ifdef DCX_USE_LARGEST_COVERAGE_Z</span></div>
 <div class="line"><a id="l01533" name="l01533"></a><span class="lineno"> 1533</span>        <span class="comment">// Record the ZFronts in a map to count the dominant Zf:</span></div>
-<div class="line"><a id="l01534" name="l01534"></a><span class="lineno"> 1534</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> Zf = flattened[Chan_ZFront];</div>
+<div class="line"><a id="l01534" name="l01534"></a><span class="lineno"> 1534</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> Zf = flattened[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a187f15db7f68e75e94e1ba1b7fe0ecf2">Chan_ZFront</a>];</div>
 <div class="line"><a id="l01535" name="l01535"></a><span class="lineno"> 1535</span>        <span class="keywordflow">if</span> (Zf &lt; <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>)</div>
 <div class="line"><a id="l01536" name="l01536"></a><span class="lineno"> 1536</span>        {</div>
 <div class="line"><a id="l01537" name="l01537"></a><span class="lineno"> 1537</span>            std::map&lt;float, int&gt;::iterator it = coverage_map.find(Zf);</div>
@@ -1588,9 +1607,9 @@ $(function() {
 <div class="line"><a id="l01542" name="l01542"></a><span class="lineno"> 1542</span>        }</div>
 <div class="line"><a id="l01543" name="l01543"></a><span class="lineno"> 1543</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l01544" name="l01544"></a><span class="lineno"> 1544</span>        <span class="comment">// Find nearest Z&#39;s:</span></div>
-<div class="line"><a id="l01545" name="l01545"></a><span class="lineno"> 1545</span>        out[Chan_ZFront] = std::min(out[Chan_ZFront], flattened[Chan_ZFront]);</div>
+<div class="line"><a id="l01545" name="l01545"></a><span class="lineno"> 1545</span>        out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a187f15db7f68e75e94e1ba1b7fe0ecf2">Chan_ZFront</a>] = std::min(out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a187f15db7f68e75e94e1ba1b7fe0ecf2">Chan_ZFront</a>], flattened[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a187f15db7f68e75e94e1ba1b7fe0ecf2">Chan_ZFront</a>]);</div>
 <div class="line"><a id="l01546" name="l01546"></a><span class="lineno"> 1546</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l01547" name="l01547"></a><span class="lineno"> 1547</span>        out[Chan_ZBack] = std::max(out[Chan_ZBack], flattened[Chan_ZBack]);</div>
+<div class="line"><a id="l01547" name="l01547"></a><span class="lineno"> 1547</span>        out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a>] = std::max(out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a>], flattened[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a>]);</div>
 <div class="line"><a id="l01548" name="l01548"></a><span class="lineno"> 1548</span>    }</div>
 <div class="line"><a id="l01549" name="l01549"></a><span class="lineno"> 1549</span>    out /= float(<a class="code hl_variable" href="class_sp_mask8.html#a6d60dceabe329407ac908048769479ee">SpMask8::width</a>*<a class="code hl_variable" href="class_sp_mask8.html#ab6e06ae42507ad38590ef79a9d3e8a5d">SpMask8::height</a>);</div>
 <div class="line"><a id="l01550" name="l01550"></a><span class="lineno"> 1550</span> </div>
@@ -1601,7 +1620,7 @@ $(function() {
 <div class="line"><a id="l01555" name="l01555"></a><span class="lineno"> 1555</span>    {</div>
 <div class="line"><a id="l01556" name="l01556"></a><span class="lineno"> 1556</span>        <span class="keywordflow">if</span> (it-&gt;second &gt; max_coverage)</div>
 <div class="line"><a id="l01557" name="l01557"></a><span class="lineno"> 1557</span>        {</div>
-<div class="line"><a id="l01558" name="l01558"></a><span class="lineno"> 1558</span>            out[Chan_ZFront] = std::min(out[Chan_ZFront], it-&gt;first);</div>
+<div class="line"><a id="l01558" name="l01558"></a><span class="lineno"> 1558</span>            out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a187f15db7f68e75e94e1ba1b7fe0ecf2">Chan_ZFront</a>] = std::min(out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a187f15db7f68e75e94e1ba1b7fe0ecf2">Chan_ZFront</a>], it-&gt;first);</div>
 <div class="line"><a id="l01559" name="l01559"></a><span class="lineno"> 1559</span>            max_coverage = it-&gt;second;</div>
 <div class="line"><a id="l01560" name="l01560"></a><span class="lineno"> 1560</span>        }</div>
 <div class="line"><a id="l01561" name="l01561"></a><span class="lineno"> 1561</span>    }</div>
@@ -1658,14 +1677,14 @@ $(function() {
 <div class="line"><a id="l01612" name="l01612"></a><span class="lineno"> 1612</span>    out.<a class="code hl_function" href="class_pixel.html#a385f656e26dca0209b27ca7c1b46155c">erase</a>(out_channels);</div>
 <div class="line"><a id="l01613" name="l01613"></a><span class="lineno"> 1613</span>    <span class="comment">// Always fill in these output channels even though they may not be enabled</span></div>
 <div class="line"><a id="l01614" name="l01614"></a><span class="lineno"> 1614</span>    <span class="comment">// in the output pixel&#39;s channel set:</span></div>
-<div class="line"><a id="l01615" name="l01615"></a><span class="lineno"> 1615</span>    out[Chan_A         ] = 0.0f;</div>
-<div class="line"><a id="l01616" name="l01616"></a><span class="lineno"> 1616</span>    out[Chan_ZFront    ] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
-<div class="line"><a id="l01617" name="l01617"></a><span class="lineno"> 1617</span>    out[Chan_ZBack     ] =-<a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
-<div class="line"><a id="l01618" name="l01618"></a><span class="lineno"> 1618</span>    out[Chan_ACutout   ] = 0.0f;</div>
+<div class="line"><a id="l01615" name="l01615"></a><span class="lineno"> 1615</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>         ] = 0.0f;</div>
+<div class="line"><a id="l01616" name="l01616"></a><span class="lineno"> 1616</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a187f15db7f68e75e94e1ba1b7fe0ecf2">Chan_ZFront</a>    ] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
+<div class="line"><a id="l01617" name="l01617"></a><span class="lineno"> 1617</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a>     ] =-<a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
+<div class="line"><a id="l01618" name="l01618"></a><span class="lineno"> 1618</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>   ] = 0.0f;</div>
 <div class="line"><a id="l01619" name="l01619"></a><span class="lineno"> 1619</span>    <span class="comment">// Inverse B-alpha (accumulated visibility value) and accumulated subpixel coverage</span></div>
 <div class="line"><a id="l01620" name="l01620"></a><span class="lineno"> 1620</span>    <span class="comment">// weight - both updated at each non-partial sample:</span></div>
-<div class="line"><a id="l01621" name="l01621"></a><span class="lineno"> 1621</span>    out[Chan_Visibility] = 1.0f;</div>
-<div class="line"><a id="l01622" name="l01622"></a><span class="lineno"> 1622</span>    out[Chan_SpCoverage] = 0.0f;</div>
+<div class="line"><a id="l01621" name="l01621"></a><span class="lineno"> 1621</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a533a83192867850e400b89d14a3ec858">Chan_Visibility</a>] = 1.0f;</div>
+<div class="line"><a id="l01622" name="l01622"></a><span class="lineno"> 1622</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a9b72bc71dac0f07215aea9a421628641">Chan_SpCoverage</a>] = 0.0f;</div>
 <div class="line"><a id="l01623" name="l01623"></a><span class="lineno"> 1623</span> </div>
 <div class="line"><a id="l01624" name="l01624"></a><span class="lineno"> 1624</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nSegments = <a class="code hl_variable" href="class_deep_pixel.html#ae868b2c3a7afae739a40c93d2f5bdf99">m_segments</a>.size();</div>
 <div class="line"><a id="l01625" name="l01625"></a><span class="lineno"> 1625</span><span class="preprocessor">#ifdef DCX_DEBUG_FLATTENER</span></div>
@@ -1677,19 +1696,19 @@ $(function() {
 <div class="line"><a id="l01631" name="l01631"></a><span class="lineno"> 1631</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01632" name="l01632"></a><span class="lineno"> 1632</span>    <span class="keywordflow">if</span> (nSegments == 0)</div>
 <div class="line"><a id="l01633" name="l01633"></a><span class="lineno"> 1633</span>    {</div>
-<div class="line"><a id="l01634" name="l01634"></a><span class="lineno"> 1634</span>        out[Chan_ZBack] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
+<div class="line"><a id="l01634" name="l01634"></a><span class="lineno"> 1634</span>        out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a>] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
 <div class="line"><a id="l01635" name="l01635"></a><span class="lineno"> 1635</span>        <span class="keywordflow">return</span>; <span class="comment">// shouldn&#39;t happen...</span></div>
 <div class="line"><a id="l01636" name="l01636"></a><span class="lineno"> 1636</span>    }</div>
 <div class="line"><a id="l01637" name="l01637"></a><span class="lineno"> 1637</span> </div>
 <div class="line"><a id="l01638" name="l01638"></a><span class="lineno"> 1638</span>    <span class="comment">// Get the channel set to composite:</span></div>
 <div class="line"><a id="l01639" name="l01639"></a><span class="lineno"> 1639</span>    <a class="code hl_class" href="class_channel_set.html">ChannelSet</a> comp_channels(out_channels);</div>
 <div class="line"><a id="l01640" name="l01640"></a><span class="lineno"> 1640</span>    comp_channels &amp;= <a class="code hl_variable" href="class_deep_pixel.html#a12cbfcb2b25cc302fec8baaddd402881">m_channels</a>;        <span class="comment">// only bother compositing requested output channels</span></div>
-<div class="line"><a id="l01641" name="l01641"></a><span class="lineno"> 1641</span>    comp_channels += Mask_Opacities;    <span class="comment">// but, always composite alpha &amp; spcoverage even if not requested</span></div>
-<div class="line"><a id="l01642" name="l01642"></a><span class="lineno"> 1642</span>    comp_channels -= Mask_Depths;       <span class="comment">// don&#39;t composite depth channels, we handle those separately</span></div>
-<div class="line"><a id="l01643" name="l01643"></a><span class="lineno"> 1643</span>    comp_channels -= Mask_Accumulators; <span class="comment">// don&#39;t composite accumulator channels, we handle those separately</span></div>
+<div class="line"><a id="l01641" name="l01641"></a><span class="lineno"> 1641</span>    comp_channels += <a class="code hl_function" href="_dcx_channel_defs_8h.html#af9e7bb71a39978bf760c12fda37d0693">Mask_Opacities</a>;    <span class="comment">// but, always composite alpha &amp; spcoverage even if not requested</span></div>
+<div class="line"><a id="l01642" name="l01642"></a><span class="lineno"> 1642</span>    comp_channels -= <a class="code hl_function" href="_dcx_channel_defs_8h.html#a952270a3c83a8e1945952aab04b23e9d">Mask_Depths</a>;       <span class="comment">// don&#39;t composite depth channels, we handle those separately</span></div>
+<div class="line"><a id="l01643" name="l01643"></a><span class="lineno"> 1643</span>    comp_channels -= <a class="code hl_function" href="_dcx_channel_defs_8h.html#af949e5127bdf67d335a57f71fdf9d1fc">Mask_Accumulators</a>; <span class="comment">// don&#39;t composite accumulator channels, we handle those separately</span></div>
 <div class="line"><a id="l01644" name="l01644"></a><span class="lineno"> 1644</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l01645" name="l01645"></a><span class="lineno"> 1645</span>    <a class="code hl_class" href="class_channel_set.html">ChannelSet</a> comp_channels_plus_cutouts(comp_channels);</div>
-<div class="line"><a id="l01646" name="l01646"></a><span class="lineno"> 1646</span>    comp_channels_plus_cutouts += Chan_ACutout;</div>
+<div class="line"><a id="l01646" name="l01646"></a><span class="lineno"> 1646</span>    comp_channels_plus_cutouts += <a class="code hl_variable" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>;</div>
 <div class="line"><a id="l01647" name="l01647"></a><span class="lineno"> 1647</span>    <span class="comment">//comp_channels_plus_cutouts += Chan_ARCutout;</span></div>
 <div class="line"><a id="l01648" name="l01648"></a><span class="lineno"> 1648</span>    <span class="comment">//comp_channels_plus_cutouts += Chan_AGCutout;</span></div>
 <div class="line"><a id="l01649" name="l01649"></a><span class="lineno"> 1649</span>    <span class="comment">//comp_channels_plus_cutouts += Chan_ABCutout;</span></div>
@@ -1728,7 +1747,7 @@ $(function() {
 <div class="line"><a id="l01682" name="l01682"></a><span class="lineno"> 1682</span>        <span class="keywordflow">if</span> (debug_enable) {</div>
 <div class="line"><a id="l01683" name="l01683"></a><span class="lineno"> 1683</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;     &quot;</span> &lt;&lt; i &lt;&lt; std::fixed &lt;&lt; <span class="stringliteral">&quot;: Zf=&quot;</span> &lt;&lt; segment.<a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a> &lt;&lt; <span class="stringliteral">&quot; Zb=&quot;</span> &lt;&lt; segment.<a class="code hl_variable" href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">Zb</a>;</div>
 <div class="line"><a id="l01684" name="l01684"></a><span class="lineno"> 1684</span>            std::cout &lt;&lt; <span class="stringliteral">&quot; flags=[&quot;</span>; segment.<a class="code hl_function" href="class_deep_segment.html#adf4d104bd6c6186bc0550c7475875a6d">printFlags</a>(std::cout); std::cout &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
-<div class="line"><a id="l01685" name="l01685"></a><span class="lineno"> 1685</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;, viz=&quot;</span> &lt;&lt; out[Chan_Visibility];</div>
+<div class="line"><a id="l01685" name="l01685"></a><span class="lineno"> 1685</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;, viz=&quot;</span> &lt;&lt; out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a533a83192867850e400b89d14a3ec858">Chan_Visibility</a>];</div>
 <div class="line"><a id="l01686" name="l01686"></a><span class="lineno"> 1686</span>        }</div>
 <div class="line"><a id="l01687" name="l01687"></a><span class="lineno"> 1687</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01688" name="l01688"></a><span class="lineno"> 1688</span> </div>
@@ -1741,22 +1760,22 @@ $(function() {
 <div class="line"><a id="l01695" name="l01695"></a><span class="lineno"> 1695</span>            <span class="keyword">const</span> <a class="code hl_class" href="class_pixel.html">Pixelf</a>&amp; color = <a class="code hl_function" href="class_deep_pixel.html#ae1e05240b93f627c74a2f089a76fa97a">getSegmentPixel</a>(segment);</div>
 <div class="line"><a id="l01696" name="l01696"></a><span class="lineno"> 1696</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;         COLOR&quot;</span> &lt;&lt; color &lt;&lt; std::endl;</div>
 <div class="line"><a id="l01697" name="l01697"></a><span class="lineno"> 1697</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;           &quot;</span>; out.<a class="code hl_function" href="class_pixel.html#a64f494652192d5bf1ae1cda265d393fa">print</a>(std::cout, <span class="stringliteral">&quot;OUT&quot;</span>, 12<span class="comment">/*prec*/</span>, comp_channels_plus_cutouts);</div>
-<div class="line"><a id="l01698" name="l01698"></a><span class="lineno"> 1698</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;, viz=&quot;</span> &lt;&lt; out[Chan_Visibility];</div>
+<div class="line"><a id="l01698" name="l01698"></a><span class="lineno"> 1698</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;, viz=&quot;</span> &lt;&lt; out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a533a83192867850e400b89d14a3ec858">Chan_Visibility</a>];</div>
 <div class="line"><a id="l01699" name="l01699"></a><span class="lineno"> 1699</span>            std::cout &lt;&lt; std::endl;</div>
 <div class="line"><a id="l01700" name="l01700"></a><span class="lineno"> 1700</span>        }</div>
 <div class="line"><a id="l01701" name="l01701"></a><span class="lineno"> 1701</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01702" name="l01702"></a><span class="lineno"> 1702</span> </div>
-<div class="line"><a id="l01703" name="l01703"></a><span class="lineno"> 1703</span>        <span class="keywordflow">if</span> (out[Chan_A] &gt;= (1.0f - <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>))</div>
+<div class="line"><a id="l01703" name="l01703"></a><span class="lineno"> 1703</span>        <span class="keywordflow">if</span> (out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>] &gt;= (1.0f - <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>))</div>
 <div class="line"><a id="l01704" name="l01704"></a><span class="lineno"> 1704</span>            <span class="keywordflow">break</span>; <span class="comment">// alpha saturated, all done</span></div>
 <div class="line"><a id="l01705" name="l01705"></a><span class="lineno"> 1705</span> </div>
 <div class="line"><a id="l01706" name="l01706"></a><span class="lineno"> 1706</span>    } <span class="comment">// nSegments</span></div>
 <div class="line"><a id="l01707" name="l01707"></a><span class="lineno"> 1707</span> </div>
 <div class="line"><a id="l01708" name="l01708"></a><span class="lineno"> 1708</span>    <span class="comment">// Ensure ZBack is valid:</span></div>
-<div class="line"><a id="l01709" name="l01709"></a><span class="lineno"> 1709</span>    <span class="keywordflow">if</span> (out[Chan_ZBack] &lt; 0.0f)</div>
-<div class="line"><a id="l01710" name="l01710"></a><span class="lineno"> 1710</span>        out[Chan_ZBack] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
+<div class="line"><a id="l01709" name="l01709"></a><span class="lineno"> 1709</span>    <span class="keywordflow">if</span> (out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a>] &lt; 0.0f)</div>
+<div class="line"><a id="l01710" name="l01710"></a><span class="lineno"> 1710</span>        out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a>] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
 <div class="line"><a id="l01711" name="l01711"></a><span class="lineno"> 1711</span> </div>
 <div class="line"><a id="l01712" name="l01712"></a><span class="lineno"> 1712</span>    <span class="comment">// Final alpha is cutout-alpha channel:</span></div>
-<div class="line"><a id="l01713" name="l01713"></a><span class="lineno"> 1713</span>    out[Chan_A] = (out[Chan_ACutout] &gt;= (1.0f - <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>))?1.0f:out[Chan_ACutout];</div>
+<div class="line"><a id="l01713" name="l01713"></a><span class="lineno"> 1713</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>] = (out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>] &gt;= (1.0f - <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>))?1.0f:out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>];</div>
 <div class="line"><a id="l01714" name="l01714"></a><span class="lineno"> 1714</span> </div>
 <div class="line"><a id="l01715" name="l01715"></a><span class="lineno"> 1715</span>} <span class="comment">// DeepPixel::flattenNoOverlaps</span></div>
 <div class="line"><a id="l01716" name="l01716"></a><span class="lineno"> 1716</span> </div>
@@ -1777,14 +1796,14 @@ $(function() {
 <div class="line"><a id="l01731" name="l01731"></a><span class="lineno"> 1731</span>    out.<a class="code hl_function" href="class_pixel.html#a385f656e26dca0209b27ca7c1b46155c">erase</a>(out_channels);</div>
 <div class="line"><a id="l01732" name="l01732"></a><span class="lineno"> 1732</span>    <span class="comment">// Always fill in these output channels even though they may not be enabled</span></div>
 <div class="line"><a id="l01733" name="l01733"></a><span class="lineno"> 1733</span>    <span class="comment">// in the output pixel&#39;s channel set:</span></div>
-<div class="line"><a id="l01734" name="l01734"></a><span class="lineno"> 1734</span>    out[Chan_A         ] = 0.0f;</div>
-<div class="line"><a id="l01735" name="l01735"></a><span class="lineno"> 1735</span>    out[Chan_ZFront    ] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
-<div class="line"><a id="l01736" name="l01736"></a><span class="lineno"> 1736</span>    out[Chan_ZBack     ] =-<a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
-<div class="line"><a id="l01737" name="l01737"></a><span class="lineno"> 1737</span>    out[Chan_ACutout   ] = 0.0f;</div>
+<div class="line"><a id="l01734" name="l01734"></a><span class="lineno"> 1734</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>         ] = 0.0f;</div>
+<div class="line"><a id="l01735" name="l01735"></a><span class="lineno"> 1735</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a187f15db7f68e75e94e1ba1b7fe0ecf2">Chan_ZFront</a>    ] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
+<div class="line"><a id="l01736" name="l01736"></a><span class="lineno"> 1736</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a>     ] =-<a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
+<div class="line"><a id="l01737" name="l01737"></a><span class="lineno"> 1737</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>   ] = 0.0f;</div>
 <div class="line"><a id="l01738" name="l01738"></a><span class="lineno"> 1738</span>    <span class="comment">// Inverse B-alpha (accumulated visibility value) and accumulated subpixel coverage</span></div>
 <div class="line"><a id="l01739" name="l01739"></a><span class="lineno"> 1739</span>    <span class="comment">// weight - both updated at each non-partial sample:</span></div>
-<div class="line"><a id="l01740" name="l01740"></a><span class="lineno"> 1740</span>    out[Chan_Visibility] = 1.0f;</div>
-<div class="line"><a id="l01741" name="l01741"></a><span class="lineno"> 1741</span>    out[Chan_SpCoverage] = 0.0f;</div>
+<div class="line"><a id="l01740" name="l01740"></a><span class="lineno"> 1740</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a533a83192867850e400b89d14a3ec858">Chan_Visibility</a>] = 1.0f;</div>
+<div class="line"><a id="l01741" name="l01741"></a><span class="lineno"> 1741</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a9b72bc71dac0f07215aea9a421628641">Chan_SpCoverage</a>] = 0.0f;</div>
 <div class="line"><a id="l01742" name="l01742"></a><span class="lineno"> 1742</span> </div>
 <div class="line"><a id="l01743" name="l01743"></a><span class="lineno"> 1743</span>    <span class="keyword">const</span> uint32_t nSegments = (uint32_t)<a class="code hl_variable" href="class_deep_pixel.html#ae868b2c3a7afae739a40c93d2f5bdf99">m_segments</a>.size();</div>
 <div class="line"><a id="l01744" name="l01744"></a><span class="lineno"> 1744</span><span class="preprocessor">#ifdef DCX_DEBUG_FLATTENER</span></div>
@@ -1797,7 +1816,7 @@ $(function() {
 <div class="line"><a id="l01751" name="l01751"></a><span class="lineno"> 1751</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01752" name="l01752"></a><span class="lineno"> 1752</span>    <span class="keywordflow">if</span> (nSegments == 0)</div>
 <div class="line"><a id="l01753" name="l01753"></a><span class="lineno"> 1753</span>    {</div>
-<div class="line"><a id="l01754" name="l01754"></a><span class="lineno"> 1754</span>        out[Chan_ZBack] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
+<div class="line"><a id="l01754" name="l01754"></a><span class="lineno"> 1754</span>        out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a>] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
 <div class="line"><a id="l01755" name="l01755"></a><span class="lineno"> 1755</span><span class="preprocessor">#ifdef DCX_DEBUG_FLATTENER</span></div>
 <div class="line"><a id="l01756" name="l01756"></a><span class="lineno"> 1756</span>    <span class="keywordflow">if</span> (debug_enable)</div>
 <div class="line"><a id="l01757" name="l01757"></a><span class="lineno"> 1757</span>        std::cout &lt;&lt; <span class="stringliteral">&quot; - no segments to flatten&quot;</span> &lt;&lt; std::endl;</div>
@@ -1808,19 +1827,19 @@ $(function() {
 <div class="line"><a id="l01762" name="l01762"></a><span class="lineno"> 1762</span>    <span class="comment">// Get the channel set to composite:</span></div>
 <div class="line"><a id="l01763" name="l01763"></a><span class="lineno"> 1763</span>    <a class="code hl_class" href="class_channel_set.html">ChannelSet</a> comp_channels(out_channels);</div>
 <div class="line"><a id="l01764" name="l01764"></a><span class="lineno"> 1764</span>    comp_channels &amp;= <a class="code hl_variable" href="class_deep_pixel.html#a12cbfcb2b25cc302fec8baaddd402881">m_channels</a>;        <span class="comment">// only bother compositing requested output channels</span></div>
-<div class="line"><a id="l01765" name="l01765"></a><span class="lineno"> 1765</span>    comp_channels += Mask_Opacities;    <span class="comment">// but, always composite alpha &amp; spcoverage even if not requested</span></div>
-<div class="line"><a id="l01766" name="l01766"></a><span class="lineno"> 1766</span>    comp_channels -= Mask_Depths;       <span class="comment">// don&#39;t composite depth channels, we handle those separately</span></div>
-<div class="line"><a id="l01767" name="l01767"></a><span class="lineno"> 1767</span>    comp_channels -= Mask_Accumulators; <span class="comment">// don&#39;t composite accumulator channels, we handle those separately</span></div>
+<div class="line"><a id="l01765" name="l01765"></a><span class="lineno"> 1765</span>    comp_channels += <a class="code hl_function" href="_dcx_channel_defs_8h.html#af9e7bb71a39978bf760c12fda37d0693">Mask_Opacities</a>;    <span class="comment">// but, always composite alpha &amp; spcoverage even if not requested</span></div>
+<div class="line"><a id="l01766" name="l01766"></a><span class="lineno"> 1766</span>    comp_channels -= <a class="code hl_function" href="_dcx_channel_defs_8h.html#a952270a3c83a8e1945952aab04b23e9d">Mask_Depths</a>;       <span class="comment">// don&#39;t composite depth channels, we handle those separately</span></div>
+<div class="line"><a id="l01767" name="l01767"></a><span class="lineno"> 1767</span>    comp_channels -= <a class="code hl_function" href="_dcx_channel_defs_8h.html#af949e5127bdf67d335a57f71fdf9d1fc">Mask_Accumulators</a>; <span class="comment">// don&#39;t composite accumulator channels, we handle those separately</span></div>
 <div class="line"><a id="l01768" name="l01768"></a><span class="lineno"> 1768</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l01769" name="l01769"></a><span class="lineno"> 1769</span>    <a class="code hl_class" href="class_channel_set.html">ChannelSet</a> comp_channels_plus_cutouts(comp_channels);</div>
-<div class="line"><a id="l01770" name="l01770"></a><span class="lineno"> 1770</span>    comp_channels_plus_cutouts += Chan_ACutout;</div>
+<div class="line"><a id="l01770" name="l01770"></a><span class="lineno"> 1770</span>    comp_channels_plus_cutouts += <a class="code hl_variable" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>;</div>
 <div class="line"><a id="l01771" name="l01771"></a><span class="lineno"> 1771</span>    <span class="comment">//comp_channels_plus_cutouts += Chan_ARCutout;</span></div>
 <div class="line"><a id="l01772" name="l01772"></a><span class="lineno"> 1772</span>    <span class="comment">//comp_channels_plus_cutouts += Chan_AGCutout;</span></div>
 <div class="line"><a id="l01773" name="l01773"></a><span class="lineno"> 1773</span>    <span class="comment">//comp_channels_plus_cutouts += Chan_ABCutout;</span></div>
 <div class="line"><a id="l01774" name="l01774"></a><span class="lineno"> 1774</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l01775" name="l01775"></a><span class="lineno"> 1775</span>    <span class="comment">// For matte-cutout erase loops:</span></div>
 <div class="line"><a id="l01776" name="l01776"></a><span class="lineno"> 1776</span>    <a class="code hl_class" href="class_channel_set.html">ChannelSet</a> comp_channels_no_opacities_plus_cutouts(comp_channels_plus_cutouts);</div>
-<div class="line"><a id="l01777" name="l01777"></a><span class="lineno"> 1777</span>    comp_channels_no_opacities_plus_cutouts -= Mask_Opacities;</div>
+<div class="line"><a id="l01777" name="l01777"></a><span class="lineno"> 1777</span>    comp_channels_no_opacities_plus_cutouts -= <a class="code hl_function" href="_dcx_channel_defs_8h.html#af9e7bb71a39978bf760c12fda37d0693">Mask_Opacities</a>;</div>
 <div class="line"><a id="l01778" name="l01778"></a><span class="lineno"> 1778</span> </div>
 <div class="line"><a id="l01779" name="l01779"></a><span class="lineno"> 1779</span>    <span class="comment">// Force log interpolation in legacy mode:</span></div>
 <div class="line"><a id="l01780" name="l01780"></a><span class="lineno"> 1780</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> legacySamples = <a class="code hl_function" href="class_deep_pixel.html#ad8af086df6c69ce00b16b3e05b58fa87">isLegacyDeepPixel</a>();</div>
@@ -1843,7 +1862,7 @@ $(function() {
 <div class="line"><a id="l01797" name="l01797"></a><span class="lineno"> 1797</span>    <span class="keyword">const</span> uint32_t nEdges = (uint32_t)<a class="code hl_function" href="class_deep_pixel.html#a9ad50769ae79fdbb4229d3be97ace605">buildSegmentEdges</a>(spmask, segment_edges);</div>
 <div class="line"><a id="l01798" name="l01798"></a><span class="lineno"> 1798</span>    <span class="keywordflow">if</span> (nEdges == 0)</div>
 <div class="line"><a id="l01799" name="l01799"></a><span class="lineno"> 1799</span>    {</div>
-<div class="line"><a id="l01800" name="l01800"></a><span class="lineno"> 1800</span>        out[Chan_ZBack] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
+<div class="line"><a id="l01800" name="l01800"></a><span class="lineno"> 1800</span>        out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a>] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
 <div class="line"><a id="l01801" name="l01801"></a><span class="lineno"> 1801</span><span class="preprocessor">#ifdef DCX_DEBUG_FLATTENER</span></div>
 <div class="line"><a id="l01802" name="l01802"></a><span class="lineno"> 1802</span>    <span class="keywordflow">if</span> (debug_enable)</div>
 <div class="line"><a id="l01803" name="l01803"></a><span class="lineno"> 1803</span>        std::cout &lt;&lt; <span class="stringliteral">&quot; - no segment edges to flatten&quot;</span> &lt;&lt; std::endl;</div>
@@ -1890,7 +1909,7 @@ $(function() {
 <div class="line"><a id="l01844" name="l01844"></a><span class="lineno"> 1844</span>        }</div>
 <div class="line"><a id="l01845" name="l01845"></a><span class="lineno"> 1845</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;      ----------------- edges loop -------------------&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a id="l01846" name="l01846"></a><span class="lineno"> 1846</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;        ========= &quot;</span>; out.<a class="code hl_function" href="class_pixel.html#a64f494652192d5bf1ae1cda265d393fa">print</a>(std::cout, <span class="stringliteral">&quot;OUT&quot;</span>, 12<span class="comment">/*prec*/</span>, comp_channels_plus_cutouts);</div>
-<div class="line"><a id="l01847" name="l01847"></a><span class="lineno"> 1847</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;, viz=&quot;</span> &lt;&lt; out[Chan_Visibility];</div>
+<div class="line"><a id="l01847" name="l01847"></a><span class="lineno"> 1847</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;, viz=&quot;</span> &lt;&lt; out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a533a83192867850e400b89d14a3ec858">Chan_Visibility</a>];</div>
 <div class="line"><a id="l01848" name="l01848"></a><span class="lineno"> 1848</span>        std::cout &lt;&lt; <span class="stringliteral">&quot; =========&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a id="l01849" name="l01849"></a><span class="lineno"> 1849</span>    }</div>
 <div class="line"><a id="l01850" name="l01850"></a><span class="lineno"> 1850</span><span class="preprocessor">#endif</span></div>
@@ -1970,15 +1989,15 @@ $(function() {
 <div class="line"><a id="l01924" name="l01924"></a><span class="lineno"> 1924</span><span class="preprocessor">#ifdef DCX_DEBUG_FLATTENER</span></div>
 <div class="line"><a id="l01925" name="l01925"></a><span class="lineno"> 1925</span>            <span class="keywordflow">if</span> (debug_enable) {</div>
 <div class="line"><a id="l01926" name="l01926"></a><span class="lineno"> 1926</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;        ========= &quot;</span>; out.<a class="code hl_function" href="class_pixel.html#a64f494652192d5bf1ae1cda265d393fa">print</a>(std::cout, <span class="stringliteral">&quot;OUT&quot;</span>, 12<span class="comment">/*prec*/</span>, comp_channels_plus_cutouts);</div>
-<div class="line"><a id="l01927" name="l01927"></a><span class="lineno"> 1927</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;, viz=&quot;</span> &lt;&lt; out[Chan_Visibility];</div>
+<div class="line"><a id="l01927" name="l01927"></a><span class="lineno"> 1927</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;, viz=&quot;</span> &lt;&lt; out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a533a83192867850e400b89d14a3ec858">Chan_Visibility</a>];</div>
 <div class="line"><a id="l01928" name="l01928"></a><span class="lineno"> 1928</span>                std::cout &lt;&lt; <span class="stringliteral">&quot; =========&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a id="l01929" name="l01929"></a><span class="lineno"> 1929</span>            }</div>
 <div class="line"><a id="l01930" name="l01930"></a><span class="lineno"> 1930</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l01931" name="l01931"></a><span class="lineno"> 1931</span> </div>
 <div class="line"><a id="l01932" name="l01932"></a><span class="lineno"> 1932</span>            <span class="comment">// No need to composite further segments if solid alpha:</span></div>
-<div class="line"><a id="l01933" name="l01933"></a><span class="lineno"> 1933</span>            <span class="keywordflow">if</span> (out[Chan_A] &gt;= (1.0f - <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>))</div>
+<div class="line"><a id="l01933" name="l01933"></a><span class="lineno"> 1933</span>            <span class="keywordflow">if</span> (out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>] &gt;= (1.0f - <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>))</div>
 <div class="line"><a id="l01934" name="l01934"></a><span class="lineno"> 1934</span>            {</div>
-<div class="line"><a id="l01935" name="l01935"></a><span class="lineno"> 1935</span>                out[Chan_A] = (out[Chan_ACutout] &gt;= (1.0f - <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>))?1.0f:out[Chan_ACutout];</div>
+<div class="line"><a id="l01935" name="l01935"></a><span class="lineno"> 1935</span>                out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>] = (out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>] &gt;= (1.0f - <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>))?1.0f:out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>];</div>
 <div class="line"><a id="l01936" name="l01936"></a><span class="lineno"> 1936</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l01937" name="l01937"></a><span class="lineno"> 1937</span>            }</div>
 <div class="line"><a id="l01938" name="l01938"></a><span class="lineno"> 1938</span>        }</div>
@@ -2074,7 +2093,7 @@ $(function() {
 <div class="line"><a id="l02028" name="l02028"></a><span class="lineno"> 2028</span>                <span class="keywordtype">int</span> additive_count = 0;</div>
 <div class="line"><a id="l02029" name="l02029"></a><span class="lineno"> 2029</span>                additive_color.<a class="code hl_function" href="class_pixel.html#a385f656e26dca0209b27ca7c1b46155c">erase</a>(comp_channels_plus_cutouts);</div>
 <div class="line"><a id="l02030" name="l02030"></a><span class="lineno"> 2030</span>                merged_color.<a class="code hl_function" href="class_pixel.html#a385f656e26dca0209b27ca7c1b46155c">erase</a>(comp_channels_plus_cutouts);</div>
-<div class="line"><a id="l02031" name="l02031"></a><span class="lineno"> 2031</span>                merged_color[Chan_Visibility] = 1.0f;</div>
+<div class="line"><a id="l02031" name="l02031"></a><span class="lineno"> 2031</span>                merged_color[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a533a83192867850e400b89d14a3ec858">Chan_Visibility</a>] = 1.0f;</div>
 <div class="line"><a id="l02032" name="l02032"></a><span class="lineno"> 2032</span> </div>
 <div class="line"><a id="l02033" name="l02033"></a><span class="lineno"> 2033</span>                <span class="keywordflow">for</span> (SegmentEdgeSet::const_iterator it=active_segments.begin(); it != active_segments.end(); ++it)</div>
 <div class="line"><a id="l02034" name="l02034"></a><span class="lineno"> 2034</span>                {</div>
@@ -2107,16 +2126,16 @@ $(function() {
 <div class="line"><a id="l02061" name="l02061"></a><span class="lineno"> 2061</span>                        {</div>
 <div class="line"><a id="l02062" name="l02062"></a><span class="lineno"> 2062</span>                            <span class="comment">// Matte object - blacken the color channels but interpolate alpha and spcoverage:</span></div>
 <div class="line"><a id="l02063" name="l02063"></a><span class="lineno"> 2063</span>                            section_color.<a class="code hl_function" href="class_pixel.html#a385f656e26dca0209b27ca7c1b46155c">erase</a>(comp_channels_plus_cutouts);</div>
-<div class="line"><a id="l02064" name="l02064"></a><span class="lineno"> 2064</span>                            <a class="code hl_function" href="class_deep_segment.html#ac5ed1ee28cb843e9e5ed64b983c7cc74">DeepSegment::interpolateLin</a>(segment_color, t, Mask_Opacities, section_color);</div>
+<div class="line"><a id="l02064" name="l02064"></a><span class="lineno"> 2064</span>                            <a class="code hl_function" href="class_deep_segment.html#ac5ed1ee28cb843e9e5ed64b983c7cc74">DeepSegment::interpolateLin</a>(segment_color, t, <a class="code hl_function" href="_dcx_channel_defs_8h.html#af9e7bb71a39978bf760c12fda37d0693">Mask_Opacities</a>, section_color);</div>
 <div class="line"><a id="l02065" name="l02065"></a><span class="lineno"> 2065</span>                        }</div>
 <div class="line"><a id="l02066" name="l02066"></a><span class="lineno"> 2066</span>                        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l02067" name="l02067"></a><span class="lineno"> 2067</span>                        {</div>
 <div class="line"><a id="l02068" name="l02068"></a><span class="lineno"> 2068</span>                            <a class="code hl_function" href="class_deep_segment.html#ac5ed1ee28cb843e9e5ed64b983c7cc74">DeepSegment::interpolateLin</a>(segment_color, t, comp_channels_plus_cutouts, section_color);</div>
-<div class="line"><a id="l02069" name="l02069"></a><span class="lineno"> 2069</span>                            section_color[Chan_ACutout] = section_color[Chan_A];</div>
+<div class="line"><a id="l02069" name="l02069"></a><span class="lineno"> 2069</span>                            section_color[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>] = section_color[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>];</div>
 <div class="line"><a id="l02070" name="l02070"></a><span class="lineno"> 2070</span>                        }</div>
 <div class="line"><a id="l02071" name="l02071"></a><span class="lineno"> 2071</span>                        ++additive_count;</div>
 <div class="line"><a id="l02072" name="l02072"></a><span class="lineno"> 2072</span>                        additive_color += section_color;</div>
-<div class="line"><a id="l02073" name="l02073"></a><span class="lineno"> 2073</span>                        <span class="keywordflow">if</span> (additive_color[Chan_SpCoverage] &gt;= (1.0f - <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>))</div>
+<div class="line"><a id="l02073" name="l02073"></a><span class="lineno"> 2073</span>                        <span class="keywordflow">if</span> (additive_color[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a9b72bc71dac0f07215aea9a421628641">Chan_SpCoverage</a>] &gt;= (1.0f - <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>))</div>
 <div class="line"><a id="l02074" name="l02074"></a><span class="lineno"> 2074</span>                        {</div>
 <div class="line"><a id="l02075" name="l02075"></a><span class="lineno"> 2075</span>                            <a class="code hl_function" href="class_deep_segment.html#ac537ce859bcb73075bb0a47e5a32f84a">DeepSegment::mergeLog</a>(additive_color, comp_channels_plus_cutouts, merged_color);</div>
 <div class="line"><a id="l02076" name="l02076"></a><span class="lineno"> 2076</span>                            additive_color.<a class="code hl_function" href="class_pixel.html#a385f656e26dca0209b27ca7c1b46155c">erase</a>(comp_channels_plus_cutouts);</div>
@@ -2129,15 +2148,15 @@ $(function() {
 <div class="line"><a id="l02083" name="l02083"></a><span class="lineno"> 2083</span>                        {</div>
 <div class="line"><a id="l02084" name="l02084"></a><span class="lineno"> 2084</span>                            <span class="comment">// Matte object - blacken the color channels but interpolate alpha and spcoverage:</span></div>
 <div class="line"><a id="l02085" name="l02085"></a><span class="lineno"> 2085</span>                            section_color.<a class="code hl_function" href="class_pixel.html#a385f656e26dca0209b27ca7c1b46155c">erase</a>(comp_channels_plus_cutouts);</div>
-<div class="line"><a id="l02086" name="l02086"></a><span class="lineno"> 2086</span>                            <a class="code hl_function" href="class_deep_segment.html#a03a37e32afb3351f21424f3767ab1a0a">DeepSegment::interpolateLog</a>(segment_color, t, Mask_Opacities, section_color);</div>
+<div class="line"><a id="l02086" name="l02086"></a><span class="lineno"> 2086</span>                            <a class="code hl_function" href="class_deep_segment.html#a03a37e32afb3351f21424f3767ab1a0a">DeepSegment::interpolateLog</a>(segment_color, t, <a class="code hl_function" href="_dcx_channel_defs_8h.html#af9e7bb71a39978bf760c12fda37d0693">Mask_Opacities</a>, section_color);</div>
 <div class="line"><a id="l02087" name="l02087"></a><span class="lineno"> 2087</span>                        }</div>
 <div class="line"><a id="l02088" name="l02088"></a><span class="lineno"> 2088</span>                        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l02089" name="l02089"></a><span class="lineno"> 2089</span>                        {</div>
 <div class="line"><a id="l02090" name="l02090"></a><span class="lineno"> 2090</span>                            <span class="comment">// Do volumetric log merge (merge math from Florian&#39;s deep doc):</span></div>
 <div class="line"><a id="l02091" name="l02091"></a><span class="lineno"> 2091</span>                            <a class="code hl_function" href="class_deep_segment.html#a03a37e32afb3351f21424f3767ab1a0a">DeepSegment::interpolateLog</a>(segment_color, t, comp_channels_plus_cutouts, section_color);</div>
-<div class="line"><a id="l02092" name="l02092"></a><span class="lineno"> 2092</span>                            section_color[Chan_ACutout] = section_color[Chan_A];</div>
+<div class="line"><a id="l02092" name="l02092"></a><span class="lineno"> 2092</span>                            section_color[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>] = section_color[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>];</div>
 <div class="line"><a id="l02093" name="l02093"></a><span class="lineno"> 2093</span>                        }</div>
-<div class="line"><a id="l02094" name="l02094"></a><span class="lineno"> 2094</span>                        section_color[Chan_SpCoverage] = 1.0f;</div>
+<div class="line"><a id="l02094" name="l02094"></a><span class="lineno"> 2094</span>                        section_color[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a9b72bc71dac0f07215aea9a421628641">Chan_SpCoverage</a>] = 1.0f;</div>
 <div class="line"><a id="l02095" name="l02095"></a><span class="lineno"> 2095</span>                        <a class="code hl_function" href="class_deep_segment.html#ac537ce859bcb73075bb0a47e5a32f84a">DeepSegment::mergeLog</a>(section_color, comp_channels_plus_cutouts, merged_color);</div>
 <div class="line"><a id="l02096" name="l02096"></a><span class="lineno"> 2096</span>                        ++merged_count;</div>
 <div class="line"><a id="l02097" name="l02097"></a><span class="lineno"> 2097</span>                    }</div>
@@ -2239,7 +2258,7 @@ $(function() {
 <div class="line"><a id="l02193" name="l02193"></a><span class="lineno"> 2193</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;    ---------------------&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a id="l02194" name="l02194"></a><span class="lineno"> 2194</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;            0:            &quot;</span>; out.<a class="code hl_function" href="class_pixel.html#a64f494652192d5bf1ae1cda265d393fa">print</a>(std::cout, <span class="stringliteral">&quot;OUT&quot;</span>, 12<span class="comment">/*prec*/</span>, comp_channels_plus_cutouts);</div>
 <div class="line"><a id="l02195" name="l02195"></a><span class="lineno"> 2195</span>                std::cout.precision(3);</div>
-<div class="line"><a id="l02196" name="l02196"></a><span class="lineno"> 2196</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;, viz=&quot;</span> &lt;&lt; out[Chan_Visibility] &lt;&lt; std::endl;</div>
+<div class="line"><a id="l02196" name="l02196"></a><span class="lineno"> 2196</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;, viz=&quot;</span> &lt;&lt; out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a533a83192867850e400b89d14a3ec858">Chan_Visibility</a>] &lt;&lt; std::endl;</div>
 <div class="line"><a id="l02197" name="l02197"></a><span class="lineno"> 2197</span>            }</div>
 <div class="line"><a id="l02198" name="l02198"></a><span class="lineno"> 2198</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l02199" name="l02199"></a><span class="lineno"> 2199</span> </div>
@@ -2306,8 +2325,8 @@ $(function() {
 <div class="line"><a id="l02260" name="l02260"></a><span class="lineno"> 2260</span>                        <a class="code hl_function" href="class_deep_pixel.html#ad15310ad3b68d52ae4146827861d5e52">extractSubSection</a>(active_segment, Zf, Zb, comp_channels_plus_cutouts, section_color);</div>
 <div class="line"><a id="l02261" name="l02261"></a><span class="lineno"> 2261</span> </div>
 <div class="line"><a id="l02262" name="l02262"></a><span class="lineno"> 2262</span>                        ++merged_count;</div>
-<div class="line"><a id="l02263" name="l02263"></a><span class="lineno"> 2263</span>                        merged_color += section_color * section_color[Chan_A];</div>
-<div class="line"><a id="l02264" name="l02264"></a><span class="lineno"> 2264</span>                        accum_alpha += section_color[Chan_A];</div>
+<div class="line"><a id="l02263" name="l02263"></a><span class="lineno"> 2263</span>                        merged_color += section_color * section_color[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>];</div>
+<div class="line"><a id="l02264" name="l02264"></a><span class="lineno"> 2264</span>                        accum_alpha += section_color[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>];</div>
 <div class="line"><a id="l02265" name="l02265"></a><span class="lineno"> 2265</span>                        <span class="comment">//merged_alpha = merged_alpha*(1.0f - section_color[Chan_A]) + section_color[Chan_A];</span></div>
 <div class="line"><a id="l02266" name="l02266"></a><span class="lineno"> 2266</span>                    }</div>
 <div class="line"><a id="l02267" name="l02267"></a><span class="lineno"> 2267</span><span class="preprocessor">#ifdef DCX_DEBUG_FLATTENER</span></div>
@@ -2358,14 +2377,14 @@ $(function() {
 <div class="line"><a id="l02312" name="l02312"></a><span class="lineno"> 2312</span><span class="preprocessor">#ifdef DCX_DEBUG_FLATTENER</span></div>
 <div class="line"><a id="l02313" name="l02313"></a><span class="lineno"> 2313</span>                <span class="keywordflow">if</span> (debug_enable) {</div>
 <div class="line"><a id="l02314" name="l02314"></a><span class="lineno"> 2314</span>                    std::cout &lt;&lt; <span class="stringliteral">&quot;                          &quot;</span>; out.<a class="code hl_function" href="class_pixel.html#a64f494652192d5bf1ae1cda265d393fa">print</a>(std::cout, <span class="stringliteral">&quot;OUT&quot;</span>, 12<span class="comment">/*prec*/</span>, comp_channels_plus_cutouts);</div>
-<div class="line"><a id="l02315" name="l02315"></a><span class="lineno"> 2315</span>                    std::cout &lt;&lt; <span class="stringliteral">&quot;, viz=&quot;</span> &lt;&lt; out[Chan_Visibility] &lt;&lt; std::endl;</div>
+<div class="line"><a id="l02315" name="l02315"></a><span class="lineno"> 2315</span>                    std::cout &lt;&lt; <span class="stringliteral">&quot;, viz=&quot;</span> &lt;&lt; out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a533a83192867850e400b89d14a3ec858">Chan_Visibility</a>] &lt;&lt; std::endl;</div>
 <div class="line"><a id="l02316" name="l02316"></a><span class="lineno"> 2316</span>                }</div>
 <div class="line"><a id="l02317" name="l02317"></a><span class="lineno"> 2317</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l02318" name="l02318"></a><span class="lineno"> 2318</span> </div>
 <div class="line"><a id="l02319" name="l02319"></a><span class="lineno"> 2319</span>                <span class="comment">// If final alpha is now saturated we&#39;re done:</span></div>
-<div class="line"><a id="l02320" name="l02320"></a><span class="lineno"> 2320</span>                <span class="keywordflow">if</span> (out[Chan_A] &gt;= (1.0f - <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>))</div>
+<div class="line"><a id="l02320" name="l02320"></a><span class="lineno"> 2320</span>                <span class="keywordflow">if</span> (out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>] &gt;= (1.0f - <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>))</div>
 <div class="line"><a id="l02321" name="l02321"></a><span class="lineno"> 2321</span>                {</div>
-<div class="line"><a id="l02322" name="l02322"></a><span class="lineno"> 2322</span>                    out[Chan_A] = 1.0f;</div>
+<div class="line"><a id="l02322" name="l02322"></a><span class="lineno"> 2322</span>                    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>] = 1.0f;</div>
 <div class="line"><a id="l02323" name="l02323"></a><span class="lineno"> 2323</span>                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l02324" name="l02324"></a><span class="lineno"> 2324</span>                }</div>
 <div class="line"><a id="l02325" name="l02325"></a><span class="lineno"> 2325</span> </div>
@@ -2378,13 +2397,13 @@ $(function() {
 <div class="line"><a id="l02332" name="l02332"></a><span class="lineno"> 2332</span><span class="preprocessor">#ifdef DCX_DEBUG_FLATTENER</span></div>
 <div class="line"><a id="l02333" name="l02333"></a><span class="lineno"> 2333</span>        <span class="keywordflow">if</span> (debug_enable) {</div>
 <div class="line"><a id="l02334" name="l02334"></a><span class="lineno"> 2334</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;        ========= &quot;</span>; out.<a class="code hl_function" href="class_pixel.html#a64f494652192d5bf1ae1cda265d393fa">print</a>(std::cout, <span class="stringliteral">&quot;OUT&quot;</span>, 12<span class="comment">/*prec*/</span>, comp_channels_plus_cutouts);</div>
-<div class="line"><a id="l02335" name="l02335"></a><span class="lineno"> 2335</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;, viz=&quot;</span> &lt;&lt; out[Chan_Visibility];</div>
+<div class="line"><a id="l02335" name="l02335"></a><span class="lineno"> 2335</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;, viz=&quot;</span> &lt;&lt; out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a533a83192867850e400b89d14a3ec858">Chan_Visibility</a>];</div>
 <div class="line"><a id="l02336" name="l02336"></a><span class="lineno"> 2336</span>            std::cout &lt;&lt; <span class="stringliteral">&quot; =========&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a id="l02337" name="l02337"></a><span class="lineno"> 2337</span>        }</div>
 <div class="line"><a id="l02338" name="l02338"></a><span class="lineno"> 2338</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l02339" name="l02339"></a><span class="lineno"> 2339</span> </div>
 <div class="line"><a id="l02340" name="l02340"></a><span class="lineno"> 2340</span>        <span class="comment">// If alpha is now saturated we&#39;re done:</span></div>
-<div class="line"><a id="l02341" name="l02341"></a><span class="lineno"> 2341</span>        <span class="keywordflow">if</span> (out[Chan_A] &gt;= (1.0f - <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>))</div>
+<div class="line"><a id="l02341" name="l02341"></a><span class="lineno"> 2341</span>        <span class="keywordflow">if</span> (out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>] &gt;= (1.0f - <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>))</div>
 <div class="line"><a id="l02342" name="l02342"></a><span class="lineno"> 2342</span>        {</div>
 <div class="line"><a id="l02343" name="l02343"></a><span class="lineno"> 2343</span><span class="preprocessor">#ifdef DCX_DEBUG_FLATTENER</span></div>
 <div class="line"><a id="l02344" name="l02344"></a><span class="lineno"> 2344</span>            <span class="keywordflow">if</span> (debug_enable) std::cout &lt;&lt; <span class="stringliteral">&quot;          saturated, stop&quot;</span> &lt;&lt; std::endl;</div>
@@ -2398,11 +2417,11 @@ $(function() {
 <div class="line"><a id="l02352" name="l02352"></a><span class="lineno"> 2352</span>    } <span class="comment">// for nSegments loop</span></div>
 <div class="line"><a id="l02353" name="l02353"></a><span class="lineno"> 2353</span> </div>
 <div class="line"><a id="l02354" name="l02354"></a><span class="lineno"> 2354</span>    <span class="comment">// Ensure ZBack is valid:</span></div>
-<div class="line"><a id="l02355" name="l02355"></a><span class="lineno"> 2355</span>    <span class="keywordflow">if</span> (out[Chan_ZBack] &lt; 0.0f)</div>
-<div class="line"><a id="l02356" name="l02356"></a><span class="lineno"> 2356</span>        out[Chan_ZBack] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
+<div class="line"><a id="l02355" name="l02355"></a><span class="lineno"> 2355</span>    <span class="keywordflow">if</span> (out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a>] &lt; 0.0f)</div>
+<div class="line"><a id="l02356" name="l02356"></a><span class="lineno"> 2356</span>        out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a>] = <a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>;</div>
 <div class="line"><a id="l02357" name="l02357"></a><span class="lineno"> 2357</span> </div>
 <div class="line"><a id="l02358" name="l02358"></a><span class="lineno"> 2358</span>    <span class="comment">// Final alpha is cutout-alpha channel:</span></div>
-<div class="line"><a id="l02359" name="l02359"></a><span class="lineno"> 2359</span>    out[Chan_A] = (out[Chan_ACutout] &gt;= (1.0f - <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>))?1.0f:out[Chan_ACutout];</div>
+<div class="line"><a id="l02359" name="l02359"></a><span class="lineno"> 2359</span>    out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>] = (out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>] &gt;= (1.0f - <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>))?1.0f:out[<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>];</div>
 <div class="line"><a id="l02360" name="l02360"></a><span class="lineno"> 2360</span> </div>
 <div class="line"><a id="l02361" name="l02361"></a><span class="lineno"> 2361</span><span class="preprocessor">#ifdef DCX_DEBUG_FLATTENER</span></div>
 <div class="line"><a id="l02362" name="l02362"></a><span class="lineno"> 2362</span>    assert(active_segments.empty());</div>
@@ -2419,6 +2438,15 @@ $(function() {
 <div class="ttc" id="a_dcx_a_p_i_8h_html_a261b15652af738f9c436552485a151cd"><div class="ttname"><a href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a></div><div class="ttdeci">#define INFINITYf</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_a_p_i_8h_source.html#l00070">DcxAPI.h:70</a></div></div>
 <div class="ttc" id="a_dcx_a_p_i_8h_html_a773743c42b97839acf6276984153816c"><div class="ttname"><a href="_dcx_a_p_i_8h.html#a773743c42b97839acf6276984153816c">EPSILONd</a></div><div class="ttdeci">#define EPSILONd</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_a_p_i_8h_source.html#l00066">DcxAPI.h:66</a></div></div>
 <div class="ttc" id="a_dcx_a_p_i_8h_html_abe29e2583e2cd8c5c47a4473ed2547d7"><div class="ttname"><a href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a></div><div class="ttdeci">#define EPSILONf</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_a_p_i_8h_source.html#l00064">DcxAPI.h:64</a></div></div>
+<div class="ttc" id="a_dcx_channel_defs_8h_html_a187f15db7f68e75e94e1ba1b7fe0ecf2"><div class="ttname"><a href="_dcx_channel_defs_8h.html#a187f15db7f68e75e94e1ba1b7fe0ecf2">Chan_ZFront</a></div><div class="ttdeci">static const ChannelIdx Chan_ZFront</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_defs_8h_source.html#l00107">DcxChannelDefs.h:107</a></div></div>
+<div class="ttc" id="a_dcx_channel_defs_8h_html_a48b19fbf85f8fafeadce9ef9c98584cc"><div class="ttname"><a href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a></div><div class="ttdeci">static const ChannelIdx Chan_A</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_defs_8h_source.html#l00097">DcxChannelDefs.h:97</a></div></div>
+<div class="ttc" id="a_dcx_channel_defs_8h_html_a533a83192867850e400b89d14a3ec858"><div class="ttname"><a href="_dcx_channel_defs_8h.html#a533a83192867850e400b89d14a3ec858">Chan_Visibility</a></div><div class="ttdeci">static const ChannelIdx Chan_Visibility</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_defs_8h_source.html#l00120">DcxChannelDefs.h:120</a></div></div>
+<div class="ttc" id="a_dcx_channel_defs_8h_html_a862df0299d69cd5d3d49cb90a5469b47"><div class="ttname"><a href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a></div><div class="ttdeci">static const ChannelIdx Chan_ACutout</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_defs_8h_source.html#l00114">DcxChannelDefs.h:114</a></div></div>
+<div class="ttc" id="a_dcx_channel_defs_8h_html_a952270a3c83a8e1945952aab04b23e9d"><div class="ttname"><a href="_dcx_channel_defs_8h.html#a952270a3c83a8e1945952aab04b23e9d">Mask_Depths</a></div><div class="ttdeci">static const ChannelSet Mask_Depths(Chan_ZFront, Chan_ZBack)</div></div>
+<div class="ttc" id="a_dcx_channel_defs_8h_html_a9b72bc71dac0f07215aea9a421628641"><div class="ttname"><a href="_dcx_channel_defs_8h.html#a9b72bc71dac0f07215aea9a421628641">Chan_SpCoverage</a></div><div class="ttdeci">static const ChannelIdx Chan_SpCoverage</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_defs_8h_source.html#l00121">DcxChannelDefs.h:121</a></div></div>
+<div class="ttc" id="a_dcx_channel_defs_8h_html_ae24420deb3424aeac7b5ce014400f10b"><div class="ttname"><a href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a></div><div class="ttdeci">static const ChannelIdx Chan_ZBack</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_defs_8h_source.html#l00108">DcxChannelDefs.h:108</a></div></div>
+<div class="ttc" id="a_dcx_channel_defs_8h_html_af949e5127bdf67d335a57f71fdf9d1fc"><div class="ttname"><a href="_dcx_channel_defs_8h.html#af949e5127bdf67d335a57f71fdf9d1fc">Mask_Accumulators</a></div><div class="ttdeci">static const ChannelSet Mask_Accumulators(Chan_Visibility)</div></div>
+<div class="ttc" id="a_dcx_channel_defs_8h_html_af9e7bb71a39978bf760c12fda37d0693"><div class="ttname"><a href="_dcx_channel_defs_8h.html#af9e7bb71a39978bf760c12fda37d0693">Mask_Opacities</a></div><div class="ttdeci">static const ChannelSet Mask_Opacities(Chan_A, Chan_SpCoverage)</div></div>
 <div class="ttc" id="a_dcx_channel_set_8h_html_a1a8a3195f4006c505fa4bec8a1c60ae2"><div class="ttname"><a href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a></div><div class="ttdeci">#define foreach_channel(CHAN, CHANNELS)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00312">DcxChannelSet.h:312</a></div></div>
 <div class="ttc" id="a_dcx_deep_pixel_8cpp_html_a2924f77eada5a2125eb3b3b3a999de7f"><div class="ttname"><a href="_dcx_deep_pixel_8cpp.html#a2924f77eada5a2125eb3b3b3a999de7f">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const SpMask8 &amp;mask)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8cpp_source.html#l00094">DcxDeepPixel.cpp:95</a></div></div>
 <div class="ttc" id="a_dcx_deep_pixel_8cpp_html_a3d2ce134291a1bc9ad84533cfb6dc48e"><div class="ttname"><a href="_dcx_deep_pixel_8cpp.html#a3d2ce134291a1bc9ad84533cfb6dc48e">findBestMatch2</a></div><div class="ttdeci">int findBestMatch2(OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;dp, const std::vector&lt; int &gt; &amp;segment_indices, const Pixelf &amp;color, const ChannelSet &amp;compare_channels, const SpMask8 &amp;match_spmask, const DeepFlags &amp;match_flags, int match_spbin_count, const DeepPixel::CombineContext &amp;combine_ctx)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8cpp_source.html#l00771">DcxDeepPixel.cpp:771</a></div></div>
@@ -2553,9 +2581,13 @@ $(function() {
 <div class="ttc" id="aversion_8h_html_a918a6357c45c4f1e23b796ec20742fdb"><div class="ttname"><a href="version_8h.html#a918a6357c45c4f1e23b796ec20742fdb">OPENDCX_INTERNAL_NAMESPACE_HEADER_EXIT</a></div><div class="ttdeci">#define OPENDCX_INTERNAL_NAMESPACE_HEADER_EXIT</div><div class="ttdef"><b>Definition:</b> <a href="version_8h_source.html#l00081">version.h:81</a></div></div>
 <div class="ttc" id="aversion_8h_html_adc94498f00d0738db6a806e8be179b66"><div class="ttname"><a href="version_8h.html#adc94498f00d0738db6a806e8be179b66">OPENDCX_INTERNAL_NAMESPACE_HEADER_ENTER</a></div><div class="ttdeci">#define OPENDCX_INTERNAL_NAMESPACE_HEADER_ENTER</div><div class="ttdef"><b>Definition:</b> <a href="version_8h_source.html#l00080">version.h:80</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_72b1453eb3d56651fce76e1c2eebfac7.html">deepfile</a></li><li class="navelem"><a class="el" href="_dcx_deep_pixel_8cpp.html">DcxDeepPixel.cpp</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

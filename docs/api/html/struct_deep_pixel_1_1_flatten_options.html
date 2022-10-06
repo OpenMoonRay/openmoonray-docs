@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="class_deep_pixel.html">DeepPixel</a></li><li class="navelem"><a class="el" href="struct_deep_pixel_1_1_flatten_options.html">FlattenOptions</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('struct_deep_pixel_1_1_flatten_options.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -96,7 +112,17 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01254">1254</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1254</span>                                               :</div>
+<div class="line"><span class="lineno"> 1255</span>    <a class="code hl_variable" href="struct_deep_pixel_1_1_flatten_options.html#acaede5f263d35a735a7070afdf453d29">interpolation</a>(<a class="code hl_enumvalue" href="class_deep_pixel.html#a41fe4e884d4d6c4f8330faed1fd9a2fea7780b7444b186a78c6a6aae28cc27711">INTERP_AUTO</a>),</div>
+<div class="line"><span class="lineno"> 1256</span>    <a class="code hl_variable" href="struct_deep_pixel_1_1_flatten_options.html#accd83c96aa605fb1547155fa06abf2b6">max_Z_value</a>(<a class="code hl_define" href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a>)</div>
+<div class="line"><span class="lineno"> 1257</span>{</div>
+<div class="line"><span class="lineno"> 1258</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno"> 1259</span>}</div>
+<div class="ttc" id="a_dcx_a_p_i_8h_html_a261b15652af738f9c436552485a151cd"><div class="ttname"><a href="_dcx_a_p_i_8h.html#a261b15652af738f9c436552485a151cd">INFINITYf</a></div><div class="ttdeci">#define INFINITYf</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_a_p_i_8h_source.html#l00070">DcxAPI.h:70</a></div></div>
+<div class="ttc" id="aclass_deep_pixel_html_a41fe4e884d4d6c4f8330faed1fd9a2fea7780b7444b186a78c6a6aae28cc27711"><div class="ttname"><a href="class_deep_pixel.html#a41fe4e884d4d6c4f8330faed1fd9a2fea7780b7444b186a78c6a6aae28cc27711">DeepPixel::INTERP_AUTO</a></div><div class="ttdeci">@ INTERP_AUTO</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00534">DcxDeepPixel.h:534</a></div></div>
+<div class="ttc" id="astruct_deep_pixel_1_1_flatten_options_html_acaede5f263d35a735a7070afdf453d29"><div class="ttname"><a href="struct_deep_pixel_1_1_flatten_options.html#acaede5f263d35a735a7070afdf453d29">DeepPixel::FlattenOptions::interpolation</a></div><div class="ttdeci">InterpolationMode interpolation</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00559">DcxDeepPixel.h:559</a></div></div>
+<div class="ttc" id="astruct_deep_pixel_1_1_flatten_options_html_accd83c96aa605fb1547155fa06abf2b6"><div class="ttname"><a href="struct_deep_pixel_1_1_flatten_options.html#accd83c96aa605fb1547155fa06abf2b6">DeepPixel::FlattenOptions::max_Z_value</a></div><div class="ttdeci">float max_Z_value</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00560">DcxDeepPixel.h:560</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acd1f363173b8e3c49686bcc6f7451d42" name="acd1f363173b8e3c49686bcc6f7451d42"></a>
@@ -134,7 +160,13 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01260">1260</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1261</span>                                                                      :</div>
+<div class="line"><span class="lineno"> 1262</span>    <a class="code hl_variable" href="struct_deep_pixel_1_1_flatten_options.html#acaede5f263d35a735a7070afdf453d29">interpolation</a>(_interpolation),</div>
+<div class="line"><span class="lineno"> 1263</span>    <a class="code hl_variable" href="struct_deep_pixel_1_1_flatten_options.html#accd83c96aa605fb1547155fa06abf2b6">max_Z_value</a>(_max_Z_value)</div>
+<div class="line"><span class="lineno"> 1264</span>{</div>
+<div class="line"><span class="lineno"> 1265</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno"> 1266</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -174,9 +206,13 @@ Public Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/deepfile/<a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_deep_pixel.html">DeepPixel</a></li><li class="navelem"><a class="el" href="struct_deep_pixel_1_1_flatten_options.html">FlattenOptions</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

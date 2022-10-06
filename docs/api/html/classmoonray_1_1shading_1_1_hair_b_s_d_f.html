@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">HairBSDF</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_hair_b_s_d_f.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_hair_b_s_d_f-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::HairBSDF Class Reference</div></div>
 </div><!--header-->
@@ -133,6 +150,63 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a682c847a1244e9d36e11159a66fb175a inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade9beef66195237d2338872664638b28 inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html">BsdfComponent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html#ade9beef66195237d2338872664638b28">operator=</a> (const <a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html">BsdfComponent</a> &amp;other)=delete</td></tr>
 <tr class="separator:ade9beef66195237d2338872664638b28 inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac26a80f6eb840560c4e7ce3ef633d7d6"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Vec3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ac26a80f6eb840560c4e7ce3ef633d7d6">mHairDir</a></td></tr>
+<tr class="separator:ac26a80f6eb840560c4e7ce3ef633d7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62ec254db5e5bfbc18f646addcdf169e"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Vec2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a62ec254db5e5bfbc18f646addcdf169e">mHairUV</a></td></tr>
+<tr class="separator:a62ec254db5e5bfbc18f646addcdf169e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c977174b8e71044506660aeba6d33e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#af7c977174b8e71044506660aeba6d33e">mIOR</a></td></tr>
+<tr class="separator:af7c977174b8e71044506660aeba6d33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7824b79c1f0702a50678547abad00b41"><td class="memItemLeft" align="right" valign="top">ispc::HairFresnelType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a7824b79c1f0702a50678547abad00b41">mFresnelType</a></td></tr>
+<tr class="separator:a7824b79c1f0702a50678547abad00b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1efaaf36e2d4d2cf5771c6fa92c984ea"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a1efaaf36e2d4d2cf5771c6fa92c984ea">mCuticleLayerThickness</a></td></tr>
+<tr class="separator:a1efaaf36e2d4d2cf5771c6fa92c984ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36106b6cfe2a56469cdccb363ea18ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ae36106b6cfe2a56469cdccb363ea18ff">mShowR</a></td></tr>
+<tr class="separator:ae36106b6cfe2a56469cdccb363ea18ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca9de10916a20b0518d47515f6d4753"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a6ca9de10916a20b0518d47515f6d4753">mShiftR</a></td></tr>
+<tr class="separator:a6ca9de10916a20b0518d47515f6d4753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab7c5557bdd26bf0fc76564ccd42134"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a3ab7c5557bdd26bf0fc76564ccd42134">mRoughnessR</a></td></tr>
+<tr class="separator:a3ab7c5557bdd26bf0fc76564ccd42134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3637ae49bee7a5cc4d8650f1892600d"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#aa3637ae49bee7a5cc4d8650f1892600d">mTintR</a></td></tr>
+<tr class="separator:aa3637ae49bee7a5cc4d8650f1892600d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f7a0d8627e207238ddd4e5925c7fd50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a6f7a0d8627e207238ddd4e5925c7fd50">mShowTT</a></td></tr>
+<tr class="separator:a6f7a0d8627e207238ddd4e5925c7fd50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3cfa1f4b114f59f9f59cc1fed323f73"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ab3cfa1f4b114f59f9f59cc1fed323f73">mShiftTT</a></td></tr>
+<tr class="separator:ab3cfa1f4b114f59f9f59cc1fed323f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d73487e691c91fa916d1a53a78c924"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ae3d73487e691c91fa916d1a53a78c924">mRoughnessTT</a></td></tr>
+<tr class="separator:ae3d73487e691c91fa916d1a53a78c924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0814dd1075541db692b8def074227029"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a0814dd1075541db692b8def074227029">mAziRoughnessTT</a></td></tr>
+<tr class="separator:a0814dd1075541db692b8def074227029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b24f411f407bcc8f37410ce0af58d47"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a5b24f411f407bcc8f37410ce0af58d47">mTintTT</a></td></tr>
+<tr class="separator:a5b24f411f407bcc8f37410ce0af58d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582c1dd411ee743b174fc4a888688874"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a582c1dd411ee743b174fc4a888688874">mSaturationTT</a></td></tr>
+<tr class="separator:a582c1dd411ee743b174fc4a888688874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43cfa0e6c71c5cf0cc7d99a73d3e7cf9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a43cfa0e6c71c5cf0cc7d99a73d3e7cf9">mShowTRT</a></td></tr>
+<tr class="separator:a43cfa0e6c71c5cf0cc7d99a73d3e7cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a851262ad0a9bb7d09d86e218b1775a14"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a851262ad0a9bb7d09d86e218b1775a14">mShiftTRT</a></td></tr>
+<tr class="separator:a851262ad0a9bb7d09d86e218b1775a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c4aa9a22fa6e7953dee11a6e37ed4e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a68c4aa9a22fa6e7953dee11a6e37ed4e">mRoughnessTRT</a></td></tr>
+<tr class="separator:a68c4aa9a22fa6e7953dee11a6e37ed4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962a5cb13a26995888f0dbcfc0ba57ed"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a962a5cb13a26995888f0dbcfc0ba57ed">mTintTRT</a></td></tr>
+<tr class="separator:a962a5cb13a26995888f0dbcfc0ba57ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add845dbf3c1bf777e80d021bfd0897b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#add845dbf3c1bf777e80d021bfd0897b5">mShowGlint</a></td></tr>
+<tr class="separator:add845dbf3c1bf777e80d021bfd0897b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f66428382df3e298c5e41d37042d057"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a7f66428382df3e298c5e41d37042d057">mRoughnessGlint</a></td></tr>
+<tr class="separator:a7f66428382df3e298c5e41d37042d057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8318e9513f5aa8f08af87f9ea16722"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a4e8318e9513f5aa8f08af87f9ea16722">mEccentricityGlint</a></td></tr>
+<tr class="separator:a4e8318e9513f5aa8f08af87f9ea16722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bda4fc8c2b1c3f6d47da0dfce989ffc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a0bda4fc8c2b1c3f6d47da0dfce989ffc">mSaturationGlint</a></td></tr>
+<tr class="separator:a0bda4fc8c2b1c3f6d47da0dfce989ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5e6494451924d908e3c35aa9d4d11e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a4b5e6494451924d908e3c35aa9d4d11e">mHairRotation</a></td></tr>
+<tr class="separator:a4b5e6494451924d908e3c35aa9d4d11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8253584f24126f49fe6d4be04b13d9e"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Vec3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#af8253584f24126f49fe6d4be04b13d9e">mHairNormal</a></td></tr>
+<tr class="separator:af8253584f24126f49fe6d4be04b13d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab2c11ba3e86d901b06cfed06fc4bf20"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#aab2c11ba3e86d901b06cfed06fc4bf20">mShowTRRT</a></td></tr>
+<tr class="separator:aab2c11ba3e86d901b06cfed06fc4bf20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6926ee4f8cca1eee769e51d5da93d85"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ae6926ee4f8cca1eee769e51d5da93d85">mHairColor</a></td></tr>
+<tr class="separator:ae6926ee4f8cca1eee769e51d5da93d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -323,7 +397,64 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00985">985</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1011</span>                                                   :</div>
+<div class="line"><span class="lineno"> 1012</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ac26a80f6eb840560c4e7ce3ef633d7d6">mHairDir</a>(hairDir),</div>
+<div class="line"><span class="lineno"> 1013</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a62ec254db5e5bfbc18f646addcdf169e">mHairUV</a>(hairUV),</div>
+<div class="line"><span class="lineno"> 1014</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#af7c977174b8e71044506660aeba6d33e">mIOR</a>(<a class="code hl_function" href="namespacemoonray_1_1shading.html#a87bded4ce0925ce77bcac6f70173db5a">ior</a>),</div>
+<div class="line"><span class="lineno"> 1015</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a7824b79c1f0702a50678547abad00b41">mFresnelType</a>(fresnelType),</div>
+<div class="line"><span class="lineno"> 1016</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a1efaaf36e2d4d2cf5771c6fa92c984ea">mCuticleLayerThickness</a>(cuticleLayerThickness),</div>
+<div class="line"><span class="lineno"> 1017</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ae36106b6cfe2a56469cdccb363ea18ff">mShowR</a>(showR),</div>
+<div class="line"><span class="lineno"> 1018</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a6ca9de10916a20b0518d47515f6d4753">mShiftR</a>(shiftR),</div>
+<div class="line"><span class="lineno"> 1019</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a3ab7c5557bdd26bf0fc76564ccd42134">mRoughnessR</a>(roughnessR),</div>
+<div class="line"><span class="lineno"> 1020</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#aa3637ae49bee7a5cc4d8650f1892600d">mTintR</a>(tintR),</div>
+<div class="line"><span class="lineno"> 1021</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a6f7a0d8627e207238ddd4e5925c7fd50">mShowTT</a>(showTT),</div>
+<div class="line"><span class="lineno"> 1022</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ab3cfa1f4b114f59f9f59cc1fed323f73">mShiftTT</a>(shiftTT),</div>
+<div class="line"><span class="lineno"> 1023</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ae3d73487e691c91fa916d1a53a78c924">mRoughnessTT</a>(roughnessTT),</div>
+<div class="line"><span class="lineno"> 1024</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a0814dd1075541db692b8def074227029">mAziRoughnessTT</a>(azimuthalRoughnessTT),</div>
+<div class="line"><span class="lineno"> 1025</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a5b24f411f407bcc8f37410ce0af58d47">mTintTT</a>(tintTT),</div>
+<div class="line"><span class="lineno"> 1026</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a582c1dd411ee743b174fc4a888688874">mSaturationTT</a>(saturationTT),</div>
+<div class="line"><span class="lineno"> 1027</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a43cfa0e6c71c5cf0cc7d99a73d3e7cf9">mShowTRT</a>(showTRT),</div>
+<div class="line"><span class="lineno"> 1028</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a851262ad0a9bb7d09d86e218b1775a14">mShiftTRT</a>(shiftTRT),</div>
+<div class="line"><span class="lineno"> 1029</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a68c4aa9a22fa6e7953dee11a6e37ed4e">mRoughnessTRT</a>(roughnessTRT),</div>
+<div class="line"><span class="lineno"> 1030</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a962a5cb13a26995888f0dbcfc0ba57ed">mTintTRT</a>(tintTRT),</div>
+<div class="line"><span class="lineno"> 1031</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#add845dbf3c1bf777e80d021bfd0897b5">mShowGlint</a>(showGlint),</div>
+<div class="line"><span class="lineno"> 1032</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a7f66428382df3e298c5e41d37042d057">mRoughnessGlint</a>(roughnessGlint),</div>
+<div class="line"><span class="lineno"> 1033</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a4e8318e9513f5aa8f08af87f9ea16722">mEccentricityGlint</a>(eccentricityGlint),</div>
+<div class="line"><span class="lineno"> 1034</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a0bda4fc8c2b1c3f6d47da0dfce989ffc">mSaturationGlint</a>(saturationGlint),</div>
+<div class="line"><span class="lineno"> 1035</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a4b5e6494451924d908e3c35aa9d4d11e">mHairRotation</a>(hairRotation),</div>
+<div class="line"><span class="lineno"> 1036</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#af8253584f24126f49fe6d4be04b13d9e">mHairNormal</a>(hairNormal),</div>
+<div class="line"><span class="lineno"> 1037</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#aab2c11ba3e86d901b06cfed06fc4bf20">mShowTRRT</a>(showTRRT),</div>
+<div class="line"><span class="lineno"> 1038</span>         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ae6926ee4f8cca1eee769e51d5da93d85">mHairColor</a>(hairColor)</div>
+<div class="line"><span class="lineno"> 1039</span>     {}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_a0814dd1075541db692b8def074227029"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a0814dd1075541db692b8def074227029">moonray::shading::HairBSDF::mAziRoughnessTT</a></div><div class="ttdeci">float mAziRoughnessTT</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01094">BsdfComponent.h:1094</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_a0bda4fc8c2b1c3f6d47da0dfce989ffc"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a0bda4fc8c2b1c3f6d47da0dfce989ffc">moonray::shading::HairBSDF::mSaturationGlint</a></div><div class="ttdeci">float mSaturationGlint</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01106">BsdfComponent.h:1106</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_a1efaaf36e2d4d2cf5771c6fa92c984ea"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a1efaaf36e2d4d2cf5771c6fa92c984ea">moonray::shading::HairBSDF::mCuticleLayerThickness</a></div><div class="ttdeci">float mCuticleLayerThickness</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01084">BsdfComponent.h:1084</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_a3ab7c5557bdd26bf0fc76564ccd42134"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a3ab7c5557bdd26bf0fc76564ccd42134">moonray::shading::HairBSDF::mRoughnessR</a></div><div class="ttdeci">float mRoughnessR</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01088">BsdfComponent.h:1088</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_a43cfa0e6c71c5cf0cc7d99a73d3e7cf9"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a43cfa0e6c71c5cf0cc7d99a73d3e7cf9">moonray::shading::HairBSDF::mShowTRT</a></div><div class="ttdeci">bool mShowTRT</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01098">BsdfComponent.h:1098</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_a4b5e6494451924d908e3c35aa9d4d11e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a4b5e6494451924d908e3c35aa9d4d11e">moonray::shading::HairBSDF::mHairRotation</a></div><div class="ttdeci">float mHairRotation</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01107">BsdfComponent.h:1107</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_a4e8318e9513f5aa8f08af87f9ea16722"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a4e8318e9513f5aa8f08af87f9ea16722">moonray::shading::HairBSDF::mEccentricityGlint</a></div><div class="ttdeci">float mEccentricityGlint</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01105">BsdfComponent.h:1105</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_a582c1dd411ee743b174fc4a888688874"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a582c1dd411ee743b174fc4a888688874">moonray::shading::HairBSDF::mSaturationTT</a></div><div class="ttdeci">float mSaturationTT</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01096">BsdfComponent.h:1096</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_a5b24f411f407bcc8f37410ce0af58d47"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a5b24f411f407bcc8f37410ce0af58d47">moonray::shading::HairBSDF::mTintTT</a></div><div class="ttdeci">scene_rdl2::math::Color mTintTT</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01095">BsdfComponent.h:1095</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_a62ec254db5e5bfbc18f646addcdf169e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a62ec254db5e5bfbc18f646addcdf169e">moonray::shading::HairBSDF::mHairUV</a></div><div class="ttdeci">scene_rdl2::math::Vec2f mHairUV</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01079">BsdfComponent.h:1079</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_a68c4aa9a22fa6e7953dee11a6e37ed4e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a68c4aa9a22fa6e7953dee11a6e37ed4e">moonray::shading::HairBSDF::mRoughnessTRT</a></div><div class="ttdeci">float mRoughnessTRT</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01100">BsdfComponent.h:1100</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_a6ca9de10916a20b0518d47515f6d4753"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a6ca9de10916a20b0518d47515f6d4753">moonray::shading::HairBSDF::mShiftR</a></div><div class="ttdeci">float mShiftR</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01087">BsdfComponent.h:1087</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_a6f7a0d8627e207238ddd4e5925c7fd50"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a6f7a0d8627e207238ddd4e5925c7fd50">moonray::shading::HairBSDF::mShowTT</a></div><div class="ttdeci">bool mShowTT</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01091">BsdfComponent.h:1091</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_a7824b79c1f0702a50678547abad00b41"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a7824b79c1f0702a50678547abad00b41">moonray::shading::HairBSDF::mFresnelType</a></div><div class="ttdeci">ispc::HairFresnelType mFresnelType</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01083">BsdfComponent.h:1083</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_a7f66428382df3e298c5e41d37042d057"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a7f66428382df3e298c5e41d37042d057">moonray::shading::HairBSDF::mRoughnessGlint</a></div><div class="ttdeci">float mRoughnessGlint</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01104">BsdfComponent.h:1104</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_a851262ad0a9bb7d09d86e218b1775a14"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a851262ad0a9bb7d09d86e218b1775a14">moonray::shading::HairBSDF::mShiftTRT</a></div><div class="ttdeci">float mShiftTRT</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01099">BsdfComponent.h:1099</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_a962a5cb13a26995888f0dbcfc0ba57ed"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a962a5cb13a26995888f0dbcfc0ba57ed">moonray::shading::HairBSDF::mTintTRT</a></div><div class="ttdeci">scene_rdl2::math::Color mTintTRT</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01101">BsdfComponent.h:1101</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_aa3637ae49bee7a5cc4d8650f1892600d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#aa3637ae49bee7a5cc4d8650f1892600d">moonray::shading::HairBSDF::mTintR</a></div><div class="ttdeci">scene_rdl2::math::Color mTintR</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01089">BsdfComponent.h:1089</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_aab2c11ba3e86d901b06cfed06fc4bf20"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#aab2c11ba3e86d901b06cfed06fc4bf20">moonray::shading::HairBSDF::mShowTRRT</a></div><div class="ttdeci">bool mShowTRRT</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01110">BsdfComponent.h:1110</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_ab3cfa1f4b114f59f9f59cc1fed323f73"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ab3cfa1f4b114f59f9f59cc1fed323f73">moonray::shading::HairBSDF::mShiftTT</a></div><div class="ttdeci">float mShiftTT</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01092">BsdfComponent.h:1092</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_ac26a80f6eb840560c4e7ce3ef633d7d6"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ac26a80f6eb840560c4e7ce3ef633d7d6">moonray::shading::HairBSDF::mHairDir</a></div><div class="ttdeci">scene_rdl2::math::Vec3f mHairDir</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01078">BsdfComponent.h:1078</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_add845dbf3c1bf777e80d021bfd0897b5"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#add845dbf3c1bf777e80d021bfd0897b5">moonray::shading::HairBSDF::mShowGlint</a></div><div class="ttdeci">bool mShowGlint</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01103">BsdfComponent.h:1103</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_ae36106b6cfe2a56469cdccb363ea18ff"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ae36106b6cfe2a56469cdccb363ea18ff">moonray::shading::HairBSDF::mShowR</a></div><div class="ttdeci">bool mShowR</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01086">BsdfComponent.h:1086</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_ae3d73487e691c91fa916d1a53a78c924"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ae3d73487e691c91fa916d1a53a78c924">moonray::shading::HairBSDF::mRoughnessTT</a></div><div class="ttdeci">float mRoughnessTT</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01093">BsdfComponent.h:1093</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_ae6926ee4f8cca1eee769e51d5da93d85"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ae6926ee4f8cca1eee769e51d5da93d85">moonray::shading::HairBSDF::mHairColor</a></div><div class="ttdeci">scene_rdl2::math::Color mHairColor</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01112">BsdfComponent.h:1112</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_af7c977174b8e71044506660aeba6d33e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#af7c977174b8e71044506660aeba6d33e">moonray::shading::HairBSDF::mIOR</a></div><div class="ttdeci">float mIOR</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01081">BsdfComponent.h:1081</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_b_s_d_f_html_af8253584f24126f49fe6d4be04b13d9e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#af8253584f24126f49fe6d4be04b13d9e">moonray::shading::HairBSDF::mHairNormal</a></div><div class="ttdeci">scene_rdl2::math::Vec3f mHairNormal</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l01108">BsdfComponent.h:1108</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a87bded4ce0925ce77bcac6f70173db5a"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a87bded4ce0925ce77bcac6f70173db5a">moonray::shading::ior</a></div><div class="ttdeci">finline float ior(const scene_rdl2::rdl2::Material *material, shading::TLState *tls, const State &amp;state)</div><div class="ttdoc">Evaluate ior.</div><div class="ttdef"><b>Definition:</b> <a href="_eval_shader_8h_source.html#l00104">EvalShader.h:104</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a65e2011f37e2d91b85158fd049a8f38d" name="a65e2011f37e2d91b85158fd049a8f38d"></a>
@@ -350,7 +481,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01041">1041</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1041</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -378,7 +510,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01057">1057</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1057</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a0814dd1075541db692b8def074227029">mAziRoughnessTT</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae5ab26dd0f1b3c5209b214fcf75bb391" name="ae5ab26dd0f1b3c5209b214fcf75bb391"></a>
@@ -405,7 +538,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01047">1047</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1047</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a1efaaf36e2d4d2cf5771c6fa92c984ea">mCuticleLayerThickness</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a80654a04b9a2a1782f052cb1a13b5f7f" name="a80654a04b9a2a1782f052cb1a13b5f7f"></a>
@@ -432,7 +566,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01068">1068</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1068</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a4e8318e9513f5aa8f08af87f9ea16722">mEccentricityGlint</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2373d4e8838ff1171313f8ba321afb8f" name="a2373d4e8838ff1171313f8ba321afb8f"></a>
@@ -459,7 +594,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01046">1046</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1046</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a7824b79c1f0702a50678547abad00b41">mFresnelType</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a524c8178b64c83da5466d9467b771b76" name="a524c8178b64c83da5466d9467b771b76"></a>
@@ -486,7 +622,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01075">1075</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1075</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ae6926ee4f8cca1eee769e51d5da93d85">mHairColor</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a92009f9e629477adff82333040f51eab" name="a92009f9e629477adff82333040f51eab"></a>
@@ -513,7 +650,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01043">1043</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1043</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ac26a80f6eb840560c4e7ce3ef633d7d6">mHairDir</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6e02198a05edff1dfce81a2176d25734" name="a6e02198a05edff1dfce81a2176d25734"></a>
@@ -540,7 +678,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01071">1071</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1071</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#af8253584f24126f49fe6d4be04b13d9e">mHairNormal</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3996bcc242a73b3a35ea270fadb54bf4" name="a3996bcc242a73b3a35ea270fadb54bf4"></a>
@@ -567,7 +706,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01070">1070</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1070</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a4b5e6494451924d908e3c35aa9d4d11e">mHairRotation</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a612126391b1807efde75251d35ffa2f4" name="a612126391b1807efde75251d35ffa2f4"></a>
@@ -594,7 +734,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01044">1044</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1044</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a62ec254db5e5bfbc18f646addcdf169e">mHairUV</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7b046c5fc64b9d1e9f04fe939100e54d" name="a7b046c5fc64b9d1e9f04fe939100e54d"></a>
@@ -621,7 +762,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01045">1045</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1045</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#af7c977174b8e71044506660aeba6d33e">mIOR</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a95853f6248b4017d33167c8fde247c33" name="a95853f6248b4017d33167c8fde247c33"></a>
@@ -648,7 +790,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01067">1067</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1067</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a7f66428382df3e298c5e41d37042d057">mRoughnessGlint</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3beaca96e27d97fc84326fac076b7931" name="a3beaca96e27d97fc84326fac076b7931"></a>
@@ -675,7 +818,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01051">1051</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1051</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a3ab7c5557bdd26bf0fc76564ccd42134">mRoughnessR</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4cb81f5d04443a935fedf16bc561761b" name="a4cb81f5d04443a935fedf16bc561761b"></a>
@@ -702,7 +846,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01063">1063</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1063</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a68c4aa9a22fa6e7953dee11a6e37ed4e">mRoughnessTRT</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a356ce00be11308539594293be74586e0" name="a356ce00be11308539594293be74586e0"></a>
@@ -729,7 +874,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01056">1056</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1056</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ae3d73487e691c91fa916d1a53a78c924">mRoughnessTT</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aae9d67f7fa7de9b7f595e4785b4fa7b3" name="aae9d67f7fa7de9b7f595e4785b4fa7b3"></a>
@@ -756,7 +902,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01069">1069</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1069</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a0bda4fc8c2b1c3f6d47da0dfce989ffc">mSaturationGlint</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a181fe691997be28e9880a39325ca291b" name="a181fe691997be28e9880a39325ca291b"></a>
@@ -783,7 +930,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01059">1059</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1059</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a582c1dd411ee743b174fc4a888688874">mSaturationTT</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a45cbdd81960b3e02ddd6fd6fc78b651e" name="a45cbdd81960b3e02ddd6fd6fc78b651e"></a>
@@ -810,7 +958,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01050">1050</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1050</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a6ca9de10916a20b0518d47515f6d4753">mShiftR</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1aaa5ccd4ede2e39854bfd4f15581da0" name="a1aaa5ccd4ede2e39854bfd4f15581da0"></a>
@@ -837,7 +986,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01062">1062</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1062</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a851262ad0a9bb7d09d86e218b1775a14">mShiftTRT</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5ba74990c6b74fd7e1a57fd3237795f0" name="a5ba74990c6b74fd7e1a57fd3237795f0"></a>
@@ -864,7 +1014,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01055">1055</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1055</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ab3cfa1f4b114f59f9f59cc1fed323f73">mShiftTT</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abde4d0f938740c07572ec12df3057910" name="abde4d0f938740c07572ec12df3057910"></a>
@@ -891,7 +1042,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01066">1066</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1066</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#add845dbf3c1bf777e80d021bfd0897b5">mShowGlint</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5da1130fd3910b37701800dabea987a2" name="a5da1130fd3910b37701800dabea987a2"></a>
@@ -918,7 +1070,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01049">1049</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1049</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#ae36106b6cfe2a56469cdccb363ea18ff">mShowR</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a234e62a5ad6ee68bc556df82fb3193b8" name="a234e62a5ad6ee68bc556df82fb3193b8"></a>
@@ -945,7 +1098,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01073">1073</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1073</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#aab2c11ba3e86d901b06cfed06fc4bf20">mShowTRRT</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a32e687b92919f48bbd79975061bc844f" name="a32e687b92919f48bbd79975061bc844f"></a>
@@ -972,7 +1126,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01061">1061</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1061</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a43cfa0e6c71c5cf0cc7d99a73d3e7cf9">mShowTRT</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9fcdc3c65ea4149952ab0e56f9461511" name="a9fcdc3c65ea4149952ab0e56f9461511"></a>
@@ -999,7 +1154,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01054">1054</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1054</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a6f7a0d8627e207238ddd4e5925c7fd50">mShowTT</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa0a404df3cc1c470120b20b0c67a412d" name="aa0a404df3cc1c470120b20b0c67a412d"></a>
@@ -1026,7 +1182,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01052">1052</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1052</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#aa3637ae49bee7a5cc4d8650f1892600d">mTintR</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adbab2c15e0c8a054be6215d40c245e05" name="adbab2c15e0c8a054be6215d40c245e05"></a>
@@ -1053,7 +1210,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01064">1064</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1064</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a962a5cb13a26995888f0dbcfc0ba57ed">mTintTRT</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1b44cafe07327db75a3621df553f33ae" name="a1b44cafe07327db75a3621df553f33ae"></a>
@@ -1080,6 +1238,656 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01058">1058</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno"> 1058</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html#a5b24f411f407bcc8f37410ce0af58d47">mTintTT</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a0814dd1075541db692b8def074227029" name="a0814dd1075541db692b8def074227029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0814dd1075541db692b8def074227029">&#9670;&#160;</a></span>mAziRoughnessTT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::HairBSDF::mAziRoughnessTT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01094">1094</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a1efaaf36e2d4d2cf5771c6fa92c984ea" name="a1efaaf36e2d4d2cf5771c6fa92c984ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1efaaf36e2d4d2cf5771c6fa92c984ea">&#9670;&#160;</a></span>mCuticleLayerThickness</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::HairBSDF::mCuticleLayerThickness</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01084">1084</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a4e8318e9513f5aa8f08af87f9ea16722" name="a4e8318e9513f5aa8f08af87f9ea16722"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e8318e9513f5aa8f08af87f9ea16722">&#9670;&#160;</a></span>mEccentricityGlint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::HairBSDF::mEccentricityGlint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01105">1105</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a7824b79c1f0702a50678547abad00b41" name="a7824b79c1f0702a50678547abad00b41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7824b79c1f0702a50678547abad00b41">&#9670;&#160;</a></span>mFresnelType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ispc::HairFresnelType moonray::shading::HairBSDF::mFresnelType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01083">1083</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="ae6926ee4f8cca1eee769e51d5da93d85" name="ae6926ee4f8cca1eee769e51d5da93d85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6926ee4f8cca1eee769e51d5da93d85">&#9670;&#160;</a></span>mHairColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Color moonray::shading::HairBSDF::mHairColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01112">1112</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="ac26a80f6eb840560c4e7ce3ef633d7d6" name="ac26a80f6eb840560c4e7ce3ef633d7d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac26a80f6eb840560c4e7ce3ef633d7d6">&#9670;&#160;</a></span>mHairDir</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Vec3f moonray::shading::HairBSDF::mHairDir</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01078">1078</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="af8253584f24126f49fe6d4be04b13d9e" name="af8253584f24126f49fe6d4be04b13d9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8253584f24126f49fe6d4be04b13d9e">&#9670;&#160;</a></span>mHairNormal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Vec3f moonray::shading::HairBSDF::mHairNormal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01108">1108</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a4b5e6494451924d908e3c35aa9d4d11e" name="a4b5e6494451924d908e3c35aa9d4d11e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b5e6494451924d908e3c35aa9d4d11e">&#9670;&#160;</a></span>mHairRotation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::HairBSDF::mHairRotation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01107">1107</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a62ec254db5e5bfbc18f646addcdf169e" name="a62ec254db5e5bfbc18f646addcdf169e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62ec254db5e5bfbc18f646addcdf169e">&#9670;&#160;</a></span>mHairUV</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Vec2f moonray::shading::HairBSDF::mHairUV</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01079">1079</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="af7c977174b8e71044506660aeba6d33e" name="af7c977174b8e71044506660aeba6d33e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7c977174b8e71044506660aeba6d33e">&#9670;&#160;</a></span>mIOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::HairBSDF::mIOR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01081">1081</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a7f66428382df3e298c5e41d37042d057" name="a7f66428382df3e298c5e41d37042d057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f66428382df3e298c5e41d37042d057">&#9670;&#160;</a></span>mRoughnessGlint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::HairBSDF::mRoughnessGlint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01104">1104</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a3ab7c5557bdd26bf0fc76564ccd42134" name="a3ab7c5557bdd26bf0fc76564ccd42134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ab7c5557bdd26bf0fc76564ccd42134">&#9670;&#160;</a></span>mRoughnessR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::HairBSDF::mRoughnessR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01088">1088</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a68c4aa9a22fa6e7953dee11a6e37ed4e" name="a68c4aa9a22fa6e7953dee11a6e37ed4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c4aa9a22fa6e7953dee11a6e37ed4e">&#9670;&#160;</a></span>mRoughnessTRT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::HairBSDF::mRoughnessTRT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01100">1100</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="ae3d73487e691c91fa916d1a53a78c924" name="ae3d73487e691c91fa916d1a53a78c924"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3d73487e691c91fa916d1a53a78c924">&#9670;&#160;</a></span>mRoughnessTT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::HairBSDF::mRoughnessTT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01093">1093</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a0bda4fc8c2b1c3f6d47da0dfce989ffc" name="a0bda4fc8c2b1c3f6d47da0dfce989ffc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bda4fc8c2b1c3f6d47da0dfce989ffc">&#9670;&#160;</a></span>mSaturationGlint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::HairBSDF::mSaturationGlint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01106">1106</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a582c1dd411ee743b174fc4a888688874" name="a582c1dd411ee743b174fc4a888688874"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a582c1dd411ee743b174fc4a888688874">&#9670;&#160;</a></span>mSaturationTT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::HairBSDF::mSaturationTT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01096">1096</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a6ca9de10916a20b0518d47515f6d4753" name="a6ca9de10916a20b0518d47515f6d4753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca9de10916a20b0518d47515f6d4753">&#9670;&#160;</a></span>mShiftR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::HairBSDF::mShiftR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01087">1087</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a851262ad0a9bb7d09d86e218b1775a14" name="a851262ad0a9bb7d09d86e218b1775a14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a851262ad0a9bb7d09d86e218b1775a14">&#9670;&#160;</a></span>mShiftTRT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::HairBSDF::mShiftTRT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01099">1099</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="ab3cfa1f4b114f59f9f59cc1fed323f73" name="ab3cfa1f4b114f59f9f59cc1fed323f73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3cfa1f4b114f59f9f59cc1fed323f73">&#9670;&#160;</a></span>mShiftTT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::HairBSDF::mShiftTT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01092">1092</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="add845dbf3c1bf777e80d021bfd0897b5" name="add845dbf3c1bf777e80d021bfd0897b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add845dbf3c1bf777e80d021bfd0897b5">&#9670;&#160;</a></span>mShowGlint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::shading::HairBSDF::mShowGlint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01103">1103</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="ae36106b6cfe2a56469cdccb363ea18ff" name="ae36106b6cfe2a56469cdccb363ea18ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae36106b6cfe2a56469cdccb363ea18ff">&#9670;&#160;</a></span>mShowR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::shading::HairBSDF::mShowR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01086">1086</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="aab2c11ba3e86d901b06cfed06fc4bf20" name="aab2c11ba3e86d901b06cfed06fc4bf20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab2c11ba3e86d901b06cfed06fc4bf20">&#9670;&#160;</a></span>mShowTRRT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::shading::HairBSDF::mShowTRRT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01110">1110</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a43cfa0e6c71c5cf0cc7d99a73d3e7cf9" name="a43cfa0e6c71c5cf0cc7d99a73d3e7cf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43cfa0e6c71c5cf0cc7d99a73d3e7cf9">&#9670;&#160;</a></span>mShowTRT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::shading::HairBSDF::mShowTRT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01098">1098</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a6f7a0d8627e207238ddd4e5925c7fd50" name="a6f7a0d8627e207238ddd4e5925c7fd50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f7a0d8627e207238ddd4e5925c7fd50">&#9670;&#160;</a></span>mShowTT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::shading::HairBSDF::mShowTT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01091">1091</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="aa3637ae49bee7a5cc4d8650f1892600d" name="aa3637ae49bee7a5cc4d8650f1892600d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3637ae49bee7a5cc4d8650f1892600d">&#9670;&#160;</a></span>mTintR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Color moonray::shading::HairBSDF::mTintR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01089">1089</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a962a5cb13a26995888f0dbcfc0ba57ed" name="a962a5cb13a26995888f0dbcfc0ba57ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a962a5cb13a26995888f0dbcfc0ba57ed">&#9670;&#160;</a></span>mTintTRT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Color moonray::shading::HairBSDF::mTintTRT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01101">1101</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a5b24f411f407bcc8f37410ce0af58d47" name="a5b24f411f407bcc8f37410ce0af58d47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b24f411f407bcc8f37410ce0af58d47">&#9670;&#160;</a></span>mTintTT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Color moonray::shading::HairBSDF::mTintTT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l01095">1095</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
 
 </div>
 </div>
@@ -1087,9 +1895,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/<a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_hair_b_s_d_f.html">HairBSDF</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_3ffafe8d4194a26e471fc283bfe39627.html">shading</a></li><li class="navelem"><a class="el" href="dir_dc7d4ea0feddfdece5425e1d6c4bcd38.html">bsdf</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_bsdf_oren_nayar_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">BsdfOrenNayar.h</div></div>
 </div><!--header-->
@@ -50,7 +66,12 @@ $(function() {
 <a href="_bsdf_oren_nayar_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2020-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file BsdfOrenNayar.h</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Scott Cegielski</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// $Id$</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">///</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
@@ -75,7 +96,7 @@ $(function() {
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="_bsdf_oren_nayar_8h.html#adbb1d9aee982ee92dc008ff03cff7539">   31</a></span><span class="preprocessor">#define OREN_NAYAR_PBR_VALIDITY_MAX 0.871367</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">static</span> finline <span class="keywordtype">float</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>getOrenNayarIntensity(<span class="keyword">const</span> scene_rdl2::math::Vec3f&amp; n,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1shading.html#a48bd527f263b96f3faee24732439c6bc">   34</a></span><a class="code hl_function" href="namespacemoonray_1_1shading.html#a48bd527f263b96f3faee24732439c6bc">getOrenNayarIntensity</a>(<span class="keyword">const</span> scene_rdl2::math::Vec3f&amp; n,</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                      <span class="keyword">const</span> scene_rdl2::math::Vec3f&amp; v,</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                      <span class="keyword">const</span> scene_rdl2::math::Vec3f&amp; l,</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                      <span class="keyword">const</span> <span class="keywordtype">float</span> a,</div>
@@ -96,8 +117,13 @@ $(function() {
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">return</span> nl * (a + b * s/t);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">//  This class implements the Oren Nayar fast approximation</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"></span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">///</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">/// @class OrenNayarBsdfLobe BsdfOrenNayar.h &lt;shading/bsdf/BsdfOrenNayar.h&gt;</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">/// @brief The OrenNayar diffuse brdf (f = kd / PI)</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">/// </span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">/// https://www1.cs.columbia.edu/CAVE/publications/pdfs/Oren_SIGGRAPH94.pdf</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"></span><span class="comment">//  This class implements the Oren Nayar fast approximation</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html">   62</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html">OrenNayarBsdfLobe</a> : <span class="keyword">public</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">BsdfLobe</a></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">public</span>:</div>
@@ -118,7 +144,7 @@ $(function() {
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="comment">// BsdfLobe API</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html#acf84077ec981d92447de92345578cc6b">   80</a></span>    finline scene_rdl2::math::Color <a class="code hl_function" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html#acf84077ec981d92447de92345578cc6b">eval</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_bsdf_slice.html">BsdfSlice</a> &amp;slice, <span class="keyword">const</span> scene_rdl2::math::Vec3f &amp;wi, <span class="keywordtype">float</span> *pdf = NULL)<span class="keyword"> const override</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaWi = getOrenNayarIntensity(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html#a1e59fe7b2c0eb11f7d12054feaf37086">mFrame</a>.getN(),</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaWi = <a class="code hl_function" href="namespacemoonray_1_1shading.html#a48bd527f263b96f3faee24732439c6bc">getOrenNayarIntensity</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html#a1e59fe7b2c0eb11f7d12054feaf37086">mFrame</a>.getN(),</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                                                       slice.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a18a6705047093d3570417b3d7a044712">getWo</a>(), wi,</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                                                       <a class="code hl_variable" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html#a304d62c116f6daab1db1a6f6e3f02018">mA</a>, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html#a0575e2bac65c9f6af4ebdde0723f6849">mB</a>);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
@@ -309,15 +335,20 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe_html_af70e5b676fec76b462f394ad0ad62d3f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html#af70e5b676fec76b462f394ad0ad62d3f">moonray::shading::OrenNayarBsdfLobe::OrenNayarBsdfLobe</a></div><div class="ttdeci">OrenNayarBsdfLobe(const scene_rdl2::math::Vec3f &amp;N, const scene_rdl2::math::Color &amp;albedo, float roughness, bool reflection)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_oren_nayar_8h_source.html#l00066">BsdfOrenNayar.h:66</a></div></div>
 <div class="ttc" id="alib_2rendering_2shading_2util_8h_html"><div class="ttname"><a href="lib_2rendering_2shading_2util_8h.html">Util.h</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1shading_html_a0eeb01f1202c647ccdb43988f3af336d"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a0eeb01f1202c647ccdb43988f3af336d">moonray::shading::localHemisphereCosineDifferentials</a></div><div class="ttdeci">finline void localHemisphereCosineDifferentials(float r1, float r2, scene_rdl2::math::Vec3f &amp;dDdr1, scene_rdl2::math::Vec3f &amp;dDdr2)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00455">Util.h:455</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a48bd527f263b96f3faee24732439c6bc"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a48bd527f263b96f3faee24732439c6bc">moonray::shading::getOrenNayarIntensity</a></div><div class="ttdeci">static finline float getOrenNayarIntensity(const scene_rdl2::math::Vec3f &amp;n, const scene_rdl2::math::Vec3f &amp;v, const scene_rdl2::math::Vec3f &amp;l, const float a, const float b)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_oren_nayar_8h_source.html#l00034">BsdfOrenNayar.h:34</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1shading_html_ab0402747beda948c69a39adcdf5eeb52"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ab0402747beda948c69a39adcdf5eeb52">moonray::shading::sampleLocalHemisphereCosine</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f sampleLocalHemisphereCosine(float r1, float r2)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00182">Util.h:182</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1shading_html_add123d696e8a9b887dc905fb8e3dd2a1"><div class="ttname"><a href="namespacemoonray_1_1shading.html#add123d696e8a9b887dc905fb8e3dd2a1">moonray::shading::computeAlbedoPbrValidity</a></div><div class="ttdeci">scene_rdl2::math::Color computeAlbedoPbrValidity(const scene_rdl2::math::Color &amp;albedo)</div><div class="ttdef"><b>Definition:</b> <a href="_pbr_validity_8cc_source.html#l00015">PbrValidity.cc:15</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1shading_html_aded79f2ca3891d2a76a58704c4bc837f"><div class="ttname"><a href="namespacemoonray_1_1shading.html#aded79f2ca3891d2a76a58704c4bc837f">moonray::shading::squarifyRectangle</a></div><div class="ttdeci">finline void squarifyRectangle(scene_rdl2::math::Vec3f &amp;edge1, scene_rdl2::math::Vec3f &amp;edge2)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00203">Util.h:203</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1shading_html_aee1b173843a9c9b500b07b17a9e8ce03"><div class="ttname"><a href="namespacemoonray_1_1shading.html#aee1b173843a9c9b500b07b17a9e8ce03">moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</a></div><div class="ttdeci">ISPC_UTIL_TYPEDEF_STRUCT(AshikhminShirleyDiffuseBsdfLobe, AshikhminShirleyDiffuseBsdfLobev)</div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ffbcf3a8cac23adad179e74a09117904.html">shading</a></li><li class="navelem"><a class="el" href="dir_475738c250334a966655aa4f1c4fd0a3.html">bsdf</a></li><li class="navelem"><a class="el" href="_bsdf_oren_nayar_8h.html">BsdfOrenNayar.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

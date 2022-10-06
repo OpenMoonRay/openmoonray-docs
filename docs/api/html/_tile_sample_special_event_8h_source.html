@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_55a2e35f6359da48a03f898576e722e1.html">rndr</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_tile_sample_special_event_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">TileSampleSpecialEvent.h</div></div>
 </div><!--header-->
@@ -94,21 +110,21 @@ $(function() {
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a08e279fab182045e77c6ad6853afc185">   46</a></span>    <a class="code hl_function" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a08e279fab182045e77c6ad6853afc185">TileSampleSpecialEvent</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a09ed92cd4f01c9f3f8617ae03f9fc016">UIntTable</a> &amp;&amp;tileSampleIdTable,</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                           <a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#ae39312df0b149fd1eb646561c4d04449">SpecialEventCallBack</a> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a14522d6c771dfe9147268743c08e0b10">callBack</a>) :</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        mTileSampleIdTable(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(tileSampleIdTable)),</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        mCallBack(<a class="code hl_function" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a14522d6c771dfe9147268743c08e0b10">callBack</a>)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#aec8152416c1ece32f018e6d4add834f3">mTileSampleIdTable</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(tileSampleIdTable)),</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a3b566e28060d166b2b7ce0dc2eeb5122">mCallBack</a>(<a class="code hl_function" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a14522d6c771dfe9147268743c08e0b10">callBack</a>)</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    {}</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a3e43b900b5626c382a8ed71addf0b1d1">   52</a></span>    <span class="keyword">const</span> <a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a09ed92cd4f01c9f3f8617ae03f9fc016">UIntTable</a> &amp;<a class="code hl_function" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a3e43b900b5626c382a8ed71addf0b1d1">table</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> mTileSampleIdTable; }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a14522d6c771dfe9147268743c08e0b10">   53</a></span>    <span class="keyword">const</span> <a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#ae39312df0b149fd1eb646561c4d04449">SpecialEventCallBack</a> &amp;<a class="code hl_function" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a14522d6c771dfe9147268743c08e0b10">callBack</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> mCallBack; }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a3e43b900b5626c382a8ed71addf0b1d1">   52</a></span>    <span class="keyword">const</span> <a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a09ed92cd4f01c9f3f8617ae03f9fc016">UIntTable</a> &amp;<a class="code hl_function" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a3e43b900b5626c382a8ed71addf0b1d1">table</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#aec8152416c1ece32f018e6d4add834f3">mTileSampleIdTable</a>; }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a14522d6c771dfe9147268743c08e0b10">   53</a></span>    <span class="keyword">const</span> <a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#ae39312df0b149fd1eb646561c4d04449">SpecialEventCallBack</a> &amp;<a class="code hl_function" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a14522d6c771dfe9147268743c08e0b10">callBack</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a3b566e28060d166b2b7ce0dc2eeb5122">mCallBack</a>; }</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    std::string <a class="code hl_function" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a0b7615ad90ff002c08919fe47b33ba74">show</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// tile sampleId table. After this tile samples, execute mCallBack functions.</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a09ed92cd4f01c9f3f8617ae03f9fc016">UIntTable</a> mTileSampleIdTable;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#aec8152416c1ece32f018e6d4add834f3">   59</a></span>    <a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a09ed92cd4f01c9f3f8617ae03f9fc016">UIntTable</a> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#aec8152416c1ece32f018e6d4add834f3">mTileSampleIdTable</a>;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// Callback function to execute every tile sampleId which defined by mTileSampleIdTable.</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#ae39312df0b149fd1eb646561c4d04449">SpecialEventCallBack</a> mCallBack;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a3b566e28060d166b2b7ce0dc2eeb5122">   62</a></span>    <a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#ae39312df0b149fd1eb646561c4d04449">SpecialEventCallBack</a> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a3b566e28060d166b2b7ce0dc2eeb5122">mCallBack</a>;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>} <span class="comment">// namespace rndr</span></div>
@@ -122,14 +138,20 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_tile_sample_special_event_html_a09ed92cd4f01c9f3f8617ae03f9fc016"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a09ed92cd4f01c9f3f8617ae03f9fc016">moonray::rndr::TileSampleSpecialEvent::UIntTable</a></div><div class="ttdeci">std::vector&lt; unsigned &gt; UIntTable</div><div class="ttdef"><b>Definition:</b> <a href="_tile_sample_special_event_8h_source.html#l00043">TileSampleSpecialEvent.h:43</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_tile_sample_special_event_html_a0b7615ad90ff002c08919fe47b33ba74"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a0b7615ad90ff002c08919fe47b33ba74">moonray::rndr::TileSampleSpecialEvent::show</a></div><div class="ttdeci">std::string show() const</div><div class="ttdef"><b>Definition:</b> <a href="_tile_sample_special_event_8cc_source.html#l00017">TileSampleSpecialEvent.cc:17</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_tile_sample_special_event_html_a14522d6c771dfe9147268743c08e0b10"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a14522d6c771dfe9147268743c08e0b10">moonray::rndr::TileSampleSpecialEvent::callBack</a></div><div class="ttdeci">const SpecialEventCallBack &amp; callBack() const</div><div class="ttdef"><b>Definition:</b> <a href="_tile_sample_special_event_8h_source.html#l00053">TileSampleSpecialEvent.h:53</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_tile_sample_special_event_html_a3b566e28060d166b2b7ce0dc2eeb5122"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a3b566e28060d166b2b7ce0dc2eeb5122">moonray::rndr::TileSampleSpecialEvent::mCallBack</a></div><div class="ttdeci">SpecialEventCallBack mCallBack</div><div class="ttdef"><b>Definition:</b> <a href="_tile_sample_special_event_8h_source.html#l00062">TileSampleSpecialEvent.h:62</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_tile_sample_special_event_html_a3e43b900b5626c382a8ed71addf0b1d1"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#a3e43b900b5626c382a8ed71addf0b1d1">moonray::rndr::TileSampleSpecialEvent::table</a></div><div class="ttdeci">const UIntTable &amp; table() const</div><div class="ttdef"><b>Definition:</b> <a href="_tile_sample_special_event_8h_source.html#l00052">TileSampleSpecialEvent.h:52</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_tile_sample_special_event_html_ae39312df0b149fd1eb646561c4d04449"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#ae39312df0b149fd1eb646561c4d04449">moonray::rndr::TileSampleSpecialEvent::SpecialEventCallBack</a></div><div class="ttdeci">std::function&lt; bool(const unsigned sampleId)&gt; SpecialEventCallBack</div><div class="ttdef"><b>Definition:</b> <a href="_tile_sample_special_event_8h_source.html#l00044">TileSampleSpecialEvent.h:44</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_tile_sample_special_event_html_aec8152416c1ece32f018e6d4add834f3"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_tile_sample_special_event.html#aec8152416c1ece32f018e6d4add834f3">moonray::rndr::TileSampleSpecialEvent::mTileSampleIdTable</a></div><div class="ttdeci">UIntTable mTileSampleIdTable</div><div class="ttdef"><b>Definition:</b> <a href="_tile_sample_special_event_8h_source.html#l00059">TileSampleSpecialEvent.h:59</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00583">NPoint.h:583</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_c8c2fc2658195a2d790ef72565bd36e7.html">rndr</a></li><li class="navelem"><a class="el" href="_tile_sample_special_event_8h.html">TileSampleSpecialEvent.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

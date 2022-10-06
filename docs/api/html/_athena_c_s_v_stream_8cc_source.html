@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_55a2e35f6359da48a03f898576e722e1.html">rndr</a></li><li class="navelem"><a class="el" href="dir_2f3a487eadd6eadf22994f4998d16eca.html">statistics</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_athena_c_s_v_stream_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">AthenaCSVStream.cc</div></div>
 </div><!--header-->
@@ -68,10 +84,10 @@ $(function() {
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;sys/socket.h&gt;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;unistd.h&gt;</span> <span class="comment">//gethostname</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> LOG_USER = 1;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> LOG_INFO = 6;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> SYSLOG_PRIO = (LOG_USER &lt;&lt; 3) | LOG_INFO;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03.html">   22</a></span><span class="keyword">namespace </span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03.html#a05e448480438c71d27e77cf10a7ed7c7">   23</a></span><span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="namespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03.html#a05e448480438c71d27e77cf10a7ed7c7">LOG_USER</a> = 1;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03.html#a0ee5b066ec53d051f6c0fe57afde4b5f">   24</a></span><span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="namespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03.html#a0ee5b066ec53d051f6c0fe57afde4b5f">LOG_INFO</a> = 6;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03.html#a5fb6d32b1c4ab1aecf86cec6a4cf8214">   25</a></span><span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="namespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03.html#a5fb6d32b1c4ab1aecf86cec6a4cf8214">SYSLOG_PRIO</a> = (<a class="code hl_variable" href="namespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03.html#a05e448480438c71d27e77cf10a7ed7c7">LOG_USER</a> &lt;&lt; 3) | <a class="code hl_variable" href="namespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03.html#a0ee5b066ec53d051f6c0fe57afde4b5f">LOG_INFO</a>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemoonray.html">moonray</a> {</div>
@@ -85,7 +101,7 @@ $(function() {
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* dwaGacId = getenv(<span class="stringliteral">&quot;MNRY_GACID&quot;</span>);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">if</span> (dwaGacId != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        mDwaGacId = std::string(dwaGacId);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a4910f668a2d6f4f820d6248b15f7f585">mDwaGacId</a> = std::string(dwaGacId);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a7da95bd5dd7c4b5aeb06f38c8701b3fd">open</a>(debug);</div>
@@ -93,8 +109,8 @@ $(function() {
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a81acb6ff61f576b441cde22cf2ecaf05">   45</a></span><a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a81acb6ff61f576b441cde22cf2ecaf05">AthenaCSVStreamBuf::~AthenaCSVStreamBuf</a>()</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">if</span> (mOpened) {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        ::shutdown(mSocket, SHUT_RDWR);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a00976f0d96a33fac240cb754a5119411">mOpened</a>) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        ::shutdown(<a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#ab5b90dcce3bce99d5e46584ecfe120d3">mSocket</a>, SHUT_RDWR);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
@@ -106,9 +122,9 @@ $(function() {
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// e.g.: &quot;athena.moonray.stats&quot;</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">char</span>* athena_development = getenv(<span class="stringliteral">&quot;MNRY_ATHENA_STATS_DEV&quot;</span>);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">if</span> (debug || athena_development != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        mIdent = std::string(<span class="stringliteral">&quot;dev-athena.moonray_stats&quot;</span>);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#ac06daaecb553e8072efea687fbc947de">mIdent</a> = std::string(<span class="stringliteral">&quot;dev-athena.moonray_stats&quot;</span>);</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        mIdent = std::string(<span class="stringliteral">&quot;prod-athena.moonray_stats&quot;</span>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#ac06daaecb553e8072efea687fbc947de">mIdent</a> = std::string(<span class="stringliteral">&quot;prod-athena.moonray_stats&quot;</span>);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">const</span> <span class="keyword">auto</span> serviceEntry = ::getservbyname(<span class="stringliteral">&quot;syslog&quot;</span>, <span class="stringliteral">&quot;udp&quot;</span>);</div>
@@ -119,8 +135,8 @@ $(function() {
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    mSocket = ::socket(AF_INET, SOCK_DGRAM|SOCK_NONBLOCK, 0);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">if</span> (mSocket == -1) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#ab5b90dcce3bce99d5e46584ecfe120d3">mSocket</a> = ::socket(AF_INET, SOCK_DGRAM|SOCK_NONBLOCK, 0);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#ab5b90dcce3bce99d5e46584ecfe120d3">mSocket</a> == -1) {</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Failed to create socket due to: &quot;</span> &lt;&lt; <a class="code hl_function" href="namespacemoonray_1_1rndr.html#a9760c77475d484e483c7afa7a699dffc">rndr::getErrorDescription</a>() &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
@@ -129,31 +145,31 @@ $(function() {
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    addr.sin_addr.s_addr = ::inet_addr(<span class="stringliteral">&quot;127.0.0.1&quot;</span>);</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    addr.sin_family = AF_INET;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    addr.sin_port = htons(serviceEntry-&gt;s_port);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">if</span> (::connect(mSocket, (<span class="keyword">struct</span> sockaddr*)&amp;addr, <span class="keyword">sizeof</span>(addr)) == 0) {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        mOpened = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">if</span> (::connect(<a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#ab5b90dcce3bce99d5e46584ecfe120d3">mSocket</a>, (<span class="keyword">struct</span> sockaddr*)&amp;addr, <span class="keyword">sizeof</span>(addr)) == 0) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a00976f0d96a33fac240cb754a5119411">mOpened</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Failed to connect to socket due to: &quot;</span> &lt;&lt; <a class="code hl_function" href="namespacemoonray_1_1rndr.html#a9760c77475d484e483c7afa7a699dffc">rndr::getErrorDescription</a>() &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>std::streambuf::int_type </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>AthenaCSVStreamBuf::overflow(int_type ch)</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a17b4a7316df209bf2e1d106a25663957">   91</a></span><a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a17b4a7316df209bf2e1d106a25663957">AthenaCSVStreamBuf::overflow</a>(int_type ch)</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>{</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">if</span> (!traits_type::eq_int_type(ch, traits_type::eof())) {</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">if</span> (ch != traits_type::to_int_type(<span class="charliteral">&#39;\n&#39;</span>)) {</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            mStorage.push_back(traits_type::to_char_type(ch));</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a4b427bff45261e61d290abd09436ace6">mStorage</a>.push_back(traits_type::to_char_type(ch));</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keywordflow">if</span> (!mStorage.empty()) {</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                appendBuffer(mHostname.c_str(), mHostname.length());</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                appendBuffer(<span class="charliteral">&#39;,&#39;</span>);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                appendBuffer(mGUID.c_str(), mGUID.length());</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                appendBuffer(<span class="charliteral">&#39;,&#39;</span>);</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                appendTimestamp();</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                appendBuffer(<span class="charliteral">&#39;,&#39;</span>);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                appendBuffer(mStorage.data(), mStorage.size());</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                appendBuffer(<span class="charliteral">&#39;\0&#39;</span>);  <span class="comment">// string must be null terminated</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                flushBuffer();</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                mStorage.clear();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a4b427bff45261e61d290abd09436ace6">mStorage</a>.empty()) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                <a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#abd05f22aa92e0e028f75bfb7ed698ce6">appendBuffer</a>(<a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a142fd228f8c57620ef06417b05d7bd7c">mHostname</a>.c_str(), <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a142fd228f8c57620ef06417b05d7bd7c">mHostname</a>.length());</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                <a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#abd05f22aa92e0e028f75bfb7ed698ce6">appendBuffer</a>(<span class="charliteral">&#39;,&#39;</span>);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                <a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#abd05f22aa92e0e028f75bfb7ed698ce6">appendBuffer</a>(<a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#ac314f53e143e4e5742675250cd49513b">mGUID</a>.c_str(), <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#ac314f53e143e4e5742675250cd49513b">mGUID</a>.length());</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                <a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#abd05f22aa92e0e028f75bfb7ed698ce6">appendBuffer</a>(<span class="charliteral">&#39;,&#39;</span>);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                <a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a4d40f0e81180c1ecbeb35eefa35e8cf2">appendTimestamp</a>();</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                <a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#abd05f22aa92e0e028f75bfb7ed698ce6">appendBuffer</a>(<span class="charliteral">&#39;,&#39;</span>);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                <a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#abd05f22aa92e0e028f75bfb7ed698ce6">appendBuffer</a>(<a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a4b427bff45261e61d290abd09436ace6">mStorage</a>.data(), <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a4b427bff45261e61d290abd09436ace6">mStorage</a>.size());</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                <a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#abd05f22aa92e0e028f75bfb7ed698ce6">appendBuffer</a>(<span class="charliteral">&#39;\0&#39;</span>);  <span class="comment">// string must be null terminated</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                <a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#aaf33fd451af05f13f063486b69a3938b">flushBuffer</a>();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a4b427bff45261e61d290abd09436ace6">mStorage</a>.clear();</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            }</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        }</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="keywordflow">return</span> traits_type::not_eof(ch);</div>
@@ -162,14 +178,14 @@ $(function() {
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>std::chrono::milliseconds::rep </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>AthenaCSVStreamBuf::msSinceEpoch()</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#afbaa4618b95134f7a838b441af2b5d0a">  116</a></span><a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#afbaa4618b95134f7a838b441af2b5d0a">AthenaCSVStreamBuf::msSinceEpoch</a>()</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>{</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">const</span> <span class="keyword">auto</span> p = std::chrono::system_clock::now();</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordflow">return</span> std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(p.time_since_epoch()).count();</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>}</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>AthenaCSVStreamBuf::appendTimestamp()</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a4d40f0e81180c1ecbeb35eefa35e8cf2">  123</a></span><a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a4d40f0e81180c1ecbeb35eefa35e8cf2">AthenaCSVStreamBuf::appendTimestamp</a>()</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>{</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="comment">// digits10 is rounded down, because it represents the</span></div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="comment">// number of digits that can be stored without loss of</span></div>
@@ -179,17 +195,17 @@ $(function() {
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="comment">// Add one for terminator.</span></div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordtype">char</span> timestampString[digits + 1] = { 0 };</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keyword">const</span> <span class="keyword">auto</span> ms = msSinceEpoch();</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(MSType) == <span class="keyword">sizeof</span>(<span class="keywordtype">long</span>),</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keyword">const</span> <span class="keyword">auto</span> ms = <a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#afbaa4618b95134f7a838b441af2b5d0a">msSinceEpoch</a>();</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(<a class="code hl_typedef" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#adf3a4edf3737df3cd67c0fca53743a60">MSType</a>) == <span class="keyword">sizeof</span>(<span class="keywordtype">long</span>),</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                    <span class="stringliteral">&quot;We&#39;re using the long conversion for sprintf&quot;</span>);</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    std::snprintf(timestampString, digits + 1, <span class="stringliteral">&quot;%ld&quot;</span>, ms);</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    appendBuffer(timestampString, std::strlen(timestampString));</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#abd05f22aa92e0e028f75bfb7ed698ce6">appendBuffer</a>(timestampString, std::strlen(timestampString));</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>}</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>AthenaCSVStreamBuf::flushBuffer()</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#aaf33fd451af05f13f063486b69a3938b">  141</a></span><a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#aaf33fd451af05f13f063486b69a3938b">AthenaCSVStreamBuf::flushBuffer</a>()</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>{</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordflow">if</span> (mSyslogBuffer.size() &lt;= 0) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a6703f60232946a78c882dfbebc82adb5">mSyslogBuffer</a>.size() &lt;= 0) <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="comment">// TIMESTAMP</span></div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordtype">char</span> timestamp[256];</div>
@@ -203,22 +219,22 @@ $(function() {
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    std::ostringstream msg;</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    msg &lt;&lt; <span class="stringliteral">&quot;&lt;&quot;</span> &lt;&lt; SYSLOG_PRIO &lt;&lt; <span class="stringliteral">&quot;&gt; &quot;</span></div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        &lt;&lt; timestamp &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        &lt;&lt; mHostname &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        &lt;&lt; mIdent &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        &lt;&lt; mDwaGacId &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; mSyslogBuffer.data();</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a142fd228f8c57620ef06417b05d7bd7c">mHostname</a> &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#ac06daaecb553e8072efea687fbc947de">mIdent</a> &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a4910f668a2d6f4f820d6248b15f7f585">mDwaGacId</a> &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a6703f60232946a78c882dfbebc82adb5">mSyslogBuffer</a>.data();</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    std::string s = msg.str();</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordflow">if</span> (::send(mSocket, s.c_str(), s.size(), 0) == -1) {</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordflow">if</span> (::send(<a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#ab5b90dcce3bce99d5e46584ecfe120d3">mSocket</a>, s.c_str(), s.size(), 0) == -1) {</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Failed to send log message to Athena due to: &quot;</span></div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                  &lt;&lt; <a class="code hl_function" href="namespacemoonray_1_1rndr.html#a9760c77475d484e483c7afa7a699dffc">rndr::getErrorDescription</a>()</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                  &lt;&lt; <span class="stringliteral">&quot; : &quot;</span> &lt;&lt; s &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    }</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    mSyslogBuffer.clear();</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a6703f60232946a78c882dfbebc82adb5">mSyslogBuffer</a>.clear();</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>}</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>std::string </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>AthenaCSVStreamBuf::getLocalHostName()</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a5fc30c1f7656f6ff3d34e0ccf60e29c5">  172</a></span><a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a5fc30c1f7656f6ff3d34e0ccf60e29c5">AthenaCSVStreamBuf::getLocalHostName</a>()</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>{</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keywordtype">char</span> hostname[HOST_NAME_MAX];</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    gethostname(hostname, HOST_NAME_MAX);</div>
@@ -233,15 +249,37 @@ $(function() {
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="ttc" id="a_athena_c_s_v_stream_8h_html"><div class="ttname"><a href="_athena_c_s_v_stream_8h.html">AthenaCSVStream.h</a></div></div>
 <div class="ttc" id="a_error_8h_html"><div class="ttname"><a href="_error_8h.html">Error.h</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_a00976f0d96a33fac240cb754a5119411"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a00976f0d96a33fac240cb754a5119411">moonray::stats::AthenaCSVStreamBuf::mOpened</a></div><div class="ttdeci">bool mOpened</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8h_source.html#l00081">AthenaCSVStream.h:81</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_a142fd228f8c57620ef06417b05d7bd7c"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a142fd228f8c57620ef06417b05d7bd7c">moonray::stats::AthenaCSVStreamBuf::mHostname</a></div><div class="ttdeci">const std::string mHostname</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8h_source.html#l00070">AthenaCSVStream.h:70</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_a17b4a7316df209bf2e1d106a25663957"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a17b4a7316df209bf2e1d106a25663957">moonray::stats::AthenaCSVStreamBuf::overflow</a></div><div class="ttdeci">int_type overflow(int_type ch) override</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8cc_source.html#l00091">AthenaCSVStream.cc:91</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_a3cd66ed1b9127dfe2d8692b7a877f176"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a3cd66ed1b9127dfe2d8692b7a877f176">moonray::stats::AthenaCSVStreamBuf::AthenaCSVStreamBuf</a></div><div class="ttdeci">AthenaCSVStreamBuf()</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8h_source.html#l00030">AthenaCSVStream.h:30</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_a4910f668a2d6f4f820d6248b15f7f585"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a4910f668a2d6f4f820d6248b15f7f585">moonray::stats::AthenaCSVStreamBuf::mDwaGacId</a></div><div class="ttdeci">std::string mDwaGacId</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8h_source.html#l00077">AthenaCSVStream.h:77</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_a4b427bff45261e61d290abd09436ace6"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a4b427bff45261e61d290abd09436ace6">moonray::stats::AthenaCSVStreamBuf::mStorage</a></div><div class="ttdeci">std::vector&lt; char &gt; mStorage</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8h_source.html#l00071">AthenaCSVStream.h:71</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_a4d40f0e81180c1ecbeb35eefa35e8cf2"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a4d40f0e81180c1ecbeb35eefa35e8cf2">moonray::stats::AthenaCSVStreamBuf::appendTimestamp</a></div><div class="ttdeci">void appendTimestamp()</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8cc_source.html#l00123">AthenaCSVStream.cc:123</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_a5fc30c1f7656f6ff3d34e0ccf60e29c5"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a5fc30c1f7656f6ff3d34e0ccf60e29c5">moonray::stats::AthenaCSVStreamBuf::getLocalHostName</a></div><div class="ttdeci">static std::string getLocalHostName()</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8cc_source.html#l00172">AthenaCSVStream.cc:172</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_a6703f60232946a78c882dfbebc82adb5"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a6703f60232946a78c882dfbebc82adb5">moonray::stats::AthenaCSVStreamBuf::mSyslogBuffer</a></div><div class="ttdeci">std::vector&lt; char &gt; mSyslogBuffer</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8h_source.html#l00072">AthenaCSVStream.h:72</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_a7da95bd5dd7c4b5aeb06f38c8701b3fd"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a7da95bd5dd7c4b5aeb06f38c8701b3fd">moonray::stats::AthenaCSVStreamBuf::open</a></div><div class="ttdeci">void open(bool debug)</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8cc_source.html#l00053">AthenaCSVStream.cc:53</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_a81acb6ff61f576b441cde22cf2ecaf05"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a81acb6ff61f576b441cde22cf2ecaf05">moonray::stats::AthenaCSVStreamBuf::~AthenaCSVStreamBuf</a></div><div class="ttdeci">~AthenaCSVStreamBuf()</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8cc_source.html#l00045">AthenaCSVStream.cc:45</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_aaf33fd451af05f13f063486b69a3938b"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#aaf33fd451af05f13f063486b69a3938b">moonray::stats::AthenaCSVStreamBuf::flushBuffer</a></div><div class="ttdeci">void flushBuffer()</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8cc_source.html#l00141">AthenaCSVStream.cc:141</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_ab5b90dcce3bce99d5e46584ecfe120d3"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#ab5b90dcce3bce99d5e46584ecfe120d3">moonray::stats::AthenaCSVStreamBuf::mSocket</a></div><div class="ttdeci">int mSocket</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8h_source.html#l00079">AthenaCSVStream.h:79</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_abd05f22aa92e0e028f75bfb7ed698ce6"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#abd05f22aa92e0e028f75bfb7ed698ce6">moonray::stats::AthenaCSVStreamBuf::appendBuffer</a></div><div class="ttdeci">void appendBuffer(char c)</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8h_source.html#l00055">AthenaCSVStream.h:55</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_ac06daaecb553e8072efea687fbc947de"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#ac06daaecb553e8072efea687fbc947de">moonray::stats::AthenaCSVStreamBuf::mIdent</a></div><div class="ttdeci">std::string mIdent</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8h_source.html#l00080">AthenaCSVStream.h:80</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_ac314f53e143e4e5742675250cd49513b"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#ac314f53e143e4e5742675250cd49513b">moonray::stats::AthenaCSVStreamBuf::mGUID</a></div><div class="ttdeci">const std::string mGUID</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8h_source.html#l00069">AthenaCSVStream.h:69</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_adf3a4edf3737df3cd67c0fca53743a60"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#adf3a4edf3737df3cd67c0fca53743a60">moonray::stats::AthenaCSVStreamBuf::MSType</a></div><div class="ttdeci">std::chrono::milliseconds::rep MSType</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8h_source.html#l00050">AthenaCSVStream.h:50</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_afbaa4618b95134f7a838b441af2b5d0a"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#afbaa4618b95134f7a838b441af2b5d0a">moonray::stats::AthenaCSVStreamBuf::msSinceEpoch</a></div><div class="ttdeci">static MSType msSinceEpoch()</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8cc_source.html#l00116">AthenaCSVStream.cc:116</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03_html_a05e448480438c71d27e77cf10a7ed7c7"><div class="ttname"><a href="namespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03.html#a05e448480438c71d27e77cf10a7ed7c7">anonymous_namespace{AthenaCSVStream.cc}::LOG_USER</a></div><div class="ttdeci">constexpr unsigned int LOG_USER</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8cc_source.html#l00023">AthenaCSVStream.cc:23</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03_html_a0ee5b066ec53d051f6c0fe57afde4b5f"><div class="ttname"><a href="namespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03.html#a0ee5b066ec53d051f6c0fe57afde4b5f">anonymous_namespace{AthenaCSVStream.cc}::LOG_INFO</a></div><div class="ttdeci">constexpr unsigned int LOG_INFO</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8cc_source.html#l00024">AthenaCSVStream.cc:24</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03_html_a5fb6d32b1c4ab1aecf86cec6a4cf8214"><div class="ttname"><a href="namespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03.html#a5fb6d32b1c4ab1aecf86cec6a4cf8214">anonymous_namespace{AthenaCSVStream.cc}::SYSLOG_PRIO</a></div><div class="ttdeci">constexpr unsigned int SYSLOG_PRIO</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8cc_source.html#l00025">AthenaCSVStream.cc:25</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1rndr_html_a9760c77475d484e483c7afa7a699dffc"><div class="ttname"><a href="namespacemoonray_1_1rndr.html#a9760c77475d484e483c7afa7a699dffc">moonray::rndr::getErrorDescription</a></div><div class="ttdeci">const std::string getErrorDescription()</div><div class="ttdef"><b>Definition:</b> <a href="_error_8cc_source.html#l00023">Error.cc:23</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_c8c2fc2658195a2d790ef72565bd36e7.html">rndr</a></li><li class="navelem"><a class="el" href="dir_4f72e558adc302558d6707017e732d0d.html">statistics</a></li><li class="navelem"><a class="el" href="_athena_c_s_v_stream_8cc.html">AthenaCSVStream.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

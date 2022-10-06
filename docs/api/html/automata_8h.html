@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_deeec87419ea9eb9b92502c518cd46b4.html">lpe</a></li><li class="navelem"><a class="el" href="dir_6cc303e4507bd7b7f09f277bcb561ba4.html">osl</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('automata_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -237,7 +253,14 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="automata_8cc_source.html#l00290">290</a> of file <a class="el" href="automata_8cc_source.html">automata.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  291</span>{</div>
+<div class="line"><span class="lineno">  292</span>    out_key.clear(); <span class="comment">// just in case</span></div>
+<div class="line"><span class="lineno">  293</span>    <span class="keywordflow">for</span> (IntSet::const_iterator i = states.begin(); i != states.end(); ++i)</div>
+<div class="line"><span class="lineno">  294</span>        out_key.push_back(*i);</div>
+<div class="line"><span class="lineno">  295</span>    <span class="comment">// Sort the ids so we make sure the vector is unique for each set</span></div>
+<div class="line"><span class="lineno">  296</span>    std::sort(out_key.begin(), out_key.end());</div>
+<div class="line"><span class="lineno">  297</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae0caf296adae46ae583ac8d41638cf5f" name="ae0caf296adae46ae583ac8d41638cf5f"></a>
@@ -269,7 +292,68 @@ Variables</h2></td></tr>
 <p >This function is the most important pice of the whole process. It takes a non-deterministic finite automata and computes an equivalent deterministic one. It is equivalente in the sense that they both recognize the same language </p>
 
 <p class="definition">Definition at line <a class="el" href="automata_8cc_source.html#l00576">576</a> of file <a class="el" href="automata_8cc_source.html">automata.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  577</span>{</div>
+<div class="line"><span class="lineno">  578</span>    std::list&lt;StateSetRecord::Discovery&gt; toexplore, discovered;</div>
+<div class="line"><span class="lineno">  579</span>    <span class="comment">// our initial state is the lambda closure</span></div>
+<div class="line"><span class="lineno">  580</span>    <span class="comment">// of the initial state in the NDF automata</span></div>
+<div class="line"><span class="lineno">  581</span>    <a class="code hl_variable" href="automata_8h.html#ad0de3637cb166ba7aab42d3c100d5cad">IntSet</a> initial;</div>
+<div class="line"><span class="lineno">  582</span>    initial.insert(0);</div>
+<div class="line"><span class="lineno">  583</span>    ndfautomata.<a class="code hl_function" href="class_ndf_automata.html#a6a41da9c25f33934917325cf0ea9e0b2">lambdaClosure</a>(initial);</div>
+<div class="line"><span class="lineno">  584</span>    <a class="code hl_class" href="class_state_set_record.html">StateSetRecord</a> record(ndfautomata, dfautomata);</div>
+<div class="line"><span class="lineno">  585</span>    <span class="comment">// register the initial state</span></div>
+<div class="line"><span class="lineno">  586</span>    record.ensureState(initial, toexplore);</div>
+<div class="line"><span class="lineno">  587</span>    <span class="keywordflow">while</span> (toexplore.size()) {</div>
+<div class="line"><span class="lineno">  588</span>        <span class="comment">// new states that we may find when calculating transitions</span></div>
+<div class="line"><span class="lineno">  589</span>        <span class="comment">// make sure it is empty</span></div>
+<div class="line"><span class="lineno">  590</span>        discovered.clear();</div>
+<div class="line"><span class="lineno">  591</span>        <span class="keywordflow">for</span> (std::list&lt;StateSetRecord::Discovery&gt;::iterator i = toexplore.begin(); i != toexplore.end(); ++i) {</div>
+<div class="line"><span class="lineno">  592</span>            <span class="comment">// get the available symbols to move from this state</span></div>
+<div class="line"><span class="lineno">  593</span>            <span class="comment">// set (originalset) in the original automata. Plus</span></div>
+<div class="line"><span class="lineno">  594</span>            <span class="comment">// a wildcard movement that is guaranteed to match all</span></div>
+<div class="line"><span class="lineno">  595</span>            <span class="comment">// the wildcard transitions in the set (if any)</span></div>
+<div class="line"><span class="lineno">  596</span>            <a class="code hl_typedef" href="automata_8h.html#a9ec64fac8f9f3cd17ae3d70c7b3915d5">SymbolSet</a> symbols;</div>
+<div class="line"><span class="lineno">  597</span>            <a class="code hl_struct" href="struct_wildcard.html">Wildcard</a> *wildcard = NULL;</div>
+<div class="line"><span class="lineno">  598</span>            ndfautomata.<a class="code hl_function" href="class_ndf_automata.html#a3bb7c16b96974cc389f34b33f9482438">symbolsFrom</a>(i-&gt;second, symbols, wildcard);</div>
+<div class="line"><span class="lineno">  599</span>            <span class="keywordflow">for</span> (SymbolSet::iterator j = symbols.begin(); j != symbols.end(); ++j) {</div>
+<div class="line"><span class="lineno">  600</span>                <a class="code hl_variable" href="automata_8h.html#ad0de3637cb166ba7aab42d3c100d5cad">IntSet</a> newstates;</div>
+<div class="line"><span class="lineno">  601</span>                <span class="comment">// get all the states reachable with this symbol</span></div>
+<div class="line"><span class="lineno">  602</span>                ndfautomata.<a class="code hl_function" href="class_ndf_automata.html#ac1ccc7002daca351ed744aa9d548ea54">transitionsFrom</a>(i-&gt;second, *j, newstates);</div>
+<div class="line"><span class="lineno">  603</span>                <span class="comment">// build or recover the associated DF state</span></div>
+<div class="line"><span class="lineno">  604</span>                <a class="code hl_class" href="class_df_automata_1_1_state.html">DfAutomata::State</a> *next_state = record.ensureState(newstates, discovered);</div>
+<div class="line"><span class="lineno">  605</span>                <span class="comment">// and store a transition</span></div>
+<div class="line"><span class="lineno">  606</span>                i-&gt;first-&gt;<a class="code hl_function" href="class_df_automata_1_1_state.html#aafa6abe6bdc3a23f9fd81695b64eac35">addTransition</a>(*j, next_state);</div>
+<div class="line"><span class="lineno">  607</span>            }</div>
+<div class="line"><span class="lineno">  608</span>            <span class="keywordflow">if</span> (wildcard) {</div>
+<div class="line"><span class="lineno">  609</span>                <a class="code hl_variable" href="automata_8h.html#ad0de3637cb166ba7aab42d3c100d5cad">IntSet</a> newstates;</div>
+<div class="line"><span class="lineno">  610</span>                <span class="comment">// we know they all match whatever ours match</span></div>
+<div class="line"><span class="lineno">  611</span>                ndfautomata.<a class="code hl_function" href="class_ndf_automata.html#a00167c07d987acd1afec5a6c8b998360">wildcardTransitionsFrom</a>(i-&gt;second, newstates);</div>
+<div class="line"><span class="lineno">  612</span>                <span class="comment">// build or recover the associated DF state</span></div>
+<div class="line"><span class="lineno">  613</span>                <a class="code hl_class" href="class_df_automata_1_1_state.html">DfAutomata::State</a> *next_state = record.ensureState(newstates, discovered);</div>
+<div class="line"><span class="lineno">  614</span>                <span class="comment">// and store a transition</span></div>
+<div class="line"><span class="lineno">  615</span>                i-&gt;first-&gt;<a class="code hl_function" href="class_df_automata_1_1_state.html#ab77f6d86a27e0a5d899e7066899098db">addWildcardTransition</a>(wildcard, next_state);</div>
+<div class="line"><span class="lineno">  616</span>            }</div>
+<div class="line"><span class="lineno">  617</span>        }</div>
+<div class="line"><span class="lineno">  618</span>        <span class="comment">// swap toexplore and discovered</span></div>
+<div class="line"><span class="lineno">  619</span>        toexplore.swap(discovered);</div>
+<div class="line"><span class="lineno">  620</span>    }</div>
+<div class="line"><span class="lineno">  621</span>    <span class="comment">// final optimizations</span></div>
+<div class="line"><span class="lineno">  622</span>    dfautomata.<a class="code hl_function" href="class_df_automata.html#a2deb21a37bc707305df2183d1bb2308a">removeEquivalentStates</a>();</div>
+<div class="line"><span class="lineno">  623</span>    dfautomata.<a class="code hl_function" href="class_df_automata.html#a475db21190ef333abce7cc8ff2114421">removeUselessTransitions</a>();</div>
+<div class="line"><span class="lineno">  624</span>}</div>
+<div class="ttc" id="aautomata_8h_html_a9ec64fac8f9f3cd17ae3d70c7b3915d5"><div class="ttname"><a href="automata_8h.html#a9ec64fac8f9f3cd17ae3d70c7b3915d5">SymbolSet</a></div><div class="ttdeci">std::unordered_set&lt; ustring, ustringHash &gt; SymbolSet</div><div class="ttdef"><b>Definition:</b> <a href="automata_8h_source.html#l00057">automata.h:57</a></div></div>
+<div class="ttc" id="aautomata_8h_html_ad0de3637cb166ba7aab42d3c100d5cad"><div class="ttname"><a href="automata_8h.html#ad0de3637cb166ba7aab42d3c100d5cad">IntSet</a></div><div class="ttdeci">OSL_NAMESPACE_ENTER typedef std::set&lt; int &gt; IntSet</div><div class="ttdef"><b>Definition:</b> <a href="automata_8h_source.html#l00055">automata.h:55</a></div></div>
+<div class="ttc" id="aclass_df_automata_1_1_state_html"><div class="ttname"><a href="class_df_automata_1_1_state.html">DfAutomata::State</a></div><div class="ttdoc">Simple state for a deterministic automata.</div><div class="ttdef"><b>Definition:</b> <a href="automata_8h_source.html#l00225">automata.h:225</a></div></div>
+<div class="ttc" id="aclass_df_automata_1_1_state_html_aafa6abe6bdc3a23f9fd81695b64eac35"><div class="ttname"><a href="class_df_automata_1_1_state.html#aafa6abe6bdc3a23f9fd81695b64eac35">DfAutomata::State::addTransition</a></div><div class="ttdeci">void addTransition(ustring symbol, State *state)</div><div class="ttdef"><b>Definition:</b> <a href="automata_8cc_source.html#l00317">automata.cc:317</a></div></div>
+<div class="ttc" id="aclass_df_automata_1_1_state_html_ab77f6d86a27e0a5d899e7066899098db"><div class="ttname"><a href="class_df_automata_1_1_state.html#ab77f6d86a27e0a5d899e7066899098db">DfAutomata::State::addWildcardTransition</a></div><div class="ttdeci">void addWildcardTransition(Wildcard *wildcard, State *state)</div><div class="ttdef"><b>Definition:</b> <a href="automata_8cc_source.html#l00328">automata.cc:328</a></div></div>
+<div class="ttc" id="aclass_df_automata_html_a2deb21a37bc707305df2183d1bb2308a"><div class="ttname"><a href="class_df_automata.html#a2deb21a37bc707305df2183d1bb2308a">DfAutomata::removeEquivalentStates</a></div><div class="ttdeci">void removeEquivalentStates()</div><div class="ttdoc">Colapse all the equivalent states into single ones.</div><div class="ttdef"><b>Definition:</b> <a href="automata_8cc_source.html#l00462">automata.cc:462</a></div></div>
+<div class="ttc" id="aclass_df_automata_html_a475db21190ef333abce7cc8ff2114421"><div class="ttname"><a href="class_df_automata.html#a475db21190ef333abce7cc8ff2114421">DfAutomata::removeUselessTransitions</a></div><div class="ttdeci">void removeUselessTransitions()</div><div class="ttdef"><b>Definition:</b> <a href="automata_8cc_source.html#l00515">automata.cc:515</a></div></div>
+<div class="ttc" id="aclass_ndf_automata_html_a00167c07d987acd1afec5a6c8b998360"><div class="ttname"><a href="class_ndf_automata.html#a00167c07d987acd1afec5a6c8b998360">NdfAutomata::wildcardTransitionsFrom</a></div><div class="ttdeci">void wildcardTransitionsFrom(const IntSet &amp;states, IntSet &amp;out_states) const</div><div class="ttdoc">Get the set of states that are reachable from the given state set by lambda.</div><div class="ttdef"><b>Definition:</b> <a href="automata_8cc_source.html#l00213">automata.cc:213</a></div></div>
+<div class="ttc" id="aclass_ndf_automata_html_a3bb7c16b96974cc389f34b33f9482438"><div class="ttname"><a href="class_ndf_automata.html#a3bb7c16b96974cc389f34b33f9482438">NdfAutomata::symbolsFrom</a></div><div class="ttdeci">void symbolsFrom(const IntSet &amp;states, SymbolSet &amp;out_symbols, Wildcard *&amp;wildcard) const</div><div class="ttdef"><b>Definition:</b> <a href="automata_8cc_source.html#l00165">automata.cc:165</a></div></div>
+<div class="ttc" id="aclass_ndf_automata_html_a6a41da9c25f33934917325cf0ea9e0b2"><div class="ttname"><a href="class_ndf_automata.html#a6a41da9c25f33934917325cf0ea9e0b2">NdfAutomata::lambdaClosure</a></div><div class="ttdeci">void lambdaClosure(IntSet &amp;states) const</div><div class="ttdef"><b>Definition:</b> <a href="automata_8cc_source.html#l00226">automata.cc:226</a></div></div>
+<div class="ttc" id="aclass_ndf_automata_html_ac1ccc7002daca351ed744aa9d548ea54"><div class="ttname"><a href="class_ndf_automata.html#ac1ccc7002daca351ed744aa9d548ea54">NdfAutomata::transitionsFrom</a></div><div class="ttdeci">void transitionsFrom(const IntSet &amp;states, ustring symbol, IntSet &amp;out_states) const</div><div class="ttdoc">Get the set of states that are reachable from the given state set using the given symbol.</div><div class="ttdef"><b>Definition:</b> <a href="automata_8cc_source.html#l00201">automata.cc:201</a></div></div>
+<div class="ttc" id="aclass_state_set_record_html"><div class="ttname"><a href="class_state_set_record.html">StateSetRecord</a></div><div class="ttdef"><b>Definition:</b> <a href="automata_8h_source.html#l00308">automata.h:308</a></div></div>
+<div class="ttc" id="astruct_wildcard_html"><div class="ttname"><a href="struct_wildcard.html">Wildcard</a></div><div class="ttdef"><b>Definition:</b> <a href="automata_8h_source.html#l00078">automata.h:78</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -312,9 +396,13 @@ Variables</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_f5606880827968bf57135260db82a82e.html">lpe</a></li><li class="navelem"><a class="el" href="dir_6c52073d31cd8bdda894701b87673579.html">osl</a></li><li class="navelem"><a class="el" href="automata_8h.html">automata.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

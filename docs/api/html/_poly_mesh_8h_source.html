@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_02f99361fbe6a8c61cf6ccdd2c3bf288.html">geom</a></li><li class="navelem"><a class="el" href="dir_f871d1e4df57f93e703e4b9c83a931fa.html">prim</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_poly_mesh_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">PolyMesh.h</div></div>
 </div><!--header-->
@@ -50,7 +66,13 @@ $(function() {
 <a href="_poly_mesh_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2016-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file PolyMesh.h</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Shenyao Ke</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// @author Wayne Huang</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/// $Id$</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">///</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"></span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;<a class="code" href="_mesh_8h.html">rendering/geom/prim/Mesh.h</a>&gt;</span></div>
@@ -94,8 +116,9 @@ $(function() {
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html">   52</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html">PolyMesh</a> : <span class="keyword">public</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html">Mesh</a></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#a0766d2e32581e276c32d469021602fa5">   56</a></span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#a0766d2e32581e276c32d469021602fa5">PolyMesh</a>(<span class="keywordtype">size_t</span> estiFaceCount,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">    /// Constructor / Destructor</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#a0766d2e32581e276c32d469021602fa5">   56</a></span><span class="comment"></span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#a0766d2e32581e276c32d469021602fa5">PolyMesh</a>(<span class="keywordtype">size_t</span> estiFaceCount,</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ad7fc70b9afd6de570bcd1e3caebea90f">PolygonMesh::FaceVertexCount</a>&amp;&amp; faceVertexCount,</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_polygon_mesh.html#a639e8de2f60b7eb4faf7a0610b297eab">PolygonMesh::IndexBuffer</a>&amp;&amp; indices,</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <a class="code hl_class" href="classmoonray_1_1geom_1_1_vertex_buffer.html">PolygonMesh::VertexBuffer</a>&amp;&amp; vertices,</div>
@@ -199,8 +222,9 @@ $(function() {
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#a1f7e1493dc2498dab1a659b8a2cc0009">setupRecomputeVertexNormals</a>(<span class="keywordtype">bool</span> fixInvalid);</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#a61b51d31e4f184634cd209b9f5f41955">recomputeVertexNormals</a>();</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#ad0173d532b3d61d37a7354a5c2c5155a">  162</a></span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#ad0173d532b3d61d37a7354a5c2c5155a">PolyMesh</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html">PolyMesh</a> &amp;other) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment"></span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">    /// Copy is disabled</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#ad0173d532b3d61d37a7354a5c2c5155a">  162</a></span><span class="comment"></span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#ad0173d532b3d61d37a7354a5c2c5155a">PolyMesh</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html">PolyMesh</a> &amp;other) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#aba76a3c58e86687880fec452a91aae93">  164</a></span>    <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html">PolyMesh</a> &amp;<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#aba76a3c58e86687880fec452a91aae93">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html">PolyMesh</a> &amp;other) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
@@ -484,9 +508,13 @@ $(function() {
 <div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_poly_mesh_1_1_surface_sample_html_a39d5908084ce408d45b14d4bf9d7a2df"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_poly_mesh_1_1_surface_sample.html#a39d5908084ce408d45b14d4bf9d7a2df">moonray::geom::internal::PolyMesh::SurfaceSample::mFaceId</a></div><div class="ttdeci">int mFaceId</div><div class="ttdef"><b>Definition:</b> <a href="_poly_mesh_8h_source.html#l00193">PolyMesh.h:193</a></div></div>
 <div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_tessellation_params_html"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_tessellation_params.html">moonray::geom::internal::TessellationParams</a></div><div class="ttdoc">Tessellation parameters.</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8h_source.html#l00062">Primitive.h:62</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_0486ff0a15d68326ffdea20a24729a76.html">geom</a></li><li class="navelem"><a class="el" href="dir_5ea21d31850ee446955c5d9316b10017.html">prim</a></li><li class="navelem"><a class="el" href="_poly_mesh_8h.html">PolyMesh.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

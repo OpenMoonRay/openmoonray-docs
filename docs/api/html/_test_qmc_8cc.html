@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,28 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_28705856019153616deb2bfeeafe0625.html">unittest</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_test_qmc_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">TestQmc.cc File Reference</div></div>
 </div><!--header-->
@@ -66,15 +84,65 @@ $(function() {
 </div>
 <p><a href="_test_qmc_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_sample_point2_d.html">moonray::pbr::anonymous_namespace{TestQmc.cc}::SamplePoint2D</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_measure_star_discrepancy_split.html">moonray::pbr::anonymous_namespace{TestQmc.cc}::MeasureStarDiscrepancySplit</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_generator02.html">moonray::pbr::anonymous_namespace{TestQmc.cc}::Generator02</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_generator_halton.html">moonray::pbr::anonymous_namespace{TestQmc.cc}::GeneratorHalton</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_generator_permuted_halton.html">moonray::pbr::anonymous_namespace{TestQmc.cc}::GeneratorPermutedHalton</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemoonray_1_1pbr"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html">moonray::pbr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03.html">moonray::pbr::anonymous_namespace{TestQmc.cc}</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a631a785907da029c5f2e6830bdf80290"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; SamplePoint2D &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03.html#a631a785907da029c5f2e6830bdf80290">moonray::pbr::anonymous_namespace{TestQmc.cc}::PointContainer</a></td></tr>
+<tr class="separator:a631a785907da029c5f2e6830bdf80290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aba335126227456a87acc6099adcb71b7"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03.html#aba335126227456a87acc6099adcb71b7">moonray::pbr::anonymous_namespace{TestQmc.cc}::operator&lt;&lt;</a> (std::ostream &amp;outs, const SamplePoint2D &amp;p)</td></tr>
+<tr class="separator:aba335126227456a87acc6099adcb71b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a092240ac1f960b567621849ef5abbf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03.html#a7a092240ac1f960b567621849ef5abbf">moonray::pbr::anonymous_namespace{TestQmc.cc}::haltonLimit</a> (unsigned samples)</td></tr>
+<tr class="separator:a7a092240ac1f960b567621849ef5abbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1281ecf92d4db6ce0577e55bd5d2823f"><td class="memItemLeft" align="right" valign="top">SamplePoint2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03.html#a1281ecf92d4db6ce0577e55bd5d2823f">moonray::pbr::anonymous_namespace{TestQmc.cc}::generateRandomPoint</a> (util::Random &amp;rand)</td></tr>
+<tr class="separator:a1281ecf92d4db6ce0577e55bd5d2823f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91940a201990ee25113dcfe97090e7c4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03.html#a91940a201990ee25113dcfe97090e7c4">moonray::pbr::anonymous_namespace{TestQmc.cc}::measureStarDiscrepancy</a> (const SamplePoint2D &amp;measurePoint, const <a class="el" href="discrepancy_8cc.html#a73845c52820b806f986820e591a6613b">PointContainer</a> &amp;points)</td></tr>
+<tr class="separator:a91940a201990ee25113dcfe97090e7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68724edd162e2b18ea851f0c77178b8d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03.html#a68724edd162e2b18ea851f0c77178b8d">moonray::pbr::anonymous_namespace{TestQmc.cc}::measureStarDiscrepancy</a> (const <a class="el" href="discrepancy_8cc.html#a73845c52820b806f986820e591a6613b">PointContainer</a> &amp;points)</td></tr>
+<tr class="separator:a68724edd162e2b18ea851f0c77178b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af67b41a24402aee2b6bd370fcb922eca"><td class="memTemplParams" colspan="2">template&lt;typename Generator &gt; </td></tr>
+<tr class="memitem:af67b41a24402aee2b6bd370fcb922eca"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="discrepancy_8cc.html#a73845c52820b806f986820e591a6613b">PointContainer</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03.html#af67b41a24402aee2b6bd370fcb922eca">moonray::pbr::anonymous_namespace{TestQmc.cc}::generatePoints</a> (Generator generator, std::size_t numPoints)</td></tr>
+<tr class="separator:af67b41a24402aee2b6bd370fcb922eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36449a3b9412b8120afcaefc5d653ae1"><td class="memItemLeft" align="right" valign="top">fb_util::RunningStats&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03.html#a36449a3b9412b8120afcaefc5d653ae1">moonray::pbr::anonymous_namespace{TestQmc.cc}::measureRandomDiscrepancy</a> (unsigned nsamples)</td></tr>
+<tr class="separator:a36449a3b9412b8120afcaefc5d653ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f3ef81ea69d1ebd6367523f7347db33"><td class="memTemplParams" colspan="2">template&lt;typename Generator &gt; </td></tr>
+<tr class="memitem:a5f3ef81ea69d1ebd6367523f7347db33"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03.html#a5f3ef81ea69d1ebd6367523f7347db33">moonray::pbr::anonymous_namespace{TestQmc.cc}::testDiscrepancyLimit</a> ()</td></tr>
+<tr class="separator:a5f3ef81ea69d1ebd6367523f7347db33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded70712697e63c4a87f551c872313da"><td class="memTemplParams" colspan="2">template&lt;typename Generator &gt; </td></tr>
+<tr class="memitem:aded70712697e63c4a87f551c872313da"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03.html#aded70712697e63c4a87f551c872313da">moonray::pbr::anonymous_namespace{TestQmc.cc}::testScrambleDiscrepancy</a> ()</td></tr>
+<tr class="separator:aded70712697e63c4a87f551c872313da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56327d371ddf3f8f7a0661826ae53779"><td class="memTemplParams" colspan="2">template&lt;typename Generator &gt; </td></tr>
+<tr class="memitem:a56327d371ddf3f8f7a0661826ae53779"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03.html#a56327d371ddf3f8f7a0661826ae53779">moonray::pbr::anonymous_namespace{TestQmc.cc}::writePoints</a> (Generator generator, std::size_t numPoints, std::ostream &amp;outs)</td></tr>
+<tr class="separator:a56327d371ddf3f8f7a0661826ae53779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a30ef6b9b7f9b8531b9c0b46a2f8f23"><td class="memTemplParams" colspan="2">template&lt;typename Generator &gt; </td></tr>
+<tr class="memitem:a0a30ef6b9b7f9b8531b9c0b46a2f8f23"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03.html#a0a30ef6b9b7f9b8531b9c0b46a2f8f23">moonray::pbr::anonymous_namespace{TestQmc.cc}::writePoints</a> (Generator generator, std::size_t numPoints, const std::string &amp;filename)</td></tr>
+<tr class="separator:a0a30ef6b9b7f9b8531b9c0b46a2f8f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276045713838b50ae8a64fc38c93aa8c"><td class="memTemplParams" colspan="2">template&lt;typename Generator &gt; </td></tr>
+<tr class="memitem:a276045713838b50ae8a64fc38c93aa8c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03.html#a276045713838b50ae8a64fc38c93aa8c">moonray::pbr::anonymous_namespace{TestQmc.cc}::writePoints</a> (std::size_t numSets, std::size_t numPoints, const std::string &amp;basename)</td></tr>
+<tr class="separator:a276045713838b50ae8a64fc38c93aa8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14577049e46563acd5cc1076b67026b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_test_qmc_8cc.html#a14577049e46563acd5cc1076b67026b1">CPPUNIT_TEST_SUITE_REGISTRATION</a> (<a class="el" href="classmoonray_1_1pbr_1_1_test_qmc.html">moonray::pbr::TestQmc</a>)</td></tr>
 <tr class="separator:a14577049e46563acd5cc1076b67026b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -101,43 +169,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="ad0da36b2558901e21e7a30f6c227a45e" name="ad0da36b2558901e21e7a30f6c227a45e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0da36b2558901e21e7a30f6c227a45e">&#9670;&#160;</a></span>x</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float x</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_test_qmc_8cc_source.html#l00146">146</a> of file <a class="el" href="_test_qmc_8cc_source.html">TestQmc.cc</a>.</p>
-
-</div>
-</div>
-<a id="aa4f0d3eebc3c443f9be81bf48561a217" name="aa4f0d3eebc3c443f9be81bf48561a217"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4f0d3eebc3c443f9be81bf48561a217">&#9670;&#160;</a></span>y</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float y</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_test_qmc_8cc_source.html#l00147">147</a> of file <a class="el" href="_test_qmc_8cc_source.html">TestQmc.cc</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_e9cc9f5f9c03e3b4eff73c33091953ed.html">unittest</a></li><li class="navelem"><a class="el" href="_test_qmc_8cc.html">TestQmc.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

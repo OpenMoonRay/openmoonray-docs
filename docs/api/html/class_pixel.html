@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,6 +43,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_pixel.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -127,7 +147,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5592401330ab02d8a042de37df4e61c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a423289cefc35af7ac948e06778c23cbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pixel.html">Pixel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel.html#a423289cefc35af7ac948e06778c23cbf">operator-=</a> (T val)</td></tr>
 <tr class="separator:a423289cefc35af7ac948e06778c23cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64f494652192d5bf1ae1cda265d393fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel.html#a64f494652192d5bf1ae1cda265d393fa">print</a> (std::ostream &amp;, const char *prefix, int precision=6, const <a class="el" href="class_channel_set.html">ChannelSet</a> &amp;<a class="el" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>=Mask_All) const</td></tr>
+<tr class="memitem:a64f494652192d5bf1ae1cda265d393fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel.html#a64f494652192d5bf1ae1cda265d393fa">print</a> (std::ostream &amp;, const char *prefix, int precision=6, const <a class="el" href="class_channel_set.html">ChannelSet</a> &amp;<a class="el" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>=<a class="el" href="_dcx_channel_defs_8h.html#a269a975e8d0b4bcbeeb2d0270062c9c3">Mask_All</a>) const</td></tr>
 <tr class="separator:a64f494652192d5bf1ae1cda265d393fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -174,7 +194,8 @@ template&lt;class T &gt; </div>
 <p>rst:cpp:end:: </p>
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00253">253</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  253</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a36fe481f858b06b6a59c52ba25c1f411" name="a36fe481f858b06b6a59c52ba25c1f411"></a>
@@ -204,7 +225,10 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00255">255</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  255</span>: <a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>(<a class="code hl_function" href="class_pixel.html#a46b1196e90ff78880fc27d1f6db979a0">set</a>) {}</div>
+<div class="ttc" id="aclass_pixel_html_a46b1196e90ff78880fc27d1f6db979a0"><div class="ttname"><a href="class_pixel.html#a46b1196e90ff78880fc27d1f6db979a0">Pixel::set</a></div><div class="ttdeci">void set(T val)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_8h_source.html#l00309">DcxPixel.h:309</a></div></div>
+<div class="ttc" id="aclass_pixel_html_ab68976a3080476dd9698d865ea935b20"><div class="ttname"><a href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">Pixel::channels</a></div><div class="ttdeci">ChannelSet channels</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_8h_source.html#l00096">DcxPixel.h:96</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="affa1369a4190e82d8217c0dfb47f71e7" name="affa1369a4190e82d8217c0dfb47f71e7"></a>
@@ -244,7 +268,8 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00257">257</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  257</span>: <a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>(<a class="code hl_function" href="class_pixel.html#a46b1196e90ff78880fc27d1f6db979a0">set</a>) { this-&gt;<a class="code hl_function" href="class_pixel.html#a46b1196e90ff78880fc27d1f6db979a0">set</a>(val); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa0c24929cc65131418c563db3d317bb6" name="aa0c24929cc65131418c563db3d317bb6"></a>
@@ -274,7 +299,8 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00290">290</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  290</span>{ *<span class="keyword">this</span> = b; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -301,7 +327,9 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00297">297</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  297</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>; }</div>
+<div class="ttc" id="aclass_pixel_html_a6bb447a19ed57876a1c5f01f8e8f5e10"><div class="ttname"><a href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">Pixel::chan</a></div><div class="ttdeci">T chan[OPENDCX_INTERNAL_NAMESPACE::Chan_Max+1]</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_8h_source.html#l00097">DcxPixel.h:97</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8ef3b32cb42a68379e01d9a3f0232d85" name="a8ef3b32cb42a68379e01d9a3f0232d85"></a>
@@ -331,7 +359,9 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00323">323</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  323</span>{ <a class="code hl_function" href="class_pixel.html#a7bc6d2caad0529aa92f66da5188c36aa">replace</a>(b); }</div>
+<div class="ttc" id="aclass_pixel_html_a7bc6d2caad0529aa92f66da5188c36aa"><div class="ttname"><a href="class_pixel.html#a7bc6d2caad0529aa92f66da5188c36aa">Pixel::replace</a></div><div class="ttdeci">void replace(const Pixel &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_8h_source.html#l00279">DcxPixel.h:279</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3ae1c5ae53e4fc1a301db9379d9e5f2a" name="a3ae1c5ae53e4fc1a301db9379d9e5f2a"></a>
@@ -371,7 +401,8 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00321">321</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  321</span>{ <a class="code hl_function" href="class_pixel.html#a7bc6d2caad0529aa92f66da5188c36aa">replace</a>(b, <a class="code hl_function" href="class_pixel.html#a46b1196e90ff78880fc27d1f6db979a0">set</a>); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a385f656e26dca0209b27ca7c1b46155c" name="a385f656e26dca0209b27ca7c1b46155c"></a>
@@ -397,7 +428,8 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00259">259</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  259</span>{ memset(<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>, 0, <span class="keyword">sizeof</span>(T)*OPENDCX_INTERNAL_NAMESPACE::Chan_Max); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac541af2ca794b0cc8fad67a213b878f2" name="ac541af2ca794b0cc8fad67a213b878f2"></a>
@@ -427,7 +459,8 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00267">267</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  267</span>{ <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[channel] = 0; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa7476582a59b738a30264f1823c64d31" name="aa7476582a59b738a30264f1823c64d31"></a>
@@ -457,7 +490,12 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00261">261</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  262</span>{</div>
+<div class="line"><span class="lineno">  263</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_function" href="class_pixel.html#a46b1196e90ff78880fc27d1f6db979a0">set</a>)</div>
+<div class="line"><span class="lineno">  264</span>        <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] = 0;</div>
+<div class="line"><span class="lineno">  265</span>}</div>
+<div class="ttc" id="a_dcx_channel_set_8h_html_a1a8a3195f4006c505fa4bec8a1c60ae2"><div class="ttname"><a href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a></div><div class="ttdeci">#define foreach_channel(CHAN, CHANNELS)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00312">DcxChannelSet.h:312</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8f5a4f81b80ffd941580bbab995e6472" name="a8f5a4f81b80ffd941580bbab995e6472"></a>
@@ -487,7 +525,14 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00341">341</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  342</span>{</div>
+<div class="line"><span class="lineno">  343</span>    <a class="code hl_class" href="class_pixel.html">Pixel&lt;T&gt;</a> ret(<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>);</div>
+<div class="line"><span class="lineno">  344</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, b.<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  345</span>        ret.<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] = (<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] * b.<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z]);</div>
+<div class="line"><span class="lineno">  346</span>    return ret;</div>
+<div class="line"><span class="lineno">  347</span>}</div>
+<div class="ttc" id="aclass_pixel_html"><div class="ttname"><a href="class_pixel.html">Pixel</a></div><div class="ttdoc">rst:cpp:begin::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_8h_source.html#l00093">DcxPixel.h:94</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3d1d0dafd3b36a2e94905cd470727a6e" name="a3d1d0dafd3b36a2e94905cd470727a6e"></a>
@@ -517,7 +562,13 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00326">326</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  327</span>{</div>
+<div class="line"><span class="lineno">  328</span>    <a class="code hl_class" href="class_pixel.html">Pixel&lt;T&gt;</a> ret(<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>);</div>
+<div class="line"><span class="lineno">  329</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  330</span>        ret.chan[z] = <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] * val;</div>
+<div class="line"><span class="lineno">  331</span>    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><span class="lineno">  332</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6dc58261dc7550f73152f4aa58abfba6" name="a6dc58261dc7550f73152f4aa58abfba6"></a>
@@ -547,7 +598,12 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00349">349</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  350</span>{</div>
+<div class="line"><span class="lineno">  351</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, b.<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  352</span>        <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] *= b.<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z];</div>
+<div class="line"><span class="lineno">  353</span>    return *this;</div>
+<div class="line"><span class="lineno">  354</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1a0392f5f10fe7526cb873bbc26a1834" name="a1a0392f5f10fe7526cb873bbc26a1834"></a>
@@ -577,7 +633,12 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00334">334</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  335</span>{</div>
+<div class="line"><span class="lineno">  336</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  337</span>        <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] *= val;</div>
+<div class="line"><span class="lineno">  338</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  339</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a43fd5c97bec329679651ba9728040c0c" name="a43fd5c97bec329679651ba9728040c0c"></a>
@@ -607,7 +668,13 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00405">405</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  406</span>{</div>
+<div class="line"><span class="lineno">  407</span>    <a class="code hl_class" href="class_pixel.html">Pixel&lt;T&gt;</a>ret(<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>);</div>
+<div class="line"><span class="lineno">  408</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, b.<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  409</span>        ret.<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] = (<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] + b.<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z]);</div>
+<div class="line"><span class="lineno">  410</span>    return ret;</div>
+<div class="line"><span class="lineno">  411</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae33a524a362906ffa4e7b8d9a168a350" name="ae33a524a362906ffa4e7b8d9a168a350"></a>
@@ -637,7 +704,13 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00390">390</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  391</span>{</div>
+<div class="line"><span class="lineno">  392</span>    <a class="code hl_class" href="class_pixel.html">Pixel&lt;T&gt;</a>ret(<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>);</div>
+<div class="line"><span class="lineno">  393</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  394</span>        ret.chan[z] = (<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] + val);</div>
+<div class="line"><span class="lineno">  395</span>    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><span class="lineno">  396</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a71608da9e5297aae84ee1a955a54c148" name="a71608da9e5297aae84ee1a955a54c148"></a>
@@ -667,7 +740,12 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00413">413</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  414</span>{</div>
+<div class="line"><span class="lineno">  415</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, b.<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  416</span>        <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] += b.<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z];</div>
+<div class="line"><span class="lineno">  417</span>    return *this;</div>
+<div class="line"><span class="lineno">  418</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acfab3e763c1b8bb7b4b3c291f3bcce56" name="acfab3e763c1b8bb7b4b3c291f3bcce56"></a>
@@ -697,7 +775,12 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00398">398</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  399</span>{</div>
+<div class="line"><span class="lineno">  400</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  401</span>        <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] += val;</div>
+<div class="line"><span class="lineno">  402</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  403</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3bf32bf10e82a4f23d979df233722aae" name="a3bf32bf10e82a4f23d979df233722aae"></a>
@@ -727,7 +810,13 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00436">436</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  437</span>{</div>
+<div class="line"><span class="lineno">  438</span>    <a class="code hl_class" href="class_pixel.html">Pixel&lt;T&gt;</a> ret(<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>);</div>
+<div class="line"><span class="lineno">  439</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, b.<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  440</span>        ret.<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] = (<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] - b.<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z]);</div>
+<div class="line"><span class="lineno">  441</span>    return ret;</div>
+<div class="line"><span class="lineno">  442</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5592401330ab02d8a042de37df4e61c7" name="a5592401330ab02d8a042de37df4e61c7"></a>
@@ -757,7 +846,13 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00421">421</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  422</span>{</div>
+<div class="line"><span class="lineno">  423</span>    <a class="code hl_class" href="class_pixel.html">Pixel&lt;T&gt;</a> ret(<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>);</div>
+<div class="line"><span class="lineno">  424</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  425</span>        ret.chan[z] = (<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] - val);</div>
+<div class="line"><span class="lineno">  426</span>    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><span class="lineno">  427</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac2e21bbf55f7881e982f596511b3e82c" name="ac2e21bbf55f7881e982f596511b3e82c"></a>
@@ -787,7 +882,12 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00444">444</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  445</span>{</div>
+<div class="line"><span class="lineno">  446</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, b.<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  447</span>        <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] -= b.<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z];</div>
+<div class="line"><span class="lineno">  448</span>    return *this;</div>
+<div class="line"><span class="lineno">  449</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a423289cefc35af7ac948e06778c23cbf" name="a423289cefc35af7ac948e06778c23cbf"></a>
@@ -817,7 +917,12 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00429">429</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  430</span>{</div>
+<div class="line"><span class="lineno">  431</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  432</span>        <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] -= val;</div>
+<div class="line"><span class="lineno">  433</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  434</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6ac7ecf8e8d3d908fa9c4f4fd747b3db" name="a6ac7ecf8e8d3d908fa9c4f4fd747b3db"></a>
@@ -847,7 +952,13 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00374">374</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  375</span>{</div>
+<div class="line"><span class="lineno">  376</span>    <a class="code hl_class" href="class_pixel.html">Pixel&lt;T&gt;</a> ret(<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>);</div>
+<div class="line"><span class="lineno">  377</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, b.<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  378</span>        ret.<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] = (<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] / b.<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z]);</div>
+<div class="line"><span class="lineno">  379</span>    return ret;</div>
+<div class="line"><span class="lineno">  380</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1e029595a052be610e898b81a8e39d85" name="a1e029595a052be610e898b81a8e39d85"></a>
@@ -877,7 +988,14 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00357">357</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  358</span>{</div>
+<div class="line"><span class="lineno">  359</span>    <span class="keyword">const</span> T ival = (T)1 / val;</div>
+<div class="line"><span class="lineno">  360</span>    <a class="code hl_class" href="class_pixel.html">Pixel&lt;T&gt;</a> ret(<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>);</div>
+<div class="line"><span class="lineno">  361</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  362</span>        ret.chan[z] = <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z]*ival;</div>
+<div class="line"><span class="lineno">  363</span>    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><span class="lineno">  364</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad5e9c936f02b579cb3a236af5b27b840" name="ad5e9c936f02b579cb3a236af5b27b840"></a>
@@ -907,7 +1025,12 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00382">382</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  383</span>{</div>
+<div class="line"><span class="lineno">  384</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, b.<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  385</span>        <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] /= b.<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z];</div>
+<div class="line"><span class="lineno">  386</span>    return *this;</div>
+<div class="line"><span class="lineno">  387</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ade9a6eedd3fdb85723a92815ba683b9d" name="ade9a6eedd3fdb85723a92815ba683b9d"></a>
@@ -937,7 +1060,13 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00366">366</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  367</span>{</div>
+<div class="line"><span class="lineno">  368</span>    <span class="keyword">const</span> T ival = (T)1 / val;</div>
+<div class="line"><span class="lineno">  369</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  370</span>        <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] *= ival;</div>
+<div class="line"><span class="lineno">  371</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  372</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1dfdece7d5afa3c243970825a200e6f3" name="a1dfdece7d5afa3c243970825a200e6f3"></a>
@@ -967,7 +1096,15 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00281">281</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  281</span>                                                        {</div>
+<div class="line"><span class="lineno">  282</span>    <span class="keywordflow">if</span> (&amp;b != <span class="keyword">this</span>)</div>
+<div class="line"><span class="lineno">  283</span>    {</div>
+<div class="line"><span class="lineno">  284</span>        <a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a> = b.<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>;</div>
+<div class="line"><span class="lineno">  285</span>        memcpy(<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>, b.<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>, <span class="keyword">sizeof</span>(T)*OPENDCX_INTERNAL_NAMESPACE::Chan_Max);</div>
+<div class="line"><span class="lineno">  286</span>    }</div>
+<div class="line"><span class="lineno">  287</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  288</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5e3b52bbd37549c97db5ae970bce1d7f" name="a5e3b52bbd37549c97db5ae970bce1d7f"></a>
@@ -997,7 +1134,12 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00300">300</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  301</span>{</div>
+<div class="line"><span class="lineno">  302</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  303</span>        <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] = val;</div>
+<div class="line"><span class="lineno">  304</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  305</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9d75849a20b5de9a13b63d930039c11e" name="a9d75849a20b5de9a13b63d930039c11e"></a>
@@ -1027,7 +1169,8 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00293">293</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  293</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[channel]; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af049094f00f317d8d1ab0e5738019578" name="af049094f00f317d8d1ab0e5738019578"></a>
@@ -1057,7 +1200,8 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00295">295</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  295</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[channel]; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a64f494652192d5bf1ae1cda265d393fa" name="a64f494652192d5bf1ae1cda265d393fa"></a>
@@ -1093,7 +1237,7 @@ template&lt;class T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="class_channel_set.html">ChannelSet</a> &amp;&#160;</td>
-          <td class="paramname"><em>channels</em> = <code>Mask_All</code>&#160;</td>
+          <td class="paramname"><em>channels</em> = <code><a class="el" href="_dcx_channel_defs_8h.html#a269a975e8d0b4bcbeeb2d0270062c9c3">Mask_All</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1109,7 +1253,24 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00452">452</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  453</span>{</div>
+<div class="line"><span class="lineno">  454</span>    os &lt;&lt; prefix &lt;&lt; <span class="stringliteral">&quot;[&quot;</span>;</div>
+<div class="line"><span class="lineno">  455</span>    <span class="keyword">const</span> std::streamsize sprec = std::cout.precision();</div>
+<div class="line"><span class="lineno">  456</span>    os.precision(precision);</div>
+<div class="line"><span class="lineno">  457</span>    <span class="keywordflow">if</span> (do_channels.all())</div>
+<div class="line"><span class="lineno">  458</span>    {</div>
+<div class="line"><span class="lineno">  459</span>        <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  460</span>            std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; z &lt;&lt; <span class="stringliteral">&quot;=&quot;</span> &lt;&lt; std::fixed &lt;&lt; <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z];</div>
+<div class="line"><span class="lineno">  461</span>    }</div>
+<div class="line"><span class="lineno">  462</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  463</span>    {</div>
+<div class="line"><span class="lineno">  464</span>        <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, do_channels)</div>
+<div class="line"><span class="lineno">  465</span>            std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; z &lt;&lt; <span class="stringliteral">&quot;=&quot;</span> &lt;&lt; std::fixed &lt;&lt; <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z];</div>
+<div class="line"><span class="lineno">  466</span>    }</div>
+<div class="line"><span class="lineno">  467</span>    os &lt;&lt; <span class="stringliteral">&quot; ]&quot;</span>;</div>
+<div class="line"><span class="lineno">  468</span>    std::cout.precision(sprec);</div>
+<div class="line"><span class="lineno">  469</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7bc6d2caad0529aa92f66da5188c36aa" name="a7bc6d2caad0529aa92f66da5188c36aa"></a>
@@ -1139,7 +1300,8 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00279">279</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  279</span>{ <a class="code hl_function" href="class_pixel.html#a7bc6d2caad0529aa92f66da5188c36aa">replace</a>(b, b.<a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a39ca2b9a959f7cff21a7137ab0962b34" name="a39ca2b9a959f7cff21a7137ab0962b34"></a>
@@ -1179,7 +1341,14 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00270">270</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  271</span>{</div>
+<div class="line"><span class="lineno">  272</span>    <span class="keywordflow">if</span> (&amp;b != <span class="keyword">this</span>)</div>
+<div class="line"><span class="lineno">  273</span>    {</div>
+<div class="line"><span class="lineno">  274</span>        <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_function" href="class_pixel.html#a46b1196e90ff78880fc27d1f6db979a0">set</a>)</div>
+<div class="line"><span class="lineno">  275</span>            <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] = b.<a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z];</div>
+<div class="line"><span class="lineno">  276</span>    }</div>
+<div class="line"><span class="lineno">  277</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a25a4fbccd28c9b02a5275e22964ab6ed" name="a25a4fbccd28c9b02a5275e22964ab6ed"></a>
@@ -1219,7 +1388,8 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00307">307</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  307</span>{ <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[channel] = val; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a201a70276d8f5a716f12f495dbc458de" name="a201a70276d8f5a716f12f495dbc458de"></a>
@@ -1259,7 +1429,11 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00315">315</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  316</span>{</div>
+<div class="line"><span class="lineno">  317</span>    <a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a> = _set;</div>
+<div class="line"><span class="lineno">  318</span>    this-&gt;<a class="code hl_function" href="class_pixel.html#a46b1196e90ff78880fc27d1f6db979a0">set</a>(val);</div>
+<div class="line"><span class="lineno">  319</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a46b1196e90ff78880fc27d1f6db979a0" name="a46b1196e90ff78880fc27d1f6db979a0"></a>
@@ -1289,7 +1463,11 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_8h_source.html#l00309">309</a> of file <a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  310</span>{</div>
+<div class="line"><span class="lineno">  311</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_variable" href="class_pixel.html#ab68976a3080476dd9698d865ea935b20">channels</a>)</div>
+<div class="line"><span class="lineno">  312</span>        <a class="code hl_variable" href="class_pixel.html#a6bb447a19ed57876a1c5f01f8e8f5e10">chan</a>[z] = val;</div>
+<div class="line"><span class="lineno">  313</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
@@ -1374,9 +1552,13 @@ template&lt;class T &gt; </div>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/deepfile/<a class="el" href="_dcx_pixel_8h_source.html">DcxPixel.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_pixel.html">Pixel</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

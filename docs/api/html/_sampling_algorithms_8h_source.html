@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_3e13f994d4a23b701716ea18181644f4.html">sampler</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_sampling_algorithms_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">SamplingAlgorithms.h</div></div>
 </div><!--header-->
@@ -295,7 +311,7 @@ $(function() {
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>}</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="preprocessor">#if defined(USE_PARTITIONED_PIXEL_FOR_LENS)</span></div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>finline <span class="keywordtype">void</span> partitionedPixelLens(<a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> pixelWideScramble, <span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, <span class="keywordtype">int</span> <span class="comment">/*t*/</span>, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> n, <span class="keywordtype">float</span>* valsx, <span class="keywordtype">float</span>* valsy)</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>finline <span class="keywordtype">void</span> partitionedPixelLens(<a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> pixelWideScramble, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> <span class="comment">/*t*/</span>, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> n, <span class="keywordtype">float</span>* valsx, <span class="keywordtype">float</span>* valsy)</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>{</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> maxSamples = kPixelPartition.numPixelSamples();</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> i = 0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">kSIMDSize</a>; ++i) {</div>
@@ -306,7 +322,7 @@ $(function() {
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>            valsx[i] = result[0];</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>            valsy[i] = result[1];</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a> = kPixelPartition(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, n + i);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a> = kPixelPartition(x, y, n + i);</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            valsx[i] = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aeef063f281bb548dd9a0fd394fd70456">getPrimaryValue0</a>(<a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>);</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>            valsy[i] = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ae26afac02c5157c16abe1675fdbce6be">getPrimaryValue1</a>(<a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>);</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        }</div>
@@ -327,12 +343,12 @@ $(function() {
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>}</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="preprocessor">#if defined(USE_PARTITIONED_LENS)</span></div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>finline <span class="keywordtype">void</span> partitionedLens(<a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> pixelWideScramble, <span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, <span class="keywordtype">int</span> <span class="comment">/*t*/</span>, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> n, <span class="keywordtype">float</span>* valsu, <span class="keywordtype">float</span>* valsv)</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>finline <span class="keywordtype">void</span> partitionedLens(<a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> pixelWideScramble, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> <span class="comment">/*t*/</span>, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> n, <span class="keywordtype">float</span>* valsu, <span class="keywordtype">float</span>* valsv)</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>{</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> i = 0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">kSIMDSize</a>; ++i) {</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> offsetIndex = n + i;</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        <span class="keywordflow">if</span> (offsetIndex &lt; LensPartition::kSamplesPerSet) {</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            <span class="keyword">auto</span> <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a> = kLensPartition(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, n + i);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            <span class="keyword">auto</span> <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a> = kLensPartition(x, y, n + i);</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            valsu[i] = <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.u;</div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            valsv[i] = <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.v;</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        } <span class="keywordflow">else</span> {</div>
@@ -354,12 +370,12 @@ $(function() {
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span><span class="preprocessor">#if defined(USE_PARTITIONED_TIME)</span></div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>finline <span class="keywordtype">void</span> partitionedTime(<a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> pixelWideScramble, <span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, <span class="keywordtype">int</span> <span class="comment">/*t*/</span>, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> n, <span class="keywordtype">float</span>* valst)</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>finline <span class="keywordtype">void</span> partitionedTime(<a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> pixelWideScramble, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> <span class="comment">/*t*/</span>, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> n, <span class="keywordtype">float</span>* valst)</div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>{</div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> i = 0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">kSIMDSize</a>; ++i) {</div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> offsetIndex = n + i;</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        <span class="keywordflow">if</span> (offsetIndex &lt; TimePartition::kSamplesPerSet) {</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            valst[i] = kTimePartition(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, n + i);</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            valst[i] = kTimePartition(x, y, n + i);</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>            <a class="code hl_class" href="classmoonray_1_1util_1_1_stateless_random_engine.html">moonray::util::StatelessRandomEngine</a> <a class="code hl_typedef" href="discrepancy_8cc.html#a92ec10dc6f2c9ce9455cc217fe9895f4">reng</a>(pixelWideScramble * <a class="code hl_define" href="_sampling_algorithms_8h.html#a7db681fc318ccecc7d5eb2d2653b3bc7">oddCheck</a>(0x564e246d));</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>            <span class="keyword">const</span> <span class="keyword">auto</span> result = <a class="code hl_typedef" href="discrepancy_8cc.html#a92ec10dc6f2c9ce9455cc217fe9895f4">reng</a>.asFloat(n + i);</div>
@@ -369,15 +385,15 @@ $(function() {
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>}</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#adafcf6783c6338f518d2cd1227dc160d">  323</a></span>finline <span class="keywordtype">void</span> <a class="code hl_function" href="namespacemoonray_1_1pbr.html#adafcf6783c6338f518d2cd1227dc160d">polarToCartesian</a>(<span class="keywordtype">float</span> r, <span class="keywordtype">float</span> <a class="code hl_function" href="r__sequence_8h.html#a89be75bd940ac9e0d644d601b91e8f89">phi</a>, <span class="keywordtype">float</span>&amp; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <span class="keywordtype">float</span>&amp; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#adafcf6783c6338f518d2cd1227dc160d">  323</a></span>finline <span class="keywordtype">void</span> <a class="code hl_function" href="namespacemoonray_1_1pbr.html#adafcf6783c6338f518d2cd1227dc160d">polarToCartesian</a>(<span class="keywordtype">float</span> r, <span class="keywordtype">float</span> <a class="code hl_function" href="r__sequence_8h.html#a89be75bd940ac9e0d644d601b91e8f89">phi</a>, <span class="keywordtype">float</span>&amp; x, <span class="keywordtype">float</span>&amp; y)</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>{</div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keywordtype">float</span> cosPhi;</div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="keywordtype">float</span> sinPhi;</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    sincosf(<a class="code hl_function" href="r__sequence_8h.html#a89be75bd940ac9e0d644d601b91e8f89">phi</a>, &amp;sinPhi, &amp;cosPhi);</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = r * cosPhi;</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = r * sinPhi;</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    x = r * cosPhi;</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    y = r * sinPhi;</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>}</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#ad2d157870d98b8f7944ca4389f5b4f93">  334</a></span>finline <span class="keywordtype">void</span> <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad2d157870d98b8f7944ca4389f5b4f93">randomLens</a>(<a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> pixelWideScramble, <span class="keywordtype">int</span> <span class="comment">/*x*/</span>, <span class="keywordtype">int</span> <span class="comment">/*y*/</span>, <span class="keywordtype">int</span> <span class="comment">/*t*/</span>, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> n, <span class="keywordtype">float</span>* valsu, <span class="keywordtype">float</span>* valsv)</div>
@@ -400,7 +416,7 @@ $(function() {
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>}</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="preprocessor">#if defined(USE_PARTITIONED_PIXEL)</span></div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span><span class="keyword">inline</span> <span class="keywordtype">void</span> partitionedPixel(<a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> pixelWideScramble, <span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, <span class="keywordtype">int</span> <span class="comment">/*t*/</span>, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> n, <span class="keywordtype">float</span>* valsu, <span class="keywordtype">float</span>* valsv)</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span><span class="keyword">inline</span> <span class="keywordtype">void</span> partitionedPixel(<a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> pixelWideScramble, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> <span class="comment">/*t*/</span>, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> n, <span class="keywordtype">float</span>* valsu, <span class="keywordtype">float</span>* valsv)</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>{</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> maxSamples = kPixelPartition.numPixelSamples();</div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> i = 0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">kSIMDSize</a>; ++i) {</div>
@@ -411,7 +427,7 @@ $(function() {
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>            valsu[i] = result[0];</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>            valsv[i] = result[1];</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>            <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a> = kPixelPartition(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, sampleNum);</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>            <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a> = kPixelPartition(x, y, sampleNum);</div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>            valsu[i] = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aeef063f281bb548dd9a0fd394fd70456">getPrimaryValue0</a>(<a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>);</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>            valsv[i] = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ae26afac02c5157c16abe1675fdbce6be">getPrimaryValue1</a>(<a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>);</div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>        }</div>
@@ -436,7 +452,7 @@ $(function() {
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>}</div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span><span class="preprocessor">#if defined(USE_PARTITIONED_PIXEL_FOR_TIME)</span></div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>finline <span class="keywordtype">void</span> partitionedPixelTime(<a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> pixelWideScramble, <span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, <span class="keywordtype">int</span> <span class="comment">/*t*/</span>, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> n, <span class="keywordtype">float</span>* valst)</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>finline <span class="keywordtype">void</span> partitionedPixelTime(<a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> pixelWideScramble, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> <span class="comment">/*t*/</span>, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> n, <span class="keywordtype">float</span>* valst)</div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>{</div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> maxSamples = kPixelPartition.numPixelSamples();</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> i = 0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">kSIMDSize</a>; ++i) {</div>
@@ -446,7 +462,7 @@ $(function() {
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>            <span class="keyword">const</span> <span class="keyword">auto</span> result = <a class="code hl_typedef" href="discrepancy_8cc.html#a92ec10dc6f2c9ce9455cc217fe9895f4">reng</a>.asFloat(sampleNum);</div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>            valst[i] = result[0];</div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>            <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a> = kPixelPartition(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, n + i);</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>            <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a> = kPixelPartition(x, y, n + i);</div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>            valst[i] = <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.time;</div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>        }</div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    }</div>
@@ -467,8 +483,6 @@ $(function() {
 <div class="ttc" id="a_sampling_preprocess_8h_html"><div class="ttname"><a href="_sampling_preprocess_8h.html">SamplingPreprocess.h</a></div></div>
 <div class="ttc" id="a_sequence_i_d_8h_html"><div class="ttname"><a href="_sequence_i_d_8h.html">SequenceID.h</a></div></div>
 <div class="ttc" id="a_stateless_random_engine_8h_html"><div class="ttname"><a href="_stateless_random_engine_8h.html">StatelessRandomEngine.h</a></div></div>
-<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
-<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_sample_partition_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sample_partition.html">moonray::pbr::SamplePartition</a></div><div class="ttdoc">Partitions samples into 'sets' number of sets, each set having 'samplesPerSet' samples....</div><div class="ttdef"><b>Definition:</b> <a href="_sample_partition_8h_source.html#l00164">SamplePartition.h:165</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_sequence_i_d_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sequence_i_d.html">moonray::pbr::SequenceID</a></div><div class="ttdef"><b>Definition:</b> <a href="_sequence_i_d_8h_source.html#l00045">SequenceID.h:46</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_sequence_i_d_html_a5dfcd35e881d6c5f8ecba23564f42fd3"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sequence_i_d.html#a5dfcd35e881d6c5f8ecba23564f42fd3">moonray::pbr::SequenceID::getHash</a></div><div class="ttdeci">utype getHash(utype seed) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_sequence_i_d_8h_source.html#l00059">SequenceID.h:59</a></div></div>
@@ -498,9 +512,13 @@ $(function() {
 <div class="ttc" id="astructmoonray_1_1pbr_1_1detail_1_1_odd_int_html"><div class="ttname"><a href="structmoonray_1_1pbr_1_1detail_1_1_odd_int.html">moonray::pbr::detail::OddInt</a></div><div class="ttdef"><b>Definition:</b> <a href="_sampling_algorithms_8h_source.html#l00105">SamplingAlgorithms.h:106</a></div></div>
 <div class="ttc" id="astructmoonray_1_1pbr_1_1detail_1_1_odd_int_html_ae62708931327d0cad5130328dd4334c8"><div class="ttname"><a href="structmoonray_1_1pbr_1_1detail_1_1_odd_int.html#ae62708931327d0cad5130328dd4334c8">moonray::pbr::detail::OddInt::value</a></div><div class="ttdeci">static const IntType value</div><div class="ttdef"><b>Definition:</b> <a href="_sampling_algorithms_8h_source.html#l00110">SamplingAlgorithms.h:110</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_54974b8446c802289864b854fec9c5b9.html">sampler</a></li><li class="navelem"><a class="el" href="_sampling_algorithms_8h.html">SamplingAlgorithms.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

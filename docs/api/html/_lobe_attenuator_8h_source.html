@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_3ffafe8d4194a26e471fc283bfe39627.html">shading</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_lobe_attenuator_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">LobeAttenuator.h</div></div>
 </div><!--header-->
@@ -242,11 +258,11 @@ $(function() {
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="keyword">const</span> scene_rdl2::math::Color&amp; attenuationColor,</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            <a class="code hl_class" href="classmoonray_1_1shading_1_1_fresnel.html">Fresnel</a> * fresnel) :</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <a class="code hl_class" href="classmoonray_1_1shading_1_1_lobe_attenuator.html">LobeAttenuator</a>(N),</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        mEtaI(etaI),</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        mEtaT(etaT),</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        mRefracts(refracts),</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        mThickness(thickness),</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        mAttenuationColor(attenuationColor)</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#ad854168f131ca6e5648f4d4dcecd9248">mEtaI</a>(etaI),</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a16578f622f8e78d9478a1a55c1907ac3">mEtaT</a>(etaT),</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#ae3c824c69a8ae38ca63e8d0717a75884">mRefracts</a>(refracts),</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a883408bedc6eb2d189020653c4fb6dd9">mThickness</a>(thickness),</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a73be249a7d894da6004decfdbe26f183">mAttenuationColor</a>(attenuationColor)</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    {</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        <span class="keywordflow">if</span> (scene_rdl2::math::isZero(roughness)) {</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_lobe_attenuator.html#a94717c9db5bb31590d42c4ce28a4c9df">mOneMinusFresnel</a> = arena-&gt;allocWithArgs&lt;<a class="code hl_class" href="classmoonray_1_1shading_1_1_one_minus_fresnel.html">OneMinusFresnel</a>&gt;(fresnel);</div>
@@ -268,26 +284,26 @@ $(function() {
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">BsdfLobe</a>*</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a94fabd33122597f24d06cc3dea59642a">  220</a></span>    <a class="code hl_function" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a94fabd33122597f24d06cc3dea59642a">operator() </a>(scene_rdl2::alloc::Arena * arena, <a class="code hl_class" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">BsdfLobe</a>* lobe)<span class="keyword"> const override</span></div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        <span class="keywordflow">if</span> (mRefracts &amp;&amp; !scene_rdl2::math::isEqual(mEtaI, mEtaT)) {</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#ae3c824c69a8ae38ca63e8d0717a75884">mRefracts</a> &amp;&amp; !scene_rdl2::math::isEqual(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#ad854168f131ca6e5648f4d4dcecd9248">mEtaI</a>, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a16578f622f8e78d9478a1a55c1907ac3">mEtaT</a>)) {</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>            <span class="keyword">const</span> <span class="keywordtype">bool</span> isReflectionLobe = lobe-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a4d4c795c8449064d389fff4b7ec7ebc9">matchesFlag</a>(<a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896">BsdfLobe::REFLECTION</a>);</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            <span class="keywordflow">if</span> (isReflectionLobe) {</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                lobe = arena-&gt;allocWithArgs&lt;<a class="code hl_class" href="classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe.html">UnderClearcoatBsdfLobe</a>&gt;(</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                        lobe, arena, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_lobe_attenuator.html#a1e4723259c151a6f7454f865c2b8bbc4">mN</a>,</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                        mEtaI, mEtaT,</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                        mThickness, mAttenuationColor);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#ad854168f131ca6e5648f4d4dcecd9248">mEtaI</a>, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a16578f622f8e78d9478a1a55c1907ac3">mEtaT</a>,</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a883408bedc6eb2d189020653c4fb6dd9">mThickness</a>, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a73be249a7d894da6004decfdbe26f183">mAttenuationColor</a>);</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                <span class="comment">// we are wrapping a transmission lobe</span></div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                lobe = arena-&gt;allocWithArgs&lt;<a class="code hl_class" href="classmoonray_1_1shading_1_1_under_clearcoat_transmission_bsdf_lobe.html">UnderClearcoatTransmissionBsdfLobe</a>&gt;(</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                        lobe, arena, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_lobe_attenuator.html#a1e4723259c151a6f7454f865c2b8bbc4">mN</a>,</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                        mEtaI, mEtaT,</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                        mThickness, mAttenuationColor);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#ad854168f131ca6e5648f4d4dcecd9248">mEtaI</a>, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a16578f622f8e78d9478a1a55c1907ac3">mEtaT</a>,</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a883408bedc6eb2d189020653c4fb6dd9">mThickness</a>, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a73be249a7d894da6004decfdbe26f183">mAttenuationColor</a>);</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            }</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            <span class="comment">// no refraction</span></div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            lobe = arena-&gt;allocWithArgs&lt;<a class="code hl_class" href="classmoonray_1_1shading_1_1_under_bsdf_lobe.html">UnderBsdfLobe</a>&gt;(lobe,</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                                                       <a class="code hl_variable" href="classmoonray_1_1shading_1_1_lobe_attenuator.html#a1e4723259c151a6f7454f865c2b8bbc4">mN</a>,</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                                                       mThickness,</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                                                       mAttenuationColor);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                                                       <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a883408bedc6eb2d189020653c4fb6dd9">mThickness</a>,</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                                                       <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a73be249a7d894da6004decfdbe26f183">mAttenuationColor</a>);</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        }</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        lobe-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2f4df054f06bb26636fa3ec0f8019d2c">setFresnel</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_lobe_attenuator.html#a94717c9db5bb31590d42c4ce28a4c9df">mOneMinusFresnel</a>);</div>
@@ -299,11 +315,11 @@ $(function() {
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    <span class="comment">// with Subsurface - but for now we at least use standard attenuation</span></div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="keywordtype">float</span>                       mEtaI;</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <span class="keywordtype">float</span>                       mEtaT;</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="keywordtype">bool</span>                        mRefracts;</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    <span class="keywordtype">float</span>                       mThickness;</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    scene_rdl2::math::Color     mAttenuationColor;</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#ad854168f131ca6e5648f4d4dcecd9248">  253</a></span>    <span class="keywordtype">float</span>                       <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#ad854168f131ca6e5648f4d4dcecd9248">mEtaI</a>;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a16578f622f8e78d9478a1a55c1907ac3">  254</a></span>    <span class="keywordtype">float</span>                       <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a16578f622f8e78d9478a1a55c1907ac3">mEtaT</a>;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#ae3c824c69a8ae38ca63e8d0717a75884">  255</a></span>    <span class="keywordtype">bool</span>                        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#ae3c824c69a8ae38ca63e8d0717a75884">mRefracts</a>;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a883408bedc6eb2d189020653c4fb6dd9">  256</a></span>    <span class="keywordtype">float</span>                       <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a883408bedc6eb2d189020653c4fb6dd9">mThickness</a>;</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a73be249a7d894da6004decfdbe26f183">  257</a></span>    scene_rdl2::math::Color     <a class="code hl_variable" href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a73be249a7d894da6004decfdbe26f183">mAttenuationColor</a>;</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>};</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>} <span class="comment">// end namespace shading</span></div>
@@ -326,10 +342,15 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_bssrdf_html_a8d97d0323e12ec8d196dfc85e4a7345a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bssrdf.html#a8d97d0323e12ec8d196dfc85e4a7345a">moonray::shading::Bssrdf::getTransmissionFresnel</a></div><div class="ttdeci">finline Fresnel * getTransmissionFresnel() const</div><div class="ttdef"><b>Definition:</b> <a href="_bssrdf_8h_source.html#l00082">Bssrdf.h:82</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_clearcoat_attenuator_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html">moonray::shading::ClearcoatAttenuator</a></div><div class="ttdef"><b>Definition:</b> <a href="_lobe_attenuator_8h_source.html#l00182">LobeAttenuator.h:183</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_clearcoat_attenuator_html_a115802d146f688e1b4720ebf64ab2c25"><div class="ttname"><a href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a115802d146f688e1b4720ebf64ab2c25">moonray::shading::ClearcoatAttenuator::operator=</a></div><div class="ttdeci">ClearcoatAttenuator &amp; operator=(const ClearcoatAttenuator &amp;other)=delete</div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_clearcoat_attenuator_html_a16578f622f8e78d9478a1a55c1907ac3"><div class="ttname"><a href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a16578f622f8e78d9478a1a55c1907ac3">moonray::shading::ClearcoatAttenuator::mEtaT</a></div><div class="ttdeci">float mEtaT</div><div class="ttdef"><b>Definition:</b> <a href="_lobe_attenuator_8h_source.html#l00254">LobeAttenuator.h:254</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_clearcoat_attenuator_html_a6655c9896b56ac9c296a0b4497680e62"><div class="ttname"><a href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a6655c9896b56ac9c296a0b4497680e62">moonray::shading::ClearcoatAttenuator::~ClearcoatAttenuator</a></div><div class="ttdeci">~ClearcoatAttenuator() override</div><div class="ttdef"><b>Definition:</b> <a href="_lobe_attenuator_8h_source.html#l00213">LobeAttenuator.h:213</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_clearcoat_attenuator_html_a73be249a7d894da6004decfdbe26f183"><div class="ttname"><a href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a73be249a7d894da6004decfdbe26f183">moonray::shading::ClearcoatAttenuator::mAttenuationColor</a></div><div class="ttdeci">scene_rdl2::math::Color mAttenuationColor</div><div class="ttdef"><b>Definition:</b> <a href="_lobe_attenuator_8h_source.html#l00257">LobeAttenuator.h:257</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_clearcoat_attenuator_html_a883408bedc6eb2d189020653c4fb6dd9"><div class="ttname"><a href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a883408bedc6eb2d189020653c4fb6dd9">moonray::shading::ClearcoatAttenuator::mThickness</a></div><div class="ttdeci">float mThickness</div><div class="ttdef"><b>Definition:</b> <a href="_lobe_attenuator_8h_source.html#l00256">LobeAttenuator.h:256</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_clearcoat_attenuator_html_a94fabd33122597f24d06cc3dea59642a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#a94fabd33122597f24d06cc3dea59642a">moonray::shading::ClearcoatAttenuator::operator()</a></div><div class="ttdeci">BsdfLobe * operator()(scene_rdl2::alloc::Arena *arena, BsdfLobe *lobe) const override</div><div class="ttdef"><b>Definition:</b> <a href="_lobe_attenuator_8h_source.html#l00220">LobeAttenuator.h:220</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_clearcoat_attenuator_html_ab6bb26db72744251ee08057656801421"><div class="ttname"><a href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#ab6bb26db72744251ee08057656801421">moonray::shading::ClearcoatAttenuator::ClearcoatAttenuator</a></div><div class="ttdeci">ClearcoatAttenuator(const ClearcoatAttenuator &amp;other)=delete</div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_clearcoat_attenuator_html_ad1935b3f34b1cc402a37dcd8b3afefe3"><div class="ttname"><a href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#ad1935b3f34b1cc402a37dcd8b3afefe3">moonray::shading::ClearcoatAttenuator::ClearcoatAttenuator</a></div><div class="ttdeci">ClearcoatAttenuator(scene_rdl2::alloc::Arena *arena, const scene_rdl2::math::Vec3f &amp;N, float roughness, float etaI, float etaT, bool refracts, float thickness, const scene_rdl2::math::Color &amp;attenuationColor, Fresnel *fresnel)</div><div class="ttdef"><b>Definition:</b> <a href="_lobe_attenuator_8h_source.html#l00185">LobeAttenuator.h:185</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_clearcoat_attenuator_html_ad854168f131ca6e5648f4d4dcecd9248"><div class="ttname"><a href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#ad854168f131ca6e5648f4d4dcecd9248">moonray::shading::ClearcoatAttenuator::mEtaI</a></div><div class="ttdeci">float mEtaI</div><div class="ttdef"><b>Definition:</b> <a href="_lobe_attenuator_8h_source.html#l00253">LobeAttenuator.h:253</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_clearcoat_attenuator_html_ae3c824c69a8ae38ca63e8d0717a75884"><div class="ttname"><a href="classmoonray_1_1shading_1_1_clearcoat_attenuator.html#ae3c824c69a8ae38ca63e8d0717a75884">moonray::shading::ClearcoatAttenuator::mRefracts</a></div><div class="ttdeci">bool mRefracts</div><div class="ttdef"><b>Definition:</b> <a href="_lobe_attenuator_8h_source.html#l00255">LobeAttenuator.h:255</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_fresnel_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fresnel.html">moonray::shading::Fresnel</a></div><div class="ttdoc">Base class defining the Fresnel reflectance interface.</div><div class="ttdef"><b>Definition:</b> <a href="_fresnel_8h_source.html#l00055">Fresnel.h:56</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_fresnel_html_a5f7affd419b5e5aac6dcb40d74731195"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fresnel.html#a5f7affd419b5e5aac6dcb40d74731195">moonray::shading::Fresnel::setWeight</a></div><div class="ttdeci">void setWeight(float weight)</div><div class="ttdef"><b>Definition:</b> <a href="_fresnel_8h_source.html#l00090">Fresnel.h:90</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_attenuator_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_attenuator.html">moonray::shading::HairAttenuator</a></div><div class="ttdef"><b>Definition:</b> <a href="_lobe_attenuator_8h_source.html#l00122">LobeAttenuator.h:123</a></div></div>
@@ -372,9 +393,13 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_volume_subsurface_html_a6253026ea77eca165b3a20797137a1e6"><div class="ttname"><a href="classmoonray_1_1shading_1_1_volume_subsurface.html#a6253026ea77eca165b3a20797137a1e6">moonray::shading::VolumeSubsurface::getTransmissionFresnel</a></div><div class="ttdeci">const Fresnel * getTransmissionFresnel() const</div><div class="ttdef"><b>Definition:</b> <a href="_volume_subsurface_8h_source.html#l00096">VolumeSubsurface.h:96</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ffbcf3a8cac23adad179e74a09117904.html">shading</a></li><li class="navelem"><a class="el" href="_lobe_attenuator_8h.html">LobeAttenuator.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

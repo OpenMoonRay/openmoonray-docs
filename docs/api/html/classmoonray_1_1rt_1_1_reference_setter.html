@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rt.html">rt</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rt_1_1_reference_setter.html">ReferenceSetter</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1rt_1_1_reference_setter.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1rt_1_1_reference_setter-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::rt::ReferenceSetter Class Reference</div></div>
 </div><!--header-->
@@ -99,6 +116,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae49a53043cd626814eb10739bcdb5cea inherit pub_methods_classmoonray_1_1geom_1_1_primitive_visitor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafd38ee80e450de50af122252e7e82ef inherit pub_methods_classmoonray_1_1geom_1_1_primitive_visitor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html#aafd38ee80e450de50af122252e7e82ef">visitVdbVolume</a> (<a class="el" href="classmoonray_1_1geom_1_1_vdb_volume.html">VdbVolume</a> &amp;v)</td></tr>
 <tr class="separator:aafd38ee80e450de50af122252e7e82ef inherit pub_methods_classmoonray_1_1geom_1_1_primitive_visitor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a10424b6245a21369f57c0ecac8cadc3b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_reference_setter.html#a10424b6245a21369f57c0ecac8cadc3b">mVal</a></td></tr>
+<tr class="separator:a10424b6245a21369f57c0ecac8cadc3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae17830e6be2e8f77a55c0666e3bd2d5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_reference_setter.html#ae17830e6be2e8f77a55c0666e3bd2d5e">mIsReference</a></td></tr>
+<tr class="separator:ae17830e6be2e8f77a55c0666e3bd2d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -139,7 +163,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_geometry_manager_8cc_source.html#l00390">390</a> of file <a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  390</span>                                                          :</div>
+<div class="line"><span class="lineno">  391</span>        <a class="code hl_variable" href="classmoonray_1_1rt_1_1_reference_setter.html#a10424b6245a21369f57c0ecac8cadc3b">mVal</a>(val),</div>
+<div class="line"><span class="lineno">  392</span>        <a class="code hl_variable" href="classmoonray_1_1rt_1_1_reference_setter.html#ae17830e6be2e8f77a55c0666e3bd2d5e">mIsReference</a>(isReference)</div>
+<div class="line"><span class="lineno">  393</span>    {}</div>
+<div class="ttc" id="aclassmoonray_1_1rt_1_1_reference_setter_html_a10424b6245a21369f57c0ecac8cadc3b"><div class="ttname"><a href="classmoonray_1_1rt_1_1_reference_setter.html#a10424b6245a21369f57c0ecac8cadc3b">moonray::rt::ReferenceSetter::mVal</a></div><div class="ttdeci">float mVal</div><div class="ttdef"><b>Definition:</b> <a href="_geometry_manager_8cc_source.html#l00431">GeometryManager.cc:431</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rt_1_1_reference_setter_html_ae17830e6be2e8f77a55c0666e3bd2d5e"><div class="ttname"><a href="classmoonray_1_1rt_1_1_reference_setter.html#ae17830e6be2e8f77a55c0666e3bd2d5e">moonray::rt::ReferenceSetter::mIsReference</a></div><div class="ttdeci">bool mIsReference</div><div class="ttdef"><b>Definition:</b> <a href="_geometry_manager_8cc_source.html#l00432">GeometryManager.cc:432</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -171,7 +201,15 @@ Public Member Functions</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html#a193498a7add621a26d7f0851ef53a79b">moonray::geom::PrimitiveVisitor</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geometry_manager_8cc_source.html#l00405">405</a> of file <a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  406</span>    {</div>
+<div class="line"><span class="lineno">  407</span>        p.setAdaptiveError(<a class="code hl_variable" href="classmoonray_1_1rt_1_1_reference_setter.html#a10424b6245a21369f57c0ecac8cadc3b">mVal</a>);</div>
+<div class="line"><span class="lineno">  408</span> </div>
+<div class="line"><span class="lineno">  409</span>        geom::internal::Primitive* pImpl =</div>
+<div class="line"><span class="lineno">  410</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive_private_access.html#a4ab0b267f3e064b13740d98733ac9e70">geom::internal::PrimitivePrivateAccess::getPrimitiveImpl</a>(&amp;p);</div>
+<div class="line"><span class="lineno">  411</span>        pImpl-&gt;setIsReference(<a class="code hl_variable" href="classmoonray_1_1rt_1_1_reference_setter.html#ae17830e6be2e8f77a55c0666e3bd2d5e">mIsReference</a>);</div>
+<div class="line"><span class="lineno">  412</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_private_access_html_a4ab0b267f3e064b13740d98733ac9e70"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive_private_access.html#a4ab0b267f3e064b13740d98733ac9e70">moonray::geom::internal::PrimitivePrivateAccess::getPrimitiveImpl</a></div><div class="ttdeci">static Primitive * getPrimitiveImpl(geom::Primitive *handle)</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_private_access_8h_source.html#l00030">PrimitivePrivateAccess.h:30</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a47589e6cd53af13d036925fb9265bbf7" name="a47589e6cd53af13d036925fb9265bbf7"></a>
@@ -202,7 +240,10 @@ Public Member Functions</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html#a6880d77b6a0c232a60aa4c88b8debebb">moonray::geom::PrimitiveVisitor</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geometry_manager_8cc_source.html#l00395">395</a> of file <a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  396</span>    {</div>
+<div class="line"><span class="lineno">  397</span>        pg.forEachPrimitive(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  398</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa4a45fa5ba039ac74b41e7999e245a6e" name="aa4a45fa5ba039ac74b41e7999e245a6e"></a>
@@ -233,7 +274,14 @@ Public Member Functions</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html#a4d5a3715ae26d4393bfed69734d351b6">moonray::geom::PrimitiveVisitor</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geometry_manager_8cc_source.html#l00414">414</a> of file <a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  415</span>    {</div>
+<div class="line"><span class="lineno">  416</span>        s.setAdaptiveError(<a class="code hl_variable" href="classmoonray_1_1rt_1_1_reference_setter.html#a10424b6245a21369f57c0ecac8cadc3b">mVal</a>);</div>
+<div class="line"><span class="lineno">  417</span> </div>
+<div class="line"><span class="lineno">  418</span>        geom::internal::Primitive* pImpl =</div>
+<div class="line"><span class="lineno">  419</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive_private_access.html#a4ab0b267f3e064b13740d98733ac9e70">geom::internal::PrimitivePrivateAccess::getPrimitiveImpl</a>(&amp;s);</div>
+<div class="line"><span class="lineno">  420</span>        pImpl-&gt;setIsReference(<a class="code hl_variable" href="classmoonray_1_1rt_1_1_reference_setter.html#ae17830e6be2e8f77a55c0666e3bd2d5e">mIsReference</a>);</div>
+<div class="line"><span class="lineno">  421</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af87cac8362e4da838f5e4f1225010242" name="af87cac8362e4da838f5e4f1225010242"></a>
@@ -264,7 +312,10 @@ Public Member Functions</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html#ae49a53043cd626814eb10739bcdb5cea">moonray::geom::PrimitiveVisitor</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geometry_manager_8cc_source.html#l00400">400</a> of file <a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  401</span>    {</div>
+<div class="line"><span class="lineno">  402</span>        t.getPrimitive()-&gt;accept(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  403</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac155a33303df843fa7f1bba151d2ece2" name="ac155a33303df843fa7f1bba151d2ece2"></a>
@@ -295,6 +346,60 @@ Public Member Functions</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html#aafd38ee80e450de50af122252e7e82ef">moonray::geom::PrimitiveVisitor</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geometry_manager_8cc_source.html#l00423">423</a> of file <a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  424</span>    {</div>
+<div class="line"><span class="lineno">  425</span>        geom::internal::Primitive* pImpl =</div>
+<div class="line"><span class="lineno">  426</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive_private_access.html#a4ab0b267f3e064b13740d98733ac9e70">geom::internal::PrimitivePrivateAccess::getPrimitiveImpl</a>(&amp;g);</div>
+<div class="line"><span class="lineno">  427</span>        pImpl-&gt;setIsReference(<a class="code hl_variable" href="classmoonray_1_1rt_1_1_reference_setter.html#ae17830e6be2e8f77a55c0666e3bd2d5e">mIsReference</a>);</div>
+<div class="line"><span class="lineno">  428</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae17830e6be2e8f77a55c0666e3bd2d5e" name="ae17830e6be2e8f77a55c0666e3bd2d5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae17830e6be2e8f77a55c0666e3bd2d5e">&#9670;&#160;</a></span>mIsReference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::rt::ReferenceSetter::mIsReference</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_geometry_manager_8cc_source.html#l00432">432</a> of file <a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a>.</p>
+
+</div>
+</div>
+<a id="a10424b6245a21369f57c0ecac8cadc3b" name="a10424b6245a21369f57c0ecac8cadc3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10424b6245a21369f57c0ecac8cadc3b">&#9670;&#160;</a></span>mVal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::rt::ReferenceSetter::mVal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_geometry_manager_8cc_source.html#l00431">431</a> of file <a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a>.</p>
 
 </div>
 </div>
@@ -302,9 +407,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/rt/<a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rt.html">rt</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rt_1_1_reference_setter.html">ReferenceSetter</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

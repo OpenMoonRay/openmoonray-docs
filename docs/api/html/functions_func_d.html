@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,14 +43,31 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('functions_func_d.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="contents">
 &#160;
 
 <h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
-<li>data()&#160;:&#160;<a class="el" href="classmoonray_1_1geom_1_1_interleaved_traits.html#a770d1fc5e99264fa67bddf1511139090">moonray::geom::InterleavedTraits&lt; T, Allocator &gt;</a>, <a class="el" href="structmoonray_1_1pbr_1_1_s_i_m_d_float_array.html#a94547fc835bfd1db2bcf8fa028277cde">moonray::pbr::SIMDFloatArray</a>, <a class="el" href="classmoonray_1_1util_1_1_static_vector.html#ac393811fa0979d69bdea80e89dda6123">moonray::util::StaticVector&lt; T, N &gt;</a>, <a class="el" href="class_n_point.html#a55d5b0a780560c7a50b69ed2872f2798">NPoint&lt; D &gt;</a>, <a class="el" href="class_n_point_3_011_01_4.html#a086087d44768ce55afeec901aac7656a">NPoint&lt; 1 &gt;</a>, <a class="el" href="class_static_vector.html#ad6b6b4c4b2fdb3558bac7b6cb9daeca0">StaticVector&lt; T, N &gt;</a></li>
+<li>data()&#160;:&#160;<a class="el" href="classmoonray_1_1geom_1_1_interleaved_traits.html#a770d1fc5e99264fa67bddf1511139090">moonray::geom::InterleavedTraits&lt; T, Allocator &gt;</a>, <a class="el" href="structmoonray_1_1pbr_1_1_s_i_m_d_float_array.html#af6004aa8b8035cd471fdb892729ce5b1">moonray::pbr::SIMDFloatArray</a>, <a class="el" href="classmoonray_1_1util_1_1_static_vector.html#ac393811fa0979d69bdea80e89dda6123">moonray::util::StaticVector&lt; T, N &gt;</a>, <a class="el" href="class_n_point.html#a55d5b0a780560c7a50b69ed2872f2798">NPoint&lt; D &gt;</a>, <a class="el" href="class_n_point_3_011_01_4.html#a086087d44768ce55afeec901aac7656a">NPoint&lt; 1 &gt;</a>, <a class="el" href="class_static_vector.html#ad6b6b4c4b2fdb3558bac7b6cb9daeca0">StaticVector&lt; T, N &gt;</a></li>
 <li>data_size()&#160;:&#160;<a class="el" href="classmoonray_1_1geom_1_1_interleaved_traits.html#a25587a7b813d869a838faa8315a2c021">moonray::geom::InterleavedTraits&lt; T, Allocator &gt;</a></li>
 <li>dataGen()&#160;:&#160;<a class="el" href="classmoonray_1_1rec__load_1_1_rec_load_core_stat.html#ae031f75ef521ddc796edfe61047e2a50">moonray::rec_load::RecLoadCoreStat</a></li>
 <li>dataHash()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache.html#a783091965992a117c4c0b851329f28f8">moonray::rndr::ImageWriteCache</a></li>
+<li>dataValidityCheck()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_render_output_writer.html#ae73d140e370ebb2ca2729950c2fc9faa">moonray::rndr::RenderOutputWriter</a></li>
 <li>dataWindow()&#160;:&#160;<a class="el" href="class_pixel_tile.html#ac1157f3e5ea6b66700bd587faf8d0780">PixelTile</a></li>
 <li>DDAIntersector()&#160;:&#160;<a class="el" href="classmoonray_1_1geom_1_1internal_1_1_d_d_a_intersector.html#af9d51ad23536092e4d82c538d617c66a">moonray::geom::internal::DDAIntersector</a></li>
 <li>deallocate()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_thread_local_object_state.html#afda955a19a74b0c042a038565db7f5f8">moonray::shading::ThreadLocalObjectState</a>, <a class="el" href="class_size_verifying_allocator.html#a1683020b53d44e9accd2793b254a19e9">SizeVerifyingAllocator&lt; T &gt;</a></li>
@@ -56,6 +77,7 @@ $(function() {
 <li>DebugSamplesRecArray()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_debug_samples_rec_array.html#ab48f65eb01eeba1dd18ab63a5113a085">moonray::rndr::DebugSamplesRecArray</a></li>
 <li>debugTileInfoDump()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_render_tiles_table.html#a8a05b744c0c02f81ff905a3258e6b3aa">moonray::rndr::AdaptiveRenderTilesTable</a></li>
 <li>DecayLightFilter()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_decay_light_filter.html#a8bb461ae5747b05a94738e379d6d3c6b">moonray::pbr::DecayLightFilter</a></li>
+<li>decoupledRayMarching()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_path_integrator.html#a1b9f07a9ff2df6dd6824dca04c8002d7">moonray::pbr::PathIntegrator</a></li>
 <li>decrementExclusive()&#160;:&#160;<a class="el" href="classmoonray_1_1util_1_1_inclusive_exclusive_average.html#a406041e025cf5f6fbb5990402519ddbd">moonray::util::InclusiveExclusiveAverage&lt; T &gt;</a></li>
 <li>DeepBuffer()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_deep_buffer.html#a5bba2ef0a8c2ada743c1b4297ae03748">moonray::pbr::DeepBuffer</a></li>
 <li>DeepFlags()&#160;:&#160;<a class="el" href="class_deep_flags.html#afb3b7c6040cca1e39a266f49688c9242">DeepFlags</a></li>
@@ -68,16 +90,25 @@ $(function() {
 <li>DeepTile()&#160;:&#160;<a class="el" href="class_deep_tile.html#a8ab370447a7fa9ed71fa006036d39978">DeepTile</a></li>
 <li>deepWrite()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_render_output_driver_1_1_impl.html#a74d0eddbd6c3f26d1af0d00d30cff875">moonray::rndr::RenderOutputDriver::Impl</a></li>
 <li>defaultValue()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_aov_schema_1_1_entry.html#a5743617fa452d61d6e774ab8900de224">moonray::pbr::AovSchema::Entry</a></li>
+<li>defBaseChannelName()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_render_output_driver_1_1_impl.html#aef1f760d0bb50f37db6698076717862b">moonray::rndr::RenderOutputDriver::Impl</a></li>
 <li>deferEntriesForLaterProcessing()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_material.html#ae206272c2149b1aebdb2c5363c01f88d">moonray::shading::Material</a></li>
 <li>deformed()&#160;:&#160;<a class="el" href="classmoonray_1_1geom_1_1_procedural.html#aa2c7e63eba32131664504c4a55374113">moonray::geom::Procedural</a></li>
+<li>defVarianceChannelName()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_render_output_driver_1_1_impl.html#a37fc45453ba1f6baad461913c5b71dbf">moonray::rndr::RenderOutputDriver::Impl</a></li>
 <li>deleteDeepLines()&#160;:&#160;<a class="el" href="class_deep_image_output_tile.html#aea050f78fc3c2742e504a65b875506bd">DeepImageOutputTile</a></li>
 <li>demuxFloat()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_hair_util.html#a6aedf743fcf1a561742b9584b51b21c0">moonray::shading::HairUtil</a></li>
+<li>denormalizeAlphaOdd()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_render_driver.html#aa16849b999c52764ee198eb2c44b3824">moonray::rndr::RenderDriver</a></li>
+<li>denormalizeAovBuffer()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_render_driver.html#a61a12747aab21ac378be61f82ab33017">moonray::rndr::RenderDriver</a></li>
+<li>denormalizeBeautyOdd()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_render_driver.html#ae0e1d871a5a50233706339431c8021c3">moonray::rndr::RenderDriver</a></li>
 <li>DenseEmissionDistribution()&#160;:&#160;<a class="el" href="classmoonray_1_1geom_1_1internal_1_1_dense_emission_distribution.html#a6035553ba32cab34715fa8cb0473203a">moonray::geom::internal::DenseEmissionDistribution</a></li>
 <li>deonLongitudinalM()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_hair_util.html#a04915f99234b38be24940c9e9ae3e74b">moonray::shading::HairUtil</a></li>
+<li>depthFirstPreorderTraversal()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_debug_ray_builder.html#ac5c0e3f27f0ec4977e603dd42e502faa">moonray::pbr::DebugRayBuilder</a></li>
 <li>deq()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache.html#a484dc26a8fac02fe8e7b80c9e4bdb1e7">moonray::rndr::ImageWriteCache</a></li>
 <li>deqFullBuff()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache.html#ac675eb0cdde3631b2985a738f3bd73b2">moonray::rndr::ImageWriteCache</a></li>
 <li>deqHalfBuff()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache.html#a158b51090454a8513315ef4c0c21ecc5">moonray::rndr::ImageWriteCache</a></li>
+<li>deqImageWriteCache()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_image_write_driver.html#a9786bd6fd5460cab828c40f0ed4b1c0b">moonray::rndr::ImageWriteDriver</a></li>
+<li>destroy()&#160;:&#160;<a class="el" href="classmoonray_1_1geom_1_1_interleaved_traits.html#a8945e9e70c5797ee909dba093c6028ec">moonray::geom::InterleavedTraits&lt; T, Allocator &gt;</a>, <a class="el" href="classmoonray_1_1util_1_1_aligned_element_array.html#a6f9b8971304aa379b594944c1cc1ee8d">moonray::util::AlignedElementArray&lt; T, desired_alignment &gt;</a></li>
 <li>destroy_last()&#160;:&#160;<a class="el" href="classmoonray_1_1geom_1_1_interleaved_traits.html#a79b7e9fbe44569ba585a8d08ffc88cbe">moonray::geom::InterleavedTraits&lt; T, Allocator &gt;</a></li>
+<li>destroyArena()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_test_render.html#a5223aa6706ca643be3ae346dd6f52ac3">moonray::shading::TestRender</a></li>
 <li>deviceptr()&#160;:&#160;<a class="el" href="classmoonray_1_1rt_1_1_g_p_u_buffer.html#a2bd3802ee717b90e23b829501b84241a">moonray::rt::GPUBuffer&lt; T &gt;</a></li>
 <li>DfAutomata()&#160;:&#160;<a class="el" href="class_df_automata.html#af3655f3fbe294f084dd171550ea9c2db">DfAutomata</a></li>
 <li>didHitLight()&#160;:&#160;<a class="el" href="structmoonray_1_1pbr_1_1_bsdf_sample.html#ad09aefa399856ab58f90c607abc761e3">moonray::pbr::BsdfSample</a></li>
@@ -85,6 +116,7 @@ $(function() {
 <li>DielectricFresnel()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_dielectric_fresnel.html#a1adce8db5e8fbcc05227997b5971db8b">moonray::shading::DielectricFresnel</a></li>
 <li>differentials()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_ashikhmin_shirley_diffuse_bsdf_lobe.html#aa84e7090cc03b5b0369ae82f63532709">moonray::shading::AshikhminShirleyDiffuseBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_ashikhmin_shirley_glossy_bsdf_lobe.html#adb99c1e28ab0943df5e3913473b8a407">moonray::shading::AshikhminShirleyGlossyBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a53e300f416eddc450bef32b46f45e3ef">moonray::shading::BsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a5dd50feadee872fb27f7411cd6192ea6">moonray::shading::CookTorranceBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a19f0694fb38a6abaa1fc1da30d511007">moonray::shading::EyeCausticBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a7c32befb6f992907dea172cf8eb8bf24">moonray::shading::FabricBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_fabric_velvet_bsdf_lobe.html#a9347d520d22b1d3593939c416d3e3ef7">moonray::shading::FabricVelvetBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_hair_bsdf_lobe.html#af26e56ea30f05b90e007ecdfa8ed8dae">moonray::shading::HairBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_hair_diffuse_lobe.html#a3c1742ac06d5a91045394fbbff698ce1">moonray::shading::HairDiffuseLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_hair_toon_specular_bsdf_lobe.html#ade5eb9a37e66fba6453c4fdc1b699f93">moonray::shading::HairToonSpecularBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_iridescence_bsdf_lobe.html#a072cabd14ab3991f300ebab6e5c9bd11">moonray::shading::IridescenceBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_lambert_bsdf_lobe.html#a09b58c9e7edfb62ec583a760f8736c19">moonray::shading::LambertBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_measured_bsdf_lobe.html#aebe078f521219284082dbb25ad251243">moonray::shading::MeasuredBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_mirror_reflection_bsdf_lobe.html#aefdc8390d5b3ea81de59107fdcf1afa0">moonray::shading::MirrorReflectionBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_mirror_retroreflection_bsdf_lobe.html#ad4b5cee9fc40fd24b1189a627353f949">moonray::shading::MirrorRetroreflectionBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a69a04607a2e301b5b1480efbd9cd60ec">moonray::shading::MirrorTransmissionBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_oren_nayar_bsdf_lobe.html#a0a31ed184a18d21fd2f24a16fcf73f81">moonray::shading::OrenNayarBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_retroreflection_bsdf_lobe.html#a30e2a9d032d812813944a43a0953ee8d">moonray::shading::RetroreflectionBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a1ac45d690e9093bb0be95667d7ca7391">moonray::shading::StochasticFlakesBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_toon_specular_bsdf_lobe.html#a4f44cf8a88c2184827c4b72f547babb6">moonray::shading::ToonSpecularBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_transmission_cook_torrance_bsdf_lobe.html#a8c91aff14406054441fdacd7c2d74304">moonray::shading::TransmissionCookTorranceBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_under_bsdf_lobe.html#a482938148ad84c0099094076fed01663">moonray::shading::UnderBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe.html#a865478f26c7333e99dbcd07a99658859">moonray::shading::UnderClearcoatBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_ward_bsdf_lobe.html#affdc88c293588d4fd2e293fc09fff169">moonray::shading::WardBsdfLobe</a></li>
 <li>diffuseReflectance()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_bssrdf.html#ae75315f053ae53a4e1406691dc735669">moonray::shading::Bssrdf</a>, <a class="el" href="classmoonray_1_1shading_1_1_dipole_bssrdf.html#a05dbaa3b3e57b35cb35df8b9677641e5">moonray::shading::DipoleBssrdf</a>, <a class="el" href="classmoonray_1_1shading_1_1_multi_layer_bssrdf.html#abdf8205123f2069194da1af563e11196">moonray::shading::MultiLayerBssrdf</a>, <a class="el" href="classmoonray_1_1shading_1_1_normalized_diffusion_bssrdf.html#a42a7e6d58d3424e27db1b534a4741547">moonray::shading::NormalizedDiffusionBssrdf</a></li>
+<li>dimensionMod()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_sample_partition.html#acc9cf8f55de675b8686d2349cc2fc0a8">moonray::pbr::SamplePartition&lt; T, sets, samplesPerSet &gt;</a>, <a class="el" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a8ec13b1b0ea0003a503d163e97b5e933">moonray::pbr::SpatialSamplePartition&lt; T, kDimension &gt;</a></li>
 <li>DipoleBssrdf()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_dipole_bssrdf.html#a2e5bff13bab6371f6afabdc0369365d4">moonray::shading::DipoleBssrdf</a></li>
 <li>DipoleDiffusion()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html#a1dc86c8a5e1cf8f4caba62013ca13c8f">moonray::shading::DipoleDiffusion</a></li>
 <li>DirTree()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_dir_tree.html#a8c2d5b1618a610f05cec278c8d91e374">moonray::pbr::DirTree</a></li>
@@ -93,12 +125,12 @@ $(function() {
 <li>disableAdjustUpdateTiming()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a5f4130baa67e4590bc14cda93c83233e">moonray::rndr::AdaptiveRegions</a>, <a class="el" href="classmoonray_1_1rndr_1_1_update_sentinel.html#ab76a27c6ed1f3b6aa86edc2b86e3aac1">moonray::rndr::UpdateSentinel</a></li>
 <li>disableCancellation()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_t_l_state.html#ac2931d125164a5c1cfe9cd11c1ac421a">moonray::pbr::TLState</a></li>
 <li>disableRecording()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_debug_ray_recorder.html#a9ae7aaad4f65066e32737f5b2649fe68">moonray::pbr::DebugRayRecorder</a></li>
-<li>DISALLOW_COPY_OR_ASSIGNMENT()&#160;:&#160;<a class="el" href="classmoonray_1_1geom_1_1internal_1_1_t_l_state.html#a7c7ea50fda4deed983b064143a7ae4fa">moonray::geom::internal::TLState</a>, <a class="el" href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html#a3bec0ac0ac36f8ee052521ab95366d62">moonray::mcrt_common::ThreadLocalState</a>, <a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html#a8d2116b7c34c4368d47a357566e12106">moonray::shading::TLState</a>, <a class="el" href="classmoonray_1_1shading_1_1_xform.html#aea5905d18cb6ca6a538693b07e89a1e8">moonray::shading::Xform</a></li>
+<li>DISALLOW_COPY_OR_ASSIGNMENT()&#160;:&#160;<a class="el" href="classmoonray_1_1geom_1_1internal_1_1_t_l_state.html#a7c7ea50fda4deed983b064143a7ae4fa">moonray::geom::internal::TLState</a>, <a class="el" href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html#a3bec0ac0ac36f8ee052521ab95366d62">moonray::mcrt_common::ThreadLocalState</a>, <a class="el" href="classmoonray_1_1pbr_1_1_t_l_state.html#a106c4bfec05cf821e287e7498768a513">moonray::pbr::TLState</a>, <a class="el" href="classmoonray_1_1rndr_1_1_render_driver.html#af2aca090be64ca82e579c165536e85e8">moonray::rndr::RenderDriver</a>, <a class="el" href="classmoonray_1_1shading_1_1_intersection.html#a9fce8651e13f0b68a620d943b9b7cf1c">moonray::shading::Intersection</a>, <a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html#a8d2116b7c34c4368d47a357566e12106">moonray::shading::TLState</a>, <a class="el" href="classmoonray_1_1shading_1_1_xform.html#aea5905d18cb6ca6a538693b07e89a1e8">moonray::shading::Xform</a>, <a class="el" href="classmoonray_1_1texture_1_1_t_l_state.html#a376fbb19356a3e27f060ec263f5a0021">moonray::texture::TLState</a></li>
 <li>DiskLight()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_disk_light.html#a78980e48b71aea2cde4a8472056ab744">moonray::pbr::DiskLight</a></li>
 <li>DiskLightTester()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_disk_light_tester.html#a2b4b1d21b4c4febec9d070085bb595b6">moonray::pbr::DiskLightTester</a></li>
 <li>DiskWrappedDistanceSquared()&#160;:&#160;<a class="el" href="struct_disk_wrapped_distance_squared.html#a326570850ab9176dae85cba0ec1baf01">DiskWrappedDistanceSquared</a></li>
 <li>displace()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1unittest_1_1_test_displace.html#ac1801eaf2eb1e12d17a80e334f8b46fe">moonray::shading::unittest::TestDisplace</a></li>
-<li>displaceMesh()&#160;:&#160;<a class="el" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#aded455b0af339a1cb871b4383c940aac">moonray::geom::internal::PolyMesh</a></li>
+<li>displaceMesh()&#160;:&#160;<a class="el" href="classmoonray_1_1geom_1_1internal_1_1_open_subdiv_mesh.html#aec59d54f3fbfe01b67bb7812c17173d1">moonray::geom::internal::OpenSubdivMesh</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#aded455b0af339a1cb871b4383c940aac">moonray::geom::internal::PolyMesh</a></li>
 <li>displayCenter2f()&#160;:&#160;<a class="el" href="class_image_format.html#a817b2d41a544c572d80136c2a214dd8d">ImageFormat</a></li>
 <li>displayCenter3f()&#160;:&#160;<a class="el" href="class_image_format.html#af131472c0e5b98eff719d03a6d8f61c1">ImageFormat</a></li>
 <li>displayCenterX()&#160;:&#160;<a class="el" href="class_image_format.html#a14968b55dbaf777184da3422cb254442">ImageFormat</a></li>
@@ -119,27 +151,41 @@ $(function() {
 <li>displayW()&#160;:&#160;<a class="el" href="class_image_format.html#aa1b0df35c3c9cfae710e55d5a450b16c">ImageFormat</a></li>
 <li>displayWidth()&#160;:&#160;<a class="el" href="class_image_format.html#ad325a7d892c38bfc014ff4cb8cb5f91a">ImageFormat</a></li>
 <li>displayWindow()&#160;:&#160;<a class="el" href="class_image_format.html#ad6a340a09dda2fba7ef59f73290c951d">ImageFormat</a></li>
+<li>distanceVolumeScattering()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_path_integrator.html#a63927fa735e6acf8f9fcbfeeca62e5d1">moonray::pbr::PathIntegrator</a></li>
 <li>DistantLight()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_distant_light.html#a71582a7f3993aa2079bd82f452e420cf">moonray::pbr::DistantLight</a></li>
 <li>DistantLightTester()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_distant_light_tester.html#a97df564d77704e05068a0c1a15a6ed33">moonray::pbr::DistantLightTester</a></li>
 <li>Distribution1D()&#160;:&#160;<a class="el" href="structmoonray_1_1geom_1_1internal_1_1_distribution3_d_1_1_distribution1_d.html#a7ea3c3997bce8bce03308e2c67301a0c">moonray::geom::internal::Distribution3D::Distribution1D</a></li>
 <li>Distribution2D()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_distribution2_d.html#a0f5f3693652d57e8154190433f70fac3">moonray::pbr::Distribution2D</a></li>
 <li>Distribution3D()&#160;:&#160;<a class="el" href="structmoonray_1_1geom_1_1internal_1_1_distribution3_d.html#a5230f28bd3c0aa1f26873b2c5ce733e5">moonray::geom::internal::Distribution3D</a></li>
+<li>do_batch_insert()&#160;:&#160;<a class="el" href="structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_complete_random_access_iterator.html#a3d9d1d68f29bf4bfd1ff0cdc97d8888c">anonymous_namespace{test_ring_buffer.cc}::BatchInsertCompleteRandomAccessIterator</a>, <a class="el" href="structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_forward_iterator.html#af15699a41c7cbe4d956ebdf40fd932f2">anonymous_namespace{test_ring_buffer.cc}::BatchInsertForwardIterator</a>, <a class="el" href="structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_input_iterator.html#a5881f81e0e40006dc595518f064cb1c7">anonymous_namespace{test_ring_buffer.cc}::BatchInsertInputIterator</a>, <a class="el" href="structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_random_access_iterator.html#a48e651e6514fa0e23504e789bee070c7">anonymous_namespace{test_ring_buffer.cc}::BatchInsertRandomAccessIterator</a></li>
+<li>do_construct()&#160;:&#160;<a class="el" href="class_ring_buffer_impl.html#aee5f95d23dea285bf9c9b9af1db3aad9">RingBufferImpl&lt; T, log_n_elements, Traits &gt;</a></li>
+<li>do_emplace()&#160;:&#160;<a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer.html#a12e62a9e38bad2abb43b9a223547730a">anonymous_namespace{test_ring_buffer.cc}::Emplacer&lt; DataType &gt;</a>, <a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_copy_exceptions_01_4.html#aacff38b373a1b18a4044bf7adf1d9df1">anonymous_namespace{test_ring_buffer.cc}::Emplacer&lt; TestDataCopyExceptions &gt;</a>, <a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_exceptions_01_4.html#abb5bb6054df3aab5ef3a45991f6c88c8">anonymous_namespace{test_ring_buffer.cc}::Emplacer&lt; TestDataExceptions &gt;</a>, <a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_move_exceptions_01_4.html#aee9971da0539dc5389452297a110bca4">anonymous_namespace{test_ring_buffer.cc}::Emplacer&lt; TestDataMoveExceptions &gt;</a>, <a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_no_exceptions_01_4.html#a2ca8df6d7b7a2c8dfb402d5517694e15">anonymous_namespace{test_ring_buffer.cc}::Emplacer&lt; TestDataNoExceptions &gt;</a></li>
+<li>do_open()&#160;:&#160;<a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#ae2ef05af1933ced433867d5524ef667a">moonray::stats::AthenaCSVStream</a></li>
+<li>do_pop_dispatch()&#160;:&#160;<a class="el" href="class_ring_buffer_impl.html#a523453ba81d138964d51157076a20b2f">RingBufferImpl&lt; T, log_n_elements, Traits &gt;</a></li>
+<li>doAllocate()&#160;:&#160;<a class="el" href="classmoonray_1_1util_1_1_aligned_element_array.html#a885831d862580c2212a25c685a185b3b">moonray::util::AlignedElementArray&lt; T, desired_alignment &gt;</a></li>
 <li>doFlush()&#160;:&#160;<a class="el" href="classmoonray_1_1stats_1_1_log_stream_buf.html#a1d5fddf3fd765a383601103a72d637cc">moonray::stats::LogStreamBuf</a></li>
+<li>doFree()&#160;:&#160;<a class="el" href="classmoonray_1_1util_1_1_aligned_element_array.html#adf13cb8fc2cf499f4a1d966fa3d8571e">moonray::util::AlignedElementArray&lt; T, desired_alignment &gt;</a></li>
+<li>doLog()&#160;:&#160;<a class="el" href="classmoonray_1_1stats_1_1_arras_log_stream_buf.html#a3544a5233e7a88c7ac98f7dc3283bf22">moonray::stats::ArrasLogStreamBuf</a>, <a class="el" href="classmoonray_1_1stats_1_1_log_stream_buf.html#a8a39ec4e9b08392de63c048699403d30">moonray::stats::LogStreamBuf</a></li>
 <li>DomeMaster3DCamera()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_dome_master3_d_camera.html#a49b1f26e651703e05cc5b1805d263335">moonray::pbr::DomeMaster3DCamera</a></li>
 <li>done()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a7a4df69e3cc6dc3c2d86353088db81af">moonray::rndr::AdaptiveRegions</a>, <a class="el" href="classmoonray_1_1rndr_1_1_adaptive_region_tree.html#a40cd073a56aa3b61dd2c1f3556bef782">moonray::rndr::AdaptiveRegionTree</a></li>
 <li>download()&#160;:&#160;<a class="el" href="classmoonray_1_1rt_1_1_g_p_u_buffer.html#a31d8f43c1b116c02256052d74855013f">moonray::rt::GPUBuffer&lt; T &gt;</a></li>
 <li>drain()&#160;:&#160;<a class="el" href="classmoonray_1_1mcrt__common_1_1_shared_queue.html#a09f29d02aab7bab897fb863a4795c760">moonray::mcrt_common::SharedQueue&lt; T, SORTED, SORT_KEY_OFFSET &gt;</a></li>
 <li>draw()&#160;:&#160;<a class="el" href="class_progress_bar.html#a6bb78c7432a579737833807693ba1ea3">ProgressBar</a></li>
 <li>drawPixel()&#160;:&#160;<a class="el" href="class_image.html#a07f12ff0997827ef9846878eaf59a2cf">Image</a></li>
+<li>drawSampleRecurse()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_mesh_light.html#a90012ea2728bc316cedc0a699ebf33f5">moonray::pbr::MeshLight</a></li>
 <li>duplicateWorkData()&#160;:&#160;<a class="el" href="classmoonray_1_1engine__tool_1_1_mcrt_fb_sender.html#a9a75ce46088521686b83de31a7822e52">moonray::engine_tool::McrtFbSender</a></li>
+<li>duration()&#160;:&#160;<a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_stop_watch.html#aa5ddf818c8e8e26ee6355aba581db551">anonymous_namespace{test_ring_buffer.cc}::StopWatch</a></li>
 <li>DwaFabricBsdfFactory()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_dwa_fabric_bsdf_factory.html#a31fd194cc52632a0b0e80d5c0b78027b">moonray::pbr::DwaFabricBsdfFactory</a></li>
 <li>DwaFabricBsdfLobe()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_dwa_fabric_bsdf_lobe.html#a0cbc245d281082d7ebc281e6a627272f">moonray::shading::DwaFabricBsdfLobe</a></li>
 <li>DynamicHyperGrid()&#160;:&#160;<a class="el" href="class_dynamic_hyper_grid.html#ab0b29b9b3ec631101f8238d7ee9f02a1">DynamicHyperGrid&lt; T, Dimensions, IncomingRange &gt;</a>, <a class="el" href="class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html#a435ea232ce1bfb4fa3eaa3051a765afc">DynamicHyperGrid&lt; T, 1, IncomingRange &gt;</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rt.html">rt</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rt_1_1_geometry_manager_primitive_visitor.html">GeometryManagerPrimitiveVisitor</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1rt_1_1_geometry_manager_primitive_visitor.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -134,7 +150,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_geometry_manager_8cc_source.html#l00121">121</a> of file <a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  122</span>    {}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -168,7 +185,15 @@ Protected Attributes</h2></td></tr>
 <p>Reimplemented in <a class="el" href="classmoonray_1_1rt_1_1_assignment_and_xform_setter.html#a1400216d0e66b7245d77340e6cc2f1be">moonray::rt::AssignmentAndXformSetter</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geometry_manager_8cc_source.html#l00134">134</a> of file <a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  135</span>    {</div>
+<div class="line"><span class="lineno">  136</span>        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; ref = i.getReference();</div>
+<div class="line"><span class="lineno">  137</span>        <span class="comment">// visit the referenced Primitive if it&#39;s not visited yet</span></div>
+<div class="line"><span class="lineno">  138</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1rt_1_1_geometry_manager_primitive_visitor.html#a33f857355e7611ac86f7a64d2f6be38c">mSharedPrimitives</a>.insert(ref).second) {</div>
+<div class="line"><span class="lineno">  139</span>            ref-&gt;getPrimitive()-&gt;accept(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  140</span>        }</div>
+<div class="line"><span class="lineno">  141</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1rt_1_1_geometry_manager_primitive_visitor_html_a33f857355e7611ac86f7a64d2f6be38c"><div class="ttname"><a href="classmoonray_1_1rt_1_1_geometry_manager_primitive_visitor.html#a33f857355e7611ac86f7a64d2f6be38c">moonray::rt::GeometryManagerPrimitiveVisitor::mSharedPrimitives</a></div><div class="ttdeci">geom::SharedPrimitiveSet mSharedPrimitives</div><div class="ttdef"><b>Definition:</b> <a href="_geometry_manager_8cc_source.html#l00144">GeometryManager.cc:144</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2d800a61168d252a78bb6ffbf2fd9273" name="a2d800a61168d252a78bb6ffbf2fd9273"></a>
@@ -199,7 +224,10 @@ Protected Attributes</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html#a6880d77b6a0c232a60aa4c88b8debebb">moonray::geom::PrimitiveVisitor</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geometry_manager_8cc_source.html#l00124">124</a> of file <a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  125</span>    {</div>
+<div class="line"><span class="lineno">  126</span>        pg.forEachPrimitive(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  127</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a73a46e5ad6e94cf416a6079feb551816" name="a73a46e5ad6e94cf416a6079feb551816"></a>
@@ -230,7 +258,10 @@ Protected Attributes</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html#ae49a53043cd626814eb10739bcdb5cea">moonray::geom::PrimitiveVisitor</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geometry_manager_8cc_source.html#l00129">129</a> of file <a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  130</span>    {</div>
+<div class="line"><span class="lineno">  131</span>        t.getPrimitive()-&gt;accept(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  132</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -262,9 +293,13 @@ Protected Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/rt/<a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rt.html">rt</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rt_1_1_geometry_manager_primitive_visitor.html">GeometryManagerPrimitiveVisitor</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

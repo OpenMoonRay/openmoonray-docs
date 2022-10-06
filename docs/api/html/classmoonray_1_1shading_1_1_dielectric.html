@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_dielectric.html">Dielectric</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_dielectric.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_dielectric-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::Dielectric Class Reference</div></div>
 </div><!--header-->
@@ -92,6 +109,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa22c8c57ea04f21bcbf53bf003008205 inherit pub_methods_classmoonray_1_1shading_1_1_fresnel_behavior"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7377860f83f2c294658705c222968e71 inherit pub_methods_classmoonray_1_1shading_1_1_fresnel_behavior"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1shading_1_1_fresnel_behavior.html">FresnelBehavior</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_fresnel_behavior.html#a7377860f83f2c294658705c222968e71">operator=</a> (const <a class="el" href="classmoonray_1_1shading_1_1_fresnel_behavior.html">FresnelBehavior</a> &amp;other)=delete</td></tr>
 <tr class="separator:a7377860f83f2c294658705c222968e71 inherit pub_methods_classmoonray_1_1shading_1_1_fresnel_behavior"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a26fe3f40f6216cbaecc1fd353acc299a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_dielectric.html#a26fe3f40f6216cbaecc1fd353acc299a">mEtaI</a></td></tr>
+<tr class="separator:a26fe3f40f6216cbaecc1fd353acc299a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57189314b9b8725ced28410d86d252c0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_dielectric.html#a57189314b9b8725ced28410d86d252c0">mEtaT</a></td></tr>
+<tr class="separator:a57189314b9b8725ced28410d86d252c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -140,7 +164,12 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_fresnel_behavior_8h_source.html#l00053">53</a> of file <a class="el" href="_fresnel_behavior_8h_source.html">FresnelBehavior.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   53</span>                                       :</div>
+<div class="line"><span class="lineno">   54</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_dielectric.html#a26fe3f40f6216cbaecc1fd353acc299a">mEtaI</a>(etaI),</div>
+<div class="line"><span class="lineno">   55</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_dielectric.html#a57189314b9b8725ced28410d86d252c0">mEtaT</a>(etaT) {}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_dielectric_html_a26fe3f40f6216cbaecc1fd353acc299a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_dielectric.html#a26fe3f40f6216cbaecc1fd353acc299a">moonray::shading::Dielectric::mEtaI</a></div><div class="ttdeci">float mEtaI</div><div class="ttdef"><b>Definition:</b> <a href="_fresnel_behavior_8h_source.html#l00068">FresnelBehavior.h:68</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_dielectric_html_a57189314b9b8725ced28410d86d252c0"><div class="ttname"><a href="classmoonray_1_1shading_1_1_dielectric.html#a57189314b9b8725ced28410d86d252c0">moonray::shading::Dielectric::mEtaT</a></div><div class="ttdeci">float mEtaT</div><div class="ttdef"><b>Definition:</b> <a href="_fresnel_behavior_8h_source.html#l00069">FresnelBehavior.h:69</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa82ee020e59485f781bb54d4edc4b2d8" name="aa82ee020e59485f781bb54d4edc4b2d8"></a>
@@ -167,7 +196,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_fresnel_behavior_8h_source.html#l00057">57</a> of file <a class="el" href="_fresnel_behavior_8h_source.html">FresnelBehavior.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   57</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -197,7 +227,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_fresnel_behavior.html#a4bd82839694c1aa4bc3cba131cd684f9">moonray::shading::FresnelBehavior</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_fresnel_behavior_8h_source.html#l00059">59</a> of file <a class="el" href="_fresnel_behavior_8h_source.html">FresnelBehavior.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   59</span>{ <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_fresnel_behavior.html#ac4ad64921edf49d6e460cf18ee0344dfa9d5ce2208818f6863beffd5f8834ca32">Class::Dielectric</a>; }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_fresnel_behavior_html_ac4ad64921edf49d6e460cf18ee0344dfa9d5ce2208818f6863beffd5f8834ca32"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fresnel_behavior.html#ac4ad64921edf49d6e460cf18ee0344dfa9d5ce2208818f6863beffd5f8834ca32">moonray::shading::FresnelBehavior::Class::Dielectric</a></div><div class="ttdeci">@ Dielectric</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae5f6db7b3d4529d98fc4afa8712cabe6" name="ae5f6db7b3d4529d98fc4afa8712cabe6"></a>
@@ -224,7 +256,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_fresnel_behavior_8h_source.html#l00061">61</a> of file <a class="el" href="_fresnel_behavior_8h_source.html">FresnelBehavior.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   61</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_dielectric.html#a26fe3f40f6216cbaecc1fd353acc299a">mEtaI</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a09e162c1eb750536e8f458302fa00e24" name="a09e162c1eb750536e8f458302fa00e24"></a>
@@ -251,7 +284,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_fresnel_behavior_8h_source.html#l00062">62</a> of file <a class="el" href="_fresnel_behavior_8h_source.html">FresnelBehavior.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   62</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_dielectric.html#a57189314b9b8725ced28410d86d252c0">mEtaT</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab4b9eed0cf7fe298152bbfdb0e710dd3" name="ab4b9eed0cf7fe298152bbfdb0e710dd3"></a>
@@ -279,7 +313,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_fresnel_behavior_8h_source.html#l00064">64</a> of file <a class="el" href="_fresnel_behavior_8h_source.html">FresnelBehavior.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   64</span>{ <a class="code hl_variable" href="classmoonray_1_1shading_1_1_dielectric.html#a26fe3f40f6216cbaecc1fd353acc299a">mEtaI</a> = etaI; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac9b98995e25b251a8226948e9afb0dcf" name="ac9b98995e25b251a8226948e9afb0dcf"></a>
@@ -307,6 +342,56 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_fresnel_behavior_8h_source.html#l00065">65</a> of file <a class="el" href="_fresnel_behavior_8h_source.html">FresnelBehavior.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>{ <a class="code hl_variable" href="classmoonray_1_1shading_1_1_dielectric.html#a26fe3f40f6216cbaecc1fd353acc299a">mEtaI</a> = etaT; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a26fe3f40f6216cbaecc1fd353acc299a" name="a26fe3f40f6216cbaecc1fd353acc299a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26fe3f40f6216cbaecc1fd353acc299a">&#9670;&#160;</a></span>mEtaI</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::Dielectric::mEtaI</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_fresnel_behavior_8h_source.html#l00068">68</a> of file <a class="el" href="_fresnel_behavior_8h_source.html">FresnelBehavior.h</a>.</p>
+
+</div>
+</div>
+<a id="a57189314b9b8725ced28410d86d252c0" name="a57189314b9b8725ced28410d86d252c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57189314b9b8725ced28410d86d252c0">&#9670;&#160;</a></span>mEtaT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::Dielectric::mEtaT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_fresnel_behavior_8h_source.html#l00069">69</a> of file <a class="el" href="_fresnel_behavior_8h_source.html">FresnelBehavior.h</a>.</p>
 
 </div>
 </div>
@@ -314,9 +399,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/<a class="el" href="_fresnel_behavior_8h_source.html">FresnelBehavior.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_dielectric.html">Dielectric</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

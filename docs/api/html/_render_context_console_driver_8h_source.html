@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_55a2e35f6359da48a03f898576e722e1.html">rndr</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_render_context_console_driver_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">RenderContextConsoleDriver.h</div></div>
 </div><!--header-->
@@ -51,7 +67,8 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span><span class="comment"></span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @author Toshi Kato</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"></span><span class="comment">//</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
@@ -88,20 +105,20 @@ $(function() {
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#ab880e87bff270e495d9146978132b8fe">   41</a></span>    <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#ab880e87bff270e495d9146978132b8fe">RenderContextConsoleDriver</a>() :</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        DebugConsoleDriver(),</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        mRenderContext(nullptr)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#a1280e657f0acf24e1065aef36feb7401">mRenderContext</a>(nullptr)</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    {}</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#a4398b32346c3f40aebc23fa503a90de0">   45</a></span>    <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#a4398b32346c3f40aebc23fa503a90de0">~RenderContextConsoleDriver</a>() {}</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#ac4309e3fc34ffcbe5f65a424b766d964">setRenderContext</a>(<a class="code hl_class" href="classmoonray_1_1rndr_1_1_render_context.html">RenderContext</a> *renderContext); <span class="comment">// MTsafe</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">using </span>Parse = scene_rdl2::grid_util::Parse;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">using </span>Arg = scene_rdl2::grid_util::Arg;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#a44ddbb430a3dab6204a7471dc621e8ca">   50</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#a44ddbb430a3dab6204a7471dc621e8ca">Parse</a> = scene_rdl2::grid_util::Parse;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#aee9310797f0e96cd66cd5718aacec412">   51</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#aee9310797f0e96cd66cd5718aacec412">Arg</a> = scene_rdl2::grid_util::Arg;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> parseConfigure(Parse &amp;parse) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#ab78887d80c517e2c2c6dceee26a20f46">parseConfigure</a>(<a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#a44ddbb430a3dab6204a7471dc621e8ca">Parse</a> &amp;parse) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">mutable</span> std::mutex mMutexRenderContext;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_class" href="classmoonray_1_1rndr_1_1_render_context.html">RenderContext</a> *mRenderContext;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#a8cfce13f5b50adf091127e06e4eb0081">   55</a></span>    <span class="keyword">mutable</span> std::mutex <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#a8cfce13f5b50adf091127e06e4eb0081">mMutexRenderContext</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#a1280e657f0acf24e1065aef36feb7401">   56</a></span>    <a class="code hl_class" href="classmoonray_1_1rndr_1_1_render_context.html">RenderContext</a> *<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#a1280e657f0acf24e1065aef36feb7401">mRenderContext</a>;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>} <span class="comment">// namespace rndr</span></div>
@@ -111,18 +128,27 @@ $(function() {
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_context_console_driver_html"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_context_console_driver.html">moonray::rndr::RenderContextConsoleDriver</a></div><div class="ttdef"><b>Definition:</b> <a href="_render_context_console_driver_8h_source.html#l00017">RenderContextConsoleDriver.h:30</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_context_console_driver_html_a1280e657f0acf24e1065aef36feb7401"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#a1280e657f0acf24e1065aef36feb7401">moonray::rndr::RenderContextConsoleDriver::mRenderContext</a></div><div class="ttdeci">RenderContext * mRenderContext</div><div class="ttdef"><b>Definition:</b> <a href="_render_context_console_driver_8h_source.html#l00056">RenderContextConsoleDriver.h:56</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_context_console_driver_html_a4398b32346c3f40aebc23fa503a90de0"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#a4398b32346c3f40aebc23fa503a90de0">moonray::rndr::RenderContextConsoleDriver::~RenderContextConsoleDriver</a></div><div class="ttdeci">~RenderContextConsoleDriver()</div><div class="ttdef"><b>Definition:</b> <a href="_render_context_console_driver_8h_source.html#l00045">RenderContextConsoleDriver.h:45</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_context_console_driver_html_a44ddbb430a3dab6204a7471dc621e8ca"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#a44ddbb430a3dab6204a7471dc621e8ca">moonray::rndr::RenderContextConsoleDriver::Parse</a></div><div class="ttdeci">scene_rdl2::grid_util::Parse Parse</div><div class="ttdef"><b>Definition:</b> <a href="_render_context_console_driver_8h_source.html#l00050">RenderContextConsoleDriver.h:50</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_context_console_driver_html_a8cfce13f5b50adf091127e06e4eb0081"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#a8cfce13f5b50adf091127e06e4eb0081">moonray::rndr::RenderContextConsoleDriver::mMutexRenderContext</a></div><div class="ttdeci">std::mutex mMutexRenderContext</div><div class="ttdef"><b>Definition:</b> <a href="_render_context_console_driver_8h_source.html#l00055">RenderContextConsoleDriver.h:55</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_context_console_driver_html_a9ebf17f8e3ca40550540ee6e93cac771"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#a9ebf17f8e3ca40550540ee6e93cac771">moonray::rndr::RenderContextConsoleDriver::init</a></div><div class="ttdeci">static void init(int port)</div><div class="ttdef"><b>Definition:</b> <a href="_render_context_console_driver_8cc_source.html#l00063">RenderContextConsoleDriver.cc:63</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_context_console_driver_html_ab78887d80c517e2c2c6dceee26a20f46"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#ab78887d80c517e2c2c6dceee26a20f46">moonray::rndr::RenderContextConsoleDriver::parseConfigure</a></div><div class="ttdeci">void parseConfigure(Parse &amp;parse) override</div><div class="ttdef"><b>Definition:</b> <a href="_render_context_console_driver_8cc_source.html#l00027">RenderContextConsoleDriver.cc:27</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_context_console_driver_html_ab880e87bff270e495d9146978132b8fe"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#ab880e87bff270e495d9146978132b8fe">moonray::rndr::RenderContextConsoleDriver::RenderContextConsoleDriver</a></div><div class="ttdeci">RenderContextConsoleDriver()</div><div class="ttdef"><b>Definition:</b> <a href="_render_context_console_driver_8h_source.html#l00041">RenderContextConsoleDriver.h:41</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_context_console_driver_html_ac4309e3fc34ffcbe5f65a424b766d964"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#ac4309e3fc34ffcbe5f65a424b766d964">moonray::rndr::RenderContextConsoleDriver::setRenderContext</a></div><div class="ttdeci">void setRenderContext(RenderContext *renderContext)</div><div class="ttdef"><b>Definition:</b> <a href="_render_context_console_driver_8cc_source.html#l00018">RenderContextConsoleDriver.cc:18</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_context_console_driver_html_acadc208908eb42c2f3a0840771befbaf"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#acadc208908eb42c2f3a0840771befbaf">moonray::rndr::RenderContextConsoleDriver::RenderContextConsoleDriverShPtr</a></div><div class="ttdeci">std::shared_ptr&lt; RenderContextConsoleDriver &gt; RenderContextConsoleDriverShPtr</div><div class="ttdef"><b>Definition:</b> <a href="_render_context_console_driver_8h_source.html#l00032">RenderContextConsoleDriver.h:32</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_context_console_driver_html_ad886e5c887383d3274a65be78af095e9"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#ad886e5c887383d3274a65be78af095e9">moonray::rndr::RenderContextConsoleDriver::get</a></div><div class="ttdeci">static RenderContextConsoleDriverShPtr get()</div><div class="ttdef"><b>Definition:</b> <a href="_render_context_console_driver_8cc_source.html#l00074">RenderContextConsoleDriver.cc:74</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_context_console_driver_html_aee9310797f0e96cd66cd5718aacec412"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_context_console_driver.html#aee9310797f0e96cd66cd5718aacec412">moonray::rndr::RenderContextConsoleDriver::Arg</a></div><div class="ttdeci">scene_rdl2::grid_util::Arg Arg</div><div class="ttdef"><b>Definition:</b> <a href="_render_context_console_driver_8h_source.html#l00051">RenderContextConsoleDriver.h:51</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_context_html"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_context.html">moonray::rndr::RenderContext</a></div><div class="ttdef"><b>Definition:</b> <a href="_render_context_8h_source.html#l00094">RenderContext.h:95</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_c8c2fc2658195a2d790ef72565bd36e7.html">rndr</a></li><li class="navelem"><a class="el" href="_render_context_console_driver_8h.html">RenderContextConsoleDriver.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

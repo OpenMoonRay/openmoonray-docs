@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_3ffafe8d4194a26e471fc283bfe39627.html">shading</a></li><li class="navelem"><a class="el" href="dir_dc7d4ea0feddfdece5425e1d6c4bcd38.html">bsdf</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_bsdf_slice_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">BsdfSlice.h</div></div>
 </div><!--header-->
@@ -50,7 +66,12 @@ $(function() {
 <a href="_bsdf_slice_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2002-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file BsdfSlice.h</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Eric Tabellion</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// $Id$</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">///</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
@@ -64,13 +85,25 @@ $(function() {
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span>shading {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1shading.html#a7dce1b16f3e6aa467b2a3779c356a343">   26</a></span><span class="keyword">typedef</span> ispc::ShadowTerminatorFix <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#a7dce1b16f3e6aa467b2a3779c356a343">ShadowTerminatorFix</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_bsdf_slice.html">   33</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1shading_1_1_bsdf_slice.html">BsdfSlice</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"></span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">/// A bsdf slice can request that bsdf lobe evaluation perform</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">/// shadow terminator smoothing</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1shading.html#a7dce1b16f3e6aa467b2a3779c356a343">   26</a></span><span class="comment"></span><span class="keyword">typedef</span> ispc::ShadowTerminatorFix <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#a7dce1b16f3e6aa467b2a3779c356a343">ShadowTerminatorFix</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"></span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">///</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/// @class BsdfSlice Bsdf.h &lt;pbr/Bsdf.h&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/// @brief A BsdfSlice object is used to both represent a lower-dimensional</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">/// slice of a multi-lobe bsdf and to evaluate multi-lobe bsdfs.</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">///</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_bsdf_slice.html">   33</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1shading_1_1_bsdf_slice.html">BsdfSlice</a></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a5e9bec1b76154aaa54d1697628268317">   41</a></span>    <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a5e9bec1b76154aaa54d1697628268317">BsdfSlice</a>(<span class="keyword">const</span> scene_rdl2::math::Vec3f Ng, <span class="keyword">const</span> scene_rdl2::math::Vec3f &amp;wo, <span class="keywordtype">bool</span> includeCosineTerm,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">    /// A bsdf slice is defined given a surface geometric normal Ng and</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">    /// observer direction wo. We are also narrowing down on only the lobes that</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">    /// match the given flags. It also controls when a Bsdf is evaluated or</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">    /// sampled, whether or not its result includes the cosine term,</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">    /// and what if any shadow terminator smoothing should be applied.</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a5e9bec1b76154aaa54d1697628268317">   41</a></span><span class="comment"></span>    <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a5e9bec1b76154aaa54d1697628268317">BsdfSlice</a>(<span class="keyword">const</span> scene_rdl2::math::Vec3f Ng, <span class="keyword">const</span> scene_rdl2::math::Vec3f &amp;wo, <span class="keywordtype">bool</span> includeCosineTerm,</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordtype">bool</span> entering, <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#a7dce1b16f3e6aa467b2a3779c356a343">ShadowTerminatorFix</a> shadowTerminatorFix, <a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">BsdfLobe::Type</a> flags = <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aac42a9599ce7c29ea1e19ea1fe3cef159">BsdfLobe::ALL</a>) :</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf_slice.html#aae57c46748c04c956a8d48e9fb6dd4e4">mNg</a>(Ng),</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf_slice.html#aa6ffd1ed5ef8b68a6cf35856f9beaf14">mWo</a>(wo),</div>
@@ -90,15 +123,24 @@ $(function() {
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a675b4a727fc0933979e65069d01de790">   58</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a675b4a727fc0933979e65069d01de790">getEntering</a>()<span class="keyword"> const                              </span>{  <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a594d6f2565e8d2d7d77541e0f7b9e677">mEntering</a>;  }</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a9b3b22c2f7ebd5edb8c02369504a828a">   59</a></span>    <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#a7dce1b16f3e6aa467b2a3779c356a343">ShadowTerminatorFix</a> <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a9b3b22c2f7ebd5edb8c02369504a828a">getShadowTerminatorFix</a>()<span class="keyword"> const    </span>{  <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf_slice.html#aecc8d8bc3095f56fdda70650ba0a9f8f">mShadowTerminatorFix</a>; }</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_bsdf_slice.html#aa28b88a62ca95a1077a3697cd2b66352">   67</a></span>    finline <span class="keywordtype">bool</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#aa28b88a62ca95a1077a3697cd2b66352">isSampleGeometricallyInvalid</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">BsdfLobe</a> &amp;lobe, <span class="keyword">const</span> scene_rdl2::math::Vec3f &amp;wi)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"></span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">    /// This method returns true if a given sample is compatible with the given</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">    /// lobe and according to the geometric surface. It tests if</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">    /// wo and wi are in the same / opposite hemispheres wrt. Ng and checks</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">    /// whether this is compatible with the lobe type REFLECTION vs. TRANSMISSION.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">    /// This method always returns false for spherical lobes.</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_bsdf_slice.html#aa28b88a62ca95a1077a3697cd2b66352">   67</a></span><span class="comment"></span>    finline <span class="keywordtype">bool</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#aa28b88a62ca95a1077a3697cd2b66352">isSampleGeometricallyInvalid</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">BsdfLobe</a> &amp;lobe, <span class="keyword">const</span> scene_rdl2::math::Vec3f &amp;wi)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">return</span> (lobe.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a243adcd779e51d91675df9b7fb38ec02">getIsSpherical</a>()  ?  <span class="keyword">false</span>  :</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                !(lobe.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a12f4e216c7c4970c48d549e8888cd2de">getType</a>() &amp; ((<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf_slice.html#aae57c46748c04c956a8d48e9fb6dd4e4">mNg</a>, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf_slice.html#aa6ffd1ed5ef8b68a6cf35856f9beaf14">mWo</a>) * <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf_slice.html#aae57c46748c04c956a8d48e9fb6dd4e4">mNg</a>, wi) &gt; 0.0f)  ?</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                        <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896">BsdfLobe::REFLECTION</a> : <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aab7c69e9aa7cc2ad7de411f5b79c7c2e3">BsdfLobe::TRANSMISSION</a>)));</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a4d1d69764bb4fabe816691de7ca07549">   78</a></span>    finline <a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">BsdfLobe::Type</a> <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a4d1d69764bb4fabe816691de7ca07549">getSurfaceFlags</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_bsdf.html">Bsdf</a> &amp;bsdf, <span class="keyword">const</span> scene_rdl2::math::Vec3f &amp;wi)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"></span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">    /// Computes a lobe type flag that lets integrators ignore btdfs or brdfs</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">    /// based on whether wo and wi are respectively on the same or opposite side</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">    /// of the geometric surface (wrt. Ng).</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">    /// For spherical Bsdfs, this always returns the unmodified slice flags.</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a4d1d69764bb4fabe816691de7ca07549">   78</a></span><span class="comment"></span>    finline <a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">BsdfLobe::Type</a> <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a4d1d69764bb4fabe816691de7ca07549">getSurfaceFlags</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_bsdf.html">Bsdf</a> &amp;bsdf, <span class="keyword">const</span> scene_rdl2::math::Vec3f &amp;wi)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">return</span> (bsdf.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf.html#aa6f0fba50e2c95094a41e133b10221a6">getIsSpherical</a>()  ?  <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a376203cff2728c84f62a92513c0a1bc9">mFlags</a>  :</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">BsdfLobe::Type</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a376203cff2728c84f62a92513c0a1bc9">mFlags</a> &amp; ((<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf_slice.html#aae57c46748c04c956a8d48e9fb6dd4e4">mNg</a>, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf_slice.html#aa6ffd1ed5ef8b68a6cf35856f9beaf14">mWo</a>) * <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf_slice.html#aae57c46748c04c956a8d48e9fb6dd4e4">mNg</a>, wi) &gt; 0.0f)  ?</div>
@@ -110,8 +152,10 @@ $(function() {
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                <a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">BsdfLobe::Type</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a376203cff2728c84f62a92513c0a1bc9">mFlags</a> &amp; ((<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf_slice.html#aae57c46748c04c956a8d48e9fb6dd4e4">mNg</a>, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf_slice.html#aa6ffd1ed5ef8b68a6cf35856f9beaf14">mWo</a>) * <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf_slice.html#aae57c46748c04c956a8d48e9fb6dd4e4">mNg</a>, wi) &gt; 0.0f)  ?</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                            ~<a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aab7c69e9aa7cc2ad7de411f5b79c7c2e3">BsdfLobe::TRANSMISSION</a> : ~<a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896">BsdfLobe::REFLECTION</a>)));</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordtype">float</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a22c2f88d06df65d435a95b8ab59946be">computeShadowTerminatorFix</a>(<span class="keyword">const</span> scene_rdl2::math::Vec3f &amp;N, <span class="keyword">const</span> scene_rdl2::math::Vec3f &amp;wi) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"></span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">    /// Compute a visibility multipilier based on shadow terminator fix mode</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">    /// N should be the lobe&#39;s shading normal and wi is the incoming light direction</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment"></span>    <span class="keywordtype">float</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a22c2f88d06df65d435a95b8ab59946be">computeShadowTerminatorFix</a>(<span class="keyword">const</span> scene_rdl2::math::Vec3f &amp;N, <span class="keyword">const</span> scene_rdl2::math::Vec3f &amp;wi) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">protected</span>:</div>
@@ -169,9 +213,13 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_1_1shading_html_aee1b173843a9c9b500b07b17a9e8ce03"><div class="ttname"><a href="namespacemoonray_1_1shading.html#aee1b173843a9c9b500b07b17a9e8ce03">moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</a></div><div class="ttdeci">ISPC_UTIL_TYPEDEF_STRUCT(AshikhminShirleyDiffuseBsdfLobe, AshikhminShirleyDiffuseBsdfLobev)</div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ffbcf3a8cac23adad179e74a09117904.html">shading</a></li><li class="navelem"><a class="el" href="dir_475738c250334a966655aa4f1c4fd0a3.html">bsdf</a></li><li class="navelem"><a class="el" href="_bsdf_slice_8h.html">BsdfSlice.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

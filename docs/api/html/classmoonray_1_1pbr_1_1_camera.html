@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html">Camera</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_camera.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1pbr_1_1_camera-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::pbr::Camera Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -110,7 +128,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a49d6abec3456c2e323755e232db37449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a9e7036bcf19f02c993a19899d6f1e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a7a9e7036bcf19f02c993a19899d6f1e9">update</a> (const scene_rdl2::math::Mat4d &amp;world2render)</td></tr>
 <tr class="separator:a7a9e7036bcf19f02c993a19899d6f1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2277cca3dc4481fac4754c3769da2f2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a2277cca3dc4481fac4754c3769da2f2a">createRay</a> (<a class="el" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html">mcrt_common::RayDifferential</a> *dstRay, float <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, float <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, float time, float lensU, float lensV, bool createDifferentials) const</td></tr>
+<tr class="memitem:a2277cca3dc4481fac4754c3769da2f2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a2277cca3dc4481fac4754c3769da2f2a">createRay</a> (<a class="el" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html">mcrt_common::RayDifferential</a> *dstRay, float x, float y, float time, float lensU, float lensV, bool createDifferentials) const</td></tr>
 <tr class="memdesc:a2277cca3dc4481fac4754c3769da2f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a ray given (x, y) coordinates in region space.  <a href="classmoonray_1_1pbr_1_1_camera.html#a2277cca3dc4481fac4754c3769da2f2a">More...</a><br /></td></tr>
 <tr class="separator:a2277cca3dc4481fac4754c3769da2f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a508f52013652bfb239f4dd8fe23289e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a508f52013652bfb239f4dd8fe23289e0">getIsDofEnabled</a> () const</td></tr>
@@ -141,6 +159,60 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aadde998ca12067a6be42934b40905d2f"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Mat4d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#aadde998ca12067a6be42934b40905d2f">computeC2W</a> (float t) const</td></tr>
 <tr class="memdesc:aadde998ca12067a6be42934b40905d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute W &lt;--&gt; C matrices at time t.  <a href="classmoonray_1_1pbr_1_1_camera.html#aadde998ca12067a6be42934b40905d2f">More...</a><br /></td></tr>
 <tr class="separator:aadde998ca12067a6be42934b40905d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a90b5ba015115128dd5f31f44c12f16f1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a90b5ba015115128dd5f31f44c12f16f1">getIsDofEnabledImpl</a> () const =0</td></tr>
+<tr class="separator:a90b5ba015115128dd5f31f44c12f16f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf68532f357d6a67f5121b62b883e8e7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#acf68532f357d6a67f5121b62b883e8e7">hasFrustumImpl</a> () const</td></tr>
+<tr class="separator:acf68532f357d6a67f5121b62b883e8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a853cc97cd28e3dc9b83c5361f195f2b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a853cc97cd28e3dc9b83c5361f195f2b0">computeFrustumImpl</a> (<a class="el" href="structmoonray_1_1mcrt__common_1_1_frustum.html">mcrt_common::Frustum</a> *frust, float t, bool useRenderRegion) const</td></tr>
+<tr class="separator:a853cc97cd28e3dc9b83c5361f195f2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163028af146df04bf90622036b39a9df"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a163028af146df04bf90622036b39a9df">bakeUvMapsImpl</a> ()</td></tr>
+<tr class="separator:a163028af146df04bf90622036b39a9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bf8382d51e762552194ccb99fc3cd6a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a8bf8382d51e762552194ccb99fc3cd6a">getRequiredPrimAttributesImpl</a> (<a class="el" href="namespacemoonray_1_1shading.html#a7118a091295d3ab536a51b5956c95fa2">shading::PerGeometryAttributeKeySet</a> &amp;keys) const</td></tr>
+<tr class="separator:a8bf8382d51e762552194ccb99fc3cd6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4247bcf5cca2105b4c77a6557e08197d"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a4247bcf5cca2105b4c77a6557e08197d">computeZDistanceImpl</a> (const scene_rdl2::math::Vec3f &amp;p, const scene_rdl2::math::Vec3f &amp;o, float time) const</td></tr>
+<tr class="separator:a4247bcf5cca2105b4c77a6557e08197d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af38ed8bc8409c8160ca58189261c6f72"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#af38ed8bc8409c8160ca58189261c6f72">updateImpl</a> (const scene_rdl2::math::Mat4d &amp;world2render)=0</td></tr>
+<tr class="separator:af38ed8bc8409c8160ca58189261c6f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d29be6f7df49ec2629c113d2d260c64"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a9d29be6f7df49ec2629c113d2d260c64">createRayImpl</a> (<a class="el" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html">mcrt_common::RayDifferential</a> *dstRay, float x, float y, float time, float lensU, float lensV) const =0</td></tr>
+<tr class="separator:a9d29be6f7df49ec2629c113d2d260c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ce9092dcc4e5a2f3258dfd1e301620"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_stereo_view_8h.html#a48f27f953d2313dbdc599ddf379e8c77">StereoView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a24ce9092dcc4e5a2f3258dfd1e301620">getStereoViewImpl</a> () const</td></tr>
+<tr class="separator:a24ce9092dcc4e5a2f3258dfd1e301620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac92d57f4ce9cb56ebee7122eedc9f739"><td class="memItemLeft" align="right" valign="top">const scene_rdl2::rdl2::Camera *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#ac92d57f4ce9cb56ebee7122eedc9f739">mRdlCamera</a></td></tr>
+<tr class="separator:ac92d57f4ce9cb56ebee7122eedc9f739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae217b730a214415713a209efba8e3f19"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#ae217b730a214415713a209efba8e3f19">mApertureWindowWidth</a></td></tr>
+<tr class="separator:ae217b730a214415713a209efba8e3f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3393c4322aa670ba7704dd42f5b563ea"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a3393c4322aa670ba7704dd42f5b563ea">mApertureWindowHeight</a></td></tr>
+<tr class="separator:a3393c4322aa670ba7704dd42f5b563ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb27eb0263d4eb9a745691da6273bb2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a3bb27eb0263d4eb9a745691da6273bb2">mRegionWindowWidth</a></td></tr>
+<tr class="separator:a3bb27eb0263d4eb9a745691da6273bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae005dcfc14eb34dacafec6de668ca68a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#ae005dcfc14eb34dacafec6de668ca68a">mRegionWindowHeight</a></td></tr>
+<tr class="separator:ae005dcfc14eb34dacafec6de668ca68a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18248bb8b8378a3de8ba974b72492131"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a18248bb8b8378a3de8ba974b72492131">mRegionToApertureOffsetX</a></td></tr>
+<tr class="separator:a18248bb8b8378a3de8ba974b72492131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d724a5ca6e96998b531cbdce5cd65ab"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a7d724a5ca6e96998b531cbdce5cd65ab">mRegionToApertureOffsetY</a></td></tr>
+<tr class="separator:a7d724a5ca6e96998b531cbdce5cd65ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ece6605c35fe0f63738c4a6498c9bc"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Mat4d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a08ece6605c35fe0f63738c4a6498c9bc">mCamera2World</a></td></tr>
+<tr class="separator:a08ece6605c35fe0f63738c4a6498c9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6662fb4602e2bbc3582241a7f586abe4"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Mat4d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a6662fb4602e2bbc3582241a7f586abe4">mWorld2Camera</a></td></tr>
+<tr class="separator:a6662fb4602e2bbc3582241a7f586abe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d31046cbb3a08ce609ac510e9cc9cd"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Mat4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#ac4d31046cbb3a08ce609ac510e9cc9cd">mCamera2Render</a></td></tr>
+<tr class="separator:ac4d31046cbb3a08ce609ac510e9cc9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b27a6ef8143f716062b7d8734fdf7b6"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Mat4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a5b27a6ef8143f716062b7d8734fdf7b6">mRender2Camera</a></td></tr>
+<tr class="separator:a5b27a6ef8143f716062b7d8734fdf7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a602708f7fa080bada05bd593429bea16"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Quaternion3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a602708f7fa080bada05bd593429bea16">mCameraClose2CameraOpenRot</a></td></tr>
+<tr class="separator:a602708f7fa080bada05bd593429bea16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9a19251878636c672281378633d0d6f"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Vec3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#ad9a19251878636c672281378633d0d6f">mCameraClose2CameraOpenTrans</a></td></tr>
+<tr class="separator:ad9a19251878636c672281378633d0d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70645b2a3e8b2975261f5b85aec82ac2"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Quaternion3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a70645b2a3e8b2975261f5b85aec82ac2">mCameraOpen2CameraCloseRot</a></td></tr>
+<tr class="separator:a70645b2a3e8b2975261f5b85aec82ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0f6f8cf16f7c6c32108fd2031fcebd5"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Vec3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html#af0f6f8cf16f7c6c32108fd2031fcebd5">mCameraOpen2CameraCloseTrans</a></td></tr>
+<tr class="separator:af0f6f8cf16f7c6c32108fd2031fcebd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -171,7 +243,24 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00034">34</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   34</span>                                                           :</div>
+<div class="line"><span class="lineno">   35</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ac92d57f4ce9cb56ebee7122eedc9f739">mRdlCamera</a>(rdlCamera),</div>
+<div class="line"><span class="lineno">   36</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ae217b730a214415713a209efba8e3f19">mApertureWindowWidth</a>(0.f),</div>
+<div class="line"><span class="lineno">   37</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a3393c4322aa670ba7704dd42f5b563ea">mApertureWindowHeight</a>(0.f),</div>
+<div class="line"><span class="lineno">   38</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a3bb27eb0263d4eb9a745691da6273bb2">mRegionWindowWidth</a>(0.f),</div>
+<div class="line"><span class="lineno">   39</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ae005dcfc14eb34dacafec6de668ca68a">mRegionWindowHeight</a>(0.f),</div>
+<div class="line"><span class="lineno">   40</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a18248bb8b8378a3de8ba974b72492131">mRegionToApertureOffsetX</a>(0.f),</div>
+<div class="line"><span class="lineno">   41</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a7d724a5ca6e96998b531cbdce5cd65ab">mRegionToApertureOffsetY</a>(0.f)</div>
+<div class="line"><span class="lineno">   42</span>    {</div>
+<div class="line"><span class="lineno">   43</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a18248bb8b8378a3de8ba974b72492131"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a18248bb8b8378a3de8ba974b72492131">moonray::pbr::Camera::mRegionToApertureOffsetX</a></div><div class="ttdeci">float mRegionToApertureOffsetX</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00167">Camera.h:167</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a3393c4322aa670ba7704dd42f5b563ea"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a3393c4322aa670ba7704dd42f5b563ea">moonray::pbr::Camera::mApertureWindowHeight</a></div><div class="ttdeci">float mApertureWindowHeight</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00164">Camera.h:164</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a3bb27eb0263d4eb9a745691da6273bb2"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a3bb27eb0263d4eb9a745691da6273bb2">moonray::pbr::Camera::mRegionWindowWidth</a></div><div class="ttdeci">float mRegionWindowWidth</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00165">Camera.h:165</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a7d724a5ca6e96998b531cbdce5cd65ab"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a7d724a5ca6e96998b531cbdce5cd65ab">moonray::pbr::Camera::mRegionToApertureOffsetY</a></div><div class="ttdeci">float mRegionToApertureOffsetY</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00168">Camera.h:168</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_ac92d57f4ce9cb56ebee7122eedc9f739"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#ac92d57f4ce9cb56ebee7122eedc9f739">moonray::pbr::Camera::mRdlCamera</a></div><div class="ttdeci">const scene_rdl2::rdl2::Camera * mRdlCamera</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00159">Camera.h:159</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_ae005dcfc14eb34dacafec6de668ca68a"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#ae005dcfc14eb34dacafec6de668ca68a">moonray::pbr::Camera::mRegionWindowHeight</a></div><div class="ttdeci">float mRegionWindowHeight</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00166">Camera.h:166</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_ae217b730a214415713a209efba8e3f19"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#ae217b730a214415713a209efba8e3f19">moonray::pbr::Camera::mApertureWindowWidth</a></div><div class="ttdeci">float mApertureWindowWidth</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00163">Camera.h:163</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a37493af3f692d74613535a6afd70e378" name="a37493af3f692d74613535a6afd70e378"></a>
@@ -250,7 +339,41 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00112">112</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  112</span>{ <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#a163028af146df04bf90622036b39a9df">bakeUvMapsImpl</a>(); }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a163028af146df04bf90622036b39a9df"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a163028af146df04bf90622036b39a9df">moonray::pbr::Camera::bakeUvMapsImpl</a></div><div class="ttdeci">virtual void bakeUvMapsImpl()</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8cc_source.html#l00133">Camera.cc:133</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a163028af146df04bf90622036b39a9df" name="a163028af146df04bf90622036b39a9df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a163028af146df04bf90622036b39a9df">&#9670;&#160;</a></span>bakeUvMapsImpl()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::pbr::Camera::bakeUvMapsImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classmoonray_1_1pbr_1_1_bake_camera.html#aeb3d0a02500b754e0cbc0f01406a3128">moonray::pbr::BakeCamera</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_camera_8cc_source.html#l00133">133</a> of file <a class="el" href="_camera_8cc_source.html">Camera.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  134</span>{</div>
+<div class="line"><span class="lineno">  135</span>    <span class="comment">// empty</span></div>
+<div class="line"><span class="lineno">  136</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aadde998ca12067a6be42934b40905d2f" name="aadde998ca12067a6be42934b40905d2f"></a>
@@ -280,7 +403,11 @@ Protected Member Functions</h2></td></tr>
 <p>Compute W &lt;--&gt; C matrices at time t. </p>
 
 <p class="definition">Definition at line <a class="el" href="_camera_8cc_source.html#l00121">121</a> of file <a class="el" href="_camera_8cc_source.html">Camera.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  122</span>{</div>
+<div class="line"><span class="lineno">  123</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#a74410b67f34febaf080dbc0f03a8332e">getRdlCamera</a>()-&gt;get(scene_rdl2::rdl2::Node::sNodeXformKey, t);</div>
+<div class="line"><span class="lineno">  124</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a74410b67f34febaf080dbc0f03a8332e"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a74410b67f34febaf080dbc0f03a8332e">moonray::pbr::Camera::getRdlCamera</a></div><div class="ttdeci">const scene_rdl2::rdl2::Camera * getRdlCamera() const</div><div class="ttdoc">Get to the scene_rdl2::rdl2::Camera.</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00051">Camera.h:51</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a00e04c695292164ec3d679ba52b6e47f" name="a00e04c695292164ec3d679ba52b6e47f"></a>
@@ -300,7 +427,26 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8cc_source.html#l00089">89</a> of file <a class="el" href="_camera_8cc_source.html">Camera.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   90</span>{</div>
+<div class="line"><span class="lineno">   91</span>    <span class="comment">// &quot;camera space at ray time&quot; --&gt; render space</span></div>
+<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#a360819c515b58f6c694a0193360b5e11">getMotionBlur</a>()) {</div>
+<div class="line"><span class="lineno">   93</span>        <span class="comment">// slerp rotation, lerp translation to compute camera(time) to camera(0) matrix</span></div>
+<div class="line"><span class="lineno">   94</span>        <span class="keyword">const</span> Quaternion3f r = slerp(Quaternion3f(scene_rdl2::math::one), <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a602708f7fa080bada05bd593429bea16">mCameraClose2CameraOpenRot</a>, time);</div>
+<div class="line"><span class="lineno">   95</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> t = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ad9a19251878636c672281378633d0d6f">mCameraClose2CameraOpenTrans</a> * time;</div>
+<div class="line"><span class="lineno">   96</span>        <span class="keyword">const</span> Mat4f cameraTime2CameraOpen = Mat4f(r, <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a9e759f29bca3ea7593c72a2acfb487a4">Vec4f</a>(t.x, t.y, t.z, 1.f));</div>
+<div class="line"><span class="lineno">   97</span>        <span class="comment">// Then apply camera to render transform</span></div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">return</span> cameraTime2CameraOpen * <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#acded1c42c910dc2a5654618f6213d942">getCamera2Render</a>();</div>
+<div class="line"><span class="lineno">   99</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#acded1c42c910dc2a5654618f6213d942">getCamera2Render</a>();</div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+<div class="line"><span class="lineno">  102</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a360819c515b58f6c694a0193360b5e11"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a360819c515b58f6c694a0193360b5e11">moonray::pbr::Camera::getMotionBlur</a></div><div class="ttdeci">bool getMotionBlur() const</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8cc_source.html#l00145">Camera.cc:145</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a602708f7fa080bada05bd593429bea16"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a602708f7fa080bada05bd593429bea16">moonray::pbr::Camera::mCameraClose2CameraOpenRot</a></div><div class="ttdeci">scene_rdl2::math::Quaternion3f mCameraClose2CameraOpenRot</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00177">Camera.h:177</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_acded1c42c910dc2a5654618f6213d942"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#acded1c42c910dc2a5654618f6213d942">moonray::pbr::Camera::getCamera2Render</a></div><div class="ttdeci">const scene_rdl2::math::Mat4f &amp; getCamera2Render() const</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00072">Camera.h:72</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_ad9a19251878636c672281378633d0d6f"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#ad9a19251878636c672281378633d0d6f">moonray::pbr::Camera::mCameraClose2CameraOpenTrans</a></div><div class="ttdeci">scene_rdl2::math::Vec3f mCameraClose2CameraOpenTrans</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00178">Camera.h:178</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a9e759f29bca3ea7593c72a2acfb487a4"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a9e759f29bca3ea7593c72a2acfb487a4">moonray::geom::Vec4f</a></div><div class="ttdeci">scene_rdl2::math::Vec4f Vec4f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00041">Types.h:41</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a644b7fe2cc48bb06171f1410224c5b41" name="a644b7fe2cc48bb06171f1410224c5b41"></a>
@@ -344,7 +490,60 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00107">107</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  108</span>    {</div>
+<div class="line"><span class="lineno">  109</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#a853cc97cd28e3dc9b83c5361f195f2b0">computeFrustumImpl</a>(frust, t, useRenderRegion);</div>
+<div class="line"><span class="lineno">  110</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a853cc97cd28e3dc9b83c5361f195f2b0"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a853cc97cd28e3dc9b83c5361f195f2b0">moonray::pbr::Camera::computeFrustumImpl</a></div><div class="ttdeci">virtual void computeFrustumImpl(mcrt_common::Frustum *frust, float t, bool useRenderRegion) const</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8cc_source.html#l00127">Camera.cc:127</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a853cc97cd28e3dc9b83c5361f195f2b0" name="a853cc97cd28e3dc9b83c5361f195f2b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a853cc97cd28e3dc9b83c5361f195f2b0">&#9670;&#160;</a></span>computeFrustumImpl()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::pbr::Camera::computeFrustumImpl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmoonray_1_1mcrt__common_1_1_frustum.html">mcrt_common::Frustum</a> *&#160;</td>
+          <td class="paramname"><em>frust</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useRenderRegion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classmoonray_1_1pbr_1_1_perspective_camera.html#a8a78a39e022be7f3343a430e1835e8c3">moonray::pbr::PerspectiveCamera</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_camera_8cc_source.html#l00127">127</a> of file <a class="el" href="_camera_8cc_source.html">Camera.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  128</span>{</div>
+<div class="line"><span class="lineno">  129</span>    <span class="keywordflow">throw</span> scene_rdl2::except::NotImplementedError(<span class="stringliteral">&quot;No frustum implemented for this camera type.&quot;</span>);</div>
+<div class="line"><span class="lineno">  130</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a49d6abec3456c2e323755e232db37449" name="a49d6abec3456c2e323755e232db37449"></a>
@@ -364,7 +563,23 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8cc_source.html#l00105">105</a> of file <a class="el" href="_camera_8cc_source.html">Camera.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  106</span>{</div>
+<div class="line"><span class="lineno">  107</span>    <span class="comment">// render space -&gt; &quot;camera space at ray time&quot;</span></div>
+<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#a360819c515b58f6c694a0193360b5e11">getMotionBlur</a>()) {</div>
+<div class="line"><span class="lineno">  109</span>        <span class="comment">// slerp rotation, lerp translation to compute camera(0) to camera(time) matrix</span></div>
+<div class="line"><span class="lineno">  110</span>        <span class="keyword">const</span> Quaternion3f r = slerp(Quaternion3f(scene_rdl2::math::one), <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a70645b2a3e8b2975261f5b85aec82ac2">mCameraOpen2CameraCloseRot</a>, time);</div>
+<div class="line"><span class="lineno">  111</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> t = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#af0f6f8cf16f7c6c32108fd2031fcebd5">mCameraOpen2CameraCloseTrans</a> * time;</div>
+<div class="line"><span class="lineno">  112</span>        <span class="keyword">const</span> Mat4f cameraOpen2CameraTime = Mat4f(r, <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a9e759f29bca3ea7593c72a2acfb487a4">Vec4f</a>(t.x, t.y, t.z, 1.f));</div>
+<div class="line"><span class="lineno">  113</span>        <span class="comment">// Then apply camera to render transform</span></div>
+<div class="line"><span class="lineno">  114</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#a6301af38923a545ce4e8690bf1b3059c">getRender2Camera</a>() * cameraOpen2CameraTime;</div>
+<div class="line"><span class="lineno">  115</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  116</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#a6301af38923a545ce4e8690bf1b3059c">getRender2Camera</a>();</div>
+<div class="line"><span class="lineno">  117</span>    }</div>
+<div class="line"><span class="lineno">  118</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a6301af38923a545ce4e8690bf1b3059c"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a6301af38923a545ce4e8690bf1b3059c">moonray::pbr::Camera::getRender2Camera</a></div><div class="ttdeci">const scene_rdl2::math::Mat4f &amp; getRender2Camera() const</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00073">Camera.h:73</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a70645b2a3e8b2975261f5b85aec82ac2"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a70645b2a3e8b2975261f5b85aec82ac2">moonray::pbr::Camera::mCameraOpen2CameraCloseRot</a></div><div class="ttdeci">scene_rdl2::math::Quaternion3f mCameraOpen2CameraCloseRot</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00179">Camera.h:179</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_af0f6f8cf16f7c6c32108fd2031fcebd5"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#af0f6f8cf16f7c6c32108fd2031fcebd5">moonray::pbr::Camera::mCameraOpen2CameraCloseTrans</a></div><div class="ttdeci">scene_rdl2::math::Vec3f mCameraOpen2CameraCloseTrans</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00180">Camera.h:180</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7533ded6327b1a43387d79ba6c9621f7" name="a7533ded6327b1a43387d79ba6c9621f7"></a>
@@ -401,7 +616,65 @@ Protected Member Functions</h2></td></tr>
 <p >Given a point p in render space, compute its z-distance from the camera at ray time t. For projective cameras, this is the value typically computed in "depth" maps. For non-projective cameras the function returns the euclidean distance between p and the render space ray origin o. The ray origin is needed to support cameras that do no have a constant location (such as the <a class="el" href="classmoonray_1_1pbr_1_1_bake_camera.html">BakeCamera</a>). </p>
 
 <p class="definition">Definition at line <a class="el" href="_camera_8cc_source.html#l00152">152</a> of file <a class="el" href="_camera_8cc_source.html">Camera.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  153</span>{</div>
+<div class="line"><span class="lineno">  154</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#a4247bcf5cca2105b4c77a6557e08197d">computeZDistanceImpl</a>(p, o, time);</div>
+<div class="line"><span class="lineno">  155</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a4247bcf5cca2105b4c77a6557e08197d"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a4247bcf5cca2105b4c77a6557e08197d">moonray::pbr::Camera::computeZDistanceImpl</a></div><div class="ttdeci">virtual float computeZDistanceImpl(const scene_rdl2::math::Vec3f &amp;p, const scene_rdl2::math::Vec3f &amp;o, float time) const</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8cc_source.html#l00158">Camera.cc:158</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4247bcf5cca2105b4c77a6557e08197d" name="a4247bcf5cca2105b4c77a6557e08197d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4247bcf5cca2105b4c77a6557e08197d">&#9670;&#160;</a></span>computeZDistanceImpl()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::pbr::Camera::computeZDistanceImpl </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Vec3f &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const scene_rdl2::math::Vec3f &amp;&#160;</td>
+          <td class="paramname"><em>o</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classmoonray_1_1pbr_1_1_projective_camera.html#a5b2528f86edd5931ebf48525355237cb">moonray::pbr::ProjectiveCamera</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_camera_8cc_source.html#l00158">158</a> of file <a class="el" href="_camera_8cc_source.html">Camera.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  159</span>{</div>
+<div class="line"><span class="lineno">  160</span>    <span class="comment">// The default implemenation computes the euclidean distance between</span></div>
+<div class="line"><span class="lineno">  161</span>    <span class="comment">// the ray hit point p, and the ray origin o.  This should be a good</span></div>
+<div class="line"><span class="lineno">  162</span>    <span class="comment">// default for all but projective cameras.  It assumes that the camera</span></div>
+<div class="line"><span class="lineno">  163</span>    <span class="comment">// space has no scales, which ensures that distance in render space is equal</span></div>
+<div class="line"><span class="lineno">  164</span>    <span class="comment">// to distance in all camera spaces.  So the time parameter is ignored.</span></div>
+<div class="line"><span class="lineno">  165</span>    <span class="keywordflow">return</span> (p - o).length();</div>
+<div class="line"><span class="lineno">  166</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2277cca3dc4481fac4754c3769da2f2a" name="a2277cca3dc4481fac4754c3769da2f2a"></a>
@@ -471,6 +744,80 @@ Protected Member Functions</h2></td></tr>
 <p>Create a ray given (x, y) coordinates in region space. </p>
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00083">83</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   90</span>    {</div>
+<div class="line"><span class="lineno">   91</span> </div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>        <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#a9d29be6f7df49ec2629c113d2d260c64">createRayImpl</a>(dstRay, x + <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a18248bb8b8378a3de8ba974b72492131">mRegionToApertureOffsetX</a>,</div>
+<div class="line"><span class="lineno">   94</span>                      y + <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a7d724a5ca6e96998b531cbdce5cd65ab">mRegionToApertureOffsetY</a>,</div>
+<div class="line"><span class="lineno">   95</span>                      time, lensU, lensV);</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>        <span class="comment">// turn off ray differentials if unwanted (uncommon case)</span></div>
+<div class="line"><span class="lineno">   98</span>        dstRay-&gt;mFlags.set(<a class="code hl_enumvalue" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#a8a6d55cc9c5ccd24c3a3f087e905bfa6a34f012539df9a567811114ed47cfb208">mcrt_common::RayDifferential::HAS_DIFFERENTIALS</a>, createDifferentials);</div>
+<div class="line"><span class="lineno">   99</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_ray_differential_html_a8a6d55cc9c5ccd24c3a3f087e905bfa6a34f012539df9a567811114ed47cfb208"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#a8a6d55cc9c5ccd24c3a3f087e905bfa6a34f012539df9a567811114ed47cfb208">moonray::mcrt_common::RayDifferential::HAS_DIFFERENTIALS</a></div><div class="ttdeci">@ HAS_DIFFERENTIALS</div><div class="ttdef"><b>Definition:</b> <a href="_ray_8h_source.html#l00238">Ray.h:238</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a9d29be6f7df49ec2629c113d2d260c64"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a9d29be6f7df49ec2629c113d2d260c64">moonray::pbr::Camera::createRayImpl</a></div><div class="ttdeci">virtual void createRayImpl(mcrt_common::RayDifferential *dstRay, float x, float y, float time, float lensU, float lensV) const =0</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9d29be6f7df49ec2629c113d2d260c64" name="a9d29be6f7df49ec2629c113d2d260c64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d29be6f7df49ec2629c113d2d260c64">&#9670;&#160;</a></span>createRayImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void moonray::pbr::Camera::createRayImpl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html">mcrt_common::RayDifferential</a> *&#160;</td>
+          <td class="paramname"><em>dstRay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lensU</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lensV</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classmoonray_1_1pbr_1_1_projective_camera.html#acb1bc9f6eec22b6b128dd67d9869e492">moonray::pbr::ProjectiveCamera</a>, <a class="el" href="classmoonray_1_1pbr_1_1_bake_camera.html#a6551a6cbb7b0795a81a58eab32af05b1">moonray::pbr::BakeCamera</a>, <a class="el" href="classmoonray_1_1pbr_1_1_dome_master3_d_camera.html#aec8acd1c207e1341cae3edeac60167ae">moonray::pbr::DomeMaster3DCamera</a>, and <a class="el" href="classmoonray_1_1pbr_1_1_spherical_camera.html#ab5adf74fbc079fd8f6578b83aea88acb">moonray::pbr::SphericalCamera</a>.</p>
 
 </div>
 </div>
@@ -498,7 +845,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00057">57</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   57</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a3393c4322aa670ba7704dd42f5b563ea">mApertureWindowHeight</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acacd6765baf6d821ae5ef275de998ef4" name="acacd6765baf6d821ae5ef275de998ef4"></a>
@@ -525,7 +873,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00056">56</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   56</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ae217b730a214415713a209efba8e3f19">mApertureWindowWidth</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acded1c42c910dc2a5654618f6213d942" name="acded1c42c910dc2a5654618f6213d942"></a>
@@ -552,7 +901,9 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00072">72</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   72</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ac4d31046cbb3a08ce609ac510e9cc9cd">mCamera2Render</a>; }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_ac4d31046cbb3a08ce609ac510e9cc9cd"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#ac4d31046cbb3a08ce609ac510e9cc9cd">moonray::pbr::Camera::mCamera2Render</a></div><div class="ttdeci">scene_rdl2::math::Mat4f mCamera2Render</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00173">Camera.h:173</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8bdf8a905f68e8035b49cdaeb320fdb3" name="a8bdf8a905f68e8035b49cdaeb320fdb3"></a>
@@ -577,10 +928,12 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Returns the transforms to go between world space, render space and camera-space at shutter-open (t=0) (where t is expressed in ray time; see createRayImpl() below). Whether we render from the center/left/right stereo view, camera space is always the same and defined by the center camera (as when stereo is disabled). The camera view translation due to the interocular distance is part of the camera projection transform (C2S). </p>
+<p >Returns the transforms to go between world space, render space and camera-space at shutter-open (t=0) (where t is expressed in ray time; see <a class="el" href="classmoonray_1_1pbr_1_1_camera.html#a9d29be6f7df49ec2629c113d2d260c64">createRayImpl()</a> below). Whether we render from the center/left/right stereo view, camera space is always the same and defined by the center camera (as when stereo is disabled). The camera view translation due to the interocular distance is part of the camera projection transform (C2S). </p>
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00070">70</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   70</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a08ece6605c35fe0f63738c4a6498c9bc">mCamera2World</a>; }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a08ece6605c35fe0f63738c4a6498c9bc"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a08ece6605c35fe0f63738c4a6498c9bc">moonray::pbr::Camera::mCamera2World</a></div><div class="ttdeci">scene_rdl2::math::Mat4d mCamera2World</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00171">Camera.h:171</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6fa4b38f35b08fcc6d30e5f1dafac954" name="a6fa4b38f35b08fcc6d30e5f1dafac954"></a>
@@ -607,7 +960,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00104">104</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  104</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ac92d57f4ce9cb56ebee7122eedc9f739">mRdlCamera</a>-&gt;get(scene_rdl2::rdl2::Camera::sFarKey); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a508f52013652bfb239f4dd8fe23289e0" name="a508f52013652bfb239f4dd8fe23289e0"></a>
@@ -634,6 +988,35 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00101">101</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  101</span>{  <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#a90b5ba015115128dd5f31f44c12f16f1">getIsDofEnabledImpl</a>(); }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a90b5ba015115128dd5f31f44c12f16f1"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a90b5ba015115128dd5f31f44c12f16f1">moonray::pbr::Camera::getIsDofEnabledImpl</a></div><div class="ttdeci">virtual bool getIsDofEnabledImpl() const =0</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a90b5ba015115128dd5f31f44c12f16f1" name="a90b5ba015115128dd5f31f44c12f16f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b5ba015115128dd5f31f44c12f16f1">&#9670;&#160;</a></span>getIsDofEnabledImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool moonray::pbr::Camera::getIsDofEnabledImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classmoonray_1_1pbr_1_1_bake_camera.html#a0d7ed07ee84797731b00bde9dc87be36">moonray::pbr::BakeCamera</a>, <a class="el" href="classmoonray_1_1pbr_1_1_dome_master3_d_camera.html#a520a833d7708d3fef7197253e340bcb5">moonray::pbr::DomeMaster3DCamera</a>, <a class="el" href="classmoonray_1_1pbr_1_1_projective_camera.html#aed2944eb5bf43fb7410f7d964f14a6c7">moonray::pbr::ProjectiveCamera</a>, and <a class="el" href="classmoonray_1_1pbr_1_1_spherical_camera.html#a003bc2c259e13849ad3de9e5bf2e43a7">moonray::pbr::SphericalCamera</a>.</p>
 
 </div>
 </div>
@@ -653,7 +1036,11 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8cc_source.html#l00145">145</a> of file <a class="el" href="_camera_8cc_source.html">Camera.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  146</span>{</div>
+<div class="line"><span class="lineno">  147</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ac92d57f4ce9cb56ebee7122eedc9f739">mRdlCamera</a>-&gt;getSceneClass().getSceneContext()-&gt;getSceneVariables().get(</div>
+<div class="line"><span class="lineno">  148</span>        scene_rdl2::rdl2::SceneVariables::sEnableMotionBlur);</div>
+<div class="line"><span class="lineno">  149</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad6facffa861f29953bc3373a0793417c" name="ad6facffa861f29953bc3373a0793417c"></a>
@@ -680,7 +1067,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00103">103</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  103</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ac92d57f4ce9cb56ebee7122eedc9f739">mRdlCamera</a>-&gt;get(scene_rdl2::rdl2::Camera::sNearKey); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a74410b67f34febaf080dbc0f03a8332e" name="a74410b67f34febaf080dbc0f03a8332e"></a>
@@ -709,7 +1097,8 @@ Protected Member Functions</h2></td></tr>
 <p>Get to the scene_rdl2::rdl2::Camera. </p>
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00051">51</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   51</span>{  <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ac92d57f4ce9cb56ebee7122eedc9f739">mRdlCamera</a>;  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a489f51f290ad8561cc6f7fd1ed6633f4" name="a489f51f290ad8561cc6f7fd1ed6633f4"></a>
@@ -736,7 +1125,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00060">60</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   60</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a18248bb8b8378a3de8ba974b72492131">mRegionToApertureOffsetX</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4c9da81e39f8da0f1806c282daadf2c9" name="a4c9da81e39f8da0f1806c282daadf2c9"></a>
@@ -763,7 +1153,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00061">61</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   61</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a7d724a5ca6e96998b531cbdce5cd65ab">mRegionToApertureOffsetY</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a701d50cd4f8feb752bf5652396bc11be" name="a701d50cd4f8feb752bf5652396bc11be"></a>
@@ -790,7 +1181,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00059">59</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   59</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ae005dcfc14eb34dacafec6de668ca68a">mRegionWindowHeight</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae36265c50126df98fee5c46a7eb07899" name="ae36265c50126df98fee5c46a7eb07899"></a>
@@ -817,7 +1209,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00058">58</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   58</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a3bb27eb0263d4eb9a745691da6273bb2">mRegionWindowWidth</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6301af38923a545ce4e8690bf1b3059c" name="a6301af38923a545ce4e8690bf1b3059c"></a>
@@ -844,7 +1237,9 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00073">73</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   73</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a5b27a6ef8143f716062b7d8734fdf7b6">mRender2Camera</a>; }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a5b27a6ef8143f716062b7d8734fdf7b6"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a5b27a6ef8143f716062b7d8734fdf7b6">moonray::pbr::Camera::mRender2Camera</a></div><div class="ttdeci">scene_rdl2::math::Mat4f mRender2Camera</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00174">Camera.h:174</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a40fe45ec15e36ad131278554796dc257" name="a40fe45ec15e36ad131278554796dc257"></a>
@@ -872,7 +1267,44 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00113">113</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  114</span>    {</div>
+<div class="line"><span class="lineno">  115</span>        <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#a8bf8382d51e762552194ccb99fc3cd6a">getRequiredPrimAttributesImpl</a>(keys);</div>
+<div class="line"><span class="lineno">  116</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a8bf8382d51e762552194ccb99fc3cd6a"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a8bf8382d51e762552194ccb99fc3cd6a">moonray::pbr::Camera::getRequiredPrimAttributesImpl</a></div><div class="ttdeci">virtual void getRequiredPrimAttributesImpl(shading::PerGeometryAttributeKeySet &amp;keys) const</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8cc_source.html#l00139">Camera.cc:139</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8bf8382d51e762552194ccb99fc3cd6a" name="a8bf8382d51e762552194ccb99fc3cd6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf8382d51e762552194ccb99fc3cd6a">&#9670;&#160;</a></span>getRequiredPrimAttributesImpl()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::pbr::Camera::getRequiredPrimAttributesImpl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemoonray_1_1shading.html#a7118a091295d3ab536a51b5956c95fa2">shading::PerGeometryAttributeKeySet</a> &amp;&#160;</td>
+          <td class="paramname"><em>keys</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classmoonray_1_1pbr_1_1_bake_camera.html#ad71b8c9e0e0b7da968d6b3d162385eee">moonray::pbr::BakeCamera</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_camera_8cc_source.html#l00139">139</a> of file <a class="el" href="_camera_8cc_source.html">Camera.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  140</span>{</div>
+<div class="line"><span class="lineno">  141</span>    <span class="comment">// empty</span></div>
+<div class="line"><span class="lineno">  142</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac2fe39ec796c69083920b6498c3e19c4" name="ac2fe39ec796c69083920b6498c3e19c4"></a>
@@ -899,7 +1331,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00118">118</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  118</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ac92d57f4ce9cb56ebee7122eedc9f739">mRdlCamera</a>-&gt;get( scene_rdl2::rdl2::Camera::sMbShutterBiasKey ); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a26904fce5d9486c3daf8694ae1bb9cf1" name="a26904fce5d9486c3daf8694ae1bb9cf1"></a>
@@ -926,7 +1359,41 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00120">120</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  121</span>    {</div>
+<div class="line"><span class="lineno">  122</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#a24ce9092dcc4e5a2f3258dfd1e301620">getStereoViewImpl</a>();</div>
+<div class="line"><span class="lineno">  123</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a24ce9092dcc4e5a2f3258dfd1e301620"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a24ce9092dcc4e5a2f3258dfd1e301620">moonray::pbr::Camera::getStereoViewImpl</a></div><div class="ttdeci">virtual StereoView getStereoViewImpl() const</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00157">Camera.h:157</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a24ce9092dcc4e5a2f3258dfd1e301620" name="a24ce9092dcc4e5a2f3258dfd1e301620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24ce9092dcc4e5a2f3258dfd1e301620">&#9670;&#160;</a></span>getStereoViewImpl()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="_stereo_view_8h.html#a48f27f953d2313dbdc599ddf379e8c77">StereoView</a> moonray::pbr::Camera::getStereoViewImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classmoonray_1_1pbr_1_1_dome_master3_d_camera.html#a2843631997a4793b7265d57cab3e49e2">moonray::pbr::DomeMaster3DCamera</a>, and <a class="el" href="classmoonray_1_1pbr_1_1_perspective_camera.html#a770359bc68dc0989531bd28500adf899">moonray::pbr::PerspectiveCamera</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00157">157</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  157</span>{ <span class="keywordflow">return</span> StereoView::CENTER; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7aa905b7a477c8f6d26e8ce8cb3d12b0" name="a7aa905b7a477c8f6d26e8ce8cb3d12b0"></a>
@@ -953,7 +1420,9 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00071">71</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   71</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a6662fb4602e2bbc3582241a7f586abe4">mWorld2Camera</a>; }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a6662fb4602e2bbc3582241a7f586abe4"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a6662fb4602e2bbc3582241a7f586abe4">moonray::pbr::Camera::mWorld2Camera</a></div><div class="ttdeci">scene_rdl2::math::Mat4d mWorld2Camera</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00172">Camera.h:172</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a80533e8591b039f05551a66558f5e571" name="a80533e8591b039f05551a66558f5e571"></a>
@@ -980,7 +1449,39 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00106">106</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  106</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#acf68532f357d6a67f5121b62b883e8e7">hasFrustumImpl</a>(); }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_acf68532f357d6a67f5121b62b883e8e7"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#acf68532f357d6a67f5121b62b883e8e7">moonray::pbr::Camera::hasFrustumImpl</a></div><div class="ttdeci">virtual bool hasFrustumImpl() const</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00142">Camera.h:142</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acf68532f357d6a67f5121b62b883e8e7" name="acf68532f357d6a67f5121b62b883e8e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf68532f357d6a67f5121b62b883e8e7">&#9670;&#160;</a></span>hasFrustumImpl()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool moonray::pbr::Camera::hasFrustumImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classmoonray_1_1pbr_1_1_perspective_camera.html#a73d48c2f1b5c386ba2486f7f098a475d">moonray::pbr::PerspectiveCamera</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00142">142</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  142</span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a76c457547ee19644bb92aa626c7885d9" name="a76c457547ee19644bb92aa626c7885d9"></a>
@@ -1027,6 +1528,99 @@ Protected Member Functions</h2></td></tr>
 <p >Update all camera properties from the scene_rdl2::rdl2::Camera and given World to Render transform. </p>
 
 <p class="definition">Definition at line <a class="el" href="_camera_8cc_source.html#l00027">27</a> of file <a class="el" href="_camera_8cc_source.html">Camera.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>{</div>
+<div class="line"><span class="lineno">   29</span>    <span class="keywordtype">float</span> near = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#ad6facffa861f29953bc3373a0793417c">getNear</a>();</div>
+<div class="line"><span class="lineno">   30</span>    <span class="keywordtype">float</span> far = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#a6fa4b38f35b08fcc6d30e5f1dafac954">getFar</a>();</div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">if</span> (near &lt; 0.f || far &lt;= near) {</div>
+<div class="line"><span class="lineno">   32</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ac92d57f4ce9cb56ebee7122eedc9f739">mRdlCamera</a>-&gt;error(<span class="stringliteral">&quot;Camera has invalid near/far values.  &quot;</span>,</div>
+<div class="line"><span class="lineno">   33</span>            <span class="stringliteral">&quot;near: &quot;</span> , near , <span class="stringliteral">&quot; far: &quot;</span> , far);</div>
+<div class="line"><span class="lineno">   34</span>    }</div>
+<div class="line"><span class="lineno">   35</span> </div>
+<div class="line"><span class="lineno">   36</span>    <span class="comment">// Recompute world and trace transforms</span></div>
+<div class="line"><span class="lineno">   37</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a08ece6605c35fe0f63738c4a6498c9bc">mCamera2World</a> = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#aadde998ca12067a6be42934b40905d2f">computeC2W</a>(0.0f);</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordtype">bool</span> isRotTrans;</div>
+<div class="line"><span class="lineno">   39</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a6662fb4602e2bbc3582241a7f586abe4">mWorld2Camera</a> = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad319b9f67a7ae6e6f93741b03ffa35eb">rtInverse</a>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a08ece6605c35fe0f63738c4a6498c9bc">mCamera2World</a>, isRotTrans);</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">if</span> (!isRotTrans) {</div>
+<div class="line"><span class="lineno">   41</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ac92d57f4ce9cb56ebee7122eedc9f739">mRdlCamera</a>-&gt;warn(<span class="stringliteral">&quot;Camera has scale or shear, results may be non-deterministic\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+<div class="line"><span class="lineno">   43</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ac4d31046cbb3a08ce609ac510e9cc9cd">mCamera2Render</a> = toFloat(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a08ece6605c35fe0f63738c4a6498c9bc">mCamera2World</a> * world2render);</div>
+<div class="line"><span class="lineno">   44</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a5b27a6ef8143f716062b7d8734fdf7b6">mRender2Camera</a> = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad319b9f67a7ae6e6f93741b03ffa35eb">rtInverse</a>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ac4d31046cbb3a08ce609ac510e9cc9cd">mCamera2Render</a>);</div>
+<div class="line"><span class="lineno">   45</span> </div>
+<div class="line"><span class="lineno">   46</span>    <span class="comment">// Compute camera space transforms between shutter close</span></div>
+<div class="line"><span class="lineno">   47</span>    <span class="comment">// and shutter open</span></div>
+<div class="line"><span class="lineno">   48</span>    Mat4d cameraClose2World = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#aadde998ca12067a6be42934b40905d2f">computeC2W</a>(1.0f);</div>
+<div class="line"><span class="lineno">   49</span>    <span class="keyword">const</span> Mat4f cameraClose2CameraOpen = toFloat(cameraClose2World * <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#a7aa905b7a477c8f6d26e8ce8cb3d12b0">getWorld2Camera</a>());</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keyword">const</span> Mat4f cameraOpen2CameraClose = toFloat((cameraClose2World * <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#a7aa905b7a477c8f6d26e8ce8cb3d12b0">getWorld2Camera</a>()).inverse());</div>
+<div class="line"><span class="lineno">   51</span>    <span class="comment">// rotations</span></div>
+<div class="line"><span class="lineno">   52</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a602708f7fa080bada05bd593429bea16">mCameraClose2CameraOpenRot</a> = Quaternion3f(asVec3(cameraClose2CameraOpen.vx),</div>
+<div class="line"><span class="lineno">   53</span>                                              asVec3(cameraClose2CameraOpen.vy),</div>
+<div class="line"><span class="lineno">   54</span>                                              asVec3(cameraClose2CameraOpen.vz));</div>
+<div class="line"><span class="lineno">   55</span>    <span class="comment">// This quaternion could be computed as &lt;r, -i, -j, -k&gt; of</span></div>
+<div class="line"><span class="lineno">   56</span>    <span class="comment">// the previous one.  But for robustness reasons, compute it directly</span></div>
+<div class="line"><span class="lineno">   57</span>    <span class="comment">// from the source matrix.</span></div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a70645b2a3e8b2975261f5b85aec82ac2">mCameraOpen2CameraCloseRot</a> = Quaternion3f(asVec3(cameraOpen2CameraClose.vx),</div>
+<div class="line"><span class="lineno">   59</span>                                              asVec3(cameraOpen2CameraClose.vy),</div>
+<div class="line"><span class="lineno">   60</span>                                              asVec3(cameraOpen2CameraClose.vz));</div>
+<div class="line"><span class="lineno">   61</span>    <span class="comment">// When slerping two generic quaternions, a and b, this check is &quot;if (dot(a, b) &lt; 0.f)&quot;.</span></div>
+<div class="line"><span class="lineno">   62</span>    <span class="comment">// But since we are slerping these quaternions always and only with &lt;1, 0, 0, 0&gt;,</span></div>
+<div class="line"><span class="lineno">   63</span>    <span class="comment">// checking against the .r component is sufficient.  Both of these conditionals</span></div>
+<div class="line"><span class="lineno">   64</span>    <span class="comment">// should always be either both true or both false, but it is conceivably possible</span></div>
+<div class="line"><span class="lineno">   65</span>    <span class="comment">// that rounding errors could cause this to not be the case.</span></div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a602708f7fa080bada05bd593429bea16">mCameraClose2CameraOpenRot</a>.r &lt; 0.f) <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a602708f7fa080bada05bd593429bea16">mCameraClose2CameraOpenRot</a> *= -1.0f;</div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a70645b2a3e8b2975261f5b85aec82ac2">mCameraOpen2CameraCloseRot</a>.r &lt; 0.f) <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a70645b2a3e8b2975261f5b85aec82ac2">mCameraOpen2CameraCloseRot</a> *= -1.0f;</div>
+<div class="line"><span class="lineno">   68</span>    <span class="comment">// translations</span></div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ad9a19251878636c672281378633d0d6f">mCameraClose2CameraOpenTrans</a> = asVec3(cameraClose2CameraOpen.vw);</div>
+<div class="line"><span class="lineno">   70</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#af0f6f8cf16f7c6c32108fd2031fcebd5">mCameraOpen2CameraCloseTrans</a> = asVec3(cameraOpen2CameraClose.vw);</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>    <span class="keyword">const</span> scene_rdl2::rdl2::SceneVariables&amp; vars =</div>
+<div class="line"><span class="lineno">   73</span>        <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#a74410b67f34febaf080dbc0f03a8332e">getRdlCamera</a>()-&gt;getSceneClass().getSceneContext()-&gt;getSceneVariables();</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>    scene_rdl2::math::HalfOpenViewport aperture = vars.getRezedApertureWindow();</div>
+<div class="line"><span class="lineno">   76</span>    scene_rdl2::math::HalfOpenViewport region = vars.getRezedRegionWindow();</div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ae217b730a214415713a209efba8e3f19">mApertureWindowWidth</a> = aperture.width();</div>
+<div class="line"><span class="lineno">   79</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a3393c4322aa670ba7704dd42f5b563ea">mApertureWindowHeight</a> = aperture.height();</div>
+<div class="line"><span class="lineno">   80</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a3bb27eb0263d4eb9a745691da6273bb2">mRegionWindowWidth</a> = region.width();</div>
+<div class="line"><span class="lineno">   81</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#ae005dcfc14eb34dacafec6de668ca68a">mRegionWindowHeight</a> = region.height();</div>
+<div class="line"><span class="lineno">   82</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a18248bb8b8378a3de8ba974b72492131">mRegionToApertureOffsetX</a> = region.mMinX - aperture.mMinX;</div>
+<div class="line"><span class="lineno">   83</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_camera.html#a7d724a5ca6e96998b531cbdce5cd65ab">mRegionToApertureOffsetY</a> = region.mMinY - aperture.mMinY;</div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#af38ed8bc8409c8160ca58189261c6f72">updateImpl</a>(world2render);</div>
+<div class="line"><span class="lineno">   86</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a6fa4b38f35b08fcc6d30e5f1dafac954"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a6fa4b38f35b08fcc6d30e5f1dafac954">moonray::pbr::Camera::getFar</a></div><div class="ttdeci">float getFar() const</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00104">Camera.h:104</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_a7aa905b7a477c8f6d26e8ce8cb3d12b0"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#a7aa905b7a477c8f6d26e8ce8cb3d12b0">moonray::pbr::Camera::getWorld2Camera</a></div><div class="ttdeci">const scene_rdl2::math::Mat4d &amp; getWorld2Camera() const</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00071">Camera.h:71</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_aadde998ca12067a6be42934b40905d2f"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#aadde998ca12067a6be42934b40905d2f">moonray::pbr::Camera::computeC2W</a></div><div class="ttdeci">scene_rdl2::math::Mat4d computeC2W(float t) const</div><div class="ttdoc">Compute W &lt;--&gt; C matrices at time t.</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8cc_source.html#l00121">Camera.cc:121</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_ad6facffa861f29953bc3373a0793417c"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#ad6facffa861f29953bc3373a0793417c">moonray::pbr::Camera::getNear</a></div><div class="ttdeci">float getNear() const</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00103">Camera.h:103</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_camera_html_af38ed8bc8409c8160ca58189261c6f72"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_camera.html#af38ed8bc8409c8160ca58189261c6f72">moonray::pbr::Camera::updateImpl</a></div><div class="ttdeci">virtual void updateImpl(const scene_rdl2::math::Mat4d &amp;world2render)=0</div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_ad319b9f67a7ae6e6f93741b03ffa35eb"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ad319b9f67a7ae6e6f93741b03ffa35eb">moonray::pbr::rtInverse</a></div><div class="ttdeci">scene_rdl2::math::Mat4&lt; scene_rdl2::math::Vec4&lt; Scalar &gt; &gt; rtInverse(const scene_rdl2::math::Mat4&lt; scene_rdl2::math::Vec4&lt; Scalar &gt; &gt; &amp;m, bool &amp;res)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2core_2util_8h_source.html#l00443">Util.h:443</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af38ed8bc8409c8160ca58189261c6f72" name="af38ed8bc8409c8160ca58189261c6f72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af38ed8bc8409c8160ca58189261c6f72">&#9670;&#160;</a></span>updateImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void moonray::pbr::Camera::updateImpl </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Mat4d &amp;&#160;</td>
+          <td class="paramname"><em>world2render</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classmoonray_1_1pbr_1_1_bake_camera.html#a8a1416d662775c37f14d4c8e363dc6fa">moonray::pbr::BakeCamera</a>, <a class="el" href="classmoonray_1_1pbr_1_1_dome_master3_d_camera.html#ae2aa0ee76344390f4408d36f566852de">moonray::pbr::DomeMaster3DCamera</a>, <a class="el" href="classmoonray_1_1pbr_1_1_orthographic_camera.html#a1c22061136bcdaf40af2fa77cdc4438c">moonray::pbr::OrthographicCamera</a>, <a class="el" href="classmoonray_1_1pbr_1_1_perspective_camera.html#a005245535d4c9849a100dc3dc0fc987f">moonray::pbr::PerspectiveCamera</a>, <a class="el" href="classmoonray_1_1pbr_1_1_projective_camera.html#a4d25d445e27b09d0f3cc8332c2cf7c66">moonray::pbr::ProjectiveCamera</a>, and <a class="el" href="classmoonray_1_1pbr_1_1_spherical_camera.html#ad75788306cba6d3d0fba8375150f0610">moonray::pbr::SphericalCamera</a>.</p>
 
 </div>
 </div>
@@ -1048,6 +1642,370 @@ Protected Member Functions</h2></td></tr>
 <p>If true, lights need to be updated. </p>
 
 <p class="definition">Definition at line <a class="el" href="_camera_8cc_source.html#l00019">19</a> of file <a class="el" href="_camera_8cc_source.html">Camera.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>{</div>
+<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_camera.html#a74410b67f34febaf080dbc0f03a8332e">getRdlCamera</a>()-&gt;hasChanged(scene_rdl2::rdl2::Node::sNodeXformKey);</div>
+<div class="line"><span class="lineno">   22</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3393c4322aa670ba7704dd42f5b563ea" name="a3393c4322aa670ba7704dd42f5b563ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3393c4322aa670ba7704dd42f5b563ea">&#9670;&#160;</a></span>mApertureWindowHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::pbr::Camera::mApertureWindowHeight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00164">164</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="ae217b730a214415713a209efba8e3f19" name="ae217b730a214415713a209efba8e3f19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae217b730a214415713a209efba8e3f19">&#9670;&#160;</a></span>mApertureWindowWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::pbr::Camera::mApertureWindowWidth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00163">163</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="ac4d31046cbb3a08ce609ac510e9cc9cd" name="ac4d31046cbb3a08ce609ac510e9cc9cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4d31046cbb3a08ce609ac510e9cc9cd">&#9670;&#160;</a></span>mCamera2Render</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Mat4f moonray::pbr::Camera::mCamera2Render</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00173">173</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a08ece6605c35fe0f63738c4a6498c9bc" name="a08ece6605c35fe0f63738c4a6498c9bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ece6605c35fe0f63738c4a6498c9bc">&#9670;&#160;</a></span>mCamera2World</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Mat4d moonray::pbr::Camera::mCamera2World</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00171">171</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a602708f7fa080bada05bd593429bea16" name="a602708f7fa080bada05bd593429bea16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a602708f7fa080bada05bd593429bea16">&#9670;&#160;</a></span>mCameraClose2CameraOpenRot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Quaternion3f moonray::pbr::Camera::mCameraClose2CameraOpenRot</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00177">177</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="ad9a19251878636c672281378633d0d6f" name="ad9a19251878636c672281378633d0d6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9a19251878636c672281378633d0d6f">&#9670;&#160;</a></span>mCameraClose2CameraOpenTrans</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Vec3f moonray::pbr::Camera::mCameraClose2CameraOpenTrans</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00178">178</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a70645b2a3e8b2975261f5b85aec82ac2" name="a70645b2a3e8b2975261f5b85aec82ac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70645b2a3e8b2975261f5b85aec82ac2">&#9670;&#160;</a></span>mCameraOpen2CameraCloseRot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Quaternion3f moonray::pbr::Camera::mCameraOpen2CameraCloseRot</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00179">179</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="af0f6f8cf16f7c6c32108fd2031fcebd5" name="af0f6f8cf16f7c6c32108fd2031fcebd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0f6f8cf16f7c6c32108fd2031fcebd5">&#9670;&#160;</a></span>mCameraOpen2CameraCloseTrans</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Vec3f moonray::pbr::Camera::mCameraOpen2CameraCloseTrans</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00180">180</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="ac92d57f4ce9cb56ebee7122eedc9f739" name="ac92d57f4ce9cb56ebee7122eedc9f739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac92d57f4ce9cb56ebee7122eedc9f739">&#9670;&#160;</a></span>mRdlCamera</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const scene_rdl2::rdl2::Camera* moonray::pbr::Camera::mRdlCamera</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00159">159</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a18248bb8b8378a3de8ba974b72492131" name="a18248bb8b8378a3de8ba974b72492131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18248bb8b8378a3de8ba974b72492131">&#9670;&#160;</a></span>mRegionToApertureOffsetX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::pbr::Camera::mRegionToApertureOffsetX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00167">167</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a7d724a5ca6e96998b531cbdce5cd65ab" name="a7d724a5ca6e96998b531cbdce5cd65ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d724a5ca6e96998b531cbdce5cd65ab">&#9670;&#160;</a></span>mRegionToApertureOffsetY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::pbr::Camera::mRegionToApertureOffsetY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00168">168</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="ae005dcfc14eb34dacafec6de668ca68a" name="ae005dcfc14eb34dacafec6de668ca68a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae005dcfc14eb34dacafec6de668ca68a">&#9670;&#160;</a></span>mRegionWindowHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::pbr::Camera::mRegionWindowHeight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00166">166</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a3bb27eb0263d4eb9a745691da6273bb2" name="a3bb27eb0263d4eb9a745691da6273bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bb27eb0263d4eb9a745691da6273bb2">&#9670;&#160;</a></span>mRegionWindowWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::pbr::Camera::mRegionWindowWidth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00165">165</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a5b27a6ef8143f716062b7d8734fdf7b6" name="a5b27a6ef8143f716062b7d8734fdf7b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b27a6ef8143f716062b7d8734fdf7b6">&#9670;&#160;</a></span>mRender2Camera</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Mat4f moonray::pbr::Camera::mRender2Camera</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00174">174</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a6662fb4602e2bbc3582241a7f586abe4" name="a6662fb4602e2bbc3582241a7f586abe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6662fb4602e2bbc3582241a7f586abe4">&#9670;&#160;</a></span>mWorld2Camera</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Mat4d moonray::pbr::Camera::mWorld2Camera</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00172">172</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
 
 </div>
 </div>
@@ -1056,9 +2014,13 @@ Protected Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/camera/<a class="el" href="_camera_8cc_source.html">Camera.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_camera.html">Camera</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

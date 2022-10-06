@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading_1_1unittest.html">unittest</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1unittest_1_1_test_eval_attribute.html">TestEvalAttribute</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1unittest_1_1_test_eval_attribute.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -407,7 +423,42 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00399">399</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  400</span>{</div>
+<div class="line"><span class="lineno">  401</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  402</span> </div>
+<div class="line"><span class="lineno">  403</span>    scene_rdl2::rdl2::SceneContext ctx;</div>
+<div class="line"><span class="lineno">  404</span>    ctx.setDsoPath(ctx.getDsoPath() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
+<div class="line"><span class="lineno">  405</span>    scene_rdl2::rdl2::Map *map = ctx.createSceneObject(<span class="stringliteral">&quot;TestMap&quot;</span>, <span class="stringliteral">&quot;/map&quot;</span>)-&gt;asA&lt;scene_rdl2::rdl2::Map&gt;();</div>
+<div class="line"><span class="lineno">  406</span>    {</div>
+<div class="line"><span class="lineno">  407</span>        scene_rdl2::rdl2::SceneObject::UpdateGuard <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(map);</div>
+<div class="line"><span class="lineno">  408</span>        map-&gt;set(<span class="stringliteral">&quot;mode&quot;</span>, 7);</div>
+<div class="line"><span class="lineno">  409</span>        map-&gt;set(<span class="stringliteral">&quot;color2&quot;</span>, scene_rdl2::rdl2::Rgb(1.f, .5f, .25f));</div>
+<div class="line"><span class="lineno">  410</span>    }</div>
+<div class="line"><span class="lineno">  411</span>    scene_rdl2::rdl2::Map *map2 = ctx.createSceneObject(<span class="stringliteral">&quot;TestMap&quot;</span>, <span class="stringliteral">&quot;/map2&quot;</span>)-&gt;asA&lt;scene_rdl2::rdl2::Map&gt;();</div>
+<div class="line"><span class="lineno">  412</span>    {</div>
+<div class="line"><span class="lineno">  413</span>        scene_rdl2::rdl2::SceneObject::UpdateGuard <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(map2);</div>
+<div class="line"><span class="lineno">  414</span>        map2-&gt;set(<span class="stringliteral">&quot;mode&quot;</span>, 7);</div>
+<div class="line"><span class="lineno">  415</span>        map2-&gt;set(<span class="stringliteral">&quot;color2&quot;</span>, scene_rdl2::rdl2::Rgb(.5f, .5f, .5f));</div>
+<div class="line"><span class="lineno">  416</span>        map2-&gt;setBinding(<span class="stringliteral">&quot;color2&quot;</span>, map);</div>
+<div class="line"><span class="lineno">  417</span>    }</div>
+<div class="line"><span class="lineno">  418</span>    map2-&gt;applyUpdates();</div>
+<div class="line"><span class="lineno">  419</span>    {</div>
+<div class="line"><span class="lineno">  420</span>        moonray::shading::Statev statev;</div>
+<div class="line"><span class="lineno">  421</span>        <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ad0b8c0ebb4de2029dd12ef61e2f4004c">moonray::shading::Colorv</a> result;</div>
+<div class="line"><span class="lineno">  422</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a98b66f6dc23506252551035dbc90c747">moonray::shading::samplev</a>(map2, tls, &amp;statev, &amp;result);</div>
+<div class="line"><span class="lineno">  423</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (int) VLEN; ++i) {</div>
+<div class="line"><span class="lineno">  424</span>            CPPUNIT_ASSERT(result.r[i] == 0.5f);</div>
+<div class="line"><span class="lineno">  425</span>            CPPUNIT_ASSERT(result.g[i] == 0.25f);</div>
+<div class="line"><span class="lineno">  426</span>            CPPUNIT_ASSERT(result.b[i] == 0.125f);</div>
+<div class="line"><span class="lineno">  427</span>        }</div>
+<div class="line"><span class="lineno">  428</span>    }</div>
+<div class="line"><span class="lineno">  429</span>}</div>
+<div class="ttc" id="a_combine_displacement_8cc_html_acd36d7881ea8503d5c5824e7a5ad6c7e"><div class="ttname"><a href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a></div><div class="ttdeci">virtual void update()</div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_t_l_state_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a></div><div class="ttdef"><b>Definition:</b> <a href="_shading_t_l_state_8h_source.html#l00025">ShadingTLState.h:26</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_test_eval_attribute_8cc_03_html_a7b1c936e4b89946449c58c88d12303f2"><div class="ttname"><a href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">anonymous_namespace{TestEvalAttribute.cc}::getShadingTLS</a></div><div class="ttdeci">moonray::shading::TLState * getShadingTLS()</div><div class="ttdef"><b>Definition:</b> <a href="_test_eval_attribute_8cc_source.html#l00064">TestEvalAttribute.cc:64</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a98b66f6dc23506252551035dbc90c747"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a98b66f6dc23506252551035dbc90c747">moonray::shading::samplev</a></div><div class="ttdeci">void samplev(const scene_rdl2::rdl2::Map *map, shading::TLState *tls, const shading::Statev *statev, shading::Colorv *result)</div><div class="ttdoc">sample a map shader</div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_ad0b8c0ebb4de2029dd12ef61e2f4004c"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ad0b8c0ebb4de2029dd12ef61e2f4004c">moonray::shading::Colorv</a></div><div class="ttdeci">scene_rdl2::math::Colorv Colorv</div><div class="ttdef"><b>Definition:</b> <a href="_shadingv_8h_source.html#l00049">Shadingv.h:49</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a408573227e5f318cb8ac8dfc3ba5fc89" name="a408573227e5f318cb8ac8dfc3ba5fc89"></a>
@@ -426,7 +477,37 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00366">366</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  367</span>{</div>
+<div class="line"><span class="lineno">  368</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  369</span> </div>
+<div class="line"><span class="lineno">  370</span>    scene_rdl2::rdl2::SceneContext ctx;</div>
+<div class="line"><span class="lineno">  371</span>    ctx.setDsoPath(ctx.getDsoPath() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
+<div class="line"><span class="lineno">  372</span>    scene_rdl2::rdl2::Map *map = ctx.createSceneObject(<span class="stringliteral">&quot;TestMap&quot;</span>, <span class="stringliteral">&quot;/map&quot;</span>)-&gt;asA&lt;scene_rdl2::rdl2::Map&gt;();</div>
+<div class="line"><span class="lineno">  373</span>    {</div>
+<div class="line"><span class="lineno">  374</span>        scene_rdl2::rdl2::SceneObject::UpdateGuard <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(map);</div>
+<div class="line"><span class="lineno">  375</span>        map-&gt;set(<span class="stringliteral">&quot;mode&quot;</span>, 8);</div>
+<div class="line"><span class="lineno">  376</span>        map-&gt;set(<span class="stringliteral">&quot;float2&quot;</span>, .5f);</div>
+<div class="line"><span class="lineno">  377</span>    }</div>
+<div class="line"><span class="lineno">  378</span>    scene_rdl2::rdl2::Map *map2 = ctx.createSceneObject(<span class="stringliteral">&quot;TestMap&quot;</span>, <span class="stringliteral">&quot;/map2&quot;</span>)-&gt;asA&lt;scene_rdl2::rdl2::Map&gt;();</div>
+<div class="line"><span class="lineno">  379</span>    {</div>
+<div class="line"><span class="lineno">  380</span>        scene_rdl2::rdl2::SceneObject::UpdateGuard <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(map2);</div>
+<div class="line"><span class="lineno">  381</span>        map2-&gt;set(<span class="stringliteral">&quot;mode&quot;</span>, 8);</div>
+<div class="line"><span class="lineno">  382</span>        map2-&gt;set(<span class="stringliteral">&quot;float2&quot;</span>, .5f);</div>
+<div class="line"><span class="lineno">  383</span>        map2-&gt;setBinding(<span class="stringliteral">&quot;float2&quot;</span>, map);</div>
+<div class="line"><span class="lineno">  384</span>    }</div>
+<div class="line"><span class="lineno">  385</span>    map2-&gt;applyUpdates();</div>
+<div class="line"><span class="lineno">  386</span>    {</div>
+<div class="line"><span class="lineno">  387</span>        moonray::shading::Statev statev;</div>
+<div class="line"><span class="lineno">  388</span>        <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ad0b8c0ebb4de2029dd12ef61e2f4004c">moonray::shading::Colorv</a> result;</div>
+<div class="line"><span class="lineno">  389</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a98b66f6dc23506252551035dbc90c747">moonray::shading::samplev</a>(map2, tls, &amp;statev, &amp;result);</div>
+<div class="line"><span class="lineno">  390</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (int) VLEN; ++i) {</div>
+<div class="line"><span class="lineno">  391</span>            CPPUNIT_ASSERT(result.r[i] == 0.25);</div>
+<div class="line"><span class="lineno">  392</span>            CPPUNIT_ASSERT(result.g[i] == 0.25);</div>
+<div class="line"><span class="lineno">  393</span>            CPPUNIT_ASSERT(result.b[i] == 0.25);</div>
+<div class="line"><span class="lineno">  394</span>        }</div>
+<div class="line"><span class="lineno">  395</span>    }</div>
+<div class="line"><span class="lineno">  396</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a650e0f9f295cd21e5e5d1b47205fd0fc" name="a650e0f9f295cd21e5e5d1b47205fd0fc"></a>
@@ -445,7 +526,36 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00517">517</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  518</span>{</div>
+<div class="line"><span class="lineno">  519</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  520</span> </div>
+<div class="line"><span class="lineno">  521</span>    scene_rdl2::rdl2::SceneContext ctx;</div>
+<div class="line"><span class="lineno">  522</span>    ctx.setDsoPath(ctx.getDsoPath() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
+<div class="line"><span class="lineno">  523</span>    scene_rdl2::rdl2::Map *map = ctx.createSceneObject(<span class="stringliteral">&quot;TestMap&quot;</span>, <span class="stringliteral">&quot;/map&quot;</span>)-&gt;asA&lt;scene_rdl2::rdl2::Map&gt;();</div>
+<div class="line"><span class="lineno">  524</span>    {</div>
+<div class="line"><span class="lineno">  525</span>        scene_rdl2::rdl2::SceneObject::UpdateGuard <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(map);</div>
+<div class="line"><span class="lineno">  526</span>        map-&gt;set(<span class="stringliteral">&quot;mode&quot;</span>, 12);</div>
+<div class="line"><span class="lineno">  527</span>        map-&gt;set(<span class="stringliteral">&quot;vec22&quot;</span>, scene_rdl2::rdl2::Vec2f(.5f, .25f));</div>
+<div class="line"><span class="lineno">  528</span>    }</div>
+<div class="line"><span class="lineno">  529</span>    scene_rdl2::rdl2::Map *map2 = ctx.createSceneObject(<span class="stringliteral">&quot;TestMap&quot;</span>, <span class="stringliteral">&quot;/map2&quot;</span>)-&gt;asA&lt;scene_rdl2::rdl2::Map&gt;();</div>
+<div class="line"><span class="lineno">  530</span>    {</div>
+<div class="line"><span class="lineno">  531</span>        scene_rdl2::rdl2::SceneObject::UpdateGuard <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(map2);</div>
+<div class="line"><span class="lineno">  532</span>        map2-&gt;set(<span class="stringliteral">&quot;mode&quot;</span>, 12);</div>
+<div class="line"><span class="lineno">  533</span>        map2-&gt;set(<span class="stringliteral">&quot;vec22&quot;</span>, scene_rdl2::rdl2::Vec2f(.5f, .5f));</div>
+<div class="line"><span class="lineno">  534</span>        map2-&gt;setBinding(<span class="stringliteral">&quot;vec22&quot;</span>, map);</div>
+<div class="line"><span class="lineno">  535</span>    }</div>
+<div class="line"><span class="lineno">  536</span>    map2-&gt;applyUpdates();</div>
+<div class="line"><span class="lineno">  537</span>    {</div>
+<div class="line"><span class="lineno">  538</span>        moonray::shading::Statev statev;</div>
+<div class="line"><span class="lineno">  539</span>        <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ad0b8c0ebb4de2029dd12ef61e2f4004c">moonray::shading::Colorv</a> result;</div>
+<div class="line"><span class="lineno">  540</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a98b66f6dc23506252551035dbc90c747">moonray::shading::samplev</a>(map2, tls, &amp;statev, &amp;result);</div>
+<div class="line"><span class="lineno">  541</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (int) VLEN; ++i) {</div>
+<div class="line"><span class="lineno">  542</span>            CPPUNIT_ASSERT(result.r[i] == 0.25f);</div>
+<div class="line"><span class="lineno">  543</span>            CPPUNIT_ASSERT(result.g[i] == 0.125f);</div>
+<div class="line"><span class="lineno">  544</span>        }</div>
+<div class="line"><span class="lineno">  545</span>    }</div>
+<div class="line"><span class="lineno">  546</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1250a2b438d954f0fc80e73f8a60e5d4" name="a1250a2b438d954f0fc80e73f8a60e5d4"></a>
@@ -464,7 +574,37 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00484">484</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  485</span>{</div>
+<div class="line"><span class="lineno">  486</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  487</span> </div>
+<div class="line"><span class="lineno">  488</span>    scene_rdl2::rdl2::SceneContext ctx;</div>
+<div class="line"><span class="lineno">  489</span>    ctx.setDsoPath(ctx.getDsoPath() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
+<div class="line"><span class="lineno">  490</span>    scene_rdl2::rdl2::Map *map = ctx.createSceneObject(<span class="stringliteral">&quot;TestMap&quot;</span>, <span class="stringliteral">&quot;/map&quot;</span>)-&gt;asA&lt;scene_rdl2::rdl2::Map&gt;();</div>
+<div class="line"><span class="lineno">  491</span>    {</div>
+<div class="line"><span class="lineno">  492</span>        scene_rdl2::rdl2::SceneObject::UpdateGuard <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(map);</div>
+<div class="line"><span class="lineno">  493</span>        map-&gt;set(<span class="stringliteral">&quot;mode&quot;</span>, 9);</div>
+<div class="line"><span class="lineno">  494</span>        map-&gt;set(<span class="stringliteral">&quot;vec32&quot;</span>, scene_rdl2::rdl2::Vec3f(1.f, .5f, .25f));</div>
+<div class="line"><span class="lineno">  495</span>    }</div>
+<div class="line"><span class="lineno">  496</span>    scene_rdl2::rdl2::Map *map2 = ctx.createSceneObject(<span class="stringliteral">&quot;TestMap&quot;</span>, <span class="stringliteral">&quot;/map2&quot;</span>)-&gt;asA&lt;scene_rdl2::rdl2::Map&gt;();</div>
+<div class="line"><span class="lineno">  497</span>    {</div>
+<div class="line"><span class="lineno">  498</span>        scene_rdl2::rdl2::SceneObject::UpdateGuard <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(map2);</div>
+<div class="line"><span class="lineno">  499</span>        map2-&gt;set(<span class="stringliteral">&quot;mode&quot;</span>, 9);</div>
+<div class="line"><span class="lineno">  500</span>        map2-&gt;set(<span class="stringliteral">&quot;vec32&quot;</span>, scene_rdl2::rdl2::Vec3f(.5f, .5f, .5f));</div>
+<div class="line"><span class="lineno">  501</span>        map2-&gt;setBinding(<span class="stringliteral">&quot;vec32&quot;</span>, map);</div>
+<div class="line"><span class="lineno">  502</span>    }</div>
+<div class="line"><span class="lineno">  503</span>    map2-&gt;applyUpdates();</div>
+<div class="line"><span class="lineno">  504</span>    {</div>
+<div class="line"><span class="lineno">  505</span>        moonray::shading::Statev statev;</div>
+<div class="line"><span class="lineno">  506</span>        <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ad0b8c0ebb4de2029dd12ef61e2f4004c">moonray::shading::Colorv</a> result;</div>
+<div class="line"><span class="lineno">  507</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a98b66f6dc23506252551035dbc90c747">moonray::shading::samplev</a>(map2, tls, &amp;statev, &amp;result);</div>
+<div class="line"><span class="lineno">  508</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (int) VLEN; ++i) {</div>
+<div class="line"><span class="lineno">  509</span>            CPPUNIT_ASSERT(result.r[i] == 1.0f);</div>
+<div class="line"><span class="lineno">  510</span>            CPPUNIT_ASSERT(result.g[i] == 0.5f);</div>
+<div class="line"><span class="lineno">  511</span>            CPPUNIT_ASSERT(result.b[i] == 0.25f);</div>
+<div class="line"><span class="lineno">  512</span>        }</div>
+<div class="line"><span class="lineno">  513</span>    }</div>
+<div class="line"><span class="lineno">  514</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aaac5a5e0c3bacba1c1fbb7cc759a0b0a" name="aaac5a5e0c3bacba1c1fbb7cc759a0b0a"></a>
@@ -483,7 +623,31 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00133">133</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  134</span>{</div>
+<div class="line"><span class="lineno">  135</span>    SceneSetup scene;</div>
+<div class="line"><span class="lineno">  136</span>    Bsdfv &amp;bsdf = *(scene.shade());</div>
+<div class="line"><span class="lineno">  137</span> </div>
+<div class="line"><span class="lineno">  138</span>    <span class="comment">// evalColor test results are in lobe0</span></div>
+<div class="line"><span class="lineno">  139</span>    CPPUNIT_ASSERT(bsdf.mLobes[0]-&gt;mName == BsdfLobeName::BSDF_LOBE_LAMBERT);</div>
+<div class="line"><span class="lineno">  140</span>    LambertBsdfLobev &amp;lobe = *(LambertBsdfLobev *) bsdf.mLobes[0];</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>    <span class="comment">// lane0</span></div>
+<div class="line"><span class="lineno">  143</span>    CPPUNIT_ASSERT(lobe.mScale.r[0] == 0.0 &amp;&amp;</div>
+<div class="line"><span class="lineno">  144</span>                   lobe.mScale.g[0] == 0.5 &amp;&amp;</div>
+<div class="line"><span class="lineno">  145</span>                   lobe.mScale.b[0] == 0.0);</div>
+<div class="line"><span class="lineno">  146</span>    CPPUNIT_ASSERT(lobe.mFrame.mZ.x[0] == 1.0 &amp;&amp;</div>
+<div class="line"><span class="lineno">  147</span>                   lobe.mFrame.mZ.y[0] == 0.0 &amp;&amp;</div>
+<div class="line"><span class="lineno">  148</span>                   lobe.mFrame.mZ.z[0] == 0.0);</div>
+<div class="line"><span class="lineno">  149</span> </div>
+<div class="line"><span class="lineno">  150</span>    <span class="comment">// lane1</span></div>
+<div class="line"><span class="lineno">  151</span>    CPPUNIT_ASSERT(lobe.mScale.r[1] == 0.0  &amp;&amp;</div>
+<div class="line"><span class="lineno">  152</span>                   lobe.mScale.g[1] == 0.25 &amp;&amp;</div>
+<div class="line"><span class="lineno">  153</span>                   lobe.mScale.b[1] == 0.0);</div>
+<div class="line"><span class="lineno">  154</span>    CPPUNIT_ASSERT(lobe.mFrame.mZ.x[1] == 0.0 &amp;&amp;</div>
+<div class="line"><span class="lineno">  155</span>                   lobe.mFrame.mZ.y[1] == 1.0 &amp;&amp;</div>
+<div class="line"><span class="lineno">  156</span>                   lobe.mFrame.mZ.z[1] == 0.0);</div>
+<div class="line"><span class="lineno">  157</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="add40eac5de82c6e060eb6505b812230f" name="add40eac5de82c6e060eb6505b812230f"></a>
@@ -502,7 +666,38 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00160">160</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  161</span>{</div>
+<div class="line"><span class="lineno">  162</span>    SceneSetup scene;</div>
+<div class="line"><span class="lineno">  163</span>    Bsdfv &amp;bsdf = *(scene.shade());</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>    <span class="comment">// evalColorComponent results are in lobe1</span></div>
+<div class="line"><span class="lineno">  166</span>    CPPUNIT_ASSERT(bsdf.mLobes[1]-&gt;mName == BsdfLobeName::BSDF_LOBE_COOK_TORRANCE);</div>
+<div class="line"><span class="lineno">  167</span>    CookTorranceBsdfLobev &amp;lobe = *(CookTorranceBsdfLobev *) bsdf.mLobes[1];</div>
+<div class="line"><span class="lineno">  168</span> </div>
+<div class="line"><span class="lineno">  169</span>    <span class="comment">// When testing mFrame we use isEqual() due to minor error</span></div>
+<div class="line"><span class="lineno">  170</span>    <span class="comment">// introduced in adaptNormal() during lobe creation</span></div>
+<div class="line"><span class="lineno">  171</span> </div>
+<div class="line"><span class="lineno">  172</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> tol = 0.006f;<span class="comment">// things have gotten sloppier when moving to ispc-1.14.1</span></div>
+<div class="line"><span class="lineno">  173</span> </div>
+<div class="line"><span class="lineno">  174</span>    <span class="comment">// lane0</span></div>
+<div class="line"><span class="lineno">  175</span>    CPPUNIT_ASSERT(lobe.mScale.r[0] == 0.25 &amp;&amp;</div>
+<div class="line"><span class="lineno">  176</span>                   lobe.mScale.g[0] == 0.0  &amp;&amp;</div>
+<div class="line"><span class="lineno">  177</span>                   lobe.mScale.b[0] == 0.0);</div>
+<div class="line"><span class="lineno">  178</span>    CPPUNIT_ASSERT(scene_rdl2::math::isEqual(lobe.mFrame.mZ.x[0], 1.f, tol) &amp;&amp;</div>
+<div class="line"><span class="lineno">  179</span>                   scene_rdl2::math::isEqual(lobe.mFrame.mZ.y[0], 0.f, tol) &amp;&amp;</div>
+<div class="line"><span class="lineno">  180</span>                   scene_rdl2::math::isEqual(lobe.mFrame.mZ.z[0], 0.f, tol));</div>
+<div class="line"><span class="lineno">  181</span>    CPPUNIT_ASSERT(lobe.mRoughness[0] == 1.0);</div>
+<div class="line"><span class="lineno">  182</span> </div>
+<div class="line"><span class="lineno">  183</span>    <span class="comment">// lane1</span></div>
+<div class="line"><span class="lineno">  184</span>    CPPUNIT_ASSERT(lobe.mScale.r[1] == 0.125 &amp;&amp;</div>
+<div class="line"><span class="lineno">  185</span>                   lobe.mScale.g[1] == 0.0   &amp;&amp;</div>
+<div class="line"><span class="lineno">  186</span>                   lobe.mScale.b[1] == 0.0);</div>
+<div class="line"><span class="lineno">  187</span>    CPPUNIT_ASSERT(scene_rdl2::math::isEqual(lobe.mFrame.mZ.x[1], 0.f, tol) &amp;&amp;</div>
+<div class="line"><span class="lineno">  188</span>                   scene_rdl2::math::isEqual(lobe.mFrame.mZ.y[1], 1.f, tol) &amp;&amp;</div>
+<div class="line"><span class="lineno">  189</span>                   scene_rdl2::math::isEqual(lobe.mFrame.mZ.z[1], 0.f, tol));</div>
+<div class="line"><span class="lineno">  190</span>    CPPUNIT_ASSERT(lobe.mRoughness[1] == 1.0);</div>
+<div class="line"><span class="lineno">  191</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a298b4215f50eb4320b8b7d41806adfbb" name="a298b4215f50eb4320b8b7d41806adfbb"></a>
@@ -521,7 +716,56 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00432">432</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  433</span>{</div>
+<div class="line"><span class="lineno">  434</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  435</span> </div>
+<div class="line"><span class="lineno">  436</span>    scene_rdl2::rdl2::SceneContext ctx;</div>
+<div class="line"><span class="lineno">  437</span>    ctx.setDsoPath(ctx.getDsoPath() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
+<div class="line"><span class="lineno">  438</span>    scene_rdl2::rdl2::Map *map = ctx.createSceneObject(<span class="stringliteral">&quot;TestMap&quot;</span>, <span class="stringliteral">&quot;/map&quot;</span>)-&gt;asA&lt;scene_rdl2::rdl2::Map&gt;();</div>
+<div class="line"><span class="lineno">  439</span>    {</div>
+<div class="line"><span class="lineno">  440</span>        scene_rdl2::rdl2::SceneObject::UpdateGuard <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(map);</div>
+<div class="line"><span class="lineno">  441</span>        map-&gt;set(<span class="stringliteral">&quot;mode&quot;</span>, 10);</div>
+<div class="line"><span class="lineno">  442</span>        map-&gt;set(<span class="stringliteral">&quot;vec3f10&quot;</span>, scene_rdl2::rdl2::Vec3f(1.0f, 2.0f, 2.0f));</div>
+<div class="line"><span class="lineno">  443</span>    }</div>
+<div class="line"><span class="lineno">  444</span>    scene_rdl2::rdl2::Map *map2 = ctx.createSceneObject(<span class="stringliteral">&quot;TestMap&quot;</span>, <span class="stringliteral">&quot;/map2&quot;</span>)-&gt;asA&lt;scene_rdl2::rdl2::Map&gt;();</div>
+<div class="line"><span class="lineno">  445</span>    {</div>
+<div class="line"><span class="lineno">  446</span>        scene_rdl2::rdl2::SceneObject::UpdateGuard <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(map2);</div>
+<div class="line"><span class="lineno">  447</span>        map2-&gt;set(<span class="stringliteral">&quot;mode&quot;</span>, 11);</div>
+<div class="line"><span class="lineno">  448</span>        map2-&gt;set(<span class="stringliteral">&quot;float11&quot;</span>, 0.5f);</div>
+<div class="line"><span class="lineno">  449</span>        map2-&gt;setBinding(<span class="stringliteral">&quot;vec3f11&quot;</span>, map);</div>
+<div class="line"><span class="lineno">  450</span>    }</div>
+<div class="line"><span class="lineno">  451</span>    map2-&gt;applyUpdates();</div>
+<div class="line"><span class="lineno">  452</span>    {</div>
+<div class="line"><span class="lineno">  453</span>        moonray::shading::Statev statev;</div>
+<div class="line"><span class="lineno">  454</span>        <span class="keyword">const</span> scene_rdl2::math::Vec3f wo = scene_rdl2::math::normalize(scene_rdl2::math::Vec3f(0.f, 1.f, 1.f));</div>
+<div class="line"><span class="lineno">  455</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (int) VLEN; ++i) {</div>
+<div class="line"><span class="lineno">  456</span>            statev.mN.x[i] = 0.0f;</div>
+<div class="line"><span class="lineno">  457</span>            statev.mN.y[i] = 1.0f;</div>
+<div class="line"><span class="lineno">  458</span>            statev.mN.z[i] = 0.0f;</div>
+<div class="line"><span class="lineno">  459</span>            statev.mdPds.x[i] = 0.0f;</div>
+<div class="line"><span class="lineno">  460</span>            statev.mdPds.y[i] = 0.0f;</div>
+<div class="line"><span class="lineno">  461</span>            statev.mdPds.z[i] = -1.0f;</div>
+<div class="line"><span class="lineno">  462</span> </div>
+<div class="line"><span class="lineno">  463</span>            <span class="comment">// normal mapping now requires a view direction</span></div>
+<div class="line"><span class="lineno">  464</span>            statev.mWo.x[i] = wo.x;</div>
+<div class="line"><span class="lineno">  465</span>            statev.mWo.y[i] = wo.y;</div>
+<div class="line"><span class="lineno">  466</span>            statev.mWo.z[i] = wo.z;</div>
+<div class="line"><span class="lineno">  467</span> </div>
+<div class="line"><span class="lineno">  468</span>            <span class="comment">// and a geometric normal</span></div>
+<div class="line"><span class="lineno">  469</span>            statev.mNg.x[i] = statev.mN.x[i];</div>
+<div class="line"><span class="lineno">  470</span>            statev.mNg.y[i] = statev.mN.y[i];</div>
+<div class="line"><span class="lineno">  471</span>            statev.mNg.z[i] = statev.mN.z[i];</div>
+<div class="line"><span class="lineno">  472</span>        }</div>
+<div class="line"><span class="lineno">  473</span>        <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ad0b8c0ebb4de2029dd12ef61e2f4004c">moonray::shading::Colorv</a> result;</div>
+<div class="line"><span class="lineno">  474</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a98b66f6dc23506252551035dbc90c747">moonray::shading::samplev</a>(map2, tls, &amp;statev, &amp;result);</div>
+<div class="line"><span class="lineno">  475</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (int) VLEN; ++i) {</div>
+<div class="line"><span class="lineno">  476</span>            CPPUNIT_ASSERT(scene_rdl2::math::isEqual(result.r[i], -0.374551f));</div>
+<div class="line"><span class="lineno">  477</span>            CPPUNIT_ASSERT(scene_rdl2::math::isEqual(result.g[i], 0.918762f));</div>
+<div class="line"><span class="lineno">  478</span>            CPPUNIT_ASSERT(scene_rdl2::math::isEqual(result.b[i], -0.12485f));</div>
+<div class="line"><span class="lineno">  479</span>        }</div>
+<div class="line"><span class="lineno">  480</span>    }</div>
+<div class="line"><span class="lineno">  481</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab38a9750bddbe513ee7faf3c3ba6c5bf" name="ab38a9750bddbe513ee7faf3c3ba6c5bf"></a>
@@ -540,7 +784,46 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00194">194</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  195</span>{</div>
+<div class="line"><span class="lineno">  196</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  197</span> </div>
+<div class="line"><span class="lineno">  198</span>    scene_rdl2::rdl2::SceneContext ctx;</div>
+<div class="line"><span class="lineno">  199</span>    ctx.setDsoPath(ctx.getDsoPath() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
+<div class="line"><span class="lineno">  200</span>    scene_rdl2::rdl2::Map *map = ctx.createSceneObject(<span class="stringliteral">&quot;TestMap&quot;</span>, <span class="stringliteral">&quot;/map&quot;</span>)-&gt;asA&lt;scene_rdl2::rdl2::Map&gt;();</div>
+<div class="line"><span class="lineno">  201</span>    {</div>
+<div class="line"><span class="lineno">  202</span>        scene_rdl2::rdl2::SceneObject::UpdateGuard <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(map);</div>
+<div class="line"><span class="lineno">  203</span>        map-&gt;set(<span class="stringliteral">&quot;mode&quot;</span>, 2);</div>
+<div class="line"><span class="lineno">  204</span>        map-&gt;set(<span class="stringliteral">&quot;bool1&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  205</span>    }</div>
+<div class="line"><span class="lineno">  206</span>    map-&gt;applyUpdates();</div>
+<div class="line"><span class="lineno">  207</span>    {</div>
+<div class="line"><span class="lineno">  208</span>        moonray::shading::Statev statev;</div>
+<div class="line"><span class="lineno">  209</span>        <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ad0b8c0ebb4de2029dd12ef61e2f4004c">moonray::shading::Colorv</a> result;</div>
+<div class="line"><span class="lineno">  210</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a98b66f6dc23506252551035dbc90c747">moonray::shading::samplev</a>(map, tls, &amp;statev, &amp;result);</div>
+<div class="line"><span class="lineno">  211</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (int) VLEN; ++i) {</div>
+<div class="line"><span class="lineno">  212</span>            CPPUNIT_ASSERT(result.r[i] == 1.0);</div>
+<div class="line"><span class="lineno">  213</span>            CPPUNIT_ASSERT(result.g[i] == 1.0);</div>
+<div class="line"><span class="lineno">  214</span>            CPPUNIT_ASSERT(result.b[i] == 1.0);</div>
+<div class="line"><span class="lineno">  215</span>        }</div>
+<div class="line"><span class="lineno">  216</span>    }</div>
+<div class="line"><span class="lineno">  217</span>    ctx.resetUpdates(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  218</span>    {</div>
+<div class="line"><span class="lineno">  219</span>        scene_rdl2::rdl2::SceneObject::UpdateGuard <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(map);</div>
+<div class="line"><span class="lineno">  220</span>        map-&gt;set(<span class="stringliteral">&quot;bool1&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  221</span>    }</div>
+<div class="line"><span class="lineno">  222</span>    map-&gt;applyUpdates();</div>
+<div class="line"><span class="lineno">  223</span>    {</div>
+<div class="line"><span class="lineno">  224</span>        moonray::shading::Statev statev;</div>
+<div class="line"><span class="lineno">  225</span>        <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ad0b8c0ebb4de2029dd12ef61e2f4004c">moonray::shading::Colorv</a> result;</div>
+<div class="line"><span class="lineno">  226</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a98b66f6dc23506252551035dbc90c747">moonray::shading::samplev</a>(map, tls, &amp;statev, &amp;result);</div>
+<div class="line"><span class="lineno">  227</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (int) VLEN; ++i) {</div>
+<div class="line"><span class="lineno">  228</span>            CPPUNIT_ASSERT(result.r[i] == 0.0);</div>
+<div class="line"><span class="lineno">  229</span>            CPPUNIT_ASSERT(result.g[i] == 0.0);</div>
+<div class="line"><span class="lineno">  230</span>            CPPUNIT_ASSERT(result.b[i] == 0.0);</div>
+<div class="line"><span class="lineno">  231</span>        }</div>
+<div class="line"><span class="lineno">  232</span>    }</div>
+<div class="line"><span class="lineno">  233</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9402dae4daf025cfce9b7ea7a2308287" name="a9402dae4daf025cfce9b7ea7a2308287"></a>
@@ -559,7 +842,30 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00236">236</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  237</span>{</div>
+<div class="line"><span class="lineno">  238</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  239</span> </div>
+<div class="line"><span class="lineno">  240</span>    scene_rdl2::rdl2::SceneContext ctx;</div>
+<div class="line"><span class="lineno">  241</span>    ctx.setDsoPath(ctx.getDsoPath() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
+<div class="line"><span class="lineno">  242</span>    scene_rdl2::rdl2::Map *map = ctx.createSceneObject(<span class="stringliteral">&quot;TestMap&quot;</span>, <span class="stringliteral">&quot;/map&quot;</span>)-&gt;asA&lt;scene_rdl2::rdl2::Map&gt;();</div>
+<div class="line"><span class="lineno">  243</span>    {</div>
+<div class="line"><span class="lineno">  244</span>        scene_rdl2::rdl2::SceneObject::UpdateGuard <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(map);</div>
+<div class="line"><span class="lineno">  245</span>        map-&gt;set(<span class="stringliteral">&quot;mode&quot;</span>, 1);</div>
+<div class="line"><span class="lineno">  246</span>        map-&gt;set(<span class="stringliteral">&quot;color1&quot;</span>, scene_rdl2::rdl2::Rgb(0.25, 0.5, 0.75));</div>
+<div class="line"><span class="lineno">  247</span>    }</div>
+<div class="line"><span class="lineno">  248</span>    map-&gt;applyUpdates();</div>
+<div class="line"><span class="lineno">  249</span>    {</div>
+<div class="line"><span class="lineno">  250</span>        moonray::shading::Statev statev;</div>
+<div class="line"><span class="lineno">  251</span>        <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ad0b8c0ebb4de2029dd12ef61e2f4004c">moonray::shading::Colorv</a> result;</div>
+<div class="line"><span class="lineno">  252</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a98b66f6dc23506252551035dbc90c747">moonray::shading::samplev</a>(map, tls, &amp;statev, &amp;result);</div>
+<div class="line"><span class="lineno">  253</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (int) VLEN; ++i) {</div>
+<div class="line"><span class="lineno">  254</span>            CPPUNIT_ASSERT(result.r[i] == 0.25);</div>
+<div class="line"><span class="lineno">  255</span>            CPPUNIT_ASSERT(result.g[i] == 0.5);</div>
+<div class="line"><span class="lineno">  256</span>            CPPUNIT_ASSERT(result.b[i] == 0.75);</div>
+<div class="line"><span class="lineno">  257</span>        }</div>
+<div class="line"><span class="lineno">  258</span>    }</div>
+<div class="line"><span class="lineno">  259</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abe63d88fc979e1659ce781a24ad4756e" name="abe63d88fc979e1659ce781a24ad4756e"></a>
@@ -578,7 +884,30 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00288">288</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  289</span>{</div>
+<div class="line"><span class="lineno">  290</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  291</span> </div>
+<div class="line"><span class="lineno">  292</span>    scene_rdl2::rdl2::SceneContext ctx;</div>
+<div class="line"><span class="lineno">  293</span>    ctx.setDsoPath(ctx.getDsoPath() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
+<div class="line"><span class="lineno">  294</span>    scene_rdl2::rdl2::Map *map = ctx.createSceneObject(<span class="stringliteral">&quot;TestMap&quot;</span>, <span class="stringliteral">&quot;/map&quot;</span>)-&gt;asA&lt;scene_rdl2::rdl2::Map&gt;();</div>
+<div class="line"><span class="lineno">  295</span>    {</div>
+<div class="line"><span class="lineno">  296</span>        scene_rdl2::rdl2::SceneObject::UpdateGuard <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(map);</div>
+<div class="line"><span class="lineno">  297</span>        map-&gt;set(<span class="stringliteral">&quot;mode&quot;</span>, 6);</div>
+<div class="line"><span class="lineno">  298</span>        map-&gt;set(<span class="stringliteral">&quot;float1&quot;</span>, 2.f);</div>
+<div class="line"><span class="lineno">  299</span>    }</div>
+<div class="line"><span class="lineno">  300</span>    map-&gt;applyUpdates();</div>
+<div class="line"><span class="lineno">  301</span>    {</div>
+<div class="line"><span class="lineno">  302</span>        moonray::shading::Statev statev;</div>
+<div class="line"><span class="lineno">  303</span>        <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ad0b8c0ebb4de2029dd12ef61e2f4004c">moonray::shading::Colorv</a> result;</div>
+<div class="line"><span class="lineno">  304</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a98b66f6dc23506252551035dbc90c747">moonray::shading::samplev</a>(map, tls, &amp;statev, &amp;result);</div>
+<div class="line"><span class="lineno">  305</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (int) VLEN; ++i) {</div>
+<div class="line"><span class="lineno">  306</span>            CPPUNIT_ASSERT(result.r[i] == 2.0);</div>
+<div class="line"><span class="lineno">  307</span>            CPPUNIT_ASSERT(result.g[i] == 2.0);</div>
+<div class="line"><span class="lineno">  308</span>            CPPUNIT_ASSERT(result.b[i] == 2.0);</div>
+<div class="line"><span class="lineno">  309</span>        }</div>
+<div class="line"><span class="lineno">  310</span>    }</div>
+<div class="line"><span class="lineno">  311</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a58086b2d23502199be1ab707eec2f896" name="a58086b2d23502199be1ab707eec2f896"></a>
@@ -597,7 +926,30 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00262">262</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  263</span>{</div>
+<div class="line"><span class="lineno">  264</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  265</span> </div>
+<div class="line"><span class="lineno">  266</span>    scene_rdl2::rdl2::SceneContext ctx;</div>
+<div class="line"><span class="lineno">  267</span>    ctx.setDsoPath(ctx.getDsoPath() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
+<div class="line"><span class="lineno">  268</span>    scene_rdl2::rdl2::Map *map = ctx.createSceneObject(<span class="stringliteral">&quot;TestMap&quot;</span>, <span class="stringliteral">&quot;/map&quot;</span>)-&gt;asA&lt;scene_rdl2::rdl2::Map&gt;();</div>
+<div class="line"><span class="lineno">  269</span>    {</div>
+<div class="line"><span class="lineno">  270</span>        scene_rdl2::rdl2::SceneObject::UpdateGuard <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(map);</div>
+<div class="line"><span class="lineno">  271</span>        map-&gt;set(<span class="stringliteral">&quot;mode&quot;</span>, 3);</div>
+<div class="line"><span class="lineno">  272</span>        map-&gt;set(<span class="stringliteral">&quot;int1&quot;</span>, 3);</div>
+<div class="line"><span class="lineno">  273</span>    }</div>
+<div class="line"><span class="lineno">  274</span>    map-&gt;applyUpdates();</div>
+<div class="line"><span class="lineno">  275</span>    {</div>
+<div class="line"><span class="lineno">  276</span>        moonray::shading::Statev statev;</div>
+<div class="line"><span class="lineno">  277</span>        <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ad0b8c0ebb4de2029dd12ef61e2f4004c">moonray::shading::Colorv</a> result;</div>
+<div class="line"><span class="lineno">  278</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a98b66f6dc23506252551035dbc90c747">moonray::shading::samplev</a>(map, tls, &amp;statev, &amp;result);</div>
+<div class="line"><span class="lineno">  279</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (int) VLEN; ++i) {</div>
+<div class="line"><span class="lineno">  280</span>            CPPUNIT_ASSERT(result.r[i] == 3.0);</div>
+<div class="line"><span class="lineno">  281</span>            CPPUNIT_ASSERT(result.g[i] == 3.0);</div>
+<div class="line"><span class="lineno">  282</span>            CPPUNIT_ASSERT(result.b[i] == 3.0);</div>
+<div class="line"><span class="lineno">  283</span>        }</div>
+<div class="line"><span class="lineno">  284</span>    }</div>
+<div class="line"><span class="lineno">  285</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa00c3c088e85663d64bdb836b181fdb8" name="aa00c3c088e85663d64bdb836b181fdb8"></a>
@@ -616,7 +968,30 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00314">314</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  315</span>{</div>
+<div class="line"><span class="lineno">  316</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  317</span> </div>
+<div class="line"><span class="lineno">  318</span>    scene_rdl2::rdl2::SceneContext ctx;</div>
+<div class="line"><span class="lineno">  319</span>    ctx.setDsoPath(ctx.getDsoPath() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
+<div class="line"><span class="lineno">  320</span>    scene_rdl2::rdl2::Map *map = ctx.createSceneObject(<span class="stringliteral">&quot;TestMap&quot;</span>, <span class="stringliteral">&quot;/map&quot;</span>)-&gt;asA&lt;scene_rdl2::rdl2::Map&gt;();</div>
+<div class="line"><span class="lineno">  321</span>    {</div>
+<div class="line"><span class="lineno">  322</span>        scene_rdl2::rdl2::SceneObject::UpdateGuard <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(map);</div>
+<div class="line"><span class="lineno">  323</span>        map-&gt;set(<span class="stringliteral">&quot;mode&quot;</span>, 4);</div>
+<div class="line"><span class="lineno">  324</span>        map-&gt;set(<span class="stringliteral">&quot;vec21&quot;</span>, scene_rdl2::rdl2::Vec2f(1.0, .5));</div>
+<div class="line"><span class="lineno">  325</span>    }</div>
+<div class="line"><span class="lineno">  326</span>    map-&gt;applyUpdates();</div>
+<div class="line"><span class="lineno">  327</span>    {</div>
+<div class="line"><span class="lineno">  328</span>        moonray::shading::Statev statev;</div>
+<div class="line"><span class="lineno">  329</span>        <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ad0b8c0ebb4de2029dd12ef61e2f4004c">moonray::shading::Colorv</a> result;</div>
+<div class="line"><span class="lineno">  330</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a98b66f6dc23506252551035dbc90c747">moonray::shading::samplev</a>(map, tls, &amp;statev, &amp;result);</div>
+<div class="line"><span class="lineno">  331</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (int) VLEN; ++i) {</div>
+<div class="line"><span class="lineno">  332</span>            CPPUNIT_ASSERT(result.r[i] == 1.0);</div>
+<div class="line"><span class="lineno">  333</span>            CPPUNIT_ASSERT(result.g[i] == 0.5);</div>
+<div class="line"><span class="lineno">  334</span>            CPPUNIT_ASSERT(result.b[i] == 0.0);</div>
+<div class="line"><span class="lineno">  335</span>        }</div>
+<div class="line"><span class="lineno">  336</span>    }</div>
+<div class="line"><span class="lineno">  337</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afac2fccabd77a6b4acf7351bfcd05d6b" name="afac2fccabd77a6b4acf7351bfcd05d6b"></a>
@@ -635,7 +1010,30 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00340">340</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  341</span>{</div>
+<div class="line"><span class="lineno">  342</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  343</span> </div>
+<div class="line"><span class="lineno">  344</span>    scene_rdl2::rdl2::SceneContext ctx;</div>
+<div class="line"><span class="lineno">  345</span>    ctx.setDsoPath(ctx.getDsoPath() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
+<div class="line"><span class="lineno">  346</span>    scene_rdl2::rdl2::Map *map = ctx.createSceneObject(<span class="stringliteral">&quot;TestMap&quot;</span>, <span class="stringliteral">&quot;/map&quot;</span>)-&gt;asA&lt;scene_rdl2::rdl2::Map&gt;();</div>
+<div class="line"><span class="lineno">  347</span>    {</div>
+<div class="line"><span class="lineno">  348</span>        scene_rdl2::rdl2::SceneObject::UpdateGuard <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(map);</div>
+<div class="line"><span class="lineno">  349</span>        map-&gt;set(<span class="stringliteral">&quot;mode&quot;</span>, 5);</div>
+<div class="line"><span class="lineno">  350</span>        map-&gt;set(<span class="stringliteral">&quot;vec31&quot;</span>, scene_rdl2::rdl2::Vec3f(1.0, .5, .5));</div>
+<div class="line"><span class="lineno">  351</span>    }</div>
+<div class="line"><span class="lineno">  352</span>    map-&gt;applyUpdates();</div>
+<div class="line"><span class="lineno">  353</span>    {</div>
+<div class="line"><span class="lineno">  354</span>        moonray::shading::Statev statev;</div>
+<div class="line"><span class="lineno">  355</span>        <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ad0b8c0ebb4de2029dd12ef61e2f4004c">moonray::shading::Colorv</a> result;</div>
+<div class="line"><span class="lineno">  356</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a98b66f6dc23506252551035dbc90c747">moonray::shading::samplev</a>(map, tls, &amp;statev, &amp;result);</div>
+<div class="line"><span class="lineno">  357</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; (int) VLEN; ++i) {</div>
+<div class="line"><span class="lineno">  358</span>            CPPUNIT_ASSERT(result.r[i] == 1.0);</div>
+<div class="line"><span class="lineno">  359</span>            CPPUNIT_ASSERT(result.g[i] == 0.5);</div>
+<div class="line"><span class="lineno">  360</span>            CPPUNIT_ASSERT(result.b[i] == 0.5);</div>
+<div class="line"><span class="lineno">  361</span>        }</div>
+<div class="line"><span class="lineno">  362</span>    }</div>
+<div class="line"><span class="lineno">  363</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -643,9 +1041,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/ispc/unittest/<a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading_1_1unittest.html">unittest</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1unittest_1_1_test_eval_attribute.html">TestEvalAttribute</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

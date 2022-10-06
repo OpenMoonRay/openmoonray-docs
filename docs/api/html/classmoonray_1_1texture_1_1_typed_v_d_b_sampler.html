@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1texture.html">texture</a></li><li class="navelem"><a class="el" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html">TypedVDBSampler</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::texture::TypedVDBSampler&lt; GridT &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -63,6 +81,11 @@ Inheritance diagram for moonray::texture::TypedVDBSampler&lt; GridT &gt;:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1texture_1_1_typed_v_d_b_sampler_1_1_grid_sampler.html">GridSampler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9d02c3ed8e6bd41c45737fac7543b3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#ac9d02c3ed8e6bd41c45737fac7543b3a">TypedVDBSampler</a> (const GridT &amp;grid)</td></tr>
@@ -71,7 +94,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab9a29f3b5bc5f123b0b9ec8529100066"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b4806098e2a579b7731207b2217aea6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#a3b4806098e2a579b7731207b2217aea6">getIsActive</a> (const uint32_t threadIdx, const openvdb::Vec3d &amp;pos) override</td></tr>
 <tr class="separator:a3b4806098e2a579b7731207b2217aea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ea535e1798a1e7c835108c30550c79c"><td class="memItemLeft" align="right" valign="top">ValueT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#a9ea535e1798a1e7c835108c30550c79c">sample</a> (const uint32_t threadIdx, const openvdb::Vec3d &amp;pos, <a class="el" href="classmoonray_1_1texture_1_1_v_d_b_sampler.html#a7a9d6af2201ce4c5b0b67f1bf9cdfa8c">Interpolation</a> mode) const</td></tr>
+<tr class="memitem:a9ea535e1798a1e7c835108c30550c79c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#ad8ed98e82cd267f306b71aeb73af8d84">ValueT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#a9ea535e1798a1e7c835108c30550c79c">sample</a> (const uint32_t threadIdx, const openvdb::Vec3d &amp;pos, <a class="el" href="classmoonray_1_1texture_1_1_v_d_b_sampler.html#a7a9d6af2201ce4c5b0b67f1bf9cdfa8c">Interpolation</a> mode) const</td></tr>
 <tr class="separator:a9ea535e1798a1e7c835108c30550c79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classmoonray_1_1texture_1_1_v_d_b_sampler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmoonray_1_1texture_1_1_v_d_b_sampler')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmoonray_1_1texture_1_1_v_d_b_sampler.html">moonray::texture::VDBSampler</a></td></tr>
 <tr class="memitem:a97b6488a7dabec06278b49d2a86f1ac9 inherit pub_methods_classmoonray_1_1texture_1_1_v_d_b_sampler"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1texture_1_1_v_d_b_sampler.html#a97b6488a7dabec06278b49d2a86f1ac9">getIsActive</a> (const uint32_t threadIdx, const openvdb::Vec3d &amp;pos)=0</td></tr>
@@ -80,6 +103,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afc48dbc00798a133fdca4f5028deec81 inherit pub_methods_classmoonray_1_1texture_1_1_v_d_b_sampler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadf44f5143ec80b12eb363bb065c0ec5 inherit pub_methods_classmoonray_1_1texture_1_1_v_d_b_sampler"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1texture_1_1_v_d_b_sampler.html#aadf44f5143ec80b12eb363bb065c0ec5">~VDBSampler</a> ()</td></tr>
 <tr class="separator:aadf44f5143ec80b12eb363bb065c0ec5 inherit pub_methods_classmoonray_1_1texture_1_1_v_d_b_sampler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:ad8ed98e82cd267f306b71aeb73af8d84"><td class="memItemLeft" align="right" valign="top">typedef GridT::ValueType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#ad8ed98e82cd267f306b71aeb73af8d84">ValueT</a></td></tr>
+<tr class="separator:ad8ed98e82cd267f306b71aeb73af8d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af62847dc9e09a4bbe300617326c21774"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structmoonray_1_1texture_1_1_typed_v_d_b_sampler_1_1_grid_sampler.html">GridSampler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#af62847dc9e09a4bbe300617326c21774">mSamplers</a></td></tr>
+<tr class="separator:af62847dc9e09a4bbe300617326c21774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -94,7 +127,34 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename GridT&gt;<br />
 class moonray::texture::TypedVDBSampler&lt; GridT &gt;</div>
 <p class="definition">Definition at line <a class="el" href="_v_d_b_sampler_8h_source.html#l00046">46</a> of file <a class="el" href="_v_d_b_sampler_8h_source.html">VDBSampler.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ad8ed98e82cd267f306b71aeb73af8d84" name="ad8ed98e82cd267f306b71aeb73af8d84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8ed98e82cd267f306b71aeb73af8d84">&#9670;&#160;</a></span>ValueT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GridT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef GridT::ValueType <a class="el" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html">moonray::texture::TypedVDBSampler</a>&lt; GridT &gt;::ValueT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_v_d_b_sampler_8h_source.html#l00049">49</a> of file <a class="el" href="_v_d_b_sampler_8h_source.html">VDBSampler.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac9d02c3ed8e6bd41c45737fac7543b3a" name="ac9d02c3ed8e6bd41c45737fac7543b3a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9d02c3ed8e6bd41c45737fac7543b3a">&#9670;&#160;</a></span>TypedVDBSampler()</h2>
 
@@ -122,7 +182,16 @@ template&lt;typename GridT &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_v_d_b_sampler_8h_source.html#l00052">52</a> of file <a class="el" href="_v_d_b_sampler_8h_source.html">VDBSampler.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   53</span>    {</div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordtype">size_t</span> threadCount = <a class="code hl_function" href="namespacemoonray_1_1mcrt__common.html#af58491a6a11e93bcbe77e8b1cef48097">mcrt_common::getMaxNumTLS</a>();</div>
+<div class="line"><span class="lineno">   55</span>        <a class="code hl_variable" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#af62847dc9e09a4bbe300617326c21774">mSamplers</a>.reserve(threadCount);</div>
+<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; threadCount; ++i) {</div>
+<div class="line"><span class="lineno">   57</span>            <a class="code hl_variable" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#af62847dc9e09a4bbe300617326c21774">mSamplers</a>.emplace_back(grid);</div>
+<div class="line"><span class="lineno">   58</span>        }</div>
+<div class="line"><span class="lineno">   59</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1texture_1_1_typed_v_d_b_sampler_html_af62847dc9e09a4bbe300617326c21774"><div class="ttname"><a href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#af62847dc9e09a4bbe300617326c21774">moonray::texture::TypedVDBSampler::mSamplers</a></div><div class="ttdeci">std::vector&lt; GridSampler &gt; mSamplers</div><div class="ttdef"><b>Definition:</b> <a href="_v_d_b_sampler_8h_source.html#l00125">VDBSampler.h:125</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1mcrt__common_html_af58491a6a11e93bcbe77e8b1cef48097"><div class="ttname"><a href="namespacemoonray_1_1mcrt__common.html#af58491a6a11e93bcbe77e8b1cef48097">moonray::mcrt_common::getMaxNumTLS</a></div><div class="ttdeci">unsigned getMaxNumTLS()</div><div class="ttdef"><b>Definition:</b> <a href="_thread_local_state_8cc_source.html#l00400">ThreadLocalState.cc:400</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab9a29f3b5bc5f123b0b9ec8529100066" name="ab9a29f3b5bc5f123b0b9ec8529100066"></a>
@@ -151,7 +220,8 @@ template&lt;typename GridT &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_v_d_b_sampler_8h_source.html#l00061">61</a> of file <a class="el" href="_v_d_b_sampler_8h_source.html">VDBSampler.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   61</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -194,7 +264,12 @@ template&lt;typename GridT &gt; </div>
 <p>Implements <a class="el" href="classmoonray_1_1texture_1_1_v_d_b_sampler.html#a97b6488a7dabec06278b49d2a86f1ac9">moonray::texture::VDBSampler</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_v_d_b_sampler_8h_source.html#l00063">63</a> of file <a class="el" href="_v_d_b_sampler_8h_source.html">VDBSampler.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   65</span>    {</div>
+<div class="line"><span class="lineno">   66</span>        <span class="keyword">const</span> openvdb::Vec3d p = <a class="code hl_variable" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#af62847dc9e09a4bbe300617326c21774">mSamplers</a>[threadIdx].mGrid.worldToIndex(pos);</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keyword">const</span> openvdb::Coord coord(p.x(), p.y(), p.z());</div>
+<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#af62847dc9e09a4bbe300617326c21774">mSamplers</a>[threadIdx].mAccessor.isValueOn(coord);</div>
+<div class="line"><span class="lineno">   69</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9ea535e1798a1e7c835108c30550c79c" name="a9ea535e1798a1e7c835108c30550c79c"></a>
@@ -209,7 +284,7 @@ template&lt;typename GridT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ValueT <a class="el" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html">moonray::texture::TypedVDBSampler</a>&lt; GridT &gt;::sample </td>
+          <td class="memname"><a class="el" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#ad8ed98e82cd267f306b71aeb73af8d84">ValueT</a> <a class="el" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html">moonray::texture::TypedVDBSampler</a>&lt; GridT &gt;::sample </td>
           <td>(</td>
           <td class="paramtype">const uint32_t&#160;</td>
           <td class="paramname"><em>threadIdx</em>, </td>
@@ -240,6 +315,48 @@ template&lt;typename GridT &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_v_d_b_sampler_8h_source.html#l00071">71</a> of file <a class="el" href="_v_d_b_sampler_8h_source.html">VDBSampler.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   73</span>    {</div>
+<div class="line"><span class="lineno">   74</span>        <span class="keywordflow">switch</span> (mode) {</div>
+<div class="line"><span class="lineno">   75</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1texture_1_1_v_d_b_sampler.html#a7a9d6af2201ce4c5b0b67f1bf9cdfa8ca2a3cd5946cfd317eb99c3d32e35e2d4c">Interpolation::Point</a> :</div>
+<div class="line"><span class="lineno">   76</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#af62847dc9e09a4bbe300617326c21774">mSamplers</a>[threadIdx].evalPoint(pos);</div>
+<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1texture_1_1_v_d_b_sampler.html#a7a9d6af2201ce4c5b0b67f1bf9cdfa8ca3cfce651e667ab85486dd42a8185f98a">Interpolation::Box</a> :</div>
+<div class="line"><span class="lineno">   78</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#af62847dc9e09a4bbe300617326c21774">mSamplers</a>[threadIdx].evalBox(pos);</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1texture_1_1_v_d_b_sampler.html#a7a9d6af2201ce4c5b0b67f1bf9cdfa8ca8b2972385ed28d0e199ae2985d6fea4c">Interpolation::Quadratic</a> :</div>
+<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#af62847dc9e09a4bbe300617326c21774">mSamplers</a>[threadIdx].evalQuadratic(pos);</div>
+<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">   82</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html#af62847dc9e09a4bbe300617326c21774">mSamplers</a>[threadIdx].evalPoint(pos);</div>
+<div class="line"><span class="lineno">   83</span>        }</div>
+<div class="line"><span class="lineno">   84</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1texture_1_1_v_d_b_sampler_html_a7a9d6af2201ce4c5b0b67f1bf9cdfa8ca2a3cd5946cfd317eb99c3d32e35e2d4c"><div class="ttname"><a href="classmoonray_1_1texture_1_1_v_d_b_sampler.html#a7a9d6af2201ce4c5b0b67f1bf9cdfa8ca2a3cd5946cfd317eb99c3d32e35e2d4c">moonray::texture::VDBSampler::Interpolation::Point</a></div><div class="ttdeci">@ Point</div></div>
+<div class="ttc" id="aclassmoonray_1_1texture_1_1_v_d_b_sampler_html_a7a9d6af2201ce4c5b0b67f1bf9cdfa8ca3cfce651e667ab85486dd42a8185f98a"><div class="ttname"><a href="classmoonray_1_1texture_1_1_v_d_b_sampler.html#a7a9d6af2201ce4c5b0b67f1bf9cdfa8ca3cfce651e667ab85486dd42a8185f98a">moonray::texture::VDBSampler::Interpolation::Box</a></div><div class="ttdeci">@ Box</div></div>
+<div class="ttc" id="aclassmoonray_1_1texture_1_1_v_d_b_sampler_html_a7a9d6af2201ce4c5b0b67f1bf9cdfa8ca8b2972385ed28d0e199ae2985d6fea4c"><div class="ttname"><a href="classmoonray_1_1texture_1_1_v_d_b_sampler.html#a7a9d6af2201ce4c5b0b67f1bf9cdfa8ca8b2972385ed28d0e199ae2985d6fea4c">moonray::texture::VDBSampler::Interpolation::Quadratic</a></div><div class="ttdeci">@ Quadratic</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af62847dc9e09a4bbe300617326c21774" name="af62847dc9e09a4bbe300617326c21774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af62847dc9e09a4bbe300617326c21774">&#9670;&#160;</a></span>mSamplers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GridT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structmoonray_1_1texture_1_1_typed_v_d_b_sampler_1_1_grid_sampler.html">GridSampler</a>&gt; <a class="el" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html">moonray::texture::TypedVDBSampler</a>&lt; GridT &gt;::mSamplers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_v_d_b_sampler_8h_source.html#l00125">125</a> of file <a class="el" href="_v_d_b_sampler_8h_source.html">VDBSampler.h</a>.</p>
 
 </div>
 </div>
@@ -247,9 +364,13 @@ template&lt;typename GridT &gt; </div>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/texturing/sampler/<a class="el" href="_v_d_b_sampler_8h_source.html">VDBSampler.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1texture.html">texture</a></li><li class="navelem"><a class="el" href="classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html">TypedVDBSampler</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

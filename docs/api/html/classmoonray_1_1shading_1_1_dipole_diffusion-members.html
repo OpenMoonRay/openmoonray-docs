@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html">DipoleDiffusion</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_dipole_diffusion.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">moonray::shading::DipoleDiffusion Member List</div></div>
 </div><!--header-->
@@ -60,13 +76,23 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html#a1e027a581c89c7287aa63a96d81a13c2">getN</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html">moonray::shading::DipoleDiffusion</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html#ad7176010fdf66c9e53b89355458ea8b1">getRadius</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html">moonray::shading::DipoleDiffusion</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html#a2ad49348ee0685a075efb5bf94ceea13">getTraceSet</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html">moonray::shading::DipoleDiffusion</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html#ade9beef66195237d2338872664638b28">operator=</a>(const BsdfComponent &amp;other)=delete</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html">moonray::shading::BsdfComponent</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html#a8400cb1f3798f84b4e1d8a3de04792c3">~BsdfComponent</a>()=0</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html">moonray::shading::BsdfComponent</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html#a90e5d5c0d152f98e2fab0fb0eb4ab5df">~DipoleDiffusion</a>() override</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html">moonray::shading::DipoleDiffusion</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html#aa7c16e1511bd9c4f0cef8025185f18a0">mAlbedo</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html">moonray::shading::DipoleDiffusion</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html#a357be64c8831525e9e4225e2e3db71ff">mEvalNormalFn</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html">moonray::shading::DipoleDiffusion</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html#a3d70f6a01030a7bb5c423945c29c1897">mIridescence</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html">moonray::shading::BsdfComponent</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html#a242f0194fed17326605984714ba8bd60">mMaterial</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html">moonray::shading::DipoleDiffusion</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html#a7ef6ea7ef2cf03b2e891cb3629f1d230">mN</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html">moonray::shading::DipoleDiffusion</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html#a45e5b73194930f8960631b05e02dd835">mRadius</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html">moonray::shading::DipoleDiffusion</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html#ac78d1a5f5683aa8a061657c5db52f99e">mTraceSet</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html">moonray::shading::DipoleDiffusion</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html#ade9beef66195237d2338872664638b28">operator=</a>(const BsdfComponent &amp;other)=delete</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html">moonray::shading::BsdfComponent</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html#a8400cb1f3798f84b4e1d8a3de04792c3">~BsdfComponent</a>()=0</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html">moonray::shading::BsdfComponent</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html#a90e5d5c0d152f98e2fab0fb0eb4ab5df">~DipoleDiffusion</a>() override</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_dipole_diffusion.html">moonray::shading::DipoleDiffusion</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

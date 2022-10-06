@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_02f99361fbe6a8c61cf6ccdd2c3bf288.html">geom</a></li><li class="navelem"><a class="el" href="dir_f871d1e4df57f93e703e4b9c83a931fa.html">prim</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('prim_2_vdb_volume_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">VdbVolume.h</div></div>
 </div><!--header-->
@@ -51,8 +67,13 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2016-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">///</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @file VdbVolume.h</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// @author Mark Matthews</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/// @author Wayne Huang</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">///</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"></span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;<a class="code" href="_vdb_volume_8h.html">rendering/geom/VdbVolume.h</a>&gt;</span></div>
@@ -84,17 +105,17 @@ $(function() {
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">namespace </span>internal {</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">namespace </span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_vdb_volume_8h_03.html">   43</a></span><span class="keyword">namespace </span>{</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Gr<span class="keywordtype">id</span>Type&gt;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">inline</span> std::unique_ptr&lt;EmissionDistribution&gt;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>computeEmissionDistributionImpl(<span class="keyword">const</span> scene_rdl2::rdl2::Geometry* rdlGeometry,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_vdb_volume_8h_03.html#ae3f3a98f4e6cd66ce20a186a5d85579a">   47</a></span><a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_vdb_volume_8h_03.html#ae3f3a98f4e6cd66ce20a186a5d85579a">computeEmissionDistributionImpl</a>(<span class="keyword">const</span> scene_rdl2::rdl2::Geometry* rdlGeometry,</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                                <span class="keyword">const</span> GridType&amp; emissionGrid,</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                                <span class="keyword">const</span> scene_rdl2::math::Mat4f (&amp;renderToPrim)[2],</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                                <span class="keyword">const</span> std::vector&lt;float&gt;&amp; values,</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                                <span class="keyword">const</span> scene_rdl2::rdl2::VolumeShader* volumeShader)</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    shading::TLState *tls = <a class="code hl_function" href="namespacemoonray_1_1mcrt__common.html#a3ea8e2cebc04d6a7ebadf24a9330c399">mcrt_common::getFrameUpdateTLS</a>()-&gt;<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html#a63a64d55651b28d2eb106af04eaca73f">mShadingTls</a>.get();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">shading::TLState</a> *tls = <a class="code hl_function" href="namespacemoonray_1_1mcrt__common.html#a3ea8e2cebc04d6a7ebadf24a9330c399">mcrt_common::getFrameUpdateTLS</a>()-&gt;<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html#a63a64d55651b28d2eb106af04eaca73f">mShadingTls</a>.get();</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// figure out the bounding box first</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    openvdb::CoordBBox bbox;</div>
@@ -174,12 +195,12 @@ $(function() {
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="comment">// eval volume shader at this position</span></div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        openvdb::Vec3d pd = emissionGrid.indexToWorld(coord);</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> p(pd.x(), pd.y(), pd.z());</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        shading::Intersection isect;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <a class="code hl_class" href="classmoonray_1_1shading_1_1_intersection.html">shading::Intersection</a> isect;</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="comment">// TODO: this code relates to map shaders, so when we support xform mblur for map shaders,</span></div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="comment">// use time-based interpolation here. It&#39;s ok to leave it at t=0 for now.</span></div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        isect.setP(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a472053acc157ccb20c9d68bf2fdaa824">transformPoint</a>(primToRender[0], p));</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        isect.<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#a662aee48af9aab1bae1552fbcc0f7f1a">setP</a>(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a472053acc157ccb20c9d68bf2fdaa824">transformPoint</a>(primToRender[0], p));</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="keywordflow">return</span> scene_rdl2::math::luminance(volumeShader-&gt;emission(tls,</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                                                                  shading::State(&amp;isect),</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                                                                  <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">shading::State</a>(&amp;isect),</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                                                                  scene_rdl2::math::Color(1.0f)));</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    };</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
@@ -232,7 +253,7 @@ $(function() {
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        }</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <span class="keywordflow">return</span> std::unique_ptr&lt;EmissionDistribution&gt;(</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            <span class="keyword">new</span> SparseEmissionDistribution(res, distToRender, invUnitVolume, histogram));</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            <span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html">SparseEmissionDistribution</a>(res, distToRender, invUnitVolume, histogram));</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <span class="comment">// use dense distribution</span></div>
@@ -272,7 +293,7 @@ $(function() {
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        }</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        <span class="keywordflow">return</span> std::unique_ptr&lt;EmissionDistribution&gt;(</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>            <span class="keyword">new</span> DenseEmissionDistribution(res, distToRender, invUnitVolume, histogram));</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>            <span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_dense_emission_distribution.html">DenseEmissionDistribution</a>(res, distToRender, invUnitVolume, histogram));</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    }</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>}</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
@@ -622,9 +643,11 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_vdb_volume_html_ab5d2b29e9a3cba57ce3c86648a0278b6ae657cce1913c857166b0475f18668ef5"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vdb_volume.html#ab5d2b29e9a3cba57ce3c86648a0278b6ae657cce1913c857166b0475f18668ef5">moonray::geom::VdbVolume::Interpolation::BOX</a></div><div class="ttdeci">@ BOX</div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_buffer_desc_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_buffer_desc.html">moonray::geom::internal::BufferDesc</a></div><div class="ttdef"><b>Definition:</b> <a href="_buffer_desc_8h_source.html#l00017">BufferDesc.h:17</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_d_d_a_intersector_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_d_d_a_intersector.html">moonray::geom::internal::DDAIntersector</a></div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2prim_2_vdb_volume_8cc_source.html#l00077">VdbVolume.cc:78</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_dense_emission_distribution_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_dense_emission_distribution.html">moonray::geom::internal::DenseEmissionDistribution</a></div><div class="ttdef"><b>Definition:</b> <a href="_emission_distribution_8h_source.html#l00133">EmissionDistribution.h:134</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html">moonray::geom::internal::NamedPrimitive</a></div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00030">NamedPrimitive.h:31</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html_a15e7f3ea4dd4d6813a9e72acf1c0fff1"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a15e7f3ea4dd4d6813a9e72acf1c0fff1">moonray::geom::internal::Primitive::PrimitiveType</a></div><div class="ttdeci">PrimitiveType</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8h_source.html#l00090">Primitive.h:90</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html_a15e7f3ea4dd4d6813a9e72acf1c0fff1a0b594d649f8c2e01335ce80a773d6176"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a15e7f3ea4dd4d6813a9e72acf1c0fff1a0b594d649f8c2e01335ce80a773d6176">moonray::geom::internal::Primitive::VDB_VOLUME</a></div><div class="ttdeci">@ VDB_VOLUME</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8h_source.html#l00095">Primitive.h:95</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html">moonray::geom::internal::SparseEmissionDistribution</a></div><div class="ttdef"><b>Definition:</b> <a href="_emission_distribution_8h_source.html#l00170">EmissionDistribution.h:171</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html">moonray::geom::internal::VdbVolume</a></div><div class="ttdef"><b>Definition:</b> <a href="prim_2_vdb_volume_8h_source.html#l00279">VdbVolume.h:280</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html_a009e04e7937f8b4b6718e20a6b9b0078"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a009e04e7937f8b4b6718e20a6b9b0078">moonray::geom::internal::VdbVolume::mBBoxVertices</a></div><div class="ttdeci">Vec3fa mBBoxVertices[8 *2]</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_vdb_volume_8h_source.html#l00525">VdbVolume.h:525</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_vdb_volume_html_a01d8bf6e67026c19ddcc271c20fd28e0"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_vdb_volume.html#a01d8bf6e67026c19ddcc271c20fd28e0">moonray::geom::internal::VdbVolume::mInterpolationMode</a></div><div class="ttdeci">Interpolation mInterpolationMode</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_vdb_volume_8h_source.html#l00546">VdbVolume.h:546</a></div></div>
@@ -689,9 +712,13 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_thread_local_state_html"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html">moonray::mcrt_common::ThreadLocalState</a></div><div class="ttdef"><b>Definition:</b> <a href="_thread_local_state_8h_source.html#l00170">ThreadLocalState.h:171</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_thread_local_state_html_a63a64d55651b28d2eb106af04eaca73f"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html#a63a64d55651b28d2eb106af04eaca73f">moonray::mcrt_common::ThreadLocalState::mShadingTls</a></div><div class="ttdeci">std::shared_ptr&lt; shading::TLState &gt; mShadingTls</div><div class="ttdef"><b>Definition:</b> <a href="_thread_local_state_8h_source.html#l00204">ThreadLocalState.h:204</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html">moonray::shading::Intersection</a></div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00029">Intersection.h:30</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a662aee48af9aab1bae1552fbcc0f7f1a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a662aee48af9aab1bae1552fbcc0f7f1a">moonray::shading::Intersection::setP</a></div><div class="ttdeci">finline void setP(const scene_rdl2::math::Vec3f &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00413">Intersection.h:413</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_primitive_attribute_table_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">moonray::shading::PrimitiveAttributeTable</a></div><div class="ttdoc">a PrimitiveAttribute hashtable using AttributeKey as lookup index</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00392">PrimitiveAttribute.h:393</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html">moonray::shading::State</a></div><div class="ttdef"><b>Definition:</b> <a href="bvh_2shading_2_state_8h_source.html#l00026">State.h:27</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_t_l_state_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a></div><div class="ttdef"><b>Definition:</b> <a href="_shading_t_l_state_8h_source.html#l00025">ShadingTLState.h:26</a></div></div>
 <div class="ttc" id="acmd_2point__generation__cmd_2util_8h_html_a29663946660b920710cf69b9bbcf8a7d"><div class="ttname"><a href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a></div><div class="ttdeci">float lerp(float u, float min, float max)</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2point__generation__cmd_2util_8h_source.html#l00044">util.h:44</a></div></div>
 <div class="ttc" id="alib_2rendering_2mcrt__common_2util_8h_html"><div class="ttname"><a href="lib_2rendering_2mcrt__common_2util_8h.html">Util.h</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_vdb_volume_8h_03_html_ae3f3a98f4e6cd66ce20a186a5d85579a"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_vdb_volume_8h_03.html#ae3f3a98f4e6cd66ce20a186a5d85579a">moonray::geom::internal::anonymous_namespace{VdbVolume.h}::computeEmissionDistributionImpl</a></div><div class="ttdeci">std::unique_ptr&lt; EmissionDistribution &gt; computeEmissionDistributionImpl(const scene_rdl2::rdl2::Geometry *rdlGeometry, const GridType &amp;emissionGrid, const scene_rdl2::math::Mat4f(&amp;renderToPrim)[2], const std::vector&lt; float &gt; &amp;values, const scene_rdl2::rdl2::VolumeShader *volumeShader)</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_vdb_volume_8h_source.html#l00047">VdbVolume.h:47</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a27d23c09d485fb56a860b6eb56a192dd"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a27d23c09d485fb56a860b6eb56a192dd">moonray::geom::internal::Interpolation</a></div><div class="ttdeci">Interpolation</div><div class="ttdef"><b>Definition:</b> <a href="_grid_sampler_8h_source.html#l00040">GridSampler.h:41</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a27d23c09d485fb56a860b6eb56a192ddaa6ef2e8b7424bfa9d56315aca733861c"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a27d23c09d485fb56a860b6eb56a192ddaa6ef2e8b7424bfa9d56315aca733861c">moonray::geom::internal::Interpolation::QUADRATIC</a></div><div class="ttdeci">@ QUADRATIC</div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a27d23c09d485fb56a860b6eb56a192ddaaebdbcb765394d25d6a604589a890f82"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a27d23c09d485fb56a860b6eb56a192ddaaebdbcb765394d25d6a604589a890f82">moonray::geom::internal::Interpolation::POINT</a></div><div class="ttdeci">@ POINT</div></div>
@@ -729,9 +756,13 @@ $(function() {
 <div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_vdb_volume_data_html_af2ab21d124ee2b84f88fce3f504e26b1"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_vdb_volume_data.html#af2ab21d124ee2b84f88fce3f504e26b1">moonray::geom::internal::VdbVolumeData::mVelocityGridName</a></div><div class="ttdeci">std::string mVelocityGridName</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_vdb_volume_8h_source.html#l00267">VdbVolume.h:267</a></div></div>
 <div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_vdb_volume_data_html_afefe2a407263b3c315a6b210e34a5fb2"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_vdb_volume_data.html#afefe2a407263b3c315a6b210e34a5fb2">moonray::geom::internal::VdbVolumeData::mEmissionGridName</a></div><div class="ttdeci">std::string mEmissionGridName</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_vdb_volume_8h_source.html#l00266">VdbVolume.h:266</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_0486ff0a15d68326ffdea20a24729a76.html">geom</a></li><li class="navelem"><a class="el" href="dir_5ea21d31850ee446955c5d9316b10017.html">prim</a></li><li class="navelem"><a class="el" href="prim_2_vdb_volume_8h.html">VdbVolume.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

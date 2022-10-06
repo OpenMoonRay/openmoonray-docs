@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html">RenderEngineTimingRecord</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1rndr_1_1_render_engine_timing_record.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -173,7 +189,32 @@ Protected Attributes</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00069">69</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   69</span>                   : <span class="keywordtype">int</span> {</div>
+<div class="line"><span class="lineno">   70</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3cab078ffd28db767c502ac367053f6e0ac">START</a> = 0,              <span class="comment">// duration of start to thread is start working</span></div>
+<div class="line"><span class="lineno">   71</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca2baa69eafc7204f3bd8648eba580c489">READY</a>,                  <span class="comment">// duration of start to ready to working </span></div>
+<div class="line"><span class="lineno">   72</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3caf57a5f2740af9bdeecf5eb04187a6449">INITTEXTURING</a>,          <span class="comment">// duration of initialize texture staff</span></div>
+<div class="line"><span class="lineno">   73</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca3407f47f1eb883929409294ee00004d2">RENDERTILES</a>,            <span class="comment">// duration of rendering tiles</span></div>
+<div class="line"><span class="lineno">   74</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3cad27145fa9d65f864e059afa6f129ece5">QUEUEDRAINING</a>,          <span class="comment">// duration of queue draining</span></div>
+<div class="line"><span class="lineno">   75</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca75a982c2b8b5b534a516c0fedef9b194">FINISHUP</a>,               <span class="comment">// duration of finish up</span></div>
+<div class="line"><span class="lineno">   76</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3caf83d52cbed7cc99fb3ad30d731ae15e4">ENDGAP</a>,                 <span class="comment">// duration of end gap (waiting other threads are finished)</span></div>
+<div class="line"><span class="lineno">   77</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca18ff74f43da410c5529f7d6fca84f115">ACTIVE</a>,                 <span class="comment">// actively working time</span></div>
+<div class="line"><span class="lineno">   78</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3cad4ed15197d5a435f26aa6da545cde4e8">PROCESSEDTILESTOTAL</a>,    <span class="comment">// processed tiles total number by double</span></div>
+<div class="line"><span class="lineno">   79</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca47745487dcf78cdbbe010a614a859b9d">PROCESSEDSAMPLETOTAL</a>,   <span class="comment">// processed sample total number by double</span></div>
+<div class="line"><span class="lineno">   80</span> </div>
+<div class="line"><span class="lineno">   81</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca62e5cef85d46f1a5a2144d9fd463b79e">SIZE</a>                    <span class="comment">// total tag size</span></div>
+<div class="line"><span class="lineno">   82</span>    };</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a788650eb48c3121d006f5c707522df3ca18ff74f43da410c5529f7d6fca84f115"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca18ff74f43da410c5529f7d6fca84f115">moonray::rndr::RenderEngineTimingRecord::Tag::ACTIVE</a></div><div class="ttdeci">@ ACTIVE</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a788650eb48c3121d006f5c707522df3ca2baa69eafc7204f3bd8648eba580c489"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca2baa69eafc7204f3bd8648eba580c489">moonray::rndr::RenderEngineTimingRecord::Tag::READY</a></div><div class="ttdeci">@ READY</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a788650eb48c3121d006f5c707522df3ca3407f47f1eb883929409294ee00004d2"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca3407f47f1eb883929409294ee00004d2">moonray::rndr::RenderEngineTimingRecord::Tag::RENDERTILES</a></div><div class="ttdeci">@ RENDERTILES</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a788650eb48c3121d006f5c707522df3ca47745487dcf78cdbbe010a614a859b9d"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca47745487dcf78cdbbe010a614a859b9d">moonray::rndr::RenderEngineTimingRecord::Tag::PROCESSEDSAMPLETOTAL</a></div><div class="ttdeci">@ PROCESSEDSAMPLETOTAL</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a788650eb48c3121d006f5c707522df3ca62e5cef85d46f1a5a2144d9fd463b79e"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca62e5cef85d46f1a5a2144d9fd463b79e">moonray::rndr::RenderEngineTimingRecord::Tag::SIZE</a></div><div class="ttdeci">@ SIZE</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a788650eb48c3121d006f5c707522df3ca75a982c2b8b5b534a516c0fedef9b194"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca75a982c2b8b5b534a516c0fedef9b194">moonray::rndr::RenderEngineTimingRecord::Tag::FINISHUP</a></div><div class="ttdeci">@ FINISHUP</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a788650eb48c3121d006f5c707522df3cab078ffd28db767c502ac367053f6e0ac"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3cab078ffd28db767c502ac367053f6e0ac">moonray::rndr::RenderEngineTimingRecord::Tag::START</a></div><div class="ttdeci">@ START</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a788650eb48c3121d006f5c707522df3cad27145fa9d65f864e059afa6f129ece5"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3cad27145fa9d65f864e059afa6f129ece5">moonray::rndr::RenderEngineTimingRecord::Tag::QUEUEDRAINING</a></div><div class="ttdeci">@ QUEUEDRAINING</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a788650eb48c3121d006f5c707522df3cad4ed15197d5a435f26aa6da545cde4e8"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3cad4ed15197d5a435f26aa6da545cde4e8">moonray::rndr::RenderEngineTimingRecord::Tag::PROCESSEDTILESTOTAL</a></div><div class="ttdeci">@ PROCESSEDTILESTOTAL</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a788650eb48c3121d006f5c707522df3caf57a5f2740af9bdeecf5eb04187a6449"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3caf57a5f2740af9bdeecf5eb04187a6449">moonray::rndr::RenderEngineTimingRecord::Tag::INITTEXTURING</a></div><div class="ttdeci">@ INITTEXTURING</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a788650eb48c3121d006f5c707522df3caf83d52cbed7cc99fb3ad30d731ae15e4"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3caf83d52cbed7cc99fb3ad30d731ae15e4">moonray::rndr::RenderEngineTimingRecord::Tag::ENDGAP</a></div><div class="ttdeci">@ ENDGAP</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -201,7 +242,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00035">35</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   35</span>: <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#af5803bb1954d2837ea0083ae97d5c5c1">mId</a>(0) { <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a8572b35f9092644b5e21084409d18cee">mValues</a>.resize(<span class="keywordtype">id</span>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca62e5cef85d46f1a5a2144d9fd463b79e">Tag::SIZE</a>), 0.0); }</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a8572b35f9092644b5e21084409d18cee"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a8572b35f9092644b5e21084409d18cee">moonray::rndr::RenderEngineTimingRecord::mValues</a></div><div class="ttdeci">std::vector&lt; double &gt; mValues</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00114">RenderTimingRecord.h:114</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_af5803bb1954d2837ea0083ae97d5c5c1"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#af5803bb1954d2837ea0083ae97d5c5c1">moonray::rndr::RenderEngineTimingRecord::mId</a></div><div class="ttdeci">size_t mId</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00113">RenderTimingRecord.h:113</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac2e5f47771bfce990a5d2f32a2945f4b" name="ac2e5f47771bfce990a5d2f32a2945f4b"></a>
@@ -282,7 +326,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00087">87</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   87</span>{ <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(rec, [](<span class="keywordtype">double</span> &amp;a, <span class="keyword">const</span> <span class="keywordtype">double</span> b) { <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> += b; }); }</div>
+<div class="ttc" id="a_combine_displacement_8cc_html_acd36d7881ea8503d5c5824e7a5ad6c7e"><div class="ttname"><a href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a></div><div class="ttdeci">virtual void update()</div></div>
+<div class="ttc" id="anamespacesequence__discrepancy_html_a06f968c2f5ed1f9d42f00351b2b1efb2"><div class="ttname"><a href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">sequence_discrepancy.a</a></div><div class="ttdeci">def a</div><div class="ttdef"><b>Definition:</b> <a href="sequence__discrepancy_8py_source.html#l00038">sequence_discrepancy.py:38</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a675c10626acbca199bb7a34fd23ee759" name="a675c10626acbca199bb7a34fd23ee759"></a>
@@ -310,7 +357,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00099">99</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   99</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a8572b35f9092644b5e21084409d18cee">mValues</a>[<a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a1b5af4421cb6fbc039e9a804837f3434">id</a>(tag)]; }    <span class="comment">// return sec</span></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a1b5af4421cb6fbc039e9a804837f3434"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a1b5af4421cb6fbc039e9a804837f3434">moonray::rndr::RenderEngineTimingRecord::id</a></div><div class="ttdeci">int id(const Tag &amp;tag) const</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00097">RenderTimingRecord.h:97</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a198b8c7fd08c88f51c1cc3238a5ab983" name="a198b8c7fd08c88f51c1cc3238a5ab983"></a>
@@ -338,7 +387,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00100">100</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  100</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a675c10626acbca199bb7a34fd23ee759">get</a>(tag) * 1000.0; } <span class="comment">// return millisec</span></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a675c10626acbca199bb7a34fd23ee759"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a675c10626acbca199bb7a34fd23ee759">moonray::rndr::RenderEngineTimingRecord::get</a></div><div class="ttdeci">double get(const Tag &amp;tag) const</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00099">RenderTimingRecord.h:99</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1b5af4421cb6fbc039e9a804837f3434" name="a1b5af4421cb6fbc039e9a804837f3434"></a>
@@ -366,7 +417,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00097">97</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   97</span>{ <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(tag); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a23b570fc4b1d4cbec319452ac18a7530" name="a23b570fc4b1d4cbec319452ac18a7530"></a>
@@ -394,7 +446,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00086">86</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   86</span>{ <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(v, [](<span class="keywordtype">double</span> &amp;a, <span class="keyword">const</span> <span class="keywordtype">double</span> b) { <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> = b; }); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6747547c94f434586615c2985623758b" name="a6747547c94f434586615c2985623758b"></a>
@@ -422,7 +475,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00090">90</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   90</span>{ <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(rec, [](<span class="keywordtype">double</span> &amp;a, <span class="keyword">const</span> <span class="keywordtype">double</span> b) { <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> = std::max(a, b); }); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af52f1b60cc9bc1e23f114c52d14f444d" name="af52f1b60cc9bc1e23f114c52d14f444d"></a>
@@ -450,7 +504,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00089">89</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   89</span>{ <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(rec, [](<span class="keywordtype">double</span> &amp;a, <span class="keyword">const</span> <span class="keywordtype">double</span> b) { <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> = std::min(a, b); }); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ada1d1c929566fed288894397591ec45a" name="ada1d1c929566fed288894397591ec45a"></a>
@@ -478,7 +533,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00094">94</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   94</span>{ <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#af52f1b60cc9bc1e23f114c52d14f444d">min</a>(rec); <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_af52f1b60cc9bc1e23f114c52d14f444d"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#af52f1b60cc9bc1e23f114c52d14f444d">moonray::rndr::RenderEngineTimingRecord::min</a></div><div class="ttdeci">void min(const RenderEngineTimingRecord &amp;rec)</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00089">RenderTimingRecord.h:89</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8c7e65afee08be8f268646cf0bbd2bfa" name="a8c7e65afee08be8f268646cf0bbd2bfa"></a>
@@ -506,7 +563,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00093">93</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   93</span>{ <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#ade0efccf9e75834ca8b36f254503549b">scale</a>(v); <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_ade0efccf9e75834ca8b36f254503549b"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#ade0efccf9e75834ca8b36f254503549b">moonray::rndr::RenderEngineTimingRecord::scale</a></div><div class="ttdeci">void scale(const double v)</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00088">RenderTimingRecord.h:88</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab965ab1cbd8930f03fa7bf0106dfa6f9" name="ab965ab1cbd8930f03fa7bf0106dfa6f9"></a>
@@ -534,7 +593,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00092">92</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   92</span>{ <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a7d52229414f563e2c438cb462eadf07e">add</a>(rec); <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a7d52229414f563e2c438cb462eadf07e"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a7d52229414f563e2c438cb462eadf07e">moonray::rndr::RenderEngineTimingRecord::add</a></div><div class="ttdeci">void add(const RenderEngineTimingRecord &amp;rec)</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00087">RenderTimingRecord.h:87</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a76a5d719203267945abc137839cd9290" name="a76a5d719203267945abc137839cd9290"></a>
@@ -614,7 +675,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00095">95</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   95</span>{ <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a6747547c94f434586615c2985623758b">max</a>(rec); <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a6747547c94f434586615c2985623758b"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a6747547c94f434586615c2985623758b">moonray::rndr::RenderEngineTimingRecord::max</a></div><div class="ttdeci">void max(const RenderEngineTimingRecord &amp;rec)</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00090">RenderTimingRecord.h:90</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ade0efccf9e75834ca8b36f254503549b" name="ade0efccf9e75834ca8b36f254503549b"></a>
@@ -642,7 +705,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00088">88</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   88</span>{ <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>(v, [](<span class="keywordtype">double</span> &amp;a, <span class="keyword">const</span> <span class="keywordtype">double</span> b) { <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> *= b; }); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a43d478efe44c3db5454440168a80ce86" name="a43d478efe44c3db5454440168a80ce86"></a>
@@ -680,7 +744,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00098">98</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   98</span>{ <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a8572b35f9092644b5e21084409d18cee">mValues</a>[<a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a1b5af4421cb6fbc039e9a804837f3434">id</a>(tag)] = val; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a77bedb543607a9899e9440b12d12ffbf" name="a77bedb543607a9899e9440b12d12ffbf"></a>
@@ -708,7 +773,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00084">84</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   84</span>{ <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#af5803bb1954d2837ea0083ae97d5c5c1">mId</a> = <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a1b5af4421cb6fbc039e9a804837f3434">id</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6d73add37e8602c53517960928f0c440" name="a6d73add37e8602c53517960928f0c440"></a>
@@ -738,7 +804,21 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8cc_source.html#l00039">39</a> of file <a class="el" href="_render_timing_record_8cc_source.html">RenderTimingRecord.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{</div>
+<div class="line"><span class="lineno">   41</span>    ostr &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;s:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a198b8c7fd08c88f51c1cc3238a5ab983">getMs</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3cab078ffd28db767c502ac367053f6e0ac">Tag::START</a>) &lt;&lt; <span class="stringliteral">&quot; ms : duration of thread spawn ~ thread start\n&quot;</span></div>
+<div class="line"><span class="lineno">   42</span>         &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;r:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a198b8c7fd08c88f51c1cc3238a5ab983">getMs</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca2baa69eafc7204f3bd8648eba580c489">Tag::READY</a>) &lt;&lt; <span class="stringliteral">&quot; ms : duration of thread start ~ all threads ready timing\n&quot;</span></div>
+<div class="line"><span class="lineno">   43</span>         &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;i:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a198b8c7fd08c88f51c1cc3238a5ab983">getMs</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3caf57a5f2740af9bdeecf5eb04187a6449">Tag::INITTEXTURING</a>) &lt;&lt; <span class="stringliteral">&quot; ms : duration of init texturing and caancellation setup\n&quot;</span></div>
+<div class="line"><span class="lineno">   44</span>         &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;T:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a198b8c7fd08c88f51c1cc3238a5ab983">getMs</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca3407f47f1eb883929409294ee00004d2">Tag::RENDERTILES</a>) &lt;&lt; <span class="stringliteral">&quot; ms : duration of renderTiles()\n&quot;</span></div>
+<div class="line"><span class="lineno">   45</span>         &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;Q:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a198b8c7fd08c88f51c1cc3238a5ab983">getMs</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3cad27145fa9d65f864e059afa6f129ece5">Tag::QUEUEDRAINING</a>) &lt;&lt; <span class="stringliteral">&quot; ms : duration of queue draining phase\n&quot;</span></div>
+<div class="line"><span class="lineno">   46</span>         &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;f:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a198b8c7fd08c88f51c1cc3238a5ab983">getMs</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca75a982c2b8b5b534a516c0fedef9b194">Tag::FINISHUP</a>) &lt;&lt; <span class="stringliteral">&quot; ms : duration of finish up thread\n&quot;</span></div>
+<div class="line"><span class="lineno">   47</span>         &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;g:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a198b8c7fd08c88f51c1cc3238a5ab983">getMs</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3caf83d52cbed7cc99fb3ad30d731ae15e4">Tag::ENDGAP</a>) &lt;&lt; <span class="stringliteral">&quot; ms : end gap duration of thread\n&quot;</span></div>
+<div class="line"><span class="lineno">   48</span>         &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;A:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a198b8c7fd08c88f51c1cc3238a5ab983">getMs</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca18ff74f43da410c5529f7d6fca84f115">Tag::ACTIVE</a>) &lt;&lt; <span class="stringliteral">&quot; ms : engine active duration for rendering\n&quot;</span></div>
+<div class="line"><span class="lineno">   49</span>         &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;t:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a675c10626acbca199bb7a34fd23ee759">get</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3cad4ed15197d5a435f26aa6da545cde4e8">Tag::PROCESSEDTILESTOTAL</a>) &lt;&lt; <span class="stringliteral">&quot; tiles : processed tiles total\n&quot;</span></div>
+<div class="line"><span class="lineno">   50</span>         &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;p:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a675c10626acbca199bb7a34fd23ee759">get</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca47745487dcf78cdbbe010a614a859b9d">Tag::PROCESSEDSAMPLETOTAL</a>) &lt;&lt; <span class="stringliteral">&quot; samples : processed samples total\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   51</span>}</div>
+<div class="ttc" id="a_render_timing_record_8cc_html_a702108ef2f7688e24ef2253d865d30f1"><div class="ttname"><a href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a></div><div class="ttdeci">#define _F7_3</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8cc_source.html#l00016">RenderTimingRecord.cc:16</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_engine_timing_record_html_a198b8c7fd08c88f51c1cc3238a5ab983"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a198b8c7fd08c88f51c1cc3238a5ab983">moonray::rndr::RenderEngineTimingRecord::getMs</a></div><div class="ttdeci">double getMs(const Tag &amp;tag) const</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8h_source.html#l00100">RenderTimingRecord.h:100</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adc8e3c6504f4ac310eb5932c4d015909" name="adc8e3c6504f4ac310eb5932c4d015909"></a>
@@ -768,7 +848,23 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8cc_source.html#l00021">21</a> of file <a class="el" href="_render_timing_record_8cc_source.html">RenderTimingRecord.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   22</span>{</div>
+<div class="line"><span class="lineno">   23</span>    ostr &lt;&lt; hd</div>
+<div class="line"><span class="lineno">   24</span>         &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#ab20690e0b5b421ed59a34cb7e3ddeb7f">_D2</a> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#af5803bb1954d2837ea0083ae97d5c5c1">mId</a></div>
+<div class="line"><span class="lineno">   25</span>         &lt;&lt; <span class="stringliteral">&quot; s:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a198b8c7fd08c88f51c1cc3238a5ab983">getMs</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3cab078ffd28db767c502ac367053f6e0ac">Tag::START</a>)</div>
+<div class="line"><span class="lineno">   26</span>         &lt;&lt; <span class="stringliteral">&quot; r:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a198b8c7fd08c88f51c1cc3238a5ab983">getMs</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca2baa69eafc7204f3bd8648eba580c489">Tag::READY</a>)</div>
+<div class="line"><span class="lineno">   27</span>         &lt;&lt; <span class="stringliteral">&quot; i:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a198b8c7fd08c88f51c1cc3238a5ab983">getMs</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3caf57a5f2740af9bdeecf5eb04187a6449">Tag::INITTEXTURING</a>)</div>
+<div class="line"><span class="lineno">   28</span>         &lt;&lt; <span class="stringliteral">&quot; T:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a198b8c7fd08c88f51c1cc3238a5ab983">getMs</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca3407f47f1eb883929409294ee00004d2">Tag::RENDERTILES</a>)</div>
+<div class="line"><span class="lineno">   29</span>         &lt;&lt; <span class="stringliteral">&quot; Q:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a198b8c7fd08c88f51c1cc3238a5ab983">getMs</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3cad27145fa9d65f864e059afa6f129ece5">Tag::QUEUEDRAINING</a>)</div>
+<div class="line"><span class="lineno">   30</span>         &lt;&lt; <span class="stringliteral">&quot; f:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a198b8c7fd08c88f51c1cc3238a5ab983">getMs</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca75a982c2b8b5b534a516c0fedef9b194">Tag::FINISHUP</a>)</div>
+<div class="line"><span class="lineno">   31</span>         &lt;&lt; <span class="stringliteral">&quot; g:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a198b8c7fd08c88f51c1cc3238a5ab983">getMs</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3caf83d52cbed7cc99fb3ad30d731ae15e4">Tag::ENDGAP</a>)</div>
+<div class="line"><span class="lineno">   32</span>         &lt;&lt; <span class="stringliteral">&quot; A:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a198b8c7fd08c88f51c1cc3238a5ab983">getMs</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca18ff74f43da410c5529f7d6fca84f115">Tag::ACTIVE</a>)</div>
+<div class="line"><span class="lineno">   33</span>         &lt;&lt; <span class="stringliteral">&quot; t:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a675c10626acbca199bb7a34fd23ee759">get</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3cad4ed15197d5a435f26aa6da545cde4e8">Tag::PROCESSEDTILESTOTAL</a>)</div>
+<div class="line"><span class="lineno">   34</span>         &lt;&lt; <span class="stringliteral">&quot; p:&quot;</span> &lt;&lt; <a class="code hl_define" href="_render_timing_record_8cc.html#a702108ef2f7688e24ef2253d865d30f1">_F7_3</a> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a675c10626acbca199bb7a34fd23ee759">get</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a788650eb48c3121d006f5c707522df3ca47745487dcf78cdbbe010a614a859b9d">Tag::PROCESSEDSAMPLETOTAL</a>)</div>
+<div class="line"><span class="lineno">   35</span>         &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">   36</span>}</div>
+<div class="ttc" id="a_render_timing_record_8cc_html_ab20690e0b5b421ed59a34cb7e3ddeb7f"><div class="ttname"><a href="_render_timing_record_8cc.html#ab20690e0b5b421ed59a34cb7e3ddeb7f">_D2</a></div><div class="ttdeci">#define _D2</div><div class="ttdef"><b>Definition:</b> <a href="_render_timing_record_8cc_source.html#l00015">RenderTimingRecord.cc:15</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7eeba8b8eec2eca993c3a417d6c8fdea" name="a7eeba8b8eec2eca993c3a417d6c8fdea"></a>
@@ -806,7 +902,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00109">109</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  109</span>                                                                            {</div>
+<div class="line"><span class="lineno">  110</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a8572b35f9092644b5e21084409d18cee">mValues</a>.size(); ++i) updateFunc(<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a8572b35f9092644b5e21084409d18cee">mValues</a>[i], v);</div>
+<div class="line"><span class="lineno">  111</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aff99f2825ebd6b0752da7a3e214f88a2" name="aff99f2825ebd6b0752da7a3e214f88a2"></a>
@@ -844,7 +943,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_timing_record_8h_source.html#l00106">106</a> of file <a class="el" href="_render_timing_record_8h_source.html">RenderTimingRecord.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  106</span>                                                                                                 {</div>
+<div class="line"><span class="lineno">  107</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a8572b35f9092644b5e21084409d18cee">mValues</a>.size(); ++i) updateFunc(<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html#a8572b35f9092644b5e21084409d18cee">mValues</a>[i], rec.mValues[i]);</div>
+<div class="line"><span class="lineno">  108</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -901,9 +1003,13 @@ Protected Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/rndr/<a class="el" href="_render_timing_record_8cc_source.html">RenderTimingRecord.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rndr_1_1_render_engine_timing_record.html">RenderEngineTimingRecord</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

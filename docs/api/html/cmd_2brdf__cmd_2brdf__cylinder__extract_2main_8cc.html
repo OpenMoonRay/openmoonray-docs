@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_55b3e8b76a6a129d85f7ec9f20e593af.html">cmd</a></li><li class="navelem"><a class="el" href="dir_7c57a4c63cdddfca27542ceb71d34fef.html">brdf_cmd</a></li><li class="navelem"><a class="el" href="dir_510d296b4b16e8e1888376c681929a5c.html">brdf_cylinder_extract</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
@@ -105,7 +121,244 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html#l00315">315</a> of file <a class="el" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html">main.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  316</span>{</div>
+<div class="line"><span class="lineno">  317</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  318</span>        <span class="comment">//------------------------------------</span></div>
+<div class="line"><span class="lineno">  319</span> </div>
+<div class="line"><span class="lineno">  320</span>        <span class="comment">// Initialize our logging</span></div>
+<div class="line"><span class="lineno">  321</span>        Logger::init();</div>
+<div class="line"><span class="lineno">  322</span> </div>
+<div class="line"><span class="lineno">  323</span>        <span class="comment">// Check for no flags or help flag.</span></div>
+<div class="line"><span class="lineno">  324</span>        <span class="keywordflow">if</span> (argc == 1 || std::string(argv[1]) == <span class="stringliteral">&quot;-h&quot;</span>) {</div>
+<div class="line"><span class="lineno">  325</span>            <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#aed1fbfe83f8b76764faaac4bbb198d8b">usage</a>(argv[0], <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  326</span>            std::exit(EXIT_FAILURE);</div>
+<div class="line"><span class="lineno">  327</span>        }</div>
+<div class="line"><span class="lineno">  328</span> </div>
+<div class="line"><span class="lineno">  329</span>        <span class="comment">//------------------------------------</span></div>
+<div class="line"><span class="lineno">  330</span> </div>
+<div class="line"><span class="lineno">  331</span>        <span class="comment">// Args parsing</span></div>
+<div class="line"><span class="lineno">  332</span>        Args args(argc, argv);</div>
+<div class="line"><span class="lineno">  333</span>        Args::StringArray values;</div>
+<div class="line"><span class="lineno">  334</span> </div>
+<div class="line"><span class="lineno">  335</span>        <span class="keywordflow">if</span> (args.getFlagValues(<span class="stringliteral">&quot;-in&quot;</span>, 1, values) &lt; 0) {</div>
+<div class="line"><span class="lineno">  336</span>            <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#aed1fbfe83f8b76764faaac4bbb198d8b">usage</a>(argv[0], <span class="stringliteral">&quot;Missing input filename&quot;</span>);</div>
+<div class="line"><span class="lineno">  337</span>            std::exit(EXIT_FAILURE);</div>
+<div class="line"><span class="lineno">  338</span>        }</div>
+<div class="line"><span class="lineno">  339</span>        std::string inFilename = values[0];</div>
+<div class="line"><span class="lineno">  340</span> </div>
+<div class="line"><span class="lineno">  341</span>        std::string inSeqPrefix;</div>
+<div class="line"><span class="lineno">  342</span>        <span class="keywordflow">if</span> (args.getFlagValues(<span class="stringliteral">&quot;-in_seq&quot;</span>, 1, values) &gt;= 0) {</div>
+<div class="line"><span class="lineno">  343</span>            inSeqPrefix = values[0];</div>
+<div class="line"><span class="lineno">  344</span>        }</div>
+<div class="line"><span class="lineno">  345</span> </div>
+<div class="line"><span class="lineno">  346</span>        std::string outSobelFilename;</div>
+<div class="line"><span class="lineno">  347</span>        <span class="keywordflow">if</span> (args.getFlagValues(<span class="stringliteral">&quot;-out_sobel&quot;</span>, 1, values) &gt;= 0) {</div>
+<div class="line"><span class="lineno">  348</span>            outSobelFilename = values[0];</div>
+<div class="line"><span class="lineno">  349</span>        }</div>
+<div class="line"><span class="lineno">  350</span> </div>
+<div class="line"><span class="lineno">  351</span>        std::string outEdgesFilename;</div>
+<div class="line"><span class="lineno">  352</span>        <span class="keywordflow">if</span> (args.getFlagValues(<span class="stringliteral">&quot;-out_edges&quot;</span>, 1, values) &gt;= 0) {</div>
+<div class="line"><span class="lineno">  353</span>            outEdgesFilename = values[0];</div>
+<div class="line"><span class="lineno">  354</span>        }</div>
+<div class="line"><span class="lineno">  355</span> </div>
+<div class="line"><span class="lineno">  356</span>        std::string outSamplesFilename;</div>
+<div class="line"><span class="lineno">  357</span>        <span class="keywordflow">if</span> (args.getFlagValues(<span class="stringliteral">&quot;-out_samples&quot;</span>, 1, values) &gt;= 0) {</div>
+<div class="line"><span class="lineno">  358</span>            outSamplesFilename = values[0];</div>
+<div class="line"><span class="lineno">  359</span>        }</div>
+<div class="line"><span class="lineno">  360</span> </div>
+<div class="line"><span class="lineno">  361</span>        std::string outBsdfSlicePrefix;</div>
+<div class="line"><span class="lineno">  362</span>        std::string outBrdfPhi;</div>
+<div class="line"><span class="lineno">  363</span>        <span class="keywordflow">if</span> (args.getFlagValues(<span class="stringliteral">&quot;-out_bsdf_slice&quot;</span>, 2, values) &gt;= 0) {</div>
+<div class="line"><span class="lineno">  364</span>            outBsdfSlicePrefix = values[0];</div>
+<div class="line"><span class="lineno">  365</span>            outBrdfPhi = values[1];</div>
+<div class="line"><span class="lineno">  366</span>        }</div>
+<div class="line"><span class="lineno">  367</span> </div>
+<div class="line"><span class="lineno">  368</span>        std::vector&lt;int&gt; ignoreFrames;</div>
+<div class="line"><span class="lineno">  369</span>        <span class="keywordflow">if</span> (args.getFlagValues(<span class="stringliteral">&quot;-ignore_frames&quot;</span>, 1, values) &gt;= 0) {</div>
+<div class="line"><span class="lineno">  370</span>            stringToIntArray(values[0], ignoreFrames);</div>
+<div class="line"><span class="lineno">  371</span>        }</div>
+<div class="line"><span class="lineno">  372</span> </div>
+<div class="line"><span class="lineno">  373</span>        <span class="keywordtype">float</span> imageRatio = 0.5f;</div>
+<div class="line"><span class="lineno">  374</span>        <span class="keywordflow">if</span> (args.getFlagValues(<span class="stringliteral">&quot;-image_ratio&quot;</span>, 1, values) &gt;= 0) {</div>
+<div class="line"><span class="lineno">  375</span>            imageRatio = stringToFloat(values[0]);</div>
+<div class="line"><span class="lineno">  376</span>        }</div>
+<div class="line"><span class="lineno">  377</span> </div>
+<div class="line"><span class="lineno">  378</span>        <span class="keywordtype">float</span> edgeThreshold = 0.25f;</div>
+<div class="line"><span class="lineno">  379</span>        <span class="keywordflow">if</span> (args.getFlagValues(<span class="stringliteral">&quot;-edge_threshold&quot;</span>, 1, values) &gt;= 0) {</div>
+<div class="line"><span class="lineno">  380</span>            edgeThreshold = stringToFloat(values[0]);</div>
+<div class="line"><span class="lineno">  381</span>        }</div>
+<div class="line"><span class="lineno">  382</span> </div>
+<div class="line"><span class="lineno">  383</span>        <span class="keywordtype">bool</span> doFit = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  384</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> topEdge(0.0f, 0.0f);</div>
+<div class="line"><span class="lineno">  385</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> bottomEdge(0.0f, 0.0f);</div>
+<div class="line"><span class="lineno">  386</span>        <span class="keywordflow">if</span> (args.getFlagValues(<span class="stringliteral">&quot;-edge_top_bottom&quot;</span>, 4, values) &gt;= 0) {</div>
+<div class="line"><span class="lineno">  387</span>            doFit = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  388</span>            topEdge.x = stringToFloat(values[0]);</div>
+<div class="line"><span class="lineno">  389</span>            topEdge.y = stringToFloat(values[1]);</div>
+<div class="line"><span class="lineno">  390</span>            bottomEdge.x = stringToFloat(values[2]);</div>
+<div class="line"><span class="lineno">  391</span>            bottomEdge.y = stringToFloat(values[3]);</div>
+<div class="line"><span class="lineno">  392</span>        }</div>
+<div class="line"><span class="lineno">  393</span> </div>
+<div class="line"><span class="lineno">  394</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> sampleScale(1.0f, 1.0f);</div>
+<div class="line"><span class="lineno">  395</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> sampleOffset(0.0f, 0.0f);</div>
+<div class="line"><span class="lineno">  396</span>        <span class="keywordflow">if</span> (args.getFlagValues(<span class="stringliteral">&quot;-sample_scale&quot;</span>, 2, values) &gt;= 0) {</div>
+<div class="line"><span class="lineno">  397</span>            sampleScale.x = stringToFloat(values[0]);</div>
+<div class="line"><span class="lineno">  398</span>            sampleScale.y = stringToFloat(values[1]);</div>
+<div class="line"><span class="lineno">  399</span>        }</div>
+<div class="line"><span class="lineno">  400</span>        <span class="keywordflow">if</span> (args.getFlagValues(<span class="stringliteral">&quot;-sample_offset&quot;</span>, 2, values) &gt;= 0) {</div>
+<div class="line"><span class="lineno">  401</span>            sampleOffset.x = stringToFloat(values[0]);</div>
+<div class="line"><span class="lineno">  402</span>            sampleOffset.y = stringToFloat(values[1]);</div>
+<div class="line"><span class="lineno">  403</span>        }</div>
+<div class="line"><span class="lineno">  404</span> </div>
+<div class="line"><span class="lineno">  405</span> </div>
+<div class="line"><span class="lineno">  406</span>        <span class="comment">//------------------------------------</span></div>
+<div class="line"><span class="lineno">  407</span> </div>
+<div class="line"><span class="lineno">  408</span>        <span class="comment">// Load input image</span></div>
+<div class="line"><span class="lineno">  409</span>        Logger::info(<span class="stringliteral">&quot;Reading image: \&quot;&quot;</span> , inFilename , <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  410</span>        <a class="code hl_class" href="class_image.html">Image</a> inImage(inFilename);</div>
+<div class="line"><span class="lineno">  411</span>        Logger::info(<span class="stringliteral">&quot;Image width: &quot;</span> , inImage.getWidth());</div>
+<div class="line"><span class="lineno">  412</span>        Logger::info(<span class="stringliteral">&quot;Image height: &quot;</span> , inImage.getHeight());</div>
+<div class="line"><span class="lineno">  413</span> </div>
+<div class="line"><span class="lineno">  414</span> </div>
+<div class="line"><span class="lineno">  415</span>        <span class="comment">// Sobel image for edge detection</span></div>
+<div class="line"><span class="lineno">  416</span>        Logger::info(<span class="stringliteral">&quot;Applying sobel filter&quot;</span>);</div>
+<div class="line"><span class="lineno">  417</span>        <a class="code hl_class" href="class_image.html">Image</a> sobelImage;</div>
+<div class="line"><span class="lineno">  418</span>        inImage.<a class="code hl_function" href="class_image.html#a6df1c2b2832ebcf002c400f9aba7f538">sobel</a>(sobelImage);</div>
+<div class="line"><span class="lineno">  419</span> </div>
+<div class="line"><span class="lineno">  420</span>        <span class="keywordflow">if</span> (!outSobelFilename.empty()) {</div>
+<div class="line"><span class="lineno">  421</span>            Logger::info(<span class="stringliteral">&quot;Writing sobel image: \&quot;&quot;</span> , outSobelFilename , <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  422</span>            sobelImage.<a class="code hl_function" href="class_image.html#a3fe6c5021fbfd5dd8a66b09f4ef14ffd">saveAs</a>(outSobelFilename);</div>
+<div class="line"><span class="lineno">  423</span>        }</div>
+<div class="line"><span class="lineno">  424</span> </div>
+<div class="line"><span class="lineno">  425</span> </div>
+<div class="line"><span class="lineno">  426</span>        <span class="comment">// Select xMin / xMax of the image to perform detection</span></div>
+<div class="line"><span class="lineno">  427</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> xSize = int(sobelImage.<a class="code hl_function" href="class_image.html#a36bcae4838228d574738249a87dc4464">getWidth</a>() * imageRatio) + 1;</div>
+<div class="line"><span class="lineno">  428</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> xMin = (sobelImage.<a class="code hl_function" href="class_image.html#a36bcae4838228d574738249a87dc4464">getWidth</a>() - xSize) / 2;</div>
+<div class="line"><span class="lineno">  429</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> xMax = (sobelImage.<a class="code hl_function" href="class_image.html#a36bcae4838228d574738249a87dc4464">getWidth</a>() + xSize) / 2;</div>
+<div class="line"><span class="lineno">  430</span> </div>
+<div class="line"><span class="lineno">  431</span>        <span class="comment">// Detect top and bottom edge samples</span></div>
+<div class="line"><span class="lineno">  432</span>        Logger::info(<span class="stringliteral">&quot;Detecting edge samples&quot;</span>);</div>
+<div class="line"><span class="lineno">  433</span>        std::vector&lt;Vec2f&gt; topEdgeSamples;</div>
+<div class="line"><span class="lineno">  434</span>        std::vector&lt;Vec2f&gt; bottomEdgeSamples;</div>
+<div class="line"><span class="lineno">  435</span>        <a class="code hl_function" href="_edge_detect_8cc.html#a83208d2be25643be14a1c7ebcb596d8d">detectEdgeSamples</a>(sobelImage, xMin, xMax, edgeThreshold,</div>
+<div class="line"><span class="lineno">  436</span>                topEdgeSamples, bottomEdgeSamples);</div>
+<div class="line"><span class="lineno">  437</span> </div>
+<div class="line"><span class="lineno">  438</span>        <span class="comment">// Fit top and bottom edge, compute cylinder axis</span></div>
+<div class="line"><span class="lineno">  439</span>        <span class="keywordflow">if</span> (doFit) {</div>
+<div class="line"><span class="lineno">  440</span>            <a class="code hl_function" href="_edge_detect_8cc.html#afd10358c806c558bb343387e2a8a47db">fitEdge</a>(topEdgeSamples, topEdge.x, topEdge.y);</div>
+<div class="line"><span class="lineno">  441</span>            <a class="code hl_function" href="_edge_detect_8cc.html#afd10358c806c558bb343387e2a8a47db">fitEdge</a>(bottomEdgeSamples, bottomEdge.x, bottomEdge.y);</div>
+<div class="line"><span class="lineno">  442</span>        }</div>
+<div class="line"><span class="lineno">  443</span>        Logger::info(<span class="stringliteral">&quot;Top edge: y = &quot;</span> , topEdge.x , <span class="stringliteral">&quot; * x + &quot;</span> , topEdge.y);</div>
+<div class="line"><span class="lineno">  444</span>        Logger::info(<span class="stringliteral">&quot;Bottom edge: y = &quot;</span> , bottomEdge.x , <span class="stringliteral">&quot; * x + &quot;</span> , bottomEdge.y);</div>
+<div class="line"><span class="lineno">  445</span> </div>
+<div class="line"><span class="lineno">  446</span>        <span class="comment">// Scale / offset edges and xRange to affect samples</span></div>
+<div class="line"><span class="lineno">  447</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> axisEdge = 0.5f * (topEdge + bottomEdge);</div>
+<div class="line"><span class="lineno">  448</span>        topEdge.y = axisEdge.y + (topEdge.y - axisEdge.y) * sampleScale.y + sampleOffset.y;</div>
+<div class="line"><span class="lineno">  449</span>        bottomEdge.y = axisEdge.y + (bottomEdge.y - axisEdge.y) * sampleScale.y + sampleOffset.y;</div>
+<div class="line"><span class="lineno">  450</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> xRange(xMin + 0.5f, xMax + 0.5f);</div>
+<div class="line"><span class="lineno">  451</span>        <span class="keywordtype">float</span> xCenter = 0.5f * (xRange[0] + xRange[1]);</div>
+<div class="line"><span class="lineno">  452</span>        xRange[0] = xCenter + (xRange[0] - xCenter) * sampleScale.x + sampleOffset.x;</div>
+<div class="line"><span class="lineno">  453</span>        xRange[1] = xCenter + (xRange[1] - xCenter) * sampleScale.x + sampleOffset.x;</div>
+<div class="line"><span class="lineno">  454</span> </div>
+<div class="line"><span class="lineno">  455</span>        <span class="comment">// Draw edge samples and save edges image</span></div>
+<div class="line"><span class="lineno">  456</span>        <span class="keywordflow">if</span> (!outEdgesFilename.empty()) {</div>
+<div class="line"><span class="lineno">  457</span>            <a class="code hl_class" href="class_image.html">Image</a> edgesImage(inImage);</div>
+<div class="line"><span class="lineno">  458</span>            <a class="code hl_function" href="_edge_detect_8cc.html#ab019076922c77920ab73f223884406a6">drawEdge</a>(topEdge.x, topEdge.y, edgesImage);</div>
+<div class="line"><span class="lineno">  459</span>            <a class="code hl_function" href="_edge_detect_8cc.html#ab019076922c77920ab73f223884406a6">drawEdge</a>(bottomEdge.x, bottomEdge.y, edgesImage);</div>
+<div class="line"><span class="lineno">  460</span>            <a class="code hl_function" href="_edge_detect_8cc.html#a3c3a07a7aeddf80f1a111ddd8afbd472">drawEdgeSamples</a>(topEdgeSamples, edgesImage);</div>
+<div class="line"><span class="lineno">  461</span>            <a class="code hl_function" href="_edge_detect_8cc.html#a3c3a07a7aeddf80f1a111ddd8afbd472">drawEdgeSamples</a>(bottomEdgeSamples, edgesImage);</div>
+<div class="line"><span class="lineno">  462</span>            Logger::info(<span class="stringliteral">&quot;Writing edges image: \&quot;&quot;</span> , outEdgesFilename , <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  463</span>            edgesImage.saveAs(outEdgesFilename);</div>
+<div class="line"><span class="lineno">  464</span>        }</div>
+<div class="line"><span class="lineno">  465</span> </div>
+<div class="line"><span class="lineno">  466</span> </div>
+<div class="line"><span class="lineno">  467</span>        <span class="comment">//------------------------------------</span></div>
+<div class="line"><span class="lineno">  468</span> </div>
+<div class="line"><span class="lineno">  469</span>        <span class="comment">// Cylinder properties</span></div>
+<div class="line"><span class="lineno">  470</span>        <span class="comment">// The cylinder diameter is 7.9cm. The front-most surface point of the</span></div>
+<div class="line"><span class="lineno">  471</span>        <span class="comment">// cylinder is at z=-7cm from the center of the light-stage, in other</span></div>
+<div class="line"><span class="lineno">  472</span>        <span class="comment">// words the center axis of the cylinder is at z= -7 - 7.9/2 = -10.95</span></div>
+<div class="line"><span class="lineno">  473</span>        <span class="comment">// The cylinder axis in world space is off from the Y axis by an angle alpha</span></div>
+<div class="line"><span class="lineno">  474</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> cylDiameter = 7.9f;</div>
+<div class="line"><span class="lineno">  475</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> cylRadius = cylDiameter / 2.0f;</div>
+<div class="line"><span class="lineno">  476</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> cylZCenter = -7.0f - cylRadius;</div>
+<div class="line"><span class="lineno">  477</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> cylCosAlpha = 1.0f / sqrt(1 + axisEdge.x * axisEdge.x);</div>
+<div class="line"><span class="lineno">  478</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> cylAlpha = acos(cylCosAlpha);</div>
+<div class="line"><span class="lineno">  479</span> </div>
+<div class="line"><span class="lineno">  480</span>        <span class="comment">// Sample cylinder on input image for tuning sample placement</span></div>
+<div class="line"><span class="lineno">  481</span>        <span class="comment">//Image samplesImage(inImage.getWidth(), inImage.getHeight(), 1);</span></div>
+<div class="line"><span class="lineno">  482</span>        <a class="code hl_class" href="class_image.html">Image</a> samplesImage(inImage);</div>
+<div class="line"><span class="lineno">  483</span>        <a class="code hl_class" href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html">LightStageCylinderBsdfSlice</a> dummyTop(<span class="keyword">true</span>, 16,</div>
+<div class="line"><span class="lineno">  484</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_light_stage.html#a1d7a4c9fe9b6b6cb34ef99769694e8fa">LightStage::sSeparatedLightCount</a>, cylRadius, cylZCenter, cylAlpha);</div>
+<div class="line"><span class="lineno">  485</span>        <a class="code hl_class" href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html">LightStageCylinderBsdfSlice</a> dummyBottom(<span class="keyword">false</span>, 16,</div>
+<div class="line"><span class="lineno">  486</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_light_stage.html#a1d7a4c9fe9b6b6cb34ef99769694e8fa">LightStage::sSeparatedLightCount</a>, cylRadius, cylZCenter, cylAlpha);</div>
+<div class="line"><span class="lineno">  487</span>        <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#aad59716625caad738cf0b9251662dd29">sampleCylinder</a>(topEdge, bottomEdge, xRange, -1, samplesImage,</div>
+<div class="line"><span class="lineno">  488</span>                dummyTop, dummyBottom);</div>
+<div class="line"><span class="lineno">  489</span>        <span class="keywordflow">if</span> (!outSamplesFilename.empty()) {</div>
+<div class="line"><span class="lineno">  490</span>            Logger::info(<span class="stringliteral">&quot;Writing samples image: \&quot;&quot;</span> , outSamplesFilename , <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  491</span>            samplesImage.saveAs(outSamplesFilename);</div>
+<div class="line"><span class="lineno">  492</span>        }</div>
+<div class="line"><span class="lineno">  493</span> </div>
+<div class="line"><span class="lineno">  494</span>        <span class="comment">// Process input sequence</span></div>
+<div class="line"><span class="lineno">  495</span>        <span class="keywordflow">if</span> (!inSeqPrefix.empty()) {</div>
+<div class="line"><span class="lineno">  496</span>            <a class="code hl_class" href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html">LightStageCylinderBsdfSlice</a> bsdfSliceDifTop(<span class="keyword">true</span>, 90,</div>
+<div class="line"><span class="lineno">  497</span>                    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_light_stage.html#a1d7a4c9fe9b6b6cb34ef99769694e8fa">LightStage::sSeparatedLightCount</a>, cylRadius, cylZCenter, cylAlpha);</div>
+<div class="line"><span class="lineno">  498</span>            <a class="code hl_class" href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html">LightStageCylinderBsdfSlice</a> bsdfSliceDifBottom(<span class="keyword">false</span>, 90,</div>
+<div class="line"><span class="lineno">  499</span>                    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_light_stage.html#a1d7a4c9fe9b6b6cb34ef99769694e8fa">LightStage::sSeparatedLightCount</a>, cylRadius, cylZCenter, cylAlpha);</div>
+<div class="line"><span class="lineno">  500</span>            <a class="code hl_class" href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html">LightStageCylinderBsdfSlice</a> bsdfSliceSpecTop(<span class="keyword">true</span>, 90,</div>
+<div class="line"><span class="lineno">  501</span>                    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_light_stage.html#a1d7a4c9fe9b6b6cb34ef99769694e8fa">LightStage::sSeparatedLightCount</a>, cylRadius, cylZCenter, cylAlpha);</div>
+<div class="line"><span class="lineno">  502</span>            <a class="code hl_class" href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html">LightStageCylinderBsdfSlice</a> bsdfSliceSpecBottom(<span class="keyword">false</span>, 90,</div>
+<div class="line"><span class="lineno">  503</span>                    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_light_stage.html#a1d7a4c9fe9b6b6cb34ef99769694e8fa">LightStage::sSeparatedLightCount</a>, cylRadius, cylZCenter, cylAlpha);</div>
+<div class="line"><span class="lineno">  504</span>            Logger::info(<span class="stringliteral">&quot;Processing input sequence: &quot;</span>);</div>
+<div class="line"><span class="lineno">  505</span>            <span class="comment">// We ignore last light which causes big flare</span></div>
+<div class="line"><span class="lineno">  506</span><span class="preprocessor">#if 1</span></div>
+<div class="line"><span class="lineno">  507</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_light_stage.html#a1d7a4c9fe9b6b6cb34ef99769694e8fa">LightStage::sSeparatedLightCount</a> - 1; i++) {</div>
+<div class="line"><span class="lineno">  508</span><span class="preprocessor">#else</span></div>
+<div class="line"><span class="lineno">  509</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
+<div class="line"><span class="lineno">  510</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  511</span>                <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#a0bb6593e5302d88154d08c303f2ce4d1">sampleLight</a>(inImage, topEdge, bottomEdge, xRange,</div>
+<div class="line"><span class="lineno">  512</span>                        inSeqPrefix, i, ignoreFrames,</div>
+<div class="line"><span class="lineno">  513</span>                        bsdfSliceDifTop, bsdfSliceDifBottom,</div>
+<div class="line"><span class="lineno">  514</span>                        bsdfSliceSpecTop, bsdfSliceSpecBottom);</div>
+<div class="line"><span class="lineno">  515</span>            }</div>
+<div class="line"><span class="lineno">  516</span>            <span class="keywordflow">if</span> (!outBsdfSlicePrefix.empty()) {</div>
+<div class="line"><span class="lineno">  517</span>                std::string filenameDifTop = outBsdfSlicePrefix + <span class="stringliteral">&quot;_dif_&quot;</span> + outBrdfPhi + <span class="stringliteral">&quot;_top.slice&quot;</span>;</div>
+<div class="line"><span class="lineno">  518</span>                Logger::info(<span class="stringliteral">&quot;Writing bsdf slice file: \&quot;&quot;</span> , filenameDifTop , <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  519</span>                bsdfSliceDifTop.saveAs(filenameDifTop);</div>
+<div class="line"><span class="lineno">  520</span>                std::string filenameDifBottom = outBsdfSlicePrefix + <span class="stringliteral">&quot;_dif_&quot;</span> + outBrdfPhi + <span class="stringliteral">&quot;_bottom.slice&quot;</span>;</div>
+<div class="line"><span class="lineno">  521</span>                Logger::info(<span class="stringliteral">&quot;Writing bsdf slice file: \&quot;&quot;</span> , filenameDifBottom , <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  522</span>                bsdfSliceDifBottom.saveAs(filenameDifBottom);</div>
+<div class="line"><span class="lineno">  523</span>                std::string filenameSpecTop = outBsdfSlicePrefix + <span class="stringliteral">&quot;_spc_&quot;</span> + outBrdfPhi + <span class="stringliteral">&quot;_top.slice&quot;</span>;</div>
+<div class="line"><span class="lineno">  524</span>                Logger::info(<span class="stringliteral">&quot;Writing bsdf slice file: \&quot;&quot;</span> , filenameSpecTop , <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  525</span>                bsdfSliceSpecTop.saveAs(filenameSpecTop);</div>
+<div class="line"><span class="lineno">  526</span>                std::string filenameSpecBottom = outBsdfSlicePrefix + <span class="stringliteral">&quot;_spc_&quot;</span> + outBrdfPhi + <span class="stringliteral">&quot;_bottom.slice&quot;</span>;</div>
+<div class="line"><span class="lineno">  527</span>                Logger::info(<span class="stringliteral">&quot;Writing bsdf slice file: \&quot;&quot;</span> , filenameSpecBottom , <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  528</span>                bsdfSliceSpecBottom.saveAs(filenameSpecBottom);</div>
+<div class="line"><span class="lineno">  529</span>            }</div>
+<div class="line"><span class="lineno">  530</span>        }</div>
+<div class="line"><span class="lineno">  531</span> </div>
+<div class="line"><span class="lineno">  532</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><span class="lineno">  533</span>        Logger::error(e.what());</div>
+<div class="line"><span class="lineno">  534</span>        std::exit(EXIT_FAILURE);</div>
+<div class="line"><span class="lineno">  535</span>    }</div>
+<div class="line"><span class="lineno">  536</span> </div>
+<div class="line"><span class="lineno">  537</span>    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line"><span class="lineno">  538</span>}</div>
+<div class="ttc" id="a_edge_detect_8cc_html_a3c3a07a7aeddf80f1a111ddd8afbd472"><div class="ttname"><a href="_edge_detect_8cc.html#a3c3a07a7aeddf80f1a111ddd8afbd472">drawEdgeSamples</a></div><div class="ttdeci">void drawEdgeSamples(const std::vector&lt; Vec2f &gt; &amp;edgeSamples, Image &amp;image)</div><div class="ttdef"><b>Definition:</b> <a href="_edge_detect_8cc_source.html#l00091">EdgeDetect.cc:91</a></div></div>
+<div class="ttc" id="a_edge_detect_8cc_html_a83208d2be25643be14a1c7ebcb596d8d"><div class="ttname"><a href="_edge_detect_8cc.html#a83208d2be25643be14a1c7ebcb596d8d">detectEdgeSamples</a></div><div class="ttdeci">void detectEdgeSamples(const Image &amp;image, int xMin, int xMax, float threshold, std::vector&lt; Vec2f &gt; &amp;topEdgeSamples, std::vector&lt; Vec2f &gt; &amp;bottomEdgeSamples)</div><div class="ttdef"><b>Definition:</b> <a href="_edge_detect_8cc_source.html#l00045">EdgeDetect.cc:45</a></div></div>
+<div class="ttc" id="a_edge_detect_8cc_html_ab019076922c77920ab73f223884406a6"><div class="ttname"><a href="_edge_detect_8cc.html#ab019076922c77920ab73f223884406a6">drawEdge</a></div><div class="ttdeci">void drawEdge(float a, float b, Image &amp;image)</div><div class="ttdef"><b>Definition:</b> <a href="_edge_detect_8cc_source.html#l00127">EdgeDetect.cc:127</a></div></div>
+<div class="ttc" id="a_edge_detect_8cc_html_afd10358c806c558bb343387e2a8a47db"><div class="ttname"><a href="_edge_detect_8cc.html#afd10358c806c558bb343387e2a8a47db">fitEdge</a></div><div class="ttdeci">void fitEdge(const std::vector&lt; Vec2f &gt; &amp;edgeSamples, float &amp;resultA, float &amp;resultB)</div><div class="ttdef"><b>Definition:</b> <a href="_edge_detect_8cc_source.html#l00103">EdgeDetect.cc:103</a></div></div>
+<div class="ttc" id="aclass_image_html"><div class="ttname"><a href="class_image.html">Image</a></div><div class="ttdef"><b>Definition:</b> <a href="_image_8h_source.html#l00020">Image.h:20</a></div></div>
+<div class="ttc" id="aclass_image_html_a36bcae4838228d574738249a87dc4464"><div class="ttname"><a href="class_image.html#a36bcae4838228d574738249a87dc4464">Image::getWidth</a></div><div class="ttdeci">int getWidth() const</div><div class="ttdef"><b>Definition:</b> <a href="_image_8h_source.html#l00064">Image.h:64</a></div></div>
+<div class="ttc" id="aclass_image_html_a3fe6c5021fbfd5dd8a66b09f4ef14ffd"><div class="ttname"><a href="class_image.html#a3fe6c5021fbfd5dd8a66b09f4ef14ffd">Image::saveAs</a></div><div class="ttdeci">void saveAs(const std::string &amp;filename) const</div><div class="ttdef"><b>Definition:</b> <a href="_image_8cc_source.html#l00073">Image.cc:73</a></div></div>
+<div class="ttc" id="aclass_image_html_a6df1c2b2832ebcf002c400f9aba7f538"><div class="ttname"><a href="class_image.html#a6df1c2b2832ebcf002c400f9aba7f538">Image::sobel</a></div><div class="ttdeci">void sobel(Image &amp;result) const</div><div class="ttdef"><b>Definition:</b> <a href="_image_8cc_source.html#l00143">Image.cc:143</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html">moonray::shading::LightStageCylinderBsdfSlice</a></div><div class="ttdef"><b>Definition:</b> <a href="_light_stage_8h_source.html#l00064">LightStage.h:65</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_light_stage_html_a1d7a4c9fe9b6b6cb34ef99769694e8fa"><div class="ttname"><a href="classmoonray_1_1shading_1_1_light_stage.html#a1d7a4c9fe9b6b6cb34ef99769694e8fa">moonray::shading::LightStage::sSeparatedLightCount</a></div><div class="ttdeci">static const int sSeparatedLightCount</div><div class="ttdef"><b>Definition:</b> <a href="_light_stage_8h_source.html#l00034">LightStage.h:34</a></div></div>
+<div class="ttc" id="acmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_html_a0bb6593e5302d88154d08c303f2ce4d1"><div class="ttname"><a href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#a0bb6593e5302d88154d08c303f2ce4d1">sampleLight</a></div><div class="ttdeci">void sampleLight(Image &amp;inImage, const Vec2f &amp;topEdge, const Vec2f &amp;bottomEdge, const Vec2f &amp;xRange, const std::string &amp;inSeqPrefix, int lightOrderIndex, const std::vector&lt; int &gt; &amp;ignoreFrames, LightStageCylinderBsdfSlice &amp;bsdfSliceDifTop, LightStageCylinderBsdfSlice &amp;bsdfSliceDifBottom, LightStageCylinderBsdfSlice &amp;bsdfSliceSpecTop, LightStageCylinderBsdfSlice &amp;bsdfSliceSpecBottom)</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html#l00239">main.cc:239</a></div></div>
+<div class="ttc" id="acmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_html_aad59716625caad738cf0b9251662dd29"><div class="ttname"><a href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#aad59716625caad738cf0b9251662dd29">sampleCylinder</a></div><div class="ttdeci">void sampleCylinder(const Vec2f &amp;topEdge, const Vec2f &amp;bottomEdge, Vec2f xRange, int lightOrderIndex, Image &amp;image, LightStageCylinderBsdfSlice &amp;bsdfSliceTop, LightStageCylinderBsdfSlice &amp;bsdfSliceBottom)</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html#l00128">main.cc:128</a></div></div>
+<div class="ttc" id="acmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_html_aed1fbfe83f8b76764faaac4bbb198d8b"><div class="ttname"><a href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#aed1fbfe83f8b76764faaac4bbb198d8b">usage</a></div><div class="ttdeci">void usage(char *argv0, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html#l00289">main.cc:289</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a8ff976ca38d834d434f1d00f2a03359b"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">moonray::geom::Vec2f</a></div><div class="ttdeci">scene_rdl2::math::Vec2f Vec2f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00038">Types.h:38</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac318da468c8d18df40cd319e62fa05fb" name="ac318da468c8d18df40cd319e62fa05fb"></a>
@@ -135,7 +388,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html#l00071">71</a> of file <a class="el" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html">main.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   72</span>{</div>
+<div class="line"><span class="lineno">   73</span>    std::ostringstream stream;</div>
+<div class="line"><span class="lineno">   74</span>    stream &lt;&lt; n;</div>
+<div class="line"><span class="lineno">   75</span>    std::string number = stream.str();</div>
+<div class="line"><span class="lineno">   76</span>    std::string paddingZeroes(padding - number.size(), <span class="charliteral">&#39;0&#39;</span>);</div>
+<div class="line"><span class="lineno">   77</span>    std::string paddedNumber = paddingZeroes + number;</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">return</span> paddedNumber;</div>
+<div class="line"><span class="lineno">   79</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aad59716625caad738cf0b9251662dd29" name="aad59716625caad738cf0b9251662dd29"></a>
@@ -195,7 +456,98 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html#l00128">128</a> of file <a class="el" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html">main.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  132</span>{</div>
+<div class="line"><span class="lineno">  133</span>    MNRY_ASSERT(bsdfSliceTop.<a class="code hl_function" href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html#ad3e211488989fab4eb3ab4a9723fabf7">getCylAlpha</a>() == bsdfSliceBottom.<a class="code hl_function" href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html#ad3e211488989fab4eb3ab4a9723fabf7">getCylAlpha</a>());</div>
+<div class="line"><span class="lineno">  134</span>    MNRY_ASSERT(bsdfSliceTop.<a class="code hl_function" href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html#a30d3b74f2bd4b73794401b9cc3b8ad10">getSizeThetaO</a>() == bsdfSliceBottom.<a class="code hl_function" href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html#a30d3b74f2bd4b73794401b9cc3b8ad10">getSizeThetaO</a>());</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>    <span class="comment">// Cylinder center axis edge in image space</span></div>
+<div class="line"><span class="lineno">  137</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> axisEdge = 0.5f * (topEdge + bottomEdge);</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>    <span class="comment">// Compute cylinder samples coordinate system (O, U, V), where O is the</span></div>
+<div class="line"><span class="lineno">  140</span>    <span class="comment">// origin, U is a vector down the cylinder center axis (with length to</span></div>
+<div class="line"><span class="lineno">  141</span>    <span class="comment">// match one scanline) and V is a vector perpendicular to U (with length</span></div>
+<div class="line"><span class="lineno">  142</span>    <span class="comment">// equal to the screen-projected cylinder radius)</span></div>
+<div class="line"><span class="lineno">  143</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> O;</div>
+<div class="line"><span class="lineno">  144</span>    O.x = xRange[0];</div>
+<div class="line"><span class="lineno">  145</span>    O.y = axisEdge.x * O.x + axisEdge.y;</div>
+<div class="line"><span class="lineno">  146</span> </div>
+<div class="line"><span class="lineno">  147</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> U(1.0f, axisEdge.x);</div>
+<div class="line"><span class="lineno">  148</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> V(axisEdge.x, -1.0f);</div>
+<div class="line"><span class="lineno">  149</span>    <span class="keywordtype">float</span> yBottom = bottomEdge.x * O.x + bottomEdge.y;</div>
+<div class="line"><span class="lineno">  150</span>    V = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(V) * (O.y - yBottom) * cos(bsdfSliceTop.<a class="code hl_function" href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html#ad3e211488989fab4eb3ab4a9723fabf7">getCylAlpha</a>());</div>
+<div class="line"><span class="lineno">  151</span> </div>
+<div class="line"><span class="lineno">  152</span>    <span class="comment">//std::cout &lt;&lt; &quot;Cylinder samples coordinate system (O, U, V) = &quot; &lt;&lt;</span></div>
+<div class="line"><span class="lineno">  153</span>    <span class="comment">//        O &lt;&lt; &quot;, &quot; &lt;&lt; U &lt;&lt; &quot;, &quot; &lt;&lt; V &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  154</span> </div>
+<div class="line"><span class="lineno">  155</span> </div>
+<div class="line"><span class="lineno">  156</span>    <span class="comment">// TODO: For now we&#39;ll assume a camera orthographic projection down -z axis.</span></div>
+<div class="line"><span class="lineno">  157</span> </div>
+<div class="line"><span class="lineno">  158</span>    <span class="comment">// Sample the cylinder with a uniformly distributed viewing angle thetaO</span></div>
+<div class="line"><span class="lineno">  159</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> uMax = float(xRange[1] - xRange[0] + 1);</div>
+<div class="line"><span class="lineno">  160</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> uInc = 1.0f;</div>
+<div class="line"><span class="lineno">  161</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> vCount = bsdfSliceTop.<a class="code hl_function" href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html#a30d3b74f2bd4b73794401b9cc3b8ad10">getSizeThetaO</a>();</div>
+<div class="line"><span class="lineno">  162</span> </div>
+<div class="line"><span class="lineno">  163</span>    <span class="comment">// Sample the cylinder</span></div>
+<div class="line"><span class="lineno">  164</span>    <span class="keywordflow">if</span> (lightOrderIndex &gt;= 0) {</div>
+<div class="line"><span class="lineno">  165</span> </div>
+<div class="line"><span class="lineno">  166</span>        <span class="comment">//std::cout &lt;&lt; &quot;lightOrderIndex = &quot; &lt;&lt; lightOrderIndex &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  167</span> </div>
+<div class="line"><span class="lineno">  168</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> vi = 0; vi &lt; vCount; vi++) {</div>
+<div class="line"><span class="lineno">  169</span>            Color colorBottom(0.0f);</div>
+<div class="line"><span class="lineno">  170</span>            Color colorTop(0.0f);</div>
+<div class="line"><span class="lineno">  171</span>            <span class="keywordtype">int</span> uCount = 0;</div>
+<div class="line"><span class="lineno">  172</span>            <span class="comment">// Sample viewing angle interval [0,pi/2[</span></div>
+<div class="line"><span class="lineno">  173</span>            <span class="keywordtype">float</span> thetaO = vi * sHalfPi / vCount;</div>
+<div class="line"><span class="lineno">  174</span>            <span class="keywordtype">float</span> v = sin(thetaO);</div>
+<div class="line"><span class="lineno">  175</span>            <span class="keywordflow">for</span> (<span class="keywordtype">float</span> u = 0.0f; u &lt; uMax; u += uInc, uCount++) {</div>
+<div class="line"><span class="lineno">  176</span>                <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> Pimg;</div>
+<div class="line"><span class="lineno">  177</span> </div>
+<div class="line"><span class="lineno">  178</span>                <span class="comment">// Compute image space position on the cylinder</span></div>
+<div class="line"><span class="lineno">  179</span>                Pimg = O + u * U + v * V;</div>
+<div class="line"><span class="lineno">  180</span>                colorBottom += <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#aa9dcc5d16e17d75862660c749a805f72">samplePoint</a>(Pimg, thetaO, bsdfSliceBottom,</div>
+<div class="line"><span class="lineno">  181</span>                        lightOrderIndex, image, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  182</span> </div>
+<div class="line"><span class="lineno">  183</span>                Pimg = O + u * U - v * V;</div>
+<div class="line"><span class="lineno">  184</span>                colorTop += <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#aa9dcc5d16e17d75862660c749a805f72">samplePoint</a>(Pimg, -thetaO, bsdfSliceTop,</div>
+<div class="line"><span class="lineno">  185</span>                        lightOrderIndex, image, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  186</span>            }</div>
+<div class="line"><span class="lineno">  187</span> </div>
+<div class="line"><span class="lineno">  188</span>            <span class="comment">// Average point samples along each line sample</span></div>
+<div class="line"><span class="lineno">  189</span>            colorBottom /= float(uCount);</div>
+<div class="line"><span class="lineno">  190</span>            colorTop /= float(uCount);</div>
+<div class="line"><span class="lineno">  191</span> </div>
+<div class="line"><span class="lineno">  192</span>            <span class="comment">// Store in the 3D Bsdf table</span></div>
+<div class="line"><span class="lineno">  193</span>            <span class="comment">// NOTE: indexPhiO = 0 maps to phiWo = pi in the cylinder reference frame</span></div>
+<div class="line"><span class="lineno">  194</span>            bsdfSliceBottom.<a class="code hl_function" href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html#a4630929761caae29c5f4ad5a83c0f729">setBsdf</a>(lightOrderIndex, vi, colorBottom);</div>
+<div class="line"><span class="lineno">  195</span>            bsdfSliceTop.<a class="code hl_function" href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html#a4630929761caae29c5f4ad5a83c0f729">setBsdf</a>(lightOrderIndex, vi, colorTop);</div>
+<div class="line"><span class="lineno">  196</span> </div>
+<div class="line"><span class="lineno">  197</span>            <span class="comment">//std::cout &lt;&lt; &quot;indexThetaO = &quot; &lt;&lt; vi &lt;&lt; &quot;, colorBottom = &quot; &lt;&lt; colorBottom &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  198</span>        }</div>
+<div class="line"><span class="lineno">  199</span>    }</div>
+<div class="line"><span class="lineno">  200</span> </div>
+<div class="line"><span class="lineno">  201</span>    <span class="comment">// Draw the cylinder samples for debugging</span></div>
+<div class="line"><span class="lineno">  202</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> vi = 0; vi &lt; vCount; vi++) {</div>
+<div class="line"><span class="lineno">  203</span>        <span class="comment">// Sample viewing angle interval [0,pi/2[</span></div>
+<div class="line"><span class="lineno">  204</span>        <span class="keywordtype">float</span> thetaO = vi * sHalfPi / vCount;</div>
+<div class="line"><span class="lineno">  205</span>        <span class="keywordtype">float</span> v = sin(thetaO);</div>
+<div class="line"><span class="lineno">  206</span>        <span class="keywordflow">for</span> (<span class="keywordtype">float</span> u = 0.0f; u &lt; uMax; u += uInc) {</div>
+<div class="line"><span class="lineno">  207</span>            <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> Pimg;</div>
+<div class="line"><span class="lineno">  208</span> </div>
+<div class="line"><span class="lineno">  209</span>            <span class="comment">// Compute image space position on the cylinder</span></div>
+<div class="line"><span class="lineno">  210</span>            Pimg = O + u * U + v * V;</div>
+<div class="line"><span class="lineno">  211</span>            <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#aa9dcc5d16e17d75862660c749a805f72">samplePoint</a>(Pimg, thetaO, bsdfSliceBottom, lightOrderIndex, image, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  212</span> </div>
+<div class="line"><span class="lineno">  213</span>            Pimg = O + u * U - v * V;</div>
+<div class="line"><span class="lineno">  214</span>            <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#aa9dcc5d16e17d75862660c749a805f72">samplePoint</a>(Pimg, -thetaO, bsdfSliceTop, lightOrderIndex, image, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  215</span>        }</div>
+<div class="line"><span class="lineno">  216</span>    }</div>
+<div class="line"><span class="lineno">  217</span>}</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a26b3f6b7b842544058f3766b0da79257"><div class="ttname"><a href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a></div><div class="ttdeci">__host__ __device__ float3 normalize(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00165">GPUMath.h:165</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice_html_a30d3b74f2bd4b73794401b9cc3b8ad10"><div class="ttname"><a href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html#a30d3b74f2bd4b73794401b9cc3b8ad10">moonray::shading::LightStageCylinderBsdfSlice::getSizeThetaO</a></div><div class="ttdeci">int getSizeThetaO() const</div><div class="ttdef"><b>Definition:</b> <a href="_light_stage_8h_source.html#l00075">LightStage.h:75</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice_html_a4630929761caae29c5f4ad5a83c0f729"><div class="ttname"><a href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html#a4630929761caae29c5f4ad5a83c0f729">moonray::shading::LightStageCylinderBsdfSlice::setBsdf</a></div><div class="ttdeci">void setBsdf(int lightOrderIndex, int indexThetaO, const scene_rdl2::math::Color &amp;color)</div><div class="ttdef"><b>Definition:</b> <a href="_light_stage_8cc_source.html#l01331">LightStage.cc:1331</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice_html_ad3e211488989fab4eb3ab4a9723fabf7"><div class="ttname"><a href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html#ad3e211488989fab4eb3ab4a9723fabf7">moonray::shading::LightStageCylinderBsdfSlice::getCylAlpha</a></div><div class="ttdeci">float getCylAlpha() const</div><div class="ttdef"><b>Definition:</b> <a href="_light_stage_8h_source.html#l00079">LightStage.h:79</a></div></div>
+<div class="ttc" id="acmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_html_aa9dcc5d16e17d75862660c749a805f72"><div class="ttname"><a href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#aa9dcc5d16e17d75862660c749a805f72">samplePoint</a></div><div class="ttdeci">Color samplePoint(const Vec2f &amp;Pimg, float thetaO, const LightStageCylinderBsdfSlice &amp;bsdfSlice, int lightOrderIndex, Image &amp;image, bool draw)</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html#l00085">main.cc:85</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0bb6593e5302d88154d08c303f2ce4d1" name="a0bb6593e5302d88154d08c303f2ce4d1"></a>
@@ -279,7 +631,48 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html#l00239">239</a> of file <a class="el" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html">main.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  246</span>{</div>
+<div class="line"><span class="lineno">  247</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> frameNumberDiffuse = 2 * lightOrderIndex + 3;</div>
+<div class="line"><span class="lineno">  248</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> frameNumberSpecular = frameNumberDiffuse + 1;</div>
+<div class="line"><span class="lineno">  249</span> </div>
+<div class="line"><span class="lineno">  250</span>    std::string filenameDiffuse = inSeqPrefix + <span class="stringliteral">&quot;.&quot;</span> +</div>
+<div class="line"><span class="lineno">  251</span>            <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#ac318da468c8d18df40cd319e62fa05fb">paddedFrameNumber</a>(frameNumberDiffuse, 4) + <span class="stringliteral">&quot;.exr&quot;</span>;</div>
+<div class="line"><span class="lineno">  252</span>    std::string filenameSpecular = inSeqPrefix + <span class="stringliteral">&quot;.&quot;</span> +</div>
+<div class="line"><span class="lineno">  253</span>            <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#ac318da468c8d18df40cd319e62fa05fb">paddedFrameNumber</a>(frameNumberSpecular, 4) + <span class="stringliteral">&quot;.exr&quot;</span>;</div>
+<div class="line"><span class="lineno">  254</span> </div>
+<div class="line"><span class="lineno">  255</span>    <span class="keywordflow">if</span> (find(ignoreFrames.begin(), ignoreFrames.end(), frameNumberDiffuse) != ignoreFrames.end()) {</div>
+<div class="line"><span class="lineno">  256</span>        Logger::info(<span class="stringliteral">&quot;Skipping   image (diffuse) : \&quot;&quot;</span> , filenameDiffuse , <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  257</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  258</span>        Logger::info(<span class="stringliteral">&quot;Processing image (diffuse) : \&quot;&quot;</span> , filenameDiffuse , <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  259</span>        <a class="code hl_class" href="class_image.html">Image</a> inSeqImage(filenameDiffuse);</div>
+<div class="line"><span class="lineno">  260</span> </div>
+<div class="line"><span class="lineno">  261</span>        <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#ac7ec3df5c1d333a028d7b57b39ea35a6">sampleSeqImage</a>(inImage, topEdge, bottomEdge, xRange, lightOrderIndex,</div>
+<div class="line"><span class="lineno">  262</span>                inSeqImage, bsdfSliceDifTop, bsdfSliceDifBottom);</div>
+<div class="line"><span class="lineno">  263</span> </div>
+<div class="line"><span class="lineno">  264</span>        std::string filenameSamplesOut = inSeqPrefix + <span class="stringliteral">&quot;_samples.&quot;</span> +</div>
+<div class="line"><span class="lineno">  265</span>                <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#ac318da468c8d18df40cd319e62fa05fb">paddedFrameNumber</a>(frameNumberDiffuse, 4) + <span class="stringliteral">&quot;.exr&quot;</span>;</div>
+<div class="line"><span class="lineno">  266</span>        inSeqImage.saveAs(filenameSamplesOut);</div>
+<div class="line"><span class="lineno">  267</span>    }</div>
+<div class="line"><span class="lineno">  268</span> </div>
+<div class="line"><span class="lineno">  269</span>    <span class="keywordflow">if</span> (find(ignoreFrames.begin(), ignoreFrames.end(), frameNumberSpecular) != ignoreFrames.end()) {</div>
+<div class="line"><span class="lineno">  270</span>        Logger::info(<span class="stringliteral">&quot;Skipping   image (specular): \&quot;&quot;</span> , filenameSpecular , <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  271</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  272</span>        Logger::info(<span class="stringliteral">&quot;Processing image (specular): \&quot;&quot;</span> , filenameSpecular , <span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  273</span>        <a class="code hl_class" href="class_image.html">Image</a> inSeqImageDiffuse(filenameDiffuse);</div>
+<div class="line"><span class="lineno">  274</span>        <a class="code hl_class" href="class_image.html">Image</a> inSeqImage(filenameSpecular);</div>
+<div class="line"><span class="lineno">  275</span>        inSeqImage.subtract(inSeqImageDiffuse);</div>
+<div class="line"><span class="lineno">  276</span> </div>
+<div class="line"><span class="lineno">  277</span>        <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#ac7ec3df5c1d333a028d7b57b39ea35a6">sampleSeqImage</a>(inImage, topEdge, bottomEdge, xRange, lightOrderIndex,</div>
+<div class="line"><span class="lineno">  278</span>                inSeqImage, bsdfSliceSpecTop, bsdfSliceSpecBottom);</div>
+<div class="line"><span class="lineno">  279</span> </div>
+<div class="line"><span class="lineno">  280</span>        std::string filenameSamplesOut = inSeqPrefix + <span class="stringliteral">&quot;_samples.&quot;</span> +</div>
+<div class="line"><span class="lineno">  281</span>                <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#ac318da468c8d18df40cd319e62fa05fb">paddedFrameNumber</a>(frameNumberSpecular, 4) + <span class="stringliteral">&quot;.exr&quot;</span>;</div>
+<div class="line"><span class="lineno">  282</span>        inSeqImage.saveAs(filenameSamplesOut);</div>
+<div class="line"><span class="lineno">  283</span>    }</div>
+<div class="line"><span class="lineno">  284</span>}</div>
+<div class="ttc" id="acmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_html_ac318da468c8d18df40cd319e62fa05fb"><div class="ttname"><a href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#ac318da468c8d18df40cd319e62fa05fb">paddedFrameNumber</a></div><div class="ttdeci">std::string paddedFrameNumber(int n, int padding)</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html#l00071">main.cc:71</a></div></div>
+<div class="ttc" id="acmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_html_ac7ec3df5c1d333a028d7b57b39ea35a6"><div class="ttname"><a href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#ac7ec3df5c1d333a028d7b57b39ea35a6">sampleSeqImage</a></div><div class="ttdeci">void sampleSeqImage(const Image &amp;inImage, const Vec2f &amp;topEdge, const Vec2f &amp;bottomEdge, const Vec2f &amp;xRange, int lightOrderIndex, Image &amp;inSeqImage, LightStageCylinderBsdfSlice &amp;bsdfSliceTop, LightStageCylinderBsdfSlice &amp;bsdfSliceBottom)</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html#l00221">main.cc:221</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa9dcc5d16e17d75862660c749a805f72" name="aa9dcc5d16e17d75862660c749a805f72"></a>
@@ -333,7 +726,53 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html#l00085">85</a> of file <a class="el" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html">main.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   88</span>{</div>
+<div class="line"><span class="lineno">   89</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_light_stage.html">LightStage</a> &amp;ls = <a class="code hl_function" href="classmoonray_1_1shading_1_1_light_stage.html#ae37f6ab5de48dc34dac0d92bf255733a">LightStage::singleton</a>();</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>    <span class="comment">// Light position</span></div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> Plight(0.0f, 0.0f, 100000.0f);</div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">if</span> (lightOrderIndex &gt;= 0) {</div>
+<div class="line"><span class="lineno">   94</span>        <span class="keywordtype">int</span> lightIndex = ls.<a class="code hl_function" href="classmoonray_1_1shading_1_1_light_stage.html#acfcbac3595a56edbe7755509d384c8bf">getSeparatedLightIndex</a>(lightOrderIndex);</div>
+<div class="line"><span class="lineno">   95</span>        Plight = ls.<a class="code hl_function" href="classmoonray_1_1shading_1_1_light_stage.html#a9e44da70390afc6604405607a69a695d">getLightPosition</a>(lightIndex);</div>
+<div class="line"><span class="lineno">   96</span>    }</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>    <span class="comment">// Compute position P and normal N on the cylinder in light-stage space</span></div>
+<div class="line"><span class="lineno">   99</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> P, N, T;</div>
+<div class="line"><span class="lineno">  100</span>    bsdfSlice.<a class="code hl_function" href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html#acba40d9498dad1b4b3012fe4e0512512">computeCylLightStagePNT</a>(thetaO, P, N, T);</div>
+<div class="line"><span class="lineno">  101</span> </div>
+<div class="line"><span class="lineno">  102</span>    <span class="comment">// Light direction wi</span></div>
+<div class="line"><span class="lineno">  103</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> wi = Plight - P;</div>
+<div class="line"><span class="lineno">  104</span>    wi = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(wi);</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>    <span class="comment">// Are we receiving any light from light direction wi ?</span></div>
+<div class="line"><span class="lineno">  107</span>    Color color(0.0f);</div>
+<div class="line"><span class="lineno">  108</span>    <span class="keywordtype">float</span> NdotWi = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(N, wi);</div>
+<div class="line"><span class="lineno">  109</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> sCosineTermThreshold = 3e-2f;</div>
+<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">if</span> (NdotWi &gt; sCosineTermThreshold) {</div>
+<div class="line"><span class="lineno">  111</span>        <span class="keywordflow">if</span> (draw) {</div>
+<div class="line"><span class="lineno">  112</span>            <span class="comment">// Draw our point sample</span></div>
+<div class="line"><span class="lineno">  113</span>            image.<a class="code hl_function" href="class_image.html#a07f12ff0997827ef9846878eaf59a2cf">drawPixel</a>(<span class="keywordtype">int</span>(floor(Pimg.x)), Pimg.y, Color(1.0f));</div>
+<div class="line"><span class="lineno">  114</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  115</span>            <span class="comment">// Point sample the image, divide by cosine term and set the</span></div>
+<div class="line"><span class="lineno">  116</span>            <span class="comment">// resulting bsdf value</span></div>
+<div class="line"><span class="lineno">  117</span>            color = image.<a class="code hl_function" href="class_image.html#a8ad184ca726ff152913fbc842a9bffef">sampleColor</a>(<span class="keywordtype">int</span>(floor(Pimg.x)), Pimg.y);</div>
+<div class="line"><span class="lineno">  118</span>            color = max(color, Color(0.0f));</div>
+<div class="line"><span class="lineno">  119</span>            color /= NdotWi;</div>
+<div class="line"><span class="lineno">  120</span>        }</div>
+<div class="line"><span class="lineno">  121</span>    }</div>
+<div class="line"><span class="lineno">  122</span> </div>
+<div class="line"><span class="lineno">  123</span>    <span class="keywordflow">return</span> color;</div>
+<div class="line"><span class="lineno">  124</span>}</div>
+<div class="ttc" id="a_n_point_8h_html_a16747d68c1e06270b0ed335d631b66f3"><div class="ttname"><a href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a></div><div class="ttdeci">float dot(const NPoint&lt; D &gt; &amp;a, const NPoint&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00271">NPoint.h:271</a></div></div>
+<div class="ttc" id="aclass_image_html_a07f12ff0997827ef9846878eaf59a2cf"><div class="ttname"><a href="class_image.html#a07f12ff0997827ef9846878eaf59a2cf">Image::drawPixel</a></div><div class="ttdeci">void drawPixel(int xi, float y, const scene_rdl2::math::Color &amp;color)</div><div class="ttdef"><b>Definition:</b> <a href="_image_8cc_source.html#l00124">Image.cc:124</a></div></div>
+<div class="ttc" id="aclass_image_html_a8ad184ca726ff152913fbc842a9bffef"><div class="ttname"><a href="class_image.html#a8ad184ca726ff152913fbc842a9bffef">Image::sampleColor</a></div><div class="ttdeci">scene_rdl2::math::Color sampleColor(int xi, float y) const</div><div class="ttdef"><b>Definition:</b> <a href="_image_8cc_source.html#l00107">Image.cc:107</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice_html_acba40d9498dad1b4b3012fe4e0512512"><div class="ttname"><a href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html#acba40d9498dad1b4b3012fe4e0512512">moonray::shading::LightStageCylinderBsdfSlice::computeCylLightStagePNT</a></div><div class="ttdeci">void computeCylLightStagePNT(float thetaO, scene_rdl2::math::Vec3f &amp;P, scene_rdl2::math::Vec3f &amp;N, scene_rdl2::math::Vec3f &amp;T) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_stage_8cc_source.html#l01070">LightStage.cc:1070</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_light_stage_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_light_stage.html">moonray::shading::LightStage</a></div><div class="ttdef"><b>Definition:</b> <a href="_light_stage_8h_source.html#l00023">LightStage.h:23</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_light_stage_html_a9e44da70390afc6604405607a69a695d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_light_stage.html#a9e44da70390afc6604405607a69a695d">moonray::shading::LightStage::getLightPosition</a></div><div class="ttdeci">scene_rdl2::math::Vec3f getLightPosition(int index) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_stage_8cc_source.html#l00933">LightStage.cc:933</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_light_stage_html_acfcbac3595a56edbe7755509d384c8bf"><div class="ttname"><a href="classmoonray_1_1shading_1_1_light_stage.html#acfcbac3595a56edbe7755509d384c8bf">moonray::shading::LightStage::getSeparatedLightIndex</a></div><div class="ttdeci">int getSeparatedLightIndex(int lightOrderIndex) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_stage_8cc_source.html#l00917">LightStage.cc:917</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_light_stage_html_ae37f6ab5de48dc34dac0d92bf255733a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_light_stage.html#ae37f6ab5de48dc34dac0d92bf255733a">moonray::shading::LightStage::singleton</a></div><div class="ttdeci">static finline const LightStage &amp; singleton()</div><div class="ttdef"><b>Definition:</b> <a href="_light_stage_8h_source.html#l00026">LightStage.h:26</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac7ec3df5c1d333a028d7b57b39ea35a6" name="ac7ec3df5c1d333a028d7b57b39ea35a6"></a>
@@ -399,7 +838,19 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html#l00221">221</a> of file <a class="el" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html">main.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  225</span>{</div>
+<div class="line"><span class="lineno">  226</span>    <span class="comment">// Scale edges and xRange from inImage to inSeqImage coordinates</span></div>
+<div class="line"><span class="lineno">  227</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> scale(<span class="keywordtype">float</span>(inSeqImage.<a class="code hl_function" href="class_image.html#a36bcae4838228d574738249a87dc4464">getWidth</a>()) / inImage.<a class="code hl_function" href="class_image.html#a36bcae4838228d574738249a87dc4464">getWidth</a>(),</div>
+<div class="line"><span class="lineno">  228</span>                <span class="keywordtype">float</span>(inSeqImage.<a class="code hl_function" href="class_image.html#a1cd7587f88b6932b5269051d1ba08ff9">getHeight</a>()) / inImage.<a class="code hl_function" href="class_image.html#a1cd7587f88b6932b5269051d1ba08ff9">getHeight</a>());</div>
+<div class="line"><span class="lineno">  229</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> topEdgeSeq(topEdge.x, topEdge.y * scale.y);</div>
+<div class="line"><span class="lineno">  230</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> bottomEdgeSeq(bottomEdge.x, bottomEdge.y * scale.y);</div>
+<div class="line"><span class="lineno">  231</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> xRangeSeq = xRange * scale.x;</div>
+<div class="line"><span class="lineno">  232</span> </div>
+<div class="line"><span class="lineno">  233</span>    <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#aad59716625caad738cf0b9251662dd29">sampleCylinder</a>(topEdgeSeq, bottomEdgeSeq, xRangeSeq, lightOrderIndex,</div>
+<div class="line"><span class="lineno">  234</span>            inSeqImage, bsdfSliceTop, bsdfSliceBottom);</div>
+<div class="line"><span class="lineno">  235</span>}</div>
+<div class="ttc" id="aclass_image_html_a1cd7587f88b6932b5269051d1ba08ff9"><div class="ttname"><a href="class_image.html#a1cd7587f88b6932b5269051d1ba08ff9">Image::getHeight</a></div><div class="ttdeci">int getHeight() const</div><div class="ttdef"><b>Definition:</b> <a href="_image_8h_source.html#l00065">Image.h:65</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aed1fbfe83f8b76764faaac4bbb198d8b" name="aed1fbfe83f8b76764faaac4bbb198d8b"></a>
@@ -429,13 +880,37 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html#l00289">289</a> of file <a class="el" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html">main.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  290</span>{</div>
+<div class="line"><span class="lineno">  291</span>    <span class="keywordflow">if</span> (!message.empty()) {</div>
+<div class="line"><span class="lineno">  292</span>        Logger::error(message);</div>
+<div class="line"><span class="lineno">  293</span>    }</div>
+<div class="line"><span class="lineno">  294</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;Usage: &quot;</span> &lt;&lt; argv0 &lt;&lt; <span class="stringliteral">&quot;[options]&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  295</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;Which: extracts a brdf slice from cylinder OLAT images&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  296</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;Options:&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  297</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;  -in input.exr             input image file used for edge detection&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  298</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;  -in_seq prefix            input image sequence prefix (prefix_####.exr)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  299</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;  -out_sobel output.exr     output sobel image file&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  300</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;  -out_edges output.exr     output edges image file&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  301</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;  -out_samples output.exr   output samples image file&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  302</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;  -out_bsdf_slice prefix 0  output brdf slice file prefix for given phi value (in degrees)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  303</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;  -ignore_frames 10,22,34   ignore frames from input image sequence&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  304</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;  -image_ratio 0.5          ratio of the image to use for edge detection &amp; sampling&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  305</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;  -edge_threshold 0.25      threshold for edge detection in sobel image&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  306</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;  -edge_top_bottom a b a b  edge equation parameters&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  307</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;  -sample_scale 1.0 1.0     scale sample location along cylinder axis and radius&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  308</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;  -sample_offset 0.0 0.0    offset sample location along cylinder axis and radius&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  309</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_1d5181f7ddc67e55cdef6ebe6c9b692d.html">cmd</a></li><li class="navelem"><a class="el" href="dir_88fae694fb28bac3e87c23435ccffe6f.html">brdf_cmd</a></li><li class="navelem"><a class="el" href="dir_f76d8679dd0049e3d8a2e8f0554f2198.html">brdf_cylinder_extract</a></li><li class="navelem"><a class="el" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html">main.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

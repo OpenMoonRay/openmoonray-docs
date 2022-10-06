@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_203f3a5f827b58ae1def3979c9063c7a.html">camera</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_lens_distribution_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">LensDistribution.h</div></div>
 </div><!--header-->
@@ -64,7 +80,7 @@ $(function() {
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_lens_distribution.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1pbr_1_1_lens_distribution.html">LensDistribution</a></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_lens_distribution.html">LensDistribution</a>(<span class="keyword">const</span> scene_rdl2::rdl2::Camera* rdlCamera);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_lens_distribution.html#a86ff323d0ea3e04f30659eb9c6333d20">LensDistribution</a>(<span class="keyword">const</span> scene_rdl2::rdl2::Camera* rdlCamera);</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">static</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_lens_distribution.html">LensDistribution</a> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_lens_distribution.html#aab4c011ed11a65a7a7c817f05e4fbc5f">createUnitTestDistribution</a>();</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_lens_distribution.html#a557ce1f3570bcf2c2ba210fdda175376">update</a>();</div>
@@ -86,26 +102,26 @@ $(function() {
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_lens_distribution.html#ab0ec80756eaac7381e7bc50989b48c45">   37</a></span>    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt;  <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_lens_distribution.html#ab0ec80756eaac7381e7bc50989b48c45">mBokehWeightStrengthKey</a>;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_class" href="classmoonray_1_1pbr_1_1_lens_distribution.html">LensDistribution</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_lens_distribution.html#a86ff323d0ea3e04f30659eb9c6333d20">LensDistribution</a>();</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> initAttributeKeys(<span class="keyword">const</span> scene_rdl2::rdl2::SceneClass&amp; sceneClass);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_lens_distribution.html#ac88ee201e9e012133739a117d9586f6b">initAttributeKeys</a>(<span class="keyword">const</span> scene_rdl2::rdl2::SceneClass&amp; sceneClass);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> bokehPolygonBuilder();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_lens_distribution.html#a2ca8cb264ed053dcffbda4509d1e8b67">bokehPolygonBuilder</a>();</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">bool</span> mBokeh;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_lens_distribution.html#a2f8096d3ca207db592e3465b29520b3e">   46</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_lens_distribution.html#a2f8096d3ca207db592e3465b29520b3e">mBokeh</a>;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// Bokeh Shape</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">int</span>         mBokehSides;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    std::string mBokehImage;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_lens_distribution.html#abafd79b0bae2817cc0e6a8950af82280">   49</a></span>    <span class="keywordtype">int</span>         <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_lens_distribution.html#abafd79b0bae2817cc0e6a8950af82280">mBokehSides</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_lens_distribution.html#a8cefc973c09d962b915d216752fe277c">   50</a></span>    std::string <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_lens_distribution.html#a8cefc973c09d962b915d216752fe277c">mBokehImage</a>;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// Bokeh Controls</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">float</span>       mBokehAngle;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">float</span>       mBokehWeightLocation;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">float</span>       mBokehWeightStrength;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_lens_distribution.html#a536226150c60a03d6a40a5a691d76716">   53</a></span>    <span class="keywordtype">float</span>       <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_lens_distribution.html#a536226150c60a03d6a40a5a691d76716">mBokehAngle</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_lens_distribution.html#a1bb4b77365a939d828c14325d0d532ea">   54</a></span>    <span class="keywordtype">float</span>       <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_lens_distribution.html#a1bb4b77365a939d828c14325d0d532ea">mBokehWeightLocation</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_lens_distribution.html#a25c41ebb5f02338359f07ea3ef54d54e">   55</a></span>    <span class="keywordtype">float</span>       <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_lens_distribution.html#a25c41ebb5f02338359f07ea3ef54d54e">mBokehWeightStrength</a>;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// Bokeh Vectors</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    std::unique_ptr&lt;scene_rdl2::math::Vec2f[]&gt; mBokehVertices;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    std::unique_ptr&lt;ImageDistribution&gt; mBokehImageDist;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_lens_distribution.html#abe21a022db6cf5c49316a561e8aaf9cc">   58</a></span>    std::unique_ptr&lt;scene_rdl2::math::Vec2f[]&gt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_lens_distribution.html#abe21a022db6cf5c49316a561e8aaf9cc">mBokehVertices</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_lens_distribution.html#aa49db9fc28049cf4cc6e87ccd1f07773">   59</a></span>    std::unique_ptr&lt;ImageDistribution&gt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_lens_distribution.html#aa49db9fc28049cf4cc6e87ccd1f07773">mBokehImageDist</a>;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>} <span class="comment">// namespace pbr</span></div>
@@ -117,21 +133,36 @@ $(function() {
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="ttc" id="a_distribution_8h_html"><div class="ttname"><a href="_distribution_8h.html">Distribution.h</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html">moonray::pbr::LensDistribution</a></div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8h_source.html#l00015">LensDistribution.h:16</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_a1bb4b77365a939d828c14325d0d532ea"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#a1bb4b77365a939d828c14325d0d532ea">moonray::pbr::LensDistribution::mBokehWeightLocation</a></div><div class="ttdeci">float mBokehWeightLocation</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8h_source.html#l00054">LensDistribution.h:54</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_a25c41ebb5f02338359f07ea3ef54d54e"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#a25c41ebb5f02338359f07ea3ef54d54e">moonray::pbr::LensDistribution::mBokehWeightStrength</a></div><div class="ttdeci">float mBokehWeightStrength</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8h_source.html#l00055">LensDistribution.h:55</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_a2ca8cb264ed053dcffbda4509d1e8b67"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#a2ca8cb264ed053dcffbda4509d1e8b67">moonray::pbr::LensDistribution::bokehPolygonBuilder</a></div><div class="ttdeci">void bokehPolygonBuilder()</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8cc_source.html#l00184">LensDistribution.cc:184</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_a2f8096d3ca207db592e3465b29520b3e"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#a2f8096d3ca207db592e3465b29520b3e">moonray::pbr::LensDistribution::mBokeh</a></div><div class="ttdeci">bool mBokeh</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8h_source.html#l00046">LensDistribution.h:46</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_a3b049b261ab442ac1ca186de57ffdef5"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#a3b049b261ab442ac1ca186de57ffdef5">moonray::pbr::LensDistribution::mBokehWeightLocationKey</a></div><div class="ttdeci">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; mBokehWeightLocationKey</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8h_source.html#l00036">LensDistribution.h:36</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_a51e24a13eb09b6fd668e9c188d327792"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#a51e24a13eb09b6fd668e9c188d327792">moonray::pbr::LensDistribution::mBokehAngleKey</a></div><div class="ttdeci">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; mBokehAngleKey</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8h_source.html#l00035">LensDistribution.h:35</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_a536226150c60a03d6a40a5a691d76716"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#a536226150c60a03d6a40a5a691d76716">moonray::pbr::LensDistribution::mBokehAngle</a></div><div class="ttdeci">float mBokehAngle</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8h_source.html#l00053">LensDistribution.h:53</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_a54f174f04b3b6b3fb5d3cdcb942ffc4e"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#a54f174f04b3b6b3fb5d3cdcb942ffc4e">moonray::pbr::LensDistribution::mBokehSidesKey</a></div><div class="ttdeci">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Int &gt; mBokehSidesKey</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8h_source.html#l00031">LensDistribution.h:31</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_a557ce1f3570bcf2c2ba210fdda175376"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#a557ce1f3570bcf2c2ba210fdda175376">moonray::pbr::LensDistribution::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8cc_source.html#l00070">LensDistribution.cc:70</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_a86ff323d0ea3e04f30659eb9c6333d20"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#a86ff323d0ea3e04f30659eb9c6333d20">moonray::pbr::LensDistribution::LensDistribution</a></div><div class="ttdeci">LensDistribution()</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8cc_source.html#l00026">LensDistribution.cc:26</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_a87425b4609ab2c0ccca2515039fdbc0d"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#a87425b4609ab2c0ccca2515039fdbc0d">moonray::pbr::LensDistribution::mBokehImageKey</a></div><div class="ttdeci">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::String &gt; mBokehImageKey</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8h_source.html#l00032">LensDistribution.h:32</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_a89cfd5ed22848cbb84913eb384c1f4be"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#a89cfd5ed22848cbb84913eb384c1f4be">moonray::pbr::LensDistribution::mCamera</a></div><div class="ttdeci">const scene_rdl2::rdl2::Camera * mCamera</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8h_source.html#l00026">LensDistribution.h:26</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_a8cefc973c09d962b915d216752fe277c"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#a8cefc973c09d962b915d216752fe277c">moonray::pbr::LensDistribution::mBokehImage</a></div><div class="ttdeci">std::string mBokehImage</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8h_source.html#l00050">LensDistribution.h:50</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_aa49db9fc28049cf4cc6e87ccd1f07773"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#aa49db9fc28049cf4cc6e87ccd1f07773">moonray::pbr::LensDistribution::mBokehImageDist</a></div><div class="ttdeci">std::unique_ptr&lt; ImageDistribution &gt; mBokehImageDist</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8h_source.html#l00059">LensDistribution.h:59</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_aa72134ed6bb75b5ee984cc55849f5c39"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#aa72134ed6bb75b5ee984cc55849f5c39">moonray::pbr::LensDistribution::mBokehKey</a></div><div class="ttdeci">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Bool &gt; mBokehKey</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8h_source.html#l00028">LensDistribution.h:28</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_aab4c011ed11a65a7a7c817f05e4fbc5f"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#aab4c011ed11a65a7a7c817f05e4fbc5f">moonray::pbr::LensDistribution::createUnitTestDistribution</a></div><div class="ttdeci">static LensDistribution createUnitTestDistribution()</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8cc_source.html#l00020">LensDistribution.cc:20</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_ab0ec80756eaac7381e7bc50989b48c45"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#ab0ec80756eaac7381e7bc50989b48c45">moonray::pbr::LensDistribution::mBokehWeightStrengthKey</a></div><div class="ttdeci">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; mBokehWeightStrengthKey</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8h_source.html#l00037">LensDistribution.h:37</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_abafd79b0bae2817cc0e6a8950af82280"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#abafd79b0bae2817cc0e6a8950af82280">moonray::pbr::LensDistribution::mBokehSides</a></div><div class="ttdeci">int mBokehSides</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8h_source.html#l00049">LensDistribution.h:49</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_abe21a022db6cf5c49316a561e8aaf9cc"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#abe21a022db6cf5c49316a561e8aaf9cc">moonray::pbr::LensDistribution::mBokehVertices</a></div><div class="ttdeci">std::unique_ptr&lt; scene_rdl2::math::Vec2f[]&gt; mBokehVertices</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8h_source.html#l00058">LensDistribution.h:58</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_ac88ee201e9e012133739a117d9586f6b"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#ac88ee201e9e012133739a117d9586f6b">moonray::pbr::LensDistribution::initAttributeKeys</a></div><div class="ttdeci">void initAttributeKeys(const scene_rdl2::rdl2::SceneClass &amp;sceneClass)</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8cc_source.html#l00051">LensDistribution.cc:51</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_lens_distribution_html_ad49d97a0361442c2104dfcc6e2ce6d6d"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_lens_distribution.html#ad49d97a0361442c2104dfcc6e2ce6d6d">moonray::pbr::LensDistribution::sampleLens</a></div><div class="ttdeci">float sampleLens(float &amp;u, float &amp;v) const</div><div class="ttdef"><b>Definition:</b> <a href="_lens_distribution_8cc_source.html#l00104">LensDistribution.cc:104</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_c88f59078831dd1baeaa27ff14ac6c27.html">camera</a></li><li class="navelem"><a class="el" href="_lens_distribution_8h.html">LensDistribution.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,14 +43,35 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('namespacemembers_func_t.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="contents">
 &#160;
 
 <h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
 <li>tessCondNumber2x2SVD()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal.html#ae5bedaefcf6134f0a87573e82eb9c5d2">moonray::geom::internal</a></li>
+<li>test_batch()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#acf34506fa82f1fef53cae3f4513f428c">anonymous_namespace{test_ring_buffer.cc}</a></li>
 <li>testAssert()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">moonray::pbr</a></li>
+<li>testConsistency()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a97e687ff5ebc88afc5472cba374c6786">moonray::pbr</a></li>
+<li>testDiscrepancyLimit()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03.html#a5f3ef81ea69d1ebd6367523f7347db33">moonray::pbr::anonymous_namespace{TestQmc.cc}</a></li>
 <li>testDiscreteChiSquare()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a95ece4c7dad055c82f6611c2de0a0417">moonray::pbr</a></li>
 <li>testDiscreteMean()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a9e9050f4ba9f72159ab399a8b47dd273">moonray::pbr</a></li>
+<li>testEvalIntegral()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#ae9290f101bb98b26d26106ea70d7197b">moonray::pbr</a></li>
+<li>testFalloffCurveType()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a25c3e0908a5dcbcfa8f933231051697a">moonray::pbr</a></li>
 <li>testInterleaved3D1T()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1unittest.html#af1df39fd759dc895b7e755745e776e09">moonray::geom::unittest</a></li>
 <li>testInterleaved3D2T()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1unittest.html#aae9a66126f7a24698164e2a338ee7dcd">moonray::geom::unittest</a></li>
 <li>testInterleaved4D1T()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1unittest.html#a71360876739d135315a6453a1e5f11b3">moonray::geom::unittest</a></li>
@@ -57,25 +82,37 @@ $(function() {
 <li>testLightPDF()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a13667c0715fc8c1fb3d7b7befaaa32de">moonray::pbr</a></li>
 <li>testLightRadiance()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a4b1b3b467cbd997effc33db4ef6d3633">moonray::pbr</a></li>
 <li>testMeshLightFaceSelectionPDF()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a97a853327a0087ad5414f0788021e1da">moonray::pbr</a></li>
+<li>testPdfIntegral()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a066d4679e046bf605ccc5a8ba9b486a8">moonray::pbr</a></li>
+<li>testPlaneDistance()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a5a92a7bfdbedf2740b7ffb221f4ea6bb">moonray::pbr</a></li>
 <li>testRange()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#ad97d40589a21af7709b24c1b592cdda8">moonray::pbr</a></li>
+<li>testScrambleDiscrepancy()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03.html#aded70712697e63c4a87f551c872313da">moonray::pbr::anonymous_namespace{TestQmc.cc}</a></li>
 <li>TextureTLState_hudValidation()&#160;:&#160;<a class="el" href="namespaceispc.html#ac993a9ca058ef6de60bee23decb094dc">ispc</a></li>
 <li>threadSleep()&#160;:&#160;<a class="el" href="namespacemoonray_1_1mcrt__common.html#a2aab2794bb344a0bdce676fcb3f87f3e">moonray::mcrt_common</a></li>
 <li>threadYield()&#160;:&#160;<a class="el" href="namespacemoonray_1_1mcrt__common.html#a25d9682ee2ba8d89bb862531606257e1">moonray::mcrt_common</a></li>
 <li>tileAlignment()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr_1_1detail.html#aa911916fd0464cf91121af87538d8713">moonray::rndr::detail</a></li>
 <li>tilesInDimension()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr_1_1detail.html#a513bbb8fd000567a59b6170d90195ce5">moonray::rndr::detail</a></li>
 <li>timeIntervalFormat()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a320a99cfd13735d273ce4bf7529f1bab">moonray::rndr</a></li>
+<li>to_underlying()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#ae27d72fed40632320f70922b625b74d0">anonymous_namespace{test_wait.cc}</a></li>
 <li>toPointer()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1detail.html#ad3698fa3ecc1a1ed63c2675976dcb86e">moonray::pbr::detail</a></li>
+<li>totalDiffuseReflectance()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a1d9c5d5bb5b0d8342c096b14139bcc33">moonray::shading</a></li>
+<li>totalSize()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">anonymous_namespace{ResumeHistoryMetaData.cc}</a></li>
 <li>toUnitDisk()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#af07ea04db5c049e31e164223c1e3b8d7">moonray::pbr</a></li>
 <li>transformPoint()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal.html#a472053acc157ccb20c9d68bf2fdaa824">moonray::geom::internal</a></li>
 <li>transformPointUtil()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1unittest.html#a2c3c936fa2d2b08d22ccb7a7e70c8279">moonray::geom::unittest</a></li>
+<li>transformVec3()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#aa0623ad7821fd130fc39f32ba0794f13">moonray::shading</a></li>
 <li>transformVector()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal.html#a4a82962fcf039c5097066854273b14ad">moonray::geom::internal</a></li>
+<li>trim()&#160;:&#160;<a class="el" href="namespacemoonray_1_1lpe.html#a4b0c1c1f2ff85679587dbd2bbcc325ef">moonray::lpe</a>, <a class="el" href="namespacemoonray_1_1pbr.html#abceb285c9915098872654198bf5b0b16">moonray::pbr</a></li>
 <li>triple32inc()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a674caefa6eb4060fbb12c79b9ea09436">moonray::pbr</a></li>
 <li>triple32inc_inverse()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a1e58c891e7b93bf7c17e7f1f6d8a35ef">moonray::pbr</a></li>
+<li>two()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#ad2817c5194070844a501a30f9976a961">anonymous_namespace{test_wait.cc}</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

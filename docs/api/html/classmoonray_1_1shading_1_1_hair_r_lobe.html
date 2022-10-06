@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_hair_r_lobe.html">HairRLobe</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_hair_r_lobe.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -317,7 +333,27 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_hair_lobes_8h_source.html#l00038">38</a> of file <a class="el" href="_bsdf_hair_lobes_8h_source.html">BsdfHairLobes.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   46</span>                                                                      :</div>
+<div class="line"><span class="lineno">   47</span>                  <a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_bsdf_lobe.html#a1d685b803d07c20f66a02251d117f4e7">HairBsdfLobe</a>(<a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">Type</a>(<a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896">REFLECTION</a> | <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa5dfce546f93a2a18aee27e4b801c198b">GLOSSY</a>),</div>
+<div class="line"><span class="lineno">   48</span>                               hairDir,</div>
+<div class="line"><span class="lineno">   49</span>                               hairUV,</div>
+<div class="line"><span class="lineno">   50</span>                               mediumIOR,</div>
+<div class="line"><span class="lineno">   51</span>                               <a class="code hl_function" href="namespacemoonray_1_1shading.html#a87bded4ce0925ce77bcac6f70173db5a">ior</a>,</div>
+<div class="line"><span class="lineno">   52</span>                               fresnelType,</div>
+<div class="line"><span class="lineno">   53</span>                               layerThickness,</div>
+<div class="line"><span class="lineno">   54</span>                               longShift,</div>
+<div class="line"><span class="lineno">   55</span>                               longRoughness,</div>
+<div class="line"><span class="lineno">   56</span>                               0.75f, <span class="comment">// Not actually used by R lobe, but set to match pre shading_api value</span></div>
+<div class="line"><span class="lineno">   57</span>                               scene_rdl2::math::sWhite,</div>
+<div class="line"><span class="lineno">   58</span>                               scene_rdl2::math::sWhite,</div>
+<div class="line"><span class="lineno">   59</span>                               tint)</div>
+<div class="line"><span class="lineno">   60</span>    {}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">moonray::shading::BsdfLobe::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00074">Bsdf.h:74</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896">moonray::shading::BsdfLobe::REFLECTION</a></div><div class="ttdeci">@ REFLECTION</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00079">Bsdf.h:79</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43aa5dfce546f93a2a18aee27e4b801c198b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa5dfce546f93a2a18aee27e4b801c198b">moonray::shading::BsdfLobe::GLOSSY</a></div><div class="ttdeci">@ GLOSSY</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00087">Bsdf.h:87</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_bsdf_lobe_html_a1d685b803d07c20f66a02251d117f4e7"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_bsdf_lobe.html#a1d685b803d07c20f66a02251d117f4e7">moonray::shading::HairBsdfLobe::HairBsdfLobe</a></div><div class="ttdeci">HairBsdfLobe(Type type, const scene_rdl2::math::Vec3f &amp;hairDir, const scene_rdl2::math::Vec2f &amp;hairUV, const float mediumIor, const float ior, const ispc::HairFresnelType fresnelType, const float layers, const float longShift, const float longRoughness, const float azimRoughness=0.75f, const scene_rdl2::math::Color &amp;hairColor=scene_rdl2::math::sWhite, const scene_rdl2::math::Color &amp;hairSigmaA=scene_rdl2::math::sWhite, const scene_rdl2::math::Color &amp;tint=scene_rdl2::math::sWhite, const float hairRotation=0.f, const scene_rdl2::math::Vec3f &amp;hairNormal=scene_rdl2::math::Vec3f(scene_rdl2::math::zero))</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_hair_8cc_source.html#l00023">BsdfHair.cc:23</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a87bded4ce0925ce77bcac6f70173db5a"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a87bded4ce0925ce77bcac6f70173db5a">moonray::shading::ior</a></div><div class="ttdeci">finline float ior(const scene_rdl2::rdl2::Material *material, shading::TLState *tls, const State &amp;state)</div><div class="ttdoc">Evaluate ior.</div><div class="ttdef"><b>Definition:</b> <a href="_eval_shader_8h_source.html#l00104">EvalShader.h:104</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a97e848842d89cce34c75560772522248" name="a97e848842d89cce34c75560772522248"></a>
@@ -344,7 +380,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_hair_lobes_8h_source.html#l00062">62</a> of file <a class="el" href="_bsdf_hair_lobes_8h_source.html">BsdfHairLobes.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   62</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -385,7 +422,13 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1shading_1_1_hair_bsdf_lobe.html#aba1685e38d920c231fdf26ee5c702d20">moonray::shading::HairBsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_hair_lobes_8cc_source.html#l00024">24</a> of file <a class="el" href="_bsdf_hair_lobes_8cc_source.html">BsdfHairLobes.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   26</span>{</div>
+<div class="line"><span class="lineno">   27</span>    <span class="comment">// [1] Section 6</span></div>
+<div class="line"><span class="lineno">   28</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_bsdf_lobe.html#afc03b08a53c97226ba019517ea39d812">evalHairFresnel</a>(hairState,</div>
+<div class="line"><span class="lineno">   29</span>                           cosTheta);</div>
+<div class="line"><span class="lineno">   30</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_bsdf_lobe_html_afc03b08a53c97226ba019517ea39d812"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_bsdf_lobe.html#afc03b08a53c97226ba019517ea39d812">moonray::shading::HairBsdfLobe::evalHairFresnel</a></div><div class="ttdeci">scene_rdl2::math::Color evalHairFresnel(const HairState &amp;hairState, float cosTheta) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_hair_8cc_source.html#l00332">BsdfHair.cc:332</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a12ec88fedcb671edb5787f83609e1c50" name="a12ec88fedcb671edb5787f83609e1c50"></a>
@@ -425,7 +468,14 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1shading_1_1_hair_bsdf_lobe.html#a54877259b27ad32fcab16912d6cf056e">moonray::shading::HairBsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_hair_lobes_8h_source.html#l00067">67</a> of file <a class="el" href="_bsdf_hair_lobes_8h_source.html">BsdfHairLobes.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   68</span>    {</div>
+<div class="line"><span class="lineno">   69</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;[HairRLobe]\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   70</span>        <span class="comment">// use parent class func to print all members</span></div>
+<div class="line"><span class="lineno">   71</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_bsdf_lobe.html#a54877259b27ad32fcab16912d6cf056e">HairBsdfLobe::show</a>(os, indent);</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_bsdf_lobe_html_a54877259b27ad32fcab16912d6cf056e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_bsdf_lobe.html#a54877259b27ad32fcab16912d6cf056e">moonray::shading::HairBsdfLobe::show</a></div><div class="ttdeci">void show(std::ostream &amp;os, const std::string &amp;indent) const override</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_hair_8h_source.html#l00083">BsdfHair.h:83</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -433,9 +483,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/bsdf/hair/<a class="el" href="_bsdf_hair_lobes_8cc_source.html">BsdfHairLobes.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_hair_r_lobe.html">HairRLobe</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

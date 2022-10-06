@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,16 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1mcrt__common.html">mcrt_common</a></li><li class="navelem"><a class="el" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html">RayDifferential</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1mcrt__common_1_1_ray_differential.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1mcrt__common_1_1_ray_differential-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::mcrt_common::RayDifferential Class Reference</div></div>
 </div><!--header-->
@@ -129,6 +146,11 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae11815296d7faa9f4faab685800d031c"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#ae11815296d7faa9f4faab685800d031c">hvdValidation</a> (bool verbose)</td></tr>
 <tr class="separator:ae11815296d7faa9f4faab685800d031c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a62336513b9f49353f4403a0a23fa5047"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#a62336513b9f49353f4403a0a23fa5047">MCRT_COMMON_RAY_DIFFERENTIAL_MEMBERS</a></td></tr>
+<tr class="separator:a62336513b9f49353f4403a0a23fa5047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Tracks a ray and its differentials through reflections/refractions. </p>
@@ -157,7 +179,11 @@ Static Public Member Functions</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00236">236</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  237</span>    {</div>
+<div class="line"><span class="lineno">  238</span>        <a class="code hl_enumvalue" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#a8a6d55cc9c5ccd24c3a3f087e905bfa6a34f012539df9a567811114ed47cfb208">HAS_DIFFERENTIALS</a>   = 1 &lt;&lt; 8,</div>
+<div class="line"><span class="lineno">  239</span>    };</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_ray_differential_html_a8a6d55cc9c5ccd24c3a3f087e905bfa6a34f012539df9a567811114ed47cfb208"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#a8a6d55cc9c5ccd24c3a3f087e905bfa6a34f012539df9a567811114ed47cfb208">moonray::mcrt_common::RayDifferential::HAS_DIFFERENTIALS</a></div><div class="ttdeci">@ HAS_DIFFERENTIALS</div><div class="ttdef"><b>Definition:</b> <a href="_ray_8h_source.html#l00238">Ray.h:238</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -187,7 +213,9 @@ Static Public Member Functions</h2></td></tr>
 <p>Constructor / Destructor. </p>
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00244">244</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  245</span>    {</div>
+<div class="line"><span class="lineno">  246</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9d66ac05ec12b46dd3ee27985a658736" name="a9d66ac05ec12b46dd3ee27985a658736"></a>
@@ -273,7 +301,18 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00248">248</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  252</span>                                                         :</div>
+<div class="line"><span class="lineno">  253</span>        Ray(origin, direction, start, <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a>, rayTime, rayDepth),</div>
+<div class="line"><span class="lineno">  254</span>        mOriginX(originX),</div>
+<div class="line"><span class="lineno">  255</span>        mDirX(directionX),</div>
+<div class="line"><span class="lineno">  256</span>        mOriginY(originY),</div>
+<div class="line"><span class="lineno">  257</span>        mDirY(directionY),</div>
+<div class="line"><span class="lineno">  258</span>        mOrigTfar(<a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a>)</div>
+<div class="line"><span class="lineno">  259</span>    {</div>
+<div class="line"><span class="lineno">  260</span>        mFlags.set(<a class="code hl_enumvalue" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#a8a6d55cc9c5ccd24c3a3f087e905bfa6a34f012539df9a567811114ed47cfb208">HAS_DIFFERENTIALS</a>);</div>
+<div class="line"><span class="lineno">  261</span>    }</div>
+<div class="ttc" id="a_variance_a_o_v_map_8h_html_a8b3c0ee88191b7d4a40b4271037faaee"><div class="ttname"><a href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a></div><div class="ttdeci">VarianceAOVMap::SourceToVarianceIterator end(const VarianceAOVMap::SourceToVarianceRange &amp;range)</div><div class="ttdef"><b>Definition:</b> <a href="_variance_a_o_v_map_8h_source.html#l00153">VarianceAOVMap.h:153</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a305cd1b9923c9556e21d7143b53b63bb" name="a305cd1b9923c9556e21d7143b53b63bb"></a>
@@ -319,7 +358,17 @@ Static Public Member Functions</h2></td></tr>
 <p>Create a n-ary ray differential by making a copy of a parent ray. </p>
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00264">264</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  264</span>                                                                                                     :</div>
+<div class="line"><span class="lineno">  265</span>        Ray(parent, start, <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a>),</div>
+<div class="line"><span class="lineno">  266</span>        mOriginX(parent.mOriginX),</div>
+<div class="line"><span class="lineno">  267</span>        mDirX(parent.mDirX),</div>
+<div class="line"><span class="lineno">  268</span>        mOriginY(parent.mOriginY),</div>
+<div class="line"><span class="lineno">  269</span>        mDirY(parent.mDirY),</div>
+<div class="line"><span class="lineno">  270</span>        mOrigTfar(parent.mOrigTfar)</div>
+<div class="line"><span class="lineno">  271</span>    {</div>
+<div class="line"><span class="lineno">  272</span>        mFlags.set(<a class="code hl_enumvalue" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#a8a6d55cc9c5ccd24c3a3f087e905bfa6a34f012539df9a567811114ed47cfb208">HAS_DIFFERENTIALS</a>, parent.hasDifferentials());</div>
+<div class="line"><span class="lineno">  273</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -348,7 +397,8 @@ Static Public Member Functions</h2></td></tr>
 <p >Set ray properties </p>
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00350">350</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  350</span>{ <span class="keywordflow">return</span> mFlags.clear(<a class="code hl_enumvalue" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#a8a6d55cc9c5ccd24c3a3f087e905bfa6a34f012539df9a567811114ed47cfb208">HAS_DIFFERENTIALS</a>); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae745e9280ffea3b6353382b5248a3c86" name="ae745e9280ffea3b6353382b5248a3c86"></a>
@@ -376,7 +426,8 @@ Static Public Member Functions</h2></td></tr>
 <p >Derivative of ray normalized direction wrt. pixel increments along x and y </p>
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00333">333</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  333</span>{ <span class="keywordflow">return</span> mDirX - getDirection();  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a855304c41975e6406b177bac9dbedb2e" name="a855304c41975e6406b177bac9dbedb2e"></a>
@@ -403,7 +454,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00334">334</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  334</span>{ <span class="keywordflow">return</span> mDirY - getDirection();  }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0465f7dfb73b32bc461d1baa60184a81" name="a0465f7dfb73b32bc461d1baa60184a81"></a>
@@ -431,7 +483,18 @@ Static Public Member Functions</h2></td></tr>
 <p >Return a float value for the footprint established by the direction differentials. TODO: there are multiple options for this calculation, so investigate which one(s) give the best results. e.g. min, max, arithmetic mean, projected area of parallelogram, etc. Here we take the geometric mean. (We take the log2() at the end since it is used in a mip mapping calculation) </p>
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00317">317</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  318</span>    {</div>
+<div class="line"><span class="lineno">  319</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#af0529f982bd8c0c4aab641716aaede07">hasDifferentials</a>()) {</div>
+<div class="line"><span class="lineno">  320</span>            <span class="keywordflow">return</span> scene_rdl2::math::neg_inf;</div>
+<div class="line"><span class="lineno">  321</span>        }</div>
+<div class="line"><span class="lineno">  322</span>        <span class="keywordtype">float</span> lx = scene_rdl2::math::length(<a class="code hl_function" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#ae745e9280ffea3b6353382b5248a3c86">getdDdx</a>());</div>
+<div class="line"><span class="lineno">  323</span>        <span class="keywordtype">float</span> ly = scene_rdl2::math::length(<a class="code hl_function" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#a855304c41975e6406b177bac9dbedb2e">getdDdy</a>());</div>
+<div class="line"><span class="lineno">  324</span>        <span class="keywordflow">return</span> 0.5f * scene_rdl2::math::log2(lx * ly);  <span class="comment">// = log2(sqrt(lx * ly))</span></div>
+<div class="line"><span class="lineno">  325</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_ray_differential_html_a855304c41975e6406b177bac9dbedb2e"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#a855304c41975e6406b177bac9dbedb2e">moonray::mcrt_common::RayDifferential::getdDdy</a></div><div class="ttdeci">scene_rdl2::math::Vec3f getdDdy() const</div><div class="ttdef"><b>Definition:</b> <a href="_ray_8h_source.html#l00334">Ray.h:334</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_ray_differential_html_ae745e9280ffea3b6353382b5248a3c86"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#ae745e9280ffea3b6353382b5248a3c86">moonray::mcrt_common::RayDifferential::getdDdx</a></div><div class="ttdeci">scene_rdl2::math::Vec3f getdDdx() const</div><div class="ttdef"><b>Definition:</b> <a href="_ray_8h_source.html#l00333">Ray.h:333</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_ray_differential_html_af0529f982bd8c0c4aab641716aaede07"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#af0529f982bd8c0c4aab641716aaede07">moonray::mcrt_common::RayDifferential::hasDifferentials</a></div><div class="ttdeci">bool hasDifferentials() const</div><div class="ttdef"><b>Definition:</b> <a href="_ray_8h_source.html#l00307">Ray.h:307</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a79a389f9a7d51bbcaea10142bf732b63" name="a79a389f9a7d51bbcaea10142bf732b63"></a>
@@ -458,7 +521,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00309">309</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  309</span>{ <span class="keywordflow">return</span> mDirX; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a46e0cac1fc1a647349c86ea8dd4d34bd" name="a46e0cac1fc1a647349c86ea8dd4d34bd"></a>
@@ -485,7 +549,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00311">311</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  311</span>{ <span class="keywordflow">return</span> mDirY; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a528602d464e5ebed2f88360405456f7b" name="a528602d464e5ebed2f88360405456f7b"></a>
@@ -514,7 +579,8 @@ Static Public Member Functions</h2></td></tr>
 <p>Derivative of ray position wrt. pixel increments along x and y. </p>
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00328">328</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  328</span>{ <span class="keywordflow">return</span> mOriginX - getOrigin(); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae85c2555962fa88ca74c1024bf38cc60" name="ae85c2555962fa88ca74c1024bf38cc60"></a>
@@ -541,7 +607,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00329">329</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  329</span>{ <span class="keywordflow">return</span> mOriginY - getOrigin(); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a430832e5e0f216125227036b4d91e388" name="a430832e5e0f216125227036b4d91e388"></a>
@@ -568,7 +635,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00308">308</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  308</span>{ <span class="keywordflow">return</span> mOriginX; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5f1091a3822d0b1f90e64a65a960dc39" name="a5f1091a3822d0b1f90e64a65a960dc39"></a>
@@ -595,7 +663,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00310">310</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  310</span>{ <span class="keywordflow">return</span> mOriginY; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa711f414a58ee86513a492b854c3c969" name="aa711f414a58ee86513a492b854c3c969"></a>
@@ -622,7 +691,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00359">359</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  359</span>{ <span class="keywordflow">return</span> mOrigTfar; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af0529f982bd8c0c4aab641716aaede07" name="af0529f982bd8c0c4aab641716aaede07"></a>
@@ -650,7 +720,8 @@ Static Public Member Functions</h2></td></tr>
 <p >Query ray properties </p>
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00307">307</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  307</span>{ <span class="keywordflow">return</span> mFlags.get(<a class="code hl_enumvalue" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#a8a6d55cc9c5ccd24c3a3f087e905bfa6a34f012539df9a567811114ed47cfb208">HAS_DIFFERENTIALS</a>); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae11815296d7faa9f4faab685800d031c" name="ae11815296d7faa9f4faab685800d031c"></a>
@@ -678,7 +749,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00367">367</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  367</span>{ <a class="code hl_define" href="_ray_8hh.html#aabda0b54b25a1a953e74a0d5e1040cec">MCRT_COMMON_RAY_DIFFERENTIAL_VALIDATION</a>(VLEN); }</div>
+<div class="ttc" id="a_ray_8hh_html_aabda0b54b25a1a953e74a0d5e1040cec"><div class="ttname"><a href="_ray_8hh.html#aabda0b54b25a1a953e74a0d5e1040cec">MCRT_COMMON_RAY_DIFFERENTIAL_VALIDATION</a></div><div class="ttdeci">#define MCRT_COMMON_RAY_DIFFERENTIAL_VALIDATION(vlen)</div><div class="ttdef"><b>Definition:</b> <a href="_ray_8hh_source.html#l00089">Ray.hh:89</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af5ef02ba4fea7462ffe0217fa85a622a" name="af5ef02ba4fea7462ffe0217fa85a622a"></a>
@@ -697,7 +770,20 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ray_8cc_source.html#l00075">75</a> of file <a class="el" href="_ray_8cc_source.html">Ray.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   76</span>{</div>
+<div class="line"><span class="lineno">   77</span>    MNRY_ASSERT(Ray::isValid());</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>    MNRY_ASSERT(isFinite(mOriginX));</div>
+<div class="line"><span class="lineno">   80</span>    MNRY_ASSERT(isFinite(mOriginY));</div>
+<div class="line"><span class="lineno">   81</span> </div>
+<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#af0529f982bd8c0c4aab641716aaede07">hasDifferentials</a>()) {</div>
+<div class="line"><span class="lineno">   83</span>        MNRY_ASSERT(isNormalized(mDirX));</div>
+<div class="line"><span class="lineno">   84</span>        MNRY_ASSERT(isNormalized(mDirY));</div>
+<div class="line"><span class="lineno">   85</span>    }</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   88</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abee0dd9ebce83dfc45273c68a37a22c7" name="abee0dd9ebce83dfc45273c68a37a22c7"></a>
@@ -719,7 +805,16 @@ Static Public Member Functions</h2></td></tr>
 <p>Debugging. </p>
 
 <p class="definition">Definition at line <a class="el" href="_ray_8cc_source.html#l00063">63</a> of file <a class="el" href="_ray_8cc_source.html">Ray.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   64</span>{</div>
+<div class="line"><span class="lineno">   65</span>    Ray::print(cout);</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>    cout &lt;&lt; <span class="stringliteral">&quot;Aux origin x = &quot;</span> &lt;&lt; mOriginX &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   68</span>    cout &lt;&lt; <span class="stringliteral">&quot;Aux origin y = &quot;</span> &lt;&lt; mOriginY &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   69</span>    cout &lt;&lt; <span class="stringliteral">&quot;Aux dir x    = &quot;</span> &lt;&lt; mDirX &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   70</span>    cout &lt;&lt; <span class="stringliteral">&quot;Aux dir y    = &quot;</span> &lt;&lt; mDirY &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">return</span> cout;</div>
+<div class="line"><span class="lineno">   72</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af358daae70377541b547a4a4987be1bb" name="af358daae70377541b547a4a4987be1bb"></a>
@@ -747,7 +842,17 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00336">336</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  337</span>    {</div>
+<div class="line"><span class="lineno">  338</span>        scene_rdl2::math::Vec3f <span class="keyword">const</span> &amp;origin = getOrigin();</div>
+<div class="line"><span class="lineno">  339</span>        scene_rdl2::math::Vec3f <span class="keyword">const</span> &amp;direction = getDirection();</div>
+<div class="line"><span class="lineno">  340</span> </div>
+<div class="line"><span class="lineno">  341</span>        mOriginX = origin + (mOriginX - origin) * scale;</div>
+<div class="line"><span class="lineno">  342</span>        mOriginY = origin + (mOriginY - origin) * scale;</div>
+<div class="line"><span class="lineno">  343</span>        mDirX = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(direction + (mDirX - direction) * scale);</div>
+<div class="line"><span class="lineno">  344</span>        mDirY = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(direction + (mDirY - direction) * scale);</div>
+<div class="line"><span class="lineno">  345</span>    }</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a26b3f6b7b842544058f3766b0da79257"><div class="ttname"><a href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a></div><div class="ttdeci">__host__ __device__ float3 normalize(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00165">GPUMath.h:165</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9df59cb072cf37c6f65b39df408e76ed" name="a9df59cb072cf37c6f65b39df408e76ed"></a>
@@ -775,7 +880,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00352">352</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  352</span>{ mDirX = dirX; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae0dbd2902aa626d9e235904b2d6ea6e4" name="ae0dbd2902aa626d9e235904b2d6ea6e4"></a>
@@ -803,7 +909,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00354">354</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  354</span>{ mDirY = dirY; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a96324af6277efbe9fdaa12a2c3e06324" name="a96324af6277efbe9fdaa12a2c3e06324"></a>
@@ -831,7 +938,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00351">351</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  351</span>{ mOriginX = originX; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac46308e2ae380877ba398d84c0df8f33" name="ac46308e2ae380877ba398d84c0df8f33"></a>
@@ -859,7 +967,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00353">353</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  353</span>{ mOriginY = originY; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a288f6c5b1ef229db8dd03208d9d4a853" name="a288f6c5b1ef229db8dd03208d9d4a853"></a>
@@ -888,7 +997,8 @@ Static Public Member Functions</h2></td></tr>
 <p >The original tfar of the ray. ray.tfar is modified during the intersections so this keeps track of the original value. </p>
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00358">358</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  358</span>{ mOrigTfar = origTfar; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af4337ac3a3d7993f4da8564f8d11b19e" name="af4337ac3a3d7993f4da8564f8d11b19e"></a>
@@ -927,6 +1037,52 @@ Static Public Member Functions</h2></td></tr>
 <p >Apply ray operations. Position, direction and derivatives are updated simultaneously. Advances aux ray origins to the plane described by the hit point and normal. See "Tracing Ray Differentials" - Igehy </p>
 
 <p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00282">282</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  283</span>    {</div>
+<div class="line"><span class="lineno">  284</span>        org = hitPoint;</div>
+<div class="line"><span class="lineno">  285</span> </div>
+<div class="line"><span class="lineno">  286</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#af0529f982bd8c0c4aab641716aaede07">hasDifferentials</a>()) {</div>
+<div class="line"><span class="lineno">  287</span>            <span class="keywordtype">float</span> denomX = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(hitNormal, mDirX);</div>
+<div class="line"><span class="lineno">  288</span>            <span class="keywordtype">float</span> denomY = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(hitNormal, mDirY);</div>
+<div class="line"><span class="lineno">  289</span> </div>
+<div class="line"><span class="lineno">  290</span>            <span class="comment">// TODO: do something more expensive here to avoid denormals?</span></div>
+<div class="line"><span class="lineno">  291</span>            <span class="keywordflow">if</span> (denomX != 0.0f &amp;&amp; denomY != 0.0f) {</div>
+<div class="line"><span class="lineno">  292</span>                <span class="keywordtype">float</span> planeD = -<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(hitNormal, hitPoint);</div>
+<div class="line"><span class="lineno">  293</span>                <span class="keywordtype">float</span> distX = -(<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(mOriginX, hitNormal) + planeD) / denomX;</div>
+<div class="line"><span class="lineno">  294</span>                <span class="keywordtype">float</span> distY = -(<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(mOriginY, hitNormal) + planeD) / denomY;</div>
+<div class="line"><span class="lineno">  295</span> </div>
+<div class="line"><span class="lineno">  296</span>                mOriginX += mDirX * distX;</div>
+<div class="line"><span class="lineno">  297</span>                mOriginY += mDirY * distY;</div>
+<div class="line"><span class="lineno">  298</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  299</span>                mFlags.clear(<a class="code hl_enumvalue" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html#a8a6d55cc9c5ccd24c3a3f087e905bfa6a34f012539df9a567811114ed47cfb208">HAS_DIFFERENTIALS</a>);</div>
+<div class="line"><span class="lineno">  300</span>            }</div>
+<div class="line"><span class="lineno">  301</span>        }</div>
+<div class="line"><span class="lineno">  302</span>    }</div>
+<div class="ttc" id="a_n_point_8h_html_a16747d68c1e06270b0ed335d631b66f3"><div class="ttname"><a href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a></div><div class="ttdeci">float dot(const NPoint&lt; D &gt; &amp;a, const NPoint&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00271">NPoint.h:271</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a62336513b9f49353f4403a0a23fa5047" name="a62336513b9f49353f4403a0a23fa5047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62336513b9f49353f4403a0a23fa5047">&#9670;&#160;</a></span>MCRT_COMMON_RAY_DIFFERENTIAL_MEMBERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moonray::mcrt_common::RayDifferential::MCRT_COMMON_RAY_DIFFERENTIAL_MEMBERS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ray_8h_source.html#l00370">370</a> of file <a class="el" href="_ray_8h_source.html">Ray.h</a>.</p>
 
 </div>
 </div>
@@ -935,9 +1091,13 @@ Static Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/mcrt_common/<a class="el" href="_ray_8cc_source.html">Ray.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1mcrt__common.html">mcrt_common</a></li><li class="navelem"><a class="el" href="classmoonray_1_1mcrt__common_1_1_ray_differential.html">RayDifferential</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

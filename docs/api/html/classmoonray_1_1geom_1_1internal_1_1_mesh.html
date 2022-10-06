@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html">Mesh</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1internal_1_1_mesh.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -50,6 +66,7 @@ $(function() {
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classmoonray_1_1geom_1_1internal_1_1_mesh-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::geom::internal::Mesh Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -377,6 +394,13 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a92d6bf5be0cee4234d9c18797c6e80e0 inherit pro_attribs_classmoonray_1_1geom_1_1internal_1_1_primitive"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; int, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a92d6bf5be0cee4234d9c18797c6e80e0">mInstanceFeatureSize</a></td></tr>
 <tr class="separator:a92d6bf5be0cee4234d9c18797c6e80e0 inherit pro_attribs_classmoonray_1_1geom_1_1internal_1_1_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a91280f96b27bd8aba017adb455582085"><td class="memItemLeft" align="right" valign="top">openvdb::VectorGrid::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a91280f96b27bd8aba017adb455582085">createTriMeshVelocityGrid</a> (float interiorBandwidth, const <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_mesh_1_1_tessellated_mesh.html">TessellatedMesh</a> &amp;mesh, size_t motionSample, float invFps)</td></tr>
+<tr class="separator:a91280f96b27bd8aba017adb455582085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5bc746e71fc9dc6aa5d585817dbf6d3"><td class="memItemLeft" align="right" valign="top">openvdb::VectorGrid::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#ae5bc746e71fc9dc6aa5d585817dbf6d3">createQuadMeshVelocityGrid</a> (float interiorBandwidth, const <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_mesh_1_1_tessellated_mesh.html">TessellatedMesh</a> &amp;mesh, size_t motionSample, float invFps)</td></tr>
+<tr class="separator:ae5bc746e71fc9dc6aa5d585817dbf6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classmoonray_1_1geom_1_1internal_1_1_primitive"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmoonray_1_1geom_1_1internal_1_1_primitive')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">moonray::geom::internal::Primitive</a></td></tr>
@@ -423,7 +447,20 @@ Additional Inherited Members</h2></td></tr>
 <p>Constructor / Destructor. </p>
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00050">50</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   50</span>                                                        :</div>
+<div class="line"><span class="lineno">   51</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a3bde174b322df7ab4b6983ec8f0cc5d9">NamedPrimitive</a>(std::move(layerAssignmentId)), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a9054ee41c29980d9664f885c928a9373">mIsSingleSided</a>(<span class="keyword">true</span>),</div>
+<div class="line"><span class="lineno">   52</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a6a4c1ac1f2244d72fdbb01869a10f89a">mIsNormalReversed</a>(<span class="keyword">false</span>), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#ad1d079e4b3b02ad3d0b32ee0842459ed">mIsOrientationReversed</a>(<span class="keyword">false</span>), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#aff7e0863ab950859ba9df6c9da9fe201">mIsMeshFinalized</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">   53</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#af6c4798f1e27e1330d1efb6c65151b13">mAdaptiveError</a>(0.0f), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#abe84fde6e5beb1e04695376ea6fbe652">mMeshResolution</a>(1), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a55c0fdb328704effd86d2b473e109250">mPrimToRender</a>(scene_rdl2::math::one)</div>
+<div class="line"><span class="lineno">   54</span>    {}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_mesh_html_a55c0fdb328704effd86d2b473e109250"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a55c0fdb328704effd86d2b473e109250">moonray::geom::internal::Mesh::mPrimToRender</a></div><div class="ttdeci">scene_rdl2::math::Mat4f mPrimToRender</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00375">Mesh.h:375</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_mesh_html_a6a4c1ac1f2244d72fdbb01869a10f89a"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a6a4c1ac1f2244d72fdbb01869a10f89a">moonray::geom::internal::Mesh::mIsNormalReversed</a></div><div class="ttdeci">bool mIsNormalReversed</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00363">Mesh.h:363</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_mesh_html_a9054ee41c29980d9664f885c928a9373"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a9054ee41c29980d9664f885c928a9373">moonray::geom::internal::Mesh::mIsSingleSided</a></div><div class="ttdeci">bool mIsSingleSided</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00362">Mesh.h:362</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_mesh_html_abe84fde6e5beb1e04695376ea6fbe652"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#abe84fde6e5beb1e04695376ea6fbe652">moonray::geom::internal::Mesh::mMeshResolution</a></div><div class="ttdeci">int mMeshResolution</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00369">Mesh.h:369</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_mesh_html_ad1d079e4b3b02ad3d0b32ee0842459ed"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#ad1d079e4b3b02ad3d0b32ee0842459ed">moonray::geom::internal::Mesh::mIsOrientationReversed</a></div><div class="ttdeci">bool mIsOrientationReversed</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00364">Mesh.h:364</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_mesh_html_af6c4798f1e27e1330d1efb6c65151b13"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#af6c4798f1e27e1330d1efb6c65151b13">moonray::geom::internal::Mesh::mAdaptiveError</a></div><div class="ttdeci">float mAdaptiveError</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00367">Mesh.h:367</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_mesh_html_aff7e0863ab950859ba9df6c9da9fe201"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#aff7e0863ab950859ba9df6c9da9fe201">moonray::geom::internal::Mesh::mIsMeshFinalized</a></div><div class="ttdeci">bool mIsMeshFinalized</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00365">Mesh.h:365</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_a3bde174b322df7ab4b6983ec8f0cc5d9"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a3bde174b322df7ab4b6983ec8f0cc5d9">moonray::geom::internal::NamedPrimitive::NamedPrimitive</a></div><div class="ttdeci">NamedPrimitive(LayerAssignmentId &amp;&amp;layerAssignmentId)</div><div class="ttdoc">Constructor / Destructor.</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00034">NamedPrimitive.h:34</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3d41fabba5df29e9bed373ae08c07815" name="a3d41fabba5df29e9bed373ae08c07815"></a>
@@ -539,7 +576,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented in <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_open_subdiv_mesh.html#a8ae04ab02bb2f03eb1695bbf7cb4f353">moonray::geom::internal::OpenSubdivMesh</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_quad_mesh.html#a8e189f80163c4cd336296bb80c398eb9">moonray::geom::internal::QuadMesh</a>, and <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_tri_mesh.html#a1e27890ff003336c945cc5b7c0dbd200">moonray::geom::internal::TriMesh</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00116">116</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  119</span>    {</div>
+<div class="line"><span class="lineno">  120</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  121</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afb822bb12fee4fdbbf4478f54a7d2263" name="afb822bb12fee4fdbbf4478f54a7d2263"></a>
@@ -571,7 +611,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented in <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_open_subdiv_mesh.html#a49c0326e90b338746f71c43deb029a7b">moonray::geom::internal::OpenSubdivMesh</a>, and <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#a86264c0461e883a00faa9e98b4f9daf5">moonray::geom::internal::PolyMesh</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00065">65</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   66</span>    {</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   68</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a310b6254d6cde5aea505e1e344042d12" name="a310b6254d6cde5aea505e1e344042d12"></a>
@@ -635,7 +678,15 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00275">275</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  279</span>    {</div>
+<div class="line"><span class="lineno">  280</span>        T df0 = f2 - f1;</div>
+<div class="line"><span class="lineno">  281</span>        T df1 = f3 - f1;</div>
+<div class="line"><span class="lineno">  282</span>        T dfds = invA[0] * df0 + invA[1] * df1;</div>
+<div class="line"><span class="lineno">  283</span>        T dfdt = invA[2] * df0 + invA[3] * df1;</div>
+<div class="line"><span class="lineno">  284</span>        intersection.setdAttributeds(key, dfds);</div>
+<div class="line"><span class="lineno">  285</span>        intersection.setdAttributedt(key, dfdt);</div>
+<div class="line"><span class="lineno">  286</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0f41de46ffed67b4d884cc7e5279f083" name="a0f41de46ffed67b4d884cc7e5279f083"></a>
@@ -711,7 +762,22 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00237">237</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  241</span>    {</div>
+<div class="line"><span class="lineno">  242</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getTimeSampleCount(key) &gt; 1) {</div>
+<div class="line"><span class="lineno">  243</span>            T f1 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMotionBlurFaceVarying(key, fid, fvid1, time);</div>
+<div class="line"><span class="lineno">  244</span>            T f2 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMotionBlurFaceVarying(key, fid, fvid2, time);</div>
+<div class="line"><span class="lineno">  245</span>            T f3 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMotionBlurFaceVarying(key, fid, fvid3, time);</div>
+<div class="line"><span class="lineno">  246</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a310b6254d6cde5aea505e1e344042d12">computeDerivatives</a>(key, f1, f2, f3, invA, intersection);</div>
+<div class="line"><span class="lineno">  247</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  248</span>            <span class="keyword">const</span> T&amp; f1 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getFaceVarying(key, fid, fvid1);</div>
+<div class="line"><span class="lineno">  249</span>            <span class="keyword">const</span> T&amp; f2 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getFaceVarying(key, fid, fvid2);</div>
+<div class="line"><span class="lineno">  250</span>            <span class="keyword">const</span> T&amp; f3 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getFaceVarying(key, fid, fvid3);</div>
+<div class="line"><span class="lineno">  251</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a310b6254d6cde5aea505e1e344042d12">computeDerivatives</a>(key, f1, f2, f3, invA, intersection);</div>
+<div class="line"><span class="lineno">  252</span>        }</div>
+<div class="line"><span class="lineno">  253</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_mesh_html_a310b6254d6cde5aea505e1e344042d12"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a310b6254d6cde5aea505e1e344042d12">moonray::geom::internal::Mesh::computeDerivatives</a></div><div class="ttdeci">void computeDerivatives(shading::TypedAttributeKey&lt; T &gt; key, const T &amp;f1, const T &amp;f2, const T &amp;f3, const std::array&lt; float, 4 &gt; &amp;invA, shading::Intersection &amp;intersection) const</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00275">Mesh.h:275</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_a5a2f04f73c5f819d4e76c10bbd71cac5"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">moonray::geom::internal::NamedPrimitive::mAttributes</a></div><div class="ttdeci">std::unique_ptr&lt; shading::Attributes &gt; mAttributes</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00146">NamedPrimitive.h:146</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad52fa0439e84a577398b8f892b0213d7" name="ad52fa0439e84a577398b8f892b0213d7"></a>
@@ -785,7 +851,34 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8cc_source.html#l00335">335</a> of file <a class="el" href="_mesh_8cc_source.html">Mesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  339</span>{</div>
+<div class="line"><span class="lineno">  340</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> pos0, pos1;</div>
+<div class="line"><span class="lineno">  341</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> *pos1Ptr = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  342</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a0ab0ad5c8a764946af8ee85c1c3a5269">isMotionBlurOn</a>()) {</div>
+<div class="line"><span class="lineno">  343</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> pShutterOpen =</div>
+<div class="line"><span class="lineno">  344</span>            vertexW1 * vertBuf(id1, 0) + vertexW2 * vertBuf(id2, 0) + vertexW3 * vertBuf(id3, 0);</div>
+<div class="line"><span class="lineno">  345</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> pShutterClose =</div>
+<div class="line"><span class="lineno">  346</span>            vertexW1 * vertBuf(id1, 1) + vertexW2 * vertBuf(id2, 1) + vertexW3 * vertBuf(id3, 1);</div>
+<div class="line"><span class="lineno">  347</span>        pos0 = <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(pShutterOpen, pShutterClose, ray.getTime() - <a class="code hl_variable" href="namespacemoonray_1_1geom_1_1internal.html#a70f345aecee7b6a45b138e92edd69fcd">sHalfDt</a>);</div>
+<div class="line"><span class="lineno">  348</span>        pos1 = <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(pShutterOpen, pShutterClose, ray.getTime() + <a class="code hl_variable" href="namespacemoonray_1_1geom_1_1internal.html#a70f345aecee7b6a45b138e92edd69fcd">sHalfDt</a>);</div>
+<div class="line"><span class="lineno">  349</span>        pos1Ptr = &amp;pos1;</div>
+<div class="line"><span class="lineno">  350</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  351</span>        pos0 = vertexW1 * vertBuf(id1, 0) + vertexW2 * vertBuf(id2, 0) + vertexW3 * vertBuf(id3, 0);</div>
+<div class="line"><span class="lineno">  352</span>        pos1Ptr = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  353</span>    }</div>
+<div class="line"><span class="lineno">  354</span> </div>
+<div class="line"><span class="lineno">  355</span>    <span class="comment">// Motion vectors only support a single instance level, hence we only care</span></div>
+<div class="line"><span class="lineno">  356</span>    <span class="comment">// about ray.instance0.</span></div>
+<div class="line"><span class="lineno">  357</span>    <span class="keyword">const</span> Instance *instance = (ray.isInstanceHit())?</div>
+<div class="line"><span class="lineno">  358</span>        <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>Instance *<span class="keyword">&gt;</span>(ray.ext.instance0OrLight) : <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  359</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#afc2632cf558586dca95b5bcccdb8396d">computePrimitiveMotion</a>(pos0, pos1Ptr, ray.getTime(), instance);</div>
+<div class="line"><span class="lineno">  360</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html_a0ab0ad5c8a764946af8ee85c1c3a5269"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a0ab0ad5c8a764946af8ee85c1c3a5269">moonray::geom::internal::Primitive::isMotionBlurOn</a></div><div class="ttdeci">bool isMotionBlurOn() const</div><div class="ttdoc">Query whether thre are multiple frame samples for this Primitive.</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8h_source.html#l00221">Primitive.h:221</a></div></div>
+<div class="ttc" id="acmd_2point__generation__cmd_2util_8h_html_a29663946660b920710cf69b9bbcf8a7d"><div class="ttname"><a href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a></div><div class="ttdeci">float lerp(float u, float min, float max)</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2point__generation__cmd_2util_8h_source.html#l00044">util.h:44</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a70f345aecee7b6a45b138e92edd69fcd"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a70f345aecee7b6a45b138e92edd69fcd">moonray::geom::internal::sHalfDt</a></div><div class="ttdeci">static const float sHalfDt</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2prim_2util_8h_source.html#l00092">Util.h:92</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_afc2632cf558586dca95b5bcccdb8396d"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#afc2632cf558586dca95b5bcccdb8396d">moonray::geom::internal::computePrimitiveMotion</a></div><div class="ttdeci">Vec3f computePrimitiveMotion(const Vec3f &amp;pos0, const Vec3f *pos1, float rayTime, const Instance *instance)</div><div class="ttdef"><b>Definition:</b> <a href="geom_2prim_2_util_8cc_source.html#l00203">Util.cc:203</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad7e3286cd208be71d0d8bbbe096ffd9f" name="ad7e3286cd208be71d0d8bbbe096ffd9f"></a>
@@ -855,7 +948,20 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00218">218</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  222</span>    {</div>
+<div class="line"><span class="lineno">  223</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getTimeSampleCount(key) &gt; 1) {</div>
+<div class="line"><span class="lineno">  224</span>            T f1 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMotionBlurVarying(key, vid1, time);</div>
+<div class="line"><span class="lineno">  225</span>            T f2 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMotionBlurVarying(key, vid2, time);</div>
+<div class="line"><span class="lineno">  226</span>            T f3 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMotionBlurVarying(key, vid3, time);</div>
+<div class="line"><span class="lineno">  227</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a310b6254d6cde5aea505e1e344042d12">computeDerivatives</a>(key, f1, f2, f3, invA, intersection);</div>
+<div class="line"><span class="lineno">  228</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  229</span>            <span class="keyword">const</span> T&amp; f1 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getVarying(key, vid1);</div>
+<div class="line"><span class="lineno">  230</span>            <span class="keyword">const</span> T&amp; f2 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getVarying(key, vid2);</div>
+<div class="line"><span class="lineno">  231</span>            <span class="keyword">const</span> T&amp; f3 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getVarying(key, vid3);</div>
+<div class="line"><span class="lineno">  232</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a310b6254d6cde5aea505e1e344042d12">computeDerivatives</a>(key, f1, f2, f3, invA, intersection);</div>
+<div class="line"><span class="lineno">  233</span>        }</div>
+<div class="line"><span class="lineno">  234</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a58925fe50a75b5b690f0510adfb1af14" name="a58925fe50a75b5b690f0510adfb1af14"></a>
@@ -925,7 +1031,300 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00256">256</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  260</span>    {</div>
+<div class="line"><span class="lineno">  261</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getTimeSampleCount(key) &gt; 1) {</div>
+<div class="line"><span class="lineno">  262</span>            T f1 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMotionBlurVertex(key, vid1, time);</div>
+<div class="line"><span class="lineno">  263</span>            T f2 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMotionBlurVertex(key, vid2, time);</div>
+<div class="line"><span class="lineno">  264</span>            T f3 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getMotionBlurVertex(key, vid3, time);</div>
+<div class="line"><span class="lineno">  265</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a310b6254d6cde5aea505e1e344042d12">computeDerivatives</a>(key, f1, f2, f3, invA, intersection);</div>
+<div class="line"><span class="lineno">  266</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  267</span>            <span class="keyword">const</span> T&amp; f1 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getVertex(key, vid1);</div>
+<div class="line"><span class="lineno">  268</span>            <span class="keyword">const</span> T&amp; f2 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getVertex(key, vid2);</div>
+<div class="line"><span class="lineno">  269</span>            <span class="keyword">const</span> T&amp; f3 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5a2f04f73c5f819d4e76c10bbd71cac5">mAttributes</a>-&gt;getVertex(key, vid3);</div>
+<div class="line"><span class="lineno">  270</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a310b6254d6cde5aea505e1e344042d12">computeDerivatives</a>(key, f1, f2, f3, invA, intersection);</div>
+<div class="line"><span class="lineno">  271</span>        }</div>
+<div class="line"><span class="lineno">  272</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae5bc746e71fc9dc6aa5d585817dbf6d3" name="ae5bc746e71fc9dc6aa5d585817dbf6d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5bc746e71fc9dc6aa5d585817dbf6d3">&#9670;&#160;</a></span>createQuadMeshVelocityGrid()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">openvdb::VectorGrid::Ptr moonray::geom::internal::Mesh::createQuadMeshVelocityGrid </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>interiorBandwidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_mesh_1_1_tessellated_mesh.html">TessellatedMesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>motionSample</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>invFps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mesh_8cc_source.html#l00107">107</a> of file <a class="el" href="_mesh_8cc_source.html">Mesh.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  111</span>{</div>
+<div class="line"><span class="lineno">  112</span>    <span class="comment">// Convert this mesh to a vdb grid. Inputs are the mesh, the world to index space transform, the exterior bandwidth</span></div>
+<div class="line"><span class="lineno">  113</span>    <span class="comment">// -- which is aribitrarily set to 3 because that is the default setting in openvdb --, the interior bandwith --</span></div>
+<div class="line"><span class="lineno">  114</span>    <span class="comment">// which is the number of voxels wide / 2, and flags.</span></div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> faceVertexCount = 4;</div>
+<div class="line"><span class="lineno">  117</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> faceCount = mesh.mFaceCount;</div>
+<div class="line"><span class="lineno">  118</span> </div>
+<div class="line"><span class="lineno">  119</span>    std::vector&lt;openvdb::Vec3s&gt; vertices(mesh.mVertexCount);</div>
+<div class="line"><span class="lineno">  120</span>    std::vector&lt;openvdb::Vec4I&gt; indices(faceCount);</div>
+<div class="line"><span class="lineno">  121</span> </div>
+<div class="line"><span class="lineno">  122</span>    <span class="comment">// Grab vertex buffer of this motion sample.</span></div>
+<div class="line"><span class="lineno">  123</span>    <span class="keyword">const</span> <span class="keywordtype">float</span>* vertexBuffer = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">float</span> *<span class="keyword">&gt;</span>(mesh.mVertexBufferDesc[motionSample].mData) +</div>
+<div class="line"><span class="lineno">  124</span>        mesh.mVertexBufferDesc[motionSample].mOffset / <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>);</div>
+<div class="line"><span class="lineno">  125</span>    <span class="keyword">const</span> <span class="keywordtype">int</span>* indexBuffer = (<span class="keyword">const</span> <span class="keywordtype">int</span>* )mesh.mIndexBufferDesc.mData;</div>
+<div class="line"><span class="lineno">  126</span> </div>
+<div class="line"><span class="lineno">  127</span>    <span class="comment">// Create openvdb index buffer</span></div>
+<div class="line"><span class="lineno">  128</span>    for (<span class="keywordtype">size_t</span> f = 0; f &lt; faceCount; ++f) {</div>
+<div class="line"><span class="lineno">  129</span>        indices[f] = openvdb::Vec4I(indexBuffer[f * faceVertexCount],</div>
+<div class="line"><span class="lineno">  130</span>                                    indexBuffer[f * faceVertexCount + 1],</div>
+<div class="line"><span class="lineno">  131</span>                                    indexBuffer[f * faceVertexCount + 2],</div>
+<div class="line"><span class="lineno">  132</span>                                    indexBuffer[f * faceVertexCount + 3]);</div>
+<div class="line"><span class="lineno">  133</span>    }</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>    <span class="comment">// Create openvdb vertex buffer</span></div>
+<div class="line"><span class="lineno">  136</span>    <span class="keywordtype">size_t</span> vert = 0;</div>
+<div class="line"><span class="lineno">  137</span>    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> v = 0; v &lt; mesh.mVertexCount; ++v) {</div>
+<div class="line"><span class="lineno">  138</span>        vertices[v] =</div>
+<div class="line"><span class="lineno">  139</span>            openvdb::Vec3s(vertexBuffer[vert], vertexBuffer[vert+1], vertexBuffer[vert+2]);</div>
+<div class="line"><span class="lineno">  140</span>        vert += mesh.mVertexBufferDesc[motionSample].mStride / <span class="keyword">sizeof</span>(float);</div>
+<div class="line"><span class="lineno">  141</span>    }</div>
+<div class="line"><span class="lineno">  142</span> </div>
+<div class="line"><span class="lineno">  143</span>    <span class="comment">// Set up openvdb mesh.</span></div>
+<div class="line"><span class="lineno">  144</span>    openvdb::tools::QuadAndTriangleDataAdapter&lt;openvdb::Vec3s, openvdb::Vec4I&gt; meshAdapter(vertices, indices);</div>
+<div class="line"><span class="lineno">  145</span>    <span class="comment">// The primitiveIndexGrid stores the index of the primitive (face) that is closest to the voxel.</span></div>
+<div class="line"><span class="lineno">  146</span>    openvdb::Int32Grid::Ptr primitiveIndexGrid(<span class="keyword">new</span> openvdb::Int32Grid(0));</div>
+<div class="line"><span class="lineno">  147</span>    openvdb::math::Transform::Ptr transform = openvdb::math::Transform::createLinearTransform();</div>
+<div class="line"><span class="lineno">  148</span>    primitiveIndexGrid-&gt;setTransform(transform);</div>
+<div class="line"><span class="lineno">  149</span>    openvdb::tools::meshToVolume&lt;openvdb::FloatGrid&gt;(meshAdapter,</div>
+<div class="line"><span class="lineno">  150</span>                                                     *transform,</div>
+<div class="line"><span class="lineno">  151</span>                                                     3.f,</div>
+<div class="line"><span class="lineno">  152</span>                                                     interiorBandwidth,</div>
+<div class="line"><span class="lineno">  153</span>                                                     0,</div>
+<div class="line"><span class="lineno">  154</span>                                                     primitiveIndexGrid.get());</div>
+<div class="line"><span class="lineno">  155</span> </div>
+<div class="line"><span class="lineno">  156</span>    openvdb::VectorGrid::Ptr velocityGrid = openvdb::Vec3SGrid::create();</div>
+<div class="line"><span class="lineno">  157</span> </div>
+<div class="line"><span class="lineno">  158</span>    <span class="comment">// If a shared primitive, the velocity grid is baked in local space.</span></div>
+<div class="line"><span class="lineno">  159</span>    <span class="comment">// In that case mPrimToRender is the worldToRender matrix used for shading,</span></div>
+<div class="line"><span class="lineno">  160</span>    <span class="comment">// which we do not want to apply.</span></div>
+<div class="line"><span class="lineno">  161</span>    <span class="keyword">const</span> scene_rdl2::math::Mat4f primToRender = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#af39090703b07aec07fa4605feb829727">getIsReference</a>() ? scene_rdl2::math::Mat4f(scene_rdl2::math::one) : <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a55c0fdb328704effd86d2b473e109250">mPrimToRender</a>;</div>
+<div class="line"><span class="lineno">  162</span> </div>
+<div class="line"><span class="lineno">  163</span>    <span class="comment">// Fill in velocity grid</span></div>
+<div class="line"><span class="lineno">  164</span>    openvdb::tools::transformValues(primitiveIndexGrid-&gt;cbeginValueOn(), *velocityGrid,</div>
+<div class="line"><span class="lineno">  165</span>        [&amp;](<span class="keyword">const</span> openvdb::Int32Grid::ValueOnCIter&amp; it, openvdb::Vec3SGrid::Accessor&amp; accessor) {</div>
+<div class="line"><span class="lineno">  166</span> </div>
+<div class="line"><span class="lineno">  167</span>            int faceid = it.getValue();</div>
+<div class="line"><span class="lineno">  168</span> </div>
+<div class="line"><span class="lineno">  169</span>            const openvdb::math::Coord&amp; coord = it.getCoord();</div>
+<div class="line"><span class="lineno">  170</span>            const openvdb::Vec3d voxelCenter(coord.x(), coord.y(), coord.z());</div>
+<div class="line"><span class="lineno">  171</span> </div>
+<div class="line"><span class="lineno">  172</span>            <span class="comment">// first triangle</span></div>
+<div class="line"><span class="lineno">  173</span>            const openvdb::Vec3d p0(vertices[indices[faceid].x()]);</div>
+<div class="line"><span class="lineno">  174</span>            const openvdb::Vec3d p1(vertices[indices[faceid].y()]);</div>
+<div class="line"><span class="lineno">  175</span>            const openvdb::Vec3d p2(vertices[indices[faceid].z()]);</div>
+<div class="line"><span class="lineno">  176</span>            openvdb::Vec3d uvw;</div>
+<div class="line"><span class="lineno">  177</span>            const openvdb::Vec3d closestP1 =</div>
+<div class="line"><span class="lineno">  178</span>                openvdb::math::closestPointOnTriangleToPoint(p0, p1, p2, voxelCenter, uvw);</div>
+<div class="line"><span class="lineno">  179</span>            float dist1 = (voxelCenter - closestP1).lengthSqr();</div>
+<div class="line"><span class="lineno">  180</span>            int index0 = 0;</div>
+<div class="line"><span class="lineno">  181</span>            int index1 = 1;</div>
+<div class="line"><span class="lineno">  182</span>            int index2 = 2;</div>
+<div class="line"><span class="lineno">  183</span> </div>
+<div class="line"><span class="lineno">  184</span>            <span class="comment">// second triangle</span></div>
+<div class="line"><span class="lineno">  185</span>            const openvdb::Vec3d p3(vertices[indices[faceid].w()]);</div>
+<div class="line"><span class="lineno">  186</span>            openvdb::Vec3d uvw2;</div>
+<div class="line"><span class="lineno">  187</span>            const openvdb::Vec3d closestP2 =</div>
+<div class="line"><span class="lineno">  188</span>                openvdb::math::closestPointOnTriangleToPoint(p0, p3, p2, voxelCenter, uvw2);</div>
+<div class="line"><span class="lineno">  189</span>            float dist2 = (voxelCenter - closestP2).lengthSqr();</div>
+<div class="line"><span class="lineno">  190</span> </div>
+<div class="line"><span class="lineno">  191</span>            if (dist2 &lt; dist1) {</div>
+<div class="line"><span class="lineno">  192</span>                <span class="comment">// use second triangle</span></div>
+<div class="line"><span class="lineno">  193</span>                index1 = 3;</div>
+<div class="line"><span class="lineno">  194</span>                uvw = uvw2;</div>
+<div class="line"><span class="lineno">  195</span>            }</div>
+<div class="line"><span class="lineno">  196</span> </div>
+<div class="line"><span class="lineno">  197</span>            <span class="comment">// Assume only one velocity buffer at t = 0.</span></div>
+<div class="line"><span class="lineno">  198</span>            <span class="keyword">const</span> scene_rdl2::math::Vec3f v0 = scene_rdl2::math::transformVector(primToRender, <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#ad32799577c353cac9f24867ea9a3b964">getVelocity</a>(faceid, index0,</div>
+<div class="line"><span class="lineno">  199</span>                <span class="keywordtype">float</span>(motionSample)));</div>
+<div class="line"><span class="lineno">  200</span>            <span class="keyword">const</span> scene_rdl2::math::Vec3f v1 = scene_rdl2::math::transformVector(primToRender, <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#ad32799577c353cac9f24867ea9a3b964">getVelocity</a>(faceid, index1,</div>
+<div class="line"><span class="lineno">  201</span>                <span class="keywordtype">float</span>(motionSample)));</div>
+<div class="line"><span class="lineno">  202</span>            <span class="keyword">const</span> scene_rdl2::math::Vec3f v2 = scene_rdl2::math::transformVector(primToRender, <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#ad32799577c353cac9f24867ea9a3b964">getVelocity</a>(faceid, index2,</div>
+<div class="line"><span class="lineno">  203</span>                <span class="keywordtype">float</span>(motionSample)));</div>
+<div class="line"><span class="lineno">  204</span> </div>
+<div class="line"><span class="lineno">  205</span>            <span class="keyword">const</span> scene_rdl2::math::Vec3f v = invFps * (v0 * float(uvw[0]) + v1 * float(uvw[1]) + v2 * float(uvw[2]));</div>
+<div class="line"><span class="lineno">  206</span>            accessor.setValue(coord, openvdb::Vec3d(v.x, v.y, v.z));</div>
+<div class="line"><span class="lineno">  207</span>    });</div>
+<div class="line"><span class="lineno">  208</span>    velocityGrid-&gt;pruneGrid();</div>
+<div class="line"><span class="lineno">  209</span> </div>
+<div class="line"><span class="lineno">  210</span>    <span class="keywordflow">return</span> velocityGrid;</div>
+<div class="line"><span class="lineno">  211</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_mesh_html_ad32799577c353cac9f24867ea9a3b964"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#ad32799577c353cac9f24867ea9a3b964">moonray::geom::internal::Mesh::getVelocity</a></div><div class="ttdeci">virtual scene_rdl2::math::Vec3f getVelocity(int tessFaceId, int vIndex, float time=0.0f) const =0</div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html_af39090703b07aec07fa4605feb829727"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#af39090703b07aec07fa4605feb829727">moonray::geom::internal::Primitive::getIsReference</a></div><div class="ttdeci">bool getIsReference() const</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8h_source.html#l00266">Primitive.h:266</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a91280f96b27bd8aba017adb455582085" name="a91280f96b27bd8aba017adb455582085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91280f96b27bd8aba017adb455582085">&#9670;&#160;</a></span>createTriMeshVelocityGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">openvdb::VectorGrid::Ptr moonray::geom::internal::Mesh::createTriMeshVelocityGrid </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>interiorBandwidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_mesh_1_1_tessellated_mesh.html">TessellatedMesh</a> &amp;&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>motionSample</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>invFps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_mesh_8cc_source.html#l00024">24</a> of file <a class="el" href="_mesh_8cc_source.html">Mesh.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>{</div>
+<div class="line"><span class="lineno">   29</span>    <span class="comment">// Convert this mesh to a vdb grid. Inputs are the mesh, the world to index space transform, the exterior bandwidth</span></div>
+<div class="line"><span class="lineno">   30</span>    <span class="comment">// -- which is aribitrarily set to 3 because that is the default setting in openvdb --, the interior bandwith --</span></div>
+<div class="line"><span class="lineno">   31</span>    <span class="comment">// which is the number of voxels wide / 2, and flags.</span></div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> faceVertexCount = 3;</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> faceCount = mesh.mFaceCount;</div>
+<div class="line"><span class="lineno">   35</span> </div>
+<div class="line"><span class="lineno">   36</span>    std::vector&lt;openvdb::Vec3s&gt; vertices(mesh.mVertexCount);</div>
+<div class="line"><span class="lineno">   37</span>    std::vector&lt;openvdb::Vec3I&gt; indices(faceCount);</div>
+<div class="line"><span class="lineno">   38</span> </div>
+<div class="line"><span class="lineno">   39</span>    <span class="comment">// Grab vertex buffer of this motion sample.</span></div>
+<div class="line"><span class="lineno">   40</span>    <span class="keyword">const</span> <span class="keywordtype">float</span>* vertexBuffer = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">float</span> *<span class="keyword">&gt;</span>(mesh.mVertexBufferDesc[motionSample].mData) +</div>
+<div class="line"><span class="lineno">   41</span>        mesh.mVertexBufferDesc[motionSample].mOffset / <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>);</div>
+<div class="line"><span class="lineno">   42</span>    <span class="keyword">const</span> <span class="keywordtype">int</span>* indexBuffer = (<span class="keyword">const</span> <span class="keywordtype">int</span>* )mesh.mIndexBufferDesc.mData;</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    <span class="comment">// Create openvdb index buffer</span></div>
+<div class="line"><span class="lineno">   45</span>    for (<span class="keywordtype">size_t</span> f = 0; f &lt; faceCount; ++f) {</div>
+<div class="line"><span class="lineno">   46</span>        indices[f] = openvdb::Vec3I(indexBuffer[f * faceVertexCount],</div>
+<div class="line"><span class="lineno">   47</span>                                    indexBuffer[f * faceVertexCount + 1],</div>
+<div class="line"><span class="lineno">   48</span>                                    indexBuffer[f * faceVertexCount + 2]);</div>
+<div class="line"><span class="lineno">   49</span>    }</div>
+<div class="line"><span class="lineno">   50</span> </div>
+<div class="line"><span class="lineno">   51</span>    <span class="comment">// Create openvdb vertex buffer</span></div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordtype">size_t</span> vert = 0;</div>
+<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> v = 0; v &lt; mesh.mVertexCount; ++v) {</div>
+<div class="line"><span class="lineno">   54</span>        vertices[v] =</div>
+<div class="line"><span class="lineno">   55</span>            openvdb::Vec3s(vertexBuffer[vert], vertexBuffer[vert+1], vertexBuffer[vert+2]);</div>
+<div class="line"><span class="lineno">   56</span>        vert += mesh.mVertexBufferDesc[motionSample].mStride / <span class="keyword">sizeof</span>(float);</div>
+<div class="line"><span class="lineno">   57</span>    }</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>    <span class="comment">// Set up openvdb mesh.</span></div>
+<div class="line"><span class="lineno">   60</span>    openvdb::tools::QuadAndTriangleDataAdapter&lt;openvdb::Vec3s, openvdb::Vec3I&gt; meshAdapter(vertices, indices);</div>
+<div class="line"><span class="lineno">   61</span>    <span class="comment">// The primitiveIndexGrid stores the index of the primitive (face) that is closest to the voxel.</span></div>
+<div class="line"><span class="lineno">   62</span>    openvdb::Int32Grid::Ptr primitiveIndexGrid(<span class="keyword">new</span> openvdb::Int32Grid(0));</div>
+<div class="line"><span class="lineno">   63</span>    openvdb::math::Transform::Ptr transform = openvdb::math::Transform::createLinearTransform();</div>
+<div class="line"><span class="lineno">   64</span>    primitiveIndexGrid-&gt;setTransform(transform);</div>
+<div class="line"><span class="lineno">   65</span>    openvdb::tools::meshToVolume&lt;openvdb::FloatGrid&gt;(meshAdapter,</div>
+<div class="line"><span class="lineno">   66</span>                                                     *transform,</div>
+<div class="line"><span class="lineno">   67</span>                                                     3.0f,</div>
+<div class="line"><span class="lineno">   68</span>                                                     interiorBandwidth,</div>
+<div class="line"><span class="lineno">   69</span>                                                     0,</div>
+<div class="line"><span class="lineno">   70</span>                                                     primitiveIndexGrid.get());</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>    openvdb::VectorGrid::Ptr velocityGrid = openvdb::Vec3SGrid::create();</div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>    <span class="comment">// If a shared primitive, the velocity grid is baked in local space.</span></div>
+<div class="line"><span class="lineno">   75</span>    <span class="keyword">const</span> scene_rdl2::math::Mat4f primToRender = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#af39090703b07aec07fa4605feb829727">getIsReference</a>() ? scene_rdl2::math::Mat4f(scene_rdl2::math::one) : <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a55c0fdb328704effd86d2b473e109250">mPrimToRender</a>;</div>
+<div class="line"><span class="lineno">   76</span> </div>
+<div class="line"><span class="lineno">   77</span>    <span class="comment">// Fill in velocity grid</span></div>
+<div class="line"><span class="lineno">   78</span>    openvdb::tools::transformValues(primitiveIndexGrid-&gt;cbeginValueOn(), *velocityGrid,</div>
+<div class="line"><span class="lineno">   79</span>        [&amp;](<span class="keyword">const</span> openvdb::Int32Grid::ValueOnCIter&amp; it, openvdb::Vec3SGrid::Accessor&amp; accessor) {</div>
+<div class="line"><span class="lineno">   80</span> </div>
+<div class="line"><span class="lineno">   81</span>            int faceid = it.getValue();</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>            const openvdb::math::Coord&amp; coord = it.getCoord();</div>
+<div class="line"><span class="lineno">   84</span>            const openvdb::Vec3d voxelCenter(coord.x(), coord.y(), coord.z());</div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>            const openvdb::Vec3d p0(vertices[indices[faceid].x()]);</div>
+<div class="line"><span class="lineno">   87</span>            const openvdb::Vec3d p1(vertices[indices[faceid].y()]);</div>
+<div class="line"><span class="lineno">   88</span>            const openvdb::Vec3d p2(vertices[indices[faceid].z()]);</div>
+<div class="line"><span class="lineno">   89</span>            openvdb::Vec3d uvw;</div>
+<div class="line"><span class="lineno">   90</span>            openvdb::math::closestPointOnTriangleToPoint(p0, p1, p2, voxelCenter, uvw);</div>
+<div class="line"><span class="lineno">   91</span> </div>
+<div class="line"><span class="lineno">   92</span>            <span class="comment">// Assume only one velocity buffer at t = 0.</span></div>
+<div class="line"><span class="lineno">   93</span>            const scene_rdl2::math::Vec3f v0 = scene_rdl2::math::transformVector(primToRender, getVelocity(faceid, 0, float(motionSample)));</div>
+<div class="line"><span class="lineno">   94</span>            const scene_rdl2::math::Vec3f v1 = scene_rdl2::math::transformVector(primToRender, getVelocity(faceid, 1, float(motionSample)));</div>
+<div class="line"><span class="lineno">   95</span>            const scene_rdl2::math::Vec3f v2 = scene_rdl2::math::transformVector(primToRender, getVelocity(faceid, 2, float(motionSample)));</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>            const scene_rdl2::math::Vec3f v = invFps * (v0 * float(uvw[0]) + v1 * float(uvw[1]) + v2 * float(uvw[2]));</div>
+<div class="line"><span class="lineno">   98</span>            accessor.setValue(coord, openvdb::Vec3d(v.x, v.y, v.z));</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>    });</div>
+<div class="line"><span class="lineno">  101</span>    velocityGrid-&gt;pruneGrid();</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>    <span class="keywordflow">return</span> velocityGrid;</div>
+<div class="line"><span class="lineno">  104</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a98414ce2c7a96e7928ff966705a7b512" name="a98414ce2c7a96e7928ff966705a7b512"></a>
@@ -971,7 +1370,71 @@ template&lt;typename T &gt; </div>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a0667aec5494ba7189ac77dca4538b800">moonray::geom::internal::Primitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8cc_source.html#l00214">214</a> of file <a class="el" href="_mesh_8cc_source.html">Mesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  217</span>{</div>
+<div class="line"><span class="lineno">  218</span>    <span class="keywordflow">if</span>(!<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#ad5b8644a92dcedda239e576044ba6ed2">getAttributes</a>()-&gt;isSupported(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a256b76925eefd1a9cadcabc8d29f562b">shading::StandardAttributes::sVelocity</a>)) {</div>
+<div class="line"><span class="lineno">  219</span>        <span class="comment">// don&#39;t bake velocity grid if velocity does not exist</span></div>
+<div class="line"><span class="lineno">  220</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  221</span>    }</div>
+<div class="line"><span class="lineno">  222</span> </div>
+<div class="line"><span class="lineno">  223</span>    <span class="keywordtype">size_t</span> threadCount = <a class="code hl_function" href="namespacemoonray_1_1mcrt__common.html#af58491a6a11e93bcbe77e8b1cef48097">mcrt_common::getMaxNumTLS</a>();</div>
+<div class="line"><span class="lineno">  224</span> </div>
+<div class="line"><span class="lineno">  225</span>    TessellatedMesh mesh;</div>
+<div class="line"><span class="lineno">  226</span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a251b14c33a4de2a48f8e0577871c5a96">getTessellatedMesh</a>(mesh);</div>
+<div class="line"><span class="lineno">  227</span> </div>
+<div class="line"><span class="lineno">  228</span>    <span class="comment">// Meshes that are bound to volume shaders and exhibit motion blur should have 2 motion samples. If this is the</span></div>
+<div class="line"><span class="lineno">  229</span>    <span class="comment">// case we must bake a velocity grid whose bounds contain the full motion of the mesh. We do this by baking</span></div>
+<div class="line"><span class="lineno">  230</span>    <span class="comment">// two velocity grids, one for each motion sample, and then compositing them by taking the max value of</span></div>
+<div class="line"><span class="lineno">  231</span>    <span class="comment">// the grids.</span></div>
+<div class="line"><span class="lineno">  232</span>    <span class="keywordtype">size_t</span> motionSampleCount = mesh.mVertexBufferDesc.size();</div>
+<div class="line"><span class="lineno">  233</span> </div>
+<div class="line"><span class="lineno">  234</span>    <span class="comment">// The input velcity on the mesh is in units of ditsance / second. We must divide out the seconds to make</span></div>
+<div class="line"><span class="lineno">  235</span>    <span class="comment">// it in units of distance / frame.</span></div>
+<div class="line"><span class="lineno">  236</span>    <span class="keywordtype">float</span> invFps = motionBlurParams.getInvFps();</div>
+<div class="line"><span class="lineno">  237</span> </div>
+<div class="line"><span class="lineno">  238</span>    openvdb::VectorGrid::Ptr velocityGrid;</div>
+<div class="line"><span class="lineno">  239</span>    <span class="keywordflow">if</span> (mesh.mIndexBufferType == <a class="code hl_enumvalue" href="namespacemoonray_1_1geom_1_1internal.html#a1215cadd60f6693032b7e9430eea5a71a9bcd89070cae224dce305f5011659ef4">MeshIndexType::TRIANGLE</a>) {</div>
+<div class="line"><span class="lineno">  240</span>        <span class="comment">// first motion sample</span></div>
+<div class="line"><span class="lineno">  241</span>        velocityGrid = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a91280f96b27bd8aba017adb455582085">createTriMeshVelocityGrid</a>(interiorBandwidth, mesh, 0, invFps);</div>
+<div class="line"><span class="lineno">  242</span>        <span class="keywordflow">if</span> (motionSampleCount &gt; 1)</div>
+<div class="line"><span class="lineno">  243</span>        {</div>
+<div class="line"><span class="lineno">  244</span>            <span class="comment">// For volumes, there should only be two motion samples because motion blur is created</span></div>
+<div class="line"><span class="lineno">  245</span>            <span class="comment">// by velocity.</span></div>
+<div class="line"><span class="lineno">  246</span>            MNRY_ASSERT(motionSampleCount == 2);</div>
+<div class="line"><span class="lineno">  247</span>            <span class="comment">// second motion sample</span></div>
+<div class="line"><span class="lineno">  248</span>            openvdb::VectorGrid::Ptr secondVelocityGrid = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a91280f96b27bd8aba017adb455582085">createTriMeshVelocityGrid</a>(interiorBandwidth, mesh,</div>
+<div class="line"><span class="lineno">  249</span>                motionSampleCount - 1, invFps);</div>
+<div class="line"><span class="lineno">  250</span>            <span class="comment">// combine velocity grids by taking max value.</span></div>
+<div class="line"><span class="lineno">  251</span>            openvdb::tools::compMax(*velocityGrid, *secondVelocityGrid);</div>
+<div class="line"><span class="lineno">  252</span>        }</div>
+<div class="line"><span class="lineno">  253</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  254</span>        <span class="comment">// first motion sample</span></div>
+<div class="line"><span class="lineno">  255</span>        velocityGrid = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#ae5bc746e71fc9dc6aa5d585817dbf6d3">createQuadMeshVelocityGrid</a>(interiorBandwidth, mesh, 0, invFps);</div>
+<div class="line"><span class="lineno">  256</span>        <span class="keywordflow">if</span> (motionSampleCount &gt; 1)</div>
+<div class="line"><span class="lineno">  257</span>        {</div>
+<div class="line"><span class="lineno">  258</span>            <span class="comment">// For volumes, there should only be two motion samples because motion blur is created</span></div>
+<div class="line"><span class="lineno">  259</span>            <span class="comment">// by velocity.</span></div>
+<div class="line"><span class="lineno">  260</span>            MNRY_ASSERT(motionSampleCount == 2);</div>
+<div class="line"><span class="lineno">  261</span>            <span class="comment">// second motion sample</span></div>
+<div class="line"><span class="lineno">  262</span>            openvdb::VectorGrid::Ptr secondVelocityGrid = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#ae5bc746e71fc9dc6aa5d585817dbf6d3">createQuadMeshVelocityGrid</a>(interiorBandwidth, mesh,</div>
+<div class="line"><span class="lineno">  263</span>                motionSampleCount - 1, invFps);</div>
+<div class="line"><span class="lineno">  264</span>            <span class="comment">// combine velocity grids by taking max value.</span></div>
+<div class="line"><span class="lineno">  265</span>            openvdb::tools::compMax(*velocityGrid, *secondVelocityGrid);</div>
+<div class="line"><span class="lineno">  266</span>        }</div>
+<div class="line"><span class="lineno">  267</span>    }</div>
+<div class="line"><span class="lineno">  268</span> </div>
+<div class="line"><span class="lineno">  269</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a44ce23b2b4c958e0ee928cf6873f5cf0">mVdbVelocity</a>-&gt;setShutterValues(motionBlurParams.getShutterOpen(),</div>
+<div class="line"><span class="lineno">  270</span>        motionBlurParams.getShutterClose() - motionBlurParams.getShutterOpen());</div>
+<div class="line"><span class="lineno">  271</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a44ce23b2b4c958e0ee928cf6873f5cf0">mVdbVelocity</a>-&gt;setVelocityGrid(velocityGrid, volumeIds);</div>
+<div class="line"><span class="lineno">  272</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_mesh_html_a251b14c33a4de2a48f8e0577871c5a96"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a251b14c33a4de2a48f8e0577871c5a96">moonray::geom::internal::Mesh::getTessellatedMesh</a></div><div class="ttdeci">virtual void getTessellatedMesh(TessellatedMesh &amp;tessMesh) const =0</div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_mesh_html_a91280f96b27bd8aba017adb455582085"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a91280f96b27bd8aba017adb455582085">moonray::geom::internal::Mesh::createTriMeshVelocityGrid</a></div><div class="ttdeci">openvdb::VectorGrid::Ptr createTriMeshVelocityGrid(float interiorBandwidth, const TessellatedMesh &amp;mesh, size_t motionSample, float invFps)</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8cc_source.html#l00024">Mesh.cc:24</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_mesh_html_ae5bc746e71fc9dc6aa5d585817dbf6d3"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#ae5bc746e71fc9dc6aa5d585817dbf6d3">moonray::geom::internal::Mesh::createQuadMeshVelocityGrid</a></div><div class="ttdeci">openvdb::VectorGrid::Ptr createQuadMeshVelocityGrid(float interiorBandwidth, const TessellatedMesh &amp;mesh, size_t motionSample, float invFps)</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8cc_source.html#l00107">Mesh.cc:107</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_ad5b8644a92dcedda239e576044ba6ed2"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#ad5b8644a92dcedda239e576044ba6ed2">moonray::geom::internal::NamedPrimitive::getAttributes</a></div><div class="ttdeci">shading::Attributes * getAttributes() const</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00097">NamedPrimitive.h:97</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html_a44ce23b2b4c958e0ee928cf6873f5cf0"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a44ce23b2b4c958e0ee928cf6873f5cf0">moonray::geom::internal::Primitive::mVdbVelocity</a></div><div class="ttdeci">std::unique_ptr&lt; VDBVelocity &gt; mVdbVelocity</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8h_source.html#l00371">Primitive.h:371</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_standard_attributes_html_a256b76925eefd1a9cadcabc8d29f562b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_standard_attributes.html#a256b76925eefd1a9cadcabc8d29f562b">moonray::shading::StandardAttributes::sVelocity</a></div><div class="ttdeci">static TypedAttributeKey&lt; scene_rdl2::math::Vec3f &gt; sVelocity</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00156">AttributeKey.h:156</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a1215cadd60f6693032b7e9430eea5a71a9bcd89070cae224dce305f5011659ef4"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a1215cadd60f6693032b7e9430eea5a71a9bcd89070cae224dce305f5011659ef4">moonray::geom::internal::MeshIndexType::TRIANGLE</a></div><div class="ttdeci">@ TRIANGLE</div></div>
+<div class="ttc" id="anamespacemoonray_1_1mcrt__common_html_af58491a6a11e93bcbe77e8b1cef48097"><div class="ttname"><a href="namespacemoonray_1_1mcrt__common.html#af58491a6a11e93bcbe77e8b1cef48097">moonray::mcrt_common::getMaxNumTLS</a></div><div class="ttdeci">unsigned getMaxNumTLS()</div><div class="ttdef"><b>Definition:</b> <a href="_thread_local_state_8cc_source.html#l00400">ThreadLocalState.cc:400</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7404168ef050150186756f43f1a98fe1" name="a7404168ef050150186756f43f1a98fe1"></a>
@@ -999,7 +1462,20 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8cc_source.html#l00275">275</a> of file <a class="el" href="_mesh_8cc_source.html">Mesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  276</span>{</div>
+<div class="line"><span class="lineno">  277</span>    <span class="comment">// check if the part this face belongs to has the material assigned</span></div>
+<div class="line"><span class="lineno">  278</span>    <span class="keywordtype">int</span> assignmentId =</div>
+<div class="line"><span class="lineno">  279</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0b2d21ef3df121422a79526b079c580e">getType</a>() == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">LayerAssignmentId::Type::CONSTANT</a> ?</div>
+<div class="line"><span class="lineno">  280</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a7029086f3349b566ea752fd6f4a85d31">getConstId</a>() :</div>
+<div class="line"><span class="lineno">  281</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0e7e74cdce226e48699f4d43b79c1fd1">getVaryingId</a>()[faceId];</div>
+<div class="line"><span class="lineno">  282</span>    <span class="keywordflow">return</span> assignmentId != -1;</div>
+<div class="line"><span class="lineno">  283</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a0b2d21ef3df121422a79526b079c580e"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0b2d21ef3df121422a79526b079c580e">moonray::geom::LayerAssignmentId::getType</a></div><div class="ttdeci">Type getType() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00155">LayerAssignmentId.h:155</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a0e7e74cdce226e48699f4d43b79c1fd1"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0e7e74cdce226e48699f4d43b79c1fd1">moonray::geom::LayerAssignmentId::getVaryingId</a></div><div class="ttdeci">const ContainerType &amp; getVaryingId() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00166">LayerAssignmentId.h:166</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a7029086f3349b566ea752fd6f4a85d31"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a7029086f3349b566ea752fd6f4a85d31">moonray::geom::LayerAssignmentId::getConstId</a></div><div class="ttdeci">ValueType getConstId() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00160">LayerAssignmentId.h:160</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34a8d6b5cada83510220f59e00ce86d4d92">moonray::geom::LayerAssignmentId::Type::CONSTANT</a></div><div class="ttdeci">@ CONSTANT</div><div class="ttdoc">all sub-primitives share one assignment id</div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_a219a79e9a4079197f79aff19f5cf889e"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">moonray::geom::internal::NamedPrimitive::mLayerAssignmentId</a></div><div class="ttdeci">LayerAssignmentId mLayerAssignmentId</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00148">NamedPrimitive.h:148</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a53268c98dee54baade77678b6b1ca5d2" name="a53268c98dee54baade77678b6b1ca5d2"></a>
@@ -1042,8 +1518,11 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00345">345</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
+<p>Reimplemented in <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_open_subdiv_mesh.html#a49cecac3d768faba0617cb3b79fc4afa">moonray::geom::internal::OpenSubdivMesh</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_quad_mesh.html#a6d143b9c16e962cd524e407dae4a956c">moonray::geom::internal::QuadMesh</a>, and <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_tri_mesh.html#a3edb565f534c16ef26e89027112f8c25">moonray::geom::internal::TriMesh</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00345">345</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  346</span>                                                     {}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adc5d0319fe9b1cbd8d53f52554ab97a4" name="adc5d0319fe9b1cbd8d53f52554ab97a4"></a>
@@ -1111,7 +1590,18 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00289">289</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  291</span>    {</div>
+<div class="line"><span class="lineno">  292</span>        <span class="keyword">const</span> shading::Attributes* attributes = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#ad5b8644a92dcedda239e576044ba6ed2">getAttributes</a>();</div>
+<div class="line"><span class="lineno">  293</span>        MNRY_ASSERT(attributes-&gt;isSupported(key) &amp;&amp;</div>
+<div class="line"><span class="lineno">  294</span>            attributes-&gt;getRate(key) == <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc">shading::RATE_CONSTANT</a>);</div>
+<div class="line"><span class="lineno">  295</span>        <span class="keywordflow">if</span> (attributes-&gt;getTimeSampleCount(key) &gt; 1 &amp;&amp; !scene_rdl2::math::isZero(time)) {</div>
+<div class="line"><span class="lineno">  296</span>            <span class="keywordflow">return</span> attributes-&gt;getMotionBlurConstant(key, time);</div>
+<div class="line"><span class="lineno">  297</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  298</span>            <span class="keywordflow">return</span> attributes-&gt;getConstant(key);</div>
+<div class="line"><span class="lineno">  299</span>        }</div>
+<div class="line"><span class="lineno">  300</span>    }</div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc">moonray::shading::RATE_CONSTANT</a></div><div class="ttdeci">@ RATE_CONSTANT</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00025">PrimitiveAttribute.h:25</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af3370053e914905094485f40463c5ab2" name="af3370053e914905094485f40463c5ab2"></a>
@@ -1180,7 +1670,13 @@ template&lt;typename T &gt; </div>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a24b4f95921a7dbf8699cadd6130f2028">moonray::geom::internal::Primitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8cc_source.html#l00293">293</a> of file <a class="el" href="_mesh_8cc_source.html">Mesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  295</span>{</div>
+<div class="line"><span class="lineno">  296</span>    <span class="keywordtype">int</span> layerAssignmentId = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#adcad361b92ad30a1f4c8307392d3169d">getIntersectionAssignmentId</a>(ray.primID);</div>
+<div class="line"><span class="lineno">  297</span>    <span class="keyword">const</span> scene_rdl2::rdl2::Material *pMaterial = MNRY_VERIFY(pRdlLayer-&gt;lookupMaterial(layerAssignmentId));</div>
+<div class="line"><span class="lineno">  298</span>    <span class="keywordflow">return</span> pMaterial;</div>
+<div class="line"><span class="lineno">  299</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_adcad361b92ad30a1f4c8307392d3169d"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#adcad361b92ad30a1f4c8307392d3169d">moonray::geom::internal::NamedPrimitive::getIntersectionAssignmentId</a></div><div class="ttdeci">virtual int getIntersectionAssignmentId(int primID) const =0</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af054804dba2defe40578f32f86b8427d" name="af054804dba2defe40578f32f86b8427d"></a>
@@ -1207,7 +1703,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00145">145</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  146</span>    {</div>
+<div class="line"><span class="lineno">  147</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a6a4c1ac1f2244d72fdbb01869a10f89a">mIsNormalReversed</a>;</div>
+<div class="line"><span class="lineno">  148</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a53059b074baea03a95b12d22b9c72edb" name="a53059b074baea03a95b12d22b9c72edb"></a>
@@ -1234,7 +1733,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00160">160</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  161</span>    {</div>
+<div class="line"><span class="lineno">  162</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#ad1d079e4b3b02ad3d0b32ee0842459ed">mIsOrientationReversed</a>;</div>
+<div class="line"><span class="lineno">  163</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afdc8184ca6e4f337fdb8bd8c0f36e3e4" name="afdc8184ca6e4f337fdb8bd8c0f36e3e4"></a>
@@ -1261,7 +1763,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00130">130</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  131</span>    {</div>
+<div class="line"><span class="lineno">  132</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a9054ee41c29980d9664f885c928a9373">mIsSingleSided</a>;</div>
+<div class="line"><span class="lineno">  133</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a95f4a9e72db24bc5901f891499ff7bab" name="a95f4a9e72db24bc5901f891499ff7bab"></a>
@@ -1294,7 +1799,12 @@ template&lt;typename T &gt; </div>
 <p>Reimplemented in <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html#a4e1ed537ae500a02ff21fdc78a9e1789">moonray::geom::internal::SubdMesh</a>, <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_open_subdiv_mesh.html#ad1c3798eed9e03d7aa05918e0dca9de7">moonray::geom::internal::OpenSubdivMesh</a>, and <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#aefeb2e4f93fc2290d346c5ac12c0bd95">moonray::geom::internal::PolyMesh</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8cc_source.html#l00287">287</a> of file <a class="el" href="_mesh_8cc_source.html">Mesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  288</span>{</div>
+<div class="line"><span class="lineno">  289</span>    <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a47e40397ac90ac59cb45650f2d0d9183">Mesh</a>) - <span class="keyword">sizeof</span>(NamedPrimitive) + <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#adf17c743e986930c5ae8dc1613ecf124">NamedPrimitive::getMemory</a>();</div>
+<div class="line"><span class="lineno">  290</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_mesh_html_a47e40397ac90ac59cb45650f2d0d9183"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a47e40397ac90ac59cb45650f2d0d9183">moonray::geom::internal::Mesh::Mesh</a></div><div class="ttdeci">Mesh(LayerAssignmentId &amp;&amp;layerAssignmentId)</div><div class="ttdoc">Constructor / Destructor.</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00050">Mesh.h:50</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_adf17c743e986930c5ae8dc1613ecf124"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#adf17c743e986930c5ae8dc1613ecf124">moonray::geom::internal::NamedPrimitive::getMemory</a></div><div class="ttdeci">virtual size_t getMemory() const override</div><div class="ttdoc">Get the memory usage of this Primitive in byte.</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00060">NamedPrimitive.h:60</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afb1d52b5282b394beba4656a68fa533a" name="afb1d52b5282b394beba4656a68fa533a"></a>
@@ -1426,7 +1936,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00098">98</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   99</span>    {</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a55c0fdb328704effd86d2b473e109250">mPrimToRender</a>;</div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7534dd28e8b6963be1291f55a3c877a1" name="a7534dd28e8b6963be1291f55a3c877a1"></a>
@@ -1457,7 +1970,11 @@ template&lt;typename T &gt; </div>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a35d9ff856169bb03c72de838c935af0f">moonray::geom::internal::Primitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00093">93</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   94</span>    {</div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a15e7f3ea4dd4d6813a9e72acf1c0fff1a6630ff195f66ac7a32ae8388625a853b">POLYMESH</a>;</div>
+<div class="line"><span class="lineno">   96</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html_a15e7f3ea4dd4d6813a9e72acf1c0fff1a6630ff195f66ac7a32ae8388625a853b"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a15e7f3ea4dd4d6813a9e72acf1c0fff1a6630ff195f66ac7a32ae8388625a853b">moonray::geom::internal::Primitive::POLYMESH</a></div><div class="ttdeci">@ POLYMESH</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8h_source.html#l00091">Primitive.h:91</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afe0baac2be85dbde94eb9c41fd6e85be" name="afe0baac2be85dbde94eb9c41fd6e85be"></a>
@@ -1503,7 +2020,18 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00303">303</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  305</span>    {</div>
+<div class="line"><span class="lineno">  306</span>        <span class="keyword">const</span> shading::Attributes* attributes = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#ad5b8644a92dcedda239e576044ba6ed2">getAttributes</a>();</div>
+<div class="line"><span class="lineno">  307</span>        MNRY_ASSERT(attributes-&gt;isSupported(key) &amp;&amp;</div>
+<div class="line"><span class="lineno">  308</span>            attributes-&gt;getRate(key) == <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aac46b806eb0f0e9e3a4bd36b5e3b973c2">shading::RATE_UNIFORM</a>);</div>
+<div class="line"><span class="lineno">  309</span>        <span class="keywordflow">if</span> (attributes-&gt;getTimeSampleCount(key) &gt; 1 &amp;&amp; !scene_rdl2::math::isZero(time)) {</div>
+<div class="line"><span class="lineno">  310</span>            <span class="keywordflow">return</span> attributes-&gt;getMotionBlurUniform(key, fid, time);</div>
+<div class="line"><span class="lineno">  311</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  312</span>            <span class="keywordflow">return</span> attributes-&gt;getUniform(key, fid);</div>
+<div class="line"><span class="lineno">  313</span>        }</div>
+<div class="line"><span class="lineno">  314</span>    }</div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a672e4fc4798efc5e148e0d6ba1e8198aac46b806eb0f0e9e3a4bd36b5e3b973c2"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aac46b806eb0f0e9e3a4bd36b5e3b973c2">moonray::shading::RATE_UNIFORM</a></div><div class="ttdeci">@ RATE_UNIFORM</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00026">PrimitiveAttribute.h:26</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adad9c484982bbb87d36648db1d7af5f0" name="adad9c484982bbb87d36648db1d7af5f0"></a>
@@ -1549,7 +2077,18 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00317">317</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  319</span>    {</div>
+<div class="line"><span class="lineno">  320</span>        <span class="keyword">const</span> shading::Attributes* attributes = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#ad5b8644a92dcedda239e576044ba6ed2">getAttributes</a>();</div>
+<div class="line"><span class="lineno">  321</span>        MNRY_ASSERT(attributes-&gt;isSupported(key) &amp;&amp;</div>
+<div class="line"><span class="lineno">  322</span>            attributes-&gt;getRate(key) == <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aa1c5806ff92f3c93d36155f7fff70a954">shading::RATE_VARYING</a>);</div>
+<div class="line"><span class="lineno">  323</span>        <span class="keywordflow">if</span> (attributes-&gt;getTimeSampleCount(key) &gt; 1 &amp;&amp; !scene_rdl2::math::isZero(time)) {</div>
+<div class="line"><span class="lineno">  324</span>            <span class="keywordflow">return</span> attributes-&gt;getMotionBlurVarying(key, vid, time);</div>
+<div class="line"><span class="lineno">  325</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  326</span>            <span class="keywordflow">return</span> attributes-&gt;getVarying(key, vid);</div>
+<div class="line"><span class="lineno">  327</span>        }</div>
+<div class="line"><span class="lineno">  328</span>    }</div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a672e4fc4798efc5e148e0d6ba1e8198aa1c5806ff92f3c93d36155f7fff70a954"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aa1c5806ff92f3c93d36155f7fff70a954">moonray::shading::RATE_VARYING</a></div><div class="ttdeci">@ RATE_VARYING</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00027">PrimitiveAttribute.h:27</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad32799577c353cac9f24867ea9a3b964" name="ad32799577c353cac9f24867ea9a3b964"></a>
@@ -1639,7 +2178,18 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00331">331</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  333</span>    {</div>
+<div class="line"><span class="lineno">  334</span>        <span class="keyword">const</span> shading::Attributes* attributes = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#ad5b8644a92dcedda239e576044ba6ed2">getAttributes</a>();</div>
+<div class="line"><span class="lineno">  335</span>        MNRY_ASSERT(attributes-&gt;isSupported(key) &amp;&amp;</div>
+<div class="line"><span class="lineno">  336</span>            attributes-&gt;getRate(key) == <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aae24dbc59b66badb50d493a8f2fd01e65">shading::RATE_VERTEX</a>);</div>
+<div class="line"><span class="lineno">  337</span>        <span class="keywordflow">if</span> (attributes-&gt;getTimeSampleCount(key) &gt; 1 &amp;&amp; !scene_rdl2::math::isZero(time)) {</div>
+<div class="line"><span class="lineno">  338</span>            <span class="keywordflow">return</span> attributes-&gt;getMotionBlurVertex(key, vid, time);</div>
+<div class="line"><span class="lineno">  339</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  340</span>            <span class="keywordflow">return</span> attributes-&gt;getVertex(key, vid);</div>
+<div class="line"><span class="lineno">  341</span>        }</div>
+<div class="line"><span class="lineno">  342</span>    }</div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a672e4fc4798efc5e148e0d6ba1e8198aae24dbc59b66badb50d493a8f2fd01e65"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aae24dbc59b66badb50d493a8f2fd01e65">moonray::shading::RATE_VERTEX</a></div><div class="ttdeci">@ RATE_VERTEX</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00029">PrimitiveAttribute.h:29</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a19cf26f7e16b3068957c18090c2aa464" name="a19cf26f7e16b3068957c18090c2aa464"></a>
@@ -1775,7 +2325,26 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8cc_source.html#l00428">428</a> of file <a class="el" href="_mesh_8cc_source.html">Mesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  433</span>{</div>
+<div class="line"><span class="lineno">  434</span>    <span class="keyword">const</span> scene_rdl2::math::BBox2i roiXY(scene_rdl2::math::Vec2i(floor(roiST.lower.x * (width - 1)),</div>
+<div class="line"><span class="lineno">  435</span>                                         floor(roiST.lower.y * (height - 1))),</div>
+<div class="line"><span class="lineno">  436</span>                             scene_rdl2::math::Vec2i(ceil(roiST.upper.x * (width - 1)),</div>
+<div class="line"><span class="lineno">  437</span>                                         ceil(roiST.upper.y * (height - 1))));</div>
+<div class="line"><span class="lineno">  438</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = roiXY.lower.y; y &lt;= roiXY.upper.y; ++y) {</div>
+<div class="line"><span class="lineno">  439</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> t = float(y) / (height - 1);</div>
+<div class="line"><span class="lineno">  440</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = roiXY.lower.x; x &lt;= roiXY.upper.x; ++x) {</div>
+<div class="line"><span class="lineno">  441</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> st(<span class="keywordtype">float</span>(x) / (width - 1), t);</div>
+<div class="line"><span class="lineno">  442</span>            MNRY_ASSERT(posResult);</div>
+<div class="line"><span class="lineno">  443</span>            <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a152ff20265a172b1706124804dd6710c">Vec3fa</a> *pos = posResult + y * width + x;</div>
+<div class="line"><span class="lineno">  444</span>            <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> *nrm = nrmResult? nrmResult + y * width + x : <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  445</span>            <a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a9ebe607169398ec855e21c333c93e5b6">interpolatePosInTri</a>(st, a, b, c, posA, posB, posC, nrmA, nrmB, nrmC, pos, nrm);</div>
+<div class="line"><span class="lineno">  446</span>        }</div>
+<div class="line"><span class="lineno">  447</span>    }</div>
+<div class="line"><span class="lineno">  448</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a9ebe607169398ec855e21c333c93e5b6"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a9ebe607169398ec855e21c333c93e5b6">moonray::geom::internal::interpolatePosInTri</a></div><div class="ttdeci">static void interpolatePosInTri(const Vec2f &amp;p, const Vec2f &amp;a, const Vec2f &amp;b, const Vec2f &amp;c, const Vec3f &amp;posA, const Vec3f &amp;posB, const Vec3f &amp;posC, const Vec3f *nrmA, const Vec3f *nrmB, const Vec3f *nrmC, Vec3fa *posResult, Vec3f *nrmResult)</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8cc_source.html#l00365">Mesh.cc:365</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a152ff20265a172b1706124804dd6710c"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a152ff20265a172b1706124804dd6710c">moonray::geom::Vec3fa</a></div><div class="ttdeci">scene_rdl2::math::Vec3fa Vec3fa</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00040">Types.h:40</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a8ff976ca38d834d434f1d00f2a03359b"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">moonray::geom::Vec2f</a></div><div class="ttdeci">scene_rdl2::math::Vec2f Vec2f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00038">Types.h:38</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a97dff6fbcb02a1a8a9664fdbcf84a49b" name="a97dff6fbcb02a1a8a9664fdbcf84a49b"></a>
@@ -1819,7 +2388,18 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8cc_source.html#l00302">302</a> of file <a class="el" href="_mesh_8cc_source.html">Mesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  305</span>{</div>
+<div class="line"><span class="lineno">  306</span>    <span class="keywordtype">size_t</span> faceCount = indices.size() / faceVertexCount;</div>
+<div class="line"><span class="lineno">  307</span>    <span class="keywordtype">size_t</span> indexOffset = 0;</div>
+<div class="line"><span class="lineno">  308</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; faceCount; i++) {</div>
+<div class="line"><span class="lineno">  309</span>        std::reverse(indices.begin() + indexOffset,</div>
+<div class="line"><span class="lineno">  310</span>            indices.begin() + indexOffset + faceVertexCount);</div>
+<div class="line"><span class="lineno">  311</span>        indexOffset += faceVertexCount;</div>
+<div class="line"><span class="lineno">  312</span>    }</div>
+<div class="line"><span class="lineno">  313</span> </div>
+<div class="line"><span class="lineno">  314</span>    attributes-&gt;reverseFaceVaryingAttributes();</div>
+<div class="line"><span class="lineno">  315</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a32e13d4cf2aef4adf91d35678bcefe8e" name="a32e13d4cf2aef4adf91d35678bcefe8e"></a>
@@ -1863,7 +2443,18 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8cc_source.html#l00318">318</a> of file <a class="el" href="_mesh_8cc_source.html">Mesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  321</span>{</div>
+<div class="line"><span class="lineno">  322</span>    <span class="keywordtype">size_t</span> faceCount = faceVertexCount.size();</div>
+<div class="line"><span class="lineno">  323</span>    <span class="keywordtype">size_t</span> indexOffset = 0;</div>
+<div class="line"><span class="lineno">  324</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; faceCount; i++) {</div>
+<div class="line"><span class="lineno">  325</span>        MNRY_ASSERT(faceVertexCount[i] == 3 || faceVertexCount[i] == 4);</div>
+<div class="line"><span class="lineno">  326</span>        std::reverse(indices.begin() + indexOffset, indices.begin() + indexOffset + faceVertexCount[i]);</div>
+<div class="line"><span class="lineno">  327</span>        indexOffset += faceVertexCount[i];</div>
+<div class="line"><span class="lineno">  328</span>    }</div>
+<div class="line"><span class="lineno">  329</span> </div>
+<div class="line"><span class="lineno">  330</span>    attributes-&gt;reverseFaceVaryingAttributes();</div>
+<div class="line"><span class="lineno">  331</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5a585ebd0a6c348dcc18efc70badcff1" name="a5a585ebd0a6c348dcc18efc70badcff1"></a>
@@ -1891,7 +2482,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00170">170</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  170</span>                                               {</div>
+<div class="line"><span class="lineno">  171</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#af6c4798f1e27e1330d1efb6c65151b13">mAdaptiveError</a> = adaptiveError;</div>
+<div class="line"><span class="lineno">  172</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7d6ede18fe2c5d88256f76dd8fd076ce" name="a7d6ede18fe2c5d88256f76dd8fd076ce"></a>
@@ -1919,7 +2513,16 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00135">135</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  136</span>    {</div>
+<div class="line"><span class="lineno">  137</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#aff7e0863ab950859ba9df6c9da9fe201">mIsMeshFinalized</a>) {</div>
+<div class="line"><span class="lineno">  138</span>            scene_rdl2::logging::Logger::warn(<span class="stringliteral">&quot;Mesh \&#39;&quot;</span> + <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#aac4b291c9b3f21021c725213606c1494">getName</a>() + <span class="stringliteral">&quot;\&#39; cannot reverse &quot;</span></div>
+<div class="line"><span class="lineno">  139</span>                         <span class="stringliteral">&quot;normals because it is already finalized.&quot;</span>);</div>
+<div class="line"><span class="lineno">  140</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  141</span>        }</div>
+<div class="line"><span class="lineno">  142</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a6a4c1ac1f2244d72fdbb01869a10f89a">mIsNormalReversed</a> = isNormalReversed;</div>
+<div class="line"><span class="lineno">  143</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_aac4b291c9b3f21021c725213606c1494"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#aac4b291c9b3f21021c725213606c1494">moonray::geom::internal::NamedPrimitive::getName</a></div><div class="ttdeci">const std::string &amp; getName() const</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00055">NamedPrimitive.h:55</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aede01ed08998d9de4bf1f0cd97fcfadb" name="aede01ed08998d9de4bf1f0cd97fcfadb"></a>
@@ -1947,7 +2550,16 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00150">150</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  151</span>    {</div>
+<div class="line"><span class="lineno">  152</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#aff7e0863ab950859ba9df6c9da9fe201">mIsMeshFinalized</a>) {</div>
+<div class="line"><span class="lineno">  153</span>            scene_rdl2::logging::Logger::warn(<span class="stringliteral">&quot;Mesh \&#39;&quot;</span> + <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#aac4b291c9b3f21021c725213606c1494">getName</a>() + <span class="stringliteral">&quot;\&#39; cannot reverse &quot;</span></div>
+<div class="line"><span class="lineno">  154</span>                         <span class="stringliteral">&quot;orientation because it is already finalized.&quot;</span>);</div>
+<div class="line"><span class="lineno">  155</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  156</span>        }</div>
+<div class="line"><span class="lineno">  157</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#ad1d079e4b3b02ad3d0b32ee0842459ed">mIsOrientationReversed</a> = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a97dff6fbcb02a1a8a9664fdbcf84a49b">reverseOrientation</a>;</div>
+<div class="line"><span class="lineno">  158</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_mesh_html_a97dff6fbcb02a1a8a9664fdbcf84a49b"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a97dff6fbcb02a1a8a9664fdbcf84a49b">moonray::geom::internal::Mesh::reverseOrientation</a></div><div class="ttdeci">static void reverseOrientation(const size_t faceVertexCount, std::vector&lt; uint32_t &gt; &amp;indices, std::unique_ptr&lt; shading::Attributes &gt; &amp;attributes)</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8cc_source.html#l00302">Mesh.cc:302</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aeb9a99e25e85ee7aedec8d1294a296d4" name="aeb9a99e25e85ee7aedec8d1294a296d4"></a>
@@ -1975,7 +2587,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00125">125</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  126</span>    {</div>
+<div class="line"><span class="lineno">  127</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a9054ee41c29980d9664f885c928a9373">mIsSingleSided</a> = isSingleSided;</div>
+<div class="line"><span class="lineno">  128</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad6ee6f38674876211a07d012b11b3848" name="ad6ee6f38674876211a07d012b11b3848"></a>
@@ -2005,7 +2620,10 @@ template&lt;typename T &gt; </div>
 <p>Reimplemented in <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_open_subdiv_mesh.html#adde86433c4f5b1729744bf3e950c417c">moonray::geom::internal::OpenSubdivMesh</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8h_source.html#l00165">165</a> of file <a class="el" href="_mesh_8h_source.html">Mesh.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  166</span>    {</div>
+<div class="line"><span class="lineno">  167</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#abe84fde6e5beb1e04695376ea6fbe652">mMeshResolution</a> = scene_rdl2::math::max(1, meshResolution);</div>
+<div class="line"><span class="lineno">  168</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a30ac5afb45095834a3d6952403cca749" name="a30ac5afb45095834a3d6952403cca749"></a>
@@ -2111,7 +2729,21 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mesh_8cc_source.html#l00451">451</a> of file <a class="el" href="_mesh_8cc_source.html">Mesh.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  452</span>{</div>
+<div class="line"><span class="lineno">  453</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> minS = (udim - 1001) % 10;</div>
+<div class="line"><span class="lineno">  454</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> minT = (udim - 1001) / 10;</div>
+<div class="line"><span class="lineno">  455</span>    <span class="keywordflow">if</span> (st.x &gt;= minS &amp;&amp; st.x &lt;= minS + 1 &amp;&amp;</div>
+<div class="line"><span class="lineno">  456</span>        st.y &gt;= minT &amp;&amp; st.y &lt;= minT + 1) {</div>
+<div class="line"><span class="lineno">  457</span>        <span class="comment">// accept it</span></div>
+<div class="line"><span class="lineno">  458</span>        st.x -= minS;</div>
+<div class="line"><span class="lineno">  459</span>        st.y -= minT;</div>
+<div class="line"><span class="lineno">  460</span>        st.x = scene_rdl2::math::clamp(st.x);</div>
+<div class="line"><span class="lineno">  461</span>        st.y = scene_rdl2::math::clamp(st.y);</div>
+<div class="line"><span class="lineno">  462</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  463</span>    }</div>
+<div class="line"><span class="lineno">  464</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  465</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7961fbb5e848cf4919f513884fad6bf3" name="a7961fbb5e848cf4919f513884fad6bf3"></a>
@@ -2326,9 +2958,13 @@ template&lt;typename T &gt; </div>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/geom/prim/<a class="el" href="_mesh_8cc_source.html">Mesh.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html">Mesh</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

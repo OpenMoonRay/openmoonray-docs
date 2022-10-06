@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,28 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_e8636fe16f0c9a46fe2eb47f132af4e0.html">dso</a></li><li class="navelem"><a class="el" href="dir_04804282e0548e8d8ab2caee9c3b849d.html">material</a></li><li class="navelem"><a class="el" href="dir_42a1ba394b3b0cb371265439c3bb8f65.html">UsdPreviewSurface</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_usd_preview_surface_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">UsdPreviewSurface.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -56,20 +74,142 @@ $(function() {
 </div>
 <p><a href="_usd_preview_surface_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceanonymous__namespace_02_usd_preview_surface_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02_usd_preview_surface_8cc_03.html">anonymous_namespace{UsdPreviewSurface.cc}</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a90aaf6b745f5febfd66dd5da09b72c00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02_usd_preview_surface_8cc_03.html#a90aaf6b745f5febfd66dd5da09b72c00">anonymous_namespace{UsdPreviewSurface.cc}::addMirrorDielectricLobe</a> (<a class="el" href="classmoonray_1_1shading_1_1_bsdf_builder.html">BsdfBuilder</a> &amp;bsdfBuilder, const scene_rdl2::math::Vec3f &amp;N, const float <a class="el" href="_ray_switch_material_8cc.html#a2c3d7201cc33b39ba638e0d97a3f54e3">ior</a>, const float weight, const float opacity, const int reflectionLabel=aovSpecular, const int transmissionLabel=aovSpecularTransmission, const ispc::BsdfBuilderBehavior behavior=ispc::BSDFBUILDER_PHYSICAL)</td></tr>
+<tr class="separator:a90aaf6b745f5febfd66dd5da09b72c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d745ec548c046fadaedc3420277d2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02_usd_preview_surface_8cc_03.html#a22d745ec548c046fadaedc3420277d2b">anonymous_namespace{UsdPreviewSurface.cc}::addMicrofacetDielectricLobe</a> (<a class="el" href="classmoonray_1_1shading_1_1_bsdf_builder.html">BsdfBuilder</a> &amp;bsdfBuilder, const scene_rdl2::math::Vec3f &amp;N, const float <a class="el" href="_ray_switch_material_8cc.html#a2c3d7201cc33b39ba638e0d97a3f54e3">ior</a>, const float roughness, const float weight, const float opacity, const int reflectionLabel=aovSpecular, const int transmissionLabel=aovSpecularTransmission, const ispc::BsdfBuilderBehavior behavior=ispc::BSDFBUILDER_PHYSICAL)</td></tr>
+<tr class="separator:a22d745ec548c046fadaedc3420277d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff6a6f0cc99dcc16d2844a6f7f7051c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02_usd_preview_surface_8cc_03.html#a3ff6a6f0cc99dcc16d2844a6f7f7051c">anonymous_namespace{UsdPreviewSurface.cc}::addMirrorConductorLobe</a> (<a class="el" href="classmoonray_1_1shading_1_1_bsdf_builder.html">BsdfBuilder</a> &amp;bsdfBuilder, const scene_rdl2::math::Vec3f &amp;N, const scene_rdl2::math::Color &amp;color, const float weight, const int label=aovSpecular, const ispc::BsdfBuilderBehavior behavior=ispc::BSDFBUILDER_PHYSICAL)</td></tr>
+<tr class="separator:a3ff6a6f0cc99dcc16d2844a6f7f7051c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700ad8488c2710c3075086e86a3c1f6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02_usd_preview_surface_8cc_03.html#a700ad8488c2710c3075086e86a3c1f6a">anonymous_namespace{UsdPreviewSurface.cc}::addMicrofacetConductorLobe</a> (<a class="el" href="classmoonray_1_1shading_1_1_bsdf_builder.html">BsdfBuilder</a> &amp;bsdfBuilder, const scene_rdl2::math::Vec3f &amp;N, const scene_rdl2::math::Color &amp;color, const float roughness, const float weight, const int label=aovSpecular, const ispc::BsdfBuilderBehavior behavior=ispc::BSDFBUILDER_PHYSICAL)</td></tr>
+<tr class="separator:a700ad8488c2710c3075086e86a3c1f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90271f7282921559106b6fb2ee4e2b7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_usd_preview_surface_8cc.html#a90271f7282921559106b6fb2ee4e2b7f">UsdPreviewSurface</a> (const scene_rdl2::rdl2::SceneClass &amp;sceneClass, const std::string &amp;name)</td></tr>
 <tr class="separator:a90271f7282921559106b6fb2ee4e2b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e90c7ec0d81294fe9a92c8715748d3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_usd_preview_surface_8cc.html#a5e90c7ec0d81294fe9a92c8715748d3c">~UsdPreviewSurface</a> ()</td></tr>
 <tr class="separator:a5e90c7ec0d81294fe9a92c8715748d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_usd_preview_surface_8cc.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
 <tr class="separator:a44137bb65de2396875934e48a6ee5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace9c5b20bbf47da39e211ce3fac3864d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_usd_preview_surface_8cc.html#ace9c5b20bbf47da39e211ce3fac3864d">shade</a> (const scene_rdl2::rdl2::Material *self, <a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls, const <a class="el" href="classmoonray_1_1shading_1_1_state.html">State</a> &amp;state, <a class="el" href="classmoonray_1_1shading_1_1_bsdf_builder.html">BsdfBuilder</a> &amp;bsdfBuilder)</td></tr>
+<tr class="separator:ace9c5b20bbf47da39e211ce3fac3864d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ff6ebde9d2e1189e2d6397db18f6f7"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_usd_preview_surface_8cc.html#af5ff6ebde9d2e1189e2d6397db18f6f7">presence</a> (const scene_rdl2::rdl2::Material *self, <a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls, const <a class="el" href="classmoonray_1_1shading_1_1_state.html">moonray::shading::State</a> &amp;state)</td></tr>
+<tr class="separator:af5ff6ebde9d2e1189e2d6397db18f6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aedd37ef31167392aa7cff09d990ad8bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_usd_preview_surface_8cc.html#a90271f7282921559106b6fb2ee4e2b7f">ispc::UsdPreviewSurface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_usd_preview_surface_8cc.html#aedd37ef31167392aa7cff09d990ad8bc">mIspc</a></td></tr>
+<tr class="separator:aedd37ef31167392aa7cff09d990ad8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Scott Cegielski </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="_usd_preview_surface_8cc_source.html">UsdPreviewSurface.cc</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="af5ff6ebde9d2e1189e2d6397db18f6f7" name="af5ff6ebde9d2e1189e2d6397db18f6f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ff6ebde9d2e1189e2d6397db18f6f7">&#9670;&#160;</a></span>presence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float UsdPreviewSurface::presence </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::rdl2::Material *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *&#160;</td>
+          <td class="paramname"><em>tls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_state.html">moonray::shading::State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_usd_preview_surface_8cc_source.html#l00137">137</a> of file <a class="el" href="_usd_preview_surface_8cc_source.html">UsdPreviewSurface.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  140</span>{</div>
+<div class="line"><span class="lineno">  141</span>    <span class="keyword">const</span> <a class="code hl_function" href="_usd_preview_surface_8cc.html#a90271f7282921559106b6fb2ee4e2b7f">UsdPreviewSurface</a>* me = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code hl_function" href="_usd_preview_surface_8cc.html#a90271f7282921559106b6fb2ee4e2b7f">UsdPreviewSurface</a>*<span class="keyword">&gt;</span>(self);</div>
+<div class="line"><span class="lineno">  142</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> opacityThreshold = <a class="code hl_function" href="namespacemoonray_1_1shading.html#a31260995e0c0e5a629cad3185e5279d0">evalFloat</a>(me, attrOpacityThreshold, tls, state);</div>
+<div class="line"><span class="lineno">  143</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> opacity = <a class="code hl_function" href="namespacemoonray_1_1shading.html#a31260995e0c0e5a629cad3185e5279d0">evalFloat</a>(me, attrOpacity, tls, state);</div>
+<div class="line"><span class="lineno">  144</span>    <span class="keywordflow">return</span> opacity &gt;= opacityThreshold ? 1.0f : 0.0f;</div>
+<div class="line"><span class="lineno">  145</span>}</div>
+<div class="ttc" id="a_usd_preview_surface_8cc_html_a90271f7282921559106b6fb2ee4e2b7f"><div class="ttname"><a href="_usd_preview_surface_8cc.html#a90271f7282921559106b6fb2ee4e2b7f">UsdPreviewSurface</a></div><div class="ttdeci">UsdPreviewSurface(const scene_rdl2::rdl2::SceneClass &amp;sceneClass, const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="_usd_preview_surface_8cc_source.html#l00122">UsdPreviewSurface.cc:122</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a31260995e0c0e5a629cad3185e5279d0"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a31260995e0c0e5a629cad3185e5279d0">moonray::shading::evalFloat</a></div><div class="ttdeci">finline float evalFloat(const scene_rdl2::rdl2::Shader *const obj, const scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; &amp;valueKey, shading::TLState *tls, const State &amp;state)</div><div class="ttdoc">Same as evalColor but for floats.</div><div class="ttdef"><b>Definition:</b> <a href="_eval_attribute_8h_source.html#l00204">EvalAttribute.h:204</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ace9c5b20bbf47da39e211ce3fac3864d" name="ace9c5b20bbf47da39e211ce3fac3864d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace9c5b20bbf47da39e211ce3fac3864d">&#9670;&#160;</a></span>shade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void shade </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::rdl2::Material *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *&#160;</td>
+          <td class="paramname"><em>tls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_state.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_builder.html">BsdfBuilder</a> &amp;&#160;</td>
+          <td class="paramname"><em>bsdfBuilder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a44137bb65de2396875934e48a6ee5099" name="a44137bb65de2396875934e48a6ee5099"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44137bb65de2396875934e48a6ee5099">&#9670;&#160;</a></span>update()</h2>
 
@@ -122,7 +262,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_usd_preview_surface_8cc_source.html#l00122">122</a> of file <a class="el" href="_usd_preview_surface_8cc_source.html">UsdPreviewSurface.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  123</span>                                                                            :</div>
+<div class="line"><span class="lineno">  124</span>    Parent(sceneClass, name)</div>
+<div class="line"><span class="lineno">  125</span>{</div>
+<div class="line"><span class="lineno">  126</span>    mShadeFunc = UsdPreviewSurface::shade;</div>
+<div class="line"><span class="lineno">  127</span>    mShadeFuncv = (scene_rdl2::rdl2::ShadeFuncv) ispc::UsdPreviewSurface_getShadeFunc();</div>
+<div class="line"><span class="lineno">  128</span>    mPresenceFunc = UsdPreviewSurface::presence;</div>
+<div class="line"><span class="lineno">  129</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5e90c7ec0d81294fe9a92c8715748d3c" name="a5e90c7ec0d81294fe9a92c8715748d3c"></a>
@@ -141,13 +288,43 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_usd_preview_surface_8cc_source.html#l00104">104</a> of file <a class="el" href="_usd_preview_surface_8cc_source.html">UsdPreviewSurface.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  104</span>{ }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aedd37ef31167392aa7cff09d990ad8bc" name="aedd37ef31167392aa7cff09d990ad8bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedd37ef31167392aa7cff09d990ad8bc">&#9670;&#160;</a></span>mIspc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_usd_preview_surface_8cc.html#a90271f7282921559106b6fb2ee4e2b7f">ispc::UsdPreviewSurface</a> mIspc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_usd_preview_surface_8cc_source.html#l00118">118</a> of file <a class="el" href="_usd_preview_surface_8cc_source.html">UsdPreviewSurface.cc</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_6a52a9733426c3f6f80e6f7bd53e6965.html">dso</a></li><li class="navelem"><a class="el" href="dir_7e36e2561e5e17b014d83019c50ecdc0.html">material</a></li><li class="navelem"><a class="el" href="dir_e71b21ea81c750a93668b0d29e16e5b8.html">UsdPreviewSurface</a></li><li class="navelem"><a class="el" href="_usd_preview_surface_8cc.html">UsdPreviewSurface.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

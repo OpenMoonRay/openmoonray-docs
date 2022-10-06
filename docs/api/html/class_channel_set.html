@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,6 +43,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_channel_set.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -60,7 +80,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aed072768a556a5b78535e245b8e999c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9653db76fb5689ca6d82411e279fe01a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel_set.html#a9653db76fb5689ca6d82411e279fe01a">ChannelSet</a> (const <a class="el" href="class_channel_set.html">ChannelSet</a> &amp;)</td></tr>
 <tr class="separator:a9653db76fb5689ca6d82411e279fe01a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7079c3fdea8f4c2425fbd4c1a6b323ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel_set.html#a7079c3fdea8f4c2425fbd4c1a6b323ff">ChannelSet</a> (<a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> a, <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> b=Chan_Invalid, <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> c=Chan_Invalid, <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> d=Chan_Invalid, <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> e=Chan_Invalid)</td></tr>
+<tr class="memitem:a7079c3fdea8f4c2425fbd4c1a6b323ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel_set.html#a7079c3fdea8f4c2425fbd4c1a6b323ff">ChannelSet</a> (<a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> a, <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> b=<a class="el" href="_dcx_channel_set_8h.html#a4f56a492fb3b039cc7dfcca31cb92ab7">Chan_Invalid</a>, <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> c=<a class="el" href="_dcx_channel_set_8h.html#a4f56a492fb3b039cc7dfcca31cb92ab7">Chan_Invalid</a>, <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> d=<a class="el" href="_dcx_channel_set_8h.html#a4f56a492fb3b039cc7dfcca31cb92ab7">Chan_Invalid</a>, <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> e=<a class="el" href="_dcx_channel_set_8h.html#a4f56a492fb3b039cc7dfcca31cb92ab7">Chan_Invalid</a>)</td></tr>
 <tr class="separator:a7079c3fdea8f4c2425fbd4c1a6b323ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c114c030e9a15f881172c23befc4cfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_channel_set.html">ChannelSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel_set.html#a1c114c030e9a15f881172c23befc4cfe">operator=</a> (const <a class="el" href="class_channel_set.html">ChannelSet</a> &amp;)</td></tr>
 <tr class="separator:a1c114c030e9a15f881172c23befc4cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,7 +189,10 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00392">392</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  392</span>: <a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>(), <a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a>(0) {}</div>
+<div class="ttc" id="aclass_channel_set_html_a8b22b0b82c10cb1a3683a0da49644935"><div class="ttname"><a href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">ChannelSet::m_mask</a></div><div class="ttdeci">ChannelIdxSet m_mask</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00288">DcxChannelSet.h:288</a></div></div>
+<div class="ttc" id="aclass_channel_set_html_ae3f5797777defe0e539fbe8f820f8911"><div class="ttname"><a href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">ChannelSet::m_last</a></div><div class="ttdeci">ChannelIdx m_last</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00289">DcxChannelSet.h:289</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9653db76fb5689ca6d82411e279fe01a" name="a9653db76fb5689ca6d82411e279fe01a"></a>
@@ -197,7 +220,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00393">393</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  393</span>: <a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>(b.<a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>), <a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a>(b.<a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a>) {}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7079c3fdea8f4c2425fbd4c1a6b323ff" name="a7079c3fdea8f4c2425fbd4c1a6b323ff"></a>
@@ -219,25 +243,25 @@ Friends</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td>
-          <td class="paramname"><em>b</em> = <code>Chan_Invalid</code>, </td>
+          <td class="paramname"><em>b</em> = <code><a class="el" href="_dcx_channel_set_8h.html#a4f56a492fb3b039cc7dfcca31cb92ab7">Chan_Invalid</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td>
-          <td class="paramname"><em>c</em> = <code>Chan_Invalid</code>, </td>
+          <td class="paramname"><em>c</em> = <code><a class="el" href="_dcx_channel_set_8h.html#a4f56a492fb3b039cc7dfcca31cb92ab7">Chan_Invalid</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td>
-          <td class="paramname"><em>d</em> = <code>Chan_Invalid</code>, </td>
+          <td class="paramname"><em>d</em> = <code><a class="el" href="_dcx_channel_set_8h.html#a4f56a492fb3b039cc7dfcca31cb92ab7">Chan_Invalid</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td>
-          <td class="paramname"><em>e</em> = <code>Chan_Invalid</code>&#160;</td>
+          <td class="paramname"><em>e</em> = <code><a class="el" href="_dcx_channel_set_8h.html#a4f56a492fb3b039cc7dfcca31cb92ab7">Chan_Invalid</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -253,7 +277,11 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00394">394</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  395</span>{</div>
+<div class="line"><span class="lineno">  396</span>    this-&gt;<a class="code hl_function" href="class_channel_set.html#a745fd3cc3fb5f468f0c25a796aaadcbd">insert</a>(a); this-&gt;<a class="code hl_function" href="class_channel_set.html#a745fd3cc3fb5f468f0c25a796aaadcbd">insert</a>(b); this-&gt;<a class="code hl_function" href="class_channel_set.html#a745fd3cc3fb5f468f0c25a796aaadcbd">insert</a>(c); this-&gt;<a class="code hl_function" href="class_channel_set.html#a745fd3cc3fb5f468f0c25a796aaadcbd">insert</a>(d); this-&gt;<a class="code hl_function" href="class_channel_set.html#a745fd3cc3fb5f468f0c25a796aaadcbd">insert</a>(e);</div>
+<div class="line"><span class="lineno">  397</span>}</div>
+<div class="ttc" id="aclass_channel_set_html_a745fd3cc3fb5f468f0c25a796aaadcbd"><div class="ttname"><a href="class_channel_set.html#a745fd3cc3fb5f468f0c25a796aaadcbd">ChannelSet::insert</a></div><div class="ttdeci">void insert(const ChannelSet &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00443">DcxChannelSet.h:443</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -283,7 +311,9 @@ Friends</h2></td></tr>
 <p>rst:cpp:end:: </p>
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00340">340</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  340</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a> == <a class="code hl_variable" href="_dcx_channel_set_8h.html#a4578f895547a680ce00f0dd14fe0d8b3">Chan_All</a>); }</div>
+<div class="ttc" id="a_dcx_channel_set_8h_html_a4578f895547a680ce00f0dd14fe0d8b3"><div class="ttname"><a href="_dcx_channel_set_8h.html#a4578f895547a680ce00f0dd14fe0d8b3">Chan_All</a></div><div class="ttdeci">static GNU_CONST_DECL ChannelIdx Chan_All</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00103">DcxChannelSet.h:103</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae354f524ea497b30db3cb6ff91a1fe31" name="ae354f524ea497b30db3cb6ff91a1fe31"></a>
@@ -310,7 +340,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00399">399</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  399</span>{ <a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>.reset(); <a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a> = 0; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3c832030a78f242b4e22600653a07830" name="a3c832030a78f242b4e22600653a07830"></a>
@@ -338,7 +369,15 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00425">425</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  426</span>{</div>
+<div class="line"><span class="lineno">  427</span>    <span class="keywordflow">if</span> (this-&gt;<a class="code hl_function" href="class_channel_set.html#ac242ee187577e5b6372349b8ed193f16">all</a>())</div>
+<div class="line"><span class="lineno">  428</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  429</span>    <span class="keywordflow">if</span> (channel &lt; Chan_First || channel &gt; <a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a>)</div>
+<div class="line"><span class="lineno">  430</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  431</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>[channel];</div>
+<div class="line"><span class="lineno">  432</span>}</div>
+<div class="ttc" id="aclass_channel_set_html_ac242ee187577e5b6372349b8ed193f16"><div class="ttname"><a href="class_channel_set.html#ac242ee187577e5b6372349b8ed193f16">ChannelSet::all</a></div><div class="ttdeci">bool all() const</div><div class="ttdoc">rst:cpp:end::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00340">DcxChannelSet.h:340</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac4d8fa94de473cab247fa438fb11de1e" name="ac4d8fa94de473cab247fa438fb11de1e"></a>
@@ -366,7 +405,16 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00433">433</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  434</span>{</div>
+<div class="line"><span class="lineno">  435</span>    <span class="keywordflow">if</span> (this-&gt;<a class="code hl_function" href="class_channel_set.html#ac242ee187577e5b6372349b8ed193f16">all</a>())</div>
+<div class="line"><span class="lineno">  436</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  437</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, b)</div>
+<div class="line"><span class="lineno">  438</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>[z])</div>
+<div class="line"><span class="lineno">  439</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">// one of the b channels is not in this set</span></div>
+<div class="line"><span class="lineno">  440</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  441</span>}</div>
+<div class="ttc" id="a_dcx_channel_set_8h_html_a1a8a3195f4006c505fa4bec8a1c60ae2"><div class="ttname"><a href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a></div><div class="ttdeci">#define foreach_channel(CHAN, CHANNELS)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00312">DcxChannelSet.h:312</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a396da9d1249bac96f6e74fcf5008016f" name="a396da9d1249bac96f6e74fcf5008016f"></a>
@@ -393,7 +441,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00410">410</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  410</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a> == 0); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac8fbaf08a864d09d57bb3bee1651eaea" name="ac8fbaf08a864d09d57bb3bee1651eaea"></a>
@@ -421,7 +470,22 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00457">457</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  458</span>{</div>
+<div class="line"><span class="lineno">  459</span>    <span class="keywordflow">if</span> (channel == <a class="code hl_variable" href="_dcx_channel_set_8h.html#a4578f895547a680ce00f0dd14fe0d8b3">Chan_All</a>)</div>
+<div class="line"><span class="lineno">  460</span>    {</div>
+<div class="line"><span class="lineno">  461</span>        this-&gt;<a class="code hl_function" href="class_channel_set.html#ae354f524ea497b30db3cb6ff91a1fe31">clear</a>();</div>
+<div class="line"><span class="lineno">  462</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  463</span>    }</div>
+<div class="line"><span class="lineno">  464</span>    <span class="keywordflow">if</span> (channel &lt; Chan_First || channel &gt; <a class="code hl_variable" href="_dcx_channel_set_8h.html#a5c12fa23851478a1edfc0abc0983e868">Chan_Max</a>)</div>
+<div class="line"><span class="lineno">  465</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  466</span>    <a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>.reset(channel);</div>
+<div class="line"><span class="lineno">  467</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a> == channel)</div>
+<div class="line"><span class="lineno">  468</span>        <a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a> = this-&gt;<a class="code hl_function" href="class_channel_set.html#a04e248100b129316588488e1ccb17c04">prev</a>(channel);</div>
+<div class="line"><span class="lineno">  469</span>}</div>
+<div class="ttc" id="a_dcx_channel_set_8h_html_a5c12fa23851478a1edfc0abc0983e868"><div class="ttname"><a href="_dcx_channel_set_8h.html#a5c12fa23851478a1edfc0abc0983e868">Chan_Max</a></div><div class="ttdeci">static GNU_CONST_DECL ChannelIdx Chan_Max</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00097">DcxChannelSet.h:97</a></div></div>
+<div class="ttc" id="aclass_channel_set_html_a04e248100b129316588488e1ccb17c04"><div class="ttname"><a href="class_channel_set.html#a04e248100b129316588488e1ccb17c04">ChannelSet::prev</a></div><div class="ttdeci">ChannelIdx prev(ChannelIdx z) const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00348">DcxChannelSet.h:348</a></div></div>
+<div class="ttc" id="aclass_channel_set_html_ae354f524ea497b30db3cb6ff91a1fe31"><div class="ttname"><a href="class_channel_set.html#ae354f524ea497b30db3cb6ff91a1fe31">ChannelSet::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00399">DcxChannelSet.h:399</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a28c29a394b5a6d4319a62cfd28cf9751" name="a28c29a394b5a6d4319a62cfd28cf9751"></a>
@@ -449,7 +513,18 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00470">470</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  471</span>{</div>
+<div class="line"><span class="lineno">  472</span>    <span class="keywordflow">if</span> (b.<a class="code hl_function" href="class_channel_set.html#ac242ee187577e5b6372349b8ed193f16">all</a>())</div>
+<div class="line"><span class="lineno">  473</span>    {</div>
+<div class="line"><span class="lineno">  474</span>        this-&gt;<a class="code hl_function" href="class_channel_set.html#ae354f524ea497b30db3cb6ff91a1fe31">clear</a>();</div>
+<div class="line"><span class="lineno">  475</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  476</span>    }</div>
+<div class="line"><span class="lineno">  477</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, b)</div>
+<div class="line"><span class="lineno">  478</span>        <a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>.reset(z);</div>
+<div class="line"><span class="lineno">  479</span>    <a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a> = this-&gt;<a class="code hl_function" href="class_channel_set.html#a9c583c7f5d57d1267dc1629d4ba908d4">last</a>();</div>
+<div class="line"><span class="lineno">  480</span>}</div>
+<div class="ttc" id="aclass_channel_set_html_a9c583c7f5d57d1267dc1629d4ba908d4"><div class="ttname"><a href="class_channel_set.html#a9c583c7f5d57d1267dc1629d4ba908d4">ChannelSet::last</a></div><div class="ttdeci">ChannelIdx last() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00375">DcxChannelSet.h:375</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0adadc0b171eb30ce7e81ad30ec2823f" name="a0adadc0b171eb30ce7e81ad30ec2823f"></a>
@@ -476,7 +551,10 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00374">374</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  374</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="class_channel_set.html#acd349c2ff5287f5638550b64ac35fa9c">next</a>(<a class="code hl_variable" href="_dcx_channel_set_8h.html#a4f56a492fb3b039cc7dfcca31cb92ab7">Chan_Invalid</a>); }</div>
+<div class="ttc" id="a_dcx_channel_set_8h_html_a4f56a492fb3b039cc7dfcca31cb92ab7"><div class="ttname"><a href="_dcx_channel_set_8h.html#a4f56a492fb3b039cc7dfcca31cb92ab7">Chan_Invalid</a></div><div class="ttdeci">static GNU_CONST_DECL ChannelIdx Chan_Invalid</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00086">DcxChannelSet.h:86</a></div></div>
+<div class="ttc" id="aclass_channel_set_html_acd349c2ff5287f5638550b64ac35fa9c"><div class="ttname"><a href="class_channel_set.html#acd349c2ff5287f5638550b64ac35fa9c">ChannelSet::next</a></div><div class="ttdeci">ChannelIdx next(ChannelIdx z) const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00361">DcxChannelSet.h:361</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9b21cadc2e5e9373a6e10a05ad8a7719" name="a9b21cadc2e5e9373a6e10a05ad8a7719"></a>
@@ -504,7 +582,20 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00378">378</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  379</span>{</div>
+<div class="line"><span class="lineno">  380</span>    <span class="keywordflow">if</span> (channel == <a class="code hl_variable" href="_dcx_channel_set_8h.html#a4578f895547a680ce00f0dd14fe0d8b3">Chan_All</a>)</div>
+<div class="line"><span class="lineno">  381</span>    {</div>
+<div class="line"><span class="lineno">  382</span>        this-&gt;<a class="code hl_function" href="class_channel_set.html#a528512e1e0d86fa42e21d05afe7ca0f2">setAll</a>();</div>
+<div class="line"><span class="lineno">  383</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  384</span>    }</div>
+<div class="line"><span class="lineno">  385</span>    <span class="keywordflow">if</span> (channel &lt; Chan_First || channel &gt; <a class="code hl_variable" href="_dcx_channel_set_8h.html#a5c12fa23851478a1edfc0abc0983e868">Chan_Max</a>)</div>
+<div class="line"><span class="lineno">  386</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  387</span>    <a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>.set(channel);</div>
+<div class="line"><span class="lineno">  388</span>    <span class="keywordflow">if</span> (channel &gt; <a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a>)</div>
+<div class="line"><span class="lineno">  389</span>        <a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a> = channel;</div>
+<div class="line"><span class="lineno">  390</span>}</div>
+<div class="ttc" id="aclass_channel_set_html_a528512e1e0d86fa42e21d05afe7ca0f2"><div class="ttname"><a href="class_channel_set.html#a528512e1e0d86fa42e21d05afe7ca0f2">ChannelSet::setAll</a></div><div class="ttdeci">void setAll()</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00341">DcxChannelSet.h:341</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a745fd3cc3fb5f468f0c25a796aaadcbd" name="a745fd3cc3fb5f468f0c25a796aaadcbd"></a>
@@ -532,7 +623,17 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00443">443</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  444</span>{</div>
+<div class="line"><span class="lineno">  445</span>    <span class="keywordflow">if</span> (b.<a class="code hl_function" href="class_channel_set.html#ac242ee187577e5b6372349b8ed193f16">all</a>())</div>
+<div class="line"><span class="lineno">  446</span>    {</div>
+<div class="line"><span class="lineno">  447</span>        this-&gt;<a class="code hl_function" href="class_channel_set.html#a528512e1e0d86fa42e21d05afe7ca0f2">setAll</a>();</div>
+<div class="line"><span class="lineno">  448</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  449</span>    }</div>
+<div class="line"><span class="lineno">  450</span>    <a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a> |= b.<a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>;</div>
+<div class="line"><span class="lineno">  451</span>    <span class="keywordflow">if</span> (b.<a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a> &gt; <a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a>)</div>
+<div class="line"><span class="lineno">  452</span>        <a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a> = b.<a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a>;</div>
+<div class="line"><span class="lineno">  453</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a56257525b21c9b1450901cb8cb913a01" name="a56257525b21c9b1450901cb8cb913a01"></a>
@@ -560,7 +661,21 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00494">494</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  495</span>{</div>
+<div class="line"><span class="lineno">  496</span>    <span class="keywordflow">if</span> (channel == <a class="code hl_variable" href="_dcx_channel_set_8h.html#a4578f895547a680ce00f0dd14fe0d8b3">Chan_All</a>)</div>
+<div class="line"><span class="lineno">  497</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  498</span>    <span class="keywordflow">if</span> (channel &lt; Chan_First || channel &gt; <a class="code hl_variable" href="_dcx_channel_set_8h.html#a5c12fa23851478a1edfc0abc0983e868">Chan_Max</a>)</div>
+<div class="line"><span class="lineno">  499</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  500</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>[channel])</div>
+<div class="line"><span class="lineno">  501</span>    {</div>
+<div class="line"><span class="lineno">  502</span>        <a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>.reset();</div>
+<div class="line"><span class="lineno">  503</span>        <a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>.set(channel);</div>
+<div class="line"><span class="lineno">  504</span>        <a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a> = channel;</div>
+<div class="line"><span class="lineno">  505</span>    }</div>
+<div class="line"><span class="lineno">  506</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  507</span>        this-&gt;<a class="code hl_function" href="class_channel_set.html#ae354f524ea497b30db3cb6ff91a1fe31">clear</a>();</div>
+<div class="line"><span class="lineno">  508</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7cfa38c1a97a72d500cffbf7e3b55b09" name="a7cfa38c1a97a72d500cffbf7e3b55b09"></a>
@@ -588,7 +703,13 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00487">487</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  488</span>{</div>
+<div class="line"><span class="lineno">  489</span>    <span class="keywordflow">if</span> (b.<a class="code hl_function" href="class_channel_set.html#ac242ee187577e5b6372349b8ed193f16">all</a>())</div>
+<div class="line"><span class="lineno">  490</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  491</span>    <a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a> &amp;= b.<a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>;</div>
+<div class="line"><span class="lineno">  492</span>    <a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a> = this-&gt;<a class="code hl_function" href="class_channel_set.html#a9c583c7f5d57d1267dc1629d4ba908d4">last</a>();</div>
+<div class="line"><span class="lineno">  493</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9c583c7f5d57d1267dc1629d4ba908d4" name="a9c583c7f5d57d1267dc1629d4ba908d4"></a>
@@ -615,7 +736,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00375">375</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  375</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="class_channel_set.html#a04e248100b129316588488e1ccb17c04">prev</a>(<a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a>+1); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abdb316bfee5031cb21ce244c5c1a3710" name="abdb316bfee5031cb21ce244c5c1a3710"></a>
@@ -642,7 +764,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00346">346</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  346</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acd349c2ff5287f5638550b64ac35fa9c" name="acd349c2ff5287f5638550b64ac35fa9c"></a>
@@ -670,7 +793,19 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00361">361</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  362</span>{</div>
+<div class="line"><span class="lineno">  363</span>    <span class="keywordflow">if</span> (channel &lt; <a class="code hl_variable" href="_dcx_channel_set_8h.html#a5c12fa23851478a1edfc0abc0983e868">Chan_Max</a>)</div>
+<div class="line"><span class="lineno">  364</span>    {</div>
+<div class="line"><span class="lineno">  365</span>        ++channel;</div>
+<div class="line"><span class="lineno">  366</span>        <span class="keywordflow">if</span> (this-&gt;<a class="code hl_function" href="class_channel_set.html#ac242ee187577e5b6372349b8ed193f16">all</a>())</div>
+<div class="line"><span class="lineno">  367</span>            <span class="keywordflow">return</span> channel;</div>
+<div class="line"><span class="lineno">  368</span>        <span class="keywordflow">for</span> (; channel &lt;= <a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a>; ++channel)</div>
+<div class="line"><span class="lineno">  369</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>[channel])</div>
+<div class="line"><span class="lineno">  370</span>                <span class="keywordflow">return</span> channel;</div>
+<div class="line"><span class="lineno">  371</span>    }</div>
+<div class="line"><span class="lineno">  372</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="_dcx_channel_set_8h.html#a4f56a492fb3b039cc7dfcca31cb92ab7">Chan_Invalid</a>; <span class="comment">// off end</span></div>
+<div class="line"><span class="lineno">  373</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afc0675c05f693afeffc171aaac342e91" name="afc0675c05f693afeffc171aaac342e91"></a>
@@ -698,7 +833,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00485">485</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  485</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a> != b.<a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3112e6fffeaf181bb7eb9b46010ee674" name="a3112e6fffeaf181bb7eb9b46010ee674"></a>
@@ -726,7 +862,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00513">513</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  513</span>{ this-&gt;<a class="code hl_function" href="class_channel_set.html#a7cfa38c1a97a72d500cffbf7e3b55b09">intersect</a>(b); <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="ttc" id="aclass_channel_set_html_a7cfa38c1a97a72d500cffbf7e3b55b09"><div class="ttname"><a href="class_channel_set.html#a7cfa38c1a97a72d500cffbf7e3b55b09">ChannelSet::intersect</a></div><div class="ttdeci">void intersect(const ChannelSet &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00487">DcxChannelSet.h:487</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac848278dc7de0203a10623d766497adf" name="ac848278dc7de0203a10623d766497adf"></a>
@@ -754,7 +892,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00510">510</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  510</span>{ this-&gt;<a class="code hl_function" href="class_channel_set.html#a7cfa38c1a97a72d500cffbf7e3b55b09">intersect</a>(channel); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a959e94e8c32a1fbf5659b69c4c414f0f" name="a959e94e8c32a1fbf5659b69c4c414f0f"></a>
@@ -782,7 +921,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00509">509</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  509</span>{ this-&gt;<a class="code hl_function" href="class_channel_set.html#a7cfa38c1a97a72d500cffbf7e3b55b09">intersect</a>(b); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6e92bca4519cd8083fa11b9e58eb6e9e" name="a6e92bca4519cd8083fa11b9e58eb6e9e"></a>
@@ -810,7 +950,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00455">455</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  455</span>{ this-&gt;<a class="code hl_function" href="class_channel_set.html#a745fd3cc3fb5f468f0c25a796aaadcbd">insert</a>(channel); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4a1758ca2abccd2b7f51cd85aabafa4d" name="a4a1758ca2abccd2b7f51cd85aabafa4d"></a>
@@ -838,7 +979,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00454">454</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  454</span>{ this-&gt;<a class="code hl_function" href="class_channel_set.html#a745fd3cc3fb5f468f0c25a796aaadcbd">insert</a>(b); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8eb749cca74a4c4603ac25f740903b31" name="a8eb749cca74a4c4603ac25f740903b31"></a>
@@ -866,7 +1008,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00482">482</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  482</span>{ this-&gt;<a class="code hl_function" href="class_channel_set.html#a28c29a394b5a6d4319a62cfd28cf9751">erase</a>(channel); }</div>
+<div class="ttc" id="aclass_channel_set_html_a28c29a394b5a6d4319a62cfd28cf9751"><div class="ttname"><a href="class_channel_set.html#a28c29a394b5a6d4319a62cfd28cf9751">ChannelSet::erase</a></div><div class="ttdeci">void erase(const ChannelSet &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00470">DcxChannelSet.h:470</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a40759bd33263487d7ca22b80eb693ce1" name="a40759bd33263487d7ca22b80eb693ce1"></a>
@@ -894,7 +1038,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00481">481</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  481</span>{ this-&gt;<a class="code hl_function" href="class_channel_set.html#a28c29a394b5a6d4319a62cfd28cf9751">erase</a>(b); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a63033f509320f25026c77e8ccce61096" name="a63033f509320f25026c77e8ccce61096"></a>
@@ -922,7 +1067,12 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00418">418</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  419</span>{</div>
+<div class="line"><span class="lineno">  420</span>    this-&gt;<a class="code hl_function" href="class_channel_set.html#ae354f524ea497b30db3cb6ff91a1fe31">clear</a>();</div>
+<div class="line"><span class="lineno">  421</span>    this-&gt;<a class="code hl_function" href="class_channel_set.html#a745fd3cc3fb5f468f0c25a796aaadcbd">insert</a>(channel);</div>
+<div class="line"><span class="lineno">  422</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  423</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1c114c030e9a15f881172c23befc4cfe" name="a1c114c030e9a15f881172c23befc4cfe"></a>
@@ -950,7 +1100,12 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00412">412</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  413</span>{</div>
+<div class="line"><span class="lineno">  414</span>    <a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a> = b.<a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>;</div>
+<div class="line"><span class="lineno">  415</span>    <a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a> = b.<a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a>;</div>
+<div class="line"><span class="lineno">  416</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  417</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac41a69e1641135d13b8546b301481676" name="ac41a69e1641135d13b8546b301481676"></a>
@@ -978,7 +1133,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00484">484</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  484</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a> == b.<a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9cd18421807309db2ebb81b8b94e4fdb" name="a9cd18421807309db2ebb81b8b94e4fdb"></a>
@@ -1006,7 +1162,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00512">512</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  512</span>{ this-&gt;<a class="code hl_function" href="class_channel_set.html#a745fd3cc3fb5f468f0c25a796aaadcbd">insert</a>(b); <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a04e248100b129316588488e1ccb17c04" name="a04e248100b129316588488e1ccb17c04"></a>
@@ -1034,7 +1191,20 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00348">348</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  349</span>{</div>
+<div class="line"><span class="lineno">  350</span>    <span class="keywordflow">if</span> (channel &gt; <a class="code hl_variable" href="_dcx_channel_set_8h.html#a9c8b84a75fb9f808d177e621d098be08">Chan_First</a>)</div>
+<div class="line"><span class="lineno">  351</span>    {</div>
+<div class="line"><span class="lineno">  352</span>        --channel;</div>
+<div class="line"><span class="lineno">  353</span>        <span class="keywordflow">if</span> (this-&gt;<a class="code hl_function" href="class_channel_set.html#ac242ee187577e5b6372349b8ed193f16">all</a>())</div>
+<div class="line"><span class="lineno">  354</span>            <span class="keywordflow">return</span> channel;</div>
+<div class="line"><span class="lineno">  355</span>        <span class="keywordflow">for</span> (; channel &gt; <a class="code hl_variable" href="_dcx_channel_set_8h.html#a4f56a492fb3b039cc7dfcca31cb92ab7">Chan_Invalid</a>; --channel)</div>
+<div class="line"><span class="lineno">  356</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>[channel])</div>
+<div class="line"><span class="lineno">  357</span>                <span class="keywordflow">return</span> channel;</div>
+<div class="line"><span class="lineno">  358</span>    }</div>
+<div class="line"><span class="lineno">  359</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="_dcx_channel_set_8h.html#a4f56a492fb3b039cc7dfcca31cb92ab7">Chan_Invalid</a>; <span class="comment">// off end</span></div>
+<div class="line"><span class="lineno">  360</span>}</div>
+<div class="ttc" id="a_dcx_channel_set_8h_html_a9c8b84a75fb9f808d177e621d098be08"><div class="ttname"><a href="_dcx_channel_set_8h.html#a9c8b84a75fb9f808d177e621d098be08">Chan_First</a></div><div class="ttdeci">static GNU_CONST_DECL ChannelIdx Chan_First</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00091">DcxChannelSet.h:91</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab3ff393a00a2d72fffe8ace81d169e20" name="ab3ff393a00a2d72fffe8ace81d169e20"></a>
@@ -1070,7 +1240,44 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8cpp_source.html#l00390">390</a> of file <a class="el" href="_dcx_channel_set_8cpp_source.html">DcxChannelSet.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  393</span>{</div>
+<div class="line"><span class="lineno">  394</span>    <span class="keywordflow">if</span> (prefix &amp;&amp; prefix[0])</div>
+<div class="line"><span class="lineno">  395</span>        os &lt;&lt; prefix;</div>
+<div class="line"><span class="lineno">  396</span>    <span class="keywordflow">if</span> (this-&gt;<a class="code hl_function" href="class_channel_set.html#ac242ee187577e5b6372349b8ed193f16">all</a>())</div>
+<div class="line"><span class="lineno">  397</span>    {</div>
+<div class="line"><span class="lineno">  398</span>        os &lt;&lt; <span class="stringliteral">&quot;[all]&quot;</span>;</div>
+<div class="line"><span class="lineno">  399</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  400</span>    }</div>
+<div class="line"><span class="lineno">  401</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> n = this-&gt;<a class="code hl_function" href="class_channel_set.html#af93840d96f2d24204f41b8b2aba34a7a">size</a>();</div>
+<div class="line"><span class="lineno">  402</span>    os &lt;&lt; <span class="stringliteral">&quot;[&quot;</span>;</div>
+<div class="line"><span class="lineno">  403</span>    <span class="keywordflow">if</span> (n == 0)</div>
+<div class="line"><span class="lineno">  404</span>        os &lt;&lt; <span class="stringliteral">&quot;none&quot;</span>;</div>
+<div class="line"><span class="lineno">  405</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (n == 1)</div>
+<div class="line"><span class="lineno">  406</span>        <span class="keywordflow">if</span> (ctx)</div>
+<div class="line"><span class="lineno">  407</span>            ctx-&gt;<a class="code hl_function" href="class_channel_context.html#af5cf3b16ba1b7cd34d6fb7639a6f3fac">printChannelFullName</a>(os, this-&gt;<a class="code hl_function" href="class_channel_set.html#a0adadc0b171eb30ce7e81ad30ec2823f">first</a>());</div>
+<div class="line"><span class="lineno">  408</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  409</span>            os &lt;&lt; this-&gt;<a class="code hl_function" href="class_channel_set.html#a0adadc0b171eb30ce7e81ad30ec2823f">first</a>();</div>
+<div class="line"><span class="lineno">  410</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  411</span>    {</div>
+<div class="line"><span class="lineno">  412</span>        <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><span class="lineno">  413</span>        <span class="keyword">const</span> <a class="code hl_class" href="class_channel_set.html">ChannelSet</a>&amp; set = *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  414</span>        <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, set)</div>
+<div class="line"><span class="lineno">  415</span>        {</div>
+<div class="line"><span class="lineno">  416</span>            <span class="keywordflow">if</span> (i++ &gt; 0)</div>
+<div class="line"><span class="lineno">  417</span>                os &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><span class="lineno">  418</span>            <span class="keywordflow">if</span> (ctx)</div>
+<div class="line"><span class="lineno">  419</span>                ctx-&gt;<a class="code hl_function" href="class_channel_context.html#af5cf3b16ba1b7cd34d6fb7639a6f3fac">printChannelFullName</a>(os, z);</div>
+<div class="line"><span class="lineno">  420</span>            <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  421</span>                os &lt;&lt; z;</div>
+<div class="line"><span class="lineno">  422</span>        }</div>
+<div class="line"><span class="lineno">  423</span>    }</div>
+<div class="line"><span class="lineno">  424</span>    os &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><span class="lineno">  425</span>}</div>
+<div class="ttc" id="aclass_channel_context_html_af5cf3b16ba1b7cd34d6fb7639a6f3fac"><div class="ttname"><a href="class_channel_context.html#af5cf3b16ba1b7cd34d6fb7639a6f3fac">ChannelContext::printChannelFullName</a></div><div class="ttdeci">void printChannelFullName(std::ostream &amp;, const ChannelIdx &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_context_8h_source.html#l00352">DcxChannelContext.h:352</a></div></div>
+<div class="ttc" id="aclass_channel_set_html"><div class="ttname"><a href="class_channel_set.html">ChannelSet</a></div><div class="ttdoc">rst:left-align::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00135">DcxChannelSet.h:136</a></div></div>
+<div class="ttc" id="aclass_channel_set_html_a0adadc0b171eb30ce7e81ad30ec2823f"><div class="ttname"><a href="class_channel_set.html#a0adadc0b171eb30ce7e81ad30ec2823f">ChannelSet::first</a></div><div class="ttdeci">ChannelIdx first() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00374">DcxChannelSet.h:374</a></div></div>
+<div class="ttc" id="aclass_channel_set_html_af93840d96f2d24204f41b8b2aba34a7a"><div class="ttname"><a href="class_channel_set.html#af93840d96f2d24204f41b8b2aba34a7a">ChannelSet::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00400">DcxChannelSet.h:400</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a528512e1e0d86fa42e21d05afe7ca0f2" name="a528512e1e0d86fa42e21d05afe7ca0f2"></a>
@@ -1097,7 +1304,11 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00341">341</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  342</span>{</div>
+<div class="line"><span class="lineno">  343</span>    <a class="code hl_variable" href="class_channel_set.html#a8b22b0b82c10cb1a3683a0da49644935">m_mask</a>.reset();</div>
+<div class="line"><span class="lineno">  344</span>    <a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a> = <a class="code hl_variable" href="_dcx_channel_set_8h.html#a4578f895547a680ce00f0dd14fe0d8b3">Chan_All</a>;</div>
+<div class="line"><span class="lineno">  345</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af93840d96f2d24204f41b8b2aba34a7a" name="af93840d96f2d24204f41b8b2aba34a7a"></a>
@@ -1124,7 +1335,16 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00400">400</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  401</span>{</div>
+<div class="line"><span class="lineno">  402</span>    <span class="keywordflow">if</span> (this-&gt;<a class="code hl_function" href="class_channel_set.html#ac242ee187577e5b6372349b8ed193f16">all</a>())</div>
+<div class="line"><span class="lineno">  403</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="_dcx_channel_set_8h.html#a5c12fa23851478a1edfc0abc0983e868">Chan_Max</a>;</div>
+<div class="line"><span class="lineno">  404</span>    <span class="keywordtype">size_t</span> n = 0;</div>
+<div class="line"><span class="lineno">  405</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_channel_set.html">ChannelSet</a>&amp; set = *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  406</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, set)</div>
+<div class="line"><span class="lineno">  407</span>        ++n;</div>
+<div class="line"><span class="lineno">  408</span>    <span class="keywordflow">return</span> n;</div>
+<div class="line"><span class="lineno">  409</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aeb82b9501540a456a4a5e4d9232b40fb" name="aeb82b9501540a456a4a5e4d9232b40fb"></a>
@@ -1151,7 +1371,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8h_source.html#l00376">376</a> of file <a class="el" href="_dcx_channel_set_8h_source.html">DcxChannelSet.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  376</span>{ <a class="code hl_variable" href="class_channel_set.html#ae3f5797777defe0e539fbe8f820f8911">m_last</a> = this-&gt;<a class="code hl_function" href="class_channel_set.html#a04e248100b129316588488e1ccb17c04">prev</a>(<a class="code hl_variable" href="_dcx_channel_set_8h.html#a5c12fa23851478a1edfc0abc0983e868">Chan_Max</a>+1); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
@@ -1190,7 +1411,12 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_set_8cpp_source.html#l00432">432</a> of file <a class="el" href="_dcx_channel_set_8cpp_source.html">DcxChannelSet.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  435</span>{</div>
+<div class="line"><span class="lineno">  436</span>    b.<a class="code hl_function" href="class_channel_set.html#ab3ff393a00a2d72fffe8ace81d169e20">print</a>(NULL<span class="comment">/*prefix*/</span>, os, NULL<span class="comment">/*ChannelContext*/</span>);</div>
+<div class="line"><span class="lineno">  437</span>    <span class="keywordflow">return</span> os;</div>
+<div class="line"><span class="lineno">  438</span>}</div>
+<div class="ttc" id="aclass_channel_set_html_ab3ff393a00a2d72fffe8ace81d169e20"><div class="ttname"><a href="class_channel_set.html#ab3ff393a00a2d72fffe8ace81d169e20">ChannelSet::print</a></div><div class="ttdeci">void print(const char *prefix, std::ostream &amp;, const ChannelContext *ctx=0) const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8cpp_source.html#l00390">DcxChannelSet.cpp:390</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1247,9 +1473,13 @@ Friends</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/deepfile/<a class="el" href="_dcx_channel_set_8cpp_source.html">DcxChannelSet.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_channel_set.html">ChannelSet</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

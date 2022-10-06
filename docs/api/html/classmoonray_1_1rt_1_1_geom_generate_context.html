@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rt.html">rt</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rt_1_1_geom_generate_context.html">GeomGenerateContext</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1rt_1_1_geom_generate_context.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1rt_1_1_geom_generate_context-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::rt::GeomGenerateContext Class Reference</div></div>
 </div><!--header-->
@@ -118,6 +135,21 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6d06f4ed341afaf3202a39759dc4b3f2 inherit pub_methods_classmoonray_1_1geom_1_1_procedural_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a5d828a2cc6004123c8023ecb9809f0 inherit pub_methods_classmoonray_1_1geom_1_1_procedural_context"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural_context.html#a1a5d828a2cc6004123c8023ecb9809f0">getMotionBlurDelta</a> (float &amp;shutterOpenDelta, float &amp;shutterCloseDelta) const =0</td></tr>
 <tr class="separator:a1a5d828a2cc6004123c8023ecb9809f0 inherit pub_methods_classmoonray_1_1geom_1_1_procedural_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae0e1046172af2ef661edc5c38b2b9f5e"><td class="memItemLeft" align="right" valign="top">scene_rdl2::rdl2::Layer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_geom_generate_context.html#ae0e1046172af2ef661edc5c38b2b9f5e">mRdlLayer</a></td></tr>
+<tr class="separator:ae0e1046172af2ef661edc5c38b2b9f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade5ea6aa7dc10ca35f549c0036c5839c"><td class="memItemLeft" align="right" valign="top">scene_rdl2::rdl2::Geometry *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_geom_generate_context.html#ade5ea6aa7dc10ca35f549c0036c5839c">mRdlGeometry</a></td></tr>
+<tr class="separator:ade5ea6aa7dc10ca35f549c0036c5839c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01cfb91540504ae16f34256f47dfd277"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemoonray_1_1shading.html#acd21779e00acbbeab334b9d08512607c">shading::AttributeKeySet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_geom_generate_context.html#a01cfb91540504ae16f34256f47dfd277">mRequestedAttributes</a></td></tr>
+<tr class="separator:a01cfb91540504ae16f34256f47dfd277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb4ea6b531187d729b8fab22ddf5318f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_geom_generate_context.html#abb4ea6b531187d729b8fab22ddf5318f">mCurrentFrame</a></td></tr>
+<tr class="separator:abb4ea6b531187d729b8fab22ddf5318f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22382b8d1c646e6b0a7d44c3e76d8cd8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_geom_generate_context.html#a22382b8d1c646e6b0a7d44c3e76d8cd8">mThreads</a></td></tr>
+<tr class="separator:a22382b8d1c646e6b0a7d44c3e76d8cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa979caf48cd801222b267bbabd17e514"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmoonray_1_1geom_1_1_motion_blur_params.html">geom::MotionBlurParams</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_geom_generate_context.html#aa979caf48cd801222b267bbabd17e514">mMotionBlurParams</a></td></tr>
+<tr class="separator:aa979caf48cd801222b267bbabd17e514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -182,7 +214,20 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_geom_context_8h_source.html#l00020">20</a> of file <a class="el" href="_geom_context_8h_source.html">GeomContext.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   23</span>                                                         :</div>
+<div class="line"><span class="lineno">   24</span>            <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#ae0e1046172af2ef661edc5c38b2b9f5e">mRdlLayer</a>(pRdlLayer), <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#ade5ea6aa7dc10ca35f549c0036c5839c">mRdlGeometry</a>(pRdlGeometry),</div>
+<div class="line"><span class="lineno">   25</span>            <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#a01cfb91540504ae16f34256f47dfd277">mRequestedAttributes</a>(std::move(requestedAttributes)),</div>
+<div class="line"><span class="lineno">   26</span>            <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#abb4ea6b531187d729b8fab22ddf5318f">mCurrentFrame</a>(currentFrame),</div>
+<div class="line"><span class="lineno">   27</span>            <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#a22382b8d1c646e6b0a7d44c3e76d8cd8">mThreads</a>(threads), <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#aa979caf48cd801222b267bbabd17e514">mMotionBlurParams</a>(motionBlurParams)</div>
+<div class="line"><span class="lineno">   28</span>    {</div>
+<div class="line"><span class="lineno">   29</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1rt_1_1_geom_generate_context_html_a01cfb91540504ae16f34256f47dfd277"><div class="ttname"><a href="classmoonray_1_1rt_1_1_geom_generate_context.html#a01cfb91540504ae16f34256f47dfd277">moonray::rt::GeomGenerateContext::mRequestedAttributes</a></div><div class="ttdeci">shading::AttributeKeySet mRequestedAttributes</div><div class="ttdef"><b>Definition:</b> <a href="_geom_context_8h_source.html#l00073">GeomContext.h:73</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rt_1_1_geom_generate_context_html_a22382b8d1c646e6b0a7d44c3e76d8cd8"><div class="ttname"><a href="classmoonray_1_1rt_1_1_geom_generate_context.html#a22382b8d1c646e6b0a7d44c3e76d8cd8">moonray::rt::GeomGenerateContext::mThreads</a></div><div class="ttdeci">int mThreads</div><div class="ttdef"><b>Definition:</b> <a href="_geom_context_8h_source.html#l00075">GeomContext.h:75</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rt_1_1_geom_generate_context_html_aa979caf48cd801222b267bbabd17e514"><div class="ttname"><a href="classmoonray_1_1rt_1_1_geom_generate_context.html#aa979caf48cd801222b267bbabd17e514">moonray::rt::GeomGenerateContext::mMotionBlurParams</a></div><div class="ttdeci">const geom::MotionBlurParams &amp; mMotionBlurParams</div><div class="ttdef"><b>Definition:</b> <a href="_geom_context_8h_source.html#l00076">GeomContext.h:76</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rt_1_1_geom_generate_context_html_abb4ea6b531187d729b8fab22ddf5318f"><div class="ttname"><a href="classmoonray_1_1rt_1_1_geom_generate_context.html#abb4ea6b531187d729b8fab22ddf5318f">moonray::rt::GeomGenerateContext::mCurrentFrame</a></div><div class="ttdeci">int mCurrentFrame</div><div class="ttdef"><b>Definition:</b> <a href="_geom_context_8h_source.html#l00074">GeomContext.h:74</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rt_1_1_geom_generate_context_html_ade5ea6aa7dc10ca35f549c0036c5839c"><div class="ttname"><a href="classmoonray_1_1rt_1_1_geom_generate_context.html#ade5ea6aa7dc10ca35f549c0036c5839c">moonray::rt::GeomGenerateContext::mRdlGeometry</a></div><div class="ttdeci">scene_rdl2::rdl2::Geometry * mRdlGeometry</div><div class="ttdef"><b>Definition:</b> <a href="_geom_context_8h_source.html#l00072">GeomContext.h:72</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rt_1_1_geom_generate_context_html_ae0e1046172af2ef661edc5c38b2b9f5e"><div class="ttname"><a href="classmoonray_1_1rt_1_1_geom_generate_context.html#ae0e1046172af2ef661edc5c38b2b9f5e">moonray::rt::GeomGenerateContext::mRdlLayer</a></div><div class="ttdeci">scene_rdl2::rdl2::Layer * mRdlLayer</div><div class="ttdef"><b>Definition:</b> <a href="_geom_context_8h_source.html#l00071">GeomContext.h:71</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -213,7 +258,10 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_procedural_context.html#a64a81591835246400d86a701fb32afa1">moonray::geom::ProceduralContext</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geom_context_8cc_source.html#l00014">14</a> of file <a class="el" href="_geom_context_8cc_source.html">GeomContext.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   15</span>{</div>
+<div class="line"><span class="lineno">   16</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#abb4ea6b531187d729b8fab22ddf5318f">mCurrentFrame</a>;</div>
+<div class="line"><span class="lineno">   17</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa421d8bc9ee719696c2022efaf9753b6" name="aa421d8bc9ee719696c2022efaf9753b6"></a>
@@ -254,7 +302,11 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_procedural_context.html#a1a5d828a2cc6004123c8023ecb9809f0">moonray::geom::ProceduralContext</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geom_context_8cc_source.html#l00044">44</a> of file <a class="el" href="_geom_context_8cc_source.html">GeomContext.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   45</span>                                        {</div>
+<div class="line"><span class="lineno">   46</span>    <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#aa979caf48cd801222b267bbabd17e514">mMotionBlurParams</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_motion_blur_params.html#a897f423e4f27c372c2ddacef0360ce8a">getMotionBlurDelta</a>(shutterOpenDelta, shutterCloseDelta);</div>
+<div class="line"><span class="lineno">   47</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_motion_blur_params_html_a897f423e4f27c372c2ddacef0360ce8a"><div class="ttname"><a href="classmoonray_1_1geom_1_1_motion_blur_params.html#a897f423e4f27c372c2ddacef0360ce8a">moonray::geom::MotionBlurParams::getMotionBlurDelta</a></div><div class="ttdeci">void getMotionBlurDelta(float &amp;shutterOpenDelta, float &amp;shutterCloseDelta) const</div><div class="ttdef"><b>Definition:</b> <a href="_motion_blur_params_8h_source.html#l00076">MotionBlurParams.h:76</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a881252933b9081191ee8f34ff23a4b86" name="a881252933b9081191ee8f34ff23a4b86"></a>
@@ -284,7 +336,10 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_procedural_context.html#af90b146263094bc7f6a818b971766070">moonray::geom::ProceduralContext</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geom_context_8cc_source.html#l00020">20</a> of file <a class="el" href="_geom_context_8cc_source.html">GeomContext.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   21</span>{</div>
+<div class="line"><span class="lineno">   22</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#aa979caf48cd801222b267bbabd17e514">mMotionBlurParams</a>;</div>
+<div class="line"><span class="lineno">   23</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a10bf0c49431de5a23275746485567b12" name="a10bf0c49431de5a23275746485567b12"></a>
@@ -314,7 +369,11 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_procedural_context.html#a6d478c693c9980eaa57b43b16a7f760d">moonray::geom::ProceduralContext</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geom_context_8cc_source.html#l00026">26</a> of file <a class="el" href="_geom_context_8cc_source.html">GeomContext.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   27</span>{</div>
+<div class="line"><span class="lineno">   28</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#aa979caf48cd801222b267bbabd17e514">mMotionBlurParams</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_motion_blur_params.html#aaf970c2ca377da12aa8888d39fd33fb0">getMotionSteps</a>();</div>
+<div class="line"><span class="lineno">   29</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_motion_blur_params_html_aaf970c2ca377da12aa8888d39fd33fb0"><div class="ttname"><a href="classmoonray_1_1geom_1_1_motion_blur_params.html#aaf970c2ca377da12aa8888d39fd33fb0">moonray::geom::MotionBlurParams::getMotionSteps</a></div><div class="ttdeci">const std::vector&lt; float &gt; &amp; getMotionSteps() const</div><div class="ttdef"><b>Definition:</b> <a href="_motion_blur_params_8h_source.html#l00070">MotionBlurParams.h:70</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a795982ec8c728bf36db13bba3336abaa" name="a795982ec8c728bf36db13bba3336abaa"></a>
@@ -344,7 +403,10 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_procedural_context.html#a31ac8af7e292d663b2310700778324b0">moonray::geom::ProceduralContext</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geom_context_8h_source.html#l00035">35</a> of file <a class="el" href="_geom_context_8h_source.html">GeomContext.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   35</span>                                                                                  {</div>
+<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#ade5ea6aa7dc10ca35f549c0036c5839c">mRdlGeometry</a>;</div>
+<div class="line"><span class="lineno">   37</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6e647c136d41e73188faa5c77405e93a" name="a6e647c136d41e73188faa5c77405e93a"></a>
@@ -374,7 +436,10 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_procedural_context.html#a0d2777718107188484d72fc9e52d7896">moonray::geom::ProceduralContext</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geom_context_8h_source.html#l00031">31</a> of file <a class="el" href="_geom_context_8h_source.html">GeomContext.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   31</span>                                                                            {</div>
+<div class="line"><span class="lineno">   32</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#ae0e1046172af2ef661edc5c38b2b9f5e">mRdlLayer</a>;</div>
+<div class="line"><span class="lineno">   33</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6794c8f1a69e9b261f3058c0397ed1ef" name="a6794c8f1a69e9b261f3058c0397ed1ef"></a>
@@ -404,7 +469,10 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_generate_context.html#a6d678a9b70d502bd4499f8a759f1820b">moonray::geom::GenerateContext</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geom_context_8h_source.html#l00040">40</a> of file <a class="el" href="_geom_context_8h_source.html">GeomContext.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   40</span>                                            {</div>
+<div class="line"><span class="lineno">   41</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#a01cfb91540504ae16f34256f47dfd277">mRequestedAttributes</a>;</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aaa593e5645558f5d148f03db3d01f7ac" name="aaa593e5645558f5d148f03db3d01f7ac"></a>
@@ -434,7 +502,11 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_procedural_context.html#af3ecf85ade8fada157ed0e923e079b90">moonray::geom::ProceduralContext</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geom_context_8cc_source.html#l00038">38</a> of file <a class="el" href="_geom_context_8cc_source.html">GeomContext.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   39</span>{</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#aa979caf48cd801222b267bbabd17e514">mMotionBlurParams</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_motion_blur_params.html#a1f26e2486a05f0635374879ac26fb30f">getShutterClose</a>();</div>
+<div class="line"><span class="lineno">   41</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_motion_blur_params_html_a1f26e2486a05f0635374879ac26fb30f"><div class="ttname"><a href="classmoonray_1_1geom_1_1_motion_blur_params.html#a1f26e2486a05f0635374879ac26fb30f">moonray::geom::MotionBlurParams::getShutterClose</a></div><div class="ttdeci">float getShutterClose() const</div><div class="ttdef"><b>Definition:</b> <a href="_motion_blur_params_8h_source.html#l00074">MotionBlurParams.h:74</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a39abd56cb7505912cd5780af14c94678" name="a39abd56cb7505912cd5780af14c94678"></a>
@@ -464,7 +536,11 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_procedural_context.html#ac2365aad980af709b9953f719337278b">moonray::geom::ProceduralContext</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geom_context_8cc_source.html#l00032">32</a> of file <a class="el" href="_geom_context_8cc_source.html">GeomContext.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#aa979caf48cd801222b267bbabd17e514">mMotionBlurParams</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_motion_blur_params.html#aae49ae4be0f6687c84cb5317ec4af05f">getShutterOpen</a>();</div>
+<div class="line"><span class="lineno">   35</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_motion_blur_params_html_aae49ae4be0f6687c84cb5317ec4af05f"><div class="ttname"><a href="classmoonray_1_1geom_1_1_motion_blur_params.html#aae49ae4be0f6687c84cb5317ec4af05f">moonray::geom::MotionBlurParams::getShutterOpen</a></div><div class="ttdeci">float getShutterOpen() const</div><div class="ttdef"><b>Definition:</b> <a href="_motion_blur_params_8h_source.html#l00072">MotionBlurParams.h:72</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0cf3a7201ef710e463ce751a1d5ab294" name="a0cf3a7201ef710e463ce751a1d5ab294"></a>
@@ -494,7 +570,10 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_procedural_context.html#a108ecb346551582bc084b7f3a03aeaa5">moonray::geom::ProceduralContext</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geom_context_8h_source.html#l00052">52</a> of file <a class="el" href="_geom_context_8h_source.html">GeomContext.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   52</span>                                                    {</div>
+<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#a22382b8d1c646e6b0a7d44c3e76d8cd8">mThreads</a>;</div>
+<div class="line"><span class="lineno">   54</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af0dccb4d5c525f73cac9ff65c6e0cd21" name="af0dccb4d5c525f73cac9ff65c6e0cd21"></a>
@@ -524,7 +603,11 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_procedural_context.html#a6d06f4ed341afaf3202a39759dc4b3f2">moonray::geom::ProceduralContext</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geom_context_8cc_source.html#l00050">50</a> of file <a class="el" href="_geom_context_8cc_source.html">GeomContext.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   51</span>{</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#aa979caf48cd801222b267bbabd17e514">mMotionBlurParams</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_motion_blur_params.html#a6bdb8b138d9361bc220fc7a1017b9c7a">isMotionBlurOn</a>();</div>
+<div class="line"><span class="lineno">   53</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_motion_blur_params_html_a6bdb8b138d9361bc220fc7a1017b9c7a"><div class="ttname"><a href="classmoonray_1_1geom_1_1_motion_blur_params.html#a6bdb8b138d9361bc220fc7a1017b9c7a">moonray::geom::MotionBlurParams::isMotionBlurOn</a></div><div class="ttdeci">bool isMotionBlurOn() const</div><div class="ttdef"><b>Definition:</b> <a href="_motion_blur_params_8h_source.html#l00092">MotionBlurParams.h:92</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2b817582c03a7bd0bb9bfed462ed9f92" name="a2b817582c03a7bd0bb9bfed462ed9f92"></a>
@@ -554,6 +637,155 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_generate_context.html#a5ce46d7fcd2fbe5f2dc3115bd586cd17">moonray::geom::GenerateContext</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geom_context_8h_source.html#l00045">45</a> of file <a class="el" href="_geom_context_8h_source.html">GeomContext.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>                                                                             {</div>
+<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#a01cfb91540504ae16f34256f47dfd277">mRequestedAttributes</a>.find(attributeKey) !=</div>
+<div class="line"><span class="lineno">   47</span>            <a class="code hl_variable" href="classmoonray_1_1rt_1_1_geom_generate_context.html#a01cfb91540504ae16f34256f47dfd277">mRequestedAttributes</a>.end();</div>
+<div class="line"><span class="lineno">   48</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="abb4ea6b531187d729b8fab22ddf5318f" name="abb4ea6b531187d729b8fab22ddf5318f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb4ea6b531187d729b8fab22ddf5318f">&#9670;&#160;</a></span>mCurrentFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int moonray::rt::GeomGenerateContext::mCurrentFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_geom_context_8h_source.html#l00074">74</a> of file <a class="el" href="_geom_context_8h_source.html">GeomContext.h</a>.</p>
+
+</div>
+</div>
+<a id="aa979caf48cd801222b267bbabd17e514" name="aa979caf48cd801222b267bbabd17e514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa979caf48cd801222b267bbabd17e514">&#9670;&#160;</a></span>mMotionBlurParams</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmoonray_1_1geom_1_1_motion_blur_params.html">geom::MotionBlurParams</a>&amp; moonray::rt::GeomGenerateContext::mMotionBlurParams</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_geom_context_8h_source.html#l00076">76</a> of file <a class="el" href="_geom_context_8h_source.html">GeomContext.h</a>.</p>
+
+</div>
+</div>
+<a id="ade5ea6aa7dc10ca35f549c0036c5839c" name="ade5ea6aa7dc10ca35f549c0036c5839c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade5ea6aa7dc10ca35f549c0036c5839c">&#9670;&#160;</a></span>mRdlGeometry</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::Geometry* moonray::rt::GeomGenerateContext::mRdlGeometry</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_geom_context_8h_source.html#l00072">72</a> of file <a class="el" href="_geom_context_8h_source.html">GeomContext.h</a>.</p>
+
+</div>
+</div>
+<a id="ae0e1046172af2ef661edc5c38b2b9f5e" name="ae0e1046172af2ef661edc5c38b2b9f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0e1046172af2ef661edc5c38b2b9f5e">&#9670;&#160;</a></span>mRdlLayer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::Layer* moonray::rt::GeomGenerateContext::mRdlLayer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_geom_context_8h_source.html#l00071">71</a> of file <a class="el" href="_geom_context_8h_source.html">GeomContext.h</a>.</p>
+
+</div>
+</div>
+<a id="a01cfb91540504ae16f34256f47dfd277" name="a01cfb91540504ae16f34256f47dfd277"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01cfb91540504ae16f34256f47dfd277">&#9670;&#160;</a></span>mRequestedAttributes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemoonray_1_1shading.html#acd21779e00acbbeab334b9d08512607c">shading::AttributeKeySet</a> moonray::rt::GeomGenerateContext::mRequestedAttributes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_geom_context_8h_source.html#l00073">73</a> of file <a class="el" href="_geom_context_8h_source.html">GeomContext.h</a>.</p>
+
+</div>
+</div>
+<a id="a22382b8d1c646e6b0a7d44c3e76d8cd8" name="a22382b8d1c646e6b0a7d44c3e76d8cd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22382b8d1c646e6b0a7d44c3e76d8cd8">&#9670;&#160;</a></span>mThreads</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int moonray::rt::GeomGenerateContext::mThreads</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_geom_context_8h_source.html#l00075">75</a> of file <a class="el" href="_geom_context_8h_source.html">GeomContext.h</a>.</p>
 
 </div>
 </div>
@@ -562,9 +794,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/rt/<a class="el" href="_geom_context_8cc_source.html">GeomContext.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rt.html">rt</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rt_1_1_geom_generate_context.html">GeomGenerateContext</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

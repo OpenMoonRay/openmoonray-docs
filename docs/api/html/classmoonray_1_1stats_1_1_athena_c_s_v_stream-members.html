@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1stats.html">stats</a></li><li class="navelem"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html">AthenaCSVStream</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1stats_1_1_athena_c_s_v_stream.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">moonray::stats::AthenaCSVStream Member List</div></div>
 </div><!--header-->
@@ -51,13 +67,19 @@ $(function() {
 <p>This is the complete list of members for <a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html">moonray::stats::AthenaCSVStream</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a3aec2c4c042eb9131565bea6fb4febe6">AthenaCSVStream</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html">moonray::stats::AthenaCSVStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#ac9f154b1f58a961c6c13f382e6128c53">is_open</a>() const noexcept</td><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html">moonray::stats::AthenaCSVStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a293b358375d0935063b4e942754b952c">open</a>(bool debug)</td><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html">moonray::stats::AthenaCSVStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a6132726255098d22fe45946a9171b28a">open</a>(const scene_rdl2::util::GUID &amp;guid, bool debug)</td><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html">moonray::stats::AthenaCSVStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#ae2ef05af1933ced433867d5524ef667a">do_open</a>(Args &amp;&amp;... args)</td><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html">moonray::stats::AthenaCSVStream</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#ac9f154b1f58a961c6c13f382e6128c53">is_open</a>() const noexcept</td><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html">moonray::stats::AthenaCSVStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a5d7fe58e0a924fa2e82cafc7b1099fa8">mBuf</a></td><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html">moonray::stats::AthenaCSVStream</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a5c6ef8407710695a2160693294a58418">mOpened</a></td><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html">moonray::stats::AthenaCSVStream</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a293b358375d0935063b4e942754b952c">open</a>(bool debug)</td><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html">moonray::stats::AthenaCSVStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a6132726255098d22fe45946a9171b28a">open</a>(const scene_rdl2::util::GUID &amp;guid, bool debug)</td><td class="entry"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html">moonray::stats::AthenaCSVStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

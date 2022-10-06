@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html">RenderPrepTimingStats</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1rndr_1_1_render_prep_timing_stats.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -185,7 +201,40 @@ Protected Attributes</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="_render_statistics_8h_source.html#l00425">425</a> of file <a class="el" href="_render_statistics_8h_source.html">RenderStatistics.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  425</span>                             : <span class="keywordtype">int</span> {</div>
+<div class="line"><span class="lineno">  426</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7aad772c40e87c4f01eec1e39727e96a69">WHOLE</a> = 0,                    <span class="comment">// 0:whole</span></div>
+<div class="line"><span class="lineno">  427</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ea39d916944bbe6417f9b5c10d4b560382">START_UPDATE_PHASE_OF_FRAME</a>,  <span class="comment">// 1:startUpdatePhaseOfFrame()</span></div>
+<div class="line"><span class="lineno">  428</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0eafe0687d2909fa26f5456ee95ca0e168a">START_RENDERPREP</a>,             <span class="comment">// 2:startRenderPrep()</span></div>
+<div class="line"><span class="lineno">  429</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0eae1f88836513c559d4e5507a6958ef840">RESET_STATISTICS</a>,             <span class="comment">// 3:resetStatistics()</span></div>
+<div class="line"><span class="lineno">  430</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ead6cd0698a9bc29bd6870c1dd6b7ef205">RESET_RENDER_OUTPUT_DRIVER</a>,   <span class="comment">// 4:reset RenderOutputDriver</span></div>
+<div class="line"><span class="lineno">  431</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ea7e0b109271bd0777895b593c2574d950">FLAG_STATUS_UPDATE</a>,           <span class="comment">// 5:flag status update</span></div>
+<div class="line"><span class="lineno">  432</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ead5304fdcb73f36d144f8d9b30925987b">RESET_SHADER_STATS_AND_LOGS</a>,  <span class="comment">// 6:resetShaderStatsAndLogs</span></div>
+<div class="line"><span class="lineno">  433</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0eaadd924ce2d0dcb6886e4545c8c00ef7e">LOAD_GEOMETRIES</a>,              <span class="comment">// 7:loadGeometries()</span></div>
+<div class="line"><span class="lineno">  434</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0eacb5d5b28fc3a65e5417ed57e9d2a3847">REPORT_GEOMETRY_MEMORY</a>,       <span class="comment">// 8:reportGeometryMemory()</span></div>
+<div class="line"><span class="lineno">  435</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ea1bdca940a5e20bc8f641d919d6e48324">BUILD_MATERIAL_AOV_FLAGS</a>,     <span class="comment">// 9:buildMaterialAovFlags()</span></div>
+<div class="line"><span class="lineno">  436</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ea82b90f2b02bf8c53a67ad18f4e4a2385">BUILD_GEOMETRY_EXTENSIONS</a>,    <span class="comment">// A:buildGeometryExtensions()</span></div>
+<div class="line"><span class="lineno">  437</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ea6783c991d4091a70ec43a2c030f24248">RESET_SHADER_STATS_AND_LOGS2</a>, <span class="comment">// B:resetShaderStatsAndLogs()</span></div>
+<div class="line"><span class="lineno">  438</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ea0c18c79efde6b7538d88ae298935ad2b">PBR_STATISTICS_RESET</a>,         <span class="comment">// C:pbr statistics reset</span></div>
+<div class="line"><span class="lineno">  439</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ea03fd0f750848002e0097391a13d34160">UPDATE_PBR</a>,                   <span class="comment">// D:update PBR</span></div>
+<div class="line"><span class="lineno">  440</span> </div>
+<div class="line"><span class="lineno">  441</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7a62e5cef85d46f1a5a2144d9fd463b79e">SIZE</a>                          <span class="comment">// total tag size</span></div>
+<div class="line"><span class="lineno">  442</span>    };</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_a163770ef00d25e55dde19312d3529ae7a62e5cef85d46f1a5a2144d9fd463b79e"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7a62e5cef85d46f1a5a2144d9fd463b79e">moonray::rndr::RenderPrepTimingStats::StopFrameTag::SIZE</a></div><div class="ttdeci">@ SIZE</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_a163770ef00d25e55dde19312d3529ae7aad772c40e87c4f01eec1e39727e96a69"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7aad772c40e87c4f01eec1e39727e96a69">moonray::rndr::RenderPrepTimingStats::StopFrameTag::WHOLE</a></div><div class="ttdeci">@ WHOLE</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_ad802996a5d3ce77f9a3e99f3f1240c0ea03fd0f750848002e0097391a13d34160"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ea03fd0f750848002e0097391a13d34160">moonray::rndr::RenderPrepTimingStats::RenderPrepTag::UPDATE_PBR</a></div><div class="ttdeci">@ UPDATE_PBR</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_ad802996a5d3ce77f9a3e99f3f1240c0ea0c18c79efde6b7538d88ae298935ad2b"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ea0c18c79efde6b7538d88ae298935ad2b">moonray::rndr::RenderPrepTimingStats::RenderPrepTag::PBR_STATISTICS_RESET</a></div><div class="ttdeci">@ PBR_STATISTICS_RESET</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_ad802996a5d3ce77f9a3e99f3f1240c0ea1bdca940a5e20bc8f641d919d6e48324"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ea1bdca940a5e20bc8f641d919d6e48324">moonray::rndr::RenderPrepTimingStats::RenderPrepTag::BUILD_MATERIAL_AOV_FLAGS</a></div><div class="ttdeci">@ BUILD_MATERIAL_AOV_FLAGS</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_ad802996a5d3ce77f9a3e99f3f1240c0ea39d916944bbe6417f9b5c10d4b560382"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ea39d916944bbe6417f9b5c10d4b560382">moonray::rndr::RenderPrepTimingStats::RenderPrepTag::START_UPDATE_PHASE_OF_FRAME</a></div><div class="ttdeci">@ START_UPDATE_PHASE_OF_FRAME</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_ad802996a5d3ce77f9a3e99f3f1240c0ea6783c991d4091a70ec43a2c030f24248"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ea6783c991d4091a70ec43a2c030f24248">moonray::rndr::RenderPrepTimingStats::RenderPrepTag::RESET_SHADER_STATS_AND_LOGS2</a></div><div class="ttdeci">@ RESET_SHADER_STATS_AND_LOGS2</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_ad802996a5d3ce77f9a3e99f3f1240c0ea7e0b109271bd0777895b593c2574d950"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ea7e0b109271bd0777895b593c2574d950">moonray::rndr::RenderPrepTimingStats::RenderPrepTag::FLAG_STATUS_UPDATE</a></div><div class="ttdeci">@ FLAG_STATUS_UPDATE</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_ad802996a5d3ce77f9a3e99f3f1240c0ea82b90f2b02bf8c53a67ad18f4e4a2385"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ea82b90f2b02bf8c53a67ad18f4e4a2385">moonray::rndr::RenderPrepTimingStats::RenderPrepTag::BUILD_GEOMETRY_EXTENSIONS</a></div><div class="ttdeci">@ BUILD_GEOMETRY_EXTENSIONS</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_ad802996a5d3ce77f9a3e99f3f1240c0eaadd924ce2d0dcb6886e4545c8c00ef7e"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0eaadd924ce2d0dcb6886e4545c8c00ef7e">moonray::rndr::RenderPrepTimingStats::RenderPrepTag::LOAD_GEOMETRIES</a></div><div class="ttdeci">@ LOAD_GEOMETRIES</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_ad802996a5d3ce77f9a3e99f3f1240c0eacb5d5b28fc3a65e5417ed57e9d2a3847"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0eacb5d5b28fc3a65e5417ed57e9d2a3847">moonray::rndr::RenderPrepTimingStats::RenderPrepTag::REPORT_GEOMETRY_MEMORY</a></div><div class="ttdeci">@ REPORT_GEOMETRY_MEMORY</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_ad802996a5d3ce77f9a3e99f3f1240c0ead5304fdcb73f36d144f8d9b30925987b"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ead5304fdcb73f36d144f8d9b30925987b">moonray::rndr::RenderPrepTimingStats::RenderPrepTag::RESET_SHADER_STATS_AND_LOGS</a></div><div class="ttdeci">@ RESET_SHADER_STATS_AND_LOGS</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_ad802996a5d3ce77f9a3e99f3f1240c0ead6cd0698a9bc29bd6870c1dd6b7ef205"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ead6cd0698a9bc29bd6870c1dd6b7ef205">moonray::rndr::RenderPrepTimingStats::RenderPrepTag::RESET_RENDER_OUTPUT_DRIVER</a></div><div class="ttdeci">@ RESET_RENDER_OUTPUT_DRIVER</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_ad802996a5d3ce77f9a3e99f3f1240c0eae1f88836513c559d4e5507a6958ef840"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0eae1f88836513c559d4e5507a6958ef840">moonray::rndr::RenderPrepTimingStats::RenderPrepTag::RESET_STATISTICS</a></div><div class="ttdeci">@ RESET_STATISTICS</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_ad802996a5d3ce77f9a3e99f3f1240c0eafe0687d2909fa26f5456ee95ca0e168a"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0eafe0687d2909fa26f5456ee95ca0e168a">moonray::rndr::RenderPrepTimingStats::RenderPrepTag::START_RENDERPREP</a></div><div class="ttdeci">@ START_RENDERPREP</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a163770ef00d25e55dde19312d3529ae7" name="a163770ef00d25e55dde19312d3529ae7"></a>
@@ -220,7 +269,26 @@ Protected Attributes</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="_render_statistics_8h_source.html#l00412">412</a> of file <a class="el" href="_render_statistics_8h_source.html">RenderStatistics.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  412</span>                            : <span class="keywordtype">int</span> {</div>
+<div class="line"><span class="lineno">  413</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7aad772c40e87c4f01eec1e39727e96a69">WHOLE</a> = 0,                 <span class="comment">// 0:whole</span></div>
+<div class="line"><span class="lineno">  414</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7a1f2115ff63363d71515ec4f76baa295a">MDRIVER_STOPFRAME</a>,         <span class="comment">// 1:mDriver-&gt;stopFrame()</span></div>
+<div class="line"><span class="lineno">  415</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7a88f8a82213ebadf5f58fe6d69101b8c9">MPBRSCENE_POSTFRAME</a>,       <span class="comment">// 2:mPbrScene-&gt;postFrame()</span></div>
+<div class="line"><span class="lineno">  416</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7a64992b41b48fa6b2ce32be52c345d177">ACCUMULATE_PBR_STATS_DATA</a>, <span class="comment">// 3:accumulate pbr stats data</span></div>
+<div class="line"><span class="lineno">  417</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7a3a188c12fdacb479f46182fb9a39594a">COLLECTSHADERSTATS</a>,        <span class="comment">// 4:collectShaderStats()</span></div>
+<div class="line"><span class="lineno">  418</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7aeccc55c8ea40fc2bcdfd444bb77bb2c6">REPORTSHADINGLOGS</a>,         <span class="comment">// 5:reportShadingLogs()</span></div>
+<div class="line"><span class="lineno">  419</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7acd3321291e6c2dee1f14d6dca0e46eef">LOG_FLUSH</a>,                 <span class="comment">// 6:log &amp; flush() staff</span></div>
+<div class="line"><span class="lineno">  420</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7ab5859d8721cfdc0312b2838b9c985bc1">RESET</a>,                     <span class="comment">// 7:reset</span></div>
+<div class="line"><span class="lineno">  421</span> </div>
+<div class="line"><span class="lineno">  422</span>        <a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7a62e5cef85d46f1a5a2144d9fd463b79e">SIZE</a>                       <span class="comment">// total tag size</span></div>
+<div class="line"><span class="lineno">  423</span>    };</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_a163770ef00d25e55dde19312d3529ae7a1f2115ff63363d71515ec4f76baa295a"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7a1f2115ff63363d71515ec4f76baa295a">moonray::rndr::RenderPrepTimingStats::StopFrameTag::MDRIVER_STOPFRAME</a></div><div class="ttdeci">@ MDRIVER_STOPFRAME</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_a163770ef00d25e55dde19312d3529ae7a3a188c12fdacb479f46182fb9a39594a"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7a3a188c12fdacb479f46182fb9a39594a">moonray::rndr::RenderPrepTimingStats::StopFrameTag::COLLECTSHADERSTATS</a></div><div class="ttdeci">@ COLLECTSHADERSTATS</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_a163770ef00d25e55dde19312d3529ae7a64992b41b48fa6b2ce32be52c345d177"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7a64992b41b48fa6b2ce32be52c345d177">moonray::rndr::RenderPrepTimingStats::StopFrameTag::ACCUMULATE_PBR_STATS_DATA</a></div><div class="ttdeci">@ ACCUMULATE_PBR_STATS_DATA</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_a163770ef00d25e55dde19312d3529ae7a88f8a82213ebadf5f58fe6d69101b8c9"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7a88f8a82213ebadf5f58fe6d69101b8c9">moonray::rndr::RenderPrepTimingStats::StopFrameTag::MPBRSCENE_POSTFRAME</a></div><div class="ttdeci">@ MPBRSCENE_POSTFRAME</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_a163770ef00d25e55dde19312d3529ae7ab5859d8721cfdc0312b2838b9c985bc1"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7ab5859d8721cfdc0312b2838b9c985bc1">moonray::rndr::RenderPrepTimingStats::StopFrameTag::RESET</a></div><div class="ttdeci">@ RESET</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_a163770ef00d25e55dde19312d3529ae7acd3321291e6c2dee1f14d6dca0e46eef"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7acd3321291e6c2dee1f14d6dca0e46eef">moonray::rndr::RenderPrepTimingStats::StopFrameTag::LOG_FLUSH</a></div><div class="ttdeci">@ LOG_FLUSH</div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_a163770ef00d25e55dde19312d3529ae7aeccc55c8ea40fc2bcdfd444bb77bb2c6"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7aeccc55c8ea40fc2bcdfd444bb77bb2c6">moonray::rndr::RenderPrepTimingStats::StopFrameTag::REPORTSHADINGLOGS</a></div><div class="ttdeci">@ REPORTSHADINGLOGS</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -248,7 +316,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_statistics_8h_source.html#l00458">458</a> of file <a class="el" href="_render_statistics_8h_source.html">RenderStatistics.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  458</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad1ffe9490b313e3f423c84be60ad7c34">id</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ea62e5cef85d46f1a5a2144d9fd463b79e">RenderPrepTag::SIZE</a>); }</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_ad1ffe9490b313e3f423c84be60ad7c34"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad1ffe9490b313e3f423c84be60ad7c34">moonray::rndr::RenderPrepTimingStats::id</a></div><div class="ttdeci">static int id(const StopFrameTag &amp;tag)</div><div class="ttdef"><b>Definition:</b> <a href="_render_statistics_8h_source.html#l00465">RenderStatistics.h:465</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_ad802996a5d3ce77f9a3e99f3f1240c0ea62e5cef85d46f1a5a2144d9fd463b79e"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad802996a5d3ce77f9a3e99f3f1240c0ea62e5cef85d46f1a5a2144d9fd463b79e">moonray::rndr::RenderPrepTimingStats::RenderPrepTag::SIZE</a></div><div class="ttdeci">@ SIZE</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afd4a7ace69b36547d10e57ff8156bd3e" name="afd4a7ace69b36547d10e57ff8156bd3e"></a>
@@ -276,7 +347,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_statistics_8h_source.html#l00459">459</a> of file <a class="el" href="_render_statistics_8h_source.html">RenderStatistics.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  459</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a560506e90d95104a74a48481f9fa0261">mRenderPrep</a>[<a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad1ffe9490b313e3f423c84be60ad7c34">id</a>]; }</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_a560506e90d95104a74a48481f9fa0261"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a560506e90d95104a74a48481f9fa0261">moonray::rndr::RenderPrepTimingStats::mRenderPrep</a></div><div class="ttdeci">double mRenderPrep[static_cast&lt; int &gt;(RenderPrepTag::SIZE)]</div><div class="ttdef"><b>Definition:</b> <a href="_render_statistics_8h_source.html#l00478">RenderStatistics.h:478</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a530e4481056d6c00a51cc2faaf069675" name="a530e4481056d6c00a51cc2faaf069675"></a>
@@ -303,7 +376,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_statistics_8h_source.html#l00455">455</a> of file <a class="el" href="_render_statistics_8h_source.html">RenderStatistics.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  455</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad1ffe9490b313e3f423c84be60ad7c34">id</a>(<a class="code hl_enumvalue" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a163770ef00d25e55dde19312d3529ae7a62e5cef85d46f1a5a2144d9fd463b79e">StopFrameTag::SIZE</a>); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a67a8ee331a0d82c0ed03c7c420fa6526" name="a67a8ee331a0d82c0ed03c7c420fa6526"></a>
@@ -331,7 +405,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_statistics_8h_source.html#l00456">456</a> of file <a class="el" href="_render_statistics_8h_source.html">RenderStatistics.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  456</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a90d3ede0f333f9a283e249480ea8c453">mStopFrame</a>[<a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad1ffe9490b313e3f423c84be60ad7c34">id</a>]; }</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_a90d3ede0f333f9a283e249480ea8c453"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a90d3ede0f333f9a283e249480ea8c453">moonray::rndr::RenderPrepTimingStats::mStopFrame</a></div><div class="ttdeci">double mStopFrame[static_cast&lt; int &gt;(StopFrameTag::SIZE)]</div><div class="ttdef"><b>Definition:</b> <a href="_render_statistics_8h_source.html#l00471">RenderStatistics.h:471</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4b632c2894bbfc141aa4f9d11f6f85c1" name="a4b632c2894bbfc141aa4f9d11f6f85c1"></a>
@@ -358,7 +434,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_statistics_8h_source.html#l00453">453</a> of file <a class="el" href="_render_statistics_8h_source.html">RenderStatistics.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  453</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ac553a40614e9eba637060dd7ca332663">mWholeStartFrame</a>; }</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_ac553a40614e9eba637060dd7ca332663"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ac553a40614e9eba637060dd7ca332663">moonray::rndr::RenderPrepTimingStats::mWholeStartFrame</a></div><div class="ttdeci">double mWholeStartFrame</div><div class="ttdef"><b>Definition:</b> <a href="_render_statistics_8h_source.html#l00473">RenderStatistics.h:473</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a14bb8f49b44e8c599b5bc6554033b3c7" name="a14bb8f49b44e8c599b5bc6554033b3c7"></a>
@@ -386,7 +464,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_statistics_8h_source.html#l00466">466</a> of file <a class="el" href="_render_statistics_8h_source.html">RenderStatistics.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  466</span>{ <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(tag); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad1ffe9490b313e3f423c84be60ad7c34" name="ad1ffe9490b313e3f423c84be60ad7c34"></a>
@@ -414,7 +493,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_statistics_8h_source.html#l00465">465</a> of file <a class="el" href="_render_statistics_8h_source.html">RenderStatistics.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  465</span>{ <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(tag); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab39836532830849cb63f2cde929c4af1" name="ab39836532830849cb63f2cde929c4af1"></a>
@@ -442,7 +522,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_statistics_8h_source.html#l00448">448</a> of file <a class="el" href="_render_statistics_8h_source.html">RenderStatistics.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  448</span>{ <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a560506e90d95104a74a48481f9fa0261">mRenderPrep</a>[<a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad1ffe9490b313e3f423c84be60ad7c34">id</a>(tag)] = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ab0d500b5dfaf569b22605a72ad5c6413">mRecTime</a>.end(); <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ab0d500b5dfaf569b22605a72ad5c6413">mRecTime</a>.start(); }</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_ab0d500b5dfaf569b22605a72ad5c6413"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ab0d500b5dfaf569b22605a72ad5c6413">moonray::rndr::RenderPrepTimingStats::mRecTime</a></div><div class="ttdeci">scene_rdl2::rec_time::RecTime mRecTime</div><div class="ttdef"><b>Definition:</b> <a href="_render_statistics_8h_source.html#l00463">RenderStatistics.h:463</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3e224966906f16b4543c4392ef4d98eb" name="a3e224966906f16b4543c4392ef4d98eb"></a>
@@ -480,7 +562,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_statistics_8h_source.html#l00449">449</a> of file <a class="el" href="_render_statistics_8h_source.html">RenderStatistics.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  449</span>{ <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a560506e90d95104a74a48481f9fa0261">mRenderPrep</a>[<a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad1ffe9490b313e3f423c84be60ad7c34">id</a>(tag)] = v; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7b81cdbdf12a5ebcb59f1352d518d1c9" name="a7b81cdbdf12a5ebcb59f1352d518d1c9"></a>
@@ -508,7 +591,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_statistics_8h_source.html#l00445">445</a> of file <a class="el" href="_render_statistics_8h_source.html">RenderStatistics.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  445</span>{ <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a90d3ede0f333f9a283e249480ea8c453">mStopFrame</a>[<a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad1ffe9490b313e3f423c84be60ad7c34">id</a>(tag)] = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ab0d500b5dfaf569b22605a72ad5c6413">mRecTime</a>.end(); <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ab0d500b5dfaf569b22605a72ad5c6413">mRecTime</a>.start(); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4ff814ea90eba5b00ba9f7116e8b11b7" name="a4ff814ea90eba5b00ba9f7116e8b11b7"></a>
@@ -536,7 +620,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_statistics_8h_source.html#l00450">450</a> of file <a class="el" href="_render_statistics_8h_source.html">RenderStatistics.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  450</span>{ <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a560506e90d95104a74a48481f9fa0261">mRenderPrep</a>[<a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad1ffe9490b313e3f423c84be60ad7c34">id</a>(tag)] = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#aa970e641056262fca2cfde180080a837">mRecTimeWhole</a>.end(); }</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_timing_stats_html_aa970e641056262fca2cfde180080a837"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#aa970e641056262fca2cfde180080a837">moonray::rndr::RenderPrepTimingStats::mRecTimeWhole</a></div><div class="ttdeci">scene_rdl2::rec_time::RecTime mRecTimeWhole</div><div class="ttdef"><b>Definition:</b> <a href="_render_statistics_8h_source.html#l00463">RenderStatistics.h:463</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a21abfb89bad29c87dfd6fc76cda44ac1" name="a21abfb89bad29c87dfd6fc76cda44ac1"></a>
@@ -564,7 +650,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_statistics_8h_source.html#l00446">446</a> of file <a class="el" href="_render_statistics_8h_source.html">RenderStatistics.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  446</span>{ <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#a90d3ede0f333f9a283e249480ea8c453">mStopFrame</a>[<a class="code hl_function" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ad1ffe9490b313e3f423c84be60ad7c34">id</a>(tag)] = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#aa970e641056262fca2cfde180080a837">mRecTimeWhole</a>.end(); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac9ba627626fe7b3b60b56fcb17a8437c" name="ac9ba627626fe7b3b60b56fcb17a8437c"></a>
@@ -591,7 +678,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_statistics_8h_source.html#l00444">444</a> of file <a class="el" href="_render_statistics_8h_source.html">RenderStatistics.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  444</span>{ <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#aa970e641056262fca2cfde180080a837">mRecTimeWhole</a>.start(); <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ab0d500b5dfaf569b22605a72ad5c6413">mRecTime</a>.start(); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8b6ad6bb46f7bd564a83f8cd336bfaf9" name="a8b6ad6bb46f7bd564a83f8cd336bfaf9"></a>
@@ -619,7 +707,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_statistics_8h_source.html#l00452">452</a> of file <a class="el" href="_render_statistics_8h_source.html">RenderStatistics.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  452</span>{ <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html#ac553a40614e9eba637060dd7ca332663">mWholeStartFrame</a> = t; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -747,9 +836,13 @@ Protected Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/rndr/<a class="el" href="_render_statistics_8h_source.html">RenderStatistics.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rndr_1_1_render_prep_timing_stats.html">RenderPrepTimingStats</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

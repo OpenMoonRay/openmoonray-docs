@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_02f99361fbe6a8c61cf6ccdd2c3bf288.html">geom</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_points_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">Points.h</div></div>
 </div><!--header-->
@@ -50,7 +66,12 @@ $(function() {
 <a href="_points_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2016-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file Points.h</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Wayne Huang</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// $Id$</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">///</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="_layer_assignment_id_8h.html">rendering/geom/LayerAssignmentId.h</a>&gt;</span></div>
@@ -63,8 +84,11 @@ $(function() {
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemoonray.html">moonray</a> {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span>geom {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_points.html">   26</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1geom_1_1_points.html">Points</a> : <span class="keyword">public</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1_primitive.html">Primitive</a></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"></span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/// @class Points</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">/// @brief Primitive that composed by a set of points that is intended</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">///        to be used for particles effects</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_points.html">   26</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1geom_1_1_points.html">Points</a> : <span class="keyword">public</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1_primitive.html">Primitive</a></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_points.html#a1a4c72105d903a3c6e61d967b1789df7">   29</a></span>    <span class="keyword">typedef</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer&lt;Vec3f, InterleavedTraits&gt;</a> <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_points.html#a1a4c72105d903a3c6e61d967b1789df7">VertexBuffer</a>;</div>
@@ -81,23 +105,31 @@ $(function() {
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">virtual</span> <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_primitive.html#a6ec1e752af007a2007fe341be5aa5810">size_type</a> <a class="code hl_function" href="classmoonray_1_1geom_1_1_points.html#ab2fbf7a3996060be57ef2212bfaa8db8">getMemory</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">virtual</span> <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_primitive.html#a6ec1e752af007a2007fe341be5aa5810">size_type</a> <a class="code hl_function" href="classmoonray_1_1geom_1_1_points.html#a1c2b41716988e673b46800b9ba8dbecd">getMotionSamplesCount</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_points.html#a8608b30183607357903bf57b82a0f1a5">setName</a>(<span class="keyword">const</span> std::string&amp; name);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"></span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">    /// set the primitive name</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">    /// @param name the name of this primitive</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_points.html#a8608b30183607357903bf57b82a0f1a5">setName</a>(<span class="keyword">const</span> std::string&amp; name);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_points.html#a44e696563cbb99588f31c6974af7aa9f">setCurvedMotionBlurSampleCount</a>(<span class="keywordtype">int</span> count);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classmoonray_1_1geom_1_1_points.html#a813b128a91ea3c2f7bb190755ba191d6">getName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"></span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">    /// get the primitive name</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">    /// @return name the name of this primitive</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"></span>    <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classmoonray_1_1geom_1_1_points.html#a813b128a91ea3c2f7bb190755ba191d6">getName</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">internal::Primitive</a>* getPrimitiveImpl() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> transformPrimitive(</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">private</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">    /// @remark For renderer internal use, procedural should never call this</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">    /// @internal</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">internal::Primitive</a>* <a class="code hl_function" href="classmoonray_1_1geom_1_1_points.html#a03c91749af3772d3ff03b3489e9675dc">getPrimitiveImpl</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"></span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">    /// @remark For renderer internal use, procedural should never call this</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">    /// @internal</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_points.html#a517c2e73160892dfd22e2af60ab42484">transformPrimitive</a>(</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1_motion_blur_params.html">MotionBlurParams</a>&amp; motionBlurParams,</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a>&amp; prim2render) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structmoonray_1_1geom_1_1_points_1_1_impl.html">Impl</a>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    std::unique_ptr&lt;Impl&gt; mImpl;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_points.html#afb5e16a065f709ec261369fcab3485e8">   67</a></span>    std::unique_ptr&lt;Impl&gt; <a class="code hl_variable" href="classmoonray_1_1geom_1_1_points.html#afb5e16a065f709ec261369fcab3485e8">mImpl</a>;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>} <span class="comment">// namespace geom</span></div>
@@ -116,15 +148,18 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html">moonray::geom::LayerAssignmentId</a></div><div class="ttdoc">This class represents the mapping from each sub-primitive (face/curve) to a corresponding layer assig...</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00040">LayerAssignmentId.h:41</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_motion_blur_params_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1_motion_blur_params.html">moonray::geom::MotionBlurParams</a></div><div class="ttdef"><b>Definition:</b> <a href="_motion_blur_params_8h_source.html#l00017">MotionBlurParams.h:17</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_points_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1_points.html">moonray::geom::Points</a></div><div class="ttdoc">Primitive that composed by a set of points that is intended to be used for particles effects.</div><div class="ttdef"><b>Definition:</b> <a href="_points_8h_source.html#l00026">Points.h:27</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_points_html_a03c91749af3772d3ff03b3489e9675dc"><div class="ttname"><a href="classmoonray_1_1geom_1_1_points.html#a03c91749af3772d3ff03b3489e9675dc">moonray::geom::Points::getPrimitiveImpl</a></div><div class="ttdeci">virtual internal::Primitive * getPrimitiveImpl() override</div><div class="ttdef"><b>Definition:</b> <a href="_points_8cc_source.html#l00097">Points.cc:97</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_points_html_a1a4c72105d903a3c6e61d967b1789df7"><div class="ttname"><a href="classmoonray_1_1geom_1_1_points.html#a1a4c72105d903a3c6e61d967b1789df7">moonray::geom::Points::VertexBuffer</a></div><div class="ttdeci">moonray::geom::VertexBuffer&lt; Vec3f, InterleavedTraits &gt; VertexBuffer</div><div class="ttdef"><b>Definition:</b> <a href="_points_8h_source.html#l00029">Points.h:29</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_points_html_a1c2b41716988e673b46800b9ba8dbecd"><div class="ttname"><a href="classmoonray_1_1geom_1_1_points.html#a1c2b41716988e673b46800b9ba8dbecd">moonray::geom::Points::getMotionSamplesCount</a></div><div class="ttdeci">virtual size_type getMotionSamplesCount() const override</div><div class="ttdoc">return the number of motion samples</div><div class="ttdef"><b>Definition:</b> <a href="_points_8cc_source.html#l00053">Points.cc:53</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_points_html_a3af7b84227554f9efbe62dede95b19c0"><div class="ttname"><a href="classmoonray_1_1geom_1_1_points.html#a3af7b84227554f9efbe62dede95b19c0">moonray::geom::Points::accept</a></div><div class="ttdeci">virtual void accept(PrimitiveVisitor &amp;v) override</div><div class="ttdef"><b>Definition:</b> <a href="_points_8cc_source.html#l00041">Points.cc:41</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_points_html_a40e246128f9308b7d6aa9ad7b285c93a"><div class="ttname"><a href="classmoonray_1_1geom_1_1_points.html#a40e246128f9308b7d6aa9ad7b285c93a">moonray::geom::Points::RadiusBuffer</a></div><div class="ttdeci">std::vector&lt; float &gt; RadiusBuffer</div><div class="ttdef"><b>Definition:</b> <a href="_points_8h_source.html#l00030">Points.h:30</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_points_html_a44e696563cbb99588f31c6974af7aa9f"><div class="ttname"><a href="classmoonray_1_1geom_1_1_points.html#a44e696563cbb99588f31c6974af7aa9f">moonray::geom::Points::setCurvedMotionBlurSampleCount</a></div><div class="ttdeci">void setCurvedMotionBlurSampleCount(int count)</div><div class="ttdef"><b>Definition:</b> <a href="_points_8cc_source.html#l00071">Points.cc:71</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_points_html_a517c2e73160892dfd22e2af60ab42484"><div class="ttname"><a href="classmoonray_1_1geom_1_1_points.html#a517c2e73160892dfd22e2af60ab42484">moonray::geom::Points::transformPrimitive</a></div><div class="ttdeci">virtual void transformPrimitive(const MotionBlurParams &amp;motionBlurParams, const shading::XformSamples &amp;prim2render) override</div><div class="ttdef"><b>Definition:</b> <a href="_points_8cc_source.html#l00077">Points.cc:77</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_points_html_a601d922bbb0e50b394d3fe0e7ab914e2"><div class="ttname"><a href="classmoonray_1_1geom_1_1_points.html#a601d922bbb0e50b394d3fe0e7ab914e2">moonray::geom::Points::~Points</a></div><div class="ttdeci">~Points()</div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_points_html_a813b128a91ea3c2f7bb190755ba191d6"><div class="ttname"><a href="classmoonray_1_1geom_1_1_points.html#a813b128a91ea3c2f7bb190755ba191d6">moonray::geom::Points::getName</a></div><div class="ttdeci">const std::string &amp; getName() const</div><div class="ttdef"><b>Definition:</b> <a href="_points_8cc_source.html#l00065">Points.cc:65</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_points_html_a8608b30183607357903bf57b82a0f1a5"><div class="ttname"><a href="classmoonray_1_1geom_1_1_points.html#a8608b30183607357903bf57b82a0f1a5">moonray::geom::Points::setName</a></div><div class="ttdeci">void setName(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="_points_8cc_source.html#l00059">Points.cc:59</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_points_html_ab2fbf7a3996060be57ef2212bfaa8db8"><div class="ttname"><a href="classmoonray_1_1geom_1_1_points.html#ab2fbf7a3996060be57ef2212bfaa8db8">moonray::geom::Points::getMemory</a></div><div class="ttdeci">virtual size_type getMemory() const override</div><div class="ttdoc">return the memory usage of this primitive in bytes</div><div class="ttdef"><b>Definition:</b> <a href="_points_8cc_source.html#l00047">Points.cc:47</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_points_html_afb5e16a065f709ec261369fcab3485e8"><div class="ttname"><a href="classmoonray_1_1geom_1_1_points.html#afb5e16a065f709ec261369fcab3485e8">moonray::geom::Points::mImpl</a></div><div class="ttdeci">std::unique_ptr&lt; Impl &gt; mImpl</div><div class="ttdef"><b>Definition:</b> <a href="_points_8h_source.html#l00067">Points.h:67</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></div><div class="ttdoc">base class for all primitive types.</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_8h_source.html#l00045">Primitive.h:46</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a6ec1e752af007a2007fe341be5aa5810"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a6ec1e752af007a2007fe341be5aa5810">moonray::geom::Primitive::size_type</a></div><div class="ttdeci">uint32_t size_type</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_8h_source.html#l00052">Primitive.h:52</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_visitor_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive_visitor.html">moonray::geom::PrimitiveVisitor</a></div><div class="ttdoc">Base class for performing operation on Primitives.</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_visitor_8h_source.html#l00036">PrimitiveVisitor.h:37</a></div></div>
@@ -135,9 +170,13 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="astructmoonray_1_1geom_1_1_points_1_1_impl_html"><div class="ttname"><a href="structmoonray_1_1geom_1_1_points_1_1_impl.html">moonray::geom::Points::Impl</a></div><div class="ttdef"><b>Definition:</b> <a href="_points_8cc_source.html#l00023">Points.cc:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_0486ff0a15d68326ffdea20a24729a76.html">geom</a></li><li class="navelem"><a class="el" href="_points_8h.html">Points.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_state.html">State</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_state.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_state-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::State Class Reference</div></div>
 </div><!--header-->
@@ -146,6 +163,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3bbb350acd39e021fa78508f4000a19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a744696ed0dece5426b2d3e5d79b2f033"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmoonray_1_1shading_1_1_intersection.html">Intersection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_state.html#a744696ed0dece5426b2d3e5d79b2f033">getIntersection</a> () const</td></tr>
 <tr class="separator:a744696ed0dece5426b2d3e5d79b2f033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad20ca1a410fa4ec88d43eb16f6ba7485"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmoonray_1_1shading_1_1_intersection.html">Intersection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a></td></tr>
+<tr class="separator:ad20ca1a410fa4ec88d43eb16f6ba7485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -176,7 +198,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="bvh_2shading_2_state_8h_source.html#l00029">29</a> of file <a class="el" href="bvh_2shading_2_state_8h_source.html">State.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   29</span>                                           :</div>
+<div class="line"><span class="lineno">   30</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>(intersection)</div>
+<div class="line"><span class="lineno">   31</span>    {}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_ad20ca1a410fa4ec88d43eb16f6ba7485"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">moonray::shading::State::mIntersection</a></div><div class="ttdeci">const Intersection * mIntersection</div><div class="ttdef"><b>Definition:</b> <a href="bvh_2shading_2_state_8h_source.html#l00106">State.h:106</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -197,7 +223,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00050">50</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   50</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#ab9f0112694f866c141541d049a2e52d4">adaptNormal</a>(Ns); }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_ab9f0112694f866c141541d049a2e52d4"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#ab9f0112694f866c141541d049a2e52d4">moonray::shading::Intersection::adaptNormal</a></div><div class="ttdeci">scene_rdl2::math::Vec3f adaptNormal(const scene_rdl2::math::Vec3f &amp;Ns) const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8cc_source.html#l00152">Intersection.cc:152</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae4a69f3ed2e794c74fd5abc10533f270" name="ae4a69f3ed2e794c74fd5abc10533f270"></a>
@@ -217,7 +245,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00051">51</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   51</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#adfe02a86b4299f85b79e4fd793c4647b">adaptToonNormal</a>(Ns); }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_adfe02a86b4299f85b79e4fd793c4647b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#adfe02a86b4299f85b79e4fd793c4647b">moonray::shading::Intersection::adaptToonNormal</a></div><div class="ttdeci">scene_rdl2::math::Vec3f adaptToonNormal(const scene_rdl2::math::Vec3f &amp;Ns) const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8cc_source.html#l00138">Intersection.cc:138</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adb8191d572e29d785eb2fd06a1d0b615" name="adb8191d572e29d785eb2fd06a1d0b615"></a>
@@ -256,7 +286,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00048">48</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   48</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#a6a82fba5285c26698f43c5ef76dce39b">getCameraId</a>(); }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a6a82fba5285c26698f43c5ef76dce39b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a6a82fba5285c26698f43c5ef76dce39b">moonray::shading::Intersection::getCameraId</a></div><div class="ttdeci">finline int getCameraId() const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00584">Intersection.h:584</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a86bfad4aae5a4d175b293215393846fc" name="a86bfad4aae5a4d175b293215393846fc"></a>
@@ -355,7 +387,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00023">23</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   23</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#ade2f06fc2c8e6a8cb2bda6ca9ea014ca">getdNds</a>();           }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_ade2f06fc2c8e6a8cb2bda6ca9ea014ca"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#ade2f06fc2c8e6a8cb2bda6ca9ea014ca">moonray::shading::Intersection::getdNds</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f const &amp; getdNds() const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00510">Intersection.h:510</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af3ec290c7a21667c3c85de798a24def3" name="af3ec290c7a21667c3c85de798a24def3"></a>
@@ -374,7 +408,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00024">24</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#accfce4815e646b988f7dc8b0b0c61730">getdNdt</a>();           }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_accfce4815e646b988f7dc8b0b0c61730"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#accfce4815e646b988f7dc8b0b0c61730">moonray::shading::Intersection::getdNdt</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f const &amp; getdNdt() const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00511">Intersection.h:511</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5448eebfbcf9cd7c366f20d09d6e99c1" name="a5448eebfbcf9cd7c366f20d09d6e99c1"></a>
@@ -393,7 +429,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00021">21</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   21</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#aafcd5b6e6b942f3a2f16da3d70e7f251">getdPds</a>();           }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_aafcd5b6e6b942f3a2f16da3d70e7f251"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#aafcd5b6e6b942f3a2f16da3d70e7f251">moonray::shading::Intersection::getdPds</a></div><div class="ttdeci">finline const scene_rdl2::math::Vec3f &amp; getdPds() const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00403">Intersection.h:403</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab14f8024a0707e2e6bf56ddffa43cddb" name="ab14f8024a0707e2e6bf56ddffa43cddb"></a>
@@ -412,7 +450,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00022">22</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   22</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#aae255a7df7066751e6e0ef25fc404c30">getdPdt</a>();           }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_aae255a7df7066751e6e0ef25fc404c30"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#aae255a7df7066751e6e0ef25fc404c30">moonray::shading::Intersection::getdPdt</a></div><div class="ttdeci">finline const scene_rdl2::math::Vec3f &amp; getdPdt() const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00404">Intersection.h:404</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae0e32ede60f5d77a1c7c1073811adf26" name="ae0e32ede60f5d77a1c7c1073811adf26"></a>
@@ -431,7 +471,21 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00187">187</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  188</span>{</div>
+<div class="line"><span class="lineno">  189</span>    <span class="keyword">const</span> math::Vec3f dpds = <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a5448eebfbcf9cd7c366f20d09d6e99c1">getdPds</a>();</div>
+<div class="line"><span class="lineno">  190</span>    <span class="keyword">const</span> math::Vec3f dpdt = <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#ab14f8024a0707e2e6bf56ddffa43cddb">getdPdt</a>();</div>
+<div class="line"><span class="lineno">  191</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> dsdx = <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#afe6689ddcc27162ed84bcd5c9c2b4ebc">getdSdx</a>();</div>
+<div class="line"><span class="lineno">  192</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> dtdx = <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a04a250c1d894a78537ff6e6d2b41c3d4">getdTdx</a>();</div>
+<div class="line"><span class="lineno">  193</span> </div>
+<div class="line"><span class="lineno">  194</span>    <span class="keyword">const</span> math::Vec3f dpdx = dpds * dsdx + dpdt * dtdx;</div>
+<div class="line"><span class="lineno">  195</span> </div>
+<div class="line"><span class="lineno">  196</span>    <span class="keywordflow">return</span> dpdx;</div>
+<div class="line"><span class="lineno">  197</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a04a250c1d894a78537ff6e6d2b41c3d4"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a04a250c1d894a78537ff6e6d2b41c3d4">moonray::shading::State::getdTdx</a></div><div class="ttdeci">float getdTdx() const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00032">State.cc:32</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a5448eebfbcf9cd7c366f20d09d6e99c1"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a5448eebfbcf9cd7c366f20d09d6e99c1">moonray::shading::State::getdPds</a></div><div class="ttdeci">const scene_rdl2::math::Vec3f &amp; getdPds() const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00021">State.cc:21</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_ab14f8024a0707e2e6bf56ddffa43cddb"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#ab14f8024a0707e2e6bf56ddffa43cddb">moonray::shading::State::getdPdt</a></div><div class="ttdeci">const scene_rdl2::math::Vec3f &amp; getdPdt() const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00022">State.cc:22</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_afe6689ddcc27162ed84bcd5c9c2b4ebc"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#afe6689ddcc27162ed84bcd5c9c2b4ebc">moonray::shading::State::getdSdx</a></div><div class="ttdeci">float getdSdx() const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00030">State.cc:30</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8ae08f635f3b5a96ce3bfc6bb1c6d4d6" name="a8ae08f635f3b5a96ce3bfc6bb1c6d4d6"></a>
@@ -450,7 +504,19 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00200">200</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  201</span>{</div>
+<div class="line"><span class="lineno">  202</span>    <span class="keyword">const</span> math::Vec3f dpds = <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a5448eebfbcf9cd7c366f20d09d6e99c1">getdPds</a>();</div>
+<div class="line"><span class="lineno">  203</span>    <span class="keyword">const</span> math::Vec3f dpdt = <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#ab14f8024a0707e2e6bf56ddffa43cddb">getdPdt</a>();</div>
+<div class="line"><span class="lineno">  204</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> dsdy = <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a621ad1c4607197bdf06040308b75f9d5">getdSdy</a>();</div>
+<div class="line"><span class="lineno">  205</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> dtdy = <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a5fc301832fd2a69688845851f20b3865">getdTdy</a>();</div>
+<div class="line"><span class="lineno">  206</span> </div>
+<div class="line"><span class="lineno">  207</span>    <span class="keyword">const</span> math::Vec3f dpdy = dpds * dsdy + dpdt * dtdy;</div>
+<div class="line"><span class="lineno">  208</span> </div>
+<div class="line"><span class="lineno">  209</span>    <span class="keywordflow">return</span> dpdy;</div>
+<div class="line"><span class="lineno">  210</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a5fc301832fd2a69688845851f20b3865"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a5fc301832fd2a69688845851f20b3865">moonray::shading::State::getdTdy</a></div><div class="ttdeci">float getdTdy() const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00033">State.cc:33</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a621ad1c4607197bdf06040308b75f9d5"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a621ad1c4607197bdf06040308b75f9d5">moonray::shading::State::getdSdy</a></div><div class="ttdeci">float getdSdy() const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00031">State.cc:31</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afe6689ddcc27162ed84bcd5c9c2b4ebc" name="afe6689ddcc27162ed84bcd5c9c2b4ebc"></a>
@@ -469,7 +535,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00030">30</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   30</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#aef07e7153a4e1b6349e6c0fe65c12cc4">getdSdx</a>(); }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_aef07e7153a4e1b6349e6c0fe65c12cc4"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#aef07e7153a4e1b6349e6c0fe65c12cc4">moonray::shading::Intersection::getdSdx</a></div><div class="ttdeci">finline float getdSdx() const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00505">Intersection.h:505</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a621ad1c4607197bdf06040308b75f9d5" name="a621ad1c4607197bdf06040308b75f9d5"></a>
@@ -488,7 +556,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00031">31</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   31</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#a3645bbac3d26cd2f1a96e5add4149f7e">getdSdy</a>(); }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a3645bbac3d26cd2f1a96e5add4149f7e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a3645bbac3d26cd2f1a96e5add4149f7e">moonray::shading::Intersection::getdSdy</a></div><div class="ttdeci">finline float getdSdy() const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00506">Intersection.h:506</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a04a250c1d894a78537ff6e6d2b41c3d4" name="a04a250c1d894a78537ff6e6d2b41c3d4"></a>
@@ -507,7 +577,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00032">32</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   32</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#ad2b8806321d41cfd9291aaf7ea0869b4">getdTdx</a>(); }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_ad2b8806321d41cfd9291aaf7ea0869b4"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#ad2b8806321d41cfd9291aaf7ea0869b4">moonray::shading::Intersection::getdTdx</a></div><div class="ttdeci">finline float getdTdx() const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00507">Intersection.h:507</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5fc301832fd2a69688845851f20b3865" name="a5fc301832fd2a69688845851f20b3865"></a>
@@ -526,7 +598,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00033">33</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#a7e1c98b67ada3b47395b7c1478f8efb0">getdTdy</a>(); }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a7e1c98b67ada3b47395b7c1478f8efb0"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a7e1c98b67ada3b47395b7c1478f8efb0">moonray::shading::Intersection::getdTdy</a></div><div class="ttdeci">finline float getdTdy() const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00508">Intersection.h:508</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa12659b6a5bdf17c4caae0983450bdaf" name="aa12659b6a5bdf17c4caae0983450bdaf"></a>
@@ -556,7 +630,18 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00213">213</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  215</span>{</div>
+<div class="line"><span class="lineno">  216</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a4e086cbdab8170e08cd38d00d97b25cc">isdsProvided</a>(key)) {</div>
+<div class="line"><span class="lineno">  217</span>        dVec3fAttrds = <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a86bfad4aae5a4d175b293215393846fc">getdAttributeds</a>(<span class="keyword">static_cast&lt;</span>shading::TypedAttributeKey&lt;math::Vec3f&gt;<span class="keyword">&gt;</span>(key));</div>
+<div class="line"><span class="lineno">  218</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  219</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  220</span>        dVec3fAttrds = math::zero;</div>
+<div class="line"><span class="lineno">  221</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  222</span>    }</div>
+<div class="line"><span class="lineno">  223</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a4e086cbdab8170e08cd38d00d97b25cc"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a4e086cbdab8170e08cd38d00d97b25cc">moonray::shading::State::isdsProvided</a></div><div class="ttdeci">bool isdsProvided(shading::AttributeKey key) const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00036">State.cc:36</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a86bfad4aae5a4d175b293215393846fc"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a86bfad4aae5a4d175b293215393846fc">moonray::shading::State::getdAttributeds</a></div><div class="ttdeci">T getdAttributeds(shading::TypedAttributeKey&lt; T &gt; key) const</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abccb8f6760e670da529dc8fb162f3543" name="abccb8f6760e670da529dc8fb162f3543"></a>
@@ -586,7 +671,18 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00226">226</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  228</span>{</div>
+<div class="line"><span class="lineno">  229</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a883f23d683587e7bb1eaa51cb64f5776">isdtProvided</a>(key)) {</div>
+<div class="line"><span class="lineno">  230</span>        dVec3fAttrdt = <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a3bbb350acd39e021fa78508f4000a19e">getdAttributedt</a>(<span class="keyword">static_cast&lt;</span>shading::TypedAttributeKey&lt;math::Vec3f&gt;<span class="keyword">&gt;</span>(key));</div>
+<div class="line"><span class="lineno">  231</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  232</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  233</span>        dVec3fAttrdt = math::zero;</div>
+<div class="line"><span class="lineno">  234</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  235</span>    }</div>
+<div class="line"><span class="lineno">  236</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a3bbb350acd39e021fa78508f4000a19e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a3bbb350acd39e021fa78508f4000a19e">moonray::shading::State::getdAttributedt</a></div><div class="ttdeci">T getdAttributedt(shading::TypedAttributeKey&lt; T &gt; key) const</div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a883f23d683587e7bb1eaa51cb64f5776"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a883f23d683587e7bb1eaa51cb64f5776">moonray::shading::State::isdtProvided</a></div><div class="ttdeci">bool isdtProvided(shading::AttributeKey key) const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00037">State.cc:37</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a837cd74aa80577bf99a36a3eb654f9b9" name="a837cd74aa80577bf99a36a3eb654f9b9"></a>
@@ -616,7 +712,17 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00239">239</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  241</span>{</div>
+<div class="line"><span class="lineno">  242</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a4e086cbdab8170e08cd38d00d97b25cc">isdsProvided</a>(key) &amp;&amp; <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a883f23d683587e7bb1eaa51cb64f5776">isdtProvided</a>(key)) {</div>
+<div class="line"><span class="lineno">  243</span>        dVec3fAttrdx = <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a9b3c7ade048b82d37e3143a70a5ede0a">getdAttributedx</a>(<span class="keyword">static_cast&lt;</span>shading::TypedAttributeKey&lt;math::Vec3f&gt;<span class="keyword">&gt;</span>(key));</div>
+<div class="line"><span class="lineno">  244</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  245</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  246</span>        dVec3fAttrdx = math::zero;</div>
+<div class="line"><span class="lineno">  247</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  248</span>    }</div>
+<div class="line"><span class="lineno">  249</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a9b3c7ade048b82d37e3143a70a5ede0a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a9b3c7ade048b82d37e3143a70a5ede0a">moonray::shading::State::getdAttributedx</a></div><div class="ttdeci">T getdAttributedx(shading::TypedAttributeKey&lt; T &gt; key) const</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4f14b176149a06231a0329f5c9ec6375" name="a4f14b176149a06231a0329f5c9ec6375"></a>
@@ -646,7 +752,17 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00252">252</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  254</span>{</div>
+<div class="line"><span class="lineno">  255</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a4e086cbdab8170e08cd38d00d97b25cc">isdsProvided</a>(key) &amp;&amp; <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a883f23d683587e7bb1eaa51cb64f5776">isdtProvided</a>(key)) {</div>
+<div class="line"><span class="lineno">  256</span>        dVec3fAttrdy = <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a07e734596150852f19802a4add959656">getdAttributedy</a>(<span class="keyword">static_cast&lt;</span>shading::TypedAttributeKey&lt;math::Vec3f&gt;<span class="keyword">&gt;</span>(key));</div>
+<div class="line"><span class="lineno">  257</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  258</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  259</span>        dVec3fAttrdy = math::zero;</div>
+<div class="line"><span class="lineno">  260</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  261</span>    }</div>
+<div class="line"><span class="lineno">  262</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a07e734596150852f19802a4add959656"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a07e734596150852f19802a4add959656">moonray::shading::State::getdAttributedy</a></div><div class="ttdeci">T getdAttributedy(shading::TypedAttributeKey&lt; T &gt; key) const</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a278f015c787d25156c3120ec2437f967" name="a278f015c787d25156c3120ec2437f967"></a>
@@ -665,7 +781,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00028">28</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   28</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#ae547ba0f8870b09e27c8accb8159d318">getGeometryObject</a>(); }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_ae547ba0f8870b09e27c8accb8159d318"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#ae547ba0f8870b09e27c8accb8159d318">moonray::shading::Intersection::getGeometryObject</a></div><div class="ttdeci">finline const scene_rdl2::rdl2::Geometry * getGeometryObject() const</div><div class="ttdoc">What is this intersection about.</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00379">Intersection.h:379</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a744696ed0dece5426b2d3e5d79b2f033" name="a744696ed0dece5426b2d3e5d79b2f033"></a>
@@ -692,7 +810,8 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="bvh_2shading_2_state_8h_source.html#l00103">103</a> of file <a class="el" href="bvh_2shading_2_state_8h_source.html">State.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  103</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a15ef6858b55c22635a25f84746895415" name="a15ef6858b55c22635a25f84746895415"></a>
@@ -711,7 +830,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00046">46</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   46</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#a5ed7088eaded089b7c3711e93dca3540">getMediumIor</a>(); }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a5ed7088eaded089b7c3711e93dca3540"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a5ed7088eaded089b7c3711e93dca3540">moonray::shading::Intersection::getMediumIor</a></div><div class="ttdeci">finline float getMediumIor() const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00581">Intersection.h:581</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad7f8b8233e2c4e1bd872feb0b280f8ba" name="ad7f8b8233e2c4e1bd872feb0b280f8ba"></a>
@@ -730,7 +851,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00027">27</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   27</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#ac0fe9c5d67380c60a48cd2121fdb20da">getMinRoughness</a>();   }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_ac0fe9c5d67380c60a48cd2121fdb20da"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#ac0fe9c5d67380c60a48cd2121fdb20da">moonray::shading::Intersection::getMinRoughness</a></div><div class="ttdeci">finline const scene_rdl2::math::Vec2f &amp; getMinRoughness() const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00564">Intersection.h:564</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8d7476dddd4faac4f51254eada6f4f70" name="a8d7476dddd4faac4f51254eada6f4f70"></a>
@@ -749,7 +872,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00020">20</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   20</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#ae8900171136cd0d5efe8ff5ff87bb5e8">getN</a>();              }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_ae8900171136cd0d5efe8ff5ff87bb5e8"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#ae8900171136cd0d5efe8ff5ff87bb5e8">moonray::shading::Intersection::getN</a></div><div class="ttdeci">finline const scene_rdl2::math::Vec3f &amp; getN() const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00401">Intersection.h:401</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a88e3db578a70287dda925b41238a18b7" name="a88e3db578a70287dda925b41238a18b7"></a>
@@ -768,7 +893,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00019">19</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   19</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#aa01dc6b701a610f9b5d8e6a330b70eff">getNg</a>();             }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_aa01dc6b701a610f9b5d8e6a330b70eff"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#aa01dc6b701a610f9b5d8e6a330b70eff">moonray::shading::Intersection::getNg</a></div><div class="ttdeci">finline const scene_rdl2::math::Vec3f &amp; getNg() const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00400">Intersection.h:400</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad8ccee9ae376602dcaaf34765f76c9b1" name="ad8ccee9ae376602dcaaf34765f76c9b1"></a>
@@ -787,7 +914,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00018">18</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   18</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#ad5d8816f3edf1ed8f3eb26118080a38d">getP</a>();              }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_ad5d8816f3edf1ed8f3eb26118080a38d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#ad5d8816f3edf1ed8f3eb26118080a38d">moonray::shading::Intersection::getP</a></div><div class="ttdeci">finline const scene_rdl2::math::Vec3f &amp; getP() const</div><div class="ttdoc">Differential Geometry.</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00399">Intersection.h:399</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0cc3d4786f0294ea07bd785917b43cb5" name="a0cc3d4786f0294ea07bd785917b43cb5"></a>
@@ -807,7 +936,54 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00145">145</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  146</span>{</div>
+<div class="line"><span class="lineno">  147</span>    refN = math::zero;</div>
+<div class="line"><span class="lineno">  148</span> </div>
+<div class="line"><span class="lineno">  149</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a05ada6c0b00f205667936a67d765367d">isProvided</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#ae17ffb4111502b7d9ebfca02f706d821">shading::StandardAttributes::sRefN</a>)) {</div>
+<div class="line"><span class="lineno">  150</span>        refN = <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#adb8191d572e29d785eb2fd06a1d0b615">getAttribute</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#ae17ffb4111502b7d9ebfca02f706d821">shading::StandardAttributes::sRefN</a>);</div>
+<div class="line"><span class="lineno">  151</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a05ada6c0b00f205667936a67d765367d">isProvided</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a8d8d372e2f937e24b2a237d502e0dbd4">shading::StandardAttributes::sRefP</a>)) {</div>
+<div class="line"><span class="lineno">  152</span>        <span class="comment">// Compute refN from refP partials</span></div>
+<div class="line"><span class="lineno">  153</span>        math::Vec3f dPds, dPdt;</div>
+<div class="line"><span class="lineno">  154</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#aa12659b6a5bdf17c4caae0983450bdaf">getdVec3fAttrds</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a8d8d372e2f937e24b2a237d502e0dbd4">shading::StandardAttributes::sRefP</a>, dPds);</div>
+<div class="line"><span class="lineno">  155</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#abccb8f6760e670da529dc8fb162f3543">getdVec3fAttrdt</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a8d8d372e2f937e24b2a237d502e0dbd4">shading::StandardAttributes::sRefP</a>, dPdt);</div>
+<div class="line"><span class="lineno">  156</span>        <span class="keywordflow">if</span> (math::isZero(math::lengthSqr(dPds))) {</div>
+<div class="line"><span class="lineno">  157</span>            <span class="comment">// Invalid zero vector. Avoid divide by zero and NaNs</span></div>
+<div class="line"><span class="lineno">  158</span>            <span class="comment">// that would result from math::normalize().</span></div>
+<div class="line"><span class="lineno">  159</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  160</span>        }</div>
+<div class="line"><span class="lineno">  161</span>        dPds = math::normalize(dPds);</div>
+<div class="line"><span class="lineno">  162</span>        <span class="comment">// For curves, since dPdt is zero, we use the camera direction</span></div>
+<div class="line"><span class="lineno">  163</span>        <span class="comment">// Wo and make it orthogonal to dPds</span></div>
+<div class="line"><span class="lineno">  164</span>        <span class="keywordflow">if</span> (math::isZero(math::lengthSqr(dPdt))) {</div>
+<div class="line"><span class="lineno">  165</span>            dPdt = <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a80e3a3098aa748d128470eeba6159bc3">getWo</a>();</div>
+<div class="line"><span class="lineno">  166</span>            dPdt = math::cross(dPds, math::cross(dPds, math::normalize(dPdt)));</div>
+<div class="line"><span class="lineno">  167</span> </div>
+<div class="line"><span class="lineno">  168</span>        }</div>
+<div class="line"><span class="lineno">  169</span>        refN = math::cross(dPds, math::normalize(dPdt));</div>
+<div class="line"><span class="lineno">  170</span>        <span class="keywordflow">if</span> (math::isZero(math::lengthSqr(refN))) {</div>
+<div class="line"><span class="lineno">  171</span>            <span class="comment">// dPds and dPdt are identical so their cross product is a zero vector.</span></div>
+<div class="line"><span class="lineno">  172</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  173</span>        }</div>
+<div class="line"><span class="lineno">  174</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  175</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  176</span>    }</div>
+<div class="line"><span class="lineno">  177</span> </div>
+<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#aa32c02c236b56870743fc66646417d37">isEntering</a>() == <span class="keyword">false</span>) {</div>
+<div class="line"><span class="lineno">  179</span>        <span class="comment">// Flip reference space normals on exiting a surface</span></div>
+<div class="line"><span class="lineno">  180</span>        refN = -refN;</div>
+<div class="line"><span class="lineno">  181</span>    }</div>
+<div class="line"><span class="lineno">  182</span> </div>
+<div class="line"><span class="lineno">  183</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  184</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_standard_attributes_html_a8d8d372e2f937e24b2a237d502e0dbd4"><div class="ttname"><a href="classmoonray_1_1shading_1_1_standard_attributes.html#a8d8d372e2f937e24b2a237d502e0dbd4">moonray::shading::StandardAttributes::sRefP</a></div><div class="ttdeci">static TypedAttributeKey&lt; scene_rdl2::math::Vec3f &gt; sRefP</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00152">AttributeKey.h:152</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_standard_attributes_html_ae17ffb4111502b7d9ebfca02f706d821"><div class="ttname"><a href="classmoonray_1_1shading_1_1_standard_attributes.html#ae17ffb4111502b7d9ebfca02f706d821">moonray::shading::StandardAttributes::sRefN</a></div><div class="ttdeci">static TypedAttributeKey&lt; scene_rdl2::math::Vec3f &gt; sRefN</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00153">AttributeKey.h:153</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a05ada6c0b00f205667936a67d765367d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a05ada6c0b00f205667936a67d765367d">moonray::shading::State::isProvided</a></div><div class="ttdeci">bool isProvided(shading::AttributeKey key) const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00035">State.cc:35</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a80e3a3098aa748d128470eeba6159bc3"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a80e3a3098aa748d128470eeba6159bc3">moonray::shading::State::getWo</a></div><div class="ttdeci">const scene_rdl2::math::Vec3f &amp; getWo() const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00025">State.cc:25</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_aa12659b6a5bdf17c4caae0983450bdaf"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#aa12659b6a5bdf17c4caae0983450bdaf">moonray::shading::State::getdVec3fAttrds</a></div><div class="ttdeci">bool getdVec3fAttrds(int key, scene_rdl2::math::Vec3f &amp;dVec3fAttrds) const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00213">State.cc:213</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_aa32c02c236b56870743fc66646417d37"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#aa32c02c236b56870743fc66646417d37">moonray::shading::State::isEntering</a></div><div class="ttdeci">bool isEntering() const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00040">State.cc:40</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_abccb8f6760e670da529dc8fb162f3543"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#abccb8f6760e670da529dc8fb162f3543">moonray::shading::State::getdVec3fAttrdt</a></div><div class="ttdeci">bool getdVec3fAttrdt(int key, scene_rdl2::math::Vec3f &amp;dVec3fAttrdt) const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00226">State.cc:226</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_adb8191d572e29d785eb2fd06a1d0b615"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#adb8191d572e29d785eb2fd06a1d0b615">moonray::shading::State::getAttribute</a></div><div class="ttdeci">const T &amp; getAttribute(shading::TypedAttributeKey&lt; T &gt; key) const</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a43bb42f14c59e1763006ae59c477cd65" name="a43bb42f14c59e1763006ae59c477cd65"></a>
@@ -827,7 +1003,17 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00132">132</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  133</span>{</div>
+<div class="line"><span class="lineno">  134</span>    <span class="keywordtype">bool</span> retVal = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a05ada6c0b00f205667936a67d765367d">isProvided</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a8d8d372e2f937e24b2a237d502e0dbd4">shading::StandardAttributes::sRefP</a>)) {</div>
+<div class="line"><span class="lineno">  136</span>        refP = <a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#adb8191d572e29d785eb2fd06a1d0b615">getAttribute</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a8d8d372e2f937e24b2a237d502e0dbd4">shading::StandardAttributes::sRefP</a>);</div>
+<div class="line"><span class="lineno">  137</span>        retVal = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  138</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  139</span>        refP = math::zero;</div>
+<div class="line"><span class="lineno">  140</span>    }</div>
+<div class="line"><span class="lineno">  141</span>    <span class="keywordflow">return</span> retVal;</div>
+<div class="line"><span class="lineno">  142</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af2a05e6f87ab70712ed102d666ff4873" name="af2a05e6f87ab70712ed102d666ff4873"></a>
@@ -846,7 +1032,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00026">26</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   26</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#a02057d053642cf6e3a478a6d11042319">getSt</a>();             }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a02057d053642cf6e3a478a6d11042319"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a02057d053642cf6e3a478a6d11042319">moonray::shading::Intersection::getSt</a></div><div class="ttdeci">finline const scene_rdl2::math::Vec2f &amp; getSt() const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00402">Intersection.h:402</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a80e3a3098aa748d128470eeba6159bc3" name="a80e3a3098aa748d128470eeba6159bc3"></a>
@@ -865,7 +1053,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00025">25</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   25</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#a19174e7a0f96dac0c4f148a2edce262e">getWo</a>();             }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a19174e7a0f96dac0c4f148a2edce262e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a19174e7a0f96dac0c4f148a2edce262e">moonray::shading::Intersection::getWo</a></div><div class="ttdeci">finline const scene_rdl2::math::Vec3f &amp; getWo() const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00578">Intersection.h:578</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aae6967a8486f98eb809344265e4cf47e" name="aae6967a8486f98eb809344265e4cf47e"></a>
@@ -884,7 +1074,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00041">41</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   41</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#a60a139fc815e76741780f58fdf7a06b8">isCausticPath</a>();       }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a60a139fc815e76741780f58fdf7a06b8"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a60a139fc815e76741780f58fdf7a06b8">moonray::shading::Intersection::isCausticPath</a></div><div class="ttdeci">finline bool isCausticPath() const</div><div class="ttdoc">Is this on a caustic path ?</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00551">Intersection.h:551</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a50724856b386a4bf8949b19e304699cc" name="a50724856b386a4bf8949b19e304699cc"></a>
@@ -903,7 +1095,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00039">39</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   39</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#a2f2d6e4ec0a2702a241209e9694e7ac4">isDisplacement</a>();      }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a2f2d6e4ec0a2702a241209e9694e7ac4"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a2f2d6e4ec0a2702a241209e9694e7ac4">moonray::shading::Intersection::isDisplacement</a></div><div class="ttdeci">finline bool isDisplacement() const</div><div class="ttdoc">Is this &quot;intersection&quot; used for evaluating displacement ?</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00537">Intersection.h:537</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4e086cbdab8170e08cd38d00d97b25cc" name="a4e086cbdab8170e08cd38d00d97b25cc"></a>
@@ -923,7 +1117,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00036">36</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   36</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#a52e7f66dc6c137dd4e0a4c1475c041db">isdsProvided</a>(key); }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a52e7f66dc6c137dd4e0a4c1475c041db"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a52e7f66dc6c137dd4e0a4c1475c041db">moonray::shading::Intersection::isdsProvided</a></div><div class="ttdeci">bool isdsProvided(AttributeKey key) const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00166">Intersection.h:166</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a883f23d683587e7bb1eaa51cb64f5776" name="a883f23d683587e7bb1eaa51cb64f5776"></a>
@@ -943,7 +1139,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00037">37</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   37</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#a12802da5074bfc61e2689d39b9daae40">isdtProvided</a>(key); }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a12802da5074bfc61e2689d39b9daae40"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a12802da5074bfc61e2689d39b9daae40">moonray::shading::Intersection::isdtProvided</a></div><div class="ttdeci">bool isdtProvided(AttributeKey key) const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00171">Intersection.h:171</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa32c02c236b56870743fc66646417d37" name="aa32c02c236b56870743fc66646417d37"></a>
@@ -962,7 +1160,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00040">40</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#a13c89a5217d21a63b1261ab3aebe14f4">isEntering</a>();          }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a13c89a5217d21a63b1261ab3aebe14f4"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a13c89a5217d21a63b1261ab3aebe14f4">moonray::shading::Intersection::isEntering</a></div><div class="ttdeci">finline bool isEntering() const</div><div class="ttdoc">Are we entering the hit surface or leaving ?</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00547">Intersection.h:547</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae0734a6b2c3a3321c4f749599823b434" name="ae0734a6b2c3a3321c4f749599823b434"></a>
@@ -981,7 +1181,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00044">44</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   44</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#aa1e9eeb59e880ac6c9a23de88bbaf634">isHifi</a>();              }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_aa1e9eeb59e880ac6c9a23de88bbaf634"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#aa1e9eeb59e880ac6c9a23de88bbaf634">moonray::shading::Intersection::isHifi</a></div><div class="ttdeci">finline bool isHifi() const</div><div class="ttdoc">Convenience method to enforce convention on hi / low fidelity.</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00567">Intersection.h:567</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a960d49058a6d336a7cf1c86e6ee87809" name="a960d49058a6d336a7cf1c86e6ee87809"></a>
@@ -1000,7 +1202,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00043">43</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   43</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#adaa201c9c5f5ca9b76f87f8cf884a9d1">isIndirect</a>();          }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_adaa201c9c5f5ca9b76f87f8cf884a9d1"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#adaa201c9c5f5ca9b76f87f8cf884a9d1">moonray::shading::Intersection::isIndirect</a></div><div class="ttdeci">finline bool isIndirect() const</div><div class="ttdoc">Is this indirect shading ?</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00560">Intersection.h:560</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a05ada6c0b00f205667936a67d765367d" name="a05ada6c0b00f205667936a67d765367d"></a>
@@ -1020,7 +1224,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00035">35</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   35</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#a504312c6d5eb7ca0bea51b45c4dfb061">isProvided</a>(key);   }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a504312c6d5eb7ca0bea51b45c4dfb061"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a504312c6d5eb7ca0bea51b45c4dfb061">moonray::shading::Intersection::isProvided</a></div><div class="ttdeci">bool isProvided(AttributeKey key) const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00161">Intersection.h:161</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8753bc0fb6873f4852733c1bbb6038c3" name="a8753bc0fb6873f4852733c1bbb6038c3"></a>
@@ -1039,6 +1245,33 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_state_8cc_source.html#l00042">42</a> of file <a class="el" href="_state_8cc_source.html">State.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_state.html#ad20ca1a410fa4ec88d43eb16f6ba7485">mIntersection</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#a75e092a378c79fdeb00a7a081ee8e52d">isSubsurfaceAllowed</a>(); }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a75e092a378c79fdeb00a7a081ee8e52d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a75e092a378c79fdeb00a7a081ee8e52d">moonray::shading::Intersection::isSubsurfaceAllowed</a></div><div class="ttdeci">finline bool isSubsurfaceAllowed() const</div><div class="ttdoc">Is this on a subsurface path ?</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00554">Intersection.h:554</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad20ca1a410fa4ec88d43eb16f6ba7485" name="ad20ca1a410fa4ec88d43eb16f6ba7485"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20ca1a410fa4ec88d43eb16f6ba7485">&#9670;&#160;</a></span>mIntersection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmoonray_1_1shading_1_1_intersection.html">Intersection</a>* moonray::shading::State::mIntersection</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="bvh_2shading_2_state_8h_source.html#l00106">106</a> of file <a class="el" href="bvh_2shading_2_state_8h_source.html">State.h</a>.</p>
 
 </div>
 </div>
@@ -1047,9 +1280,13 @@ template&lt;typename T &gt; </div>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/bvh/shading/<a class="el" href="_state_8cc_source.html">State.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_state.html">State</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

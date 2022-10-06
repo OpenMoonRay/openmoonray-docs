@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,30 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_babe259f158ca1c9424658b4b8eaaacd.html">core</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_pbr_t_l_state_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">PbrTLState.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -61,6 +80,13 @@ $(function() {
 </div>
 <p><a href="_pbr_t_l_state_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03_1_1_pool_info.html">moonray::pbr::anonymous_namespace{PbrTLState.cc}::PoolInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03_1_1_private.html">moonray::pbr::anonymous_namespace{PbrTLState.cc}::Private</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceispc"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceispc.html">ispc</a></td></tr>
@@ -71,6 +97,15 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemoonray_1_1pbr"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html">moonray::pbr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html">moonray::pbr::anonymous_namespace{PbrTLState.cc}</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a7c71698a00194a574c4d0c6f465ca9f8"><td class="memItemLeft" align="right" valign="top">typedef mcrt_common::TLSInitParams::MemBlockType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#a7c71698a00194a574c4d0c6f465ca9f8">moonray::pbr::anonymous_namespace{PbrTLState.cc}::MemBlockType</a></td></tr>
+<tr class="separator:a7c71698a00194a574c4d0c6f465ca9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4444922f2d19c3f9eff67bc21f70c955"><td class="memItemLeft" align="right" valign="top">typedef scene_rdl2::MemBlockManager&lt; MemBlockType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#a4444922f2d19c3f9eff67bc21f70c955">moonray::pbr::anonymous_namespace{PbrTLState.cc}::MemBlockManagerType</a></td></tr>
+<tr class="separator:a4444922f2d19c3f9eff67bc21f70c955"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -78,6 +113,19 @@ Functions</h2></td></tr>
 <tr class="separator:adb9f097987722c05953053680c0df151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dcf067ff0eae45e5c718dc8dae3a6bd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceispc.html#a9dcf067ff0eae45e5c718dc8dae3a6bd">ispc::PbrTLState_hudValidation</a> (bool)</td></tr>
 <tr class="separator:a9dcf067ff0eae45e5c718dc8dae3a6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e12b8f7c1b3b14af13e48560faaa6c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#a2e12b8f7c1b3b14af13e48560faaa6c0">moonray::pbr::anonymous_namespace{PbrTLState.cc}::MNRY_STATIC_ASSERT</a> (ALLOC_LIST_MAX_NUM_ITEMS==16)</td></tr>
+<tr class="separator:a2e12b8f7c1b3b14af13e48560faaa6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74a8fa17514dd8f0a44b0b73c900be83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#a74a8fa17514dd8f0a44b0b73c900be83">moonray::pbr::anonymous_namespace{PbrTLState.cc}::MNRY_STATIC_ASSERT</a> (ALLOC_LIST_MAX_NUM_ITEMS&lt;=((ALLOC_LIST_INFO_BITS &gt; &gt; ALLOC_LIST_INFO_BIT_SHIFT)+1))</td></tr>
+<tr class="separator:a74a8fa17514dd8f0a44b0b73c900be83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a417d024d731cbdfb37e4e500c48637ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#a417d024d731cbdfb37e4e500c48637ee">moonray::pbr::anonymous_namespace{PbrTLState.cc}::initPool</a> (const unsigned poolSize, const unsigned numTBBThreads, const unsigned entrySize, const char *const poolName, PoolInfo &amp;p)</td></tr>
+<tr class="separator:a417d024d731cbdfb37e4e500c48637ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aeb204251cb28e9f2da0f3da692491c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#a3aeb204251cb28e9f2da0f3da692491c">moonray::pbr::anonymous_namespace{PbrTLState.cc}::initPrivate</a> (const mcrt_common::TLSInitParams &amp;initParams)</td></tr>
+<tr class="separator:a3aeb204251cb28e9f2da0f3da692491c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e6d0d11ef3c36941a12641c9982954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#a42e6d0d11ef3c36941a12641c9982954">moonray::pbr::anonymous_namespace{PbrTLState.cc}::cleanUpPrivate</a> ()</td></tr>
+<tr class="separator:a42e6d0d11ef3c36941a12641c9982954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affdaf97eea2c2cca1773aba9e529ae82"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:affdaf97eea2c2cca1773aba9e529ae82"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#affdaf97eea2c2cca1773aba9e529ae82">moonray::pbr::anonymous_namespace{PbrTLState.cc}::setQueueSize</a> (T *queue, float t)</td></tr>
+<tr class="separator:affdaf97eea2c2cca1773aba9e529ae82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0095d7152f0be67f936a8ecad0dd6844"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a0095d7152f0be67f936a8ecad0dd6844">moonray::pbr::resetPools</a> ()</td></tr>
 <tr class="separator:a0095d7152f0be67f936a8ecad0dd6844"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a011de6dc0a3009e079e771f6ab659bdb"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a011de6dc0a3009e079e771f6ab659bdb">moonray::pbr::getRayStatePoolSize</a> ()</td></tr>
@@ -86,6 +134,10 @@ Functions</h2></td></tr>
 <tr class="separator:aa0d6b94f493be30b82115d9451c877c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1dc61c943004ac253cc993e366158ff"><td class="memItemLeft" align="right" valign="top">RayState *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#ac1dc61c943004ac253cc993e366158ff">moonray::pbr::indexToRayState</a> (shading::RayStateIndex index)</td></tr>
 <tr class="separator:ac1dc61c943004ac253cc993e366158ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab48da404cdc02e7575597b6564b3a8c9"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#ab48da404cdc02e7575597b6564b3a8c9">moonray::pbr::handleToPtr</a> (unsigned handle)</td></tr>
+<tr class="separator:ab48da404cdc02e7575597b6564b3a8c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91168d5558488c50aadd5f8c4cb84bdc"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a91168d5558488c50aadd5f8c4cb84bdc">moonray::pbr::ptrToHandle</a> (void *bytes, unsigned numItems)</td></tr>
+<tr class="separator:a91168d5558488c50aadd5f8c4cb84bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af01d98fd2216d990b9bed2dae8cfe4f0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#af01d98fd2216d990b9bed2dae8cfe4f0">moonray::pbr::CPP_PbrTLState_allocList</a> (TLState *pbrTls, unsigned itemSize, unsigned numItems)</td></tr>
 <tr class="separator:af01d98fd2216d990b9bed2dae8cfe4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05f6200468a48114cbe9c1be919aa911"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a05f6200468a48114cbe9c1be919aa911">moonray::pbr::CPP_PbrTLState_freeList</a> (TLState *pbrTls, uint32_t listPtr)</td></tr>
@@ -106,6 +158,29 @@ Functions</h2></td></tr>
 <tr class="separator:a3e689bcf9e67457c3043ae496e3f6f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b65c8518ce2be54ef90b714b31a6ac2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a1b65c8518ce2be54ef90b714b31a6ac2">moonray::pbr::HUD_VALIDATOR</a> (PbrTLState)</td></tr>
 <tr class="separator:a1b65c8518ce2be54ef90b714b31a6ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3c401dbb05f8f45be5a0d80e55ec2ea5"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#a3c401dbb05f8f45be5a0d80e55ec2ea5">moonray::pbr::anonymous_namespace{PbrTLState.cc}::ALLOC_LIST_MAX_ITEM_SIZE</a> = CACHE_LINE_SIZE</td></tr>
+<tr class="separator:a3c401dbb05f8f45be5a0d80e55ec2ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4426d0550f26d6fdca8bf7ea2142a1d"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#ab4426d0550f26d6fdca8bf7ea2142a1d">moonray::pbr::anonymous_namespace{PbrTLState.cc}::ALLOC_LIST_MAX_NUM_ITEMS</a> = CACHE_LINE_SIZE / sizeof(uint32_t)</td></tr>
+<tr class="separator:ab4426d0550f26d6fdca8bf7ea2142a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1610039d650acf6b32ebc89a4181ce65"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#a1610039d650acf6b32ebc89a4181ce65">moonray::pbr::anonymous_namespace{PbrTLState.cc}::ALLOC_LIST_INFO_BIT_SHIFT</a> = 28</td></tr>
+<tr class="separator:a1610039d650acf6b32ebc89a4181ce65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0826ada3195fab4eb6061e2fb250f633"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#a0826ada3195fab4eb6061e2fb250f633">moonray::pbr::anonymous_namespace{PbrTLState.cc}::ALLOC_LIST_INFO_BITS</a> = (0xFu &lt;&lt; ALLOC_LIST_INFO_BIT_SHIFT)</td></tr>
+<tr class="separator:a0826ada3195fab4eb6061e2fb250f633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f92d4794faebf76db7587d87592916"><td class="memItemLeft" align="right" valign="top">CACHE_ALIGN tbb::atomic&lt; unsigned &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#a21f92d4794faebf76db7587d87592916">moonray::pbr::anonymous_namespace{PbrTLState.cc}::gFailedRayStateAllocs</a></td></tr>
+<tr class="separator:a21f92d4794faebf76db7587d87592916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58307a53672e53a52db39e71ace6e73"><td class="memItemLeft" align="right" valign="top">CACHE_ALIGN tbb::atomic&lt; unsigned &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#aa58307a53672e53a52db39e71ace6e73">moonray::pbr::anonymous_namespace{PbrTLState.cc}::gFailedCL1Allocs</a></td></tr>
+<tr class="separator:aa58307a53672e53a52db39e71ace6e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c2d134847c718053c8300705cf4fab"><td class="memItemLeft" align="right" valign="top">unsigned MAYBE_UNUSED&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#a26c2d134847c718053c8300705cf4fab">moonray::pbr::anonymous_namespace{PbrTLState.cc}::gPeakRayStateUsage</a> = 0</td></tr>
+<tr class="separator:a26c2d134847c718053c8300705cf4fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ff57c60e2c8f285653485daa074638"><td class="memItemLeft" align="right" valign="top">unsigned MAYBE_UNUSED&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#a31ff57c60e2c8f285653485daa074638">moonray::pbr::anonymous_namespace{PbrTLState.cc}::gPeakCL1Usage</a> = 0</td></tr>
+<tr class="separator:a31ff57c60e2c8f285653485daa074638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add8cab0cb28d5329939f0c1b7a967397"><td class="memItemLeft" align="right" valign="top">Private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#add8cab0cb28d5329939f0c1b7a967397">moonray::pbr::anonymous_namespace{PbrTLState.cc}::gPrivate</a></td></tr>
+<tr class="separator:add8cab0cb28d5329939f0c1b7a967397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be9bf5b090cdc11494ae918f322f490"><td class="memItemLeft" align="right" valign="top">tbb::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#a5be9bf5b090cdc11494ae918f322f490">moonray::pbr::anonymous_namespace{PbrTLState.cc}::gInitMutex</a></td></tr>
+<tr class="separator:a5be9bf5b090cdc11494ae918f322f490"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="adb9f097987722c05953053680c0df151" name="adb9f097987722c05953053680c0df151"></a>
@@ -124,142 +199,23 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_render_driver_8cc_source.html#l00048">48</a> of file <a class="el" href="_render_driver_8cc_source.html">RenderDriver.cc</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a26a2eae25a80125d4c51dada6bafe8c9" name="a26a2eae25a80125d4c51dada6bafe8c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26a2eae25a80125d4c51dada6bafe8c9">&#9670;&#160;</a></span>mActualPoolSize</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned mActualPoolSize</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_pbr_t_l_state_8cc_source.html#l00083">83</a> of file <a class="el" href="_pbr_t_l_state_8cc_source.html">PbrTLState.cc</a>.</p>
-
-</div>
-</div>
-<a id="ab74d290f03faebafa1dfb28229d29c3a" name="ab74d290f03faebafa1dfb28229d29c3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab74d290f03faebafa1dfb28229d29c3a">&#9670;&#160;</a></span>mBlockMemory</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MemBlockType* mBlockMemory</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_pbr_t_l_state_8cc_source.html#l00085">85</a> of file <a class="el" href="_pbr_t_l_state_8cc_source.html">PbrTLState.cc</a>.</p>
-
-</div>
-</div>
-<a id="a55859c1bee46ec317568420f8b226959" name="a55859c1bee46ec317568420f8b226959"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55859c1bee46ec317568420f8b226959">&#9670;&#160;</a></span>mCL1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PoolInfo mCL1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_pbr_t_l_state_8cc_source.html#l00101">101</a> of file <a class="el" href="_pbr_t_l_state_8cc_source.html">PbrTLState.cc</a>.</p>
-
-</div>
-</div>
-<a id="a77aa5b155974923c6f423686e2cfce5c" name="a77aa5b155974923c6f423686e2cfce5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77aa5b155974923c6f423686e2cfce5c">&#9670;&#160;</a></span>mEntryMemory</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t* mEntryMemory</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_pbr_t_l_state_8cc_source.html#l00086">86</a> of file <a class="el" href="_pbr_t_l_state_8cc_source.html">PbrTLState.cc</a>.</p>
-
-</div>
-</div>
-<a id="a4cc4bdaa5cc6b430a8e92e100405e591" name="a4cc4bdaa5cc6b430a8e92e100405e591"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cc4bdaa5cc6b430a8e92e100405e591">&#9670;&#160;</a></span>mInitParams</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const mcrt_common::TLSInitParams* mInitParams</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_pbr_t_l_state_8cc_source.html#l00098">98</a> of file <a class="el" href="_pbr_t_l_state_8cc_source.html">PbrTLState.cc</a>.</p>
-
-</div>
-</div>
-<a id="a53b695db98db33847ff79dd2603f1db1" name="a53b695db98db33847ff79dd2603f1db1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53b695db98db33847ff79dd2603f1db1">&#9670;&#160;</a></span>mMemBlockManager</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MemBlockManagerType* mMemBlockManager</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_pbr_t_l_state_8cc_source.html#l00084">84</a> of file <a class="el" href="_pbr_t_l_state_8cc_source.html">PbrTLState.cc</a>.</p>
-
-</div>
-</div>
-<a id="afeb06d0c6052d807b57e899e0daa5607" name="afeb06d0c6052d807b57e899e0daa5607"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afeb06d0c6052d807b57e899e0daa5607">&#9670;&#160;</a></span>mRayState</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PoolInfo mRayState</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_pbr_t_l_state_8cc_source.html#l00100">100</a> of file <a class="el" href="_pbr_t_l_state_8cc_source.html">PbrTLState.cc</a>.</p>
-
-</div>
-</div>
-<a id="abb66a3a4358d859706395e82cb158dea" name="abb66a3a4358d859706395e82cb158dea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb66a3a4358d859706395e82cb158dea">&#9670;&#160;</a></span>mRefCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned mRefCount</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_pbr_t_l_state_8cc_source.html#l00097">97</a> of file <a class="el" href="_pbr_t_l_state_8cc_source.html">PbrTLState.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   49</span>{</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> canceled = <a class="code hl_variable" href="namespacemoonray_1_1rndr.html#a9897b890f861c85536f6bd2dbf7e3cd6">moonray::rndr::gCancelFlag</a>.<a class="code hl_function" href="structmoonray_1_1rndr_1_1_cancel_flag.html#a81949f344208f3a4f95fef13a0146035">isCanceled</a>();</div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">return</span> canceled;</div>
+<div class="line"><span class="lineno">   52</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1rndr_html_a9897b890f861c85536f6bd2dbf7e3cd6"><div class="ttname"><a href="namespacemoonray_1_1rndr.html#a9897b890f861c85536f6bd2dbf7e3cd6">moonray::rndr::gCancelFlag</a></div><div class="ttdeci">CancelFlag gCancelFlag</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_8cc_source.html#l00060">RenderDriver.cc:60</a></div></div>
+<div class="ttc" id="astructmoonray_1_1rndr_1_1_cancel_flag_html_a81949f344208f3a4f95fef13a0146035"><div class="ttname"><a href="structmoonray_1_1rndr_1_1_cancel_flag.html#a81949f344208f3a4f95fef13a0146035">moonray::rndr::CancelFlag::isCanceled</a></div><div class="ttdeci">bool isCanceled() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_8h_source.html#l00098">RenderDriver.h:98</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_76e7442e501fb56376add6d0887dbe85.html">core</a></li><li class="navelem"><a class="el" href="_pbr_t_l_state_8cc.html">PbrTLState.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rt.html">rt</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html">EmbreeAccelerator</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1rt_1_1_embree_accelerator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">moonray::rt::EmbreeAccelerator Member List</div></div>
 </div><!--header-->
@@ -59,14 +75,21 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html#aed8bf425c6e5ceee443062c85df5e3af">getRTCDevice</a>(void) const</td><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html">moonray::rt::EmbreeAccelerator</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html#aa596c74d696dc9d17bf45bc48d9809f9">intersect</a>(mcrt_common::Ray &amp;ray) const</td><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html">moonray::rt::EmbreeAccelerator</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html#a46fbd7576452a6f9e1a187c4b7f3201d">mBvhBuildProceduralTime</a></td><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html">moonray::rt::EmbreeAccelerator</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html#a2f086fb44e6ee1e53c509c0715f99089">mBVHMemory</a></td><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html">moonray::rt::EmbreeAccelerator</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html#ae083e19cb6828555ef0a458e2e57e6d0">mBVHUserData</a></td><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html">moonray::rt::EmbreeAccelerator</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html#a7d889dfdaf98af6dce597b61a2c91db5">mDevice</a></td><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html">moonray::rt::EmbreeAccelerator</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html#a1467d5502df67a6ed689f743bf8f904f">mRootScene</a></td><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html">moonray::rt::EmbreeAccelerator</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html#aece7925a88a8589af57b5e8dbf32c8f0">mRtcCommitTime</a></td><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html">moonray::rt::EmbreeAccelerator</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html#a0bafb8722af11eea1d448ea57efad047">occluded</a>(mcrt_common::Ray &amp;ray) const</td><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html">moonray::rt::EmbreeAccelerator</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html#a52de38c331d185aebac3da2fbc4e41a1">operator=</a>(const EmbreeAccelerator &amp;other)=delete</td><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html">moonray::rt::EmbreeAccelerator</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html#a259731e3ee94c7379b0239c366d1d4b6">~EmbreeAccelerator</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1rt_1_1_embree_accelerator.html">moonray::rt::EmbreeAccelerator</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

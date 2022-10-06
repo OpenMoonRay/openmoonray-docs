@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">ImageWriteCacheBufferSpecSubImage</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">moonray::rndr::ImageWriteCacheBufferSpecSubImage Member List</div></div>
 </div><!--header-->
@@ -63,15 +79,30 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#a87a160f362c473f42715ac5aeb982e06">getPixNumChan</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#a26397feb0c743ba310122e7435fd9e70">getTotalNumChannels</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#a8963df54d0ccd4cb0cd7f47c5459ee88">ImageWriteCacheBufferSpecSubImage</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#a74e4a34e12e7cb45b62f389d3a20a881">mAovBuffOffset</a></td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#ae7b2701266657389639aa8ddcbdae6a4">mAovBuffSize</a></td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#a1726ea29b8ccecfc623da7380d5aeef3">mDisplayFilterBuffOffset</a></td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#a5c22f2ddc74218dcea84fe24cf99c746">mDisplayFilterBuffSize</a></td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#ab38dddb470b7fd66be775aef2b4e0221">memSizeByte</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#af895a0fcd1f58b1acf4b09aa79b203a8">mImgSpecId</a></td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#a9dbb26f8f4a19b809a8fade99815e0b6">mName</a></td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#a1c6f66c5875993617d7d806deca01846">mPixCacheFullOffset</a></td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#ac67172bb5a76ef697d0cad6d49d7fd92">mPixCacheFullSize</a></td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#abf5282772a7cd5b996db7a6a32142017">mPixCacheHalfOffset</a></td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#ac90782649d48d2746af5ff011dec47f4">mPixCacheHalfSize</a></td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#a7fd23208f3a84f3f753dcc5cb5569bd8">mPixChanFormat</a></td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#a4e8d9387645ee3da5f3289d6a8a28acf">mPixNumChan</a></td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#a00a4563e186d54f696f80b0089bb431a">setup</a>(const ImageWriteCacheBufferSpecSubImage *prevBuff, const std::string &amp;name, const size_t aovBuffSize, const size_t displayFilterBuffSize, const size_t pixCacheFullSize, const size_t pixCacheHalfSize, const std::vector&lt; ChanFormat &gt; &amp;pixChanFormat, const std::vector&lt; int &gt; &amp;pixNumChan)</td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#ab7ff0c8ca1b7c582238de981f8a035c9">show</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#a17dd7b26fb6153152c0a59fff7af48db">showChanFormat</a>(const ChanFormat &amp;format)</td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html#afdd08ed502220cad7cc105253ca6ec79">updateHash</a>(scene_rdl2::grid_util::Sha1Gen *sha1Gen) const</td><td class="entry"><a class="el" href="classmoonray_1_1rndr_1_1_image_write_cache_buffer_spec_sub_image.html">moonray::rndr::ImageWriteCacheBufferSpecSubImage</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

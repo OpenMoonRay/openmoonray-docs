@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rt.html">rt</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rt_1_1_shadow_linking_setter.html">ShadowLinkingSetter</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1rt_1_1_shadow_linking_setter.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1rt_1_1_shadow_linking_setter-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::rt::ShadowLinkingSetter Class Reference</div></div>
 </div><!--header-->
@@ -102,6 +119,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aafd38ee80e450de50af122252e7e82ef inherit pub_methods_classmoonray_1_1geom_1_1_primitive_visitor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html#aafd38ee80e450de50af122252e7e82ef">visitVdbVolume</a> (<a class="el" href="classmoonray_1_1geom_1_1_vdb_volume.html">VdbVolume</a> &amp;v)</td></tr>
 <tr class="separator:aafd38ee80e450de50af122252e7e82ef inherit pub_methods_classmoonray_1_1geom_1_1_primitive_visitor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a036bf046744b873c2abb811f742a1baf"><td class="memItemLeft" align="right" valign="top">const scene_rdl2::rdl2::Layer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_shadow_linking_setter.html#a036bf046744b873c2abb811f742a1baf">mLayer</a></td></tr>
+<tr class="separator:a036bf046744b873c2abb811f742a1baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aa91986e5b46b928bd20d5e1c8770b1"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structmoonray_1_1rt_1_1_shadow_exclusion_mapping.html">ShadowExclusionMapping</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_shadow_linking_setter.html#a2aa91986e5b46b928bd20d5e1c8770b1">mShadowExclusionMappings</a></td></tr>
+<tr class="separator:a2aa91986e5b46b928bd20d5e1c8770b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classmoonray_1_1rt_1_1_geometry_manager_primitive_visitor"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmoonray_1_1rt_1_1_geometry_manager_primitive_visitor')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classmoonray_1_1rt_1_1_geometry_manager_primitive_visitor.html">moonray::rt::GeometryManagerPrimitiveVisitor</a></td></tr>
@@ -147,7 +171,13 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_geometry_manager_8cc_source.html#l00170">170</a> of file <a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  171</span>                                                                                   :</div>
+<div class="line"><span class="lineno">  172</span>        <a class="code hl_variable" href="classmoonray_1_1rt_1_1_shadow_linking_setter.html#a036bf046744b873c2abb811f742a1baf">mLayer</a>(layer),</div>
+<div class="line"><span class="lineno">  173</span>        <a class="code hl_variable" href="classmoonray_1_1rt_1_1_shadow_linking_setter.html#a2aa91986e5b46b928bd20d5e1c8770b1">mShadowExclusionMappings</a>(mappings)</div>
+<div class="line"><span class="lineno">  174</span>    {}</div>
+<div class="ttc" id="aclassmoonray_1_1rt_1_1_shadow_linking_setter_html_a036bf046744b873c2abb811f742a1baf"><div class="ttname"><a href="classmoonray_1_1rt_1_1_shadow_linking_setter.html#a036bf046744b873c2abb811f742a1baf">moonray::rt::ShadowLinkingSetter::mLayer</a></div><div class="ttdeci">const scene_rdl2::rdl2::Layer * mLayer</div><div class="ttdef"><b>Definition:</b> <a href="_geometry_manager_8cc_source.html#l00253">GeometryManager.cc:253</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rt_1_1_shadow_linking_setter_html_a2aa91986e5b46b928bd20d5e1c8770b1"><div class="ttname"><a href="classmoonray_1_1rt_1_1_shadow_linking_setter.html#a2aa91986e5b46b928bd20d5e1c8770b1">moonray::rt::ShadowLinkingSetter::mShadowExclusionMappings</a></div><div class="ttdeci">const std::vector&lt; ShadowExclusionMapping &gt; &amp; mShadowExclusionMappings</div><div class="ttdef"><b>Definition:</b> <a href="_geometry_manager_8cc_source.html#l00254">GeometryManager.cc:254</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -179,6 +209,131 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html#ac19902f40208b82fc96f816a872ddba8">moonray::geom::PrimitiveVisitor</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_geometry_manager_8cc_source.html#l00176">176</a> of file <a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  177</span>    {</div>
+<div class="line"><span class="lineno">  178</span>        geom::internal::Primitive* pImpl =</div>
+<div class="line"><span class="lineno">  179</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive_private_access.html#a4ab0b267f3e064b13740d98733ac9e70">geom::internal::PrimitivePrivateAccess::getPrimitiveImpl</a>(&amp;p);</div>
+<div class="line"><span class="lineno">  180</span> </div>
+<div class="line"><span class="lineno">  181</span>        <span class="keywordflow">if</span> (pImpl-&gt;getType() == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a15e7f3ea4dd4d6813a9e72acf1c0fff1a703af854268c3e95fc93225dad38723c">geom::internal::Primitive::INSTANCE</a>) {</div>
+<div class="line"><span class="lineno">  182</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  183</span>        }</div>
+<div class="line"><span class="lineno">  184</span> </div>
+<div class="line"><span class="lineno">  185</span>        geom::internal::NamedPrimitive* np =</div>
+<div class="line"><span class="lineno">  186</span>            <span class="keyword">static_cast&lt;</span>geom::internal::NamedPrimitive*<span class="keyword">&gt;</span>(pImpl);</div>
+<div class="line"><span class="lineno">  187</span>        np-&gt;resetShadowLinking();</div>
+<div class="line"><span class="lineno">  188</span> </div>
+<div class="line"><span class="lineno">  189</span>        <span class="comment">// get caster ids from primitive</span></div>
+<div class="line"><span class="lineno">  190</span>        std::unordered_set&lt;int&gt; casterIds;</div>
+<div class="line"><span class="lineno">  191</span>        np-&gt;getUniqueAssignmentIds(casterIds);</div>
+<div class="line"><span class="lineno">  192</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> casterId : casterIds) {</div>
+<div class="line"><span class="lineno">  193</span>            <span class="keywordflow">if</span> (casterId &lt; 0) {</div>
+<div class="line"><span class="lineno">  194</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  195</span>            }</div>
+<div class="line"><span class="lineno">  196</span> </div>
+<div class="line"><span class="lineno">  197</span>            <span class="comment">// find caster id in mappings</span></div>
+<div class="line"><span class="lineno">  198</span>            <span class="keyword">const</span> ShadowExclusionMapping* mappingPtr = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  199</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; mapping : <a class="code hl_variable" href="classmoonray_1_1rt_1_1_shadow_linking_setter.html#a2aa91986e5b46b928bd20d5e1c8770b1">mShadowExclusionMappings</a>) {</div>
+<div class="line"><span class="lineno">  200</span>                <span class="keywordflow">if</span> (mapping.mCasterParts.empty() ||</div>
+<div class="line"><span class="lineno">  201</span>                    mapping.mCasterParts.find(casterId) != mapping.mCasterParts.end()) {</div>
+<div class="line"><span class="lineno">  202</span>                    mappingPtr = &amp;mapping;</div>
+<div class="line"><span class="lineno">  203</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  204</span>                }</div>
+<div class="line"><span class="lineno">  205</span>            }</div>
+<div class="line"><span class="lineno">  206</span>            <span class="comment">// TO-DO: should we check that it doesn&#39;t occur a 2nd time?</span></div>
+<div class="line"><span class="lineno">  207</span> </div>
+<div class="line"><span class="lineno">  208</span>            <span class="keyword">const</span> scene_rdl2::rdl2::ShadowSet* shadowSet = <a class="code hl_variable" href="classmoonray_1_1rt_1_1_shadow_linking_setter.html#a036bf046744b873c2abb811f742a1baf">mLayer</a>-&gt;lookupShadowSet(casterId);</div>
+<div class="line"><span class="lineno">  209</span>            <span class="keyword">const</span> scene_rdl2::rdl2::ShadowReceiverSet* shadowReceiverSet = <a class="code hl_variable" href="classmoonray_1_1rt_1_1_shadow_linking_setter.html#a036bf046744b873c2abb811f742a1baf">mLayer</a>-&gt;lookupShadowReceiverSet(casterId);</div>
+<div class="line"><span class="lineno">  210</span>            <span class="keywordtype">bool</span> complementShadowReceiverSet = (shadowReceiverSet &amp;&amp;</div>
+<div class="line"><span class="lineno">  211</span>                shadowReceiverSet-&gt;get(scene_rdl2::rdl2::ShadowReceiverSet::sComplementKey));</div>
+<div class="line"><span class="lineno">  212</span> </div>
+<div class="line"><span class="lineno">  213</span>            <span class="comment">// create shadow linking if needed</span></div>
+<div class="line"><span class="lineno">  214</span>            <span class="keywordflow">if</span> (shadowSet || shadowReceiverSet || mappingPtr) {</div>
+<div class="line"><span class="lineno">  215</span>                np-&gt;createShadowLinking(casterId, complementShadowReceiverSet);</div>
+<div class="line"><span class="lineno">  216</span>            }</div>
+<div class="line"><span class="lineno">  217</span> </div>
+<div class="line"><span class="lineno">  218</span>            <span class="comment">// add lights to shadow set</span></div>
+<div class="line"><span class="lineno">  219</span>            <span class="keywordflow">if</span> (shadowSet) {</div>
+<div class="line"><span class="lineno">  220</span>                <span class="keyword">const</span> scene_rdl2::rdl2::SceneObjectVector &amp;lights = shadowSet-&gt;getLights();</div>
+<div class="line"><span class="lineno">  221</span>                <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; light : lights) {</div>
+<div class="line"><span class="lineno">  222</span>                    np-&gt;addShadowLinkedLight(casterId, <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>scene_rdl2::rdl2::Light *<span class="keyword">&gt;</span>(light));</div>
+<div class="line"><span class="lineno">  223</span>                }</div>
+<div class="line"><span class="lineno">  224</span>            }</div>
+<div class="line"><span class="lineno">  225</span> </div>
+<div class="line"><span class="lineno">  226</span>            <span class="comment">// Add mappings between casters and receivers (via rdla ShadowReceiverSet mechanism)</span></div>
+<div class="line"><span class="lineno">  227</span>            <span class="keywordflow">if</span> (shadowReceiverSet) {</div>
+<div class="line"><span class="lineno">  228</span>                <span class="keyword">const</span> scene_rdl2::rdl2::SceneObjectIndexable&amp; receivers = shadowReceiverSet-&gt;getGeometries();</div>
+<div class="line"><span class="lineno">  229</span>                <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; sceneObject : receivers) {</div>
+<div class="line"><span class="lineno">  230</span>                    scene_rdl2::rdl2::Geometry* geom = sceneObject-&gt;asA&lt;scene_rdl2::rdl2::Geometry&gt;();</div>
+<div class="line"><span class="lineno">  231</span>                    <span class="keywordtype">int</span> receiverId = <a class="code hl_variable" href="classmoonray_1_1rt_1_1_shadow_linking_setter.html#a036bf046744b873c2abb811f742a1baf">mLayer</a>-&gt;getAssignmentId(geom, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  232</span>                    <span class="keywordflow">if</span> (receiverId != -1) {</div>
+<div class="line"><span class="lineno">  233</span>                        np-&gt;addShadowLinkedGeom(casterId, receiverId);</div>
+<div class="line"><span class="lineno">  234</span>                    }</div>
+<div class="line"><span class="lineno">  235</span>                }</div>
+<div class="line"><span class="lineno">  236</span>            }</div>
+<div class="line"><span class="lineno">  237</span> </div>
+<div class="line"><span class="lineno">  238</span>            <span class="comment">// Add mappings between casters and receivers (via geometry label attributes mechanism)</span></div>
+<div class="line"><span class="lineno">  239</span>            <span class="keywordflow">if</span> (mappingPtr) {</div>
+<div class="line"><span class="lineno">  240</span>                <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; labeledGeoSet : mappingPtr-&gt;mLabeledGeoSets) {</div>
+<div class="line"><span class="lineno">  241</span>                    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; receiverGeom : labeledGeoSet-&gt;mGeometries) {</div>
+<div class="line"><span class="lineno">  242</span>                        <span class="keywordtype">int</span> receiverId = <a class="code hl_variable" href="classmoonray_1_1rt_1_1_shadow_linking_setter.html#a036bf046744b873c2abb811f742a1baf">mLayer</a>-&gt;getAssignmentId(receiverGeom, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  243</span>                        <span class="keywordflow">if</span> (receiverId != -1) {</div>
+<div class="line"><span class="lineno">  244</span>                            np-&gt;addShadowLinkedGeom(casterId, receiverId);</div>
+<div class="line"><span class="lineno">  245</span>                        }</div>
+<div class="line"><span class="lineno">  246</span>                    }</div>
+<div class="line"><span class="lineno">  247</span>                }</div>
+<div class="line"><span class="lineno">  248</span>            }</div>
+<div class="line"><span class="lineno">  249</span>        }</div>
+<div class="line"><span class="lineno">  250</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html_a15e7f3ea4dd4d6813a9e72acf1c0fff1a703af854268c3e95fc93225dad38723c"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a15e7f3ea4dd4d6813a9e72acf1c0fff1a703af854268c3e95fc93225dad38723c">moonray::geom::internal::Primitive::INSTANCE</a></div><div class="ttdeci">@ INSTANCE</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8h_source.html#l00093">Primitive.h:93</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_private_access_html_a4ab0b267f3e064b13740d98733ac9e70"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive_private_access.html#a4ab0b267f3e064b13740d98733ac9e70">moonray::geom::internal::PrimitivePrivateAccess::getPrimitiveImpl</a></div><div class="ttdeci">static Primitive * getPrimitiveImpl(geom::Primitive *handle)</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_private_access_8h_source.html#l00030">PrimitivePrivateAccess.h:30</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a036bf046744b873c2abb811f742a1baf" name="a036bf046744b873c2abb811f742a1baf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a036bf046744b873c2abb811f742a1baf">&#9670;&#160;</a></span>mLayer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const scene_rdl2::rdl2::Layer* moonray::rt::ShadowLinkingSetter::mLayer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_geometry_manager_8cc_source.html#l00253">253</a> of file <a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a>.</p>
+
+</div>
+</div>
+<a id="a2aa91986e5b46b928bd20d5e1c8770b1" name="a2aa91986e5b46b928bd20d5e1c8770b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aa91986e5b46b928bd20d5e1c8770b1">&#9670;&#160;</a></span>mShadowExclusionMappings</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;<a class="el" href="structmoonray_1_1rt_1_1_shadow_exclusion_mapping.html">ShadowExclusionMapping</a>&gt;&amp; moonray::rt::ShadowLinkingSetter::mShadowExclusionMappings</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_geometry_manager_8cc_source.html#l00254">254</a> of file <a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a>.</p>
 
 </div>
 </div>
@@ -186,9 +341,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/rt/<a class="el" href="_geometry_manager_8cc_source.html">GeometryManager.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rt.html">rt</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rt_1_1_shadow_linking_setter.html">ShadowLinkingSetter</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

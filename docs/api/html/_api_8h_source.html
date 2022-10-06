@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_02f99361fbe6a8c61cf6ccdd2c3bf288.html">geom</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_api_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">Api.h</div></div>
 </div><!--header-->
@@ -50,8 +66,14 @@ $(function() {
 <a href="_api_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2015-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"></span><span class="comment">//</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file Api.h</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Wayne Huang</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// @brief File containing geometry API for Primitive creation and some helpers</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"></span><span class="comment">//</span><span class="comment"></span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/// $Id$</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">///</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"></span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
@@ -98,11 +120,19 @@ $(function() {
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_enumvalue" href="namespacemoonray_1_1geom.html#aeff13bf32e880bf3b7d22dc67b35f069a10bcb2c42b3b42c380e6e5f65411decb">VDB_VOLUME</a>,</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_enumvalue" href="namespacemoonray_1_1geom.html#aeff13bf32e880bf3b7d22dc67b35f069a696b031073e74bf2cb98e5ef201d4aa3">UNKNOWN</a></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><a class="code hl_enumeration" href="namespacemoonray_1_1geom.html#aeff13bf32e880bf3b7d22dc67b35f069">PrimitiveType</a></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"></span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">/// @brief helper function that query the PrimitiveType of specified Primitive</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">/// @return PrimitiveType of specified Primitive</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"></span><a class="code hl_enumeration" href="namespacemoonray_1_1geom.html#aeff13bf32e880bf3b7d22dc67b35f069">PrimitiveType</a></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><a class="code hl_function" href="namespacemoonray_1_1geom.html#aa6328f7011f0e8c15051b1bbc8e198d0">getPrimitiveType</a>(<span class="keyword">const</span> Primitive&amp; p);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>finline <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"></span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">/// @brief helper function that concatenate primitive to render space</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">///     transform samples</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">/// @param state State object for current Procedural</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">/// @param parent2render transform from parent space to render space</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">///     that is passed in to each Procedural::generate/update call</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">/// @return primitive to render space transform</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"></span>finline <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1geom.html#ad37f60dd325131a09efaf4d35543ae03">   71</a></span><a class="code hl_function" href="namespacemoonray_1_1geom.html#ad37f60dd325131a09efaf4d35543ae03">computePrim2Render</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1_state.html">State</a>&amp; state, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a>&amp; parent2render)</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> prim2render;</div>
@@ -112,8 +142,14 @@ $(function() {
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">return</span> prim2render;</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>finline <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"></span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">/// @brief helpter function that concatenate two shading::XformSamples</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">/// @param xformA shading::XformSamples</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">/// @param xformB shading::XformSamples</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">/// @throws AssertionError if both xformA and xformB contains more than one</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">///     xform sample and the number of sample doesn&#39;t match</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">/// @return shading::XformSamples that is the concatenation of xformA and xformB</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"></span>finline <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a></div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1geom.html#afd7055366476bf0667f97770c153337c">   88</a></span><a class="code hl_function" href="namespacemoonray_1_1geom.html#afd7055366476bf0667f97770c153337c">concatenate</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a>&amp; xformA, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a>&amp; xformB)</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>{</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    MNRY_ASSERT_REQUIRE(!xformA.empty() &amp;&amp; !xformB.empty());</div>
@@ -134,8 +170,24 @@ $(function() {
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    }</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">return</span> result;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>std::unique_ptr&lt;Curves&gt;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment"></span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">/// @brief create a Curves primitive</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">/// @param type the type of Curves to create</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">/// @param subtype the subtype of Curves to create</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">/// @param tessellationRate the tessellation rate for the curve segments</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">/// @param curvesVertexCount vector to specify the curve control vertex count.</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">///     The size of the vector is the number of curves in created primitive.</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">///     Each entry of curveVertexCount is the control vertex count of that curve.</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">/// @param vertices VertexBuffer that contains the curves control points</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">/// @param layerAssignmentId id that marks a unique combination of</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">///     geometry/partName/material/lightSet in layer</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">/// @param attributeTable a lookup table that can be used to attach</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">///     arbitrary primitive attribute (per face id, per vertex uv...etc)</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">/// @throws AssertionError if the input vertices or primitive attributes</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">///     are not valid. Util Curves::checkPrimitiveData can be used to verify</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">///     whether input curves data is valid</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">/// @return a unique pointer points to the created Curves primitive</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment"></span>std::unique_ptr&lt;Curves&gt;</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><a class="code hl_function" href="namespacemoonray_1_1geom.html#a31c3f7ed89b825514ef41f7e77be611e">createCurves</a>(<a class="code hl_enumeration" href="classmoonray_1_1geom_1_1_curves.html#aca4557878188eeb4f955dedc861d81d8">Curves::Type</a> type,</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>             <a class="code hl_enumeration" href="classmoonray_1_1geom_1_1_curves.html#a20a40943a7bb91f1e81b7eaa39b5e566">Curves::SubType</a> subtype,</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>             <span class="keywordtype">int</span> tessellationRate,</div>
@@ -145,15 +197,39 @@ $(function() {
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>             <a class="code hl_class" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>&amp;&amp; attributeTable = <a class="code hl_class" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>(),</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>             <span class="keywordtype">bool</span> validateGeometry = <span class="keyword">false</span>,</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>             <span class="keyword">const</span> scene_rdl2::rdl2::Geometry* rdlGeometry = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>std::unique_ptr&lt;Points&gt;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment"></span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">/// @brief create a Points primitive</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">/// @param position VertexBuffer that contains the 3d coordinate of each point</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">/// @param radius RadiusBuffer that contains the radius of each point</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">/// @param layerAssignmentId id that marks a unique combination of</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">///     geometry/partName/material/lightSet in layer</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">/// @param attributeTable a lookup table that can be used to attach</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">///     arbitrary primitive attribute (per face id, per vertex uv...etc)</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">/// @throws AssertionError if the input position or primitive attributes</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">///     are not valid or the size of position and radius don&#39;t match.</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">/// @return a unique pointer points to the created Points primitive</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment"></span>std::unique_ptr&lt;Points&gt;</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><a class="code hl_function" href="namespacemoonray_1_1geom.html#aa1a3b16666293e671e3372e2eed3f473">createPoints</a>(<a class="code hl_typedef" href="classmoonray_1_1geom_1_1_points.html#a1a4c72105d903a3c6e61d967b1789df7">Points::VertexBuffer</a>&amp;&amp; position, <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_points.html#a40e246128f9308b7d6aa9ad7b285c93a">Points::RadiusBuffer</a>&amp;&amp; radius,</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>             LayerAssignmentId&amp;&amp; layerAssignmentId,</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>             <a class="code hl_class" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>&amp;&amp; attributeTable = <a class="code hl_class" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>(),</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>             <span class="keywordtype">bool</span> validateGeometry = <span class="keyword">false</span>,</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>             <span class="keyword">const</span> scene_rdl2::rdl2::Geometry* rdlGeometry = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>std::unique_ptr&lt;PolygonMesh&gt;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment"></span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">/// @brief create a PolygonMesh primitive</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">/// @param faceVertexCount vector to specify the face vertex count.</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">///     The size of the vector is the number of faces in created primitive.</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">///     Each entry of faceVertexCount is the vertex count of that face.</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">/// @param indices vector of vertex index describe the topology of polygonmesh</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">///     The size of the vector is the sum of all entry values in faceVertexCount</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">/// @param vertices VertexBuffer that contains the vertices of polygon mesh</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">/// @param layerAssignmentId assignment id that marks a unique combination of</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">///     geometry/partName/material/lightSet in layer.</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">/// @param attributeTable a lookup table that can be used to attach</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">///     arbitrary primitive attribute (per face id, per vertex uv...etc)</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">/// @throws AssertionError if the input vertices or primitive attributes</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">///     are not valid.</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">/// @return a unique pointer points to the created PolygonMesh primitive</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment"></span>std::unique_ptr&lt;PolygonMesh&gt;</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><a class="code hl_function" href="namespacemoonray_1_1geom.html#a33998ca6d20fb8eb6dcffddfcb492306">createPolygonMesh</a>(<a class="code hl_typedef" href="classmoonray_1_1geom_1_1_polygon_mesh.html#ad7fc70b9afd6de570bcd1e3caebea90f">PolygonMesh::FaceVertexCount</a>&amp;&amp; faceVertexCount,</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                  <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_polygon_mesh.html#a639e8de2f60b7eb4faf7a0610b297eab">PolygonMesh::IndexBuffer</a>&amp;&amp; indices,</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                  <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_polygon_mesh.html#a48add08d907685e164edfb0617841c05">PolygonMesh::VertexBuffer</a>&amp;&amp; vertices,</div>
@@ -167,19 +243,54 @@ $(function() {
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                <span class="keyword">const</span> MotionBlurParams&amp; motionBlurParams,</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                LayerAssignmentId&amp;&amp; layerAssignmentId,</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                <a class="code hl_class" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>&amp;&amp; attributeTable = <a class="code hl_class" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>());</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>std::unique_ptr&lt;PrimitiveGroup&gt;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment"></span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">/// @brief create a PrimitiveGroup that can hold multiple primitives</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">/// @return an unique pointer points to the created PrimitiveGroup</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment"></span>std::unique_ptr&lt;PrimitiveGroup&gt;</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><a class="code hl_function" href="namespacemoonray_1_1geom.html#a3691409951bd29b140bc59cfb33200d8">createPrimitiveGroup</a>();</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>std::unique_ptr&lt;Sphere&gt;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment"></span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">/// @brief create a Sphere primitive</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment">/// @param radius sphere radius</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">/// @param layerAssignmentId assignment id that marks a unique combination of</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">///     geometry/partName/material/lightSet in layer.</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">/// @param attributeTable a lookup table that can be used to attach</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">///     arbitrary primitive attribute (per face id, per vertex uv...etc)</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">/// @throws AssertionError if the input primitive attributes are not valid.</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">/// @return a unique pointer points to the created Sphere primitive</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment"></span>std::unique_ptr&lt;Sphere&gt;</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><a class="code hl_function" href="namespacemoonray_1_1geom.html#a3a272b38177b7d5f7849b99cf1041e77">createSphere</a>(<span class="keywordtype">float</span> radius, LayerAssignmentId&amp;&amp; layerAssignmentId,</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>             <a class="code hl_class" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>&amp;&amp; attributeTable = <a class="code hl_class" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>());</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>std::unique_ptr&lt;Box&gt;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment"></span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">/// @brief create a Box primitive</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">/// @param length box length</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">/// @param width box width</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">/// @param height box height</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">/// @param layerAssignmentId assignment id that marks a unique combination of</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">///     geometry/partName/material/lightSet in layer.</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">/// @param attributeTable a lookup table that can be used to attach</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">///     arbitrary primitive attribute (per face id, per vertex uv...etc)</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">/// @throws AssertionError if the input primitive attributes are not valid.</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">/// @return a unique pointer points to the created Box primitive</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment"></span>std::unique_ptr&lt;Box&gt;</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><a class="code hl_function" href="namespacemoonray_1_1geom.html#acd4e744e8ec8f7cd1b3fc519a02b1fdb">createBox</a>(<span class="keywordtype">float</span> <a class="code hl_function" href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a>, <span class="keywordtype">float</span> width, <span class="keywordtype">float</span> height, LayerAssignmentId&amp;&amp; layerAssignmentId,</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>          <a class="code hl_class" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>&amp;&amp; attributeTable = <a class="code hl_class" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>());</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>std::unique_ptr&lt;SubdivisionMesh&gt;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment"></span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">/// @brief create a SubdivisionMesh primitive</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">/// @param scheme the subdivision scheme (bilinear, catmull clark...)</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment">/// @param faceVertexCount vector to specify the face vertex count.</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment">///     The size of the vector is the number of faces in created primitive.</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">///     Each entry of faceVertexCount is the vertex count of that face.</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">/// @param indices vector of vertex index describe the topology of control mesh.</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">///     The size of the vector is the sum of all entry values in faceVertexCount</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">/// @param vertices VertexBuffer that contains the vertices of control mesh</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">/// @param layerAssignmentId assignment id that marks a unique combination of</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">///     geometry/partName/material/lightSet in layer.</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">/// @param attributeTable a lookup table that can be used to attach</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment">///     arbitrary primitive attribute (per face id, per vertex uv...etc)</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">/// @throws AssertionError if the input vertices or primitive attributes</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">///     are not valid.</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">/// @return a unique pointer points to the created SubdivisionMesh primitive</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment"></span>std::unique_ptr&lt;SubdivisionMesh&gt;</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><a class="code hl_function" href="namespacemoonray_1_1geom.html#a95b85c4b4c7ae7b1542ed2b9167d0d5c">createSubdivisionMesh</a>(<a class="code hl_enumeration" href="classmoonray_1_1geom_1_1_subdivision_mesh.html#a0fd9432d7637d9e7175158cf9ca29e2f">SubdivisionMesh::Scheme</a> scheme,</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                      <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_subdivision_mesh.html#a56fe12e17bfaf6ce2461a47a90383424">SubdivisionMesh::FaceVertexCount</a>&amp;&amp; faceVertexCount,</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                      <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_subdivision_mesh.html#ae1c0c2d17a4dc70e1f3df64ff67b2f32">SubdivisionMesh::IndexBuffer</a>&amp;&amp; indices,</div>
@@ -188,24 +299,50 @@ $(function() {
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                      <a class="code hl_class" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>&amp;&amp; attributeTable = <a class="code hl_class" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>(),</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>                      <span class="keywordtype">bool</span> validateGeometry = <span class="keyword">false</span>,</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                      <span class="keyword">const</span> scene_rdl2::rdl2::Geometry* rdlGeometry = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>std::unique_ptr&lt;Instance&gt;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment"></span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="comment">/// @brief create an Instance with a transform and a referenced Primitive</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="comment">/// @param xform matrix that specify the local transform of instance</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="comment">/// @param reference the SharedPrimitive this instance referenced to</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">/// @param attributeTable a lookup table that can be used to attach</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">///     arbitrary primitive attribute (Instance only supports</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">///     constant rate attributes)</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment">/// @return a unique pointer points to the created Instance primitive</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment"></span>std::unique_ptr&lt;Instance&gt;</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><a class="code hl_function" href="namespacemoonray_1_1geom.html#af43ff3e3efb6aabddaf5977840a65475">createInstance</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1mcrt__common.html#a3cff5ff71bac922b0dc934ae9ae289f6">Mat43</a>&amp; xform, std::shared_ptr&lt;SharedPrimitive&gt; reference,</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>               <a class="code hl_class" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>&amp;&amp; attributeTable = <a class="code hl_class" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>());</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>std::unique_ptr&lt;Instance&gt;</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="comment"></span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment">/// @brief create an Instance with a transform and a referenced Primitive</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment">/// @param xform shading::XformSamples that specify the local transform of instance</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment">/// @param reference the SharedPrimitive this instance referenced to</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment">/// @param attributeTable a lookup table that can be used to attach</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="comment">///     arbitrary primitive attribute (Instance only supports</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="comment">///     constant rate attributes)</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="comment">/// @return a unique pointer points to the created Instance primitive</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="comment"></span>std::unique_ptr&lt;Instance&gt;</div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><a class="code hl_function" href="namespacemoonray_1_1geom.html#af43ff3e3efb6aabddaf5977840a65475">createInstance</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a>&amp; xform,</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>               std::shared_ptr&lt;SharedPrimitive&gt; reference,</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>               <a class="code hl_class" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>&amp;&amp; attributeTable = <a class="code hl_class" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>());</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>std::shared_ptr&lt;SharedPrimitive&gt;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment"></span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="comment">/// @brief create a SharedPrimitive for instancing usage</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="comment">/// @param primitive the primitive to be shared/referenced by Instance</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="comment">/// @return a shared pointer points to the SharedPrimitive which can be</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="comment">///     referenced by Instance</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="comment"></span>std::shared_ptr&lt;SharedPrimitive&gt;</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><a class="code hl_function" href="namespacemoonray_1_1geom.html#a17b37f60198612f9d940fd6e9fab148e">createSharedPrimitive</a>(std::unique_ptr&lt;Primitive&gt; primitive);</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>std::unique_ptr&lt;TransformedPrimitive&gt;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="comment"></span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="comment">/// @brief create a TransformedPrimitive</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment">/// @param xform matrix that specify the local transform of held primitive</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment">/// @param primitive the primitive to be held</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment">/// @return a unique pointer points to the created TransformedPrimitive</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="comment"></span>std::unique_ptr&lt;TransformedPrimitive&gt;</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><a class="code hl_function" href="namespacemoonray_1_1geom.html#ae0b237d02cfcd695b43cc86bff73d429">createTransformedPrimitive</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1mcrt__common.html#a3cff5ff71bac922b0dc934ae9ae289f6">Mat43</a>&amp; xform,</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>                           std::unique_ptr&lt;Primitive&gt; primitive);</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>std::unique_ptr&lt;TransformedPrimitive&gt;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment"></span> </div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">/// @brief create a TransformedPrimitive</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment">/// @param xform shading::XformSamples that specify the local transform of held primitive</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">/// @param primitive the primitive to be held</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment">/// @return a unique pointer points to the created TransformedPrimitive</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="comment"></span>std::unique_ptr&lt;TransformedPrimitive&gt;</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><a class="code hl_function" href="namespacemoonray_1_1geom.html#ae0b237d02cfcd695b43cc86bff73d429">createTransformedPrimitive</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a>&amp; xform,</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>                           std::unique_ptr&lt;Primitive&gt; primitive);</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
@@ -214,16 +351,23 @@ $(function() {
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>std::unique_ptr&lt;Primitive&gt;</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><a class="code hl_function" href="namespacemoonray_1_1geom.html#aaebac535b9d513d16d9376043a57030b">convertForMotionBlur</a>(<span class="keyword">const</span> ProceduralContext&amp; context,</div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>                     std::unique_ptr&lt;Primitive&gt; primitive, <span class="keywordtype">bool</span> useRotationMotionBlur);</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>removeUnassignedFaces(<span class="keyword">const</span> scene_rdl2::rdl2::Layer* layer,</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="comment"></span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="comment">/// @brief an util method removes unassigned face/facevarying data</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="comment"></span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><a class="code hl_function" href="namespacemoonray_1_1geom.html#a93c53f64bca6a9043859e2950a84114f">removeUnassignedFaces</a>(<span class="keyword">const</span> scene_rdl2::rdl2::Layer* layer,</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                      LayerAssignmentId&amp; layerAssignmentId,</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                      std::vector&lt;Primitive::IndexType&gt;&amp; faceToPart,</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                      std::vector&lt;Primitive::size_type&gt;&amp; faceVertexCount,</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>                      std::vector&lt;Primitive::IndexType&gt;&amp; indices,</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                      <a class="code hl_class" href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">shading::PrimitiveAttributeTable</a>* primitiveAttributeTable = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="comment"></span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="comment">/// @brief an util function to query assignment id from layer</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="comment">/// @param layer rdl2 Layer to query</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="comment">/// @param geometry rdl2 Geometry to query</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="comment">/// @param partName string part name of the geometry to query</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="comment">/// @param assignmentId the assignment id for specified layer/geometry/partName combination</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="comment">/// @return whether the assignment id is valid (exist and map to non null shaders)</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="comment"></span><span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span><a class="code hl_function" href="namespacemoonray_1_1geom.html#a2c2b7f8f471f41d78afd2ec3a566e6e7">getAssignmentId</a>(<span class="keyword">const</span> scene_rdl2::rdl2::Layer* layer, </div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>                <span class="keyword">const</span> scene_rdl2::rdl2::Geometry* geometry,</div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>                <span class="keyword">const</span> std::string&amp; partName, </div>
@@ -273,6 +417,7 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_1_1geom_html_a33998ca6d20fb8eb6dcffddfcb492306"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a33998ca6d20fb8eb6dcffddfcb492306">moonray::geom::createPolygonMesh</a></div><div class="ttdeci">std::unique_ptr&lt; PolygonMesh &gt; createPolygonMesh(PolygonMesh::FaceVertexCount &amp;&amp;faceVertexCount, PolygonMesh::IndexBuffer &amp;&amp;indices, PolygonMesh::VertexBuffer &amp;&amp;vertices, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;primitiveAttributeTable, bool validateGeometry, const scene_rdl2::rdl2::Geometry *rdlGeometry)</div><div class="ttdoc">create a PolygonMesh primitive</div><div class="ttdef"><b>Definition:</b> <a href="_api_8cc_source.html#l00428">Api.cc:428</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_html_a3691409951bd29b140bc59cfb33200d8"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a3691409951bd29b140bc59cfb33200d8">moonray::geom::createPrimitiveGroup</a></div><div class="ttdeci">std::unique_ptr&lt; PrimitiveGroup &gt; createPrimitiveGroup()</div><div class="ttdoc">create a PrimitiveGroup that can hold multiple primitives</div><div class="ttdef"><b>Definition:</b> <a href="_api_8cc_source.html#l00465">Api.cc:465</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_html_a3a272b38177b7d5f7849b99cf1041e77"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a3a272b38177b7d5f7849b99cf1041e77">moonray::geom::createSphere</a></div><div class="ttdeci">std::unique_ptr&lt; Sphere &gt; createSphere(float radius, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;primitiveAttributeTable)</div><div class="ttdoc">create a Sphere primitive</div><div class="ttdef"><b>Definition:</b> <a href="_api_8cc_source.html#l00471">Api.cc:471</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a93c53f64bca6a9043859e2950a84114f"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a93c53f64bca6a9043859e2950a84114f">moonray::geom::removeUnassignedFaces</a></div><div class="ttdeci">static void removeUnassignedFaces(const scene_rdl2::rdl2::Layer *layer, int constAssignmentId, std::vector&lt; Primitive::IndexType &gt; &amp;faceToPart, std::vector&lt; Primitive::size_type &gt; &amp;faceVertexCount, std::vector&lt; Primitive::IndexType &gt; &amp;indices, shading::PrimitiveAttributeTable *primitiveAttributeTable)</div><div class="ttdef"><b>Definition:</b> <a href="_api_8cc_source.html#l00564">Api.cc:564</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_html_a95b85c4b4c7ae7b1542ed2b9167d0d5c"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a95b85c4b4c7ae7b1542ed2b9167d0d5c">moonray::geom::createSubdivisionMesh</a></div><div class="ttdeci">std::unique_ptr&lt; SubdivisionMesh &gt; createSubdivisionMesh(SubdivisionMesh::Scheme scheme, SubdivisionMesh::FaceVertexCount &amp;&amp;faceVertexCount, SubdivisionMesh::IndexBuffer &amp;&amp;indices, SubdivisionMesh::VertexBuffer &amp;&amp;vertices, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;primitiveAttributeTable, bool validateGeometry, const scene_rdl2::rdl2::Geometry *rdlGeometry)</div><div class="ttdoc">create a SubdivisionMesh primitive</div><div class="ttdef"><b>Definition:</b> <a href="_api_8cc_source.html#l00495">Api.cc:495</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_html_a96e2d2e5b141212f15a7356248d35237"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a96e2d2e5b141212f15a7356248d35237">moonray::geom::createVdbVolume</a></div><div class="ttdeci">std::unique_ptr&lt; VdbVolume &gt; createVdbVolume(const VdbVolume::VdbInitData &amp;vdbInitData, const MotionBlurParams &amp;motionBlurParams, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;primitiveAttributeTable)</div><div class="ttdef"><b>Definition:</b> <a href="_api_8cc_source.html#l00453">Api.cc:453</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_html_aa1a3b16666293e671e3372e2eed3f473"><div class="ttname"><a href="namespacemoonray_1_1geom.html#aa1a3b16666293e671e3372e2eed3f473">moonray::geom::createPoints</a></div><div class="ttdeci">std::unique_ptr&lt; Points &gt; createPoints(Points::VertexBuffer &amp;&amp;position, Points::RadiusBuffer &amp;&amp;radius, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;primitiveAttributeTable, bool validateGeometry, const scene_rdl2::rdl2::Geometry *rdlGeometry)</div><div class="ttdoc">create a Points primitive</div><div class="ttdef"><b>Definition:</b> <a href="_api_8cc_source.html#l00405">Api.cc:405</a></div></div>
@@ -300,9 +445,13 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_dispatch_computation_8cc_source.html#l00044">McrtRtDispatchComputation.cc:44</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_0486ff0a15d68326ffdea20a24729a76.html">geom</a></li><li class="navelem"><a class="el" href="_api_8h.html">Api.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

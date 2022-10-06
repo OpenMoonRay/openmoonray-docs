@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,28 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_color_ramp_control.html">ColorRampControl</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_color_ramp_control.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_color_ramp_control-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::ColorRampControl Class Reference</div></div>
 </div><!--header-->
@@ -71,6 +89,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a06226fa9e87848f18a40e4f272c8eaeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_color_ramp_control.html#a06226fa9e87848f18a40e4f272c8eaeb">HUD_AS_ISPC_METHODS</a> (<a class="el" href="classmoonray_1_1shading_1_1_color_ramp_control.html">ColorRampControl</a>)</td></tr>
 <tr class="memdesc:a06226fa9e87848f18a40e4f272c8eaeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets ispc object for vector mode.  <a href="classmoonray_1_1shading_1_1_color_ramp_control.html#a06226fa9e87848f18a40e4f272c8eaeb">More...</a><br /></td></tr>
 <tr class="separator:a06226fa9e87848f18a40e4f272c8eaeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad5403df296a1ca555e41f3d43b714bd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_color_ramp_control.html#ad5403df296a1ca555e41f3d43b714bd0">blendAdjustment</a> (scene_rdl2::math::Color &amp;left, scene_rdl2::math::Color &amp;right) const</td></tr>
+<tr class="separator:ad5403df296a1ca555e41f3d43b714bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af73cbe897ca2e2ece2e369f91ed4c3cb"><td class="memItemLeft" align="right" valign="top">ispc::ColorRampControl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a></td></tr>
+<tr class="separator:af73cbe897ca2e2ece2e369f91ed4c3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Helper class that maps a set of float inputs to Color outputs and performs interpolation between 2 control points based on interpolationTypes. </p>
@@ -101,7 +129,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ramp_control_8h_source.html#l00056">56</a> of file <a class="el" href="_ramp_control_8h_source.html">RampControl.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   56</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a25b6e21cc3cbd6d077211fd7eb7928f1" name="a25b6e21cc3cbd6d077211fd7eb7928f1"></a>
@@ -128,10 +157,65 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ramp_control_8h_source.html#l00057">57</a> of file <a class="el" href="_ramp_control_8h_source.html">RampControl.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   57</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad5403df296a1ca555e41f3d43b714bd0" name="ad5403df296a1ca555e41f3d43b714bd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5403df296a1ca555e41f3d43b714bd0">&#9670;&#160;</a></span>blendAdjustment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::shading::ColorRampControl::blendAdjustment </td>
+          <td>(</td>
+          <td class="paramtype">scene_rdl2::math::Color &amp;&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">scene_rdl2::math::Color &amp;&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ramp_control_8cc_source.html#l00712">712</a> of file <a class="el" href="_ramp_control_8cc_source.html">RampControl.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  712</span>                                                                 {</div>
+<div class="line"><span class="lineno">  713</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSV ||</div>
+<div class="line"><span class="lineno">  714</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSL) {</div>
+<div class="line"><span class="lineno">  715</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mApplyHueBlendAdjustment) {</div>
+<div class="line"><span class="lineno">  716</span>            <span class="comment">// HSV/HSL mode</span></div>
+<div class="line"><span class="lineno">  717</span>            <span class="comment">// Ensure that HSV/HSL color blending takes the shortest route</span></div>
+<div class="line"><span class="lineno">  718</span>            <span class="comment">// around the hue wheel.</span></div>
+<div class="line"><span class="lineno">  719</span>            <span class="keywordflow">if</span> ((left.r + 1.f) - right.r &lt; 0.5f ) {</div>
+<div class="line"><span class="lineno">  720</span>                left.r += 1.f;</div>
+<div class="line"><span class="lineno">  721</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((right.r + 1.f) - left.r &lt; 0.5f) {</div>
+<div class="line"><span class="lineno">  722</span>                right.r += 1.f;</div>
+<div class="line"><span class="lineno">  723</span>            }</div>
+<div class="line"><span class="lineno">  724</span>        }</div>
+<div class="line"><span class="lineno">  725</span>    }</div>
+<div class="line"><span class="lineno">  726</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_color_ramp_control_html_af73cbe897ca2e2ece2e369f91ed4c3cb"><div class="ttname"><a href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">moonray::shading::ColorRampControl::mIspc</a></div><div class="ttdeci">ispc::ColorRampControl mIspc</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8h_source.html#l00087">RampControl.h:87</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a18774ee44fdc525e75d0288714e25b5b" name="a18774ee44fdc525e75d0288714e25b5b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18774ee44fdc525e75d0288714e25b5b">&#9670;&#160;</a></span>eval1D()</h2>
 
@@ -156,7 +240,32 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Color result based on ramp control and input 't' </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_ramp_control_8cc_source.html#l00729">729</a> of file <a class="el" href="_ramp_control_8cc_source.html">RampControl.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  730</span>{</div>
+<div class="line"><span class="lineno">  731</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mNumEntries == 0) {</div>
+<div class="line"><span class="lineno">  732</span>        <span class="keywordflow">return</span> math::sBlack;</div>
+<div class="line"><span class="lineno">  733</span>    }</div>
+<div class="line"><span class="lineno">  734</span> </div>
+<div class="line"><span class="lineno">  735</span>    Color result = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a31f6603cf2be11d9b81792370e7bb70d">eval1DRamp</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mNumEntries,</div>
+<div class="line"><span class="lineno">  736</span>                            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInputs,</div>
+<div class="line"><span class="lineno">  737</span>                            <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>Color*<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs),</div>
+<div class="line"><span class="lineno">  738</span>                            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInterpolators,</div>
+<div class="line"><span class="lineno">  739</span>                            <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>Color*<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mSlopes),</div>
+<div class="line"><span class="lineno">  740</span>                            t,</div>
+<div class="line"><span class="lineno">  741</span>                            [&amp;](Color&amp; left, Color&amp; right) {</div>
+<div class="line"><span class="lineno">  742</span>                                blendAdjustment(left, right);</div>
+<div class="line"><span class="lineno">  743</span>                            });</div>
+<div class="line"><span class="lineno">  744</span> </div>
+<div class="line"><span class="lineno">  745</span>    <span class="comment">// convert back to HSV/HSL after evaluation if needed</span></div>
+<div class="line"><span class="lineno">  746</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSV) {</div>
+<div class="line"><span class="lineno">  747</span>        result = math::hsvToRgb(result);</div>
+<div class="line"><span class="lineno">  748</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSL) {</div>
+<div class="line"><span class="lineno">  749</span>        result = math::hslToRgb(result);</div>
+<div class="line"><span class="lineno">  750</span>    }</div>
+<div class="line"><span class="lineno">  751</span> </div>
+<div class="line"><span class="lineno">  752</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  753</span>}</div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_a31f6603cf2be11d9b81792370e7bb70d"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a31f6603cf2be11d9b81792370e7bb70d">anonymous_namespace{RampControl.cc}::eval1DRamp</a></div><div class="ttdeci">OutputType eval1DRamp(const int numEntries, const float *inputs, const OutputType *outputs, const ispc::RampInterpolatorMode *interpolators, const OutputType *slopes, float t, const BlendAdjustmentCallbackType &amp;blendAdjustmentCallback)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00448">RampControl.cc:448</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8e347059484a62c904dfb4f7cb615841" name="a8e347059484a62c904dfb4f7cb615841"></a>
@@ -201,7 +310,41 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Color result based on ramp control and input 'uv' </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_ramp_control_8cc_source.html#l00756">756</a> of file <a class="el" href="_ramp_control_8cc_source.html">RampControl.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  759</span>{</div>
+<div class="line"><span class="lineno">  760</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mNumEntries == 0) {</div>
+<div class="line"><span class="lineno">  761</span>        <span class="keywordflow">return</span> math::sBlack;</div>
+<div class="line"><span class="lineno">  762</span>    }</div>
+<div class="line"><span class="lineno">  763</span> </div>
+<div class="line"><span class="lineno">  764</span>    Color result;</div>
+<div class="line"><span class="lineno">  765</span>    <span class="keyword">const</span> Color* outputs = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>Color*<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs);</div>
+<div class="line"><span class="lineno">  766</span> </div>
+<div class="line"><span class="lineno">  767</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mNumEntries == 1) {</div>
+<div class="line"><span class="lineno">  768</span>        result = outputs[0];</div>
+<div class="line"><span class="lineno">  769</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  770</span>        result = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#abbefcc063e6678ce568593f206685b2c">eval2DRamp</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mNumEntries,</div>
+<div class="line"><span class="lineno">  771</span>                              <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInputs,</div>
+<div class="line"><span class="lineno">  772</span>                              outputs,</div>
+<div class="line"><span class="lineno">  773</span>                              <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInterpolators,</div>
+<div class="line"><span class="lineno">  774</span>                              <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>Color*<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mSlopes),</div>
+<div class="line"><span class="lineno">  775</span>                              uv,</div>
+<div class="line"><span class="lineno">  776</span>                              rampType2D,</div>
+<div class="line"><span class="lineno">  777</span>                              inputRamp,</div>
+<div class="line"><span class="lineno">  778</span>                              [&amp;](Color&amp; left, Color&amp; right) {</div>
+<div class="line"><span class="lineno">  779</span>                                  blendAdjustment(left, right);</div>
+<div class="line"><span class="lineno">  780</span>                              });</div>
+<div class="line"><span class="lineno">  781</span>    }</div>
+<div class="line"><span class="lineno">  782</span> </div>
+<div class="line"><span class="lineno">  783</span>    <span class="comment">// convert back to HSV/HSL after evaluation if needed</span></div>
+<div class="line"><span class="lineno">  784</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSV) {</div>
+<div class="line"><span class="lineno">  785</span>        result = scene_rdl2::math::hsvToRgb(result);</div>
+<div class="line"><span class="lineno">  786</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSL) {</div>
+<div class="line"><span class="lineno">  787</span>        result = scene_rdl2::math::hslToRgb(result);</div>
+<div class="line"><span class="lineno">  788</span>    }</div>
+<div class="line"><span class="lineno">  789</span> </div>
+<div class="line"><span class="lineno">  790</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  791</span>}</div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_abbefcc063e6678ce568593f206685b2c"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#abbefcc063e6678ce568593f206685b2c">anonymous_namespace{RampControl.cc}::eval2DRamp</a></div><div class="ttdeci">OutputType eval2DRamp(const int numEntries, const float *inputs, const OutputType *outputs, const ispc::RampInterpolatorMode *interpolators, const OutputType *slopes, Vec2f uv, ispc::RampInterpolator2DType rampType2D, float inputRamp, const BlendAdjustmentCallbackType &amp;blendAdjustmentCallback)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00515">RampControl.cc:515</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a06226fa9e87848f18a40e4f272c8eaeb" name="a06226fa9e87848f18a40e4f272c8eaeb"></a>
@@ -275,6 +418,83 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ramp_control_8cc_source.html#l00654">654</a> of file <a class="el" href="_ramp_control_8cc_source.html">RampControl.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  660</span>{</div>
+<div class="line"><span class="lineno">  661</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mApplyHueBlendAdjustment = applyHueBlendAdjustment;</div>
+<div class="line"><span class="lineno">  662</span> </div>
+<div class="line"><span class="lineno">  663</span>    <span class="comment">// ignore any extra points</span></div>
+<div class="line"><span class="lineno">  664</span>    numEntries = math::min(numEntries, ispc::RAMP_MAX_POINTS);</div>
+<div class="line"><span class="lineno">  665</span> </div>
+<div class="line"><span class="lineno">  666</span>    <span class="comment">// copy inputs/outputs/interpolators</span></div>
+<div class="line"><span class="lineno">  667</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mNumEntries = numEntries;</div>
+<div class="line"><span class="lineno">  668</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; numEntries; ++i) {</div>
+<div class="line"><span class="lineno">  669</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInputs[i] = inputs[i];</div>
+<div class="line"><span class="lineno">  670</span>        asCpp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs[i]) = outputs[i];</div>
+<div class="line"><span class="lineno">  671</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInterpolators[i] = interpolators[i];</div>
+<div class="line"><span class="lineno">  672</span>    }</div>
+<div class="line"><span class="lineno">  673</span> </div>
+<div class="line"><span class="lineno">  674</span>    <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a11a236d067a323fc28df0afc221153e8">sortEntries</a>(numEntries, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInputs, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInterpolators);</div>
+<div class="line"><span class="lineno">  675</span> </div>
+<div class="line"><span class="lineno">  676</span>    <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ad02fb7f40ce9f57e8257d80fa0798c54">evaluateMonotoneSlopes</a>(numEntries,</div>
+<div class="line"><span class="lineno">  677</span>                           <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInputs,</div>
+<div class="line"><span class="lineno">  678</span>                           asCpp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs),</div>
+<div class="line"><span class="lineno">  679</span>                           <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInterpolators,</div>
+<div class="line"><span class="lineno">  680</span>                           asCpp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mSlopes));</div>
+<div class="line"><span class="lineno">  681</span> </div>
+<div class="line"><span class="lineno">  682</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace = colorSpace;</div>
+<div class="line"><span class="lineno">  683</span> </div>
+<div class="line"><span class="lineno">  684</span>    <span class="comment">// CATMULLROM interpolation requires 4 control points. But HSV has special logic to wrap</span></div>
+<div class="line"><span class="lineno">  685</span>    <span class="comment">// around for 2 control points and dealing with wrap for 4 control points is not supported</span></div>
+<div class="line"><span class="lineno">  686</span>    <span class="comment">// if any CATMULLROM interpolator type is detected, then we force RGB ramp interpolation mode</span></div>
+<div class="line"><span class="lineno">  687</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSV ||</div>
+<div class="line"><span class="lineno">  688</span>       <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSL) {</div>
+<div class="line"><span class="lineno">  689</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; numEntries; i++) {</div>
+<div class="line"><span class="lineno">  690</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInterpolators[i] == ispc::RAMP_INTERPOLATOR_MODE_CATMULLROM) {</div>
+<div class="line"><span class="lineno">  691</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace = ispc::COLOR_RAMP_CONTROL_SPACE_RGB;</div>
+<div class="line"><span class="lineno">  692</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  693</span>            }</div>
+<div class="line"><span class="lineno">  694</span>        }</div>
+<div class="line"><span class="lineno">  695</span>    }</div>
+<div class="line"><span class="lineno">  696</span> </div>
+<div class="line"><span class="lineno">  697</span>    <span class="comment">//convert all colors to right space based on the color space mode</span></div>
+<div class="line"><span class="lineno">  698</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSV) {</div>
+<div class="line"><span class="lineno">  699</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; numEntries; i++) {</div>
+<div class="line"><span class="lineno">  700</span>            Color rgb = asCpp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs[i]);</div>
+<div class="line"><span class="lineno">  701</span>            asCpp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs[i]) = rgbToHsv(rgb);</div>
+<div class="line"><span class="lineno">  702</span>        }</div>
+<div class="line"><span class="lineno">  703</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSL) {</div>
+<div class="line"><span class="lineno">  704</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; numEntries; i++) {</div>
+<div class="line"><span class="lineno">  705</span>            Color rgb = asCpp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs[i]);</div>
+<div class="line"><span class="lineno">  706</span>            asCpp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs[i]) = rgbToHsl(rgb);</div>
+<div class="line"><span class="lineno">  707</span>        }</div>
+<div class="line"><span class="lineno">  708</span>    }</div>
+<div class="line"><span class="lineno">  709</span>}</div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_a11a236d067a323fc28df0afc221153e8"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a11a236d067a323fc28df0afc221153e8">anonymous_namespace{RampControl.cc}::sortEntries</a></div><div class="ttdeci">void sortEntries(const uint32_t numEntries, float *const inputs, OutputType *const outputs, ispc::RampInterpolatorMode *const interpolators)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00294">RampControl.cc:294</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_ad02fb7f40ce9f57e8257d80fa0798c54"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ad02fb7f40ce9f57e8257d80fa0798c54">anonymous_namespace{RampControl.cc}::evaluateMonotoneSlopes</a></div><div class="ttdeci">void evaluateMonotoneSlopes(const int numEntries, const float *const inputs, const float *const outputs, const ispc::RampInterpolatorMode *const interpolators, float *const slopes)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00184">RampControl.cc:184</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af73cbe897ca2e2ece2e369f91ed4c3cb" name="af73cbe897ca2e2ece2e369f91ed4c3cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af73cbe897ca2e2ece2e369f91ed4c3cb">&#9670;&#160;</a></span>mIspc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ispc::ColorRampControl moonray::shading::ColorRampControl::mIspc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ramp_control_8h_source.html#l00087">87</a> of file <a class="el" href="_ramp_control_8h_source.html">RampControl.h</a>.</p>
 
 </div>
 </div>
@@ -283,9 +503,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/<a class="el" href="_ramp_control_8cc_source.html">RampControl.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_color_ramp_control.html">ColorRampControl</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

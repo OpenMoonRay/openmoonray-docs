@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,6 +43,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_deep_image_output_tile.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -124,24 +144,24 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4e352f3d395366370f95859d662cd54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59f48ec3d900c5f523c0f92d41828a91"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#a59f48ec3d900c5f523c0f92d41828a91">bytesUsed</a> () const</td></tr>
 <tr class="separator:a59f48ec3d900c5f523c0f92d41828a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b09858f0fd67336fd04e48b8a617656"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_deep_image_output_tile_1_1_deep_line.html">DeepLine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#a9b09858f0fd67336fd04e48b8a617656">getLine</a> (int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:a9b09858f0fd67336fd04e48b8a617656"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_deep_image_output_tile_1_1_deep_line.html">DeepLine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#a9b09858f0fd67336fd04e48b8a617656">getLine</a> (int y) const</td></tr>
 <tr class="separator:a9b09858f0fd67336fd04e48b8a617656"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a601f2be943e76653e18f37828f8196c7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#a601f2be943e76653e18f37828f8196c7">getNumSamplesAt</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:a601f2be943e76653e18f37828f8196c7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#a601f2be943e76653e18f37828f8196c7">getNumSamplesAt</a> (int x, int y) const</td></tr>
 <tr class="separator:a601f2be943e76653e18f37828f8196c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a095bc85d8f01d3a20468077ca0e26417"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#a095bc85d8f01d3a20468077ca0e26417">getDeepPixel</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;pixel) const</td></tr>
+<tr class="memitem:a095bc85d8f01d3a20468077ca0e26417"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#a095bc85d8f01d3a20468077ca0e26417">getDeepPixel</a> (int x, int y, OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;pixel) const</td></tr>
 <tr class="separator:a095bc85d8f01d3a20468077ca0e26417"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d1ec37cedb4687a83c81f07d0d2e22e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#a2d1ec37cedb4687a83c81f07d0d2e22e">getSampleMetadata</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, size_t sample, OPENDCX_INTERNAL_NAMESPACE::DeepMetadata &amp;metadata) const</td></tr>
+<tr class="memitem:a2d1ec37cedb4687a83c81f07d0d2e22e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#a2d1ec37cedb4687a83c81f07d0d2e22e">getSampleMetadata</a> (int x, int y, size_t <a class="el" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>, OPENDCX_INTERNAL_NAMESPACE::DeepMetadata &amp;metadata) const</td></tr>
 <tr class="separator:a2d1ec37cedb4687a83c81f07d0d2e22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61303c235f787c3e4722519d8b97a0aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#a61303c235f787c3e4722519d8b97a0aa">setDeepPixel</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, const OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;pixel)</td></tr>
+<tr class="memitem:a61303c235f787c3e4722519d8b97a0aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#a61303c235f787c3e4722519d8b97a0aa">setDeepPixel</a> (int x, int y, const OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;pixel)</td></tr>
 <tr class="memdesc:a61303c235f787c3e4722519d8b97a0aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">rst:cpp:end::  <a href="class_deep_image_output_tile.html#a61303c235f787c3e4722519d8b97a0aa">More...</a><br /></td></tr>
 <tr class="separator:a61303c235f787c3e4722519d8b97a0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa955bfa4554438809d0b6a959b75aa41"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#aa955bfa4554438809d0b6a959b75aa41">clearDeepPixel</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
+<tr class="memitem:aa955bfa4554438809d0b6a959b75aa41"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#aa955bfa4554438809d0b6a959b75aa41">clearDeepPixel</a> (int x, int y)</td></tr>
 <tr class="separator:aa955bfa4554438809d0b6a959b75aa41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93d7bf82508f067cc9026cb02766cee9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#a93d7bf82508f067cc9026cb02766cee9">setOutputFile</a> (const char *filename, OPENEXR_IMF_NAMESPACE::LineOrder line_order=OPENEXR_IMF_NAMESPACE::INCREASING_Y, OPENEXR_IMF_NAMESPACE::Compression compression=OPENEXR_IMF_NAMESPACE::ZIPS_COMPRESSION)</td></tr>
 <tr class="separator:a93d7bf82508f067cc9026cb02766cee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a492559566e1e616f83bb713898c0832c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#a492559566e1e616f83bb713898c0832c">setOutputFile</a> (const char *filename, const Imf::Header &amp;headerToCopyAttributes)</td></tr>
 <tr class="separator:a492559566e1e616f83bb713898c0832c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a276117925ae0469dd3a0ca960a5a08"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#a1a276117925ae0469dd3a0ca960a5a08">writeScanline</a> (int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, bool flush_line=true)</td></tr>
+<tr class="memitem:a1a276117925ae0469dd3a0ca960a5a08"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#a1a276117925ae0469dd3a0ca960a5a08">writeScanline</a> (int y, bool flush_line=true)</td></tr>
 <tr class="separator:a1a276117925ae0469dd3a0ca960a5a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3f1c188bc40c89269f1b5ab9f673a82"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#aa3f1c188bc40c89269f1b5ab9f673a82">writeTile</a> (bool flush_tile=true)</td></tr>
 <tr class="separator:aa3f1c188bc40c89269f1b5ab9f673a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,16 +176,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af43abee98b3d933928fa03489c6cff6b inherit pub_methods_class_deep_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fce6e9a89ce36baffb104d6b7a66326 inherit pub_methods_class_deep_tile"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#a3fce6e9a89ce36baffb104d6b7a66326">setChannels</a> (const <a class="el" href="class_channel_set.html">ChannelSet</a> &amp;<a class="el" href="class_pixel_tile.html#ac5fa8ea854e57ba3e97983cf37573790">channels</a>, bool force=false)</td></tr>
 <tr class="separator:a3fce6e9a89ce36baffb104d6b7a66326 inherit pub_methods_class_deep_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac52031c392840da4003e432226d12b6d inherit pub_methods_class_deep_tile"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#ac52031c392840da4003e432226d12b6d">getNumSamplesAt</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const =0</td></tr>
+<tr class="memitem:ac52031c392840da4003e432226d12b6d inherit pub_methods_class_deep_tile"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#ac52031c392840da4003e432226d12b6d">getNumSamplesAt</a> (int x, int y) const =0</td></tr>
 <tr class="separator:ac52031c392840da4003e432226d12b6d inherit pub_methods_class_deep_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aceb6c014add3fa2972c6a6d77ae5f2 inherit pub_methods_class_deep_tile"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#a5aceb6c014add3fa2972c6a6d77ae5f2">getDeepPixel</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;pixel) const =0</td></tr>
+<tr class="memitem:a5aceb6c014add3fa2972c6a6d77ae5f2 inherit pub_methods_class_deep_tile"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#a5aceb6c014add3fa2972c6a6d77ae5f2">getDeepPixel</a> (int x, int y, OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;pixel) const =0</td></tr>
 <tr class="separator:a5aceb6c014add3fa2972c6a6d77ae5f2 inherit pub_methods_class_deep_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29bb2414c945322e872df5ce1c561b7e inherit pub_methods_class_deep_tile"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#a29bb2414c945322e872df5ce1c561b7e">getSampleMetadata</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, size_t sample, OPENDCX_INTERNAL_NAMESPACE::DeepMetadata &amp;metadata) const =0</td></tr>
+<tr class="memitem:a29bb2414c945322e872df5ce1c561b7e inherit pub_methods_class_deep_tile"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#a29bb2414c945322e872df5ce1c561b7e">getSampleMetadata</a> (int x, int y, size_t <a class="el" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>, OPENDCX_INTERNAL_NAMESPACE::DeepMetadata &amp;metadata) const =0</td></tr>
 <tr class="separator:a29bb2414c945322e872df5ce1c561b7e inherit pub_methods_class_deep_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a796330df2dc4926d7b6b5a496587f3e0 inherit pub_methods_class_deep_tile"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#a796330df2dc4926d7b6b5a496587f3e0">setDeepPixel</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, const OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;pixel)</td></tr>
+<tr class="memitem:a796330df2dc4926d7b6b5a496587f3e0 inherit pub_methods_class_deep_tile"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#a796330df2dc4926d7b6b5a496587f3e0">setDeepPixel</a> (int x, int y, const OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;pixel)</td></tr>
 <tr class="memdesc:a796330df2dc4926d7b6b5a496587f3e0 inherit pub_methods_class_deep_tile"><td class="mdescLeft">&#160;</td><td class="mdescRight">rst:cpp:end::  <a href="class_deep_tile.html#a796330df2dc4926d7b6b5a496587f3e0">More...</a><br /></td></tr>
 <tr class="separator:a796330df2dc4926d7b6b5a496587f3e0 inherit pub_methods_class_deep_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebd5d480003bcf1c1867a7c96b538103 inherit pub_methods_class_deep_tile"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#aebd5d480003bcf1c1867a7c96b538103">clearDeepPixel</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
+<tr class="memitem:aebd5d480003bcf1c1867a7c96b538103 inherit pub_methods_class_deep_tile"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#aebd5d480003bcf1c1867a7c96b538103">clearDeepPixel</a> (int x, int y)</td></tr>
 <tr class="separator:aebd5d480003bcf1c1867a7c96b538103 inherit pub_methods_class_deep_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2867f69debb70438ed5c4285f8836c0 inherit pub_methods_class_deep_tile"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_deep_tile.html#a4539e8412e12ff717d07d9e668db7e63">WriteAccessMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#ac2867f69debb70438ed5c4285f8836c0">writeAccessMode</a> () const</td></tr>
 <tr class="separator:ac2867f69debb70438ed5c4285f8836c0 inherit pub_methods_class_deep_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,7 +209,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a507f65803cc8f8336c67fbc3a62edfcf inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">yAxisUp</a> () const</td></tr>
 <tr class="memdesc:a507f65803cc8f8336c67fbc3a62edfcf inherit pub_methods_class_pixel_tile"><td class="mdescLeft">&#160;</td><td class="mdescRight">rst:cpp:end::  <a href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">More...</a><br /></td></tr>
 <tr class="separator:a507f65803cc8f8336c67fbc3a62edfcf inherit pub_methods_class_pixel_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af02122044a3c48f33dd7e4f64a8b9ae2 inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#af02122044a3c48f33dd7e4f64a8b9ae2">flipY</a> (int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:af02122044a3c48f33dd7e4f64a8b9ae2 inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#af02122044a3c48f33dd7e4f64a8b9ae2">flipY</a> (int y) const</td></tr>
 <tr class="separator:af02122044a3c48f33dd7e4f64a8b9ae2 inherit pub_methods_class_pixel_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1095f25d85ae09786056bfc1c02027b8 inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">IMATH_NAMESPACE::Box2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#a1095f25d85ae09786056bfc1c02027b8">flipY</a> (const IMATH_NAMESPACE::Box2i &amp;bbox) const</td></tr>
 <tr class="separator:a1095f25d85ae09786056bfc1c02027b8 inherit pub_methods_class_pixel_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,9 +243,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa504c4c60d6fd599c4cecc79e868526b inherit pub_methods_class_pixel_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49fb0cffaabe236c699ee06920d80c5c inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_channel_alias.html">ChannelAlias</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#a49fb0cffaabe236c699ee06920d80c5c">getChannelAlias</a> (<a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>) const</td></tr>
 <tr class="separator:a49fb0cffaabe236c699ee06920d80c5c inherit pub_methods_class_pixel_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae07459f132d19d53adca5832c1de81eb inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#ae07459f132d19d53adca5832c1de81eb">isActivePixel</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:ae07459f132d19d53adca5832c1de81eb inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#ae07459f132d19d53adca5832c1de81eb">isActivePixel</a> (int x, int y) const</td></tr>
 <tr class="separator:ae07459f132d19d53adca5832c1de81eb inherit pub_methods_class_pixel_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0cb4b5eb6ba72a62f8d535044d2b8c9 inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#ac0cb4b5eb6ba72a62f8d535044d2b8c9">isInside</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:ac0cb4b5eb6ba72a62f8d535044d2b8c9 inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#ac0cb4b5eb6ba72a62f8d535044d2b8c9">isInside</a> (int x, int y) const</td></tr>
 <tr class="separator:ac0cb4b5eb6ba72a62f8d535044d2b8c9 inherit pub_methods_class_pixel_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_image_format"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_image_format')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_image_format.html">ImageFormat</a></td></tr>
 <tr class="memitem:af4abce771695d1cb077c3768489a5f81 inherit pub_methods_class_image_format"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_format.html#af4abce771695d1cb077c3768489a5f81">ImageFormat</a> ()</td></tr>
@@ -345,13 +365,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a76c1f4ab393314046f82d133679c3cee inherit pub_methods_class_image_format"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed2cca1ca52565f733a4d5f1a8645f8d inherit pub_methods_class_image_format"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_format.html#aed2cca1ca52565f733a4d5f1a8645f8d">screenWindowHeight</a> () const</td></tr>
 <tr class="separator:aed2cca1ca52565f733a4d5f1a8645f8d inherit pub_methods_class_image_format"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0225a8f6f0764af50037afcf16a6be46 inherit pub_methods_class_image_format"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_format.html#a0225a8f6f0764af50037afcf16a6be46">pixelToNdc</a> (float <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, float <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, float &amp;u, float &amp;v) const</td></tr>
+<tr class="memitem:a0225a8f6f0764af50037afcf16a6be46 inherit pub_methods_class_image_format"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_format.html#a0225a8f6f0764af50037afcf16a6be46">pixelToNdc</a> (float x, float y, float &amp;u, float &amp;v) const</td></tr>
 <tr class="separator:a0225a8f6f0764af50037afcf16a6be46 inherit pub_methods_class_image_format"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27d0a74fbad777b1f0721b4b7f7beb4f inherit pub_methods_class_image_format"><td class="memItemLeft" align="right" valign="top">IMATH_NAMESPACE::V2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_format.html#a27d0a74fbad777b1f0721b4b7f7beb4f">pixelToNdc</a> (float <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, float <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:a27d0a74fbad777b1f0721b4b7f7beb4f inherit pub_methods_class_image_format"><td class="memItemLeft" align="right" valign="top">IMATH_NAMESPACE::V2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_format.html#a27d0a74fbad777b1f0721b4b7f7beb4f">pixelToNdc</a> (float x, float y) const</td></tr>
 <tr class="separator:a27d0a74fbad777b1f0721b4b7f7beb4f inherit pub_methods_class_image_format"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ceb1f6031e51d20c8275a0b3368059c inherit pub_methods_class_image_format"><td class="memItemLeft" align="right" valign="top">IMATH_NAMESPACE::V2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_format.html#a0ceb1f6031e51d20c8275a0b3368059c">pixelToNdc</a> (const IMATH_NAMESPACE::V2f &amp;pixelXY) const</td></tr>
 <tr class="separator:a0ceb1f6031e51d20c8275a0b3368059c inherit pub_methods_class_image_format"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7fe17f557935b5665ca64d56a52ae2f inherit pub_methods_class_image_format"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_format.html#af7fe17f557935b5665ca64d56a52ae2f">ndcToPixel</a> (float u, float v, float &amp;<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, float &amp;<a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:af7fe17f557935b5665ca64d56a52ae2f inherit pub_methods_class_image_format"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_format.html#af7fe17f557935b5665ca64d56a52ae2f">ndcToPixel</a> (float u, float v, float &amp;x, float &amp;y) const</td></tr>
 <tr class="separator:af7fe17f557935b5665ca64d56a52ae2f inherit pub_methods_class_image_format"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52abe220680193e951c175fb1abb6557 inherit pub_methods_class_image_format"><td class="memItemLeft" align="right" valign="top">IMATH_NAMESPACE::V2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_format.html#a52abe220680193e951c175fb1abb6557">ndcToPixel</a> (float u, float v) const</td></tr>
 <tr class="separator:a52abe220680193e951c175fb1abb6557 inherit pub_methods_class_image_format"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -389,7 +409,7 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aea050f78fc3c2742e504a65b875506bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#aea050f78fc3c2742e504a65b875506bd">deleteDeepLines</a> ()</td></tr>
 <tr class="separator:aea050f78fc3c2742e504a65b875506bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39c4d267f7070a2e5f1bb0b0c651d33e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_deep_image_output_tile_1_1_deep_line.html">DeepLine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#a39c4d267f7070a2e5f1bb0b0c651d33e">createDeepLine</a> (int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
+<tr class="memitem:a39c4d267f7070a2e5f1bb0b0c651d33e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_deep_image_output_tile_1_1_deep_line.html">DeepLine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_image_output_tile.html#a39c4d267f7070a2e5f1bb0b0c651d33e">createDeepLine</a> (int y)</td></tr>
 <tr class="separator:a39c4d267f7070a2e5f1bb0b0c651d33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_deep_tile"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_deep_tile')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_deep_tile.html">DeepTile</a></td></tr>
 <tr class="memitem:a1a6bf79e60f1be81df68659f4454d4ad inherit pro_methods_class_deep_tile"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#a1a6bf79e60f1be81df68659f4454d4ad">DeepTile</a> (const <a class="el" href="class_deep_tile.html">DeepTile</a> &amp;)</td></tr>
@@ -582,7 +602,37 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00291">291</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  296</span>                                                        :</div>
+<div class="line"><span class="lineno">  297</span>    <a class="code hl_class" href="class_deep_tile.html">DeepTile</a>(data_window,</div>
+<div class="line"><span class="lineno">  298</span>             display_window.max.y,</div>
+<div class="line"><span class="lineno">  299</span>             sourceWindowsYup,</div>
+<div class="line"><span class="lineno">  300</span>             <a class="code hl_function" href="class_pixel_tile.html#ac5fa8ea854e57ba3e97983cf37573790">channels</a>,</div>
+<div class="line"><span class="lineno">  301</span>             channel_ctx,</div>
+<div class="line"><span class="lineno">  302</span>             <a class="code hl_enumvalue" href="class_deep_tile.html#a4539e8412e12ff717d07d9e668db7e63adcc2bac78f8a3ae18cd8073cb3ca757d">WRITE_RANDOM</a>,</div>
+<div class="line"><span class="lineno">  303</span>             <a class="code hl_function" href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">yAxisUp</a>),</div>
+<div class="line"><span class="lineno">  304</span>    <a class="code hl_function" href="class_image_format.html#af4abce771695d1cb077c3768489a5f81">ImageFormat</a>(std::string(<span class="stringliteral">&quot;&quot;</span>), display_window, 1.0f<span class="comment">/*pa*/</span>),</div>
+<div class="line"><span class="lineno">  305</span>    <a class="code hl_variable" href="class_deep_image_output_tile.html#ab982ad362cf8bd5da1dbf03c426e45dd">m_file</a>(0)</div>
+<div class="line"><span class="lineno">  306</span>{</div>
+<div class="line"><span class="lineno">  307</span><span class="preprocessor">#if 0</span></div>
+<div class="line"><span class="lineno">  308</span>    <span class="comment">// Make sure output channels have Z&#39;s, metadata enabled:</span></div>
+<div class="line"><span class="lineno">  309</span>    <a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a> += OPENDCX_INTERNAL_NAMESPACE::Mask_Deep;</div>
+<div class="line"><span class="lineno">  310</span>    <a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a> += <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[0];</div>
+<div class="line"><span class="lineno">  311</span>    <a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a> += <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[1];</div>
+<div class="line"><span class="lineno">  312</span>    <a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a> += <a class="code hl_variable" href="class_deep_tile.html#a1f517da20d9b9b1ebc0f8e43d3f67b12">m_flags_channel</a>;</div>
+<div class="line"><span class="lineno">  313</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  314</span>    <a class="code hl_function" href="class_deep_image_output_tile.html#a4e352f3d395366370f95859d662cd54f">setDataWindow</a>(data_window, sourceWindowsYup, <span class="keyword">true</span><span class="comment">/*force*/</span>);</div>
+<div class="line"><span class="lineno">  315</span>}</div>
+<div class="ttc" id="aclass_deep_image_output_tile_html_a4e352f3d395366370f95859d662cd54f"><div class="ttname"><a href="class_deep_image_output_tile.html#a4e352f3d395366370f95859d662cd54f">DeepImageOutputTile::setDataWindow</a></div><div class="ttdeci">void setDataWindow(const IMATH_NAMESPACE::Box2i &amp;data_window, bool sourceWindowYAxisUp=true, bool force=false)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_image_tile_8cpp_source.html#l00380">DcxDeepImageTile.cpp:380</a></div></div>
+<div class="ttc" id="aclass_deep_image_output_tile_html_ab982ad362cf8bd5da1dbf03c426e45dd"><div class="ttname"><a href="class_deep_image_output_tile.html#ab982ad362cf8bd5da1dbf03c426e45dd">DeepImageOutputTile::m_file</a></div><div class="ttdeci">OPENEXR_IMF_NAMESPACE::DeepScanLineOutputFile * m_file</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_image_tile_8h_source.html#l00429">DcxDeepImageTile.h:429</a></div></div>
+<div class="ttc" id="aclass_deep_tile_html"><div class="ttname"><a href="class_deep_tile.html">DeepTile</a></div><div class="ttdoc">rst:cpp:begin::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_tile_8h_source.html#l00083">DcxDeepTile.h:84</a></div></div>
+<div class="ttc" id="aclass_deep_tile_html_a1f517da20d9b9b1ebc0f8e43d3f67b12"><div class="ttname"><a href="class_deep_tile.html#a1f517da20d9b9b1ebc0f8e43d3f67b12">DeepTile::m_flags_channel</a></div><div class="ttdeci">OPENDCX_INTERNAL_NAMESPACE::ChannelIdx m_flags_channel</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_tile_8h_source.html#l00237">DcxDeepTile.h:237</a></div></div>
+<div class="ttc" id="aclass_deep_tile_html_a4539e8412e12ff717d07d9e668db7e63adcc2bac78f8a3ae18cd8073cb3ca757d"><div class="ttname"><a href="class_deep_tile.html#a4539e8412e12ff717d07d9e668db7e63adcc2bac78f8a3ae18cd8073cb3ca757d">DeepTile::WRITE_RANDOM</a></div><div class="ttdeci">@ WRITE_RANDOM</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_tile_8h_source.html#l00098">DcxDeepTile.h:98</a></div></div>
+<div class="ttc" id="aclass_deep_tile_html_a51298ef272e417eba547af1577dd1102"><div class="ttname"><a href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">DeepTile::m_spmask_channel</a></div><div class="ttdeci">OPENDCX_INTERNAL_NAMESPACE::ChannelIdx m_spmask_channel[2]</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_tile_8h_source.html#l00236">DcxDeepTile.h:236</a></div></div>
+<div class="ttc" id="aclass_image_format_html_af4abce771695d1cb077c3768489a5f81"><div class="ttname"><a href="class_image_format.html#af4abce771695d1cb077c3768489a5f81">ImageFormat::ImageFormat</a></div><div class="ttdeci">ImageFormat()</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_image_format_8cpp_source.html#l00054">DcxImageFormat.cpp:54</a></div></div>
+<div class="ttc" id="aclass_pixel_tile_html_a3355561819063fefe9716240b0d15d82"><div class="ttname"><a href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">PixelTile::m_channels</a></div><div class="ttdeci">OPENDCX_INTERNAL_NAMESPACE::ChannelSet m_channels</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00231">DcxPixelTile.h:231</a></div></div>
+<div class="ttc" id="aclass_pixel_tile_html_a507f65803cc8f8336c67fbc3a62edfcf"><div class="ttname"><a href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">PixelTile::yAxisUp</a></div><div class="ttdeci">bool yAxisUp() const</div><div class="ttdoc">rst:cpp:end::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00245">DcxPixelTile.h:245</a></div></div>
+<div class="ttc" id="aclass_pixel_tile_html_ac5fa8ea854e57ba3e97983cf37573790"><div class="ttname"><a href="class_pixel_tile.html#ac5fa8ea854e57ba3e97983cf37573790">PixelTile::channels</a></div><div class="ttdeci">const OPENDCX_INTERNAL_NAMESPACE::ChannelSet &amp; channels() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00255">DcxPixelTile.h:255</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1d669c0f73771078d85454cfe00685b3" name="a1d669c0f73771078d85454cfe00685b3"></a>
@@ -618,7 +668,14 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00318">318</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  320</span>                                                                :</div>
+<div class="line"><span class="lineno">  321</span>    <a class="code hl_class" href="class_deep_tile.html">DeepTile</a>(b),</div>
+<div class="line"><span class="lineno">  322</span>    <a class="code hl_function" href="class_image_format.html#af4abce771695d1cb077c3768489a5f81">ImageFormat</a>(b),</div>
+<div class="line"><span class="lineno">  323</span>    <a class="code hl_variable" href="class_deep_image_output_tile.html#ab982ad362cf8bd5da1dbf03c426e45dd">m_file</a>(0)</div>
+<div class="line"><span class="lineno">  324</span>{</div>
+<div class="line"><span class="lineno">  325</span>    <a class="code hl_function" href="class_deep_image_output_tile.html#a4e352f3d395366370f95859d662cd54f">setDataWindow</a>(data_window, sourceWindowYup, <span class="keyword">true</span><span class="comment">/*force*/</span>);</div>
+<div class="line"><span class="lineno">  326</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a81bda26fd1d220e8db916b35c47f2e51" name="a81bda26fd1d220e8db916b35c47f2e51"></a>
@@ -660,7 +717,15 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00328">328</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  331</span>                                                                :</div>
+<div class="line"><span class="lineno">  332</span>    <a class="code hl_class" href="class_deep_tile.html">DeepTile</a>(tile),</div>
+<div class="line"><span class="lineno">  333</span>    <a class="code hl_function" href="class_image_format.html#af4abce771695d1cb077c3768489a5f81">ImageFormat</a>(<a class="code hl_function" href="class_deep_image_output_tile.html#a88866318e2aae47629b91a42dc9b83e3">format</a>),</div>
+<div class="line"><span class="lineno">  334</span>    <a class="code hl_variable" href="class_deep_image_output_tile.html#ab982ad362cf8bd5da1dbf03c426e45dd">m_file</a>(0)</div>
+<div class="line"><span class="lineno">  335</span>{</div>
+<div class="line"><span class="lineno">  336</span>    <a class="code hl_function" href="class_deep_image_output_tile.html#a4e352f3d395366370f95859d662cd54f">setDataWindow</a>(data_window, sourceWindowYup, <span class="keyword">true</span><span class="comment">/*force*/</span>);</div>
+<div class="line"><span class="lineno">  337</span>}</div>
+<div class="ttc" id="aclass_deep_image_output_tile_html_a88866318e2aae47629b91a42dc9b83e3"><div class="ttname"><a href="class_deep_image_output_tile.html#a88866318e2aae47629b91a42dc9b83e3">DeepImageOutputTile::format</a></div><div class="ttdeci">ImageFormat * format()</div><div class="ttdoc">rst:cpp:end::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_image_tile_8h_source.html#l00444">DcxDeepImageTile.h:444</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7c45959c8e8663d8a98261a4514576ea" name="a7c45959c8e8663d8a98261a4514576ea"></a>
@@ -680,7 +745,16 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00339">339</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  339</span>                                                                     :</div>
+<div class="line"><span class="lineno">  340</span>    <a class="code hl_class" href="class_deep_tile.html">DeepTile</a>(b),</div>
+<div class="line"><span class="lineno">  341</span>    <a class="code hl_function" href="class_image_format.html#af4abce771695d1cb077c3768489a5f81">ImageFormat</a>(b),</div>
+<div class="line"><span class="lineno">  342</span>    <a class="code hl_variable" href="class_deep_image_output_tile.html#ab982ad362cf8bd5da1dbf03c426e45dd">m_file</a>(0)</div>
+<div class="line"><span class="lineno">  343</span>{</div>
+<div class="line"><span class="lineno">  344</span>    <a class="code hl_function" href="class_deep_image_output_tile.html#a4e352f3d395366370f95859d662cd54f">setDataWindow</a>(<a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>, <a class="code hl_variable" href="class_pixel_tile.html#acb6142e31c60bc2803f243c62948056d">m_yaxis_up</a>);</div>
+<div class="line"><span class="lineno">  345</span>}</div>
+<div class="ttc" id="aclass_pixel_tile_html_ab587143b0f7ae0ad89a486bb48ed72eb"><div class="ttname"><a href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">PixelTile::m_dataWindow</a></div><div class="ttdeci">IMATH_NAMESPACE::Box2i m_dataWindow</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00227">DcxPixelTile.h:227</a></div></div>
+<div class="ttc" id="aclass_pixel_tile_html_acb6142e31c60bc2803f243c62948056d"><div class="ttname"><a href="class_pixel_tile.html#acb6142e31c60bc2803f243c62948056d">PixelTile::m_yaxis_up</a></div><div class="ttdeci">bool m_yaxis_up</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00225">DcxPixelTile.h:225</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a19a648b8de3b518daee461b2c9871d03" name="a19a648b8de3b518daee461b2c9871d03"></a>
@@ -710,7 +784,14 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00347">347</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  348</span>                                                                :</div>
+<div class="line"><span class="lineno">  349</span>    <a class="code hl_class" href="class_deep_tile.html">DeepTile</a>(tile),</div>
+<div class="line"><span class="lineno">  350</span>    <a class="code hl_function" href="class_image_format.html#af4abce771695d1cb077c3768489a5f81">ImageFormat</a>(<a class="code hl_function" href="class_deep_image_output_tile.html#a88866318e2aae47629b91a42dc9b83e3">format</a>),</div>
+<div class="line"><span class="lineno">  351</span>    <a class="code hl_variable" href="class_deep_image_output_tile.html#ab982ad362cf8bd5da1dbf03c426e45dd">m_file</a>(0)</div>
+<div class="line"><span class="lineno">  352</span>{</div>
+<div class="line"><span class="lineno">  353</span>    <a class="code hl_function" href="class_deep_image_output_tile.html#a4e352f3d395366370f95859d662cd54f">setDataWindow</a>(<a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>, <a class="code hl_variable" href="class_pixel_tile.html#acb6142e31c60bc2803f243c62948056d">m_yaxis_up</a>, <span class="keyword">true</span><span class="comment">/*force*/</span>);</div>
+<div class="line"><span class="lineno">  354</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abd709f948e42de55aa2ef41c3e39bacd" name="abd709f948e42de55aa2ef41c3e39bacd"></a>
@@ -729,7 +810,14 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00357">357</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  358</span>{</div>
+<div class="line"><span class="lineno">  359</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nLines = <a class="code hl_variable" href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">m_deep_lines</a>.size();</div>
+<div class="line"><span class="lineno">  360</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> y=0; y &lt; nLines; ++y)</div>
+<div class="line"><span class="lineno">  361</span>        <span class="keyword">delete</span> <a class="code hl_variable" href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">m_deep_lines</a>[y];</div>
+<div class="line"><span class="lineno">  362</span>    <span class="keyword">delete</span> <a class="code hl_variable" href="class_deep_image_output_tile.html#ab982ad362cf8bd5da1dbf03c426e45dd">m_file</a>;</div>
+<div class="line"><span class="lineno">  363</span>}</div>
+<div class="ttc" id="aclass_deep_image_output_tile_html_add259e88540ca07984f5d05ccf41d78a"><div class="ttname"><a href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">DeepImageOutputTile::m_deep_lines</a></div><div class="ttdeci">std::vector&lt; DeepLine * &gt; m_deep_lines</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_image_tile_8h_source.html#l00427">DcxDeepImageTile.h:427</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -749,7 +837,24 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00395">395</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  396</span>{</div>
+<div class="line"><span class="lineno">  397</span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> = 0;</div>
+<div class="line"><span class="lineno">  398</span>    <span class="keywordtype">size_t</span> nLines = <a class="code hl_variable" href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">m_deep_lines</a>.size();</div>
+<div class="line"><span class="lineno">  399</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j=0; j &lt; nLines; ++j)</div>
+<div class="line"><span class="lineno">  400</span>    {</div>
+<div class="line"><span class="lineno">  401</span>        <span class="keyword">const</span> DeepLine* dl = <a class="code hl_variable" href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">m_deep_lines</a>[j];</div>
+<div class="line"><span class="lineno">  402</span>        <span class="keywordflow">if</span> (dl)</div>
+<div class="line"><span class="lineno">  403</span>        {</div>
+<div class="line"><span class="lineno">  404</span>            <span class="keywordtype">int</span> chan_index = 0;</div>
+<div class="line"><span class="lineno">  405</span>            <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a>)</div>
+<div class="line"><span class="lineno">  406</span>                <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> += dl-&gt;channel_arrays[chan_index].size();</div>
+<div class="line"><span class="lineno">  407</span>        }</div>
+<div class="line"><span class="lineno">  408</span>    }</div>
+<div class="line"><span class="lineno">  409</span>    <span class="keywordflow">return</span> (count * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><span class="lineno">  410</span>}</div>
+<div class="ttc" id="a_dcx_channel_set_8h_html_a1a8a3195f4006c505fa4bec8a1c60ae2"><div class="ttname"><a href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a></div><div class="ttdeci">#define foreach_channel(CHAN, CHANNELS)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00312">DcxChannelSet.h:312</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03_html_ac002aa9e7f277e6c84e4fe1aeb5bb8cb"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">moonray::rndr::unittest::anonymous_namespace{TestOverlappingRegions.cc}::count</a></div><div class="ttdeci">void count(const OverlappingRegions&lt; sRegionOverlap, sTileWidth, sTileHeight, sDesiredRegionsPerDimension &gt; &amp;regions, int line)</div><div class="ttdef"><b>Definition:</b> <a href="_test_overlapping_regions_8cc_source.html#l00024">TestOverlappingRegions.cc:24</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa955bfa4554438809d0b6a959b75aa41" name="aa955bfa4554438809d0b6a959b75aa41"></a>
@@ -789,7 +894,17 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="class_deep_tile.html#aebd5d480003bcf1c1867a7c96b538103">DeepTile</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00731">731</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  733</span>{</div>
+<div class="line"><span class="lineno">  734</span>    DeepLine* dl = <a class="code hl_function" href="class_deep_image_output_tile.html#a39c4d267f7070a2e5f1bb0b0c651d33e">createDeepLine</a>(y);</div>
+<div class="line"><span class="lineno">  735</span>    <span class="keywordflow">if</span> (!dl || x &lt; m_dataWindow.min.x || x &gt; <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.max.x)</div>
+<div class="line"><span class="lineno">  736</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">// don&#39;t crash...</span></div>
+<div class="line"><span class="lineno">  737</span> </div>
+<div class="line"><span class="lineno">  738</span>    dl-&gt;clear(x - <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.x); <span class="comment">// Offset x into DeepLine array</span></div>
+<div class="line"><span class="lineno">  739</span> </div>
+<div class="line"><span class="lineno">  740</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  741</span>}</div>
+<div class="ttc" id="aclass_deep_image_output_tile_html_a39c4d267f7070a2e5f1bb0b0c651d33e"><div class="ttname"><a href="class_deep_image_output_tile.html#a39c4d267f7070a2e5f1bb0b0c651d33e">DeepImageOutputTile::createDeepLine</a></div><div class="ttdeci">DeepLine * createDeepLine(int y)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_image_tile_8cpp_source.html#l00650">DcxDeepImageTile.cpp:650</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a39c4d267f7070a2e5f1bb0b0c651d33e" name="a39c4d267f7070a2e5f1bb0b0c651d33e"></a>
@@ -817,7 +932,23 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00650">650</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  651</span>{</div>
+<div class="line"><span class="lineno">  652</span>    <span class="keywordflow">if</span> (y &lt; m_dataWindow.min.y || y &gt; <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.max.y)</div>
+<div class="line"><span class="lineno">  653</span>        <span class="keywordflow">return</span> 0; <span class="comment">// don&#39;t crash...  TODO: throw exception?</span></div>
+<div class="line"><span class="lineno">  654</span>    y -= <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.y;</div>
+<div class="line"><span class="lineno">  655</span><span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><span class="lineno">  656</span>    assert(<a class="code hl_variable" href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">m_deep_lines</a>.size() &gt; 0);</div>
+<div class="line"><span class="lineno">  657</span>    assert(y &gt;= 0 &amp;&amp; y &lt; (<span class="keywordtype">int</span>)<a class="code hl_variable" href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">m_deep_lines</a>.size());</div>
+<div class="line"><span class="lineno">  658</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  659</span>    DeepLine* dl = <a class="code hl_variable" href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">m_deep_lines</a>[y];</div>
+<div class="line"><span class="lineno">  660</span>    <span class="keywordflow">if</span> (!dl)</div>
+<div class="line"><span class="lineno">  661</span>        <a class="code hl_variable" href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">m_deep_lines</a>[y] = dl = <span class="keyword">new</span> DeepLine(<a class="code hl_function" href="class_pixel_tile.html#a45799dabb016e6668d7a35137f890961">w</a>(), <a class="code hl_function" href="class_pixel_tile.html#ac5fa8ea854e57ba3e97983cf37573790">channels</a>());</div>
+<div class="line"><span class="lineno">  662</span>    <span class="keywordflow">if</span> (!dl)</div>
+<div class="line"><span class="lineno">  663</span>        <span class="keywordflow">return</span> 0; <span class="comment">// don&#39;t crash... TODO: how to best handle memory alloc error...?</span></div>
+<div class="line"><span class="lineno">  664</span>    <span class="keywordflow">return</span> dl;</div>
+<div class="line"><span class="lineno">  665</span>}</div>
+<div class="ttc" id="aclass_pixel_tile_html_a45799dabb016e6668d7a35137f890961"><div class="ttname"><a href="class_pixel_tile.html#a45799dabb016e6668d7a35137f890961">PixelTile::w</a></div><div class="ttdeci">int w() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00271">DcxPixelTile.h:271</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aea050f78fc3c2742e504a65b875506bd" name="aea050f78fc3c2742e504a65b875506bd"></a>
@@ -844,7 +975,15 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00414">414</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  415</span>{</div>
+<div class="line"><span class="lineno">  416</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nLines = <a class="code hl_variable" href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">m_deep_lines</a>.size();</div>
+<div class="line"><span class="lineno">  417</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j=0; j &lt; nLines; ++j)</div>
+<div class="line"><span class="lineno">  418</span>    {</div>
+<div class="line"><span class="lineno">  419</span>        <span class="keyword">delete</span> <a class="code hl_variable" href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">m_deep_lines</a>[j];</div>
+<div class="line"><span class="lineno">  420</span>        <a class="code hl_variable" href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">m_deep_lines</a>[j] = 0;</div>
+<div class="line"><span class="lineno">  421</span>    }</div>
+<div class="line"><span class="lineno">  422</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a88866318e2aae47629b91a42dc9b83e3" name="a88866318e2aae47629b91a42dc9b83e3"></a>
@@ -875,7 +1014,8 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="class_image_format.html#a7527b7632a10cecfb810c5edf4b881be">ImageFormat</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8h_source.html#l00444">444</a> of file <a class="el" href="_dcx_deep_image_tile_8h_source.html">DcxDeepImageTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  444</span>{ <span class="keywordflow">return</span> <span class="keyword">this</span>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a095bc85d8f01d3a20468077ca0e26417" name="a095bc85d8f01d3a20468077ca0e26417"></a>
@@ -921,7 +1061,24 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="class_deep_tile.html#a5aceb6c014add3fa2972c6a6d77ae5f2">DeepTile</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00670">670</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  673</span>{</div>
+<div class="line"><span class="lineno">  674</span>    pixel.clear();</div>
+<div class="line"><span class="lineno">  675</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="class_pixel_tile.html#ae07459f132d19d53adca5832c1de81eb">isActivePixel</a>(x, y))</div>
+<div class="line"><span class="lineno">  676</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  677</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a>.empty())</div>
+<div class="line"><span class="lineno">  678</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  679</span> </div>
+<div class="line"><span class="lineno">  680</span>    DeepLine* dl = (<span class="keyword">const_cast&lt;</span><a class="code hl_class" href="class_deep_image_output_tile.html">DeepImageOutputTile</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>))-&gt;createDeepLine(y);</div>
+<div class="line"><span class="lineno">  681</span>    <span class="keywordflow">if</span> (!dl)</div>
+<div class="line"><span class="lineno">  682</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">// don&#39;t crash...</span></div>
+<div class="line"><span class="lineno">  683</span> </div>
+<div class="line"><span class="lineno">  684</span>    dl-&gt;get(x - <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.x, pixel);</div>
+<div class="line"><span class="lineno">  685</span> </div>
+<div class="line"><span class="lineno">  686</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  687</span>}</div>
+<div class="ttc" id="aclass_deep_image_output_tile_html"><div class="ttname"><a href="class_deep_image_output_tile.html">DeepImageOutputTile</a></div><div class="ttdoc">rst:left-align::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_image_tile_8h_source.html#l00220">DcxDeepImageTile.h:221</a></div></div>
+<div class="ttc" id="aclass_pixel_tile_html_ae07459f132d19d53adca5832c1de81eb"><div class="ttname"><a href="class_pixel_tile.html#ae07459f132d19d53adca5832c1de81eb">PixelTile::isActivePixel</a></div><div class="ttdeci">bool isActivePixel(int x, int y) const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00259">DcxPixelTile.h:259</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9b09858f0fd67336fd04e48b8a617656" name="a9b09858f0fd67336fd04e48b8a617656"></a>
@@ -949,7 +1106,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8h_source.html#l00475">475</a> of file <a class="el" href="_dcx_deep_image_tile_8h_source.html">DcxDeepImageTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  475</span>                                                                     {</div>
+<div class="line"><span class="lineno">  476</span>    <span class="keywordflow">return</span> (y &lt; m_dataWindow.min.y || y &gt; <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.max.y)?0:<a class="code hl_variable" href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">m_deep_lines</a>[y - <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.y]; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a601f2be943e76653e18f37828f8196c7" name="a601f2be943e76653e18f37828f8196c7"></a>
@@ -989,7 +1148,15 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="class_deep_tile.html#ac52031c392840da4003e432226d12b6d">DeepTile</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00426">426</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  427</span>{</div>
+<div class="line"><span class="lineno">  428</span>    <span class="keyword">const</span> DeepLine* dl = <a class="code hl_function" href="class_deep_image_output_tile.html#a9b09858f0fd67336fd04e48b8a617656">getLine</a>(y);</div>
+<div class="line"><span class="lineno">  429</span>    <span class="keywordflow">if</span> (!dl)</div>
+<div class="line"><span class="lineno">  430</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  431</span>    x -= <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.x;</div>
+<div class="line"><span class="lineno">  432</span>    <span class="keywordflow">return</span> (x &lt; 0 || x &gt;= (<span class="keywordtype">int</span>)dl-&gt;samples_per_pixel.size())?0:dl-&gt;samples_per_pixel[x];</div>
+<div class="line"><span class="lineno">  433</span>}</div>
+<div class="ttc" id="aclass_deep_image_output_tile_html_a9b09858f0fd67336fd04e48b8a617656"><div class="ttname"><a href="class_deep_image_output_tile.html#a9b09858f0fd67336fd04e48b8a617656">DeepImageOutputTile::getLine</a></div><div class="ttdeci">DeepLine * getLine(int y) const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_image_tile_8h_source.html#l00475">DcxDeepImageTile.h:475</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2d1ec37cedb4687a83c81f07d0d2e22e" name="a2d1ec37cedb4687a83c81f07d0d2e22e"></a>
@@ -1041,7 +1208,22 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="class_deep_tile.html#a29bb2414c945322e872df5ce1c561b7e">DeepTile</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00691">691</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  695</span>{</div>
+<div class="line"><span class="lineno">  696</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="class_pixel_tile.html#ae07459f132d19d53adca5832c1de81eb">isActivePixel</a>(x, y))</div>
+<div class="line"><span class="lineno">  697</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  698</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a>.empty())</div>
+<div class="line"><span class="lineno">  699</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  700</span> </div>
+<div class="line"><span class="lineno">  701</span>    DeepLine* dl = (<span class="keyword">const_cast&lt;</span><a class="code hl_class" href="class_deep_image_output_tile.html">DeepImageOutputTile</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>))-&gt;createDeepLine(y);</div>
+<div class="line"><span class="lineno">  702</span>    <span class="keywordflow">if</span> (!dl)</div>
+<div class="line"><span class="lineno">  703</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">// don&#39;t crash...</span></div>
+<div class="line"><span class="lineno">  704</span> </div>
+<div class="line"><span class="lineno">  705</span>    dl-&gt;getMetadata(x - <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.x, <a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>, metadata);</div>
+<div class="line"><span class="lineno">  706</span> </div>
+<div class="line"><span class="lineno">  707</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  708</span>}</div>
+<div class="ttc" id="a_attribute_map_8cc_html_ab527eec89029a7b166a67dd899129255"><div class="ttname"><a href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a></div><div class="ttdeci">static void sample(const scene_rdl2::rdl2::Map *self, moonray::shading::TLState *tls, const moonray::shading::State &amp;state, Color *sample)</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a60d696fa69fb4ca1992766f2e719d6a2" name="a60d696fa69fb4ca1992766f2e719d6a2"></a>
@@ -1071,7 +1253,15 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00368">368</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  370</span>{</div>
+<div class="line"><span class="lineno">  371</span>    <span class="keywordflow">if</span> (!force &amp;&amp; <a class="code hl_function" href="class_pixel_tile.html#ac5fa8ea854e57ba3e97983cf37573790">channels</a> == <a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a>)</div>
+<div class="line"><span class="lineno">  372</span>        <span class="keywordflow">return</span>; <span class="comment">// no change, do nothing</span></div>
+<div class="line"><span class="lineno">  373</span>    <a class="code hl_function" href="class_deep_image_output_tile.html#aea050f78fc3c2742e504a65b875506bd">deleteDeepLines</a>();</div>
+<div class="line"><span class="lineno">  374</span>    <a class="code hl_function" href="class_deep_tile.html#a3fce6e9a89ce36baffb104d6b7a66326">DeepTile::setChannels</a>(<a class="code hl_function" href="class_pixel_tile.html#ac5fa8ea854e57ba3e97983cf37573790">channels</a>, force);</div>
+<div class="line"><span class="lineno">  375</span>}</div>
+<div class="ttc" id="aclass_deep_image_output_tile_html_aea050f78fc3c2742e504a65b875506bd"><div class="ttname"><a href="class_deep_image_output_tile.html#aea050f78fc3c2742e504a65b875506bd">DeepImageOutputTile::deleteDeepLines</a></div><div class="ttdeci">void deleteDeepLines()</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_image_tile_8cpp_source.html#l00414">DcxDeepImageTile.cpp:414</a></div></div>
+<div class="ttc" id="aclass_deep_tile_html_a3fce6e9a89ce36baffb104d6b7a66326"><div class="ttname"><a href="class_deep_tile.html#a3fce6e9a89ce36baffb104d6b7a66326">DeepTile::setChannels</a></div><div class="ttdeci">void setChannels(const ChannelSet &amp;channels, bool force=false)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_tile_8cpp_source.html#l00119">DcxDeepTile.cpp:119</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4e352f3d395366370f95859d662cd54f" name="a4e352f3d395366370f95859d662cd54f"></a>
@@ -1117,7 +1307,18 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="class_pixel_tile.html#aabe0fbdb95969e167407bf1afd386e60">PixelTile</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00380">380</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  383</span>{</div>
+<div class="line"><span class="lineno">  384</span>    <span class="keywordflow">if</span> (!force &amp;&amp; data_window == <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>)</div>
+<div class="line"><span class="lineno">  385</span>        <span class="keywordflow">return</span>; <span class="comment">// no change, do nothing</span></div>
+<div class="line"><span class="lineno">  386</span>    <a class="code hl_function" href="class_deep_image_output_tile.html#aea050f78fc3c2742e504a65b875506bd">deleteDeepLines</a>();</div>
+<div class="line"><span class="lineno">  387</span>    <a class="code hl_function" href="class_pixel_tile.html#aabe0fbdb95969e167407bf1afd386e60">DeepTile::setDataWindow</a>(data_window, sourceWindowYAxisUp);</div>
+<div class="line"><span class="lineno">  388</span>    <span class="keywordtype">size_t</span> nLines = std::max(0, <a class="code hl_function" href="class_pixel_tile.html#a5ddec342f2a0e6742115012ab9566fec">h</a>());</div>
+<div class="line"><span class="lineno">  389</span>    <a class="code hl_variable" href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">m_deep_lines</a>.resize(nLines);</div>
+<div class="line"><span class="lineno">  390</span>    memset(&amp;<a class="code hl_variable" href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">m_deep_lines</a>[0], 0, nLines*<span class="keyword">sizeof</span>(DeepLine*));</div>
+<div class="line"><span class="lineno">  391</span>}</div>
+<div class="ttc" id="aclass_pixel_tile_html_a5ddec342f2a0e6742115012ab9566fec"><div class="ttname"><a href="class_pixel_tile.html#a5ddec342f2a0e6742115012ab9566fec">PixelTile::h</a></div><div class="ttdeci">int h() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00272">DcxPixelTile.h:272</a></div></div>
+<div class="ttc" id="aclass_pixel_tile_html_aabe0fbdb95969e167407bf1afd386e60"><div class="ttname"><a href="class_pixel_tile.html#aabe0fbdb95969e167407bf1afd386e60">PixelTile::setDataWindow</a></div><div class="ttdeci">virtual void setDataWindow(const IMATH_NAMESPACE::Box2i &amp;data_window, bool sourceWindowYAxisUp=true, bool force=false)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8cpp_source.html#l00109">DcxPixelTile.cpp:109</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a61303c235f787c3e4722519d8b97a0aa" name="a61303c235f787c3e4722519d8b97a0aa"></a>
@@ -1165,7 +1366,17 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="class_deep_tile.html#a796330df2dc4926d7b6b5a496587f3e0">DeepTile</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00714">714</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  717</span>{</div>
+<div class="line"><span class="lineno">  718</span>    DeepLine* dl = <a class="code hl_function" href="class_deep_image_output_tile.html#a39c4d267f7070a2e5f1bb0b0c651d33e">createDeepLine</a>(y);</div>
+<div class="line"><span class="lineno">  719</span>    <span class="keywordflow">if</span> (!dl || x &lt; m_dataWindow.min.x || x &gt; <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.max.x)</div>
+<div class="line"><span class="lineno">  720</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">// don&#39;t crash...</span></div>
+<div class="line"><span class="lineno">  721</span> </div>
+<div class="line"><span class="lineno">  722</span>    <span class="comment">// Copy DeepPixel data into packed DeepLine arrays (offseting x into array range):</span></div>
+<div class="line"><span class="lineno">  723</span>    dl-&gt;set(x - <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.x, deep_pixel);</div>
+<div class="line"><span class="lineno">  724</span> </div>
+<div class="line"><span class="lineno">  725</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  726</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a492559566e1e616f83bb713898c0832c" name="a492559566e1e616f83bb713898c0832c"></a>
@@ -1203,7 +1414,76 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00785">785</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  787</span>{</div>
+<div class="line"><span class="lineno">  788</span>    <span class="keywordflow">if</span> (!filename || !filename[0] || <a class="code hl_variable" href="class_deep_image_output_tile.html#a9fc5966a11e5f881dfe0d2a0b37afcac">m_filename</a> == filename)</div>
+<div class="line"><span class="lineno">  789</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  790</span>    <a class="code hl_variable" href="class_deep_image_output_tile.html#a9fc5966a11e5f881dfe0d2a0b37afcac">m_filename</a> = filename;</div>
+<div class="line"><span class="lineno">  791</span> </div>
+<div class="line"><span class="lineno">  792</span>    Imf::Header header(headerToCopyAttributes);</div>
+<div class="line"><span class="lineno">  793</span> </div>
+<div class="line"><span class="lineno">  794</span>    <span class="comment">// Update the header params from the ImageFormat:</span></div>
+<div class="line"><span class="lineno">  795</span>    <span class="comment">//      header.displayWindow()      = displayWindow();</span></div>
+<div class="line"><span class="lineno">  796</span>    <span class="comment">//      header.pixelAspectRatio()   = (float)pixelAspectRatio();</span></div>
+<div class="line"><span class="lineno">  797</span>    <span class="comment">//      header.screenWindowCenter() = screenWindowCenter();</span></div>
+<div class="line"><span class="lineno">  798</span>    <span class="comment">//      header.screenWindowWidth()  = screenWindowWidth();</span></div>
+<div class="line"><span class="lineno">  799</span>    <a class="code hl_function" href="class_image_format.html#adadd9d8f22b6ba59cd8f93514083b85a">ImageFormat::toHeader</a>(header);</div>
+<div class="line"><span class="lineno">  800</span> </div>
+<div class="line"><span class="lineno">  801</span>    header.dataWindow() = <a class="code hl_function" href="class_pixel_tile.html#af02122044a3c48f33dd7e4f64a8b9ae2">flipY</a>(<a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>); <span class="comment">// Flip data window back to Y-down if tile is Y-up</span></div>
+<div class="line"><span class="lineno">  802</span> </div>
+<div class="line"><span class="lineno">  803</span>    <span class="comment">// Make line order best align with Y-up mode:</span></div>
+<div class="line"><span class="lineno">  804</span>    <span class="keywordflow">if</span> (headerToCopyAttributes.lineOrder() == Imf::DECREASING_Y)</div>
+<div class="line"><span class="lineno">  805</span>        header.lineOrder() = (<a class="code hl_variable" href="class_pixel_tile.html#acb6142e31c60bc2803f243c62948056d">m_yaxis_up</a>)?Imf::INCREASING_Y:Imf::DECREASING_Y;</div>
+<div class="line"><span class="lineno">  806</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (headerToCopyAttributes.lineOrder() == Imf::INCREASING_Y)</div>
+<div class="line"><span class="lineno">  807</span>        header.lineOrder() = (<a class="code hl_variable" href="class_pixel_tile.html#acb6142e31c60bc2803f243c62948056d">m_yaxis_up</a>)?Imf::DECREASING_Y:Imf::INCREASING_Y;</div>
+<div class="line"><span class="lineno">  808</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  809</span>        header.lineOrder() = (<a class="code hl_variable" href="class_pixel_tile.html#acb6142e31c60bc2803f243c62948056d">m_yaxis_up</a>)?Imf::DECREASING_Y:Imf::INCREASING_Y;</div>
+<div class="line"><span class="lineno">  810</span> </div>
+<div class="line"><span class="lineno">  811</span>    <span class="comment">// Ignore incoming compression for now and always use ZIPS: (TODO do this always...?)</span></div>
+<div class="line"><span class="lineno">  812</span>    header.compression() = Imf::ZIPS_COMPRESSION;</div>
+<div class="line"><span class="lineno">  813</span> </div>
+<div class="line"><span class="lineno">  814</span>    <a class="code hl_class" href="class_channel_set.html">ChannelSet</a> write_channels(<a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a>);</div>
+<div class="line"><span class="lineno">  815</span>    <span class="comment">//write_channels -= Mask_SpMask8;</span></div>
+<div class="line"><span class="lineno">  816</span>    <span class="comment">//write_channels -= Mask_DeepFlags;</span></div>
+<div class="line"><span class="lineno">  817</span> </div>
+<div class="line"><span class="lineno">  818</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, write_channels)</div>
+<div class="line"><span class="lineno">  819</span>    {</div>
+<div class="line"><span class="lineno">  820</span>        <span class="keyword">const</span> <a class="code hl_class" href="class_channel_alias.html">ChannelAlias</a>* c = <a class="code hl_function" href="class_pixel_tile.html#a49fb0cffaabe236c699ee06920d80c5c">getChannelAlias</a>(z);</div>
+<div class="line"><span class="lineno">  821</span><span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><span class="lineno">  822</span>        assert(c); <span class="comment">// shouldn&#39;t happen...</span></div>
+<div class="line"><span class="lineno">  823</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  824</span> </div>
+<div class="line"><span class="lineno">  825</span>        <span class="comment">// Use the fileIOName for EXR output channel name:</span></div>
+<div class="line"><span class="lineno">  826</span>        header.channels().insert(c-&gt;<a class="code hl_function" href="class_channel_alias.html#ac90415a0c96605efd8f68235ef580eb0">fileIOName</a>(), Imf::Channel(c-&gt;<a class="code hl_function" href="class_channel_alias.html#aa5e700064718ceeff2db8a507d459121">fileIOPixelType</a>()));</div>
+<div class="line"><span class="lineno">  827</span>    }</div>
+<div class="line"><span class="lineno">  828</span> </div>
+<div class="line"><span class="lineno">  829</span><span class="preprocessor">#if 0</span></div>
+<div class="line"><span class="lineno">  830</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a>.contains(<a class="code hl_function" href="_dcx_channel_defs_8h.html#a682b8785763a0b20e91d0c2964b05bbd">Mask_SpMask8</a>))</div>
+<div class="line"><span class="lineno">  831</span>    {</div>
+<div class="line"><span class="lineno">  832</span>        header.channels().insert(<a class="code hl_variable" href="_dcx_channel_defs_8h.html#ae7d67fdb2557a87b57198a15f8ed57e1">spMask8Channel1Name</a>, Imf::Channel(Imf::FLOAT));</div>
+<div class="line"><span class="lineno">  833</span>        header.channels().insert(<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a12aebfaba79d4bc569c42ee0f308eac0">spMask8Channel2Name</a>, Imf::Channel(Imf::FLOAT));</div>
+<div class="line"><span class="lineno">  834</span>    }</div>
+<div class="line"><span class="lineno">  835</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a>.contains(<a class="code hl_function" href="_dcx_channel_defs_8h.html#acd255943ba2b48789971f4fc1ea99e93">Mask_DeepFlags</a>))</div>
+<div class="line"><span class="lineno">  836</span>        header.channels().insert(<a class="code hl_variable" href="_dcx_channel_defs_8h.html#a8651f3092b5d90a0dd708f41f141184a">flagsChannelName</a>, Imf::Channel(Imf::HALF));</div>
+<div class="line"><span class="lineno">  837</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  838</span> </div>
+<div class="line"><span class="lineno">  839</span>    <span class="keyword">delete</span> <a class="code hl_variable" href="class_deep_image_output_tile.html#ab982ad362cf8bd5da1dbf03c426e45dd">m_file</a>;</div>
+<div class="line"><span class="lineno">  840</span>    <a class="code hl_variable" href="class_deep_image_output_tile.html#ab982ad362cf8bd5da1dbf03c426e45dd">m_file</a> = <span class="keyword">new</span> Imf::DeepScanLineOutputFile(filename, header);</div>
+<div class="line"><span class="lineno">  841</span>    <a class="code hl_function" href="class_deep_image_output_tile.html#aea050f78fc3c2742e504a65b875506bd">deleteDeepLines</a>();</div>
+<div class="line"><span class="lineno">  842</span>}</div>
+<div class="ttc" id="a_dcx_channel_defs_8h_html_a12aebfaba79d4bc569c42ee0f308eac0"><div class="ttname"><a href="_dcx_channel_defs_8h.html#a12aebfaba79d4bc569c42ee0f308eac0">spMask8Channel2Name</a></div><div class="ttdeci">const char *const spMask8Channel2Name</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_defs_8h_source.html#l00077">DcxChannelDefs.h:77</a></div></div>
+<div class="ttc" id="a_dcx_channel_defs_8h_html_a682b8785763a0b20e91d0c2964b05bbd"><div class="ttname"><a href="_dcx_channel_defs_8h.html#a682b8785763a0b20e91d0c2964b05bbd">Mask_SpMask8</a></div><div class="ttdeci">static const ChannelSet Mask_SpMask8(Chan_SpBits1, Chan_SpBits2)</div></div>
+<div class="ttc" id="a_dcx_channel_defs_8h_html_a8651f3092b5d90a0dd708f41f141184a"><div class="ttname"><a href="_dcx_channel_defs_8h.html#a8651f3092b5d90a0dd708f41f141184a">flagsChannelName</a></div><div class="ttdeci">const char *const flagsChannelName</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_defs_8h_source.html#l00082">DcxChannelDefs.h:82</a></div></div>
+<div class="ttc" id="a_dcx_channel_defs_8h_html_acd255943ba2b48789971f4fc1ea99e93"><div class="ttname"><a href="_dcx_channel_defs_8h.html#acd255943ba2b48789971f4fc1ea99e93">Mask_DeepFlags</a></div><div class="ttdeci">static const ChannelSet Mask_DeepFlags(Chan_DeepFlags)</div></div>
+<div class="ttc" id="a_dcx_channel_defs_8h_html_ae7d67fdb2557a87b57198a15f8ed57e1"><div class="ttname"><a href="_dcx_channel_defs_8h.html#ae7d67fdb2557a87b57198a15f8ed57e1">spMask8Channel1Name</a></div><div class="ttdeci">const char *const spMask8Channel1Name</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_defs_8h_source.html#l00076">DcxChannelDefs.h:76</a></div></div>
+<div class="ttc" id="aclass_channel_alias_html"><div class="ttname"><a href="class_channel_alias.html">ChannelAlias</a></div><div class="ttdoc">rst:cpp:begin::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_alias_8h_source.html#l00098">DcxChannelAlias.h:99</a></div></div>
+<div class="ttc" id="aclass_channel_alias_html_aa5e700064718ceeff2db8a507d459121"><div class="ttname"><a href="class_channel_alias.html#aa5e700064718ceeff2db8a507d459121">ChannelAlias::fileIOPixelType</a></div><div class="ttdeci">OPENEXR_IMF_NAMESPACE::PixelType fileIOPixelType() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_alias_8h_source.html#l00247">DcxChannelAlias.h:247</a></div></div>
+<div class="ttc" id="aclass_channel_alias_html_ac90415a0c96605efd8f68235ef580eb0"><div class="ttname"><a href="class_channel_alias.html#ac90415a0c96605efd8f68235ef580eb0">ChannelAlias::fileIOName</a></div><div class="ttdeci">std::string fileIOName() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8cpp_source.html#l00509">DcxChannelSet.cpp:509</a></div></div>
+<div class="ttc" id="aclass_channel_set_html"><div class="ttname"><a href="class_channel_set.html">ChannelSet</a></div><div class="ttdoc">rst:left-align::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00135">DcxChannelSet.h:136</a></div></div>
+<div class="ttc" id="aclass_deep_image_output_tile_html_a9fc5966a11e5f881dfe0d2a0b37afcac"><div class="ttname"><a href="class_deep_image_output_tile.html#a9fc5966a11e5f881dfe0d2a0b37afcac">DeepImageOutputTile::m_filename</a></div><div class="ttdeci">std::string m_filename</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_image_tile_8h_source.html#l00428">DcxDeepImageTile.h:428</a></div></div>
+<div class="ttc" id="aclass_image_format_html_adadd9d8f22b6ba59cd8f93514083b85a"><div class="ttname"><a href="class_image_format.html#adadd9d8f22b6ba59cd8f93514083b85a">ImageFormat::toHeader</a></div><div class="ttdeci">virtual void toHeader(OPENEXR_IMF_NAMESPACE::Header &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_image_format_8cpp_source.html#l00500">DcxImageFormat.cpp:500</a></div></div>
+<div class="ttc" id="aclass_pixel_tile_html_a49fb0cffaabe236c699ee06920d80c5c"><div class="ttname"><a href="class_pixel_tile.html#a49fb0cffaabe236c699ee06920d80c5c">PixelTile::getChannelAlias</a></div><div class="ttdeci">const ChannelAlias * getChannelAlias(ChannelIdx) const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00257">DcxPixelTile.h:257</a></div></div>
+<div class="ttc" id="aclass_pixel_tile_html_af02122044a3c48f33dd7e4f64a8b9ae2"><div class="ttname"><a href="class_pixel_tile.html#af02122044a3c48f33dd7e4f64a8b9ae2">PixelTile::flipY</a></div><div class="ttdeci">int flipY(int y) const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00246">DcxPixelTile.h:246</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a93d7bf82508f067cc9026cb02766cee9" name="a93d7bf82508f067cc9026cb02766cee9"></a>
@@ -1283,7 +1563,144 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00857">857</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  859</span>{</div>
+<div class="line"><span class="lineno">  860</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_deep_image_output_tile.html#ab982ad362cf8bd5da1dbf03c426e45dd">m_file</a> || y &lt; m_dataWindow.min.y || y &gt; <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.max.y)</div>
+<div class="line"><span class="lineno">  861</span>        <span class="keywordflow">return</span>; <span class="comment">// don&#39;t crash...  TODO: throw exception?</span></div>
+<div class="line"><span class="lineno">  862</span> </div>
+<div class="line"><span class="lineno">  863</span>    y -= <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.y;</div>
+<div class="line"><span class="lineno">  864</span>    DeepLine* dl = <a class="code hl_variable" href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">m_deep_lines</a>[y];</div>
+<div class="line"><span class="lineno">  865</span>    DeepLine empty_dl(<a class="code hl_function" href="class_pixel_tile.html#a45799dabb016e6668d7a35137f890961">w</a>(), <a class="code hl_function" href="class_pixel_tile.html#ac5fa8ea854e57ba3e97983cf37573790">channels</a>()); <span class="comment">// dummy DeepLine for empty line</span></div>
+<div class="line"><span class="lineno">  866</span>    <span class="keywordflow">if</span> (!dl)</div>
+<div class="line"><span class="lineno">  867</span>        dl = &amp;empty_dl;</div>
+<div class="line"><span class="lineno">  868</span><span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><span class="lineno">  869</span>    assert(dl); <span class="comment">// shouldn&#39;t happen...</span></div>
+<div class="line"><span class="lineno">  870</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  871</span> </div>
+<div class="line"><span class="lineno">  872</span>    <span class="comment">// Unpack the floats to arrays of the appropriate pixel types and</span></div>
+<div class="line"><span class="lineno">  873</span>    <span class="comment">// assign the frambuffer slices to them:</span></div>
+<div class="line"><span class="lineno">  874</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nChannels = <a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a>.size();</div>
+<div class="line"><span class="lineno">  875</span>    <span class="keywordflow">if</span> (nChannels == 0)</div>
+<div class="line"><span class="lineno">  876</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  877</span> </div>
+<div class="line"><span class="lineno">  878</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nPixels = dl-&gt;samples_per_pixel.size();</div>
+<div class="line"><span class="lineno">  879</span><span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><span class="lineno">  880</span>    assert((<span class="keywordtype">int</span>)nPixels == this-&gt;<a class="code hl_function" href="class_pixel_tile.html#a45799dabb016e6668d7a35137f890961">w</a>());</div>
+<div class="line"><span class="lineno">  881</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  882</span> </div>
+<div class="line"><span class="lineno">  883</span>    <span class="comment">// Unpacked sample data storage (only some of these actually get filled in):</span></div>
+<div class="line"><span class="lineno">  884</span>    std::vector&lt;HalfSamples&gt;   half_samples(nChannels);</div>
+<div class="line"><span class="lineno">  885</span>    std::vector&lt;FloatSamples&gt; float_samples(nChannels);</div>
+<div class="line"><span class="lineno">  886</span>    std::vector&lt;UintSamples&gt;   uint_samples(nChannels);</div>
+<div class="line"><span class="lineno">  887</span>    std::vector&lt;PtrVec&gt;           data_ptrs(nChannels);</div>
+<div class="line"><span class="lineno">  888</span> </div>
+<div class="line"><span class="lineno">  889</span>    Imf::DeepFrameBuffer fb;</div>
+<div class="line"><span class="lineno">  890</span>    fb.insertSampleCountSlice(Imf::Slice(Imf::UINT,</div>
+<div class="line"><span class="lineno">  891</span>                                         (<span class="keywordtype">char</span>*)(dl-&gt;samples_per_pixel.data() - <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.x),</div>
+<div class="line"><span class="lineno">  892</span>                                         <span class="keyword">sizeof</span>(uint32_t)<span class="comment">/*xStride*/</span>,</div>
+<div class="line"><span class="lineno">  893</span>                                         0<span class="comment">/*yStride*/</span>));</div>
+<div class="line"><span class="lineno">  894</span> </div>
+<div class="line"><span class="lineno">  895</span>    <span class="keywordtype">int</span> chan_index = 0;</div>
+<div class="line"><span class="lineno">  896</span>    <span class="keywordtype">size_t</span> sample_stride = 0;</div>
+<div class="line"><span class="lineno">  897</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a>)</div>
+<div class="line"><span class="lineno">  898</span>    {</div>
+<div class="line"><span class="lineno">  899</span>        <span class="keyword">const</span> <a class="code hl_class" href="class_channel_alias.html">ChannelAlias</a>* c = <a class="code hl_function" href="class_pixel_tile.html#a49fb0cffaabe236c699ee06920d80c5c">getChannelAlias</a>(z);</div>
+<div class="line"><span class="lineno">  900</span><span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><span class="lineno">  901</span>        assert(c); <span class="comment">// shouldn&#39;t happen...</span></div>
+<div class="line"><span class="lineno">  902</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  903</span> </div>
+<div class="line"><span class="lineno">  904</span>        <span class="keyword">const</span> <span class="keywordtype">float</span>* IN = dl-&gt;channel_arrays[chan_index].data();</div>
+<div class="line"><span class="lineno">  905</span> </div>
+<div class="line"><span class="lineno">  906</span>        <a class="code hl_typedef" href="class_deep_image_output_tile.html#a56d60278f088521dcb2d5630f8b5380f">PtrVec</a>&amp; ptrs = data_ptrs[chan_index];</div>
+<div class="line"><span class="lineno">  907</span>        ptrs.resize(nPixels);</div>
+<div class="line"><span class="lineno">  908</span> </div>
+<div class="line"><span class="lineno">  909</span>        <span class="keywordflow">switch</span> (c-&gt;<a class="code hl_function" href="class_channel_alias.html#aa5e700064718ceeff2db8a507d459121">fileIOPixelType</a>())</div>
+<div class="line"><span class="lineno">  910</span>        {</div>
+<div class="line"><span class="lineno">  911</span>            <span class="keywordflow">case</span> Imf::HALF:</div>
+<div class="line"><span class="lineno">  912</span>            {</div>
+<div class="line"><span class="lineno">  913</span>                <a class="code hl_typedef" href="_dcx_deep_image_tile_8cpp.html#a4d4c19955077d12429dedc373346d6f1">HalfSamples</a>&amp; value_lists = half_samples[chan_index];</div>
+<div class="line"><span class="lineno">  914</span>                value_lists.resize(nPixels);</div>
+<div class="line"><span class="lineno">  915</span>                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i=0; i &lt; nPixels; ++i)</div>
+<div class="line"><span class="lineno">  916</span>                {</div>
+<div class="line"><span class="lineno">  917</span>                    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nSamples = dl-&gt;samples_per_pixel[i];</div>
+<div class="line"><span class="lineno">  918</span>                    <a class="code hl_typedef" href="class_deep_image_output_tile.html#acac1bf3f41feb24202f56df072433db3">HalfVec</a>&amp; samples = value_lists[i];</div>
+<div class="line"><span class="lineno">  919</span>                    samples.reserve(nSamples);</div>
+<div class="line"><span class="lineno">  920</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> s=0; s &lt; nSamples; ++s)</div>
+<div class="line"><span class="lineno">  921</span>                        samples.push_back(half(*IN++));</div>
+<div class="line"><span class="lineno">  922</span>                    ptrs[i] = samples.data(); <span class="comment">// always point to valid data, even for 0 samples...</span></div>
+<div class="line"><span class="lineno">  923</span>                }</div>
+<div class="line"><span class="lineno">  924</span>                sample_stride = <span class="keyword">sizeof</span>(half);</div>
+<div class="line"><span class="lineno">  925</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  926</span>            }</div>
+<div class="line"><span class="lineno">  927</span> </div>
+<div class="line"><span class="lineno">  928</span>            <span class="keywordflow">case</span> Imf::FLOAT:</div>
+<div class="line"><span class="lineno">  929</span>            {</div>
+<div class="line"><span class="lineno">  930</span>                <a class="code hl_typedef" href="_dcx_deep_image_tile_8cpp.html#a7b41c2d7bca94b76c91a2082d76b0a72">FloatSamples</a>&amp; value_lists = float_samples[chan_index];</div>
+<div class="line"><span class="lineno">  931</span>                value_lists.resize(nPixels);</div>
+<div class="line"><span class="lineno">  932</span>                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i=0; i &lt; nPixels; ++i)</div>
+<div class="line"><span class="lineno">  933</span>                {</div>
+<div class="line"><span class="lineno">  934</span>                    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nSamples = dl-&gt;samples_per_pixel[i];</div>
+<div class="line"><span class="lineno">  935</span>                    <a class="code hl_typedef" href="class_deep_image_output_tile.html#aab88048c0c31d8f1bf6f362f19c32ab7">FloatVec</a>&amp; samples = value_lists[i];</div>
+<div class="line"><span class="lineno">  936</span>                    samples.reserve(nSamples);</div>
+<div class="line"><span class="lineno">  937</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> s=0; s &lt; nSamples; ++s)</div>
+<div class="line"><span class="lineno">  938</span>                        samples.push_back(*IN++);</div>
+<div class="line"><span class="lineno">  939</span>                    ptrs[i] = samples.data(); <span class="comment">// always point to valid data, even for 0 samples...</span></div>
+<div class="line"><span class="lineno">  940</span>                }</div>
+<div class="line"><span class="lineno">  941</span>                sample_stride = <span class="keyword">sizeof</span>(float);</div>
+<div class="line"><span class="lineno">  942</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  943</span>            }</div>
+<div class="line"><span class="lineno">  944</span> </div>
+<div class="line"><span class="lineno">  945</span>            <span class="keywordflow">case</span> Imf::UINT:</div>
+<div class="line"><span class="lineno">  946</span>            {</div>
+<div class="line"><span class="lineno">  947</span>                <a class="code hl_typedef" href="_dcx_deep_image_tile_8cpp.html#a6785dfde7669cb3da87c6f0f92b068ca">UintSamples</a>&amp; value_lists = uint_samples[chan_index];</div>
+<div class="line"><span class="lineno">  948</span>                value_lists.resize(nPixels);</div>
+<div class="line"><span class="lineno">  949</span>                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i=0; i &lt; nPixels; ++i)</div>
+<div class="line"><span class="lineno">  950</span>                {</div>
+<div class="line"><span class="lineno">  951</span>                    <span class="keyword">const</span> <span class="keywordtype">size_t</span> nSamples = dl-&gt;samples_per_pixel[i];</div>
+<div class="line"><span class="lineno">  952</span>                    <a class="code hl_typedef" href="class_deep_image_output_tile.html#aa8455b002e6f4a40990fdaecbadb5888">UintVec</a>&amp; samples = value_lists[i];</div>
+<div class="line"><span class="lineno">  953</span>                    samples.reserve(nSamples);</div>
+<div class="line"><span class="lineno">  954</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> s=0; s &lt; nSamples; ++s, ++IN)</div>
+<div class="line"><span class="lineno">  955</span>                        samples.push_back(<span class="keywordtype">int</span>(floorf((*IN &lt; 0.0f)?0.0f:*IN)));</div>
+<div class="line"><span class="lineno">  956</span>                    ptrs[i] = samples.data();</div>
+<div class="line"><span class="lineno">  957</span>                }</div>
+<div class="line"><span class="lineno">  958</span>                sample_stride = <span class="keyword">sizeof</span>(uint32_t);</div>
+<div class="line"><span class="lineno">  959</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  960</span>            }</div>
+<div class="line"><span class="lineno">  961</span> </div>
+<div class="line"><span class="lineno">  962</span>            <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  963</span><span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><span class="lineno">  964</span>                assert(0); <span class="comment">// TODO: throw exception instead?</span></div>
+<div class="line"><span class="lineno">  965</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  966</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  967</span>        }</div>
+<div class="line"><span class="lineno">  968</span> </div>
+<div class="line"><span class="lineno">  969</span>        fb.insert(c-&gt;<a class="code hl_function" href="class_channel_alias.html#ac90415a0c96605efd8f68235ef580eb0">fileIOName</a>(), Imf::DeepSlice(c-&gt;<a class="code hl_function" href="class_channel_alias.html#aa5e700064718ceeff2db8a507d459121">fileIOPixelType</a>(),</div>
+<div class="line"><span class="lineno">  970</span>                                                  (<span class="keywordtype">char</span>*)(ptrs.data() - <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.x),</div>
+<div class="line"><span class="lineno">  971</span>                                                  <span class="keyword">sizeof</span>(<span class="keywordtype">void</span>*)<span class="comment">/*xStride*/</span>,</div>
+<div class="line"><span class="lineno">  972</span>                                                  0<span class="comment">/*yStride*/</span>,</div>
+<div class="line"><span class="lineno">  973</span>                                                  sample_stride<span class="comment">/*sampleStride*/</span>));</div>
+<div class="line"><span class="lineno">  974</span> </div>
+<div class="line"><span class="lineno">  975</span>        ++chan_index;</div>
+<div class="line"><span class="lineno">  976</span>    }</div>
+<div class="line"><span class="lineno">  977</span> </div>
+<div class="line"><span class="lineno">  978</span>    <span class="comment">// Write line to file:</span></div>
+<div class="line"><span class="lineno">  979</span>    <a class="code hl_variable" href="class_deep_image_output_tile.html#ab982ad362cf8bd5da1dbf03c426e45dd">m_file</a>-&gt;setFrameBuffer(fb);</div>
+<div class="line"><span class="lineno">  980</span>    <a class="code hl_variable" href="class_deep_image_output_tile.html#ab982ad362cf8bd5da1dbf03c426e45dd">m_file</a>-&gt;writePixels(1<span class="comment">/*nLines*/</span>);</div>
+<div class="line"><span class="lineno">  981</span> </div>
+<div class="line"><span class="lineno">  982</span>    <span class="comment">// Free the DeepLine:</span></div>
+<div class="line"><span class="lineno">  983</span>    <span class="keywordflow">if</span> (flush_line)</div>
+<div class="line"><span class="lineno">  984</span>    {</div>
+<div class="line"><span class="lineno">  985</span>        <span class="keyword">delete</span> <a class="code hl_variable" href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">m_deep_lines</a>[y];</div>
+<div class="line"><span class="lineno">  986</span>        <a class="code hl_variable" href="class_deep_image_output_tile.html#add259e88540ca07984f5d05ccf41d78a">m_deep_lines</a>[y] = 0;</div>
+<div class="line"><span class="lineno">  987</span>    }</div>
+<div class="line"><span class="lineno">  988</span>}</div>
+<div class="ttc" id="a_dcx_deep_image_tile_8cpp_html_a4d4c19955077d12429dedc373346d6f1"><div class="ttname"><a href="_dcx_deep_image_tile_8cpp.html#a4d4c19955077d12429dedc373346d6f1">HalfSamples</a></div><div class="ttdeci">std::vector&lt; DeepImageOutputTile::HalfVec &gt; HalfSamples</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_image_tile_8cpp_source.html#l00850">DcxDeepImageTile.cpp:850</a></div></div>
+<div class="ttc" id="a_dcx_deep_image_tile_8cpp_html_a6785dfde7669cb3da87c6f0f92b068ca"><div class="ttname"><a href="_dcx_deep_image_tile_8cpp.html#a6785dfde7669cb3da87c6f0f92b068ca">UintSamples</a></div><div class="ttdeci">std::vector&lt; DeepImageOutputTile::UintVec &gt; UintSamples</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_image_tile_8cpp_source.html#l00852">DcxDeepImageTile.cpp:852</a></div></div>
+<div class="ttc" id="a_dcx_deep_image_tile_8cpp_html_a7b41c2d7bca94b76c91a2082d76b0a72"><div class="ttname"><a href="_dcx_deep_image_tile_8cpp.html#a7b41c2d7bca94b76c91a2082d76b0a72">FloatSamples</a></div><div class="ttdeci">std::vector&lt; DeepImageOutputTile::FloatVec &gt; FloatSamples</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_image_tile_8cpp_source.html#l00851">DcxDeepImageTile.cpp:851</a></div></div>
+<div class="ttc" id="aclass_deep_image_output_tile_html_a56d60278f088521dcb2d5630f8b5380f"><div class="ttname"><a href="class_deep_image_output_tile.html#a56d60278f088521dcb2d5630f8b5380f">DeepImageOutputTile::PtrVec</a></div><div class="ttdeci">std::vector&lt; void * &gt; PtrVec</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_image_tile_8h_source.html#l00227">DcxDeepImageTile.h:227</a></div></div>
+<div class="ttc" id="aclass_deep_image_output_tile_html_aa8455b002e6f4a40990fdaecbadb5888"><div class="ttname"><a href="class_deep_image_output_tile.html#aa8455b002e6f4a40990fdaecbadb5888">DeepImageOutputTile::UintVec</a></div><div class="ttdeci">std::vector&lt; uint32_t &gt; UintVec</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_image_tile_8h_source.html#l00226">DcxDeepImageTile.h:226</a></div></div>
+<div class="ttc" id="aclass_deep_image_output_tile_html_aab88048c0c31d8f1bf6f362f19c32ab7"><div class="ttname"><a href="class_deep_image_output_tile.html#aab88048c0c31d8f1bf6f362f19c32ab7">DeepImageOutputTile::FloatVec</a></div><div class="ttdeci">std::vector&lt; float &gt; FloatVec</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_image_tile_8h_source.html#l00225">DcxDeepImageTile.h:225</a></div></div>
+<div class="ttc" id="aclass_deep_image_output_tile_html_acac1bf3f41feb24202f56df072433db3"><div class="ttname"><a href="class_deep_image_output_tile.html#acac1bf3f41feb24202f56df072433db3">DeepImageOutputTile::HalfVec</a></div><div class="ttdeci">std::vector&lt; half &gt; HalfVec</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_image_tile_8h_source.html#l00224">DcxDeepImageTile.h:224</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa3f1c188bc40c89269f1b5ab9f673a82" name="aa3f1c188bc40c89269f1b5ab9f673a82"></a>
@@ -1311,7 +1728,12 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_image_tile_8cpp_source.html#l00997">997</a> of file <a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  998</span>{</div>
+<div class="line"><span class="lineno">  999</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y=<a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.y; y &lt; <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.max.y; ++y)</div>
+<div class="line"><span class="lineno"> 1000</span>        <a class="code hl_function" href="class_deep_image_output_tile.html#a1a276117925ae0469dd3a0ca960a5a08">writeScanline</a>(y, flush_tile);</div>
+<div class="line"><span class="lineno"> 1001</span>}</div>
+<div class="ttc" id="aclass_deep_image_output_tile_html_a1a276117925ae0469dd3a0ca960a5a08"><div class="ttname"><a href="class_deep_image_output_tile.html#a1a276117925ae0469dd3a0ca960a5a08">DeepImageOutputTile::writeScanline</a></div><div class="ttdeci">virtual void writeScanline(int y, bool flush_line=true)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_image_tile_8cpp_source.html#l00857">DcxDeepImageTile.cpp:857</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1392,9 +1814,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/deepfile/<a class="el" href="_dcx_deep_image_tile_8cpp_source.html">DcxDeepImageTile.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_deep_image_output_tile.html">DeepImageOutputTile</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

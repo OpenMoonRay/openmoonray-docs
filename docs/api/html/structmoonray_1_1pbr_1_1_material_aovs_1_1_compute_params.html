@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_material_aovs.html">MaterialAovs</a></li><li class="navelem"><a class="el" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html">ComputeParams</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -169,7 +185,30 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aov_8h_source.html#l00418">418</a> of file <a class="el" href="_aov_8h_source.html">Aov.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  427</span>                                                                     :</div>
+<div class="line"><span class="lineno">  428</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#a74c953d81976df222686d6d7ce3a489e">mEntry</a>(entry),</div>
+<div class="line"><span class="lineno">  429</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#afc5a0cc66630b331950fd4086d53fd0f">mIsect</a>(isect),</div>
+<div class="line"><span class="lineno">  430</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#a8ebbcecfa7022faa3cdeee6f93661936">mRay</a>(ray),</div>
+<div class="line"><span class="lineno">  431</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#aac2e820afe819f5a7753654a2b054dff">mScene</a>(scene),</div>
+<div class="line"><span class="lineno">  432</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#aff4a5044b5162f56a582a290cd8ec84a">mBsdf</a>(bsdf),</div>
+<div class="line"><span class="lineno">  433</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#a92a1d38b707536771658888828082781">mSsAov</a>(ssAov),</div>
+<div class="line"><span class="lineno">  434</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#ab3649021a20c435f9be82e19e30b147a">mBSampler</a>(bSampler),</div>
+<div class="line"><span class="lineno">  435</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#a1049d456f26f395edcef48f56c8d5fb0">mBsmps</a>(bsmps),</div>
+<div class="line"><span class="lineno">  436</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#a8b4486859789edf81afaa1c9db4fbcbf">mBsdfSlice</a>(bsdfSlice),</div>
+<div class="line"><span class="lineno">  437</span>            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#a09fe3c0be8b87a6ef5825043bac17f90">mPixelWeight</a>(pixelWeight)</div>
+<div class="line"><span class="lineno">  438</span>        {</div>
+<div class="line"><span class="lineno">  439</span>        }</div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params_html_a09fe3c0be8b87a6ef5825043bac17f90"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#a09fe3c0be8b87a6ef5825043bac17f90">moonray::pbr::MaterialAovs::ComputeParams::mPixelWeight</a></div><div class="ttdeci">float mPixelWeight</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00451">Aov.h:451</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params_html_a1049d456f26f395edcef48f56c8d5fb0"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#a1049d456f26f395edcef48f56c8d5fb0">moonray::pbr::MaterialAovs::ComputeParams::mBsmps</a></div><div class="ttdeci">const BsdfSample * mBsmps</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00449">Aov.h:449</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params_html_a74c953d81976df222686d6d7ce3a489e"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#a74c953d81976df222686d6d7ce3a489e">moonray::pbr::MaterialAovs::ComputeParams::mEntry</a></div><div class="ttdeci">const Entry &amp; mEntry</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00442">Aov.h:442</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params_html_a8b4486859789edf81afaa1c9db4fbcbf"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#a8b4486859789edf81afaa1c9db4fbcbf">moonray::pbr::MaterialAovs::ComputeParams::mBsdfSlice</a></div><div class="ttdeci">const shading::BsdfSlice * mBsdfSlice</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00450">Aov.h:450</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params_html_a8ebbcecfa7022faa3cdeee6f93661936"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#a8ebbcecfa7022faa3cdeee6f93661936">moonray::pbr::MaterialAovs::ComputeParams::mRay</a></div><div class="ttdeci">const mcrt_common::RayDifferential &amp; mRay</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00444">Aov.h:444</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params_html_a92a1d38b707536771658888828082781"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#a92a1d38b707536771658888828082781">moonray::pbr::MaterialAovs::ComputeParams::mSsAov</a></div><div class="ttdeci">const scene_rdl2::math::Color &amp; mSsAov</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00447">Aov.h:447</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params_html_aac2e820afe819f5a7753654a2b054dff"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#aac2e820afe819f5a7753654a2b054dff">moonray::pbr::MaterialAovs::ComputeParams::mScene</a></div><div class="ttdeci">const Scene &amp; mScene</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00445">Aov.h:445</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params_html_ab3649021a20c435f9be82e19e30b147a"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#ab3649021a20c435f9be82e19e30b147a">moonray::pbr::MaterialAovs::ComputeParams::mBSampler</a></div><div class="ttdeci">const BsdfSampler * mBSampler</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00448">Aov.h:448</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params_html_afc5a0cc66630b331950fd4086d53fd0f"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#afc5a0cc66630b331950fd4086d53fd0f">moonray::pbr::MaterialAovs::ComputeParams::mIsect</a></div><div class="ttdeci">const shading::Intersection &amp; mIsect</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00443">Aov.h:443</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params_html_aff4a5044b5162f56a582a290cd8ec84a"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html#aff4a5044b5162f56a582a290cd8ec84a">moonray::pbr::MaterialAovs::ComputeParams::mBsdf</a></div><div class="ttdeci">const shading::Bsdf &amp; mBsdf</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8h_source.html#l00446">Aov.h:446</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -337,9 +376,13 @@ Public Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/core/<a class="el" href="_aov_8h_source.html">Aov.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_material_aovs.html">MaterialAovs</a></li><li class="navelem"><a class="el" href="structmoonray_1_1pbr_1_1_material_aovs_1_1_compute_params.html">ComputeParams</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

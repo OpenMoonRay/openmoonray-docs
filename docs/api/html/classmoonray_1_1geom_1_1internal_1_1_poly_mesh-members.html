@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html">PolyMesh</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">moonray::geom::internal::PolyMesh Member List</div></div>
 </div><!--header-->
@@ -66,7 +82,9 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#af0ef0a13c32f9492687bee92f1f3329d">computeTessellationFactor</a>(const scene_rdl2::rdl2::Layer *pRdlLayer, const std::vector&lt; mcrt_common::Frustum &gt; &amp;frustums, const PolyTopologyIdLookup &amp;topologyIdLookup) const</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html">moonray::geom::internal::PolyMesh</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#ad7e3286cd208be71d0d8bbbe096ffd9f">computeVaryingAttributeDerivatives</a>(shading::TypedAttributeKey&lt; T &gt; key, uint32_t vid1, uint32_t vid2, uint32_t vid3, float time, const std::array&lt; float, 4 &gt; &amp;invA, shading::Intersection &amp;intersection) const</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html">moonray::geom::internal::Mesh</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a58925fe50a75b5b690f0510adfb1af14">computeVertexAttributeDerivatives</a>(shading::TypedAttributeKey&lt; T &gt; key, uint32_t vid1, uint32_t vid2, uint32_t vid3, float time, const std::array&lt; float, 4 &gt; &amp;invA, shading::Intersection &amp;intersection) const</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html">moonray::geom::internal::Mesh</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5db7b8595e7bbb7209d34f76cd680516">createShadowLinking</a>(int casterId, bool complementReceiverSet)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html">moonray::geom::internal::NamedPrimitive</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#ae5bc746e71fc9dc6aa5d585817dbf6d3">createQuadMeshVelocityGrid</a>(float interiorBandwidth, const TessellatedMesh &amp;mesh, size_t motionSample, float invFps)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html">moonray::geom::internal::Mesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a5db7b8595e7bbb7209d34f76cd680516">createShadowLinking</a>(int casterId, bool complementReceiverSet)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html">moonray::geom::internal::NamedPrimitive</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a91280f96b27bd8aba017adb455582085">createTriMeshVelocityGrid</a>(float interiorBandwidth, const TessellatedMesh &amp;mesh, size_t motionSample, float invFps)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html">moonray::geom::internal::Mesh</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html#a98414ce2c7a96e7928ff966705a7b512">createVelocityGrid</a>(const float interiorBandwidth, const geom::MotionBlurParams &amp;motionBlurParams, const std::vector&lt; int &gt; &amp;volumeIds) override</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html">moonray::geom::internal::Mesh</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a15e7f3ea4dd4d6813a9e72acf1c0fff1ab6a06b2c88ee953e91a593a676145833">CURVES</a> enum value</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">moonray::geom::internal::Primitive</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html#aded455b0af339a1cb871b4383c940aac">displaceMesh</a>(const scene_rdl2::rdl2::Layer *pRdlLayer, const scene_rdl2::math::Mat4d &amp;world2render)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_poly_mesh.html">moonray::geom::internal::PolyMesh</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
@@ -223,9 +241,12 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a83c088e833fa660e3c5a2a661b82ae5a">~NamedPrimitive</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html">moonray::geom::internal::NamedPrimitive</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#a0c833d7259413cecfc049e1c691f2d55">~Primitive</a>()=default</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">moonray::geom::internal::Primitive</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

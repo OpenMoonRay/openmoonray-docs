@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,16 +42,31 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html">RectLight</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_rect_light.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classmoonray_1_1pbr_1_1_rect_light-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::pbr::RectLight Class Reference</div></div>
@@ -258,6 +277,44 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:aebf79535791807280db3429fbebcd634 inherit pro_methods_classmoonray_1_1pbr_1_1_light"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="_light_8hh.html">Light.hh</a> for details.  <a href="classmoonray_1_1pbr_1_1_light.html#aebf79535791807280db3429fbebcd634">More...</a><br /></td></tr>
 <tr class="separator:aebf79535791807280db3429fbebcd634 inherit pro_methods_classmoonray_1_1pbr_1_1_light"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a355b1966e99e0354398aace5fc522bf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html#a355b1966e99e0354398aace5fc522bf5">initAttributeKeys</a> (const scene_rdl2::rdl2::SceneClass &amp;sc)</td></tr>
+<tr class="separator:a355b1966e99e0354398aace5fc522bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90527b59251a8c6b290c31735968676a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html#a90527b59251a8c6b290c31735968676a">computeCorners</a> (scene_rdl2::math::Vec3f *corners, float time) const</td></tr>
+<tr class="separator:a90527b59251a8c6b290c31735968676a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dbe4bd1caba0ea71e608a5761d6f39f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html#a7dbe4bd1caba0ea71e608a5761d6f39f">planeDistance</a> (const scene_rdl2::math::Vec3f &amp;p, float time) const</td></tr>
+<tr class="separator:a7dbe4bd1caba0ea71e608a5761d6f39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac37328ec2da03e7a4f57ee6942dc534"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html#aac37328ec2da03e7a4f57ee6942dc534">getOverlapBounds</a> (const scene_rdl2::math::Vec2f &amp;localP, float localLength, scene_rdl2::math::Vec2f &amp;center, float &amp;width, float &amp;height) const</td></tr>
+<tr class="separator:aac37328ec2da03e7a4f57ee6942dc534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23bcdcefdcc28a81c1a842b8a2b65ef1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html#a23bcdcefdcc28a81c1a842b8a2b65ef1">RectLight</a> (const <a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html">RectLight</a> &amp;other)</td></tr>
+<tr class="memdesc:a23bcdcefdcc28a81c1a842b8a2b65ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy is disabled.  <a href="classmoonray_1_1pbr_1_1_rect_light.html#a23bcdcefdcc28a81c1a842b8a2b65ef1">More...</a><br /></td></tr>
+<tr class="separator:a23bcdcefdcc28a81c1a842b8a2b65ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3c2c29422adafdf710dc1bb331c864"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html">RectLight</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html#a6a3c2c29422adafdf710dc1bb331c864">operator=</a> (const <a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html">RectLight</a> &amp;other)</td></tr>
+<tr class="separator:a6a3c2c29422adafdf710dc1bb331c864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a886e7b9dbd31da58c89a7addd9842415"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html#a886e7b9dbd31da58c89a7addd9842415">RECT_LIGHT_MEMBERS</a></td></tr>
+<tr class="separator:a886e7b9dbd31da58c89a7addd9842415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a456b2ad309f24d6cf005ebb10d848c33"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html#a456b2ad309f24d6cf005ebb10d848c33">sAttributeKeyInitialized</a></td></tr>
+<tr class="separator:a456b2ad309f24d6cf005ebb10d848c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab63c938588e7b22be2f53b34c5ade490"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html#ab63c938588e7b22be2f53b34c5ade490">sNormalizedKey</a></td></tr>
+<tr class="separator:ab63c938588e7b22be2f53b34c5ade490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a933e47f4f943c60006a951a1ad3565e1"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html#a933e47f4f943c60006a951a1ad3565e1">sApplySceneScaleKey</a></td></tr>
+<tr class="separator:a933e47f4f943c60006a951a1ad3565e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83e8ce14a89251f930fca7fa899297a2"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html#a83e8ce14a89251f930fca7fa899297a2">sWidthKey</a></td></tr>
+<tr class="separator:a83e8ce14a89251f930fca7fa899297a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ce09037805c84ea36a13a2075fe92d"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html#a69ce09037805c84ea36a13a2075fe92d">sHeightKey</a></td></tr>
+<tr class="separator:a69ce09037805c84ea36a13a2075fe92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a626c3586d15cc57b657647247bc31999"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html#a626c3586d15cc57b657647247bc31999">sSpreadKey</a></td></tr>
+<tr class="separator:a626c3586d15cc57b657647247bc31999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d8c2acf767f340be3ba0bf2d776b55"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html#a87d8c2acf767f340be3ba0bf2d776b55">sSidednessKey</a></td></tr>
+<tr class="separator:a87d8c2acf767f340be3ba0bf2d776b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a23a6d6b64a23e9002137acf578c2776c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html#a23a6d6b64a23e9002137acf578c2776c">RectLightTester</a></td></tr>
@@ -284,7 +341,7 @@ Additional Inherited Members</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_rect_light_8h_source.html#l00040">40</a> of file <a class="el" href="_rect_light_8h_source.html">RectLight.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abafe97f376ee60e9a1a14a80f3359497" name="abafe97f376ee60e9a1a14a80f3359497"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abafe97f376ee60e9a1a14a80f3359497">&#9670;&#160;</a></span>RectLight()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abafe97f376ee60e9a1a14a80f3359497">&#9670;&#160;</a></span>RectLight() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,7 +377,16 @@ Additional Inherited Members</h2></td></tr>
 <p>Constructor / Destructor. </p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00087">87</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   87</span>                                                                              :</div>
+<div class="line"><span class="lineno">   88</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#a48e577aca504b295fcc06843af29ebc2">LocalParamLight</a>(rdlLight)</div>
+<div class="line"><span class="lineno">   89</span>{</div>
+<div class="line"><span class="lineno">   90</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_rect_light.html#a355b1966e99e0354398aace5fc522bf5">initAttributeKeys</a>(rdlLight-&gt;getSceneClass());</div>
+<div class="line"><span class="lineno">   91</span> </div>
+<div class="line"><span class="lineno">   92</span>    ispc::RectLight_init(this-&gt;asIspc(), uniformSampling);</div>
+<div class="line"><span class="lineno">   93</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_local_param_light_html_a48e577aca504b295fcc06843af29ebc2"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_local_param_light.html#a48e577aca504b295fcc06843af29ebc2">moonray::pbr::LocalParamLight::LocalParamLight</a></div><div class="ttdeci">LocalParamLight(const scene_rdl2::rdl2::Light *rdlLight)</div><div class="ttdoc">Constructor / Destructor.</div><div class="ttdef"><b>Definition:</b> <a href="_light_8cc_source.html#l00224">Light.cc:224</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rect_light_html_a355b1966e99e0354398aace5fc522bf5"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rect_light.html#a355b1966e99e0354398aace5fc522bf5">moonray::pbr::RectLight::initAttributeKeys</a></div><div class="ttdeci">void initAttributeKeys(const scene_rdl2::rdl2::SceneClass &amp;sc)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00547">RectLight.cc:547</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5f31b86aaf4d9eab2fc9cf953786a9af" name="a5f31b86aaf4d9eab2fc9cf953786a9af"></a>
@@ -347,6 +413,35 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00095">95</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>{ }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a23bcdcefdcc28a81c1a842b8a2b65ef1" name="a23bcdcefdcc28a81c1a842b8a2b65ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23bcdcefdcc28a81c1a842b8a2b65ef1">&#9670;&#160;</a></span>RectLight() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moonray::pbr::RectLight::RectLight </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html">RectLight</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy is disabled. </p>
 
 </div>
 </div>
@@ -408,7 +503,102 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_light.html#aaa0554b7ad3892cd8b88191b80a2b4ea">moonray::pbr::Light</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00222">222</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  224</span>{</div>
+<div class="line"><span class="lineno">  225</span>    MNRY_ASSERT(mOn);</div>
+<div class="line"><span class="lineno">  226</span> </div>
+<div class="line"><span class="lineno">  227</span>    <span class="comment">// Cull points which are completely on the backside of the light, taking sidedness into account</span></div>
+<div class="line"><span class="lineno">  228</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> threshold = sEpsilon - radius;</div>
+<div class="line"><span class="lineno">  229</span>    <span class="keywordflow">if</span> ((mSidedness != LightSidednessType::LIGHT_SIDEDNESS_2_SIDED) &amp;&amp; (<a class="code hl_function" href="classmoonray_1_1pbr_1_1_rect_light.html#a7dbe4bd1caba0ea71e608a5761d6f39f">planeDistance</a>(p, time) &lt; threshold)) {</div>
+<div class="line"><span class="lineno">  230</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  231</span>    }</div>
+<div class="line"><span class="lineno">  232</span> </div>
+<div class="line"><span class="lineno">  233</span>    <span class="comment">// Cull lights which are completely on the backside of the point.</span></div>
+<div class="line"><span class="lineno">  234</span>    <span class="keywordflow">if</span> (n) {</div>
+<div class="line"><span class="lineno">  235</span>        Plane pl(p, *n);</div>
+<div class="line"><span class="lineno">  236</span>        <span class="keywordtype">float</span> d0, d1, d2, d3;</div>
+<div class="line"><span class="lineno">  237</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#aebf79535791807280db3429fbebcd634">isMb</a>()) {</div>
+<div class="line"><span class="lineno">  238</span>            d0 = pl.getDistance(mRenderCorners[0]);</div>
+<div class="line"><span class="lineno">  239</span>            d1 = pl.getDistance(mRenderCorners[1]);</div>
+<div class="line"><span class="lineno">  240</span>            d2 = pl.getDistance(mRenderCorners[2]);</div>
+<div class="line"><span class="lineno">  241</span>            d3 = pl.getDistance(mRenderCorners[3]);</div>
+<div class="line"><span class="lineno">  242</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  243</span>            <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> corners[4];</div>
+<div class="line"><span class="lineno">  244</span>            <a class="code hl_function" href="classmoonray_1_1pbr_1_1_rect_light.html#a90527b59251a8c6b290c31735968676a">computeCorners</a>(corners, time);</div>
+<div class="line"><span class="lineno">  245</span>            d0 = pl.getDistance(corners[0]);</div>
+<div class="line"><span class="lineno">  246</span>            d1 = pl.getDistance(corners[1]);</div>
+<div class="line"><span class="lineno">  247</span>            d2 = pl.getDistance(corners[2]);</div>
+<div class="line"><span class="lineno">  248</span>            d3 = pl.getDistance(corners[3]);</div>
+<div class="line"><span class="lineno">  249</span>        }</div>
+<div class="line"><span class="lineno">  250</span>        <span class="keywordtype">bool</span> canIllum = d0 &gt; threshold || d1 &gt; threshold ||</div>
+<div class="line"><span class="lineno">  251</span>                        d2 &gt; threshold || d3 &gt; threshold;</div>
+<div class="line"><span class="lineno">  252</span>        <span class="keywordflow">if</span> (!canIllum) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  253</span>    }</div>
+<div class="line"><span class="lineno">  254</span> </div>
+<div class="line"><span class="lineno">  255</span>    <span class="keywordflow">if</span> (lightFilterList) {</div>
+<div class="line"><span class="lineno">  256</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a559cd632b7b4d6c04281ce67733b4b7a">canIlluminateLightFilterList</a>(lightFilterList,</div>
+<div class="line"><span class="lineno">  257</span>            { <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#aaccb60c65f279b29c1a070f54daeb036">getPosition</a>(time),</div>
+<div class="line"><span class="lineno">  258</span>              <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#ac6a71b821c69f366aa5275d83e889675">xformLocal2RenderScale</a>(math::sqrt(mWidth * mWidth + mHeight * mHeight) / 2, time),</div>
+<div class="line"><span class="lineno">  259</span>              p, <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#ab0c7d65339f5b8aabdaae7e92154746f">getXformRender2Local</a>(time, lightFilterList-&gt;needsLightXform()),</div>
+<div class="line"><span class="lineno">  260</span>              radius, time</div>
+<div class="line"><span class="lineno">  261</span>            });</div>
+<div class="line"><span class="lineno">  262</span>    }</div>
+<div class="line"><span class="lineno">  263</span> </div>
+<div class="line"><span class="lineno">  264</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  265</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_aaccb60c65f279b29c1a070f54daeb036"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#aaccb60c65f279b29c1a070f54daeb036">moonray::pbr::Light::getPosition</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f getPosition(float time) const</div><div class="ttdoc">Render space position and direction.</div><div class="ttdef"><b>Definition:</b> <a href="_light_8h_source.html#l00082">Light.h:82</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_aebf79535791807280db3429fbebcd634"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#aebf79535791807280db3429fbebcd634">moonray::pbr::Light::isMb</a></div><div class="ttdeci">finline bool isMb() const</div><div class="ttdoc">See Light.hh for details.</div><div class="ttdef"><b>Definition:</b> <a href="_light_8h_source.html#l00269">Light.h:269</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_local_param_light_html_ab0c7d65339f5b8aabdaae7e92154746f"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_local_param_light.html#ab0c7d65339f5b8aabdaae7e92154746f">moonray::pbr::LocalParamLight::getXformRender2Local</a></div><div class="ttdeci">finline scene_rdl2::math::Xform3f getXformRender2Local(float time, bool needed=true) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_8h_source.html#l00336">Light.h:336</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_local_param_light_html_ac6a71b821c69f366aa5275d83e889675"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_local_param_light.html#ac6a71b821c69f366aa5275d83e889675">moonray::pbr::LocalParamLight::xformLocal2RenderScale</a></div><div class="ttdeci">finline float xformLocal2RenderScale(float s, float time) const</div><div class="ttdoc">uniform scale transformations</div><div class="ttdef"><b>Definition:</b> <a href="_light_8h_source.html#l00407">Light.h:407</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rect_light_html_a7dbe4bd1caba0ea71e608a5761d6f39f"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rect_light.html#a7dbe4bd1caba0ea71e608a5761d6f39f">moonray::pbr::RectLight::planeDistance</a></div><div class="ttdeci">float planeDistance(const scene_rdl2::math::Vec3f &amp;p, float time) const</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00051">RectLight.cc:51</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rect_light_html_a90527b59251a8c6b290c31735968676a"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rect_light.html#a90527b59251a8c6b290c31735968676a">moonray::pbr::RectLight::computeCorners</a></div><div class="ttdeci">void computeCorners(scene_rdl2::math::Vec3f *corners, float time) const</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00042">RectLight.cc:42</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a559cd632b7b4d6c04281ce67733b4b7a"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a559cd632b7b4d6c04281ce67733b4b7a">moonray::pbr::canIlluminateLightFilterList</a></div><div class="ttdeci">bool canIlluminateLightFilterList(const LightFilterList *lightFilterList, const LightFilter::CanIlluminateData &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8h_source.html#l00140">LightFilter.h:140</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a90527b59251a8c6b290c31735968676a" name="a90527b59251a8c6b290c31735968676a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90527b59251a8c6b290c31735968676a">&#9670;&#160;</a></span>computeCorners()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::pbr::RectLight::computeCorners </td>
+          <td>(</td>
+          <td class="paramtype">scene_rdl2::math::Vec3f *&#160;</td>
+          <td class="paramname"><em>corners</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00042">42</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>{</div>
+<div class="line"><span class="lineno">   44</span>    corners[0] = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#ac33999826b6fd91ae42ad1afdf1021af">xformPointLocal2Render</a>(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(mHalfWidth,  mHalfHeight, 0.f), time);</div>
+<div class="line"><span class="lineno">   45</span>    corners[1] = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#ac33999826b6fd91ae42ad1afdf1021af">xformPointLocal2Render</a>(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(mHalfWidth, -mHalfHeight, 0.f), time);</div>
+<div class="line"><span class="lineno">   46</span>    corners[2] = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#ac33999826b6fd91ae42ad1afdf1021af">xformPointLocal2Render</a>(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(-mHalfWidth,  mHalfHeight, 0.f), time);</div>
+<div class="line"><span class="lineno">   47</span>    corners[3] = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#ac33999826b6fd91ae42ad1afdf1021af">xformPointLocal2Render</a>(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(-mHalfWidth, -mHalfHeight, 0.f), time);</div>
+<div class="line"><span class="lineno">   48</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_local_param_light_html_ac33999826b6fd91ae42ad1afdf1021af"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_local_param_light.html#ac33999826b6fd91ae42ad1afdf1021af">moonray::pbr::LocalParamLight::xformPointLocal2Render</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f xformPointLocal2Render(const scene_rdl2::math::Vec3f &amp;p, float time) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_8h_source.html#l00324">Light.h:324</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aec0ab5f888680e1fa0bdf3ff9eda9e6d" name="aec0ab5f888680e1fa0bdf3ff9eda9e6d"></a>
@@ -498,7 +688,55 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_light.html#ad5831b91124722b3ee770c7ec65aeb27">moonray::pbr::Light</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00479">479</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  482</span>{</div>
+<div class="line"><span class="lineno">  483</span>    MNRY_ASSERT(mOn);</div>
+<div class="line"><span class="lineno">  484</span> </div>
+<div class="line"><span class="lineno">  485</span>    <span class="comment">// Point sample the texture</span></div>
+<div class="line"><span class="lineno">  486</span>    Color radiance = mRadiance;</div>
+<div class="line"><span class="lineno">  487</span> </div>
+<div class="line"><span class="lineno">  488</span>    <span class="keywordflow">if</span> (mSpread &lt; 1.f) {</div>
+<div class="line"><span class="lineno">  489</span>        <span class="comment">// modify radiance as if it were physically blocked by an eggcrate light filter.</span></div>
+<div class="line"><span class="lineno">  490</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> localWi = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#af799fbde7c6407a8797b419b2edb685e">xformVectorRender2LocalRot</a>(wi, time);</div>
+<div class="line"><span class="lineno">  491</span>        radiance *= math::max(1.f - math::abs(localWi.x / (localWi.z * mTanSpreadTheta)), 0.f) *</div>
+<div class="line"><span class="lineno">  492</span>                    math::max(1.f - math::abs(localWi.y / (localWi.z * mTanSpreadTheta)), 0.f);</div>
+<div class="line"><span class="lineno">  493</span>    }</div>
+<div class="line"><span class="lineno">  494</span> </div>
+<div class="line"><span class="lineno">  495</span>    <span class="keywordflow">if</span> (mDistribution) {</div>
+<div class="line"><span class="lineno">  496</span>        radiance *= mDistribution-&gt;eval(isect.uv[0], isect.uv[1], 0, mTextureFilter);</div>
+<div class="line"><span class="lineno">  497</span>    }</div>
+<div class="line"><span class="lineno">  498</span> </div>
+<div class="line"><span class="lineno">  499</span>    <span class="keywordflow">if</span> (lightFilterList) {</div>
+<div class="line"><span class="lineno">  500</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ae018f87b5532f8df26d2da17ec8a0a5b">evalLightFilterList</a>(lightFilterList, </div>
+<div class="line"><span class="lineno">  501</span>                            { tls, &amp;isect, <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#aaccb60c65f279b29c1a070f54daeb036">getPosition</a>(time),</div>
+<div class="line"><span class="lineno">  502</span>                              <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#a684694fca3a60565f1b0f600fabf373e">getDirection</a>(time), p,</div>
+<div class="line"><span class="lineno">  503</span>                              filterR, time,</div>
+<div class="line"><span class="lineno">  504</span>                              <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#ab0c7d65339f5b8aabdaae7e92154746f">getXformRender2Local</a>(time, lightFilterList-&gt;needsLightXform()),</div>
+<div class="line"><span class="lineno">  505</span>                              wi</div>
+<div class="line"><span class="lineno">  506</span>                            },</div>
+<div class="line"><span class="lineno">  507</span>                            radiance);</div>
+<div class="line"><span class="lineno">  508</span>    }</div>
+<div class="line"><span class="lineno">  509</span> </div>
+<div class="line"><span class="lineno">  510</span>    <span class="keywordflow">if</span> (pdf) {</div>
+<div class="line"><span class="lineno">  511</span>        <span class="keywordflow">if</span> (mDistribution) {</div>
+<div class="line"><span class="lineno">  512</span>            <span class="comment">// we sampled the image distribution</span></div>
+<div class="line"><span class="lineno">  513</span>            *pdf = mInvArea * mDistribution-&gt;pdf(isect.uv[0], isect.uv[1], 0, mTextureFilter);</div>
+<div class="line"><span class="lineno">  514</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mSpread &lt; 1.f) {</div>
+<div class="line"><span class="lineno">  515</span>            <span class="comment">// we sampled the spread region, grab the stored pdf.</span></div>
+<div class="line"><span class="lineno">  516</span>            *pdf = isect.pdf;</div>
+<div class="line"><span class="lineno">  517</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  518</span>            <span class="comment">// we uniformly sampled the rectangle</span></div>
+<div class="line"><span class="lineno">  519</span>            *pdf = mInvArea;</div>
+<div class="line"><span class="lineno">  520</span>        }</div>
+<div class="line"><span class="lineno">  521</span>        *pdf *= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a3a28ac91816c1f416e2b810c9ecfbe3d">areaToSolidAngleScale</a>(wi, isect.N, isect.distance);</div>
+<div class="line"><span class="lineno">  522</span>    }</div>
+<div class="line"><span class="lineno">  523</span> </div>
+<div class="line"><span class="lineno">  524</span>    <span class="keywordflow">return</span> radiance;</div>
+<div class="line"><span class="lineno">  525</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_a684694fca3a60565f1b0f600fabf373e"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#a684694fca3a60565f1b0f600fabf373e">moonray::pbr::Light::getDirection</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f getDirection(float time) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_8h_source.html#l00087">Light.h:87</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_local_param_light_html_af799fbde7c6407a8797b419b2edb685e"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_local_param_light.html#af799fbde7c6407a8797b419b2edb685e">moonray::pbr::LocalParamLight::xformVectorRender2LocalRot</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f xformVectorRender2LocalRot(const scene_rdl2::math::Vec3f &amp;v, float time) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_8h_source.html#l00377">Light.h:377</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a3a28ac91816c1f416e2b810c9ecfbe3d"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a3a28ac91816c1f416e2b810c9ecfbe3d">moonray::pbr::areaToSolidAngleScale</a></div><div class="ttdeci">finline float areaToSolidAngleScale(const scene_rdl2::math::Vec3f &amp;wi, const scene_rdl2::math::Vec3f &amp;lightNormal, float dist)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2core_2util_8h_source.html#l00345">Util.h:345</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_ae018f87b5532f8df26d2da17ec8a0a5b"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ae018f87b5532f8df26d2da17ec8a0a5b">moonray::pbr::evalLightFilterList</a></div><div class="ttdeci">void evalLightFilterList(const LightFilterList *lightFilterList, const LightFilter::EvalData &amp;data, scene_rdl2::math::Color &amp;radiance)</div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8h_source.html#l00155">LightFilter.h:155</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8a916d5ab47dbbc67c71d1f7461b2d1c" name="a8a916d5ab47dbbc67c71d1f7461b2d1c"></a>
@@ -529,7 +767,27 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1pbr_1_1_light.html#ab1fbcda64a1f9bb62306537b0552bb37">moonray::pbr::Light</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00306">306</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  307</span>{</div>
+<div class="line"><span class="lineno">  308</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> pos = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#aaccb60c65f279b29c1a070f54daeb036">getPosition</a>(0.f);</div>
+<div class="line"><span class="lineno">  309</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> absXRow  = scene_rdl2::math::abs(mLocal2Render[0].l.vx);</div>
+<div class="line"><span class="lineno">  310</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> absYRow  = scene_rdl2::math::abs(mLocal2Render[0].l.vy);</div>
+<div class="line"><span class="lineno">  311</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> halfDims = max(mHalfWidth * absXRow + mHalfHeight * absYRow,</div>
+<div class="line"><span class="lineno">  312</span>                               <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(sEpsilon));     <span class="comment">// ensure non-degeneracy</span></div>
+<div class="line"><span class="lineno">  313</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a0f7237d1fa0a8544984c7889b6f5fe28">BBox3f</a> bounds(pos - halfDims, pos + halfDims);</div>
+<div class="line"><span class="lineno">  314</span> </div>
+<div class="line"><span class="lineno">  315</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#aebf79535791807280db3429fbebcd634">isMb</a>()) {</div>
+<div class="line"><span class="lineno">  316</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> pos = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#aaccb60c65f279b29c1a070f54daeb036">getPosition</a>(1.f);</div>
+<div class="line"><span class="lineno">  317</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> absXRow  = scene_rdl2::math::abs(mLocal2Render[1].l.vx);</div>
+<div class="line"><span class="lineno">  318</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> absYRow  = scene_rdl2::math::abs(mLocal2Render[1].l.vy);</div>
+<div class="line"><span class="lineno">  319</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> halfDims = max(mHalfWidth * absXRow + mHalfHeight * absYRow,</div>
+<div class="line"><span class="lineno">  320</span>                                   <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(sEpsilon));     <span class="comment">// ensure non-degeneracy</span></div>
+<div class="line"><span class="lineno">  321</span>        bounds.extend(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a0f7237d1fa0a8544984c7889b6f5fe28">BBox3f</a>(pos - halfDims, pos + halfDims));</div>
+<div class="line"><span class="lineno">  322</span>    }</div>
+<div class="line"><span class="lineno">  323</span> </div>
+<div class="line"><span class="lineno">  324</span>    <span class="keywordflow">return</span> bounds;</div>
+<div class="line"><span class="lineno">  325</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a0f7237d1fa0a8544984c7889b6f5fe28"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a0f7237d1fa0a8544984c7889b6f5fe28">moonray::geom::BBox3f</a></div><div class="ttdeci">scene_rdl2::math::BBox3f BBox3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00035">Types.h:35</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a750e329df5dff99fcf827c1e962110db" name="a750e329df5dff99fcf827c1e962110db"></a>
@@ -570,7 +828,98 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_light.html#abab0b0410f8224e6ce3af7e76b37356b">moonray::pbr::Light</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00528">528</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  529</span>{</div>
+<div class="line"><span class="lineno">  530</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> uv;</div>
+<div class="line"><span class="lineno">  531</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> hit;</div>
+<div class="line"><span class="lineno">  532</span>    <span class="comment">// Sample the image distribution if any</span></div>
+<div class="line"><span class="lineno">  533</span>    <span class="keywordflow">if</span> (mDistribution) {</div>
+<div class="line"><span class="lineno">  534</span>        mDistribution-&gt;sample(r[0], r[1], 0, &amp;uv, <span class="keyword">nullptr</span>, mTextureFilter);</div>
+<div class="line"><span class="lineno">  535</span>        hit = <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>((uv[0] - mUvOffset.x) / mUvScale.x,</div>
+<div class="line"><span class="lineno">  536</span>                    (uv[1] - mUvOffset.y) / mUvScale.y,</div>
+<div class="line"><span class="lineno">  537</span>                     0.0f);</div>
+<div class="line"><span class="lineno">  538</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  539</span>        hit = <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>((0.5f - r[0]) * mWidth,</div>
+<div class="line"><span class="lineno">  540</span>                    (0.5f - r[1]) * mHeight,</div>
+<div class="line"><span class="lineno">  541</span>                     0.0f);</div>
+<div class="line"><span class="lineno">  542</span>    }</div>
+<div class="line"><span class="lineno">  543</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#ac33999826b6fd91ae42ad1afdf1021af">xformPointLocal2Render</a>(hit, time);</div>
+<div class="line"><span class="lineno">  544</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a8ff976ca38d834d434f1d00f2a03359b"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">moonray::geom::Vec2f</a></div><div class="ttdeci">scene_rdl2::math::Vec2f Vec2f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00038">Types.h:38</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aac37328ec2da03e7a4f57ee6942dc534" name="aac37328ec2da03e7a4f57ee6942dc534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac37328ec2da03e7a4f57ee6942dc534">&#9670;&#160;</a></span>getOverlapBounds()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::pbr::RectLight::getOverlapBounds </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Vec2f &amp;&#160;</td>
+          <td class="paramname"><em>localP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>localLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">scene_rdl2::math::Vec2f &amp;&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00066">66</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>{</div>
+<div class="line"><span class="lineno">   69</span>    <span class="keywordtype">float</span> minX = math::max(localP.x - localLength, -mHalfWidth);</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordtype">float</span> maxX = math::min(localP.x + localLength, mHalfWidth);</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordtype">float</span> minY = math::max(localP.y - localLength, -mHalfHeight);</div>
+<div class="line"><span class="lineno">   72</span>    <span class="keywordtype">float</span> maxY = math::min(localP.y + localLength, mHalfHeight);</div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">if</span> (maxX &lt;= minX || maxY &lt;= minY) {</div>
+<div class="line"><span class="lineno">   75</span>        <span class="comment">// region does not overlap with RectLight</span></div>
+<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   77</span>    }</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>    center.x = 0.5f * (maxX + minX);</div>
+<div class="line"><span class="lineno">   80</span>    center.y = 0.5f * (maxY + minY);</div>
+<div class="line"><span class="lineno">   81</span>    width = maxX - minX;</div>
+<div class="line"><span class="lineno">   82</span>    height = maxY - minY;</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   85</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8abb20c4aa3297e4784bd35f18408e23" name="a8abb20c4aa3297e4784bd35f18408e23"></a>
@@ -618,7 +967,67 @@ Additional Inherited Members</h2></td></tr>
 <p>HUD validation and type casting. </p>
 
 <p class="definition">Definition at line <a class="el" href="_rect_light_8h_source.html#l00050">50</a> of file <a class="el" href="_rect_light_8h_source.html">RectLight.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>                                                {</div>
+<div class="line"><span class="lineno">   51</span>        <a class="code hl_define" href="_light_8hh.html#a55829ace4cd164dc6f79454ba3c57b0e">RECT_LIGHT_VALIDATION</a>;</div>
+<div class="line"><span class="lineno">   52</span>    }</div>
+<div class="ttc" id="a_light_8hh_html_a55829ace4cd164dc6f79454ba3c57b0e"><div class="ttname"><a href="_light_8hh.html#a55829ace4cd164dc6f79454ba3c57b0e">RECT_LIGHT_VALIDATION</a></div><div class="ttdeci">#define RECT_LIGHT_VALIDATION</div><div class="ttdef"><b>Definition:</b> <a href="_light_8hh_source.html#l00316">Light.hh:316</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a355b1966e99e0354398aace5fc522bf5" name="a355b1966e99e0354398aace5fc522bf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a355b1966e99e0354398aace5fc522bf5">&#9670;&#160;</a></span>initAttributeKeys()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::pbr::RectLight::initAttributeKeys </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::rdl2::SceneClass &amp;&#160;</td>
+          <td class="paramname"><em>sc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00547">547</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  548</span>{</div>
+<div class="line"><span class="lineno">  549</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#a456b2ad309f24d6cf005ebb10d848c33">sAttributeKeyInitialized</a>) {</div>
+<div class="line"><span class="lineno">  550</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  551</span>    }</div>
+<div class="line"><span class="lineno">  552</span> </div>
+<div class="line"><span class="lineno">  553</span>    <a class="code hl_define" href="moonray__static__check_8h.html#ae87f12215947fe7d7703094b9fa857a9">MOONRAY_START_NON_THREADSAFE_STATIC_WRITE</a></div>
+<div class="line"><span class="lineno">  554</span> </div>
+<div class="line"><span class="lineno">  555</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#a456b2ad309f24d6cf005ebb10d848c33">sAttributeKeyInitialized</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  556</span> </div>
+<div class="line"><span class="lineno">  557</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#ab63c938588e7b22be2f53b34c5ade490">sNormalizedKey</a>      = sc.getAttributeKey&lt;scene_rdl2::rdl2::Bool&gt; (<span class="stringliteral">&quot;normalized&quot;</span>);</div>
+<div class="line"><span class="lineno">  558</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#a933e47f4f943c60006a951a1ad3565e1">sApplySceneScaleKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::Bool&gt; (<span class="stringliteral">&quot;apply_scene_scale&quot;</span>);</div>
+<div class="line"><span class="lineno">  559</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#a83e8ce14a89251f930fca7fa899297a2">sWidthKey</a>           = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;width&quot;</span>);</div>
+<div class="line"><span class="lineno">  560</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#a69ce09037805c84ea36a13a2075fe92d">sHeightKey</a>          = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;height&quot;</span>);</div>
+<div class="line"><span class="lineno">  561</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#a626c3586d15cc57b657647247bc31999">sSpreadKey</a>          = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;spread&quot;</span>);</div>
+<div class="line"><span class="lineno">  562</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#a87d8c2acf767f340be3ba0bf2d776b55">sSidednessKey</a>       = sc.getAttributeKey&lt;scene_rdl2::rdl2::Int&gt;  (<span class="stringliteral">&quot;sidedness&quot;</span>);</div>
+<div class="line"><span class="lineno">  563</span>    INIT_ATTR_KEYS_CLEAR_RADIUS</div>
+<div class="line"><span class="lineno">  564</span> </div>
+<div class="line"><span class="lineno">  565</span>    <a class="code hl_define" href="moonray__static__check_8h.html#acd5373f1dc116d01f690f774c8d96015">MOONRAY_FINISH_NON_THREADSAFE_STATIC_WRITE</a></div>
+<div class="line"><span class="lineno">  566</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rect_light_html_a456b2ad309f24d6cf005ebb10d848c33"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rect_light.html#a456b2ad309f24d6cf005ebb10d848c33">moonray::pbr::RectLight::sAttributeKeyInitialized</a></div><div class="ttdeci">static bool sAttributeKeyInitialized</div><div class="ttdef"><b>Definition:</b> <a href="_rect_light_8h_source.html#l00102">RectLight.h:102</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rect_light_html_a626c3586d15cc57b657647247bc31999"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rect_light.html#a626c3586d15cc57b657647247bc31999">moonray::pbr::RectLight::sSpreadKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sSpreadKey</div><div class="ttdef"><b>Definition:</b> <a href="_rect_light_8h_source.html#l00107">RectLight.h:107</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rect_light_html_a69ce09037805c84ea36a13a2075fe92d"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rect_light.html#a69ce09037805c84ea36a13a2075fe92d">moonray::pbr::RectLight::sHeightKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sHeightKey</div><div class="ttdef"><b>Definition:</b> <a href="_rect_light_8h_source.html#l00106">RectLight.h:106</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rect_light_html_a83e8ce14a89251f930fca7fa899297a2"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rect_light.html#a83e8ce14a89251f930fca7fa899297a2">moonray::pbr::RectLight::sWidthKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sWidthKey</div><div class="ttdef"><b>Definition:</b> <a href="_rect_light_8h_source.html#l00105">RectLight.h:105</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rect_light_html_a87d8c2acf767f340be3ba0bf2d776b55"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rect_light.html#a87d8c2acf767f340be3ba0bf2d776b55">moonray::pbr::RectLight::sSidednessKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Int &gt; sSidednessKey</div><div class="ttdef"><b>Definition:</b> <a href="_rect_light_8h_source.html#l00108">RectLight.h:108</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rect_light_html_a933e47f4f943c60006a951a1ad3565e1"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rect_light.html#a933e47f4f943c60006a951a1ad3565e1">moonray::pbr::RectLight::sApplySceneScaleKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Bool &gt; sApplySceneScaleKey</div><div class="ttdef"><b>Definition:</b> <a href="_rect_light_8h_source.html#l00104">RectLight.h:104</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rect_light_html_ab63c938588e7b22be2f53b34c5ade490"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rect_light.html#ab63c938588e7b22be2f53b34c5ade490">moonray::pbr::RectLight::sNormalizedKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Bool &gt; sNormalizedKey</div><div class="ttdef"><b>Definition:</b> <a href="_rect_light_8h_source.html#l00103">RectLight.h:103</a></div></div>
+<div class="ttc" id="amoonray__static__check_8h_html_acd5373f1dc116d01f690f774c8d96015"><div class="ttname"><a href="moonray__static__check_8h.html#acd5373f1dc116d01f690f774c8d96015">MOONRAY_FINISH_NON_THREADSAFE_STATIC_WRITE</a></div><div class="ttdeci">#define MOONRAY_FINISH_NON_THREADSAFE_STATIC_WRITE</div><div class="ttdef"><b>Definition:</b> <a href="moonray__static__check_8h_source.html#l00106">moonray_static_check.h:106</a></div></div>
+<div class="ttc" id="amoonray__static__check_8h_html_ae87f12215947fe7d7703094b9fa857a9"><div class="ttname"><a href="moonray__static__check_8h.html#ae87f12215947fe7d7703094b9fa857a9">MOONRAY_START_NON_THREADSAFE_STATIC_WRITE</a></div><div class="ttdeci">#define MOONRAY_START_NON_THREADSAFE_STATIC_WRITE</div><div class="ttdef"><b>Definition:</b> <a href="moonray__static__check_8h_source.html#l00105">moonray_static_check.h:105</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aedc80fadd0f5f73f5342964fe98f2b22" name="aedc80fadd0f5f73f5342964fe98f2b22"></a>
@@ -684,7 +1093,61 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_light.html#a99c6113918cfcb8c534436ec6bae0725">moonray::pbr::Light</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00328">328</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  330</span>{</div>
+<div class="line"><span class="lineno">  331</span>    <span class="comment">// Get local direction and position</span></div>
+<div class="line"><span class="lineno">  332</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> localWi = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#af799fbde7c6407a8797b419b2edb685e">xformVectorRender2LocalRot</a>(wi, time);</div>
+<div class="line"><span class="lineno">  333</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> localP  = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#aff2631b71b62125a1013be12c0b803b8">xformVectorRender2Local</a>(p - <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#aaccb60c65f279b29c1a070f54daeb036">getPosition</a>(time), time);</div>
+<div class="line"><span class="lineno">  334</span> </div>
+<div class="line"><span class="lineno">  335</span>    <span class="comment">// Trivial rejection of pos/dir/sidedness cases</span></div>
+<div class="line"><span class="lineno">  336</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#a1e4f7ddcbe3410c262c6482ca7683ea2">rejectPosDirSidedness</a>(localP.z, localWi.z)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  337</span> </div>
+<div class="line"><span class="lineno">  338</span>    <span class="comment">// Reject if intersection with plane is beyond maxDistance</span></div>
+<div class="line"><span class="lineno">  339</span>    <span class="keywordtype">float</span> localDistance = -localP.z / localWi.z;</div>
+<div class="line"><span class="lineno">  340</span>    <span class="keywordtype">float</span> renderDistance = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#ac6a71b821c69f366aa5275d83e889675">xformLocal2RenderScale</a>(localDistance, time);</div>
+<div class="line"><span class="lineno">  341</span>    <span class="keywordflow">if</span> (renderDistance &gt; maxDistance) {</div>
+<div class="line"><span class="lineno">  342</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  343</span>    }</div>
+<div class="line"><span class="lineno">  344</span> </div>
+<div class="line"><span class="lineno">  345</span>    <span class="comment">// Reject if intersection is outside rectangle</span></div>
+<div class="line"><span class="lineno">  346</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> localHit = localP + localWi * localDistance;</div>
+<div class="line"><span class="lineno">  347</span>    <span class="keywordflow">if</span> (scene_rdl2::math::abs(localHit.x) &gt;= mHalfWidth || scene_rdl2::math::abs(localHit.y) &gt;= mHalfHeight) {</div>
+<div class="line"><span class="lineno">  348</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  349</span>    }</div>
+<div class="line"><span class="lineno">  350</span> </div>
+<div class="line"><span class="lineno">  351</span>    <span class="keywordflow">if</span> (mSpread &lt; 1.f) {</div>
+<div class="line"><span class="lineno">  352</span>        <span class="comment">// Reject if intersection point is outside spread</span></div>
+<div class="line"><span class="lineno">  353</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> absLocalWi = scene_rdl2::math::abs(localWi);</div>
+<div class="line"><span class="lineno">  354</span>        <span class="keywordflow">if</span> (max(absLocalWi.x, absLocalWi.y) &gt; absLocalWi.z * mTanSpreadTheta) {</div>
+<div class="line"><span class="lineno">  355</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  356</span>        }</div>
+<div class="line"><span class="lineno">  357</span> </div>
+<div class="line"><span class="lineno">  358</span>        <span class="comment">// compute pdf</span></div>
+<div class="line"><span class="lineno">  359</span>        <span class="comment">// get half side length of square spread region</span></div>
+<div class="line"><span class="lineno">  360</span>        <span class="keywordtype">float</span> spreadLength = localP.z * mTanSpreadTheta;</div>
+<div class="line"><span class="lineno">  361</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> center;</div>
+<div class="line"><span class="lineno">  362</span>        <span class="keywordtype">float</span> width, height;</div>
+<div class="line"><span class="lineno">  363</span>        <a class="code hl_function" href="classmoonray_1_1pbr_1_1_rect_light.html#aac37328ec2da03e7a4f57ee6942dc534">getOverlapBounds</a>(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a>(localP.x, localP.y), spreadLength, center, width, height);</div>
+<div class="line"><span class="lineno">  364</span>        <span class="comment">// store pdf if not rejected</span></div>
+<div class="line"><span class="lineno">  365</span>        isect.pdf = 1.f / (<a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#ac6a71b821c69f366aa5275d83e889675">xformLocal2RenderScale</a>(width, time) * <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#ac6a71b821c69f366aa5275d83e889675">xformLocal2RenderScale</a>(height, time));</div>
+<div class="line"><span class="lineno">  366</span>    }</div>
+<div class="line"><span class="lineno">  367</span> </div>
+<div class="line"><span class="lineno">  368</span>    <span class="comment">// Fill in isect members.</span></div>
+<div class="line"><span class="lineno">  369</span>    <span class="comment">// We will only reach this far if p is on the illuminated side of the light&#39;s plane (either side, for 2-sided).</span></div>
+<div class="line"><span class="lineno">  370</span>    <span class="comment">// The light&#39;s mDirection is its local z-axis, which is only guaranteed to concide with the normal for lights</span></div>
+<div class="line"><span class="lineno">  371</span>    <span class="comment">// with regular sidedness. In the general case, the correct normal is obtained by ensuring the ray is travelling</span></div>
+<div class="line"><span class="lineno">  372</span>    <span class="comment">// against the normal, i.e. the ray&#39;s direction has negative local z-coordinate.</span></div>
+<div class="line"><span class="lineno">  373</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> normal = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#a684694fca3a60565f1b0f600fabf373e">getDirection</a>(time);</div>
+<div class="line"><span class="lineno">  374</span>    isect.N = (localWi.z &lt; 0.0f) ? normal : -normal;</div>
+<div class="line"><span class="lineno">  375</span>    isect.uv = (mDistribution  ?  asVec2(localHit) * mUvScale + mUvOffset</div>
+<div class="line"><span class="lineno">  376</span>                                :  math::zero);</div>
+<div class="line"><span class="lineno">  377</span>    isect.distance = renderDistance;</div>
+<div class="line"><span class="lineno">  378</span> </div>
+<div class="line"><span class="lineno">  379</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  380</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_a1e4f7ddcbe3410c262c6482ca7683ea2"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#a1e4f7ddcbe3410c262c6482ca7683ea2">moonray::pbr::Light::rejectPosDirSidedness</a></div><div class="ttdeci">finline bool rejectPosDirSidedness(float pz, float wz) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_8h_source.html#l00241">Light.h:241</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_local_param_light_html_aff2631b71b62125a1013be12c0b803b8"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_local_param_light.html#aff2631b71b62125a1013be12c0b803b8">moonray::pbr::LocalParamLight::xformVectorRender2Local</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f xformVectorRender2Local(const scene_rdl2::math::Vec3f &amp;v, float time) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_8h_source.html#l00364">Light.h:364</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rect_light_html_aac37328ec2da03e7a4f57ee6942dc534"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rect_light.html#aac37328ec2da03e7a4f57ee6942dc534">moonray::pbr::RectLight::getOverlapBounds</a></div><div class="ttdeci">bool getOverlapBounds(const scene_rdl2::math::Vec2f &amp;localP, float localLength, scene_rdl2::math::Vec2f &amp;center, float &amp;width, float &amp;height) const</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00066">RectLight.cc:66</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a97f71f3fc9748c6147fe9393fe576d21" name="a97f71f3fc9748c6147fe9393fe576d21"></a>
@@ -714,7 +1177,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_light.html#a7947b682988eb5ad2f51b46647f7e9b0">moonray::pbr::Light</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00268">268</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  269</span>{</div>
+<div class="line"><span class="lineno">  270</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  271</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae2bad09050c3989efbd0d4a5888623f3" name="ae2bad09050c3989efbd0d4a5888623f3"></a>
@@ -743,7 +1209,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_light.html#ade639ee879c9f4ca8c447087c4303ddd">moonray::pbr::Light</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00274">274</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  275</span>{</div>
+<div class="line"><span class="lineno">  276</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  277</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8bb4a5d1d6b0511afdfdef449f292819" name="a8bb4a5d1d6b0511afdfdef449f292819"></a>
@@ -772,7 +1241,86 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_light.html#a406af7f3931f3b2a0862ab84f451cb83">moonray::pbr::Light</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00280">280</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  281</span>{</div>
+<div class="line"><span class="lineno">  282</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  283</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6a3c2c29422adafdf710dc1bb331c864" name="a6a3c2c29422adafdf710dc1bb331c864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a3c2c29422adafdf710dc1bb331c864">&#9670;&#160;</a></span>operator=()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html">RectLight</a> &amp; moonray::pbr::RectLight::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html">RectLight</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7dbe4bd1caba0ea71e608a5761d6f39f" name="a7dbe4bd1caba0ea71e608a5761d6f39f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dbe4bd1caba0ea71e608a5761d6f39f">&#9670;&#160;</a></span>planeDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::pbr::RectLight::planeDistance </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Vec3f &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00051">51</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>{</div>
+<div class="line"><span class="lineno">   53</span>    Plane pl = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#aebf79535791807280db3429fbebcd634">isMb</a>() ? Plane(<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#aaccb60c65f279b29c1a070f54daeb036">getPosition</a>(time), <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#a684694fca3a60565f1b0f600fabf373e">getDirection</a>(time)) : mRenderPlane;</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>    <span class="keywordtype">float</span> distance = pl.getDistance(p);</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">if</span> (mSidedness == LightSidednessType::LIGHT_SIDEDNESS_REVERSE) {</div>
+<div class="line"><span class="lineno">   57</span>        distance = -distance;</div>
+<div class="line"><span class="lineno">   58</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mSidedness == LightSidednessType::LIGHT_SIDEDNESS_2_SIDED) {</div>
+<div class="line"><span class="lineno">   59</span>        distance = scene_rdl2::math::abs(distance);</div>
+<div class="line"><span class="lineno">   60</span>    }</div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">return</span> distance;</div>
+<div class="line"><span class="lineno">   63</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af83fc5e117ae9218ad8dbdc2e61471a9" name="af83fc5e117ae9218ad8dbdc2e61471a9"></a>
@@ -846,7 +1394,104 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_light.html#a174df10c924a6e958341072bd484424a">moonray::pbr::Light</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00383">383</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  385</span>{</div>
+<div class="line"><span class="lineno">  386</span>    MNRY_ASSERT(mOn);</div>
+<div class="line"><span class="lineno">  387</span> </div>
+<div class="line"><span class="lineno">  388</span>    <span class="comment">// We don&#39;t cast light on points behind the light. Also we can&#39;t always</span></div>
+<div class="line"><span class="lineno">  389</span>    <span class="comment">// rely on canIlluminate() to test for that case, as it&#39;s an optional</span></div>
+<div class="line"><span class="lineno">  390</span>    <span class="comment">// culling function. canIlluminate() can also be passed a non-zero radius,</span></div>
+<div class="line"><span class="lineno">  391</span>    <span class="comment">// defining a p-region partially in front and partially behind the light.</span></div>
+<div class="line"><span class="lineno">  392</span>    <span class="comment">// So we have to test for it per sample, here too.</span></div>
+<div class="line"><span class="lineno">  393</span>    <span class="keywordtype">float</span> distance = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_rect_light.html#a7dbe4bd1caba0ea71e608a5761d6f39f">planeDistance</a>(p, time);</div>
+<div class="line"><span class="lineno">  394</span>    <span class="keywordflow">if</span> ((mSidedness != LightSidednessType::LIGHT_SIDEDNESS_2_SIDED) &amp;&amp; (distance &lt; sEpsilon)) {</div>
+<div class="line"><span class="lineno">  395</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  396</span>    }</div>
+<div class="line"><span class="lineno">  397</span> </div>
+<div class="line"><span class="lineno">  398</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> localHit;</div>
+<div class="line"><span class="lineno">  399</span> </div>
+<div class="line"><span class="lineno">  400</span>    <span class="comment">// There are 3 possible sampling modes:</span></div>
+<div class="line"><span class="lineno">  401</span>    <span class="comment">// 1) If there is an image distribution, sample that.</span></div>
+<div class="line"><span class="lineno">  402</span>    <span class="comment">// 2) If there is no image distribution, and the spread parameter is less than 1 and</span></div>
+<div class="line"><span class="lineno">  403</span>    <span class="comment">//    we are in a good region to sample the spread, then sample that region.</span></div>
+<div class="line"><span class="lineno">  404</span>    <span class="comment">// 3) Otherwise, sample the shape of the light.</span></div>
+<div class="line"><span class="lineno">  405</span>    <span class="keywordflow">if</span> (mDistribution) {</div>
+<div class="line"><span class="lineno">  406</span>        <span class="comment">// sample the image distribution if any</span></div>
+<div class="line"><span class="lineno">  407</span>        mDistribution-&gt;sample(r[0], r[1], 0, &amp;isect.uv, <span class="keyword">nullptr</span>, mTextureFilter);</div>
+<div class="line"><span class="lineno">  408</span>        localHit = <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>((isect.uv[0] - mUvOffset.x) / mUvScale.x,</div>
+<div class="line"><span class="lineno">  409</span>                         (isect.uv[1] - mUvOffset.y) / mUvScale.y,</div>
+<div class="line"><span class="lineno">  410</span>                          0.0f);</div>
+<div class="line"><span class="lineno">  411</span> </div>
+<div class="line"><span class="lineno">  412</span>        <span class="keywordflow">if</span> (mSpread &lt; 1.f) {</div>
+<div class="line"><span class="lineno">  413</span>            <span class="comment">// Reject samples that are outside of the spread region.</span></div>
+<div class="line"><span class="lineno">  414</span>            <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> localP = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#a1effc2dc2b84e499de4eb26dc72c64cc">xformPointRender2Local</a>(p, time);</div>
+<div class="line"><span class="lineno">  415</span>            <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> localWi = localHit - localP;</div>
+<div class="line"><span class="lineno">  416</span>            <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> absLocalWi = scene_rdl2::math::abs(localWi);</div>
+<div class="line"><span class="lineno">  417</span>            <span class="keywordflow">if</span> (max(absLocalWi.x, absLocalWi.y) &gt; absLocalWi.z * mTanSpreadTheta) {</div>
+<div class="line"><span class="lineno">  418</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  419</span>            }</div>
+<div class="line"><span class="lineno">  420</span>        }</div>
+<div class="line"><span class="lineno">  421</span> </div>
+<div class="line"><span class="lineno">  422</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mSpread &lt; 1.f) {</div>
+<div class="line"><span class="lineno">  423</span>        <span class="comment">// Uniformly sample the rectangular region of overlap between the spread region and the RectLight.</span></div>
+<div class="line"><span class="lineno">  424</span> </div>
+<div class="line"><span class="lineno">  425</span>        <span class="comment">// get p in local space</span></div>
+<div class="line"><span class="lineno">  426</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> localP = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#a1effc2dc2b84e499de4eb26dc72c64cc">xformPointRender2Local</a>(p, time);</div>
+<div class="line"><span class="lineno">  427</span> </div>
+<div class="line"><span class="lineno">  428</span>        <span class="comment">// get length of square region of influence</span></div>
+<div class="line"><span class="lineno">  429</span>        <span class="keywordtype">float</span> spreadLength = distance * mTanSpreadTheta;</div>
+<div class="line"><span class="lineno">  430</span>        <span class="keywordtype">float</span> localSpreadLength = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#a8166cebfaafaadc717811ae6855e1031">xformRender2LocalScale</a>(spreadLength, time);</div>
+<div class="line"><span class="lineno">  431</span> </div>
+<div class="line"><span class="lineno">  432</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> center;</div>
+<div class="line"><span class="lineno">  433</span>        <span class="keywordtype">float</span> width, height;</div>
+<div class="line"><span class="lineno">  434</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_rect_light.html#aac37328ec2da03e7a4f57ee6942dc534">getOverlapBounds</a>(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a>(localP.x, localP.y), localSpreadLength, center, width, height)) {</div>
+<div class="line"><span class="lineno">  435</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  436</span>        }</div>
+<div class="line"><span class="lineno">  437</span> </div>
+<div class="line"><span class="lineno">  438</span>        <span class="comment">// sample rectangular region of influence</span></div>
+<div class="line"><span class="lineno">  439</span>        localHit = <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>((0.5f - r[0]) * width + center.x,</div>
+<div class="line"><span class="lineno">  440</span>                         (0.5f - r[1]) * height + center.y,</div>
+<div class="line"><span class="lineno">  441</span>                          0.0f);</div>
+<div class="line"><span class="lineno">  442</span> </div>
+<div class="line"><span class="lineno">  443</span>        isect.uv = <a class="code hl_function" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a21b25d2e274a883266dbaeeef16a9c97">zero</a>;</div>
+<div class="line"><span class="lineno">  444</span>        <span class="comment">// store pdf</span></div>
+<div class="line"><span class="lineno">  445</span>        isect.pdf = 1.f / (<a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#ac6a71b821c69f366aa5275d83e889675">xformLocal2RenderScale</a>(width, time) * <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#ac6a71b821c69f366aa5275d83e889675">xformLocal2RenderScale</a>(height, time));</div>
+<div class="line"><span class="lineno">  446</span> </div>
+<div class="line"><span class="lineno">  447</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  448</span>        <span class="comment">// Otherwise uniformly distribute samples on rectangle area</span></div>
+<div class="line"><span class="lineno">  449</span>        isect.uv = <a class="code hl_function" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a21b25d2e274a883266dbaeeef16a9c97">zero</a>;</div>
+<div class="line"><span class="lineno">  450</span>        localHit = <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>((0.5f - r[0]) * mWidth,</div>
+<div class="line"><span class="lineno">  451</span>                         (0.5f - r[1]) * mHeight,</div>
+<div class="line"><span class="lineno">  452</span>                          0.0f);</div>
+<div class="line"><span class="lineno">  453</span>    }</div>
+<div class="line"><span class="lineno">  454</span> </div>
+<div class="line"><span class="lineno">  455</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> renderHit = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#ac33999826b6fd91ae42ad1afdf1021af">xformPointLocal2Render</a>(localHit, time);</div>
+<div class="line"><span class="lineno">  456</span> </div>
+<div class="line"><span class="lineno">  457</span>    <span class="comment">// Compute wi and d</span></div>
+<div class="line"><span class="lineno">  458</span>    wi = renderHit - p;</div>
+<div class="line"><span class="lineno">  459</span>    isect.distance = <a class="code hl_function" href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a>(wi);</div>
+<div class="line"><span class="lineno">  460</span>    <span class="keywordflow">if</span> (isect.distance &lt; sEpsilon) {</div>
+<div class="line"><span class="lineno">  461</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  462</span>    }</div>
+<div class="line"><span class="lineno">  463</span>    wi *= rcp(isect.distance);</div>
+<div class="line"><span class="lineno">  464</span>    <span class="keywordflow">if</span> (n  &amp;&amp;  <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(*n, wi) &lt; sEpsilon) {</div>
+<div class="line"><span class="lineno">  465</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  466</span>    }</div>
+<div class="line"><span class="lineno">  467</span> </div>
+<div class="line"><span class="lineno">  468</span>    <span class="comment">// We will only reach this far if p is on the illuminated side of the light&#39;s plane (either side, for 2-sided).</span></div>
+<div class="line"><span class="lineno">  469</span>    <span class="comment">// The light&#39;s mDirection is its local z-axis, which is only guaranteed to concide with the normal for lights</span></div>
+<div class="line"><span class="lineno">  470</span>    <span class="comment">// with regular sidedness. The correct normal is obtained by ensuring the ray is travelling against the normal,</span></div>
+<div class="line"><span class="lineno">  471</span>    <span class="comment">// i.e. the ray&#39;s direction has negative dot product with it.</span></div>
+<div class="line"><span class="lineno">  472</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> normal = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#a684694fca3a60565f1b0f600fabf373e">getDirection</a>(time);</div>
+<div class="line"><span class="lineno">  473</span>    isect.N = (<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(normal, wi) &lt; 0.0f) ? normal : -normal;</div>
+<div class="line"><span class="lineno">  474</span> </div>
+<div class="line"><span class="lineno">  475</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  476</span>}</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a25c3c0d490b4f6a95f0595760efbc351"><div class="ttname"><a href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a></div><div class="ttdeci">__host__ __device__ float length(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00159">GPUMath.h:159</a></div></div>
+<div class="ttc" id="a_n_point_8h_html_a16747d68c1e06270b0ed335d631b66f3"><div class="ttname"><a href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a></div><div class="ttdeci">float dot(const NPoint&lt; D &gt; &amp;a, const NPoint&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00271">NPoint.h:271</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_local_param_light_html_a1effc2dc2b84e499de4eb26dc72c64cc"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_local_param_light.html#a1effc2dc2b84e499de4eb26dc72c64cc">moonray::pbr::LocalParamLight::xformPointRender2Local</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f xformPointRender2Local(const scene_rdl2::math::Vec3f &amp;p, float time) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_8h_source.html#l00330">Light.h:330</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_local_param_light_html_a8166cebfaafaadc717811ae6855e1031"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_local_param_light.html#a8166cebfaafaadc717811ae6855e1031">moonray::pbr::LocalParamLight::xformRender2LocalScale</a></div><div class="ttdeci">finline float xformRender2LocalScale(float s, float time) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_8h_source.html#l00413">Light.h:413</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02test__wait_8cc_03_html_a21b25d2e274a883266dbaeeef16a9c97"><div class="ttname"><a href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a21b25d2e274a883266dbaeeef16a9c97">anonymous_namespace{test_wait.cc}::zero</a></div><div class="ttdeci">constexpr T zero(static_cast&lt; T &gt;(0))</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a762ae633171d7ce8d358179a8983be24" name="a762ae633171d7ce8d358179a8983be24"></a>
@@ -877,7 +1522,85 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_light.html#a1ab1677ac6a0d8c6f95e51e05909a76e">moonray::pbr::Light</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00150">150</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  151</span>{</div>
+<div class="line"><span class="lineno">  152</span>    MNRY_ASSERT(mRdlLight);</div>
+<div class="line"><span class="lineno">  153</span> </div>
+<div class="line"><span class="lineno">  154</span>    mOn = mRdlLight-&gt;get(scene_rdl2::rdl2::Light::sOnKey);</div>
+<div class="line"><span class="lineno">  155</span>    <span class="keywordflow">if</span> (!mOn) {</div>
+<div class="line"><span class="lineno">  156</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  157</span>    }</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#a1c5ce600a5e89e2e51ba5a1ad04b2eaa">updateVisibilityFlags</a>();</div>
+<div class="line"><span class="lineno">  160</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#a9d52d534a78524060e40add3d3bd12d2">updatePresenceShadows</a>();</div>
+<div class="line"><span class="lineno">  161</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#aac610194c4bfd3380ab0eae89852ae0e">updateRayTermination</a>();</div>
+<div class="line"><span class="lineno">  162</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#af9e8c672d6590962d7e33a131b83449f">updateTextureFilter</a>();</div>
+<div class="line"><span class="lineno">  163</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#ace38feaaeffeeb141539a812708d8a22">updateMaxShadowDistance</a>();</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>    mWidth  = mRdlLight-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#a83e8ce14a89251f930fca7fa899297a2">sWidthKey</a>);</div>
+<div class="line"><span class="lineno">  166</span>    mHeight = mRdlLight-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#a69ce09037805c84ea36a13a2075fe92d">sHeightKey</a>);</div>
+<div class="line"><span class="lineno">  167</span>    mHalfWidth  = mWidth  * 0.5f;</div>
+<div class="line"><span class="lineno">  168</span>    mHalfHeight = mHeight * 0.5f;</div>
+<div class="line"><span class="lineno">  169</span> </div>
+<div class="line"><span class="lineno">  170</span>    <span class="comment">// mSpread: 1 = 90 degree cone angle, 0 = 0 degree cone angle (cross section is square).</span></div>
+<div class="line"><span class="lineno">  171</span>    mSpread = math::clamp(mRdlLight-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#a626c3586d15cc57b657647247bc31999">sSpreadKey</a>), math::sEpsilon, 1.f);</div>
+<div class="line"><span class="lineno">  172</span>    mTanSpreadTheta = math::tan(mSpread * math::sHalfPi);</div>
+<div class="line"><span class="lineno">  173</span> </div>
+<div class="line"><span class="lineno">  174</span>    UPDATE_ATTRS_CLEAR_RADIUS</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>    <span class="keyword">const</span> Mat4d l2w0 = mRdlLight-&gt;get(scene_rdl2::rdl2::Node::sNodeXformKey, <span class="comment">/* rayTime = */</span> 0.f);</div>
+<div class="line"><span class="lineno">  177</span>    <span class="keyword">const</span> Mat4d l2w1 = mRdlLight-&gt;get(scene_rdl2::rdl2::Node::sNodeXformKey, <span class="comment">/* rayTime = */</span> 1.f);</div>
+<div class="line"><span class="lineno">  178</span> </div>
+<div class="line"><span class="lineno">  179</span>    <span class="keyword">const</span> Mat4f local2Render0 = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_light.html#ac6b8ef1054fc5cbece049ce968d2db97">sRotateX180</a> * toFloat(l2w0 * world2render);</div>
+<div class="line"><span class="lineno">  180</span>    <span class="keyword">const</span> Mat4f local2Render1 = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_light.html#ac6b8ef1054fc5cbece049ce968d2db97">sRotateX180</a> * toFloat(l2w1 * world2render);</div>
+<div class="line"><span class="lineno">  181</span> </div>
+<div class="line"><span class="lineno">  182</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_local_param_light.html#a7069eafff236442dd7884016c92e0a4d">updateParamAndTransforms</a>(local2Render0, local2Render1, mHalfWidth, mHalfHeight)) {</div>
+<div class="line"><span class="lineno">  183</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  184</span>    }</div>
+<div class="line"><span class="lineno">  185</span> </div>
+<div class="line"><span class="lineno">  186</span>    <span class="comment">// Compute render space corners of light.</span></div>
+<div class="line"><span class="lineno">  187</span>    <span class="comment">// Cached at rayTime = 0</span></div>
+<div class="line"><span class="lineno">  188</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_rect_light.html#a90527b59251a8c6b290c31735968676a">computeCorners</a>(mRenderCorners, 0.f);</div>
+<div class="line"><span class="lineno">  189</span> </div>
+<div class="line"><span class="lineno">  190</span>    <span class="comment">// Compute render space quantities.</span></div>
+<div class="line"><span class="lineno">  191</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> xAxis = mRenderCorners[2] - mRenderCorners[0];</div>
+<div class="line"><span class="lineno">  192</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> yAxis = mRenderCorners[1] - mRenderCorners[0];</div>
+<div class="line"><span class="lineno">  193</span>    mArea = xAxis.length() * yAxis.length();</div>
+<div class="line"><span class="lineno">  194</span>    mInvArea = 1.0f / mArea;</div>
+<div class="line"><span class="lineno">  195</span> </div>
+<div class="line"><span class="lineno">  196</span>    <span class="comment">// Compute radiance.</span></div>
+<div class="line"><span class="lineno">  197</span>    mRadiance = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aefa0e1934a5bb19d50bad5b8a05b4c48">computeLightRadiance</a>(mRdlLight, scene_rdl2::rdl2::Light::sColorKey,</div>
+<div class="line"><span class="lineno">  198</span>        scene_rdl2::rdl2::Light::sIntensityKey, scene_rdl2::rdl2::Light::sExposureKey, <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#ab63c938588e7b22be2f53b34c5ade490">sNormalizedKey</a>,</div>
+<div class="line"><span class="lineno">  199</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#a933e47f4f943c60006a951a1ad3565e1">sApplySceneScaleKey</a>, mInvArea);</div>
+<div class="line"><span class="lineno">  200</span>    <span class="keywordflow">if</span> (isBlack(mRadiance)) {</div>
+<div class="line"><span class="lineno">  201</span>        mOn = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  202</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  203</span>    }</div>
+<div class="line"><span class="lineno">  204</span> </div>
+<div class="line"><span class="lineno">  205</span>    <span class="comment">// Compute render space plane of light.</span></div>
+<div class="line"><span class="lineno">  206</span>    <span class="comment">// Cached at rayTime = 0.f</span></div>
+<div class="line"><span class="lineno">  207</span>    mRenderPlane = Plane(<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#aaccb60c65f279b29c1a070f54daeb036">getPosition</a>(0.f), <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#a684694fca3a60565f1b0f600fabf373e">getDirection</a>(0.f));</div>
+<div class="line"><span class="lineno">  208</span> </div>
+<div class="line"><span class="lineno">  209</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#a6e5ee7ad873362c57dfef728bc0800b1">updateImageMap</a>(<a class="code hl_enumvalue" href="classmoonray_1_1pbr_1_1_distribution2_d.html#a2b6ade1cf7d302e1b7a0ed6538d50492af41a8426d1022ec8d4003237678e170d">Distribution2D::PLANAR</a>)) {</div>
+<div class="line"><span class="lineno">  210</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  211</span>    }</div>
+<div class="line"><span class="lineno">  212</span> </div>
+<div class="line"><span class="lineno">  213</span>    <span class="comment">// Sidedness</span></div>
+<div class="line"><span class="lineno">  214</span>    mSidedness = <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="_light_8hh.html#a3725d68f944cf6f1234c2f2c345b740c">LightSidednessType</a><span class="keyword">&gt;</span>(mRdlLight-&gt;get&lt;scene_rdl2::rdl2::Int&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#a87d8c2acf767f340be3ba0bf2d776b55">sSidednessKey</a>));</div>
+<div class="line"><span class="lineno">  215</span> </div>
+<div class="line"><span class="lineno">  216</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  217</span>}</div>
+<div class="ttc" id="a_light_8hh_html_a3725d68f944cf6f1234c2f2c345b740c"><div class="ttname"><a href="_light_8hh.html#a3725d68f944cf6f1234c2f2c345b740c">LightSidednessType</a></div><div class="ttdeci">LightSidednessType</div><div class="ttdef"><b>Definition:</b> <a href="_light_8hh_source.html#l00029">Light.hh:30</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_distribution2_d_html_a2b6ade1cf7d302e1b7a0ed6538d50492af41a8426d1022ec8d4003237678e170d"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_distribution2_d.html#a2b6ade1cf7d302e1b7a0ed6538d50492af41a8426d1022ec8d4003237678e170d">moonray::pbr::Distribution2D::PLANAR</a></div><div class="ttdeci">@ PLANAR</div><div class="ttdoc">Weighted by the image luminance, no-op.</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_8h_source.html#l00205">Distribution.h:205</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_a1c5ce600a5e89e2e51ba5a1ad04b2eaa"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#a1c5ce600a5e89e2e51ba5a1ad04b2eaa">moonray::pbr::Light::updateVisibilityFlags</a></div><div class="ttdeci">void updateVisibilityFlags()</div><div class="ttdef"><b>Definition:</b> <a href="_light_8cc_source.html#l00097">Light.cc:97</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_a6e5ee7ad873362c57dfef728bc0800b1"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#a6e5ee7ad873362c57dfef728bc0800b1">moonray::pbr::Light::updateImageMap</a></div><div class="ttdeci">bool updateImageMap(Distribution2D::Mapping distributionMapping)</div><div class="ttdef"><b>Definition:</b> <a href="_light_8cc_source.html#l00116">Light.cc:116</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_a9d52d534a78524060e40add3d3bd12d2"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#a9d52d534a78524060e40add3d3bd12d2">moonray::pbr::Light::updatePresenceShadows</a></div><div class="ttdeci">void updatePresenceShadows()</div><div class="ttdef"><b>Definition:</b> <a href="_light_8cc_source.html#l00188">Light.cc:188</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_aac610194c4bfd3380ab0eae89852ae0e"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#aac610194c4bfd3380ab0eae89852ae0e">moonray::pbr::Light::updateRayTermination</a></div><div class="ttdeci">void updateRayTermination()</div><div class="ttdef"><b>Definition:</b> <a href="_light_8cc_source.html#l00203">Light.cc:203</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_ac6b8ef1054fc5cbece049ce968d2db97"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#ac6b8ef1054fc5cbece049ce968d2db97">moonray::pbr::Light::sRotateX180</a></div><div class="ttdeci">static const scene_rdl2::math::Mat4f sRotateX180</div><div class="ttdef"><b>Definition:</b> <a href="_light_8h_source.html#l00272">Light.h:272</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_ace38feaaeffeeb141539a812708d8a22"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#ace38feaaeffeeb141539a812708d8a22">moonray::pbr::Light::updateMaxShadowDistance</a></div><div class="ttdeci">void updateMaxShadowDistance()</div><div class="ttdef"><b>Definition:</b> <a href="_light_8cc_source.html#l00215">Light.cc:215</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_af9e8c672d6590962d7e33a131b83449f"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#af9e8c672d6590962d7e33a131b83449f">moonray::pbr::Light::updateTextureFilter</a></div><div class="ttdeci">void updateTextureFilter()</div><div class="ttdef"><b>Definition:</b> <a href="_light_8cc_source.html#l00209">Light.cc:209</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_local_param_light_html_a7069eafff236442dd7884016c92e0a4d"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_local_param_light.html#a7069eafff236442dd7884016c92e0a4d">moonray::pbr::LocalParamLight::updateParamAndTransforms</a></div><div class="ttdeci">bool updateParamAndTransforms(const scene_rdl2::math::Mat4f &amp;local2Render0, const scene_rdl2::math::Mat4f &amp;local2Render1, float halfWidth, float halfHeight)</div><div class="ttdef"><b>Definition:</b> <a href="_light_8cc_source.html#l00273">Light.cc:273</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_aefa0e1934a5bb19d50bad5b8a05b4c48"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#aefa0e1934a5bb19d50bad5b8a05b4c48">moonray::pbr::computeLightRadiance</a></div><div class="ttdeci">finline scene_rdl2::math::Color computeLightRadiance(const scene_rdl2::rdl2::Light *light, const scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Rgb &gt; &amp;colorKey, const scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; &amp;intensityKey, const scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; &amp;exposureKey, const scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Bool &gt; &amp;normalizedKey, const scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Bool &gt; &amp;applySceneScaleKey, float invSurfaceArea)</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00252">LightUtil.h:252</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a47f46bc0a850818f034b9fac5682ed78" name="a47f46bc0a850818f034b9fac5682ed78"></a>
@@ -917,7 +1640,58 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1pbr_1_1_local_param_light.html#ae3c3bd3534564bbb55a938f224bbcdf1">moonray::pbr::LocalParamLight</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html#l00098">98</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   99</span>{</div>
+<div class="line"><span class="lineno">  100</span>    <span class="comment">// update transforms at time index (ti)</span></div>
+<div class="line"><span class="lineno">  101</span>    <span class="comment">// ti == 0 is at normalized rayTime = 0.f</span></div>
+<div class="line"><span class="lineno">  102</span>    <span class="comment">// ti == 1 is at normalized rayTime = 1.f;</span></div>
+<div class="line"><span class="lineno">  103</span>    MNRY_ASSERT(<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#a934fd1be72361b2fbdeab7055fa5a426">getRdlLight</a>());</div>
+<div class="line"><span class="lineno">  104</span> </div>
+<div class="line"><span class="lineno">  105</span>    Mat4f local2RenderCopy = local2Render;</div>
+<div class="line"><span class="lineno">  106</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacemoonray_1_1pbr.html#ae3c9db54f56a6e1f6e9fea9914790c9d">extractUniformScale</a>(local2Render, &amp;mLocal2RenderScale[ti])) {</div>
+<div class="line"><span class="lineno">  107</span>        mRender2LocalScale[ti] = 1.0f / math::max(sEpsilon, mLocal2RenderScale[ti]);</div>
+<div class="line"><span class="lineno">  108</span>        mWidth  = mRdlLight-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#a83e8ce14a89251f930fca7fa899297a2">sWidthKey</a>);</div>
+<div class="line"><span class="lineno">  109</span>        mHeight = mRdlLight-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#a69ce09037805c84ea36a13a2075fe92d">sHeightKey</a>);</div>
+<div class="line"><span class="lineno">  110</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  111</span>        mRender2LocalScale[ti] = 1.0f;</div>
+<div class="line"><span class="lineno">  112</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> nonUniformScale = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aae11a086ef57ae8665dae490a8e1d62c">extractNonUniformScale</a>(local2Render);</div>
+<div class="line"><span class="lineno">  113</span>        mWidth  = mRdlLight-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#a83e8ce14a89251f930fca7fa899297a2">sWidthKey</a>) * nonUniformScale.x;</div>
+<div class="line"><span class="lineno">  114</span>        mHeight = mRdlLight-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rect_light.html#a69ce09037805c84ea36a13a2075fe92d">sHeightKey</a>) * nonUniformScale.y;</div>
+<div class="line"><span class="lineno">  115</span>        local2RenderCopy = Mat4f(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a9e759f29bca3ea7593c72a2acfb487a4">Vec4f</a>(<a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(asVec3(local2Render.row0()))),</div>
+<div class="line"><span class="lineno">  116</span>                                 <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a9e759f29bca3ea7593c72a2acfb487a4">Vec4f</a>(<a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(asVec3(local2Render.row1()))),</div>
+<div class="line"><span class="lineno">  117</span>                                 <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a9e759f29bca3ea7593c72a2acfb487a4">Vec4f</a>(<a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(asVec3(local2Render.row2()))),</div>
+<div class="line"><span class="lineno">  118</span>                                 local2Render.row3());</div>
+<div class="line"><span class="lineno">  119</span>    }</div>
+<div class="line"><span class="lineno">  120</span>    mHalfWidth  = mWidth  * 0.5f;</div>
+<div class="line"><span class="lineno">  121</span>    mHalfHeight = mHeight * 0.5f;</div>
+<div class="line"><span class="lineno">  122</span> </div>
+<div class="line"><span class="lineno">  123</span>    mLocal2Render[ti] = Xform3f(Mat3f(asVec3(local2RenderCopy.row0()),</div>
+<div class="line"><span class="lineno">  124</span>                                      asVec3(local2RenderCopy.row1()),</div>
+<div class="line"><span class="lineno">  125</span>                                      asVec3(local2RenderCopy.row2())),</div>
+<div class="line"><span class="lineno">  126</span>                                      asVec3(local2RenderCopy.row3()));</div>
+<div class="line"><span class="lineno">  127</span> </div>
+<div class="line"><span class="lineno">  128</span>    <span class="comment">// WARNING: this can be inaccurate, may lead to float precision jitter</span></div>
+<div class="line"><span class="lineno">  129</span>    mRender2Local[ti] = mLocal2Render[ti].inverse();</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>    Mat4f local2RenderRot = local2RenderCopy * Mat4f::scale(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a9e759f29bca3ea7593c72a2acfb487a4">Vec4f</a>(mRender2LocalScale[ti]));</div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>    <span class="comment">// WARNING: Includes translation, ok because only used with transformVector</span></div>
+<div class="line"><span class="lineno">  134</span>    mLocal2RenderRot[ti] = Xform3f(Mat3f(asVec3(local2RenderRot.row0()),</div>
+<div class="line"><span class="lineno">  135</span>                                         asVec3(local2RenderRot.row1()),</div>
+<div class="line"><span class="lineno">  136</span>                                         asVec3(local2RenderRot.row2())),</div>
+<div class="line"><span class="lineno">  137</span>                                         asVec3(local2RenderRot.row3()));</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>    <span class="comment">// WARNING: Includes translation, ok because only used with transformVector</span></div>
+<div class="line"><span class="lineno">  140</span>    <span class="comment">// and also getXformRender2Local which uses the translation.</span></div>
+<div class="line"><span class="lineno">  141</span>    mRender2LocalRot[ti] = mRender2Local[ti] * Xform3f::scale(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(mLocal2RenderScale[ti]));</div>
+<div class="line"><span class="lineno">  142</span> </div>
+<div class="line"><span class="lineno">  143</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  144</span>}</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a26b3f6b7b842544058f3766b0da79257"><div class="ttname"><a href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a></div><div class="ttdeci">__host__ __device__ float3 normalize(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00165">GPUMath.h:165</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_a934fd1be72361b2fbdeab7055fa5a426"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#a934fd1be72361b2fbdeab7055fa5a426">moonray::pbr::Light::getRdlLight</a></div><div class="ttdeci">const scene_rdl2::rdl2::Light * getRdlLight() const</div><div class="ttdoc">Return the rdlLight.</div><div class="ttdef"><b>Definition:</b> <a href="_light_8h_source.html#l00074">Light.h:74</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a9e759f29bca3ea7593c72a2acfb487a4"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a9e759f29bca3ea7593c72a2acfb487a4">moonray::geom::Vec4f</a></div><div class="ttdeci">scene_rdl2::math::Vec4f Vec4f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00041">Types.h:41</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_aae11a086ef57ae8665dae490a8e1d62c"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#aae11a086ef57ae8665dae490a8e1d62c">moonray::pbr::extractNonUniformScale</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f extractNonUniformScale(const scene_rdl2::math::Mat4f &amp;mat)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2core_2util_8h_source.html#l00333">Util.h:333</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_ae3c9db54f56a6e1f6e9fea9914790c9d"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ae3c9db54f56a6e1f6e9fea9914790c9d">moonray::pbr::extractUniformScale</a></div><div class="ttdeci">finline bool extractUniformScale(const scene_rdl2::math::Mat4f &amp;mat, float *scale)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2core_2util_8h_source.html#l00318">Util.h:318</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
@@ -945,14 +1719,211 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a886e7b9dbd31da58c89a7addd9842415" name="a886e7b9dbd31da58c89a7addd9842415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a886e7b9dbd31da58c89a7addd9842415">&#9670;&#160;</a></span>RECT_LIGHT_MEMBERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moonray::pbr::RectLight::RECT_LIGHT_MEMBERS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rect_light_8h_source.html#l00096">96</a> of file <a class="el" href="_rect_light_8h_source.html">RectLight.h</a>.</p>
+
+</div>
+</div>
+<a id="a933e47f4f943c60006a951a1ad3565e1" name="a933e47f4f943c60006a951a1ad3565e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a933e47f4f943c60006a951a1ad3565e1">&#9670;&#160;</a></span>sApplySceneScaleKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Bool &gt; moonray::pbr::RectLight::sApplySceneScaleKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rect_light_8h_source.html#l00104">104</a> of file <a class="el" href="_rect_light_8h_source.html">RectLight.h</a>.</p>
+
+</div>
+</div>
+<a id="a456b2ad309f24d6cf005ebb10d848c33" name="a456b2ad309f24d6cf005ebb10d848c33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a456b2ad309f24d6cf005ebb10d848c33">&#9670;&#160;</a></span>sAttributeKeyInitialized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::pbr::RectLight::sAttributeKeyInitialized</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rect_light_8h_source.html#l00102">102</a> of file <a class="el" href="_rect_light_8h_source.html">RectLight.h</a>.</p>
+
+</div>
+</div>
+<a id="a69ce09037805c84ea36a13a2075fe92d" name="a69ce09037805c84ea36a13a2075fe92d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69ce09037805c84ea36a13a2075fe92d">&#9670;&#160;</a></span>sHeightKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; moonray::pbr::RectLight::sHeightKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rect_light_8h_source.html#l00106">106</a> of file <a class="el" href="_rect_light_8h_source.html">RectLight.h</a>.</p>
+
+</div>
+</div>
+<a id="ab63c938588e7b22be2f53b34c5ade490" name="ab63c938588e7b22be2f53b34c5ade490"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab63c938588e7b22be2f53b34c5ade490">&#9670;&#160;</a></span>sNormalizedKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Bool &gt; moonray::pbr::RectLight::sNormalizedKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rect_light_8h_source.html#l00103">103</a> of file <a class="el" href="_rect_light_8h_source.html">RectLight.h</a>.</p>
+
+</div>
+</div>
+<a id="a87d8c2acf767f340be3ba0bf2d776b55" name="a87d8c2acf767f340be3ba0bf2d776b55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d8c2acf767f340be3ba0bf2d776b55">&#9670;&#160;</a></span>sSidednessKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Int &gt; moonray::pbr::RectLight::sSidednessKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rect_light_8h_source.html#l00108">108</a> of file <a class="el" href="_rect_light_8h_source.html">RectLight.h</a>.</p>
+
+</div>
+</div>
+<a id="a626c3586d15cc57b657647247bc31999" name="a626c3586d15cc57b657647247bc31999"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a626c3586d15cc57b657647247bc31999">&#9670;&#160;</a></span>sSpreadKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; moonray::pbr::RectLight::sSpreadKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rect_light_8h_source.html#l00107">107</a> of file <a class="el" href="_rect_light_8h_source.html">RectLight.h</a>.</p>
+
+</div>
+</div>
+<a id="a83e8ce14a89251f930fca7fa899297a2" name="a83e8ce14a89251f930fca7fa899297a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83e8ce14a89251f930fca7fa899297a2">&#9670;&#160;</a></span>sWidthKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; moonray::pbr::RectLight::sWidthKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rect_light_8h_source.html#l00105">105</a> of file <a class="el" href="_rect_light_8h_source.html">RectLight.h</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/light/<a class="el" href="_rect_light_8h_source.html">RectLight.h</a></li>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/light/<a class="el" href="lib_2rendering_2pbr_2light_2_rect_light_8cc_source.html">RectLight.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_rect_light.html">RectLight</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

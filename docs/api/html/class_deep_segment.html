@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,6 +43,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_deep_segment.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -184,7 +204,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01160">1160</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1160</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a969a0d2e446bf10df414cae6c5677475" name="a969a0d2e446bf10df414cae6c5677475"></a>
@@ -234,7 +255,16 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01161">1161</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1161</span>                                                                                                :</div>
+<div class="line"><span class="lineno"> 1162</span>    <a class="code hl_variable" href="class_deep_segment.html#adc265a14511b3bd597e431f0c4ebd6e7">index</a>(_index),</div>
+<div class="line"><span class="lineno"> 1163</span>    <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>(_metadata)</div>
+<div class="line"><span class="lineno"> 1164</span>{</div>
+<div class="line"><span class="lineno"> 1165</span>    <a class="code hl_function" href="class_deep_segment.html#a03ed90e830b8e3a870eed8827d1be3c1">setDepths</a>(_Zf, _Zb);</div>
+<div class="line"><span class="lineno"> 1166</span>}</div>
+<div class="ttc" id="aclass_deep_segment_html_a03ed90e830b8e3a870eed8827d1be3c1"><div class="ttname"><a href="class_deep_segment.html#a03ed90e830b8e3a870eed8827d1be3c1">DeepSegment::setDepths</a></div><div class="ttdeci">void setDepths(float _Zf, float _Zb)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01149">DcxDeepPixel.h:1149</a></div></div>
+<div class="ttc" id="aclass_deep_segment_html_a6eee4b9680ce58ee5dbbb57dbf74d4d2"><div class="ttname"><a href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">DeepSegment::metadata</a></div><div class="ttdeci">DeepMetadata metadata</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00252">DcxDeepPixel.h:252</a></div></div>
+<div class="ttc" id="aclass_deep_segment_html_adc265a14511b3bd597e431f0c4ebd6e7"><div class="ttname"><a href="class_deep_segment.html#adc265a14511b3bd597e431f0c4ebd6e7">DeepSegment::index</a></div><div class="ttdeci">int index</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00251">DcxDeepPixel.h:251</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -273,7 +303,17 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01222">1222</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1222</span>                                                                             {</div>
+<div class="line"><span class="lineno"> 1223</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> w = <a class="code hl_function" href="class_deep_segment.html#a78aaff5e5229c7b410d8cea566607bff">getCoverage</a>();</div>
+<div class="line"><span class="lineno"> 1224</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, channels)</div>
+<div class="line"><span class="lineno"> 1225</span>        color[z] *= w;</div>
+<div class="line"><span class="lineno"> 1226</span>    <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">spmask</a> = <a class="code hl_variable" href="class_sp_mask8.html#a924e8546055332433e1f9b445629c34f">SpMask8::fullCoverage</a>;</div>
+<div class="line"><span class="lineno"> 1227</span>}</div>
+<div class="ttc" id="a_dcx_channel_set_8h_html_a1a8a3195f4006c505fa4bec8a1c60ae2"><div class="ttname"><a href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a></div><div class="ttdeci">#define foreach_channel(CHAN, CHANNELS)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00312">DcxChannelSet.h:312</a></div></div>
+<div class="ttc" id="aclass_deep_segment_html_a78aaff5e5229c7b410d8cea566607bff"><div class="ttname"><a href="class_deep_segment.html#a78aaff5e5229c7b410d8cea566607bff">DeepSegment::getCoverage</a></div><div class="ttdeci">float getCoverage() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01211">DcxDeepPixel.h:1211</a></div></div>
+<div class="ttc" id="aclass_sp_mask8_html_a924e8546055332433e1f9b445629c34f"><div class="ttname"><a href="class_sp_mask8.html#a924e8546055332433e1f9b445629c34f">SpMask8::fullCoverage</a></div><div class="ttdeci">static const SpMask8 fullCoverage</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_sp_mask_8h_source.html#l00122">DcxSpMask.h:122</a></div></div>
+<div class="ttc" id="astruct_deep_metadata_html_a631d684087012d692f09e94ba0d1b5da"><div class="ttname"><a href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">DeepMetadata::spmask</a></div><div class="ttdeci">SpMask8 spmask</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00108">DcxDeepPixel.h:108</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a23ed90798656036684c117f3912d039a" name="a23ed90798656036684c117f3912d039a"></a>
@@ -300,7 +340,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01196">1196</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1196</span>{ <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_function" href="struct_deep_metadata.html#ad314d17eff1a298cba2119b3415cbaa1">clearSpCoverageCount</a>(); }</div>
+<div class="ttc" id="astruct_deep_metadata_html_ad314d17eff1a298cba2119b3415cbaa1"><div class="ttname"><a href="struct_deep_metadata.html#ad314d17eff1a298cba2119b3415cbaa1">DeepMetadata::clearSpCoverageCount</a></div><div class="ttdeci">void clearSpCoverageCount()</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01146">DcxDeepPixel.h:1146</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a67e2bf3d8c7dbfd23efc973c40699d26" name="a67e2bf3d8c7dbfd23efc973c40699d26"></a>
@@ -327,7 +369,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01181">1181</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1181</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a71748026ce682d1e52099d6de5545494">flags</a>; }</div>
+<div class="ttc" id="astruct_deep_metadata_html_a71748026ce682d1e52099d6de5545494"><div class="ttname"><a href="struct_deep_metadata.html#a71748026ce682d1e52099d6de5545494">DeepMetadata::flags</a></div><div class="ttdeci">DeepFlags flags</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00109">DcxDeepPixel.h:109</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acc01d5f91b4d16566a9467a5b759cd1c" name="acc01d5f91b4d16566a9467a5b759cd1c"></a>
@@ -354,7 +398,11 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01201">1201</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1201</span>                                             {</div>
+<div class="line"><span class="lineno"> 1202</span>    <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">spmask</a>==<a class="code hl_variable" href="class_sp_mask8.html#a924e8546055332433e1f9b445629c34f">SpMask8::fullCoverage</a> || <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">spmask</a>==<a class="code hl_variable" href="class_sp_mask8.html#ab422b575c9ddd9c24d5aac45a4be00b3">SpMask8::zeroCoverage</a>);</div>
+<div class="line"><span class="lineno"> 1203</span>}</div>
+<div class="ttc" id="aclass_sp_mask8_html_ab422b575c9ddd9c24d5aac45a4be00b3"><div class="ttname"><a href="class_sp_mask8.html#ab422b575c9ddd9c24d5aac45a4be00b3">SpMask8::zeroCoverage</a></div><div class="ttdeci">static const SpMask8 zeroCoverage</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_sp_mask_8h_source.html#l00121">DcxSpMask.h:121</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a78aaff5e5229c7b410d8cea566607bff" name="a78aaff5e5229c7b410d8cea566607bff"></a>
@@ -381,7 +429,21 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01211">1211</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1211</span>                                             {</div>
+<div class="line"><span class="lineno"> 1212</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="class_deep_segment.html#acc01d5f91b4d16566a9467a5b759cd1c">fullCoverage</a>())</div>
+<div class="line"><span class="lineno"> 1213</span>        <span class="keywordflow">return</span> 1.0f;</div>
+<div class="line"><span class="lineno"> 1214</span>    <span class="comment">// Count the on pixels:</span></div>
+<div class="line"><span class="lineno"> 1215</span>    uint32_t on_bits = 0;</div>
+<div class="line"><span class="lineno"> 1216</span>    <a class="code hl_class" href="class_sp_mask8.html">SpMask8</a> spmask = 1ull;</div>
+<div class="line"><span class="lineno"> 1217</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> sp_bin=0; sp_bin &lt; <a class="code hl_variable" href="class_sp_mask8.html#aef59cab3820848bd65afc105eef93f6c">SpMask8::numBits</a>; ++sp_bin, ++spmask)</div>
+<div class="line"><span class="lineno"> 1218</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">spmask</a> &amp; spmask)</div>
+<div class="line"><span class="lineno"> 1219</span>            ++on_bits;</div>
+<div class="line"><span class="lineno"> 1220</span>    <span class="keywordflow">return</span> (on_bits == 0)?0.0f:float(on_bits)/float(<a class="code hl_variable" href="class_sp_mask8.html#aef59cab3820848bd65afc105eef93f6c">SpMask8::numBits</a>);</div>
+<div class="line"><span class="lineno"> 1221</span>}</div>
+<div class="ttc" id="aclass_deep_segment_html_acc01d5f91b4d16566a9467a5b759cd1c"><div class="ttname"><a href="class_deep_segment.html#acc01d5f91b4d16566a9467a5b759cd1c">DeepSegment::fullCoverage</a></div><div class="ttdeci">bool fullCoverage() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01201">DcxDeepPixel.h:1201</a></div></div>
+<div class="ttc" id="aclass_sp_mask8_html"><div class="ttname"><a href="class_sp_mask8.html">SpMask8</a></div><div class="ttdoc">rst:cpp:begin::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_sp_mask_8h_source.html#l00112">DcxSpMask.h:113</a></div></div>
+<div class="ttc" id="aclass_sp_mask8_html_aef59cab3820848bd65afc105eef93f6c"><div class="ttname"><a href="class_sp_mask8.html#aef59cab3820848bd65afc105eef93f6c">SpMask8::numBits</a></div><div class="ttdeci">static GNU_CONST_DECL int numBits</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_sp_mask_8h_source.html#l00118">DcxSpMask.h:118</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a97073fb6eef97c03e3bd167083e646fc" name="a97073fb6eef97c03e3bd167083e646fc"></a>
@@ -408,7 +470,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01193">1193</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1193</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_function" href="struct_deep_metadata.html#ac27d97fec7df6d8cca11078011079b5b">getSpCoverageCount</a>(); }</div>
+<div class="ttc" id="astruct_deep_metadata_html_ac27d97fec7df6d8cca11078011079b5b"><div class="ttname"><a href="struct_deep_metadata.html#ac27d97fec7df6d8cca11078011079b5b">DeepMetadata::getSpCoverageCount</a></div><div class="ttdeci">uint32_t getSpCoverageCount() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01143">DcxDeepPixel.h:1143</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a72b64918d3382e6881cc16f748d4d30e" name="a72b64918d3382e6881cc16f748d4d30e"></a>
@@ -435,7 +499,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01192">1192</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1192</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_function" href="struct_deep_metadata.html#a0cd20f00760afdf3c078b88270c47b86">getSpCoverageWeight</a>(); }</div>
+<div class="ttc" id="astruct_deep_metadata_html_a0cd20f00760afdf3c078b88270c47b86"><div class="ttname"><a href="struct_deep_metadata.html#a0cd20f00760afdf3c078b88270c47b86">DeepMetadata::getSpCoverageWeight</a></div><div class="ttdeci">float getSpCoverageWeight() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01142">DcxDeepPixel.h:1142</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aaf66a712e8df4bfee6184c65e0c769d8" name="aaf66a712e8df4bfee6184c65e0c769d8"></a>
@@ -462,7 +528,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01191">1191</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1191</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_function" href="struct_deep_metadata.html#a227c0c6788ccc49a847d9b895f1d900f">hasFullSpCoverage</a>(); }</div>
+<div class="ttc" id="astruct_deep_metadata_html_a227c0c6788ccc49a847d9b895f1d900f"><div class="ttname"><a href="struct_deep_metadata.html#a227c0c6788ccc49a847d9b895f1d900f">DeepMetadata::hasFullSpCoverage</a></div><div class="ttdeci">bool hasFullSpCoverage() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01140">DcxDeepPixel.h:1140</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad80cc95454ff6a5531f35dcd1c7469ed" name="ad80cc95454ff6a5531f35dcd1c7469ed"></a>
@@ -489,7 +557,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01190">1190</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1190</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_function" href="struct_deep_metadata.html#aed8b3043b58008cc95b970d84248f430">hasPartialSpCoverage</a>(); }</div>
+<div class="ttc" id="astruct_deep_metadata_html_aed8b3043b58008cc95b970d84248f430"><div class="ttname"><a href="struct_deep_metadata.html#aed8b3043b58008cc95b970d84248f430">DeepMetadata::hasPartialSpCoverage</a></div><div class="ttdeci">bool hasPartialSpCoverage() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01141">DcxDeepPixel.h:1141</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6d3fb5ec1d7d7286c1749c5bd5b13e2a" name="a6d3fb5ec1d7d7286c1749c5bd5b13e2a"></a>
@@ -516,7 +586,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01204">1204</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1204</span>{ <span class="keywordflow">return</span> !<a class="code hl_function" href="class_deep_segment.html#a25c801f927a654aac79f8f1c58407bb2">zeroCoverage</a>(); }</div>
+<div class="ttc" id="aclass_deep_segment_html_a25c801f927a654aac79f8f1c58407bb2"><div class="ttname"><a href="class_deep_segment.html#a25c801f927a654aac79f8f1c58407bb2">DeepSegment::zeroCoverage</a></div><div class="ttdeci">bool zeroCoverage() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01200">DcxDeepPixel.h:1200</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab1d77951270abab572c61a8c72722d31" name="ab1d77951270abab572c61a8c72722d31"></a>
@@ -566,7 +638,16 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01499">1499</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1500</span>{</div>
+<div class="line"><span class="lineno"> 1501</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="class_deep_segment.html#a94c3d26df02a7762011c150611c29012">isHardSurface</a>())</div>
+<div class="line"><span class="lineno"> 1502</span>        <a class="code hl_function" href="class_deep_segment.html#ac5ed1ee28cb843e9e5ed64b983c7cc74">interpolateLin</a>(in, t, channels, out);</div>
+<div class="line"><span class="lineno"> 1503</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno"> 1504</span>        <a class="code hl_function" href="class_deep_segment.html#a03a37e32afb3351f21424f3767ab1a0a">interpolateLog</a>(in, t, channels, out);</div>
+<div class="line"><span class="lineno"> 1505</span>}</div>
+<div class="ttc" id="aclass_deep_segment_html_a03a37e32afb3351f21424f3767ab1a0a"><div class="ttname"><a href="class_deep_segment.html#a03a37e32afb3351f21424f3767ab1a0a">DeepSegment::interpolateLog</a></div><div class="ttdeci">static void interpolateLog(const Pixelf &amp;in, float t, const ChannelSet &amp;do_channels, Pixelf &amp;out)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01450">DcxDeepPixel.h:1450</a></div></div>
+<div class="ttc" id="aclass_deep_segment_html_a94c3d26df02a7762011c150611c29012"><div class="ttname"><a href="class_deep_segment.html#a94c3d26df02a7762011c150611c29012">DeepSegment::isHardSurface</a></div><div class="ttdeci">bool isHardSurface() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01183">DcxDeepPixel.h:1183</a></div></div>
+<div class="ttc" id="aclass_deep_segment_html_ac5ed1ee28cb843e9e5ed64b983c7cc74"><div class="ttname"><a href="class_deep_segment.html#ac5ed1ee28cb843e9e5ed64b983c7cc74">DeepSegment::interpolateLin</a></div><div class="ttdeci">static void interpolateLin(const Pixelf &amp;in, float t, const ChannelSet &amp;do_channels, Pixelf &amp;out)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01483">DcxDeepPixel.h:1483</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac5ed1ee28cb843e9e5ed64b983c7cc74" name="ac5ed1ee28cb843e9e5ed64b983c7cc74"></a>
@@ -616,7 +697,24 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01483">1483</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1484</span>{</div>
+<div class="line"><span class="lineno"> 1485</span>    <span class="keywordflow">if</span> (t &lt; <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>)</div>
+<div class="line"><span class="lineno"> 1486</span>    {</div>
+<div class="line"><span class="lineno"> 1487</span>        out.<a class="code hl_function" href="class_pixel.html#a385f656e26dca0209b27ca7c1b46155c">erase</a>(channels); <span class="comment">// Too thin, no contribution</span></div>
+<div class="line"><span class="lineno"> 1488</span>    }</div>
+<div class="line"><span class="lineno"> 1489</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (t &lt; 1.0f)</div>
+<div class="line"><span class="lineno"> 1490</span>    {</div>
+<div class="line"><span class="lineno"> 1491</span>        <span class="comment">// Do linear interpolation:</span></div>
+<div class="line"><span class="lineno"> 1492</span>        <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, channels)</div>
+<div class="line"><span class="lineno"> 1493</span>            out[z] = in[z]*t;</div>
+<div class="line"><span class="lineno"> 1494</span>    }</div>
+<div class="line"><span class="lineno"> 1495</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno"> 1496</span>        out.<a class="code hl_function" href="class_pixel.html#a8ef3b32cb42a68379e01d9a3f0232d85">copy</a>(in, channels); <span class="comment">// Entire segment width, max contribution</span></div>
+<div class="line"><span class="lineno"> 1497</span>}</div>
+<div class="ttc" id="a_dcx_a_p_i_8h_html_abe29e2583e2cd8c5c47a4473ed2547d7"><div class="ttname"><a href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a></div><div class="ttdeci">#define EPSILONf</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_a_p_i_8h_source.html#l00064">DcxAPI.h:64</a></div></div>
+<div class="ttc" id="aclass_pixel_html_a385f656e26dca0209b27ca7c1b46155c"><div class="ttname"><a href="class_pixel.html#a385f656e26dca0209b27ca7c1b46155c">Pixel::erase</a></div><div class="ttdeci">void erase()</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_8h_source.html#l00259">DcxPixel.h:259</a></div></div>
+<div class="ttc" id="aclass_pixel_html_a8ef3b32cb42a68379e01d9a3f0232d85"><div class="ttname"><a href="class_pixel.html#a8ef3b32cb42a68379e01d9a3f0232d85">Pixel::copy</a></div><div class="ttdeci">void copy(const Pixel &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_8h_source.html#l00323">DcxPixel.h:323</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a03a37e32afb3351f21424f3767ab1a0a" name="a03a37e32afb3351f21424f3767ab1a0a"></a>
@@ -666,7 +764,38 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01450">1450</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1451</span>{</div>
+<div class="line"><span class="lineno"> 1452</span>    <span class="keywordflow">if</span> (t &lt; <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>)</div>
+<div class="line"><span class="lineno"> 1453</span>    {</div>
+<div class="line"><span class="lineno"> 1454</span>        out.<a class="code hl_function" href="class_pixel.html#a385f656e26dca0209b27ca7c1b46155c">erase</a>(channels); <span class="comment">// Too thin, no contribution</span></div>
+<div class="line"><span class="lineno"> 1455</span>    }</div>
+<div class="line"><span class="lineno"> 1456</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (t &lt; 1.0f)</div>
+<div class="line"><span class="lineno"> 1457</span>    {</div>
+<div class="line"><span class="lineno"> 1458</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> Ain = in[OPENDCX_INTERNAL_NAMESPACE::Chan_A];</div>
+<div class="line"><span class="lineno"> 1459</span>        <span class="keywordflow">if</span> (Ain &lt;= <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>)</div>
+<div class="line"><span class="lineno"> 1460</span>        {</div>
+<div class="line"><span class="lineno"> 1461</span>            <span class="comment">// If tiny alpha do linear-interpolation:</span></div>
+<div class="line"><span class="lineno"> 1462</span>            <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, channels)</div>
+<div class="line"><span class="lineno"> 1463</span>                out[z] = in[z]*t;</div>
+<div class="line"><span class="lineno"> 1464</span>        }</div>
+<div class="line"><span class="lineno"> 1465</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Ain &lt; 1.0f)</div>
+<div class="line"><span class="lineno"> 1466</span>        {</div>
+<div class="line"><span class="lineno"> 1467</span>            <span class="comment">// Do log interpolation by converting alpha to density (absorption):</span></div>
+<div class="line"><span class="lineno"> 1468</span>            <span class="comment">//   expm1 = &#39;exp(x) minus 1&#39; &amp; log1p = &#39;log(1 plus x)&#39;</span></div>
+<div class="line"><span class="lineno"> 1469</span>            <span class="comment">//   i.e. x = exp(t * log(1.0 + -x)) - 1.0</span></div>
+<div class="line"><span class="lineno"> 1470</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> Aout = float(-expm1(t * log1p(-Ain)));</div>
+<div class="line"><span class="lineno"> 1471</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> w = Aout / Ain;</div>
+<div class="line"><span class="lineno"> 1472</span>            <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, channels)</div>
+<div class="line"><span class="lineno"> 1473</span>                out[z] = in[z]*w;</div>
+<div class="line"><span class="lineno"> 1474</span>            out[OPENDCX_INTERNAL_NAMESPACE::Chan_A] = Aout;</div>
+<div class="line"><span class="lineno"> 1475</span>        }</div>
+<div class="line"><span class="lineno"> 1476</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno"> 1477</span>            out.<a class="code hl_function" href="class_pixel.html#a8ef3b32cb42a68379e01d9a3f0232d85">copy</a>(in, channels); <span class="comment">// Saturated alpha = no interpolation</span></div>
+<div class="line"><span class="lineno"> 1478</span>    }</div>
+<div class="line"><span class="lineno"> 1479</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno"> 1480</span>        out.<a class="code hl_function" href="class_pixel.html#a8ef3b32cb42a68379e01d9a3f0232d85">copy</a>(in, channels); <span class="comment">// Entire segment width, max contribution</span></div>
+<div class="line"><span class="lineno"> 1481</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a11b9667a3c867d512aff9516bf5520ad" name="a11b9667a3c867d512aff9516bf5520ad"></a>
@@ -693,7 +822,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01189">1189</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1189</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_function" href="struct_deep_metadata.html#ab7a5d3fd69eb1810773fd1deee71fe39">isAdditive</a>(); }</div>
+<div class="ttc" id="astruct_deep_metadata_html_ab7a5d3fd69eb1810773fd1deee71fe39"><div class="ttname"><a href="struct_deep_metadata.html#ab7a5d3fd69eb1810773fd1deee71fe39">DeepMetadata::isAdditive</a></div><div class="ttdeci">bool isAdditive() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01139">DcxDeepPixel.h:1139</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a94c3d26df02a7762011c150611c29012" name="a94c3d26df02a7762011c150611c29012"></a>
@@ -720,7 +851,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01183">1183</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1183</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_function" href="struct_deep_metadata.html#a62b301a97e141123a7a3e346003753ad">isHardSurface</a>(); }</div>
+<div class="ttc" id="astruct_deep_metadata_html_a62b301a97e141123a7a3e346003753ad"><div class="ttname"><a href="struct_deep_metadata.html#a62b301a97e141123a7a3e346003753ad">DeepMetadata::isHardSurface</a></div><div class="ttdeci">bool isHardSurface() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01136">DcxDeepPixel.h:1136</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a06c495a5823b0c0270df5e7357472f75" name="a06c495a5823b0c0270df5e7357472f75"></a>
@@ -747,7 +880,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01188">1188</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1188</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_function" href="struct_deep_metadata.html#a1a172cd67ee510b6bca1de6ed771a4c1">isMatte</a>(); }</div>
+<div class="ttc" id="astruct_deep_metadata_html_a1a172cd67ee510b6bca1de6ed771a4c1"><div class="ttname"><a href="struct_deep_metadata.html#a1a172cd67ee510b6bca1de6ed771a4c1">DeepMetadata::isMatte</a></div><div class="ttdeci">bool isMatte() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01138">DcxDeepPixel.h:1138</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab80e5ede0b2ad2d4c470e0f1d565557e" name="ab80e5ede0b2ad2d4c470e0f1d565557e"></a>
@@ -774,7 +909,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01186">1186</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1186</span>{ <span class="keywordflow">return</span> !<a class="code hl_function" href="class_deep_segment.html#ad305609762606ec2e58c97a531ae3b48">isThin</a>(); }</div>
+<div class="ttc" id="aclass_deep_segment_html_ad305609762606ec2e58c97a531ae3b48"><div class="ttname"><a href="class_deep_segment.html#ad305609762606ec2e58c97a531ae3b48">DeepSegment::isThin</a></div><div class="ttdeci">bool isThin() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01185">DcxDeepPixel.h:1185</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad305609762606ec2e58c97a531ae3b48" name="ad305609762606ec2e58c97a531ae3b48"></a>
@@ -801,7 +938,10 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01185">1185</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1185</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">Zb</a> &lt;= <a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a>); }</div>
+<div class="ttc" id="aclass_deep_segment_html_a2d54a2b8eef54c3055daed2bfb8d4cad"><div class="ttname"><a href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">DeepSegment::Zb</a></div><div class="ttdeci">float Zb</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00250">DcxDeepPixel.h:250</a></div></div>
+<div class="ttc" id="aclass_deep_segment_html_a68a7fee464e31b18b2be6d788bd1bdfb"><div class="ttname"><a href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">DeepSegment::Zf</a></div><div class="ttdeci">float Zf</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l00250">DcxDeepPixel.h:250</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a858a93f1715155c71207d557301a764b" name="a858a93f1715155c71207d557301a764b"></a>
@@ -828,7 +968,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01184">1184</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1184</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_function" href="struct_deep_metadata.html#a6c1f816ee721adf3a19162bf9baf413c">isVolumetric</a>(); }</div>
+<div class="ttc" id="astruct_deep_metadata_html_a6c1f816ee721adf3a19162bf9baf413c"><div class="ttname"><a href="struct_deep_metadata.html#a6c1f816ee721adf3a19162bf9baf413c">DeepMetadata::isVolumetric</a></div><div class="ttdeci">bool isVolumetric() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01137">DcxDeepPixel.h:1137</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a008c870e924ae8b8487173c3f2ee1277" name="a008c870e924ae8b8487173c3f2ee1277"></a>
@@ -856,7 +998,10 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01208">1208</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1208</span>                                                            {</div>
+<div class="line"><span class="lineno"> 1209</span>    <span class="keywordflow">return</span> (<a class="code hl_function" href="class_deep_segment.html#a25c801f927a654aac79f8f1c58407bb2">zeroCoverage</a>() || ((<a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">spmask</a> &amp; (<a class="code hl_class" href="class_sp_mask8.html">SpMask8</a>(1ull) &lt;&lt; bit_index)) != 0));</div>
+<div class="line"><span class="lineno"> 1210</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a91914ee37c74c094fac10b15d5219fb9" name="a91914ee37c74c094fac10b15d5219fb9"></a>
@@ -884,7 +1029,10 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01205">1205</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1205</span>                                                                         {</div>
+<div class="line"><span class="lineno"> 1206</span>    <span class="keywordflow">return</span> (<a class="code hl_function" href="class_deep_segment.html#a25c801f927a654aac79f8f1c58407bb2">zeroCoverage</a>() || (<a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">spmask</a> &amp; check_bits));</div>
+<div class="line"><span class="lineno"> 1207</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac537ce859bcb73075bb0a47e5a32f84a" name="ac537ce859bcb73075bb0a47e5a32f84a"></a>
@@ -928,7 +1076,49 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01643">1643</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1644</span>{</div>
+<div class="line"><span class="lineno"> 1645</span>    <span class="comment">// Volumetric log merging math from Florian&#39;s deep doc adapted for channel loops</span></div>
+<div class="line"><span class="lineno"> 1646</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> Balpha = B[OPENDCX_INTERNAL_NAMESPACE::Chan_A];</div>
+<div class="line"><span class="lineno"> 1647</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> Aalpha = A[OPENDCX_INTERNAL_NAMESPACE::Chan_A];</div>
+<div class="line"><span class="lineno"> 1648</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> mergedAlpha = (Balpha + Aalpha) - (Balpha * Aalpha);</div>
+<div class="line"><span class="lineno"> 1649</span>    <span class="keywordflow">if</span> (Balpha &gt;= 1.0f &amp;&amp; Aalpha &gt;= 1.0f)</div>
+<div class="line"><span class="lineno"> 1650</span>    {</div>
+<div class="line"><span class="lineno"> 1651</span>        <span class="comment">// Max opacity, average them:</span></div>
+<div class="line"><span class="lineno"> 1652</span>        <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, channels)</div>
+<div class="line"><span class="lineno"> 1653</span>            B[z] = (B[z] + A[z]) / 2.0f;</div>
+<div class="line"><span class="lineno"> 1654</span>    }</div>
+<div class="line"><span class="lineno"> 1655</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Balpha &gt;= 1.0f)</div>
+<div class="line"><span class="lineno"> 1656</span>    {</div>
+<div class="line"><span class="lineno"> 1657</span>        <span class="comment">// No merge, leave as-is</span></div>
+<div class="line"><span class="lineno"> 1658</span>    }</div>
+<div class="line"><span class="lineno"> 1659</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Aalpha &gt;= 1.0f)</div>
+<div class="line"><span class="lineno"> 1660</span>    {</div>
+<div class="line"><span class="lineno"> 1661</span>        B.<a class="code hl_function" href="class_pixel.html#a8ef3b32cb42a68379e01d9a3f0232d85">copy</a>(A, channels); <span class="comment">// No merge, copy sample</span></div>
+<div class="line"><span class="lineno"> 1662</span>    }</div>
+<div class="line"><span class="lineno"> 1663</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno"> 1664</span>    {</div>
+<div class="line"><span class="lineno"> 1665</span>        <span class="comment">// Log merge:</span></div>
+<div class="line"><span class="lineno"> 1666</span>        <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, channels)</div>
+<div class="line"><span class="lineno"> 1667</span>        {</div>
+<div class="line"><span class="lineno"> 1668</span>            <span class="keywordflow">if</span> (z == OPENDCX_INTERNAL_NAMESPACE::Chan_A)</div>
+<div class="line"><span class="lineno"> 1669</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno"> 1670</span>            <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> MAXF = std::numeric_limits&lt;float&gt;::max();</div>
+<div class="line"><span class="lineno"> 1671</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> u1 = float(-log1p(-Balpha));</div>
+<div class="line"><span class="lineno"> 1672</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> v1 = (u1 &lt; Balpha*MAXF)?u1/Balpha:1.0f;</div>
+<div class="line"><span class="lineno"> 1673</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> u2 = float(-log1p(-Aalpha));</div>
+<div class="line"><span class="lineno"> 1674</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> v2 = (u2 &lt; Aalpha*MAXF)?u2/Aalpha:1.0f;</div>
+<div class="line"><span class="lineno"> 1675</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> u = u1 + u2;</div>
+<div class="line"><span class="lineno"> 1676</span>            <span class="keywordflow">if</span> (u &gt; 1.0f || mergedAlpha &lt; u*MAXF)</div>
+<div class="line"><span class="lineno"> 1677</span>               B[z] = (B[z]*v1 + A[z]*v2)*(mergedAlpha / u);</div>
+<div class="line"><span class="lineno"> 1678</span>            <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno"> 1679</span>               B[z] = B[z]*v1 + A[z]*v2;</div>
+<div class="line"><span class="lineno"> 1680</span>        }</div>
+<div class="line"><span class="lineno"> 1681</span>        <span class="keywordflow">if</span> (B[OPENDCX_INTERNAL_NAMESPACE::Chan_SpCoverage] &gt;= (1.0f - <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>))</div>
+<div class="line"><span class="lineno"> 1682</span>            B[OPENDCX_INTERNAL_NAMESPACE::Chan_SpCoverage] = 1.0f;</div>
+<div class="line"><span class="lineno"> 1683</span>    }</div>
+<div class="line"><span class="lineno"> 1684</span>    B[OPENDCX_INTERNAL_NAMESPACE::Chan_A] = mergedAlpha;</div>
+<div class="line"><span class="lineno"> 1685</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4439034e8784c5ee7042cecd3f5f267e" name="a4439034e8784c5ee7042cecd3f5f267e"></a>
@@ -956,7 +1146,15 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01229">1229</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1229</span>                                                               {</div>
+<div class="line"><span class="lineno"> 1230</span>    <span class="keywordflow">if</span>      (<a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a> &lt; b.<a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a>) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno"> 1231</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a> &gt; b.<a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno"> 1232</span>    <span class="comment">// If both Zfronts are equal check partial subpixel-coverage first, then Zbacks</span></div>
+<div class="line"><span class="lineno"> 1233</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="class_deep_segment.html#a97073fb6eef97c03e3bd167083e646fc">getSpCoverageCount</a>() &lt; b.<a class="code hl_function" href="class_deep_segment.html#a97073fb6eef97c03e3bd167083e646fc">getSpCoverageCount</a>()) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno"> 1234</span>    <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">Zb</a> &lt; b.<a class="code hl_variable" href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">Zb</a>);</div>
+<div class="line"><span class="lineno"> 1235</span>}</div>
+<div class="ttc" id="aclass_deep_segment_html_a97073fb6eef97c03e3bd167083e646fc"><div class="ttname"><a href="class_deep_segment.html#a97073fb6eef97c03e3bd167083e646fc">DeepSegment::getSpCoverageCount</a></div><div class="ttdeci">uint32_t getSpCoverageCount() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01193">DcxDeepPixel.h:1193</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adf4d104bd6c6186bc0550c7475875a6d" name="adf4d104bd6c6186bc0550c7475875a6d"></a>
@@ -984,7 +1182,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01236">1236</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1236</span>{ <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_function" href="struct_deep_metadata.html#a6eff7e7ebe48cd43167cd0a8ca8406f1">printFlags</a>(os); }</div>
+<div class="ttc" id="astruct_deep_metadata_html_a6eff7e7ebe48cd43167cd0a8ca8406f1"><div class="ttname"><a href="struct_deep_metadata.html#a6eff7e7ebe48cd43167cd0a8ca8406f1">DeepMetadata::printFlags</a></div><div class="ttdeci">void printFlags(std::ostream &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01147">DcxDeepPixel.h:1147</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a82ccf78d026096741b7b80e8eb3181e7" name="a82ccf78d026096741b7b80e8eb3181e7"></a>
@@ -1014,7 +1214,20 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00163">163</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  165</span>{</div>
+<div class="line"><span class="lineno">  166</span>    <span class="keyword">const</span> std::streamsize prec = os.precision();</div>
+<div class="line"><span class="lineno">  167</span>    os.precision(8);</div>
+<div class="line"><span class="lineno">  168</span>    os &lt;&lt; <span class="stringliteral">&quot;Zf=&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a> &lt;&lt; <span class="stringliteral">&quot;, Zb=&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">Zb</a> &lt;&lt; <span class="stringliteral">&quot;, flags=[&quot;</span>; <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a71748026ce682d1e52099d6de5545494">flags</a>.<a class="code hl_function" href="class_deep_flags.html#a3f3af66af193ff0db799cbe6c44f2fc9">print</a>(os); os &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><span class="lineno">  169</span>    <span class="keywordflow">if</span> (show_mask) {</div>
+<div class="line"><span class="lineno">  170</span>        os &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  171</span>        <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">spmask</a>.<a class="code hl_function" href="class_sp_mask8.html#a3e32183d02b787b15363d97caa447bf2">printPattern</a>(os, <span class="stringliteral">&quot;  &quot;</span>);</div>
+<div class="line"><span class="lineno">  172</span>    } <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  173</span>        os &lt;&lt; <span class="stringliteral">&quot;, spMask=&quot;</span> &lt;&lt; <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">spmask</a>;</div>
+<div class="line"><span class="lineno">  174</span>    os.precision(prec);</div>
+<div class="line"><span class="lineno">  175</span>}</div>
+<div class="ttc" id="aclass_deep_flags_html_a3f3af66af193ff0db799cbe6c44f2fc9"><div class="ttname"><a href="class_deep_flags.html#a3f3af66af193ff0db799cbe6c44f2fc9">DeepFlags::print</a></div><div class="ttdeci">void print(std::ostream &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8cpp_source.html#l00134">DcxDeepPixel.cpp:134</a></div></div>
+<div class="ttc" id="aclass_sp_mask8_html_a3e32183d02b787b15363d97caa447bf2"><div class="ttname"><a href="class_sp_mask8.html#a3e32183d02b787b15363d97caa447bf2">SpMask8::printPattern</a></div><div class="ttdeci">void printPattern(std::ostream &amp;, const char *prefix) const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_sp_mask_8h_source.html#l00402">DcxSpMask.h:402</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a03ed90e830b8e3a870eed8827d1be3c1" name="a03ed90e830b8e3a870eed8827d1be3c1"></a>
@@ -1052,7 +1265,17 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01149">1149</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1150</span>{</div>
+<div class="line"><span class="lineno"> 1151</span>    <a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a> = (_Zf &lt;= _Zb)?_Zf:_Zb;</div>
+<div class="line"><span class="lineno"> 1152</span>    <a class="code hl_variable" href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">Zb</a> = _Zb;</div>
+<div class="line"><span class="lineno"> 1153</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a> &lt; <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>)</div>
+<div class="line"><span class="lineno"> 1154</span>    {</div>
+<div class="line"><span class="lineno"> 1155</span>        <a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a> = <a class="code hl_variable" href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">Zb</a>;</div>
+<div class="line"><span class="lineno"> 1156</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a> &lt; <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>)</div>
+<div class="line"><span class="lineno"> 1157</span>            <a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a> = <a class="code hl_variable" href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">Zb</a> = <a class="code hl_define" href="_dcx_a_p_i_8h.html#abe29e2583e2cd8c5c47a4473ed2547d7">EPSILONf</a>;</div>
+<div class="line"><span class="lineno"> 1158</span>    }</div>
+<div class="line"><span class="lineno"> 1159</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a82c54d0c6b0ecf5468ba4b3265387a0b" name="a82c54d0c6b0ecf5468ba4b3265387a0b"></a>
@@ -1080,7 +1303,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01194">1194</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1194</span>{ <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_function" href="struct_deep_metadata.html#a8298faa2453e0289bc854a46f9e5c813">setSpCoverageCount</a>(count); }</div>
+<div class="ttc" id="astruct_deep_metadata_html_a8298faa2453e0289bc854a46f9e5c813"><div class="ttname"><a href="struct_deep_metadata.html#a8298faa2453e0289bc854a46f9e5c813">DeepMetadata::setSpCoverageCount</a></div><div class="ttdeci">void setSpCoverageCount(uint32_t count)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01144">DcxDeepPixel.h:1144</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aec2c3cab552854a27773d98f95c41e13" name="aec2c3cab552854a27773d98f95c41e13"></a>
@@ -1108,7 +1333,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01195">1195</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1195</span>{ <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_function" href="struct_deep_metadata.html#ad05c8dbedddf4bf73dbf3e61a39ab400">setSpCoverageWeight</a>(weight); }</div>
+<div class="ttc" id="astruct_deep_metadata_html_ad05c8dbedddf4bf73dbf3e61a39ab400"><div class="ttname"><a href="struct_deep_metadata.html#ad05c8dbedddf4bf73dbf3e61a39ab400">DeepMetadata::setSpCoverageWeight</a></div><div class="ttdeci">void setSpCoverageWeight(float weight)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_pixel_8h_source.html#l01145">DcxDeepPixel.h:1145</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adcda9f820682d7ff8e43c472364530e0" name="adcda9f820682d7ff8e43c472364530e0"></a>
@@ -1135,7 +1362,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01198">1198</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1198</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">spmask</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac253356c36e03160a1fc0904b32fec7d" name="ac253356c36e03160a1fc0904b32fec7d"></a>
@@ -1162,7 +1390,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01199">1199</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1199</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">spmask</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a10ec9a5e6baab4879184fe0cb691bbc6" name="a10ec9a5e6baab4879184fe0cb691bbc6"></a>
@@ -1189,7 +1418,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01182">1182</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1182</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a71748026ce682d1e52099d6de5545494">flags</a>.<a class="code hl_function" href="class_deep_flags.html#a775c62f0a139d82741d801d13901bf01">surfaceFlags</a>(); }</div>
+<div class="ttc" id="aclass_deep_flags_html_a775c62f0a139d82741d801d13901bf01"><div class="ttname"><a href="class_deep_flags.html#a775c62f0a139d82741d801d13901bf01">DeepFlags::surfaceFlags</a></div><div class="ttdeci">uint32_t surfaceFlags() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_flags_8h_source.html#l00308">DcxDeepFlags.h:308</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6ff6c610bf89f300ada5b983a49a1534" name="a6ff6c610bf89f300ada5b983a49a1534"></a>
@@ -1216,7 +1447,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01187">1187</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1187</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">Zb</a> - <a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a>); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afb46e309ab9da566984b3b7ca9512630" name="afb46e309ab9da566984b3b7ca9512630"></a>
@@ -1260,7 +1492,19 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01168">1168</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1168</span>                                                                                    {</div>
+<div class="line"><span class="lineno"> 1169</span>    <span class="keywordflow">if</span> (!reverse)</div>
+<div class="line"><span class="lineno"> 1170</span>    {</div>
+<div class="line"><span class="lineno"> 1171</span>        <a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a> = (<a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a> + translate)*scale;</div>
+<div class="line"><span class="lineno"> 1172</span>        <a class="code hl_variable" href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">Zb</a> = (<a class="code hl_variable" href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">Zb</a> + translate)*scale;</div>
+<div class="line"><span class="lineno"> 1173</span>    }</div>
+<div class="line"><span class="lineno"> 1174</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno"> 1175</span>    {</div>
+<div class="line"><span class="lineno"> 1176</span>        <a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a> = <a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a>*scale + translate;</div>
+<div class="line"><span class="lineno"> 1177</span>        <a class="code hl_variable" href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">Zb</a> = <a class="code hl_variable" href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">Zb</a>*scale + translate;</div>
+<div class="line"><span class="lineno"> 1178</span>    }</div>
+<div class="line"><span class="lineno"> 1179</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a25c801f927a654aac79f8f1c58407bb2" name="a25c801f927a654aac79f8f1c58407bb2"></a>
@@ -1287,7 +1531,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8h_source.html#l01200">1200</a> of file <a class="el" href="_dcx_deep_pixel_8h_source.html">DcxDeepPixel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno"> 1200</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">spmask</a>==<a class="code hl_variable" href="class_sp_mask8.html#ab422b575c9ddd9c24d5aac45a4be00b3">SpMask8::zeroCoverage</a>); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
@@ -1326,7 +1571,13 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_pixel_8cpp_source.html#l00246">246</a> of file <a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  249</span>{</div>
+<div class="line"><span class="lineno">  250</span>    os &lt;&lt; <span class="stringliteral">&quot;[Zf=&quot;</span> &lt;&lt; ds.<a class="code hl_variable" href="class_deep_segment.html#a68a7fee464e31b18b2be6d788bd1bdfb">Zf</a> &lt;&lt; <span class="stringliteral">&quot;, Zb=&quot;</span> &lt;&lt; ds.<a class="code hl_variable" href="class_deep_segment.html#a2d54a2b8eef54c3055daed2bfb8d4cad">Zb</a> &lt;&lt; <span class="stringliteral">&quot;, flags=&quot;</span> &lt;&lt; ds.<a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a71748026ce682d1e52099d6de5545494">flags</a>;</div>
+<div class="line"><span class="lineno">  251</span>    os &lt;&lt; <span class="stringliteral">&quot;, spCvg=&quot;</span> &lt;&lt; ds.<a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_function" href="struct_deep_metadata.html#a0cd20f00760afdf3c078b88270c47b86">getSpCoverageWeight</a>();</div>
+<div class="line"><span class="lineno">  252</span>    os &lt;&lt; <span class="stringliteral">&quot;, spMask=&quot;</span> &lt;&lt; std::hex &lt;&lt; ds.<a class="code hl_variable" href="class_deep_segment.html#a6eee4b9680ce58ee5dbbb57dbf74d4d2">metadata</a>.<a class="code hl_variable" href="struct_deep_metadata.html#a631d684087012d692f09e94ba0d1b5da">spmask</a> &lt;&lt; std::dec &lt;&lt; <span class="stringliteral">&quot;, coverage=&quot;</span> &lt;&lt; ds.<a class="code hl_function" href="class_deep_segment.html#a78aaff5e5229c7b410d8cea566607bff">getCoverage</a>() &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><span class="lineno">  253</span>    <span class="keywordflow">return</span> os;</div>
+<div class="line"><span class="lineno">  254</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1399,9 +1650,13 @@ Friends</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/deepfile/<a class="el" href="_dcx_deep_pixel_8cpp_source.html">DcxDeepPixel.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_deep_segment.html">DeepSegment</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

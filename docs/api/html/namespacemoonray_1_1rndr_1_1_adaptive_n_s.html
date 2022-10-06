@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr_1_1_adaptive_n_s.html">AdaptiveNS</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('namespacemoonray_1_1rndr_1_1_adaptive_n_s.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#typedef-members">Typedefs</a> &#124;
@@ -168,7 +184,13 @@ template&lt;typename T &gt; </div>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="_adaptive_region_tree_8h_source.html#l00231">231</a> of file <a class="el" href="_adaptive_region_tree_8h_source.html">AdaptiveRegionTree.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  232</span>{</div>
+<div class="line"><span class="lineno">  233</span>    <a class="code hl_enumvalue" href="namespacemoonray_1_1rndr_1_1_adaptive_n_s.html#a5677aed4ba428d8c80118455f5fdd95ca4505cad087312551a6fbbe6ebe163e0f">horizontal</a>,</div>
+<div class="line"><span class="lineno">  234</span>    <a class="code hl_enumvalue" href="namespacemoonray_1_1rndr_1_1_adaptive_n_s.html#a5677aed4ba428d8c80118455f5fdd95cae6dec152d6a941fccb0a5e8cc2579cc3">vertical</a></div>
+<div class="line"><span class="lineno">  235</span>};</div>
+<div class="ttc" id="anamespacemoonray_1_1rndr_1_1_adaptive_n_s_html_a5677aed4ba428d8c80118455f5fdd95ca4505cad087312551a6fbbe6ebe163e0f"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1_adaptive_n_s.html#a5677aed4ba428d8c80118455f5fdd95ca4505cad087312551a6fbbe6ebe163e0f">moonray::rndr::AdaptiveNS::Axis::horizontal</a></div><div class="ttdeci">@ horizontal</div></div>
+<div class="ttc" id="anamespacemoonray_1_1rndr_1_1_adaptive_n_s_html_a5677aed4ba428d8c80118455f5fdd95cae6dec152d6a941fccb0a5e8cc2579cc3"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1_adaptive_n_s.html#a5677aed4ba428d8c80118455f5fdd95cae6dec152d6a941fccb0a5e8cc2579cc3">moonray::rndr::AdaptiveNS::Axis::vertical</a></div><div class="ttdeci">@ vertical</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -207,7 +229,28 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_adaptive_region_tree_8h_source.html#l00050">50</a> of file <a class="el" href="_adaptive_region_tree_8h_source.html">AdaptiveRegionTree.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   51</span>{</div>
+<div class="line"><span class="lineno">   52</span>    <span class="comment">// We don&#39;t allow our array of four floats to overlap since we&#39;re using restrict.</span></div>
+<div class="line"><span class="lineno">   53</span>    MNRY_ASSERT(dst + 4 &lt;= src || src + 4 &lt;= dst);</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>    <span class="comment">// assumes 1) val and newVal point to aligned float[4] types</span></div>
+<div class="line"><span class="lineno">   56</span>    <span class="comment">//         2) val[3] and newVal[3] store the depth</span></div>
+<div class="line"><span class="lineno">   57</span>    <span class="comment">//         3) These types should produce lock-free atomics</span></div>
+<div class="line"><span class="lineno">   58</span>    <span class="keyword">struct </span><span class="keyword">alignas</span>(util::kAtomicAlignment) Float4Aligned</div>
+<div class="line"><span class="lineno">   59</span>    {</div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordtype">float</span> x, y, z, w;</div>
+<div class="line"><span class="lineno">   61</span>    };</div>
+<div class="line"><span class="lineno">   62</span>    Float4Aligned* <span class="keyword">const</span> dstStruct = <span class="keyword">reinterpret_cast&lt;</span>Float4Aligned*<span class="keyword">&gt;</span>(dst);</div>
+<div class="line"><span class="lineno">   63</span>    <span class="keyword">const</span> Float4Aligned* <span class="keyword">const</span> srcStruct = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>Float4Aligned*<span class="keyword">&gt;</span>(src);</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span>    MNRY_ASSERT(<span class="keyword">reinterpret_cast&lt;</span>uintptr_t<span class="keyword">&gt;</span>(dst) % util::kAtomicAlignment == 0);</div>
+<div class="line"><span class="lineno">   66</span>    MNRY_ASSERT(<span class="keyword">reinterpret_cast&lt;</span>uintptr_t<span class="keyword">&gt;</span>(src) % util::kAtomicAlignment == 0);</div>
+<div class="line"><span class="lineno">   67</span>    MNRY_ASSERT(__atomic_is_lock_free(<span class="keyword">sizeof</span>(Float4Aligned), srcStruct));</div>
+<div class="line"><span class="lineno">   68</span>    <span class="comment">//static_assert(__atomic_always_lock_free(sizeof(Float4Aligned), nullptr), &quot;&quot;);</span></div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>    __atomic_load(srcStruct, dstStruct, __ATOMIC_RELAXED);</div>
+<div class="line"><span class="lineno">   71</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1a3bd380bba48d718911a3d87d0df083" name="a1a3bd380bba48d718911a3d87d0df083"></a>
@@ -269,7 +312,64 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_adaptive_region_tree_8h_source.html#l00079">79</a> of file <a class="el" href="_adaptive_region_tree_8h_source.html">AdaptiveRegionTree.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   85</span>{</div>
+<div class="line"><span class="lineno">   86</span>    tiler.linearToTiledCoords(px, py, &amp;px, &amp;py);</div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>    <span class="keyword">const</span> <span class="keywordtype">float</span>* <span class="keyword">const</span> sampleCountPointer = &amp;(numSamplesBuf.getPixel(px, py));</div>
+<div class="line"><span class="lineno">   89</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> totalSamples = util::atomicLoad(sampleCountPointer, std::memory_order_relaxed);</div>
+<div class="line"><span class="lineno">   90</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> numOddSamples = scene_rdl2::math::floor(totalSamples * 0.5f);</div>
+<div class="line"><span class="lineno">   91</span> </div>
+<div class="line"><span class="lineno">   92</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> numEvenSamples = totalSamples - numOddSamples;</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">if</span> (numEvenSamples &lt;= 0.0f || numOddSamples &lt;= 0.0f) {</div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">return</span> std::numeric_limits&lt;float&gt;::infinity();</div>
+<div class="line"><span class="lineno">   96</span>    }</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>    <span class="keyword">const</span> <span class="keywordtype">float</span>* <span class="keyword">const</span> totalColorPointer = &amp;(renderBuf.getPixel(px, py)[0]);</div>
+<div class="line"><span class="lineno">   99</span>    <span class="keyword">const</span> <span class="keywordtype">float</span>* <span class="keyword">const</span> oddColorPointer   = &amp;(renderBufOdd.getPixel(px, py)[0]);</div>
+<div class="line"><span class="lineno">  100</span>    <span class="keyword">alignas</span>(util::kAtomicAlignment) scene_rdl2::math::Vec4f totalColor;</div>
+<div class="line"><span class="lineno">  101</span>    atomicLoadFloat4(&amp;totalColor[0], totalColorPointer);</div>
+<div class="line"><span class="lineno">  102</span>    <span class="keyword">alignas</span>(util::kAtomicAlignment) scene_rdl2::math::Vec4f oddColor;</div>
+<div class="line"><span class="lineno">  103</span>    atomicLoadFloat4(&amp;oddColor[0], oddColorPointer);</div>
+<div class="line"><span class="lineno">  104</span> </div>
+<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">if</span> (isnan(totalColor) || isnan(oddColor)) {</div>
+<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">return</span> 0.0f;</div>
+<div class="line"><span class="lineno">  107</span>    }</div>
+<div class="line"><span class="lineno">  108</span> </div>
+<div class="line"><span class="lineno">  109</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  110</span>    <span class="comment">// We want to compute:</span></div>
+<div class="line"><span class="lineno">  111</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  112</span>    <span class="comment">//            even_color          oddColor</span></div>
+<div class="line"><span class="lineno">  113</span>    <span class="comment">//   diff = ---------------  -  -------------</span></div>
+<div class="line"><span class="lineno">  114</span>    <span class="comment">//          numEvenSamples      numOddSamples</span></div>
+<div class="line"><span class="lineno">  115</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  116</span>    <span class="comment">// where even_color = totalColor - oddColor</span></div>
+<div class="line"><span class="lineno">  117</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  118</span>    <span class="comment">// We can refactor this expression remove one of the divides.</span></div>
+<div class="line"><span class="lineno">  119</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  120</span>    <span class="keyword">const</span> scene_rdl2::math::Vec4f diff = (totalColor * numOddSamples - oddColor * totalSamples) /</div>
+<div class="line"><span class="lineno">  121</span>                                         (numOddSamples * numEvenSamples);</div>
+<div class="line"><span class="lineno">  122</span>    <span class="keyword">const</span> scene_rdl2::math::Vec4f absdiff = abs(diff);</div>
+<div class="line"><span class="lineno">  123</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> lumDiff = luma(absdiff);</div>
+<div class="line"><span class="lineno">  124</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> lumAvg = luma(totalColor / totalSamples);</div>
+<div class="line"><span class="lineno">  125</span> </div>
+<div class="line"><span class="lineno">  126</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> alphaScore = absdiff[3];</div>
+<div class="line"><span class="lineno">  127</span> </div>
+<div class="line"><span class="lineno">  128</span>    <span class="comment">// Radiance is pure black. Return the difference in the alpha to see if there&#39;s still work to do.</span></div>
+<div class="line"><span class="lineno">  129</span>    <span class="keywordflow">if</span> (lumAvg &lt;= 0.0f) {</div>
+<div class="line"><span class="lineno">  130</span>        <span class="keywordflow">return</span> alphaScore;</div>
+<div class="line"><span class="lineno">  131</span>    }</div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>    <span class="comment">// Normalize result and use sqrt to approximate eye&#39;s response to linear light</span></div>
+<div class="line"><span class="lineno">  134</span>    <span class="comment">// (i.e. fake a pseudo gamma curve).</span></div>
+<div class="line"><span class="lineno">  135</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  136</span>    <span class="comment">// Alpha and color are both considered for error evaluation.  Alpha should</span></div>
+<div class="line"><span class="lineno">  137</span>    <span class="comment">// be in [0, 1], whereas the color luma is in non-negative real</span></div>
+<div class="line"><span class="lineno">  138</span>    <span class="comment">// space. Even though they are in different scales, this seems to work</span></div>
+<div class="line"><span class="lineno">  139</span>    <span class="comment">// fairly well to make sure we resolve edges.</span></div>
+<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">return</span> (lumDiff * scene_rdl2::math::rsqrt(lumAvg)) + alphaScore;</div>
+<div class="line"><span class="lineno">  141</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad0f3897a624a562882054a2efa7d0734" name="ad0f3897a624a562882054a2efa7d0734"></a>
@@ -331,7 +431,41 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_adaptive_region_tree_8h_source.html#l00144">144</a> of file <a class="el" href="_adaptive_region_tree_8h_source.html">AdaptiveRegionTree.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  150</span>{</div>
+<div class="line"><span class="lineno">  151</span>    tiler.linearToTiledCoords(px, py, &amp;px, &amp;py);</div>
+<div class="line"><span class="lineno">  152</span> </div>
+<div class="line"><span class="lineno">  153</span>    <span class="keyword">const</span> <span class="keywordtype">float</span>* <span class="keyword">const</span> sampleCountPointer = &amp;(numSamplesBuf.getPixel(px, py));</div>
+<div class="line"><span class="lineno">  154</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> totalSamples = util::atomicLoad(sampleCountPointer, std::memory_order_relaxed);</div>
+<div class="line"><span class="lineno">  155</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> numOddSamples = scene_rdl2::math::floor(totalSamples * 0.5f);</div>
+<div class="line"><span class="lineno">  156</span> </div>
+<div class="line"><span class="lineno">  157</span>    <span class="keywordflow">if</span> (totalSamples &lt;= 0.0f || numOddSamples &lt;= 0.0f) {</div>
+<div class="line"><span class="lineno">  158</span>        <span class="keywordflow">return</span> std::numeric_limits&lt;float&gt;::infinity();</div>
+<div class="line"><span class="lineno">  159</span>    }</div>
+<div class="line"><span class="lineno">  160</span> </div>
+<div class="line"><span class="lineno">  161</span>    <span class="keyword">const</span> <span class="keywordtype">float</span>* <span class="keyword">const</span> totalColorPointer = &amp;(renderBuf.getPixel(px, py)[0]);</div>
+<div class="line"><span class="lineno">  162</span>    <span class="keyword">const</span> <span class="keywordtype">float</span>* <span class="keyword">const</span> oddColorPointer   = &amp;(renderBufOdd.getPixel(px, py)[0]);</div>
+<div class="line"><span class="lineno">  163</span>    <span class="keyword">alignas</span>(util::kAtomicAlignment) scene_rdl2::math::Vec4f totalColor;</div>
+<div class="line"><span class="lineno">  164</span>    atomicLoadFloat4(&amp;totalColor[0], totalColorPointer);</div>
+<div class="line"><span class="lineno">  165</span>    <span class="keyword">alignas</span>(util::kAtomicAlignment) scene_rdl2::math::Vec4f oddColor;</div>
+<div class="line"><span class="lineno">  166</span>    atomicLoadFloat4(&amp;oddColor[0], oddColorPointer);</div>
+<div class="line"><span class="lineno">  167</span> </div>
+<div class="line"><span class="lineno">  168</span>    <span class="keywordflow">if</span> (isnan(totalColor) || isnan(oddColor)) {</div>
+<div class="line"><span class="lineno">  169</span>        <span class="keywordflow">return</span> 0.0f;</div>
+<div class="line"><span class="lineno">  170</span>    }</div>
+<div class="line"><span class="lineno">  171</span> </div>
+<div class="line"><span class="lineno">  172</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> numerator = scene_rdl2::math::abs(totalColor[0] - oddColor[0]) +</div>
+<div class="line"><span class="lineno">  173</span>                            scene_rdl2::math::abs(totalColor[1] - oddColor[1]) +</div>
+<div class="line"><span class="lineno">  174</span>                            scene_rdl2::math::abs(totalColor[2] - oddColor[2]) +</div>
+<div class="line"><span class="lineno">  175</span>                            scene_rdl2::math::abs(totalColor[3] - oddColor[3]);</div>
+<div class="line"><span class="lineno">  176</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> sumImage = reduce_add(totalColor);</div>
+<div class="line"><span class="lineno">  177</span> </div>
+<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">if</span> (sumImage &gt; 0.0f) {</div>
+<div class="line"><span class="lineno">  179</span>        <span class="keywordflow">return</span> numerator * scene_rdl2::math::rsqrt(sumImage);</div>
+<div class="line"><span class="lineno">  180</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  181</span>        <span class="keywordflow">return</span> numerator;</div>
+<div class="line"><span class="lineno">  182</span>    }</div>
+<div class="line"><span class="lineno">  183</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af998c06d625745e8a78aeacce9a41c1b" name="af998c06d625745e8a78aeacce9a41c1b"></a>
@@ -351,7 +485,8 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_adaptive_region_tree_8h_source.html#l00047">47</a> of file <a class="el" href="_adaptive_region_tree_8h_source.html">AdaptiveRegionTree.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   47</span>{ <span class="keywordflow">return</span> std::isnan(a[0]) || std::isnan(a[1]) || std::isnan(a[2]) || std::isnan(a[3]); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a771c8615f0b4b0dceed21219aa4068d1" name="a771c8615f0b4b0dceed21219aa4068d1"></a>
@@ -379,7 +514,8 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_adaptive_region_tree_8h_source.html#l00046">46</a> of file <a class="el" href="_adaptive_region_tree_8h_source.html">AdaptiveRegionTree.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   46</span>{ <span class="keywordflow">return</span> 0.299f*a[0] + 0.587f*a[1] + 0.114f*a[2]; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1fa8d8dc96bf063f188b9fc121784ee8" name="a1fa8d8dc96bf063f188b9fc121784ee8"></a>
@@ -424,13 +560,41 @@ template&lt;int axis&gt; </div>
 <p >@fuction orientedAccumulatedPixelError The partial sum of errors in a direction is used for finding a split location when subdividing a tree node. </p><dl class="section return"><dt>Returns</dt><dd>This returns a partial sum of sums along an axis in <em>region</em> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_adaptive_region_tree_8h_source.html#l00205">205</a> of file <a class="el" href="_adaptive_region_tree_8h_source.html">AdaptiveRegionTree.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  209</span>{</div>
+<div class="line"><span class="lineno">  210</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a> = extents(region, axis);</div>
+<div class="line"><span class="lineno">  211</span> </div>
+<div class="line"><span class="lineno">  212</span>    <span class="comment">// We&#39;re using an allocator that has a fixed size: we don&#39;t want to let the std::vector manage its memory by growing</span></div>
+<div class="line"><span class="lineno">  213</span>    <span class="comment">// past its capacity: we may run out of space as it has to move all of its elements later in the array.</span></div>
+<div class="line"><span class="lineno">  214</span>    std::vector&lt;float, AdaptiveNS::PoolAllocator&lt;float&gt;&gt; marginalErrors(<a class="code hl_function" href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a>, 0.0f, allocator);</div>
+<div class="line"><span class="lineno">  215</span> </div>
+<div class="line"><span class="lineno">  216</span>    <span class="comment">// This doesn&#39;t work on ICC 15 for some reason. It works on other compilers. :-/</span></div>
+<div class="line"><span class="lineno">  217</span>    <span class="comment">//for (auto p : region) {</span></div>
+<div class="line"><span class="lineno">  218</span> </div>
+<div class="line"><span class="lineno">  219</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> pit = <a class="code hl_function" href="_variance_a_o_v_map_8h.html#aa9f7148b68f98783e21bf4be94702ca9">begin</a>(region); pit != <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a>(region); ++pit) {</div>
+<div class="line"><span class="lineno">  220</span>        <span class="keyword">const</span> scene_rdl2::math::Vec2i&amp; p = *pit;</div>
+<div class="line"><span class="lineno">  221</span>        <span class="keyword">const</span> scene_rdl2::math::Vec2i pBaseRelative = p - baseRegion.lower;</div>
+<div class="line"><span class="lineno">  222</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> idx = p[axis] - region.lower[axis];</div>
+<div class="line"><span class="lineno">  223</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> pixelError = pixelErrors(pBaseRelative[0], pBaseRelative[1]);</div>
+<div class="line"><span class="lineno">  224</span>        marginalErrors[idx] += pixelError;</div>
+<div class="line"><span class="lineno">  225</span>    }</div>
+<div class="line"><span class="lineno">  226</span> </div>
+<div class="line"><span class="lineno">  227</span>    std::partial_sum(marginalErrors.begin(), marginalErrors.end(), marginalErrors.begin());</div>
+<div class="line"><span class="lineno">  228</span>    <span class="keywordflow">return</span> marginalErrors;</div>
+<div class="line"><span class="lineno">  229</span>}</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a25c3c0d490b4f6a95f0595760efbc351"><div class="ttname"><a href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a></div><div class="ttdeci">__host__ __device__ float length(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00159">GPUMath.h:159</a></div></div>
+<div class="ttc" id="a_variance_a_o_v_map_8h_html_a8b3c0ee88191b7d4a40b4271037faaee"><div class="ttname"><a href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a></div><div class="ttdeci">VarianceAOVMap::SourceToVarianceIterator end(const VarianceAOVMap::SourceToVarianceRange &amp;range)</div><div class="ttdef"><b>Definition:</b> <a href="_variance_a_o_v_map_8h_source.html#l00153">VarianceAOVMap.h:153</a></div></div>
+<div class="ttc" id="a_variance_a_o_v_map_8h_html_aa9f7148b68f98783e21bf4be94702ca9"><div class="ttname"><a href="_variance_a_o_v_map_8h.html#aa9f7148b68f98783e21bf4be94702ca9">begin</a></div><div class="ttdeci">VarianceAOVMap::SourceToVarianceIterator begin(const VarianceAOVMap::SourceToVarianceRange &amp;range)</div><div class="ttdef"><b>Definition:</b> <a href="_variance_a_o_v_map_8h_source.html#l00148">VarianceAOVMap.h:148</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr_1_1_adaptive_n_s.html">AdaptiveNS</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

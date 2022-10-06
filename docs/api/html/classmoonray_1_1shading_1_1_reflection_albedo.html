@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,28 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_reflection_albedo.html">ReflectionAlbedo</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_reflection_albedo.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_reflection_albedo-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::ReflectionAlbedo Class Reference</div></div>
 </div><!--header-->
@@ -59,6 +77,26 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a92703b1b124114f8ccccc700f0f00ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2dfe037c1bbd14ef26e7d08ec878792"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ad2dfe037c1bbd14ef26e7d08ec878792">oneMinusAvg</a> (ispc::MicrofacetDistribution type, float roughness)</td></tr>
 <tr class="separator:ad2dfe037c1bbd14ef26e7d08ec878792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:aff91e6baa210d45ec87328dc27e0165f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_reflection_albedo.html#aff91e6baa210d45ec87328dc27e0165f">index</a> (float cosTheta, float roughness, float &amp;w, size_t &amp;iLow, size_t &amp;iHigh)</td></tr>
+<tr class="separator:aff91e6baa210d45ec87328dc27e0165f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7702aa1ae977b3c736a9b936eafa7460"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_reflection_albedo.html#a7702aa1ae977b3c736a9b936eafa7460">rIndex</a> (float roughness, float &amp;weight)</td></tr>
+<tr class="separator:a7702aa1ae977b3c736a9b936eafa7460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:ac7b8d819cba2e47e7e8bce3587f4563f"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac7b8d819cba2e47e7e8bce3587f4563f">COMP</a> = 33</td></tr>
+<tr class="separator:ac7b8d819cba2e47e7e8bce3587f4563f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada3ff2ea96db3a329417c09a7eaaa6e4"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ada3ff2ea96db3a329417c09a7eaaa6e4">mBeckmannE</a> [<a class="el" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac7b8d819cba2e47e7e8bce3587f4563f">COMP</a> *<a class="el" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac7b8d819cba2e47e7e8bce3587f4563f">COMP</a>]</td></tr>
+<tr class="separator:ada3ff2ea96db3a329417c09a7eaaa6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa76710c71c7c6d4a768b675c97a3c62"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_reflection_albedo.html#aaa76710c71c7c6d4a768b675c97a3c62">mGGXE</a> [<a class="el" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac7b8d819cba2e47e7e8bce3587f4563f">COMP</a> *<a class="el" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac7b8d819cba2e47e7e8bce3587f4563f">COMP</a>]</td></tr>
+<tr class="separator:aaa76710c71c7c6d4a768b675c97a3c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85fc86fb2da6a20bc70334667241ad71"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_reflection_albedo.html#a85fc86fb2da6a20bc70334667241ad71">mBeckmannOneMinusEavg</a> [<a class="el" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac7b8d819cba2e47e7e8bce3587f4563f">COMP</a>]</td></tr>
+<tr class="separator:a85fc86fb2da6a20bc70334667241ad71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2dd7318b18324905834cde0079f742e"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac2dd7318b18324905834cde0079f742e">mGGXOneMinusEavg</a> [<a class="el" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac7b8d819cba2e47e7e8bce3587f4563f">COMP</a>]</td></tr>
+<tr class="separator:ac2dd7318b18324905834cde0079f742e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -105,7 +143,99 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_reflection_albedo_8h_source.html#l00036">36</a> of file <a class="el" href="_reflection_albedo_8h_source.html">ReflectionAlbedo.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>    {</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keywordtype">float</span> w;</div>
+<div class="line"><span class="lineno">   41</span>        <span class="keywordtype">size_t</span> iLow, iHigh;</div>
+<div class="line"><span class="lineno">   42</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_reflection_albedo.html#aff91e6baa210d45ec87328dc27e0165f">index</a>(cosTheta, roughness,</div>
+<div class="line"><span class="lineno">   43</span>              w, iLow, iHigh);</div>
+<div class="line"><span class="lineno">   44</span>        <span class="keywordtype">float</span> e = 0.0f;</div>
+<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">switch</span> (type) {</div>
+<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">case</span> ispc::MICROFACET_DISTRIBUTION_BECKMANN:</div>
+<div class="line"><span class="lineno">   47</span>            e = scene_rdl2::math::lerp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ada3ff2ea96db3a329417c09a7eaaa6e4">mBeckmannE</a>[iLow],</div>
+<div class="line"><span class="lineno">   48</span>                     <a class="code hl_variable" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ada3ff2ea96db3a329417c09a7eaaa6e4">mBeckmannE</a>[iHigh],</div>
+<div class="line"><span class="lineno">   49</span>                     w);</div>
+<div class="line"><span class="lineno">   50</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">case</span> ispc::MICROFACET_DISTRIBUTION_GGX:</div>
+<div class="line"><span class="lineno">   52</span>            e = scene_rdl2::math::lerp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_reflection_albedo.html#aaa76710c71c7c6d4a768b675c97a3c62">mGGXE</a>[iLow],</div>
+<div class="line"><span class="lineno">   53</span>                     <a class="code hl_variable" href="classmoonray_1_1shading_1_1_reflection_albedo.html#aaa76710c71c7c6d4a768b675c97a3c62">mGGXE</a>[iHigh],</div>
+<div class="line"><span class="lineno">   54</span>                     w);</div>
+<div class="line"><span class="lineno">   55</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   56</span>        }</div>
+<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">return</span> e;</div>
+<div class="line"><span class="lineno">   58</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_reflection_albedo_html_aaa76710c71c7c6d4a768b675c97a3c62"><div class="ttname"><a href="classmoonray_1_1shading_1_1_reflection_albedo.html#aaa76710c71c7c6d4a768b675c97a3c62">moonray::shading::ReflectionAlbedo::mGGXE</a></div><div class="ttdeci">static const float mGGXE[COMP *COMP]</div><div class="ttdef"><b>Definition:</b> <a href="_reflection_albedo_8h_source.html#l00110">ReflectionAlbedo.h:110</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_reflection_albedo_html_ada3ff2ea96db3a329417c09a7eaaa6e4"><div class="ttname"><a href="classmoonray_1_1shading_1_1_reflection_albedo.html#ada3ff2ea96db3a329417c09a7eaaa6e4">moonray::shading::ReflectionAlbedo::mBeckmannE</a></div><div class="ttdeci">static const float mBeckmannE[COMP *COMP]</div><div class="ttdef"><b>Definition:</b> <a href="_reflection_albedo_8h_source.html#l00109">ReflectionAlbedo.h:109</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_reflection_albedo_html_aff91e6baa210d45ec87328dc27e0165f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_reflection_albedo.html#aff91e6baa210d45ec87328dc27e0165f">moonray::shading::ReflectionAlbedo::index</a></div><div class="ttdeci">static void index(float cosTheta, float roughness, float &amp;w, size_t &amp;iLow, size_t &amp;iHigh)</div><div class="ttdef"><b>Definition:</b> <a href="_reflection_albedo_8h_source.html#l00083">ReflectionAlbedo.h:83</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aff91e6baa210d45ec87328dc27e0165f" name="aff91e6baa210d45ec87328dc27e0165f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff91e6baa210d45ec87328dc27e0165f">&#9670;&#160;</a></span>index()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void moonray::shading::ReflectionAlbedo::index </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>cosTheta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>roughness</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>iLow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>iHigh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_reflection_albedo_8h_source.html#l00083">83</a> of file <a class="el" href="_reflection_albedo_8h_source.html">ReflectionAlbedo.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>    {</div>
+<div class="line"><span class="lineno">   89</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> lIndex = <a class="code hl_function" href="classmoonray_1_1shading_1_1_reflection_albedo.html#a7702aa1ae977b3c736a9b936eafa7460">rIndex</a>(roughness, w);</div>
+<div class="line"><span class="lineno">   90</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> hIndex = scene_rdl2::math::min(lIndex+1, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac7b8d819cba2e47e7e8bce3587f4563f">COMP</a>*<a class="code hl_variable" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac7b8d819cba2e47e7e8bce3587f4563f">COMP</a>-1);</div>
+<div class="line"><span class="lineno">   91</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> if1 = lIndex * <a class="code hl_variable" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac7b8d819cba2e47e7e8bce3587f4563f">COMP</a> +</div>
+<div class="line"><span class="lineno">   92</span>                  cosTheta * (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac7b8d819cba2e47e7e8bce3587f4563f">COMP</a> - 1);</div>
+<div class="line"><span class="lineno">   93</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> if2 = hIndex * <a class="code hl_variable" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac7b8d819cba2e47e7e8bce3587f4563f">COMP</a> +</div>
+<div class="line"><span class="lineno">   94</span>                  cosTheta * (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac7b8d819cba2e47e7e8bce3587f4563f">COMP</a> - 1);</div>
+<div class="line"><span class="lineno">   95</span>        <span class="comment">// Take cosTheta&#39;s ceiling for the index</span></div>
+<div class="line"><span class="lineno">   96</span>        iLow = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(ceil(if1));</div>
+<div class="line"><span class="lineno">   97</span>        iHigh = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(ceil(if2));</div>
+<div class="line"><span class="lineno">   98</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_reflection_albedo_html_a7702aa1ae977b3c736a9b936eafa7460"><div class="ttname"><a href="classmoonray_1_1shading_1_1_reflection_albedo.html#a7702aa1ae977b3c736a9b936eafa7460">moonray::shading::ReflectionAlbedo::rIndex</a></div><div class="ttdeci">static size_t rIndex(float roughness, float &amp;weight)</div><div class="ttdef"><b>Definition:</b> <a href="_reflection_albedo_8h_source.html#l00100">ReflectionAlbedo.h:100</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_reflection_albedo_html_ac7b8d819cba2e47e7e8bce3587f4563f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac7b8d819cba2e47e7e8bce3587f4563f">moonray::shading::ReflectionAlbedo::COMP</a></div><div class="ttdeci">static const size_t COMP</div><div class="ttdef"><b>Definition:</b> <a href="_reflection_albedo_8h_source.html#l00108">ReflectionAlbedo.h:108</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad2dfe037c1bbd14ef26e7d08ec878792" name="ad2dfe037c1bbd14ef26e7d08ec878792"></a>
@@ -143,6 +273,198 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_reflection_albedo_8h_source.html#l00060">60</a> of file <a class="el" href="_reflection_albedo_8h_source.html">ReflectionAlbedo.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>    {</div>
+<div class="line"><span class="lineno">   63</span>        <span class="keywordtype">float</span> w;</div>
+<div class="line"><span class="lineno">   64</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> iLow = <a class="code hl_function" href="classmoonray_1_1shading_1_1_reflection_albedo.html#a7702aa1ae977b3c736a9b936eafa7460">rIndex</a>(roughness, w);</div>
+<div class="line"><span class="lineno">   65</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span> iHigh = scene_rdl2::math::min(iLow+1, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac7b8d819cba2e47e7e8bce3587f4563f">COMP</a>-1);</div>
+<div class="line"><span class="lineno">   66</span>        <span class="keywordtype">float</span> e = 0.0f;</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">switch</span> (type) {</div>
+<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">case</span> ispc::MICROFACET_DISTRIBUTION_BECKMANN:</div>
+<div class="line"><span class="lineno">   69</span>            e = scene_rdl2::math::lerp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_reflection_albedo.html#a85fc86fb2da6a20bc70334667241ad71">mBeckmannOneMinusEavg</a>[iLow],</div>
+<div class="line"><span class="lineno">   70</span>                     <a class="code hl_variable" href="classmoonray_1_1shading_1_1_reflection_albedo.html#a85fc86fb2da6a20bc70334667241ad71">mBeckmannOneMinusEavg</a>[iHigh],</div>
+<div class="line"><span class="lineno">   71</span>                     w);</div>
+<div class="line"><span class="lineno">   72</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">case</span> ispc::MICROFACET_DISTRIBUTION_GGX:</div>
+<div class="line"><span class="lineno">   74</span>            e = scene_rdl2::math::lerp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac2dd7318b18324905834cde0079f742e">mGGXOneMinusEavg</a>[iLow],</div>
+<div class="line"><span class="lineno">   75</span>                     <a class="code hl_variable" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac2dd7318b18324905834cde0079f742e">mGGXOneMinusEavg</a>[iHigh],</div>
+<div class="line"><span class="lineno">   76</span>                     w);</div>
+<div class="line"><span class="lineno">   77</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   78</span>        }</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">return</span> e;</div>
+<div class="line"><span class="lineno">   80</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_reflection_albedo_html_a85fc86fb2da6a20bc70334667241ad71"><div class="ttname"><a href="classmoonray_1_1shading_1_1_reflection_albedo.html#a85fc86fb2da6a20bc70334667241ad71">moonray::shading::ReflectionAlbedo::mBeckmannOneMinusEavg</a></div><div class="ttdeci">static const float mBeckmannOneMinusEavg[COMP]</div><div class="ttdef"><b>Definition:</b> <a href="_reflection_albedo_8h_source.html#l00111">ReflectionAlbedo.h:111</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_reflection_albedo_html_ac2dd7318b18324905834cde0079f742e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac2dd7318b18324905834cde0079f742e">moonray::shading::ReflectionAlbedo::mGGXOneMinusEavg</a></div><div class="ttdeci">static const float mGGXOneMinusEavg[COMP]</div><div class="ttdef"><b>Definition:</b> <a href="_reflection_albedo_8h_source.html#l00112">ReflectionAlbedo.h:112</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7702aa1ae977b3c736a9b936eafa7460" name="a7702aa1ae977b3c736a9b936eafa7460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7702aa1ae977b3c736a9b936eafa7460">&#9670;&#160;</a></span>rIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t moonray::shading::ReflectionAlbedo::rIndex </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>roughness</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>weight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_reflection_albedo_8h_source.html#l00100">100</a> of file <a class="el" href="_reflection_albedo_8h_source.html">ReflectionAlbedo.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  102</span>    {</div>
+<div class="line"><span class="lineno">  103</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> i = roughness * (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_reflection_albedo.html#ac7b8d819cba2e47e7e8bce3587f4563f">COMP</a> - 1);</div>
+<div class="line"><span class="lineno">  104</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> indexI = floor(i);</div>
+<div class="line"><span class="lineno">  105</span>        weight = (i-indexI);</div>
+<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(indexI);</div>
+<div class="line"><span class="lineno">  107</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac7b8d819cba2e47e7e8bce3587f4563f" name="ac7b8d819cba2e47e7e8bce3587f4563f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7b8d819cba2e47e7e8bce3587f4563f">&#9670;&#160;</a></span>COMP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t moonray::shading::ReflectionAlbedo::COMP = 33</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_reflection_albedo_8h_source.html#l00108">108</a> of file <a class="el" href="_reflection_albedo_8h_source.html">ReflectionAlbedo.h</a>.</p>
+
+</div>
+</div>
+<a id="ada3ff2ea96db3a329417c09a7eaaa6e4" name="ada3ff2ea96db3a329417c09a7eaaa6e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada3ff2ea96db3a329417c09a7eaaa6e4">&#9670;&#160;</a></span>mBeckmannE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float moonray::shading::ReflectionAlbedo::mBeckmannE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_reflection_albedo_8h_source.html#l00109">109</a> of file <a class="el" href="_reflection_albedo_8h_source.html">ReflectionAlbedo.h</a>.</p>
+
+</div>
+</div>
+<a id="a85fc86fb2da6a20bc70334667241ad71" name="a85fc86fb2da6a20bc70334667241ad71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85fc86fb2da6a20bc70334667241ad71">&#9670;&#160;</a></span>mBeckmannOneMinusEavg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float moonray::shading::ReflectionAlbedo::mBeckmannOneMinusEavg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    0.00035f, 0.00000f, 0.00000f, 0.00000f, 0.00000f, 0.00013f, 0.00040f, 0.00082f, 0.00151f, 0.00244f, 0.00398f, 0.00585f, 0.00845f, 0.01183f, 0.01617f, 0.02135f, 0.02798f, 0.03557f, 0.04480f, 0.05489f, 0.06719f, 0.08088f, 0.09632f, 0.11434f, 0.13464f, 0.15585f, 0.17984f, 0.20522f, 0.23245f, 0.26100f, 0.29115f, 0.32208f, 0.35467f,</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_reflection_albedo_8h_source.html#l00111">111</a> of file <a class="el" href="_reflection_albedo_8h_source.html">ReflectionAlbedo.h</a>.</p>
+
+</div>
+</div>
+<a id="aaa76710c71c7c6d4a768b675c97a3c62" name="aaa76710c71c7c6d4a768b675c97a3c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa76710c71c7c6d4a768b675c97a3c62">&#9670;&#160;</a></span>mGGXE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float moonray::shading::ReflectionAlbedo::mGGXE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_reflection_albedo_8h_source.html#l00110">110</a> of file <a class="el" href="_reflection_albedo_8h_source.html">ReflectionAlbedo.h</a>.</p>
+
+</div>
+</div>
+<a id="ac2dd7318b18324905834cde0079f742e" name="ac2dd7318b18324905834cde0079f742e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2dd7318b18324905834cde0079f742e">&#9670;&#160;</a></span>mGGXOneMinusEavg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float moonray::shading::ReflectionAlbedo::mGGXOneMinusEavg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    0.00000f, 0.00000f, 0.00000f, 0.00014f, 0.00075f, 0.00214f, 0.00443f, 0.00791f, 0.01247f, 0.01862f, 0.02647f, 0.03597f, 0.04817f, 0.06207f, 0.07844f, 0.09731f, 0.11854f, 0.14172f, 0.16804f, 0.19558f, 0.22590f, 0.25718f, 0.29005f, 0.32423f, 0.35949f, 0.39430f, 0.42952f, 0.46477f, 0.49911f, 0.53271f, 0.56573f, 0.59744f, 0.62837f,</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_reflection_albedo_8h_source.html#l00112">112</a> of file <a class="el" href="_reflection_albedo_8h_source.html">ReflectionAlbedo.h</a>.</p>
 
 </div>
 </div>
@@ -150,9 +472,13 @@ Static Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/bsdf/cook_torrance/energy_compensation/<a class="el" href="_reflection_albedo_8h_source.html">ReflectionAlbedo.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_reflection_albedo.html">ReflectionAlbedo</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

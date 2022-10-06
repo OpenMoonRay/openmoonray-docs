@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1mcrt__common.html">mcrt_common</a></li><li class="navelem"><a class="el" href="classmoonray_1_1mcrt__common_1_1_local_queue.html">LocalQueue</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1mcrt__common_1_1_local_queue.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -187,7 +203,22 @@ template&lt;typename T , bool SORTED = false, unsigned SORT_KEY_OFFSET = 0&gt; <
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bundle_8h_source.html#l00046">46</a> of file <a class="el" href="_bundle_8h_source.html">Bundle.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   46</span>                 :</div>
+<div class="line"><span class="lineno">   47</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aca1a1b31958be8beffc54ee8dcd2c6ce">mQueueSize</a> {0},</div>
+<div class="line"><span class="lineno">   48</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a1f9de458ea34dc878b2c76783dd3fca2">mMaxEntries</a>(0),</div>
+<div class="line"><span class="lineno">   49</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a3d37e42c1be9b022974b32d3bf8d1bb5">mEntries</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">   50</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ad66818130cd0717d927c66eb8b2c000d">mHandler</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">   51</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aef12a0b9002dd93b5177da45c5623443">mHandlerData</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">   52</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a>(0)</div>
+<div class="line"><span class="lineno">   53</span>    {</div>
+<div class="line"><span class="lineno">   54</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_local_queue_html_a1f9de458ea34dc878b2c76783dd3fca2"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a1f9de458ea34dc878b2c76783dd3fca2">moonray::mcrt_common::LocalQueue::mMaxEntries</a></div><div class="ttdeci">uint32_t mMaxEntries</div><div class="ttdef"><b>Definition:</b> <a href="_bundle_8h_source.html#l00216">Bundle.h:216</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_local_queue_html_a3d37e42c1be9b022974b32d3bf8d1bb5"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a3d37e42c1be9b022974b32d3bf8d1bb5">moonray::mcrt_common::LocalQueue::mEntries</a></div><div class="ttdeci">EntryType * mEntries</div><div class="ttdef"><b>Definition:</b> <a href="_bundle_8h_source.html#l00217">Bundle.h:217</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_local_queue_html_ab9c93ec73f8acae321ea8f45ef5e78e7"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">moonray::mcrt_common::LocalQueue::mNumQueued</a></div><div class="ttdeci">uint32_t mNumQueued</div><div class="ttdef"><b>Definition:</b> <a href="_bundle_8h_source.html#l00220">Bundle.h:220</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_local_queue_html_aca1a1b31958be8beffc54ee8dcd2c6ce"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aca1a1b31958be8beffc54ee8dcd2c6ce">moonray::mcrt_common::LocalQueue::mQueueSize</a></div><div class="ttdeci">tbb::atomic&lt; uint32_t &gt; mQueueSize</div><div class="ttdef"><b>Definition:</b> <a href="_bundle_8h_source.html#l00215">Bundle.h:215</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_local_queue_html_ad66818130cd0717d927c66eb8b2c000d"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ad66818130cd0717d927c66eb8b2c000d">moonray::mcrt_common::LocalQueue::mHandler</a></div><div class="ttdeci">Handler mHandler</div><div class="ttdef"><b>Definition:</b> <a href="_bundle_8h_source.html#l00218">Bundle.h:218</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_local_queue_html_aef12a0b9002dd93b5177da45c5623443"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aef12a0b9002dd93b5177da45c5623443">moonray::mcrt_common::LocalQueue::mHandlerData</a></div><div class="ttdeci">void * mHandlerData</div><div class="ttdef"><b>Definition:</b> <a href="_bundle_8h_source.html#l00219">Bundle.h:219</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -240,7 +271,32 @@ template&lt;typename T , bool SORTED = false, unsigned SORT_KEY_OFFSET = 0&gt; <
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bundle_8h_source.html#l00117">117</a> of file <a class="el" href="_bundle_8h_source.html">Bundle.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  119</span>    {</div>
+<div class="line"><span class="lineno">  120</span>        <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(tls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a6d9c5454eed92d0aee576062cd857d35">EXCL_ACCUM_QUEUE_LOGIC</a>);</div>
+<div class="line"><span class="lineno">  121</span> </div>
+<div class="line"><span class="lineno">  122</span>        MNRY_ASSERT(numEntries);</div>
+<div class="line"><span class="lineno">  123</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a> &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aca1a1b31958be8beffc54ee8dcd2c6ce">mQueueSize</a>);</div>
+<div class="line"><span class="lineno">  124</span> </div>
+<div class="line"><span class="lineno">  125</span>        uint32_t totalEntries = <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a> + numEntries;</div>
+<div class="line"><span class="lineno">  126</span> </div>
+<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">if</span> (totalEntries &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aca1a1b31958be8beffc54ee8dcd2c6ce">mQueueSize</a>) {</div>
+<div class="line"><span class="lineno">  128</span>            <span class="comment">// Copy data into queue.</span></div>
+<div class="line"><span class="lineno">  129</span>            memcpy(<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a3d37e42c1be9b022974b32d3bf8d1bb5">mEntries</a> + <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a>, entries, numEntries * <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a7d9b9a28d10b64f45f216b62babe62b6">EntryType</a>));</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>            <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a> = totalEntries;</div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  134</span>        }</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>        <a class="code hl_function" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a7b36a702886c2da95c989700b7fc1dc4">flushInternal</a>(tls, numEntries, entries, arena);</div>
+<div class="line"><span class="lineno">  137</span> </div>
+<div class="line"><span class="lineno">  138</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a> &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aca1a1b31958be8beffc54ee8dcd2c6ce">mQueueSize</a>);</div>
+<div class="line"><span class="lineno">  139</span>    }</div>
+<div class="ttc" id="a_profile_accumulator_handles_8h_html_a6335af8746974a0365ae8756b7d5d73f"><div class="ttname"><a href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a></div><div class="ttdeci">#define EXCL_ACCUMULATOR_PROFILE(tls, type)</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_handles_8h_source.html#l00020">ProfileAccumulatorHandles.h:20</a></div></div>
+<div class="ttc" id="a_profile_accumulator_handles_8hh_html_ae7f4a146d68256e9f19dcbde6c38c9b2a6d9c5454eed92d0aee576062cd857d35"><div class="ttname"><a href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a6d9c5454eed92d0aee576062cd857d35">EXCL_ACCUM_QUEUE_LOGIC</a></div><div class="ttdeci">@ EXCL_ACCUM_QUEUE_LOGIC</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_handles_8hh_source.html#l00075">ProfileAccumulatorHandles.hh:75</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_local_queue_html_a7b36a702886c2da95c989700b7fc1dc4"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a7b36a702886c2da95c989700b7fc1dc4">moonray::mcrt_common::LocalQueue::flushInternal</a></div><div class="ttdeci">unsigned flushInternal(mcrt_common::ThreadLocalState *tls, uint32_t numNewEntries, T *newEntries, scene_rdl2::alloc::Arena *arena)</div><div class="ttdef"><b>Definition:</b> <a href="_bundle_8h_source.html#l00154">Bundle.h:154</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_local_queue_html_a7d9b9a28d10b64f45f216b62babe62b6"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a7d9b9a28d10b64f45f216b62babe62b6">moonray::mcrt_common::LocalQueue::EntryType</a></div><div class="ttdeci">T EntryType</div><div class="ttdef"><b>Definition:</b> <a href="_bundle_8h_source.html#l00041">Bundle.h:41</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a23433511bf2a69555953f3f0b30abb9b" name="a23433511bf2a69555953f3f0b30abb9b"></a>
@@ -280,7 +336,17 @@ template&lt;typename T , bool SORTED = false, unsigned SORT_KEY_OFFSET = 0&gt; <
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bundle_8h_source.html#l00142">142</a> of file <a class="el" href="_bundle_8h_source.html">Bundle.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  143</span>    {</div>
+<div class="line"><span class="lineno">  144</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a> &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aca1a1b31958be8beffc54ee8dcd2c6ce">mQueueSize</a>);</div>
+<div class="line"><span class="lineno">  145</span> </div>
+<div class="line"><span class="lineno">  146</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a5266684d3f66e01198d819741d7fb06d">isEmpty</a>()) {</div>
+<div class="line"><span class="lineno">  147</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  148</span>        }</div>
+<div class="line"><span class="lineno">  149</span> </div>
+<div class="line"><span class="lineno">  150</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a7b36a702886c2da95c989700b7fc1dc4">flushInternal</a>(tls, 0, <span class="keyword">nullptr</span>, arena);</div>
+<div class="line"><span class="lineno">  151</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_local_queue_html_a5266684d3f66e01198d819741d7fb06d"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a5266684d3f66e01198d819741d7fb06d">moonray::mcrt_common::LocalQueue::isEmpty</a></div><div class="ttdeci">bool isEmpty() const</div><div class="ttdef"><b>Definition:</b> <a href="_bundle_8h_source.html#l00093">Bundle.h:93</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7b36a702886c2da95c989700b7fc1dc4" name="a7b36a702886c2da95c989700b7fc1dc4"></a>
@@ -332,7 +398,64 @@ template&lt;typename T , bool SORTED = false, unsigned SORT_KEY_OFFSET = 0&gt; <
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bundle_8h_source.html#l00154">154</a> of file <a class="el" href="_bundle_8h_source.html">Bundle.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  157</span>    {</div>
+<div class="line"><span class="lineno">  158</span>        <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(tls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a6d9c5454eed92d0aee576062cd857d35">EXCL_ACCUM_QUEUE_LOGIC</a>);</div>
+<div class="line"><span class="lineno">  159</span> </div>
+<div class="line"><span class="lineno">  160</span>        SCOPED_MEM(arena);</div>
+<div class="line"><span class="lineno">  161</span> </div>
+<div class="line"><span class="lineno">  162</span>        uint32_t totalEntries = <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a> + numNewEntries;</div>
+<div class="line"><span class="lineno">  163</span> </div>
+<div class="line"><span class="lineno">  164</span>        MNRY_ASSERT(totalEntries);</div>
+<div class="line"><span class="lineno">  165</span> </div>
+<div class="line"><span class="lineno">  166</span>        <span class="comment">// We always want to copy entries since there may be cycles which allows</span></div>
+<div class="line"><span class="lineno">  167</span>        <span class="comment">// other code to add to this queue further down in the callstack. This is</span></div>
+<div class="line"><span class="lineno">  168</span>        <span class="comment">// something this queue supports and encourages.</span></div>
+<div class="line"><span class="lineno">  169</span>        <a class="code hl_typedef" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a7d9b9a28d10b64f45f216b62babe62b6">EntryType</a> *entries = arena-&gt;allocArray&lt;<a class="code hl_typedef" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a7d9b9a28d10b64f45f216b62babe62b6">EntryType</a>&gt;(totalEntries);</div>
+<div class="line"><span class="lineno">  170</span> </div>
+<div class="line"><span class="lineno">  171</span>        <span class="comment">// Copy initial entries.</span></div>
+<div class="line"><span class="lineno">  172</span>        memcpy(entries, <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a3d37e42c1be9b022974b32d3bf8d1bb5">mEntries</a>, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a7d9b9a28d10b64f45f216b62babe62b6">EntryType</a>) * <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a>);</div>
+<div class="line"><span class="lineno">  173</span> </div>
+<div class="line"><span class="lineno">  174</span>        <span class="comment">// Copy additional entries.</span></div>
+<div class="line"><span class="lineno">  175</span>        <span class="keywordflow">if</span> (numNewEntries) {</div>
+<div class="line"><span class="lineno">  176</span>            memcpy(entries + <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a>, newEntries, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a7d9b9a28d10b64f45f216b62babe62b6">EntryType</a>) * numNewEntries);</div>
+<div class="line"><span class="lineno">  177</span>        }</div>
+<div class="line"><span class="lineno">  178</span> </div>
+<div class="line"><span class="lineno">  179</span>        <span class="keywordtype">unsigned</span> entriesToFlush = totalEntries;</div>
+<div class="line"><span class="lineno">  180</span> </div>
+<div class="line"><span class="lineno">  181</span>        <span class="comment">// Only flush a multiple of the number of lanes we have unless we&#39;re doing an</span></div>
+<div class="line"><span class="lineno">  182</span>        <span class="comment">// explicit flush (totalEntries &lt; mQueueSize) or queue is exactly full.</span></div>
+<div class="line"><span class="lineno">  183</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a> = 0;</div>
+<div class="line"><span class="lineno">  184</span>        <span class="keywordflow">if</span> (totalEntries &gt; <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aca1a1b31958be8beffc54ee8dcd2c6ce">mQueueSize</a>) {</div>
+<div class="line"><span class="lineno">  185</span> </div>
+<div class="line"><span class="lineno">  186</span>            <span class="keywordtype">unsigned</span> potentiallyQueued = totalEntries &amp; (VLEN - 1);</div>
+<div class="line"><span class="lineno">  187</span> </div>
+<div class="line"><span class="lineno">  188</span>            <span class="comment">// Copy the left overs back into the primary queue. It&#39;s safe to do this</span></div>
+<div class="line"><span class="lineno">  189</span>            <span class="comment">// now since we always copy the entries before calling the handler.</span></div>
+<div class="line"><span class="lineno">  190</span>            <span class="keywordflow">if</span> (potentiallyQueued &amp;&amp; potentiallyQueued &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aca1a1b31958be8beffc54ee8dcd2c6ce">mQueueSize</a>) {</div>
+<div class="line"><span class="lineno">  191</span>                <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a> = potentiallyQueued;</div>
+<div class="line"><span class="lineno">  192</span>                entriesToFlush -= potentiallyQueued;</div>
+<div class="line"><span class="lineno">  193</span>                memcpy(<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a3d37e42c1be9b022974b32d3bf8d1bb5">mEntries</a>, entries + entriesToFlush, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a7d9b9a28d10b64f45f216b62babe62b6">EntryType</a>) * potentiallyQueued);</div>
+<div class="line"><span class="lineno">  194</span>            }</div>
+<div class="line"><span class="lineno">  195</span>        }</div>
+<div class="line"><span class="lineno">  196</span> </div>
+<div class="line"><span class="lineno">  197</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a> &lt; VLEN);</div>
+<div class="line"><span class="lineno">  198</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a> &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aca1a1b31958be8beffc54ee8dcd2c6ce">mQueueSize</a>);</div>
+<div class="line"><span class="lineno">  199</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a> + entriesToFlush == totalEntries);</div>
+<div class="line"><span class="lineno">  200</span> </div>
+<div class="line"><span class="lineno">  201</span>        <span class="keywordflow">if</span> (SORTED) {</div>
+<div class="line"><span class="lineno">  202</span>            scene_rdl2::util::inPlaceSort32&lt;EntryType, SORT_KEY_OFFSET, 200&gt;(entriesToFlush, entries, arena);</div>
+<div class="line"><span class="lineno">  203</span>        }</div>
+<div class="line"><span class="lineno">  204</span> </div>
+<div class="line"><span class="lineno">  205</span>        <span class="comment">// Call handler. The entries are only valid for the duration of this call.</span></div>
+<div class="line"><span class="lineno">  206</span>        <span class="comment">// Other threads may also call this handler simultaneously with different entries.</span></div>
+<div class="line"><span class="lineno">  207</span>        ++tls-&gt;mHandlerStackDepth;</div>
+<div class="line"><span class="lineno">  208</span>        (*mHandler)(tls, entriesToFlush, entries, <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aef12a0b9002dd93b5177da45c5623443">mHandlerData</a>);</div>
+<div class="line"><span class="lineno">  209</span>        MNRY_ASSERT(tls-&gt;mHandlerStackDepth &gt; 0);</div>
+<div class="line"><span class="lineno">  210</span>        --tls-&gt;mHandlerStackDepth;</div>
+<div class="line"><span class="lineno">  211</span> </div>
+<div class="line"><span class="lineno">  212</span>        <span class="keywordflow">return</span> unsigned(entriesToFlush);</div>
+<div class="line"><span class="lineno">  213</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4d9bce251d4d557f273e2fbcc73f6a2b" name="a4d9bce251d4d557f273e2fbcc73f6a2b"></a>
@@ -361,7 +484,10 @@ template&lt;typename T , bool SORTED = false, unsigned SORT_KEY_OFFSET = 0&gt; <
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bundle_8h_source.html#l00098">98</a> of file <a class="el" href="_bundle_8h_source.html">Bundle.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   99</span>    {</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">return</span> unsigned(<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a1f9de458ea34dc878b2c76783dd3fca2">mMaxEntries</a>);</div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac47da5a2da0961d3fb9904b0a6b65c4c" name="ac47da5a2da0961d3fb9904b0a6b65c4c"></a>
@@ -390,7 +516,10 @@ template&lt;typename T , bool SORTED = false, unsigned SORT_KEY_OFFSET = 0&gt; <
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bundle_8h_source.html#l00066">66</a> of file <a class="el" href="_bundle_8h_source.html">Bundle.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   67</span>    {</div>
+<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">return</span> (<span class="keyword">sizeof</span>(T) * <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a1f9de458ea34dc878b2c76783dd3fca2">mMaxEntries</a>) + <span class="keyword">sizeof</span>(*this);</div>
+<div class="line"><span class="lineno">   69</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adcf9388d82bb42bcfdc1818c4f61a134" name="adcf9388d82bb42bcfdc1818c4f61a134"></a>
@@ -419,7 +548,10 @@ template&lt;typename T , bool SORTED = false, unsigned SORT_KEY_OFFSET = 0&gt; <
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bundle_8h_source.html#l00103">103</a> of file <a class="el" href="_bundle_8h_source.html">Bundle.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  104</span>    {</div>
+<div class="line"><span class="lineno">  105</span>        <span class="keywordflow">return</span> unsigned(<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aca1a1b31958be8beffc54ee8dcd2c6ce">mQueueSize</a>);</div>
+<div class="line"><span class="lineno">  106</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac617b61fb31f3759c04b47346a88603c" name="ac617b61fb31f3759c04b47346a88603c"></a>
@@ -459,7 +591,14 @@ template&lt;typename T , bool SORTED = false, unsigned SORT_KEY_OFFSET = 0&gt; <
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bundle_8h_source.html#l00057">57</a> of file <a class="el" href="_bundle_8h_source.html">Bundle.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   58</span>    {</div>
+<div class="line"><span class="lineno">   59</span>        MNRY_ASSERT(maxEntries);</div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a1f9de458ea34dc878b2c76783dd3fca2">mMaxEntries</a> = <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aca1a1b31958be8beffc54ee8dcd2c6ce">mQueueSize</a> = uint32_t(maxEntries);</div>
+<div class="line"><span class="lineno">   62</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a> = 0;</div>
+<div class="line"><span class="lineno">   63</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a3d37e42c1be9b022974b32d3bf8d1bb5">mEntries</a> = (<a class="code hl_typedef" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a7d9b9a28d10b64f45f216b62babe62b6">EntryType</a> *)entryMemory;</div>
+<div class="line"><span class="lineno">   64</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5266684d3f66e01198d819741d7fb06d" name="a5266684d3f66e01198d819741d7fb06d"></a>
@@ -488,7 +627,10 @@ template&lt;typename T , bool SORTED = false, unsigned SORT_KEY_OFFSET = 0&gt; <
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bundle_8h_source.html#l00093">93</a> of file <a class="el" href="_bundle_8h_source.html">Bundle.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   94</span>    {</div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a> == 0;</div>
+<div class="line"><span class="lineno">   96</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1a4c485dd290ede1821ed3b65a5fe780" name="a1a4c485dd290ede1821ed3b65a5fe780"></a>
@@ -517,7 +659,14 @@ template&lt;typename T , bool SORTED = false, unsigned SORT_KEY_OFFSET = 0&gt; <
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bundle_8h_source.html#l00108">108</a> of file <a class="el" href="_bundle_8h_source.html">Bundle.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  109</span>    {</div>
+<div class="line"><span class="lineno">  110</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a1f9de458ea34dc878b2c76783dd3fca2">mMaxEntries</a> &gt; 0);</div>
+<div class="line"><span class="lineno">  111</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a1f9de458ea34dc878b2c76783dd3fca2">mMaxEntries</a> &gt;= <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aca1a1b31958be8beffc54ee8dcd2c6ce">mQueueSize</a>);</div>
+<div class="line"><span class="lineno">  112</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a> &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aca1a1b31958be8beffc54ee8dcd2c6ce">mQueueSize</a>);</div>
+<div class="line"><span class="lineno">  113</span>        MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ad66818130cd0717d927c66eb8b2c000d">mHandler</a>);</div>
+<div class="line"><span class="lineno">  114</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  115</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6cf5b4815e8585651a21ebbf7ee74718" name="a6cf5b4815e8585651a21ebbf7ee74718"></a>
@@ -546,7 +695,10 @@ template&lt;typename T , bool SORTED = false, unsigned SORT_KEY_OFFSET = 0&gt; <
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bundle_8h_source.html#l00088">88</a> of file <a class="el" href="_bundle_8h_source.html">Bundle.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   89</span>    {</div>
+<div class="line"><span class="lineno">   90</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a> = 0;</div>
+<div class="line"><span class="lineno">   91</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a47b537f3a5d8b65bd452d71cf97c3146" name="a47b537f3a5d8b65bd452d71cf97c3146"></a>
@@ -586,7 +738,11 @@ template&lt;typename T , bool SORTED = false, unsigned SORT_KEY_OFFSET = 0&gt; <
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bundle_8h_source.html#l00082">82</a> of file <a class="el" href="_bundle_8h_source.html">Bundle.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   83</span>    {</div>
+<div class="line"><span class="lineno">   84</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ad66818130cd0717d927c66eb8b2c000d">mHandler</a> = handler;</div>
+<div class="line"><span class="lineno">   85</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aef12a0b9002dd93b5177da45c5623443">mHandlerData</a> = handlerData;</div>
+<div class="line"><span class="lineno">   86</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a345f801e2b2a2c375a5219be8ed2924f" name="a345f801e2b2a2c375a5219be8ed2924f"></a>
@@ -616,7 +772,13 @@ template&lt;typename T , bool SORTED = false, unsigned SORT_KEY_OFFSET = 0&gt; <
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bundle_8h_source.html#l00075">75</a> of file <a class="el" href="_bundle_8h_source.html">Bundle.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   76</span>    {</div>
+<div class="line"><span class="lineno">   77</span>        MNRY_ASSERT(size &lt;= <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#a1f9de458ea34dc878b2c76783dd3fca2">mMaxEntries</a>);</div>
+<div class="line"><span class="lineno">   78</span>        MNRY_ASSERT(size &gt; <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#ab9c93ec73f8acae321ea8f45ef5e78e7">mNumQueued</a>);</div>
+<div class="line"><span class="lineno">   79</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_local_queue.html#aca1a1b31958be8beffc54ee8dcd2c6ce">mQueueSize</a> = <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a>;</div>
+<div class="line"><span class="lineno">   80</span>    }</div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_resume_history_meta_data_8cc_03_html_a9a38a2aa0f811fa9e3761cd0049c46b8"><div class="ttname"><a href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">anonymous_namespace{ResumeHistoryMetaData.cc}::size</a></div><div class="ttdeci">MAYBE_UNUSED std::size_t size(const std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="_resume_history_meta_data_8cc_source.html#l00047">ResumeHistoryMetaData.cc:47</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -780,9 +942,13 @@ template&lt;typename T , bool SORTED = false, unsigned SORT_KEY_OFFSET = 0&gt; <
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/mcrt_common/<a class="el" href="_bundle_8h_source.html">Bundle.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1mcrt__common.html">mcrt_common</a></li><li class="navelem"><a class="el" href="classmoonray_1_1mcrt__common_1_1_local_queue.html">LocalQueue</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

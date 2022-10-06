@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_debug_ray_database.html">DebugRayDatabase</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_debug_ray_database.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1pbr_1_1_debug_ray_database-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::pbr::DebugRayDatabase Class Reference</div></div>
 </div><!--header-->
@@ -83,6 +101,25 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a79af059a4f8f19259bad1cae5364976f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adce1aaa28a8cbd6d35a12fad379aa216"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#adce1aaa28a8cbd6d35a12fad379aa216">isValid</a> () const</td></tr>
 <tr class="separator:adce1aaa28a8cbd6d35a12fad379aa216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aed733aec2c5031aff68a739ecd06daef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#aed733aec2c5031aff68a739ecd06daef">buildScreenPositions</a> ()</td></tr>
+<tr class="separator:aed733aec2c5031aff68a739ecd06daef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a362b9928fdc05b837ea4bd9d5546c747"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a362b9928fdc05b837ea4bd9d5546c747">mWidth</a></td></tr>
+<tr class="separator:a362b9928fdc05b837ea4bd9d5546c747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323a4da107c81541aa905ae6de76bf52"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a323a4da107c81541aa905ae6de76bf52">mHeight</a></td></tr>
+<tr class="separator:a323a4da107c81541aa905ae6de76bf52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e268c5bb1e88daea1c0bc08f2de53fd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structmoonray_1_1pbr_1_1_debug_ray_vertex.html">DebugRayVertex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">mVertices</a></td></tr>
+<tr class="separator:a1e268c5bb1e88daea1c0bc08f2de53fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3a4b416192fc615b9c29d8ae43aafca"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#af3a4b416192fc615b9c29d8ae43aafca">mPrimaryRayIndices</a></td></tr>
+<tr class="memdesc:af3a4b416192fc615b9c29d8ae43aafca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each element in this vector is the index of a new primary ray the mVertices vector.  <a href="classmoonray_1_1pbr_1_1_debug_ray_database.html#af3a4b416192fc615b9c29d8ae43aafca">More...</a><br /></td></tr>
+<tr class="separator:af3a4b416192fc615b9c29d8ae43aafca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fd6a352029bd34c9275e58e14afa4e3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a5fd6a352029bd34c9275e58e14afa4e3">mScreenPositions</a></td></tr>
+<tr class="separator:a5fd6a352029bd34c9275e58e14afa4e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The <a class="el" href="classmoonray_1_1pbr_1_1_debug_ray_database.html">DebugRayDatabase</a> class is really just a container for the data generated by the <a class="el" href="classmoonray_1_1pbr_1_1_debug_ray_builder.html">DebugRayBuilder</a>. See <a class="el" href="classmoonray_1_1pbr_1_1_debug_ray_builder.html">DebugRayBuilder</a> for further comments about what each member vector contains.</p>
@@ -114,7 +151,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_debug_ray_8h_source.html#l00412">412</a> of file <a class="el" href="_debug_ray_8h_source.html">DebugRay.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  412</span>{ <a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#aaac2928b161a6b038fcd7bd334176801">cleanUp</a>(); }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_debug_ray_database_html_aaac2928b161a6b038fcd7bd334176801"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_debug_ray_database.html#aaac2928b161a6b038fcd7bd334176801">moonray::pbr::DebugRayDatabase::cleanUp</a></div><div class="ttdeci">void cleanUp()</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8cc_source.html#l00666">DebugRay.cc:666</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aebd989084664817328c8c25b6c80edb9" name="aebd989084664817328c8c25b6c80edb9"></a>
@@ -141,10 +180,60 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_debug_ray_8h_source.html#l00413">413</a> of file <a class="el" href="_debug_ray_8h_source.html">DebugRay.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  413</span>{ <a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#aaac2928b161a6b038fcd7bd334176801">cleanUp</a>(); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aed733aec2c5031aff68a739ecd06daef" name="aed733aec2c5031aff68a739ecd06daef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed733aec2c5031aff68a739ecd06daef">&#9670;&#160;</a></span>buildScreenPositions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::pbr::DebugRayDatabase::buildScreenPositions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_debug_ray_8cc_source.html#l00798">798</a> of file <a class="el" href="_debug_ray_8cc_source.html">DebugRay.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  799</span>{</div>
+<div class="line"><span class="lineno">  800</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#af3a4b416192fc615b9c29d8ae43aafca">mPrimaryRayIndices</a>.empty()) {</div>
+<div class="line"><span class="lineno">  801</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  802</span>    }</div>
+<div class="line"><span class="lineno">  803</span> </div>
+<div class="line"><span class="lineno">  804</span>    <span class="keywordtype">size_t</span> numPrimaryRay = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#af3a4b416192fc615b9c29d8ae43aafca">mPrimaryRayIndices</a>.size();</div>
+<div class="line"><span class="lineno">  805</span>    MNRY_ASSERT(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">mVertices</a>.size() &gt;= numPrimaryRay);</div>
+<div class="line"><span class="lineno">  806</span> </div>
+<div class="line"><span class="lineno">  807</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a5fd6a352029bd34c9275e58e14afa4e3">mScreenPositions</a>.resize(numPrimaryRay);</div>
+<div class="line"><span class="lineno">  808</span> </div>
+<div class="line"><span class="lineno">  809</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; numPrimaryRay; ++i) {</div>
+<div class="line"><span class="lineno">  810</span>        DebugRayVertex <span class="keyword">const</span> &amp;vert = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">mVertices</a>[<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#af3a4b416192fc615b9c29d8ae43aafca">mPrimaryRayIndices</a>[i]];</div>
+<div class="line"><span class="lineno">  811</span>        MNRY_ASSERT(vert.mParentId == <a class="code hl_define" href="_debug_ray_8cc.html#a0295e1f2c83944970ff96e6f8c1db038">NULL_RAY_VERTEX_ID</a>);</div>
+<div class="line"><span class="lineno">  812</span> </div>
+<div class="line"><span class="lineno">  813</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a5fd6a352029bd34c9275e58e14afa4e3">mScreenPositions</a>[i] = vert.mScreenY * <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a362b9928fdc05b837ea4bd9d5546c747">mWidth</a> + vert.mScreenX;</div>
+<div class="line"><span class="lineno">  814</span>    }</div>
+<div class="line"><span class="lineno">  815</span>}</div>
+<div class="ttc" id="a_debug_ray_8cc_html_a0295e1f2c83944970ff96e6f8c1db038"><div class="ttname"><a href="_debug_ray_8cc.html#a0295e1f2c83944970ff96e6f8c1db038">NULL_RAY_VERTEX_ID</a></div><div class="ttdeci">#define NULL_RAY_VERTEX_ID</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8cc_source.html#l00018">DebugRay.cc:18</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_debug_ray_database_html_a1e268c5bb1e88daea1c0bc08f2de53fd"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">moonray::pbr::DebugRayDatabase::mVertices</a></div><div class="ttdeci">std::vector&lt; DebugRayVertex &gt; mVertices</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8h_source.html#l00436">DebugRay.h:436</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_debug_ray_database_html_a362b9928fdc05b837ea4bd9d5546c747"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a362b9928fdc05b837ea4bd9d5546c747">moonray::pbr::DebugRayDatabase::mWidth</a></div><div class="ttdeci">uint32_t mWidth</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8h_source.html#l00433">DebugRay.h:433</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_debug_ray_database_html_a5fd6a352029bd34c9275e58e14afa4e3"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a5fd6a352029bd34c9275e58e14afa4e3">moonray::pbr::DebugRayDatabase::mScreenPositions</a></div><div class="ttdeci">std::vector&lt; uint32_t &gt; mScreenPositions</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8h_source.html#l00443">DebugRay.h:443</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_debug_ray_database_html_af3a4b416192fc615b9c29d8ae43aafca"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_debug_ray_database.html#af3a4b416192fc615b9c29d8ae43aafca">moonray::pbr::DebugRayDatabase::mPrimaryRayIndices</a></div><div class="ttdeci">std::vector&lt; uint32_t &gt; mPrimaryRayIndices</div><div class="ttdoc">Each element in this vector is the index of a new primary ray the mVertices vector.</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8h_source.html#l00439">DebugRay.h:439</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="aaac2928b161a6b038fcd7bd334176801" name="aaac2928b161a6b038fcd7bd334176801"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaac2928b161a6b038fcd7bd334176801">&#9670;&#160;</a></span>cleanUp()</h2>
 
@@ -161,7 +250,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_debug_ray_8cc_source.html#l00666">666</a> of file <a class="el" href="_debug_ray_8cc_source.html">DebugRay.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  667</span>{</div>
+<div class="line"><span class="lineno">  668</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a362b9928fdc05b837ea4bd9d5546c747">mWidth</a> = 0;</div>
+<div class="line"><span class="lineno">  669</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a323a4da107c81541aa905ae6de76bf52">mHeight</a> = 0;</div>
+<div class="line"><span class="lineno">  670</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">mVertices</a>.clear();</div>
+<div class="line"><span class="lineno">  671</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#af3a4b416192fc615b9c29d8ae43aafca">mPrimaryRayIndices</a>.clear();</div>
+<div class="line"><span class="lineno">  672</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a5fd6a352029bd34c9275e58e14afa4e3">mScreenPositions</a>.clear();</div>
+<div class="line"><span class="lineno">  673</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_debug_ray_database_html_a323a4da107c81541aa905ae6de76bf52"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a323a4da107c81541aa905ae6de76bf52">moonray::pbr::DebugRayDatabase::mHeight</a></div><div class="ttdeci">uint32_t mHeight</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8h_source.html#l00434">DebugRay.h:434</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abb13160fcb81b9d84cb4057c57b6ae33" name="abb13160fcb81b9d84cb4057c57b6ae33"></a>
@@ -188,7 +285,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_debug_ray_8h_source.html#l00418">418</a> of file <a class="el" href="_debug_ray_8h_source.html">DebugRay.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  418</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#af3a4b416192fc615b9c29d8ae43aafca">mPrimaryRayIndices</a>.empty(); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a954269fbd4d99c02f027dc75473adc36" name="a954269fbd4d99c02f027dc75473adc36"></a>
@@ -215,7 +313,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_debug_ray_8h_source.html#l00421">421</a> of file <a class="el" href="_debug_ray_8h_source.html">DebugRay.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  421</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#af3a4b416192fc615b9c29d8ae43aafca">mPrimaryRayIndices</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a512ecac7dbe9115a4100c159de0ad41d" name="a512ecac7dbe9115a4100c159de0ad41d"></a>
@@ -235,7 +334,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_debug_ray_8cc_source.html#l00676">676</a> of file <a class="el" href="_debug_ray_8cc_source.html">DebugRay.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  677</span>{</div>
+<div class="line"><span class="lineno">  678</span>    <span class="keywordflow">if</span> (idx &lt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">mVertices</a>.size()) {</div>
+<div class="line"><span class="lineno">  679</span>        <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">mVertices</a>[idx];</div>
+<div class="line"><span class="lineno">  680</span>    }</div>
+<div class="line"><span class="lineno">  681</span> </div>
+<div class="line"><span class="lineno">  682</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  683</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad7268730174c70d42307c2f394b4b53e" name="ad7268730174c70d42307c2f394b4b53e"></a>
@@ -262,7 +368,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_debug_ray_8h_source.html#l00420">420</a> of file <a class="el" href="_debug_ray_8h_source.html">DebugRay.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  420</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">mVertices</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a186fb7239c3d71342ce942dab9b64f72" name="a186fb7239c3d71342ce942dab9b64f72"></a>
@@ -304,7 +411,21 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_debug_ray_8cc_source.html#l00651">651</a> of file <a class="el" href="_debug_ray_8cc_source.html">DebugRay.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  652</span>{</div>
+<div class="line"><span class="lineno">  653</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#aaac2928b161a6b038fcd7bd334176801">cleanUp</a>();</div>
+<div class="line"><span class="lineno">  654</span> </div>
+<div class="line"><span class="lineno">  655</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a362b9928fdc05b837ea4bd9d5546c747">mWidth</a> = width;</div>
+<div class="line"><span class="lineno">  656</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a323a4da107c81541aa905ae6de76bf52">mHeight</a> = height;</div>
+<div class="line"><span class="lineno">  657</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">mVertices</a> = vertices;</div>
+<div class="line"><span class="lineno">  658</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#af3a4b416192fc615b9c29d8ae43aafca">mPrimaryRayIndices</a> = primaryRayIndices;</div>
+<div class="line"><span class="lineno">  659</span> </div>
+<div class="line"><span class="lineno">  660</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#aed733aec2c5031aff68a739ecd06daef">buildScreenPositions</a>();</div>
+<div class="line"><span class="lineno">  661</span> </div>
+<div class="line"><span class="lineno">  662</span>    MNRY_ASSERT(<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#adce1aaa28a8cbd6d35a12fad379aa216">isValid</a>());</div>
+<div class="line"><span class="lineno">  663</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_debug_ray_database_html_adce1aaa28a8cbd6d35a12fad379aa216"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_debug_ray_database.html#adce1aaa28a8cbd6d35a12fad379aa216">moonray::pbr::DebugRayDatabase::isValid</a></div><div class="ttdeci">bool isValid() const</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8cc_source.html#l00776">DebugRay.cc:776</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_debug_ray_database_html_aed733aec2c5031aff68a739ecd06daef"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_debug_ray_database.html#aed733aec2c5031aff68a739ecd06daef">moonray::pbr::DebugRayDatabase::buildScreenPositions</a></div><div class="ttdeci">void buildScreenPositions()</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8cc_source.html#l00798">DebugRay.cc:798</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adce1aaa28a8cbd6d35a12fad379aa216" name="adce1aaa28a8cbd6d35a12fad379aa216"></a>
@@ -323,7 +444,27 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_debug_ray_8cc_source.html#l00776">776</a> of file <a class="el" href="_debug_ray_8cc_source.html">DebugRay.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  777</span>{</div>
+<div class="line"><span class="lineno">  778</span>    <a class="code hl_function" href="namespacemoonray_1_1mcrt__common.html#ab08805c1c0419089480617e5b58bae4e">MNRY_DURING_ASSERTS</a></div>
+<div class="line"><span class="lineno">  779</span>    (</div>
+<div class="line"><span class="lineno">  780</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">mVertices</a>.empty()) {</div>
+<div class="line"><span class="lineno">  781</span>            MNRY_ASSERT(mPrimaryRayIndices.empty());</div>
+<div class="line"><span class="lineno">  782</span>            MNRY_ASSERT(mScreenPositions.empty());</div>
+<div class="line"><span class="lineno">  783</span>            return true;</div>
+<div class="line"><span class="lineno">  784</span>        }</div>
+<div class="line"><span class="lineno">  785</span> </div>
+<div class="line"><span class="lineno">  786</span>        for (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">mVertices</a>.size(); ++i) {</div>
+<div class="line"><span class="lineno">  787</span>            DebugRayVertex <span class="keyword">const</span> &amp;vert = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">mVertices</a>[i];</div>
+<div class="line"><span class="lineno">  788</span>            MNRY_ASSERT(isValidFloat(vert.mHitPoint.x));</div>
+<div class="line"><span class="lineno">  789</span>            MNRY_ASSERT(isValidFloat(vert.mHitPoint.y));</div>
+<div class="line"><span class="lineno">  790</span>            MNRY_ASSERT(isValidFloat(vert.mHitPoint.z));</div>
+<div class="line"><span class="lineno">  791</span>        }</div>
+<div class="line"><span class="lineno">  792</span>    );</div>
+<div class="line"><span class="lineno">  793</span> </div>
+<div class="line"><span class="lineno">  794</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  795</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1mcrt__common_html_ab08805c1c0419089480617e5b58bae4e"><div class="ttname"><a href="namespacemoonray_1_1mcrt__common.html#ab08805c1c0419089480617e5b58bae4e">moonray::mcrt_common::MNRY_DURING_ASSERTS</a></div><div class="ttdeci">MNRY_DURING_ASSERTS(alignas(CACHE_LINE_SIZE) std::atomic_int gNumAccumulatorsActive)</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa9c33a12c182e8ddfc7217b996f25b71" name="aa9c33a12c182e8ddfc7217b996f25b71"></a>
@@ -343,7 +484,58 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_debug_ray_8cc_source.html#l00688">688</a> of file <a class="el" href="_debug_ray_8cc_source.html">DebugRay.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  689</span>{</div>
+<div class="line"><span class="lineno">  690</span>    FILE *file = fopen(fileName, <span class="stringliteral">&quot;rb&quot;</span>);</div>
+<div class="line"><span class="lineno">  691</span>    <span class="keywordflow">if</span> (!file) {</div>
+<div class="line"><span class="lineno">  692</span>        scene_rdl2::logging::Logger::error(<span class="stringliteral">&quot;[MCRT-RENDER] Unable to open file \&quot;&quot;</span> , fileName , <span class="stringliteral">&quot;\&quot;.&quot;</span>);</div>
+<div class="line"><span class="lineno">  693</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  694</span>    }</div>
+<div class="line"><span class="lineno">  695</span> </div>
+<div class="line"><span class="lineno">  696</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#aaac2928b161a6b038fcd7bd334176801">cleanUp</a>();</div>
+<div class="line"><span class="lineno">  697</span> </div>
+<div class="line"><span class="lineno">  698</span>    uint32_t <a class="code hl_function" href="namespacepackage.html#a6e76b3113eb5f252a56cd1db469e3f9a">version</a> = 0;</div>
+<div class="line"><span class="lineno">  699</span>    <a class="code hl_define" href="_debug_ray_8cc.html#a3ac8779f814a059a1cee35990a13e7b4">CHECK_WITH_FAILURE</a>( <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a429e5dad64b881d2fdccdef90364d5cd">read</a>(file, &amp;version) );</div>
+<div class="line"><span class="lineno">  700</span>    <a class="code hl_define" href="_debug_ray_8cc.html#a3ac8779f814a059a1cee35990a13e7b4">CHECK_WITH_FAILURE</a>( version == <a class="code hl_define" href="_debug_ray_8cc.html#a9eb883745b36e9f51a880c2f62fdcdcc">DEBUG_RAYS_VERSION</a> );</div>
+<div class="line"><span class="lineno">  701</span> </div>
+<div class="line"><span class="lineno">  702</span>    <a class="code hl_define" href="_debug_ray_8cc.html#a3ac8779f814a059a1cee35990a13e7b4">CHECK_WITH_FAILURE</a>( <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a429e5dad64b881d2fdccdef90364d5cd">read</a>(file, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a362b9928fdc05b837ea4bd9d5546c747">mWidth</a>) );</div>
+<div class="line"><span class="lineno">  703</span>    <a class="code hl_define" href="_debug_ray_8cc.html#a3ac8779f814a059a1cee35990a13e7b4">CHECK_WITH_FAILURE</a>( <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a429e5dad64b881d2fdccdef90364d5cd">read</a>(file, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a323a4da107c81541aa905ae6de76bf52">mHeight</a>) );</div>
+<div class="line"><span class="lineno">  704</span> </div>
+<div class="line"><span class="lineno">  705</span>    uint32_t numVerts;</div>
+<div class="line"><span class="lineno">  706</span>    <a class="code hl_define" href="_debug_ray_8cc.html#a3ac8779f814a059a1cee35990a13e7b4">CHECK_WITH_FAILURE</a>( <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a429e5dad64b881d2fdccdef90364d5cd">read</a>(file, &amp;numVerts) );</div>
+<div class="line"><span class="lineno">  707</span> </div>
+<div class="line"><span class="lineno">  708</span>    <span class="keywordflow">if</span> (numVerts) {</div>
+<div class="line"><span class="lineno">  709</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">mVertices</a>.resize(numVerts);</div>
+<div class="line"><span class="lineno">  710</span>        <a class="code hl_define" href="_debug_ray_8cc.html#a3ac8779f814a059a1cee35990a13e7b4">CHECK_WITH_FAILURE</a>( <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a2c740bb05bfafde7e78f460ef4b0a3b7">readRawData</a>(file, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">mVertices</a>[0], <span class="keyword">sizeof</span>(DebugRayVertex) * numVerts) );</div>
+<div class="line"><span class="lineno">  711</span>    }</div>
+<div class="line"><span class="lineno">  712</span> </div>
+<div class="line"><span class="lineno">  713</span>    uint32_t numPrimaryRayIndices;</div>
+<div class="line"><span class="lineno">  714</span>    <a class="code hl_define" href="_debug_ray_8cc.html#a3ac8779f814a059a1cee35990a13e7b4">CHECK_WITH_FAILURE</a>( <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a429e5dad64b881d2fdccdef90364d5cd">read</a>(file, &amp;numPrimaryRayIndices) );</div>
+<div class="line"><span class="lineno">  715</span> </div>
+<div class="line"><span class="lineno">  716</span>    <span class="keywordflow">if</span> (numPrimaryRayIndices) {</div>
+<div class="line"><span class="lineno">  717</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#af3a4b416192fc615b9c29d8ae43aafca">mPrimaryRayIndices</a>.resize(numPrimaryRayIndices);</div>
+<div class="line"><span class="lineno">  718</span>        <a class="code hl_define" href="_debug_ray_8cc.html#a3ac8779f814a059a1cee35990a13e7b4">CHECK_WITH_FAILURE</a>( <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a2c740bb05bfafde7e78f460ef4b0a3b7">readRawData</a>(file, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#af3a4b416192fc615b9c29d8ae43aafca">mPrimaryRayIndices</a>[0], <span class="keyword">sizeof</span>(uint32_t) * numPrimaryRayIndices) );</div>
+<div class="line"><span class="lineno">  719</span>    }</div>
+<div class="line"><span class="lineno">  720</span> </div>
+<div class="line"><span class="lineno">  721</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#aed733aec2c5031aff68a739ecd06daef">buildScreenPositions</a>();</div>
+<div class="line"><span class="lineno">  722</span> </div>
+<div class="line"><span class="lineno">  723</span>    fclose(file);</div>
+<div class="line"><span class="lineno">  724</span> </div>
+<div class="line"><span class="lineno">  725</span>    MNRY_ASSERT(<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#adce1aaa28a8cbd6d35a12fad379aa216">isValid</a>());</div>
+<div class="line"><span class="lineno">  726</span> </div>
+<div class="line"><span class="lineno">  727</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  728</span> </div>
+<div class="line"><span class="lineno">  729</span>Failure:</div>
+<div class="line"><span class="lineno">  730</span>    scene_rdl2::logging::Logger::error(<span class="stringliteral">&quot;[MCRT-RENDER] Failed to load file \&quot;&quot;</span> , fileName , <span class="stringliteral">&quot;\&quot;.&quot;</span>);</div>
+<div class="line"><span class="lineno">  731</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#aaac2928b161a6b038fcd7bd334176801">cleanUp</a>();</div>
+<div class="line"><span class="lineno">  732</span>    fclose(file);</div>
+<div class="line"><span class="lineno">  733</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  734</span>}</div>
+<div class="ttc" id="a_debug_ray_8cc_html_a3ac8779f814a059a1cee35990a13e7b4"><div class="ttname"><a href="_debug_ray_8cc.html#a3ac8779f814a059a1cee35990a13e7b4">CHECK_WITH_FAILURE</a></div><div class="ttdeci">#define CHECK_WITH_FAILURE(x)</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8cc_source.html#l00685">DebugRay.cc:685</a></div></div>
+<div class="ttc" id="a_debug_ray_8cc_html_a9eb883745b36e9f51a880c2f62fdcdcc"><div class="ttname"><a href="_debug_ray_8cc.html#a9eb883745b36e9f51a880c2f62fdcdcc">DEBUG_RAYS_VERSION</a></div><div class="ttdeci">#define DEBUG_RAYS_VERSION</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8cc_source.html#l00017">DebugRay.cc:17</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03_html_a2c740bb05bfafde7e78f460ef4b0a3b7"><div class="ttname"><a href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a2c740bb05bfafde7e78f460ef4b0a3b7">moonray::pbr::anonymous_namespace{DebugRay.cc}::readRawData</a></div><div class="ttdeci">finline bool readRawData(FILE *file, void *buffer, size_t numBytes)</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8cc_source.html#l00071">DebugRay.cc:71</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03_html_a429e5dad64b881d2fdccdef90364d5cd"><div class="ttname"><a href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a429e5dad64b881d2fdccdef90364d5cd">moonray::pbr::anonymous_namespace{DebugRay.cc}::read</a></div><div class="ttdeci">finline bool read(FILE *file, T *dest)</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8cc_source.html#l00079">DebugRay.cc:79</a></div></div>
+<div class="ttc" id="anamespacepackage_html_a6e76b3113eb5f252a56cd1db469e3f9a"><div class="ttname"><a href="namespacepackage.html#a6e76b3113eb5f252a56cd1db469e3f9a">package.version</a></div><div class="ttdeci">def version()</div><div class="ttdef"><b>Definition:</b> <a href="package_8py_source.html#l00013">package.py:13</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a79af059a4f8f19259bad1cae5364976f" name="a79af059a4f8f19259bad1cae5364976f"></a>
@@ -363,6 +555,166 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_debug_ray_8cc_source.html#l00737">737</a> of file <a class="el" href="_debug_ray_8cc_source.html">DebugRay.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  738</span>{</div>
+<div class="line"><span class="lineno">  739</span>    MNRY_ASSERT(<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#adce1aaa28a8cbd6d35a12fad379aa216">isValid</a>());</div>
+<div class="line"><span class="lineno">  740</span> </div>
+<div class="line"><span class="lineno">  741</span>    FILE *file = fopen(fileName, <span class="stringliteral">&quot;wb&quot;</span>);</div>
+<div class="line"><span class="lineno">  742</span>    <span class="keywordflow">if</span> (!file) {</div>
+<div class="line"><span class="lineno">  743</span>        scene_rdl2::logging::Logger::error(<span class="stringliteral">&quot;[MCRT-RENDER] Unable to create file \&quot;&quot;</span> , fileName , <span class="stringliteral">&quot;\&quot;.&quot;</span>);</div>
+<div class="line"><span class="lineno">  744</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  745</span>    }</div>
+<div class="line"><span class="lineno">  746</span> </div>
+<div class="line"><span class="lineno">  747</span>    <a class="code hl_define" href="_debug_ray_8cc.html#a3ac8779f814a059a1cee35990a13e7b4">CHECK_WITH_FAILURE</a>( <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a946a5f2da201259cb8483896b3016050">write</a>(file, uint32_t(<a class="code hl_define" href="_debug_ray_8cc.html#a9eb883745b36e9f51a880c2f62fdcdcc">DEBUG_RAYS_VERSION</a>)) );</div>
+<div class="line"><span class="lineno">  748</span>    <a class="code hl_define" href="_debug_ray_8cc.html#a3ac8779f814a059a1cee35990a13e7b4">CHECK_WITH_FAILURE</a>( <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a946a5f2da201259cb8483896b3016050">write</a>(file, <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a362b9928fdc05b837ea4bd9d5546c747">mWidth</a>) );</div>
+<div class="line"><span class="lineno">  749</span>    <a class="code hl_define" href="_debug_ray_8cc.html#a3ac8779f814a059a1cee35990a13e7b4">CHECK_WITH_FAILURE</a>( <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a946a5f2da201259cb8483896b3016050">write</a>(file, <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a323a4da107c81541aa905ae6de76bf52">mHeight</a>) );</div>
+<div class="line"><span class="lineno">  750</span>    <a class="code hl_define" href="_debug_ray_8cc.html#a3ac8779f814a059a1cee35990a13e7b4">CHECK_WITH_FAILURE</a>( <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a946a5f2da201259cb8483896b3016050">write</a>(file, uint32_t(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">mVertices</a>.size())) );</div>
+<div class="line"><span class="lineno">  751</span> </div>
+<div class="line"><span class="lineno">  752</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">mVertices</a>.empty()) {</div>
+<div class="line"><span class="lineno">  753</span>        <a class="code hl_define" href="_debug_ray_8cc.html#a3ac8779f814a059a1cee35990a13e7b4">CHECK_WITH_FAILURE</a>( <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a35c971a6feaf59698b03f16bbb2f9fd5">writeRawData</a>(file, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">mVertices</a>[0], <span class="keyword">sizeof</span>(DebugRayVertex) * <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a1e268c5bb1e88daea1c0bc08f2de53fd">mVertices</a>.size()) );</div>
+<div class="line"><span class="lineno">  754</span>    }</div>
+<div class="line"><span class="lineno">  755</span> </div>
+<div class="line"><span class="lineno">  756</span>    <a class="code hl_define" href="_debug_ray_8cc.html#a3ac8779f814a059a1cee35990a13e7b4">CHECK_WITH_FAILURE</a>( <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a946a5f2da201259cb8483896b3016050">write</a>(file, uint32_t(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#af3a4b416192fc615b9c29d8ae43aafca">mPrimaryRayIndices</a>.size())) );</div>
+<div class="line"><span class="lineno">  757</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#af3a4b416192fc615b9c29d8ae43aafca">mPrimaryRayIndices</a>.empty()) {</div>
+<div class="line"><span class="lineno">  758</span>        <a class="code hl_define" href="_debug_ray_8cc.html#a3ac8779f814a059a1cee35990a13e7b4">CHECK_WITH_FAILURE</a>( <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a35c971a6feaf59698b03f16bbb2f9fd5">writeRawData</a>(file, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#af3a4b416192fc615b9c29d8ae43aafca">mPrimaryRayIndices</a>[0], <span class="keyword">sizeof</span>(uint32_t) * <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#af3a4b416192fc615b9c29d8ae43aafca">mPrimaryRayIndices</a>.size()) );</div>
+<div class="line"><span class="lineno">  759</span>    }</div>
+<div class="line"><span class="lineno">  760</span> </div>
+<div class="line"><span class="lineno">  761</span>    <span class="comment">// to allow future expansion of file format</span></div>
+<div class="line"><span class="lineno">  762</span>    <a class="code hl_define" href="_debug_ray_8cc.html#a3ac8779f814a059a1cee35990a13e7b4">CHECK_WITH_FAILURE</a>( <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a946a5f2da201259cb8483896b3016050">write</a>(file, uint32_t(0)) );</div>
+<div class="line"><span class="lineno">  763</span> </div>
+<div class="line"><span class="lineno">  764</span>    fclose(file);</div>
+<div class="line"><span class="lineno">  765</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  766</span> </div>
+<div class="line"><span class="lineno">  767</span>Failure:</div>
+<div class="line"><span class="lineno">  768</span>    scene_rdl2::logging::Logger::error(<span class="stringliteral">&quot;[MCRT-RENDER] Failed to save file \&quot;&quot;</span> , fileName , <span class="stringliteral">&quot;\&quot;.&quot;</span>);</div>
+<div class="line"><span class="lineno">  769</span>    fclose(file);</div>
+<div class="line"><span class="lineno">  770</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  771</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03_html_a35c971a6feaf59698b03f16bbb2f9fd5"><div class="ttname"><a href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a35c971a6feaf59698b03f16bbb2f9fd5">moonray::pbr::anonymous_namespace{DebugRay.cc}::writeRawData</a></div><div class="ttdeci">finline bool writeRawData(FILE *file, void const *buffer, size_t numBytes)</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8cc_source.html#l00085">DebugRay.cc:85</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03_html_a946a5f2da201259cb8483896b3016050"><div class="ttname"><a href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a946a5f2da201259cb8483896b3016050">moonray::pbr::anonymous_namespace{DebugRay.cc}::write</a></div><div class="ttdeci">finline bool write(FILE *file, T value)</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8cc_source.html#l00093">DebugRay.cc:93</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a323a4da107c81541aa905ae6de76bf52" name="a323a4da107c81541aa905ae6de76bf52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a323a4da107c81541aa905ae6de76bf52">&#9670;&#160;</a></span>mHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t moonray::pbr::DebugRayDatabase::mHeight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_debug_ray_8h_source.html#l00434">434</a> of file <a class="el" href="_debug_ray_8h_source.html">DebugRay.h</a>.</p>
+
+</div>
+</div>
+<a id="af3a4b416192fc615b9c29d8ae43aafca" name="af3a4b416192fc615b9c29d8ae43aafca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3a4b416192fc615b9c29d8ae43aafca">&#9670;&#160;</a></span>mPrimaryRayIndices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;uint32_t&gt; moonray::pbr::DebugRayDatabase::mPrimaryRayIndices</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Each element in this vector is the index of a new primary ray the mVertices vector. </p>
+
+<p class="definition">Definition at line <a class="el" href="_debug_ray_8h_source.html#l00439">439</a> of file <a class="el" href="_debug_ray_8h_source.html">DebugRay.h</a>.</p>
+
+</div>
+</div>
+<a id="a5fd6a352029bd34c9275e58e14afa4e3" name="a5fd6a352029bd34c9275e58e14afa4e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fd6a352029bd34c9275e58e14afa4e3">&#9670;&#160;</a></span>mScreenPositions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;uint32_t&gt; moonray::pbr::DebugRayDatabase::mScreenPositions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >This vector is one-to-one with mPrimaryRayIndices, it contains the screen pixel location where each of these primary vertices start. </p>
+
+<p class="definition">Definition at line <a class="el" href="_debug_ray_8h_source.html#l00443">443</a> of file <a class="el" href="_debug_ray_8h_source.html">DebugRay.h</a>.</p>
+
+</div>
+</div>
+<a id="a1e268c5bb1e88daea1c0bc08f2de53fd" name="a1e268c5bb1e88daea1c0bc08f2de53fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e268c5bb1e88daea1c0bc08f2de53fd">&#9670;&#160;</a></span>mVertices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structmoonray_1_1pbr_1_1_debug_ray_vertex.html">DebugRayVertex</a>&gt; moonray::pbr::DebugRayDatabase::mVertices</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_debug_ray_8h_source.html#l00436">436</a> of file <a class="el" href="_debug_ray_8h_source.html">DebugRay.h</a>.</p>
+
+</div>
+</div>
+<a id="a362b9928fdc05b837ea4bd9d5546c747" name="a362b9928fdc05b837ea4bd9d5546c747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a362b9928fdc05b837ea4bd9d5546c747">&#9670;&#160;</a></span>mWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t moonray::pbr::DebugRayDatabase::mWidth</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_debug_ray_8h_source.html#l00433">433</a> of file <a class="el" href="_debug_ray_8h_source.html">DebugRay.h</a>.</p>
 
 </div>
 </div>
@@ -371,9 +723,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/core/<a class="el" href="_debug_ray_8cc_source.html">DebugRay.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_debug_ray_database.html">DebugRayDatabase</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

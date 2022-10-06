@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,9 +43,26 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_xform_initializer.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_xform_initializer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">XformInitializer Class Reference</div></div>
 </div><!--header-->
@@ -91,6 +112,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae49a53043cd626814eb10739bcdb5cea inherit pub_methods_classmoonray_1_1geom_1_1_primitive_visitor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafd38ee80e450de50af122252e7e82ef inherit pub_methods_classmoonray_1_1geom_1_1_primitive_visitor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html#aafd38ee80e450de50af122252e7e82ef">visitVdbVolume</a> (<a class="el" href="classmoonray_1_1geom_1_1_vdb_volume.html">VdbVolume</a> &amp;v)</td></tr>
 <tr class="separator:aafd38ee80e450de50af122252e7e82ef inherit pub_methods_classmoonray_1_1geom_1_1_primitive_visitor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a7146bc0d2ca03a6e5da79144f45bcaa1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemoonray_1_1geom.html#ad0ec64db36f943ec0d9dc7fbf07a2ed4">moonray::geom::SharedPrimitiveSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_xform_initializer.html#a7146bc0d2ca03a6e5da79144f45bcaa1">mSharedPrimitives</a></td></tr>
+<tr class="separator:a7146bc0d2ca03a6e5da79144f45bcaa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -150,7 +176,25 @@ Public Member Functions</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html#a3d853ab4e4b3b457f64dba2b1ffbcb4d">moonray::geom::PrimitiveVisitor</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test__rt_8cc_source.html#l00191">191</a> of file <a class="el" href="test__rt_8cc_source.html">test_rt.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  192</span>    {</div>
+<div class="line"><span class="lineno">  193</span>        <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_instance.html">moonray::geom::internal::Instance</a>* pInstance =</div>
+<div class="line"><span class="lineno">  194</span>            <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_instance.html">moonray::geom::internal::Instance</a>*<span class="keyword">&gt;</span>(</div>
+<div class="line"><span class="lineno">  195</span>                <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive_private_access.html#a4ab0b267f3e064b13740d98733ac9e70">moonray::geom::internal::PrimitivePrivateAccess::getPrimitiveImpl</a>(&amp;i));</div>
+<div class="line"><span class="lineno">  196</span>        pInstance-&gt;<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_instance.html#a35563952e6b397a4a3e5c746b768481d">initializeXform</a>();</div>
+<div class="line"><span class="lineno">  197</span>        <span class="keyword">const</span> std::shared_ptr&lt;moonray::geom::SharedPrimitive&gt;&amp; ref = i.<a class="code hl_function" href="classmoonray_1_1geom_1_1_instance.html#afb7e1c73d5ec8d35aaad67647834db1a">getReference</a>();</div>
+<div class="line"><span class="lineno">  198</span>        <span class="comment">// visit the referenced Primitive if it&#39;s not visited yet</span></div>
+<div class="line"><span class="lineno">  199</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_xform_initializer.html#a7146bc0d2ca03a6e5da79144f45bcaa1">mSharedPrimitives</a>.insert(ref).second) {</div>
+<div class="line"><span class="lineno">  200</span>            <a class="code hl_class" href="class_xform_initializer.html">XformInitializer</a> xi;</div>
+<div class="line"><span class="lineno">  201</span>            ref-&gt;getPrimitive()-&gt;accept(xi);</div>
+<div class="line"><span class="lineno">  202</span>        }</div>
+<div class="line"><span class="lineno">  203</span>    }</div>
+<div class="ttc" id="aclass_xform_initializer_html"><div class="ttname"><a href="class_xform_initializer.html">XformInitializer</a></div><div class="ttdef"><b>Definition:</b> <a href="test__rt_8cc_source.html#l00176">test_rt.cc:177</a></div></div>
+<div class="ttc" id="aclass_xform_initializer_html_a7146bc0d2ca03a6e5da79144f45bcaa1"><div class="ttname"><a href="class_xform_initializer.html#a7146bc0d2ca03a6e5da79144f45bcaa1">XformInitializer::mSharedPrimitives</a></div><div class="ttdeci">moonray::geom::SharedPrimitiveSet mSharedPrimitives</div><div class="ttdef"><b>Definition:</b> <a href="test__rt_8cc_source.html#l00206">test_rt.cc:206</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_instance_html_afb7e1c73d5ec8d35aaad67647834db1a"><div class="ttname"><a href="classmoonray_1_1geom_1_1_instance.html#afb7e1c73d5ec8d35aaad67647834db1a">moonray::geom::Instance::getReference</a></div><div class="ttdeci">const std::shared_ptr&lt; SharedPrimitive &gt; &amp; getReference() const</div><div class="ttdef"><b>Definition:</b> <a href="_instance_8cc_source.html#l00061">Instance.cc:61</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_instance_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_instance.html">moonray::geom::internal::Instance</a></div><div class="ttdef"><b>Definition:</b> <a href="prim_2_instance_8h_source.html#l00026">Instance.h:26</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_instance_html_a35563952e6b397a4a3e5c746b768481d"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_instance.html#a35563952e6b397a4a3e5c746b768481d">moonray::geom::internal::Instance::initializeXform</a></div><div class="ttdeci">void initializeXform()</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_instance_8h_source.html#l00102">Instance.h:102</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_private_access_html_a4ab0b267f3e064b13740d98733ac9e70"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive_private_access.html#a4ab0b267f3e064b13740d98733ac9e70">moonray::geom::internal::PrimitivePrivateAccess::getPrimitiveImpl</a></div><div class="ttdeci">static Primitive * getPrimitiveImpl(geom::Primitive *handle)</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_private_access_8h_source.html#l00030">PrimitivePrivateAccess.h:30</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3c5e682e6d56e7ab3de4c1169c6b6a2e" name="a3c5e682e6d56e7ab3de4c1169c6b6a2e"></a>
@@ -181,7 +225,10 @@ Public Member Functions</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html#a6880d77b6a0c232a60aa4c88b8debebb">moonray::geom::PrimitiveVisitor</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test__rt_8cc_source.html#l00181">181</a> of file <a class="el" href="test__rt_8cc_source.html">test_rt.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  182</span>    {</div>
+<div class="line"><span class="lineno">  183</span>        pg.forEachPrimitive(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  184</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a32d4288e5b83fe572d574b3e5b8d0734" name="a32d4288e5b83fe572d574b3e5b8d0734"></a>
@@ -212,6 +259,35 @@ Public Member Functions</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html#ae49a53043cd626814eb10739bcdb5cea">moonray::geom::PrimitiveVisitor</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="test__rt_8cc_source.html#l00186">186</a> of file <a class="el" href="test__rt_8cc_source.html">test_rt.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  187</span>    {</div>
+<div class="line"><span class="lineno">  188</span>        t.<a class="code hl_function" href="classmoonray_1_1geom_1_1_transformed_primitive.html#aad4a4b29c8c6200dea0b7f523c343ba4">getPrimitive</a>()-&gt;accept(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">  189</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_transformed_primitive_html_aad4a4b29c8c6200dea0b7f523c343ba4"><div class="ttname"><a href="classmoonray_1_1geom_1_1_transformed_primitive.html#aad4a4b29c8c6200dea0b7f523c343ba4">moonray::geom::TransformedPrimitive::getPrimitive</a></div><div class="ttdeci">const std::unique_ptr&lt; Primitive &gt; &amp; getPrimitive() const</div><div class="ttdef"><b>Definition:</b> <a href="_transformed_primitive_8cc_source.html#l00075">TransformedPrimitive.cc:75</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7146bc0d2ca03a6e5da79144f45bcaa1" name="a7146bc0d2ca03a6e5da79144f45bcaa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7146bc0d2ca03a6e5da79144f45bcaa1">&#9670;&#160;</a></span>mSharedPrimitives</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemoonray_1_1geom.html#ad0ec64db36f943ec0d9dc7fbf07a2ed4">moonray::geom::SharedPrimitiveSet</a> XformInitializer::mSharedPrimitives</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test__rt_8cc_source.html#l00206">206</a> of file <a class="el" href="test__rt_8cc_source.html">test_rt.cc</a>.</p>
 
 </div>
 </div>
@@ -219,9 +295,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/rt/unittest/<a class="el" href="test__rt_8cc_source.html">test_rt.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_xform_initializer.html">XformInitializer</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

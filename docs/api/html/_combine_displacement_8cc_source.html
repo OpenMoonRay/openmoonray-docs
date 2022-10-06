@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_e8636fe16f0c9a46fe2eb47f132af4e0.html">dso</a></li><li class="navelem"><a class="el" href="dir_178188010df4c65838fa8f04de1b6380.html">displacement</a></li><li class="navelem"><a class="el" href="dir_0f82ef80af1c77f714bf4664d459f665.html">CombineDisplacement</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_combine_displacement_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">CombineDisplacement.cc</div></div>
 </div><!--header-->
@@ -51,8 +67,9 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2017-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @author Conrad Egan</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"></span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="bvh_2shading_2_state_8h.html">rendering/bvh/shading/State.h</a>&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="_eval_attribute_8h.html">rendering/shading/EvalAttribute.h</a>&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
@@ -76,14 +93,14 @@ $(function() {
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">   28</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>();</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> displace(<span class="keyword">const</span> Displacement *self, <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                         <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">State</a> &amp;state, Vec3f *displace);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="_combine_displacement_8cc.html#aaed2d40e0976cee852857ea329cfa6e2">   31</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="_combine_displacement_8cc.html#aaed2d40e0976cee852857ea329cfa6e2">displace</a>(<span class="keyword">const</span> Displacement *self, <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                         <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">State</a> &amp;state, Vec3f *<a class="code hl_function" href="_combine_displacement_8cc.html#aaed2d40e0976cee852857ea329cfa6e2">displace</a>);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">bool</span> verifyInputs();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="_combine_displacement_8cc.html#a7753fd559001af1290fafda70dc13dab">verifyInputs</a>();</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    ispc::CombineDisplacement mIspc;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    scene_rdl2::rdl2::Displacement* mDisplacement1;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    scene_rdl2::rdl2::Displacement* mDisplacement2;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="_combine_displacement_8cc.html#a2e1fff6af5b64174e64d9f8f123835df">   36</a></span>    ispc::CombineDisplacement <a class="code hl_variable" href="_combine_displacement_8cc.html#a2e1fff6af5b64174e64d9f8f123835df">mIspc</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="_combine_displacement_8cc.html#a3f757eb9980e24d6ed4fd8bcd3dbe076">   37</a></span>    scene_rdl2::rdl2::Displacement* <a class="code hl_variable" href="_combine_displacement_8cc.html#a3f757eb9980e24d6ed4fd8bcd3dbe076">mDisplacement1</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="_combine_displacement_8cc.html#a38633e22894a65474b99f6958a242667">   38</a></span>    scene_rdl2::rdl2::Displacement* <a class="code hl_variable" href="_combine_displacement_8cc.html#a38633e22894a65474b99f6958a242667">mDisplacement2</a>;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>RDL2_DSO_CLASS_END(<a class="code hl_function" href="_combine_displacement_8cc.html#a5565900343d67e722acd8368b8b52c6b">CombineDisplacement</a>)</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
@@ -102,12 +119,12 @@ $(function() {
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keywordtype">bool</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>CombineDisplacement::verifyInputs() {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">if</span> (mDisplacement1 == <span class="keyword">nullptr</span> &amp;&amp; mDisplacement2 == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="_combine_displacement_8cc.html#a7753fd559001af1290fafda70dc13dab">   57</a></span>CombineDisplacement::verifyInputs() {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="_combine_displacement_8cc.html#a3f757eb9980e24d6ed4fd8bcd3dbe076">mDisplacement1</a> == <span class="keyword">nullptr</span> &amp;&amp; <a class="code hl_variable" href="_combine_displacement_8cc.html#a38633e22894a65474b99f6958a242667">mDisplacement2</a> == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        warn(<span class="stringliteral">&quot;CombineDisplacement: No input displacement objects provided.&quot;</span>);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mDisplacement1 == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="_combine_displacement_8cc.html#a3f757eb9980e24d6ed4fd8bcd3dbe076">mDisplacement1</a> == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        warn(<span class="stringliteral">&quot;CombineDisplacement: Input 1 displacement object not provided.&quot;</span>);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mDisplacement2 == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="_combine_displacement_8cc.html#a38633e22894a65474b99f6958a242667">mDisplacement2</a> == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        warn(<span class="stringliteral">&quot;CombineDisplacement: Input 2 displacement object not provided.&quot;</span>);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
@@ -117,25 +134,25 @@ $(function() {
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>CombineDisplacement::update()</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>{</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    mDisplacement1 = get(attrInput1) ?</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <a class="code hl_variable" href="_combine_displacement_8cc.html#a3f757eb9980e24d6ed4fd8bcd3dbe076">mDisplacement1</a> = get(attrInput1) ?</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                get(attrInput1)-&gt;asA&lt;scene_rdl2::rdl2::Displacement&gt;() : <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    mDisplacement2 = get(attrInput2) ?</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_variable" href="_combine_displacement_8cc.html#a38633e22894a65474b99f6958a242667">mDisplacement2</a> = get(attrInput2) ?</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                get(attrInput2)-&gt;asA&lt;scene_rdl2::rdl2::Displacement&gt;() : <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">if</span> (!verifyInputs()) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="_combine_displacement_8cc.html#a7753fd559001af1290fafda70dc13dab">verifyInputs</a>()) {</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        fatal(<span class="stringliteral">&quot;CombineDisplacement input validation failed&quot;</span>);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    mIspc.mDisplacement1 = mDisplacement1;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    mIspc.mDisplacement2 = mDisplacement2;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_variable" href="_combine_displacement_8cc.html#a2e1fff6af5b64174e64d9f8f123835df">mIspc</a>.mDisplacement1 = <a class="code hl_variable" href="_combine_displacement_8cc.html#a3f757eb9980e24d6ed4fd8bcd3dbe076">mDisplacement1</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_variable" href="_combine_displacement_8cc.html#a2e1fff6af5b64174e64d9f8f123835df">mIspc</a>.mDisplacement2 = <a class="code hl_variable" href="_combine_displacement_8cc.html#a38633e22894a65474b99f6958a242667">mDisplacement2</a>;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    mIspc.mDisplace1Func = (mDisplacement1 != <span class="keyword">nullptr</span>) ? (intptr_t) mDisplacement1-&gt;mDisplaceFuncv : (intptr_t) <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    mIspc.mDisplace2Func = (mDisplacement2 != <span class="keyword">nullptr</span>) ? (intptr_t) mDisplacement2-&gt;mDisplaceFuncv : (intptr_t) <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_variable" href="_combine_displacement_8cc.html#a2e1fff6af5b64174e64d9f8f123835df">mIspc</a>.mDisplace1Func = (<a class="code hl_variable" href="_combine_displacement_8cc.html#a3f757eb9980e24d6ed4fd8bcd3dbe076">mDisplacement1</a> != <span class="keyword">nullptr</span>) ? (intptr_t) <a class="code hl_variable" href="_combine_displacement_8cc.html#a3f757eb9980e24d6ed4fd8bcd3dbe076">mDisplacement1</a>-&gt;mDisplaceFuncv : (intptr_t) <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_variable" href="_combine_displacement_8cc.html#a2e1fff6af5b64174e64d9f8f123835df">mIspc</a>.mDisplace2Func = (<a class="code hl_variable" href="_combine_displacement_8cc.html#a38633e22894a65474b99f6958a242667">mDisplacement2</a> != <span class="keyword">nullptr</span>) ? (intptr_t) <a class="code hl_variable" href="_combine_displacement_8cc.html#a38633e22894a65474b99f6958a242667">mDisplacement2</a>-&gt;mDisplaceFuncv : (intptr_t) <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keywordtype">void</span> CombineDisplacement::displace(<span class="keyword">const</span> Displacement *self, <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                                  <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">State</a> &amp;state, Vec3f *displace)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                                  <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">State</a> &amp;state, Vec3f *<a class="code hl_function" href="_combine_displacement_8cc.html#aaed2d40e0976cee852857ea329cfa6e2">displace</a>)</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>{</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">const</span> <a class="code hl_function" href="_combine_displacement_8cc.html#a5565900343d67e722acd8368b8b52c6b">CombineDisplacement</a>* me = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code hl_function" href="_combine_displacement_8cc.html#a5565900343d67e722acd8368b8b52c6b">CombineDisplacement</a>*<span class="keyword">&gt;</span>(self);</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> delta1(0.0f), delta2(0.0f);</div>
@@ -150,18 +167,18 @@ $(function() {
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> operation = me-&gt;get(attrOperation);</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">switch</span> (operation) {</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordflow">case</span> ispc::CombineOpType::ADD:</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            *displace = delta1 + delta2;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            *<a class="code hl_function" href="_combine_displacement_8cc.html#aaed2d40e0976cee852857ea329cfa6e2">displace</a> = delta1 + delta2;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordflow">case</span> ispc::CombineOpType::MAX_MAGNITUDE:</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="comment">// Use maximum vector based on absolute length.</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            *displace = delta1.lengthSqr() &gt; delta2.lengthSqr() ? delta1 : delta2;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            *<a class="code hl_function" href="_combine_displacement_8cc.html#aaed2d40e0976cee852857ea329cfa6e2">displace</a> = delta1.lengthSqr() &gt; delta2.lengthSqr() ? delta1 : delta2;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordflow">case</span> ispc::CombineOpType::MIN_MAGNITUDE:</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <span class="comment">// Use minimum vector based on absolute length.</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            *displace = delta1.lengthSqr() &lt; delta2.lengthSqr() ? delta1 : delta2;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            *<a class="code hl_function" href="_combine_displacement_8cc.html#aaed2d40e0976cee852857ea329cfa6e2">displace</a> = delta1.lengthSqr() &lt; delta2.lengthSqr() ? delta1 : delta2;</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            *displace = delta1;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            *<a class="code hl_function" href="_combine_displacement_8cc.html#aaed2d40e0976cee852857ea329cfa6e2">displace</a> = delta1;</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    }</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>}</div>
@@ -172,8 +189,13 @@ $(function() {
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">// TM and (c) 2017-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="ttc" id="a_combine_displacement_8cc_html_a2e1fff6af5b64174e64d9f8f123835df"><div class="ttname"><a href="_combine_displacement_8cc.html#a2e1fff6af5b64174e64d9f8f123835df">mIspc</a></div><div class="ttdeci">ispc::CombineDisplacement mIspc</div><div class="ttdef"><b>Definition:</b> <a href="_combine_displacement_8cc_source.html#l00036">CombineDisplacement.cc:36</a></div></div>
+<div class="ttc" id="a_combine_displacement_8cc_html_a38633e22894a65474b99f6958a242667"><div class="ttname"><a href="_combine_displacement_8cc.html#a38633e22894a65474b99f6958a242667">mDisplacement2</a></div><div class="ttdeci">scene_rdl2::rdl2::Displacement * mDisplacement2</div><div class="ttdef"><b>Definition:</b> <a href="_combine_displacement_8cc_source.html#l00038">CombineDisplacement.cc:38</a></div></div>
+<div class="ttc" id="a_combine_displacement_8cc_html_a3f757eb9980e24d6ed4fd8bcd3dbe076"><div class="ttname"><a href="_combine_displacement_8cc.html#a3f757eb9980e24d6ed4fd8bcd3dbe076">mDisplacement1</a></div><div class="ttdeci">scene_rdl2::rdl2::Displacement * mDisplacement1</div><div class="ttdef"><b>Definition:</b> <a href="_combine_displacement_8cc_source.html#l00037">CombineDisplacement.cc:37</a></div></div>
 <div class="ttc" id="a_combine_displacement_8cc_html_a5565900343d67e722acd8368b8b52c6b"><div class="ttname"><a href="_combine_displacement_8cc.html#a5565900343d67e722acd8368b8b52c6b">CombineDisplacement</a></div><div class="ttdeci">CombineDisplacement(const scene_rdl2::rdl2::SceneClass &amp;sceneClass, const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="_combine_displacement_8cc_source.html#l00045">CombineDisplacement.cc:45</a></div></div>
 <div class="ttc" id="a_combine_displacement_8cc_html_a6febc2645ef59c189b8a3d7ee88d9ab4"><div class="ttname"><a href="_combine_displacement_8cc.html#a6febc2645ef59c189b8a3d7ee88d9ab4">~CombineDisplacement</a></div><div class="ttdeci">~CombineDisplacement()</div><div class="ttdef"><b>Definition:</b> <a href="_combine_displacement_8cc_source.html#l00052">CombineDisplacement.cc:52</a></div></div>
+<div class="ttc" id="a_combine_displacement_8cc_html_a7753fd559001af1290fafda70dc13dab"><div class="ttname"><a href="_combine_displacement_8cc.html#a7753fd559001af1290fafda70dc13dab">verifyInputs</a></div><div class="ttdeci">bool verifyInputs()</div><div class="ttdef"><b>Definition:</b> <a href="_combine_displacement_8cc_source.html#l00057">CombineDisplacement.cc:57</a></div></div>
+<div class="ttc" id="a_combine_displacement_8cc_html_aaed2d40e0976cee852857ea329cfa6e2"><div class="ttname"><a href="_combine_displacement_8cc.html#aaed2d40e0976cee852857ea329cfa6e2">displace</a></div><div class="ttdeci">static void displace(const Displacement *self, moonray::shading::TLState *tls, const State &amp;state, Vec3f *displace)</div></div>
 <div class="ttc" id="a_combine_displacement_8cc_html_acd36d7881ea8503d5c5824e7a5ad6c7e"><div class="ttname"><a href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a></div><div class="ttdeci">virtual void update()</div></div>
 <div class="ttc" id="a_eval_attribute_8h_html"><div class="ttname"><a href="_eval_attribute_8h.html">EvalAttribute.h</a></div></div>
 <div class="ttc" id="abvh_2shading_2_state_8h_html"><div class="ttname"><a href="bvh_2shading_2_state_8h.html">State.h</a></div></div>
@@ -186,9 +208,13 @@ $(function() {
 <div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_dispatch_computation_8cc_source.html#l00044">McrtRtDispatchComputation.cc:44</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00583">NPoint.h:583</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_6a52a9733426c3f6f80e6f7bd53e6965.html">dso</a></li><li class="navelem"><a class="el" href="dir_2510cee22de50d250f81dedc89f0fe32.html">displacement</a></li><li class="navelem"><a class="el" href="dir_b422f7ff0647d74a003e4848fe3a3a87.html">CombineDisplacement</a></li><li class="navelem"><a class="el" href="_combine_displacement_8cc.html">CombineDisplacement.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

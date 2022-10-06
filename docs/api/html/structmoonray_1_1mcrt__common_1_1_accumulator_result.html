@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1mcrt__common.html">mcrt_common</a></li><li class="navelem"><a class="el" href="structmoonray_1_1mcrt__common_1_1_accumulator_result.html">AccumulatorResult</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structmoonray_1_1mcrt__common_1_1_accumulator_result.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -100,7 +116,19 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_profile_accumulator_8h_source.html#l00067">67</a> of file <a class="el" href="_profile_accumulator_8h_source.html">ProfileAccumulator.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   67</span>                        :</div>
+<div class="line"><span class="lineno">   68</span>        <a class="code hl_variable" href="structmoonray_1_1mcrt__common_1_1_accumulator_result.html#a415085a5b084f4f8f652e72a7dac993b">mName</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">   69</span>        <a class="code hl_variable" href="structmoonray_1_1mcrt__common_1_1_accumulator_result.html#a5d4918fde16bb52b599615391f6bc933">mFlags</a>(<a class="code hl_enumvalue" href="namespacemoonray_1_1mcrt__common.html#a3e34440c5780687d10efe807550d353da0c853aa90ec35446dac65033aaf4e508">ACCFLAG_NONE</a>),</div>
+<div class="line"><span class="lineno">   70</span>        <a class="code hl_variable" href="structmoonray_1_1mcrt__common_1_1_accumulator_result.html#a00e4719c69aab7b0cc14278706ffd697">mTotalTime</a>(0.0),</div>
+<div class="line"><span class="lineno">   71</span>        <a class="code hl_variable" href="structmoonray_1_1mcrt__common_1_1_accumulator_result.html#a7ac2bfe6d41146f77a7577a6931255fa">mTimePerThread</a>(0.0),</div>
+<div class="line"><span class="lineno">   72</span>        <a class="code hl_variable" href="structmoonray_1_1mcrt__common_1_1_accumulator_result.html#a284359b3c1b63c310bc8f0f4ffbe95c9">mPercentageOfTotal</a>(0.0) {}</div>
+<div class="ttc" id="anamespacemoonray_1_1mcrt__common_html_a3e34440c5780687d10efe807550d353da0c853aa90ec35446dac65033aaf4e508"><div class="ttname"><a href="namespacemoonray_1_1mcrt__common.html#a3e34440c5780687d10efe807550d353da0c853aa90ec35446dac65033aaf4e508">moonray::mcrt_common::ACCFLAG_NONE</a></div><div class="ttdeci">@ ACCFLAG_NONE</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8h_source.html#l00049">ProfileAccumulator.h:49</a></div></div>
+<div class="ttc" id="astructmoonray_1_1mcrt__common_1_1_accumulator_result_html_a00e4719c69aab7b0cc14278706ffd697"><div class="ttname"><a href="structmoonray_1_1mcrt__common_1_1_accumulator_result.html#a00e4719c69aab7b0cc14278706ffd697">moonray::mcrt_common::AccumulatorResult::mTotalTime</a></div><div class="ttdeci">double mTotalTime</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8h_source.html#l00078">ProfileAccumulator.h:78</a></div></div>
+<div class="ttc" id="astructmoonray_1_1mcrt__common_1_1_accumulator_result_html_a284359b3c1b63c310bc8f0f4ffbe95c9"><div class="ttname"><a href="structmoonray_1_1mcrt__common_1_1_accumulator_result.html#a284359b3c1b63c310bc8f0f4ffbe95c9">moonray::mcrt_common::AccumulatorResult::mPercentageOfTotal</a></div><div class="ttdeci">double mPercentageOfTotal</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8h_source.html#l00085">ProfileAccumulator.h:85</a></div></div>
+<div class="ttc" id="astructmoonray_1_1mcrt__common_1_1_accumulator_result_html_a415085a5b084f4f8f652e72a7dac993b"><div class="ttname"><a href="structmoonray_1_1mcrt__common_1_1_accumulator_result.html#a415085a5b084f4f8f652e72a7dac993b">moonray::mcrt_common::AccumulatorResult::mName</a></div><div class="ttdeci">const char * mName</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8h_source.html#l00074">ProfileAccumulator.h:74</a></div></div>
+<div class="ttc" id="astructmoonray_1_1mcrt__common_1_1_accumulator_result_html_a5d4918fde16bb52b599615391f6bc933"><div class="ttname"><a href="structmoonray_1_1mcrt__common_1_1_accumulator_result.html#a5d4918fde16bb52b599615391f6bc933">moonray::mcrt_common::AccumulatorResult::mFlags</a></div><div class="ttdeci">AccumulatorFlags mFlags</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8h_source.html#l00075">ProfileAccumulator.h:75</a></div></div>
+<div class="ttc" id="astructmoonray_1_1mcrt__common_1_1_accumulator_result_html_a7ac2bfe6d41146f77a7577a6931255fa"><div class="ttname"><a href="structmoonray_1_1mcrt__common_1_1_accumulator_result.html#a7ac2bfe6d41146f77a7577a6931255fa">moonray::mcrt_common::AccumulatorResult::mTimePerThread</a></div><div class="ttdeci">double mTimePerThread</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8h_source.html#l00081">ProfileAccumulator.h:81</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -188,9 +216,13 @@ Public Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/mcrt_common/<a class="el" href="_profile_accumulator_8h_source.html">ProfileAccumulator.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1mcrt__common.html">mcrt_common</a></li><li class="navelem"><a class="el" href="structmoonray_1_1mcrt__common_1_1_accumulator_result.html">AccumulatorResult</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

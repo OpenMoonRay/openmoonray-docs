@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,28 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1stats.html">stats</a></li><li class="navelem"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html">AthenaCSVStream</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1stats_1_1_athena_c_s_v_stream.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::stats::AthenaCSVStream Class Reference</div></div>
 </div><!--header-->
@@ -69,6 +87,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6132726255098d22fe45946a9171b28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9f154b1f58a961c6c13f382e6128c53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#ac9f154b1f58a961c6c13f382e6128c53">is_open</a> () const noexcept</td></tr>
 <tr class="separator:ac9f154b1f58a961c6c13f382e6128c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae2ef05af1933ced433867d5524ef667a"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:ae2ef05af1933ced433867d5524ef667a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#ae2ef05af1933ced433867d5524ef667a">do_open</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="separator:ae2ef05af1933ced433867d5524ef667a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a5d7fe58e0a924fa2e82cafc7b1099fa8"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html">AthenaCSVStreamBuf</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a5d7fe58e0a924fa2e82cafc7b1099fa8">mBuf</a></td></tr>
+<tr class="separator:a5d7fe58e0a924fa2e82cafc7b1099fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c6ef8407710695a2160693294a58418"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a5c6ef8407710695a2160693294a58418">mOpened</a></td></tr>
+<tr class="separator:a5c6ef8407710695a2160693294a58418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -98,10 +129,62 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_athena_c_s_v_stream_8h_source.html#l00087">87</a> of file <a class="el" href="_athena_c_s_v_stream_8h_source.html">AthenaCSVStream.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   87</span>                      :</div>
+<div class="line"><span class="lineno">   88</span>        std::ostream(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">   89</span>        <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a5d7fe58e0a924fa2e82cafc7b1099fa8">mBuf</a>()</div>
+<div class="line"><span class="lineno">   90</span>    {</div>
+<div class="line"><span class="lineno">   91</span>        <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a5c6ef8407710695a2160693294a58418">mOpened</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_html_a5c6ef8407710695a2160693294a58418"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a5c6ef8407710695a2160693294a58418">moonray::stats::AthenaCSVStream::mOpened</a></div><div class="ttdeci">bool mOpened</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8h_source.html#l00128">AthenaCSVStream.h:128</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_html_a5d7fe58e0a924fa2e82cafc7b1099fa8"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a5d7fe58e0a924fa2e82cafc7b1099fa8">moonray::stats::AthenaCSVStream::mBuf</a></div><div class="ttdeci">std::unique_ptr&lt; AthenaCSVStreamBuf &gt; mBuf</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8h_source.html#l00127">AthenaCSVStream.h:127</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae2ef05af1933ced433867d5524ef667a" name="ae2ef05af1933ced433867d5524ef667a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2ef05af1933ced433867d5524ef667a">&#9670;&#160;</a></span>do_open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::stats::AthenaCSVStream::do_open </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_athena_c_s_v_stream_8h_source.html#l00111">111</a> of file <a class="el" href="_athena_c_s_v_stream_8h_source.html">AthenaCSVStream.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  112</span>    {</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  114</span>            <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a5d7fe58e0a924fa2e82cafc7b1099fa8">mBuf</a>.reset(<span class="keyword">new</span> AthenaCSVStreamBuf(std::forward&lt;Args&gt;(args)...));</div>
+<div class="line"><span class="lineno">  115</span>            this-&gt;init(<a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a5d7fe58e0a924fa2e82cafc7b1099fa8">mBuf</a>.get());</div>
+<div class="line"><span class="lineno">  116</span>            this-&gt;clear();</div>
+<div class="line"><span class="lineno">  117</span>            <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a5c6ef8407710695a2160693294a58418">mOpened</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  118</span>        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp;) {</div>
+<div class="line"><span class="lineno">  119</span>            this-&gt;setstate(std::ios_base::failbit);</div>
+<div class="line"><span class="lineno">  120</span>            <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a5c6ef8407710695a2160693294a58418">mOpened</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  121</span>        } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><span class="lineno">  122</span>            this-&gt;setstate(std::ios_base::failbit);</div>
+<div class="line"><span class="lineno">  123</span>            <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a5c6ef8407710695a2160693294a58418">mOpened</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  124</span>        }</div>
+<div class="line"><span class="lineno">  125</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ac9f154b1f58a961c6c13f382e6128c53" name="ac9f154b1f58a961c6c13f382e6128c53"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9f154b1f58a961c6c13f382e6128c53">&#9670;&#160;</a></span>is_open()</h2>
 
@@ -126,7 +209,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_athena_c_s_v_stream_8h_source.html#l00104">104</a> of file <a class="el" href="_athena_c_s_v_stream_8h_source.html">AthenaCSVStream.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  105</span>    {</div>
+<div class="line"><span class="lineno">  106</span>        <span class="comment">// open attempted yet?</span></div>
+<div class="line"><span class="lineno">  107</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a5c6ef8407710695a2160693294a58418">mOpened</a> &amp;&amp; <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#a5d7fe58e0a924fa2e82cafc7b1099fa8">mBuf</a>-&gt;is_open();</div>
+<div class="line"><span class="lineno">  108</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a293b358375d0935063b4e942754b952c" name="a293b358375d0935063b4e942754b952c"></a>
@@ -154,7 +241,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_athena_c_s_v_stream_8h_source.html#l00094">94</a> of file <a class="el" href="_athena_c_s_v_stream_8h_source.html">AthenaCSVStream.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   95</span>    {</div>
+<div class="line"><span class="lineno">   96</span>        <a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#ae2ef05af1933ced433867d5524ef667a">do_open</a>(debug);</div>
+<div class="line"><span class="lineno">   97</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_html_ae2ef05af1933ced433867d5524ef667a"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#ae2ef05af1933ced433867d5524ef667a">moonray::stats::AthenaCSVStream::do_open</a></div><div class="ttdeci">void do_open(Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8h_source.html#l00111">AthenaCSVStream.h:111</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6132726255098d22fe45946a9171b28a" name="a6132726255098d22fe45946a9171b28a"></a>
@@ -192,6 +283,58 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_athena_c_s_v_stream_8h_source.html#l00099">99</a> of file <a class="el" href="_athena_c_s_v_stream_8h_source.html">AthenaCSVStream.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  100</span>    {</div>
+<div class="line"><span class="lineno">  101</span>        <a class="code hl_function" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html#ae2ef05af1933ced433867d5524ef667a">do_open</a>(guid, debug);</div>
+<div class="line"><span class="lineno">  102</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5d7fe58e0a924fa2e82cafc7b1099fa8" name="a5d7fe58e0a924fa2e82cafc7b1099fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d7fe58e0a924fa2e82cafc7b1099fa8">&#9670;&#160;</a></span>mBuf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html">AthenaCSVStreamBuf</a>&gt; moonray::stats::AthenaCSVStream::mBuf</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_athena_c_s_v_stream_8h_source.html#l00127">127</a> of file <a class="el" href="_athena_c_s_v_stream_8h_source.html">AthenaCSVStream.h</a>.</p>
+
+</div>
+</div>
+<a id="a5c6ef8407710695a2160693294a58418" name="a5c6ef8407710695a2160693294a58418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c6ef8407710695a2160693294a58418">&#9670;&#160;</a></span>mOpened</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::stats::AthenaCSVStream::mOpened</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_athena_c_s_v_stream_8h_source.html#l00128">128</a> of file <a class="el" href="_athena_c_s_v_stream_8h_source.html">AthenaCSVStream.h</a>.</p>
 
 </div>
 </div>
@@ -199,9 +342,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/rndr/statistics/<a class="el" href="_athena_c_s_v_stream_8h_source.html">AthenaCSVStream.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1stats.html">stats</a></li><li class="navelem"><a class="el" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream.html">AthenaCSVStream</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

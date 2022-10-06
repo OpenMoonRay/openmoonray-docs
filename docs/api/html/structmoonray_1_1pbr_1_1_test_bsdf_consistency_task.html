@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html">TestBsdfConsistencyTask</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -147,7 +163,21 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdf_common_8h_source.html#l00090">90</a> of file <a class="el" href="_test_bsdf_common_8h_source.html">TestBsdfCommon.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   95</span>    : <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>(std::addressof(test))</div>
+<div class="line"><span class="lineno">   96</span>    , <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#acd481b4a156a9a6d39aead12a6dfd3b3">randomSeed</a>(rSeed)</div>
+<div class="line"><span class="lineno">   97</span>    , <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a7c1126811ee2ca290ea230766f2fb874">randomStream</a>(rStream)</div>
+<div class="line"><span class="lineno">   98</span>    , <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a22963f4634506bbb6874344bacb2ef18">sampleFirst</a>(sampleBegin)</div>
+<div class="line"><span class="lineno">   99</span>    , <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#aebcd1c139c74122b4afa7fe237719a0d">sampleLast</a>(sampleEnd)</div>
+<div class="line"><span class="lineno">  100</span>    , <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>()</div>
+<div class="line"><span class="lineno">  101</span>    {</div>
+<div class="line"><span class="lineno">  102</span>    }</div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_consistency_task_html_a22963f4634506bbb6874344bacb2ef18"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a22963f4634506bbb6874344bacb2ef18">moonray::pbr::TestBsdfConsistencyTask::sampleFirst</a></div><div class="ttdeci">unsigned sampleFirst</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00131">TestBsdfCommon.h:131</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_consistency_task_html_a7c1126811ee2ca290ea230766f2fb874"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a7c1126811ee2ca290ea230766f2fb874">moonray::pbr::TestBsdfConsistencyTask::randomStream</a></div><div class="ttdeci">std::uint32_t randomStream</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00130">TestBsdfCommon.h:130</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_consistency_task_html_a939e1e0236824df107262ebb6d0aa7e7"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">moonray::pbr::TestBsdfConsistencyTask::mResult</a></div><div class="ttdeci">Result mResult</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00133">TestBsdfCommon.h:133</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_consistency_task_html_acd481b4a156a9a6d39aead12a6dfd3b3"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#acd481b4a156a9a6d39aead12a6dfd3b3">moonray::pbr::TestBsdfConsistencyTask::randomSeed</a></div><div class="ttdeci">std::uint32_t randomSeed</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00129">TestBsdfCommon.h:129</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_consistency_task_html_adc192768d05c45de159530a3381d2fbd"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">moonray::pbr::TestBsdfConsistencyTask::inTest</a></div><div class="ttdeci">const TestBsdfSettings * inTest</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00128">TestBsdfCommon.h:128</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_consistency_task_html_aebcd1c139c74122b4afa7fe237719a0d"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#aebcd1c139c74122b4afa7fe237719a0d">moonray::pbr::TestBsdfConsistencyTask::sampleLast</a></div><div class="ttdeci">unsigned sampleLast</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00132">TestBsdfCommon.h:132</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -175,7 +205,33 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdf_common_8h_source.html#l00104">104</a> of file <a class="el" href="_test_bsdf_common_8h_source.html">TestBsdfCommon.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  105</span>    {</div>
+<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">switch</span>(<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a39a8cf4f92d62e93fb7080bfdbcb0bad">testType</a>) {</div>
+<div class="line"><span class="lineno">  107</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949baf57a761c80a115480c0317ee9ec34bcc">TestBsdfSettings::BSDF_SAMPLER</a>:</div>
+<div class="line"><span class="lineno">  108</span>            <a class="code hl_function" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#af4d7187f4550a704ac249c59b687e051">testBsdfSampler</a>();</div>
+<div class="line"><span class="lineno">  109</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  110</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949bae824c3f4b78a3fcd0d088feaaf4e872f">TestBsdfSettings::BSDF_ONE_SAMPLER</a>:</div>
+<div class="line"><span class="lineno">  111</span>            <a class="code hl_function" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#af53857a005c638e6d89c3ed2536a884d">testBsdfOneSampler</a>();</div>
+<div class="line"><span class="lineno">  112</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">TestBsdfSettings::BSDFV</a>:</div>
+<div class="line"><span class="lineno">  114</span>            <a class="code hl_function" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a116b19714f4989c60836db1bbe83a46f">testBsdfv</a>();</div>
+<div class="line"><span class="lineno">  115</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  116</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949bab9a16eb3669ce7dd2902b440ac3bbd90">TestBsdfSettings::BSDF_ONE_SAMPLERV</a>:</div>
+<div class="line"><span class="lineno">  117</span>            <a class="code hl_function" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#acd0e32c0212c80b730de8ba9e87b78d7">testBsdfOneSamplerv</a>();</div>
+<div class="line"><span class="lineno">  118</span>        }</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>;</div>
+<div class="line"><span class="lineno">  121</span>    }</div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_consistency_task_html_a116b19714f4989c60836db1bbe83a46f"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a116b19714f4989c60836db1bbe83a46f">moonray::pbr::TestBsdfConsistencyTask::testBsdfv</a></div><div class="ttdeci">void testBsdfv()</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdfv_task_8cc_source.html#l00023">TestBsdfvTask.cc:23</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_consistency_task_html_acd0e32c0212c80b730de8ba9e87b78d7"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#acd0e32c0212c80b730de8ba9e87b78d7">moonray::pbr::TestBsdfConsistencyTask::testBsdfOneSamplerv</a></div><div class="ttdeci">void testBsdfOneSamplerv()</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_one_samplerv_8cc_source.html#l00534">TestBsdfOneSamplerv.cc:534</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_consistency_task_html_af4d7187f4550a704ac249c59b687e051"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#af4d7187f4550a704ac249c59b687e051">moonray::pbr::TestBsdfConsistencyTask::testBsdfSampler</a></div><div class="ttdeci">void testBsdfSampler()</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_task_sampler_8cc_source.html#l00036">TestBsdfCommonTaskSampler.cc:36</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_consistency_task_html_af53857a005c638e6d89c3ed2536a884d"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#af53857a005c638e6d89c3ed2536a884d">moonray::pbr::TestBsdfConsistencyTask::testBsdfOneSampler</a></div><div class="ttdeci">void testBsdfOneSampler()</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_task_one_sampler_8cc_source.html#l00034">TestBsdfCommonTaskOneSampler.cc:34</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_settings_html_a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949ba388f633f710f2cbe90c149f36a304675">moonray::pbr::TestBsdfSettings::BSDFV</a></div><div class="ttdeci">@ BSDFV</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00035">TestBsdfCommon.h:35</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_settings_html_a3944ad45ce15a0bfe79ecae35810949bab9a16eb3669ce7dd2902b440ac3bbd90"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949bab9a16eb3669ce7dd2902b440ac3bbd90">moonray::pbr::TestBsdfSettings::BSDF_ONE_SAMPLERV</a></div><div class="ttdeci">@ BSDF_ONE_SAMPLERV</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00037">TestBsdfCommon.h:36</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_settings_html_a3944ad45ce15a0bfe79ecae35810949bae824c3f4b78a3fcd0d088feaaf4e872f"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949bae824c3f4b78a3fcd0d088feaaf4e872f">moonray::pbr::TestBsdfSettings::BSDF_ONE_SAMPLER</a></div><div class="ttdeci">@ BSDF_ONE_SAMPLER</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00034">TestBsdfCommon.h:34</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_settings_html_a3944ad45ce15a0bfe79ecae35810949baf57a761c80a115480c0317ee9ec34bcc"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3944ad45ce15a0bfe79ecae35810949baf57a761c80a115480c0317ee9ec34bcc">moonray::pbr::TestBsdfSettings::BSDF_SAMPLER</a></div><div class="ttdeci">@ BSDF_SAMPLER</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00033">TestBsdfCommon.h:33</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_settings_html_a39a8cf4f92d62e93fb7080bfdbcb0bad"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a39a8cf4f92d62e93fb7080bfdbcb0bad">moonray::pbr::TestBsdfSettings::testType</a></div><div class="ttdeci">Type testType</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00060">TestBsdfCommon.h:60</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af53857a005c638e6d89c3ed2536a884d" name="af53857a005c638e6d89c3ed2536a884d"></a>
@@ -194,7 +250,151 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdf_common_task_one_sampler_8cc_source.html#l00034">34</a> of file <a class="el" href="_test_bsdf_common_task_one_sampler_8cc_source.html">TestBsdfCommonTaskOneSampler.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   35</span>{</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordtype">int</span> zeroSamplePdfCount = 0;</div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordtype">int</span> zeroEvalPdfCount = 0;</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordtype">int</span> zeroEvalRecipPdfCount = 0;</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>    mcrt_common::ThreadLocalState *tls = <a class="code hl_function" href="namespacemoonray_1_1mcrt__common.html#a3ea8e2cebc04d6a7ebadf24a9330c399">mcrt_common::getFrameUpdateTLS</a>();</div>
+<div class="line"><span class="lineno">   41</span>    scene_rdl2::alloc::Arena &amp;arena = tls-&gt;mArena;</div>
+<div class="line"><span class="lineno">   42</span>    SCOPED_MEM(&amp;arena);</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    scene_rdl2::util::Random random(<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#acd481b4a156a9a6d39aead12a6dfd3b3">randomSeed</a>, <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a7c1126811ee2ca290ea230766f2fb874">randomStream</a>);</div>
+<div class="line"><span class="lineno">   45</span>    shading::Bsdf *bsdf = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a8c30b4c05e05c199f7b44bf4aa69be91">bsdfFactory</a>(arena, <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a06717e91c566c8425ab95812c803f6f6">frame</a>);</div>
+<div class="line"><span class="lineno">   46</span> </div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> s = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a22963f4634506bbb6874344bacb2ef18">sampleFirst</a>; s != <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#aebcd1c139c74122b4afa7fe237719a0d">sampleLast</a>; ++s) {</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>        <span class="keywordtype">bool</span> foundError = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   50</span> </div>
+<div class="line"><span class="lineno">   51</span>        <span class="comment">// Generate a random eye direction</span></div>
+<div class="line"><span class="lineno">   52</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> wo;</div>
+<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">do</span> {</div>
+<div class="line"><span class="lineno">   54</span>            wo = <a class="code hl_function" href="namespacemoonray_1_1shading.html#aa5c7801afc9d11082b7a6146c44a5e82">shading::sampleSphereUniform</a>(random.getNextFloat(), random.getNextFloat());</div>
+<div class="line"><span class="lineno">   55</span>        } <span class="keywordflow">while</span>(<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(wo, <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a06717e91c566c8425ab95812c803f6f6">frame</a>.getN()) &lt; sEpsilon);</div>
+<div class="line"><span class="lineno">   56</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(isOne(wo.length()), <span class="stringliteral">&quot;wo is not normalized&quot;</span>);</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>        <span class="comment">// Get ready to sample, but don&#39;t include cosine term since we want to</span></div>
+<div class="line"><span class="lineno">   59</span>        <span class="comment">// test bsdf reciprocity.</span></div>
+<div class="line"><span class="lineno">   60</span>        shading::BsdfSlice slice(<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a06717e91c566c8425ab95812c803f6f6">frame</a>.getN(), wo, <span class="keyword">false</span>, <span class="keyword">true</span>, ispc::SHADOW_TERMINATOR_FIX_OFF);</div>
+<div class="line"><span class="lineno">   61</span>        BsdfOneSampler sampler(*bsdf, slice);</div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span>        <span class="comment">// Draw a sample according to the bsdf</span></div>
+<div class="line"><span class="lineno">   64</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> rLobe = random.getNextFloat();</div>
+<div class="line"><span class="lineno">   65</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> r1 = random.getNextFloat();</div>
+<div class="line"><span class="lineno">   66</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> r2 = random.getNextFloat();</div>
+<div class="line"><span class="lineno">   67</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> wi;</div>
+<div class="line"><span class="lineno">   68</span>        <span class="keywordtype">float</span> pdf;</div>
+<div class="line"><span class="lineno">   69</span>        Color color = sampler.sample(rLobe, r1, r2, wi, pdf);</div>
+<div class="line"><span class="lineno">   70</span>        <span class="keywordflow">if</span> (pdf == 0.0f) {</div>
+<div class="line"><span class="lineno">   71</span>            zeroSamplePdfCount++;</div>
+<div class="line"><span class="lineno">   72</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">   73</span>        }</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>        <span class="comment">// TODO: work under fixed reference frame and slice, and record</span></div>
+<div class="line"><span class="lineno">   77</span>        <span class="comment">// distribution of sampled lobes and make sure they match their albedos</span></div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>        <span class="comment">// Check the sample</span></div>
+<div class="line"><span class="lineno">   81</span>        foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a91e1648dab4b8b2dc419f7bc1cc52a48">isValidPdf</a>(pdf),</div>
+<div class="line"><span class="lineno">   82</span>                <span class="stringliteral">&quot;sample() returned invalid pdf (%f)&quot;</span>, pdf);</div>
+<div class="line"><span class="lineno">   83</span>        foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a61c4b45e2b9f7fa8374de4109c7f8f27">isValidColor</a>(color),</div>
+<div class="line"><span class="lineno">   84</span>                <span class="stringliteral">&quot;sample() returned invalid color (%f %f %f)&quot;</span>,</div>
+<div class="line"><span class="lineno">   85</span>                color[0], color[1], color[2]);</div>
+<div class="line"><span class="lineno">   86</span>        foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#ab19f6d4d632d200e34842d66679283f5">isValidDirection</a>(wi),</div>
+<div class="line"><span class="lineno">   87</span>                <span class="stringliteral">&quot;sample() returned invalid direction (%f %f %f)&quot;</span>,</div>
+<div class="line"><span class="lineno">   88</span>                wi[0], wi[1], wi[2]);</div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>        <span class="keywordtype">float</span> error;</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>        <span class="comment">// Check consistency with eval()</span></div>
+<div class="line"><span class="lineno">   94</span>        <span class="comment">// TODO: If we sampled from a mirror lobe, then calling eval here</span></div>
+<div class="line"><span class="lineno">   95</span>        <span class="comment">// won&#39;t be consistent with bsdf.sample(), since sample() will return</span></div>
+<div class="line"><span class="lineno">   96</span>        <span class="comment">// only the mirror lobe contribution and eval() will return all</span></div>
+<div class="line"><span class="lineno">   97</span>        <span class="comment">// non-mirror lobes.</span></div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordtype">float</span> checkPdf;</div>
+<div class="line"><span class="lineno">   99</span>        Color checkColor = sampler.eval(wi, checkPdf);</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">if</span> (checkPdf == 0.0f) {</div>
+<div class="line"><span class="lineno">  101</span>            zeroEvalPdfCount++;</div>
+<div class="line"><span class="lineno">  102</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  103</span>        }</div>
+<div class="line"><span class="lineno">  104</span>        foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a91e1648dab4b8b2dc419f7bc1cc52a48">isValidPdf</a>(checkPdf),</div>
+<div class="line"><span class="lineno">  105</span>                <span class="stringliteral">&quot;pdf() returned invalid pdf (%f)&quot;</span>, checkPdf);</div>
+<div class="line"><span class="lineno">  106</span>        error = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ae3d202e9d333275eed06105af5f63511">computeError</a>(pdf, checkPdf);</div>
+<div class="line"><span class="lineno">  107</span>        foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(error &lt; inTest-&gt;toleranceConsistency,</div>
+<div class="line"><span class="lineno">  108</span>                <span class="stringliteral">&quot;pdf() returned inconsistent pdf %f &amp; %f (error=%f)&quot;</span>, pdf, checkPdf, error);</div>
+<div class="line"><span class="lineno">  109</span> </div>
+<div class="line"><span class="lineno">  110</span>        <span class="comment">// Check consistency with eval()</span></div>
+<div class="line"><span class="lineno">  111</span>        foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a61c4b45e2b9f7fa8374de4109c7f8f27">isValidColor</a>(checkColor),</div>
+<div class="line"><span class="lineno">  112</span>                <span class="stringliteral">&quot;eval() returned invalid color (%f %f %f)&quot;</span>,</div>
+<div class="line"><span class="lineno">  113</span>                checkColor[0], checkColor[1], checkColor[2]);</div>
+<div class="line"><span class="lineno">  114</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; 3; i++) {</div>
+<div class="line"><span class="lineno">  115</span>            error = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ae3d202e9d333275eed06105af5f63511">computeError</a>(color[i], checkColor[i]);</div>
+<div class="line"><span class="lineno">  116</span>            foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(error &lt; inTest-&gt;toleranceConsistency,</div>
+<div class="line"><span class="lineno">  117</span>                    <span class="stringliteral">&quot;eval() returned inconsistent color (error=%f)&quot;</span>, error);</div>
+<div class="line"><span class="lineno">  118</span>        }</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span> </div>
+<div class="line"><span class="lineno">  121</span>        <span class="comment">// Check eval() reciprocity</span></div>
+<div class="line"><span class="lineno">  122</span>        shading::BsdfSlice recipSlice(<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a06717e91c566c8425ab95812c803f6f6">frame</a>.getN(), wi, <span class="keyword">false</span>, <span class="keyword">true</span>, ispc::SHADOW_TERMINATOR_FIX_OFF);</div>
+<div class="line"><span class="lineno">  123</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a6aea2e8db0171fea0de78f991d2952fc">testReciprocity</a>) {</div>
+<div class="line"><span class="lineno">  124</span>            BsdfOneSampler recipSampler(*bsdf, recipSlice);</div>
+<div class="line"><span class="lineno">  125</span>            checkColor = recipSampler.eval(wo, checkPdf);</div>
+<div class="line"><span class="lineno">  126</span>            <span class="keywordflow">if</span> (checkPdf == 0.0f) {</div>
+<div class="line"><span class="lineno">  127</span>                zeroEvalRecipPdfCount++;</div>
+<div class="line"><span class="lineno">  128</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  129</span>            }</div>
+<div class="line"><span class="lineno">  130</span>            foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a91e1648dab4b8b2dc419f7bc1cc52a48">isValidPdf</a>(checkPdf),</div>
+<div class="line"><span class="lineno">  131</span>                    <span class="stringliteral">&quot;pdf() reciprocal returned invalid pdf (%f)&quot;</span>, checkPdf);</div>
+<div class="line"><span class="lineno">  132</span>            foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a61c4b45e2b9f7fa8374de4109c7f8f27">isValidColor</a>(checkColor),</div>
+<div class="line"><span class="lineno">  133</span>                    <span class="stringliteral">&quot;eval() reciprocal returned invalid color (%f %f %f)&quot;</span>,</div>
+<div class="line"><span class="lineno">  134</span>                    checkColor[0], checkColor[1], checkColor[2]);</div>
+<div class="line"><span class="lineno">  135</span>            <span class="comment">// TODO: The reciprocity test should divide by the square of the index</span></div>
+<div class="line"><span class="lineno">  136</span>            <span class="comment">// of refraction for each medium side to handle glossy transmission</span></div>
+<div class="line"><span class="lineno">  137</span>            <span class="comment">// properly</span></div>
+<div class="line"><span class="lineno">  138</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; 3; i++) {</div>
+<div class="line"><span class="lineno">  139</span>                error = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ae3d202e9d333275eed06105af5f63511">computeError</a>(color[i], checkColor[i]);</div>
+<div class="line"><span class="lineno">  140</span>                foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(error &lt;= inTest-&gt;toleranceConsistency,</div>
+<div class="line"><span class="lineno">  141</span>                        <span class="stringliteral">&quot;eval() reciprocal returned inconsistent color (err=%f)&quot;</span>,</div>
+<div class="line"><span class="lineno">  142</span>                        error);</div>
+<div class="line"><span class="lineno">  143</span>            }</div>
+<div class="line"><span class="lineno">  144</span>        }</div>
+<div class="line"><span class="lineno">  145</span> </div>
+<div class="line"><span class="lineno">  146</span>        <span class="comment">// TODO: check other &quot;Rules&quot; from Bsdf API (i.e. mirror case).</span></div>
+<div class="line"><span class="lineno">  147</span> </div>
+<div class="line"><span class="lineno">  148</span>        <span class="comment">// For your debugging needs</span></div>
+<div class="line"><span class="lineno">  149</span>        <span class="keywordflow">if</span> (foundError) {</div>
+<div class="line"><span class="lineno">  150</span>            color = sampler.sample(rLobe, r1, r2, wi, pdf);</div>
+<div class="line"><span class="lineno">  151</span>            <span class="comment">// cppcheck complains at redundant assignment if you don&#39;t comment</span></div>
+<div class="line"><span class="lineno">  152</span>            <span class="comment">// these two lines out when you check in.</span></div>
+<div class="line"><span class="lineno">  153</span>            <span class="comment">//color = sampler.eval(wi, checkPdf);</span></div>
+<div class="line"><span class="lineno">  154</span>            <span class="comment">//color = recipSampler.eval(wo, checkPdf);</span></div>
+<div class="line"><span class="lineno">  155</span>        }</div>
+<div class="line"><span class="lineno">  156</span>    }</div>
+<div class="line"><span class="lineno">  157</span> </div>
+<div class="line"><span class="lineno">  158</span>    <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#ac4019828ac403d2d46abcdc563ccd1e7">mZeroSamplePdfCount</a> += zeroSamplePdfCount;</div>
+<div class="line"><span class="lineno">  159</span>    <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#a22a3b2514af0b70607013ddcf44ad017">mZeroEvalPdfCount</a> += zeroEvalPdfCount;</div>
+<div class="line"><span class="lineno">  160</span>    <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#a75e75e59e50ca2f9d43b8e22cdc64826">mZeroEvalRecipPdfCount</a> += zeroEvalRecipPdfCount;</div>
+<div class="line"><span class="lineno">  161</span>    <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#a574d4b12fd838695b946983a84fa282d">mSampleCount</a> += <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#aebcd1c139c74122b4afa7fe237719a0d">sampleLast</a> - <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a22963f4634506bbb6874344bacb2ef18">sampleFirst</a>;</div>
+<div class="line"><span class="lineno">  162</span>}</div>
+<div class="ttc" id="a_n_point_8h_html_a16747d68c1e06270b0ed335d631b66f3"><div class="ttname"><a href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a></div><div class="ttdeci">float dot(const NPoint&lt; D &gt; &amp;a, const NPoint&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00271">NPoint.h:271</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1mcrt__common_html_a3ea8e2cebc04d6a7ebadf24a9330c399"><div class="ttname"><a href="namespacemoonray_1_1mcrt__common.html#a3ea8e2cebc04d6a7ebadf24a9330c399">moonray::mcrt_common::getFrameUpdateTLS</a></div><div class="ttdeci">ThreadLocalState * getFrameUpdateTLS()</div><div class="ttdef"><b>Definition:</b> <a href="_thread_local_state_8cc_source.html#l00443">ThreadLocalState.cc:443</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a61c4b45e2b9f7fa8374de4109c7f8f27"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a61c4b45e2b9f7fa8374de4109c7f8f27">moonray::pbr::isValidColor</a></div><div class="ttdeci">finline bool isValidColor(const scene_rdl2::math::Color &amp;c)</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00168">TestUtil.h:168</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a91e1648dab4b8b2dc419f7bc1cc52a48"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a91e1648dab4b8b2dc419f7bc1cc52a48">moonray::pbr::isValidPdf</a></div><div class="ttdeci">finline bool isValidPdf(float pdf)</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00178">TestUtil.h:178</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_ab19f6d4d632d200e34842d66679283f5"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ab19f6d4d632d200e34842d66679283f5">moonray::pbr::isValidDirection</a></div><div class="ttdeci">finline bool isValidDirection(const scene_rdl2::math::Vec3f &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00158">TestUtil.h:158</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_ad7334291d52bf87ebb0ad261a0790bb2"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">moonray::pbr::testAssert</a></div><div class="ttdeci">bool testAssert(bool condition, const char *format,...)</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00129">TestUtil.h:129</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_ae3d202e9d333275eed06105af5f63511"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ae3d202e9d333275eed06105af5f63511">moonray::pbr::computeError</a></div><div class="ttdeci">finline float computeError(float v1, float v2)</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00199">TestUtil.h:199</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_aa5c7801afc9d11082b7a6146c44a5e82"><div class="ttname"><a href="namespacemoonray_1_1shading.html#aa5c7801afc9d11082b7a6146c44a5e82">moonray::shading::sampleSphereUniform</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f sampleSphereUniform(float r1, float r2)</div><div class="ttdoc">pdf = 1.0 / (4.0 * PI)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00564">Util.h:564</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result_html_a22a3b2514af0b70607013ddcf44ad017"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#a22a3b2514af0b70607013ddcf44ad017">moonray::pbr::TestBsdfConsistencyTask::Result::mZeroEvalPdfCount</a></div><div class="ttdeci">int mZeroEvalPdfCount</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00084">TestBsdfCommon.h:84</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result_html_a574d4b12fd838695b946983a84fa282d"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#a574d4b12fd838695b946983a84fa282d">moonray::pbr::TestBsdfConsistencyTask::Result::mSampleCount</a></div><div class="ttdeci">int mSampleCount</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00086">TestBsdfCommon.h:86</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result_html_a75e75e59e50ca2f9d43b8e22cdc64826"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#a75e75e59e50ca2f9d43b8e22cdc64826">moonray::pbr::TestBsdfConsistencyTask::Result::mZeroEvalRecipPdfCount</a></div><div class="ttdeci">int mZeroEvalRecipPdfCount</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00085">TestBsdfCommon.h:85</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result_html_ac4019828ac403d2d46abcdc563ccd1e7"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#ac4019828ac403d2d46abcdc563ccd1e7">moonray::pbr::TestBsdfConsistencyTask::Result::mZeroSamplePdfCount</a></div><div class="ttdeci">int mZeroSamplePdfCount</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00083">TestBsdfCommon.h:83</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_settings_html_a06717e91c566c8425ab95812c803f6f6"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a06717e91c566c8425ab95812c803f6f6">moonray::pbr::TestBsdfSettings::frame</a></div><div class="ttdeci">const scene_rdl2::math::ReferenceFrame &amp; frame</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00054">TestBsdfCommon.h:54</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_settings_html_a6aea2e8db0171fea0de78f991d2952fc"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a6aea2e8db0171fea0de78f991d2952fc">moonray::pbr::TestBsdfSettings::testReciprocity</a></div><div class="ttdeci">bool testReciprocity</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00055">TestBsdfCommon.h:55</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_settings_html_a8c30b4c05e05c199f7b44bf4aa69be91"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a8c30b4c05e05c199f7b44bf4aa69be91">moonray::pbr::TestBsdfSettings::bsdfFactory</a></div><div class="ttdeci">const BsdfFactory &amp; bsdfFactory</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00053">TestBsdfCommon.h:53</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acd0e32c0212c80b730de8ba9e87b78d7" name="acd0e32c0212c80b730de8ba9e87b78d7"></a>
@@ -213,7 +413,58 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdf_one_samplerv_8cc_source.html#l00534">534</a> of file <a class="el" href="_test_bsdf_one_samplerv_8cc_source.html">TestBsdfOneSamplerv.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  535</span>{</div>
+<div class="line"><span class="lineno">  536</span>    ispc::TestBsdfOneSamplerConsistency test;</div>
+<div class="line"><span class="lineno">  537</span> </div>
+<div class="line"><span class="lineno">  538</span>    mcrt_common::ThreadLocalState *tls = <a class="code hl_function" href="namespacemoonray_1_1mcrt__common.html#a3ea8e2cebc04d6a7ebadf24a9330c399">mcrt_common::getFrameUpdateTLS</a>();</div>
+<div class="line"><span class="lineno">  539</span>    scene_rdl2::alloc::Arena &amp;arena = tls-&gt;mArena;</div>
+<div class="line"><span class="lineno">  540</span>    SCOPED_MEM(&amp;arena);</div>
+<div class="line"><span class="lineno">  541</span> </div>
+<div class="line"><span class="lineno">  542</span>    <span class="comment">// initialize test input</span></div>
+<div class="line"><span class="lineno">  543</span>    test.mBsdf = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a8c30b4c05e05c199f7b44bf4aa69be91">bsdfFactory</a>.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_bsdf_factory.html#a573c442293f5c4deb9e47f985cf5ae71">getBsdfv</a>(arena, <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a06717e91c566c8425ab95812c803f6f6">frame</a>);</div>
+<div class="line"><span class="lineno">  544</span>    test.mTestReciprocity = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a6aea2e8db0171fea0de78f991d2952fc">testReciprocity</a>;</div>
+<div class="line"><span class="lineno">  545</span>    test.mRangeStart = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a22963f4634506bbb6874344bacb2ef18">sampleFirst</a>;</div>
+<div class="line"><span class="lineno">  546</span>    test.mRangeEnd = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#aebcd1c139c74122b4afa7fe237719a0d">sampleLast</a>;</div>
+<div class="line"><span class="lineno">  547</span>    test.mRandomSeed = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#acd481b4a156a9a6d39aead12a6dfd3b3">randomSeed</a>;</div>
+<div class="line"><span class="lineno">  548</span>    test.mRandomStream = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a7c1126811ee2ca290ea230766f2fb874">randomStream</a>;</div>
+<div class="line"><span class="lineno">  549</span>    test.mNg = *((<span class="keyword">const</span> ispc::Vec3f *) &amp;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a06717e91c566c8425ab95812c803f6f6">frame</a>.getN());</div>
+<div class="line"><span class="lineno">  550</span>    test.mTol = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3c598720ac72e767616e66264bb08f71">toleranceConsistency</a>;</div>
+<div class="line"><span class="lineno">  551</span> </div>
+<div class="line"><span class="lineno">  552</span>    <span class="comment">// call the test</span></div>
+<div class="line"><span class="lineno">  553</span>    ispc::TestBsdfOneSampler_testConsistency(&amp;test);</div>
+<div class="line"><span class="lineno">  554</span> </div>
+<div class="line"><span class="lineno">  555</span>    <span class="comment">// check for an report errors</span></div>
+<div class="line"><span class="lineno">  556</span>    <span class="comment">// check for and report errors</span></div>
+<div class="line"><span class="lineno">  557</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInvalidPdf,</div>
+<div class="line"><span class="lineno">  558</span>               <span class="stringliteral">&quot;sample() returned %d invalid pdfs&quot;</span>, test.mInvalidPdf);</div>
+<div class="line"><span class="lineno">  559</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInvalidColor,</div>
+<div class="line"><span class="lineno">  560</span>               <span class="stringliteral">&quot;sample() returned %d invalid colors&quot;</span>, test.mInvalidColor);</div>
+<div class="line"><span class="lineno">  561</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInvalidDirection,</div>
+<div class="line"><span class="lineno">  562</span>               <span class="stringliteral">&quot;sample() returned %d invalid directions&quot;</span>, test.mInvalidDirection);</div>
+<div class="line"><span class="lineno">  563</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInvalidEvalPdf,</div>
+<div class="line"><span class="lineno">  564</span>               <span class="stringliteral">&quot;eval() retuned %d invalid pdfs&quot;</span>, test.mInvalidEvalPdf);</div>
+<div class="line"><span class="lineno">  565</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInconsistentEvalPdf,</div>
+<div class="line"><span class="lineno">  566</span>               <span class="stringliteral">&quot;eval() return %d inconsistent pdfs&quot;</span>, test.mInconsistentEvalPdf);</div>
+<div class="line"><span class="lineno">  567</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInvalidEvalColor,</div>
+<div class="line"><span class="lineno">  568</span>               <span class="stringliteral">&quot;eval() returned %d invalid colors&quot;</span>, test.mInvalidEvalColor);</div>
+<div class="line"><span class="lineno">  569</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInconsistentEvalColor,</div>
+<div class="line"><span class="lineno">  570</span>               <span class="stringliteral">&quot;eval() returned %d inconsistent colors&quot;</span>, test.mInconsistentEvalColor);</div>
+<div class="line"><span class="lineno">  571</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInvalidRecipPdf,</div>
+<div class="line"><span class="lineno">  572</span>               <span class="stringliteral">&quot;eval() recip returned %d invalid pdfs&quot;</span>, test.mInvalidRecipPdf);</div>
+<div class="line"><span class="lineno">  573</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInvalidRecipColor,</div>
+<div class="line"><span class="lineno">  574</span>               <span class="stringliteral">&quot;eval() recip returned %d invalid colors&quot;</span>, test.mInvalidRecipColor);</div>
+<div class="line"><span class="lineno">  575</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInconsistentRecipColor,</div>
+<div class="line"><span class="lineno">  576</span>               <span class="stringliteral">&quot;eval() recip returned %d inconsistent colors&quot;</span>, test.mInconsistentRecipColor);</div>
+<div class="line"><span class="lineno">  577</span> </div>
+<div class="line"><span class="lineno">  578</span>    <span class="comment">// update outputs</span></div>
+<div class="line"><span class="lineno">  579</span>    <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#ac4019828ac403d2d46abcdc563ccd1e7">mZeroSamplePdfCount</a> += test.mZeroSamplePdfCount;</div>
+<div class="line"><span class="lineno">  580</span>    <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#a22a3b2514af0b70607013ddcf44ad017">mZeroEvalPdfCount</a> += test.mZeroEvalPdfCount;</div>
+<div class="line"><span class="lineno">  581</span>    <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#a75e75e59e50ca2f9d43b8e22cdc64826">mZeroEvalRecipPdfCount</a> += test.mZeroEvalRecipPdfCount;</div>
+<div class="line"><span class="lineno">  582</span>    <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#a574d4b12fd838695b946983a84fa282d">mSampleCount</a> += <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#aebcd1c139c74122b4afa7fe237719a0d">sampleLast</a> - <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a22963f4634506bbb6874344bacb2ef18">sampleFirst</a>; <span class="comment">// always one sample per item in the range (unlike BsdfSampler)</span></div>
+<div class="line"><span class="lineno">  583</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_bsdf_factory_html_a573c442293f5c4deb9e47f985cf5ae71"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_bsdf_factory.html#a573c442293f5c4deb9e47f985cf5ae71">moonray::pbr::BsdfFactory::getBsdfv</a></div><div class="ttdeci">virtual shading::Bsdfv * getBsdfv(scene_rdl2::alloc::Arena &amp;arena, const scene_rdl2::math::ReferenceFrame &amp;frame) const =0</div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_settings_html_a3c598720ac72e767616e66264bb08f71"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3c598720ac72e767616e66264bb08f71">moonray::pbr::TestBsdfSettings::toleranceConsistency</a></div><div class="ttdeci">float toleranceConsistency</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00056">TestBsdfCommon.h:56</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af4d7187f4550a704ac249c59b687e051" name="af4d7187f4550a704ac249c59b687e051"></a>
@@ -232,7 +483,144 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdf_common_task_sampler_8cc_source.html#l00036">36</a> of file <a class="el" href="_test_bsdf_common_task_sampler_8cc_source.html">TestBsdfCommonTaskSampler.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   37</span>{</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordtype">int</span> zeroSamplePdfCount = 0;</div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordtype">int</span> zeroEvalPdfCount = 0;</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordtype">int</span> zeroEvalRecipPdfCount = 0;</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordtype">int</span> sampleCount = 0;</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>    mcrt_common::ThreadLocalState *tls = <a class="code hl_function" href="namespacemoonray_1_1mcrt__common.html#a3ea8e2cebc04d6a7ebadf24a9330c399">mcrt_common::getFrameUpdateTLS</a>();</div>
+<div class="line"><span class="lineno">   44</span>    pbr::TLState* <span class="keyword">const</span> pbrTls = MNRY_VERIFY(tls-&gt;mPbrTls.get());</div>
+<div class="line"><span class="lineno">   45</span>    scene_rdl2::alloc::Arena &amp;arena = tls-&gt;mArena;</div>
+<div class="line"><span class="lineno">   46</span>    SCOPED_MEM(&amp;arena);</div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>    scene_rdl2::util::Random random(<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#acd481b4a156a9a6d39aead12a6dfd3b3">randomSeed</a>, <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a7c1126811ee2ca290ea230766f2fb874">randomStream</a>);</div>
+<div class="line"><span class="lineno">   49</span>    shading::Bsdf* <span class="keyword">const</span> bsdf = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a8c30b4c05e05c199f7b44bf4aa69be91">bsdfFactory</a>(arena, <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a06717e91c566c8425ab95812c803f6f6">frame</a>);</div>
+<div class="line"><span class="lineno">   50</span>    BsdfSample bsmp;</div>
+<div class="line"><span class="lineno">   51</span>    <span class="keyword">const</span> PathGuide pg;</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> p(0.f);</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a> = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a22963f4634506bbb6874344bacb2ef18">sampleFirst</a>; <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a> != <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#aebcd1c139c74122b4afa7fe237719a0d">sampleLast</a>; ++<a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>) {</div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   56</span>        <span class="keywordtype">bool</span> foundError = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>        <span class="comment">// Generate a random eye direction</span></div>
+<div class="line"><span class="lineno">   59</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> wo;</div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">do</span> {</div>
+<div class="line"><span class="lineno">   61</span>            wo = <a class="code hl_function" href="namespacemoonray_1_1shading.html#aa5c7801afc9d11082b7a6146c44a5e82">shading::sampleSphereUniform</a>(random.getNextFloat(), random.getNextFloat());</div>
+<div class="line"><span class="lineno">   62</span>        } <span class="keywordflow">while</span>(<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(wo, <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a06717e91c566c8425ab95812c803f6f6">frame</a>.getN()) &lt; sEpsilon);</div>
+<div class="line"><span class="lineno">   63</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(isOne(wo.length()), <span class="stringliteral">&quot;wo is not normalized&quot;</span>);</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span>        <span class="comment">// Get ready to sample, but don&#39;t include cosine term since we want to</span></div>
+<div class="line"><span class="lineno">   66</span>        <span class="comment">// test bsdf reciprocity.</span></div>
+<div class="line"><span class="lineno">   67</span>        shading::BsdfSlice slice(<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a06717e91c566c8425ab95812c803f6f6">frame</a>.getN(), wo, <span class="keyword">false</span>, <span class="keyword">true</span>, ispc::SHADOW_TERMINATOR_FIX_OFF);</div>
+<div class="line"><span class="lineno">   68</span>        BsdfSampler sampler(pbrTls-&gt;mArena, *bsdf, slice,</div>
+<div class="line"><span class="lineno">   69</span>                            <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#acd8f1d32e66a33bb9d980eb6680a398f">TestBsdfSettings::sMaxSamplesPerLobe</a>, <span class="keyword">true</span>, pg);</div>
+<div class="line"><span class="lineno">   70</span>        sampleCount += sampler.getSampleCount();</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> lobeIndex = 0; lobeIndex &lt; sampler.getLobeCount(); ++lobeIndex) {</div>
+<div class="line"><span class="lineno">   73</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; sampler.getLobeSampleCount(lobeIndex); ++i) {</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>                <span class="comment">// Draw the sample and test validity</span></div>
+<div class="line"><span class="lineno">   76</span>                <span class="keyword">const</span> <span class="keywordtype">float</span> r1 = random.getNextFloat();</div>
+<div class="line"><span class="lineno">   77</span>                <span class="keyword">const</span> <span class="keywordtype">float</span> r2 = random.getNextFloat();</div>
+<div class="line"><span class="lineno">   78</span>                sampler.sample(pbrTls, lobeIndex, p, r1, r2, bsmp);</div>
+<div class="line"><span class="lineno">   79</span>                <span class="keywordflow">if</span> (bsmp.pdf == 0.0f) {</div>
+<div class="line"><span class="lineno">   80</span>                    zeroSamplePdfCount++;</div>
+<div class="line"><span class="lineno">   81</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">   82</span>                }</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>                <span class="comment">// TODO: work under fixed reference frame and slice, and record</span></div>
+<div class="line"><span class="lineno">   85</span>                <span class="comment">// distribution of sampled lobes and make sure they match their albedos</span></div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>                <span class="comment">// Check the sample</span></div>
+<div class="line"><span class="lineno">   88</span>                foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a91e1648dab4b8b2dc419f7bc1cc52a48">isValidPdf</a>(bsmp.pdf),</div>
+<div class="line"><span class="lineno">   89</span>                        <span class="stringliteral">&quot;sample() returned invalid pdf (%f)&quot;</span>, bsmp.pdf);</div>
+<div class="line"><span class="lineno">   90</span>                foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a61c4b45e2b9f7fa8374de4109c7f8f27">isValidColor</a>(bsmp.f),</div>
+<div class="line"><span class="lineno">   91</span>                        <span class="stringliteral">&quot;sample() returned invalid color (%f %f %f)&quot;</span>,</div>
+<div class="line"><span class="lineno">   92</span>                        bsmp.f[0], bsmp.f[1], bsmp.f[2]);</div>
+<div class="line"><span class="lineno">   93</span>                foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#ab19f6d4d632d200e34842d66679283f5">isValidDirection</a>(bsmp.wi),</div>
+<div class="line"><span class="lineno">   94</span>                        <span class="stringliteral">&quot;sample() returned invalid direction (%f %f %f)&quot;</span>,</div>
+<div class="line"><span class="lineno">   95</span>                        bsmp.wi[0], bsmp.wi[1], bsmp.wi[2]);</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>                <span class="keywordtype">float</span> error;</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>                <span class="comment">// Check consistency with eval()</span></div>
+<div class="line"><span class="lineno">  101</span>                <span class="comment">// TODO: If we sampled from a mirror lobe, then calling eval here</span></div>
+<div class="line"><span class="lineno">  102</span>                <span class="comment">// won&#39;t be consistent with bsdf.sample(), since sample() will return</span></div>
+<div class="line"><span class="lineno">  103</span>                <span class="comment">// only the mirror lobe contribution and eval() will return all</span></div>
+<div class="line"><span class="lineno">  104</span>                <span class="comment">// non-mirror lobes.</span></div>
+<div class="line"><span class="lineno">  105</span>                <span class="keywordtype">float</span> checkPdf;</div>
+<div class="line"><span class="lineno">  106</span>                shading::BsdfLobe *lobe = sampler.getLobe(lobeIndex);</div>
+<div class="line"><span class="lineno">  107</span>                Color checkF = lobe-&gt;eval(slice, bsmp.wi, &amp;checkPdf);</div>
+<div class="line"><span class="lineno">  108</span>                <span class="keywordflow">if</span> (checkPdf == 0.0f) {</div>
+<div class="line"><span class="lineno">  109</span>                    zeroEvalPdfCount++;</div>
+<div class="line"><span class="lineno">  110</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  111</span>                }</div>
+<div class="line"><span class="lineno">  112</span> </div>
+<div class="line"><span class="lineno">  113</span>                foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a91e1648dab4b8b2dc419f7bc1cc52a48">isValidPdf</a>(checkPdf),</div>
+<div class="line"><span class="lineno">  114</span>                        <span class="stringliteral">&quot;eval() returned invalid pdf (%f)&quot;</span>, checkPdf);</div>
+<div class="line"><span class="lineno">  115</span>                error = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ae3d202e9d333275eed06105af5f63511">computeError</a>(bsmp.pdf, checkPdf);</div>
+<div class="line"><span class="lineno">  116</span>                foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(error &lt; inTest-&gt;toleranceConsistency,</div>
+<div class="line"><span class="lineno">  117</span>                        <span class="stringliteral">&quot;eval() returned inconsistent pdf (error=%f)&quot;</span>, error);</div>
+<div class="line"><span class="lineno">  118</span> </div>
+<div class="line"><span class="lineno">  119</span>                <span class="comment">// Check consistency with eval()</span></div>
+<div class="line"><span class="lineno">  120</span>                foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a61c4b45e2b9f7fa8374de4109c7f8f27">isValidColor</a>(checkF),</div>
+<div class="line"><span class="lineno">  121</span>                        <span class="stringliteral">&quot;eval() returned invalid color (%f %f %f)&quot;</span>,</div>
+<div class="line"><span class="lineno">  122</span>                        checkF[0], checkF[1], checkF[2]);</div>
+<div class="line"><span class="lineno">  123</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; 3; i++) {</div>
+<div class="line"><span class="lineno">  124</span>                    error = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ae3d202e9d333275eed06105af5f63511">computeError</a>(bsmp.f[i], checkF[i]);</div>
+<div class="line"><span class="lineno">  125</span>                    foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(error &lt; inTest-&gt;toleranceConsistency,</div>
+<div class="line"><span class="lineno">  126</span>                            <span class="stringliteral">&quot;eval() returned inconsistent color (error=%f)&quot;</span>, error);</div>
+<div class="line"><span class="lineno">  127</span>                }</div>
+<div class="line"><span class="lineno">  128</span> </div>
+<div class="line"><span class="lineno">  129</span> </div>
+<div class="line"><span class="lineno">  130</span>                <span class="comment">// Check eval() reciprocity</span></div>
+<div class="line"><span class="lineno">  131</span>                shading::BsdfSlice recipSlice(<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a06717e91c566c8425ab95812c803f6f6">frame</a>.getN(), bsmp.wi, <span class="keyword">false</span>, <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">  132</span>                    ispc::SHADOW_TERMINATOR_FIX_OFF);</div>
+<div class="line"><span class="lineno">  133</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a6aea2e8db0171fea0de78f991d2952fc">testReciprocity</a>) {</div>
+<div class="line"><span class="lineno">  134</span>                    checkF = lobe-&gt;eval(recipSlice, wo, &amp;checkPdf);</div>
+<div class="line"><span class="lineno">  135</span>                    <span class="keywordflow">if</span> (checkPdf == 0.0f) {</div>
+<div class="line"><span class="lineno">  136</span>                        zeroEvalRecipPdfCount++;</div>
+<div class="line"><span class="lineno">  137</span>                        <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  138</span>                    }</div>
+<div class="line"><span class="lineno">  139</span>                    foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a91e1648dab4b8b2dc419f7bc1cc52a48">isValidPdf</a>(checkPdf),</div>
+<div class="line"><span class="lineno">  140</span>                            <span class="stringliteral">&quot;eval() reciprocal returned invalid pdf (%f)&quot;</span>, checkPdf);</div>
+<div class="line"><span class="lineno">  141</span>                    foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a61c4b45e2b9f7fa8374de4109c7f8f27">isValidColor</a>(checkF),</div>
+<div class="line"><span class="lineno">  142</span>                            <span class="stringliteral">&quot;eval() reciprocal returned invalid color (%f %f %f)&quot;</span>,</div>
+<div class="line"><span class="lineno">  143</span>                            checkF[0], checkF[1], checkF[2]);</div>
+<div class="line"><span class="lineno">  144</span>                    <span class="comment">// TODO: The reciprocity test should divide by the square of the index</span></div>
+<div class="line"><span class="lineno">  145</span>                    <span class="comment">// of refraction for each medium side to handle glossy transmission</span></div>
+<div class="line"><span class="lineno">  146</span>                    <span class="comment">// properly</span></div>
+<div class="line"><span class="lineno">  147</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; 3; i++) {</div>
+<div class="line"><span class="lineno">  148</span>                        error = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ae3d202e9d333275eed06105af5f63511">computeError</a>(bsmp.f[i], checkF[i]);</div>
+<div class="line"><span class="lineno">  149</span>                        foundError |= <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(error &lt; inTest-&gt;toleranceConsistency,</div>
+<div class="line"><span class="lineno">  150</span>                                <span class="stringliteral">&quot;eval() reciprocal returned inconsistent color (err=%f)&quot;</span>,</div>
+<div class="line"><span class="lineno">  151</span>                                error);</div>
+<div class="line"><span class="lineno">  152</span>                    }</div>
+<div class="line"><span class="lineno">  153</span>                }</div>
+<div class="line"><span class="lineno">  154</span> </div>
+<div class="line"><span class="lineno">  155</span>                <span class="comment">// TODO: check other &quot;Rules&quot; from Bsdf API (i.e. mirror case).</span></div>
+<div class="line"><span class="lineno">  156</span> </div>
+<div class="line"><span class="lineno">  157</span>                <span class="comment">// For your debugging needs</span></div>
+<div class="line"><span class="lineno">  158</span>                <span class="keywordflow">if</span> (foundError) {</div>
+<div class="line"><span class="lineno">  159</span>                    sampler.sample(pbrTls, lobeIndex, p, r1, r2, bsmp);</div>
+<div class="line"><span class="lineno">  160</span>                    lobe-&gt;eval(slice, bsmp.wi, &amp;checkPdf);</div>
+<div class="line"><span class="lineno">  161</span>                    lobe-&gt;eval(recipSlice, wo, &amp;checkPdf);</div>
+<div class="line"><span class="lineno">  162</span>                }</div>
+<div class="line"><span class="lineno">  163</span>            }</div>
+<div class="line"><span class="lineno">  164</span>        }</div>
+<div class="line"><span class="lineno">  165</span>    }</div>
+<div class="line"><span class="lineno">  166</span> </div>
+<div class="line"><span class="lineno">  167</span>    <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#ac4019828ac403d2d46abcdc563ccd1e7">mZeroSamplePdfCount</a> += zeroSamplePdfCount;</div>
+<div class="line"><span class="lineno">  168</span>    <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#a22a3b2514af0b70607013ddcf44ad017">mZeroEvalPdfCount</a> += zeroEvalPdfCount;</div>
+<div class="line"><span class="lineno">  169</span>    <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#a75e75e59e50ca2f9d43b8e22cdc64826">mZeroEvalRecipPdfCount</a> += zeroEvalRecipPdfCount;</div>
+<div class="line"><span class="lineno">  170</span>    <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#a574d4b12fd838695b946983a84fa282d">mSampleCount</a> += sampleCount;</div>
+<div class="line"><span class="lineno">  171</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a891596c3133fe5228ad4169dc149b987"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">moonray::shading::sample</a></div><div class="ttdeci">scene_rdl2::math::Color sample(const BsdfLobev &amp;lobev, const BsdfSlicev &amp;slicev, float r1, float r2, int lane, scene_rdl2::math::Vec3f &amp;wi, float &amp;pdf)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdfv_8cc_source.html#l00053">Bsdfv.cc:53</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_test_bsdf_settings_html_acd8f1d32e66a33bb9d980eb6680a398f"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#acd8f1d32e66a33bb9d980eb6680a398f">moonray::pbr::TestBsdfSettings::sMaxSamplesPerLobe</a></div><div class="ttdeci">static const int sMaxSamplesPerLobe</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_common_8h_source.html#l00062">TestBsdfCommon.h:62</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a116b19714f4989c60836db1bbe83a46f" name="a116b19714f4989c60836db1bbe83a46f"></a>
@@ -251,7 +639,59 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_bsdfv_task_8cc_source.html#l00023">23</a> of file <a class="el" href="_test_bsdfv_task_8cc_source.html">TestBsdfvTask.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{</div>
+<div class="line"><span class="lineno">   25</span>    ispc::TestBsdfConsistency test;</div>
+<div class="line"><span class="lineno">   26</span> </div>
+<div class="line"><span class="lineno">   27</span>    mcrt_common::ThreadLocalState *tls = <a class="code hl_function" href="namespacemoonray_1_1mcrt__common.html#a3ea8e2cebc04d6a7ebadf24a9330c399">mcrt_common::getFrameUpdateTLS</a>();</div>
+<div class="line"><span class="lineno">   28</span>    scene_rdl2::alloc::Arena &amp;arena = tls-&gt;mArena;</div>
+<div class="line"><span class="lineno">   29</span>    SCOPED_MEM(&amp;arena);</div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>    <span class="comment">// initialize test input</span></div>
+<div class="line"><span class="lineno">   32</span>    test.mArena = (ispc::Arena *)&amp;tls-&gt;mArena;</div>
+<div class="line"><span class="lineno">   33</span>    test.mBsdf = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a8c30b4c05e05c199f7b44bf4aa69be91">bsdfFactory</a>.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_bsdf_factory.html#a573c442293f5c4deb9e47f985cf5ae71">getBsdfv</a>(arena, <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a06717e91c566c8425ab95812c803f6f6">frame</a>);</div>
+<div class="line"><span class="lineno">   34</span>    test.mTestReciprocity = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a6aea2e8db0171fea0de78f991d2952fc">testReciprocity</a>;</div>
+<div class="line"><span class="lineno">   35</span>    test.mRangeStart = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a22963f4634506bbb6874344bacb2ef18">sampleFirst</a>;</div>
+<div class="line"><span class="lineno">   36</span>    test.mRangeEnd = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#aebcd1c139c74122b4afa7fe237719a0d">sampleLast</a>;</div>
+<div class="line"><span class="lineno">   37</span>    test.mRandomSeed = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#acd481b4a156a9a6d39aead12a6dfd3b3">randomSeed</a>;</div>
+<div class="line"><span class="lineno">   38</span>    test.mRandomStream = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a7c1126811ee2ca290ea230766f2fb874">randomStream</a>;</div>
+<div class="line"><span class="lineno">   39</span>    test.mMaxSamplesPerLobe = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#acd8f1d32e66a33bb9d980eb6680a398f">sMaxSamplesPerLobe</a>;</div>
+<div class="line"><span class="lineno">   40</span>    test.mNg = *((<span class="keyword">const</span> ispc::Vec3f *) &amp;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a06717e91c566c8425ab95812c803f6f6">frame</a>.getN());</div>
+<div class="line"><span class="lineno">   41</span>    test.mTol = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#adc192768d05c45de159530a3381d2fbd">inTest</a>-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3c598720ac72e767616e66264bb08f71">toleranceConsistency</a>;</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>    <span class="comment">// call the test</span></div>
+<div class="line"><span class="lineno">   44</span>    ispc::TestBsdf_testConsistency(&amp;test);</div>
+<div class="line"><span class="lineno">   45</span> </div>
+<div class="line"><span class="lineno">   46</span>    <span class="comment">// check for and report errors</span></div>
+<div class="line"><span class="lineno">   47</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInvalidPdf,</div>
+<div class="line"><span class="lineno">   48</span>               <span class="stringliteral">&quot;sample() returned %d invalid pdfs&quot;</span>, test.mInvalidPdf);</div>
+<div class="line"><span class="lineno">   49</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInvalidColor,</div>
+<div class="line"><span class="lineno">   50</span>               <span class="stringliteral">&quot;sample() returned %d invalid colors&quot;</span>, test.mInvalidColor);</div>
+<div class="line"><span class="lineno">   51</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInvalidDirection,</div>
+<div class="line"><span class="lineno">   52</span>               <span class="stringliteral">&quot;sample() returned %d invalid directions&quot;</span>, test.mInvalidDirection);</div>
+<div class="line"><span class="lineno">   53</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInvalidEvalPdf,</div>
+<div class="line"><span class="lineno">   54</span>               <span class="stringliteral">&quot;eval() retuned %d invalid pdfs&quot;</span>, test.mInvalidEvalPdf);</div>
+<div class="line"><span class="lineno">   55</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInconsistentEvalPdf,</div>
+<div class="line"><span class="lineno">   56</span>               <span class="stringliteral">&quot;eval() return %d inconsistent pdfs&quot;</span>, test.mInconsistentEvalPdf);</div>
+<div class="line"><span class="lineno">   57</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInvalidEvalColor,</div>
+<div class="line"><span class="lineno">   58</span>               <span class="stringliteral">&quot;eval() returned %d invalid colors&quot;</span>, test.mInvalidEvalColor);</div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInconsistentEvalColor,</div>
+<div class="line"><span class="lineno">   60</span>               <span class="stringliteral">&quot;eval() returned %d inconsistent colors&quot;</span>, test.mInconsistentEvalColor);</div>
+<div class="line"><span class="lineno">   61</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInvalidRecipPdf,</div>
+<div class="line"><span class="lineno">   62</span>               <span class="stringliteral">&quot;eval() recip returned %d invalid pdfs&quot;</span>, test.mInvalidRecipPdf);</div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInvalidRecipColor,</div>
+<div class="line"><span class="lineno">   64</span>               <span class="stringliteral">&quot;eval() recip returned %d invalid colors&quot;</span>, test.mInvalidRecipColor);</div>
+<div class="line"><span class="lineno">   65</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">testAssert</a>(!test.mInconsistentRecipColor,</div>
+<div class="line"><span class="lineno">   66</span>               <span class="stringliteral">&quot;eval() recip returned %d inconsistent colors&quot;</span>, test.mInconsistentRecipColor);</div>
+<div class="line"><span class="lineno">   67</span> </div>
+<div class="line"><span class="lineno">   68</span>    <span class="comment">// update outputs</span></div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#ac4019828ac403d2d46abcdc563ccd1e7">mZeroSamplePdfCount</a> += test.mZeroSamplePdf;</div>
+<div class="line"><span class="lineno">   70</span>    <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#a22a3b2514af0b70607013ddcf44ad017">mZeroEvalPdfCount</a> += test.mZeroEvalPdf;</div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#a75e75e59e50ca2f9d43b8e22cdc64826">mZeroEvalRecipPdfCount</a> += test.mZeroEvalRecipPdf;</div>
+<div class="line"><span class="lineno">   72</span>    <span class="comment">//PRINT(test.mSampleCount);</span></div>
+<div class="line"><span class="lineno">   73</span>    <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html#a939e1e0236824df107262ebb6d0aa7e7">mResult</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html#a574d4b12fd838695b946983a84fa282d">mSampleCount</a> += test.mSampleCount;</div>
+<div class="line"><span class="lineno">   74</span>    <span class="comment">//PRINT(mResult.mSampleCount);</span></div>
+<div class="line"><span class="lineno">   75</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -359,9 +799,13 @@ Public Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/unittest/<a class="el" href="_test_bsdfv_task_8cc_source.html">TestBsdfvTask.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="structmoonray_1_1pbr_1_1_test_bsdf_consistency_task.html">TestBsdfConsistencyTask</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

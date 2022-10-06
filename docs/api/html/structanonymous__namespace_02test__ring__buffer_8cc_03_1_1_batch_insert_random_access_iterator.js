@@ -1,0 +1,4 @@
+var structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_random_access_iterator =
+[
+    [ "do_batch_insert", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_random_access_iterator.html#a48e651e6514fa0e23504e789bee070c7", null ]
+];

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_02f99361fbe6a8c61cf6ccdd2c3bf288.html">geom</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_instance_procedural_leaf_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">InstanceProceduralLeaf.cc</div></div>
 </div><!--header-->
@@ -50,17 +66,22 @@ $(function() {
 <a href="_instance_procedural_leaf_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file InstanceProceduralLeaf.cc</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Scott Cegielski</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// $Id$</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">///</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_instance_procedural_leaf_8h.html">InstanceProceduralLeaf.h</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;<a class="code" href="_api_8h.html">rendering/geom/Api.h</a>&gt;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;<a class="code" href="_shared_primitive_8h.html">rendering/geom/SharedPrimitive.h</a>&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03.html">   16</a></span><span class="keyword">namespace </span>{</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>validateXformAttrs(<span class="keyword">const</span> <a class="code hl_enumeration" href="namespacemoonray_1_1geom.html#a34164a39e4cb3385625878a88f45e385">moonray::geom::InstanceMethod</a> instanceMethod,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03.html#a6ee91e3c69da7660db508dabdc34e99f">   19</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03.html#a6ee91e3c69da7660db508dabdc34e99f">validateXformAttrs</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="namespacemoonray_1_1geom.html#a34164a39e4cb3385625878a88f45e385">moonray::geom::InstanceMethod</a> instanceMethod,</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                   <span class="keyword">const</span> scene_rdl2::rdl2::Vec4fVector&amp; orientations,</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                   <span class="keyword">const</span> scene_rdl2::rdl2::Vec3fVector&amp; scales,</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                   <span class="keyword">const</span> scene_rdl2::rdl2::Geometry&amp; rdlGeometry,</div>
@@ -99,7 +120,7 @@ $(function() {
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keywordtype">bool</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><a class="code hl_function" href="namespacemoonray_1_1pbr.html#ac3b9c7bfb99573f9b4ebb5a9315decd8">isValidXform</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">moonray::shading::XformSamples</a>&amp; xforms)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03.html#aa3fa557907d9a0efd7badf083aee844d">   58</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03.html#aa3fa557907d9a0efd7badf083aee844d">isValidXform</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">moonray::shading::XformSamples</a>&amp; xforms)</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; xform : xforms) {</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">if</span> (!scene_rdl2::math::isFinite(xform.row0()) ||</div>
@@ -262,7 +283,7 @@ $(function() {
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        <span class="keywordtype">bool</span> addInstanceTransformAttribute = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <a class="code hl_class" href="classmoonray_1_1shading_1_1_typed_attribute_key.html">shading::TypedAttributeKey&lt;scene_rdl2::math::Mat4f&gt;</a> instanceLevelKey =</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>            sInstanceLevelKeys[instanceLevel];</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>            <a class="code hl_variable" href="namespacemoonray_1_1geom.html#acb68f4b0deb520c2a71b38967f0c263f">sInstanceLevelKeys</a>[instanceLevel];</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        <span class="keywordtype">bool</span> addInstanceObjectTransformAttribute = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
@@ -556,20 +577,26 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_standard_attributes_html_a7c233fef652caa1ae6256c1135758ed5"><div class="ttname"><a href="classmoonray_1_1shading_1_1_standard_attributes.html#a7c233fef652caa1ae6256c1135758ed5">moonray::shading::StandardAttributes::sInstanceObjectTransform</a></div><div class="ttdeci">static TypedAttributeKey&lt; scene_rdl2::math::Mat4f &gt; sInstanceObjectTransform</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00159">AttributeKey.h:159</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_standard_attributes_html_adfd6a89cf3bffc4f791240438d08ede4"><div class="ttname"><a href="classmoonray_1_1shading_1_1_standard_attributes.html#adfd6a89cf3bffc4f791240438d08ede4">moonray::shading::StandardAttributes::sShadowRayEpsilon</a></div><div class="ttdeci">static TypedAttributeKey&lt; float &gt; sShadowRayEpsilon</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00166">AttributeKey.h:166</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_typed_attribute_key_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_typed_attribute_key.html">moonray::shading::TypedAttributeKey</a></div><div class="ttdoc">A templated version of AttributeKey for type safety when possible.</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00104">AttributeKey.h:105</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03_html_a6ee91e3c69da7660db508dabdc34e99f"><div class="ttname"><a href="namespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03.html#a6ee91e3c69da7660db508dabdc34e99f">anonymous_namespace{InstanceProceduralLeaf.cc}::validateXformAttrs</a></div><div class="ttdeci">void validateXformAttrs(const moonray::geom::InstanceMethod instanceMethod, const scene_rdl2::rdl2::Vec4fVector &amp;orientations, const scene_rdl2::rdl2::Vec3fVector &amp;scales, const scene_rdl2::rdl2::Geometry &amp;rdlGeometry, const size_t xformsCount, bool &amp;applyOrientation, bool &amp;applyScale)</div><div class="ttdef"><b>Definition:</b> <a href="_instance_procedural_leaf_8cc_source.html#l00019">InstanceProceduralLeaf.cc:19</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03_html_aa3fa557907d9a0efd7badf083aee844d"><div class="ttname"><a href="namespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03.html#aa3fa557907d9a0efd7badf083aee844d">anonymous_namespace{InstanceProceduralLeaf.cc}::isValidXform</a></div><div class="ttdeci">bool isValidXform(const moonray::shading::XformSamples &amp;xforms)</div><div class="ttdef"><b>Definition:</b> <a href="_instance_procedural_leaf_8cc_source.html#l00058">InstanceProceduralLeaf.cc:58</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_html_a068f1739b94fb8a0248f6f79aa10b375"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a068f1739b94fb8a0248f6f79aa10b375">moonray::geom::getReferenceData</a></div><div class="ttdeci">bool getReferenceData(const scene_rdl2::rdl2::Geometry &amp;rdlGeometry, const scene_rdl2::rdl2::SceneObjectVector &amp;references, std::vector&lt; std::shared_ptr&lt; SharedPrimitive &gt; &gt; &amp;refPrimitiveGroups, std::vector&lt; moonray::shading::XformSamples &gt; &amp;refXforms, std::vector&lt; float &gt; &amp;refShadowRayEpsilons)</div><div class="ttdef"><b>Definition:</b> <a href="_instance_procedural_leaf_8cc_source.html#l00078">InstanceProceduralLeaf.cc:78</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_html_a34164a39e4cb3385625878a88f45e385"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a34164a39e4cb3385625878a88f45e385">moonray::geom::InstanceMethod</a></div><div class="ttdeci">InstanceMethod</div><div class="ttdef"><b>Definition:</b> <a href="_instance_procedural_leaf_8h_source.html#l00025">InstanceProceduralLeaf.h:25</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_html_a34164a39e4cb3385625878a88f45e385a2e466ae7b579ecb40c506addce7e2e98"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a34164a39e4cb3385625878a88f45e385a2e466ae7b579ecb40c506addce7e2e98">moonray::geom::InstanceMethod::XFORM_ATTRIBUTES</a></div><div class="ttdeci">@ XFORM_ATTRIBUTES</div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_html_a34164a39e4cb3385625878a88f45e385a7112891b6f9daab06723ff42f13be7a3"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a34164a39e4cb3385625878a88f45e385a7112891b6f9daab06723ff42f13be7a3">moonray::geom::InstanceMethod::XFORMS</a></div><div class="ttdeci">@ XFORMS</div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_acb68f4b0deb520c2a71b38967f0c263f"><div class="ttname"><a href="namespacemoonray_1_1geom.html#acb68f4b0deb520c2a71b38967f0c263f">moonray::geom::sInstanceLevelKeys</a></div><div class="ttdeci">static const shading::TypedAttributeKey&lt; scene_rdl2::math::Mat4f &gt; sInstanceLevelKeys[]</div><div class="ttdef"><b>Definition:</b> <a href="_instance_procedural_leaf_8h_source.html#l00031">InstanceProceduralLeaf.h:31</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_html_af43ff3e3efb6aabddaf5977840a65475"><div class="ttname"><a href="namespacemoonray_1_1geom.html#af43ff3e3efb6aabddaf5977840a65475">moonray::geom::createInstance</a></div><div class="ttdeci">std::unique_ptr&lt; Instance &gt; createInstance(const Mat43 &amp;xform, std::shared_ptr&lt; SharedPrimitive &gt; reference, shading::PrimitiveAttributeTable &amp;&amp;primitiveAttributeTable)</div><div class="ttdoc">create an Instance with a transform and a referenced Primitive</div><div class="ttdef"><b>Definition:</b> <a href="_api_8cc_source.html#l00522">Api.cc:522</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1pbr_html_ac3b9c7bfb99573f9b4ebb5a9315decd8"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ac3b9c7bfb99573f9b4ebb5a9315decd8">moonray::pbr::isValidXform</a></div><div class="ttdeci">bool isValidXform(const Mat4d &amp;xf)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html#l00202">CookieLightFilter.cc:202</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1shading_html_a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc">moonray::shading::RATE_CONSTANT</a></div><div class="ttdeci">@ RATE_CONSTANT</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00025">PrimitiveAttribute.h:25</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1shading_html_ac42657410f98444ece5b9a1b39839f4e"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">moonray::shading::XformSamples</a></div><div class="ttdeci">std::vector&lt; scene_rdl2::math::Xform3f &gt; XformSamples</div><div class="ttdef"><b>Definition:</b> <a href="_xform_8h_source.html#l00024">Xform.h:24</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_0486ff0a15d68326ffdea20a24729a76.html">geom</a></li><li class="navelem"><a class="el" href="_instance_procedural_leaf_8cc.html">InstanceProceduralLeaf.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

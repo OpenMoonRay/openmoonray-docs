@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_5d293eeb9c420916dbaf3de3f1622ec4.html">rt</a></li><li class="navelem"><a class="el" href="dir_2e2a75794e6e4f3cc5282a406a0b6079.html">unittest</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('test__rt_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">test_rt.cc</div></div>
 </div><!--header-->
@@ -245,14 +261,14 @@ $(function() {
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        pInstance-&gt;<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_instance.html#a35563952e6b397a4a3e5c746b768481d">initializeXform</a>();</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <span class="keyword">const</span> std::shared_ptr&lt;moonray::geom::SharedPrimitive&gt;&amp; ref = i.<a class="code hl_function" href="classmoonray_1_1geom_1_1_instance.html#afb7e1c73d5ec8d35aaad67647834db1a">getReference</a>();</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <span class="comment">// visit the referenced Primitive if it&#39;s not visited yet</span></div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="keywordflow">if</span> (mSharedPrimitives.insert(ref).second) {</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_xform_initializer.html#a7146bc0d2ca03a6e5da79144f45bcaa1">mSharedPrimitives</a>.insert(ref).second) {</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            <a class="code hl_class" href="class_xform_initializer.html">XformInitializer</a> xi;</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            ref-&gt;getPrimitive()-&gt;accept(xi);</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        }</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    }</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#ad0ec64db36f943ec0d9dc7fbf07a2ed4">moonray::geom::SharedPrimitiveSet</a> mSharedPrimitives;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="class_xform_initializer.html#a7146bc0d2ca03a6e5da79144f45bcaa1">  206</a></span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#ad0ec64db36f943ec0d9dc7fbf07a2ed4">moonray::geom::SharedPrimitiveSet</a> <a class="code hl_variable" href="class_xform_initializer.html#a7146bc0d2ca03a6e5da79144f45bcaa1">mSharedPrimitives</a>;</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>};</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="class_test_rendering_r_t.html#a142573d7177172fe4e55f514ce837080">  209</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_test_rendering_r_t.html#a142573d7177172fe4e55f514ce837080">TestRenderingRT::testIntersectInstances</a>()</div>
@@ -365,7 +381,7 @@ $(function() {
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>{</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno"><a class="line" href="class_transform_concatenator.html#a5b69b1193546265a4044469fa211af50">  318</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_transform_concatenator.html#a5b69b1193546265a4044469fa211af50">TransformConcatenator</a>(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#ad0ec64db36f943ec0d9dc7fbf07a2ed4">moonray::geom::SharedPrimitiveSet</a>&amp; sharedPrimitives):</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        mSharedPrimitives(sharedPrimitives) {}</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        <a class="code hl_variable" href="class_transform_concatenator.html#a8841b62c0bb2b20b42b663409a135b65">mSharedPrimitives</a>(sharedPrimitives) {}</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno"><a class="line" href="class_transform_concatenator.html#aac079131315a87c61b2eb7554570d83b">  321</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_transform_concatenator.html#aac079131315a87c61b2eb7554570d83b">visitPrimitiveGroup</a>(<a class="code hl_class" href="classmoonray_1_1geom_1_1_primitive_group.html">moonray::geom::PrimitiveGroup</a>&amp; pg)<span class="keyword"> override </span>{</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        pg.<a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive_group.html#a87c9da56fd1ad378d947e09c1cd5f96c">forEachPrimitive</a>(*<span class="keyword">this</span>);</div>
@@ -378,12 +394,12 @@ $(function() {
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno"><a class="line" href="class_transform_concatenator.html#a841569d22e7889a9a2fe5e376afb3ea0">  329</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_transform_concatenator.html#a841569d22e7889a9a2fe5e376afb3ea0">visitInstance</a>(<a class="code hl_class" href="classmoonray_1_1geom_1_1_instance.html">moonray::geom::Instance</a>&amp; i)<span class="keyword"> override </span>{</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; ref = i.<a class="code hl_function" href="classmoonray_1_1geom_1_1_instance.html#afb7e1c73d5ec8d35aaad67647834db1a">getReference</a>();</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        <span class="comment">// visit the referenced Primitive if it&#39;s not visited yet</span></div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        <span class="keywordflow">if</span> (mSharedPrimitives.insert(ref).second) {</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_transform_concatenator.html#a8841b62c0bb2b20b42b663409a135b65">mSharedPrimitives</a>.insert(ref).second) {</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>            ref-&gt;getPrimitive()-&gt;accept(*<span class="keyword">this</span>);</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        }</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    }</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#ad0ec64db36f943ec0d9dc7fbf07a2ed4">moonray::geom::SharedPrimitiveSet</a>&amp; mSharedPrimitives;</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno"><a class="line" href="class_transform_concatenator.html#a8841b62c0bb2b20b42b663409a135b65">  337</a></span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#ad0ec64db36f943ec0d9dc7fbf07a2ed4">moonray::geom::SharedPrimitiveSet</a>&amp; <a class="code hl_variable" href="class_transform_concatenator.html#a8841b62c0bb2b20b42b663409a135b65">mSharedPrimitives</a>;</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>};</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
@@ -593,10 +609,12 @@ $(function() {
 <div class="ttc" id="aclass_transform_concatenator_html"><div class="ttname"><a href="class_transform_concatenator.html">TransformConcatenator</a></div><div class="ttdef"><b>Definition:</b> <a href="test__rt_8cc_source.html#l00315">test_rt.cc:316</a></div></div>
 <div class="ttc" id="aclass_transform_concatenator_html_a5b69b1193546265a4044469fa211af50"><div class="ttname"><a href="class_transform_concatenator.html#a5b69b1193546265a4044469fa211af50">TransformConcatenator::TransformConcatenator</a></div><div class="ttdeci">TransformConcatenator(moonray::geom::SharedPrimitiveSet &amp;sharedPrimitives)</div><div class="ttdef"><b>Definition:</b> <a href="test__rt_8cc_source.html#l00318">test_rt.cc:318</a></div></div>
 <div class="ttc" id="aclass_transform_concatenator_html_a841569d22e7889a9a2fe5e376afb3ea0"><div class="ttname"><a href="class_transform_concatenator.html#a841569d22e7889a9a2fe5e376afb3ea0">TransformConcatenator::visitInstance</a></div><div class="ttdeci">virtual void visitInstance(moonray::geom::Instance &amp;i) override</div><div class="ttdef"><b>Definition:</b> <a href="test__rt_8cc_source.html#l00329">test_rt.cc:329</a></div></div>
+<div class="ttc" id="aclass_transform_concatenator_html_a8841b62c0bb2b20b42b663409a135b65"><div class="ttname"><a href="class_transform_concatenator.html#a8841b62c0bb2b20b42b663409a135b65">TransformConcatenator::mSharedPrimitives</a></div><div class="ttdeci">moonray::geom::SharedPrimitiveSet &amp; mSharedPrimitives</div><div class="ttdef"><b>Definition:</b> <a href="test__rt_8cc_source.html#l00337">test_rt.cc:337</a></div></div>
 <div class="ttc" id="aclass_transform_concatenator_html_aac079131315a87c61b2eb7554570d83b"><div class="ttname"><a href="class_transform_concatenator.html#aac079131315a87c61b2eb7554570d83b">TransformConcatenator::visitPrimitiveGroup</a></div><div class="ttdeci">virtual void visitPrimitiveGroup(moonray::geom::PrimitiveGroup &amp;pg) override</div><div class="ttdef"><b>Definition:</b> <a href="test__rt_8cc_source.html#l00321">test_rt.cc:321</a></div></div>
 <div class="ttc" id="aclass_xform_initializer_html"><div class="ttname"><a href="class_xform_initializer.html">XformInitializer</a></div><div class="ttdef"><b>Definition:</b> <a href="test__rt_8cc_source.html#l00176">test_rt.cc:177</a></div></div>
 <div class="ttc" id="aclass_xform_initializer_html_a32d4288e5b83fe572d574b3e5b8d0734"><div class="ttname"><a href="class_xform_initializer.html#a32d4288e5b83fe572d574b3e5b8d0734">XformInitializer::visitTransformedPrimitive</a></div><div class="ttdeci">virtual void visitTransformedPrimitive(moonray::geom::TransformedPrimitive &amp;t) override</div><div class="ttdef"><b>Definition:</b> <a href="test__rt_8cc_source.html#l00186">test_rt.cc:186</a></div></div>
 <div class="ttc" id="aclass_xform_initializer_html_a3c5e682e6d56e7ab3de4c1169c6b6a2e"><div class="ttname"><a href="class_xform_initializer.html#a3c5e682e6d56e7ab3de4c1169c6b6a2e">XformInitializer::visitPrimitiveGroup</a></div><div class="ttdeci">virtual void visitPrimitiveGroup(moonray::geom::PrimitiveGroup &amp;pg) override</div><div class="ttdef"><b>Definition:</b> <a href="test__rt_8cc_source.html#l00181">test_rt.cc:181</a></div></div>
+<div class="ttc" id="aclass_xform_initializer_html_a7146bc0d2ca03a6e5da79144f45bcaa1"><div class="ttname"><a href="class_xform_initializer.html#a7146bc0d2ca03a6e5da79144f45bcaa1">XformInitializer::mSharedPrimitives</a></div><div class="ttdeci">moonray::geom::SharedPrimitiveSet mSharedPrimitives</div><div class="ttdef"><b>Definition:</b> <a href="test__rt_8cc_source.html#l00206">test_rt.cc:206</a></div></div>
 <div class="ttc" id="aclass_xform_initializer_html_a89b064f40114f0b91d3d68ddfdd0d775"><div class="ttname"><a href="class_xform_initializer.html#a89b064f40114f0b91d3d68ddfdd0d775">XformInitializer::visitInstance</a></div><div class="ttdeci">virtual void visitInstance(moonray::geom::Instance &amp;i) override</div><div class="ttdef"><b>Definition:</b> <a href="test__rt_8cc_source.html#l00191">test_rt.cc:191</a></div></div>
 <div class="ttc" id="aclass_xform_initializer_html_aabe8c8078a8b3d8c44cdff7ab74a0bf5"><div class="ttname"><a href="class_xform_initializer.html#aabe8c8078a8b3d8c44cdff7ab74a0bf5">XformInitializer::XformInitializer</a></div><div class="ttdeci">XformInitializer()=default</div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_instance_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1_instance.html">moonray::geom::Instance</a></div><div class="ttdoc">Primitive that contains a transform and a reference to shared primitive, which can be used for render...</div><div class="ttdef"><b>Definition:</b> <a href="_instance_8h_source.html#l00024">Instance.h:25</a></div></div>
@@ -629,9 +647,13 @@ $(function() {
 <div class="ttc" id="atest__rt_8cc_html_a7b4d555985b46277bb3868b4b0aa47e1"><div class="ttname"><a href="test__rt_8cc.html#a7b4d555985b46277bb3868b4b0aa47e1">CPPUNIT_TEST_SUITE_REGISTRATION</a></div><div class="ttdeci">CPPUNIT_TEST_SUITE_REGISTRATION(TestRenderingRT)</div></div>
 <div class="ttc" id="atest__rt_8h_html"><div class="ttname"><a href="test__rt_8h.html">test_rt.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_4641936dec471d1ca494d715a61d4ee7.html">rt</a></li><li class="navelem"><a class="el" href="dir_aec3b7bea9891be2a16ebd571416a85e.html">unittest</a></li><li class="navelem"><a class="el" href="test__rt_8cc.html">test_rt.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

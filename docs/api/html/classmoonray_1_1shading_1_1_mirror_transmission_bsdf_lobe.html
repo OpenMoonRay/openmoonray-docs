@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html">MirrorTransmissionBsdfLobe</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::MirrorTransmissionBsdfLobe Class Reference</div></div>
 </div><!--header-->
@@ -141,6 +158,25 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a53e300f416eddc450bef32b46f45e3ef inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_lobe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32cda370918eb2aa16ee7004b6bb7262 inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_lobe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a32cda370918eb2aa16ee7004b6bb7262">show</a> (std::ostream &amp;os, const std::string &amp;indent) const =0</td></tr>
 <tr class="separator:a32cda370918eb2aa16ee7004b6bb7262 inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_lobe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a11b7d18304ad247e7a45ccb6325ea4f5"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Vec3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a11b7d18304ad247e7a45ccb6325ea4f5">mN</a></td></tr>
+<tr class="separator:a11b7d18304ad247e7a45ccb6325ea4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b0f4a62421230de0caf17318ba2f61"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#ae6b0f4a62421230de0caf17318ba2f61">mEtaI</a></td></tr>
+<tr class="separator:ae6b0f4a62421230de0caf17318ba2f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf9a6ca0bac537cb9515cbcb4536db3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a7bf9a6ca0bac537cb9515cbcb4536db3">mEtaT</a></td></tr>
+<tr class="separator:a7bf9a6ca0bac537cb9515cbcb4536db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23ab4cd47a28f3dc8f38da886576f75b"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a23ab4cd47a28f3dc8f38da886576f75b">mTint</a></td></tr>
+<tr class="separator:a23ab4cd47a28f3dc8f38da886576f75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94808998efbc2ab895a71ffda287418"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#ac94808998efbc2ab895a71ffda287418">mEtaR</a></td></tr>
+<tr class="separator:ac94808998efbc2ab895a71ffda287418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a561973052518d12f06ae005713de0a70"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a561973052518d12f06ae005713de0a70">mEtaG</a></td></tr>
+<tr class="separator:a561973052518d12f06ae005713de0a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49be3e01bd3c5c988f6ebbf7330767ec"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a49be3e01bd3c5c988f6ebbf7330767ec">mEtaB</a></td></tr>
+<tr class="separator:a49be3e01bd3c5c988f6ebbf7330767ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa35376ddd37e8ba9f59df9568371a35b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#aa35376ddd37e8ba9f59df9568371a35b">mAllowDispersion</a></td></tr>
+<tr class="separator:aa35376ddd37e8ba9f59df9568371a35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -239,7 +275,47 @@ Additional Inherited Members</h2></td></tr>
 <p >Constructor / Destructor Pass in neta, the ratio of the ior for incident / transmitted material. This is used appropriately by the renderer at sampling time whether we're entering or leaving the material. Important: This lobe should be setup with a <a class="el" href="classmoonray_1_1shading_1_1_one_minus_fresnel.html" title="Uses 1 - some other fresnel term.">OneMinusFresnel</a> </p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_mirror_8h_source.html#l00140">140</a> of file <a class="el" href="_bsdf_mirror_8h_source.html">BsdfMirror.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  144</span>                                                        :</div>
+<div class="line"><span class="lineno">  145</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a68e07445ce28319f1e0269d13d0a9c5f">BsdfLobe</a>(<a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">Type</a>(<a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aab7c69e9aa7cc2ad7de411f5b79c7c2e3">TRANSMISSION</a> | <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa64cc302ce6273484db08f1987b5cf337">MIRROR</a>),</div>
+<div class="line"><span class="lineno">  146</span>                 <a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#ab2ca5c1b46a879084da7aeb7f10d6476">DifferentialFlags</a>(0),</div>
+<div class="line"><span class="lineno">  147</span>                 <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">  148</span>                 <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fad2f7ee852fac86eed528a89be06c56fa">PROPERTY_NORMAL</a> | <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fa89a6b964bfa5d53524e65ce5049eca96">PROPERTY_ROUGHNESS</a>),</div>
+<div class="line"><span class="lineno">  149</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a11b7d18304ad247e7a45ccb6325ea4f5">mN</a>(N),</div>
+<div class="line"><span class="lineno">  150</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#ae6b0f4a62421230de0caf17318ba2f61">mEtaI</a>(etaI),</div>
+<div class="line"><span class="lineno">  151</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a7bf9a6ca0bac537cb9515cbcb4536db3">mEtaT</a>(etaT),</div>
+<div class="line"><span class="lineno">  152</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a23ab4cd47a28f3dc8f38da886576f75b">mTint</a>(tint)</div>
+<div class="line"><span class="lineno">  153</span>    {</div>
+<div class="line"><span class="lineno">  154</span>        <span class="comment">// A value of zero is used to turn OFF dispersion.</span></div>
+<div class="line"><span class="lineno">  155</span>        <span class="comment">// Values range from below 25 for very dense flint glasses, around 34 for polycarbonate plastics,</span></div>
+<div class="line"><span class="lineno">  156</span>        <span class="comment">// up to 65 for common crown glasses, and 75 to 85 for some fluorite and phosphate crown glasses.</span></div>
+<div class="line"><span class="lineno">  157</span>        <span class="keywordflow">if</span> (scene_rdl2::math::isZero(abbeNumber)) {</div>
+<div class="line"><span class="lineno">  158</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#aa35376ddd37e8ba9f59df9568371a35b">mAllowDispersion</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  159</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  160</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#a565abe6eba94c976fa5b16d9ed3f81bd">shading::computeSpectralIOR</a>(etaT,</div>
+<div class="line"><span class="lineno">  161</span>                                        abbeNumber,</div>
+<div class="line"><span class="lineno">  162</span>                                        &amp;<a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#ac94808998efbc2ab895a71ffda287418">mEtaR</a>,</div>
+<div class="line"><span class="lineno">  163</span>                                        &amp;<a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a561973052518d12f06ae005713de0a70">mEtaG</a>,</div>
+<div class="line"><span class="lineno">  164</span>                                        &amp;<a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a49be3e01bd3c5c988f6ebbf7330767ec">mEtaB</a>);</div>
+<div class="line"><span class="lineno">  165</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#aa35376ddd37e8ba9f59df9568371a35b">mAllowDispersion</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  166</span>        }</div>
+<div class="line"><span class="lineno">  167</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">moonray::shading::BsdfLobe::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00074">Bsdf.h:74</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43aa64cc302ce6273484db08f1987b5cf337"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa64cc302ce6273484db08f1987b5cf337">moonray::shading::BsdfLobe::MIRROR</a></div><div class="ttdeci">@ MIRROR</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00088">Bsdf.h:88</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43aab7c69e9aa7cc2ad7de411f5b79c7c2e3"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aab7c69e9aa7cc2ad7de411f5b79c7c2e3">moonray::shading::BsdfLobe::TRANSMISSION</a></div><div class="ttdeci">@ TRANSMISSION</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00080">Bsdf.h:80</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a2fadd67ac6fd01a58026eb335f688c3fa89a6b964bfa5d53524e65ce5049eca96"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fa89a6b964bfa5d53524e65ce5049eca96">moonray::shading::BsdfLobe::PROPERTY_ROUGHNESS</a></div><div class="ttdeci">@ PROPERTY_ROUGHNESS</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00113">Bsdf.h:113</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a2fadd67ac6fd01a58026eb335f688c3fad2f7ee852fac86eed528a89be06c56fa"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fad2f7ee852fac86eed528a89be06c56fa">moonray::shading::BsdfLobe::PROPERTY_NORMAL</a></div><div class="ttdeci">@ PROPERTY_NORMAL</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00112">Bsdf.h:112</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a68e07445ce28319f1e0269d13d0a9c5f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a68e07445ce28319f1e0269d13d0a9c5f">moonray::shading::BsdfLobe::BsdfLobe</a></div><div class="ttdeci">BsdfLobe(Type type, DifferentialFlags diffFlags, bool isSpherical, int32_t propertyFlags)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8cc_source.html#l00024">Bsdf.cc:24</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_ab2ca5c1b46a879084da7aeb7f10d6476"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#ab2ca5c1b46a879084da7aeb7f10d6476">moonray::shading::BsdfLobe::DifferentialFlags</a></div><div class="ttdeci">DifferentialFlags</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00101">Bsdf.h:101</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe_html_a11b7d18304ad247e7a45ccb6325ea4f5"><div class="ttname"><a href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a11b7d18304ad247e7a45ccb6325ea4f5">moonray::shading::MirrorTransmissionBsdfLobe::mN</a></div><div class="ttdeci">scene_rdl2::math::Vec3f mN</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_mirror_8h_source.html#l00283">BsdfMirror.h:283</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe_html_a23ab4cd47a28f3dc8f38da886576f75b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a23ab4cd47a28f3dc8f38da886576f75b">moonray::shading::MirrorTransmissionBsdfLobe::mTint</a></div><div class="ttdeci">scene_rdl2::math::Color mTint</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_mirror_8h_source.html#l00285">BsdfMirror.h:285</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe_html_a49be3e01bd3c5c988f6ebbf7330767ec"><div class="ttname"><a href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a49be3e01bd3c5c988f6ebbf7330767ec">moonray::shading::MirrorTransmissionBsdfLobe::mEtaB</a></div><div class="ttdeci">float mEtaB</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_mirror_8h_source.html#l00286">BsdfMirror.h:286</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe_html_a561973052518d12f06ae005713de0a70"><div class="ttname"><a href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a561973052518d12f06ae005713de0a70">moonray::shading::MirrorTransmissionBsdfLobe::mEtaG</a></div><div class="ttdeci">float mEtaG</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_mirror_8h_source.html#l00286">BsdfMirror.h:286</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe_html_a7bf9a6ca0bac537cb9515cbcb4536db3"><div class="ttname"><a href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a7bf9a6ca0bac537cb9515cbcb4536db3">moonray::shading::MirrorTransmissionBsdfLobe::mEtaT</a></div><div class="ttdeci">float mEtaT</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_mirror_8h_source.html#l00284">BsdfMirror.h:284</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe_html_aa35376ddd37e8ba9f59df9568371a35b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#aa35376ddd37e8ba9f59df9568371a35b">moonray::shading::MirrorTransmissionBsdfLobe::mAllowDispersion</a></div><div class="ttdeci">bool mAllowDispersion</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_mirror_8h_source.html#l00287">BsdfMirror.h:287</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe_html_ac94808998efbc2ab895a71ffda287418"><div class="ttname"><a href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#ac94808998efbc2ab895a71ffda287418">moonray::shading::MirrorTransmissionBsdfLobe::mEtaR</a></div><div class="ttdeci">float mEtaR</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_mirror_8h_source.html#l00286">BsdfMirror.h:286</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe_html_ae6b0f4a62421230de0caf17318ba2f61"><div class="ttname"><a href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#ae6b0f4a62421230de0caf17318ba2f61">moonray::shading::MirrorTransmissionBsdfLobe::mEtaI</a></div><div class="ttdeci">float mEtaI</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_mirror_8h_source.html#l00284">BsdfMirror.h:284</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a565abe6eba94c976fa5b16d9ed3f81bd"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a565abe6eba94c976fa5b16d9ed3f81bd">moonray::shading::computeSpectralIOR</a></div><div class="ttdeci">finline void computeSpectralIOR(float eta, float abbeNumber, float *etaR, float *etaG, float *etaB)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00133">Util.h:133</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -271,7 +347,13 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#ad29a9cc32cd6e0ae3306fca7036a7177">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_mirror_8h_source.html#l00228">228</a> of file <a class="el" href="_bsdf_mirror_8h_source.html">BsdfMirror.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  229</span>    {</div>
+<div class="line"><span class="lineno">  230</span>        <span class="keywordtype">float</span> cosThetaWo = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a11b7d18304ad247e7a45ccb6325ea4f5">mN</a>, slice.getWo());</div>
+<div class="line"><span class="lineno">  231</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a23ab4cd47a28f3dc8f38da886576f75b">mTint</a> * <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a27762201a758a03b80bef6e822ecee11">computeScaleAndFresnel</a>(scene_rdl2::math::abs(cosThetaWo));</div>
+<div class="line"><span class="lineno">  232</span>    }</div>
+<div class="ttc" id="a_n_point_8h_html_a16747d68c1e06270b0ed335d631b66f3"><div class="ttname"><a href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a></div><div class="ttdeci">float dot(const NPoint&lt; D &gt; &amp;a, const NPoint&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00271">NPoint.h:271</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a27762201a758a03b80bef6e822ecee11"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a27762201a758a03b80bef6e822ecee11">moonray::shading::BsdfLobe::computeScaleAndFresnel</a></div><div class="ttdeci">finline scene_rdl2::math::Color computeScaleAndFresnel(float cosWi) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00179">Bsdf.h:179</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a69a04607a2e301b5b1480efbd9cd60ec" name="a69a04607a2e301b5b1480efbd9cd60ec"></a>
@@ -348,7 +430,13 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a53e300f416eddc450bef32b46f45e3ef">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_mirror_8h_source.html#l00234">234</a> of file <a class="el" href="_bsdf_mirror_8h_source.html">BsdfMirror.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  237</span>    {</div>
+<div class="line"><span class="lineno">  238</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a3c92bc6b455a91939163bce5ac71ebfd">computeRefractionDirectionDifferential</a>((<a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#ae6b0f4a62421230de0caf17318ba2f61">mEtaI</a>/<a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a7bf9a6ca0bac537cb9515cbcb4536db3">mEtaT</a>),</div>
+<div class="line"><span class="lineno">  239</span>                                               wo, wi, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a11b7d18304ad247e7a45ccb6325ea4f5">mN</a>, dNdx, dNdy,</div>
+<div class="line"><span class="lineno">  240</span>                                               dDdx, dDdy);</div>
+<div class="line"><span class="lineno">  241</span>    }</div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a3c92bc6b455a91939163bce5ac71ebfd"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a3c92bc6b455a91939163bce5ac71ebfd">moonray::shading::computeRefractionDirectionDifferential</a></div><div class="ttdeci">finline void computeRefractionDirectionDifferential(const float neta, const scene_rdl2::math::Vec3f &amp;wo, const scene_rdl2::math::Vec3f &amp;wi, const scene_rdl2::math::Vec3f &amp;H, const scene_rdl2::math::Vec3f &amp;dNdx, const scene_rdl2::math::Vec3f &amp;dNdy, scene_rdl2::math::Vec3f &amp;dDdx, scene_rdl2::math::Vec3f &amp;dDdy)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00379">Util.h:379</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a88e1a3af2b2690ef749215566b86e07d" name="a88e1a3af2b2690ef749215566b86e07d"></a>
@@ -401,7 +489,13 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a9c4e3bbff247bebc35005287dd23c6f9">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_mirror_8h_source.html#l00170">170</a> of file <a class="el" href="_bsdf_mirror_8h_source.html">BsdfMirror.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  171</span>    {</div>
+<div class="line"><span class="lineno">  172</span>        <span class="keywordflow">if</span> (pdf != NULL) {</div>
+<div class="line"><span class="lineno">  173</span>            *pdf = 0.0f;</div>
+<div class="line"><span class="lineno">  174</span>        }</div>
+<div class="line"><span class="lineno">  175</span>        <span class="keywordflow">return</span> scene_rdl2::math::Color(0.0f, 0.0f, 0.0f);</div>
+<div class="line"><span class="lineno">  176</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aae0945c4e1bdf3142098e23c3aad5417" name="aae0945c4e1bdf3142098e23c3aad5417"></a>
@@ -441,7 +535,31 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a5f94646dff64ff6b9539c9baac68135e">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_mirror_8h_source.html#l00243">243</a> of file <a class="el" href="_bsdf_mirror_8h_source.html">BsdfMirror.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  244</span>    {</div>
+<div class="line"><span class="lineno">  245</span>        <span class="keywordtype">bool</span> handled = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  246</span> </div>
+<div class="line"><span class="lineno">  247</span>        <span class="keywordflow">switch</span> (property) {</div>
+<div class="line"><span class="lineno">  248</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fa89a6b964bfa5d53524e65ce5049eca96">PROPERTY_ROUGHNESS</a>:</div>
+<div class="line"><span class="lineno">  249</span>            {</div>
+<div class="line"><span class="lineno">  250</span>                *dest       = 0.0f;</div>
+<div class="line"><span class="lineno">  251</span>                *(dest + 1) = 0.0f;</div>
+<div class="line"><span class="lineno">  252</span>            }</div>
+<div class="line"><span class="lineno">  253</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  254</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fad2f7ee852fac86eed528a89be06c56fa">PROPERTY_NORMAL</a>:</div>
+<div class="line"><span class="lineno">  255</span>            {</div>
+<div class="line"><span class="lineno">  256</span>                *dest       = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a11b7d18304ad247e7a45ccb6325ea4f5">mN</a>.x;</div>
+<div class="line"><span class="lineno">  257</span>                *(dest + 1) = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a11b7d18304ad247e7a45ccb6325ea4f5">mN</a>.y;</div>
+<div class="line"><span class="lineno">  258</span>                *(dest + 2) = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a11b7d18304ad247e7a45ccb6325ea4f5">mN</a>.z;</div>
+<div class="line"><span class="lineno">  259</span>            }</div>
+<div class="line"><span class="lineno">  260</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  261</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  262</span>            handled = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a5f94646dff64ff6b9539c9baac68135e">BsdfLobe::getProperty</a>(property, dest);</div>
+<div class="line"><span class="lineno">  263</span>        }</div>
+<div class="line"><span class="lineno">  264</span> </div>
+<div class="line"><span class="lineno">  265</span>        <span class="keywordflow">return</span> handled;</div>
+<div class="line"><span class="lineno">  266</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a5f94646dff64ff6b9539c9baac68135e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a5f94646dff64ff6b9539c9baac68135e">moonray::shading::BsdfLobe::getProperty</a></div><div class="ttdeci">virtual bool getProperty(Property property, float *dest) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8cc_source.html#l00056">Bsdf.cc:56</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6552f4aab077ecdd0976a19ccc3d822b" name="a6552f4aab077ecdd0976a19ccc3d822b"></a>
@@ -508,7 +626,53 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a59f21649b0273a5e24a19b3e29aee570">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_mirror_8h_source.html#l00178">178</a> of file <a class="el" href="_bsdf_mirror_8h_source.html">BsdfMirror.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  183</span>    {</div>
+<div class="line"><span class="lineno">  184</span>        MNRY_ASSERT(!scene_rdl2::math::isZero(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a7bf9a6ca0bac537cb9515cbcb4536db3">mEtaT</a>));</div>
+<div class="line"><span class="lineno">  185</span> </div>
+<div class="line"><span class="lineno">  186</span>        <span class="keywordtype">float</span> neta;</div>
+<div class="line"><span class="lineno">  187</span>        scene_rdl2::math::Color dispersionColor = scene_rdl2::math::sWhite;</div>
+<div class="line"><span class="lineno">  188</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#aa35376ddd37e8ba9f59df9568371a35b">mAllowDispersion</a>) {</div>
+<div class="line"><span class="lineno">  189</span>            <span class="keywordtype">float</span> sampledEta;</div>
+<div class="line"><span class="lineno">  190</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#a7a9572ab0fc84d4dfe9fcb195d72bd1f">shading::sampleSpectralIOR</a>(r1,</div>
+<div class="line"><span class="lineno">  191</span>                                       <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#ac94808998efbc2ab895a71ffda287418">mEtaR</a>,</div>
+<div class="line"><span class="lineno">  192</span>                                       <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a561973052518d12f06ae005713de0a70">mEtaG</a>,</div>
+<div class="line"><span class="lineno">  193</span>                                       <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a49be3e01bd3c5c988f6ebbf7330767ec">mEtaB</a>,</div>
+<div class="line"><span class="lineno">  194</span>                                       &amp;sampledEta,</div>
+<div class="line"><span class="lineno">  195</span>                                       &amp;pdf,</div>
+<div class="line"><span class="lineno">  196</span>                                       dispersionColor);</div>
+<div class="line"><span class="lineno">  197</span>            neta = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#ae6b0f4a62421230de0caf17318ba2f61">mEtaI</a> / sampledEta;</div>
+<div class="line"><span class="lineno">  198</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  199</span>            <span class="comment">// Probability of sampling the delta function is 1.</span></div>
+<div class="line"><span class="lineno">  200</span>            neta = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#ae6b0f4a62421230de0caf17318ba2f61">mEtaI</a> / <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a7bf9a6ca0bac537cb9515cbcb4536db3">mEtaT</a>;</div>
+<div class="line"><span class="lineno">  201</span>            pdf = 1.0f;</div>
+<div class="line"><span class="lineno">  202</span>        }</div>
+<div class="line"><span class="lineno">  203</span> </div>
+<div class="line"><span class="lineno">  204</span>        <span class="comment">// Compute the transmission direction</span></div>
+<div class="line"><span class="lineno">  205</span>        <span class="keywordtype">float</span> cosThetaWo, cosThetaWi;</div>
+<div class="line"><span class="lineno">  206</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacemoonray_1_1shading.html#ab20aeafed298d7b21fc642ebeed1af9e">computeRefractionDirection</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a11b7d18304ad247e7a45ccb6325ea4f5">mN</a>,</div>
+<div class="line"><span class="lineno">  207</span>                                        slice.getWo(),</div>
+<div class="line"><span class="lineno">  208</span>                                        neta,</div>
+<div class="line"><span class="lineno">  209</span>                                        wi,</div>
+<div class="line"><span class="lineno">  210</span>                                        cosThetaWo,</div>
+<div class="line"><span class="lineno">  211</span>                                        cosThetaWi)) {</div>
+<div class="line"><span class="lineno">  212</span> </div>
+<div class="line"><span class="lineno">  213</span>            <span class="comment">// Total internal reflection is handled by the reflection lobe</span></div>
+<div class="line"><span class="lineno">  214</span>            <span class="comment">// fresnel reflectance</span></div>
+<div class="line"><span class="lineno">  215</span>            pdf = 0.0f;</div>
+<div class="line"><span class="lineno">  216</span>            <span class="keywordflow">return</span> scene_rdl2::math::Color(0.0f, 0.0f, 0.0f);</div>
+<div class="line"><span class="lineno">  217</span>        }</div>
+<div class="line"><span class="lineno">  218</span> </div>
+<div class="line"><span class="lineno">  219</span> </div>
+<div class="line"><span class="lineno">  220</span>        <span class="comment">// Note: we assume this lobe has been setup with a OneMinus*Fresnel</span></div>
+<div class="line"><span class="lineno">  221</span>        <span class="comment">// as we want to use 1 - specular_fresnel. Also notice we use</span></div>
+<div class="line"><span class="lineno">  222</span>        <span class="comment">// cosThetaWo to evaluate the fresnel term, as an approximation of what</span></div>
+<div class="line"><span class="lineno">  223</span>        <span class="comment">// hDotWi would be for the specular lobe.</span></div>
+<div class="line"><span class="lineno">  224</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a23ab4cd47a28f3dc8f38da886576f75b">mTint</a> * <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a27762201a758a03b80bef6e822ecee11">computeScaleAndFresnel</a>(cosThetaWo) * dispersionColor *</div>
+<div class="line"><span class="lineno">  225</span>                (slice.getIncludeCosineTerm()  ?  1.0f  :  1.0f / cosThetaWi);</div>
+<div class="line"><span class="lineno">  226</span>    }</div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a7a9572ab0fc84d4dfe9fcb195d72bd1f"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a7a9572ab0fc84d4dfe9fcb195d72bd1f">moonray::shading::sampleSpectralIOR</a></div><div class="ttdeci">finline void sampleSpectralIOR(float &amp;r, float etaR, float etaG, float etaB, float *sampleEta, float *pdf, scene_rdl2::math::Color &amp;dispersionColor)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00150">Util.h:150</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_ab20aeafed298d7b21fc642ebeed1af9e"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ab20aeafed298d7b21fc642ebeed1af9e">moonray::shading::computeRefractionDirection</a></div><div class="ttdeci">finline bool computeRefractionDirection(const scene_rdl2::math::Vec3f &amp;N, const scene_rdl2::math::Vec3f &amp;wo, float neta, scene_rdl2::math::Vec3f &amp;wi, float &amp;NdotWo, float &amp;NdotWi)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00346">Util.h:346</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a281b9b48b9c9c9155dde9da1dfd9db17" name="a281b9b48b9c9c9155dde9da1dfd9db17"></a>
@@ -548,6 +712,213 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a32cda370918eb2aa16ee7004b6bb7262">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_mirror_8h_source.html#l00268">268</a> of file <a class="el" href="_bsdf_mirror_8h_source.html">BsdfMirror.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  269</span>    {</div>
+<div class="line"><span class="lineno">  270</span>        <span class="keyword">const</span> scene_rdl2::math::Color&amp; scale = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aec44d64391394390189c9f6bbc42f671">getScale</a>();</div>
+<div class="line"><span class="lineno">  271</span>        <span class="keyword">const</span> Fresnel * <span class="keyword">const</span> fresnel = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">getFresnel</a>();</div>
+<div class="line"><span class="lineno">  272</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;[MirrorTransmissionBsdfLobe]\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  273</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;scale: &quot;</span></div>
+<div class="line"><span class="lineno">  274</span>            &lt;&lt; scale.r &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; scale.g &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; scale.b &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  275</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;N: &quot;</span></div>
+<div class="line"><span class="lineno">  276</span>            &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a11b7d18304ad247e7a45ccb6325ea4f5">mN</a>.x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a11b7d18304ad247e7a45ccb6325ea4f5">mN</a>.y &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html#a11b7d18304ad247e7a45ccb6325ea4f5">mN</a>.z &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  277</span>        <span class="keywordflow">if</span> (fresnel) {</div>
+<div class="line"><span class="lineno">  278</span>            fresnel-&gt;show(os, indent + <span class="stringliteral">&quot;    &quot;</span>);</div>
+<div class="line"><span class="lineno">  279</span>        }</div>
+<div class="line"><span class="lineno">  280</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a1325952270070249bd3a4197660a1d7b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">moonray::shading::BsdfLobe::getFresnel</a></div><div class="ttdeci">finline const Fresnel * getFresnel() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00164">Bsdf.h:164</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_aec44d64391394390189c9f6bbc42f671"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aec44d64391394390189c9f6bbc42f671">moonray::shading::BsdfLobe::getScale</a></div><div class="ttdeci">finline const scene_rdl2::math::Color &amp; getScale() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00160">Bsdf.h:160</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa35376ddd37e8ba9f59df9568371a35b" name="aa35376ddd37e8ba9f59df9568371a35b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa35376ddd37e8ba9f59df9568371a35b">&#9670;&#160;</a></span>mAllowDispersion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::shading::MirrorTransmissionBsdfLobe::mAllowDispersion</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_mirror_8h_source.html#l00287">287</a> of file <a class="el" href="_bsdf_mirror_8h_source.html">BsdfMirror.h</a>.</p>
+
+</div>
+</div>
+<a id="a49be3e01bd3c5c988f6ebbf7330767ec" name="a49be3e01bd3c5c988f6ebbf7330767ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49be3e01bd3c5c988f6ebbf7330767ec">&#9670;&#160;</a></span>mEtaB</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::MirrorTransmissionBsdfLobe::mEtaB</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_mirror_8h_source.html#l00286">286</a> of file <a class="el" href="_bsdf_mirror_8h_source.html">BsdfMirror.h</a>.</p>
+
+</div>
+</div>
+<a id="a561973052518d12f06ae005713de0a70" name="a561973052518d12f06ae005713de0a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a561973052518d12f06ae005713de0a70">&#9670;&#160;</a></span>mEtaG</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::MirrorTransmissionBsdfLobe::mEtaG</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_mirror_8h_source.html#l00286">286</a> of file <a class="el" href="_bsdf_mirror_8h_source.html">BsdfMirror.h</a>.</p>
+
+</div>
+</div>
+<a id="ae6b0f4a62421230de0caf17318ba2f61" name="ae6b0f4a62421230de0caf17318ba2f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b0f4a62421230de0caf17318ba2f61">&#9670;&#160;</a></span>mEtaI</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::MirrorTransmissionBsdfLobe::mEtaI</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_mirror_8h_source.html#l00284">284</a> of file <a class="el" href="_bsdf_mirror_8h_source.html">BsdfMirror.h</a>.</p>
+
+</div>
+</div>
+<a id="ac94808998efbc2ab895a71ffda287418" name="ac94808998efbc2ab895a71ffda287418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac94808998efbc2ab895a71ffda287418">&#9670;&#160;</a></span>mEtaR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::MirrorTransmissionBsdfLobe::mEtaR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_mirror_8h_source.html#l00286">286</a> of file <a class="el" href="_bsdf_mirror_8h_source.html">BsdfMirror.h</a>.</p>
+
+</div>
+</div>
+<a id="a7bf9a6ca0bac537cb9515cbcb4536db3" name="a7bf9a6ca0bac537cb9515cbcb4536db3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bf9a6ca0bac537cb9515cbcb4536db3">&#9670;&#160;</a></span>mEtaT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::MirrorTransmissionBsdfLobe::mEtaT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_mirror_8h_source.html#l00284">284</a> of file <a class="el" href="_bsdf_mirror_8h_source.html">BsdfMirror.h</a>.</p>
+
+</div>
+</div>
+<a id="a11b7d18304ad247e7a45ccb6325ea4f5" name="a11b7d18304ad247e7a45ccb6325ea4f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11b7d18304ad247e7a45ccb6325ea4f5">&#9670;&#160;</a></span>mN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Vec3f moonray::shading::MirrorTransmissionBsdfLobe::mN</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_mirror_8h_source.html#l00283">283</a> of file <a class="el" href="_bsdf_mirror_8h_source.html">BsdfMirror.h</a>.</p>
+
+</div>
+</div>
+<a id="a23ab4cd47a28f3dc8f38da886576f75b" name="a23ab4cd47a28f3dc8f38da886576f75b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23ab4cd47a28f3dc8f38da886576f75b">&#9670;&#160;</a></span>mTint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Color moonray::shading::MirrorTransmissionBsdfLobe::mTint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_mirror_8h_source.html#l00285">285</a> of file <a class="el" href="_bsdf_mirror_8h_source.html">BsdfMirror.h</a>.</p>
 
 </div>
 </div>
@@ -555,9 +926,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/bsdf/<a class="el" href="_bsdf_mirror_8h_source.html">BsdfMirror.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_mirror_transmission_bsdf_lobe.html">MirrorTransmissionBsdfLobe</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,28 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_55a2e35f6359da48a03f898576e722e1.html">rndr</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_render_output_driver_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">RenderOutputDriver.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -79,19 +97,51 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:namespaceanonymous__namespace_02_render_output_driver_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02_render_output_driver_8cc_03.html">anonymous_namespace{RenderOutputDriver.cc}</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemoonray_1_1rndr"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1rndr.html">moonray::rndr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_output_driver_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_output_driver_8cc_03.html">moonray::rndr::anonymous_namespace{RenderOutputDriver.cc}</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a07d48696977c922b878b5ccda9650891"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02_render_output_driver_8cc_03.html#a07d48696977c922b878b5ccda9650891">anonymous_namespace{RenderOutputDriver.cc}::realfile</a> (const std::string &amp;filename)</td></tr>
+<tr class="separator:a07d48696977c922b878b5ccda9650891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf9e3ef527988db6ca0a34043dae4d2d"><td class="memTemplParams" colspan="2">template&lt;typename... Additional&gt; </td></tr>
+<tr class="memitem:aaf9e3ef527988db6ca0a34043dae4d2d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_output_driver_8cc_03.html#aaf9e3ef527988db6ca0a34043dae4d2d">moonray::rndr::anonymous_namespace{RenderOutputDriver.cc}::skipRenderOutputMessage</a> (const std::string &amp;name, const std::string &amp;message, Additional &amp;&amp;... additional)</td></tr>
+<tr class="separator:aaf9e3ef527988db6ca0a34043dae4d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee3696a186046fde3f8bc180de7b094"><td class="memTemplParams" colspan="2">template&lt;typename... Additional&gt; </td></tr>
+<tr class="memitem:a9ee3696a186046fde3f8bc180de7b094"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_output_driver_8cc_03.html#a9ee3696a186046fde3f8bc180de7b094">moonray::rndr::anonymous_namespace{RenderOutputDriver.cc}::skipRenderOutputMessageImageConflict</a> (const std::string &amp;name0, const std::string &amp;name1, const std::string &amp;message, Additional &amp;&amp;... additional)</td></tr>
+<tr class="separator:a9ee3696a186046fde3f8bc180de7b094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d212251a3f300359fd1484f248c5190"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_output_driver_8cc_03.html#a3d212251a3f300359fd1484f248c5190">moonray::rndr::anonymous_namespace{RenderOutputDriver.cc}::hasReferenceCycle</a> (const scene_rdl2::rdl2::RenderOutput *ro)</td></tr>
+<tr class="separator:a3d212251a3f300359fd1484f248c5190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5368fc3ad81fb1741ec4553183f58275"><td class="memTemplParams" colspan="2">template&lt;typename SRC_BUFFER_TYPE &gt; </td></tr>
+<tr class="memitem:a5368fc3ad81fb1741ec4553183f58275"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1rndr.html#a5368fc3ad81fb1741ec4553183f58275">moonray::rndr::initializeDestBuffer</a> (scene_rdl2::fb_util::VariablePixelBuffer *destBuffer, const SRC_BUFFER_TYPE *srcBuffer, scene_rdl2::fb_util::VariablePixelBuffer::Format format)</td></tr>
+<tr class="separator:a5368fc3ad81fb1741ec4553183f58275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa35d8b87f391e107cb1f51f7138521e7"><td class="memTemplParams" colspan="2">template&lt;typename SRC_PIXEL_TYPE , typename DEST_PIXEL_TYPE , typename PIXEL_XFORM_FN &gt; </td></tr>
+<tr class="memitem:aa35d8b87f391e107cb1f51f7138521e7"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1rndr.html#aa35d8b87f391e107cb1f51f7138521e7">moonray::rndr::copyAndTransform</a> (scene_rdl2::fb_util::PixelBuffer&lt; DEST_PIXEL_TYPE &gt; *destBuffer, const scene_rdl2::fb_util::PixelBuffer&lt; SRC_PIXEL_TYPE &gt; *srcBuffer, PIXEL_XFORM_FN const &amp;pixelXform, bool parallel)</td></tr>
+<tr class="separator:aa35d8b87f391e107cb1f51f7138521e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a7f9c4b129f556541ff195922b07296d1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02_render_output_driver_8cc_03.html#a7f9c4b129f556541ff195922b07296d1">anonymous_namespace{RenderOutputDriver.cc}::freeChar</a> = [](char *c) { free(c); }</td></tr>
+<tr class="separator:a7f9c4b129f556541ff195922b07296d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Brian Green </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="_render_output_driver_8cc_source.html">RenderOutputDriver.cc</a>.</p>
 </div></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_c8c2fc2658195a2d790ef72565bd36e7.html">rndr</a></li><li class="navelem"><a class="el" href="_render_output_driver_8cc.html">RenderOutputDriver.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

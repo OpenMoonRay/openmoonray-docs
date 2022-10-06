@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_28705856019153616deb2bfeeafe0625.html">unittest</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_test_lights_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">TestLights.cc</div></div>
 </div><!--header-->
@@ -124,7 +140,7 @@ $(function() {
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordtype">double</span> green = 0.0;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">double</span> blue = 0.0;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = range.rows().begin(); <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> != range.rows().end(); ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = range.rows().begin(); y != range.rows().end(); ++y) {</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            float r0 = float(y) * scl + ofs;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
@@ -177,7 +193,7 @@ $(function() {
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordtype">double</span> green = 0.0;</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keywordtype">double</span> blue = 0.0;</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = range.rows().begin(); <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> != range.rows().end(); ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = range.rows().begin(); y != range.rows().end(); ++y)</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        {</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            float r0 = float(y) * scl + ofs;</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
@@ -333,7 +349,7 @@ $(function() {
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        <span class="keywordtype">unsigned</span> localValidSampleCount = 0;</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        <span class="keywordtype">double</span> localPdf = 0.0;</div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = range.rows().begin(); <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> != range.rows().end(); ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = range.rows().begin(); y != range.rows().end(); ++y)</div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        {</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>            float r0 = float(y) * scl + ofs;</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
@@ -388,7 +404,7 @@ $(function() {
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>        <span class="keywordtype">unsigned</span> localValidSampleCount = 0;</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        <span class="keywordtype">double</span> localPdf = 0.0;</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = range.rows().begin(); <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> != range.rows().end(); ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = range.rows().begin(); y != range.rows().end(); ++y)</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        {</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>            float r0 = float(y) * scl + ofs;</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
@@ -716,7 +732,7 @@ $(function() {
 <div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>        <span class="keywordtype">unsigned</span> localNoIntersection = 0;</div>
 <div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>        <span class="keywordtype">unsigned</span> localInvalidSamples = 0;</div>
 <div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span> </div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = range.begin(); <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> != range.end(); ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = range.begin(); y != range.end(); ++y) {</div>
 <div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>            float r0 = float(y) * scl + ofs;</div>
 <div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span> </div>
 <div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>            for (unsigned x = 0; x != NUM_SAMPLES_PER_AXIS; ++x) {</div>
@@ -888,7 +904,7 @@ $(function() {
 <div class="line"><a id="l00839" name="l00839"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_lights.html#a3fd8a122d06fe59d8358a3068ac8c4fc">  839</a></span>TestLights::TestLights() :</div>
 <div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>    mRand(123)</div>
 <div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>{</div>
-<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>    mContext.setDsoPath(RDL2DSO_PATH);</div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>.setDsoPath(RDL2DSO_PATH);</div>
 <div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>}</div>
 <div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span> </div>
 <div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span><span class="keywordtype">void</span></div>
@@ -936,30 +952,30 @@ $(function() {
 <div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>    std::shared_ptr&lt;RectLight&gt; rectLight;</div>
 <div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span> </div>
 <div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>    rectLight = std::shared_ptr&lt;RectLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_rect_light.html">RectLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a8b4c8fdf86f5b823e8779e0304fbb660">makeRectLightSceneObject</a>(</div>
-<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>        <span class="stringliteral">&quot;rect A&quot;</span>, &amp;mContext, unscaledXform, color, width, height, <span class="keyword">nullptr</span>)));</div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>        <span class="stringliteral">&quot;rect A&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, unscaledXform, color, width, height, <span class="keyword">nullptr</span>)));</div>
 <div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>    rectLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>    mRectLightTesters.push_back(std::make_shared&lt;RectLightTester&gt;(</div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a715a23917e88ab8a654ffca2b35f7004">mRectLightTesters</a>.push_back(std::make_shared&lt;RectLightTester&gt;(</div>
 <div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>            rectLight, <span class="stringliteral">&quot;unscaled solid colored&quot;</span>));</div>
 <div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span> </div>
 <div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>    rectLight = std::shared_ptr&lt;RectLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_rect_light.html">RectLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a8b4c8fdf86f5b823e8779e0304fbb660">makeRectLightSceneObject</a>(</div>
-<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>        <span class="stringliteral">&quot;rect B&quot;</span>, &amp;mContext, scaledXform, color, width / scaleFactor,</div>
+<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>        <span class="stringliteral">&quot;rect B&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, scaledXform, color, width / scaleFactor,</div>
 <div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>        height / scaleFactor, <span class="keyword">nullptr</span>)));</div>
 <div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>    rectLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>    mRectLightTesters.push_back(std::make_shared&lt;RectLightTester&gt;(</div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a715a23917e88ab8a654ffca2b35f7004">mRectLightTesters</a>.push_back(std::make_shared&lt;RectLightTester&gt;(</div>
 <div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>            rectLight, <span class="stringliteral">&quot;scaled solid colored&quot;</span>));</div>
 <div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span> </div>
 <div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>    rectLight = std::shared_ptr&lt;RectLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_rect_light.html">RectLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a8b4c8fdf86f5b823e8779e0304fbb660">makeRectLightSceneObject</a>(</div>
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>        <span class="stringliteral">&quot;rect C&quot;</span>, &amp;mContext, unscaledXform, color, width, height,</div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>        <span class="stringliteral">&quot;rect C&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, unscaledXform, color, width, height,</div>
 <div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>        texturePath.c_str())));</div>
 <div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>    rectLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>    mRectLightTesters.push_back(std::make_shared&lt;RectLightTester&gt;(</div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a715a23917e88ab8a654ffca2b35f7004">mRectLightTesters</a>.push_back(std::make_shared&lt;RectLightTester&gt;(</div>
 <div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>            rectLight, <span class="stringliteral">&quot;unscaled textured&quot;</span>));</div>
 <div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span> </div>
 <div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>    rectLight = std::shared_ptr&lt;RectLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_rect_light.html">RectLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a8b4c8fdf86f5b823e8779e0304fbb660">makeRectLightSceneObject</a>(</div>
-<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>        <span class="stringliteral">&quot;rect D&quot;</span>, &amp;mContext, scaledXform, color, width / scaleFactor,</div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>        <span class="stringliteral">&quot;rect D&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, scaledXform, color, width / scaleFactor,</div>
 <div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>        height / scaleFactor, texturePath.c_str())));</div>
 <div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>    rectLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>    mRectLightTesters.push_back(std::make_shared&lt;RectLightTester&gt;(</div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a715a23917e88ab8a654ffca2b35f7004">mRectLightTesters</a>.push_back(std::make_shared&lt;RectLightTester&gt;(</div>
 <div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>            rectLight, <span class="stringliteral">&quot;scaled textured&quot;</span>));</div>
 <div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span> </div>
 <div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>    <span class="comment">//</span></div>
@@ -969,28 +985,28 @@ $(function() {
 <div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>    std::shared_ptr&lt;CylinderLight&gt; cylinderLight;</div>
 <div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span> </div>
 <div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>    cylinderLight = std::shared_ptr&lt;CylinderLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_cylinder_light.html">CylinderLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a747e190659a0a2ff2917c81be809c37e">makeCylinderLightSceneObject</a>(</div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>        <span class="stringliteral">&quot;cylinder A&quot;</span>, &amp;mContext, unscaledXform, color, radiusCylinder, height, <span class="keyword">nullptr</span>)));</div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>        <span class="stringliteral">&quot;cylinder A&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, unscaledXform, color, radiusCylinder, height, <span class="keyword">nullptr</span>)));</div>
 <div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>    cylinderLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>    mCylinderLightTesters.push_back(std::make_shared&lt;CylinderLightTester&gt;(</div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a8e30e593c679b2950fc36dcec8bd88bd">mCylinderLightTesters</a>.push_back(std::make_shared&lt;CylinderLightTester&gt;(</div>
 <div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>            cylinderLight, <span class="stringliteral">&quot;unscaled solid colored&quot;</span>));</div>
 <div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span> </div>
 <div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>    cylinderLight = std::shared_ptr&lt;CylinderLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_cylinder_light.html">CylinderLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a747e190659a0a2ff2917c81be809c37e">makeCylinderLightSceneObject</a>(</div>
-<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>        <span class="stringliteral">&quot;cylinder B&quot;</span>, &amp;mContext, scaledXform, color, radiusCylinder / scaleFactor, height / scaleFactor, <span class="keyword">nullptr</span>)));</div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>        <span class="stringliteral">&quot;cylinder B&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, scaledXform, color, radiusCylinder / scaleFactor, height / scaleFactor, <span class="keyword">nullptr</span>)));</div>
 <div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>    cylinderLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>    mCylinderLightTesters.push_back(std::make_shared&lt;CylinderLightTester&gt;(</div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a8e30e593c679b2950fc36dcec8bd88bd">mCylinderLightTesters</a>.push_back(std::make_shared&lt;CylinderLightTester&gt;(</div>
 <div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>            cylinderLight, <span class="stringliteral">&quot;scaled solid colored&quot;</span>));</div>
 <div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span> </div>
 <div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>    cylinderLight = std::shared_ptr&lt;CylinderLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_cylinder_light.html">CylinderLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a747e190659a0a2ff2917c81be809c37e">makeCylinderLightSceneObject</a>(</div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>        <span class="stringliteral">&quot;cylinder C&quot;</span>, &amp;mContext, unscaledXform, color, radiusCylinder, height, texturePath.c_str())));</div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>        <span class="stringliteral">&quot;cylinder C&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, unscaledXform, color, radiusCylinder, height, texturePath.c_str())));</div>
 <div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>    cylinderLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>    mCylinderLightTesters.push_back(std::make_shared&lt;CylinderLightTester&gt;(</div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a8e30e593c679b2950fc36dcec8bd88bd">mCylinderLightTesters</a>.push_back(std::make_shared&lt;CylinderLightTester&gt;(</div>
 <div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>            cylinderLight, <span class="stringliteral">&quot;unscaled textured&quot;</span>));</div>
 <div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span> </div>
 <div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>    cylinderLight = std::shared_ptr&lt;CylinderLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_cylinder_light.html">CylinderLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a747e190659a0a2ff2917c81be809c37e">makeCylinderLightSceneObject</a>(</div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>        <span class="stringliteral">&quot;cylinder D&quot;</span>, &amp;mContext, scaledXform, color, radiusCylinder / scaleFactor, height / scaleFactor,</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>        <span class="stringliteral">&quot;cylinder D&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, scaledXform, color, radiusCylinder / scaleFactor, height / scaleFactor,</div>
 <div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>        texturePath.c_str())));</div>
 <div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>    cylinderLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    mCylinderLightTesters.push_back(std::make_shared&lt;CylinderLightTester&gt;(</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a8e30e593c679b2950fc36dcec8bd88bd">mCylinderLightTesters</a>.push_back(std::make_shared&lt;CylinderLightTester&gt;(</div>
 <div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>            cylinderLight, <span class="stringliteral">&quot;scaled textured&quot;</span>));</div>
 <div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span> </div>
 <div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>    <span class="comment">//</span></div>
@@ -1000,28 +1016,28 @@ $(function() {
 <div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>    std::shared_ptr&lt;DiskLight&gt; diskLight;</div>
 <div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span> </div>
 <div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>    diskLight = std::shared_ptr&lt;DiskLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_disk_light.html">DiskLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#aeaed83d4cd9ca876adb4959b5c58fd19">makeDiskLightSceneObject</a>(</div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>        <span class="stringliteral">&quot;disk A&quot;</span>, &amp;mContext, unscaledXform, color, radius, <span class="keyword">nullptr</span>)));</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>        <span class="stringliteral">&quot;disk A&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, unscaledXform, color, radius, <span class="keyword">nullptr</span>)));</div>
 <div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>    diskLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>    mDiskLightTesters.push_back(std::make_shared&lt;DiskLightTester&gt;(</div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#ad95f15c8436b201ff92aebb6d77df3f7">mDiskLightTesters</a>.push_back(std::make_shared&lt;DiskLightTester&gt;(</div>
 <div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>            diskLight, <span class="stringliteral">&quot;unscaled solid colored&quot;</span>));</div>
 <div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span> </div>
 <div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>    diskLight = std::shared_ptr&lt;DiskLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_disk_light.html">DiskLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#aeaed83d4cd9ca876adb4959b5c58fd19">makeDiskLightSceneObject</a>(</div>
-<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>        <span class="stringliteral">&quot;disk B&quot;</span>, &amp;mContext, scaledXform, color, radius / scaleFactor, <span class="keyword">nullptr</span>)));</div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>        <span class="stringliteral">&quot;disk B&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, scaledXform, color, radius / scaleFactor, <span class="keyword">nullptr</span>)));</div>
 <div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>    diskLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>    mDiskLightTesters.push_back(std::make_shared&lt;DiskLightTester&gt;(</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#ad95f15c8436b201ff92aebb6d77df3f7">mDiskLightTesters</a>.push_back(std::make_shared&lt;DiskLightTester&gt;(</div>
 <div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>            diskLight, <span class="stringliteral">&quot;scaled solid colored&quot;</span>));</div>
 <div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span> </div>
 <div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>    diskLight = std::shared_ptr&lt;DiskLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_disk_light.html">DiskLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#aeaed83d4cd9ca876adb4959b5c58fd19">makeDiskLightSceneObject</a>(</div>
-<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>        <span class="stringliteral">&quot;disk C&quot;</span>, &amp;mContext, unscaledXform, color, radius, texturePath.c_str())));</div>
+<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>        <span class="stringliteral">&quot;disk C&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, unscaledXform, color, radius, texturePath.c_str())));</div>
 <div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>    diskLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>    mDiskLightTesters.push_back(std::make_shared&lt;DiskLightTester&gt;(</div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#ad95f15c8436b201ff92aebb6d77df3f7">mDiskLightTesters</a>.push_back(std::make_shared&lt;DiskLightTester&gt;(</div>
 <div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>            diskLight, <span class="stringliteral">&quot;unscaled textured&quot;</span>));</div>
 <div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span> </div>
 <div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>    diskLight = std::shared_ptr&lt;DiskLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_disk_light.html">DiskLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#aeaed83d4cd9ca876adb4959b5c58fd19">makeDiskLightSceneObject</a>(</div>
-<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>        <span class="stringliteral">&quot;disk D&quot;</span>, &amp;mContext, scaledXform, color, radius / scaleFactor,</div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>        <span class="stringliteral">&quot;disk D&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, scaledXform, color, radius / scaleFactor,</div>
 <div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>        texturePath.c_str())));</div>
 <div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>    diskLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>    mDiskLightTesters.push_back(std::make_shared&lt;DiskLightTester&gt;(</div>
+<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#ad95f15c8436b201ff92aebb6d77df3f7">mDiskLightTesters</a>.push_back(std::make_shared&lt;DiskLightTester&gt;(</div>
 <div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>            diskLight, <span class="stringliteral">&quot;scaled textured&quot;</span>));</div>
 <div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span> </div>
 <div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>    <span class="comment">//</span></div>
@@ -1031,29 +1047,29 @@ $(function() {
 <div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>    std::shared_ptr&lt;SphereLight&gt; sphereLight;</div>
 <div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span> </div>
 <div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>    sphereLight = std::shared_ptr&lt;SphereLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_sphere_light.html">SphereLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a50d91df4b8cbe1f94b650981aac05296">makeSphereLightSceneObject</a>(</div>
-<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>        <span class="stringliteral">&quot;sphere A&quot;</span>, &amp;mContext, unscaledXform, color, radius, <span class="keyword">nullptr</span>)));</div>
+<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>        <span class="stringliteral">&quot;sphere A&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, unscaledXform, color, radius, <span class="keyword">nullptr</span>)));</div>
 <div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>    sphereLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>    mSphereLightTesters.push_back(std::make_shared&lt;SphereLightTester&gt;(</div>
+<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#aed67258024e649bb566da4b572682793">mSphereLightTesters</a>.push_back(std::make_shared&lt;SphereLightTester&gt;(</div>
 <div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>            sphereLight, <span class="stringliteral">&quot;unscaled solid colored visible cap&quot;</span>));</div>
 <div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span> </div>
 <div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>    sphereLight = std::shared_ptr&lt;SphereLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_sphere_light.html">SphereLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a50d91df4b8cbe1f94b650981aac05296">makeSphereLightSceneObject</a>(</div>
-<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>        <span class="stringliteral">&quot;sphere B&quot;</span>, &amp;mContext, scaledXform, color, radius / scaleFactor, <span class="keyword">nullptr</span>)));</div>
+<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>        <span class="stringliteral">&quot;sphere B&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, scaledXform, color, radius / scaleFactor, <span class="keyword">nullptr</span>)));</div>
 <div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>    sphereLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>    mSphereLightTesters.push_back(std::make_shared&lt;SphereLightTester&gt;(</div>
+<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#aed67258024e649bb566da4b572682793">mSphereLightTesters</a>.push_back(std::make_shared&lt;SphereLightTester&gt;(</div>
 <div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>            sphereLight, <span class="stringliteral">&quot;scaled solid colored visible cap&quot;</span>));</div>
 <div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span> </div>
 <div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>    sphereLight = std::shared_ptr&lt;SphereLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_sphere_light.html">SphereLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a50d91df4b8cbe1f94b650981aac05296">makeSphereLightSceneObject</a>(</div>
-<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>        <span class="stringliteral">&quot;sphere C&quot;</span>, &amp;mContext, unscaledXform, color, radius,</div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>        <span class="stringliteral">&quot;sphere C&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, unscaledXform, color, radius,</div>
 <div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>        texturePath.c_str())));</div>
 <div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>    sphereLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>    mSphereLightTesters.push_back(std::make_shared&lt;SphereLightTester&gt;(</div>
+<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#aed67258024e649bb566da4b572682793">mSphereLightTesters</a>.push_back(std::make_shared&lt;SphereLightTester&gt;(</div>
 <div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>            sphereLight, <span class="stringliteral">&quot;unscaled textured visible cap&quot;</span>));</div>
 <div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span> </div>
 <div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>    sphereLight = std::shared_ptr&lt;SphereLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_sphere_light.html">SphereLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a50d91df4b8cbe1f94b650981aac05296">makeSphereLightSceneObject</a>(</div>
-<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>        <span class="stringliteral">&quot;sphere D&quot;</span>, &amp;mContext, scaledXform, color, radius / scaleFactor,</div>
+<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>        <span class="stringliteral">&quot;sphere D&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, scaledXform, color, radius / scaleFactor,</div>
 <div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>        texturePath.c_str())));</div>
 <div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>    sphereLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>    mSphereLightTesters.push_back(std::make_shared&lt;SphereLightTester&gt;(</div>
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#aed67258024e649bb566da4b572682793">mSphereLightTesters</a>.push_back(std::make_shared&lt;SphereLightTester&gt;(</div>
 <div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>            sphereLight, <span class="stringliteral">&quot;scaled textured visible cap&quot;</span>));</div>
 <div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span> </div>
 <div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>    <span class="comment">//</span></div>
@@ -1063,17 +1079,17 @@ $(function() {
 <div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>    std::shared_ptr&lt;SpotLight&gt; spotLight;</div>
 <div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span> </div>
 <div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>    spotLight = std::shared_ptr&lt;SpotLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_spot_light.html">SpotLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a0749a761bb2c6e32648084dfa65ad5d3">makeSpotLightSceneObject</a>(</div>
-<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>        <span class="stringliteral">&quot;spot A&quot;</span>, &amp;mContext, unscaledXform, color, lensRadius, aspectRatio,</div>
+<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>        <span class="stringliteral">&quot;spot A&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, unscaledXform, color, lensRadius, aspectRatio,</div>
 <div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span>        innerConeAngle, outerConeAngle, <span class="keyword">nullptr</span>)));</div>
 <div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>    spotLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>    mSpotLightTesters.push_back(std::make_shared&lt;SpotLightTester&gt;(</div>
+<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#aae807ee785bf050cc63f0edff31350ca">mSpotLightTesters</a>.push_back(std::make_shared&lt;SpotLightTester&gt;(</div>
 <div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>            spotLight, <span class="stringliteral">&quot;unscaled solid colored&quot;</span>));</div>
 <div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span> </div>
 <div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>    spotLight = std::shared_ptr&lt;SpotLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_spot_light.html">SpotLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a0749a761bb2c6e32648084dfa65ad5d3">makeSpotLightSceneObject</a>(</div>
-<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span>        <span class="stringliteral">&quot;spot B&quot;</span>, &amp;mContext, scaledXform, color, lensRadius / scaleFactor, aspectRatio,</div>
+<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span>        <span class="stringliteral">&quot;spot B&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, scaledXform, color, lensRadius / scaleFactor, aspectRatio,</div>
 <div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>        innerConeAngle, outerConeAngle, <span class="keyword">nullptr</span>)));</div>
 <div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>    spotLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>    mSpotLightTesters.push_back(std::make_shared&lt;SpotLightTester&gt;(</div>
+<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#aae807ee785bf050cc63f0edff31350ca">mSpotLightTesters</a>.push_back(std::make_shared&lt;SpotLightTester&gt;(</div>
 <div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span>            spotLight, <span class="stringliteral">&quot;scaled solid colored&quot;</span>));</div>
 <div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span> </div>
 <div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>    <span class="comment">//</span></div>
@@ -1083,9 +1099,9 @@ $(function() {
 <div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>    std::shared_ptr&lt;DistantLight&gt; distantLight;</div>
 <div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span> </div>
 <div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>    distantLight = std::shared_ptr&lt;DistantLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_distant_light.html">DistantLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a391d9fc862b5b6d7dc00edc8a4cba3c0">makeDistantLightSceneObject</a>(</div>
-<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>        <span class="stringliteral">&quot;distant A&quot;</span>, &amp;mContext, unscaledXform, color, angularExtent)));</div>
+<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>        <span class="stringliteral">&quot;distant A&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, unscaledXform, color, angularExtent)));</div>
 <div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span>    distantLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>    mDistantLightTesters.push_back(std::make_shared&lt;DistantLightTester&gt;(</div>
+<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a942ddc4e04057fbb44859e275ac98038">mDistantLightTesters</a>.push_back(std::make_shared&lt;DistantLightTester&gt;(</div>
 <div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>            distantLight, <span class="stringliteral">&quot;solid colored&quot;</span>));</div>
 <div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span> </div>
 <div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span>    <span class="comment">//</span></div>
@@ -1097,27 +1113,27 @@ $(function() {
 <div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>    Mat4f envXform = Mat4f(one);</div>
 <div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span> </div>
 <div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>    envLight = std::shared_ptr&lt;EnvLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_env_light.html">EnvLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#af8437dd1768465b9b4cb7181bd7e37fa">makeEnvLightSceneObject</a>(</div>
-<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>        <span class="stringliteral">&quot;env A&quot;</span>, &amp;mContext, envXform, color, <span class="keyword">nullptr</span>, <span class="keyword">false</span>)));</div>
+<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>        <span class="stringliteral">&quot;env A&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, envXform, color, <span class="keyword">nullptr</span>, <span class="keyword">false</span>)));</div>
 <div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>    envLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>    mEnvLightTesters.push_back(std::make_shared&lt;EnvLightTester&gt;(</div>
+<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a5fd825050efdc42d7106de3d6752f680">mEnvLightTesters</a>.push_back(std::make_shared&lt;EnvLightTester&gt;(</div>
 <div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>            envLight, <span class="stringliteral">&quot;solid colored full sphere&quot;</span>));</div>
 <div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span> </div>
 <div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>    envLight = std::shared_ptr&lt;EnvLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_env_light.html">EnvLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#af8437dd1768465b9b4cb7181bd7e37fa">makeEnvLightSceneObject</a>(</div>
-<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>        <span class="stringliteral">&quot;env B&quot;</span>, &amp;mContext, envXform, color, <span class="keyword">nullptr</span>, <span class="keyword">true</span>)));</div>
+<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>        <span class="stringliteral">&quot;env B&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, envXform, color, <span class="keyword">nullptr</span>, <span class="keyword">true</span>)));</div>
 <div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>    envLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>    mEnvLightTesters.push_back(std::make_shared&lt;EnvLightTester&gt;(</div>
+<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a5fd825050efdc42d7106de3d6752f680">mEnvLightTesters</a>.push_back(std::make_shared&lt;EnvLightTester&gt;(</div>
 <div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>            envLight, <span class="stringliteral">&quot;solid colored upper hemisphere&quot;</span>));</div>
 <div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span> </div>
 <div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>    envLight = std::shared_ptr&lt;EnvLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_env_light.html">EnvLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#af8437dd1768465b9b4cb7181bd7e37fa">makeEnvLightSceneObject</a>(</div>
-<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>        <span class="stringliteral">&quot;env C&quot;</span>, &amp;mContext, envXform, color, texturePath.c_str(), <span class="keyword">false</span>)));</div>
+<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>        <span class="stringliteral">&quot;env C&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, envXform, color, texturePath.c_str(), <span class="keyword">false</span>)));</div>
 <div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>    envLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>    mEnvLightTesters.push_back(std::make_shared&lt;EnvLightTester&gt;(</div>
+<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a5fd825050efdc42d7106de3d6752f680">mEnvLightTesters</a>.push_back(std::make_shared&lt;EnvLightTester&gt;(</div>
 <div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>            envLight, <span class="stringliteral">&quot;textured full sphere&quot;</span>));</div>
 <div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span> </div>
 <div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>    envLight = std::shared_ptr&lt;EnvLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_env_light.html">EnvLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#af8437dd1768465b9b4cb7181bd7e37fa">makeEnvLightSceneObject</a>(</div>
-<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>        <span class="stringliteral">&quot;env D&quot;</span>, &amp;mContext, envXform, color, texturePath.c_str(), <span class="keyword">true</span>)));</div>
+<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>        <span class="stringliteral">&quot;env D&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, envXform, color, texturePath.c_str(), <span class="keyword">true</span>)));</div>
 <div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>    envLight-&gt;update(Mat4d(one));</div>
-<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>    mEnvLightTesters.push_back(std::make_shared&lt;EnvLightTester&gt;(</div>
+<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a5fd825050efdc42d7106de3d6752f680">mEnvLightTesters</a>.push_back(std::make_shared&lt;EnvLightTester&gt;(</div>
 <div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>            envLight, <span class="stringliteral">&quot;textured upper hemisphere&quot;</span>));</div>
 <div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span> </div>
 <div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span> </div>
@@ -1130,7 +1146,7 @@ $(function() {
 <div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>    <span class="comment">// create mesh light</span></div>
 <div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>    Mat4f meshXform = Mat4f(one);</div>
 <div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>    meshLight = std::shared_ptr&lt;MeshLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_mesh_light.html">MeshLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a4411b0326f04d66394cc4a3e415b6c64">makeMeshLightSceneObject</a>(</div>
-<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>        <span class="stringliteral">&quot;mesh A&quot;</span>, &amp;mContext, meshXform, color, <span class="keyword">nullptr</span>, <span class="keyword">true</span>)));</div>
+<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>        <span class="stringliteral">&quot;mesh A&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, meshXform, color, <span class="keyword">nullptr</span>, <span class="keyword">true</span>)));</div>
 <div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>    meshLight-&gt;update(Mat4d(one));</div>
 <div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span> </div>
 <div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>    <span class="comment">// create cube</span></div>
@@ -1168,35 +1184,36 @@ $(function() {
 <div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span>    meshLight-&gt;setMesh(pImpl);</div>
 <div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>    meshLight-&gt;finalize();</div>
 <div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span> </div>
-<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>    mMeshLightTesters.push_back(std::make_shared&lt;MeshLightTester&gt;(</div>
+<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a27c17142dffa407271f267a7132499a0">mMeshLightTesters</a>.push_back(std::make_shared&lt;MeshLightTester&gt;(</div>
 <div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span>            meshLight, <span class="stringliteral">&quot;cube&quot;</span>));</div>
 <div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span> </div>
 <div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span>    <span class="comment">// make another meshLight with a texture</span></div>
 <div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span>    meshLight = std::shared_ptr&lt;MeshLight&gt;(<span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_mesh_light.html">MeshLight</a>(<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a4411b0326f04d66394cc4a3e415b6c64">makeMeshLightSceneObject</a>(</div>
-<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span>        <span class="stringliteral">&quot;mesh A&quot;</span>, &amp;mContext, meshXform, color, texturePath.c_str(), <span class="keyword">true</span>)));</div>
+<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span>        <span class="stringliteral">&quot;mesh A&quot;</span>, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">mContext</a>, meshXform, color, texturePath.c_str(), <span class="keyword">true</span>)));</div>
 <div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span>    meshLight-&gt;update(Mat4d(one));</div>
 <div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span>    meshLight-&gt;setMesh(pImpl);</div>
 <div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span>    meshLight-&gt;finalize();</div>
-<div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span>    mMeshLightTesters.push_back(std::make_shared&lt;MeshLightTester&gt;(</div>
+<div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a27c17142dffa407271f267a7132499a0">mMeshLightTesters</a>.push_back(std::make_shared&lt;MeshLightTester&gt;(</div>
 <div class="line"><a id="l01132" name="l01132"></a><span class="lineno"> 1132</span>            meshLight, <span class="stringliteral">&quot;cube with texture&quot;</span>));</div>
 <div class="line"><a id="l01133" name="l01133"></a><span class="lineno"> 1133</span>}</div>
 <div class="line"><a id="l01134" name="l01134"></a><span class="lineno"> 1134</span> </div>
 <div class="line"><a id="l01135" name="l01135"></a><span class="lineno"> 1135</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l01136" name="l01136"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_lights.html#a509fa581fe38a1a7d38f404f8aacb9ee"> 1136</a></span><a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_lights.html#a509fa581fe38a1a7d38f404f8aacb9ee">TestLights::tearDown</a>()</div>
 <div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span>{</div>
-<div class="line"><a id="l01138" name="l01138"></a><span class="lineno"> 1138</span>    mMeshLightTesters.clear();</div>
-<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span>    mEnvLightTesters.clear();</div>
-<div class="line"><a id="l01140" name="l01140"></a><span class="lineno"> 1140</span>    mDistantLightTesters.clear();</div>
-<div class="line"><a id="l01141" name="l01141"></a><span class="lineno"> 1141</span>    mSpotLightTesters.clear();</div>
-<div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span>    mSphereLightTesters.clear();</div>
-<div class="line"><a id="l01143" name="l01143"></a><span class="lineno"> 1143</span>    mDiskLightTesters.clear();</div>
-<div class="line"><a id="l01144" name="l01144"></a><span class="lineno"> 1144</span>    mRectLightTesters.clear();</div>
+<div class="line"><a id="l01138" name="l01138"></a><span class="lineno"> 1138</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a27c17142dffa407271f267a7132499a0">mMeshLightTesters</a>.clear();</div>
+<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a5fd825050efdc42d7106de3d6752f680">mEnvLightTesters</a>.clear();</div>
+<div class="line"><a id="l01140" name="l01140"></a><span class="lineno"> 1140</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a942ddc4e04057fbb44859e275ac98038">mDistantLightTesters</a>.clear();</div>
+<div class="line"><a id="l01141" name="l01141"></a><span class="lineno"> 1141</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#aae807ee785bf050cc63f0edff31350ca">mSpotLightTesters</a>.clear();</div>
+<div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#aed67258024e649bb566da4b572682793">mSphereLightTesters</a>.clear();</div>
+<div class="line"><a id="l01143" name="l01143"></a><span class="lineno"> 1143</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#ad95f15c8436b201ff92aebb6d77df3f7">mDiskLightTesters</a>.clear();</div>
+<div class="line"><a id="l01144" name="l01144"></a><span class="lineno"> 1144</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#a715a23917e88ab8a654ffca2b35f7004">mRectLightTesters</a>.clear();</div>
 <div class="line"><a id="l01145" name="l01145"></a><span class="lineno"> 1145</span> </div>
 <div class="line"><a id="l01146" name="l01146"></a><span class="lineno"> 1146</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a1ab764bbb235fddf3e8e09547529b24c">cleanupThreadLocalData</a>();</div>
 <div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span>}</div>
 <div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span> </div>
-<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span> </div>
-<div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span><span class="comment"></span> </div>
+<div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span><span class="comment">/// Run a particular test on a particular surface point and direction.</span></div>
+<div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span><span class="comment"></span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l01152" name="l01152"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#a68931d7c39dee748d45ecde26e9e3320"> 1152</a></span><a class="code hl_function" href="namespacemoonray_1_1pbr.html#a68931d7c39dee748d45ecde26e9e3320">runTestOnSinglePoint</a>(<span class="keyword">const</span> Vec3f &amp;p, <span class="keyword">const</span> Vec3f &amp;n, <span class="keyword">const</span> <span class="keywordtype">char</span> *pointDesc,</div>
 <div class="line"><a id="l01153" name="l01153"></a><span class="lineno"> 1153</span>                     <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a477084b5826d16e13d9b7b3dd2779931">TestFunction</a> func, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a390dcdbad62ec341760ed4e8e6aae5f4">LightTesters</a> &amp;lightTesters,</div>
 <div class="line"><a id="l01154" name="l01154"></a><span class="lineno"> 1154</span>                     int32_t initialSeed)</div>
@@ -1211,7 +1228,7 @@ $(function() {
 <div class="line"><a id="l01163" name="l01163"></a><span class="lineno"> 1163</span> </div>
 <div class="line"><a id="l01164" name="l01164"></a><span class="lineno"> 1164</span><span class="comment">// Lights are all pointing down in world space (along the negative y axis).</span></div>
 <div class="line"><a id="l01165" name="l01165"></a><span class="lineno"> 1165</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span>TestLights::runTestOnMultiplePoints(<span class="keyword">const</span> std::string &amp;funcName, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a477084b5826d16e13d9b7b3dd2779931">TestFunction</a> func,</div>
+<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_lights.html#af60c041da85b60fb2913d62d806ca979"> 1166</a></span><a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_lights.html#af60c041da85b60fb2913d62d806ca979">TestLights::runTestOnMultiplePoints</a>(<span class="keyword">const</span> std::string &amp;funcName, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a477084b5826d16e13d9b7b3dd2779931">TestFunction</a> func,</div>
 <div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a390dcdbad62ec341760ed4e8e6aae5f4">LightTesters</a> &amp;lightTesters, <span class="keywordtype">bool</span> closePointsOnly)</div>
 <div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span>{</div>
 <div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aead4368f4b907ca49f2eb4d498b7fadc">printInfo</a>(<span class="stringliteral">&quot;==== Testing Light %s ====&quot;</span>, funcName.c_str());</div>
@@ -1223,19 +1240,19 @@ $(function() {
 <div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span> </div>
 <div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span>    <span class="comment">// test a close point</span></div>
 <div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span>    p = Vec3f(0.1f, -2.0f, 0.3f);</div>
-<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a68931d7c39dee748d45ecde26e9e3320">runTestOnSinglePoint</a>(p, n, <span class="stringliteral">&quot;nearby point&quot;</span>, func, lightTesters, getRandomInt32());</div>
+<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a68931d7c39dee748d45ecde26e9e3320">runTestOnSinglePoint</a>(p, n, <span class="stringliteral">&quot;nearby point&quot;</span>, func, lightTesters, <a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_lights.html#a129f4e24d256b9ed7f15b4455c54d786">getRandomInt32</a>());</div>
 <div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span> </div>
 <div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span>    <span class="comment">// test a far point</span></div>
 <div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span>    <span class="keywordflow">if</span> (!closePointsOnly) {</div>
 <div class="line"><a id="l01182" name="l01182"></a><span class="lineno"> 1182</span>        p = Vec3f(-1.0f, -100.0f, 4.0f);</div>
-<div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a68931d7c39dee748d45ecde26e9e3320">runTestOnSinglePoint</a>(p, n, <span class="stringliteral">&quot;distant point&quot;</span>, func, lightTesters, getRandomInt32());</div>
+<div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a68931d7c39dee748d45ecde26e9e3320">runTestOnSinglePoint</a>(p, n, <span class="stringliteral">&quot;distant point&quot;</span>, func, lightTesters, <a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_lights.html#a129f4e24d256b9ed7f15b4455c54d786">getRandomInt32</a>());</div>
 <div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span>    }</div>
 <div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>}</div>
 <div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span> </div>
 <div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span>uint32_t</div>
-<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>TestLights::getRandomInt32()</div>
+<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_lights.html#a129f4e24d256b9ed7f15b4455c54d786"> 1188</a></span><a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_lights.html#a129f4e24d256b9ed7f15b4455c54d786">TestLights::getRandomInt32</a>()</div>
 <div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>{</div>
-<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span>    <span class="keywordflow">return</span> mRand.getNextUInt();</div>
+<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_lights.html#ac8ba0b6224139d03f22c170e3a1b92e0">mRand</a>.getNextUInt();</div>
 <div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span>}</div>
 <div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span> </div>
 <div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span><span class="comment">//----------------------------------------------------------------------------</span></div>
@@ -1260,7 +1277,6 @@ $(function() {
 <div class="ttc" id="a_test_lights_8cc_html_af0b23eedf2352de4c1eff77e1401730c"><div class="ttname"><a href="_test_lights_8cc.html#af0b23eedf2352de4c1eff77e1401730c">NUM_SAMPLES</a></div><div class="ttdeci">#define NUM_SAMPLES</div><div class="ttdef"><b>Definition:</b> <a href="_test_lights_8cc_source.html#l00026">TestLights.cc:26</a></div></div>
 <div class="ttc" id="a_test_lights_8cc_html_af6af7be4b0300ce41d9c700e37f8b45e"><div class="ttname"><a href="_test_lights_8cc.html#af6af7be4b0300ce41d9c700e37f8b45e">NUM_SAMPLES_PER_AXIS</a></div><div class="ttdeci">#define NUM_SAMPLES_PER_AXIS</div><div class="ttdef"><b>Definition:</b> <a href="_test_lights_8cc_source.html#l00023">TestLights.cc:23</a></div></div>
 <div class="ttc" id="a_test_lights_8h_html"><div class="ttname"><a href="_test_lights_8h.html">TestLights.h</a></div></div>
-<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
 <div class="ttc" id="a_test_util_8h_html"><div class="ttname"><a href="_test_util_8h.html">TestUtil.h</a></div></div>
 <div class="ttc" id="a_timer_8h_html"><div class="ttname"><a href="_timer_8h.html">Timer.h</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html">moonray::geom::LayerAssignmentId</a></div><div class="ttdoc">This class represents the mapping from each sub-primitive (face/curve) to a corresponding layer assig...</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00040">LayerAssignmentId.h:41</a></div></div>
@@ -1292,8 +1308,20 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_sphere_light_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sphere_light.html">moonray::pbr::SphereLight</a></div><div class="ttdoc">Implements light sampling for Sphere lights.</div><div class="ttdef"><b>Definition:</b> <a href="_sphere_light_8h_source.html#l00039">SphereLight.h:40</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_spot_light_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_spot_light.html">moonray::pbr::SpotLight</a></div><div class="ttdoc">Implements light sampling for spotlights.</div><div class="ttdef"><b>Definition:</b> <a href="_spot_light_8h_source.html#l00038">SpotLight.h:39</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_lights_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_lights.html">moonray::pbr::TestLights</a></div><div class="ttdef"><b>Definition:</b> <a href="_test_lights_8h_source.html#l00039">TestLights.h:40</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_lights_html_a129f4e24d256b9ed7f15b4455c54d786"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_lights.html#a129f4e24d256b9ed7f15b4455c54d786">moonray::pbr::TestLights::getRandomInt32</a></div><div class="ttdeci">uint32_t getRandomInt32()</div><div class="ttdef"><b>Definition:</b> <a href="_test_lights_8cc_source.html#l01188">TestLights.cc:1188</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_lights_html_a27c17142dffa407271f267a7132499a0"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_lights.html#a27c17142dffa407271f267a7132499a0">moonray::pbr::TestLights::mMeshLightTesters</a></div><div class="ttdeci">LightTesters mMeshLightTesters</div><div class="ttdef"><b>Definition:</b> <a href="_test_lights_8h_source.html#l00141">TestLights.h:141</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_lights_html_a441ec707d170d6cb1524b093c8261803"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_lights.html#a441ec707d170d6cb1524b093c8261803">moonray::pbr::TestLights::setUp</a></div><div class="ttdeci">void setUp()</div><div class="ttdef"><b>Definition:</b> <a href="_test_lights_8cc_source.html#l00846">TestLights.cc:846</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_lights_html_a509fa581fe38a1a7d38f404f8aacb9ee"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_lights.html#a509fa581fe38a1a7d38f404f8aacb9ee">moonray::pbr::TestLights::tearDown</a></div><div class="ttdeci">void tearDown()</div><div class="ttdef"><b>Definition:</b> <a href="_test_lights_8cc_source.html#l01136">TestLights.cc:1136</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_lights_html_a5fd825050efdc42d7106de3d6752f680"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_lights.html#a5fd825050efdc42d7106de3d6752f680">moonray::pbr::TestLights::mEnvLightTesters</a></div><div class="ttdeci">LightTesters mEnvLightTesters</div><div class="ttdef"><b>Definition:</b> <a href="_test_lights_8h_source.html#l00140">TestLights.h:140</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_lights_html_a715a23917e88ab8a654ffca2b35f7004"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_lights.html#a715a23917e88ab8a654ffca2b35f7004">moonray::pbr::TestLights::mRectLightTesters</a></div><div class="ttdeci">LightTesters mRectLightTesters</div><div class="ttdef"><b>Definition:</b> <a href="_test_lights_8h_source.html#l00134">TestLights.h:134</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_lights_html_a8e30e593c679b2950fc36dcec8bd88bd"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_lights.html#a8e30e593c679b2950fc36dcec8bd88bd">moonray::pbr::TestLights::mCylinderLightTesters</a></div><div class="ttdeci">LightTesters mCylinderLightTesters</div><div class="ttdef"><b>Definition:</b> <a href="_test_lights_8h_source.html#l00135">TestLights.h:135</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_lights_html_a942ddc4e04057fbb44859e275ac98038"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_lights.html#a942ddc4e04057fbb44859e275ac98038">moonray::pbr::TestLights::mDistantLightTesters</a></div><div class="ttdeci">LightTesters mDistantLightTesters</div><div class="ttdef"><b>Definition:</b> <a href="_test_lights_8h_source.html#l00139">TestLights.h:139</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_lights_html_aae807ee785bf050cc63f0edff31350ca"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_lights.html#aae807ee785bf050cc63f0edff31350ca">moonray::pbr::TestLights::mSpotLightTesters</a></div><div class="ttdeci">LightTesters mSpotLightTesters</div><div class="ttdef"><b>Definition:</b> <a href="_test_lights_8h_source.html#l00138">TestLights.h:138</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_lights_html_ac8ba0b6224139d03f22c170e3a1b92e0"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_lights.html#ac8ba0b6224139d03f22c170e3a1b92e0">moonray::pbr::TestLights::mRand</a></div><div class="ttdeci">scene_rdl2::util::Random mRand</div><div class="ttdef"><b>Definition:</b> <a href="_test_lights_8h_source.html#l00132">TestLights.h:132</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_lights_html_ad95f15c8436b201ff92aebb6d77df3f7"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_lights.html#ad95f15c8436b201ff92aebb6d77df3f7">moonray::pbr::TestLights::mDiskLightTesters</a></div><div class="ttdeci">LightTesters mDiskLightTesters</div><div class="ttdef"><b>Definition:</b> <a href="_test_lights_8h_source.html#l00136">TestLights.h:136</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_lights_html_aed67258024e649bb566da4b572682793"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_lights.html#aed67258024e649bb566da4b572682793">moonray::pbr::TestLights::mSphereLightTesters</a></div><div class="ttdeci">LightTesters mSphereLightTesters</div><div class="ttdef"><b>Definition:</b> <a href="_test_lights_8h_source.html#l00137">TestLights.h:137</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_lights_html_af5fefe6580f9b603cd1c4412ca7f9f0b"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_lights.html#af5fefe6580f9b603cd1c4412ca7f9f0b">moonray::pbr::TestLights::mContext</a></div><div class="ttdeci">scene_rdl2::rdl2::SceneContext mContext</div><div class="ttdef"><b>Definition:</b> <a href="_test_lights_8h_source.html#l00131">TestLights.h:131</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_lights_html_af60c041da85b60fb2913d62d806ca979"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_lights.html#af60c041da85b60fb2913d62d806ca979">moonray::pbr::TestLights::runTestOnMultiplePoints</a></div><div class="ttdeci">void runTestOnMultiplePoints(const std::string &amp;funcName, TestFunction func, const LightTesters &amp;light_testers, bool closePointsOnly)</div><div class="ttdoc">This function is responsible for generating the surface points and directions to run the tests on.</div><div class="ttdef"><b>Definition:</b> <a href="_test_lights_8cc_source.html#l01166">TestLights.cc:1166</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1time_1_1_timer_html"><div class="ttname"><a href="classmoonray_1_1time_1_1_timer.html">moonray::time::Timer</a></div><div class="ttdef"><b>Definition:</b> <a href="_timer_8h_source.html#l00066">Timer.h:67</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1time_1_1_timer_html_a2c8f9dc6d759423dfe5ad18523e8948a"><div class="ttname"><a href="classmoonray_1_1time_1_1_timer.html#a2c8f9dc6d759423dfe5ad18523e8948a">moonray::time::Timer::stop</a></div><div class="ttdeci">__forceinline void stop()</div><div class="ttdef"><b>Definition:</b> <a href="_timer_8h_source.html#l00084">Timer.h:84</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1time_1_1_timer_html_af0451420ba008cb96e71920a66b5743d"><div class="ttname"><a href="classmoonray_1_1time_1_1_timer.html#af0451420ba008cb96e71920a66b5743d">moonray::time::Timer::start</a></div><div class="ttdeci">__forceinline void start()</div><div class="ttdef"><b>Definition:</b> <a href="_timer_8h_source.html#l00078">Timer.h:78</a></div></div>
@@ -1331,9 +1359,13 @@ $(function() {
 <div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersection_html"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersection.html">moonray::pbr::LightIntersection</a></div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00041">LightUtil.h:41</a></div></div>
 <div class="ttc" id="atest__aligned__element__array_8cc_html_a4150bb23f34487f7d7a00e0093fa0b95"><div class="ttname"><a href="test__aligned__element__array_8cc.html#a4150bb23f34487f7d7a00e0093fa0b95">CPPUNIT_TEST_SUITE_REGISTRATION</a></div><div class="ttdeci">CPPUNIT_TEST_SUITE_REGISTRATION(TestAlignedElementArray)</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_e9cc9f5f9c03e3b4eff73c33091953ed.html">unittest</a></li><li class="navelem"><a class="el" href="_test_lights_8cc.html">TestLights.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

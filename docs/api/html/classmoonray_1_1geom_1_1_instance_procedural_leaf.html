@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1_instance_procedural_leaf.html">InstanceProceduralLeaf</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1_instance_procedural_leaf.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -232,7 +248,12 @@ Additional Inherited Members</h2></td></tr>
 <p>Constructor / Destructor. </p>
 
 <p class="definition">Definition at line <a class="el" href="_instance_procedural_leaf_8cc_source.html#l00119">119</a> of file <a class="el" href="_instance_procedural_leaf_8cc_source.html">InstanceProceduralLeaf.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  119</span>                                                                 :</div>
+<div class="line"><span class="lineno">  120</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1_procedural_leaf.html#a876a95454d379a10d20f873fffc8df9a">ProceduralLeaf</a>(state)</div>
+<div class="line"><span class="lineno">  121</span>{</div>
+<div class="line"><span class="lineno">  122</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_procedural_leaf_html_a876a95454d379a10d20f873fffc8df9a"><div class="ttname"><a href="classmoonray_1_1geom_1_1_procedural_leaf.html#a876a95454d379a10d20f873fffc8df9a">moonray::geom::ProceduralLeaf::ProceduralLeaf</a></div><div class="ttdeci">ProceduralLeaf(const State &amp;state)</div><div class="ttdoc">Constructor / Destructor.</div><div class="ttdef"><b>Definition:</b> <a href="_procedural_leaf_8cc_source.html#l00051">ProceduralLeaf.cc:51</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a32ad0ee7a237cabb1182cacbb7f950d9" name="a32ad0ee7a237cabb1182cacbb7f950d9"></a>
@@ -251,7 +272,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_instance_procedural_leaf_8cc_source.html#l00124">124</a> of file <a class="el" href="_instance_procedural_leaf_8cc_source.html">InstanceProceduralLeaf.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  125</span>{</div>
+<div class="line"><span class="lineno">  126</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af4e0960641b707ca63f201470e38792c" name="af4e0960641b707ca63f201470e38792c"></a>
@@ -418,7 +441,356 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_instance_procedural_leaf_8cc_source.html#l00129">129</a> of file <a class="el" href="_instance_procedural_leaf_8cc_source.html">InstanceProceduralLeaf.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  148</span>    {</div>
+<div class="line"><span class="lineno">  149</span>        <span class="keyword">const</span> scene_rdl2::rdl2::Geometry* rdlGeometry = generateContext.getRdlGeometry();</div>
+<div class="line"><span class="lineno">  150</span> </div>
+<div class="line"><span class="lineno">  151</span>        <span class="comment">// how many instances are we going to create ?</span></div>
+<div class="line"><span class="lineno">  152</span>        <span class="keywordtype">size_t</span> xformsCount;</div>
+<div class="line"><span class="lineno">  153</span>        <span class="keywordflow">if</span> (instanceMethod == <a class="code hl_enumvalue" href="namespacemoonray_1_1geom.html#a34164a39e4cb3385625878a88f45e385a2e466ae7b579ecb40c506addce7e2e98">InstanceMethod::XFORM_ATTRIBUTES</a>) {</div>
+<div class="line"><span class="lineno">  154</span>            xformsCount = positions.size();</div>
+<div class="line"><span class="lineno">  155</span>        } <span class="keywordflow">else</span> { <span class="comment">// InstanceMethod::XFORMS</span></div>
+<div class="line"><span class="lineno">  156</span>            xformsCount = xforms.size();</div>
+<div class="line"><span class="lineno">  157</span>        }</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>        <span class="comment">// motion blur</span></div>
+<div class="line"><span class="lineno">  160</span>        <span class="keywordtype">bool</span> applyVelocity;</div>
+<div class="line"><span class="lineno">  161</span>        <span class="keywordtype">bool</span> hasValidVelocity = velocities.size() == xformsCount;</div>
+<div class="line"><span class="lineno">  162</span>        <span class="keywordflow">if</span> (generateContext.isMotionBlurOn() &amp;&amp; !velocities.empty()) {</div>
+<div class="line"><span class="lineno">  163</span>            <span class="keywordflow">if</span> (!hasValidVelocity) {</div>
+<div class="line"><span class="lineno">  164</span>                rdlGeometry-&gt;warn(<span class="stringliteral">&quot;velocities count(&quot;</span>, velocities.size(),</div>
+<div class="line"><span class="lineno">  165</span>                    <span class="stringliteral">&quot;) is not equal to positions count(&quot;</span>, xformsCount,</div>
+<div class="line"><span class="lineno">  166</span>                    <span class="stringliteral">&quot; ). Skip applying velocities&quot;</span>);</div>
+<div class="line"><span class="lineno">  167</span>                applyVelocity = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  168</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  169</span>                applyVelocity = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  170</span>            }</div>
+<div class="line"><span class="lineno">  171</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  172</span>            applyVelocity = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  173</span>        }</div>
+<div class="line"><span class="lineno">  174</span>        <span class="keywordtype">float</span> dt0 = 0.0f;</div>
+<div class="line"><span class="lineno">  175</span>        <span class="keywordtype">float</span> dt1 = 0.0f;</div>
+<div class="line"><span class="lineno">  176</span>        <span class="keywordflow">if</span> (applyVelocity) {</div>
+<div class="line"><span class="lineno">  177</span>            <span class="keyword">const</span> scene_rdl2::rdl2::SceneVariables&amp; vars =</div>
+<div class="line"><span class="lineno">  178</span>                rdlGeometry-&gt;getSceneClass().getSceneContext()-&gt;getSceneVariables();</div>
+<div class="line"><span class="lineno">  179</span>            <span class="keywordtype">float</span> fps = std::max(vars.get(scene_rdl2::rdl2::SceneVariables::sFpsKey), 1.0f);</div>
+<div class="line"><span class="lineno">  180</span>            <span class="keyword">const</span> <span class="keyword">auto</span>&amp; motionSteps = generateContext.getMotionSteps();</div>
+<div class="line"><span class="lineno">  181</span>            <span class="comment">// TODO only support at most two time samples now for motion blur</span></div>
+<div class="line"><span class="lineno">  182</span>            MNRY_ASSERT(motionSteps.size() == 2);</div>
+<div class="line"><span class="lineno">  183</span> </div>
+<div class="line"><span class="lineno">  184</span>            <span class="comment">// BAND-AID fix to evaluate from a different evaluation frame (relative)</span></div>
+<div class="line"><span class="lineno">  185</span>            <span class="comment">// defaults to 0 (current frame)</span></div>
+<div class="line"><span class="lineno">  186</span>            dt0 = (motionSteps[0] - evaluationFrame) / fps;</div>
+<div class="line"><span class="lineno">  187</span>            dt1 = (motionSteps[1] - evaluationFrame) / fps;</div>
+<div class="line"><span class="lineno">  188</span>        }</div>
+<div class="line"><span class="lineno">  189</span> </div>
+<div class="line"><span class="lineno">  190</span>        <span class="comment">// indexing</span></div>
+<div class="line"><span class="lineno">  191</span>        <span class="keywordtype">bool</span> applyIndex;</div>
+<div class="line"><span class="lineno">  192</span>        <span class="keywordtype">bool</span> groupOnly = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  193</span>        <span class="keywordflow">if</span> (indices.size() == xformsCount) {</div>
+<div class="line"><span class="lineno">  194</span>            applyIndex = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  195</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (indices.empty()) {</div>
+<div class="line"><span class="lineno">  196</span>            applyIndex = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  197</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (xformsCount == 0) {</div>
+<div class="line"><span class="lineno">  198</span>            <span class="comment">// If there are no xforms then treat as a group node</span></div>
+<div class="line"><span class="lineno">  199</span>            <span class="comment">// with one instance per reference with no transforms</span></div>
+<div class="line"><span class="lineno">  200</span>            applyIndex = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  201</span>            groupOnly = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  202</span>            xformsCount = indices.size();</div>
+<div class="line"><span class="lineno">  203</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  204</span>            rdlGeometry-&gt;warn(<span class="stringliteral">&quot;refIndices count(&quot;</span>, indices.size(),</div>
+<div class="line"><span class="lineno">  205</span>                <span class="stringliteral">&quot;) is not equal to xforms/positions count(&quot;</span>, xformsCount,</div>
+<div class="line"><span class="lineno">  206</span>                <span class="stringliteral">&quot;). Skip applying refIndices&quot;</span>);</div>
+<div class="line"><span class="lineno">  207</span>            applyIndex = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  208</span>        }</div>
+<div class="line"><span class="lineno">  209</span> </div>
+<div class="line"><span class="lineno">  210</span>        <span class="comment">// disabled indices</span></div>
+<div class="line"><span class="lineno">  211</span>        std::unordered_set&lt;int&gt; disableIndicesSet;</div>
+<div class="line"><span class="lineno">  212</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;i : disableIndices) {</div>
+<div class="line"><span class="lineno">  213</span>            <span class="keywordflow">if</span> (i &lt; (<span class="keywordtype">int</span>) xformsCount) disableIndicesSet.insert(i);</div>
+<div class="line"><span class="lineno">  214</span>        }</div>
+<div class="line"><span class="lineno">  215</span> </div>
+<div class="line"><span class="lineno">  216</span>        <span class="comment">// primitive attributes</span></div>
+<div class="line"><span class="lineno">  217</span>        std::unordered_map&lt;shading::AttributeKey, const void*, shading::AttributeKeyHash&gt; attrMap;</div>
+<div class="line"><span class="lineno">  218</span> </div>
+<div class="line"><span class="lineno">  219</span>        <span class="keywordtype">bool</span> addInstanceTransformAttribute = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  220</span>        shading::TypedAttributeKey&lt;scene_rdl2::math::Mat4f&gt; instanceLevelKey =</div>
+<div class="line"><span class="lineno">  221</span>            <a class="code hl_variable" href="namespacemoonray_1_1geom.html#acb68f4b0deb520c2a71b38967f0c263f">sInstanceLevelKeys</a>[instanceLevel];</div>
+<div class="line"><span class="lineno">  222</span> </div>
+<div class="line"><span class="lineno">  223</span>        <span class="keywordtype">bool</span> addInstanceObjectTransformAttribute = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  224</span> </div>
+<div class="line"><span class="lineno">  225</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; key : generateContext.getRequestedAttributes()) {</div>
+<div class="line"><span class="lineno">  226</span>            <span class="keywordflow">if</span> (key == instanceLevelKey) {</div>
+<div class="line"><span class="lineno">  227</span>                addInstanceTransformAttribute = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  228</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  229</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (key == <a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a7c233fef652caa1ae6256c1135758ed5">moonray::shading::StandardAttributes::sInstanceObjectTransform</a>) {</div>
+<div class="line"><span class="lineno">  230</span>                addInstanceObjectTransformAttribute = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  231</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  232</span>            }</div>
+<div class="line"><span class="lineno">  233</span> </div>
+<div class="line"><span class="lineno">  234</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; attr : attributes) {</div>
+<div class="line"><span class="lineno">  235</span>                <span class="keywordflow">if</span> (!attr-&gt;isA&lt;scene_rdl2::rdl2::UserData&gt;()) {</div>
+<div class="line"><span class="lineno">  236</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  237</span>                }</div>
+<div class="line"><span class="lineno">  238</span>                <span class="keywordflow">if</span> (attrMap.find(key) != attrMap.end()) {</div>
+<div class="line"><span class="lineno">  239</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  240</span>                }</div>
+<div class="line"><span class="lineno">  241</span>                <span class="keyword">const</span> scene_rdl2::rdl2::UserData* data = attr-&gt;asA&lt;scene_rdl2::rdl2::UserData&gt;();</div>
+<div class="line"><span class="lineno">  242</span>                scene_rdl2::rdl2::AttributeType type = key.<a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a9741569f534f40cc3dc272913fceb8b3">getType</a>();</div>
+<div class="line"><span class="lineno">  243</span>                <span class="keyword">const</span> std::string&amp; <a class="code hl_variable" href="namespacepackage.html#a781101519999e91f2fc32335a8969fc2">name</a> = key.getName();</div>
+<div class="line"><span class="lineno">  244</span>                <span class="keywordflow">if</span> (type == scene_rdl2::rdl2::TYPE_BOOL &amp;&amp; data-&gt;hasBoolData() &amp;&amp;</div>
+<div class="line"><span class="lineno">  245</span>                    <a class="code hl_variable" href="namespacepackage.html#a781101519999e91f2fc32335a8969fc2">name</a> == data-&gt;getBoolKey()) {</div>
+<div class="line"><span class="lineno">  246</span>                    <span class="keywordflow">if</span> (data-&gt;getBoolValues().size() == xformsCount) {</div>
+<div class="line"><span class="lineno">  247</span>                        attrMap[key] = (<span class="keyword">const</span> <span class="keywordtype">void</span>*)(&amp;data-&gt;getBoolValues());</div>
+<div class="line"><span class="lineno">  248</span>                    }</div>
+<div class="line"><span class="lineno">  249</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == scene_rdl2::rdl2::TYPE_INT &amp;&amp; data-&gt;hasIntData() &amp;&amp;</div>
+<div class="line"><span class="lineno">  250</span>                    <a class="code hl_variable" href="namespacepackage.html#a781101519999e91f2fc32335a8969fc2">name</a> == data-&gt;getIntKey()) {</div>
+<div class="line"><span class="lineno">  251</span>                    <span class="keywordflow">if</span> (data-&gt;getIntValues().size() == xformsCount) {</div>
+<div class="line"><span class="lineno">  252</span>                        attrMap[key] = (<span class="keyword">const</span> <span class="keywordtype">void</span>*)(&amp;data-&gt;getIntValues());</div>
+<div class="line"><span class="lineno">  253</span>                    }</div>
+<div class="line"><span class="lineno">  254</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == scene_rdl2::rdl2::TYPE_FLOAT &amp;&amp; data-&gt;hasFloatData() &amp;&amp;</div>
+<div class="line"><span class="lineno">  255</span>                    <a class="code hl_variable" href="namespacepackage.html#a781101519999e91f2fc32335a8969fc2">name</a> == data-&gt;getFloatKey()) {</div>
+<div class="line"><span class="lineno">  256</span>                    <span class="keywordflow">if</span> (data-&gt;getFloatValues().size() == xformsCount) {</div>
+<div class="line"><span class="lineno">  257</span>                        attrMap[key] = (<span class="keyword">const</span> <span class="keywordtype">void</span>*)(&amp;data-&gt;getFloatValues());</div>
+<div class="line"><span class="lineno">  258</span>                    }</div>
+<div class="line"><span class="lineno">  259</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == scene_rdl2::rdl2::TYPE_STRING &amp;&amp; data-&gt;hasStringData() &amp;&amp;</div>
+<div class="line"><span class="lineno">  260</span>                    <a class="code hl_variable" href="namespacepackage.html#a781101519999e91f2fc32335a8969fc2">name</a> == data-&gt;getStringKey()) {</div>
+<div class="line"><span class="lineno">  261</span>                    <span class="keywordflow">if</span> (data-&gt;getStringValues().size() == xformsCount) {</div>
+<div class="line"><span class="lineno">  262</span>                        attrMap[key] = (<span class="keyword">const</span> <span class="keywordtype">void</span>*)(&amp;data-&gt;getStringValues());</div>
+<div class="line"><span class="lineno">  263</span>                    }</div>
+<div class="line"><span class="lineno">  264</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == scene_rdl2::rdl2::TYPE_RGB &amp;&amp; data-&gt;hasColorData() &amp;&amp;</div>
+<div class="line"><span class="lineno">  265</span>                    <a class="code hl_variable" href="namespacepackage.html#a781101519999e91f2fc32335a8969fc2">name</a> == data-&gt;getColorKey()) {</div>
+<div class="line"><span class="lineno">  266</span>                    <span class="keywordflow">if</span> (data-&gt;getColorValues().size() == xformsCount) {</div>
+<div class="line"><span class="lineno">  267</span>                        attrMap[key] = (<span class="keyword">const</span> <span class="keywordtype">void</span>*)(&amp;data-&gt;getColorValues());</div>
+<div class="line"><span class="lineno">  268</span>                    }</div>
+<div class="line"><span class="lineno">  269</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == scene_rdl2::rdl2::TYPE_VEC2F &amp;&amp; data-&gt;hasVec2fData() &amp;&amp;</div>
+<div class="line"><span class="lineno">  270</span>                    <a class="code hl_variable" href="namespacepackage.html#a781101519999e91f2fc32335a8969fc2">name</a> == data-&gt;getVec2fKey()) {</div>
+<div class="line"><span class="lineno">  271</span>                    <span class="keywordflow">if</span> (data-&gt;getVec2fValues().size() == xformsCount) {</div>
+<div class="line"><span class="lineno">  272</span>                        attrMap[key] = (<span class="keyword">const</span> <span class="keywordtype">void</span>*)(&amp;data-&gt;getVec2fValues());</div>
+<div class="line"><span class="lineno">  273</span>                    }</div>
+<div class="line"><span class="lineno">  274</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == scene_rdl2::rdl2::TYPE_VEC3F &amp;&amp; data-&gt;hasVec3fData() &amp;&amp;</div>
+<div class="line"><span class="lineno">  275</span>                    <a class="code hl_variable" href="namespacepackage.html#a781101519999e91f2fc32335a8969fc2">name</a> == data-&gt;getVec3fKey()) {</div>
+<div class="line"><span class="lineno">  276</span>                    <span class="keywordflow">if</span> (data-&gt;getVec3fValues().size() == xformsCount) {</div>
+<div class="line"><span class="lineno">  277</span>                        attrMap[key] = (<span class="keyword">const</span> <span class="keywordtype">void</span>*)(&amp;data-&gt;getVec3fValues());</div>
+<div class="line"><span class="lineno">  278</span>                    }</div>
+<div class="line"><span class="lineno">  279</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == scene_rdl2::rdl2::TYPE_MAT4F &amp;&amp; data-&gt;hasMat4fData() &amp;&amp;</div>
+<div class="line"><span class="lineno">  280</span>                    <a class="code hl_variable" href="namespacepackage.html#a781101519999e91f2fc32335a8969fc2">name</a> == data-&gt;getMat4fKey()) {</div>
+<div class="line"><span class="lineno">  281</span>                    <span class="keywordflow">if</span> (data-&gt;getMat4fValues().size() == xformsCount) {</div>
+<div class="line"><span class="lineno">  282</span>                        attrMap[key] = (<span class="keyword">const</span> <span class="keywordtype">void</span>*)(&amp;data-&gt;getMat4fValues());</div>
+<div class="line"><span class="lineno">  283</span>                    }</div>
+<div class="line"><span class="lineno">  284</span>                }</div>
+<div class="line"><span class="lineno">  285</span>            }</div>
+<div class="line"><span class="lineno">  286</span>            attrMap.insert({key, <span class="keyword">nullptr</span>}); <span class="comment">// Will only succeed if key does not already exist.</span></div>
+<div class="line"><span class="lineno">  287</span>        }</div>
+<div class="line"><span class="lineno">  288</span> </div>
+<div class="line"><span class="lineno">  289</span>        <span class="keywordtype">bool</span> addVelocityAttribute = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  290</span>        <span class="keywordflow">if</span> (generateContext.requestAttribute(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a256b76925eefd1a9cadcabc8d29f562b">shading::StandardAttributes::sVelocity</a>) &amp;&amp;</div>
+<div class="line"><span class="lineno">  291</span>            hasValidVelocity) {</div>
+<div class="line"><span class="lineno">  292</span>            addVelocityAttribute = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  293</span>        }</div>
+<div class="line"><span class="lineno">  294</span> </div>
+<div class="line"><span class="lineno">  295</span>        <span class="keywordtype">bool</span> applyOrientation, applyScale;</div>
+<div class="line"><span class="lineno">  296</span>        <span class="keywordflow">if</span> (!groupOnly) {</div>
+<div class="line"><span class="lineno">  297</span>            <a class="code hl_function" href="namespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03.html#a6ee91e3c69da7660db508dabdc34e99f">validateXformAttrs</a>(instanceMethod, </div>
+<div class="line"><span class="lineno">  298</span>                               orientations,</div>
+<div class="line"><span class="lineno">  299</span>                               scales,</div>
+<div class="line"><span class="lineno">  300</span>                               *rdlGeometry,</div>
+<div class="line"><span class="lineno">  301</span>                               xformsCount,</div>
+<div class="line"><span class="lineno">  302</span>                               applyOrientation,</div>
+<div class="line"><span class="lineno">  303</span>                               applyScale);</div>
+<div class="line"><span class="lineno">  304</span>        }</div>
+<div class="line"><span class="lineno">  305</span> </div>
+<div class="line"><span class="lineno">  306</span>        <span class="keywordtype">size_t</span> badXformCount = 0;</div>
+<div class="line"><span class="lineno">  307</span>        <span class="keywordtype">int</span> maxIndex = ref.size() - 1;</div>
+<div class="line"><span class="lineno">  308</span> </div>
+<div class="line"><span class="lineno">  309</span>        <span class="comment">// disableIndicesSet contains no duplicates or elements &gt;= xformsCount</span></div>
+<div class="line"><span class="lineno">  310</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1_procedural_leaf.html#a48f36d3ea61a6786972e363e2e7f02bb">reservePrimitive</a>(xformsCount - disableIndicesSet.size());</div>
+<div class="line"><span class="lineno">  311</span>        <span class="comment">// combine above info to XformSamples</span></div>
+<div class="line"><span class="lineno">  312</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; xformsCount; ++i) {</div>
+<div class="line"><span class="lineno">  313</span>            <span class="keywordflow">if</span> (!disableIndicesSet.empty() &amp;&amp; disableIndicesSet.find(i) != disableIndicesSet.end()) {</div>
+<div class="line"><span class="lineno">  314</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  315</span>            }</div>
+<div class="line"><span class="lineno">  316</span> </div>
+<div class="line"><span class="lineno">  317</span>            <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> xform;</div>
+<div class="line"><span class="lineno">  318</span> </div>
+<div class="line"><span class="lineno">  319</span>            <span class="keywordflow">if</span> (groupOnly) {</div>
+<div class="line"><span class="lineno">  320</span>                xform.emplace_back(scene_rdl2::math::Mat3f(scene_rdl2::math::one), scene_rdl2::math::Vec3f(scene_rdl2::math::zero));</div>
+<div class="line"><span class="lineno">  321</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  322</span>                <span class="keywordflow">if</span> (instanceMethod == <a class="code hl_enumvalue" href="namespacemoonray_1_1geom.html#a34164a39e4cb3385625878a88f45e385a2e466ae7b579ecb40c506addce7e2e98">InstanceMethod::XFORM_ATTRIBUTES</a>) {</div>
+<div class="line"><span class="lineno">  323</span>                    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> scale = applyScale ? scales[i] : <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(scene_rdl2::math::one);</div>
+<div class="line"><span class="lineno">  324</span>                    scene_rdl2::math::Quaternion3f orient(scene_rdl2::math::one);</div>
+<div class="line"><span class="lineno">  325</span>                    <span class="keywordflow">if</span> (applyOrientation &amp;&amp; orientations[i].lengthSqr() &gt; 0.0f) {</div>
+<div class="line"><span class="lineno">  326</span>                        orient.i = orientations[i][0];</div>
+<div class="line"><span class="lineno">  327</span>                        orient.j = orientations[i][1];</div>
+<div class="line"><span class="lineno">  328</span>                        orient.k = orientations[i][2];</div>
+<div class="line"><span class="lineno">  329</span>                        orient.r = orientations[i][3];</div>
+<div class="line"><span class="lineno">  330</span>                        orient = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(orient);</div>
+<div class="line"><span class="lineno">  331</span>                    }</div>
+<div class="line"><span class="lineno">  332</span>                    scene_rdl2::math::Mat3f scaleRotate(</div>
+<div class="line"><span class="lineno">  333</span>                            scene_rdl2::math::Mat3f::scale(scale) * scene_rdl2::math::Mat3f(orient));</div>
+<div class="line"><span class="lineno">  334</span>                    <span class="keywordflow">if</span> (applyVelocity) {</div>
+<div class="line"><span class="lineno">  335</span>                        xform.emplace_back(</div>
+<div class="line"><span class="lineno">  336</span>                                scaleRotate, positions[i] + velocities[i] * dt0);</div>
+<div class="line"><span class="lineno">  337</span>                        xform.emplace_back(</div>
+<div class="line"><span class="lineno">  338</span>                                scaleRotate, positions[i] + velocities[i] * dt1);</div>
+<div class="line"><span class="lineno">  339</span>                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  340</span>                        xform.emplace_back(scaleRotate, positions[i]);</div>
+<div class="line"><span class="lineno">  341</span>                    }</div>
+<div class="line"><span class="lineno">  342</span>                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (instanceMethod == <a class="code hl_enumvalue" href="namespacemoonray_1_1geom.html#a34164a39e4cb3385625878a88f45e385a7112891b6f9daab06723ff42f13be7a3">InstanceMethod::XFORMS</a>) {</div>
+<div class="line"><span class="lineno">  343</span>                    <span class="keywordflow">if</span> (applyVelocity) {</div>
+<div class="line"><span class="lineno">  344</span>                        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; mat4 = xforms[i];</div>
+<div class="line"><span class="lineno">  345</span> </div>
+<div class="line"><span class="lineno">  346</span>                        scene_rdl2::math::Xform3f xf0 = scene_rdl2::math::xform&lt;scene_rdl2::math::Xform3f&gt;(mat4);</div>
+<div class="line"><span class="lineno">  347</span>                        scene_rdl2::math::Xform3f xf1 = scene_rdl2::math::xform&lt;scene_rdl2::math::Xform3f&gt;(mat4);</div>
+<div class="line"><span class="lineno">  348</span> </div>
+<div class="line"><span class="lineno">  349</span>                        xf0.p += velocities[i] * dt0;</div>
+<div class="line"><span class="lineno">  350</span>                        xf1.p += velocities[i] * dt1;</div>
+<div class="line"><span class="lineno">  351</span> </div>
+<div class="line"><span class="lineno">  352</span>                        xform.push_back(xf0);</div>
+<div class="line"><span class="lineno">  353</span>                        xform.push_back(xf1);</div>
+<div class="line"><span class="lineno">  354</span>                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  355</span>                        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; mat4 = xforms[i];</div>
+<div class="line"><span class="lineno">  356</span>                        xform.push_back(scene_rdl2::math::xform&lt;scene_rdl2::math::Xform3f&gt;(mat4));</div>
+<div class="line"><span class="lineno">  357</span>                    }</div>
+<div class="line"><span class="lineno">  358</span>                } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  359</span>                   rdlGeometry-&gt;error(<span class="stringliteral">&quot;Unknown instancing method.&quot;</span>);</div>
+<div class="line"><span class="lineno">  360</span>                   <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  361</span>                }</div>
+<div class="line"><span class="lineno">  362</span>            }</div>
+<div class="line"><span class="lineno">  363</span> </div>
+<div class="line"><span class="lineno">  364</span>            <span class="keywordtype">int</span> index = applyIndex ? indices[i] : 0;</div>
+<div class="line"><span class="lineno">  365</span>            <span class="keywordflow">if</span> (index &gt; maxIndex) {</div>
+<div class="line"><span class="lineno">  366</span>                index = 0;</div>
+<div class="line"><span class="lineno">  367</span>            }</div>
+<div class="line"><span class="lineno">  368</span>            <span class="keywordflow">if</span> (!ref[index]) {</div>
+<div class="line"><span class="lineno">  369</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  370</span>            }</div>
+<div class="line"><span class="lineno">  371</span> </div>
+<div class="line"><span class="lineno">  372</span>            shading::PrimitiveAttributeTable primitiveAttributeTable;</div>
+<div class="line"><span class="lineno">  373</span> </div>
+<div class="line"><span class="lineno">  374</span>            <span class="comment">// handle a special case that user requests velocity,</span></div>
+<div class="line"><span class="lineno">  375</span>            <span class="comment">// which is stored in its own separate location &quot;velocities&quot;</span></div>
+<div class="line"><span class="lineno">  376</span>            <span class="comment">// instead of &quot;primitive attributes&quot; field</span></div>
+<div class="line"><span class="lineno">  377</span>            <span class="keywordflow">if</span> (addVelocityAttribute) {</div>
+<div class="line"><span class="lineno">  378</span>                primitiveAttributeTable.addAttribute(</div>
+<div class="line"><span class="lineno">  379</span>                    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a256b76925eefd1a9cadcabc8d29f562b">shading::StandardAttributes::sVelocity</a>, <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc">shading::RATE_CONSTANT</a>,</div>
+<div class="line"><span class="lineno">  380</span>                    {velocities[i]});</div>
+<div class="line"><span class="lineno">  381</span>            }</div>
+<div class="line"><span class="lineno">  382</span>            <span class="keywordflow">if</span> (addInstanceTransformAttribute) {</div>
+<div class="line"><span class="lineno">  383</span>                scene_rdl2::math::Mat4f instanceTransform(xform[0]);</div>
+<div class="line"><span class="lineno">  384</span>                <span class="keywordflow">if</span> (useRefXforms) {</div>
+<div class="line"><span class="lineno">  385</span>                    instanceTransform = <span class="keyword">static_cast&lt;</span>scene_rdl2::math::Mat4f<span class="keyword">&gt;</span>(refXforms[index][0]) * instanceTransform;</div>
+<div class="line"><span class="lineno">  386</span>                }</div>
+<div class="line"><span class="lineno">  387</span> </div>
+<div class="line"><span class="lineno">  388</span>                primitiveAttributeTable.addAttribute(</div>
+<div class="line"><span class="lineno">  389</span>                    instanceLevelKey,</div>
+<div class="line"><span class="lineno">  390</span>                    <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc">shading::RATE_CONSTANT</a>,</div>
+<div class="line"><span class="lineno">  391</span>                    { instanceTransform });</div>
+<div class="line"><span class="lineno">  392</span>            }</div>
+<div class="line"><span class="lineno">  393</span>            <span class="keywordflow">if</span> (addInstanceObjectTransformAttribute) {</div>
+<div class="line"><span class="lineno">  394</span>                primitiveAttributeTable.addAttribute(</div>
+<div class="line"><span class="lineno">  395</span>                    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a7c233fef652caa1ae6256c1135758ed5">moonray::shading::StandardAttributes::sInstanceObjectTransform</a>,</div>
+<div class="line"><span class="lineno">  396</span>                    <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc">shading::RATE_CONSTANT</a>,</div>
+<div class="line"><span class="lineno">  397</span>                    { nodeXform });</div>
+<div class="line"><span class="lineno">  398</span>            }</div>
+<div class="line"><span class="lineno">  399</span>            <span class="keywordflow">if</span> (useRefAttrs) {</div>
+<div class="line"><span class="lineno">  400</span>                <span class="comment">// Only adding shadow_ray_epsilon for now</span></div>
+<div class="line"><span class="lineno">  401</span>                <span class="comment">// MOONRAY-4313 - Propagate common geometry attributes to instanced primitives</span></div>
+<div class="line"><span class="lineno">  402</span>                std::vector&lt;float&gt; shadowRayEpsilon = { shadowRayEpsilons[index] };</div>
+<div class="line"><span class="lineno">  403</span>                primitiveAttributeTable.addAttribute(</div>
+<div class="line"><span class="lineno">  404</span>                    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#adfd6a89cf3bffc4f791240438d08ede4">moonray::shading::StandardAttributes::sShadowRayEpsilon</a>,</div>
+<div class="line"><span class="lineno">  405</span>                    <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc">shading::RATE_CONSTANT</a>,</div>
+<div class="line"><span class="lineno">  406</span>                    std::move(shadowRayEpsilon));</div>
+<div class="line"><span class="lineno">  407</span>            }</div>
+<div class="line"><span class="lineno">  408</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; kv : attrMap) {</div>
+<div class="line"><span class="lineno">  409</span>                <span class="keyword">const</span> <span class="keyword">auto</span>&amp; key = kv.first;</div>
+<div class="line"><span class="lineno">  410</span>                <span class="keyword">const</span> <span class="keywordtype">void</span>* values = kv.second;</div>
+<div class="line"><span class="lineno">  411</span>                <span class="keywordflow">if</span> (values == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  412</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  413</span>                }</div>
+<div class="line"><span class="lineno">  414</span>                <span class="keywordflow">switch</span> (key.getType()) {</div>
+<div class="line"><span class="lineno">  415</span>                <span class="keywordflow">case</span> scene_rdl2::rdl2::TYPE_BOOL:</div>
+<div class="line"><span class="lineno">  416</span>                    primitiveAttributeTable.addAttribute(</div>
+<div class="line"><span class="lineno">  417</span>                        shading::TypedAttributeKey&lt;bool&gt;(key), <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc">shading::RATE_CONSTANT</a>,</div>
+<div class="line"><span class="lineno">  418</span>                        std::vector&lt;bool&gt;({ (*(<span class="keyword">const</span> scene_rdl2::rdl2::BoolVector*)values)[i]}) );</div>
+<div class="line"><span class="lineno">  419</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  420</span>                <span class="keywordflow">case</span> scene_rdl2::rdl2::TYPE_INT:</div>
+<div class="line"><span class="lineno">  421</span>                    primitiveAttributeTable.addAttribute(</div>
+<div class="line"><span class="lineno">  422</span>                        shading::TypedAttributeKey&lt;int&gt;(key), <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc">shading::RATE_CONSTANT</a>,</div>
+<div class="line"><span class="lineno">  423</span>                        std::vector&lt;int&gt;({ (*(<span class="keyword">const</span> scene_rdl2::rdl2::IntVector*)values)[i]}) );</div>
+<div class="line"><span class="lineno">  424</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  425</span>                <span class="keywordflow">case</span> scene_rdl2::rdl2::TYPE_FLOAT:</div>
+<div class="line"><span class="lineno">  426</span>                    primitiveAttributeTable.addAttribute(</div>
+<div class="line"><span class="lineno">  427</span>                        shading::TypedAttributeKey&lt;float&gt;(key), <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc">shading::RATE_CONSTANT</a>,</div>
+<div class="line"><span class="lineno">  428</span>                        std::vector&lt;float&gt;({ (*(<span class="keyword">const</span> scene_rdl2::rdl2::FloatVector*)values)[i]}) );</div>
+<div class="line"><span class="lineno">  429</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  430</span>                <span class="keywordflow">case</span> scene_rdl2::rdl2::TYPE_STRING:</div>
+<div class="line"><span class="lineno">  431</span>                    primitiveAttributeTable.addAttribute(</div>
+<div class="line"><span class="lineno">  432</span>                        shading::TypedAttributeKey&lt;std::string&gt;(key), <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc">shading::RATE_CONSTANT</a>,</div>
+<div class="line"><span class="lineno">  433</span>                        {(*(<span class="keyword">const</span> scene_rdl2::rdl2::StringVector*)values)[i]});</div>
+<div class="line"><span class="lineno">  434</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  435</span>                <span class="keywordflow">case</span> scene_rdl2::rdl2::TYPE_RGB:</div>
+<div class="line"><span class="lineno">  436</span>                    primitiveAttributeTable.addAttribute(</div>
+<div class="line"><span class="lineno">  437</span>                        shading::TypedAttributeKey&lt;scene_rdl2::math::Color&gt;(key), <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc">shading::RATE_CONSTANT</a>,</div>
+<div class="line"><span class="lineno">  438</span>                        {(*(<span class="keyword">const</span> scene_rdl2::rdl2::RgbVector*)values)[i]});</div>
+<div class="line"><span class="lineno">  439</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  440</span>                <span class="keywordflow">case</span> scene_rdl2::rdl2::TYPE_VEC2F:</div>
+<div class="line"><span class="lineno">  441</span>                    primitiveAttributeTable.addAttribute(</div>
+<div class="line"><span class="lineno">  442</span>                        shading::TypedAttributeKey&lt;Vec2f&gt;(key), <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc">shading::RATE_CONSTANT</a>,</div>
+<div class="line"><span class="lineno">  443</span>                        {(*(<span class="keyword">const</span> scene_rdl2::rdl2::Vec2fVector*)values)[i]});</div>
+<div class="line"><span class="lineno">  444</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  445</span>                <span class="keywordflow">case</span> scene_rdl2::rdl2::TYPE_VEC3F:</div>
+<div class="line"><span class="lineno">  446</span>                    primitiveAttributeTable.addAttribute(</div>
+<div class="line"><span class="lineno">  447</span>                        shading::TypedAttributeKey&lt;Vec3f&gt;(key), <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc">shading::RATE_CONSTANT</a>,</div>
+<div class="line"><span class="lineno">  448</span>                        {(*(<span class="keyword">const</span> scene_rdl2::rdl2::Vec3fVector*)values)[i]});</div>
+<div class="line"><span class="lineno">  449</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  450</span>                <span class="keywordflow">case</span> scene_rdl2::rdl2::TYPE_MAT4F:</div>
+<div class="line"><span class="lineno">  451</span>                    primitiveAttributeTable.addAttribute(</div>
+<div class="line"><span class="lineno">  452</span>                        shading::TypedAttributeKey&lt;scene_rdl2::math::Mat4f&gt;(key), <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc">shading::RATE_CONSTANT</a>,</div>
+<div class="line"><span class="lineno">  453</span>                        {(*(<span class="keyword">const</span> scene_rdl2::rdl2::Mat4fVector*)values)[i]});</div>
+<div class="line"><span class="lineno">  454</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  455</span>                <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  456</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  457</span>                }</div>
+<div class="line"><span class="lineno">  458</span>            }</div>
+<div class="line"><span class="lineno">  459</span>            <span class="keywordflow">if</span> (useRefXforms) {</div>
+<div class="line"><span class="lineno">  460</span>                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; xform.size(); ++j) {</div>
+<div class="line"><span class="lineno">  461</span>                    xform[j] = refXforms[index][j] * xform[j];</div>
+<div class="line"><span class="lineno">  462</span>                }</div>
+<div class="line"><span class="lineno">  463</span>            }</div>
+<div class="line"><span class="lineno">  464</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="namespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03.html#aa3fa557907d9a0efd7badf083aee844d">isValidXform</a>(xform)) {</div>
+<div class="line"><span class="lineno">  465</span>                <span class="keyword">auto</span> instance = <a class="code hl_function" href="namespacemoonray_1_1geom.html#af43ff3e3efb6aabddaf5977840a65475">createInstance</a>(xform,</div>
+<div class="line"><span class="lineno">  466</span>                                               ref[index],</div>
+<div class="line"><span class="lineno">  467</span>                                               std::move(primitiveAttributeTable));</div>
+<div class="line"><span class="lineno">  468</span>                <a class="code hl_function" href="classmoonray_1_1geom_1_1_procedural_leaf.html#a038d05dc9ccaaa507f0d5af695db9990">addPrimitive</a>(std::move(instance),</div>
+<div class="line"><span class="lineno">  469</span>                             generateContext.getMotionBlurParams(),</div>
+<div class="line"><span class="lineno">  470</span>                             parent2render);</div>
+<div class="line"><span class="lineno">  471</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  472</span>                badXformCount++;</div>
+<div class="line"><span class="lineno">  473</span>            }</div>
+<div class="line"><span class="lineno">  474</span>        }</div>
+<div class="line"><span class="lineno">  475</span>        <span class="keywordflow">if</span> (badXformCount &gt; 0) {</div>
+<div class="line"><span class="lineno">  476</span>            rdlGeometry-&gt;warn(<span class="stringliteral">&quot;Skipped &quot;</span>, badXformCount,</div>
+<div class="line"><span class="lineno">  477</span>                <span class="stringliteral">&quot; instances which contained invalid transform matrices&quot;</span>);</div>
+<div class="line"><span class="lineno">  478</span>        }</div>
+<div class="line"><span class="lineno">  479</span>    }</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a26b3f6b7b842544058f3766b0da79257"><div class="ttname"><a href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a></div><div class="ttdeci">__host__ __device__ float3 normalize(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00165">GPUMath.h:165</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_procedural_leaf_html_a038d05dc9ccaaa507f0d5af695db9990"><div class="ttname"><a href="classmoonray_1_1geom_1_1_procedural_leaf.html#a038d05dc9ccaaa507f0d5af695db9990">moonray::geom::ProceduralLeaf::addPrimitive</a></div><div class="ttdeci">void addPrimitive(std::unique_ptr&lt; Primitive &gt; p, const MotionBlurParams &amp;motionBlurParams, const shading::XformSamples &amp;parent2render)</div><div class="ttdoc">Add a Primitive to the scene.</div><div class="ttdef"><b>Definition:</b> <a href="_procedural_leaf_8cc_source.html#l00114">ProceduralLeaf.cc:114</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_procedural_leaf_html_a48f36d3ea61a6786972e363e2e7f02bb"><div class="ttname"><a href="classmoonray_1_1geom_1_1_procedural_leaf.html#a48f36d3ea61a6786972e363e2e7f02bb">moonray::geom::ProceduralLeaf::reservePrimitive</a></div><div class="ttdeci">void reservePrimitive(Procedural::size_type n)</div><div class="ttdef"><b>Definition:</b> <a href="_procedural_leaf_8cc_source.html#l00131">ProceduralLeaf.cc:131</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a9741569f534f40cc3dc272913fceb8b3"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a9741569f534f40cc3dc272913fceb8b3">moonray::shading::AttributeKey::getType</a></div><div class="ttdeci">finline AttributeType getType() const</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00236">AttributeKey.h:236</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_standard_attributes_html_a256b76925eefd1a9cadcabc8d29f562b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_standard_attributes.html#a256b76925eefd1a9cadcabc8d29f562b">moonray::shading::StandardAttributes::sVelocity</a></div><div class="ttdeci">static TypedAttributeKey&lt; scene_rdl2::math::Vec3f &gt; sVelocity</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00156">AttributeKey.h:156</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_standard_attributes_html_a7c233fef652caa1ae6256c1135758ed5"><div class="ttname"><a href="classmoonray_1_1shading_1_1_standard_attributes.html#a7c233fef652caa1ae6256c1135758ed5">moonray::shading::StandardAttributes::sInstanceObjectTransform</a></div><div class="ttdeci">static TypedAttributeKey&lt; scene_rdl2::math::Mat4f &gt; sInstanceObjectTransform</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00159">AttributeKey.h:159</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_standard_attributes_html_adfd6a89cf3bffc4f791240438d08ede4"><div class="ttname"><a href="classmoonray_1_1shading_1_1_standard_attributes.html#adfd6a89cf3bffc4f791240438d08ede4">moonray::shading::StandardAttributes::sShadowRayEpsilon</a></div><div class="ttdeci">static TypedAttributeKey&lt; float &gt; sShadowRayEpsilon</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00166">AttributeKey.h:166</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03_html_a6ee91e3c69da7660db508dabdc34e99f"><div class="ttname"><a href="namespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03.html#a6ee91e3c69da7660db508dabdc34e99f">anonymous_namespace{InstanceProceduralLeaf.cc}::validateXformAttrs</a></div><div class="ttdeci">void validateXformAttrs(const moonray::geom::InstanceMethod instanceMethod, const scene_rdl2::rdl2::Vec4fVector &amp;orientations, const scene_rdl2::rdl2::Vec3fVector &amp;scales, const scene_rdl2::rdl2::Geometry &amp;rdlGeometry, const size_t xformsCount, bool &amp;applyOrientation, bool &amp;applyScale)</div><div class="ttdef"><b>Definition:</b> <a href="_instance_procedural_leaf_8cc_source.html#l00019">InstanceProceduralLeaf.cc:19</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03_html_aa3fa557907d9a0efd7badf083aee844d"><div class="ttname"><a href="namespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03.html#aa3fa557907d9a0efd7badf083aee844d">anonymous_namespace{InstanceProceduralLeaf.cc}::isValidXform</a></div><div class="ttdeci">bool isValidXform(const moonray::shading::XformSamples &amp;xforms)</div><div class="ttdef"><b>Definition:</b> <a href="_instance_procedural_leaf_8cc_source.html#l00058">InstanceProceduralLeaf.cc:58</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a34164a39e4cb3385625878a88f45e385a2e466ae7b579ecb40c506addce7e2e98"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a34164a39e4cb3385625878a88f45e385a2e466ae7b579ecb40c506addce7e2e98">moonray::geom::InstanceMethod::XFORM_ATTRIBUTES</a></div><div class="ttdeci">@ XFORM_ATTRIBUTES</div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a34164a39e4cb3385625878a88f45e385a7112891b6f9daab06723ff42f13be7a3"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a34164a39e4cb3385625878a88f45e385a7112891b6f9daab06723ff42f13be7a3">moonray::geom::InstanceMethod::XFORMS</a></div><div class="ttdeci">@ XFORMS</div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_acb68f4b0deb520c2a71b38967f0c263f"><div class="ttname"><a href="namespacemoonray_1_1geom.html#acb68f4b0deb520c2a71b38967f0c263f">moonray::geom::sInstanceLevelKeys</a></div><div class="ttdeci">static const shading::TypedAttributeKey&lt; scene_rdl2::math::Mat4f &gt; sInstanceLevelKeys[]</div><div class="ttdef"><b>Definition:</b> <a href="_instance_procedural_leaf_8h_source.html#l00031">InstanceProceduralLeaf.h:31</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_af43ff3e3efb6aabddaf5977840a65475"><div class="ttname"><a href="namespacemoonray_1_1geom.html#af43ff3e3efb6aabddaf5977840a65475">moonray::geom::createInstance</a></div><div class="ttdeci">std::unique_ptr&lt; Instance &gt; createInstance(const Mat43 &amp;xform, std::shared_ptr&lt; SharedPrimitive &gt; reference, shading::PrimitiveAttributeTable &amp;&amp;primitiveAttributeTable)</div><div class="ttdoc">create an Instance with a transform and a referenced Primitive</div><div class="ttdef"><b>Definition:</b> <a href="_api_8cc_source.html#l00522">Api.cc:522</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc">moonray::shading::RATE_CONSTANT</a></div><div class="ttdeci">@ RATE_CONSTANT</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00025">PrimitiveAttribute.h:25</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_ac42657410f98444ece5b9a1b39839f4e"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">moonray::shading::XformSamples</a></div><div class="ttdeci">std::vector&lt; scene_rdl2::math::Xform3f &gt; XformSamples</div><div class="ttdef"><b>Definition:</b> <a href="_xform_8h_source.html#l00024">Xform.h:24</a></div></div>
+<div class="ttc" id="anamespacepackage_html_a781101519999e91f2fc32335a8969fc2"><div class="ttname"><a href="namespacepackage.html#a781101519999e91f2fc32335a8969fc2">package.name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> <a href="package_8py_source.html#l00007">package.py:7</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3c58a17d85b428d8397cf8ff5451a9fd" name="a3c58a17d85b428d8397cf8ff5451a9fd"></a>
@@ -452,9 +824,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/geom/<a class="el" href="_instance_procedural_leaf_8cc_source.html">InstanceProceduralLeaf.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1_instance_procedural_leaf.html">InstanceProceduralLeaf</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

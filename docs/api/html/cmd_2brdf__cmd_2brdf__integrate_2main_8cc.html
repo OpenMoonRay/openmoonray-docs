@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,16 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_55b3e8b76a6a129d85f7ec9f20e593af.html">cmd</a></li><li class="navelem"><a class="el" href="dir_7c57a4c63cdddfca27542ceb71d34fef.html">brdf_cmd</a></li><li class="navelem"><a class="el" href="dir_34859a0955c83f77b482b3d013612ba7.html">brdf_integrate</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">main.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -89,10 +106,17 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a5f79a1142214f0f279204cb6ed78263e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#a5f79a1142214f0f279204cb6ed78263e">printInfo</a> (const char *format,...)</td></tr>
 <tr class="separator:a5f79a1142214f0f279204cb6ed78263e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054aea3dc636c86c50c9dbb74a3dbf42"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#a054aea3dc636c86c50c9dbb74a3dbf42">evalIntegral</a> (const <a class="el" href="struct_task_settings.html">TaskSettings</a> &amp;test, const Vec3f &amp;wo, int sampleCount, Color &amp;integralUniform, Color &amp;integralImportance)</td></tr>
+<tr class="separator:a054aea3dc636c86c50c9dbb74a3dbf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2879d241bf74cd36c4c56e85bcef60d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#ac2879d241bf74cd36c4c56e85bcef60d">runTest</a> (const <a class="el" href="struct_task_settings.html">TaskSettings</a> &amp;test, const <a class="el" href="classmoonray_1_1shading_1_1_fresnel.html">Fresnel</a> *omFPrime, int viewAnglesTheta, int viewAnglesPhy, int sampleCount)</td></tr>
 <tr class="separator:ac2879d241bf74cd36c4c56e85bcef60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3992e4ffae7e24dcd5b80d5e6e802f95"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#a3992e4ffae7e24dcd5b80d5e6e802f95">sTaskCount</a> = tbb::task_scheduler_init::default_num_threads() * 4</td></tr>
+<tr class="separator:a3992e4ffae7e24dcd5b80d5e6e802f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a2d103e74069c09927a40d478333cbf6f" name="a2d103e74069c09927a40d478333cbf6f"></a>
@@ -128,6 +152,81 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a054aea3dc636c86c50c9dbb74a3dbf42" name="a054aea3dc636c86c50c9dbb74a3dbf42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a054aea3dc636c86c50c9dbb74a3dbf42">&#9670;&#160;</a></span>evalIntegral()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void evalIntegral </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_task_settings.html">TaskSettings</a> &amp;&#160;</td>
+          <td class="paramname"><em>test</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Vec3f &amp;&#160;</td>
+          <td class="paramname"><em>wo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sampleCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color &amp;&#160;</td>
+          <td class="paramname"><em>integralUniform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color &amp;&#160;</td>
+          <td class="paramname"><em>integralImportance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html#l00184">184</a> of file <a class="el" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html">main.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  186</span>{</div>
+<div class="line"><span class="lineno">  187</span>    <span class="comment">// Get ready to sample, including the cosine term since we want to</span></div>
+<div class="line"><span class="lineno">  188</span>    <span class="comment">// integrate the bsdf * cosine term</span></div>
+<div class="line"><span class="lineno">  189</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_bsdf_slice.html">BsdfSlice</a> slice(test.<a class="code hl_variable" href="struct_task_settings.html#a251d9d4c40d780e3138d312a55f1f3af">frame</a>.getN(), wo, <span class="keyword">true</span>, <span class="keyword">true</span>, ispc::SHADOW_TERMINATOR_FIX_OFF);</div>
+<div class="line"><span class="lineno">  190</span> </div>
+<div class="line"><span class="lineno">  191</span>    integralUniform = sBlack;</div>
+<div class="line"><span class="lineno">  192</span>    integralImportance = sBlack;</div>
+<div class="line"><span class="lineno">  193</span>    <a class="code hl_struct" href="struct_eval_bsdf_integral_task.html">EvalBsdfIntegralTask</a> task(test, slice, integralUniform, integralImportance);</div>
+<div class="line"><span class="lineno">  194</span>    tbb::parallel_for(tbb::blocked_range&lt;int&gt;(0, sampleCount,</div>
+<div class="line"><span class="lineno">  195</span>            sampleCount / <a class="code hl_variable" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#a3992e4ffae7e24dcd5b80d5e6e802f95">sTaskCount</a>), task);</div>
+<div class="line"><span class="lineno">  196</span> </div>
+<div class="line"><span class="lineno">  197</span>    <span class="comment">// Divide by pdf and/or number of samples to get the MC estimate</span></div>
+<div class="line"><span class="lineno">  198</span>    integralUniform /= sampleCount;</div>
+<div class="line"><span class="lineno">  199</span>    integralImportance /= sampleCount;</div>
+<div class="line"><span class="lineno">  200</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_slice_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_slice.html">moonray::shading::BsdfSlice</a></div><div class="ttdoc">A BsdfSlice object is used to both represent a lower-dimensional slice of a multi-lobe bsdf and to ev...</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_slice_8h_source.html#l00033">BsdfSlice.h:34</a></div></div>
+<div class="ttc" id="acmd_2brdf__cmd_2brdf__integrate_2main_8cc_html_a3992e4ffae7e24dcd5b80d5e6e802f95"><div class="ttname"><a href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#a3992e4ffae7e24dcd5b80d5e6e802f95">sTaskCount</a></div><div class="ttdeci">static const int sTaskCount</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html#l00076">main.cc:76</a></div></div>
+<div class="ttc" id="astruct_eval_bsdf_integral_task_html"><div class="ttname"><a href="struct_eval_bsdf_integral_task.html">EvalBsdfIntegralTask</a></div><div class="ttdef"><b>Definition:</b> <a href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html#l00104">main.cc:104</a></div></div>
+<div class="ttc" id="astruct_task_settings_html_a251d9d4c40d780e3138d312a55f1f3af"><div class="ttname"><a href="struct_task_settings.html#a251d9d4c40d780e3138d312a55f1f3af">TaskSettings::frame</a></div><div class="ttdeci">const scene_rdl2::math::ReferenceFrame &amp; frame</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html#l00096">main.cc:96</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&#160;</a></span>main()</h2>
 
@@ -155,7 +254,61 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html#l00253">253</a> of file <a class="el" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html">main.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  254</span>{</div>
+<div class="line"><span class="lineno">  255</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#ae12a5e6111d97f30b3b3daea799d0c8a">sSampleCount</a> = 10000;</div>
+<div class="line"><span class="lineno">  256</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a> = 9;</div>
+<div class="line"><span class="lineno">  257</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> sKsCount = 11;</div>
+<div class="line"><span class="lineno">  258</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> sKs[sKsCount] =</div>
+<div class="line"><span class="lineno">  259</span>        { 0.01, 0.02, 0.04, 0.06, 0.08, 0.1, 0.2, 0.3, 0.6, 0.9, 1.0 };</div>
+<div class="line"><span class="lineno">  260</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a> = 11;</div>
+<div class="line"><span class="lineno">  261</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>] =</div>
+<div class="line"><span class="lineno">  262</span>        { 0.001, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0 };</div>
+<div class="line"><span class="lineno">  263</span> </div>
+<div class="line"><span class="lineno">  264</span>    scene_rdl2::util::Ref&lt;scene_rdl2::alloc::ArenaBlockPool&gt; arenaBlockPool =</div>
+<div class="line"><span class="lineno">  265</span>        scene_rdl2::util::alignedMallocCtorArgs&lt;scene_rdl2::alloc::ArenaBlockPool&gt;(CACHE_LINE_SIZE);</div>
+<div class="line"><span class="lineno">  266</span>    scene_rdl2::alloc::Arena arena;</div>
+<div class="line"><span class="lineno">  267</span>    arena.init(arenaBlockPool.get());</div>
+<div class="line"><span class="lineno">  268</span> </div>
+<div class="line"><span class="lineno">  269</span>    <span class="comment">// Fixed seed for repeatable tests</span></div>
+<div class="line"><span class="lineno">  270</span>    <span class="keyword">constexpr</span> std::uint32_t seed = 0xdeadbeef;</div>
+<div class="line"><span class="lineno">  271</span>    scene_rdl2::util::Random rand(seed);</div>
+<div class="line"><span class="lineno">  272</span>    scene_rdl2::math::ReferenceFrame frame;</div>
+<div class="line"><span class="lineno">  273</span> </div>
+<div class="line"><span class="lineno">  274</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j &lt; sKsCount; j++) {</div>
+<div class="line"><span class="lineno">  275</span>        <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#a5f79a1142214f0f279204cb6ed78263e">printInfo</a>(<span class="stringliteral">&quot;########################################&quot;</span>);</div>
+<div class="line"><span class="lineno">  276</span>        <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#a5f79a1142214f0f279204cb6ed78263e">printInfo</a>(<span class="stringliteral">&quot;Ks = ,%f&quot;</span>, sKs[j]);</div>
+<div class="line"><span class="lineno">  277</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">sRoughnessCount</a>; i++) {</div>
+<div class="line"><span class="lineno">  278</span><span class="preprocessor">#if !PRINT_CSV</span></div>
+<div class="line"><span class="lineno">  279</span>            <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#a5f79a1142214f0f279204cb6ed78263e">printInfo</a>(<span class="stringliteral">&quot;===== Ks = %f  -  Roughness: %f ========&quot;</span>, sKs[j], <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i]);</div>
+<div class="line"><span class="lineno">  280</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  281</span> </div>
+<div class="line"><span class="lineno">  282</span>            Color ks(sKs[j]);</div>
+<div class="line"><span class="lineno">  283</span>            <span class="keywordtype">float</span> specRoughness = <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i] * <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">sRoughness</a>[i];</div>
+<div class="line"><span class="lineno">  284</span> </div>
+<div class="line"><span class="lineno">  285</span>            <a class="code hl_class" href="class_cook_torrance_bsdf_factory.html">CookTorranceBsdfFactory</a> factory(specRoughness, ks);</div>
+<div class="line"><span class="lineno">  286</span> </div>
+<div class="line"><span class="lineno">  287</span>            <span class="keyword">auto</span> schlick = arena.allocWithArgs&lt;<a class="code hl_class" href="classmoonray_1_1shading_1_1_schlick_fresnel.html">SchlickFresnel</a>&gt;(ks, 1.0f);</div>
+<div class="line"><span class="lineno">  288</span>            <span class="keyword">auto</span> omFPrime = arena.allocWithArgs&lt;<a class="code hl_class" href="classmoonray_1_1shading_1_1_one_minus_rough_schlick_fresnel.html">OneMinusRoughSchlickFresnel</a>&gt;(</div>
+<div class="line"><span class="lineno">  289</span>                    schlick, specRoughness);</div>
+<div class="line"><span class="lineno">  290</span> </div>
+<div class="line"><span class="lineno">  291</span>            <a class="code hl_struct" href="struct_task_settings.html">TaskSettings</a> test(&amp;rand, factory, frame);</div>
+<div class="line"><span class="lineno">  292</span>            <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#ac2879d241bf74cd36c4c56e85bcef60d">runTest</a>(test, omFPrime, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">sViewAnglesTheta</a>, 1, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#ae12a5e6111d97f30b3b3daea799d0c8a">sSampleCount</a>);</div>
+<div class="line"><span class="lineno">  293</span>        }</div>
+<div class="line"><span class="lineno">  294</span>    }</div>
+<div class="line"><span class="lineno">  295</span> </div>
+<div class="line"><span class="lineno">  296</span>    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line"><span class="lineno">  297</span>}</div>
+<div class="ttc" id="aclass_cook_torrance_bsdf_factory_html"><div class="ttname"><a href="class_cook_torrance_bsdf_factory.html">CookTorranceBsdfFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html#l00045">main.cc:45</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_one_minus_rough_schlick_fresnel_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_one_minus_rough_schlick_fresnel.html">moonray::shading::OneMinusRoughSchlickFresnel</a></div><div class="ttdoc">Approximation used to attenuate lobes under a more-or-less rough specular lobe and enforce energy con...</div><div class="ttdef"><b>Definition:</b> <a href="_fresnel_8h_source.html#l00330">Fresnel.h:331</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_schlick_fresnel_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_schlick_fresnel.html">moonray::shading::SchlickFresnel</a></div><div class="ttdoc">Schlick approximation to fresnel reflectance. Pass in neta, the ratio of the ior for incident / trans...</div><div class="ttdef"><b>Definition:</b> <a href="_fresnel_8h_source.html#l00111">Fresnel.h:112</a></div></div>
+<div class="ttc" id="acmd_2brdf__cmd_2brdf__integrate_2main_8cc_html_a5f79a1142214f0f279204cb6ed78263e"><div class="ttname"><a href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#a5f79a1142214f0f279204cb6ed78263e">printInfo</a></div><div class="ttdeci">void printInfo(const char *format,...)</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html#l00173">main.cc:173</a></div></div>
+<div class="ttc" id="acmd_2brdf__cmd_2brdf__integrate_2main_8cc_html_ac2879d241bf74cd36c4c56e85bcef60d"><div class="ttname"><a href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#ac2879d241bf74cd36c4c56e85bcef60d">runTest</a></div><div class="ttdeci">void runTest(const TaskSettings &amp;test, const Fresnel *omFPrime, int viewAnglesTheta, int viewAnglesPhy, int sampleCount)</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html#l00204">main.cc:204</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a095dd0c08268947a9fa1355901dfebe7"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">moonray::pbr::sRoughnessCount</a></div><div class="ttdeci">static const int sRoughnessCount</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_one_sampler_8cc_source.html#l00036">TestBsdfOneSampler.cc:36</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a56ae37a2ab70472ac70ae80f28ca553d"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">moonray::pbr::sViewAnglesTheta</a></div><div class="ttdeci">static const int sViewAnglesTheta</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_one_sampler_8cc_source.html#l00035">TestBsdfOneSampler.cc:35</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_aa7fcd2476c52f7410396cb6876149fa9"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">moonray::pbr::sRoughness</a></div><div class="ttdeci">static const float sRoughness[sRoughnessCount]</div><div class="ttdef"><b>Definition:</b> <a href="_test_bsdf_one_sampler_8cc_source.html#l00037">TestBsdfOneSampler.cc:37</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_ae12a5e6111d97f30b3b3daea799d0c8a"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ae12a5e6111d97f30b3b3daea799d0c8a">moonray::pbr::sSampleCount</a></div><div class="ttdeci">static const int sSampleCount</div><div class="ttdef"><b>Definition:</b> <a href="_test_bssrdf_8cc_source.html#l00334">TestBssrdf.cc:334</a></div></div>
+<div class="ttc" id="astruct_task_settings_html"><div class="ttname"><a href="struct_task_settings.html">TaskSettings</a></div><div class="ttdef"><b>Definition:</b> <a href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html#l00080">main.cc:80</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5f79a1142214f0f279204cb6ed78263e" name="a5f79a1142214f0f279204cb6ed78263e"></a>
@@ -193,7 +346,14 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html#l00173">173</a> of file <a class="el" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html">main.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  174</span>{</div>
+<div class="line"><span class="lineno">  175</span>    va_list args;</div>
+<div class="line"><span class="lineno">  176</span>    va_start(args, format);</div>
+<div class="line"><span class="lineno">  177</span>    vfprintf(stderr, format, args);</div>
+<div class="line"><span class="lineno">  178</span>    fprintf(stderr, <span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  179</span>    va_end(args);</div>
+<div class="line"><span class="lineno">  180</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac2879d241bf74cd36c4c56e85bcef60d" name="ac2879d241bf74cd36c4c56e85bcef60d"></a>
@@ -241,13 +401,90 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html#l00204">204</a> of file <a class="el" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html">main.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  206</span>{</div>
+<div class="line"><span class="lineno">  207</span>    <span class="keywordtype">float</span> thetaInc = sHalfPi / viewAnglesTheta;</div>
+<div class="line"><span class="lineno">  208</span>    <span class="keywordtype">float</span> phyInc = sTwoPi / viewAnglesPhy;</div>
+<div class="line"><span class="lineno">  209</span> </div>
+<div class="line"><span class="lineno">  210</span><span class="preprocessor">#if PRINT_CSV</span></div>
+<div class="line"><span class="lineno">  211</span>    <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#a5f79a1142214f0f279204cb6ed78263e">printInfo</a>(<span class="stringliteral">&quot;ThetaWo,Rs,Fprime,WeightedSum,Furnace&quot;</span>);</div>
+<div class="line"><span class="lineno">  212</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  213</span> </div>
+<div class="line"><span class="lineno">  214</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> t=0; t &lt; viewAnglesTheta; t++) {</div>
+<div class="line"><span class="lineno">  215</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> p=0; p &lt; viewAnglesPhy; p++) {</div>
+<div class="line"><span class="lineno">  216</span> </div>
+<div class="line"><span class="lineno">  217</span>            <span class="keywordtype">float</span> theta = t * thetaInc;</div>
+<div class="line"><span class="lineno">  218</span>            <span class="keywordtype">float</span> cosTheta = scene_rdl2::math::cos(theta);</div>
+<div class="line"><span class="lineno">  219</span>            <span class="keywordtype">float</span> phy = p * phyInc;</div>
+<div class="line"><span class="lineno">  220</span>            <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> wo = <a class="code hl_function" href="namespacemoonray_1_1shading.html#afab5611fd6c3c0b984fa12f088b62c20">shading::computeLocalSphericalDirection</a>(</div>
+<div class="line"><span class="lineno">  221</span>                cosTheta, scene_rdl2::math::sin(theta), phy);</div>
+<div class="line"><span class="lineno">  222</span>            wo = test.<a class="code hl_variable" href="struct_task_settings.html#a251d9d4c40d780e3138d312a55f1f3af">frame</a>.localToGlobal(wo);</div>
+<div class="line"><span class="lineno">  223</span> </div>
+<div class="line"><span class="lineno">  224</span><span class="preprocessor">#if !PRINT_CSV</span></div>
+<div class="line"><span class="lineno">  225</span>            <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#a5f79a1142214f0f279204cb6ed78263e">printInfo</a>(<span class="stringliteral">&quot;----- thetaWo - %f , phiWo - %f -----&quot;</span>,</div>
+<div class="line"><span class="lineno">  226</span>                    theta / sPi * 180.0f,</div>
+<div class="line"><span class="lineno">  227</span>                    phy / sPi * 180.0f);</div>
+<div class="line"><span class="lineno">  228</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  229</span> </div>
+<div class="line"><span class="lineno">  230</span>            Color RsUniform;</div>
+<div class="line"><span class="lineno">  231</span>            Color RsImportance;</div>
+<div class="line"><span class="lineno">  232</span>            <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#a054aea3dc636c86c50c9dbb74a3dbf42">evalIntegral</a>(test, wo, sampleCount, RsUniform, RsImportance);</div>
+<div class="line"><span class="lineno">  233</span> </div>
+<div class="line"><span class="lineno">  234</span>            Color Fprime = Color(1.0f) - omFPrime-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_fresnel.html#aecea7a3533aebf172ef9d37f05d31a03">eval</a>(cosTheta);</div>
+<div class="line"><span class="lineno">  235</span>            Color RsPlusOmFprime = RsImportance + (Color(1.0f) - Fprime);</div>
+<div class="line"><span class="lineno">  236</span>            Color RsPlusOmFprimeFurnace = Color(0.217f) * RsPlusOmFprime;</div>
+<div class="line"><span class="lineno">  237</span> </div>
+<div class="line"><span class="lineno">  238</span><span class="preprocessor">#if PRINT_CSV</span></div>
+<div class="line"><span class="lineno">  239</span>            <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#a5f79a1142214f0f279204cb6ed78263e">printInfo</a>(<span class="stringliteral">&quot;%f,%f,%f,%f,%f&quot;</span>, theta / sPi * 180.0f,</div>
+<div class="line"><span class="lineno">  240</span>                    RsImportance.r, Fprime.r, RsPlusOmFprime.r, RsPlusOmFprimeFurnace.r);</div>
+<div class="line"><span class="lineno">  241</span><span class="preprocessor">#else</span></div>
+<div class="line"><span class="lineno">  242</span>            <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#a5f79a1142214f0f279204cb6ed78263e">printInfo</a>(<span class="stringliteral">&quot;Rs importance = %f&quot;</span>, RsImportance.r);</div>
+<div class="line"><span class="lineno">  243</span>            <a class="code hl_function" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#a5f79a1142214f0f279204cb6ed78263e">printInfo</a>(<span class="stringliteral">&quot;Fprime        = %f&quot;</span>, Fprime.r);</div>
+<div class="line"><span class="lineno">  244</span>            printfInfo(<span class="stringliteral">&quot;Rs + (1-Fprime) = %f&quot;</span>, RsPlusOmFprime.r);</div>
+<div class="line"><span class="lineno">  245</span>            printfInfo(<span class="stringliteral">&quot;0.217 * (Rs + (1-Fprime)) = %f&quot;</span>, RsPlusOmFprimeFurnace.r);</div>
+<div class="line"><span class="lineno">  246</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  247</span>        }</div>
+<div class="line"><span class="lineno">  248</span>    }</div>
+<div class="line"><span class="lineno">  249</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_fresnel_html_aecea7a3533aebf172ef9d37f05d31a03"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fresnel.html#aecea7a3533aebf172ef9d37f05d31a03">moonray::shading::Fresnel::eval</a></div><div class="ttdeci">virtual scene_rdl2::math::Color eval(float cosThetaI) const =0</div><div class="ttdoc">Pass in the dot product between light direction and half-vector.</div></div>
+<div class="ttc" id="acmd_2brdf__cmd_2brdf__integrate_2main_8cc_html_a054aea3dc636c86c50c9dbb74a3dbf42"><div class="ttname"><a href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html#a054aea3dc636c86c50c9dbb74a3dbf42">evalIntegral</a></div><div class="ttdeci">static void evalIntegral(const TaskSettings &amp;test, const Vec3f &amp;wo, int sampleCount, Color &amp;integralUniform, Color &amp;integralImportance)</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html#l00184">main.cc:184</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_afab5611fd6c3c0b984fa12f088b62c20"><div class="ttname"><a href="namespacemoonray_1_1shading.html#afab5611fd6c3c0b984fa12f088b62c20">moonray::shading::computeLocalSphericalDirection</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f computeLocalSphericalDirection(float cosTheta, float sinTheta, float phi)</div><div class="ttdoc">See ReferenceFrame for local sphere parameterization (Z-up)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00215">Util.h:215</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a3992e4ffae7e24dcd5b80d5e6e802f95" name="a3992e4ffae7e24dcd5b80d5e6e802f95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3992e4ffae7e24dcd5b80d5e6e802f95">&#9670;&#160;</a></span>sTaskCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int sTaskCount = tbb::task_scheduler_init::default_num_threads() * 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html#l00076">76</a> of file <a class="el" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc_source.html">main.cc</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_1d5181f7ddc67e55cdef6ebe6c9b692d.html">cmd</a></li><li class="navelem"><a class="el" href="dir_88fae694fb28bac3e87c23435ccffe6f.html">brdf_cmd</a></li><li class="navelem"><a class="el" href="dir_a25941d93ab3cba123ae4aa7c439e158.html">brdf_integrate</a></li><li class="navelem"><a class="el" href="cmd_2brdf__cmd_2brdf__integrate_2main_8cc.html">main.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

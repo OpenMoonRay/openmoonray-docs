@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_02f99361fbe6a8c61cf6ccdd2c3bf288.html">geom</a></li><li class="navelem"><a class="el" href="dir_f871d1e4df57f93e703e4b9c83a931fa.html">prim</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_subd_mesh_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">SubdMesh.h</div></div>
 </div><!--header-->
@@ -50,7 +66,12 @@ $(function() {
 <a href="_subd_mesh_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2013-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file SubdMesh.h</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Sheng Fu</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// $Id$</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">///</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef GEOM_SUBDMESH_HAS_BEEN_INCLUDED</span></div>
@@ -264,11 +285,16 @@ $(function() {
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>};</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">//----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html">  228</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html">SubdMesh</a> : <span class="keyword">public</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html">Mesh</a></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment"></span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment">///</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">/// @class SubdMesh SubdMesh.h &lt;geom/prim/SubdMesh.h&gt;</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">/// @brief base subdivision mesh primitive internal implementation</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">/// </span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html">  228</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html">SubdMesh</a> : <span class="keyword">public</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_mesh.html">Mesh</a></div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>{</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html#a282ecfc34cf4426299c07a66b2bdec93">  232</a></span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html#a282ecfc34cf4426299c07a66b2bdec93">SubdMesh</a>(</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">    /// Constructor / Destructor</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html#a282ecfc34cf4426299c07a66b2bdec93">  232</a></span><span class="comment"></span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html#a282ecfc34cf4426299c07a66b2bdec93">SubdMesh</a>(</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        <a class="code hl_enumeration" href="classmoonray_1_1geom_1_1_subdivision_mesh.html#a0fd9432d7637d9e7175158cf9ca29e2f">SubdivisionMesh::Scheme</a> scheme,</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_subdivision_mesh.html#a56fe12e17bfaf6ce2461a47a90383424">SubdivisionMesh::FaceVertexCount</a>&amp;&amp; faceVertexCount,</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_subdivision_mesh.html#ae1c0c2d17a4dc70e1f3df64ff67b2f32">SubdivisionMesh::IndexBuffer</a>&amp;&amp; indices,</div>
@@ -300,8 +326,9 @@ $(function() {
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html#a365e2b3acd93c37c22f298b2fed53d2e">  262</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html#a365e2b3acd93c37c22f298b2fed53d2e">setParts</a>(<span class="keywordtype">size_t</span> partCount,</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>            <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_subdivision_mesh.html#adeadaf1ed664011b0b776a4c684fe36e">SubdivisionMesh::FaceToPartBuffer</a>&amp;&amp; faceToPart) = 0;</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html#a268a4e5b6d6d016fbec5e38992526ec1">  266</a></span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html#a268a4e5b6d6d016fbec5e38992526ec1">SubdMesh</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html">SubdMesh</a> &amp;other) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="comment"></span> </div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="comment">    /// explicitely disable copy constructor and assignment operator</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html#a268a4e5b6d6d016fbec5e38992526ec1">  266</a></span><span class="comment"></span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html#a268a4e5b6d6d016fbec5e38992526ec1">SubdMesh</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html">SubdMesh</a> &amp;other) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html#a90def54c3441e79245305e119602490f">  268</a></span>    <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html">SubdMesh</a> &amp;<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html#a90def54c3441e79245305e119602490f">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_subd_mesh.html">SubdMesh</a> &amp;other) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
@@ -490,9 +517,13 @@ $(function() {
 <div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_f_var_vertex_html_a2ead4a15f6e232f084bd3cc104825659"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_f_var_vertex.html#a2ead4a15f6e232f084bd3cc104825659">moonray::geom::internal::FVarVertex::FVarVertex</a></div><div class="ttdeci">FVarVertex(const T &amp;data, int vertexId)</div><div class="ttdef"><b>Definition:</b> <a href="_subd_mesh_8h_source.html#l00033">SubdMesh.h:33</a></div></div>
 <div class="ttc" id="astructmoonray_1_1geom_1_1internal_1_1_f_var_vertex_html_a32812e1af43e8a969b2c3477a0b0fbaf"><div class="ttname"><a href="structmoonray_1_1geom_1_1internal_1_1_f_var_vertex.html#a32812e1af43e8a969b2c3477a0b0fbaf">moonray::geom::internal::FVarVertex::mData</a></div><div class="ttdeci">T mData</div><div class="ttdef"><b>Definition:</b> <a href="_subd_mesh_8h_source.html#l00036">SubdMesh.h:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_0486ff0a15d68326ffdea20a24729a76.html">geom</a></li><li class="navelem"><a class="el" href="dir_5ea21d31850ee446955c5d9316b10017.html">prim</a></li><li class="navelem"><a class="el" href="_subd_mesh_8h.html">SubdMesh.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

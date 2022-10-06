@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html">BSpline</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1internal_1_1_b_spline.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classmoonray_1_1geom_1_1internal_1_1_b_spline-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::geom::internal::BSpline Class Reference</div></div>
 </div><!--header-->
@@ -277,6 +294,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acb25d3f1c8c9d08205018f8fcc1c914d inherit pub_methods_classmoonray_1_1geom_1_1internal_1_1_primitive"><td class="memItemLeft" align="right" valign="top">virtual scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html#acb25d3f1c8c9d08205018f8fcc1c914d">evalTemperature</a> (<a class="el" href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html">mcrt_common::ThreadLocalState</a> *tls, uint32_t volumeId, const <a class="el" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> &amp;pSample) const</td></tr>
 <tr class="separator:acb25d3f1c8c9d08205018f8fcc1c914d inherit pub_methods_classmoonray_1_1geom_1_1internal_1_1_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a148a787d104632b67bba0fe831d70c4b"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html#a148a787d104632b67bba0fe831d70c4b">getSpansInChain</a> (const uint32_t chain) const override</td></tr>
+<tr class="separator:a148a787d104632b67bba0fe831d70c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63cea747665bfaa6d1d7c140a77fd44a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html#a63cea747665bfaa6d1d7c140a77fd44a">evalWeights</a> (const float &amp;t, float &amp;w0, float &amp;w1, float &amp;w2, float &amp;w3) const override</td></tr>
+<tr class="separator:a63cea747665bfaa6d1d7c140a77fd44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a2cf58a4b17ffcd648e543681d42303"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html#a9a2cf58a4b17ffcd648e543681d42303">evalDerivWeights</a> (const float &amp;t, float &amp;w0, float &amp;w1, float &amp;w2) const override</td></tr>
+<tr class="separator:a9a2cf58a4b17ffcd648e543681d42303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classmoonray_1_1geom_1_1internal_1_1_curves"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmoonray_1_1geom_1_1internal_1_1_curves')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_curves.html">moonray::geom::internal::Curves</a></td></tr>
@@ -413,7 +439,223 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_b_spline_8cc_source.html#l00027">27</a> of file <a class="el" href="_b_spline_8cc_source.html">BSpline.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>                                                          :</div>
+<div class="line"><span class="lineno">   34</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a3d1c1805d6eb403a6ef2e61faccf6e98">CubicSpline</a>(type,</div>
+<div class="line"><span class="lineno">   35</span>                    subtype,</div>
+<div class="line"><span class="lineno">   36</span>                    std::move(curvesVertexCount),</div>
+<div class="line"><span class="lineno">   37</span>                    std::move(vertices),</div>
+<div class="line"><span class="lineno">   38</span>                    std::move(layerAssignmentId),</div>
+<div class="line"><span class="lineno">   39</span>                    std::move(primitiveAttributeTable))</div>
+<div class="line"><span class="lineno">   40</span>{</div>
+<div class="line"><span class="lineno">   41</span>    <span class="comment">// allocate/calculate index buffer</span></div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordtype">size_t</span> curvesCount = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#acf7880f5fc91226f446fe09397c0172d">getCurvesCount</a>();</div>
+<div class="line"><span class="lineno">   43</span>    std::vector&lt;uint32_t&gt; spansInChain(curvesCount, 0);</div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordtype">size_t</span> varyingCount = 0;</div>
+<div class="line"><span class="lineno">   45</span>    std::vector&lt;size_t&gt; faceVaryingCount;</div>
+<div class="line"><span class="lineno">   46</span>    faceVaryingCount.reserve(curvesCount);</div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordtype">size_t</span> spanCount = 0;</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; curvesCount; ++i) {</div>
+<div class="line"><span class="lineno">   49</span>        spansInChain[i] = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#af71c8a389f57147238c200e8b306ec91">mCurvesVertexCount</a>[i] - 3;</div>
+<div class="line"><span class="lineno">   50</span>        spanCount += spansInChain[i];</div>
+<div class="line"><span class="lineno">   51</span>        varyingCount += spansInChain[i] + 1;</div>
+<div class="line"><span class="lineno">   52</span>        faceVaryingCount.push_back(spansInChain[i] + 1);</div>
+<div class="line"><span class="lineno">   53</span>    }</div>
+<div class="line"><span class="lineno">   54</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#af550f23f0fbdf102f9e2d098ffafaa37">mSpanCount</a> = spanCount;</div>
+<div class="line"><span class="lineno">   55</span>    <span class="comment">// allocate/fill the index buffer</span></div>
+<div class="line"><span class="lineno">   56</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#ad2d1831d8485bf3ec817f99749bbc2f3">mIndexBuffer</a>.reserve(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#af550f23f0fbdf102f9e2d098ffafaa37">mSpanCount</a>);</div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordtype">size_t</span> vertexOffset = 0;</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; curvesCount; ++i) {</div>
+<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; spansInChain[i]; ++j) {</div>
+<div class="line"><span class="lineno">   60</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#ad2d1831d8485bf3ec817f99749bbc2f3">mIndexBuffer</a>.emplace_back(vertexOffset, i, j);</div>
+<div class="line"><span class="lineno">   61</span>            <span class="comment">// A span has 4 control points, however it shares 3</span></div>
+<div class="line"><span class="lineno">   62</span>            <span class="comment">// control points with the subsequent span. The index</span></div>
+<div class="line"><span class="lineno">   63</span>            <span class="comment">// buffer points to the first vertex in a span, so</span></div>
+<div class="line"><span class="lineno">   64</span>            <span class="comment">// we only increment the vertexOffset by 1.</span></div>
+<div class="line"><span class="lineno">   65</span>            vertexOffset += 1;</div>
+<div class="line"><span class="lineno">   66</span>        }</div>
+<div class="line"><span class="lineno">   67</span>        vertexOffset += 3;</div>
+<div class="line"><span class="lineno">   68</span>    }</div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0b2d21ef3df121422a79526b079c580e">getType</a>() == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c">LayerAssignmentId::Type::VARYING</a>) {</div>
+<div class="line"><span class="lineno">   71</span>        MNRY_ASSERT_REQUIRE(</div>
+<div class="line"><span class="lineno">   72</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">mLayerAssignmentId</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0e7e74cdce226e48699f4d43b79c1fd1">getVaryingId</a>().size() == curvesCount);</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="line"><span class="lineno">   74</span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#ab3751638c668e22d04bbc71bf2cf8585">setAttributes</a>(<a class="code hl_function" href="classmoonray_1_1shading_1_1_attributes.html#a295d09990728dfb3c91a2bca0dfc4809">Attributes::interleave</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a79ce4a3435feddc38796f12a5caebff7">mPrimitiveAttributeTable</a>,</div>
+<div class="line"><span class="lineno">   75</span>        0, curvesCount, varyingCount, faceVaryingCount, <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a8b777ecbef0538dd2fc206590183ad41">getVertexCount</a>()));</div>
+<div class="line"><span class="lineno">   76</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a0b2d21ef3df121422a79526b079c580e"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0b2d21ef3df121422a79526b079c580e">moonray::geom::LayerAssignmentId::getType</a></div><div class="ttdeci">Type getType() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00155">LayerAssignmentId.h:155</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a0e7e74cdce226e48699f4d43b79c1fd1"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a0e7e74cdce226e48699f4d43b79c1fd1">moonray::geom::LayerAssignmentId::getVaryingId</a></div><div class="ttdeci">const ContainerType &amp; getVaryingId() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00166">LayerAssignmentId.h:166</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html_a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html#a80d6a4a2907c0a0b57d0dc66ddaa8c34ac562b9f622f74fda360a799f181fe02c">moonray::geom::LayerAssignmentId::Type::VARYING</a></div><div class="ttdeci">@ VARYING</div><div class="ttdoc">each sub-primitive maps to its corresponding assignment id</div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_cubic_spline_html_a3d1c1805d6eb403a6ef2e61faccf6e98"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a3d1c1805d6eb403a6ef2e61faccf6e98">moonray::geom::internal::CubicSpline::CubicSpline</a></div><div class="ttdeci">CubicSpline(Curves::Type type, geom::Curves::SubType subtype, geom::Curves::CurvesVertexCount &amp;&amp;curvesVertexCount, geom::Curves::VertexBuffer &amp;&amp;vertices, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;primitiveAttributeTable)</div><div class="ttdef"><b>Definition:</b> <a href="_cubic_spline_8cc_source.html#l00028">CubicSpline.cc:28</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_a79ce4a3435feddc38796f12a5caebff7"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a79ce4a3435feddc38796f12a5caebff7">moonray::geom::internal::Curves::mPrimitiveAttributeTable</a></div><div class="ttdeci">shading::PrimitiveAttributeTable mPrimitiveAttributeTable</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_curves_8h_source.html#l00253">Curves.h:253</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_a8b777ecbef0538dd2fc206590183ad41"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a8b777ecbef0538dd2fc206590183ad41">moonray::geom::internal::Curves::getVertexCount</a></div><div class="ttdeci">uint32_t getVertexCount() const</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_curves_8h_source.html#l00127">Curves.h:127</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_acf7880f5fc91226f446fe09397c0172d"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#acf7880f5fc91226f446fe09397c0172d">moonray::geom::internal::Curves::getCurvesCount</a></div><div class="ttdeci">geom::Primitive::size_type getCurvesCount() const</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_curves_8h_source.html#l00102">Curves.h:102</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_ad2d1831d8485bf3ec817f99749bbc2f3"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#ad2d1831d8485bf3ec817f99749bbc2f3">moonray::geom::internal::Curves::mIndexBuffer</a></div><div class="ttdeci">std::vector&lt; IndexData &gt; mIndexBuffer</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_curves_8h_source.html#l00251">Curves.h:251</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_af550f23f0fbdf102f9e2d098ffafaa37"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#af550f23f0fbdf102f9e2d098ffafaa37">moonray::geom::internal::Curves::mSpanCount</a></div><div class="ttdeci">uint32_t mSpanCount</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_curves_8h_source.html#l00252">Curves.h:252</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_af71c8a389f57147238c200e8b306ec91"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#af71c8a389f57147238c200e8b306ec91">moonray::geom::internal::Curves::mCurvesVertexCount</a></div><div class="ttdeci">geom::Curves::CurvesVertexCount mCurvesVertexCount</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_curves_8h_source.html#l00249">Curves.h:249</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_a219a79e9a4079197f79aff19f5cf889e"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#a219a79e9a4079197f79aff19f5cf889e">moonray::geom::internal::NamedPrimitive::mLayerAssignmentId</a></div><div class="ttdeci">LayerAssignmentId mLayerAssignmentId</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00148">NamedPrimitive.h:148</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_named_primitive_html_ab3751638c668e22d04bbc71bf2cf8585"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_named_primitive.html#ab3751638c668e22d04bbc71bf2cf8585">moonray::geom::internal::NamedPrimitive::setAttributes</a></div><div class="ttdeci">void setAttributes(std::unique_ptr&lt; shading::Attributes &gt; &amp;&amp;attributes)</div><div class="ttdef"><b>Definition:</b> <a href="_named_primitive_8h_source.html#l00102">NamedPrimitive.h:102</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attributes_html_a295d09990728dfb3c91a2bca0dfc4809"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attributes.html#a295d09990728dfb3c91a2bca0dfc4809">moonray::shading::Attributes::interleave</a></div><div class="ttdeci">static std::unique_ptr&lt; Attributes &gt; interleave(const PrimitiveAttributeTable &amp;, size_t numParts, size_t numUniforms, size_t numVaryings, const std::vector&lt; size_type &gt; &amp;numFaceVaryings, size_t numVertices)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2bvh_2shading_2attributes_8cc_source.html#l00041">Attributes.cc:41</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9a2cf58a4b17ffcd648e543681d42303" name="a9a2cf58a4b17ffcd648e543681d42303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a2cf58a4b17ffcd648e543681d42303">&#9670;&#160;</a></span>evalDerivWeights()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void moonray::geom::internal::BSpline::evalDerivWeights </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>w0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>w1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>w2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a2b1b396d5b77c3c3afdabce58d2d1caa">moonray::geom::internal::CubicSpline</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_b_spline_8h_source.html#l00062">62</a> of file <a class="el" href="_b_spline_8h_source.html">BSpline.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>    {</div>
+<div class="line"><span class="lineno">   64</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> s = 1.f - t;</div>
+<div class="line"><span class="lineno">   65</span>        w0 = 0.5f * s * s;</div>
+<div class="line"><span class="lineno">   66</span>        w1 = s * t + 0.5f;</div>
+<div class="line"><span class="lineno">   67</span>        w2 = 0.5f * t * t;</div>
+<div class="line"><span class="lineno">   68</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a63cea747665bfaa6d1d7c140a77fd44a" name="a63cea747665bfaa6d1d7c140a77fd44a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63cea747665bfaa6d1d7c140a77fd44a">&#9670;&#160;</a></span>evalWeights()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void moonray::geom::internal::BSpline::evalWeights </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>w0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>w1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>w2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>w3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a00de0aa46855f9c87db1a6ac446e8caa">moonray::geom::internal::CubicSpline</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_b_spline_8h_source.html#l00049">49</a> of file <a class="el" href="_b_spline_8h_source.html">BSpline.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>    {</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> s = 1.f - t;</div>
+<div class="line"><span class="lineno">   52</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> oneSixth(1.0f/6.0f);</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>        w0 = oneSixth * s * s * s;</div>
+<div class="line"><span class="lineno">   55</span>        w1 = 0.5f * s * (s * t + 1.0f) + oneSixth;</div>
+<div class="line"><span class="lineno">   56</span>        w2 = 0.5f * t * (s * t + 1.0f) + oneSixth;</div>
+<div class="line"><span class="lineno">   57</span>        w3 = oneSixth * t * t * t;</div>
+<div class="line"><span class="lineno">   58</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a148a787d104632b67bba0fe831d70c4b" name="a148a787d104632b67bba0fe831d70c4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a148a787d104632b67bba0fe831d70c4b">&#9670;&#160;</a></span>getSpansInChain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint32_t moonray::geom::internal::BSpline::getSpansInChain </td>
+          <td>(</td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>chain</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html#a95d52856f84c71169839e6b2248e2d05">moonray::geom::internal::CubicSpline</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_b_spline_8h_source.html#l00043">43</a> of file <a class="el" href="_b_spline_8h_source.html">BSpline.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>    {</div>
+<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#af71c8a389f57147238c200e8b306ec91">mCurvesVertexCount</a>[chain] - 3;</div>
+<div class="line"><span class="lineno">   46</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -421,9 +663,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/geom/prim/<a class="el" href="_b_spline_8cc_source.html">BSpline.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html">BSpline</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

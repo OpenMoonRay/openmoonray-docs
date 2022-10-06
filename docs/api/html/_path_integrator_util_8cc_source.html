@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_dea9bae4dce33263b807b45b03566d1e.html">integrator</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_path_integrator_util_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">PathIntegratorUtil.cc</div></div>
 </div><!--header-->
@@ -51,8 +67,9 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2002-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @author Eric Tabellion</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"></span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_path_integrator_util_8h.html">PathIntegratorUtil.h</a>&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="_intersection_8h.html">rendering/bvh/shading/Intersection.h</a>&gt;</span></div>
@@ -75,8 +92,10 @@ $(function() {
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#if DEBUG_BSDF_SAMPLES</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">//#include &quot;/usr/home/kjeffery/tools/PrimiView.h&quot;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">//#define FORCE_SKIP_RAY_DIFFERENTIALS</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"></span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">/// Defining this avoid rays differential computations. Mainly useful for</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">/// profiling. TODO: put this on a runtime flag?</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"></span><span class="comment">//#define FORCE_SKIP_RAY_DIFFERENTIALS</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">// using namespace scene_rdl2::math; // can&#39;t use this as it breaks openvdb in clang.</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacemoonray_1_1shading.html">moonray::shading</a>;</div>
@@ -465,7 +484,7 @@ $(function() {
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span><span class="comment">//-----------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#a6a9cb1dd63a6d2a263d87dacd21098d6">  422</a></span><a class="code hl_function" href="namespacemoonray_1_1pbr.html#a6a9cb1dd63a6d2a263d87dacd21098d6">applyRussianRoulette</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_bsdf_sampler.html">BsdfSampler</a> &amp;bSampler, <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_bsdf_sample.html">BsdfSample</a> *bsmp,</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#a6a9cb1dd63a6d2a263d87dacd21098d6">  422</a></span><a class="code hl_function" href="namespacemoonray_1_1pbr.html#a59b4e7a860b07e69d42859fe6bbe75af">applyRussianRoulette</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_bsdf_sampler.html">BsdfSampler</a> &amp;bSampler, <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_bsdf_sample.html">BsdfSample</a> *bsmp,</div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>        <span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_subpixel.html">Subpixel</a> &amp;sp, <span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_path_vertex.html">PathVertex</a> &amp;pv, <span class="keywordtype">unsigned</span> sequenceID,</div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>        <span class="keywordtype">float</span> threshold, <span class="keywordtype">float</span> invThreshold)</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>{</div>
@@ -510,7 +529,7 @@ $(function() {
 <div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span> </div>
 <div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span> </div>
 <div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00467" name="l00467"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#aafafb9c22f6c84d285a650c9c6b036a3">  467</a></span><a class="code hl_function" href="namespacemoonray_1_1pbr.html#a6a9cb1dd63a6d2a263d87dacd21098d6">applyRussianRoulette</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_light_set_sampler.html">LightSetSampler</a> &amp;lSampler, <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_light_sample.html">LightSample</a> *lsmp,</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#aafafb9c22f6c84d285a650c9c6b036a3">  467</a></span><a class="code hl_function" href="namespacemoonray_1_1pbr.html#a59b4e7a860b07e69d42859fe6bbe75af">applyRussianRoulette</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_light_set_sampler.html">LightSetSampler</a> &amp;lSampler, <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_light_sample.html">LightSample</a> *lsmp,</div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>        <span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_subpixel.html">Subpixel</a> &amp;sp, <span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_path_vertex.html">PathVertex</a> &amp;pv, <span class="keywordtype">unsigned</span> sequenceID,</div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>        <span class="keywordtype">float</span> threshold, <span class="keywordtype">float</span> invThreshold)</div>
 <div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>{</div>
@@ -690,7 +709,7 @@ $(function() {
 <div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span><span class="comment">// Note that [1] suggests a distribution of [0.5, 0.25, 0.25] whereas I find</span></div>
 <div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span><span class="comment">// [0.75, 0.125, 0.125] works better</span></div>
 <div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span><span class="comment">// 75% to N &amp; the rest divided equally between T &amp; B</span></div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span><span class="keyword">static</span> std::array&lt;float, 3&gt; sBssrdfAxisProbabilities = { 0.75f, 0.125f, 0.125f };</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#a877c52a0cd6319500ece838cc237eeb7">  647</a></span><span class="keyword">static</span> std::array&lt;float, 3&gt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a877c52a0cd6319500ece838cc237eeb7">sBssrdfAxisProbabilities</a> = { 0.75f, 0.125f, 0.125f };</div>
 <div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span> </div>
 <div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span><span class="comment">// Selects an axis for projection</span></div>
 <div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span><span class="keywordtype">int</span></div>
@@ -699,14 +718,14 @@ $(function() {
 <div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>                               scene_rdl2::math::Vec3f &amp;directionProj)</div>
 <div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>{</div>
 <div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>    <span class="comment">// We divide the T and B probabilities further between positive and negative options</span></div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>    std::array&lt;float, 5&gt; axisProbabilities   = {sBssrdfAxisProbabilities[0],</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>                                                sBssrdfAxisProbabilities[1]/2.0f,</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>                                                sBssrdfAxisProbabilities[1]/2.0f,</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>                                                sBssrdfAxisProbabilities[2]/2.0f,</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>                                                sBssrdfAxisProbabilities[2]/2.0f};</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>    std::array&lt;float, 5&gt; axisProbabilities   = {<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a877c52a0cd6319500ece838cc237eeb7">sBssrdfAxisProbabilities</a>[0],</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>                                                <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a877c52a0cd6319500ece838cc237eeb7">sBssrdfAxisProbabilities</a>[1]/2.0f,</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>                                                <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a877c52a0cd6319500ece838cc237eeb7">sBssrdfAxisProbabilities</a>[1]/2.0f,</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>                                                <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a877c52a0cd6319500ece838cc237eeb7">sBssrdfAxisProbabilities</a>[2]/2.0f,</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>                                                <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a877c52a0cd6319500ece838cc237eeb7">sBssrdfAxisProbabilities</a>[2]/2.0f};</div>
 <div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span> </div>
 <div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>    std::array&lt;float, 5&gt; axisCDF;</div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>    axisCDF[0] = sBssrdfAxisProbabilities[0];</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>    axisCDF[0] = <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a877c52a0cd6319500ece838cc237eeb7">sBssrdfAxisProbabilities</a>[0];</div>
 <div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; 5; i++) {</div>
 <div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>        axisCDF[i] = axisProbabilities[i] + axisCDF[i-1];</div>
 <div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>    }</div>
@@ -784,9 +803,9 @@ $(function() {
 <div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    <span class="keywordtype">float</span> pdfX = bssrdf.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bssrdf.html#a7cead5ae5993add919eed6b22b1d89ff">pdfLocal</a>(rX);</div>
 <div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>    <span class="keywordtype">float</span> pdfY = bssrdf.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bssrdf.html#a7cead5ae5993add919eed6b22b1d89ff">pdfLocal</a>(rY);</div>
 <div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span> </div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    <span class="keywordtype">float</span> misWeight  = sBssrdfAxisProbabilities[0] * pdfN * nN;</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>    misWeight       += sBssrdfAxisProbabilities[1] * pdfX * nX;</div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    misWeight       += sBssrdfAxisProbabilities[2] * pdfY * nY;</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    <span class="keywordtype">float</span> misWeight  = <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a877c52a0cd6319500ece838cc237eeb7">sBssrdfAxisProbabilities</a>[0] * pdfN * nN;</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>    misWeight       += <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a877c52a0cd6319500ece838cc237eeb7">sBssrdfAxisProbabilities</a>[1] * pdfX * nX;</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    misWeight       += <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a877c52a0cd6319500ece838cc237eeb7">sBssrdfAxisProbabilities</a>[2] * pdfY * nY;</div>
 <div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span> </div>
 <div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    <span class="keywordflow">if</span> (!scene_rdl2::math::isZero(misWeight)) {</div>
 <div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>        <span class="keywordflow">return</span> 1.0f/misWeight;</div>
@@ -1425,13 +1444,14 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a2f3d29f9bda890ad5268a1d28355f424"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a2f3d29f9bda890ad5268a1d28355f424">moonray::pbr::powerHeuristic</a></div><div class="ttdeci">finline float powerHeuristic(float f, float g)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2core_2util_8h_source.html#l00203">Util.h:203</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a35ab2de31332771e50aa76d52f2583be"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a35ab2de31332771e50aa76d52f2583be">moonray::pbr::aovAddToBundledQueue</a></div><div class="ttdeci">void aovAddToBundledQueue(pbr::TLState *pbrTls, const AovSchema &amp;aovSchema, const shading::Intersection &amp;isect, const mcrt_common::RayDifferential &amp;ray, const uint32_t aovTypeMask, const float *aovValues, uint32_t pixel, uint32_t deepDataHandle, uint32_t film)</div><div class="ttdef"><b>Definition:</b> <a href="_aov_8cc_source.html#l00442">Aov.cc:442</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a58c8895bb7c07402cf6ddf16183f9f05"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a58c8895bb7c07402cf6ddf16183f9f05">moonray::pbr::CPP_addIncoherentRayQueueEntries</a></div><div class="ttdeci">void CPP_addIncoherentRayQueueEntries(pbr::TLState *pbrTls, const RayStatev *rayStatesv, unsigned numRayStates, const unsigned *indices)</div><div class="ttdef"><b>Definition:</b> <a href="_path_integrator_util_8cc_source.html#l00979">PathIntegratorUtil.cc:979</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a59b4e7a860b07e69d42859fe6bbe75af"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a59b4e7a860b07e69d42859fe6bbe75af">moonray::pbr::applyRussianRoulette</a></div><div class="ttdeci">static bool applyRussianRoulette(float r, float threshold, float invThreshold, int nonMirrorDepth, float lum, scene_rdl2::math::Color &amp;c)</div><div class="ttdef"><b>Definition:</b> <a href="_path_integrator_one_sampler_8cc_source.html#l00112">PathIntegratorOneSampler.cc:112</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a65eb285dc3b0310a3804e5cd8b70d5eb"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a65eb285dc3b0310a3804e5cd8b70d5eb">moonray::pbr::CPP_isIntegratorAccumulatorRunning</a></div><div class="ttdeci">bool CPP_isIntegratorAccumulatorRunning(pbr::TLState *pbrTls)</div><div class="ttdef"><b>Definition:</b> <a href="_path_integrator_util_8cc_source.html#l00829">PathIntegratorUtil.cc:829</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1pbr_html_a6a9cb1dd63a6d2a263d87dacd21098d6"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a6a9cb1dd63a6d2a263d87dacd21098d6">moonray::pbr::applyRussianRoulette</a></div><div class="ttdeci">void applyRussianRoulette(const BsdfSampler &amp;bSampler, BsdfSample *bsmp, const Subpixel &amp;sp, const PathVertex &amp;pv, unsigned sequenceID, float threshold, float invThreshold)</div><div class="ttdef"><b>Definition:</b> <a href="_path_integrator_util_8cc_source.html#l00422">PathIntegratorUtil.cc:422</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a6ebbc1f7aedc24915c5415926f115b39"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a6ebbc1f7aedc24915c5415926f115b39">moonray::pbr::calculateShadowFalloff</a></div><div class="ttdeci">scene_rdl2::math::Color calculateShadowFalloff(const Light *light, float distToLight, const scene_rdl2::math::Color unoccludedColor)</div><div class="ttdef"><b>Definition:</b> <a href="_path_integrator_util_8cc_source.html#l00787">PathIntegratorUtil.cc:787</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a700cdac9d1494de8f2041b95c641045e"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a700cdac9d1494de8f2041b95c641045e">moonray::pbr::getFilm</a></div><div class="ttdeci">finline uint32_t getFilm(uint32_t tilePassAndFilm)</div><div class="ttdef"><b>Definition:</b> <a href="pbr_2_types_8h_source.html#l00083">Types.h:83</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a73ab333f8362615c477161a5d0886956"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a73ab333f8362615c477161a5d0886956">moonray::pbr::CPP_addRadianceQueueEntries</a></div><div class="ttdeci">void CPP_addRadianceQueueEntries(pbr::TLState *pbrTls, const BundledRadiancev *radiancesv, unsigned numRadiances, const unsigned *indices)</div><div class="ttdef"><b>Definition:</b> <a href="_path_integrator_util_8cc_source.html#l01126">PathIntegratorUtil.cc:1126</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a8056ddc360a57040c2521ef09327ac41"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a8056ddc360a57040c2521ef09327ac41">moonray::pbr::bssrdfOffsetLocalToGlobal</a></div><div class="ttdeci">scene_rdl2::math::Vec3f bssrdfOffsetLocalToGlobal(const scene_rdl2::math::ReferenceFrame &amp;localF, int axisIndex, const scene_rdl2::math::Vec3f &amp;localOffset)</div><div class="ttdef"><b>Definition:</b> <a href="_path_integrator_util_8cc_source.html#l00698">PathIntegratorUtil.cc:698</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a83bd50772bf411595944827ab9db3fc0"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a83bd50772bf411595944827ab9db3fc0">moonray::pbr::CPP_addOcclusionQueueEntries</a></div><div class="ttdeci">void CPP_addOcclusionQueueEntries(pbr::TLState *pbrTls, const BundledOcclRayv *occlRaysv, unsigned numOcclRays, const unsigned *indices)</div><div class="ttdef"><b>Definition:</b> <a href="_path_integrator_util_8cc_source.html#l01024">PathIntegratorUtil.cc:1024</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a877c52a0cd6319500ece838cc237eeb7"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a877c52a0cd6319500ece838cc237eeb7">moonray::pbr::sBssrdfAxisProbabilities</a></div><div class="ttdeci">static std::array&lt; float, 3 &gt; sBssrdfAxisProbabilities</div><div class="ttdef"><b>Definition:</b> <a href="_path_integrator_util_8cc_source.html#l00647">PathIntegratorUtil.cc:647</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a8e2f3fbe9d22304fbc888e3ca1e722c2"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a8e2f3fbe9d22304fbc888e3ca1e722c2">moonray::pbr::CPP_isIspcAccumulatorRunning</a></div><div class="ttdeci">bool CPP_isIspcAccumulatorRunning(pbr::TLState *pbrTls)</div><div class="ttdef"><b>Definition:</b> <a href="_path_integrator_util_8cc_source.html#l00835">PathIntegratorUtil.cc:835</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a915c7b7f63b0f443120cf7e865296a12a43d3b6e9210c38d15dcf7e808c8a56f5"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12a43d3b6e9210c38d15dcf7e808c8a56f5">moonray::pbr::SequenceType::RussianRouletteLight</a></div><div class="ttdeci">@ RussianRouletteLight</div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a915c7b7f63b0f443120cf7e865296a12a8c71a88c9b167726daad04ec4af14a71"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12a8c71a88c9b167726daad04ec4af14a71">moonray::pbr::SequenceType::LightFilter</a></div><div class="ttdeci">@ LightFilter</div></div>
@@ -1511,9 +1531,13 @@ $(function() {
 <div class="ttc" id="astructmoonray_1_1pbr_1_1_ray_statev_html"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_ray_statev.html">moonray::pbr::RayStatev</a></div><div class="ttdef"><b>Definition:</b> <a href="_ray_state_8h_source.html#l00059">RayState.h:60</a></div></div>
 <div class="ttc" id="astructmoonray_1_1pbr_1_1_subpixel_html"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_subpixel.html">moonray::pbr::Subpixel</a></div><div class="ttdef"><b>Definition:</b> <a href="_ray_state_8h_source.html#l00031">RayState.h:31</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_2ababe07dd619b812c4a3817d8ef2eb2.html">integrator</a></li><li class="navelem"><a class="el" href="_path_integrator_util_8cc.html">PathIntegratorUtil.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

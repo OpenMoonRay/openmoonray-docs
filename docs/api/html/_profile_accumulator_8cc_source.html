@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae3c302d167a7f3c31858fcdeba382aa.html">mcrt_common</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_profile_accumulator_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">ProfileAccumulator.cc</div></div>
 </div><!--header-->
@@ -68,31 +84,31 @@ $(function() {
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1mcrt__common.html#a9d2bdcc41de48e938a97f855b328c4f5">   19</a></span><span class="keywordtype">bool</span> <a class="code hl_variable" href="namespacemoonray_1_1mcrt__common.html#a9d2bdcc41de48e938a97f855b328c4f5">gAccumulatorsActive</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1mcrt__common.html#ab08805c1c0419089480617e5b58bae4e">   20</a></span><a class="code hl_function" href="namespacemoonray_1_1mcrt__common.html#ab08805c1c0419089480617e5b58bae4e">MNRY_DURING_ASSERTS</a>(<span class="keyword">alignas</span>(CACHE_LINE_SIZE) std::atomic_int gNumAccumulatorsActive);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03.html">   22</a></span><span class="keyword">namespace</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">struct </span>Private</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html">   25</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html">Private</a></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    Private() :</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_variable" href="_profile_accumulator_8cc.html#a617146234fe4e7ac2a1b2c08100ca969">mRoot</a>(nullptr),</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_variable" href="_profile_accumulator_8cc.html#ac73376540a8ec9e5bf1fa86943c5f5d4">mNumThreads</a>(0),</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_variable" href="_profile_accumulator_8cc.html#aee7789c1658214d1f8971d8081790e32">mNumTLS</a>(0) {}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html#ae205d005121f53e3f823decc7f7cf82d">   27</a></span>    <a class="code hl_function" href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html#ae205d005121f53e3f823decc7f7cf82d">Private</a>() :</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        mRoot(nullptr),</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        mNumThreads(0),</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        mNumTLS(0) {}</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="_profile_accumulator_8cc.html#a617146234fe4e7ac2a1b2c08100ca969">   32</a></span>    Accumulator *<a class="code hl_variable" href="_profile_accumulator_8cc.html#a617146234fe4e7ac2a1b2c08100ca969">mRoot</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html#ae3334d1560cf70647fc9e6537c7980b8">   32</a></span>    <a class="code hl_struct" href="structmoonray_1_1mcrt__common_1_1_accumulator.html">Accumulator</a> *<a class="code hl_variable" href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html#ae3334d1560cf70647fc9e6537c7980b8">mRoot</a>;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="_profile_accumulator_8cc.html#ac73376540a8ec9e5bf1fa86943c5f5d4">   34</a></span>    <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_profile_accumulator_8cc.html#ac73376540a8ec9e5bf1fa86943c5f5d4">mNumThreads</a>;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="_profile_accumulator_8cc.html#aee7789c1658214d1f8971d8081790e32">   35</a></span>    <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_profile_accumulator_8cc.html#aee7789c1658214d1f8971d8081790e32">mNumTLS</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html#a033008c9cd8728647cf222782fc3dfb1">   34</a></span>    <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html#a033008c9cd8728647cf222782fc3dfb1">mNumThreads</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html#adc22f5e407226a988c2bd668d0d371f3">   35</a></span>    <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html#adc22f5e407226a988c2bd668d0d371f3">mNumTLS</a>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="_profile_accumulator_8cc.html#a40c67eb9e0bcf163cda82098cc90657f">   37</a></span>    std::vector&lt;Accumulator *&gt; <a class="code hl_variable" href="_profile_accumulator_8cc.html#a40c67eb9e0bcf163cda82098cc90657f">mAccumulators</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html#a27f7dce4d6c49a7906790a481fbf9c50">   37</a></span>    std::vector&lt;Accumulator *&gt; <a class="code hl_variable" href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html#a27f7dce4d6c49a7906790a481fbf9c50">mAccumulators</a>;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>Private gPrivate;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03.html#a77b00a59c9cdd9456f2a06044259926c">   40</a></span><a class="code hl_struct" href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html">Private</a> gPrivate;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}   <span class="comment">// End of anon namespace.</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">//-----------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>Accumulator *</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><a class="code hl_struct" href="structmoonray_1_1mcrt__common_1_1_accumulator.html">Accumulator</a> *</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1mcrt__common.html#ade53035b4b2d5c0d375e7b8a8b955689">   47</a></span><a class="code hl_function" href="namespacemoonray_1_1mcrt__common.html#ade53035b4b2d5c0d375e7b8a8b955689">initAccumulators</a>(<span class="keywordtype">unsigned</span> numThreads, <span class="keywordtype">unsigned</span> numTLS)</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    MNRY_ASSERT(gPrivate.mRoot == <span class="keyword">nullptr</span> &amp;&amp; numThreads &gt; 0 &amp;&amp; numTLS &gt;= numThreads);</div>
@@ -340,10 +356,6 @@ $(function() {
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="ttc" id="a_profile_accumulator_8cc_html_a40c67eb9e0bcf163cda82098cc90657f"><div class="ttname"><a href="_profile_accumulator_8cc.html#a40c67eb9e0bcf163cda82098cc90657f">mAccumulators</a></div><div class="ttdeci">std::vector&lt; Accumulator * &gt; mAccumulators</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8cc_source.html#l00037">ProfileAccumulator.cc:37</a></div></div>
-<div class="ttc" id="a_profile_accumulator_8cc_html_a617146234fe4e7ac2a1b2c08100ca969"><div class="ttname"><a href="_profile_accumulator_8cc.html#a617146234fe4e7ac2a1b2c08100ca969">mRoot</a></div><div class="ttdeci">Accumulator * mRoot</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8cc_source.html#l00032">ProfileAccumulator.cc:32</a></div></div>
-<div class="ttc" id="a_profile_accumulator_8cc_html_ac73376540a8ec9e5bf1fa86943c5f5d4"><div class="ttname"><a href="_profile_accumulator_8cc.html#ac73376540a8ec9e5bf1fa86943c5f5d4">mNumThreads</a></div><div class="ttdeci">unsigned mNumThreads</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8cc_source.html#l00034">ProfileAccumulator.cc:34</a></div></div>
-<div class="ttc" id="a_profile_accumulator_8cc_html_aee7789c1658214d1f8971d8081790e32"><div class="ttname"><a href="_profile_accumulator_8cc.html#aee7789c1658214d1f8971d8081790e32">mNumTLS</a></div><div class="ttdeci">unsigned mNumTLS</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8cc_source.html#l00035">ProfileAccumulator.cc:35</a></div></div>
 <div class="ttc" id="a_profile_accumulator_8h_html"><div class="ttname"><a href="_profile_accumulator_8h.html">ProfileAccumulator.h</a></div></div>
 <div class="ttc" id="amoonray__static__check_8h_html"><div class="ttname"><a href="moonray__static__check_8h.html">moonray_static_check.h</a></div></div>
 <div class="ttc" id="amoonray__static__check_8h_html_a767999960d41541954eb2e6e4157e9d9"><div class="ttname"><a href="moonray__static__check_8h.html#a767999960d41541954eb2e6e4157e9d9">MOONRAY_THREADSAFE_STATIC_WRITE</a></div><div class="ttdeci">#define MOONRAY_THREADSAFE_STATIC_WRITE(CODE)</div><div class="ttdef"><b>Definition:</b> <a href="moonray__static__check_8h_source.html#l00112">moonray_static_check.h:112</a></div></div>
@@ -377,10 +389,20 @@ $(function() {
 <div class="ttc" id="astructmoonray_1_1mcrt__common_1_1_accumulator_result_html_a7ac2bfe6d41146f77a7577a6931255fa"><div class="ttname"><a href="structmoonray_1_1mcrt__common_1_1_accumulator_result.html#a7ac2bfe6d41146f77a7577a6931255fa">moonray::mcrt_common::AccumulatorResult::mTimePerThread</a></div><div class="ttdeci">double mTimePerThread</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8h_source.html#l00081">ProfileAccumulator.h:81</a></div></div>
 <div class="ttc" id="astructmoonray_1_1mcrt__common_1_1_thread_local_accumulator_html_a36556a304ab283b66a07852a8346fa8c"><div class="ttname"><a href="structmoonray_1_1mcrt__common_1_1_thread_local_accumulator.html#a36556a304ab283b66a07852a8346fa8c">moonray::mcrt_common::ThreadLocalAccumulator::mTotalTime</a></div><div class="ttdeci">uint64_t mTotalTime</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8h_source.html#l00235">ProfileAccumulator.h:235</a></div></div>
 <div class="ttc" id="astructmoonray_1_1mcrt__common_1_1_thread_local_accumulator_html_af952ccb2f9c1af65dc73dccd0849a517"><div class="ttname"><a href="structmoonray_1_1mcrt__common_1_1_thread_local_accumulator.html#af952ccb2f9c1af65dc73dccd0849a517">moonray::mcrt_common::ThreadLocalAccumulator::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8h_source.html#l00192">ProfileAccumulator.h:192</a></div></div>
+<div class="ttc" id="astructmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private_html"><div class="ttname"><a href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html">moonray::mcrt_common::anonymous_namespace{ProfileAccumulator.cc}::Private</a></div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8cc_source.html#l00025">ProfileAccumulator.cc:26</a></div></div>
+<div class="ttc" id="astructmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private_html_a033008c9cd8728647cf222782fc3dfb1"><div class="ttname"><a href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html#a033008c9cd8728647cf222782fc3dfb1">moonray::mcrt_common::anonymous_namespace{ProfileAccumulator.cc}::Private::mNumThreads</a></div><div class="ttdeci">unsigned mNumThreads</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8cc_source.html#l00034">ProfileAccumulator.cc:34</a></div></div>
+<div class="ttc" id="astructmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private_html_a27f7dce4d6c49a7906790a481fbf9c50"><div class="ttname"><a href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html#a27f7dce4d6c49a7906790a481fbf9c50">moonray::mcrt_common::anonymous_namespace{ProfileAccumulator.cc}::Private::mAccumulators</a></div><div class="ttdeci">std::vector&lt; Accumulator * &gt; mAccumulators</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8cc_source.html#l00037">ProfileAccumulator.cc:37</a></div></div>
+<div class="ttc" id="astructmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private_html_adc22f5e407226a988c2bd668d0d371f3"><div class="ttname"><a href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html#adc22f5e407226a988c2bd668d0d371f3">moonray::mcrt_common::anonymous_namespace{ProfileAccumulator.cc}::Private::mNumTLS</a></div><div class="ttdeci">unsigned mNumTLS</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8cc_source.html#l00035">ProfileAccumulator.cc:35</a></div></div>
+<div class="ttc" id="astructmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private_html_ae205d005121f53e3f823decc7f7cf82d"><div class="ttname"><a href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html#ae205d005121f53e3f823decc7f7cf82d">moonray::mcrt_common::anonymous_namespace{ProfileAccumulator.cc}::Private::Private</a></div><div class="ttdeci">Private()</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8cc_source.html#l00027">ProfileAccumulator.cc:27</a></div></div>
+<div class="ttc" id="astructmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private_html_ae3334d1560cf70647fc9e6537c7980b8"><div class="ttname"><a href="structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html#ae3334d1560cf70647fc9e6537c7980b8">moonray::mcrt_common::anonymous_namespace{ProfileAccumulator.cc}::Private::mRoot</a></div><div class="ttdeci">Accumulator * mRoot</div><div class="ttdef"><b>Definition:</b> <a href="_profile_accumulator_8cc_source.html#l00032">ProfileAccumulator.cc:32</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_e2fd80e2f4e6b7185759f42acd6fa819.html">mcrt_common</a></li><li class="navelem"><a class="el" href="_profile_accumulator_8cc.html">ProfileAccumulator.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

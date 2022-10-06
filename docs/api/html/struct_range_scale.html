@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,6 +43,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('struct_range_scale.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
@@ -52,16 +72,16 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a205ddb73a5c918b30c4e1ea99d3fbb55"><td class="memTemplParams" colspan="2">template&lt;typename U , typename FromRange , typename ToRange &gt; </td></tr>
-<tr class="memitem:a205ddb73a5c918b30c4e1ea99d3fbb55"><td class="memTemplItemLeft" align="right" valign="top">static U&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_range_scale.html#a205ddb73a5c918b30c4e1ea99d3fbb55">scale</a> (U <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) noexcept</td></tr>
+<tr class="memitem:a205ddb73a5c918b30c4e1ea99d3fbb55"><td class="memTemplItemLeft" align="right" valign="top">static U&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_range_scale.html#a205ddb73a5c918b30c4e1ea99d3fbb55">scale</a> (U x) noexcept</td></tr>
 <tr class="separator:a205ddb73a5c918b30c4e1ea99d3fbb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab4418684118c29ec2bdfe10f53ab74d"><td class="memTemplParams" colspan="2">template&lt;typename U , typename FromRange &gt; </td></tr>
-<tr class="memitem:aab4418684118c29ec2bdfe10f53ab74d"><td class="memTemplItemLeft" align="right" valign="top">static U&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_range_scale.html#aab4418684118c29ec2bdfe10f53ab74d">scale</a> (U <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, U toMin, U toMax) noexcept</td></tr>
+<tr class="memitem:aab4418684118c29ec2bdfe10f53ab74d"><td class="memTemplItemLeft" align="right" valign="top">static U&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_range_scale.html#aab4418684118c29ec2bdfe10f53ab74d">scale</a> (U x, U toMin, U toMax) noexcept</td></tr>
 <tr class="separator:aab4418684118c29ec2bdfe10f53ab74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a205ddb73a5c918b30c4e1ea99d3fbb55"><td class="memTemplParams" colspan="2">template&lt;typename U , typename FromRange , typename ToRange &gt; </td></tr>
-<tr class="memitem:a205ddb73a5c918b30c4e1ea99d3fbb55"><td class="memTemplItemLeft" align="right" valign="top">static U&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_range_scale.html#a205ddb73a5c918b30c4e1ea99d3fbb55">scale</a> (U <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) noexcept</td></tr>
+<tr class="memitem:a205ddb73a5c918b30c4e1ea99d3fbb55"><td class="memTemplItemLeft" align="right" valign="top">static U&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_range_scale.html#a205ddb73a5c918b30c4e1ea99d3fbb55">scale</a> (U x) noexcept</td></tr>
 <tr class="separator:a205ddb73a5c918b30c4e1ea99d3fbb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab4418684118c29ec2bdfe10f53ab74d"><td class="memTemplParams" colspan="2">template&lt;typename U , typename FromRange &gt; </td></tr>
-<tr class="memitem:aab4418684118c29ec2bdfe10f53ab74d"><td class="memTemplItemLeft" align="right" valign="top">static U&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_range_scale.html#aab4418684118c29ec2bdfe10f53ab74d">scale</a> (U <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, U toMin, U toMax) noexcept</td></tr>
+<tr class="memitem:aab4418684118c29ec2bdfe10f53ab74d"><td class="memTemplItemLeft" align="right" valign="top">static U&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_range_scale.html#aab4418684118c29ec2bdfe10f53ab74d">scale</a> (U x, U toMin, U toMax) noexcept</td></tr>
 <tr class="separator:aab4418684118c29ec2bdfe10f53ab74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -95,7 +115,11 @@ template&lt;typename U , typename FromRange , typename ToRange &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00025">25</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   26</span>    {</div>
+<div class="line"><span class="lineno">   27</span>        <span class="keyword">const</span> U p = (x - FromRange::min)/(FromRange::max - FromRange::min);</div>
+<div class="line"><span class="lineno">   28</span>        <span class="keywordflow">return</span> p * (ToRange::max - ToRange::min) + ToRange::min;</div>
+<div class="line"><span class="lineno">   29</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a205ddb73a5c918b30c4e1ea99d3fbb55" name="a205ddb73a5c918b30c4e1ea99d3fbb55"></a>
@@ -125,7 +149,11 @@ template&lt;typename U , typename FromRange , typename ToRange &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00025">25</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   26</span>    {</div>
+<div class="line"><span class="lineno">   27</span>        <span class="keyword">const</span> U p = (x - FromRange::min)/(FromRange::max - FromRange::min);</div>
+<div class="line"><span class="lineno">   28</span>        <span class="keywordflow">return</span> p * (ToRange::max - ToRange::min) + ToRange::min;</div>
+<div class="line"><span class="lineno">   29</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aab4418684118c29ec2bdfe10f53ab74d" name="aab4418684118c29ec2bdfe10f53ab74d"></a>
@@ -171,7 +199,11 @@ template&lt;typename U , typename FromRange &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dynamic_hyper_grid_8h_source.html#l00032">32</a> of file <a class="el" href="_dynamic_hyper_grid_8h_source.html">DynamicHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   33</span>    {</div>
+<div class="line"><span class="lineno">   34</span>        <span class="keyword">const</span> U p = (x - FromRange::min)/(FromRange::max - FromRange::min);</div>
+<div class="line"><span class="lineno">   35</span>        <span class="keywordflow">return</span> p * (toMax - toMin) + toMin;</div>
+<div class="line"><span class="lineno">   36</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aab4418684118c29ec2bdfe10f53ab74d" name="aab4418684118c29ec2bdfe10f53ab74d"></a>
@@ -217,7 +249,11 @@ template&lt;typename U , typename FromRange &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00032">32</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   33</span>    {</div>
+<div class="line"><span class="lineno">   34</span>        <span class="keyword">const</span> U p = (x - FromRange::min)/(FromRange::max - FromRange::min);</div>
+<div class="line"><span class="lineno">   35</span>        <span class="keywordflow">return</span> p * (toMax - toMin) + toMin;</div>
+<div class="line"><span class="lineno">   36</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
@@ -225,9 +261,13 @@ template&lt;typename U , typename FromRange &gt; </div>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/cmd/point_generation_cmd/<a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="struct_range_scale.html">RangeScale</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

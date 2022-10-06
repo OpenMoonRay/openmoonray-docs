@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,6 +43,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('globals_c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="contents">
 <div class="textblock">Here is a list of all file members with links to the files they belong to:</div>
 
@@ -47,6 +67,42 @@ $(function() {
 <li>canonical()&#160;:&#160;<a class="el" href="_n_point_8h.html#a46a996b1bb51cfd6c96b8502d3cafe52">NPoint.h</a></li>
 <li>cartesianToPolar()&#160;:&#160;<a class="el" href="cmd_2point__generation__cmd_2util_8h.html#a5a8908cc2211b7e3df5551e802a3438c">util.h</a></li>
 <li>CATMULL_ROM&#160;:&#160;<a class="el" href="_light_filter_8hh.html#aeb38fb7be0dbf1827aeee6834dcfe320af74c2df201ba02ef12858fa20383fb4e">LightFilter.hh</a></li>
+<li>Chan_A&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">DcxChannelDefs.h</a></li>
+<li>Chan_AB&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a45c3fa8f77b9b29603864058778e7502">DcxChannelDefs.h</a></li>
+<li>Chan_ABCutout&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#ac5bb0eb97c5f9d8f4bc07a09840dad7e">DcxChannelDefs.h</a></li>
+<li>Chan_ACutout&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">DcxChannelDefs.h</a></li>
+<li>Chan_AG&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#ac7f1275d43212b8293e1b3c70b850071">DcxChannelDefs.h</a></li>
+<li>Chan_AGCutout&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a359216b1d94bc02d598f3a0ef6254cea">DcxChannelDefs.h</a></li>
+<li>Chan_All&#160;:&#160;<a class="el" href="_dcx_channel_set_8h.html#a4578f895547a680ce00f0dd14fe0d8b3">DcxChannelSet.h</a></li>
+<li>Chan_AR&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a16f742fd00e8bce0f73458fa8289c732">DcxChannelDefs.h</a></li>
+<li>Chan_ArbitraryStart&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a9ab60dd6a4d279eb5570c43c1c74e868">DcxChannelDefs.h</a></li>
+<li>Chan_ARCutout&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a090c91caf774123b54e297885d80c2e3">DcxChannelDefs.h</a></li>
+<li>Chan_B&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a2cec19eebf4d5bea76d33681d9a41d13">DcxChannelDefs.h</a></li>
+<li>Chan_BY&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a063e9f0d6e204e0e0dace85328e08486">DcxChannelDefs.h</a></li>
+<li>Chan_DeepFlags&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#af4f527891ae58983eb93a1ea4b85290e">DcxChannelDefs.h</a></li>
+<li>Chan_First&#160;:&#160;<a class="el" href="_dcx_channel_set_8h.html#a9c8b84a75fb9f808d177e621d098be08">DcxChannelSet.h</a></li>
+<li>Chan_G&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#ac551818188d029c30e03fd838192c3f3">DcxChannelDefs.h</a></li>
+<li>Chan_ID0&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a79b885225d4ffd94a3f894561015a4b6">DcxChannelDefs.h</a></li>
+<li>Chan_ID1&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a3ff8e4c3f44be0e5af7d7a2c5b35a90e">DcxChannelDefs.h</a></li>
+<li>Chan_ID2&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a43b44d5d11026094ead4cccd947f21ab">DcxChannelDefs.h</a></li>
+<li>Chan_ID3&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a86e234ded52db29e7007b4a5f5fd4c00">DcxChannelDefs.h</a></li>
+<li>Chan_Invalid&#160;:&#160;<a class="el" href="_dcx_channel_set_8h.html#a4f56a492fb3b039cc7dfcca31cb92ab7">DcxChannelSet.h</a></li>
+<li>Chan_Max&#160;:&#160;<a class="el" href="_dcx_channel_set_8h.html#a5c12fa23851478a1edfc0abc0983e868">DcxChannelSet.h</a></li>
+<li>Chan_R&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a4b8c80acc9cce85abf648c1e3c01c7e1">DcxChannelDefs.h</a></li>
+<li>Chan_RY&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#abf4d19f641fb5efb02b78ec9deb2c967">DcxChannelDefs.h</a></li>
+<li>Chan_SpBits1&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a887083c7abc8b4b5630e5c29c465b3ec">DcxChannelDefs.h</a></li>
+<li>Chan_SpBits2&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#ad6335da919482b2dd8b4fda813888d3c">DcxChannelDefs.h</a></li>
+<li>Chan_SpCoverage&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a9b72bc71dac0f07215aea9a421628641">DcxChannelDefs.h</a></li>
+<li>Chan_UvP&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#ab0b72d02fa4297cdf9b819c7ed11c503">DcxChannelDefs.h</a></li>
+<li>Chan_UvQ&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#ab96b25edead0c876703824783ff50ed1">DcxChannelDefs.h</a></li>
+<li>Chan_UvS&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a7463b04a9711b2fbfcf65316d67473cf">DcxChannelDefs.h</a></li>
+<li>Chan_UvT&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a86991dd6ecdfcdfb4b8da9904bd3cc4b">DcxChannelDefs.h</a></li>
+<li>Chan_Visibility&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a533a83192867850e400b89d14a3ec858">DcxChannelDefs.h</a></li>
+<li>Chan_Y&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a80979743c1f8168d18925c7e2d557344">DcxChannelDefs.h</a></li>
+<li>Chan_Z&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a6477e98f341576e9a146abcf77f1422f">DcxChannelDefs.h</a></li>
+<li>Chan_ZBack&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">DcxChannelDefs.h</a></li>
+<li>Chan_ZCutout&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a33b489878f382dcf5604166e37aab96f">DcxChannelDefs.h</a></li>
+<li>Chan_ZFront&#160;:&#160;<a class="el" href="_dcx_channel_defs_8h.html#a187f15db7f68e75e94e1ba1b7fe0ecf2">DcxChannelDefs.h</a></li>
 <li>ChannelAliasPtrList&#160;:&#160;<a class="el" href="_dcx_channel_alias_8h.html#a92b1397a0a162985acde51daa1f9974a">DcxChannelAlias.h</a></li>
 <li>ChannelAliasPtrSet&#160;:&#160;<a class="el" href="_dcx_channel_alias_8h.html#a860dd8411ccb465e70020003115fa139">DcxChannelAlias.h</a></li>
 <li>ChannelIdx&#160;:&#160;<a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">DcxChannelSet.h</a></li>
@@ -70,7 +126,8 @@ $(function() {
 <li>combineAabbs()&#160;:&#160;<a class="el" href="_g_p_u_math_8h.html#ade4f32927b6a2462fb915e872f855a65">GPUMath.h</a></li>
 <li>CombineDisplacement()&#160;:&#160;<a class="el" href="_combine_displacement_8cc.html#a5565900343d67e722acd8368b8b52c6b">CombineDisplacement.cc</a></li>
 <li>CombineMode&#160;:&#160;<a class="el" href="_light_filter_8hh.html#a446b135856ad07e57d2e9071439aa77e">LightFilter.hh</a></li>
-<li>COMP&#160;:&#160;<a class="el" href="_transmission_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">TransmissionAlbedo.inl</a>, <a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">ReflectionAlbedo.inl</a></li>
+<li>COMP&#160;:&#160;<a class="el" href="_reflection_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">ReflectionAlbedo.inl</a>, <a class="el" href="_transmission_albedo_8inl.html#a076912543697dbe4c46b79e8e44ad2fb">TransmissionAlbedo.inl</a></li>
+<li>computeEdgeSample()&#160;:&#160;<a class="el" href="_edge_detect_8cc.html#a5aebac607939b8de3bb90bacd39b2600">EdgeDetect.cc</a></li>
 <li>computeProjectionMatrix()&#160;:&#160;<a class="el" href="dso_2camera_2_perspective_camera_2_perspective_camera_8cc.html#aa5474c9620572f84da307ebaf41e1079">PerspectiveCamera.cc</a>, <a class="el" href="dso_2camera_2_orthographic_camera_2_orthographic_camera_8cc.html#a6a16e5715ea3619a1307187fd4879aa0">OrthographicCamera.cc</a></li>
 <li>CONDUCTOR_FRESNEL_MEMBERS&#160;:&#160;<a class="el" href="_fresnel_8hh.html#abac5ece4491ed1798bf8b09f69378a25">Fresnel.hh</a></li>
 <li>consistent_indices()&#160;:&#160;<a class="el" href="pd__progressive__elimination_8cc.html#adee80157925de773941f696455fc82dd">pd_progressive_elimination.cc</a></li>
@@ -83,8 +140,9 @@ $(function() {
 <li>CookieOutsideProjection&#160;:&#160;<a class="el" href="_light_filter_8hh.html#acd3fd836fecdcc510b8f02f85cbe6893">LightFilter.hh</a></li>
 <li>CookieProjectorType&#160;:&#160;<a class="el" href="_light_filter_8hh.html#aac002cfd52adc0305c5b91c57a42dfa2">LightFilter.hh</a></li>
 <li>CPP_LightFilterNeedsSamples()&#160;:&#160;<a class="el" href="_scene_8cc.html#ac8c292d6d4058ed73e13901cf3bff9d0">Scene.cc</a></li>
-<li>CPPUNIT_TEST_SUITE_REGISTRATION()&#160;:&#160;<a class="el" href="test__wait_8cc.html#a8cbdad717bf1d41126f98c643844d107">test_wait.cc</a>, <a class="el" href="test__aligned__element__array_8cc.html#a4150bb23f34487f7d7a00e0093fa0b95">test_aligned_element_array.cc</a>, <a class="el" href="test__atomic__functions_8cc.html#a2a226ca8f64cd91ba80c455e42d55c3c">test_atomic_functions.cc</a>, <a class="el" href="test__ring__buffer_8cc.html#aefcadddcb3f6978c16d9a0ca4f00e553">test_ring_buffer.cc</a>, <a class="el" href="test__time_8cc.html#abbe7646c7b408419cabf9bada62c8353">test_time.cc</a>, <a class="el" href="_test_aos_soa_8cc.html#ad80acef337c3aa32e2f113cd4e1e0d23">TestAosSoa.cc</a>, <a class="el" href="_test_bsdf_one_sampler_8cc.html#acc1596cd88a566bb98df353977988c0f">TestBsdfOneSampler.cc</a>, <a class="el" href="_test_bsdf_one_samplerv_8cc.html#aae044e1893a79d1bc748b31fe70d0137">TestBsdfOneSamplerv.cc</a>, <a class="el" href="_test_bsdf_sampler_8cc.html#a3a5a0eb1806a0990346f0d82d0ee73bf">TestBsdfSampler.cc</a>, <a class="el" href="_test_bsdfv_8cc.html#a67c8800b5cecb91eaae712e7b7d99ced">TestBsdfv.cc</a>, <a class="el" href="_test_bssrdf_8cc.html#a8ffdc7cf075985d0ce4bd1598b015ccc">TestBssrdf.cc</a>, <a class="el" href="_test_debug_rays_8cc.html#a3f72daeeb573315f24008c50f4d32cd7">TestDebugRays.cc</a>, <a class="el" href="_test_distribution_8cc.html#aa416caf7012c676b1f45b427572ddc3b">TestDistribution.cc</a>, <a class="el" href="_test_lights_8cc.html#abcafde6022b570cdcedac14430888e76">TestLights.cc</a>, <a class="el" href="_test_light_set_sampler_8cc.html#acacb7ec2a2d8a6816fa9864f973b9370">TestLightSetSampler.cc</a>, <a class="el" href="_test_light_util_8cc.html#aad032fa80c6dc8abc01ddc4d56887f79">TestLightUtil.cc</a>, <a class="el" href="_test_qmc_8cc.html#a14577049e46563acd5cc1076b67026b1">TestQmc.cc</a>, <a class="el" href="_test_sampler_8cc.html#a463150e22ed235c64fae8f5ee3d30a95">TestSampler.cc</a>, <a class="el" href="test__rt_8cc.html#a7b4d555985b46277bb3868b4b0aa47e1">test_rt.cc</a>, <a class="el" href="_test_hair_8cc.html#aa1d30c833cd3949ffc8adbd94ef9eca5">TestHair.cc</a></li>
+<li>CPPUNIT_TEST_SUITE_REGISTRATION()&#160;:&#160;<a class="el" href="test__aligned__element__array_8cc.html#a4150bb23f34487f7d7a00e0093fa0b95">test_aligned_element_array.cc</a>, <a class="el" href="_test_bsdf_sampler_8cc.html#a3a5a0eb1806a0990346f0d82d0ee73bf">TestBsdfSampler.cc</a>, <a class="el" href="_test_bsdfv_8cc.html#a67c8800b5cecb91eaae712e7b7d99ced">TestBsdfv.cc</a>, <a class="el" href="_test_bssrdf_8cc.html#a8ffdc7cf075985d0ce4bd1598b015ccc">TestBssrdf.cc</a>, <a class="el" href="_test_debug_rays_8cc.html#a3f72daeeb573315f24008c50f4d32cd7">TestDebugRays.cc</a>, <a class="el" href="_test_distribution_8cc.html#aa416caf7012c676b1f45b427572ddc3b">TestDistribution.cc</a>, <a class="el" href="_test_lights_8cc.html#abcafde6022b570cdcedac14430888e76">TestLights.cc</a>, <a class="el" href="_test_light_util_8cc.html#aad032fa80c6dc8abc01ddc4d56887f79">TestLightUtil.cc</a>, <a class="el" href="_test_qmc_8cc.html#a14577049e46563acd5cc1076b67026b1">TestQmc.cc</a>, <a class="el" href="_test_sampler_8cc.html#a463150e22ed235c64fae8f5ee3d30a95">TestSampler.cc</a>, <a class="el" href="test__rt_8cc.html#a7b4d555985b46277bb3868b4b0aa47e1">test_rt.cc</a>, <a class="el" href="_test_hair_8cc.html#aa1d30c833cd3949ffc8adbd94ef9eca5">TestHair.cc</a>, <a class="el" href="_test_bsdf_one_sampler_8cc.html#acc1596cd88a566bb98df353977988c0f">TestBsdfOneSampler.cc</a>, <a class="el" href="_test_light_set_sampler_8cc.html#acacb7ec2a2d8a6816fa9864f973b9370">TestLightSetSampler.cc</a>, <a class="el" href="test__atomic__functions_8cc.html#a2a226ca8f64cd91ba80c455e42d55c3c">test_atomic_functions.cc</a>, <a class="el" href="test__ring__buffer_8cc.html#aefcadddcb3f6978c16d9a0ca4f00e553">test_ring_buffer.cc</a>, <a class="el" href="test__wait_8cc.html#a8cbdad717bf1d41126f98c643844d107">test_wait.cc</a>, <a class="el" href="test__time_8cc.html#abbe7646c7b408419cabf9bada62c8353">test_time.cc</a>, <a class="el" href="_test_aos_soa_8cc.html#ad80acef337c3aa32e2f113cd4e1e0d23">TestAosSoa.cc</a>, <a class="el" href="_test_bsdf_one_samplerv_8cc.html#aae044e1893a79d1bc748b31fe70d0137">TestBsdfOneSamplerv.cc</a></li>
 <li>createGrid()&#160;:&#160;<a class="el" href="pd__progressive__elimination_8cc.html#ac41f4222277ea6ae706907d76a9a3a70">pd_progressive_elimination.cc</a></li>
+<li>createLogEvent()&#160;:&#160;<a class="el" href="_attribute_map_8cc.html#a63b89cd2643cb7e152cd422a2d52afcf">AttributeMap.cc</a></li>
 <li>createOutputStream()&#160;:&#160;<a class="el" href="reorder_8cc.html#af0b1e2bec51b14d670983f48f06beb20">reorder.cc</a></li>
 <li>createProcedural()&#160;:&#160;<a class="el" href="_rdl_curve_geometry_8cc.html#ad2d4ce0445f2e3155569fd3ae587444f">RdlCurveGeometry.cc</a>, <a class="el" href="_rdl_instancer_geometry_8cc.html#aae12052af5a2064b34a555311a69570a">RdlInstancerGeometry.cc</a>, <a class="el" href="_rdl_mesh_geometry_8cc.html#a41bfe61fffd618a28cf10220e1e833aa">RdlMeshGeometry.cc</a>, <a class="el" href="_rdl_point_geometry_8cc.html#a41bfe61fffd618a28cf10220e1e833aa">RdlPointGeometry.cc</a>, <a class="el" href="_vdb_geometry_8cc.html#a41bfe61fffd618a28cf10220e1e833aa">VdbGeometry.cc</a>, <a class="el" href="_test_geometry_8cc.html#a41bfe61fffd618a28cf10220e1e833aa">TestGeometry.cc</a>, <a class="el" href="_test_rt_geometry_8cc.html#a41bfe61fffd618a28cf10220e1e833aa">TestRtGeometry.cc</a></li>
 <li>CREATOR_FUNC()&#160;:&#160;<a class="el" href="_mcrt_rt_computation_8cc.html#a60cedae384c40b79e9f9af5bd86db0b2">McrtRtComputation.cc</a>, <a class="el" href="_mcrt_rt_dispatch_computation_8cc.html#a0c615d9028ac553e43d2a1c97993b0ff">McrtRtDispatchComputation.cc</a>, <a class="el" href="_mcrt_rt_merge_computation_8h.html#a465b4225c288c8449ead5cf98920ede1">McrtRtMergeComputation.h</a></li>
@@ -97,9 +155,12 @@ $(function() {
 <li>CYLINDER_LIGHT_VALIDATION&#160;:&#160;<a class="el" href="_light_8hh.html#aa64c255e79426b71cddfe2336ae9b160">Light.hh</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

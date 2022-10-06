@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_28705856019153616deb2bfeeafe0625.html">unittest</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_test_sampler_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -80,6 +96,8 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemoonray_1_1pbr"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html">moonray::pbr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_sampler_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_sampler_8cc_03.html">moonray::pbr::anonymous_namespace{TestSampler.cc}</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -123,6 +141,13 @@ Functions</h2></td></tr>
 <tr class="separator:a0c2d1822f06e16b00f148ad332bca715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c3a6ff8a0319ccbe29ad1c2405ac87f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a1c3a6ff8a0319ccbe29ad1c2405ac87f">moonray::pbr::doTestISPCIntegratorDistribution2D</a> (Sample2DFunction getSamples, const char *fileToken)</td></tr>
 <tr class="separator:a1c3a6ff8a0319ccbe29ad1c2405ac87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cc83c697ae45605fa4699a0c51bc426"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_sampler_8cc_03.html#a1cc83c697ae45605fa4699a0c51bc426">moonray::pbr::anonymous_namespace{TestSampler.cc}::countBits</a> (uint32_t v)</td></tr>
+<tr class="separator:a1cc83c697ae45605fa4699a0c51bc426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8059d41eb8d8ffa7f31055ad384e5d0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_sampler_8cc_03.html#ad8059d41eb8d8ffa7f31055ad384e5d0">moonray::pbr::anonymous_namespace{TestSampler.cc}::hammingDistance</a> (uint32_t a, uint32_t b)</td></tr>
+<tr class="separator:ad8059d41eb8d8ffa7f31055ad384e5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5910f36db949a5b0be99d39fe504158b"><td class="memTemplParams" colspan="2">template&lt;typename Iter &gt; </td></tr>
+<tr class="memitem:a5910f36db949a5b0be99d39fe504158b"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a5910f36db949a5b0be99d39fe504158b">moonray::pbr::isPermutation</a> (Iter first, Iter last)</td></tr>
+<tr class="separator:a5910f36db949a5b0be99d39fe504158b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac746361d83a690b4eefad40a09c05467"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#ac746361d83a690b4eefad40a09c05467">moonray::pbr::getPrimaryValue0</a> (const TestPoint &amp;s)</td></tr>
 <tr class="separator:ac746361d83a690b4eefad40a09c05467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08b25c33132521077cb7a03b7280b05b"><td class="memItemLeft" align="right" valign="top">float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a08b25c33132521077cb7a03b7280b05b">moonray::pbr::getPrimaryValue0</a> (TestPoint &amp;s)</td></tr>
@@ -200,9 +225,13 @@ Variables</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_e9cc9f5f9c03e3b4eff73c33091953ed.html">unittest</a></li><li class="navelem"><a class="el" href="_test_sampler_8cc.html">TestSampler.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_55a2e35f6359da48a03f898576e722e1.html">rndr</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_attribute_overrides_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">AttributeOverrides.cc</div></div>
 </div><!--header-->
@@ -51,8 +67,9 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2015-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @author Bob Somers</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"></span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_attribute_overrides_8h.html">AttributeOverrides.h</a>&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_render_options_8h.html">RenderOptions.h</a>&quot;</span></div>
@@ -76,57 +93,57 @@ $(function() {
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">namespace </span>rndr {</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_attribute_overrides_8cc_03.html">   31</a></span><span class="keyword">namespace </span>{</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>setOverrideHelper(</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_attribute_overrides_8cc_03.html#afb29b9d682b30c5cc711040776cb624e">   35</a></span><a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_attribute_overrides_8cc_03.html#afb29b9d682b30c5cc711040776cb624e">setOverrideHelper</a>(</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    scene_rdl2::rdl2::SceneContext&amp; context,</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    scene_rdl2::rdl2::SceneObject* <span class="keywordtype">object</span>,</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">const</span> RenderOptions::AttributeOverride&amp; attrOverride)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html">RenderOptions::AttributeOverride</a>&amp; attrOverride)</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    scene_rdl2::rdl2::AttributeKey&lt;T&gt; key =</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordtype">object</span>-&gt;getSceneClass().getAttributeKey&lt;T&gt;(attrOverride.mAttribute);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordtype">object</span>-&gt;getSceneClass().getAttributeKey&lt;T&gt;(attrOverride.<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#a5916dbf78af4cba999f4abf05259d16a">mAttribute</a>);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    scene_rdl2::rdl2::SceneObject::UpdateGuard guard(<span class="keywordtype">object</span>);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">if</span> (!attrOverride.mValue.empty()) {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordtype">object</span>-&gt;set(key, scene_rdl2::rdl2::convertFromString&lt;T&gt;(attrOverride.mValue));</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">if</span> (!attrOverride.<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#ab53ad94ef528f71226ec3356d860855c">mValue</a>.empty()) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordtype">object</span>-&gt;set(key, scene_rdl2::rdl2::convertFromString&lt;T&gt;(attrOverride.<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#ab53ad94ef528f71226ec3356d860855c">mValue</a>));</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">if</span> (!attrOverride.mBinding.empty() &amp;&amp; key.isBindable()) {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordtype">object</span>-&gt;setBinding(key, context.getSceneObject(attrOverride.mBinding));</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">if</span> (!attrOverride.<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#a56e1f56770867d585c9a288c40e48460">mBinding</a>.empty() &amp;&amp; key.isBindable()) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordtype">object</span>-&gt;setBinding(key, context.getSceneObject(attrOverride.<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#a56e1f56770867d585c9a288c40e48460">mBinding</a>));</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_attribute_overrides_8cc_03.html#ab6fc43404a27f4634083282010c6bde4">   53</a></span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>setOverrideHelper&lt;scene_rdl2::rdl2::SceneObject*&gt;(</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    scene_rdl2::rdl2::SceneContext&amp; context,</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    scene_rdl2::rdl2::SceneObject* <span class="keywordtype">object</span>,</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">const</span> RenderOptions::AttributeOverride&amp; attrOverride)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html">RenderOptions::AttributeOverride</a>&amp; attrOverride)</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::SceneObject*&gt; key =</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordtype">object</span>-&gt;getSceneClass().getAttributeKey&lt;scene_rdl2::rdl2::SceneObject*&gt;(attrOverride.mAttribute);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordtype">object</span>-&gt;getSceneClass().getAttributeKey&lt;scene_rdl2::rdl2::SceneObject*&gt;(attrOverride.<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#a5916dbf78af4cba999f4abf05259d16a">mAttribute</a>);</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    scene_rdl2::rdl2::SceneObject::UpdateGuard guard(<span class="keywordtype">object</span>);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">if</span> (!attrOverride.mValue.empty()) {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordtype">object</span>-&gt;set(key, context.getSceneObject(attrOverride.mValue));</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">if</span> (!attrOverride.<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#ab53ad94ef528f71226ec3356d860855c">mValue</a>.empty()) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordtype">object</span>-&gt;set(key, context.getSceneObject(attrOverride.<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#ab53ad94ef528f71226ec3356d860855c">mValue</a>));</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">if</span> (!attrOverride.mBinding.empty() &amp;&amp; key.isBindable()) {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordtype">object</span>-&gt;setBinding(key, context.getSceneObject(attrOverride.mBinding));</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">if</span> (!attrOverride.<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#a56e1f56770867d585c9a288c40e48460">mBinding</a>.empty() &amp;&amp; key.isBindable()) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordtype">object</span>-&gt;setBinding(key, context.getSceneObject(attrOverride.<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#a56e1f56770867d585c9a288c40e48460">mBinding</a>));</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_attribute_overrides_8cc_03.html#a464b57561a75bb890538c9a4aa26c75d">   72</a></span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>setOverrideHelper&lt;scene_rdl2::rdl2::SceneObjectVector&gt;(</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    scene_rdl2::rdl2::SceneContext&amp; context,</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    scene_rdl2::rdl2::SceneObject* <span class="keywordtype">object</span>,</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">const</span> RenderOptions::AttributeOverride&amp; attrOverride)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html">RenderOptions::AttributeOverride</a>&amp; attrOverride)</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>{</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::SceneObjectVector&gt; key =</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">object</span>-&gt;getSceneClass().getAttributeKey&lt;scene_rdl2::rdl2::SceneObjectVector&gt;(attrOverride.mAttribute);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">object</span>-&gt;getSceneClass().getAttributeKey&lt;scene_rdl2::rdl2::SceneObjectVector&gt;(attrOverride.<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#a5916dbf78af4cba999f4abf05259d16a">mAttribute</a>);</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    scene_rdl2::rdl2::StringVector objNames =</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        scene_rdl2::rdl2::convertFromString&lt;scene_rdl2::rdl2::StringVector&gt;(attrOverride.mValue);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        scene_rdl2::rdl2::convertFromString&lt;scene_rdl2::rdl2::StringVector&gt;(attrOverride.<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#ab53ad94ef528f71226ec3356d860855c">mValue</a>);</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    scene_rdl2::rdl2::SceneObjectVector objPointers;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iter = objNames.begin(); iter != objNames.end(); ++iter) {</div>
@@ -134,21 +151,21 @@ $(function() {
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    scene_rdl2::rdl2::SceneObject::UpdateGuard guard(<span class="keywordtype">object</span>);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">if</span> (!attrOverride.mValue.empty()) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">if</span> (!attrOverride.<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#ab53ad94ef528f71226ec3356d860855c">mValue</a>.empty()) {</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordtype">object</span>-&gt;set(key, objPointers);</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">if</span> (!attrOverride.mBinding.empty() &amp;&amp; key.isBindable()) {</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordtype">object</span>-&gt;setBinding(key, context.getSceneObject(attrOverride.mBinding));</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">if</span> (!attrOverride.<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#a56e1f56770867d585c9a288c40e48460">mBinding</a>.empty() &amp;&amp; key.isBindable()) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordtype">object</span>-&gt;setBinding(key, context.getSceneObject(attrOverride.<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#a56e1f56770867d585c9a288c40e48460">mBinding</a>));</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>setOverride(scene_rdl2::rdl2::SceneContext&amp; context,</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keyword">const</span> RenderOptions::AttributeOverride&amp; attrOverride)</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_attribute_overrides_8cc_03.html#a6b090c779834b742602ea7ede1279a42">   98</a></span><a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_attribute_overrides_8cc_03.html#a6b090c779834b742602ea7ede1279a42">setOverride</a>(scene_rdl2::rdl2::SceneContext&amp; context,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html">RenderOptions::AttributeOverride</a>&amp; attrOverride)</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>{</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    scene_rdl2::rdl2::SceneObject* <span class="keywordtype">object</span> = context.getSceneObject(attrOverride.mObject);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    scene_rdl2::rdl2::SceneObject* <span class="keywordtype">object</span> = context.getSceneObject(attrOverride.<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#a2abbc78c4d85ebdf25ad7478878a366a">mObject</a>);</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">switch</span> (object-&gt;getSceneClass().getAttribute(attrOverride.mAttribute)-&gt;getType()) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">switch</span> (object-&gt;getSceneClass().getAttribute(attrOverride.<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#a5916dbf78af4cba999f4abf05259d16a">mAttribute</a>)-&gt;getType()) {</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordflow">case</span> scene_rdl2::rdl2::TYPE_BOOL:</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordflow">return</span> setOverrideHelper&lt;scene_rdl2::rdl2::Bool&gt;(context, <span class="keywordtype">object</span>, attrOverride);</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
@@ -282,17 +299,28 @@ $(function() {
 <div class="ttc" id="a_attribute_overrides_8h_html"><div class="ttname"><a href="_attribute_overrides_8h.html">AttributeOverrides.h</a></div></div>
 <div class="ttc" id="a_render_options_8h_html"><div class="ttname"><a href="_render_options_8h.html">RenderOptions.h</a></div></div>
 <div class="ttc" id="a_render_statistics_8h_html"><div class="ttname"><a href="_render_statistics_8h.html">RenderStatistics.h</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_options_1_1_attribute_override_html"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html">moonray::rndr::RenderOptions::AttributeOverride</a></div><div class="ttdef"><b>Definition:</b> <a href="_render_options_8h_source.html#l00073">RenderOptions.h:74</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_options_1_1_attribute_override_html_a2abbc78c4d85ebdf25ad7478878a366a"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#a2abbc78c4d85ebdf25ad7478878a366a">moonray::rndr::RenderOptions::AttributeOverride::mObject</a></div><div class="ttdeci">std::string mObject</div><div class="ttdef"><b>Definition:</b> <a href="_render_options_8h_source.html#l00083">RenderOptions.h:83</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_options_1_1_attribute_override_html_a56e1f56770867d585c9a288c40e48460"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#a56e1f56770867d585c9a288c40e48460">moonray::rndr::RenderOptions::AttributeOverride::mBinding</a></div><div class="ttdeci">std::string mBinding</div><div class="ttdef"><b>Definition:</b> <a href="_render_options_8h_source.html#l00086">RenderOptions.h:86</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_options_1_1_attribute_override_html_a5916dbf78af4cba999f4abf05259d16a"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#a5916dbf78af4cba999f4abf05259d16a">moonray::rndr::RenderOptions::AttributeOverride::mAttribute</a></div><div class="ttdeci">std::string mAttribute</div><div class="ttdef"><b>Definition:</b> <a href="_render_options_8h_source.html#l00084">RenderOptions.h:84</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_options_1_1_attribute_override_html_ab53ad94ef528f71226ec3356d860855c"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html#ab53ad94ef528f71226ec3356d860855c">moonray::rndr::RenderOptions::AttributeOverride::mValue</a></div><div class="ttdeci">std::string mValue</div><div class="ttdef"><b>Definition:</b> <a href="_render_options_8h_source.html#l00085">RenderOptions.h:85</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_options_html"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_options.html">moonray::rndr::RenderOptions</a></div><div class="ttdef"><b>Definition:</b> <a href="_render_options_8h_source.html#l00067">RenderOptions.h:68</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_options_html_a665a19dfb98820c472ef1fba1bc67f05"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_options.html#a665a19dfb98820c472ef1fba1bc67f05">moonray::rndr::RenderOptions::getAttributeOverrides</a></div><div class="ttdeci">std::vector&lt; AttributeOverride &gt; getAttributeOverrides() const</div><div class="ttdoc">Retrieves the attribute overrides for SceneObjects in the scene.</div><div class="ttdef"><b>Definition:</b> <a href="_render_options_8cc_source.html#l00700">RenderOptions.cc:700</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_stats_html"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_stats.html">moonray::rndr::RenderStats</a></div><div class="ttdef"><b>Definition:</b> <a href="_render_statistics_8h_source.html#l00060">RenderStatistics.h:61</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_stats_html_af7f8215312d88c41cce4f764a2a53aaa"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_stats.html#af7f8215312d88c41cce4f764a2a53aaa">moonray::rndr::RenderStats::getPrependString</a></div><div class="ttdeci">std::string getPrependString() const</div><div class="ttdef"><b>Definition:</b> <a href="_render_statistics_8cc_source.html#l00277">RenderStatistics.cc:277</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1rndr_1_1anonymous__namespace_02_attribute_overrides_8cc_03_html_a6b090c779834b742602ea7ede1279a42"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_attribute_overrides_8cc_03.html#a6b090c779834b742602ea7ede1279a42">moonray::rndr::anonymous_namespace{AttributeOverrides.cc}::setOverride</a></div><div class="ttdeci">void setOverride(scene_rdl2::rdl2::SceneContext &amp;context, const RenderOptions::AttributeOverride &amp;attrOverride)</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_overrides_8cc_source.html#l00098">AttributeOverrides.cc:98</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1rndr_1_1anonymous__namespace_02_attribute_overrides_8cc_03_html_afb29b9d682b30c5cc711040776cb624e"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_attribute_overrides_8cc_03.html#afb29b9d682b30c5cc711040776cb624e">moonray::rndr::anonymous_namespace{AttributeOverrides.cc}::setOverrideHelper</a></div><div class="ttdeci">void setOverrideHelper(scene_rdl2::rdl2::SceneContext &amp;context, scene_rdl2::rdl2::SceneObject *object, const RenderOptions::AttributeOverride &amp;attrOverride)</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_overrides_8cc_source.html#l00035">AttributeOverrides.cc:35</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1rndr_html_aa93c5b79b987d7e4a2aef3fc8a85be9f"><div class="ttname"><a href="namespacemoonray_1_1rndr.html#aa93c5b79b987d7e4a2aef3fc8a85be9f">moonray::rndr::applyAttributeOverrides</a></div><div class="ttdeci">void applyAttributeOverrides(scene_rdl2::rdl2::SceneContext &amp;context, const RenderStats &amp;renderStats, const RenderOptions &amp;options, std::stringstream &amp;initMessages)</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_overrides_8cc_source.html#l00202">AttributeOverrides.cc:202</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_dispatch_computation_8cc_source.html#l00044">McrtRtDispatchComputation.cc:44</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_c8c2fc2658195a2d790ef72565bd36e7.html">rndr</a></li><li class="navelem"><a class="el" href="_attribute_overrides_8cc.html">AttributeOverrides.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

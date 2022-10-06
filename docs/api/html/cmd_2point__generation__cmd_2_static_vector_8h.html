@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_55b3e8b76a6a129d85f7ec9f20e593af.html">cmd</a></li><li class="navelem"><a class="el" href="dir_0ffd86f0315ad7cec995cb22c196ce91.html">point_generation_cmd</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('cmd_2point__generation__cmd_2_static_vector_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -74,22 +90,22 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8a3c7d0f82218a5a9b6098012bef9b7f"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N, std::size_t M&gt; </td></tr>
-<tr class="memitem:a8a3c7d0f82218a5a9b6098012bef9b7f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h.html#a8a3c7d0f82218a5a9b6098012bef9b7f">operator==</a> (const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, N &gt; &amp;<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, M &gt; &amp;<a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
+<tr class="memitem:a8a3c7d0f82218a5a9b6098012bef9b7f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h.html#a8a3c7d0f82218a5a9b6098012bef9b7f">operator==</a> (const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, N &gt; &amp;x, const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, M &gt; &amp;y)</td></tr>
 <tr class="separator:a8a3c7d0f82218a5a9b6098012bef9b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a510ec0fb9f5a7a99741e9bd01a8b52e3"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N, std::size_t M&gt; </td></tr>
-<tr class="memitem:a510ec0fb9f5a7a99741e9bd01a8b52e3"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h.html#a510ec0fb9f5a7a99741e9bd01a8b52e3">operator&lt;</a> (const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, N &gt; &amp;<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, M &gt; &amp;<a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
+<tr class="memitem:a510ec0fb9f5a7a99741e9bd01a8b52e3"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h.html#a510ec0fb9f5a7a99741e9bd01a8b52e3">operator&lt;</a> (const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, N &gt; &amp;x, const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, M &gt; &amp;y)</td></tr>
 <tr class="separator:a510ec0fb9f5a7a99741e9bd01a8b52e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17acb66d4ae7eb14f185923a889b547a"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N, std::size_t M&gt; </td></tr>
-<tr class="memitem:a17acb66d4ae7eb14f185923a889b547a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h.html#a17acb66d4ae7eb14f185923a889b547a">operator!=</a> (const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, N &gt; &amp;<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, M &gt; &amp;<a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
+<tr class="memitem:a17acb66d4ae7eb14f185923a889b547a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h.html#a17acb66d4ae7eb14f185923a889b547a">operator!=</a> (const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, N &gt; &amp;x, const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, M &gt; &amp;y)</td></tr>
 <tr class="separator:a17acb66d4ae7eb14f185923a889b547a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a711956612aa1723227dfa3876a33fa9c"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N, std::size_t M&gt; </td></tr>
-<tr class="memitem:a711956612aa1723227dfa3876a33fa9c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h.html#a711956612aa1723227dfa3876a33fa9c">operator&gt;</a> (const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, N &gt; &amp;<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, M &gt; &amp;<a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
+<tr class="memitem:a711956612aa1723227dfa3876a33fa9c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h.html#a711956612aa1723227dfa3876a33fa9c">operator&gt;</a> (const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, N &gt; &amp;x, const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, M &gt; &amp;y)</td></tr>
 <tr class="separator:a711956612aa1723227dfa3876a33fa9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89c8dce7ac63a5b1a11a929d5d8c948c"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N, std::size_t M&gt; </td></tr>
-<tr class="memitem:a89c8dce7ac63a5b1a11a929d5d8c948c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h.html#a89c8dce7ac63a5b1a11a929d5d8c948c">operator&gt;=</a> (const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, N &gt; &amp;<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, M &gt; &amp;<a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
+<tr class="memitem:a89c8dce7ac63a5b1a11a929d5d8c948c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h.html#a89c8dce7ac63a5b1a11a929d5d8c948c">operator&gt;=</a> (const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, N &gt; &amp;x, const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, M &gt; &amp;y)</td></tr>
 <tr class="separator:a89c8dce7ac63a5b1a11a929d5d8c948c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae76900877903fe25b79f6f5800e746d0"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N, std::size_t M&gt; </td></tr>
-<tr class="memitem:ae76900877903fe25b79f6f5800e746d0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h.html#ae76900877903fe25b79f6f5800e746d0">operator&lt;=</a> (const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, N &gt; &amp;<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, M &gt; &amp;<a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
+<tr class="memitem:ae76900877903fe25b79f6f5800e746d0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h.html#ae76900877903fe25b79f6f5800e746d0">operator&lt;=</a> (const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, N &gt; &amp;x, const <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, M &gt; &amp;y)</td></tr>
 <tr class="separator:ae76900877903fe25b79f6f5800e746d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ffc9a83d505624d453906655627414d"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
 <tr class="memitem:a7ffc9a83d505624d453906655627414d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestd.html#a7ffc9a83d505624d453906655627414d">std::swap</a> (<a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, N &gt; &amp;a, <a class="el" href="class_static_vector.html">StaticVector</a>&lt; T, N &gt; &amp;b) noexcept(noexcept(a.swap(b)))</td></tr>
@@ -137,7 +153,12 @@ template&lt;typename T , std::size_t N, std::size_t M&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h_source.html#l00527">527</a> of file <a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h_source.html">StaticVector.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  528</span>{</div>
+<div class="line"><span class="lineno">  529</span>    <span class="keywordflow">return</span> std::lexicographical_compare(x.<a class="code hl_function" href="class_static_vector.html#a4458533fc9e0da6972f26fd6d71f3eaa">begin</a>(), x.<a class="code hl_function" href="class_static_vector.html#aa9d7656b4bca0018ced75b2c79a929dc">end</a>(), y.<a class="code hl_function" href="class_static_vector.html#a4458533fc9e0da6972f26fd6d71f3eaa">begin</a>(), y.<a class="code hl_function" href="class_static_vector.html#aa9d7656b4bca0018ced75b2c79a929dc">end</a>());</div>
+<div class="line"><span class="lineno">  530</span>}</div>
+<div class="ttc" id="aclass_static_vector_html_a4458533fc9e0da6972f26fd6d71f3eaa"><div class="ttname"><a href="class_static_vector.html#a4458533fc9e0da6972f26fd6d71f3eaa">StaticVector::begin</a></div><div class="ttdeci">iterator begin() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2point__generation__cmd_2_static_vector_8h_source.html#l00193">StaticVector.h:193</a></div></div>
+<div class="ttc" id="aclass_static_vector_html_aa9d7656b4bca0018ced75b2c79a929dc"><div class="ttname"><a href="class_static_vector.html#aa9d7656b4bca0018ced75b2c79a929dc">StaticVector::end</a></div><div class="ttdeci">iterator end() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2point__generation__cmd_2_static_vector_8h_source.html#l00198">StaticVector.h:198</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a510ec0fb9f5a7a99741e9bd01a8b52e3" name="a510ec0fb9f5a7a99741e9bd01a8b52e3"></a>
@@ -177,7 +198,10 @@ template&lt;typename T , std::size_t N, std::size_t M&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h_source.html#l00521">521</a> of file <a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h_source.html">StaticVector.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  522</span>{</div>
+<div class="line"><span class="lineno">  523</span>    <span class="keywordflow">return</span> !(x == y);</div>
+<div class="line"><span class="lineno">  524</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae76900877903fe25b79f6f5800e746d0" name="ae76900877903fe25b79f6f5800e746d0"></a>
@@ -217,7 +241,10 @@ template&lt;typename T , std::size_t N, std::size_t M&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h_source.html#l00545">545</a> of file <a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h_source.html">StaticVector.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  546</span>{</div>
+<div class="line"><span class="lineno">  547</span>    <span class="keywordflow">return</span> !(x &gt; y);</div>
+<div class="line"><span class="lineno">  548</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8a3c7d0f82218a5a9b6098012bef9b7f" name="a8a3c7d0f82218a5a9b6098012bef9b7f"></a>
@@ -257,7 +284,11 @@ template&lt;typename T , std::size_t N, std::size_t M&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h_source.html#l00515">515</a> of file <a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h_source.html">StaticVector.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  516</span>{</div>
+<div class="line"><span class="lineno">  517</span>    <span class="keywordflow">return</span> x.<a class="code hl_function" href="class_static_vector.html#a560aa35de1e45da809a372e90d4f3f58">size</a>() == y.<a class="code hl_function" href="class_static_vector.html#a560aa35de1e45da809a372e90d4f3f58">size</a>() &amp;&amp; std::equal(x.<a class="code hl_function" href="class_static_vector.html#a4458533fc9e0da6972f26fd6d71f3eaa">begin</a>(), x.<a class="code hl_function" href="class_static_vector.html#aa9d7656b4bca0018ced75b2c79a929dc">end</a>(), y.<a class="code hl_function" href="class_static_vector.html#a4458533fc9e0da6972f26fd6d71f3eaa">begin</a>());</div>
+<div class="line"><span class="lineno">  518</span>}</div>
+<div class="ttc" id="aclass_static_vector_html_a560aa35de1e45da809a372e90d4f3f58"><div class="ttname"><a href="class_static_vector.html#a560aa35de1e45da809a372e90d4f3f58">StaticVector::size</a></div><div class="ttdeci">size_type size() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2point__generation__cmd_2_static_vector_8h_source.html#l00262">StaticVector.h:262</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a711956612aa1723227dfa3876a33fa9c" name="a711956612aa1723227dfa3876a33fa9c"></a>
@@ -297,7 +328,10 @@ template&lt;typename T , std::size_t N, std::size_t M&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h_source.html#l00533">533</a> of file <a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h_source.html">StaticVector.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  534</span>{</div>
+<div class="line"><span class="lineno">  535</span>    <span class="keywordflow">return</span> y &lt; x;</div>
+<div class="line"><span class="lineno">  536</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a89c8dce7ac63a5b1a11a929d5d8c948c" name="a89c8dce7ac63a5b1a11a929d5d8c948c"></a>
@@ -337,13 +371,20 @@ template&lt;typename T , std::size_t N, std::size_t M&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h_source.html#l00539">539</a> of file <a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h_source.html">StaticVector.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  540</span>{</div>
+<div class="line"><span class="lineno">  541</span>    <span class="keywordflow">return</span> !(x &lt; y);</div>
+<div class="line"><span class="lineno">  542</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_1d5181f7ddc67e55cdef6ebe6c9b692d.html">cmd</a></li><li class="navelem"><a class="el" href="dir_9db75a9d37a8d3d7abd087d56d5231aa.html">point_generation_cmd</a></li><li class="navelem"><a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h.html">StaticVector.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

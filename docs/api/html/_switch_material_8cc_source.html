@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_e8636fe16f0c9a46fe2eb47f132af4e0.html">dso</a></li><li class="navelem"><a class="el" href="dir_04804282e0548e8d8ab2caee9c3b849d.html">material</a></li><li class="navelem"><a class="el" href="dir_d7a52ec7a634c7d9228a41b36986e451.html">Switch</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_switch_material_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">SwitchMaterial.cc</div></div>
 </div><!--header-->
@@ -51,8 +67,9 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2018-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @author Scott Cegielski</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"></span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;attributes.cc&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;SwitchMaterial_ispc_stubs.h&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
@@ -74,17 +91,17 @@ $(function() {
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="_switch_material_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">   26</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="_switch_material_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a>();</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> shade(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self, <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="_switch_material_8cc.html#ace9c5b20bbf47da39e211ce3fac3864d">   29</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="_switch_material_8cc.html#ace9c5b20bbf47da39e211ce3fac3864d">shade</a>(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self, <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                      <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">State</a>&amp; state, <a class="code hl_class" href="classmoonray_1_1shading_1_1_bsdf_builder.html">BsdfBuilder</a>&amp; bsdfBuilder);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">static</span> <span class="keywordtype">float</span> presence(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code hl_function" href="_switch_material_8cc.html#ab85685f4248f93f8138bd2ce9ea7e7bb">presence</a>(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                          <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                          <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">moonray::shading::State</a>&amp; state);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">static</span> <span class="keywordtype">float</span> ior(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code hl_function" href="_switch_material_8cc.html#acaabe6276d4a24ad65d2ae84ff11ac9c">ior</a>(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                     <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                     <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">moonray::shading::State</a>&amp; state);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    ispc::SwitchMaterial mIspc;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">   39</a></span>    ispc::SwitchMaterial <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>RDL2_DSO_CLASS_END(<a class="code hl_function" href="_switch_material_8cc.html#acf1d487b4e797da6caa0882b7c867721">SwitchMaterial</a>)</div>
@@ -100,7 +117,7 @@ $(function() {
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    mShadeFuncv = (scene_rdl2::rdl2::ShadeFuncv) ispc::SwitchMaterial_getShadeFunc();</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    mPresenceFunc = SwitchMaterial::presence;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; ispc::MAX_MATERIALS; ++i) {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        mIspc.mMaterial[i] = 0;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[i] = 0;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
@@ -118,76 +135,76 @@ $(function() {
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    mIspc.mMaterial[0] = (intptr_t)get(attrMaterial0);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    mIspc.mMaterial[1] = (intptr_t)get(attrMaterial1);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    mIspc.mMaterial[2] = (intptr_t)get(attrMaterial2);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    mIspc.mMaterial[3] = (intptr_t)get(attrMaterial3);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    mIspc.mMaterial[4] = (intptr_t)get(attrMaterial4);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    mIspc.mMaterial[5] = (intptr_t)get(attrMaterial5);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    mIspc.mMaterial[6] = (intptr_t)get(attrMaterial6);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    mIspc.mMaterial[7] = (intptr_t)get(attrMaterial7);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    mIspc.mMaterial[8] = (intptr_t)get(attrMaterial8);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    mIspc.mMaterial[9] = (intptr_t)get(attrMaterial9);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[0] = (intptr_t)get(attrMaterial0);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[1] = (intptr_t)get(attrMaterial1);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[2] = (intptr_t)get(attrMaterial2);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[3] = (intptr_t)get(attrMaterial3);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[4] = (intptr_t)get(attrMaterial4);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[5] = (intptr_t)get(attrMaterial5);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[6] = (intptr_t)get(attrMaterial6);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[7] = (intptr_t)get(attrMaterial7);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[8] = (intptr_t)get(attrMaterial8);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[9] = (intptr_t)get(attrMaterial9);</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    mIspc.mMaterial[10] = (intptr_t)get(attrMaterial10);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    mIspc.mMaterial[11] = (intptr_t)get(attrMaterial11);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    mIspc.mMaterial[12] = (intptr_t)get(attrMaterial12);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    mIspc.mMaterial[13] = (intptr_t)get(attrMaterial13);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    mIspc.mMaterial[14] = (intptr_t)get(attrMaterial14);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    mIspc.mMaterial[15] = (intptr_t)get(attrMaterial15);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    mIspc.mMaterial[16] = (intptr_t)get(attrMaterial16);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    mIspc.mMaterial[17] = (intptr_t)get(attrMaterial17);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    mIspc.mMaterial[18] = (intptr_t)get(attrMaterial18);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    mIspc.mMaterial[19] = (intptr_t)get(attrMaterial19);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[10] = (intptr_t)get(attrMaterial10);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[11] = (intptr_t)get(attrMaterial11);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[12] = (intptr_t)get(attrMaterial12);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[13] = (intptr_t)get(attrMaterial13);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[14] = (intptr_t)get(attrMaterial14);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[15] = (intptr_t)get(attrMaterial15);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[16] = (intptr_t)get(attrMaterial16);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[17] = (intptr_t)get(attrMaterial17);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[18] = (intptr_t)get(attrMaterial18);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[19] = (intptr_t)get(attrMaterial19);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    mIspc.mMaterial[20] = (intptr_t)get(attrMaterial20);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    mIspc.mMaterial[21] = (intptr_t)get(attrMaterial21);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    mIspc.mMaterial[22] = (intptr_t)get(attrMaterial22);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    mIspc.mMaterial[23] = (intptr_t)get(attrMaterial23);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    mIspc.mMaterial[24] = (intptr_t)get(attrMaterial24);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    mIspc.mMaterial[25] = (intptr_t)get(attrMaterial25);</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    mIspc.mMaterial[26] = (intptr_t)get(attrMaterial26);</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    mIspc.mMaterial[27] = (intptr_t)get(attrMaterial27);</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    mIspc.mMaterial[28] = (intptr_t)get(attrMaterial28);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    mIspc.mMaterial[29] = (intptr_t)get(attrMaterial29);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[20] = (intptr_t)get(attrMaterial20);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[21] = (intptr_t)get(attrMaterial21);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[22] = (intptr_t)get(attrMaterial22);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[23] = (intptr_t)get(attrMaterial23);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[24] = (intptr_t)get(attrMaterial24);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[25] = (intptr_t)get(attrMaterial25);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[26] = (intptr_t)get(attrMaterial26);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[27] = (intptr_t)get(attrMaterial27);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[28] = (intptr_t)get(attrMaterial28);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[29] = (intptr_t)get(attrMaterial29);</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    mIspc.mMaterial[30] = (intptr_t)get(attrMaterial30);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    mIspc.mMaterial[31] = (intptr_t)get(attrMaterial31);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    mIspc.mMaterial[32] = (intptr_t)get(attrMaterial32);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    mIspc.mMaterial[33] = (intptr_t)get(attrMaterial33);</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    mIspc.mMaterial[34] = (intptr_t)get(attrMaterial34);</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    mIspc.mMaterial[35] = (intptr_t)get(attrMaterial35);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    mIspc.mMaterial[36] = (intptr_t)get(attrMaterial36);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    mIspc.mMaterial[37] = (intptr_t)get(attrMaterial37);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    mIspc.mMaterial[38] = (intptr_t)get(attrMaterial38);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    mIspc.mMaterial[39] = (intptr_t)get(attrMaterial39);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[30] = (intptr_t)get(attrMaterial30);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[31] = (intptr_t)get(attrMaterial31);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[32] = (intptr_t)get(attrMaterial32);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[33] = (intptr_t)get(attrMaterial33);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[34] = (intptr_t)get(attrMaterial34);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[35] = (intptr_t)get(attrMaterial35);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[36] = (intptr_t)get(attrMaterial36);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[37] = (intptr_t)get(attrMaterial37);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[38] = (intptr_t)get(attrMaterial38);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[39] = (intptr_t)get(attrMaterial39);</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    mIspc.mMaterial[40] = (intptr_t)get(attrMaterial40);</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    mIspc.mMaterial[41] = (intptr_t)get(attrMaterial41);</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    mIspc.mMaterial[42] = (intptr_t)get(attrMaterial42);</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    mIspc.mMaterial[43] = (intptr_t)get(attrMaterial43);</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    mIspc.mMaterial[44] = (intptr_t)get(attrMaterial44);</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    mIspc.mMaterial[45] = (intptr_t)get(attrMaterial45);</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    mIspc.mMaterial[46] = (intptr_t)get(attrMaterial46);</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    mIspc.mMaterial[47] = (intptr_t)get(attrMaterial47);</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    mIspc.mMaterial[48] = (intptr_t)get(attrMaterial48);</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    mIspc.mMaterial[49] = (intptr_t)get(attrMaterial49);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[40] = (intptr_t)get(attrMaterial40);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[41] = (intptr_t)get(attrMaterial41);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[42] = (intptr_t)get(attrMaterial42);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[43] = (intptr_t)get(attrMaterial43);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[44] = (intptr_t)get(attrMaterial44);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[45] = (intptr_t)get(attrMaterial45);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[46] = (intptr_t)get(attrMaterial46);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[47] = (intptr_t)get(attrMaterial47);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[48] = (intptr_t)get(attrMaterial48);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[49] = (intptr_t)get(attrMaterial49);</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    mIspc.mMaterial[50] = (intptr_t)get(attrMaterial50);</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    mIspc.mMaterial[51] = (intptr_t)get(attrMaterial51);</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    mIspc.mMaterial[52] = (intptr_t)get(attrMaterial52);</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    mIspc.mMaterial[53] = (intptr_t)get(attrMaterial53);</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    mIspc.mMaterial[54] = (intptr_t)get(attrMaterial54);</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    mIspc.mMaterial[55] = (intptr_t)get(attrMaterial55);</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    mIspc.mMaterial[56] = (intptr_t)get(attrMaterial56);</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    mIspc.mMaterial[57] = (intptr_t)get(attrMaterial57);</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    mIspc.mMaterial[58] = (intptr_t)get(attrMaterial58);</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    mIspc.mMaterial[59] = (intptr_t)get(attrMaterial59);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[50] = (intptr_t)get(attrMaterial50);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[51] = (intptr_t)get(attrMaterial51);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[52] = (intptr_t)get(attrMaterial52);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[53] = (intptr_t)get(attrMaterial53);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[54] = (intptr_t)get(attrMaterial54);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[55] = (intptr_t)get(attrMaterial55);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[56] = (intptr_t)get(attrMaterial56);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[57] = (intptr_t)get(attrMaterial57);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[58] = (intptr_t)get(attrMaterial58);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[59] = (intptr_t)get(attrMaterial59);</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    mIspc.mMaterial[60] = (intptr_t)get(attrMaterial60);</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    mIspc.mMaterial[61] = (intptr_t)get(attrMaterial61);</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    mIspc.mMaterial[62] = (intptr_t)get(attrMaterial62);</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    mIspc.mMaterial[63] = (intptr_t)get(attrMaterial63);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[60] = (intptr_t)get(attrMaterial60);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[61] = (intptr_t)get(attrMaterial61);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[62] = (intptr_t)get(attrMaterial62);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <a class="code hl_variable" href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a>.mMaterial[63] = (intptr_t)get(attrMaterial63);</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>}</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
@@ -210,7 +227,7 @@ $(function() {
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>}</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="keywordtype">float</span></div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>SwitchMaterial::presence(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="_switch_material_8cc.html#ab85685f4248f93f8138bd2ce9ea7e7bb">  165</a></span>SwitchMaterial::presence(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                         <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                         <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">moonray::shading::State</a>&amp; state)</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>{</div>
@@ -229,7 +246,7 @@ $(function() {
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>}</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="keywordtype">float</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>SwitchMaterial::ior(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="_switch_material_8cc.html#acaabe6276d4a24ad65d2ae84ff11ac9c">  184</a></span>SwitchMaterial::ior(<span class="keyword">const</span> scene_rdl2::rdl2::Material* self,</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                    <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">moonray::shading::State</a>&amp; state)</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>{</div>
@@ -253,7 +270,11 @@ $(function() {
 <div class="ttc" id="a_eval_shader_8h_html"><div class="ttname"><a href="_eval_shader_8h.html">EvalShader.h</a></div></div>
 <div class="ttc" id="a_material_api_8h_html"><div class="ttname"><a href="_material_api_8h.html">MaterialApi.h</a></div></div>
 <div class="ttc" id="a_switch_material_8cc_html_a3ff5faa338cb405fa5100c65a28d1b63"><div class="ttname"><a href="_switch_material_8cc.html#a3ff5faa338cb405fa5100c65a28d1b63">~SwitchMaterial</a></div><div class="ttdeci">~SwitchMaterial()</div><div class="ttdef"><b>Definition:</b> <a href="_switch_material_8cc_source.html#l00059">SwitchMaterial.cc:59</a></div></div>
+<div class="ttc" id="a_switch_material_8cc_html_ab4969dd7218a6fb4399d3322c3396add"><div class="ttname"><a href="_switch_material_8cc.html#ab4969dd7218a6fb4399d3322c3396add">mIspc</a></div><div class="ttdeci">ispc::SwitchMaterial mIspc</div><div class="ttdef"><b>Definition:</b> <a href="_switch_material_8cc_source.html#l00039">SwitchMaterial.cc:39</a></div></div>
+<div class="ttc" id="a_switch_material_8cc_html_ab85685f4248f93f8138bd2ce9ea7e7bb"><div class="ttname"><a href="_switch_material_8cc.html#ab85685f4248f93f8138bd2ce9ea7e7bb">presence</a></div><div class="ttdeci">static float presence(const scene_rdl2::rdl2::Material *self, moonray::shading::TLState *tls, const moonray::shading::State &amp;state)</div><div class="ttdef"><b>Definition:</b> <a href="_switch_material_8cc_source.html#l00165">SwitchMaterial.cc:165</a></div></div>
+<div class="ttc" id="a_switch_material_8cc_html_acaabe6276d4a24ad65d2ae84ff11ac9c"><div class="ttname"><a href="_switch_material_8cc.html#acaabe6276d4a24ad65d2ae84ff11ac9c">ior</a></div><div class="ttdeci">static float ior(const scene_rdl2::rdl2::Material *self, moonray::shading::TLState *tls, const moonray::shading::State &amp;state)</div><div class="ttdef"><b>Definition:</b> <a href="_switch_material_8cc_source.html#l00184">SwitchMaterial.cc:184</a></div></div>
 <div class="ttc" id="a_switch_material_8cc_html_acd36d7881ea8503d5c5824e7a5ad6c7e"><div class="ttname"><a href="_switch_material_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a></div><div class="ttdeci">virtual void update()</div></div>
+<div class="ttc" id="a_switch_material_8cc_html_ace9c5b20bbf47da39e211ce3fac3864d"><div class="ttname"><a href="_switch_material_8cc.html#ace9c5b20bbf47da39e211ce3fac3864d">shade</a></div><div class="ttdeci">static void shade(const scene_rdl2::rdl2::Material *self, moonray::shading::TLState *tls, const State &amp;state, BsdfBuilder &amp;bsdfBuilder)</div></div>
 <div class="ttc" id="a_switch_material_8cc_html_acf1d487b4e797da6caa0882b7c867721"><div class="ttname"><a href="_switch_material_8cc.html#acf1d487b4e797da6caa0882b7c867721">SwitchMaterial</a></div><div class="ttdeci">SwitchMaterial(const scene_rdl2::rdl2::SceneClass &amp;sceneClass, const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="_switch_material_8cc_source.html#l00047">SwitchMaterial.cc:47</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_builder_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_builder.html">moonray::shading::BsdfBuilder</a></div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_builder_8h_source.html#l00055">BsdfBuilder.h:56</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html">moonray::shading::State</a></div><div class="ttdef"><b>Definition:</b> <a href="bvh_2shading_2_state_8h_source.html#l00026">State.h:27</a></div></div>
@@ -266,9 +287,13 @@ $(function() {
 <div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_dispatch_computation_8cc_source.html#l00044">McrtRtDispatchComputation.cc:44</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00583">NPoint.h:583</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_6a52a9733426c3f6f80e6f7bd53e6965.html">dso</a></li><li class="navelem"><a class="el" href="dir_7e36e2561e5e17b014d83019c50ecdc0.html">material</a></li><li class="navelem"><a class="el" href="dir_e57958b84bb1e11aa16bd942afc5b482.html">Switch</a></li><li class="navelem"><a class="el" href="_switch_material_8cc.html">SwitchMaterial.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

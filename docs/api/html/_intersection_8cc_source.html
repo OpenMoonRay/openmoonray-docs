@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_970eb28d9e8309e3f9c24dd3deed196f.html">bvh</a></li><li class="navelem"><a class="el" href="dir_ad019efe26eb16360a7aab047243505d.html">shading</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_intersection_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">Intersection.cc</div></div>
 </div><!--header-->
@@ -50,7 +66,12 @@ $(function() {
 <a href="_intersection_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2002-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file Intersection.cc</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Eric Tabellion</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// $Id$</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">///</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_intersection_8h.html">Intersection.h</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
@@ -69,8 +90,8 @@ $(function() {
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1shading.html#a0d5b960fedcd85f9ff120b9968ba0314">   26</a></span><span class="keyword">constexpr</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="namespacemoonray_1_1shading.html#a0d5b960fedcd85f9ff120b9968ba0314">sIntersectionEpsilon</a> = 1e-5f;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">const</span> uint32_t Intersection::sPathTypeMask;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">const</span> uint32_t Intersection::sPathTypeOffset;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">const</span> uint32_t <a class="code hl_variable" href="classmoonray_1_1shading_1_1_intersection.html#aac06d2018616e781ed1e24d5d64fed84">Intersection::sPathTypeMask</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">const</span> uint32_t <a class="code hl_variable" href="classmoonray_1_1shading_1_1_intersection.html#a56a0e42b6d4fbafe7db0ea8eb1004cac">Intersection::sPathTypeOffset</a>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
@@ -274,7 +295,9 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a39e643807a93f6a0fcc3cabdca18563d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a39e643807a93f6a0fcc3cabdca18563d">moonray::shading::Intersection::hasGeometryDerivatives</a></div><div class="ttdeci">finline bool hasGeometryDerivatives() const</div><div class="ttdoc">Returns true if derivatives have been computed.</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00393">Intersection.h:393</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a435fe41d24dde5fed706fb31cc7a8020ac910e4f3227e755ce0b95e76903904f8"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a435fe41d24dde5fed706fb31cc7a8020ac910e4f3227e755ce0b95e76903904f8">moonray::shading::Intersection::GeomInitialized</a></div><div class="ttdeci">@ GeomInitialized</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00036">Intersection.h:36</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a435fe41d24dde5fed706fb31cc7a8020ada581c1776673384d6c8c613dbeebefa"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a435fe41d24dde5fed706fb31cc7a8020ada581c1776673384d6c8c613dbeebefa">moonray::shading::Intersection::UseAdaptNormal</a></div><div class="ttdeci">@ UseAdaptNormal</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00050">Intersection.h:50</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a56a0e42b6d4fbafe7db0ea8eb1004cac"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a56a0e42b6d4fbafe7db0ea8eb1004cac">moonray::shading::Intersection::sPathTypeOffset</a></div><div class="ttdeci">static const uint32_t sPathTypeOffset</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00634">Intersection.h:634</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_aa01dc6b701a610f9b5d8e6a330b70eff"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#aa01dc6b701a610f9b5d8e6a330b70eff">moonray::shading::Intersection::getNg</a></div><div class="ttdeci">finline const scene_rdl2::math::Vec3f &amp; getNg() const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00400">Intersection.h:400</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_aac06d2018616e781ed1e24d5d64fed84"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#aac06d2018616e781ed1e24d5d64fed84">moonray::shading::Intersection::sPathTypeMask</a></div><div class="ttdeci">static const uint32_t sPathTypeMask</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00631">Intersection.h:631</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_ab36a84c6e8e74268f8a23c2d2924f05e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#ab36a84c6e8e74268f8a23c2d2924f05e">moonray::shading::Intersection::print</a></div><div class="ttdeci">std::ostream &amp; print(std::ostream &amp;outs) const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8cc_source.html#l00127">Intersection.cc:127</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_ab9f0112694f866c141541d049a2e52d4"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#ab9f0112694f866c141541d049a2e52d4">moonray::shading::Intersection::adaptNormal</a></div><div class="ttdeci">scene_rdl2::math::Vec3f adaptNormal(const scene_rdl2::math::Vec3f &amp;Ns) const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8cc_source.html#l00152">Intersection.cc:152</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_ad5d8816f3edf1ed8f3eb26118080a38d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#ad5d8816f3edf1ed8f3eb26118080a38d">moonray::shading::Intersection::getP</a></div><div class="ttdeci">finline const scene_rdl2::math::Vec3f &amp; getP() const</div><div class="ttdoc">Differential Geometry.</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00399">Intersection.h:399</a></div></div>
@@ -287,9 +310,13 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1math_html"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html">scene_rdl2::math</a></div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8h_source.html#l00017">InputBuffer.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_b14206e23fbe78be729adaae3c0369fc.html">bvh</a></li><li class="navelem"><a class="el" href="dir_499edcba0d3485301ece78066854f3d4.html">shading</a></li><li class="navelem"><a class="el" href="_intersection_8cc.html">Intersection.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

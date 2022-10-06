@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,28 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html">EyeCausticBsdfLobe</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::EyeCausticBsdfLobe Class Reference</div></div>
 </div><!--header-->
@@ -142,6 +160,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a32cda370918eb2aa16ee7004b6bb7262 inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_lobe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a32cda370918eb2aa16ee7004b6bb7262">show</a> (std::ostream &amp;os, const std::string &amp;indent) const =0</td></tr>
 <tr class="separator:a32cda370918eb2aa16ee7004b6bb7262 inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_lobe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a125f06f0fb14ea7723d6137253f471ad"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::ReferenceFrame&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a125f06f0fb14ea7723d6137253f471ad">mFrame</a></td></tr>
+<tr class="separator:a125f06f0fb14ea7723d6137253f471ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d7cac3f557cdcfe648dd4bac0a96183"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a2d7cac3f557cdcfe648dd4bac0a96183">mCausticColor</a></td></tr>
+<tr class="separator:a2d7cac3f557cdcfe648dd4bac0a96183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1bf7125a449015cedf3747ae2575743"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Vec3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#af1bf7125a449015cedf3747ae2575743">mN</a></td></tr>
+<tr class="separator:af1bf7125a449015cedf3747ae2575743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea50c3146d7eb7953d22710d752a6f7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a8ea50c3146d7eb7953d22710d752a6f7">mExponent</a></td></tr>
+<tr class="separator:a8ea50c3146d7eb7953d22710d752a6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3fb5597e4a738ffb7050cd4cef53dbd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#ae3fb5597e4a738ffb7050cd4cef53dbd">mNormalizationFactor</a></td></tr>
+<tr class="separator:ae3fb5597e4a738ffb7050cd4cef53dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af531c2b116f986beb5f8339fb837936e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#af531c2b116f986beb5f8339fb837936e">mdDFactor</a></td></tr>
+<tr class="separator:af531c2b116f986beb5f8339fb837936e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a6c874b4e1a3be7d6cc8260b34ef505da"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a6c874b4e1a3be7d6cc8260b34ef505da">sdDFactorMin</a> = 1.0f</td></tr>
+<tr class="separator:a6c874b4e1a3be7d6cc8260b34ef505da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16919b12f07d8a00550bd3148ce70bc5"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a16919b12f07d8a00550bd3148ce70bc5">sdDFactorMax</a> = 8.0f</td></tr>
+<tr class="separator:a16919b12f07d8a00550bd3148ce70bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a624cc8bc5285fafadf05bf5351151254"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a624cc8bc5285fafadf05bf5351151254">sdDFactorSlope</a> = (<a class="el" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a16919b12f07d8a00550bd3148ce70bc5">sdDFactorMax</a> - <a class="el" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a6c874b4e1a3be7d6cc8260b34ef505da">sdDFactorMin</a>)</td></tr>
+<tr class="separator:a624cc8bc5285fafadf05bf5351151254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classmoonray_1_1shading_1_1_bsdf_lobe"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmoonray_1_1shading_1_1_bsdf_lobe')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">moonray::shading::BsdfLobe</a></td></tr>
@@ -232,7 +274,42 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_eye_caustic_8h_source.html#l00046">46</a> of file <a class="el" href="_bsdf_eye_caustic_8h_source.html">BsdfEyeCaustic.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   49</span>                                             :</div>
+<div class="line"><span class="lineno">   50</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a68e07445ce28319f1e0269d13d0a9c5f">BsdfLobe</a>(<a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">Type</a>(<a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896">REFLECTION</a> | <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa5dfce546f93a2a18aee27e4b801c198b">GLOSSY</a>),</div>
+<div class="line"><span class="lineno">   51</span>                 <a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#ab2ca5c1b46a879084da7aeb7f10d6476">DifferentialFlags</a>(0),</div>
+<div class="line"><span class="lineno">   52</span>                 <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">   53</span>                 <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fad2f7ee852fac86eed528a89be06c56fa">PROPERTY_NORMAL</a>),</div>
+<div class="line"><span class="lineno">   54</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a125f06f0fb14ea7723d6137253f471ad">mFrame</a>(irisN),</div>
+<div class="line"><span class="lineno">   55</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a2d7cac3f557cdcfe648dd4bac0a96183">mCausticColor</a>(causticColor),</div>
+<div class="line"><span class="lineno">   56</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#af1bf7125a449015cedf3747ae2575743">mN</a>(N)</div>
+<div class="line"><span class="lineno">   57</span>        {</div>
+<div class="line"><span class="lineno">   58</span>            <span class="comment">// As mentioned in [2], Phong exponents relates to Beckmann roughness using:</span></div>
+<div class="line"><span class="lineno">   59</span>            <span class="comment">// exponent = 2 * pow(roughness, -2) -2</span></div>
+<div class="line"><span class="lineno">   60</span>            <span class="comment">// Using a minimum roughness of 0.01, gives us the maximum exponent allowed for this lobe.</span></div>
+<div class="line"><span class="lineno">   61</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> maxExponent = 20000.0f;</div>
+<div class="line"><span class="lineno">   62</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a8ea50c3146d7eb7953d22710d752a6f7">mExponent</a> = scene_rdl2::math::clamp(exponent, 0.1f, maxExponent);</div>
+<div class="line"><span class="lineno">   63</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> normalizedExponent = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a8ea50c3146d7eb7953d22710d752a6f7">mExponent</a> * scene_rdl2::math::rcp(maxExponent);</div>
+<div class="line"><span class="lineno">   64</span>            <span class="comment">// Use a directional differential scale that varies with roughness</span></div>
+<div class="line"><span class="lineno">   65</span>            <span class="comment">// Taken from CookTorrance roughness-based differential computation</span></div>
+<div class="line"><span class="lineno">   66</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#af531c2b116f986beb5f8339fb837936e">mdDFactor</a> = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a6c874b4e1a3be7d6cc8260b34ef505da">sdDFactorMin</a> + normalizedExponent * <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a624cc8bc5285fafadf05bf5351151254">sdDFactorSlope</a>;</div>
+<div class="line"><span class="lineno">   67</span> </div>
+<div class="line"><span class="lineno">   68</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#ae3fb5597e4a738ffb7050cd4cef53dbd">mNormalizationFactor</a> = (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a8ea50c3146d7eb7953d22710d752a6f7">mExponent</a> + 2) * scene_rdl2::math::sOneOverTwoPi;</div>
+<div class="line"><span class="lineno">   69</span>        }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">moonray::shading::BsdfLobe::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00074">Bsdf.h:74</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896">moonray::shading::BsdfLobe::REFLECTION</a></div><div class="ttdeci">@ REFLECTION</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00079">Bsdf.h:79</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43aa5dfce546f93a2a18aee27e4b801c198b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa5dfce546f93a2a18aee27e4b801c198b">moonray::shading::BsdfLobe::GLOSSY</a></div><div class="ttdeci">@ GLOSSY</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00087">Bsdf.h:87</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a2fadd67ac6fd01a58026eb335f688c3fad2f7ee852fac86eed528a89be06c56fa"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fad2f7ee852fac86eed528a89be06c56fa">moonray::shading::BsdfLobe::PROPERTY_NORMAL</a></div><div class="ttdeci">@ PROPERTY_NORMAL</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00112">Bsdf.h:112</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a68e07445ce28319f1e0269d13d0a9c5f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a68e07445ce28319f1e0269d13d0a9c5f">moonray::shading::BsdfLobe::BsdfLobe</a></div><div class="ttdeci">BsdfLobe(Type type, DifferentialFlags diffFlags, bool isSpherical, int32_t propertyFlags)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8cc_source.html#l00024">Bsdf.cc:24</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_ab2ca5c1b46a879084da7aeb7f10d6476"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#ab2ca5c1b46a879084da7aeb7f10d6476">moonray::shading::BsdfLobe::DifferentialFlags</a></div><div class="ttdeci">DifferentialFlags</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00101">Bsdf.h:101</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe_html_a125f06f0fb14ea7723d6137253f471ad"><div class="ttname"><a href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a125f06f0fb14ea7723d6137253f471ad">moonray::shading::EyeCausticBsdfLobe::mFrame</a></div><div class="ttdeci">scene_rdl2::math::ReferenceFrame mFrame</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_eye_caustic_8h_source.html#l00197">BsdfEyeCaustic.h:197</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe_html_a2d7cac3f557cdcfe648dd4bac0a96183"><div class="ttname"><a href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a2d7cac3f557cdcfe648dd4bac0a96183">moonray::shading::EyeCausticBsdfLobe::mCausticColor</a></div><div class="ttdeci">scene_rdl2::math::Color mCausticColor</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_eye_caustic_8h_source.html#l00198">BsdfEyeCaustic.h:198</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe_html_a624cc8bc5285fafadf05bf5351151254"><div class="ttname"><a href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a624cc8bc5285fafadf05bf5351151254">moonray::shading::EyeCausticBsdfLobe::sdDFactorSlope</a></div><div class="ttdeci">static constexpr float sdDFactorSlope</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_eye_caustic_8h_source.html#l00195">BsdfEyeCaustic.h:195</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe_html_a6c874b4e1a3be7d6cc8260b34ef505da"><div class="ttname"><a href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a6c874b4e1a3be7d6cc8260b34ef505da">moonray::shading::EyeCausticBsdfLobe::sdDFactorMin</a></div><div class="ttdeci">static constexpr float sdDFactorMin</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_eye_caustic_8h_source.html#l00193">BsdfEyeCaustic.h:193</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe_html_a8ea50c3146d7eb7953d22710d752a6f7"><div class="ttname"><a href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a8ea50c3146d7eb7953d22710d752a6f7">moonray::shading::EyeCausticBsdfLobe::mExponent</a></div><div class="ttdeci">float mExponent</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_eye_caustic_8h_source.html#l00200">BsdfEyeCaustic.h:200</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe_html_ae3fb5597e4a738ffb7050cd4cef53dbd"><div class="ttname"><a href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#ae3fb5597e4a738ffb7050cd4cef53dbd">moonray::shading::EyeCausticBsdfLobe::mNormalizationFactor</a></div><div class="ttdeci">float mNormalizationFactor</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_eye_caustic_8h_source.html#l00201">BsdfEyeCaustic.h:201</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe_html_af1bf7125a449015cedf3747ae2575743"><div class="ttname"><a href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#af1bf7125a449015cedf3747ae2575743">moonray::shading::EyeCausticBsdfLobe::mN</a></div><div class="ttdeci">scene_rdl2::math::Vec3f mN</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_eye_caustic_8h_source.html#l00199">BsdfEyeCaustic.h:199</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe_html_af531c2b116f986beb5f8339fb837936e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#af531c2b116f986beb5f8339fb837936e">moonray::shading::EyeCausticBsdfLobe::mdDFactor</a></div><div class="ttdeci">float mdDFactor</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_eye_caustic_8h_source.html#l00202">BsdfEyeCaustic.h:202</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -264,7 +341,13 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#ad29a9cc32cd6e0ae3306fca7036a7177">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_eye_caustic_8h_source.html#l00135">135</a> of file <a class="el" href="_bsdf_eye_caustic_8h_source.html">BsdfEyeCaustic.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  136</span>    {</div>
+<div class="line"><span class="lineno">  137</span>        <span class="keywordtype">float</span> cosThetaWo = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#af1bf7125a449015cedf3747ae2575743">mN</a>, slice.getWo());</div>
+<div class="line"><span class="lineno">  138</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a2d7cac3f557cdcfe648dd4bac0a96183">mCausticColor</a> * <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a27762201a758a03b80bef6e822ecee11">computeScaleAndFresnel</a>(scene_rdl2::math::abs(cosThetaWo));</div>
+<div class="line"><span class="lineno">  139</span>    }</div>
+<div class="ttc" id="a_n_point_8h_html_a16747d68c1e06270b0ed335d631b66f3"><div class="ttname"><a href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a></div><div class="ttdeci">float dot(const NPoint&lt; D &gt; &amp;a, const NPoint&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00271">NPoint.h:271</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a27762201a758a03b80bef6e822ecee11"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a27762201a758a03b80bef6e822ecee11">moonray::shading::BsdfLobe::computeScaleAndFresnel</a></div><div class="ttdeci">finline scene_rdl2::math::Color computeScaleAndFresnel(float cosWi) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00179">Bsdf.h:179</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a19f0694fb38a6abaa1fc1da30d511007" name="a19f0694fb38a6abaa1fc1da30d511007"></a>
@@ -341,7 +424,14 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a53e300f416eddc450bef32b46f45e3ef">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_eye_caustic_8h_source.html#l00141">141</a> of file <a class="el" href="_bsdf_eye_caustic_8h_source.html">BsdfEyeCaustic.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  144</span>    {</div>
+<div class="line"><span class="lineno">  145</span>        <span class="comment">// Light reflected along N, D = N</span></div>
+<div class="line"><span class="lineno">  146</span>        <span class="comment">// Scaled by roughness</span></div>
+<div class="line"><span class="lineno">  147</span>        dDdx = dNdx * <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#af531c2b116f986beb5f8339fb837936e">mdDFactor</a>;</div>
+<div class="line"><span class="lineno">  148</span>        dDdy = dNdy * <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#af531c2b116f986beb5f8339fb837936e">mdDFactor</a>;</div>
+<div class="line"><span class="lineno">  149</span> </div>
+<div class="line"><span class="lineno">  150</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4905ed499970b3e6fb776d92741f4f18" name="a4905ed499970b3e6fb776d92741f4f18"></a>
@@ -394,7 +484,41 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a9c4e3bbff247bebc35005287dd23c6f9">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_eye_caustic_8h_source.html#l00074">74</a> of file <a class="el" href="_bsdf_eye_caustic_8h_source.html">BsdfEyeCaustic.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   75</span>    {</div>
+<div class="line"><span class="lineno">   76</span>        <span class="comment">// Prepare for early exit</span></div>
+<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">if</span> (pdf != NULL) {</div>
+<div class="line"><span class="lineno">   78</span>            *pdf = 0.0f;</div>
+<div class="line"><span class="lineno">   79</span>        }</div>
+<div class="line"><span class="lineno">   80</span> </div>
+<div class="line"><span class="lineno">   81</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaO = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#af1bf7125a449015cedf3747ae2575743">mN</a>, slice.getWo());</div>
+<div class="line"><span class="lineno">   82</span>        <span class="keywordflow">if</span> (cosThetaO &lt;= 0.0f) <span class="keywordflow">return</span> scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> eyeCausticBrdfCosThetaI = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a125f06f0fb14ea7723d6137253f471ad">mFrame</a>.getN(), wi);</div>
+<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">if</span> (eyeCausticBrdfCosThetaI &lt;= 0.0f)      <span class="keywordflow">return</span> scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>        <span class="comment">// Normalization Factor from [1]</span></div>
+<div class="line"><span class="lineno">   88</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> normalizedPhong = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#ae3fb5597e4a738ffb7050cd4cef53dbd">mNormalizationFactor</a> * powf(eyeCausticBrdfCosThetaI, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a8ea50c3146d7eb7953d22710d752a6f7">mExponent</a>);</div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   90</span>        <span class="comment">// Note: we assume this lobe has been setup with a OneMinus*Fresnel</span></div>
+<div class="line"><span class="lineno">   91</span>        <span class="comment">// as we want to use 1 - specular_fresnel. Also notice we use</span></div>
+<div class="line"><span class="lineno">   92</span>        <span class="comment">// cosThetaWo to evaluate the fresnel term, as an approximation of what</span></div>
+<div class="line"><span class="lineno">   93</span>        <span class="comment">// hDotWi would be for the specular lobe.</span></div>
+<div class="line"><span class="lineno">   94</span>        <span class="keyword">const</span> scene_rdl2::math::Color f = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a2d7cac3f557cdcfe648dd4bac0a96183">mCausticColor</a> * <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a27762201a758a03b80bef6e822ecee11">computeScaleAndFresnel</a>(cosThetaO) * normalizedPhong *</div>
+<div class="line"><span class="lineno">   95</span>                (slice.getIncludeCosineTerm() ? eyeCausticBrdfCosThetaI : 1.0);</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>        <span class="comment">// Compute pdf of sampling ([1])</span></div>
+<div class="line"><span class="lineno">   98</span>        <span class="comment">// section 3.3.1 in [1])</span></div>
+<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">if</span> (pdf != NULL) {</div>
+<div class="line"><span class="lineno">  100</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> normalizationFactor = (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a8ea50c3146d7eb7953d22710d752a6f7">mExponent</a> + 1) * scene_rdl2::math::sOneOverTwoPi;</div>
+<div class="line"><span class="lineno">  101</span>            *pdf = normalizationFactor * powf(eyeCausticBrdfCosThetaI, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a8ea50c3146d7eb7953d22710d752a6f7">mExponent</a>);</div>
+<div class="line"><span class="lineno">  102</span>        }</div>
+<div class="line"><span class="lineno">  103</span> </div>
+<div class="line"><span class="lineno">  104</span>        <span class="comment">// Soften hard shadow terminator due to shading normals</span></div>
+<div class="line"><span class="lineno">  105</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> Gs = slice.computeShadowTerminatorFix(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a125f06f0fb14ea7723d6137253f471ad">mFrame</a>.getN(), wi);</div>
+<div class="line"><span class="lineno">  106</span> </div>
+<div class="line"><span class="lineno">  107</span>        <span class="keywordflow">return</span> Gs * f;</div>
+<div class="line"><span class="lineno">  108</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a63d5a7b4d5a58ff53cca1253f99d1980" name="a63d5a7b4d5a58ff53cca1253f99d1980"></a>
@@ -434,7 +558,26 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a5f94646dff64ff6b9539c9baac68135e">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_eye_caustic_8h_source.html#l00152">152</a> of file <a class="el" href="_bsdf_eye_caustic_8h_source.html">BsdfEyeCaustic.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  153</span>    {</div>
+<div class="line"><span class="lineno">  154</span>        <span class="keywordtype">bool</span> handled = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  155</span>        <span class="keywordflow">switch</span> (property)</div>
+<div class="line"><span class="lineno">  156</span>        {</div>
+<div class="line"><span class="lineno">  157</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fad2f7ee852fac86eed528a89be06c56fa">PROPERTY_NORMAL</a>:</div>
+<div class="line"><span class="lineno">  158</span>            {</div>
+<div class="line"><span class="lineno">  159</span>                *dest       = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a125f06f0fb14ea7723d6137253f471ad">mFrame</a>.getN().x;</div>
+<div class="line"><span class="lineno">  160</span>                *(dest + 1) = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a125f06f0fb14ea7723d6137253f471ad">mFrame</a>.getN().y;</div>
+<div class="line"><span class="lineno">  161</span>                *(dest + 2) = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a125f06f0fb14ea7723d6137253f471ad">mFrame</a>.getN().z;</div>
+<div class="line"><span class="lineno">  162</span>            }</div>
+<div class="line"><span class="lineno">  163</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  164</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  165</span>            handled = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a5f94646dff64ff6b9539c9baac68135e">BsdfLobe::getProperty</a>(property, dest);</div>
+<div class="line"><span class="lineno">  166</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  167</span>        }</div>
+<div class="line"><span class="lineno">  168</span> </div>
+<div class="line"><span class="lineno">  169</span>        <span class="keywordflow">return</span> handled;</div>
+<div class="line"><span class="lineno">  170</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a5f94646dff64ff6b9539c9baac68135e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a5f94646dff64ff6b9539c9baac68135e">moonray::shading::BsdfLobe::getProperty</a></div><div class="ttdeci">virtual bool getProperty(Property property, float *dest) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8cc_source.html#l00056">Bsdf.cc:56</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9379ee48b9e8654644368f0dbff429c6" name="a9379ee48b9e8654644368f0dbff429c6"></a>
@@ -501,7 +644,29 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a59f21649b0273a5e24a19b3e29aee570">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_eye_caustic_8h_source.html#l00111">111</a> of file <a class="el" href="_bsdf_eye_caustic_8h_source.html">BsdfEyeCaustic.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  113</span>    {</div>
+<div class="line"><span class="lineno">  114</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> cosNO = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#af1bf7125a449015cedf3747ae2575743">mN</a>, slice.getWo());</div>
+<div class="line"><span class="lineno">  115</span>        <span class="keywordflow">if</span> (cosNO &lt;= 0.0f) {</div>
+<div class="line"><span class="lineno">  116</span>            wi = scene_rdl2::math::Vec3f(scene_rdl2::math::zero);</div>
+<div class="line"><span class="lineno">  117</span>            pdf = 0.0f;</div>
+<div class="line"><span class="lineno">  118</span>            <span class="keywordflow">return</span> scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">  119</span>        }</div>
+<div class="line"><span class="lineno">  120</span> </div>
+<div class="line"><span class="lineno">  121</span>        <span class="comment">// see [1] for PDF inversion</span></div>
+<div class="line"><span class="lineno">  122</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaM = scene_rdl2::math::pow(r1, scene_rdl2::math::rcp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a8ea50c3146d7eb7953d22710d752a6f7">mExponent</a>+1));</div>
+<div class="line"><span class="lineno">  123</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> sinThetaM = scene_rdl2::math::sqrt(1 - cosThetaM*cosThetaM);</div>
+<div class="line"><span class="lineno">  124</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> phiM = scene_rdl2::math::sTwoPi * r2;</div>
+<div class="line"><span class="lineno">  125</span> </div>
+<div class="line"><span class="lineno">  126</span>        scene_rdl2::math::Vec3f m = <a class="code hl_function" href="namespacemoonray_1_1shading.html#afab5611fd6c3c0b984fa12f088b62c20">computeLocalSphericalDirection</a>(cosThetaM, sinThetaM, phiM);</div>
+<div class="line"><span class="lineno">  127</span> </div>
+<div class="line"><span class="lineno">  128</span>        <span class="comment">// Sample along the normal</span></div>
+<div class="line"><span class="lineno">  129</span>        wi = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a125f06f0fb14ea7723d6137253f471ad">mFrame</a>.localToGlobal(m);</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a4905ed499970b3e6fb776d92741f4f18">eval</a>(slice, wi, &amp;pdf);</div>
+<div class="line"><span class="lineno">  132</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe_html_a4905ed499970b3e6fb776d92741f4f18"><div class="ttname"><a href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a4905ed499970b3e6fb776d92741f4f18">moonray::shading::EyeCausticBsdfLobe::eval</a></div><div class="ttdeci">scene_rdl2::math::Color eval(const BsdfSlice &amp;slice, const scene_rdl2::math::Vec3f &amp;wi, float *pdf=NULL) const override</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_eye_caustic_8h_source.html#l00074">BsdfEyeCaustic.h:74</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_afab5611fd6c3c0b984fa12f088b62c20"><div class="ttname"><a href="namespacemoonray_1_1shading.html#afab5611fd6c3c0b984fa12f088b62c20">moonray::shading::computeLocalSphericalDirection</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f computeLocalSphericalDirection(float cosTheta, float sinTheta, float phi)</div><div class="ttdoc">See ReferenceFrame for local sphere parameterization (Z-up)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00215">Util.h:215</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a89500e2b5f0a6c47a2f80bea6f52df75" name="a89500e2b5f0a6c47a2f80bea6f52df75"></a>
@@ -541,6 +706,241 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a32cda370918eb2aa16ee7004b6bb7262">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_eye_caustic_8h_source.html#l00172">172</a> of file <a class="el" href="_bsdf_eye_caustic_8h_source.html">BsdfEyeCaustic.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  173</span>    {</div>
+<div class="line"><span class="lineno">  174</span>        <span class="keyword">const</span> scene_rdl2::math::Color&amp; scale = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aec44d64391394390189c9f6bbc42f671">getScale</a>();</div>
+<div class="line"><span class="lineno">  175</span>        <span class="keyword">const</span> Fresnel * <span class="keyword">const</span> fresnel = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">getFresnel</a>();</div>
+<div class="line"><span class="lineno">  176</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;[EyeCausticBsdfLobe]\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  177</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;scale: &quot;</span></div>
+<div class="line"><span class="lineno">  178</span>            &lt;&lt; scale.r &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; scale.g &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; scale.b &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  179</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;caustic color: &quot;</span></div>
+<div class="line"><span class="lineno">  180</span>            &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a2d7cac3f557cdcfe648dd4bac0a96183">mCausticColor</a>.r &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a2d7cac3f557cdcfe648dd4bac0a96183">mCausticColor</a>.g &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a2d7cac3f557cdcfe648dd4bac0a96183">mCausticColor</a>.b &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  181</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;exponent: &quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a8ea50c3146d7eb7953d22710d752a6f7">mExponent</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  182</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;iris N: &quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a125f06f0fb14ea7723d6137253f471ad">mFrame</a>.getN().x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a125f06f0fb14ea7723d6137253f471ad">mFrame</a>.getN().y &lt;&lt; <span class="stringliteral">&quot; &quot;</span>&lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a125f06f0fb14ea7723d6137253f471ad">mFrame</a>.getN().z &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  183</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;N: &quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#af1bf7125a449015cedf3747ae2575743">mN</a>.x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#af1bf7125a449015cedf3747ae2575743">mN</a>.x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#af1bf7125a449015cedf3747ae2575743">mN</a>.z &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  184</span> </div>
+<div class="line"><span class="lineno">  185</span>        <span class="keywordflow">if</span> (fresnel) {</div>
+<div class="line"><span class="lineno">  186</span>            fresnel-&gt;show(os, indent + <span class="stringliteral">&quot;    &quot;</span>);</div>
+<div class="line"><span class="lineno">  187</span>        }</div>
+<div class="line"><span class="lineno">  188</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a1325952270070249bd3a4197660a1d7b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">moonray::shading::BsdfLobe::getFresnel</a></div><div class="ttdeci">finline const Fresnel * getFresnel() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00164">Bsdf.h:164</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_aec44d64391394390189c9f6bbc42f671"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aec44d64391394390189c9f6bbc42f671">moonray::shading::BsdfLobe::getScale</a></div><div class="ttdeci">finline const scene_rdl2::math::Color &amp; getScale() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00160">Bsdf.h:160</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2d7cac3f557cdcfe648dd4bac0a96183" name="a2d7cac3f557cdcfe648dd4bac0a96183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d7cac3f557cdcfe648dd4bac0a96183">&#9670;&#160;</a></span>mCausticColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Color moonray::shading::EyeCausticBsdfLobe::mCausticColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_eye_caustic_8h_source.html#l00198">198</a> of file <a class="el" href="_bsdf_eye_caustic_8h_source.html">BsdfEyeCaustic.h</a>.</p>
+
+</div>
+</div>
+<a id="af531c2b116f986beb5f8339fb837936e" name="af531c2b116f986beb5f8339fb837936e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af531c2b116f986beb5f8339fb837936e">&#9670;&#160;</a></span>mdDFactor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::EyeCausticBsdfLobe::mdDFactor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_eye_caustic_8h_source.html#l00202">202</a> of file <a class="el" href="_bsdf_eye_caustic_8h_source.html">BsdfEyeCaustic.h</a>.</p>
+
+</div>
+</div>
+<a id="a8ea50c3146d7eb7953d22710d752a6f7" name="a8ea50c3146d7eb7953d22710d752a6f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ea50c3146d7eb7953d22710d752a6f7">&#9670;&#160;</a></span>mExponent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::EyeCausticBsdfLobe::mExponent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_eye_caustic_8h_source.html#l00200">200</a> of file <a class="el" href="_bsdf_eye_caustic_8h_source.html">BsdfEyeCaustic.h</a>.</p>
+
+</div>
+</div>
+<a id="a125f06f0fb14ea7723d6137253f471ad" name="a125f06f0fb14ea7723d6137253f471ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a125f06f0fb14ea7723d6137253f471ad">&#9670;&#160;</a></span>mFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::ReferenceFrame moonray::shading::EyeCausticBsdfLobe::mFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_eye_caustic_8h_source.html#l00197">197</a> of file <a class="el" href="_bsdf_eye_caustic_8h_source.html">BsdfEyeCaustic.h</a>.</p>
+
+</div>
+</div>
+<a id="af1bf7125a449015cedf3747ae2575743" name="af1bf7125a449015cedf3747ae2575743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1bf7125a449015cedf3747ae2575743">&#9670;&#160;</a></span>mN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Vec3f moonray::shading::EyeCausticBsdfLobe::mN</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_eye_caustic_8h_source.html#l00199">199</a> of file <a class="el" href="_bsdf_eye_caustic_8h_source.html">BsdfEyeCaustic.h</a>.</p>
+
+</div>
+</div>
+<a id="ae3fb5597e4a738ffb7050cd4cef53dbd" name="ae3fb5597e4a738ffb7050cd4cef53dbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3fb5597e4a738ffb7050cd4cef53dbd">&#9670;&#160;</a></span>mNormalizationFactor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::EyeCausticBsdfLobe::mNormalizationFactor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_eye_caustic_8h_source.html#l00201">201</a> of file <a class="el" href="_bsdf_eye_caustic_8h_source.html">BsdfEyeCaustic.h</a>.</p>
+
+</div>
+</div>
+<a id="a16919b12f07d8a00550bd3148ce70bc5" name="a16919b12f07d8a00550bd3148ce70bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16919b12f07d8a00550bd3148ce70bc5">&#9670;&#160;</a></span>sdDFactorMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float moonray::shading::EyeCausticBsdfLobe::sdDFactorMax = 8.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_eye_caustic_8h_source.html#l00194">194</a> of file <a class="el" href="_bsdf_eye_caustic_8h_source.html">BsdfEyeCaustic.h</a>.</p>
+
+</div>
+</div>
+<a id="a6c874b4e1a3be7d6cc8260b34ef505da" name="a6c874b4e1a3be7d6cc8260b34ef505da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c874b4e1a3be7d6cc8260b34ef505da">&#9670;&#160;</a></span>sdDFactorMin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float moonray::shading::EyeCausticBsdfLobe::sdDFactorMin = 1.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_eye_caustic_8h_source.html#l00193">193</a> of file <a class="el" href="_bsdf_eye_caustic_8h_source.html">BsdfEyeCaustic.h</a>.</p>
+
+</div>
+</div>
+<a id="a624cc8bc5285fafadf05bf5351151254" name="a624cc8bc5285fafadf05bf5351151254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a624cc8bc5285fafadf05bf5351151254">&#9670;&#160;</a></span>sdDFactorSlope</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float moonray::shading::EyeCausticBsdfLobe::sdDFactorSlope = (<a class="el" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a16919b12f07d8a00550bd3148ce70bc5">sdDFactorMax</a> - <a class="el" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html#a6c874b4e1a3be7d6cc8260b34ef505da">sdDFactorMin</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_eye_caustic_8h_source.html#l00195">195</a> of file <a class="el" href="_bsdf_eye_caustic_8h_source.html">BsdfEyeCaustic.h</a>.</p>
 
 </div>
 </div>
@@ -548,9 +948,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/bsdf/<a class="el" href="_bsdf_eye_caustic_8h_source.html">BsdfEyeCaustic.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_eye_caustic_bsdf_lobe.html">EyeCausticBsdfLobe</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

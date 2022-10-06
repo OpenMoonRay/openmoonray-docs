@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,30 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_6980d87992044b0cad36d4edf582ac03.html">common</a></li><li class="navelem"><a class="el" href="dir_f09188fccba6e1a5150d42534f4f9ba7.html">mcrt_util</a></li><li class="navelem"><a class="el" href="dir_5d76758dfd2a407b849076a539e2f504.html">unittest</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('test__ring__buffer_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">test_ring_buffer.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -64,15 +83,122 @@ $(function() {
 </div>
 <p><a href="test__ring__buffer_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_stop_watch.html">anonymous_namespace{test_ring_buffer.cc}::StopWatch</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_test_exception.html">anonymous_namespace{test_ring_buffer.cc}::TestException</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_generic_input_iterator.html">anonymous_namespace{test_ring_buffer.cc}::GenericInputIterator&lt; Container &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_test_data_no_exceptions.html">anonymous_namespace{test_ring_buffer.cc}::TestDataNoExceptions</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_test_data_exceptions.html">anonymous_namespace{test_ring_buffer.cc}::TestDataExceptions</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_test_data_copy_exceptions.html">anonymous_namespace{test_ring_buffer.cc}::TestDataCopyExceptions</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_test_data_move_exceptions.html">anonymous_namespace{test_ring_buffer.cc}::TestDataMoveExceptions</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_random_time.html">anonymous_namespace{test_ring_buffer.cc}::RandomTime&lt; Duration &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_work_distributor.html">anonymous_namespace{test_ring_buffer.cc}::WorkDistributor&lt; IntType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_work_distributor_1_1_segment.html">anonymous_namespace{test_ring_buffer.cc}::WorkDistributor&lt; IntType &gt;::Segment</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer.html">anonymous_namespace{test_ring_buffer.cc}::Emplacer&lt; DataType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_no_exceptions_01_4.html">anonymous_namespace{test_ring_buffer.cc}::Emplacer&lt; TestDataNoExceptions &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_exceptions_01_4.html">anonymous_namespace{test_ring_buffer.cc}::Emplacer&lt; TestDataExceptions &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_copy_exceptions_01_4.html">anonymous_namespace{test_ring_buffer.cc}::Emplacer&lt; TestDataCopyExceptions &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_move_exceptions_01_4.html">anonymous_namespace{test_ring_buffer.cc}::Emplacer&lt; TestDataMoveExceptions &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_producer_test.html">anonymous_namespace{test_ring_buffer.cc}::ProducerTest&lt; T, Traits &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_consumer_test.html">anonymous_namespace{test_ring_buffer.cc}::ConsumerTest&lt; T, Traits &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_input_iterator.html">anonymous_namespace{test_ring_buffer.cc}::BatchInsertInputIterator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_forward_iterator.html">anonymous_namespace{test_ring_buffer.cc}::BatchInsertForwardIterator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_random_access_iterator.html">anonymous_namespace{test_ring_buffer.cc}::BatchInsertRandomAccessIterator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_complete_random_access_iterator.html">anonymous_namespace{test_ring_buffer.cc}::BatchInsertCompleteRandomAccessIterator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacetiming"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetiming.html">timing</a></td></tr>
+<tr class="memitem:namespaceanonymous__namespace_02test__ring__buffer_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html">anonymous_namespace{test_ring_buffer.cc}</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceanonymous__namespace_02test__ring__buffer_8cc_03_1_1timing"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03_1_1timing.html">anonymous_namespace{test_ring_buffer.cc}::timing</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ab37303f72d9ffd6cbca8ade6f34e7fac"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Traits &gt; </td></tr>
+<tr class="memitem:ab37303f72d9ffd6cbca8ade6f34e7fac"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#ab37303f72d9ffd6cbca8ade6f34e7fac">anonymous_namespace{test_ring_buffer.cc}::buffer_test_t</a> = <a class="el" href="class_ring_buffer_impl.html">RingBufferImpl</a>&lt; T, k_log_queue_size_test, Traits &gt;</td></tr>
+<tr class="separator:ab37303f72d9ffd6cbca8ade6f34e7fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5436ae7de8b411b4518c187abfe3b78b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03_1_1timing.html#a5436ae7de8b411b4518c187abfe3b78b">anonymous_namespace{test_ring_buffer.cc}::timing::representation_t</a> = long double</td></tr>
+<tr class="separator:a5436ae7de8b411b4518c187abfe3b78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698cb3cbbe61dfb5a08233d4dde3cf6b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03_1_1timing.html#a698cb3cbbe61dfb5a08233d4dde3cf6b">anonymous_namespace{test_ring_buffer.cc}::timing::clock_t</a> = std::chrono::steady_clock</td></tr>
+<tr class="separator:a698cb3cbbe61dfb5a08233d4dde3cf6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef00ea07f225ea5f421a1eb49847a5b0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03_1_1timing.html#aef00ea07f225ea5f421a1eb49847a5b0">anonymous_namespace{test_ring_buffer.cc}::timing::time_point_t</a> = std::chrono::time_point&lt; clock_t &gt;</td></tr>
+<tr class="separator:aef00ea07f225ea5f421a1eb49847a5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d77c5a2db1e8943b264a31c79aa6fb6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03_1_1timing.html#a3d77c5a2db1e8943b264a31c79aa6fb6">anonymous_namespace{test_ring_buffer.cc}::timing::duration_t</a> = std::chrono::duration&lt; representation_t &gt;</td></tr>
+<tr class="separator:a3d77c5a2db1e8943b264a31c79aa6fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aefcadddcb3f6978c16d9a0ca4f00e553"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__ring__buffer_8cc.html#aefcadddcb3f6978c16d9a0ca4f00e553">CPPUNIT_TEST_SUITE_REGISTRATION</a> (<a class="el" href="class_test_ring_buffer.html">TestRingBuffer</a>)</td></tr>
 <tr class="separator:aefcadddcb3f6978c16d9a0ca4f00e553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb1976d06922394c8f18026d2ef3c75"><td class="memTemplParams" colspan="2">template&lt;typename Container &gt; </td></tr>
+<tr class="memitem:aefb1976d06922394c8f18026d2ef3c75"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#aefb1976d06922394c8f18026d2ef3c75">anonymous_namespace{test_ring_buffer.cc}::operator!=</a> (const GenericInputIterator&lt; Container &gt; &amp;a, const GenericInputIterator&lt; Container &gt; &amp;b)</td></tr>
+<tr class="separator:aefb1976d06922394c8f18026d2ef3c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb23ad983b6e0175f2a243a95a258a7b"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#adb23ad983b6e0175f2a243a95a258a7b">anonymous_namespace{test_ring_buffer.cc}::print_lock_traits</a> (std::ostream &amp;outs, <a class="el" href="_ring_buffer_8h.html#abc9b83430fd3c6795aca9edefc3ecc7d">LockTraits</a> traits)</td></tr>
+<tr class="separator:adb23ad983b6e0175f2a243a95a258a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e499c9167356ed32f0688539abe4ee"><td class="memTemplParams" colspan="2">template&lt;typename Traits &gt; </td></tr>
+<tr class="memitem:a07e499c9167356ed32f0688539abe4ee"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#a07e499c9167356ed32f0688539abe4ee">anonymous_namespace{test_ring_buffer.cc}::print_traits_info</a> (std::ostream &amp;outs)</td></tr>
+<tr class="separator:a07e499c9167356ed32f0688539abe4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70495c9950f3e52e7ee2a34f04548f0b"><td class="memTemplParams" colspan="2">template&lt;typename Traits &gt; </td></tr>
+<tr class="memitem:a70495c9950f3e52e7ee2a34f04548f0b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#a70495c9950f3e52e7ee2a34f04548f0b">anonymous_namespace{test_ring_buffer.cc}::verify_preconditions</a> (int nproducers, int nconsumers)</td></tr>
+<tr class="separator:a70495c9950f3e52e7ee2a34f04548f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a868e71fdba023ab9081dd738637c3b14"><td class="memTemplParams" colspan="2">template&lt;typename IntType &gt; </td></tr>
+<tr class="memitem:a868e71fdba023ab9081dd738637c3b14"><td class="memTemplItemLeft" align="right" valign="top">WorkDistributor&lt; IntType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#a868e71fdba023ab9081dd738637c3b14">anonymous_namespace{test_ring_buffer.cc}::make_work_distributor</a> (IntType nvalues, IntType nthreads) noexcept</td></tr>
+<tr class="separator:a868e71fdba023ab9081dd738637c3b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935ab6b48d04629bde57f30c8e5f17ba"><td class="memTemplParams" colspan="2">template&lt;typename DurationType &gt; </td></tr>
+<tr class="memitem:a935ab6b48d04629bde57f30c8e5f17ba"><td class="memTemplItemLeft" align="right" valign="top">DurationType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#a935ab6b48d04629bde57f30c8e5f17ba">anonymous_namespace{test_ring_buffer.cc}::get_task_duration</a> (int num_producers, int num_consumers)</td></tr>
+<tr class="separator:a935ab6b48d04629bde57f30c8e5f17ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b9dcd4b65330fba7a680bd1ddc74d11"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Traits &gt; </td></tr>
+<tr class="memitem:a4b9dcd4b65330fba7a680bd1ddc74d11"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#a4b9dcd4b65330fba7a680bd1ddc74d11">anonymous_namespace{test_ring_buffer.cc}::do_test</a> (int nproducers, int nconsumers)</td></tr>
+<tr class="separator:a4b9dcd4b65330fba7a680bd1ddc74d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf34506fa82f1fef53cae3f4513f428c"><td class="memTemplParams" colspan="2">template&lt;typename Traits , typename InsertionTraits &gt; </td></tr>
+<tr class="memitem:acf34506fa82f1fef53cae3f4513f428c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#acf34506fa82f1fef53cae3f4513f428c">anonymous_namespace{test_ring_buffer.cc}::test_batch</a> (int nconsumers, int batch_size)</td></tr>
+<tr class="separator:acf34506fa82f1fef53cae3f4513f428c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a64076b6569a5e0f1bc807b599fdc52b0"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#a64076b6569a5e0f1bc807b599fdc52b0">anonymous_namespace{test_ring_buffer.cc}::k_log_queue_size_test</a> = 10</td></tr>
+<tr class="separator:a64076b6569a5e0f1bc807b599fdc52b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e4fe4e2f3a51b53c51d4c4686456a91"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#a2e4fe4e2f3a51b53c51d4c4686456a91">anonymous_namespace{test_ring_buffer.cc}::k_log_queue_size_profile</a> = 10</td></tr>
+<tr class="separator:a2e4fe4e2f3a51b53c51d4c4686456a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3878199b5b9075af1d0ca8b0e78e4162"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#a3878199b5b9075af1d0ca8b0e78e4162">anonymous_namespace{test_ring_buffer.cc}::k_verbose</a> = true</td></tr>
+<tr class="separator:a3878199b5b9075af1d0ca8b0e78e4162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3970ccd2a7b4222b8218a86f39797061"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#a3970ccd2a7b4222b8218a86f39797061">anonymous_namespace{test_ring_buffer.cc}::k_nvalues</a> = 1 &lt;&lt; 18</td></tr>
+<tr class="separator:a3970ccd2a7b4222b8218a86f39797061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42c7479e5864d2ccde7c3beeb9bbce1"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#aa42c7479e5864d2ccde7c3beeb9bbce1">anonymous_namespace{test_ring_buffer.cc}::p_throw_construct</a> = 0.0002</td></tr>
+<tr class="separator:aa42c7479e5864d2ccde7c3beeb9bbce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a64263d8aadd48e48b9a1cfe17f674"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#a05a64263d8aadd48e48b9a1cfe17f674">anonymous_namespace{test_ring_buffer.cc}::p_throw_copy_constructor</a> = 0.0000</td></tr>
+<tr class="separator:a05a64263d8aadd48e48b9a1cfe17f674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba369ef70f4fceb14e1b4a3d1e0e09e"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#a3ba369ef70f4fceb14e1b4a3d1e0e09e">anonymous_namespace{test_ring_buffer.cc}::p_throw_copy_assignment</a> = 0.0002</td></tr>
+<tr class="separator:a3ba369ef70f4fceb14e1b4a3d1e0e09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc0fc50ee0ff4c991fd4cfacf3f6206"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#a5dc0fc50ee0ff4c991fd4cfacf3f6206">anonymous_namespace{test_ring_buffer.cc}::p_throw_move_constructor</a> = 0.0000</td></tr>
+<tr class="separator:a5dc0fc50ee0ff4c991fd4cfacf3f6206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea1ad44f78d7947bdc5c2261131409b3"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#aea1ad44f78d7947bdc5c2261131409b3">anonymous_namespace{test_ring_buffer.cc}::p_throw_move_assignment</a> = 0.0002</td></tr>
+<tr class="separator:aea1ad44f78d7947bdc5c2261131409b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ab06cc50728e9887fc727fe39028a6"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html#ac9ab06cc50728e9887fc727fe39028a6">anonymous_namespace{test_ring_buffer.cc}::k_overall_test_time</a> = std::chrono::microseconds(500)</td></tr>
+<tr class="separator:ac9ab06cc50728e9887fc727fe39028a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="aefcadddcb3f6978c16d9a0ca4f00e553" name="aefcadddcb3f6978c16d9a0ca4f00e553"></a>
@@ -94,9 +220,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_bda6758a1f39cbab2ecdac1c1381710b.html">common</a></li><li class="navelem"><a class="el" href="dir_a547db14673c9e6969183ead1900a33c.html">mcrt_util</a></li><li class="navelem"><a class="el" href="dir_80fe3bc8c73dc0570478066cb2244db9.html">unittest</a></li><li class="navelem"><a class="el" href="test__ring__buffer_8cc.html">test_ring_buffer.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

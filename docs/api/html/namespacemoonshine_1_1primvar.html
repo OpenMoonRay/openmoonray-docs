@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonshine.html">moonshine</a></li><li class="navelem"><a class="el" href="namespacemoonshine_1_1primvar.html">primvar</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('namespacemoonshine_1_1primvar.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
@@ -103,7 +119,17 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_primvar_8cc_source.html#l00018">18</a> of file <a class="el" href="_primvar_8cc_source.html">Primvar.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   22</span>{</div>
+<div class="line"><span class="lineno">   23</span>    <span class="comment">// setup an appropiate log event message</span></div>
+<div class="line"><span class="lineno">   24</span>    std::ostringstream os;</div>
+<div class="line"><span class="lineno">   25</span>    os &lt;&lt; <span class="stringliteral">&quot;Missing primitive attribute &#39;&quot;</span></div>
+<div class="line"><span class="lineno">   26</span>        &lt;&lt; primAttrType &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; primAttrName</div>
+<div class="line"><span class="lineno">   27</span>        &lt;&lt; <span class="stringliteral">&quot;&#39;, using default value&quot;</span>;</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>    missingAttributeEvent =</div>
+<div class="line"><span class="lineno">   30</span>        logEventRegistry.createEvent(scene_rdl2::logging::WARN_LEVEL, os.str());</div>
+<div class="line"><span class="lineno">   31</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a60834da9bc15938f4316f194b24766b3" name="a60834da9bc15938f4316f194b24766b3"></a>
@@ -175,7 +201,42 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_primvar_8cc_source.html#l00097">97</a> of file <a class="el" href="_primvar_8cc_source.html">Primvar.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  106</span>{</div>
+<div class="line"><span class="lineno">  107</span>    ispc::SHADING_Space inputSpace;</div>
+<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">if</span> (inputSourceMode == ispc::INPUT_SOURCE_MODE_ATTR) {</div>
+<div class="line"><span class="lineno">  109</span>        outputNormal = inputNormal;</div>
+<div class="line"><span class="lineno">  110</span>        inputSpace = ispc::SHADING_SPACE_WORLD;</div>
+<div class="line"><span class="lineno">  111</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (inputSourceMode == ispc::INPUT_SOURCE_MODE_REF_P_REF_N) {</div>
+<div class="line"><span class="lineno">  112</span>        <span class="keywordflow">if</span> (!state.<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a0cc3d4786f0294ea07bd785917b43cb5">getRefN</a>(outputNormal)) {</div>
+<div class="line"><span class="lineno">  113</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  114</span>        }</div>
+<div class="line"><span class="lineno">  115</span>        inputSpace = ispc::SHADING_SPACE_WORLD;</div>
+<div class="line"><span class="lineno">  116</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  117</span>        outputNormal = state.<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a8d7476dddd4faac4f51254eada6f4f70">getN</a>();</div>
+<div class="line"><span class="lineno">  118</span>        inputSpace = ispc::SHADING_SPACE_RENDER;</div>
+<div class="line"><span class="lineno">  119</span>    }</div>
+<div class="line"><span class="lineno">  120</span>    </div>
+<div class="line"><span class="lineno">  121</span>    <span class="keywordflow">if</span> (xform != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  122</span>        outputNormal = xform-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_xform.html#adfd4e3fcdb56e056883302ced9b26e98">transformNormal</a>(inputSpace,</div>
+<div class="line"><span class="lineno">  123</span>                                              returnSpace,</div>
+<div class="line"><span class="lineno">  124</span>                                              state,</div>
+<div class="line"><span class="lineno">  125</span>                                              outputNormal);</div>
+<div class="line"><span class="lineno">  126</span>    }</div>
+<div class="line"><span class="lineno">  127</span> </div>
+<div class="line"><span class="lineno">  128</span>    <span class="keywordflow">if</span> (inputSourceMode == ispc::INPUT_SOURCE_MODE_REF_P_REF_N &amp;&amp; state.<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#aa32c02c236b56870743fc66646417d37">isEntering</a>() == <span class="keyword">false</span>) {</div>
+<div class="line"><span class="lineno">  129</span>        <span class="comment">// Flip reference space normals on exiting a surface</span></div>
+<div class="line"><span class="lineno">  130</span>        outputNormal = -outputNormal;</div>
+<div class="line"><span class="lineno">  131</span>    }</div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>    outputNormal = scene_rdl2::math::normalize(outputNormal);</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  136</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a0cc3d4786f0294ea07bd785917b43cb5"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a0cc3d4786f0294ea07bd785917b43cb5">moonray::shading::State::getRefN</a></div><div class="ttdeci">bool getRefN(scene_rdl2::math::Vec3f &amp;refN) const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00145">State.cc:145</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a8d7476dddd4faac4f51254eada6f4f70"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a8d7476dddd4faac4f51254eada6f4f70">moonray::shading::State::getN</a></div><div class="ttdeci">const scene_rdl2::math::Vec3f &amp; getN() const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00020">State.cc:20</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_aa32c02c236b56870743fc66646417d37"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#aa32c02c236b56870743fc66646417d37">moonray::shading::State::isEntering</a></div><div class="ttdeci">bool isEntering() const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00040">State.cc:40</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_xform_html_adfd4e3fcdb56e056883302ced9b26e98"><div class="ttname"><a href="classmoonray_1_1shading_1_1_xform.html#adfd4e3fcdb56e056883302ced9b26e98">moonray::shading::Xform::transformNormal</a></div><div class="ttdeci">scene_rdl2::math::Vec3f transformNormal(const int srcSpace, const int dstSpace, const State &amp;state, const scene_rdl2::math::Vec3f inNormal) const</div><div class="ttdoc">Transform a normal from source space to destination space.</div><div class="ttdef"><b>Definition:</b> <a href="_xform_8cc_source.html#l00234">Xform.cc:234</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3c383a72300b4af10f441f84b2eb82fe" name="a3c383a72300b4af10f441f84b2eb82fe"></a>
@@ -329,7 +390,64 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_primvar_8cc_source.html#l00034">34</a> of file <a class="el" href="_primvar_8cc_source.html">Primvar.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   45</span>{</div>
+<div class="line"><span class="lineno">   46</span>    outputPositionDdz = math::Vec3f(0.0f);</div>
+<div class="line"><span class="lineno">   47</span>    ispc::SHADING_Space inputSpace;</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">if</span> (inputSourceMode == ispc::INPUT_SOURCE_MODE_ATTR) {</div>
+<div class="line"><span class="lineno">   49</span>        outputPosition = inputPosition;</div>
+<div class="line"><span class="lineno">   50</span>        outputPositionDdx = math::Vec3f(0.0f);</div>
+<div class="line"><span class="lineno">   51</span>        outputPositionDdy = math::Vec3f(0.0f);</div>
+<div class="line"><span class="lineno">   52</span>        inputSpace = ispc::SHADING_SPACE_WORLD;</div>
+<div class="line"><span class="lineno">   53</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (inputSourceMode == ispc::INPUT_SOURCE_MODE_REF_P_REF_N) {</div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">if</span>(!state.<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a43bb42f14c59e1763006ae59c477cd65">getRefP</a>(outputPosition)) {</div>
+<div class="line"><span class="lineno">   55</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   56</span>        }</div>
+<div class="line"><span class="lineno">   57</span>        state.<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a837cd74aa80577bf99a36a3eb654f9b9">getdVec3fAttrdx</a>(refPKey, outputPositionDdx);</div>
+<div class="line"><span class="lineno">   58</span>        state.<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a4f14b176149a06231a0329f5c9ec6375">getdVec3fAttrdy</a>(refPKey, outputPositionDdy);</div>
+<div class="line"><span class="lineno">   59</span>        inputSpace = ispc::SHADING_SPACE_WORLD;</div>
+<div class="line"><span class="lineno">   60</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   61</span>        outputPosition = state.<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#ad8ccee9ae376602dcaaf34765f76c9b1">getP</a>();</div>
+<div class="line"><span class="lineno">   62</span>        outputPositionDdx = state.<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#ae0e32ede60f5d77a1c7c1073811adf26">getdPdx</a>();</div>
+<div class="line"><span class="lineno">   63</span>        outputPositionDdy = state.<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a8ae08f635f3b5a96ce3bfc6bb1c6d4d6">getdPdy</a>();</div>
+<div class="line"><span class="lineno">   64</span>        inputSpace = ispc::SHADING_SPACE_RENDER;</div>
+<div class="line"><span class="lineno">   65</span>    }</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">if</span> (xform != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">   68</span>        <span class="keyword">const</span> math::Vec3f transformedP = xform-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_xform.html#a38255a14208769d98810abb0ebdfc490">transformPoint</a>(inputSpace,</div>
+<div class="line"><span class="lineno">   69</span>                                                               returnSpace,</div>
+<div class="line"><span class="lineno">   70</span>                                                               state,</div>
+<div class="line"><span class="lineno">   71</span>                                                               outputPosition);</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>        <span class="comment">// transform the partials as points to include perspective divide,</span></div>
+<div class="line"><span class="lineno">   74</span>        <span class="comment">// starting with untransformed position</span></div>
+<div class="line"><span class="lineno">   75</span>        math::Vec3f outputPositionPlusDPdx(outputPosition + outputPositionDdx);</div>
+<div class="line"><span class="lineno">   76</span>        math::Vec3f outputPositionPlusDPdy(outputPosition + outputPositionDdy);</div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>        outputPositionPlusDPdx = xform-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_xform.html#a38255a14208769d98810abb0ebdfc490">transformPoint</a>(inputSpace,</div>
+<div class="line"><span class="lineno">   79</span>                                                       returnSpace,</div>
+<div class="line"><span class="lineno">   80</span>                                                       state,</div>
+<div class="line"><span class="lineno">   81</span>                                                       outputPositionPlusDPdx);</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>        outputPositionPlusDPdy = xform-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_xform.html#a38255a14208769d98810abb0ebdfc490">transformPoint</a>(inputSpace,</div>
+<div class="line"><span class="lineno">   84</span>                                                       returnSpace,</div>
+<div class="line"><span class="lineno">   85</span>                                                       state,</div>
+<div class="line"><span class="lineno">   86</span>                                                       outputPositionPlusDPdy);</div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>        outputPosition = transformedP;</div>
+<div class="line"><span class="lineno">   89</span>        outputPositionDdx = outputPositionPlusDPdx - transformedP;</div>
+<div class="line"><span class="lineno">   90</span>        outputPositionDdy = outputPositionPlusDPdy - transformedP;</div>
+<div class="line"><span class="lineno">   91</span>    }</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   94</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a43bb42f14c59e1763006ae59c477cd65"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a43bb42f14c59e1763006ae59c477cd65">moonray::shading::State::getRefP</a></div><div class="ttdeci">bool getRefP(scene_rdl2::math::Vec3f &amp;refP) const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00132">State.cc:132</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a4f14b176149a06231a0329f5c9ec6375"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a4f14b176149a06231a0329f5c9ec6375">moonray::shading::State::getdVec3fAttrdy</a></div><div class="ttdeci">bool getdVec3fAttrdy(int key, scene_rdl2::math::Vec3f &amp;dVec3fAttrdy) const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00252">State.cc:252</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a837cd74aa80577bf99a36a3eb654f9b9"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a837cd74aa80577bf99a36a3eb654f9b9">moonray::shading::State::getdVec3fAttrdx</a></div><div class="ttdeci">bool getdVec3fAttrdx(int key, scene_rdl2::math::Vec3f &amp;dVec3fAttrdx) const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00239">State.cc:239</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_a8ae08f635f3b5a96ce3bfc6bb1c6d4d6"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#a8ae08f635f3b5a96ce3bfc6bb1c6d4d6">moonray::shading::State::getdPdy</a></div><div class="ttdeci">scene_rdl2::math::Vec3f getdPdy() const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00200">State.cc:200</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_ad8ccee9ae376602dcaaf34765f76c9b1"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#ad8ccee9ae376602dcaaf34765f76c9b1">moonray::shading::State::getP</a></div><div class="ttdeci">const scene_rdl2::math::Vec3f &amp; getP() const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00018">State.cc:18</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_state_html_ae0e32ede60f5d77a1c7c1073811adf26"><div class="ttname"><a href="classmoonray_1_1shading_1_1_state.html#ae0e32ede60f5d77a1c7c1073811adf26">moonray::shading::State::getdPdx</a></div><div class="ttdeci">scene_rdl2::math::Vec3f getdPdx() const</div><div class="ttdef"><b>Definition:</b> <a href="_state_8cc_source.html#l00187">State.cc:187</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_xform_html_a38255a14208769d98810abb0ebdfc490"><div class="ttname"><a href="classmoonray_1_1shading_1_1_xform.html#a38255a14208769d98810abb0ebdfc490">moonray::shading::Xform::transformPoint</a></div><div class="ttdeci">scene_rdl2::math::Vec3f transformPoint(const int srcSpace, const int dstSpace, const State &amp;state, const scene_rdl2::math::Vec3f inPoint) const</div><div class="ttdoc">Transform a 3D point from source space to destination space.</div><div class="ttdef"><b>Definition:</b> <a href="_xform_8cc_source.html#l00161">Xform.cc:161</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4c09a60c8006da04240b25ad700c73c0" name="a4c09a60c8006da04240b25ad700c73c0"></a>
@@ -415,9 +533,13 @@ Functions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonshine.html">moonshine</a></li><li class="navelem"><a class="el" href="namespacemoonshine_1_1primvar.html">primvar</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

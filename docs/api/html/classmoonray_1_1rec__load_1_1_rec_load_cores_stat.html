@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rec__load.html">rec_load</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html">RecLoadCoresStat</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -116,7 +132,17 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_rec_load_8cc_source.html#l00097">97</a> of file <a class="el" href="_rec_load_8cc_source.html">RecLoad.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   98</span>{</div>
+<div class="line"><span class="lineno">   99</span>    <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#af3b6f59ca0606847a0b8602830f5c7ca">mCoresStatAverage</a>.<a class="code hl_function" href="classmoonray_1_1rec__load_1_1_rec_load_core_stat.html#a52afe16055f9fb6792e1f82e95a62c5c">reset</a>();</div>
+<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> coreId = 0; coreId &lt; <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a8f87b04c6a6009658d91a7287943ff31">mCoresStat</a>.size(); ++coreId) {</div>
+<div class="line"><span class="lineno">  101</span>        <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#af3b6f59ca0606847a0b8602830f5c7ca">mCoresStatAverage</a> += <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a8f87b04c6a6009658d91a7287943ff31">mCoresStat</a>[coreId];</div>
+<div class="line"><span class="lineno">  102</span>    }</div>
+<div class="line"><span class="lineno">  103</span>    <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#af3b6f59ca0606847a0b8602830f5c7ca">mCoresStatAverage</a> *= ((float)1.0f / (<span class="keywordtype">float</span>)<a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a8f87b04c6a6009658d91a7287943ff31">mCoresStat</a>.size());</div>
+<div class="line"><span class="lineno">  104</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rec__load_1_1_rec_load_core_stat_html_a52afe16055f9fb6792e1f82e95a62c5c"><div class="ttname"><a href="classmoonray_1_1rec__load_1_1_rec_load_core_stat.html#a52afe16055f9fb6792e1f82e95a62c5c">moonray::rec_load::RecLoadCoreStat::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> <a href="_rec_load_8h_source.html#l00075">RecLoad.h:75</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rec__load_1_1_rec_load_cores_stat_html_a8f87b04c6a6009658d91a7287943ff31"><div class="ttname"><a href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a8f87b04c6a6009658d91a7287943ff31">moonray::rec_load::RecLoadCoresStat::mCoresStat</a></div><div class="ttdeci">std::vector&lt; RecLoadCoreStat &gt; mCoresStat</div><div class="ttdef"><b>Definition:</b> <a href="_rec_load_8h_source.html#l00147">RecLoad.h:147</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rec__load_1_1_rec_load_cores_stat_html_af3b6f59ca0606847a0b8602830f5c7ca"><div class="ttname"><a href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#af3b6f59ca0606847a0b8602830f5c7ca">moonray::rec_load::RecLoadCoresStat::mCoresStatAverage</a></div><div class="ttdeci">RecLoadCoreStat mCoresStatAverage</div><div class="ttdef"><b>Definition:</b> <a href="_rec_load_8h_source.html#l00148">RecLoad.h:148</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa349bf1aac2111a18d6653fa59ec4f46" name="aa349bf1aac2111a18d6653fa59ec4f46"></a>
@@ -144,7 +170,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_rec_load_8h_source.html#l00130">130</a> of file <a class="el" href="_rec_load_8h_source.html">RecLoad.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  130</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a8f87b04c6a6009658d91a7287943ff31">mCoresStat</a>[coreId]; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aefe7cad9db20d5cc0b8829b1bf953b93" name="aefe7cad9db20d5cc0b8829b1bf953b93"></a>
@@ -171,7 +198,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_rec_load_8h_source.html#l00131">131</a> of file <a class="el" href="_rec_load_8h_source.html">RecLoad.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  131</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#af3b6f59ca0606847a0b8602830f5c7ca">mCoresStatAverage</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0279c9f9d5758abf619181587c446b5b" name="a0279c9f9d5758abf619181587c446b5b"></a>
@@ -199,7 +227,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_rec_load_8h_source.html#l00128">128</a> of file <a class="el" href="_rec_load_8h_source.html">RecLoad.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  128</span>{ <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a8f87b04c6a6009658d91a7287943ff31">mCoresStat</a>.resize(totalCores); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad4f36ad559ccf00969c0526d60c945d8" name="ad4f36ad559ccf00969c0526d60c945d8"></a>
@@ -229,7 +258,16 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_rec_load_8cc_source.html#l00086">86</a> of file <a class="el" href="_rec_load_8cc_source.html">RecLoad.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   87</span>{</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">if</span> (tv_sec == 0 &amp;&amp; tv_usec == 0) {</div>
+<div class="line"><span class="lineno">   89</span>        gettimeofday(&amp;<a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a2ec0f8bb8ddc2388b858642d7fb81459">mTimestamp</a>, NULL);</div>
+<div class="line"><span class="lineno">   90</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   91</span>        <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a2ec0f8bb8ddc2388b858642d7fb81459">mTimestamp</a>.tv_sec = tv_sec;</div>
+<div class="line"><span class="lineno">   92</span>        <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a2ec0f8bb8ddc2388b858642d7fb81459">mTimestamp</a>.tv_usec = tv_usec;</div>
+<div class="line"><span class="lineno">   93</span>    }</div>
+<div class="line"><span class="lineno">   94</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rec__load_1_1_rec_load_cores_stat_html_a2ec0f8bb8ddc2388b858642d7fb81459"><div class="ttname"><a href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a2ec0f8bb8ddc2388b858642d7fb81459">moonray::rec_load::RecLoadCoresStat::mTimestamp</a></div><div class="ttdeci">struct timeval mTimestamp</div><div class="ttdef"><b>Definition:</b> <a href="_rec_load_8h_source.html#l00146">RecLoad.h:146</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa70d02cc774c5fea41fff0318b55b3c9" name="aa70d02cc774c5fea41fff0318b55b3c9"></a>
@@ -249,7 +287,17 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_rec_load_8cc_source.html#l00107">107</a> of file <a class="el" href="_rec_load_8cc_source.html">RecLoad.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  108</span>{</div>
+<div class="line"><span class="lineno">  109</span>    std::ostringstream ostr;</div>
+<div class="line"><span class="lineno">  110</span>    ostr &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;Cores (total:&quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a8f87b04c6a6009658d91a7287943ff31">mCoresStat</a>.size() &lt;&lt; <span class="stringliteral">&quot;) (time:&quot;</span> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a7f6ff6921df35c929c43a983039b353b">to_string</a>(<a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a2ec0f8bb8ddc2388b858642d7fb81459">mTimestamp</a>) &lt;&lt; <span class="stringliteral">&quot;) {\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  111</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> coreId = 0; coreId &lt; <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a8f87b04c6a6009658d91a7287943ff31">mCoresStat</a>.size(); ++coreId) {</div>
+<div class="line"><span class="lineno">  112</span>        ostr &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;  coreId:&quot;</span> &lt;&lt; std::setw(2) &lt;&lt; coreId &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a8f87b04c6a6009658d91a7287943ff31">mCoresStat</a>[coreId].show(<span class="stringliteral">&quot;&quot;</span>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  113</span>    }</div>
+<div class="line"><span class="lineno">  114</span>    ostr &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;}&quot;</span>;</div>
+<div class="line"><span class="lineno">  115</span>    <span class="keywordflow">return</span> ostr.str();</div>
+<div class="line"><span class="lineno">  116</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rec__load_1_1_rec_load_cores_stat_html_a7f6ff6921df35c929c43a983039b353b"><div class="ttname"><a href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a7f6ff6921df35c929c43a983039b353b">moonray::rec_load::RecLoadCoresStat::to_string</a></div><div class="ttdeci">static std::string to_string(const struct timeval &amp;timeval)</div><div class="ttdef"><b>Definition:</b> <a href="_rec_load_8cc_source.html#l00149">RecLoad.cc:149</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab70515bc13051c3b88159f7563953135" name="ab70515bc13051c3b88159f7563953135"></a>
@@ -269,7 +317,13 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_rec_load_8cc_source.html#l00119">119</a> of file <a class="el" href="_rec_load_8cc_source.html">RecLoad.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  120</span>{</div>
+<div class="line"><span class="lineno">  121</span>    std::ostringstream ostr;</div>
+<div class="line"><span class="lineno">  122</span>    ostr &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;Cores Average &quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#af3b6f59ca0606847a0b8602830f5c7ca">mCoresStatAverage</a>.<a class="code hl_function" href="classmoonray_1_1rec__load_1_1_rec_load_core_stat.html#ae8c3d6e86f5b1a408bdc5fd2e56f8181">show</a>(<span class="stringliteral">&quot;&quot;</span>) &lt;&lt; <span class="stringliteral">&quot; (time:&quot;</span> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a7f6ff6921df35c929c43a983039b353b">to_string</a>(<a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a2ec0f8bb8ddc2388b858642d7fb81459">mTimestamp</a>) &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><span class="lineno">  123</span>    <span class="keywordflow">return</span> ostr.str();</div>
+<div class="line"><span class="lineno">  124</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rec__load_1_1_rec_load_core_stat_html_ae8c3d6e86f5b1a408bdc5fd2e56f8181"><div class="ttname"><a href="classmoonray_1_1rec__load_1_1_rec_load_core_stat.html#ae8c3d6e86f5b1a408bdc5fd2e56f8181">moonray::rec_load::RecLoadCoreStat::show</a></div><div class="ttdeci">std::string show(const std::string &amp;hd) const</div><div class="ttdef"><b>Definition:</b> <a href="_rec_load_8cc_source.html#l00044">RecLoad.cc:44</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a74ed5b713f42893e6279a62d5defcb4e" name="a74ed5b713f42893e6279a62d5defcb4e"></a>
@@ -289,7 +343,27 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_rec_load_8cc_source.html#l00127">127</a> of file <a class="el" href="_rec_load_8cc_source.html">RecLoad.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  128</span>{</div>
+<div class="line"><span class="lineno">  129</span>    std::ostringstream ostr;</div>
+<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">if</span> (title) {</div>
+<div class="line"><span class="lineno">  131</span>        ostr &lt;&lt; <span class="stringliteral">&quot;date,time,tv_sec,tv_usec,&quot;</span>;</div>
+<div class="line"><span class="lineno">  132</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> coreId = 0; coreId &lt; <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a8f87b04c6a6009658d91a7287943ff31">mCoresStat</a>.size(); ++coreId) {</div>
+<div class="line"><span class="lineno">  133</span>            ostr &lt;&lt; <span class="stringliteral">&quot;coreId,&quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a8f87b04c6a6009658d91a7287943ff31">mCoresStat</a>[coreId].showCSV(title);</div>
+<div class="line"><span class="lineno">  134</span>            <span class="keywordflow">if</span> (coreId &lt; <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a8f87b04c6a6009658d91a7287943ff31">mCoresStat</a>.size() - 1) ostr &lt;&lt; <span class="charliteral">&#39;,&#39;</span>;</div>
+<div class="line"><span class="lineno">  135</span>        }</div>
+<div class="line"><span class="lineno">  136</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  137</span>        ostr &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a7d56f51fb0f7d082a7dd770b1fb5de59">showTimestampDate</a>() &lt;&lt; <span class="charliteral">&#39;,&#39;</span> &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#abfabb9d2f59ef7e169fb59c77cb2fb8f">showTimestampTime</a>() &lt;&lt; <span class="charliteral">&#39;,&#39;</span></div>
+<div class="line"><span class="lineno">  138</span>             &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a2ec0f8bb8ddc2388b858642d7fb81459">mTimestamp</a>.tv_sec &lt;&lt; <span class="charliteral">&#39;,&#39;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a2ec0f8bb8ddc2388b858642d7fb81459">mTimestamp</a>.tv_usec &lt;&lt; <span class="charliteral">&#39;,&#39;</span>;</div>
+<div class="line"><span class="lineno">  139</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> coreId = 0; coreId &lt; <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a8f87b04c6a6009658d91a7287943ff31">mCoresStat</a>.size(); ++coreId) {</div>
+<div class="line"><span class="lineno">  140</span>            ostr &lt;&lt; coreId &lt;&lt; <span class="charliteral">&#39;,&#39;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a8f87b04c6a6009658d91a7287943ff31">mCoresStat</a>[coreId].showCSV(title);</div>
+<div class="line"><span class="lineno">  141</span>            <span class="keywordflow">if</span> (coreId &lt; <a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a8f87b04c6a6009658d91a7287943ff31">mCoresStat</a>.size() - 1) ostr &lt;&lt; <span class="charliteral">&#39;,&#39;</span>;</div>
+<div class="line"><span class="lineno">  142</span>        }</div>
+<div class="line"><span class="lineno">  143</span>    }</div>
+<div class="line"><span class="lineno">  144</span>    <span class="keywordflow">return</span> ostr.str();</div>
+<div class="line"><span class="lineno">  145</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rec__load_1_1_rec_load_cores_stat_html_a7d56f51fb0f7d082a7dd770b1fb5de59"><div class="ttname"><a href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a7d56f51fb0f7d082a7dd770b1fb5de59">moonray::rec_load::RecLoadCoresStat::showTimestampDate</a></div><div class="ttdeci">std::string showTimestampDate() const</div><div class="ttdef"><b>Definition:</b> <a href="_rec_load_8cc_source.html#l00169">RecLoad.cc:169</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rec__load_1_1_rec_load_cores_stat_html_abfabb9d2f59ef7e169fb59c77cb2fb8f"><div class="ttname"><a href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#abfabb9d2f59ef7e169fb59c77cb2fb8f">moonray::rec_load::RecLoadCoresStat::showTimestampTime</a></div><div class="ttdeci">std::string showTimestampTime() const</div><div class="ttdef"><b>Definition:</b> <a href="_rec_load_8cc_source.html#l00183">RecLoad.cc:183</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7d56f51fb0f7d082a7dd770b1fb5de59" name="a7d56f51fb0f7d082a7dd770b1fb5de59"></a>
@@ -316,7 +390,18 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_rec_load_8cc_source.html#l00169">169</a> of file <a class="el" href="_rec_load_8cc_source.html">RecLoad.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  170</span>{</div>
+<div class="line"><span class="lineno">  171</span>    <span class="keyword">static</span> <span class="keywordtype">char</span> *mon[] = {<span class="stringliteral">&quot;Jan&quot;</span>, <span class="stringliteral">&quot;Feb&quot;</span>, <span class="stringliteral">&quot;Mar&quot;</span>, <span class="stringliteral">&quot;Apr&quot;</span>, <span class="stringliteral">&quot;May&quot;</span>, <span class="stringliteral">&quot;Jun&quot;</span>, <span class="stringliteral">&quot;Jul&quot;</span>, <span class="stringliteral">&quot;Aug&quot;</span>, <span class="stringliteral">&quot;Sep&quot;</span>, <span class="stringliteral">&quot;Oct&quot;</span>, <span class="stringliteral">&quot;Nov&quot;</span>, <span class="stringliteral">&quot;Dec&quot;</span>};</div>
+<div class="line"><span class="lineno">  172</span> </div>
+<div class="line"><span class="lineno">  173</span>    <span class="keyword">struct </span>tm *time_st = localtime(&amp;<a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a2ec0f8bb8ddc2388b858642d7fb81459">mTimestamp</a>.tv_sec);</div>
+<div class="line"><span class="lineno">  174</span> </div>
+<div class="line"><span class="lineno">  175</span>    std::ostringstream ostr;</div>
+<div class="line"><span class="lineno">  176</span>    ostr &lt;&lt; mon[time_st-&gt;tm_mon] &lt;&lt; <span class="charliteral">&#39;/&#39;</span></div>
+<div class="line"><span class="lineno">  177</span>         &lt;&lt; time_st-&gt;tm_mday &lt;&lt; <span class="charliteral">&#39;/&#39;</span></div>
+<div class="line"><span class="lineno">  178</span>         &lt;&lt; time_st-&gt;tm_year + 1900;</div>
+<div class="line"><span class="lineno">  179</span>    <span class="keywordflow">return</span> ostr.str();</div>
+<div class="line"><span class="lineno">  180</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abfabb9d2f59ef7e169fb59c77cb2fb8f" name="abfabb9d2f59ef7e169fb59c77cb2fb8f"></a>
@@ -343,7 +428,16 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_rec_load_8cc_source.html#l00183">183</a> of file <a class="el" href="_rec_load_8cc_source.html">RecLoad.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  184</span>{</div>
+<div class="line"><span class="lineno">  185</span>    <span class="keyword">struct </span>tm *time_st = localtime(&amp;<a class="code hl_variable" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html#a2ec0f8bb8ddc2388b858642d7fb81459">mTimestamp</a>.tv_sec);</div>
+<div class="line"><span class="lineno">  186</span> </div>
+<div class="line"><span class="lineno">  187</span>    std::ostringstream ostr;</div>
+<div class="line"><span class="lineno">  188</span>    ostr &lt;&lt; time_st-&gt;tm_hour &lt;&lt; <span class="stringliteral">&quot;:&quot;</span></div>
+<div class="line"><span class="lineno">  189</span>         &lt;&lt; time_st-&gt;tm_min &lt;&lt; <span class="stringliteral">&quot;:&quot;</span></div>
+<div class="line"><span class="lineno">  190</span>         &lt;&lt; time_st-&gt;tm_sec;</div>
+<div class="line"><span class="lineno">  191</span>    <span class="keywordflow">return</span> ostr.str();</div>
+<div class="line"><span class="lineno">  192</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7f6ff6921df35c929c43a983039b353b" name="a7f6ff6921df35c929c43a983039b353b"></a>
@@ -371,7 +465,24 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_rec_load_8cc_source.html#l00149">149</a> of file <a class="el" href="_rec_load_8cc_source.html">RecLoad.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  150</span>{</div>
+<div class="line"><span class="lineno">  151</span>    <span class="keyword">static</span> <span class="keywordtype">char</span> *mon[] = {<span class="stringliteral">&quot;Jan&quot;</span>, <span class="stringliteral">&quot;Feb&quot;</span>, <span class="stringliteral">&quot;Mar&quot;</span>, <span class="stringliteral">&quot;Apr&quot;</span>, <span class="stringliteral">&quot;May&quot;</span>, <span class="stringliteral">&quot;Jun&quot;</span>, <span class="stringliteral">&quot;Jul&quot;</span>, <span class="stringliteral">&quot;Aug&quot;</span>, <span class="stringliteral">&quot;Sep&quot;</span>, <span class="stringliteral">&quot;Oct&quot;</span>, <span class="stringliteral">&quot;Nov&quot;</span>, <span class="stringliteral">&quot;Dec&quot;</span>};</div>
+<div class="line"><span class="lineno">  152</span>    <span class="keyword">static</span> <span class="keywordtype">char</span> *wday[] = {<span class="stringliteral">&quot;Sun&quot;</span>, <span class="stringliteral">&quot;Mon&quot;</span>, <span class="stringliteral">&quot;Tue&quot;</span>, <span class="stringliteral">&quot;Wed&quot;</span>, <span class="stringliteral">&quot;Thu&quot;</span>, <span class="stringliteral">&quot;Fri&quot;</span>, <span class="stringliteral">&quot;Sat&quot;</span>};</div>
+<div class="line"><span class="lineno">  153</span> </div>
+<div class="line"><span class="lineno">  154</span>    <span class="keyword">struct </span>tm *time_st = localtime(&amp;timeval.tv_sec);</div>
+<div class="line"><span class="lineno">  155</span> </div>
+<div class="line"><span class="lineno">  156</span>    std::ostringstream ostr;</div>
+<div class="line"><span class="lineno">  157</span>    ostr &lt;&lt; time_st-&gt;tm_year + 1900 &lt;&lt; <span class="stringliteral">&quot;/&quot;</span></div>
+<div class="line"><span class="lineno">  158</span>         &lt;&lt; mon[time_st-&gt;tm_mon] &lt;&lt; <span class="stringliteral">&quot;/&quot;</span></div>
+<div class="line"><span class="lineno">  159</span>         &lt;&lt; time_st-&gt;tm_mday &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><span class="lineno">  160</span>         &lt;&lt; wday[time_st-&gt;tm_wday] &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><span class="lineno">  161</span>         &lt;&lt; time_st-&gt;tm_hour &lt;&lt; <span class="stringliteral">&quot;:&quot;</span></div>
+<div class="line"><span class="lineno">  162</span>         &lt;&lt; time_st-&gt;tm_min &lt;&lt; <span class="stringliteral">&quot;:&quot;</span></div>
+<div class="line"><span class="lineno">  163</span>         &lt;&lt; time_st-&gt;tm_sec &lt;&lt; <span class="stringliteral">&quot;:&quot;</span></div>
+<div class="line"><span class="lineno">  164</span>         &lt;&lt; timeval.tv_usec;</div>
+<div class="line"><span class="lineno">  165</span>    <span class="keywordflow">return</span> ostr.str();</div>
+<div class="line"><span class="lineno">  166</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -452,9 +563,13 @@ Protected Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/common/rec_load/<a class="el" href="_rec_load_8cc_source.html">RecLoad.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rec__load.html">rec_load</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html">RecLoadCoresStat</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

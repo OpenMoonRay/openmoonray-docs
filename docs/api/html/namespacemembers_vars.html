@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,157 +43,53 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('namespacemembers_vars.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="contents">
 &#160;
 
 <h3><a id="index_a" name="index_a"></a>- a -</h3><ul>
 <li>a&#160;:&#160;<a class="el" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">sequence_discrepancy</a></li>
+<li>ALLOC_LIST_INFO_BIT_SHIFT&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#a1610039d650acf6b32ebc89a4181ce65">moonray::pbr::anonymous_namespace{PbrTLState.cc}</a></li>
+<li>ALLOC_LIST_INFO_BITS&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#a0826ada3195fab4eb6061e2fb250f633">moonray::pbr::anonymous_namespace{PbrTLState.cc}</a></li>
+<li>ALLOC_LIST_MAX_ITEM_SIZE&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#a3c401dbb05f8f45be5a0d80e55ec2ea5">moonray::pbr::anonymous_namespace{PbrTLState.cc}</a></li>
+<li>ALLOC_LIST_MAX_NUM_ITEMS&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#ab4426d0550f26d6fdca8bf7ea2142a1d">moonray::pbr::anonymous_namespace{PbrTLState.cc}</a></li>
+<li>AOV_BEAUTY&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_mcrt_fb_sender_8cc_03.html#aa1dcfc2532ea27b0918652c5243e0c52">anonymous_namespace{McrtFbSender.cc}</a>, <a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a894905096ddcfa904df8bb13b1a63551">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>AOV_BEAUTYODD&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_mcrt_fb_sender_8cc_03.html#ae382aad72c3d6e9689ef581ac553ac1f">anonymous_namespace{McrtFbSender.cc}</a></li>
+<li>AOV_DEPTH&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_mcrt_fb_sender_8cc_03.html#af75bf23348d261b0e50bf321d2ef600e">anonymous_namespace{McrtFbSender.cc}</a>, <a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a0c14b58b0c9a1618466b13d822196424">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>AOV_HEATMAP&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_mcrt_fb_sender_8cc_03.html#aba243d5d93a7939befb404cdce1a5d13">anonymous_namespace{McrtFbSender.cc}</a></li>
+<li>AOV_MAX_RANGE_TYPE&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#ac8301e048c9958169f998710e3ce18b4">moonray::pbr</a></li>
+<li>AOV_START_LIGHT_AOV&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a3a77b71d3130fabc4bfbe009771dfef4">moonray::pbr</a></li>
+<li>AOV_START_MATERIAL_AOV&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a79974d34d9628c9f13ec3e7095333450">moonray::pbr</a></li>
+<li>AOV_START_PRIM_ATTR&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#afa336a83d5e76474f3718069ffcd7a37">moonray::pbr</a></li>
+<li>AOV_START_STATE_VAR&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a4db1f42a8d38433944df26f483664110">moonray::pbr</a></li>
+<li>AOV_START_VISIBILITY_AOV&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a63badd6957269e145070d0ad814fe5c2">moonray::pbr</a></li>
+<li>AOV_WEIGHT&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_mcrt_fb_sender_8cc_03.html#a7b28911a2cf797f72ef2a17aeb32e652">anonymous_namespace{McrtFbSender.cc}</a></li>
 <li>ass_file&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#aa48e0acba1cf5ff92c575a8ad49c37d0">polymesh2rdlmesh</a></li>
 <li>authors&#160;:&#160;<a class="el" href="namespacepackage.html#a93fccbc9db3555fa7379d151e457e627">package</a></li>
-</ul>
-
-
-<h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
-<li>conf_rats_variants&#160;:&#160;<a class="el" href="namespacepackage.html#a595c0f77057c6b4cf236e3d9e00d2f78">package</a></li>
-<li>config_version&#160;:&#160;<a class="el" href="namespacepackage.html#a4cd442b0ebe3b7acdbd5a9ae747def8d">package</a></li>
-<li>current_lines&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#a510a2172291defc2b64a1d253e04d47b">animate_plot</a></li>
-</ul>
-
-
-<h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
-<li>data_file&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#a8f9b981dda4c1af9236d9366e3ad3e7c">animate_plot</a></li>
-<li>description&#160;:&#160;<a class="el" href="namespacepackage.html#a1bf55ca64634b72b9400e7f707881a21">package</a></li>
-<li>directory&#160;:&#160;<a class="el" href="namespacesequence__discrepancy.html#ac3de5a1c250c3f044b615a910b27bff1">sequence_discrepancy</a></li>
-</ul>
-
-
-<h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
-<li>floats&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#a99e5ea20f3b6f4ad8846d77e3aaf3a5a">animate_plot</a></li>
-<li>fs&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#a41e1e0b4a88ca08aec463225f921720c">animate_plot</a></li>
-</ul>
-
-
-<h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
-<li>gAccumulatorHandles&#160;:&#160;<a class="el" href="namespacemoonray_1_1mcrt__common.html#aa59f79554d2ce02cad934d330266fcfb">moonray::mcrt_common</a></li>
-<li>gAccumulatorsActive&#160;:&#160;<a class="el" href="namespacemoonray_1_1mcrt__common.html#a9d2bdcc41de48e938a97f855b328c4f5">moonray::mcrt_common</a></li>
-<li>gCancelFlag&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a9897b890f861c85536f6bd2dbf7e3cd6">moonray::rndr</a></li>
-<li>gImageWriteDriver&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a8ce30e7cd1ca5c972ea071084e12c634">moonray::rndr</a></li>
-<li>gnuplot_commands&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#a087ce0f2466905bc79f6cd5791f57018">animate_plot</a></li>
-<li>gnuplot_file&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#a4382bf8dd2fa09d8a70f2a43ad96eaa5">animate_plot</a></li>
-<li>gPixelFillOrder&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#adc4b1ecb6f6fc7470150fe03019dd873">moonray::rndr</a></li>
-<li>gProcKeeper&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#ac2c998c25352855a068cdd38fbb976be">moonray::rndr</a></li>
-<li>gRenderContextConsoleDriver&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a8cc05cfe2654acdabf0f20e58b920e6b">moonray::rndr</a></li>
-<li>gRenderDriver&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a3156636567f008dc8711aeb4dad4fc8f">moonray::rndr</a></li>
-<li>gScrambledPixelFillOrder&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a8346742aed88da2746226b72234aae5b">moonray::rndr</a></li>
-<li>gThreadIdCounter&#160;:&#160;<a class="el" href="namespacemoonray_1_1rt.html#a00340c8c4537f435b5cd4fe4379b180b">moonray::rt</a></li>
-</ul>
-
-
-<h3><a id="index_h" name="index_h"></a>- h -</h3><ul>
-<li>help&#160;:&#160;<a class="el" href="namespacepackage.html#a08c08267f50c6b5bbcc4f1336b176367">package</a></li>
-</ul>
-
-
-<h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
-<li>infile&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#a9d91d0c78be0fd49be353b24f0e98329">animate_plot</a></li>
-</ul>
-
-
-<h3><a id="index_k" name="index_k"></a>- k -</h3><ul>
-<li>kAtomicAlignment&#160;:&#160;<a class="el" href="namespacemoonray_1_1util.html#a87f0a050856ea21b5b9593fc750197ee">moonray::util</a></li>
-<li>kMaxLessThanOne&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a025ec644a933ee73d3194ce3ff43c0ff">moonray::pbr</a></li>
-<li>kSampleGridSize&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a9f999fc8a9ff91768d422804f4da4e89">moonray::pbr</a></li>
-<li>kSIMDAlignment&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#adb53cd5aff508e3fb754cdeaf05f5f9f">moonray::pbr</a></li>
-<li>kSIMDSize&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">moonray::pbr</a></li>
-<li>kTestDimensions&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a34653fca5ae50f3fc7867c65c62be687">moonray::pbr</a></li>
-<li>kUniformDiskVariance1D&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a455a331e16560ae480b630d46e5c7f9c">moonray::pbr</a></li>
-<li>kUniformUnitSquareVariance1D&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a1397705b9d568578b4de368d85cba812">moonray::pbr</a></li>
-</ul>
-
-
-<h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
-<li>line_floats&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#a708aca36f3c4264a603a31861b128275">animate_plot</a></li>
-<li>lines&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#ac80b81501c971a2adc0fa661ff4e0df2">animate_plot</a></li>
-</ul>
-
-
-<h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
-<li>max_points&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#a4acba8b353cf866567a5d498068c994e">animate_plot</a></li>
-<li>mesh_name&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#a4b530b0a269277c217245740a1160531">polymesh2rdlmesh</a></li>
-<li>mesh_node&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#a8779195a3a91bf84683e67b83ef05f5f">polymesh2rdlmesh</a></li>
-</ul>
-
-
-<h3><a id="index_n" name="index_n"></a>- n -</h3><ul>
-<li>name&#160;:&#160;<a class="el" href="namespacepackage.html#a781101519999e91f2fc32335a8969fc2">package</a></li>
-<li>nidxs&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#a98fbbd5e101fb63c5522635eb15c920f">polymesh2rdlmesh</a></li>
-<li>nlist&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#aa2f319ddb00b3203cc40fcde7a8c1624">polymesh2rdlmesh</a></li>
-<li>no_unit_targets&#160;:&#160;<a class="el" href="namespacepackage.html#aec7ef4353332e446ff475476f106ee79">package</a></li>
-<li>nsides&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#a112a7216c33ea83222e1aef6848a07c9">polymesh2rdlmesh</a></li>
-<li>nullHandle&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a34df30b8cc45c93f7a3e5e98db1717c0">moonray::pbr</a></li>
-<li>num_lines&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#a2f8d84078d26c4d01cb230eb3694bf07">animate_plot</a></li>
-<li>num_verts&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#aba862dc57d56927341fcb26eb24d8928">polymesh2rdlmesh</a></li>
-</ul>
-
-
-<h3><a id="index_o" name="index_o"></a>- o -</h3><ul>
-<li>order2x2&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a66298250b4e6a0fe133f81171c9abde2">moonray::pbr</a></li>
-<li>order4x4&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#ad5a4f54e4f3c72a549341ba2dc4c40b6">moonray::pbr</a></li>
-<li>order8x8&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a70db140609132ed5cb1fd28c3e77d119">moonray::pbr</a></li>
-<li>out_file&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#a50d11d1cb0172ff3267d98d112930910">polymesh2rdlmesh</a></li>
-<li>outfile&#160;:&#160;<a class="el" href="namespacesequence__discrepancy.html#a9bda8b99c9227a9c9b5997507ef3c319">sequence_discrepancy</a></li>
-<li>outlines&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#a7863bf018bdb63cf5b28c892d1fdb17d">polymesh2rdlmesh</a></li>
-</ul>
-
-
-<h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
-<li>platform_wait_alignment&#160;:&#160;<a class="el" href="namespacewait__impl.html#a975fa44111e890967e2ee982f0227a16">wait_impl</a></li>
-<li>platform_wait_uses_type&#160;:&#160;<a class="el" href="namespacewait__impl.html#a9071eddc74d77e17ada5e144966a7a2a">wait_impl</a></li>
-<li>plot_dir&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#addeae1edaec49be6224ffa081fa0ce17">animate_plot</a></li>
-<li>private_build_requires&#160;:&#160;<a class="el" href="namespacepackage.html#a742b2858487ff06af2e7da1c8d241554">package</a></li>
-<li>proxy_resource&#160;:&#160;<a class="el" href="namespacepackage.html#a5becd442961196aaeadfbc4d87cbb32e">package</a></li>
-<li>proxy_targets&#160;:&#160;<a class="el" href="namespacepackage.html#abcfe51d29815d04121a19a725e1fbf3a">package</a></li>
-</ul>
-
-
-<h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
-<li>requires&#160;:&#160;<a class="el" href="namespacepackage.html#a747832de338b4a01ff235c9f92777427">package</a></li>
-<li>rotate&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#ac8273c637c0158da61fda38a27a79294">animate_plot</a></li>
-</ul>
-
-
-<h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
-<li>scons_resource&#160;:&#160;<a class="el" href="namespacepackage.html#a98e09ab0276c68b3c5050622a38d9463">package</a></li>
-<li>scons_targets&#160;:&#160;<a class="el" href="namespacepackage.html#ad0f50fe3eebe18137f987fe8a901f6eb">package</a></li>
-<li>sconsTargets&#160;:&#160;<a class="el" href="namespacepackage.html#aa8f6ba1e1ac79287cfa94be43356eb1f">package</a></li>
-<li>shell&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#a7579679d82137270bc5a20c39aaec002">animate_plot</a></li>
-<li>sImpl&#160;:&#160;<a class="el" href="namespacemoonray_1_1file__resource.html#a6d3615580006f6ad926eafddb963c09b">moonray::file_resource</a></li>
-<li>sIntersectionEpsilon&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a0d5b960fedcd85f9ff120b9968ba0314">moonray::shading</a></li>
-<li>sNoLabel&#160;:&#160;<a class="el" href="namespacemoonray_1_1lpe.html#afc7042fdd4a1c528313a0f1ceb20c15a">moonray::lpe</a></li>
-<li>subd_itr&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#a6c62430f74278f41046c3f4711deb9d3">polymesh2rdlmesh</a></li>
-<li>subd_type&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#a0dd0267ec0c435b1d309d8feefa37d46">polymesh2rdlmesh</a></li>
-</ul>
-
-
-<h3><a id="index_u" name="index_u"></a>- u -</h3><ul>
-<li>unittestflags&#160;:&#160;<a class="el" href="namespacepackage.html#a7c74584e174335a3c11f0bc924ec5de2">package</a></li>
-<li>usage&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#a670ca80002f0c8b9803d0c73a9e811a5">polymesh2rdlmesh</a></li>
-<li>uuid&#160;:&#160;<a class="el" href="namespacepackage.html#a7f35f2a70cca782ccf4ab7af0370c2be">package</a></li>
-<li>uvidxs&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#a1e73d93a1a6f207ba60ca621b1110c9d">polymesh2rdlmesh</a></li>
-<li>uvlist&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#ae68739b8134a4348b2a32b8eff969fae">polymesh2rdlmesh</a></li>
-</ul>
-
-
-<h3><a id="index_v" name="index_v"></a>- v -</h3><ul>
-<li>variant_resource_targets&#160;:&#160;<a class="el" href="namespacepackage.html#af555def747e3baa76dd9a002604c6681">package</a></li>
-<li>variants&#160;:&#160;<a class="el" href="namespacepackage.html#aa7ffdd880a83f8cff4436df3d16e9077">package</a></li>
-<li>vidxs&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#a7b5701b598098e3ec146a6e24c69153d">polymesh2rdlmesh</a></li>
-<li>vlist&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#a6ba13806a6aff432f5f272355095b10c">polymesh2rdlmesh</a></li>
+<li>AUXINFO_NAME&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_mcrt_fb_sender_8cc_03.html#ab95041dcb2f335b3721c13328d2d4629">anonymous_namespace{McrtFbSender.cc}</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

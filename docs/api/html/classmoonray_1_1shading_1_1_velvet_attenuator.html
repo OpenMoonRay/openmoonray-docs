@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_velvet_attenuator.html">VelvetAttenuator</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_velvet_attenuator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -143,7 +159,25 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_lobe_attenuator_8h_source.html#l00155">155</a> of file <a class="el" href="_lobe_attenuator_8h_source.html">LobeAttenuator.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  157</span>                                   :</div>
+<div class="line"><span class="lineno">  158</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_lobe_attenuator.html#a406f6fe9a39b4d19872be2b7d2c83f7d">LobeAttenuator</a>(velvet.getN())</div>
+<div class="line"><span class="lineno">  159</span>    {</div>
+<div class="line"><span class="lineno">  160</span>        <span class="keywordflow">if</span> (velvet.getUseAbsorbingFibers() == <span class="keyword">false</span>) {</div>
+<div class="line"><span class="lineno">  161</span>            <span class="comment">// Lets more energy through based on the velvet color</span></div>
+<div class="line"><span class="lineno">  162</span>            <span class="keyword">const</span> scene_rdl2::math::Color&amp; c = velvet.getColor();</div>
+<div class="line"><span class="lineno">  163</span>            weight *= scene_rdl2::math::max(c.r,</div>
+<div class="line"><span class="lineno">  164</span>                      scene_rdl2::math::max(c.g,</div>
+<div class="line"><span class="lineno">  165</span>                                c.b));</div>
+<div class="line"><span class="lineno">  166</span>        }</div>
+<div class="line"><span class="lineno">  167</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_lobe_attenuator.html#a94717c9db5bb31590d42c4ce28a4c9df">mOneMinusFresnel</a> =</div>
+<div class="line"><span class="lineno">  168</span>            arena-&gt;allocWithArgs&lt;OneMinusVelvetFresnel&gt;(velvet.getRoughness());</div>
+<div class="line"><span class="lineno">  169</span> </div>
+<div class="line"><span class="lineno">  170</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_lobe_attenuator.html#a94717c9db5bb31590d42c4ce28a4c9df">mOneMinusFresnel</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_fresnel.html#a5f7affd419b5e5aac6dcb40d74731195">setWeight</a>(weight);</div>
+<div class="line"><span class="lineno">  171</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_fresnel_html_a5f7affd419b5e5aac6dcb40d74731195"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fresnel.html#a5f7affd419b5e5aac6dcb40d74731195">moonray::shading::Fresnel::setWeight</a></div><div class="ttdeci">void setWeight(float weight)</div><div class="ttdef"><b>Definition:</b> <a href="_fresnel_8h_source.html#l00090">Fresnel.h:90</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_lobe_attenuator_html_a406f6fe9a39b4d19872be2b7d2c83f7d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_lobe_attenuator.html#a406f6fe9a39b4d19872be2b7d2c83f7d">moonray::shading::LobeAttenuator::LobeAttenuator</a></div><div class="ttdeci">LobeAttenuator()</div><div class="ttdef"><b>Definition:</b> <a href="_lobe_attenuator_8h_source.html#l00028">LobeAttenuator.h:28</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_lobe_attenuator_html_a94717c9db5bb31590d42c4ce28a4c9df"><div class="ttname"><a href="classmoonray_1_1shading_1_1_lobe_attenuator.html#a94717c9db5bb31590d42c4ce28a4c9df">moonray::shading::LobeAttenuator::mOneMinusFresnel</a></div><div class="ttdeci">Fresnel * mOneMinusFresnel</div><div class="ttdef"><b>Definition:</b> <a href="_lobe_attenuator_8h_source.html#l00091">LobeAttenuator.h:91</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acb64f57aebf15df4a54ccaa10d25db6c" name="acb64f57aebf15df4a54ccaa10d25db6c"></a>
@@ -196,7 +230,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_lobe_attenuator_8h_source.html#l00176">176</a> of file <a class="el" href="_lobe_attenuator_8h_source.html">LobeAttenuator.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  176</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -230,9 +265,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/<a class="el" href="_lobe_attenuator_8h_source.html">LobeAttenuator.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_velvet_attenuator.html">VelvetAttenuator</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

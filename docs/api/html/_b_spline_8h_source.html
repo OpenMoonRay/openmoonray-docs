@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_02f99361fbe6a8c61cf6ccdd2c3bf288.html">geom</a></li><li class="navelem"><a class="el" href="dir_f871d1e4df57f93e703e4b9c83a931fa.html">prim</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_b_spline_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">BSpline.h</div></div>
 </div><!--header-->
@@ -50,7 +66,11 @@ $(function() {
 <a href="_b_spline_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2019-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file BSpline.h</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Marianna Neubauer</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">///</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"></span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -61,8 +81,18 @@ $(function() {
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemoonray.html">moonray</a> {</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span>geom {</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span>internal {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"></span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">///</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/// @class</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/// @brief The BSpline class is a CubicSpline primitive with overlapping</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">///    spans. Each span shares 3 control points with the subsequent span.</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">///    We only handle uniform cubic b-splines.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">///</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">///    Here is a visual of the span layout:</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">///</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">///    *--*--*--*       span1</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">///       *--*--*--*    span2</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"></span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html">   31</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html">BSpline</a> : <span class="keyword">public</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html">CubicSpline</a></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">public</span>:</div>
@@ -75,13 +105,13 @@ $(function() {
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">virtual</span> uint32_t getSpansInChain(<span class="keyword">const</span> uint32_t chain)<span class="keyword"> const override</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html#a148a787d104632b67bba0fe831d70c4b">   43</a></span>    <span class="keyword">virtual</span> uint32_t <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html#a148a787d104632b67bba0fe831d70c4b">getSpansInChain</a>(<span class="keyword">const</span> uint32_t chain)<span class="keyword"> const override</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#af71c8a389f57147238c200e8b306ec91">mCurvesVertexCount</a>[chain] - 3;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// get weights for each of the 4 control points of a span</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> evalWeights(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; t, <span class="keywordtype">float</span>&amp; w0, <span class="keywordtype">float</span>&amp; w1, <span class="keywordtype">float</span>&amp; w2, <span class="keywordtype">float</span>&amp; w3)<span class="keyword"> const override</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html#a63cea747665bfaa6d1d7c140a77fd44a">   49</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html#a63cea747665bfaa6d1d7c140a77fd44a">evalWeights</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; t, <span class="keywordtype">float</span>&amp; w0, <span class="keywordtype">float</span>&amp; w1, <span class="keywordtype">float</span>&amp; w2, <span class="keywordtype">float</span>&amp; w3)<span class="keyword"> const override</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> s = 1.f - t;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> oneSixth(1.0f/6.0f);</div>
@@ -94,7 +124,7 @@ $(function() {
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// get weights for the difference of neighboring controls points</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// to scale (p1 - p0), (p2 - p1), and (p3 - p2)</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> evalDerivWeights(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; t, <span class="keywordtype">float</span>&amp; w0, <span class="keywordtype">float</span>&amp; w1, <span class="keywordtype">float</span>&amp; w2)<span class="keyword"> const override</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html#a9a2cf58a4b17ffcd648e543681d42303">   62</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html#a9a2cf58a4b17ffcd648e543681d42303">evalDerivWeights</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; t, <span class="keywordtype">float</span>&amp; w0, <span class="keywordtype">float</span>&amp; w1, <span class="keywordtype">float</span>&amp; w2)<span class="keyword"> const override</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> s = 1.f - t;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        w0 = 0.5f * s * s;</div>
@@ -120,15 +150,22 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_layer_assignment_id_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1_layer_assignment_id.html">moonray::geom::LayerAssignmentId</a></div><div class="ttdoc">This class represents the mapping from each sub-primitive (face/curve) to a corresponding layer assig...</div><div class="ttdef"><b>Definition:</b> <a href="_layer_assignment_id_8h_source.html#l00040">LayerAssignmentId.h:41</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_vertex_buffer_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vertex_buffer.html">moonray::geom::VertexBuffer&lt; Vec3fa, InterleavedTraits &gt;</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_b_spline_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html">moonray::geom::internal::BSpline</a></div><div class="ttdef"><b>Definition:</b> <a href="_b_spline_8h_source.html#l00031">BSpline.h:32</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_b_spline_html_a148a787d104632b67bba0fe831d70c4b"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html#a148a787d104632b67bba0fe831d70c4b">moonray::geom::internal::BSpline::getSpansInChain</a></div><div class="ttdeci">virtual uint32_t getSpansInChain(const uint32_t chain) const override</div><div class="ttdef"><b>Definition:</b> <a href="_b_spline_8h_source.html#l00043">BSpline.h:43</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_b_spline_html_a63cea747665bfaa6d1d7c140a77fd44a"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html#a63cea747665bfaa6d1d7c140a77fd44a">moonray::geom::internal::BSpline::evalWeights</a></div><div class="ttdeci">virtual void evalWeights(const float &amp;t, float &amp;w0, float &amp;w1, float &amp;w2, float &amp;w3) const override</div><div class="ttdef"><b>Definition:</b> <a href="_b_spline_8h_source.html#l00049">BSpline.h:49</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_b_spline_html_a9a2cf58a4b17ffcd648e543681d42303"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_b_spline.html#a9a2cf58a4b17ffcd648e543681d42303">moonray::geom::internal::BSpline::evalDerivWeights</a></div><div class="ttdeci">virtual void evalDerivWeights(const float &amp;t, float &amp;w0, float &amp;w1, float &amp;w2) const override</div><div class="ttdef"><b>Definition:</b> <a href="_b_spline_8h_source.html#l00062">BSpline.h:62</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_cubic_spline_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_cubic_spline.html">moonray::geom::internal::CubicSpline</a></div><div class="ttdoc">The CubicSpline class is a Curves primitive constructed from piecewise third-order polynomials....</div><div class="ttdef"><b>Definition:</b> <a href="_cubic_spline_8h_source.html#l00031">CubicSpline.h:32</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_a4794b7aec0f30dbaee7ef611cd182201"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a4794b7aec0f30dbaee7ef611cd182201">moonray::geom::internal::Curves::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_curves_8h_source.html#l00029">Curves.h:30</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_af71c8a389f57147238c200e8b306ec91"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#af71c8a389f57147238c200e8b306ec91">moonray::geom::internal::Curves::mCurvesVertexCount</a></div><div class="ttdeci">geom::Curves::CurvesVertexCount mCurvesVertexCount</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_curves_8h_source.html#l00249">Curves.h:249</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_primitive_attribute_table_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_primitive_attribute_table.html">moonray::shading::PrimitiveAttributeTable</a></div><div class="ttdoc">a PrimitiveAttribute hashtable using AttributeKey as lookup index</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00392">PrimitiveAttribute.h:393</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_0486ff0a15d68326ffdea20a24729a76.html">geom</a></li><li class="navelem"><a class="el" href="dir_5ea21d31850ee446955c5d9316b10017.html">prim</a></li><li class="navelem"><a class="el" href="_b_spline_8h.html">BSpline.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

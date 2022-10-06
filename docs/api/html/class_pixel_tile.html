@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,6 +43,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_pixel_tile.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -80,7 +100,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a507f65803cc8f8336c67fbc3a62edfcf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">yAxisUp</a> () const</td></tr>
 <tr class="memdesc:a507f65803cc8f8336c67fbc3a62edfcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">rst:cpp:end::  <a href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">More...</a><br /></td></tr>
 <tr class="separator:a507f65803cc8f8336c67fbc3a62edfcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af02122044a3c48f33dd7e4f64a8b9ae2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#af02122044a3c48f33dd7e4f64a8b9ae2">flipY</a> (int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:af02122044a3c48f33dd7e4f64a8b9ae2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#af02122044a3c48f33dd7e4f64a8b9ae2">flipY</a> (int y) const</td></tr>
 <tr class="separator:af02122044a3c48f33dd7e4f64a8b9ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1095f25d85ae09786056bfc1c02027b8"><td class="memItemLeft" align="right" valign="top">IMATH_NAMESPACE::Box2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#a1095f25d85ae09786056bfc1c02027b8">flipY</a> (const IMATH_NAMESPACE::Box2i &amp;bbox) const</td></tr>
 <tr class="separator:a1095f25d85ae09786056bfc1c02027b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,9 +134,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa504c4c60d6fd599c4cecc79e868526b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49fb0cffaabe236c699ee06920d80c5c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_channel_alias.html">ChannelAlias</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#a49fb0cffaabe236c699ee06920d80c5c">getChannelAlias</a> (<a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>) const</td></tr>
 <tr class="separator:a49fb0cffaabe236c699ee06920d80c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae07459f132d19d53adca5832c1de81eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#ae07459f132d19d53adca5832c1de81eb">isActivePixel</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:ae07459f132d19d53adca5832c1de81eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#ae07459f132d19d53adca5832c1de81eb">isActivePixel</a> (int x, int y) const</td></tr>
 <tr class="separator:ae07459f132d19d53adca5832c1de81eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0cb4b5eb6ba72a62f8d535044d2b8c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#ac0cb4b5eb6ba72a62f8d535044d2b8c9">isInside</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:ac0cb4b5eb6ba72a62f8d535044d2b8c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#ac0cb4b5eb6ba72a62f8d535044d2b8c9">isInside</a> (int x, int y) const</td></tr>
 <tr class="separator:ac0cb4b5eb6ba72a62f8d535044d2b8c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -169,7 +189,20 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8cpp_source.html#l00045">45</a> of file <a class="el" href="_dcx_pixel_tile_8cpp_source.html">DcxPixelTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   46</span>                                    :</div>
+<div class="line"><span class="lineno">   47</span>    <a class="code hl_variable" href="class_pixel_tile.html#acb6142e31c60bc2803f243c62948056d">m_yaxis_up</a>(<a class="code hl_function" href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">yAxisUp</a>),</div>
+<div class="line"><span class="lineno">   48</span>    <a class="code hl_variable" href="class_pixel_tile.html#a9de406d88014873863abc84acebc92d0">m_top_reference</a>(0),</div>
+<div class="line"><span class="lineno">   49</span>    <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>(IMATH_NAMESPACE::V2i(0,0), IMATH_NAMESPACE::V2i(-1,-1)),</div>
+<div class="line"><span class="lineno">   50</span>    <a class="code hl_variable" href="class_pixel_tile.html#a4dc997adac91c9841e3292ff64df2e82">m_channel_ctx</a>(&amp;channel_ctx)</div>
+<div class="line"><span class="lineno">   51</span>{</div>
+<div class="line"><span class="lineno">   52</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno">   53</span>}</div>
+<div class="ttc" id="aclass_pixel_tile_html_a4dc997adac91c9841e3292ff64df2e82"><div class="ttname"><a href="class_pixel_tile.html#a4dc997adac91c9841e3292ff64df2e82">PixelTile::m_channel_ctx</a></div><div class="ttdeci">ChannelContext * m_channel_ctx</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00228">DcxPixelTile.h:228</a></div></div>
+<div class="ttc" id="aclass_pixel_tile_html_a507f65803cc8f8336c67fbc3a62edfcf"><div class="ttname"><a href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">PixelTile::yAxisUp</a></div><div class="ttdeci">bool yAxisUp() const</div><div class="ttdoc">rst:cpp:end::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00245">DcxPixelTile.h:245</a></div></div>
+<div class="ttc" id="aclass_pixel_tile_html_a9de406d88014873863abc84acebc92d0"><div class="ttname"><a href="class_pixel_tile.html#a9de406d88014873863abc84acebc92d0">PixelTile::m_top_reference</a></div><div class="ttdeci">int m_top_reference</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00226">DcxPixelTile.h:226</a></div></div>
+<div class="ttc" id="aclass_pixel_tile_html_ab587143b0f7ae0ad89a486bb48ed72eb"><div class="ttname"><a href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">PixelTile::m_dataWindow</a></div><div class="ttdeci">IMATH_NAMESPACE::Box2i m_dataWindow</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00227">DcxPixelTile.h:227</a></div></div>
+<div class="ttc" id="aclass_pixel_tile_html_acb6142e31c60bc2803f243c62948056d"><div class="ttname"><a href="class_pixel_tile.html#acb6142e31c60bc2803f243c62948056d">PixelTile::m_yaxis_up</a></div><div class="ttdeci">bool m_yaxis_up</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00225">DcxPixelTile.h:225</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a93093d206535023beec2038d3139fe22" name="a93093d206535023beec2038d3139fe22"></a>
@@ -205,7 +238,15 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8cpp_source.html#l00055">55</a> of file <a class="el" href="_dcx_pixel_tile_8cpp_source.html">DcxPixelTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   57</span>                                    :</div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_variable" href="class_pixel_tile.html#acb6142e31c60bc2803f243c62948056d">m_yaxis_up</a>(<a class="code hl_function" href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">yAxisUp</a>),</div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_variable" href="class_pixel_tile.html#a9de406d88014873863abc84acebc92d0">m_top_reference</a>(header.displayWindow().max.y),</div>
+<div class="line"><span class="lineno">   60</span>    <a class="code hl_variable" href="class_pixel_tile.html#a4dc997adac91c9841e3292ff64df2e82">m_channel_ctx</a>(&amp;channel_ctx)</div>
+<div class="line"><span class="lineno">   61</span>{</div>
+<div class="line"><span class="lineno">   62</span>    <a class="code hl_function" href="class_pixel_tile.html#aabe0fbdb95969e167407bf1afd386e60">setDataWindow</a>(header.dataWindow(), <span class="keyword">true</span><span class="comment">/*sourceWindowsYAxisUp*/</span>, <span class="keyword">true</span><span class="comment">/*force*/</span>); <span class="comment">// May flip the data window</span></div>
+<div class="line"><span class="lineno">   63</span>}</div>
+<div class="ttc" id="aclass_pixel_tile_html_aabe0fbdb95969e167407bf1afd386e60"><div class="ttname"><a href="class_pixel_tile.html#aabe0fbdb95969e167407bf1afd386e60">PixelTile::setDataWindow</a></div><div class="ttdeci">virtual void setDataWindow(const IMATH_NAMESPACE::Box2i &amp;data_window, bool sourceWindowYAxisUp=true, bool force=false)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8cpp_source.html#l00109">DcxPixelTile.cpp:109</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2e26053884589504fc6ee5c3fa161e9e" name="a2e26053884589504fc6ee5c3fa161e9e"></a>
@@ -259,7 +300,18 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8cpp_source.html#l00065">65</a> of file <a class="el" href="_dcx_pixel_tile_8cpp_source.html">DcxPixelTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   70</span>                                    :</div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_variable" href="class_pixel_tile.html#acb6142e31c60bc2803f243c62948056d">m_yaxis_up</a>(<a class="code hl_function" href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">yAxisUp</a>),</div>
+<div class="line"><span class="lineno">   72</span>    <a class="code hl_variable" href="class_pixel_tile.html#a9de406d88014873863abc84acebc92d0">m_top_reference</a>(display_window.max.y),</div>
+<div class="line"><span class="lineno">   73</span>    <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>(data_window),</div>
+<div class="line"><span class="lineno">   74</span>    <a class="code hl_variable" href="class_pixel_tile.html#a4dc997adac91c9841e3292ff64df2e82">m_channel_ctx</a>(&amp;channel_ctx)</div>
+<div class="line"><span class="lineno">   75</span>{</div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_function" href="class_pixel_tile.html#aabe0fbdb95969e167407bf1afd386e60">setDataWindow</a>(data_window, sourceWindowsYAxisUp, <span class="keyword">true</span><span class="comment">/*force*/</span>); <span class="comment">// May flip the data window</span></div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_function" href="class_pixel_tile.html#a740495fe0beb1f940dae87a1833d2edd">setChannels</a>(<a class="code hl_function" href="class_pixel_tile.html#ac5fa8ea854e57ba3e97983cf37573790">channels</a>, <span class="keyword">true</span><span class="comment">/*force*/</span>);</div>
+<div class="line"><span class="lineno">   78</span>}</div>
+<div class="ttc" id="aclass_pixel_tile_html_a740495fe0beb1f940dae87a1833d2edd"><div class="ttname"><a href="class_pixel_tile.html#a740495fe0beb1f940dae87a1833d2edd">PixelTile::setChannels</a></div><div class="ttdeci">virtual void setChannels(const ChannelSet &amp;, bool force=false)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8cpp_source.html#l00125">DcxPixelTile.cpp:125</a></div></div>
+<div class="ttc" id="aclass_pixel_tile_html_ac5fa8ea854e57ba3e97983cf37573790"><div class="ttname"><a href="class_pixel_tile.html#ac5fa8ea854e57ba3e97983cf37573790">PixelTile::channels</a></div><div class="ttdeci">const OPENDCX_INTERNAL_NAMESPACE::ChannelSet &amp; channels() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00255">DcxPixelTile.h:255</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4457779647ac4dd4787a09557433eb0a" name="a4457779647ac4dd4787a09557433eb0a"></a>
@@ -313,7 +365,16 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8cpp_source.html#l00080">80</a> of file <a class="el" href="_dcx_pixel_tile_8cpp_source.html">DcxPixelTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   85</span>                                    :</div>
+<div class="line"><span class="lineno">   86</span>    <a class="code hl_variable" href="class_pixel_tile.html#acb6142e31c60bc2803f243c62948056d">m_yaxis_up</a>(<a class="code hl_function" href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">yAxisUp</a>),</div>
+<div class="line"><span class="lineno">   87</span>    <a class="code hl_variable" href="class_pixel_tile.html#a9de406d88014873863abc84acebc92d0">m_top_reference</a>(top_reference),</div>
+<div class="line"><span class="lineno">   88</span>    <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>(data_window),</div>
+<div class="line"><span class="lineno">   89</span>    <a class="code hl_variable" href="class_pixel_tile.html#a4dc997adac91c9841e3292ff64df2e82">m_channel_ctx</a>(&amp;channel_ctx)</div>
+<div class="line"><span class="lineno">   90</span>{</div>
+<div class="line"><span class="lineno">   91</span>    <a class="code hl_function" href="class_pixel_tile.html#aabe0fbdb95969e167407bf1afd386e60">setDataWindow</a>(data_window, sourceWindowsYAxisUp, <span class="keyword">true</span><span class="comment">/*force*/</span>); <span class="comment">// May flip the data window</span></div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_function" href="class_pixel_tile.html#a740495fe0beb1f940dae87a1833d2edd">setChannels</a>(<a class="code hl_function" href="class_pixel_tile.html#ac5fa8ea854e57ba3e97983cf37573790">channels</a>, <span class="keyword">true</span><span class="comment">/*force*/</span>);</div>
+<div class="line"><span class="lineno">   93</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad43321cf5445cc14ad735ae9391c42a8" name="ad43321cf5445cc14ad735ae9391c42a8"></a>
@@ -340,7 +401,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8cpp_source.html#l00141">141</a> of file <a class="el" href="_dcx_pixel_tile_8cpp_source.html">DcxPixelTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  142</span>{</div>
+<div class="line"><span class="lineno">  143</span>   <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  144</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9b88e6e6d2aa2b6e046d57481e0d82fb" name="a9b88e6e6d2aa2b6e046d57481e0d82fb"></a>
@@ -368,7 +432,18 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8cpp_source.html#l00095">95</a> of file <a class="el" href="_dcx_pixel_tile_8cpp_source.html">DcxPixelTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   95</span>                                        :</div>
+<div class="line"><span class="lineno">   96</span>    <a class="code hl_variable" href="class_pixel_tile.html#acb6142e31c60bc2803f243c62948056d">m_yaxis_up</a>(b.<a class="code hl_variable" href="class_pixel_tile.html#acb6142e31c60bc2803f243c62948056d">m_yaxis_up</a>),</div>
+<div class="line"><span class="lineno">   97</span>    <a class="code hl_variable" href="class_pixel_tile.html#a9de406d88014873863abc84acebc92d0">m_top_reference</a>(b.<a class="code hl_variable" href="class_pixel_tile.html#a9de406d88014873863abc84acebc92d0">m_top_reference</a>),</div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>(b.<a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>),</div>
+<div class="line"><span class="lineno">   99</span>    <a class="code hl_variable" href="class_pixel_tile.html#a4dc997adac91c9841e3292ff64df2e82">m_channel_ctx</a>(b.<a class="code hl_variable" href="class_pixel_tile.html#a4dc997adac91c9841e3292ff64df2e82">m_channel_ctx</a>),</div>
+<div class="line"><span class="lineno">  100</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  101</span>    <a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a>(b.<a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a>)</div>
+<div class="line"><span class="lineno">  102</span>{</div>
+<div class="line"><span class="lineno">  103</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  104</span>}</div>
+<div class="ttc" id="aclass_pixel_tile_html_a3355561819063fefe9716240b0d15d82"><div class="ttname"><a href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">PixelTile::m_channels</a></div><div class="ttdeci">OPENDCX_INTERNAL_NAMESPACE::ChannelSet m_channels</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00231">DcxPixelTile.h:231</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -396,7 +471,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00256">256</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  256</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_pixel_tile.html#a4dc997adac91c9841e3292ff64df2e82">m_channel_ctx</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac5fa8ea854e57ba3e97983cf37573790" name="ac5fa8ea854e57ba3e97983cf37573790"></a>
@@ -423,7 +499,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00255">255</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  255</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac1157f3e5ea6b66700bd587faf8d0780" name="ac1157f3e5ea6b66700bd587faf8d0780"></a>
@@ -450,7 +527,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00264">264</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  264</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1095f25d85ae09786056bfc1c02027b8" name="a1095f25d85ae09786056bfc1c02027b8"></a>
@@ -478,7 +556,15 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00247">247</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  247</span>                                                                                   {</div>
+<div class="line"><span class="lineno">  248</span>    IMATH_NAMESPACE::Box2i flipped(bbox);</div>
+<div class="line"><span class="lineno">  249</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_pixel_tile.html#acb6142e31c60bc2803f243c62948056d">m_yaxis_up</a>) {</div>
+<div class="line"><span class="lineno">  250</span>        flipped.max.y = <a class="code hl_variable" href="class_pixel_tile.html#a9de406d88014873863abc84acebc92d0">m_top_reference</a> - bbox.min.y;</div>
+<div class="line"><span class="lineno">  251</span>        flipped.min.y = <a class="code hl_variable" href="class_pixel_tile.html#a9de406d88014873863abc84acebc92d0">m_top_reference</a> - bbox.max.y;</div>
+<div class="line"><span class="lineno">  252</span>    }</div>
+<div class="line"><span class="lineno">  253</span>    <span class="keywordflow">return</span> flipped;</div>
+<div class="line"><span class="lineno">  254</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af02122044a3c48f33dd7e4f64a8b9ae2" name="af02122044a3c48f33dd7e4f64a8b9ae2"></a>
@@ -506,7 +592,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00246">246</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  246</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_pixel_tile.html#acb6142e31c60bc2803f243c62948056d">m_yaxis_up</a>)?(<a class="code hl_variable" href="class_pixel_tile.html#a9de406d88014873863abc84acebc92d0">m_top_reference</a> - y):y; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a49fb0cffaabe236c699ee06920d80c5c" name="a49fb0cffaabe236c699ee06920d80c5c"></a>
@@ -534,7 +621,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00257">257</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  257</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_pixel_tile.html#a4dc997adac91c9841e3292ff64df2e82">m_channel_ctx</a>-&gt;<a class="code hl_function" href="class_channel_context.html#af97af2775ed0cd244aabf00c3e9ccbf9">findChannelAlias</a>(z); }</div>
+<div class="ttc" id="aclass_channel_context_html_af97af2775ed0cd244aabf00c3e9ccbf9"><div class="ttname"><a href="class_channel_context.html#af97af2775ed0cd244aabf00c3e9ccbf9">ChannelContext::findChannelAlias</a></div><div class="ttdeci">ChannelAlias * findChannelAlias(const char *name) const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8cpp_source.html#l00677">DcxChannelSet.cpp:677</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5ddec342f2a0e6742115012ab9566fec" name="a5ddec342f2a0e6742115012ab9566fec"></a>
@@ -561,7 +650,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00272">272</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  272</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="class_pixel_tile.html#a1e4aa09c59326ee1b32d47e6eddb04a3">height</a>(); }</div>
+<div class="ttc" id="aclass_pixel_tile_html_a1e4aa09c59326ee1b32d47e6eddb04a3"><div class="ttname"><a href="class_pixel_tile.html#a1e4aa09c59326ee1b32d47e6eddb04a3">PixelTile::height</a></div><div class="ttdeci">int height() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00270">DcxPixelTile.h:270</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1e4aa09c59326ee1b32d47e6eddb04a3" name="a1e4aa09c59326ee1b32d47e6eddb04a3"></a>
@@ -588,7 +679,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00270">270</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  270</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.max.y - <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.y + 1); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae07459f132d19d53adca5832c1de81eb" name="ae07459f132d19d53adca5832c1de81eb"></a>
@@ -626,7 +718,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00259">259</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  259</span>                                                 { <span class="keywordflow">return</span> !(x &lt; <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.x || y &lt; <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.y ||</div>
+<div class="line"><span class="lineno">  260</span>                                                              x &gt; <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.max.x || y &gt; <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.max.y); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac0cb4b5eb6ba72a62f8d535044d2b8c9" name="ac0cb4b5eb6ba72a62f8d535044d2b8c9"></a>
@@ -664,7 +758,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00261">261</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  261</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="class_pixel_tile.html#ae07459f132d19d53adca5832c1de81eb">isActivePixel</a>(x, y); }</div>
+<div class="ttc" id="aclass_pixel_tile_html_ae07459f132d19d53adca5832c1de81eb"><div class="ttname"><a href="class_pixel_tile.html#ae07459f132d19d53adca5832c1de81eb">PixelTile::isActivePixel</a></div><div class="ttdeci">bool isActivePixel(int x, int y) const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00259">DcxPixelTile.h:259</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aac205fdc93169c31fee272bd4aa71423" name="aac205fdc93169c31fee272bd4aa71423"></a>
@@ -691,7 +787,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00267">267</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  267</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.max.x; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afd775fd8ed75da986367516404253ca9" name="afd775fd8ed75da986367516404253ca9"></a>
@@ -718,7 +815,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00268">268</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  268</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.max.y; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acbd1e65c267e4a569b16bc72531a7763" name="acbd1e65c267e4a569b16bc72531a7763"></a>
@@ -745,7 +843,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00265">265</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  265</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.x; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab5a9d10f660e79b9057283ab23d46186" name="ab5a9d10f660e79b9057283ab23d46186"></a>
@@ -772,7 +871,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00266">266</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  266</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.y; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a853eb2ee7eb4f963f242dd85ea5a2cea" name="a853eb2ee7eb4f963f242dd85ea5a2cea"></a>
@@ -799,7 +899,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00262">262</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  262</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a>.size(); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a740495fe0beb1f940dae87a1833d2edd" name="a740495fe0beb1f940dae87a1833d2edd"></a>
@@ -839,7 +940,19 @@ Protected Attributes</h2></td></tr>
 <p>Reimplemented in <a class="el" href="class_deep_tile.html#a3fce6e9a89ce36baffb104d6b7a66326">DeepTile</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8cpp_source.html#l00125">125</a> of file <a class="el" href="_dcx_pixel_tile_8cpp_source.html">DcxPixelTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  127</span>{</div>
+<div class="line"><span class="lineno">  128</span>    <a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a>.clear();</div>
+<div class="line"><span class="lineno">  129</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_pixel_tile.html#a4dc997adac91c9841e3292ff64df2e82">m_channel_ctx</a>)</div>
+<div class="line"><span class="lineno">  130</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  131</span>    <span class="comment">// Verify each channel is valid in this context:</span></div>
+<div class="line"><span class="lineno">  132</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_function" href="class_pixel_tile.html#ac5fa8ea854e57ba3e97983cf37573790">channels</a>)</div>
+<div class="line"><span class="lineno">  133</span>    {</div>
+<div class="line"><span class="lineno">  134</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_pixel_tile.html#a4dc997adac91c9841e3292ff64df2e82">m_channel_ctx</a>-&gt;<a class="code hl_function" href="class_channel_context.html#af97af2775ed0cd244aabf00c3e9ccbf9">findChannelAlias</a>(z))</div>
+<div class="line"><span class="lineno">  135</span>            <a class="code hl_variable" href="class_pixel_tile.html#a3355561819063fefe9716240b0d15d82">m_channels</a> += z;</div>
+<div class="line"><span class="lineno">  136</span>    }</div>
+<div class="line"><span class="lineno">  137</span>}</div>
+<div class="ttc" id="a_dcx_channel_set_8h_html_a1a8a3195f4006c505fa4bec8a1c60ae2"><div class="ttname"><a href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a></div><div class="ttdeci">#define foreach_channel(CHAN, CHANNELS)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00312">DcxChannelSet.h:312</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aabe0fbdb95969e167407bf1afd386e60" name="aabe0fbdb95969e167407bf1afd386e60"></a>
@@ -885,7 +998,16 @@ Protected Attributes</h2></td></tr>
 <p>Reimplemented in <a class="el" href="class_deep_image_output_tile.html#a4e352f3d395366370f95859d662cd54f">DeepImageOutputTile</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8cpp_source.html#l00109">109</a> of file <a class="el" href="_dcx_pixel_tile_8cpp_source.html">DcxPixelTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  112</span>{</div>
+<div class="line"><span class="lineno">  113</span>    <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a> = data_window;</div>
+<div class="line"><span class="lineno">  114</span>    <span class="comment">// Flip data window vertically if source window is flipped:</span></div>
+<div class="line"><span class="lineno">  115</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_pixel_tile.html#acb6142e31c60bc2803f243c62948056d">m_yaxis_up</a> != sourceWindowYAxisUp)</div>
+<div class="line"><span class="lineno">  116</span>    {</div>
+<div class="line"><span class="lineno">  117</span>        <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.y = <a class="code hl_variable" href="class_pixel_tile.html#a9de406d88014873863abc84acebc92d0">m_top_reference</a> - data_window.max.y;</div>
+<div class="line"><span class="lineno">  118</span>        <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.max.y = <a class="code hl_variable" href="class_pixel_tile.html#a9de406d88014873863abc84acebc92d0">m_top_reference</a> - data_window.min.y;</div>
+<div class="line"><span class="lineno">  119</span>    }</div>
+<div class="line"><span class="lineno">  120</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a45799dabb016e6668d7a35137f890961" name="a45799dabb016e6668d7a35137f890961"></a>
@@ -912,7 +1034,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00271">271</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  271</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="class_pixel_tile.html#a4926ddbff327775892f87a88baf8c18c">width</a>(); }</div>
+<div class="ttc" id="aclass_pixel_tile_html_a4926ddbff327775892f87a88baf8c18c"><div class="ttname"><a href="class_pixel_tile.html#a4926ddbff327775892f87a88baf8c18c">PixelTile::width</a></div><div class="ttdeci">int width() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00269">DcxPixelTile.h:269</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4926ddbff327775892f87a88baf8c18c" name="a4926ddbff327775892f87a88baf8c18c"></a>
@@ -939,7 +1063,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00269">269</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  269</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.max.x - <a class="code hl_variable" href="class_pixel_tile.html#ab587143b0f7ae0ad89a486bb48ed72eb">m_dataWindow</a>.min.x + 1); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a507f65803cc8f8336c67fbc3a62edfcf" name="a507f65803cc8f8336c67fbc3a62edfcf"></a>
@@ -968,7 +1093,8 @@ Protected Attributes</h2></td></tr>
 <p>rst:cpp:end:: </p>
 
 <p class="definition">Definition at line <a class="el" href="_dcx_pixel_tile_8h_source.html#l00245">245</a> of file <a class="el" href="_dcx_pixel_tile_8h_source.html">DcxPixelTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  245</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_pixel_tile.html#acb6142e31c60bc2803f243c62948056d">m_yaxis_up</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1097,9 +1223,13 @@ Protected Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/deepfile/<a class="el" href="_dcx_pixel_tile_8cpp_source.html">DcxPixelTile.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_pixel_tile.html">PixelTile</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

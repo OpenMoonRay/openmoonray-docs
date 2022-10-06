@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_28705856019153616deb2bfeeafe0625.html">unittest</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_test_distribution_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">TestDistribution.cc</div></div>
 </div><!--header-->
@@ -51,8 +67,13 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2002-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">///</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @file TestDistribution.cc</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// @author Eric Tabellion</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/// $Id$</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">///</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"></span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_test_distribution_8h.html">TestDistribution.h</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;<a class="code" href="_distribution_8h.html">rendering/pbr/core/Distribution.h</a>&gt;</span></div>
@@ -81,7 +102,7 @@ $(function() {
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>generate2DSequence(uint32_t size, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;r1, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;r2)</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#aec86153855c0b397ac7b361ce9044a68">   40</a></span><a class="code hl_function" href="namespacemoonray_1_1pbr.html#aec86153855c0b397ac7b361ce9044a68">generate2DSequence</a>(uint32_t size, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;r1, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;r2)</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    scene_rdl2::util::Random rnd(0x0eadbeef);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    uint32_t scramble[2];</div>
@@ -96,7 +117,7 @@ $(function() {
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>sampleDistribution2D(<span class="keyword">const</span> Distribution2D &amp;dist, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;r1, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;r2,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#acb831cd7dac3c0bce68048ed835c6a15">   55</a></span><a class="code hl_function" href="namespacemoonray_1_1pbr.html#acb831cd7dac3c0bce68048ed835c6a15">sampleDistribution2D</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_distribution2_d.html">Distribution2D</a> &amp;dist, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;r1, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;r2,</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                     <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;u, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;v)</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>{</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    uint32_t size = uint32_t(r1.size());</div>
@@ -105,9 +126,9 @@ $(function() {
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    v.resize(size);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">for</span> (uint32_t i=0; i &lt; size; ++i) {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> uv;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        Vec2f uv;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordtype">float</span> pdf;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        dist.sample(r1[i], r2[i], &amp;uv, &amp;pdf, TEXTURE_FILTER_NEAREST);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        dist.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_distribution2_d.html#aa17854ac0cffa1780ea3438fbff648c8">sample</a>(r1[i], r2[i], &amp;uv, &amp;pdf, TEXTURE_FILTER_NEAREST);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        u[i] = uv[0];</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        v[i] = uv[1];</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
@@ -115,7 +136,7 @@ $(function() {
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>sampleImageDistribution(<span class="keyword">const</span> ImageDistribution &amp;dist, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;r1, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;r2,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#a53df6daeddb35641d889e86ff9ccccd9">   74</a></span><a class="code hl_function" href="namespacemoonray_1_1pbr.html#a53df6daeddb35641d889e86ff9ccccd9">sampleImageDistribution</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_image_distribution.html">ImageDistribution</a> &amp;dist, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;r1, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;r2,</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                        <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;u, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;v)</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>{</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    uint32_t size = uint32_t(r1.size());</div>
@@ -124,9 +145,9 @@ $(function() {
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    v.resize(size);</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">for</span> (uint32_t i=0; i &lt; size; ++i) {</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> uv;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        Vec2f uv;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordtype">float</span> pdf;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        dist.sample(r1[i], r2[i], 0.0f, &amp;uv, &amp;pdf, TEXTURE_FILTER_NEAREST);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        dist.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_image_distribution.html#a17b9928737f64e59577d20e3a8018f42">sample</a>(r1[i], r2[i], 0.0f, &amp;uv, &amp;pdf, TEXTURE_FILTER_NEAREST);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        u[i] = uv[0];</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        v[i] = uv[1];</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
@@ -150,10 +171,10 @@ $(function() {
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> maxPower = 13;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    uint32_t size = 1 &lt;&lt; maxPower;</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> r1, r2;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    generate2DSequence(size, r1, r2);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aec86153855c0b397ac7b361ce9044a68">generate2DSequence</a>(size, r1, r2);</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> u, v;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    sampleDistribution2D(dist, r1, r2, u, v);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#acb831cd7dac3c0bce68048ed835c6a15">sampleDistribution2D</a>(dist, r1, r2, u, v);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5407d723e277e938e9c2f25cd3a41de1">save2dTxtFile</a>(<span class="stringliteral">&quot;testDistributionUniform.txt&quot;</span>, u, v);</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordtype">bool</span> equal = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a780f1e0dd87ff338f466a288de048fb4">asCppBool</a>(ispc::sampleDistribution2D(dist.asIspc(), size,</div>
@@ -180,10 +201,10 @@ $(function() {
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> maxPower = 13;</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    uint32_t size = 1 &lt;&lt; maxPower;</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> r1, r2;</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    generate2DSequence(size, r1, r2);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aec86153855c0b397ac7b361ce9044a68">generate2DSequence</a>(size, r1, r2);</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> u, v;</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    sampleDistribution2D(dist, r1, r2, u, v);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#acb831cd7dac3c0bce68048ed835c6a15">sampleDistribution2D</a>(dist, r1, r2, u, v);</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5407d723e277e938e9c2f25cd3a41de1">save2dTxtFile</a>(<span class="stringliteral">&quot;testDistributionGradient.txt&quot;</span>, u, v);</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keywordtype">bool</span> equal = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a780f1e0dd87ff338f466a288de048fb4">asCppBool</a>(ispc::sampleDistribution2D(dist.asIspc(), size,</div>
@@ -195,7 +216,7 @@ $(function() {
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>TestDistribution::testImage(<span class="keyword">const</span> std::string &amp;path, <span class="keyword">const</span> std::string &amp;filename)</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_distribution.html#ac16394ee2bde553a908335caf9880962">  154</a></span><a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_distribution.html#ac16394ee2bde553a908335caf9880962">TestDistribution::testImage</a>(<span class="keyword">const</span> std::string &amp;path, <span class="keyword">const</span> std::string &amp;filename)</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>{</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;testing image: &quot;</span> &lt;&lt; path + filename &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
@@ -205,10 +226,10 @@ $(function() {
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> maxPower = 13;</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        uint32_t size = 1 &lt;&lt; maxPower;</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> r1, r2;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        generate2DSequence(size, r1, r2);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aec86153855c0b397ac7b361ce9044a68">generate2DSequence</a>(size, r1, r2);</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> u, v;</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        sampleImageDistribution(dist, r1, r2, u, v);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a53df6daeddb35641d889e86ff9ccccd9">sampleImageDistribution</a>(dist, r1, r2, u, v);</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        std::string outFilename = <span class="stringliteral">&quot;testDistributionImage.&quot;</span> + filename + <span class="stringliteral">&quot;.txt&quot;</span>;</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5407d723e277e938e9c2f25cd3a41de1">save2dTxtFile</a>(outFilename, u, v);</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
@@ -232,9 +253,9 @@ $(function() {
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>{</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    std::string path(<span class="stringliteral">&quot;/work/rd/raas/maps/env_maps/&quot;</span>);</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    testImage(path, <span class="stringliteral">&quot;parking_lot-med.exr&quot;</span>);</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    testImage(path, <span class="stringliteral">&quot;parking_lot-vsmall.exr&quot;</span>);</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    testImage(path, <span class="stringliteral">&quot;parking_lot-vvsmall.exr&quot;</span>);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_distribution.html#ac16394ee2bde553a908335caf9880962">testImage</a>(path, <span class="stringliteral">&quot;parking_lot-med.exr&quot;</span>);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_distribution.html#ac16394ee2bde553a908335caf9880962">testImage</a>(path, <span class="stringliteral">&quot;parking_lot-vsmall.exr&quot;</span>);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_distribution.html#ac16394ee2bde553a908335caf9880962">testImage</a>(path, <span class="stringliteral">&quot;parking_lot-vvsmall.exr&quot;</span>);</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment">//    testImage(path, &quot;burning_man-med.exr&quot;);</span></div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">//    testImage(path, &quot;green_house-med.exr&quot;);</span></div>
@@ -242,16 +263,16 @@ $(function() {
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">//    testImage(path, &quot;papermill_ruin-med.exr&quot;);</span></div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>}</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="keyword">namespace</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_distribution_8cc_03.html">  201</a></span><span class="keyword">namespace</span></div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>{</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Iter&gt;</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <a class="code hl_class" href="classmoonray_1_1pbr_1_1_guide_distribution1_d.html">Distribution1D</a> createDistribution(Iter first, Iter last)</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_distribution_8cc_03.html#a868f8a9a555cd7de9c451c89c063b91a">  204</a></span>    <a class="code hl_class" href="classmoonray_1_1pbr_1_1_guide_distribution1_d.html">Distribution1D</a> <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_distribution_8cc_03.html#a868f8a9a555cd7de9c451c89c063b91a">createDistribution</a>(Iter first, Iter last)</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    {</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <a class="code hl_class" href="classmoonray_1_1pbr_1_1_guide_distribution1_d.html">Distribution1D</a> dist(std::distance(first, last));</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <span class="keywordflow">for</span> (std::size_t i = 0; first != last; ++first, ++i) {</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            dist.setWeight(i, *first);</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            dist.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_guide_distribution1_d.html#a9e7ec2425d7f789a844fe64cc717093e">setWeight</a>(i, *first);</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        }</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        dist.tabulateCdf();</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        dist.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_guide_distribution1_d.html#af5cb93063c328e79cdaf78f57bf40afb">tabulateCdf</a>();</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordflow">return</span> dist;</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    }</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>}</div>
@@ -302,7 +323,7 @@ $(function() {
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#adc7854c6b0250a5029b319f61fb912e4">  258</a></span><a class="code hl_function" href="namespacemoonray_1_1pbr.html#adc7854c6b0250a5029b319f61fb912e4">discreteExpectedValue</a>(<span class="keyword">const</span> std::vector&lt;float&gt;&amp; vals)</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>{</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> sum = std::accumulate(vals.begin(), vals.end(), 0.0f);</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    <span class="keywordflow">return</span> std::accumulate(vals.begin(), vals.end(), 0.0f, [sum](<span class="keywordtype">float</span> init, <span class="keywordtype">float</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) { return init + x/sum * x; });</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    <span class="keywordflow">return</span> std::accumulate(vals.begin(), vals.end(), 0.0f, [sum](<span class="keywordtype">float</span> init, <span class="keywordtype">float</span> x) { return init + x/sum * x; });</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>}</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="comment">// Calculate variance of sampling from vals.</span></div>
@@ -314,9 +335,9 @@ $(function() {
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keywordtype">float</span> s2 = 0.0f;</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <span class="keywordflow">for</span> (std::vector&lt;float&gt;::const_iterator it = vals.begin(); it != vals.end(); ++it) {</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = *it;</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> px = <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>/sum;</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        s2 += px * (<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> - mean)*(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> - mean);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> x = *it;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> px = x/sum;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        s2 += px * (x - mean)*(x - mean);</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    }</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keywordflow">return</span> s2;</div>
@@ -525,21 +546,26 @@ $(function() {
 <div class="ttc" id="a_distribution_8h_html"><div class="ttname"><a href="_distribution_8h.html">Distribution.h</a></div></div>
 <div class="ttc" id="a_test_distribution_8cc_html_aa416caf7012c676b1f45b427572ddc3b"><div class="ttname"><a href="_test_distribution_8cc.html#aa416caf7012c676b1f45b427572ddc3b">CPPUNIT_TEST_SUITE_REGISTRATION</a></div><div class="ttdeci">CPPUNIT_TEST_SUITE_REGISTRATION(moonray::pbr::TestDistribution)</div></div>
 <div class="ttc" id="a_test_distribution_8h_html"><div class="ttname"><a href="_test_distribution_8h.html">TestDistribution.h</a></div></div>
-<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_distribution2_d_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_distribution2_d.html">moonray::pbr::Distribution2D</a></div><div class="ttdoc">A utility object that can sample according to a piecewise constant 2D distribution.</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_8h_source.html#l00200">Distribution.h:201</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_distribution2_d_html_a2b6ade1cf7d302e1b7a0ed6538d50492af41a8426d1022ec8d4003237678e170d"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_distribution2_d.html#a2b6ade1cf7d302e1b7a0ed6538d50492af41a8426d1022ec8d4003237678e170d">moonray::pbr::Distribution2D::PLANAR</a></div><div class="ttdeci">@ PLANAR</div><div class="ttdoc">Weighted by the image luminance, no-op.</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_8h_source.html#l00205">Distribution.h:205</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_distribution2_d_html_a6af7a92c2ebca67722f9b5127fa8f976"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_distribution2_d.html#a6af7a92c2ebca67722f9b5127fa8f976">moonray::pbr::Distribution2D::setWeight</a></div><div class="ttdeci">finline void setWeight(const size_type u, const size_type v, const float weight)</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_8h_source.html#l00246">Distribution.h:246</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_distribution2_d_html_a89958a15f633639523903d11317489ed"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_distribution2_d.html#a89958a15f633639523903d11317489ed">moonray::pbr::Distribution2D::tabulateCdf</a></div><div class="ttdeci">void tabulateCdf(const Mapping mapping=PLANAR)</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_8cc_source.html#l00498">Distribution.cc:498</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_distribution2_d_html_aa17854ac0cffa1780ea3438fbff648c8"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_distribution2_d.html#aa17854ac0cffa1780ea3438fbff648c8">moonray::pbr::Distribution2D::sample</a></div><div class="ttdeci">finline void sample(const float ru, const float rv, scene_rdl2::math::Vec2f *const uv, float *const pdf, const TextureFilterType texFilter) const</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_8h_source.html#l00270">Distribution.h:270</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_guide_distribution1_d_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_guide_distribution1_d.html">moonray::pbr::GuideDistribution1D</a></div><div class="ttdoc">A utility object that can sample according to a a piecewise constant 1D distribution....</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_8h_source.html#l00063">Distribution.h:64</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_guide_distribution1_d_html_a2e2a1c6960b1e17b67c48dad212c9f89"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_guide_distribution1_d.html#a2e2a1c6960b1e17b67c48dad212c9f89">moonray::pbr::GuideDistribution1D::pdfDiscrete</a></div><div class="ttdeci">float pdfDiscrete(const size_type index) const</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_8cc_source.html#l00241">Distribution.cc:241</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_guide_distribution1_d_html_a4438861fac096c02aa247f8540e398eb"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_guide_distribution1_d.html#a4438861fac096c02aa247f8540e398eb">moonray::pbr::GuideDistribution1D::sampleDiscrete</a></div><div class="ttdeci">size_type sampleDiscrete(const float r, float *const pdf=nullptr, float *const rRemapped=nullptr) const</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_8cc_source.html#l00298">Distribution.cc:298</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_guide_distribution1_d_html_a9e7ec2425d7f789a844fe64cc717093e"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_guide_distribution1_d.html#a9e7ec2425d7f789a844fe64cc717093e">moonray::pbr::GuideDistribution1D::setWeight</a></div><div class="ttdeci">finline void setWeight(const size_type index, const float weight)</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_8h_source.html#l00140">Distribution.h:140</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_guide_distribution1_d_html_af5cb93063c328e79cdaf78f57bf40afb"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_guide_distribution1_d.html#af5cb93063c328e79cdaf78f57bf40afb">moonray::pbr::GuideDistribution1D::tabulateCdf</a></div><div class="ttdeci">float tabulateCdf()</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_8cc_source.html#l00170">Distribution.cc:170</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_image_distribution_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_image_distribution.html">moonray::pbr::ImageDistribution</a></div><div class="ttdoc">A utility object that can sample according to an image.</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_8h_source.html#l00306">Distribution.h:307</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_image_distribution_html_a17b9928737f64e59577d20e3a8018f42"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_image_distribution.html#a17b9928737f64e59577d20e3a8018f42">moonray::pbr::ImageDistribution::sample</a></div><div class="ttdeci">void sample(const float ru, const float rv, const float mipLevel, scene_rdl2::math::Vec2f *const uv, float *const pdf, const TextureFilterType texFilter) const</div><div class="ttdef"><b>Definition:</b> <a href="_distribution_8cc_source.html#l01396">Distribution.cc:1396</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_distribution_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_distribution.html">moonray::pbr::TestDistribution</a></div><div class="ttdoc">This class tests Distribution2D sampling object.</div><div class="ttdef"><b>Definition:</b> <a href="_test_distribution_8h_source.html#l00029">TestDistribution.h:30</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_distribution_html_a54dcefd4f52772481787e5240faa2b91"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_distribution.html#a54dcefd4f52772481787e5240faa2b91">moonray::pbr::TestDistribution::testUniform</a></div><div class="ttdeci">void testUniform()</div><div class="ttdef"><b>Definition:</b> <a href="_test_distribution_8cc_source.html#l00095">TestDistribution.cc:95</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_distribution_html_a604aeb312134cbf37f2979fb1ac7d026"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_distribution.html#a604aeb312134cbf37f2979fb1ac7d026">moonray::pbr::TestDistribution::testImages</a></div><div class="ttdeci">void testImages()</div><div class="ttdef"><b>Definition:</b> <a href="_test_distribution_8cc_source.html#l00187">TestDistribution.cc:187</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_distribution_html_a7de0ff46d9d50a999c60265e9c61b128"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_distribution.html#a7de0ff46d9d50a999c60265e9c61b128">moonray::pbr::TestDistribution::testDiscrete</a></div><div class="ttdeci">void testDiscrete()</div><div class="ttdef"><b>Definition:</b> <a href="_test_distribution_8cc_source.html#l00353">TestDistribution.cc:353</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_distribution_html_ac16394ee2bde553a908335caf9880962"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_distribution.html#ac16394ee2bde553a908335caf9880962">moonray::pbr::TestDistribution::testImage</a></div><div class="ttdeci">void testImage(const std::string &amp;path, const std::string &amp;filename)</div><div class="ttdef"><b>Definition:</b> <a href="_test_distribution_8cc_source.html#l00154">TestDistribution.cc:154</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_distribution_html_af03580687ca1a4cfc83e36c3a7488f38"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_distribution.html#af03580687ca1a4cfc83e36c3a7488f38">moonray::pbr::TestDistribution::testGradient</a></div><div class="ttdeci">void testGradient()</div><div class="ttdef"><b>Definition:</b> <a href="_test_distribution_8cc_source.html#l00124">TestDistribution.cc:124</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1geom_html_a8ff976ca38d834d434f1d00f2a03359b"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">moonray::geom::Vec2f</a></div><div class="ttdeci">scene_rdl2::math::Vec2f Vec2f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00038">Types.h:38</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_distribution_8cc_03_html_a868f8a9a555cd7de9c451c89c063b91a"><div class="ttname"><a href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_distribution_8cc_03.html#a868f8a9a555cd7de9c451c89c063b91a">moonray::pbr::anonymous_namespace{TestDistribution.cc}::createDistribution</a></div><div class="ttdeci">Distribution1D createDistribution(Iter first, Iter last)</div><div class="ttdef"><b>Definition:</b> <a href="_test_distribution_8cc_source.html#l00204">TestDistribution.cc:204</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a53df6daeddb35641d889e86ff9ccccd9"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a53df6daeddb35641d889e86ff9ccccd9">moonray::pbr::sampleImageDistribution</a></div><div class="ttdeci">static void sampleImageDistribution(const ImageDistribution &amp;dist, const FloatArray &amp;r1, const FloatArray &amp;r2, FloatArray &amp;u, FloatArray &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_test_distribution_8cc_source.html#l00074">TestDistribution.cc:74</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a5407d723e277e938e9c2f25cd3a41de1"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a5407d723e277e938e9c2f25cd3a41de1">moonray::pbr::save2dTxtFile</a></div><div class="ttdeci">finline void save2dTxtFile(const std::string &amp;filename, const FloatArray &amp;u, const FloatArray &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00252">TestUtil.h:252</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a780f1e0dd87ff338f466a288de048fb4"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a780f1e0dd87ff338f466a288de048fb4">moonray::pbr::asCppBool</a></div><div class="ttdeci">bool asCppBool(bool ispcBool)</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00150">TestUtil.h:150</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a7b4b16c349dd5b6f5b2344fc3b5a876b"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a7b4b16c349dd5b6f5b2344fc3b5a876b">moonray::pbr::generate2DQmcSequence</a></div><div class="ttdeci">finline void generate2DQmcSequence(uint32_t size, const uint32_t scramble[2], FloatArray &amp;u, FloatArray &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00233">TestUtil.h:233</a></div></div>
@@ -548,16 +574,22 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_aa46c7dda5bcfa71e457a8249f27cf96f"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">moonray::pbr::FloatArray</a></div><div class="ttdeci">std::vector&lt; float, scene_rdl2::alloc::AlignedAllocator&lt; float, SIMD_MEMORY_ALIGNMENT &gt; &gt; FloatArray</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00067">TestUtil.h:67</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_aa50ee6099b5e494d8ffd725b416d9660"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#aa50ee6099b5e494d8ffd725b416d9660">moonray::pbr::stochasticDiscreteMean</a></div><div class="ttdeci">float stochasticDiscreteMean(const std::vector&lt; float &gt; &amp;vals, unsigned samples)</div><div class="ttdef"><b>Definition:</b> <a href="_test_distribution_8cc_source.html#l00217">TestDistribution.cc:217</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_ab7343c375e8cffd325868e4e4534b147"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ab7343c375e8cffd325868e4e4534b147">moonray::pbr::generate2DHaltonSequence</a></div><div class="ttdeci">finline void generate2DHaltonSequence(uint32_t size, const uint32_t scramble[2], FloatArray &amp;u, FloatArray &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00216">TestUtil.h:216</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_acb831cd7dac3c0bce68048ed835c6a15"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#acb831cd7dac3c0bce68048ed835c6a15">moonray::pbr::sampleDistribution2D</a></div><div class="ttdeci">static void sampleDistribution2D(const Distribution2D &amp;dist, const FloatArray &amp;r1, const FloatArray &amp;r2, FloatArray &amp;u, FloatArray &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_test_distribution_8cc_source.html#l00055">TestDistribution.cc:55</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_ad7334291d52bf87ebb0ad261a0790bb2"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ad7334291d52bf87ebb0ad261a0790bb2">moonray::pbr::testAssert</a></div><div class="ttdeci">bool testAssert(bool condition, const char *format,...)</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00129">TestUtil.h:129</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_adc07f718668a9f1d786396f79ba82d2c"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#adc07f718668a9f1d786396f79ba82d2c">moonray::pbr::stochasticDiscreteSum</a></div><div class="ttdeci">float stochasticDiscreteSum(const std::vector&lt; float &gt; &amp;vals, unsigned samples)</div><div class="ttdef"><b>Definition:</b> <a href="_test_distribution_8cc_source.html#l00239">TestDistribution.cc:239</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_adc7854c6b0250a5029b319f61fb912e4"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#adc7854c6b0250a5029b319f61fb912e4">moonray::pbr::discreteExpectedValue</a></div><div class="ttdeci">float discreteExpectedValue(const std::vector&lt; float &gt; &amp;vals)</div><div class="ttdef"><b>Definition:</b> <a href="_test_distribution_8cc_source.html#l00258">TestDistribution.cc:258</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_aec86153855c0b397ac7b361ce9044a68"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#aec86153855c0b397ac7b361ce9044a68">moonray::pbr::generate2DSequence</a></div><div class="ttdeci">static void generate2DSequence(uint32_t size, FloatArray &amp;r1, FloatArray &amp;r2)</div><div class="ttdef"><b>Definition:</b> <a href="_test_distribution_8cc_source.html#l00040">TestDistribution.cc:40</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_aeef9026e7d86f9b729125fcdddc19e1b"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#aeef9026e7d86f9b729125fcdddc19e1b">moonray::pbr::discreteVariance</a></div><div class="ttdeci">float discreteVariance(const std::vector&lt; float &gt; &amp;vals)</div><div class="ttdef"><b>Definition:</b> <a href="_test_distribution_8cc_source.html#l00266">TestDistribution.cc:266</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1math_html"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html">scene_rdl2::math</a></div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8h_source.html#l00017">InputBuffer.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_e9cc9f5f9c03e3b4eff73c33091953ed.html">unittest</a></li><li class="navelem"><a class="el" href="_test_distribution_8cc.html">TestDistribution.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

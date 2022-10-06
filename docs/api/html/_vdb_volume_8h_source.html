@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_02f99361fbe6a8c61cf6ccdd2c3bf288.html">geom</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_vdb_volume_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">VdbVolume.h</div></div>
 </div><!--header-->
@@ -50,7 +66,11 @@ $(function() {
 <a href="_vdb_volume_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2016-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file VdbVolume.h</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Wayne Huang</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">///</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"></span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -64,8 +84,9 @@ $(function() {
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span>geom {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">class </span>MotionBlurParams;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_vdb_volume.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1geom_1_1_vdb_volume.html">VdbVolume</a> : <span class="keyword">public</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1_primitive.html">Primitive</a></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"></span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/// @class VdbVolume</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_vdb_volume.html">   24</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1geom_1_1_vdb_volume.html">VdbVolume</a> : <span class="keyword">public</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1_primitive.html">Primitive</a></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
@@ -100,29 +121,42 @@ $(function() {
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">virtual</span> <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_primitive.html#a6ec1e752af007a2007fe341be5aa5810">size_type</a> <a class="code hl_function" href="classmoonray_1_1geom_1_1_vdb_volume.html#a6cc21b9342e7e6415761e71b2b29e931">getMemory</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">virtual</span> <a class="code hl_typedef" href="classmoonray_1_1geom_1_1_primitive.html#a6ec1e752af007a2007fe341be5aa5810">size_type</a> <a class="code hl_function" href="classmoonray_1_1geom_1_1_vdb_volume.html#a8b0093f3a2400613edfa3b24a98dd210">getMotionSamplesCount</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_vdb_volume.html#a9480fe9fc0e8895ea4e1f20e50c7f3c8">setName</a>(<span class="keyword">const</span> std::string&amp; name);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classmoonray_1_1geom_1_1_vdb_volume.html#a74ec701c337ae87ae6ec6632a307c17e">getName</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_vdb_volume.html#aa7d89a0be63c8273df8e49694d5dbb4a">setInterpolation</a>(<a class="code hl_enumeration" href="classmoonray_1_1geom_1_1_vdb_volume.html#ab5d2b29e9a3cba57ce3c86648a0278b6">Interpolation</a> interpolation);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_vdb_volume.html#a38a64ed78ccd3e4b66cbbb885fb8fb35">setVelocityScale</a>(<span class="keywordtype">float</span> velocityScale);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_vdb_volume.html#aed49b7eb3f24f1a1100365a2aa484550">setVelocitySampleRate</a>(<span class="keywordtype">float</span> velocitySampleRate);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_vdb_volume.html#a5297bd351b6a1d9c6493847402e15dd3">setEmissionSampleRate</a>(<span class="keywordtype">float</span> emissionSampleRate);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"></span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">    /// set the primitive name</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">    /// @param name the name of this primitive</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_vdb_volume.html#a9480fe9fc0e8895ea4e1f20e50c7f3c8">setName</a>(<span class="keyword">const</span> std::string&amp; name);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"></span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">    /// get the primitive name</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">    /// @return name the name of this primitive</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keyword">const</span> std::string&amp; <a class="code hl_function" href="classmoonray_1_1geom_1_1_vdb_volume.html#a74ec701c337ae87ae6ec6632a307c17e">getName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"></span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">    /// set the interpolation mode for voxel sampling</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">    /// @param interpolation the interpolation mode</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_vdb_volume.html#aa7d89a0be63c8273df8e49694d5dbb4a">setInterpolation</a>(<a class="code hl_enumeration" href="classmoonray_1_1geom_1_1_vdb_volume.html#ab5d2b29e9a3cba57ce3c86648a0278b6">Interpolation</a> interpolation);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"></span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">    /// set the velocity scale for motion blur</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_vdb_volume.html#a38a64ed78ccd3e4b66cbbb885fb8fb35">setVelocityScale</a>(<span class="keywordtype">float</span> velocityScale);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"></span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">    /// set the velocity sample rate for motion blur</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_vdb_volume.html#aed49b7eb3f24f1a1100365a2aa484550">setVelocitySampleRate</a>(<span class="keywordtype">float</span> velocitySampleRate);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"></span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">    /// set the emission sample rate for emission illumination</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_vdb_volume.html#a5297bd351b6a1d9c6493847402e15dd3">setEmissionSampleRate</a>(<span class="keywordtype">float</span> emissionSampleRate);</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">internal::Primitive</a>* getPrimitiveImpl() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> transformPrimitive(</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">private</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">    /// @remark For renderer internal use, procedural should never call this</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">    /// @internal</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">internal::Primitive</a>* <a class="code hl_function" href="classmoonray_1_1geom_1_1_vdb_volume.html#ab3291816f808899a5272fcdca5ab7710">getPrimitiveImpl</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"></span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">    /// @remark For renderer internal use, procedural should never call this</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">    /// @internal</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1geom_1_1_vdb_volume.html#a082b2cb0f27ebdc10a8aaf7c12821c7f">transformPrimitive</a>(</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1geom_1_1_motion_blur_params.html">MotionBlurParams</a>&amp; motionBlurParams,</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a>&amp; prim2render) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structmoonray_1_1geom_1_1_vdb_volume_1_1_impl.html">Impl</a>;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    std::unique_ptr&lt;Impl&gt; mImpl;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classmoonray_1_1geom_1_1_vdb_volume.html#ad63f707c505fd5407cad2b58631e4309">   94</a></span>    std::unique_ptr&lt;Impl&gt; <a class="code hl_variable" href="classmoonray_1_1geom_1_1_vdb_volume.html#ad63f707c505fd5407cad2b58631e4309">mImpl</a>;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>};</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>} <span class="comment">// namespace geom</span></div>
@@ -142,6 +176,7 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a6ec1e752af007a2007fe341be5aa5810"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a6ec1e752af007a2007fe341be5aa5810">moonray::geom::Primitive::size_type</a></div><div class="ttdeci">uint32_t size_type</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_8h_source.html#l00052">Primitive.h:52</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_visitor_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive_visitor.html">moonray::geom::PrimitiveVisitor</a></div><div class="ttdoc">Base class for performing operation on Primitives.</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_visitor_8h_source.html#l00036">PrimitiveVisitor.h:37</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_vdb_volume_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vdb_volume.html">moonray::geom::VdbVolume</a></div><div class="ttdef"><b>Definition:</b> <a href="_vdb_volume_8h_source.html#l00024">VdbVolume.h:25</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_vdb_volume_html_a082b2cb0f27ebdc10a8aaf7c12821c7f"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vdb_volume.html#a082b2cb0f27ebdc10a8aaf7c12821c7f">moonray::geom::VdbVolume::transformPrimitive</a></div><div class="ttdeci">virtual void transformPrimitive(const MotionBlurParams &amp;motionBlurParams, const shading::XformSamples &amp;prim2render) override</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2_vdb_volume_8cc_source.html#l00103">VdbVolume.cc:103</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_vdb_volume_html_a09260358574963b4fe4d63c3c359e551"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vdb_volume.html#a09260358574963b4fe4d63c3c359e551">moonray::geom::VdbVolume::accept</a></div><div class="ttdeci">void accept(PrimitiveVisitor &amp;v) override</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2_vdb_volume_8cc_source.html#l00049">VdbVolume.cc:49</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_vdb_volume_html_a38a64ed78ccd3e4b66cbbb885fb8fb35"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vdb_volume.html#a38a64ed78ccd3e4b66cbbb885fb8fb35">moonray::geom::VdbVolume::setVelocityScale</a></div><div class="ttdeci">virtual void setVelocityScale(float velocityScale)</div><div class="ttdoc">set the velocity scale for motion blur</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2_vdb_volume_8cc_source.html#l00085">VdbVolume.cc:85</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_vdb_volume_html_a5297bd351b6a1d9c6493847402e15dd3"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vdb_volume.html#a5297bd351b6a1d9c6493847402e15dd3">moonray::geom::VdbVolume::setEmissionSampleRate</a></div><div class="ttdeci">virtual void setEmissionSampleRate(float emissionSampleRate)</div><div class="ttdoc">set the emission sample rate for emission illumination</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2_vdb_volume_8cc_source.html#l00097">VdbVolume.cc:97</a></div></div>
@@ -151,10 +186,12 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_vdb_volume_html_a9480fe9fc0e8895ea4e1f20e50c7f3c8"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vdb_volume.html#a9480fe9fc0e8895ea4e1f20e50c7f3c8">moonray::geom::VdbVolume::setName</a></div><div class="ttdeci">virtual void setName(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2_vdb_volume_8cc_source.html#l00067">VdbVolume.cc:67</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_vdb_volume_html_aa3503bd3c9e0394707143e2884d3e8ba"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vdb_volume.html#aa3503bd3c9e0394707143e2884d3e8ba">moonray::geom::VdbVolume::~VdbVolume</a></div><div class="ttdeci">~VdbVolume()</div><div class="ttdef"><b>Definition:</b> <a href="dso_2volume_2_vdb_2_vdb_volume_8cc_source.html#l00103">VdbVolume.cc:103</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_vdb_volume_html_aa7d89a0be63c8273df8e49694d5dbb4a"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vdb_volume.html#aa7d89a0be63c8273df8e49694d5dbb4a">moonray::geom::VdbVolume::setInterpolation</a></div><div class="ttdeci">virtual void setInterpolation(Interpolation interpolation)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2_vdb_volume_8cc_source.html#l00079">VdbVolume.cc:79</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_vdb_volume_html_ab3291816f808899a5272fcdca5ab7710"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vdb_volume.html#ab3291816f808899a5272fcdca5ab7710">moonray::geom::VdbVolume::getPrimitiveImpl</a></div><div class="ttdeci">virtual internal::Primitive * getPrimitiveImpl() override</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2_vdb_volume_8cc_source.html#l00119">VdbVolume.cc:119</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_vdb_volume_html_ab5d2b29e9a3cba57ce3c86648a0278b6"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vdb_volume.html#ab5d2b29e9a3cba57ce3c86648a0278b6">moonray::geom::VdbVolume::Interpolation</a></div><div class="ttdeci">Interpolation</div><div class="ttdef"><b>Definition:</b> <a href="_vdb_volume_8h_source.html#l00028">VdbVolume.h:29</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_vdb_volume_html_ab5d2b29e9a3cba57ce3c86648a0278b6aa6ef2e8b7424bfa9d56315aca733861c"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vdb_volume.html#ab5d2b29e9a3cba57ce3c86648a0278b6aa6ef2e8b7424bfa9d56315aca733861c">moonray::geom::VdbVolume::Interpolation::QUADRATIC</a></div><div class="ttdeci">@ QUADRATIC</div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_vdb_volume_html_ab5d2b29e9a3cba57ce3c86648a0278b6aaebdbcb765394d25d6a604589a890f82"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vdb_volume.html#ab5d2b29e9a3cba57ce3c86648a0278b6aaebdbcb765394d25d6a604589a890f82">moonray::geom::VdbVolume::Interpolation::POINT</a></div><div class="ttdeci">@ POINT</div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_vdb_volume_html_ab5d2b29e9a3cba57ce3c86648a0278b6ae657cce1913c857166b0475f18668ef5"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vdb_volume.html#ab5d2b29e9a3cba57ce3c86648a0278b6ae657cce1913c857166b0475f18668ef5">moonray::geom::VdbVolume::Interpolation::BOX</a></div><div class="ttdeci">@ BOX</div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_vdb_volume_html_ad63f707c505fd5407cad2b58631e4309"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vdb_volume.html#ad63f707c505fd5407cad2b58631e4309">moonray::geom::VdbVolume::mImpl</a></div><div class="ttdeci">std::unique_ptr&lt; Impl &gt; mImpl</div><div class="ttdef"><b>Definition:</b> <a href="_vdb_volume_8h_source.html#l00094">VdbVolume.h:94</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_vdb_volume_html_add65481f645bf866f8e96e14caf2ae9c"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vdb_volume.html#add65481f645bf866f8e96e14caf2ae9c">moonray::geom::VdbVolume::VdbVolume</a></div><div class="ttdeci">VdbVolume()</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2_vdb_volume_8cc_source.html#l00042">VdbVolume.cc:42</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1_vdb_volume_html_aed49b7eb3f24f1a1100365a2aa484550"><div class="ttname"><a href="classmoonray_1_1geom_1_1_vdb_volume.html#aed49b7eb3f24f1a1100365a2aa484550">moonray::geom::VdbVolume::setVelocitySampleRate</a></div><div class="ttdeci">virtual void setVelocitySampleRate(float velocitySampleRate)</div><div class="ttdoc">set the velocity sample rate for motion blur</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2_vdb_volume_8cc_source.html#l00091">VdbVolume.cc:91</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_html"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">moonray::geom::internal::Primitive</a></div><div class="ttdoc">A Primitive is the actual geometry to be rendered.</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_primitive_8h_source.html#l00087">Primitive.h:88</a></div></div>
@@ -168,9 +205,13 @@ $(function() {
 <div class="ttc" id="astructmoonray_1_1geom_1_1_vdb_volume_1_1_vdb_init_data_html_a95dcf9b5a4efd17abcbd09eb9e496266"><div class="ttname"><a href="structmoonray_1_1geom_1_1_vdb_volume_1_1_vdb_init_data.html#a95dcf9b5a4efd17abcbd09eb9e496266">moonray::geom::VdbVolume::VdbInitData::mEmissionGridName</a></div><div class="ttdeci">std::string mEmissionGridName</div><div class="ttdef"><b>Definition:</b> <a href="_vdb_volume_8h_source.html#l00039">VdbVolume.h:39</a></div></div>
 <div class="ttc" id="astructmoonray_1_1geom_1_1_vdb_volume_1_1_vdb_init_data_html_ac6bf42322e1af97ef6bee3274ea624af"><div class="ttname"><a href="structmoonray_1_1geom_1_1_vdb_volume_1_1_vdb_init_data.html#ac6bf42322e1af97ef6bee3274ea624af">moonray::geom::VdbVolume::VdbInitData::mVdbFilePath</a></div><div class="ttdeci">std::string mVdbFilePath</div><div class="ttdef"><b>Definition:</b> <a href="_vdb_volume_8h_source.html#l00037">VdbVolume.h:37</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_0486ff0a15d68326ffdea20a24729a76.html">geom</a></li><li class="navelem"><a class="el" href="_vdb_volume_8h.html">VdbVolume.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

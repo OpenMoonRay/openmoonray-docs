@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rndr_1_1_oiio_reader.html">OiioReader</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1rndr_1_1_oiio_reader.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1rndr_1_1_oiio_reader-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::rndr::OiioReader Class Reference</div></div>
 </div><!--header-->
@@ -89,6 +106,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad8ba6d71596fcc2106b7c2756c6895f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5ca1b2c17e58677c36c42d7983aa955"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_oiio_reader.html#ab5ca1b2c17e58677c36c42d7983aa955">showSpec</a> (const std::string &amp;hd) const</td></tr>
 <tr class="separator:ab5ca1b2c17e58677c36c42d7983aa955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a1001c8485218e06d4fb1a5faf216799e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_oiio_reader.html#a1001c8485218e06d4fb1a5faf216799e">mFilename</a></td></tr>
+<tr class="separator:a1001c8485218e06d4fb1a5faf216799e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc78a51105903c8f4858bad5b9db9b7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1rndr_1_1_oiio_utils.html#a56a18c5a2405135dec8cf8d7a8458753">OiioUtils::ImageInputUqPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_oiio_reader.html#adc78a51105903c8f4858bad5b9db9b7c">mIn</a></td></tr>
+<tr class="separator:adc78a51105903c8f4858bad5b9db9b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c02bd4ac31297c4a1f3a4d0008dbf9"><td class="memItemLeft" align="right" valign="top">OIIO::ImageSpec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_oiio_reader.html#ae7c02bd4ac31297c4a1f3a4d0008dbf9">mSpec</a></td></tr>
+<tr class="separator:ae7c02bd4ac31297c4a1f3a4d0008dbf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a731f04722863e6d45dbafaeca488fbe3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_oiio_reader.html#a731f04722863e6d45dbafaeca488fbe3">mPixels</a></td></tr>
+<tr class="separator:a731f04722863e6d45dbafaeca488fbe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -119,7 +147,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00029">29</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   29</span>                                                   : <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#a1001c8485218e06d4fb1a5faf216799e">mFilename</a>(<a class="code hl_function" href="classmoonray_1_1rndr_1_1_oiio_reader.html#a38ce0d3f89f034a069c982f9e306140e">filename</a>), <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#adc78a51105903c8f4858bad5b9db9b7c">mIn</a>(<a class="code hl_function" href="classmoonray_1_1rndr_1_1_oiio_utils.html#a52f8127ce91dd3b4a96dcddd1c381387">OiioUtils::openFile</a>(<a class="code hl_function" href="classmoonray_1_1rndr_1_1_oiio_reader.html#a38ce0d3f89f034a069c982f9e306140e">filename</a>)) {</div>
+<div class="line"><span class="lineno">   30</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#adc78a51105903c8f4858bad5b9db9b7c">mIn</a>) <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#ae7c02bd4ac31297c4a1f3a4d0008dbf9">mSpec</a> = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#adc78a51105903c8f4858bad5b9db9b7c">mIn</a>-&gt;spec();    <span class="comment">// copy initial spec into current</span></div>
+<div class="line"><span class="lineno">   31</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_oiio_reader_html_a1001c8485218e06d4fb1a5faf216799e"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_oiio_reader.html#a1001c8485218e06d4fb1a5faf216799e">moonray::rndr::OiioReader::mFilename</a></div><div class="ttdeci">std::string mFilename</div><div class="ttdef"><b>Definition:</b> <a href="_oiio_reader_8h_source.html#l00125">OiioReader.h:125</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_oiio_reader_html_a38ce0d3f89f034a069c982f9e306140e"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_oiio_reader.html#a38ce0d3f89f034a069c982f9e306140e">moonray::rndr::OiioReader::filename</a></div><div class="ttdeci">const std::string &amp; filename() const</div><div class="ttdef"><b>Definition:</b> <a href="_oiio_reader_8h_source.html#l00035">OiioReader.h:35</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_oiio_reader_html_adc78a51105903c8f4858bad5b9db9b7c"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_oiio_reader.html#adc78a51105903c8f4858bad5b9db9b7c">moonray::rndr::OiioReader::mIn</a></div><div class="ttdeci">OiioUtils::ImageInputUqPtr mIn</div><div class="ttdef"><b>Definition:</b> <a href="_oiio_reader_8h_source.html#l00126">OiioReader.h:126</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_oiio_reader_html_ae7c02bd4ac31297c4a1f3a4d0008dbf9"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_oiio_reader.html#ae7c02bd4ac31297c4a1f3a4d0008dbf9">moonray::rndr::OiioReader::mSpec</a></div><div class="ttdeci">OIIO::ImageSpec mSpec</div><div class="ttdef"><b>Definition:</b> <a href="_oiio_reader_8h_source.html#l00127">OiioReader.h:127</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_oiio_utils_html_a52f8127ce91dd3b4a96dcddd1c381387"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_oiio_utils.html#a52f8127ce91dd3b4a96dcddd1c381387">moonray::rndr::OiioUtils::openFile</a></div><div class="ttdeci">static ImageInputUqPtr openFile(const std::string &amp;filename)</div><div class="ttdef"><b>Definition:</b> <a href="_oiio_utils_8h_source.html#l00049">OiioUtils.h:49</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -150,7 +186,36 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00058">58</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   58</span>                              {</div>
+<div class="line"><span class="lineno">   59</span>        <span class="keyword">const</span> OIIO::ImageSpec &amp;spec = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#ae7c02bd4ac31297c4a1f3a4d0008dbf9">mSpec</a>;</div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordtype">int</span> totalTileY = (spec.height + 7) / 8;</div>
+<div class="line"><span class="lineno">   61</span>        <span class="keywordtype">int</span> totalTileX = (spec.width + 7) / 8;</div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span><span class="preprocessor">#ifdef SINGLE_THREAD</span></div>
+<div class="line"><span class="lineno">   64</span>        <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> parallel = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   65</span><span class="preprocessor">#else        </span></div>
+<div class="line"><span class="lineno">   66</span>        <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> parallel = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   67</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">   68</span>        simpleLoop2&lt;parallel&gt;(0, totalTileY, [&amp;](<span class="keywordtype">unsigned</span> tileY) {</div>
+<div class="line"><span class="lineno">   69</span>                <span class="keywordtype">int</span> startY = tileY * 8;</div>
+<div class="line"><span class="lineno">   70</span>                <span class="keywordtype">int</span> endY = (startY + 8 &lt; spec.height)? startY + 8: spec.height;</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>                for (<span class="keywordtype">int</span> tileX = 0; tileX &lt; totalTileX; ++tileX) {</div>
+<div class="line"><span class="lineno">   73</span>                    <span class="keywordtype">int</span> startX = tileX * 8;</div>
+<div class="line"><span class="lineno">   74</span>                    <span class="keywordtype">int</span> endX = (startX + 8 &lt; spec.width)? startX + 8: spec.width;</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>                    for (<span class="keywordtype">int</span> pixY = startY; pixY &lt; endY; ++pixY) {</div>
+<div class="line"><span class="lineno">   77</span>                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> pixX = startX; pixX &lt; endX; ++pixX) {</div>
+<div class="line"><span class="lineno">   78</span>                            <span class="keywordtype">int</span> pixCount = (spec.height - pixY - 1) * spec.width + pixX; <span class="comment">// flip Y to access pix</span></div>
+<div class="line"><span class="lineno">   79</span>                            <span class="keywordtype">int</span> pixOffsetId = pixCount * spec.nchannels;</div>
+<div class="line"><span class="lineno">   80</span>                            pixFunc(pixX, pixY, spec.width, &amp;<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#a731f04722863e6d45dbafaeca488fbe3">mPixels</a>[pixOffsetId]);</div>
+<div class="line"><span class="lineno">   81</span>                        } <span class="comment">// pixX</span></div>
+<div class="line"><span class="lineno">   82</span>                    } <span class="comment">// pixY</span></div>
+<div class="line"><span class="lineno">   83</span>                } <span class="comment">// tileX</span></div>
+<div class="line"><span class="lineno">   84</span>            });</div>
+<div class="line"><span class="lineno">   85</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_oiio_reader_html_a731f04722863e6d45dbafaeca488fbe3"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_oiio_reader.html#a731f04722863e6d45dbafaeca488fbe3">moonray::rndr::OiioReader::mPixels</a></div><div class="ttdeci">std::vector&lt; float &gt; mPixels</div><div class="ttdef"><b>Definition:</b> <a href="_oiio_reader_8h_source.html#l00128">OiioReader.h:128</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad8ba6d71596fcc2106b7c2756c6895f3" name="ad8ba6d71596fcc2106b7c2756c6895f3"></a>
@@ -180,7 +245,33 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00095">95</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   95</span>                                          {</div>
+<div class="line"><span class="lineno">   96</span>        <span class="keyword">const</span> OIIO::ImageSpec &amp;spec = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#ae7c02bd4ac31297c4a1f3a4d0008dbf9">mSpec</a>;</div>
+<div class="line"><span class="lineno">   97</span>        <span class="keywordtype">int</span> totalTileY = (spec.height + 7) / 8;</div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordtype">int</span> totalTileX = (spec.width + 7) / 8;</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span><span class="preprocessor">#ifdef SINGLE_THREAD</span></div>
+<div class="line"><span class="lineno">  101</span>        <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> parallel = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  102</span><span class="preprocessor">#else        </span></div>
+<div class="line"><span class="lineno">  103</span>        <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> parallel = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  104</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  105</span>        simpleLoop2&lt;parallel&gt;(0, totalTileY, [&amp;](<span class="keywordtype">unsigned</span> tileY) {</div>
+<div class="line"><span class="lineno">  106</span>                <span class="keywordtype">int</span> startY = tileY * 8;</div>
+<div class="line"><span class="lineno">  107</span>                <span class="keywordtype">int</span> endY = (startY + 8 &lt; spec.height)? startY + 8: spec.height;</div>
+<div class="line"><span class="lineno">  108</span> </div>
+<div class="line"><span class="lineno">  109</span>                for (<span class="keywordtype">int</span> tileX = 0; tileX &lt; totalTileX; ++tileX) {</div>
+<div class="line"><span class="lineno">  110</span>                    <span class="keywordtype">int</span> startX = tileX * 8;</div>
+<div class="line"><span class="lineno">  111</span>                    <span class="keywordtype">int</span> endX = (startX + 8 &lt; spec.width)? startX + 8: spec.width;</div>
+<div class="line"><span class="lineno">  112</span> </div>
+<div class="line"><span class="lineno">  113</span>                    for (<span class="keywordtype">int</span> pixY = startY; pixY &lt; endY; ++pixY) {</div>
+<div class="line"><span class="lineno">  114</span>                        <span class="keywordtype">int</span> startPixCount = (spec.height - pixY - 1) * spec.width + startX; <span class="comment">// flip Y to access pix</span></div>
+<div class="line"><span class="lineno">  115</span>                        <span class="keywordtype">int</span> startPixOffsetId = startPixCount * spec.nchannels;</div>
+<div class="line"><span class="lineno">  116</span>                        scanlineFunc(startX, endX, pixY, spec.nchannels, &amp;<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#a731f04722863e6d45dbafaeca488fbe3">mPixels</a>[startPixOffsetId]);</div>
+<div class="line"><span class="lineno">  117</span>                    } <span class="comment">// pixY</span></div>
+<div class="line"><span class="lineno">  118</span>                } <span class="comment">// tileX</span></div>
+<div class="line"><span class="lineno">  119</span>            });</div>
+<div class="line"><span class="lineno">  120</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a38ce0d3f89f034a069c982f9e306140e" name="a38ce0d3f89f034a069c982f9e306140e"></a>
@@ -207,7 +298,8 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00035">35</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   35</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#a1001c8485218e06d4fb1a5faf216799e">mFilename</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aee88f1801852f1b4306f64583bfab3b9" name="aee88f1801852f1b4306f64583bfab3b9"></a>
@@ -234,7 +326,8 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00047">47</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   47</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#ae7c02bd4ac31297c4a1f3a4d0008dbf9">mSpec</a>.nchannels; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9ba02100f0532ad9bf2bbbc942f9dd48" name="a9ba02100f0532ad9bf2bbbc942f9dd48"></a>
@@ -261,7 +354,8 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00040">40</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#ae7c02bd4ac31297c4a1f3a4d0008dbf9">mSpec</a>.height; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afa32b59c53a64608a5b93fbec6f04cd3" name="afa32b59c53a64608a5b93fbec6f04cd3"></a>
@@ -299,7 +393,11 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00144">144</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  145</span>{</div>
+<div class="line"><span class="lineno">  146</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_oiio_utils.html#a297de2378a79d5b97e2280f8e128f513">OiioUtils::getMetadata</a>(<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#ae7c02bd4ac31297c4a1f3a4d0008dbf9">mSpec</a>, name, out);</div>
+<div class="line"><span class="lineno">  147</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_oiio_utils_html_a297de2378a79d5b97e2280f8e128f513"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_oiio_utils.html#a297de2378a79d5b97e2280f8e128f513">moonray::rndr::OiioUtils::getMetadata</a></div><div class="ttdeci">static bool getMetadata(const OIIO::ImageSpec &amp;spec, const std::string &amp;name, int &amp;out)</div><div class="ttdef"><b>Definition:</b> <a href="_oiio_utils_8h_source.html#l00058">OiioUtils.h:58</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af6d5f78961cf3ae23bc47b452875168d" name="af6d5f78961cf3ae23bc47b452875168d"></a>
@@ -337,7 +435,10 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00132">132</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  133</span>{</div>
+<div class="line"><span class="lineno">  134</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_oiio_utils.html#a297de2378a79d5b97e2280f8e128f513">OiioUtils::getMetadata</a>(<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#ae7c02bd4ac31297c4a1f3a4d0008dbf9">mSpec</a>, name, out);</div>
+<div class="line"><span class="lineno">  135</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7c31b50e4c41a9c914d27b92f8f3d7b1" name="a7c31b50e4c41a9c914d27b92f8f3d7b1"></a>
@@ -375,7 +476,10 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00138">138</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  139</span>{</div>
+<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_oiio_utils.html#a297de2378a79d5b97e2280f8e128f513">OiioUtils::getMetadata</a>(<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#ae7c02bd4ac31297c4a1f3a4d0008dbf9">mSpec</a>, name, out);</div>
+<div class="line"><span class="lineno">  141</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2f08be56355b815a85541521297c572f" name="a2f08be56355b815a85541521297c572f"></a>
@@ -403,7 +507,11 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00150">150</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  151</span>{</div>
+<div class="line"><span class="lineno">  152</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1rndr_1_1_oiio_utils.html#a3e0b391f4fc6463c0c745d37d881081b">OiioUtils::getPixChanOffset</a>(<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#ae7c02bd4ac31297c4a1f3a4d0008dbf9">mSpec</a>, channelName);</div>
+<div class="line"><span class="lineno">  153</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_oiio_utils_html_a3e0b391f4fc6463c0c745d37d881081b"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_oiio_utils.html#a3e0b391f4fc6463c0c745d37d881081b">moonray::rndr::OiioUtils::getPixChanOffset</a></div><div class="ttdeci">static int getPixChanOffset(const OIIO::ImageSpec &amp;spec, const std::string &amp;channelName)</div><div class="ttdef"><b>Definition:</b> <a href="_oiio_utils_8h_source.html#l00092">OiioUtils.h:92</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3eb285460f27bb54e3fabb648679005b" name="a3eb285460f27bb54e3fabb648679005b"></a>
@@ -430,7 +538,8 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00042">42</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   42</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#ae7c02bd4ac31297c4a1f3a4d0008dbf9">mSpec</a>.height + 7) &amp; ~7; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa071b409d0508351868f386797290a7a" name="aa071b409d0508351868f386797290a7a"></a>
@@ -457,7 +566,8 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00041">41</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   41</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#ae7c02bd4ac31297c4a1f3a4d0008dbf9">mSpec</a>.width + 7) &amp; ~7; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a942583bcf12ae5a8cdf7c37f2b8c8908" name="a942583bcf12ae5a8cdf7c37f2b8c8908"></a>
@@ -484,7 +594,8 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00039">39</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   39</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#ae7c02bd4ac31297c4a1f3a4d0008dbf9">mSpec</a>.width; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae5d1e87759459607ff90de7dcf4bc053" name="ae5d1e87759459607ff90de7dcf4bc053"></a>
@@ -511,7 +622,8 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00033">33</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{ <span class="keywordflow">return</span> (<span class="keywordtype">bool</span>)<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#adc78a51105903c8f4858bad5b9db9b7c">mIn</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3520956509065936158ab951694b8960" name="a3520956509065936158ab951694b8960"></a>
@@ -531,7 +643,23 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_oiio_reader_8cc_source.html#l00014">14</a> of file <a class="el" href="_oiio_reader_8cc_source.html">OiioReader.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   15</span>{</div>
+<div class="line"><span class="lineno">   16</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#adc78a51105903c8f4858bad5b9db9b7c">mIn</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   17</span> </div>
+<div class="line"><span class="lineno">   18</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#adc78a51105903c8f4858bad5b9db9b7c">mIn</a>-&gt;seek_subimage(subImageId, <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#ae7c02bd4ac31297c4a1f3a4d0008dbf9">mSpec</a>)) {</div>
+<div class="line"><span class="lineno">   19</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;           <span class="comment">// failed to seek</span></div>
+<div class="line"><span class="lineno">   20</span>    }</div>
+<div class="line"><span class="lineno">   21</span> </div>
+<div class="line"><span class="lineno">   22</span>    <span class="keyword">const</span> OIIO::ImageSpec &amp;spec = <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#ae7c02bd4ac31297c4a1f3a4d0008dbf9">mSpec</a>;</div>
+<div class="line"><span class="lineno">   23</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#a731f04722863e6d45dbafaeca488fbe3">mPixels</a>.resize(spec.width * spec.height * spec.nchannels);</div>
+<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#a731f04722863e6d45dbafaeca488fbe3">mPixels</a>.empty()) {</div>
+<div class="line"><span class="lineno">   25</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;           <span class="comment">// internal pixels buffer resize failed</span></div>
+<div class="line"><span class="lineno">   26</span>    }</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#adc78a51105903c8f4858bad5b9db9b7c">mIn</a>-&gt;read_image(OIIO::TypeDesc::FLOAT, <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#a731f04722863e6d45dbafaeca488fbe3">mPixels</a>.data());</div>
+<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   30</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab5ca1b2c17e58677c36c42d7983aa955" name="ab5ca1b2c17e58677c36c42d7983aa955"></a>
@@ -551,6 +679,116 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_oiio_reader_8cc_source.html#l00033">33</a> of file <a class="el" href="_oiio_reader_8cc_source.html">OiioReader.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>{</div>
+<div class="line"><span class="lineno">   35</span>    std::ostringstream ostr;</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#adc78a51105903c8f4858bad5b9db9b7c">mIn</a>) {</div>
+<div class="line"><span class="lineno">   38</span>        ostr &lt;&lt; <span class="stringliteral">&quot;file open failed.&quot;</span>;</div>
+<div class="line"><span class="lineno">   39</span>        <span class="keywordflow">return</span> ostr.str();</div>
+<div class="line"><span class="lineno">   40</span>    }</div>
+<div class="line"><span class="lineno">   41</span> </div>
+<div class="line"><span class="lineno">   42</span>    ostr &lt;&lt; <a class="code hl_function" href="classmoonray_1_1rndr_1_1_oiio_utils.html#afa4d5268ef9070779d308496fa5b06b8">OiioUtils::showImageSpec</a>(hd, <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_oiio_reader.html#ae7c02bd4ac31297c4a1f3a4d0008dbf9">mSpec</a>);</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    <span class="keywordflow">return</span> ostr.str();</div>
+<div class="line"><span class="lineno">   45</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_oiio_utils_html_afa4d5268ef9070779d308496fa5b06b8"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_oiio_utils.html#afa4d5268ef9070779d308496fa5b06b8">moonray::rndr::OiioUtils::showImageSpec</a></div><div class="ttdeci">static std::string showImageSpec(const std::string &amp;hd, const OIIO::ImageSpec &amp;spec)</div><div class="ttdef"><b>Definition:</b> <a href="_oiio_utils_8cc_source.html#l00015">OiioUtils.cc:15</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1001c8485218e06d4fb1a5faf216799e" name="a1001c8485218e06d4fb1a5faf216799e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1001c8485218e06d4fb1a5faf216799e">&#9670;&#160;</a></span>mFilename</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string moonray::rndr::OiioReader::mFilename</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00125">125</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
+
+</div>
+</div>
+<a id="adc78a51105903c8f4858bad5b9db9b7c" name="adc78a51105903c8f4858bad5b9db9b7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc78a51105903c8f4858bad5b9db9b7c">&#9670;&#160;</a></span>mIn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1rndr_1_1_oiio_utils.html#a56a18c5a2405135dec8cf8d7a8458753">OiioUtils::ImageInputUqPtr</a> moonray::rndr::OiioReader::mIn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00126">126</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
+
+</div>
+</div>
+<a id="a731f04722863e6d45dbafaeca488fbe3" name="a731f04722863e6d45dbafaeca488fbe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a731f04722863e6d45dbafaeca488fbe3">&#9670;&#160;</a></span>mPixels</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;float&gt; moonray::rndr::OiioReader::mPixels</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00128">128</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
+
+</div>
+</div>
+<a id="ae7c02bd4ac31297c4a1f3a4d0008dbf9" name="ae7c02bd4ac31297c4a1f3a4d0008dbf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7c02bd4ac31297c4a1f3a4d0008dbf9">&#9670;&#160;</a></span>mSpec</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OIIO::ImageSpec moonray::rndr::OiioReader::mSpec</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_oiio_reader_8h_source.html#l00127">127</a> of file <a class="el" href="_oiio_reader_8h_source.html">OiioReader.h</a>.</p>
 
 </div>
 </div>
@@ -559,9 +797,13 @@ template&lt;typename F &gt; </div>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/rndr/<a class="el" href="_oiio_reader_8cc_source.html">OiioReader.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rndr_1_1_oiio_reader.html">OiioReader</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

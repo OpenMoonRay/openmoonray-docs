@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_55a2e35f6359da48a03f898576e722e1.html">rndr</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_render_prep_exec_tracker_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">RenderPrepExecTracker.h</div></div>
 </div><!--header-->
@@ -51,7 +67,8 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span><span class="comment"></span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @author Toshi Kato</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"></span><span class="comment">//</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
@@ -135,7 +152,7 @@ $(function() {
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">class </span>Impl;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    std::unique_ptr&lt;Impl&gt; mImpl;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classmoonray_1_1rndr_1_1_render_prep_exec_tracker.html#af3ead671d998368bb5859c240928cc4c">   90</a></span>    std::unique_ptr&lt;Impl&gt; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_prep_exec_tracker.html#af3ead671d998368bb5859c240928cc4c">mImpl</a>;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>};</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>} <span class="comment">// namespace rndr</span></div>
@@ -174,13 +191,18 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_exec_tracker_html_aeaba8226964ffb3a897fa76148291b1c"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_exec_tracker.html#aeaba8226964ffb3a897fa76148291b1c">moonray::rndr::RenderPrepExecTracker::getRenderPrepCancelCallBack</a></div><div class="ttdeci">RenderPrepCancelCallBack getRenderPrepCancelCallBack() const</div><div class="ttdef"><b>Definition:</b> <a href="_render_prep_exec_tracker_8cc_source.html#l00570">RenderPrepExecTracker.cc:570</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_exec_tracker_html_aedf3228b48c3704a076fee112f8d7d14"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_exec_tracker.html#aedf3228b48c3704a076fee112f8d7d14">moonray::rndr::RenderPrepExecTracker::cancelInfoEncode</a></div><div class="ttdeci">std::string cancelInfoEncode() const</div><div class="ttdef"><b>Definition:</b> <a href="_render_prep_exec_tracker_8cc_source.html#l00672">RenderPrepExecTracker.cc:672</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_exec_tracker_html_aee459765de73359711f767cde87c42bb"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_exec_tracker.html#aee459765de73359711f767cde87c42bb">moonray::rndr::RenderPrepExecTracker::endRenderPrep</a></div><div class="ttdeci">RESULT endRenderPrep()</div><div class="ttdef"><b>Definition:</b> <a href="_render_prep_exec_tracker_8cc_source.html#l00660">RenderPrepExecTracker.cc:660</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_exec_tracker_html_af3ead671d998368bb5859c240928cc4c"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_exec_tracker.html#af3ead671d998368bb5859c240928cc4c">moonray::rndr::RenderPrepExecTracker::mImpl</a></div><div class="ttdeci">std::unique_ptr&lt; Impl &gt; mImpl</div><div class="ttdef"><b>Definition:</b> <a href="_render_prep_exec_tracker_8h_source.html#l00090">RenderPrepExecTracker.h:90</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_prep_exec_tracker_html_afdbaf087e011ed5ef4921a1991f8f134"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_prep_exec_tracker.html#afdbaf087e011ed5ef4921a1991f8f134">moonray::rndr::RenderPrepExecTracker::parse</a></div><div class="ttdeci">scene_rdl2::grid_util::Parse &amp; parse()</div><div class="ttdef"><b>Definition:</b> <a href="_render_prep_exec_tracker_8cc_source.html#l00666">RenderPrepExecTracker.cc:666</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_dispatch_computation_8cc_source.html#l00044">McrtRtDispatchComputation.cc:44</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_c8c2fc2658195a2d790ef72565bd36e7.html">rndr</a></li><li class="navelem"><a class="el" href="_render_prep_exec_tracker_8h.html">RenderPrepExecTracker.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

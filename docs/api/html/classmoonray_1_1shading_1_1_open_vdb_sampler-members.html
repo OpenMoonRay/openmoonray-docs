@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">OpenVdbSampler</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_open_vdb_sampler.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">moonray::shading::OpenVdbSampler Member List</div></div>
 </div><!--header-->
@@ -56,13 +72,23 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a7f56ffa00f28ff08c86278df47bbaa28">getValueType</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">moonray::shading::OpenVdbSampler</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a0d1c4a3d11c926b6fd8c2435b03da26e">initialize</a>(const std::string &amp;filename, const std::string &amp;gridName, const scene_rdl2::math::Mat4d *render2world, const scene_rdl2::math::Mat4d *grid2world, std::string &amp;errorMsg)</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">moonray::shading::OpenVdbSampler</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a0c8da5055a8c778bac15b6c74b3a94c0">Interpolation</a> enum name</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">moonray::shading::OpenVdbSampler</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#adf5998a2212d8c9d681775d4222efca8">OpenVdbSampler</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">moonray::shading::OpenVdbSampler</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a9f24027a0c5d2d488ca124989db7a8c7">sample</a>(shading::TLState *tls, const scene_rdl2::math::Vec3f &amp;pos, Interpolation interp) const</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">moonray::shading::OpenVdbSampler</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ab54ec3ed4865eb8f9d07af5d5545539f">~OpenVdbSampler</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">moonray::shading::OpenVdbSampler</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a7d1ae83e2eb4470260f615234bd2982d">mFileName</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">moonray::shading::OpenVdbSampler</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a90b9a7e221a98e289e04a50f72b5145a">mGrid</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">moonray::shading::OpenVdbSampler</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a9acd34870328744d406e0d91db5d8ded">mGridName</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">moonray::shading::OpenVdbSampler</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ac6ce499be63d6db1fe234e72520e96be">mIsInitialized</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">moonray::shading::OpenVdbSampler</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#add13e2b8e50176cdd074b9fdd5354c9b">mR2W</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">moonray::shading::OpenVdbSampler</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ab8ea1a373154786452ff454847b1805c">mSampler</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">moonray::shading::OpenVdbSampler</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ab8dfedbcfd0127c3570b8367e5904aa9">mValueType</a></td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">moonray::shading::OpenVdbSampler</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#adf5998a2212d8c9d681775d4222efca8">OpenVdbSampler</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">moonray::shading::OpenVdbSampler</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a9f24027a0c5d2d488ca124989db7a8c7">sample</a>(shading::TLState *tls, const scene_rdl2::math::Vec3f &amp;pos, Interpolation interp) const</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">moonray::shading::OpenVdbSampler</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#ab54ec3ed4865eb8f9d07af5d5545539f">~OpenVdbSampler</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html">moonray::shading::OpenVdbSampler</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

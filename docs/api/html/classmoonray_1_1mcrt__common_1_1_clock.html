@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1mcrt__common.html">mcrt_common</a></li><li class="navelem"><a class="el" href="classmoonray_1_1mcrt__common_1_1_clock.html">Clock</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1mcrt__common_1_1_clock.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classmoonray_1_1mcrt__common_1_1_clock-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::mcrt_common::Clock Class Reference</div></div>
 </div><!--header-->
@@ -74,6 +92,22 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a84dcb163df00304fc2dbeb554504f002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a221b9d8985dfd8238987cef07bb49a4c"><td class="memItemLeft" align="right" valign="top">static __forceinline int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__common_1_1_clock.html#a221b9d8985dfd8238987cef07bb49a4c">nanoseconds</a> (double sec)</td></tr>
 <tr class="separator:a221b9d8985dfd8238987cef07bb49a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a01ab52d8cfffd08e7ee82cb5a3ce18f8"><td class="memItemLeft" align="right" valign="top">int64_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__common_1_1_clock.html#a01ab52d8cfffd08e7ee82cb5a3ce18f8">mStat</a></td></tr>
+<tr class="separator:a01ab52d8cfffd08e7ee82cb5a3ce18f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115bd225e7ecf1c5572729e4512c52b1"><td class="memItemLeft" align="right" valign="top">clockid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__common_1_1_clock.html#a115bd225e7ecf1c5572729e4512c52b1">mClkId</a></td></tr>
+<tr class="separator:a115bd225e7ecf1c5572729e4512c52b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e72f45d2cce87227fcc54643494b147"><td class="memItemLeft" align="right" valign="top">struct timespec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__common_1_1_clock.html#a6e72f45d2cce87227fcc54643494b147">mStart</a></td></tr>
+<tr class="separator:a6e72f45d2cce87227fcc54643494b147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a8a538ab284d0424ba01e4b1dc34f51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__common_1_1_clock.html#a4a8a538ab284d0424ba01e4b1dc34f51">mStopped</a></td></tr>
+<tr class="separator:a4a8a538ab284d0424ba01e4b1dc34f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a4f7a92e3798b8bc19e7d7cdd6a29e822"><td class="memItemLeft" align="right" valign="top">static const int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1mcrt__common_1_1_clock.html#a4f7a92e3798b8bc19e7d7cdd6a29e822">NSPERSEC</a> = 1000000000</td></tr>
+<tr class="separator:a4f7a92e3798b8bc19e7d7cdd6a29e822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >an RAII interface to unix clock_gettime() Usage: </p>
@@ -129,7 +163,20 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_clock_8h_source.html#l00041">41</a> of file <a class="el" href="_clock_8h_source.html">Clock.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   43</span>                                                                  :</div>
+<div class="line"><span class="lineno">   44</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a01ab52d8cfffd08e7ee82cb5a3ce18f8">mStat</a>(stat),</div>
+<div class="line"><span class="lineno">   45</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a115bd225e7ecf1c5572729e4512c52b1">mClkId</a>(clkId),</div>
+<div class="line"><span class="lineno">   46</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a4a8a538ab284d0424ba01e4b1dc34f51">mStopped</a>(<span class="keyword">true</span>)</div>
+<div class="line"><span class="lineno">   47</span>    {</div>
+<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">if</span> (startNow) {</div>
+<div class="line"><span class="lineno">   49</span>            <a class="code hl_function" href="classmoonray_1_1mcrt__common_1_1_clock.html#ae28ca9ed8bab7a0e85702b582112f451">start</a>();</div>
+<div class="line"><span class="lineno">   50</span>        }</div>
+<div class="line"><span class="lineno">   51</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_clock_html_a01ab52d8cfffd08e7ee82cb5a3ce18f8"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_clock.html#a01ab52d8cfffd08e7ee82cb5a3ce18f8">moonray::mcrt_common::Clock::mStat</a></div><div class="ttdeci">int64_t * mStat</div><div class="ttdef"><b>Definition:</b> <a href="_clock_8h_source.html#l00080">Clock.h:80</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_clock_html_a115bd225e7ecf1c5572729e4512c52b1"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_clock.html#a115bd225e7ecf1c5572729e4512c52b1">moonray::mcrt_common::Clock::mClkId</a></div><div class="ttdeci">clockid_t mClkId</div><div class="ttdef"><b>Definition:</b> <a href="_clock_8h_source.html#l00081">Clock.h:81</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_clock_html_a4a8a538ab284d0424ba01e4b1dc34f51"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_clock.html#a4a8a538ab284d0424ba01e4b1dc34f51">moonray::mcrt_common::Clock::mStopped</a></div><div class="ttdeci">bool mStopped</div><div class="ttdef"><b>Definition:</b> <a href="_clock_8h_source.html#l00083">Clock.h:83</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_clock_html_ae28ca9ed8bab7a0e85702b582112f451"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_clock.html#ae28ca9ed8bab7a0e85702b582112f451">moonray::mcrt_common::Clock::start</a></div><div class="ttdeci">__forceinline void start()</div><div class="ttdef"><b>Definition:</b> <a href="_clock_8h_source.html#l00058">Clock.h:58</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af24f294e105b927ec154aea478fd0a36" name="af24f294e105b927ec154aea478fd0a36"></a>
@@ -156,7 +203,11 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_clock_8h_source.html#l00053">53</a> of file <a class="el" href="_clock_8h_source.html">Clock.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   54</span>    {</div>
+<div class="line"><span class="lineno">   55</span>        <a class="code hl_function" href="classmoonray_1_1mcrt__common_1_1_clock.html#ad7e7ebe90d539f67ceee41f42334afea">stop</a>();</div>
+<div class="line"><span class="lineno">   56</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_clock_html_ad7e7ebe90d539f67ceee41f42334afea"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_clock.html#ad7e7ebe90d539f67ceee41f42334afea">moonray::mcrt_common::Clock::stop</a></div><div class="ttdeci">__forceinline void stop()</div><div class="ttdef"><b>Definition:</b> <a href="_clock_8h_source.html#l00066">Clock.h:66</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -185,7 +236,11 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_clock_8h_source.html#l00036">36</a> of file <a class="el" href="_clock_8h_source.html">Clock.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   37</span>    {</div>
+<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>int64_t<span class="keyword">&gt;</span>(sec * <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a4f7a92e3798b8bc19e7d7cdd6a29e822">NSPERSEC</a>);</div>
+<div class="line"><span class="lineno">   39</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_clock_html_a4f7a92e3798b8bc19e7d7cdd6a29e822"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_clock.html#a4f7a92e3798b8bc19e7d7cdd6a29e822">moonray::mcrt_common::Clock::NSPERSEC</a></div><div class="ttdeci">static const int64_t NSPERSEC</div><div class="ttdef"><b>Definition:</b> <a href="_clock_8h_source.html#l00079">Clock.h:79</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a84dcb163df00304fc2dbeb554504f002" name="a84dcb163df00304fc2dbeb554504f002"></a>
@@ -213,7 +268,10 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_clock_8h_source.html#l00030">30</a> of file <a class="el" href="_clock_8h_source.html">Clock.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   31</span>    {</div>
+<div class="line"><span class="lineno">   32</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(nsecs) / <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a4f7a92e3798b8bc19e7d7cdd6a29e822">NSPERSEC</a>;</div>
+<div class="line"><span class="lineno">   33</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae28ca9ed8bab7a0e85702b582112f451" name="ae28ca9ed8bab7a0e85702b582112f451"></a>
@@ -240,7 +298,14 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_clock_8h_source.html#l00058">58</a> of file <a class="el" href="_clock_8h_source.html">Clock.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   59</span>    {</div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a01ab52d8cfffd08e7ee82cb5a3ce18f8">mStat</a> &amp;&amp; <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a4a8a538ab284d0424ba01e4b1dc34f51">mStopped</a>) {</div>
+<div class="line"><span class="lineno">   61</span>            clock_gettime(<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a115bd225e7ecf1c5572729e4512c52b1">mClkId</a>, &amp;<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a6e72f45d2cce87227fcc54643494b147">mStart</a>);</div>
+<div class="line"><span class="lineno">   62</span>            <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a4a8a538ab284d0424ba01e4b1dc34f51">mStopped</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   63</span>        }</div>
+<div class="line"><span class="lineno">   64</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_clock_html_a6e72f45d2cce87227fcc54643494b147"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_clock.html#a6e72f45d2cce87227fcc54643494b147">moonray::mcrt_common::Clock::mStart</a></div><div class="ttdeci">struct timespec mStart</div><div class="ttdef"><b>Definition:</b> <a href="_clock_8h_source.html#l00082">Clock.h:82</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad7e7ebe90d539f67ceee41f42334afea" name="ad7e7ebe90d539f67ceee41f42334afea"></a>
@@ -267,6 +332,138 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_clock_8h_source.html#l00066">66</a> of file <a class="el" href="_clock_8h_source.html">Clock.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   67</span>    {</div>
+<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a01ab52d8cfffd08e7ee82cb5a3ce18f8">mStat</a> &amp;&amp; !<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a4a8a538ab284d0424ba01e4b1dc34f51">mStopped</a>) {</div>
+<div class="line"><span class="lineno">   69</span>            <span class="keyword">struct </span>timespec <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a>;</div>
+<div class="line"><span class="lineno">   70</span>            clock_gettime(<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a115bd225e7ecf1c5572729e4512c52b1">mClkId</a>, &amp;<a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a>);</div>
+<div class="line"><span class="lineno">   71</span>            <span class="keyword">const</span> int64_t sdiff = <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a>.tv_sec - <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a6e72f45d2cce87227fcc54643494b147">mStart</a>.tv_sec;</div>
+<div class="line"><span class="lineno">   72</span>            <span class="keyword">const</span> int64_t nsdiff = <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a>.tv_nsec - <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a6e72f45d2cce87227fcc54643494b147">mStart</a>.tv_nsec;</div>
+<div class="line"><span class="lineno">   73</span>            *<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a01ab52d8cfffd08e7ee82cb5a3ce18f8">mStat</a> += sdiff * <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a4f7a92e3798b8bc19e7d7cdd6a29e822">NSPERSEC</a> + nsdiff;</div>
+<div class="line"><span class="lineno">   74</span>            <a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_clock.html#a4a8a538ab284d0424ba01e4b1dc34f51">mStopped</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   75</span>        }</div>
+<div class="line"><span class="lineno">   76</span>    }</div>
+<div class="ttc" id="a_variance_a_o_v_map_8h_html_a8b3c0ee88191b7d4a40b4271037faaee"><div class="ttname"><a href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a></div><div class="ttdeci">VarianceAOVMap::SourceToVarianceIterator end(const VarianceAOVMap::SourceToVarianceRange &amp;range)</div><div class="ttdef"><b>Definition:</b> <a href="_variance_a_o_v_map_8h_source.html#l00153">VarianceAOVMap.h:153</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a115bd225e7ecf1c5572729e4512c52b1" name="a115bd225e7ecf1c5572729e4512c52b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a115bd225e7ecf1c5572729e4512c52b1">&#9670;&#160;</a></span>mClkId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">clockid_t moonray::mcrt_common::Clock::mClkId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_clock_8h_source.html#l00081">81</a> of file <a class="el" href="_clock_8h_source.html">Clock.h</a>.</p>
+
+</div>
+</div>
+<a id="a6e72f45d2cce87227fcc54643494b147" name="a6e72f45d2cce87227fcc54643494b147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e72f45d2cce87227fcc54643494b147">&#9670;&#160;</a></span>mStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct timespec moonray::mcrt_common::Clock::mStart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_clock_8h_source.html#l00082">82</a> of file <a class="el" href="_clock_8h_source.html">Clock.h</a>.</p>
+
+</div>
+</div>
+<a id="a01ab52d8cfffd08e7ee82cb5a3ce18f8" name="a01ab52d8cfffd08e7ee82cb5a3ce18f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01ab52d8cfffd08e7ee82cb5a3ce18f8">&#9670;&#160;</a></span>mStat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t* moonray::mcrt_common::Clock::mStat</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_clock_8h_source.html#l00080">80</a> of file <a class="el" href="_clock_8h_source.html">Clock.h</a>.</p>
+
+</div>
+</div>
+<a id="a4a8a538ab284d0424ba01e4b1dc34f51" name="a4a8a538ab284d0424ba01e4b1dc34f51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a8a538ab284d0424ba01e4b1dc34f51">&#9670;&#160;</a></span>mStopped</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::mcrt_common::Clock::mStopped</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_clock_8h_source.html#l00083">83</a> of file <a class="el" href="_clock_8h_source.html">Clock.h</a>.</p>
+
+</div>
+</div>
+<a id="a4f7a92e3798b8bc19e7d7cdd6a29e822" name="a4f7a92e3798b8bc19e7d7cdd6a29e822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f7a92e3798b8bc19e7d7cdd6a29e822">&#9670;&#160;</a></span>NSPERSEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int64_t moonray::mcrt_common::Clock::NSPERSEC = 1000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_clock_8h_source.html#l00079">79</a> of file <a class="el" href="_clock_8h_source.html">Clock.h</a>.</p>
 
 </div>
 </div>
@@ -274,9 +471,13 @@ Static Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/mcrt_common/<a class="el" href="_clock_8h_source.html">Clock.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1mcrt__common.html">mcrt_common</a></li><li class="navelem"><a class="el" href="classmoonray_1_1mcrt__common_1_1_clock.html">Clock</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

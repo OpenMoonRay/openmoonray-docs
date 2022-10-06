@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,6 +43,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('namespacemembers_s.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="contents">
 <div class="textblock">Here is a list of all namespace members with links to the namespace documentation for each member:</div>
 
@@ -46,13 +66,17 @@ $(function() {
 <li>SameAsConstVersion()&#160;:&#160;<a class="el" href="namespaceppadetail.html#a1f3efeff8b64a89e4931f7dd76c07cd7">ppadetail</a></li>
 <li>sample()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a1fa5d45a5d64758d8f8cf3352cec69ec">moonray::shading</a></li>
 <li>Sample1DFunction&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a6b9156f180cfcd6805dee394142f8c76">moonray::pbr</a></li>
+<li>sample2D()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_debug_map_8cc_03.html#a76557cb9bcf4009f786200fbf66d1448">anonymous_namespace{DebugMap.cc}</a></li>
 <li>Sample2DFunction&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a724a67dae42cfbfceaedc7677aa81f33">moonray::pbr</a></li>
+<li>sample3D()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_debug_map_8cc_03.html#a90e92e3e756c3cd341e3296bcf51e048">anonymous_namespace{DebugMap.cc}</a></li>
 <li>sampleChannel()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a3b4f53e9fff07b6b9889281712699e4b">moonray::pbr</a></li>
 <li>sampleDirection()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a910bfb7eee1d3fc473d17ce928be3dbd">moonray::pbr</a></li>
 <li>sampleDistanceExponential()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a2740d7292aefec994740f325ef76e821">moonray::pbr</a></li>
 <li>sampleDistanceMultiScatter()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a999c244c1eefd8cc0a53cd5a3bee685d">moonray::pbr</a></li>
 <li>sampleDistanceZeroScatter()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a597c5fc48ff7acda97e68a3990c59a2c">moonray::pbr</a></li>
+<li>sampleDistribution2D()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#acb831cd7dac3c0bce68048ed835c6a15">moonray::pbr</a></li>
 <li>sampleEquiAngular()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a88b591e9282a77eecec2ac9ad734fb02">moonray::pbr</a></li>
+<li>sampleImageDistribution()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a53df6daeddb35641d889e86ff9ccccd9">moonray::pbr</a></li>
 <li>sampleLinearBlended()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#abb30981ca98e5eeb5c78737469e0c55d">moonray::pbr</a></li>
 <li>sampleLocalHemisphereCosine()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#ab0402747beda948c69a39adcdf5eeb52">moonray::shading</a></li>
 <li>sampleLocalHemisphereUniform()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#abf0c8becd7819f8f349483e2ce583e9d">moonray::shading</a></li>
@@ -60,19 +84,50 @@ $(function() {
 <li>sampleLocalSphericalCapUniform2()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a33e8d21a5fc0dfb6731385a949db32db">moonray::shading</a></li>
 <li>sampleNormal()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#ae480f75f442dcebb46081191482c24d0">moonray::shading</a></li>
 <li>sampleNormalv()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a0cdc0dbc52a9fddec4cb0b5ed091c915">moonray::shading</a></li>
+<li>samplePhi()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#ae1c7554533d269abad1905459276dbb1">moonray::shading</a></li>
 <li>sampleQmc1D()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a4d607feec39c0dbaee861bb2ece509e2">moonray::pbr</a></li>
 <li>sampleQmc2D()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a665b61add2e0d51e9f02311a100229d8">moonray::pbr</a></li>
 <li>sampleR2()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a395e89ec9de6a4e2d5cf887011a4d805">moonray::pbr</a></li>
 <li>sampleSpectralIOR()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a7a9572ab0fc84d4dfe9fcb195d72bd1f">moonray::shading</a></li>
 <li>sampleSphereUniform()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#aa5c7801afc9d11082b7a6146c44a5e82">moonray::shading</a></li>
 <li>samplev()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a98b66f6dc23506252551035dbc90c747">moonray::shading</a></li>
+<li>sampleWireframe()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a5bc74e92c7311e3462741924d295b8d2">moonray::pbr</a></li>
+<li>sampleWithPathGuide()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a5cc9a62293e0aa65eca9108f656b038f">moonray::pbr</a></li>
 <li>SamplingMode&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a5de5c1d6313b7563d80eb65e13a1a06e">moonray::rndr</a></li>
+<li>sApplicationMode&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#ad89e124f38aaf7eeed77d2c900ab5c9f">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
 <li>save2dTxtFile()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a5407d723e277e938e9c2f25cd3a41de1">moonray::pbr</a></li>
+<li>sb&#160;:&#160;<a class="el" href="namespacemoonray_1_1mcrt__rt__computation.html#a5aa94ea86709ad66fdb82e8c233ba473">moonray::mcrt_rt_computation</a></li>
+<li>sBasicTextureStaticData&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#ab8f8d00167939225e7d93540320a9387">moonray::shading</a></li>
+<li>sBlueScale&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#aeeff02af3dc7816f50f9c7c9758fb0f4">moonray::shading</a></li>
+<li>sBssrdfAxisProbabilities&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a877c52a0cd6319500ece838cc237eeb7">moonray::pbr</a></li>
+<li>sBucketsCount&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#ae20eab0b326541d3e4481868d1eba940">moonray::pbr</a></li>
 <li>SCALAR&#160;:&#160;<a class="el" href="namespacemoonray_1_1mcrt__common.html#a42fd03b39cc12c33e9c5ac28271b0fc1a18795d666fa5875d82b6674d353e70be">moonray::mcrt_common</a></li>
-<li>scatterAndScale()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a2197fb83f7263ff780ff07c5bc5e5147">moonray::pbr</a></li>
+<li>scatterAndScale()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#aa88cf3ac26d7902d732e8897fb28cc1d">moonray::pbr</a></li>
+<li>sCombinedLightIndex&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a7ca1984ab8c9d7399d8c44e295add599">moonray::shading</a></li>
+<li>sConfigCamera&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#aa6069e17fe4b65982db48cd805795a2e">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>sConfigDsopath&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a08b4349b72bc6e73b48c6ae4c2ae2f5c">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>sConfigEnableDepthBuffer&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#ace41490573dff2219fb13ecae8e4131a">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>sConfigFps&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a01e26220b8b16858ab96587bbc806bcd">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>sConfigFrameGating&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a78fa69f3d15665b3958bbb7d775030a9">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>sConfigGamma&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#acc59c9b3356d201540f951beee35b663">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>sConfigLayer&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a4c6d308088b65e2a6a91f4c62a1c2ecd">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>sConfigMachineId&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a0ea01f055a63869adc91e13f12d4538d">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>sConfigNumMachines&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a5c2dc6cd49cb04e6513ada771b805bfd">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>sConfigScene&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a8858cb4475bab8c13b3bc5075bad41bb">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>sConfigSendLogMessages&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a080615e6cf2b0575a26e83a0a3f00f57">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
 <li>scons_resource&#160;:&#160;<a class="el" href="namespacepackage.html#a98e09ab0276c68b3c5050622a38d9463">package</a></li>
 <li>scons_targets&#160;:&#160;<a class="el" href="namespacepackage.html#ad0f50fe3eebe18137f987fe8a901f6eb">package</a></li>
 <li>sconsTargets&#160;:&#160;<a class="el" href="namespacepackage.html#aa8f6ba1e1ac79287cfa94be43356eb1f">package</a></li>
+<li>sCosGrazingAngle&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a4d730bb1606eee70e79dca26fbf712de">moonray::shading</a></li>
+<li>sCosGrazingAngleSample&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a1f0a268fba7f0bda8cf8c6652f4d2453">moonray::shading</a></li>
+<li>sCosNormalAngleSample&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a1eef4f9ee6ba62756880f42327bc732f">moonray::shading</a></li>
+<li>sDefaultPartName()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_rdl_curve_geometry_8cc_03.html#abd3eb0a71c4e48430903ea909d991415">anonymous_namespace{RdlCurveGeometry.cc}</a>, <a class="el" href="namespaceanonymous__namespace_02_rdl_mesh_geometry_8cc_03.html#a5b230d7d883ed0eb8591ca750d85621c">anonymous_namespace{RdlMeshGeometry.cc}</a>, <a class="el" href="namespaceanonymous__namespace_02_rdl_point_geometry_8cc_03.html#aa111ddac0299e20ff4c7baa33b98d2ef">anonymous_namespace{RdlPointGeometry.cc}</a></li>
+<li>sDiffuseConstant&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#aaa5fb72b43c49bf2ef3c5b0de359078a">moonray::shading</a></li>
+<li>sDistantLightDistance&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a0a0816780fe8bef3098e3b97f7ed0a26">moonray::pbr</a></li>
+<li>secToMsStr()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_checkpoint_controller_8cc_03.html#a3927a23247fadd3c9e978e345ad22f76">anonymous_namespace{CheckpointController.cc}</a></li>
+<li>selectIndexFromCdf()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_bsdf_stochastic_flakes_8h_03.html#a873f9a64c1ba009b5404b164a75a3995">moonray::shading::anonymous_namespace{BsdfStochasticFlakes.h}</a></li>
+<li>sEnvLightDistance&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a632e7f4c07a504df7bc75c30c958670a">moonray::pbr</a></li>
+<li>sEpsilonEdge&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal.html#ac483d65843e5f4994cd99eb329c0c873">moonray::geom::internal</a></li>
 <li>SequenceIDBssrdf&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a4c473b8d9449f1f1a80f46d2258fcd1b">moonray::pbr</a></li>
 <li>SequenceIDIntegrator&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a2b08b3edf033238b9ca393c98b070aa2">moonray::pbr</a></li>
 <li>SequenceIDRR&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#ae581d21e452cfa7f11361f0703b70057">moonray::pbr</a></li>
@@ -82,36 +137,103 @@ $(function() {
 <li>setBsdfLabels()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading_1_1internal.html#aa7a1dd67c85fecd53590d4ef8107044a">moonray::shading::internal</a>, <a class="el" href="namespacemoonray_1_1shading.html#a3d9e308d6129eefde58b1f9f454b4593">moonray::shading</a></li>
 <li>setDepth()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a7d8a26cfbaebf3e2fdfe45a1d0eace18">moonray::pbr</a></li>
 <li>setFlag()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a08b614200559b411fed4c338009d7c63">moonray::shading</a></li>
+<li>setMissValue()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a9e9f0ca6b3f816d039bbaaa679293a96">moonray::pbr</a></li>
+<li>setOverride()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_attribute_overrides_8cc_03.html#a6b090c779834b742602ea7ede1279a42">moonray::rndr::anonymous_namespace{AttributeOverrides.cc}</a></li>
+<li>setOverrideHelper()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_attribute_overrides_8cc_03.html#afb29b9d682b30c5cc711040776cb624e">moonray::rndr::anonymous_namespace{AttributeOverrides.cc}</a></li>
+<li>setOverrideHelper&lt; scene_rdl2::rdl2::SceneObject * &gt;()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_attribute_overrides_8cc_03.html#ab6fc43404a27f4634083282010c6bde4">moonray::rndr::anonymous_namespace{AttributeOverrides.cc}</a></li>
+<li>setOverrideHelper&lt; scene_rdl2::rdl2::SceneObjectVector &gt;()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_attribute_overrides_8cc_03.html#a464b57561a75bb890538c9a4aa26c75d">moonray::rndr::anonymous_namespace{AttributeOverrides.cc}</a></li>
 <li>setPriorityList()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#ac7cb4cd947948cad1b65f7a0eb6c190f">moonray::pbr</a></li>
+<li>setQueueSize()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html#affdaf97eea2c2cca1773aba9e529ae82">moonray::pbr::anonymous_namespace{PbrTLState.cc}</a></li>
+<li>setTiledBuf()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_output_driver_impl_read_8cc_03.html#a5ee278ebb19a60c4a1fadb25f689dd10">moonray::rndr::anonymous_namespace{RenderOutputDriverImplRead.cc}</a></li>
 <li>setupThreadLocalData()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a9d9f23b89fdbad0a1301f05a985fac79">moonray::pbr</a></li>
-<li>shade()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a99318d75b3ee910a3c5c6b06b67fb856">moonray::shading</a></li>
+<li>sExecMode&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#abf54ca74a7dfe22d98820b5210aac4c3">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>sFaceCount&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#adcfb59e62b4e27be0fb06c0939a2d636">moonray::shading</a></li>
+<li>sFaces&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a8b20394826208920e134f2073afe4b7b">moonray::shading</a></li>
+<li>sFastGeometryUpdate&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a1a348dd0a84d3ae73a024029c3eb6ca9">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>sFloatIndexEpsilon&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a93f3c8d4f213d7a31c4b48d0b9cb9a1d">moonray::shading</a></li>
+<li>sGreenScale&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a488260b3ebd1da678d3c107cb05a8285">moonray::shading</a></li>
+<li>shade()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a3857531e4c3bc6e3870385ca546c6157">moonray::shading</a></li>
 <li>shadeBundleHandler()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a8181119820dd1a4b1cc08ad5913ec767">moonray::pbr</a></li>
+<li>shadeMaterial()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a9dc79196f5ef509af2c3bb9743074f7c">moonray::pbr</a></li>
 <li>ShadeQueue&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a4072ea3eef33972a8b026e3b51c45df9">moonray::shading</a></li>
 <li>ShadeQueueList&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a24fbcdcbd215e92c5be584baaed8c0f3">moonray::shading</a></li>
 <li>shadev()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a71df32e89727ca75546aeaa0026d6cf0">moonray::shading</a></li>
 <li>ShadingTLState&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a891e3407e5ae108b09b61182d4941afa">moonray::shading</a></li>
 <li>ShadingTLState_hudValidation()&#160;:&#160;<a class="el" href="namespaceispc.html#a15a58c6844e8ecb71da885d34f3d752e">ispc</a></li>
 <li>ShadowTerminatorFix&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a7dce1b16f3e6aa467b2a3779c356a343">moonray::shading</a></li>
+<li>sHairGlintRoughnessMin&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_bsdf_builder_8cc_03.html#a3538f9e366b19cdcfa4d49b785ebdb8a">anonymous_namespace{BsdfBuilder.cc}</a></li>
+<li>sHairRoughnessMin&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_bsdf_builder_8cc_03.html#adc0359ae2736e0c86c665d4c4b8304c1">anonymous_namespace{BsdfBuilder.cc}</a></li>
+<li>sHalfDt&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal.html#a70f345aecee7b6a45b138e92edd69fcd">moonray::geom::internal</a></li>
 <li>SharedGroupMap&#160;:&#160;<a class="el" href="namespacemoonray_1_1rt.html#a7b7af92a716045aae6fd6857d7b170e0">moonray::rt</a></li>
 <li>SharedPrimitiveSet&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom.html#ad0ec64db36f943ec0d9dc7fbf07a2ed4">moonray::geom</a></li>
 <li>SharedSceneMap&#160;:&#160;<a class="el" href="namespacemoonray_1_1rt.html#a1768ee0717f42d89d628a70ae41a3ff3">moonray::rt</a></li>
 <li>shell&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#a7579679d82137270bc5a20c39aaec002">animate_plot</a></li>
+<li>sHitEpsilonEnd&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a20594324c6e4066787d27307e71d66b3">moonray::pbr</a></li>
+<li>sHitEpsilonStart&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#ab1ee9857d56465ff0836fe7313c36d55">moonray::pbr</a></li>
+<li>showCheckpointSampleTable()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a81176a1eca4a79d34a50eb7e5623f287">anonymous_namespace{RenderDriverCheckpointUtil.cc}</a></li>
+<li>sImageEncoding&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#ae676a9bbf56b6451db31b956466ad896">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
 <li>sImpl&#160;:&#160;<a class="el" href="namespacemoonray_1_1file__resource.html#a6d3615580006f6ad926eafddb963c09b">moonray::file_resource</a></li>
 <li>simpleLoop()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a5474c04b824db31c27e5dc5b685f2f2c">moonray::rndr</a></li>
 <li>simpleLoop2()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a9c75c54c3b9e97fa94bf9150610b8f9a">moonray::rndr</a></li>
+<li>sInfiniteLightDistance&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a942247d1ab8a37a79229b4d8a3a79ed4">moonray::pbr</a></li>
+<li>sInstanceLevelKeys&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom.html#acb68f4b0deb520c2a71b38967f0c263f">moonray::geom</a></li>
 <li>sIntersectionEpsilon&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a0d5b960fedcd85f9ff120b9968ba0314">moonray::shading</a></li>
+<li>size()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">anonymous_namespace{ResumeHistoryMetaData.cc}</a></li>
 <li>size_type&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1sp.html#ab4e631ad91afaa200663658549825bf1">moonray::pbr::sp</a></li>
 <li>sizeCheck()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom.html#a345c1a55bfda38a86a2c6400ee994516">moonray::geom</a></li>
 <li>skipOcclusionFilter()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rt.html#a4ea86e3805d72d68d9e9a1df67144e79">moonray::rt</a></li>
+<li>skipRenderOutputMessage()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_output_driver_8cc_03.html#aaf9e3ef527988db6ca0a34043dae4d2d">moonray::rndr::anonymous_namespace{RenderOutputDriver.cc}</a></li>
+<li>skipRenderOutputMessageImageConflict()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_output_driver_8cc_03.html#a9ee3696a186046fde3f8bc180de7b094">moonray::rndr::anonymous_namespace{RenderOutputDriver.cc}</a></li>
+<li>sLargeZeroScatterSigmaT&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a23f775d3348e9c71d24d133277e94ddd">moonray::shading</a></li>
+<li>sLightCount&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#ac06e9b9cac2928429c7f4af52d3b757b">moonray::shading</a></li>
+<li>sLightPosition&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#adbae937f50d621a2c2a0169f33896524">moonray::shading</a></li>
 <li>smartClamp()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#ae229c29fbe30d95d0160c80c8e17434c">moonray::pbr</a></li>
+<li>sMaxCosTheta&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#acd9ac45cb5714f5060c7f91750f35345">moonray::shading</a></li>
+<li>sMaxNodeSize&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a2000f5a74417a86bf873f55081f64dee">moonray::rndr</a></li>
+<li>sMaxUdim&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a939e3b191d2a8b4cc8dc3324605a88f5">moonray::shading</a></li>
+<li>sMinNodeSize&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#aa89659a1eace02c87948d8e118e88be7">moonray::rndr</a></li>
+<li>sMinSinTheta&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a0f9705c2595aea1900714f05ffbac017">moonray::shading</a></li>
+<li>sMinTheta&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#addb67fe55872f5c14407a6cbb361d911">moonray::shading</a></li>
 <li>snapshotAccumulators()&#160;:&#160;<a class="el" href="namespacemoonray_1_1mcrt__common.html#a69136947a9c7c167075111abb285fd41">moonray::mcrt_common</a></li>
+<li>snapshotDeltaAovFloatN()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a95a87772f82728dde8cf156905c2f495">moonray::rndr</a></li>
+<li>snapshotDeltaAovVariance()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#aa8c59ba80edb469b43bf9fd53525e6cc">moonray::rndr</a></li>
+<li>snapshotDisplayFilterVariablePixelBuffer()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a95e415b32ef045c34ec397638b34b18a">moonray::rndr</a></li>
 <li>snapshotRawAccumulators()&#160;:&#160;<a class="el" href="namespacemoonray_1_1mcrt__common.html#a56c6ecbd98180aeca7c9a877001d45f6">moonray::mcrt_common</a></li>
 <li>snapshotSortedAccumulators()&#160;:&#160;<a class="el" href="namespacemoonray_1_1mcrt__common.html#a2abecf840967e4aefaf69c6a6a137d7f">moonray::mcrt_common</a></li>
+<li>snapshotVariablePixelBuffer()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#ae75017abc5841ee577392a36830ffa58">moonray::rndr</a></li>
+<li>snapshotVarianceVariablePixelBuffer()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a27e0102f8e2ca60147d7edbecba0342c">moonray::rndr</a></li>
+<li>snapshotVarianceVariablePixelBufferFulldump()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a0bf6ab3428cc9acebe6b605e866d611b">moonray::rndr</a></li>
 <li>sNoLabel&#160;:&#160;<a class="el" href="namespacemoonray_1_1lpe.html#afc7042fdd4a1c528313a0f1ceb20c15a">moonray::lpe</a></li>
+<li>sNoSplit&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a254d46f36153616db223069cf5b92329">moonray::rndr</a></li>
 <li>sobolSequence()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#acbf22e2a8012aa6905bb091b87a00dcd">moonray::pbr</a></li>
+<li>solveU()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a205043f11ff16c2793a83b00628ba751">moonray::shading</a></li>
+<li>sortEntries()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a11a236d067a323fc28df0afc221153e8">anonymous_namespace{RampControl.cc}</a></li>
+<li>sOutputDepth&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_sample_partition_8h_03.html#a240a70ced4be2ce7db614223848606d2">moonray::pbr::anonymous_namespace{SamplePartition.h}</a></li>
+<li>sPbrValidityAlbedoMax&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a16fc7b19570c869767f812a833bcd625">moonray::shading</a></li>
+<li>sPbrValidityAlbedoMin&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a4bbf2a02388f4b57df44c863d64dd333">moonray::shading</a></li>
+<li>sPbrValidityConductorInvalid&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a27c15c903bec2403b2b9fc5c8fdc18f6">moonray::shading</a></li>
+<li>sPbrValidityConductorValid&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a7e6b7a3a64556a8b5ce0f8efe25fb9b1">moonray::shading</a></li>
+<li>sPbrValidityDielectricValidHighBegin&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#aa6a94ffe1322d5eac6c7b97f981dde74">moonray::shading</a></li>
+<li>sPbrValidityDielectricValidHighEnd&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a8d1b080aa227514cf83b13aa73f550fb">moonray::shading</a></li>
+<li>sPbrValidityDielectricValidLowBegin&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a46cea1537b23cc5742664b6637626fe4">moonray::shading</a></li>
+<li>sPbrValidityDielectricValidLowEnd&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a091116bdbbc997fe2b78f72f083251a3">moonray::shading</a></li>
+<li>sPbrValidityInvalidColor&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#aeb676fbbd90813baac1cc80091ca2402">moonray::shading</a></li>
+<li>sPbrValidityValidColor&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a98d2707b89bebe63f1bd68bd2e96f7bf">moonray::shading</a></li>
 <li>spin_lock()&#160;:&#160;<a class="el" href="namespacewait__impl.html#aa89ed6949fcc38299c3beb2e6fc95c52">wait_impl</a></li>
-<li>squareSampleToCircle()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a4bf0b0aa4d38d964388c2a2d6d02e1c6">moonray::pbr</a></li>
+<li>sQuadVertexCount&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal.html#acb6818809dd604a8277c8dfd60c5ec3f">moonray::geom::internal</a></li>
+<li>squareSampleToCircle()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a959d1cafc3f50bbb653ddd11054d6448">moonray::pbr</a></li>
 <li>squarifyRectangle()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#aded79f2ca3891d2a76a58704c4bc837f">moonray::shading</a></li>
+<li>sRangeDivider&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a27e32abee816ddc5bd0e312c534e6042">moonray::pbr</a></li>
+<li>sRayStreaming&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#ae0691e25b76ed2305e18f95b036d075e">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>sRedScale&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a189970d64a989c852bcbd37d873229a6">moonray::shading</a></li>
+<li>sRenderedEye&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#abd3d07abd3c140d3155f9d9e8e123178">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>sRenderMode&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a2970e217cf13c341539ac8b482f5fbff">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>sRoughness&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9">moonray::pbr</a></li>
+<li>sRoughnessCount&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a095dd0c08268947a9fa1355901dfebe7">moonray::pbr</a></li>
+<li>sSampleCount&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#ae12a5e6111d97f30b3b3daea799d0c8a">moonray::pbr</a></li>
+<li>sSeparatedLightIndex&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#ab872c328ed6d87e29774bba9211d68e1">moonray::shading</a></li>
+<li>sSinNormalAngleSqrd&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a43674079b468016a4c04699e15043d28">moonray::shading</a></li>
+<li>sSqrtPiOver8&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a6ce7afebed569e6d7f4f7a06e78c7780">moonray::shading</a></li>
 <li>stackTraceHandler()&#160;:&#160;<a class="el" href="namespacemoonray.html#ab14fa9e8084c0859271220b1da131005">moonray</a></li>
 <li>startRenderPhaseOfFrame()&#160;:&#160;<a class="el" href="namespacemoonray_1_1mcrt__common.html#afd9cd7fb0273f98ecffc2d99cbd44050">moonray::mcrt_common</a></li>
 <li>startUpdatePhaseOfFrame()&#160;:&#160;<a class="el" href="namespacemoonray_1_1mcrt__common.html#a6d4b2fe5654efc6317bfbd721adbac5c">moonray::mcrt_common</a></li>
@@ -121,20 +243,36 @@ $(function() {
 <li>STATS_DENSITY_GRID_SAMPLES&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal.html#aa33461b28c92044b9de8509573b952b6af64ef363770449f0780e8a63a26fb6d7">moonray::geom::internal</a></li>
 <li>STATS_EMISSION_GRID_SAMPLES&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal.html#aa33461b28c92044b9de8509573b952b6aed7df569470c1bc81f0969028819673f">moonray::geom::internal</a></li>
 <li>STATS_VELOCITY_GRID_SAMPLES&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal.html#aa33461b28c92044b9de8509573b952b6aa28e4452859a6858db964f4e3d8982c1">moonray::geom::internal</a></li>
-<li>stitchRings()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal.html#a7fec3dbfc696f02d4f670b5980bc7e07">moonray::geom::internal</a></li>
+<li>sTextureCacheSize&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a991d6c0d73698117449e177a823df4e1">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>sTextureStFVarChannel&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal.html#af82c0d1d4c7151c753f1704647ee105e">moonray::geom::internal</a></li>
+<li>sTextureSystem&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#ab0baf511825c271bff3a34fb87c6bb9e">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
+<li>sThetaE&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a1fdaa961337ef34deb997d0f6f4f8ecf">moonray::pbr</a></li>
+<li>sThetaO&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#aa5ac00b58b059401c3dd13a7958184d6">moonray::pbr</a></li>
+<li>stitchRings()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal.html#ab39f7a2b5dc70c1fbe24933ffb675d7b">moonray::geom::internal</a></li>
 <li>stochasticDiscreteMean()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#aa50ee6099b5e494d8ffd725b416d9660">moonray::pbr</a></li>
 <li>stochasticDiscreteSum()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#adc07f718668a9f1d786396f79ba82d2c">moonray::pbr</a></li>
+<li>sTolerance&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_test_hair_8cc_03.html#af2dfd20519bce39e413dfb4b9bee6277">moonray::shading::anonymous_namespace{TestHair.cc}</a></li>
+<li>sTriangleVertexCount&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal.html#a262b08f44beec9e232e50116706775a7">moonray::geom::internal</a></li>
+<li>stringCat()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a829d90c09660489d117481b177d29cf2">anonymous_namespace{ResumeHistoryMetaData.cc}</a></li>
+<li>stringCatHelper()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a31d50e1a624c2eee1818988c4da95208">anonymous_namespace{ResumeHistoryMetaData.cc}</a></li>
 <li>subd_itr&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#a6c62430f74278f41046c3f4711deb9d3">polymesh2rdlmesh</a></li>
 <li>subd_type&#160;:&#160;<a class="el" href="namespacepolymesh2rdlmesh.html#a0dd0267ec0c435b1d309d8feefa37d46">polymesh2rdlmesh</a></li>
 <li>Subpixel_hvdValidation()&#160;:&#160;<a class="el" href="namespaceispc.html#a77400774847fe7905abdd45080f76b90">ispc</a></li>
+<li>sUdimStart&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a372da02b089652f9637f0ac67f2e3690">moonray::shading</a></li>
+<li>sUdimTextureStaticData&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a77cdc6438862bde20e7d3b8bb7d0696d">moonray::shading</a></li>
+<li>sViewAnglesTheta&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a56ae37a2ab70472ac70ae80f28ca553d">moonray::pbr</a></li>
 <li>swap()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#ac1469378fc1d6fedf3e08c2906b4d75e">moonray::shading</a>, <a class="el" href="namespacestd.html#a7ffc9a83d505624d453906655627414d">std</a></li>
 <li>switchAovType()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a9bc40fefd6be5af31a2cca2145c261c8">moonray::rndr</a></li>
 <li>SYMBOL&#160;:&#160;<a class="el" href="namespacelpexp.html#a17a89e98bfd8d490194978fa7b72f76caa92cb1f660496fb68e6347d10573169c">lpexp</a></li>
+<li>SYSLOG_PRIO&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03.html#a5fb6d32b1c4ab1aecf86cec6a4cf8214">anonymous_namespace{AthenaCSVStream.cc}</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

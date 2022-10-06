@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1mcrt__rt__computation.html">mcrt_rt_computation</a></li><li class="navelem"><a class="el" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html">McrtRtComputationDebugConsole</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -120,7 +136,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_computation_debug_console_8h_source.html#l00019">19</a> of file <a class="el" href="_mcrt_rt_computation_debug_console_8h_source.html">McrtRtComputationDebugConsole.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   19</span>: <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aaa421af51e6f70b93762816627a281f6">mComputation</a>(0x0) {}</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console_html_aaa421af51e6f70b93762816627a281f6"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aaa421af51e6f70b93762816627a281f6">moonray::mcrt_rt_computation::McrtRtComputationDebugConsole::mComputation</a></div><div class="ttdeci">McrtRtComputation * mComputation</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_computation_debug_console_8h_source.html#l00040">McrtRtComputationDebugConsole.h:40</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad81bd794cae9d4a2d9e56b4fab7d3f14" name="ad81bd794cae9d4a2d9e56b4fab7d3f14"></a>
@@ -147,7 +165,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_computation_debug_console_8h_source.html#l00020">20</a> of file <a class="el" href="_mcrt_rt_computation_debug_console_8h_source.html">McrtRtComputationDebugConsole.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   20</span>{ <a class="code hl_function" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aa12542fc96ee6505ae6e4326a923416e">close</a>(); }</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console_html_aa12542fc96ee6505ae6e4326a923416e"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aa12542fc96ee6505ae6e4326a923416e">moonray::mcrt_rt_computation::McrtRtComputationDebugConsole::close</a></div><div class="ttdeci">void close()</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_computation_debug_console_8cc_source.html#l00054">McrtRtComputationDebugConsole.cc:54</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -167,7 +187,12 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html#l00054">54</a> of file <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html">McrtRtComputationDebugConsole.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   55</span>{</div>
+<div class="line"><span class="lineno">   56</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aa306d900e88d6f48eb7f0c28b1008202">mTlSvr</a>.close();</div>
+<div class="line"><span class="lineno">   57</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aaa421af51e6f70b93762816627a281f6">mComputation</a> = 0x0;</div>
+<div class="line"><span class="lineno">   58</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console_html_aa306d900e88d6f48eb7f0c28b1008202"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aa306d900e88d6f48eb7f0c28b1008202">moonray::mcrt_rt_computation::McrtRtComputationDebugConsole::mTlSvr</a></div><div class="ttdeci">moonray::telnet_server::TlSvr mTlSvr</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_computation_debug_console_8h_source.html#l00041">McrtRtComputationDebugConsole.h:41</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5ff230fab1ecf589f155135598eb17b7" name="a5ff230fab1ecf589f155135598eb17b7"></a>
@@ -205,7 +230,20 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html#l00155">155</a> of file <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html">McrtRtComputationDebugConsole.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  156</span>{</div>
+<div class="line"><span class="lineno">  157</span>    <span class="keywordtype">size_t</span> lenCmdName = cmdName.length();</div>
+<div class="line"><span class="lineno">  158</span>    <span class="keywordtype">size_t</span> lenCmdLine = cmdLine.length();</div>
+<div class="line"><span class="lineno">  159</span>    <span class="keywordflow">if</span> (lenCmdName &gt; lenCmdLine) {</div>
+<div class="line"><span class="lineno">  160</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  161</span>    }</div>
+<div class="line"><span class="lineno">  162</span> </div>
+<div class="line"><span class="lineno">  163</span>    std::string cCmd = cmdLine.substr(0, lenCmdName);</div>
+<div class="line"><span class="lineno">  164</span>    <span class="keywordflow">if</span> (cmdName == cCmd) {</div>
+<div class="line"><span class="lineno">  165</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  166</span>    }</div>
+<div class="line"><span class="lineno">  167</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  168</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3a22a7b4eb1e4eee613d50b3e90e2f09" name="a3a22a7b4eb1e4eee613d50b3e90e2f09"></a>
@@ -233,7 +271,24 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html#l00081">81</a> of file <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html">McrtRtComputationDebugConsole.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   82</span>{</div>
+<div class="line"><span class="lineno">   83</span>    std::istringstream istr(cmdLine);</div>
+<div class="line"><span class="lineno">   84</span>    std::string token;</div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>    <span class="keywordtype">float</span> fps;</div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>    istr &gt;&gt; token;              <span class="comment">// skip &quot;fps&quot;</span></div>
+<div class="line"><span class="lineno">   89</span>    istr &gt;&gt; token;</div>
+<div class="line"><span class="lineno">   90</span>    std::istringstream(token) &gt;&gt; fps;</div>
+<div class="line"><span class="lineno">   91</span> </div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aaa421af51e6f70b93762816627a281f6">mComputation</a>-&gt;<a class="code hl_function" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation.html#a27baf414533f5a6697f369b93afdaa48">setFps</a>(fps);</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    std::ostringstream ostr;</div>
+<div class="line"><span class="lineno">   95</span>    ostr &lt;&lt; <span class="stringliteral">&quot;&gt; update fps rate ... &quot;</span> &lt;&lt; fps &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   96</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aa306d900e88d6f48eb7f0c28b1008202">mTlSvr</a>.send(ostr.str());</div>
+<div class="line"><span class="lineno">   97</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_html_a27baf414533f5a6697f369b93afdaa48"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation.html#a27baf414533f5a6697f369b93afdaa48">moonray::mcrt_rt_computation::McrtRtComputation::setFps</a></div><div class="ttdeci">void setFps(const float fps)</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_computation_8cc_source.html#l00211">McrtRtComputation.cc:211</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1edb7a6249b9d8b464f1e6fe83ff6e7c" name="a1edb7a6249b9d8b464f1e6fe83ff6e7c"></a>
@@ -261,7 +316,27 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html#l00100">100</a> of file <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html">McrtRtComputationDebugConsole.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  101</span>{</div>
+<div class="line"><span class="lineno">  102</span>    std::istringstream istr(cmdLine);</div>
+<div class="line"><span class="lineno">  103</span>    std::string token;</div>
+<div class="line"><span class="lineno">  104</span> </div>
+<div class="line"><span class="lineno">  105</span>    istr &gt;&gt; token;              <span class="comment">// skip &quot;geoUpdate&quot;</span></div>
+<div class="line"><span class="lineno">  106</span>    istr &gt;&gt; token;</div>
+<div class="line"><span class="lineno">  107</span> </div>
+<div class="line"><span class="lineno">  108</span>    std::ostringstream ostr;</div>
+<div class="line"><span class="lineno">  109</span>    <span class="keywordtype">bool</span> sw;</div>
+<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">if</span> (token == <span class="stringliteral">&quot;on&quot;</span>) {</div>
+<div class="line"><span class="lineno">  111</span>        ostr &lt;&lt; <span class="stringliteral">&quot;&gt; geoUpdate on\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  112</span>        sw = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  113</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  114</span>        ostr &lt;&lt; <span class="stringliteral">&quot;&gt; geoUpdate off\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  115</span>        sw = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  116</span>    }</div>
+<div class="line"><span class="lineno">  117</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aaa421af51e6f70b93762816627a281f6">mComputation</a>-&gt;<a class="code hl_function" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation.html#a7cee4d527b02202471d0029df4566ddb">setGeoUpdateMode</a>(sw);</div>
+<div class="line"><span class="lineno">  118</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aa306d900e88d6f48eb7f0c28b1008202">mTlSvr</a>.send(ostr.str());</div>
+<div class="line"><span class="lineno">  119</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_html_a7cee4d527b02202471d0029df4566ddb"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation.html#a7cee4d527b02202471d0029df4566ddb">moonray::mcrt_rt_computation::McrtRtComputation::setGeoUpdateMode</a></div><div class="ttdeci">void setGeoUpdateMode(const bool mode)</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_computation_8h_source.html#l00047">McrtRtComputation.h:47</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a25e45acd14fa1bc95e9a096ec44df18b" name="a25e45acd14fa1bc95e9a096ec44df18b"></a>
@@ -288,7 +363,19 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html#l00122">122</a> of file <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html">McrtRtComputationDebugConsole.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  123</span>{</div>
+<div class="line"><span class="lineno">  124</span>    std::ostringstream ostr;</div>
+<div class="line"><span class="lineno">  125</span>    ostr &lt;&lt; <span class="stringliteral">&quot;help {\n&quot;</span></div>
+<div class="line"><span class="lineno">  126</span>         &lt;&lt; <span class="stringliteral">&quot;  fps &lt;val&gt;          : set fps rate\n&quot;</span></div>
+<div class="line"><span class="lineno">  127</span>         &lt;&lt; <span class="stringliteral">&quot;  geoUpdate &lt;on|off&gt; : geometry message enable(on) or  not(off)\n&quot;</span></div>
+<div class="line"><span class="lineno">  128</span>         &lt;&lt; <span class="stringliteral">&quot;  help               : show this message\n&quot;</span></div>
+<div class="line"><span class="lineno">  129</span>         &lt;&lt; <span class="stringliteral">&quot;  resetCounter       : reset primary ray counter\n&quot;</span></div>
+<div class="line"><span class="lineno">  130</span>         &lt;&lt; <span class="stringliteral">&quot;  show               : show internal info\n&quot;</span></div>
+<div class="line"><span class="lineno">  131</span>         &lt;&lt; <span class="stringliteral">&quot;}\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aa306d900e88d6f48eb7f0c28b1008202">mTlSvr</a>.send(ostr.str());</div>
+<div class="line"><span class="lineno">  134</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab5fc403ab9bc75c3cfc193041306a597" name="ab5fc403ab9bc75c3cfc193041306a597"></a>
@@ -316,7 +403,30 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html#l00061">61</a> of file <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html">McrtRtComputationDebugConsole.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   62</span>{</div>
+<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#a5ff230fab1ecf589f155135598eb17b7">cmdCmp</a>(<span class="stringliteral">&quot;fps&quot;</span>, cmdLine)) {</div>
+<div class="line"><span class="lineno">   64</span>        <a class="code hl_function" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#a3a22a7b4eb1e4eee613d50b3e90e2f09">cmdFps</a>(cmdLine);</div>
+<div class="line"><span class="lineno">   65</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#a5ff230fab1ecf589f155135598eb17b7">cmdCmp</a>(<span class="stringliteral">&quot;geoUpdate&quot;</span>, cmdLine)) {</div>
+<div class="line"><span class="lineno">   66</span>        <a class="code hl_function" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#a1edb7a6249b9d8b464f1e6fe83ff6e7c">cmdGeoUpdate</a>(cmdLine);</div>
+<div class="line"><span class="lineno">   67</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#a5ff230fab1ecf589f155135598eb17b7">cmdCmp</a>(<span class="stringliteral">&quot;help&quot;</span>, cmdLine)) {</div>
+<div class="line"><span class="lineno">   68</span>        <a class="code hl_function" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#a25e45acd14fa1bc95e9a096ec44df18b">cmdHelp</a>();</div>
+<div class="line"><span class="lineno">   69</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#a5ff230fab1ecf589f155135598eb17b7">cmdCmp</a>(<span class="stringliteral">&quot;resetCounter&quot;</span>, cmdLine)) {</div>
+<div class="line"><span class="lineno">   70</span>        <a class="code hl_function" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#a915cedcdc3fcc0187925d5f84536d7f0">cmdResetCounter</a>();</div>
+<div class="line"><span class="lineno">   71</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#a5ff230fab1ecf589f155135598eb17b7">cmdCmp</a>(<span class="stringliteral">&quot;show&quot;</span>, cmdLine)) {</div>
+<div class="line"><span class="lineno">   72</span>        <a class="code hl_function" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#ac0d1b82dbbbcc07b3a00d922fcf2ee04">cmdShow</a>();</div>
+<div class="line"><span class="lineno">   73</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   74</span>        std::ostringstream ostr;</div>
+<div class="line"><span class="lineno">   75</span>        ostr &lt;&lt; <span class="stringliteral">&quot;&gt; unknown command&gt;&quot;</span> &lt;&lt; cmdLine;</div>
+<div class="line"><span class="lineno">   76</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aa306d900e88d6f48eb7f0c28b1008202">mTlSvr</a>.send(ostr.str());</div>
+<div class="line"><span class="lineno">   77</span>    }</div>
+<div class="line"><span class="lineno">   78</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console_html_a1edb7a6249b9d8b464f1e6fe83ff6e7c"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#a1edb7a6249b9d8b464f1e6fe83ff6e7c">moonray::mcrt_rt_computation::McrtRtComputationDebugConsole::cmdGeoUpdate</a></div><div class="ttdeci">void cmdGeoUpdate(const std::string &amp;cmdLine)</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_computation_debug_console_8cc_source.html#l00100">McrtRtComputationDebugConsole.cc:100</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console_html_a25e45acd14fa1bc95e9a096ec44df18b"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#a25e45acd14fa1bc95e9a096ec44df18b">moonray::mcrt_rt_computation::McrtRtComputationDebugConsole::cmdHelp</a></div><div class="ttdeci">void cmdHelp()</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_computation_debug_console_8cc_source.html#l00122">McrtRtComputationDebugConsole.cc:122</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console_html_a3a22a7b4eb1e4eee613d50b3e90e2f09"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#a3a22a7b4eb1e4eee613d50b3e90e2f09">moonray::mcrt_rt_computation::McrtRtComputationDebugConsole::cmdFps</a></div><div class="ttdeci">void cmdFps(const std::string &amp;cmdLine)</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_computation_debug_console_8cc_source.html#l00081">McrtRtComputationDebugConsole.cc:81</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console_html_a5ff230fab1ecf589f155135598eb17b7"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#a5ff230fab1ecf589f155135598eb17b7">moonray::mcrt_rt_computation::McrtRtComputationDebugConsole::cmdCmp</a></div><div class="ttdeci">bool cmdCmp(const std::string &amp;cmdName, const std::string &amp;cmdline) const</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_computation_debug_console_8cc_source.html#l00155">McrtRtComputationDebugConsole.cc:155</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console_html_a915cedcdc3fcc0187925d5f84536d7f0"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#a915cedcdc3fcc0187925d5f84536d7f0">moonray::mcrt_rt_computation::McrtRtComputationDebugConsole::cmdResetCounter</a></div><div class="ttdeci">void cmdResetCounter()</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_computation_debug_console_8cc_source.html#l00137">McrtRtComputationDebugConsole.cc:137</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console_html_ac0d1b82dbbbcc07b3a00d922fcf2ee04"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#ac0d1b82dbbbcc07b3a00d922fcf2ee04">moonray::mcrt_rt_computation::McrtRtComputationDebugConsole::cmdShow</a></div><div class="ttdeci">void cmdShow()</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_computation_debug_console_8cc_source.html#l00144">McrtRtComputationDebugConsole.cc:144</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a915cedcdc3fcc0187925d5f84536d7f0" name="a915cedcdc3fcc0187925d5f84536d7f0"></a>
@@ -343,7 +453,12 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html#l00137">137</a> of file <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html">McrtRtComputationDebugConsole.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  138</span>{</div>
+<div class="line"><span class="lineno">  139</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aaa421af51e6f70b93762816627a281f6">mComputation</a>-&gt;<a class="code hl_function" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation.html#a9d554721ecb86a9f087e1edc42c2999a">setResetCounter</a>();</div>
+<div class="line"><span class="lineno">  140</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aa306d900e88d6f48eb7f0c28b1008202">mTlSvr</a>.send(<span class="stringliteral">&quot;resetCounter\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  141</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_html_a9d554721ecb86a9f087e1edc42c2999a"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation.html#a9d554721ecb86a9f087e1edc42c2999a">moonray::mcrt_rt_computation::McrtRtComputation::setResetCounter</a></div><div class="ttdeci">void setResetCounter()</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_computation_8h_source.html#l00049">McrtRtComputation.h:49</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac0d1b82dbbbcc07b3a00d922fcf2ee04" name="ac0d1b82dbbbcc07b3a00d922fcf2ee04"></a>
@@ -370,7 +485,17 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html#l00144">144</a> of file <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html">McrtRtComputationDebugConsole.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  145</span>{</div>
+<div class="line"><span class="lineno">  146</span>    std::ostringstream ostr;</div>
+<div class="line"><span class="lineno">  147</span>    ostr &lt;&lt; <span class="stringliteral">&quot;status {\n&quot;</span></div>
+<div class="line"><span class="lineno">  148</span>         &lt;&lt; <span class="stringliteral">&quot;        fps:&quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aaa421af51e6f70b93762816627a281f6">mComputation</a>-&gt;<a class="code hl_function" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation.html#a1b9f20308f034349dad91b555cc9870c">getFps</a>() &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">  149</span>         &lt;&lt; <span class="stringliteral">&quot;  geoUpdate:&quot;</span> &lt;&lt; ((<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aaa421af51e6f70b93762816627a281f6">mComputation</a>-&gt;<a class="code hl_function" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation.html#aabe3cda2d9c38057be6f694b72893c6f">getGeoUpdateMode</a>())? <span class="stringliteral">&quot;true&quot;</span>: <span class="stringliteral">&quot;false&quot;</span>) &lt;&lt; std::endl</div>
+<div class="line"><span class="lineno">  150</span>         &lt;&lt; <span class="stringliteral">&quot;}\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  151</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aa306d900e88d6f48eb7f0c28b1008202">mTlSvr</a>.send(ostr.str());</div>
+<div class="line"><span class="lineno">  152</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_html_a1b9f20308f034349dad91b555cc9870c"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation.html#a1b9f20308f034349dad91b555cc9870c">moonray::mcrt_rt_computation::McrtRtComputation::getFps</a></div><div class="ttdeci">float getFps() const</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_computation_8h_source.html#l00046">McrtRtComputation.h:46</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_html_aabe3cda2d9c38057be6f694b72893c6f"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation.html#aabe3cda2d9c38057be6f694b72893c6f">moonray::mcrt_rt_computation::McrtRtComputation::getGeoUpdateMode</a></div><div class="ttdeci">bool getGeoUpdateMode() const</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_computation_8h_source.html#l00048">McrtRtComputation.h:48</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a65b34e5d1d35dac67736e150752f9dbe" name="a65b34e5d1d35dac67736e150752f9dbe"></a>
@@ -389,7 +514,26 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html#l00033">33</a> of file <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html">McrtRtComputationDebugConsole.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   34</span>{</div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aaa421af51e6f70b93762816627a281f6">mComputation</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>    std::string cmdLine;</div>
+<div class="line"><span class="lineno">   38</span> </div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordtype">int</span> rt = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aa306d900e88d6f48eb7f0c28b1008202">mTlSvr</a>.recv(cmdLine, 0.0f);</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">if</span> (rt &lt; 0) {</div>
+<div class="line"><span class="lineno">   41</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;TlSvr error&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   42</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   43</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (rt == 0) {</div>
+<div class="line"><span class="lineno">   44</span>        <span class="comment">// empty console input</span></div>
+<div class="line"><span class="lineno">   45</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   46</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;DebugConsole:&quot;</span> &lt;&lt; cmdLine.c_str() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   47</span>        <a class="code hl_function" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#ab5fc403ab9bc75c3cfc193041306a597">cmdParse</a>(cmdLine);</div>
+<div class="line"><span class="lineno">   48</span>    }</div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   51</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console_html_ab5fc403ab9bc75c3cfc193041306a597"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#ab5fc403ab9bc75c3cfc193041306a597">moonray::mcrt_rt_computation::McrtRtComputationDebugConsole::cmdParse</a></div><div class="ttdeci">void cmdParse(const std::string &amp;cmdLine)</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_computation_debug_console_8cc_source.html#l00061">McrtRtComputationDebugConsole.cc:61</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a16d963ab13b9f757034d81b1cd3b748a" name="a16d963ab13b9f757034d81b1cd3b748a"></a>
@@ -419,7 +563,18 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html#l00018">18</a> of file <a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html">McrtRtComputationDebugConsole.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   20</span>{</div>
+<div class="line"><span class="lineno">   21</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aaa421af51e6f70b93762816627a281f6">mComputation</a> = computation;</div>
+<div class="line"><span class="lineno">   22</span> </div>
+<div class="line"><span class="lineno">   23</span>    <span class="keywordtype">char</span> hostname[128];</div>
+<div class="line"><span class="lineno">   24</span>    gethostname(hostname, 128);</div>
+<div class="line"><span class="lineno">   25</span> </div>
+<div class="line"><span class="lineno">   26</span>    <span class="keywordtype">int</span> port = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html#aa306d900e88d6f48eb7f0c28b1008202">mTlSvr</a>.open(portNumber);</div>
+<div class="line"><span class="lineno">   27</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;DebugConsole host:&quot;</span> &lt;&lt; hostname &lt;&lt; <span class="stringliteral">&quot; port:&quot;</span> &lt;&lt; port &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">return</span> port;</div>
+<div class="line"><span class="lineno">   30</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -476,9 +631,13 @@ Protected Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/dso/computation/mcrt_rt/<a class="el" href="_mcrt_rt_computation_debug_console_8cc_source.html">McrtRtComputationDebugConsole.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1mcrt__rt__computation.html">mcrt_rt_computation</a></li><li class="navelem"><a class="el" href="classmoonray_1_1mcrt__rt__computation_1_1_mcrt_rt_computation_debug_console.html">McrtRtComputationDebugConsole</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

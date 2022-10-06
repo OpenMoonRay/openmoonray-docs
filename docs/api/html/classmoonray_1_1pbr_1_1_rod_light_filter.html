@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,30 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html">RodLightFilter</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_rod_light_filter.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classmoonray_1_1pbr_1_1_rod_light_filter-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::pbr::RodLightFilter Class Reference</div></div>
 </div><!--header-->
@@ -111,6 +130,59 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a33c14f5b90b4fcf91c3ea3b665f11d8f inherit pub_static_methods_classmoonray_1_1pbr_1_1_light_filter"><td class="mdescLeft">&#160;</td><td class="mdescRight">HUD validation and type casting.  <a href="classmoonray_1_1pbr_1_1_light_filter.html#a33c14f5b90b4fcf91c3ea3b665f11d8f">More...</a><br /></td></tr>
 <tr class="separator:a33c14f5b90b4fcf91c3ea3b665f11d8f inherit pub_static_methods_classmoonray_1_1pbr_1_1_light_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a80d9641bf08bbc1533af8b641917ef7d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a80d9641bf08bbc1533af8b641917ef7d">updateParamAndTransforms</a> (const scene_rdl2::math::Mat4f &amp;local2Render0, const scene_rdl2::math::Mat4f &amp;local2Render1)</td></tr>
+<tr class="separator:a80d9641bf08bbc1533af8b641917ef7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d1c30a3d37176483818b0ebbb1ecfe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#ac2d1c30a3d37176483818b0ebbb1ecfe">updateTransforms</a> (const scene_rdl2::math::Mat4f &amp;local2Render, int ti)</td></tr>
+<tr class="separator:ac2d1c30a3d37176483818b0ebbb1ecfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac83c6d3292b5742ec999b26e362950d5"><td class="memItemLeft" align="right" valign="top">finline bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#ac83c6d3292b5742ec999b26e362950d5">isMb</a> () const</td></tr>
+<tr class="separator:ac83c6d3292b5742ec999b26e362950d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55af4fa95f651cfd96a890766bda8faf"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Vec3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a55af4fa95f651cfd96a890766bda8faf">slerpPointRender2Local</a> (const scene_rdl2::math::Vec3f &amp;p, float time) const</td></tr>
+<tr class="separator:a55af4fa95f651cfd96a890766bda8faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb8e9d55bfb0434c572d640775d612e5"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Vec3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#acb8e9d55bfb0434c572d640775d612e5">xformPointRender2Local</a> (const scene_rdl2::math::Vec3f &amp;p, float time) const</td></tr>
+<tr class="separator:acb8e9d55bfb0434c572d640775d612e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb73d0929f695f8bbcf5ff1c413121df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#afb73d0929f695f8bbcf5ff1c413121df">isOutsideInfluence</a> (const scene_rdl2::math::Vec3f &amp;p, float rad) const</td></tr>
+<tr class="separator:afb73d0929f695f8bbcf5ff1c413121df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b4664be934922460a278bc8673591e3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a0b4664be934922460a278bc8673591e3">signedDistanceRoundBox</a> (const scene_rdl2::math::Vec3f &amp;p) const</td></tr>
+<tr class="separator:a0b4664be934922460a278bc8673591e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad82435e288b68f1053e7c7a3ead5f8d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#ad82435e288b68f1053e7c7a3ead5f8d6">ROD_LIGHT_FILTER_MEMBERS</a></td></tr>
+<tr class="separator:ad82435e288b68f1053e7c7a3ead5f8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:af35d317c9bb7952a6e5869f774136a77"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#af35d317c9bb7952a6e5869f774136a77">sAttributeKeyInitialized</a></td></tr>
+<tr class="separator:af35d317c9bb7952a6e5869f774136a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35aae8dca29cf6f048ce3aa0b36998a8"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Mat4d &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a35aae8dca29cf6f048ce3aa0b36998a8">sNodeXformKey</a></td></tr>
+<tr class="separator:a35aae8dca29cf6f048ce3aa0b36998a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f99740751ae60fbafe4e4949edd39e3"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a5f99740751ae60fbafe4e4949edd39e3">sWidthKey</a></td></tr>
+<tr class="separator:a5f99740751ae60fbafe4e4949edd39e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a47ca3fb91c6291b489b81f7a37d4ba"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a6a47ca3fb91c6291b489b81f7a37d4ba">sDepthKey</a></td></tr>
+<tr class="separator:a6a47ca3fb91c6291b489b81f7a37d4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92c9c66adc6055a2686947076b0bf1cb"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a92c9c66adc6055a2686947076b0bf1cb">sHeightKey</a></td></tr>
+<tr class="separator:a92c9c66adc6055a2686947076b0bf1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2369487c0acd9e4f2352c0b7b74aa842"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a2369487c0acd9e4f2352c0b7b74aa842">sRadiusKey</a></td></tr>
+<tr class="separator:a2369487c0acd9e4f2352c0b7b74aa842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4018f261e37b6fa7a1a1c77d4e94af"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a3d4018f261e37b6fa7a1a1c77d4e94af">sEdgeKey</a></td></tr>
+<tr class="separator:a3d4018f261e37b6fa7a1a1c77d4e94af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a612ffeaed8588d63c5583f9fa45c9bcb"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Rgb &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a612ffeaed8588d63c5583f9fa45c9bcb">sColorKey</a></td></tr>
+<tr class="separator:a612ffeaed8588d63c5583f9fa45c9bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad94c48f3eba773a1d04732bbd29c3495"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#ad94c48f3eba773a1d04732bbd29c3495">sIntensityKey</a></td></tr>
+<tr class="separator:ad94c48f3eba773a1d04732bbd29c3495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a842630ebaf56beb178add0acd3c58f3c"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a842630ebaf56beb178add0acd3c58f3c">sDensityKey</a></td></tr>
+<tr class="separator:a842630ebaf56beb178add0acd3c58f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78bdd26dbdeefa1eeae26535193afe9a"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a78bdd26dbdeefa1eeae26535193afe9a">sInvertKey</a></td></tr>
+<tr class="separator:a78bdd26dbdeefa1eeae26535193afe9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b68135e64892ef86a219f76083e5cd8"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::FloatVector &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a3b68135e64892ef86a219f76083e5cd8">sRampInKey</a></td></tr>
+<tr class="separator:a3b68135e64892ef86a219f76083e5cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad51559d7340b99d527e24fca0fd2effb"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::FloatVector &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#ad51559d7340b99d527e24fca0fd2effb">sRampOutKey</a></td></tr>
+<tr class="separator:ad51559d7340b99d527e24fca0fd2effb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c0703e88ee14fa1b859836c6d18c0b9"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::IntVector &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a1c0703e88ee14fa1b859836c6d18c0b9">sRampInterpolationTypesKey</a></td></tr>
+<tr class="separator:a1c0703e88ee14fa1b859836c6d18c0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classmoonray_1_1pbr_1_1_light_filter"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmoonray_1_1pbr_1_1_light_filter')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classmoonray_1_1pbr_1_1_light_filter.html">moonray::pbr::LightFilter</a></td></tr>
@@ -145,7 +217,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00029">29</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   29</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad417c5b58ff5e4fdbcabafe716d37303" name="ad417c5b58ff5e4fdbcabafe716d37303"></a>
@@ -165,7 +238,18 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html#l00037">37</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html">RodLightFilter.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                                                                              :</div>
+<div class="line"><span class="lineno">   38</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_filter.html#a05912b43bfc3e643be27b56c8962f647">LightFilter</a>(rdlLightFilter)</div>
+<div class="line"><span class="lineno">   39</span>{</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">if</span> (mRdlLightFilter) {</div>
+<div class="line"><span class="lineno">   41</span>        <a class="code hl_function" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a21d369b566ab36d3b1c98f4360c8b2de">initAttributeKeys</a>(mRdlLightFilter-&gt;getSceneClass());</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    ispc::RodLightFilter_init((ispc::RodLightFilter *)this-&gt;asIspc());</div>
+<div class="line"><span class="lineno">   45</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_filter_html_a05912b43bfc3e643be27b56c8962f647"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_filter.html#a05912b43bfc3e643be27b56c8962f647">moonray::pbr::LightFilter::LightFilter</a></div><div class="ttdeci">LightFilter()</div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8h_source.html#l00044">LightFilter.h:44</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_a21d369b566ab36d3b1c98f4360c8b2de"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a21d369b566ab36d3b1c98f4360c8b2de">moonray::pbr::RodLightFilter::initAttributeKeys</a></div><div class="ttdeci">void initAttributeKeys(const scene_rdl2::rdl2::SceneClass &amp;sc)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html#l00048">RodLightFilter.cc:48</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab743372e873e21629e2817dd36ac36e5" name="ab743372e873e21629e2817dd36ac36e5"></a>
@@ -192,7 +276,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00032">32</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   32</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -223,7 +308,52 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_light_filter.html#a44353901b3a982582611f624ab49ae8f">moonray::pbr::LightFilter</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html#l00324">324</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html">RodLightFilter.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  325</span>{</div>
+<div class="line"><span class="lineno">  326</span>    <span class="comment">// Approximate light and shading point as two spheres. We can compute the</span></div>
+<div class="line"><span class="lineno">  327</span>    <span class="comment">// minimum and maximum distances between any 2 points in those two spheres.</span></div>
+<div class="line"><span class="lineno">  328</span> </div>
+<div class="line"><span class="lineno">  329</span>    <span class="comment">// If the filter is less than full effect, it cannot</span></div>
+<div class="line"><span class="lineno">  330</span>    <span class="comment">// completely block light.</span></div>
+<div class="line"><span class="lineno">  331</span>    <span class="keywordflow">if</span> (mDensity &lt; 1.f) {</div>
+<div class="line"><span class="lineno">  332</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  333</span>    }</div>
+<div class="line"><span class="lineno">  334</span> </div>
+<div class="line"><span class="lineno">  335</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#afb73d0929f695f8bbcf5ff1c413121df">isOutsideInfluence</a>(data.shadingPointPosition,</div>
+<div class="line"><span class="lineno">  336</span>                           data.shadingPointRadius)) {</div>
+<div class="line"><span class="lineno">  337</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  338</span>    }</div>
+<div class="line"><span class="lineno">  339</span> </div>
+<div class="line"><span class="lineno">  340</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> localPoint = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#acb8e9d55bfb0434c572d640775d612e5">xformPointRender2Local</a>(data.shadingPointPosition,</div>
+<div class="line"><span class="lineno">  341</span>                                              data.time);</div>
+<div class="line"><span class="lineno">  342</span> </div>
+<div class="line"><span class="lineno">  343</span>    <span class="keywordtype">float</span> r = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a0b4664be934922460a278bc8673591e3">signedDistanceRoundBox</a>(localPoint);</div>
+<div class="line"><span class="lineno">  344</span> </div>
+<div class="line"><span class="lineno">  345</span>    <span class="keywordflow">if</span> (mInvert) {</div>
+<div class="line"><span class="lineno">  346</span>        <span class="comment">// Everything outside the volume is unlit</span></div>
+<div class="line"><span class="lineno">  347</span>        <span class="keywordflow">if</span> (isBlack(mColor)) {</div>
+<div class="line"><span class="lineno">  348</span>            <span class="keywordflow">if</span> (r &gt; (data.shadingPointRadius + mEdge)) {</div>
+<div class="line"><span class="lineno">  349</span>            <span class="comment">//if (sqrPart &gt; sqr(data.shadingPointRadius + mEdge - regPart))</span></div>
+<div class="line"><span class="lineno">  350</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  351</span>            }</div>
+<div class="line"><span class="lineno">  352</span>        }</div>
+<div class="line"><span class="lineno">  353</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  354</span>        <span class="comment">// The only place that is completely unlit</span></div>
+<div class="line"><span class="lineno">  355</span>        <span class="comment">// is within the volume and if mColor = 0</span></div>
+<div class="line"><span class="lineno">  356</span>        <span class="keywordflow">if</span> (isBlack(mColor)) {</div>
+<div class="line"><span class="lineno">  357</span>            <span class="keywordflow">if</span> (r &lt; -data.shadingPointRadius) {</div>
+<div class="line"><span class="lineno">  358</span>            <span class="comment">//if (sqrPart &lt; sqr(-data.shadingPointRadius - regPart))</span></div>
+<div class="line"><span class="lineno">  359</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  360</span>            }</div>
+<div class="line"><span class="lineno">  361</span>        }</div>
+<div class="line"><span class="lineno">  362</span>    }</div>
+<div class="line"><span class="lineno">  363</span> </div>
+<div class="line"><span class="lineno">  364</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  365</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_a0b4664be934922460a278bc8673591e3"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a0b4664be934922460a278bc8673591e3">moonray::pbr::RodLightFilter::signedDistanceRoundBox</a></div><div class="ttdeci">float signedDistanceRoundBox(const scene_rdl2::math::Vec3f &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html#l00279">RodLightFilter.cc:279</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_acb8e9d55bfb0434c572d640775d612e5"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#acb8e9d55bfb0434c572d640775d612e5">moonray::pbr::RodLightFilter::xformPointRender2Local</a></div><div class="ttdeci">scene_rdl2::math::Vec3f xformPointRender2Local(const scene_rdl2::math::Vec3f &amp;p, float time) const</div><div class="ttdef"><b>Definition:</b> <a href="_rod_light_filter_8h_source.html#l00054">RodLightFilter.h:54</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_afb73d0929f695f8bbcf5ff1c413121df"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#afb73d0929f695f8bbcf5ff1c413121df">moonray::pbr::RodLightFilter::isOutsideInfluence</a></div><div class="ttdeci">bool isOutsideInfluence(const scene_rdl2::math::Vec3f &amp;p, float rad) const</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html#l00243">RodLightFilter.cc:243</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3f64ae07a34b88cddfaf6e8f11f95b63" name="a3f64ae07a34b88cddfaf6e8f11f95b63"></a>
@@ -253,7 +383,35 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_light_filter.html#aab1774b386bee309f06bcb1bbf8f57a7">moonray::pbr::LightFilter</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html#l00368">368</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html">RodLightFilter.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  369</span>{</div>
+<div class="line"><span class="lineno">  370</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#afb73d0929f695f8bbcf5ff1c413121df">isOutsideInfluence</a>(data.shadingPointPosition, 0)) {</div>
+<div class="line"><span class="lineno">  371</span>        <span class="keywordflow">return</span> Color(1.f);</div>
+<div class="line"><span class="lineno">  372</span>    }</div>
+<div class="line"><span class="lineno">  373</span> </div>
+<div class="line"><span class="lineno">  374</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> localPoint = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#acb8e9d55bfb0434c572d640775d612e5">xformPointRender2Local</a>(data.shadingPointPosition, data.time);</div>
+<div class="line"><span class="lineno">  375</span> </div>
+<div class="line"><span class="lineno">  376</span>    <span class="keywordtype">float</span> r = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a0b4664be934922460a278bc8673591e3">signedDistanceRoundBox</a>(localPoint);</div>
+<div class="line"><span class="lineno">  377</span> </div>
+<div class="line"><span class="lineno">  378</span>    <span class="keywordtype">float</span> scale = 1.f;</div>
+<div class="line"><span class="lineno">  379</span>    <span class="keywordflow">if</span> (r &lt;= 0.f) {</div>
+<div class="line"><span class="lineno">  380</span>        scale = 0.f;</div>
+<div class="line"><span class="lineno">  381</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (r &lt; mEdge) {</div>
+<div class="line"><span class="lineno">  382</span>        r *= mEdgeInv;</div>
+<div class="line"><span class="lineno">  383</span>        scale = mRamp.eval1D(r);</div>
+<div class="line"><span class="lineno">  384</span>    }</div>
+<div class="line"><span class="lineno">  385</span> </div>
+<div class="line"><span class="lineno">  386</span>    <span class="keywordflow">if</span> (mInvert) {</div>
+<div class="line"><span class="lineno">  387</span>        scale = 1.f - scale;</div>
+<div class="line"><span class="lineno">  388</span>    }</div>
+<div class="line"><span class="lineno">  389</span> </div>
+<div class="line"><span class="lineno">  390</span>    <span class="comment">// apply density (lerp)</span></div>
+<div class="line"><span class="lineno">  391</span>    scale = scene_rdl2::math::lerp(1.f, scale, mDensity);</div>
+<div class="line"><span class="lineno">  392</span> </div>
+<div class="line"><span class="lineno">  393</span>    Color result = scene_rdl2::math::lerp(mColor, Color(1.f), scale);</div>
+<div class="line"><span class="lineno">  394</span> </div>
+<div class="line"><span class="lineno">  395</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  396</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aec590a1eba24bd6bbf00271177aa6c66" name="aec590a1eba24bd6bbf00271177aa6c66"></a>
@@ -301,7 +459,11 @@ Additional Inherited Members</h2></td></tr>
 <p>HUD validation and type casting. </p>
 
 <p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00040">40</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   40</span>                                                {</div>
+<div class="line"><span class="lineno">   41</span>        <a class="code hl_define" href="_light_filter_8hh.html#a4c4d6e02643db5ca4c05b5ddd186ff70">ROD_LIGHT_FILTER_VALIDATION</a>;</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+<div class="ttc" id="a_light_filter_8hh_html_a4c4d6e02643db5ca4c05b5ddd186ff70"><div class="ttname"><a href="_light_filter_8hh.html#a4c4d6e02643db5ca4c05b5ddd186ff70">ROD_LIGHT_FILTER_VALIDATION</a></div><div class="ttdeci">#define ROD_LIGHT_FILTER_VALIDATION</div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8hh_source.html#l00254">LightFilter.hh:254</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a21d369b566ab36d3b1c98f4360c8b2de" name="a21d369b566ab36d3b1c98f4360c8b2de"></a>
@@ -321,7 +483,233 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html#l00048">48</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html">RodLightFilter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>{</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#af35d317c9bb7952a6e5869f774136a77">sAttributeKeyInitialized</a>) {</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   52</span>    }</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>    <a class="code hl_define" href="moonray__static__check_8h.html#ae87f12215947fe7d7703094b9fa857a9">MOONRAY_START_NON_THREADSAFE_STATIC_WRITE</a></div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   56</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#af35d317c9bb7952a6e5869f774136a77">sAttributeKeyInitialized</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a35aae8dca29cf6f048ce3aa0b36998a8">sNodeXformKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::Mat4d&gt;(<span class="stringliteral">&quot;node_xform&quot;</span>);</div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a5f99740751ae60fbafe4e4949edd39e3">sWidthKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;width&quot;</span>);</div>
+<div class="line"><span class="lineno">   60</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a6a47ca3fb91c6291b489b81f7a37d4ba">sDepthKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;depth&quot;</span>);</div>
+<div class="line"><span class="lineno">   61</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a92c9c66adc6055a2686947076b0bf1cb">sHeightKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;height&quot;</span>);</div>
+<div class="line"><span class="lineno">   62</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a2369487c0acd9e4f2352c0b7b74aa842">sRadiusKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;radius&quot;</span>);</div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a3d4018f261e37b6fa7a1a1c77d4e94af">sEdgeKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;edge&quot;</span>);</div>
+<div class="line"><span class="lineno">   64</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a612ffeaed8588d63c5583f9fa45c9bcb">sColorKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::Rgb&gt;(<span class="stringliteral">&quot;color&quot;</span>);</div>
+<div class="line"><span class="lineno">   65</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#ad94c48f3eba773a1d04732bbd29c3495">sIntensityKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;intensity&quot;</span>);</div>
+<div class="line"><span class="lineno">   66</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a842630ebaf56beb178add0acd3c58f3c">sDensityKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::Float&gt;(<span class="stringliteral">&quot;density&quot;</span>);</div>
+<div class="line"><span class="lineno">   67</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a78bdd26dbdeefa1eeae26535193afe9a">sInvertKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::Bool&gt;(<span class="stringliteral">&quot;invert&quot;</span>);</div>
+<div class="line"><span class="lineno">   68</span> </div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a3b68135e64892ef86a219f76083e5cd8">sRampInKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::FloatVector&gt;(<span class="stringliteral">&quot;ramp_in_distances&quot;</span>);</div>
+<div class="line"><span class="lineno">   70</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#ad51559d7340b99d527e24fca0fd2effb">sRampOutKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::FloatVector&gt;(<span class="stringliteral">&quot;ramp_out_distances&quot;</span>);</div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a1c0703e88ee14fa1b859836c6d18c0b9">sRampInterpolationTypesKey</a> = sc.getAttributeKey&lt;scene_rdl2::rdl2::IntVector&gt;(<span class="stringliteral">&quot;ramp_interpolation_types&quot;</span>);</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>    <a class="code hl_define" href="moonray__static__check_8h.html#acd5373f1dc116d01f690f774c8d96015">MOONRAY_FINISH_NON_THREADSAFE_STATIC_WRITE</a></div>
+<div class="line"><span class="lineno">   74</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_a1c0703e88ee14fa1b859836c6d18c0b9"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a1c0703e88ee14fa1b859836c6d18c0b9">moonray::pbr::RodLightFilter::sRampInterpolationTypesKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::IntVector &gt; sRampInterpolationTypesKey</div><div class="ttdef"><b>Definition:</b> <a href="_rod_light_filter_8h_source.html#l00077">RodLightFilter.h:77</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_a2369487c0acd9e4f2352c0b7b74aa842"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a2369487c0acd9e4f2352c0b7b74aa842">moonray::pbr::RodLightFilter::sRadiusKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sRadiusKey</div><div class="ttdef"><b>Definition:</b> <a href="_rod_light_filter_8h_source.html#l00069">RodLightFilter.h:69</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_a35aae8dca29cf6f048ce3aa0b36998a8"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a35aae8dca29cf6f048ce3aa0b36998a8">moonray::pbr::RodLightFilter::sNodeXformKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Mat4d &gt; sNodeXformKey</div><div class="ttdef"><b>Definition:</b> <a href="_rod_light_filter_8h_source.html#l00065">RodLightFilter.h:65</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_a3b68135e64892ef86a219f76083e5cd8"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a3b68135e64892ef86a219f76083e5cd8">moonray::pbr::RodLightFilter::sRampInKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::FloatVector &gt; sRampInKey</div><div class="ttdef"><b>Definition:</b> <a href="_rod_light_filter_8h_source.html#l00075">RodLightFilter.h:75</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_a3d4018f261e37b6fa7a1a1c77d4e94af"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a3d4018f261e37b6fa7a1a1c77d4e94af">moonray::pbr::RodLightFilter::sEdgeKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sEdgeKey</div><div class="ttdef"><b>Definition:</b> <a href="_rod_light_filter_8h_source.html#l00070">RodLightFilter.h:70</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_a5f99740751ae60fbafe4e4949edd39e3"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a5f99740751ae60fbafe4e4949edd39e3">moonray::pbr::RodLightFilter::sWidthKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sWidthKey</div><div class="ttdef"><b>Definition:</b> <a href="_rod_light_filter_8h_source.html#l00066">RodLightFilter.h:66</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_a612ffeaed8588d63c5583f9fa45c9bcb"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a612ffeaed8588d63c5583f9fa45c9bcb">moonray::pbr::RodLightFilter::sColorKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Rgb &gt; sColorKey</div><div class="ttdef"><b>Definition:</b> <a href="_rod_light_filter_8h_source.html#l00071">RodLightFilter.h:71</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_a6a47ca3fb91c6291b489b81f7a37d4ba"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a6a47ca3fb91c6291b489b81f7a37d4ba">moonray::pbr::RodLightFilter::sDepthKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sDepthKey</div><div class="ttdef"><b>Definition:</b> <a href="_rod_light_filter_8h_source.html#l00067">RodLightFilter.h:67</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_a78bdd26dbdeefa1eeae26535193afe9a"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a78bdd26dbdeefa1eeae26535193afe9a">moonray::pbr::RodLightFilter::sInvertKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Bool &gt; sInvertKey</div><div class="ttdef"><b>Definition:</b> <a href="_rod_light_filter_8h_source.html#l00074">RodLightFilter.h:74</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_a842630ebaf56beb178add0acd3c58f3c"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a842630ebaf56beb178add0acd3c58f3c">moonray::pbr::RodLightFilter::sDensityKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sDensityKey</div><div class="ttdef"><b>Definition:</b> <a href="_rod_light_filter_8h_source.html#l00073">RodLightFilter.h:73</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_a92c9c66adc6055a2686947076b0bf1cb"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a92c9c66adc6055a2686947076b0bf1cb">moonray::pbr::RodLightFilter::sHeightKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sHeightKey</div><div class="ttdef"><b>Definition:</b> <a href="_rod_light_filter_8h_source.html#l00068">RodLightFilter.h:68</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_ad51559d7340b99d527e24fca0fd2effb"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#ad51559d7340b99d527e24fca0fd2effb">moonray::pbr::RodLightFilter::sRampOutKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::FloatVector &gt; sRampOutKey</div><div class="ttdef"><b>Definition:</b> <a href="_rod_light_filter_8h_source.html#l00076">RodLightFilter.h:76</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_ad94c48f3eba773a1d04732bbd29c3495"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#ad94c48f3eba773a1d04732bbd29c3495">moonray::pbr::RodLightFilter::sIntensityKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sIntensityKey</div><div class="ttdef"><b>Definition:</b> <a href="_rod_light_filter_8h_source.html#l00072">RodLightFilter.h:72</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_af35d317c9bb7952a6e5869f774136a77"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#af35d317c9bb7952a6e5869f774136a77">moonray::pbr::RodLightFilter::sAttributeKeyInitialized</a></div><div class="ttdeci">static bool sAttributeKeyInitialized</div><div class="ttdef"><b>Definition:</b> <a href="_rod_light_filter_8h_source.html#l00064">RodLightFilter.h:64</a></div></div>
+<div class="ttc" id="amoonray__static__check_8h_html_acd5373f1dc116d01f690f774c8d96015"><div class="ttname"><a href="moonray__static__check_8h.html#acd5373f1dc116d01f690f774c8d96015">MOONRAY_FINISH_NON_THREADSAFE_STATIC_WRITE</a></div><div class="ttdeci">#define MOONRAY_FINISH_NON_THREADSAFE_STATIC_WRITE</div><div class="ttdef"><b>Definition:</b> <a href="moonray__static__check_8h_source.html#l00106">moonray_static_check.h:106</a></div></div>
+<div class="ttc" id="amoonray__static__check_8h_html_ae87f12215947fe7d7703094b9fa857a9"><div class="ttname"><a href="moonray__static__check_8h.html#ae87f12215947fe7d7703094b9fa857a9">MOONRAY_START_NON_THREADSAFE_STATIC_WRITE</a></div><div class="ttdeci">#define MOONRAY_START_NON_THREADSAFE_STATIC_WRITE</div><div class="ttdef"><b>Definition:</b> <a href="moonray__static__check_8h_source.html#l00105">moonray_static_check.h:105</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac83c6d3292b5742ec999b26e362950d5" name="ac83c6d3292b5742ec999b26e362950d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83c6d3292b5742ec999b26e362950d5">&#9670;&#160;</a></span>isMb()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">finline bool moonray::pbr::RodLightFilter::isMb </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00051">51</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>{ <span class="keywordflow">return</span> mMb; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afb73d0929f695f8bbcf5ff1c413121df" name="afb73d0929f695f8bbcf5ff1c413121df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb73d0929f695f8bbcf5ff1c413121df">&#9670;&#160;</a></span>isOutsideInfluence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::pbr::RodLightFilter::isOutsideInfluence </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Vec3f &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rad</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html#l00243">243</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html">RodLightFilter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  244</span>{</div>
+<div class="line"><span class="lineno">  245</span>    <span class="keywordflow">if</span> (mMb) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  246</span> </div>
+<div class="line"><span class="lineno">  247</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> localP = abs((p - mPosition[0]) * mRender2LocalRotAndScale);</div>
+<div class="line"><span class="lineno">  248</span>    <span class="keywordtype">float</span> buf = mRadiusEdgeSum + rad;</div>
+<div class="line"><span class="lineno">  249</span> </div>
+<div class="line"><span class="lineno">  250</span>    <span class="keywordflow">if</span> (mInvert) {</div>
+<div class="line"><span class="lineno">  251</span>        buf = -buf;</div>
+<div class="line"><span class="lineno">  252</span>    }</div>
+<div class="line"><span class="lineno">  253</span> </div>
+<div class="line"><span class="lineno">  254</span>    <span class="keywordtype">bool</span> out = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  255</span>    <span class="keywordflow">if</span> (localP.x &gt; mBoxCorner.x + buf ||</div>
+<div class="line"><span class="lineno">  256</span>        localP.y &gt; mBoxCorner.y + buf ||</div>
+<div class="line"><span class="lineno">  257</span>        localP.z &gt; mBoxCorner.z + buf) {</div>
+<div class="line"><span class="lineno">  258</span>        out = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  259</span>    }</div>
+<div class="line"><span class="lineno">  260</span> </div>
+<div class="line"><span class="lineno">  261</span>    <span class="keywordflow">if</span> (mInvert) {</div>
+<div class="line"><span class="lineno">  262</span>        out = !out;</div>
+<div class="line"><span class="lineno">  263</span>    }</div>
+<div class="line"><span class="lineno">  264</span> </div>
+<div class="line"><span class="lineno">  265</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><span class="lineno">  266</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0b4664be934922460a278bc8673591e3" name="a0b4664be934922460a278bc8673591e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b4664be934922460a278bc8673591e3">&#9670;&#160;</a></span>signedDistanceRoundBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::pbr::RodLightFilter::signedDistanceRoundBox </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Vec3f &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html#l00279">279</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html">RodLightFilter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  280</span>{</div>
+<div class="line"><span class="lineno">  281</span>  <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> q = abs(p) - mBoxCorner;</div>
+<div class="line"><span class="lineno">  282</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a>(max(q, <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(0.f))) + min(<a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_driver_snapshot_delta_8cc_03.html#a9d9f3dd80efdc0d7022eee2775f885ae">reduce_max</a>(q), 0.f) - mRadius;</div>
+<div class="line"><span class="lineno">  283</span>}</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a25c3c0d490b4f6a95f0595760efbc351"><div class="ttname"><a href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a></div><div class="ttdeci">__host__ __device__ float length(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00159">GPUMath.h:159</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_driver_snapshot_delta_8cc_03_html_a9d9f3dd80efdc0d7022eee2775f885ae"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_driver_snapshot_delta_8cc_03.html#a9d9f3dd80efdc0d7022eee2775f885ae">moonray::rndr::anonymous_namespace{RenderDriverSnapshotDelta.cc}::reduce_max</a></div><div class="ttdeci">float reduce_max(float f)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_snapshot_delta_8cc_source.html#l00155">RenderDriverSnapshotDelta.cc:155</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a55af4fa95f651cfd96a890766bda8faf" name="a55af4fa95f651cfd96a890766bda8faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55af4fa95f651cfd96a890766bda8faf">&#9670;&#160;</a></span>slerpPointRender2Local()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vec3f moonray::pbr::RodLightFilter::slerpPointRender2Local </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Vec3f &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html#l00197">197</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html">RodLightFilter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  198</span>{</div>
+<div class="line"><span class="lineno">  199</span>    <span class="comment">// inverse of Local2Render is (p + t) * r * s</span></div>
+<div class="line"><span class="lineno">  200</span>    <span class="comment">// where t = -position, r = render2localRot.l, s = render2localScale</span></div>
+<div class="line"><span class="lineno">  201</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> t = (mMb &amp; <a class="code hl_define" href="_light_filter_8hh.html#af45d84d947133b71ee8028f4f1661ed0">LIGHTFILTER_MB_TRANSLATION</a>) ?</div>
+<div class="line"><span class="lineno">  202</span>        -1.f * <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(mPosition[0], mPosition[1], time) :</div>
+<div class="line"><span class="lineno">  203</span>        -1.f * mPosition[0];</div>
+<div class="line"><span class="lineno">  204</span>    <span class="keyword">const</span> Mat3f r = (mMb &amp; <a class="code hl_define" href="_light_filter_8hh.html#af6de9853372556c33281de90ca029985">LIGHTFILTER_MB_ROTATION</a>)?</div>
+<div class="line"><span class="lineno">  205</span>        <span class="comment">// transpose is inverse</span></div>
+<div class="line"><span class="lineno">  206</span>        Mat3f(slerp(mOrientation[0], mOrientation[1], time)).transposed() :</div>
+<div class="line"><span class="lineno">  207</span>        mRender2LocalRot0.l;</div>
+<div class="line"><span class="lineno">  208</span>    <span class="keyword">const</span> Mat3f s = (mMb &amp; <a class="code hl_define" href="_light_filter_8hh.html#aeb1f158ff104ccf9d158578711dfa1e0">LIGHTFILTER_MB_SCALE</a>) ?</div>
+<div class="line"><span class="lineno">  209</span>        <span class="comment">// The inverse() call below, while unfortunate, is necessary.</span></div>
+<div class="line"><span class="lineno">  210</span>        <span class="comment">// Reversing the order of operations (and lerping precomputed inverses)</span></div>
+<div class="line"><span class="lineno">  211</span>        <span class="comment">// does not look correct.</span></div>
+<div class="line"><span class="lineno">  212</span>        <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(mLocal2RenderScale[0], mLocal2RenderScale[1], time).inverse() :</div>
+<div class="line"><span class="lineno">  213</span>        mRender2LocalScale0;</div>
+<div class="line"><span class="lineno">  214</span> </div>
+<div class="line"><span class="lineno">  215</span>    <span class="keywordflow">return</span> ((p + t) * r) * s;</div>
+<div class="line"><span class="lineno">  216</span>}</div>
+<div class="ttc" id="a_light_filter_8hh_html_aeb1f158ff104ccf9d158578711dfa1e0"><div class="ttname"><a href="_light_filter_8hh.html#aeb1f158ff104ccf9d158578711dfa1e0">LIGHTFILTER_MB_SCALE</a></div><div class="ttdeci">#define LIGHTFILTER_MB_SCALE</div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8hh_source.html#l00021">LightFilter.hh:21</a></div></div>
+<div class="ttc" id="a_light_filter_8hh_html_af45d84d947133b71ee8028f4f1661ed0"><div class="ttname"><a href="_light_filter_8hh.html#af45d84d947133b71ee8028f4f1661ed0">LIGHTFILTER_MB_TRANSLATION</a></div><div class="ttdeci">#define LIGHTFILTER_MB_TRANSLATION</div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8hh_source.html#l00019">LightFilter.hh:19</a></div></div>
+<div class="ttc" id="a_light_filter_8hh_html_af6de9853372556c33281de90ca029985"><div class="ttname"><a href="_light_filter_8hh.html#af6de9853372556c33281de90ca029985">LIGHTFILTER_MB_ROTATION</a></div><div class="ttdeci">#define LIGHTFILTER_MB_ROTATION</div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8hh_source.html#l00020">LightFilter.hh:20</a></div></div>
+<div class="ttc" id="acmd_2point__generation__cmd_2util_8h_html_a29663946660b920710cf69b9bbcf8a7d"><div class="ttname"><a href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a></div><div class="ttdeci">float lerp(float u, float min, float max)</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2point__generation__cmd_2util_8h_source.html#l00044">util.h:44</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab6fcf2721ae967bcfab9857f87d535a7" name="ab6fcf2721ae967bcfab9857f87d535a7"></a>
@@ -361,6 +749,604 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_light_filter.html#a723b9abe2834163fa639744d7cf39f8f">moonray::pbr::LightFilter</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html#l00145">145</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html">RodLightFilter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  147</span>{</div>
+<div class="line"><span class="lineno">  148</span>    <span class="keywordflow">if</span> (!mRdlLightFilter) {</div>
+<div class="line"><span class="lineno">  149</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  150</span>    }</div>
+<div class="line"><span class="lineno">  151</span> </div>
+<div class="line"><span class="lineno">  152</span>    <span class="keyword">const</span> Mat4d l2w0 = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Mat4d&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a35aae8dca29cf6f048ce3aa0b36998a8">sNodeXformKey</a>, 0.0f);</div>
+<div class="line"><span class="lineno">  153</span>    <span class="keyword">const</span> Mat4d l2w1 = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Mat4d&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a35aae8dca29cf6f048ce3aa0b36998a8">sNodeXformKey</a>, 1.0f);</div>
+<div class="line"><span class="lineno">  154</span> </div>
+<div class="line"><span class="lineno">  155</span>    <span class="keyword">const</span> Mat4f local2Render0 = toFloat(l2w0 * world2render);</div>
+<div class="line"><span class="lineno">  156</span>    <span class="keyword">const</span> Mat4f local2Render1 = toFloat(l2w1 * world2render);</div>
+<div class="line"><span class="lineno">  157</span> </div>
+<div class="line"><span class="lineno">  158</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a80d9641bf08bbc1533af8b641917ef7d">updateParamAndTransforms</a>(local2Render0, local2Render1)) {</div>
+<div class="line"><span class="lineno">  159</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  160</span>    }</div>
+<div class="line"><span class="lineno">  161</span> </div>
+<div class="line"><span class="lineno">  162</span>    mWidth = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a5f99740751ae60fbafe4e4949edd39e3">sWidthKey</a>);</div>
+<div class="line"><span class="lineno">  163</span>    mDepth = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a6a47ca3fb91c6291b489b81f7a37d4ba">sDepthKey</a>);</div>
+<div class="line"><span class="lineno">  164</span>    mHeight = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a92c9c66adc6055a2686947076b0bf1cb">sHeightKey</a>);</div>
+<div class="line"><span class="lineno">  165</span>    mRadius = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a2369487c0acd9e4f2352c0b7b74aa842">sRadiusKey</a>);</div>
+<div class="line"><span class="lineno">  166</span>    mEdge = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a3d4018f261e37b6fa7a1a1c77d4e94af">sEdgeKey</a>);</div>
+<div class="line"><span class="lineno">  167</span>    mEdgeInv = mEdge ? 1.f/mEdge : 1.f;</div>
+<div class="line"><span class="lineno">  168</span>    mColor = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Rgb&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a612ffeaed8588d63c5583f9fa45c9bcb">sColorKey</a>);</div>
+<div class="line"><span class="lineno">  169</span>    mIntensity = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#ad94c48f3eba773a1d04732bbd29c3495">sIntensityKey</a>);</div>
+<div class="line"><span class="lineno">  170</span>    mColor *= mIntensity;</div>
+<div class="line"><span class="lineno">  171</span>    mDensity = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a842630ebaf56beb178add0acd3c58f3c">sDensityKey</a>);</div>
+<div class="line"><span class="lineno">  172</span>    mInvert = mRdlLightFilter-&gt;get&lt;scene_rdl2::rdl2::Bool&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a78bdd26dbdeefa1eeae26535193afe9a">sInvertKey</a>);</div>
+<div class="line"><span class="lineno">  173</span>    mBoxCorner = abs(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(mWidth, mHeight, mDepth)*0.5f);</div>
+<div class="line"><span class="lineno">  174</span>    mRender2LocalRotAndScale = mRender2LocalRot0.l * mRender2LocalScale0;</div>
+<div class="line"><span class="lineno">  175</span>    mRadiusEdgeSum = mRadius+mEdge;</div>
+<div class="line"><span class="lineno">  176</span> </div>
+<div class="line"><span class="lineno">  177</span>    std::vector&lt;float&gt; inDistancesVec = mRdlLightFilter-&gt;get&lt;rdl2::FloatVector&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a3b68135e64892ef86a219f76083e5cd8">sRampInKey</a>);</div>
+<div class="line"><span class="lineno">  178</span>    std::vector&lt;float&gt; outDistancesVec = mRdlLightFilter-&gt;get&lt;rdl2::FloatVector&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#ad51559d7340b99d527e24fca0fd2effb">sRampOutKey</a>);</div>
+<div class="line"><span class="lineno">  179</span>    std::vector&lt;int&gt; interpolationTypesVec = mRdlLightFilter-&gt;get&lt;rdl2::IntVector&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a1c0703e88ee14fa1b859836c6d18c0b9">sRampInterpolationTypesKey</a>);</div>
+<div class="line"><span class="lineno">  180</span> </div>
+<div class="line"><span class="lineno">  181</span>    <span class="keywordflow">if</span> (inDistancesVec.size() != outDistancesVec.size() || inDistancesVec.size() != interpolationTypesVec.size()) {</div>
+<div class="line"><span class="lineno">  182</span>        mRdlLightFilter-&gt;error(</div>
+<div class="line"><span class="lineno">  183</span>            <span class="stringliteral">&quot;Rod ramp light filter ramp_in_distances, ramp_out_distances and ramp_interpolation_types are different sizes, using defaults&quot;</span>);</div>
+<div class="line"><span class="lineno">  184</span>        outDistancesVec = {0.f, 1.f};</div>
+<div class="line"><span class="lineno">  185</span>        inDistancesVec = {0.f, 1.f};</div>
+<div class="line"><span class="lineno">  186</span>        interpolationTypesVec = {ispc::RAMP_INTERPOLATOR_MODE_MONOTONECUBIC, ispc::RAMP_INTERPOLATOR_MODE_MONOTONECUBIC};</div>
+<div class="line"><span class="lineno">  187</span>    }</div>
+<div class="line"><span class="lineno">  188</span> </div>
+<div class="line"><span class="lineno">  189</span>    mRamp.init(</div>
+<div class="line"><span class="lineno">  190</span>        inDistancesVec.size(),</div>
+<div class="line"><span class="lineno">  191</span>        inDistancesVec.data(),</div>
+<div class="line"><span class="lineno">  192</span>        outDistancesVec.data(),</div>
+<div class="line"><span class="lineno">  193</span>        <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>ispc::RampInterpolatorMode*<span class="keyword">&gt;</span>(interpolationTypesVec.data()));</div>
+<div class="line"><span class="lineno">  194</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_a80d9641bf08bbc1533af8b641917ef7d"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a80d9641bf08bbc1533af8b641917ef7d">moonray::pbr::RodLightFilter::updateParamAndTransforms</a></div><div class="ttdeci">bool updateParamAndTransforms(const scene_rdl2::math::Mat4f &amp;local2Render0, const scene_rdl2::math::Mat4f &amp;local2Render1)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html#l00117">RodLightFilter.cc:117</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a80d9641bf08bbc1533af8b641917ef7d" name="a80d9641bf08bbc1533af8b641917ef7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80d9641bf08bbc1533af8b641917ef7d">&#9670;&#160;</a></span>updateParamAndTransforms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::pbr::RodLightFilter::updateParamAndTransforms </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Mat4f &amp;&#160;</td>
+          <td class="paramname"><em>local2Render0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const scene_rdl2::math::Mat4f &amp;&#160;</td>
+          <td class="paramname"><em>local2Render1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html#l00117">117</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html">RodLightFilter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  119</span>{</div>
+<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#ac2d1c30a3d37176483818b0ebbb1ecfe">updateTransforms</a>(local2Render0, <span class="comment">/* ti = */</span> 0)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  121</span> </div>
+<div class="line"><span class="lineno">  122</span>    <span class="comment">// setup mMb</span></div>
+<div class="line"><span class="lineno">  123</span>    mMb = <a class="code hl_define" href="_light_filter_8hh.html#a9f48420bae46ef3574d2dee981a14a69">LIGHTFILTER_MB_NONE</a>;</div>
+<div class="line"><span class="lineno">  124</span>    <span class="keyword">const</span> scene_rdl2::rdl2::SceneVariables &amp;vars =</div>
+<div class="line"><span class="lineno">  125</span>        mRdlLightFilter-&gt;getSceneClass().getSceneContext()-&gt;getSceneVariables();</div>
+<div class="line"><span class="lineno">  126</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> mb = vars.get(scene_rdl2::rdl2::SceneVariables::sEnableMotionBlur) &amp;&amp;</div>
+<div class="line"><span class="lineno">  127</span>        !<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(local2Render0, local2Render1);</div>
+<div class="line"><span class="lineno">  128</span> </div>
+<div class="line"><span class="lineno">  129</span>    <span class="keywordflow">if</span> (mb) {</div>
+<div class="line"><span class="lineno">  130</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#ac2d1c30a3d37176483818b0ebbb1ecfe">updateTransforms</a>(local2Render1, <span class="comment">/* ti = */</span> 1)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  131</span> </div>
+<div class="line"><span class="lineno">  132</span>        <span class="comment">// set specific mb bits</span></div>
+<div class="line"><span class="lineno">  133</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(mPosition[0], mPosition[1]))</div>
+<div class="line"><span class="lineno">  134</span>            mMb |= <a class="code hl_define" href="_light_filter_8hh.html#af45d84d947133b71ee8028f4f1661ed0">LIGHTFILTER_MB_TRANSLATION</a>;</div>
+<div class="line"><span class="lineno">  135</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(mOrientation[0], mOrientation[1]))</div>
+<div class="line"><span class="lineno">  136</span>            mMb |= <a class="code hl_define" href="_light_filter_8hh.html#af6de9853372556c33281de90ca029985">LIGHTFILTER_MB_ROTATION</a>;</div>
+<div class="line"><span class="lineno">  137</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(mLocal2RenderScale[0], mLocal2RenderScale[1]))</div>
+<div class="line"><span class="lineno">  138</span>            mMb |= <a class="code hl_define" href="_light_filter_8hh.html#aeb1f158ff104ccf9d158578711dfa1e0">LIGHTFILTER_MB_SCALE</a>;</div>
+<div class="line"><span class="lineno">  139</span>    }</div>
+<div class="line"><span class="lineno">  140</span> </div>
+<div class="line"><span class="lineno">  141</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  142</span>}</div>
+<div class="ttc" id="a_light_filter_8hh_html_a9f48420bae46ef3574d2dee981a14a69"><div class="ttname"><a href="_light_filter_8hh.html#a9f48420bae46ef3574d2dee981a14a69">LIGHTFILTER_MB_NONE</a></div><div class="ttdeci">#define LIGHTFILTER_MB_NONE</div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8hh_source.html#l00018">LightFilter.hh:18</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_ac2d1c30a3d37176483818b0ebbb1ecfe"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#ac2d1c30a3d37176483818b0ebbb1ecfe">moonray::pbr::RodLightFilter::updateTransforms</a></div><div class="ttdeci">bool updateTransforms(const scene_rdl2::math::Mat4f &amp;local2Render, int ti)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html#l00077">RodLightFilter.cc:77</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1unittest_html_aca9de8dd11f6a3cf125acd13c8b3b636"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">moonray::geom::unittest::isEqual</a></div><div class="ttdeci">__forceinline bool isEqual(const scene_rdl2::math::Color4 &amp;lhs, const scene_rdl2::math::Color4 &amp;rhs)</div><div class="ttdef"><b>Definition:</b> <a href="_test_prim_utils_8h_source.html#l00125">TestPrimUtils.h:125</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac2d1c30a3d37176483818b0ebbb1ecfe" name="ac2d1c30a3d37176483818b0ebbb1ecfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2d1c30a3d37176483818b0ebbb1ecfe">&#9670;&#160;</a></span>updateTransforms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::pbr::RodLightFilter::updateTransforms </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Mat4f &amp;&#160;</td>
+          <td class="paramname"><em>local2Render</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ti</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html#l00077">77</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html">RodLightFilter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>{</div>
+<div class="line"><span class="lineno">   79</span>    <span class="comment">// update transforms at time index (ti)</span></div>
+<div class="line"><span class="lineno">   80</span>    <span class="comment">// ti == 0 is at normalized rayTime = 0.f</span></div>
+<div class="line"><span class="lineno">   81</span>    <span class="comment">// ti == 1 is at normalized rayTime = 1.f;</span></div>
+<div class="line"><span class="lineno">   82</span>    MNRY_ASSERT(mRdlLightFilter);</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>    Quaternion3f rot;</div>
+<div class="line"><span class="lineno">   86</span>    Mat3f scale;</div>
+<div class="line"><span class="lineno">   87</span>    Xform3f local2RenderXform = xform&lt;Xform3f&gt;(local2Render);</div>
+<div class="line"><span class="lineno">   88</span>    decompose(local2RenderXform.l, scale, rot);</div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   90</span>    mPosition[ti] = asVec3(local2Render.row3());</div>
+<div class="line"><span class="lineno">   91</span> </div>
+<div class="line"><span class="lineno">   92</span>    mLocal2RenderScale[ti] = scale;</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    <span class="comment">// Single shutter-time items (for when there is no MB)</span></div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">if</span> (ti == 0) {</div>
+<div class="line"><span class="lineno">   96</span>        mRender2Local0 = local2RenderXform.inverse();</div>
+<div class="line"><span class="lineno">   97</span>        mRender2LocalRot0 = Mat3f(rot).transposed();</div>
+<div class="line"><span class="lineno">   98</span>        mRender2LocalScale0 = scale.inverse();</div>
+<div class="line"><span class="lineno">   99</span>    }</div>
+<div class="line"><span class="lineno">  100</span> </div>
+<div class="line"><span class="lineno">  101</span>    Xform3f local2RenderRot = Xform3f(Mat3f(rot), zero);</div>
+<div class="line"><span class="lineno">  102</span>    mOrientation[ti] = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(</div>
+<div class="line"><span class="lineno">  103</span>        scene_rdl2::math::Quaternion3f(local2RenderRot.row0(),</div>
+<div class="line"><span class="lineno">  104</span>                           local2RenderRot.row1(),</div>
+<div class="line"><span class="lineno">  105</span>                           local2RenderRot.row2()));</div>
+<div class="line"><span class="lineno">  106</span> </div>
+<div class="line"><span class="lineno">  107</span>    <span class="comment">// After setting the second quaternion (ti==1), check if the angle from the</span></div>
+<div class="line"><span class="lineno">  108</span>    <span class="comment">// first quaternion is negative and flip accordingly.</span></div>
+<div class="line"><span class="lineno">  109</span>    <span class="keywordflow">if</span> (ti==1 &amp;&amp; <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(mOrientation[0], mOrientation[1]) &lt; 0) {</div>
+<div class="line"><span class="lineno">  110</span>        mOrientation[1] *= -1.f;</div>
+<div class="line"><span class="lineno">  111</span>    }</div>
+<div class="line"><span class="lineno">  112</span> </div>
+<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  114</span>}</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a26b3f6b7b842544058f3766b0da79257"><div class="ttname"><a href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a></div><div class="ttdeci">__host__ __device__ float3 normalize(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00165">GPUMath.h:165</a></div></div>
+<div class="ttc" id="a_n_point_8h_html_a16747d68c1e06270b0ed335d631b66f3"><div class="ttname"><a href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a></div><div class="ttdeci">float dot(const NPoint&lt; D &gt; &amp;a, const NPoint&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00271">NPoint.h:271</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acb8e9d55bfb0434c572d640775d612e5" name="acb8e9d55bfb0434c572d640775d612e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb8e9d55bfb0434c572d640775d612e5">&#9670;&#160;</a></span>xformPointRender2Local()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Vec3f moonray::pbr::RodLightFilter::xformPointRender2Local </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Vec3f &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00054">54</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>    {</div>
+<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#ac83c6d3292b5742ec999b26e362950d5">isMb</a>()) <span class="keywordflow">return</span> <a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a472053acc157ccb20c9d68bf2fdaa824">transformPoint</a>(mRender2Local0, p);</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a55af4fa95f651cfd96a890766bda8faf">slerpPointRender2Local</a>(p, time);</div>
+<div class="line"><span class="lineno">   59</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_a55af4fa95f651cfd96a890766bda8faf"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#a55af4fa95f651cfd96a890766bda8faf">moonray::pbr::RodLightFilter::slerpPointRender2Local</a></div><div class="ttdeci">scene_rdl2::math::Vec3f slerpPointRender2Local(const scene_rdl2::math::Vec3f &amp;p, float time) const</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html#l00197">RodLightFilter.cc:197</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_rod_light_filter_html_ac83c6d3292b5742ec999b26e362950d5"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_rod_light_filter.html#ac83c6d3292b5742ec999b26e362950d5">moonray::pbr::RodLightFilter::isMb</a></div><div class="ttdeci">finline bool isMb() const</div><div class="ttdef"><b>Definition:</b> <a href="_rod_light_filter_8h_source.html#l00051">RodLightFilter.h:51</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a472053acc157ccb20c9d68bf2fdaa824"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a472053acc157ccb20c9d68bf2fdaa824">moonray::geom::internal::transformPoint</a></div><div class="ttdeci">Vec3f transformPoint(const scene_rdl2::math::Mat4f mat[2], const scene_rdl2::math::Vec3f &amp;point, const float time, bool isMotionBlurOn)</div><div class="ttdef"><b>Definition:</b> <a href="geom_2prim_2_util_8cc_source.html#l00231">Util.cc:231</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad82435e288b68f1053e7c7a3ead5f8d6" name="ad82435e288b68f1053e7c7a3ead5f8d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad82435e288b68f1053e7c7a3ead5f8d6">&#9670;&#160;</a></span>ROD_LIGHT_FILTER_MEMBERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moonray::pbr::RodLightFilter::ROD_LIGHT_FILTER_MEMBERS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00046">46</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="af35d317c9bb7952a6e5869f774136a77" name="af35d317c9bb7952a6e5869f774136a77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af35d317c9bb7952a6e5869f774136a77">&#9670;&#160;</a></span>sAttributeKeyInitialized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::pbr::RodLightFilter::sAttributeKeyInitialized</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00064">64</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a612ffeaed8588d63c5583f9fa45c9bcb" name="a612ffeaed8588d63c5583f9fa45c9bcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a612ffeaed8588d63c5583f9fa45c9bcb">&#9670;&#160;</a></span>sColorKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Rgb &gt; moonray::pbr::RodLightFilter::sColorKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00071">71</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a842630ebaf56beb178add0acd3c58f3c" name="a842630ebaf56beb178add0acd3c58f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a842630ebaf56beb178add0acd3c58f3c">&#9670;&#160;</a></span>sDensityKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; moonray::pbr::RodLightFilter::sDensityKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00073">73</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a6a47ca3fb91c6291b489b81f7a37d4ba" name="a6a47ca3fb91c6291b489b81f7a37d4ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a47ca3fb91c6291b489b81f7a37d4ba">&#9670;&#160;</a></span>sDepthKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; moonray::pbr::RodLightFilter::sDepthKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00067">67</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a3d4018f261e37b6fa7a1a1c77d4e94af" name="a3d4018f261e37b6fa7a1a1c77d4e94af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d4018f261e37b6fa7a1a1c77d4e94af">&#9670;&#160;</a></span>sEdgeKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; moonray::pbr::RodLightFilter::sEdgeKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00070">70</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a92c9c66adc6055a2686947076b0bf1cb" name="a92c9c66adc6055a2686947076b0bf1cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92c9c66adc6055a2686947076b0bf1cb">&#9670;&#160;</a></span>sHeightKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; moonray::pbr::RodLightFilter::sHeightKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00068">68</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="ad94c48f3eba773a1d04732bbd29c3495" name="ad94c48f3eba773a1d04732bbd29c3495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad94c48f3eba773a1d04732bbd29c3495">&#9670;&#160;</a></span>sIntensityKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; moonray::pbr::RodLightFilter::sIntensityKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00072">72</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a78bdd26dbdeefa1eeae26535193afe9a" name="a78bdd26dbdeefa1eeae26535193afe9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78bdd26dbdeefa1eeae26535193afe9a">&#9670;&#160;</a></span>sInvertKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Bool &gt; moonray::pbr::RodLightFilter::sInvertKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00074">74</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a35aae8dca29cf6f048ce3aa0b36998a8" name="a35aae8dca29cf6f048ce3aa0b36998a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35aae8dca29cf6f048ce3aa0b36998a8">&#9670;&#160;</a></span>sNodeXformKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Mat4d &gt; moonray::pbr::RodLightFilter::sNodeXformKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00065">65</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a2369487c0acd9e4f2352c0b7b74aa842" name="a2369487c0acd9e4f2352c0b7b74aa842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2369487c0acd9e4f2352c0b7b74aa842">&#9670;&#160;</a></span>sRadiusKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; moonray::pbr::RodLightFilter::sRadiusKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00069">69</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a3b68135e64892ef86a219f76083e5cd8" name="a3b68135e64892ef86a219f76083e5cd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b68135e64892ef86a219f76083e5cd8">&#9670;&#160;</a></span>sRampInKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; rdl2::FloatVector &gt; moonray::pbr::RodLightFilter::sRampInKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00075">75</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a1c0703e88ee14fa1b859836c6d18c0b9" name="a1c0703e88ee14fa1b859836c6d18c0b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c0703e88ee14fa1b859836c6d18c0b9">&#9670;&#160;</a></span>sRampInterpolationTypesKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; rdl2::IntVector &gt; moonray::pbr::RodLightFilter::sRampInterpolationTypesKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00077">77</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="ad51559d7340b99d527e24fca0fd2effb" name="ad51559d7340b99d527e24fca0fd2effb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad51559d7340b99d527e24fca0fd2effb">&#9670;&#160;</a></span>sRampOutKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; rdl2::FloatVector &gt; moonray::pbr::RodLightFilter::sRampOutKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00076">76</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a5f99740751ae60fbafe4e4949edd39e3" name="a5f99740751ae60fbafe4e4949edd39e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f99740751ae60fbafe4e4949edd39e3">&#9670;&#160;</a></span>sWidthKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; moonray::pbr::RodLightFilter::sWidthKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rod_light_filter_8h_source.html#l00066">66</a> of file <a class="el" href="_rod_light_filter_8h_source.html">RodLightFilter.h</a>.</p>
 
 </div>
 </div>
@@ -369,9 +1355,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/lightfilter/<a class="el" href="lib_2rendering_2pbr_2lightfilter_2_rod_light_filter_8cc_source.html">RodLightFilter.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_rod_light_filter.html">RodLightFilter</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

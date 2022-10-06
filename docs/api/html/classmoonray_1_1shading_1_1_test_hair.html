@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html">TestHair</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_test_hair.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_test_hair-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::TestHair Class Reference</div></div>
 </div><!--header-->
@@ -96,12 +115,71 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2b01675e6fb2dc90f5957cf39d82498b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7124bbb7f8c3627d59ec25544ee4cb4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#a7124bbb7f8c3627d59ec25544ee4cb4d">testHairState</a> ()</td></tr>
 <tr class="separator:a7124bbb7f8c3627d59ec25544ee4cb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a89a9c4261f0dbb5c004a6b511873842c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a89a9c4261f0dbb5c004a6b511873842c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#a89a9c4261f0dbb5c004a6b511873842c">deleted_unique_ptr</a> = std::unique_ptr&lt; T, std::function&lt; void(T *)&gt; &gt;</td></tr>
+<tr class="separator:a89a9c4261f0dbb5c004a6b511873842c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:acbe293bfe2892496dfa5df2793c04409"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#acbe293bfe2892496dfa5df2793c04409">testLobe</a> (<a class="el" href="classmoonray_1_1shading_1_1_hair_bsdf_lobe.html">shading::HairBsdfLobe</a> *lobeCpp, void *lobeIspc)</td></tr>
+<tr class="separator:acbe293bfe2892496dfa5df2793c04409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a123581d1badd8b02b9383efddc0df063"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classmoonray_1_1shading_1_1_bsdf_slice.html">shading::BsdfSlice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#a123581d1badd8b02b9383efddc0df063">mBsdfSliceCpp</a></td></tr>
+<tr class="separator:a123581d1badd8b02b9383efddc0df063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f4c3e8045e7813e68dec0f88163aa30"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classmoonray_1_1shading_1_1_hair_state.html">shading::HairState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a></td></tr>
+<tr class="separator:a3f4c3e8045e7813e68dec0f88163aa30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd607496b79a0d51e34bb93fae01af5"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classmoonray_1_1shading_1_1_fresnel.html">shading::Fresnel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#aebd607496b79a0d51e34bb93fae01af5">mFresnelCpp</a></td></tr>
+<tr class="separator:aebd607496b79a0d51e34bb93fae01af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8198b07f2f3812257d17ab21641d25e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#a89a9c4261f0dbb5c004a6b511873842c">deleted_unique_ptr</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#af8198b07f2f3812257d17ab21641d25e">mBsdfSliceIspc</a></td></tr>
+<tr class="separator:af8198b07f2f3812257d17ab21641d25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e39c5d488ccca1548612f125bfd3f41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#a89a9c4261f0dbb5c004a6b511873842c">deleted_unique_ptr</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a></td></tr>
+<tr class="separator:a2e39c5d488ccca1548612f125bfd3f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a870addff458c4894b6a533aeba6fb689"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#a89a9c4261f0dbb5c004a6b511873842c">deleted_unique_ptr</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#a870addff458c4894b6a533aeba6fb689">mFresnelIspc</a></td></tr>
+<tr class="separator:a870addff458c4894b6a533aeba6fb689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa22069d0191f496b930e8bf37e07a9a"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Vec3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#afa22069d0191f496b930e8bf37e07a9a">mNg</a></td></tr>
+<tr class="separator:afa22069d0191f496b930e8bf37e07a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8723b98bbc0fbd06cad571d4ff9ddff6"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Vec3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#a8723b98bbc0fbd06cad571d4ff9ddff6">mWi</a></td></tr>
+<tr class="separator:a8723b98bbc0fbd06cad571d4ff9ddff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef04f867a5044b39a8783b3d380c8c67"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Vec3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#aef04f867a5044b39a8783b3d380c8c67">mWo</a></td></tr>
+<tr class="separator:aef04f867a5044b39a8783b3d380c8c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This class tests that the vectorized and scalar functions have the same outputs given the same inputs. </p>
 
 <p class="definition">Definition at line <a class="el" href="_test_hair_8h_source.html#l00039">39</a> of file <a class="el" href="_test_hair_8h_source.html">TestHair.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a89a9c4261f0dbb5c004a6b511873842c" name="a89a9c4261f0dbb5c004a6b511873842c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89a9c4261f0dbb5c004a6b511873842c">&#9670;&#160;</a></span>deleted_unique_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#a89a9c4261f0dbb5c004a6b511873842c">moonray::shading::TestHair::deleted_unique_ptr</a> =  std::unique_ptr&lt;T,std::function&lt;void(T*)&gt; &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_hair_8h_source.html#l00065">65</a> of file <a class="el" href="_test_hair_8h_source.html">TestHair.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a09b9b6d14466312ea584aa6e7595b827" name="a09b9b6d14466312ea584aa6e7595b827"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a09b9b6d14466312ea584aa6e7595b827">&#9670;&#160;</a></span>TestHair()</h2>
 
@@ -118,7 +196,72 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_hair_8cc_source.html#l00049">49</a> of file <a class="el" href="_test_hair_8cc_source.html">TestHair.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   49</span>                   :</div>
+<div class="line"><span class="lineno">   50</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#afa22069d0191f496b930e8bf37e07a9a">mNg</a>(0.0f, 0.0f, 1.0f),</div>
+<div class="line"><span class="lineno">   51</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a8723b98bbc0fbd06cad571d4ff9ddff6">mWi</a>(<a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(-0.25f, -0.15f, 0.59f))),</div>
+<div class="line"><span class="lineno">   52</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#aef04f867a5044b39a8783b3d380c8c67">mWo</a>(<a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(0.5f, 0.75f, 0.25f)))</div>
+<div class="line"><span class="lineno">   53</span>{</div>
+<div class="line"><span class="lineno">   54</span>    <span class="comment">// setup slices</span></div>
+<div class="line"><span class="lineno">   55</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a123581d1badd8b02b9383efddc0df063">mBsdfSliceCpp</a> = fauxstd::make_unique&lt;BsdfSlice&gt;(</div>
+<div class="line"><span class="lineno">   56</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#afa22069d0191f496b930e8bf37e07a9a">mNg</a>, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#aef04f867a5044b39a8783b3d380c8c67">mWo</a>, <span class="keyword">true</span>, <span class="keyword">true</span>, ispc::SHADOW_TERMINATOR_FIX_OFF);</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#af8198b07f2f3812257d17ab21641d25e">mBsdfSliceIspc</a> = deleted_unique_ptr&lt;void&gt;(</div>
+<div class="line"><span class="lineno">   59</span>            ispc::createBsdfSlice(asIspc(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#afa22069d0191f496b930e8bf37e07a9a">mNg</a>), asIspc(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#aef04f867a5044b39a8783b3d380c8c67">mWo</a>), <span class="keyword">true</span>, <span class="keyword">true</span>),</div>
+<div class="line"><span class="lineno">   60</span>            [](<span class="keywordtype">void</span> * p) { ispc::deleteBsdfSlice(p); } );</div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>    <span class="comment">// setup HairState</span></div>
+<div class="line"><span class="lineno">   63</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> hairDir = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(1.0f, 1.0f, 1.0f));</div>
+<div class="line"><span class="lineno">   64</span>    <span class="keyword">static</span> <span class="keyword">const</span> Color hairColor(0.65f, 0.21f, 0.25f);</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> azimRoughness = 0.22f;</div>
+<div class="line"><span class="lineno">   66</span>    <span class="keyword">static</span> <span class="keyword">const</span> Color hairSigmaA = <a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#a11efb67fc21a9c2c6ef32e0bee40e438">HairUtil::computeAbsorptionCoefficients</a>(hairColor,</div>
+<div class="line"><span class="lineno">   67</span>                                                                            azimRoughness);</div>
+<div class="line"><span class="lineno">   68</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> hairUv(0.33f, 0.66f);</div>
+<div class="line"><span class="lineno">   69</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> H = hairUv[1];</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> eta = 1.45;</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> hairRotation = 1.0f;</div>
+<div class="line"><span class="lineno">   72</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> hairNormal = <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(1.0f, 0.0f, 0.0f);</div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a> = fauxstd::make_unique&lt;HairState&gt;(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#aef04f867a5044b39a8783b3d380c8c67">mWo</a>,</div>
+<div class="line"><span class="lineno">   75</span>                                                    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a8723b98bbc0fbd06cad571d4ff9ddff6">mWi</a>,</div>
+<div class="line"><span class="lineno">   76</span>                                                    hairDir,</div>
+<div class="line"><span class="lineno">   77</span>                                                    H,</div>
+<div class="line"><span class="lineno">   78</span>                                                    eta,</div>
+<div class="line"><span class="lineno">   79</span>                                                    hairSigmaA,</div>
+<div class="line"><span class="lineno">   80</span>                                                    hairRotation,</div>
+<div class="line"><span class="lineno">   81</span>                                                    hairNormal);</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a> = deleted_unique_ptr&lt;void&gt;(</div>
+<div class="line"><span class="lineno">   84</span>            ispc::createHairState(asIspc(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#aef04f867a5044b39a8783b3d380c8c67">mWo</a>),</div>
+<div class="line"><span class="lineno">   85</span>                                  asIspc(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a8723b98bbc0fbd06cad571d4ff9ddff6">mWi</a>),</div>
+<div class="line"><span class="lineno">   86</span>                                  asIspc(hairDir),</div>
+<div class="line"><span class="lineno">   87</span>                                  H,</div>
+<div class="line"><span class="lineno">   88</span>                                  eta,</div>
+<div class="line"><span class="lineno">   89</span>                                  asIspc(hairSigmaA),</div>
+<div class="line"><span class="lineno">   90</span>                                  hairRotation,</div>
+<div class="line"><span class="lineno">   91</span>                                  asIspc(hairNormal)),</div>
+<div class="line"><span class="lineno">   92</span>            [](<span class="keywordtype">void</span> * p) { ispc::deleteHairState(p); } );</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    <span class="comment">// setup Fresnel</span></div>
+<div class="line"><span class="lineno">   95</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#aebd607496b79a0d51e34bb93fae01af5">mFresnelCpp</a> = fauxstd::make_unique&lt;DielectricFresnel&gt;(1.0f, eta);</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a870addff458c4894b6a533aeba6fb689">mFresnelIspc</a> = deleted_unique_ptr&lt;void&gt;(</div>
+<div class="line"><span class="lineno">   98</span>            ispc::createFresnel(1.0f, eta),</div>
+<div class="line"><span class="lineno">   99</span>            [](<span class="keywordtype">void</span> * p) { ispc::deleteFresnel(p); } );</div>
+<div class="line"><span class="lineno">  100</span>}</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a26b3f6b7b842544058f3766b0da79257"><div class="ttname"><a href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a></div><div class="ttdeci">__host__ __device__ float3 normalize(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00165">GPUMath.h:165</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_util_html_a11efb67fc21a9c2c6ef32e0bee40e438"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_util.html#a11efb67fc21a9c2c6ef32e0bee40e438">moonray::shading::HairUtil::computeAbsorptionCoefficients</a></div><div class="ttdeci">static scene_rdl2::math::Color computeAbsorptionCoefficients(const scene_rdl2::math::Color &amp;hairColor, const float aziRoughness)</div><div class="ttdef"><b>Definition:</b> <a href="_hair_util_8h_source.html#l00095">HairUtil.h:95</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_test_hair_html_a123581d1badd8b02b9383efddc0df063"><div class="ttname"><a href="classmoonray_1_1shading_1_1_test_hair.html#a123581d1badd8b02b9383efddc0df063">moonray::shading::TestHair::mBsdfSliceCpp</a></div><div class="ttdeci">std::unique_ptr&lt; shading::BsdfSlice &gt; mBsdfSliceCpp</div><div class="ttdef"><b>Definition:</b> <a href="_test_hair_8h_source.html#l00070">TestHair.h:70</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_test_hair_html_a2e39c5d488ccca1548612f125bfd3f41"><div class="ttname"><a href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">moonray::shading::TestHair::mHairStateIspc</a></div><div class="ttdeci">deleted_unique_ptr&lt; void &gt; mHairStateIspc</div><div class="ttdef"><b>Definition:</b> <a href="_test_hair_8h_source.html#l00076">TestHair.h:76</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_test_hair_html_a3f4c3e8045e7813e68dec0f88163aa30"><div class="ttname"><a href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">moonray::shading::TestHair::mHairStateCpp</a></div><div class="ttdeci">std::unique_ptr&lt; shading::HairState &gt; mHairStateCpp</div><div class="ttdef"><b>Definition:</b> <a href="_test_hair_8h_source.html#l00071">TestHair.h:71</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_test_hair_html_a870addff458c4894b6a533aeba6fb689"><div class="ttname"><a href="classmoonray_1_1shading_1_1_test_hair.html#a870addff458c4894b6a533aeba6fb689">moonray::shading::TestHair::mFresnelIspc</a></div><div class="ttdeci">deleted_unique_ptr&lt; void &gt; mFresnelIspc</div><div class="ttdef"><b>Definition:</b> <a href="_test_hair_8h_source.html#l00077">TestHair.h:77</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_test_hair_html_a8723b98bbc0fbd06cad571d4ff9ddff6"><div class="ttname"><a href="classmoonray_1_1shading_1_1_test_hair.html#a8723b98bbc0fbd06cad571d4ff9ddff6">moonray::shading::TestHair::mWi</a></div><div class="ttdeci">scene_rdl2::math::Vec3f mWi</div><div class="ttdef"><b>Definition:</b> <a href="_test_hair_8h_source.html#l00080">TestHair.h:80</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_test_hair_html_aebd607496b79a0d51e34bb93fae01af5"><div class="ttname"><a href="classmoonray_1_1shading_1_1_test_hair.html#aebd607496b79a0d51e34bb93fae01af5">moonray::shading::TestHair::mFresnelCpp</a></div><div class="ttdeci">std::unique_ptr&lt; shading::Fresnel &gt; mFresnelCpp</div><div class="ttdef"><b>Definition:</b> <a href="_test_hair_8h_source.html#l00072">TestHair.h:72</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_test_hair_html_aef04f867a5044b39a8783b3d380c8c67"><div class="ttname"><a href="classmoonray_1_1shading_1_1_test_hair.html#aef04f867a5044b39a8783b3d380c8c67">moonray::shading::TestHair::mWo</a></div><div class="ttdeci">scene_rdl2::math::Vec3f mWo</div><div class="ttdef"><b>Definition:</b> <a href="_test_hair_8h_source.html#l00081">TestHair.h:81</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_test_hair_html_af8198b07f2f3812257d17ab21641d25e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_test_hair.html#af8198b07f2f3812257d17ab21641d25e">moonray::shading::TestHair::mBsdfSliceIspc</a></div><div class="ttdeci">deleted_unique_ptr&lt; void &gt; mBsdfSliceIspc</div><div class="ttdef"><b>Definition:</b> <a href="_test_hair_8h_source.html#l00075">TestHair.h:75</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_test_hair_html_afa22069d0191f496b930e8bf37e07a9a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_test_hair.html#afa22069d0191f496b930e8bf37e07a9a">moonray::shading::TestHair::mNg</a></div><div class="ttdeci">scene_rdl2::math::Vec3f mNg</div><div class="ttdef"><b>Definition:</b> <a href="_test_hair_8h_source.html#l00079">TestHair.h:79</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a8ff976ca38d834d434f1d00f2a03359b"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">moonray::geom::Vec2f</a></div><div class="ttdeci">scene_rdl2::math::Vec2f Vec2f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00038">Types.h:38</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a55e79a7544ee7114f05976a247346157" name="a55e79a7544ee7114f05976a247346157"></a>
@@ -137,7 +280,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_hair_8cc_source.html#l00102">102</a> of file <a class="el" href="_test_hair_8cc_source.html">TestHair.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  103</span>{</div>
+<div class="line"><span class="lineno">  104</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -300,7 +445,78 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_hair_8cc_source.html#l00478">478</a> of file <a class="el" href="_test_hair_8cc_source.html">TestHair.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  479</span>{</div>
+<div class="line"><span class="lineno">  480</span>    <span class="comment">// pick a couple of random directions to test with</span></div>
+<div class="line"><span class="lineno">  481</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> wi_2(<a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(-0.55f, -0.33f, 0.85f)));</div>
+<div class="line"><span class="lineno">  482</span> </div>
+<div class="line"><span class="lineno">  483</span>    <span class="comment">// test calculateAbsorptionTerm()</span></div>
+<div class="line"><span class="lineno">  484</span>    <span class="comment">// check mAbsorptionTerm</span></div>
+<div class="line"><span class="lineno">  485</span>    {</div>
+<div class="line"><span class="lineno">  486</span>        <span class="keyword">const</span> Color <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;mAbsorptionTerm;</div>
+<div class="line"><span class="lineno">  487</span>        ispc::Color b;</div>
+<div class="line"><span class="lineno">  488</span>        ispc::getAbsorptionTerm(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get(), b);</div>
+<div class="line"><span class="lineno">  489</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_test_hair_8cc_03.html#a90c6810bb8e4a58651a36efa80b41e6c">isEqualColor</a>(a, b, sTolerance));</div>
+<div class="line"><span class="lineno">  490</span>    }</div>
+<div class="line"><span class="lineno">  491</span> </div>
+<div class="line"><span class="lineno">  492</span>    <span class="comment">// test updateLocalFrame()</span></div>
+<div class="line"><span class="lineno">  493</span>    <span class="comment">// check mWo, mHairNorm, mHairBiNorm, mThetaO, mSinThetaO, mCosThetaO, mAbsorptionTerm</span></div>
+<div class="line"><span class="lineno">  494</span>    {</div>
+<div class="line"><span class="lineno">  495</span>        { <span class="comment">// mHairNorm</span></div>
+<div class="line"><span class="lineno">  496</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;mHairNorm;</div>
+<div class="line"><span class="lineno">  497</span>            ispc::Vec3f b;</div>
+<div class="line"><span class="lineno">  498</span>            ispc::getHairNorm(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get(), b);</div>
+<div class="line"><span class="lineno">  499</span>            CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_test_hair_8cc_03.html#ae568d4dd4af05baa334e165fa07d4714">isEqualVec3f</a>(a, b, sTolerance));</div>
+<div class="line"><span class="lineno">  500</span>        }</div>
+<div class="line"><span class="lineno">  501</span>        { <span class="comment">// mHairBiNorm</span></div>
+<div class="line"><span class="lineno">  502</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;mHairBinorm;</div>
+<div class="line"><span class="lineno">  503</span>            ispc::Vec3f b;</div>
+<div class="line"><span class="lineno">  504</span>            ispc::getHairBiNorm(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get(), b);</div>
+<div class="line"><span class="lineno">  505</span>            CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_test_hair_8cc_03.html#ae568d4dd4af05baa334e165fa07d4714">isEqualVec3f</a>(a, b, sTolerance));</div>
+<div class="line"><span class="lineno">  506</span>        }</div>
+<div class="line"><span class="lineno">  507</span> </div>
+<div class="line"><span class="lineno">  508</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;mThetaO, ispc::getThetaO(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get()), sTolerance));</div>
+<div class="line"><span class="lineno">  509</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;mSinThetaO, ispc::getSinThetaO(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get()), sTolerance));</div>
+<div class="line"><span class="lineno">  510</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;mCosThetaO, ispc::getCosThetaO(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get()), sTolerance));</div>
+<div class="line"><span class="lineno">  511</span> </div>
+<div class="line"><span class="lineno">  512</span>        { <span class="comment">// mAbsorptionTerm</span></div>
+<div class="line"><span class="lineno">  513</span>            <span class="keyword">const</span> Color <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;mAbsorptionTerm;</div>
+<div class="line"><span class="lineno">  514</span>            ispc::Color b;</div>
+<div class="line"><span class="lineno">  515</span>            ispc::getAbsorptionTerm(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get(), b);</div>
+<div class="line"><span class="lineno">  516</span>            CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_test_hair_8cc_03.html#a90c6810bb8e4a58651a36efa80b41e6c">isEqualColor</a>(a, b, sTolerance));</div>
+<div class="line"><span class="lineno">  517</span>        }</div>
+<div class="line"><span class="lineno">  518</span>    }</div>
+<div class="line"><span class="lineno">  519</span> </div>
+<div class="line"><span class="lineno">  520</span>    <span class="comment">// test updateAngles() (the one called from eval)</span></div>
+<div class="line"><span class="lineno">  521</span>    <span class="comment">// check mWi, mThetaI, mPhiI, mSinThetaI, mCosThetaI,</span></div>
+<div class="line"><span class="lineno">  522</span>    <span class="comment">// mPhiD, mThetaD, mCosineTerm</span></div>
+<div class="line"><span class="lineno">  523</span>    {</div>
+<div class="line"><span class="lineno">  524</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;mThetaI, ispc::getThetaI(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get()), sTolerance));</div>
+<div class="line"><span class="lineno">  525</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;mPhiI, ispc::getPhiI(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get()), sTolerance));</div>
+<div class="line"><span class="lineno">  526</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;mSinThetaI, ispc::getSinThetaI(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get()), sTolerance));</div>
+<div class="line"><span class="lineno">  527</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;mCosThetaI, ispc::getCosThetaI(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get()), sTolerance));</div>
+<div class="line"><span class="lineno">  528</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;mPhiD, ispc::getPhiD(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get()), sTolerance));</div>
+<div class="line"><span class="lineno">  529</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;mThetaD, ispc::getThetaD(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get()), sTolerance));</div>
+<div class="line"><span class="lineno">  530</span>    }</div>
+<div class="line"><span class="lineno">  531</span> </div>
+<div class="line"><span class="lineno">  532</span>    <span class="comment">// test updateAngles() (the one called from sample)</span></div>
+<div class="line"><span class="lineno">  533</span>    <span class="comment">// check mWi, mThetaI, mPhiI, mPhiD, mThetaD</span></div>
+<div class="line"><span class="lineno">  534</span>    {</div>
+<div class="line"><span class="lineno">  535</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> phiI = 0.75f;</div>
+<div class="line"><span class="lineno">  536</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> thetaI = 0.15f;</div>
+<div class="line"><span class="lineno">  537</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;updateAngles(wi_2, phiI, thetaI);</div>
+<div class="line"><span class="lineno">  538</span>        ispc::updateAngles(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get(), asIspc(wi_2), phiI, thetaI);</div>
+<div class="line"><span class="lineno">  539</span> </div>
+<div class="line"><span class="lineno">  540</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;mThetaI, ispc::getThetaI(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get()), sTolerance));</div>
+<div class="line"><span class="lineno">  541</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;mPhiI, ispc::getPhiI(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get()), sTolerance));</div>
+<div class="line"><span class="lineno">  542</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;mPhiD, ispc::getPhiD(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get()), sTolerance));</div>
+<div class="line"><span class="lineno">  543</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;mThetaD, ispc::getThetaD(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get()), sTolerance));</div>
+<div class="line"><span class="lineno">  544</span>    }</div>
+<div class="line"><span class="lineno">  545</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1unittest_html_aca9de8dd11f6a3cf125acd13c8b3b636"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">moonray::geom::unittest::isEqual</a></div><div class="ttdeci">__forceinline bool isEqual(const scene_rdl2::math::Color4 &amp;lhs, const scene_rdl2::math::Color4 &amp;rhs)</div><div class="ttdef"><b>Definition:</b> <a href="_test_prim_utils_8h_source.html#l00125">TestPrimUtils.h:125</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_1_1anonymous__namespace_02_test_hair_8cc_03_html_a90c6810bb8e4a58651a36efa80b41e6c"><div class="ttname"><a href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_test_hair_8cc_03.html#a90c6810bb8e4a58651a36efa80b41e6c">moonray::shading::anonymous_namespace{TestHair.cc}::isEqualColor</a></div><div class="ttdeci">bool isEqualColor(const Color &amp;a, const ispc::Color &amp;b, const float eps)</div><div class="ttdef"><b>Definition:</b> <a href="_test_hair_8cc_source.html#l00035">TestHair.cc:35</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_1_1anonymous__namespace_02_test_hair_8cc_03_html_ae568d4dd4af05baa334e165fa07d4714"><div class="ttname"><a href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_test_hair_8cc_03.html#ae568d4dd4af05baa334e165fa07d4714">moonray::shading::anonymous_namespace{TestHair.cc}::isEqualVec3f</a></div><div class="ttdeci">bool isEqualVec3f(const Vec3f &amp;a, const ispc::Vec3f &amp;b, const float eps)</div><div class="ttdef"><b>Definition:</b> <a href="_test_hair_8cc_source.html#l00041">TestHair.cc:41</a></div></div>
+<div class="ttc" id="anamespacesequence__discrepancy_html_a06f968c2f5ed1f9d42f00351b2b1efb2"><div class="ttname"><a href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">sequence_discrepancy.a</a></div><div class="ttdeci">def a</div><div class="ttdef"><b>Definition:</b> <a href="sequence__discrepancy_8py_source.html#l00038">sequence_discrepancy.py:38</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab9448ca878f3a55957bef5bc11e61cbe" name="ab9448ca878f3a55957bef5bc11e61cbe"></a>
@@ -319,7 +535,260 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_hair_8cc_source.html#l00106">106</a> of file <a class="el" href="_test_hair_8cc_source.html">TestHair.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  107</span>{</div>
+<div class="line"><span class="lineno">  108</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> f = 0.25f;</div>
+<div class="line"><span class="lineno">  109</span>    <span class="keyword">static</span> <span class="keyword">const</span> Color c(0.25f, 0.55f, 0.75f);</div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>    CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(Pow&lt;2&gt;(f),  ispc::testPow2(f),  sTolerance));</div>
+<div class="line"><span class="lineno">  112</span>    CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(Pow&lt;3&gt;(f),  ispc::testPow3(f),  sTolerance));</div>
+<div class="line"><span class="lineno">  113</span>    CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(Pow&lt;4&gt;(f),  ispc::testPow4(f),  sTolerance));</div>
+<div class="line"><span class="lineno">  114</span>    CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(Pow&lt;20&gt;(f), ispc::testPow20(f), sTolerance));</div>
+<div class="line"><span class="lineno">  115</span>    CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(Pow&lt;22&gt;(f), ispc::testPow22(f), sTolerance));</div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  117</span>    CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#a18f4fb6469211cf9a6336eb8bd97f131">HairUtil::safeSqrt</a>(f), ispc::testSafeSqrt(f), sTolerance));</div>
+<div class="line"><span class="lineno">  118</span>    CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(scene_rdl2::math::sqr(f), ispc::testSqr(f), sTolerance));</div>
+<div class="line"><span class="lineno">  119</span>    CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(scene_rdl2::math::sinh(f), ispc::testSinh(f), sTolerance));</div>
+<div class="line"><span class="lineno">  120</span> </div>
+<div class="line"><span class="lineno">  121</span>    CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#a3509fdb0b493b2945af738bf28f6d3e2">HairUtil::azimuthalVar</a>(f), ispc::testAzimuthalVar(f), sTolerance));</div>
+<div class="line"><span class="lineno">  122</span>    CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#a88acbb11862a701342c52f9c8851e46c">HairUtil::longitudinalVar</a>(f), ispc::testLongitudinalVar(f), sTolerance));</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>    <span class="comment">// test computeAbsorptionCoefficients()</span></div>
+<div class="line"><span class="lineno">  125</span>    {</div>
+<div class="line"><span class="lineno">  126</span>        ispc::Color ispcResult;</div>
+<div class="line"><span class="lineno">  127</span>        ispc::testComputeAbsorptionCoefficients(asIspc(c), f, ispcResult);</div>
+<div class="line"><span class="lineno">  128</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_test_hair_8cc_03.html#a90c6810bb8e4a58651a36efa80b41e6c">isEqualColor</a>(<a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#a11efb67fc21a9c2c6ef32e0bee40e438">HairUtil::computeAbsorptionCoefficients</a>(c, f), ispcResult, sTolerance));</div>
+<div class="line"><span class="lineno">  129</span>    }</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>    CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#a4c7029342436c6b1aac557d6b6bff7eb">HairUtil::besselIO</a>(f), ispc::testBesselIO(f), sTolerance));</div>
+<div class="line"><span class="lineno">  132</span>    CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#a4d0f4764cd1b6e73725a6a8b6ef3c5c1">HairUtil::logBesselIO</a>(f), ispc::testLogBesselIO(f), sTolerance));</div>
+<div class="line"><span class="lineno">  133</span> </div>
+<div class="line"><span class="lineno">  134</span>    <span class="comment">// test deonLongitudinalM() func</span></div>
+<div class="line"><span class="lineno">  135</span>    {</div>
+<div class="line"><span class="lineno">  136</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> variance = 0.0123f;</div>
+<div class="line"><span class="lineno">  137</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> thetaI = scene_rdl2::math::sPi / 4.0f;</div>
+<div class="line"><span class="lineno">  138</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> thetaO = scene_rdl2::math::sPi / 6.0f;</div>
+<div class="line"><span class="lineno">  139</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> sinThetaI = scene_rdl2::math::sin(thetaI);</div>
+<div class="line"><span class="lineno">  140</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaI = scene_rdl2::math::cos(thetaI);</div>
+<div class="line"><span class="lineno">  141</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> sinThetaO = scene_rdl2::math::sin(thetaO);</div>
+<div class="line"><span class="lineno">  142</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaO = scene_rdl2::math::cos(thetaO);</div>
+<div class="line"><span class="lineno">  143</span> </div>
+<div class="line"><span class="lineno">  144</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(</div>
+<div class="line"><span class="lineno">  145</span>                    <a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#a04915f99234b38be24940c9e9ae3e74b">HairUtil::deonLongitudinalM</a>(variance, sinThetaI, cosThetaI, sinThetaO, cosThetaO),</div>
+<div class="line"><span class="lineno">  146</span>                    ispc::testDeonLongitudinalM(variance, sinThetaI, cosThetaI, sinThetaO, cosThetaO),</div>
+<div class="line"><span class="lineno">  147</span>                    sTolerance));</div>
+<div class="line"><span class="lineno">  148</span>    }</div>
+<div class="line"><span class="lineno">  149</span> </div>
+<div class="line"><span class="lineno">  150</span>    <span class="comment">// test logistic functions</span></div>
+<div class="line"><span class="lineno">  151</span>    {</div>
+<div class="line"><span class="lineno">  152</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> x = 0.3425f;</div>
+<div class="line"><span class="lineno">  153</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> s = 0.6345f;</div>
+<div class="line"><span class="lineno">  154</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> = 0.15f;</div>
+<div class="line"><span class="lineno">  155</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> b = 0.85f;</div>
+<div class="line"><span class="lineno">  156</span> </div>
+<div class="line"><span class="lineno">  157</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#adf71253eeab737b8a8f63ddeede617f4">HairUtil::logisticFunction</a>(x, s), ispc::testLogisticFunction(x, s), sTolerance));</div>
+<div class="line"><span class="lineno">  158</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#aecbc06c298bb9d4898bfe532a5922d6e">HairUtil::logisticCDF</a>(x, s), ispc::testLogisticCDF(x, s), sTolerance));</div>
+<div class="line"><span class="lineno">  159</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#a8f901daaebb62289a3c81cab50eb3787">HairUtil::trimmedLogisticFunction</a>(x, s, a, b), ispc::testTrimmedLogisticFunction(x, s, a, b), sTolerance));</div>
+<div class="line"><span class="lineno">  160</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#ada3f87b6e8eee71d39bc4726f5e88588">HairUtil::sampleTrimmedLogistic</a>(x, s, a, b), ispc::testSampleTrimmedLogistic(x, s, a, b), sTolerance));</div>
+<div class="line"><span class="lineno">  161</span>    }</div>
+<div class="line"><span class="lineno">  162</span> </div>
+<div class="line"><span class="lineno">  163</span>    <span class="comment">// test gaussian/cauchy functions</span></div>
+<div class="line"><span class="lineno">  164</span>    {</div>
+<div class="line"><span class="lineno">  165</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> stddev = 0.1425f;</div>
+<div class="line"><span class="lineno">  166</span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> x = 0.6345f;</div>
+<div class="line"><span class="lineno">  167</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#a3fad19c7699a0472fd47627b6502533d">HairUtil::unitGaussianForShade</a>(stddev, x), ispc::testUnitGaussianForShade(stddev, x), sTolerance));</div>
+<div class="line"><span class="lineno">  168</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#ae29ad6860bae268137f8313d92de04b0">HairUtil::unitCauchyForShade</a>(stddev, x), ispc::testUnitCauchyForShade(stddev, x), sTolerance));</div>
+<div class="line"><span class="lineno">  169</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#a2e0155b10bf45476a05c0302ecde20af">HairUtil::unitCauchyForSample</a>(stddev, x), ispc::testUnitCauchyForSample(stddev, x), sTolerance));</div>
+<div class="line"><span class="lineno">  170</span>    }</div>
+<div class="line"><span class="lineno">  171</span> </div>
+<div class="line"><span class="lineno">  172</span>    <span class="comment">// test compact1By1()</span></div>
+<div class="line"><span class="lineno">  173</span>    {</div>
+<div class="line"><span class="lineno">  174</span>        <span class="keyword">static</span> <span class="keyword">const</span> uint32_t x = 54321;</div>
+<div class="line"><span class="lineno">  175</span>        <span class="keyword">const</span> uint32_t <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> = <a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#ae7008e1a24d461387edfa29d23d87f9b">HairUtil::compact1By1</a>(x);</div>
+<div class="line"><span class="lineno">  176</span>        <span class="keyword">const</span> uint32_t b = ispc::testCompact1By1(x);</div>
+<div class="line"><span class="lineno">  177</span>        CPPUNIT_ASSERT( a == b );</div>
+<div class="line"><span class="lineno">  178</span>    }</div>
+<div class="line"><span class="lineno">  179</span> </div>
+<div class="line"><span class="lineno">  180</span>    <span class="comment">// test demuxFloat()</span></div>
+<div class="line"><span class="lineno">  181</span>    {</div>
+<div class="line"><span class="lineno">  182</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> = <a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#a6aedf743fcf1a561742b9584b51b21c0">HairUtil::demuxFloat</a>(f);</div>
+<div class="line"><span class="lineno">  183</span>        ispc::Vec2f b;</div>
+<div class="line"><span class="lineno">  184</span>        ispc::testDemuxFloat(f, b);</div>
+<div class="line"><span class="lineno">  185</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a>.x, asCpp(b).x, sTolerance));</div>
+<div class="line"><span class="lineno">  186</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(<a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a>.y, asCpp(b).y, sTolerance));</div>
+<div class="line"><span class="lineno">  187</span>    }</div>
+<div class="line"><span class="lineno">  188</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_util_html_a04915f99234b38be24940c9e9ae3e74b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_util.html#a04915f99234b38be24940c9e9ae3e74b">moonray::shading::HairUtil::deonLongitudinalM</a></div><div class="ttdeci">static float deonLongitudinalM(float variance, float sinThetaI, float cosThetaI, float sinThetaO, float cosThetaO)</div><div class="ttdef"><b>Definition:</b> <a href="_hair_util_8h_source.html#l00147">HairUtil.h:147</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_util_html_a18f4fb6469211cf9a6336eb8bd97f131"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_util.html#a18f4fb6469211cf9a6336eb8bd97f131">moonray::shading::HairUtil::safeSqrt</a></div><div class="ttdeci">static float safeSqrt(float x)</div><div class="ttdef"><b>Definition:</b> <a href="_hair_util_8h_source.html#l00067">HairUtil.h:67</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_util_html_a2e0155b10bf45476a05c0302ecde20af"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_util.html#a2e0155b10bf45476a05c0302ecde20af">moonray::shading::HairUtil::unitCauchyForSample</a></div><div class="ttdeci">static float unitCauchyForSample(float stddev, float x)</div><div class="ttdef"><b>Definition:</b> <a href="_hair_util_8h_source.html#l00249">HairUtil.h:249</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_util_html_a3509fdb0b493b2945af738bf28f6d3e2"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_util.html#a3509fdb0b493b2945af738bf28f6d3e2">moonray::shading::HairUtil::azimuthalVar</a></div><div class="ttdeci">static float azimuthalVar(float r)</div><div class="ttdef"><b>Definition:</b> <a href="_hair_util_8h_source.html#l00084">HairUtil.h:84</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_util_html_a3fad19c7699a0472fd47627b6502533d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_util.html#a3fad19c7699a0472fd47627b6502533d">moonray::shading::HairUtil::unitGaussianForShade</a></div><div class="ttdeci">static float unitGaussianForShade(float stddev, float x)</div><div class="ttdef"><b>Definition:</b> <a href="_hair_util_8h_source.html#l00224">HairUtil.h:224</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_util_html_a4c7029342436c6b1aac557d6b6bff7eb"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_util.html#a4c7029342436c6b1aac557d6b6bff7eb">moonray::shading::HairUtil::besselIO</a></div><div class="ttdeci">static float besselIO(float x)</div><div class="ttdef"><b>Definition:</b> <a href="_hair_util_8h_source.html#l00125">HairUtil.h:125</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_util_html_a4d0f4764cd1b6e73725a6a8b6ef3c5c1"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_util.html#a4d0f4764cd1b6e73725a6a8b6ef3c5c1">moonray::shading::HairUtil::logBesselIO</a></div><div class="ttdeci">static float logBesselIO(float x)</div><div class="ttdef"><b>Definition:</b> <a href="_hair_util_8h_source.html#l00112">HairUtil.h:112</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_util_html_a6aedf743fcf1a561742b9584b51b21c0"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_util.html#a6aedf743fcf1a561742b9584b51b21c0">moonray::shading::HairUtil::demuxFloat</a></div><div class="ttdeci">static scene_rdl2::math::Vec2f demuxFloat(float f)</div><div class="ttdef"><b>Definition:</b> <a href="_hair_util_8h_source.html#l00283">HairUtil.h:283</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_util_html_a88acbb11862a701342c52f9c8851e46c"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_util.html#a88acbb11862a701342c52f9c8851e46c">moonray::shading::HairUtil::longitudinalVar</a></div><div class="ttdeci">static float longitudinalVar(float r)</div><div class="ttdef"><b>Definition:</b> <a href="_hair_util_8h_source.html#l00073">HairUtil.h:73</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_util_html_a8f901daaebb62289a3c81cab50eb3787"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_util.html#a8f901daaebb62289a3c81cab50eb3787">moonray::shading::HairUtil::trimmedLogisticFunction</a></div><div class="ttdeci">static float trimmedLogisticFunction(float x, float s, float a, float b)</div><div class="ttdef"><b>Definition:</b> <a href="_hair_util_8h_source.html#l00191">HairUtil.h:191</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_util_html_ada3f87b6e8eee71d39bc4726f5e88588"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_util.html#ada3f87b6e8eee71d39bc4726f5e88588">moonray::shading::HairUtil::sampleTrimmedLogistic</a></div><div class="ttdeci">static float sampleTrimmedLogistic(float r, float s, float a, float b)</div><div class="ttdef"><b>Definition:</b> <a href="_hair_util_8h_source.html#l00202">HairUtil.h:202</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_util_html_adf71253eeab737b8a8f63ddeede617f4"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_util.html#adf71253eeab737b8a8f63ddeede617f4">moonray::shading::HairUtil::logisticFunction</a></div><div class="ttdeci">static float logisticFunction(float x, float s)</div><div class="ttdef"><b>Definition:</b> <a href="_hair_util_8h_source.html#l00170">HairUtil.h:170</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_util_html_ae29ad6860bae268137f8313d92de04b0"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_util.html#ae29ad6860bae268137f8313d92de04b0">moonray::shading::HairUtil::unitCauchyForShade</a></div><div class="ttdeci">static float unitCauchyForShade(float stddev, float x)</div><div class="ttdef"><b>Definition:</b> <a href="_hair_util_8h_source.html#l00237">HairUtil.h:237</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_util_html_ae7008e1a24d461387edfa29d23d87f9b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_util.html#ae7008e1a24d461387edfa29d23d87f9b">moonray::shading::HairUtil::compact1By1</a></div><div class="ttdeci">static uint32_t compact1By1(uint32_t x)</div><div class="ttdef"><b>Definition:</b> <a href="_hair_util_8h_source.html#l00264">HairUtil.h:264</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_hair_util_html_aecbc06c298bb9d4898bfe532a5922d6e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_hair_util.html#aecbc06c298bb9d4898bfe532a5922d6e">moonray::shading::HairUtil::logisticCDF</a></div><div class="ttdeci">static float logisticCDF(float x, float s)</div><div class="ttdef"><b>Definition:</b> <a href="_hair_util_8h_source.html#l00181">HairUtil.h:181</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acbe293bfe2892496dfa5df2793c04409" name="acbe293bfe2892496dfa5df2793c04409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbe293bfe2892496dfa5df2793c04409">&#9670;&#160;</a></span>testLobe()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::shading::TestHair::testLobe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_hair_bsdf_lobe.html">shading::HairBsdfLobe</a> *&#160;</td>
+          <td class="paramname"><em>lobeCpp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>lobeIspc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_hair_8cc_source.html#l00190">190</a> of file <a class="el" href="_test_hair_8cc_source.html">TestHair.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  191</span>{</div>
+<div class="line"><span class="lineno">  192</span>    <span class="comment">// test members</span></div>
+<div class="line"><span class="lineno">  193</span>    {</div>
+<div class="line"><span class="lineno">  194</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(lobeCpp-&gt;mSinAlpha,</div>
+<div class="line"><span class="lineno">  195</span>                               ispc::getSinAlpha(lobeIspc),</div>
+<div class="line"><span class="lineno">  196</span>                               sTolerance));</div>
+<div class="line"><span class="lineno">  197</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(lobeCpp-&gt;mCosAlpha,</div>
+<div class="line"><span class="lineno">  198</span>                               ispc::getCosAlpha(lobeIspc),</div>
+<div class="line"><span class="lineno">  199</span>                               sTolerance));</div>
+<div class="line"><span class="lineno">  200</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(lobeCpp-&gt;mLongitudinalRoughness,</div>
+<div class="line"><span class="lineno">  201</span>                               ispc::getLongitudinalRoughness(lobeIspc),</div>
+<div class="line"><span class="lineno">  202</span>                               sTolerance));</div>
+<div class="line"><span class="lineno">  203</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(lobeCpp-&gt;mLongitudinalVariance,</div>
+<div class="line"><span class="lineno">  204</span>                               ispc::getLongitudinalVariance(lobeIspc),</div>
+<div class="line"><span class="lineno">  205</span>                               sTolerance));</div>
+<div class="line"><span class="lineno">  206</span>    }</div>
+<div class="line"><span class="lineno">  207</span>    <span class="comment">// test evalMTerm()</span></div>
+<div class="line"><span class="lineno">  208</span>    {</div>
+<div class="line"><span class="lineno">  209</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> = lobeCpp-&gt;evalMTerm(*<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>);</div>
+<div class="line"><span class="lineno">  210</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> b = ispc::evalMTerm(lobeIspc,</div>
+<div class="line"><span class="lineno">  211</span>                                        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get());</div>
+<div class="line"><span class="lineno">  212</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(a, b, sTolerance));</div>
+<div class="line"><span class="lineno">  213</span>    }</div>
+<div class="line"><span class="lineno">  214</span>    <span class="comment">// test evalNTermWithAbsorption()</span></div>
+<div class="line"><span class="lineno">  215</span>    {</div>
+<div class="line"><span class="lineno">  216</span>        <span class="keyword">const</span> Color result_a = lobeCpp-&gt;evalNTermWithAbsorption(*<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>);</div>
+<div class="line"><span class="lineno">  217</span>        ispc::Color result_b;</div>
+<div class="line"><span class="lineno">  218</span>        ispc::evalNTermWithAbsorption(lobeIspc,</div>
+<div class="line"><span class="lineno">  219</span>                                      <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get(),</div>
+<div class="line"><span class="lineno">  220</span>                                      result_b);</div>
+<div class="line"><span class="lineno">  221</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_test_hair_8cc_03.html#a90c6810bb8e4a58651a36efa80b41e6c">isEqualColor</a>(result_a, result_b, sTolerance));</div>
+<div class="line"><span class="lineno">  222</span>    }</div>
+<div class="line"><span class="lineno">  223</span>    <span class="comment">// test evalPhiPdf()</span></div>
+<div class="line"><span class="lineno">  224</span>    {</div>
+<div class="line"><span class="lineno">  225</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> = lobeCpp-&gt;evalPhiPdf(*<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>);</div>
+<div class="line"><span class="lineno">  226</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> b = ispc::evalPhiPdf(lobeIspc,</div>
+<div class="line"><span class="lineno">  227</span>                                         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get());</div>
+<div class="line"><span class="lineno">  228</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(a, b, sTolerance));</div>
+<div class="line"><span class="lineno">  229</span>    }</div>
+<div class="line"><span class="lineno">  230</span>    <span class="comment">// test evalThetaPdf()</span></div>
+<div class="line"><span class="lineno">  231</span>    {</div>
+<div class="line"><span class="lineno">  232</span>        <span class="comment">// check some internals first</span></div>
+<div class="line"><span class="lineno">  233</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> thetaI_a = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;thetaI();</div>
+<div class="line"><span class="lineno">  234</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> thetaI_b = ispc::getThetaI(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get());</div>
+<div class="line"><span class="lineno">  235</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(thetaI_a, thetaI_b, sTolerance));</div>
+<div class="line"><span class="lineno">  236</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> thetaO_a = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;thetaO();</div>
+<div class="line"><span class="lineno">  237</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> thetaO_b = ispc::getThetaO(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get());</div>
+<div class="line"><span class="lineno">  238</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(thetaO_a, thetaO_b, sTolerance));</div>
+<div class="line"><span class="lineno">  239</span> </div>
+<div class="line"><span class="lineno">  240</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> = lobeCpp-&gt;evalThetaPdf(*<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>);</div>
+<div class="line"><span class="lineno">  241</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> b = ispc::evalThetaPdf(lobeIspc,</div>
+<div class="line"><span class="lineno">  242</span>                                           <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get());</div>
+<div class="line"><span class="lineno">  243</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(a, b, sTolerance));</div>
+<div class="line"><span class="lineno">  244</span>    }</div>
+<div class="line"><span class="lineno">  245</span>    <span class="comment">// test sampleTheta()</span></div>
+<div class="line"><span class="lineno">  246</span>    {</div>
+<div class="line"><span class="lineno">  247</span>        <span class="comment">// choose a random</span></div>
+<div class="line"><span class="lineno">  248</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> r1 = 0.123f;</div>
+<div class="line"><span class="lineno">  249</span> </div>
+<div class="line"><span class="lineno">  250</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> thetaO = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;thetaO();</div>
+<div class="line"><span class="lineno">  251</span>        <span class="keywordtype">float</span> thetaI_a, thetaI_b;</div>
+<div class="line"><span class="lineno">  252</span>        <span class="keywordtype">float</span> pdf_a, pdf_b;</div>
+<div class="line"><span class="lineno">  253</span>        pdf_a = lobeCpp-&gt;sampleTheta(r1, thetaO, thetaI_a);</div>
+<div class="line"><span class="lineno">  254</span>        pdf_b = ispc::sampleTheta(lobeIspc, r1, thetaO, thetaI_b);</div>
+<div class="line"><span class="lineno">  255</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(pdf_a, pdf_b, sTolerance));</div>
+<div class="line"><span class="lineno">  256</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(thetaI_a, thetaI_b, sTolerance));</div>
+<div class="line"><span class="lineno">  257</span>    }</div>
+<div class="line"><span class="lineno">  258</span>    <span class="comment">// test samplePhi()</span></div>
+<div class="line"><span class="lineno">  259</span>    {</div>
+<div class="line"><span class="lineno">  260</span>        <span class="comment">// choose a random</span></div>
+<div class="line"><span class="lineno">  261</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> r2 = 0.567;</div>
+<div class="line"><span class="lineno">  262</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> phiO = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>-&gt;phiO();</div>
+<div class="line"><span class="lineno">  263</span> </div>
+<div class="line"><span class="lineno">  264</span>        <span class="keywordtype">float</span> phiI_a, phiI_b;</div>
+<div class="line"><span class="lineno">  265</span>        <span class="keywordtype">float</span> pdf_a = lobeCpp-&gt;samplePhi(r2,</div>
+<div class="line"><span class="lineno">  266</span>                                         phiO,</div>
+<div class="line"><span class="lineno">  267</span>                                         phiI_a);</div>
+<div class="line"><span class="lineno">  268</span>        <span class="keywordtype">float</span> pdf_b = ispc::samplePhi(lobeIspc,</div>
+<div class="line"><span class="lineno">  269</span>                                      r2,</div>
+<div class="line"><span class="lineno">  270</span>                                      phiO,</div>
+<div class="line"><span class="lineno">  271</span>                                      phiI_b);</div>
+<div class="line"><span class="lineno">  272</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(pdf_a, pdf_b, sTolerance));</div>
+<div class="line"><span class="lineno">  273</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(phiI_a, phiI_b, sTolerance));</div>
+<div class="line"><span class="lineno">  274</span>    }</div>
+<div class="line"><span class="lineno">  275</span>    <span class="comment">// test evalPdf()</span></div>
+<div class="line"><span class="lineno">  276</span>    {</div>
+<div class="line"><span class="lineno">  277</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> = lobeCpp-&gt;evalPdf(*<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a3f4c3e8045e7813e68dec0f88163aa30">mHairStateCpp</a>);</div>
+<div class="line"><span class="lineno">  278</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> b = ispc::evalPdf(lobeIspc,</div>
+<div class="line"><span class="lineno">  279</span>                                      <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a2e39c5d488ccca1548612f125bfd3f41">mHairStateIspc</a>.get());</div>
+<div class="line"><span class="lineno">  280</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(a, b, sTolerance));</div>
+<div class="line"><span class="lineno">  281</span>    }</div>
+<div class="line"><span class="lineno">  282</span>    <span class="comment">// test eval()</span></div>
+<div class="line"><span class="lineno">  283</span>    {</div>
+<div class="line"><span class="lineno">  284</span>        <span class="keywordtype">float</span> pdf_a, pdf_b;</div>
+<div class="line"><span class="lineno">  285</span>        <span class="keyword">const</span> Color result_a = lobeCpp-&gt;eval(*<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a123581d1badd8b02b9383efddc0df063">mBsdfSliceCpp</a>, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a8723b98bbc0fbd06cad571d4ff9ddff6">mWi</a>, &amp;pdf_a);</div>
+<div class="line"><span class="lineno">  286</span>        ispc::Color result_b;</div>
+<div class="line"><span class="lineno">  287</span>        ispc::evalLobe(lobeIspc, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#af8198b07f2f3812257d17ab21641d25e">mBsdfSliceIspc</a>.get(), asIspc(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a8723b98bbc0fbd06cad571d4ff9ddff6">mWi</a>), result_b, pdf_b);</div>
+<div class="line"><span class="lineno">  288</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(pdf_a, pdf_b, sTolerance));</div>
+<div class="line"><span class="lineno">  289</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_test_hair_8cc_03.html#a90c6810bb8e4a58651a36efa80b41e6c">isEqualColor</a>(result_a, result_b, sTolerance));</div>
+<div class="line"><span class="lineno">  290</span>    }</div>
+<div class="line"><span class="lineno">  291</span>    <span class="comment">// test sample()</span></div>
+<div class="line"><span class="lineno">  292</span>    {</div>
+<div class="line"><span class="lineno">  293</span>        <span class="comment">// choose some randoms</span></div>
+<div class="line"><span class="lineno">  294</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> r1 = 0.123f;</div>
+<div class="line"><span class="lineno">  295</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> r2 = 0.567f;</div>
+<div class="line"><span class="lineno">  296</span> </div>
+<div class="line"><span class="lineno">  297</span>        <span class="keywordtype">float</span> pdf_a, pdf_b;</div>
+<div class="line"><span class="lineno">  298</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> wi_a;</div>
+<div class="line"><span class="lineno">  299</span>        ispc::Vec3f wi_b;</div>
+<div class="line"><span class="lineno">  300</span>        <span class="keyword">const</span> Color result_a = lobeCpp-&gt;sample(*<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a123581d1badd8b02b9383efddc0df063">mBsdfSliceCpp</a>, r1, r2, wi_a, pdf_a);</div>
+<div class="line"><span class="lineno">  301</span>        ispc::Color result_b;</div>
+<div class="line"><span class="lineno">  302</span>        ispc::sampleLobe(lobeIspc, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#af8198b07f2f3812257d17ab21641d25e">mBsdfSliceIspc</a>.get(), r1, r2, wi_b, pdf_b, result_b);</div>
+<div class="line"><span class="lineno">  303</span> </div>
+<div class="line"><span class="lineno">  304</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_test_hair_8cc_03.html#ae568d4dd4af05baa334e165fa07d4714">isEqualVec3f</a>(wi_a, wi_b, sTolerance));</div>
+<div class="line"><span class="lineno">  305</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(pdf_a, pdf_b, sTolerance));</div>
+<div class="line"><span class="lineno">  306</span>        CPPUNIT_ASSERT(<a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_test_hair_8cc_03.html#a90c6810bb8e4a58651a36efa80b41e6c">isEqualColor</a>(result_a, result_b, sTolerance));</div>
+<div class="line"><span class="lineno">  307</span>    }</div>
+<div class="line"><span class="lineno">  308</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae166a38a0fcfd577e750484ba9e969e4" name="ae166a38a0fcfd577e750484ba9e969e4"></a>
@@ -338,7 +807,38 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_hair_8cc_source.html#l00310">310</a> of file <a class="el" href="_test_hair_8cc_source.html">TestHair.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  311</span>{</div>
+<div class="line"><span class="lineno">  312</span>    <span class="comment">// setup lobes</span></div>
+<div class="line"><span class="lineno">  313</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> longShift = -3.0f;</div>
+<div class="line"><span class="lineno">  314</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> longRoughness = 0.5f;</div>
+<div class="line"><span class="lineno">  315</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> hairDir = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(1.0f, 1.0f, 1.0f));</div>
+<div class="line"><span class="lineno">  316</span>    <span class="keyword">static</span> <span class="keyword">const</span> Color hairColor(0.65f, 0.21f, 0.25f);</div>
+<div class="line"><span class="lineno">  317</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> hairUv(0.33f, 0.66f);</div>
+<div class="line"><span class="lineno">  318</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> eta = 1.45;</div>
+<div class="line"><span class="lineno">  319</span> </div>
+<div class="line"><span class="lineno">  320</span>    HairRLobe lobeCpp(hairDir,</div>
+<div class="line"><span class="lineno">  321</span>                      hairUv,</div>
+<div class="line"><span class="lineno">  322</span>                      1.0f, <span class="comment">//mediumIOR</span></div>
+<div class="line"><span class="lineno">  323</span>                      eta,</div>
+<div class="line"><span class="lineno">  324</span>                      ispc::HAIR_FRESNEL_DIELECTRIC_CYLINDER,</div>
+<div class="line"><span class="lineno">  325</span>                      0.0f, <span class="comment">//cuticle layer thickness</span></div>
+<div class="line"><span class="lineno">  326</span>                      longShift,</div>
+<div class="line"><span class="lineno">  327</span>                      longRoughness);</div>
+<div class="line"><span class="lineno">  328</span>    lobeCpp.setFresnel(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#aebd607496b79a0d51e34bb93fae01af5">mFresnelCpp</a>.get());</div>
+<div class="line"><span class="lineno">  329</span> </div>
+<div class="line"><span class="lineno">  330</span>    deleted_unique_ptr&lt;void&gt; lobeIspc(</div>
+<div class="line"><span class="lineno">  331</span>            ispc::createRLobe(asIspc(hairDir),</div>
+<div class="line"><span class="lineno">  332</span>                              asIspc(hairUv),</div>
+<div class="line"><span class="lineno">  333</span>                              eta,</div>
+<div class="line"><span class="lineno">  334</span>                              longShift,</div>
+<div class="line"><span class="lineno">  335</span>                              longRoughness,</div>
+<div class="line"><span class="lineno">  336</span>                              <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a870addff458c4894b6a533aeba6fb689">mFresnelIspc</a>.get()),</div>
+<div class="line"><span class="lineno">  337</span>            [](<span class="keywordtype">void</span> * p) { ispc::deleteLobe(p); } );</div>
+<div class="line"><span class="lineno">  338</span> </div>
+<div class="line"><span class="lineno">  339</span>    <a class="code hl_function" href="classmoonray_1_1shading_1_1_test_hair.html#acbe293bfe2892496dfa5df2793c04409">testLobe</a>(&amp;lobeCpp, lobeIspc.get());</div>
+<div class="line"><span class="lineno">  340</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_test_hair_html_acbe293bfe2892496dfa5df2793c04409"><div class="ttname"><a href="classmoonray_1_1shading_1_1_test_hair.html#acbe293bfe2892496dfa5df2793c04409">moonray::shading::TestHair::testLobe</a></div><div class="ttdeci">void testLobe(shading::HairBsdfLobe *lobeCpp, void *lobeIspc)</div><div class="ttdef"><b>Definition:</b> <a href="_test_hair_8cc_source.html#l00190">TestHair.cc:190</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2b01675e6fb2dc90f5957cf39d82498b" name="a2b01675e6fb2dc90f5957cf39d82498b"></a>
@@ -357,7 +857,42 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_hair_8cc_source.html#l00441">441</a> of file <a class="el" href="_test_hair_8cc_source.html">TestHair.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  442</span>{</div>
+<div class="line"><span class="lineno">  443</span>    <span class="comment">// setup lobes</span></div>
+<div class="line"><span class="lineno">  444</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> longRoughness = 0.5f;</div>
+<div class="line"><span class="lineno">  445</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> hairDir = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(1.0f, 1.0f, 1.0f));</div>
+<div class="line"><span class="lineno">  446</span>    <span class="keyword">static</span> <span class="keyword">const</span> Color hairColor(0.65f, 0.21f, 0.25f);</div>
+<div class="line"><span class="lineno">  447</span>    <span class="keyword">static</span> <span class="keyword">const</span> Color hairSigmaA = <a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#a11efb67fc21a9c2c6ef32e0bee40e438">shading::HairUtil::computeAbsorptionCoefficients</a>(hairColor,</div>
+<div class="line"><span class="lineno">  448</span>                                                                                 0.5f);</div>
+<div class="line"><span class="lineno">  449</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> hairUv(0.33f, 0.66f);</div>
+<div class="line"><span class="lineno">  450</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> eta = 1.45;</div>
+<div class="line"><span class="lineno">  451</span> </div>
+<div class="line"><span class="lineno">  452</span>    HairTRRTLobe lobeCpp(hairDir,</div>
+<div class="line"><span class="lineno">  453</span>                         hairUv,</div>
+<div class="line"><span class="lineno">  454</span>                         1.0f, <span class="comment">//mediumIOR</span></div>
+<div class="line"><span class="lineno">  455</span>                         eta,</div>
+<div class="line"><span class="lineno">  456</span>                         ispc::HAIR_FRESNEL_DIELECTRIC_CYLINDER,</div>
+<div class="line"><span class="lineno">  457</span>                         0.0f, <span class="comment">//cuticle layer thickness</span></div>
+<div class="line"><span class="lineno">  458</span>                         longRoughness,</div>
+<div class="line"><span class="lineno">  459</span>                         hairColor,</div>
+<div class="line"><span class="lineno">  460</span>                         hairSigmaA);</div>
+<div class="line"><span class="lineno">  461</span>    lobeCpp.setFresnel(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#aebd607496b79a0d51e34bb93fae01af5">mFresnelCpp</a>.get());</div>
+<div class="line"><span class="lineno">  462</span> </div>
+<div class="line"><span class="lineno">  463</span>    deleted_unique_ptr&lt;void&gt; lobeIspc(</div>
+<div class="line"><span class="lineno">  464</span>            ispc::createTRRTLobe(</div>
+<div class="line"><span class="lineno">  465</span>                    asIspc(hairDir),</div>
+<div class="line"><span class="lineno">  466</span>                    asIspc(hairUv),</div>
+<div class="line"><span class="lineno">  467</span>                    eta,</div>
+<div class="line"><span class="lineno">  468</span>                    0.0f,</div>
+<div class="line"><span class="lineno">  469</span>                    longRoughness,</div>
+<div class="line"><span class="lineno">  470</span>                    asIspc(hairColor),</div>
+<div class="line"><span class="lineno">  471</span>                    asIspc(hairSigmaA),</div>
+<div class="line"><span class="lineno">  472</span>                    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a870addff458c4894b6a533aeba6fb689">mFresnelIspc</a>.get()),</div>
+<div class="line"><span class="lineno">  473</span>            [](<span class="keywordtype">void</span> * p) { ispc::deleteLobe(p); } );</div>
+<div class="line"><span class="lineno">  474</span> </div>
+<div class="line"><span class="lineno">  475</span>    <a class="code hl_function" href="classmoonray_1_1shading_1_1_test_hair.html#acbe293bfe2892496dfa5df2793c04409">testLobe</a>(&amp;lobeCpp, lobeIspc.get());</div>
+<div class="line"><span class="lineno">  476</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a88f22d4f6a91d0b3730b0c834159e7a4" name="a88f22d4f6a91d0b3730b0c834159e7a4"></a>
@@ -376,7 +911,63 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_hair_8cc_source.html#l00342">342</a> of file <a class="el" href="_test_hair_8cc_source.html">TestHair.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  343</span>{</div>
+<div class="line"><span class="lineno">  344</span>    <span class="comment">// setup lobes</span></div>
+<div class="line"><span class="lineno">  345</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> longShift = -3.0f;</div>
+<div class="line"><span class="lineno">  346</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> longRoughness = 0.5f;</div>
+<div class="line"><span class="lineno">  347</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> azimRoughness = 0.22f;</div>
+<div class="line"><span class="lineno">  348</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> hairDir = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(1.0f, 1.0f, 1.0f));</div>
+<div class="line"><span class="lineno">  349</span>    <span class="keyword">static</span> <span class="keyword">const</span> Color hairColor(0.65f, 0.21f, 0.25f);</div>
+<div class="line"><span class="lineno">  350</span>    <span class="keyword">static</span> <span class="keyword">const</span> Color hairSigmaA = <a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#a11efb67fc21a9c2c6ef32e0bee40e438">shading::HairUtil::computeAbsorptionCoefficients</a>(hairColor,</div>
+<div class="line"><span class="lineno">  351</span>                                                                                 azimRoughness);</div>
+<div class="line"><span class="lineno">  352</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> hairUv(0.33f, 0.66f);</div>
+<div class="line"><span class="lineno">  353</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> eta = 1.45;</div>
+<div class="line"><span class="lineno">  354</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> showGlint = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  355</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> glintRoughness = 0.5f;</div>
+<div class="line"><span class="lineno">  356</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> glintEccentricity = 0.85f;</div>
+<div class="line"><span class="lineno">  357</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> glintSaturation = 0.5f;</div>
+<div class="line"><span class="lineno">  358</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> hairRotation = 1.0f;</div>
+<div class="line"><span class="lineno">  359</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> hairNormal = <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(0.0f, 1.0f, 0.0f);</div>
+<div class="line"><span class="lineno">  360</span> </div>
+<div class="line"><span class="lineno">  361</span>    HairTRTLobe lobeCpp(hairDir,</div>
+<div class="line"><span class="lineno">  362</span>                        hairUv,</div>
+<div class="line"><span class="lineno">  363</span>                        1.0f, <span class="comment">//mediumIOR</span></div>
+<div class="line"><span class="lineno">  364</span>                        eta,</div>
+<div class="line"><span class="lineno">  365</span>                        ispc::HAIR_FRESNEL_DIELECTRIC_CYLINDER,</div>
+<div class="line"><span class="lineno">  366</span>                        0.0f, <span class="comment">//cuticle layer thickness</span></div>
+<div class="line"><span class="lineno">  367</span>                        longShift,</div>
+<div class="line"><span class="lineno">  368</span>                        longRoughness,</div>
+<div class="line"><span class="lineno">  369</span>                        hairColor,</div>
+<div class="line"><span class="lineno">  370</span>                        hairSigmaA,</div>
+<div class="line"><span class="lineno">  371</span>                        sWhite,</div>
+<div class="line"><span class="lineno">  372</span>                        showGlint,</div>
+<div class="line"><span class="lineno">  373</span>                        glintRoughness,</div>
+<div class="line"><span class="lineno">  374</span>                        glintEccentricity,</div>
+<div class="line"><span class="lineno">  375</span>                        glintSaturation,</div>
+<div class="line"><span class="lineno">  376</span>                        hairRotation,</div>
+<div class="line"><span class="lineno">  377</span>                        hairNormal);</div>
+<div class="line"><span class="lineno">  378</span>    lobeCpp.setFresnel(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#aebd607496b79a0d51e34bb93fae01af5">mFresnelCpp</a>.get());</div>
+<div class="line"><span class="lineno">  379</span> </div>
+<div class="line"><span class="lineno">  380</span>    deleted_unique_ptr&lt;void&gt; lobeIspc(</div>
+<div class="line"><span class="lineno">  381</span>            ispc::createTRTLobe(asIspc(hairDir),</div>
+<div class="line"><span class="lineno">  382</span>                                asIspc(hairUv),</div>
+<div class="line"><span class="lineno">  383</span>                                eta,</div>
+<div class="line"><span class="lineno">  384</span>                                longShift,</div>
+<div class="line"><span class="lineno">  385</span>                                longRoughness,</div>
+<div class="line"><span class="lineno">  386</span>                                asIspc(hairColor),</div>
+<div class="line"><span class="lineno">  387</span>                                asIspc(hairSigmaA),</div>
+<div class="line"><span class="lineno">  388</span>                                showGlint,</div>
+<div class="line"><span class="lineno">  389</span>                                glintRoughness,</div>
+<div class="line"><span class="lineno">  390</span>                                glintEccentricity,</div>
+<div class="line"><span class="lineno">  391</span>                                glintSaturation,</div>
+<div class="line"><span class="lineno">  392</span>                                hairRotation,</div>
+<div class="line"><span class="lineno">  393</span>                                asIspc(hairNormal),</div>
+<div class="line"><span class="lineno">  394</span>                                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a870addff458c4894b6a533aeba6fb689">mFresnelIspc</a>.get()),</div>
+<div class="line"><span class="lineno">  395</span>            [](<span class="keywordtype">void</span> * p) { ispc::deleteLobe(p); } );</div>
+<div class="line"><span class="lineno">  396</span> </div>
+<div class="line"><span class="lineno">  397</span>    <a class="code hl_function" href="classmoonray_1_1shading_1_1_test_hair.html#acbe293bfe2892496dfa5df2793c04409">testLobe</a>(&amp;lobeCpp, lobeIspc.get());</div>
+<div class="line"><span class="lineno">  398</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2cd114650a20ea53d6ae76883815c30d" name="a2cd114650a20ea53d6ae76883815c30d"></a>
@@ -395,6 +986,262 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_hair_8cc_source.html#l00400">400</a> of file <a class="el" href="_test_hair_8cc_source.html">TestHair.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  401</span>{</div>
+<div class="line"><span class="lineno">  402</span>    <span class="comment">// setup lobes</span></div>
+<div class="line"><span class="lineno">  403</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> longShift = -3.0f;</div>
+<div class="line"><span class="lineno">  404</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> longRoughness = 0.5f;</div>
+<div class="line"><span class="lineno">  405</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> azimRoughness = 0.4f;</div>
+<div class="line"><span class="lineno">  406</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> hairDir = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(1.0f, 1.0f, 1.0f));</div>
+<div class="line"><span class="lineno">  407</span>    <span class="keyword">static</span> <span class="keyword">const</span> Color hairColor(0.65f, 0.21f, 0.25f);</div>
+<div class="line"><span class="lineno">  408</span>    <span class="keyword">static</span> <span class="keyword">const</span> Color hairSigmaA = <a class="code hl_function" href="classmoonray_1_1shading_1_1_hair_util.html#a11efb67fc21a9c2c6ef32e0bee40e438">shading::HairUtil::computeAbsorptionCoefficients</a>(hairColor,</div>
+<div class="line"><span class="lineno">  409</span>                                                                                 azimRoughness);</div>
+<div class="line"><span class="lineno">  410</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> hairUv(0.33f, 0.66f);</div>
+<div class="line"><span class="lineno">  411</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> eta = 1.45;</div>
+<div class="line"><span class="lineno">  412</span> </div>
+<div class="line"><span class="lineno">  413</span>    HairTTLobe lobeCpp(hairDir,</div>
+<div class="line"><span class="lineno">  414</span>                       hairUv,</div>
+<div class="line"><span class="lineno">  415</span>                       1.0f, <span class="comment">//mediumIOR</span></div>
+<div class="line"><span class="lineno">  416</span>                       eta,</div>
+<div class="line"><span class="lineno">  417</span>                       ispc::HAIR_FRESNEL_DIELECTRIC_CYLINDER,</div>
+<div class="line"><span class="lineno">  418</span>                       0.0f, <span class="comment">//cuticle layer thickness</span></div>
+<div class="line"><span class="lineno">  419</span>                       longShift,</div>
+<div class="line"><span class="lineno">  420</span>                       longRoughness,</div>
+<div class="line"><span class="lineno">  421</span>                       azimRoughness,</div>
+<div class="line"><span class="lineno">  422</span>                       hairColor,</div>
+<div class="line"><span class="lineno">  423</span>                       hairSigmaA);</div>
+<div class="line"><span class="lineno">  424</span>    lobeCpp.setFresnel(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#aebd607496b79a0d51e34bb93fae01af5">mFresnelCpp</a>.get());</div>
+<div class="line"><span class="lineno">  425</span> </div>
+<div class="line"><span class="lineno">  426</span>    deleted_unique_ptr&lt;void&gt; lobeIspc(</div>
+<div class="line"><span class="lineno">  427</span>            ispc::createTTLobe(asIspc(hairDir),</div>
+<div class="line"><span class="lineno">  428</span>                               asIspc(hairUv),</div>
+<div class="line"><span class="lineno">  429</span>                               eta,</div>
+<div class="line"><span class="lineno">  430</span>                               longShift,</div>
+<div class="line"><span class="lineno">  431</span>                               longRoughness,</div>
+<div class="line"><span class="lineno">  432</span>                               azimRoughness,</div>
+<div class="line"><span class="lineno">  433</span>                               asIspc(hairColor),</div>
+<div class="line"><span class="lineno">  434</span>                               asIspc(hairSigmaA),</div>
+<div class="line"><span class="lineno">  435</span>                               <a class="code hl_variable" href="classmoonray_1_1shading_1_1_test_hair.html#a870addff458c4894b6a533aeba6fb689">mFresnelIspc</a>.get()),</div>
+<div class="line"><span class="lineno">  436</span>            [](<span class="keywordtype">void</span> * p) { ispc::deleteLobe(p); } );</div>
+<div class="line"><span class="lineno">  437</span> </div>
+<div class="line"><span class="lineno">  438</span>    <a class="code hl_function" href="classmoonray_1_1shading_1_1_test_hair.html#acbe293bfe2892496dfa5df2793c04409">testLobe</a>(&amp;lobeCpp, lobeIspc.get());</div>
+<div class="line"><span class="lineno">  439</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a123581d1badd8b02b9383efddc0df063" name="a123581d1badd8b02b9383efddc0df063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a123581d1badd8b02b9383efddc0df063">&#9670;&#160;</a></span>mBsdfSliceCpp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classmoonray_1_1shading_1_1_bsdf_slice.html">shading::BsdfSlice</a>&gt; moonray::shading::TestHair::mBsdfSliceCpp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_hair_8h_source.html#l00070">70</a> of file <a class="el" href="_test_hair_8h_source.html">TestHair.h</a>.</p>
+
+</div>
+</div>
+<a id="af8198b07f2f3812257d17ab21641d25e" name="af8198b07f2f3812257d17ab21641d25e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8198b07f2f3812257d17ab21641d25e">&#9670;&#160;</a></span>mBsdfSliceIspc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#a89a9c4261f0dbb5c004a6b511873842c">deleted_unique_ptr</a>&lt;void&gt; moonray::shading::TestHair::mBsdfSliceIspc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_hair_8h_source.html#l00075">75</a> of file <a class="el" href="_test_hair_8h_source.html">TestHair.h</a>.</p>
+
+</div>
+</div>
+<a id="aebd607496b79a0d51e34bb93fae01af5" name="aebd607496b79a0d51e34bb93fae01af5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd607496b79a0d51e34bb93fae01af5">&#9670;&#160;</a></span>mFresnelCpp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classmoonray_1_1shading_1_1_fresnel.html">shading::Fresnel</a>&gt; moonray::shading::TestHair::mFresnelCpp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_hair_8h_source.html#l00072">72</a> of file <a class="el" href="_test_hair_8h_source.html">TestHair.h</a>.</p>
+
+</div>
+</div>
+<a id="a870addff458c4894b6a533aeba6fb689" name="a870addff458c4894b6a533aeba6fb689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a870addff458c4894b6a533aeba6fb689">&#9670;&#160;</a></span>mFresnelIspc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#a89a9c4261f0dbb5c004a6b511873842c">deleted_unique_ptr</a>&lt;void&gt; moonray::shading::TestHair::mFresnelIspc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_hair_8h_source.html#l00077">77</a> of file <a class="el" href="_test_hair_8h_source.html">TestHair.h</a>.</p>
+
+</div>
+</div>
+<a id="a3f4c3e8045e7813e68dec0f88163aa30" name="a3f4c3e8045e7813e68dec0f88163aa30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f4c3e8045e7813e68dec0f88163aa30">&#9670;&#160;</a></span>mHairStateCpp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classmoonray_1_1shading_1_1_hair_state.html">shading::HairState</a>&gt; moonray::shading::TestHair::mHairStateCpp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_hair_8h_source.html#l00071">71</a> of file <a class="el" href="_test_hair_8h_source.html">TestHair.h</a>.</p>
+
+</div>
+</div>
+<a id="a2e39c5d488ccca1548612f125bfd3f41" name="a2e39c5d488ccca1548612f125bfd3f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e39c5d488ccca1548612f125bfd3f41">&#9670;&#160;</a></span>mHairStateIspc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html#a89a9c4261f0dbb5c004a6b511873842c">deleted_unique_ptr</a>&lt;void&gt; moonray::shading::TestHair::mHairStateIspc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_hair_8h_source.html#l00076">76</a> of file <a class="el" href="_test_hair_8h_source.html">TestHair.h</a>.</p>
+
+</div>
+</div>
+<a id="afa22069d0191f496b930e8bf37e07a9a" name="afa22069d0191f496b930e8bf37e07a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa22069d0191f496b930e8bf37e07a9a">&#9670;&#160;</a></span>mNg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Vec3f moonray::shading::TestHair::mNg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_hair_8h_source.html#l00079">79</a> of file <a class="el" href="_test_hair_8h_source.html">TestHair.h</a>.</p>
+
+</div>
+</div>
+<a id="a8723b98bbc0fbd06cad571d4ff9ddff6" name="a8723b98bbc0fbd06cad571d4ff9ddff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8723b98bbc0fbd06cad571d4ff9ddff6">&#9670;&#160;</a></span>mWi</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Vec3f moonray::shading::TestHair::mWi</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_hair_8h_source.html#l00080">80</a> of file <a class="el" href="_test_hair_8h_source.html">TestHair.h</a>.</p>
+
+</div>
+</div>
+<a id="aef04f867a5044b39a8783b3d380c8c67" name="aef04f867a5044b39a8783b3d380c8c67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef04f867a5044b39a8783b3d380c8c67">&#9670;&#160;</a></span>mWo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Vec3f moonray::shading::TestHair::mWo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_hair_8h_source.html#l00081">81</a> of file <a class="el" href="_test_hair_8h_source.html">TestHair.h</a>.</p>
 
 </div>
 </div>
@@ -403,9 +1250,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/unittest/<a class="el" href="_test_hair_8cc_source.html">TestHair.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_test_hair.html">TestHair</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

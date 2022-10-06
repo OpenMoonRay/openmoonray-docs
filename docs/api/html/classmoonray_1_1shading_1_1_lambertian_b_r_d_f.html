@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_lambertian_b_r_d_f.html">LambertianBRDF</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_lambertian_b_r_d_f.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_lambertian_b_r_d_f-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::LambertianBRDF Class Reference</div></div>
 </div><!--header-->
@@ -83,6 +100,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a682c847a1244e9d36e11159a66fb175a inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade9beef66195237d2338872664638b28 inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html">BsdfComponent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html#ade9beef66195237d2338872664638b28">operator=</a> (const <a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html">BsdfComponent</a> &amp;other)=delete</td></tr>
 <tr class="separator:ade9beef66195237d2338872664638b28 inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a7c8355d1de494b9db1ccda230232f327"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Vec3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_lambertian_b_r_d_f.html#a7c8355d1de494b9db1ccda230232f327">mN</a></td></tr>
+<tr class="separator:a7c8355d1de494b9db1ccda230232f327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aedb091a70c495cdf68dacf47bdf525"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_lambertian_b_r_d_f.html#a5aedb091a70c495cdf68dacf47bdf525">mAlbedo</a></td></tr>
+<tr class="separator:a5aedb091a70c495cdf68dacf47bdf525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -129,7 +153,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00191">191</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  193</span>                                                                   :</div>
+<div class="line"><span class="lineno">  194</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_component.html#a72b0fdcc3b8de15876dbe64e28bf86bc">BsdfComponent</a>(iridescence),</div>
+<div class="line"><span class="lineno">  195</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_lambertian_b_r_d_f.html#a7c8355d1de494b9db1ccda230232f327">mN</a>(N),</div>
+<div class="line"><span class="lineno">  196</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_lambertian_b_r_d_f.html#a5aedb091a70c495cdf68dacf47bdf525">mAlbedo</a>(<a class="code hl_function" href="namespacemoonray_1_1shading.html#ac5f48ddb1befc06e27b287ddc95e615e">albedo</a>) {}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_component_html_a72b0fdcc3b8de15876dbe64e28bf86bc"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_component.html#a72b0fdcc3b8de15876dbe64e28bf86bc">moonray::shading::BsdfComponent::BsdfComponent</a></div><div class="ttdeci">BsdfComponent(const Iridescence *const iridescence=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l00034">BsdfComponent.h:34</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_lambertian_b_r_d_f_html_a5aedb091a70c495cdf68dacf47bdf525"><div class="ttname"><a href="classmoonray_1_1shading_1_1_lambertian_b_r_d_f.html#a5aedb091a70c495cdf68dacf47bdf525">moonray::shading::LambertianBRDF::mAlbedo</a></div><div class="ttdeci">scene_rdl2::math::Color mAlbedo</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l00205">BsdfComponent.h:205</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_lambertian_b_r_d_f_html_a7c8355d1de494b9db1ccda230232f327"><div class="ttname"><a href="classmoonray_1_1shading_1_1_lambertian_b_r_d_f.html#a7c8355d1de494b9db1ccda230232f327">moonray::shading::LambertianBRDF::mN</a></div><div class="ttdeci">scene_rdl2::math::Vec3f mN</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l00204">BsdfComponent.h:204</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_ac5f48ddb1befc06e27b287ddc95e615e"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ac5f48ddb1befc06e27b287ddc95e615e">moonray::shading::albedo</a></div><div class="ttdeci">scene_rdl2::math::Color albedo(const BsdfLobev &amp;lobev, const BsdfSlicev &amp;slicev, int lane)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdfv_8cc_source.html#l00035">Bsdfv.cc:35</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa71055b943d966fec6bb43096f5d3111" name="aa71055b943d966fec6bb43096f5d3111"></a>
@@ -156,7 +188,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00198">198</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  198</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -184,7 +217,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00201">201</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  201</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_lambertian_b_r_d_f.html#a5aedb091a70c495cdf68dacf47bdf525">mAlbedo</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3c5983ec819756f5b9df414839012d7f" name="a3c5983ec819756f5b9df414839012d7f"></a>
@@ -211,6 +245,56 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00200">200</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  200</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_lambertian_b_r_d_f.html#a7c8355d1de494b9db1ccda230232f327">mN</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5aedb091a70c495cdf68dacf47bdf525" name="a5aedb091a70c495cdf68dacf47bdf525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aedb091a70c495cdf68dacf47bdf525">&#9670;&#160;</a></span>mAlbedo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Color moonray::shading::LambertianBRDF::mAlbedo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00205">205</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a7c8355d1de494b9db1ccda230232f327" name="a7c8355d1de494b9db1ccda230232f327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c8355d1de494b9db1ccda230232f327">&#9670;&#160;</a></span>mN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Vec3f moonray::shading::LambertianBRDF::mN</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00204">204</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
 
 </div>
 </div>
@@ -218,9 +302,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/<a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_lambertian_b_r_d_f.html">LambertianBRDF</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

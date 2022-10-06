@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_3ffafe8d4194a26e471fc283bfe39627.html">shading</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_ramp_control_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">RampControl.cc</div></div>
 </div><!--header-->
@@ -50,7 +66,10 @@ $(function() {
 <a href="_ramp_control_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2018-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file RampControlImpl.cc</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">///</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"></span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_ramp_control_8h.html">RampControl.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
@@ -64,17 +83,17 @@ $(function() {
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacescene__rdl2.html">scene_rdl2</a>;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacescene__rdl2_1_1math.html">scene_rdl2::math</a>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html">   21</a></span><span class="keyword">namespace </span>{</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Simple line slope calculation: (y2 - y1) / (x2 - x1)</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">inline</span> <span class="keywordtype">float</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>computeLineSlope(<span class="keywordtype">float</span> i0, <span class="keywordtype">float</span> o0, <span class="keywordtype">float</span> i1, <span class="keywordtype">float</span> o1)</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#aae399221dd83f40fea10b9cf2966327d">   25</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#aae399221dd83f40fea10b9cf2966327d">computeLineSlope</a>(<span class="keywordtype">float</span> i0, <span class="keywordtype">float</span> o0, <span class="keywordtype">float</span> i1, <span class="keywordtype">float</span> o1)</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">return</span> i0 == i1 ? 0.0f : (o1 - o0) / (i1 - i0);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">inline</span> Color</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>computeLineSlope(<span class="keywordtype">float</span> i0, <span class="keyword">const</span> Color&amp; o0, <span class="keywordtype">float</span> i1, <span class="keyword">const</span> Color&amp; o1)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a2ff580d1afb08afeccac7ca49bbdb000">   31</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#aae399221dd83f40fea10b9cf2966327d">computeLineSlope</a>(<span class="keywordtype">float</span> i0, <span class="keyword">const</span> Color&amp; o0, <span class="keywordtype">float</span> i1, <span class="keyword">const</span> Color&amp; o1)</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">return</span> i0 == i1 ? Color(0.0f) : (o1 - o0) / (i1 - i0);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
@@ -86,7 +105,7 @@ $(function() {
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// @param &quot;end&quot; is used to indicate boundary cases, where</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// end = 1 if cv1 is the first cv, end = 2 if cv2 is the last cv, end = 0 no boundary case</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>computeFKMonotonoSlope(<span class="keywordtype">float</span> i0, <span class="keywordtype">float</span> o0,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a85a54b27c35cf5795b3c312ea19adeb9">   43</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a85a54b27c35cf5795b3c312ea19adeb9">computeFKMonotonoSlope</a>(<span class="keywordtype">float</span> i0, <span class="keywordtype">float</span> o0,</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                       <span class="keywordtype">float</span> i1, <span class="keywordtype">float</span> o1,</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                       <span class="keywordtype">float</span> i2, <span class="keywordtype">float</span> o2,</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                       <span class="keywordtype">float</span> i3, <span class="keywordtype">float</span> o3,</div>
@@ -97,9 +116,9 @@ $(function() {
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// if end==3, then there are only 2 control points</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// in that case we set all slope information to 0</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// which ends up being a smoothstep operation</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> delta2 = (<a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> != 2 &amp;&amp; <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> != 3) ? computeLineSlope(i2, o2, i3, o3) : 0.0f;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> delta1 = <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> != 3 ? computeLineSlope(i1, o1, i2, o2) : 0.0f;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> delta0 = (<a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> != 1 &amp;&amp; <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> != 3) ? computeLineSlope(i0, o0, i1, o1) : 0.0f;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> delta2 = (<a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> != 2 &amp;&amp; <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> != 3) ? <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#aae399221dd83f40fea10b9cf2966327d">computeLineSlope</a>(i2, o2, i3, o3) : 0.0f;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> delta1 = <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> != 3 ? <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#aae399221dd83f40fea10b9cf2966327d">computeLineSlope</a>(i1, o1, i2, o2) : 0.0f;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> delta0 = (<a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> != 1 &amp;&amp; <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> != 3) ? <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#aae399221dd83f40fea10b9cf2966327d">computeLineSlope</a>(i0, o0, i1, o1) : 0.0f;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">if</span> (isZero(delta1)) {</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        slope1 = 0.0f;</div>
@@ -136,24 +155,24 @@ $(function() {
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>computeFKMonotonoSlope(<span class="keywordtype">float</span> i0, <span class="keyword">const</span> Color&amp; o0,</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a64e420071a05875615f5998dbe37b762">   93</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a85a54b27c35cf5795b3c312ea19adeb9">computeFKMonotonoSlope</a>(<span class="keywordtype">float</span> i0, <span class="keyword">const</span> Color&amp; o0,</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                       <span class="keywordtype">float</span> i1, <span class="keyword">const</span> Color&amp; o1,</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                       <span class="keywordtype">float</span> i2, <span class="keyword">const</span> Color&amp; o2,</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                       <span class="keywordtype">float</span> i3, <span class="keyword">const</span> Color&amp; o3,</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                       <span class="keywordtype">int</span> <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a>,</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                       Color&amp; slope1, Color&amp; slope2)</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>{</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    computeFKMonotonoSlope(i0, o0.r,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a85a54b27c35cf5795b3c312ea19adeb9">computeFKMonotonoSlope</a>(i0, o0.r,</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                           i1, o1.r,</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                           i2, o2.r,</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                           i3, o3.r,</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                           <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a>, slope1.r, slope2.r);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    computeFKMonotonoSlope(i0, o0.g,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a85a54b27c35cf5795b3c312ea19adeb9">computeFKMonotonoSlope</a>(i0, o0.g,</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                           i1, o1.g,</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                           i2, o2.g,</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                           i3, o3.g,</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                           <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a>, slope1.g, slope2.g);</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    computeFKMonotonoSlope(i0, o0.b,</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a85a54b27c35cf5795b3c312ea19adeb9">computeFKMonotonoSlope</a>(i0, o0.b,</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                           i1, o1.b,</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                           i2, o2.b,</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                           i3, o3.b,</div>
@@ -164,34 +183,34 @@ $(function() {
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">// value t in [0, 1], returns a value interpolated by Centripital</span></div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">// Catmull Rom spline.</span></div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>finline <span class="keywordtype">float</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>interpolateCatmullRom(<span class="keyword">const</span> <span class="keywordtype">float</span> t, <span class="keyword">const</span> <span class="keywordtype">float</span> p[4])</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ad1864165495c5fcb4b44b9e5276a7393">  121</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ad1864165495c5fcb4b44b9e5276a7393">interpolateCatmullRom</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> t, <span class="keyword">const</span> <span class="keywordtype">float</span> p[4])</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>{</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a9e759f29bca3ea7593c72a2acfb487a4">Vec4f</a> controlPoints(p[0], p[1], p[2], p[3]);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    Vec4f controlPoints(p[0], p[1], p[2], p[3]);</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">static</span> <span class="keyword">const</span> Mat4f catmullMatrix( 0.0f,  2.0f,  0.0f,  0.0f,</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                                     -1.0f,  0.0f,  1.0f,  0.0f,</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                                      2.0f, -5.0f,  4.0f, -1.0f,</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                                     -1.0f,  3.0f, -3.0f,  1.0f);</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a9e759f29bca3ea7593c72a2acfb487a4">Vec4f</a> tVec(1.0f, t, t * t, t * t * t);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keyword">const</span> Vec4f tVec(1.0f, t, t * t, t * t * t);</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(0.5f * tVec * catmullMatrix, controlPoints);</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>finline Color</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>interpolateCatmullRom(<span class="keyword">const</span> <span class="keywordtype">float</span> t, <span class="keyword">const</span> Color p[4])</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ab2068b71cf1b243df71d9a0708f3b6a5">  134</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ad1864165495c5fcb4b44b9e5276a7393">interpolateCatmullRom</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> t, <span class="keyword">const</span> Color p[4])</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>{</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> r[4] = {p[0].r, p[1].r, p[2].r, p[3].r};</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> g[4] = {p[0].g, p[1].g, p[2].g, p[3].g};</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> b[4] = {p[0].b, p[1].b, p[2].b, p[3].b};</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordflow">return</span> Color(interpolateCatmullRom(t, r),</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                 interpolateCatmullRom(t, g),</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                 interpolateCatmullRom(t, b));</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordflow">return</span> Color(<a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ad1864165495c5fcb4b44b9e5276a7393">interpolateCatmullRom</a>(t, r),</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                 <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ad1864165495c5fcb4b44b9e5276a7393">interpolateCatmullRom</a>(t, g),</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                 <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ad1864165495c5fcb4b44b9e5276a7393">interpolateCatmullRom</a>(t, b));</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>}</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">// Returns a value interpolated by cubic hermite spline, given</span></div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">// two CVs and end slopes</span></div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>finline <span class="keywordtype">float</span></div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>interpolateCubicHermite(<span class="keyword">const</span> <span class="keywordtype">float</span> t,</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a8a3c6956216cc95d1197c79fff6e12c7">  148</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a8a3c6956216cc95d1197c79fff6e12c7">interpolateCubicHermite</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> t,</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                        <span class="keyword">const</span> <span class="keywordtype">float</span> x1, <span class="keyword">const</span> <span class="keywordtype">float</span> x2,</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                        <span class="keyword">const</span> <span class="keywordtype">float</span> y1, <span class="keyword">const</span> <span class="keywordtype">float</span> y2,</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                        <span class="keyword">const</span> <span class="keywordtype">float</span> slope1, <span class="keyword">const</span> <span class="keywordtype">float</span> slope2)</div>
@@ -212,22 +231,22 @@ $(function() {
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">// Returns a value interpolated by cubic hermite spline, given</span></div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">// two CVs and end slopes</span></div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>finline Color</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>interpolateCubicHermite(<span class="keyword">const</span> <span class="keywordtype">float</span> t,</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a03148f74906a857d4356d9cc3fd17a80">  169</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a8a3c6956216cc95d1197c79fff6e12c7">interpolateCubicHermite</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> t,</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                        <span class="keyword">const</span> <span class="keywordtype">float</span> x1, <span class="keyword">const</span> <span class="keywordtype">float</span> x2,</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                        <span class="keyword">const</span> Color&amp; y1, <span class="keyword">const</span> Color&amp; y2,</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                        <span class="keyword">const</span> Color&amp; slope1, <span class="keyword">const</span> Color&amp; slope2)</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>{</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    Color result;</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    result.r = interpolateCubicHermite(t, x1, x2, y1.r, y2.r, slope1.r, slope2.r);</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    result.g = interpolateCubicHermite(t, x1, x2, y1.g, y2.g, slope1.g, slope2.g);</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    result.b = interpolateCubicHermite(t, x1, x2, y1.b, y2.b, slope1.b, slope2.b);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    result.r = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a8a3c6956216cc95d1197c79fff6e12c7">interpolateCubicHermite</a>(t, x1, x2, y1.r, y2.r, slope1.r, slope2.r);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    result.g = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a8a3c6956216cc95d1197c79fff6e12c7">interpolateCubicHermite</a>(t, x1, x2, y1.g, y2.g, slope1.g, slope2.g);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    result.b = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a8a3c6956216cc95d1197c79fff6e12c7">interpolateCubicHermite</a>(t, x1, x2, y1.b, y2.b, slope1.b, slope2.b);</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keywordflow">return</span> result;</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>}</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>evaluateMonotoneSlopes(<span class="keyword">const</span> <span class="keywordtype">int</span> numEntries,</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ad02fb7f40ce9f57e8257d80fa0798c54">  184</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ad02fb7f40ce9f57e8257d80fa0798c54">evaluateMonotoneSlopes</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> numEntries,</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                       <span class="keyword">const</span> <span class="keywordtype">float</span>* <span class="keyword">const</span> inputs,</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                       <span class="keyword">const</span> <span class="keywordtype">float</span>* <span class="keyword">const</span> outputs,</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                       <span class="keyword">const</span> ispc::RampInterpolatorMode* <span class="keyword">const</span> interpolators,</div>
@@ -261,7 +280,7 @@ $(function() {
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            k3 = k2; <span class="comment">// id3 will not be used</span></div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> = (<a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> == 1) ? 3 : 2; <span class="comment">//3 is special case if there are only 2 points</span></div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        }</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        computeFKMonotonoSlope(inputs[k0], outputs[k0],</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a85a54b27c35cf5795b3c312ea19adeb9">computeFKMonotonoSlope</a>(inputs[k0], outputs[k0],</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                               inputs[k1], outputs[k1],</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                               inputs[k2], outputs[k2],</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>                               inputs[k3], outputs[k3],</div>
@@ -270,7 +289,7 @@ $(function() {
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <span class="keywordflow">if</span> (idx == numEntries - 1) {</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        <span class="comment">// Last CV hasn&#39;t been assigned a slope yet, if odd number of ramp points</span></div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> lastIdx = numEntries - 1;</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        slopes[lastIdx] = computeLineSlope(inputs[lastIdx - 1],</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        slopes[lastIdx] = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#aae399221dd83f40fea10b9cf2966327d">computeLineSlope</a>(inputs[lastIdx - 1],</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                                           outputs[lastIdx - 1],</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                                           inputs[lastIdx],</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                                           outputs[lastIdx]);</div>
@@ -278,7 +297,7 @@ $(function() {
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>}</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>evaluateMonotoneSlopes(<span class="keyword">const</span> <span class="keywordtype">int</span> numEntries,</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a231837d54b18640b08e0c1bfaa7a1cd7">  235</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ad02fb7f40ce9f57e8257d80fa0798c54">evaluateMonotoneSlopes</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> numEntries,</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>                       <span class="keyword">const</span> <span class="keywordtype">float</span>* <span class="keyword">const</span> inputs,</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                       <span class="keyword">const</span> Color* <span class="keyword">const</span> outputs,</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                       <span class="keyword">const</span> ispc::RampInterpolatorMode* <span class="keyword">const</span> interpolators,</div>
@@ -312,7 +331,7 @@ $(function() {
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            k3 = k2; <span class="comment">// id3 will not be used</span></div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> = (<a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> == 1)? 3:2; <span class="comment">//3 is special case if there are only 2 points</span></div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        }</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        computeFKMonotonoSlope(inputs[k0], outputs[k0],</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a85a54b27c35cf5795b3c312ea19adeb9">computeFKMonotonoSlope</a>(inputs[k0], outputs[k0],</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                               inputs[k1], outputs[k1],</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                               inputs[k2], outputs[k2],</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                               inputs[k3], outputs[k3],</div>
@@ -321,23 +340,23 @@ $(function() {
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <span class="keywordflow">if</span> (idx == numEntries - 1) {</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        <span class="comment">// Last CV hasn&#39;t been assigned a slope yet, if odd number of ramp points</span></div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> lastIdx = numEntries - 1;</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        slopes[lastIdx] = computeLineSlope(inputs[lastIdx - 1], outputs[lastIdx - 1],</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        slopes[lastIdx] = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#aae399221dd83f40fea10b9cf2966327d">computeLineSlope</a>(inputs[lastIdx - 1], outputs[lastIdx - 1],</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                                           inputs[lastIdx], outputs[lastIdx]);</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    }</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>}</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="comment">// Struct to hold one ramp data point</span></div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> OutputType&gt;</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="keyword">struct </span>RampCv</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html">  285</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html">RampCv</a></div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>{</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keywordtype">float</span> input;</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    OutputType output;</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    ispc::RampInterpolatorMode interp;</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno"><a class="line" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html#a7e08d5877c70f4ee7ebc35d8498120a1">  287</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html#a7e08d5877c70f4ee7ebc35d8498120a1">input</a>;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html#ada5b71e765a631ced02def4dd263fd8c">  288</a></span>    OutputType <a class="code hl_variable" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html#ada5b71e765a631ced02def4dd263fd8c">output</a>;</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html#a6321e44724164d49d6f1768efffefe42">  289</a></span>    ispc::RampInterpolatorMode <a class="code hl_variable" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html#a6321e44724164d49d6f1768efffefe42">interp</a>;</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>};</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> OutputType&gt;</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>sortEntries(<span class="keyword">const</span> uint32_t numEntries,</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a11a236d067a323fc28df0afc221153e8">  294</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a11a236d067a323fc28df0afc221153e8">sortEntries</a>(<span class="keyword">const</span> uint32_t numEntries,</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            <span class="keywordtype">float</span>* <span class="keyword">const</span> inputs,</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            OutputType* <span class="keyword">const</span> outputs,</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>            ispc::RampInterpolatorMode* <span class="keyword">const</span> interpolators)</div>
@@ -355,31 +374,31 @@ $(function() {
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <span class="keywordflow">if</span> (isSorted) { <span class="keywordflow">return</span>; }</div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    <span class="comment">// pack the points into array of structs for sorting</span></div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    RampCv&lt;OutputType&gt; rampCvs[ispc::RAMP_MAX_POINTS];</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    <a class="code hl_struct" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html">RampCv&lt;OutputType&gt;</a> rampCvs[ispc::RAMP_MAX_POINTS];</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    <span class="comment">// populate array of structs</span></div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    <span class="keywordflow">for</span> (uint32_t idx = 0; idx &lt; numEntries; ++idx) {</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        rampCvs[idx].input = inputs[idx];</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        rampCvs[idx].output = outputs[idx];</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        rampCvs[idx].interp = interpolators[idx];</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        rampCvs[idx].<a class="code hl_variable" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html#a7e08d5877c70f4ee7ebc35d8498120a1">input</a> = inputs[idx];</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        rampCvs[idx].<a class="code hl_variable" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html#ada5b71e765a631ced02def4dd263fd8c">output</a> = outputs[idx];</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        rampCvs[idx].<a class="code hl_variable" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html#a6321e44724164d49d6f1768efffefe42">interp</a> = interpolators[idx];</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    }</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <span class="comment">// perform sorting</span></div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    std::sort(rampCvs, rampCvs + numEntries,</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>              [](<span class="keyword">const</span> RampCv&lt;OutputType&gt;&amp; a, <span class="keyword">const</span> RampCv&lt;OutputType&gt;&amp; b) {</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>                  <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a>.input &lt; b.input;</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>              [](<span class="keyword">const</span> <a class="code hl_struct" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html">RampCv&lt;OutputType&gt;</a>&amp; a, <span class="keyword">const</span> <a class="code hl_struct" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html">RampCv&lt;OutputType&gt;</a>&amp; b) {</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>                  <span class="keywordflow">return</span> a.input &lt; b.<a class="code hl_variable" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html#a7e08d5877c70f4ee7ebc35d8498120a1">input</a>;</div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>              });</div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <span class="comment">// unpack structs back into arrays</span></div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    <span class="keywordflow">for</span> (uint32_t idx = 0; idx &lt; numEntries; ++idx) {</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        inputs[idx] = rampCvs[idx].input;</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>        outputs[idx] = rampCvs[idx].output;</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        interpolators[idx] = rampCvs[idx].interp;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        inputs[idx] = rampCvs[idx].<a class="code hl_variable" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html#a7e08d5877c70f4ee7ebc35d8498120a1">input</a>;</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>        outputs[idx] = rampCvs[idx].<a class="code hl_variable" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html#ada5b71e765a631ced02def4dd263fd8c">output</a>;</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        interpolators[idx] = rampCvs[idx].<a class="code hl_variable" href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html#a6321e44724164d49d6f1768efffefe42">interp</a>;</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    }</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>}</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>findRampSpan(<span class="keyword">const</span> <span class="keywordtype">int</span> numEntries,</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#aa4020c0abdffed5af4cb37ad303e9eef">  336</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#aa4020c0abdffed5af4cb37ad303e9eef">findRampSpan</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> numEntries,</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>             <span class="keyword">const</span> <span class="keywordtype">float</span>* inputs,</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>             <span class="keyword">const</span> <span class="keywordtype">float</span> t,</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>             <span class="keywordtype">int</span>&amp; leftIdx,</div>
@@ -413,7 +432,7 @@ $(function() {
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> OutputType&gt;</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>OutputType</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>computeCubicSplineValue(<span class="keyword">const</span> <span class="keywordtype">int</span> numEntries,</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a497449592a28e4b073534255a94e2c76">  370</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a497449592a28e4b073534255a94e2c76">computeCubicSplineValue</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> numEntries,</div>
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>                        <span class="keyword">const</span> <span class="keywordtype">float</span>* inputs,</div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                        <span class="keyword">const</span> OutputType* outputs,</div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>                        <span class="keyword">const</span> OutputType* slopes,</div>
@@ -453,9 +472,9 @@ $(function() {
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    OutputType result = OutputType(math::zero);</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span> </div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    <span class="keywordflow">if</span> (interpolator == ispc::RAMP_INTERPOLATOR_MODE_CATMULLROM) {</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        result = interpolateCatmullRom(t, p);</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        result = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ad1864165495c5fcb4b44b9e5276a7393">interpolateCatmullRom</a>(t, p);</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (interpolator == ispc::RAMP_INTERPOLATOR_MODE_MONOTONECUBIC) {</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>        result = interpolateCubicHermite(t,</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>        result = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a8a3c6956216cc95d1197c79fff6e12c7">interpolateCubicHermite</a>(t,</div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>                                         inputs[intervals[1]], inputs[intervals[2]],</div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>                                         p[1], p[2],</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>                                         slopes[intervals[1]], slopes[intervals[2]]);</div>
@@ -466,7 +485,7 @@ $(function() {
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> OutputType&gt;</div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>OutputType</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>evaluateFourOutputRamp(<span class="keyword">const</span> Vec2f&amp; uv,</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a185948f2733ee516bbd953b100f03f03">  423</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a185948f2733ee516bbd953b100f03f03">evaluateFourOutputRamp</a>(<span class="keyword">const</span> Vec2f&amp; uv,</div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>                       <span class="keyword">const</span> OutputType&amp; input0, <span class="keyword">const</span> OutputType&amp; input1,</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>                       <span class="keyword">const</span> OutputType&amp; input2, <span class="keyword">const</span> OutputType&amp; input3)</div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>{</div>
@@ -491,7 +510,7 @@ $(function() {
 <div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span> </div>
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> OutputType, <span class="keyword">typename</span> BlendAdjustmentCallbackType&gt;</div>
 <div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>OutputType</div>
-<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>eval1DRamp(<span class="keyword">const</span> <span class="keywordtype">int</span> numEntries,</div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a31f6603cf2be11d9b81792370e7bb70d">  448</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a31f6603cf2be11d9b81792370e7bb70d">eval1DRamp</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> numEntries,</div>
 <div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>           <span class="keyword">const</span> <span class="keywordtype">float</span>* inputs,</div>
 <div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>           <span class="keyword">const</span> OutputType* outputs,</div>
 <div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>           <span class="keyword">const</span> ispc::RampInterpolatorMode* interpolators,</div>
@@ -502,7 +521,7 @@ $(function() {
 <div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>    <span class="comment">// Find which span the current position belongs to</span></div>
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>    <span class="comment">// Interpolation at leftIdx determines the interpolation to use for the span</span></div>
 <div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>    <span class="keywordtype">int</span> leftIdx, rightIdx;</div>
-<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>    findRampSpan(numEntries, inputs, t, leftIdx, rightIdx);</div>
+<div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>    <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#aa4020c0abdffed5af4cb37ad303e9eef">findRampSpan</a>(numEntries, inputs, t, leftIdx, rightIdx);</div>
 <div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span> </div>
 <div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>    <span class="comment">// Check if pos is outside the range of the defined ramp</span></div>
 <div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>    <span class="keywordflow">if</span> (leftIdx == -1) {</div>
@@ -545,7 +564,7 @@ $(function() {
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>    <span class="keywordflow">case</span> ispc::RAMP_INTERPOLATOR_MODE_CATMULLROM:</div>
 <div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>    <span class="keywordflow">case</span> ispc::RAMP_INTERPOLATOR_MODE_MONOTONECUBIC:</div>
-<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>        result = computeCubicSplineValue(numEntries, inputs, outputs, slopes, leftIdx, t, interpolator);</div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>        result = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a497449592a28e4b073534255a94e2c76">computeCubicSplineValue</a>(numEntries, inputs, outputs, slopes, leftIdx, t, interpolator);</div>
 <div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>        <span class="keywordflow">return</span> result;</div>
 <div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>    }</div>
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span> </div>
@@ -558,7 +577,7 @@ $(function() {
 <div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span> </div>
 <div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> OutputType, <span class="keyword">typename</span> BlendAdjustmentCallbackType&gt;</div>
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>OutputType</div>
-<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>eval2DRamp(<span class="keyword">const</span> <span class="keywordtype">int</span> numEntries,</div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#abbefcc063e6678ce568593f206685b2c">  515</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#abbefcc063e6678ce568593f206685b2c">eval2DRamp</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> numEntries,</div>
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>           <span class="keyword">const</span> <span class="keywordtype">float</span>* inputs,</div>
 <div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>           <span class="keyword">const</span> OutputType* outputs,</div>
 <div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>           <span class="keyword">const</span> ispc::RampInterpolatorMode* interpolators,</div>
@@ -572,20 +591,20 @@ $(function() {
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span> </div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>    <span class="keywordflow">switch</span> (rampType2D) {</div>
 <div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>    <span class="keywordflow">case</span> ispc::RAMP_INTERPOLATOR_2D_TYPE_V_RAMP:</div>
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>        result = eval1DRamp(numEntries, inputs, outputs, interpolators, slopes, uv.y, blendAdjustmentCallback);</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>        result = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a31f6603cf2be11d9b81792370e7bb70d">eval1DRamp</a>(numEntries, inputs, outputs, interpolators, slopes, uv.y, blendAdjustmentCallback);</div>
 <div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>    <span class="keywordflow">case</span> ispc::RAMP_INTERPOLATOR_2D_TYPE_U_RAMP:</div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>        result = eval1DRamp(numEntries, inputs, outputs, interpolators, slopes, uv.x, blendAdjustmentCallback);</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>        result = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a31f6603cf2be11d9b81792370e7bb70d">eval1DRamp</a>(numEntries, inputs, outputs, interpolators, slopes, uv.x, blendAdjustmentCallback);</div>
 <div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>    <span class="keywordflow">case</span> ispc::RAMP_INTERPOLATOR_2D_TYPE_DIAGONAL_RAMP:</div>
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>        result = eval1DRamp(numEntries, inputs, outputs, interpolators, slopes, 0.5f * (uv.x + uv.y),</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>        result = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a31f6603cf2be11d9b81792370e7bb70d">eval1DRamp</a>(numEntries, inputs, outputs, interpolators, slopes, 0.5f * (uv.x + uv.y),</div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>                          blendAdjustmentCallback);</div>
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>    <span class="keywordflow">case</span> ispc::RAMP_INTERPOLATOR_2D_TYPE_RADIAL_RAMP:</div>
 <div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>        {</div>
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>            <span class="keywordtype">float</span> value = math::atan2(uv.x - 0.5f, uv.y - 0.5f);</div>
 <div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>            value = 0.5f * (1.0f + value / math::sPi);</div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>            result = eval1DRamp(numEntries, inputs, outputs, interpolators, slopes, value, blendAdjustmentCallback);</div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>            result = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a31f6603cf2be11d9b81792370e7bb70d">eval1DRamp</a>(numEntries, inputs, outputs, interpolators, slopes, value, blendAdjustmentCallback);</div>
 <div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>        }</div>
 <div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    <span class="keywordflow">case</span> ispc::RAMP_INTERPOLATOR_2D_TYPE_CIRCULAR_RAMP:</div>
@@ -598,19 +617,19 @@ $(function() {
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>                value = 0.0f;</div>
 <div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>            }</div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>            result = eval1DRamp(numEntries, inputs, outputs, interpolators, slopes, value, blendAdjustmentCallback);</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>            result = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a31f6603cf2be11d9b81792370e7bb70d">eval1DRamp</a>(numEntries, inputs, outputs, interpolators, slopes, value, blendAdjustmentCallback);</div>
 <div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>        }</div>
 <div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>    <span class="keywordflow">case</span> ispc::RAMP_INTERPOLATOR_2D_TYPE_BOX_RAMP:</div>
 <div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>        {</div>
 <div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> value = 2.0f * math::max(math::abs(uv.x - 0.5f), math::abs(uv.y - 0.5f));</div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>            result = eval1DRamp(numEntries, inputs, outputs, interpolators, slopes, value, blendAdjustmentCallback);</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>            result = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a31f6603cf2be11d9b81792370e7bb70d">eval1DRamp</a>(numEntries, inputs, outputs, interpolators, slopes, value, blendAdjustmentCallback);</div>
 <div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>        }</div>
 <div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>    <span class="keywordflow">case</span> ispc::RAMP_INTERPOLATOR_2D_TYPE_UxV_RAMP:</div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>        result = eval1DRamp(numEntries, inputs, outputs, interpolators, slopes,</div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>        result = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a31f6603cf2be11d9b81792370e7bb70d">eval1DRamp</a>(numEntries, inputs, outputs, interpolators, slopes,</div>
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>                          2.0f * math::abs(uv.y - 0.5f), blendAdjustmentCallback);</div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>        result *= eval1DRamp(numEntries, inputs, outputs, interpolators, slopes,</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>        result *= <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a31f6603cf2be11d9b81792370e7bb70d">eval1DRamp</a>(numEntries, inputs, outputs, interpolators, slopes,</div>
 <div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>                           2.0f * math::abs(uv.x - 0.5f), blendAdjustmentCallback);</div>
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>    <span class="keywordflow">case</span> ispc::RAMP_INTERPOLATOR_2D_TYPE_FOUR_CORNER_RAMP: <span class="comment">// Special case, not calling evaluateRampColor()</span></div>
@@ -618,7 +637,7 @@ $(function() {
 <div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>            <span class="comment">// we skip calling blendAdjustmentCallback for this case as the callback deals with only</span></div>
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>            <span class="comment">// 2 outputs instead of 4</span></div>
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>            MNRY_ASSERT(numEntries == 4);</div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>            result = evaluateFourOutputRamp(uv,</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>            result = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a185948f2733ee516bbd953b100f03f03">evaluateFourOutputRamp</a>(uv,</div>
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>                                           outputs[0],</div>
 <div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>                                           outputs[1],</div>
 <div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>                                           outputs[2],</div>
@@ -627,7 +646,7 @@ $(function() {
 <div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>    <span class="keywordflow">case</span> ispc::RAMP_INTERPOLATOR_2D_TYPE_INPUT:</div>
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>        {</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>            result = eval1DRamp(numEntries,</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>            result = <a class="code hl_function" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a31f6603cf2be11d9b81792370e7bb70d">eval1DRamp</a>(numEntries,</div>
 <div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>                                inputs, outputs, interpolators, slopes,</div>
 <div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>                                inputRamp, blendAdjustmentCallback);</div>
 <div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>        }</div>
@@ -653,32 +672,32 @@ $(function() {
 <div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    <span class="comment">// ignore any extra points</span></div>
 <div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    numEntries = math::min(numEntries, ispc::RAMP_MAX_POINTS);</div>
 <div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span> </div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>    mIspc.mNumEntries = numEntries;</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mNumEntries = numEntries;</div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span> </div>
 <div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; numEntries; ++i) {</div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>        mIspc.mInputs[i] = inputs[i];</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>        mIspc.mOutputs[i] = outputs[i];</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>        mIspc.mInterpolators[i] = interpolators[i];</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInputs[i] = inputs[i];</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mOutputs[i] = outputs[i];</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInterpolators[i] = interpolators[i];</div>
 <div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>    }</div>
 <div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span> </div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>    sortEntries(numEntries, mIspc.mInputs, mIspc.mOutputs, mIspc.mInterpolators);</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>    sortEntries(numEntries, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInputs, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mOutputs, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInterpolators);</div>
 <div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span> </div>
 <div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>    <span class="comment">// compute slopes</span></div>
 <div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>    evaluateMonotoneSlopes(numEntries,</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>                           mIspc.mInputs,</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>                           mIspc.mOutputs,</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>                           mIspc.mInterpolators,</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>                           mIspc.mSlopes);</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>                           <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInputs,</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>                           <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mOutputs,</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>                           <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInterpolators,</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>                           <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mSlopes);</div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>}</div>
 <div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span> </div>
 <div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span><span class="keywordtype">float</span></div>
 <div class="line"><a id="l00629" name="l00629"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_float_ramp_control.html#a94ca01b473ca6cf1b89ab371cf1fd29f">  629</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1_float_ramp_control.html#a94ca01b473ca6cf1b89ab371cf1fd29f">FloatRampControl::eval1D</a>(<span class="keywordtype">float</span> t)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>    <span class="keywordflow">if</span> (mIspc.mNumEntries == 0) {</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mNumEntries == 0) {</div>
 <div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>        <span class="keywordflow">return</span>  0.0f;</div>
 <div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>    }</div>
 <div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>    <span class="keyword">auto</span> blendAdjustmentCallback = [&amp;](<span class="keyword">const</span> <span class="keywordtype">float</span>&amp;, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp;) { };</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    <span class="keywordtype">float</span> result = eval1DRamp(mIspc.mNumEntries, mIspc.mInputs, mIspc.mOutputs, mIspc.mInterpolators,</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>                             mIspc.mSlopes, t, blendAdjustmentCallback);</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    <span class="keywordtype">float</span> result = eval1DRamp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mNumEntries, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInputs, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mOutputs, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInterpolators,</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>                             <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mSlopes, t, blendAdjustmentCallback);</div>
 <div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>    <span class="keywordflow">return</span> result;</div>
 <div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>}</div>
 <div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span> </div>
@@ -686,12 +705,12 @@ $(function() {
 <div class="line"><a id="l00640" name="l00640"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_float_ramp_control.html#ace6ac4a590a88578314c0a33101ace7f">  640</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1_float_ramp_control.html#ace6ac4a590a88578314c0a33101ace7f">FloatRampControl::eval2D</a>(<span class="keyword">const</span> Vec2f&amp; uv,</div>
 <div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>                               ispc::RampInterpolator2DType rampType2D,</div>
 <div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>                               <span class="keywordtype">float</span> inputRamp)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>    <span class="keywordflow">if</span> (mIspc.mNumEntries == 0) {</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mNumEntries == 0) {</div>
 <div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>        <span class="keywordflow">return</span> 1.0f;</div>
 <div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>    }</div>
 <div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>    <span class="keyword">auto</span> blendAdjustmentCallback = [&amp;](<span class="keywordtype">float</span>&amp; left, <span class="keywordtype">float</span>&amp; right) { };</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>    <span class="keywordtype">float</span> result = eval2DRamp(mIspc.mNumEntries, mIspc.mInputs, mIspc.mOutputs, mIspc.mInterpolators,</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>                             mIspc.mSlopes, uv, rampType2D, inputRamp, blendAdjustmentCallback);</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>    <span class="keywordtype">float</span> result = eval2DRamp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mNumEntries, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInputs, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mOutputs, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mInterpolators,</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>                             <a class="code hl_variable" href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">mIspc</a>.mSlopes, uv, rampType2D, inputRamp, blendAdjustmentCallback);</div>
 <div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span> </div>
 <div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>    <span class="keywordflow">return</span> result;</div>
 <div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>}</div>
@@ -704,61 +723,61 @@ $(function() {
 <div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>                       <span class="keyword">const</span> ispc::ColorRampControlSpace colorSpace,</div>
 <div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>                       <span class="keyword">const</span> <span class="keywordtype">bool</span> applyHueBlendAdjustment)</div>
 <div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>{</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>    mIspc.mApplyHueBlendAdjustment = applyHueBlendAdjustment;</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mApplyHueBlendAdjustment = applyHueBlendAdjustment;</div>
 <div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span> </div>
 <div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>    <span class="comment">// ignore any extra points</span></div>
 <div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>    numEntries = math::min(numEntries, ispc::RAMP_MAX_POINTS);</div>
 <div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span> </div>
 <div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>    <span class="comment">// copy inputs/outputs/interpolators</span></div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>    mIspc.mNumEntries = numEntries;</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mNumEntries = numEntries;</div>
 <div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; numEntries; ++i) {</div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>        mIspc.mInputs[i] = inputs[i];</div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>        asCpp(mIspc.mOutputs[i]) = outputs[i];</div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>        mIspc.mInterpolators[i] = interpolators[i];</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInputs[i] = inputs[i];</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>        asCpp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs[i]) = outputs[i];</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInterpolators[i] = interpolators[i];</div>
 <div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>    }</div>
 <div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span> </div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>    sortEntries(numEntries, mIspc.mInputs, mIspc.mOutputs, mIspc.mInterpolators);</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>    sortEntries(numEntries, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInputs, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInterpolators);</div>
 <div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span> </div>
 <div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>    evaluateMonotoneSlopes(numEntries,</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>                           mIspc.mInputs,</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>                           asCpp(mIspc.mOutputs),</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>                           mIspc.mInterpolators,</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>                           asCpp(mIspc.mSlopes));</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>                           <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInputs,</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>                           asCpp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs),</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>                           <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInterpolators,</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>                           asCpp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mSlopes));</div>
 <div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span> </div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>    mIspc.mColorSpace = colorSpace;</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace = colorSpace;</div>
 <div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span> </div>
 <div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>    <span class="comment">// CATMULLROM interpolation requires 4 control points. But HSV has special logic to wrap</span></div>
 <div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>    <span class="comment">// around for 2 control points and dealing with wrap for 4 control points is not supported</span></div>
 <div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>    <span class="comment">// if any CATMULLROM interpolator type is detected, then we force RGB ramp interpolation mode</span></div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>    <span class="keywordflow">if</span>(mIspc.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSV ||</div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>       mIspc.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSL) {</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSV ||</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>       <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSL) {</div>
 <div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; numEntries; i++) {</div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>            <span class="keywordflow">if</span> (mIspc.mInterpolators[i] == ispc::RAMP_INTERPOLATOR_MODE_CATMULLROM) {</div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>                mIspc.mColorSpace = ispc::COLOR_RAMP_CONTROL_SPACE_RGB;</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInterpolators[i] == ispc::RAMP_INTERPOLATOR_MODE_CATMULLROM) {</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace = ispc::COLOR_RAMP_CONTROL_SPACE_RGB;</div>
 <div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>            }</div>
 <div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>        }</div>
 <div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>    }</div>
 <div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span> </div>
 <div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>    <span class="comment">//convert all colors to right space based on the color space mode</span></div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>    <span class="keywordflow">if</span>(mIspc.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSV) {</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSV) {</div>
 <div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; numEntries; i++) {</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>            Color rgb = asCpp(mIspc.mOutputs[i]);</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>            asCpp(mIspc.mOutputs[i]) = rgbToHsv(rgb);</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>            Color rgb = asCpp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs[i]);</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>            asCpp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs[i]) = rgbToHsv(rgb);</div>
 <div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>        }</div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(mIspc.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSL) {</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSL) {</div>
 <div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; numEntries; i++) {</div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>            Color rgb = asCpp(mIspc.mOutputs[i]);</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>            asCpp(mIspc.mOutputs[i]) = rgbToHsl(rgb);</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>            Color rgb = asCpp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs[i]);</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>            asCpp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs[i]) = rgbToHsl(rgb);</div>
 <div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>        }</div>
 <div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>    }</div>
 <div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>}</div>
 <div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span> </div>
 <div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>ColorRampControl::blendAdjustment(Color&amp; left, Color&amp; right)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>    <span class="keywordflow">if</span> (mIspc.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSV ||</div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>        mIspc.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSL) {</div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>        <span class="keywordflow">if</span>(mIspc.mApplyHueBlendAdjustment) {</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_color_ramp_control.html#ad5403df296a1ca555e41f3d43b714bd0">  712</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1_color_ramp_control.html#ad5403df296a1ca555e41f3d43b714bd0">ColorRampControl::blendAdjustment</a>(Color&amp; left, Color&amp; right)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSV ||</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSL) {</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mApplyHueBlendAdjustment) {</div>
 <div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>            <span class="comment">// HSV/HSL mode</span></div>
 <div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>            <span class="comment">// Ensure that HSV/HSL color blending takes the shortest route</span></div>
 <div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>            <span class="comment">// around the hue wheel.</span></div>
@@ -774,24 +793,24 @@ $(function() {
 <div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>Color</div>
 <div class="line"><a id="l00729" name="l00729"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_color_ramp_control.html#a18774ee44fdc525e75d0288714e25b5b">  729</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1_color_ramp_control.html#a18774ee44fdc525e75d0288714e25b5b">ColorRampControl::eval1D</a>(<span class="keywordtype">float</span> t)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>    <span class="keywordflow">if</span> (mIspc.mNumEntries == 0) {</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mNumEntries == 0) {</div>
 <div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>        <span class="keywordflow">return</span> math::sBlack;</div>
 <div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>    }</div>
 <div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span> </div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>    Color result = eval1DRamp(mIspc.mNumEntries,</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>                            mIspc.mInputs,</div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>                            <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>Color*<span class="keyword">&gt;</span>(mIspc.mOutputs),</div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>                            mIspc.mInterpolators,</div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>                            <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>Color*<span class="keyword">&gt;</span>(mIspc.mSlopes),</div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>    Color result = eval1DRamp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mNumEntries,</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>                            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInputs,</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>                            <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>Color*<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs),</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>                            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInterpolators,</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>                            <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>Color*<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mSlopes),</div>
 <div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>                            t,</div>
 <div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>                            [&amp;](Color&amp; left, Color&amp; right) {</div>
 <div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>                                blendAdjustment(left, right);</div>
 <div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>                            });</div>
 <div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span> </div>
 <div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    <span class="comment">// convert back to HSV/HSL after evaluation if needed</span></div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    <span class="keywordflow">if</span> (mIspc.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSV) {</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSV) {</div>
 <div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>        result = math::hsvToRgb(result);</div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mIspc.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSL) {</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSL) {</div>
 <div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>        result = math::hslToRgb(result);</div>
 <div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>    }</div>
 <div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span> </div>
@@ -803,21 +822,21 @@ $(function() {
 <div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>                               ispc::RampInterpolator2DType rampType2D,</div>
 <div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>                               <span class="keywordtype">float</span> inputRamp)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    <span class="keywordflow">if</span> (mIspc.mNumEntries == 0) {</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mNumEntries == 0) {</div>
 <div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>        <span class="keywordflow">return</span> math::sBlack;</div>
 <div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>    }</div>
 <div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span> </div>
 <div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    Color result;</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    <span class="keyword">const</span> Color* outputs = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>Color*<span class="keyword">&gt;</span>(mIspc.mOutputs);</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    <span class="keyword">const</span> Color* outputs = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>Color*<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mOutputs);</div>
 <div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span> </div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    <span class="keywordflow">if</span> (mIspc.mNumEntries == 1) {</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mNumEntries == 1) {</div>
 <div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>        result = outputs[0];</div>
 <div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>        result = eval2DRamp(mIspc.mNumEntries,</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>                              mIspc.mInputs,</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>        result = eval2DRamp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mNumEntries,</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>                              <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInputs,</div>
 <div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>                              outputs,</div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>                              mIspc.mInterpolators,</div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>                              <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>Color*<span class="keyword">&gt;</span>(mIspc.mSlopes),</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>                              <a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mInterpolators,</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>                              <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>Color*<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mSlopes),</div>
 <div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>                              uv,</div>
 <div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>                              rampType2D,</div>
 <div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>                              inputRamp,</div>
@@ -827,9 +846,9 @@ $(function() {
 <div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    }</div>
 <div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span> </div>
 <div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    <span class="comment">// convert back to HSV/HSL after evaluation if needed</span></div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>    <span class="keywordflow">if</span> (mIspc.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSV) {</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSV) {</div>
 <div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>        result = scene_rdl2::math::hsvToRgb(result);</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mIspc.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSL) {</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">mIspc</a>.mColorSpace == ispc::COLOR_RAMP_CONTROL_SPACE_HSL) {</div>
 <div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>        result = scene_rdl2::math::hslToRgb(result);</div>
 <div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    }</div>
 <div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span> </div>
@@ -844,18 +863,38 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_color_ramp_control_html_a06a9e7c9cb9077e6fe9298b6f1a7e894"><div class="ttname"><a href="classmoonray_1_1shading_1_1_color_ramp_control.html#a06a9e7c9cb9077e6fe9298b6f1a7e894">moonray::shading::ColorRampControl::init</a></div><div class="ttdeci">void init(const int numEntries, const float *inputs, const scene_rdl2::math::Color *outputs, const ispc::RampInterpolatorMode *interpolatorTypes, ispc::ColorRampControlSpace colorSpace, const bool applyHueBlendAdjustment=true)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00654">RampControl.cc:654</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_color_ramp_control_html_a18774ee44fdc525e75d0288714e25b5b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_color_ramp_control.html#a18774ee44fdc525e75d0288714e25b5b">moonray::shading::ColorRampControl::eval1D</a></div><div class="ttdeci">scene_rdl2::math::Color eval1D(float t) const</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00729">RampControl.cc:729</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_color_ramp_control_html_a8e347059484a62c904dfb4f7cb615841"><div class="ttname"><a href="classmoonray_1_1shading_1_1_color_ramp_control.html#a8e347059484a62c904dfb4f7cb615841">moonray::shading::ColorRampControl::eval2D</a></div><div class="ttdeci">scene_rdl2::math::Color eval2D(const scene_rdl2::math::Vec2f &amp;uv, ispc::RampInterpolator2DType rampType2D, float inputRamp=0.0f) const</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00756">RampControl.cc:756</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_color_ramp_control_html_ad5403df296a1ca555e41f3d43b714bd0"><div class="ttname"><a href="classmoonray_1_1shading_1_1_color_ramp_control.html#ad5403df296a1ca555e41f3d43b714bd0">moonray::shading::ColorRampControl::blendAdjustment</a></div><div class="ttdeci">void blendAdjustment(scene_rdl2::math::Color &amp;left, scene_rdl2::math::Color &amp;right) const</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00712">RampControl.cc:712</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_color_ramp_control_html_af73cbe897ca2e2ece2e369f91ed4c3cb"><div class="ttname"><a href="classmoonray_1_1shading_1_1_color_ramp_control.html#af73cbe897ca2e2ece2e369f91ed4c3cb">moonray::shading::ColorRampControl::mIspc</a></div><div class="ttdeci">ispc::ColorRampControl mIspc</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8h_source.html#l00087">RampControl.h:87</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_float_ramp_control_html_a0612783bc5a2be5a7c8acf616ec061e1"><div class="ttname"><a href="classmoonray_1_1shading_1_1_float_ramp_control.html#a0612783bc5a2be5a7c8acf616ec061e1">moonray::shading::FloatRampControl::init</a></div><div class="ttdeci">void init(const int numEntries, const float *inputs, const float *outputs, const ispc::RampInterpolatorMode *interpolators)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00602">RampControl.cc:602</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_float_ramp_control_html_a94ca01b473ca6cf1b89ab371cf1fd29f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_float_ramp_control.html#a94ca01b473ca6cf1b89ab371cf1fd29f">moonray::shading::FloatRampControl::eval1D</a></div><div class="ttdeci">float eval1D(float t) const</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00629">RampControl.cc:629</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_float_ramp_control_html_aab4932c903bb18a2152d21b1b03eeb3f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_float_ramp_control.html#aab4932c903bb18a2152d21b1b03eeb3f">moonray::shading::FloatRampControl::mIspc</a></div><div class="ttdeci">ispc::FloatRampControl mIspc</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8h_source.html#l00048">RampControl.h:48</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_float_ramp_control_html_ace6ac4a590a88578314c0a33101ace7f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_float_ramp_control.html#ace6ac4a590a88578314c0a33101ace7f">moonray::shading::FloatRampControl::eval2D</a></div><div class="ttdeci">float eval2D(const scene_rdl2::math::Vec2f &amp;uv, ispc::RampInterpolator2DType rampType2D, float inputRamp=0.0f) const</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00640">RampControl.cc:640</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1geom_html_a9e759f29bca3ea7593c72a2acfb487a4"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a9e759f29bca3ea7593c72a2acfb487a4">moonray::geom::Vec4f</a></div><div class="ttdeci">scene_rdl2::math::Vec4f Vec4f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00041">Types.h:41</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_a11a236d067a323fc28df0afc221153e8"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a11a236d067a323fc28df0afc221153e8">anonymous_namespace{RampControl.cc}::sortEntries</a></div><div class="ttdeci">void sortEntries(const uint32_t numEntries, float *const inputs, OutputType *const outputs, ispc::RampInterpolatorMode *const interpolators)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00294">RampControl.cc:294</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_a185948f2733ee516bbd953b100f03f03"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a185948f2733ee516bbd953b100f03f03">anonymous_namespace{RampControl.cc}::evaluateFourOutputRamp</a></div><div class="ttdeci">OutputType evaluateFourOutputRamp(const Vec2f &amp;uv, const OutputType &amp;input0, const OutputType &amp;input1, const OutputType &amp;input2, const OutputType &amp;input3)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00423">RampControl.cc:423</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_a31f6603cf2be11d9b81792370e7bb70d"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a31f6603cf2be11d9b81792370e7bb70d">anonymous_namespace{RampControl.cc}::eval1DRamp</a></div><div class="ttdeci">OutputType eval1DRamp(const int numEntries, const float *inputs, const OutputType *outputs, const ispc::RampInterpolatorMode *interpolators, const OutputType *slopes, float t, const BlendAdjustmentCallbackType &amp;blendAdjustmentCallback)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00448">RampControl.cc:448</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_a497449592a28e4b073534255a94e2c76"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a497449592a28e4b073534255a94e2c76">anonymous_namespace{RampControl.cc}::computeCubicSplineValue</a></div><div class="ttdeci">OutputType computeCubicSplineValue(const int numEntries, const float *inputs, const OutputType *outputs, const OutputType *slopes, const int interval, const float dist, const int interpolator)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00370">RampControl.cc:370</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_a85a54b27c35cf5795b3c312ea19adeb9"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a85a54b27c35cf5795b3c312ea19adeb9">anonymous_namespace{RampControl.cc}::computeFKMonotonoSlope</a></div><div class="ttdeci">void computeFKMonotonoSlope(float i0, float o0, float i1, float o1, float i2, float o2, float i3, float o3, int end, float &amp;slope1, float &amp;slope2)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00043">RampControl.cc:43</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_a8a3c6956216cc95d1197c79fff6e12c7"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a8a3c6956216cc95d1197c79fff6e12c7">anonymous_namespace{RampControl.cc}::interpolateCubicHermite</a></div><div class="ttdeci">finline float interpolateCubicHermite(const float t, const float x1, const float x2, const float y1, const float y2, const float slope1, const float slope2)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00148">RampControl.cc:148</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_aa4020c0abdffed5af4cb37ad303e9eef"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#aa4020c0abdffed5af4cb37ad303e9eef">anonymous_namespace{RampControl.cc}::findRampSpan</a></div><div class="ttdeci">void findRampSpan(const int numEntries, const float *inputs, const float t, int &amp;leftIdx, int &amp;rightIdx)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00336">RampControl.cc:336</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_aae399221dd83f40fea10b9cf2966327d"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#aae399221dd83f40fea10b9cf2966327d">anonymous_namespace{RampControl.cc}::computeLineSlope</a></div><div class="ttdeci">float computeLineSlope(float i0, float o0, float i1, float o1)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00025">RampControl.cc:25</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_abbefcc063e6678ce568593f206685b2c"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#abbefcc063e6678ce568593f206685b2c">anonymous_namespace{RampControl.cc}::eval2DRamp</a></div><div class="ttdeci">OutputType eval2DRamp(const int numEntries, const float *inputs, const OutputType *outputs, const ispc::RampInterpolatorMode *interpolators, const OutputType *slopes, Vec2f uv, ispc::RampInterpolator2DType rampType2D, float inputRamp, const BlendAdjustmentCallbackType &amp;blendAdjustmentCallback)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00515">RampControl.cc:515</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_ad02fb7f40ce9f57e8257d80fa0798c54"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ad02fb7f40ce9f57e8257d80fa0798c54">anonymous_namespace{RampControl.cc}::evaluateMonotoneSlopes</a></div><div class="ttdeci">void evaluateMonotoneSlopes(const int numEntries, const float *const inputs, const float *const outputs, const ispc::RampInterpolatorMode *const interpolators, float *const slopes)</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00184">RampControl.cc:184</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_ramp_control_8cc_03_html_ad1864165495c5fcb4b44b9e5276a7393"><div class="ttname"><a href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ad1864165495c5fcb4b44b9e5276a7393">anonymous_namespace{RampControl.cc}::interpolateCatmullRom</a></div><div class="ttdeci">finline float interpolateCatmullRom(const float t, const float p[4])</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00121">RampControl.cc:121</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1math_html"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html">scene_rdl2::math</a></div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8h_source.html#l00017">InputBuffer.h:17</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_dispatch_computation_8cc_source.html#l00044">McrtRtDispatchComputation.cc:44</a></div></div>
-<div class="ttc" id="anamespacesequence__discrepancy_html_a06f968c2f5ed1f9d42f00351b2b1efb2"><div class="ttname"><a href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">sequence_discrepancy.a</a></div><div class="ttdeci">def a</div><div class="ttdef"><b>Definition:</b> <a href="sequence__discrepancy_8py_source.html#l00038">sequence_discrepancy.py:38</a></div></div>
+<div class="ttc" id="astructanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv_html"><div class="ttname"><a href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html">anonymous_namespace{RampControl.cc}::RampCv</a></div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00285">RampControl.cc:286</a></div></div>
+<div class="ttc" id="astructanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv_html_a6321e44724164d49d6f1768efffefe42"><div class="ttname"><a href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html#a6321e44724164d49d6f1768efffefe42">anonymous_namespace{RampControl.cc}::RampCv::interp</a></div><div class="ttdeci">ispc::RampInterpolatorMode interp</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00289">RampControl.cc:289</a></div></div>
+<div class="ttc" id="astructanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv_html_a7e08d5877c70f4ee7ebc35d8498120a1"><div class="ttname"><a href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html#a7e08d5877c70f4ee7ebc35d8498120a1">anonymous_namespace{RampControl.cc}::RampCv::input</a></div><div class="ttdeci">float input</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00287">RampControl.cc:287</a></div></div>
+<div class="ttc" id="astructanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv_html_ada5b71e765a631ced02def4dd263fd8c"><div class="ttname"><a href="structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html#ada5b71e765a631ced02def4dd263fd8c">anonymous_namespace{RampControl.cc}::RampCv::output</a></div><div class="ttdeci">OutputType output</div><div class="ttdef"><b>Definition:</b> <a href="_ramp_control_8cc_source.html#l00288">RampControl.cc:288</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ffbcf3a8cac23adad179e74a09117904.html">shading</a></li><li class="navelem"><a class="el" href="_ramp_control_8cc.html">RampControl.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

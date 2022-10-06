@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_55b3e8b76a6a129d85f7ec9f20e593af.html">cmd</a></li><li class="navelem"><a class="el" href="dir_0ffd86f0315ad7cec995cb22c196ce91.html">point_generation_cmd</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('reorder_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -254,7 +270,11 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="reorder_8cc_source.html#l00068">68</a> of file <a class="el" href="reorder_8cc_source.html">reorder.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   69</span>{</div>
+<div class="line"><span class="lineno">   70</span>    grid.<a class="code hl_function" href="class_static_hyper_grid.html#a73c37380822d3d8fda573aa6143a79f8">add</a>(p);</div>
+<div class="line"><span class="lineno">   71</span>}</div>
+<div class="ttc" id="aclass_static_hyper_grid_html_a73c37380822d3d8fda573aa6143a79f8"><div class="ttname"><a href="class_static_hyper_grid.html#a73c37380822d3d8fda573aa6143a79f8">StaticHyperGrid::add</a></div><div class="ttdeci">void add(T &amp;&amp;t)</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00212">StaticHyperGrid.h:212</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af0b1e2bec51b14d670983f48f06beb20" name="af0b1e2bec51b14d670983f48f06beb20"></a>
@@ -274,7 +294,14 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="reorder_8cc_source.html#l00275">275</a> of file <a class="el" href="reorder_8cc_source.html">reorder.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  276</span>{</div>
+<div class="line"><span class="lineno">  277</span>    std::unique_ptr&lt;std::ofstream&gt; outs(<span class="keyword">new</span> std::ofstream(filename));</div>
+<div class="line"><span class="lineno">  278</span>    outs-&gt;exceptions(std::ios_base::failbit);</div>
+<div class="line"><span class="lineno">  279</span>    outs-&gt;precision(9);</div>
+<div class="line"><span class="lineno">  280</span>    outs-&gt;setf(std::ios_base::fixed | std::ios_base::showpoint);</div>
+<div class="line"><span class="lineno">  281</span>    <span class="keywordflow">return</span> outs;</div>
+<div class="line"><span class="lineno">  282</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a800e4bd1c795f243c08a761e678a6bc8" name="a800e4bd1c795f243c08a761e678a6bc8"></a>
@@ -312,7 +339,40 @@ template&lt;typename DistanceFunction &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="reorder_8cc_source.html#l00074">74</a> of file <a class="el" href="reorder_8cc_source.html">reorder.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   75</span>{</div>
+<div class="line"><span class="lineno">   76</span>    <span class="comment">// Point to grid indices.</span></div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_typedef" href="discrepancy_8cc.html#a73845c52820b806f986820e591a6613b">PointContainer</a> pointsToCheck;</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> maxNeighbors = <a class="code hl_function" href="class_dynamic_hyper_grid.html#acdabad4065cae19e9bba40bbe5d91b14">Grid::maxNeighboringItems</a>();</div>
+<div class="line"><span class="lineno">   79</span>    pointsToCheck.reserve(maxNeighbors);</div>
+<div class="line"><span class="lineno">   80</span>    <span class="keyword">auto</span> f = [&amp;pointsToCheck](<span class="keyword">const</span> <a class="code hl_class" href="class_n_point.html">Point</a>&amp; c)</div>
+<div class="line"><span class="lineno">   81</span>    {</div>
+<div class="line"><span class="lineno">   82</span>        pointsToCheck.push_back(c);</div>
+<div class="line"><span class="lineno">   83</span>    };</div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>    <span class="comment">// If we don&#39;t have a populated neighbor, we want to visit all locations,</span></div>
+<div class="line"><span class="lineno">   86</span>    <span class="comment">// to make sure we still get the closest point. Yay, O(N^2)!</span></div>
+<div class="line"><span class="lineno">   87</span>    grid.<a class="code hl_function" href="class_static_hyper_grid.html#a45c0d5f9603ed38706228f43e04d6f70">visitNeighbors</a>(f, p);</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">if</span> (pointsToCheck.empty()) {</div>
+<div class="line"><span class="lineno">   89</span>        grid.<a class="code hl_function" href="class_static_hyper_grid.html#ad0053d752b682e58b8319e8fc845dfbd">visitAll</a>(f);</div>
+<div class="line"><span class="lineno">   90</span>    }</div>
+<div class="line"><span class="lineno">   91</span> </div>
+<div class="line"><span class="lineno">   92</span>    <span class="keywordtype">float</span> sampleDist2 = std::numeric_limits&lt;float&gt;::max();</div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a> : pointsToCheck) {</div>
+<div class="line"><span class="lineno">   94</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> thisDist2 = distance(p, <a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>);</div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">if</span> (thisDist2 &lt; sampleDist2) {</div>
+<div class="line"><span class="lineno">   96</span>            sampleDist2 = thisDist2;</div>
+<div class="line"><span class="lineno">   97</span>        }</div>
+<div class="line"><span class="lineno">   98</span>    }</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">return</span> sampleDist2;</div>
+<div class="line"><span class="lineno">  101</span>}</div>
+<div class="ttc" id="a_attribute_map_8cc_html_ab527eec89029a7b166a67dd899129255"><div class="ttname"><a href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a></div><div class="ttdeci">static void sample(const scene_rdl2::rdl2::Map *self, moonray::shading::TLState *tls, const moonray::shading::State &amp;state, Color *sample)</div></div>
+<div class="ttc" id="aclass_dynamic_hyper_grid_html_acdabad4065cae19e9bba40bbe5d91b14"><div class="ttname"><a href="class_dynamic_hyper_grid.html#acdabad4065cae19e9bba40bbe5d91b14">DynamicHyperGrid::maxNeighboringItems</a></div><div class="ttdeci">static constexpr size_type maxNeighboringItems() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_dynamic_hyper_grid_8h_source.html#l00105">DynamicHyperGrid.h:105</a></div></div>
+<div class="ttc" id="aclass_n_point_html"><div class="ttname"><a href="class_n_point.html">NPoint&lt; kDimensions &gt;</a></div></div>
+<div class="ttc" id="aclass_static_hyper_grid_html_a45c0d5f9603ed38706228f43e04d6f70"><div class="ttname"><a href="class_static_hyper_grid.html#a45c0d5f9603ed38706228f43e04d6f70">StaticHyperGrid::visitNeighbors</a></div><div class="ttdeci">ResultReturnType&lt; F &gt; visitNeighbors(F &amp;&amp;f, const T &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00106">StaticHyperGrid.h:106</a></div></div>
+<div class="ttc" id="aclass_static_hyper_grid_html_ad0053d752b682e58b8319e8fc845dfbd"><div class="ttname"><a href="class_static_hyper_grid.html#ad0053d752b682e58b8319e8fc845dfbd">StaticHyperGrid::visitAll</a></div><div class="ttdeci">ResultReturnType&lt; F &gt; visitAll(F &amp;&amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00194">StaticHyperGrid.h:194</a></div></div>
+<div class="ttc" id="adiscrepancy_8cc_html_a73845c52820b806f986820e591a6613b"><div class="ttname"><a href="discrepancy_8cc.html#a73845c52820b806f986820e591a6613b">PointContainer</a></div><div class="ttdeci">std::vector&lt; Point &gt; PointContainer</div><div class="ttdef"><b>Definition:</b> <a href="discrepancy_8cc_source.html#l00015">discrepancy.cc:15</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a24bbe9483586cfe127dc5f034570bb6e" name="a24bbe9483586cfe127dc5f034570bb6e"></a>
@@ -358,7 +418,15 @@ template&lt;typename Container , typename DistanceFunction &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="reorder_8cc_source.html#l00263">263</a> of file <a class="el" href="reorder_8cc_source.html">reorder.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  264</span>{</div>
+<div class="line"><span class="lineno">  265</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> Container::iterator iterator;</div>
+<div class="line"><span class="lineno">  266</span>    <a class="code hl_struct" href="struct_find_farthest.html">FindFarthest&lt;Container, DistanceFunction&gt;</a> furthest(grid, list.end(), distance);</div>
+<div class="line"><span class="lineno">  267</span>    tbb::parallel_reduce(tbb::blocked_range&lt;iterator&gt;(list.begin(), list.end()),</div>
+<div class="line"><span class="lineno">  268</span>                         furthest);</div>
+<div class="line"><span class="lineno">  269</span>    <span class="keywordflow">return</span> furthest.mFar;</div>
+<div class="line"><span class="lineno">  270</span>}</div>
+<div class="ttc" id="astruct_find_farthest_html"><div class="ttname"><a href="struct_find_farthest.html">FindFarthest</a></div><div class="ttdef"><b>Definition:</b> <a href="reorder_8cc_source.html#l00210">reorder.cc:211</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac0f2228420376f4db7e1274f2b41667c" name="ac0f2228420376f4db7e1274f2b41667c"></a>
@@ -388,7 +456,59 @@ template&lt;typename Container , typename DistanceFunction &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="reorder_8cc_source.html#l00371">371</a> of file <a class="el" href="reorder_8cc_source.html">reorder.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  372</span>{</div>
+<div class="line"><span class="lineno">  373</span>    <span class="keywordtype">unsigned</span> stochasticCount = 0;</div>
+<div class="line"><span class="lineno">  374</span>    std::string inName = <span class="stringliteral">&quot;-&quot;</span>;</div>
+<div class="line"><span class="lineno">  375</span>    std::string outName = <span class="stringliteral">&quot;reordered.dat&quot;</span>;</div>
+<div class="line"><span class="lineno">  376</span> </div>
+<div class="line"><span class="lineno">  377</span>    <span class="keyword">enum</span> {</div>
+<div class="line"><span class="lineno">  378</span>        basic,</div>
+<div class="line"><span class="lineno">  379</span>        disk,</div>
+<div class="line"><span class="lineno">  380</span>        chebyshev</div>
+<div class="line"><span class="lineno">  381</span>    } distanceFunction = basic;</div>
+<div class="line"><span class="lineno">  382</span> </div>
+<div class="line"><span class="lineno">  383</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  384</span>        <a class="code hl_class" href="class_argument_parser.html">ArgumentParser</a> parser(argc, argv);</div>
+<div class="line"><span class="lineno">  385</span>        <span class="keywordflow">if</span> (parser.has(<span class="stringliteral">&quot;-in&quot;</span>)) {</div>
+<div class="line"><span class="lineno">  386</span>            inName = parser.getModifier&lt;std::string&gt;(<span class="stringliteral">&quot;-in&quot;</span>, 0);</div>
+<div class="line"><span class="lineno">  387</span>        }</div>
+<div class="line"><span class="lineno">  388</span>        <span class="keywordflow">if</span> (parser.has(<span class="stringliteral">&quot;-out&quot;</span>)) {</div>
+<div class="line"><span class="lineno">  389</span>            outName = parser.getModifier&lt;std::string&gt;(<span class="stringliteral">&quot;-out&quot;</span>, 0);</div>
+<div class="line"><span class="lineno">  390</span>        }</div>
+<div class="line"><span class="lineno">  391</span>        <span class="keywordflow">if</span> (parser.has(<span class="stringliteral">&quot;-stochastic&quot;</span>)) {</div>
+<div class="line"><span class="lineno">  392</span>            stochasticCount = parser.getModifier&lt;<span class="keywordtype">unsigned</span>&gt;(<span class="stringliteral">&quot;-stochastic&quot;</span>, 0);</div>
+<div class="line"><span class="lineno">  393</span>        }</div>
+<div class="line"><span class="lineno">  394</span>        <span class="keywordflow">if</span> (parser.has(<span class="stringliteral">&quot;-mode&quot;</span>)) {</div>
+<div class="line"><span class="lineno">  395</span>            <span class="keyword">const</span> std::string mode = parser.getModifier&lt;std::string&gt;(<span class="stringliteral">&quot;-mode&quot;</span>, 0);</div>
+<div class="line"><span class="lineno">  396</span>            <span class="keywordflow">if</span> (mode == <span class="stringliteral">&quot;basic&quot;</span>) {</div>
+<div class="line"><span class="lineno">  397</span>                distanceFunction = basic;</div>
+<div class="line"><span class="lineno">  398</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mode == <span class="stringliteral">&quot;disk&quot;</span>) {</div>
+<div class="line"><span class="lineno">  399</span>                distanceFunction = disk;</div>
+<div class="line"><span class="lineno">  400</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mode == <span class="stringliteral">&quot;chebyshev&quot;</span>) {</div>
+<div class="line"><span class="lineno">  401</span>                distanceFunction = chebyshev;</div>
+<div class="line"><span class="lineno">  402</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  403</span>                <span class="keywordflow">throw</span> <a class="code hl_class" href="class_argument_exception.html">ArgumentException</a>(<span class="stringliteral">&quot;Unknown option to &#39;-mode&#39;: &quot;</span> + mode);</div>
+<div class="line"><span class="lineno">  404</span>            }</div>
+<div class="line"><span class="lineno">  405</span>        }</div>
+<div class="line"><span class="lineno">  406</span>    } <span class="keywordflow">catch</span> (std::exception&amp; e) {</div>
+<div class="line"><span class="lineno">  407</span>        std::cerr &lt;&lt; e.what() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  408</span>        <span class="keywordflow">return</span> EXIT_FAILURE;</div>
+<div class="line"><span class="lineno">  409</span>    }</div>
+<div class="line"><span class="lineno">  410</span> </div>
+<div class="line"><span class="lineno">  411</span>    <span class="keywordflow">switch</span> (distanceFunction) {</div>
+<div class="line"><span class="lineno">  412</span>        <span class="keywordflow">case</span> basic:</div>
+<div class="line"><span class="lineno">  413</span>            reorderFile&lt;WrappedDistanceSquared&lt;kDims&gt;&gt;(inName, outName, stochasticCount);</div>
+<div class="line"><span class="lineno">  414</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  415</span>        <span class="keywordflow">case</span> disk:</div>
+<div class="line"><span class="lineno">  416</span>            reorderFile&lt;DiskWrappedDistanceSquared&gt;(inName, outName, stochasticCount);</div>
+<div class="line"><span class="lineno">  417</span>        <span class="keywordflow">case</span> chebyshev:</div>
+<div class="line"><span class="lineno">  418</span>            reorderFile&lt;ChebyshevWrappedDistanceSquared&gt;(inName, outName, stochasticCount);</div>
+<div class="line"><span class="lineno">  419</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  420</span>    }</div>
+<div class="line"><span class="lineno">  421</span>}</div>
+<div class="ttc" id="aclass_argument_exception_html"><div class="ttname"><a href="class_argument_exception.html">ArgumentException</a></div><div class="ttdef"><b>Definition:</b> <a href="_argument_parser_8h_source.html#l00010">ArgumentParser.h:11</a></div></div>
+<div class="ttc" id="aclass_argument_parser_html"><div class="ttname"><a href="class_argument_parser.html">ArgumentParser</a></div><div class="ttdef"><b>Definition:</b> <a href="_argument_parser_8h_source.html#l00028">ArgumentParser.h:29</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a38aa8b9e70a935a0fe9678de874343dd" name="a38aa8b9e70a935a0fe9678de874343dd"></a>
@@ -408,7 +528,12 @@ template&lt;typename Container , typename DistanceFunction &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="reorder_8cc_source.html#l00125">125</a> of file <a class="el" href="reorder_8cc_source.html">reorder.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  126</span>{</div>
+<div class="line"><span class="lineno">  127</span>    std::ifstream ins(filename);</div>
+<div class="line"><span class="lineno">  128</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="reorder_8cc.html#afc06316f842ffa06af2488cd0c723b19">readFloats</a>(ins);</div>
+<div class="line"><span class="lineno">  129</span>}</div>
+<div class="ttc" id="areorder_8cc_html_afc06316f842ffa06af2488cd0c723b19"><div class="ttname"><a href="reorder_8cc.html#afc06316f842ffa06af2488cd0c723b19">readFloats</a></div><div class="ttdeci">std::vector&lt; float &gt; readFloats(std::istream &amp;ins)</div><div class="ttdef"><b>Definition:</b> <a href="reorder_8cc_source.html#l00120">reorder.cc:120</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afc06316f842ffa06af2488cd0c723b19" name="afc06316f842ffa06af2488cd0c723b19"></a>
@@ -428,7 +553,10 @@ template&lt;typename Container , typename DistanceFunction &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="reorder_8cc_source.html#l00120">120</a> of file <a class="el" href="reorder_8cc_source.html">reorder.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  121</span>{</div>
+<div class="line"><span class="lineno">  122</span>    <span class="keywordflow">return</span> std::vector&lt;float&gt;(std::istream_iterator&lt;float&gt;(ins), std::istream_iterator&lt;float&gt;());</div>
+<div class="line"><span class="lineno">  123</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7b083c9f8d4d6c107c1161ad5351c78b" name="a7b083c9f8d4d6c107c1161ad5351c78b"></a>
@@ -450,7 +578,15 @@ template&lt;unsigned D&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="reorder_8cc_source.html#l00110">110</a> of file <a class="el" href="reorder_8cc_source.html">reorder.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  111</span>{</div>
+<div class="line"><span class="lineno">  112</span>    <span class="keywordflow">if</span> (filename == <span class="stringliteral">&quot;-&quot;</span>) {</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">return</span> readPoints&lt;D&gt;(std::cin);</div>
+<div class="line"><span class="lineno">  114</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  115</span>        std::ifstream ins(filename);</div>
+<div class="line"><span class="lineno">  116</span>        <span class="keywordflow">return</span> readPoints&lt;D&gt;(ins);</div>
+<div class="line"><span class="lineno">  117</span>    }</div>
+<div class="line"><span class="lineno">  118</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4a656f9d134e1e553207636a5e4676a0" name="a4a656f9d134e1e553207636a5e4676a0"></a>
@@ -472,7 +608,10 @@ template&lt;unsigned D&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="reorder_8cc_source.html#l00104">104</a> of file <a class="el" href="reorder_8cc_source.html">reorder.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  105</span>{</div>
+<div class="line"><span class="lineno">  106</span>    <span class="keywordflow">return</span> std::vector&lt;NPoint&lt;D&gt;&gt;(std::istream_iterator&lt;NPoint&lt;D&gt;&gt;(ins), std::istream_iterator&lt;<a class="code hl_class" href="class_n_point.html">NPoint&lt;D&gt;</a>&gt;());</div>
+<div class="line"><span class="lineno">  107</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad0b8c02c2f20d4e4a84dbc8ae4d3118f" name="ad0b8c02c2f20d4e4a84dbc8ae4d3118f"></a>
@@ -528,7 +667,40 @@ template&lt;typename Container , typename DistanceFunction &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="reorder_8cc_source.html#l00286">286</a> of file <a class="el" href="reorder_8cc_source.html">reorder.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  287</span>{</div>
+<div class="line"><span class="lineno">  288</span>    <span class="keyword">auto</span> outs = <a class="code hl_function" href="reorder_8cc.html#af0b1e2bec51b14d670983f48f06beb20">createOutputStream</a>(outFileName);</div>
+<div class="line"><span class="lineno">  289</span> </div>
+<div class="line"><span class="lineno">  290</span>    <a class="code hl_class" href="class_static_hyper_grid.html">Grid</a> grid;</div>
+<div class="line"><span class="lineno">  291</span>    <span class="comment">// Add initial point to grid.</span></div>
+<div class="line"><span class="lineno">  292</span>    grid.<a class="code hl_function" href="class_static_hyper_grid.html#a73c37380822d3d8fda573aa6143a79f8">add</a>(initialPoint);</div>
+<div class="line"><span class="lineno">  293</span>    (*outs) &lt;&lt; initialPoint &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  294</span> </div>
+<div class="line"><span class="lineno">  295</span>    <a class="code hl_class" href="class_progress_bar.html">ProgressBar</a> progress(unprocessed.size());</div>
+<div class="line"><span class="lineno">  296</span>    progress.draw();</div>
+<div class="line"><span class="lineno">  297</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; !unprocessed.empty(); ++i) {</div>
+<div class="line"><span class="lineno">  298</span>        <span class="keyword">const</span> <span class="keywordtype">bool</span> stochastic = i &lt; stochasticCount &amp;&amp; i % 2 == 0;</div>
+<div class="line"><span class="lineno">  299</span>        <span class="keyword">const</span> <span class="keyword">auto</span> toAdd = (stochastic) ?</div>
+<div class="line"><span class="lineno">  300</span>                   <a class="code hl_function" href="reorder_8cc.html#a32baec4d8c83ede319dfd17d3ba41ff5">stochasticFindNext</a>(unprocessed, grid, <a class="code hl_typedef" href="discrepancy_8cc.html#a92ec10dc6f2c9ce9455cc217fe9895f4">reng</a>, distance) :</div>
+<div class="line"><span class="lineno">  301</span>                   <a class="code hl_function" href="reorder_8cc.html#a24bbe9483586cfe127dc5f034570bb6e">findFarthest</a>(unprocessed, grid, distance);</div>
+<div class="line"><span class="lineno">  302</span> </div>
+<div class="line"><span class="lineno">  303</span>        assert(toAdd != unprocessed.end());</div>
+<div class="line"><span class="lineno">  304</span> </div>
+<div class="line"><span class="lineno">  305</span>        grid.<a class="code hl_function" href="class_static_hyper_grid.html#a73c37380822d3d8fda573aa6143a79f8">add</a>(*toAdd);</div>
+<div class="line"><span class="lineno">  306</span>        (*outs) &lt;&lt; *toAdd &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  307</span> </div>
+<div class="line"><span class="lineno">  308</span>        unprocessed.erase(toAdd);</div>
+<div class="line"><span class="lineno">  309</span>        progress.update();</div>
+<div class="line"><span class="lineno">  310</span>        progress.draw();</div>
+<div class="line"><span class="lineno">  311</span>    }</div>
+<div class="line"><span class="lineno">  312</span>    std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  313</span>}</div>
+<div class="ttc" id="aclass_progress_bar_html"><div class="ttname"><a href="class_progress_bar.html">ProgressBar</a></div><div class="ttdef"><b>Definition:</b> <a href="_progress_bar_8h_source.html#l00008">ProgressBar.h:9</a></div></div>
+<div class="ttc" id="aclass_static_hyper_grid_html"><div class="ttname"><a href="class_static_hyper_grid.html">StaticHyperGrid</a></div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00056">StaticHyperGrid.h:57</a></div></div>
+<div class="ttc" id="adiscrepancy_8cc_html_a92ec10dc6f2c9ce9455cc217fe9895f4"><div class="ttname"><a href="discrepancy_8cc.html#a92ec10dc6f2c9ce9455cc217fe9895f4">reng</a></div><div class="ttdeci">std::mt19937 reng</div><div class="ttdef"><b>Definition:</b> <a href="discrepancy_8cc_source.html#l00016">discrepancy.cc:16</a></div></div>
+<div class="ttc" id="areorder_8cc_html_a24bbe9483586cfe127dc5f034570bb6e"><div class="ttname"><a href="reorder_8cc.html#a24bbe9483586cfe127dc5f034570bb6e">findFarthest</a></div><div class="ttdeci">Container::iterator findFarthest(Container &amp;list, const Grid &amp;grid, DistanceFunction distance)</div><div class="ttdef"><b>Definition:</b> <a href="reorder_8cc_source.html#l00263">reorder.cc:263</a></div></div>
+<div class="ttc" id="areorder_8cc_html_a32baec4d8c83ede319dfd17d3ba41ff5"><div class="ttname"><a href="reorder_8cc.html#a32baec4d8c83ede319dfd17d3ba41ff5">stochasticFindNext</a></div><div class="ttdeci">Container::iterator stochasticFindNext(Container &amp;list, const Grid &amp;grid, RNG &amp;rng, DistanceFunction distance)</div><div class="ttdef"><b>Definition:</b> <a href="reorder_8cc_source.html#l00133">reorder.cc:133</a></div></div>
+<div class="ttc" id="areorder_8cc_html_af0b1e2bec51b14d670983f48f06beb20"><div class="ttname"><a href="reorder_8cc.html#af0b1e2bec51b14d670983f48f06beb20">createOutputStream</a></div><div class="ttdeci">std::unique_ptr&lt; std::ofstream &gt; createOutputStream(const std::string &amp;filename)</div><div class="ttdef"><b>Definition:</b> <a href="reorder_8cc_source.html#l00275">reorder.cc:275</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3959a191168bd95c1618d9c61c5ecb8f" name="a3959a191168bd95c1618d9c61c5ecb8f"></a>
@@ -566,7 +738,35 @@ template&lt;typename DistanceFunction &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="reorder_8cc_source.html#l00316">316</a> of file <a class="el" href="reorder_8cc_source.html">reorder.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  317</span>{</div>
+<div class="line"><span class="lineno">  318</span>    <a class="code hl_typedef" href="pd__progressive__generation_8cc.html#acea5f43431fabbaac7123a4b77ed414d">RNG</a> <a class="code hl_typedef" href="discrepancy_8cc.html#a92ec10dc6f2c9ce9455cc217fe9895f4">reng</a>;</div>
+<div class="line"><span class="lineno">  319</span> </div>
+<div class="line"><span class="lineno">  320</span>    <span class="comment">// Read in points, perhaps from stdin.</span></div>
+<div class="line"><span class="lineno">  321</span>    <a class="code hl_typedef" href="discrepancy_8cc.html#a73845c52820b806f986820e591a6613b">PointContainer</a> points = readPoints&lt;kDims&gt;(inFileName);</div>
+<div class="line"><span class="lineno">  322</span> </div>
+<div class="line"><span class="lineno">  323</span>    <span class="comment">// This is an odd way to make the first point of the re-ordered sequence</span></div>
+<div class="line"><span class="lineno">  324</span>    <span class="comment">// the first point of the original sequence, in case there is something</span></div>
+<div class="line"><span class="lineno">  325</span>    <span class="comment">// special about that point.</span></div>
+<div class="line"><span class="lineno">  326</span>    std::reverse(points.begin(), points.end());</div>
+<div class="line"><span class="lineno">  327</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_n_point.html">Point</a> initialPoint = points.<a class="code hl_function" href="class_n_point.html#a554c8b01d262f19a1f5b8e88f54b6599">back</a>();</div>
+<div class="line"><span class="lineno">  328</span> </div>
+<div class="line"><span class="lineno">  329</span>    <span class="comment">// Remove initial point from unprocessed list.</span></div>
+<div class="line"><span class="lineno">  330</span>    points.pop_back();</div>
+<div class="line"><span class="lineno">  331</span> </div>
+<div class="line"><span class="lineno">  332</span>    <span class="comment">// We don&#39;t allow dynamically changing distance functions. It ruins the cache.</span></div>
+<div class="line"><span class="lineno">  333</span>    DistanceFunction distance(0);</div>
+<div class="line"><span class="lineno">  334</span>    <a class="code hl_function" href="reorder_8cc.html#ad0b8c02c2f20d4e4a84dbc8ae4d3118f">reorder</a>(outFileName,</div>
+<div class="line"><span class="lineno">  335</span>            std::vector&lt;<a class="code hl_class" href="class_cached_dist_point.html">CachedDistPoint&lt;kDims&gt;</a>&gt;(points.cbegin(), points.cend()),</div>
+<div class="line"><span class="lineno">  336</span>            initialPoint,</div>
+<div class="line"><span class="lineno">  337</span>            <a class="code hl_typedef" href="discrepancy_8cc.html#a92ec10dc6f2c9ce9455cc217fe9895f4">reng</a>,</div>
+<div class="line"><span class="lineno">  338</span>            distance,</div>
+<div class="line"><span class="lineno">  339</span>            stochasticCount);</div>
+<div class="line"><span class="lineno">  340</span>}</div>
+<div class="ttc" id="aclass_cached_dist_point_html"><div class="ttname"><a href="class_cached_dist_point.html">CachedDistPoint</a></div><div class="ttdef"><b>Definition:</b> <a href="reorder_8cc_source.html#l00040">reorder.cc:41</a></div></div>
+<div class="ttc" id="aclass_n_point_html_a554c8b01d262f19a1f5b8e88f54b6599"><div class="ttname"><a href="class_n_point.html#a554c8b01d262f19a1f5b8e88f54b6599">NPoint::back</a></div><div class="ttdeci">float back() const</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00085">NPoint.h:85</a></div></div>
+<div class="ttc" id="apd__progressive__generation_8cc_html_acea5f43431fabbaac7123a4b77ed414d"><div class="ttname"><a href="pd__progressive__generation_8cc.html#acea5f43431fabbaac7123a4b77ed414d">RNG</a></div><div class="ttdeci">std::mt19937 RNG</div><div class="ttdef"><b>Definition:</b> <a href="pd__progressive__generation_8cc_source.html#l00019">pd_progressive_generation.cc:19</a></div></div>
+<div class="ttc" id="areorder_8cc_html_ad0b8c02c2f20d4e4a84dbc8ae4d3118f"><div class="ttname"><a href="reorder_8cc.html#ad0b8c02c2f20d4e4a84dbc8ae4d3118f">reorder</a></div><div class="ttdeci">void reorder(const std::string &amp;outFileName, Container unprocessed, const Point &amp;initialPoint, RNG &amp;reng, DistanceFunction distance, unsigned stochasticCount)</div><div class="ttdef"><b>Definition:</b> <a href="reorder_8cc_source.html#l00286">reorder.cc:286</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a32baec4d8c83ede319dfd17d3ba41ff5" name="a32baec4d8c83ede319dfd17d3ba41ff5"></a>
@@ -610,7 +810,60 @@ template&lt;typename Container , typename DistanceFunction &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="reorder_8cc_source.html#l00133">133</a> of file <a class="el" href="reorder_8cc_source.html">reorder.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  134</span>{</div>
+<div class="line"><span class="lineno">  135</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> Container::iterator iterator;</div>
+<div class="line"><span class="lineno">  136</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> Container::size_type <a class="code hl_typedef" href="namespacemoonray_1_1pbr_1_1sp.html#ab4e631ad91afaa200663658549825bf1">size_type</a>;</div>
+<div class="line"><span class="lineno">  137</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr_1_1sp.html#ab4e631ad91afaa200663658549825bf1">size_type</a> upperLimit = list.size() / 4u;</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>    <span class="comment">// For each point in list (up to a limit):</span></div>
+<div class="line"><span class="lineno">  140</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  141</span>    <span class="comment">// If it is farther than radius to each point in the grid, add to candidate</span></div>
+<div class="line"><span class="lineno">  142</span>    <span class="comment">// list.</span></div>
+<div class="line"><span class="lineno">  143</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  144</span>    <span class="comment">// Randomly choose one element from candidate list.</span></div>
+<div class="line"><span class="lineno">  145</span> </div>
+<div class="line"><span class="lineno">  146</span>    <span class="keyword">struct </span>ValueType</div>
+<div class="line"><span class="lineno">  147</span>    {</div>
+<div class="line"><span class="lineno">  148</span>        ValueType(iterator it, <span class="keywordtype">float</span> d) : iter(it), distance(d) {}</div>
+<div class="line"><span class="lineno">  149</span>        <span class="keyword">typename</span> Container::iterator iter;</div>
+<div class="line"><span class="lineno">  150</span>        <span class="keywordtype">float</span> distance;</div>
+<div class="line"><span class="lineno">  151</span>    };</div>
+<div class="line"><span class="lineno">  152</span> </div>
+<div class="line"><span class="lineno">  153</span>    std::vector&lt;ValueType&gt; candidates;</div>
+<div class="line"><span class="lineno">  154</span>    candidates.reserve(upperLimit);</div>
+<div class="line"><span class="lineno">  155</span> </div>
+<div class="line"><span class="lineno">  156</span>    <span class="comment">// We want to make a min-heap, so we can readily access the smallest value</span></div>
+<div class="line"><span class="lineno">  157</span>    <span class="comment">// we&#39;ve saved, so swap it out.</span></div>
+<div class="line"><span class="lineno">  158</span>    <span class="keyword">auto</span> comp = [](<span class="keyword">const</span> ValueType&amp; <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a>, <span class="keyword">const</span> ValueType&amp; b) { <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a>.distance &gt; b.distance; };</div>
+<div class="line"><span class="lineno">  159</span> </div>
+<div class="line"><span class="lineno">  160</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = list.begin(); it != list.end(); ++it) {</div>
+<div class="line"><span class="lineno">  161</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> c = <a class="code hl_function" href="reorder_8cc.html#a800e4bd1c795f243c08a761e678a6bc8">findClosest</a>(*it, grid, distance);</div>
+<div class="line"><span class="lineno">  162</span>        <span class="keywordflow">if</span> (candidates.empty() || candidates.size() &lt; upperLimit) {</div>
+<div class="line"><span class="lineno">  163</span>            candidates.emplace_back(it, c);</div>
+<div class="line"><span class="lineno">  164</span>            <span class="keywordflow">if</span> (candidates.size() == upperLimit) {</div>
+<div class="line"><span class="lineno">  165</span>                std::make_heap(candidates.begin(), candidates.end(), comp);</div>
+<div class="line"><span class="lineno">  166</span>            }</div>
+<div class="line"><span class="lineno">  167</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (c &gt; candidates.front().distance) {</div>
+<div class="line"><span class="lineno">  168</span>            std::pop_heap(candidates.begin(), candidates.end(), comp);</div>
+<div class="line"><span class="lineno">  169</span>            candidates.back() = ValueType(it, c);</div>
+<div class="line"><span class="lineno">  170</span>            std::push_heap(candidates.begin(), candidates.end(), comp);</div>
+<div class="line"><span class="lineno">  171</span>        }</div>
+<div class="line"><span class="lineno">  172</span>    }</div>
+<div class="line"><span class="lineno">  173</span> </div>
+<div class="line"><span class="lineno">  174</span>    std::vector&lt;float&gt; distances;</div>
+<div class="line"><span class="lineno">  175</span>    distances.reserve(candidates.size());</div>
+<div class="line"><span class="lineno">  176</span>    std::transform(candidates.begin(), candidates.end(), std::back_inserter(distances),</div>
+<div class="line"><span class="lineno">  177</span>            [](<span class="keyword">const</span> ValueType&amp; v) {</div>
+<div class="line"><span class="lineno">  178</span>                return v.distance;</div>
+<div class="line"><span class="lineno">  179</span>            });</div>
+<div class="line"><span class="lineno">  180</span> </div>
+<div class="line"><span class="lineno">  181</span>    std::discrete_distribution&lt;size_type&gt; dist(distances.begin(), distances.end());</div>
+<div class="line"><span class="lineno">  182</span>    <span class="keywordflow">return</span> candidates.at(dist(rng)).iter;</div>
+<div class="line"><span class="lineno">  183</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_1_1sp_html_ab4e631ad91afaa200663658549825bf1"><div class="ttname"><a href="namespacemoonray_1_1pbr_1_1sp.html#ab4e631ad91afaa200663658549825bf1">moonray::pbr::sp::size_type</a></div><div class="ttdeci">std::int32_t size_type</div><div class="ttdef"><b>Definition:</b> <a href="_sample_partition_8h_source.html#l00029">SamplePartition.h:29</a></div></div>
+<div class="ttc" id="anamespacesequence__discrepancy_html_a06f968c2f5ed1f9d42f00351b2b1efb2"><div class="ttname"><a href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">sequence_discrepancy.a</a></div><div class="ttdeci">def a</div><div class="ttdef"><b>Definition:</b> <a href="sequence__discrepancy_8py_source.html#l00038">sequence_discrepancy.py:38</a></div></div>
+<div class="ttc" id="areorder_8cc_html_a800e4bd1c795f243c08a761e678a6bc8"><div class="ttname"><a href="reorder_8cc.html#a800e4bd1c795f243c08a761e678a6bc8">findClosest</a></div><div class="ttdeci">float findClosest(const Point &amp;p, const Grid &amp;grid, DistanceFunction distance)</div><div class="ttdef"><b>Definition:</b> <a href="reorder_8cc_source.html#l00074">reorder.cc:74</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -631,9 +884,13 @@ template&lt;typename Container , typename DistanceFunction &gt; </div>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_1d5181f7ddc67e55cdef6ebe6c9b692d.html">cmd</a></li><li class="navelem"><a class="el" href="dir_9db75a9d37a8d3d7abd087d56d5231aa.html">point_generation_cmd</a></li><li class="navelem"><a class="el" href="reorder_8cc.html">reorder.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

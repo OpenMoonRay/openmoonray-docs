@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_e8636fe16f0c9a46fe2eb47f132af4e0.html">dso</a></li><li class="navelem"><a class="el" href="dir_5f71410be15e9fc4bb8c50fa91f611d0.html">map</a></li><li class="navelem"><a class="el" href="dir_4d7de2707ccdb0e464f2dbc5edca4df7.html">UsdPrimvarReader_float2</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_usd_primvar_reader__float2_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">UsdPrimvarReader_float2.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -64,12 +81,67 @@ Functions</h2></td></tr>
 <tr class="separator:a854e4382a597c81794aed08c3582cfa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_usd_primvar_reader__float2_8cc.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
 <tr class="separator:a44137bb65de2396875934e48a6ee5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab527eec89029a7b166a67dd899129255"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_usd_primvar_reader__float2_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a> (const scene_rdl2::rdl2::Map *self, <a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls, const <a class="el" href="classmoonray_1_1shading_1_1_state.html">moonray::shading::State</a> &amp;state, Color *sample)</td></tr>
+<tr class="separator:ab527eec89029a7b166a67dd899129255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a8c3255eb7e590d0acf570add1c864780"><td class="memItemLeft" align="right" valign="top">ispc::UsdPrimvarReader&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_usd_primvar_reader__float2_8cc.html#a8c3255eb7e590d0acf570add1c864780">mIspc</a></td></tr>
+<tr class="separator:a8c3255eb7e590d0acf570add1c864780"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Scott Cegielski </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="_usd_primvar_reader__float2_8cc_source.html">UsdPrimvarReader_float2.cc</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="ab527eec89029a7b166a67dd899129255" name="ab527eec89029a7b166a67dd899129255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab527eec89029a7b166a67dd899129255">&#9670;&#160;</a></span>sample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void sample </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::rdl2::Map *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *&#160;</td>
+          <td class="paramname"><em>tls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_state.html">moonray::shading::State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color *&#160;</td>
+          <td class="paramname"><em>sample</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a44137bb65de2396875934e48a6ee5099" name="a44137bb65de2396875934e48a6ee5099"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44137bb65de2396875934e48a6ee5099">&#9670;&#160;</a></span>update()</h2>
 
@@ -122,7 +194,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_usd_primvar_reader__float2_8cc_source.html#l00037">37</a> of file <a class="el" href="_usd_primvar_reader__float2_8cc_source.html">UsdPrimvarReader_float2.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                                                                                                                 :</div>
+<div class="line"><span class="lineno">   38</span>    Parent(sceneClass, name)</div>
+<div class="line"><span class="lineno">   39</span>{</div>
+<div class="line"><span class="lineno">   40</span>    mSampleFunc = UsdPrimvarReader_float2::sample;</div>
+<div class="line"><span class="lineno">   41</span>    mSampleFuncv = (scene_rdl2::rdl2::SampleFuncv) ispc::UsdPrimvarReader_float2_getSampleFunc();</div>
+<div class="line"><span class="lineno">   42</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a854e4382a597c81794aed08c3582cfa2" name="a854e4382a597c81794aed08c3582cfa2"></a>
@@ -149,13 +227,44 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_usd_primvar_reader__float2_8cc_source.html#l00044">44</a> of file <a class="el" href="_usd_primvar_reader__float2_8cc_source.html">UsdPrimvarReader_float2.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>{</div>
+<div class="line"><span class="lineno">   46</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a8c3255eb7e590d0acf570add1c864780" name="a8c3255eb7e590d0acf570add1c864780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c3255eb7e590d0acf570add1c864780">&#9670;&#160;</a></span>mIspc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ispc::UsdPrimvarReader mIspc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_usd_primvar_reader__float2_8cc_source.html#l00031">31</a> of file <a class="el" href="_usd_primvar_reader__float2_8cc_source.html">UsdPrimvarReader_float2.cc</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_6a52a9733426c3f6f80e6f7bd53e6965.html">dso</a></li><li class="navelem"><a class="el" href="dir_5f9b4680df21b28e51962f6a938bc02c.html">map</a></li><li class="navelem"><a class="el" href="dir_f06651111ecc2139779cfa86a6ddbaff.html">UsdPrimvarReader_float2</a></li><li class="navelem"><a class="el" href="_usd_primvar_reader__float2_8cc.html">UsdPrimvarReader_float2.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

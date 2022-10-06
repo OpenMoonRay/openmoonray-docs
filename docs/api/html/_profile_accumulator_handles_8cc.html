@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae3c302d167a7f3c31858fcdeba382aa.html">mcrt_common</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_profile_accumulator_handles_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
@@ -62,6 +78,8 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemoonray_1_1mcrt__common"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1mcrt__common.html">moonray::mcrt_common</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_handles_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_handles_8cc_03.html">moonray::mcrt_common::anonymous_namespace{ProfileAccumulatorHandles.cc}</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -70,6 +88,16 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a67d6a148ead50d6835c6a3b07802b266"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_handles_8cc_03.html#a67d6a148ead50d6835c6a3b07802b266">moonray::mcrt_common::anonymous_namespace{ProfileAccumulatorHandles.cc}::getAccIndex</a> (const Accumulator *acc)</td></tr>
+<tr class="separator:a67d6a148ead50d6835c6a3b07802b266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e10b05934b9d70a1f09fec55fa7d273"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_handles_8cc_03.html#a6e10b05934b9d70a1f09fec55fa7d273">moonray::mcrt_common::anonymous_namespace{ProfileAccumulatorHandles.cc}::getAccIndex</a> (<a class="el" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2">ExclAccType</a> acc)</td></tr>
+<tr class="separator:a6e10b05934b9d70a1f09fec55fa7d273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d9a79844df28ef82d61f9e61e9bba9"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_handles_8cc_03.html#aa0d9a79844df28ef82d61f9e61e9bba9">moonray::mcrt_common::anonymous_namespace{ProfileAccumulatorHandles.cc}::getAccIndex</a> (<a class="el" href="_profile_accumulator_handles_8hh.html#a61d8362ef625ecff43c2e24337d48d62">OverlappedAccType</a> acc)</td></tr>
+<tr class="separator:aa0d9a79844df28ef82d61f9e61e9bba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae69d42096510165f3270c43c970a6610"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_handles_8cc_03.html#ae69d42096510165f3270c43c970a6610">moonray::mcrt_common::anonymous_namespace{ProfileAccumulatorHandles.cc}::getAccIndex</a> (<a class="el" href="_profile_accumulator_handles_8hh.html#a3bc4e0853e0f0a30264c843c48f0500e">InternalAccType</a> acc)</td></tr>
+<tr class="separator:ae69d42096510165f3270c43c970a6610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe1717fe4ecf66058987e7a7981f156e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_handles_8cc_03.html#abe1717fe4ecf66058987e7a7981f156e">moonray::mcrt_common::anonymous_namespace{ProfileAccumulatorHandles.cc}::conditionTimes</a> (std::vector&lt; double &gt; &amp;times)</td></tr>
+<tr class="separator:abe1717fe4ecf66058987e7a7981f156e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69136947a9c7c167075111abb285fd41"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1mcrt__common.html#a69136947a9c7c167075111abb285fd41">moonray::mcrt_common::snapshotAccumulators</a> (std::vector&lt; AccumulatorResult &gt; *dstResults, double rcpTickFrequency, double threshold)</td></tr>
 <tr class="separator:a69136947a9c7c167075111abb285fd41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e6cdfa1b93ad29f502abeb6bffa2891"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1mcrt__common.html#a0e6cdfa1b93ad29f502abeb6bffa2891">moonray::mcrt_common::CPP_startOverlappedAccumulator</a> (mcrt_common::BaseTLState *tls, <a class="el" href="_profile_accumulator_handles_8hh.html#a61d8362ef625ecff43c2e24337d48d62">OverlappedAccType</a> type)</td></tr>
@@ -108,9 +136,13 @@ Variables</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_e2fd80e2f4e6b7185759f42acd6fa819.html">mcrt_common</a></li><li class="navelem"><a class="el" href="_profile_accumulator_handles_8cc.html">ProfileAccumulatorHandles.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

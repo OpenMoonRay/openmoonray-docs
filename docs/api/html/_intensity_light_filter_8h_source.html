@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_0a2a2b866d7615677c0b171a63da29b0.html">lightfilter</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_intensity_light_filter_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">IntensityLightFilter.h</div></div>
 </div><!--header-->
@@ -52,8 +68,9 @@ $(function() {
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"></span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Marianna Neubauer</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"></span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_light_filter_8h.html">LightFilter.h</a>&quot;</span></div>
@@ -83,20 +100,21 @@ $(function() {
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                        <span class="keyword">const</span> scene_rdl2::math::Mat4d&amp; world2render) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a1951106ab33164c7b517275a2705a765">canIlluminate</a>(<span class="keyword">const</span> CanIlluminateData &amp;data) <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">virtual</span> scene_rdl2::math::Color <a class="code hl_function" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a2d37be9b7b5562d10271d0e42d655317">eval</a>(<span class="keyword">const</span> EvalData&amp; data) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a923ea39a3d3dadf635d9c72ef6f0f913">   40</a></span>    <span class="keyword">static</span> uint32_t <a class="code hl_function" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a923ea39a3d3dadf635d9c72ef6f0f913">hudValidation</a>(<span class="keywordtype">bool</span> verbose) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"></span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">    /// HUD validation and type casting</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a923ea39a3d3dadf635d9c72ef6f0f913">   40</a></span><span class="comment"></span>    <span class="keyword">static</span> uint32_t <a class="code hl_function" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a923ea39a3d3dadf635d9c72ef6f0f913">hudValidation</a>(<span class="keywordtype">bool</span> verbose) {</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_define" href="_light_filter_8hh.html#a163647c98de7bafa347a2f7ef3df1ae6">INTENSITY_LIGHT_FILTER_VALIDATION</a>;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#aeeab87b0cdcda7138140f85e6b1a9817">   43</a></span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#aeeab87b0cdcda7138140f85e6b1a9817">HUD_AS_ISPC_METHODS</a>(<a class="code hl_class" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html">IntensityLightFilter</a>);</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    INTENSITY_LIGHT_FILTER_MEMBERS;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#af620315f97c8a296dcbb68b8d3ec56b5">   46</a></span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#af620315f97c8a296dcbb68b8d3ec56b5">INTENSITY_LIGHT_FILTER_MEMBERS</a>;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> sAttributeKeyInitialized;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">static</span> scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt; sIntensityKey;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">static</span> scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt; sExposureKey;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">static</span> scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Rgb&gt; sColorKey;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">static</span> scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Bool&gt; sInvertKey;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a513ae0fb3321ee799c3de1e91e1b59a0">   48</a></span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a513ae0fb3321ee799c3de1e91e1b59a0">sAttributeKeyInitialized</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a384032b99eca3198cb824fd1d580a52b">   49</a></span>    <span class="keyword">static</span> scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a384032b99eca3198cb824fd1d580a52b">sIntensityKey</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a4c9f0364aa912251159469b07d1971da">   50</a></span>    <span class="keyword">static</span> scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a4c9f0364aa912251159469b07d1971da">sExposureKey</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a43bc6c0264346fbc276b4ab83f77cfad">   51</a></span>    <span class="keyword">static</span> scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Rgb&gt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a43bc6c0264346fbc276b4ab83f77cfad">sColorKey</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#afcf02e0dd905f209eaf76d6af47f8009">   52</a></span>    <span class="keyword">static</span> scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Bool&gt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#afcf02e0dd905f209eaf76d6af47f8009">sInvertKey</a>;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>} <span class="comment">// namespace pbr</span></div>
@@ -112,18 +130,28 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_intensity_light_filter_html_a1951106ab33164c7b517275a2705a765"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a1951106ab33164c7b517275a2705a765">moonray::pbr::IntensityLightFilter::canIlluminate</a></div><div class="ttdeci">virtual bool canIlluminate(const CanIlluminateData &amp;data) const override</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_intensity_light_filter_8cc_source.html#l00085">IntensityLightFilter.cc:85</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_intensity_light_filter_html_a2d37be9b7b5562d10271d0e42d655317"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a2d37be9b7b5562d10271d0e42d655317">moonray::pbr::IntensityLightFilter::eval</a></div><div class="ttdeci">virtual scene_rdl2::math::Color eval(const EvalData &amp;data) const override</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_intensity_light_filter_8cc_source.html#l00092">IntensityLightFilter.cc:92</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_intensity_light_filter_html_a2e7507b17b3c7c7e34956534d0acd16c"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a2e7507b17b3c7c7e34956534d0acd16c">moonray::pbr::IntensityLightFilter::~IntensityLightFilter</a></div><div class="ttdeci">virtual ~IntensityLightFilter() override</div><div class="ttdef"><b>Definition:</b> <a href="_intensity_light_filter_8h_source.html#l00032">IntensityLightFilter.h:32</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_intensity_light_filter_html_a384032b99eca3198cb824fd1d580a52b"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a384032b99eca3198cb824fd1d580a52b">moonray::pbr::IntensityLightFilter::sIntensityKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sIntensityKey</div><div class="ttdef"><b>Definition:</b> <a href="_intensity_light_filter_8h_source.html#l00049">IntensityLightFilter.h:49</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_intensity_light_filter_html_a43bc6c0264346fbc276b4ab83f77cfad"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a43bc6c0264346fbc276b4ab83f77cfad">moonray::pbr::IntensityLightFilter::sColorKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Rgb &gt; sColorKey</div><div class="ttdef"><b>Definition:</b> <a href="_intensity_light_filter_8h_source.html#l00051">IntensityLightFilter.h:51</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_intensity_light_filter_html_a4c9f0364aa912251159469b07d1971da"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a4c9f0364aa912251159469b07d1971da">moonray::pbr::IntensityLightFilter::sExposureKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sExposureKey</div><div class="ttdef"><b>Definition:</b> <a href="_intensity_light_filter_8h_source.html#l00050">IntensityLightFilter.h:50</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_intensity_light_filter_html_a513ae0fb3321ee799c3de1e91e1b59a0"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a513ae0fb3321ee799c3de1e91e1b59a0">moonray::pbr::IntensityLightFilter::sAttributeKeyInitialized</a></div><div class="ttdeci">static bool sAttributeKeyInitialized</div><div class="ttdef"><b>Definition:</b> <a href="_intensity_light_filter_8h_source.html#l00048">IntensityLightFilter.h:48</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_intensity_light_filter_html_a52eff19336c4324757c74d6d54f0bd24"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a52eff19336c4324757c74d6d54f0bd24">moonray::pbr::IntensityLightFilter::IntensityLightFilter</a></div><div class="ttdeci">IntensityLightFilter()</div><div class="ttdef"><b>Definition:</b> <a href="_intensity_light_filter_8h_source.html#l00029">IntensityLightFilter.h:29</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_intensity_light_filter_html_a923ea39a3d3dadf635d9c72ef6f0f913"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#a923ea39a3d3dadf635d9c72ef6f0f913">moonray::pbr::IntensityLightFilter::hudValidation</a></div><div class="ttdeci">static uint32_t hudValidation(bool verbose)</div><div class="ttdoc">HUD validation and type casting.</div><div class="ttdef"><b>Definition:</b> <a href="_intensity_light_filter_8h_source.html#l00040">IntensityLightFilter.h:40</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_intensity_light_filter_html_adbfae8b040211e25bfc50cdc37d8a334"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#adbfae8b040211e25bfc50cdc37d8a334">moonray::pbr::IntensityLightFilter::initAttributeKeys</a></div><div class="ttdeci">void initAttributeKeys(const scene_rdl2::rdl2::SceneClass &amp;sc)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_intensity_light_filter_8cc_source.html#l00039">IntensityLightFilter.cc:39</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_intensity_light_filter_html_aeeab87b0cdcda7138140f85e6b1a9817"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#aeeab87b0cdcda7138140f85e6b1a9817">moonray::pbr::IntensityLightFilter::HUD_AS_ISPC_METHODS</a></div><div class="ttdeci">HUD_AS_ISPC_METHODS(IntensityLightFilter)</div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_intensity_light_filter_html_af620315f97c8a296dcbb68b8d3ec56b5"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#af620315f97c8a296dcbb68b8d3ec56b5">moonray::pbr::IntensityLightFilter::INTENSITY_LIGHT_FILTER_MEMBERS</a></div><div class="ttdeci">INTENSITY_LIGHT_FILTER_MEMBERS</div><div class="ttdef"><b>Definition:</b> <a href="_intensity_light_filter_8h_source.html#l00046">IntensityLightFilter.h:46</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_intensity_light_filter_html_afcf02e0dd905f209eaf76d6af47f8009"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_intensity_light_filter.html#afcf02e0dd905f209eaf76d6af47f8009">moonray::pbr::IntensityLightFilter::sInvertKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Bool &gt; sInvertKey</div><div class="ttdef"><b>Definition:</b> <a href="_intensity_light_filter_8h_source.html#l00052">IntensityLightFilter.h:52</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_filter_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_filter.html">moonray::pbr::LightFilter</a></div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8h_source.html#l00041">LightFilter.h:42</a></div></div>
 <div class="ttc" id="anamespaceispc_html"><div class="ttname"><a href="namespaceispc.html">ispc</a></div><div class="ttdef"><b>Definition:</b> <a href="_attribute_table_8cc_source.html#l00012">AttributeTable.cc:12</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a42f075addf218b1680765a8b76e8e9b0"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a42f075addf218b1680765a8b76e8e9b0">moonray::pbr::LightFilterMap</a></div><div class="ttdeci">std::unordered_map&lt; const scene_rdl2::rdl2::LightFilter *, std::unique_ptr&lt; LightFilter &gt; &gt; LightFilterMap</div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8h_source.html#l00038">LightFilter.h:38</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_ec0373f1e45928918058d4e27767808d.html">lightfilter</a></li><li class="navelem"><a class="el" href="_intensity_light_filter_8h.html">IntensityLightFilter.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

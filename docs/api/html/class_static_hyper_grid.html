@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,11 +43,30 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_static_hyper_grid.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_static_hyper_grid-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">StaticHyperGrid&lt; T, Dimensions, IncomingRange &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -70,11 +93,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad1bfc39bb7b9e53dc436466265036d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acba4c934a971ad0e7da621df52ac71d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid.html#acba4c934a971ad0e7da621df52ac71d1">StaticHyperGrid</a> (<a class="el" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a> <a class="el" href="class_static_hyper_grid.html#a9c515b7669822b487a2c6e4cadf3947b">order</a>)</td></tr>
 <tr class="separator:acba4c934a971ad0e7da621df52ac71d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63cd898925192221b10c3fc7c65af5ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid.html#a63cd898925192221b10c3fc7c65af5ac">left</a> (<a class="el" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a> <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) const noexcept</td></tr>
+<tr class="memitem:a63cd898925192221b10c3fc7c65af5ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid.html#a63cd898925192221b10c3fc7c65af5ac">left</a> (<a class="el" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a> x) const noexcept</td></tr>
 <tr class="separator:a63cd898925192221b10c3fc7c65af5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54686ec1f021c8add9a983be185ed3b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid.html#a54686ec1f021c8add9a983be185ed3b2">center</a> (<a class="el" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a> <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) const noexcept</td></tr>
+<tr class="memitem:a54686ec1f021c8add9a983be185ed3b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid.html#a54686ec1f021c8add9a983be185ed3b2">center</a> (<a class="el" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a> x) const noexcept</td></tr>
 <tr class="separator:a54686ec1f021c8add9a983be185ed3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a841311484023ef306fc3f09f7d350bb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid.html#a841311484023ef306fc3f09f7d350bb4">right</a> (<a class="el" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a> <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) const noexcept</td></tr>
+<tr class="memitem:a841311484023ef306fc3f09f7d350bb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid.html#a841311484023ef306fc3f09f7d350bb4">right</a> (<a class="el" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a> x) const noexcept</td></tr>
 <tr class="separator:a841311484023ef306fc3f09f7d350bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45c0d5f9603ed38706228f43e04d6f70"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
 <tr class="memitem:a45c0d5f9603ed38706228f43e04d6f70"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid.html#a5dcfa6248b05cbfe888c64789a30cd32">ResultReturnType</a>&lt; F &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid.html#a45c0d5f9603ed38706228f43e04d6f70">visitNeighbors</a> (F &amp;&amp;f, const T &amp;p) const</td></tr>
@@ -109,12 +132,55 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a6fdf572c97694822c128faadbf6280c9"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid.html#a6fdf572c97694822c128faadbf6280c9">StaticHyperGrid&lt; T, Dimensions+1, IncomingRange &gt;</a></td></tr>
 <tr class="separator:a6fdf572c97694822c128faadbf6280c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:aa814bf44ff3092f248700a7557e251dc"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="class_static_hyper_grid.html#a68900d0cc70156839b32f97b843ab982">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid.html#aa814bf44ff3092f248700a7557e251dc">ContainerType</a></td></tr>
+<tr class="separator:aa814bf44ff3092f248700a7557e251dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a9d7db8e674352ed08e6843cb9ffa547c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid.html#a9d7db8e674352ed08e6843cb9ffa547c">offset</a> (const T &amp;p) const noexcept</td></tr>
+<tr class="separator:a9d7db8e674352ed08e6843cb9ffa547c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3d243de6345a9e91a57f64a907ae3061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">mOrder</a></td></tr>
+<tr class="separator:a3d243de6345a9e91a57f64a907ae3061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6d2402d70a290f04de093042ef451de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_static_hyper_grid.html#aa814bf44ff3092f248700a7557e251dc">ContainerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a></td></tr>
+<tr class="separator:ab6d2402d70a290f04de093042ef451de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, unsigned Dimensions, typename IncomingRange = CanonicalRange&gt;<br />
 class StaticHyperGrid&lt; T, Dimensions, IncomingRange &gt;</div>
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00056">56</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aa814bf44ff3092f248700a7557e251dc" name="aa814bf44ff3092f248700a7557e251dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa814bf44ff3092f248700a7557e251dc">&#9670;&#160;</a></span>ContainerType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , unsigned Dimensions, typename IncomingRange  = CanonicalRange&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="class_static_hyper_grid.html#a68900d0cc70156839b32f97b843ab982">value_type</a>&gt; <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T, Dimensions, IncomingRange &gt;::ContainerType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00257">257</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
+
+</div>
+</div>
 <a id="a5dcfa6248b05cbfe888c64789a30cd32" name="a5dcfa6248b05cbfe888c64789a30cd32"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5dcfa6248b05cbfe888c64789a30cd32">&#9670;&#160;</a></span>ResultReturnType</h2>
 
@@ -218,7 +284,13 @@ template&lt;typename T , unsigned Dimensions, typename IncomingRange  = Canonica
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00073">73</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   74</span>    : <a class="code hl_variable" href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">mOrder</a>(1)</div>
+<div class="line"><span class="lineno">   75</span>    , <a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>(1)</div>
+<div class="line"><span class="lineno">   76</span>    {</div>
+<div class="line"><span class="lineno">   77</span>    }</div>
+<div class="ttc" id="aclass_static_hyper_grid_html_a3d243de6345a9e91a57f64a907ae3061"><div class="ttname"><a href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">StaticHyperGrid::mOrder</a></div><div class="ttdeci">size_type mOrder</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00259">StaticHyperGrid.h:259</a></div></div>
+<div class="ttc" id="aclass_static_hyper_grid_html_ab6d2402d70a290f04de093042ef451de"><div class="ttname"><a href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">StaticHyperGrid::mData</a></div><div class="ttdeci">ContainerType mData</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00260">StaticHyperGrid.h:260</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acba4c934a971ad0e7da621df52ac71d1" name="acba4c934a971ad0e7da621df52ac71d1"></a>
@@ -248,7 +320,18 @@ template&lt;typename T , unsigned Dimensions, typename IncomingRange  = Canonica
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00079">79</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   80</span>    : <a class="code hl_variable" href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">mOrder</a>(<a class="code hl_function" href="class_static_hyper_grid.html#a9c515b7669822b487a2c6e4cadf3947b">order</a>)</div>
+<div class="line"><span class="lineno">   81</span>    , <a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>()</div>
+<div class="line"><span class="lineno">   82</span>    {</div>
+<div class="line"><span class="lineno">   83</span>        <span class="comment">// Initialize sub-trees with the same order.</span></div>
+<div class="line"><span class="lineno">   84</span>        <a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>.reserve(<a class="code hl_function" href="class_static_hyper_grid.html#a9c515b7669822b487a2c6e4cadf3947b">order</a>);</div>
+<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">for</span> (<a class="code hl_typedef" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a> i = 0; i &lt; <a class="code hl_function" href="class_static_hyper_grid.html#a9c515b7669822b487a2c6e4cadf3947b">order</a>; ++i) {</div>
+<div class="line"><span class="lineno">   86</span>            <a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>.emplace_back(<a class="code hl_function" href="class_static_hyper_grid.html#a9c515b7669822b487a2c6e4cadf3947b">order</a>);</div>
+<div class="line"><span class="lineno">   87</span>        }</div>
+<div class="line"><span class="lineno">   88</span>    }</div>
+<div class="ttc" id="aclass_static_hyper_grid_html_a7898174ae092bdf0a389eb3691d47212"><div class="ttname"><a href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">StaticHyperGrid::size_type</a></div><div class="ttdeci">unsigned size_type</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00062">StaticHyperGrid.h:62</a></div></div>
+<div class="ttc" id="aclass_static_hyper_grid_html_a9c515b7669822b487a2c6e4cadf3947b"><div class="ttname"><a href="class_static_hyper_grid.html#a9c515b7669822b487a2c6e4cadf3947b">StaticHyperGrid::order</a></div><div class="ttdeci">size_type order() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00237">StaticHyperGrid.h:237</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -279,7 +362,14 @@ template&lt;typename T , unsigned Dimensions, typename IncomingRange  = Canonica
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00212">212</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  213</span>    {</div>
+<div class="line"><span class="lineno">  214</span>        <span class="comment">// Find cell</span></div>
+<div class="line"><span class="lineno">  215</span>        <span class="keyword">const</span> <span class="keyword">auto</span> idx = <a class="code hl_function" href="class_static_hyper_grid.html#a9d7db8e674352ed08e6843cb9ffa547c">offset</a>(t);</div>
+<div class="line"><span class="lineno">  216</span>        assert(idx &lt; <a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>.size());</div>
+<div class="line"><span class="lineno">  217</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>[idx].add(std::move(t));</div>
+<div class="line"><span class="lineno">  218</span>    }</div>
+<div class="ttc" id="aclass_static_hyper_grid_html_a9d7db8e674352ed08e6843cb9ffa547c"><div class="ttname"><a href="class_static_hyper_grid.html#a9d7db8e674352ed08e6843cb9ffa547c">StaticHyperGrid::offset</a></div><div class="ttdeci">size_type offset(const T &amp;p) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00250">StaticHyperGrid.h:250</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab820a46bb8cb8192effbf82f15b55631" name="ab820a46bb8cb8192effbf82f15b55631"></a>
@@ -309,7 +399,13 @@ template&lt;typename T , unsigned Dimensions, typename IncomingRange  = Canonica
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00220">220</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  221</span>    {</div>
+<div class="line"><span class="lineno">  222</span>        <span class="comment">// Find cell</span></div>
+<div class="line"><span class="lineno">  223</span>        <span class="keyword">const</span> <span class="keyword">auto</span> idx = <a class="code hl_function" href="class_static_hyper_grid.html#a9d7db8e674352ed08e6843cb9ffa547c">offset</a>(t);</div>
+<div class="line"><span class="lineno">  224</span>        assert(idx &lt; <a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>.size());</div>
+<div class="line"><span class="lineno">  225</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>[idx].add(std::move(t));</div>
+<div class="line"><span class="lineno">  226</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a54686ec1f021c8add9a983be185ed3b2" name="a54686ec1f021c8add9a983be185ed3b2"></a>
@@ -339,7 +435,10 @@ template&lt;typename T , unsigned Dimensions, typename IncomingRange  = Canonica
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00095">95</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   96</span>    {</div>
+<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">return</span> x;</div>
+<div class="line"><span class="lineno">   98</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a63cd898925192221b10c3fc7c65af5ac" name="a63cd898925192221b10c3fc7c65af5ac"></a>
@@ -369,7 +468,45 @@ template&lt;typename T , unsigned Dimensions, typename IncomingRange  = Canonica
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00090">90</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   91</span>    {</div>
+<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">return</span> (x == 0) ? <a class="code hl_variable" href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">mOrder</a> - 1u : x - 1u;</div>
+<div class="line"><span class="lineno">   93</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9d7db8e674352ed08e6843cb9ffa547c" name="a9d7db8e674352ed08e6843cb9ffa547c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d7db8e674352ed08e6843cb9ffa547c">&#9670;&#160;</a></span>offset()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , unsigned Dimensions, typename IncomingRange  = CanonicalRange&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a> <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T, Dimensions, IncomingRange &gt;::offset </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00250">250</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  251</span>    {</div>
+<div class="line"><span class="lineno">  252</span>        assert(p[Dimensions-1u] &gt;= IncomingRange::min);</div>
+<div class="line"><span class="lineno">  253</span>        assert(p[Dimensions-1u] &lt;  IncomingRange::max);</div>
+<div class="line"><span class="lineno">  254</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a><span class="keyword">&gt;</span>(RangeScale::scale&lt;float, IncomingRange&gt;(p[Dimensions-1u], 0, <a class="code hl_variable" href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">mOrder</a>));</div>
+<div class="line"><span class="lineno">  255</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9c515b7669822b487a2c6e4cadf3947b" name="a9c515b7669822b487a2c6e4cadf3947b"></a>
@@ -398,7 +535,10 @@ template&lt;typename T , unsigned Dimensions, typename IncomingRange  = Canonica
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00237">237</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  238</span>    {</div>
+<div class="line"><span class="lineno">  239</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">mOrder</a>;</div>
+<div class="line"><span class="lineno">  240</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac10772ab55a94b56a2cd88ddf2d18044" name="ac10772ab55a94b56a2cd88ddf2d18044"></a>
@@ -428,7 +568,13 @@ template&lt;typename T , unsigned Dimensions, typename IncomingRange  = Canonica
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00229">229</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  230</span>    {</div>
+<div class="line"><span class="lineno">  231</span>        <span class="comment">// Find cell</span></div>
+<div class="line"><span class="lineno">  232</span>        <span class="keyword">const</span> <span class="keyword">auto</span> idx = <a class="code hl_function" href="class_static_hyper_grid.html#a9d7db8e674352ed08e6843cb9ffa547c">offset</a>(t);</div>
+<div class="line"><span class="lineno">  233</span>        assert(idx &lt; <a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>.size());</div>
+<div class="line"><span class="lineno">  234</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>[idx].remove(t);</div>
+<div class="line"><span class="lineno">  235</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a841311484023ef306fc3f09f7d350bb4" name="a841311484023ef306fc3f09f7d350bb4"></a>
@@ -458,7 +604,10 @@ template&lt;typename T , unsigned Dimensions, typename IncomingRange  = Canonica
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00100">100</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  101</span>    {</div>
+<div class="line"><span class="lineno">  102</span>        <span class="keywordflow">return</span> (x == <a class="code hl_variable" href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">mOrder</a> - 1u) ? 0u : x + 1u;</div>
+<div class="line"><span class="lineno">  103</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6048f46a6bcccab152e65f6a9bb0e1de" name="a6048f46a6bcccab152e65f6a9bb0e1de"></a>
@@ -488,7 +637,14 @@ template&lt;typename T , unsigned Dimensions, typename IncomingRange  = Canonica
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00242">242</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  243</span>    {</div>
+<div class="line"><span class="lineno">  244</span>        <span class="keyword">using </span><a class="code hl_function" href="namespacestd.html#a7ffc9a83d505624d453906655627414d">std::swap</a>; <span class="comment">// Allow adl</span></div>
+<div class="line"><span class="lineno">  245</span>        <a class="code hl_function" href="class_static_hyper_grid.html#a6048f46a6bcccab152e65f6a9bb0e1de">swap</a>(<a class="code hl_variable" href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">mOrder</a>, other.<a class="code hl_variable" href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">mOrder</a>);</div>
+<div class="line"><span class="lineno">  246</span>        <a class="code hl_function" href="class_static_hyper_grid.html#a6048f46a6bcccab152e65f6a9bb0e1de">swap</a>(<a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>, other.<a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>);</div>
+<div class="line"><span class="lineno">  247</span>    }</div>
+<div class="ttc" id="aclass_static_hyper_grid_html_a6048f46a6bcccab152e65f6a9bb0e1de"><div class="ttname"><a href="class_static_hyper_grid.html#a6048f46a6bcccab152e65f6a9bb0e1de">StaticHyperGrid::swap</a></div><div class="ttdeci">void swap(StaticHyperGrid &amp;other) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00242">StaticHyperGrid.h:242</a></div></div>
+<div class="ttc" id="anamespacestd_html_a7ffc9a83d505624d453906655627414d"><div class="ttname"><a href="namespacestd.html#a7ffc9a83d505624d453906655627414d">std::swap</a></div><div class="ttdeci">void swap(StaticVector&lt; T, N &gt; &amp;a, StaticVector&lt; T, N &gt; &amp;b) noexcept(noexcept(a.swap(b)))</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2point__generation__cmd_2_static_vector_8h_source.html#l00552">StaticVector.h:552</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad0053d752b682e58b8319e8fc845dfbd" name="ad0053d752b682e58b8319e8fc845dfbd"></a>
@@ -520,7 +676,15 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00194">194</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  195</span>    {</div>
+<div class="line"><span class="lineno">  196</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; n : <a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>) {</div>
+<div class="line"><span class="lineno">  197</span>            <span class="keywordflow">if</span> (n.visitAll(std::forward&lt;F&gt;(f)) == SearchResult::TERMINATED_EARLY) {</div>
+<div class="line"><span class="lineno">  198</span>                <span class="keywordflow">return</span> SearchResult::TERMINATED_EARLY;</div>
+<div class="line"><span class="lineno">  199</span>            }</div>
+<div class="line"><span class="lineno">  200</span>        }</div>
+<div class="line"><span class="lineno">  201</span>        <span class="keywordflow">return</span> SearchResult::SEARCH_COMPLETE;</div>
+<div class="line"><span class="lineno">  202</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af77c8d138ee09ad8e4d87836533d6c19" name="af77c8d138ee09ad8e4d87836533d6c19"></a>
@@ -552,7 +716,12 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00205">205</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  206</span>    {</div>
+<div class="line"><span class="lineno">  207</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; n : <a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>) {</div>
+<div class="line"><span class="lineno">  208</span>            n.visitAll(std::forward&lt;F&gt;(f));</div>
+<div class="line"><span class="lineno">  209</span>        }</div>
+<div class="line"><span class="lineno">  210</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a45c0d5f9603ed38706228f43e04d6f70" name="a45c0d5f9603ed38706228f43e04d6f70"></a>
@@ -594,7 +763,28 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00106">106</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  107</span>    {</div>
+<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">mOrder</a> &lt;= 3) {</div>
+<div class="line"><span class="lineno">  109</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_static_hyper_grid.html#ad0053d752b682e58b8319e8fc845dfbd">visitAll</a>(std::forward&lt;F&gt;(f));</div>
+<div class="line"><span class="lineno">  110</span>        }</div>
+<div class="line"><span class="lineno">  111</span> </div>
+<div class="line"><span class="lineno">  112</span>        <span class="comment">// Find cell</span></div>
+<div class="line"><span class="lineno">  113</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a> cell = <a class="code hl_function" href="class_static_hyper_grid.html#a9d7db8e674352ed08e6843cb9ffa547c">offset</a>(p);</div>
+<div class="line"><span class="lineno">  114</span>        <span class="keyword">const</span> std::array&lt;size_type, 3&gt; vals = { { <a class="code hl_function" href="class_static_hyper_grid.html#a63cd898925192221b10c3fc7c65af5ac">left</a>(cell), <a class="code hl_function" href="class_static_hyper_grid.html#a54686ec1f021c8add9a983be185ed3b2">center</a>(cell), <a class="code hl_function" href="class_static_hyper_grid.html#a841311484023ef306fc3f09f7d350bb4">right</a>(cell) } };</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> current : vals) {</div>
+<div class="line"><span class="lineno">  117</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>[current].<a class="code hl_function" href="class_static_hyper_grid.html#a45c0d5f9603ed38706228f43e04d6f70">visitNeighbors</a>(std::forward&lt;F&gt;(f), p) == SearchResult::TERMINATED_EARLY) {</div>
+<div class="line"><span class="lineno">  118</span>                <span class="keywordflow">return</span> SearchResult::TERMINATED_EARLY;</div>
+<div class="line"><span class="lineno">  119</span>            }</div>
+<div class="line"><span class="lineno">  120</span>        }</div>
+<div class="line"><span class="lineno">  121</span>        <span class="keywordflow">return</span> SearchResult::SEARCH_COMPLETE;</div>
+<div class="line"><span class="lineno">  122</span>    }</div>
+<div class="ttc" id="aclass_static_hyper_grid_html_a45c0d5f9603ed38706228f43e04d6f70"><div class="ttname"><a href="class_static_hyper_grid.html#a45c0d5f9603ed38706228f43e04d6f70">StaticHyperGrid::visitNeighbors</a></div><div class="ttdeci">ResultReturnType&lt; F &gt; visitNeighbors(F &amp;&amp;f, const T &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00106">StaticHyperGrid.h:106</a></div></div>
+<div class="ttc" id="aclass_static_hyper_grid_html_a54686ec1f021c8add9a983be185ed3b2"><div class="ttname"><a href="class_static_hyper_grid.html#a54686ec1f021c8add9a983be185ed3b2">StaticHyperGrid::center</a></div><div class="ttdeci">size_type center(size_type x) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00095">StaticHyperGrid.h:95</a></div></div>
+<div class="ttc" id="aclass_static_hyper_grid_html_a63cd898925192221b10c3fc7c65af5ac"><div class="ttname"><a href="class_static_hyper_grid.html#a63cd898925192221b10c3fc7c65af5ac">StaticHyperGrid::left</a></div><div class="ttdeci">size_type left(size_type x) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00090">StaticHyperGrid.h:90</a></div></div>
+<div class="ttc" id="aclass_static_hyper_grid_html_a841311484023ef306fc3f09f7d350bb4"><div class="ttname"><a href="class_static_hyper_grid.html#a841311484023ef306fc3f09f7d350bb4">StaticHyperGrid::right</a></div><div class="ttdeci">size_type right(size_type x) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00100">StaticHyperGrid.h:100</a></div></div>
+<div class="ttc" id="aclass_static_hyper_grid_html_ad0053d752b682e58b8319e8fc845dfbd"><div class="ttname"><a href="class_static_hyper_grid.html#ad0053d752b682e58b8319e8fc845dfbd">StaticHyperGrid::visitAll</a></div><div class="ttdeci">ResultReturnType&lt; F &gt; visitAll(F &amp;&amp;f) const</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00194">StaticHyperGrid.h:194</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a325d326a53b31fc4413a46cf4a0e1a8c" name="a325d326a53b31fc4413a46cf4a0e1a8c"></a>
@@ -636,7 +826,20 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00125">125</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  126</span>    {</div>
+<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">mOrder</a> &lt;= 3) {</div>
+<div class="line"><span class="lineno">  128</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_static_hyper_grid.html#ad0053d752b682e58b8319e8fc845dfbd">visitAll</a>(std::forward&lt;F&gt;(f));</div>
+<div class="line"><span class="lineno">  129</span>        }</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>        <span class="comment">// Find cell</span></div>
+<div class="line"><span class="lineno">  132</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a> cell = <a class="code hl_function" href="class_static_hyper_grid.html#a9d7db8e674352ed08e6843cb9ffa547c">offset</a>(p);</div>
+<div class="line"><span class="lineno">  133</span>        <span class="keyword">const</span> std::array&lt;size_type, 3&gt; vals = { { <a class="code hl_function" href="class_static_hyper_grid.html#a63cd898925192221b10c3fc7c65af5ac">left</a>(cell), <a class="code hl_function" href="class_static_hyper_grid.html#a54686ec1f021c8add9a983be185ed3b2">center</a>(cell), <a class="code hl_function" href="class_static_hyper_grid.html#a841311484023ef306fc3f09f7d350bb4">right</a>(cell) } };</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> current : vals) {</div>
+<div class="line"><span class="lineno">  136</span>            <a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>[current].visitNeighbors(std::forward&lt;F&gt;(f), p);</div>
+<div class="line"><span class="lineno">  137</span>        }</div>
+<div class="line"><span class="lineno">  138</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a347c5ae1c82bc23d725fc9a1b429a8a6" name="a347c5ae1c82bc23d725fc9a1b429a8a6"></a>
@@ -678,7 +881,34 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00141">141</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  142</span>    {</div>
+<div class="line"><span class="lineno">  143</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">mOrder</a> &lt;= 3) {</div>
+<div class="line"><span class="lineno">  144</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_static_hyper_grid.html#ad0053d752b682e58b8319e8fc845dfbd">visitAll</a>(std::forward&lt;F&gt;(f));</div>
+<div class="line"><span class="lineno">  145</span>        }</div>
+<div class="line"><span class="lineno">  146</span> </div>
+<div class="line"><span class="lineno">  147</span>        <span class="comment">// Find cell</span></div>
+<div class="line"><span class="lineno">  148</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a> cell = <a class="code hl_function" href="class_static_hyper_grid.html#a9d7db8e674352ed08e6843cb9ffa547c">offset</a>(p);</div>
+<div class="line"><span class="lineno">  149</span>        <span class="keyword">const</span> <span class="keyword">auto</span> l = <a class="code hl_function" href="class_static_hyper_grid.html#a63cd898925192221b10c3fc7c65af5ac">left</a>(cell);</div>
+<div class="line"><span class="lineno">  150</span>        <span class="keyword">const</span> <span class="keyword">auto</span> r = <a class="code hl_function" href="class_static_hyper_grid.html#a841311484023ef306fc3f09f7d350bb4">right</a>(cell);</div>
+<div class="line"><span class="lineno">  151</span>        <span class="keyword">const</span> <span class="keyword">auto</span> c = <a class="code hl_function" href="class_static_hyper_grid.html#a54686ec1f021c8add9a983be185ed3b2">center</a>(cell);</div>
+<div class="line"><span class="lineno">  152</span> </div>
+<div class="line"><span class="lineno">  153</span>        <span class="comment">// We need to visit everybody along our dimension. We skip ourselves,</span></div>
+<div class="line"><span class="lineno">  154</span>        <span class="comment">// because those will be taken care of in a lower visit call.</span></div>
+<div class="line"><span class="lineno">  155</span>        <span class="keywordflow">for</span> (<a class="code hl_typedef" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a> i = 0; i &lt; <a class="code hl_variable" href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">mOrder</a>; ++i) {</div>
+<div class="line"><span class="lineno">  156</span>            <span class="keywordflow">if</span> (i != c &amp;&amp; i != l &amp;&amp; i != r) {</div>
+<div class="line"><span class="lineno">  157</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>[i].<a class="code hl_function" href="class_static_hyper_grid.html#a45c0d5f9603ed38706228f43e04d6f70">visitNeighbors</a>(std::forward&lt;F&gt;(f), p) == SearchResult::TERMINATED_EARLY) {</div>
+<div class="line"><span class="lineno">  158</span>                    <span class="keywordflow">return</span> SearchResult::TERMINATED_EARLY;</div>
+<div class="line"><span class="lineno">  159</span>                }</div>
+<div class="line"><span class="lineno">  160</span>            }</div>
+<div class="line"><span class="lineno">  161</span>        }</div>
+<div class="line"><span class="lineno">  162</span> </div>
+<div class="line"><span class="lineno">  163</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>[l].<a class="code hl_function" href="class_static_hyper_grid.html#a347c5ae1c82bc23d725fc9a1b429a8a6">visitProjectedNeighbors</a>(std::forward&lt;F&gt;(f), p) == SearchResult::TERMINATED_EARLY) {</div>
+<div class="line"><span class="lineno">  164</span>            <span class="keywordflow">return</span> SearchResult::TERMINATED_EARLY;</div>
+<div class="line"><span class="lineno">  165</span>        }</div>
+<div class="line"><span class="lineno">  166</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>[r].visitProjectedNeighbors(std::forward&lt;F&gt;(f), p);</div>
+<div class="line"><span class="lineno">  167</span>    }</div>
+<div class="ttc" id="aclass_static_hyper_grid_html_a347c5ae1c82bc23d725fc9a1b429a8a6"><div class="ttname"><a href="class_static_hyper_grid.html#a347c5ae1c82bc23d725fc9a1b429a8a6">StaticHyperGrid::visitProjectedNeighbors</a></div><div class="ttdeci">ResultReturnType&lt; F &gt; visitProjectedNeighbors(F &amp;&amp;f, const T &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="_static_hyper_grid_8h_source.html#l00141">StaticHyperGrid.h:141</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5bc8b08dd85a5862510176fb0d5e8f97" name="a5bc8b08dd85a5862510176fb0d5e8f97"></a>
@@ -720,10 +950,83 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00170">170</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  171</span>    {</div>
+<div class="line"><span class="lineno">  172</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">mOrder</a> &lt;= 3) {</div>
+<div class="line"><span class="lineno">  173</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_static_hyper_grid.html#ad0053d752b682e58b8319e8fc845dfbd">visitAll</a>(std::forward&lt;F&gt;(f));</div>
+<div class="line"><span class="lineno">  174</span>        }</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>        <span class="comment">// Find cell</span></div>
+<div class="line"><span class="lineno">  177</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a> cell = <a class="code hl_function" href="class_static_hyper_grid.html#a9d7db8e674352ed08e6843cb9ffa547c">offset</a>(p);</div>
+<div class="line"><span class="lineno">  178</span>        <span class="keyword">const</span> <span class="keyword">auto</span> l = <a class="code hl_function" href="class_static_hyper_grid.html#a63cd898925192221b10c3fc7c65af5ac">left</a>(cell);</div>
+<div class="line"><span class="lineno">  179</span>        <span class="keyword">const</span> <span class="keyword">auto</span> r = <a class="code hl_function" href="class_static_hyper_grid.html#a841311484023ef306fc3f09f7d350bb4">right</a>(cell);</div>
+<div class="line"><span class="lineno">  180</span>        <span class="keyword">const</span> <span class="keyword">auto</span> c = <a class="code hl_function" href="class_static_hyper_grid.html#a54686ec1f021c8add9a983be185ed3b2">center</a>(cell);</div>
+<div class="line"><span class="lineno">  181</span> </div>
+<div class="line"><span class="lineno">  182</span>        <span class="comment">// We need to visit everybody along our dimension. We skip ourselves,</span></div>
+<div class="line"><span class="lineno">  183</span>        <span class="comment">// because those will be taken care of in a lower visit call.</span></div>
+<div class="line"><span class="lineno">  184</span>        <span class="keywordflow">for</span> (<a class="code hl_typedef" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a> i = 0; i &lt; <a class="code hl_variable" href="class_static_hyper_grid.html#a3d243de6345a9e91a57f64a907ae3061">mOrder</a>; ++i) {</div>
+<div class="line"><span class="lineno">  185</span>            <span class="keywordflow">if</span> (i != c &amp;&amp; i != l &amp;&amp; i != r) {</div>
+<div class="line"><span class="lineno">  186</span>                <a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>[i].visitNeighbors(std::forward&lt;F&gt;(f), p);</div>
+<div class="line"><span class="lineno">  187</span>            }</div>
+<div class="line"><span class="lineno">  188</span>        }</div>
+<div class="line"><span class="lineno">  189</span>        <a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>[l].visitProjectedNeighbors(std::forward&lt;F&gt;(f), p);</div>
+<div class="line"><span class="lineno">  190</span>        <a class="code hl_variable" href="class_static_hyper_grid.html#ab6d2402d70a290f04de093042ef451de">mData</a>[r].visitProjectedNeighbors(std::forward&lt;F&gt;(f), p);</div>
+<div class="line"><span class="lineno">  191</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab6d2402d70a290f04de093042ef451de" name="ab6d2402d70a290f04de093042ef451de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6d2402d70a290f04de093042ef451de">&#9670;&#160;</a></span>mData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , unsigned Dimensions, typename IncomingRange  = CanonicalRange&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_static_hyper_grid.html#aa814bf44ff3092f248700a7557e251dc">ContainerType</a> <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T, Dimensions, IncomingRange &gt;::mData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00260">260</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
+
+</div>
+</div>
+<a id="a3d243de6345a9e91a57f64a907ae3061" name="a3d243de6345a9e91a57f64a907ae3061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d243de6345a9e91a57f64a907ae3061">&#9670;&#160;</a></span>mOrder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , unsigned Dimensions, typename IncomingRange  = CanonicalRange&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_static_hyper_grid.html#a7898174ae092bdf0a389eb3691d47212">size_type</a> <a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a>&lt; T, Dimensions, IncomingRange &gt;::mOrder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_static_hyper_grid_8h_source.html#l00259">259</a> of file <a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a>.</p>
+
+</div>
+</div>
 <a id="a6fdf572c97694822c128faadbf6280c9" name="a6fdf572c97694822c128faadbf6280c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6fdf572c97694822c128faadbf6280c9">&#9670;&#160;</a></span>StaticHyperGrid&lt; T, Dimensions+1, IncomingRange &gt;</h2>
 
@@ -746,9 +1049,13 @@ template&lt;typename T , unsigned Dimensions, typename IncomingRange  = Canonica
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/cmd/point_generation_cmd/<a class="el" href="_static_hyper_grid_8h_source.html">StaticHyperGrid.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_static_hyper_grid.html">StaticHyperGrid</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

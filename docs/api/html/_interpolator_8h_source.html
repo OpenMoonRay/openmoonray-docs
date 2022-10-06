@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_970eb28d9e8309e3f9c24dd3deed196f.html">bvh</a></li><li class="navelem"><a class="el" href="dir_ad019efe26eb16360a7aab047243505d.html">shading</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_interpolator_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">Interpolator.h</div></div>
 </div><!--header-->
@@ -50,7 +66,12 @@ $(function() {
 <a href="_interpolator_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2014-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file Interpolator</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Sebastian Fernandez</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// $Id$</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">///</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
@@ -326,25 +347,25 @@ $(function() {
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        0,               <span class="comment">// part</span></div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        0,               <span class="comment">// coarseFace</span></div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        4,               <span class="comment">// numVaryings</span></div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        mIndices.data(), <span class="comment">// varyings</span></div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        mWeights.data(), <span class="comment">// varyingWeights</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_quadric_interpolator.html#a6721a62afb40be0476d23d02ea18c9f2">mIndices</a>.data(), <span class="comment">// varyings</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_quadric_interpolator.html#acada3fe3e32d0e694ab1909c539689b7">mWeights</a>.data(), <span class="comment">// varyingWeights</span></div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        4,               <span class="comment">// numFaceVaryings</span></div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        mIndices.data(), <span class="comment">// faceVaryings</span></div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        mWeights.data(), <span class="comment">// faceVaryingWeights</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_quadric_interpolator.html#a6721a62afb40be0476d23d02ea18c9f2">mIndices</a>.data(), <span class="comment">// faceVaryings</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_quadric_interpolator.html#acada3fe3e32d0e694ab1909c539689b7">mWeights</a>.data(), <span class="comment">// faceVaryingWeights</span></div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        0,               <span class="comment">// tessellatedFace</span></div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        4,               <span class="comment">// numVertices</span></div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        mIndices.data(), <span class="comment">// vertices</span></div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        mWeights.data()) <span class="comment">// vertexWeights</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_quadric_interpolator.html#a6721a62afb40be0476d23d02ea18c9f2">mIndices</a>.data(), <span class="comment">// vertices</span></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_quadric_interpolator.html#acada3fe3e32d0e694ab1909c539689b7">mWeights</a>.data()) <span class="comment">// vertexWeights</span></div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        {</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            mWeights[0] = (1.0f - u) * (1.0f - v);</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            mWeights[1] = (       u) * (1.0f - v);</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>            mWeights[2] = (       u) * (       v);</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>            mWeights[3] = (1.0f - u) * (       v);</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_quadric_interpolator.html#acada3fe3e32d0e694ab1909c539689b7">mWeights</a>[0] = (1.0f - u) * (1.0f - v);</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_quadric_interpolator.html#acada3fe3e32d0e694ab1909c539689b7">mWeights</a>[1] = (       u) * (1.0f - v);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_quadric_interpolator.html#acada3fe3e32d0e694ab1909c539689b7">mWeights</a>[2] = (       u) * (       v);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_quadric_interpolator.html#acada3fe3e32d0e694ab1909c539689b7">mWeights</a>[3] = (1.0f - u) * (       v);</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        }</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    std::array&lt;float, 4&gt; mWeights;</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> std::array&lt;int, 4&gt; mIndices = { {0, 1, 2, 3} };</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_quadric_interpolator.html#acada3fe3e32d0e694ab1909c539689b7">  302</a></span>    std::array&lt;float, 4&gt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_quadric_interpolator.html#acada3fe3e32d0e694ab1909c539689b7">mWeights</a>;</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_quadric_interpolator.html#a6721a62afb40be0476d23d02ea18c9f2">  303</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> std::array&lt;int, 4&gt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_quadric_interpolator.html#a6721a62afb40be0476d23d02ea18c9f2">mIndices</a> = { {0, 1, 2, 3} };</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>};</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>} <span class="comment">// namespace shading</span></div>
@@ -393,7 +414,9 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_interpolator_html_ad942df4d878855fcd598678e912f1cb7"><div class="ttname"><a href="classmoonray_1_1shading_1_1_interpolator.html#ad942df4d878855fcd598678e912f1cb7">moonray::shading::Interpolator::Interpolator</a></div><div class="ttdeci">Interpolator(const shading::Attributes *attr, float time, int part, int coarseFace, int numVaryings, const int *varyings, const float *varyingWeights, int numFaceVaryings, const int *faceVaryings, const float *faceVaryingWeights, int tessellatedFace, int numVertices, const int *vertices, const float *vertexWeights)</div><div class="ttdef"><b>Definition:</b> <a href="_interpolator_8h_source.html#l00062">Interpolator.h:62</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_interpolator_html_aee7285649de7d0d3a24cd09f70485c7f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_interpolator.html#aee7285649de7d0d3a24cd09f70485c7f">moonray::shading::Interpolator::mFaceVaryings</a></div><div class="ttdeci">const int * mFaceVaryings</div><div class="ttdef"><b>Definition:</b> <a href="_interpolator_8h_source.html#l00214">Interpolator.h:214</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_quadric_interpolator_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_quadric_interpolator.html">moonray::shading::QuadricInterpolator</a></div><div class="ttdef"><b>Definition:</b> <a href="_interpolator_8h_source.html#l00277">Interpolator.h:278</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_quadric_interpolator_html_a6721a62afb40be0476d23d02ea18c9f2"><div class="ttname"><a href="classmoonray_1_1shading_1_1_quadric_interpolator.html#a6721a62afb40be0476d23d02ea18c9f2">moonray::shading::QuadricInterpolator::mIndices</a></div><div class="ttdeci">static constexpr std::array&lt; int, 4 &gt; mIndices</div><div class="ttdef"><b>Definition:</b> <a href="_interpolator_8h_source.html#l00303">Interpolator.h:303</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_quadric_interpolator_html_ac952240fff5cdad7dd6a6b2808fafb76"><div class="ttname"><a href="classmoonray_1_1shading_1_1_quadric_interpolator.html#ac952240fff5cdad7dd6a6b2808fafb76">moonray::shading::QuadricInterpolator::QuadricInterpolator</a></div><div class="ttdeci">QuadricInterpolator(const shading::Attributes *attr, float time, float u, float v)</div><div class="ttdef"><b>Definition:</b> <a href="_interpolator_8h_source.html#l00280">Interpolator.h:280</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_quadric_interpolator_html_acada3fe3e32d0e694ab1909c539689b7"><div class="ttname"><a href="classmoonray_1_1shading_1_1_quadric_interpolator.html#acada3fe3e32d0e694ab1909c539689b7">moonray::shading::QuadricInterpolator::mWeights</a></div><div class="ttdeci">std::array&lt; float, 4 &gt; mWeights</div><div class="ttdef"><b>Definition:</b> <a href="_interpolator_8h_source.html#l00302">Interpolator.h:302</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_typed_attribute_key_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_typed_attribute_key.html">moonray::shading::TypedAttributeKey</a></div><div class="ttdoc">A templated version of AttributeKey for type safety when possible.</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00104">AttributeKey.h:105</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1shading_html_a672e4fc4798efc5e148e0d6ba1e8198a"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198a">moonray::shading::AttributeRate</a></div><div class="ttdeci">AttributeRate</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00022">PrimitiveAttribute.h:23</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1shading_html_a672e4fc4798efc5e148e0d6ba1e8198aa1c5806ff92f3c93d36155f7fff70a954"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aa1c5806ff92f3c93d36155f7fff70a954">moonray::shading::RATE_VARYING</a></div><div class="ttdeci">@ RATE_VARYING</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00027">PrimitiveAttribute.h:27</a></div></div>
@@ -404,9 +427,13 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_1_1shading_html_a672e4fc4798efc5e148e0d6ba1e8198aae24dbc59b66badb50d493a8f2fd01e65"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aae24dbc59b66badb50d493a8f2fd01e65">moonray::shading::RATE_VERTEX</a></div><div class="ttdeci">@ RATE_VERTEX</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_attribute_8h_source.html#l00029">PrimitiveAttribute.h:29</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_b14206e23fbe78be729adaae3c0369fc.html">bvh</a></li><li class="navelem"><a class="el" href="dir_499edcba0d3485301ece78066854f3d4.html">shading</a></li><li class="navelem"><a class="el" href="_interpolator_8h.html">Interpolator.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

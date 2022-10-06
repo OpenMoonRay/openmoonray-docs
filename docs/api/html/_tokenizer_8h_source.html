@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_6980d87992044b0cad36d4edf582ac03.html">common</a></li><li class="navelem"><a class="el" href="dir_f09188fccba6e1a5150d42534f4f9ba7.html">mcrt_util</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_tokenizer_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">Tokenizer.h</div></div>
 </div><!--header-->
@@ -80,7 +96,7 @@ $(function() {
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#ab46241af0b64eec68f04403a0ae1d5a9">   31</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classmoonray_1_1util_1_1_tokenizer.html#ab46241af0b64eec68f04403a0ae1d5a9">value_type</a> = std::string;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">using </span>container = std::vector&lt;value_type&gt;;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#ac9ed7f9df2db62b229fe0446a0b341a1">   34</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classmoonray_1_1util_1_1_tokenizer.html#ac9ed7f9df2db62b229fe0446a0b341a1">container</a> = std::vector&lt;value_type&gt;;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#aa7eb265956c9f3ac9e90561aac0a3591">   37</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classmoonray_1_1util_1_1_tokenizer.html#aa7eb265956c9f3ac9e90561aac0a3591">iterator</a>        = container::iterator;</div>
@@ -91,71 +107,71 @@ $(function() {
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#a1f8c2a08eded5038bad912d6697be618">   42</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classmoonray_1_1util_1_1_tokenizer.html#a1f8c2a08eded5038bad912d6697be618">const_pointer</a>   = <span class="keyword">const</span> <a class="code hl_typedef" href="classmoonray_1_1util_1_1_tokenizer.html#ab46241af0b64eec68f04403a0ae1d5a9">value_type</a>*;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#a29747f5e9680e70c835a6f5f2aaf439d">   44</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#a29747f5e9680e70c835a6f5f2aaf439d">Tokenizer</a>(<span class="keyword">const</span> std::string&amp; s)</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    : mTokens(tokenize(s, [] (char c) { <span class="keywordflow">return</span> isToken(c, sWhiteSpace, <a class="code hl_function" href="namespacemoonray_1_1util.html#a63e299a347c5655e58419b2fe021db8d">length</a>(sWhiteSpace)); }))</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    : <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>(<a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#a7d61ca38ae95cc80c34f17525dce37d9">tokenize</a>(s, [] (char c) { <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#a5323ccc488e39dad47d640b4fc1813d5">isToken</a>(c, <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad3a6e33166127d40bdb305ab2e165876">sWhiteSpace</a>, <a class="code hl_function" href="namespacemoonray_1_1util.html#a63e299a347c5655e58419b2fe021db8d">length</a>(<a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad3a6e33166127d40bdb305ab2e165876">sWhiteSpace</a>)); }))</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    {</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#a18024c8748117990af99a39a70702f38">   49</a></span>    <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#a18024c8748117990af99a39a70702f38">Tokenizer</a>(<span class="keyword">const</span> std::string&amp; s, <span class="keyword">const</span> std::string&amp; tokens)</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    : mTokens(tokenize(s, [&amp;tokens] (char c) { <span class="keywordflow">return</span> isToken(c, tokens.c_str(), <a class="code hl_function" href="namespacemoonray_1_1util.html#a63e299a347c5655e58419b2fe021db8d">length</a>(tokens)); }))</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    : <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>(<a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#a7d61ca38ae95cc80c34f17525dce37d9">tokenize</a>(s, [&amp;tokens] (char c) { <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#a5323ccc488e39dad47d640b4fc1813d5">isToken</a>(c, tokens.c_str(), <a class="code hl_function" href="namespacemoonray_1_1util.html#a63e299a347c5655e58419b2fe021db8d">length</a>(tokens)); }))</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#ad332c2567694ae52e51c8e623e6a9af2">   54</a></span>    std::size_t <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#ad332c2567694ae52e51c8e623e6a9af2">size</a>() const noexcept</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">return</span> mTokens.size();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>.size();</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#a3b1ac2399cc17c29b6a9ed16c4e76b9d">   59</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#a3b1ac2399cc17c29b6a9ed16c4e76b9d">empty</a>() const noexcept</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">return</span> mTokens.empty();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>.empty();</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#ae7c04d36f5c4f15189ee9d2b55b7ad33">   64</a></span>    <a class="code hl_typedef" href="classmoonray_1_1util_1_1_tokenizer.html#aa9800f2e36ebeed2f054ca0c97bc180f">reference</a> <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#ae7c04d36f5c4f15189ee9d2b55b7ad33">operator[]</a>(std::size_t idx) <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    {</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        assert(idx &lt; <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#ad332c2567694ae52e51c8e623e6a9af2">size</a>());</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span> mTokens[idx];</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>[idx];</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#ad72909fa69d789013d1052209d3fc2b9">   70</a></span>    <a class="code hl_typedef" href="classmoonray_1_1util_1_1_tokenizer.html#a09deddf8ceaff14f8bc2696cf57e0440">const_reference</a> <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#ad72909fa69d789013d1052209d3fc2b9">operator[]</a>(std::size_t idx) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    {</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        assert(idx &lt; <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#ad332c2567694ae52e51c8e623e6a9af2">size</a>());</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">return</span> mTokens[idx];</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>[idx];</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#aeedfc946b214b330f770c39a5c9d7028">   76</a></span>    <a class="code hl_typedef" href="classmoonray_1_1util_1_1_tokenizer.html#aa7eb265956c9f3ac9e90561aac0a3591">iterator</a> <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#aeedfc946b214b330f770c39a5c9d7028">begin</a>()</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordflow">return</span> mTokens.begin();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>.begin();</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#aa10a81016f79f1debe14e3fb222849e6">   81</a></span>    <a class="code hl_typedef" href="classmoonray_1_1util_1_1_tokenizer.html#aa7eb265956c9f3ac9e90561aac0a3591">iterator</a> <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#aa10a81016f79f1debe14e3fb222849e6">end</a>()</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    {</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">return</span> mTokens.end();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>.end();</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#a3dca83bddb703680909f6f4f7e762864">   86</a></span>    <a class="code hl_typedef" href="classmoonray_1_1util_1_1_tokenizer.html#ad3a68b24da6873a06f4b90601624e560">const_iterator</a> <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#a3dca83bddb703680909f6f4f7e762864">begin</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">return</span> mTokens.begin();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>.begin();</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#ad95aaa08482bafb4b3b7a59565cf1153">   91</a></span>    <a class="code hl_typedef" href="classmoonray_1_1util_1_1_tokenizer.html#ad3a68b24da6873a06f4b90601624e560">const_iterator</a> <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#ad95aaa08482bafb4b3b7a59565cf1153">end</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">return</span> mTokens.end();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>.end();</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#ab16ebb607ede9a52f1e0e9342feb664f">   96</a></span>    <a class="code hl_typedef" href="classmoonray_1_1util_1_1_tokenizer.html#ad3a68b24da6873a06f4b90601624e560">const_iterator</a> <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#ab16ebb607ede9a52f1e0e9342feb664f">cbegin</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keywordflow">return</span> mTokens.begin();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>.begin();</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#a2b905ca5f244babcf8cbf1a628e620a3">  101</a></span>    <a class="code hl_typedef" href="classmoonray_1_1util_1_1_tokenizer.html#ad3a68b24da6873a06f4b90601624e560">const_iterator</a> <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#a2b905ca5f244babcf8cbf1a628e620a3">cend</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">return</span> mTokens.end();</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>.end();</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">// This function is very c-like, because there are times when we can compute the length at compile-time (e.g. a</span></div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="comment">// string literal). This ensures we can do so, instead of, say, passing in a template type and computing the length</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="comment">// here.</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isToken(<span class="keywordtype">char</span> c, <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> tokens, std::size_t tokensLength)</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#a5323ccc488e39dad47d640b4fc1813d5">  109</a></span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#a5323ccc488e39dad47d640b4fc1813d5">isToken</a>(<span class="keywordtype">char</span> c, <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> tokens, std::size_t tokensLength)</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    {</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; tokensLength; ++i) {</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <span class="keywordflow">if</span> (c == tokens[i]) {</div>
@@ -166,7 +182,7 @@ $(function() {
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TokenRecognizer&gt;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; tokenize(<span class="keyword">const</span> std::string&amp; s, TokenRecognizer tokenRecognizer)</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#a7d61ca38ae95cc80c34f17525dce37d9">  120</a></span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code hl_function" href="classmoonray_1_1util_1_1_tokenizer.html#a7d61ca38ae95cc80c34f17525dce37d9">tokenize</a>(<span class="keyword">const</span> std::string&amp; s, TokenRecognizer tokenRecognizer)</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    {</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="comment">// Speaking in terms of whitespace...</span></div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="comment">// first should point to the next non-whitespace character</span></div>
@@ -183,8 +199,8 @@ $(function() {
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    }</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> sWhiteSpace = <span class="stringliteral">&quot; \t\n\r&quot;</span>;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    container mTokens;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#ad3a6e33166127d40bdb305ab2e165876">  137</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad3a6e33166127d40bdb305ab2e165876">sWhiteSpace</a> = <span class="stringliteral">&quot; \t\n\r&quot;</span>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">  138</a></span>    <a class="code hl_typedef" href="classmoonray_1_1util_1_1_tokenizer.html#ac9ed7f9df2db62b229fe0446a0b341a1">container</a> <a class="code hl_variable" href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">mTokens</a>;</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>};</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>} <span class="comment">// namespace util</span></div>
@@ -201,14 +217,19 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_a2b905ca5f244babcf8cbf1a628e620a3"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#a2b905ca5f244babcf8cbf1a628e620a3">moonray::util::Tokenizer::cend</a></div><div class="ttdeci">const_iterator cend() const</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00101">Tokenizer.h:101</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_a3b1ac2399cc17c29b6a9ed16c4e76b9d"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#a3b1ac2399cc17c29b6a9ed16c4e76b9d">moonray::util::Tokenizer::empty</a></div><div class="ttdeci">bool empty() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00059">Tokenizer.h:59</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_a3dca83bddb703680909f6f4f7e762864"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#a3dca83bddb703680909f6f4f7e762864">moonray::util::Tokenizer::begin</a></div><div class="ttdeci">const_iterator begin() const</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00086">Tokenizer.h:86</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_a5323ccc488e39dad47d640b4fc1813d5"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#a5323ccc488e39dad47d640b4fc1813d5">moonray::util::Tokenizer::isToken</a></div><div class="ttdeci">static bool isToken(char c, const char *const tokens, std::size_t tokensLength)</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00109">Tokenizer.h:109</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_a6a4152d85e94fc2748956edfb95d3368"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#a6a4152d85e94fc2748956edfb95d3368">moonray::util::Tokenizer::pointer</a></div><div class="ttdeci">value_type * pointer</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00041">Tokenizer.h:41</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_a7d61ca38ae95cc80c34f17525dce37d9"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#a7d61ca38ae95cc80c34f17525dce37d9">moonray::util::Tokenizer::tokenize</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; tokenize(const std::string &amp;s, TokenRecognizer tokenRecognizer)</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00120">Tokenizer.h:120</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_aa10a81016f79f1debe14e3fb222849e6"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#aa10a81016f79f1debe14e3fb222849e6">moonray::util::Tokenizer::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00081">Tokenizer.h:81</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_aa7eb265956c9f3ac9e90561aac0a3591"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#aa7eb265956c9f3ac9e90561aac0a3591">moonray::util::Tokenizer::iterator</a></div><div class="ttdeci">container::iterator iterator</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00037">Tokenizer.h:37</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_aa9800f2e36ebeed2f054ca0c97bc180f"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#aa9800f2e36ebeed2f054ca0c97bc180f">moonray::util::Tokenizer::reference</a></div><div class="ttdeci">value_type &amp; reference</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00039">Tokenizer.h:39</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_ab16ebb607ede9a52f1e0e9342feb664f"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#ab16ebb607ede9a52f1e0e9342feb664f">moonray::util::Tokenizer::cbegin</a></div><div class="ttdeci">const_iterator cbegin() const</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00096">Tokenizer.h:96</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_ab46241af0b64eec68f04403a0ae1d5a9"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#ab46241af0b64eec68f04403a0ae1d5a9">moonray::util::Tokenizer::value_type</a></div><div class="ttdeci">std::string value_type</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00031">Tokenizer.h:31</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_ac9ed7f9df2db62b229fe0446a0b341a1"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#ac9ed7f9df2db62b229fe0446a0b341a1">moonray::util::Tokenizer::container</a></div><div class="ttdeci">std::vector&lt; value_type &gt; container</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00034">Tokenizer.h:34</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_ad1c139a9437248606ecd19ee7d1190cd"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#ad1c139a9437248606ecd19ee7d1190cd">moonray::util::Tokenizer::mTokens</a></div><div class="ttdeci">container mTokens</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00138">Tokenizer.h:138</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_ad332c2567694ae52e51c8e623e6a9af2"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#ad332c2567694ae52e51c8e623e6a9af2">moonray::util::Tokenizer::size</a></div><div class="ttdeci">std::size_t size() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00054">Tokenizer.h:54</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_ad3a68b24da6873a06f4b90601624e560"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#ad3a68b24da6873a06f4b90601624e560">moonray::util::Tokenizer::const_iterator</a></div><div class="ttdeci">container::const_iterator const_iterator</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00038">Tokenizer.h:38</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_ad3a6e33166127d40bdb305ab2e165876"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#ad3a6e33166127d40bdb305ab2e165876">moonray::util::Tokenizer::sWhiteSpace</a></div><div class="ttdeci">static constexpr const char *const sWhiteSpace</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00137">Tokenizer.h:137</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_ad72909fa69d789013d1052209d3fc2b9"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#ad72909fa69d789013d1052209d3fc2b9">moonray::util::Tokenizer::operator[]</a></div><div class="ttdeci">const_reference operator[](std::size_t idx) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00070">Tokenizer.h:70</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_ad95aaa08482bafb4b3b7a59565cf1153"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#ad95aaa08482bafb4b3b7a59565cf1153">moonray::util::Tokenizer::end</a></div><div class="ttdeci">const_iterator end() const</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00091">Tokenizer.h:91</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1util_1_1_tokenizer_html_ae7c04d36f5c4f15189ee9d2b55b7ad33"><div class="ttname"><a href="classmoonray_1_1util_1_1_tokenizer.html#ae7c04d36f5c4f15189ee9d2b55b7ad33">moonray::util::Tokenizer::operator[]</a></div><div class="ttdeci">reference operator[](std::size_t idx) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00064">Tokenizer.h:64</a></div></div>
@@ -216,9 +237,13 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_1_1util_html_a63e299a347c5655e58419b2fe021db8d"><div class="ttname"><a href="namespacemoonray_1_1util.html#a63e299a347c5655e58419b2fe021db8d">moonray::util::length</a></div><div class="ttdeci">constexpr std::size_t length(const char *c)</div><div class="ttdef"><b>Definition:</b> <a href="_tokenizer_8h_source.html#l00018">Tokenizer.h:18</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_bda6758a1f39cbab2ecdac1c1381710b.html">common</a></li><li class="navelem"><a class="el" href="dir_a547db14673c9e6969183ead1900a33c.html">mcrt_util</a></li><li class="navelem"><a class="el" href="_tokenizer_8h.html">Tokenizer.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

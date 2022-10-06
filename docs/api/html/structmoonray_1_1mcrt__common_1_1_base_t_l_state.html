@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1mcrt__common.html">mcrt_common</a></li><li class="navelem"><a class="el" href="structmoonray_1_1mcrt__common_1_1_base_t_l_state.html">BaseTLState</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structmoonray_1_1mcrt__common_1_1_base_t_l_state.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -181,7 +197,13 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_thread_local_state_8h_source.html#l00132">132</a> of file <a class="el" href="_thread_local_state_8h_source.html">ThreadLocalState.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  132</span>                                                                                                         :</div>
+<div class="line"><span class="lineno">  133</span>        mThreadIdx(threadIdx),</div>
+<div class="line"><span class="lineno">  134</span>        mArena(&amp;arena),</div>
+<div class="line"><span class="lineno">  135</span>        mPixelArena(&amp;pixelArena),</div>
+<div class="line"><span class="lineno">  136</span>        mIspcAccumulator(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  137</span>        mExclusiveAccumulatorsPtr(<span class="keyword">nullptr</span>) {}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aec4c7982f6277107942e43a10167ad8e" name="aec4c7982f6277107942e43a10167ad8e"></a>
@@ -208,7 +230,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_thread_local_state_8h_source.html#l00139">139</a> of file <a class="el" href="_thread_local_state_8h_source.html">ThreadLocalState.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  139</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -236,7 +259,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_thread_local_state_8h_source.html#l00142">142</a> of file <a class="el" href="_thread_local_state_8h_source.html">ThreadLocalState.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  142</span>{ <span class="keywordflow">return</span> mExclusiveAccumulatorsPtr; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7a88544ec1a1ac0b5405c70b947dc9db" name="a7a88544ec1a1ac0b5405c70b947dc9db"></a>
@@ -266,7 +290,9 @@ Public Attributes</h2></td></tr>
 <p>HUD validation. </p>
 
 <p class="definition">Definition at line <a class="el" href="_thread_local_state_8h_source.html#l00152">152</a> of file <a class="el" href="_thread_local_state_8h_source.html">ThreadLocalState.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  152</span>{ <a class="code hl_define" href="_thread_local_state_8hh.html#a0ee8d700b13c3c0c75e40b8af2defe0d">BASE_TL_STATE_VALIDATION</a>; }</div>
+<div class="ttc" id="a_thread_local_state_8hh_html_a0ee8d700b13c3c0c75e40b8af2defe0d"><div class="ttname"><a href="_thread_local_state_8hh.html#a0ee8d700b13c3c0c75e40b8af2defe0d">BASE_TL_STATE_VALIDATION</a></div><div class="ttdeci">#define BASE_TL_STATE_VALIDATION</div><div class="ttdef"><b>Definition:</b> <a href="_thread_local_state_8hh_source.html#l00024">ThreadLocalState.hh:24</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a37c8148aa9fb1fd53ebcabacd4a8073d" name="a37c8148aa9fb1fd53ebcabacd4a8073d"></a>
@@ -293,7 +319,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_thread_local_state_8h_source.html#l00146">146</a> of file <a class="el" href="_thread_local_state_8h_source.html">ThreadLocalState.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  146</span>{ <span class="keywordflow">return</span> mIspcAccumulator ? mIspcAccumulator-&gt;canStop() : <span class="keyword">false</span>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abab3a6cb805944c2815498bce57b6bdc" name="abab3a6cb805944c2815498bce57b6bdc"></a>
@@ -347,7 +374,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_thread_local_state_8h_source.html#l00144">144</a> of file <a class="el" href="_thread_local_state_8h_source.html">ThreadLocalState.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  144</span>{ <span class="keywordflow">if</span> (mIspcAccumulator) mIspcAccumulator-&gt;start(); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adc38e28ffbf106be9dadf9d35b711b47" name="adc38e28ffbf106be9dadf9d35b711b47"></a>
@@ -374,7 +402,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_thread_local_state_8h_source.html#l00145">145</a> of file <a class="el" href="_thread_local_state_8h_source.html">ThreadLocalState.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  145</span>{ <span class="keywordflow">if</span> (mIspcAccumulator) mIspcAccumulator-&gt;stop(); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -398,9 +427,13 @@ Public Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/mcrt_common/<a class="el" href="_thread_local_state_8h_source.html">ThreadLocalState.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1mcrt__common.html">mcrt_common</a></li><li class="navelem"><a class="el" href="structmoonray_1_1mcrt__common_1_1_base_t_l_state.html">BaseTLState</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

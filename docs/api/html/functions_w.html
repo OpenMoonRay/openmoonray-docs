@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,11 +43,28 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('functions_w.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="contents">
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_w" name="index_w"></a>- w -</h3><ul>
 <li>w()&#160;:&#160;<a class="el" href="class_pixel_tile.html#a45799dabb016e6668d7a35137f890961">PixelTile</a></li>
+<li>wait()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_render_driver_1_1_render_thread_state_manager.html#a56d94d6b95f8f0aa1e62499e5b51ef5a">moonray::rndr::RenderDriver::RenderThreadStateManager</a></li>
 <li>waitForChange()&#160;:&#160;<a class="el" href="classmoonray_1_1_change_watcher.html#a9ff32cd4c5efbab53d23e3ccce899896">moonray::ChangeWatcher</a></li>
 <li>WAITING_FOR_CANCEL&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_t_l_state.html#a9a0d8515fe7999b009ae5515e1c6c31ca801dc7349fce38cee57a1ea8771e2b49">moonray::pbr::TLState</a></li>
 <li>WAITING_FOR_SAMPLE_PER_PIXEL&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_t_l_state.html#a9a0d8515fe7999b009ae5515e1c6c31ca0e6c68c9a81db12bc6e81eee943c6b03">moonray::pbr::TLState</a></li>
@@ -56,9 +77,11 @@ $(function() {
 <li>WardOriginalBsdfLobe()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_ward_original_bsdf_lobe.html#a025d0ce72f5d4b7d13cd7e1a95906a23">moonray::shading::WardOriginalBsdfLobe</a></li>
 <li>watchDogMainLoop()&#160;:&#160;<a class="el" href="classmoonray_1_1rec__load_1_1_rec_load.html#a5dc3a79d8fa48fa0c49f85374e55559b">moonray::rec_load::RecLoad</a></li>
 <li>watchFile()&#160;:&#160;<a class="el" href="classmoonray_1_1_change_watcher.html#a84a80ca5316900ad62a2732fd5081eaa">moonray::ChangeWatcher</a></li>
+<li>wCDF&#160;:&#160;<a class="el" href="structmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_1_1_flake_caches.html#acb53846c6aa6080d504ecbbe78fd1693">moonray::shading::StochasticFlakesBsdfLobe::FlakeCaches</a></li>
 <li>weight()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html#af24abc0731312f50d513f3db33ecb223">moonray::shading::CookTorranceEnergyCompensation</a>, <a class="el" href="struct_point_data.html#af6d57ae696c49df66d1b31539a923960">PointData</a></li>
 <li>WeightFunction()&#160;:&#160;<a class="el" href="class_weight_function.html#a8c7c7d976bddcf45d5b1113acf24401c">WeightFunction</a></li>
 <li>weightR()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_transmission_cook_torrance_energy_compensation.html#a3db6668affbe4a120e9fccb1042acfe6">moonray::shading::TransmissionCookTorranceEnergyCompensation</a></li>
+<li>weights&#160;:&#160;<a class="el" href="structmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_1_1_flake_caches.html#a9f7cd22b4c778909930f3ff7d475652f">moonray::shading::StochasticFlakesBsdfLobe::FlakeCaches</a></li>
 <li>whyFailed()&#160;:&#160;<a class="el" href="classmoonray_1_1rt_1_1_g_p_u_b_v_h_builder.html#a7f114d51bb14972b054666e8d8997998">moonray::rt::GPUBVHBuilder</a></li>
 <li>wi&#160;:&#160;<a class="el" href="structmoonray_1_1pbr_1_1_bsdf_sample.html#a4558b5905196ff47b587a01d0fd278c3">moonray::pbr::BsdfSample</a>, <a class="el" href="structmoonray_1_1pbr_1_1_light_filter_1_1_eval_data.html#a7e820dce551087f0eb4b2a8e37866eb6">moonray::pbr::LightFilter::EvalData</a>, <a class="el" href="structmoonray_1_1pbr_1_1_light_sample.html#aa3a4b13c050f74f81855055d073e174c">moonray::pbr::LightSample</a>, <a class="el" href="classmoonray_1_1shading_1_1_hair_state.html#a0ce8e780ae6533bc787d2d37d31bc492">moonray::shading::HairState</a></li>
 <li>widenRoughness()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a5d5623334aa1d03f58b3611a21bdfae6">moonray::shading::CookTorranceBsdfLobe</a></li>
@@ -69,6 +92,7 @@ $(function() {
 <li>Wildexp()&#160;:&#160;<a class="el" href="classlpexp_1_1_wildexp.html#a0ab9916f61e6dfe249159f77bfae5e4d">lpexp::Wildexp</a></li>
 <li>windowToNdc()&#160;:&#160;<a class="el" href="class_image_format.html#a4eb2918ff36e9c5f138a79c60698de06">ImageFormat</a></li>
 <li>wo()&#160;:&#160;<a class="el" href="classmoonray_1_1shading_1_1_hair_state.html#ab301ebbb7a889f77ffee9a1dda64ac2e">moonray::shading::HairState</a></li>
+<li>WorkDistributor()&#160;:&#160;<a class="el" href="classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_work_distributor.html#ab0018d5038e7c8dedbdcb388e144ca0c">anonymous_namespace{test_ring_buffer.cc}::WorkDistributor&lt; IntType &gt;</a></li>
 <li>WrappedDistanceSquared()&#160;:&#160;<a class="el" href="struct_wrapped_distance_squared.html#a2e54f14e15e1755b5eb4b0503549bf5a">WrappedDistanceSquared&lt; D &gt;</a></li>
 <li>writable()&#160;:&#160;<a class="el" href="class_deep_tile.html#a55953cb6aa1ec115377eda72bef2bd21">DeepTile</a></li>
 <li>write()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_deep_buffer.html#abec59d36dd834dd63af17c3415e67c39">moonray::pbr::DeepBuffer</a>, <a class="el" href="classmoonray_1_1rndr_1_1_render_output_driver_1_1_impl.html#a6f6335bb70914dc66be7e2ff4e1fb9e9">moonray::rndr::RenderOutputDriver::Impl</a>, <a class="el" href="classmoonray_1_1rndr_1_1_render_output_driver.html#a21fc0d7ce6fa89afc4323fa881c17456">moonray::rndr::RenderOutputDriver</a>, <a class="el" href="classmoonray_1_1stats_1_1_socket.html#a419a609dabd49223839c10c83a9d7f3e">moonray::stats::Socket</a></li>
@@ -76,19 +100,27 @@ $(function() {
 <li>WRITE_RANDOM&#160;:&#160;<a class="el" href="class_deep_tile.html#a4539e8412e12ff717d07d9e668db7e63adcc2bac78f8a3ae18cd8073cb3ca757d">DeepTile</a></li>
 <li>WRITE_RANDOM_SCANLINE&#160;:&#160;<a class="el" href="class_deep_tile.html#a4539e8412e12ff717d07d9e668db7e63ae5e1c9aa51ac6dd2a88c49214be29f95">DeepTile</a></li>
 <li>WRITE_SEQUENTIAL&#160;:&#160;<a class="el" href="class_deep_tile.html#a4539e8412e12ff717d07d9e668db7e63a938220f55296bfcb2e1703647fbcc7cb">DeepTile</a></li>
-<li>writeAccessMode()&#160;:&#160;<a class="el" href="class_deep_tile.html#ac2867f69debb70438ed5c4285f8836c0">DeepTile</a></li>
+<li>write_to_socket()&#160;:&#160;<a class="el" href="classmoonray_1_1stats_1_1_socket_streambuf.html#a9e288e88174285c577bd956bccd15835">moonray::stats::SocketStreambuf</a></li>
 <li>WriteAccessMode&#160;:&#160;<a class="el" href="class_deep_tile.html#a4539e8412e12ff717d07d9e668db7e63">DeepTile</a></li>
+<li>writeAccessMode()&#160;:&#160;<a class="el" href="class_deep_tile.html#ac2867f69debb70438ed5c4285f8836c0">DeepTile</a></li>
 <li>writeCheckpointDeq()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_render_output_driver.html#afa956fb13749e6f11f8d2b7253f63c7a">moonray::rndr::RenderOutputDriver</a></li>
 <li>writeCheckpointEnq()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_render_output_driver.html#a3976c40869296677d2bd8bfb9551001e">moonray::rndr::RenderOutputDriver</a></li>
+<li>writeCheckpointResumeMetadata()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_render_output_driver_1_1_impl.html#a3e33ba9c7ad6936b044564d346d8df71">moonray::rndr::RenderOutputDriver::Impl</a></li>
 <li>writeDeq()&#160;:&#160;<a class="el" href="classmoonray_1_1rndr_1_1_render_output_driver_1_1_impl.html#ab2c29cc39ea54ba732ca07132fac352c">moonray::rndr::RenderOutputDriver::Impl</a></li>
+<li>writeHardSurfaceSegments()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_deep_buffer.html#adb90415b243b980531092e1a1eb4a78b">moonray::pbr::DeepBuffer</a></li>
+<li>writeHardSurfaceSegmentsNoMask()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_deep_buffer.html#a41a7299ca408bf6cae9745d64bf2e113">moonray::pbr::DeepBuffer</a></li>
 <li>writePoints()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_test_qmc.html#ab26b36e4745958668a82f667611ca936">moonray::pbr::TestQmc</a></li>
 <li>writeScanline()&#160;:&#160;<a class="el" href="class_deep_image_output_tile.html#a1a276117925ae0469dd3a0ca960a5a08">DeepImageOutputTile</a></li>
 <li>writeTile()&#160;:&#160;<a class="el" href="class_deep_image_output_tile.html#aa3f1c188bc40c89269f1b5ab9f673a82">DeepImageOutputTile</a></li>
+<li>writeVolumeSegments()&#160;:&#160;<a class="el" href="classmoonray_1_1pbr_1_1_deep_buffer.html#a45cc4b705db4c132a5392669a92b665a">moonray::pbr::DeepBuffer</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

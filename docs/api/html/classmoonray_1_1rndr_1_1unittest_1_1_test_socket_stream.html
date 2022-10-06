@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr_1_1unittest.html">unittest</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rndr_1_1unittest_1_1_test_socket_stream.html">TestSocketStream</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1rndr_1_1unittest_1_1_test_socket_stream.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -147,7 +163,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_socket_stream_8cc_source.html#l00018">18</a> of file <a class="el" href="_test_socket_stream_8cc_source.html">TestSocketStream.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   19</span>{</div>
+<div class="line"><span class="lineno">   20</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9f10c6b157f2d669e6a7f841db2126cf" name="a9f10c6b157f2d669e6a7f841db2126cf"></a>
@@ -166,7 +184,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_socket_stream_8cc_source.html#l00023">23</a> of file <a class="el" href="_test_socket_stream_8cc_source.html">TestSocketStream.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{</div>
+<div class="line"><span class="lineno">   25</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7579aa8da1851c2479536f2e270d056c" name="a7579aa8da1851c2479536f2e270d056c"></a>
@@ -185,7 +205,33 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_socket_stream_8cc_source.html#l00028">28</a> of file <a class="el" href="_test_socket_stream_8cc_source.html">TestSocketStream.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   29</span>{</div>
+<div class="line"><span class="lineno">   30</span>    <span class="comment">// Setting up server for automatic port.</span></div>
+<div class="line"><span class="lineno">   31</span>    stats::ListeningSocket ls;</div>
+<div class="line"><span class="lineno">   32</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> port = ls.getPortNumber();</div>
+<div class="line"><span class="lineno">   33</span> </div>
+<div class="line"><span class="lineno">   34</span>    <span class="comment">// Setting up client.</span></div>
+<div class="line"><span class="lineno">   35</span>    stats::SocketStream client(<a class="code hl_function" href="classmoonray_1_1stats_1_1_socket.html#a42f39b9f60a91eff9d0904779d3b5e32">stats::Socket::as_client</a>(<span class="stringliteral">&quot;localhost&quot;</span>, port));</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>    <span class="comment">// Accepting connections.</span></div>
+<div class="line"><span class="lineno">   38</span>    stats::SocketStream server(<a class="code hl_function" href="classmoonray_1_1stats_1_1_socket.html#a984c982a4dd1cbca90f19aea937d8e08">stats::Socket::as_server</a>(ls));</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>    std::string line;</div>
+<div class="line"><span class="lineno">   41</span> </div>
+<div class="line"><span class="lineno">   42</span>    <span class="comment">// We use std::endl here to ensure we&#39;re flushing the streams, otherwise we never send over the connection. :(</span></div>
+<div class="line"><span class="lineno">   43</span>    client &lt;&lt; <span class="stringliteral">&quot;Line &quot;</span> &lt;&lt; 1 &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   44</span>    std::getline(server, line);</div>
+<div class="line"><span class="lineno">   45</span>    CPPUNIT_ASSERT(line == <span class="stringliteral">&quot;Line 1&quot;</span>);</div>
+<div class="line"><span class="lineno">   46</span>    server &lt;&lt; <span class="stringliteral">&quot;Line &quot;</span> &lt;&lt; 2 &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   47</span>    std::getline(client, line);</div>
+<div class="line"><span class="lineno">   48</span>    CPPUNIT_ASSERT(line == <span class="stringliteral">&quot;Line 2&quot;</span>);</div>
+<div class="line"><span class="lineno">   49</span>    client &lt;&lt; <span class="stringliteral">&quot;Line &quot;</span> &lt;&lt; 3 &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   50</span>    std::getline(server, line);</div>
+<div class="line"><span class="lineno">   51</span>    CPPUNIT_ASSERT(line == <span class="stringliteral">&quot;Line 3&quot;</span>);</div>
+<div class="line"><span class="lineno">   52</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_socket_html_a42f39b9f60a91eff9d0904779d3b5e32"><div class="ttname"><a href="classmoonray_1_1stats_1_1_socket.html#a42f39b9f60a91eff9d0904779d3b5e32">moonray::stats::Socket::as_client</a></div><div class="ttdeci">static Socket as_client(const std::string &amp;hostname, int port)</div><div class="ttdef"><b>Definition:</b> <a href="_socket_stream_8cc_source.html#l00138">SocketStream.cc:138</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_socket_html_a984c982a4dd1cbca90f19aea937d8e08"><div class="ttname"><a href="classmoonray_1_1stats_1_1_socket.html#a984c982a4dd1cbca90f19aea937d8e08">moonray::stats::Socket::as_server</a></div><div class="ttdeci">static Socket as_server(const ListeningSocket &amp;ls)</div><div class="ttdef"><b>Definition:</b> <a href="_socket_stream_8cc_source.html#l00185">SocketStream.cc:185</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -193,9 +239,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/rndr/unittest/<a class="el" href="_test_socket_stream_8cc_source.html">TestSocketStream.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr_1_1unittest.html">unittest</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rndr_1_1unittest_1_1_test_socket_stream.html">TestSocketStream</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

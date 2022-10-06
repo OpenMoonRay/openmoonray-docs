@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_under_clearcoat_transmission_bsdf_lobe.html">UnderClearcoatTransmissionBsdfLobe</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_under_clearcoat_transmission_bsdf_lobe.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -209,7 +225,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a92c998b15ea96a05721d88ec600f3eb8 inherit pro_methods_classmoonray_1_1shading_1_1_under_bsdf_lobe"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_under_bsdf_lobe.html#a92c998b15ea96a05721d88ec600f3eb8">computeTransmission</a> (float cosThetaR1, float cosThetaR2) const</td></tr>
 <tr class="separator:a92c998b15ea96a05721d88ec600f3eb8 inherit pro_methods_classmoonray_1_1shading_1_1_under_bsdf_lobe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_methods_classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe.html">moonray::shading::UnderClearcoatBsdfLobe</a></td></tr>
-<tr class="memitem:a1de0de0bec9afc009ae32ae0edfa7f26 inherit pro_static_methods_classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe"><td class="memItemLeft" align="right" valign="top">static finline scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe.html#a1de0de0bec9afc009ae32ae0edfa7f26">maxColor</a> (const scene_rdl2::math::Color &amp;c, const float <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)</td></tr>
+<tr class="memitem:a1de0de0bec9afc009ae32ae0edfa7f26 inherit pro_static_methods_classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe"><td class="memItemLeft" align="right" valign="top">static finline scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe.html#a1de0de0bec9afc009ae32ae0edfa7f26">maxColor</a> (const scene_rdl2::math::Color &amp;c, const float x)</td></tr>
 <tr class="separator:a1de0de0bec9afc009ae32ae0edfa7f26 inherit pro_static_methods_classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe.html">moonray::shading::UnderClearcoatBsdfLobe</a></td></tr>
 <tr class="memitem:a07d81c803bf178a527e8cc14d322ab22 inherit pro_attribs_classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1shading_1_1_fresnel.html">Fresnel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe.html#a07d81c803bf178a527e8cc14d322ab22">mExitingFresnel</a></td></tr>
@@ -298,7 +314,14 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_under_clearcoat_transmission_8h_source.html#l00031">31</a> of file <a class="el" href="_bsdf_under_clearcoat_transmission_8h_source.html">BsdfUnderClearcoatTransmission.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   38</span>        : <a class="code hl_function" href="classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe.html#a6379efd0f76cdbf455b317083477ba41">UnderClearcoatBsdfLobe</a>(under, arena, N,</div>
+<div class="line"><span class="lineno">   39</span>                                 etaI, etaT,</div>
+<div class="line"><span class="lineno">   40</span>                                 thickness,</div>
+<div class="line"><span class="lineno">   41</span>                                 attenuationColor,</div>
+<div class="line"><span class="lineno">   42</span>                                 <span class="keyword">true</span>)</div>
+<div class="line"><span class="lineno">   43</span>        {}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe_html_a6379efd0f76cdbf455b317083477ba41"><div class="ttname"><a href="classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe.html#a6379efd0f76cdbf455b317083477ba41">moonray::shading::UnderClearcoatBsdfLobe::UnderClearcoatBsdfLobe</a></div><div class="ttdeci">UnderClearcoatBsdfLobe(BsdfLobe *under, scene_rdl2::alloc::Arena *arena, const scene_rdl2::math::Vec3f &amp;N, const float etaI, const float etaT, const float thickness, const scene_rdl2::math::Color &amp;attenuationColor, const bool passThroughTIRWhenSampling=true)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_under_clearcoat_8h_source.html#l00031">BsdfUnderClearcoat.h:31</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -352,7 +375,54 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe.html#abaa6bbb94a7fae37d6d235fb2115a437">moonray::shading::UnderClearcoatBsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_under_clearcoat_transmission_8cc_source.html#l00023">23</a> of file <a class="el" href="_bsdf_under_clearcoat_transmission_8cc_source.html">BsdfUnderClearcoatTransmission.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   26</span>{</div>
+<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">if</span> (pdf != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   28</span>        *pdf = 0.0f;</div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>    Color result;</div>
+<div class="line"><span class="lineno">   31</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> woPrime;</div>
+<div class="line"><span class="lineno">   32</span>    <span class="keywordtype">float</span> cosThetaWo, cosThetaWoPrime;</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacemoonray_1_1shading.html#ab20aeafed298d7b21fc642ebeed1af9e">computeRefractionDirection</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_under_bsdf_lobe.html#a3d04fdcac28d52dfebaee456a4842c14">mN</a>,</div>
+<div class="line"><span class="lineno">   34</span>                                    slice.getWo(),</div>
+<div class="line"><span class="lineno">   35</span>                                    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe.html#a80e5bc5b98d45867a85df6da183f4130">mNeta</a>,</div>
+<div class="line"><span class="lineno">   36</span>                                    woPrime,</div>
+<div class="line"><span class="lineno">   37</span>                                    cosThetaWo,</div>
+<div class="line"><span class="lineno">   38</span>                                    cosThetaWoPrime))</div>
+<div class="line"><span class="lineno">   39</span>    {</div>
+<div class="line"><span class="lineno">   40</span>        <span class="comment">// Total Outward Reflection</span></div>
+<div class="line"><span class="lineno">   41</span>        <span class="keywordflow">return</span> scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+<div class="line"><span class="lineno">   43</span>    <span class="comment">// Reverse refraction direction</span></div>
+<div class="line"><span class="lineno">   44</span>    woPrime = -woPrime;</div>
+<div class="line"><span class="lineno">   45</span>    BsdfSlice underSlice(slice.getNg(),</div>
+<div class="line"><span class="lineno">   46</span>                         woPrime,</div>
+<div class="line"><span class="lineno">   47</span>                         slice.getIncludeCosineTerm(),</div>
+<div class="line"><span class="lineno">   48</span>                         slice.getEntering(),</div>
+<div class="line"><span class="lineno">   49</span>                         slice.getShadowTerminatorFix(),</div>
+<div class="line"><span class="lineno">   50</span>                         slice.getFlags());</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>    result = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_under_bsdf_lobe.html#ad0db9e1e62d4d5c4478aa382654ab8bb">mUnder</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a9c4e3bbff247bebc35005287dd23c6f9">eval</a>(underSlice, wi, pdf);</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>    result *= <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a27762201a758a03b80bef6e822ecee11">computeScaleAndFresnel</a>(<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_under_bsdf_lobe.html#a3d04fdcac28d52dfebaee456a4842c14">mN</a>, slice.getWo()));</div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   56</span>    <span class="comment">// Clearcoat Absorption</span></div>
+<div class="line"><span class="lineno">   57</span>    <span class="keyword">const</span> Color ct = <a class="code hl_function" href="classmoonray_1_1shading_1_1_under_bsdf_lobe.html#a92c998b15ea96a05721d88ec600f3eb8">computeTransmission</a>(cosThetaWoPrime,</div>
+<div class="line"><span class="lineno">   58</span>                                         0.0f);</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>    result = result * ct;</div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">   63</span>}</div>
+<div class="ttc" id="a_n_point_8h_html_a16747d68c1e06270b0ed335d631b66f3"><div class="ttname"><a href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a></div><div class="ttdeci">float dot(const NPoint&lt; D &gt; &amp;a, const NPoint&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00271">NPoint.h:271</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a27762201a758a03b80bef6e822ecee11"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a27762201a758a03b80bef6e822ecee11">moonray::shading::BsdfLobe::computeScaleAndFresnel</a></div><div class="ttdeci">finline scene_rdl2::math::Color computeScaleAndFresnel(float cosWi) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00179">Bsdf.h:179</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a9c4e3bbff247bebc35005287dd23c6f9"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a9c4e3bbff247bebc35005287dd23c6f9">moonray::shading::BsdfLobe::eval</a></div><div class="ttdeci">virtual scene_rdl2::math::Color eval(const BsdfSlice &amp;slice, const scene_rdl2::math::Vec3f &amp;wi, float *pdf=nullptr) const =0</div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_under_bsdf_lobe_html_a3d04fdcac28d52dfebaee456a4842c14"><div class="ttname"><a href="classmoonray_1_1shading_1_1_under_bsdf_lobe.html#a3d04fdcac28d52dfebaee456a4842c14">moonray::shading::UnderBsdfLobe::mN</a></div><div class="ttdeci">scene_rdl2::math::Vec3f mN</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_under_8h_source.html#l00159">BsdfUnder.h:159</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_under_bsdf_lobe_html_a92c998b15ea96a05721d88ec600f3eb8"><div class="ttname"><a href="classmoonray_1_1shading_1_1_under_bsdf_lobe.html#a92c998b15ea96a05721d88ec600f3eb8">moonray::shading::UnderBsdfLobe::computeTransmission</a></div><div class="ttdeci">scene_rdl2::math::Color computeTransmission(float cosThetaR1, float cosThetaR2) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_under_8h_source.html#l00129">BsdfUnder.h:129</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_under_bsdf_lobe_html_ad0db9e1e62d4d5c4478aa382654ab8bb"><div class="ttname"><a href="classmoonray_1_1shading_1_1_under_bsdf_lobe.html#ad0db9e1e62d4d5c4478aa382654ab8bb">moonray::shading::UnderBsdfLobe::mUnder</a></div><div class="ttdeci">BsdfLobe * mUnder</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_under_8h_source.html#l00158">BsdfUnder.h:158</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe_html_a80e5bc5b98d45867a85df6da183f4130"><div class="ttname"><a href="classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe.html#a80e5bc5b98d45867a85df6da183f4130">moonray::shading::UnderClearcoatBsdfLobe::mNeta</a></div><div class="ttdeci">float mNeta</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_under_clearcoat_8h_source.html#l00109">BsdfUnderClearcoat.h:109</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_ab20aeafed298d7b21fc642ebeed1af9e"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ab20aeafed298d7b21fc642ebeed1af9e">moonray::shading::computeRefractionDirection</a></div><div class="ttdeci">finline bool computeRefractionDirection(const scene_rdl2::math::Vec3f &amp;N, const scene_rdl2::math::Vec3f &amp;wo, float neta, scene_rdl2::math::Vec3f &amp;wi, float &amp;NdotWo, float &amp;NdotWi)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00346">Util.h:346</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a965fe3e5c48cbd50c78015b7125465d6" name="a965fe3e5c48cbd50c78015b7125465d6"></a>
@@ -419,7 +489,44 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe.html#a1ea1a6d9e393d55c4e9df4e1aa5733f6">moonray::shading::UnderClearcoatBsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_under_clearcoat_transmission_8cc_source.html#l00066">66</a> of file <a class="el" href="_bsdf_under_clearcoat_transmission_8cc_source.html">BsdfUnderClearcoatTransmission.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   70</span>{</div>
+<div class="line"><span class="lineno">   71</span>    pdf = 0.0f;</div>
+<div class="line"><span class="lineno">   72</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> woPrime;</div>
+<div class="line"><span class="lineno">   73</span>    Color result;</div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordtype">float</span> cosThetaWo, cosThetaWoPrime;</div>
+<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacemoonray_1_1shading.html#ab20aeafed298d7b21fc642ebeed1af9e">computeRefractionDirection</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_under_bsdf_lobe.html#a3d04fdcac28d52dfebaee456a4842c14">mN</a>,</div>
+<div class="line"><span class="lineno">   76</span>                                    slice.getWo(),</div>
+<div class="line"><span class="lineno">   77</span>                                    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe.html#a80e5bc5b98d45867a85df6da183f4130">mNeta</a>,</div>
+<div class="line"><span class="lineno">   78</span>                                    woPrime,</div>
+<div class="line"><span class="lineno">   79</span>                                    cosThetaWo,</div>
+<div class="line"><span class="lineno">   80</span>                                    cosThetaWoPrime))</div>
+<div class="line"><span class="lineno">   81</span>    {</div>
+<div class="line"><span class="lineno">   82</span>        <span class="comment">// Total Outward Reflection</span></div>
+<div class="line"><span class="lineno">   83</span>        <span class="keywordflow">return</span> scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">   84</span>    }</div>
+<div class="line"><span class="lineno">   85</span>    <span class="comment">// Reverse refraction direction</span></div>
+<div class="line"><span class="lineno">   86</span>    woPrime = -woPrime;</div>
+<div class="line"><span class="lineno">   87</span>    BsdfSlice underSlice(slice.getNg(),</div>
+<div class="line"><span class="lineno">   88</span>                         woPrime,</div>
+<div class="line"><span class="lineno">   89</span>                         slice.getIncludeCosineTerm(),</div>
+<div class="line"><span class="lineno">   90</span>                         slice.getEntering(),</div>
+<div class="line"><span class="lineno">   91</span>                         slice.getShadowTerminatorFix(),</div>
+<div class="line"><span class="lineno">   92</span>                         slice.getFlags());</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    result = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_under_bsdf_lobe.html#ad0db9e1e62d4d5c4478aa382654ab8bb">mUnder</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a59f21649b0273a5e24a19b3e29aee570">sample</a>(underSlice, r1, r2, wi, pdf);</div>
+<div class="line"><span class="lineno">   95</span> </div>
+<div class="line"><span class="lineno">   96</span>    result *= <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a27762201a758a03b80bef6e822ecee11">computeScaleAndFresnel</a>(cosThetaWo);</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>    <span class="comment">// Clearcoat Absorption</span></div>
+<div class="line"><span class="lineno">   99</span>    <span class="keyword">const</span> Color ct = <a class="code hl_function" href="classmoonray_1_1shading_1_1_under_bsdf_lobe.html#a92c998b15ea96a05721d88ec600f3eb8">computeTransmission</a>(cosThetaWoPrime,</div>
+<div class="line"><span class="lineno">  100</span>                                         0.0f);</div>
+<div class="line"><span class="lineno">  101</span> </div>
+<div class="line"><span class="lineno">  102</span>    result = result * ct;</div>
+<div class="line"><span class="lineno">  103</span> </div>
+<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  105</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a59f21649b0273a5e24a19b3e29aee570"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a59f21649b0273a5e24a19b3e29aee570">moonray::shading::BsdfLobe::sample</a></div><div class="ttdeci">virtual scene_rdl2::math::Color sample(const BsdfSlice &amp;slice, float r1, float r2, scene_rdl2::math::Vec3f &amp;wi, float &amp;pdf) const =0</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a74f85cf7d11f84d99522baa2ca873d86" name="a74f85cf7d11f84d99522baa2ca873d86"></a>
@@ -459,7 +566,21 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1shading_1_1_under_clearcoat_bsdf_lobe.html#a7eb3d90453c2ba9a2d98cbed25b61833">moonray::shading::UnderClearcoatBsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_under_clearcoat_transmission_8h_source.html#l00055">55</a> of file <a class="el" href="_bsdf_under_clearcoat_transmission_8h_source.html">BsdfUnderClearcoatTransmission.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   56</span>    {</div>
+<div class="line"><span class="lineno">   57</span>        <span class="keyword">const</span> scene_rdl2::math::Color&amp; scale = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aec44d64391394390189c9f6bbc42f671">getScale</a>();</div>
+<div class="line"><span class="lineno">   58</span>        <span class="keyword">const</span> Fresnel * fresnel = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">getFresnel</a>();</div>
+<div class="line"><span class="lineno">   59</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;[UnderClearcoatTransmissionBsdfLobe]\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   60</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;scale: &quot;</span></div>
+<div class="line"><span class="lineno">   61</span>            &lt;&lt; scale.r &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; scale.g &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; scale.b &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   62</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_under_bsdf_lobe.html#ad0db9e1e62d4d5c4478aa382654ab8bb">mUnder</a>-&gt;<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a32cda370918eb2aa16ee7004b6bb7262">show</a>(os, indent + <span class="stringliteral">&quot;    &quot;</span>);</div>
+<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">if</span> (fresnel) {</div>
+<div class="line"><span class="lineno">   64</span>            fresnel-&gt;show(os, indent + <span class="stringliteral">&quot;    &quot;</span>);</div>
+<div class="line"><span class="lineno">   65</span>        }</div>
+<div class="line"><span class="lineno">   66</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a1325952270070249bd3a4197660a1d7b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">moonray::shading::BsdfLobe::getFresnel</a></div><div class="ttdeci">finline const Fresnel * getFresnel() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00164">Bsdf.h:164</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a32cda370918eb2aa16ee7004b6bb7262"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a32cda370918eb2aa16ee7004b6bb7262">moonray::shading::BsdfLobe::show</a></div><div class="ttdeci">virtual void show(std::ostream &amp;os, const std::string &amp;indent) const =0</div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_aec44d64391394390189c9f6bbc42f671"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aec44d64391394390189c9f6bbc42f671">moonray::shading::BsdfLobe::getScale</a></div><div class="ttdeci">finline const scene_rdl2::math::Color &amp; getScale() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00160">Bsdf.h:160</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -467,9 +588,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/bsdf/under/<a class="el" href="_bsdf_under_clearcoat_transmission_8cc_source.html">BsdfUnderClearcoatTransmission.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_under_clearcoat_transmission_bsdf_lobe.html">UnderClearcoatTransmissionBsdfLobe</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

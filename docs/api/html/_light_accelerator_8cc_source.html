@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_73805215447f19f15a98942e68ab1cf7.html">light</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_light_accelerator_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">LightAccelerator.cc</div></div>
 </div><!--header-->
@@ -51,8 +67,9 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2017-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @author Mike Day</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"></span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_light_accelerator_8h.html">LightAccelerator.h</a>&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_mesh_light_8h.html">MeshLight.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
@@ -107,7 +124,7 @@ $(function() {
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">// bounds callback required by Embree.</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">// Accesses the light&#39;s bounding volume and copies it to bounds_o.</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>boundsCallback(<span class="keyword">const</span> <span class="keyword">struct</span> RTCBoundsFunctionArguments* args)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#a5659bf4bcaab4a19ea0da577d8dc0b44">   62</a></span><a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5659bf4bcaab4a19ea0da577d8dc0b44">boundsCallback</a>(<span class="keyword">const</span> <span class="keyword">struct</span> RTCBoundsFunctionArguments* args)</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_light.html">Light</a>*<span class="keyword">const</span>* lights = (<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_light.html">Light</a>*<span class="keyword">const</span>*)args-&gt;geometryUserPtr;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">const</span> BBox3f bbox = lights[args-&gt;primID]-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#ab1fbcda64a1f9bb62306537b0552bb37">getBounds</a>();</div>
@@ -121,7 +138,7 @@ $(function() {
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">// intersect callback required by Embree.</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>intersectCallback(<span class="keyword">const</span> RTCIntersectFunctionNArguments* args)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#a70b20df041dd8dcb4f481e9ce3443227">   76</a></span><a class="code hl_function" href="namespacemoonray_1_1pbr.html#a70b20df041dd8dcb4f481e9ce3443227">intersectCallback</a>(<span class="keyword">const</span> RTCIntersectFunctionNArguments* args)</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>{</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">int</span>* valid = (<span class="keywordtype">int</span>*)args-&gt;valid;</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N = args-&gt;N;</div>
@@ -129,10 +146,10 @@ $(function() {
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    RTCRayHitN* rayhit = (RTCRayHitN*)args-&gt;rayhit;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    RTCRayN* rays = RTCRayHitN_RayN(rayhit, N);</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    RTCHitN* hits = RTCRayHitN_HitN(rayhit, N);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">const</span> Light*<span class="keyword">const</span>* lights = (<span class="keyword">const</span> Light*<span class="keyword">const</span>*)args-&gt;geometryUserPtr;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_light.html">Light</a>*<span class="keyword">const</span>* lights = (<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_light.html">Light</a>*<span class="keyword">const</span>*)args-&gt;geometryUserPtr;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="comment">// get light</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">const</span> Light* light = lights[primID];</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    LightIntersectContext* context = (LightIntersectContext*)args-&gt;context;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_light.html">Light</a>* light = lights[primID];</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_light_intersect_context.html">LightIntersectContext</a>* context = (<a class="code hl_struct" href="structmoonray_1_1pbr_1_1_light_intersect_context.html">LightIntersectContext</a>*)args-&gt;context;</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> index = 0; index &lt; N; ++index) {</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="comment">// If the lane is not valid in vector mode or if the light in the accelerator</span></div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="comment">// does not have a corresponding light in the LightSet, then we can skip this</span></div>
@@ -153,17 +170,17 @@ $(function() {
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> p(</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keyword">const</span> Vec3f p(</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            RTCRayN_org_x(rays, N, index),</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            RTCRayN_org_y(rays, N, index),</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            RTCRayN_org_z(rays, N, index));</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> wi(</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keyword">const</span> Vec3f wi(</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            RTCRayN_dir_x(rays, N, index),</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            RTCRayN_dir_y(rays, N, index),</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            RTCRayN_dir_z(rays, N, index));</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordtype">float</span> maxDistance = RTCRayN_tfar(rays, N, index);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>* n = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keyword">const</span> Vec3f* n = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="keywordflow">if</span> (context-&gt;mShadingNormal) {</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <span class="comment">// is mShadingNormal == nullptr, it is an invalid shading normal</span></div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <span class="comment">// in c++ code derived from a subsurface material</span></div>
@@ -174,7 +191,7 @@ $(function() {
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            }</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        }</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        LightIntersection isect;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_light_intersection.html">LightIntersection</a> isect;</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="keywordtype">bool</span> hit = light-&gt;intersect(p, n, wi, RTCRayN_time(rays, N, index),</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            maxDistance, isect);</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">if</span> (!hit) {</div>
@@ -187,20 +204,20 @@ $(function() {
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            RTCHitN_instID(hits, N, index, 0) = context-&gt;mRtcContext.instID[0];</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            RTCHitN_geomID(hits, N, index) = 0;</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            RTCHitN_primID(hits, N, index) = primID;</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            RTCHitN_u(hits, N, index) = isect.uv[0];</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            RTCHitN_v(hits, N, index) = isect.uv[1];</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            RTCHitN_Ng_x(hits, N, index) = isect.N.x;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            RTCHitN_Ng_y(hits, N, index) = isect.N.y;</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            RTCHitN_Ng_z(hits, N, index) = isect.N.z;</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            context-&gt;mData0[rayId] = isect.data[0];</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            context-&gt;mData1[rayId] = isect.data[1];</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            RTCHitN_u(hits, N, index) = isect.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersection.html#aed874b1611d0f16803c59a0de1a99d09">uv</a>[0];</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            RTCHitN_v(hits, N, index) = isect.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersection.html#aed874b1611d0f16803c59a0de1a99d09">uv</a>[1];</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            RTCHitN_Ng_x(hits, N, index) = isect.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersection.html#ab7de2337c715c3d734463b420871d4ba">N</a>.x;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            RTCHitN_Ng_y(hits, N, index) = isect.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersection.html#ab7de2337c715c3d734463b420871d4ba">N</a>.y;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            RTCHitN_Ng_z(hits, N, index) = isect.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersection.html#ab7de2337c715c3d734463b420871d4ba">N</a>.z;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            context-&gt;mData0[rayId] = isect.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersection.html#a175a27dca3ff85dddd2c6361f1b7c37e">data</a>[0];</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            context-&gt;mData1[rayId] = isect.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersection.html#a175a27dca3ff85dddd2c6361f1b7c37e">data</a>[1];</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            <span class="comment">// We cannot set the RTCHit distance parameter to the isect.distance. If we do, the ray</span></div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            <span class="comment">// traversal will stop at the closest ray hit. Therefore we store the distance of the chosen</span></div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            <span class="comment">// light in the context instead.</span></div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            context-&gt;mDistance[rayId] = isect.distance;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            context-&gt;mPdf[rayId] = isect.pdf;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            context-&gt;mMeshGeomID[rayId] = isect.geomID;</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            context-&gt;mMeshPrimID[rayId] = isect.primID;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            context-&gt;mDistance[rayId] = isect.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersection.html#ab4b601b0f47a6c6bc229b9744a021a83">distance</a>;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            context-&gt;mPdf[rayId] = isect.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersection.html#ae60d2078073a3e4f5a315bb74f68cde5">pdf</a>;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            context-&gt;mMeshGeomID[rayId] = isect.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersection.html#a9f3d9616b9a9ffefefdaf05f0259113e">geomID</a>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            context-&gt;mMeshPrimID[rayId] = isect.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersection.html#a51dd819b25bbc88faa35003881d7b00c">primID</a>;</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        }</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    }</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>}</div>
@@ -258,8 +275,8 @@ $(function() {
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        rtcSetGeometryUserPrimitiveCount(rtcGeom, boundedLightCount);</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        rtcSetGeometryTimeStepCount(rtcGeom, 1);</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        rtcSetGeometryUserData(rtcGeom, (<span class="keywordtype">void</span> *)<span class="keyword">const_cast&lt;</span><a class="code hl_class" href="classmoonray_1_1pbr_1_1_light.html">Light</a>**<span class="keyword">&gt;</span>(mBoundedLights));</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        rtcSetGeometryBoundsFunction(rtcGeom, boundsCallback, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        rtcSetGeometryIntersectFunction(rtcGeom, intersectCallback);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        rtcSetGeometryBoundsFunction(rtcGeom, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5659bf4bcaab4a19ea0da577d8dc0b44">boundsCallback</a>, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        rtcSetGeometryIntersectFunction(rtcGeom, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a70b20df041dd8dcb4f481e9ce3443227">intersectCallback</a>);</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        rtcAttachGeometry(mRtcScene, rtcGeom);</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        rtcCommitGeometry(rtcGeom);</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        rtcReleaseGeometry(rtcGeom);</div>
@@ -289,11 +306,11 @@ $(function() {
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    }</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_light_intersection.html">LightIntersection</a> boundedIsect;</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordtype">int</span> boundedLightIdx = intersectBounded(P, N, wi, time, maxDistance, includeRayTerminationLights, </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordtype">int</span> boundedLightIdx = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_accelerator.html#a3b22151d092a28adcf934b303da5b534">intersectBounded</a>(P, N, wi, time, maxDistance, includeRayTerminationLights, </div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        visibilityMask, samples, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a9121792970cb0e80a1f349433b131ce3">depth</a>, boundedIsect, numHits, lightIdMap);</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_light_intersection.html">LightIntersection</a> unboundedIsect;</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordtype">int</span> unboundedLightIdx = intersectUnbounded(P, wi, time, maxDistance, includeRayTerminationLights,</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordtype">int</span> unboundedLightIdx = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_accelerator.html#a997053b9f7f351da9cd4e4bd61f0dc2b">intersectUnbounded</a>(P, wi, time, maxDistance, includeRayTerminationLights,</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        visibilityMask, samples, <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a9121792970cb0e80a1f349433b131ce3">depth</a>, unboundedIsect, numHits, lightIdMap);</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="keywordflow">if</span> (unboundedLightIdx &gt;= 0) {</div>
@@ -310,7 +327,7 @@ $(function() {
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="comment">// light acceleration structure. Its main role is to convert between</span></div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="comment">// the Moonray-style parameters and the Embree Ray struct.</span></div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="keywordtype">int</span></div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>LightAccelerator::intersectBounded(<span class="keyword">const</span> Vec3f &amp;P,  <span class="keyword">const</span> Vec3f* N, <span class="keyword">const</span> Vec3f &amp;wi,</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_light_accelerator.html#a3b22151d092a28adcf934b303da5b534">  265</a></span><a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_accelerator.html#a3b22151d092a28adcf934b303da5b534">LightAccelerator::intersectBounded</a>(<span class="keyword">const</span> Vec3f &amp;P,  <span class="keyword">const</span> Vec3f* N, <span class="keyword">const</span> Vec3f &amp;wi,</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <span class="keywordtype">float</span> time, <span class="keywordtype">float</span> maxDistance, <span class="keywordtype">bool</span> includeRayTerminationLights, <span class="keywordtype">int</span> visibilityMask,</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <a class="code hl_class" href="classmoonray_1_1pbr_1_1_integrator_sample.html">IntegratorSample1D</a> &amp;samples, <span class="keywordtype">int</span> <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a9121792970cb0e80a1f349433b131ce3">depth</a>, <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_light_intersection.html">LightIntersection</a> &amp;isect, <span class="keywordtype">int</span> &amp;numHits, <span class="keyword">const</span> <span class="keywordtype">int</span>* lightIdMap)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="keyword"></span>{</div>
@@ -326,7 +343,7 @@ $(function() {
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    rayHit.ray.tfar  = maxDistance;</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    rayHit.ray.mask  = visibilityMask;</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    rayHit.ray.id = 0;</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    rayHit.hit.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersection.html#a9f3d9616b9a9ffefefdaf05f0259113e">geomID</a> = RTC_INVALID_GEOMETRY_ID;</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    rayHit.hit.geomID = RTC_INVALID_GEOMETRY_ID;</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    rayHit.hit.instID[0] = RTC_INVALID_GEOMETRY_ID;</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_light_intersect_context.html">LightIntersectContext</a> context;</div>
@@ -365,11 +382,11 @@ $(function() {
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="comment">// Randomly intersect a ray against the LightAccelerator&#39;s list of unbounded lights.</span></div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="keywordtype">int</span></div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>LightAccelerator::intersectUnbounded(<span class="keyword">const</span> Vec3f &amp;P, <span class="keyword">const</span> Vec3f &amp;wi, <span class="keywordtype">float</span> time,</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        <span class="keywordtype">float</span> maxDistance, <span class="keywordtype">bool</span> includeRayTerminationLights, <span class="keywordtype">int</span> visibilityMask, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#ae23a1ee41834e8a278a9c5727adbe4e3">IntegratorSample1D</a> &amp;samples,</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a9121792970cb0e80a1f349433b131ce3">depth</a>, LightIntersection &amp;isect, <span class="keywordtype">int</span> &amp;numHits, <span class="keyword">const</span> <span class="keywordtype">int</span>* lightIdMap)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_light_accelerator.html#a997053b9f7f351da9cd4e4bd61f0dc2b">  320</a></span><a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_accelerator.html#a997053b9f7f351da9cd4e4bd61f0dc2b">LightAccelerator::intersectUnbounded</a>(<span class="keyword">const</span> Vec3f &amp;P, <span class="keyword">const</span> Vec3f &amp;wi, <span class="keywordtype">float</span> time,</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        <span class="keywordtype">float</span> maxDistance, <span class="keywordtype">bool</span> includeRayTerminationLights, <span class="keywordtype">int</span> visibilityMask, <a class="code hl_class" href="classmoonray_1_1pbr_1_1_integrator_sample.html">IntegratorSample1D</a> &amp;samples,</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a9121792970cb0e80a1f349433b131ce3">depth</a>, <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_light_intersection.html">LightIntersection</a> &amp;isect, <span class="keywordtype">int</span> &amp;numHits, <span class="keyword">const</span> <span class="keywordtype">int</span>* lightIdMap)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    isect.distance = maxDistance;</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    isect.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersection.html#ab4b601b0f47a6c6bc229b9744a021a83">distance</a> = maxDistance;</div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="keywordtype">int</span> chosenLightIdx = -1;</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> idx = 0; idx &lt; mUnboundedLightCount; idx++) {</div>
@@ -377,20 +394,20 @@ $(function() {
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        <span class="keywordflow">if</span> (lightIdMap[idx + mBoundedLightCount] == -1) {</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        }</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        <span class="keyword">const</span> <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12a9914a0ce04a7b7b6a8e39bec55064b82">Light</a> *light = mUnboundedLights[idx];</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>        LightIntersection currentIsect;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_light.html">Light</a> *light = mUnboundedLights[idx];</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>        <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_light_intersection.html">LightIntersection</a> currentIsect;</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        <span class="keywordflow">if</span> (!(visibilityMask &amp; light-&gt;getVisibilityMask())) {</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        <span class="keywordflow">if</span> (!(visibilityMask &amp; light-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#a9d71270971d3d52d480dbeedab73bc05">getVisibilityMask</a>())) {</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>            <span class="comment">// skip light if it is masked</span></div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        }</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        <span class="keywordflow">if</span> (!includeRayTerminationLights &amp;&amp; light-&gt;getIsRayTerminator()) {</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        <span class="keywordflow">if</span> (!includeRayTerminationLights &amp;&amp; light-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#a0747455f0b464294a7552937017127f4">getIsRayTerminator</a>()) {</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>            <span class="comment">// Skip any ray termination lights if we were told not to include them</span></div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        }</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>        <span class="keywordflow">if</span> (light-&gt;intersect(P, <span class="keyword">nullptr</span> <span class="comment">/*unbounded lights do not depend on the shade point normal*/</span>,</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>        <span class="keywordflow">if</span> (light-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#a99c6113918cfcb8c534436ec6bae0725">intersect</a>(P, <span class="keyword">nullptr</span> <span class="comment">/*unbounded lights do not depend on the shade point normal*/</span>,</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                wi, time, maxDistance, currentIsect)) {</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>            numHits++;</div>
@@ -470,17 +487,22 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_integrator_sample_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_integrator_sample.html">moonray::pbr::IntegratorSample&lt; 1 &gt;</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_integrator_sample_html_afcc3ed49e2dd581fd1b297f5721a6237"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_integrator_sample.html#afcc3ed49e2dd581fd1b297f5721a6237">moonray::pbr::IntegratorSample::getSampleNumber</a></div><div class="ttdeci">utype getSampleNumber() const</div><div class="ttdef"><b>Definition:</b> <a href="_integrator_sample_8h_source.html#l00062">IntegratorSample.h:62</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_accelerator_html_a1a28a53ef23e4941845684a3c2ac4d94"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_accelerator.html#a1a28a53ef23e4941845684a3c2ac4d94">moonray::pbr::LightAccelerator::intersect</a></div><div class="ttdeci">int intersect(const scene_rdl2::math::Vec3f &amp;P, const scene_rdl2::math::Vec3f *N, const scene_rdl2::math::Vec3f &amp;wi, float time, float maxDistance, bool includeRayTerminationLights, int visibilityMask, IntegratorSample1D &amp;samples, int depth, LightIntersection &amp;isect, int &amp;numHits, const int *lightIdMap) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_accelerator_8cc_source.html#l00232">LightAccelerator.cc:232</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_accelerator_html_a3b22151d092a28adcf934b303da5b534"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_accelerator.html#a3b22151d092a28adcf934b303da5b534">moonray::pbr::LightAccelerator::intersectBounded</a></div><div class="ttdeci">int intersectBounded(const scene_rdl2::math::Vec3f &amp;P, const scene_rdl2::math::Vec3f *N, const scene_rdl2::math::Vec3f &amp;wi, float time, float maxDistance, bool includeRayTerminationLights, int visibilityMask, IntegratorSample1D &amp;samples, int depth, LightIntersection &amp;isect, int &amp;numHits, const int *lightIdMap) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_accelerator_8cc_source.html#l00265">LightAccelerator.cc:265</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_accelerator_html_a6bf420ad274dceb347fdd6a1d3725674"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_accelerator.html#a6bf420ad274dceb347fdd6a1d3725674">moonray::pbr::LightAccelerator::init</a></div><div class="ttdeci">void init(const Light *const *lights, int lightCount, const RTCDevice &amp;rtcDevice)</div><div class="ttdef"><b>Definition:</b> <a href="_light_accelerator_8cc_source.html#l00165">LightAccelerator.cc:165</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_accelerator_html_a80eb924405ae44d79b571835018614f6"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_accelerator.html#a80eb924405ae44d79b571835018614f6">moonray::pbr::LightAccelerator::~LightAccelerator</a></div><div class="ttdeci">~LightAccelerator()</div><div class="ttdef"><b>Definition:</b> <a href="_light_accelerator_8cc_source.html#l00051">LightAccelerator.cc:51</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_accelerator_html_a997053b9f7f351da9cd4e4bd61f0dc2b"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_accelerator.html#a997053b9f7f351da9cd4e4bd61f0dc2b">moonray::pbr::LightAccelerator::intersectUnbounded</a></div><div class="ttdeci">int intersectUnbounded(const scene_rdl2::math::Vec3f &amp;P, const scene_rdl2::math::Vec3f &amp;wi, float time, float maxDistance, bool includeRayTerminationLights, int visibilityMask, IntegratorSample1D &amp;samples, int depth, LightIntersection &amp;isect, int &amp;numHits, const int *lightIdMap) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_accelerator_8cc_source.html#l00320">LightAccelerator.cc:320</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_accelerator_html_ace31efd377d8abe6e25bcc4427e4ac93"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_accelerator.html#ace31efd377d8abe6e25bcc4427e4ac93">moonray::pbr::LightAccelerator::LightAccelerator</a></div><div class="ttdeci">LightAccelerator()</div><div class="ttdef"><b>Definition:</b> <a href="_light_accelerator_8cc_source.html#l00037">LightAccelerator.cc:37</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html">moonray::pbr::Light</a></div><div class="ttdoc">Base class that defines the light interface. All lights are assumed to be area lights....</div><div class="ttdef"><b>Definition:</b> <a href="_light_8h_source.html#l00047">Light.h:48</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_a0747455f0b464294a7552937017127f4"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#a0747455f0b464294a7552937017127f4">moonray::pbr::Light::getIsRayTerminator</a></div><div class="ttdeci">bool getIsRayTerminator() const</div><div class="ttdoc">Get the flag which identifies this light as a ray termination light.</div><div class="ttdef"><b>Definition:</b> <a href="_light_8h_source.html#l00225">Light.h:225</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_a99c6113918cfcb8c534436ec6bae0725"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#a99c6113918cfcb8c534436ec6bae0725">moonray::pbr::Light::intersect</a></div><div class="ttdeci">virtual bool intersect(const scene_rdl2::math::Vec3f &amp;p, const scene_rdl2::math::Vec3f *n, const scene_rdl2::math::Vec3f &amp;wi, float time, float maxDistance, LightIntersection &amp;isect) const =0</div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_a9d71270971d3d52d480dbeedab73bc05"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#a9d71270971d3d52d480dbeedab73bc05">moonray::pbr::Light::getVisibilityMask</a></div><div class="ttdeci">int getVisibilityMask() const</div><div class="ttdoc">Gets the visibility mask of the light.</div><div class="ttdef"><b>Definition:</b> <a href="_light_8h_source.html#l00222">Light.h:222</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_ab1fbcda64a1f9bb62306537b0552bb37"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#ab1fbcda64a1f9bb62306537b0552bb37">moonray::pbr::Light::getBounds</a></div><div class="ttdeci">virtual scene_rdl2::math::BBox3f getBounds() const</div><div class="ttdef"><b>Definition:</b> <a href="_light_8cc_source.html#l00088">Light.cc:88</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_sequence_i_d_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sequence_i_d.html">moonray::pbr::SequenceID</a></div><div class="ttdef"><b>Definition:</b> <a href="_sequence_i_d_8h_source.html#l00045">SequenceID.h:46</a></div></div>
 <div class="ttc" id="amoonray__static__check_8h_html"><div class="ttname"><a href="moonray__static__check_8h.html">moonray_static_check.h</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a4268b7c0d4a31325dac34fe022218004"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a4268b7c0d4a31325dac34fe022218004">moonray::pbr::CPP_lightIntersect</a></div><div class="ttdeci">void CPP_lightIntersect(RTCScene scene, RTCRayHitv &amp;rayHitv, int *includeRayTerminationLights, float *isectData0, float *isectData1, SequenceID *sequenceID, uint32_t *totalSamples, uint32_t *sampleNumber, int *depth, float *isectDistance, int *numHits, float *pdf, int *meshGeomId, int *meshPrimId, const scene_rdl2::math::Vec3fv *shadingNormalv, const int *lightIdMap)</div><div class="ttdef"><b>Definition:</b> <a href="_light_accelerator_8cc_source.html#l00368">LightAccelerator.cc:368</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a5659bf4bcaab4a19ea0da577d8dc0b44"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a5659bf4bcaab4a19ea0da577d8dc0b44">moonray::pbr::boundsCallback</a></div><div class="ttdeci">static void boundsCallback(const struct RTCBoundsFunctionArguments *args)</div><div class="ttdef"><b>Definition:</b> <a href="_light_accelerator_8cc_source.html#l00062">LightAccelerator.cc:62</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a70b20df041dd8dcb4f481e9ce3443227"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a70b20df041dd8dcb4f481e9ce3443227">moonray::pbr::intersectCallback</a></div><div class="ttdeci">static void intersectCallback(const RTCIntersectFunctionNArguments *args)</div><div class="ttdef"><b>Definition:</b> <a href="_light_accelerator_8cc_source.html#l00076">LightAccelerator.cc:76</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a9121792970cb0e80a1f349433b131ce3"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a9121792970cb0e80a1f349433b131ce3">moonray::pbr::depth</a></div><div class="ttdeci">scene_rdl2::util::SManip&lt; long &gt; depth(long n)</div><div class="ttdef"><b>Definition:</b> <a href="_sample_partition_8h_source.html#l00222">SamplePartition.h:222</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1pbr_html_a915c7b7f63b0f443120cf7e865296a12a9914a0ce04a7b7b6a8e39bec55064b82"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12a9914a0ce04a7b7b6a8e39bec55064b82">moonray::pbr::SequenceType::Light</a></div><div class="ttdeci">@ Light</div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_aa1698168428fe21abb882915c02af3c6"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#aa1698168428fe21abb882915c02af3c6">moonray::pbr::chooseThisLight</a></div><div class="ttdeci">bool chooseThisLight(const IntegratorSample1D &amp;samples, int depth, unsigned int numHits)</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8cc_source.html#l00130">LightUtil.cc:130</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_ae23a1ee41834e8a278a9c5727adbe4e3"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ae23a1ee41834e8a278a9c5727adbe4e3">moonray::pbr::IntegratorSample1D</a></div><div class="ttdeci">IntegratorSample&lt; 1 &gt; IntegratorSample1D</div><div class="ttdef"><b>Definition:</b> <a href="_integrator_sample_8h_source.html#l00099">IntegratorSample.h:99</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
@@ -508,9 +530,13 @@ $(function() {
 <div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersection_html_ae60d2078073a3e4f5a315bb74f68cde5"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersection.html#ae60d2078073a3e4f5a315bb74f68cde5">moonray::pbr::LightIntersection::pdf</a></div><div class="ttdeci">float pdf</div><div class="ttdoc">pdf of sample</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00048">LightUtil.h:48</a></div></div>
 <div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersection_html_aed874b1611d0f16803c59a0de1a99d09"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersection.html#aed874b1611d0f16803c59a0de1a99d09">moonray::pbr::LightIntersection::uv</a></div><div class="ttdeci">scene_rdl2::math::Vec2f uv</div><div class="ttdoc">used for texture mapped lights</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00044">LightUtil.h:44</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_c28222da563143b8454c863142ee9c30.html">light</a></li><li class="navelem"><a class="el" href="_light_accelerator_8cc.html">LightAccelerator.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_28705856019153616deb2bfeeafe0625.html">unittest</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_test_debug_rays_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">TestDebugRays.cc</div></div>
 </div><!--header-->
@@ -73,7 +89,7 @@ $(function() {
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#abe6ba282b853e7db808e0de9e66969f5">   25</a></span><a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#abe6ba282b853e7db808e0de9e66969f5">TestDebugRays::setUp</a>()</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    mDb = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">// record rays</span></div>
@@ -90,7 +106,7 @@ $(function() {
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    std::vector&lt;DebugRayRecorder *&gt; recorderList;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_define" href="_test_debug_rays_8cc.html#a04d172cecd432ca95cb2be386be4433d">NUM_RAY_RECORDERS</a>; ++i) {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        populateRecorder(&amp;recorders[i]);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#ab308a97954e7abb50bb89bec9b5aefb7">populateRecorder</a>(&amp;recorders[i]);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        recorderList.push_back(&amp;recorders[i]);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
@@ -105,23 +121,23 @@ $(function() {
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// export db</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">//</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    mDb = <span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database.html">DebugRayDatabase</a>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    builder.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_builder.html#acecdc0662b660b8f4273e46db4ef9aa4">exportDatabase</a>(mDb);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a> = <span class="keyword">new</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database.html">DebugRayDatabase</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    builder.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_builder.html#acecdc0662b660b8f4273e46db4ef9aa4">exportDatabase</a>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>);</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a99edd991a6d8043259abf30fe9cd2a69">   64</a></span><a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a99edd991a6d8043259abf30fe9cd2a69">TestDebugRays::tearDown</a>()</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">delete</span> mDb;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    mDb = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">delete</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a60da124d4955cbcebcb455442fb71704">   71</a></span><a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a60da124d4955cbcebcb455442fb71704">TestDebugRays::testSortOrder</a>()</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    CPPUNIT_ASSERT(mDb);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    CPPUNIT_ASSERT(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a> it(*mDb);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a> it(*<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">unsigned</span> screenOffset = 0;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
@@ -143,15 +159,15 @@ $(function() {
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a2aa31fe1f5d5b7abac542a5549b4ad39">   95</a></span><a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a2aa31fe1f5d5b7abac542a5549b4ad39">TestDebugRays::testPrimaryRays</a>()</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>{</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    CPPUNIT_ASSERT(mDb);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    CPPUNIT_ASSERT(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    std::vector&lt;uint32_t&gt; <span class="keyword">const</span> &amp;primaryRays = mDb-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a954269fbd4d99c02f027dc75473adc36">getPrimaryRayIndices</a>();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    std::vector&lt;uint32_t&gt; <span class="keyword">const</span> &amp;primaryRays = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a954269fbd4d99c02f027dc75473adc36">getPrimaryRayIndices</a>();</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">size_t</span> numPrimaryRays = primaryRays.size();</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    CPPUNIT_ASSERT(numPrimaryRays);</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="comment">// count the number of primary rays using brute force iteration</span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordtype">size_t</span> numPrimaryRays2 = 0;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a> it(*mDb);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a> it(*<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>);</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">while</span> (!it.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html#a65b22fa13cb480903775cb5d82da9dc2">isDone</a>()) {</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_debug_ray_vertex.html">DebugRayVertex</a> <span class="keyword">const</span> *vertex = &amp;(*it);</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordflow">if</span> (vertex-&gt;<a class="code hl_function" href="structmoonray_1_1pbr_1_1_debug_ray_vertex.html#a1ed0a11d589cd9db75b2a9ffb590f0c0">isRoot</a>())</div>
@@ -164,9 +180,9 @@ $(function() {
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="comment">// current node</span></div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="comment">// get first primary ray via iteration</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_debug_ray_vertex.html">DebugRayVertex</a> <span class="keyword">const</span> *startVert = &amp;(*<a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a>(*mDb));</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_debug_ray_vertex.html">DebugRayVertex</a> <span class="keyword">const</span> *startVert = &amp;(*<a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a>(*<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>));</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_debug_ray_vertex.html">DebugRayVertex</a> <span class="keyword">const</span> *currVert = startVert;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    CPPUNIT_ASSERT(startVert == mDb-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a512ecac7dbe9115a4100c159de0ad41d">getRay</a>(primaryRays[0]));</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    CPPUNIT_ASSERT(startVert == <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a512ecac7dbe9115a4100c159de0ad41d">getRay</a>(primaryRays[0]));</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; numPrimaryRays; ++i, ++currVert) {</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
@@ -192,7 +208,7 @@ $(function() {
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a009d47b479662c28a81413cf7cbfef32">  144</a></span><a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a009d47b479662c28a81413cf7cbfef32">TestDebugRays::testRectFilter</a>()</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>{</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    CPPUNIT_ASSERT(mDb);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    CPPUNIT_ASSERT(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>);</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordtype">int</span> minX = 123;</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keywordtype">int</span> maxX = 232;</div>
@@ -203,7 +219,7 @@ $(function() {
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordtype">unsigned</span> refResult = 0;</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    {</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a> it(*mDb);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a> it(*<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>);</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">while</span> (!it.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html#a65b22fa13cb480903775cb5d82da9dc2">isDone</a>()) {</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_debug_ray_vertex.html">DebugRayVertex</a> <span class="keyword">const</span> *vertex = &amp;(*it);</div>
@@ -223,7 +239,7 @@ $(function() {
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_debug_ray_filter.html">DebugRayFilter</a> filter;</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        filter.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_debug_ray_filter.html#ae054e9106f53286e189e169056a91318">mViewport</a> = scene_rdl2::math::BBox2i(scene_rdl2::math::Vec2i(minX, minY), scene_rdl2::math::Vec2i(maxX, maxY));</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a> it(*mDb, &amp;filter);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a> it(*<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>, &amp;filter);</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <span class="keywordflow">while</span> (!it.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html#a65b22fa13cb480903775cb5d82da9dc2">isDone</a>()) {</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            ++filterResult;</div>
@@ -239,7 +255,7 @@ $(function() {
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a127d1b7259845f8367ef48b27aaa7bf9">  191</a></span><a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a127d1b7259845f8367ef48b27aaa7bf9">TestDebugRays::testTagFilter</a>()</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>{</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    CPPUNIT_ASSERT(mDb);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    CPPUNIT_ASSERT(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>);</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="comment">// do manual iteration to get baseline count of tagged rays</span></div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keywordtype">unsigned</span> refResultAny = 0;</div>
@@ -249,7 +265,7 @@ $(function() {
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    uint32_t tag = 0x14200;</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    {</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a> it(*mDb);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a> it(*<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>);</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        <span class="keywordflow">while</span> (!it.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html#a65b22fa13cb480903775cb5d82da9dc2">isDone</a>()) {</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_debug_ray_vertex.html">DebugRayVertex</a> <span class="keyword">const</span> *vertex = &amp;(*it);</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
@@ -272,14 +288,14 @@ $(function() {
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        filter.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_debug_ray_filter.html#af9592cc31375fa601237ca21e681062d">mTags</a> = tag;</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        filter.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_debug_ray_filter.html#a15ccc74f9e9b89d5ec2e396d75d4e4ac">mMatchAll</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a> it(*mDb, &amp;filter);</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a> it(*<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>, &amp;filter);</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        <span class="keywordflow">while</span> (!it.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html#a65b22fa13cb480903775cb5d82da9dc2">isDone</a>()) {</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            ++filterResultAny;</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            ++it;</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        }</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        filter.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_debug_ray_filter.html#a15ccc74f9e9b89d5ec2e396d75d4e4ac">mMatchAll</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        it = <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a>(*mDb, &amp;filter);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        it = <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a>(*<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>, &amp;filter);</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        <span class="keywordflow">while</span> (!it.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html#a65b22fa13cb480903775cb5d82da9dc2">isDone</a>()) {</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            ++filterResultAll;</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>            ++it;</div>
@@ -296,19 +312,19 @@ $(function() {
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#abb4245e949ba3cda31ba120551cab438">  248</a></span><a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#abb4245e949ba3cda31ba120551cab438">TestDebugRays::testSerialization</a>()</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>{</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    CPPUNIT_ASSERT(mDb);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    CPPUNIT_ASSERT(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>);</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    <span class="keywordtype">char</span> <span class="keyword">const</span> *filename = <span class="stringliteral">&quot;unittest.raydb&quot;</span>;</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <span class="comment">// save mDb</span></div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    CPPUNIT_ASSERT(mDb-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a79af059a4f8f19259bad1cae5364976f">save</a>(filename));</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    CPPUNIT_ASSERT(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a79af059a4f8f19259bad1cae5364976f">save</a>(filename));</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="comment">// load back into a duplicate db</span></div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database.html">DebugRayDatabase</a> dupeDb;</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    CPPUNIT_ASSERT(dupeDb.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#aa9c33a12c182e8ddfc7217b996f25b71">load</a>(filename));</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    <span class="comment">// do some tests to verify we&#39;re dealing with identical data</span></div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a> refIt(*mDb);</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a> refIt(*<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>);</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html">DebugRayDatabase::Iterator</a> dupeIt(dupeDb);</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <span class="keywordflow">while</span> (!refIt.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html#a65b22fa13cb480903775cb5d82da9dc2">isDone</a>()) {</div>
@@ -320,13 +336,13 @@ $(function() {
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    CPPUNIT_ASSERT(dupeIt.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html#a65b22fa13cb480903775cb5d82da9dc2">isDone</a>());</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    CPPUNIT_ASSERT(mDb-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a954269fbd4d99c02f027dc75473adc36">getPrimaryRayIndices</a>() == dupeDb.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a954269fbd4d99c02f027dc75473adc36">getPrimaryRayIndices</a>());</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    CPPUNIT_ASSERT(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">mDb</a>-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a954269fbd4d99c02f027dc75473adc36">getPrimaryRayIndices</a>() == dupeDb.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_database.html#a954269fbd4d99c02f027dc75473adc36">getPrimaryRayIndices</a>());</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>}</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>TestDebugRays::populateRecorder(<a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_recorder.html">DebugRayRecorder</a> *recorder)</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#ab308a97954e7abb50bb89bec9b5aefb7">  280</a></span><a class="code hl_function" href="classmoonray_1_1pbr_1_1_test_debug_rays.html#ab308a97954e7abb50bb89bec9b5aefb7">TestDebugRays::populateRecorder</a>(<a class="code hl_class" href="classmoonray_1_1pbr_1_1_debug_ray_recorder.html">DebugRayRecorder</a> *recorder)</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>{</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    recorder-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_debug_ray_recorder.html#a2f7c372c35f8355f201861b3df66171d">record</a>();</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
@@ -354,13 +370,13 @@ $(function() {
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>            vertex-&gt;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_debug_ray_vertex.html#a3a69572d405c66a69d4d8895532e9b36">mUserTags</a> = tags;</div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        }</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = rnd.getNextFloat();</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        <span class="keywordtype">float</span> x = rnd.getNextFloat();</div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        <span class="keywordflow">if</span> (x &lt; 0.05f || parent-&gt;mDepth == 254) {</div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>            <span class="comment">// start new ray</span></div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            parent = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>            sx = rnd.getNextUInt(<a class="code hl_define" href="_test_debug_rays_8cc.html#a241aeeb764887ae5e3de58b98f04b16d">WIDTH</a>);</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            sy = rnd.getNextUInt(<a class="code hl_define" href="_test_debug_rays_8cc.html#aed89bd71aee8be823e8a20ec4e093c1e">HEIGHT</a>);</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; 0.6f) {</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (x &lt; 0.6f) {</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>            <span class="comment">// continue ray</span></div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>            parent = vertex;</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        } <span class="keywordflow">else</span> {</div>
@@ -385,7 +401,6 @@ $(function() {
 <div class="ttc" id="a_test_debug_rays_8cc_html_aed89bd71aee8be823e8a20ec4e093c1e"><div class="ttname"><a href="_test_debug_rays_8cc.html#aed89bd71aee8be823e8a20ec4e093c1e">HEIGHT</a></div><div class="ttdeci">#define HEIGHT</div><div class="ttdef"><b>Definition:</b> <a href="_test_debug_rays_8cc_source.html#l00015">TestDebugRays.cc:15</a></div></div>
 <div class="ttc" id="a_test_debug_rays_8cc_html_af84588ca6e1f7529a0df0caced7dabe4"><div class="ttname"><a href="_test_debug_rays_8cc.html#af84588ca6e1f7529a0df0caced7dabe4">NUM_VERTICES_PER_RECORDER</a></div><div class="ttdeci">#define NUM_VERTICES_PER_RECORDER</div><div class="ttdef"><b>Definition:</b> <a href="_test_debug_rays_8cc_source.html#l00017">TestDebugRays.cc:17</a></div></div>
 <div class="ttc" id="a_test_debug_rays_8h_html"><div class="ttname"><a href="_test_debug_rays_8h.html">TestDebugRays.h</a></div></div>
-<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_debug_ray_builder_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_debug_ray_builder.html">moonray::pbr::DebugRayBuilder</a></div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8h_source.html#l00282">DebugRay.h:283</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_debug_ray_builder_html_acecdc0662b660b8f4273e46db4ef9aa4"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_debug_ray_builder.html#acecdc0662b660b8f4273e46db4ef9aa4">moonray::pbr::DebugRayBuilder::exportDatabase</a></div><div class="ttdeci">bool exportDatabase(DebugRayDatabase *dst) const</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8cc_source.html#l00488">DebugRay.cc:488</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_debug_ray_builder_html_af95f9e7f167aff4f1f1456b818108c3e"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_debug_ray_builder.html#af95f9e7f167aff4f1f1456b818108c3e">moonray::pbr::DebugRayBuilder::build</a></div><div class="ttdeci">bool build(unsigned width, unsigned height, std::vector&lt; DebugRayRecorder * &gt; const &amp;recorders)</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8cc_source.html#l00277">DebugRay.cc:277</a></div></div>
@@ -409,6 +424,8 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_debug_rays_html_a2aa31fe1f5d5b7abac542a5549b4ad39"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a2aa31fe1f5d5b7abac542a5549b4ad39">moonray::pbr::TestDebugRays::testPrimaryRays</a></div><div class="ttdeci">void testPrimaryRays()</div><div class="ttdef"><b>Definition:</b> <a href="_test_debug_rays_8cc_source.html#l00095">TestDebugRays.cc:95</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_debug_rays_html_a60da124d4955cbcebcb455442fb71704"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a60da124d4955cbcebcb455442fb71704">moonray::pbr::TestDebugRays::testSortOrder</a></div><div class="ttdeci">void testSortOrder()</div><div class="ttdef"><b>Definition:</b> <a href="_test_debug_rays_8cc_source.html#l00071">TestDebugRays.cc:71</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_debug_rays_html_a99edd991a6d8043259abf30fe9cd2a69"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a99edd991a6d8043259abf30fe9cd2a69">moonray::pbr::TestDebugRays::tearDown</a></div><div class="ttdeci">void tearDown()</div><div class="ttdef"><b>Definition:</b> <a href="_test_debug_rays_8cc_source.html#l00064">TestDebugRays.cc:64</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_debug_rays_html_a9fe6f0662e8b7e5ccd3da475f8e29850"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_debug_rays.html#a9fe6f0662e8b7e5ccd3da475f8e29850">moonray::pbr::TestDebugRays::mDb</a></div><div class="ttdeci">DebugRayDatabase * mDb</div><div class="ttdef"><b>Definition:</b> <a href="_test_debug_rays_8h_source.html#l00040">TestDebugRays.h:40</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_debug_rays_html_ab308a97954e7abb50bb89bec9b5aefb7"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_debug_rays.html#ab308a97954e7abb50bb89bec9b5aefb7">moonray::pbr::TestDebugRays::populateRecorder</a></div><div class="ttdeci">void populateRecorder(DebugRayRecorder *recorder)</div><div class="ttdef"><b>Definition:</b> <a href="_test_debug_rays_8cc_source.html#l00280">TestDebugRays.cc:280</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_debug_rays_html_abb4245e949ba3cda31ba120551cab438"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_debug_rays.html#abb4245e949ba3cda31ba120551cab438">moonray::pbr::TestDebugRays::testSerialization</a></div><div class="ttdeci">void testSerialization()</div><div class="ttdef"><b>Definition:</b> <a href="_test_debug_rays_8cc_source.html#l00248">TestDebugRays.cc:248</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_debug_rays_html_abe6ba282b853e7db808e0de9e66969f5"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_debug_rays.html#abe6ba282b853e7db808e0de9e66969f5">moonray::pbr::TestDebugRays::setUp</a></div><div class="ttdeci">void setUp()</div><div class="ttdef"><b>Definition:</b> <a href="_test_debug_rays_8cc_source.html#l00025">TestDebugRays.cc:25</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1util_1_1_static_vector_html"><div class="ttname"><a href="classmoonray_1_1util_1_1_static_vector.html">moonray::util::StaticVector</a></div><div class="ttdef"><b>Definition:</b> <a href="lib_2common_2mcrt__util_2_static_vector_8h_source.html#l00025">StaticVector.h:26</a></div></div>
@@ -429,9 +446,13 @@ $(function() {
 <div class="ttc" id="astructmoonray_1_1pbr_1_1_debug_ray_vertex_html_a3a69572d405c66a69d4d8895532e9b36"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_debug_ray_vertex.html#a3a69572d405c66a69d4d8895532e9b36">moonray::pbr::DebugRayVertex::mUserTags</a></div><div class="ttdeci">uint32_t mUserTags</div><div class="ttdoc">bitfield of user specified tags</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8h_source.html#l00119">DebugRay.h:119</a></div></div>
 <div class="ttc" id="astructmoonray_1_1pbr_1_1_debug_ray_vertex_html_af035074f1eebdd8ce7251beea47a0d07"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_debug_ray_vertex.html#af035074f1eebdd8ce7251beea47a0d07">moonray::pbr::DebugRayVertex::mScreenX</a></div><div class="ttdeci">uint16_t mScreenX</div><div class="ttdoc">if this is -1 then we are a dummy ray (record and build time only)</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8h_source.html#l00132">DebugRay.h:132</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_e9cc9f5f9c03e3b4eff73c33091953ed.html">unittest</a></li><li class="navelem"><a class="el" href="_test_debug_rays_8cc.html">TestDebugRays.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

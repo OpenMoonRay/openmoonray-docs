@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_3ffafe8d4194a26e471fc283bfe39627.html">shading</a></li><li class="navelem"><a class="el" href="dir_709fee47e84824330f43d698c4e844e8.html">ispc</a></li><li class="navelem"><a class="el" href="dir_47a8b3e056c505ee4a46d323ed180f88.html">unittest</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_test_primitive_attribute_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">TestPrimitiveAttribute.cc</div></div>
 </div><!--header-->
@@ -51,8 +67,10 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2016-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file TestPrimitiveAttribute.cc</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Brian Green</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"></span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_test_primitive_attribute_8h.html">TestPrimitiveAttribute.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;rendering/shading/ispc/unittest/TestPrimitiveAttribute_ispc_stubs.h&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -66,43 +84,43 @@ $(function() {
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacemoonray_1_1geom.html">moonray::geom</a>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">using </span><a class="code hl_class" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html">moonray::shading::unittest::TestPrimitiveAttribute</a>;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html">   22</a></span><span class="keyword">namespace </span>{</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">size_t</span> keysPerStride = 7;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keywordtype">size_t</span> nStrides = 4;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#abcc4ab5fdb82ef5ed8fb01660ae55465">   24</a></span><span class="keywordtype">size_t</span> <a class="code hl_variable" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#abcc4ab5fdb82ef5ed8fb01660ae55465">keysPerStride</a> = 7;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#a31738bb5c2869957ac4413ed3f588186">   25</a></span><span class="keywordtype">size_t</span> <a class="code hl_variable" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#a31738bb5c2869957ac4413ed3f588186">nStrides</a> = 4;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">inline</span> <span class="keywordtype">char</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>getBool(<span class="keywordtype">size_t</span> stride, <span class="keywordtype">size_t</span> lane)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#aaba51f998ba7a71b60d9ffa2ab0260b1">   28</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#aaba51f998ba7a71b60d9ffa2ab0260b1">getBool</a>(<span class="keywordtype">size_t</span> stride, <span class="keywordtype">size_t</span> lane)</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">return</span> (stride + lane) % 2;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">inline</span> <span class="keywordtype">int</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>getInt(<span class="keywordtype">size_t</span> stride, <span class="keywordtype">size_t</span> lane)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#a3b10a063d4afffa33da7afea6c5bd2bc">   34</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#a3b10a063d4afffa33da7afea6c5bd2bc">getInt</a>(<span class="keywordtype">size_t</span> stride, <span class="keywordtype">size_t</span> lane)</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">return</span> stride + lane;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">inline</span> <span class="keywordtype">float</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>getFloat(<span class="keywordtype">size_t</span> stride, <span class="keywordtype">size_t</span> lane)</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#a7e00ceddc47b0d4c3ce1dfd6d16454df">   40</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#a7e00ceddc47b0d4c3ce1dfd6d16454df">getFloat</a>(<span class="keywordtype">size_t</span> stride, <span class="keywordtype">size_t</span> lane)</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> stride - lane;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">inline</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>getVec2f(<span class="keywordtype">size_t</span> stride, <span class="keywordtype">size_t</span> lane)</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#a29d30392f2019cc8fe02630bbc85969c">   46</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#a29d30392f2019cc8fe02630bbc85969c">getVec2f</a>(<span class="keywordtype">size_t</span> stride, <span class="keywordtype">size_t</span> lane)</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a>(stride + lane, stride + lane + 1);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">inline</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>getVec3f(<span class="keywordtype">size_t</span> stride, <span class="keywordtype">size_t</span> lane)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#ab99c81f7d42d1e2a9e7bbb0048c5d08d">   52</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#ab99c81f7d42d1e2a9e7bbb0048c5d08d">getVec3f</a>(<span class="keywordtype">size_t</span> stride, <span class="keywordtype">size_t</span> lane)</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(stride + lane, stride + lane + 1, stride + lane + 2);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">inline</span> Mat4f</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>getMat4f(<span class="keywordtype">size_t</span> stride, <span class="keywordtype">size_t</span> lane)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#ae2a641f3b232b1db829845c6fa5c7419">   58</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#ae2a641f3b232b1db829845c6fa5c7419">getMat4f</a>(<span class="keywordtype">size_t</span> stride, <span class="keywordtype">size_t</span> lane)</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> Mat4f(stride + lane + 0, stride + lane + 1, stride + lane + 2, stride + lane + 3,</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                 stride + lane + 4, stride + lane + 5, stride + lane + 6, stride + lane + 7,</div>
@@ -111,7 +129,7 @@ $(function() {
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">inline</span> Color</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>getColor(<span class="keywordtype">size_t</span> stride, <span class="keywordtype">size_t</span> lane)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#a421b0486a55b63d2d128ca19d691628e">   67</a></span><a class="code hl_function" href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#a421b0486a55b63d2d128ca19d691628e">getColor</a>(<span class="keywordtype">size_t</span> stride, <span class="keywordtype">size_t</span> lane)</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>{</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">return</span> Color(stride - lane, stride - lane + 1, stride - lane + 2);</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
@@ -122,8 +140,8 @@ $(function() {
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a343362da4799d684192f68151f48d4de">   75</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a343362da4799d684192f68151f48d4de">TestPrimitiveAttribute::setUp</a>()</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>{</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_class" href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html">mcrt_common::ThreadLocalState</a> *tls = <a class="code hl_function" href="namespacemoonray_1_1mcrt__common.html#a3ea8e2cebc04d6a7ebadf24a9330c399">mcrt_common::getFrameUpdateTLS</a>();</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    mTls = MNRY_VERIFY(tls-&gt;<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html#a63a64d55651b28d2eb106af04eaca73f">mShadingTls</a>.get());</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    scene_rdl2::alloc::Arena *arena = mTls-&gt;mArena;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a8349f529ce961ae786452675a2f4c30f">mTls</a> = MNRY_VERIFY(tls-&gt;<a class="code hl_variable" href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html#a63a64d55651b28d2eb106af04eaca73f">mShadingTls</a>.get());</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    scene_rdl2::alloc::Arena *arena = <a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a8349f529ce961ae786452675a2f4c30f">mTls</a>-&gt;mArena;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> nkeys = keysPerStride * nStrides;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
@@ -136,7 +154,7 @@ $(function() {
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="comment">//   Mat4f: stored as Mat4f, no padding</span></div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="comment">//   Color: stored as Color, no padding</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">int</span> *offsets = arena-&gt;allocArray&lt;<span class="keywordtype">int</span>&gt;(nkeys);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    mTls-&gt;mAttributeOffsets = offsets;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a8349f529ce961ae786452675a2f4c30f">mTls</a>-&gt;mAttributeOffsets = offsets;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">const</span> <span class="keywordtype">size_t</span> strideSize = <span class="keyword">sizeof</span>(int32_t) + <span class="keyword">sizeof</span>(int32_t) + <span class="keyword">sizeof</span>(float) +</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                              <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a>) + <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>) + <span class="keyword">sizeof</span>(Mat4f) + <span class="keyword">sizeof</span>(Color);</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
@@ -159,8 +177,8 @@ $(function() {
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="comment">// mimics Address64_set from Util.isph</span></div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        intptr_t addr = (intptr_t) data[lane];</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        mStatev.mData.mHigh[lane] = (addr &gt;&gt; 32);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        mStatev.mData.mLow[lane] = (addr &amp; 0xffffffff);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#afcec4f1583b7998f8d25e3786c4a15c5">mStatev</a>.mData.mHigh[lane] = (addr &gt;&gt; 32);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#afcec4f1583b7998f8d25e3786c4a15c5">mStatev</a>.mData.mLow[lane] = (addr &amp; 0xffffffff);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> stride = 0; stride &lt; nStrides; ++stride) {</div>
@@ -189,7 +207,7 @@ $(function() {
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#ae3eef59f40ec93407e984584e6936a8d">  143</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#ae3eef59f40ec93407e984584e6936a8d">TestPrimitiveAttribute::testGetBoolAttribute</a>()</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>{</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    ispc::ShadingTLState *tls = <span class="keyword">reinterpret_cast&lt;</span>ispc::ShadingTLState *<span class="keyword">&gt;</span>(mTls);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    ispc::ShadingTLState *tls = <span class="keyword">reinterpret_cast&lt;</span>ispc::ShadingTLState *<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a8349f529ce961ae786452675a2f4c30f">mTls</a>);</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> uniKey = 0;</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordtype">int</span> varKey[VLEN];</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> lane = 0; lane &lt; VLEN; ++lane) {</div>
@@ -197,7 +215,7 @@ $(function() {
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    }</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    int8_t uniResult[VLEN];</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    int8_t varResult[VLEN];</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    ispc::testGetBoolAttribute(tls, &amp;mStatev, uniKey, varKey, uniResult, varResult);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    ispc::testGetBoolAttribute(tls, &amp;<a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#afcec4f1583b7998f8d25e3786c4a15c5">mStatev</a>, uniKey, varKey, uniResult, varResult);</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> lane = 0; lane &lt; VLEN; ++lane) {</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        CPPUNIT_ASSERT(uniResult[lane] == getBool(0, lane));</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    }</div>
@@ -210,7 +228,7 @@ $(function() {
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a119983c4495e4221efa5772dde61547b">  164</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a119983c4495e4221efa5772dde61547b">TestPrimitiveAttribute::testGetIntAttribute</a>()</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>{</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    ispc::ShadingTLState *tls = <span class="keyword">reinterpret_cast&lt;</span>ispc::ShadingTLState *<span class="keyword">&gt;</span>(mTls);</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    ispc::ShadingTLState *tls = <span class="keyword">reinterpret_cast&lt;</span>ispc::ShadingTLState *<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a8349f529ce961ae786452675a2f4c30f">mTls</a>);</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> uniKey = 1;</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordtype">int</span> varKey[VLEN];</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> lane = 0; lane &lt; VLEN; ++lane) {</div>
@@ -218,7 +236,7 @@ $(function() {
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    }</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    int32_t uniResult[VLEN];</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    int32_t varResult[VLEN];</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    ispc::testGetIntAttribute(tls, &amp;mStatev, uniKey, varKey, uniResult, varResult);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    ispc::testGetIntAttribute(tls, &amp;<a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#afcec4f1583b7998f8d25e3786c4a15c5">mStatev</a>, uniKey, varKey, uniResult, varResult);</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> lane = 0; lane &lt; VLEN; ++lane) {</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        CPPUNIT_ASSERT(uniResult[lane] == getInt(0, lane));</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    }</div>
@@ -231,7 +249,7 @@ $(function() {
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#af44966283d72c966a7c0bed7e8ed117e">  185</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#af44966283d72c966a7c0bed7e8ed117e">TestPrimitiveAttribute::testGetFloatAttribute</a>()</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>{</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    ispc::ShadingTLState *tls = <span class="keyword">reinterpret_cast&lt;</span>ispc::ShadingTLState *<span class="keyword">&gt;</span>(mTls);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    ispc::ShadingTLState *tls = <span class="keyword">reinterpret_cast&lt;</span>ispc::ShadingTLState *<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a8349f529ce961ae786452675a2f4c30f">mTls</a>);</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> uniKey = 2;</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keywordtype">int</span> varKey[VLEN];</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> lane = 0; lane &lt; VLEN; ++lane) {</div>
@@ -239,7 +257,7 @@ $(function() {
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    }</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordtype">float</span> uniResult[VLEN];</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keywordtype">float</span> varResult[VLEN];</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    ispc::testGetFloatAttribute(tls, &amp;mStatev, uniKey, varKey, uniResult, varResult);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    ispc::testGetFloatAttribute(tls, &amp;<a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#afcec4f1583b7998f8d25e3786c4a15c5">mStatev</a>, uniKey, varKey, uniResult, varResult);</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> lane = 0; lane &lt; VLEN; ++lane) {</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        CPPUNIT_ASSERT(uniResult[lane] == getFloat(0, lane));</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    }</div>
@@ -252,7 +270,7 @@ $(function() {
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a294b223303bd956deebd1c077d163fd0">  206</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a294b223303bd956deebd1c077d163fd0">TestPrimitiveAttribute::testGetVec2fAttribute</a>()</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>{</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    ispc::ShadingTLState *tls = <span class="keyword">reinterpret_cast&lt;</span>ispc::ShadingTLState *<span class="keyword">&gt;</span>(mTls);</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    ispc::ShadingTLState *tls = <span class="keyword">reinterpret_cast&lt;</span>ispc::ShadingTLState *<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a8349f529ce961ae786452675a2f4c30f">mTls</a>);</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> uniKey = 3;</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="keywordtype">int</span> varKey[VLEN];</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> lane = 0; lane &lt; VLEN; ++lane) {</div>
@@ -262,7 +280,7 @@ $(function() {
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <span class="keywordtype">float</span> uniResultY[VLEN];</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <span class="keywordtype">float</span> varResultX[VLEN];</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <span class="keywordtype">float</span> varResultY[VLEN];</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    ispc::testGetVec2fAttribute(tls, &amp;mStatev, uniKey, varKey,</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    ispc::testGetVec2fAttribute(tls, &amp;<a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#afcec4f1583b7998f8d25e3786c4a15c5">mStatev</a>, uniKey, varKey,</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                                uniResultX, uniResultY,</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                                varResultX, varResultY);</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> lane = 0; lane &lt; VLEN; ++lane) {</div>
@@ -281,7 +299,7 @@ $(function() {
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a811658775391cafe77571e756ba166ec">  235</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a811658775391cafe77571e756ba166ec">TestPrimitiveAttribute::testGetVec3fAttribute</a>()</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>{</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    ispc::ShadingTLState *tls = <span class="keyword">reinterpret_cast&lt;</span>ispc::ShadingTLState *<span class="keyword">&gt;</span>(mTls);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    ispc::ShadingTLState *tls = <span class="keyword">reinterpret_cast&lt;</span>ispc::ShadingTLState *<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a8349f529ce961ae786452675a2f4c30f">mTls</a>);</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> uniKey = 4;</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keywordtype">int</span> varKey[VLEN];</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> lane = 0; lane &lt; VLEN; ++lane) {</div>
@@ -293,7 +311,7 @@ $(function() {
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keywordtype">float</span> varResultX[VLEN];</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="keywordtype">float</span> varResultY[VLEN];</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordtype">float</span> varResultZ[VLEN];</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    ispc::testGetVec3fAttribute(tls, &amp;mStatev, uniKey, varKey,</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    ispc::testGetVec3fAttribute(tls, &amp;<a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#afcec4f1583b7998f8d25e3786c4a15c5">mStatev</a>, uniKey, varKey,</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                                uniResultX, uniResultY, uniResultZ,</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>                                varResultX, varResultY, varResultZ);</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> lane = 0; lane &lt; VLEN; ++lane) {</div>
@@ -314,7 +332,7 @@ $(function() {
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a5b934a727f6590a67b78769dfdff95b7">  268</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a5b934a727f6590a67b78769dfdff95b7">TestPrimitiveAttribute::testGetMat4fAttribute</a>()</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>{</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    ispc::ShadingTLState *tls = <span class="keyword">reinterpret_cast&lt;</span>ispc::ShadingTLState *<span class="keyword">&gt;</span>(mTls);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    ispc::ShadingTLState *tls = <span class="keyword">reinterpret_cast&lt;</span>ispc::ShadingTLState *<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a8349f529ce961ae786452675a2f4c30f">mTls</a>);</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> uniKey = 5;</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <span class="keywordtype">int</span> varKey[VLEN];</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> lane = 0; lane &lt; VLEN; ++lane) {</div>
@@ -354,7 +372,7 @@ $(function() {
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="keywordtype">float</span> varResultVWZ[VLEN];</div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    <span class="keywordtype">float</span> varResultVWW[VLEN];</div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    ispc::testGetMat4fAttribute(tls, &amp;mStatev, uniKey, varKey,</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    ispc::testGetMat4fAttribute(tls, &amp;<a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#afcec4f1583b7998f8d25e3786c4a15c5">mStatev</a>, uniKey, varKey,</div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>                                uniResultVXX, uniResultVXY, uniResultVXZ, uniResultVXW,</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>                                uniResultVYX, uniResultVYY, uniResultVYZ, uniResultVYW,</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>                                uniResultVZX, uniResultVZY, uniResultVZZ, uniResultVZW,</div>
@@ -408,7 +426,7 @@ $(function() {
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="keywordtype">void</span></div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a5f558eeee3697e433c47e22c42487801">  362</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a5f558eeee3697e433c47e22c42487801">TestPrimitiveAttribute::testGetColorAttribute</a>()</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>{</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    ispc::ShadingTLState *tls = <span class="keyword">reinterpret_cast&lt;</span>ispc::ShadingTLState *<span class="keyword">&gt;</span>(mTls);</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    ispc::ShadingTLState *tls = <span class="keyword">reinterpret_cast&lt;</span>ispc::ShadingTLState *<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a8349f529ce961ae786452675a2f4c30f">mTls</a>);</div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> uniKey = 6;</div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    <span class="keywordtype">int</span> varKey[VLEN];</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> lane = 0; lane &lt; VLEN; ++lane) {</div>
@@ -420,7 +438,7 @@ $(function() {
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    <span class="keywordtype">float</span> varResultR[VLEN];</div>
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    <span class="keywordtype">float</span> varResultG[VLEN];</div>
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    <span class="keywordtype">float</span> varResultB[VLEN];</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    ispc::testGetColorAttribute(tls, &amp;mStatev, uniKey, varKey,</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    ispc::testGetColorAttribute(tls, &amp;<a class="code hl_variable" href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#afcec4f1583b7998f8d25e3786c4a15c5">mStatev</a>, uniKey, varKey,</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>                                uniResultR, uniResultG, uniResultB,</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>                                varResultR, varResultG, varResultB);</div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> lane = 0; lane &lt; VLEN; ++lane) {</div>
@@ -452,9 +470,20 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute_html_a5b934a727f6590a67b78769dfdff95b7"><div class="ttname"><a href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a5b934a727f6590a67b78769dfdff95b7">moonray::shading::unittest::TestPrimitiveAttribute::testGetMat4fAttribute</a></div><div class="ttdeci">void testGetMat4fAttribute()</div><div class="ttdef"><b>Definition:</b> <a href="_test_primitive_attribute_8cc_source.html#l00268">TestPrimitiveAttribute.cc:268</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute_html_a5f558eeee3697e433c47e22c42487801"><div class="ttname"><a href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a5f558eeee3697e433c47e22c42487801">moonray::shading::unittest::TestPrimitiveAttribute::testGetColorAttribute</a></div><div class="ttdeci">void testGetColorAttribute()</div><div class="ttdef"><b>Definition:</b> <a href="_test_primitive_attribute_8cc_source.html#l00362">TestPrimitiveAttribute.cc:362</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute_html_a811658775391cafe77571e756ba166ec"><div class="ttname"><a href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a811658775391cafe77571e756ba166ec">moonray::shading::unittest::TestPrimitiveAttribute::testGetVec3fAttribute</a></div><div class="ttdeci">void testGetVec3fAttribute()</div><div class="ttdef"><b>Definition:</b> <a href="_test_primitive_attribute_8cc_source.html#l00235">TestPrimitiveAttribute.cc:235</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute_html_a8349f529ce961ae786452675a2f4c30f"><div class="ttname"><a href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#a8349f529ce961ae786452675a2f4c30f">moonray::shading::unittest::TestPrimitiveAttribute::mTls</a></div><div class="ttdeci">shading::TLState * mTls</div><div class="ttdef"><b>Definition:</b> <a href="_test_primitive_attribute_8h_source.html#l00045">TestPrimitiveAttribute.h:45</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute_html_ae3eef59f40ec93407e984584e6936a8d"><div class="ttname"><a href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#ae3eef59f40ec93407e984584e6936a8d">moonray::shading::unittest::TestPrimitiveAttribute::testGetBoolAttribute</a></div><div class="ttdeci">void testGetBoolAttribute()</div><div class="ttdef"><b>Definition:</b> <a href="_test_primitive_attribute_8cc_source.html#l00143">TestPrimitiveAttribute.cc:143</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute_html_af44966283d72c966a7c0bed7e8ed117e"><div class="ttname"><a href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#af44966283d72c966a7c0bed7e8ed117e">moonray::shading::unittest::TestPrimitiveAttribute::testGetFloatAttribute</a></div><div class="ttdeci">void testGetFloatAttribute()</div><div class="ttdef"><b>Definition:</b> <a href="_test_primitive_attribute_8cc_source.html#l00185">TestPrimitiveAttribute.cc:185</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute_html_afc1276ff389ad8a8a54f6c2b2e803b08"><div class="ttname"><a href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#afc1276ff389ad8a8a54f6c2b2e803b08">moonray::shading::unittest::TestPrimitiveAttribute::tearDown</a></div><div class="ttdeci">void tearDown()</div><div class="ttdef"><b>Definition:</b> <a href="_test_primitive_attribute_8cc_source.html#l00138">TestPrimitiveAttribute.cc:138</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute_html_afcec4f1583b7998f8d25e3786c4a15c5"><div class="ttname"><a href="classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html#afcec4f1583b7998f8d25e3786c4a15c5">moonray::shading::unittest::TestPrimitiveAttribute::mStatev</a></div><div class="ttdeci">Statev mStatev</div><div class="ttdef"><b>Definition:</b> <a href="_test_primitive_attribute_8h_source.html#l00044">TestPrimitiveAttribute.h:44</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_test_primitive_attribute_8cc_03_html_a29d30392f2019cc8fe02630bbc85969c"><div class="ttname"><a href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#a29d30392f2019cc8fe02630bbc85969c">anonymous_namespace{TestPrimitiveAttribute.cc}::getVec2f</a></div><div class="ttdeci">Vec2f getVec2f(size_t stride, size_t lane)</div><div class="ttdef"><b>Definition:</b> <a href="_test_primitive_attribute_8cc_source.html#l00046">TestPrimitiveAttribute.cc:46</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_test_primitive_attribute_8cc_03_html_a31738bb5c2869957ac4413ed3f588186"><div class="ttname"><a href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#a31738bb5c2869957ac4413ed3f588186">anonymous_namespace{TestPrimitiveAttribute.cc}::nStrides</a></div><div class="ttdeci">size_t nStrides</div><div class="ttdef"><b>Definition:</b> <a href="_test_primitive_attribute_8cc_source.html#l00025">TestPrimitiveAttribute.cc:25</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_test_primitive_attribute_8cc_03_html_a3b10a063d4afffa33da7afea6c5bd2bc"><div class="ttname"><a href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#a3b10a063d4afffa33da7afea6c5bd2bc">anonymous_namespace{TestPrimitiveAttribute.cc}::getInt</a></div><div class="ttdeci">int getInt(size_t stride, size_t lane)</div><div class="ttdef"><b>Definition:</b> <a href="_test_primitive_attribute_8cc_source.html#l00034">TestPrimitiveAttribute.cc:34</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_test_primitive_attribute_8cc_03_html_a421b0486a55b63d2d128ca19d691628e"><div class="ttname"><a href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#a421b0486a55b63d2d128ca19d691628e">anonymous_namespace{TestPrimitiveAttribute.cc}::getColor</a></div><div class="ttdeci">Color getColor(size_t stride, size_t lane)</div><div class="ttdef"><b>Definition:</b> <a href="_test_primitive_attribute_8cc_source.html#l00067">TestPrimitiveAttribute.cc:67</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_test_primitive_attribute_8cc_03_html_a7e00ceddc47b0d4c3ce1dfd6d16454df"><div class="ttname"><a href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#a7e00ceddc47b0d4c3ce1dfd6d16454df">anonymous_namespace{TestPrimitiveAttribute.cc}::getFloat</a></div><div class="ttdeci">float getFloat(size_t stride, size_t lane)</div><div class="ttdef"><b>Definition:</b> <a href="_test_primitive_attribute_8cc_source.html#l00040">TestPrimitiveAttribute.cc:40</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_test_primitive_attribute_8cc_03_html_aaba51f998ba7a71b60d9ffa2ab0260b1"><div class="ttname"><a href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#aaba51f998ba7a71b60d9ffa2ab0260b1">anonymous_namespace{TestPrimitiveAttribute.cc}::getBool</a></div><div class="ttdeci">char getBool(size_t stride, size_t lane)</div><div class="ttdef"><b>Definition:</b> <a href="_test_primitive_attribute_8cc_source.html#l00028">TestPrimitiveAttribute.cc:28</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_test_primitive_attribute_8cc_03_html_ab99c81f7d42d1e2a9e7bbb0048c5d08d"><div class="ttname"><a href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#ab99c81f7d42d1e2a9e7bbb0048c5d08d">anonymous_namespace{TestPrimitiveAttribute.cc}::getVec3f</a></div><div class="ttdeci">Vec3f getVec3f(size_t stride, size_t lane)</div><div class="ttdef"><b>Definition:</b> <a href="_test_primitive_attribute_8cc_source.html#l00052">TestPrimitiveAttribute.cc:52</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_test_primitive_attribute_8cc_03_html_abcc4ab5fdb82ef5ed8fb01660ae55465"><div class="ttname"><a href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#abcc4ab5fdb82ef5ed8fb01660ae55465">anonymous_namespace{TestPrimitiveAttribute.cc}::keysPerStride</a></div><div class="ttdeci">size_t keysPerStride</div><div class="ttdef"><b>Definition:</b> <a href="_test_primitive_attribute_8cc_source.html#l00024">TestPrimitiveAttribute.cc:24</a></div></div>
+<div class="ttc" id="anamespaceanonymous__namespace_02_test_primitive_attribute_8cc_03_html_ae2a641f3b232b1db829845c6fa5c7419"><div class="ttname"><a href="namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#ae2a641f3b232b1db829845c6fa5c7419">anonymous_namespace{TestPrimitiveAttribute.cc}::getMat4f</a></div><div class="ttdeci">Mat4f getMat4f(size_t stride, size_t lane)</div><div class="ttdef"><b>Definition:</b> <a href="_test_primitive_attribute_8cc_source.html#l00058">TestPrimitiveAttribute.cc:58</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_html"><div class="ttname"><a href="namespacemoonray_1_1geom.html">moonray::geom</a></div><div class="ttdef"><b>Definition:</b> <a href="_rdl_curve_geometry_8cc_source.html#l00084">RdlCurveGeometry.cc:84</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_html_a8ff976ca38d834d434f1d00f2a03359b"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">moonray::geom::Vec2f</a></div><div class="ttdeci">scene_rdl2::math::Vec2f Vec2f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00038">Types.h:38</a></div></div>
@@ -462,9 +491,13 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1math_html"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html">scene_rdl2::math</a></div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8h_source.html#l00017">InputBuffer.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ffbcf3a8cac23adad179e74a09117904.html">shading</a></li><li class="navelem"><a class="el" href="dir_ec205a3d74558b843e3f8ac96801212b.html">ispc</a></li><li class="navelem"><a class="el" href="dir_b0130e6f15eeb285d727fd51a3167610.html">unittest</a></li><li class="navelem"><a class="el" href="_test_primitive_attribute_8cc.html">TestPrimitiveAttribute.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

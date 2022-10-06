@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,28 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html">SparseEmissionDistribution</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::geom::internal::SparseEmissionDistribution Class Reference</div></div>
 </div><!--header-->
@@ -89,6 +107,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4371f8b94e8ddccfa7fb3a5e219b0c8d inherit pub_methods_classmoonray_1_1geom_1_1internal_1_1_emission_distribution"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5869d79dd3a48950c740f745689b402b inherit pub_methods_classmoonray_1_1geom_1_1internal_1_1_emission_distribution"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution_1_1_transform.html">Transform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a5869d79dd3a48950c740f745689b402b">getTransform</a> () const</td></tr>
 <tr class="separator:a5869d79dd3a48950c740f745689b402b inherit pub_methods_classmoonray_1_1geom_1_1internal_1_1_emission_distribution"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a0b95054f4889fbfaf3c71111ae13d89c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#a0b95054f4889fbfaf3c71111ae13d89c">pdfDiscrete</a> (const scene_rdl2::math::Vec3i &amp;pos) const override</td></tr>
+<tr class="separator:a0b95054f4889fbfaf3c71111ae13d89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fbb5318060558292dd451e075878f83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#a5fbb5318060558292dd451e075878f83">indexTo3DCoord</a> (uint32_t index) const</td></tr>
+<tr class="separator:a5fbb5318060558292dd451e075878f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aa591a8fee1fc20f40efb0f1c72c4a280"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; uint32_t, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a></td></tr>
+<tr class="separator:aa591a8fee1fc20f40efb0f1c72c4a280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1553796da0ca09dd5e3fbfd7beae5b1c"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; uint32_t, uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#a1553796da0ca09dd5e3fbfd7beae5b1c">mOffsets</a></td></tr>
+<tr class="separator:a1553796da0ca09dd5e3fbfd7beae5b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -145,7 +177,54 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_emission_distribution_8cc_source.html#l00145">145</a> of file <a class="el" href="_emission_distribution_8cc_source.html">EmissionDistribution.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  149</span>                                                 :</div>
+<div class="line"><span class="lineno">  150</span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a0508cf95f07c3fcc191b25661884bc13">EmissionDistribution</a>(res, distToRender, invUnitVolume)</div>
+<div class="line"><span class="lineno">  151</span>{</div>
+<div class="line"><span class="lineno">  152</span>    <span class="keywordtype">int</span> n = histogram.size();</div>
+<div class="line"><span class="lineno">  153</span>    <span class="keyword">auto</span> it = histogram.begin();</div>
+<div class="line"><span class="lineno">  154</span> </div>
+<div class="line"><span class="lineno">  155</span>    <span class="comment">// reset cdf</span></div>
+<div class="line"><span class="lineno">  156</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>.clear();</div>
+<div class="line"><span class="lineno">  157</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>.reserve(n + 1);</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>    <span class="comment">// reset offsets</span></div>
+<div class="line"><span class="lineno">  160</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#a1553796da0ca09dd5e3fbfd7beae5b1c">mOffsets</a>.clear();</div>
+<div class="line"><span class="lineno">  161</span> </div>
+<div class="line"><span class="lineno">  162</span>    <span class="comment">// first entry</span></div>
+<div class="line"><span class="lineno">  163</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#a1553796da0ca09dd5e3fbfd7beae5b1c">mOffsets</a>[it-&gt;first] = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>.size();</div>
+<div class="line"><span class="lineno">  164</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>.push_back({it-&gt;first, 0.f});</div>
+<div class="line"><span class="lineno">  165</span> </div>
+<div class="line"><span class="lineno">  166</span>    <span class="comment">// fill in cdf and offsets</span></div>
+<div class="line"><span class="lineno">  167</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; n; ++i, ++it) {</div>
+<div class="line"><span class="lineno">  168</span>        <span class="keyword">const</span> <span class="keyword">auto</span> nextIt = std::next(it);</div>
+<div class="line"><span class="lineno">  169</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#a1553796da0ca09dd5e3fbfd7beae5b1c">mOffsets</a>[nextIt-&gt;first] = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>.size();</div>
+<div class="line"><span class="lineno">  170</span>        std::pair&lt;uint32_t, float&gt; cdf = {nextIt-&gt;first, <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>[i-1].second + it-&gt;second / n};</div>
+<div class="line"><span class="lineno">  171</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>.push_back(cdf);</div>
+<div class="line"><span class="lineno">  172</span>    }</div>
+<div class="line"><span class="lineno">  173</span> </div>
+<div class="line"><span class="lineno">  174</span>    <span class="comment">// last entry has a dummy offset</span></div>
+<div class="line"><span class="lineno">  175</span>    uint32_t dummyOffset = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>[n-1].first + 1;</div>
+<div class="line"><span class="lineno">  176</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#a1553796da0ca09dd5e3fbfd7beae5b1c">mOffsets</a>[dummyOffset] = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>.size();</div>
+<div class="line"><span class="lineno">  177</span>    std::pair&lt;uint32_t, float&gt; cdf = {dummyOffset, <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>[n-1].second + it-&gt;second / n};</div>
+<div class="line"><span class="lineno">  178</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>.push_back(cdf);</div>
+<div class="line"><span class="lineno">  179</span> </div>
+<div class="line"><span class="lineno">  180</span>    <span class="comment">// normalize cdf</span></div>
+<div class="line"><span class="lineno">  181</span>    <span class="keywordtype">float</span> finalSum = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>[n].second;</div>
+<div class="line"><span class="lineno">  182</span>    <span class="keywordflow">if</span> (finalSum == 0) {</div>
+<div class="line"><span class="lineno">  183</span>        <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><span class="lineno">  184</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; cdf : <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>) {</div>
+<div class="line"><span class="lineno">  185</span>            cdf.second = float(i++) / float(n);</div>
+<div class="line"><span class="lineno">  186</span>        }</div>
+<div class="line"><span class="lineno">  187</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  188</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; cdf : <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>) {</div>
+<div class="line"><span class="lineno">  189</span>            cdf.second /= finalSum;</div>
+<div class="line"><span class="lineno">  190</span>        }</div>
+<div class="line"><span class="lineno">  191</span>    }</div>
+<div class="line"><span class="lineno">  192</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_emission_distribution_html_a0508cf95f07c3fcc191b25661884bc13"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a0508cf95f07c3fcc191b25661884bc13">moonray::geom::internal::EmissionDistribution::EmissionDistribution</a></div><div class="ttdeci">EmissionDistribution(const scene_rdl2::math::Vec3i &amp;res, const scene_rdl2::math::Mat4f distToRender[2], float invUnitVolume)</div><div class="ttdef"><b>Definition:</b> <a href="_emission_distribution_8h_source.html#l00056">EmissionDistribution.h:56</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution_html_a1553796da0ca09dd5e3fbfd7beae5b1c"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#a1553796da0ca09dd5e3fbfd7beae5b1c">moonray::geom::internal::SparseEmissionDistribution::mOffsets</a></div><div class="ttdeci">std::unordered_map&lt; uint32_t, uint32_t &gt; mOffsets</div><div class="ttdef"><b>Definition:</b> <a href="_emission_distribution_8h_source.html#l00205">EmissionDistribution.h:205</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution_html_aa591a8fee1fc20f40efb0f1c72c4a280"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">moonray::geom::internal::SparseEmissionDistribution::mCdf</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; uint32_t, float &gt; &gt; mCdf</div><div class="ttdef"><b>Definition:</b> <a href="_emission_distribution_8h_source.html#l00202">EmissionDistribution.h:202</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a652e1db5b94ef270567a0cb5dde9cee0" name="a652e1db5b94ef270567a0cb5dde9cee0"></a>
@@ -200,7 +279,91 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a8dcf48d96317ce5910870eea6bc286b1">moonray::geom::internal::EmissionDistribution</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_emission_distribution_8h_source.html#l00180">180</a> of file <a class="el" href="_emission_distribution_8h_source.html">EmissionDistribution.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  181</span>    {</div>
+<div class="line"><span class="lineno">  182</span>        <span class="comment">// cdf size is histogram size + 1.</span></div>
+<div class="line"><span class="lineno">  183</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>.size() - 1;</div>
+<div class="line"><span class="lineno">  184</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5fbb5318060558292dd451e075878f83" name="a5fbb5318060558292dd451e075878f83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fbb5318060558292dd451e075878f83">&#9670;&#160;</a></span>indexTo3DCoord()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">finline <a class="el" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> moonray::geom::internal::SparseEmissionDistribution::indexTo3DCoord </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_emission_distribution_8cc_source.html#l00195">195</a> of file <a class="el" href="_emission_distribution_8cc_source.html">EmissionDistribution.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  196</span>{</div>
+<div class="line"><span class="lineno">  197</span>    <span class="keywordtype">int</span> z = index / (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#accbcd33d5735b52805a547ea403a011e">mRes</a>[0] * <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#accbcd33d5735b52805a547ea403a011e">mRes</a>[1]);</div>
+<div class="line"><span class="lineno">  198</span>    index = index % (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#accbcd33d5735b52805a547ea403a011e">mRes</a>[0] * <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#accbcd33d5735b52805a547ea403a011e">mRes</a>[1]);</div>
+<div class="line"><span class="lineno">  199</span>    <span class="keywordtype">int</span> y = index / <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#accbcd33d5735b52805a547ea403a011e">mRes</a>[0];</div>
+<div class="line"><span class="lineno">  200</span>    <span class="keywordtype">int</span> x = index % <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#accbcd33d5735b52805a547ea403a011e">mRes</a>[0];</div>
+<div class="line"><span class="lineno">  201</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(x, y, z);</div>
+<div class="line"><span class="lineno">  202</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_emission_distribution_html_accbcd33d5735b52805a547ea403a011e"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#accbcd33d5735b52805a547ea403a011e">moonray::geom::internal::EmissionDistribution::mRes</a></div><div class="ttdeci">scene_rdl2::math::Vec3i mRes</div><div class="ttdef"><b>Definition:</b> <a href="_emission_distribution_8h_source.html#l00099">EmissionDistribution.h:99</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0b95054f4889fbfaf3c71111ae13d89c" name="a0b95054f4889fbfaf3c71111ae13d89c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b95054f4889fbfaf3c71111ae13d89c">&#9670;&#160;</a></span>pdfDiscrete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::geom::internal::SparseEmissionDistribution::pdfDiscrete </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Vec3i &amp;&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a35032ef0162dbde3ffe5ebcffe4201c4">moonray::geom::internal::EmissionDistribution</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_emission_distribution_8cc_source.html#l00235">235</a> of file <a class="el" href="_emission_distribution_8cc_source.html">EmissionDistribution.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  236</span>{</div>
+<div class="line"><span class="lineno">  237</span>    <span class="comment">// Get index into 3D space</span></div>
+<div class="line"><span class="lineno">  238</span>    <span class="keywordtype">int</span> offset = pos[0] + pos[1] * <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#accbcd33d5735b52805a547ea403a011e">mRes</a>[0] + pos[2] * <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#accbcd33d5735b52805a547ea403a011e">mRes</a>[0] * <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#accbcd33d5735b52805a547ea403a011e">mRes</a>[1];</div>
+<div class="line"><span class="lineno">  239</span>    <span class="keyword">const</span> <span class="keyword">auto</span> it = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#a1553796da0ca09dd5e3fbfd7beae5b1c">mOffsets</a>.find(offset);</div>
+<div class="line"><span class="lineno">  240</span>    <span class="keywordflow">if</span> (it == <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#a1553796da0ca09dd5e3fbfd7beae5b1c">mOffsets</a>.end()) {</div>
+<div class="line"><span class="lineno">  241</span>        <span class="comment">// this position has no value;</span></div>
+<div class="line"><span class="lineno">  242</span>        <span class="keywordflow">return</span> 0.f;</div>
+<div class="line"><span class="lineno">  243</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  244</span>        <span class="comment">// get index into cdf</span></div>
+<div class="line"><span class="lineno">  245</span>        <span class="keywordtype">size_t</span> index = it-&gt;second;</div>
+<div class="line"><span class="lineno">  246</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>[index + 1].second - <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>[index].second;</div>
+<div class="line"><span class="lineno">  247</span>    }</div>
+<div class="line"><span class="lineno">  248</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2f333f7585cd59bf025d8cf620a9cefe" name="a2f333f7585cd59bf025d8cf620a9cefe"></a>
@@ -282,7 +445,13 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#ad0c725f80ac709bdcb28f6603be3851d">moonray::geom::internal::EmissionDistribution</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_emission_distribution_8cc_source.html#l00227">227</a> of file <a class="el" href="_emission_distribution_8cc_source.html">EmissionDistribution.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  229</span>{</div>
+<div class="line"><span class="lineno">  230</span>    wi = scene_rdl2::math::normalize(<a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#a2f333f7585cd59bf025d8cf620a9cefe">sample</a>(xform, u1, u2, u3, time) - p);</div>
+<div class="line"><span class="lineno">  231</span>    pdfWi = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a4371f8b94e8ddccfa7fb3a5e219b0c8d">pdf</a>(xform, p, wi, tEnd, time);</div>
+<div class="line"><span class="lineno">  232</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_emission_distribution_html_a4371f8b94e8ddccfa7fb3a5e219b0c8d"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a4371f8b94e8ddccfa7fb3a5e219b0c8d">moonray::geom::internal::EmissionDistribution::pdf</a></div><div class="ttdeci">float pdf(const Transform &amp;xform, const scene_rdl2::math::Vec3f &amp;pRender, const scene_rdl2::math::Vec3f &amp;wiRender, float &amp;tEnd, float time) const</div><div class="ttdef"><b>Definition:</b> <a href="_emission_distribution_8cc_source.html#l00018">EmissionDistribution.cc:18</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution_html_a2f333f7585cd59bf025d8cf620a9cefe"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#a2f333f7585cd59bf025d8cf620a9cefe">moonray::geom::internal::SparseEmissionDistribution::sample</a></div><div class="ttdeci">void sample(const Transform &amp;xform, const Vec3f &amp;p, float u1, float u2, float u3, Vec3f &amp;wi, float &amp;pdfWi, float &amp;tEnd, float time) const override</div><div class="ttdef"><b>Definition:</b> <a href="_emission_distribution_8cc_source.html#l00227">EmissionDistribution.cc:227</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a392d6177bcb08d27e46d37dc23199821" name="a392d6177bcb08d27e46d37dc23199821"></a>
@@ -340,6 +509,79 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a3dcbfd2378b1c34ef6972bf0c6d7150b">moonray::geom::internal::EmissionDistribution</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_emission_distribution_8cc_source.html#l00205">205</a> of file <a class="el" href="_emission_distribution_8cc_source.html">EmissionDistribution.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  206</span>{</div>
+<div class="line"><span class="lineno">  207</span>    <span class="comment">// get cdf sample</span></div>
+<div class="line"><span class="lineno">  208</span>    <span class="keywordtype">int</span> offset = <a class="code hl_function" href="namespacemoonray_1_1geom.html#a6cca8a7630ef4d8ce040e7c04ea0738f">findInterval</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>.size(),</div>
+<div class="line"><span class="lineno">  209</span>        [&amp;](<span class="keywordtype">int</span> index) {</div>
+<div class="line"><span class="lineno">  210</span>            return mCdf[index].second &lt;= u1;</div>
+<div class="line"><span class="lineno">  211</span>        });</div>
+<div class="line"><span class="lineno">  212</span>    <span class="keyword">const</span> std::pair&lt;uint32_t, float&gt;&amp; cdf0 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>[offset];</div>
+<div class="line"><span class="lineno">  213</span>    <span class="keyword">const</span> std::pair&lt;uint32_t, float&gt;&amp; cdf1 = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#aa591a8fee1fc20f40efb0f1c72c4a280">mCdf</a>[offset + 1];</div>
+<div class="line"><span class="lineno">  214</span> </div>
+<div class="line"><span class="lineno">  215</span>    <span class="comment">// transform offset into 3d coordinate</span></div>
+<div class="line"><span class="lineno">  216</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> pDist = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#a5fbb5318060558292dd451e075878f83">indexTo3DCoord</a>(cdf0.first);</div>
+<div class="line"><span class="lineno">  217</span>    <span class="keywordtype">float</span> uxRemapped = (u1 - cdf0.second) / (cdf1.second - cdf0.second);</div>
+<div class="line"><span class="lineno">  218</span>    pDist.x += uxRemapped;</div>
+<div class="line"><span class="lineno">  219</span>    pDist.y += u2;</div>
+<div class="line"><span class="lineno">  220</span>    pDist.z += u3;</div>
+<div class="line"><span class="lineno">  221</span> </div>
+<div class="line"><span class="lineno">  222</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a9a1ec777c7e863364fa1905e9d257ee8">mIsMotionBlurOn</a> ? scene_rdl2::math::transformPoint(xform.getDistToRender(time), pDist) :</div>
+<div class="line"><span class="lineno">  223</span>                             <a class="code hl_namespace" href="namespacescene__rdl2.html">scene_rdl2</a>::math::<a class="code hl_function" href="namespacemoonray_1_1geom_1_1internal.html#a472053acc157ccb20c9d68bf2fdaa824">transformPoint</a>(xform.getDistToRender()[0], pDist);</div>
+<div class="line"><span class="lineno">  224</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_emission_distribution_html_a9a1ec777c7e863364fa1905e9d257ee8"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_emission_distribution.html#a9a1ec777c7e863364fa1905e9d257ee8">moonray::geom::internal::EmissionDistribution::mIsMotionBlurOn</a></div><div class="ttdeci">bool mIsMotionBlurOn</div><div class="ttdef"><b>Definition:</b> <a href="_emission_distribution_8h_source.html#l00097">EmissionDistribution.h:97</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution_html_a5fbb5318060558292dd451e075878f83"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html#a5fbb5318060558292dd451e075878f83">moonray::geom::internal::SparseEmissionDistribution::indexTo3DCoord</a></div><div class="ttdeci">Vec3f indexTo3DCoord(uint32_t index) const</div><div class="ttdef"><b>Definition:</b> <a href="_emission_distribution_8cc_source.html#l00195">EmissionDistribution.cc:195</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_a472053acc157ccb20c9d68bf2fdaa824"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#a472053acc157ccb20c9d68bf2fdaa824">moonray::geom::internal::transformPoint</a></div><div class="ttdeci">Vec3f transformPoint(const scene_rdl2::math::Mat4f mat[2], const scene_rdl2::math::Vec3f &amp;point, const float time, bool isMotionBlurOn)</div><div class="ttdef"><b>Definition:</b> <a href="geom_2prim_2_util_8cc_source.html#l00231">Util.cc:231</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6cca8a7630ef4d8ce040e7c04ea0738f"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6cca8a7630ef4d8ce040e7c04ea0738f">moonray::geom::findInterval</a></div><div class="ttdeci">int findInterval(int size, const Predicate &amp;pred)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2geom_2prim_2util_8h_source.html#l00029">Util.h:29</a></div></div>
+<div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_dispatch_computation_8cc_source.html#l00044">McrtRtDispatchComputation.cc:44</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa591a8fee1fc20f40efb0f1c72c4a280" name="aa591a8fee1fc20f40efb0f1c72c4a280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa591a8fee1fc20f40efb0f1c72c4a280">&#9670;&#160;</a></span>mCdf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::pair&lt;uint32_t, float&gt; &gt; moonray::geom::internal::SparseEmissionDistribution::mCdf</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_emission_distribution_8h_source.html#l00202">202</a> of file <a class="el" href="_emission_distribution_8h_source.html">EmissionDistribution.h</a>.</p>
+
+</div>
+</div>
+<a id="a1553796da0ca09dd5e3fbfd7beae5b1c" name="a1553796da0ca09dd5e3fbfd7beae5b1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1553796da0ca09dd5e3fbfd7beae5b1c">&#9670;&#160;</a></span>mOffsets</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;uint32_t, uint32_t&gt; moonray::geom::internal::SparseEmissionDistribution::mOffsets</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_emission_distribution_8h_source.html#l00205">205</a> of file <a class="el" href="_emission_distribution_8h_source.html">EmissionDistribution.h</a>.</p>
 
 </div>
 </div>
@@ -348,9 +590,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/geom/prim/<a class="el" href="_emission_distribution_8cc_source.html">EmissionDistribution.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_sparse_emission_distribution.html">SparseEmissionDistribution</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

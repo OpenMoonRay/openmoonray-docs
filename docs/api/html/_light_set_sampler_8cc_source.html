@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_dea9bae4dce33263b807b45b03566d1e.html">integrator</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_light_set_sampler_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">LightSetSampler.cc</div></div>
 </div><!--header-->
@@ -50,7 +66,12 @@ $(function() {
 <a href="_light_set_sampler_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2013-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file LightSetSampler.cc</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Eric Tabellion</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// $Id$</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">///</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_light_set_sampler_8h.html">LightSetSampler.h</a>&quot;</span></div>
@@ -70,7 +91,7 @@ $(function() {
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// Warning: this must return at least one sample for each light, otherwise</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// the algorithm is biased.</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">static</span> finline <span class="keywordtype">int</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>computeLightSampleCount(<span class="keywordtype">int</span> maxLightSamples)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#a432a799a8664ac51dc8cece674c7caed">   29</a></span><a class="code hl_function" href="namespacemoonray_1_1pbr.html#a432a799a8664ac51dc8cece674c7caed">computeLightSampleCount</a>(<span class="keywordtype">int</span> maxLightSamples)</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">int</span> lightSampleCount;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
@@ -83,7 +104,7 @@ $(function() {
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//----------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_set_sampler.html#a4ae752a5990d5e746797a9fff024c9b5">LightSetSampler::LightSetSampler</a>(scene_rdl2::alloc::Arena *arena, <span class="keyword">const</span> LightSet &amp;lightSet, <span class="keyword">const</span> shading::Bsdf &amp;bsdf,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><a class="code hl_function" href="classmoonray_1_1pbr_1_1_light_set_sampler.html#a4ae752a5990d5e746797a9fff024c9b5">LightSetSampler::LightSetSampler</a>(scene_rdl2::alloc::Arena *arena, <span class="keyword">const</span> LightSet &amp;lightSet, <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_bsdf.html">shading::Bsdf</a> &amp;bsdf,</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">const</span> Vec3f &amp;p, <span class="keywordtype">int</span> maxSamplesPerLight) :</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    mLightSet(lightSet),</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    mMaxSamplesPerLight(maxSamplesPerLight),</div>
@@ -95,7 +116,7 @@ $(function() {
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> lightCount = mLightSet.getLightCount();</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    mLightSampleCount = computeLightSampleCount(mMaxSamplesPerLight);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    mLightSampleCount = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a432a799a8664ac51dc8cece674c7caed">computeLightSampleCount</a>(mMaxSamplesPerLight);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    mInvLightSampleCount = rcp(<span class="keywordtype">float</span>(mLightSampleCount));</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    mSampleCount = lightCount * mLightSampleCount;</div>
@@ -114,21 +135,21 @@ $(function() {
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_light_set_sampler.html#a407dc11d0da06dc2dd54165d3048fbc1">   70</a></span>LightSetSampler::sampleIntersectAndEval(<a class="code hl_class" href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html">mcrt_common::ThreadLocalState</a>* tls,</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_light.html">Light</a>* light, <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1pbr_1_1_light_filter_list.html">LightFilterList</a>* lightFilterList,</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keyword">const</span> Vec3f &amp;P, <span class="keyword">const</span> Vec3f *N, <span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_light_filter_random_values.html">LightFilterRandomValues</a>&amp; filterR, <span class="keywordtype">float</span> time,</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keyword">const</span> Vec3f&amp; r, <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_light_sample.html">LightSample</a> &amp;sample, <span class="keywordtype">float</span> rayDirFootprint)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keyword">const</span> Vec3f&amp; r, <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_light_sample.html">LightSample</a> &amp;<a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>, <span class="keywordtype">float</span> rayDirFootprint)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">// Draw a sample from light</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_light_intersection.html">LightIntersection</a> isect;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">if</span> (!light-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#a174df10c924a6e958341072bd484424a">sample</a>(P, N, time, r, <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.wi, isect, rayDirFootprint)) {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.setInvalid();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">if</span> (!light-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#a174df10c924a6e958341072bd484424a">sample</a>(P, N, time, r, <a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>.wi, isect, rayDirFootprint)) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>.setInvalid();</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.distance = isect.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersection.html#ab4b601b0f47a6c6bc229b9744a021a83">distance</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>.distance = isect.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersection.html#ab4b601b0f47a6c6bc229b9744a021a83">distance</a>;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="comment">// Evaluate light sample</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.Li = light-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#ad5831b91124722b3ee770c7ec65aeb27">eval</a>(tls, <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.wi, P, filterR, time, isect, <span class="keyword">false</span>, lightFilterList, rayDirFootprint,</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                            &amp;<a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.pdf);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacemoonray_1_1pbr.html#ae27b2437008e65784c338406b8b25b03">isSampleInvalid</a>(<a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.Li, <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.pdf)) {</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.setInvalid();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>.Li = light-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_light.html#ad5831b91124722b3ee770c7ec65aeb27">eval</a>(tls, <a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>.wi, P, filterR, time, isect, <span class="keyword">false</span>, lightFilterList, rayDirFootprint,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                            &amp;<a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>.pdf);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacemoonray_1_1pbr.html#ae27b2437008e65784c338406b8b25b03">isSampleInvalid</a>(<a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>.Li, <a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>.pdf)) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <a class="code hl_function" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>.setInvalid();</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
@@ -140,6 +161,7 @@ $(function() {
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">// TM and (c) 2013-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="ttc" id="a_attribute_map_8cc_html_ab527eec89029a7b166a67dd899129255"><div class="ttname"><a href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a></div><div class="ttdeci">static void sample(const scene_rdl2::rdl2::Map *self, moonray::shading::TLState *tls, const moonray::shading::State &amp;state, Color *sample)</div></div>
 <div class="ttc" id="a_light_set_sampler_8h_html"><div class="ttname"><a href="_light_set_sampler_8h.html">LightSetSampler.h</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1mcrt__common_1_1_thread_local_state_html"><div class="ttname"><a href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html">moonray::mcrt_common::ThreadLocalState</a></div><div class="ttdef"><b>Definition:</b> <a href="_thread_local_state_8h_source.html#l00170">ThreadLocalState.h:171</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_filter_list_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_filter_list.html">moonray::pbr::LightFilterList</a></div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8h_source.html#l00102">LightFilter.h:103</a></div></div>
@@ -147,9 +169,10 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_a174df10c924a6e958341072bd484424a"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#a174df10c924a6e958341072bd484424a">moonray::pbr::Light::sample</a></div><div class="ttdeci">virtual bool sample(const scene_rdl2::math::Vec3f &amp;p, const scene_rdl2::math::Vec3f *n, float time, const scene_rdl2::math::Vec3f &amp;r, scene_rdl2::math::Vec3f &amp;wi, LightIntersection &amp;isect, float rayDirFootprint) const =0</div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_html_ad5831b91124722b3ee770c7ec65aeb27"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light.html#ad5831b91124722b3ee770c7ec65aeb27">moonray::pbr::Light::eval</a></div><div class="ttdeci">virtual scene_rdl2::math::Color eval(mcrt_common::ThreadLocalState *tls, const scene_rdl2::math::Vec3f &amp;wi, const scene_rdl2::math::Vec3f &amp;p, const LightFilterRandomValues &amp;filterR, float time, const LightIntersection &amp;isect, bool fromCamera, const LightFilterList *lightFilterList, float rayDirFootprint, float *pdf=nullptr) const =0</div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_light_set_sampler_html_a4ae752a5990d5e746797a9fff024c9b5"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_light_set_sampler.html#a4ae752a5990d5e746797a9fff024c9b5">moonray::pbr::LightSetSampler::LightSetSampler</a></div><div class="ttdeci">LightSetSampler(scene_rdl2::alloc::Arena *arena, const LightSet &amp;lightSet, const shading::Bsdf &amp;bsdf, const scene_rdl2::math::Vec3f &amp;p, int maxSamplesPerLight)</div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf.html">moonray::shading::Bsdf</a></div><div class="ttdoc">Define the Bsdf object, used to represent multi-lobe bsdfs.</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00349">Bsdf.h:350</a></div></div>
 <div class="ttc" id="alib_2rendering_2pbr_2core_2util_8h_html"><div class="ttname"><a href="lib_2rendering_2pbr_2core_2util_8h.html">Util.h</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a432a799a8664ac51dc8cece674c7caed"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a432a799a8664ac51dc8cece674c7caed">moonray::pbr::computeLightSampleCount</a></div><div class="ttdeci">static finline int computeLightSampleCount(int maxLightSamples)</div><div class="ttdef"><b>Definition:</b> <a href="_light_set_sampler_8cc_source.html#l00029">LightSetSampler.cc:29</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_ae27b2437008e65784c338406b8b25b03"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ae27b2437008e65784c338406b8b25b03">moonray::pbr::isSampleInvalid</a></div><div class="ttdeci">finline bool isSampleInvalid(const scene_rdl2::math::Color &amp;c, float pdf)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2core_2util_8h_source.html#l00194">Util.h:194</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1shading_html_a891596c3133fe5228ad4169dc149b987"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">moonray::shading::sample</a></div><div class="ttdeci">scene_rdl2::math::Color sample(const BsdfLobev &amp;lobev, const BsdfSlicev &amp;slicev, float r1, float r2, int lane, scene_rdl2::math::Vec3f &amp;wi, float &amp;pdf)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdfv_8cc_source.html#l00053">Bsdfv.cc:53</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1math_html"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html">scene_rdl2::math</a></div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8h_source.html#l00017">InputBuffer.h:17</a></div></div>
 <div class="ttc" id="astructmoonray_1_1pbr_1_1_light_filter_random_values_html"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_filter_random_values.html">moonray::pbr::LightFilterRandomValues</a></div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8h_source.html#l00031">LightFilter.h:32</a></div></div>
@@ -157,9 +180,13 @@ $(function() {
 <div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersection_html_ab4b601b0f47a6c6bc229b9744a021a83"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersection.html#ab4b601b0f47a6c6bc229b9744a021a83">moonray::pbr::LightIntersection::distance</a></div><div class="ttdeci">float distance</div><div class="ttdoc">distance traveled along ray to the hit point</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00043">LightUtil.h:43</a></div></div>
 <div class="ttc" id="astructmoonray_1_1pbr_1_1_light_sample_html"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_sample.html">moonray::pbr::LightSample</a></div><div class="ttdef"><b>Definition:</b> <a href="_light_set_sampler_8h_source.html#l00043">LightSetSampler.h:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_2ababe07dd619b812c4a3817d8ef2eb2.html">integrator</a></li><li class="navelem"><a class="el" href="_light_set_sampler_8cc.html">LightSetSampler.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

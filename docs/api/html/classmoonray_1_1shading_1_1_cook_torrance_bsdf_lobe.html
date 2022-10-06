@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html">CookTorranceBsdfLobe</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -50,6 +66,7 @@ $(function() {
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::CookTorranceBsdfLobe Class Reference</div></div>
 </div><!--header-->
@@ -200,6 +217,11 @@ Static Protected Attributes</h2></td></tr>
 <tr class="memitem:af50c2c027b46d679c6110972fb2008b8"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#af50c2c027b46d679c6110972fb2008b8">sdDFactorSlope</a> = (<a class="el" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ac38c28421c3c36170e2115428ed96d4b">sdDFactorMax</a> - <a class="el" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a553c65688ba73de8d525948a26b878f1">sdDFactorMin</a>)</td></tr>
 <tr class="separator:af50c2c027b46d679c6110972fb2008b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a9ba643f758ad88b4d4d8e02bec27862f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a9ba643f758ad88b4d4d8e02bec27862f">computeBeckmannMicrofacet</a> (float r1, float r2, float cosNO, scene_rdl2::math::Vec3f &amp;m) const</td></tr>
+<tr class="separator:a9ba643f758ad88b4d4d8e02bec27862f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classmoonray_1_1shading_1_1_bsdf_lobe"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmoonray_1_1shading_1_1_bsdf_lobe')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html">moonray::shading::BsdfLobe</a></td></tr>
@@ -300,7 +322,50 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_cook_torrance_8cc_source.html#l00057">57</a> of file <a class="el" href="_bsdf_cook_torrance_8cc_source.html">BsdfCookTorrance.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   63</span>                                                                         :</div>
+<div class="line"><span class="lineno">   64</span>    <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a68e07445ce28319f1e0269d13d0a9c5f">BsdfLobe</a>(<a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">Type</a>(<a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896">REFLECTION</a> | <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa5dfce546f93a2a18aee27e4b801c198b">GLOSSY</a>), <a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#ab2ca5c1b46a879084da7aeb7f10d6476">DifferentialFlags</a>(0), <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">   65</span>             <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fad2f7ee852fac86eed528a89be06c56fa">PROPERTY_NORMAL</a> | <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fa89a6b964bfa5d53524e65ce5049eca96">PROPERTY_ROUGHNESS</a> | <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fa9dced840d3739cc5841cbdc187c09b55">PROPERTY_PBR_VALIDITY</a>),</div>
+<div class="line"><span class="lineno">   66</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4aac90db9119907cf7cbab09d66d689b">mFrame</a>(N),</div>
+<div class="line"><span class="lineno">   67</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ac7bb3ad2b72a33dfe65adcaddf861bbf">mInputRoughness</a>(roughness),</div>
+<div class="line"><span class="lineno">   68</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#abaa6d2b2e4d94fc5b3c66fba765601d7">mFavg</a>(favg),</div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aca0bf363bfa7e070555cdbee203b7afd">mFavgInv</a>(favgInv),</div>
+<div class="line"><span class="lineno">   70</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ae0463346072f1e6e626e9ab622ce79b9">mEtaI</a>(etaI),</div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#afebea56aa3c849611d6952d15b377486">mEtaT</a>(etaT),</div>
+<div class="line"><span class="lineno">   72</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a1dd8dce41df6ddb6f3fa47294a01f7aa">mCoupledWithTransmission</a>(coupledWithTransmission)</div>
+<div class="line"><span class="lineno">   73</span>{</div>
+<div class="line"><span class="lineno">   74</span>    <span class="comment">// Apply roughness squaring to linearize roughness response</span></div>
+<div class="line"><span class="lineno">   75</span>    <span class="comment">// See &quot;Physically-Based Shading at Disney&quot; Siggraph course notes.</span></div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aab4d429e3c619864ed411778325a99f9">mRoughness</a> = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ac7bb3ad2b72a33dfe65adcaddf861bbf">mInputRoughness</a> * <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ac7bb3ad2b72a33dfe65adcaddf861bbf">mInputRoughness</a>;</div>
+<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aab4d429e3c619864ed411778325a99f9">mRoughness</a> &lt; 0.001f) {   <span class="comment">// TODO: Smaller thresholds trigger nans</span></div>
+<div class="line"><span class="lineno">   78</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aab4d429e3c619864ed411778325a99f9">mRoughness</a> = 0.001f;</div>
+<div class="line"><span class="lineno">   79</span>    }</div>
+<div class="line"><span class="lineno">   80</span> </div>
+<div class="line"><span class="lineno">   81</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a738801fe0766181efd0c1ed4fbca133e">mInvRoughness</a> = rcp(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aab4d429e3c619864ed411778325a99f9">mRoughness</a>);</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>    <span class="comment">// Use a directional differential scale that varies with roughness</span></div>
+<div class="line"><span class="lineno">   84</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aacfea05b3dddc1067197d68c17ceedd7">mdDFactor</a> = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a553c65688ba73de8d525948a26b878f1">sdDFactorMin</a> + <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aab4d429e3c619864ed411778325a99f9">mRoughness</a> * <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#af50c2c027b46d679c6110972fb2008b8">sdDFactorSlope</a>;</div>
+<div class="line"><span class="lineno">   85</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">moonray::shading::BsdfLobe::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00074">Bsdf.h:74</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896">moonray::shading::BsdfLobe::REFLECTION</a></div><div class="ttdeci">@ REFLECTION</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00079">Bsdf.h:79</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43aa5dfce546f93a2a18aee27e4b801c198b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa5dfce546f93a2a18aee27e4b801c198b">moonray::shading::BsdfLobe::GLOSSY</a></div><div class="ttdeci">@ GLOSSY</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00087">Bsdf.h:87</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a2fadd67ac6fd01a58026eb335f688c3fa89a6b964bfa5d53524e65ce5049eca96"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fa89a6b964bfa5d53524e65ce5049eca96">moonray::shading::BsdfLobe::PROPERTY_ROUGHNESS</a></div><div class="ttdeci">@ PROPERTY_ROUGHNESS</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00113">Bsdf.h:113</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a2fadd67ac6fd01a58026eb335f688c3fa9dced840d3739cc5841cbdc187c09b55"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fa9dced840d3739cc5841cbdc187c09b55">moonray::shading::BsdfLobe::PROPERTY_PBR_VALIDITY</a></div><div class="ttdeci">@ PROPERTY_PBR_VALIDITY</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00116">Bsdf.h:115</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a2fadd67ac6fd01a58026eb335f688c3fad2f7ee852fac86eed528a89be06c56fa"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fad2f7ee852fac86eed528a89be06c56fa">moonray::shading::BsdfLobe::PROPERTY_NORMAL</a></div><div class="ttdeci">@ PROPERTY_NORMAL</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00112">Bsdf.h:112</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a68e07445ce28319f1e0269d13d0a9c5f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a68e07445ce28319f1e0269d13d0a9c5f">moonray::shading::BsdfLobe::BsdfLobe</a></div><div class="ttdeci">BsdfLobe(Type type, DifferentialFlags diffFlags, bool isSpherical, int32_t propertyFlags)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8cc_source.html#l00024">Bsdf.cc:24</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_ab2ca5c1b46a879084da7aeb7f10d6476"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#ab2ca5c1b46a879084da7aeb7f10d6476">moonray::shading::BsdfLobe::DifferentialFlags</a></div><div class="ttdeci">DifferentialFlags</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00101">Bsdf.h:101</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_a1dd8dce41df6ddb6f3fa47294a01f7aa"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a1dd8dce41df6ddb6f3fa47294a01f7aa">moonray::shading::CookTorranceBsdfLobe::mCoupledWithTransmission</a></div><div class="ttdeci">bool mCoupledWithTransmission</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8h_source.html#l00121">BsdfCookTorrance.h:121</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_a4aac90db9119907cf7cbab09d66d689b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4aac90db9119907cf7cbab09d66d689b">moonray::shading::CookTorranceBsdfLobe::mFrame</a></div><div class="ttdeci">scene_rdl2::math::ReferenceFrame mFrame</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8h_source.html#l00104">BsdfCookTorrance.h:104</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_a553c65688ba73de8d525948a26b878f1"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a553c65688ba73de8d525948a26b878f1">moonray::shading::CookTorranceBsdfLobe::sdDFactorMin</a></div><div class="ttdeci">static constexpr float sdDFactorMin</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8h_source.html#l00100">BsdfCookTorrance.h:100</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_a738801fe0766181efd0c1ed4fbca133e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a738801fe0766181efd0c1ed4fbca133e">moonray::shading::CookTorranceBsdfLobe::mInvRoughness</a></div><div class="ttdeci">float mInvRoughness</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8h_source.html#l00107">BsdfCookTorrance.h:107</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_aab4d429e3c619864ed411778325a99f9"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aab4d429e3c619864ed411778325a99f9">moonray::shading::CookTorranceBsdfLobe::mRoughness</a></div><div class="ttdeci">float mRoughness</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8h_source.html#l00106">BsdfCookTorrance.h:106</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_aacfea05b3dddc1067197d68c17ceedd7"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aacfea05b3dddc1067197d68c17ceedd7">moonray::shading::CookTorranceBsdfLobe::mdDFactor</a></div><div class="ttdeci">float mdDFactor</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8h_source.html#l00108">BsdfCookTorrance.h:108</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_abaa6d2b2e4d94fc5b3c66fba765601d7"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#abaa6d2b2e4d94fc5b3c66fba765601d7">moonray::shading::CookTorranceBsdfLobe::mFavg</a></div><div class="ttdeci">scene_rdl2::math::Color mFavg</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8h_source.html#l00113">BsdfCookTorrance.h:113</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_ac7bb3ad2b72a33dfe65adcaddf861bbf"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ac7bb3ad2b72a33dfe65adcaddf861bbf">moonray::shading::CookTorranceBsdfLobe::mInputRoughness</a></div><div class="ttdeci">float mInputRoughness</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8h_source.html#l00105">BsdfCookTorrance.h:105</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_aca0bf363bfa7e070555cdbee203b7afd"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aca0bf363bfa7e070555cdbee203b7afd">moonray::shading::CookTorranceBsdfLobe::mFavgInv</a></div><div class="ttdeci">scene_rdl2::math::Color mFavgInv</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8h_source.html#l00115">BsdfCookTorrance.h:115</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_ae0463346072f1e6e626e9ab622ce79b9"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ae0463346072f1e6e626e9ab622ce79b9">moonray::shading::CookTorranceBsdfLobe::mEtaI</a></div><div class="ttdeci">float mEtaI</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8h_source.html#l00116">BsdfCookTorrance.h:116</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_af50c2c027b46d679c6110972fb2008b8"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#af50c2c027b46d679c6110972fb2008b8">moonray::shading::CookTorranceBsdfLobe::sdDFactorSlope</a></div><div class="ttdeci">static constexpr float sdDFactorSlope</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8h_source.html#l00102">BsdfCookTorrance.h:102</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_afebea56aa3c849611d6952d15b377486"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#afebea56aa3c849611d6952d15b377486">moonray::shading::CookTorranceBsdfLobe::mEtaT</a></div><div class="ttdeci">float mEtaT</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8h_source.html#l00116">BsdfCookTorrance.h:116</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a566382491c47d5ed3ddb5a5fb15466b8" name="a566382491c47d5ed3ddb5a5fb15466b8"></a>
@@ -327,7 +392,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_cook_torrance_8h_source.html#l00048">48</a> of file <a class="el" href="_bsdf_cook_torrance_8h_source.html">BsdfCookTorrance.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   48</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -359,7 +425,82 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#ad29a9cc32cd6e0ae3306fca7036a7177">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_cook_torrance_8h_source.html#l00059">59</a> of file <a class="el" href="_bsdf_cook_torrance_8h_source.html">BsdfCookTorrance.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   60</span>    {</div>
+<div class="line"><span class="lineno">   61</span>        <span class="keywordtype">float</span> cosThetaWo = scene_rdl2::math::max(<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4aac90db9119907cf7cbab09d66d689b">mFrame</a>.getN(), slice.getWo()), 0.0f);</div>
+<div class="line"><span class="lineno">   62</span>        <span class="comment">// TODO: Improve this approximation!</span></div>
+<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a27762201a758a03b80bef6e822ecee11">computeScaleAndFresnel</a>(cosThetaWo);</div>
+<div class="line"><span class="lineno">   64</span>    }</div>
+<div class="ttc" id="a_n_point_8h_html_a16747d68c1e06270b0ed335d631b66f3"><div class="ttname"><a href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a></div><div class="ttdeci">float dot(const NPoint&lt; D &gt; &amp;a, const NPoint&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00271">NPoint.h:271</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a27762201a758a03b80bef6e822ecee11"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a27762201a758a03b80bef6e822ecee11">moonray::shading::BsdfLobe::computeScaleAndFresnel</a></div><div class="ttdeci">finline scene_rdl2::math::Color computeScaleAndFresnel(float cosWi) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00179">Bsdf.h:179</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9ba643f758ad88b4d4d8e02bec27862f" name="a9ba643f758ad88b4d4d8e02bec27862f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba643f758ad88b4d4d8e02bec27862f">&#9670;&#160;</a></span>computeBeckmannMicrofacet()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::shading::CookTorranceBsdfLobe::computeBeckmannMicrofacet </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>r1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>r2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>cosNO</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">scene_rdl2::math::Vec3f &amp;&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_cook_torrance_8cc_source.html#l00088">88</a> of file <a class="el" href="_bsdf_cook_torrance_8cc_source.html">BsdfCookTorrance.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   91</span>{</div>
+<div class="line"><span class="lineno">   92</span>    <span class="comment">// generate a random microfacet normal m (eq. 28, 29)</span></div>
+<div class="line"><span class="lineno">   93</span>    <span class="comment">// we take advantage of cos(atan(x)) == 1/sqrt(1+x^2)</span></div>
+<div class="line"><span class="lineno">   94</span>    <span class="comment">// and sin(atan(x)) == x/sqrt(1+x^2)</span></div>
+<div class="line"><span class="lineno">   95</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> alpha = <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a5d5623334aa1d03f58b3611a21bdfae6">widenRoughness</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aab4d429e3c619864ed411778325a99f9">mRoughness</a>, cosNO);</div>
+<div class="line"><span class="lineno">   96</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> alpha2 = alpha * alpha;</div>
+<div class="line"><span class="lineno">   97</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> tanThetaMSqr = -alpha2 * scene_rdl2::math::log(1.0f - r1);</div>
+<div class="line"><span class="lineno">   98</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> tanThetaM = scene_rdl2::math::sqrt(tanThetaMSqr);</div>
+<div class="line"><span class="lineno">   99</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaM = rsqrt(1.0f + tanThetaMSqr);</div>
+<div class="line"><span class="lineno">  100</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> sinThetaM = cosThetaM * tanThetaM;</div>
+<div class="line"><span class="lineno">  101</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> phiM = 2.0f * sPi * r2;</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>    <span class="comment">// Compute the half vector</span></div>
+<div class="line"><span class="lineno">  104</span>    m = <a class="code hl_function" href="namespacemoonray_1_1shading.html#afab5611fd6c3c0b984fa12f088b62c20">computeLocalSphericalDirection</a>(cosThetaM, sinThetaM, phiM);</div>
+<div class="line"><span class="lineno">  105</span>    m = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4aac90db9119907cf7cbab09d66d689b">mFrame</a>.localToGlobal(m);</div>
+<div class="line"><span class="lineno">  106</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_a5d5623334aa1d03f58b3611a21bdfae6"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a5d5623334aa1d03f58b3611a21bdfae6">moonray::shading::CookTorranceBsdfLobe::widenRoughness</a></div><div class="ttdeci">static float widenRoughness(float roughness, float cosNO)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8h_source.html#l00087">BsdfCookTorrance.h:87</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_afab5611fd6c3c0b984fa12f088b62c20"><div class="ttname"><a href="namespacemoonray_1_1shading.html#afab5611fd6c3c0b984fa12f088b62c20">moonray::shading::computeLocalSphericalDirection</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f computeLocalSphericalDirection(float cosTheta, float sinTheta, float phi)</div><div class="ttdoc">See ReferenceFrame for local sphere parameterization (Z-up)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00215">Util.h:215</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5dd50feadee872fb27f7411cd6192ea6" name="a5dd50feadee872fb27f7411cd6192ea6"></a>
@@ -436,7 +577,22 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a53e300f416eddc450bef32b46f45e3ef">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_cook_torrance_8cc_source.html#l00328">328</a> of file <a class="el" href="_bsdf_cook_torrance_8cc_source.html">BsdfCookTorrance.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  331</span>{</div>
+<div class="line"><span class="lineno">  332</span>    <span class="comment">// It&#39;s complex to capture the full derivative. Instead we use the</span></div>
+<div class="line"><span class="lineno">  333</span>    <span class="comment">// derivative of a mirror reflection about the H vector, and scale the</span></div>
+<div class="line"><span class="lineno">  334</span>    <span class="comment">// length of the directional derivative proportionally with roughness.</span></div>
+<div class="line"><span class="lineno">  335</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> H;</div>
+<div class="line"><span class="lineno">  336</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacemoonray_1_1shading.html#ac1f48777ae4c4285108902cd6e16146b">computeNormalizedHalfVector</a>(wo, wi, H)) {</div>
+<div class="line"><span class="lineno">  337</span>        H = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4aac90db9119907cf7cbab09d66d689b">mFrame</a>.getN();</div>
+<div class="line"><span class="lineno">  338</span>    }</div>
+<div class="line"><span class="lineno">  339</span>    <a class="code hl_function" href="namespacemoonray_1_1shading.html#a702ba0ae66dabde33d29f64b265f60c4">computeReflectionDirectionDifferential</a>(wo, wi, H, dNdx, dNdy, dDdx, dDdy);</div>
+<div class="line"><span class="lineno">  340</span>    dDdx *= <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aacfea05b3dddc1067197d68c17ceedd7">mdDFactor</a>;</div>
+<div class="line"><span class="lineno">  341</span>    dDdy *= <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aacfea05b3dddc1067197d68c17ceedd7">mdDFactor</a>;</div>
+<div class="line"><span class="lineno">  342</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a702ba0ae66dabde33d29f64b265f60c4"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a702ba0ae66dabde33d29f64b265f60c4">moonray::shading::computeReflectionDirectionDifferential</a></div><div class="ttdeci">finline void computeReflectionDirectionDifferential(const scene_rdl2::math::Vec3f &amp;wo, const scene_rdl2::math::Vec3f &amp;wi, const scene_rdl2::math::Vec3f &amp;H, const scene_rdl2::math::Vec3f &amp;dNdx, const scene_rdl2::math::Vec3f &amp;dNdy, scene_rdl2::math::Vec3f &amp;dDdx, scene_rdl2::math::Vec3f &amp;dDdy)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00312">Util.h:312</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_ac1f48777ae4c4285108902cd6e16146b"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ac1f48777ae4c4285108902cd6e16146b">moonray::shading::computeNormalizedHalfVector</a></div><div class="ttdeci">finline bool computeNormalizedHalfVector(const scene_rdl2::math::Vec3f &amp;wo, const scene_rdl2::math::Vec3f &amp;wi, scene_rdl2::math::Vec3f &amp;H)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00418">Util.h:418</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa29d23465514c3b0a6e7e99662e46911" name="aa29d23465514c3b0a6e7e99662e46911"></a>
@@ -474,7 +630,26 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_cook_torrance_8cc_source.html#l00253">253</a> of file <a class="el" href="_bsdf_cook_torrance_8cc_source.html">BsdfCookTorrance.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  256</span>{</div>
+<div class="line"><span class="lineno">  257</span>    <span class="comment">// Early Exit</span></div>
+<div class="line"><span class="lineno">  258</span>    <span class="keywordflow">if</span> (isBlack(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#abaa6d2b2e4d94fc5b3c66fba765601d7">mFavg</a>)) <span class="keywordflow">return</span> 0.0f;</div>
+<div class="line"><span class="lineno">  259</span>    <span class="keywordtype">float</span> pdf;</div>
+<div class="line"><span class="lineno">  260</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a1dd8dce41df6ddb6f3fa47294a01f7aa">mCoupledWithTransmission</a>) {</div>
+<div class="line"><span class="lineno">  261</span>        pdf = <a class="code hl_function" href="classmoonray_1_1shading_1_1_transmission_cook_torrance_energy_compensation.html#af805c4c608817fb54aec533c49ed894d">TransmissionCookTorranceEnergyCompensation::pdfR</a>(</div>
+<div class="line"><span class="lineno">  262</span>                cosNI,</div>
+<div class="line"><span class="lineno">  263</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ae0463346072f1e6e626e9ab622ce79b9">mEtaI</a>, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#afebea56aa3c849611d6952d15b377486">mEtaT</a>,</div>
+<div class="line"><span class="lineno">  264</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ac7bb3ad2b72a33dfe65adcaddf861bbf">mInputRoughness</a>);</div>
+<div class="line"><span class="lineno">  265</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  266</span>        pdf = <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html#ae1ec4e5c5f58e7e8450b481f2bbdb0ab">CookTorranceEnergyCompensation::pdf</a>(</div>
+<div class="line"><span class="lineno">  267</span>                type,</div>
+<div class="line"><span class="lineno">  268</span>                cosNI,</div>
+<div class="line"><span class="lineno">  269</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ac7bb3ad2b72a33dfe65adcaddf861bbf">mInputRoughness</a>);</div>
+<div class="line"><span class="lineno">  270</span>    }</div>
+<div class="line"><span class="lineno">  271</span>    <span class="keywordflow">return</span> pdf;</div>
+<div class="line"><span class="lineno">  272</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_energy_compensation_html_ae1ec4e5c5f58e7e8450b481f2bbdb0ab"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html#ae1ec4e5c5f58e7e8450b481f2bbdb0ab">moonray::shading::CookTorranceEnergyCompensation::pdf</a></div><div class="ttdeci">static float pdf(ispc::MicrofacetDistribution type, float cosNI, float roughness)</div><div class="ttdef"><b>Definition:</b> <a href="_cook_torrance_energy_compensation_8cc_source.html#l00106">CookTorranceEnergyCompensation.cc:106</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_transmission_cook_torrance_energy_compensation_html_af805c4c608817fb54aec533c49ed894d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_transmission_cook_torrance_energy_compensation.html#af805c4c608817fb54aec533c49ed894d">moonray::shading::TransmissionCookTorranceEnergyCompensation::pdfR</a></div><div class="ttdeci">static float pdfR(float cosNI, float etaI, float etaT, float roughness)</div><div class="ttdef"><b>Definition:</b> <a href="_transmission_cook_torrance_energy_compensation_8cc_source.html#l00186">TransmissionCookTorranceEnergyCompensation.cc:186</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acf490497dc04b110eb9ae6139463807b" name="acf490497dc04b110eb9ae6139463807b"></a>
@@ -501,7 +676,24 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_cook_torrance_8cc_source.html#l00235">235</a> of file <a class="el" href="_bsdf_cook_torrance_8cc_source.html">BsdfCookTorrance.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  236</span>{</div>
+<div class="line"><span class="lineno">  237</span>    <span class="comment">// Early Exit</span></div>
+<div class="line"><span class="lineno">  238</span>    <span class="keywordflow">if</span> (isBlack(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#abaa6d2b2e4d94fc5b3c66fba765601d7">mFavg</a>)) <span class="keywordflow">return</span> 0.0f;</div>
+<div class="line"><span class="lineno">  239</span>    <span class="keywordtype">float</span> w;</div>
+<div class="line"><span class="lineno">  240</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a1dd8dce41df6ddb6f3fa47294a01f7aa">mCoupledWithTransmission</a>) {</div>
+<div class="line"><span class="lineno">  241</span>        w = <a class="code hl_function" href="classmoonray_1_1shading_1_1_transmission_cook_torrance_energy_compensation.html#a3db6668affbe4a120e9fccb1042acfe6">TransmissionCookTorranceEnergyCompensation::weightR</a>(</div>
+<div class="line"><span class="lineno">  242</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ae0463346072f1e6e626e9ab622ce79b9">mEtaI</a>, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#afebea56aa3c849611d6952d15b377486">mEtaT</a>,</div>
+<div class="line"><span class="lineno">  243</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ac7bb3ad2b72a33dfe65adcaddf861bbf">mInputRoughness</a>);</div>
+<div class="line"><span class="lineno">  244</span>    }</div>
+<div class="line"><span class="lineno">  245</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  246</span>        w = <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html#af24abc0731312f50d513f3db33ecb223">CookTorranceEnergyCompensation::weight</a>(</div>
+<div class="line"><span class="lineno">  247</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ac7bb3ad2b72a33dfe65adcaddf861bbf">mInputRoughness</a>);</div>
+<div class="line"><span class="lineno">  248</span>    }</div>
+<div class="line"><span class="lineno">  249</span>    <span class="keywordflow">return</span> w;</div>
+<div class="line"><span class="lineno">  250</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_energy_compensation_html_af24abc0731312f50d513f3db33ecb223"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html#af24abc0731312f50d513f3db33ecb223">moonray::shading::CookTorranceEnergyCompensation::weight</a></div><div class="ttdeci">static float weight(float roughness)</div><div class="ttdef"><b>Definition:</b> <a href="_cook_torrance_energy_compensation_8cc_source.html#l00123">CookTorranceEnergyCompensation.cc:123</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_transmission_cook_torrance_energy_compensation_html_a3db6668affbe4a120e9fccb1042acfe6"><div class="ttname"><a href="classmoonray_1_1shading_1_1_transmission_cook_torrance_energy_compensation.html#a3db6668affbe4a120e9fccb1042acfe6">moonray::shading::TransmissionCookTorranceEnergyCompensation::weightR</a></div><div class="ttdeci">static float weightR(float etaI, float etaT, float roughness)</div><div class="ttdef"><b>Definition:</b> <a href="_transmission_cook_torrance_energy_compensation_8cc_source.html#l00202">TransmissionCookTorranceEnergyCompensation.cc:202</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a61ba86b9a195ecb6b71c289d16f2a8c0" name="a61ba86b9a195ecb6b71c289d16f2a8c0"></a>
@@ -556,7 +748,99 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented in <a class="el" href="classmoonray_1_1shading_1_1_g_g_x_cook_torrance_bsdf_lobe.html#a04c2df4ed2a4584d8153005440c08712">moonray::shading::GGXCookTorranceBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_glitter_g_g_x_cook_torrance_bsdf_lobe.html#ac4db4443fd29c8504192281d58fa4756">moonray::shading::GlitterGGXCookTorranceBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_berry_cook_torrance_bsdf_lobe.html#afe56748b518c489cfc560deafba56a32">moonray::shading::BerryCookTorranceBsdfLobe</a>, and <a class="el" href="classmoonray_1_1shading_1_1_aniso_cook_torrance_bsdf_lobe.html#ad6b824da557783945279ade00af276f1">moonray::shading::AnisoCookTorranceBsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_cook_torrance_8cc_source.html#l00109">109</a> of file <a class="el" href="_bsdf_cook_torrance_8cc_source.html">BsdfCookTorrance.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  111</span>{</div>
+<div class="line"><span class="lineno">  112</span>    <span class="comment">// Based on the paper:</span></div>
+<div class="line"><span class="lineno">  113</span>    <span class="comment">//      &quot;Microfacet Models for Refraction through Rough Surfaces&quot;</span></div>
+<div class="line"><span class="lineno">  114</span>    <span class="comment">//      (Walter et al. - EGSR 2007)</span></div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>    <span class="comment">// Prepare for early exit</span></div>
+<div class="line"><span class="lineno">  117</span>    <span class="keywordflow">if</span> (pdf != NULL) {</div>
+<div class="line"><span class="lineno">  118</span>        *pdf = 0.0f;</div>
+<div class="line"><span class="lineno">  119</span>    }</div>
+<div class="line"><span class="lineno">  120</span>    </div>
+<div class="line"><span class="lineno">  121</span>    <span class="keywordtype">float</span> cosNO = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4aac90db9119907cf7cbab09d66d689b">mFrame</a>.getN(), slice.getWo());</div>
+<div class="line"><span class="lineno">  122</span>    <span class="keywordflow">if</span> (cosNO &lt;= sEpsilon) <span class="keywordflow">return</span> sBlack;</div>
+<div class="line"><span class="lineno">  123</span>    cosNO = min(cosNO, sOneMinusEpsilon);</div>
+<div class="line"><span class="lineno">  124</span> </div>
+<div class="line"><span class="lineno">  125</span>    <span class="keywordtype">float</span> cosNI = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4aac90db9119907cf7cbab09d66d689b">mFrame</a>.getN(), wi);</div>
+<div class="line"><span class="lineno">  126</span>    <span class="keywordflow">if</span> (cosNI &lt;= sEpsilon) <span class="keywordflow">return</span> sBlack;</div>
+<div class="line"><span class="lineno">  127</span>    cosNI = min(cosNI, sOneMinusEpsilon);</div>
+<div class="line"><span class="lineno">  128</span> </div>
+<div class="line"><span class="lineno">  129</span>    <span class="comment">// get half vector</span></div>
+<div class="line"><span class="lineno">  130</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> m;</div>
+<div class="line"><span class="lineno">  131</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacemoonray_1_1shading.html#ac1f48777ae4c4285108902cd6e16146b">computeNormalizedHalfVector</a>(slice.getWo(), wi, m)) {</div>
+<div class="line"><span class="lineno">  132</span>        <span class="keywordflow">return</span> sBlack;</div>
+<div class="line"><span class="lineno">  133</span>    }</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cosMI       = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(m, wi);</div>
+<div class="line"><span class="lineno">  136</span>    <span class="keywordflow">if</span> (cosMI &lt;= sEpsilon) <span class="keywordflow">return</span> sBlack;</div>
+<div class="line"><span class="lineno">  137</span> </div>
+<div class="line"><span class="lineno">  138</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaM   = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(m, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4aac90db9119907cf7cbab09d66d689b">mFrame</a>.getN());</div>
+<div class="line"><span class="lineno">  139</span>    <span class="keywordflow">if</span> (cosThetaM &lt;= sEpsilon) <span class="keywordflow">return</span> sBlack;</div>
+<div class="line"><span class="lineno">  140</span>    </div>
+<div class="line"><span class="lineno">  141</span>    <span class="comment">// eq. 25: calculate D(m):</span></div>
+<div class="line"><span class="lineno">  142</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> alpha2          = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aab4d429e3c619864ed411778325a99f9">mRoughness</a> * <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aab4d429e3c619864ed411778325a99f9">mRoughness</a>;</div>
+<div class="line"><span class="lineno">  143</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaM2      = cosThetaM * cosThetaM;</div>
+<div class="line"><span class="lineno">  144</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaM4      = cosThetaM2 * cosThetaM2;</div>
+<div class="line"><span class="lineno">  145</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> minusTanThetaM2 = (cosThetaM2 - 1.0f) * rcp(cosThetaM2);</div>
+<div class="line"><span class="lineno">  146</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> D4              = 0.25f * scene_rdl2::math::exp(minusTanThetaM2 * rcp(alpha2)) *</div>
+<div class="line"><span class="lineno">  147</span>                                  rcp(sPi * alpha2 * cosThetaM4);</div>
+<div class="line"><span class="lineno">  148</span>    </div>
+<div class="line"><span class="lineno">  149</span>    <span class="comment">// eq. 26, 27: now calculate G1(i,m) and G1(o,m)</span></div>
+<div class="line"><span class="lineno">  150</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> ao = cosNO * <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a738801fe0766181efd0c1ed4fbca133e">mInvRoughness</a> * rsqrt(1.0f - cosNO * cosNO);</div>
+<div class="line"><span class="lineno">  151</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> ai = cosNI * <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a738801fe0766181efd0c1ed4fbca133e">mInvRoughness</a> * rsqrt(1.0f - cosNI * cosNI);</div>
+<div class="line"><span class="lineno">  152</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> G1o = (ao &lt; 1.6f) ? (3.535f * ao + 2.181f * ao * ao) *</div>
+<div class="line"><span class="lineno">  153</span>            rcp(1.0f + 2.276f * ao + 2.577f * ao * ao) : 1.0f;</div>
+<div class="line"><span class="lineno">  154</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> G1i = (ai &lt; 1.6f) ? (3.535f * ai + 2.181f * ai * ai) *</div>
+<div class="line"><span class="lineno">  155</span>            rcp(1.0f + 2.276f * ai + 2.577f * ai * ai) : 1.0f;</div>
+<div class="line"><span class="lineno">  156</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> G  = G1o * G1i;</div>
+<div class="line"><span class="lineno">  157</span>    </div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>    <span class="comment">// Compute the Cook-Torrance bsdf</span></div>
+<div class="line"><span class="lineno">  160</span>    Color f = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a27762201a758a03b80bef6e822ecee11">computeScaleAndFresnel</a>(cosMI) * G * D4 * rcp(cosNO) *</div>
+<div class="line"><span class="lineno">  161</span>            (slice.getIncludeCosineTerm()  ?  1.0f  :  rcp(cosNI));</div>
+<div class="line"><span class="lineno">  162</span> </div>
+<div class="line"><span class="lineno">  163</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> w2 = <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#acf490497dc04b110eb9ae6139463807b">energyCompensationWeight</a>();</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>    <span class="comment">// only add energy if weight &gt; 0 -- if we don&#39;t do this, we will add energy without </span></div>
+<div class="line"><span class="lineno">  166</span>    <span class="comment">// contributing to the pdf or sampling from the lobe, leading to fireflies</span></div>
+<div class="line"><span class="lineno">  167</span>    <span class="comment">// TODO: investigate energy compensation for transmissive lobes -- this seems to be</span></div>
+<div class="line"><span class="lineno">  168</span>    <span class="comment">// where the issue is</span></div>
+<div class="line"><span class="lineno">  169</span>    <span class="keywordflow">if</span> (w2 &gt; 0.0) {</div>
+<div class="line"><span class="lineno">  170</span>        <span class="keyword">const</span> Color compen = <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4a1611edd120400abc89fab3b32dc281">evalEnergyCompensation</a>(ispc::MICROFACET_DISTRIBUTION_BECKMANN,</div>
+<div class="line"><span class="lineno">  171</span>                                                    cosNO, cosNI,</div>
+<div class="line"><span class="lineno">  172</span>                                                    slice.getIncludeCosineTerm());</div>
+<div class="line"><span class="lineno">  173</span>        f += compen;</div>
+<div class="line"><span class="lineno">  174</span>    }</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>    <span class="keywordflow">if</span> (pdf != NULL) {</div>
+<div class="line"><span class="lineno">  177</span><span class="preprocessor">#if PBR_CT_SAMPLE_WIDENED_ROUGHNESS</span></div>
+<div class="line"><span class="lineno">  178</span>        <span class="comment">// Compute pdf of sampling wi using eq. (17) in [1]</span></div>
+<div class="line"><span class="lineno">  179</span>        <span class="comment">// pdf(wi) = D(m) * |m.n| / (4 * |o.m|)</span></div>
+<div class="line"><span class="lineno">  180</span>        <span class="comment">// We cannot re-use D4 computed above without adjusting for the widened</span></div>
+<div class="line"><span class="lineno">  181</span>        <span class="comment">// roughness we use in sample(), otherwise our pdf is biased</span></div>
+<div class="line"><span class="lineno">  182</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> alpha = <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a5d5623334aa1d03f58b3611a21bdfae6">widenRoughness</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aab4d429e3c619864ed411778325a99f9">mRoughness</a>, cosNO);</div>
+<div class="line"><span class="lineno">  183</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> alpha2 = alpha * alpha;</div>
+<div class="line"><span class="lineno">  184</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> D4 = 0.25f * scene_rdl2::math::exp(minusTanThetaM2 * rcp(alpha2)) *</div>
+<div class="line"><span class="lineno">  185</span>                         rcp(sPi * alpha2 * cosThetaM4);</div>
+<div class="line"><span class="lineno">  186</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  187</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> p2 = <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aa29d23465514c3b0a6e7e99662e46911">energyCompensationPDF</a>(ispc::MICROFACET_DISTRIBUTION_BECKMANN,</div>
+<div class="line"><span class="lineno">  188</span>                                               cosNI);</div>
+<div class="line"><span class="lineno">  189</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> w1 = (1.0f - w2);</div>
+<div class="line"><span class="lineno">  190</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> p1 = D4 * cosThetaM * rcp(cosMI);</div>
+<div class="line"><span class="lineno">  191</span>        <span class="comment">// One Sample PDF Weight</span></div>
+<div class="line"><span class="lineno">  192</span>        *pdf = (w1 * p1 + w2 * p2);</div>
+<div class="line"><span class="lineno">  193</span>    }</div>
+<div class="line"><span class="lineno">  194</span> </div>
+<div class="line"><span class="lineno">  195</span>    <span class="comment">// Soften hard shadow terminator due to shading normals</span></div>
+<div class="line"><span class="lineno">  196</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> Gs = slice.computeShadowTerminatorFix(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4aac90db9119907cf7cbab09d66d689b">mFrame</a>.getN(), wi);</div>
+<div class="line"><span class="lineno">  197</span> </div>
+<div class="line"><span class="lineno">  198</span>    <span class="keywordflow">return</span> Gs * f;</div>
+<div class="line"><span class="lineno">  199</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_a4a1611edd120400abc89fab3b32dc281"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4a1611edd120400abc89fab3b32dc281">moonray::shading::CookTorranceBsdfLobe::evalEnergyCompensation</a></div><div class="ttdeci">scene_rdl2::math::Color evalEnergyCompensation(ispc::MicrofacetDistribution type, float cosNO, float cosNI, bool includeCosineTerm) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8cc_source.html#l00301">BsdfCookTorrance.cc:301</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_aa29d23465514c3b0a6e7e99662e46911"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aa29d23465514c3b0a6e7e99662e46911">moonray::shading::CookTorranceBsdfLobe::energyCompensationPDF</a></div><div class="ttdeci">float energyCompensationPDF(ispc::MicrofacetDistribution type, float cosNI) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8cc_source.html#l00253">BsdfCookTorrance.cc:253</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_acf490497dc04b110eb9ae6139463807b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#acf490497dc04b110eb9ae6139463807b">moonray::shading::CookTorranceBsdfLobe::energyCompensationWeight</a></div><div class="ttdeci">float energyCompensationWeight() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8cc_source.html#l00235">BsdfCookTorrance.cc:235</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4a1611edd120400abc89fab3b32dc281" name="a4a1611edd120400abc89fab3b32dc281"></a>
@@ -606,7 +890,30 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_cook_torrance_8cc_source.html#l00301">301</a> of file <a class="el" href="_bsdf_cook_torrance_8cc_source.html">BsdfCookTorrance.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  305</span>{</div>
+<div class="line"><span class="lineno">  306</span>    <span class="comment">// Early Exit</span></div>
+<div class="line"><span class="lineno">  307</span>    <span class="keywordflow">if</span> (isBlack(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#abaa6d2b2e4d94fc5b3c66fba765601d7">mFavg</a>)) <span class="keywordflow">return</span> sBlack;</div>
+<div class="line"><span class="lineno">  308</span>    Color c;</div>
+<div class="line"><span class="lineno">  309</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a1dd8dce41df6ddb6f3fa47294a01f7aa">mCoupledWithTransmission</a>) {</div>
+<div class="line"><span class="lineno">  310</span>        c = <a class="code hl_function" href="classmoonray_1_1shading_1_1_transmission_cook_torrance_energy_compensation.html#af8a239901347662de9e102c0620d49bc">TransmissionCookTorranceEnergyCompensation::evalR</a>(</div>
+<div class="line"><span class="lineno">  311</span>                cosNO, cosNI,</div>
+<div class="line"><span class="lineno">  312</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ac7bb3ad2b72a33dfe65adcaddf861bbf">mInputRoughness</a>,</div>
+<div class="line"><span class="lineno">  313</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ae0463346072f1e6e626e9ab622ce79b9">mEtaI</a>, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#afebea56aa3c849611d6952d15b377486">mEtaT</a>,</div>
+<div class="line"><span class="lineno">  314</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#abaa6d2b2e4d94fc5b3c66fba765601d7">mFavg</a>[0], <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aca0bf363bfa7e070555cdbee203b7afd">mFavgInv</a>[0],</div>
+<div class="line"><span class="lineno">  315</span>                includeCosineTerm);</div>
+<div class="line"><span class="lineno">  316</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  317</span>        c = <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html#a0f8e8696974f70fae42cd1558cba3fd2">CookTorranceEnergyCompensation::eval</a>(</div>
+<div class="line"><span class="lineno">  318</span>                type,</div>
+<div class="line"><span class="lineno">  319</span>                cosNO, cosNI,</div>
+<div class="line"><span class="lineno">  320</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ac7bb3ad2b72a33dfe65adcaddf861bbf">mInputRoughness</a>,</div>
+<div class="line"><span class="lineno">  321</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#abaa6d2b2e4d94fc5b3c66fba765601d7">mFavg</a>,</div>
+<div class="line"><span class="lineno">  322</span>                includeCosineTerm);</div>
+<div class="line"><span class="lineno">  323</span>    }</div>
+<div class="line"><span class="lineno">  324</span>    <span class="keywordflow">return</span> c;</div>
+<div class="line"><span class="lineno">  325</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_energy_compensation_html_a0f8e8696974f70fae42cd1558cba3fd2"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html#a0f8e8696974f70fae42cd1558cba3fd2">moonray::shading::CookTorranceEnergyCompensation::eval</a></div><div class="ttdeci">static scene_rdl2::math::Color eval(ispc::MicrofacetDistribution type, const float cosNO, const float cosNI, float inputRoughness, const scene_rdl2::math::Color &amp;favg, bool includeCosineTerm)</div><div class="ttdef"><b>Definition:</b> <a href="_cook_torrance_energy_compensation_8cc_source.html#l00039">CookTorranceEnergyCompensation.cc:39</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_transmission_cook_torrance_energy_compensation_html_af8a239901347662de9e102c0620d49bc"><div class="ttname"><a href="classmoonray_1_1shading_1_1_transmission_cook_torrance_energy_compensation.html#af8a239901347662de9e102c0620d49bc">moonray::shading::TransmissionCookTorranceEnergyCompensation::evalR</a></div><div class="ttdeci">static scene_rdl2::math::Color evalR(const float cosNO, const float cosNI, float inputRoughness, float etaI, float etaT, float favg, float favgInv, bool includeCosineTerm)</div><div class="ttdef"><b>Definition:</b> <a href="_transmission_cook_torrance_energy_compensation_8cc_source.html#l00038">TransmissionCookTorranceEnergyCompensation.cc:38</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa8ed73b5dc95ed8c5989e0ffc96c383a" name="aa8ed73b5dc95ed8c5989e0ffc96c383a"></a>
@@ -648,7 +955,46 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented in <a class="el" href="classmoonray_1_1shading_1_1_glitter_g_g_x_cook_torrance_bsdf_lobe.html#a656e6e3d27f3533b309155caed9fbcf3">moonray::shading::GlitterGGXCookTorranceBsdfLobe</a>, and <a class="el" href="classmoonray_1_1shading_1_1_aniso_cook_torrance_bsdf_lobe.html#a6fee3966100b262a8aac21d52e89a60c">moonray::shading::AnisoCookTorranceBsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_cook_torrance_8cc_source.html#l00345">345</a> of file <a class="el" href="_bsdf_cook_torrance_8cc_source.html">BsdfCookTorrance.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  346</span>{</div>
+<div class="line"><span class="lineno">  347</span>    <span class="keywordtype">bool</span> handled = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  348</span> </div>
+<div class="line"><span class="lineno">  349</span>    <span class="keywordflow">switch</span> (property)</div>
+<div class="line"><span class="lineno">  350</span>    {</div>
+<div class="line"><span class="lineno">  351</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fa89a6b964bfa5d53524e65ce5049eca96">PROPERTY_ROUGHNESS</a>:</div>
+<div class="line"><span class="lineno">  352</span>        *dest       = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ac7bb3ad2b72a33dfe65adcaddf861bbf">mInputRoughness</a>;</div>
+<div class="line"><span class="lineno">  353</span>        *(dest + 1) = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ac7bb3ad2b72a33dfe65adcaddf861bbf">mInputRoughness</a>;</div>
+<div class="line"><span class="lineno">  354</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  355</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fad2f7ee852fac86eed528a89be06c56fa">PROPERTY_NORMAL</a>:</div>
+<div class="line"><span class="lineno">  356</span>        {</div>
+<div class="line"><span class="lineno">  357</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> &amp;N = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4aac90db9119907cf7cbab09d66d689b">mFrame</a>.getN();</div>
+<div class="line"><span class="lineno">  358</span>            *dest       = N.x;</div>
+<div class="line"><span class="lineno">  359</span>            *(dest + 1) = N.y;</div>
+<div class="line"><span class="lineno">  360</span>            *(dest + 2) = N.z;</div>
+<div class="line"><span class="lineno">  361</span>        }</div>
+<div class="line"><span class="lineno">  362</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  363</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fa9dced840d3739cc5841cbdc187c09b55">PROPERTY_PBR_VALIDITY</a>:</div>
+<div class="line"><span class="lineno">  364</span>        {</div>
+<div class="line"><span class="lineno">  365</span>            <span class="keyword">const</span> Fresnel* fresnel = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">getFresnel</a>();</div>
+<div class="line"><span class="lineno">  366</span>            <span class="comment">// Get the property from the fresnel object</span></div>
+<div class="line"><span class="lineno">  367</span>            Color res = scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">  368</span>            <span class="keywordflow">if</span> (fresnel) {</div>
+<div class="line"><span class="lineno">  369</span>                res = fresnel-&gt;computePbrValidity();</div>
+<div class="line"><span class="lineno">  370</span>            }</div>
+<div class="line"><span class="lineno">  371</span>            *dest       = res.r;</div>
+<div class="line"><span class="lineno">  372</span>            *(dest + 1) = res.g;</div>
+<div class="line"><span class="lineno">  373</span>            *(dest + 2) = res.b;</div>
+<div class="line"><span class="lineno">  374</span>        }</div>
+<div class="line"><span class="lineno">  375</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  376</span>    <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  377</span>        handled = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a5f94646dff64ff6b9539c9baac68135e">BsdfLobe::getProperty</a>(property, dest);</div>
+<div class="line"><span class="lineno">  378</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  379</span>    }</div>
+<div class="line"><span class="lineno">  380</span> </div>
+<div class="line"><span class="lineno">  381</span>    <span class="keywordflow">return</span> handled;</div>
+<div class="line"><span class="lineno">  382</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a1325952270070249bd3a4197660a1d7b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">moonray::shading::BsdfLobe::getFresnel</a></div><div class="ttdeci">finline const Fresnel * getFresnel() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00164">Bsdf.h:164</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a5f94646dff64ff6b9539c9baac68135e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a5f94646dff64ff6b9539c9baac68135e">moonray::shading::BsdfLobe::getProperty</a></div><div class="ttdeci">virtual bool getProperty(Property property, float *dest) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8cc_source.html#l00056">Bsdf.cc:56</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af5df4d104901d3890d40a6a8fe36134a" name="af5df4d104901d3890d40a6a8fe36134a"></a>
@@ -717,7 +1063,40 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented in <a class="el" href="classmoonray_1_1shading_1_1_g_g_x_cook_torrance_bsdf_lobe.html#a9a85047ba853e909abf1f32f3c998d74">moonray::shading::GGXCookTorranceBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_glitter_g_g_x_cook_torrance_bsdf_lobe.html#a91952d70127981cf4f0943ac5eda2ced">moonray::shading::GlitterGGXCookTorranceBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_berry_cook_torrance_bsdf_lobe.html#a28746646673c11b5009461c81c107d3a">moonray::shading::BerryCookTorranceBsdfLobe</a>, and <a class="el" href="classmoonray_1_1shading_1_1_aniso_cook_torrance_bsdf_lobe.html#a8ed58985c6780b2f6e2eae2786299102">moonray::shading::AnisoCookTorranceBsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_cook_torrance_8cc_source.html#l00202">202</a> of file <a class="el" href="_bsdf_cook_torrance_8cc_source.html">BsdfCookTorrance.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  204</span>{</div>
+<div class="line"><span class="lineno">  205</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> cosNO = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4aac90db9119907cf7cbab09d66d689b">mFrame</a>.getN(), slice.getWo());</div>
+<div class="line"><span class="lineno">  206</span>    <span class="keywordflow">if</span> (cosNO &lt;= 0.0f) {</div>
+<div class="line"><span class="lineno">  207</span>        wi = <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a>(zero);</div>
+<div class="line"><span class="lineno">  208</span>        pdf = 0.0f;</div>
+<div class="line"><span class="lineno">  209</span>        <span class="keywordflow">return</span> sBlack;</div>
+<div class="line"><span class="lineno">  210</span>    }</div>
+<div class="line"><span class="lineno">  211</span> </div>
+<div class="line"><span class="lineno">  212</span>    <span class="comment">// One Sample between energy compensation and regular</span></div>
+<div class="line"><span class="lineno">  213</span>    <span class="comment">// microfacet distribution sampling</span></div>
+<div class="line"><span class="lineno">  214</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> w2 = <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#acf490497dc04b110eb9ae6139463807b">energyCompensationWeight</a>();</div>
+<div class="line"><span class="lineno">  215</span>    <span class="keywordflow">if</span> (r1 &lt; w2) {</div>
+<div class="line"><span class="lineno">  216</span>        r1 = r1 / w2;</div>
+<div class="line"><span class="lineno">  217</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a8adb729072b709af63bae2defc2304bd">sampleEnergyCompensation</a>(ispc::MICROFACET_DISTRIBUTION_BECKMANN,</div>
+<div class="line"><span class="lineno">  218</span>                                 slice.getWo(), r1, r2, wi);</div>
+<div class="line"><span class="lineno">  219</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  220</span> </div>
+<div class="line"><span class="lineno">  221</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> w1 = (1.0f - w2);</div>
+<div class="line"><span class="lineno">  222</span>        r1 = (r1 - w2) / w1;</div>
+<div class="line"><span class="lineno">  223</span> </div>
+<div class="line"><span class="lineno">  224</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> m;</div>
+<div class="line"><span class="lineno">  225</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a9ba643f758ad88b4d4d8e02bec27862f">computeBeckmannMicrofacet</a>(r1, r2, cosNO, m);</div>
+<div class="line"><span class="lineno">  226</span>        <span class="comment">// Compute reflection direction about the half vector</span></div>
+<div class="line"><span class="lineno">  227</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a0130da59a590ff99d74c83ce16184f46">computeReflectionDirection</a>(m, slice.getWo(), wi);</div>
+<div class="line"><span class="lineno">  228</span>    }</div>
+<div class="line"><span class="lineno">  229</span> </div>
+<div class="line"><span class="lineno">  230</span>    Color brdf = <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a61ba86b9a195ecb6b71c289d16f2a8c0">eval</a>(slice, wi, &amp;pdf);</div>
+<div class="line"><span class="lineno">  231</span>    <span class="keywordflow">return</span> brdf;</div>
+<div class="line"><span class="lineno">  232</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_a61ba86b9a195ecb6b71c289d16f2a8c0"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a61ba86b9a195ecb6b71c289d16f2a8c0">moonray::shading::CookTorranceBsdfLobe::eval</a></div><div class="ttdeci">virtual scene_rdl2::math::Color eval(const BsdfSlice &amp;slice, const scene_rdl2::math::Vec3f &amp;wi, float *pdf=NULL) const override</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8cc_source.html#l00109">BsdfCookTorrance.cc:109</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_a8adb729072b709af63bae2defc2304bd"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a8adb729072b709af63bae2defc2304bd">moonray::shading::CookTorranceBsdfLobe::sampleEnergyCompensation</a></div><div class="ttdeci">void sampleEnergyCompensation(ispc::MicrofacetDistribution type, const scene_rdl2::math::Vec3f &amp;wo, float r1, float r2, scene_rdl2::math::Vec3f &amp;wi) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8cc_source.html#l00275">BsdfCookTorrance.cc:275</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_a9ba643f758ad88b4d4d8e02bec27862f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a9ba643f758ad88b4d4d8e02bec27862f">moonray::shading::CookTorranceBsdfLobe::computeBeckmannMicrofacet</a></div><div class="ttdeci">void computeBeckmannMicrofacet(float r1, float r2, float cosNO, scene_rdl2::math::Vec3f &amp;m) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8cc_source.html#l00088">BsdfCookTorrance.cc:88</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a0130da59a590ff99d74c83ce16184f46"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a0130da59a590ff99d74c83ce16184f46">moonray::shading::computeReflectionDirection</a></div><div class="ttdeci">finline float computeReflectionDirection(const scene_rdl2::math::Vec3f &amp;N, const scene_rdl2::math::Vec3f &amp;wo, scene_rdl2::math::Vec3f &amp;wi)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00295">Util.h:295</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8adb729072b709af63bae2defc2304bd" name="a8adb729072b709af63bae2defc2304bd"></a>
@@ -773,7 +1152,28 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_cook_torrance_8cc_source.html#l00275">275</a> of file <a class="el" href="_bsdf_cook_torrance_8cc_source.html">BsdfCookTorrance.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  280</span>{</div>
+<div class="line"><span class="lineno">  281</span>    MNRY_ASSERT(!isBlack(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#abaa6d2b2e4d94fc5b3c66fba765601d7">mFavg</a>),</div>
+<div class="line"><span class="lineno">  282</span>               <span class="stringliteral">&quot;Should not be called with a black Favg\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  283</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a1dd8dce41df6ddb6f3fa47294a01f7aa">mCoupledWithTransmission</a>) {</div>
+<div class="line"><span class="lineno">  284</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_transmission_cook_torrance_energy_compensation.html#a885e0fe06d6e3f9f4d21909d59ab60f6">TransmissionCookTorranceEnergyCompensation::sampleR</a>(</div>
+<div class="line"><span class="lineno">  285</span>                wo,</div>
+<div class="line"><span class="lineno">  286</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4aac90db9119907cf7cbab09d66d689b">mFrame</a>,</div>
+<div class="line"><span class="lineno">  287</span>                r1, r2,</div>
+<div class="line"><span class="lineno">  288</span>                wi,</div>
+<div class="line"><span class="lineno">  289</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ac7bb3ad2b72a33dfe65adcaddf861bbf">mInputRoughness</a>,</div>
+<div class="line"><span class="lineno">  290</span>                <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ae0463346072f1e6e626e9ab622ce79b9">mEtaI</a>, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#afebea56aa3c849611d6952d15b377486">mEtaT</a>);</div>
+<div class="line"><span class="lineno">  291</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  292</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html#ab25aaf48fa15e3cc3ccb0459dcca1d78">CookTorranceEnergyCompensation::sample</a>(type,</div>
+<div class="line"><span class="lineno">  293</span>                                               <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4aac90db9119907cf7cbab09d66d689b">mFrame</a>,</div>
+<div class="line"><span class="lineno">  294</span>                                               r1, r2,</div>
+<div class="line"><span class="lineno">  295</span>                                               <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ac7bb3ad2b72a33dfe65adcaddf861bbf">mInputRoughness</a>,</div>
+<div class="line"><span class="lineno">  296</span>                                               wi);</div>
+<div class="line"><span class="lineno">  297</span>    }</div>
+<div class="line"><span class="lineno">  298</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_energy_compensation_html_ab25aaf48fa15e3cc3ccb0459dcca1d78"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html#ab25aaf48fa15e3cc3ccb0459dcca1d78">moonray::shading::CookTorranceEnergyCompensation::sample</a></div><div class="ttdeci">static void sample(ispc::MicrofacetDistribution type, const scene_rdl2::math::ReferenceFrame &amp;frame, float r1, float r2, float roughness, scene_rdl2::math::Vec3f &amp;wi)</div><div class="ttdef"><b>Definition:</b> <a href="_cook_torrance_energy_compensation_8cc_source.html#l00076">CookTorranceEnergyCompensation.cc:76</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_transmission_cook_torrance_energy_compensation_html_a885e0fe06d6e3f9f4d21909d59ab60f6"><div class="ttname"><a href="classmoonray_1_1shading_1_1_transmission_cook_torrance_energy_compensation.html#a885e0fe06d6e3f9f4d21909d59ab60f6">moonray::shading::TransmissionCookTorranceEnergyCompensation::sampleR</a></div><div class="ttdeci">static void sampleR(const scene_rdl2::math::Vec3f &amp;wo, const scene_rdl2::math::ReferenceFrame &amp;frame, float r1, float r2, scene_rdl2::math::Vec3f &amp;wi, float r, float etaI, float etaT)</div><div class="ttdef"><b>Definition:</b> <a href="_transmission_cook_torrance_energy_compensation_8cc_source.html#l00150">TransmissionCookTorranceEnergyCompensation.cc:150</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3946071bddf88871a187d150d56c04ea" name="a3946071bddf88871a187d150d56c04ea"></a>
@@ -815,7 +1215,22 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented in <a class="el" href="classmoonray_1_1shading_1_1_g_g_x_cook_torrance_bsdf_lobe.html#a728dbcf7299202ca75ed57a76c28c7e6">moonray::shading::GGXCookTorranceBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_glitter_g_g_x_cook_torrance_bsdf_lobe.html#a5abf01e13e4c291b645fa0be816eaee0">moonray::shading::GlitterGGXCookTorranceBsdfLobe</a>, <a class="el" href="classmoonray_1_1shading_1_1_berry_cook_torrance_bsdf_lobe.html#a23405639529d23184020df45bd9f04b8">moonray::shading::BerryCookTorranceBsdfLobe</a>, and <a class="el" href="classmoonray_1_1shading_1_1_aniso_cook_torrance_bsdf_lobe.html#a8977c49fb604f78f9a5fab8568955d21">moonray::shading::AnisoCookTorranceBsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_cook_torrance_8h_source.html#l00068">68</a> of file <a class="el" href="_bsdf_cook_torrance_8h_source.html">BsdfCookTorrance.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   69</span>    {</div>
+<div class="line"><span class="lineno">   70</span>        <span class="keyword">const</span> scene_rdl2::math::Color&amp; scale = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aec44d64391394390189c9f6bbc42f671">getScale</a>();</div>
+<div class="line"><span class="lineno">   71</span>        <span class="keyword">const</span> scene_rdl2::math::Vec3f&amp; N = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4aac90db9119907cf7cbab09d66d689b">mFrame</a>.getN();</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keyword">const</span> Fresnel * fresnel = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">getFresnel</a>();</div>
+<div class="line"><span class="lineno">   73</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;[CookTorranceBsdfLobe]\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   74</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;scale: &quot;</span></div>
+<div class="line"><span class="lineno">   75</span>            &lt;&lt; scale.r &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; scale.g &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; scale.b &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   76</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;N: &quot;</span></div>
+<div class="line"><span class="lineno">   77</span>            &lt;&lt; N.x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; N.y &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; N.z &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   78</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;roughness^2: &quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aab4d429e3c619864ed411778325a99f9">mRoughness</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">if</span> (fresnel) {</div>
+<div class="line"><span class="lineno">   80</span>            fresnel-&gt;show(os, indent + <span class="stringliteral">&quot;    &quot;</span>);</div>
+<div class="line"><span class="lineno">   81</span>        }</div>
+<div class="line"><span class="lineno">   82</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_aec44d64391394390189c9f6bbc42f671"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aec44d64391394390189c9f6bbc42f671">moonray::shading::BsdfLobe::getScale</a></div><div class="ttdeci">finline const scene_rdl2::math::Color &amp; getScale() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00160">Bsdf.h:160</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5d5623334aa1d03f58b3611a21bdfae6" name="a5d5623334aa1d03f58b3611a21bdfae6"></a>
@@ -853,7 +1268,14 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_cook_torrance_8h_source.html#l00087">87</a> of file <a class="el" href="_bsdf_cook_torrance_8h_source.html">BsdfCookTorrance.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   88</span>    {</div>
+<div class="line"><span class="lineno">   89</span><span class="preprocessor">    #if PBR_CT_SAMPLE_WIDENED_ROUGHNESS</span></div>
+<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">return</span> (1.2f - 0.2f * scene_rdl2::math::sqrt(cosNO)) * roughness;</div>
+<div class="line"><span class="lineno">   91</span><span class="preprocessor">    #else</span></div>
+<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">return</span> roughness;</div>
+<div class="line"><span class="lineno">   93</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">   94</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1174,9 +1596,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/bsdf/cook_torrance/<a class="el" href="_bsdf_cook_torrance_8cc_source.html">BsdfCookTorrance.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html">CookTorranceBsdfLobe</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

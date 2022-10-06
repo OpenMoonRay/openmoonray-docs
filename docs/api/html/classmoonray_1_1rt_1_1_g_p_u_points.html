@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rt.html">rt</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_points.html">GPUPoints</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1rt_1_1_g_p_u_points.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -137,7 +153,12 @@ Public Attributes</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1rt_1_1_g_p_u_custom_primitive.html#a39c8f9cef645b36d46e7011d39a533b5">moonray::rt::GPUCustomPrimitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_g_p_u_primitive_8cc_source.html#l00076">76</a> of file <a class="el" href="_g_p_u_primitive_8cc_source.html">GPUPrimitive.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   77</span>{</div>
+<div class="line"><span class="lineno">   78</span>    <a class="code hl_function" href="namespacemoonray_1_1rt.html#a5fb0204ffd3313e82b3b51c0539dc73a">clearMemory</a>(<a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#ae4a96588fb2b6b72f8ff0ffd7d9c274e">mHostPoints</a>);</div>
+<div class="line"><span class="lineno">   79</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1rt_1_1_g_p_u_points_html_ae4a96588fb2b6b72f8ff0ffd7d9c274e"><div class="ttname"><a href="classmoonray_1_1rt_1_1_g_p_u_points.html#ae4a96588fb2b6b72f8ff0ffd7d9c274e">moonray::rt::GPUPoints::mHostPoints</a></div><div class="ttdeci">std::vector&lt; float4 &gt; mHostPoints</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_primitive_8h_source.html#l00149">GPUPrimitive.h:149</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1rt_html_a5fb0204ffd3313e82b3b51c0539dc73a"><div class="ttname"><a href="namespacemoonray_1_1rt.html#a5fb0204ffd3313e82b3b51c0539dc73a">moonray::rt::clearMemory</a></div><div class="ttdeci">void clearMemory(std::vector&lt; T &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_primitive_8cc_source.html#l00013">GPUPrimitive.cc:13</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a51e9fb153a5c9ac647fc9174adbf8464" name="a51e9fb153a5c9ac647fc9174adbf8464"></a>
@@ -167,7 +188,27 @@ Public Attributes</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1rt_1_1_g_p_u_custom_primitive.html#ac1c59e50abfe2f2a0d753e3665d490d3">moonray::rt::GPUCustomPrimitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_g_p_u_primitive_8cc_source.html#l00057">57</a> of file <a class="el" href="_g_p_u_primitive_8cc_source.html">GPUPrimitive.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   58</span>{</div>
+<div class="line"><span class="lineno">   59</span>    aabbs-&gt;resize(<a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#ae4a96588fb2b6b72f8ff0ffd7d9c274e">mHostPoints</a>.size() / <a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#a613ef1afae5d96c61017d2e11174dea1">mMotionSamplesCount</a>);</div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#ae4a96588fb2b6b72f8ff0ffd7d9c274e">mHostPoints</a>.size() / <a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#a613ef1afae5d96c61017d2e11174dea1">mMotionSamplesCount</a>; i++) {</div>
+<div class="line"><span class="lineno">   62</span>        OptixAabb &amp;bb = (*aabbs)[i];</div>
+<div class="line"><span class="lineno">   63</span>        bb = <a class="code hl_function" href="_g_p_u_math_8h.html#a5f7970132612e4be61c13a005d84b127">emptyAabb</a>();</div>
+<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ms = 0; ms &lt; <a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#a613ef1afae5d96c61017d2e11174dea1">mMotionSamplesCount</a>; ms++) {</div>
+<div class="line"><span class="lineno">   65</span>            <span class="keywordtype">size_t</span> idx = i * <a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#a613ef1afae5d96c61017d2e11174dea1">mMotionSamplesCount</a> + ms;</div>
+<div class="line"><span class="lineno">   66</span>            float3 point = <a class="code hl_function" href="_g_p_u_math_8h.html#af0b6a520b26caa2922d64fec42af9077">make_float3</a>(<a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#ae4a96588fb2b6b72f8ff0ffd7d9c274e">mHostPoints</a>[idx]);</div>
+<div class="line"><span class="lineno">   67</span>            <span class="keywordtype">float</span> radius = <a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#ae4a96588fb2b6b72f8ff0ffd7d9c274e">mHostPoints</a>[idx].w;</div>
+<div class="line"><span class="lineno">   68</span>            OptixAabb sampleBB = {point.x - radius, point.y - radius, point.z - radius,</div>
+<div class="line"><span class="lineno">   69</span>                                  point.x + radius, point.y + radius, point.z + radius};</div>
+<div class="line"><span class="lineno">   70</span>            bb = <a class="code hl_function" href="_g_p_u_math_8h.html#ade4f32927b6a2462fb915e872f855a65">combineAabbs</a>(bb, sampleBB);</div>
+<div class="line"><span class="lineno">   71</span>        }</div>
+<div class="line"><span class="lineno">   72</span>    }</div>
+<div class="line"><span class="lineno">   73</span>}</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a5f7970132612e4be61c13a005d84b127"><div class="ttname"><a href="_g_p_u_math_8h.html#a5f7970132612e4be61c13a005d84b127">emptyAabb</a></div><div class="ttdeci">__host__ __device__ OptixAabb emptyAabb()</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00239">GPUMath.h:239</a></div></div>
+<div class="ttc" id="a_g_p_u_math_8h_html_ade4f32927b6a2462fb915e872f855a65"><div class="ttname"><a href="_g_p_u_math_8h.html#ade4f32927b6a2462fb915e872f855a65">combineAabbs</a></div><div class="ttdeci">__host__ __device__ OptixAabb combineAabbs(const OptixAabb &amp;bb0, const OptixAabb &amp;bb1)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00256">GPUMath.h:256</a></div></div>
+<div class="ttc" id="a_g_p_u_math_8h_html_af0b6a520b26caa2922d64fec42af9077"><div class="ttname"><a href="_g_p_u_math_8h.html#af0b6a520b26caa2922d64fec42af9077">make_float3</a></div><div class="ttdeci">__host__ __device__ float3 make_float3(const float4 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00225">GPUMath.h:225</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1rt_1_1_g_p_u_points_html_a613ef1afae5d96c61017d2e11174dea1"><div class="ttname"><a href="classmoonray_1_1rt_1_1_g_p_u_points.html#a613ef1afae5d96c61017d2e11174dea1">moonray::rt::GPUPoints::mMotionSamplesCount</a></div><div class="ttdeci">int mMotionSamplesCount</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_primitive_8h_source.html#l00146">GPUPrimitive.h:146</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -224,9 +265,13 @@ Public Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/rt/gpu/<a class="el" href="_g_p_u_primitive_8cc_source.html">GPUPrimitive.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rt.html">rt</a></li><li class="navelem"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_points.html">GPUPoints</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

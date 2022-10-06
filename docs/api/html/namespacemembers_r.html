@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,6 +43,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('namespacemembers_r.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="contents">
 <div class="textblock">Here is a list of all namespace members with links to the namespace documentation for each member:</div>
 
@@ -54,6 +74,7 @@ $(function() {
 <li>randomPixel()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a5bbe3ecb58bb1f486f777bb5b1a86322">moonray::pbr</a></li>
 <li>randomPoint()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#ab90fba14e2e05da15a9e07a3597aad84">moonray::pbr</a></li>
 <li>randomTime()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a5a068d8837c76137064487c4196b0a7d">moonray::pbr</a></li>
+<li>rangeAngle()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a007c5b1f553cd5d908c147ffb973c360">moonray::shading</a></li>
 <li>RATE_CONSTANT&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aad5e07f1780999e2d974e8d1ece5fe8bc">moonray::shading</a></li>
 <li>RATE_FACE_VARYING&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aac24e157886f371409e90e8217fb71a7a">moonray::shading</a></li>
 <li>RATE_LAST&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a672e4fc4798efc5e148e0d6ba1e8198aa796d4986ffc3eb34336f1c90d43d9f89">moonray::shading</a></li>
@@ -76,30 +97,42 @@ $(function() {
 <li>RayStateIndex&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a4cd9afd953100b5ac47d23e5cdd6427a">moonray::shading</a></li>
 <li>RayStatePool&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a9d11d40c692b2f43b2931c09d34f45e6">moonray::pbr</a></li>
 <li>rayStateToIndex()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#aa0d6b94f493be30b82115d9451c877c8">moonray::pbr</a></li>
+<li>Rd()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a0f9596cc4ce53f723d048eef053f40b8">moonray::shading</a></li>
+<li>read()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a429e5dad64b881d2fdccdef90364d5cd">moonray::pbr::anonymous_namespace{DebugRay.cc}</a></li>
 <li>readBinaryFile()&#160;:&#160;<a class="el" href="namespaceconvert__samples__to__array.html#ac588475376ce98144cb7cf0c01fa6ec3">convert_samples_to_array</a></li>
+<li>readGrid()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_open_vdb_sampler_8cc_03.html#aefc01433ffdda4fad86fd0f1656a40f5">anonymous_namespace{OpenVdbSampler.cc}</a></li>
 <li>readPixelBuffer()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#ae7b7ecb56ba3f40aa50774dec0225dc3">moonray::rndr</a></li>
 <li>readPixelBuffer&lt; scene_rdl2::fb_util::FloatBuffer &gt;()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#af5bcf777576076b95b782d72b6756545">moonray::rndr</a></li>
 <li>readPixelBuffer&lt; scene_rdl2::fb_util::RenderBuffer &gt;()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a497cea3506b8580d587b11ff92fc50bd">moonray::rndr</a></li>
 <li>readPixelBuffer&lt; scene_rdl2::fb_util::Rgb888Buffer &gt;()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#ab2920de137f905efd0c3a19e067e89f8">moonray::rndr</a></li>
+<li>readRawData()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a2c740bb05bfafde7e78f460ef4b0a3b7">moonray::pbr::anonymous_namespace{DebugRay.cc}</a></li>
+<li>realfile()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_render_output_driver_8cc_03.html#a07d48696977c922b878b5ccda9650891">anonymous_namespace{RenderOutputDriver.cc}</a></li>
+<li>reduce_max()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_driver_snapshot_delta_8cc_03.html#a9d9f3dd80efdc0d7022eee2775f885ae">moonray::rndr::anonymous_namespace{RenderDriverSnapshotDelta.cc}</a></li>
 <li>reduceTransparency()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#aa1a9a8910c33ad13fe5eb4e367e60e44">moonray::pbr</a></li>
 <li>ReferenceAssignments&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal.html#a6390d6af1880e71b474f3b76dabe1247">moonray::geom::internal</a></li>
+<li>refineProgressivePasses()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_driver_8cc_03.html#ab07d3a250571ada6083069b948acb0a3">moonray::rndr::anonymous_namespace{RenderDriver.cc}</a></li>
+<li>Reflectance()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_normalized_diffusion_8cc_03.html#a736ebc3d34cf01ed072dc6cf6b7181bd">anonymous_namespace{NormalizedDiffusion.cc}</a></li>
 <li>Regtype&#160;:&#160;<a class="el" href="namespacelpexp.html#a17a89e98bfd8d490194978fa7b72f76c">lpexp</a></li>
 <li>removePriorityMaterial()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#ad6761f92f2b36677d6df7abfb9426b07">moonray::pbr</a></li>
-<li>removeUnassignedFaces()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom.html#a394192fde2bcb46ddcac2a4a65fd5ea2">moonray::geom</a></li>
+<li>removeUnassignedFaces()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom.html#a93c53f64bca6a9043859e2950a84114f">moonray::geom</a></li>
+<li>RENDER_SETUP_KEY&#160;:&#160;<a class="el" href="namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#add8776b0ca1c2d9f7984514fe2c0cbeb">moonray::anonymous_namespace{McrtRtComputation.cc}</a></li>
 <li>RenderColor&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a9ce4111b146c8f0bcacc1e45b5d35f19">moonray::pbr</a></li>
 <li>RenderMode&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#ab482b33a0962d149bab8d070686979de">moonray::rndr</a></li>
 <li>renderOutputImageEncoding()&#160;:&#160;<a class="el" href="namespacemoonray_1_1mcrt__comp.html#a51101292e2ad3819dce17bb252d79ecc">moonray::mcrt_comp</a></li>
 <li>RenderTimer&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a0bd83d813fbc35371bdc5de4f3128b8a">moonray::rndr</a></li>
 <li>REPEAT&#160;:&#160;<a class="el" href="namespacelpexp.html#a17a89e98bfd8d490194978fa7b72f76ca9cd28f6f4bbf73f742afb9a6a3c89f44">lpexp</a></li>
+<li>representation_t&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02test__ring__buffer_8cc_03_1_1timing.html#a5436ae7de8b411b4518c187abfe3b78b">anonymous_namespace{test_ring_buffer.cc}::timing</a></li>
 <li>requires&#160;:&#160;<a class="el" href="namespacepackage.html#a747832de338b4a01ff235c9f92777427">package</a></li>
 <li>resetAllAccumulators()&#160;:&#160;<a class="el" href="namespacemoonray_1_1mcrt__common.html#aef5ecc7247d870fc38ef03246c27665d">moonray::mcrt_common</a></li>
 <li>resetPools()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a0095d7152f0be67f936a8ecad0dd6844">moonray::pbr</a></li>
 <li>resizeTest()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1unittest.html#aef3b56c05061f7778b940b6b52e23581">moonray::geom::unittest</a></li>
 <li>resizeTest3fa()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1unittest.html#a7b037cf6e07f9bd323c896d5acba82a6">moonray::geom::unittest</a></li>
-<li>rotate&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#ac8273c637c0158da61fda38a27a79294">animate_plot</a></li>
+<li>ResultQueueType&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#a03db8e86d136d12cfd7a4b3d07329eef">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}</a></li>
+<li>rotate&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#ac8273c637c0158da61fda38a27a79294">animate_plot</a>, <a class="el" href="namespacemoonray_1_1shading.html#ad245c2998c12ed4d733f917b9bca9df0">moonray::shading</a></li>
 <li>rotate16()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a5623f396207a095fe06473c7e13ec1e5">moonray::pbr</a></li>
 <li>rotate2D()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a636df90f0eceb84be1a8f33fc0e8b1bf">moonray::pbr</a></li>
 <li>rotate_line()&#160;:&#160;<a class="el" href="namespaceanimate__plot.html#a8db33c611e71ed2e38625d2b2210b75a">animate_plot</a></li>
+<li>rotateVector()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_bsdf_toon_8cc_03.html#ad6c28876e8c37af22e38db642ef773f9">anonymous_namespace{BsdfToon.cc}</a></li>
 <li>roughness2Exponent()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a0d940cfd776c902e2d3cb37c55f6ba2a">moonray::shading</a></li>
 <li>roughness2Width()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#aa1073dc167e3fb900d81a614444e7dac">moonray::shading</a></li>
 <li>roundDownPower2()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1_pixel_scramble_n_s.html#af8fc1c94c14fadc4a0cb75ff32b32a54">moonray::pbr::PixelScrambleNS</a></li>
@@ -107,16 +140,28 @@ $(function() {
 <li>roundDownPower2MaxShift()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1_pixel_scramble_n_s.html#ab34b0336f6669aea3680977bb09924be">moonray::pbr::PixelScrambleNS</a></li>
 <li>roundFloat()&#160;:&#160;<a class="el" href="namespacemoonray_1_1mcrt__common.html#a7c17b1223430113d0ab4a542a56fdc55">moonray::mcrt_common</a></li>
 <li>roundUp()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#ac257d4e1580606da1b2908659123e23d">moonray::rndr</a>, <a class="el" href="namespacemoonray_1_1util.html#a7dbb36184a8a0f3ca11989fa3bb4ebc7">moonray::util</a></li>
-<li>roundUpDivision()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a1f1fbbb035b6cf41cfe512af62b244d7">moonray::rndr</a></li>
+<li>roundUpDivision()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_tile_work_queue_8cc_03.html#a2c93fed52c1daba2d216434eada2628f">moonray::rndr::anonymous_namespace{TileWorkQueue.cc}</a>, <a class="el" href="namespacemoonray_1_1rndr.html#a1f1fbbb035b6cf41cfe512af62b244d7">moonray::rndr</a></li>
 <li>roundUpPower2()&#160;:&#160;<a class="el" href="namespacemoonray_1_1util.html#a62eb78eff06de765463aee8f65f263ae">moonray::util</a></li>
 <li>rtInverse()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#ad319b9f67a7ae6e6f93741b03ffa35eb">moonray::pbr</a></li>
 <li>runBsdfTest()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#af0d9678b6d7a964fbf3344c37aa46c1d">moonray::pbr</a></li>
+<li>runConsumer()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#a284dc57b116f4a6917ba1910daf76598">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}</a></li>
+<li>runProducer()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#a60485b8a207b188ee3844a3ff862ac8a">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}</a></li>
+<li>runTasks()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_bsdf_common_8cc_03.html#a458d37ca880684f07ab7db2ea0ea2ff9">moonray::pbr::anonymous_namespace{TestBsdfCommon.cc}</a></li>
+<li>runTest()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#ad73efe508ba70b16fc2516603ce9bfae">moonray::pbr</a></li>
+<li>runTestAdd()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02test__atomic__functions_8cc_03.html#a67a1f41f0e6d148dafe59238b0d1af7b">anonymous_namespace{test_atomic_functions.cc}</a></li>
+<li>runTestClosest()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02test__atomic__functions_8cc_03.html#a3b6c211052f5e82bdd9d20d9cb3b1170">anonymous_namespace{test_atomic_functions.cc}</a></li>
+<li>runTestMax()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02test__atomic__functions_8cc_03.html#a00ebd4453277b2f9ac245bb07efae1ac">anonymous_namespace{test_atomic_functions.cc}</a></li>
+<li>runTestMin()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02test__atomic__functions_8cc_03.html#a7a22c3f9d1b2ac43c7051d3610d855d9">anonymous_namespace{test_atomic_functions.cc}</a></li>
 <li>runTestOnSinglePoint()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a68931d7c39dee748d45ecde26e9e3320">moonray::pbr</a></li>
+<li>runTests()&#160;:&#160;<a class="el" href="namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_test_aos_soa_8cc_03.html#a993a4d7ab55ce90870bf7be014476a80">moonray::mcrt_common::anonymous_namespace{TestAosSoa.cc}</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

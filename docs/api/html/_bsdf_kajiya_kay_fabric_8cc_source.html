@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_3ffafe8d4194a26e471fc283bfe39627.html">shading</a></li><li class="navelem"><a class="el" href="dir_dc7d4ea0feddfdece5425e1d6c4bcd38.html">bsdf</a></li><li class="navelem"><a class="el" href="dir_e5cbe7d1b5cdbd18dc2f0996dbbdcdc4.html">fabric</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_bsdf_kajiya_kay_fabric_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">BsdfKajiyaKayFabric.cc</div></div>
 </div><!--header-->
@@ -50,7 +66,12 @@ $(function() {
 <a href="_bsdf_kajiya_kay_fabric_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2002-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file FabricBsdfLobe.cc</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Priyamvad Deshmukh</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// $Id$</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">///</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_bsdf_fabric_8h.html">BsdfFabric.h</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
@@ -59,8 +80,13 @@ $(function() {
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>shading {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacescene__rdl2_1_1math.html">scene_rdl2::math</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"></span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">///</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/// @class KajiyaKayFabricBsdfLobe BsdfFabric.h &lt;pbr/fabric/BsdfFabric.h&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/// @brief The KajiyaKay Cosine Specular Lobe  - cos(thetaD)^N</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/// thetaD = thetaO - thetaIPrime, theta wrt hair tangent</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">///</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"></span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// Based on the paper - &quot;Rendering fur with three dimensional textures&quot; (Kajiya et al)</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// https://www.cs.drexel.edu/~david/Classes/CS586/Papers/p271-kajiya.pdf</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// Note - we include a custom normalization factor that we&#39;ve calculated for this model.</span></div>
@@ -84,12 +110,12 @@ $(function() {
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">// Walter et al, EGSR 2007, &quot;Microfacet Models for Refraction through Rough Surfaces&quot;</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a744f4483aa82d7d75ce03ac40e7073e0">mSpecularExponent</a> = 2.0*oneOverR2*oneOverR2;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    calculateNormalizationFactor();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_function" href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#a6441f28bc55d967fcb6b602c5c6b41fe">calculateNormalizationFactor</a>();</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">// Initialize Specular Exponent and NormalizationFactor</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>KajiyaKayFabricBsdfLobe::calculateNormalizationFactor()</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#a6441f28bc55d967fcb6b602c5c6b41fe">   53</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#a6441f28bc55d967fcb6b602c5c6b41fe">KajiyaKayFabricBsdfLobe::calculateNormalizationFactor</a>()</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// Normalization factor = gamma((n+3)/2) / gamma((n+2)/2) / pi^1.5</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a607a07dac61735b9e4bc9ea41b490e8a">mNormalizationFactor</a> = scene_rdl2::math::exp(lgammaf(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a744f4483aa82d7d75ce03ac40e7073e0">mSpecularExponent</a>*0.5f+1.5f) - lgammaf(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a744f4483aa82d7d75ce03ac40e7073e0">mSpecularExponent</a>*0.5+1.0f));</div>
@@ -176,7 +202,7 @@ $(function() {
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    }</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    Vec3f omegaI;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    sampleVector(slice.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a18a6705047093d3570417b3d7a044712">getWo</a>(), r1, r2, omegaI);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <a class="code hl_function" href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#a73771beb5a7aedfcf655da640e6cc991">sampleVector</a>(slice.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_slice.html#a18a6705047093d3570417b3d7a044712">getWo</a>(), r1, r2, omegaI);</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="comment">// Convert back in Global Space</span></div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    wi = <a class="code hl_function" href="_g_p_u_math_8h.html#a26b3f6b7b842544058f3766b0da79257">normalize</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#a780200f38275fce38c8722f60bb6871a">mFrame</a>.localToGlobal(omegaI));</div>
@@ -185,7 +211,7 @@ $(function() {
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>}</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>KajiyaKayFabricBsdfLobe::sampleVector(<span class="keyword">const</span> Vec3f&amp; wo,</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#a73771beb5a7aedfcf655da640e6cc991">  149</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#a73771beb5a7aedfcf655da640e6cc991">KajiyaKayFabricBsdfLobe::sampleVector</a>(<span class="keyword">const</span> Vec3f&amp; wo,</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                                      <span class="keywordtype">float</span> r1, <span class="keywordtype">float</span> r2,</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                                      Vec3f&amp; wi)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="keyword"></span>{</div>
@@ -242,15 +268,21 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_fabric_bsdf_lobe_html_ae54405f8be2ea83451ad36e6fc68127e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fabric_bsdf_lobe.html#ae54405f8be2ea83451ad36e6fc68127e">moonray::shading::FabricBsdfLobe::safeACos</a></div><div class="ttdeci">float safeACos(float cosTheta) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_fabric_8h_source.html#l00118">BsdfFabric.h:118</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_fresnel_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fresnel.html">moonray::shading::Fresnel</a></div><div class="ttdoc">Base class defining the Fresnel reflectance interface.</div><div class="ttdef"><b>Definition:</b> <a href="_fresnel_8h_source.html#l00055">Fresnel.h:56</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_fresnel_html_aecea7a3533aebf172ef9d37f05d31a03"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fresnel.html#aecea7a3533aebf172ef9d37f05d31a03">moonray::shading::Fresnel::eval</a></div><div class="ttdeci">virtual scene_rdl2::math::Color eval(float cosThetaI) const =0</div><div class="ttdoc">Pass in the dot product between light direction and half-vector.</div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe_html_a6441f28bc55d967fcb6b602c5c6b41fe"><div class="ttname"><a href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#a6441f28bc55d967fcb6b602c5c6b41fe">moonray::shading::KajiyaKayFabricBsdfLobe::calculateNormalizationFactor</a></div><div class="ttdeci">void calculateNormalizationFactor()</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_kajiya_kay_fabric_8cc_source.html#l00053">BsdfKajiyaKayFabric.cc:53</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe_html_a73771beb5a7aedfcf655da640e6cc991"><div class="ttname"><a href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#a73771beb5a7aedfcf655da640e6cc991">moonray::shading::KajiyaKayFabricBsdfLobe::sampleVector</a></div><div class="ttdeci">void sampleVector(const scene_rdl2::math::Vec3f &amp;wo, float r1, float r2, scene_rdl2::math::Vec3f &amp;wi) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_kajiya_kay_fabric_8cc_source.html#l00149">BsdfKajiyaKayFabric.cc:149</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe_html_aac61e34bbb1b67c19abf8d1986dc6ecf"><div class="ttname"><a href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#aac61e34bbb1b67c19abf8d1986dc6ecf">moonray::shading::KajiyaKayFabricBsdfLobe::KajiyaKayFabricBsdfLobe</a></div><div class="ttdeci">KajiyaKayFabricBsdfLobe(const scene_rdl2::math::Vec3f &amp;N, const scene_rdl2::math::Vec3f &amp;T, const scene_rdl2::math::Vec3f &amp;threadDirection, const float threadElevation, const float roughness)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_kajiya_kay_fabric_8cc_source.html#l00031">BsdfKajiyaKayFabric.cc:31</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe_html_ad3f7bdcb60c32ac40c6bfe98ce905f95"><div class="ttname"><a href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#ad3f7bdcb60c32ac40c6bfe98ce905f95">moonray::shading::KajiyaKayFabricBsdfLobe::sample</a></div><div class="ttdeci">scene_rdl2::math::Color sample(const BsdfSlice &amp;slice, float r1, float r2, scene_rdl2::math::Vec3f &amp;wi, float &amp;pdf) const override</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_kajiya_kay_fabric_8cc_source.html#l00128">BsdfKajiyaKayFabric.cc:128</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe_html_ad71d33dc703d407f43f159bcd3317fee"><div class="ttname"><a href="classmoonray_1_1shading_1_1_kajiya_kay_fabric_bsdf_lobe.html#ad71d33dc703d407f43f159bcd3317fee">moonray::shading::KajiyaKayFabricBsdfLobe::eval</a></div><div class="ttdeci">scene_rdl2::math::Color eval(const BsdfSlice &amp;slice, const scene_rdl2::math::Vec3f &amp;wi, float *pdf=NULL) const override</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_kajiya_kay_fabric_8cc_source.html#l00064">BsdfKajiyaKayFabric.cc:64</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1math_html"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html">scene_rdl2::math</a></div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8h_source.html#l00017">InputBuffer.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ffbcf3a8cac23adad179e74a09117904.html">shading</a></li><li class="navelem"><a class="el" href="dir_475738c250334a966655aa4f1c4fd0a3.html">bsdf</a></li><li class="navelem"><a class="el" href="dir_750c930319187b075df5c95ce71aa44c.html">fabric</a></li><li class="navelem"><a class="el" href="_bsdf_kajiya_kay_fabric_8cc.html">BsdfKajiyaKayFabric.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,31 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html">StochasticFlakesBsdfLobe</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::StochasticFlakesBsdfLobe Class Reference</div></div>
 </div><!--header-->
@@ -66,6 +86,11 @@ Inheritance diagram for moonray::shading::StochasticFlakesBsdfLobe:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_1_1_flake_caches.html">FlakeCaches</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aafd251199b22e94088fa90cacdb4d69f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#aafd251199b22e94088fa90cacdb4d69f">StochasticFlakesBsdfLobe</a> (const scene_rdl2::math::Vec3f &amp;N, const scene_rdl2::math::Vec3f *flakeNormals, const scene_rdl2::math::Color *flakeColors, const size_t flakeCount, float roughness, float inputFlakeRandomness)</td></tr>
@@ -142,6 +167,49 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a53e300f416eddc450bef32b46f45e3ef inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_lobe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32cda370918eb2aa16ee7004b6bb7262 inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_lobe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a32cda370918eb2aa16ee7004b6bb7262">show</a> (std::ostream &amp;os, const std::string &amp;indent) const =0</td></tr>
 <tr class="separator:a32cda370918eb2aa16ee7004b6bb7262 inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_lobe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a43fbd048509038dd0683ee26a3fa3a5d"><td class="memItemLeft" align="right" valign="top">finline float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a43fbd048509038dd0683ee26a3fa3a5d">computeD</a> (const <a class="el" href="structmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_1_1_flake_caches.html">FlakeCaches</a> &amp;caches, const scene_rdl2::math::Vec3f &amp;w, scene_rdl2::math::Color &amp;weightedColor, float *reflectionWeight=nullptr, float *totalWeights=nullptr) const</td></tr>
+<tr class="separator:a43fbd048509038dd0683ee26a3fa3a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02f6a9e38b187dbecbb357e981cb1743"><td class="memItemLeft" align="right" valign="top">finline scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a02f6a9e38b187dbecbb357e981cb1743">computeBrdf</a> (const <a class="el" href="classmoonray_1_1shading_1_1_bsdf_slice.html">BsdfSlice</a> &amp;slice, const scene_rdl2::math::Vec3f &amp;wi, const <a class="el" href="structmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_1_1_flake_caches.html">FlakeCaches</a> &amp;cachesWo, const <a class="el" href="structmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_1_1_flake_caches.html">FlakeCaches</a> &amp;cachesWi, float *pdf=NULL) const</td></tr>
+<tr class="memdesc:a02f6a9e38b187dbecbb357e981cb1743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supporting private member functions.  <a href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a02f6a9e38b187dbecbb357e981cb1743">More...</a><br /></td></tr>
+<tr class="separator:a02f6a9e38b187dbecbb357e981cb1743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7617df1a0342b66593b173690253d41e"><td class="memItemLeft" align="right" valign="top">finline bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a7617df1a0342b66593b173690253d41e">computeReflectionCache</a> (const scene_rdl2::math::Vec3f &amp;w, <a class="el" href="structmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_1_1_flake_caches.html">FlakeCaches</a> &amp;caches, bool buildCDF) const</td></tr>
+<tr class="separator:a7617df1a0342b66593b173690253d41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217a84045e95711bd2b3ff06b040ce56"><td class="memItemLeft" align="right" valign="top">finline float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a217a84045e95711bd2b3ff06b040ce56">computeGeometryTerm</a> (const float cosNO, const float cosNI) const</td></tr>
+<tr class="separator:a217a84045e95711bd2b3ff06b040ce56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ac351cd553905c38915175ba7611c6e54"><td class="memItemLeft" align="right" valign="top">static finline scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#ac351cd553905c38915175ba7611c6e54">nMin</a> (const scene_rdl2::math::Color &amp;r)</td></tr>
+<tr class="separator:ac351cd553905c38915175ba7611c6e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d274d92eed88b2aae1aae9fd3a43719"><td class="memItemLeft" align="right" valign="top">static finline scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a2d274d92eed88b2aae1aae9fd3a43719">nMax</a> (const scene_rdl2::math::Color &amp;r)</td></tr>
+<tr class="separator:a2d274d92eed88b2aae1aae9fd3a43719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceb4dbd6b93ae060f23e4a9920589d4f"><td class="memItemLeft" align="right" valign="top">static finline scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#aceb4dbd6b93ae060f23e4a9920589d4f">computeEta</a> (const scene_rdl2::math::Color &amp;r, const scene_rdl2::math::Color &amp;g)</td></tr>
+<tr class="separator:aceb4dbd6b93ae060f23e4a9920589d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6982613f93ef8259c15d8ec5e42a3c51"><td class="memItemLeft" align="right" valign="top">static finline scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a6982613f93ef8259c15d8ec5e42a3c51">computeK</a> (const scene_rdl2::math::Color &amp;r, const scene_rdl2::math::Color &amp;n)</td></tr>
+<tr class="separator:a6982613f93ef8259c15d8ec5e42a3c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a1dc3529a8793304d468507645e7e635d"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::ReferenceFrame&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a1dc3529a8793304d468507645e7e635d">mFrame</a></td></tr>
+<tr class="separator:a1dc3529a8793304d468507645e7e635d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa5582eef59ea76384cdf2836b3bd742"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#afa5582eef59ea76384cdf2836b3bd742">mFlakeRandomness</a></td></tr>
+<tr class="separator:afa5582eef59ea76384cdf2836b3bd742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5db3b40dc13643106bbadabaf4240e2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#af5db3b40dc13643106bbadabaf4240e2">mCosGamma</a></td></tr>
+<tr class="separator:af5db3b40dc13643106bbadabaf4240e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d611471b862a0d03ae348febb93892e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a2d611471b862a0d03ae348febb93892e">mFlakeCount</a></td></tr>
+<tr class="separator:a2d611471b862a0d03ae348febb93892e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d2201ac27b3e6f521c68343afa508a0"><td class="memItemLeft" align="right" valign="top">const scene_rdl2::math::Vec3f *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a4d2201ac27b3e6f521c68343afa508a0">mFlakeNormals</a></td></tr>
+<tr class="separator:a4d2201ac27b3e6f521c68343afa508a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa995502256e2e05c2fb567cd98347b4b"><td class="memItemLeft" align="right" valign="top">const scene_rdl2::math::Color *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#aa995502256e2e05c2fb567cd98347b4b">mFlakeColors</a></td></tr>
+<tr class="separator:aa995502256e2e05c2fb567cd98347b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:aacff0e09cb74514c8d5b68f0a1dbfca2"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#aacff0e09cb74514c8d5b68f0a1dbfca2">sMaxFlakes</a> = 2000</td></tr>
+<tr class="separator:aacff0e09cb74514c8d5b68f0a1dbfca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -245,7 +313,35 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00067">67</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   72</span>                                                         :</div>
+<div class="line"><span class="lineno">   73</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a68e07445ce28319f1e0269d13d0a9c5f">BsdfLobe</a>(<a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">Type</a>(<a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896">REFLECTION</a> | <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa5dfce546f93a2a18aee27e4b801c198b">GLOSSY</a>),</div>
+<div class="line"><span class="lineno">   74</span>                 <a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#ab2ca5c1b46a879084da7aeb7f10d6476">DifferentialFlags</a>(0),</div>
+<div class="line"><span class="lineno">   75</span>                 <span class="keyword">false</span>,</div>
+<div class="line"><span class="lineno">   76</span>                 <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fad2f7ee852fac86eed528a89be06c56fa">PROPERTY_NORMAL</a> | <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fa89a6b964bfa5d53524e65ce5049eca96">PROPERTY_ROUGHNESS</a> |</div>
+<div class="line"><span class="lineno">   77</span>                 <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fa9dced840d3739cc5841cbdc187c09b55">PROPERTY_PBR_VALIDITY</a>),</div>
+<div class="line"><span class="lineno">   78</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a1dc3529a8793304d468507645e7e635d">mFrame</a>(N),</div>
+<div class="line"><span class="lineno">   79</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#afa5582eef59ea76384cdf2836b3bd742">mFlakeRandomness</a>(scene_rdl2::math::max(0.001f, inputFlakeRandomness*inputFlakeRandomness)),</div>
+<div class="line"><span class="lineno">   80</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#af5db3b40dc13643106bbadabaf4240e2">mCosGamma</a>(scene_rdl2::math::min(0.999f, 1.0f - roughness*roughness)),</div>
+<div class="line"><span class="lineno">   81</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a2d611471b862a0d03ae348febb93892e">mFlakeCount</a>(scene_rdl2::math::min(flakeCount, (<span class="keywordtype">size_t</span>)<a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#aacff0e09cb74514c8d5b68f0a1dbfca2">sMaxFlakes</a>)),</div>
+<div class="line"><span class="lineno">   82</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a4d2201ac27b3e6f521c68343afa508a0">mFlakeNormals</a>(flakeNormals),</div>
+<div class="line"><span class="lineno">   83</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#aa995502256e2e05c2fb567cd98347b4b">mFlakeColors</a>(flakeColors)</div>
+<div class="line"><span class="lineno">   84</span>        { }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43a">moonray::shading::BsdfLobe::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00074">Bsdf.h:74</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa0123729a0d19bbcc256413c3ba2cd896">moonray::shading::BsdfLobe::REFLECTION</a></div><div class="ttdeci">@ REFLECTION</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00079">Bsdf.h:79</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a20f1bcf4b8fcf784b6d4bbc3068eb43aa5dfce546f93a2a18aee27e4b801c198b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a20f1bcf4b8fcf784b6d4bbc3068eb43aa5dfce546f93a2a18aee27e4b801c198b">moonray::shading::BsdfLobe::GLOSSY</a></div><div class="ttdeci">@ GLOSSY</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00087">Bsdf.h:87</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a2fadd67ac6fd01a58026eb335f688c3fa89a6b964bfa5d53524e65ce5049eca96"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fa89a6b964bfa5d53524e65ce5049eca96">moonray::shading::BsdfLobe::PROPERTY_ROUGHNESS</a></div><div class="ttdeci">@ PROPERTY_ROUGHNESS</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00113">Bsdf.h:113</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a2fadd67ac6fd01a58026eb335f688c3fa9dced840d3739cc5841cbdc187c09b55"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fa9dced840d3739cc5841cbdc187c09b55">moonray::shading::BsdfLobe::PROPERTY_PBR_VALIDITY</a></div><div class="ttdeci">@ PROPERTY_PBR_VALIDITY</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00116">Bsdf.h:115</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a2fadd67ac6fd01a58026eb335f688c3fad2f7ee852fac86eed528a89be06c56fa"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fad2f7ee852fac86eed528a89be06c56fa">moonray::shading::BsdfLobe::PROPERTY_NORMAL</a></div><div class="ttdeci">@ PROPERTY_NORMAL</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00112">Bsdf.h:112</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a68e07445ce28319f1e0269d13d0a9c5f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a68e07445ce28319f1e0269d13d0a9c5f">moonray::shading::BsdfLobe::BsdfLobe</a></div><div class="ttdeci">BsdfLobe(Type type, DifferentialFlags diffFlags, bool isSpherical, int32_t propertyFlags)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8cc_source.html#l00024">Bsdf.cc:24</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_ab2ca5c1b46a879084da7aeb7f10d6476"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#ab2ca5c1b46a879084da7aeb7f10d6476">moonray::shading::BsdfLobe::DifferentialFlags</a></div><div class="ttdeci">DifferentialFlags</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00101">Bsdf.h:101</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_html_a1dc3529a8793304d468507645e7e635d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a1dc3529a8793304d468507645e7e635d">moonray::shading::StochasticFlakesBsdfLobe::mFrame</a></div><div class="ttdeci">scene_rdl2::math::ReferenceFrame mFrame</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_stochastic_flakes_8h_source.html#l00225">BsdfStochasticFlakes.h:225</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_html_a2d611471b862a0d03ae348febb93892e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a2d611471b862a0d03ae348febb93892e">moonray::shading::StochasticFlakesBsdfLobe::mFlakeCount</a></div><div class="ttdeci">size_t mFlakeCount</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_stochastic_flakes_8h_source.html#l00241">BsdfStochasticFlakes.h:241</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_html_a4d2201ac27b3e6f521c68343afa508a0"><div class="ttname"><a href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a4d2201ac27b3e6f521c68343afa508a0">moonray::shading::StochasticFlakesBsdfLobe::mFlakeNormals</a></div><div class="ttdeci">const scene_rdl2::math::Vec3f * mFlakeNormals</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_stochastic_flakes_8h_source.html#l00242">BsdfStochasticFlakes.h:242</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_html_aa995502256e2e05c2fb567cd98347b4b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#aa995502256e2e05c2fb567cd98347b4b">moonray::shading::StochasticFlakesBsdfLobe::mFlakeColors</a></div><div class="ttdeci">const scene_rdl2::math::Color * mFlakeColors</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_stochastic_flakes_8h_source.html#l00243">BsdfStochasticFlakes.h:243</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_html_aacff0e09cb74514c8d5b68f0a1dbfca2"><div class="ttname"><a href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#aacff0e09cb74514c8d5b68f0a1dbfca2">moonray::shading::StochasticFlakesBsdfLobe::sMaxFlakes</a></div><div class="ttdeci">static const int sMaxFlakes</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_stochastic_flakes_8h_source.html#l00229">BsdfStochasticFlakes.h:229</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_html_af5db3b40dc13643106bbadabaf4240e2"><div class="ttname"><a href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#af5db3b40dc13643106bbadabaf4240e2">moonray::shading::StochasticFlakesBsdfLobe::mCosGamma</a></div><div class="ttdeci">float mCosGamma</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_stochastic_flakes_8h_source.html#l00227">BsdfStochasticFlakes.h:227</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_html_afa5582eef59ea76384cdf2836b3bd742"><div class="ttname"><a href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#afa5582eef59ea76384cdf2836b3bd742">moonray::shading::StochasticFlakesBsdfLobe::mFlakeRandomness</a></div><div class="ttdeci">float mFlakeRandomness</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_stochastic_flakes_8h_source.html#l00226">BsdfStochasticFlakes.h:226</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -277,7 +373,479 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#ad29a9cc32cd6e0ae3306fca7036a7177">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00155">155</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  156</span>    {</div>
+<div class="line"><span class="lineno">  157</span>        <span class="keywordtype">float</span> cosThetaWo = scene_rdl2::math::max(<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a1dc3529a8793304d468507645e7e635d">mFrame</a>.getN(), slice.getWo()), 0.0f);</div>
+<div class="line"><span class="lineno">  158</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a27762201a758a03b80bef6e822ecee11">computeScaleAndFresnel</a>(scene_rdl2::math::abs(cosThetaWo));</div>
+<div class="line"><span class="lineno">  159</span>    }</div>
+<div class="ttc" id="a_n_point_8h_html_a16747d68c1e06270b0ed335d631b66f3"><div class="ttname"><a href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a></div><div class="ttdeci">float dot(const NPoint&lt; D &gt; &amp;a, const NPoint&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00271">NPoint.h:271</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a27762201a758a03b80bef6e822ecee11"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a27762201a758a03b80bef6e822ecee11">moonray::shading::BsdfLobe::computeScaleAndFresnel</a></div><div class="ttdeci">finline scene_rdl2::math::Color computeScaleAndFresnel(float cosWi) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00179">Bsdf.h:179</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a02f6a9e38b187dbecbb357e981cb1743" name="a02f6a9e38b187dbecbb357e981cb1743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02f6a9e38b187dbecbb357e981cb1743">&#9670;&#160;</a></span>computeBrdf()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">finline scene_rdl2::math::Color moonray::shading::StochasticFlakesBsdfLobe::computeBrdf </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_bsdf_slice.html">BsdfSlice</a> &amp;&#160;</td>
+          <td class="paramname"><em>slice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const scene_rdl2::math::Vec3f &amp;&#160;</td>
+          <td class="paramname"><em>wi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_1_1_flake_caches.html">FlakeCaches</a> &amp;&#160;</td>
+          <td class="paramname"><em>cachesWo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_1_1_flake_caches.html">FlakeCaches</a> &amp;&#160;</td>
+          <td class="paramname"><em>cachesWi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>pdf</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Supporting private member functions. </p>
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00281">281</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  284</span>    {</div>
+<div class="line"><span class="lineno">  285</span>        <span class="comment">// calculate pdf as </span></div>
+<div class="line"><span class="lineno">  286</span>        <span class="comment">// Sum(weight[i], such that dot(wi,reflection[i]) &lt; cos(gamma)) / pi*(1-cos(gamma))*sum(all weights)</span></div>
+<div class="line"><span class="lineno">  287</span>        <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  288</span>        <span class="comment">// calculate return color value as </span></div>
+<div class="line"><span class="lineno">  289</span>        <span class="comment">// sum(scale[i]*weight[i], such that dot(wi,reflection[i]) &lt; cos(gamma)) / sum(all weights)</span></div>
+<div class="line"><span class="lineno">  290</span> </div>
+<div class="line"><span class="lineno">  291</span>        <span class="comment">// prepare for possible early return</span></div>
+<div class="line"><span class="lineno">  292</span>        <span class="keywordflow">if</span>(pdf != NULL) {</div>
+<div class="line"><span class="lineno">  293</span>            *pdf = 0.0f;</div>
+<div class="line"><span class="lineno">  294</span>        }</div>
+<div class="line"><span class="lineno">  295</span> </div>
+<div class="line"><span class="lineno">  296</span>        scene_rdl2::math::Vec3f m;</div>
+<div class="line"><span class="lineno">  297</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacemoonray_1_1shading.html#ac1f48777ae4c4285108902cd6e16146b">computeNormalizedHalfVector</a>(slice.getWo(), wi, m)) {</div>
+<div class="line"><span class="lineno">  298</span>            <span class="keywordflow">return</span> scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">  299</span>        }</div>
+<div class="line"><span class="lineno">  300</span> </div>
+<div class="line"><span class="lineno">  301</span>        <span class="keywordtype">float</span> kIntersect = 0.0f; <span class="comment">// k in [2016] - &quot;optimal importance sampling&quot;</span></div>
+<div class="line"><span class="lineno">  302</span>        <span class="keywordtype">float</span> kTotalSum = 0.0f;  <span class="comment">// c_n in [2016] - &quot;optimal importance sampling&quot;</span></div>
+<div class="line"><span class="lineno">  303</span>        scene_rdl2::math::Color weightedColor1 = scene_rdl2::math::sBlack, weightedColor2 = scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">  304</span> </div>
+<div class="line"><span class="lineno">  305</span>        <span class="comment">// **Cheat** for reciprocity. The D term evaluates how many of the flakes</span></div>
+<div class="line"><span class="lineno">  306</span>        <span class="comment">// reflect light from Wo into a cone around Wi. We however, also compute D</span></div>
+<div class="line"><span class="lineno">  307</span>        <span class="comment">// by flipping Wo and Wi and averaging the two results.</span></div>
+<div class="line"><span class="lineno">  308</span>        <span class="comment">// kIntersect and kTotalSum are only used for evaluating the pdf,</span></div>
+<div class="line"><span class="lineno">  309</span>        <span class="comment">// so we only accumulate them when we compute D as per the talk</span></div>
+<div class="line"><span class="lineno">  310</span>        <span class="comment">// (we retain the importance sampling scheme and thus the pdf from the talk)</span></div>
+<div class="line"><span class="lineno">  311</span>        <span class="keywordtype">float</span> discreteD = 0.5f * (<a class="code hl_function" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a43fbd048509038dd0683ee26a3fa3a5d">computeD</a>(cachesWo, wi, weightedColor1, &amp;kIntersect, &amp;kTotalSum) +</div>
+<div class="line"><span class="lineno">  312</span>                <a class="code hl_function" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a43fbd048509038dd0683ee26a3fa3a5d">computeD</a>(cachesWi, slice.getWo(), weightedColor2, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>));</div>
+<div class="line"><span class="lineno">  313</span> </div>
+<div class="line"><span class="lineno">  314</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> cosNI = std::min(<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a1dc3529a8793304d468507645e7e635d">mFrame</a>.getN(), wi), scene_rdl2::math::sOneMinusEpsilon);</div>
+<div class="line"><span class="lineno">  315</span>        <span class="keywordflow">if</span> (cosNI &lt;= scene_rdl2::math::sEpsilon) <span class="keywordflow">return</span> scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">  316</span> </div>
+<div class="line"><span class="lineno">  317</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> cosNO = std::min(<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a1dc3529a8793304d468507645e7e635d">mFrame</a>.getN(), slice.getWo()), scene_rdl2::math::sOneMinusEpsilon);</div>
+<div class="line"><span class="lineno">  318</span>        <span class="keywordflow">if</span> (cosNO &lt;= scene_rdl2::math::sEpsilon) <span class="keywordflow">return</span> scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">  319</span> </div>
+<div class="line"><span class="lineno">  320</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> cosMI = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(m, wi);</div>
+<div class="line"><span class="lineno">  321</span>        <span class="keywordflow">if</span> (cosMI &lt;= scene_rdl2::math::sEpsilon) <span class="keywordflow">return</span> scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">  322</span> </div>
+<div class="line"><span class="lineno">  323</span>        <span class="comment">// Computing D as described in the Chaos Group paper</span></div>
+<div class="line"><span class="lineno">  324</span>        <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  325</span>        <span class="comment">// D is broken up into two parts. D~ and factor 4/(a(A)*sigma(SolidAngle))</span></div>
+<div class="line"><span class="lineno">  326</span>        <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  327</span>        <span class="comment">// D = (D~)*4/(a(A)*sigma(SolidAngle))</span></div>
+<div class="line"><span class="lineno">  328</span>        <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  329</span>        <span class="comment">// a(A) is the area of the pixel footprint</span></div>
+<div class="line"><span class="lineno">  330</span>        <span class="comment">// sigma(SolidAngle) is the solid angle area</span></div>
+<div class="line"><span class="lineno">  331</span>        <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  332</span>        <span class="comment">// and</span></div>
+<div class="line"><span class="lineno">  333</span>        <span class="comment">// D~ = (1/N)*(Sum of all weights contributing to the reflection direction)</span></div>
+<div class="line"><span class="lineno">  334</span>        <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  335</span>        <span class="comment">// Sum of all weights = kIntersect</span></div>
+<div class="line"><span class="lineno">  336</span>        <span class="comment">// N = number of flakes per unit area, i.e. it is constant</span></div>
+<div class="line"><span class="lineno">  337</span>        <span class="comment">// See Jakob, Haan, et al &quot;Discrete Stochastic Micofacet Models&quot; for a clear description of N</span></div>
+<div class="line"><span class="lineno">  338</span>        <span class="comment">// since it is not clear in the Chaos group paper and can be confused with the number of flakes</span></div>
+<div class="line"><span class="lineno">  339</span>        <span class="comment">// *within* the footprint</span></div>
+<div class="line"><span class="lineno">  340</span>        <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  341</span>        <span class="comment">// So then</span></div>
+<div class="line"><span class="lineno">  342</span>        <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  343</span>        <span class="comment">// D = 4/(a(A)*sigma(SolidAngle))*(1/N)*kIntersect</span></div>
+<div class="line"><span class="lineno">  344</span>        <span class="comment">// Re-organizing, moving N into the denominator...</span></div>
+<div class="line"><span class="lineno">  345</span>        <span class="comment">// D = 4/(N*a(A)*sigma(SolidAngle))*kIntersect</span></div>
+<div class="line"><span class="lineno">  346</span>        <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  347</span>        <span class="comment">// Note the factor N*a(A) = E(n), which is the expected value for the number of flakes</span></div>
+<div class="line"><span class="lineno">  348</span>        <span class="comment">// E(n) is then the number of flakes within the pixel footprint, mFlakeCount</span></div>
+<div class="line"><span class="lineno">  349</span>        <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  350</span>        <span class="comment">// So D = (4/(mFlakeCount*SolidAngleArea))*kIntersect</span></div>
+<div class="line"><span class="lineno">  351</span>        <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  352</span>        <span class="comment">// Since the CookTorrance model divides by 4, the factor of 4 is left out in</span></div>
+<div class="line"><span class="lineno">  353</span>        <span class="comment">// both parts since they cancel.</span></div>
+<div class="line"><span class="lineno">  354</span> </div>
+<div class="line"><span class="lineno">  355</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> solidAngleArea = scene_rdl2::math::sTwoPi * (1.0 - <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#af5db3b40dc13643106bbadabaf4240e2">mCosGamma</a>); <span class="comment">// must be 2*pi, the Chaos paper has only pi and is incorrect.</span></div>
+<div class="line"><span class="lineno">  356</span> </div>
+<div class="line"><span class="lineno">  357</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> D = discreteD * scene_rdl2::math::rcp(solidAngleArea);</div>
+<div class="line"><span class="lineno">  358</span> </div>
+<div class="line"><span class="lineno">  359</span>        scene_rdl2::math::Color F = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a27762201a758a03b80bef6e822ecee11">computeScaleAndFresnel</a>(cosMI);</div>
+<div class="line"><span class="lineno">  360</span> </div>
+<div class="line"><span class="lineno">  361</span>        <span class="comment">// compute G for CookTorrance</span></div>
+<div class="line"><span class="lineno">  362</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> G = <a class="code hl_function" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a217a84045e95711bd2b3ff06b040ce56">computeGeometryTerm</a>(cosNO, cosNI);</div>
+<div class="line"><span class="lineno">  363</span> </div>
+<div class="line"><span class="lineno">  364</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> invBrdfDenom = scene_rdl2::math::rcp( cosNO * (slice.getIncludeCosineTerm()  ?  1.0f  :  cosNI) );</div>
+<div class="line"><span class="lineno">  365</span>        scene_rdl2::math::Color flakesBrdf = F*D*G*invBrdfDenom;</div>
+<div class="line"><span class="lineno">  366</span> </div>
+<div class="line"><span class="lineno">  367</span>        <span class="keywordflow">if</span>(pdf != NULL) {</div>
+<div class="line"><span class="lineno">  368</span><span class="preprocessor">#if UNIFORM_SAMPLING</span></div>
+<div class="line"><span class="lineno">  369</span>            *pdf = scene_rdl2::math::sOneOverTwoPi;</div>
+<div class="line"><span class="lineno">  370</span><span class="preprocessor">#else </span></div>
+<div class="line"><span class="lineno">  371</span>            *pdf = kIntersect * scene_rdl2::math::rcp(solidAngleArea * kTotalSum);</div>
+<div class="line"><span class="lineno">  372</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  373</span>        }</div>
+<div class="line"><span class="lineno">  374</span>        <span class="comment">// Create a conductor fresnel object using the weighted (reflection cache weights)</span></div>
+<div class="line"><span class="lineno">  375</span>        <span class="comment">// color of the flakes that contribute to the final bsdf</span></div>
+<div class="line"><span class="lineno">  376</span>        <span class="comment">// **Note: This is a special case use of the fresnel object inside the bsdf lobe itself -</span></div>
+<div class="line"><span class="lineno">  377</span>        <span class="comment">// since we know the color to use only after evaluating the reflection cache</span></div>
+<div class="line"><span class="lineno">  378</span>        scene_rdl2::math::Color avgWeightedColor = scene_rdl2::math::min(</div>
+<div class="line"><span class="lineno">  379</span>            scene_rdl2::math::Color(0.999f), 0.5f * (weightedColor1+weightedColor2));</div>
+<div class="line"><span class="lineno">  380</span>        scene_rdl2::math::Color eta = <a class="code hl_function" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#aceb4dbd6b93ae060f23e4a9920589d4f">computeEta</a>(avgWeightedColor, avgWeightedColor);</div>
+<div class="line"><span class="lineno">  381</span>        scene_rdl2::math::Color k = <a class="code hl_function" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a6982613f93ef8259c15d8ec5e42a3c51">computeK</a>(avgWeightedColor, eta);</div>
+<div class="line"><span class="lineno">  382</span>        ConductorFresnel fresnel(eta, k);</div>
+<div class="line"><span class="lineno">  383</span>        scene_rdl2::math::Color result = flakesBrdf * fresnel.eval(cosMI);</div>
+<div class="line"><span class="lineno">  384</span>        <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  385</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_html_a217a84045e95711bd2b3ff06b040ce56"><div class="ttname"><a href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a217a84045e95711bd2b3ff06b040ce56">moonray::shading::StochasticFlakesBsdfLobe::computeGeometryTerm</a></div><div class="ttdeci">finline float computeGeometryTerm(const float cosNO, const float cosNI) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_stochastic_flakes_8h_source.html#l00424">BsdfStochasticFlakes.h:424</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_html_a43fbd048509038dd0683ee26a3fa3a5d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a43fbd048509038dd0683ee26a3fa3a5d">moonray::shading::StochasticFlakesBsdfLobe::computeD</a></div><div class="ttdeci">finline float computeD(const FlakeCaches &amp;caches, const scene_rdl2::math::Vec3f &amp;w, scene_rdl2::math::Color &amp;weightedColor, float *reflectionWeight=nullptr, float *totalWeights=nullptr) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_stochastic_flakes_8h_source.html#l00248">BsdfStochasticFlakes.h:248</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_html_a6982613f93ef8259c15d8ec5e42a3c51"><div class="ttname"><a href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a6982613f93ef8259c15d8ec5e42a3c51">moonray::shading::StochasticFlakesBsdfLobe::computeK</a></div><div class="ttdeci">static finline scene_rdl2::math::Color computeK(const scene_rdl2::math::Color &amp;r, const scene_rdl2::math::Color &amp;n)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_stochastic_flakes_8h_source.html#l00472">BsdfStochasticFlakes.h:472</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_html_aceb4dbd6b93ae060f23e4a9920589d4f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#aceb4dbd6b93ae060f23e4a9920589d4f">moonray::shading::StochasticFlakesBsdfLobe::computeEta</a></div><div class="ttdeci">static finline scene_rdl2::math::Color computeEta(const scene_rdl2::math::Color &amp;r, const scene_rdl2::math::Color &amp;g)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_stochastic_flakes_8h_source.html#l00466">BsdfStochasticFlakes.h:466</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_ac1f48777ae4c4285108902cd6e16146b"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ac1f48777ae4c4285108902cd6e16146b">moonray::shading::computeNormalizedHalfVector</a></div><div class="ttdeci">finline bool computeNormalizedHalfVector(const scene_rdl2::math::Vec3f &amp;wo, const scene_rdl2::math::Vec3f &amp;wi, scene_rdl2::math::Vec3f &amp;H)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00418">Util.h:418</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a43fbd048509038dd0683ee26a3fa3a5d" name="a43fbd048509038dd0683ee26a3fa3a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43fbd048509038dd0683ee26a3fa3a5d">&#9670;&#160;</a></span>computeD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">finline float moonray::shading::StochasticFlakesBsdfLobe::computeD </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_1_1_flake_caches.html">FlakeCaches</a> &amp;&#160;</td>
+          <td class="paramname"><em>caches</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const scene_rdl2::math::Vec3f &amp;&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">scene_rdl2::math::Color &amp;&#160;</td>
+          <td class="paramname"><em>weightedColor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>reflectionWeight</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>totalWeights</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00248">248</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  252</span>    {</div>
+<div class="line"><span class="lineno">  253</span>        <span class="keywordflow">if</span> (totalWeights != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  254</span>            *totalWeights = 0.0f;</div>
+<div class="line"><span class="lineno">  255</span>        }</div>
+<div class="line"><span class="lineno">  256</span>        <span class="keywordtype">float</span> reflectWt = 0.0f;</div>
+<div class="line"><span class="lineno">  257</span>        weightedColor = scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">  258</span> </div>
+<div class="line"><span class="lineno">  259</span>        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; caches.size; ++i) {</div>
+<div class="line"><span class="lineno">  260</span>            <span class="comment">// Formulating the pdf and brdf weights calculation according to Chaos Group paper</span></div>
+<div class="line"><span class="lineno">  261</span>            <span class="keywordtype">float</span> wDotRj = <a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(w, caches.reflections[i]);</div>
+<div class="line"><span class="lineno">  262</span>            <span class="keywordflow">if</span>(wDotRj &gt;= <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#af5db3b40dc13643106bbadabaf4240e2">mCosGamma</a>) {</div>
+<div class="line"><span class="lineno">  263</span>                reflectWt += caches.weights[i];</div>
+<div class="line"><span class="lineno">  264</span>                weightedColor += caches.scales[i] * caches.weights[i];</div>
+<div class="line"><span class="lineno">  265</span>            }</div>
+<div class="line"><span class="lineno">  266</span>            <span class="keywordflow">if</span> (totalWeights != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  267</span>                *totalWeights += caches.weights[i];</div>
+<div class="line"><span class="lineno">  268</span>            }</div>
+<div class="line"><span class="lineno">  269</span>        }</div>
+<div class="line"><span class="lineno">  270</span> </div>
+<div class="line"><span class="lineno">  271</span>        <span class="keywordflow">if</span> (reflectionWeight != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  272</span>            *reflectionWeight = reflectWt; <span class="comment">// k for the pdf in [2016]</span></div>
+<div class="line"><span class="lineno">  273</span>        }</div>
+<div class="line"><span class="lineno">  274</span>        <span class="keywordflow">if</span> (!scene_rdl2::math::isZero(reflectWt)) {</div>
+<div class="line"><span class="lineno">  275</span>            weightedColor /= reflectWt; <span class="comment">// normalize the weighted color</span></div>
+<div class="line"><span class="lineno">  276</span>        }</div>
+<div class="line"><span class="lineno">  277</span>        <span class="keywordflow">return</span> reflectWt / <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(caches.size); <span class="comment">// Return discrete D</span></div>
+<div class="line"><span class="lineno">  278</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aceb4dbd6b93ae060f23e4a9920589d4f" name="aceb4dbd6b93ae060f23e4a9920589d4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceb4dbd6b93ae060f23e4a9920589d4f">&#9670;&#160;</a></span>computeEta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static finline scene_rdl2::math::Color moonray::shading::StochasticFlakesBsdfLobe::computeEta </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Color &amp;&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const scene_rdl2::math::Color &amp;&#160;</td>
+          <td class="paramname"><em>g</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00466">466</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  467</span>    {</div>
+<div class="line"><span class="lineno">  468</span>        <span class="keywordflow">return</span> g * <a class="code hl_function" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#ac351cd553905c38915175ba7611c6e54">nMin</a>(r) + (scene_rdl2::math::sWhite - g) * <a class="code hl_function" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a2d274d92eed88b2aae1aae9fd3a43719">nMax</a>(r);</div>
+<div class="line"><span class="lineno">  469</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_html_a2d274d92eed88b2aae1aae9fd3a43719"><div class="ttname"><a href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a2d274d92eed88b2aae1aae9fd3a43719">moonray::shading::StochasticFlakesBsdfLobe::nMax</a></div><div class="ttdeci">static finline scene_rdl2::math::Color nMax(const scene_rdl2::math::Color &amp;r)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_stochastic_flakes_8h_source.html#l00459">BsdfStochasticFlakes.h:459</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_html_ac351cd553905c38915175ba7611c6e54"><div class="ttname"><a href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#ac351cd553905c38915175ba7611c6e54">moonray::shading::StochasticFlakesBsdfLobe::nMin</a></div><div class="ttdeci">static finline scene_rdl2::math::Color nMin(const scene_rdl2::math::Color &amp;r)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_stochastic_flakes_8h_source.html#l00453">BsdfStochasticFlakes.h:453</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a217a84045e95711bd2b3ff06b040ce56" name="a217a84045e95711bd2b3ff06b040ce56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a217a84045e95711bd2b3ff06b040ce56">&#9670;&#160;</a></span>computeGeometryTerm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">finline float moonray::shading::StochasticFlakesBsdfLobe::computeGeometryTerm </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>cosNO</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>cosNI</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00424">424</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  425</span>    {</div>
+<div class="line"><span class="lineno">  426</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> invCosNO = 1.0f / cosNO;</div>
+<div class="line"><span class="lineno">  427</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> invCosNI = 1.0f / cosNI;</div>
+<div class="line"><span class="lineno">  428</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> ao = 1.0f / (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#afa5582eef59ea76384cdf2836b3bd742">mFlakeRandomness</a> * scene_rdl2::math::sqrt((1.0f - cosNO * cosNO) *</div>
+<div class="line"><span class="lineno">  429</span>                                            (invCosNO * invCosNO)));</div>
+<div class="line"><span class="lineno">  430</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> ai = 1.0f / (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#afa5582eef59ea76384cdf2836b3bd742">mFlakeRandomness</a> * scene_rdl2::math::sqrt((1.0f - cosNI * cosNI) *</div>
+<div class="line"><span class="lineno">  431</span>                                            (invCosNI * invCosNI)));</div>
+<div class="line"><span class="lineno">  432</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> G1o = (ao &lt; 1.6f) ? (3.535f * ao + 2.181f * ao * ao) /</div>
+<div class="line"><span class="lineno">  433</span>                                (1.0f + 2.276f * ao + 2.577f * ao * ao) : 1.0f;</div>
+<div class="line"><span class="lineno">  434</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> G1i = (ai &lt; 1.6f) ? (3.535f * ai + 2.181f * ai * ai) /</div>
+<div class="line"><span class="lineno">  435</span>                                (1.0f + 2.276f * ai + 2.577f * ai * ai) : 1.0f;</div>
+<div class="line"><span class="lineno">  436</span>        <span class="keywordflow">return</span> G1o * G1i;</div>
+<div class="line"><span class="lineno">  437</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6982613f93ef8259c15d8ec5e42a3c51" name="a6982613f93ef8259c15d8ec5e42a3c51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6982613f93ef8259c15d8ec5e42a3c51">&#9670;&#160;</a></span>computeK()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static finline scene_rdl2::math::Color moonray::shading::StochasticFlakesBsdfLobe::computeK </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Color &amp;&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const scene_rdl2::math::Color &amp;&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00472">472</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  473</span>    {</div>
+<div class="line"><span class="lineno">  474</span>        <span class="keyword">const</span> scene_rdl2::math::Color <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> = n + scene_rdl2::math::sWhite;</div>
+<div class="line"><span class="lineno">  475</span>        <span class="keyword">const</span> scene_rdl2::math::Color b = n - scene_rdl2::math::sWhite;</div>
+<div class="line"><span class="lineno">  476</span>        <span class="comment">// Take an abs() here to get rid of any numerical -0 etc</span></div>
+<div class="line"><span class="lineno">  477</span>        <span class="keyword">const</span> scene_rdl2::math::Color nr = max(scene_rdl2::math::sBlack, r * a * a - b * b);</div>
+<div class="line"><span class="lineno">  478</span>        <span class="keywordflow">return</span> sqrt(nr / (scene_rdl2::math::sWhite - r));</div>
+<div class="line"><span class="lineno">  479</span>    }</div>
+<div class="ttc" id="anamespacesequence__discrepancy_html_a06f968c2f5ed1f9d42f00351b2b1efb2"><div class="ttname"><a href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">sequence_discrepancy.a</a></div><div class="ttdeci">def a</div><div class="ttdef"><b>Definition:</b> <a href="sequence__discrepancy_8py_source.html#l00038">sequence_discrepancy.py:38</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7617df1a0342b66593b173690253d41e" name="a7617df1a0342b66593b173690253d41e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7617df1a0342b66593b173690253d41e">&#9670;&#160;</a></span>computeReflectionCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">finline bool moonray::shading::StochasticFlakesBsdfLobe::computeReflectionCache </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Vec3f &amp;&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_1_1_flake_caches.html">FlakeCaches</a> &amp;&#160;</td>
+          <td class="paramname"><em>caches</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>buildCDF</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00387">387</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  389</span>    {</div>
+<div class="line"><span class="lineno">  390</span>        scene_rdl2::math::Vec3f reflection;</div>
+<div class="line"><span class="lineno">  391</span>        <span class="keywordtype">float</span> weight;</div>
+<div class="line"><span class="lineno">  392</span> </div>
+<div class="line"><span class="lineno">  393</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k = 0;</div>
+<div class="line"><span class="lineno">  394</span>        <span class="keywordtype">float</span> totalWeight = 0;</div>
+<div class="line"><span class="lineno">  395</span>        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a2d611471b862a0d03ae348febb93892e">mFlakeCount</a>; ++i) {</div>
+<div class="line"><span class="lineno">  396</span>            weight = scene_rdl2::math::max(0.0f, <a class="code hl_function" href="namespacemoonray_1_1shading.html#a0130da59a590ff99d74c83ce16184f46">computeReflectionDirection</a>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a4d2201ac27b3e6f521c68343afa508a0">mFlakeNormals</a>[i], w, reflection));</div>
+<div class="line"><span class="lineno">  397</span>            caches.weights[k] = weight;</div>
+<div class="line"><span class="lineno">  398</span>            caches.reflections[k] = reflection;</div>
+<div class="line"><span class="lineno">  399</span>            caches.scales[k] = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#aa995502256e2e05c2fb567cd98347b4b">mFlakeColors</a>[i];</div>
+<div class="line"><span class="lineno">  400</span>            caches.flakeNormals[k] = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a4d2201ac27b3e6f521c68343afa508a0">mFlakeNormals</a>[i];</div>
+<div class="line"><span class="lineno">  401</span>            totalWeight += weight;</div>
+<div class="line"><span class="lineno">  402</span>            k++;</div>
+<div class="line"><span class="lineno">  403</span>        }</div>
+<div class="line"><span class="lineno">  404</span> </div>
+<div class="line"><span class="lineno">  405</span>        <span class="keywordflow">if</span> (totalWeight &gt; 0) {</div>
+<div class="line"><span class="lineno">  406</span>            totalWeight = scene_rdl2::math::rcp(totalWeight);</div>
+<div class="line"><span class="lineno">  407</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  408</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  409</span>        }</div>
+<div class="line"><span class="lineno">  410</span> </div>
+<div class="line"><span class="lineno">  411</span>        <span class="keywordflow">if</span> (buildCDF) {</div>
+<div class="line"><span class="lineno">  412</span>            <span class="keywordtype">float</span> cdf = 0.0f;</div>
+<div class="line"><span class="lineno">  413</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; k; i++) {</div>
+<div class="line"><span class="lineno">  414</span>                cdf += caches.weights[i] * totalWeight;</div>
+<div class="line"><span class="lineno">  415</span>                caches.wCDF[i] = cdf;</div>
+<div class="line"><span class="lineno">  416</span>            }</div>
+<div class="line"><span class="lineno">  417</span>        }</div>
+<div class="line"><span class="lineno">  418</span> </div>
+<div class="line"><span class="lineno">  419</span>        caches.size = k;</div>
+<div class="line"><span class="lineno">  420</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  421</span>    }</div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a0130da59a590ff99d74c83ce16184f46"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a0130da59a590ff99d74c83ce16184f46">moonray::shading::computeReflectionDirection</a></div><div class="ttdeci">finline float computeReflectionDirection(const scene_rdl2::math::Vec3f &amp;N, const scene_rdl2::math::Vec3f &amp;wo, scene_rdl2::math::Vec3f &amp;wi)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00295">Util.h:295</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1ac45d690e9093bb0be95667d7ca7391" name="a1ac45d690e9093bb0be95667d7ca7391"></a>
@@ -354,7 +922,15 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a53e300f416eddc450bef32b46f45e3ef">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00161">161</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  164</span>    {</div>
+<div class="line"><span class="lineno">  165</span>        scene_rdl2::math::Vec3f H;</div>
+<div class="line"><span class="lineno">  166</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacemoonray_1_1shading.html#ac1f48777ae4c4285108902cd6e16146b">computeNormalizedHalfVector</a>(wo, wi, H)) {</div>
+<div class="line"><span class="lineno">  167</span>            H = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a1dc3529a8793304d468507645e7e635d">mFrame</a>.getN();</div>
+<div class="line"><span class="lineno">  168</span>        }</div>
+<div class="line"><span class="lineno">  169</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a702ba0ae66dabde33d29f64b265f60c4">computeReflectionDirectionDifferential</a>(wo, wi, H, dNdx, dNdy, dDdx, dDdy);</div>
+<div class="line"><span class="lineno">  170</span>    }</div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a702ba0ae66dabde33d29f64b265f60c4"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a702ba0ae66dabde33d29f64b265f60c4">moonray::shading::computeReflectionDirectionDifferential</a></div><div class="ttdeci">finline void computeReflectionDirectionDifferential(const scene_rdl2::math::Vec3f &amp;wo, const scene_rdl2::math::Vec3f &amp;wi, const scene_rdl2::math::Vec3f &amp;H, const scene_rdl2::math::Vec3f &amp;dNdx, const scene_rdl2::math::Vec3f &amp;dNdy, scene_rdl2::math::Vec3f &amp;dDdx, scene_rdl2::math::Vec3f &amp;dDdy)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00312">Util.h:312</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aac0622945304a48b385a84d2d6910a00" name="aac0622945304a48b385a84d2d6910a00"></a>
@@ -407,7 +983,25 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a9c4e3bbff247bebc35005287dd23c6f9">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00087">87</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   88</span>    {</div>
+<div class="line"><span class="lineno">   89</span>        <span class="comment">// The bsdf from [2016] is not reciprocal (evaluating reflection cache based on Wo)</span></div>
+<div class="line"><span class="lineno">   90</span>        <span class="comment">// Using an additional reflection cache computed using Wi and</span></div>
+<div class="line"><span class="lineno">   91</span>        <span class="comment">// averaging the D term in the bsdf is a cheat we use to make</span></div>
+<div class="line"><span class="lineno">   92</span>        <span class="comment">// this bsdf reciprocal.</span></div>
+<div class="line"><span class="lineno">   93</span>        FlakeCaches evalCachesWo, evalCachesWi;</div>
+<div class="line"><span class="lineno">   94</span>        <span class="keywordtype">bool</span> validCache = <a class="code hl_function" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a7617df1a0342b66593b173690253d41e">computeReflectionCache</a>(slice.getWo(), evalCachesWo, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   95</span>        validCache &amp;= <a class="code hl_function" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a7617df1a0342b66593b173690253d41e">computeReflectionCache</a>(wi, evalCachesWi, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">if</span> (!validCache) {</div>
+<div class="line"><span class="lineno">   98</span>            <span class="keywordflow">if</span> (pdf) *pdf = 0.0f;</div>
+<div class="line"><span class="lineno">   99</span>            <span class="keywordflow">return</span> scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">  100</span>        }</div>
+<div class="line"><span class="lineno">  101</span> </div>
+<div class="line"><span class="lineno">  102</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a02f6a9e38b187dbecbb357e981cb1743">computeBrdf</a>(slice, wi, evalCachesWo, evalCachesWi, pdf);</div>
+<div class="line"><span class="lineno">  103</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_html_a02f6a9e38b187dbecbb357e981cb1743"><div class="ttname"><a href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a02f6a9e38b187dbecbb357e981cb1743">moonray::shading::StochasticFlakesBsdfLobe::computeBrdf</a></div><div class="ttdeci">finline scene_rdl2::math::Color computeBrdf(const BsdfSlice &amp;slice, const scene_rdl2::math::Vec3f &amp;wi, const FlakeCaches &amp;cachesWo, const FlakeCaches &amp;cachesWi, float *pdf=NULL) const</div><div class="ttdoc">Supporting private member functions.</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_stochastic_flakes_8h_source.html#l00281">BsdfStochasticFlakes.h:281</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_html_a7617df1a0342b66593b173690253d41e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a7617df1a0342b66593b173690253d41e">moonray::shading::StochasticFlakesBsdfLobe::computeReflectionCache</a></div><div class="ttdeci">finline bool computeReflectionCache(const scene_rdl2::math::Vec3f &amp;w, FlakeCaches &amp;caches, bool buildCDF) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_stochastic_flakes_8h_source.html#l00387">BsdfStochasticFlakes.h:387</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afa9de721cef4b0c812b02e9510233944" name="afa9de721cef4b0c812b02e9510233944"></a>
@@ -447,7 +1041,109 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a5f94646dff64ff6b9539c9baac68135e">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00172">172</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  173</span>    {</div>
+<div class="line"><span class="lineno">  174</span>        <span class="keywordtype">bool</span> handled = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>        <span class="keywordflow">switch</span> (property) {</div>
+<div class="line"><span class="lineno">  177</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fa89a6b964bfa5d53524e65ce5049eca96">PROPERTY_ROUGHNESS</a>:</div>
+<div class="line"><span class="lineno">  178</span>            {</div>
+<div class="line"><span class="lineno">  179</span>                *dest       = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#afa5582eef59ea76384cdf2836b3bd742">mFlakeRandomness</a>;</div>
+<div class="line"><span class="lineno">  180</span>                *(dest + 1) = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#afa5582eef59ea76384cdf2836b3bd742">mFlakeRandomness</a>;</div>
+<div class="line"><span class="lineno">  181</span>            }</div>
+<div class="line"><span class="lineno">  182</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  183</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fad2f7ee852fac86eed528a89be06c56fa">PROPERTY_NORMAL</a>:</div>
+<div class="line"><span class="lineno">  184</span>            {</div>
+<div class="line"><span class="lineno">  185</span>                <span class="keyword">const</span> scene_rdl2::math::Vec3f &amp;N = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a1dc3529a8793304d468507645e7e635d">mFrame</a>.getN();</div>
+<div class="line"><span class="lineno">  186</span>                *dest       = N.x;</div>
+<div class="line"><span class="lineno">  187</span>                *(dest + 1) = N.y;</div>
+<div class="line"><span class="lineno">  188</span>                *(dest + 2) = N.z;</div>
+<div class="line"><span class="lineno">  189</span>            }</div>
+<div class="line"><span class="lineno">  190</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  191</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a2fadd67ac6fd01a58026eb335f688c3fa9dced840d3739cc5841cbdc187c09b55">PROPERTY_PBR_VALIDITY</a>:</div>
+<div class="line"><span class="lineno">  192</span>            {</div>
+<div class="line"><span class="lineno">  193</span>                <span class="keyword">const</span> Fresnel* fresnel = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">getFresnel</a>();</div>
+<div class="line"><span class="lineno">  194</span>                <span class="comment">// Get the property from the fresnel object</span></div>
+<div class="line"><span class="lineno">  195</span>                scene_rdl2::math::Color res = scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">  196</span>                <span class="keywordflow">if</span> (fresnel) {</div>
+<div class="line"><span class="lineno">  197</span>                    res = fresnel-&gt;computePbrValidity();</div>
+<div class="line"><span class="lineno">  198</span>                }</div>
+<div class="line"><span class="lineno">  199</span>                *dest       = res.r;</div>
+<div class="line"><span class="lineno">  200</span>                *(dest + 1) = res.g;</div>
+<div class="line"><span class="lineno">  201</span>                *(dest + 2) = res.b;</div>
+<div class="line"><span class="lineno">  202</span>            }</div>
+<div class="line"><span class="lineno">  203</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  204</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  205</span>            handled = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a5f94646dff64ff6b9539c9baac68135e">BsdfLobe::getProperty</a>(property, dest);</div>
+<div class="line"><span class="lineno">  206</span>        }</div>
+<div class="line"><span class="lineno">  207</span> </div>
+<div class="line"><span class="lineno">  208</span>        <span class="keywordflow">return</span> handled;</div>
+<div class="line"><span class="lineno">  209</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a1325952270070249bd3a4197660a1d7b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">moonray::shading::BsdfLobe::getFresnel</a></div><div class="ttdeci">finline const Fresnel * getFresnel() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00164">Bsdf.h:164</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a5f94646dff64ff6b9539c9baac68135e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a5f94646dff64ff6b9539c9baac68135e">moonray::shading::BsdfLobe::getProperty</a></div><div class="ttdeci">virtual bool getProperty(Property property, float *dest) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8cc_source.html#l00056">Bsdf.cc:56</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2d274d92eed88b2aae1aae9fd3a43719" name="a2d274d92eed88b2aae1aae9fd3a43719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d274d92eed88b2aae1aae9fd3a43719">&#9670;&#160;</a></span>nMax()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static finline scene_rdl2::math::Color moonray::shading::StochasticFlakesBsdfLobe::nMax </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Color &amp;&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00459">459</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  460</span>    {</div>
+<div class="line"><span class="lineno">  461</span>        scene_rdl2::math::Color rSqrt = sqrt(r);</div>
+<div class="line"><span class="lineno">  462</span>        <span class="keywordflow">return</span> (scene_rdl2::math::sWhite + rSqrt) / (scene_rdl2::math::sWhite - rSqrt);</div>
+<div class="line"><span class="lineno">  463</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac351cd553905c38915175ba7611c6e54" name="ac351cd553905c38915175ba7611c6e54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac351cd553905c38915175ba7611c6e54">&#9670;&#160;</a></span>nMin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static finline scene_rdl2::math::Color moonray::shading::StochasticFlakesBsdfLobe::nMin </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Color &amp;&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00453">453</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  454</span>    {</div>
+<div class="line"><span class="lineno">  455</span>        <span class="keywordflow">return</span> (scene_rdl2::math::sWhite - r) / (scene_rdl2::math::sWhite + r);</div>
+<div class="line"><span class="lineno">  456</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab23cd9fa225f665630fb184ae2960ed4" name="ab23cd9fa225f665630fb184ae2960ed4"></a>
@@ -514,7 +1210,56 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a59f21649b0273a5e24a19b3e29aee570">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00105">105</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  107</span>    {</div>
+<div class="line"><span class="lineno">  108</span>        FlakeCaches sampleCachesWo;</div>
+<div class="line"><span class="lineno">  109</span> </div>
+<div class="line"><span class="lineno">  110</span>        <span class="comment">// generate reflection cache and weights with weighted CDF</span></div>
+<div class="line"><span class="lineno">  111</span>        <span class="keywordtype">bool</span> validCache = <a class="code hl_function" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a7617df1a0342b66593b173690253d41e">computeReflectionCache</a>(slice.getWo(), sampleCachesWo, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  112</span> </div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">if</span> (!validCache) {</div>
+<div class="line"><span class="lineno">  114</span>            pdf = 0.0f;</div>
+<div class="line"><span class="lineno">  115</span>            <span class="keywordflow">return</span> scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">  116</span>        }</div>
+<div class="line"><span class="lineno">  117</span><span class="preprocessor">#if UNIFORM_SAMPLING</span></div>
+<div class="line"><span class="lineno">  118</span>        scene_rdl2::math::Vec3f wiLocal = <a class="code hl_function" href="namespacemoonray_1_1shading.html#abf0c8becd7819f8f349483e2ce583e9d">sampleLocalHemisphereUniform</a>(r1, r2);</div>
+<div class="line"><span class="lineno">  119</span>        wi = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a1dc3529a8793304d468507645e7e635d">mFrame</a>.localToGlobal(wiLocal);</div>
+<div class="line"><span class="lineno">  120</span> </div>
+<div class="line"><span class="lineno">  121</span><span class="preprocessor">#else </span></div>
+<div class="line"><span class="lineno">  122</span>        <span class="keywordflow">if</span> (sampleCachesWo.size == 0) {</div>
+<div class="line"><span class="lineno">  123</span>            scene_rdl2::math::Vec3f wiLocal = <a class="code hl_function" href="namespacemoonray_1_1shading.html#abf0c8becd7819f8f349483e2ce583e9d">sampleLocalHemisphereUniform</a>(r1, r2);</div>
+<div class="line"><span class="lineno">  124</span>            wi = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a1dc3529a8793304d468507645e7e635d">mFrame</a>.localToGlobal(wiLocal);</div>
+<div class="line"><span class="lineno">  125</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  126</span>            <span class="keywordtype">float</span> remapped_r1 = r1;</div>
+<div class="line"><span class="lineno">  127</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> reflIdx = <a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_bsdf_stochastic_flakes_8h_03.html#a873f9a64c1ba009b5404b164a75a3995">selectIndexFromCdf</a>(sampleCachesWo.wCDF, sampleCachesWo.size, r1, remapped_r1);</div>
+<div class="line"><span class="lineno">  128</span> </div>
+<div class="line"><span class="lineno">  129</span>            scene_rdl2::math::Vec3f reflSample = sampleCachesWo.reflections[reflIdx];</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>            <span class="comment">// Sample the roughness of the individual flake</span></div>
+<div class="line"><span class="lineno">  132</span>            <span class="comment">// generate local wi using cos(gamma) as cut off</span></div>
+<div class="line"><span class="lineno">  133</span>            scene_rdl2::math::Vec3f wiLocal = <a class="code hl_function" href="namespacemoonray_1_1shading.html#a65150764c98af0ba16a6f700e13a3a5d">sampleLocalSphericalCapUniform</a>(remapped_r1, r2, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#af5db3b40dc13643106bbadabaf4240e2">mCosGamma</a>);</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>            <span class="comment">// transform local wi to reflection sample reference frame</span></div>
+<div class="line"><span class="lineno">  136</span>            scene_rdl2::math::ReferenceFrame reflReferenceFrame(reflSample);</div>
+<div class="line"><span class="lineno">  137</span>            wi = reflReferenceFrame.localToGlobal(wiLocal);</div>
+<div class="line"><span class="lineno">  138</span>        }</div>
+<div class="line"><span class="lineno">  139</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">  140</span> </div>
+<div class="line"><span class="lineno">  141</span>        <span class="comment">// Same as in eval() - we use an additional reflection cache created</span></div>
+<div class="line"><span class="lineno">  142</span>        <span class="comment">// using Wi to enforce reciprocity in bsdf computation</span></div>
+<div class="line"><span class="lineno">  143</span>        FlakeCaches sampleCachesWi;</div>
+<div class="line"><span class="lineno">  144</span>        validCache = <a class="code hl_function" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a7617df1a0342b66593b173690253d41e">computeReflectionCache</a>(wi, sampleCachesWi, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  145</span> </div>
+<div class="line"><span class="lineno">  146</span>        <span class="keywordflow">if</span> (!validCache) {</div>
+<div class="line"><span class="lineno">  147</span>            pdf = 0.0f;</div>
+<div class="line"><span class="lineno">  148</span>            <span class="keywordflow">return</span> scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">  149</span>        }</div>
+<div class="line"><span class="lineno">  150</span> </div>
+<div class="line"><span class="lineno">  151</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a02f6a9e38b187dbecbb357e981cb1743">computeBrdf</a>(slice, wi, sampleCachesWo, sampleCachesWi, &amp;pdf);</div>
+<div class="line"><span class="lineno">  152</span>    }</div>
+<div class="ttc" id="anamespacemoonray_1_1shading_1_1anonymous__namespace_02_bsdf_stochastic_flakes_8h_03_html_a873f9a64c1ba009b5404b164a75a3995"><div class="ttname"><a href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_bsdf_stochastic_flakes_8h_03.html#a873f9a64c1ba009b5404b164a75a3995">moonray::shading::anonymous_namespace{BsdfStochasticFlakes.h}::selectIndexFromCdf</a></div><div class="ttdeci">unsigned int selectIndexFromCdf(const float *cdfs, unsigned int count, const float r, float &amp;remapped_r)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_stochastic_flakes_8h_source.html#l00033">BsdfStochasticFlakes.h:33</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a65150764c98af0ba16a6f700e13a3a5d"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a65150764c98af0ba16a6f700e13a3a5d">moonray::shading::sampleLocalSphericalCapUniform</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f sampleLocalSphericalCapUniform(float r1, float r2, float cosThetaMax)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00516">Util.h:516</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_abf0c8becd7819f8f349483e2ce583e9d"><div class="ttname"><a href="namespacemoonray_1_1shading.html#abf0c8becd7819f8f349483e2ce583e9d">moonray::shading::sampleLocalHemisphereUniform</a></div><div class="ttdeci">finline scene_rdl2::math::Vec3f sampleLocalHemisphereUniform(float r1, float r2)</div><div class="ttdoc">pdf = 1.0 / (2.0 * PI)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2shading_2util_8h_source.html#l00492">Util.h:492</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a47c2880f5dbb74381139e98469475bec" name="a47c2880f5dbb74381139e98469475bec"></a>
@@ -554,6 +1299,186 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a32cda370918eb2aa16ee7004b6bb7262">moonray::shading::BsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00211">211</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  212</span>    {</div>
+<div class="line"><span class="lineno">  213</span>        <span class="keyword">const</span> scene_rdl2::math::Color&amp; scale = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aec44d64391394390189c9f6bbc42f671">getScale</a>();</div>
+<div class="line"><span class="lineno">  214</span>        <span class="keyword">const</span> Fresnel * <span class="keyword">const</span> fresnel = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">getFresnel</a>();</div>
+<div class="line"><span class="lineno">  215</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;[StochasticFlakesBsdfLobe]\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  216</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;scale: &quot;</span></div>
+<div class="line"><span class="lineno">  217</span>            &lt;&lt; scale.r &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; scale.g &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; scale.b &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  218</span>        <span class="keywordflow">if</span> (fresnel) {</div>
+<div class="line"><span class="lineno">  219</span>            fresnel-&gt;show(os, indent + <span class="stringliteral">&quot;    &quot;</span>);</div>
+<div class="line"><span class="lineno">  220</span>        }</div>
+<div class="line"><span class="lineno">  221</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_aec44d64391394390189c9f6bbc42f671"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aec44d64391394390189c9f6bbc42f671">moonray::shading::BsdfLobe::getScale</a></div><div class="ttdeci">finline const scene_rdl2::math::Color &amp; getScale() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00160">Bsdf.h:160</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af5db3b40dc13643106bbadabaf4240e2" name="af5db3b40dc13643106bbadabaf4240e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5db3b40dc13643106bbadabaf4240e2">&#9670;&#160;</a></span>mCosGamma</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::StochasticFlakesBsdfLobe::mCosGamma</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00227">227</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
+
+</div>
+</div>
+<a id="aa995502256e2e05c2fb567cd98347b4b" name="aa995502256e2e05c2fb567cd98347b4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa995502256e2e05c2fb567cd98347b4b">&#9670;&#160;</a></span>mFlakeColors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const scene_rdl2::math::Color* moonray::shading::StochasticFlakesBsdfLobe::mFlakeColors</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00243">243</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
+
+</div>
+</div>
+<a id="a2d611471b862a0d03ae348febb93892e" name="a2d611471b862a0d03ae348febb93892e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d611471b862a0d03ae348febb93892e">&#9670;&#160;</a></span>mFlakeCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t moonray::shading::StochasticFlakesBsdfLobe::mFlakeCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00241">241</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
+
+</div>
+</div>
+<a id="a4d2201ac27b3e6f521c68343afa508a0" name="a4d2201ac27b3e6f521c68343afa508a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d2201ac27b3e6f521c68343afa508a0">&#9670;&#160;</a></span>mFlakeNormals</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const scene_rdl2::math::Vec3f* moonray::shading::StochasticFlakesBsdfLobe::mFlakeNormals</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00242">242</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
+
+</div>
+</div>
+<a id="afa5582eef59ea76384cdf2836b3bd742" name="afa5582eef59ea76384cdf2836b3bd742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa5582eef59ea76384cdf2836b3bd742">&#9670;&#160;</a></span>mFlakeRandomness</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::StochasticFlakesBsdfLobe::mFlakeRandomness</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00226">226</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
+
+</div>
+</div>
+<a id="a1dc3529a8793304d468507645e7e635d" name="a1dc3529a8793304d468507645e7e635d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dc3529a8793304d468507645e7e635d">&#9670;&#160;</a></span>mFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::ReferenceFrame moonray::shading::StochasticFlakesBsdfLobe::mFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00225">225</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
+
+</div>
+</div>
+<a id="aacff0e09cb74514c8d5b68f0a1dbfca2" name="aacff0e09cb74514c8d5b68f0a1dbfca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacff0e09cb74514c8d5b68f0a1dbfca2">&#9670;&#160;</a></span>sMaxFlakes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int moonray::shading::StochasticFlakesBsdfLobe::sMaxFlakes = 2000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_stochastic_flakes_8h_source.html#l00229">229</a> of file <a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a>.</p>
 
 </div>
 </div>
@@ -561,9 +1486,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/bsdf/<a class="el" href="_bsdf_stochastic_flakes_8h_source.html">BsdfStochasticFlakes.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html">StochasticFlakesBsdfLobe</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

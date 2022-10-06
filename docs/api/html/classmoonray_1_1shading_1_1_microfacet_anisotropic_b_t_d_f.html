@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html">MicrofacetAnisotropicBTDF</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::MicrofacetAnisotropicBTDF Class Reference</div></div>
 </div><!--header-->
@@ -97,6 +114,27 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a682c847a1244e9d36e11159a66fb175a inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade9beef66195237d2338872664638b28 inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html">BsdfComponent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html#ade9beef66195237d2338872664638b28">operator=</a> (const <a class="el" href="classmoonray_1_1shading_1_1_bsdf_component.html">BsdfComponent</a> &amp;other)=delete</td></tr>
 <tr class="separator:ade9beef66195237d2338872664638b28 inherit pub_methods_classmoonray_1_1shading_1_1_bsdf_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0d7b3031417b65e3a623d5fe160b0170"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Vec3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a0d7b3031417b65e3a623d5fe160b0170">mN</a></td></tr>
+<tr class="separator:a0d7b3031417b65e3a623d5fe160b0170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bd9c771b13037a2fb258fe615031525"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a6bd9c771b13037a2fb258fe615031525">mEta</a></td></tr>
+<tr class="separator:a6bd9c771b13037a2fb258fe615031525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab8e65aeebb943d93f8ebf768c29d25"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#aeab8e65aeebb943d93f8ebf768c29d25">mRoughnessU</a></td></tr>
+<tr class="separator:aeab8e65aeebb943d93f8ebf768c29d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad388f6d301dced147d6c469be80ecc8e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#ad388f6d301dced147d6c469be80ecc8e">mRoughnessV</a></td></tr>
+<tr class="separator:ad388f6d301dced147d6c469be80ecc8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c73a7ee6aceeb15a742bed275ff6c8"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Vec3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a99c73a7ee6aceeb15a742bed275ff6c8">mShadingTangent</a></td></tr>
+<tr class="separator:a99c73a7ee6aceeb15a742bed275ff6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2059eda44467edb8c708e6e534ccf918"><td class="memItemLeft" align="right" valign="top">ispc::MicrofacetDistribution&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a2059eda44467edb8c708e6e534ccf918">mMicrofacetDistribution</a></td></tr>
+<tr class="separator:a2059eda44467edb8c708e6e534ccf918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4917e71190903792c0bff4d64db7e8c0"><td class="memItemLeft" align="right" valign="top">ispc::MicrofacetGeometric&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a4917e71190903792c0bff4d64db7e8c0">mMicrofacetGeometric</a></td></tr>
+<tr class="separator:a4917e71190903792c0bff4d64db7e8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a249b4e7a8b52c007e028ce67bdbfda08"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a249b4e7a8b52c007e028ce67bdbfda08">mTint</a></td></tr>
+<tr class="separator:a249b4e7a8b52c007e028ce67bdbfda08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3039f17685bd9eab6efd7e17221f3b3a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a3039f17685bd9eab6efd7e17221f3b3a">mAbbeNumber</a></td></tr>
+<tr class="separator:a3039f17685bd9eab6efd7e17221f3b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -179,7 +217,29 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00570">570</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  579</span>                              :</div>
+<div class="line"><span class="lineno">  580</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_component.html#a72b0fdcc3b8de15876dbe64e28bf86bc">BsdfComponent</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  581</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a0d7b3031417b65e3a623d5fe160b0170">mN</a>(N),</div>
+<div class="line"><span class="lineno">  582</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a6bd9c771b13037a2fb258fe615031525">mEta</a>(eta),</div>
+<div class="line"><span class="lineno">  583</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#aeab8e65aeebb943d93f8ebf768c29d25">mRoughnessU</a>(roughnessU),</div>
+<div class="line"><span class="lineno">  584</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#ad388f6d301dced147d6c469be80ecc8e">mRoughnessV</a>(roughnessV),</div>
+<div class="line"><span class="lineno">  585</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a99c73a7ee6aceeb15a742bed275ff6c8">mShadingTangent</a>(shadingTangent),</div>
+<div class="line"><span class="lineno">  586</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a2059eda44467edb8c708e6e534ccf918">mMicrofacetDistribution</a>(microfacetDistribution),</div>
+<div class="line"><span class="lineno">  587</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a4917e71190903792c0bff4d64db7e8c0">mMicrofacetGeometric</a>(microfacetGeometric),</div>
+<div class="line"><span class="lineno">  588</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a249b4e7a8b52c007e028ce67bdbfda08">mTint</a>(tint),</div>
+<div class="line"><span class="lineno">  589</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a3039f17685bd9eab6efd7e17221f3b3a">mAbbeNumber</a>(abbeNumber)</div>
+<div class="line"><span class="lineno">  590</span>    {}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_component_html_a72b0fdcc3b8de15876dbe64e28bf86bc"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_component.html#a72b0fdcc3b8de15876dbe64e28bf86bc">moonray::shading::BsdfComponent::BsdfComponent</a></div><div class="ttdeci">BsdfComponent(const Iridescence *const iridescence=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l00034">BsdfComponent.h:34</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f_html_a0d7b3031417b65e3a623d5fe160b0170"><div class="ttname"><a href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a0d7b3031417b65e3a623d5fe160b0170">moonray::shading::MicrofacetAnisotropicBTDF::mN</a></div><div class="ttdeci">scene_rdl2::math::Vec3f mN</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l00605">BsdfComponent.h:605</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f_html_a2059eda44467edb8c708e6e534ccf918"><div class="ttname"><a href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a2059eda44467edb8c708e6e534ccf918">moonray::shading::MicrofacetAnisotropicBTDF::mMicrofacetDistribution</a></div><div class="ttdeci">ispc::MicrofacetDistribution mMicrofacetDistribution</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l00610">BsdfComponent.h:610</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f_html_a249b4e7a8b52c007e028ce67bdbfda08"><div class="ttname"><a href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a249b4e7a8b52c007e028ce67bdbfda08">moonray::shading::MicrofacetAnisotropicBTDF::mTint</a></div><div class="ttdeci">scene_rdl2::math::Color mTint</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l00612">BsdfComponent.h:612</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f_html_a3039f17685bd9eab6efd7e17221f3b3a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a3039f17685bd9eab6efd7e17221f3b3a">moonray::shading::MicrofacetAnisotropicBTDF::mAbbeNumber</a></div><div class="ttdeci">float mAbbeNumber</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l00613">BsdfComponent.h:613</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f_html_a4917e71190903792c0bff4d64db7e8c0"><div class="ttname"><a href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a4917e71190903792c0bff4d64db7e8c0">moonray::shading::MicrofacetAnisotropicBTDF::mMicrofacetGeometric</a></div><div class="ttdeci">ispc::MicrofacetGeometric mMicrofacetGeometric</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l00611">BsdfComponent.h:611</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f_html_a6bd9c771b13037a2fb258fe615031525"><div class="ttname"><a href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a6bd9c771b13037a2fb258fe615031525">moonray::shading::MicrofacetAnisotropicBTDF::mEta</a></div><div class="ttdeci">float mEta</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l00606">BsdfComponent.h:606</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f_html_a99c73a7ee6aceeb15a742bed275ff6c8"><div class="ttname"><a href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a99c73a7ee6aceeb15a742bed275ff6c8">moonray::shading::MicrofacetAnisotropicBTDF::mShadingTangent</a></div><div class="ttdeci">scene_rdl2::math::Vec3f mShadingTangent</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l00609">BsdfComponent.h:609</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f_html_ad388f6d301dced147d6c469be80ecc8e"><div class="ttname"><a href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#ad388f6d301dced147d6c469be80ecc8e">moonray::shading::MicrofacetAnisotropicBTDF::mRoughnessV</a></div><div class="ttdeci">float mRoughnessV</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l00608">BsdfComponent.h:608</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f_html_aeab8e65aeebb943d93f8ebf768c29d25"><div class="ttname"><a href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#aeab8e65aeebb943d93f8ebf768c29d25">moonray::shading::MicrofacetAnisotropicBTDF::mRoughnessU</a></div><div class="ttdeci">float mRoughnessU</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_component_8h_source.html#l00607">BsdfComponent.h:607</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a52a4655696ee53e4ccc247f86ca361b5" name="a52a4655696ee53e4ccc247f86ca361b5"></a>
@@ -206,7 +266,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00592">592</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  592</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -234,7 +295,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00602">602</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  602</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a3039f17685bd9eab6efd7e17221f3b3a">mAbbeNumber</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a62aeca5e2b3ccd140563976c6ce422cd" name="a62aeca5e2b3ccd140563976c6ce422cd"></a>
@@ -261,7 +323,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00595">595</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  595</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a6bd9c771b13037a2fb258fe615031525">mEta</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4cb574cb4227923267a2bbd2b2f574e0" name="a4cb574cb4227923267a2bbd2b2f574e0"></a>
@@ -288,7 +351,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00599">599</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  599</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a2059eda44467edb8c708e6e534ccf918">mMicrofacetDistribution</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a184b7009e218badde7d03c5aa56bcf67" name="a184b7009e218badde7d03c5aa56bcf67"></a>
@@ -315,7 +379,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00600">600</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  600</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a4917e71190903792c0bff4d64db7e8c0">mMicrofacetGeometric</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac269dcbbae76b378399f61bad5ba72eb" name="ac269dcbbae76b378399f61bad5ba72eb"></a>
@@ -342,7 +407,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00594">594</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  594</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a0d7b3031417b65e3a623d5fe160b0170">mN</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad037281dbb1a4f643216ad9a2c409b36" name="ad037281dbb1a4f643216ad9a2c409b36"></a>
@@ -369,7 +435,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00596">596</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  596</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#aeab8e65aeebb943d93f8ebf768c29d25">mRoughnessU</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a662221facc2359d47bf36307c16928fb" name="a662221facc2359d47bf36307c16928fb"></a>
@@ -396,7 +463,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00597">597</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  597</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#ad388f6d301dced147d6c469be80ecc8e">mRoughnessV</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5191d45419083aca271f98c18c6eb609" name="a5191d45419083aca271f98c18c6eb609"></a>
@@ -423,7 +491,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00598">598</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  598</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a99c73a7ee6aceeb15a742bed275ff6c8">mShadingTangent</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8809e762d0149955c1b3771d3c9cf80e" name="a8809e762d0149955c1b3771d3c9cf80e"></a>
@@ -450,6 +519,224 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00601">601</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  601</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html#a249b4e7a8b52c007e028ce67bdbfda08">mTint</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3039f17685bd9eab6efd7e17221f3b3a" name="a3039f17685bd9eab6efd7e17221f3b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3039f17685bd9eab6efd7e17221f3b3a">&#9670;&#160;</a></span>mAbbeNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::MicrofacetAnisotropicBTDF::mAbbeNumber</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00613">613</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a6bd9c771b13037a2fb258fe615031525" name="a6bd9c771b13037a2fb258fe615031525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bd9c771b13037a2fb258fe615031525">&#9670;&#160;</a></span>mEta</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::MicrofacetAnisotropicBTDF::mEta</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00606">606</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a2059eda44467edb8c708e6e534ccf918" name="a2059eda44467edb8c708e6e534ccf918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2059eda44467edb8c708e6e534ccf918">&#9670;&#160;</a></span>mMicrofacetDistribution</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ispc::MicrofacetDistribution moonray::shading::MicrofacetAnisotropicBTDF::mMicrofacetDistribution</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00610">610</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a4917e71190903792c0bff4d64db7e8c0" name="a4917e71190903792c0bff4d64db7e8c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4917e71190903792c0bff4d64db7e8c0">&#9670;&#160;</a></span>mMicrofacetGeometric</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ispc::MicrofacetGeometric moonray::shading::MicrofacetAnisotropicBTDF::mMicrofacetGeometric</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00611">611</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a0d7b3031417b65e3a623d5fe160b0170" name="a0d7b3031417b65e3a623d5fe160b0170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d7b3031417b65e3a623d5fe160b0170">&#9670;&#160;</a></span>mN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Vec3f moonray::shading::MicrofacetAnisotropicBTDF::mN</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00605">605</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="aeab8e65aeebb943d93f8ebf768c29d25" name="aeab8e65aeebb943d93f8ebf768c29d25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeab8e65aeebb943d93f8ebf768c29d25">&#9670;&#160;</a></span>mRoughnessU</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::MicrofacetAnisotropicBTDF::mRoughnessU</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00607">607</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="ad388f6d301dced147d6c469be80ecc8e" name="ad388f6d301dced147d6c469be80ecc8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad388f6d301dced147d6c469be80ecc8e">&#9670;&#160;</a></span>mRoughnessV</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::MicrofacetAnisotropicBTDF::mRoughnessV</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00608">608</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a99c73a7ee6aceeb15a742bed275ff6c8" name="a99c73a7ee6aceeb15a742bed275ff6c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c73a7ee6aceeb15a742bed275ff6c8">&#9670;&#160;</a></span>mShadingTangent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Vec3f moonray::shading::MicrofacetAnisotropicBTDF::mShadingTangent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00609">609</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
+
+</div>
+</div>
+<a id="a249b4e7a8b52c007e028ce67bdbfda08" name="a249b4e7a8b52c007e028ce67bdbfda08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a249b4e7a8b52c007e028ce67bdbfda08">&#9670;&#160;</a></span>mTint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Color moonray::shading::MicrofacetAnisotropicBTDF::mTint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_bsdf_component_8h_source.html#l00612">612</a> of file <a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a>.</p>
 
 </div>
 </div>
@@ -457,9 +744,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/<a class="el" href="_bsdf_component_8h_source.html">BsdfComponent.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_microfacet_anisotropic_b_t_d_f.html">MicrofacetAnisotropicBTDF</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

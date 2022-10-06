@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,16 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_dielectric_fresnel.html">DielectricFresnel</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_dielectric_fresnel.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_dielectric_fresnel-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::DielectricFresnel Class Reference</div></div>
 </div><!--header-->
@@ -120,6 +137,11 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:a570a4ea8cc1706d727b38d5a750d515d"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_dielectric_fresnel.html#a570a4ea8cc1706d727b38d5a750d515d">evalParallel</a> (float etaI, float etaT, float cosThetaI, float cosThetaT)</td></tr>
 <tr class="separator:a570a4ea8cc1706d727b38d5a750d515d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8c366cdac79d813cc33d156cda251875"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_dielectric_fresnel.html#a8c366cdac79d813cc33d156cda251875">DIELECTRIC_FRESNEL_MEMBERS</a></td></tr>
+<tr class="separator:a8c366cdac79d813cc33d156cda251875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classmoonray_1_1shading_1_1_fresnel"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmoonray_1_1shading_1_1_fresnel')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmoonray_1_1shading_1_1_fresnel.html">moonray::shading::Fresnel</a></td></tr>
@@ -176,7 +198,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_fresnel_8h_source.html#l00461">461</a> of file <a class="el" href="_fresnel_8h_source.html">Fresnel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  461</span>                                              :</div>
+<div class="line"><span class="lineno">  462</span>        <a class="code hl_function" href="classmoonray_1_1shading_1_1_fresnel.html#a4d9a2b30f69b204a5024955bd308205f">Fresnel</a>(<a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_fresnel.html#acd82fe1fccbac8173a5355f637eb21b1a44d9e8e14ecee55228519bfe0f99d901">PROPERTY_COLOR</a>), mEtaI(etaI), mEtaT(etaT)  {  }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_fresnel_html_a4d9a2b30f69b204a5024955bd308205f"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fresnel.html#a4d9a2b30f69b204a5024955bd308205f">moonray::shading::Fresnel::Fresnel</a></div><div class="ttdeci">Fresnel(int pflags)</div><div class="ttdef"><b>Definition:</b> <a href="_fresnel_8h_source.html#l00066">Fresnel.h:66</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_fresnel_html_acd82fe1fccbac8173a5355f637eb21b1a44d9e8e14ecee55228519bfe0f99d901"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fresnel.html#acd82fe1fccbac8173a5355f637eb21b1a44d9e8e14ecee55228519bfe0f99d901">moonray::shading::Fresnel::PROPERTY_COLOR</a></div><div class="ttdeci">@ PROPERTY_COLOR</div><div class="ttdef"><b>Definition:</b> <a href="_fresnel_8h_source.html#l00061">Fresnel.h:61</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a05a7c095aab4455b2e635138adb7689e" name="a05a7c095aab4455b2e635138adb7689e"></a>
@@ -220,7 +246,12 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_fresnel_8h_source.html#l00464">464</a> of file <a class="el" href="_fresnel_8h_source.html">Fresnel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  465</span>      : <a class="code hl_function" href="classmoonray_1_1shading_1_1_fresnel.html#a4d9a2b30f69b204a5024955bd308205f">Fresnel</a>(arena, (<span class="keyword">const</span> Fresnelv *)fresnelv, lane)</div>
+<div class="line"><span class="lineno">  466</span>    {</div>
+<div class="line"><span class="lineno">  467</span>        mEtaI = fresnelv-&gt;mEtaI[lane];</div>
+<div class="line"><span class="lineno">  468</span>        mEtaT = fresnelv-&gt;mEtaT[lane];</div>
+<div class="line"><span class="lineno">  469</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -251,7 +282,31 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1shading_1_1_fresnel.html#aebe19f7e5d236027879126e7f140e0bb">moonray::shading::Fresnel</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_fresnel_8h_source.html#l00504">504</a> of file <a class="el" href="_fresnel_8h_source.html">Fresnel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  505</span>    {</div>
+<div class="line"><span class="lineno">  506</span>        scene_rdl2::math::Color res = scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">  507</span> </div>
+<div class="line"><span class="lineno">  508</span>        <span class="keywordflow">if</span> (mEtaT &lt; sPbrValidityDielectricValidLowBegin || mEtaT &gt; <a class="code hl_variable" href="namespacemoonray_1_1shading.html#a8d1b080aa227514cf83b13aa73f550fb">sPbrValidityDielectricValidHighEnd</a>) {</div>
+<div class="line"><span class="lineno">  509</span>            res = <a class="code hl_variable" href="namespacemoonray_1_1shading.html#aeb676fbbd90813baac1cc80091ca2402">sPbrValidityInvalidColor</a>;</div>
+<div class="line"><span class="lineno">  510</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mEtaT &gt; <a class="code hl_variable" href="namespacemoonray_1_1shading.html#a091116bdbbc997fe2b78f72f083251a3">sPbrValidityDielectricValidLowEnd</a> &amp;&amp; mEtaT &lt; <a class="code hl_variable" href="namespacemoonray_1_1shading.html#aa6a94ffe1322d5eac6c7b97f981dde74">sPbrValidityDielectricValidHighBegin</a>) {</div>
+<div class="line"><span class="lineno">  511</span>            res = <a class="code hl_variable" href="namespacemoonray_1_1shading.html#a98d2707b89bebe63f1bd68bd2e96f7bf">sPbrValidityValidColor</a>;</div>
+<div class="line"><span class="lineno">  512</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mEtaT &gt; <a class="code hl_variable" href="namespacemoonray_1_1shading.html#aa6a94ffe1322d5eac6c7b97f981dde74">sPbrValidityDielectricValidHighBegin</a>) {</div>
+<div class="line"><span class="lineno">  513</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> gradient = (mEtaT - <a class="code hl_variable" href="namespacemoonray_1_1shading.html#aa6a94ffe1322d5eac6c7b97f981dde74">sPbrValidityDielectricValidHighBegin</a>) /</div>
+<div class="line"><span class="lineno">  514</span>                    (<a class="code hl_variable" href="namespacemoonray_1_1shading.html#a8d1b080aa227514cf83b13aa73f550fb">sPbrValidityDielectricValidHighEnd</a> - <a class="code hl_variable" href="namespacemoonray_1_1shading.html#aa6a94ffe1322d5eac6c7b97f981dde74">sPbrValidityDielectricValidHighBegin</a>);</div>
+<div class="line"><span class="lineno">  515</span>            res = scene_rdl2::math::lerp(<a class="code hl_variable" href="namespacemoonray_1_1shading.html#a98d2707b89bebe63f1bd68bd2e96f7bf">sPbrValidityValidColor</a>, <a class="code hl_variable" href="namespacemoonray_1_1shading.html#aeb676fbbd90813baac1cc80091ca2402">sPbrValidityInvalidColor</a>, gradient);</div>
+<div class="line"><span class="lineno">  516</span>        } <span class="keywordflow">else</span> { <span class="comment">// mEtaT &lt; sPbrValidityDielectricValidLowEnd</span></div>
+<div class="line"><span class="lineno">  517</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> gradient = (mEtaT - <a class="code hl_variable" href="namespacemoonray_1_1shading.html#a46cea1537b23cc5742664b6637626fe4">sPbrValidityDielectricValidLowBegin</a>) /</div>
+<div class="line"><span class="lineno">  518</span>                    (<a class="code hl_variable" href="namespacemoonray_1_1shading.html#a091116bdbbc997fe2b78f72f083251a3">sPbrValidityDielectricValidLowEnd</a> - <a class="code hl_variable" href="namespacemoonray_1_1shading.html#a46cea1537b23cc5742664b6637626fe4">sPbrValidityDielectricValidLowBegin</a>);</div>
+<div class="line"><span class="lineno">  519</span>            res = scene_rdl2::math::lerp(<a class="code hl_variable" href="namespacemoonray_1_1shading.html#aeb676fbbd90813baac1cc80091ca2402">sPbrValidityInvalidColor</a>, <a class="code hl_variable" href="namespacemoonray_1_1shading.html#a98d2707b89bebe63f1bd68bd2e96f7bf">sPbrValidityValidColor</a>, gradient);</div>
+<div class="line"><span class="lineno">  520</span>        }</div>
+<div class="line"><span class="lineno">  521</span>        <span class="keywordflow">return</span> res;</div>
+<div class="line"><span class="lineno">  522</span>    }</div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a091116bdbbc997fe2b78f72f083251a3"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a091116bdbbc997fe2b78f72f083251a3">moonray::shading::sPbrValidityDielectricValidLowEnd</a></div><div class="ttdeci">static const float sPbrValidityDielectricValidLowEnd</div><div class="ttdef"><b>Definition:</b> <a href="_pbr_validity_8h_source.html#l00031">PbrValidity.h:31</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a46cea1537b23cc5742664b6637626fe4"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a46cea1537b23cc5742664b6637626fe4">moonray::shading::sPbrValidityDielectricValidLowBegin</a></div><div class="ttdeci">static const float sPbrValidityDielectricValidLowBegin</div><div class="ttdoc">PBR Validity values for dielectrics.</div><div class="ttdef"><b>Definition:</b> <a href="_pbr_validity_8h_source.html#l00030">PbrValidity.h:30</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a8d1b080aa227514cf83b13aa73f550fb"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a8d1b080aa227514cf83b13aa73f550fb">moonray::shading::sPbrValidityDielectricValidHighEnd</a></div><div class="ttdeci">static const float sPbrValidityDielectricValidHighEnd</div><div class="ttdef"><b>Definition:</b> <a href="_pbr_validity_8h_source.html#l00033">PbrValidity.h:33</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a98d2707b89bebe63f1bd68bd2e96f7bf"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a98d2707b89bebe63f1bd68bd2e96f7bf">moonray::shading::sPbrValidityValidColor</a></div><div class="ttdeci">static const scene_rdl2::math::Color sPbrValidityValidColor</div><div class="ttdef"><b>Definition:</b> <a href="_pbr_validity_8h_source.html#l00017">PbrValidity.h:17</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_aa6a94ffe1322d5eac6c7b97f981dde74"><div class="ttname"><a href="namespacemoonray_1_1shading.html#aa6a94ffe1322d5eac6c7b97f981dde74">moonray::shading::sPbrValidityDielectricValidHighBegin</a></div><div class="ttdeci">static const float sPbrValidityDielectricValidHighBegin</div><div class="ttdef"><b>Definition:</b> <a href="_pbr_validity_8h_source.html#l00032">PbrValidity.h:32</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_aeb676fbbd90813baac1cc80091ca2402"><div class="ttname"><a href="namespacemoonray_1_1shading.html#aeb676fbbd90813baac1cc80091ca2402">moonray::shading::sPbrValidityInvalidColor</a></div><div class="ttdeci">static const scene_rdl2::math::Color sPbrValidityInvalidColor</div><div class="ttdef"><b>Definition:</b> <a href="_pbr_validity_8h_source.html#l00018">PbrValidity.h:18</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8365ef942525661224d8538fdb027ccd" name="a8365ef942525661224d8538fdb027ccd"></a>
@@ -285,7 +340,12 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented in <a class="el" href="classmoonray_1_1shading_1_1_layered_dielectric_fresnel.html#a986d8265b30b80af6e0e57a238935928">moonray::shading::LayeredDielectricFresnel</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_fresnel_8h_source.html#l00471">471</a> of file <a class="el" href="_fresnel_8h_source.html">Fresnel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  472</span>    {</div>
+<div class="line"><span class="lineno">  473</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_dielectric_fresnel.html#a8365ef942525661224d8538fdb027ccd">eval</a>(hDotWi, mEtaI, mEtaT, <a class="code hl_variable" href="classmoonray_1_1shading_1_1_fresnel.html#a323293ac7d83aded091ec2f133604660">mWeight</a>);</div>
+<div class="line"><span class="lineno">  474</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_dielectric_fresnel_html_a8365ef942525661224d8538fdb027ccd"><div class="ttname"><a href="classmoonray_1_1shading_1_1_dielectric_fresnel.html#a8365ef942525661224d8538fdb027ccd">moonray::shading::DielectricFresnel::eval</a></div><div class="ttdeci">finline scene_rdl2::math::Color eval(float hDotWi) const override</div><div class="ttdoc">Pass in the dot product between light direction and half-vector.</div><div class="ttdef"><b>Definition:</b> <a href="_fresnel_8h_source.html#l00471">Fresnel.h:471</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_fresnel_html_a323293ac7d83aded091ec2f133604660"><div class="ttname"><a href="classmoonray_1_1shading_1_1_fresnel.html#a323293ac7d83aded091ec2f133604660">moonray::shading::Fresnel::mWeight</a></div><div class="ttdeci">float mWeight</div><div class="ttdef"><b>Definition:</b> <a href="_fresnel_8h_source.html#l00099">Fresnel.h:99</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acb4ff0dd30f1d1779785cc1624d8facb" name="acb4ff0dd30f1d1779785cc1624d8facb"></a>
@@ -335,7 +395,33 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_fresnel_8h_source.html#l00476">476</a> of file <a class="el" href="_fresnel_8h_source.html">Fresnel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  479</span>    {</div>
+<div class="line"><span class="lineno">  480</span>        <span class="comment">// Make sure we don&#39;t nan out down below</span></div>
+<div class="line"><span class="lineno">  481</span>        hDotWi = scene_rdl2::math::max(hDotWi, -1.0f);</div>
+<div class="line"><span class="lineno">  482</span>        hDotWi = scene_rdl2::math::min(hDotWi, 1.0f);</div>
+<div class="line"><span class="lineno">  483</span> </div>
+<div class="line"><span class="lineno">  484</span>        <span class="comment">// Compute Snell law</span></div>
+<div class="line"><span class="lineno">  485</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> eta = etaI * scene_rdl2::math::rcp(etaT);</div>
+<div class="line"><span class="lineno">  486</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> sinThetaTSqr = eta * eta * (1.0f - hDotWi * hDotWi);</div>
+<div class="line"><span class="lineno">  487</span>        <span class="keywordflow">if</span> (sinThetaTSqr &gt;= 1.0f) {</div>
+<div class="line"><span class="lineno">  488</span>            <span class="comment">// Total internal reflection</span></div>
+<div class="line"><span class="lineno">  489</span>            <span class="keywordflow">return</span> scene_rdl2::math::sWhite * weight;</div>
+<div class="line"><span class="lineno">  490</span> </div>
+<div class="line"><span class="lineno">  491</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  492</span> </div>
+<div class="line"><span class="lineno">  493</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaT = scene_rdl2::math::sqrt(1.0f - sinThetaTSqr);</div>
+<div class="line"><span class="lineno">  494</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> cosThetaI = scene_rdl2::math::abs(hDotWi);</div>
+<div class="line"><span class="lineno">  495</span> </div>
+<div class="line"><span class="lineno">  496</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> parallel = <a class="code hl_function" href="classmoonray_1_1shading_1_1_dielectric_fresnel.html#a570a4ea8cc1706d727b38d5a750d515d">evalParallel</a>(etaI, etaT, cosThetaI, cosThetaT);</div>
+<div class="line"><span class="lineno">  497</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> perp = <a class="code hl_function" href="classmoonray_1_1shading_1_1_dielectric_fresnel.html#a504d5ed76cb141b75999e4ac40e70259">evalPerp</a>(etaI, etaT, cosThetaI, cosThetaT);</div>
+<div class="line"><span class="lineno">  498</span> </div>
+<div class="line"><span class="lineno">  499</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> fr = 0.5f * (parallel + perp);</div>
+<div class="line"><span class="lineno">  500</span>            <span class="keywordflow">return</span> scene_rdl2::math::Color(fr, fr, fr) * weight;</div>
+<div class="line"><span class="lineno">  501</span>        }</div>
+<div class="line"><span class="lineno">  502</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_dielectric_fresnel_html_a504d5ed76cb141b75999e4ac40e70259"><div class="ttname"><a href="classmoonray_1_1shading_1_1_dielectric_fresnel.html#a504d5ed76cb141b75999e4ac40e70259">moonray::shading::DielectricFresnel::evalPerp</a></div><div class="ttdeci">static float evalPerp(float etaI, float etaT, float cosThetaI, float cosThetaT)</div><div class="ttdef"><b>Definition:</b> <a href="_fresnel_8h_source.html#l00547">Fresnel.h:547</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_dielectric_fresnel_html_a570a4ea8cc1706d727b38d5a750d515d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_dielectric_fresnel.html#a570a4ea8cc1706d727b38d5a750d515d">moonray::shading::DielectricFresnel::evalParallel</a></div><div class="ttdeci">static float evalParallel(float etaI, float etaT, float cosThetaI, float cosThetaT)</div><div class="ttdef"><b>Definition:</b> <a href="_fresnel_8h_source.html#l00560">Fresnel.h:560</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a570a4ea8cc1706d727b38d5a750d515d" name="a570a4ea8cc1706d727b38d5a750d515d"></a>
@@ -385,7 +471,14 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_fresnel_8h_source.html#l00560">560</a> of file <a class="el" href="_fresnel_8h_source.html">Fresnel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  564</span>    {</div>
+<div class="line"><span class="lineno">  565</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> etaTcosThetaI = etaT * cosThetaI;</div>
+<div class="line"><span class="lineno">  566</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> etaIcosThetaT = etaI * cosThetaT;</div>
+<div class="line"><span class="lineno">  567</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> parallel = ((etaTcosThetaI) - (etaIcosThetaT)) *</div>
+<div class="line"><span class="lineno">  568</span>                scene_rdl2::math::rcp((etaTcosThetaI) + (etaIcosThetaT));</div>
+<div class="line"><span class="lineno">  569</span>        <span class="keywordflow">return</span> parallel*parallel;</div>
+<div class="line"><span class="lineno">  570</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a504d5ed76cb141b75999e4ac40e70259" name="a504d5ed76cb141b75999e4ac40e70259"></a>
@@ -435,7 +528,14 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_fresnel_8h_source.html#l00547">547</a> of file <a class="el" href="_fresnel_8h_source.html">Fresnel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  551</span>    {</div>
+<div class="line"><span class="lineno">  552</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> etaIcosThetaI = etaI * cosThetaI;</div>
+<div class="line"><span class="lineno">  553</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> etaTcosThetaT = etaT  * cosThetaT;</div>
+<div class="line"><span class="lineno">  554</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> perp = ((etaIcosThetaI) - (etaTcosThetaT)) *</div>
+<div class="line"><span class="lineno">  555</span>            scene_rdl2::math::rcp((etaIcosThetaI) + (etaTcosThetaT));</div>
+<div class="line"><span class="lineno">  556</span>        <span class="keywordflow">return</span> perp*perp;</div>
+<div class="line"><span class="lineno">  557</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a08c919b567388aa1fe48c363cf7e59d2" name="a08c919b567388aa1fe48c363cf7e59d2"></a>
@@ -475,7 +575,17 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1shading_1_1_fresnel.html#a56c7bf4b56c9a9acd9bf90e532d077d3">moonray::shading::Fresnel</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_fresnel_8h_source.html#l00524">524</a> of file <a class="el" href="_fresnel_8h_source.html">Fresnel.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  525</span>    {</div>
+<div class="line"><span class="lineno">  526</span>        <span class="keywordflow">switch</span> (prop)</div>
+<div class="line"><span class="lineno">  527</span>        {</div>
+<div class="line"><span class="lineno">  528</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1shading_1_1_fresnel.html#acd82fe1fccbac8173a5355f637eb21b1a44d9e8e14ecee55228519bfe0f99d901">PROPERTY_COLOR</a>:</div>
+<div class="line"><span class="lineno">  529</span>            *dest = *(dest + 1) = *(dest + 2) = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_fresnel.html#a323293ac7d83aded091ec2f133604660">mWeight</a>;</div>
+<div class="line"><span class="lineno">  530</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  531</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  532</span>            MNRY_ASSERT(0 &amp;&amp; <span class="stringliteral">&quot;unknown fresnel property&quot;</span>);</div>
+<div class="line"><span class="lineno">  533</span>        }</div>
+<div class="line"><span class="lineno">  534</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abb80418ec6d6603fcf41f6c21ea1d918" name="abb80418ec6d6603fcf41f6c21ea1d918"></a>
@@ -517,6 +627,36 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented in <a class="el" href="classmoonray_1_1shading_1_1_layered_dielectric_fresnel.html#a966219ab15d6355ee6976780deecf40a">moonray::shading::LayeredDielectricFresnel</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_fresnel_8h_source.html#l00535">535</a> of file <a class="el" href="_fresnel_8h_source.html">Fresnel.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  537</span>    {</div>
+<div class="line"><span class="lineno">  538</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;{DielectricFresnel}&quot;</span> &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot; weight: &quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_fresnel.html#a323293ac7d83aded091ec2f133604660">mWeight</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  539</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;etaI: &quot;</span> &lt;&lt; mEtaI &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  540</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;etaT: &quot;</span> &lt;&lt; mEtaT &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  541</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8c366cdac79d813cc33d156cda251875" name="a8c366cdac79d813cc33d156cda251875"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c366cdac79d813cc33d156cda251875">&#9670;&#160;</a></span>DIELECTRIC_FRESNEL_MEMBERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moonray::shading::DielectricFresnel::DIELECTRIC_FRESNEL_MEMBERS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_fresnel_8h_source.html#l00543">543</a> of file <a class="el" href="_fresnel_8h_source.html">Fresnel.h</a>.</p>
 
 </div>
 </div>
@@ -524,9 +664,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/bsdf/<a class="el" href="_fresnel_8h_source.html">Fresnel.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_dielectric_fresnel.html">DielectricFresnel</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

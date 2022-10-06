@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="structmoonray_1_1pbr_1_1_light_intersect_context.html">LightIntersectContext</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structmoonray_1_1pbr_1_1_light_intersect_context.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -118,7 +134,38 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_light_util_8h_source.html#l00342">342</a> of file <a class="el" href="_light_util_8h_source.html">LightUtil.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  342</span>                           :</div>
+<div class="line"><span class="lineno">  343</span>        <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersect_context.html#aacf4cae3b901e8c9ad1174adbee046c0">mData0</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  344</span>        <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersect_context.html#a0a410894ea65014a8202c27fc68e2fb0">mData1</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  345</span>        <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersect_context.html#a31a53989215f9b96b1b67ad38d8a8e4d">mDistance</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  346</span>        <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersect_context.html#ae5462c911d6ecd025bcb08b86ca072b4">mFromCamera</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  347</span>        <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersect_context.html#aebaf50d4c1a7ec39daeab4cc41f5841a">mIncludeRayTerminationLights</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  348</span>        <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersect_context.html#ab47b5af71910997b863d75664ccc505e">mPdf</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  349</span>        <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersect_context.html#a02d96b695024740bc1f393e291074108">mMeshGeomID</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  350</span>        <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersect_context.html#acf3dafb34d3fb54617daf962c56987a8">mMeshPrimID</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  351</span>        <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersect_context.html#aa9c895434aa3ddcf2e2ad31d0b921345">mShadingNormal</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  352</span>        <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersect_context.html#a85d33b65c42bf8a33b96295366ff7c05">mSamples</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  353</span>        <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersect_context.html#ac26a0ebf069950e15ab3b5b80a61d84e">mDepth</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  354</span>        <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersect_context.html#a6a4150fce8d4309eb0e16d950e98f2b5">mNumHits</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  355</span>        <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersect_context.html#a6270a1ffd468cd29c1ca22e45ec1b10d">mLightIdMap</a>(<span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  356</span>    {</div>
+<div class="line"><span class="lineno">  357</span>        rtcInitIntersectContext(&amp;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_light_intersect_context.html#a1663604dc0985334eba91f38685999be">mRtcContext</a>);</div>
+<div class="line"><span class="lineno">  358</span>    }</div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersect_context_html_a02d96b695024740bc1f393e291074108"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersect_context.html#a02d96b695024740bc1f393e291074108">moonray::pbr::LightIntersectContext::mMeshGeomID</a></div><div class="ttdeci">int * mMeshGeomID</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00367">LightUtil.h:367</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersect_context_html_a0a410894ea65014a8202c27fc68e2fb0"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersect_context.html#a0a410894ea65014a8202c27fc68e2fb0">moonray::pbr::LightIntersectContext::mData1</a></div><div class="ttdeci">float * mData1</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00362">LightUtil.h:362</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersect_context_html_a1663604dc0985334eba91f38685999be"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersect_context.html#a1663604dc0985334eba91f38685999be">moonray::pbr::LightIntersectContext::mRtcContext</a></div><div class="ttdeci">RTCIntersectContext mRtcContext</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00360">LightUtil.h:360</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersect_context_html_a31a53989215f9b96b1b67ad38d8a8e4d"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersect_context.html#a31a53989215f9b96b1b67ad38d8a8e4d">moonray::pbr::LightIntersectContext::mDistance</a></div><div class="ttdeci">float * mDistance</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00363">LightUtil.h:363</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersect_context_html_a6270a1ffd468cd29c1ca22e45ec1b10d"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersect_context.html#a6270a1ffd468cd29c1ca22e45ec1b10d">moonray::pbr::LightIntersectContext::mLightIdMap</a></div><div class="ttdeci">const int * mLightIdMap</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00373">LightUtil.h:373</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersect_context_html_a6a4150fce8d4309eb0e16d950e98f2b5"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersect_context.html#a6a4150fce8d4309eb0e16d950e98f2b5">moonray::pbr::LightIntersectContext::mNumHits</a></div><div class="ttdeci">int * mNumHits</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00372">LightUtil.h:372</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersect_context_html_a85d33b65c42bf8a33b96295366ff7c05"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersect_context.html#a85d33b65c42bf8a33b96295366ff7c05">moonray::pbr::LightIntersectContext::mSamples</a></div><div class="ttdeci">const IntegratorSample1D * mSamples</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00370">LightUtil.h:370</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersect_context_html_aa9c895434aa3ddcf2e2ad31d0b921345"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersect_context.html#aa9c895434aa3ddcf2e2ad31d0b921345">moonray::pbr::LightIntersectContext::mShadingNormal</a></div><div class="ttdeci">const scene_rdl2::math::Vec3f * mShadingNormal</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00369">LightUtil.h:369</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersect_context_html_aacf4cae3b901e8c9ad1174adbee046c0"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersect_context.html#aacf4cae3b901e8c9ad1174adbee046c0">moonray::pbr::LightIntersectContext::mData0</a></div><div class="ttdeci">float * mData0</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00361">LightUtil.h:361</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersect_context_html_ab47b5af71910997b863d75664ccc505e"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersect_context.html#ab47b5af71910997b863d75664ccc505e">moonray::pbr::LightIntersectContext::mPdf</a></div><div class="ttdeci">float * mPdf</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00366">LightUtil.h:366</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersect_context_html_ac26a0ebf069950e15ab3b5b80a61d84e"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersect_context.html#ac26a0ebf069950e15ab3b5b80a61d84e">moonray::pbr::LightIntersectContext::mDepth</a></div><div class="ttdeci">int * mDepth</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00371">LightUtil.h:371</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersect_context_html_acf3dafb34d3fb54617daf962c56987a8"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersect_context.html#acf3dafb34d3fb54617daf962c56987a8">moonray::pbr::LightIntersectContext::mMeshPrimID</a></div><div class="ttdeci">int * mMeshPrimID</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00368">LightUtil.h:368</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersect_context_html_ae5462c911d6ecd025bcb08b86ca072b4"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersect_context.html#ae5462c911d6ecd025bcb08b86ca072b4">moonray::pbr::LightIntersectContext::mFromCamera</a></div><div class="ttdeci">int * mFromCamera</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00364">LightUtil.h:364</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_light_intersect_context_html_aebaf50d4c1a7ec39daeab4cc41f5841a"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_light_intersect_context.html#aebaf50d4c1a7ec39daeab4cc41f5841a">moonray::pbr::LightIntersectContext::mIncludeRayTerminationLights</a></div><div class="ttdeci">int * mIncludeRayTerminationLights</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00365">LightUtil.h:365</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -350,9 +397,13 @@ Public Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/light/<a class="el" href="_light_util_8h_source.html">LightUtil.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="structmoonray_1_1pbr_1_1_light_intersect_context.html">LightIntersectContext</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

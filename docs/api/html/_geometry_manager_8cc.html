@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_5d293eeb9c420916dbaf3de3f1622ec4.html">rt</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_geometry_manager_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -120,8 +136,18 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aff1e5ad5f5e39ac3abc5ce0c027e98f2"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1rt.html#aff1e5ad5f5e39ac3abc5ce0c027e98f2">moonray::rt::fillGenerateList</a> (const scene_rdl2::rdl2::Layer::GeometryToRootShadersMap &amp;fullGeometryRootShaders, scene_rdl2::rdl2::Geometry *topLevelGeometry, scene_rdl2::rdl2::Geometry *currentGeometry, std::unordered_set&lt; const scene_rdl2::rdl2::Geometry * &gt; &amp;isReferenced, std::map&lt; size_t, std::unordered_set&lt; scene_rdl2::rdl2::Geometry * &gt; &gt; &amp;toGenerate, scene_rdl2::rdl2::Layer::GeometryToRootShadersMap &amp;toLoadGeometryRootShaders, int level)</td></tr>
+<tr class="separator:aff1e5ad5f5e39ac3abc5ce0c027e98f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938f87dc2713b949045250352ad6cca6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1rt.html#a938f87dc2713b949045250352ad6cca6">moonray::rt::collectPrimitives</a> (const scene_rdl2::rdl2::SceneContext::GeometrySetVector &amp;geometrySets, const scene_rdl2::rdl2::Layer::GeometryToRootShadersMap &amp;g2s, geom::SharedPrimitiveSet &amp;sharedPrimitives, geom::InternalPrimitiveList &amp;primitivesToTessellate, geom::InternalPrimitiveList &amp;curvePrimitives)</td></tr>
+<tr class="separator:a938f87dc2713b949045250352ad6cca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34b4fc93a751b196c8efadf1cf8af4e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1rt.html#a34b4fc93a751b196c8efadf1cf8af4e4">moonray::rt::bakeVolumeShaderDensityMap</a> (const scene_rdl2::rdl2::Layer *layer, geom::internal::NamedPrimitive *prim, const geom::MotionBlurParams &amp;motionBlurParams, const geom::internal::VolumeAssignmentTable *volumeAssignmentTable)</td></tr>
 <tr class="separator:a34b4fc93a751b196c8efadf1cf8af4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f7baf00acb0d925a6db546ec98f20a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1rt.html#a68f7baf00acb0d925a6db546ec98f20a">moonray::rt::parsePartNames</a> (char *partsString, ShadowExclusionMapping &amp;mapping, const scene_rdl2::rdl2::Geometry *geometry, const scene_rdl2::rdl2::Layer *layer)</td></tr>
+<tr class="separator:a68f7baf00acb0d925a6db546ec98f20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7feb420763c5844eaf6848e7b9be001c"><td class="memItemLeft" align="right" valign="top">static LabeledGeometrySet *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1rt.html#a7feb420763c5844eaf6848e7b9be001c">moonray::rt::findLabeledGeometrySet</a> (const char *label, std::vector&lt; LabeledGeometrySet &gt; &amp;labeledGeometrySets)</td></tr>
+<tr class="separator:a7feb420763c5844eaf6848e7b9be001c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d441aac02541415a3102142221c7ce"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1rt.html#ac5d441aac02541415a3102142221c7ce">moonray::rt::parseSetLabels</a> (char *labelsString, ShadowExclusionMapping &amp;mapping, std::vector&lt; LabeledGeometrySet &gt; &amp;geoSets)</td></tr>
+<tr class="separator:ac5d441aac02541415a3102142221c7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -129,9 +155,13 @@ Variables</h2></td></tr>
 <tr class="separator:a00340c8c4537f435b5cd4fe4379b180b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_4641936dec471d1ca494d715a61d4ee7.html">rt</a></li><li class="navelem"><a class="el" href="_geometry_manager_8cc.html">GeometryManager.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

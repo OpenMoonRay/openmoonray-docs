@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_3e13f994d4a23b701716ea18181644f4.html">sampler</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_sliding_window_cache_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">SlidingWindowCache.h</div></div>
 </div><!--header-->
@@ -75,8 +91,8 @@ $(function() {
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// function, but the class will return 1.</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html">   27</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html">SlidingWindowCache</a></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> mCachedMin;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> sDefaultState = std::numeric_limits&lt;utype&gt;::max();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#ab22f03bf5c0e825d3d4eed1e6f05c0ef">   29</a></span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#ab22f03bf5c0e825d3d4eed1e6f05c0ef">mCachedMin</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#a97e56155b5e58d85d5e6cb4b6b9a778e">   30</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#a97e56155b5e58d85d5e6cb4b6b9a778e">sDefaultState</a> = std::numeric_limits&lt;utype&gt;::max();</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#ac61865cc80ae3d92075ee97d9583a7d7">SlidingWindowCache</a>();</div>
@@ -93,19 +109,19 @@ $(function() {
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#a4b7597e04fe65a2f7e8ce25826235e57">   45</a></span>finline <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#a4b7597e04fe65a2f7e8ce25826235e57">SlidingWindowCache::reset</a>()</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    mCachedMin = sDefaultState;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#ab22f03bf5c0e825d3d4eed1e6f05c0ef">mCachedMin</a> = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#a97e56155b5e58d85d5e6cb4b6b9a778e">sDefaultState</a>;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CacheCalc&gt;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#a4fce3b5cfb479034e34f6f9d186a2b26">   51</a></span>finline <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#ab93a2f2826bb9b88eb7f489c13dce9c1">SlidingWindowCache::getIndex</a>(CacheCalc cacheCalc, <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> incrementalValue)</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> cachedMax = mCachedMin + <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">kSIMDSize</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> cachedMax = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#ab22f03bf5c0e825d3d4eed1e6f05c0ef">mCachedMin</a> + <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">kSIMDSize</a>;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">if</span> (incrementalValue &lt; mCachedMin || incrementalValue &gt;= cachedMax) {</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        cacheCalc(incrementalValue);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        mCachedMin = incrementalValue;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#ab22f03bf5c0e825d3d4eed1e6f05c0ef">mCachedMin</a> = incrementalValue;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">return</span> incrementalValue - mCachedMin;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">return</span> incrementalValue - <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#ab22f03bf5c0e825d3d4eed1e6f05c0ef">mCachedMin</a>;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>} <span class="comment">// namespace pbr</span></div>
@@ -117,15 +133,21 @@ $(function() {
 <div class="ttc" id="a_sampling_constants_8h_html"><div class="ttname"><a href="_sampling_constants_8h.html">SamplingConstants.h</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_sliding_window_cache_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sliding_window_cache.html">moonray::pbr::SlidingWindowCache</a></div><div class="ttdef"><b>Definition:</b> <a href="_sliding_window_cache_8h_source.html#l00027">SlidingWindowCache.h:28</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_sliding_window_cache_html_a4b7597e04fe65a2f7e8ce25826235e57"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#a4b7597e04fe65a2f7e8ce25826235e57">moonray::pbr::SlidingWindowCache::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> <a href="_sliding_window_cache_8h_source.html#l00045">SlidingWindowCache.h:45</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_sliding_window_cache_html_a97e56155b5e58d85d5e6cb4b6b9a778e"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#a97e56155b5e58d85d5e6cb4b6b9a778e">moonray::pbr::SlidingWindowCache::sDefaultState</a></div><div class="ttdeci">static const utype sDefaultState</div><div class="ttdef"><b>Definition:</b> <a href="_sliding_window_cache_8h_source.html#l00030">SlidingWindowCache.h:30</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_sliding_window_cache_html_ab22f03bf5c0e825d3d4eed1e6f05c0ef"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#ab22f03bf5c0e825d3d4eed1e6f05c0ef">moonray::pbr::SlidingWindowCache::mCachedMin</a></div><div class="ttdeci">utype mCachedMin</div><div class="ttdef"><b>Definition:</b> <a href="_sliding_window_cache_8h_source.html#l00029">SlidingWindowCache.h:29</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_sliding_window_cache_html_ab93a2f2826bb9b88eb7f489c13dce9c1"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#ab93a2f2826bb9b88eb7f489c13dce9c1">moonray::pbr::SlidingWindowCache::getIndex</a></div><div class="ttdeci">utype getIndex(CacheCalc cacheCalc, utype incrementalValue)</div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_sliding_window_cache_html_ac61865cc80ae3d92075ee97d9583a7d7"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#ac61865cc80ae3d92075ee97d9583a7d7">moonray::pbr::SlidingWindowCache::SlidingWindowCache</a></div><div class="ttdeci">SlidingWindowCache()</div><div class="ttdef"><b>Definition:</b> <a href="_sliding_window_cache_8h_source.html#l00040">SlidingWindowCache.h:40</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a05be203e492310c81d3203056ed33d0e"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">moonray::pbr::kSIMDSize</a></div><div class="ttdeci">constexpr utype kSIMDSize</div><div class="ttdef"><b>Definition:</b> <a href="_sampling_constants_8h_source.html#l00019">SamplingConstants.h:19</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a283db28884f96d84fa1d0851741b7845"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">moonray::pbr::utype</a></div><div class="ttdeci">std::uint32_t utype</div><div class="ttdef"><b>Definition:</b> <a href="_sampling_constants_8h_source.html#l00016">SamplingConstants.h:16</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_54974b8446c802289864b854fec9c5b9.html">sampler</a></li><li class="navelem"><a class="el" href="_sliding_window_cache_8h.html">SlidingWindowCache.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

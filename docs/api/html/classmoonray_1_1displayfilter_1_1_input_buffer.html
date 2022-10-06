@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,16 +42,30 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1displayfilter.html">displayfilter</a></li><li class="navelem"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html">InputBuffer</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1displayfilter_1_1_input_buffer.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1displayfilter_1_1_input_buffer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::displayfilter::InputBuffer Class Reference</div></div>
 </div><!--header-->
@@ -72,21 +90,21 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5fd7b5026a75e2a027ee2eb5c41d4bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87be484ea5de39d11585ef496f7de97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#aa87be484ea5de39d11585ef496f7de97">setData</a> (unsigned int offset, unsigned int <a class="el" href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a>, const uint8_t *data)</td></tr>
 <tr class="separator:aa87be484ea5de39d11585ef496f7de97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac07166d259e8cd1f79e55fa54cc9f511"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#ac07166d259e8cd1f79e55fa54cc9f511">setStartPixel</a> (unsigned int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, unsigned int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
+<tr class="memitem:ac07166d259e8cd1f79e55fa54cc9f511"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#ac07166d259e8cd1f79e55fa54cc9f511">setStartPixel</a> (unsigned int x, unsigned int y)</td></tr>
 <tr class="separator:ac07166d259e8cd1f79e55fa54cc9f511"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a597eaaaf143d206986b19d8ff8ebc2"><td class="memItemLeft" align="right" valign="top">const scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a7a597eaaaf143d206986b19d8ff8ebc2">getPixel</a> (unsigned int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, unsigned int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:a7a597eaaaf143d206986b19d8ff8ebc2"><td class="memItemLeft" align="right" valign="top">const scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a7a597eaaaf143d206986b19d8ff8ebc2">getPixel</a> (unsigned int x, unsigned int y) const</td></tr>
 <tr class="separator:a7a597eaaaf143d206986b19d8ff8ebc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67a03978138e8617f4e65f4312ae56a2"><td class="memItemLeft" align="right" valign="top">const scene_rdl2::fb_util::ByteColor &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a67a03978138e8617f4e65f4312ae56a2">getRgb888Pixel</a> (unsigned int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, unsigned int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:a67a03978138e8617f4e65f4312ae56a2"><td class="memItemLeft" align="right" valign="top">const scene_rdl2::fb_util::ByteColor &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a67a03978138e8617f4e65f4312ae56a2">getRgb888Pixel</a> (unsigned int x, unsigned int y) const</td></tr>
 <tr class="separator:a67a03978138e8617f4e65f4312ae56a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a13d8db406b2c0622c6ad2cc90f75ad"><td class="memItemLeft" align="right" valign="top">const scene_rdl2::fb_util::ByteColor4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a3a13d8db406b2c0622c6ad2cc90f75ad">getRgba8888Pixel</a> (unsigned int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, unsigned int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:a3a13d8db406b2c0622c6ad2cc90f75ad"><td class="memItemLeft" align="right" valign="top">const scene_rdl2::fb_util::ByteColor4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a3a13d8db406b2c0622c6ad2cc90f75ad">getRgba8888Pixel</a> (unsigned int x, unsigned int y) const</td></tr>
 <tr class="separator:a3a13d8db406b2c0622c6ad2cc90f75ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6792e9fbe9eb615f99ee3b90f9c8bd91"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a6792e9fbe9eb615f99ee3b90f9c8bd91">getFloatPixel</a> (unsigned int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, unsigned int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:a6792e9fbe9eb615f99ee3b90f9c8bd91"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a6792e9fbe9eb615f99ee3b90f9c8bd91">getFloatPixel</a> (unsigned int x, unsigned int y) const</td></tr>
 <tr class="separator:a6792e9fbe9eb615f99ee3b90f9c8bd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc05877467303fd03e79b96409218afa"><td class="memItemLeft" align="right" valign="top">const scene_rdl2::math::Vec2f &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#acc05877467303fd03e79b96409218afa">getFloat2Pixel</a> (unsigned int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, unsigned int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:acc05877467303fd03e79b96409218afa"><td class="memItemLeft" align="right" valign="top">const scene_rdl2::math::Vec2f &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#acc05877467303fd03e79b96409218afa">getFloat2Pixel</a> (unsigned int x, unsigned int y) const</td></tr>
 <tr class="separator:acc05877467303fd03e79b96409218afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c2f8619f36be61d9d54bacae16ea6c4"><td class="memItemLeft" align="right" valign="top">const scene_rdl2::math::Vec3f &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a4c2f8619f36be61d9d54bacae16ea6c4">getFloat3Pixel</a> (unsigned int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, unsigned int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:a4c2f8619f36be61d9d54bacae16ea6c4"><td class="memItemLeft" align="right" valign="top">const scene_rdl2::math::Vec3f &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a4c2f8619f36be61d9d54bacae16ea6c4">getFloat3Pixel</a> (unsigned int x, unsigned int y) const</td></tr>
 <tr class="separator:a4c2f8619f36be61d9d54bacae16ea6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ad112ec3a0fc09af940904c9133b8d8"><td class="memItemLeft" align="right" valign="top">const scene_rdl2::math::Vec4f &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a5ad112ec3a0fc09af940904c9133b8d8">getFloat4Pixel</a> (unsigned int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, unsigned int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:a5ad112ec3a0fc09af940904c9133b8d8"><td class="memItemLeft" align="right" valign="top">const scene_rdl2::math::Vec4f &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a5ad112ec3a0fc09af940904c9133b8d8">getFloat4Pixel</a> (unsigned int x, unsigned int y) const</td></tr>
 <tr class="separator:a5ad112ec3a0fc09af940904c9133b8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab43486d1dae97e77c3ca3c1a2b202d59"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#ab43486d1dae97e77c3ca3c1a2b202d59">getWidth</a> () const</td></tr>
 <tr class="separator:ab43486d1dae97e77c3ca3c1a2b202d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,6 +119,18 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af2f83c880647e1e17f0b85cab690e523"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#af2f83c880647e1e17f0b85cab690e523">hudValidation</a> (bool verbose)</td></tr>
 <tr class="separator:af2f83c880647e1e17f0b85cab690e523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aba37200809d3091007a50690074d4265"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#aba37200809d3091007a50690074d4265">reset</a> ()</td></tr>
+<tr class="separator:aba37200809d3091007a50690074d4265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af2695e6fef44c64a52c3c1860f477f6d"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; scene_rdl2::fb_util::VariablePixelBuffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#af2695e6fef44c64a52c3c1860f477f6d">mPixelBufferPtr</a></td></tr>
+<tr class="separator:af2695e6fef44c64a52c3c1860f477f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72531bd82f2500e6c28270c5450d3e43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a72531bd82f2500e6c28270c5450d3e43">DISPLAYFILTER_INPUTBUFFER_MEMBERS</a></td></tr>
+<tr class="separator:a72531bd82f2500e6c28270c5450d3e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -147,7 +177,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8h_source.html#l00033">33</a> of file <a class="el" href="_input_buffer_8h_source.html">InputBuffer.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   33</span>: mPixelBuffer(<span class="keyword">nullptr</span>) {}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2f15fe88111e2298534011004bafb626" name="a2f15fe88111e2298534011004bafb626"></a>
@@ -166,7 +197,11 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8cc_source.html#l00017">17</a> of file <a class="el" href="_input_buffer_8cc_source.html">InputBuffer.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   18</span>{</div>
+<div class="line"><span class="lineno">   19</span>    <a class="code hl_function" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#aba37200809d3091007a50690074d4265">reset</a>();</div>
+<div class="line"><span class="lineno">   20</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1displayfilter_1_1_input_buffer_html_aba37200809d3091007a50690074d4265"><div class="ttname"><a href="classmoonray_1_1displayfilter_1_1_input_buffer.html#aba37200809d3091007a50690074d4265">moonray::displayfilter::InputBuffer::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8cc_source.html#l00041">InputBuffer.cc:41</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -197,7 +232,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8cc_source.html#l00132">132</a> of file <a class="el" href="_input_buffer_8cc_source.html">InputBuffer.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  133</span>{</div>
+<div class="line"><span class="lineno">  134</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> relativeX = x - mStartX;</div>
+<div class="line"><span class="lineno">  135</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> relativeY = y - mStartY;</div>
+<div class="line"><span class="lineno">  136</span> </div>
+<div class="line"><span class="lineno">  137</span>    <span class="keywordflow">return</span> mPixelBuffer-&gt;getFloat2Buffer().getPixel(relativeX, relativeY);</div>
+<div class="line"><span class="lineno">  138</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4c2f8619f36be61d9d54bacae16ea6c4" name="a4c2f8619f36be61d9d54bacae16ea6c4"></a>
@@ -227,7 +268,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8cc_source.html#l00141">141</a> of file <a class="el" href="_input_buffer_8cc_source.html">InputBuffer.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  142</span>{</div>
+<div class="line"><span class="lineno">  143</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> relativeX = x - mStartX;</div>
+<div class="line"><span class="lineno">  144</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> relativeY = y - mStartY;</div>
+<div class="line"><span class="lineno">  145</span> </div>
+<div class="line"><span class="lineno">  146</span>    <span class="keywordflow">return</span> mPixelBuffer-&gt;getFloat3Buffer().getPixel(relativeX, relativeY);</div>
+<div class="line"><span class="lineno">  147</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5ad112ec3a0fc09af940904c9133b8d8" name="a5ad112ec3a0fc09af940904c9133b8d8"></a>
@@ -257,7 +304,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8cc_source.html#l00150">150</a> of file <a class="el" href="_input_buffer_8cc_source.html">InputBuffer.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  151</span>{</div>
+<div class="line"><span class="lineno">  152</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> relativeX = x - mStartX;</div>
+<div class="line"><span class="lineno">  153</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> relativeY = y - mStartY;</div>
+<div class="line"><span class="lineno">  154</span> </div>
+<div class="line"><span class="lineno">  155</span>    <span class="keywordflow">return</span> mPixelBuffer-&gt;getFloat4Buffer().getPixel(relativeX, relativeY);</div>
+<div class="line"><span class="lineno">  156</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6792e9fbe9eb615f99ee3b90f9c8bd91" name="a6792e9fbe9eb615f99ee3b90f9c8bd91"></a>
@@ -287,7 +340,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8cc_source.html#l00123">123</a> of file <a class="el" href="_input_buffer_8cc_source.html">InputBuffer.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  124</span>{</div>
+<div class="line"><span class="lineno">  125</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> relativeX = x - mStartX;</div>
+<div class="line"><span class="lineno">  126</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> relativeY = y - mStartY;</div>
+<div class="line"><span class="lineno">  127</span> </div>
+<div class="line"><span class="lineno">  128</span>    <span class="keywordflow">return</span> mPixelBuffer-&gt;getFloatBuffer().getPixel(relativeX, relativeY);</div>
+<div class="line"><span class="lineno">  129</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae3b306da987bd3cf7463398f1c0e877e" name="ae3b306da987bd3cf7463398f1c0e877e"></a>
@@ -306,7 +365,10 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8cc_source.html#l00171">171</a> of file <a class="el" href="_input_buffer_8cc_source.html">InputBuffer.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  172</span>{</div>
+<div class="line"><span class="lineno">  173</span>    <span class="keywordflow">return</span> mPixelBuffer-&gt;getFormat();</div>
+<div class="line"><span class="lineno">  174</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af30c873350ca17203ca03e89491b458a" name="af30c873350ca17203ca03e89491b458a"></a>
@@ -325,7 +387,10 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8cc_source.html#l00165">165</a> of file <a class="el" href="_input_buffer_8cc_source.html">InputBuffer.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  166</span>{</div>
+<div class="line"><span class="lineno">  167</span>    <span class="keywordflow">return</span> mPixelBuffer-&gt;getHeight();</div>
+<div class="line"><span class="lineno">  168</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7a597eaaaf143d206986b19d8ff8ebc2" name="a7a597eaaaf143d206986b19d8ff8ebc2"></a>
@@ -355,7 +420,52 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8cc_source.html#l00064">64</a> of file <a class="el" href="_input_buffer_8cc_source.html">InputBuffer.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   65</span>{</div>
+<div class="line"><span class="lineno">   66</span>    scene_rdl2::fb_util::VariablePixelBuffer::Format format = <a class="code hl_function" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#ae3b306da987bd3cf7463398f1c0e877e">getFormat</a>();</div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">switch</span> (format) {</div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">case</span> scene_rdl2::fb_util::VariablePixelBuffer::RGB888:</div>
+<div class="line"><span class="lineno">   69</span>    {</div>
+<div class="line"><span class="lineno">   70</span>        <span class="keyword">const</span> scene_rdl2::fb_util::ByteColor&amp; val = <a class="code hl_function" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a67a03978138e8617f4e65f4312ae56a2">getRgb888Pixel</a>(x, y);</div>
+<div class="line"><span class="lineno">   71</span>        <span class="keywordflow">return</span> scene_rdl2::math::Color(val.r, val.g, val.b);</div>
+<div class="line"><span class="lineno">   72</span>    }</div>
+<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">case</span> scene_rdl2::fb_util::VariablePixelBuffer::RGBA8888:</div>
+<div class="line"><span class="lineno">   74</span>    {</div>
+<div class="line"><span class="lineno">   75</span>        <span class="keyword">const</span> scene_rdl2::fb_util::ByteColor4&amp; val = <a class="code hl_function" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a3a13d8db406b2c0622c6ad2cc90f75ad">getRgba8888Pixel</a>(x, y);</div>
+<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">return</span> scene_rdl2::math::Color(val.r, val.g, val.b);</div>
+<div class="line"><span class="lineno">   77</span>    }</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">case</span> scene_rdl2::fb_util::VariablePixelBuffer::FLOAT:</div>
+<div class="line"><span class="lineno">   79</span>    {</div>
+<div class="line"><span class="lineno">   80</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> val = <a class="code hl_function" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a6792e9fbe9eb615f99ee3b90f9c8bd91">getFloatPixel</a>(x, y);</div>
+<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">return</span> scene_rdl2::math::Color(val, val, val);</div>
+<div class="line"><span class="lineno">   82</span>    }</div>
+<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">case</span> scene_rdl2::fb_util::VariablePixelBuffer::FLOAT2:</div>
+<div class="line"><span class="lineno">   84</span>    {</div>
+<div class="line"><span class="lineno">   85</span>        <span class="keyword">const</span> scene_rdl2::math::Vec2f&amp; val = <a class="code hl_function" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#acc05877467303fd03e79b96409218afa">getFloat2Pixel</a>(x, y);</div>
+<div class="line"><span class="lineno">   86</span>        <span class="keywordflow">return</span> scene_rdl2::math::Color(val.x, val.y, 0.f);</div>
+<div class="line"><span class="lineno">   87</span>    }</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">case</span> scene_rdl2::fb_util::VariablePixelBuffer::FLOAT3:</div>
+<div class="line"><span class="lineno">   89</span>    {</div>
+<div class="line"><span class="lineno">   90</span>        <span class="keyword">const</span> scene_rdl2::math::Vec3f&amp; val = <a class="code hl_function" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a4c2f8619f36be61d9d54bacae16ea6c4">getFloat3Pixel</a>(x, y);</div>
+<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">return</span> scene_rdl2::math::Color(val.x, val.y, val.z);</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">case</span> scene_rdl2::fb_util::VariablePixelBuffer::FLOAT4:</div>
+<div class="line"><span class="lineno">   94</span>    {</div>
+<div class="line"><span class="lineno">   95</span>        <span class="keyword">const</span> scene_rdl2::math::Vec4f&amp; val = <a class="code hl_function" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a5ad112ec3a0fc09af940904c9133b8d8">getFloat4Pixel</a>(x, y);</div>
+<div class="line"><span class="lineno">   96</span>        <span class="keywordflow">return</span> scene_rdl2::math::Color(val.x, val.y, val.z);</div>
+<div class="line"><span class="lineno">   97</span>    }</div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">   99</span>        MNRY_ASSERT(0);</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">return</span> scene_rdl2::math::sBlack;</div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+<div class="line"><span class="lineno">  102</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1displayfilter_1_1_input_buffer_html_a3a13d8db406b2c0622c6ad2cc90f75ad"><div class="ttname"><a href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a3a13d8db406b2c0622c6ad2cc90f75ad">moonray::displayfilter::InputBuffer::getRgba8888Pixel</a></div><div class="ttdeci">const scene_rdl2::fb_util::ByteColor4 &amp; getRgba8888Pixel(unsigned int x, unsigned int y) const</div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8cc_source.html#l00114">InputBuffer.cc:114</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1displayfilter_1_1_input_buffer_html_a4c2f8619f36be61d9d54bacae16ea6c4"><div class="ttname"><a href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a4c2f8619f36be61d9d54bacae16ea6c4">moonray::displayfilter::InputBuffer::getFloat3Pixel</a></div><div class="ttdeci">const scene_rdl2::math::Vec3f &amp; getFloat3Pixel(unsigned int x, unsigned int y) const</div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8cc_source.html#l00141">InputBuffer.cc:141</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1displayfilter_1_1_input_buffer_html_a5ad112ec3a0fc09af940904c9133b8d8"><div class="ttname"><a href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a5ad112ec3a0fc09af940904c9133b8d8">moonray::displayfilter::InputBuffer::getFloat4Pixel</a></div><div class="ttdeci">const scene_rdl2::math::Vec4f &amp; getFloat4Pixel(unsigned int x, unsigned int y) const</div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8cc_source.html#l00150">InputBuffer.cc:150</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1displayfilter_1_1_input_buffer_html_a6792e9fbe9eb615f99ee3b90f9c8bd91"><div class="ttname"><a href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a6792e9fbe9eb615f99ee3b90f9c8bd91">moonray::displayfilter::InputBuffer::getFloatPixel</a></div><div class="ttdeci">float getFloatPixel(unsigned int x, unsigned int y) const</div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8cc_source.html#l00123">InputBuffer.cc:123</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1displayfilter_1_1_input_buffer_html_a67a03978138e8617f4e65f4312ae56a2"><div class="ttname"><a href="classmoonray_1_1displayfilter_1_1_input_buffer.html#a67a03978138e8617f4e65f4312ae56a2">moonray::displayfilter::InputBuffer::getRgb888Pixel</a></div><div class="ttdeci">const scene_rdl2::fb_util::ByteColor &amp; getRgb888Pixel(unsigned int x, unsigned int y) const</div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8cc_source.html#l00105">InputBuffer.cc:105</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1displayfilter_1_1_input_buffer_html_acc05877467303fd03e79b96409218afa"><div class="ttname"><a href="classmoonray_1_1displayfilter_1_1_input_buffer.html#acc05877467303fd03e79b96409218afa">moonray::displayfilter::InputBuffer::getFloat2Pixel</a></div><div class="ttdeci">const scene_rdl2::math::Vec2f &amp; getFloat2Pixel(unsigned int x, unsigned int y) const</div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8cc_source.html#l00132">InputBuffer.cc:132</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1displayfilter_1_1_input_buffer_html_ae3b306da987bd3cf7463398f1c0e877e"><div class="ttname"><a href="classmoonray_1_1displayfilter_1_1_input_buffer.html#ae3b306da987bd3cf7463398f1c0e877e">moonray::displayfilter::InputBuffer::getFormat</a></div><div class="ttdeci">scene_rdl2::fb_util::VariablePixelBuffer::Format getFormat() const</div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8cc_source.html#l00171">InputBuffer.cc:171</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9498accfe9f1162fdaba89775ceb566c" name="a9498accfe9f1162fdaba89775ceb566c"></a>
@@ -382,7 +492,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8h_source.html#l00062">62</a> of file <a class="el" href="_input_buffer_8h_source.html">InputBuffer.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   62</span>{ <span class="keywordflow">return</span> mPixelBuffer; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a67a03978138e8617f4e65f4312ae56a2" name="a67a03978138e8617f4e65f4312ae56a2"></a>
@@ -412,7 +523,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8cc_source.html#l00105">105</a> of file <a class="el" href="_input_buffer_8cc_source.html">InputBuffer.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  106</span>{</div>
+<div class="line"><span class="lineno">  107</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> relativeX = x - mStartX;</div>
+<div class="line"><span class="lineno">  108</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> relativeY = y - mStartY;</div>
+<div class="line"><span class="lineno">  109</span> </div>
+<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">return</span> mPixelBuffer-&gt;getRgb888Buffer().getPixel(relativeX, relativeY);</div>
+<div class="line"><span class="lineno">  111</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3a13d8db406b2c0622c6ad2cc90f75ad" name="a3a13d8db406b2c0622c6ad2cc90f75ad"></a>
@@ -442,7 +559,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8cc_source.html#l00114">114</a> of file <a class="el" href="_input_buffer_8cc_source.html">InputBuffer.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  115</span>{</div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> relativeX = x - mStartX;</div>
+<div class="line"><span class="lineno">  117</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> relativeY = y - mStartY;</div>
+<div class="line"><span class="lineno">  118</span> </div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">return</span> mPixelBuffer-&gt;getRgba8888Buffer().getPixel(relativeX, relativeY);</div>
+<div class="line"><span class="lineno">  120</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab43486d1dae97e77c3ca3c1a2b202d59" name="ab43486d1dae97e77c3ca3c1a2b202d59"></a>
@@ -461,7 +584,10 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8cc_source.html#l00159">159</a> of file <a class="el" href="_input_buffer_8cc_source.html">InputBuffer.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  160</span>{</div>
+<div class="line"><span class="lineno">  161</span>    <span class="keywordflow">return</span> mPixelBuffer-&gt;getWidth();</div>
+<div class="line"><span class="lineno">  162</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af2f83c880647e1e17f0b85cab690e523" name="af2f83c880647e1e17f0b85cab690e523"></a>
@@ -489,7 +615,11 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8h_source.html#l00064">64</a> of file <a class="el" href="_input_buffer_8h_source.html">InputBuffer.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   65</span>    {</div>
+<div class="line"><span class="lineno">   66</span>        <a class="code hl_define" href="_input_buffer_8hh.html#acbc938991bfb36402cf86f429ca10716">DISPLAYFILTER_INPUTBUFFER_VALIDATION</a>;</div>
+<div class="line"><span class="lineno">   67</span>    }</div>
+<div class="ttc" id="a_input_buffer_8hh_html_acbc938991bfb36402cf86f429ca10716"><div class="ttname"><a href="_input_buffer_8hh.html#acbc938991bfb36402cf86f429ca10716">DISPLAYFILTER_INPUTBUFFER_VALIDATION</a></div><div class="ttdeci">#define DISPLAYFILTER_INPUTBUFFER_VALIDATION</div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8hh_source.html#l00019">InputBuffer.hh:19</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5fd7b5026a75e2a027ee2eb5c41d4bc8" name="a5fd7b5026a75e2a027ee2eb5c41d4bc8"></a>
@@ -509,7 +639,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8cc_source.html#l00033">33</a> of file <a class="el" href="_input_buffer_8cc_source.html">InputBuffer.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   34</span>{</div>
+<div class="line"><span class="lineno">   35</span>    <a class="code hl_function" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#aba37200809d3091007a50690074d4265">reset</a>();</div>
+<div class="line"><span class="lineno">   36</span>    <a class="code hl_variable" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#af2695e6fef44c64a52c3c1860f477f6d">mPixelBufferPtr</a> = buffer;</div>
+<div class="line"><span class="lineno">   37</span>    mPixelBuffer = <a class="code hl_variable" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#af2695e6fef44c64a52c3c1860f477f6d">mPixelBufferPtr</a>.get();</div>
+<div class="line"><span class="lineno">   38</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1displayfilter_1_1_input_buffer_html_af2695e6fef44c64a52c3c1860f477f6d"><div class="ttname"><a href="classmoonray_1_1displayfilter_1_1_input_buffer.html#af2695e6fef44c64a52c3c1860f477f6d">moonray::displayfilter::InputBuffer::mPixelBufferPtr</a></div><div class="ttdeci">std::shared_ptr&lt; scene_rdl2::fb_util::VariablePixelBuffer &gt; mPixelBufferPtr</div><div class="ttdef"><b>Definition:</b> <a href="_input_buffer_8h_source.html#l00074">InputBuffer.h:74</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acd7d7325e21ddd2dbd69ec7a2b6020fc" name="acd7d7325e21ddd2dbd69ec7a2b6020fc"></a>
@@ -545,7 +681,45 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8cc_source.html#l00023">23</a> of file <a class="el" href="_input_buffer_8cc_source.html">InputBuffer.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{</div>
+<div class="line"><span class="lineno">   25</span>    <a class="code hl_function" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#aba37200809d3091007a50690074d4265">reset</a>();</div>
+<div class="line"><span class="lineno">   26</span> </div>
+<div class="line"><span class="lineno">   27</span>    <a class="code hl_variable" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#af2695e6fef44c64a52c3c1860f477f6d">mPixelBufferPtr</a> = std::make_shared&lt;scene_rdl2::fb_util::VariablePixelBuffer&gt;();</div>
+<div class="line"><span class="lineno">   28</span>    mPixelBuffer = <a class="code hl_variable" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#af2695e6fef44c64a52c3c1860f477f6d">mPixelBufferPtr</a>.get();</div>
+<div class="line"><span class="lineno">   29</span>    <a class="code hl_variable" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#af2695e6fef44c64a52c3c1860f477f6d">mPixelBufferPtr</a>-&gt;init(format, width, height);</div>
+<div class="line"><span class="lineno">   30</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aba37200809d3091007a50690074d4265" name="aba37200809d3091007a50690074d4265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba37200809d3091007a50690074d4265">&#9670;&#160;</a></span>reset()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::displayfilter::InputBuffer::reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_input_buffer_8cc_source.html#l00041">41</a> of file <a class="el" href="_input_buffer_8cc_source.html">InputBuffer.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>{</div>
+<div class="line"><span class="lineno">   43</span>    <a class="code hl_variable" href="classmoonray_1_1displayfilter_1_1_input_buffer.html#af2695e6fef44c64a52c3c1860f477f6d">mPixelBufferPtr</a>.reset();</div>
+<div class="line"><span class="lineno">   44</span>    mPixelBuffer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   45</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa87be484ea5de39d11585ef496f7de97" name="aa87be484ea5de39d11585ef496f7de97"></a>
@@ -581,7 +755,14 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8cc_source.html#l00048">48</a> of file <a class="el" href="_input_buffer_8cc_source.html">InputBuffer.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   49</span>{</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordtype">unsigned</span> sizeOfPixel = mPixelBuffer-&gt;getSizeOfPixel();</div>
+<div class="line"><span class="lineno">   51</span>    MNRY_ASSERT(offset + length &lt; mPixelBuffer-&gt;getArea() * sizeOfPixel);</div>
+<div class="line"><span class="lineno">   52</span>    uint8_t * bufferData = mPixelBuffer-&gt;getData();</div>
+<div class="line"><span class="lineno">   53</span>    memcpy(bufferData + offset * sizeOfPixel, data, <a class="code hl_function" href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a> * sizeOfPixel);</div>
+<div class="line"><span class="lineno">   54</span>}</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a25c3c0d490b4f6a95f0595760efbc351"><div class="ttname"><a href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a></div><div class="ttdeci">__host__ __device__ float length(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00159">GPUMath.h:159</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac07166d259e8cd1f79e55fa54cc9f511" name="ac07166d259e8cd1f79e55fa54cc9f511"></a>
@@ -611,6 +792,59 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_input_buffer_8cc_source.html#l00057">57</a> of file <a class="el" href="_input_buffer_8cc_source.html">InputBuffer.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>{</div>
+<div class="line"><span class="lineno">   59</span>    mStartX = x;</div>
+<div class="line"><span class="lineno">   60</span>    mStartY = y;</div>
+<div class="line"><span class="lineno">   61</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a72531bd82f2500e6c28270c5450d3e43" name="a72531bd82f2500e6c28270c5450d3e43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72531bd82f2500e6c28270c5450d3e43">&#9670;&#160;</a></span>DISPLAYFILTER_INPUTBUFFER_MEMBERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moonray::displayfilter::InputBuffer::DISPLAYFILTER_INPUTBUFFER_MEMBERS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_input_buffer_8h_source.html#l00075">75</a> of file <a class="el" href="_input_buffer_8h_source.html">InputBuffer.h</a>.</p>
+
+</div>
+</div>
+<a id="af2695e6fef44c64a52c3c1860f477f6d" name="af2695e6fef44c64a52c3c1860f477f6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2695e6fef44c64a52c3c1860f477f6d">&#9670;&#160;</a></span>mPixelBufferPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;scene_rdl2::fb_util::VariablePixelBuffer&gt; moonray::displayfilter::InputBuffer::mPixelBufferPtr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_input_buffer_8h_source.html#l00074">74</a> of file <a class="el" href="_input_buffer_8h_source.html">InputBuffer.h</a>.</p>
 
 </div>
 </div>
@@ -619,9 +853,13 @@ Static Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/displayfilter/<a class="el" href="_input_buffer_8cc_source.html">InputBuffer.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1displayfilter.html">displayfilter</a></li><li class="navelem"><a class="el" href="classmoonray_1_1displayfilter_1_1_input_buffer.html">InputBuffer</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

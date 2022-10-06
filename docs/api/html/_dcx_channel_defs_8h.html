@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,13 +42,26 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_26bab4ce23f451d8d22db1f5975a2369.html">deepfile</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_dcx_channel_defs_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">DcxChannelDefs.h File Reference</div></div>
 </div><!--header-->
@@ -53,6 +70,103 @@ $(function() {
 </div>
 <p><a href="_dcx_channel_defs_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ae3592fdfe3578f53248950118f19d19a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#ae3592fdfe3578f53248950118f19d19a">Mask_R</a> (<a class="el" href="_dcx_channel_defs_8h.html#a4b8c80acc9cce85abf648c1e3c01c7e1">Chan_R</a>)</td></tr>
+<tr class="separator:ae3592fdfe3578f53248950118f19d19a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cfab377e2bd2b7bf2df0752afb220e7"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a7cfab377e2bd2b7bf2df0752afb220e7">Mask_G</a> (<a class="el" href="_dcx_channel_defs_8h.html#ac551818188d029c30e03fd838192c3f3">Chan_G</a>)</td></tr>
+<tr class="separator:a7cfab377e2bd2b7bf2df0752afb220e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a696f0a1bd7f28026fbcb616f1f4c90e0"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a696f0a1bd7f28026fbcb616f1f4c90e0">Mask_B</a> (<a class="el" href="_dcx_channel_defs_8h.html#a2cec19eebf4d5bea76d33681d9a41d13">Chan_B</a>)</td></tr>
+<tr class="separator:a696f0a1bd7f28026fbcb616f1f4c90e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46fe3e8277a624ee33d7aec52260bccd"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a46fe3e8277a624ee33d7aec52260bccd">Mask_A</a> (<a class="el" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>)</td></tr>
+<tr class="separator:a46fe3e8277a624ee33d7aec52260bccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d5b28efc43d33ce666fb4c9bd5bb3b"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a57d5b28efc43d33ce666fb4c9bd5bb3b">Mask_RGB</a> (<a class="el" href="_dcx_channel_defs_8h.html#a4b8c80acc9cce85abf648c1e3c01c7e1">Chan_R</a>, <a class="el" href="_dcx_channel_defs_8h.html#ac551818188d029c30e03fd838192c3f3">Chan_G</a>, <a class="el" href="_dcx_channel_defs_8h.html#a2cec19eebf4d5bea76d33681d9a41d13">Chan_B</a>)</td></tr>
+<tr class="separator:a57d5b28efc43d33ce666fb4c9bd5bb3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a325a5ebc18722fb55b8e4cf3731a455a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a325a5ebc18722fb55b8e4cf3731a455a">Mask_RGBA</a> (<a class="el" href="_dcx_channel_defs_8h.html#a4b8c80acc9cce85abf648c1e3c01c7e1">Chan_R</a>, <a class="el" href="_dcx_channel_defs_8h.html#ac551818188d029c30e03fd838192c3f3">Chan_G</a>, <a class="el" href="_dcx_channel_defs_8h.html#a2cec19eebf4d5bea76d33681d9a41d13">Chan_B</a>, <a class="el" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>)</td></tr>
+<tr class="separator:a325a5ebc18722fb55b8e4cf3731a455a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd4b2f43626467691560dffedb3890c6"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#afd4b2f43626467691560dffedb3890c6">Mask_AR</a> (<a class="el" href="_dcx_channel_defs_8h.html#a16f742fd00e8bce0f73458fa8289c732">Chan_AR</a>)</td></tr>
+<tr class="separator:afd4b2f43626467691560dffedb3890c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf8c0009916f535d847550582917be7f"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#acf8c0009916f535d847550582917be7f">Mask_AG</a> (<a class="el" href="_dcx_channel_defs_8h.html#ac7f1275d43212b8293e1b3c70b850071">Chan_AG</a>)</td></tr>
+<tr class="separator:acf8c0009916f535d847550582917be7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c80af524ed57552015994e8dff96fc"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a69c80af524ed57552015994e8dff96fc">Mask_AB</a> (<a class="el" href="_dcx_channel_defs_8h.html#a45c3fa8f77b9b29603864058778e7502">Chan_AB</a>)</td></tr>
+<tr class="separator:a69c80af524ed57552015994e8dff96fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63762d272869af11edca04c758efb6d7"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a63762d272869af11edca04c758efb6d7">Mask_RGBAlphas</a> (<a class="el" href="_dcx_channel_defs_8h.html#a16f742fd00e8bce0f73458fa8289c732">Chan_AR</a>, <a class="el" href="_dcx_channel_defs_8h.html#ac7f1275d43212b8293e1b3c70b850071">Chan_AG</a>, <a class="el" href="_dcx_channel_defs_8h.html#a45c3fa8f77b9b29603864058778e7502">Chan_AB</a>)</td></tr>
+<tr class="separator:a63762d272869af11edca04c758efb6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09ebc587c3349146b80a8b7c73d9f2f8"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a09ebc587c3349146b80a8b7c73d9f2f8">Mask_Alphas</a> (<a class="el" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>, <a class="el" href="_dcx_channel_defs_8h.html#a16f742fd00e8bce0f73458fa8289c732">Chan_AR</a>, <a class="el" href="_dcx_channel_defs_8h.html#ac7f1275d43212b8293e1b3c70b850071">Chan_AG</a>, <a class="el" href="_dcx_channel_defs_8h.html#a45c3fa8f77b9b29603864058778e7502">Chan_AB</a>)</td></tr>
+<tr class="separator:a09ebc587c3349146b80a8b7c73d9f2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e7bb71a39978bf760c12fda37d0693"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#af9e7bb71a39978bf760c12fda37d0693">Mask_Opacities</a> (<a class="el" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>, <a class="el" href="_dcx_channel_defs_8h.html#a9b72bc71dac0f07215aea9a421628641">Chan_SpCoverage</a>)</td></tr>
+<tr class="separator:af9e7bb71a39978bf760c12fda37d0693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac844cd9a775b357547263d4b97ac281f"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#ac844cd9a775b357547263d4b97ac281f">Mask_RGBOpacities</a> (<a class="el" href="_dcx_channel_defs_8h.html#a16f742fd00e8bce0f73458fa8289c732">Chan_AR</a>, <a class="el" href="_dcx_channel_defs_8h.html#ac7f1275d43212b8293e1b3c70b850071">Chan_AG</a>, <a class="el" href="_dcx_channel_defs_8h.html#a45c3fa8f77b9b29603864058778e7502">Chan_AB</a>, <a class="el" href="_dcx_channel_defs_8h.html#a9b72bc71dac0f07215aea9a421628641">Chan_SpCoverage</a>)</td></tr>
+<tr class="separator:ac844cd9a775b357547263d4b97ac281f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a9bb5a5266eb01c1b1adfd03b6702c"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a45a9bb5a5266eb01c1b1adfd03b6702c">Mask_Y</a> (<a class="el" href="_dcx_channel_defs_8h.html#a80979743c1f8168d18925c7e2d557344">Chan_Y</a>)</td></tr>
+<tr class="separator:a45a9bb5a5266eb01c1b1adfd03b6702c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ef651d271c0ce7c1f981f1371ef88d"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a63ef651d271c0ce7c1f981f1371ef88d">Mask_RY</a> (<a class="el" href="_dcx_channel_defs_8h.html#abf4d19f641fb5efb02b78ec9deb2c967">Chan_RY</a>)</td></tr>
+<tr class="separator:a63ef651d271c0ce7c1f981f1371ef88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32460b81239a9d5225a74f412096e213"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a32460b81239a9d5225a74f412096e213">Mask_BY</a> (<a class="el" href="_dcx_channel_defs_8h.html#a063e9f0d6e204e0e0dace85328e08486">Chan_BY</a>)</td></tr>
+<tr class="separator:a32460b81239a9d5225a74f412096e213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669e021411c752370e14db9aabce73fa"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a669e021411c752370e14db9aabce73fa">Mask_Yuv</a> (<a class="el" href="_dcx_channel_defs_8h.html#a80979743c1f8168d18925c7e2d557344">Chan_Y</a>, <a class="el" href="_dcx_channel_defs_8h.html#abf4d19f641fb5efb02b78ec9deb2c967">Chan_RY</a>, <a class="el" href="_dcx_channel_defs_8h.html#a063e9f0d6e204e0e0dace85328e08486">Chan_BY</a>)</td></tr>
+<tr class="separator:a669e021411c752370e14db9aabce73fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa479a2a5225f2fb368ba8fcf5a2b32e3"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#aa479a2a5225f2fb368ba8fcf5a2b32e3">Mask_ZFront</a> (<a class="el" href="_dcx_channel_defs_8h.html#a187f15db7f68e75e94e1ba1b7fe0ecf2">Chan_ZFront</a>)</td></tr>
+<tr class="separator:aa479a2a5225f2fb368ba8fcf5a2b32e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c755c6afb3819e37505ad2700433ff"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a10c755c6afb3819e37505ad2700433ff">Mask_ZBack</a> (<a class="el" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a>)</td></tr>
+<tr class="separator:a10c755c6afb3819e37505ad2700433ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a952270a3c83a8e1945952aab04b23e9d"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a952270a3c83a8e1945952aab04b23e9d">Mask_Depths</a> (<a class="el" href="_dcx_channel_defs_8h.html#a187f15db7f68e75e94e1ba1b7fe0ecf2">Chan_ZFront</a>, <a class="el" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a>)</td></tr>
+<tr class="separator:a952270a3c83a8e1945952aab04b23e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0865e35610651abc085f7f7b4978372"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#ad0865e35610651abc085f7f7b4978372">Mask_SpBits1</a> (<a class="el" href="_dcx_channel_defs_8h.html#a887083c7abc8b4b5630e5c29c465b3ec">Chan_SpBits1</a>)</td></tr>
+<tr class="separator:ad0865e35610651abc085f7f7b4978372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a13425c8d8c9eb547e09e508b5e681"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a59a13425c8d8c9eb547e09e508b5e681">Mask_SpBits2</a> (<a class="el" href="_dcx_channel_defs_8h.html#ad6335da919482b2dd8b4fda813888d3c">Chan_SpBits2</a>)</td></tr>
+<tr class="separator:a59a13425c8d8c9eb547e09e508b5e681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a682b8785763a0b20e91d0c2964b05bbd"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a682b8785763a0b20e91d0c2964b05bbd">Mask_SpMask8</a> (<a class="el" href="_dcx_channel_defs_8h.html#a887083c7abc8b4b5630e5c29c465b3ec">Chan_SpBits1</a>, <a class="el" href="_dcx_channel_defs_8h.html#ad6335da919482b2dd8b4fda813888d3c">Chan_SpBits2</a>)</td></tr>
+<tr class="separator:a682b8785763a0b20e91d0c2964b05bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd255943ba2b48789971f4fc1ea99e93"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#acd255943ba2b48789971f4fc1ea99e93">Mask_DeepFlags</a> (<a class="el" href="_dcx_channel_defs_8h.html#af4f527891ae58983eb93a1ea4b85290e">Chan_DeepFlags</a>)</td></tr>
+<tr class="separator:acd255943ba2b48789971f4fc1ea99e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4a22948238acfe330fd10dbaa13088"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a1f4a22948238acfe330fd10dbaa13088">Mask_DeepMetadata</a> (<a class="el" href="_dcx_channel_defs_8h.html#af4f527891ae58983eb93a1ea4b85290e">Chan_DeepFlags</a>, <a class="el" href="_dcx_channel_defs_8h.html#a887083c7abc8b4b5630e5c29c465b3ec">Chan_SpBits1</a>, <a class="el" href="_dcx_channel_defs_8h.html#ad6335da919482b2dd8b4fda813888d3c">Chan_SpBits2</a>)</td></tr>
+<tr class="separator:a1f4a22948238acfe330fd10dbaa13088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a793bbced37e685cd3e35a85687b9c187"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a793bbced37e685cd3e35a85687b9c187">Mask_Visibility</a> (<a class="el" href="_dcx_channel_defs_8h.html#a533a83192867850e400b89d14a3ec858">Chan_Visibility</a>)</td></tr>
+<tr class="separator:a793bbced37e685cd3e35a85687b9c187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7ce40a280a2f7ed85c57b41a3e18f3a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#ad7ce40a280a2f7ed85c57b41a3e18f3a">Mask_SpCoverage</a> (<a class="el" href="_dcx_channel_defs_8h.html#a9b72bc71dac0f07215aea9a421628641">Chan_SpCoverage</a>)</td></tr>
+<tr class="separator:ad7ce40a280a2f7ed85c57b41a3e18f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af949e5127bdf67d335a57f71fdf9d1fc"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#af949e5127bdf67d335a57f71fdf9d1fc">Mask_Accumulators</a> (<a class="el" href="_dcx_channel_defs_8h.html#a533a83192867850e400b89d14a3ec858">Chan_Visibility</a>)</td></tr>
+<tr class="separator:af949e5127bdf67d335a57f71fdf9d1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e07e0188a84618413f77132c5412e73"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a9e07e0188a84618413f77132c5412e73">Mask_ACutout</a> (<a class="el" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>)</td></tr>
+<tr class="separator:a9e07e0188a84618413f77132c5412e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad44fdf3572507cf7893446ba69359e7"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#aad44fdf3572507cf7893446ba69359e7">Mask_ARCutout</a> (<a class="el" href="_dcx_channel_defs_8h.html#a090c91caf774123b54e297885d80c2e3">Chan_ARCutout</a>)</td></tr>
+<tr class="separator:aad44fdf3572507cf7893446ba69359e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4916cdd95c3c38573cfed728564d4199"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a4916cdd95c3c38573cfed728564d4199">Mask_AGCutout</a> (<a class="el" href="_dcx_channel_defs_8h.html#a359216b1d94bc02d598f3a0ef6254cea">Chan_AGCutout</a>)</td></tr>
+<tr class="separator:a4916cdd95c3c38573cfed728564d4199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba4a5c7e8321a81c1e03fbb79e751839"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#aba4a5c7e8321a81c1e03fbb79e751839">Mask_ABCutout</a> (<a class="el" href="_dcx_channel_defs_8h.html#ac5bb0eb97c5f9d8f4bc07a09840dad7e">Chan_ABCutout</a>)</td></tr>
+<tr class="separator:aba4a5c7e8321a81c1e03fbb79e751839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d2d8b23065a67da9d048cf6c4e14f7"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#ae5d2d8b23065a67da9d048cf6c4e14f7">Mask_ACutoutlphas</a> (<a class="el" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>, <a class="el" href="_dcx_channel_defs_8h.html#a090c91caf774123b54e297885d80c2e3">Chan_ARCutout</a>, <a class="el" href="_dcx_channel_defs_8h.html#a359216b1d94bc02d598f3a0ef6254cea">Chan_AGCutout</a>, <a class="el" href="_dcx_channel_defs_8h.html#ac5bb0eb97c5f9d8f4bc07a09840dad7e">Chan_ABCutout</a>)</td></tr>
+<tr class="separator:ae5d2d8b23065a67da9d048cf6c4e14f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d2e30fb01789e7026baea50de251ba1"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a1d2e30fb01789e7026baea50de251ba1">Mask_ZCutout</a> (<a class="el" href="_dcx_channel_defs_8h.html#a33b489878f382dcf5604166e37aab96f">Chan_ZCutout</a>)</td></tr>
+<tr class="separator:a1d2e30fb01789e7026baea50de251ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb1a5d280ff585f409eace2aee02c0c"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a5cb1a5d280ff585f409eace2aee02c0c">Mask_Cutouts</a> (<a class="el" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>, <a class="el" href="_dcx_channel_defs_8h.html#a090c91caf774123b54e297885d80c2e3">Chan_ARCutout</a>, <a class="el" href="_dcx_channel_defs_8h.html#a359216b1d94bc02d598f3a0ef6254cea">Chan_AGCutout</a>, <a class="el" href="_dcx_channel_defs_8h.html#ac5bb0eb97c5f9d8f4bc07a09840dad7e">Chan_ABCutout</a>, <a class="el" href="_dcx_channel_defs_8h.html#a33b489878f382dcf5604166e37aab96f">Chan_ZCutout</a>)</td></tr>
+<tr class="separator:a5cb1a5d280ff585f409eace2aee02c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ca71712c58fa84ade8224f8c1552a1"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a91ca71712c58fa84ade8224f8c1552a1">Mask_UvS</a> (<a class="el" href="_dcx_channel_defs_8h.html#a7463b04a9711b2fbfcf65316d67473cf">Chan_UvS</a>)</td></tr>
+<tr class="separator:a91ca71712c58fa84ade8224f8c1552a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8d7347506b5a05bca761d0e1456f7a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a9d8d7347506b5a05bca761d0e1456f7a">Mask_UvT</a> (<a class="el" href="_dcx_channel_defs_8h.html#a86991dd6ecdfcdfb4b8da9904bd3cc4b">Chan_UvT</a>)</td></tr>
+<tr class="separator:a9d8d7347506b5a05bca761d0e1456f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bb4e02e12ac55a3f297927be78bdd66"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a4bb4e02e12ac55a3f297927be78bdd66">Mask_UvP</a> (<a class="el" href="_dcx_channel_defs_8h.html#ab0b72d02fa4297cdf9b819c7ed11c503">Chan_UvP</a>)</td></tr>
+<tr class="separator:a4bb4e02e12ac55a3f297927be78bdd66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad796c71aa16b4b256cd7c6e0cd1009c2"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#ad796c71aa16b4b256cd7c6e0cd1009c2">Mask_UvQ</a> (<a class="el" href="_dcx_channel_defs_8h.html#ab96b25edead0c876703824783ff50ed1">Chan_UvQ</a>)</td></tr>
+<tr class="separator:ad796c71aa16b4b256cd7c6e0cd1009c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f48a763db70fed5bc999b8d711db8d"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a63f48a763db70fed5bc999b8d711db8d">Mask_Uv2</a> (<a class="el" href="_dcx_channel_defs_8h.html#a7463b04a9711b2fbfcf65316d67473cf">Chan_UvS</a>, <a class="el" href="_dcx_channel_defs_8h.html#a86991dd6ecdfcdfb4b8da9904bd3cc4b">Chan_UvT</a>)</td></tr>
+<tr class="separator:a63f48a763db70fed5bc999b8d711db8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a023ab048ea0789cbf2a32cc67633b984"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a023ab048ea0789cbf2a32cc67633b984">Mask_Uv3</a> (<a class="el" href="_dcx_channel_defs_8h.html#a7463b04a9711b2fbfcf65316d67473cf">Chan_UvS</a>, <a class="el" href="_dcx_channel_defs_8h.html#a86991dd6ecdfcdfb4b8da9904bd3cc4b">Chan_UvT</a>, <a class="el" href="_dcx_channel_defs_8h.html#ab0b72d02fa4297cdf9b819c7ed11c503">Chan_UvP</a>)</td></tr>
+<tr class="separator:a023ab048ea0789cbf2a32cc67633b984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08a348d2a2ca93e77037e1b3c70b7bd1"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a08a348d2a2ca93e77037e1b3c70b7bd1">Mask_Uv4</a> (<a class="el" href="_dcx_channel_defs_8h.html#a7463b04a9711b2fbfcf65316d67473cf">Chan_UvS</a>, <a class="el" href="_dcx_channel_defs_8h.html#a86991dd6ecdfcdfb4b8da9904bd3cc4b">Chan_UvT</a>, <a class="el" href="_dcx_channel_defs_8h.html#ab0b72d02fa4297cdf9b819c7ed11c503">Chan_UvP</a>, <a class="el" href="_dcx_channel_defs_8h.html#ab96b25edead0c876703824783ff50ed1">Chan_UvQ</a>)</td></tr>
+<tr class="separator:a08a348d2a2ca93e77037e1b3c70b7bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe7c664d509daf4d8a05927658e3e31"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a5fe7c664d509daf4d8a05927658e3e31">Mask_ID</a> (<a class="el" href="_dcx_channel_defs_8h.html#a79b885225d4ffd94a3f894561015a4b6">Chan_ID0</a>)</td></tr>
+<tr class="separator:a5fe7c664d509daf4d8a05927658e3e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e58b7f859c1da89835f155a2621b1f"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a47e58b7f859c1da89835f155a2621b1f">Mask_ID2</a> (<a class="el" href="_dcx_channel_defs_8h.html#a79b885225d4ffd94a3f894561015a4b6">Chan_ID0</a>, <a class="el" href="_dcx_channel_defs_8h.html#a3ff8e4c3f44be0e5af7d7a2c5b35a90e">Chan_ID1</a>)</td></tr>
+<tr class="separator:a47e58b7f859c1da89835f155a2621b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8524c737832298a34d4497a3aa83eeac"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a8524c737832298a34d4497a3aa83eeac">Mask_ID3</a> (<a class="el" href="_dcx_channel_defs_8h.html#a79b885225d4ffd94a3f894561015a4b6">Chan_ID0</a>, <a class="el" href="_dcx_channel_defs_8h.html#a3ff8e4c3f44be0e5af7d7a2c5b35a90e">Chan_ID1</a>, <a class="el" href="_dcx_channel_defs_8h.html#a43b44d5d11026094ead4cccd947f21ab">Chan_ID2</a>)</td></tr>
+<tr class="separator:a8524c737832298a34d4497a3aa83eeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad36bfa0e95ee42eedac7556804e2e7ac"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#ad36bfa0e95ee42eedac7556804e2e7ac">Mask_ID4</a> (<a class="el" href="_dcx_channel_defs_8h.html#a79b885225d4ffd94a3f894561015a4b6">Chan_ID0</a>, <a class="el" href="_dcx_channel_defs_8h.html#a3ff8e4c3f44be0e5af7d7a2c5b35a90e">Chan_ID1</a>, <a class="el" href="_dcx_channel_defs_8h.html#a43b44d5d11026094ead4cccd947f21ab">Chan_ID2</a>, <a class="el" href="_dcx_channel_defs_8h.html#a86e234ded52db29e7007b4a5f5fd4c00">Chan_ID3</a>)</td></tr>
+<tr class="separator:ad36bfa0e95ee42eedac7556804e2e7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a269a975e8d0b4bcbeeb2d0270062c9c3"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a269a975e8d0b4bcbeeb2d0270062c9c3">Mask_All</a> (<a class="el" href="_dcx_channel_set_8h.html#a4578f895547a680ce00f0dd14fe0d8b3">Chan_All</a>)</td></tr>
+<tr class="separator:a269a975e8d0b4bcbeeb2d0270062c9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a6ae35c5d65ae1c690e85147484bc1803"><td class="memItemLeft" align="right" valign="top"><a class="el" href="version_8h.html#adc94498f00d0738db6a806e8be179b66">OPENDCX_INTERNAL_NAMESPACE_HEADER_ENTER</a> const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a6ae35c5d65ae1c690e85147484bc1803">spMask8LayerName</a> = &quot;deepabuf&quot;</td></tr>
@@ -66,14 +180,2381 @@ Variables</h2></td></tr>
 <tr class="separator:ae7d67fdb2557a87b57198a15f8ed57e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12aebfaba79d4bc569c42ee0f308eac0"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a12aebfaba79d4bc569c42ee0f308eac0">spMask8Channel2Name</a> = &quot;deepabuf.sp2&quot;</td></tr>
 <tr class="separator:a12aebfaba79d4bc569c42ee0f308eac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f208fbfb39215a8a10be2c8b7c76dae"><td class="memItemLeft" align="right" valign="top">static const OPENEXR_IMF_NAMESPACE::PixelType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a2f208fbfb39215a8a10be2c8b7c76dae">spMask8ChannelType</a> = OPENEXR_IMF_NAMESPACE::FLOAT</td></tr>
+<tr class="separator:a2f208fbfb39215a8a10be2c8b7c76dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ff12610217fa6be9a6338a7cb0436f6"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a7ff12610217fa6be9a6338a7cb0436f6">flagsLayerName</a> = &quot;deepmeta&quot;</td></tr>
 <tr class="separator:a7ff12610217fa6be9a6338a7cb0436f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac255213ba52161172e83e34af0e5d119"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#ac255213ba52161172e83e34af0e5d119">flagsChanName</a> = &quot;flags&quot;</td></tr>
 <tr class="separator:ac255213ba52161172e83e34af0e5d119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8651f3092b5d90a0dd708f41f141184a"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a8651f3092b5d90a0dd708f41f141184a">flagsChannelName</a> = &quot;deepmeta.flags&quot;</td></tr>
 <tr class="separator:a8651f3092b5d90a0dd708f41f141184a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f462a11b342acf1bd20a4b837fd1f84"><td class="memItemLeft" align="right" valign="top">static const OPENEXR_IMF_NAMESPACE::PixelType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a5f462a11b342acf1bd20a4b837fd1f84">flagsChannelType</a> = OPENEXR_IMF_NAMESPACE::FLOAT</td></tr>
+<tr class="separator:a5f462a11b342acf1bd20a4b837fd1f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8c80acc9cce85abf648c1e3c01c7e1"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a4b8c80acc9cce85abf648c1e3c01c7e1">Chan_R</a> = 1</td></tr>
+<tr class="separator:a4b8c80acc9cce85abf648c1e3c01c7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac551818188d029c30e03fd838192c3f3"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#ac551818188d029c30e03fd838192c3f3">Chan_G</a> = 2</td></tr>
+<tr class="separator:ac551818188d029c30e03fd838192c3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cec19eebf4d5bea76d33681d9a41d13"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a2cec19eebf4d5bea76d33681d9a41d13">Chan_B</a> = 3</td></tr>
+<tr class="separator:a2cec19eebf4d5bea76d33681d9a41d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b19fbf85f8fafeadce9ef9c98584cc"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a> = 4</td></tr>
+<tr class="separator:a48b19fbf85f8fafeadce9ef9c98584cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f742fd00e8bce0f73458fa8289c732"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a16f742fd00e8bce0f73458fa8289c732">Chan_AR</a> = 5</td></tr>
+<tr class="separator:a16f742fd00e8bce0f73458fa8289c732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f1275d43212b8293e1b3c70b850071"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#ac7f1275d43212b8293e1b3c70b850071">Chan_AG</a> = 6</td></tr>
+<tr class="separator:ac7f1275d43212b8293e1b3c70b850071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45c3fa8f77b9b29603864058778e7502"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a45c3fa8f77b9b29603864058778e7502">Chan_AB</a> = 7</td></tr>
+<tr class="separator:a45c3fa8f77b9b29603864058778e7502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80979743c1f8168d18925c7e2d557344"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a80979743c1f8168d18925c7e2d557344">Chan_Y</a> = 8</td></tr>
+<tr class="separator:a80979743c1f8168d18925c7e2d557344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf4d19f641fb5efb02b78ec9deb2c967"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#abf4d19f641fb5efb02b78ec9deb2c967">Chan_RY</a> = 9</td></tr>
+<tr class="separator:abf4d19f641fb5efb02b78ec9deb2c967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063e9f0d6e204e0e0dace85328e08486"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a063e9f0d6e204e0e0dace85328e08486">Chan_BY</a> = 10</td></tr>
+<tr class="separator:a063e9f0d6e204e0e0dace85328e08486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6477e98f341576e9a146abcf77f1422f"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a6477e98f341576e9a146abcf77f1422f">Chan_Z</a> = 11</td></tr>
+<tr class="separator:a6477e98f341576e9a146abcf77f1422f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a187f15db7f68e75e94e1ba1b7fe0ecf2"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a187f15db7f68e75e94e1ba1b7fe0ecf2">Chan_ZFront</a> = 11</td></tr>
+<tr class="separator:a187f15db7f68e75e94e1ba1b7fe0ecf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24420deb3424aeac7b5ce014400f10b"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a> = 12</td></tr>
+<tr class="separator:ae24420deb3424aeac7b5ce014400f10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887083c7abc8b4b5630e5c29c465b3ec"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a887083c7abc8b4b5630e5c29c465b3ec">Chan_SpBits1</a> = 13</td></tr>
+<tr class="separator:a887083c7abc8b4b5630e5c29c465b3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6335da919482b2dd8b4fda813888d3c"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#ad6335da919482b2dd8b4fda813888d3c">Chan_SpBits2</a> = 14</td></tr>
+<tr class="separator:ad6335da919482b2dd8b4fda813888d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f527891ae58983eb93a1ea4b85290e"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#af4f527891ae58983eb93a1ea4b85290e">Chan_DeepFlags</a> = 15</td></tr>
+<tr class="separator:af4f527891ae58983eb93a1ea4b85290e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a862df0299d69cd5d3d49cb90a5469b47"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a> = 16</td></tr>
+<tr class="separator:a862df0299d69cd5d3d49cb90a5469b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a090c91caf774123b54e297885d80c2e3"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a090c91caf774123b54e297885d80c2e3">Chan_ARCutout</a> = 17</td></tr>
+<tr class="separator:a090c91caf774123b54e297885d80c2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a359216b1d94bc02d598f3a0ef6254cea"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a359216b1d94bc02d598f3a0ef6254cea">Chan_AGCutout</a> = 18</td></tr>
+<tr class="separator:a359216b1d94bc02d598f3a0ef6254cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5bb0eb97c5f9d8f4bc07a09840dad7e"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#ac5bb0eb97c5f9d8f4bc07a09840dad7e">Chan_ABCutout</a> = 19</td></tr>
+<tr class="separator:ac5bb0eb97c5f9d8f4bc07a09840dad7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b489878f382dcf5604166e37aab96f"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a33b489878f382dcf5604166e37aab96f">Chan_ZCutout</a> = 20</td></tr>
+<tr class="separator:a33b489878f382dcf5604166e37aab96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a533a83192867850e400b89d14a3ec858"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a533a83192867850e400b89d14a3ec858">Chan_Visibility</a> = 21</td></tr>
+<tr class="separator:a533a83192867850e400b89d14a3ec858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b72bc71dac0f07215aea9a421628641"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a9b72bc71dac0f07215aea9a421628641">Chan_SpCoverage</a> = 22</td></tr>
+<tr class="separator:a9b72bc71dac0f07215aea9a421628641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7463b04a9711b2fbfcf65316d67473cf"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a7463b04a9711b2fbfcf65316d67473cf">Chan_UvS</a> = 23</td></tr>
+<tr class="separator:a7463b04a9711b2fbfcf65316d67473cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86991dd6ecdfcdfb4b8da9904bd3cc4b"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a86991dd6ecdfcdfb4b8da9904bd3cc4b">Chan_UvT</a> = 24</td></tr>
+<tr class="separator:a86991dd6ecdfcdfb4b8da9904bd3cc4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0b72d02fa4297cdf9b819c7ed11c503"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#ab0b72d02fa4297cdf9b819c7ed11c503">Chan_UvP</a> = 25</td></tr>
+<tr class="separator:ab0b72d02fa4297cdf9b819c7ed11c503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96b25edead0c876703824783ff50ed1"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#ab96b25edead0c876703824783ff50ed1">Chan_UvQ</a> = 26</td></tr>
+<tr class="separator:ab96b25edead0c876703824783ff50ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b885225d4ffd94a3f894561015a4b6"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a79b885225d4ffd94a3f894561015a4b6">Chan_ID0</a> = 27</td></tr>
+<tr class="separator:a79b885225d4ffd94a3f894561015a4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff8e4c3f44be0e5af7d7a2c5b35a90e"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a3ff8e4c3f44be0e5af7d7a2c5b35a90e">Chan_ID1</a> = 28</td></tr>
+<tr class="separator:a3ff8e4c3f44be0e5af7d7a2c5b35a90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43b44d5d11026094ead4cccd947f21ab"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a43b44d5d11026094ead4cccd947f21ab">Chan_ID2</a> = 29</td></tr>
+<tr class="separator:a43b44d5d11026094ead4cccd947f21ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e234ded52db29e7007b4a5f5fd4c00"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a86e234ded52db29e7007b4a5f5fd4c00">Chan_ID3</a> = 30</td></tr>
+<tr class="separator:a86e234ded52db29e7007b4a5f5fd4c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab60dd6a4d279eb5570c43c1c74e868"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a9ab60dd6a4d279eb5570c43c1c74e868">Chan_ArbitraryStart</a> = <a class="el" href="_dcx_channel_defs_8h.html#a86e234ded52db29e7007b4a5f5fd4c00">Chan_ID3</a>+1</td></tr>
+<tr class="separator:a9ab60dd6a4d279eb5570c43c1c74e868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b13e4b4fcb38f46c7bf8ac6fc66e24e"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="class_channel_set.html">ChannelSet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_channel_defs_8h.html#a9b13e4b4fcb38f46c7bf8ac6fc66e24e">Mask_None</a></td></tr>
+<tr class="separator:a9b13e4b4fcb38f46c7bf8ac6fc66e24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a46fe3e8277a624ee33d7aec52260bccd" name="a46fe3e8277a624ee33d7aec52260bccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46fe3e8277a624ee33d7aec52260bccd">&#9670;&#160;</a></span>Mask_A()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_A </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69c80af524ed57552015994e8dff96fc" name="a69c80af524ed57552015994e8dff96fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69c80af524ed57552015994e8dff96fc">&#9670;&#160;</a></span>Mask_AB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_AB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a45c3fa8f77b9b29603864058778e7502">Chan_AB</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba4a5c7e8321a81c1e03fbb79e751839" name="aba4a5c7e8321a81c1e03fbb79e751839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba4a5c7e8321a81c1e03fbb79e751839">&#9670;&#160;</a></span>Mask_ABCutout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_ABCutout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ac5bb0eb97c5f9d8f4bc07a09840dad7e">Chan_ABCutout</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af949e5127bdf67d335a57f71fdf9d1fc" name="af949e5127bdf67d335a57f71fdf9d1fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af949e5127bdf67d335a57f71fdf9d1fc">&#9670;&#160;</a></span>Mask_Accumulators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_Accumulators </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a533a83192867850e400b89d14a3ec858">Chan_Visibility</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e07e0188a84618413f77132c5412e73" name="a9e07e0188a84618413f77132c5412e73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e07e0188a84618413f77132c5412e73">&#9670;&#160;</a></span>Mask_ACutout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_ACutout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5d2d8b23065a67da9d048cf6c4e14f7" name="ae5d2d8b23065a67da9d048cf6c4e14f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5d2d8b23065a67da9d048cf6c4e14f7">&#9670;&#160;</a></span>Mask_ACutoutlphas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_ACutoutlphas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a090c91caf774123b54e297885d80c2e3">Chan_ARCutout</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a359216b1d94bc02d598f3a0ef6254cea">Chan_AGCutout</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ac5bb0eb97c5f9d8f4bc07a09840dad7e">Chan_ABCutout</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf8c0009916f535d847550582917be7f" name="acf8c0009916f535d847550582917be7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf8c0009916f535d847550582917be7f">&#9670;&#160;</a></span>Mask_AG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_AG </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ac7f1275d43212b8293e1b3c70b850071">Chan_AG</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4916cdd95c3c38573cfed728564d4199" name="a4916cdd95c3c38573cfed728564d4199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4916cdd95c3c38573cfed728564d4199">&#9670;&#160;</a></span>Mask_AGCutout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_AGCutout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a359216b1d94bc02d598f3a0ef6254cea">Chan_AGCutout</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a269a975e8d0b4bcbeeb2d0270062c9c3" name="a269a975e8d0b4bcbeeb2d0270062c9c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a269a975e8d0b4bcbeeb2d0270062c9c3">&#9670;&#160;</a></span>Mask_All()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_All </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_set_8h.html#a4578f895547a680ce00f0dd14fe0d8b3">Chan_All</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09ebc587c3349146b80a8b7c73d9f2f8" name="a09ebc587c3349146b80a8b7c73d9f2f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09ebc587c3349146b80a8b7c73d9f2f8">&#9670;&#160;</a></span>Mask_Alphas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_Alphas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a16f742fd00e8bce0f73458fa8289c732">Chan_AR</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ac7f1275d43212b8293e1b3c70b850071">Chan_AG</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a45c3fa8f77b9b29603864058778e7502">Chan_AB</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd4b2f43626467691560dffedb3890c6" name="afd4b2f43626467691560dffedb3890c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd4b2f43626467691560dffedb3890c6">&#9670;&#160;</a></span>Mask_AR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_AR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a16f742fd00e8bce0f73458fa8289c732">Chan_AR</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad44fdf3572507cf7893446ba69359e7" name="aad44fdf3572507cf7893446ba69359e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad44fdf3572507cf7893446ba69359e7">&#9670;&#160;</a></span>Mask_ARCutout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_ARCutout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a090c91caf774123b54e297885d80c2e3">Chan_ARCutout</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a696f0a1bd7f28026fbcb616f1f4c90e0" name="a696f0a1bd7f28026fbcb616f1f4c90e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a696f0a1bd7f28026fbcb616f1f4c90e0">&#9670;&#160;</a></span>Mask_B()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_B </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a2cec19eebf4d5bea76d33681d9a41d13">Chan_B</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a32460b81239a9d5225a74f412096e213" name="a32460b81239a9d5225a74f412096e213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32460b81239a9d5225a74f412096e213">&#9670;&#160;</a></span>Mask_BY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_BY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a063e9f0d6e204e0e0dace85328e08486">Chan_BY</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5cb1a5d280ff585f409eace2aee02c0c" name="a5cb1a5d280ff585f409eace2aee02c0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cb1a5d280ff585f409eace2aee02c0c">&#9670;&#160;</a></span>Mask_Cutouts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_Cutouts </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a862df0299d69cd5d3d49cb90a5469b47">Chan_ACutout</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a090c91caf774123b54e297885d80c2e3">Chan_ARCutout</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a359216b1d94bc02d598f3a0ef6254cea">Chan_AGCutout</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ac5bb0eb97c5f9d8f4bc07a09840dad7e">Chan_ABCutout</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a33b489878f382dcf5604166e37aab96f">Chan_ZCutout</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd255943ba2b48789971f4fc1ea99e93" name="acd255943ba2b48789971f4fc1ea99e93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd255943ba2b48789971f4fc1ea99e93">&#9670;&#160;</a></span>Mask_DeepFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_DeepFlags </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#af4f527891ae58983eb93a1ea4b85290e">Chan_DeepFlags</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f4a22948238acfe330fd10dbaa13088" name="a1f4a22948238acfe330fd10dbaa13088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f4a22948238acfe330fd10dbaa13088">&#9670;&#160;</a></span>Mask_DeepMetadata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_DeepMetadata </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#af4f527891ae58983eb93a1ea4b85290e">Chan_DeepFlags</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a887083c7abc8b4b5630e5c29c465b3ec">Chan_SpBits1</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ad6335da919482b2dd8b4fda813888d3c">Chan_SpBits2</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a952270a3c83a8e1945952aab04b23e9d" name="a952270a3c83a8e1945952aab04b23e9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a952270a3c83a8e1945952aab04b23e9d">&#9670;&#160;</a></span>Mask_Depths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_Depths </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a187f15db7f68e75e94e1ba1b7fe0ecf2">Chan_ZFront</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7cfab377e2bd2b7bf2df0752afb220e7" name="a7cfab377e2bd2b7bf2df0752afb220e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cfab377e2bd2b7bf2df0752afb220e7">&#9670;&#160;</a></span>Mask_G()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_G </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ac551818188d029c30e03fd838192c3f3">Chan_G</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5fe7c664d509daf4d8a05927658e3e31" name="a5fe7c664d509daf4d8a05927658e3e31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fe7c664d509daf4d8a05927658e3e31">&#9670;&#160;</a></span>Mask_ID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_ID </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a79b885225d4ffd94a3f894561015a4b6">Chan_ID0</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47e58b7f859c1da89835f155a2621b1f" name="a47e58b7f859c1da89835f155a2621b1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e58b7f859c1da89835f155a2621b1f">&#9670;&#160;</a></span>Mask_ID2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_ID2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a79b885225d4ffd94a3f894561015a4b6">Chan_ID0</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a3ff8e4c3f44be0e5af7d7a2c5b35a90e">Chan_ID1</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8524c737832298a34d4497a3aa83eeac" name="a8524c737832298a34d4497a3aa83eeac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8524c737832298a34d4497a3aa83eeac">&#9670;&#160;</a></span>Mask_ID3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_ID3 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a79b885225d4ffd94a3f894561015a4b6">Chan_ID0</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a3ff8e4c3f44be0e5af7d7a2c5b35a90e">Chan_ID1</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a43b44d5d11026094ead4cccd947f21ab">Chan_ID2</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad36bfa0e95ee42eedac7556804e2e7ac" name="ad36bfa0e95ee42eedac7556804e2e7ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad36bfa0e95ee42eedac7556804e2e7ac">&#9670;&#160;</a></span>Mask_ID4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_ID4 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a79b885225d4ffd94a3f894561015a4b6">Chan_ID0</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a3ff8e4c3f44be0e5af7d7a2c5b35a90e">Chan_ID1</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a43b44d5d11026094ead4cccd947f21ab">Chan_ID2</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a86e234ded52db29e7007b4a5f5fd4c00">Chan_ID3</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9e7bb71a39978bf760c12fda37d0693" name="af9e7bb71a39978bf760c12fda37d0693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9e7bb71a39978bf760c12fda37d0693">&#9670;&#160;</a></span>Mask_Opacities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_Opacities </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a9b72bc71dac0f07215aea9a421628641">Chan_SpCoverage</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae3592fdfe3578f53248950118f19d19a" name="ae3592fdfe3578f53248950118f19d19a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3592fdfe3578f53248950118f19d19a">&#9670;&#160;</a></span>Mask_R()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_R </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a4b8c80acc9cce85abf648c1e3c01c7e1">Chan_R</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57d5b28efc43d33ce666fb4c9bd5bb3b" name="a57d5b28efc43d33ce666fb4c9bd5bb3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d5b28efc43d33ce666fb4c9bd5bb3b">&#9670;&#160;</a></span>Mask_RGB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_RGB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a4b8c80acc9cce85abf648c1e3c01c7e1">Chan_R</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ac551818188d029c30e03fd838192c3f3">Chan_G</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a2cec19eebf4d5bea76d33681d9a41d13">Chan_B</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a325a5ebc18722fb55b8e4cf3731a455a" name="a325a5ebc18722fb55b8e4cf3731a455a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a325a5ebc18722fb55b8e4cf3731a455a">&#9670;&#160;</a></span>Mask_RGBA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_RGBA </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a4b8c80acc9cce85abf648c1e3c01c7e1">Chan_R</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ac551818188d029c30e03fd838192c3f3">Chan_G</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a2cec19eebf4d5bea76d33681d9a41d13">Chan_B</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a48b19fbf85f8fafeadce9ef9c98584cc">Chan_A</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63762d272869af11edca04c758efb6d7" name="a63762d272869af11edca04c758efb6d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63762d272869af11edca04c758efb6d7">&#9670;&#160;</a></span>Mask_RGBAlphas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_RGBAlphas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a16f742fd00e8bce0f73458fa8289c732">Chan_AR</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ac7f1275d43212b8293e1b3c70b850071">Chan_AG</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a45c3fa8f77b9b29603864058778e7502">Chan_AB</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac844cd9a775b357547263d4b97ac281f" name="ac844cd9a775b357547263d4b97ac281f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac844cd9a775b357547263d4b97ac281f">&#9670;&#160;</a></span>Mask_RGBOpacities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_RGBOpacities </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a16f742fd00e8bce0f73458fa8289c732">Chan_AR</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ac7f1275d43212b8293e1b3c70b850071">Chan_AG</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a45c3fa8f77b9b29603864058778e7502">Chan_AB</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a9b72bc71dac0f07215aea9a421628641">Chan_SpCoverage</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63ef651d271c0ce7c1f981f1371ef88d" name="a63ef651d271c0ce7c1f981f1371ef88d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63ef651d271c0ce7c1f981f1371ef88d">&#9670;&#160;</a></span>Mask_RY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_RY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#abf4d19f641fb5efb02b78ec9deb2c967">Chan_RY</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0865e35610651abc085f7f7b4978372" name="ad0865e35610651abc085f7f7b4978372"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0865e35610651abc085f7f7b4978372">&#9670;&#160;</a></span>Mask_SpBits1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_SpBits1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a887083c7abc8b4b5630e5c29c465b3ec">Chan_SpBits1</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59a13425c8d8c9eb547e09e508b5e681" name="a59a13425c8d8c9eb547e09e508b5e681"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59a13425c8d8c9eb547e09e508b5e681">&#9670;&#160;</a></span>Mask_SpBits2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_SpBits2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ad6335da919482b2dd8b4fda813888d3c">Chan_SpBits2</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7ce40a280a2f7ed85c57b41a3e18f3a" name="ad7ce40a280a2f7ed85c57b41a3e18f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7ce40a280a2f7ed85c57b41a3e18f3a">&#9670;&#160;</a></span>Mask_SpCoverage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_SpCoverage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a9b72bc71dac0f07215aea9a421628641">Chan_SpCoverage</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a682b8785763a0b20e91d0c2964b05bbd" name="a682b8785763a0b20e91d0c2964b05bbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a682b8785763a0b20e91d0c2964b05bbd">&#9670;&#160;</a></span>Mask_SpMask8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_SpMask8 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a887083c7abc8b4b5630e5c29c465b3ec">Chan_SpBits1</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ad6335da919482b2dd8b4fda813888d3c">Chan_SpBits2</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63f48a763db70fed5bc999b8d711db8d" name="a63f48a763db70fed5bc999b8d711db8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63f48a763db70fed5bc999b8d711db8d">&#9670;&#160;</a></span>Mask_Uv2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_Uv2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a7463b04a9711b2fbfcf65316d67473cf">Chan_UvS</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a86991dd6ecdfcdfb4b8da9904bd3cc4b">Chan_UvT</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a023ab048ea0789cbf2a32cc67633b984" name="a023ab048ea0789cbf2a32cc67633b984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a023ab048ea0789cbf2a32cc67633b984">&#9670;&#160;</a></span>Mask_Uv3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_Uv3 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a7463b04a9711b2fbfcf65316d67473cf">Chan_UvS</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a86991dd6ecdfcdfb4b8da9904bd3cc4b">Chan_UvT</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ab0b72d02fa4297cdf9b819c7ed11c503">Chan_UvP</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08a348d2a2ca93e77037e1b3c70b7bd1" name="a08a348d2a2ca93e77037e1b3c70b7bd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08a348d2a2ca93e77037e1b3c70b7bd1">&#9670;&#160;</a></span>Mask_Uv4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_Uv4 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a7463b04a9711b2fbfcf65316d67473cf">Chan_UvS</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a86991dd6ecdfcdfb4b8da9904bd3cc4b">Chan_UvT</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ab0b72d02fa4297cdf9b819c7ed11c503">Chan_UvP</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ab96b25edead0c876703824783ff50ed1">Chan_UvQ</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bb4e02e12ac55a3f297927be78bdd66" name="a4bb4e02e12ac55a3f297927be78bdd66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bb4e02e12ac55a3f297927be78bdd66">&#9670;&#160;</a></span>Mask_UvP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_UvP </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ab0b72d02fa4297cdf9b819c7ed11c503">Chan_UvP</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad796c71aa16b4b256cd7c6e0cd1009c2" name="ad796c71aa16b4b256cd7c6e0cd1009c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad796c71aa16b4b256cd7c6e0cd1009c2">&#9670;&#160;</a></span>Mask_UvQ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_UvQ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ab96b25edead0c876703824783ff50ed1">Chan_UvQ</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91ca71712c58fa84ade8224f8c1552a1" name="a91ca71712c58fa84ade8224f8c1552a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ca71712c58fa84ade8224f8c1552a1">&#9670;&#160;</a></span>Mask_UvS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_UvS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a7463b04a9711b2fbfcf65316d67473cf">Chan_UvS</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d8d7347506b5a05bca761d0e1456f7a" name="a9d8d7347506b5a05bca761d0e1456f7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d8d7347506b5a05bca761d0e1456f7a">&#9670;&#160;</a></span>Mask_UvT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_UvT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a86991dd6ecdfcdfb4b8da9904bd3cc4b">Chan_UvT</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a793bbced37e685cd3e35a85687b9c187" name="a793bbced37e685cd3e35a85687b9c187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a793bbced37e685cd3e35a85687b9c187">&#9670;&#160;</a></span>Mask_Visibility()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_Visibility </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a533a83192867850e400b89d14a3ec858">Chan_Visibility</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45a9bb5a5266eb01c1b1adfd03b6702c" name="a45a9bb5a5266eb01c1b1adfd03b6702c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45a9bb5a5266eb01c1b1adfd03b6702c">&#9670;&#160;</a></span>Mask_Y()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_Y </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a80979743c1f8168d18925c7e2d557344">Chan_Y</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a669e021411c752370e14db9aabce73fa" name="a669e021411c752370e14db9aabce73fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a669e021411c752370e14db9aabce73fa">&#9670;&#160;</a></span>Mask_Yuv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_Yuv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a80979743c1f8168d18925c7e2d557344">Chan_Y</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#abf4d19f641fb5efb02b78ec9deb2c967">Chan_RY</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a063e9f0d6e204e0e0dace85328e08486">Chan_BY</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10c755c6afb3819e37505ad2700433ff" name="a10c755c6afb3819e37505ad2700433ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10c755c6afb3819e37505ad2700433ff">&#9670;&#160;</a></span>Mask_ZBack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_ZBack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#ae24420deb3424aeac7b5ce014400f10b">Chan_ZBack</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d2e30fb01789e7026baea50de251ba1" name="a1d2e30fb01789e7026baea50de251ba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d2e30fb01789e7026baea50de251ba1">&#9670;&#160;</a></span>Mask_ZCutout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_ZCutout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a33b489878f382dcf5604166e37aab96f">Chan_ZCutout</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa479a2a5225f2fb368ba8fcf5a2b32e3" name="aa479a2a5225f2fb368ba8fcf5a2b32e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa479a2a5225f2fb368ba8fcf5a2b32e3">&#9670;&#160;</a></span>Mask_ZFront()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_ZFront </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_dcx_channel_defs_8h.html#a187f15db7f68e75e94e1ba1b7fe0ecf2">Chan_ZFront</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a48b19fbf85f8fafeadce9ef9c98584cc" name="a48b19fbf85f8fafeadce9ef9c98584cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48b19fbf85f8fafeadce9ef9c98584cc">&#9670;&#160;</a></span>Chan_A</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_A = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00097">97</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a45c3fa8f77b9b29603864058778e7502" name="a45c3fa8f77b9b29603864058778e7502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45c3fa8f77b9b29603864058778e7502">&#9670;&#160;</a></span>Chan_AB</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_AB = 7</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00100">100</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="ac5bb0eb97c5f9d8f4bc07a09840dad7e" name="ac5bb0eb97c5f9d8f4bc07a09840dad7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5bb0eb97c5f9d8f4bc07a09840dad7e">&#9670;&#160;</a></span>Chan_ABCutout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_ABCutout = 19</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00117">117</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a862df0299d69cd5d3d49cb90a5469b47" name="a862df0299d69cd5d3d49cb90a5469b47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a862df0299d69cd5d3d49cb90a5469b47">&#9670;&#160;</a></span>Chan_ACutout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_ACutout = 16</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00114">114</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="ac7f1275d43212b8293e1b3c70b850071" name="ac7f1275d43212b8293e1b3c70b850071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7f1275d43212b8293e1b3c70b850071">&#9670;&#160;</a></span>Chan_AG</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_AG = 6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00099">99</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a359216b1d94bc02d598f3a0ef6254cea" name="a359216b1d94bc02d598f3a0ef6254cea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a359216b1d94bc02d598f3a0ef6254cea">&#9670;&#160;</a></span>Chan_AGCutout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_AGCutout = 18</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00116">116</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a16f742fd00e8bce0f73458fa8289c732" name="a16f742fd00e8bce0f73458fa8289c732"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f742fd00e8bce0f73458fa8289c732">&#9670;&#160;</a></span>Chan_AR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_AR = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00098">98</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a9ab60dd6a4d279eb5570c43c1c74e868" name="a9ab60dd6a4d279eb5570c43c1c74e868"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ab60dd6a4d279eb5570c43c1c74e868">&#9670;&#160;</a></span>Chan_ArbitraryStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_ArbitraryStart = <a class="el" href="_dcx_channel_defs_8h.html#a86e234ded52db29e7007b4a5f5fd4c00">Chan_ID3</a>+1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00134">134</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a090c91caf774123b54e297885d80c2e3" name="a090c91caf774123b54e297885d80c2e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a090c91caf774123b54e297885d80c2e3">&#9670;&#160;</a></span>Chan_ARCutout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_ARCutout = 17</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00115">115</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a2cec19eebf4d5bea76d33681d9a41d13" name="a2cec19eebf4d5bea76d33681d9a41d13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cec19eebf4d5bea76d33681d9a41d13">&#9670;&#160;</a></span>Chan_B</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_B = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00095">95</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a063e9f0d6e204e0e0dace85328e08486" name="a063e9f0d6e204e0e0dace85328e08486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a063e9f0d6e204e0e0dace85328e08486">&#9670;&#160;</a></span>Chan_BY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_BY = 10</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00104">104</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="af4f527891ae58983eb93a1ea4b85290e" name="af4f527891ae58983eb93a1ea4b85290e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4f527891ae58983eb93a1ea4b85290e">&#9670;&#160;</a></span>Chan_DeepFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_DeepFlags = 15</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00112">112</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="ac551818188d029c30e03fd838192c3f3" name="ac551818188d029c30e03fd838192c3f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac551818188d029c30e03fd838192c3f3">&#9670;&#160;</a></span>Chan_G</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_G = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00094">94</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a79b885225d4ffd94a3f894561015a4b6" name="a79b885225d4ffd94a3f894561015a4b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79b885225d4ffd94a3f894561015a4b6">&#9670;&#160;</a></span>Chan_ID0</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_ID0 = 27</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00128">128</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a3ff8e4c3f44be0e5af7d7a2c5b35a90e" name="a3ff8e4c3f44be0e5af7d7a2c5b35a90e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ff8e4c3f44be0e5af7d7a2c5b35a90e">&#9670;&#160;</a></span>Chan_ID1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_ID1 = 28</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00129">129</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a43b44d5d11026094ead4cccd947f21ab" name="a43b44d5d11026094ead4cccd947f21ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43b44d5d11026094ead4cccd947f21ab">&#9670;&#160;</a></span>Chan_ID2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_ID2 = 29</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00130">130</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a86e234ded52db29e7007b4a5f5fd4c00" name="a86e234ded52db29e7007b4a5f5fd4c00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86e234ded52db29e7007b4a5f5fd4c00">&#9670;&#160;</a></span>Chan_ID3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_ID3 = 30</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00131">131</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a4b8c80acc9cce85abf648c1e3c01c7e1" name="a4b8c80acc9cce85abf648c1e3c01c7e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b8c80acc9cce85abf648c1e3c01c7e1">&#9670;&#160;</a></span>Chan_R</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_R = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00093">93</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="abf4d19f641fb5efb02b78ec9deb2c967" name="abf4d19f641fb5efb02b78ec9deb2c967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf4d19f641fb5efb02b78ec9deb2c967">&#9670;&#160;</a></span>Chan_RY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_RY = 9</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00103">103</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a887083c7abc8b4b5630e5c29c465b3ec" name="a887083c7abc8b4b5630e5c29c465b3ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a887083c7abc8b4b5630e5c29c465b3ec">&#9670;&#160;</a></span>Chan_SpBits1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_SpBits1 = 13</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00110">110</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="ad6335da919482b2dd8b4fda813888d3c" name="ad6335da919482b2dd8b4fda813888d3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6335da919482b2dd8b4fda813888d3c">&#9670;&#160;</a></span>Chan_SpBits2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_SpBits2 = 14</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00111">111</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a9b72bc71dac0f07215aea9a421628641" name="a9b72bc71dac0f07215aea9a421628641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b72bc71dac0f07215aea9a421628641">&#9670;&#160;</a></span>Chan_SpCoverage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_SpCoverage = 22</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00121">121</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="ab0b72d02fa4297cdf9b819c7ed11c503" name="ab0b72d02fa4297cdf9b819c7ed11c503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0b72d02fa4297cdf9b819c7ed11c503">&#9670;&#160;</a></span>Chan_UvP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_UvP = 25</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00125">125</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="ab96b25edead0c876703824783ff50ed1" name="ab96b25edead0c876703824783ff50ed1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab96b25edead0c876703824783ff50ed1">&#9670;&#160;</a></span>Chan_UvQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_UvQ = 26</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00126">126</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a7463b04a9711b2fbfcf65316d67473cf" name="a7463b04a9711b2fbfcf65316d67473cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7463b04a9711b2fbfcf65316d67473cf">&#9670;&#160;</a></span>Chan_UvS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_UvS = 23</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00123">123</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a86991dd6ecdfcdfb4b8da9904bd3cc4b" name="a86991dd6ecdfcdfb4b8da9904bd3cc4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86991dd6ecdfcdfb4b8da9904bd3cc4b">&#9670;&#160;</a></span>Chan_UvT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_UvT = 24</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00124">124</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a533a83192867850e400b89d14a3ec858" name="a533a83192867850e400b89d14a3ec858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a533a83192867850e400b89d14a3ec858">&#9670;&#160;</a></span>Chan_Visibility</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_Visibility = 21</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00120">120</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a80979743c1f8168d18925c7e2d557344" name="a80979743c1f8168d18925c7e2d557344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80979743c1f8168d18925c7e2d557344">&#9670;&#160;</a></span>Chan_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_Y = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00102">102</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a6477e98f341576e9a146abcf77f1422f" name="a6477e98f341576e9a146abcf77f1422f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6477e98f341576e9a146abcf77f1422f">&#9670;&#160;</a></span>Chan_Z</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_Z = 11</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00106">106</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="ae24420deb3424aeac7b5ce014400f10b" name="ae24420deb3424aeac7b5ce014400f10b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24420deb3424aeac7b5ce014400f10b">&#9670;&#160;</a></span>Chan_ZBack</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_ZBack = 12</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00108">108</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a33b489878f382dcf5604166e37aab96f" name="a33b489878f382dcf5604166e37aab96f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33b489878f382dcf5604166e37aab96f">&#9670;&#160;</a></span>Chan_ZCutout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_ZCutout = 20</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00118">118</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a187f15db7f68e75e94e1ba1b7fe0ecf2" name="a187f15db7f68e75e94e1ba1b7fe0ecf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a187f15db7f68e75e94e1ba1b7fe0ecf2">&#9670;&#160;</a></span>Chan_ZFront</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a> Chan_ZFront = 11</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00107">107</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
 <a id="ac255213ba52161172e83e34af0e5d119" name="ac255213ba52161172e83e34af0e5d119"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac255213ba52161172e83e34af0e5d119">&#9670;&#160;</a></span>flagsChanName</h2>
 
@@ -106,6 +2587,30 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a5f462a11b342acf1bd20a4b837fd1f84" name="a5f462a11b342acf1bd20a4b837fd1f84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f462a11b342acf1bd20a4b837fd1f84">&#9670;&#160;</a></span>flagsChannelType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const OPENEXR_IMF_NAMESPACE::PixelType flagsChannelType = OPENEXR_IMF_NAMESPACE::FLOAT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00083">83</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
 <a id="a7ff12610217fa6be9a6338a7cb0436f6" name="a7ff12610217fa6be9a6338a7cb0436f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ff12610217fa6be9a6338a7cb0436f6">&#9670;&#160;</a></span>flagsLayerName</h2>
 
@@ -119,6 +2624,30 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00080">80</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
+<a id="a9b13e4b4fcb38f46c7bf8ac6fc66e24e" name="a9b13e4b4fcb38f46c7bf8ac6fc66e24e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b13e4b4fcb38f46c7bf8ac6fc66e24e">&#9670;&#160;</a></span>Mask_None</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_channel_set.html">ChannelSet</a> Mask_None</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00144">144</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
 
 </div>
 </div>
@@ -186,6 +2715,30 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a2f208fbfb39215a8a10be2c8b7c76dae" name="a2f208fbfb39215a8a10be2c8b7c76dae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f208fbfb39215a8a10be2c8b7c76dae">&#9670;&#160;</a></span>spMask8ChannelType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const OPENEXR_IMF_NAMESPACE::PixelType spMask8ChannelType = OPENEXR_IMF_NAMESPACE::FLOAT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_dcx_channel_defs_8h_source.html#l00078">78</a> of file <a class="el" href="_dcx_channel_defs_8h_source.html">DcxChannelDefs.h</a>.</p>
+
+</div>
+</div>
 <a id="a6ae35c5d65ae1c690e85147484bc1803" name="a6ae35c5d65ae1c690e85147484bc1803"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ae35c5d65ae1c690e85147484bc1803">&#9670;&#160;</a></span>spMask8LayerName</h2>
 
@@ -205,9 +2758,13 @@ Variables</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_72b1453eb3d56651fce76e1c2eebfac7.html">deepfile</a></li><li class="navelem"><a class="el" href="_dcx_channel_defs_8h.html">DcxChannelDefs.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

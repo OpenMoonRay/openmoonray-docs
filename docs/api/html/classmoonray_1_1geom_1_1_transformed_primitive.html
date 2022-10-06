@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1_transformed_primitive.html">TransformedPrimitive</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1_transformed_primitive.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1geom_1_1_transformed_primitive-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::geom::TransformedPrimitive Class Reference</div></div>
 </div><!--header-->
@@ -118,6 +136,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6ef8c77ab9e7fd5dcc9a27d645703cd6 inherit pub_methods_classmoonray_1_1geom_1_1_primitive"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a6ec1e752af007a2007fe341be5aa5810">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a6ef8c77ab9e7fd5dcc9a27d645703cd6">getMotionSamplesCount</a> () const =0</td></tr>
 <tr class="memdesc:a6ef8c77ab9e7fd5dcc9a27d645703cd6 inherit pub_methods_classmoonray_1_1geom_1_1_primitive"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the number of motion samples  <a href="classmoonray_1_1geom_1_1_primitive.html#a6ef8c77ab9e7fd5dcc9a27d645703cd6">More...</a><br /></td></tr>
 <tr class="separator:a6ef8c77ab9e7fd5dcc9a27d645703cd6 inherit pub_methods_classmoonray_1_1geom_1_1_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a4936cbff46aadbb3f683585ff684ea25"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">internal::Primitive</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_transformed_primitive.html#a4936cbff46aadbb3f683585ff684ea25">getPrimitiveImpl</a> () override</td></tr>
+<tr class="separator:a4936cbff46aadbb3f683585ff684ea25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac662aaaecf9076757606d348c6d4389f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_transformed_primitive.html#ac662aaaecf9076757606d348c6d4389f">transformPrimitive</a> (const <a class="el" href="classmoonray_1_1geom_1_1_motion_blur_params.html">MotionBlurParams</a> &amp;motionBlurParams, const <a class="el" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> &amp;prim2render) override</td></tr>
+<tr class="separator:ac662aaaecf9076757606d348c6d4389f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad04d2b28ba0c1f0a7d35fc6f76fdb06d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structmoonray_1_1geom_1_1_transformed_primitive_1_1_impl.html">Impl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_transformed_primitive.html#ad04d2b28ba0c1f0a7d35fc6f76fdb06d">mImpl</a></td></tr>
+<tr class="separator:ad04d2b28ba0c1f0a7d35fc6f76fdb06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -200,7 +230,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_transformed_primitive_8cc_source.html#l00046">46</a> of file <a class="el" href="_transformed_primitive_8cc_source.html">TransformedPrimitive.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   47</span>                                            :</div>
+<div class="line"><span class="lineno">   48</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_transformed_primitive.html#ad04d2b28ba0c1f0a7d35fc6f76fdb06d">mImpl</a>(<span class="keyword">new</span> Impl(xform, std::move(primitive))) {}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_transformed_primitive_html_ad04d2b28ba0c1f0a7d35fc6f76fdb06d"><div class="ttname"><a href="classmoonray_1_1geom_1_1_transformed_primitive.html#ad04d2b28ba0c1f0a7d35fc6f76fdb06d">moonray::geom::TransformedPrimitive::mImpl</a></div><div class="ttdeci">std::unique_ptr&lt; Impl &gt; mImpl</div><div class="ttdef"><b>Definition:</b> <a href="_transformed_primitive_8h_source.html#l00056">TransformedPrimitive.h:56</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a666590417bc5b57293de49165d35df68" name="a666590417bc5b57293de49165d35df68"></a>
@@ -257,7 +290,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_primitive.html#aecdc3d10e900a74a4a85ee29aa28e79e">moonray::geom::Primitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_transformed_primitive_8cc_source.html#l00051">51</a> of file <a class="el" href="_transformed_primitive_8cc_source.html">TransformedPrimitive.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   52</span>{</div>
+<div class="line"><span class="lineno">   53</span>    v.visitTransformedPrimitive(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   54</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aeb8a095f039983edaafc095dee741406" name="aeb8a095f039983edaafc095dee741406"></a>
@@ -288,7 +324,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a7cea19ec192eb4c509d9f27c3e74a04c">moonray::geom::Primitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_transformed_primitive_8cc_source.html#l00063">63</a> of file <a class="el" href="_transformed_primitive_8cc_source.html">TransformedPrimitive.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   64</span>{</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code hl_function" href="classmoonray_1_1geom_1_1_transformed_primitive.html#a1b2e249aaaa2e60cfcb594eeb951d7b6">TransformedPrimitive</a>) + <a class="code hl_variable" href="classmoonray_1_1geom_1_1_transformed_primitive.html#ad04d2b28ba0c1f0a7d35fc6f76fdb06d">mImpl</a>-&gt;getMemory();</div>
+<div class="line"><span class="lineno">   66</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_transformed_primitive_html_a1b2e249aaaa2e60cfcb594eeb951d7b6"><div class="ttname"><a href="classmoonray_1_1geom_1_1_transformed_primitive.html#a1b2e249aaaa2e60cfcb594eeb951d7b6">moonray::geom::TransformedPrimitive::TransformedPrimitive</a></div><div class="ttdeci">TransformedPrimitive(const shading::XformSamples &amp;xform, std::unique_ptr&lt; Primitive &gt; primitive)</div><div class="ttdef"><b>Definition:</b> <a href="_transformed_primitive_8cc_source.html#l00046">TransformedPrimitive.cc:46</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa62cbc9ee66f7ba4336ebe81ed3a3086" name="aa62cbc9ee66f7ba4336ebe81ed3a3086"></a>
@@ -319,7 +359,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a6ef8c77ab9e7fd5dcc9a27d645703cd6">moonray::geom::Primitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_transformed_primitive_8cc_source.html#l00069">69</a> of file <a class="el" href="_transformed_primitive_8cc_source.html">TransformedPrimitive.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   70</span>{</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_transformed_primitive.html#ad04d2b28ba0c1f0a7d35fc6f76fdb06d">mImpl</a>-&gt;mXform.size();</div>
+<div class="line"><span class="lineno">   72</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aad4a4b29c8c6200dea0b7f523c343ba4" name="aad4a4b29c8c6200dea0b7f523c343ba4"></a>
@@ -338,7 +381,45 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_transformed_primitive_8cc_source.html#l00075">75</a> of file <a class="el" href="_transformed_primitive_8cc_source.html">TransformedPrimitive.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>{</div>
+<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_transformed_primitive.html#ad04d2b28ba0c1f0a7d35fc6f76fdb06d">mImpl</a>-&gt;mPrimitive;</div>
+<div class="line"><span class="lineno">   78</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4936cbff46aadbb3f683585ff684ea25" name="a4936cbff46aadbb3f683585ff684ea25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4936cbff46aadbb3f683585ff684ea25">&#9670;&#160;</a></span>getPrimitiveImpl()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">internal::Primitive</a> * moonray::geom::TransformedPrimitive::getPrimitiveImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section remark"><dt>Remarks</dt><dd>For renderer internal use, procedural should never call this </dd></dl>
+
+<p>Implements <a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a7603a07d5116fc515edbeb2aa714a4ab">moonray::geom::Primitive</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_transformed_primitive_8cc_source.html#l00095">95</a> of file <a class="el" href="_transformed_primitive_8cc_source.html">TransformedPrimitive.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   96</span>{</div>
+<div class="line"><span class="lineno">   97</span>    MNRY_ASSERT_REQUIRE(<span class="keyword">false</span>, <span class="stringliteral">&quot;TransformedPrimitive is an opaque handle wrapper&quot;</span></div>
+<div class="line"><span class="lineno">   98</span>        <span class="stringliteral">&quot; that has no internal implementation&quot;</span>);</div>
+<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  100</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac375640695a31e68ce2a2c13f52935b2" name="ac375640695a31e68ce2a2c13f52935b2"></a>
@@ -357,6 +438,87 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_transformed_primitive_8cc_source.html#l00057">57</a> of file <a class="el" href="_transformed_primitive_8cc_source.html">TransformedPrimitive.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>{</div>
+<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_transformed_primitive.html#ad04d2b28ba0c1f0a7d35fc6f76fdb06d">mImpl</a>-&gt;mXform;</div>
+<div class="line"><span class="lineno">   60</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac662aaaecf9076757606d348c6d4389f" name="ac662aaaecf9076757606d348c6d4389f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac662aaaecf9076757606d348c6d4389f">&#9670;&#160;</a></span>transformPrimitive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::geom::TransformedPrimitive::transformPrimitive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1geom_1_1_motion_blur_params.html">MotionBlurParams</a> &amp;&#160;</td>
+          <td class="paramname"><em>motionBlurParams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> &amp;&#160;</td>
+          <td class="paramname"><em>prim2render</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section remark"><dt>Remarks</dt><dd>For renderer internal use, procedural should never call this </dd></dl>
+
+<p>Implements <a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a8a9d605ec9262d447cba3424d443d826">moonray::geom::Primitive</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_transformed_primitive_8cc_source.html#l00081">81</a> of file <a class="el" href="_transformed_primitive_8cc_source.html">TransformedPrimitive.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>{</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1geom_1_1_transformed_primitive.html#ad04d2b28ba0c1f0a7d35fc6f76fdb06d">mImpl</a>-&gt;mHasBeenApplied) {</div>
+<div class="line"><span class="lineno">   86</span>        <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> local2render = <a class="code hl_function" href="namespacemoonray_1_1geom.html#afd7055366476bf0667f97770c153337c">concatenate</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1_transformed_primitive.html#ad04d2b28ba0c1f0a7d35fc6f76fdb06d">mImpl</a>-&gt;mXform, prim2render);</div>
+<div class="line"><span class="lineno">   87</span>        <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_primitive_private_access.html#a8dc6964a05f52fd69c2c657b7fd7bf29">internal::PrimitivePrivateAccess::transformPrimitive</a>(</div>
+<div class="line"><span class="lineno">   88</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1_transformed_primitive.html#ad04d2b28ba0c1f0a7d35fc6f76fdb06d">mImpl</a>-&gt;mPrimitive.get(), motionBlurParams,</div>
+<div class="line"><span class="lineno">   89</span>            local2render);</div>
+<div class="line"><span class="lineno">   90</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1_transformed_primitive.html#ad04d2b28ba0c1f0a7d35fc6f76fdb06d">mImpl</a>-&gt;mHasBeenApplied = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   91</span>    }</div>
+<div class="line"><span class="lineno">   92</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_primitive_private_access_html_a8dc6964a05f52fd69c2c657b7fd7bf29"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_primitive_private_access.html#a8dc6964a05f52fd69c2c657b7fd7bf29">moonray::geom::internal::PrimitivePrivateAccess::transformPrimitive</a></div><div class="ttdeci">static void transformPrimitive(geom::Primitive *handle, const MotionBlurParams &amp;motionBlurParams, const shading::XformSamples &amp;prim2render)</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_private_access_8h_source.html#l00024">PrimitivePrivateAccess.h:24</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_afd7055366476bf0667f97770c153337c"><div class="ttname"><a href="namespacemoonray_1_1geom.html#afd7055366476bf0667f97770c153337c">moonray::geom::concatenate</a></div><div class="ttdeci">finline shading::XformSamples concatenate(const shading::XformSamples &amp;xformA, const shading::XformSamples &amp;xformB)</div><div class="ttdoc">helpter function that concatenate two shading::XformSamples</div><div class="ttdef"><b>Definition:</b> <a href="_api_8h_source.html#l00088">Api.h:88</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_ac42657410f98444ece5b9a1b39839f4e"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">moonray::shading::XformSamples</a></div><div class="ttdeci">std::vector&lt; scene_rdl2::math::Xform3f &gt; XformSamples</div><div class="ttdef"><b>Definition:</b> <a href="_xform_8h_source.html#l00024">Xform.h:24</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad04d2b28ba0c1f0a7d35fc6f76fdb06d" name="ad04d2b28ba0c1f0a7d35fc6f76fdb06d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad04d2b28ba0c1f0a7d35fc6f76fdb06d">&#9670;&#160;</a></span>mImpl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="structmoonray_1_1geom_1_1_transformed_primitive_1_1_impl.html">Impl</a>&gt; moonray::geom::TransformedPrimitive::mImpl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_transformed_primitive_8h_source.html#l00056">56</a> of file <a class="el" href="_transformed_primitive_8h_source.html">TransformedPrimitive.h</a>.</p>
 
 </div>
 </div>
@@ -365,9 +527,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/geom/<a class="el" href="_transformed_primitive_8cc_source.html">TransformedPrimitive.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1_transformed_primitive.html">TransformedPrimitive</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

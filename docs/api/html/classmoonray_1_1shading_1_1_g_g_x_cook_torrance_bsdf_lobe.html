@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_g_g_x_cook_torrance_bsdf_lobe.html">GGXCookTorranceBsdfLobe</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_g_g_x_cook_torrance_bsdf_lobe.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -305,7 +321,13 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_cook_torrance_8cc_source.html#l00407">407</a> of file <a class="el" href="_bsdf_cook_torrance_8cc_source.html">BsdfCookTorrance.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  413</span>                                      :</div>
+<div class="line"><span class="lineno">  414</span>    <a class="code hl_function" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ad523e373c6bb6dce76834b5a8ebe3fd0">CookTorranceBsdfLobe</a>(N, roughness, favg, favgInv,</div>
+<div class="line"><span class="lineno">  415</span>                         etaI, etaT, coupledWithTransmission)</div>
+<div class="line"><span class="lineno">  416</span>{</div>
+<div class="line"><span class="lineno">  417</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_ad523e373c6bb6dce76834b5a8ebe3fd0"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#ad523e373c6bb6dce76834b5a8ebe3fd0">moonray::shading::CookTorranceBsdfLobe::CookTorranceBsdfLobe</a></div><div class="ttdeci">CookTorranceBsdfLobe(const scene_rdl2::math::Vec3f &amp;N, float roughness, const scene_rdl2::math::Color &amp;favg=scene_rdl2::math::sBlack, const scene_rdl2::math::Color &amp;favgInv=scene_rdl2::math::sBlack, float etaI=1.0f, float etaT=1.5f, bool coupledWithTransmission=false)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8cc_source.html#l00057">BsdfCookTorrance.cc:57</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2fd4721f4378545e866cd37027f902d6" name="a2fd4721f4378545e866cd37027f902d6"></a>
@@ -332,7 +354,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_cook_torrance_8h_source.html#l00256">256</a> of file <a class="el" href="_bsdf_cook_torrance_8h_source.html">BsdfCookTorrance.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  256</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -609,7 +632,25 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented in <a class="el" href="classmoonray_1_1shading_1_1_glitter_g_g_x_cook_torrance_bsdf_lobe.html#a5abf01e13e4c291b645fa0be816eaee0">moonray::shading::GlitterGGXCookTorranceBsdfLobe</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_cook_torrance_8h_source.html#l00273">273</a> of file <a class="el" href="_bsdf_cook_torrance_8h_source.html">BsdfCookTorrance.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  274</span>    {</div>
+<div class="line"><span class="lineno">  275</span>        <span class="keyword">const</span> scene_rdl2::math::Color&amp; scale = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aec44d64391394390189c9f6bbc42f671">getScale</a>();</div>
+<div class="line"><span class="lineno">  276</span>        <span class="keyword">const</span> scene_rdl2::math::Vec3f&amp; N = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4aac90db9119907cf7cbab09d66d689b">mFrame</a>.getN();</div>
+<div class="line"><span class="lineno">  277</span>        <span class="keyword">const</span> Fresnel * fresnel = <a class="code hl_function" href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">getFresnel</a>();</div>
+<div class="line"><span class="lineno">  278</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;[GGXCookTorranceBsdfLobe]\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  279</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;scale: &quot;</span></div>
+<div class="line"><span class="lineno">  280</span>            &lt;&lt; scale.r &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; scale.g &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; scale.b &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  281</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;N: &quot;</span></div>
+<div class="line"><span class="lineno">  282</span>            &lt;&lt; N.x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; N.y &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; N.z &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  283</span>        os &lt;&lt; indent &lt;&lt; <span class="stringliteral">&quot;    &quot;</span> &lt;&lt; <span class="stringliteral">&quot;roughness^2: &quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aab4d429e3c619864ed411778325a99f9">mRoughness</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  284</span>        <span class="keywordflow">if</span> (fresnel) {</div>
+<div class="line"><span class="lineno">  285</span>            fresnel-&gt;show(os, indent + <span class="stringliteral">&quot;    &quot;</span>);</div>
+<div class="line"><span class="lineno">  286</span>        }</div>
+<div class="line"><span class="lineno">  287</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_a1325952270070249bd3a4197660a1d7b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#a1325952270070249bd3a4197660a1d7b">moonray::shading::BsdfLobe::getFresnel</a></div><div class="ttdeci">finline const Fresnel * getFresnel() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00164">Bsdf.h:164</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_bsdf_lobe_html_aec44d64391394390189c9f6bbc42f671"><div class="ttname"><a href="classmoonray_1_1shading_1_1_bsdf_lobe.html#aec44d64391394390189c9f6bbc42f671">moonray::shading::BsdfLobe::getScale</a></div><div class="ttdeci">finline const scene_rdl2::math::Color &amp; getScale() const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_8h_source.html#l00160">Bsdf.h:160</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_a4aac90db9119907cf7cbab09d66d689b"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#a4aac90db9119907cf7cbab09d66d689b">moonray::shading::CookTorranceBsdfLobe::mFrame</a></div><div class="ttdeci">scene_rdl2::math::ReferenceFrame mFrame</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8h_source.html#l00104">BsdfCookTorrance.h:104</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe_html_aab4d429e3c619864ed411778325a99f9"><div class="ttname"><a href="classmoonray_1_1shading_1_1_cook_torrance_bsdf_lobe.html#aab4d429e3c619864ed411778325a99f9">moonray::shading::CookTorranceBsdfLobe::mRoughness</a></div><div class="ttdeci">float mRoughness</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_cook_torrance_8h_source.html#l00106">BsdfCookTorrance.h:106</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -617,9 +658,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/bsdf/cook_torrance/<a class="el" href="_bsdf_cook_torrance_8cc_source.html">BsdfCookTorrance.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_g_g_x_cook_torrance_bsdf_lobe.html">GGXCookTorranceBsdfLobe</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

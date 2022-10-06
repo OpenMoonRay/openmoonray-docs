@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,6 +43,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('namespacemembers_func_e.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="contents">
 &#160;
 
@@ -48,26 +68,40 @@ $(function() {
 <li>erase()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a4a9032bae9c66eaaab41d832fd14d797">moonray::shading</a></li>
 <li>estimatePixelErrorInternal()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr_1_1_adaptive_n_s.html#a1a3bd380bba48d718911a3d87d0df083">moonray::rndr::AdaptiveNS</a></li>
 <li>estimatePixelErrorInternalDammertz()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr_1_1_adaptive_n_s.html#ad0f3897a624a562882054a2efa7d0734">moonray::rndr::AdaptiveNS</a></li>
+<li>estimateStepCount()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a70b55269afbb66b29d57024d7b4197fa">moonray::pbr</a></li>
+<li>estimateStepCountSubinterval()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a1471a3f68a936b5e3c3f638d1b973a5e">moonray::pbr</a></li>
 <li>eval()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#af1b98a5f2b9237657426943105b571ce">moonray::shading</a></li>
+<li>eval1DRamp()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a31f6603cf2be11d9b81792370e7bb70d">anonymous_namespace{RampControl.cc}</a></li>
+<li>eval2DRamp()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#abbefcc063e6678ce568593f206685b2c">anonymous_namespace{RampControl.cc}</a></li>
 <li>evalAttrBoundFn()&#160;:&#160;<a class="el" href="namespaceispc__dso.html#a09a529afd498dcd08e121610c84d123c">ispc_dso</a></li>
 <li>evalAttrFn()&#160;:&#160;<a class="el" href="namespaceispc__dso.html#ae6a330ffeccc1230b82cb250e328eca4">ispc_dso</a></li>
 <li>evalAttrUnBoundFn()&#160;:&#160;<a class="el" href="namespaceispc__dso.html#aebb90f0988691260b9b209877a920626">ispc_dso</a></li>
 <li>evalColor()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a93484f3bacd9a7874dedf9e211f08757">moonray::shading</a></li>
 <li>evalColorComponent()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a30d815bf5d14efbf369ddb156b85a776">moonray::shading</a></li>
 <li>evalCompFn()&#160;:&#160;<a class="el" href="namespaceispc__dso.html#a54364695769d6b613289e09cb481c8f8">ispc_dso</a></li>
+<li>evalCubicFromWeights()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal.html#ad1c18ad9355e64e5baed60b0195ab738">moonray::geom::internal</a></li>
 <li>evalDisplacementMap()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a2db0fd9f2f648d734695968841201185">moonray::shading</a></li>
 <li>evalFloat()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a31260995e0c0e5a629cad3185e5279d0">moonray::shading</a></li>
-<li>evalFloatWithPreAdd()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a3a469ab2f3050aa2979dea22a1b55cc3">moonray::shading</a></li>
+<li>evalFloatWithPreAdd()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a34130f8337d76a651e20f2f58eb30e4b">moonray::shading</a></li>
+<li>evalFresnel()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a3762a10428d834c48deaf9dfe0c33958">moonray::pbr</a></li>
 <li>evalLightFilterList()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#ae018f87b5532f8df26d2da17ec8a0a5b">moonray::pbr</a></li>
 <li>evalLimitAttributes()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal.html#a49ba2141754fa172529392a55388d45f">moonray::geom::internal</a></li>
 <li>evalLimitSurface()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal.html#a20226c36d6a5f6d7aa4a0d61916c223b">moonray::geom::internal</a></li>
 <li>evalNormal()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a2b70e9438021c52d5d7c6dbe23185c63">moonray::shading</a></li>
 <li>evalNormalBoundFn()&#160;:&#160;<a class="el" href="namespaceispc__dso.html#a3f4b78db33dcf09309fc2138519f0bd2">ispc_dso</a></li>
 <li>evalNormalFn()&#160;:&#160;<a class="el" href="namespaceispc__dso.html#abf9eb9d82cb40a13d388066720e87842">ispc_dso</a></li>
+<li>evalNormalImpl()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_eval_attribute_8cc_03.html#a623b8f8b5ec44c606ce7553e861e931e">moonray::shading::anonymous_namespace{EvalAttribute.cc}</a></li>
 <li>evalNormalUnBoundFn()&#160;:&#160;<a class="el" href="namespaceispc__dso.html#a66d6a5f04a3b707224e95245df503cd3">ispc_dso</a></li>
-<li>evalToonNormal()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#af91ebb816a72a8336a811f2f42eb04fb">moonray::shading</a></li>
+<li>evalSigmaT()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#a2576b83ac8272b62898284bd9351c0a0">moonray::pbr</a></li>
+<li>evalSuperEllipse()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_elliptical_falloff_8cc_03.html#ab865a260f20e31be3a27a4861204997b">moonray::pbr::anonymous_namespace{EllipticalFalloff.cc}</a></li>
+<li>evalToonNormal()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a1a58f8f73b041539bdd82c4b7d406915">moonray::shading</a></li>
+<li>evaluateFourOutputRamp()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#a185948f2733ee516bbd953b100f03f03">anonymous_namespace{RampControl.cc}</a></li>
+<li>evaluateInstanceXform()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03.html#a4d66bdb434c31652283a363fdd81d973">moonray::geom::internal::anonymous_namespace{VolumeAssignmentTable.cc}</a></li>
+<li>evaluateMonotoneSlopes()&#160;:&#160;<a class="el" href="namespaceanonymous__namespace_02_ramp_control_8cc_03.html#ad02fb7f40ce9f57e8257d80fa0798c54">anonymous_namespace{RampControl.cc}</a></li>
 <li>evalVec2f()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a88217e339916922fce9b513ffc8c4015">moonray::shading</a></li>
 <li>evalVec3f()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#a64db3ae6154a43144dbd5bc2134fab1b">moonray::shading</a></li>
+<li>evalVolumeShaders()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#ad795fb3d83e40732edfe178269442327">moonray::pbr</a></li>
+<li>evalWeights()&#160;:&#160;<a class="el" href="namespacemoonray_1_1geom_1_1unittest.html#af239ee7bce1700e53e7ad9f6ead1bb87">moonray::geom::unittest</a></li>
 <li>exists()&#160;:&#160;<a class="el" href="namespaceispc__dso.html#a75420c73064b248effd9f93f44bcf14d">ispc_dso</a></li>
 <li>exponent2Roughness()&#160;:&#160;<a class="el" href="namespacemoonray_1_1shading.html#ad011a4b94df71ef89994669f4cfd8cab">moonray::shading</a></li>
 <li>extractNonUniformScale()&#160;:&#160;<a class="el" href="namespacemoonray_1_1pbr.html#aae11a086ef57ae8665dae490a8e1d62c">moonray::pbr</a></li>
@@ -75,11 +109,15 @@ $(function() {
 <li>extrapolateBufferFastPath()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a309a4c7e53105ff99490027408c6b55a">moonray::rndr</a></li>
 <li>extrapolateBufferWithTileList()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#a1da42ea2b0e48e12f9482157c1acfcbd">moonray::rndr</a></li>
 <li>extrapolateBufferWithViewport()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr.html#af58bbc5b2d111710712a7910d56770c5">moonray::rndr</a></li>
+<li>extrapolatePartialTileV2()&#160;:&#160;<a class="el" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_film_8cc_03.html#ab4502e989fcb0eed89a0f79e1cc61101">moonray::rndr::anonymous_namespace{Film.cc}</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

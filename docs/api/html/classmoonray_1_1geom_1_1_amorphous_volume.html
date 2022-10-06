@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1_amorphous_volume.html">AmorphousVolume</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1_amorphous_volume.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1geom_1_1_amorphous_volume-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::geom::AmorphousVolume Class Reference</div></div>
 </div><!--header-->
@@ -156,6 +174,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6ef8c77ab9e7fd5dcc9a27d645703cd6 inherit pub_methods_classmoonray_1_1geom_1_1_primitive"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the number of motion samples  <a href="classmoonray_1_1geom_1_1_primitive.html#a6ef8c77ab9e7fd5dcc9a27d645703cd6">More...</a><br /></td></tr>
 <tr class="separator:a6ef8c77ab9e7fd5dcc9a27d645703cd6 inherit pub_methods_classmoonray_1_1geom_1_1_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a503cfe223b2a69a2ded77dea6f789e18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">internal::Primitive</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_amorphous_volume.html#a503cfe223b2a69a2ded77dea6f789e18">getPrimitiveImpl</a> () override</td></tr>
+<tr class="separator:a503cfe223b2a69a2ded77dea6f789e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab229903ac75839532b151f2486fbaab2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_amorphous_volume.html#ab229903ac75839532b151f2486fbaab2">transformPrimitive</a> (const <a class="el" href="classmoonray_1_1geom_1_1_motion_blur_params.html">MotionBlurParams</a> &amp;motionBlurParams, const <a class="el" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> &amp;prim2render) override</td></tr>
+<tr class="separator:ab229903ac75839532b151f2486fbaab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad620f6262e52fc642358f78b48a1965f"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structmoonray_1_1geom_1_1_amorphous_volume_1_1_impl.html">Impl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_amorphous_volume.html#ad620f6262e52fc642358f78b48a1965f">mImpl</a></td></tr>
+<tr class="separator:ad620f6262e52fc642358f78b48a1965f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classmoonray_1_1geom_1_1_vdb_volume"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmoonray_1_1geom_1_1_vdb_volume')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmoonray_1_1geom_1_1_vdb_volume.html">moonray::geom::VdbVolume</a></td></tr>
@@ -254,7 +284,16 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_amorphous_volume_8cc_source.html#l00028">28</a> of file <a class="el" href="_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   31</span>                                                                  :</div>
+<div class="line"><span class="lineno">   32</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_amorphous_volume.html#ad620f6262e52fc642358f78b48a1965f">mImpl</a>(fauxstd::make_unique&lt;Impl&gt;(<span class="keyword">new</span> internal::AmorphousVolume(</div>
+<div class="line"><span class="lineno">   33</span>        vdbInitData.mVdbFilePath,</div>
+<div class="line"><span class="lineno">   34</span>        vdbInitData.mDensityGridName,</div>
+<div class="line"><span class="lineno">   35</span>        vdbInitData.mVelocityGridName,</div>
+<div class="line"><span class="lineno">   36</span>        motionBlurParams,</div>
+<div class="line"><span class="lineno">   37</span>        std::move(layerAssignmentId),</div>
+<div class="line"><span class="lineno">   38</span>        std::move(primitiveAttributeTalble)))) {}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_amorphous_volume_html_ad620f6262e52fc642358f78b48a1965f"><div class="ttname"><a href="classmoonray_1_1geom_1_1_amorphous_volume.html#ad620f6262e52fc642358f78b48a1965f">moonray::geom::AmorphousVolume::mImpl</a></div><div class="ttdeci">std::unique_ptr&lt; Impl &gt; mImpl</div><div class="ttdef"><b>Definition:</b> <a href="_amorphous_volume_8h_source.html#l00069">AmorphousVolume.h:69</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af7029a0e357cf66c0621b75c5c2a9940" name="af7029a0e357cf66c0621b75c5c2a9940"></a>
@@ -311,7 +350,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_vdb_volume.html#a6cc21b9342e7e6415761e71b2b29e931">moonray::geom::VdbVolume</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_amorphous_volume_8cc_source.html#l00043">43</a> of file <a class="el" href="_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   44</span>{</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code hl_function" href="classmoonray_1_1geom_1_1_amorphous_volume.html#a9f3cba71edd106d2a736d25a877d3988">AmorphousVolume</a>) + <a class="code hl_variable" href="classmoonray_1_1geom_1_1_amorphous_volume.html#ad620f6262e52fc642358f78b48a1965f">mImpl</a>-&gt;mAmorphousVolume-&gt;getMemory();</div>
+<div class="line"><span class="lineno">   46</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_amorphous_volume_html_a9f3cba71edd106d2a736d25a877d3988"><div class="ttname"><a href="classmoonray_1_1geom_1_1_amorphous_volume.html#a9f3cba71edd106d2a736d25a877d3988">moonray::geom::AmorphousVolume::AmorphousVolume</a></div><div class="ttdeci">AmorphousVolume(const VdbInitData &amp;vdbInitData, const MotionBlurParams &amp;motionBlurParams, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;primitiveAttributeTable)</div><div class="ttdef"><b>Definition:</b> <a href="_amorphous_volume_8cc_source.html#l00028">AmorphousVolume.cc:28</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae8dd8d4826adca44c46acc9cc0efed80" name="ae8dd8d4826adca44c46acc9cc0efed80"></a>
@@ -342,7 +385,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_vdb_volume.html#a8b0093f3a2400613edfa3b24a98dd210">moonray::geom::VdbVolume</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_amorphous_volume_8cc_source.html#l00049">49</a> of file <a class="el" href="_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   50</span>{</div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_amorphous_volume.html#ad620f6262e52fc642358f78b48a1965f">mImpl</a>-&gt;mAmorphousVolume-&gt;getMotionSamplesCount();</div>
+<div class="line"><span class="lineno">   52</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af6e987843ae3e60d3cdd468f9582c3c4" name="af6e987843ae3e60d3cdd468f9582c3c4"></a>
@@ -372,7 +418,43 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_vdb_volume.html#a74ec701c337ae87ae6ec6632a307c17e">moonray::geom::VdbVolume</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_amorphous_volume_8cc_source.html#l00061">61</a> of file <a class="el" href="_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>{</div>
+<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_amorphous_volume.html#ad620f6262e52fc642358f78b48a1965f">mImpl</a>-&gt;mAmorphousVolume-&gt;getName();</div>
+<div class="line"><span class="lineno">   64</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a503cfe223b2a69a2ded77dea6f789e18" name="a503cfe223b2a69a2ded77dea6f789e18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a503cfe223b2a69a2ded77dea6f789e18">&#9670;&#160;</a></span>getPrimitiveImpl()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">internal::Primitive</a> * moonray::geom::AmorphousVolume::getPrimitiveImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section remark"><dt>Remarks</dt><dd>For renderer internal use, procedural should never call this </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_vdb_volume.html#ab3291816f808899a5272fcdca5ab7710">moonray::geom::VdbVolume</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_amorphous_volume_8cc_source.html#l00107">107</a> of file <a class="el" href="_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  108</span>{</div>
+<div class="line"><span class="lineno">  109</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_amorphous_volume.html#ad620f6262e52fc642358f78b48a1965f">mImpl</a>-&gt;mAmorphousVolume.get();</div>
+<div class="line"><span class="lineno">  110</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a745b872edd9733aa33d70003a2e55ae7" name="a745b872edd9733aa33d70003a2e55ae7"></a>
@@ -404,7 +486,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_vdb_volume.html#a5297bd351b6a1d9c6493847402e15dd3">moonray::geom::VdbVolume</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_amorphous_volume_8cc_source.html#l00085">85</a> of file <a class="el" href="_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   86</span>{</div>
+<div class="line"><span class="lineno">   87</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_amorphous_volume.html#ad620f6262e52fc642358f78b48a1965f">mImpl</a>-&gt;mAmorphousVolume-&gt;setEmissionSampleRate(emissionSampleRate);</div>
+<div class="line"><span class="lineno">   88</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a562bbbff29b3dd07be2b4b1a15ef0f5c" name="a562bbbff29b3dd07be2b4b1a15ef0f5c"></a>
@@ -440,7 +525,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_vdb_volume.html#aa7d89a0be63c8273df8e49694d5dbb4a">moonray::geom::VdbVolume</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_amorphous_volume_8cc_source.html#l00067">67</a> of file <a class="el" href="_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   68</span>{</div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_amorphous_volume.html#ad620f6262e52fc642358f78b48a1965f">mImpl</a>-&gt;mAmorphousVolume-&gt;setInterpolation(interpolation);</div>
+<div class="line"><span class="lineno">   70</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6a4c792dd9d9990649ec1b56f54dbc48" name="a6a4c792dd9d9990649ec1b56f54dbc48"></a>
@@ -476,7 +564,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_vdb_volume.html#a9480fe9fc0e8895ea4e1f20e50c7f3c8">moonray::geom::VdbVolume</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_amorphous_volume_8cc_source.html#l00055">55</a> of file <a class="el" href="_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   56</span>{</div>
+<div class="line"><span class="lineno">   57</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_amorphous_volume.html#ad620f6262e52fc642358f78b48a1965f">mImpl</a>-&gt;mAmorphousVolume-&gt;setName(name);</div>
+<div class="line"><span class="lineno">   58</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a84d0b9210cf25913b5e2933edc61bafe" name="a84d0b9210cf25913b5e2933edc61bafe"></a>
@@ -508,7 +599,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_vdb_volume.html#aed49b7eb3f24f1a1100365a2aa484550">moonray::geom::VdbVolume</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_amorphous_volume_8cc_source.html#l00079">79</a> of file <a class="el" href="_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   80</span>{</div>
+<div class="line"><span class="lineno">   81</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_amorphous_volume.html#ad620f6262e52fc642358f78b48a1965f">mImpl</a>-&gt;mAmorphousVolume-&gt;setVelocitySampleRate(velocitySampleRate);</div>
+<div class="line"><span class="lineno">   82</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8f21dc6a6fead19ca77f798b71b4983b" name="a8f21dc6a6fead19ca77f798b71b4983b"></a>
@@ -540,6 +634,87 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_vdb_volume.html#a38a64ed78ccd3e4b66cbbb885fb8fb35">moonray::geom::VdbVolume</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_amorphous_volume_8cc_source.html#l00073">73</a> of file <a class="el" href="_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>{</div>
+<div class="line"><span class="lineno">   75</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_amorphous_volume.html#ad620f6262e52fc642358f78b48a1965f">mImpl</a>-&gt;mAmorphousVolume-&gt;setVelocityScale(velocityScale);</div>
+<div class="line"><span class="lineno">   76</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab229903ac75839532b151f2486fbaab2" name="ab229903ac75839532b151f2486fbaab2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab229903ac75839532b151f2486fbaab2">&#9670;&#160;</a></span>transformPrimitive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::geom::AmorphousVolume::transformPrimitive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1geom_1_1_motion_blur_params.html">MotionBlurParams</a> &amp;&#160;</td>
+          <td class="paramname"><em>motionBlurParams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> &amp;&#160;</td>
+          <td class="paramname"><em>prim2render</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section remark"><dt>Remarks</dt><dd>For renderer internal use, procedural should never call this </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_vdb_volume.html#a082b2cb0f27ebdc10a8aaf7c12821c7f">moonray::geom::VdbVolume</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_amorphous_volume_8cc_source.html#l00091">91</a> of file <a class="el" href="_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>{</div>
+<div class="line"><span class="lineno">   95</span>    <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> p2r = primToRender;</div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">if</span> (p2r.size() == 1) {</div>
+<div class="line"><span class="lineno">   97</span>        p2r.resize(2, p2r[0]);</div>
+<div class="line"><span class="lineno">   98</span>    }</div>
+<div class="line"><span class="lineno">   99</span>    <span class="keywordtype">float</span> shutterOpenDelta = 0.0f, shutterCloseDelta = 0.0f;</div>
+<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">if</span> (motionBlurParams.isMotionBlurOn()) {</div>
+<div class="line"><span class="lineno">  101</span>        motionBlurParams.getMotionBlurDelta(shutterOpenDelta, shutterCloseDelta);</div>
+<div class="line"><span class="lineno">  102</span>    }</div>
+<div class="line"><span class="lineno">  103</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_amorphous_volume.html#ad620f6262e52fc642358f78b48a1965f">mImpl</a>-&gt;mAmorphousVolume-&gt;setTransform(p2r, shutterOpenDelta, shutterCloseDelta);</div>
+<div class="line"><span class="lineno">  104</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_ac42657410f98444ece5b9a1b39839f4e"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">moonray::shading::XformSamples</a></div><div class="ttdeci">std::vector&lt; scene_rdl2::math::Xform3f &gt; XformSamples</div><div class="ttdef"><b>Definition:</b> <a href="_xform_8h_source.html#l00024">Xform.h:24</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad620f6262e52fc642358f78b48a1965f" name="ad620f6262e52fc642358f78b48a1965f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad620f6262e52fc642358f78b48a1965f">&#9670;&#160;</a></span>mImpl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="structmoonray_1_1geom_1_1_amorphous_volume_1_1_impl.html">Impl</a>&gt; moonray::geom::AmorphousVolume::mImpl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_amorphous_volume_8h_source.html#l00069">69</a> of file <a class="el" href="_amorphous_volume_8h_source.html">AmorphousVolume.h</a>.</p>
 
 </div>
 </div>
@@ -548,9 +723,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/geom/<a class="el" href="_amorphous_volume_8cc_source.html">AmorphousVolume.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1_amorphous_volume.html">AmorphousVolume</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

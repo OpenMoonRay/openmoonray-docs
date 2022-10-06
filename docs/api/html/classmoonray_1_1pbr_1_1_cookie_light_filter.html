@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,30 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html">CookieLightFilter</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_cookie_light_filter.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classmoonray_1_1pbr_1_1_cookie_light_filter-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::pbr::CookieLightFilter Class Reference</div></div>
 </div><!--header-->
@@ -113,6 +132,59 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a33c14f5b90b4fcf91c3ea3b665f11d8f inherit pub_static_methods_classmoonray_1_1pbr_1_1_light_filter"><td class="mdescLeft">&#160;</td><td class="mdescRight">HUD validation and type casting.  <a href="classmoonray_1_1pbr_1_1_light_filter.html#a33c14f5b90b4fcf91c3ea3b665f11d8f">More...</a><br /></td></tr>
 <tr class="separator:a33c14f5b90b4fcf91c3ea3b665f11d8f inherit pub_static_methods_classmoonray_1_1pbr_1_1_light_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae4f7e01e495cb3550af534771cae59ce"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Mat4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#ae4f7e01e495cb3550af534771cae59ce">computePerspectiveProjectionMatrix</a> (float t) const</td></tr>
+<tr class="separator:ae4f7e01e495cb3550af534771cae59ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4cafe841f9430bc3d3126298edfa878"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Mat4f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#ab4cafe841f9430bc3d3126298edfa878">computeOrthoProjectionMatrix</a> (float t) const</td></tr>
+<tr class="separator:ab4cafe841f9430bc3d3126298edfa878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2799e4efe4a4d40bee63349779aba6"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a6c2799e4efe4a4d40bee63349779aba6">sampleMapShader</a> (<a class="el" href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html">mcrt_common::ThreadLocalState</a> *tls, const scene_rdl2::math::Vec2f &amp;st) const</td></tr>
+<tr class="separator:a6c2799e4efe4a4d40bee63349779aba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a2997b91aafdcc769304f763c2cdb10fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a2997b91aafdcc769304f763c2cdb10fb">COOKIE_LIGHT_FILTER_MEMBERS</a></td></tr>
+<tr class="separator:a2997b91aafdcc769304f763c2cdb10fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:ad98c877bb376767439ce1fdca81dd2da"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#ad98c877bb376767439ce1fdca81dd2da">sAttributeKeyInitialized</a></td></tr>
+<tr class="separator:ad98c877bb376767439ce1fdca81dd2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f7ef0424786a90a5e6d8f865447375"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::SceneObject * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#af8f7ef0424786a90a5e6d8f865447375">sProjectorKey</a></td></tr>
+<tr class="separator:af8f7ef0424786a90a5e6d8f865447375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b25507b48bb766f2811a107d6a26eff"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Mat4d &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a0b25507b48bb766f2811a107d6a26eff">sProjectorXformKey</a></td></tr>
+<tr class="separator:a0b25507b48bb766f2811a107d6a26eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a349146d0874cb28301f61ace961787d1"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a349146d0874cb28301f61ace961787d1">sProjectorTypeKey</a></td></tr>
+<tr class="separator:a349146d0874cb28301f61ace961787d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a359ec88f6ad8646fcb845dcac0afe84a"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a359ec88f6ad8646fcb845dcac0afe84a">sProjectorFocalKey</a></td></tr>
+<tr class="separator:a359ec88f6ad8646fcb845dcac0afe84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a806471e44e0030f894da53e83590c747"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a806471e44e0030f894da53e83590c747">sProjectorFilmWidthApertureKey</a></td></tr>
+<tr class="separator:a806471e44e0030f894da53e83590c747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bf02c20cb590a855a0968357a301d90"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a2bf02c20cb590a855a0968357a301d90">sProjectorPixelAspectRatioKey</a></td></tr>
+<tr class="separator:a2bf02c20cb590a855a0968357a301d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e9791073c3b629938942d40d587635"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::SceneObject * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#af0e9791073c3b629938942d40d587635">sMapShaderKey</a></td></tr>
+<tr class="separator:af0e9791073c3b629938942d40d587635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46dfd7f78889cb27add9fe39c962eab5"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a46dfd7f78889cb27add9fe39c962eab5">sBlurNearDistanceKey</a></td></tr>
+<tr class="separator:a46dfd7f78889cb27add9fe39c962eab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5581ea51662da4329c8bae69efcab57"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#ab5581ea51662da4329c8bae69efcab57">sBlurMidpointKey</a></td></tr>
+<tr class="separator:ab5581ea51662da4329c8bae69efcab57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb5d77ac796c530433d954b002b6867"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#afeb5d77ac796c530433d954b002b6867">sBlurFarDistanceKey</a></td></tr>
+<tr class="separator:afeb5d77ac796c530433d954b002b6867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f83c49e7ae1566ea1e14092e8ab202"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a95f83c49e7ae1566ea1e14092e8ab202">sBlurNearValueKey</a></td></tr>
+<tr class="separator:a95f83c49e7ae1566ea1e14092e8ab202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362a68d2c9d7a4f6a44555c2e7fb5ee8"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a362a68d2c9d7a4f6a44555c2e7fb5ee8">sBlurMidValueKey</a></td></tr>
+<tr class="separator:a362a68d2c9d7a4f6a44555c2e7fb5ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04848320a8e3f19c7cb0dd9f551a9c6"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#aa04848320a8e3f19c7cb0dd9f551a9c6">sBlurFarValueKey</a></td></tr>
+<tr class="separator:aa04848320a8e3f19c7cb0dd9f551a9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e7071c8f8fc840abab0273dd306bb3a"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a7e7071c8f8fc840abab0273dd306bb3a">sBlurType</a></td></tr>
+<tr class="separator:a7e7071c8f8fc840abab0273dd306bb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102af5284e9ae9ee2f8dd8f4128b67f9"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a102af5284e9ae9ee2f8dd8f4128b67f9">sOutsideProjection</a></td></tr>
+<tr class="separator:a102af5284e9ae9ee2f8dd8f4128b67f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a814ca7e5a3ce5aee4526098674195499"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a814ca7e5a3ce5aee4526098674195499">sDensityKey</a></td></tr>
+<tr class="separator:a814ca7e5a3ce5aee4526098674195499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de16a2cf681b6f654b283ecde420550"><td class="memItemLeft" align="right" valign="top">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a5de16a2cf681b6f654b283ecde420550">sInvertKey</a></td></tr>
+<tr class="separator:a5de16a2cf681b6f654b283ecde420550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classmoonray_1_1pbr_1_1_light_filter"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmoonray_1_1pbr_1_1_light_filter')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classmoonray_1_1pbr_1_1_light_filter.html">moonray::pbr::LightFilter</a></td></tr>
@@ -147,7 +219,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00030">30</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   30</span>: mMapShader(<span class="keyword">nullptr</span>) {}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2af3793ae017579b081fb808bf9b6b66" name="a2af3793ae017579b081fb808bf9b6b66"></a>
@@ -192,7 +265,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00033">33</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -223,7 +297,200 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_light_filter.html#a44353901b3a982582611f624ab49ae8f">moonray::pbr::LightFilter</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html#l00318">318</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html">CookieLightFilter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  319</span>{</div>
+<div class="line"><span class="lineno">  320</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> projectorPos = <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(mProjectorPos[0], mProjectorPos[1], data.time);</div>
+<div class="line"><span class="lineno">  321</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> projectorDir = <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(mProjectorDir[0], mProjectorDir[1], data.time);</div>
+<div class="line"><span class="lineno">  322</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> shadingVec = data.shadingPointPosition - projectorPos;</div>
+<div class="line"><span class="lineno">  323</span> </div>
+<div class="line"><span class="lineno">  324</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(shadingVec, projectorDir) &lt; 0.f) {</div>
+<div class="line"><span class="lineno">  325</span>        <span class="comment">// The shading point is behind the projector.</span></div>
+<div class="line"><span class="lineno">  326</span>        <span class="keywordflow">switch</span> (mOutsideProjection) {</div>
+<div class="line"><span class="lineno">  327</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="_light_filter_8hh.html#acd3fd836fecdcc510b8f02f85cbe6893af77fb67151d0c18d397069ad8c271ba3">BLACK</a>:</div>
+<div class="line"><span class="lineno">  328</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  329</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="_light_filter_8hh.html#acd3fd836fecdcc510b8f02f85cbe6893a283fc479650da98250635b9c3c0e7e50">WHITE</a>:</div>
+<div class="line"><span class="lineno">  330</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  331</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  332</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  333</span>        }</div>
+<div class="line"><span class="lineno">  334</span>    }</div>
+<div class="line"><span class="lineno">  335</span> </div>
+<div class="line"><span class="lineno">  336</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  337</span>}</div>
+<div class="ttc" id="a_light_filter_8hh_html_acd3fd836fecdcc510b8f02f85cbe6893a283fc479650da98250635b9c3c0e7e50"><div class="ttname"><a href="_light_filter_8hh.html#acd3fd836fecdcc510b8f02f85cbe6893a283fc479650da98250635b9c3c0e7e50">WHITE</a></div><div class="ttdeci">@ WHITE</div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8hh_source.html#l00137">LightFilter.hh:137</a></div></div>
+<div class="ttc" id="a_light_filter_8hh_html_acd3fd836fecdcc510b8f02f85cbe6893af77fb67151d0c18d397069ad8c271ba3"><div class="ttname"><a href="_light_filter_8hh.html#acd3fd836fecdcc510b8f02f85cbe6893af77fb67151d0c18d397069ad8c271ba3">BLACK</a></div><div class="ttdeci">@ BLACK</div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8hh_source.html#l00136">LightFilter.hh:136</a></div></div>
+<div class="ttc" id="a_n_point_8h_html_a16747d68c1e06270b0ed335d631b66f3"><div class="ttname"><a href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a></div><div class="ttdeci">float dot(const NPoint&lt; D &gt; &amp;a, const NPoint&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00271">NPoint.h:271</a></div></div>
+<div class="ttc" id="acmd_2point__generation__cmd_2util_8h_html_a29663946660b920710cf69b9bbcf8a7d"><div class="ttname"><a href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a></div><div class="ttdeci">float lerp(float u, float min, float max)</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2point__generation__cmd_2util_8h_source.html#l00044">util.h:44</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6a42ff24a25ed4a4c1096dc49b7f8300"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">moonray::geom::Vec3f</a></div><div class="ttdeci">scene_rdl2::math::Vec3f Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00039">Types.h:39</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab4cafe841f9430bc3d3126298edfa878" name="ab4cafe841f9430bc3d3126298edfa878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4cafe841f9430bc3d3126298edfa878">&#9670;&#160;</a></span>computeOrthoProjectionMatrix()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">math::Mat4f moonray::pbr::CookieLightFilter::computeOrthoProjectionMatrix </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html#l00149">149</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html">CookieLightFilter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  150</span>{</div>
+<div class="line"><span class="lineno">  151</span>    <span class="comment">// Get film-back width (mm)</span></div>
+<div class="line"><span class="lineno">  152</span>    <span class="keywordtype">float</span> filmWidth = mRdlLightFilter-&gt;get(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a806471e44e0030f894da53e83590c747">sProjectorFilmWidthApertureKey</a>);</div>
+<div class="line"><span class="lineno">  153</span>    filmWidth = max(filmWidth, 0.01f);</div>
+<div class="line"><span class="lineno">  154</span>    <span class="keywordtype">float</span> halfFilmWidth = filmWidth * 0.5f;</div>
+<div class="line"><span class="lineno">  155</span> </div>
+<div class="line"><span class="lineno">  156</span>    <span class="comment">// Get near plane</span></div>
+<div class="line"><span class="lineno">  157</span>    <span class="keywordtype">float</span> near = 1.f;</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>    <span class="comment">// Get far plane</span></div>
+<div class="line"><span class="lineno">  160</span>    <span class="keywordtype">float</span> far = 10000.f;</div>
+<div class="line"><span class="lineno">  161</span> </div>
+<div class="line"><span class="lineno">  162</span>    <span class="comment">// Get pixel aspect ratio</span></div>
+<div class="line"><span class="lineno">  163</span>    <span class="keywordtype">float</span> par = mRdlLightFilter-&gt;get(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a2bf02c20cb590a855a0968357a301d90">sProjectorPixelAspectRatioKey</a>);</div>
+<div class="line"><span class="lineno">  164</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(par, 0.0f)) {</div>
+<div class="line"><span class="lineno">  165</span>        par = 1.0f;</div>
+<div class="line"><span class="lineno">  166</span>    }</div>
+<div class="line"><span class="lineno">  167</span> </div>
+<div class="line"><span class="lineno">  168</span>    <span class="comment">// Compute window corners on the near plane</span></div>
+<div class="line"><span class="lineno">  169</span>    <span class="keywordtype">float</span> windowNear[4];</div>
+<div class="line"><span class="lineno">  170</span>    windowNear[0] = (-2.f * halfFilmWidth);</div>
+<div class="line"><span class="lineno">  171</span>    windowNear[1] = (-2.f * halfFilmWidth) / par;</div>
+<div class="line"><span class="lineno">  172</span>    windowNear[2] = (2.f * halfFilmWidth);</div>
+<div class="line"><span class="lineno">  173</span>    windowNear[3] = (2.f * halfFilmWidth) / par;</div>
+<div class="line"><span class="lineno">  174</span> </div>
+<div class="line"><span class="lineno">  175</span>    <span class="comment">// See Appendix C.5 of the SGI Graphics Library Programming Guide</span></div>
+<div class="line"><span class="lineno">  176</span>    <span class="comment">// for format of projection matrix.</span></div>
+<div class="line"><span class="lineno">  177</span>    Mat4f c2s;</div>
+<div class="line"><span class="lineno">  178</span>    c2s[0][0] = 2.0f / (windowNear[2] - windowNear[0]);</div>
+<div class="line"><span class="lineno">  179</span>    c2s[0][1] = 0.0f;</div>
+<div class="line"><span class="lineno">  180</span>    c2s[0][2] = 0.0f;</div>
+<div class="line"><span class="lineno">  181</span>    c2s[0][3] = 0.0f;</div>
+<div class="line"><span class="lineno">  182</span> </div>
+<div class="line"><span class="lineno">  183</span>    c2s[1][0] = 0.0f;</div>
+<div class="line"><span class="lineno">  184</span>    c2s[1][1] = 2.0f / (windowNear[3] - windowNear[1]);</div>
+<div class="line"><span class="lineno">  185</span>    c2s[1][2] = 0.0f;</div>
+<div class="line"><span class="lineno">  186</span>    c2s[1][3] = 0.0f;</div>
+<div class="line"><span class="lineno">  187</span> </div>
+<div class="line"><span class="lineno">  188</span>    c2s[2][0] = 0.0f;</div>
+<div class="line"><span class="lineno">  189</span>    c2s[2][1] = 0.0f;</div>
+<div class="line"><span class="lineno">  190</span>    c2s[2][2] = -2.0f / (far - near);</div>
+<div class="line"><span class="lineno">  191</span>    c2s[2][3] = 0.0f;</div>
+<div class="line"><span class="lineno">  192</span> </div>
+<div class="line"><span class="lineno">  193</span>    c2s[3][0] = -(windowNear[2] + windowNear[0])/(windowNear[2] - windowNear[0]);</div>
+<div class="line"><span class="lineno">  194</span>    c2s[3][1] = -(windowNear[3] + windowNear[1])/(windowNear[3] - windowNear[1]);</div>
+<div class="line"><span class="lineno">  195</span>    c2s[3][2] = -(far + near) / (far - near);</div>
+<div class="line"><span class="lineno">  196</span>    c2s[3][3] = 1.0f;</div>
+<div class="line"><span class="lineno">  197</span> </div>
+<div class="line"><span class="lineno">  198</span>    <span class="keywordflow">return</span> c2s;</div>
+<div class="line"><span class="lineno">  199</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_a2bf02c20cb590a855a0968357a301d90"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a2bf02c20cb590a855a0968357a301d90">moonray::pbr::CookieLightFilter::sProjectorPixelAspectRatioKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sProjectorPixelAspectRatioKey</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00063">CookieLightFilter.h:63</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_a806471e44e0030f894da53e83590c747"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a806471e44e0030f894da53e83590c747">moonray::pbr::CookieLightFilter::sProjectorFilmWidthApertureKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sProjectorFilmWidthApertureKey</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00062">CookieLightFilter.h:62</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_1_1unittest_html_aca9de8dd11f6a3cf125acd13c8b3b636"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">moonray::geom::unittest::isEqual</a></div><div class="ttdeci">__forceinline bool isEqual(const scene_rdl2::math::Color4 &amp;lhs, const scene_rdl2::math::Color4 &amp;rhs)</div><div class="ttdef"><b>Definition:</b> <a href="_test_prim_utils_8h_source.html#l00125">TestPrimUtils.h:125</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae4f7e01e495cb3550af534771cae59ce" name="ae4f7e01e495cb3550af534771cae59ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4f7e01e495cb3550af534771cae59ce">&#9670;&#160;</a></span>computePerspectiveProjectionMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">math::Mat4f moonray::pbr::CookieLightFilter::computePerspectiveProjectionMatrix </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html#l00087">87</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html">CookieLightFilter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>{</div>
+<div class="line"><span class="lineno">   89</span>    <span class="comment">// Get focal length (mm)</span></div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordtype">float</span> focal = mRdlLightFilter-&gt;get(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a359ec88f6ad8646fcb845dcac0afe84a">sProjectorFocalKey</a>, t);</div>
+<div class="line"><span class="lineno">   91</span>    focal = max(focal, 0.1f);</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>    <span class="comment">// Get film-back width (mm)</span></div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordtype">float</span> filmWidth = mRdlLightFilter-&gt;get(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a806471e44e0030f894da53e83590c747">sProjectorFilmWidthApertureKey</a>);</div>
+<div class="line"><span class="lineno">   95</span>    filmWidth = max(filmWidth, 0.01f);</div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordtype">float</span> halfFilmWidth = filmWidth * 0.5f;</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>    <span class="comment">// Get near plane</span></div>
+<div class="line"><span class="lineno">   99</span>    <span class="keywordtype">float</span> near = 1.f;</div>
+<div class="line"><span class="lineno">  100</span> </div>
+<div class="line"><span class="lineno">  101</span>    <span class="comment">// Get far plane</span></div>
+<div class="line"><span class="lineno">  102</span>    <span class="keywordtype">float</span> far = 10000.f;</div>
+<div class="line"><span class="lineno">  103</span> </div>
+<div class="line"><span class="lineno">  104</span>    <span class="comment">// Note that the cookie filter doesn&#39;t clip to near/far planes but reasonable</span></div>
+<div class="line"><span class="lineno">  105</span>    <span class="comment">// defaults need to be specified for the projection matrix to be constructed.</span></div>
+<div class="line"><span class="lineno">  106</span>    <span class="comment">// Other values would also work and produce an equivalent projection.</span></div>
+<div class="line"><span class="lineno">  107</span> </div>
+<div class="line"><span class="lineno">  108</span>    <span class="comment">// Get pixel aspect ratio</span></div>
+<div class="line"><span class="lineno">  109</span>    <span class="keywordtype">float</span> par = mRdlLightFilter-&gt;get(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a2bf02c20cb590a855a0968357a301d90">sProjectorPixelAspectRatioKey</a>);</div>
+<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#aca9de8dd11f6a3cf125acd13c8b3b636">isEqual</a>(par, 0.0f)) {</div>
+<div class="line"><span class="lineno">  111</span>        par = 1.0f;</div>
+<div class="line"><span class="lineno">  112</span>    }</div>
+<div class="line"><span class="lineno">  113</span> </div>
+<div class="line"><span class="lineno">  114</span>    <span class="comment">// Compute window corners on the near plane</span></div>
+<div class="line"><span class="lineno">  115</span>    <span class="keywordtype">float</span> factor = near / focal;</div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordtype">float</span> windowNear[4];</div>
+<div class="line"><span class="lineno">  117</span>    windowNear[0] = (-2.f * halfFilmWidth) * factor;</div>
+<div class="line"><span class="lineno">  118</span>    windowNear[1] = (-2.f * halfFilmWidth) * factor / par;</div>
+<div class="line"><span class="lineno">  119</span>    windowNear[2] = (2.f * halfFilmWidth) * factor;</div>
+<div class="line"><span class="lineno">  120</span>    windowNear[3] = (2.f * halfFilmWidth) * factor / par;</div>
+<div class="line"><span class="lineno">  121</span> </div>
+<div class="line"><span class="lineno">  122</span>    <span class="comment">// See Appendix C.5 of the SGI Graphics Library Programming Guide</span></div>
+<div class="line"><span class="lineno">  123</span>    <span class="comment">// for format of projection matrix.</span></div>
+<div class="line"><span class="lineno">  124</span>    Mat4f c2s;</div>
+<div class="line"><span class="lineno">  125</span>    c2s[0][0] = (2.0f * near) / (windowNear[2] - windowNear[0]);</div>
+<div class="line"><span class="lineno">  126</span>    c2s[0][1] = 0.0f;</div>
+<div class="line"><span class="lineno">  127</span>    c2s[0][2] = 0.0f;</div>
+<div class="line"><span class="lineno">  128</span>    c2s[0][3] = 0.0f;</div>
+<div class="line"><span class="lineno">  129</span> </div>
+<div class="line"><span class="lineno">  130</span>    c2s[1][0] = 0.0f;</div>
+<div class="line"><span class="lineno">  131</span>    c2s[1][1] = (2.0f * near) / (windowNear[3] - windowNear[1]);</div>
+<div class="line"><span class="lineno">  132</span>    c2s[1][2] = 0.0f;</div>
+<div class="line"><span class="lineno">  133</span>    c2s[1][3] = 0.0f;</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>    c2s[2][0] = (windowNear[2] + windowNear[0]) / (windowNear[2] - windowNear[0]);</div>
+<div class="line"><span class="lineno">  136</span>    c2s[2][1] = (windowNear[3] + windowNear[1]) / (windowNear[3] - windowNear[1]);</div>
+<div class="line"><span class="lineno">  137</span>    c2s[2][2] = -(far + near) / (far - near);</div>
+<div class="line"><span class="lineno">  138</span>    c2s[2][3] = -1.0f;</div>
+<div class="line"><span class="lineno">  139</span> </div>
+<div class="line"><span class="lineno">  140</span>    c2s[3][0] = 0.0f;</div>
+<div class="line"><span class="lineno">  141</span>    c2s[3][1] = 0.0f;</div>
+<div class="line"><span class="lineno">  142</span>    c2s[3][2] = -(2.0f * far * near) / (far - near);</div>
+<div class="line"><span class="lineno">  143</span>    c2s[3][3] = 0.0f;</div>
+<div class="line"><span class="lineno">  144</span> </div>
+<div class="line"><span class="lineno">  145</span>    <span class="keywordflow">return</span> c2s;</div>
+<div class="line"><span class="lineno">  146</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_a359ec88f6ad8646fcb845dcac0afe84a"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a359ec88f6ad8646fcb845dcac0afe84a">moonray::pbr::CookieLightFilter::sProjectorFocalKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sProjectorFocalKey</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00061">CookieLightFilter.h:61</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a41d9946b88da548426bae7703bfaf8c5" name="a41d9946b88da548426bae7703bfaf8c5"></a>
@@ -253,7 +520,122 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_light_filter.html#aab1774b386bee309f06bcb1bbf8f57a7">moonray::pbr::LightFilter</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html#l00345">345</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html">CookieLightFilter.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  346</span>{</div>
+<div class="line"><span class="lineno">  347</span>    <span class="keywordflow">if</span> (!mMapShader) {</div>
+<div class="line"><span class="lineno">  348</span>        <span class="keywordflow">return</span> Color(1.f);</div>
+<div class="line"><span class="lineno">  349</span>    }</div>
+<div class="line"><span class="lineno">  350</span> </div>
+<div class="line"><span class="lineno">  351</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> projectorPos = <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(mProjectorPos[0], mProjectorPos[1], data.time);</div>
+<div class="line"><span class="lineno">  352</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> projectorDir = <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(mProjectorDir[0], mProjectorDir[1], data.time);</div>
+<div class="line"><span class="lineno">  353</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> shadingVec = data.shadingPointPosition - projectorPos;</div>
+<div class="line"><span class="lineno">  354</span>    <span class="keywordtype">float</span> distanceToProjector = <a class="code hl_function" href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a>(shadingVec);</div>
+<div class="line"><span class="lineno">  355</span> </div>
+<div class="line"><span class="lineno">  356</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="_n_point_8h.html#a16747d68c1e06270b0ed335d631b66f3">dot</a>(shadingVec, projectorDir) &lt; 0.f) {</div>
+<div class="line"><span class="lineno">  357</span>        <span class="comment">// The shading point is behind the projector, we don&#39;t need to evaluate the</span></div>
+<div class="line"><span class="lineno">  358</span>        <span class="comment">// map shader.</span></div>
+<div class="line"><span class="lineno">  359</span>        <span class="keywordflow">switch</span> (mOutsideProjection) {</div>
+<div class="line"><span class="lineno">  360</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="_light_filter_8hh.html#acd3fd836fecdcc510b8f02f85cbe6893af77fb67151d0c18d397069ad8c271ba3">BLACK</a>:</div>
+<div class="line"><span class="lineno">  361</span>            <span class="keywordflow">return</span> Color(0.f);</div>
+<div class="line"><span class="lineno">  362</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="_light_filter_8hh.html#acd3fd836fecdcc510b8f02f85cbe6893a283fc479650da98250635b9c3c0e7e50">WHITE</a>:</div>
+<div class="line"><span class="lineno">  363</span>            <span class="keywordflow">return</span> Color(1.f);</div>
+<div class="line"><span class="lineno">  364</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  365</span>            <span class="keywordflow">return</span> Color(0.f);</div>
+<div class="line"><span class="lineno">  366</span>        }</div>
+<div class="line"><span class="lineno">  367</span>    }</div>
+<div class="line"><span class="lineno">  368</span> </div>
+<div class="line"><span class="lineno">  369</span>    <span class="comment">// We need the screen space position of the render space point.</span></div>
+<div class="line"><span class="lineno">  370</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> screenP0 = transformH(mProjectorR2S[0], data.shadingPointPosition);</div>
+<div class="line"><span class="lineno">  371</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> screenP1 = transformH(mProjectorR2S[1], data.shadingPointPosition);</div>
+<div class="line"><span class="lineno">  372</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> screenP = <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(screenP0, screenP1, data.time);</div>
+<div class="line"><span class="lineno">  373</span> </div>
+<div class="line"><span class="lineno">  374</span>    <span class="comment">// Right now we are in screen space where (0, 0) is the center of the projection.</span></div>
+<div class="line"><span class="lineno">  375</span>    <span class="comment">// However, for maps, the center is (0.5, 0.5) and we want the map centered</span></div>
+<div class="line"><span class="lineno">  376</span>    <span class="comment">// in the center of the projection.  So we need to add an 0.5 offset.</span></div>
+<div class="line"><span class="lineno">  377</span>    screenP.x += 0.5f;</div>
+<div class="line"><span class="lineno">  378</span>    screenP.y += 0.5f;</div>
+<div class="line"><span class="lineno">  379</span> </div>
+<div class="line"><span class="lineno">  380</span>    <span class="comment">// Based on the distance to the projector, we interpolate the filter radius</span></div>
+<div class="line"><span class="lineno">  381</span>    <span class="comment">// depending on whether it is in the near/mid/far interval.</span></div>
+<div class="line"><span class="lineno">  382</span>    <span class="keywordtype">float</span> filterRadius = 0.f; <span class="comment">// aka blur value</span></div>
+<div class="line"><span class="lineno">  383</span>    <span class="keywordflow">if</span> (distanceToProjector &lt;= mBlurNearDistance) {</div>
+<div class="line"><span class="lineno">  384</span>        filterRadius = mBlurNearValue;</div>
+<div class="line"><span class="lineno">  385</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (distanceToProjector &lt;= mBlurMidpoint) {</div>
+<div class="line"><span class="lineno">  386</span>        <span class="keywordtype">float</span> dt = mBlurMidpoint - mBlurNearDistance;</div>
+<div class="line"><span class="lineno">  387</span>        <span class="keywordflow">if</span> (dt &gt; 0.f) {</div>
+<div class="line"><span class="lineno">  388</span>            <span class="keywordtype">float</span> t = (distanceToProjector - mBlurNearDistance) / dt;</div>
+<div class="line"><span class="lineno">  389</span>            filterRadius = <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(mBlurNearValue, mBlurMidValue, t);</div>
+<div class="line"><span class="lineno">  390</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  391</span>            filterRadius = mBlurMidValue;</div>
+<div class="line"><span class="lineno">  392</span>        }</div>
+<div class="line"><span class="lineno">  393</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (distanceToProjector &lt;= mBlurFarDistance) {</div>
+<div class="line"><span class="lineno">  394</span>        <span class="keywordtype">float</span> dt = mBlurFarDistance - mBlurMidpoint;</div>
+<div class="line"><span class="lineno">  395</span>        <span class="keywordflow">if</span> (dt &gt; 0.f) {</div>
+<div class="line"><span class="lineno">  396</span>            <span class="keywordtype">float</span> t = (distanceToProjector - mBlurMidpoint) / dt;</div>
+<div class="line"><span class="lineno">  397</span>            filterRadius = <a class="code hl_function" href="cmd_2point__generation__cmd_2util_8h.html#a29663946660b920710cf69b9bbcf8a7d">lerp</a>(mBlurMidValue, mBlurFarValue, t);</div>
+<div class="line"><span class="lineno">  398</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  399</span>            filterRadius = mBlurFarValue;</div>
+<div class="line"><span class="lineno">  400</span>        }</div>
+<div class="line"><span class="lineno">  401</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  402</span>        filterRadius = mBlurFarValue;</div>
+<div class="line"><span class="lineno">  403</span>    }</div>
+<div class="line"><span class="lineno">  404</span> </div>
+<div class="line"><span class="lineno">  405</span>    <span class="comment">// Move the screen space position based on random sampling the filter</span></div>
+<div class="line"><span class="lineno">  406</span> </div>
+<div class="line"><span class="lineno">  407</span>    <span class="comment">// Box filter, kept here for debugging.</span></div>
+<div class="line"><span class="lineno">  408</span>    <span class="comment">// Vec2f offset((r.x - 0.5f) * filterRadius, (r.y - 0.5f) * filterRadius;</span></div>
+<div class="line"><span class="lineno">  409</span> </div>
+<div class="line"><span class="lineno">  410</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> offset;</div>
+<div class="line"><span class="lineno">  411</span> </div>
+<div class="line"><span class="lineno">  412</span>    <span class="keywordflow">switch</span> (mBlurType) {</div>
+<div class="line"><span class="lineno">  413</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="_light_filter_8hh.html#af0de02e0762d660ba6d37814ef761665afca8f51c9117fbb492a2184e9df9e412">GAUSSIAN</a>:</div>
+<div class="line"><span class="lineno">  414</span>        <span class="comment">// Quadratic bspline &quot;gaussian&quot; filter, which is the same filter the regular camera uses.</span></div>
+<div class="line"><span class="lineno">  415</span>        offset.x = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5cd1206d0803c2f2c2aee4bbe8c20ed5">quadraticBSplineWarp</a>(data.randVar.r2.x) * filterRadius;</div>
+<div class="line"><span class="lineno">  416</span>        offset.y = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5cd1206d0803c2f2c2aee4bbe8c20ed5">quadraticBSplineWarp</a>(data.randVar.r2.y) * filterRadius;</div>
+<div class="line"><span class="lineno">  417</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  418</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="_light_filter_8hh.html#af0de02e0762d660ba6d37814ef761665a95bcc5e37521c9c82a4c32e2918fdaa1">CIRCULAR</a>:</div>
+<div class="line"><span class="lineno">  419</span>        offset.x = data.randVar.r2.x;</div>
+<div class="line"><span class="lineno">  420</span>        offset.y = data.randVar.r2.y;</div>
+<div class="line"><span class="lineno">  421</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#af07ea04db5c049e31e164223c1e3b8d7">toUnitDisk</a>(offset.x, offset.y);</div>
+<div class="line"><span class="lineno">  422</span>        offset.x *= filterRadius;</div>
+<div class="line"><span class="lineno">  423</span>        offset.y *= filterRadius;</div>
+<div class="line"><span class="lineno">  424</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  425</span>    <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  426</span>        MNRY_ASSERT(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  427</span>    }</div>
+<div class="line"><span class="lineno">  428</span> </div>
+<div class="line"><span class="lineno">  429</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> st(screenP.x + offset.x, screenP.y + offset.y);</div>
+<div class="line"><span class="lineno">  430</span> </div>
+<div class="line"><span class="lineno">  431</span>    <span class="keywordflow">if</span> (st.x &lt; 0.f || st.x &gt; 1.f ||</div>
+<div class="line"><span class="lineno">  432</span>        st.y &lt; 0.f || st.y &gt; 1.f) {</div>
+<div class="line"><span class="lineno">  433</span>        <span class="keywordflow">switch</span> (mOutsideProjection) {</div>
+<div class="line"><span class="lineno">  434</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="_light_filter_8hh.html#acd3fd836fecdcc510b8f02f85cbe6893af77fb67151d0c18d397069ad8c271ba3">BLACK</a>:</div>
+<div class="line"><span class="lineno">  435</span>            <span class="keywordflow">return</span> Color(0.f);</div>
+<div class="line"><span class="lineno">  436</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="_light_filter_8hh.html#acd3fd836fecdcc510b8f02f85cbe6893a283fc479650da98250635b9c3c0e7e50">WHITE</a>:</div>
+<div class="line"><span class="lineno">  437</span>            <span class="keywordflow">return</span> Color(1.f);</div>
+<div class="line"><span class="lineno">  438</span>        }</div>
+<div class="line"><span class="lineno">  439</span>    }</div>
+<div class="line"><span class="lineno">  440</span> </div>
+<div class="line"><span class="lineno">  441</span>    <span class="comment">// Lookup the map value using the displaced screen space position</span></div>
+<div class="line"><span class="lineno">  442</span>    Color mapValue = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a6c2799e4efe4a4d40bee63349779aba6">sampleMapShader</a>(data.tls, st);</div>
+<div class="line"><span class="lineno">  443</span> </div>
+<div class="line"><span class="lineno">  444</span>    <span class="comment">// Apply density scaling to allow partial light filtering</span></div>
+<div class="line"><span class="lineno">  445</span>    mapValue = Color(1.f - mDensity) + mapValue * mDensity;</div>
+<div class="line"><span class="lineno">  446</span> </div>
+<div class="line"><span class="lineno">  447</span>    <span class="comment">// Invert the filter?</span></div>
+<div class="line"><span class="lineno">  448</span>    <span class="keywordflow">if</span> (mInvert) {</div>
+<div class="line"><span class="lineno">  449</span>        mapValue = 1.f - mapValue;</div>
+<div class="line"><span class="lineno">  450</span>    }</div>
+<div class="line"><span class="lineno">  451</span> </div>
+<div class="line"><span class="lineno">  452</span>    <span class="keywordflow">return</span> mapValue;</div>
+<div class="line"><span class="lineno">  453</span>}</div>
+<div class="ttc" id="a_g_p_u_math_8h_html_a25c3c0d490b4f6a95f0595760efbc351"><div class="ttname"><a href="_g_p_u_math_8h.html#a25c3c0d490b4f6a95f0595760efbc351">length</a></div><div class="ttdeci">__host__ __device__ float length(const float3 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00159">GPUMath.h:159</a></div></div>
+<div class="ttc" id="a_light_filter_8hh_html_af0de02e0762d660ba6d37814ef761665a95bcc5e37521c9c82a4c32e2918fdaa1"><div class="ttname"><a href="_light_filter_8hh.html#af0de02e0762d660ba6d37814ef761665a95bcc5e37521c9c82a4c32e2918fdaa1">CIRCULAR</a></div><div class="ttdeci">@ CIRCULAR</div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8hh_source.html#l00132">LightFilter.hh:131</a></div></div>
+<div class="ttc" id="a_light_filter_8hh_html_af0de02e0762d660ba6d37814ef761665afca8f51c9117fbb492a2184e9df9e412"><div class="ttname"><a href="_light_filter_8hh.html#af0de02e0762d660ba6d37814ef761665afca8f51c9117fbb492a2184e9df9e412">GAUSSIAN</a></div><div class="ttdeci">@ GAUSSIAN</div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8hh_source.html#l00130">LightFilter.hh:130</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_a6c2799e4efe4a4d40bee63349779aba6"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a6c2799e4efe4a4d40bee63349779aba6">moonray::pbr::CookieLightFilter::sampleMapShader</a></div><div class="ttdeci">scene_rdl2::math::Color sampleMapShader(mcrt_common::ThreadLocalState *tls, const scene_rdl2::math::Vec2f &amp;st) const</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html#l00456">CookieLightFilter.cc:456</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a8ff976ca38d834d434f1d00f2a03359b"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">moonray::geom::Vec2f</a></div><div class="ttdeci">scene_rdl2::math::Vec2f Vec2f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00038">Types.h:38</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a5cd1206d0803c2f2c2aee4bbe8c20ed5"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a5cd1206d0803c2f2c2aee4bbe8c20ed5">moonray::pbr::quadraticBSplineWarp</a></div><div class="ttdeci">finline float quadraticBSplineWarp(float r)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2core_2util_8h_source.html#l00168">Util.h:168</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_af07ea04db5c049e31e164223c1e3b8d7"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#af07ea04db5c049e31e164223c1e3b8d7">moonray::pbr::toUnitDisk</a></div><div class="ttdeci">finline void toUnitDisk(float &amp;u, float &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2core_2util_8h_source.html#l00102">Util.h:102</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a09889809b3b62aaa373b8e929c8bcb26" name="a09889809b3b62aaa373b8e929c8bcb26"></a>
@@ -301,7 +683,11 @@ Additional Inherited Members</h2></td></tr>
 <p>HUD validation and type casting. </p>
 
 <p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00042">42</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   42</span>                                                {</div>
+<div class="line"><span class="lineno">   43</span>        <a class="code hl_define" href="_light_filter_8hh.html#a6e12ac1e91c0fa7e45bc5723e8f3d6ac">COOKIE_LIGHT_FILTER_VALIDATION</a>;</div>
+<div class="line"><span class="lineno">   44</span>    }</div>
+<div class="ttc" id="a_light_filter_8hh_html_a6e12ac1e91c0fa7e45bc5723e8f3d6ac"><div class="ttname"><a href="_light_filter_8hh.html#a6e12ac1e91c0fa7e45bc5723e8f3d6ac">COOKIE_LIGHT_FILTER_VALIDATION</a></div><div class="ttdeci">#define COOKIE_LIGHT_FILTER_VALIDATION</div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8hh_source.html#l00157">LightFilter.hh:157</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1728ea814262422a5ab001591af5ead0" name="a1728ea814262422a5ab001591af5ead0"></a>
@@ -321,7 +707,53 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html#l00055">55</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html">CookieLightFilter.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   56</span>{</div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#ad98c877bb376767439ce1fdca81dd2da">sAttributeKeyInitialized</a>) {</div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   59</span>    }</div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>    <a class="code hl_define" href="moonray__static__check_8h.html#ae87f12215947fe7d7703094b9fa857a9">MOONRAY_START_NON_THREADSAFE_STATIC_WRITE</a></div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#ad98c877bb376767439ce1fdca81dd2da">sAttributeKeyInitialized</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#af8f7ef0424786a90a5e6d8f865447375">sProjectorKey</a> = sc.getAttributeKey&lt;rdl2::SceneObject*&gt;(<span class="stringliteral">&quot;projector&quot;</span>);</div>
+<div class="line"><span class="lineno">   66</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a0b25507b48bb766f2811a107d6a26eff">sProjectorXformKey</a> = sc.getAttributeKey&lt;rdl2::Mat4d&gt;(<span class="stringliteral">&quot;node_xform&quot;</span>);</div>
+<div class="line"><span class="lineno">   67</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a349146d0874cb28301f61ace961787d1">sProjectorTypeKey</a> = sc.getAttributeKey&lt;rdl2::Int&gt;(<span class="stringliteral">&quot;projector_type&quot;</span>);</div>
+<div class="line"><span class="lineno">   68</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a359ec88f6ad8646fcb845dcac0afe84a">sProjectorFocalKey</a> = sc.getAttributeKey&lt;rdl2::Float&gt;(<span class="stringliteral">&quot;projector_focal&quot;</span>);</div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a806471e44e0030f894da53e83590c747">sProjectorFilmWidthApertureKey</a> = sc.getAttributeKey&lt;rdl2::Float&gt;(<span class="stringliteral">&quot;projector_film_width_aperture&quot;</span>);</div>
+<div class="line"><span class="lineno">   70</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a2bf02c20cb590a855a0968357a301d90">sProjectorPixelAspectRatioKey</a> = sc.getAttributeKey&lt;rdl2::Float&gt;(<span class="stringliteral">&quot;projector_pixel_aspect_ratio&quot;</span>);</div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#af0e9791073c3b629938942d40d587635">sMapShaderKey</a> = sc.getAttributeKey&lt;rdl2::SceneObject *&gt;(<span class="stringliteral">&quot;texture_map&quot;</span>);</div>
+<div class="line"><span class="lineno">   72</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a46dfd7f78889cb27add9fe39c962eab5">sBlurNearDistanceKey</a> = sc.getAttributeKey&lt;rdl2::Float&gt;(<span class="stringliteral">&quot;blur_near_distance&quot;</span>);</div>
+<div class="line"><span class="lineno">   73</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#ab5581ea51662da4329c8bae69efcab57">sBlurMidpointKey</a> = sc.getAttributeKey&lt;rdl2::Float&gt;(<span class="stringliteral">&quot;blur_midpoint&quot;</span>);</div>
+<div class="line"><span class="lineno">   74</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#afeb5d77ac796c530433d954b002b6867">sBlurFarDistanceKey</a> = sc.getAttributeKey&lt;rdl2::Float&gt;(<span class="stringliteral">&quot;blur_far_distance&quot;</span>);</div>
+<div class="line"><span class="lineno">   75</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a95f83c49e7ae1566ea1e14092e8ab202">sBlurNearValueKey</a> = sc.getAttributeKey&lt;rdl2::Float&gt;(<span class="stringliteral">&quot;blur_near_value&quot;</span>);</div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a362a68d2c9d7a4f6a44555c2e7fb5ee8">sBlurMidValueKey</a> = sc.getAttributeKey&lt;rdl2::Float&gt;(<span class="stringliteral">&quot;blur_mid_value&quot;</span>);</div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#aa04848320a8e3f19c7cb0dd9f551a9c6">sBlurFarValueKey</a> = sc.getAttributeKey&lt;rdl2::Float&gt;(<span class="stringliteral">&quot;blur_far_value&quot;</span>);</div>
+<div class="line"><span class="lineno">   78</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a7e7071c8f8fc840abab0273dd306bb3a">sBlurType</a> = sc.getAttributeKey&lt;rdl2::Int&gt;(<span class="stringliteral">&quot;blur_type&quot;</span>);</div>
+<div class="line"><span class="lineno">   79</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a102af5284e9ae9ee2f8dd8f4128b67f9">sOutsideProjection</a> = sc.getAttributeKey&lt;rdl2::Int&gt;(<span class="stringliteral">&quot;outside_projection&quot;</span>);</div>
+<div class="line"><span class="lineno">   80</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a814ca7e5a3ce5aee4526098674195499">sDensityKey</a> = sc.getAttributeKey&lt;rdl2::Float&gt;(<span class="stringliteral">&quot;density&quot;</span>);</div>
+<div class="line"><span class="lineno">   81</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a5de16a2cf681b6f654b283ecde420550">sInvertKey</a> = sc.getAttributeKey&lt;rdl2::Bool&gt;(<span class="stringliteral">&quot;invert&quot;</span>);</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>    <a class="code hl_define" href="moonray__static__check_8h.html#acd5373f1dc116d01f690f774c8d96015">MOONRAY_FINISH_NON_THREADSAFE_STATIC_WRITE</a></div>
+<div class="line"><span class="lineno">   84</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_a0b25507b48bb766f2811a107d6a26eff"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a0b25507b48bb766f2811a107d6a26eff">moonray::pbr::CookieLightFilter::sProjectorXformKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Mat4d &gt; sProjectorXformKey</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00059">CookieLightFilter.h:59</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_a102af5284e9ae9ee2f8dd8f4128b67f9"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a102af5284e9ae9ee2f8dd8f4128b67f9">moonray::pbr::CookieLightFilter::sOutsideProjection</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Int &gt; sOutsideProjection</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00072">CookieLightFilter.h:72</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_a349146d0874cb28301f61ace961787d1"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a349146d0874cb28301f61ace961787d1">moonray::pbr::CookieLightFilter::sProjectorTypeKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Int &gt; sProjectorTypeKey</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00060">CookieLightFilter.h:60</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_a362a68d2c9d7a4f6a44555c2e7fb5ee8"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a362a68d2c9d7a4f6a44555c2e7fb5ee8">moonray::pbr::CookieLightFilter::sBlurMidValueKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sBlurMidValueKey</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00069">CookieLightFilter.h:69</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_a46dfd7f78889cb27add9fe39c962eab5"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a46dfd7f78889cb27add9fe39c962eab5">moonray::pbr::CookieLightFilter::sBlurNearDistanceKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sBlurNearDistanceKey</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00065">CookieLightFilter.h:65</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_a5de16a2cf681b6f654b283ecde420550"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a5de16a2cf681b6f654b283ecde420550">moonray::pbr::CookieLightFilter::sInvertKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Bool &gt; sInvertKey</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00074">CookieLightFilter.h:74</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_a7e7071c8f8fc840abab0273dd306bb3a"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a7e7071c8f8fc840abab0273dd306bb3a">moonray::pbr::CookieLightFilter::sBlurType</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Int &gt; sBlurType</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00071">CookieLightFilter.h:71</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_a814ca7e5a3ce5aee4526098674195499"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a814ca7e5a3ce5aee4526098674195499">moonray::pbr::CookieLightFilter::sDensityKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sDensityKey</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00073">CookieLightFilter.h:73</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_a95f83c49e7ae1566ea1e14092e8ab202"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a95f83c49e7ae1566ea1e14092e8ab202">moonray::pbr::CookieLightFilter::sBlurNearValueKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sBlurNearValueKey</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00068">CookieLightFilter.h:68</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_aa04848320a8e3f19c7cb0dd9f551a9c6"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#aa04848320a8e3f19c7cb0dd9f551a9c6">moonray::pbr::CookieLightFilter::sBlurFarValueKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sBlurFarValueKey</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00070">CookieLightFilter.h:70</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_ab5581ea51662da4329c8bae69efcab57"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#ab5581ea51662da4329c8bae69efcab57">moonray::pbr::CookieLightFilter::sBlurMidpointKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sBlurMidpointKey</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00066">CookieLightFilter.h:66</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_ad98c877bb376767439ce1fdca81dd2da"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#ad98c877bb376767439ce1fdca81dd2da">moonray::pbr::CookieLightFilter::sAttributeKeyInitialized</a></div><div class="ttdeci">static bool sAttributeKeyInitialized</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00057">CookieLightFilter.h:57</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_af0e9791073c3b629938942d40d587635"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#af0e9791073c3b629938942d40d587635">moonray::pbr::CookieLightFilter::sMapShaderKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::SceneObject * &gt; sMapShaderKey</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00064">CookieLightFilter.h:64</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_af8f7ef0424786a90a5e6d8f865447375"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#af8f7ef0424786a90a5e6d8f865447375">moonray::pbr::CookieLightFilter::sProjectorKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::SceneObject * &gt; sProjectorKey</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00058">CookieLightFilter.h:58</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_afeb5d77ac796c530433d954b002b6867"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#afeb5d77ac796c530433d954b002b6867">moonray::pbr::CookieLightFilter::sBlurFarDistanceKey</a></div><div class="ttdeci">static scene_rdl2::rdl2::AttributeKey&lt; scene_rdl2::rdl2::Float &gt; sBlurFarDistanceKey</div><div class="ttdef"><b>Definition:</b> <a href="_cookie_light_filter_8h_source.html#l00067">CookieLightFilter.h:67</a></div></div>
+<div class="ttc" id="amoonray__static__check_8h_html_acd5373f1dc116d01f690f774c8d96015"><div class="ttname"><a href="moonray__static__check_8h.html#acd5373f1dc116d01f690f774c8d96015">MOONRAY_FINISH_NON_THREADSAFE_STATIC_WRITE</a></div><div class="ttdeci">#define MOONRAY_FINISH_NON_THREADSAFE_STATIC_WRITE</div><div class="ttdef"><b>Definition:</b> <a href="moonray__static__check_8h_source.html#l00106">moonray_static_check.h:106</a></div></div>
+<div class="ttc" id="amoonray__static__check_8h_html_ae87f12215947fe7d7703094b9fa857a9"><div class="ttname"><a href="moonray__static__check_8h.html#ae87f12215947fe7d7703094b9fa857a9">MOONRAY_START_NON_THREADSAFE_STATIC_WRITE</a></div><div class="ttdeci">#define MOONRAY_START_NON_THREADSAFE_STATIC_WRITE</div><div class="ttdef"><b>Definition:</b> <a href="moonray__static__check_8h_source.html#l00105">moonray_static_check.h:105</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6cc02d84a90f921bdcc223f03bc2aea9" name="a6cc02d84a90f921bdcc223f03bc2aea9"></a>
@@ -350,7 +782,70 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1pbr_1_1_light_filter.html#a995c8d7a8a3faa827db62b6c04111755">moonray::pbr::LightFilter</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html#l00340">340</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html">CookieLightFilter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  340</span>                                      {</div>
+<div class="line"><span class="lineno">  341</span>    <span class="keywordflow">return</span> mBlurNearValue &gt; 0.f || mBlurMidValue &gt; 0.f || mBlurFarValue &gt; 0.f;</div>
+<div class="line"><span class="lineno">  342</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6c2799e4efe4a4d40bee63349779aba6" name="a6c2799e4efe4a4d40bee63349779aba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c2799e4efe4a4d40bee63349779aba6">&#9670;&#160;</a></span>sampleMapShader()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color moonray::pbr::CookieLightFilter::sampleMapShader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1mcrt__common_1_1_thread_local_state.html">mcrt_common::ThreadLocalState</a> *&#160;</td>
+          <td class="paramname"><em>tls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const scene_rdl2::math::Vec2f &amp;&#160;</td>
+          <td class="paramname"><em>st</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html#l00456">456</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html">CookieLightFilter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  458</span>{</div>
+<div class="line"><span class="lineno">  459</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> p(0.f);</div>
+<div class="line"><span class="lineno">  460</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a6a42ff24a25ed4a4c1096dc49b7f8300">Vec3f</a> n(0.f);</div>
+<div class="line"><span class="lineno">  461</span> </div>
+<div class="line"><span class="lineno">  462</span>    shading::Intersection isect;</div>
+<div class="line"><span class="lineno">  463</span>    isect.initMapEvaluation(&amp;tls-&gt;mArena,</div>
+<div class="line"><span class="lineno">  464</span>                            <span class="keyword">nullptr</span>,  <span class="comment">// attr table</span></div>
+<div class="line"><span class="lineno">  465</span>                            <span class="keyword">nullptr</span>,  <span class="comment">// geom</span></div>
+<div class="line"><span class="lineno">  466</span>                            <span class="keyword">nullptr</span>,  <span class="comment">// layer</span></div>
+<div class="line"><span class="lineno">  467</span>                            0,        <span class="comment">// assignment id</span></div>
+<div class="line"><span class="lineno">  468</span>                            p,</div>
+<div class="line"><span class="lineno">  469</span>                            n,</div>
+<div class="line"><span class="lineno">  470</span>                            0, 0, <span class="comment">// All texture derivatives are set to 0.</span></div>
+<div class="line"><span class="lineno">  471</span>                            st,</div>
+<div class="line"><span class="lineno">  472</span>                            0, 0,</div>
+<div class="line"><span class="lineno">  473</span>                            0, 0);</div>
+<div class="line"><span class="lineno">  474</span> </div>
+<div class="line"><span class="lineno">  475</span>    Color result;</div>
+<div class="line"><span class="lineno">  476</span>    <span class="keyword">const</span> rdl2::Map * map = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>rdl2::Map *<span class="keyword">&gt;</span>(mMapShader);</div>
+<div class="line"><span class="lineno">  477</span>    map-&gt;sample(tls-&gt;mShadingTls.get(), shading::State(&amp;isect), &amp;result);</div>
+<div class="line"><span class="lineno">  478</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  479</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a736b0a105262ba5c96e035d74ef936d9" name="a736b0a105262ba5c96e035d74ef936d9"></a>
@@ -390,6 +885,571 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1pbr_1_1_light_filter.html#a723b9abe2834163fa639744d7cf39f8f">moonray::pbr::LightFilter</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html#l00211">211</a> of file <a class="el" href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html">CookieLightFilter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  213</span>{</div>
+<div class="line"><span class="lineno">  214</span>    <span class="keywordflow">if</span> (!mRdlLightFilter) {</div>
+<div class="line"><span class="lineno">  215</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  216</span>    }</div>
+<div class="line"><span class="lineno">  217</span> </div>
+<div class="line"><span class="lineno">  218</span>    <span class="comment">// Update projector render2Screen.  This transform is the guts of the filter.</span></div>
+<div class="line"><span class="lineno">  219</span>    rdl2::SceneObject* projectorSo = mRdlLightFilter-&gt;get(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#af8f7ef0424786a90a5e6d8f865447375">sProjectorKey</a>);</div>
+<div class="line"><span class="lineno">  220</span>    <span class="keywordflow">if</span> (projectorSo) {</div>
+<div class="line"><span class="lineno">  221</span>        rdl2::Camera *projector = projectorSo-&gt;asA&lt;rdl2::Camera&gt;();</div>
+<div class="line"><span class="lineno">  222</span>        <span class="keywordflow">if</span> (projector != <span class="keyword">nullptr</span> &amp;&amp; projector-&gt;doesSupportProjectionMatrix()) {</div>
+<div class="line"><span class="lineno">  223</span> </div>
+<div class="line"><span class="lineno">  224</span>            Mat4d render2World = world2Render.inverse();</div>
+<div class="line"><span class="lineno">  225</span>            Mat4d projector2World0 = projector-&gt;get(rdl2::Node::sNodeXformKey, 0.0f);</div>
+<div class="line"><span class="lineno">  226</span>            Mat4d projector2World1 = projector-&gt;get(rdl2::Node::sNodeXformKey, 1.0f);</div>
+<div class="line"><span class="lineno">  227</span>            Mat4d world2Projector0 = projector2World0.inverse();</div>
+<div class="line"><span class="lineno">  228</span>            Mat4d world2Projector1 = projector2World1.inverse();</div>
+<div class="line"><span class="lineno">  229</span> </div>
+<div class="line"><span class="lineno">  230</span>            Mat4d projector2Screen = Mat4d(projector-&gt;computeProjectionMatrix(0.f, <span class="comment">// t</span></div>
+<div class="line"><span class="lineno">  231</span>                                                                              {-2.f, -2.f, 2.f, 2.f}, <span class="comment">// window</span></div>
+<div class="line"><span class="lineno">  232</span>                                                                              0.f)); <span class="comment">// interocularOffset</span></div>
+<div class="line"><span class="lineno">  233</span> </div>
+<div class="line"><span class="lineno">  234</span>            mProjectorR2S[0] = Mat4f(render2World * world2Projector0 * projector2Screen);</div>
+<div class="line"><span class="lineno">  235</span>            mProjectorR2S[1] = Mat4f(render2World * world2Projector1 * projector2Screen);</div>
+<div class="line"><span class="lineno">  236</span> </div>
+<div class="line"><span class="lineno">  237</span>            Mat4d projector2Render0 = projector2World0 * world2Render;</div>
+<div class="line"><span class="lineno">  238</span>            Mat4d projector2Render1 = projector2World1 * world2Render;</div>
+<div class="line"><span class="lineno">  239</span>            mProjectorPos[0] = projector2Render0.row3().toVec3();</div>
+<div class="line"><span class="lineno">  240</span>            mProjectorPos[1] = projector2Render1.row3().toVec3();</div>
+<div class="line"><span class="lineno">  241</span>            mProjectorDir[0] = -projector2Render0.row2().toVec3();</div>
+<div class="line"><span class="lineno">  242</span>            mProjectorDir[1] = -projector2Render1.row2().toVec3();</div>
+<div class="line"><span class="lineno">  243</span> </div>
+<div class="line"><span class="lineno">  244</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  245</span>            mRdlLightFilter-&gt;error(<span class="stringliteral">&quot;Projector is invalid or does not have a projection matrix&quot;</span>);</div>
+<div class="line"><span class="lineno">  246</span>            mProjectorR2S[0] = Mat4f(math::one);</div>
+<div class="line"><span class="lineno">  247</span>            mProjectorR2S[1] = Mat4f(math::one);</div>
+<div class="line"><span class="lineno">  248</span>            mProjectorPos[0] = {0.f, 0.f, 0.f};</div>
+<div class="line"><span class="lineno">  249</span>            mProjectorPos[1] = {0.f, 0.f, 0.f};</div>
+<div class="line"><span class="lineno">  250</span>            mProjectorDir[0] = {0.f, 0.f, 1.f};</div>
+<div class="line"><span class="lineno">  251</span>            mProjectorDir[1] = {0.f, 0.f, 1.f};</div>
+<div class="line"><span class="lineno">  252</span>        }</div>
+<div class="line"><span class="lineno">  253</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  254</span>        <span class="comment">// use the projector attributes</span></div>
+<div class="line"><span class="lineno">  255</span>        Mat4d render2World = world2Render.inverse();</div>
+<div class="line"><span class="lineno">  256</span>        Mat4d projector2World0 = mRdlLightFilter-&gt;get(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a0b25507b48bb766f2811a107d6a26eff">sProjectorXformKey</a>, 0.f);</div>
+<div class="line"><span class="lineno">  257</span>        Mat4d projector2World1 = mRdlLightFilter-&gt;get(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a0b25507b48bb766f2811a107d6a26eff">sProjectorXformKey</a>, 1.f);</div>
+<div class="line"><span class="lineno">  258</span> </div>
+<div class="line"><span class="lineno">  259</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacemoonray_1_1pbr.html#ac3b9c7bfb99573f9b4ebb5a9315decd8">isValidXform</a>(projector2World0) || !<a class="code hl_function" href="namespacemoonray_1_1pbr.html#ac3b9c7bfb99573f9b4ebb5a9315decd8">isValidXform</a>(projector2World1)) {</div>
+<div class="line"><span class="lineno">  260</span>            mRdlLightFilter-&gt;error(<span class="stringliteral">&quot;node_xform is invalid&quot;</span>);</div>
+<div class="line"><span class="lineno">  261</span>        }</div>
+<div class="line"><span class="lineno">  262</span> </div>
+<div class="line"><span class="lineno">  263</span>        Mat4d world2Projector0 = projector2World0.inverse();</div>
+<div class="line"><span class="lineno">  264</span>        Mat4d world2Projector1 = projector2World1.inverse();</div>
+<div class="line"><span class="lineno">  265</span> </div>
+<div class="line"><span class="lineno">  266</span>        Mat4d projector2Screen;</div>
+<div class="line"><span class="lineno">  267</span> </div>
+<div class="line"><span class="lineno">  268</span>        <span class="keywordflow">switch</span> (mRdlLightFilter-&gt;get(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a349146d0874cb28301f61ace961787d1">sProjectorTypeKey</a>)) {</div>
+<div class="line"><span class="lineno">  269</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="_light_filter_8hh.html#aac002cfd52adc0305c5b91c57a42dfa2a2c5d7801888c03752f28943ac85d805f">PERSPECTIVE</a>:</div>
+<div class="line"><span class="lineno">  270</span>            projector2Screen = Mat4d(<a class="code hl_function" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#ae4f7e01e495cb3550af534771cae59ce">computePerspectiveProjectionMatrix</a>(0.f));</div>
+<div class="line"><span class="lineno">  271</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  272</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="_light_filter_8hh.html#aac002cfd52adc0305c5b91c57a42dfa2ae7bf29f117630a30ba5ffc75b33ac624">ORTHOGRAPHIC</a>:</div>
+<div class="line"><span class="lineno">  273</span>            projector2Screen = Mat4d(<a class="code hl_function" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#ab4cafe841f9430bc3d3126298edfa878">computeOrthoProjectionMatrix</a>(0.f));</div>
+<div class="line"><span class="lineno">  274</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  275</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  276</span>            MNRY_ASSERT(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  277</span>        }</div>
+<div class="line"><span class="lineno">  278</span> </div>
+<div class="line"><span class="lineno">  279</span>        mProjectorR2S[0] = Mat4f(render2World * world2Projector0 * projector2Screen);</div>
+<div class="line"><span class="lineno">  280</span>        mProjectorR2S[1] = Mat4f(render2World * world2Projector1 * projector2Screen);</div>
+<div class="line"><span class="lineno">  281</span> </div>
+<div class="line"><span class="lineno">  282</span>        Mat4d projector2Render0 = projector2World0 * world2Render;</div>
+<div class="line"><span class="lineno">  283</span>        Mat4d projector2Render1 = projector2World1 * world2Render;</div>
+<div class="line"><span class="lineno">  284</span>        mProjectorPos[0] = projector2Render0.row3().toVec3();</div>
+<div class="line"><span class="lineno">  285</span>        mProjectorPos[1] = projector2Render1.row3().toVec3();</div>
+<div class="line"><span class="lineno">  286</span>        mProjectorDir[0] = -projector2Render0.row2().toVec3();</div>
+<div class="line"><span class="lineno">  287</span>        mProjectorDir[1] = -projector2Render1.row2().toVec3();</div>
+<div class="line"><span class="lineno">  288</span>    }</div>
+<div class="line"><span class="lineno">  289</span> </div>
+<div class="line"><span class="lineno">  290</span>    <span class="comment">// update image map</span></div>
+<div class="line"><span class="lineno">  291</span>    rdl2::SceneObject* mapSo = mRdlLightFilter-&gt;get(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#af0e9791073c3b629938942d40d587635">sMapShaderKey</a>);</div>
+<div class="line"><span class="lineno">  292</span>    <span class="keywordflow">if</span> (mapSo) {</div>
+<div class="line"><span class="lineno">  293</span>        <span class="comment">// ispc ptr is int64</span></div>
+<div class="line"><span class="lineno">  294</span>        mMapShader = (<span class="keyword">const</span> int64_t *) mapSo-&gt;asA&lt;rdl2::Map&gt;();</div>
+<div class="line"><span class="lineno">  295</span>        <span class="keywordflow">if</span> (mMapShader == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  296</span>            mRdlLightFilter-&gt;error(<span class="stringliteral">&quot;Map shader is invalid&quot;</span>);</div>
+<div class="line"><span class="lineno">  297</span>        }</div>
+<div class="line"><span class="lineno">  298</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  299</span>        mRdlLightFilter-&gt;error(<span class="stringliteral">&quot;Map shader does not exist&quot;</span>);</div>
+<div class="line"><span class="lineno">  300</span>        mMapShader = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  301</span>    }</div>
+<div class="line"><span class="lineno">  302</span> </div>
+<div class="line"><span class="lineno">  303</span>    mBlurNearDistance = mRdlLightFilter-&gt;get&lt;rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a46dfd7f78889cb27add9fe39c962eab5">sBlurNearDistanceKey</a>);</div>
+<div class="line"><span class="lineno">  304</span>    mBlurMidpoint = mRdlLightFilter-&gt;get&lt;rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#ab5581ea51662da4329c8bae69efcab57">sBlurMidpointKey</a>);</div>
+<div class="line"><span class="lineno">  305</span>    mBlurFarDistance = mRdlLightFilter-&gt;get&lt;rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#afeb5d77ac796c530433d954b002b6867">sBlurFarDistanceKey</a>);</div>
+<div class="line"><span class="lineno">  306</span>    mBlurNearValue = mRdlLightFilter-&gt;get&lt;rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a95f83c49e7ae1566ea1e14092e8ab202">sBlurNearValueKey</a>);</div>
+<div class="line"><span class="lineno">  307</span>    mBlurMidValue = mRdlLightFilter-&gt;get&lt;rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a362a68d2c9d7a4f6a44555c2e7fb5ee8">sBlurMidValueKey</a>);</div>
+<div class="line"><span class="lineno">  308</span>    mBlurFarValue = mRdlLightFilter-&gt;get&lt;rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#aa04848320a8e3f19c7cb0dd9f551a9c6">sBlurFarValueKey</a>);</div>
+<div class="line"><span class="lineno">  309</span>    mBlurType = mRdlLightFilter-&gt;get&lt;rdl2::Int&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a7e7071c8f8fc840abab0273dd306bb3a">sBlurType</a>);</div>
+<div class="line"><span class="lineno">  310</span> </div>
+<div class="line"><span class="lineno">  311</span>    mOutsideProjection = mRdlLightFilter-&gt;get&lt;rdl2::Int&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a102af5284e9ae9ee2f8dd8f4128b67f9">sOutsideProjection</a>);</div>
+<div class="line"><span class="lineno">  312</span> </div>
+<div class="line"><span class="lineno">  313</span>    mDensity = mRdlLightFilter-&gt;get&lt;rdl2::Float&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a814ca7e5a3ce5aee4526098674195499">sDensityKey</a>);</div>
+<div class="line"><span class="lineno">  314</span>    mInvert = mRdlLightFilter-&gt;get&lt;rdl2::Bool&gt;(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#a5de16a2cf681b6f654b283ecde420550">sInvertKey</a>);</div>
+<div class="line"><span class="lineno">  315</span>}</div>
+<div class="ttc" id="a_light_filter_8hh_html_aac002cfd52adc0305c5b91c57a42dfa2a2c5d7801888c03752f28943ac85d805f"><div class="ttname"><a href="_light_filter_8hh.html#aac002cfd52adc0305c5b91c57a42dfa2a2c5d7801888c03752f28943ac85d805f">PERSPECTIVE</a></div><div class="ttdeci">@ PERSPECTIVE</div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8hh_source.html#l00124">LightFilter.hh:124</a></div></div>
+<div class="ttc" id="a_light_filter_8hh_html_aac002cfd52adc0305c5b91c57a42dfa2ae7bf29f117630a30ba5ffc75b33ac624"><div class="ttname"><a href="_light_filter_8hh.html#aac002cfd52adc0305c5b91c57a42dfa2ae7bf29f117630a30ba5ffc75b33ac624">ORTHOGRAPHIC</a></div><div class="ttdeci">@ ORTHOGRAPHIC</div><div class="ttdef"><b>Definition:</b> <a href="_light_filter_8hh_source.html#l00126">LightFilter.hh:125</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_ab4cafe841f9430bc3d3126298edfa878"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#ab4cafe841f9430bc3d3126298edfa878">moonray::pbr::CookieLightFilter::computeOrthoProjectionMatrix</a></div><div class="ttdeci">scene_rdl2::math::Mat4f computeOrthoProjectionMatrix(float t) const</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html#l00149">CookieLightFilter.cc:149</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_cookie_light_filter_html_ae4f7e01e495cb3550af534771cae59ce"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_cookie_light_filter.html#ae4f7e01e495cb3550af534771cae59ce">moonray::pbr::CookieLightFilter::computePerspectiveProjectionMatrix</a></div><div class="ttdeci">scene_rdl2::math::Mat4f computePerspectiveProjectionMatrix(float t) const</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html#l00087">CookieLightFilter.cc:87</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_ac3b9c7bfb99573f9b4ebb5a9315decd8"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ac3b9c7bfb99573f9b4ebb5a9315decd8">moonray::pbr::isValidXform</a></div><div class="ttdeci">bool isValidXform(const Mat4d &amp;xf)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html#l00202">CookieLightFilter.cc:202</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2997b91aafdcc769304f763c2cdb10fb" name="a2997b91aafdcc769304f763c2cdb10fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2997b91aafdcc769304f763c2cdb10fb">&#9670;&#160;</a></span>COOKIE_LIGHT_FILTER_MEMBERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moonray::pbr::CookieLightFilter::COOKIE_LIGHT_FILTER_MEMBERS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00055">55</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="ad98c877bb376767439ce1fdca81dd2da" name="ad98c877bb376767439ce1fdca81dd2da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad98c877bb376767439ce1fdca81dd2da">&#9670;&#160;</a></span>sAttributeKeyInitialized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::pbr::CookieLightFilter::sAttributeKeyInitialized</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00057">57</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="afeb5d77ac796c530433d954b002b6867" name="afeb5d77ac796c530433d954b002b6867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb5d77ac796c530433d954b002b6867">&#9670;&#160;</a></span>sBlurFarDistanceKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rdl2::AttributeKey&lt; rdl2::Float &gt; moonray::pbr::CookieLightFilter::sBlurFarDistanceKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00067">67</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="aa04848320a8e3f19c7cb0dd9f551a9c6" name="aa04848320a8e3f19c7cb0dd9f551a9c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa04848320a8e3f19c7cb0dd9f551a9c6">&#9670;&#160;</a></span>sBlurFarValueKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rdl2::AttributeKey&lt; rdl2::Float &gt; moonray::pbr::CookieLightFilter::sBlurFarValueKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00070">70</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="ab5581ea51662da4329c8bae69efcab57" name="ab5581ea51662da4329c8bae69efcab57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5581ea51662da4329c8bae69efcab57">&#9670;&#160;</a></span>sBlurMidpointKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rdl2::AttributeKey&lt; rdl2::Float &gt; moonray::pbr::CookieLightFilter::sBlurMidpointKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00066">66</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a362a68d2c9d7a4f6a44555c2e7fb5ee8" name="a362a68d2c9d7a4f6a44555c2e7fb5ee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a362a68d2c9d7a4f6a44555c2e7fb5ee8">&#9670;&#160;</a></span>sBlurMidValueKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rdl2::AttributeKey&lt; rdl2::Float &gt; moonray::pbr::CookieLightFilter::sBlurMidValueKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00069">69</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a46dfd7f78889cb27add9fe39c962eab5" name="a46dfd7f78889cb27add9fe39c962eab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46dfd7f78889cb27add9fe39c962eab5">&#9670;&#160;</a></span>sBlurNearDistanceKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rdl2::AttributeKey&lt; rdl2::Float &gt; moonray::pbr::CookieLightFilter::sBlurNearDistanceKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00065">65</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a95f83c49e7ae1566ea1e14092e8ab202" name="a95f83c49e7ae1566ea1e14092e8ab202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95f83c49e7ae1566ea1e14092e8ab202">&#9670;&#160;</a></span>sBlurNearValueKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rdl2::AttributeKey&lt; rdl2::Float &gt; moonray::pbr::CookieLightFilter::sBlurNearValueKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00068">68</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a7e7071c8f8fc840abab0273dd306bb3a" name="a7e7071c8f8fc840abab0273dd306bb3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e7071c8f8fc840abab0273dd306bb3a">&#9670;&#160;</a></span>sBlurType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rdl2::AttributeKey&lt; rdl2::Int &gt; moonray::pbr::CookieLightFilter::sBlurType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00071">71</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a814ca7e5a3ce5aee4526098674195499" name="a814ca7e5a3ce5aee4526098674195499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a814ca7e5a3ce5aee4526098674195499">&#9670;&#160;</a></span>sDensityKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rdl2::AttributeKey&lt; rdl2::Float &gt; moonray::pbr::CookieLightFilter::sDensityKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00073">73</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a5de16a2cf681b6f654b283ecde420550" name="a5de16a2cf681b6f654b283ecde420550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5de16a2cf681b6f654b283ecde420550">&#9670;&#160;</a></span>sInvertKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rdl2::AttributeKey&lt; rdl2::Bool &gt; moonray::pbr::CookieLightFilter::sInvertKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00074">74</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="af0e9791073c3b629938942d40d587635" name="af0e9791073c3b629938942d40d587635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0e9791073c3b629938942d40d587635">&#9670;&#160;</a></span>sMapShaderKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rdl2::AttributeKey&lt; rdl2::SceneObject * &gt; moonray::pbr::CookieLightFilter::sMapShaderKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00064">64</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a102af5284e9ae9ee2f8dd8f4128b67f9" name="a102af5284e9ae9ee2f8dd8f4128b67f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102af5284e9ae9ee2f8dd8f4128b67f9">&#9670;&#160;</a></span>sOutsideProjection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rdl2::AttributeKey&lt; rdl2::Int &gt; moonray::pbr::CookieLightFilter::sOutsideProjection</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00072">72</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a806471e44e0030f894da53e83590c747" name="a806471e44e0030f894da53e83590c747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a806471e44e0030f894da53e83590c747">&#9670;&#160;</a></span>sProjectorFilmWidthApertureKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rdl2::AttributeKey&lt; rdl2::Float &gt; moonray::pbr::CookieLightFilter::sProjectorFilmWidthApertureKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00062">62</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a359ec88f6ad8646fcb845dcac0afe84a" name="a359ec88f6ad8646fcb845dcac0afe84a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a359ec88f6ad8646fcb845dcac0afe84a">&#9670;&#160;</a></span>sProjectorFocalKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rdl2::AttributeKey&lt; rdl2::Float &gt; moonray::pbr::CookieLightFilter::sProjectorFocalKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00061">61</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="af8f7ef0424786a90a5e6d8f865447375" name="af8f7ef0424786a90a5e6d8f865447375"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8f7ef0424786a90a5e6d8f865447375">&#9670;&#160;</a></span>sProjectorKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rdl2::AttributeKey&lt; rdl2::SceneObject * &gt; moonray::pbr::CookieLightFilter::sProjectorKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00058">58</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a2bf02c20cb590a855a0968357a301d90" name="a2bf02c20cb590a855a0968357a301d90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bf02c20cb590a855a0968357a301d90">&#9670;&#160;</a></span>sProjectorPixelAspectRatioKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rdl2::AttributeKey&lt; rdl2::Float &gt; moonray::pbr::CookieLightFilter::sProjectorPixelAspectRatioKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00063">63</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a349146d0874cb28301f61ace961787d1" name="a349146d0874cb28301f61ace961787d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a349146d0874cb28301f61ace961787d1">&#9670;&#160;</a></span>sProjectorTypeKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rdl2::AttributeKey&lt; rdl2::Int &gt; moonray::pbr::CookieLightFilter::sProjectorTypeKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00060">60</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a0b25507b48bb766f2811a107d6a26eff" name="a0b25507b48bb766f2811a107d6a26eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b25507b48bb766f2811a107d6a26eff">&#9670;&#160;</a></span>sProjectorXformKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">rdl2::AttributeKey&lt; rdl2::Mat4d &gt; moonray::pbr::CookieLightFilter::sProjectorXformKey</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cookie_light_filter_8h_source.html#l00059">59</a> of file <a class="el" href="_cookie_light_filter_8h_source.html">CookieLightFilter.h</a>.</p>
 
 </div>
 </div>
@@ -398,9 +1458,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/lightfilter/<a class="el" href="lib_2rendering_2pbr_2lightfilter_2_cookie_light_filter_8cc_source.html">CookieLightFilter.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_cookie_light_filter.html">CookieLightFilter</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

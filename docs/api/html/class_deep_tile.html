@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,6 +43,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_deep_tile.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -87,16 +107,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af43abee98b3d933928fa03489c6cff6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fce6e9a89ce36baffb104d6b7a66326"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#a3fce6e9a89ce36baffb104d6b7a66326">setChannels</a> (const <a class="el" href="class_channel_set.html">ChannelSet</a> &amp;<a class="el" href="class_pixel_tile.html#ac5fa8ea854e57ba3e97983cf37573790">channels</a>, bool force=false)</td></tr>
 <tr class="separator:a3fce6e9a89ce36baffb104d6b7a66326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac52031c392840da4003e432226d12b6d"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#ac52031c392840da4003e432226d12b6d">getNumSamplesAt</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const =0</td></tr>
+<tr class="memitem:ac52031c392840da4003e432226d12b6d"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#ac52031c392840da4003e432226d12b6d">getNumSamplesAt</a> (int x, int y) const =0</td></tr>
 <tr class="separator:ac52031c392840da4003e432226d12b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aceb6c014add3fa2972c6a6d77ae5f2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#a5aceb6c014add3fa2972c6a6d77ae5f2">getDeepPixel</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;pixel) const =0</td></tr>
+<tr class="memitem:a5aceb6c014add3fa2972c6a6d77ae5f2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#a5aceb6c014add3fa2972c6a6d77ae5f2">getDeepPixel</a> (int x, int y, OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;pixel) const =0</td></tr>
 <tr class="separator:a5aceb6c014add3fa2972c6a6d77ae5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29bb2414c945322e872df5ce1c561b7e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#a29bb2414c945322e872df5ce1c561b7e">getSampleMetadata</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, size_t sample, OPENDCX_INTERNAL_NAMESPACE::DeepMetadata &amp;metadata) const =0</td></tr>
+<tr class="memitem:a29bb2414c945322e872df5ce1c561b7e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#a29bb2414c945322e872df5ce1c561b7e">getSampleMetadata</a> (int x, int y, size_t <a class="el" href="_attribute_map_8cc.html#ab527eec89029a7b166a67dd899129255">sample</a>, OPENDCX_INTERNAL_NAMESPACE::DeepMetadata &amp;metadata) const =0</td></tr>
 <tr class="separator:a29bb2414c945322e872df5ce1c561b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a796330df2dc4926d7b6b5a496587f3e0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#a796330df2dc4926d7b6b5a496587f3e0">setDeepPixel</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, const OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;pixel)</td></tr>
+<tr class="memitem:a796330df2dc4926d7b6b5a496587f3e0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#a796330df2dc4926d7b6b5a496587f3e0">setDeepPixel</a> (int x, int y, const OPENDCX_INTERNAL_NAMESPACE::DeepPixel &amp;pixel)</td></tr>
 <tr class="memdesc:a796330df2dc4926d7b6b5a496587f3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">rst:cpp:end::  <a href="class_deep_tile.html#a796330df2dc4926d7b6b5a496587f3e0">More...</a><br /></td></tr>
 <tr class="separator:a796330df2dc4926d7b6b5a496587f3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebd5d480003bcf1c1867a7c96b538103"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#aebd5d480003bcf1c1867a7c96b538103">clearDeepPixel</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
+<tr class="memitem:aebd5d480003bcf1c1867a7c96b538103"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#aebd5d480003bcf1c1867a7c96b538103">clearDeepPixel</a> (int x, int y)</td></tr>
 <tr class="separator:aebd5d480003bcf1c1867a7c96b538103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2867f69debb70438ed5c4285f8836c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_deep_tile.html#a4539e8412e12ff717d07d9e668db7e63">WriteAccessMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deep_tile.html#ac2867f69debb70438ed5c4285f8836c0">writeAccessMode</a> () const</td></tr>
 <tr class="separator:ac2867f69debb70438ed5c4285f8836c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,7 +140,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a507f65803cc8f8336c67fbc3a62edfcf inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">yAxisUp</a> () const</td></tr>
 <tr class="memdesc:a507f65803cc8f8336c67fbc3a62edfcf inherit pub_methods_class_pixel_tile"><td class="mdescLeft">&#160;</td><td class="mdescRight">rst:cpp:end::  <a href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">More...</a><br /></td></tr>
 <tr class="separator:a507f65803cc8f8336c67fbc3a62edfcf inherit pub_methods_class_pixel_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af02122044a3c48f33dd7e4f64a8b9ae2 inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#af02122044a3c48f33dd7e4f64a8b9ae2">flipY</a> (int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:af02122044a3c48f33dd7e4f64a8b9ae2 inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#af02122044a3c48f33dd7e4f64a8b9ae2">flipY</a> (int y) const</td></tr>
 <tr class="separator:af02122044a3c48f33dd7e4f64a8b9ae2 inherit pub_methods_class_pixel_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1095f25d85ae09786056bfc1c02027b8 inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">IMATH_NAMESPACE::Box2i&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#a1095f25d85ae09786056bfc1c02027b8">flipY</a> (const IMATH_NAMESPACE::Box2i &amp;bbox) const</td></tr>
 <tr class="separator:a1095f25d85ae09786056bfc1c02027b8 inherit pub_methods_class_pixel_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,9 +174,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa504c4c60d6fd599c4cecc79e868526b inherit pub_methods_class_pixel_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49fb0cffaabe236c699ee06920d80c5c inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_channel_alias.html">ChannelAlias</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#a49fb0cffaabe236c699ee06920d80c5c">getChannelAlias</a> (<a class="el" href="_dcx_channel_set_8h.html#a8665befa95324827e51006d78d00cfc2">ChannelIdx</a>) const</td></tr>
 <tr class="separator:a49fb0cffaabe236c699ee06920d80c5c inherit pub_methods_class_pixel_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae07459f132d19d53adca5832c1de81eb inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#ae07459f132d19d53adca5832c1de81eb">isActivePixel</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:ae07459f132d19d53adca5832c1de81eb inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#ae07459f132d19d53adca5832c1de81eb">isActivePixel</a> (int x, int y) const</td></tr>
 <tr class="separator:ae07459f132d19d53adca5832c1de81eb inherit pub_methods_class_pixel_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0cb4b5eb6ba72a62f8d535044d2b8c9 inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#ac0cb4b5eb6ba72a62f8d535044d2b8c9">isInside</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) const</td></tr>
+<tr class="memitem:ac0cb4b5eb6ba72a62f8d535044d2b8c9 inherit pub_methods_class_pixel_tile"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pixel_tile.html#ac0cb4b5eb6ba72a62f8d535044d2b8c9">isInside</a> (int x, int y) const</td></tr>
 <tr class="separator:ac0cb4b5eb6ba72a62f8d535044d2b8c9 inherit pub_methods_class_pixel_tile"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -211,7 +231,17 @@ Protected Attributes</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_tile_8h_source.html#l00095">95</a> of file <a class="el" href="_dcx_deep_tile_8h_source.html">DcxDeepTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   96</span>    {</div>
+<div class="line"><span class="lineno">   97</span>        <a class="code hl_enumvalue" href="class_deep_tile.html#a4539e8412e12ff717d07d9e668db7e63aa278d6a241b138eb8f86582c05047da4">WRITE_DISABLED</a>,         <span class="comment">// Cannot write to this tile</span></div>
+<div class="line"><span class="lineno">   98</span>        <a class="code hl_enumvalue" href="class_deep_tile.html#a4539e8412e12ff717d07d9e668db7e63adcc2bac78f8a3ae18cd8073cb3ca757d">WRITE_RANDOM</a>,           <span class="comment">// Any x,y pixel can be written to randomly</span></div>
+<div class="line"><span class="lineno">   99</span>        <a class="code hl_enumvalue" href="class_deep_tile.html#a4539e8412e12ff717d07d9e668db7e63ae5e1c9aa51ac6dd2a88c49214be29f95">WRITE_RANDOM_SCANLINE</a>,  <span class="comment">// Scanlines can be written randomly but pixels must be written in order (x argument ignored)</span></div>
+<div class="line"><span class="lineno">  100</span>        <a class="code hl_enumvalue" href="class_deep_tile.html#a4539e8412e12ff717d07d9e668db7e63a938220f55296bfcb2e1703647fbcc7cb">WRITE_SEQUENTIAL</a>        <span class="comment">// Entire tile must be written in sequential order (x &amp; y arguments ignored)</span></div>
+<div class="line"><span class="lineno">  101</span>    };</div>
+<div class="ttc" id="aclass_deep_tile_html_a4539e8412e12ff717d07d9e668db7e63a938220f55296bfcb2e1703647fbcc7cb"><div class="ttname"><a href="class_deep_tile.html#a4539e8412e12ff717d07d9e668db7e63a938220f55296bfcb2e1703647fbcc7cb">DeepTile::WRITE_SEQUENTIAL</a></div><div class="ttdeci">@ WRITE_SEQUENTIAL</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_tile_8h_source.html#l00101">DcxDeepTile.h:100</a></div></div>
+<div class="ttc" id="aclass_deep_tile_html_a4539e8412e12ff717d07d9e668db7e63aa278d6a241b138eb8f86582c05047da4"><div class="ttname"><a href="class_deep_tile.html#a4539e8412e12ff717d07d9e668db7e63aa278d6a241b138eb8f86582c05047da4">DeepTile::WRITE_DISABLED</a></div><div class="ttdeci">@ WRITE_DISABLED</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_tile_8h_source.html#l00097">DcxDeepTile.h:97</a></div></div>
+<div class="ttc" id="aclass_deep_tile_html_a4539e8412e12ff717d07d9e668db7e63adcc2bac78f8a3ae18cd8073cb3ca757d"><div class="ttname"><a href="class_deep_tile.html#a4539e8412e12ff717d07d9e668db7e63adcc2bac78f8a3ae18cd8073cb3ca757d">DeepTile::WRITE_RANDOM</a></div><div class="ttdeci">@ WRITE_RANDOM</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_tile_8h_source.html#l00098">DcxDeepTile.h:98</a></div></div>
+<div class="ttc" id="aclass_deep_tile_html_a4539e8412e12ff717d07d9e668db7e63ae5e1c9aa51ac6dd2a88c49214be29f95"><div class="ttname"><a href="class_deep_tile.html#a4539e8412e12ff717d07d9e668db7e63ae5e1c9aa51ac6dd2a88c49214be29f95">DeepTile::WRITE_RANDOM_SCANLINE</a></div><div class="ttdeci">@ WRITE_RANDOM_SCANLINE</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_tile_8h_source.html#l00099">DcxDeepTile.h:99</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -248,7 +278,20 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_tile_8cpp_source.html#l00045">45</a> of file <a class="el" href="_dcx_deep_tile_8cpp_source.html">DcxDeepTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   47</span>                                  :</div>
+<div class="line"><span class="lineno">   48</span>    <a class="code hl_class" href="class_pixel_tile.html">PixelTile</a>(channel_ctx,</div>
+<div class="line"><span class="lineno">   49</span>              <a class="code hl_function" href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">yAxisUp</a>),</div>
+<div class="line"><span class="lineno">   50</span>    <a class="code hl_variable" href="class_deep_tile.html#a33b4b15654149a28754ac09f6b3c0d59">m_write_access_mode</a>(write_access_mode),</div>
+<div class="line"><span class="lineno">   51</span>    <a class="code hl_variable" href="class_deep_tile.html#a1f517da20d9b9b1ebc0f8e43d3f67b12">m_flags_channel</a>(OPENDCX_INTERNAL_NAMESPACE::Chan_Invalid)</div>
+<div class="line"><span class="lineno">   52</span>{</div>
+<div class="line"><span class="lineno">   53</span>    <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[0] = <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[1] = OPENDCX_INTERNAL_NAMESPACE::Chan_Invalid;</div>
+<div class="line"><span class="lineno">   54</span>}</div>
+<div class="ttc" id="aclass_deep_tile_html_a1f517da20d9b9b1ebc0f8e43d3f67b12"><div class="ttname"><a href="class_deep_tile.html#a1f517da20d9b9b1ebc0f8e43d3f67b12">DeepTile::m_flags_channel</a></div><div class="ttdeci">OPENDCX_INTERNAL_NAMESPACE::ChannelIdx m_flags_channel</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_tile_8h_source.html#l00237">DcxDeepTile.h:237</a></div></div>
+<div class="ttc" id="aclass_deep_tile_html_a33b4b15654149a28754ac09f6b3c0d59"><div class="ttname"><a href="class_deep_tile.html#a33b4b15654149a28754ac09f6b3c0d59">DeepTile::m_write_access_mode</a></div><div class="ttdeci">WriteAccessMode m_write_access_mode</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_tile_8h_source.html#l00235">DcxDeepTile.h:235</a></div></div>
+<div class="ttc" id="aclass_deep_tile_html_a51298ef272e417eba547af1577dd1102"><div class="ttname"><a href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">DeepTile::m_spmask_channel</a></div><div class="ttdeci">OPENDCX_INTERNAL_NAMESPACE::ChannelIdx m_spmask_channel[2]</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_deep_tile_8h_source.html#l00236">DcxDeepTile.h:236</a></div></div>
+<div class="ttc" id="aclass_pixel_tile_html"><div class="ttname"><a href="class_pixel_tile.html">PixelTile</a></div><div class="ttdoc">rst:cpp:begin::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00081">DcxPixelTile.h:82</a></div></div>
+<div class="ttc" id="aclass_pixel_tile_html_a507f65803cc8f8336c67fbc3a62edfcf"><div class="ttname"><a href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">PixelTile::yAxisUp</a></div><div class="ttdeci">bool yAxisUp() const</div><div class="ttdoc">rst:cpp:end::</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00245">DcxPixelTile.h:245</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac83cbbfdb60042cc3e552d68f4be9fec" name="ac83cbbfdb60042cc3e552d68f4be9fec"></a>
@@ -290,7 +333,16 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_tile_8cpp_source.html#l00056">56</a> of file <a class="el" href="_dcx_deep_tile_8cpp_source.html">DcxDeepTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   59</span>                                  :</div>
+<div class="line"><span class="lineno">   60</span>    <a class="code hl_class" href="class_pixel_tile.html">PixelTile</a>(header,</div>
+<div class="line"><span class="lineno">   61</span>              channel_ctx,</div>
+<div class="line"><span class="lineno">   62</span>              <a class="code hl_function" href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">yAxisUp</a>),</div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_variable" href="class_deep_tile.html#a33b4b15654149a28754ac09f6b3c0d59">m_write_access_mode</a>(write_access_mode),</div>
+<div class="line"><span class="lineno">   64</span>    <a class="code hl_variable" href="class_deep_tile.html#a1f517da20d9b9b1ebc0f8e43d3f67b12">m_flags_channel</a>(OPENDCX_INTERNAL_NAMESPACE::Chan_Invalid)</div>
+<div class="line"><span class="lineno">   65</span>{</div>
+<div class="line"><span class="lineno">   66</span>    <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[0] = <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[1] = OPENDCX_INTERNAL_NAMESPACE::Chan_Invalid;</div>
+<div class="line"><span class="lineno">   67</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8a47fe73c92ed5621b70795470d78c9c" name="a8a47fe73c92ed5621b70795470d78c9c"></a>
@@ -350,7 +402,20 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_tile_8cpp_source.html#l00069">69</a> of file <a class="el" href="_dcx_deep_tile_8cpp_source.html">DcxDeepTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   75</span>                                  :</div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_class" href="class_pixel_tile.html">PixelTile</a>(display_window,</div>
+<div class="line"><span class="lineno">   77</span>              data_window,</div>
+<div class="line"><span class="lineno">   78</span>              sourceWindowsYup,</div>
+<div class="line"><span class="lineno">   79</span>              <a class="code hl_function" href="class_pixel_tile.html#ac5fa8ea854e57ba3e97983cf37573790">channels</a>,</div>
+<div class="line"><span class="lineno">   80</span>              channel_ctx,</div>
+<div class="line"><span class="lineno">   81</span>              <a class="code hl_function" href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">yAxisUp</a>),</div>
+<div class="line"><span class="lineno">   82</span>    <a class="code hl_variable" href="class_deep_tile.html#a33b4b15654149a28754ac09f6b3c0d59">m_write_access_mode</a>(write_access_mode),</div>
+<div class="line"><span class="lineno">   83</span>    <a class="code hl_variable" href="class_deep_tile.html#a1f517da20d9b9b1ebc0f8e43d3f67b12">m_flags_channel</a>(OPENDCX_INTERNAL_NAMESPACE::Chan_Invalid)</div>
+<div class="line"><span class="lineno">   84</span>{</div>
+<div class="line"><span class="lineno">   85</span>    <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[0] = <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[1] = OPENDCX_INTERNAL_NAMESPACE::Chan_Invalid;</div>
+<div class="line"><span class="lineno">   86</span>}</div>
+<div class="ttc" id="aclass_pixel_tile_html_ac5fa8ea854e57ba3e97983cf37573790"><div class="ttname"><a href="class_pixel_tile.html#ac5fa8ea854e57ba3e97983cf37573790">PixelTile::channels</a></div><div class="ttdeci">const OPENDCX_INTERNAL_NAMESPACE::ChannelSet &amp; channels() const</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8h_source.html#l00255">DcxPixelTile.h:255</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="af43abee98b3d933928fa03489c6cff6b" name="af43abee98b3d933928fa03489c6cff6b"></a>
@@ -410,7 +475,19 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_tile_8cpp_source.html#l00088">88</a> of file <a class="el" href="_dcx_deep_tile_8cpp_source.html">DcxDeepTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   94</span>                                  :</div>
+<div class="line"><span class="lineno">   95</span>    <a class="code hl_class" href="class_pixel_tile.html">PixelTile</a>(data_window,</div>
+<div class="line"><span class="lineno">   96</span>              top_reference,</div>
+<div class="line"><span class="lineno">   97</span>              sourceWindowsYup,</div>
+<div class="line"><span class="lineno">   98</span>              <a class="code hl_function" href="class_pixel_tile.html#ac5fa8ea854e57ba3e97983cf37573790">channels</a>,</div>
+<div class="line"><span class="lineno">   99</span>              channel_ctx,</div>
+<div class="line"><span class="lineno">  100</span>              <a class="code hl_function" href="class_pixel_tile.html#a507f65803cc8f8336c67fbc3a62edfcf">yAxisUp</a>),</div>
+<div class="line"><span class="lineno">  101</span>    <a class="code hl_variable" href="class_deep_tile.html#a33b4b15654149a28754ac09f6b3c0d59">m_write_access_mode</a>(write_access_mode),</div>
+<div class="line"><span class="lineno">  102</span>    <a class="code hl_variable" href="class_deep_tile.html#a1f517da20d9b9b1ebc0f8e43d3f67b12">m_flags_channel</a>(OPENDCX_INTERNAL_NAMESPACE::Chan_Invalid)</div>
+<div class="line"><span class="lineno">  103</span>{</div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[0] = <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[1] = OPENDCX_INTERNAL_NAMESPACE::Chan_Invalid;</div>
+<div class="line"><span class="lineno">  105</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1a6bf79e60f1be81df68659f4454d4ad" name="a1a6bf79e60f1be81df68659f4454d4ad"></a>
@@ -438,7 +515,15 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_tile_8cpp_source.html#l00107">107</a> of file <a class="el" href="_dcx_deep_tile_8cpp_source.html">DcxDeepTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  107</span>                                     :</div>
+<div class="line"><span class="lineno">  108</span>    <a class="code hl_class" href="class_pixel_tile.html">PixelTile</a>(b),</div>
+<div class="line"><span class="lineno">  109</span>    <a class="code hl_variable" href="class_deep_tile.html#a33b4b15654149a28754ac09f6b3c0d59">m_write_access_mode</a>(b.<a class="code hl_variable" href="class_deep_tile.html#a33b4b15654149a28754ac09f6b3c0d59">m_write_access_mode</a>),</div>
+<div class="line"><span class="lineno">  110</span>    <a class="code hl_variable" href="class_deep_tile.html#a1f517da20d9b9b1ebc0f8e43d3f67b12">m_flags_channel</a>(b.<a class="code hl_variable" href="class_deep_tile.html#a1f517da20d9b9b1ebc0f8e43d3f67b12">m_flags_channel</a>)</div>
+<div class="line"><span class="lineno">  111</span>{</div>
+<div class="line"><span class="lineno">  112</span>    <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[0] = b.<a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[0];</div>
+<div class="line"><span class="lineno">  113</span>    <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[1] = b.<a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[1];</div>
+<div class="line"><span class="lineno">  114</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -479,7 +564,8 @@ Protected Attributes</h2></td></tr>
 <p>Reimplemented in <a class="el" href="class_deep_image_output_tile.html#aa955bfa4554438809d0b6a959b75aa41">DeepImageOutputTile</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_tile_8h_source.html#l00251">251</a> of file <a class="el" href="_dcx_deep_tile_8h_source.html">DcxDeepTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  251</span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5aceb6c014add3fa2972c6a6d77ae5f2" name="a5aceb6c014add3fa2972c6a6d77ae5f2"></a>
@@ -638,7 +724,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_tile_8h_source.html#l00257">257</a> of file <a class="el" href="_dcx_deep_tile_8h_source.html">DcxDeepTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  257</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_deep_tile.html#a1f517da20d9b9b1ebc0f8e43d3f67b12">m_flags_channel</a> != OPENDCX_INTERNAL_NAMESPACE::Chan_Invalid); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aec4b314a47d4ec3b1aceb1dfde86a882" name="aec4b314a47d4ec3b1aceb1dfde86a882"></a>
@@ -665,7 +752,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_tile_8h_source.html#l00256">256</a> of file <a class="el" href="_dcx_deep_tile_8h_source.html">DcxDeepTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  256</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[0] != OPENDCX_INTERNAL_NAMESPACE::Chan_Invalid &amp;&amp; <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[1] != OPENDCX_INTERNAL_NAMESPACE::Chan_Invalid); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3fce6e9a89ce36baffb104d6b7a66326" name="a3fce6e9a89ce36baffb104d6b7a66326"></a>
@@ -705,7 +793,28 @@ Protected Attributes</h2></td></tr>
 <p>Reimplemented from <a class="el" href="class_pixel_tile.html#a740495fe0beb1f940dae87a1833d2edd">PixelTile</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_tile_8cpp_source.html#l00119">119</a> of file <a class="el" href="_dcx_deep_tile_8cpp_source.html">DcxDeepTile.cpp</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  121</span>{</div>
+<div class="line"><span class="lineno">  122</span>    <a class="code hl_function" href="class_pixel_tile.html#a740495fe0beb1f940dae87a1833d2edd">PixelTile::setChannels</a>(<a class="code hl_function" href="class_pixel_tile.html#ac5fa8ea854e57ba3e97983cf37573790">channels</a>, force);</div>
+<div class="line"><span class="lineno">  123</span>    <span class="comment">// Get the spmask and flag channel assignments:</span></div>
+<div class="line"><span class="lineno">  124</span>    <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[0] = <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[1] = OPENDCX_INTERNAL_NAMESPACE::Chan_Invalid;</div>
+<div class="line"><span class="lineno">  125</span>    <a class="code hl_variable" href="class_deep_tile.html#a1f517da20d9b9b1ebc0f8e43d3f67b12">m_flags_channel</a> = OPENDCX_INTERNAL_NAMESPACE::Chan_Invalid;</div>
+<div class="line"><span class="lineno">  126</span>    <a class="code hl_define" href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a>(z, <a class="code hl_function" href="class_pixel_tile.html#ac5fa8ea854e57ba3e97983cf37573790">channels</a>)</div>
+<div class="line"><span class="lineno">  127</span>    {</div>
+<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">if</span>      (z == <a class="code hl_variable" href="_dcx_channel_defs_8h.html#a887083c7abc8b4b5630e5c29c465b3ec">Chan_SpBits1</a> &amp;&amp; <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[0] == OPENDCX_INTERNAL_NAMESPACE::Chan_Invalid)</div>
+<div class="line"><span class="lineno">  129</span>            <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[0] = <a class="code hl_variable" href="_dcx_channel_defs_8h.html#a887083c7abc8b4b5630e5c29c465b3ec">Chan_SpBits1</a>;</div>
+<div class="line"><span class="lineno">  130</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (z == <a class="code hl_variable" href="_dcx_channel_defs_8h.html#ad6335da919482b2dd8b4fda813888d3c">Chan_SpBits2</a> &amp;&amp; <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[1] == OPENDCX_INTERNAL_NAMESPACE::Chan_Invalid)</div>
+<div class="line"><span class="lineno">  131</span>            <a class="code hl_variable" href="class_deep_tile.html#a51298ef272e417eba547af1577dd1102">m_spmask_channel</a>[1] = <a class="code hl_variable" href="_dcx_channel_defs_8h.html#ad6335da919482b2dd8b4fda813888d3c">Chan_SpBits2</a>;</div>
+<div class="line"><span class="lineno">  132</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (z == <a class="code hl_variable" href="_dcx_channel_defs_8h.html#af4f527891ae58983eb93a1ea4b85290e">Chan_DeepFlags</a> &amp;&amp; <a class="code hl_variable" href="class_deep_tile.html#a1f517da20d9b9b1ebc0f8e43d3f67b12">m_flags_channel</a> == <a class="code hl_variable" href="_dcx_channel_set_8h.html#a4f56a492fb3b039cc7dfcca31cb92ab7">Chan_Invalid</a>)</div>
+<div class="line"><span class="lineno">  133</span>            <a class="code hl_variable" href="class_deep_tile.html#a1f517da20d9b9b1ebc0f8e43d3f67b12">m_flags_channel</a> = <a class="code hl_variable" href="_dcx_channel_defs_8h.html#af4f527891ae58983eb93a1ea4b85290e">Chan_DeepFlags</a>;</div>
+<div class="line"><span class="lineno">  134</span>    }</div>
+<div class="line"><span class="lineno">  135</span>}</div>
+<div class="ttc" id="a_dcx_channel_defs_8h_html_a887083c7abc8b4b5630e5c29c465b3ec"><div class="ttname"><a href="_dcx_channel_defs_8h.html#a887083c7abc8b4b5630e5c29c465b3ec">Chan_SpBits1</a></div><div class="ttdeci">static const ChannelIdx Chan_SpBits1</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_defs_8h_source.html#l00110">DcxChannelDefs.h:110</a></div></div>
+<div class="ttc" id="a_dcx_channel_defs_8h_html_ad6335da919482b2dd8b4fda813888d3c"><div class="ttname"><a href="_dcx_channel_defs_8h.html#ad6335da919482b2dd8b4fda813888d3c">Chan_SpBits2</a></div><div class="ttdeci">static const ChannelIdx Chan_SpBits2</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_defs_8h_source.html#l00111">DcxChannelDefs.h:111</a></div></div>
+<div class="ttc" id="a_dcx_channel_defs_8h_html_af4f527891ae58983eb93a1ea4b85290e"><div class="ttname"><a href="_dcx_channel_defs_8h.html#af4f527891ae58983eb93a1ea4b85290e">Chan_DeepFlags</a></div><div class="ttdeci">static const ChannelIdx Chan_DeepFlags</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_defs_8h_source.html#l00112">DcxChannelDefs.h:112</a></div></div>
+<div class="ttc" id="a_dcx_channel_set_8h_html_a1a8a3195f4006c505fa4bec8a1c60ae2"><div class="ttname"><a href="_dcx_channel_set_8h.html#a1a8a3195f4006c505fa4bec8a1c60ae2">foreach_channel</a></div><div class="ttdeci">#define foreach_channel(CHAN, CHANNELS)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00312">DcxChannelSet.h:312</a></div></div>
+<div class="ttc" id="a_dcx_channel_set_8h_html_a4f56a492fb3b039cc7dfcca31cb92ab7"><div class="ttname"><a href="_dcx_channel_set_8h.html#a4f56a492fb3b039cc7dfcca31cb92ab7">Chan_Invalid</a></div><div class="ttdeci">static GNU_CONST_DECL ChannelIdx Chan_Invalid</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_channel_set_8h_source.html#l00086">DcxChannelSet.h:86</a></div></div>
+<div class="ttc" id="aclass_pixel_tile_html_a740495fe0beb1f940dae87a1833d2edd"><div class="ttname"><a href="class_pixel_tile.html#a740495fe0beb1f940dae87a1833d2edd">PixelTile::setChannels</a></div><div class="ttdeci">virtual void setChannels(const ChannelSet &amp;, bool force=false)</div><div class="ttdef"><b>Definition:</b> <a href="_dcx_pixel_tile_8cpp_source.html#l00125">DcxPixelTile.cpp:125</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a796330df2dc4926d7b6b5a496587f3e0" name="a796330df2dc4926d7b6b5a496587f3e0"></a>
@@ -753,7 +862,8 @@ Protected Attributes</h2></td></tr>
 <p>Reimplemented in <a class="el" href="class_deep_image_output_tile.html#a61303c235f787c3e4722519d8b97a0aa">DeepImageOutputTile</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_tile_8h_source.html#l00250">250</a> of file <a class="el" href="_dcx_deep_tile_8h_source.html">DcxDeepTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  250</span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a55953cb6aa1ec115377eda72bef2bd21" name="a55953cb6aa1ec115377eda72bef2bd21"></a>
@@ -780,7 +890,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_tile_8h_source.html#l00254">254</a> of file <a class="el" href="_dcx_deep_tile_8h_source.html">DcxDeepTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  254</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="class_deep_tile.html#a33b4b15654149a28754ac09f6b3c0d59">m_write_access_mode</a> &gt; <a class="code hl_enumvalue" href="class_deep_tile.html#a4539e8412e12ff717d07d9e668db7e63aa278d6a241b138eb8f86582c05047da4">WRITE_DISABLED</a>); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac2867f69debb70438ed5c4285f8836c0" name="ac2867f69debb70438ed5c4285f8836c0"></a>
@@ -807,7 +918,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_dcx_deep_tile_8h_source.html#l00253">253</a> of file <a class="el" href="_dcx_deep_tile_8h_source.html">DcxDeepTile.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  253</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_deep_tile.html#a33b4b15654149a28754ac09f6b3c0d59">m_write_access_mode</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -888,9 +1000,13 @@ Protected Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/deepfile/<a class="el" href="_dcx_deep_tile_8cpp_source.html">DcxDeepTile.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_deep_tile.html">DeepTile</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

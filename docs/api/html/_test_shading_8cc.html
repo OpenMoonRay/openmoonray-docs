@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,12 +42,26 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_3ffafe8d4194a26e471fc283bfe39627.html">shading</a></li><li class="navelem"><a class="el" href="dir_709fee47e84824330f43d698c4e844e8.html">ispc</a></li><li class="navelem"><a class="el" href="dir_47a8b3e056c505ee4a46d323ed180f88.html">unittest</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_test_shading_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">TestShading.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -57,10 +75,180 @@ $(function() {
 <code>#include &lt;fstream&gt;</code><br />
 </div>
 <p><a href="_test_shading_8cc_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a556ede20d8834a44882fe6ea39be118f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_test_shading_8cc.html#a556ede20d8834a44882fe6ea39be118f">update</a> (scene_rdl2::rdl2::Material *mat, int testNum)</td></tr>
+<tr class="separator:a556ede20d8834a44882fe6ea39be118f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb1b474e37c4eceb844b0f3c92bee41"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_test_shading_8cc.html#aafb1b474e37c4eceb844b0f3c92bee41">render</a> (const scene_rdl2::rdl2::Material *mat, int testNum, int width=256, int height=256, int raysPerPixel=1, bool primeThePump=false)</td></tr>
+<tr class="separator:aafb1b474e37c4eceb844b0f3c92bee41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aafb1b474e37c4eceb844b0f3c92bee41" name="aafb1b474e37c4eceb844b0f3c92bee41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafb1b474e37c4eceb844b0f3c92bee41">&#9670;&#160;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void render </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::rdl2::Material *&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>testNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em> = <code>256</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em> = <code>256</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>raysPerPixel</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>primeThePump</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_shading_8cc_source.html#l00036">36</a> of file <a class="el" href="_test_shading_8cc_source.html">TestShading.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{</div>
+<div class="line"><span class="lineno">   41</span>    <span class="comment">// allocate results buffer and call the test renderer</span></div>
+<div class="line"><span class="lineno">   42</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> bufferSize = 3 * width * height;</div>
+<div class="line"><span class="lineno">   43</span>    uint8_t results[bufferSize];</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordtype">double</span> start = <a class="code hl_function" href="namespacemoonray_1_1time.html#a717cca4830d2eea83a6da579e2c422cb">time::getTime</a>();</div>
+<div class="line"><span class="lineno">   46</span>    uint64 shaderTicks = <a class="code hl_function" href="classmoonray_1_1shading_1_1_test_render.html#a99c97519a8294fde271f771d5b4cd838">TestRender::render</a>(mat, results, width, height, raysPerPixel, primeThePump);</div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> = <a class="code hl_function" href="namespacemoonray_1_1time.html#a717cca4830d2eea83a6da579e2c422cb">time::getTime</a>();</div>
+<div class="line"><span class="lineno">   48</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;render test &quot;</span> &lt;&lt; testNum &lt;&lt; <span class="stringliteral">&quot; render time = &quot;</span></div>
+<div class="line"><span class="lineno">   49</span>              &lt;&lt; <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> - start &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">   50</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;render test &quot;</span> &lt;&lt; testNum &lt;&lt; <span class="stringliteral">&quot; shader ticks = &quot;</span></div>
+<div class="line"><span class="lineno">   51</span>              &lt;&lt; shaderTicks &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>    <span class="comment">// write the results as a ppm</span></div>
+<div class="line"><span class="lineno">   54</span>    {</div>
+<div class="line"><span class="lineno">   55</span>        std::ofstream ppm;</div>
+<div class="line"><span class="lineno">   56</span>        std::stringstream filename;</div>
+<div class="line"><span class="lineno">   57</span>        filename &lt;&lt; <span class="stringliteral">&quot;TestRender_result&quot;</span> &lt;&lt; testNum &lt;&lt; <span class="stringliteral">&quot;.ppm&quot;</span>;</div>
+<div class="line"><span class="lineno">   58</span>        ppm.open(filename.str().c_str());</div>
+<div class="line"><span class="lineno">   59</span>        ppm &lt;&lt; <span class="stringliteral">&quot;P6\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   60</span>        ppm &lt;&lt; width &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; height &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   61</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> maxPixel = 255; <span class="comment">// 8 bit gamma corrected color</span></div>
+<div class="line"><span class="lineno">   62</span>        ppm &lt;&lt; maxPixel &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   63</span>        ppm.write((<span class="keyword">const</span> <span class="keywordtype">char</span> *) results, bufferSize * <span class="keyword">sizeof</span>(int8_t));</div>
+<div class="line"><span class="lineno">   64</span>        ppm.close();</div>
+<div class="line"><span class="lineno">   65</span>    }</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>    <span class="comment">// compare with the canonical</span></div>
+<div class="line"><span class="lineno">   68</span>    std::ifstream ppm;</div>
+<div class="line"><span class="lineno">   69</span>    uint8_t <a class="code hl_function" href="_n_point_8h.html#a46a996b1bb51cfd6c96b8502d3cafe52">canonical</a>[bufferSize];</div>
+<div class="line"><span class="lineno">   70</span>    std::stringstream filename;</div>
+<div class="line"><span class="lineno">   71</span>    filename &lt;&lt; <span class="stringliteral">&quot;ref/TestRender_canonical&quot;</span> &lt;&lt; testNum &lt;&lt; <span class="stringliteral">&quot;.ppm&quot;</span>;</div>
+<div class="line"><span class="lineno">   72</span>    ppm.open(filename.str().c_str());</div>
+<div class="line"><span class="lineno">   73</span>    ppm.getline((<span class="keywordtype">char</span> *) <a class="code hl_function" href="_n_point_8h.html#a46a996b1bb51cfd6c96b8502d3cafe52">canonical</a>, bufferSize); <span class="comment">// P6\0</span></div>
+<div class="line"><span class="lineno">   74</span>    ppm.getline((<span class="keywordtype">char</span> *) <a class="code hl_function" href="_n_point_8h.html#a46a996b1bb51cfd6c96b8502d3cafe52">canonical</a>, bufferSize); <span class="comment">// width height</span></div>
+<div class="line"><span class="lineno">   75</span>    ppm.getline((<span class="keywordtype">char</span> *) <a class="code hl_function" href="_n_point_8h.html#a46a996b1bb51cfd6c96b8502d3cafe52">canonical</a>, bufferSize); <span class="comment">// max white</span></div>
+<div class="line"><span class="lineno">   76</span>    ppm.read((<span class="keywordtype">char</span> *) <a class="code hl_function" href="_n_point_8h.html#a46a996b1bb51cfd6c96b8502d3cafe52">canonical</a>, bufferSize);</div>
+<div class="line"><span class="lineno">   77</span>    <span class="comment">// allow +/-1 code of tolerance</span></div>
+<div class="line"><span class="lineno">   78</span>    uint8_t *resPtr = results;</div>
+<div class="line"><span class="lineno">   79</span>    uint8_t *canPtr = <a class="code hl_function" href="_n_point_8h.html#a46a996b1bb51cfd6c96b8502d3cafe52">canonical</a>;</div>
+<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; bufferSize; ++i) {</div>
+<div class="line"><span class="lineno">   81</span>        CPPUNIT_ASSERT(abs(*resPtr - *canPtr) &lt;= 1);</div>
+<div class="line"><span class="lineno">   82</span>        resPtr++;</div>
+<div class="line"><span class="lineno">   83</span>        canPtr++;</div>
+<div class="line"><span class="lineno">   84</span>    }</div>
+<div class="line"><span class="lineno">   85</span>}</div>
+<div class="ttc" id="a_n_point_8h_html_a46a996b1bb51cfd6c96b8502d3cafe52"><div class="ttname"><a href="_n_point_8h.html#a46a996b1bb51cfd6c96b8502d3cafe52">canonical</a></div><div class="ttdeci">float canonical(Generator &amp;g)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00277">NPoint.h:277</a></div></div>
+<div class="ttc" id="a_variance_a_o_v_map_8h_html_a8b3c0ee88191b7d4a40b4271037faaee"><div class="ttname"><a href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a></div><div class="ttdeci">VarianceAOVMap::SourceToVarianceIterator end(const VarianceAOVMap::SourceToVarianceRange &amp;range)</div><div class="ttdef"><b>Definition:</b> <a href="_variance_a_o_v_map_8h_source.html#l00153">VarianceAOVMap.h:153</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_test_render_html_a99c97519a8294fde271f771d5b4cd838"><div class="ttname"><a href="classmoonray_1_1shading_1_1_test_render.html#a99c97519a8294fde271f771d5b4cd838">moonray::shading::TestRender::render</a></div><div class="ttdeci">static uint64 render(const scene_rdl2::rdl2::Material *mat, uint8_t *results, int width=256, int height=256, int raysPerPixel=1, bool primeThePump=false, bool isIndirect=false)</div><div class="ttdef"><b>Definition:</b> <a href="_test_render_8cc_source.html#l00096">TestRender.cc:96</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1time_html_a717cca4830d2eea83a6da579e2c422cb"><div class="ttname"><a href="namespacemoonray_1_1time.html#a717cca4830d2eea83a6da579e2c422cb">moonray::time::getTime</a></div><div class="ttdeci">__forceinline double getTime()</div><div class="ttdef"><b>Definition:</b> <a href="_timer_8h_source.html#l00025">Timer.h:25</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a556ede20d8834a44882fe6ea39be118f" name="a556ede20d8834a44882fe6ea39be118f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a556ede20d8834a44882fe6ea39be118f">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void update </td>
+          <td>(</td>
+          <td class="paramtype">scene_rdl2::rdl2::Material *&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>testNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_shading_8cc_source.html#l00026">26</a> of file <a class="el" href="_test_shading_8cc_source.html">TestShading.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>{</div>
+<div class="line"><span class="lineno">   28</span>    <span class="keywordtype">double</span> start = <a class="code hl_function" href="namespacemoonray_1_1time.html#a717cca4830d2eea83a6da579e2c422cb">time::getTime</a>();</div>
+<div class="line"><span class="lineno">   29</span>    mat-&gt;applyUpdates();</div>
+<div class="line"><span class="lineno">   30</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> = <a class="code hl_function" href="namespacemoonray_1_1time.html#a717cca4830d2eea83a6da579e2c422cb">time::getTime</a>();</div>
+<div class="line"><span class="lineno">   31</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;\nrender test &quot;</span> &lt;&lt; testNum &lt;&lt; <span class="stringliteral">&quot; update time = &quot;</span></div>
+<div class="line"><span class="lineno">   32</span>              &lt;&lt; <a class="code hl_function" href="_variance_a_o_v_map_8h.html#a8b3c0ee88191b7d4a40b4271037faaee">end</a> - start &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">   33</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ffbcf3a8cac23adad179e74a09117904.html">shading</a></li><li class="navelem"><a class="el" href="dir_ec205a3d74558b843e3f8ac96801212b.html">ispc</a></li><li class="navelem"><a class="el" href="dir_b0130e6f15eeb285d727fd51a3167610.html">unittest</a></li><li class="navelem"><a class="el" href="_test_shading_8cc.html">TestShading.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

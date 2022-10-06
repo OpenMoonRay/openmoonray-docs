@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae5c19761b6d0f8bfb3a1bd5aa347ca1.html">pbr</a></li><li class="navelem"><a class="el" href="dir_dea9bae4dce33263b807b45b03566d1e.html">integrator</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_volume_emission_light_sampler_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">VolumeEmissionLightSampler.h</div></div>
 </div><!--header-->
@@ -50,7 +66,11 @@ $(function() {
 <a href="_volume_emission_light_sampler_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2017-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file VolumeEmissionLightSampler.h</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Wayne Huang</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">///</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"></span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -63,14 +83,16 @@ $(function() {
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemoonray.html">moonray</a> {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span>pbr {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html">VolumeEmissionLightSampler</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"></span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/// Utility class that wraps multiple samplers used in volume emission</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/// light sample strategy (for easier sampling management)</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html">   24</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html">VolumeEmissionLightSampler</a> {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">// constructor for hard surface samples</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#adedbae3c06f960ef9f79e866fb1c19d4">   27</a></span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#adedbae3c06f960ef9f79e866fb1c19d4">VolumeEmissionLightSampler</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_subpixel.html">Subpixel</a>&amp; sp, <span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_path_vertex.html">PathVertex</a>&amp; pv,</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keywordtype">int</span> nLightSamples, <span class="keywordtype">int</span> emissionIndex, <span class="keywordtype">bool</span> highQuality,</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordtype">unsigned</span> sequenceID):</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        mNonMirrorDepth(pv.nonMirrorDepth)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a9e6d274e355df0ca60b0f36b0d483cbe">mNonMirrorDepth</a>(pv.nonMirrorDepth)</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">if</span> (highQuality) {</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keywordtype">int</span> samplesSoFar = sp.mSubpixelIndex * nLightSamples;</div>
@@ -79,7 +101,7 @@ $(function() {
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12af4b0eafec04f27b4a2532dcead9e26fd">SequenceType::VolumeEmission</a>,</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12a9914a0ce04a7b7b6a8e39bec55064b82">SequenceType::Light</a>,</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                sequenceID, emissionIndex);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            mSamples.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#ae9c96f94d3c07a755920047d8eadbf74">resume</a>(xyzSid, samplesSoFar);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a60ca424226b6b39871029bf62a9c4787">mSamples</a>.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#ae9c96f94d3c07a755920047d8eadbf74">resume</a>(xyzSid, samplesSoFar);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keywordtype">int</span> samplesCount = nLightSamples;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <a class="code hl_class" href="classmoonray_1_1pbr_1_1_sequence_i_d.html">SequenceIDIntegrator</a> xyzSid(</div>
@@ -87,7 +109,7 @@ $(function() {
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12af4b0eafec04f27b4a2532dcead9e26fd">SequenceType::VolumeEmission</a>,</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12a9914a0ce04a7b7b6a8e39bec55064b82">SequenceType::Light</a>,</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                sequenceID, emissionIndex);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            mSamples.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#a664077143b2fbeba85e13ebc5f2d68be">restart</a>(xyzSid, samplesCount);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a60ca424226b6b39871029bf62a9c4787">mSamples</a>.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#a664077143b2fbeba85e13ebc5f2d68be">restart</a>(xyzSid, samplesCount);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        }</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
@@ -96,7 +118,7 @@ $(function() {
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordtype">int</span> nLightSamples, <span class="keywordtype">int</span> emissionIndex, <span class="keywordtype">bool</span> highQuality,</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordtype">int</span> subsurfaceSplitFactor, <span class="keywordtype">int</span> subsurfaceIndex,</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordtype">unsigned</span> sssSampleID, <span class="keywordtype">bool</span> isLocal):</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        mNonMirrorDepth(pv.nonMirrorDepth)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a9e6d274e355df0ca60b0f36b0d483cbe">mNonMirrorDepth</a>(pv.nonMirrorDepth)</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    {</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordtype">int</span> localFactor = isLocal ?</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12a7ab12ec12eafd3acbcf72ea0c97584a7">SequenceType::BssrdfLocalLight</a>) :</div>
@@ -113,7 +135,7 @@ $(function() {
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12af4b0eafec04f27b4a2532dcead9e26fd">SequenceType::VolumeEmission</a>,</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12a9914a0ce04a7b7b6a8e39bec55064b82">SequenceType::Light</a>,</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                localFactor, sssSampleID, emissionIndex);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            mSamples.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#ae9c96f94d3c07a755920047d8eadbf74">resume</a>(xyzSid, samplesSoFar);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a60ca424226b6b39871029bf62a9c4787">mSamples</a>.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#ae9c96f94d3c07a755920047d8eadbf74">resume</a>(xyzSid, samplesSoFar);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordtype">int</span> samplesCount = nLightSamples;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <a class="code hl_class" href="classmoonray_1_1pbr_1_1_sequence_i_d.html">SequenceIDIntegrator</a> xyzSid(</div>
@@ -122,7 +144,7 @@ $(function() {
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12af4b0eafec04f27b4a2532dcead9e26fd">SequenceType::VolumeEmission</a>,</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12a9914a0ce04a7b7b6a8e39bec55064b82">SequenceType::Light</a>,</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                localFactor, sssSampleID, emissionIndex);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            mSamples.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#a664077143b2fbeba85e13ebc5f2d68be">restart</a>(xyzSid, samplesCount);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a60ca424226b6b39871029bf62a9c4787">mSamples</a>.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#a664077143b2fbeba85e13ebc5f2d68be">restart</a>(xyzSid, samplesCount);</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        }</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
@@ -130,7 +152,7 @@ $(function() {
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a61331208b6cc7c99e3d38b8463931ca7">   87</a></span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a61331208b6cc7c99e3d38b8463931ca7">VolumeEmissionLightSampler</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_subpixel.html">Subpixel</a>&amp; sp, <span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_path_vertex.html">PathVertex</a>&amp; pv,</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordtype">int</span> emissionIndex, <span class="keywordtype">int</span> subsurfaceSplitFactor, <span class="keywordtype">int</span> subsurfaceIndex,</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordtype">unsigned</span> sssSampleID):</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        mNonMirrorDepth(pv.nonMirrorDepth)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a9e6d274e355df0ca60b0f36b0d483cbe">mNonMirrorDepth</a>(pv.nonMirrorDepth)</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    {</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <a class="code hl_class" href="classmoonray_1_1pbr_1_1_sequence_i_d.html">SequenceIDIntegrator</a> xyzSid(</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            pv.nonMirrorDepth, sp.mPixel, 0,</div>
@@ -138,14 +160,14 @@ $(function() {
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12a9914a0ce04a7b7b6a8e39bec55064b82">SequenceType::Light</a>,</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12a7ab12ec12eafd3acbcf72ea0c97584a7">SequenceType::BssrdfLocalLight</a>,</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            sssSampleID, emissionIndex);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        mSamples.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#ae9c96f94d3c07a755920047d8eadbf74">resume</a>(xyzSid, subsurfaceIndex);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a60ca424226b6b39871029bf62a9c4787">mSamples</a>.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#ae9c96f94d3c07a755920047d8eadbf74">resume</a>(xyzSid, subsurfaceIndex);</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="comment">// constructor for volume scattering samples</span></div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a8b7a6ddd369ef1323fe72a0724eca722">  102</a></span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a8b7a6ddd369ef1323fe72a0724eca722">VolumeEmissionLightSampler</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_subpixel.html">Subpixel</a>&amp; sp, <span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_path_vertex.html">PathVertex</a>&amp; pv,</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordtype">int</span> nLightSamples, <span class="keywordtype">int</span> nScatterSamples, <span class="keywordtype">int</span> emissionIndex,</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordtype">bool</span> highQuality, <span class="keywordtype">unsigned</span> sequenceID):</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        mNonMirrorDepth(pv.nonMirrorDepth)</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a9e6d274e355df0ca60b0f36b0d483cbe">mNonMirrorDepth</a>(pv.nonMirrorDepth)</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    {</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordflow">if</span> (highQuality) {</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="keywordtype">int</span> samplesSoFar = sp.mSubpixelIndex *</div>
@@ -156,7 +178,7 @@ $(function() {
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12a9914a0ce04a7b7b6a8e39bec55064b82">SequenceType::Light</a>,</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12ab4106967c7ad0e5636361012f9c466db">SequenceType::VolumeScattering</a>,</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                sequenceID, emissionIndex);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            mSamples.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#ae9c96f94d3c07a755920047d8eadbf74">resume</a>(xyzSid, samplesSoFar);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a60ca424226b6b39871029bf62a9c4787">mSamples</a>.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#ae9c96f94d3c07a755920047d8eadbf74">resume</a>(xyzSid, samplesSoFar);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="keywordtype">int</span> samplesCount = nLightSamples * nScatterSamples;</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <a class="code hl_class" href="classmoonray_1_1pbr_1_1_sequence_i_d.html">SequenceIDIntegrator</a> xyzSid(</div>
@@ -165,14 +187,14 @@ $(function() {
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12a9914a0ce04a7b7b6a8e39bec55064b82">SequenceType::Light</a>,</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12ab4106967c7ad0e5636361012f9c466db">SequenceType::VolumeScattering</a>,</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                sequenceID, emissionIndex);</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            mSamples.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#a664077143b2fbeba85e13ebc5f2d68be">restart</a>(xyzSid, samplesCount);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a60ca424226b6b39871029bf62a9c4787">mSamples</a>.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#a664077143b2fbeba85e13ebc5f2d68be">restart</a>(xyzSid, samplesCount);</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        }</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="comment">// constructor for volume multiple scattering approximation</span></div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a9f9c64741c772f2ad6e9214e59c59db5">  130</a></span>    <a class="code hl_function" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a9f9c64741c772f2ad6e9214e59c59db5">VolumeEmissionLightSampler</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_subpixel.html">Subpixel</a>&amp; sp, <span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1pbr_1_1_path_vertex.html">PathVertex</a>&amp; pv,</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            <span class="keywordtype">int</span> nScatterSamples, <span class="keywordtype">int</span> emissionIndex, <span class="keywordtype">unsigned</span> sequenceID):</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        mNonMirrorDepth(pv.nonMirrorDepth)</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a9e6d274e355df0ca60b0f36b0d483cbe">mNonMirrorDepth</a>(pv.nonMirrorDepth)</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    {</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <a class="code hl_class" href="classmoonray_1_1pbr_1_1_sequence_i_d.html">SequenceIDIntegrator</a> xyzSid(</div>
@@ -181,18 +203,18 @@ $(function() {
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12a9914a0ce04a7b7b6a8e39bec55064b82">SequenceType::Light</a>,</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <a class="code hl_enumvalue" href="namespacemoonray_1_1pbr.html#a915c7b7f63b0f443120cf7e865296a12ab4106967c7ad0e5636361012f9c466db">SequenceType::VolumeScattering</a>,</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            sequenceID, emissionIndex);</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        mSamples.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#a664077143b2fbeba85e13ebc5f2d68be">restart</a>(xyzSid, nScatterSamples);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a60ca424226b6b39871029bf62a9c4787">mSamples</a>.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#a664077143b2fbeba85e13ebc5f2d68be">restart</a>(xyzSid, nScatterSamples);</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    }</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a1825e50ee99e10aba6f4a20c45f4870d">  145</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a1825e50ee99e10aba6f4a20c45f4870d">getSample</a>(scene_rdl2::math::Vec3f&amp; u3d)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        mSamples.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#a05e223b6bc7263a3db91779854ec5089">getSample</a>(&amp;u3d[0], mNonMirrorDepth);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a60ca424226b6b39871029bf62a9c4787">mSamples</a>.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_integrator_sample.html#a05e223b6bc7263a3db91779854ec5089">getSample</a>(&amp;u3d[0], <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a9e6d274e355df0ca60b0f36b0d483cbe">mNonMirrorDepth</a>);</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    }</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <a class="code hl_class" href="classmoonray_1_1pbr_1_1_integrator_sample.html">IntegratorSample3D</a> mSamples;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keywordtype">int</span> mNonMirrorDepth;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a60ca424226b6b39871029bf62a9c4787">  151</a></span>    <a class="code hl_class" href="classmoonray_1_1pbr_1_1_integrator_sample.html">IntegratorSample3D</a> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a60ca424226b6b39871029bf62a9c4787">mSamples</a>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a9e6d274e355df0ca60b0f36b0d483cbe">  152</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a9e6d274e355df0ca60b0f36b0d483cbe">mNonMirrorDepth</a>;</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>};</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>} <span class="comment">// namespace pbr</span></div>
@@ -211,8 +233,10 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_sequence_i_d_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sequence_i_d.html">moonray::pbr::SequenceID</a></div><div class="ttdef"><b>Definition:</b> <a href="_sequence_i_d_8h_source.html#l00045">SequenceID.h:46</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_volume_emission_light_sampler_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html">moonray::pbr::VolumeEmissionLightSampler</a></div><div class="ttdef"><b>Definition:</b> <a href="_volume_emission_light_sampler_8h_source.html#l00024">VolumeEmissionLightSampler.h:24</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_volume_emission_light_sampler_html_a1825e50ee99e10aba6f4a20c45f4870d"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a1825e50ee99e10aba6f4a20c45f4870d">moonray::pbr::VolumeEmissionLightSampler::getSample</a></div><div class="ttdeci">void getSample(scene_rdl2::math::Vec3f &amp;u3d) const</div><div class="ttdef"><b>Definition:</b> <a href="_volume_emission_light_sampler_8h_source.html#l00145">VolumeEmissionLightSampler.h:145</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_volume_emission_light_sampler_html_a60ca424226b6b39871029bf62a9c4787"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a60ca424226b6b39871029bf62a9c4787">moonray::pbr::VolumeEmissionLightSampler::mSamples</a></div><div class="ttdeci">IntegratorSample3D mSamples</div><div class="ttdef"><b>Definition:</b> <a href="_volume_emission_light_sampler_8h_source.html#l00151">VolumeEmissionLightSampler.h:151</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_volume_emission_light_sampler_html_a61331208b6cc7c99e3d38b8463931ca7"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a61331208b6cc7c99e3d38b8463931ca7">moonray::pbr::VolumeEmissionLightSampler::VolumeEmissionLightSampler</a></div><div class="ttdeci">VolumeEmissionLightSampler(const Subpixel &amp;sp, const PathVertex &amp;pv, int emissionIndex, int subsurfaceSplitFactor, int subsurfaceIndex, unsigned sssSampleID)</div><div class="ttdef"><b>Definition:</b> <a href="_volume_emission_light_sampler_8h_source.html#l00087">VolumeEmissionLightSampler.h:87</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_volume_emission_light_sampler_html_a8b7a6ddd369ef1323fe72a0724eca722"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a8b7a6ddd369ef1323fe72a0724eca722">moonray::pbr::VolumeEmissionLightSampler::VolumeEmissionLightSampler</a></div><div class="ttdeci">VolumeEmissionLightSampler(const Subpixel &amp;sp, const PathVertex &amp;pv, int nLightSamples, int nScatterSamples, int emissionIndex, bool highQuality, unsigned sequenceID)</div><div class="ttdef"><b>Definition:</b> <a href="_volume_emission_light_sampler_8h_source.html#l00102">VolumeEmissionLightSampler.h:102</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_volume_emission_light_sampler_html_a9e6d274e355df0ca60b0f36b0d483cbe"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a9e6d274e355df0ca60b0f36b0d483cbe">moonray::pbr::VolumeEmissionLightSampler::mNonMirrorDepth</a></div><div class="ttdeci">int mNonMirrorDepth</div><div class="ttdef"><b>Definition:</b> <a href="_volume_emission_light_sampler_8h_source.html#l00152">VolumeEmissionLightSampler.h:152</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_volume_emission_light_sampler_html_a9f9c64741c772f2ad6e9214e59c59db5"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#a9f9c64741c772f2ad6e9214e59c59db5">moonray::pbr::VolumeEmissionLightSampler::VolumeEmissionLightSampler</a></div><div class="ttdeci">VolumeEmissionLightSampler(const Subpixel &amp;sp, const PathVertex &amp;pv, int nScatterSamples, int emissionIndex, unsigned sequenceID)</div><div class="ttdef"><b>Definition:</b> <a href="_volume_emission_light_sampler_8h_source.html#l00130">VolumeEmissionLightSampler.h:130</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_volume_emission_light_sampler_html_acda48a628c20810bd61a934a21d7973f"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#acda48a628c20810bd61a934a21d7973f">moonray::pbr::VolumeEmissionLightSampler::VolumeEmissionLightSampler</a></div><div class="ttdeci">VolumeEmissionLightSampler(const Subpixel &amp;sp, const PathVertex &amp;pv, int nLightSamples, int emissionIndex, bool highQuality, int subsurfaceSplitFactor, int subsurfaceIndex, unsigned sssSampleID, bool isLocal)</div><div class="ttdef"><b>Definition:</b> <a href="_volume_emission_light_sampler_8h_source.html#l00052">VolumeEmissionLightSampler.h:52</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_volume_emission_light_sampler_html_adedbae3c06f960ef9f79e866fb1c19d4"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_volume_emission_light_sampler.html#adedbae3c06f960ef9f79e866fb1c19d4">moonray::pbr::VolumeEmissionLightSampler::VolumeEmissionLightSampler</a></div><div class="ttdeci">VolumeEmissionLightSampler(const Subpixel &amp;sp, const PathVertex &amp;pv, int nLightSamples, int emissionIndex, bool highQuality, unsigned sequenceID)</div><div class="ttdef"><b>Definition:</b> <a href="_volume_emission_light_sampler_8h_source.html#l00027">VolumeEmissionLightSampler.h:27</a></div></div>
@@ -226,9 +250,13 @@ $(function() {
 <div class="ttc" id="astructmoonray_1_1pbr_1_1_path_vertex_html"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_path_vertex.html">moonray::pbr::PathVertex</a></div><div class="ttdef"><b>Definition:</b> <a href="_ray_state_8h_source.html#l00040">RayState.h:40</a></div></div>
 <div class="ttc" id="astructmoonray_1_1pbr_1_1_subpixel_html"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_subpixel.html">moonray::pbr::Subpixel</a></div><div class="ttdef"><b>Definition:</b> <a href="_ray_state_8h_source.html#l00031">RayState.h:31</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_43893e94419488da3a801f94fc35754d.html">pbr</a></li><li class="navelem"><a class="el" href="dir_2ababe07dd619b812c4a3817d8ef2eb2.html">integrator</a></li><li class="navelem"><a class="el" href="_volume_emission_light_sampler_8h.html">VolumeEmissionLightSampler.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

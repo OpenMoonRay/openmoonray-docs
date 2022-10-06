@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1mcrt__rt__merge__computation.html">mcrt_rt_merge_computation</a></li><li class="navelem"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html">RenderFbArray</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -131,7 +147,23 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_fb_8cc_source.html#l00117">117</a> of file <a class="el" href="_mcrt_rt_merge_computation_fb_8cc_source.html">McrtRtMergeComputationFb.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  117</span>                                                                 :</div>
+<div class="line"><span class="lineno">  118</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#ab2230765c44277116d2627cff2bcffef">mTotalCacheFrame</a>(totalCacheFrame),</div>
+<div class="line"><span class="lineno">  119</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9973587a104cc760306dd631e374d38">mNumMachines</a>(numMachines),</div>
+<div class="line"><span class="lineno">  120</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a1ce6425a5b729b8e946f553848a4d918">mFbArray</a>(),</div>
+<div class="line"><span class="lineno">  121</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a4d3fc40da2460b49439dd99a406995b8">mStartFrameId</a>(-1),</div>
+<div class="line"><span class="lineno">  122</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#ae98a304945eabf6ca595efc27234e7a5">mEndFrameId</a>(-1)</div>
+<div class="line"><span class="lineno">  123</span>{</div>
+<div class="line"><span class="lineno">  124</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a1ce6425a5b729b8e946f553848a4d918">mFbArray</a>.reset(<span class="keyword">new</span> RenderFb[totalCacheFrame]);</div>
+<div class="line"><span class="lineno">  125</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9efa6db0780fb6a9fb03e59b1d0ee6b">mFbTbl</a>.resize(totalCacheFrame);</div>
+<div class="line"><span class="lineno">  126</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array_html_a1ce6425a5b729b8e946f553848a4d918"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a1ce6425a5b729b8e946f553848a4d918">moonray::mcrt_rt_merge_computation::RenderFbArray::mFbArray</a></div><div class="ttdeci">std::unique_ptr&lt; RenderFb[]&gt; mFbArray</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_fb_8h_source.html#l00113">McrtRtMergeComputationFb.h:113</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array_html_a4d3fc40da2460b49439dd99a406995b8"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a4d3fc40da2460b49439dd99a406995b8">moonray::mcrt_rt_merge_computation::RenderFbArray::mStartFrameId</a></div><div class="ttdeci">int mStartFrameId</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_fb_8h_source.html#l00115">McrtRtMergeComputationFb.h:115</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array_html_ab2230765c44277116d2627cff2bcffef"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#ab2230765c44277116d2627cff2bcffef">moonray::mcrt_rt_merge_computation::RenderFbArray::mTotalCacheFrame</a></div><div class="ttdeci">int mTotalCacheFrame</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_fb_8h_source.html#l00110">McrtRtMergeComputationFb.h:110</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array_html_ae98a304945eabf6ca595efc27234e7a5"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#ae98a304945eabf6ca595efc27234e7a5">moonray::mcrt_rt_merge_computation::RenderFbArray::mEndFrameId</a></div><div class="ttdeci">int mEndFrameId</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_fb_8h_source.html#l00116">McrtRtMergeComputationFb.h:116</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array_html_af9973587a104cc760306dd631e374d38"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9973587a104cc760306dd631e374d38">moonray::mcrt_rt_merge_computation::RenderFbArray::mNumMachines</a></div><div class="ttdeci">int mNumMachines</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_fb_8h_source.html#l00111">McrtRtMergeComputationFb.h:111</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array_html_af9efa6db0780fb6a9fb03e59b1d0ee6b"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9efa6db0780fb6a9fb03e59b1d0ee6b">moonray::mcrt_rt_merge_computation::RenderFbArray::mFbTbl</a></div><div class="ttdeci">std::vector&lt; RenderFb * &gt; mFbTbl</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_fb_8h_source.html#l00117">McrtRtMergeComputationFb.h:117</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -151,7 +183,30 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_fb_8cc_source.html#l00221">221</a> of file <a class="el" href="_mcrt_rt_merge_computation_fb_8cc_source.html">McrtRtMergeComputationFb.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  222</span>{</div>
+<div class="line"><span class="lineno">  223</span>    <span class="keywordtype">int</span> total = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9efa6db0780fb6a9fb03e59b1d0ee6b">mFbTbl</a>.size();</div>
+<div class="line"><span class="lineno">  224</span>    <span class="keywordtype">int</span> shiftTotal = -1;</div>
+<div class="line"><span class="lineno">  225</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; total; ++i) {</div>
+<div class="line"><span class="lineno">  226</span>        RenderFb * cFb = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9efa6db0780fb6a9fb03e59b1d0ee6b">mFbTbl</a>[i];</div>
+<div class="line"><span class="lineno">  227</span>        <span class="keywordflow">if</span> (cFb-&gt;isComplete()) {</div>
+<div class="line"><span class="lineno">  228</span>            shiftTotal = i;</div>
+<div class="line"><span class="lineno">  229</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  230</span>        }</div>
+<div class="line"><span class="lineno">  231</span>    }</div>
+<div class="line"><span class="lineno">  232</span> </div>
+<div class="line"><span class="lineno">  233</span>    <span class="keywordflow">if</span> (shiftTotal == -1) {</div>
+<div class="line"><span class="lineno">  234</span>        <span class="comment">// could not find completed renderFb</span></div>
+<div class="line"><span class="lineno">  235</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  236</span>    }</div>
+<div class="line"><span class="lineno">  237</span> </div>
+<div class="line"><span class="lineno">  238</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; shiftTotal; ++i) {</div>
+<div class="line"><span class="lineno">  239</span>        <a class="code hl_function" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#ad638a6ff24893b1b4c5d168fdf19e93a">shiftFbTbl</a>();</div>
+<div class="line"><span class="lineno">  240</span>    }</div>
+<div class="line"><span class="lineno">  241</span> </div>
+<div class="line"><span class="lineno">  242</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;                <span class="comment">// found completed renderFb and already shifted</span></div>
+<div class="line"><span class="lineno">  243</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array_html_ad638a6ff24893b1b4c5d168fdf19e93a"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#ad638a6ff24893b1b4c5d168fdf19e93a">moonray::mcrt_rt_merge_computation::RenderFbArray::shiftFbTbl</a></div><div class="ttdeci">void shiftFbTbl()</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_fb_8cc_source.html#l00198">McrtRtMergeComputationFb.cc:198</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a03a8e7b2cb583ca7af505c72ca8856a9" name="a03a8e7b2cb583ca7af505c72ca8856a9"></a>
@@ -179,7 +234,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_fb_8h_source.html#l00098">98</a> of file <a class="el" href="_mcrt_rt_merge_computation_fb_8h_source.html">McrtRtMergeComputationFb.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   98</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9efa6db0780fb6a9fb03e59b1d0ee6b">mFbTbl</a>[localFrameId]; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a31062860014f6d3c572be55b6b02a241" name="a31062860014f6d3c572be55b6b02a241"></a>
@@ -207,7 +263,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_fb_8h_source.html#l00105">105</a> of file <a class="el" href="_mcrt_rt_merge_computation_fb_8h_source.html">McrtRtMergeComputationFb.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  105</span>{ <span class="keywordflow">return</span> globalFrameId - <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a4d3fc40da2460b49439dd99a406995b8">mStartFrameId</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa5d063eec0ac249eacffe0eb7e586412" name="aa5d063eec0ac249eacffe0eb7e586412"></a>
@@ -235,7 +292,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_fb_8h_source.html#l00106">106</a> of file <a class="el" href="_mcrt_rt_merge_computation_fb_8h_source.html">McrtRtMergeComputationFb.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  106</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9efa6db0780fb6a9fb03e59b1d0ee6b">mFbTbl</a>[<a class="code hl_function" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a31062860014f6d3c572be55b6b02a241">getLocalFrameId</a>(globalFrameId)]; }</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array_html_a31062860014f6d3c572be55b6b02a241"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a31062860014f6d3c572be55b6b02a241">moonray::mcrt_rt_merge_computation::RenderFbArray::getLocalFrameId</a></div><div class="ttdeci">int getLocalFrameId(int globalFrameId)</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_fb_8h_source.html#l00105">McrtRtMergeComputationFb.h:105</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4c40d854aa701588f822abf23fb43c81" name="a4c40d854aa701588f822abf23fb43c81"></a>
@@ -262,7 +321,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_fb_8h_source.html#l00100">100</a> of file <a class="el" href="_mcrt_rt_merge_computation_fb_8h_source.html">McrtRtMergeComputationFb.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  100</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a4d3fc40da2460b49439dd99a406995b8">mStartFrameId</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa98bd7812186902f5f757f3ef1a224f3" name="aa98bd7812186902f5f757f3ef1a224f3"></a>
@@ -289,7 +349,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_fb_8h_source.html#l00090">90</a> of file <a class="el" href="_mcrt_rt_merge_computation_fb_8h_source.html">McrtRtMergeComputationFb.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   90</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a4d3fc40da2460b49439dd99a406995b8">mStartFrameId</a> &gt;= 0)? <span class="keyword">true</span>: <span class="keyword">false</span>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a806ec164246d266bc0c63875924eac58" name="a806ec164246d266bc0c63875924eac58"></a>
@@ -317,7 +378,10 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_fb_8h_source.html#l00096">96</a> of file <a class="el" href="_mcrt_rt_merge_computation_fb_8h_source.html">McrtRtMergeComputationFb.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   96</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#aa5d063eec0ac249eacffe0eb7e586412">getRenderFb</a>(globalFrameId)-&gt;<a class="code hl_function" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb.html#ad570ce9c6f93e8a67ae2d39cabce4754">isComplete</a>(); }</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array_html_aa5d063eec0ac249eacffe0eb7e586412"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#aa5d063eec0ac249eacffe0eb7e586412">moonray::mcrt_rt_merge_computation::RenderFbArray::getRenderFb</a></div><div class="ttdeci">RenderFb * getRenderFb(int globalFrameId)</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_fb_8h_source.html#l00106">McrtRtMergeComputationFb.h:106</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_html_ad570ce9c6f93e8a67ae2d39cabce4754"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb.html#ad570ce9c6f93e8a67ae2d39cabce4754">moonray::mcrt_rt_merge_computation::RenderFb::isComplete</a></div><div class="ttdeci">bool isComplete() const</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_fb_8h_source.html#l00041">McrtRtMergeComputationFb.h:41</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae78886364fd2cb8559842673e70e333c" name="ae78886364fd2cb8559842673e70e333c"></a>
@@ -345,7 +409,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_fb_8h_source.html#l00095">95</a> of file <a class="el" href="_mcrt_rt_merge_computation_fb_8h_source.html">McrtRtMergeComputationFb.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   95</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9efa6db0780fb6a9fb03e59b1d0ee6b">mFbTbl</a>[localFrameId]-&gt;isComplete(); }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad638a6ff24893b1b4c5d168fdf19e93a" name="ad638a6ff24893b1b4c5d168fdf19e93a"></a>
@@ -364,7 +429,27 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_fb_8cc_source.html#l00198">198</a> of file <a class="el" href="_mcrt_rt_merge_computation_fb_8cc_source.html">McrtRtMergeComputationFb.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  199</span>{</div>
+<div class="line"><span class="lineno">  200</span>    RenderFb *ptr = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9efa6db0780fb6a9fb03e59b1d0ee6b">mFbTbl</a>[0];</div>
+<div class="line"><span class="lineno">  201</span> </div>
+<div class="line"><span class="lineno">  202</span>    {</div>
+<div class="line"><span class="lineno">  203</span>        <span class="keywordtype">int</span> cFrameId = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a4d3fc40da2460b49439dd99a406995b8">mStartFrameId</a>;</div>
+<div class="line"><span class="lineno">  204</span>        <span class="keywordflow">if</span> (!ptr-&gt;isComplete()) {</div>
+<div class="line"><span class="lineno">  205</span>            MOONRAY_LOG_ERROR(<span class="stringliteral">&quot;drop uncomplete frame:%d&quot;</span>, cFrameId);</div>
+<div class="line"><span class="lineno">  206</span>        }</div>
+<div class="line"><span class="lineno">  207</span>    }</div>
+<div class="line"><span class="lineno">  208</span> </div>
+<div class="line"><span class="lineno">  209</span>    <span class="keywordtype">int</span> lastId = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9efa6db0780fb6a9fb03e59b1d0ee6b">mFbTbl</a>.size() - 1;</div>
+<div class="line"><span class="lineno">  210</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; lastId; ++i) {</div>
+<div class="line"><span class="lineno">  211</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9efa6db0780fb6a9fb03e59b1d0ee6b">mFbTbl</a>[i] = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9efa6db0780fb6a9fb03e59b1d0ee6b">mFbTbl</a>[i+1];</div>
+<div class="line"><span class="lineno">  212</span>    }</div>
+<div class="line"><span class="lineno">  213</span>    ptr-&gt;reset();               <span class="comment">// do reset for new recycled entry</span></div>
+<div class="line"><span class="lineno">  214</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9efa6db0780fb6a9fb03e59b1d0ee6b">mFbTbl</a>[lastId] = ptr;</div>
+<div class="line"><span class="lineno">  215</span> </div>
+<div class="line"><span class="lineno">  216</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a4d3fc40da2460b49439dd99a406995b8">mStartFrameId</a>++;</div>
+<div class="line"><span class="lineno">  217</span>    <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#ae98a304945eabf6ca595efc27234e7a5">mEndFrameId</a>++;</div>
+<div class="line"><span class="lineno">  218</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a89326508c64c5af423481b01cf530aac" name="a89326508c64c5af423481b01cf530aac"></a>
@@ -383,7 +468,30 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_fb_8cc_source.html#l00246">246</a> of file <a class="el" href="_mcrt_rt_merge_computation_fb_8cc_source.html">McrtRtMergeComputationFb.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  247</span>{</div>
+<div class="line"><span class="lineno">  248</span>    std::ostringstream ostr;</div>
+<div class="line"><span class="lineno">  249</span>    ostr &lt;&lt; <span class="stringliteral">&quot;RenderFbArray {\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  250</span>    {</div>
+<div class="line"><span class="lineno">  251</span>        ostr &lt;&lt; <span class="stringliteral">&quot;  mTotalCacheFrame:&quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#ab2230765c44277116d2627cff2bcffef">mTotalCacheFrame</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  252</span>        ostr &lt;&lt; <span class="stringliteral">&quot;      mNumMachines:&quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9973587a104cc760306dd631e374d38">mNumMachines</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  253</span>        ostr &lt;&lt; <span class="stringliteral">&quot;     mStartFrameId:&quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a4d3fc40da2460b49439dd99a406995b8">mStartFrameId</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  254</span>        ostr &lt;&lt; <span class="stringliteral">&quot;       mEndFrameId:&quot;</span> &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#ae98a304945eabf6ca595efc27234e7a5">mEndFrameId</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  255</span> </div>
+<div class="line"><span class="lineno">  256</span>        <span class="keywordtype">int</span> fId = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a4d3fc40da2460b49439dd99a406995b8">mStartFrameId</a>;</div>
+<div class="line"><span class="lineno">  257</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#ab2230765c44277116d2627cff2bcffef">mTotalCacheFrame</a>; ++i) {</div>
+<div class="line"><span class="lineno">  258</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9efa6db0780fb6a9fb03e59b1d0ee6b">mFbTbl</a>[i]-&gt;<a class="code hl_function" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#aa98bd7812186902f5f757f3ef1a224f3">isActive</a>()) {</div>
+<div class="line"><span class="lineno">  259</span>                ostr &lt;&lt; <span class="stringliteral">&quot;  fId:&quot;</span> &lt;&lt; fId &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><span class="lineno">  260</span>                <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9efa6db0780fb6a9fb03e59b1d0ee6b">mFbTbl</a>[i]-&gt;show();</div>
+<div class="line"><span class="lineno">  261</span>            }</div>
+<div class="line"><span class="lineno">  262</span>            fId++;</div>
+<div class="line"><span class="lineno">  263</span>        }</div>
+<div class="line"><span class="lineno">  264</span>    }</div>
+<div class="line"><span class="lineno">  265</span>    ostr &lt;&lt; <span class="stringliteral">&quot;}&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  266</span> </div>
+<div class="line"><span class="lineno">  267</span>    MOONRAY_LOG_INFO(ostr.str().c_str());</div>
+<div class="line"><span class="lineno">  268</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array_html_aa98bd7812186902f5f757f3ef1a224f3"><div class="ttname"><a href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#aa98bd7812186902f5f757f3ef1a224f3">moonray::mcrt_rt_merge_computation::RenderFbArray::isActive</a></div><div class="ttdeci">bool isActive()</div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_merge_computation_fb_8h_source.html#l00090">McrtRtMergeComputationFb.h:90</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac81ddb727db03d65c6b28698ec3cbf79" name="ac81ddb727db03d65c6b28698ec3cbf79"></a>
@@ -413,7 +521,72 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_mcrt_rt_merge_computation_fb_8cc_source.html#l00129">129</a> of file <a class="el" href="_mcrt_rt_merge_computation_fb_8cc_source.html">McrtRtMergeComputationFb.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  131</span>{</div>
+<div class="line"><span class="lineno">  132</span>    math::Viewport partialVp(partial.mHeader.mViewport.mMinX,</div>
+<div class="line"><span class="lineno">  133</span>                             partial.mHeader.mViewport.mMinY,</div>
+<div class="line"><span class="lineno">  134</span>                             partial.mHeader.mViewport.mMaxX,</div>
+<div class="line"><span class="lineno">  135</span>                             partial.mHeader.mViewport.mMaxY);</div>
+<div class="line"><span class="lineno">  136</span>    <span class="keywordflow">if</span> (vp != partialVp) {</div>
+<div class="line"><span class="lineno">  137</span>        <span class="comment">/* Useful debug code</span></div>
+<div class="line"><span class="lineno">  138</span><span class="comment">        std::cout &lt;&lt; &quot;&gt;&gt;&gt;=== McrtRtMergeComputationFb.cc vp != partialVp&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  139</span><span class="comment">        std::cout &lt;&lt; &quot;&gt;&gt;&gt; partial&quot;</span></div>
+<div class="line"><span class="lineno">  140</span><span class="comment">                  &lt;&lt; &quot; mMinX:&quot; &lt;&lt; partial.mHeader.mViewport.mMinX</span></div>
+<div class="line"><span class="lineno">  141</span><span class="comment">                  &lt;&lt; &quot; mMinY:&quot; &lt;&lt; partial.mHeader.mViewport.mMinY</span></div>
+<div class="line"><span class="lineno">  142</span><span class="comment">                  &lt;&lt; &quot; mMaxX:&quot; &lt;&lt; partial.mHeader.mViewport.mMaxX</span></div>
+<div class="line"><span class="lineno">  143</span><span class="comment">                  &lt;&lt; &quot; mMaxY:&quot; &lt;&lt; partial.mHeader.mViewport.mMaxY</span></div>
+<div class="line"><span class="lineno">  144</span><span class="comment">                  &lt;&lt; &quot; vp&quot;</span></div>
+<div class="line"><span class="lineno">  145</span><span class="comment">                  &lt;&lt; &quot; minX:&quot; &lt;&lt; vp.mMinX</span></div>
+<div class="line"><span class="lineno">  146</span><span class="comment">                  &lt;&lt; &quot; minY:&quot; &lt;&lt; vp.mMinY</span></div>
+<div class="line"><span class="lineno">  147</span><span class="comment">                  &lt;&lt; &quot; maxX:&quot; &lt;&lt; vp.mMaxX</span></div>
+<div class="line"><span class="lineno">  148</span><span class="comment">                  &lt;&lt; &quot; maxY:&quot; &lt;&lt; vp.mMaxY</span></div>
+<div class="line"><span class="lineno">  149</span><span class="comment">                  &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  150</span><span class="comment">        */</span></div>
+<div class="line"><span class="lineno">  151</span>        <span class="comment">// Somehow partialFrame&#39;s viewport information is empty.</span></div>
+<div class="line"><span class="lineno">  152</span>        <span class="comment">// We skip this test for temporal quick fix reason. Toshi (22/Sep/16)</span></div>
+<div class="line"><span class="lineno">  153</span>        <span class="comment">// return false;           // invalid viewport data</span></div>
+<div class="line"><span class="lineno">  154</span>    }</div>
+<div class="line"><span class="lineno">  155</span> </div>
+<div class="line"><span class="lineno">  156</span>    <span class="keywordtype">int</span> globalFrameId = partial.mHeader.mFrameId;</div>
+<div class="line"><span class="lineno">  157</span> </div>
+<div class="line"><span class="lineno">  158</span>    {</div>
+<div class="line"><span class="lineno">  159</span>        <span class="keywordtype">int</span> machineId = partial.mMachineId;</div>
+<div class="line"><span class="lineno">  160</span>        MOONRAY_LOG_INFO(<span class="stringliteral">&quot;Merge partialFrame machineId:%d globalFrameId:%d&quot;</span>, machineId, globalFrameId );</div>
+<div class="line"><span class="lineno">  161</span>    }</div>
+<div class="line"><span class="lineno">  162</span> </div>
+<div class="line"><span class="lineno">  163</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a4d3fc40da2460b49439dd99a406995b8">mStartFrameId</a> &lt;= -1) {   <span class="comment">// initialize table</span></div>
+<div class="line"><span class="lineno">  164</span>        MOONRAY_LOG_INFO(<span class="stringliteral">&quot;Merge initialize multi-fb table&quot;</span>);</div>
+<div class="line"><span class="lineno">  165</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a4d3fc40da2460b49439dd99a406995b8">mStartFrameId</a> = globalFrameId;</div>
+<div class="line"><span class="lineno">  166</span>        <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#ae98a304945eabf6ca595efc27234e7a5">mEndFrameId</a> = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a4d3fc40da2460b49439dd99a406995b8">mStartFrameId</a> + <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#ab2230765c44277116d2627cff2bcffef">mTotalCacheFrame</a> - 1;</div>
+<div class="line"><span class="lineno">  167</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#ab2230765c44277116d2627cff2bcffef">mTotalCacheFrame</a>; ++i) {</div>
+<div class="line"><span class="lineno">  168</span>            <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9efa6db0780fb6a9fb03e59b1d0ee6b">mFbTbl</a>[i] = &amp;<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a1ce6425a5b729b8e946f553848a4d918">mFbArray</a>[i];</div>
+<div class="line"><span class="lineno">  169</span>            <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9efa6db0780fb6a9fb03e59b1d0ee6b">mFbTbl</a>[i]-&gt;setup(<a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9973587a104cc760306dd631e374d38">mNumMachines</a>);</div>
+<div class="line"><span class="lineno">  170</span>        }</div>
+<div class="line"><span class="lineno">  171</span>    }</div>
+<div class="line"><span class="lineno">  172</span>    <span class="keywordflow">if</span> (globalFrameId &lt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a4d3fc40da2460b49439dd99a406995b8">mStartFrameId</a>) {</div>
+<div class="line"><span class="lineno">  173</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;           <span class="comment">// too old data</span></div>
+<div class="line"><span class="lineno">  174</span>    }</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>    <span class="keywordtype">int</span> shiftCount = 0;                <span class="comment">// for debug</span></div>
+<div class="line"><span class="lineno">  177</span>    <span class="keywordflow">if</span> (globalFrameId &gt; <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#ae98a304945eabf6ca595efc27234e7a5">mEndFrameId</a>) { <span class="comment">// we have to update table</span></div>
+<div class="line"><span class="lineno">  178</span>        <span class="keywordtype">int</span> shiftOffset = globalFrameId - <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#ae98a304945eabf6ca595efc27234e7a5">mEndFrameId</a>;</div>
+<div class="line"><span class="lineno">  179</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; shiftOffset; ++i) {</div>
+<div class="line"><span class="lineno">  180</span>            <a class="code hl_function" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#ad638a6ff24893b1b4c5d168fdf19e93a">shiftFbTbl</a>();</div>
+<div class="line"><span class="lineno">  181</span>            shiftCount++;       <span class="comment">// for debug</span></div>
+<div class="line"><span class="lineno">  182</span>        }</div>
+<div class="line"><span class="lineno">  183</span>    }</div>
+<div class="line"><span class="lineno">  184</span> </div>
+<div class="line"><span class="lineno">  185</span>    <span class="keywordtype">int</span> localFrameId = <a class="code hl_function" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#a31062860014f6d3c572be55b6b02a241">getLocalFrameId</a>(globalFrameId);</div>
+<div class="line"><span class="lineno">  186</span>    RenderFb *cFb = <a class="code hl_variable" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html#af9efa6db0780fb6a9fb03e59b1d0ee6b">mFbTbl</a>[localFrameId];</div>
+<div class="line"><span class="lineno">  187</span> </div>
+<div class="line"><span class="lineno">  188</span>    <span class="comment">//------------------------------</span></div>
+<div class="line"><span class="lineno">  189</span> </div>
+<div class="line"><span class="lineno">  190</span>    <span class="keywordflow">if</span> (cFb-&gt;storePartialFrame(partial)) {</div>
+<div class="line"><span class="lineno">  191</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  192</span>    }</div>
+<div class="line"><span class="lineno">  193</span> </div>
+<div class="line"><span class="lineno">  194</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  195</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -566,9 +739,13 @@ Protected Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/dso/computation/mcrt_rt_merge/<a class="el" href="_mcrt_rt_merge_computation_fb_8cc_source.html">McrtRtMergeComputationFb.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1mcrt__rt__merge__computation.html">mcrt_rt_merge_computation</a></li><li class="navelem"><a class="el" href="classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html">RenderFbArray</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

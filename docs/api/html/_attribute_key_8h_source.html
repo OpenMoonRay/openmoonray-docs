@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_970eb28d9e8309e3f9c24dd3deed196f.html">bvh</a></li><li class="navelem"><a class="el" href="dir_ad019efe26eb16360a7aab047243505d.html">shading</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_attribute_key_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">AttributeKey.h</div></div>
 </div><!--header-->
@@ -50,7 +66,12 @@ $(function() {
 <a href="_attribute_key_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2014-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span><span class="comment"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">///</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file AttributeKey.h</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Sebastian Fernandez</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// $Id$</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">///</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
@@ -71,11 +92,24 @@ $(function() {
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a2515612dcef606d988489b09047c01dca87752381b583740610f1dfeb07fdad7e">VECTOR</a>,</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_enumvalue" href="namespacemoonray_1_1shading.html#a2515612dcef606d988489b09047c01dca1e23852820b9154316c7c06e2b7ba051">NORMAL</a></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_attribute_key.html">   42</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1shading_1_1_attribute_key.html">AttributeKey</a></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"></span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">/// @class AttributeKey</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">/// @brief a light weight index with type/name/size info for fast lookup</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">///     primitive attributes</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">///</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">/// An AttributeKey is an index into a table of primitive attributes.</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/// It is very lightweight (just an int) and can be cheaply copied.</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">/// The index points into a table of names, data types and data sizes for each key.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">/// The table is a set of static member variables which should only be</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">/// modified by StandardAttributes::init() sometime at startup.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">/// It would be desirable to merge this class with scene_rdl2::rdl2::AttributeKey, as they</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">/// serve very similar purposes.</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_attribute_key.html">   42</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1shading_1_1_attribute_key.html">AttributeKey</a></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    finline <a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a75a41ace7bd90693834b1cdb16683dcb">AttributeKey</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">    /// Creates an invalid AttributeKey. In general, this should</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">    /// only be used when the key will be initialized at a later point.</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"></span>    finline <a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a75a41ace7bd90693834b1cdb16683dcb">AttributeKey</a>();</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    finline <a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a75a41ace7bd90693834b1cdb16683dcb">AttributeKey</a>(<span class="keywordtype">int</span> idx);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    finline <a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a75a41ace7bd90693834b1cdb16683dcb">AttributeKey</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_attribute_key.html">AttributeKey</a> &amp;other);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    finline <span class="keywordtype">bool</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a5e6c4e0538b07ecfa893211c06fd3a30">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_attribute_key.html">AttributeKey</a> &amp;other) <span class="keyword">const</span>;</div>
@@ -120,16 +154,18 @@ $(function() {
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">static</span> finline <span class="keywordtype">bool</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a52b3d47df2192de031d40faa890b262d">hasDerivatives</a>(<a class="code hl_class" href="classmoonray_1_1shading_1_1_attribute_key.html">AttributeKey</a> key);</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">static</span> tbb::mutex sRegisterMutex;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; sKeyNames;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">static</span> std::vector&lt;AttributeType&gt; sKeyTypes;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">static</span> std::vector&lt;size_t&gt; sKeySizes;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keyword">static</span> std::vector&lt;int8_t&gt; sHasDerivatives;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">static</span> std::map&lt;std::pair&lt;std::string, AttributeType&gt;, <span class="keywordtype">int</span>&gt; sTable;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> sNumKeys;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_attribute_key.html#aace0aa8c5c3ac082dc76441984d380c8">   92</a></span>    <span class="keyword">static</span> tbb::mutex <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#aace0aa8c5c3ac082dc76441984d380c8">sRegisterMutex</a>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_attribute_key.html#aec6fa7352ba522589237626e6a8a85c5">   93</a></span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#aec6fa7352ba522589237626e6a8a85c5">sKeyNames</a>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_attribute_key.html#a3fa2447e47522a324bfbb5aa837de079">   94</a></span>    <span class="keyword">static</span> std::vector&lt;AttributeType&gt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a3fa2447e47522a324bfbb5aa837de079">sKeyTypes</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_attribute_key.html#a2c2e8d6fa8a4ba3fda156e17cfe4b4e7">   95</a></span>    <span class="keyword">static</span> std::vector&lt;size_t&gt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a2c2e8d6fa8a4ba3fda156e17cfe4b4e7">sKeySizes</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_attribute_key.html#a43e209f8be0ad7a25b32f87bd3ec8f8c">   96</a></span>    <span class="keyword">static</span> std::vector&lt;int8_t&gt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a43e209f8be0ad7a25b32f87bd3ec8f8c">sHasDerivatives</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_attribute_key.html#a39e61c7a2d79edb8c14efb940258a867">   97</a></span>    <span class="keyword">static</span> std::map&lt;std::pair&lt;std::string, AttributeType&gt;, <span class="keywordtype">int</span>&gt; <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a39e61c7a2d79edb8c14efb940258a867">sTable</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_attribute_key.html#a1400e25c322c910684e66b0bad2e3e58">   98</a></span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a1400e25c322c910684e66b0bad2e3e58">sNumKeys</a>;</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>};</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"></span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">/// @class TypedAttributeKey</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">/// @brief A templated version of AttributeKey for type safety when possible</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_typed_attribute_key.html">  104</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1shading_1_1_typed_attribute_key.html">TypedAttributeKey</a> : <span class="keyword">public</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_attribute_key.html">AttributeKey</a></div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>{</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">public</span>:</div>
@@ -143,8 +179,17 @@ $(function() {
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>};</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1shading.html#aba7c4bd4964f07bf247edf29780094f8">  116</a></span><span class="keyword">typedef</span> std::pair&lt;TypedAttributeKey&lt;scene_rdl2::math::Vec3f&gt;, <a class="code hl_enumeration" href="namespacemoonray_1_1shading.html#a2515612dcef606d988489b09047c01dc">Vec3Type</a>&gt; <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#aba7c4bd4964f07bf247edf29780094f8">Vec3KeyType</a>;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_standard_attributes.html">  127</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1shading_1_1_standard_attributes.html">StandardAttributes</a></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment"></span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">/// @class StandardAttributes</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">/// @brief an enumeration of standard primitive attributes that can</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">///     be used directly without further declaration</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">///</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">/// This is an enumeration of all the standard primitive attributes</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">/// that can be used. Additional keys should be added as needed</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">/// (with a corresponding change to init()).</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">/// This list of keys is initialized in init() and init() should be</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">/// called before using any of these keys.</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_standard_attributes.html">  127</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1shading_1_1_standard_attributes.html">StandardAttributes</a></div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>{</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="comment">// Initializes the standard attributes. This function should</span></div>
@@ -197,8 +242,10 @@ $(function() {
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_standard_attributes.html#a37dac578fb97e4ad23bfa55b9d69e487">  177</a></span>    <span class="keyword">static</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_typed_attribute_key.html">TypedAttributeKey&lt;int&gt;</a> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a37dac578fb97e4ad23bfa55b9d69e487">sPolyVertexType</a>; <span class="comment">// PolyVertexType</span></div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_standard_attributes.html#a95999335777f491714dd965be06dbb65">  178</a></span>    <span class="keyword">static</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_typed_attribute_key.html">TypedAttributeKey&lt;int&gt;</a> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a95999335777f491714dd965be06dbb65">sId</a>;</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>};</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_attribute_key_hash.html">  183</a></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1shading_1_1_attribute_key_hash.html">AttributeKeyHash</a></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment"></span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">/// @class AttributeKeyHash</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">/// @brief Hashing class for inserting AttributeKeys into std::unordered_sets</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_attribute_key_hash.html">  183</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classmoonray_1_1shading_1_1_attribute_key_hash.html">AttributeKeyHash</a></div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>{</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_attribute_key_hash.html#ae50b32f0d34f8a94703a1289a724dc41">  186</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key_hash.html#ae50b32f0d34f8a94703a1289a724dc41">operator()</a>(<a class="code hl_class" href="classmoonray_1_1shading_1_1_attribute_key.html">AttributeKey</a> k)<span class="keyword"> const </span>{</div>
@@ -286,8 +333,8 @@ $(function() {
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    }</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    {</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        tbb::mutex::scoped_lock lock(sRegisterMutex);</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        sHasDerivatives[<a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#ab870fdc00b00347178b9f3ae8cd5fc97">mIndex</a>] = 1;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        tbb::mutex::scoped_lock lock(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#aace0aa8c5c3ac082dc76441984d380c8">sRegisterMutex</a>);</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a43e209f8be0ad7a25b32f87bd3ec8f8c">sHasDerivatives</a>[<a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#ab870fdc00b00347178b9f3ae8cd5fc97">mIndex</a>] = 1;</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    }</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>}</div>
@@ -319,22 +366,22 @@ $(function() {
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    std::pair&lt;std::string, AttributeType&gt; <a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a07ff1fc7f08611a058dc961dc83fad14">lookup</a>(name, type);</div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    <span class="keywordtype">int</span> index = -1;</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    {</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        tbb::mutex::scoped_lock lock(sRegisterMutex);</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        <span class="keyword">auto</span> it = sTable.find(<a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a07ff1fc7f08611a058dc961dc83fad14">lookup</a>);</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        <span class="keywordflow">if</span> (it == sTable.end()) {</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>            index = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(sKeyNames.size());</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>            sTable[<a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a07ff1fc7f08611a058dc961dc83fad14">lookup</a>] = index;</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>            sKeyNames.push_back(name);</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>            sKeySizes.push_back(size);</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            sKeyTypes.push_back(type);</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>            sHasDerivatives.push_back(0);</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        tbb::mutex::scoped_lock lock(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#aace0aa8c5c3ac082dc76441984d380c8">sRegisterMutex</a>);</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        <span class="keyword">auto</span> it = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a39e61c7a2d79edb8c14efb940258a867">sTable</a>.find(<a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a07ff1fc7f08611a058dc961dc83fad14">lookup</a>);</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        <span class="keywordflow">if</span> (it == <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a39e61c7a2d79edb8c14efb940258a867">sTable</a>.end()) {</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>            index = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#aec6fa7352ba522589237626e6a8a85c5">sKeyNames</a>.size());</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a39e61c7a2d79edb8c14efb940258a867">sTable</a>[<a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a07ff1fc7f08611a058dc961dc83fad14">lookup</a>] = index;</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#aec6fa7352ba522589237626e6a8a85c5">sKeyNames</a>.push_back(name);</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a2c2e8d6fa8a4ba3fda156e17cfe4b4e7">sKeySizes</a>.push_back(size);</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a3fa2447e47522a324bfbb5aa837de079">sKeyTypes</a>.push_back(type);</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a43e209f8be0ad7a25b32f87bd3ec8f8c">sHasDerivatives</a>.push_back(0);</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>            index = it-&gt;second;</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        }</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#adce208c1f194444ea668f1f4d3563741">requestDerivatives</a> &amp;&amp;</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>            type != scene_rdl2::rdl2::TYPE_BOOL &amp;&amp; type != scene_rdl2::rdl2::TYPE_INT &amp;&amp;</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>            type != scene_rdl2::rdl2::TYPE_LONG &amp;&amp; type != scene_rdl2::rdl2::TYPE_STRING) {</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>            sHasDerivatives[index] = 1;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>            <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a43e209f8be0ad7a25b32f87bd3ec8f8c">sHasDerivatives</a>[index] = 1;</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        }</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    }</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    <span class="keywordflow">return</span> index;</div>
@@ -347,8 +394,8 @@ $(function() {
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    AttributeType type = attributeType&lt;T&gt;();</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    std::pair&lt;std::string, AttributeType&gt; lu(name, type);</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="keyword">auto</span> it = sTable.find(lu);</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <span class="keywordflow">if</span> (it == sTable.end()) {</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="keyword">auto</span> it = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a39e61c7a2d79edb8c14efb940258a867">sTable</a>.find(lu);</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <span class="keywordflow">if</span> (it == <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a39e61c7a2d79edb8c14efb940258a867">sTable</a>.end()) {</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        std::stringstream ss;</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        ss &lt;&lt; <span class="stringliteral">&quot;Key not found:&quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; Type:(&quot;</span> &lt;&lt; type &lt;&lt; <span class="stringliteral">&quot;). Add key before using.&quot;</span>;</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        MNRY_ASSERT(0, ss.str().c_str());</div>
@@ -361,7 +408,7 @@ $(function() {
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_attribute_key.html#ae9c6b9bd81b312ab0029a79825fbb843">  344</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a918aa07b01301bf6a45c4fd47a33b5a8">AttributeKey::isValid</a>(<span class="keywordtype">int</span> index)</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>{</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    <span class="keywordflow">return</span> index &gt;= 0 &amp;&amp; index &lt; (int)sKeyNames.size();</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    <span class="keywordflow">return</span> index &gt;= 0 &amp;&amp; index &lt; (int)<a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#aec6fa7352ba522589237626e6a8a85c5">sKeyNames</a>.size();</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>}</div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
@@ -369,7 +416,7 @@ $(function() {
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_attribute_key.html#ae7e31e5a3956d01ca5e05d7a6d1ae12f">  351</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#ad3a8c7fc2fa1f449eecdb4d7966a582d">AttributeKey::getName</a>(<a class="code hl_class" href="classmoonray_1_1shading_1_1_attribute_key.html">AttributeKey</a> key)</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>{</div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <span class="keywordflow">if</span> (key.<a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a918aa07b01301bf6a45c4fd47a33b5a8">isValid</a>()) {</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        <span class="keywordflow">return</span> sKeyNames[key].c_str();</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#aec6fa7352ba522589237626e6a8a85c5">sKeyNames</a>[key].c_str();</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;INVALID&quot;</span>;</div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    }</div>
@@ -379,7 +426,7 @@ $(function() {
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_attribute_key.html#a51524afb5dcd3d82b673b1958eec68ef">  361</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a9741569f534f40cc3dc272913fceb8b3">AttributeKey::getType</a>(<a class="code hl_class" href="classmoonray_1_1shading_1_1_attribute_key.html">AttributeKey</a> key)</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>{</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    <span class="keywordflow">if</span> (key.<a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a918aa07b01301bf6a45c4fd47a33b5a8">isValid</a>()) {</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        <span class="keywordflow">return</span> sKeyTypes[key];</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a3fa2447e47522a324bfbb5aa837de079">sKeyTypes</a>[key];</div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>        <span class="keywordflow">return</span> scene_rdl2::rdl2::TYPE_UNKNOWN;</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    }</div>
@@ -389,7 +436,7 @@ $(function() {
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_attribute_key.html#aaec148d5ee38c3c892dd9b1540f7db40">  371</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#adaaf112f78237f92a4f8274b6f37f651">AttributeKey::getSize</a>(<a class="code hl_class" href="classmoonray_1_1shading_1_1_attribute_key.html">AttributeKey</a> key)</div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>{</div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    <span class="keywordflow">if</span> (key.<a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a918aa07b01301bf6a45c4fd47a33b5a8">isValid</a>()) {</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>        <span class="keywordflow">return</span> sKeySizes[key];</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a2c2e8d6fa8a4ba3fda156e17cfe4b4e7">sKeySizes</a>[key];</div>
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    }</div>
@@ -399,7 +446,7 @@ $(function() {
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno"><a class="line" href="classmoonray_1_1shading_1_1_attribute_key.html#a45c49fa543c3373a8cc7f9be4a206658">  381</a></span><a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a52b3d47df2192de031d40faa890b262d">AttributeKey::hasDerivatives</a>(<a class="code hl_class" href="classmoonray_1_1shading_1_1_attribute_key.html">AttributeKey</a> key)</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>{</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    <span class="keywordflow">if</span> (key.<a class="code hl_function" href="classmoonray_1_1shading_1_1_attribute_key.html#a918aa07b01301bf6a45c4fd47a33b5a8">isValid</a>()) {</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>        <span class="keywordflow">return</span> sHasDerivatives[key];</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_attribute_key.html#a43e209f8be0ad7a25b32f87bd3ec8f8c">sHasDerivatives</a>[key];</div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    }</div>
@@ -475,17 +522,24 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_hash_html_ae50b32f0d34f8a94703a1289a724dc41"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key_hash.html#ae50b32f0d34f8a94703a1289a724dc41">moonray::shading::AttributeKeyHash::operator()</a></div><div class="ttdeci">size_t operator()(AttributeKey k) const</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00186">AttributeKey.h:186</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html">moonray::shading::AttributeKey</a></div><div class="ttdoc">a light weight index with type/name/size info for fast lookup primitive attributes</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00042">AttributeKey.h:43</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a07ff1fc7f08611a058dc961dc83fad14"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a07ff1fc7f08611a058dc961dc83fad14">moonray::shading::AttributeKey::lookup</a></div><div class="ttdeci">static finline int lookup(const std::string &amp;name)</div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a1400e25c322c910684e66b0bad2e3e58"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a1400e25c322c910684e66b0bad2e3e58">moonray::shading::AttributeKey::sNumKeys</a></div><div class="ttdeci">static int sNumKeys</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00098">AttributeKey.h:98</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a1a739779112ebe0052037796a1561f67"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a1a739779112ebe0052037796a1561f67">moonray::shading::AttributeKey::insertKey</a></div><div class="ttdeci">static finline int insertKey(const std::string &amp;name, bool requestDerivatives)</div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a2c2e8d6fa8a4ba3fda156e17cfe4b4e7"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a2c2e8d6fa8a4ba3fda156e17cfe4b4e7">moonray::shading::AttributeKey::sKeySizes</a></div><div class="ttdeci">static std::vector&lt; size_t &gt; sKeySizes</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00095">AttributeKey.h:95</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a39e61c7a2d79edb8c14efb940258a867"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a39e61c7a2d79edb8c14efb940258a867">moonray::shading::AttributeKey::sTable</a></div><div class="ttdeci">static std::map&lt; std::pair&lt; std::string, AttributeType &gt;, int &gt; sTable</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00097">AttributeKey.h:97</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a3fa2447e47522a324bfbb5aa837de079"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a3fa2447e47522a324bfbb5aa837de079">moonray::shading::AttributeKey::sKeyTypes</a></div><div class="ttdeci">static std::vector&lt; AttributeType &gt; sKeyTypes</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00094">AttributeKey.h:94</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a43e209f8be0ad7a25b32f87bd3ec8f8c"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a43e209f8be0ad7a25b32f87bd3ec8f8c">moonray::shading::AttributeKey::sHasDerivatives</a></div><div class="ttdeci">static std::vector&lt; int8_t &gt; sHasDerivatives</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00096">AttributeKey.h:96</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a4f5b8be7b5fd8be73065c9a24bf92367"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a4f5b8be7b5fd8be73065c9a24bf92367">moonray::shading::AttributeKey::getIndex</a></div><div class="ttdeci">finline int getIndex() const</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00218">AttributeKey.h:218</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a52b3d47df2192de031d40faa890b262d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a52b3d47df2192de031d40faa890b262d">moonray::shading::AttributeKey::hasDerivatives</a></div><div class="ttdeci">finline bool hasDerivatives() const</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00242">AttributeKey.h:242</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a5e6c4e0538b07ecfa893211c06fd3a30"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a5e6c4e0538b07ecfa893211c06fd3a30">moonray::shading::AttributeKey::operator==</a></div><div class="ttdeci">finline bool operator==(const AttributeKey &amp;other) const</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00212">AttributeKey.h:212</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a75a41ace7bd90693834b1cdb16683dcb"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a75a41ace7bd90693834b1cdb16683dcb">moonray::shading::AttributeKey::AttributeKey</a></div><div class="ttdeci">finline AttributeKey()</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00195">AttributeKey.h:195</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a918aa07b01301bf6a45c4fd47a33b5a8"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a918aa07b01301bf6a45c4fd47a33b5a8">moonray::shading::AttributeKey::isValid</a></div><div class="ttdeci">finline bool isValid() const</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00253">AttributeKey.h:253</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_a9741569f534f40cc3dc272913fceb8b3"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#a9741569f534f40cc3dc272913fceb8b3">moonray::shading::AttributeKey::getType</a></div><div class="ttdeci">finline AttributeType getType() const</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00236">AttributeKey.h:236</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_aace0aa8c5c3ac082dc76441984d380c8"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#aace0aa8c5c3ac082dc76441984d380c8">moonray::shading::AttributeKey::sRegisterMutex</a></div><div class="ttdeci">static tbb::mutex sRegisterMutex</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00092">AttributeKey.h:92</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_ab870fdc00b00347178b9f3ae8cd5fc97"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#ab870fdc00b00347178b9f3ae8cd5fc97">moonray::shading::AttributeKey::mIndex</a></div><div class="ttdeci">int mIndex</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00070">AttributeKey.h:70</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_ad3a8c7fc2fa1f449eecdb4d7966a582d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#ad3a8c7fc2fa1f449eecdb4d7966a582d">moonray::shading::AttributeKey::getName</a></div><div class="ttdeci">finline const char * getName() const</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00230">AttributeKey.h:230</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_adaaf112f78237f92a4f8274b6f37f651"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#adaaf112f78237f92a4f8274b6f37f651">moonray::shading::AttributeKey::getSize</a></div><div class="ttdeci">finline size_t getSize() const</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00224">AttributeKey.h:224</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_adce208c1f194444ea668f1f4d3563741"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#adce208c1f194444ea668f1f4d3563741">moonray::shading::AttributeKey::requestDerivatives</a></div><div class="ttdeci">finline bool requestDerivatives() const</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00259">AttributeKey.h:259</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_attribute_key_html_aec6fa7352ba522589237626e6a8a85c5"><div class="ttname"><a href="classmoonray_1_1shading_1_1_attribute_key.html#aec6fa7352ba522589237626e6a8a85c5">moonray::shading::AttributeKey::sKeyNames</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; sKeyNames</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00093">AttributeKey.h:93</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_standard_attributes_html"><div class="ttname"><a href="classmoonray_1_1shading_1_1_standard_attributes.html">moonray::shading::StandardAttributes</a></div><div class="ttdoc">an enumeration of standard primitive attributes that can be used directly without further declaration</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00127">AttributeKey.h:128</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_standard_attributes_html_a0b65ec43b0cddfab8e5e22324cf22585"><div class="ttname"><a href="classmoonray_1_1shading_1_1_standard_attributes.html#a0b65ec43b0cddfab8e5e22324cf22585">moonray::shading::StandardAttributes::sInstanceTransformLevel4</a></div><div class="ttdeci">static TypedAttributeKey&lt; scene_rdl2::math::Mat4f &gt; sInstanceTransformLevel4</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00164">AttributeKey.h:164</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_standard_attributes_html_a156faaa9b45321a824aba2a148b324c5"><div class="ttname"><a href="classmoonray_1_1shading_1_1_standard_attributes.html#a156faaa9b45321a824aba2a148b324c5">moonray::shading::StandardAttributes::sInstanceTransformLevel1</a></div><div class="ttdeci">static TypedAttributeKey&lt; scene_rdl2::math::Mat4f &gt; sInstanceTransformLevel1</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00161">AttributeKey.h:161</a></div></div>
@@ -532,9 +586,13 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_1_1shading_html_acd21779e00acbbeab334b9d08512607c"><div class="ttname"><a href="namespacemoonray_1_1shading.html#acd21779e00acbbeab334b9d08512607c">moonray::shading::AttributeKeySet</a></div><div class="ttdeci">std::unordered_set&lt; AttributeKey, AttributeKeyHash &gt; AttributeKeySet</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_key_8h_source.html#l00191">AttributeKey.h:191</a></div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_b14206e23fbe78be729adaae3c0369fc.html">bvh</a></li><li class="navelem"><a class="el" href="dir_499edcba0d3485301ece78066854f3d4.html">shading</a></li><li class="navelem"><a class="el" href="_attribute_key_8h.html">AttributeKey.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

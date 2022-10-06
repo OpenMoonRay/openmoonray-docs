@@ -1,0 +1,5 @@
+var structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_thread_local_state_8cc_03_1_1_frame_update_t_l_s_proxy =
+[
+    [ "FrameUpdateTLSProxy", "structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_thread_local_state_8cc_03_1_1_frame_update_t_l_s_proxy.html#a9cbb6071c8d072d32b8dc777e60c535a", null ],
+    [ "mTLSIndex", "structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_thread_local_state_8cc_03_1_1_frame_update_t_l_s_proxy.html#ad700e2b4be7c213b60a1dea4fbd37ca9", null ]
+];

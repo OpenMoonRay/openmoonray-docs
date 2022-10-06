@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,20 +42,38 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_dir_tree.html">DirTree</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_dir_tree.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1pbr_1_1_dir_tree-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::pbr::DirTree Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html">Tree</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8c2d5b1618a610f05cec278c8d91e374"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_dir_tree.html#a8c2d5b1618a610f05cec278c8d91e374">DirTree</a> ()</td></tr>
@@ -72,6 +94,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8357e47866f16f41c210e486de2894dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d58dfad00dcab8f11737428031830b0"><td class="memItemLeft" align="right" valign="top">Vec3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_dir_tree.html#a5d58dfad00dcab8f11737428031830b0">sampleDirection</a> (float r1, float r2) const</td></tr>
 <tr class="separator:a5d58dfad00dcab8f11737428031830b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a72e8dcf19625119aefd719e729c14a29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html">Tree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a></td></tr>
+<tr class="separator:a72e8dcf19625119aefd719e729c14a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a42d6cc6dde9f19e03509addfeb668"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html">Tree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_dir_tree.html#ad4a42d6cc6dde9f19e03509addfeb668">mSample</a></td></tr>
+<tr class="separator:ad4a42d6cc6dde9f19e03509addfeb668"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -93,7 +122,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_path_guide_8cc_source.html#l00253">253</a> of file <a class="el" href="_path_guide_8cc_source.html">PathGuide.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  254</span>{</div>
+<div class="line"><span class="lineno">  255</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6f877ecc5349a8d4b5f10fd5f501b36b" name="a6f877ecc5349a8d4b5f10fd5f501b36b"></a>
@@ -112,7 +143,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_path_guide_8cc_source.html#l00257">257</a> of file <a class="el" href="_path_guide_8cc_source.html">PathGuide.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  258</span>{</div>
+<div class="line"><span class="lineno">  259</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -132,7 +165,17 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_path_guide_8cc_source.html#l00368">368</a> of file <a class="el" href="_path_guide_8cc_source.html">PathGuide.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  369</span>{</div>
+<div class="line"><span class="lineno">  370</span>    <span class="comment">// This method is called during a pass reset.</span></div>
+<div class="line"><span class="lineno">  371</span>    <span class="comment">// mBuild is copied into mSample.  A new topology (refined or coarser)</span></div>
+<div class="line"><span class="lineno">  372</span>    <span class="comment">// for mBuild will be computed in reset() based on mSample.</span></div>
+<div class="line"><span class="lineno">  373</span>    <span class="comment">// We need to make a copy, because mBuild will be modified as the spatial</span></div>
+<div class="line"><span class="lineno">  374</span>    <span class="comment">// tree is refined, but before the new mBuild topology is computed.</span></div>
+<div class="line"><span class="lineno">  375</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#ad4a42d6cc6dde9f19e03509addfeb668">mSample</a> = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>;</div>
+<div class="line"><span class="lineno">  376</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_dir_tree_html_a72e8dcf19625119aefd719e729c14a29"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">moonray::pbr::DirTree::mBuild</a></div><div class="ttdeci">Tree mBuild</div><div class="ttdef"><b>Definition:</b> <a href="_path_guide_8cc_source.html#l00092">PathGuide.cc:92</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_dir_tree_html_ad4a42d6cc6dde9f19e03509addfeb668"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_dir_tree.html#ad4a42d6cc6dde9f19e03509addfeb668">moonray::pbr::DirTree::mSample</a></div><div class="ttdeci">Tree mSample</div><div class="ttdef"><b>Definition:</b> <a href="_path_guide_8cc_source.html#l00093">PathGuide.cc:93</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a000ee96a9d0d2913b18f23dee2951f41" name="a000ee96a9d0d2913b18f23dee2951f41"></a>
@@ -151,7 +194,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_path_guide_8cc_source.html#l00268">268</a> of file <a class="el" href="_path_guide_8cc_source.html">PathGuide.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  269</span>{</div>
+<div class="line"><span class="lineno">  270</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_function" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#aa21e7c1a2c15de48c234d6865e35800e">getNumSamples</a>();</div>
+<div class="line"><span class="lineno">  271</span>}</div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_dir_tree_1_1_tree_html_aa21e7c1a2c15de48c234d6865e35800e"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#aa21e7c1a2c15de48c234d6865e35800e">moonray::pbr::DirTree::Tree::getNumSamples</a></div><div class="ttdeci">uint64_t getNumSamples() const</div><div class="ttdef"><b>Definition:</b> <a href="_path_guide_8cc_source.html#l00211">PathGuide.cc:211</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8357e47866f16f41c210e486de2894dd" name="a8357e47866f16f41c210e486de2894dd"></a>
@@ -171,7 +218,54 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_path_guide_8cc_source.html#l00379">379</a> of file <a class="el" href="_path_guide_8cc_source.html">PathGuide.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  380</span>{</div>
+<div class="line"><span class="lineno">  381</span>    <span class="comment">// Use the sample tree</span></div>
+<div class="line"><span class="lineno">  382</span> </div>
+<div class="line"><span class="lineno">  383</span>    <span class="comment">// First check for an empty (or nearly empty) tree</span></div>
+<div class="line"><span class="lineno">  384</span>    <span class="comment">// in which case, we&#39;ll just use spherical sampling</span></div>
+<div class="line"><span class="lineno">  385</span>    <span class="keyword">const</span> <span class="keyword">auto</span> numSamples = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#ad4a42d6cc6dde9f19e03509addfeb668">mSample</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#a602c1f537b5a76e72ec512f41afb117b">mNumSamples</a>.load(std::memory_order_acquire);</div>
+<div class="line"><span class="lineno">  386</span>    <span class="keyword">const</span> <span class="keyword">auto</span> sum = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#ad4a42d6cc6dde9f19e03509addfeb668">mSample</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#a3edb4f7d7ae21ff373071c09104f1ed9">mSum</a>.load(std::memory_order_acquire);</div>
+<div class="line"><span class="lineno">  387</span>    <span class="keywordflow">if</span> (numSamples == 0 || (sum / (scene_rdl2::math::sFourPi * numSamples)) == 0.0f) {</div>
+<div class="line"><span class="lineno">  388</span>        <span class="keywordflow">return</span> scene_rdl2::math::sOneOverFourPi;</div>
+<div class="line"><span class="lineno">  389</span>    }</div>
+<div class="line"><span class="lineno">  390</span> </div>
+<div class="line"><span class="lineno">  391</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> pos = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#adbc8e7692faec3e57647b6d3af7742b1">dirToPos</a>(dir);</div>
+<div class="line"><span class="lineno">  392</span> </div>
+<div class="line"><span class="lineno">  393</span>    <span class="comment">// recurse into the nodes</span></div>
+<div class="line"><span class="lineno">  394</span>    <span class="keywordtype">float</span> pdf = scene_rdl2::math::sOneOverFourPi;</div>
+<div class="line"><span class="lineno">  395</span>    uint64_t index = 0; <span class="comment">// start at the root</span></div>
+<div class="line"><span class="lineno">  396</span>    <span class="keywordflow">do</span> {</div>
+<div class="line"><span class="lineno">  397</span>        <span class="comment">// which quadrant?</span></div>
+<div class="line"><span class="lineno">  398</span>        <span class="keyword">const</span> uint32_t i = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a1fddb4e982fe6a68f074c7f40c526f71">getChildIndexAndRemap</a>(pos); <span class="comment">// 0, 1, 2, or 3</span></div>
+<div class="line"><span class="lineno">  399</span> </div>
+<div class="line"><span class="lineno">  400</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#ad4a42d6cc6dde9f19e03509addfeb668">mSample</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac5d3dfddfd7cb2f46b0b3910a030d619">mNodes</a>[index].mMean[i].load(std::memory_order_acquire) &lt;= 0.f) {</div>
+<div class="line"><span class="lineno">  401</span>            <span class="keywordflow">return</span> 0; <span class="comment">// invalid pdf</span></div>
+<div class="line"><span class="lineno">  402</span>        }</div>
+<div class="line"><span class="lineno">  403</span> </div>
+<div class="line"><span class="lineno">  404</span>        <span class="keywordtype">float</span> total = 0.f;</div>
+<div class="line"><span class="lineno">  405</span>        <span class="keywordflow">for</span> (uint32_t j = 0; j &lt; 4; ++j) {</div>
+<div class="line"><span class="lineno">  406</span>            total += <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#ad4a42d6cc6dde9f19e03509addfeb668">mSample</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac5d3dfddfd7cb2f46b0b3910a030d619">mNodes</a>[index].mMean[j].load(std::memory_order_acquire);</div>
+<div class="line"><span class="lineno">  407</span>        }</div>
+<div class="line"><span class="lineno">  408</span>        <span class="comment">// Why the 4.0f?</span></div>
+<div class="line"><span class="lineno">  409</span>        <span class="comment">// The domain is the unit square.  Broken into</span></div>
+<div class="line"><span class="lineno">  410</span>        <span class="comment">// four quadrants - each with area of 1/4.</span></div>
+<div class="line"><span class="lineno">  411</span>        <span class="comment">// mean[0]/total + mean[1]/total + mean[2]/total + mean[3]/total = 1.</span></div>
+<div class="line"><span class="lineno">  412</span>        <span class="comment">//        A               B               C               D</span></div>
+<div class="line"><span class="lineno">  413</span>        <span class="comment">// Total integral value is A/4 + B/4 + C/4 + D/4 = (A + B + C + D)/4.</span></div>
+<div class="line"><span class="lineno">  414</span>        pdf *= (4.0f * <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#ad4a42d6cc6dde9f19e03509addfeb668">mSample</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac5d3dfddfd7cb2f46b0b3910a030d619">mNodes</a>[index].mMean[i].load(std::memory_order_acquire) / total);</div>
+<div class="line"><span class="lineno">  415</span> </div>
+<div class="line"><span class="lineno">  416</span>        index = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#ad4a42d6cc6dde9f19e03509addfeb668">mSample</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac5d3dfddfd7cb2f46b0b3910a030d619">mNodes</a>[index].mChildren[i];</div>
+<div class="line"><span class="lineno">  417</span>    } <span class="keywordflow">while</span> (index != 0); <span class="comment">// until we hit a leaf</span></div>
+<div class="line"><span class="lineno">  418</span> </div>
+<div class="line"><span class="lineno">  419</span>    <span class="keywordflow">return</span> pdf;</div>
+<div class="line"><span class="lineno">  420</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a8ff976ca38d834d434f1d00f2a03359b"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">moonray::geom::Vec2f</a></div><div class="ttdeci">scene_rdl2::math::Vec2f Vec2f</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_types_8h_source.html#l00038">Types.h:38</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a1fddb4e982fe6a68f074c7f40c526f71"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a1fddb4e982fe6a68f074c7f40c526f71">moonray::pbr::getChildIndexAndRemap</a></div><div class="ttdeci">static uint32_t getChildIndexAndRemap(Vec2f &amp;pos)</div><div class="ttdef"><b>Definition:</b> <a href="_path_guide_8cc_source.html#l00129">PathGuide.cc:129</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_adbc8e7692faec3e57647b6d3af7742b1"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#adbc8e7692faec3e57647b6d3af7742b1">moonray::pbr::dirToPos</a></div><div class="ttdeci">static Vec2f dirToPos(const Vec3f &amp;dir)</div><div class="ttdef"><b>Definition:</b> <a href="_path_guide_8cc_source.html#l00099">PathGuide.cc:99</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_dir_tree_1_1_tree_html_a3edb4f7d7ae21ff373071c09104f1ed9"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#a3edb4f7d7ae21ff373071c09104f1ed9">moonray::pbr::DirTree::Tree::mSum</a></div><div class="ttdeci">std::atomic&lt; float &gt; mSum</div><div class="ttdef"><b>Definition:</b> <a href="_path_guide_8cc_source.html#l00085">PathGuide.cc:85</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_dir_tree_1_1_tree_html_a602c1f537b5a76e72ec512f41afb117b"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#a602c1f537b5a76e72ec512f41afb117b">moonray::pbr::DirTree::Tree::mNumSamples</a></div><div class="ttdeci">std::atomic&lt; uint64_t &gt; mNumSamples</div><div class="ttdef"><b>Definition:</b> <a href="_path_guide_8cc_source.html#l00084">PathGuide.cc:84</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_dir_tree_1_1_tree_html_ac5d3dfddfd7cb2f46b0b3910a030d619"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac5d3dfddfd7cb2f46b0b3910a030d619">moonray::pbr::DirTree::Tree::mNodes</a></div><div class="ttdeci">std::vector&lt; Node &gt; mNodes</div><div class="ttdef"><b>Definition:</b> <a href="_path_guide_8cc_source.html#l00082">PathGuide.cc:82</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abbd6cf034f4fd47e24da3886055d3222" name="abbd6cf034f4fd47e24da3886055d3222"></a>
@@ -201,7 +295,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_path_guide_8cc_source.html#l00274">274</a> of file <a class="el" href="_path_guide_8cc_source.html">PathGuide.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  275</span>{</div>
+<div class="line"><span class="lineno">  276</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> pos = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#adbc8e7692faec3e57647b6d3af7742b1">dirToPos</a>(dir);</div>
+<div class="line"><span class="lineno">  277</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_function" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#aee31c67d563a0df6ef4a88496347e78b">recordRadiance</a>(pos, radiance);</div>
+<div class="line"><span class="lineno">  278</span>}</div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_dir_tree_1_1_tree_html_aee31c67d563a0df6ef4a88496347e78b"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#aee31c67d563a0df6ef4a88496347e78b">moonray::pbr::DirTree::Tree::recordRadiance</a></div><div class="ttdeci">void recordRadiance(const Vec2f &amp;pos, const Color &amp;radiance)</div><div class="ttdef"><b>Definition:</b> <a href="_path_guide_8cc_source.html#l00223">PathGuide.cc:223</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac158c5f053a2b089313baefc546428a0" name="ac158c5f053a2b089313baefc546428a0"></a>
@@ -231,7 +330,92 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_path_guide_8cc_source.html#l00281">281</a> of file <a class="el" href="_path_guide_8cc_source.html">PathGuide.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  282</span>{</div>
+<div class="line"><span class="lineno">  283</span>    <span class="comment">// This method is called during a passReset() after a call to build().  It</span></div>
+<div class="line"><span class="lineno">  284</span>    <span class="comment">// computes the topology of a new mBuild to a refined (or coarser)</span></div>
+<div class="line"><span class="lineno">  285</span>    <span class="comment">// version of mSample</span></div>
+<div class="line"><span class="lineno">  286</span> </div>
+<div class="line"><span class="lineno">  287</span>    <span class="comment">// First, initialize mBuild with a single root node</span></div>
+<div class="line"><span class="lineno">  288</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac5d3dfddfd7cb2f46b0b3910a030d619">mNodes</a>.clear();</div>
+<div class="line"><span class="lineno">  289</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac5d3dfddfd7cb2f46b0b3910a030d619">mNodes</a>.resize(1);</div>
+<div class="line"><span class="lineno">  290</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#a0f760c8922d0854a8eabafae87e60d07">mMaxDepth</a> = 0;</div>
+<div class="line"><span class="lineno">  291</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#a602c1f537b5a76e72ec512f41afb117b">mNumSamples</a>.store(0, std::memory_order_relaxed); <span class="comment">// No dependencies</span></div>
+<div class="line"><span class="lineno">  292</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#a3edb4f7d7ae21ff373071c09104f1ed9">mSum</a>.store(0.f, std::memory_order_relaxed);      <span class="comment">// No dependencies</span></div>
+<div class="line"><span class="lineno">  293</span> </div>
+<div class="line"><span class="lineno">  294</span>    <span class="comment">// Build up mBuild as a refined version of mSample.  mSample is traversed</span></div>
+<div class="line"><span class="lineno">  295</span>    <span class="comment">// in depth first order and is refined if enough total energy exists</span></div>
+<div class="line"><span class="lineno">  296</span>    <span class="comment">// (based on threshold) in a node and we are within the maxDepth parameter</span></div>
+<div class="line"><span class="lineno">  297</span>    <span class="keyword">struct </span>StackItem {</div>
+<div class="line"><span class="lineno">  298</span>        uint64_t mBuildIndex;  <span class="comment">// index of node we are building (in mBuild)</span></div>
+<div class="line"><span class="lineno">  299</span>        uint64_t mSourceIndex; <span class="comment">// index of node we may subdivide</span></div>
+<div class="line"><span class="lineno">  300</span>        Tree *mSourceTree;     <span class="comment">// tree that source node belongs to (could be sample or build)</span></div>
+<div class="line"><span class="lineno">  301</span>        <span class="keywordtype">int</span> mDepth;            <span class="comment">// depth of node</span></div>
+<div class="line"><span class="lineno">  302</span>    };</div>
+<div class="line"><span class="lineno">  303</span> </div>
+<div class="line"><span class="lineno">  304</span>    std::stack&lt;StackItem&gt; todo;</div>
+<div class="line"><span class="lineno">  305</span>    todo.push({ 0, 0, &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#ad4a42d6cc6dde9f19e03509addfeb668">mSample</a>, 1 });</div>
+<div class="line"><span class="lineno">  306</span> </div>
+<div class="line"><span class="lineno">  307</span>    <span class="comment">// total energy in mSample tree, we&#39;ll subdivide when any node fraction of this</span></div>
+<div class="line"><span class="lineno">  308</span>    <span class="comment">// value exceeds threshold</span></div>
+<div class="line"><span class="lineno">  309</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> nodeThreshold = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#ad4a42d6cc6dde9f19e03509addfeb668">mSample</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#a3edb4f7d7ae21ff373071c09104f1ed9">mSum</a>.load(std::memory_order_acquire) * threshold;</div>
+<div class="line"><span class="lineno">  310</span> </div>
+<div class="line"><span class="lineno">  311</span>    <span class="keywordflow">while</span> (!todo.empty()) {</div>
+<div class="line"><span class="lineno">  312</span>        StackItem sItem = todo.top();</div>
+<div class="line"><span class="lineno">  313</span>        todo.pop();</div>
+<div class="line"><span class="lineno">  314</span> </div>
+<div class="line"><span class="lineno">  315</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#a0f760c8922d0854a8eabafae87e60d07">mMaxDepth</a> = std::max(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#a0f760c8922d0854a8eabafae87e60d07">mMaxDepth</a>, sItem.mDepth);</div>
+<div class="line"><span class="lineno">  316</span>        Tree::Node &amp;sourceNode = sItem.mSourceTree-&gt;mNodes[sItem.mSourceIndex];</div>
+<div class="line"><span class="lineno">  317</span> </div>
+<div class="line"><span class="lineno">  318</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 4; ++i) {</div>
+<div class="line"><span class="lineno">  319</span>            <span class="comment">// We&#39;ll acquire here to sync with any previously run threads.</span></div>
+<div class="line"><span class="lineno">  320</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> sourceNodeMean = sourceNode.mMean[i].load(std::memory_order_acquire);</div>
+<div class="line"><span class="lineno">  321</span>            <span class="keywordflow">if</span> (sItem.mDepth &lt; maxDepth &amp;&amp; sourceNodeMean &gt; nodeThreshold) {</div>
+<div class="line"><span class="lineno">  322</span>                <span class="comment">// if this quadrant is not a leaf in the source node, push the child</span></div>
+<div class="line"><span class="lineno">  323</span>                <span class="comment">// onto the stack.  note that the only case where the source node</span></div>
+<div class="line"><span class="lineno">  324</span>                <span class="comment">// cannot be a leaf is if the source node comes from the sample tree.</span></div>
+<div class="line"><span class="lineno">  325</span>                <span class="keywordflow">if</span> (sourceNode.mChildren[i] != 0) {</div>
+<div class="line"><span class="lineno">  326</span>                    <span class="comment">// not a leaf.</span></div>
+<div class="line"><span class="lineno">  327</span>                    MNRY_ASSERT(sItem.mSourceTree == &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#ad4a42d6cc6dde9f19e03509addfeb668">mSample</a>);</div>
+<div class="line"><span class="lineno">  328</span>                    todo.push({ <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac5d3dfddfd7cb2f46b0b3910a030d619">mNodes</a>.size(), sourceNode.mChildren[i], sItem.mSourceTree, sItem.mDepth + 1 });</div>
+<div class="line"><span class="lineno">  329</span>                } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  330</span>                    <span class="comment">// is a leaf. could be from mBuild or mSample</span></div>
+<div class="line"><span class="lineno">  331</span>                    todo.push({ <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac5d3dfddfd7cb2f46b0b3910a030d619">mNodes</a>.size(), <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac5d3dfddfd7cb2f46b0b3910a030d619">mNodes</a>.size(), &amp;<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>, sItem.mDepth + 1 });</div>
+<div class="line"><span class="lineno">  332</span>                }</div>
+<div class="line"><span class="lineno">  333</span> </div>
+<div class="line"><span class="lineno">  334</span>                <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac5d3dfddfd7cb2f46b0b3910a030d619">mNodes</a>[sItem.mBuildIndex].mChildren[i] = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac5d3dfddfd7cb2f46b0b3910a030d619">mNodes</a>.size());</div>
+<div class="line"><span class="lineno">  335</span>                <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac5d3dfddfd7cb2f46b0b3910a030d619">mNodes</a>.emplace_back(); <span class="comment">// add node</span></div>
+<div class="line"><span class="lineno">  336</span>                <span class="comment">// spread the energy evenly among the new node&#39;s quadrants</span></div>
+<div class="line"><span class="lineno">  337</span>                <span class="keyword">const</span> <span class="keywordtype">float</span> newMean = sourceNodeMean * 0.25f;</div>
+<div class="line"><span class="lineno">  338</span>                Tree::Node &amp;newNode = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac5d3dfddfd7cb2f46b0b3910a030d619">mNodes</a>.back();</div>
+<div class="line"><span class="lineno">  339</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; 4; ++j) {</div>
+<div class="line"><span class="lineno">  340</span>                    <span class="comment">// We&#39;re creating new nodes: we have no dependencies: relaxed ordering</span></div>
+<div class="line"><span class="lineno">  341</span>                    newNode.mMean[j].store(newMean, std::memory_order_relaxed);</div>
+<div class="line"><span class="lineno">  342</span>                }</div>
+<div class="line"><span class="lineno">  343</span> </div>
+<div class="line"><span class="lineno">  344</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac5d3dfddfd7cb2f46b0b3910a030d619">mNodes</a>.size() &gt; std::numeric_limits&lt;uint32_t&gt;::max()) {</div>
+<div class="line"><span class="lineno">  345</span>                    scene_rdl2::Logger::warn(<span class="stringliteral">&quot;DirTree hit max children count.&quot;</span>);</div>
+<div class="line"><span class="lineno">  346</span>                    todo = std::stack&lt;StackItem&gt;();</div>
+<div class="line"><span class="lineno">  347</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  348</span>                }</div>
+<div class="line"><span class="lineno">  349</span>                </div>
+<div class="line"><span class="lineno">  350</span>            }</div>
+<div class="line"><span class="lineno">  351</span>        }</div>
+<div class="line"><span class="lineno">  352</span>    }</div>
+<div class="line"><span class="lineno">  353</span> </div>
+<div class="line"><span class="lineno">  354</span>    <span class="comment">// now set all the energy to 0</span></div>
+<div class="line"><span class="lineno">  355</span>    <span class="keywordflow">for</span> (Tree::Node &amp;node : <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac5d3dfddfd7cb2f46b0b3910a030d619">mNodes</a>) {</div>
+<div class="line"><span class="lineno">  356</span>        <span class="comment">// No dependencies: relaxed ordering</span></div>
+<div class="line"><span class="lineno">  357</span>        node.mMean[0].store(0.0f, std::memory_order_relaxed);</div>
+<div class="line"><span class="lineno">  358</span>        node.mMean[1].store(0.0f, std::memory_order_relaxed);</div>
+<div class="line"><span class="lineno">  359</span>        node.mMean[2].store(0.0f, std::memory_order_relaxed);</div>
+<div class="line"><span class="lineno">  360</span>        node.mMean[3].store(0.0f, std::memory_order_relaxed);</div>
+<div class="line"><span class="lineno">  361</span>    }</div>
+<div class="line"><span class="lineno">  362</span> </div>
+<div class="line"><span class="lineno">  363</span>    <span class="comment">// I experimented with mBuild.mNodes.shrink_to_fit().  But this</span></div>
+<div class="line"><span class="lineno">  364</span>    <span class="comment">// actually caused the renderer to use more memory in my test cases.</span></div>
+<div class="line"><span class="lineno">  365</span>}</div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_dir_tree_1_1_tree_html_a0f760c8922d0854a8eabafae87e60d07"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#a0f760c8922d0854a8eabafae87e60d07">moonray::pbr::DirTree::Tree::mMaxDepth</a></div><div class="ttdeci">int mMaxDepth</div><div class="ttdef"><b>Definition:</b> <a href="_path_guide_8cc_source.html#l00083">PathGuide.cc:83</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5d58dfad00dcab8f11737428031830b0" name="a5d58dfad00dcab8f11737428031830b0"></a>
@@ -261,7 +445,92 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_path_guide_8cc_source.html#l00440">440</a> of file <a class="el" href="_path_guide_8cc_source.html">PathGuide.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  441</span>{</div>
+<div class="line"><span class="lineno">  442</span>    <span class="comment">// Use the sample tree</span></div>
+<div class="line"><span class="lineno">  443</span> </div>
+<div class="line"><span class="lineno">  444</span>    <span class="comment">// in some cases we may return just a random direction</span></div>
+<div class="line"><span class="lineno">  445</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> rpos(r1, r2);  <span class="comment">// random quad position</span></div>
+<div class="line"><span class="lineno">  446</span> </div>
+<div class="line"><span class="lineno">  447</span>    <span class="comment">// First check for an empty tree</span></div>
+<div class="line"><span class="lineno">  448</span>    <span class="comment">// in which case, we&#39;ll just use spherical sampling</span></div>
+<div class="line"><span class="lineno">  449</span>    <span class="keyword">const</span> <span class="keyword">auto</span> numSamples = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#ad4a42d6cc6dde9f19e03509addfeb668">mSample</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#a602c1f537b5a76e72ec512f41afb117b">mNumSamples</a>.load(std::memory_order_acquire);</div>
+<div class="line"><span class="lineno">  450</span>    <span class="keyword">const</span> <span class="keyword">auto</span> sum = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#ad4a42d6cc6dde9f19e03509addfeb668">mSample</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#a3edb4f7d7ae21ff373071c09104f1ed9">mSum</a>.load(std::memory_order_acquire);</div>
+<div class="line"><span class="lineno">  451</span>    <span class="keywordflow">if</span> (numSamples == 0 || (sum / (scene_rdl2::math::sFourPi * numSamples)) == 0.0f) {</div>
+<div class="line"><span class="lineno">  452</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a2a67c2b95baaa8587a6f23bfbb09683b">posToDir</a>(rpos);</div>
+<div class="line"><span class="lineno">  453</span>    }</div>
+<div class="line"><span class="lineno">  454</span> </div>
+<div class="line"><span class="lineno">  455</span>    <span class="comment">// recurse into the sample nodes</span></div>
+<div class="line"><span class="lineno">  456</span>    <span class="comment">// Pick quadtree children based on their mean value, compared</span></div>
+<div class="line"><span class="lineno">  457</span>    <span class="comment">// to the random sample values.</span></div>
+<div class="line"><span class="lineno">  458</span>    uint64_t index = 0; <span class="comment">// start at the root</span></div>
+<div class="line"><span class="lineno">  459</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> pos = <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a>(0.f, 0.f);</div>
+<div class="line"><span class="lineno">  460</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a> = rpos;</div>
+<div class="line"><span class="lineno">  461</span>    <span class="keywordtype">float</span> scale = 1.0f; <span class="comment">// halved with each recursion</span></div>
+<div class="line"><span class="lineno">  462</span>    <span class="keywordflow">do</span> {</div>
+<div class="line"><span class="lineno">  463</span>        <span class="keyword">const</span> Tree::Node &amp;node = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#ad4a42d6cc6dde9f19e03509addfeb668">mSample</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac5d3dfddfd7cb2f46b0b3910a030d619">mNodes</a>[index];</div>
+<div class="line"><span class="lineno">  464</span> </div>
+<div class="line"><span class="lineno">  465</span>        <span class="comment">// compute a quadrant, as well as a location in</span></div>
+<div class="line"><span class="lineno">  466</span>        <span class="comment">// the quadrant</span></div>
+<div class="line"><span class="lineno">  467</span>        <span class="keywordtype">int</span> quadrant = 0;               <span class="comment">// quadrant in node 0, 1, 2, or 3</span></div>
+<div class="line"><span class="lineno">  468</span>        <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a8ff976ca38d834d434f1d00f2a03359b">Vec2f</a> quadrantOrigin(0.f, 0.f); <span class="comment">// [0 or .5, 0 or .5]</span></div>
+<div class="line"><span class="lineno">  469</span> </div>
+<div class="line"><span class="lineno">  470</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> topLeft  = node.mMean[0].load(std::memory_order_acquire);</div>
+<div class="line"><span class="lineno">  471</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> topRight = node.mMean[1].load(std::memory_order_acquire);</div>
+<div class="line"><span class="lineno">  472</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> botLeft  = node.mMean[2].load(std::memory_order_acquire);</div>
+<div class="line"><span class="lineno">  473</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> botRight = node.mMean[3].load(std::memory_order_acquire);</div>
+<div class="line"><span class="lineno">  474</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> total = topLeft + topRight + botLeft + botRight;</div>
+<div class="line"><span class="lineno">  475</span> </div>
+<div class="line"><span class="lineno">  476</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a036fe8198036569c5d9aa9796ea420c7">checkForZero</a>(total, index, rpos, pos)) <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  477</span> </div>
+<div class="line"><span class="lineno">  478</span>        <span class="comment">// first the x-axis, re-normalizing sample</span></div>
+<div class="line"><span class="lineno">  479</span>        <span class="comment">// as needed</span></div>
+<div class="line"><span class="lineno">  480</span>        <span class="keywordtype">float</span> partial = topLeft + botLeft;</div>
+<div class="line"><span class="lineno">  481</span>        <span class="keywordtype">float</span> boundary = partial / total;</div>
+<div class="line"><span class="lineno">  482</span> </div>
+<div class="line"><span class="lineno">  483</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.x &lt; boundary) {</div>
+<div class="line"><span class="lineno">  484</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a036fe8198036569c5d9aa9796ea420c7">checkForZero</a>(boundary, index, rpos, pos)) <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  485</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.x /= boundary;</div>
+<div class="line"><span class="lineno">  486</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a036fe8198036569c5d9aa9796ea420c7">checkForZero</a>(partial, index, rpos, pos)) <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  487</span>            boundary = topLeft / partial;</div>
+<div class="line"><span class="lineno">  488</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  489</span>            partial = total - partial;</div>
+<div class="line"><span class="lineno">  490</span>            quadrantOrigin.x = 0.5f;</div>
+<div class="line"><span class="lineno">  491</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a036fe8198036569c5d9aa9796ea420c7">checkForZero</a>(1.0f - boundary, index, rpos, pos)) <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  492</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.x = (<a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.x - boundary) / (1.0f - boundary);</div>
+<div class="line"><span class="lineno">  493</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a036fe8198036569c5d9aa9796ea420c7">checkForZero</a>(partial, index, rpos, pos)) <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  494</span>            boundary = topRight / partial;</div>
+<div class="line"><span class="lineno">  495</span>            quadrant |= 1;</div>
+<div class="line"><span class="lineno">  496</span>        }</div>
+<div class="line"><span class="lineno">  497</span> </div>
+<div class="line"><span class="lineno">  498</span>        <span class="comment">// now split the y axis</span></div>
+<div class="line"><span class="lineno">  499</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.y &lt; boundary) {</div>
+<div class="line"><span class="lineno">  500</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a036fe8198036569c5d9aa9796ea420c7">checkForZero</a>(boundary, index, rpos, pos)) <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  501</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.y /= boundary;</div>
+<div class="line"><span class="lineno">  502</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  503</span>            quadrantOrigin.y = 0.5f;</div>
+<div class="line"><span class="lineno">  504</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacemoonray_1_1pbr.html#a036fe8198036569c5d9aa9796ea420c7">checkForZero</a>(1.0f - boundary, index, rpos, pos)) <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  505</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.y = (<a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.y - boundary) / (1.0f - boundary);</div>
+<div class="line"><span class="lineno">  506</span>            quadrant |= 2;</div>
+<div class="line"><span class="lineno">  507</span>        }</div>
+<div class="line"><span class="lineno">  508</span> </div>
+<div class="line"><span class="lineno">  509</span>        <span class="keywordflow">if</span> (node.mChildren[quadrant] == 0) {</div>
+<div class="line"><span class="lineno">  510</span>            <span class="comment">// we hit a leaf, we are at the end of the recursion</span></div>
+<div class="line"><span class="lineno">  511</span>            pos += scale * (quadrantOrigin + 0.5f * <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>);</div>
+<div class="line"><span class="lineno">  512</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  513</span>            <span class="comment">// add in o and continue the recursion,</span></div>
+<div class="line"><span class="lineno">  514</span>            pos += scale * quadrantOrigin;</div>
+<div class="line"><span class="lineno">  515</span>            scale *= 0.5f;</div>
+<div class="line"><span class="lineno">  516</span>        }</div>
+<div class="line"><span class="lineno">  517</span>        </div>
+<div class="line"><span class="lineno">  518</span>        index = node.mChildren[quadrant];</div>
+<div class="line"><span class="lineno">  519</span>    } <span class="keywordflow">while</span> (index != 0); <span class="comment">// until we hit a leaf</span></div>
+<div class="line"><span class="lineno">  520</span> </div>
+<div class="line"><span class="lineno">  521</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a2a67c2b95baaa8587a6f23bfbb09683b">posToDir</a>(pos);</div>
+<div class="line"><span class="lineno">  522</span>}</div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a036fe8198036569c5d9aa9796ea420c7"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a036fe8198036569c5d9aa9796ea420c7">moonray::pbr::checkForZero</a></div><div class="ttdeci">static bool checkForZero(float val, int index, const Vec2f &amp;rpos, Vec2f &amp;pos)</div><div class="ttdef"><b>Definition:</b> <a href="_path_guide_8cc_source.html#l00423">PathGuide.cc:423</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a2a67c2b95baaa8587a6f23bfbb09683b"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a2a67c2b95baaa8587a6f23bfbb09683b">moonray::pbr::posToDir</a></div><div class="ttdeci">static Vec3f posToDir(const Vec2f &amp;pos)</div><div class="ttdef"><b>Definition:</b> <a href="_path_guide_8cc_source.html#l00114">PathGuide.cc:114</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a891596c3133fe5228ad4169dc149b987"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">moonray::shading::sample</a></div><div class="ttdeci">scene_rdl2::math::Color sample(const BsdfLobev &amp;lobev, const BsdfSlicev &amp;slicev, float r1, float r2, int lane, scene_rdl2::math::Vec3f &amp;wi, float &amp;pdf)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdfv_8cc_source.html#l00053">Bsdfv.cc:53</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4dfb51a2edce68c78c990dbe51bf9a12" name="a4dfb51a2edce68c78c990dbe51bf9a12"></a>
@@ -281,6 +550,59 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_path_guide_8cc_source.html#l00262">262</a> of file <a class="el" href="_path_guide_8cc_source.html">PathGuide.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  263</span>{</div>
+<div class="line"><span class="lineno">  264</span>    <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_dir_tree.html#a72e8dcf19625119aefd719e729c14a29">mBuild</a>.<a class="code hl_function" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac69f8594f4b896207d9fda754d96f304">setNumSamples</a>(numSamples);</div>
+<div class="line"><span class="lineno">  265</span>}</div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_dir_tree_1_1_tree_html_ac69f8594f4b896207d9fda754d96f304"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html#ac69f8594f4b896207d9fda754d96f304">moonray::pbr::DirTree::Tree::setNumSamples</a></div><div class="ttdeci">void setNumSamples(uint64_t numSamples)</div><div class="ttdef"><b>Definition:</b> <a href="_path_guide_8cc_source.html#l00217">PathGuide.cc:217</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a72e8dcf19625119aefd719e729c14a29" name="a72e8dcf19625119aefd719e729c14a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72e8dcf19625119aefd719e729c14a29">&#9670;&#160;</a></span>mBuild</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html">Tree</a> moonray::pbr::DirTree::mBuild</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_path_guide_8cc_source.html#l00092">92</a> of file <a class="el" href="_path_guide_8cc_source.html">PathGuide.cc</a>.</p>
+
+</div>
+</div>
+<a id="ad4a42d6cc6dde9f19e03509addfeb668" name="ad4a42d6cc6dde9f19e03509addfeb668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4a42d6cc6dde9f19e03509addfeb668">&#9670;&#160;</a></span>mSample</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html">Tree</a> moonray::pbr::DirTree::mSample</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_path_guide_8cc_source.html#l00093">93</a> of file <a class="el" href="_path_guide_8cc_source.html">PathGuide.cc</a>.</p>
 
 </div>
 </div>
@@ -288,9 +610,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/integrator/<a class="el" href="_path_guide_8cc_source.html">PathGuide.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_dir_tree.html">DirTree</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

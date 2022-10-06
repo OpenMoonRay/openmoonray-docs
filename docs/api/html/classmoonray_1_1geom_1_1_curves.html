@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,17 +42,31 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1_curves.html">Curves</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1_curves.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1geom_1_1_curves-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::geom::Curves Class Reference</div></div>
 </div><!--header-->
@@ -190,6 +208,18 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1451d112c70e404c259fa895d985112a"><td class="mdescLeft">&#160;</td><td class="mdescRight">an util function to verify whether the input curves data meet the criteria of the specified <a class="el" href="classmoonray_1_1geom_1_1_curves.html" title="Primitive that contains multiple curves.">Curves</a> type  <a href="classmoonray_1_1geom_1_1_curves.html#a1451d112c70e404c259fa895d985112a">More...</a><br /></td></tr>
 <tr class="separator:a1451d112c70e404c259fa895d985112a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a7f595b14481900350fedde4c4d48d41a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">internal::Primitive</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_curves.html#a7f595b14481900350fedde4c4d48d41a">getPrimitiveImpl</a> () override</td></tr>
+<tr class="separator:a7f595b14481900350fedde4c4d48d41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743de3acd9e34c21fdf6ffadbb39cf53"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_curves.html#a743de3acd9e34c21fdf6ffadbb39cf53">transformPrimitive</a> (const <a class="el" href="classmoonray_1_1geom_1_1_motion_blur_params.html">MotionBlurParams</a> &amp;motionBlurParams, const <a class="el" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> &amp;prim2render) override</td></tr>
+<tr class="separator:a743de3acd9e34c21fdf6ffadbb39cf53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a52e9722e23fab71860277ead118a4b09"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structmoonray_1_1geom_1_1_curves_1_1_impl.html">Impl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a></td></tr>
+<tr class="separator:a52e9722e23fab71860277ead118a4b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classmoonray_1_1geom_1_1_primitive"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmoonray_1_1geom_1_1_primitive')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></td></tr>
@@ -280,7 +310,15 @@ Additional Inherited Members</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="_curves_8h_source.html#l00087">87</a> of file <a class="el" href="_curves_8h_source.html">Curves.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   88</span>    {</div>
+<div class="line"><span class="lineno">   89</span>        <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_curves.html#a20a40943a7bb91f1e81b7eaa39b5e566a8b091ad74c8e41867042d3527b584ae7">RAY_FACING</a>,</div>
+<div class="line"><span class="lineno">   90</span>        <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_curves.html#a20a40943a7bb91f1e81b7eaa39b5e566a2ea77cf582892014b30e6fa7e558350d">ROUND</a>,</div>
+<div class="line"><span class="lineno">   91</span>        <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_curves.html#aca4557878188eeb4f955dedc861d81d8a696b031073e74bf2cb98e5ef201d4aa3">UNKNOWN</a></div>
+<div class="line"><span class="lineno">   92</span>    };</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_curves_html_a20a40943a7bb91f1e81b7eaa39b5e566a2ea77cf582892014b30e6fa7e558350d"><div class="ttname"><a href="classmoonray_1_1geom_1_1_curves.html#a20a40943a7bb91f1e81b7eaa39b5e566a2ea77cf582892014b30e6fa7e558350d">moonray::geom::Curves::SubType::ROUND</a></div><div class="ttdeci">@ ROUND</div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_curves_html_a20a40943a7bb91f1e81b7eaa39b5e566a8b091ad74c8e41867042d3527b584ae7"><div class="ttname"><a href="classmoonray_1_1geom_1_1_curves.html#a20a40943a7bb91f1e81b7eaa39b5e566a8b091ad74c8e41867042d3527b584ae7">moonray::geom::Curves::SubType::RAY_FACING</a></div><div class="ttdeci">@ RAY_FACING</div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_curves_html_aca4557878188eeb4f955dedc861d81d8a696b031073e74bf2cb98e5ef201d4aa3"><div class="ttname"><a href="classmoonray_1_1geom_1_1_curves.html#aca4557878188eeb4f955dedc861d81d8a696b031073e74bf2cb98e5ef201d4aa3">moonray::geom::Curves::Type::UNKNOWN</a></div><div class="ttdeci">@ UNKNOWN</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aca4557878188eeb4f955dedc861d81d8" name="aca4557878188eeb4f955dedc861d81d8"></a>
@@ -312,7 +350,16 @@ Additional Inherited Members</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="_curves_8h_source.html#l00079">79</a> of file <a class="el" href="_curves_8h_source.html">Curves.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   80</span>    {</div>
+<div class="line"><span class="lineno">   81</span>        <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_curves.html#aca4557878188eeb4f955dedc861d81d8aaac544aacc3615aada24897a215f5046">LINEAR</a>,</div>
+<div class="line"><span class="lineno">   82</span>        <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_curves.html#aca4557878188eeb4f955dedc861d81d8afb3a475897a8191c6716da148569802d">BEZIER</a>,</div>
+<div class="line"><span class="lineno">   83</span>        <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_curves.html#aca4557878188eeb4f955dedc861d81d8a123732cee284ea8ed914cfe1bb999a8d">BSPLINE</a>,</div>
+<div class="line"><span class="lineno">   84</span>        <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_curves.html#aca4557878188eeb4f955dedc861d81d8a696b031073e74bf2cb98e5ef201d4aa3">UNKNOWN</a></div>
+<div class="line"><span class="lineno">   85</span>    };</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_curves_html_aca4557878188eeb4f955dedc861d81d8a123732cee284ea8ed914cfe1bb999a8d"><div class="ttname"><a href="classmoonray_1_1geom_1_1_curves.html#aca4557878188eeb4f955dedc861d81d8a123732cee284ea8ed914cfe1bb999a8d">moonray::geom::Curves::Type::BSPLINE</a></div><div class="ttdeci">@ BSPLINE</div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_curves_html_aca4557878188eeb4f955dedc861d81d8aaac544aacc3615aada24897a215f5046"><div class="ttname"><a href="classmoonray_1_1geom_1_1_curves.html#aca4557878188eeb4f955dedc861d81d8aaac544aacc3615aada24897a215f5046">moonray::geom::Curves::Type::LINEAR</a></div><div class="ttdeci">@ LINEAR</div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_curves_html_aca4557878188eeb4f955dedc861d81d8afb3a475897a8191c6716da148569802d"><div class="ttname"><a href="classmoonray_1_1geom_1_1_curves.html#aca4557878188eeb4f955dedc861d81d8afb3a475897a8191c6716da148569802d">moonray::geom::Curves::Type::BEZIER</a></div><div class="ttdeci">@ BEZIER</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -373,7 +420,39 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_curves_8cc_source.html#l00043">43</a> of file <a class="el" href="_curves_8cc_source.html">Curves.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   50</span>{</div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">if</span> (type == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_curves.html#aca4557878188eeb4f955dedc861d81d8aaac544aacc3615aada24897a215f5046">Type::LINEAR</a>) {</div>
+<div class="line"><span class="lineno">   52</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a> = fauxstd::make_unique&lt;Impl&gt;(<span class="keyword">new</span> internal::LineSegments(</div>
+<div class="line"><span class="lineno">   53</span>            <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a4794b7aec0f30dbaee7ef611cd182201">internal::Curves::Type</a><span class="keyword">&gt;</span>(type),</div>
+<div class="line"><span class="lineno">   54</span>            subtype,</div>
+<div class="line"><span class="lineno">   55</span>            std::move(curvesVertexCount),</div>
+<div class="line"><span class="lineno">   56</span>            std::move(vertices), std::move(layerAssignmentId),</div>
+<div class="line"><span class="lineno">   57</span>            std::move(primitiveAttributeTable)),</div>
+<div class="line"><span class="lineno">   58</span>            type, subtype, tessellationRate);</div>
+<div class="line"><span class="lineno">   59</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_curves.html#aca4557878188eeb4f955dedc861d81d8afb3a475897a8191c6716da148569802d">Type::BEZIER</a>) {</div>
+<div class="line"><span class="lineno">   60</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a> = fauxstd::make_unique&lt;Impl&gt;(<span class="keyword">new</span> internal::BezierSpanChains(</div>
+<div class="line"><span class="lineno">   61</span>            <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a4794b7aec0f30dbaee7ef611cd182201">internal::Curves::Type</a><span class="keyword">&gt;</span>(type),</div>
+<div class="line"><span class="lineno">   62</span>            subtype,</div>
+<div class="line"><span class="lineno">   63</span>            std::move(curvesVertexCount),</div>
+<div class="line"><span class="lineno">   64</span>            std::move(vertices), std::move(layerAssignmentId),</div>
+<div class="line"><span class="lineno">   65</span>            std::move(primitiveAttributeTable)),</div>
+<div class="line"><span class="lineno">   66</span>            type, subtype, tessellationRate);</div>
+<div class="line"><span class="lineno">   67</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_curves.html#aca4557878188eeb4f955dedc861d81d8a123732cee284ea8ed914cfe1bb999a8d">Type::BSPLINE</a>) {</div>
+<div class="line"><span class="lineno">   68</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a> = fauxstd::make_unique&lt;Impl&gt;(<span class="keyword">new</span> internal::BSpline(</div>
+<div class="line"><span class="lineno">   69</span>            <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a4794b7aec0f30dbaee7ef611cd182201">internal::Curves::Type</a><span class="keyword">&gt;</span>(type),</div>
+<div class="line"><span class="lineno">   70</span>            subtype,</div>
+<div class="line"><span class="lineno">   71</span>            std::move(curvesVertexCount),</div>
+<div class="line"><span class="lineno">   72</span>            std::move(vertices), std::move(layerAssignmentId),</div>
+<div class="line"><span class="lineno">   73</span>            std::move(primitiveAttributeTable)),</div>
+<div class="line"><span class="lineno">   74</span>            type, subtype, tessellationRate);</div>
+<div class="line"><span class="lineno">   75</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   76</span>        <span class="comment">// only support linear/bezier/bspline curve at this moment</span></div>
+<div class="line"><span class="lineno">   77</span>        MNRY_ASSERT_REQUIRE(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   78</span>    }</div>
+<div class="line"><span class="lineno">   79</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_curves_html_a52e9722e23fab71860277ead118a4b09"><div class="ttname"><a href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">moonray::geom::Curves::mImpl</a></div><div class="ttdeci">std::unique_ptr&lt; Impl &gt; mImpl</div><div class="ttdef"><b>Definition:</b> <a href="_curves_8h_source.html#l00183">Curves.h:183</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_curves_html_a4794b7aec0f30dbaee7ef611cd182201"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_curves.html#a4794b7aec0f30dbaee7ef611cd182201">moonray::geom::internal::Curves::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> <a href="prim_2_curves_8h_source.html#l00029">Curves.h:30</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4f6dc521a8fe0096237c25cb02d18635" name="a4f6dc521a8fe0096237c25cb02d18635"></a>
@@ -430,7 +509,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Reimplemented from <a class="el" href="classmoonray_1_1geom_1_1_primitive.html#aecdc3d10e900a74a4a85ee29aa28e79e">moonray::geom::Primitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_curves_8cc_source.html#l00084">84</a> of file <a class="el" href="_curves_8cc_source.html">Curves.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   85</span>{</div>
+<div class="line"><span class="lineno">   86</span>    v.visitCurves(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   87</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1451d112c70e404c259fa895d985112a" name="a1451d112c70e404c259fa895d985112a"></a>
@@ -513,7 +595,35 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a5013abfc5a53a70a1658afcec6937e70">Primitive::DataValidness</a> enum <a class="el" href="classmoonray_1_1geom_1_1_curves.html" title="Primitive that contains multiple curves.">Curves</a> type </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_curves_8cc_source.html#l00268">268</a> of file <a class="el" href="_curves_8cc_source.html">Curves.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  275</span>{</div>
+<div class="line"><span class="lineno">  276</span>    <a class="code hl_enumeration" href="classmoonray_1_1geom_1_1_primitive.html#a5013abfc5a53a70a1658afcec6937e70">Primitive::DataValidness</a> result;</div>
+<div class="line"><span class="lineno">  277</span>    <span class="keywordflow">switch</span> (type) {</div>
+<div class="line"><span class="lineno">  278</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_curves.html#aca4557878188eeb4f955dedc861d81d8aaac544aacc3615aada24897a215f5046">Type::LINEAR</a>:</div>
+<div class="line"><span class="lineno">  279</span>        result = <a class="code hl_function" href="namespacemoonray_1_1geom.html#a6e215619a23e2170052f609e1d975758">checkLineSegmentsData</a>(curvesVertexCount, vertices,</div>
+<div class="line"><span class="lineno">  280</span>            primitiveAttributeTable, message);</div>
+<div class="line"><span class="lineno">  281</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  282</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_curves.html#aca4557878188eeb4f955dedc861d81d8afb3a475897a8191c6716da148569802d">Type::BEZIER</a>:</div>
+<div class="line"><span class="lineno">  283</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_curves.html#aca4557878188eeb4f955dedc861d81d8a123732cee284ea8ed914cfe1bb999a8d">Type::BSPLINE</a>:</div>
+<div class="line"><span class="lineno">  284</span>        result = <a class="code hl_function" href="namespacemoonray_1_1geom.html#afd8c9e256cef63fe8830673b5ff2c138">checkCubicCurvesData</a>(curvesVertexCount, vertices,</div>
+<div class="line"><span class="lineno">  285</span>            primitiveAttributeTable, type, tessellationRate, message);</div>
+<div class="line"><span class="lineno">  286</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  287</span>    <span class="keywordflow">default</span>:</div>
+<div class="line"><span class="lineno">  288</span>        {</div>
+<div class="line"><span class="lineno">  289</span>            <span class="keywordflow">if</span> (message) {</div>
+<div class="line"><span class="lineno">  290</span>                *message = <span class="stringliteral">&quot;Invalid curves type&quot;</span>;</div>
+<div class="line"><span class="lineno">  291</span>            }</div>
+<div class="line"><span class="lineno">  292</span>            result = <a class="code hl_enumvalue" href="classmoonray_1_1geom_1_1_primitive.html#a5013abfc5a53a70a1658afcec6937e70ac0f0aa224ab569a076f3210eb3f9d7f7">DataValidness::INVALID_TOPOLOGY</a>;</div>
+<div class="line"><span class="lineno">  293</span>        }</div>
+<div class="line"><span class="lineno">  294</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  295</span>    }</div>
+<div class="line"><span class="lineno">  296</span> </div>
+<div class="line"><span class="lineno">  297</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  298</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a5013abfc5a53a70a1658afcec6937e70"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a5013abfc5a53a70a1658afcec6937e70">moonray::geom::Primitive::DataValidness</a></div><div class="ttdeci">DataValidness</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_8h_source.html#l00068">Primitive.h:69</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_a5013abfc5a53a70a1658afcec6937e70ac0f0aa224ab569a076f3210eb3f9d7f7"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#a5013abfc5a53a70a1658afcec6937e70ac0f0aa224ab569a076f3210eb3f9d7f7">moonray::geom::Primitive::DataValidness::INVALID_TOPOLOGY</a></div><div class="ttdeci">@ INVALID_TOPOLOGY</div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a6e215619a23e2170052f609e1d975758"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a6e215619a23e2170052f609e1d975758">moonray::geom::checkLineSegmentsData</a></div><div class="ttdeci">static Primitive::DataValidness checkLineSegmentsData(const Curves::CurvesVertexCount &amp;curvesVertexCount, const Curves::VertexBuffer &amp;vertices, const shading::PrimitiveAttributeTable &amp;primitiveAttributeTable, std::string *message)</div><div class="ttdef"><b>Definition:</b> <a href="_curves_8cc_source.html#l00162">Curves.cc:162</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_afd8c9e256cef63fe8830673b5ff2c138"><div class="ttname"><a href="namespacemoonray_1_1geom.html#afd8c9e256cef63fe8830673b5ff2c138">moonray::geom::checkCubicCurvesData</a></div><div class="ttdeci">static Primitive::DataValidness checkCubicCurvesData(const Curves::CurvesVertexCount &amp;curvesVertexCount, const Curves::VertexBuffer &amp;vertices, const shading::PrimitiveAttributeTable &amp;primitiveAttributeTable, const Curves::Type type, const int tessellationRate, std::string *message)</div><div class="ttdef"><b>Definition:</b> <a href="_curves_8cc_source.html#l00199">Curves.cc:199</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa6974529feb012837014cb0b8a8f4ada" name="aa6974529feb012837014cb0b8a8f4ada"></a>
@@ -534,7 +644,10 @@ Additional Inherited Members</h2></td></tr>
 <p>return the number of curves in this <a class="el" href="classmoonray_1_1geom_1_1_curves.html" title="Primitive that contains multiple curves.">Curves</a> primitive </p>
 
 <p class="definition">Definition at line <a class="el" href="_curves_8cc_source.html#l00090">90</a> of file <a class="el" href="_curves_8cc_source.html">Curves.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   91</span>{</div>
+<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mCurves-&gt;getCurvesCount();</div>
+<div class="line"><span class="lineno">   93</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a385a59e57b942fc818b227bb8aae87c1" name="a385a59e57b942fc818b227bb8aae87c1"></a>
@@ -555,7 +668,10 @@ Additional Inherited Members</h2></td></tr>
 <p>return the curves subtype for this <a class="el" href="classmoonray_1_1geom_1_1_curves.html" title="Primitive that contains multiple curves.">Curves</a> primitive </p>
 
 <p class="definition">Definition at line <a class="el" href="_curves_8cc_source.html#l00102">102</a> of file <a class="el" href="_curves_8cc_source.html">Curves.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  103</span>{</div>
+<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mSubType;</div>
+<div class="line"><span class="lineno">  105</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a82390a7bd69031e1e971b646076dbf75" name="a82390a7bd69031e1e971b646076dbf75"></a>
@@ -576,7 +692,10 @@ Additional Inherited Members</h2></td></tr>
 <p>return the curves type for this <a class="el" href="classmoonray_1_1geom_1_1_curves.html" title="Primitive that contains multiple curves.">Curves</a> primitive </p>
 
 <p class="definition">Definition at line <a class="el" href="_curves_8cc_source.html#l00096">96</a> of file <a class="el" href="_curves_8cc_source.html">Curves.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   97</span>{</div>
+<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mType;</div>
+<div class="line"><span class="lineno">   99</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a075082a94206b55fc465e1b8fb1c0f1b" name="a075082a94206b55fc465e1b8fb1c0f1b"></a>
@@ -596,7 +715,10 @@ Additional Inherited Members</h2></td></tr>
 <p >query the CurvesVertexCount that record vertex count in each curve </p><dl class="section return"><dt>Returns</dt><dd>CurvesVertexCount const reference that record the vertex count for each curve in this <a class="el" href="classmoonray_1_1geom_1_1_curves.html" title="Primitive that contains multiple curves.">Curves</a> primitive </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_curves_8cc_source.html#l00114">114</a> of file <a class="el" href="_curves_8cc_source.html">Curves.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  115</span>{</div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mCurves-&gt;getCurvesVertexCount();</div>
+<div class="line"><span class="lineno">  117</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a15ec76252eec79788f5889d867664914" name="a15ec76252eec79788f5889d867664914"></a>
@@ -627,7 +749,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a7cea19ec192eb4c509d9f27c3e74a04c">moonray::geom::Primitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_curves_8cc_source.html#l00120">120</a> of file <a class="el" href="_curves_8cc_source.html">Curves.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  121</span>{</div>
+<div class="line"><span class="lineno">  122</span>    <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code hl_function" href="classmoonray_1_1geom_1_1_curves.html#ae64861e0fc4349144c9b07e376c24390">Curves</a>) + <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mCurves-&gt;getMemory();</div>
+<div class="line"><span class="lineno">  123</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_curves_html_ae64861e0fc4349144c9b07e376c24390"><div class="ttname"><a href="classmoonray_1_1geom_1_1_curves.html#ae64861e0fc4349144c9b07e376c24390">moonray::geom::Curves::Curves</a></div><div class="ttdeci">Curves(Type type, SubType subtype, int tessellationRate, CurvesVertexCount &amp;&amp;curvesVertexCount, VertexBuffer &amp;&amp;vertices, LayerAssignmentId &amp;&amp;layerAssignmentId, shading::PrimitiveAttributeTable &amp;&amp;=shading::PrimitiveAttributeTable())</div><div class="ttdef"><b>Definition:</b> <a href="_curves_8cc_source.html#l00043">Curves.cc:43</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a68a2296334be8cc2f8910fd482961f09" name="a68a2296334be8cc2f8910fd482961f09"></a>
@@ -658,7 +784,10 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a6ef8c77ab9e7fd5dcc9a27d645703cd6">moonray::geom::Primitive</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_curves_8cc_source.html#l00126">126</a> of file <a class="el" href="_curves_8cc_source.html">Curves.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  127</span>{</div>
+<div class="line"><span class="lineno">  128</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mCurves-&gt;getMotionSamplesCount();</div>
+<div class="line"><span class="lineno">  129</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3eacadf14f7ea4afe2d3581d5671d720" name="a3eacadf14f7ea4afe2d3581d5671d720"></a>
@@ -678,7 +807,43 @@ Additional Inherited Members</h2></td></tr>
 <p >get the primitive name </p><dl class="section return"><dt>Returns</dt><dd>name the name of this primitive </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_curves_8cc_source.html#l00150">150</a> of file <a class="el" href="_curves_8cc_source.html">Curves.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  151</span>{</div>
+<div class="line"><span class="lineno">  152</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mCurves-&gt;getName();</div>
+<div class="line"><span class="lineno">  153</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7f595b14481900350fedde4c4d48d41a" name="a7f595b14481900350fedde4c4d48d41a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f595b14481900350fedde4c4d48d41a">&#9670;&#160;</a></span>getPrimitiveImpl()</h2>
 
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_primitive.html">internal::Primitive</a> * moonray::geom::Curves::getPrimitiveImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section remark"><dt>Remarks</dt><dd>For renderer internal use, procedural should never call this </dd></dl>
+
+<p>Implements <a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a7603a07d5116fc515edbeb2aa714a4ab">moonray::geom::Primitive</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_curves_8cc_source.html#l00322">322</a> of file <a class="el" href="_curves_8cc_source.html">Curves.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  323</span>{</div>
+<div class="line"><span class="lineno">  324</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mCurves.get();</div>
+<div class="line"><span class="lineno">  325</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a262bf1d5a4962f854fa0f9a5313c5fc6" name="a262bf1d5a4962f854fa0f9a5313c5fc6"></a>
@@ -699,7 +864,10 @@ Additional Inherited Members</h2></td></tr>
 <p>return the tessellation rate </p>
 
 <p class="definition">Definition at line <a class="el" href="_curves_8cc_source.html#l00108">108</a> of file <a class="el" href="_curves_8cc_source.html">Curves.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  109</span>{</div>
+<div class="line"><span class="lineno">  110</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mTessellationRate;</div>
+<div class="line"><span class="lineno">  111</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5d95f201d43c4c143f5ed9a4cb73fb5e" name="a5d95f201d43c4c143f5ed9a4cb73fb5e"></a>
@@ -719,7 +887,10 @@ Additional Inherited Members</h2></td></tr>
 <p >retrieve the reference of <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html" title="Provides a vertex buffer in which the layout may vary at compile time. The layout is (mostly) hidden ...">VertexBuffer</a> </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html" title="Provides a vertex buffer in which the layout may vary at compile time. The layout is (mostly) hidden ...">VertexBuffer</a> reference that contains the control vertices for this <a class="el" href="classmoonray_1_1geom_1_1_curves.html" title="Primitive that contains multiple curves.">Curves</a> primitive </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_curves_8cc_source.html#l00132">132</a> of file <a class="el" href="_curves_8cc_source.html">Curves.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  133</span>{</div>
+<div class="line"><span class="lineno">  134</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mCurves-&gt;getVertexBuffer();</div>
+<div class="line"><span class="lineno">  135</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a958925a1f9b927c4bd2181a31807ccdc" name="a958925a1f9b927c4bd2181a31807ccdc"></a>
@@ -739,7 +910,10 @@ Additional Inherited Members</h2></td></tr>
 <p >retrieve the const reference of <a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html" title="Provides a vertex buffer in which the layout may vary at compile time. The layout is (mostly) hidden ...">VertexBuffer</a> </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="classmoonray_1_1geom_1_1_vertex_buffer.html" title="Provides a vertex buffer in which the layout may vary at compile time. The layout is (mostly) hidden ...">VertexBuffer</a> const reference that contains the control vertices for this <a class="el" href="classmoonray_1_1geom_1_1_curves.html" title="Primitive that contains multiple curves.">Curves</a> primitive </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_curves_8cc_source.html#l00138">138</a> of file <a class="el" href="_curves_8cc_source.html">Curves.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  139</span>{</div>
+<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mCurves-&gt;getVertexBuffer();</div>
+<div class="line"><span class="lineno">  141</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3b5d212642f4d7568d27f6986a992bd9" name="a3b5d212642f4d7568d27f6986a992bd9"></a>
@@ -759,7 +933,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_curves_8cc_source.html#l00156">156</a> of file <a class="el" href="_curves_8cc_source.html">Curves.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  157</span>{</div>
+<div class="line"><span class="lineno">  158</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mCurves-&gt;setCurvedMotionBlurSampleCount(count);</div>
+<div class="line"><span class="lineno">  159</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a741c4ead300335e71791c3c81f9b12c9" name="a741c4ead300335e71791c3c81f9b12c9"></a>
@@ -785,6 +962,94 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="_curves_8cc_source.html#l00144">144</a> of file <a class="el" href="_curves_8cc_source.html">Curves.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  145</span>{</div>
+<div class="line"><span class="lineno">  146</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mCurves-&gt;setName(name);</div>
+<div class="line"><span class="lineno">  147</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a743de3acd9e34c21fdf6ffadbb39cf53" name="a743de3acd9e34c21fdf6ffadbb39cf53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a743de3acd9e34c21fdf6ffadbb39cf53">&#9670;&#160;</a></span>transformPrimitive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::geom::Curves::transformPrimitive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1geom_1_1_motion_blur_params.html">MotionBlurParams</a> &amp;&#160;</td>
+          <td class="paramname"><em>motionBlurParams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> &amp;&#160;</td>
+          <td class="paramname"><em>prim2render</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section remark"><dt>Remarks</dt><dd>For renderer internal use, procedural should never call this </dd></dl>
+
+<p>Implements <a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a8a9d605ec9262d447cba3424d443d826">moonray::geom::Primitive</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_curves_8cc_source.html#l00301">301</a> of file <a class="el" href="_curves_8cc_source.html">Curves.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  304</span>{</div>
+<div class="line"><span class="lineno">  305</span>    <span class="keywordtype">size_t</span> motionSamplesCount = <a class="code hl_function" href="classmoonray_1_1geom_1_1_curves.html#a68a2296334be8cc2f8910fd482961f09">getMotionSamplesCount</a>();</div>
+<div class="line"><span class="lineno">  306</span>    <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> p2r = prim2render;</div>
+<div class="line"><span class="lineno">  307</span>    <span class="keywordflow">if</span> (motionSamplesCount &gt; 1 &amp;&amp; prim2render.size() == 1) {</div>
+<div class="line"><span class="lineno">  308</span>        p2r.resize(motionSamplesCount, prim2render[0]);</div>
+<div class="line"><span class="lineno">  309</span>    }</div>
+<div class="line"><span class="lineno">  310</span> </div>
+<div class="line"><span class="lineno">  311</span>    <span class="keyword">const</span> shading::PrimitiveAttributeTable* primAttrTab = <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mCurves-&gt;getPrimitiveAttributeTable();</div>
+<div class="line"><span class="lineno">  312</span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1_primitive.html#ab419eab3c2c3d53be9894b5bddbdce1c">transformVertexBuffer</a>(<a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mCurves-&gt;getVertexBuffer(), p2r, motionBlurParams,</div>
+<div class="line"><span class="lineno">  313</span>                          <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mCurves-&gt;getMotionBlurType(), <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mCurves-&gt;getCurvedMotionBlurSampleCount(),</div>
+<div class="line"><span class="lineno">  314</span>                          primAttrTab);</div>
+<div class="line"><span class="lineno">  315</span> </div>
+<div class="line"><span class="lineno">  316</span>    <span class="keywordtype">float</span> shutterOpenDelta, shutterCloseDelta;</div>
+<div class="line"><span class="lineno">  317</span>    motionBlurParams.getMotionBlurDelta(shutterOpenDelta, shutterCloseDelta);</div>
+<div class="line"><span class="lineno">  318</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_curves.html#a52e9722e23fab71860277ead118a4b09">mImpl</a>-&gt;mCurves-&gt;getAttributes()-&gt;transformAttributes(p2r, shutterOpenDelta, shutterCloseDelta, {});</div>
+<div class="line"><span class="lineno">  319</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_curves_html_a68a2296334be8cc2f8910fd482961f09"><div class="ttname"><a href="classmoonray_1_1geom_1_1_curves.html#a68a2296334be8cc2f8910fd482961f09">moonray::geom::Curves::getMotionSamplesCount</a></div><div class="ttdeci">virtual size_type getMotionSamplesCount() const override</div><div class="ttdoc">return the number of motion samples</div><div class="ttdef"><b>Definition:</b> <a href="_curves_8cc_source.html#l00126">Curves.cc:126</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_primitive_html_ab419eab3c2c3d53be9894b5bddbdce1c"><div class="ttname"><a href="classmoonray_1_1geom_1_1_primitive.html#ab419eab3c2c3d53be9894b5bddbdce1c">moonray::geom::Primitive::transformVertexBuffer</a></div><div class="ttdeci">void transformVertexBuffer(VertexBuffer&lt; VecType, Traits &gt; &amp;vertices, const shading::XformSamples &amp;prim2render, const MotionBlurParams &amp;motionBlurParams, scene_rdl2::rdl2::MotionBlurType motionBlurType, int curvedMotionBlurSampleCount, const shading::PrimitiveAttributeTable *primAttrTab)</div><div class="ttdef"><b>Definition:</b> <a href="_primitive_8h_source.html#l00580">Primitive.h:580</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_ac42657410f98444ece5b9a1b39839f4e"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">moonray::shading::XformSamples</a></div><div class="ttdeci">std::vector&lt; scene_rdl2::math::Xform3f &gt; XformSamples</div><div class="ttdef"><b>Definition:</b> <a href="_xform_8h_source.html#l00024">Xform.h:24</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a52e9722e23fab71860277ead118a4b09" name="a52e9722e23fab71860277ead118a4b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e9722e23fab71860277ead118a4b09">&#9670;&#160;</a></span>mImpl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="structmoonray_1_1geom_1_1_curves_1_1_impl.html">Impl</a>&gt; moonray::geom::Curves::mImpl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_curves_8h_source.html#l00183">183</a> of file <a class="el" href="_curves_8h_source.html">Curves.h</a>.</p>
 
 </div>
 </div>
@@ -793,9 +1058,13 @@ Additional Inherited Members</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/geom/<a class="el" href="_curves_8cc_source.html">Curves.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1_curves.html">Curves</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

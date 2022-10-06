@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html">PrimitiveGroup</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1_primitive_group.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">moonray::geom::PrimitiveGroup Member List</div></div>
 </div><!--header-->
@@ -67,9 +83,11 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html#a2aab51b0e77ffb41de71e1fbfbe4e92b">getMemory</a>() const override</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html">moonray::geom::PrimitiveGroup</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html#ab719fbd600bd973dbeb03ce2a8ef9ebc">getModifiability</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html#ad6df15748af1d10a4e68fd3b71f1c375">getMotionSamplesCount</a>() const override</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html">moonray::geom::PrimitiveGroup</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html#ac439d99e8482228cf0ae41204ef0916a">getPrimitivesCount</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html">moonray::geom::PrimitiveGroup</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html#aaa619ea87737cc38ac1cb74447395aa1">getUpdated</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html#adbece00593ce87679dbb45ac906073bd">IndexType</a> typedef</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html#ac77f1e6ffbefd0e0c48d7cdea3ef017f">getPrimitiveImpl</a>() override</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html">moonray::geom::PrimitiveGroup</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html#ac439d99e8482228cf0ae41204ef0916a">getPrimitivesCount</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html">moonray::geom::PrimitiveGroup</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html#aaa619ea87737cc38ac1cb74447395aa1">getUpdated</a>() const</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html#adbece00593ce87679dbb45ac906073bd">IndexType</a> typedef</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html#add628e1924050e7bfa1e235337eb3b5d">mImpl</a></td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html">moonray::geom::PrimitiveGroup</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html#aff577e14a875dcb8f4a766bd4d907a3a">Modifiability</a> enum name</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a72de56a471752a063890a6ccc43304d5">operator=</a>(const Primitive &amp;)=delete</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a0fadd0fc93b3f8a2c2f4fefa65fa0c3c">operator=</a>(Primitive &amp;&amp;)=delete</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></td><td class="entry"></td></tr>
@@ -80,13 +98,17 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html#aa2779c4ab5d56c2290e275b8b02ad020">setModifiability</a>(Modifiability m=Modifiability::STATIC)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a2c9de28d660eab9137b53e8e82041793">setUpdated</a>(bool updated=true)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a6ec1e752af007a2007fe341be5aa5810">size_type</a> typedef</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html#ab419eab3c2c3d53be9894b5bddbdce1c">transformVertexBuffer</a>(VertexBuffer&lt; VecType, Traits &gt; &amp;vertices, const shading::XformSamples &amp;prim2render, const MotionBlurParams &amp;motionBlurParams, scene_rdl2::rdl2::MotionBlurType motionBlurType, int curvedMotionBlurSampleCount, const shading::PrimitiveAttributeTable *primAttrTab)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a6df9f6a68ad7c127a04058187843dca5">~Primitive</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html#a3d6c35849b06dac59a9ef4c97191a605">~PrimitiveGroup</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html">moonray::geom::PrimitiveGroup</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html#a7c5a126d941a30af48554c403e9a7238">transformPrimitive</a>(const MotionBlurParams &amp;motionBlurParams, const shading::XformSamples &amp;prim2render) override</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html">moonray::geom::PrimitiveGroup</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html#ab419eab3c2c3d53be9894b5bddbdce1c">transformVertexBuffer</a>(VertexBuffer&lt; VecType, Traits &gt; &amp;vertices, const shading::XformSamples &amp;prim2render, const MotionBlurParams &amp;motionBlurParams, scene_rdl2::rdl2::MotionBlurType motionBlurType, int curvedMotionBlurSampleCount, const shading::PrimitiveAttributeTable *primAttrTab)</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html#a6df9f6a68ad7c127a04058187843dca5">~Primitive</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive.html">moonray::geom::Primitive</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html#a3d6c35849b06dac59a9ef4c97191a605">~PrimitiveGroup</a>()</td><td class="entry"><a class="el" href="classmoonray_1_1geom_1_1_primitive_group.html">moonray::geom::PrimitiveGroup</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

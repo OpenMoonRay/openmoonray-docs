@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html">Sampler</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1pbr_1_1_sampler.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1pbr_1_1_sampler-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::pbr::Sampler Class Reference</div></div>
 </div><!--header-->
@@ -64,8 +83,43 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab5947b867b4cd2ef7345ddfe30424f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33b4638563dde9a22952e52bac7773f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#a33b4638563dde9a22952e52bac7773f0">Sampler</a> (const <a class="el" href="classmoonray_1_1pbr_1_1_sampler.html">Sampler</a> &amp;)=delete</td></tr>
 <tr class="separator:a33b4638563dde9a22952e52bac7773f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a380944fa627bacf8cc126236dbb0107e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmoonray_1_1pbr_1_1_sample.html">Sample</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#a380944fa627bacf8cc126236dbb0107e">getPrimarySample</a> (int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, int t, uint32_t subpixel, bool dofEnabled, float shutterBias)</td></tr>
+<tr class="memitem:a380944fa627bacf8cc126236dbb0107e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmoonray_1_1pbr_1_1_sample.html">Sample</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#a380944fa627bacf8cc126236dbb0107e">getPrimarySample</a> (int x, int y, int t, uint32_t subpixel, bool dofEnabled, float shutterBias)</td></tr>
 <tr class="separator:a380944fa627bacf8cc126236dbb0107e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a2c36a9ee0853ed6359098a5e8f152afd"><td class="memItemLeft" align="right" valign="top">typedef std::array&lt; float, <a class="el" href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">kSIMDSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#a2c36a9ee0853ed6359098a5e8f152afd">SIMDFloatArray</a></td></tr>
+<tr class="separator:a2c36a9ee0853ed6359098a5e8f152afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aedb50a2dea122b9eedb15ef13fc1ce47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#aedb50a2dea122b9eedb15ef13fc1ce47">applyPixelFilter</a> ()</td></tr>
+<tr class="separator:aedb50a2dea122b9eedb15ef13fc1ce47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5a54877b6454284d5abbad3c97d773e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#ad5a54877b6454284d5abbad3c97d773e">fillPrimary</a> (int x, int y, int t, <a class="el" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> n, bool dofEnabled)</td></tr>
+<tr class="separator:ad5a54877b6454284d5abbad3c97d773e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae925cd24398f7c8a69a75b6bdfd74ad8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#ae925cd24398f7c8a69a75b6bdfd74ad8">__attribute__</a> ((aligned(static_cast&lt; int &gt;(<a class="el" href="namespacemoonray_1_1pbr.html#adb53cd5aff508e3fb754cdeaf05f5f9f">kSIMDAlignment</a>)))) <a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#a2c36a9ee0853ed6359098a5e8f152afd">SIMDFloatArray</a> mPixelX</td></tr>
+<tr class="separator:ae925cd24398f7c8a69a75b6bdfd74ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf22aff70a5b42d899aa648662dd1e8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#abf22aff70a5b42d899aa648662dd1e8d">__attribute__</a> ((aligned(static_cast&lt; int &gt;(<a class="el" href="namespacemoonray_1_1pbr.html#adb53cd5aff508e3fb754cdeaf05f5f9f">kSIMDAlignment</a>)))) <a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#a2c36a9ee0853ed6359098a5e8f152afd">SIMDFloatArray</a> mPixelY</td></tr>
+<tr class="separator:abf22aff70a5b42d899aa648662dd1e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb8845253595f215870dfd4ab936e64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#a7bb8845253595f215870dfd4ab936e64">__attribute__</a> ((aligned(static_cast&lt; int &gt;(<a class="el" href="namespacemoonray_1_1pbr.html#adb53cd5aff508e3fb754cdeaf05f5f9f">kSIMDAlignment</a>)))) <a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#a2c36a9ee0853ed6359098a5e8f152afd">SIMDFloatArray</a> mLensU</td></tr>
+<tr class="separator:a7bb8845253595f215870dfd4ab936e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f6376429598b2af67cce3ee6a689a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#a04f6376429598b2af67cce3ee6a689a2">__attribute__</a> ((aligned(static_cast&lt; int &gt;(<a class="el" href="namespacemoonray_1_1pbr.html#adb53cd5aff508e3fb754cdeaf05f5f9f">kSIMDAlignment</a>)))) <a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#a2c36a9ee0853ed6359098a5e8f152afd">SIMDFloatArray</a> mLensV</td></tr>
+<tr class="separator:a04f6376429598b2af67cce3ee6a689a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5197762dc3d6ac8e5106336428915bea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#a5197762dc3d6ac8e5106336428915bea">__attribute__</a> ((aligned(static_cast&lt; int &gt;(<a class="el" href="namespacemoonray_1_1pbr.html#adb53cd5aff508e3fb754cdeaf05f5f9f">kSIMDAlignment</a>)))) <a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#a2c36a9ee0853ed6359098a5e8f152afd">SIMDFloatArray</a> mTime</td></tr>
+<tr class="separator:a5197762dc3d6ac8e5106336428915bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a30b13ef6372fe2d24def4b087cf7a223"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1pbr_1_1_pixel_scramble.html">PixelScramble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#a30b13ef6372fe2d24def4b087cf7a223">mPixelWideScramble</a></td></tr>
+<tr class="separator:a30b13ef6372fe2d24def4b087cf7a223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86491726f6409238036bb873cb30ac98"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmoonray_1_1pbr_1_1_pixel_filter.html">PixelFilter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#a86491726f6409238036bb873cb30ac98">mPixelFilter</a></td></tr>
+<tr class="separator:a86491726f6409238036bb873cb30ac98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b06b8e45cb765eca6bd8ee948bb9ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html">SlidingWindowCache</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#ad3b06b8e45cb765eca6bd8ee948bb9ea">mCurrentIdx</a></td></tr>
+<tr class="separator:ad3b06b8e45cb765eca6bd8ee948bb9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a484c61d60fe95c7de871a43d539a4c6a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#a484c61d60fe95c7de871a43d539a4c6a">mUse8x8Grid</a></td></tr>
+<tr class="separator:a484c61d60fe95c7de871a43d539a4c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a504904724ffa62c25abe1d9731f07017"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#a504904724ffa62c25abe1d9731f07017">mNumSamples</a></td></tr>
+<tr class="separator:a504904724ffa62c25abe1d9731f07017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This class is responsible for generating pixel/lens/time, and 1D and 2D integrator samples. The sampler runs in two different modes, depending on whether 8x8 mask deep images are being output. If <em>any</em> 8x8 mask deep images are being output, the sampler runs in 8x8 grid mode for <em>ALL</em> outputs. </p>
@@ -77,7 +131,32 @@ Public Member Functions</h2></td></tr>
 </ul>
 
 <p class="definition">Definition at line <a class="el" href="_sampler_8h_source.html#l00394">394</a> of file <a class="el" href="_sampler_8h_source.html">Sampler.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a2c36a9ee0853ed6359098a5e8f152afd" name="a2c36a9ee0853ed6359098a5e8f152afd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c36a9ee0853ed6359098a5e8f152afd">&#9670;&#160;</a></span>SIMDFloatArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::array&lt;float, <a class="el" href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">kSIMDSize</a>&gt; <a class="el" href="classmoonray_1_1pbr_1_1_sampler.html#a2c36a9ee0853ed6359098a5e8f152afd">moonray::pbr::Sampler::SIMDFloatArray</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sampler_8h_source.html#l00492">492</a> of file <a class="el" href="_sampler_8h_source.html">Sampler.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a22fc36fccea61fad1520829335dd10fd" name="a22fc36fccea61fad1520829335dd10fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22fc36fccea61fad1520829335dd10fd">&#9670;&#160;</a></span>Sampler() <span class="overload">[1/3]</span></h2>
 
@@ -102,7 +181,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_sampler_8h_source.html#l00398">398</a> of file <a class="el" href="_sampler_8h_source.html">Sampler.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  398</span>{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab5947b867b4cd2ef7345ddfe30424f20" name="ab5947b867b4cd2ef7345ddfe30424f20"></a>
@@ -152,7 +232,23 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_sampler_8h_source.html#l00400">400</a> of file <a class="el" href="_sampler_8h_source.html">Sampler.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  403</span>                                     :</div>
+<div class="line"><span class="lineno">  404</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sampler.html#a30b13ef6372fe2d24def4b087cf7a223">mPixelWideScramble</a>(scramble),</div>
+<div class="line"><span class="lineno">  405</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sampler.html#a86491726f6409238036bb873cb30ac98">mPixelFilter</a>(pixelFilter),</div>
+<div class="line"><span class="lineno">  406</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sampler.html#ad3b06b8e45cb765eca6bd8ee948bb9ea">mCurrentIdx</a>(),</div>
+<div class="line"><span class="lineno">  407</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sampler.html#a484c61d60fe95c7de871a43d539a4c6a">mUse8x8Grid</a>(use8x8Grid),</div>
+<div class="line"><span class="lineno">  408</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sampler.html#a504904724ffa62c25abe1d9731f07017">mNumSamples</a>(numSamples)</div>
+<div class="line"><span class="lineno">  409</span>    {</div>
+<div class="line"><span class="lineno">  410</span>        <span class="comment">// This gets vectorized in ISPC.</span></div>
+<div class="line"><span class="lineno">  411</span>        std::fill(mLensU.begin(), mLensU.end(), 0.0f);</div>
+<div class="line"><span class="lineno">  412</span>        std::fill(mLensV.begin(), mLensV.end(), 0.0f);</div>
+<div class="line"><span class="lineno">  413</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_sampler_html_a30b13ef6372fe2d24def4b087cf7a223"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sampler.html#a30b13ef6372fe2d24def4b087cf7a223">moonray::pbr::Sampler::mPixelWideScramble</a></div><div class="ttdeci">PixelScramble mPixelWideScramble</div><div class="ttdef"><b>Definition:</b> <a href="_sampler_8h_source.html#l00446">Sampler.h:446</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_sampler_html_a484c61d60fe95c7de871a43d539a4c6a"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sampler.html#a484c61d60fe95c7de871a43d539a4c6a">moonray::pbr::Sampler::mUse8x8Grid</a></div><div class="ttdeci">bool mUse8x8Grid</div><div class="ttdef"><b>Definition:</b> <a href="_sampler_8h_source.html#l00489">Sampler.h:489</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_sampler_html_a504904724ffa62c25abe1d9731f07017"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sampler.html#a504904724ffa62c25abe1d9731f07017">moonray::pbr::Sampler::mNumSamples</a></div><div class="ttdeci">int mNumSamples</div><div class="ttdef"><b>Definition:</b> <a href="_sampler_8h_source.html#l00490">Sampler.h:490</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_sampler_html_a86491726f6409238036bb873cb30ac98"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sampler.html#a86491726f6409238036bb873cb30ac98">moonray::pbr::Sampler::mPixelFilter</a></div><div class="ttdeci">const PixelFilter * mPixelFilter</div><div class="ttdef"><b>Definition:</b> <a href="_sampler_8h_source.html#l00487">Sampler.h:487</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_sampler_html_ad3b06b8e45cb765eca6bd8ee948bb9ea"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sampler.html#ad3b06b8e45cb765eca6bd8ee948bb9ea">moonray::pbr::Sampler::mCurrentIdx</a></div><div class="ttdeci">SlidingWindowCache mCurrentIdx</div><div class="ttdef"><b>Definition:</b> <a href="_sampler_8h_source.html#l00488">Sampler.h:488</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a33b4638563dde9a22952e52bac7773f0" name="a33b4638563dde9a22952e52bac7773f0"></a>
@@ -182,6 +278,264 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7bb8845253595f215870dfd4ab936e64" name="a7bb8845253595f215870dfd4ab936e64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bb8845253595f215870dfd4ab936e64">&#9670;&#160;</a></span>__attribute__() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moonray::pbr::Sampler::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(aligned(static_cast&lt; int &gt;(<a class="el" href="namespacemoonray_1_1pbr.html#adb53cd5aff508e3fb754cdeaf05f5f9f">kSIMDAlignment</a>)))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04f6376429598b2af67cce3ee6a689a2" name="a04f6376429598b2af67cce3ee6a689a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04f6376429598b2af67cce3ee6a689a2">&#9670;&#160;</a></span>__attribute__() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moonray::pbr::Sampler::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(aligned(static_cast&lt; int &gt;(<a class="el" href="namespacemoonray_1_1pbr.html#adb53cd5aff508e3fb754cdeaf05f5f9f">kSIMDAlignment</a>)))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae925cd24398f7c8a69a75b6bdfd74ad8" name="ae925cd24398f7c8a69a75b6bdfd74ad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae925cd24398f7c8a69a75b6bdfd74ad8">&#9670;&#160;</a></span>__attribute__() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moonray::pbr::Sampler::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(aligned(static_cast&lt; int &gt;(<a class="el" href="namespacemoonray_1_1pbr.html#adb53cd5aff508e3fb754cdeaf05f5f9f">kSIMDAlignment</a>)))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf22aff70a5b42d899aa648662dd1e8d" name="abf22aff70a5b42d899aa648662dd1e8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf22aff70a5b42d899aa648662dd1e8d">&#9670;&#160;</a></span>__attribute__() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moonray::pbr::Sampler::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(aligned(static_cast&lt; int &gt;(<a class="el" href="namespacemoonray_1_1pbr.html#adb53cd5aff508e3fb754cdeaf05f5f9f">kSIMDAlignment</a>)))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5197762dc3d6ac8e5106336428915bea" name="a5197762dc3d6ac8e5106336428915bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5197762dc3d6ac8e5106336428915bea">&#9670;&#160;</a></span>__attribute__() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moonray::pbr::Sampler::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(aligned(static_cast&lt; int &gt;(<a class="el" href="namespacemoonray_1_1pbr.html#adb53cd5aff508e3fb754cdeaf05f5f9f">kSIMDAlignment</a>)))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aedb50a2dea122b9eedb15ef13fc1ce47" name="aedb50a2dea122b9eedb15ef13fc1ce47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedb50a2dea122b9eedb15ef13fc1ce47">&#9670;&#160;</a></span>applyPixelFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::pbr::Sampler::applyPixelFilter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sampler_8h_source.html#l00448">448</a> of file <a class="el" href="_sampler_8h_source.html">Sampler.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  449</span>    {</div>
+<div class="line"><span class="lineno">  450</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sampler.html#a86491726f6409238036bb873cb30ac98">mPixelFilter</a>-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_pixel_filter.html#ae00fb180940f829ce32268a41c3132e7">apply</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">kSIMDSize</a>, mPixelX.data());</div>
+<div class="line"><span class="lineno">  451</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sampler.html#a86491726f6409238036bb873cb30ac98">mPixelFilter</a>-&gt;<a class="code hl_function" href="classmoonray_1_1pbr_1_1_pixel_filter.html#ae00fb180940f829ce32268a41c3132e7">apply</a>(<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">kSIMDSize</a>, mPixelY.data());</div>
+<div class="line"><span class="lineno">  452</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_pixel_filter_html_ae00fb180940f829ce32268a41c3132e7"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_pixel_filter.html#ae00fb180940f829ce32268a41c3132e7">moonray::pbr::PixelFilter::apply</a></div><div class="ttdeci">void apply(utype dataSize, float *data) const</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_filter_8h_source.html#l00023">PixelFilter.h:23</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a05be203e492310c81d3203056ed33d0e"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">moonray::pbr::kSIMDSize</a></div><div class="ttdeci">constexpr utype kSIMDSize</div><div class="ttdef"><b>Definition:</b> <a href="_sampling_constants_8h_source.html#l00019">SamplingConstants.h:19</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad5a54877b6454284d5abbad3c97d773e" name="ad5a54877b6454284d5abbad3c97d773e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5a54877b6454284d5abbad3c97d773e">&#9670;&#160;</a></span>fillPrimary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::pbr::Sampler::fillPrimary </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dofEnabled</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sampler_8h_source.html#l00455">455</a> of file <a class="el" href="_sampler_8h_source.html">Sampler.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  456</span>    {</div>
+<div class="line"><span class="lineno">  457</span>        <span class="keyword">const</span> std::uint32_t seed = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sampler.html#a30b13ef6372fe2d24def4b087cf7a223">mPixelWideScramble</a>.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a53a03f0d239096c6af30f1b039866311">getSeed</a>();</div>
+<div class="line"><span class="lineno">  458</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sampler.html#a484c61d60fe95c7de871a43d539a4c6a">mUse8x8Grid</a>) {</div>
+<div class="line"><span class="lineno">  459</span>            <span class="comment">// Sample to populate the 8x8 (or 4x4, 2x2, 1x1)</span></div>
+<div class="line"><span class="lineno">  460</span>            <span class="comment">//  subpixel grid... Note that time and lens samples are not affected.</span></div>
+<div class="line"><span class="lineno">  461</span>            <span class="comment">// We also need to pick the largest subpixel resolution that will be fully</span></div>
+<div class="line"><span class="lineno">  462</span>            <span class="comment">//  populated by the number of samples such that there are no unsampled subpixels.</span></div>
+<div class="line"><span class="lineno">  463</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sampler.html#a504904724ffa62c25abe1d9731f07017">mNumSamples</a> &gt;= 64) {</div>
+<div class="line"><span class="lineno">  464</span>                <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a94e9aaa7833757876a41baf5ac47144b">fillPixelSamples8x8</a>(seed, x, y, t, n, mPixelX.data(), mPixelY.data());</div>
+<div class="line"><span class="lineno">  465</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sampler.html#a504904724ffa62c25abe1d9731f07017">mNumSamples</a> &gt;= 16) {</div>
+<div class="line"><span class="lineno">  466</span>                <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aa9e639c2cf04671dbfbfe1b84227ca35">fillPixelSamples4x4</a>(seed, x, y, t, n, mPixelX.data(), mPixelY.data());</div>
+<div class="line"><span class="lineno">  467</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sampler.html#a504904724ffa62c25abe1d9731f07017">mNumSamples</a> &gt;= 4) {</div>
+<div class="line"><span class="lineno">  468</span>                <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a641a6c9148c0cbed869551e333bdf06f">fillPixelSamples2x2</a>(seed, x, y, t, n, mPixelX.data(), mPixelY.data());</div>
+<div class="line"><span class="lineno">  469</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  470</span>                <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a08310e8538b13fd935353bed81fa62d0">fillPixelSamples1x1</a>(seed, x, y, t, n, mPixelX.data(), mPixelY.data());</div>
+<div class="line"><span class="lineno">  471</span>            }</div>
+<div class="line"><span class="lineno">  472</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  473</span>            <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ab1f51d5f524e91317b76cd5e23cbf23a">fillPixelSamples</a>(seed, x, y, t, n, mPixelX.data(), mPixelY.data());</div>
+<div class="line"><span class="lineno">  474</span>        }</div>
+<div class="line"><span class="lineno">  475</span>        <a class="code hl_function" href="namespacemoonray_1_1pbr.html#acc5603c76687679b09298e79a81308a2">fillTimeSamples</a>(seed, x, y, t, n, mTime.data());</div>
+<div class="line"><span class="lineno">  476</span>        <span class="keywordflow">if</span> (dofEnabled) {</div>
+<div class="line"><span class="lineno">  477</span>            <a class="code hl_function" href="namespacemoonray_1_1pbr.html#acd531d7f8c84ff75d2955b5a74d96d4c">fillLensSamples</a>(seed, x, y, t, n, mLensU.data(), mLensV.data());</div>
+<div class="line"><span class="lineno">  478</span>        }</div>
+<div class="line"><span class="lineno">  479</span> </div>
+<div class="line"><span class="lineno">  480</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sampler.html#a484c61d60fe95c7de871a43d539a4c6a">mUse8x8Grid</a>) {</div>
+<div class="line"><span class="lineno">  481</span>            <span class="comment">// only move the samples around in the 2d image space if we&#39;re NOT in</span></div>
+<div class="line"><span class="lineno">  482</span>            <span class="comment">//  8x8 grid mode</span></div>
+<div class="line"><span class="lineno">  483</span>            <a class="code hl_function" href="classmoonray_1_1pbr_1_1_sampler.html#aedb50a2dea122b9eedb15ef13fc1ce47">applyPixelFilter</a>();</div>
+<div class="line"><span class="lineno">  484</span>        }</div>
+<div class="line"><span class="lineno">  485</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_pixel_scramble_html_a53a03f0d239096c6af30f1b039866311"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_pixel_scramble.html#a53a03f0d239096c6af30f1b039866311">moonray::pbr::PixelScramble::getSeed</a></div><div class="ttdeci">std::uint32_t getSeed() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_scramble_8h_source.html#l00245">PixelScramble.h:245</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_sampler_html_aedb50a2dea122b9eedb15ef13fc1ce47"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sampler.html#aedb50a2dea122b9eedb15ef13fc1ce47">moonray::pbr::Sampler::applyPixelFilter</a></div><div class="ttdeci">void applyPixelFilter()</div><div class="ttdef"><b>Definition:</b> <a href="_sampler_8h_source.html#l00448">Sampler.h:448</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a08310e8538b13fd935353bed81fa62d0"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a08310e8538b13fd935353bed81fa62d0">moonray::pbr::fillPixelSamples1x1</a></div><div class="ttdeci">finline void fillPixelSamples1x1(utype pixelWideScramble, int x, int y, int t, utype n, float *valsx, float *valsy)</div><div class="ttdef"><b>Definition:</b> <a href="_sampler_8h_source.html#l00206">Sampler.h:206</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a641a6c9148c0cbed869551e333bdf06f"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a641a6c9148c0cbed869551e333bdf06f">moonray::pbr::fillPixelSamples2x2</a></div><div class="ttdeci">finline void fillPixelSamples2x2(utype pixelWideScramble, int x, int y, int t, utype n, float *valsx, float *valsy)</div><div class="ttdef"><b>Definition:</b> <a href="_sampler_8h_source.html#l00255">Sampler.h:255</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a94e9aaa7833757876a41baf5ac47144b"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a94e9aaa7833757876a41baf5ac47144b">moonray::pbr::fillPixelSamples8x8</a></div><div class="ttdeci">finline void fillPixelSamples8x8(utype pixelWideScramble, int x, int y, int t, utype n, float *valsx, float *valsy)</div><div class="ttdef"><b>Definition:</b> <a href="_sampler_8h_source.html#l00311">Sampler.h:311</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_aa9e639c2cf04671dbfbfe1b84227ca35"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#aa9e639c2cf04671dbfbfe1b84227ca35">moonray::pbr::fillPixelSamples4x4</a></div><div class="ttdeci">finline void fillPixelSamples4x4(utype pixelWideScramble, int x, int y, int t, utype n, float *valsx, float *valsy)</div><div class="ttdef"><b>Definition:</b> <a href="_sampler_8h_source.html#l00281">Sampler.h:281</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_ab1f51d5f524e91317b76cd5e23cbf23a"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#ab1f51d5f524e91317b76cd5e23cbf23a">moonray::pbr::fillPixelSamples</a></div><div class="ttdeci">void fillPixelSamples(utype pixelWideScramble, int x, int y, int t, utype n, float *valsx, float *valsy)</div><div class="ttdef"><b>Definition:</b> <a href="_sampler_8h_source.html#l00187">Sampler.h:187</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_acc5603c76687679b09298e79a81308a2"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#acc5603c76687679b09298e79a81308a2">moonray::pbr::fillTimeSamples</a></div><div class="ttdeci">finline void fillTimeSamples(utype pixelWideScramble, int x, int y, int t, utype n, float *valst)</div><div class="ttdef"><b>Definition:</b> <a href="_sampler_8h_source.html#l00348">Sampler.h:348</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_acd531d7f8c84ff75d2955b5a74d96d4c"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#acd531d7f8c84ff75d2955b5a74d96d4c">moonray::pbr::fillLensSamples</a></div><div class="ttdeci">finline void fillLensSamples(utype pixelWideScramble, int x, int y, int t, utype n, float *valsu, float *valsv)</div><div class="ttdef"><b>Definition:</b> <a href="_sampler_8h_source.html#l00330">Sampler.h:330</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a380944fa627bacf8cc126236dbb0107e" name="a380944fa627bacf8cc126236dbb0107e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a380944fa627bacf8cc126236dbb0107e">&#9670;&#160;</a></span>getPrimarySample()</h2>
 
@@ -241,6 +595,157 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_sampler_8h_source.html#l00419">419</a> of file <a class="el" href="_sampler_8h_source.html">Sampler.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  420</span>    {</div>
+<div class="line"><span class="lineno">  421</span>        <span class="comment">// Check the cache and potentially fill it with primary samples.</span></div>
+<div class="line"><span class="lineno">  422</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> idx = <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_sampler.html#ad3b06b8e45cb765eca6bd8ee948bb9ea">mCurrentIdx</a>.<a class="code hl_function" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#ab93a2f2826bb9b88eb7f489c13dce9c1">getIndex</a>([=](<a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">utype</a> n) {</div>
+<div class="line"><span class="lineno">  423</span>            <a class="code hl_function" href="classmoonray_1_1pbr_1_1_sampler.html#ad5a54877b6454284d5abbad3c97d773e">fillPrimary</a>(x, y, t, n, dofEnabled);</div>
+<div class="line"><span class="lineno">  424</span>        }, subpixel);</div>
+<div class="line"><span class="lineno">  425</span> </div>
+<div class="line"><span class="lineno">  426</span>        <a class="code hl_struct" href="struct_sample.html">Sample</a> <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>;</div>
+<div class="line"><span class="lineno">  427</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.pixelX = mPixelX[idx];</div>
+<div class="line"><span class="lineno">  428</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.pixelY = mPixelY[idx];</div>
+<div class="line"><span class="lineno">  429</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.lensU  = mLensU[idx];</div>
+<div class="line"><span class="lineno">  430</span>        <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.lensV  = mLensV[idx];</div>
+<div class="line"><span class="lineno">  431</span> </div>
+<div class="line"><span class="lineno">  432</span>        <span class="keywordflow">if</span> (shutterBias == 0) {</div>
+<div class="line"><span class="lineno">  433</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.time = mTime[idx];</div>
+<div class="line"><span class="lineno">  434</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (shutterBias &gt; 0) {</div>
+<div class="line"><span class="lineno">  435</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.time = scene_rdl2::math::pow(mTime[idx], 1.0f / (1.0f + shutterBias));</div>
+<div class="line"><span class="lineno">  436</span>            <span class="comment">// Numeric precision issues can make sample.time == 1.0f, even if the original value is strictly less than one.</span></div>
+<div class="line"><span class="lineno">  437</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.time = std::min(<a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.time, <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a025ec644a933ee73d3194ce3ff43c0ff">kMaxLessThanOne</a>);</div>
+<div class="line"><span class="lineno">  438</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  439</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>.time = 1 - scene_rdl2::math::pow(1 - mTime[idx], 1.0f / (1.0f - shutterBias));</div>
+<div class="line"><span class="lineno">  440</span>        }</div>
+<div class="line"><span class="lineno">  441</span> </div>
+<div class="line"><span class="lineno">  442</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">sample</a>;</div>
+<div class="line"><span class="lineno">  443</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_sampler_html_ad5a54877b6454284d5abbad3c97d773e"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sampler.html#ad5a54877b6454284d5abbad3c97d773e">moonray::pbr::Sampler::fillPrimary</a></div><div class="ttdeci">void fillPrimary(int x, int y, int t, utype n, bool dofEnabled)</div><div class="ttdef"><b>Definition:</b> <a href="_sampler_8h_source.html#l00455">Sampler.h:455</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1pbr_1_1_sliding_window_cache_html_ab93a2f2826bb9b88eb7f489c13dce9c1"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_sliding_window_cache.html#ab93a2f2826bb9b88eb7f489c13dce9c1">moonray::pbr::SlidingWindowCache::getIndex</a></div><div class="ttdeci">utype getIndex(CacheCalc cacheCalc, utype incrementalValue)</div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a025ec644a933ee73d3194ce3ff43c0ff"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a025ec644a933ee73d3194ce3ff43c0ff">moonray::pbr::kMaxLessThanOne</a></div><div class="ttdeci">constexpr float kMaxLessThanOne</div><div class="ttdef"><b>Definition:</b> <a href="_sampling_constants_8h_source.html#l00020">SamplingConstants.h:20</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a283db28884f96d84fa1d0851741b7845"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a283db28884f96d84fa1d0851741b7845">moonray::pbr::utype</a></div><div class="ttdeci">std::uint32_t utype</div><div class="ttdef"><b>Definition:</b> <a href="_sampling_constants_8h_source.html#l00016">SamplingConstants.h:16</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1shading_html_a891596c3133fe5228ad4169dc149b987"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a891596c3133fe5228ad4169dc149b987">moonray::shading::sample</a></div><div class="ttdeci">scene_rdl2::math::Color sample(const BsdfLobev &amp;lobev, const BsdfSlicev &amp;slicev, float r1, float r2, int lane, scene_rdl2::math::Vec3f &amp;wi, float &amp;pdf)</div><div class="ttdef"><b>Definition:</b> <a href="_bsdfv_8cc_source.html#l00053">Bsdfv.cc:53</a></div></div>
+<div class="ttc" id="astruct_sample_html"><div class="ttname"><a href="struct_sample.html">Sample</a></div><div class="ttdef"><b>Definition:</b> <a href="pmj02_8cc_source.html#l00019">pmj02.cc:20</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad3b06b8e45cb765eca6bd8ee948bb9ea" name="ad3b06b8e45cb765eca6bd8ee948bb9ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3b06b8e45cb765eca6bd8ee948bb9ea">&#9670;&#160;</a></span>mCurrentIdx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1pbr_1_1_sliding_window_cache.html">SlidingWindowCache</a> moonray::pbr::Sampler::mCurrentIdx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sampler_8h_source.html#l00488">488</a> of file <a class="el" href="_sampler_8h_source.html">Sampler.h</a>.</p>
+
+</div>
+</div>
+<a id="a504904724ffa62c25abe1d9731f07017" name="a504904724ffa62c25abe1d9731f07017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a504904724ffa62c25abe1d9731f07017">&#9670;&#160;</a></span>mNumSamples</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int moonray::pbr::Sampler::mNumSamples</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sampler_8h_source.html#l00490">490</a> of file <a class="el" href="_sampler_8h_source.html">Sampler.h</a>.</p>
+
+</div>
+</div>
+<a id="a86491726f6409238036bb873cb30ac98" name="a86491726f6409238036bb873cb30ac98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86491726f6409238036bb873cb30ac98">&#9670;&#160;</a></span>mPixelFilter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmoonray_1_1pbr_1_1_pixel_filter.html">PixelFilter</a>* moonray::pbr::Sampler::mPixelFilter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sampler_8h_source.html#l00487">487</a> of file <a class="el" href="_sampler_8h_source.html">Sampler.h</a>.</p>
+
+</div>
+</div>
+<a id="a30b13ef6372fe2d24def4b087cf7a223" name="a30b13ef6372fe2d24def4b087cf7a223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b13ef6372fe2d24def4b087cf7a223">&#9670;&#160;</a></span>mPixelWideScramble</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1pbr_1_1_pixel_scramble.html">PixelScramble</a> moonray::pbr::Sampler::mPixelWideScramble</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sampler_8h_source.html#l00446">446</a> of file <a class="el" href="_sampler_8h_source.html">Sampler.h</a>.</p>
+
+</div>
+</div>
+<a id="a484c61d60fe95c7de871a43d539a4c6a" name="a484c61d60fe95c7de871a43d539a4c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a484c61d60fe95c7de871a43d539a4c6a">&#9670;&#160;</a></span>mUse8x8Grid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::pbr::Sampler::mUse8x8Grid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sampler_8h_source.html#l00489">489</a> of file <a class="el" href="_sampler_8h_source.html">Sampler.h</a>.</p>
 
 </div>
 </div>
@@ -248,9 +753,13 @@ Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/sampler/<a class="el" href="_sampler_8h_source.html">Sampler.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="classmoonray_1_1pbr_1_1_sampler.html">Sampler</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

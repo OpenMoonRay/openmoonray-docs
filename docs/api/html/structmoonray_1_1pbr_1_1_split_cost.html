@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="structmoonray_1_1pbr_1_1_split_cost.html">SplitCost</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structmoonray_1_1pbr_1_1_split_cost.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -106,7 +122,17 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html#l00337">337</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html">MeshLight.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  337</span>                : <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_split_cost.html#a6545bece8351c2da27732f9a2a3de9a6">mLeftEnergy</a>(0.0f), <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_split_cost.html#a1cf54cc5274479b9b79cd22a02a6d0fc">mRightEnergy</a>(0.0f),</div>
+<div class="line"><span class="lineno">  338</span>        <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_split_cost.html#a1c584680b57ef818a5231a146d5ca443">mLeftBbox</a>(scene_rdl2::util::empty), <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_split_cost.html#a9840623cd12bfcae6b7ad8577ba82922">mRightBbox</a>(scene_rdl2::util::empty),</div>
+<div class="line"><span class="lineno">  339</span>        <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_split_cost.html#aeab4ef1a162008777f8a7c277d70b795">mLeftBcone</a>({scene_rdl2::math::Vec3f(0.f), 0.f}), <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_split_cost.html#a7326e0643a35445097a8fefe07b8b2bf">mRightBcone</a>({scene_rdl2::math::Vec3f(0.f), 0.f})</div>
+<div class="line"><span class="lineno">  340</span>    {}</div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_split_cost_html_a1c584680b57ef818a5231a146d5ca443"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_split_cost.html#a1c584680b57ef818a5231a146d5ca443">moonray::pbr::SplitCost::mLeftBbox</a></div><div class="ttdeci">scene_rdl2::math::BBox3f mLeftBbox</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html#l00384">MeshLight.cc:384</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_split_cost_html_a1cf54cc5274479b9b79cd22a02a6d0fc"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_split_cost.html#a1cf54cc5274479b9b79cd22a02a6d0fc">moonray::pbr::SplitCost::mRightEnergy</a></div><div class="ttdeci">float mRightEnergy</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html#l00383">MeshLight.cc:383</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_split_cost_html_a6545bece8351c2da27732f9a2a3de9a6"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_split_cost.html#a6545bece8351c2da27732f9a2a3de9a6">moonray::pbr::SplitCost::mLeftEnergy</a></div><div class="ttdeci">float mLeftEnergy</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html#l00382">MeshLight.cc:382</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_split_cost_html_a7326e0643a35445097a8fefe07b8b2bf"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_split_cost.html#a7326e0643a35445097a8fefe07b8b2bf">moonray::pbr::SplitCost::mRightBcone</a></div><div class="ttdeci">Cone mRightBcone</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html#l00387">MeshLight.cc:387</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_split_cost_html_a9840623cd12bfcae6b7ad8577ba82922"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_split_cost.html#a9840623cd12bfcae6b7ad8577ba82922">moonray::pbr::SplitCost::mRightBbox</a></div><div class="ttdeci">scene_rdl2::math::BBox3f mRightBbox</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html#l00385">MeshLight.cc:385</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_split_cost_html_aeab4ef1a162008777f8a7c277d70b795"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_split_cost.html#aeab4ef1a162008777f8a7c277d70b795">moonray::pbr::SplitCost::mLeftBcone</a></div><div class="ttdeci">Cone mLeftBcone</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html#l00386">MeshLight.cc:386</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -135,7 +161,10 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html#l00351">351</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html">MeshLight.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  352</span>    {</div>
+<div class="line"><span class="lineno">  353</span>        <span class="keywordflow">return</span> dim[0] * dim[1] + dim[1] * dim[2] + dim[2] * dim[0];</div>
+<div class="line"><span class="lineno">  354</span>    };</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a398c7d7ce42e8442943f4f58f6c8cae5" name="a398c7d7ce42e8442943f4f58f6c8cae5"></a>
@@ -163,7 +192,35 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html#l00356">356</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html">MeshLight.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  357</span>    {</div>
+<div class="line"><span class="lineno">  358</span>        <span class="comment">// get cost of orientation</span></div>
+<div class="line"><span class="lineno">  359</span>        <span class="keywordtype">float</span> leftOrientation = <a class="code hl_function" href="structmoonray_1_1pbr_1_1_split_cost.html#acea8a99f989c840feb9d60fb617d2df3">orientationHeuristic</a>(<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_split_cost.html#aeab4ef1a162008777f8a7c277d70b795">mLeftBcone</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_cone.html#a3d1986a184d53f795530e18328637c3d">mThetaO</a>);</div>
+<div class="line"><span class="lineno">  360</span>        <span class="keywordtype">float</span> rightOrientation = <a class="code hl_function" href="structmoonray_1_1pbr_1_1_split_cost.html#acea8a99f989c840feb9d60fb617d2df3">orientationHeuristic</a>(<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_split_cost.html#a7326e0643a35445097a8fefe07b8b2bf">mRightBcone</a>.<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_cone.html#a3d1986a184d53f795530e18328637c3d">mThetaO</a>);</div>
+<div class="line"><span class="lineno">  361</span>        Cone combinedBcone = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a6f73938c093efe4dcb468689a9207805">combineBoundingCones</a>(&amp;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_split_cost.html#aeab4ef1a162008777f8a7c277d70b795">mLeftBcone</a>, &amp;<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_split_cost.html#a7326e0643a35445097a8fefe07b8b2bf">mRightBcone</a>);</div>
+<div class="line"><span class="lineno">  362</span>        <span class="keywordtype">float</span> combinedOrientation = <a class="code hl_function" href="structmoonray_1_1pbr_1_1_split_cost.html#acea8a99f989c840feb9d60fb617d2df3">orientationHeuristic</a>(combinedBcone.mThetaO);</div>
+<div class="line"><span class="lineno">  363</span> </div>
+<div class="line"><span class="lineno">  364</span>        <span class="comment">// get cost of surface area</span></div>
+<div class="line"><span class="lineno">  365</span>        <span class="keyword">const</span> scene_rdl2::math::Vec3f leftDim = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_split_cost.html#a1c584680b57ef818a5231a146d5ca443">mLeftBbox</a>.size();</div>
+<div class="line"><span class="lineno">  366</span>        <span class="keyword">const</span> scene_rdl2::math::Vec3f rightDim = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_split_cost.html#a9840623cd12bfcae6b7ad8577ba82922">mRightBbox</a>.size();</div>
+<div class="line"><span class="lineno">  367</span> </div>
+<div class="line"><span class="lineno">  368</span>        <span class="keywordtype">float</span> leftBoundSA = <a class="code hl_function" href="structmoonray_1_1pbr_1_1_split_cost.html#a464c749d9e37a2eb63fe498e97d74b4e">boxArea</a>(leftDim);</div>
+<div class="line"><span class="lineno">  369</span>        <span class="keywordtype">float</span> rightBoundSA = <a class="code hl_function" href="structmoonray_1_1pbr_1_1_split_cost.html#a464c749d9e37a2eb63fe498e97d74b4e">boxArea</a>(rightDim);</div>
+<div class="line"><span class="lineno">  370</span> </div>
+<div class="line"><span class="lineno">  371</span>        scene_rdl2::math::BBox3f combinedBound = <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_split_cost.html#a1c584680b57ef818a5231a146d5ca443">mLeftBbox</a>;</div>
+<div class="line"><span class="lineno">  372</span>        combinedBound.extend(<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_split_cost.html#a9840623cd12bfcae6b7ad8577ba82922">mRightBbox</a>);</div>
+<div class="line"><span class="lineno">  373</span>        <span class="keyword">const</span> scene_rdl2::math::Vec3f totalDim = combinedBound.size();</div>
+<div class="line"><span class="lineno">  374</span>        <span class="keywordtype">float</span> combinedBoundSA = <a class="code hl_function" href="structmoonray_1_1pbr_1_1_split_cost.html#a464c749d9e37a2eb63fe498e97d74b4e">boxArea</a>(totalDim);</div>
+<div class="line"><span class="lineno">  375</span> </div>
+<div class="line"><span class="lineno">  376</span>        <span class="comment">// SAOH</span></div>
+<div class="line"><span class="lineno">  377</span>        <span class="keywordflow">return</span> (<a class="code hl_variable" href="structmoonray_1_1pbr_1_1_split_cost.html#a6545bece8351c2da27732f9a2a3de9a6">mLeftEnergy</a> * leftBoundSA * leftOrientation</div>
+<div class="line"><span class="lineno">  378</span>            + <a class="code hl_variable" href="structmoonray_1_1pbr_1_1_split_cost.html#a1cf54cc5274479b9b79cd22a02a6d0fc">mRightEnergy</a> * rightBoundSA * rightOrientation)</div>
+<div class="line"><span class="lineno">  379</span>            * splitCoefficient / (combinedBoundSA * combinedOrientation);</div>
+<div class="line"><span class="lineno">  380</span>    };</div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a6f73938c093efe4dcb468689a9207805"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a6f73938c093efe4dcb468689a9207805">moonray::pbr::combineBoundingCones</a></div><div class="ttdeci">Cone combineBoundingCones(const Cone *a, const Cone *b)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html#l00209">MeshLight.cc:209</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_cone_html_a3d1986a184d53f795530e18328637c3d"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_cone.html#a3d1986a184d53f795530e18328637c3d">moonray::pbr::Cone::mThetaO</a></div><div class="ttdeci">float mThetaO</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html#l00193">MeshLight.cc:193</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_split_cost_html_a464c749d9e37a2eb63fe498e97d74b4e"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_split_cost.html#a464c749d9e37a2eb63fe498e97d74b4e">moonray::pbr::SplitCost::boxArea</a></div><div class="ttdeci">float boxArea(const scene_rdl2::math::Vec3f &amp;dim) const</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html#l00351">MeshLight.cc:351</a></div></div>
+<div class="ttc" id="astructmoonray_1_1pbr_1_1_split_cost_html_acea8a99f989c840feb9d60fb617d2df3"><div class="ttname"><a href="structmoonray_1_1pbr_1_1_split_cost.html#acea8a99f989c840feb9d60fb617d2df3">moonray::pbr::SplitCost::orientationHeuristic</a></div><div class="ttdeci">float orientationHeuristic(float thetaO) const</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html#l00343">MeshLight.cc:343</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="acea8a99f989c840feb9d60fb617d2df3" name="acea8a99f989c840feb9d60fb617d2df3"></a>
@@ -191,7 +248,14 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html#l00343">343</a> of file <a class="el" href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html">MeshLight.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  344</span>    {</div>
+<div class="line"><span class="lineno">  345</span>        <span class="comment">// Kulla (2017) p. 6 Eq. 1.</span></div>
+<div class="line"><span class="lineno">  346</span>        <span class="keywordtype">float</span> thetaW = scene_rdl2::math::min(thetaO + <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a1fdaa961337ef34deb997d0f6f4f8ecf">sThetaE</a>, scene_rdl2::math::sPi);</div>
+<div class="line"><span class="lineno">  347</span>        <span class="keywordflow">return</span> (scene_rdl2::math::sPi/2) * (4 - 3 * scene_rdl2::math::cos(thetaO) + 2 * (thetaW - thetaO) *</div>
+<div class="line"><span class="lineno">  348</span>            scene_rdl2::math::sin(thetaO) - scene_rdl2::math::cos(thetaO - 2 * thetaW));</div>
+<div class="line"><span class="lineno">  349</span>    }</div>
+<div class="ttc" id="anamespacemoonray_1_1pbr_html_a1fdaa961337ef34deb997d0f6f4f8ecf"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a1fdaa961337ef34deb997d0f6f4f8ecf">moonray::pbr::sThetaE</a></div><div class="ttdeci">static constexpr float sThetaE</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html#l00076">MeshLight.cc:76</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -295,9 +359,13 @@ Public Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/pbr/light/<a class="el" href="lib_2rendering_2pbr_2light_2_mesh_light_8cc_source.html">MeshLight.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1pbr.html">pbr</a></li><li class="navelem"><a class="el" href="structmoonray_1_1pbr_1_1_split_cost.html">SplitCost</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_shader_complex_ior.html">ShaderComplexIor</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classmoonray_1_1shading_1_1_shader_complex_ior.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1shading_1_1_shader_complex_ior-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::shading::ShaderComplexIor Class Reference</div></div>
 </div><!--header-->
@@ -68,6 +86,24 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae5cbb5dfc133438e7dc1c340553f3978"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmoonray_1_1shading_1_1_shader_complex_ior.html">ShaderComplexIor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_shader_complex_ior.html#ae5cbb5dfc133438e7dc1c340553f3978">createComplexIorFromColor</a> (const scene_rdl2::math::Color &amp;color, const scene_rdl2::math::Color &amp;edgeColor)</td></tr>
 <tr class="separator:ae5cbb5dfc133438e7dc1c340553f3978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:adfeec6c1cca1dc339f5d19851b5ca31d"><td class="memItemLeft" align="right" valign="top">static finline scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_shader_complex_ior.html#adfeec6c1cca1dc339f5d19851b5ca31d">nMin</a> (const scene_rdl2::math::Color &amp;r)</td></tr>
+<tr class="separator:adfeec6c1cca1dc339f5d19851b5ca31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaecb60ea67979eb77f822c93ab0bc22"><td class="memItemLeft" align="right" valign="top">static finline scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_shader_complex_ior.html#abaecb60ea67979eb77f822c93ab0bc22">nMax</a> (const scene_rdl2::math::Color &amp;r)</td></tr>
+<tr class="separator:abaecb60ea67979eb77f822c93ab0bc22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a3bb9fa509a4d75166827863bab200"><td class="memItemLeft" align="right" valign="top">static finline scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_shader_complex_ior.html#a17a3bb9fa509a4d75166827863bab200">computeEta</a> (const scene_rdl2::math::Color &amp;r, const scene_rdl2::math::Color &amp;g)</td></tr>
+<tr class="separator:a17a3bb9fa509a4d75166827863bab200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74eefb21ab5f2f1520b89f59fa70d899"><td class="memItemLeft" align="right" valign="top">static finline scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_shader_complex_ior.html#a74eefb21ab5f2f1520b89f59fa70d899">computeK</a> (const scene_rdl2::math::Color &amp;r, const scene_rdl2::math::Color &amp;n)</td></tr>
+<tr class="separator:a74eefb21ab5f2f1520b89f59fa70d899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0339689d2ed60b9b8794650d893df2c9"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_shader_complex_ior.html#a0339689d2ed60b9b8794650d893df2c9">mEta</a></td></tr>
+<tr class="separator:a0339689d2ed60b9b8794650d893df2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2470573cd1c96f04c7eb2e36dba4283a"><td class="memItemLeft" align="right" valign="top">scene_rdl2::math::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_shader_complex_ior.html#a2470573cd1c96f04c7eb2e36dba4283a">mAbsorption</a></td></tr>
+<tr class="separator:a2470573cd1c96f04c7eb2e36dba4283a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This class stores complex index of refraction that is generally used to represent metallic surface interactions. </p>
@@ -111,10 +147,105 @@ Static Public Member Functions</h2></td></tr>
 <p>Initialize a <a class="el" href="classmoonray_1_1shading_1_1_shader_complex_ior.html">ShaderComplexIor</a> object given the material complex index of refraction. </p>
 
 <p class="definition">Definition at line <a class="el" href="_ior_8h_source.html#l00070">70</a> of file <a class="el" href="_ior_8h_source.html">Ior.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   71</span>                                                            :</div>
+<div class="line"><span class="lineno">   72</span>                         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_shader_complex_ior.html#a0339689d2ed60b9b8794650d893df2c9">mEta</a>(eta),</div>
+<div class="line"><span class="lineno">   73</span>                         <a class="code hl_variable" href="classmoonray_1_1shading_1_1_shader_complex_ior.html#a2470573cd1c96f04c7eb2e36dba4283a">mAbsorption</a>(absorption)</div>
+<div class="line"><span class="lineno">   74</span>    { }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_shader_complex_ior_html_a0339689d2ed60b9b8794650d893df2c9"><div class="ttname"><a href="classmoonray_1_1shading_1_1_shader_complex_ior.html#a0339689d2ed60b9b8794650d893df2c9">moonray::shading::ShaderComplexIor::mEta</a></div><div class="ttdeci">scene_rdl2::math::Color mEta</div><div class="ttdef"><b>Definition:</b> <a href="_ior_8h_source.html#l00131">Ior.h:131</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_shader_complex_ior_html_a2470573cd1c96f04c7eb2e36dba4283a"><div class="ttname"><a href="classmoonray_1_1shading_1_1_shader_complex_ior.html#a2470573cd1c96f04c7eb2e36dba4283a">moonray::shading::ShaderComplexIor::mAbsorption</a></div><div class="ttdeci">scene_rdl2::math::Color mAbsorption</div><div class="ttdef"><b>Definition:</b> <a href="_ior_8h_source.html#l00132">Ior.h:132</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a17a3bb9fa509a4d75166827863bab200" name="a17a3bb9fa509a4d75166827863bab200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a3bb9fa509a4d75166827863bab200">&#9670;&#160;</a></span>computeEta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static finline scene_rdl2::math::Color moonray::shading::ShaderComplexIor::computeEta </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Color &amp;&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const scene_rdl2::math::Color &amp;&#160;</td>
+          <td class="paramname"><em>g</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ior_8h_source.html#l00115">115</a> of file <a class="el" href="_ior_8h_source.html">Ior.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  116</span>    {</div>
+<div class="line"><span class="lineno">  117</span>        <span class="keywordflow">return</span> g * <a class="code hl_function" href="classmoonray_1_1shading_1_1_shader_complex_ior.html#adfeec6c1cca1dc339f5d19851b5ca31d">nMin</a>(r) + (scene_rdl2::math::sWhite - g) * <a class="code hl_function" href="classmoonray_1_1shading_1_1_shader_complex_ior.html#abaecb60ea67979eb77f822c93ab0bc22">nMax</a>(r);</div>
+<div class="line"><span class="lineno">  118</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_shader_complex_ior_html_abaecb60ea67979eb77f822c93ab0bc22"><div class="ttname"><a href="classmoonray_1_1shading_1_1_shader_complex_ior.html#abaecb60ea67979eb77f822c93ab0bc22">moonray::shading::ShaderComplexIor::nMax</a></div><div class="ttdeci">static finline scene_rdl2::math::Color nMax(const scene_rdl2::math::Color &amp;r)</div><div class="ttdef"><b>Definition:</b> <a href="_ior_8h_source.html#l00108">Ior.h:108</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_shader_complex_ior_html_adfeec6c1cca1dc339f5d19851b5ca31d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_shader_complex_ior.html#adfeec6c1cca1dc339f5d19851b5ca31d">moonray::shading::ShaderComplexIor::nMin</a></div><div class="ttdeci">static finline scene_rdl2::math::Color nMin(const scene_rdl2::math::Color &amp;r)</div><div class="ttdef"><b>Definition:</b> <a href="_ior_8h_source.html#l00102">Ior.h:102</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a74eefb21ab5f2f1520b89f59fa70d899" name="a74eefb21ab5f2f1520b89f59fa70d899"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74eefb21ab5f2f1520b89f59fa70d899">&#9670;&#160;</a></span>computeK()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static finline scene_rdl2::math::Color moonray::shading::ShaderComplexIor::computeK </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Color &amp;&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const scene_rdl2::math::Color &amp;&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ior_8h_source.html#l00121">121</a> of file <a class="el" href="_ior_8h_source.html">Ior.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  122</span>    {</div>
+<div class="line"><span class="lineno">  123</span>        <span class="keyword">const</span> scene_rdl2::math::Color <a class="code hl_variable" href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">a</a> = n + scene_rdl2::math::sWhite;</div>
+<div class="line"><span class="lineno">  124</span>        <span class="keyword">const</span> scene_rdl2::math::Color b = n - scene_rdl2::math::sWhite;</div>
+<div class="line"><span class="lineno">  125</span>        <span class="comment">// Take a max() here to get rid of any numerical -0 etc</span></div>
+<div class="line"><span class="lineno">  126</span>        <span class="keyword">const</span> scene_rdl2::math::Color nr = max(scene_rdl2::math::sBlack, r * a * a - b * b);</div>
+<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">return</span> sqrt(nr / (scene_rdl2::math::sWhite - r));</div>
+<div class="line"><span class="lineno">  128</span>    }</div>
+<div class="ttc" id="anamespacesequence__discrepancy_html_a06f968c2f5ed1f9d42f00351b2b1efb2"><div class="ttname"><a href="namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2">sequence_discrepancy.a</a></div><div class="ttdeci">def a</div><div class="ttdef"><b>Definition:</b> <a href="sequence__discrepancy_8py_source.html#l00038">sequence_discrepancy.py:38</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ae5cbb5dfc133438e7dc1c340553f3978" name="ae5cbb5dfc133438e7dc1c340553f3978"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae5cbb5dfc133438e7dc1c340553f3978">&#9670;&#160;</a></span>createComplexIorFromColor()</h2>
 
@@ -150,7 +281,23 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ior_8h_source.html#l00077">77</a> of file <a class="el" href="_ior_8h_source.html">Ior.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   79</span>    {</div>
+<div class="line"><span class="lineno">   80</span>        <span class="comment">// Make sure no color channel is at 1.0</span></div>
+<div class="line"><span class="lineno">   81</span>        <span class="keyword">const</span> scene_rdl2::math::Color maxRefl = scene_rdl2::math::Color(0.999f);</div>
+<div class="line"><span class="lineno">   82</span>        <span class="keyword">const</span> scene_rdl2::math::Color clampedColor = clamp(color, scene_rdl2::math::sBlack, maxRefl);</div>
+<div class="line"><span class="lineno">   83</span>        <span class="keyword">const</span> scene_rdl2::math::Color clampedEdgeColor = clamp(edgeColor, scene_rdl2::math::sBlack, maxRefl);</div>
+<div class="line"><span class="lineno">   84</span>        <span class="comment">// Convert the colors to complex IOR</span></div>
+<div class="line"><span class="lineno">   85</span>        <span class="keyword">const</span> scene_rdl2::math::Color eta = <a class="code hl_function" href="classmoonray_1_1shading_1_1_shader_complex_ior.html#a17a3bb9fa509a4d75166827863bab200">computeEta</a>(clampedColor,</div>
+<div class="line"><span class="lineno">   86</span>                                                       clampedEdgeColor);</div>
+<div class="line"><span class="lineno">   87</span>        <span class="keyword">const</span> scene_rdl2::math::Color k   = <a class="code hl_function" href="classmoonray_1_1shading_1_1_shader_complex_ior.html#a74eefb21ab5f2f1520b89f59fa70d899">computeK</a>(clampedColor,</div>
+<div class="line"><span class="lineno">   88</span>                                                     eta);</div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classmoonray_1_1shading_1_1_shader_complex_ior.html#a11204d7685ff70703f3620ef9cef4e9d">ShaderComplexIor</a>(eta, k);</div>
+<div class="line"><span class="lineno">   91</span>    }</div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_shader_complex_ior_html_a11204d7685ff70703f3620ef9cef4e9d"><div class="ttname"><a href="classmoonray_1_1shading_1_1_shader_complex_ior.html#a11204d7685ff70703f3620ef9cef4e9d">moonray::shading::ShaderComplexIor::ShaderComplexIor</a></div><div class="ttdeci">ShaderComplexIor(const scene_rdl2::math::Color &amp;eta, const scene_rdl2::math::Color &amp;absorption)</div><div class="ttdoc">Initialize a ShaderComplexIor object given the material complex index of refraction.</div><div class="ttdef"><b>Definition:</b> <a href="_ior_8h_source.html#l00070">Ior.h:70</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_shader_complex_ior_html_a17a3bb9fa509a4d75166827863bab200"><div class="ttname"><a href="classmoonray_1_1shading_1_1_shader_complex_ior.html#a17a3bb9fa509a4d75166827863bab200">moonray::shading::ShaderComplexIor::computeEta</a></div><div class="ttdeci">static finline scene_rdl2::math::Color computeEta(const scene_rdl2::math::Color &amp;r, const scene_rdl2::math::Color &amp;g)</div><div class="ttdef"><b>Definition:</b> <a href="_ior_8h_source.html#l00115">Ior.h:115</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1shading_1_1_shader_complex_ior_html_a74eefb21ab5f2f1520b89f59fa70d899"><div class="ttname"><a href="classmoonray_1_1shading_1_1_shader_complex_ior.html#a74eefb21ab5f2f1520b89f59fa70d899">moonray::shading::ShaderComplexIor::computeK</a></div><div class="ttdeci">static finline scene_rdl2::math::Color computeK(const scene_rdl2::math::Color &amp;r, const scene_rdl2::math::Color &amp;n)</div><div class="ttdef"><b>Definition:</b> <a href="_ior_8h_source.html#l00121">Ior.h:121</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2c7a4adca12083f7df3486507fec466f" name="a2c7a4adca12083f7df3486507fec466f"></a>
@@ -177,7 +324,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ior_8h_source.html#l00094">94</a> of file <a class="el" href="_ior_8h_source.html">Ior.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">   94</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_shader_complex_ior.html#a2470573cd1c96f04c7eb2e36dba4283a">mAbsorption</a>; }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a756d746252f46a55f96bcfc6ee02aabf" name="a756d746252f46a55f96bcfc6ee02aabf"></a>
@@ -204,6 +352,119 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_ior_8h_source.html#l00093">93</a> of file <a class="el" href="_ior_8h_source.html">Ior.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   93</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1shading_1_1_shader_complex_ior.html#a0339689d2ed60b9b8794650d893df2c9">mEta</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abaecb60ea67979eb77f822c93ab0bc22" name="abaecb60ea67979eb77f822c93ab0bc22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaecb60ea67979eb77f822c93ab0bc22">&#9670;&#160;</a></span>nMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static finline scene_rdl2::math::Color moonray::shading::ShaderComplexIor::nMax </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Color &amp;&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ior_8h_source.html#l00108">108</a> of file <a class="el" href="_ior_8h_source.html">Ior.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  109</span>    {</div>
+<div class="line"><span class="lineno">  110</span>        scene_rdl2::math::Color rSqrt = sqrt(r);</div>
+<div class="line"><span class="lineno">  111</span>        <span class="keywordflow">return</span> (scene_rdl2::math::sWhite + rSqrt) / (scene_rdl2::math::sWhite - rSqrt);</div>
+<div class="line"><span class="lineno">  112</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adfeec6c1cca1dc339f5d19851b5ca31d" name="adfeec6c1cca1dc339f5d19851b5ca31d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfeec6c1cca1dc339f5d19851b5ca31d">&#9670;&#160;</a></span>nMin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static finline scene_rdl2::math::Color moonray::shading::ShaderComplexIor::nMin </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::math::Color &amp;&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ior_8h_source.html#l00102">102</a> of file <a class="el" href="_ior_8h_source.html">Ior.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  103</span>    {</div>
+<div class="line"><span class="lineno">  104</span>        <span class="keywordflow">return</span> (scene_rdl2::math::sWhite - r) / (scene_rdl2::math::sWhite + r);</div>
+<div class="line"><span class="lineno">  105</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2470573cd1c96f04c7eb2e36dba4283a" name="a2470573cd1c96f04c7eb2e36dba4283a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2470573cd1c96f04c7eb2e36dba4283a">&#9670;&#160;</a></span>mAbsorption</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Color moonray::shading::ShaderComplexIor::mAbsorption</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ior_8h_source.html#l00132">132</a> of file <a class="el" href="_ior_8h_source.html">Ior.h</a>.</p>
+
+</div>
+</div>
+<a id="a0339689d2ed60b9b8794650d893df2c9" name="a0339689d2ed60b9b8794650d893df2c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0339689d2ed60b9b8794650d893df2c9">&#9670;&#160;</a></span>mEta</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">scene_rdl2::math::Color moonray::shading::ShaderComplexIor::mEta</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ior_8h_source.html#l00131">131</a> of file <a class="el" href="_ior_8h_source.html">Ior.h</a>.</p>
 
 </div>
 </div>
@@ -211,9 +472,13 @@ Static Public Member Functions</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/shading/<a class="el" href="_ior_8h_source.html">Ior.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1shading.html">shading</a></li><li class="navelem"><a class="el" href="classmoonray_1_1shading_1_1_shader_complex_ior.html">ShaderComplexIor</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

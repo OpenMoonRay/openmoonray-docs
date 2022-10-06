@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,14 +42,27 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_e8636fe16f0c9a46fe2eb47f132af4e0.html">dso</a></li><li class="navelem"><a class="el" href="dir_04804282e0548e8d8ab2caee9c3b849d.html">material</a></li><li class="navelem"><a class="el" href="dir_74950a26c83081e995257791bac2fa51.html">Measured</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_measured_material_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">MeasuredMaterial.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -66,6 +83,15 @@ Functions</h2></td></tr>
 <tr class="separator:ad70542ad9a547b9eb8590371bcb4d555"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_measured_material_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a> ()</td></tr>
 <tr class="separator:acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace9c5b20bbf47da39e211ce3fac3864d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_measured_material_8cc.html#ace9c5b20bbf47da39e211ce3fac3864d">shade</a> (const scene_rdl2::rdl2::Material *self, <a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls, const <a class="el" href="classmoonray_1_1shading_1_1_state.html">State</a> &amp;state, <a class="el" href="classmoonray_1_1shading_1_1_bsdf_builder.html">BsdfBuilder</a> &amp;bsdfBuilder)</td></tr>
+<tr class="separator:ace9c5b20bbf47da39e211ce3fac3864d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a5e2030f792d9a01695ac78efe8ebd802"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemoonray_1_1shading.html#ac011c97b495adcea4e598b18ae4ca313">moonray::shading::BsdfTableType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_measured_material_8cc.html#a5e2030f792d9a01695ac78efe8ebd802">mBsdfTableDiffuse</a></td></tr>
+<tr class="separator:a5e2030f792d9a01695ac78efe8ebd802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad145408ad1465bb66514ee73263e8808"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemoonray_1_1shading.html#ac011c97b495adcea4e598b18ae4ca313">moonray::shading::BsdfTableType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_measured_material_8cc.html#ad145408ad1465bb66514ee73263e8808">mBsdfTableSpecular</a></td></tr>
+<tr class="separator:ad145408ad1465bb66514ee73263e8808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="abae7501e7a36d9ecb1edd4b3ca531b69" name="abae7501e7a36d9ecb1edd4b3ca531b69"></a>
@@ -95,6 +121,63 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_measured_material_8cc_source.html#l00044">44</a> of file <a class="el" href="_measured_material_8cc_source.html">MeasuredMaterial.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>                                                          :</div>
+<div class="line"><span class="lineno">   46</span>    Parent(sceneClass, name),</div>
+<div class="line"><span class="lineno">   47</span>    <a class="code hl_variable" href="_measured_material_8cc.html#a5e2030f792d9a01695ac78efe8ebd802">mBsdfTableDiffuse</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">   48</span>    <a class="code hl_variable" href="_measured_material_8cc.html#ad145408ad1465bb66514ee73263e8808">mBsdfTableSpecular</a>(<span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   49</span>{</div>
+<div class="line"><span class="lineno">   50</span>    mShadeFunc = MeasuredMaterial::shade;</div>
+<div class="line"><span class="lineno">   51</span>}</div>
+<div class="ttc" id="a_measured_material_8cc_html_a5e2030f792d9a01695ac78efe8ebd802"><div class="ttname"><a href="_measured_material_8cc.html#a5e2030f792d9a01695ac78efe8ebd802">mBsdfTableDiffuse</a></div><div class="ttdeci">moonray::shading::BsdfTableType * mBsdfTableDiffuse</div><div class="ttdef"><b>Definition:</b> <a href="_measured_material_8cc_source.html#l00036">MeasuredMaterial.cc:36</a></div></div>
+<div class="ttc" id="a_measured_material_8cc_html_ad145408ad1465bb66514ee73263e8808"><div class="ttname"><a href="_measured_material_8cc.html#ad145408ad1465bb66514ee73263e8808">mBsdfTableSpecular</a></div><div class="ttdeci">moonray::shading::BsdfTableType * mBsdfTableSpecular</div><div class="ttdef"><b>Definition:</b> <a href="_measured_material_8cc_source.html#l00037">MeasuredMaterial.cc:37</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ace9c5b20bbf47da39e211ce3fac3864d" name="ace9c5b20bbf47da39e211ce3fac3864d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace9c5b20bbf47da39e211ce3fac3864d">&#9670;&#160;</a></span>shade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void shade </td>
+          <td>(</td>
+          <td class="paramtype">const scene_rdl2::rdl2::Material *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *&#160;</td>
+          <td class="paramname"><em>tls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_state.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_bsdf_builder.html">BsdfBuilder</a> &amp;&#160;</td>
+          <td class="paramname"><em>bsdfBuilder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -139,13 +222,70 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_measured_material_8cc_source.html#l00054">54</a> of file <a class="el" href="_measured_material_8cc_source.html">MeasuredMaterial.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>{</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keyword">delete</span> <a class="code hl_variable" href="_measured_material_8cc.html#a5e2030f792d9a01695ac78efe8ebd802">mBsdfTableDiffuse</a>;</div>
+<div class="line"><span class="lineno">   57</span>    <span class="keyword">delete</span> <a class="code hl_variable" href="_measured_material_8cc.html#ad145408ad1465bb66514ee73263e8808">mBsdfTableSpecular</a>;</div>
+<div class="line"><span class="lineno">   58</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a5e2030f792d9a01695ac78efe8ebd802" name="a5e2030f792d9a01695ac78efe8ebd802"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e2030f792d9a01695ac78efe8ebd802">&#9670;&#160;</a></span>mBsdfTableDiffuse</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemoonray_1_1shading.html#ac011c97b495adcea4e598b18ae4ca313">moonray::shading::BsdfTableType</a>* mBsdfTableDiffuse</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_measured_material_8cc_source.html#l00036">36</a> of file <a class="el" href="_measured_material_8cc_source.html">MeasuredMaterial.cc</a>.</p>
+
+</div>
+</div>
+<a id="ad145408ad1465bb66514ee73263e8808" name="ad145408ad1465bb66514ee73263e8808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad145408ad1465bb66514ee73263e8808">&#9670;&#160;</a></span>mBsdfTableSpecular</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemoonray_1_1shading.html#ac011c97b495adcea4e598b18ae4ca313">moonray::shading::BsdfTableType</a>* mBsdfTableSpecular</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_measured_material_8cc_source.html#l00037">37</a> of file <a class="el" href="_measured_material_8cc_source.html">MeasuredMaterial.cc</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_6a52a9733426c3f6f80e6f7bd53e6965.html">dso</a></li><li class="navelem"><a class="el" href="dir_7e36e2561e5e17b014d83019c50ecdc0.html">material</a></li><li class="navelem"><a class="el" href="dir_eb2a30ee03853a18c8a8a4bcc3a15609.html">Measured</a></li><li class="navelem"><a class="el" href="_measured_material_8cc.html">MeasuredMaterial.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

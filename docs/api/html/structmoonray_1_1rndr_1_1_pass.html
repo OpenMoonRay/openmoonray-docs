@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="structmoonray_1_1rndr_1_1_pass.html">Pass</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structmoonray_1_1rndr_1_1_pass.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -106,7 +122,10 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="rndr_2_types_8h_source.html#l00109">109</a> of file <a class="el" href="rndr_2_types_8h_source.html">Types.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  109</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="structmoonray_1_1rndr_1_1_pass.html#a726bd9980fda64e93ba4d42b5d92e12e">mEndSampleIdx</a> - <a class="code hl_variable" href="structmoonray_1_1rndr_1_1_pass.html#a1972c632d1d60bd5d5ed237cb5b34bc8">mStartSampleIdx</a>; }</div>
+<div class="ttc" id="astructmoonray_1_1rndr_1_1_pass_html_a1972c632d1d60bd5d5ed237cb5b34bc8"><div class="ttname"><a href="structmoonray_1_1rndr_1_1_pass.html#a1972c632d1d60bd5d5ed237cb5b34bc8">moonray::rndr::Pass::mStartSampleIdx</a></div><div class="ttdeci">unsigned mStartSampleIdx</div><div class="ttdef"><b>Definition:</b> <a href="rndr_2_types_8h_source.html#l00137">Types.h:137</a></div></div>
+<div class="ttc" id="astructmoonray_1_1rndr_1_1_pass_html_a726bd9980fda64e93ba4d42b5d92e12e"><div class="ttname"><a href="structmoonray_1_1rndr_1_1_pass.html#a726bd9980fda64e93ba4d42b5d92e12e">moonray::rndr::Pass::mEndSampleIdx</a></div><div class="ttdeci">unsigned mEndSampleIdx</div><div class="ttdef"><b>Definition:</b> <a href="rndr_2_types_8h_source.html#l00138">Types.h:138</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6a20df8154934b8f2fc64e43fb53a40c" name="a6a20df8154934b8f2fc64e43fb53a40c"></a>
@@ -133,7 +152,11 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="rndr_2_types_8h_source.html#l00110">110</a> of file <a class="el" href="rndr_2_types_8h_source.html">Types.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  110</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_pass.html#a82ab5b266d767d017fb7cb6f2d957a7c">mEndPixelIdx</a> - <a class="code hl_variable" href="structmoonray_1_1rndr_1_1_pass.html#aef83848c3ff3cf8603fa0df0729c0582">mStartPixelIdx</a>) * <a class="code hl_function" href="structmoonray_1_1rndr_1_1_pass.html#a90d705978683fa3fe9c83d33d929c17c">getNumSamplesPerPixel</a>(); }</div>
+<div class="ttc" id="astructmoonray_1_1rndr_1_1_pass_html_a82ab5b266d767d017fb7cb6f2d957a7c"><div class="ttname"><a href="structmoonray_1_1rndr_1_1_pass.html#a82ab5b266d767d017fb7cb6f2d957a7c">moonray::rndr::Pass::mEndPixelIdx</a></div><div class="ttdeci">unsigned mEndPixelIdx</div><div class="ttdef"><b>Definition:</b> <a href="rndr_2_types_8h_source.html#l00132">Types.h:132</a></div></div>
+<div class="ttc" id="astructmoonray_1_1rndr_1_1_pass_html_a90d705978683fa3fe9c83d33d929c17c"><div class="ttname"><a href="structmoonray_1_1rndr_1_1_pass.html#a90d705978683fa3fe9c83d33d929c17c">moonray::rndr::Pass::getNumSamplesPerPixel</a></div><div class="ttdeci">unsigned getNumSamplesPerPixel() const</div><div class="ttdef"><b>Definition:</b> <a href="rndr_2_types_8h_source.html#l00109">Types.h:109</a></div></div>
+<div class="ttc" id="astructmoonray_1_1rndr_1_1_pass_html_aef83848c3ff3cf8603fa0df0729c0582"><div class="ttname"><a href="structmoonray_1_1rndr_1_1_pass.html#aef83848c3ff3cf8603fa0df0729c0582">moonray::rndr::Pass::mStartPixelIdx</a></div><div class="ttdeci">unsigned mStartPixelIdx</div><div class="ttdef"><b>Definition:</b> <a href="rndr_2_types_8h_source.html#l00131">Types.h:131</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a00f0aeca10df282a1c4d2a82a73dd192" name="a00f0aeca10df282a1c4d2a82a73dd192"></a>
@@ -160,7 +183,9 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="rndr_2_types_8h_source.html#l00107">107</a> of file <a class="el" href="rndr_2_types_8h_source.html">Types.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  107</span>{ <span class="keywordflow">return</span> !<a class="code hl_function" href="structmoonray_1_1rndr_1_1_pass.html#a746c2cf06ad994252c7a4a452f8046f5">isFinePass</a>(); }</div>
+<div class="ttc" id="astructmoonray_1_1rndr_1_1_pass_html_a746c2cf06ad994252c7a4a452f8046f5"><div class="ttname"><a href="structmoonray_1_1rndr_1_1_pass.html#a746c2cf06ad994252c7a4a452f8046f5">moonray::rndr::Pass::isFinePass</a></div><div class="ttdeci">bool isFinePass() const</div><div class="ttdef"><b>Definition:</b> <a href="rndr_2_types_8h_source.html#l00099">Types.h:99</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a746c2cf06ad994252c7a4a452f8046f5" name="a746c2cf06ad994252c7a4a452f8046f5"></a>
@@ -187,7 +212,14 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="rndr_2_types_8h_source.html#l00099">99</a> of file <a class="el" href="rndr_2_types_8h_source.html">Types.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  100</span>    {</div>
+<div class="line"><span class="lineno">  101</span>        <span class="comment">// Obviously 1 &lt;= startSampleIdx is a finePass.</span></div>
+<div class="line"><span class="lineno">  102</span>        <span class="comment">// However we also need to include pixRange=0~64, sample=0~N case into finePass as well.</span></div>
+<div class="line"><span class="lineno">  103</span>        <span class="comment">// This case we sample start from coarse pass and process all 64 pixels. We should</span></div>
+<div class="line"><span class="lineno">  104</span>        <span class="comment">// categorize this case as finePass actually. Toshi (Feb/12/2020)</span></div>
+<div class="line"><span class="lineno">  105</span>        <span class="keywordflow">return</span> (<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_pass.html#aef83848c3ff3cf8603fa0df0729c0582">mStartPixelIdx</a> == 0 &amp;&amp; <a class="code hl_variable" href="structmoonray_1_1rndr_1_1_pass.html#a82ab5b266d767d017fb7cb6f2d957a7c">mEndPixelIdx</a> == 64) || (1 &lt;= <a class="code hl_variable" href="structmoonray_1_1rndr_1_1_pass.html#a1972c632d1d60bd5d5ed237cb5b34bc8">mStartSampleIdx</a>);</div>
+<div class="line"><span class="lineno">  106</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ac2bfac791bcb9aafb9f23346e8c24414" name="ac2bfac791bcb9aafb9f23346e8c24414"></a>
@@ -214,7 +246,22 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="rndr_2_types_8h_source.html#l00112">112</a> of file <a class="el" href="rndr_2_types_8h_source.html">Types.h</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  113</span>    {</div>
+<div class="line"><span class="lineno">  114</span>        MNRY_ASSERT(<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_pass.html#a82ab5b266d767d017fb7cb6f2d957a7c">mEndPixelIdx</a> &gt; <a class="code hl_variable" href="structmoonray_1_1rndr_1_1_pass.html#aef83848c3ff3cf8603fa0df0729c0582">mStartPixelIdx</a> &amp;&amp; <a class="code hl_variable" href="structmoonray_1_1rndr_1_1_pass.html#a82ab5b266d767d017fb7cb6f2d957a7c">mEndPixelIdx</a> &lt;= 64);</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="structmoonray_1_1rndr_1_1_pass.html#a00f0aeca10df282a1c4d2a82a73dd192">isCoarsePass</a>()) {</div>
+<div class="line"><span class="lineno">  117</span>            <span class="comment">// This is a &quot;coarse&quot; pass, meaning we&#39;re still filling in top level pixels on each tile.</span></div>
+<div class="line"><span class="lineno">  118</span>            MNRY_ASSERT(<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_pass.html#a1972c632d1d60bd5d5ed237cb5b34bc8">mStartSampleIdx</a> == 0);</div>
+<div class="line"><span class="lineno">  119</span>            MNRY_ASSERT(<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_pass.html#a726bd9980fda64e93ba4d42b5d92e12e">mEndSampleIdx</a> == 1);</div>
+<div class="line"><span class="lineno">  120</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  121</span>            <span class="comment">// This is a &quot;fine&quot; pass, meaning we&#39;re refining on a subsample basis.</span></div>
+<div class="line"><span class="lineno">  122</span>            MNRY_ASSERT(<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_pass.html#a726bd9980fda64e93ba4d42b5d92e12e">mEndSampleIdx</a> &gt; <a class="code hl_variable" href="structmoonray_1_1rndr_1_1_pass.html#a1972c632d1d60bd5d5ed237cb5b34bc8">mStartSampleIdx</a>);</div>
+<div class="line"><span class="lineno">  123</span>        }</div>
+<div class="line"><span class="lineno">  124</span> </div>
+<div class="line"><span class="lineno">  125</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  126</span>    }</div>
+<div class="ttc" id="astructmoonray_1_1rndr_1_1_pass_html_a00f0aeca10df282a1c4d2a82a73dd192"><div class="ttname"><a href="structmoonray_1_1rndr_1_1_pass.html#a00f0aeca10df282a1c4d2a82a73dd192">moonray::rndr::Pass::isCoarsePass</a></div><div class="ttdeci">bool isCoarsePass() const</div><div class="ttdef"><b>Definition:</b> <a href="rndr_2_types_8h_source.html#l00107">Types.h:107</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -286,9 +333,13 @@ Public Attributes</h2></td></tr>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/rndr/<a class="el" href="rndr_2_types_8h_source.html">Types.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1rndr.html">rndr</a></li><li class="navelem"><a class="el" href="structmoonray_1_1rndr_1_1_pass.html">Pass</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

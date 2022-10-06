@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_e8636fe16f0c9a46fe2eb47f132af4e0.html">dso</a></li><li class="navelem"><a class="el" href="dir_5f71410be15e9fc4bb8c50fa91f611d0.html">map</a></li><li class="navelem"><a class="el" href="dir_d15979f157e1b067b141ac4863c48a24.html">OpenVdbMap</a></li><li class="navelem"><a class="el" href="dir_52406cebeb7c850c3cc7678ed22c252b.html">v2</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_open_vdb_map__v2_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">OpenVdbMap_v2.cc</div></div>
 </div><!--header-->
@@ -51,8 +67,10 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @author Jon Lanz</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Scott Cegielski</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"></span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;attributes.cc&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;OpenVdbMap_v2_ispc_stubs.h&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -75,24 +93,24 @@ $(function() {
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="_open_vdb_map__v2_8cc.html#a44137bb65de2396875934e48a6ee5099">   28</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="_open_vdb_map__v2_8cc.html#a44137bb65de2396875934e48a6ee5099">update</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">enum</span> vdbSource : <span class="keywordtype">int</span> {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        VDB_SOURCE_TEXTURE          = 0,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        VDB_SOURCE_OPENVDB_GEOMETRY = 1,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="_open_vdb_map__v2_8cc.html#ac2b4c77b6d4d07cf02a4a372a5a2058a">   31</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="_open_vdb_map__v2_8cc.html#ac2b4c77b6d4d07cf02a4a372a5a2058a">vdbSource</a> : <span class="keywordtype">int</span> {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="_open_vdb_map__v2_8cc.html#ac2b4c77b6d4d07cf02a4a372a5a2058aa502d6b8d3410b72fffd85bcc485e4c54">   32</a></span>        <a class="code hl_enumvalue" href="_open_vdb_map__v2_8cc.html#ac2b4c77b6d4d07cf02a4a372a5a2058aa502d6b8d3410b72fffd85bcc485e4c54">VDB_SOURCE_TEXTURE</a>          = 0,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="_open_vdb_map__v2_8cc.html#ac2b4c77b6d4d07cf02a4a372a5a2058aa70f2ededbca84411dc44376ed06e5430">   33</a></span>        <a class="code hl_enumvalue" href="_open_vdb_map__v2_8cc.html#ac2b4c77b6d4d07cf02a4a372a5a2058aa70f2ededbca84411dc44376ed06e5430">VDB_SOURCE_OPENVDB_GEOMETRY</a> = 1,</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    };</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> sampleVdb(<span class="keyword">const</span> Map* map,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="_open_vdb_map__v2_8cc.html#a1334266f1c4575fb80a2bbd6c8c4d3a3">   36</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="_open_vdb_map__v2_8cc.html#a1334266f1c4575fb80a2bbd6c8c4d3a3">sampleVdb</a>(<span class="keyword">const</span> Map* map,</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                          <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                          <span class="keyword">const</span> <span class="keywordtype">float</span> px, <span class="keyword">const</span> <span class="keywordtype">float</span> py, <span class="keyword">const</span> <span class="keywordtype">float</span> pz,</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                          <span class="keyword">const</span> Geometry* geom,</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                          scene_rdl2::math::Color *out);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> sample(<span class="keyword">const</span> Map* map, <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                       <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">moonray::shading::State</a>&amp; state, scene_rdl2::math::Color* sample);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="_open_vdb_map__v2_8cc.html#a941936ee6521ae6dc972ff20939133e9">   42</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="_open_vdb_map__v2_8cc.html#a941936ee6521ae6dc972ff20939133e9">sample</a>(<span class="keyword">const</span> Map* map, <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                       <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">moonray::shading::State</a>&amp; state, scene_rdl2::math::Color* <a class="code hl_function" href="_open_vdb_map__v2_8cc.html#a941936ee6521ae6dc972ff20939133e9">sample</a>);</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    ispc::OpenVdbMap_v2 mIspc;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    std::unique_ptr&lt;moonray::shading::Xform&gt; mXform;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    std::unique_ptr&lt;moonray::shading::OpenVdbSampler&gt; mSampler;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    std::unordered_map&lt;const Geometry*, std::unique_ptr&lt;moonray::shading::OpenVdbSampler&gt; &gt; mSamplers;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="_open_vdb_map__v2_8cc.html#ad41aa5e386acf9425a7d3da98e67db9c">   45</a></span>    ispc::OpenVdbMap_v2 <a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#ad41aa5e386acf9425a7d3da98e67db9c">mIspc</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="_open_vdb_map__v2_8cc.html#ab178aabb7f4996218627e663ce675aa4">   46</a></span>    std::unique_ptr&lt;moonray::shading::Xform&gt; <a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#ab178aabb7f4996218627e663ce675aa4">mXform</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="_open_vdb_map__v2_8cc.html#a3bdc1862d476fb4781d48a98828bd387">   47</a></span>    std::unique_ptr&lt;moonray::shading::OpenVdbSampler&gt; <a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#a3bdc1862d476fb4781d48a98828bd387">mSampler</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="_open_vdb_map__v2_8cc.html#a0535cbf632a891b49b9d7ec8f74516a9">   48</a></span>    std::unordered_map&lt;const Geometry*, std::unique_ptr&lt;moonray::shading::OpenVdbSampler&gt; &gt; <a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#a0535cbf632a891b49b9d7ec8f74516a9">mSamplers</a>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>RDL2_DSO_CLASS_END(<a class="code hl_function" href="_open_vdb_map__v2_8cc.html#a6db0f98e3a24cf2af398a7f4e6551eb1">OpenVdbMap_v2</a>)</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">//---------------------------------------------------------------------------</span></div>
@@ -103,8 +121,8 @@ $(function() {
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    mSampleFunc = OpenVdbMap_v2::sample;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    mSampleFuncv = (SampleFuncv) ispc::OpenVdbMap_v2_getSampleFunc();</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    mIspc.mRefPKey = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a8d8d372e2f937e24b2a237d502e0dbd4">moonray::shading::StandardAttributes::sRefP</a>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    mIspc.mSampleFn = (intptr_t) sampleVdb;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#ad41aa5e386acf9425a7d3da98e67db9c">mIspc</a>.mRefPKey = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_standard_attributes.html#a8d8d372e2f937e24b2a237d502e0dbd4">moonray::shading::StandardAttributes::sRefP</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#ad41aa5e386acf9425a7d3da98e67db9c">mIspc</a>.mSampleFn = (intptr_t) <a class="code hl_function" href="_open_vdb_map__v2_8cc.html#a1334266f1c4575fb80a2bbd6c8c4d3a3">sampleVdb</a>;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="_open_vdb_map__v2_8cc.html#abd9a039f40c8468be634db577d2e970e">   63</a></span>OpenVdbMap_v2::~OpenVdbMap_v2()</div>
@@ -118,25 +136,25 @@ $(function() {
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        mRequiredAttributes.clear();</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        mOptionalAttributes.clear();</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">if</span> (get(attrTextureCoordSource) == ispc::OPENVDBMAP_COORD_REFP) {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            mRequiredAttributes.push_back(mIspc.mRefPKey);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            mRequiredAttributes.push_back(<a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#ad41aa5e386acf9425a7d3da98e67db9c">mIspc</a>.mRefPKey);</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    mXform = fauxstd::make_unique&lt;moonray::shading::Xform&gt;(<span class="keyword">this</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    mIspc.mXform = mXform-&gt;getIspcXform();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#ab178aabb7f4996218627e663ce675aa4">mXform</a> = fauxstd::make_unique&lt;moonray::shading::Xform&gt;(<span class="keyword">this</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#ad41aa5e386acf9425a7d3da98e67db9c">mIspc</a>.mXform = <a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#ab178aabb7f4996218627e663ce675aa4">mXform</a>-&gt;getIspcXform();</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">if</span> (hasChanged(attrVdbSource) ||</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        hasChanged(attrTexture) ||</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        hasChanged(attrOpenVdbGeometry)) {</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        mSampler.reset();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#a3bdc1862d476fb4781d48a98828bd387">mSampler</a>.reset();</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="comment">// If using OpenVdbGeometry, we&#39;ll append its transform, otherwise not.</span></div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keyword">const</span> Mat4d* grid2world = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="comment">// Resolve the vdb filename and potentially a grid2world transform</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        std::string vdbFilename;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">if</span> (get(attrVdbSource) == VDB_SOURCE_OPENVDB_GEOMETRY) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">if</span> (get(attrVdbSource) == <a class="code hl_enumvalue" href="_open_vdb_map__v2_8cc.html#ac2b4c77b6d4d07cf02a4a372a5a2058aa70f2ededbca84411dc44376ed06e5430">VDB_SOURCE_OPENVDB_GEOMETRY</a>) {</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordflow">for</span> (SceneObject* sceneObject : get(attrOpenVdbGeometry)) {</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                <span class="keywordflow">if</span> (!sceneObject) {</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                    error(<span class="stringliteral">&quot;You must specify an OpenVdbGeometry object&quot;</span>);</div>
@@ -157,7 +175,7 @@ $(function() {
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                    <span class="keywordflow">if</span> (get(attrShowWarnings)) {</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                        warn(<span class="stringliteral">&quot;No .vdb filename specified for OpenVdbGeometry &quot;</span>, geom-&gt;getName());</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                    }</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                    mSamplers[geom] = <span class="keyword">nullptr</span>; <span class="comment">// add a null entry for this geometry in the map</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                    <a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#a0535cbf632a891b49b9d7ec8f74516a9">mSamplers</a>[geom] = <span class="keyword">nullptr</span>; <span class="comment">// add a null entry for this geometry in the map</span></div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                    <span class="keywordflow">continue</span>; <span class="comment">// skip to next OpenVdbGeometry in the list</span></div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                }</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
@@ -171,16 +189,16 @@ $(function() {
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                <span class="comment">// Construct an uninitialized OpenVdbSampler, then try to initialize it.</span></div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                <span class="comment">// If initialization fails for any reason, destroy this useless object</span></div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                <span class="comment">// immediately. Two-phase construct-and-init design pattern</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                mSamplers[geom] = fauxstd::make_unique&lt;moonray::shading::OpenVdbSampler&gt;();</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                <a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#a0535cbf632a891b49b9d7ec8f74516a9">mSamplers</a>[geom] = fauxstd::make_unique&lt;moonray::shading::OpenVdbSampler&gt;();</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                std::string errorMsg;</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                grid2world = &amp;geom-&gt;get(Node::sNodeXformKey);</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                <span class="keywordflow">if</span> (!mSamplers[geom]-&gt;<a class="code hl_function" href="namespacemoonray_1_1file__resource.html#a921360ab5d385a662b27c303c7b40405">initialize</a>(vdbFilename,</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                <span class="keywordflow">if</span> (!<a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#a0535cbf632a891b49b9d7ec8f74516a9">mSamplers</a>[geom]-&gt;<a class="code hl_function" href="namespacemoonray_1_1file__resource.html#a921360ab5d385a662b27c303c7b40405">initialize</a>(vdbFilename,</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                                                get(attrGridName),</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                                                render2world,</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                                                grid2world,</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                                                errorMsg)) {</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                    mSamplers[geom].reset();</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                    <a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#a0535cbf632a891b49b9d7ec8f74516a9">mSamplers</a>[geom].reset();</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                    <span class="keywordflow">if</span> (get(attrShowWarnings)) {</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                        warn(<span class="stringliteral">&quot;Unable to load grid from file &quot;</span>, vdbFilename);</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                    }</div>
@@ -203,15 +221,15 @@ $(function() {
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <span class="comment">// Construct an uninitialized OpenVdbSampler, then try to initialize it.</span></div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>            <span class="comment">// If initialization fails for any reason, destroy this useless object</span></div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            <span class="comment">// immediately. Two-phase construct-and-init design pattern</span></div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            mSampler = fauxstd::make_unique&lt;moonray::shading::OpenVdbSampler&gt;();</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#a3bdc1862d476fb4781d48a98828bd387">mSampler</a> = fauxstd::make_unique&lt;moonray::shading::OpenVdbSampler&gt;();</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            std::string errorMsg;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            <span class="keywordflow">if</span> (!mSampler-&gt;initialize(vdbFilename,</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#a3bdc1862d476fb4781d48a98828bd387">mSampler</a>-&gt;initialize(vdbFilename,</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                                     get(attrGridName),</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                                     render2world,</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                                     grid2world,</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                                     errorMsg)) {</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                mSampler.reset();</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                <a class="code hl_variable" href="_open_vdb_map__v2_8cc.html#a3bdc1862d476fb4781d48a98828bd387">mSampler</a>.reset();</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                <span class="keywordflow">if</span> (get(attrShowWarnings)) {</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                    warn(<span class="stringliteral">&quot;Unable to load grid from file &quot;</span>, vdbFilename);</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                }</div>
@@ -234,7 +252,7 @@ $(function() {
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keyword">const</span> <a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a0c8da5055a8c778bac15b6c74b3a94c0">moonray::shading::OpenVdbSampler::Interpolation</a> interp =</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a0c8da5055a8c778bac15b6c74b3a94c0">moonray::shading::OpenVdbSampler::Interpolation</a><span class="keyword">&gt;</span>(me-&gt;get(<a class="code hl_variable" href="dso_2geometry_2_vdb_2attributes_8cc.html#a4fbd74fea2dfb187e57553633de95152">attrInterpolation</a>));</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keywordflow">if</span> (me-&gt;get(attrVdbSource) == VDB_SOURCE_OPENVDB_GEOMETRY) {</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keywordflow">if</span> (me-&gt;get(attrVdbSource) == <a class="code hl_enumvalue" href="_open_vdb_map__v2_8cc.html#ac2b4c77b6d4d07cf02a4a372a5a2058aa70f2ededbca84411dc44376ed06e5430">VDB_SOURCE_OPENVDB_GEOMETRY</a>) {</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordflow">if</span> (me-&gt;mSamplers.find(geom) == me-&gt;mSamplers.end() || !me-&gt;mSamplers.at(geom)) {</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            *out = me-&gt;get(attrDefaultValue);</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="keywordflow">return</span>;</div>
@@ -268,7 +286,7 @@ $(function() {
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>OpenVdbMap_v2::sample(<span class="keyword">const</span> Map* map,</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                      <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls,</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                      <span class="keyword">const</span> <a class="code hl_class" href="classmoonray_1_1shading_1_1_state.html">moonray::shading::State</a>&amp; state,</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                      scene_rdl2::math::Color* sample)</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                      scene_rdl2::math::Color* <a class="code hl_function" href="_open_vdb_map__v2_8cc.html#a941936ee6521ae6dc972ff20939133e9">sample</a>)</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>{</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <span class="keyword">const</span> <a class="code hl_function" href="_open_vdb_map__v2_8cc.html#a6db0f98e3a24cf2af398a7f4e6551eb1">OpenVdbMap_v2</a>* me = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code hl_function" href="_open_vdb_map__v2_8cc.html#a6db0f98e3a24cf2af398a7f4e6551eb1">OpenVdbMap_v2</a>*<span class="keyword">&gt;</span>(map);</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
@@ -282,7 +300,7 @@ $(function() {
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keyword">const</span> Geometry* geom = state.<a class="code hl_function" href="classmoonray_1_1shading_1_1_state.html#a278f015c787d25156c3120ec2437f967">getGeometryObject</a>();</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    sampleVdb(map, tls, P.x, P.y, P.z, geom, sample);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <a class="code hl_function" href="_open_vdb_map__v2_8cc.html#a1334266f1c4575fb80a2bbd6c8c4d3a3">sampleVdb</a>(map, tls, P.x, P.y, P.z, geom, <a class="code hl_function" href="_open_vdb_map__v2_8cc.html#a941936ee6521ae6dc972ff20939133e9">sample</a>);</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>}</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
@@ -292,9 +310,18 @@ $(function() {
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="ttc" id="a_map_api_8h_html"><div class="ttname"><a href="_map_api_8h.html">MapApi.h</a></div></div>
+<div class="ttc" id="a_open_vdb_map__v2_8cc_html_a0535cbf632a891b49b9d7ec8f74516a9"><div class="ttname"><a href="_open_vdb_map__v2_8cc.html#a0535cbf632a891b49b9d7ec8f74516a9">mSamplers</a></div><div class="ttdeci">std::unordered_map&lt; const Geometry *, std::unique_ptr&lt; moonray::shading::OpenVdbSampler &gt; &gt; mSamplers</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_map__v2_8cc_source.html#l00048">OpenVdbMap_v2.cc:48</a></div></div>
+<div class="ttc" id="a_open_vdb_map__v2_8cc_html_a1334266f1c4575fb80a2bbd6c8c4d3a3"><div class="ttname"><a href="_open_vdb_map__v2_8cc.html#a1334266f1c4575fb80a2bbd6c8c4d3a3">sampleVdb</a></div><div class="ttdeci">static void sampleVdb(const Map *map, moonray::shading::TLState *tls, const float px, const float py, const float pz, const Geometry *geom, scene_rdl2::math::Color *out)</div></div>
+<div class="ttc" id="a_open_vdb_map__v2_8cc_html_a3bdc1862d476fb4781d48a98828bd387"><div class="ttname"><a href="_open_vdb_map__v2_8cc.html#a3bdc1862d476fb4781d48a98828bd387">mSampler</a></div><div class="ttdeci">std::unique_ptr&lt; moonray::shading::OpenVdbSampler &gt; mSampler</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_map__v2_8cc_source.html#l00047">OpenVdbMap_v2.cc:47</a></div></div>
 <div class="ttc" id="a_open_vdb_map__v2_8cc_html_a44137bb65de2396875934e48a6ee5099"><div class="ttname"><a href="_open_vdb_map__v2_8cc.html#a44137bb65de2396875934e48a6ee5099">update</a></div><div class="ttdeci">void update() override</div></div>
 <div class="ttc" id="a_open_vdb_map__v2_8cc_html_a6db0f98e3a24cf2af398a7f4e6551eb1"><div class="ttname"><a href="_open_vdb_map__v2_8cc.html#a6db0f98e3a24cf2af398a7f4e6551eb1">OpenVdbMap_v2</a></div><div class="ttdeci">OpenVdbMap_v2(const SceneClass &amp;sceneClass, const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_map__v2_8cc_source.html#l00053">OpenVdbMap_v2.cc:53</a></div></div>
+<div class="ttc" id="a_open_vdb_map__v2_8cc_html_a941936ee6521ae6dc972ff20939133e9"><div class="ttname"><a href="_open_vdb_map__v2_8cc.html#a941936ee6521ae6dc972ff20939133e9">sample</a></div><div class="ttdeci">static void sample(const Map *map, moonray::shading::TLState *tls, const moonray::shading::State &amp;state, scene_rdl2::math::Color *sample)</div></div>
+<div class="ttc" id="a_open_vdb_map__v2_8cc_html_ab178aabb7f4996218627e663ce675aa4"><div class="ttname"><a href="_open_vdb_map__v2_8cc.html#ab178aabb7f4996218627e663ce675aa4">mXform</a></div><div class="ttdeci">std::unique_ptr&lt; moonray::shading::Xform &gt; mXform</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_map__v2_8cc_source.html#l00046">OpenVdbMap_v2.cc:46</a></div></div>
 <div class="ttc" id="a_open_vdb_map__v2_8cc_html_abd9a039f40c8468be634db577d2e970e"><div class="ttname"><a href="_open_vdb_map__v2_8cc.html#abd9a039f40c8468be634db577d2e970e">~OpenVdbMap_v2</a></div><div class="ttdeci">~OpenVdbMap_v2() override</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_map__v2_8cc_source.html#l00063">OpenVdbMap_v2.cc:63</a></div></div>
+<div class="ttc" id="a_open_vdb_map__v2_8cc_html_ac2b4c77b6d4d07cf02a4a372a5a2058a"><div class="ttname"><a href="_open_vdb_map__v2_8cc.html#ac2b4c77b6d4d07cf02a4a372a5a2058a">vdbSource</a></div><div class="ttdeci">vdbSource</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_map__v2_8cc_source.html#l00031">OpenVdbMap_v2.cc:31</a></div></div>
+<div class="ttc" id="a_open_vdb_map__v2_8cc_html_ac2b4c77b6d4d07cf02a4a372a5a2058aa502d6b8d3410b72fffd85bcc485e4c54"><div class="ttname"><a href="_open_vdb_map__v2_8cc.html#ac2b4c77b6d4d07cf02a4a372a5a2058aa502d6b8d3410b72fffd85bcc485e4c54">VDB_SOURCE_TEXTURE</a></div><div class="ttdeci">@ VDB_SOURCE_TEXTURE</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_map__v2_8cc_source.html#l00032">OpenVdbMap_v2.cc:32</a></div></div>
+<div class="ttc" id="a_open_vdb_map__v2_8cc_html_ac2b4c77b6d4d07cf02a4a372a5a2058aa70f2ededbca84411dc44376ed06e5430"><div class="ttname"><a href="_open_vdb_map__v2_8cc.html#ac2b4c77b6d4d07cf02a4a372a5a2058aa70f2ededbca84411dc44376ed06e5430">VDB_SOURCE_OPENVDB_GEOMETRY</a></div><div class="ttdeci">@ VDB_SOURCE_OPENVDB_GEOMETRY</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_map__v2_8cc_source.html#l00033">OpenVdbMap_v2.cc:33</a></div></div>
+<div class="ttc" id="a_open_vdb_map__v2_8cc_html_ad41aa5e386acf9425a7d3da98e67db9c"><div class="ttname"><a href="_open_vdb_map__v2_8cc.html#ad41aa5e386acf9425a7d3da98e67db9c">mIspc</a></div><div class="ttdeci">ispc::OpenVdbMap_v2 mIspc</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_map__v2_8cc_source.html#l00045">OpenVdbMap_v2.cc:45</a></div></div>
 <div class="ttc" id="a_open_vdb_sampler_8h_html"><div class="ttname"><a href="_open_vdb_sampler_8h.html">OpenVdbSampler.h</a></div></div>
 <div class="ttc" id="a_open_vdb_util_8h_html"><div class="ttname"><a href="_open_vdb_util_8h.html">OpenVdbUtil.h</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_open_vdb_sampler_html_a0c8da5055a8c778bac15b6c74b3a94c0"><div class="ttname"><a href="classmoonray_1_1shading_1_1_open_vdb_sampler.html#a0c8da5055a8c778bac15b6c74b3a94c0">moonray::shading::OpenVdbSampler::Interpolation</a></div><div class="ttdeci">Interpolation</div><div class="ttdef"><b>Definition:</b> <a href="_open_vdb_sampler_8h_source.html#l00032">OpenVdbSampler.h:33</a></div></div>
@@ -313,9 +340,13 @@ $(function() {
 <div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_dispatch_computation_8cc_source.html#l00044">McrtRtDispatchComputation.cc:44</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00583">NPoint.h:583</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_6a52a9733426c3f6f80e6f7bd53e6965.html">dso</a></li><li class="navelem"><a class="el" href="dir_5f9b4680df21b28e51962f6a938bc02c.html">map</a></li><li class="navelem"><a class="el" href="dir_5a17e81b1d4e544488fbb4184d17808a.html">OpenVdbMap</a></li><li class="navelem"><a class="el" href="dir_03b4237b42526f6d52a8159113dd8b1c.html">v2</a></li><li class="navelem"><a class="el" href="_open_vdb_map__v2_8cc.html">OpenVdbMap_v2.cc</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

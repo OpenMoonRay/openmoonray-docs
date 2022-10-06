@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -39,12 +43,29 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('globals_func_u.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="contents">
 &#160;
 
 <h3><a id="index_u" name="index_u"></a>- u -</h3><ul>
+<li>udot()&#160;:&#160;<a class="el" href="lpeparse_8cc.html#a99fa047f3eeff7a915ad1461b1b155e6">lpeparse.cc</a></li>
 <li>uniformSelection()&#160;:&#160;<a class="el" href="pd__generation_8h.html#a33aec9e47176e7b67d18dd1ba96c6fa1">pd_generation.h</a></li>
-<li>update()&#160;:&#160;<a class="el" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">CombineDisplacement.cc</a>, <a class="el" href="_normal_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">NormalDisplacement.cc</a>, <a class="el" href="_vector_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">VectorDisplacement.cc</a>, <a class="el" href="_attribute_map_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">AttributeMap.cc</a>, <a class="el" href="_checkerboard_map_8cc.html#a44137bb65de2396875934e48a6ee5099">CheckerboardMap.cc</a>, <a class="el" href="_debug_map_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">DebugMap.cc</a>, <a class="el" href="_extra_aov_map_8cc.html#a44137bb65de2396875934e48a6ee5099">ExtraAovMap.cc</a>, <a class="el" href="_image_map_8cc.html#a44137bb65de2396875934e48a6ee5099">ImageMap.cc</a>, <a class="el" href="_list_map_8cc.html#a44137bb65de2396875934e48a6ee5099">ListMap.cc</a>, <a class="el" href="_open_vdb_map_8cc.html#a44137bb65de2396875934e48a6ee5099">OpenVdbMap.cc</a>, <a class="el" href="_open_vdb_map__v2_8cc.html#a44137bb65de2396875934e48a6ee5099">OpenVdbMap_v2.cc</a>, <a class="el" href="_usd_primvar_reader__float_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdPrimvarReader_float.cc</a>, <a class="el" href="_usd_primvar_reader__float2_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdPrimvarReader_float2.cc</a>, <a class="el" href="_usd_primvar_reader__float3_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdPrimvarReader_float3.cc</a>, <a class="el" href="_usd_primvar_reader__int_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdPrimvarReader_int.cc</a>, <a class="el" href="_usd_primvar_reader__point_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdPrimvarReader_point.cc</a>, <a class="el" href="_usd_primvar_reader__vector_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdPrimvarReader_vector.cc</a>, <a class="el" href="_usd_transform2d_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdTransform2d.cc</a>, <a class="el" href="_usd_u_v_texture_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdUVTexture.cc</a>, <a class="el" href="_axf_material_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">AxfMaterial.cc</a>, <a class="el" href="_base_material_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">BaseMaterial.cc</a>, <a class="el" href="_measured_material_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">MeasuredMaterial.cc</a>, <a class="el" href="_ray_switch_material_8cc.html#af9f317a6530155acd7adfb119bed731c">RaySwitchMaterial.cc</a>, <a class="el" href="_switch_material_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">SwitchMaterial.cc</a>, <a class="el" href="_usd_preview_surface_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdPreviewSurface.cc</a>, <a class="el" href="_base_volume_8cc.html#a44137bb65de2396875934e48a6ee5099">BaseVolume.cc</a>, <a class="el" href="_cutout_volume_8cc.html#a44137bb65de2396875934e48a6ee5099">CutoutVolume.cc</a>, <a class="el" href="dso_2volume_2_vdb_2_vdb_volume_8cc.html#af9f317a6530155acd7adfb119bed731c">VdbVolume.cc</a>, <a class="el" href="_test_displacement_8cc.html#ac5c54df7ed3b930268c8d7752c101725">TestDisplacement.cc</a>, <a class="el" href="_test_checker_map_8cc.html#ac5c54df7ed3b930268c8d7752c101725">TestCheckerMap.cc</a>, <a class="el" href="_test_debug_map_8cc.html#ac5c54df7ed3b930268c8d7752c101725">TestDebugMap.cc</a>, <a class="el" href="_test_mandelbrot_8cc.html#ac5c54df7ed3b930268c8d7752c101725">TestMandelbrot.cc</a>, <a class="el" href="_test_map_8cc.html#ac5c54df7ed3b930268c8d7752c101725">TestMap.cc</a>, <a class="el" href="_test_noise_8cc.html#ac5c54df7ed3b930268c8d7752c101725">TestNoise.cc</a>, <a class="el" href="shading_2ispc_2unittest_2dso_2material_2_test_material_2_test_material_8cc.html#ac5c54df7ed3b930268c8d7752c101725">TestMaterial.cc</a></li>
+<li>update()&#160;:&#160;<a class="el" href="_combine_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">CombineDisplacement.cc</a>, <a class="el" href="_normal_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">NormalDisplacement.cc</a>, <a class="el" href="_vector_displacement_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">VectorDisplacement.cc</a>, <a class="el" href="_attribute_map_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">AttributeMap.cc</a>, <a class="el" href="_checkerboard_map_8cc.html#a44137bb65de2396875934e48a6ee5099">CheckerboardMap.cc</a>, <a class="el" href="_debug_map_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">DebugMap.cc</a>, <a class="el" href="_extra_aov_map_8cc.html#a44137bb65de2396875934e48a6ee5099">ExtraAovMap.cc</a>, <a class="el" href="_image_map_8cc.html#a44137bb65de2396875934e48a6ee5099">ImageMap.cc</a>, <a class="el" href="_list_map_8cc.html#a44137bb65de2396875934e48a6ee5099">ListMap.cc</a>, <a class="el" href="_open_vdb_map_8cc.html#a44137bb65de2396875934e48a6ee5099">OpenVdbMap.cc</a>, <a class="el" href="_open_vdb_map__v2_8cc.html#a44137bb65de2396875934e48a6ee5099">OpenVdbMap_v2.cc</a>, <a class="el" href="_usd_primvar_reader__float_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdPrimvarReader_float.cc</a>, <a class="el" href="_usd_primvar_reader__float2_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdPrimvarReader_float2.cc</a>, <a class="el" href="_usd_primvar_reader__float3_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdPrimvarReader_float3.cc</a>, <a class="el" href="_usd_primvar_reader__int_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdPrimvarReader_int.cc</a>, <a class="el" href="_usd_primvar_reader__point_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdPrimvarReader_point.cc</a>, <a class="el" href="_usd_primvar_reader__vector_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdPrimvarReader_vector.cc</a>, <a class="el" href="_usd_transform2d_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdTransform2d.cc</a>, <a class="el" href="_usd_u_v_texture_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdUVTexture.cc</a>, <a class="el" href="_axf_material_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">AxfMaterial.cc</a>, <a class="el" href="_base_material_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">BaseMaterial.cc</a>, <a class="el" href="_measured_material_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">MeasuredMaterial.cc</a>, <a class="el" href="_ray_switch_material_8cc.html#af9f317a6530155acd7adfb119bed731c">RaySwitchMaterial.cc</a>, <a class="el" href="_switch_material_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e">SwitchMaterial.cc</a>, <a class="el" href="_usd_preview_surface_8cc.html#a44137bb65de2396875934e48a6ee5099">UsdPreviewSurface.cc</a>, <a class="el" href="_base_volume_8cc.html#a44137bb65de2396875934e48a6ee5099">BaseVolume.cc</a>, <a class="el" href="_cutout_volume_8cc.html#a44137bb65de2396875934e48a6ee5099">CutoutVolume.cc</a>, <a class="el" href="dso_2volume_2_vdb_2_vdb_volume_8cc.html#af9f317a6530155acd7adfb119bed731c">VdbVolume.cc</a>, <a class="el" href="_test_displacement_8cc.html#ac5c54df7ed3b930268c8d7752c101725">TestDisplacement.cc</a>, <a class="el" href="_test_checker_map_8cc.html#ac5c54df7ed3b930268c8d7752c101725">TestCheckerMap.cc</a>, <a class="el" href="_test_debug_map_8cc.html#ac5c54df7ed3b930268c8d7752c101725">TestDebugMap.cc</a>, <a class="el" href="_test_mandelbrot_8cc.html#ac5c54df7ed3b930268c8d7752c101725">TestMandelbrot.cc</a>, <a class="el" href="_test_map_8cc.html#ac5c54df7ed3b930268c8d7752c101725">TestMap.cc</a>, <a class="el" href="_test_noise_8cc.html#ac5c54df7ed3b930268c8d7752c101725">TestNoise.cc</a>, <a class="el" href="shading_2ispc_2unittest_2dso_2material_2_test_material_2_test_material_8cc.html#ac5c54df7ed3b930268c8d7752c101725">TestMaterial.cc</a>, <a class="el" href="_test_shading_8cc.html#a556ede20d8834a44882fe6ea39be118f">TestShading.cc</a></li>
 <li>updateBakeRequired()&#160;:&#160;<a class="el" href="_base_volume_8cc.html#adb90306a67ab1f5cba4447bfc65881fd">BaseVolume.cc</a>, <a class="el" href="_cutout_volume_8cc.html#adb90306a67ab1f5cba4447bfc65881fd">CutoutVolume.cc</a>, <a class="el" href="dso_2volume_2_vdb_2_vdb_volume_8cc.html#adb90306a67ab1f5cba4447bfc65881fd">VdbVolume.cc</a></li>
 <li>usage()&#160;:&#160;<a class="el" href="cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#aed1fbfe83f8b76764faaac4bbb198d8b">main.cc</a></li>
 <li>UsdPreviewSurface()&#160;:&#160;<a class="el" href="_usd_preview_surface_8cc.html#a90271f7282921559106b6fb2ee4e2b7f">UsdPreviewSurface.cc</a></li>
@@ -58,9 +79,12 @@ $(function() {
 <li>UsdUVTexture()&#160;:&#160;<a class="el" href="_usd_u_v_texture_8cc.html#a8ae61aa4de38e0b11bb8b6f877e491b9">UsdUVTexture.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

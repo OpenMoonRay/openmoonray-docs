@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_55a2e35f6359da48a03f898576e722e1.html">rndr</a></li><li class="navelem"><a class="el" href="dir_2f3a487eadd6eadf22994f4998d16eca.html">statistics</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_socket_stream_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">SocketStream.h</div></div>
 </div><!--header-->
@@ -51,8 +67,11 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2016-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">///</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Keith Jeffery</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">///</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"></span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;array&gt;</span></div>
@@ -94,7 +113,7 @@ $(function() {
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1stats_1_1_listening_socket.html#a0380766f3e553c986abfecaad889bb35">swap</a>(<a class="code hl_class" href="classmoonray_1_1stats_1_1_listening_socket.html">ListeningSocket</a>&amp; other) noexcept;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>private:</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">int</span> mFD;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classmoonray_1_1stats_1_1_listening_socket.html#a340db2c688d9910da69e4140858d0b57">   51</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classmoonray_1_1stats_1_1_listening_socket.html#a340db2c688d9910da69e4140858d0b57">mFD</a>;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classmoonray_1_1stats_1_1_socket.html">   54</a></span>class <a class="code hl_class" href="classmoonray_1_1stats_1_1_socket.html">Socket</a></div>
@@ -120,7 +139,7 @@ $(function() {
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classmoonray_1_1stats_1_1_listening_socket.html#a0380766f3e553c986abfecaad889bb35">swap</a>(<a class="code hl_class" href="classmoonray_1_1stats_1_1_socket.html">Socket</a>&amp; other) noexcept;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>private:</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">int</span> mFD;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classmoonray_1_1stats_1_1_socket.html#a646bd1f5cccea3c06e38697072810ec9">   77</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="classmoonray_1_1stats_1_1_listening_socket.html#a340db2c688d9910da69e4140858d0b57">mFD</a>;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>};</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classmoonray_1_1stats_1_1_socket_streambuf.html">   80</a></span>class <a class="code hl_class" href="classmoonray_1_1stats_1_1_socket_streambuf.html">SocketStreambuf</a> : public <a class="code hl_namespace" href="namespacestd.html">std</a>::streambuf</div>
@@ -142,11 +161,11 @@ $(function() {
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">int</span> sync() override;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    int_type underflow() override;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    static constexpr <a class="code hl_namespace" href="namespacestd.html">std</a>::<span class="keywordtype">size_t</span> sPutBack = 8;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_namespace" href="namespacestd.html">std</a>::array&lt;<span class="keywordtype">char</span>, 2048&gt; mOutputBuffer;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <a class="code hl_namespace" href="namespacestd.html">std</a>::array&lt;<span class="keywordtype">char</span>, 2048&gt; mInputBuffer;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classmoonray_1_1stats_1_1_socket_streambuf.html#a02d32d159c8f265a17082ce7aa6f5b05">   99</a></span>    static constexpr <a class="code hl_namespace" href="namespacestd.html">std</a>::<span class="keywordtype">size_t</span> sPutBack = 8;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classmoonray_1_1stats_1_1_socket_streambuf.html#a978300a059c740fb711a8ede52d38e27">  100</a></span>    <a class="code hl_namespace" href="namespacestd.html">std</a>::array&lt;<span class="keywordtype">char</span>, 2048&gt; mOutputBuffer;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classmoonray_1_1stats_1_1_socket_streambuf.html#a7b708aa55d291b333e0088cfb9606af6">  101</a></span>    <a class="code hl_namespace" href="namespacestd.html">std</a>::array&lt;<span class="keywordtype">char</span>, 2048&gt; mInputBuffer;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_class" href="classmoonray_1_1stats_1_1_socket.html">Socket</a> mSock;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classmoonray_1_1stats_1_1_socket_streambuf.html#a52dbd05a1105ecc26b5d6e24401bbdec">  103</a></span>    <a class="code hl_class" href="classmoonray_1_1stats_1_1_socket.html">Socket</a> mSock;</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>};</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classmoonray_1_1stats_1_1_socket_stream.html">  106</a></span>class <a class="code hl_class" href="classmoonray_1_1stats_1_1_socket_stream.html">SocketStream</a> : public <a class="code hl_namespace" href="namespacestd.html">std</a>::iostream</div>
@@ -165,7 +184,7 @@ $(function() {
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    }</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <a class="code hl_class" href="classmoonray_1_1stats_1_1_socket_streambuf.html">SocketStreambuf</a> mBuf;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="classmoonray_1_1stats_1_1_socket_stream.html#aa450941d0fbf93af93ba455f2c415dee">  122</a></span>    <a class="code hl_class" href="classmoonray_1_1stats_1_1_socket_streambuf.html">SocketStreambuf</a> <a class="code hl_variable" href="classmoonray_1_1stats_1_1_socket_stream.html#aa450941d0fbf93af93ba455f2c415dee">mBuf</a>;</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>};</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>} <span class="comment">// namespace stats</span></div>
@@ -176,6 +195,7 @@ $(function() {
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="ttc" id="aclassmoonray_1_1stats_1_1_listening_socket_html"><div class="ttname"><a href="classmoonray_1_1stats_1_1_listening_socket.html">moonray::stats::ListeningSocket</a></div><div class="ttdef"><b>Definition:</b> <a href="_socket_stream_8h_source.html#l00030">SocketStream.h:31</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1stats_1_1_listening_socket_html_a0380766f3e553c986abfecaad889bb35"><div class="ttname"><a href="classmoonray_1_1stats_1_1_listening_socket.html#a0380766f3e553c986abfecaad889bb35">moonray::stats::ListeningSocket::swap</a></div><div class="ttdeci">void swap(ListeningSocket &amp;other) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_socket_stream_8cc_source.html#l00121">SocketStream.cc:121</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_listening_socket_html_a340db2c688d9910da69e4140858d0b57"><div class="ttname"><a href="classmoonray_1_1stats_1_1_listening_socket.html#a340db2c688d9910da69e4140858d0b57">moonray::stats::ListeningSocket::mFD</a></div><div class="ttdeci">int mFD</div><div class="ttdef"><b>Definition:</b> <a href="_socket_stream_8h_source.html#l00051">SocketStream.h:51</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1stats_1_1_listening_socket_html_a99d9e653d840e14fd6a44506ace033ea"><div class="ttname"><a href="classmoonray_1_1stats_1_1_listening_socket.html#a99d9e653d840e14fd6a44506ace033ea">moonray::stats::ListeningSocket::~ListeningSocket</a></div><div class="ttdeci">~ListeningSocket()</div><div class="ttdef"><b>Definition:</b> <a href="_socket_stream_8cc_source.html#l00098">SocketStream.cc:98</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1stats_1_1_listening_socket_html_aa5c50758c5ae73a6bba2f6017f394c98"><div class="ttname"><a href="classmoonray_1_1stats_1_1_listening_socket.html#aa5c50758c5ae73a6bba2f6017f394c98">moonray::stats::ListeningSocket::ListeningSocket</a></div><div class="ttdeci">ListeningSocket(const ListeningSocket &amp;)=delete</div></div>
 <div class="ttc" id="aclassmoonray_1_1stats_1_1_listening_socket_html_ab510887d735ee73ab1cb598c66260e87"><div class="ttname"><a href="classmoonray_1_1stats_1_1_listening_socket.html#ab510887d735ee73ab1cb598c66260e87">moonray::stats::ListeningSocket::Socket</a></div><div class="ttdeci">friend class Socket</div><div class="ttdef"><b>Definition:</b> <a href="_socket_stream_8h_source.html#l00033">SocketStream.h:33</a></div></div>
@@ -188,6 +208,7 @@ $(function() {
 <div class="ttc" id="aclassmoonray_1_1stats_1_1_socket_html_a8ab9e33104e1e591cb82d0a2531ff4f1"><div class="ttname"><a href="classmoonray_1_1stats_1_1_socket.html#a8ab9e33104e1e591cb82d0a2531ff4f1">moonray::stats::Socket::Socket</a></div><div class="ttdeci">Socket(const Socket &amp;)=delete</div></div>
 <div class="ttc" id="aclassmoonray_1_1stats_1_1_socket_stream_html"><div class="ttname"><a href="classmoonray_1_1stats_1_1_socket_stream.html">moonray::stats::SocketStream</a></div><div class="ttdef"><b>Definition:</b> <a href="_socket_stream_8h_source.html#l00106">SocketStream.h:107</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1stats_1_1_socket_stream_html_a0d3a563a33f2ac575afbf1a9529106fa"><div class="ttname"><a href="classmoonray_1_1stats_1_1_socket_stream.html#a0d3a563a33f2ac575afbf1a9529106fa">moonray::stats::SocketStream::SocketStream</a></div><div class="ttdeci">SocketStream(Socket &amp;&amp;socket)</div><div class="ttdef"><b>Definition:</b> <a href="_socket_stream_8h_source.html#l00109">SocketStream.h:109</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1stats_1_1_socket_stream_html_aa450941d0fbf93af93ba455f2c415dee"><div class="ttname"><a href="classmoonray_1_1stats_1_1_socket_stream.html#aa450941d0fbf93af93ba455f2c415dee">moonray::stats::SocketStream::mBuf</a></div><div class="ttdeci">SocketStreambuf mBuf</div><div class="ttdef"><b>Definition:</b> <a href="_socket_stream_8h_source.html#l00122">SocketStream.h:122</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1stats_1_1_socket_stream_html_af385055bf314855073e6f038b892f67c"><div class="ttname"><a href="classmoonray_1_1stats_1_1_socket_stream.html#af385055bf314855073e6f038b892f67c">moonray::stats::SocketStream::is_open</a></div><div class="ttdeci">bool is_open() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_socket_stream_8h_source.html#l00116">SocketStream.h:116</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1stats_1_1_socket_streambuf_html"><div class="ttname"><a href="classmoonray_1_1stats_1_1_socket_streambuf.html">moonray::stats::SocketStreambuf</a></div><div class="ttdef"><b>Definition:</b> <a href="_socket_stream_8h_source.html#l00080">SocketStream.h:81</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1stats_1_1_socket_streambuf_html_a8e84718027258ff7bb8c3c4488cbe91f"><div class="ttname"><a href="classmoonray_1_1stats_1_1_socket_streambuf.html#a8e84718027258ff7bb8c3c4488cbe91f">moonray::stats::SocketStreambuf::operator=</a></div><div class="ttdeci">SocketStreambuf operator=(const SocketStreambuf &amp;)=delete</div></div>
@@ -195,9 +216,13 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00583">NPoint.h:583</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_c8c2fc2658195a2d790ef72565bd36e7.html">rndr</a></li><li class="navelem"><a class="el" href="dir_4f72e558adc302558d6707017e732d0d.html">statistics</a></li><li class="navelem"><a class="el" href="_socket_stream_8h.html">SocketStream.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

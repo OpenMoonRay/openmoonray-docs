@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,15 +42,29 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1unittest.html">unittest</a></li><li class="navelem"><a class="el" href="structmoonray_1_1geom_1_1unittest_1_1_bomb.html">Bomb</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('structmoonray_1_1geom_1_1unittest_1_1_bomb.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="structmoonray_1_1geom_1_1unittest_1_1_bomb-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::geom::unittest::Bomb Struct Reference</div></div>
 </div><!--header-->
@@ -70,6 +88,16 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a447483ba887c57de57f640df93941abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35841c251177087ffe477ad433e8f7f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1geom_1_1unittest_1_1_bomb.html#a35841c251177087ffe477ad433e8f7f6">armed</a> = true</td></tr>
 <tr class="separator:a35841c251177087ffe477ad433e8f7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae62423f595ec009f9b2fad3939753bcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1geom_1_1unittest_1_1_bomb.html#ae62423f595ec009f9b2fad3939753bcc">tick</a> ()</td></tr>
+<tr class="separator:ae62423f595ec009f9b2fad3939753bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a408f14d458c35b3dfcb0af4969d2d193"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1geom_1_1unittest_1_1_bomb.html#a408f14d458c35b3dfcb0af4969d2d193">ticks</a> = 0</td></tr>
+<tr class="separator:a408f14d458c35b3dfcb0af4969d2d193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -125,7 +153,14 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_geom_api_8cc_source.html#l00888">888</a> of file <a class="el" href="_test_geom_api_8cc_source.html">TestGeomApi.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  888</span>                        :</div>
+<div class="line"><span class="lineno">  889</span>        <a class="code hl_variable" href="structmoonray_1_1geom_1_1unittest_1_1_bomb.html#a35841c251177087ffe477ad433e8f7f6">armed</a>(b.armed)</div>
+<div class="line"><span class="lineno">  890</span>    {</div>
+<div class="line"><span class="lineno">  891</span>        <a class="code hl_function" href="structmoonray_1_1geom_1_1unittest_1_1_bomb.html#ae62423f595ec009f9b2fad3939753bcc">tick</a>();</div>
+<div class="line"><span class="lineno">  892</span>    }</div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1unittest_1_1_bomb_html_a35841c251177087ffe477ad433e8f7f6"><div class="ttname"><a href="structmoonray_1_1geom_1_1unittest_1_1_bomb.html#a35841c251177087ffe477ad433e8f7f6">moonray::geom::unittest::Bomb::armed</a></div><div class="ttdeci">bool armed</div><div class="ttdef"><b>Definition:</b> <a href="_test_geom_api_8cc_source.html#l00905">TestGeomApi.cc:905</a></div></div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1unittest_1_1_bomb_html_ae62423f595ec009f9b2fad3939753bcc"><div class="ttname"><a href="structmoonray_1_1geom_1_1unittest_1_1_bomb.html#ae62423f595ec009f9b2fad3939753bcc">moonray::geom::unittest::Bomb::tick</a></div><div class="ttdeci">void tick()</div><div class="ttdef"><b>Definition:</b> <a href="_test_geom_api_8cc_source.html#l00908">TestGeomApi.cc:908</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1c21a6efb9cac53af776af16ae351de8" name="a1c21a6efb9cac53af776af16ae351de8"></a>
@@ -153,7 +188,13 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_test_geom_api_8cc_source.html#l00894">894</a> of file <a class="el" href="_test_geom_api_8cc_source.html">TestGeomApi.cc</a>.</p>
-
+<div class="fragment"><div class="line"><span class="lineno">  894</span>                                   :</div>
+<div class="line"><span class="lineno">  895</span>        <a class="code hl_variable" href="structmoonray_1_1geom_1_1unittest_1_1_bomb.html#a35841c251177087ffe477ad433e8f7f6">armed</a>(b.armed)</div>
+<div class="line"><span class="lineno">  896</span>    {</div>
+<div class="line"><span class="lineno">  897</span>        <a class="code hl_function" href="structmoonray_1_1geom_1_1unittest_1_1_bomb.html#ae62423f595ec009f9b2fad3939753bcc">tick</a>();</div>
+<div class="line"><span class="lineno">  898</span>        b.moved_from = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  899</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa25bd124309c211e78948e7b8644e520" name="aa25bd124309c211e78948e7b8644e520"></a>
@@ -182,6 +223,40 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae62423f595ec009f9b2fad3939753bcc" name="ae62423f595ec009f9b2fad3939753bcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae62423f595ec009f9b2fad3939753bcc">&#9670;&#160;</a></span>tick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::geom::unittest::Bomb::tick </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_geom_api_8cc_source.html#l00908">908</a> of file <a class="el" href="_test_geom_api_8cc_source.html">TestGeomApi.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  909</span>    {</div>
+<div class="line"><span class="lineno">  910</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="structmoonray_1_1geom_1_1unittest_1_1_bomb.html#a35841c251177087ffe477ad433e8f7f6">armed</a> &amp;&amp; <a class="code hl_variable" href="structmoonray_1_1geom_1_1unittest_1_1_bomb.html#a408f14d458c35b3dfcb0af4969d2d193">ticks</a>++) {</div>
+<div class="line"><span class="lineno">  911</span>            <span class="keywordflow">throw</span> 1;</div>
+<div class="line"><span class="lineno">  912</span>        }</div>
+<div class="line"><span class="lineno">  913</span>    }</div>
+<div class="ttc" id="astructmoonray_1_1geom_1_1unittest_1_1_bomb_html_a408f14d458c35b3dfcb0af4969d2d193"><div class="ttname"><a href="structmoonray_1_1geom_1_1unittest_1_1_bomb.html#a408f14d458c35b3dfcb0af4969d2d193">moonray::geom::unittest::Bomb::ticks</a></div><div class="ttdeci">static int ticks</div><div class="ttdef"><b>Definition:</b> <a href="_test_geom_api_8cc_source.html#l00915">TestGeomApi.cc:915</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -217,13 +292,41 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a408f14d458c35b3dfcb0af4969d2d193" name="a408f14d458c35b3dfcb0af4969d2d193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a408f14d458c35b3dfcb0af4969d2d193">&#9670;&#160;</a></span>ticks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int moonray::geom::unittest::Bomb::ticks = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_test_geom_api_8cc_source.html#l00915">915</a> of file <a class="el" href="_test_geom_api_8cc_source.html">TestGeomApi.cc</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>C:/Users/PUremovic/Documents/GitHub/moonray-main/moonray-main/lib/rendering/geom/unittest/<a class="el" href="_test_geom_api_8cc_source.html">TestGeomApi.cc</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1unittest.html">unittest</a></li><li class="navelem"><a class="el" href="structmoonray_1_1geom_1_1unittest_1_1_bomb.html">Bomb</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -38,11 +42,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_6199545f8a664ee7335ba0bd43b65e12.html">PUremovic</a></li><li class="navelem"><a class="el" href="dir_76ca2576b594b0dab0a81b1885a7ac9a.html">Documents</a></li><li class="navelem"><a class="el" href="dir_8fc08dd28cba6a5734a6c0c896981915.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_c22b99de5f90354bbde1fc1a6deb4c2d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_be9a83e6c090e08e354b4179e521f46e.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_b97ada906c9ddb44afea795eae8007a6.html">lib</a></li><li class="navelem"><a class="el" href="dir_383abc8de61da541ca31b034eb5b188b.html">rendering</a></li><li class="navelem"><a class="el" href="dir_ae3c302d167a7f3c31858fcdeba382aa.html">mcrt_common</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_s_o_a_util_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">SOAUtil.h</div></div>
 </div><!--header-->
@@ -89,7 +105,7 @@ $(function() {
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">struct </span>ALIGN(AVX512_SIMD_MEMORY_ALIGNMENT) <a class="code hl_struct" href="structmoonray_1_1mcrt__common_1_1_a_o_s_data.html">AOSData</a></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        uint8_t mData[SRC_AOS_STRIDE];</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        uint8_t <a class="code hl_variable" href="_attribute_map_8cc.html#af4346db249ae2ffe0234d8c52712a77b">mData</a>[SRC_AOS_STRIDE];</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    };</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1mcrt__common_1_1_a_o_s_data.html">AOSData</a> *aosData = (<span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1mcrt__common_1_1_a_o_s_data.html">AOSData</a> *)src;</div>
@@ -195,7 +211,7 @@ $(function() {
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keyword">struct </span>ALIGN(AVX512_SIMD_MEMORY_ALIGNMENT) <a class="code hl_struct" href="structmoonray_1_1mcrt__common_1_1_a_o_s_data.html">AOSData</a></div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    {</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        uint8_t mData[SRC_AOS_STRIDE];</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        uint8_t <a class="code hl_variable" href="_attribute_map_8cc.html#af4346db249ae2ffe0234d8c52712a77b">mData</a>[SRC_AOS_STRIDE];</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    };</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1mcrt__common_1_1_a_o_s_data.html">AOSData</a> *aosData = (<span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1mcrt__common_1_1_a_o_s_data.html">AOSData</a> *)src;</div>
@@ -356,7 +372,7 @@ $(function() {
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    <span class="keyword">struct </span>ALIGN(AVX_SIMD_MEMORY_ALIGNMENT) <a class="code hl_struct" href="structmoonray_1_1mcrt__common_1_1_a_o_s_data.html">AOSData</a></div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    {</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        uint8_t mData[SRC_AOS_STRIDE];</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        uint8_t <a class="code hl_variable" href="_attribute_map_8cc.html#af4346db249ae2ffe0234d8c52712a77b">mData</a>[SRC_AOS_STRIDE];</div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    };</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1mcrt__common_1_1_a_o_s_data.html">AOSData</a> *aosData = (<span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1mcrt__common_1_1_a_o_s_data.html">AOSData</a> *)src;</div>
@@ -466,7 +482,7 @@ $(function() {
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    <span class="keyword">struct </span>ALIGN(AVX_SIMD_MEMORY_ALIGNMENT) <a class="code hl_struct" href="structmoonray_1_1mcrt__common_1_1_a_o_s_data.html">AOSData</a></div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    {</div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>        uint8_t mData[SRC_AOS_STRIDE];</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>        uint8_t <a class="code hl_variable" href="_attribute_map_8cc.html#af4346db249ae2ffe0234d8c52712a77b">mData</a>[SRC_AOS_STRIDE];</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    };</div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span> </div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1mcrt__common_1_1_a_o_s_data.html">AOSData</a> *aosData = (<span class="keyword">const</span> <a class="code hl_struct" href="structmoonray_1_1mcrt__common_1_1_a_o_s_data.html">AOSData</a> *)src;</div>
@@ -621,6 +637,7 @@ $(function() {
 <div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span><span class="comment">// TM and (c) 2015-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="ttc" id="a_attribute_map_8cc_html_af4346db249ae2ffe0234d8c52712a77b"><div class="ttname"><a href="_attribute_map_8cc.html#af4346db249ae2ffe0234d8c52712a77b">mData</a></div><div class="ttdeci">ispc::AttributeMap mData</div><div class="ttdef"><b>Definition:</b> <a href="_attribute_map_8cc_source.html#l00033">AttributeMap.cc:33</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1mcrt__common_html_a1ae5ca489dfd5986ea4325c8d229043c"><div class="ttname"><a href="namespacemoonray_1_1mcrt__common.html#a1ae5ca489dfd5986ea4325c8d229043c">moonray::mcrt_common::MNRY_STATIC_ASSERT</a></div><div class="ttdeci">MNRY_STATIC_ASSERT(sizeof(ThreadLocalAccumulator)&lt;=CACHE_LINE_SIZE)</div></div>
 <div class="ttc" id="anamespacemoonray_1_1mcrt__common_html_a3cc590ea7636c8040e5e3a21a989e2aa"><div class="ttname"><a href="namespacemoonray_1_1mcrt__common.html#a3cc590ea7636c8040e5e3a21a989e2aa">moonray::mcrt_common::convertAOSToSOA_AVX</a></div><div class="ttdeci">void convertAOSToSOA_AVX(unsigned numElems, const uint32_t *__restrict src, uint32_t *__restrict dst)</div><div class="ttdef"><b>Definition:</b> <a href="_s_o_a_util_8h_source.html#l00293">SOAUtil.h:293</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1mcrt__common_html_a47d2274d2dd3d3be54cdc8392c919979"><div class="ttname"><a href="namespacemoonray_1_1mcrt__common.html#a47d2274d2dd3d3be54cdc8392c919979">moonray::mcrt_common::convertSOAToAOSIndexed_AVX</a></div><div class="ttdeci">void convertSOAToAOSIndexed_AVX(unsigned numElems, const uint32_t *indices, const uint32_t *__restrict src, uint32_t **__restrict dst)</div><div class="ttdef"><b>Definition:</b> <a href="_s_o_a_util_8h_source.html#l00509">SOAUtil.h:509</a></div></div>
@@ -631,9 +648,13 @@ $(function() {
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 <div class="ttc" id="astructmoonray_1_1mcrt__common_1_1_a_o_s_data_html"><div class="ttname"><a href="structmoonray_1_1mcrt__common_1_1_a_o_s_data.html">moonray::mcrt_common::AOSData</a></div><div class="ttdef"><b>Definition:</b> <a href="_test_aos_soa_8h_source.html#l00026">TestAosSoa.h:27</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9be77bc263d7ad2a8bb17730f25e2449.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_99bc6856b00ee821cbd2de3c51ff635d.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_dd5bbea71e28faf315360c00d792a5b7.html">lib</a></li><li class="navelem"><a class="el" href="dir_f32d6ec91c738cf040e8320dc55ebd18.html">rendering</a></li><li class="navelem"><a class="el" href="dir_e2fd80e2f4e6b7185759f42acd6fa819.html">mcrt_common</a></li><li class="navelem"><a class="el" href="_s_o_a_util_8h.html">SOAUtil.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+  </ul>
+</div>
 </body>
 </html>
