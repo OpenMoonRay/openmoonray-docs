@@ -2,7 +2,7 @@
 ---
 Home
 
-[Beta]({{ "/beta/" | absolute_url }})
+[Beta]({{ "/beta/" | absolute_url }}) 
 [Overview]({{ "/overview/" | absolute_url }})  
 [Building/Installation]({{ "/installation/" | absolute_url }})  
 [MoonRay]({{ "/moonray/" | absolute_url }})  
