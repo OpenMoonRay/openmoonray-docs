@@ -7,6 +7,11 @@ BASE_PATH : http://dreamworksanimation.github.io/manhattan
 collections_dir: /
 
 collections:
+
+  cameras:
+    permalink: /:collection/:name
+    output: true
+
   light-filters:
     permalink: /:collection/:name
     output: true
