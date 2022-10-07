@@ -2,12 +2,12 @@
 ---
 Home
 
-[Beta]({{ "/beta/" | absolute_url }}) 
-[Overview]({{ "/overview/" | absolute_url }})  
-[Building/Installation]({{ "/installation/" | absolute_url }})  
-[MoonRay]({{ "/moonray/" | absolute_url }})  
-[Arras]({{ "/arras/" | absolute_url }})  
-[Developer's Guide]({{ "/developers-guide/" | absolute_url }})  
-[Release Notes]({{ "/release-notes/" | absolute_url }})  
-[Examples]({{ "/examples/" | absolute_url }})  
-[Legal/Licensing]({{ "/legal-licensing/" | absolute_url }})  
+[Beta]({{ "/beta/" | absolute_url }}) <br>
+[Overview]({{ "/overview/" | absolute_url }})  <br>
+[Building/Installation]({{ "/installation/" | absolute_url }})  <br>
+[MoonRay]({{ "/moonray/" | absolute_url }})  <br>
+[Arras]({{ "/arras/" | absolute_url }})  <br>
+[Developer's Guide]({{ "/developers-guide/" | absolute_url }})  <br>
+[Release Notes]({{ "/release-notes/" | absolute_url }})  <br>
+[Examples]({{ "/examples/" | absolute_url }})  <br>
+[Legal/Licensing]({{ "/legal-licensing/" | absolute_url }})  <br>
