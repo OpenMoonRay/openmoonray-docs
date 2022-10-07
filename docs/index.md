@@ -2,12 +2,12 @@
 ---
 Home
 
-[Beta](/manhattan/beta/)  
-[Overview](/manhattan/overview/)  
-[Building/Installation](/manhattan/installation/)  
-[MoonRay](/manhattan/moonray/)  
-[Arras](/manhattan/arras/)  
-[Developer's Guide](/manhattan/developer-guide)  
-[Release Notes](/manhattan/release-notes/)  
-[Examples](/manhattan/examples/)  
-[Legal/Licensing](/manhattan/legal-licensing)  
+[Beta]({{ "/beta/" | absolute_url }})
+[Overview]({{ "/overview/" | absolute_url }})  
+[Building/Installation]({{ "/installation/" | absolute_url }})  
+[MoonRay]({{ "/moonray/" | absolute_url }})  
+[Arras]({{ "/arras/" | absolute_url }})  
+[Developer's Guide]({{ "/developers-guide/" | absolute_url }})  
+[Release Notes]({{ "/release-notes/" | absolute_url }})  
+[Examples]({{ "/examples/" | absolute_url }})  
+[Legal/Licensing]({{ "/legal-licensing/" | absolute_url }})  
