@@ -133,3 +133,12 @@ curl: (6) Could not resolve host: ...
   <li>title: <a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a> | collection:  {{page.collection}} | tags:  {{page.tags}} </li>
 {% endfor %}
 </ul>
+
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
