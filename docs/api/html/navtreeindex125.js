@@ -1,6 +1,5 @@
 var NAVTREEINDEX125 =
 {
-"namespacemoonray_1_1pbr.html#aa1698168428fe21abb882915c02af3c6":[2,0,31,17,312],
 "namespacemoonray_1_1pbr.html#aa18d120b01c0dc354f59dc5a2939458c":[2,0,31,17,579],
 "namespacemoonray_1_1pbr.html#aa1a9a8910c33ad13fe5eb4e367e60e44":[2,0,31,17,626],
 "namespacemoonray_1_1pbr.html#aa1d06c279c3cb1b1916405beb88634fa":[2,0,31,17,236],
@@ -18,9 +17,9 @@ var NAVTREEINDEX125 =
 "namespacemoonray_1_1pbr.html#aa73e467b4901380c4f9c61a20aac2b02":[2,0,31,17,487],
 "namespacemoonray_1_1pbr.html#aa75ed0e7aaa41e96a5dbe7a220264bef":[2,0,31,17,581],
 "namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9":[2,0,31,17,732],
+"namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9":[2,0,31,17,729],
 "namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9":[2,0,31,17,731],
 "namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9":[2,0,31,17,730],
-"namespacemoonray_1_1pbr.html#aa7fcd2476c52f7410396cb6876149fa9":[2,0,31,17,729],
 "namespacemoonray_1_1pbr.html#aa834dc6a3146752db6f8e3aa60c27eae":[2,0,31,17,208],
 "namespacemoonray_1_1pbr.html#aa843bb3184addec21c64dd8e27e7d5bd":[2,0,31,17,528],
 "namespacemoonray_1_1pbr.html#aa88cf3ac26d7902d732e8897fb28cc1d":[2,0,31,17,655],
@@ -249,5 +248,6 @@ var NAVTREEINDEX125 =
 "namespacemoonray_1_1pbr_1_1anonymous__namespace_02_elliptical_falloff_8cc_03.html#ab865a260f20e31be3a27a4861204997b":[2,0,31,17,3,0],
 "namespacemoonray_1_1pbr_1_1anonymous__namespace_02_env_light_8cc_03.html":[2,0,31,17,4],
 "namespacemoonray_1_1pbr_1_1anonymous__namespace_02_env_light_8cc_03.html#ab765e411e4bd00566e44761218b8b3b6":[2,0,31,17,4,1],
-"namespacemoonray_1_1pbr_1_1anonymous__namespace_02_env_light_8cc_03.html#afbed88067bc32a512c68782b7a18f34b":[2,0,31,17,4,0]
+"namespacemoonray_1_1pbr_1_1anonymous__namespace_02_env_light_8cc_03.html#afbed88067bc32a512c68782b7a18f34b":[2,0,31,17,4,0],
+"namespacemoonray_1_1pbr_1_1anonymous__namespace_02_incoherent_ray_queue_8cc_03.html":[2,0,31,17,5]
 };
