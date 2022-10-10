@@ -404,6 +404,8 @@ toc:
         path: /moonray/cmd-line-options
       - item: Execution modes
         path: /moonray/execution-modes
+  - item: Hydra
+    path: /hydra/Hydra
   - item: Arras
   - item: Developer's Guide
     path: /developers-guide
