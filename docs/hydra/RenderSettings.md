@@ -108,7 +108,7 @@ It is very useful to set these before the first render. In Houdini and Maya this
 
 **Environment Variable:** $HDMOONRAY_LOGLEVEL=n
 
-**Description:** Sets how many debug messages to show from the remote hosts (or the single local host when not in debug mode). Default is 1.
+**Description:** Sets how many debug messages to show from the remote hosts (or the single local host when not in debug mode)
 
 ## Rdla Output
 **Type:** String
@@ -126,7 +126,7 @@ It is very useful to set these before the first render. In Houdini and Maya this
 
 **Environment Variable:** $HDMOONRAY_DOUBLESIDED=1
 
-**Description:** 
+**Description:** Ignore any lights in the scene, and render it with the default dome light. This is used to implement the light on/off button in Houdini. Usdview has other methods of turning off all the lights that work as well.
 
 ## Double Sided
 **Type:** Bool
