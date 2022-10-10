@@ -411,6 +411,8 @@ toc:
         path: /hydra/Overview
       - item: HdMoonray Plugin
         path: /hydra/Plugin
+      - item: HdMoonray Render Settings
+        path: /hydra/RenderSettings
   - item: Arras
   - item: Developer's Guide
     path: /developers-guide

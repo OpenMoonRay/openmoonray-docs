@@ -1,5 +1,5 @@
 ---
-title: HdMoonray plugin
+title: HdMoonray Plugin
 
 # uncomment if you want MathJax formatting available
 # maths: 1
@@ -19,28 +19,6 @@ title: HdMoonray plugin
 HdMoonray is a Hydra render delegate plugin for the Moonray renderer.
 
 The plugin has been tested with Houdini and usdview. The HdMoonray project includes a commandline program, hd_render, that performs Hydra renders from a USD scene file. hd_render can use any Hydra render delegate except for Storm (the Pixar openGl renderer) : this limitation is simply because Storm requires OpenGL libraries to be linked into the main application, and we have chosen not to do this for hd_render.
-
-## Render Settings
-These may be set to change hdMoonray’s behavior. In usdview choose View/Render Settings. In Houdini the “eye” button in the viewer lower-right brings up a control panel and these are on the first tab. In Maya a control panel is brought up by clicking the empty box to the right of Moonray in the Renderers menu on the viewer.
-
-It is very useful to set these before the first render. In Houdini and Maya this is possible, you can edit the settings for any renderer, not just the one being used. usdview does not let you change the settings until after you set the renderer, so a number of environment variables are provided, these change the default value so it is in that state before you switch to Moonray. These are shown at the end of each description.
-
-| Setting | Description |
-| ------- | ----------- |
-| Use Remote Hosts | When this is turned on, hdMoonray will render using one or more hosts taken from the Arras pool, instead of running on your local machine. This can reduce the load on the local machine, and resolve to a final image much more quickly if multiple remote hosts are used. You should check the availability of Arras hosts before using this. This option has no effect in developer mode. |
-| Remote Hosts | Sets the number of remote hosts to use. Shading will be faster roughly in proportion to the number of hosts you use, although the initial "render prep" stage, before shading begins, will remain roughly the same. Check the number of available Arras hosts before using this, since selecting more than are currently available will cause renders to fail. This option has no effect if "Use Remote Hosts" is off. |
-| Max FPS | This option sets the maximum number of image updates per second that Moonray will provide during shading. It doesn't affect the speed of the render, just how often it updates the display with the latest image. Normally you shouldn't need to change this : it might sometimes be useful to turn it lower in order to reduce network traffic when using remote hosts. |
-| Debug Mode | This switch turns on an alternate mode that can be used to help track down bugs or performance issues. It works by loading Moonray directly into the application process. We don't recommend turning this option on for normal use. Some features don't work in developer mode, including remote hosts and pausing the render. If Moonray asserts or crashes in developer mode, the entire application will exit. |
-| Disable Render | Disables actual rendering, so that we can measure the performance of Hydra and the construction of the RDL SceneContext separately from the renderer. |
-| Restart (toggle) | This is a toggle switch that has an effect each time you click it (Hydra doesn't support plain buttons in renderer settings : a toggle is the only way to get the same behavior). When you switch it, hdMoonray shuts down the renderer and restarts it from scratch. It also allows you to retry a failed Remote Hosts setup. This option has no effect other than to reload textures in debug mode. |
-| Reload Textures (toggle) | Switching this forces Moonray to re-read all texture files from disk. |
-| Maximum connect retries | How many times it tries to start remote renders before giving up (use the Restart toggle to run a new set of attempts). Default value is 2. |
-| Show Debug Messages | Enables printing of debug messages to the console. Turning this on will display a large number of debugging messages from Moonray and hdMoonray. |
-| Show Info Messages | Enables printing of info messages to the console. This shows a smaller set of messages than "Show Debug", but includes the Moonray render summary. |
-| Log Level (1-5) | Sets how many debug messages to show from the remote hosts (or the single local host when not in debug mode). Default is 1. |
-| Rdla output | Write the SceneContext as rdla. This is done each time rendering is started by any changes. Use “foo.rdla” to write an rdla file, “foo.rdlb” to write an rdlb file, or just “foo” to write both an rdla and rdlb, split so all the heavy binary data is in the rdlb, but the structure can be seen in the rdla. |
-| Disable Lighting | Ignore any lights in the scene, and render it with the default dome light. This is used to implement the light on/off button in Houdini. Usdview has other methods of turning off all the lights that work as well. |
-| Double Sided | When this is on, all geometry is treated as double-sided, and to get single sided set int primvars:moonray:side_type = 1. When this is off standard USD behavior is used, where everything is single-sided unless bool doubleSided = true. |
 
 ## Supported Features
 HdMoonray has not been tested with non-USD applications, although it contains only a small amount of code that is in any way specific to USD. We generally describe the functionality of the plugin in terms of USD and USD prims, since this is more accessible to most readers than the internal Hydra types.
