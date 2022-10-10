@@ -1,0 +1,79 @@
+---
+title: HdMoonray plugin
+
+# uncomment if you want MathJax formatting available
+# maths: 1
+
+# format is YYYY-MM-DD 00:00:00 +0000
+# last-modified-date: 2025-02-14 00:00:00 +0000
+---
+
+<!-- To set variables and metadata, such as a title and layout, for a page or post on your site, you can add YAML front matter to the top of any Markdown or HTML file. For more information, see "Front Matter" in the Jekyll documentation.  -->
+
+# <Overview_or_introduction>
+<!-- All topics>
+
+<!-- Concept info here: Explain the background and context of a this subject. --> 
+
+# HdMoonray Hydra Plugin
+HdMoonray is a Hydra render delegate plugin for the Moonray renderer.
+
+The plugin has been tested with Houdini and usdview. The HdMoonray project includes a commandline program, hd_render, that performs Hydra renders from a USD scene file. hd_render can use any Hydra render delegate except for Storm (the Pixar openGl renderer) : this limitation is simply because Storm requires OpenGL libraries to be linked into the main application, and we have chosen not to do this for hd_render.
+
+## Render Settings
+These may be set to change hdMoonray’s behavior. In usdview choose View/Render Settings. In Houdini the “eye” button in the viewer lower-right brings up a control panel and these are on the first tab. In Maya a control panel is brought up by clicking the empty box to the right of Moonray in the Renderers menu on the viewer.
+
+It is very useful to set these before the first render. In Houdini and Maya this is possible, you can edit the settings for any renderer, not just the one being used. usdview does not let you change the settings until after you set the renderer, so a number of environment variables are provided, these change the default value so it is in that state before you switch to Moonray. These are shown at the end of each description.
+
+| Setting | Description |
+| ------- | ----------- |
+| Use Remote Hosts | When this is turned on, hdMoonray will render using one or more hosts taken from the Arras pool, instead of running on your local machine. This can reduce the load on the local machine, and resolve to a final image much more quickly if multiple remote hosts are used. You should check the availability of Arras hosts before using this. This option has no effect in developer mode. |
+| Remote Hosts | Sets the number of remote hosts to use. Shading will be faster roughly in proportion to the number of hosts you use, although the initial "render prep" stage, before shading begins, will remain roughly the same. Check the number of available Arras hosts before using this, since selecting more than are currently available will cause renders to fail. This option has no effect if "Use Remote Hosts" is off. |
+| Max FPS | This option sets the maximum number of image updates per second that Moonray will provide during shading. It doesn't affect the speed of the render, just how often it updates the display with the latest image. Normally you shouldn't need to change this : it might sometimes be useful to turn it lower in order to reduce network traffic when using remote hosts. |
+| Debug Mode | This switch turns on an alternate mode that can be used to help track down bugs or performance issues. It works by loading Moonray directly into the application process. We don't recommend turning this option on for normal use. Some features don't work in developer mode, including remote hosts and pausing the render. If Moonray asserts or crashes in developer mode, the entire application will exit. |
+| Disable Render | Disables actual rendering, so that we can measure the performance of Hydra and the construction of the RDL SceneContext separately from the renderer. |
+| Restart (toggle) | This is a toggle switch that has an effect each time you click it (Hydra doesn't support plain buttons in renderer settings : a toggle is the only way to get the same behavior). When you switch it, hdMoonray shuts down the renderer and restarts it from scratch. It also allows you to retry a failed Remote Hosts setup. This option has no effect other than to reload textures in debug mode. |
+| Reload Textures (toggle) | Switching this forces Moonray to re-read all texture files from disk. |
+| Maximum connect retries | How many times it tries to start remote renders before giving up (use the Restart toggle to run a new set of attempts). Default value is 2. |
+| Show Debug Messages | Enables printing of debug messages to the console. Turning this on will display a large number of debugging messages from Moonray and hdMoonray. |
+| Show Info Messages | Enables printing of info messages to the console. This shows a smaller set of messages than "Show Debug", but includes the Moonray render summary. |
+| Log Level (1-5) | Sets how many debug messages to show from the remote hosts (or the single local host when not in debug mode). Default is 1. |
+| Rdla output | Write the SceneContext as rdla. This is done each time rendering is started by any changes. Use “foo.rdla” to write an rdla file, “foo.rdlb” to write an rdlb file, or just “foo” to write both an rdla and rdlb, split so all the heavy binary data is in the rdlb, but the structure can be seen in the rdla. |
+| Disable Lighting | Ignore any lights in the scene, and render it with the default dome light. This is used to implement the light on/off button in Houdini. Usdview has other methods of turning off all the lights that work as well. |
+| Double Sided | When this is on, all geometry is treated as double-sided, and to get single sided set int primvars:moonray:side_type = 1. When this is off standard USD behavior is used, where everything is single-sided unless bool doubleSided = true. |
+
+## Supported Features
+HdMoonray has not been tested with non-USD applications, although it contains only a small amount of code that is in any way specific to USD. We generally describe the functionality of the plugin in terms of USD and USD prims, since this is more accessible to most readers than the internal Hydra types.
+
+The prim types supported, and the Moonray shaders that implement them, are listed in the table below. In most cases, any limitations are due to features not being available in the corresponding Moonray shader, and could be addressed in HDMoonray fairly easily if we choose to add Moonray support for the feature.
+
+| USD Prim type | Moonray shader | Notes |
+| ------------- | -------------- | ----- |
+| BasisCurve | RdlCurveGeometry | no Catmull-Rom pinned or periodic curves |
+| Camera | any Moonray camera | no clippingPlanes "fit" type other than width simulated by changing focal length |
+| xxxLight (any Lux light) | any Moonray light | Spotlight api turns light into a disc, cone:softness is approximated using moonray's "inner_cone_angle" | 
+| MoonrayLightFilter [^1] | any Moonray light filter | USD doesn't define any specific filter types : all Moonray light filters are supported. |
+| Material | all Moonray material and map shaders | Extra files needed for DCC for non UsdPreviewSurface materials |
+| Mesh | RdlMeshGeometry | no loop subdivision, holes, or "smooth" triangleSubdivision mode |
+| Points | RdlPointGeometry ||
+| PreviewSurface shader | UsdPreviewSurface | only mipmapped textures | 
+| Procedural [^1] | any geometry procedural ||
+| Volume | VdbGeometry ||
+
+## Limitations
+There are several features that are incomplete or unsupported primarily due to limitations in Hydra itself, rather than in Moonray or the HdMoonray plugin. In some cases, these are simply things still on Pixar's "todo" list. For others, it is not clear whether Pixar intends to support the feature at all. Whether we can work around this to support the feature anyway depends on the details, and can change between Hydra and USD release versions. However, the trend is that limitations are easier to work around in later versions.
+
+### Motion Blur
+The main overall limitation is that **motion blur** isn't yet supported (except for camera motion).
+
+### Geometry Parts
+Parts are supported in USD using the GeometrySubset prim. This is only supported for the Mesh prim, and so there are no parts in USD (or Hydra) for procedural geometry, curves or points.
+
+Parts can receive their own material bindings, but there is no support in USD or Hydra for setting visibility flags on individual parts. We've received a suggestion that mesh "holes" should be used to hide parts : this is supported by USD and Hydra but not by Moonray. Our current feeling is that this wouldn't meet our production need.
+
+### Primvars (user data)
+Constant primvar attributes named primvars:moonray:xyz can be used to override the rdl2 attribute xyz on any Geometry. In particular this is used for visible_*, mesh_resolution, and side_type. This is not supported yet for parts or for instances.
+
+Other primvars are translated into Moonray user data for use by shaders, but this is only supported for BasisCurve, Mesh and Points. In particular there are no primvars for Procedural geometry including volumes and the Sphere primitive (for now hdMoonray converts spheres to Mesh because of this).
+
+[^1]: These are USD Prim types defined by DWA

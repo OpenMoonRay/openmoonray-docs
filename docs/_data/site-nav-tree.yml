@@ -405,7 +405,12 @@ toc:
       - item: Execution modes
         path: /moonray/execution-modes
   - item: Hydra
-    path: /hydra/Hydra
+    path: /hydra
+    subitems:
+      - item: Overview
+        path: /hydra/Overview
+      - item: HdMoonray Plugin
+        path: /hydra/Plugin
   - item: Arras
   - item: Developer's Guide
     path: /developers-guide
