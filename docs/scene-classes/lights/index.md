@@ -9,7 +9,7 @@ maths: 1
 Lights in MoonRay are not treated as solid objects, but rather as abstract entities that inject light into the scene. (Note that it is possible to assign an emissive material to a geoemtry object as another way to illuminate a scene. However, we are not referring to that kind of setup when we talk about lights.)
 
 There are 8 types of light supported in MoonRay:
-* [CylinderLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/CylinderLight)
+* [CylinderLight](/manhattan/scene-classes/lights/CylinderLight)
 * [DiskLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/DiskLight)
 * [DistantLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/DistantLight)
 * [EnvLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/EnvLight)
