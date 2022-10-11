@@ -8,83 +8,48 @@ title: CheckerboardMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # CheckerboardMap
-**MAP SHADER**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>color_A</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Rgb</b>
-      
-      
-        default: [ 0, 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+      default: [ 0, 0, 0 ]
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>color_B</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Rgb</b>
-      
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+      default: [ 1, 1, 1 ]
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>input_texture_coordinates</h3>
-    <p>
-      <b>Vec3f</b>
-      <i>bindable</i>
-      
-        default: [ 0, 0, 0 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">bind a shader that outputs UV coordinates (such as a projection shader) here</p>
-      
+    <p class="scene-class-type">
+      <b>Vec3f</b> <i>bindable</i>
+      default: [ 0, 0, 0 ]
+      <p class="scene-class-comments">bind a shader that outputs UV coordinates (such as a projection shader) here</p>
     </p>
-    
     <h3>num_u_tiles</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Int</b>
-      
-      
-        default: 8
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">number of checkerboard squares in the U direction</p>
-      
+      default: 8
+      <p class="scene-class-comments">number of checkerboard squares in the U direction</p>
     </p>
-    
     <h3>num_v_tiles</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Int</b>
-      
-      
-        default: 8
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">number of checkerboard squares in the V direction</p>
-      
+      default: 8
+      <p class="scene-class-comments">number of checkerboard squares in the V direction</p>
     </p>
-    
     <h3>texture_coordinates</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | texture = 0 (default)
-        
           | input texture coordinates = 1
-        
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">switches between the model's uv coordinates or the input texture coordinates</p>
-      
+      <p class="scene-class-comments">switches between the model's uv coordinates or the input texture coordinates</p>
     </p>
-    
   </p>
 </details>
-
+</div>

@@ -8,54 +8,32 @@ title: DeformationMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # DeformationMap
-**MAP SHADER**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>output_mode</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | RGB = 0
-        
           | deformation_S = 1
-        
           | deformation_T = 2
-        
           | deformation_avg = 3 (default)
-        
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls output: <br>&emsp;&emsp;    RGB - R = deformation along S, G = deformation along T, B = average deformation from ref space <br>&emsp;&emsp;    deformation_S - deformation along S <br>&emsp;&emsp;    deformation_T - deformation along T <br>&emsp;&emsp;    deformation_avg - average deformation from ref space</p>
-      
+      <p class="scene-class-comments">Controls output: <br>&emsp;&emsp;    RGB - R = deformation along S, G = deformation along T, B = average deformation from ref space <br>&emsp;&emsp;    deformation_S - deformation along S <br>&emsp;&emsp;    deformation_T - deformation along T <br>&emsp;&emsp;    deformation_avg - average deformation from ref space</p>
     </p>
-    
     <h3>use_warning_color</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If derivatives are missing or zero output the warning color erroring out</p>
-      
+      default: False
+      <p class="scene-class-comments">If derivatives are missing or zero output the warning color erroring out</p>
     </p>
-    
     <h3>warning_color</h3>
-    <p>
-      <b>Rgb</b>
-      <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Warning color to output when derivatives are missing or zero</p>
-      
+    <p class="scene-class-type">
+      <b>Rgb</b> <i>bindable</i>
+      default: [ 1, 1, 1 ]
+      <p class="scene-class-comments">Warning color to output when derivatives are missing or zero</p>
     </p>
-    
   </p>
 </details>
-
+</div>

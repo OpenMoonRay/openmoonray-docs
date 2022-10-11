@@ -8,47 +8,29 @@ title: FloatToRgbMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # FloatToRgbMap
-**MAP SHADER**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>B</h3>
-    <p>
-      <b>Float</b>
-      <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      default: 1.0
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>G</h3>
-    <p>
-      <b>Float</b>
-      <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      default: 1.0
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>R</h3>
-    <p>
-      <b>Float</b>
-      <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      default: 1.0
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
   </p>
 </details>
-
+</div>

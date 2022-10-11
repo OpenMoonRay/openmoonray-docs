@@ -8,25 +8,17 @@ title: ConstantScalarMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ConstantScalarMap
-**MAP SHADER**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>scalar_value</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">constant scalar value</p>
-      
+      default: 1.0
+      <p class="scene-class-comments">constant scalar value</p>
     </p>
-    
   </p>
 </details>
-
+</div>

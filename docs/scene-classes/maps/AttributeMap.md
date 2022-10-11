@@ -8,132 +8,73 @@ title: AttributeMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # AttributeMap
-**MAP SHADER**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Primitive Attribute attributes</summary>
+  <summary>Primitive Attribute attributes</summary>
   <p>
-    
     <h3>primitive_attribute_name</h3>
-    <p>
+    <p class="scene-class-type">
       <b>String</b>
-      
-      
-        default: Cd
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the name of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
-      
+      default: Cd
+      <p class="scene-class-comments">the name of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
     </p>
-    
     <h3>primitive_attribute_type</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | float = 0
-        
           | vec2f = 1
-        
           | vec3f = 2
-        
           | rgb = 3 (default)
-        
           | int = 4
-        
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
-      
+      <p class="scene-class-comments">the type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
     </p>
-    
   </p>
 </details>
-
-
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>color</h3>
-    <p>
-      <b>Rgb</b>
-      <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">input color - preferably a connected map</p>
-      
+    <p class="scene-class-type">
+      <b>Rgb</b> <i>bindable</i>
+      default: [ 1, 1, 1 ]
+      <p class="scene-class-comments">input color - preferably a connected map</p>
     </p>
-    
     <h3>default_value</h3>
-    <p>
-      <b>Rgb</b>
-      <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">default value to display when the requested attribute is not available</p>
-      
+    <p class="scene-class-type">
+      <b>Rgb</b> <i>bindable</i>
+      default: [ 1, 1, 1 ]
+      <p class="scene-class-comments">default value to display when the requested attribute is not available</p>
     </p>
-    
     <h3>map_type</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | primitive attribute = 0 (default)
-        
           | position = 1
-        
           | texture st = 2
-        
           | shading normal = 3
-        
           | geometric normal = 4
-        
           | dpds = 5
-        
           | dpdt = 6
-        
           | dnds = 7
-        
           | dndt = 8
-        
           | map color = 9
-        
           | hair surface P = 12
-        
           | hair surface N = 13
-        
           | hair surface st = 14
-        
           | hair closest surface st = 15
-        
           | id = 16
-        
           | velocity = 17
-        
           | acceleration = 18
-        
           | motionvec = 19
-        
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>warn_when_unavailable</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Whether or not to issue a warning when the requested attribute is unavailable</p>
-      
+      default: False
+      <p class="scene-class-comments">Whether or not to issue a warning when the requested attribute is unavailable</p>
     </p>
-    
   </p>
 </details>
-
+</div>

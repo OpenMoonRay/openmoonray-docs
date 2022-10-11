@@ -8,224 +8,126 @@ title: BakeCamera
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # BakeCamera
-**NODE CAMERA**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Frustum attributes</summary>
+  <summary>Frustum attributes</summary>
   <p>
-    
     <h3>far</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 10000.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+      default: 10000.0
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>near</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+      default: 1.0
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
   </p>
 </details>
-
-
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Motion Blur attributes</summary>
+  <summary>Motion Blur attributes</summary>
   <p>
-    
     <h3>mb_shutter_bias</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 0.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+      default: 0.0
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>mb_shutter_close</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 0.25
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+      default: 0.25
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>mb_shutter_open</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: -0.25
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+      default: -0.25
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
   </p>
 </details>
-
-
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Render Masks attributes</summary>
+  <summary>Render Masks attributes</summary>
   <p>
-    
     <h3>pixel_sample_map</h3>
-    <p>
+    <p class="scene-class-type">
       <b>String</b>
-      
-      
-        default: 
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+      default: 
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
   </p>
 </details>
-
-
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>bias</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 0.00300000002608
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Ray-tracing offset for primary ray origin</p>
-      
+      default: 0.00300000002608
+      <p class="scene-class-comments">Ray-tracing offset for primary ray origin</p>
     </p>
-    
     <h3>geometry</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Geometry</b>
-      
-      
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The geometry object to bake</p>
-      
+      default: None
+      <p class="scene-class-comments">The geometry object to bake</p>
     </p>
-    
     <h3>map_factor</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Increase or decrease the internal position map buffer resolution</p>
-      
+      default: 1.0
+      <p class="scene-class-comments">Increase or decrease the internal position map buffer resolution</p>
     </p>
-    
     <h3>mode</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | from camera to surface = 0
-        
           | from surface along normal = 1
-        
           | from surface along reflection vector = 2
-        
           | above surface reverse normal = 3 (default)
-        
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">How to generate primary rays</p>
-      
+      <p class="scene-class-comments">How to generate primary rays</p>
     </p>
-    
     <h3>node_xform</h3>
-    <p>
-      <b>Mat4d</b>
-      <i>blurrable</i>
-      
-        default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+    <p class="scene-class-type">
+      <b>Mat4d</b> <i>blurrable</i>
+      default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>normal_map</h3>
-    <p>
-      <b>String</b>
-      <i>filename</i>
-      
-        default: 
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Use this option to supply your own normals that are used when computing ray directions.  Without this option, normals are computed from the geometry and do not take into account any material applied normal mapping.</p>
-      
+    <p class="scene-class-type">
+      <b>String</b> <i>filename</i>
+      default: 
+      <p class="scene-class-comments">Use this option to supply your own normals that are used when computing ray directions.  Without this option, normals are computed from the geometry and do not take into account any material applied normal mapping.</p>
     </p>
-    
     <h3>normal_map_space</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | camera space = 0 (default)
-        
           | tangent space = 1
-        
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Use camera space if you generated per frame normal maps in a pre-pass using the normal material aov.  You probably want to use tangent space if you are using a normal map that is also used in the surfacing setup.</p>
-      
+      <p class="scene-class-comments">Use camera space if you generated per frame normal maps in a pre-pass using the normal material aov.  You probably want to use tangent space if you are using a normal map that is also used in the surfacing setup.</p>
     </p>
-    
     <h3>udim</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Int</b>
-      
-      
-        default: 1001
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Udim tile to bake</p>
-      
+      default: 1001
+      <p class="scene-class-comments">Udim tile to bake</p>
     </p>
-    
     <h3>use_relative_bias</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If true, bias is scaled based on position magnitude</p>
-      
+      default: True
+      <p class="scene-class-comments">If true, bias is scaled based on position magnitude</p>
     </p>
-    
     <h3>uv_attribute</h3>
-    <p>
+    <p class="scene-class-type">
       <b>String</b>
-      
-      
-        default: 
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Specifies a Vec2f primitive attribute to use as the uv coordinates.  If empty, the default uv for the mesh is used.  The uvs must provide a unique parameterization of the mesh, i.e. a given (u, v) can appear only once on the mesh being baked.</p>
-      
+      default: 
+      <p class="scene-class-comments">Specifies a Vec2f primitive attribute to use as the uv coordinates.  If empty, the default uv for the mesh is used.  The uvs must provide a unique parameterization of the mesh, i.e. a given (u, v) can appear only once on the mesh being baked.</p>
     </p>
-    
   </p>
 </details>
-
+</div>

@@ -8,25 +8,17 @@ title: RgbToHsvMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RgbToHsvMap
-**MAP SHADER**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>input</h3>
-    <p>
-      <b>Rgb</b>
-      <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
-      
+    <p class="scene-class-type">
+      <b>Rgb</b> <i>bindable</i>
+      default: [ 1, 1, 1 ]
+      <p class="scene-class-comments">bind the input here</p>
     </p>
-    
   </p>
 </details>
-
+</div>

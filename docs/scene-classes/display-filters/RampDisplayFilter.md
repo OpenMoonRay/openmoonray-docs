@@ -8,143 +8,82 @@ title: RampDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # RampDisplayFilter
-****
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <summary>Advanced attributes</summary>
   <p>
-    
     <h3>invert_mask</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: False
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
-      
+      default: False
+      <p class="scene-class-comments">invert value of mask</p>
     </p>
-    
     <h3>mix</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 1.0
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
-      
+      default: 1.0
+      <p class="scene-class-comments">blend between output and input</p>
     </p>
-    
   </p>
 </details>
-
-
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Ramp Knot attributes</summary>
+  <summary>Ramp Knot attributes</summary>
   <p>
-    
     <h3>colors</h3>
-    <p>
+    <p class="scene-class-type">
       <b>RgbVector</b>
-      
-      
-        default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">List of colors on the ramp</p>
-      
+      default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
+      <p class="scene-class-comments">List of colors on the ramp</p>
     </p>
-    
     <h3>interpolations</h3>
-    <p>
+    <p class="scene-class-type">
       <b>IntVector</b>
-      
-      
-        default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0, Linear: 1, Exponential Up: 2, Exponential Down: 3, Smooth: 4, Catmull-Rom: 5</p>
-      
+      default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
+      <p class="scene-class-comments">None: 0, Linear: 1, Exponential Up: 2, Exponential Down: 3, Smooth: 4, Catmull-Rom: 5</p>
     </p>
-    
     <h3>positions</h3>
-    <p>
+    <p class="scene-class-type">
       <b>FloatVector</b>
-      
-      
-        default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Color ramp</p>
-      
+      default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
+      <p class="scene-class-comments">Color ramp</p>
     </p>
-    
   </p>
 </details>
-
-
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Ramp properties attributes</summary>
+  <summary>Ramp properties attributes</summary>
   <p>
-    
     <h3>input</h3>
-    <p>
+    <p class="scene-class-type">
       <b>67141632</b>
-      
-      
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-comment">input to the input ramp</p>
-      
+      default: None
+      <p class="scene-class-comments">input to the input ramp</p>
     </p>
-    
     <h3>ramp_type</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | v_ramp = 0 (default)
-        
           | u_ramp = 1
-        
           | diagonal_ramp = 2
-        
           | radial_ramp = 3
-        
           | circular_ramp = 4
-        
           | box_ramp = 5
-        
           | uxv_ramp = 6
-        
           | four_corner_ramp = 7
-        
           | input_ramp = 8
-        
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
   </p>
 </details>
-
-
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>mask</h3>
-    <p>
+    <p class="scene-class-type">
       <b>67141632</b>
-      
-      
-        default: None
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+      default: None
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
   </p>
 </details>
-
+</div>

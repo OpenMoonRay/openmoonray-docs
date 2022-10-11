@@ -8,56 +8,33 @@ title: CombineLightFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # CombineLightFilter
-**LIGHTFILTER**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>light_filters</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Object Vector</b>
-      
-      
-        default: []
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+      default: []
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>mode</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | multiply = 0 (default)
-        
           | min = 1
-        
           | max = 2
-        
           | add = 3
-        
           | subtract = 4
-        
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>on</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: True
-      
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
-      
+      default: True
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
   </p>
 </details>
-
+</div>

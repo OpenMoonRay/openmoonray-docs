@@ -8,6 +8,6 @@ title: HairColumnMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # HairColumnMap
-**MAP SHADER**
-
 ---
+<div class="scene-class">
+</div>
