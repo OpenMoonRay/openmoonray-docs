@@ -1,14 +1,14 @@
-p.scene-class-attr-comment{
+.scene-class-attr-comment {
   text-align: justify;
 }
 
-summary.scene-class-attr-group{
+.scene-class-attr-group {
   color: #727272;
   font: 16px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   cursor: pointer;
 }
 
-p.scene-class-attr-missing{
-  color: red
+.scene-class-attr-missing {
+  color: red;
 }
 
