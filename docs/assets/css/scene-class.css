@@ -1,14 +1,21 @@
-.scene-class-attr-comment {
-  text-align: justify;
-}
-
-.scene-class-attr-group {
+/* Attribute Groups */
+div.scene-class summary {
   color: #727272;
-  font: 16px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.17em;
+  font-weight: bold;
   cursor: pointer;
 }
 
-.scene-class-attr-missing {
-  color: red;
+/* Attribute Name */
+div.scene-class h3 {
 }
 
+/* Documentation Comment */
+p.scene-class-comments {
+  text-align: justify;
+}
+
+/* Missing Documentation Comment */
+p.scene-class-no-doc {
+  color: red;
+}
