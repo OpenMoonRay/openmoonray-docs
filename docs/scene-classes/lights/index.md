@@ -14,9 +14,9 @@ There are 8 types of light supported in MoonRay:
 * [DistantLight](https://dreamworksanimation.github.io/manhattan/scene-classes/lights/DistantLight)
 * [EnvLight](https://dreamworksanimation.github.io/manhattan/scene-classes/lights/EnvLight)
 * [MeshLight](https://dreamworksanimation.github.io/manhattan/scene-classes/lights/MeshLight)
-* [RectLight](https://dreamworksanimation.github.io/manhattan/scene-classes/lights/Light)
-* [SphereLight](https://dreamworksanimation.github.io/manhattan/scene-classes/lights/Light)
-* [SpotLight](https://dreamworksanimation.github.io/manhattan/scene-classes/lights/Light)
+* [RectLight](https://dreamworksanimation.github.io/manhattan/scene-classes/lights/RectLight)
+* [SphereLight](https://dreamworksanimation.github.io/manhattan/scene-classes/lights/SphereLight)
+* [SpotLight](https://dreamworksanimation.github.io/manhattan/scene-classes/lights/SpotLight)
 
 Two of the light types - DistantLight and EnvLight - are treated as having their illuminating surface at infinity. The remaining six types are considered local lights in the sense that their 3D positions are determined by spatial coordinates (for instance, a SphereLight is positioned by setting its *center* attribute).
 
