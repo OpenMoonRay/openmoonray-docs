@@ -8,124 +8,71 @@ title: ColorCorrectHsvMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ColorCorrectHsvMap
-**MAP SHADER**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>clamp</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: False
-      
-        <p class="scene-class-attr-comment">clamps output to [0,1] range</p>
-      
+      default: False
+      <p class="scene-class-comments">clamps output to [0,1] range</p>
     </p>
-    
     <h3>hue_shift</h3>
-    <p>
-      <b>Float</b>
-      <i>bindable</i>
-      
-        default: 0.0
-      
-        <p class="scene-class-attr-comment">shifts the hue of the input (360 rolls over back to 0)</p>
-      
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      default: 0.0
+      <p class="scene-class-comments">shifts the hue of the input (360 rolls over back to 0)</p>
     </p>
-    
     <h3>input</h3>
-    <p>
-      <b>Rgb</b>
-      <i>bindable</i>
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="scene-class-attr-comment">input color</p>
-      
+    <p class="scene-class-type">
+      <b>Rgb</b> <i>bindable</i>
+      default: [ 1, 1, 1 ]
+      <p class="scene-class-comments">input color</p>
     </p>
-    
     <h3>on</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: True
-      
-        <p class="scene-class-attr-comment">all attributes on/off</p>
-      
+      default: True
+      <p class="scene-class-comments">all attributes on/off</p>
     </p>
-    
     <h3>saturation_contrast</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 0.0
-      
-        <p class="scene-class-attr-comment">modifies the contrast of the input's saturation (-1, 1)</p>
-      
+      default: 0.0
+      <p class="scene-class-comments">modifies the contrast of the input's saturation (-1, 1)</p>
     </p>
-    
     <h3>saturation_factor</h3>
-    <p>
-      <b>Float</b>
-      <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="scene-class-attr-comment">multiplies the saturation of the input</p>
-      
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      default: 1.0
+      <p class="scene-class-comments">multiplies the saturation of the input</p>
     </p>
-    
     <h3>saturation_shift</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 0.0
-      
-        <p class="scene-class-attr-comment">shifts the saturation of the input (-1, 1)</p>
-      
+      default: 0.0
+      <p class="scene-class-comments">shifts the saturation of the input (-1, 1)</p>
     </p>
-    
     <h3>value_contrast</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 0.0
-      
-        <p class="scene-class-attr-comment">modifies the contrast of the input's value (-1, 1)</p>
-      
+      default: 0.0
+      <p class="scene-class-comments">modifies the contrast of the input's value (-1, 1)</p>
     </p>
-    
     <h3>value_factor</h3>
-    <p>
-      <b>Float</b>
-      <i>bindable</i>
-      
-        default: 1.0
-      
-        <p class="scene-class-attr-comment">multiplies the value of the input</p>
-      
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      default: 1.0
+      <p class="scene-class-comments">multiplies the value of the input</p>
     </p>
-    
     <h3>value_shift</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 0.0
-      
-        <p class="scene-class-attr-comment">shifts the value of the input (-1, 1)</p>
-      
+      default: 0.0
+      <p class="scene-class-comments">shifts the value of the input (-1, 1)</p>
     </p>
-    
   </p>
 </details>
-
+</div>

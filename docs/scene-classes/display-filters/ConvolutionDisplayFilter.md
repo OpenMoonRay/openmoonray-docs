@@ -8,104 +8,60 @@ title: ConvolutionDisplayFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # ConvolutionDisplayFilter
-****
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="scene-class-attr-group">Advanced attributes</summary>
+  <summary>Advanced attributes</summary>
   <p>
-    
     <h3>invert_mask</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: False
-      
-        <p class="scene-class-attr-comment">invert value of mask</p>
-      
+      default: False
+      <p class="scene-class-comments">invert value of mask</p>
     </p>
-    
     <h3>mix</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 1.0
-      
-        <p class="scene-class-attr-comment">blend between output and input</p>
-      
+      default: 1.0
+      <p class="scene-class-comments">blend between output and input</p>
     </p>
-    
   </p>
 </details>
-
-
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>custom_kernel</h3>
-    <p>
+    <p class="scene-class-type">
       <b>FloatVector</b>
-      
-      
-        default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
-      
-        <p class="scene-class-attr-comment">a list of kernel values for a custom filter. The number of values provided must be the square of an odd number (e.g. 3x3, 5x5, 7x7)</p>
-      
+      default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
+      <p class="scene-class-comments">a list of kernel values for a custom filter. The number of values provided must be the square of an odd number (e.g. 3x3, 5x5, 7x7)</p>
     </p>
-    
     <h3>input</h3>
-    <p>
+    <p class="scene-class-type">
       <b>67141632</b>
-      
-      
-        default: None
-      
-        <p class="scene-class-attr-comment">RenderOutput to convolve</p>
-      
+      default: None
+      <p class="scene-class-comments">RenderOutput to convolve</p>
     </p>
-    
     <h3>kernel_size</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Int</b>
-      
-      
-        default: 5
-      
-        <p class="scene-class-attr-comment">size of kernel in pixels. Size must be odd. If using custom kernel, this attribute is ignored, and the size of the custom kernel is used instead</p>
-      
+      default: 5
+      <p class="scene-class-comments">size of kernel in pixels. Size must be odd. If using custom kernel, this attribute is ignored, and the size of the custom kernel is used instead</p>
     </p>
-    
     <h3>kernel_type</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | gaussian = 0 (default)
-        
           | box = 1
-        
           | custom = 2
-        
-      
-        <p class="scene-class-attr-missing">No documentation available</p>
-      
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>mask</h3>
-    <p>
+    <p class="scene-class-type">
       <b>67141632</b>
-      
-      
-        default: None
-      
-        <p class="scene-class-attr-missing">No documentation available</p>
-      
+      default: None
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
   </p>
 </details>
-
+</div>

@@ -8,25 +8,17 @@ title: GeometrySet
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # GeometrySet
-**GEOMETRYSET**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>geometries</h3>
-    <p>
+    <p class="scene-class-type">
       <b>SceneObjectIndexable</b>
-      
-      
-        default: None
-      
-        <p class="scene-class-attr-missing">No documentation available</p>
-      
+      default: None
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
   </p>
 </details>
-
+</div>

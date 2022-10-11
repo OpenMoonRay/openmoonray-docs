@@ -8,54 +8,31 @@ title: HairColorPresetsMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # HairColorPresetsMap
-**MAP SHADER**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>color</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | black = 0 (default)
-        
           | gray = 1
-        
           | platinum blond = 2
-        
           | light blond = 3
-        
           | golden blond = 4
-        
           | strawberry blond = 5
-        
           | light red = 6
-        
           | dark red = 7
-        
           | light auburn = 8
-        
           | dark auburn = 9
-        
           | brown = 10
-        
           | dark brown = 11
-        
           | golden brown = 12
-        
           | ash brown = 13
-        
           | chestnut brown = 14
-        
-      
-        <p class="scene-class-attr-missing">No documentation available</p>
-      
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
   </p>
 </details>
-
+</div>

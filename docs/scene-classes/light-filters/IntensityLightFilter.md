@@ -8,77 +8,46 @@ title: IntensityLightFilter
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # IntensityLightFilter
-**LIGHTFILTER**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="scene-class-attr-group">Properties attributes</summary>
+  <summary>Properties attributes</summary>
   <p>
-    
     <h3>color</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Rgb</b>
-      
-      
-        default: [ 1, 1, 1 ]
-      
-        <p class="scene-class-attr-missing">No documentation available</p>
-      
+      default: [ 1, 1, 1 ]
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>exposure</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 0.0
-      
-        <p class="scene-class-attr-missing">No documentation available</p>
-      
+      default: 0.0
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>intensity</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 1.0
-      
-        <p class="scene-class-attr-missing">No documentation available</p>
-      
+      default: 1.0
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>invert</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: False
-      
-        <p class="scene-class-attr-missing">No documentation available</p>
-      
+      default: False
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
   </p>
 </details>
-
-
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>on</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: True
-      
-        <p class="scene-class-attr-missing">No documentation available</p>
-      
+      default: True
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
   </p>
 </details>
-
+</div>

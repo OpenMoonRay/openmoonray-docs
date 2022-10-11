@@ -8,321 +8,177 @@ title: VdbGeometry
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # VdbGeometry
-**GEOMETRY NODE**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>density_grid</h3>
-    <p>
+    <p class="scene-class-type">
       <b>String</b>
-      
-      
-        default: density
-      
-        <p class="scene-class-attr-comment">The name of the density grid. If multiple grids have the same name, only the first grid with that name will be loaded. If a vdb file has multiple grids with the same name, you may use a suffix index to pick which grid to load, e.g. "density[3]". The index must be in [] brackets.</p>
-      
+      default: density
+      <p class="scene-class-comments">The name of the density grid. If multiple grids have the same name, only the first grid with that name will be loaded. If a vdb file has multiple grids with the same name, you may use a suffix index to pick which grid to load, e.g. "density[3]". The index must be in [] brackets.</p>
     </p>
-    
     <h3>emission_grid</h3>
-    <p>
+    <p class="scene-class-type">
       <b>String</b>
-      
-      
-        default: temperature
-      
-        <p class="scene-class-attr-comment">The name of the emission grid. If multiple grids have the same name, only the first grid with that name will be loaded. If a vdb file has multiple grids with the same name, you may use a suffix index to pick which grid to load, e.g. "emission[3]". The index must be in [] brackets.</p>
-      
+      default: temperature
+      <p class="scene-class-comments">The name of the emission grid. If multiple grids have the same name, only the first grid with that name will be loaded. If a vdb file has multiple grids with the same name, you may use a suffix index to pick which grid to load, e.g. "emission[3]". The index must be in [] brackets.</p>
     </p>
-    
     <h3>emission_sample_rate</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 1.0
-      
-        <p class="scene-class-attr-comment">the relative scale of input emission grid resolution. Lower value has lower memory overhead and faster render time, with the cost of lower fidelity of emission shape and illumination</p>
-      
+      default: 1.0
+      <p class="scene-class-comments">the relative scale of input emission grid resolution. Lower value has lower memory overhead and faster render time, with the cost of lower fidelity of emission shape and illumination</p>
     </p>
-    
     <h3>interpolation</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | nearest neighbor = 0
-        
           | linear = 1 (default)
-        
           | quadratic = 2
-        
-      
-        <p class="scene-class-attr-comment">the voxel interpolation to use when sampling the volume data</p>
-      
+      <p class="scene-class-comments">the voxel interpolation to use when sampling the volume data</p>
     </p>
-    
     <h3>label</h3>
-    <p>
+    <p class="scene-class-type">
       <b>String</b>
-      
-      
-        default: 
-      
-        <p class="scene-class-attr-comment">label used in material aov expresssions</p>
-      
+      default: 
+      <p class="scene-class-comments">label used in material aov expresssions</p>
     </p>
-    
     <h3>model</h3>
-    <p>
-      <b>String</b>
-      <i>filename</i>
-      
-        default: 
-      
-        <p class="scene-class-attr-comment">filename that points to a VDB file</p>
-      
+    <p class="scene-class-type">
+      <b>String</b> <i>filename</i>
+      default: 
+      <p class="scene-class-comments">filename that points to a VDB file</p>
     </p>
-    
     <h3>node_xform</h3>
-    <p>
-      <b>Mat4d</b>
-      <i>blurrable</i>
-      
-        default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
-      
-        <p class="scene-class-attr-missing">No documentation available</p>
-      
+    <p class="scene-class-type">
+      <b>Mat4d</b> <i>blurrable</i>
+      default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>ray_epsilon</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 0.0
-      
-        <p class="scene-class-attr-comment">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
-      
+      default: 0.0
+      <p class="scene-class-comments">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
     </p>
-    
     <h3>references</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Geometry Vector</b>
-      
-      
-        default: []
-      
-        <p class="scene-class-attr-comment">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
-      
+      default: []
+      <p class="scene-class-comments">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
     </p>
-    
     <h3>reverse_normals</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: False
-      
-        <p class="scene-class-attr-comment">enable to reverse the normals in the geometry</p>
-      
+      default: False
+      <p class="scene-class-comments">enable to reverse the normals in the geometry</p>
     </p>
-    
     <h3>shadow_exclusion_mappings</h3>
-    <p>
+    <p class="scene-class-type">
       <b>String</b>
-      
-      
-        default: 
-      
-        <p class="scene-class-attr-comment">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
-      
+      default: 
+      <p class="scene-class-comments">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
     </p>
-    
     <h3>shadow_ray_epsilon</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 0.0
-      
-        <p class="scene-class-attr-comment">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
-      
+      default: 0.0
+      <p class="scene-class-comments">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
     </p>
-    
     <h3>shadow_receiver_label</h3>
-    <p>
+    <p class="scene-class-type">
       <b>String</b>
-      
-      
-        default: 
-      
-        <p class="scene-class-attr-comment">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
-      
+      default: 
+      <p class="scene-class-comments">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
     </p>
-    
     <h3>side_type</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | force two-sided = 0 (default)
-        
           | force single-sided = 1
-        
           | use mesh sidedness = 2
-        
-      
-        <p class="scene-class-attr-comment">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
-      
+      <p class="scene-class-comments">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
     </p>
-    
     <h3>static</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: True
-      
-        <p class="scene-class-attr-comment">disable if the geometry will be updated between frames</p>
-      
+      default: True
+      <p class="scene-class-comments">disable if the geometry will be updated between frames</p>
     </p>
-    
     <h3>velocity_grid</h3>
-    <p>
+    <p class="scene-class-type">
       <b>String</b>
-      
-      
-        default: v
-      
-        <p class="scene-class-attr-comment">the name of vector grid representing the velocity field. Usually named "v" or "vel" in simulation export. If multiple velocity grids have the same name, only the first grid with that name will be loaded. If a vdb file has multiple grids with the same name, you may use a suffix index to pick which grid to load, e.g. "v[3]". The index must be in [] brackets. The index can be different from the index on the "density_grid".</p>
-      
+      default: v
+      <p class="scene-class-comments">the name of vector grid representing the velocity field. Usually named "v" or "vel" in simulation export. If multiple velocity grids have the same name, only the first grid with that name will be loaded. If a vdb file has multiple grids with the same name, you may use a suffix index to pick which grid to load, e.g. "v[3]". The index must be in [] brackets. The index can be different from the index on the "density_grid".</p>
     </p>
-    
     <h3>velocity_sample_rate</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 0.20000000298
-      
-        <p class="scene-class-attr-comment">the relative scale of input velocity grid resolution. Lower value has lower memory overhead and lower fidelity of motion blur effect, which is sometimes desired for artistic reasons</p>
-      
+      default: 0.20000000298
+      <p class="scene-class-comments">the relative scale of input velocity grid resolution. Lower value has lower memory overhead and lower fidelity of motion blur effect, which is sometimes desired for artistic reasons</p>
     </p>
-    
     <h3>velocity_scale</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 1.0
-      
-        <p class="scene-class-attr-comment">A scale factor for the velocity field. A value of 0 disables motion blur.</p>
-      
+      default: 1.0
+      <p class="scene-class-comments">A scale factor for the velocity field. A value of 0 disables motion blur.</p>
     </p>
-    
     <h3>visible_diffuse_reflection</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: True
-      
-        <p class="scene-class-attr-comment">whether the geometry is visible in diffuse reflection</p>
-      
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in diffuse reflection</p>
     </p>
-    
     <h3>visible_diffuse_transmission</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: True
-      
-        <p class="scene-class-attr-comment">whether the geometry is visible in diffuse transmission</p>
-      
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in diffuse transmission</p>
     </p>
-    
     <h3>visible_glossy_reflection</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: True
-      
-        <p class="scene-class-attr-comment">whether the geometry is visible in glossy reflection.</p>
-      
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in glossy reflection.</p>
     </p>
-    
     <h3>visible_glossy_transmission</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: True
-      
-        <p class="scene-class-attr-comment">whether the geometry is visible in glossy transmission (refraction).</p>
-      
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in glossy transmission (refraction).</p>
     </p>
-    
     <h3>visible_in_camera</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: True
-      
-        <p class="scene-class-attr-comment">whether the geometry is visible to camera rays</p>
-      
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible to camera rays</p>
     </p>
-    
     <h3>visible_mirror_reflection</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: True
-      
-        <p class="scene-class-attr-comment">whether the geometry is visible in miror reflection.</p>
-      
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in miror reflection.</p>
     </p>
-    
     <h3>visible_mirror_transmission</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: True
-      
-        <p class="scene-class-attr-comment">whether the geometry is visible in miror transmission (refraction).</p>
-      
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in miror transmission (refraction).</p>
     </p>
-    
     <h3>visible_shadow</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: True
-      
-        <p class="scene-class-attr-comment">whether the geometry casts shadows</p>
-      
+      default: True
+      <p class="scene-class-comments">whether the geometry casts shadows</p>
     </p>
-    
     <h3>visible_volume</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: True
-      
-        <p class="scene-class-attr-comment">whether the geometry is visible in indirect volume rays</p>
-      
+      default: True
+      <p class="scene-class-comments">whether the geometry is visible in indirect volume rays</p>
     </p>
-    
   </p>
 </details>
-
+</div>

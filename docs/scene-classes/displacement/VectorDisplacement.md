@@ -8,75 +8,43 @@ title: VectorDisplacement
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # VectorDisplacement
-**ROOTSHADER SHADER DISPLACEMENT**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>bound_padding</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 0.0
-      
-        <p class="scene-class-attr-comment">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
-      
+      default: 0.0
+      <p class="scene-class-comments">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
     </p>
-    
     <h3>factor</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 1.0
-      
-        <p class="scene-class-attr-missing">No documentation available</p>
-      
+      default: 1.0
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>source_space</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | tangent = 0 (default)
-        
           | object = 1
-        
-      
-        <p class="scene-class-attr-comment">The space that the map bound to the vector parameter is in</p>
-      
+      <p class="scene-class-comments">The space that the map bound to the vector parameter is in</p>
     </p>
-    
     <h3>tangent_space_style</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | tnb = 0 (default)
-        
           | tbn = 1
-        
-      
-        <p class="scene-class-attr-comment">Controls how RGB maps to Tangent, Normal, and Bi-Normal</p>
-      
+      <p class="scene-class-comments">Controls how RGB maps to Tangent, Normal, and Bi-Normal</p>
     </p>
-    
     <h3>vector</h3>
-    <p>
-      <b>Vec3f</b>
-      <i>bindable</i>
-      
-        default: [ 0, 0, 0 ]
-      
-        <p class="scene-class-attr-missing">No documentation available</p>
-      
+    <p class="scene-class-type">
+      <b>Vec3f</b> <i>bindable</i>
+      default: [ 0, 0, 0 ]
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
   </p>
 </details>
-
+</div>

@@ -8,93 +8,53 @@ title: UVTransformMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # UVTransformMap
-**MAP SHADER**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>offset</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Vec2f</b>
-      
-      
-        default: [ 0, 0 ]
-      
-        <p class="scene-class-attr-missing">No documentation available</p>
-      
+      default: [ 0, 0 ]
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>rotation_angle</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Float</b>
-      
-      
-        default: 0.0
-      
-        <p class="scene-class-attr-comment">Rotation in degrees</p>
-      
+      default: 0.0
+      <p class="scene-class-comments">Rotation in degrees</p>
     </p>
-    
     <h3>rotation_axis</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Vec3f</b>
-      
-      
-        default: [ 0, 0, 1 ]
-      
-        <p class="scene-class-attr-comment">Axis in which to rotate (only for 3D spaces)</p>
-      
+      default: [ 0, 0, 1 ]
+      <p class="scene-class-comments">Axis in which to rotate (only for 3D spaces)</p>
     </p>
-    
     <h3>rotation_center</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Vec2f</b>
-      
-      
-        default: [ 0.5, 0.5 ]
-      
-        <p class="scene-class-attr-comment">UV coordinate around which to rotate</p>
-      
+      default: [ 0.5, 0.5 ]
+      <p class="scene-class-comments">UV coordinate around which to rotate</p>
     </p>
-    
     <h3>scale</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Vec2f</b>
-      
-      
-        default: [ 1, 1 ]
-      
-        <p class="scene-class-attr-missing">No documentation available</p>
-      
+      default: [ 1, 1 ]
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
     <h3>space</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | render = 0
-        
           | camera = 1
-        
           | world = 2
-        
           | screen = 3
-        
           | object = 4
-        
           | reference = 5
-        
           | texture = 6 (default)
-        
-      
-        <p class="scene-class-attr-missing">No documentation available</p>
-      
+      <p class="scene-class-no-doc">No documentation available</p>
     </p>
-    
   </p>
 </details>
-
+</div>

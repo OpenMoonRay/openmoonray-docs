@@ -8,47 +8,29 @@ title: UsdPrimvarReader_float2
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # UsdPrimvarReader_float2
-**MAP SHADER**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>fallback</h3>
-    <p>
-      <b>Vec2f</b>
-      <i>bindable</i>
-      
-        default: [ 0, 0 ]
-      
-        <p class="scene-class-attr-comment">fallback value to be returned if geometry fetch failed.</p>
-      
+    <p class="scene-class-type">
+      <b>Vec2f</b> <i>bindable</i>
+      default: [ 0, 0 ]
+      <p class="scene-class-comments">fallback value to be returned if geometry fetch failed.</p>
     </p>
-    
     <h3>varname</h3>
-    <p>
+    <p class="scene-class-type">
       <b>String</b>
-      
-      
-        default: 
-      
-        <p class="scene-class-attr-comment">Name of the primvar to be read from the mesh</p>
-      
+      default: 
+      <p class="scene-class-comments">Name of the primvar to be read from the mesh</p>
     </p>
-    
     <h3>warn_when_unavailable</h3>
-    <p>
+    <p class="scene-class-type">
       <b>Bool</b>
-      
-      
-        default: False
-      
-        <p class="scene-class-attr-comment">Whether or not to issue a warning when the requested attribute is unavailable</p>
-      
+      default: False
+      <p class="scene-class-comments">Whether or not to issue a warning when the requested attribute is unavailable</p>
     </p>
-    
   </p>
 </details>
-
+</div>

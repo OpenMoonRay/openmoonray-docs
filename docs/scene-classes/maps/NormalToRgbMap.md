@@ -8,25 +8,17 @@ title: NormalToRgbMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # NormalToRgbMap
-**MAP SHADER**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>input</h3>
-    <p>
+    <p class="scene-class-type">
       <b>33554432</b>
-      
-      
-        default: None
-      
-        <p class="scene-class-attr-comment">Input normal map to convert to a color</p>
-      
+      default: None
+      <p class="scene-class-comments">Input normal map to convert to a color</p>
     </p>
-    
   </p>
 </details>
-
+</div>

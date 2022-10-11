@@ -8,101 +8,56 @@ title: AxisAngleMap
 # last-modified-date: 2025-02-14 00:00:00 +0000
 ---
 # AxisAngleMap
-**MAP SHADER**
-
 ---
-
+<div class="scene-class">
 <details open>
-  <summary class="scene-class-attr-group">General attributes</summary>
+  <summary>General attributes</summary>
   <p>
-    
     <h3>angle</h3>
-    <p>
-      <b>Float</b>
-      <i>bindable</i>
-      
-        default: 0.0
-      
-        <p class="scene-class-attr-comment">the angle of rotation in degrees</p>
-      
+    <p class="scene-class-type">
+      <b>Float</b> <i>bindable</i>
+      default: 0.0
+      <p class="scene-class-comments">the angle of rotation in degrees</p>
     </p>
-    
     <h3>axis_space</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | world = 2 (default)
-        
           | object = 4
-        
-      
-        <p class="scene-class-attr-comment">the space of the axis to rotate about</p>
-      
+      <p class="scene-class-comments">the space of the axis to rotate about</p>
     </p>
-    
     <h3>input_space</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | render = 0 (default)
-        
           | camera = 1
-        
           | world = 2
-        
           | screen = 3
-        
           | object = 4
-        
-      
-        <p class="scene-class-attr-comment">the space to transform from</p>
-      
+      <p class="scene-class-comments">the space to transform from</p>
     </p>
-    
     <h3>input_vector</h3>
-    <p>
-      <b>Vec3f</b>
-      <i>bindable</i>
-      
-        default: [ 0, 0, 1 ]
-      
-        <p class="scene-class-attr-comment">input vector to be rotated</p>
-      
+    <p class="scene-class-type">
+      <b>Vec3f</b> <i>bindable</i>
+      default: [ 0, 0, 1 ]
+      <p class="scene-class-comments">input vector to be rotated</p>
     </p>
-    
     <h3>output_space</h3>
-    <p>
-      <b>Int</b>
-      <i>enum</i>
-      
+    <p class="scene-class-type">
+      <b>Int</b> <i>enum</i>
           | render = 0 (default)
-        
           | camera = 1
-        
           | world = 2
-        
           | screen = 3
-        
           | object = 4
-        
-      
-        <p class="scene-class-attr-comment">the space to transform the resulting vector to</p>
-      
+      <p class="scene-class-comments">the space to transform the resulting vector to</p>
     </p>
-    
     <h3>rotation_axis</h3>
-    <p>
-      <b>Vec3f</b>
-      <i>bindable</i>
-      
-        default: [ 0, 1, 0 ]
-      
-        <p class="scene-class-attr-comment">axis to be rotated around</p>
-      
+    <p class="scene-class-type">
+      <b>Vec3f</b> <i>bindable</i>
+      default: [ 0, 1, 0 ]
+      <p class="scene-class-comments">axis to be rotated around</p>
     </p>
-    
   </p>
 </details>
-
+</div>
