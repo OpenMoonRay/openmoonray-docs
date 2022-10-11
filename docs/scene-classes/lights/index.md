@@ -9,14 +9,14 @@ maths: 1
 Lights in MoonRay are not treated as solid objects, but rather as abstract entities that inject light into the scene. (Note that it is possible to assign an emissive material to a geoemtry object as another way to illuminate a scene. However, we are not referring to that kind of setup when we talk about lights.)
 
 There are 8 types of light supported in MoonRay:
-* [CylinderLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/CylinderLight.md)
-* [DiskLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/DiskLight.md)
-* [DistantLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/DistantLight.md)
-* [EnvLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/EnvLight.md)
-* [MeshLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/MeshLight.md)
-* [RectLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/Light.md)
-* [SphereLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/Light.md)
-* [SpotLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/Light.md)
+* [CylinderLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/CylinderLight)
+* [DiskLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/DiskLight)
+* [DistantLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/DistantLight)
+* [EnvLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/EnvLight)
+* [MeshLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/MeshLight)
+* [RectLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/Light)
+* [SphereLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/Light)
+* [SpotLight](https://github.com/dreamworksanimation/manhattan/blob/main/docs/moonray/lights/Light)
 
 Two of the light types - DistantLight and EnvLight - are treated as having their illuminating surface at infinity. The remaining six types are considered local lights in the sense that their 3D positions are determined by spatial coordinates (for instance, a SphereLight is positioned by setting its *center* attribute).
 
