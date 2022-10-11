@@ -13,7 +13,7 @@ title: UVTransformMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>offset</h3>
@@ -23,7 +23,7 @@ title: UVTransformMap
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: UVTransformMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Rotation in degrees</p>
+        <p class="scene-class-attr-comment">Rotation in degrees</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: UVTransformMap
       
         default: [ 0, 0, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Axis in which to rotate (only for 3D spaces)</p>
+        <p class="scene-class-attr-comment">Axis in which to rotate (only for 3D spaces)</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: UVTransformMap
       
         default: [ 0.5, 0.5 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">UV coordinate around which to rotate</p>
+        <p class="scene-class-attr-comment">UV coordinate around which to rotate</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: UVTransformMap
       
         default: [ 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -91,7 +91,7 @@ title: UVTransformMap
           | texture = 6 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

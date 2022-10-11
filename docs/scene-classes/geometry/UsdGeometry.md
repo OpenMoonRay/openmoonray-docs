@@ -13,7 +13,7 @@ title: UsdGeometry
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Curve attributes</summary>
+  <summary class="scene-class-attr-group">Curve attributes</summary>
   <p>
     
     <h3>tessellation_rate</h3>
@@ -23,7 +23,7 @@ title: UsdGeometry
       
         default: 4
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Number of segments to split curve spans into</p>
+        <p class="scene-class-attr-comment">Number of segments to split curve spans into</p>
       
     </p>
     
@@ -32,7 +32,7 @@ title: UsdGeometry
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>adaptive_error</h3>
@@ -42,7 +42,7 @@ title: UsdGeometry
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.</p>
+        <p class="scene-class-attr-comment">the maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.</p>
       
     </p>
     
@@ -53,7 +53,7 @@ title: UsdGeometry
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Multiplier for the radius of the base of curves</p>
+        <p class="scene-class-attr-comment">Multiplier for the radius of the base of curves</p>
       
     </p>
     
@@ -64,7 +64,7 @@ title: UsdGeometry
       
         default: 10
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Number of time samples generated along each curve when using curved motion blur</p>
+        <p class="scene-class-attr-comment">Number of time samples generated along each curve when using curved motion blur</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: UsdGeometry
           | round = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Curves subtype is ray facing or round</p>
+        <p class="scene-class-attr-comment">Curves subtype is ray facing or round</p>
       
     </p>
     
@@ -89,7 +89,7 @@ title: UsdGeometry
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">evaluate geometry at specified frame instead of SceneVariables frame<br></p>
+        <p class="scene-class-attr-comment">evaluate geometry at specified frame instead of SceneVariables frame<br></p>
       
     </p>
     
@@ -100,7 +100,7 @@ title: UsdGeometry
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material aov expresssions</p>
+        <p class="scene-class-attr-comment">label used in material aov expresssions</p>
       
     </p>
     
@@ -111,7 +111,7 @@ title: UsdGeometry
       
         default: 2.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The maximum resolution to tessellate a mesh. An edge on input face will be tessellated to at most n segments when "mesh resolution" is set to n. If "adaptive error" is set to 0, every edge on input face will be uniformly tessellated to "mesh resolution". Otherwise renderer will adaptively tessellate mesh based on camera information</p>
+        <p class="scene-class-attr-comment">The maximum resolution to tessellate a mesh. An edge on input face will be tessellated to at most n segments when "mesh resolution" is set to n. If "adaptive error" is set to 0, every edge on input face will be uniformly tessellated to "mesh resolution". Otherwise renderer will adaptively tessellate mesh based on camera information</p>
       
     </p>
     
@@ -133,7 +133,7 @@ title: UsdGeometry
           | hermite = 4
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
+        <p class="scene-class-attr-comment">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
       
     </p>
     
@@ -144,7 +144,7 @@ title: UsdGeometry
       
         default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -155,7 +155,7 @@ title: UsdGeometry
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Ordered list of part names</p>
+        <p class="scene-class-attr-comment">Ordered list of part names</p>
       
     </p>
     
@@ -166,7 +166,7 @@ title: UsdGeometry
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The geometry Prim to load from the USD Stage<br></p>
+        <p class="scene-class-attr-comment">The geometry Prim to load from the USD Stage<br></p>
       
     </p>
     
@@ -182,7 +182,7 @@ title: UsdGeometry
           | both motion steps = 2 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Which frame(s) do we take the primitive attributes from?<br>&emsp;O : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
+        <p class="scene-class-attr-comment">Which frame(s) do we take the primitive attributes from?<br>&emsp;O : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
       
     </p>
     
@@ -193,7 +193,7 @@ title: UsdGeometry
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">A list of UserData to specify arbitrary primitive attributes</p>
+        <p class="scene-class-attr-comment">A list of UserData to specify arbitrary primitive attributes</p>
       
     </p>
     
@@ -204,7 +204,7 @@ title: UsdGeometry
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">radius multiplier for points and curves</p>
+        <p class="scene-class-attr-comment">radius multiplier for points and curves</p>
       
     </p>
     
@@ -215,7 +215,7 @@ title: UsdGeometry
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
+        <p class="scene-class-attr-comment">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
       
     </p>
     
@@ -226,7 +226,7 @@ title: UsdGeometry
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
+        <p class="scene-class-attr-comment">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
       
     </p>
     
@@ -237,7 +237,7 @@ title: UsdGeometry
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enable to reverse the normals in the geometry</p>
+        <p class="scene-class-attr-comment">enable to reverse the normals in the geometry</p>
       
     </p>
     
@@ -248,7 +248,7 @@ title: UsdGeometry
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
+        <p class="scene-class-attr-comment">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
       
     </p>
     
@@ -259,7 +259,7 @@ title: UsdGeometry
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
+        <p class="scene-class-attr-comment">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
       
     </p>
     
@@ -270,7 +270,7 @@ title: UsdGeometry
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
+        <p class="scene-class-attr-comment">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
       
     </p>
     
@@ -286,7 +286,7 @@ title: UsdGeometry
           | use mesh sidedness = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
+        <p class="scene-class-attr-comment">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       
     </p>
     
@@ -297,7 +297,7 @@ title: UsdGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">generate smooth shading normal when rendering PolygonMesh and the mesh doesn't provide shading normal itself</p>
+        <p class="scene-class-attr-comment">generate smooth shading normal when rendering PolygonMesh and the mesh doesn't provide shading normal itself</p>
       
     </p>
     
@@ -308,7 +308,7 @@ title: UsdGeometry
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">USD Stage to load<br></p>
+        <p class="scene-class-attr-comment">USD Stage to load<br></p>
       
     </p>
     
@@ -319,7 +319,7 @@ title: UsdGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">disable if the geometry will be updated between frames</p>
+        <p class="scene-class-attr-comment">disable if the geometry will be updated between frames</p>
       
     </p>
     
@@ -335,7 +335,7 @@ title: UsdGeometry
           | force subdivision mesh = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">PolygonMesh/SubdivisionMesh prim type to create.<br>"use mesh type" will use the type the Mesh prim specifies.<br>"force polygon mesh" will always resolve to PolygonMesh.<br>"force subdivision mesh" will always resolve to SubdivisionMesh.<br></p>
+        <p class="scene-class-attr-comment">PolygonMesh/SubdivisionMesh prim type to create.<br>"use mesh type" will use the type the Mesh prim specifies.<br>"force polygon mesh" will always resolve to PolygonMesh.<br>"force subdivision mesh" will always resolve to SubdivisionMesh.<br></p>
       
     </p>
     
@@ -346,7 +346,7 @@ title: UsdGeometry
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Multiplier for the radius of the tip of curves</p>
+        <p class="scene-class-attr-comment">Multiplier for the radius of the tip of curves</p>
       
     </p>
     
@@ -357,7 +357,7 @@ title: UsdGeometry
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">uses "evaluation frame" instead of SceneVariables frame<br></p>
+        <p class="scene-class-attr-comment">uses "evaluation frame" instead of SceneVariables frame<br></p>
       
     </p>
     
@@ -368,7 +368,7 @@ title: UsdGeometry
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If the prim is an instance proxy, use the xform from the master Prim during geometry creation<br></p>
+        <p class="scene-class-attr-comment">If the prim is an instance proxy, use the xform from the master Prim during geometry creation<br></p>
       
     </p>
     
@@ -379,7 +379,7 @@ title: UsdGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Include the xform from the Prim during geometry creation<br></p>
+        <p class="scene-class-attr-comment">Include the xform from the Prim during geometry creation<br></p>
       
     </p>
     
@@ -390,7 +390,7 @@ title: UsdGeometry
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
+        <p class="scene-class-attr-comment">if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
       
     </p>
     
@@ -401,7 +401,7 @@ title: UsdGeometry
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Load the entire stage and use StageCache to share it among all UsdGeometry objects.<br>If this is false, load a stage masked to the prim path just for this UsdGeometry.<br>For large stages with thousands of unique assets, it is faster to enable the stage cache<br></p>
+        <p class="scene-class-attr-comment">Load the entire stage and use StageCache to share it among all UsdGeometry objects.<br>If this is false, load a stage masked to the prim path just for this UsdGeometry.<br>For large stages with thousands of unique assets, it is faster to enable the stage cache<br></p>
       
     </p>
     
@@ -412,7 +412,7 @@ title: UsdGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse reflection</p>
+        <p class="scene-class-attr-comment">whether the geometry is visible in diffuse reflection</p>
       
     </p>
     
@@ -423,7 +423,7 @@ title: UsdGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse transmission</p>
+        <p class="scene-class-attr-comment">whether the geometry is visible in diffuse transmission</p>
       
     </p>
     
@@ -434,7 +434,7 @@ title: UsdGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy reflection.</p>
+        <p class="scene-class-attr-comment">whether the geometry is visible in glossy reflection.</p>
       
     </p>
     
@@ -445,7 +445,7 @@ title: UsdGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy transmission (refraction).</p>
+        <p class="scene-class-attr-comment">whether the geometry is visible in glossy transmission (refraction).</p>
       
     </p>
     
@@ -456,7 +456,7 @@ title: UsdGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible to camera rays</p>
+        <p class="scene-class-attr-comment">whether the geometry is visible to camera rays</p>
       
     </p>
     
@@ -467,7 +467,7 @@ title: UsdGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror reflection.</p>
+        <p class="scene-class-attr-comment">whether the geometry is visible in miror reflection.</p>
       
     </p>
     
@@ -478,7 +478,7 @@ title: UsdGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror transmission (refraction).</p>
+        <p class="scene-class-attr-comment">whether the geometry is visible in miror transmission (refraction).</p>
       
     </p>
     
@@ -489,7 +489,7 @@ title: UsdGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry casts shadows</p>
+        <p class="scene-class-attr-comment">whether the geometry casts shadows</p>
       
     </p>
     
@@ -500,7 +500,7 @@ title: UsdGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in indirect volume rays</p>
+        <p class="scene-class-attr-comment">whether the geometry is visible in indirect volume rays</p>
       
     </p>
     

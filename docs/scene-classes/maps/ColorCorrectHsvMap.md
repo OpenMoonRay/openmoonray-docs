@@ -13,7 +13,7 @@ title: ColorCorrectHsvMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>clamp</h3>
@@ -23,7 +23,7 @@ title: ColorCorrectHsvMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">clamps output to [0,1] range</p>
+        <p class="scene-class-attr-comment">clamps output to [0,1] range</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: ColorCorrectHsvMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">shifts the hue of the input (360 rolls over back to 0)</p>
+        <p class="scene-class-attr-comment">shifts the hue of the input (360 rolls over back to 0)</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: ColorCorrectHsvMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">input color</p>
+        <p class="scene-class-attr-comment">input color</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: ColorCorrectHsvMap
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">all attributes on/off</p>
+        <p class="scene-class-attr-comment">all attributes on/off</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: ColorCorrectHsvMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">modifies the contrast of the input's saturation (-1, 1)</p>
+        <p class="scene-class-attr-comment">modifies the contrast of the input's saturation (-1, 1)</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: ColorCorrectHsvMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">multiplies the saturation of the input</p>
+        <p class="scene-class-attr-comment">multiplies the saturation of the input</p>
       
     </p>
     
@@ -89,7 +89,7 @@ title: ColorCorrectHsvMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">shifts the saturation of the input (-1, 1)</p>
+        <p class="scene-class-attr-comment">shifts the saturation of the input (-1, 1)</p>
       
     </p>
     
@@ -100,7 +100,7 @@ title: ColorCorrectHsvMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">modifies the contrast of the input's value (-1, 1)</p>
+        <p class="scene-class-attr-comment">modifies the contrast of the input's value (-1, 1)</p>
       
     </p>
     
@@ -111,7 +111,7 @@ title: ColorCorrectHsvMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">multiplies the value of the input</p>
+        <p class="scene-class-attr-comment">multiplies the value of the input</p>
       
     </p>
     
@@ -122,7 +122,7 @@ title: ColorCorrectHsvMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">shifts the value of the input (-1, 1)</p>
+        <p class="scene-class-attr-comment">shifts the value of the input (-1, 1)</p>
       
     </p>
     

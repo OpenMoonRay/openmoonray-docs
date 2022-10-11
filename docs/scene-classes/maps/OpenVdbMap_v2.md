@@ -13,7 +13,7 @@ title: OpenVdbMap_v2
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <summary class="scene-class-attr-group">Advanced attributes</summary>
   <p>
     
     <h3>show_active_field</h3>
@@ -23,7 +23,7 @@ title: OpenVdbMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When enabled active/inactive field locations will be white/black, respectively</p>
+        <p class="scene-class-attr-comment">When enabled active/inactive field locations will be white/black, respectively</p>
       
     </p>
     
@@ -32,7 +32,7 @@ title: OpenVdbMap_v2
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>default_value</h3>
@@ -42,7 +42,7 @@ title: OpenVdbMap_v2
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">A default value to use when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found</p>
+        <p class="scene-class-attr-comment">A default value to use when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found</p>
       
     </p>
     
@@ -53,7 +53,7 @@ title: OpenVdbMap_v2
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The name of the grid within the .vdb file from which to sample (hint: use openvdb_print to see contents of .vdb file). If no grid is specified, the first grid found in the .vdb will be used.  In cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])</p>
+        <p class="scene-class-attr-comment">The name of the grid within the .vdb file from which to sample (hint: use openvdb_print to see contents of .vdb file). If no grid is specified, the first grid found in the .vdb will be used.  In cases where there are multiple grids with the same name, the grid name can be indexed (eg. density[1])</p>
       
     </p>
     
@@ -64,7 +64,7 @@ title: OpenVdbMap_v2
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The world-space coordinate to use when 'texture coordinates' is set to 'input texture coordinates'</p>
+        <p class="scene-class-attr-comment">The world-space coordinate to use when 'texture coordinates' is set to 'input texture coordinates'</p>
       
     </p>
     
@@ -80,7 +80,7 @@ title: OpenVdbMap_v2
           | quadratic = 2 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The type of interpolation to use when sampling the vdb</p>
+        <p class="scene-class-attr-comment">The type of interpolation to use when sampling the vdb</p>
       
     </p>
     
@@ -91,7 +91,7 @@ title: OpenVdbMap_v2
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The OpenVdbGeometry object(s) from which to retrieve the .vdb filename and transform when 'vdb source' is set to 'from OpenVdbGeometry'</p>
+        <p class="scene-class-attr-comment">The OpenVdbGeometry object(s) from which to retrieve the .vdb filename and transform when 'vdb source' is set to 'from OpenVdbGeometry'</p>
       
     </p>
     
@@ -102,7 +102,7 @@ title: OpenVdbMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Enables a warning message when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found</p>
+        <p class="scene-class-attr-comment">Enables a warning message when A) the .vdb file is not found, B) the requested grid is not found, C) the grid is unspecified, but no grid is found</p>
       
     </p>
     
@@ -113,7 +113,7 @@ title: OpenVdbMap_v2
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment"></p>
+        <p class="scene-class-attr-comment"></p>
       
     </p>
     
@@ -129,7 +129,7 @@ title: OpenVdbMap_v2
           | input texture coordinates = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Which coordinate source to use for the texture lookup</p>
+        <p class="scene-class-attr-comment">Which coordinate source to use for the texture lookup</p>
       
     </p>
     
@@ -143,7 +143,7 @@ title: OpenVdbMap_v2
           | from OpenVdbGeometry = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Where to look for the vdb filename.  Choose 'from texture' to specify a .vdb filename directly via the 'texture' attribute.  Choose 'from OpenVdbGeometry' to use the .vdb filename and transform from an OpenVdbGeometry object in the scene using the 'openvdb geometry' attribute</p>
+        <p class="scene-class-attr-comment">Where to look for the vdb filename.  Choose 'from texture' to specify a .vdb filename directly via the 'texture' attribute.  Choose 'from OpenVdbGeometry' to use the .vdb filename and transform from an OpenVdbGeometry object in the scene using the 'openvdb geometry' attribute</p>
       
     </p>
     

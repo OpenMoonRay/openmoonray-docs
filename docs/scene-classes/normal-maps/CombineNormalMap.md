@@ -13,7 +13,7 @@ title: CombineNormalMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Normal attributes</summary>
+  <summary class="scene-class-attr-group">Normal attributes</summary>
   <p>
     
     <h3>input_1</h3>
@@ -23,7 +23,7 @@ title: CombineNormalMap
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">First normal map to combine; usually a base map</p>
+        <p class="scene-class-attr-comment">First normal map to combine; usually a base map</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: CombineNormalMap
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Second normal map to combine; usually a base map</p>
+        <p class="scene-class-attr-comment">Second normal map to combine; usually a base map</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: CombineNormalMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Amount of normal map 1 to blend in</p>
+        <p class="scene-class-attr-comment">Amount of normal map 1 to blend in</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: CombineNormalMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Amount of normal map 2 to blend in</p>
+        <p class="scene-class-attr-comment">Amount of normal map 2 to blend in</p>
       
     </p>
     

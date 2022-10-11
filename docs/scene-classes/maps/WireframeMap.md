@@ -13,7 +13,7 @@ title: WireframeMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>fill_color</h3>
@@ -23,7 +23,7 @@ title: WireframeMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: WireframeMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: WireframeMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: WireframeMap
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

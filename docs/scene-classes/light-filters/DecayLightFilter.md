@@ -13,7 +13,7 @@ title: DecayLightFilter
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Properties attributes</summary>
+  <summary class="scene-class-attr-group">Properties attributes</summary>
   <p>
     
     <h3>falloff_far</h3>
@@ -23,7 +23,7 @@ title: DecayLightFilter
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: DecayLightFilter
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: DecayLightFilter
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: DecayLightFilter
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: DecayLightFilter
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: DecayLightFilter
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -87,7 +87,7 @@ title: DecayLightFilter
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>on</h3>
@@ -97,7 +97,7 @@ title: DecayLightFilter
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

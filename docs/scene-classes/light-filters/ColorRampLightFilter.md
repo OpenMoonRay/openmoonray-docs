@@ -13,7 +13,7 @@ title: ColorRampLightFilter
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Properties attributes</summary>
+  <summary class="scene-class-attr-group">Properties attributes</summary>
   <p>
     
     <h3>begin_distance</h3>
@@ -23,7 +23,7 @@ title: ColorRampLightFilter
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: ColorRampLightFilter
       
         default: [[ 1, 1, 1 ], [ 0, 0, 0 ]]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: ColorRampLightFilter
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: ColorRampLightFilter
       
         default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: ColorRampLightFilter
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: ColorRampLightFilter
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -89,7 +89,7 @@ title: ColorRampLightFilter
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -103,7 +103,7 @@ title: ColorRampLightFilter
           | directional = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -114,7 +114,7 @@ title: ColorRampLightFilter
       
         default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -128,7 +128,7 @@ title: ColorRampLightFilter
           | mirror = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">For directional filter mode where filter uses distance along -Z axis.  Extend: f(z) = f(0) for z &gt; 0.  Mirror: f(z) = f(-z).</p>
+        <p class="scene-class-attr-comment">For directional filter mode where filter uses distance along -Z axis.  Extend: f(z) = f(0) for z &gt; 0.  Mirror: f(z) = f(-z).</p>
       
     </p>
     
@@ -137,7 +137,7 @@ title: ColorRampLightFilter
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>on</h3>
@@ -147,7 +147,7 @@ title: ColorRampLightFilter
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -158,7 +158,7 @@ title: ColorRampLightFilter
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

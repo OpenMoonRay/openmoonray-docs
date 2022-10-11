@@ -13,7 +13,7 @@ title: NormalToRgbMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>input</h3>
@@ -23,7 +23,7 @@ title: NormalToRgbMap
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Input normal map to convert to a color</p>
+        <p class="scene-class-attr-comment">Input normal map to convert to a color</p>
       
     </p>
     

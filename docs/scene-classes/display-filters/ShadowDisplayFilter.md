@@ -13,7 +13,7 @@ title: ShadowDisplayFilter
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>density</h3>
@@ -23,7 +23,7 @@ title: ShadowDisplayFilter
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Blend value between occluded and unoccluded images. 1 = completely occluded. 0 = completely unoccluded.</p>
+        <p class="scene-class-attr-comment">Blend value between occluded and unoccluded images. 1 = completely occluded. 0 = completely unoccluded.</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: ShadowDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Image Buffer representing the occluded image</p>
+        <p class="scene-class-attr-comment">Image Buffer representing the occluded image</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: ShadowDisplayFilter
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">color of the shadow</p>
+        <p class="scene-class-attr-comment">color of the shadow</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: ShadowDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Image Buffer representing the unoccluded image</p>
+        <p class="scene-class-attr-comment">Image Buffer representing the unoccluded image</p>
       
     </p>
     

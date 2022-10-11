@@ -13,7 +13,7 @@ title: LODMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>far_value</h3>
@@ -23,7 +23,7 @@ title: LODMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">value output when feature_width/camera_distance is more than or equal to stop</p>
+        <p class="scene-class-attr-comment">value output when feature_width/camera_distance is more than or equal to stop</p>
       
     </p>
     
@@ -37,7 +37,7 @@ title: LODMap
           | camera distance = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Use feature_width for LOD based on average, world-space feature-width visible in a pixel, correctly changing with resolution. Use camera_distance for LOD based on distance from render cam.</p>
+        <p class="scene-class-attr-comment">Use feature_width for LOD based on average, world-space feature-width visible in a pixel, correctly changing with resolution. Use camera_distance for LOD based on distance from render cam.</p>
       
     </p>
     
@@ -48,7 +48,7 @@ title: LODMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">value output when feature_width/camera_distance is less than or equal to start</p>
+        <p class="scene-class-attr-comment">value output when feature_width/camera_distance is less than or equal to start</p>
       
     </p>
     
@@ -59,7 +59,7 @@ title: LODMap
       
         default: 0.00999999977648
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">feature_width/camera_distance at which to start blending near_value-&gt;far_value</p>
+        <p class="scene-class-attr-comment">feature_width/camera_distance at which to start blending near_value-&gt;far_value</p>
       
     </p>
     
@@ -70,7 +70,7 @@ title: LODMap
       
         default: 0.10000000149
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">feature_width/camera_distance at which to stop blending near_value-&gt;far_value</p>
+        <p class="scene-class-attr-comment">feature_width/camera_distance at which to stop blending near_value-&gt;far_value</p>
       
     </p>
     

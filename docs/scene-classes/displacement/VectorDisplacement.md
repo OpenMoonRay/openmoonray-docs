@@ -13,7 +13,7 @@ title: VectorDisplacement
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>bound_padding</h3>
@@ -23,7 +23,7 @@ title: VectorDisplacement
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
+        <p class="scene-class-attr-comment">bound padding defines how much to extend the bounding box of the object. Keep this value as low as possible unless the geometry skips tessellation because control cage bounding box is out of camera frustum but the displacement stretch out of the original object bounding box (pre-displacement). Setting the bound padding too large will consume more memory and tessellation time.</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: VectorDisplacement
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -48,7 +48,7 @@ title: VectorDisplacement
           | object = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The space that the map bound to the vector parameter is in</p>
+        <p class="scene-class-attr-comment">The space that the map bound to the vector parameter is in</p>
       
     </p>
     
@@ -62,7 +62,7 @@ title: VectorDisplacement
           | tbn = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls how RGB maps to Tangent, Normal, and Bi-Normal</p>
+        <p class="scene-class-attr-comment">Controls how RGB maps to Tangent, Normal, and Bi-Normal</p>
       
     </p>
     
@@ -73,7 +73,7 @@ title: VectorDisplacement
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

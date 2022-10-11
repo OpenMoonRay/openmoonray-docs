@@ -13,7 +13,7 @@ title: MeasuredMaterial
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Diffuse attributes</summary>
+  <summary class="scene-class-attr-group">Diffuse attributes</summary>
   <p>
     
     <h3>diffuse</h3>
@@ -23,7 +23,7 @@ title: MeasuredMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: MeasuredMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: MeasuredMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: MeasuredMaterial
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: MeasuredMaterial
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: MeasuredMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -87,7 +87,7 @@ title: MeasuredMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Specular attributes</summary>
+  <summary class="scene-class-attr-group">Specular attributes</summary>
   <p>
     
     <h3>specular</h3>
@@ -97,7 +97,7 @@ title: MeasuredMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -108,7 +108,7 @@ title: MeasuredMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -119,7 +119,7 @@ title: MeasuredMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -130,7 +130,7 @@ title: MeasuredMaterial
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -141,7 +141,7 @@ title: MeasuredMaterial
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -152,7 +152,7 @@ title: MeasuredMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -161,7 +161,7 @@ title: MeasuredMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>anisotropic_direction</h3>
@@ -171,7 +171,7 @@ title: MeasuredMaterial
       
         default: [ 1, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -182,7 +182,7 @@ title: MeasuredMaterial
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -193,7 +193,7 @@ title: MeasuredMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+        <p class="scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       
     </p>
     
@@ -204,7 +204,7 @@ title: MeasuredMaterial
       
         default: [ 0, 0, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -215,7 +215,7 @@ title: MeasuredMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -226,7 +226,7 @@ title: MeasuredMaterial
       
         default: 0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -237,7 +237,7 @@ title: MeasuredMaterial
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
+        <p class="scene-class-attr-comment">label used in material and light aovs</p>
       
     </p>
     
@@ -248,7 +248,7 @@ title: MeasuredMaterial
       
         default: 0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+        <p class="scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       
     </p>
     

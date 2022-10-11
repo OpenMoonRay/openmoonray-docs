@@ -13,7 +13,7 @@ title: VdbVolume
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Optical Properties attributes</summary>
+  <summary class="scene-class-attr-group">Optical Properties attributes</summary>
   <p>
     
     <h3>anisotropy</h3>
@@ -23,7 +23,7 @@ title: VdbVolume
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Value in the interval [-1,1] that defines how foward (1) or backward (-1) scattering the volume is. 0.0 is isotropic.</p>
+        <p class="scene-class-attr-comment">Value in the interval [-1,1] that defines how foward (1) or backward (-1) scattering the volume is. 0.0 is isotropic.</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: VdbVolume
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">A multiplier further applied to the color.</p>
+        <p class="scene-class-attr-comment">A multiplier further applied to the color.</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: VdbVolume
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">A multiplier further applied to the incandescence gain.</p>
+        <p class="scene-class-attr-comment">A multiplier further applied to the incandescence gain.</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: VdbVolume
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">A multiplier further applied to the opacity gain.</p>
+        <p class="scene-class-attr-comment">A multiplier further applied to the opacity gain.</p>
       
     </p>
     
@@ -65,7 +65,7 @@ title: VdbVolume
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>bake_divisions</h3>
@@ -75,7 +75,7 @@ title: VdbVolume
       
         default: 100
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Divide widest axis by this many divisions</p>
+        <p class="scene-class-attr-comment">Divide widest axis by this many divisions</p>
       
     </p>
     
@@ -91,7 +91,7 @@ title: VdbVolume
           | voxel size = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Toggle method to specify grid resolution of baked density grid.<br>&emsp;&emsp;default: for shaders that are bound to vdb volumes, use vdb resolution. For shaders that are bounds to mesh geometriesuse 100 divisions<br>&emsp;&emsp;divisions: specify number of divisions.<br>&emsp;&emsp;voxel size: specify voxel size.</p>
+        <p class="scene-class-attr-comment">Toggle method to specify grid resolution of baked density grid.<br>&emsp;&emsp;default: for shaders that are bound to vdb volumes, use vdb resolution. For shaders that are bounds to mesh geometriesuse 100 divisions<br>&emsp;&emsp;divisions: specify number of divisions.<br>&emsp;&emsp;voxel size: specify voxel size.</p>
       
     </p>
     
@@ -102,7 +102,7 @@ title: VdbVolume
       
         default: 10.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Size of voxel in world space</p>
+        <p class="scene-class-attr-comment">Size of voxel in world space</p>
       
     </p>
     
@@ -113,7 +113,7 @@ title: VdbVolume
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in light aovs</p>
+        <p class="scene-class-attr-comment">label used in light aovs</p>
       
     </p>
     
@@ -124,7 +124,7 @@ title: VdbVolume
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Accumulated opacity that's considered the 'surface' for computing surface position and Z</p>
+        <p class="scene-class-attr-comment">Accumulated opacity that's considered the 'surface' for computing surface position and Z</p>
       
     </p>
     

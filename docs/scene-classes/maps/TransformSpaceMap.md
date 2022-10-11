@@ -13,7 +13,7 @@ title: TransformSpaceMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>camera</h3>
@@ -23,7 +23,7 @@ title: TransformSpaceMap
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">an alternate camera to use when transforming to/from 'camera' space</p>
+        <p class="scene-class-attr-comment">an alternate camera to use when transforming to/from 'camera' space</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: TransformSpaceMap
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When true, instance level transforms below the specified one are concatenated otherwise only the selected level's transform is used</p>
+        <p class="scene-class-attr-comment">When true, instance level transforms below the specified one are concatenated otherwise only the selected level's transform is used</p>
       
     </p>
     
@@ -68,7 +68,7 @@ title: TransformSpaceMap
           | instance level 4 = 11
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the space to transform from</p>
+        <p class="scene-class-attr-comment">the space to transform from</p>
       
     </p>
     
@@ -79,7 +79,7 @@ title: TransformSpaceMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the input value to transform</p>
+        <p class="scene-class-attr-comment">the input value to transform</p>
       
     </p>
     
@@ -95,7 +95,7 @@ title: TransformSpaceMap
           | normal = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the type of input value provided</p>
+        <p class="scene-class-attr-comment">the type of input value provided</p>
       
     </p>
     
@@ -106,7 +106,7 @@ title: TransformSpaceMap
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">an alternate object to use when transforming to/from 'object' space</p>
+        <p class="scene-class-attr-comment">an alternate object to use when transforming to/from 'object' space</p>
       
     </p>
     
@@ -140,7 +140,7 @@ title: TransformSpaceMap
           | instance object transform = 11
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the space to transform to</p>
+        <p class="scene-class-attr-comment">the space to transform to</p>
       
     </p>
     
@@ -151,7 +151,7 @@ title: TransformSpaceMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">used to apply non-uniform scaling to projection</p>
+        <p class="scene-class-attr-comment">used to apply non-uniform scaling to projection</p>
       
     </p>
     
@@ -162,7 +162,7 @@ title: TransformSpaceMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">maximum projected x coordinate</p>
+        <p class="scene-class-attr-comment">maximum projected x coordinate</p>
       
     </p>
     
@@ -173,7 +173,7 @@ title: TransformSpaceMap
       
         default: -1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">minimum projected x coordinate</p>
+        <p class="scene-class-attr-comment">minimum projected x coordinate</p>
       
     </p>
     
@@ -184,7 +184,7 @@ title: TransformSpaceMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">maximum projected y coordinate</p>
+        <p class="scene-class-attr-comment">maximum projected y coordinate</p>
       
     </p>
     
@@ -195,7 +195,7 @@ title: TransformSpaceMap
       
         default: -1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">minimum projected y coordinate</p>
+        <p class="scene-class-attr-comment">minimum projected y coordinate</p>
       
     </p>
     

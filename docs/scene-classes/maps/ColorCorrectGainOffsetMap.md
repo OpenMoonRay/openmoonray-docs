@@ -13,7 +13,7 @@ title: ColorCorrectGainOffsetMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>gain</h3>
@@ -23,7 +23,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">multiplies the input channels by the specified values</p>
+        <p class="scene-class-attr-comment">multiplies the input channels by the specified values</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">multiplies the blue channel by the specified values</p>
+        <p class="scene-class-attr-comment">multiplies the blue channel by the specified values</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">multiplies the green channel by the specified values</p>
+        <p class="scene-class-attr-comment">multiplies the green channel by the specified values</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">multiplies the red channel by the specified values</p>
+        <p class="scene-class-attr-comment">multiplies the red channel by the specified values</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: ColorCorrectGainOffsetMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
+        <p class="scene-class-attr-comment">bind the input here</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">how much of the overall color correct to mix in</p>
+        <p class="scene-class-attr-comment">how much of the overall color correct to mix in</p>
       
     </p>
     
@@ -89,7 +89,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">adds the specified values to the input</p>
+        <p class="scene-class-attr-comment">adds the specified values to the input</p>
       
     </p>
     
@@ -100,7 +100,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">adds the specified values to the blue channel</p>
+        <p class="scene-class-attr-comment">adds the specified values to the blue channel</p>
       
     </p>
     
@@ -111,7 +111,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">adds the specified values to the green channel</p>
+        <p class="scene-class-attr-comment">adds the specified values to the green channel</p>
       
     </p>
     
@@ -122,7 +122,7 @@ title: ColorCorrectGainOffsetMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">adds the specified values to the red channel</p>
+        <p class="scene-class-attr-comment">adds the specified values to the red channel</p>
       
     </p>
     
@@ -133,7 +133,7 @@ title: ColorCorrectGainOffsetMap
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables all color correct operations</p>
+        <p class="scene-class-attr-comment">enables/disables all color correct operations</p>
       
     </p>
     
@@ -144,7 +144,7 @@ title: ColorCorrectGainOffsetMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables separate RGB controls for gain and offset</p>
+        <p class="scene-class-attr-comment">enables separate RGB controls for gain and offset</p>
       
     </p>
     

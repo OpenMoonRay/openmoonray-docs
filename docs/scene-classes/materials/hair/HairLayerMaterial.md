@@ -13,7 +13,7 @@ title: HairLayerMaterial
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <summary class="scene-class-attr-group">Advanced attributes</summary>
   <p>
     
     <h3>blend_color_space</h3>
@@ -28,7 +28,7 @@ title: HairLayerMaterial
           | HSL = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Color space used when blending the two material's color parameters</p>
+        <p class="scene-class-attr-comment">Color space used when blending the two material's color parameters</p>
       
     </p>
     
@@ -42,7 +42,7 @@ title: HairLayerMaterial
           | dipole = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If child materials disagree on the type of bssrdf, this type will be used instead.</p>
+        <p class="scene-class-attr-comment">If child materials disagree on the type of bssrdf, this type will be used instead.</p>
       
     </p>
     
@@ -51,7 +51,7 @@ title: HairLayerMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>extra_aovs</h3>
@@ -61,7 +61,7 @@ title: HairLayerMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+        <p class="scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       
     </p>
     
@@ -72,7 +72,7 @@ title: HairLayerMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">foreground hair material</p>
+        <p class="scene-class-attr-comment">foreground hair material</p>
       
     </p>
     
@@ -83,7 +83,7 @@ title: HairLayerMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">background hair material</p>
+        <p class="scene-class-attr-comment">background hair material</p>
       
     </p>
     
@@ -94,7 +94,7 @@ title: HairLayerMaterial
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
+        <p class="scene-class-attr-comment">label used in material and light aovs</p>
       
     </p>
     
@@ -105,7 +105,7 @@ title: HairLayerMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">foreground hair material weight</p>
+        <p class="scene-class-attr-comment">foreground hair material weight</p>
       
     </p>
     
@@ -116,7 +116,7 @@ title: HairLayerMaterial
       
         default: 0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+        <p class="scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       
     </p>
     

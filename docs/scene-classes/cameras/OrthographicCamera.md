@@ -13,7 +13,7 @@ title: OrthographicCamera
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Depth of Field attributes</summary>
+  <summary class="scene-class-attr-group">Depth of Field attributes</summary>
   <p>
     
     <h3>bokeh</h3>
@@ -23,7 +23,7 @@ title: OrthographicCamera
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Enable Bokeh. Requires DOF to be enabled.</p>
+        <p class="scene-class-attr-comment">Enable Bokeh. Requires DOF to be enabled.</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: OrthographicCamera
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Angle of iris rotation</p>
+        <p class="scene-class-attr-comment">Angle of iris rotation</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: OrthographicCamera
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Path to image file to be used for the iris</p>
+        <p class="scene-class-attr-comment">Path to image file to be used for the iris</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: OrthographicCamera
       
         default: 0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Number of sides of the iris. Specifying less than 3 sides will default to a disk.</p>
+        <p class="scene-class-attr-comment">Number of sides of the iris. Specifying less than 3 sides will default to a disk.</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: OrthographicCamera
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Distance from the origin of Bokeh shape</p>
+        <p class="scene-class-attr-comment">Distance from the origin of Bokeh shape</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: OrthographicCamera
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls the strength of weights as samples approach the weight location</p>
+        <p class="scene-class-attr-comment">Controls the strength of weights as samples approach the weight location</p>
       
     </p>
     
@@ -89,7 +89,7 @@ title: OrthographicCamera
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -100,7 +100,7 @@ title: OrthographicCamera
       
         default: 8.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -111,7 +111,7 @@ title: OrthographicCamera
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -120,7 +120,7 @@ title: OrthographicCamera
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Frustum attributes</summary>
+  <summary class="scene-class-attr-group">Frustum attributes</summary>
   <p>
     
     <h3>far</h3>
@@ -130,7 +130,7 @@ title: OrthographicCamera
       
         default: 10000.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -141,7 +141,7 @@ title: OrthographicCamera
       
         default: 24.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -152,7 +152,7 @@ title: OrthographicCamera
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -163,7 +163,7 @@ title: OrthographicCamera
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -174,7 +174,7 @@ title: OrthographicCamera
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">ratio of pixel size y / x</p>
+        <p class="scene-class-attr-comment">ratio of pixel size y / x</p>
       
     </p>
     
@@ -185,7 +185,7 @@ title: OrthographicCamera
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -194,7 +194,7 @@ title: OrthographicCamera
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Motion Blur attributes</summary>
+  <summary class="scene-class-attr-group">Motion Blur attributes</summary>
   <p>
     
     <h3>mb_shutter_bias</h3>
@@ -204,7 +204,7 @@ title: OrthographicCamera
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -215,7 +215,7 @@ title: OrthographicCamera
       
         default: 0.25
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -226,7 +226,7 @@ title: OrthographicCamera
       
         default: -0.25
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -235,7 +235,7 @@ title: OrthographicCamera
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Render Masks attributes</summary>
+  <summary class="scene-class-attr-group">Render Masks attributes</summary>
   <p>
     
     <h3>pixel_sample_map</h3>
@@ -245,7 +245,7 @@ title: OrthographicCamera
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -254,7 +254,7 @@ title: OrthographicCamera
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>node_xform</h3>
@@ -264,7 +264,7 @@ title: OrthographicCamera
       
         default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

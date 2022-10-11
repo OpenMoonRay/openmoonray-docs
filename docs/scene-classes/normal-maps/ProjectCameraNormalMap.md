@@ -13,7 +13,7 @@ title: ProjectCameraNormalMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>aspect_ratio_source</h3>
@@ -26,7 +26,7 @@ title: ProjectCameraNormalMap
           | custom = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio</p>
+        <p class="scene-class-attr-comment">Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio</p>
       
     </p>
     
@@ -37,7 +37,7 @@ title: ProjectCameraNormalMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">a custom aspect ratio for the projected texture</p>
+        <p class="scene-class-attr-comment">a custom aspect ratio for the projected texture</p>
       
     </p>
     
@@ -51,7 +51,7 @@ title: ProjectCameraNormalMap
           | [-1,1] = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
+        <p class="scene-class-attr-comment">Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
       
     </p>
     
@@ -62,7 +62,7 @@ title: ProjectCameraNormalMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Toggles whether camera projections appear on back faces.</p>
+        <p class="scene-class-attr-comment">Toggles whether camera projections appear on back faces.</p>
       
     </p>
     
@@ -73,7 +73,7 @@ title: ProjectCameraNormalMap
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the camera to project from</p>
+        <p class="scene-class-attr-comment">the camera to project from</p>
       
     </p>
     
@@ -84,7 +84,7 @@ title: ProjectCameraNormalMap
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        <p class="scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       
     </p>
     
@@ -95,7 +95,7 @@ title: ProjectCameraNormalMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">use reference space</p>
+        <p class="scene-class-attr-comment">use reference space</p>
       
     </p>
     

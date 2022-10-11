@@ -13,7 +13,7 @@ title: DeformationMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>output_mode</h3>
@@ -30,7 +30,7 @@ title: DeformationMap
           | deformation_avg = 3 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls output: <br>&emsp;&emsp;    RGB - R = deformation along S, G = deformation along T, B = average deformation from ref space <br>&emsp;&emsp;    deformation_S - deformation along S <br>&emsp;&emsp;    deformation_T - deformation along T <br>&emsp;&emsp;    deformation_avg - average deformation from ref space</p>
+        <p class="scene-class-attr-comment">Controls output: <br>&emsp;&emsp;    RGB - R = deformation along S, G = deformation along T, B = average deformation from ref space <br>&emsp;&emsp;    deformation_S - deformation along S <br>&emsp;&emsp;    deformation_T - deformation along T <br>&emsp;&emsp;    deformation_avg - average deformation from ref space</p>
       
     </p>
     
@@ -41,7 +41,7 @@ title: DeformationMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If derivatives are missing or zero output the warning color erroring out</p>
+        <p class="scene-class-attr-comment">If derivatives are missing or zero output the warning color erroring out</p>
       
     </p>
     
@@ -52,7 +52,7 @@ title: DeformationMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Warning color to output when derivatives are missing or zero</p>
+        <p class="scene-class-attr-comment">Warning color to output when derivatives are missing or zero</p>
       
     </p>
     

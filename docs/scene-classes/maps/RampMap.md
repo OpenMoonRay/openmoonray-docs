@@ -13,7 +13,7 @@ title: RampMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Additional properties attributes</summary>
+  <summary class="scene-class-attr-group">Additional properties attributes</summary>
   <p>
     
     <h3>input_texture_coordinates</h3>
@@ -23,7 +23,7 @@ title: RampMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Bind custom UV coordinates</p>
+        <p class="scene-class-attr-comment">Bind custom UV coordinates</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: RampMap
       
         default: [ 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Number of times to repeat the ramp pattern</p>
+        <p class="scene-class-attr-comment">Number of times to repeat the ramp pattern</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: RampMap
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Creates waves which perturb the ramp pattern</p>
+        <p class="scene-class-attr-comment">Creates waves which perturb the ramp pattern</p>
       
     </p>
     
@@ -59,7 +59,7 @@ title: RampMap
           | clamp = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -68,7 +68,7 @@ title: RampMap
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Ramp Knot attributes</summary>
+  <summary class="scene-class-attr-group">Ramp Knot attributes</summary>
   <p>
     
     <h3>colors</h3>
@@ -78,7 +78,7 @@ title: RampMap
       
         default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">List of colors on the ramp</p>
+        <p class="scene-class-attr-comment">List of colors on the ramp</p>
       
     </p>
     
@@ -89,7 +89,7 @@ title: RampMap
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
+        <p class="scene-class-attr-comment">None: 0 | Linear: 1 | Exponential Up: 2 | Exponential Down: 3 |<br>&emsp;&emsp;&emsp;Smooth: 4 | Catmull Rom: 5 | Monotone Cubic: 6</p>
       
     </p>
     
@@ -100,7 +100,7 @@ title: RampMap
       
         default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Color ramp</p>
+        <p class="scene-class-attr-comment">Color ramp</p>
       
     </p>
     
@@ -109,7 +109,7 @@ title: RampMap
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Ramp properties attributes</summary>
+  <summary class="scene-class-attr-group">Ramp properties attributes</summary>
   <p>
     
     <h3>camera</h3>
@@ -119,7 +119,7 @@ title: RampMap
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Camera used to define camera and screen space</p>
+        <p class="scene-class-attr-comment">Camera used to define camera and screen space</p>
       
     </p>
     
@@ -135,7 +135,7 @@ title: RampMap
           | hsl = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Color space to perform interpolation in</p>
+        <p class="scene-class-attr-comment">Color space to perform interpolation in</p>
       
     </p>
     
@@ -146,7 +146,7 @@ title: RampMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Input signal for ramp, used when ramp type is set to input</p>
+        <p class="scene-class-attr-comment">Input signal for ramp, used when ramp type is set to input</p>
       
     </p>
     
@@ -157,7 +157,7 @@ title: RampMap
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -185,7 +185,7 @@ title: RampMap
           | input = 8
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -209,7 +209,7 @@ title: RampMap
           | texture = 6
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Only applies when 'texture coordinates' is set to 'default state coordinates'</p>
+        <p class="scene-class-attr-comment">Only applies when 'texture coordinates' is set to 'default state coordinates'</p>
       
     </p>
     
@@ -218,7 +218,7 @@ title: RampMap
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>texture_coordinates</h3>
@@ -231,7 +231,7 @@ title: RampMap
           | input texture coordinates = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

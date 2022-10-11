@@ -13,7 +13,7 @@ title: ImageDisplayFilter
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <summary class="scene-class-attr-group">Advanced attributes</summary>
   <p>
     
     <h3>invert_mask</h3>
@@ -23,7 +23,7 @@ title: ImageDisplayFilter
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        <p class="scene-class-attr-comment">invert value of mask</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: ImageDisplayFilter
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        <p class="scene-class-attr-comment">blend between output and input</p>
       
     </p>
     
@@ -43,7 +43,7 @@ title: ImageDisplayFilter
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>display_type</h3>
@@ -64,7 +64,7 @@ title: ImageDisplayFilter
           | no_scale = 5
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -75,7 +75,7 @@ title: ImageDisplayFilter
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">file path to the .exr we want to fit to the plane</p>
+        <p class="scene-class-attr-comment">file path to the .exr we want to fit to the plane</p>
       
     </p>
     
@@ -86,7 +86,7 @@ title: ImageDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Input buffer</p>
+        <p class="scene-class-attr-comment">Input buffer</p>
       
     </p>
     
@@ -97,7 +97,7 @@ title: ImageDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

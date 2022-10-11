@@ -13,7 +13,7 @@ title: BaseVolume
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Attenuation Properties attributes</summary>
+  <summary class="scene-class-attr-group">Attenuation Properties attributes</summary>
   <p>
     
     <h3>attenuation_color</h3>
@@ -23,7 +23,7 @@ title: BaseVolume
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">a color to tint (multiply to) the attenuation. Technically the product of attenuation color and intensity is the attenuation(extinction) coefficient.(Note the inverse behavior of color with this parameter.)</p>
+        <p class="scene-class-attr-comment">a color to tint (multiply to) the attenuation. Technically the product of attenuation color and intensity is the attenuation(extinction) coefficient.(Note the inverse behavior of color with this parameter.)</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: BaseVolume
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the rate at which the intensity of a ray traversing a volume is lost. Technically the product of attenuation color and intensity is the attenuation(extinction) coefficient.</p>
+        <p class="scene-class-attr-comment">the rate at which the intensity of a ray traversing a volume is lost. Technically the product of attenuation color and intensity is the attenuation(extinction) coefficient.</p>
       
     </p>
     
@@ -43,7 +43,7 @@ title: BaseVolume
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Emission Properties attributes</summary>
+  <summary class="scene-class-attr-group">Emission Properties attributes</summary>
   <p>
     
     <h3>emission_color</h3>
@@ -53,7 +53,7 @@ title: BaseVolume
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">a color to tint (multiply to) the emission Technically the product of emision color and intensity is the emission coefficient</p>
+        <p class="scene-class-attr-comment">a color to tint (multiply to) the emission Technically the product of emision color and intensity is the emission coefficient</p>
       
     </p>
     
@@ -64,7 +64,7 @@ title: BaseVolume
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the rate at which a volume emits light at a given point. Technically the product of emission color and intensity is the emission coefficient.</p>
+        <p class="scene-class-attr-comment">the rate at which a volume emits light at a given point. Technically the product of emission color and intensity is the emission coefficient.</p>
       
     </p>
     
@@ -73,7 +73,7 @@ title: BaseVolume
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Scattering Properties attributes</summary>
+  <summary class="scene-class-attr-group">Scattering Properties attributes</summary>
   <p>
     
     <h3>anisotropy</h3>
@@ -83,7 +83,7 @@ title: BaseVolume
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Value in the interval [-1,1] that defines how foward (1) or backward (-1) scattering the volume is. 0.0 is isotropic.</p>
+        <p class="scene-class-attr-comment">Value in the interval [-1,1] that defines how foward (1) or backward (-1) scattering the volume is. 0.0 is isotropic.</p>
       
     </p>
     
@@ -94,7 +94,7 @@ title: BaseVolume
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">reflectance color of the volume. Technically this is called scattering albedo, which is the scattering coefficient divided by the extinction coefficient.</p>
+        <p class="scene-class-attr-comment">reflectance color of the volume. Technically this is called scattering albedo, which is the scattering coefficient divided by the extinction coefficient.</p>
       
     </p>
     
@@ -103,7 +103,7 @@ title: BaseVolume
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>bake_divisions</h3>
@@ -113,7 +113,7 @@ title: BaseVolume
       
         default: 100
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Divide widest axis by this many divisions</p>
+        <p class="scene-class-attr-comment">Divide widest axis by this many divisions</p>
       
     </p>
     
@@ -129,7 +129,7 @@ title: BaseVolume
           | voxel size = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Toggle method to specify grid resolution of baked density grid.<br>&emsp;&emsp;default: for shaders that are bound to vdb volumes, use vdb resolution. For shaders that are bounds to mesh geometriesuse 100 divisions<br>&emsp;&emsp;divisions: specify number of divisions.<br>&emsp;&emsp;voxel size: specify voxel size.</p>
+        <p class="scene-class-attr-comment">Toggle method to specify grid resolution of baked density grid.<br>&emsp;&emsp;default: for shaders that are bound to vdb volumes, use vdb resolution. For shaders that are bounds to mesh geometriesuse 100 divisions<br>&emsp;&emsp;divisions: specify number of divisions.<br>&emsp;&emsp;voxel size: specify voxel size.</p>
       
     </p>
     
@@ -140,7 +140,7 @@ title: BaseVolume
       
         default: 10.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Size of voxel in world space</p>
+        <p class="scene-class-attr-comment">Size of voxel in world space</p>
       
     </p>
     
@@ -151,7 +151,7 @@ title: BaseVolume
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in light aovs</p>
+        <p class="scene-class-attr-comment">label used in light aovs</p>
       
     </p>
     
@@ -162,7 +162,7 @@ title: BaseVolume
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Accumulated opacity that's considered the 'surface' for computing surface position and Z</p>
+        <p class="scene-class-attr-comment">Accumulated opacity that's considered the 'surface' for computing surface position and Z</p>
       
     </p>
     

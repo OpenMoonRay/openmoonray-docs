@@ -13,7 +13,7 @@ title: DirectionalMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Adjustment attributes</summary>
+  <summary class="scene-class-attr-group">Adjustment attributes</summary>
   <p>
     
     <h3>bias</h3>
@@ -23,7 +23,7 @@ title: DirectionalMap
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">controls the rate at which the effect increases as the shading normal approaches the prime direction</p>
+        <p class="scene-class-attr-comment">controls the rate at which the effect increases as the shading normal approaches the prime direction</p>
       
     </p>
     
@@ -37,7 +37,7 @@ title: DirectionalMap
           | absolute = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">determines how surfaces facing opposite the prime direction are handled</p>
+        <p class="scene-class-attr-comment">determines how surfaces facing opposite the prime direction are handled</p>
       
     </p>
     
@@ -51,7 +51,7 @@ title: DirectionalMap
           | linear = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">determines how the effect falls off as the difference angle increases</p>
+        <p class="scene-class-attr-comment">determines how the effect falls off as the difference angle increases</p>
       
     </p>
     
@@ -62,7 +62,7 @@ title: DirectionalMap
       
         default: 0.550000011921
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the value at which the effect is considered 100% on</p>
+        <p class="scene-class-attr-comment">the value at which the effect is considered 100% on</p>
       
     </p>
     
@@ -73,7 +73,7 @@ title: DirectionalMap
       
         default: 0.449999988079
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the value at which the effect is considered 100% off</p>
+        <p class="scene-class-attr-comment">the value at which the effect is considered 100% off</p>
       
     </p>
     
@@ -84,7 +84,7 @@ title: DirectionalMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">apply smoothstep function to result</p>
+        <p class="scene-class-attr-comment">apply smoothstep function to result</p>
       
     </p>
     
@@ -93,7 +93,7 @@ title: DirectionalMap
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Normal attributes</summary>
+  <summary class="scene-class-attr-group">Normal attributes</summary>
   <p>
     
     <h3>input_normal</h3>
@@ -103,7 +103,7 @@ title: DirectionalMap
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">specifies an alternate shading normal when bound. The binding multiplier is ignored</p>
+        <p class="scene-class-attr-comment">specifies an alternate shading normal when bound. The binding multiplier is ignored</p>
       
     </p>
     
@@ -114,7 +114,7 @@ title: DirectionalMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">controls the amount of influence of the alternate normal</p>
+        <p class="scene-class-attr-comment">controls the amount of influence of the alternate normal</p>
       
     </p>
     
@@ -123,7 +123,7 @@ title: DirectionalMap
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>color_a</h3>
@@ -133,7 +133,7 @@ title: DirectionalMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the color of the effect when the difference angle is greatest</p>
+        <p class="scene-class-attr-comment">the color of the effect when the difference angle is greatest</p>
       
     </p>
     
@@ -144,7 +144,7 @@ title: DirectionalMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the color of the effect when the difference angle is smallest</p>
+        <p class="scene-class-attr-comment">the color of the effect when the difference angle is smallest</p>
       
     </p>
     
@@ -155,7 +155,7 @@ title: DirectionalMap
       
         default: [ 0, 1, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">specifies a custom direction in world space as the prime direction</p>
+        <p class="scene-class-attr-comment">specifies a custom direction in world space as the prime direction</p>
       
     </p>
     
@@ -166,7 +166,7 @@ title: DirectionalMap
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the object to use when 'prime direction' is set to 'axis of object' or 'look-at object'</p>
+        <p class="scene-class-attr-comment">the object to use when 'prime direction' is set to 'axis of object' or 'look-at object'</p>
       
     </p>
     
@@ -188,7 +188,7 @@ title: DirectionalMap
           | -Z axis = 5
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">which axis to use when 'prime direction' is set to 'axis of object'</p>
+        <p class="scene-class-attr-comment">which axis to use when 'prime direction' is set to 'axis of object'</p>
       
     </p>
     
@@ -202,7 +202,7 @@ title: DirectionalMap
           | parallel = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">determines which directions are given color A and which are given color B. Switching this effectively swaps the colors</p>
+        <p class="scene-class-attr-comment">determines which directions are given color A and which are given color B. Switching this effectively swaps the colors</p>
       
     </p>
     
@@ -220,7 +220,7 @@ title: DirectionalMap
           | look-at object = 3
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">which source is used for the prime direction</p>
+        <p class="scene-class-attr-comment">which source is used for the prime direction</p>
       
     </p>
     
@@ -231,7 +231,7 @@ title: DirectionalMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">use reference space position and normals</p>
+        <p class="scene-class-attr-comment">use reference space position and normals</p>
       
     </p>
     

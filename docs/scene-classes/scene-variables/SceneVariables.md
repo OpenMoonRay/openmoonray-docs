@@ -13,7 +13,7 @@ title: SceneVariables
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Caching attributes</summary>
+  <summary class="scene-class-attr-group">Caching attributes</summary>
   <p>
     
     <h3>fast_geometry_update</h3>
@@ -23,7 +23,7 @@ title: SceneVariables
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: SceneVariables
       
         default: 4000
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">size is in Mb and this is the maximum cache size</p>
+        <p class="scene-class-attr-comment">size is in Mb and this is the maximum cache size</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: SceneVariables
       
         default: 24000
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">maximum number of simultaneous open file handles</p>
+        <p class="scene-class-attr-comment">maximum number of simultaneous open file handles</p>
       
     </p>
     
@@ -54,7 +54,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Camera and Layer attributes</summary>
+  <summary class="scene-class-attr-group">Camera and Layer attributes</summary>
   <p>
     
     <h3>camera</h3>
@@ -64,7 +64,7 @@ title: SceneVariables
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -75,7 +75,7 @@ title: SceneVariables
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -84,7 +84,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Checkpoint attributes</summary>
+  <summary class="scene-class-attr-group">Checkpoint attributes</summary>
   <p>
     
     <h3>checkpoint_active</h3>
@@ -94,7 +94,7 @@ title: SceneVariables
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -105,7 +105,7 @@ title: SceneVariables
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Define checkpoint file write operation execution mode.Checkpoint file write is executed as background thread and run parallel with MCRT threads (= true:default). Or stop all MCRT threads and checkpoint file write is exclusively executed (= false).</p>
+        <p class="scene-class-attr-comment">Define checkpoint file write operation execution mode.Checkpoint file write is executed as background thread and run parallel with MCRT threads (= true:default). Or stop all MCRT threads and checkpoint file write is exclusively executed (= false).</p>
       
     </p>
     
@@ -116,7 +116,7 @@ title: SceneVariables
       
         default: 15.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Length of time, in minutes, between checkpoint file writes. Time should be equal or bigger than 0.1</p>
+        <p class="scene-class-attr-comment">Length of time, in minutes, between checkpoint file writes. Time should be equal or bigger than 0.1</p>
       
     </p>
     
@@ -127,7 +127,7 @@ title: SceneVariables
       
         default: 2
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Specify max number of internal ImageWriteCache total which defines total number of write backlog under background thread write mode. You have to specify 1 or bigger number. Background thread write mode is suspended and processed serially when internal ImageWriteCache reaches this checkpoint_max_bgcache number. Bigger max value can support background write more robustly even if checkpoint write interval is pretty short. However it requires more runtime memory. 2 is best for most of the cases.</p>
+        <p class="scene-class-attr-comment">Specify max number of internal ImageWriteCache total which defines total number of write backlog under background thread write mode. You have to specify 1 or bigger number. Background thread write mode is suspended and processed serially when internal ImageWriteCache reaches this checkpoint_max_bgcache number. Bigger max value can support background write more robustly even if checkpoint write interval is pretty short. However it requires more runtime memory. 2 is best for most of the cases.</p>
       
     </p>
     
@@ -138,7 +138,7 @@ title: SceneVariables
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Specify max fraction of snapshot overhead threshold for extra snapshot action regarding unexpected interruption by SIGINT. This value is fraction. If this value is ZERO or negative, no extra snapshot action is executed and no checkpoint file is generated when SIGINT is received.</p>
+        <p class="scene-class-attr-comment">Specify max fraction of snapshot overhead threshold for extra snapshot action regarding unexpected interruption by SIGINT. This value is fraction. If this value is ZERO or negative, no extra snapshot action is executed and no checkpoint file is generated when SIGINT is received.</p>
       
     </p>
     
@@ -152,7 +152,7 @@ title: SceneVariables
           | quality = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Select checkpoint computation internal logic based on the time interval or quality steps</p>
+        <p class="scene-class-attr-comment">Select checkpoint computation internal logic based on the time interval or quality steps</p>
       
     </p>
     
@@ -163,7 +163,7 @@ title: SceneVariables
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Checkpoint file overwrite/non-overwirte control options, If checkpoint_overwrite=true, all latest checkpoint file is overwritten to previous checkpoint file output and we only have latest checkpoint file on disk. if checkpoint_overwrite=false, checkpoint files name is modified and extend with tile based sampling total number and all checkpoint files are write out by different name. As result we can keep all checkpoint files.</p>
+        <p class="scene-class-attr-comment">Checkpoint file overwrite/non-overwirte control options, If checkpoint_overwrite=true, all latest checkpoint file is overwritten to previous checkpoint file output and we only have latest checkpoint file on disk. if checkpoint_overwrite=false, checkpoint files name is modified and extend with tile based sampling total number and all checkpoint files are write out by different name. As result we can keep all checkpoint files.</p>
       
     </p>
     
@@ -174,7 +174,7 @@ title: SceneVariables
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Define post checkpoint lua script name. This script is loaded into renderer just after every checkpoint file write completion then executed simultaneously with MCRT threads. Renderer sets some lua global variables and lua script can access them. See details in rendering-wiki checkpoint/resume page. If empty, post checkpoint script execution is disabled.</p>
+        <p class="scene-class-attr-comment">Define post checkpoint lua script name. This script is loaded into renderer just after every checkpoint file write completion then executed simultaneously with MCRT threads. Renderer sets some lua global variables and lua script can access them. See details in rendering-wiki checkpoint/resume page. If empty, post checkpoint script execution is disabled.</p>
       
     </p>
     
@@ -185,7 +185,7 @@ title: SceneVariables
       
         default: 2
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Steps of quality, internal sampling iteration count, between checkpoint file writes. Value should be equal or bigger than 1. Uniform sampling case, this steps number is equivalent as each pixel's pixel sampling steps. If you set quality steps=2, checkpoint file is created at every timing of each pixel's sample count exceeds at 2, 4, 6, 8, 10, ... Adaptive sampling case, this steps number is equivalent as internal adaptive sampling iteration steps. Recommended number is 1~3 range. You can use more than 4 but bigger number always require longer rendering time. If you set 2, checkpoint file is created after finish every 2 adaptive sampling iteration execution.</p>
+        <p class="scene-class-attr-comment">Steps of quality, internal sampling iteration count, between checkpoint file writes. Value should be equal or bigger than 1. Uniform sampling case, this steps number is equivalent as each pixel's pixel sampling steps. If you set quality steps=2, checkpoint file is created at every timing of each pixel's sample count exceeds at 2, 4, 6, 8, 10, ... Adaptive sampling case, this steps number is equivalent as internal adaptive sampling iteration steps. Recommended number is 1~3 range. You can use more than 4 but bigger number always require longer rendering time. If you set 2, checkpoint file is created after finish every 2 adaptive sampling iteration execution.</p>
       
     </p>
     
@@ -196,7 +196,7 @@ title: SceneVariables
       
         default: 0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When total pixel sample count exceeds this value at every pixel (If you set 1024, each pixel exceeds 1024, then try to finish), the render will finish after the next checkpoint write. Disabled sample cap feature when set to 0.</p>
+        <p class="scene-class-attr-comment">When total pixel sample count exceeds this value at every pixel (If you set 1024, each pixel exceeds 1024, then try to finish), the render will finish after the next checkpoint write. Disabled sample cap feature when set to 0.</p>
       
     </p>
     
@@ -207,7 +207,7 @@ title: SceneVariables
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Interval of time in minutes, about snapshot refreshment regarding interruption by SIGINT. Unit is minute. If this value is ZERO or negative, checkpoint_max_snapshot_overhead parameter is used instead.</p>
+        <p class="scene-class-attr-comment">Interval of time in minutes, about snapshot refreshment regarding interruption by SIGINT. Unit is minute. If this value is ZERO or negative, checkpoint_max_snapshot_overhead parameter is used instead.</p>
       
     </p>
     
@@ -218,7 +218,7 @@ title: SceneVariables
       
         default: 1
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Specify samples per pixel (SPP) number. Checkpoint file is created when all pixel's SPP are same or bigger than this number. Until then, checkpoint file is not created.</p>
+        <p class="scene-class-attr-comment">Specify samples per pixel (SPP) number. Checkpoint file is created when all pixel's SPP are same or bigger than this number. Until then, checkpoint file is not created.</p>
       
     </p>
     
@@ -229,7 +229,7 @@ title: SceneVariables
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When total render process time exceeds this value, in minutes, the render will finish after the next checkpoint write. Disabled time cap feature when set to 0.</p>
+        <p class="scene-class-attr-comment">When total render process time exceeds this value, in minutes, the render will finish after the next checkpoint write. Disabled time cap feature when set to 0.</p>
       
     </p>
     
@@ -240,7 +240,7 @@ title: SceneVariables
       
         default: 0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Specify total number of checkpoint files for quality based checkpoint mode.This variable is a substitute parameter of checkpoint_quality_steps.If this value is 0 (= default), the checkpoint generation interval is controlled by checkpoint_quality_steps variable.If this value is 1 or bigger, checkpoint generation interval is calculated based on this value and the renderer tries to generate a user defined number of checkpoint files automatically.This option respects the checkpoint_start_sample variable.In some cases, the renderer might not create the requested checkpoint_total_files due to current limitation of internal implementation or user specified bigger than 1 for checkpoint_start_sample variable. However even in that case, the renderer tries to create the closest number of total checkpoint files which user defined number as checkpoint_total_files.</p>
+        <p class="scene-class-attr-comment">Specify total number of checkpoint files for quality based checkpoint mode.This variable is a substitute parameter of checkpoint_quality_steps.If this value is 0 (= default), the checkpoint generation interval is controlled by checkpoint_quality_steps variable.If this value is 1 or bigger, checkpoint generation interval is calculated based on this value and the renderer tries to generate a user defined number of checkpoint files automatically.This option respects the checkpoint_start_sample variable.In some cases, the renderer might not create the requested checkpoint_total_files due to current limitation of internal implementation or user specified bigger than 1 for checkpoint_start_sample variable. However even in that case, the renderer tries to create the closest number of total checkpoint files which user defined number as checkpoint_total_files.</p>
       
     </p>
     
@@ -249,7 +249,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Debug attributes</summary>
+  <summary class="scene-class-attr-group">Debug attributes</summary>
   <p>
     
     <h3>debug_console</h3>
@@ -259,7 +259,7 @@ title: SceneVariables
       
         default: -1
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Specify port number for debug console. If you set -1 (=default), all debug console functionalities are disabled. If you set 0 or positive port number, debug console functionalities are enabled. If enabled, we can send commands via telnet connection and control rendering behavior for debugging purposes. If you set 0, the kernel finds the available port for you and displays the port number to the cerr. Otherwise you have to set the available port number yourself.</p>
+        <p class="scene-class-attr-comment">Specify port number for debug console. If you set -1 (=default), all debug console functionalities are disabled. If you set 0 or positive port number, debug console functionalities are enabled. If enabled, we can send commands via telnet connection and control rendering behavior for debugging purposes. If you set 0, the kernel finds the available port for you and displays the port number to the cerr. Otherwise you have to set the available port number yourself.</p>
       
     </p>
     
@@ -270,7 +270,7 @@ title: SceneVariables
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -281,7 +281,7 @@ title: SceneVariables
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -292,7 +292,7 @@ title: SceneVariables
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -303,7 +303,7 @@ title: SceneVariables
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -314,7 +314,7 @@ title: SceneVariables
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Checks geometry for bad data</p>
+        <p class="scene-class-attr-comment">Checks geometry for bad data</p>
       
     </p>
     
@@ -323,7 +323,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Deep Images attributes</summary>
+  <summary class="scene-class-attr-group">Deep Images attributes</summary>
   <p>
     
     <h3>deep_curvature_tolerance</h3>
@@ -333,7 +333,7 @@ title: SceneVariables
       
         default: 45.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Maximum curvature (in degrees) of the deep surface within a pixel before it is split</p>
+        <p class="scene-class-attr-comment">Maximum curvature (in degrees) of the deep surface within a pixel before it is split</p>
       
     </p>
     
@@ -347,7 +347,7 @@ title: SceneVariables
           | opendcx2.0 = 1 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Deep image format: openexr2.0: vanilla OpenEXR deep, opendcx2.0: DCX abuffer mask encoding</p>
+        <p class="scene-class-attr-comment">Deep image format: openexr2.0: vanilla OpenEXR deep, opendcx2.0: DCX abuffer mask encoding</p>
       
     </p>
     
@@ -358,7 +358,7 @@ title: SceneVariables
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Names of primitive attributes containing deep IDs</p>
+        <p class="scene-class-attr-comment">Names of primitive attributes containing deep IDs</p>
       
     </p>
     
@@ -369,7 +369,7 @@ title: SceneVariables
       
         default: 0.10000000149
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Minimum distance between deep layers</p>
+        <p class="scene-class-attr-comment">Minimum distance between deep layers</p>
       
     </p>
     
@@ -380,7 +380,7 @@ title: SceneVariables
       
         default: 1
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Maximum number of depth layers to output</p>
+        <p class="scene-class-attr-comment">Maximum number of depth layers to output</p>
       
     </p>
     
@@ -391,7 +391,7 @@ title: SceneVariables
       
         default: 10
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Volume opacity compression resolution.  Lower values gives higher compression.</p>
+        <p class="scene-class-attr-comment">Volume opacity compression resolution.  Lower values gives higher compression.</p>
       
     </p>
     
@@ -402,7 +402,7 @@ title: SceneVariables
       
         default: 2.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Maximum range of the deep surface's Z values within a pixel before it is split</p>
+        <p class="scene-class-attr-comment">Maximum range of the deep surface's Z values within a pixel before it is split</p>
       
     </p>
     
@@ -411,7 +411,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Driver attributes</summary>
+  <summary class="scene-class-attr-group">Driver attributes</summary>
   <p>
     
     <h3>interactive_mode</h3>
@@ -421,7 +421,7 @@ title: SceneVariables
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -432,7 +432,7 @@ title: SceneVariables
       
         default: -1
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -443,7 +443,7 @@ title: SceneVariables
       
         default: -1
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -454,7 +454,7 @@ title: SceneVariables
       
         default: scene.exr
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -465,7 +465,7 @@ title: SceneVariables
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -479,7 +479,7 @@ title: SceneVariables
           | multiplex pixel = 1 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -490,7 +490,7 @@ title: SceneVariables
       
         default: 0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -501,7 +501,7 @@ title: SceneVariables
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Define temporary directory name for temporary file generation. Use $TMPDIR environment variable value if this variable is empty.If $TMPDIR is also empty, use /tmp</p>
+        <p class="scene-class-attr-comment">Define temporary directory name for temporary file generation. Use $TMPDIR environment variable value if this variable is empty.If $TMPDIR is also empty, use /tmp</p>
       
     </p>
     
@@ -510,7 +510,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Filtering attributes</summary>
+  <summary class="scene-class-attr-group">Filtering attributes</summary>
   <p>
     
     <h3>pixel_filter</h3>
@@ -525,7 +525,7 @@ title: SceneVariables
           | quadratic b-spline = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -536,7 +536,7 @@ title: SceneVariables
       
         default: 3.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -547,7 +547,7 @@ title: SceneVariables
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -556,7 +556,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Fireflies Removal attributes</summary>
+  <summary class="scene-class-attr-group">Fireflies Removal attributes</summary>
   <p>
     
     <h3>roughness_clamping_factor</h3>
@@ -566,7 +566,7 @@ title: SceneVariables
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">clamp material roughness along paths to some extent (set value to [0..1]), to prevent fireflies from indirect caustics. Warning: Using this technique is biased</p>
+        <p class="scene-class-attr-comment">clamp material roughness along paths to some extent (set value to [0..1]), to prevent fireflies from indirect caustics. Warning: Using this technique is biased</p>
       
     </p>
     
@@ -577,7 +577,7 @@ title: SceneVariables
       
         default: 1
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">clamp sample values only after given non-specular depth</p>
+        <p class="scene-class-attr-comment">clamp sample values only after given non-specular depth</p>
       
     </p>
     
@@ -588,7 +588,7 @@ title: SceneVariables
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">clamp sample values to a maximum (disabled if 0.0). Warning: Using this technique is biased</p>
+        <p class="scene-class-attr-comment">clamp sample values to a maximum (disabled if 0.0). Warning: Using this technique is biased</p>
       
     </p>
     
@@ -597,7 +597,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Frame attributes</summary>
+  <summary class="scene-class-attr-group">Frame attributes</summary>
   <p>
     
     <h3>frame</h3>
@@ -607,7 +607,7 @@ title: SceneVariables
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -618,7 +618,7 @@ title: SceneVariables
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -629,7 +629,7 @@ title: SceneVariables
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -638,7 +638,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Global Toggles attributes</summary>
+  <summary class="scene-class-attr-group">Global Toggles attributes</summary>
   <p>
     
     <h3>enable_displacement</h3>
@@ -648,7 +648,7 @@ title: SceneVariables
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -659,7 +659,7 @@ title: SceneVariables
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -670,7 +670,7 @@ title: SceneVariables
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -681,7 +681,7 @@ title: SceneVariables
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -692,7 +692,7 @@ title: SceneVariables
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -703,7 +703,7 @@ title: SceneVariables
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -714,7 +714,7 @@ title: SceneVariables
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -725,7 +725,7 @@ title: SceneVariables
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -736,7 +736,7 @@ title: SceneVariables
       
         default: 2147483647
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -747,7 +747,7 @@ title: SceneVariables
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">turns on/off propagation for ray visibility masks</p>
+        <p class="scene-class-attr-comment">turns on/off propagation for ray visibility masks</p>
       
     </p>
     
@@ -767,7 +767,7 @@ title: SceneVariables
           | On (Cosine Compensation Alternative = 4
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Attempt to soften hard shadow terminator boundaries due to shading/geometric normal deviations.  "ON uses a custom terminator softening method. Cosine Compensation" is Chiang's 2019 SIGGRAPH technique.  "GGX" is Estevez's raytracing gems technique.  "Sine Compensation" is a sine based modification of Chiang's method. Different scenes may work better with different techniques.  The recommendation is to start with the custom compensation ON, then sine compensation technique, then GGX, then cosine.</p>
+        <p class="scene-class-attr-comment">Attempt to soften hard shadow terminator boundaries due to shading/geometric normal deviations.  "ON uses a custom terminator softening method. Cosine Compensation" is Chiang's 2019 SIGGRAPH technique.  "GGX" is Estevez's raytracing gems technique.  "Sine Compensation" is a sine based modification of Chiang's method. Different scenes may work better with different techniques.  The recommendation is to start with the custom compensation ON, then sine compensation technique, then GGX, then cosine.</p>
       
     </p>
     
@@ -776,7 +776,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Image Size attributes</summary>
+  <summary class="scene-class-attr-group">Image Size attributes</summary>
   <p>
     
     <h3>aperture_window</h3>
@@ -786,7 +786,7 @@ title: SceneVariables
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Window of the camera aperture. Overrides image width / height. Order: xmin ymin xmax ymax, with origin at left bottom.</p>
+        <p class="scene-class-attr-comment">Window of the camera aperture. Overrides image width / height. Order: xmin ymin xmax ymax, with origin at left bottom.</p>
       
     </p>
     
@@ -797,7 +797,7 @@ title: SceneVariables
       
         default: 1080
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -808,7 +808,7 @@ title: SceneVariables
       
         default: 1920
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -819,7 +819,7 @@ title: SceneVariables
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Window that is rendered. Overrides image width / height (and overrides aperture window override). Order: xmin ymin xmax ymax, with origin at left bottom.</p>
+        <p class="scene-class-attr-comment">Window that is rendered. Overrides image width / height (and overrides aperture window override). Order: xmin ymin xmax ymax, with origin at left bottom.</p>
       
     </p>
     
@@ -830,7 +830,7 @@ title: SceneVariables
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -841,7 +841,7 @@ title: SceneVariables
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Subviewport of region window. Coordinate (0,0) maps to left, bottom of region window</p>
+        <p class="scene-class-attr-comment">Subviewport of region window. Coordinate (0,0) maps to left, bottom of region window</p>
       
     </p>
     
@@ -850,7 +850,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Logging attributes</summary>
+  <summary class="scene-class-attr-group">Logging attributes</summary>
   <p>
     
     <h3>athena_debug</h3>
@@ -860,7 +860,7 @@ title: SceneVariables
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -871,7 +871,7 @@ title: SceneVariables
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -882,7 +882,7 @@ title: SceneVariables
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -893,7 +893,7 @@ title: SceneVariables
       
         default: [ 1, 0, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -904,7 +904,7 @@ title: SceneVariables
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -915,7 +915,7 @@ title: SceneVariables
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -926,7 +926,7 @@ title: SceneVariables
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -935,7 +935,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Metadata attributes</summary>
+  <summary class="scene-class-attr-group">Metadata attributes</summary>
   <p>
     
     <h3>exr_header_attributes</h3>
@@ -945,7 +945,7 @@ title: SceneVariables
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Metadata that is passed directly to the exr header. Format: {"name", "type", "value"}</p>
+        <p class="scene-class-attr-comment">Metadata that is passed directly to the exr header. Format: {"name", "type", "value"}</p>
       
     </p>
     
@@ -954,7 +954,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Motion and Scale attributes</summary>
+  <summary class="scene-class-attr-group">Motion and Scale attributes</summary>
   <p>
     
     <h3>motion_steps</h3>
@@ -964,7 +964,7 @@ title: SceneVariables
       
         default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">frame-relative time offsets for motion sampling</p>
+        <p class="scene-class-attr-comment">frame-relative time offsets for motion sampling</p>
       
     </p>
     
@@ -975,7 +975,7 @@ title: SceneVariables
       
         default: 0.00999999977648
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">(in meters): one unit in world space = 'scene scale' meters</p>
+        <p class="scene-class-attr-comment">(in meters): one unit in world space = 'scene scale' meters</p>
       
     </p>
     
@@ -984,7 +984,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Path Guide attributes</summary>
+  <summary class="scene-class-attr-group">Path Guide attributes</summary>
   <p>
     
     <h3>path_guide_enable</h3>
@@ -994,7 +994,7 @@ title: SceneVariables
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Turn on path guiding to handle difficult light transport problems (e.g. caustics) at the cost of increased memory</p>
+        <p class="scene-class-attr-comment">Turn on path guiding to handle difficult light transport problems (e.g. caustics) at the cost of increased memory</p>
       
     </p>
     
@@ -1003,7 +1003,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Resume Render attributes</summary>
+  <summary class="scene-class-attr-group">Resume Render attributes</summary>
   <p>
     
     <h3>on_resume_script</h3>
@@ -1013,7 +1013,7 @@ title: SceneVariables
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Define on-resume lua script name. This script is loaded into the renderer just after renderPrep execution under resume render mode then executed. This script is not executed if non-resume render mode even if you set script name.Renderer sets some lua global variables and lua script can access them. We can get resume render start condition (true=properly started or false=failed to start as resume render and fall back to normal rendering) via lua global variable. See details in rendering-wiki checkpoint/resume page. If empty, on-resume script execution is disabled.</p>
+        <p class="scene-class-attr-comment">Define on-resume lua script name. This script is loaded into the renderer just after renderPrep execution under resume render mode then executed. This script is not executed if non-resume render mode even if you set script name.Renderer sets some lua global variables and lua script can access them. We can get resume render start condition (true=properly started or false=failed to start as resume render and fall back to normal rendering) via lua global variable. See details in rendering-wiki checkpoint/resume page. If empty, on-resume script execution is disabled.</p>
       
     </p>
     
@@ -1024,7 +1024,7 @@ title: SceneVariables
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">make aov output as resumable for resume render</p>
+        <p class="scene-class-attr-comment">make aov output as resumable for resume render</p>
       
     </p>
     
@@ -1035,7 +1035,7 @@ title: SceneVariables
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">resuming render process</p>
+        <p class="scene-class-attr-comment">resuming render process</p>
       
     </p>
     
@@ -1044,7 +1044,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Sampling attributes</summary>
+  <summary class="scene-class-attr-group">Sampling attributes</summary>
   <p>
     
     <h3>bsdf_sampler_strategy</h3>
@@ -1059,7 +1059,7 @@ title: SceneVariables
           | one-lobe = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Indirect sampling and evaluation strategy: all lobes using one path segment per lobe (multi-sample), all lobes using one shared path segment (one-sample), or one lobe.</p>
+        <p class="scene-class-attr-comment">Indirect sampling and evaluation strategy: all lobes using one path segment per lobe (multi-sample), all lobes using one shared path segment (one-sample), or one lobe.</p>
       
     </p>
     
@@ -1070,7 +1070,7 @@ title: SceneVariables
       
         default: 2
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1081,7 +1081,7 @@ title: SceneVariables
       
         default: 2
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1092,7 +1092,7 @@ title: SceneVariables
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Forces all hair materials to sample each hair BSDF lobe independently. This will enable the LPE label syntax for 'hair R', 'hair TT', 'hair TRT' and 'hair TRRT ' but will result in slower rendering</p>
+        <p class="scene-class-attr-comment">Forces all hair materials to sample each hair BSDF lobe independently. This will enable the LPE label syntax for 'hair R', 'hair TT', 'hair TRT' and 'hair TRRT ' but will result in slower rendering</p>
       
     </p>
     
@@ -1103,7 +1103,7 @@ title: SceneVariables
       
         default: 2
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1114,7 +1114,7 @@ title: SceneVariables
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1125,7 +1125,7 @@ title: SceneVariables
       
         default: 5
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1136,7 +1136,7 @@ title: SceneVariables
       
         default: 2
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1147,7 +1147,7 @@ title: SceneVariables
       
         default: 2
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1158,7 +1158,7 @@ title: SceneVariables
       
         default: 5
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1169,7 +1169,7 @@ title: SceneVariables
       
         default: 3
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1180,7 +1180,7 @@ title: SceneVariables
       
         default: 16
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1191,7 +1191,7 @@ title: SceneVariables
       
         default: 1
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1202,7 +1202,7 @@ title: SceneVariables
       
         default: 8
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1213,7 +1213,7 @@ title: SceneVariables
       
         default: 0.999000012875
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Defines at which point the accumulated presence can be considered as opaque, skipping generation of presence continuation rays.</p>
+        <p class="scene-class-attr-comment">Defines at which point the accumulated presence can be considered as opaque, skipping generation of presence continuation rays.</p>
       
     </p>
     
@@ -1224,7 +1224,7 @@ title: SceneVariables
       
         default: 0.0375000014901
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1235,7 +1235,7 @@ title: SceneVariables
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Defines at which point the accumulated opacity can be considered as opaque, skipping generation of new transparency rays.</p>
+        <p class="scene-class-attr-comment">Defines at which point the accumulated opacity can be considered as opaque, skipping generation of new transparency rays.</p>
       
     </p>
     
@@ -1244,7 +1244,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Volumes attributes</summary>
+  <summary class="scene-class-attr-group">Volumes attributes</summary>
   <p>
     
     <h3>max_volume_depth</h3>
@@ -1254,7 +1254,7 @@ title: SceneVariables
       
         default: 1
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1265,7 +1265,7 @@ title: SceneVariables
       
         default: 0.649999976158
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls how volume attenuation gets exponentially scaled down when rendering multiple scattering volumes. Dialing down the value generally results in more translucent look. This variable is only effective when "max volume depth" is greater than 1</p>
+        <p class="scene-class-attr-comment">Controls how volume attenuation gets exponentially scaled down when rendering multiple scattering volumes. Dialing down the value generally results in more translucent look. This variable is only effective when "max volume depth" is greater than 1</p>
       
     </p>
     
@@ -1276,7 +1276,7 @@ title: SceneVariables
       
         default: 0.649999976158
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls how scattering contribution gets exponentially scaled down when rendering multiple scattering volumes. Dialing down the value generally results in a darker volume scattering look. This variable is only effective when "max volume depth" is greater than 1</p>
+        <p class="scene-class-attr-comment">Controls how scattering contribution gets exponentially scaled down when rendering multiple scattering volumes. Dialing down the value generally results in a darker volume scattering look. This variable is only effective when "max volume depth" is greater than 1</p>
       
     </p>
     
@@ -1287,7 +1287,7 @@ title: SceneVariables
       
         default: 4
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Sample number along the ray when computing volume scattering radiance towards the eye. Set to 0 to turn off volume lighting completely.</p>
+        <p class="scene-class-attr-comment">Sample number along the ray when computing volume scattering radiance towards the eye. Set to 0 to turn off volume lighting completely.</p>
       
     </p>
     
@@ -1298,7 +1298,7 @@ title: SceneVariables
       
         default: 0.995000004768
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">As a ray travels through volume regions, it will accumulate the amount of opacity. When the value exceeds volume opacity threshold the renderer will stop the further volume integration along this ray.</p>
+        <p class="scene-class-attr-comment">As a ray travels through volume regions, it will accumulate the amount of opacity. When the value exceeds volume opacity threshold the renderer will stop the further volume integration along this ray.</p>
       
     </p>
     
@@ -1314,7 +1314,7 @@ title: SceneVariables
           | rnd = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Selects how to handle contributions from overlapping volumes:<br>&emsp;&emsp;sum: add contributions from all volumes<br>&emsp;&emsp;max: only consider maximum volume based on extinction<br>&emsp;&emsp;rnd: randomly choose one value weighted by extinction<br>&emsp;&emsp;Warning: light linking does not work correctly in sum mode.</p>
+        <p class="scene-class-attr-comment">Selects how to handle contributions from overlapping volumes:<br>&emsp;&emsp;sum: add contributions from all volumes<br>&emsp;&emsp;max: only consider maximum volume based on extinction<br>&emsp;&emsp;rnd: randomly choose one value weighted by extinction<br>&emsp;&emsp;Warning: light linking does not work correctly in sum mode.</p>
       
     </p>
     
@@ -1325,7 +1325,7 @@ title: SceneVariables
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls how phase function(anisotropy) gets exponentially scaled down when rendering multiple scattering volumes. This variable is only effective when "max volume depth" is greater than 1</p>
+        <p class="scene-class-attr-comment">Controls how phase function(anisotropy) gets exponentially scaled down when rendering multiple scattering volumes. This variable is only effective when "max volume depth" is greater than 1</p>
       
     </p>
     
@@ -1336,7 +1336,7 @@ title: SceneVariables
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls the overall quality of volume rendering. The higher number gives better volume shape detail and more accurate scattering integration result.</p>
+        <p class="scene-class-attr-comment">Controls the overall quality of volume rendering. The higher number gives better volume shape detail and more accurate scattering integration result.</p>
       
     </p>
     
@@ -1347,7 +1347,7 @@ title: SceneVariables
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls the quality of volume shadow (transmittance). The higher number gives more accurate volume shadow.</p>
+        <p class="scene-class-attr-comment">Controls the quality of volume shadow (transmittance). The higher number gives more accurate volume shadow.</p>
       
     </p>
     
@@ -1356,7 +1356,7 @@ title: SceneVariables
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>batch_tile_order</h3>
@@ -1381,7 +1381,7 @@ title: SceneVariables
           | spiral rect = 7
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1407,7 +1407,7 @@ title: SceneVariables
           | spiral rect = 7
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1418,7 +1418,7 @@ title: SceneVariables
       
         default: 24.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1429,7 +1429,7 @@ title: SceneVariables
       
         default: 4096
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When adaptive sampling is turned on, this represents the max number of samples we can throw at a pixel. It's best to err on the high side since adaptive sampling will cull out samples where they're not needed based on the target adaptive error, in which case we should rarely hit the max samples value.</p>
+        <p class="scene-class-attr-comment">When adaptive sampling is turned on, this represents the max number of samples we can throw at a pixel. It's best to err on the high side since adaptive sampling will cull out samples where they're not needed based on the target adaptive error, in which case we should rarely hit the max samples value.</p>
       
     </p>
     
@@ -1440,7 +1440,7 @@ title: SceneVariables
       
         default: 16
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When adaptive sampling is turned on, it's possible that a tile may be mis-classified as having converged before it has actually converged. This manifests itself as square 8x8 artifacts in the final image. The higher this value, the less the chance of this happening.</p>
+        <p class="scene-class-attr-comment">When adaptive sampling is turned on, it's possible that a tile may be mis-classified as having converged before it has actually converged. This manifests itself as square 8x8 artifacts in the final image. The higher this value, the less the chance of this happening.</p>
       
     </p>
     
@@ -1466,7 +1466,7 @@ title: SceneVariables
           | spiral rect = 7
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1480,7 +1480,7 @@ title: SceneVariables
           | adaptive = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls which sampling scheme to use, defaults to uniform sampling.</p>
+        <p class="scene-class-attr-comment">Controls which sampling scheme to use, defaults to uniform sampling.</p>
       
     </p>
     
@@ -1491,7 +1491,7 @@ title: SceneVariables
       
         default: 10.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When adaptive sampling is turned on, this represents the desired quality of the output images. Lower values will give higher quality but take longer to render. Higher values will give lower quality but render quicker.</p>
+        <p class="scene-class-attr-comment">When adaptive sampling is turned on, this represents the desired quality of the output images. Lower values will give higher quality but take longer to render. Higher values will give lower quality but render quicker.</p>
       
     </p>
     
@@ -1502,7 +1502,7 @@ title: SceneVariables
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Selection of image file write uses two stage output logic or not. Two stage output (=true: default) is that the image file is written out to temporary file location first and copy/rename next. This solution greatly reduces the risk of output data collapsing from unexpected render process termination for both of final output and checkpoint output. Temporary file directory is defined by tmp_dir scene_variable.</p>
+        <p class="scene-class-attr-comment">Selection of image file write uses two stage output logic or not. Two stage output (=true: default) is that the image file is written out to temporary file location first and copy/rename next. This solution greatly reduces the risk of output data collapsing from unexpected render process termination for both of final output and checkpoint output. Temporary file directory is defined by tmp_dir scene_variable.</p>
       
     </p>
     

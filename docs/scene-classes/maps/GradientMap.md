@@ -13,7 +13,7 @@ title: GradientMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Additional properties attributes</summary>
+  <summary class="scene-class-attr-group">Additional properties attributes</summary>
   <p>
     
     <h3>symmetric</h3>
@@ -23,7 +23,7 @@ title: GradientMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Color A blends into Color B and then back into Color A from the start to the end point</p>
+        <p class="scene-class-attr-comment">Color A blends into Color B and then back into Color A from the start to the end point</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: GradientMap
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Shifts the center of the symmetric falloff</p>
+        <p class="scene-class-attr-comment">Shifts the center of the symmetric falloff</p>
       
     </p>
     
@@ -43,7 +43,7 @@ title: GradientMap
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Falloff properties attributes</summary>
+  <summary class="scene-class-attr-group">Falloff properties attributes</summary>
   <p>
     
     <h3>falloff_bias</h3>
@@ -53,7 +53,7 @@ title: GradientMap
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Compresses the blending towards the start or end color</p>
+        <p class="scene-class-attr-comment">Compresses the blending towards the start or end color</p>
       
     </p>
     
@@ -64,7 +64,7 @@ title: GradientMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Shifts where the falloff ends</p>
+        <p class="scene-class-attr-comment">Shifts where the falloff ends</p>
       
     </p>
     
@@ -75,7 +75,7 @@ title: GradientMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Adjust the intensity of the end color</p>
+        <p class="scene-class-attr-comment">Adjust the intensity of the end color</p>
       
     </p>
     
@@ -86,7 +86,7 @@ title: GradientMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Adjusts rate of blending</p>
+        <p class="scene-class-attr-comment">Adjusts rate of blending</p>
       
     </p>
     
@@ -97,7 +97,7 @@ title: GradientMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Shifts where the falloff starts</p>
+        <p class="scene-class-attr-comment">Shifts where the falloff starts</p>
       
     </p>
     
@@ -119,7 +119,7 @@ title: GradientMap
           | ease out = 5
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Falloff blend mode</p>
+        <p class="scene-class-attr-comment">Falloff blend mode</p>
       
     </p>
     
@@ -128,7 +128,7 @@ title: GradientMap
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Gradient properties attributes</summary>
+  <summary class="scene-class-attr-group">Gradient properties attributes</summary>
   <p>
     
     <h3>color_A</h3>
@@ -138,7 +138,7 @@ title: GradientMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Start color</p>
+        <p class="scene-class-attr-comment">Start color</p>
       
     </p>
     
@@ -149,7 +149,7 @@ title: GradientMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">End color</p>
+        <p class="scene-class-attr-comment">End color</p>
       
     </p>
     
@@ -160,7 +160,7 @@ title: GradientMap
       
         default: [ 0, 1, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">End position in the chosen space</p>
+        <p class="scene-class-attr-comment">End position in the chosen space</p>
       
     </p>
     
@@ -171,7 +171,7 @@ title: GradientMap
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Use the provided object's transformation space (only used if object space is also specified)</p>
+        <p class="scene-class-attr-comment">Use the provided object's transformation space (only used if object space is also specified)</p>
       
     </p>
     
@@ -195,7 +195,7 @@ title: GradientMap
           | texture = 6
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The transformation space in which to perform the blending</p>
+        <p class="scene-class-attr-comment">The transformation space in which to perform the blending</p>
       
     </p>
     
@@ -206,7 +206,7 @@ title: GradientMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Start position in the chosen space</p>
+        <p class="scene-class-attr-comment">Start position in the chosen space</p>
       
     </p>
     

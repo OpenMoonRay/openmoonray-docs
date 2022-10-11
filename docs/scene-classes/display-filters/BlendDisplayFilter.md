@@ -13,7 +13,7 @@ title: BlendDisplayFilter
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <summary class="scene-class-attr-group">Advanced attributes</summary>
   <p>
     
     <h3>invert_mask</h3>
@@ -23,7 +23,7 @@ title: BlendDisplayFilter
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        <p class="scene-class-attr-comment">invert value of mask</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: BlendDisplayFilter
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        <p class="scene-class-attr-comment">blend between output and input</p>
       
     </p>
     
@@ -43,7 +43,7 @@ title: BlendDisplayFilter
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>blendAmt</h3>
@@ -53,7 +53,7 @@ title: BlendDisplayFilter
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">float determining amount of blend</p>
+        <p class="scene-class-attr-comment">float determining amount of blend</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: BlendDisplayFilter
           | cubic = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: BlendDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">first operand</p>
+        <p class="scene-class-attr-comment">first operand</p>
       
     </p>
     
@@ -89,7 +89,7 @@ title: BlendDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">second operand</p>
+        <p class="scene-class-attr-comment">second operand</p>
       
     </p>
     
@@ -100,7 +100,7 @@ title: BlendDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

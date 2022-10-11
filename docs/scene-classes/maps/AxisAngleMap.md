@@ -13,7 +13,7 @@ title: AxisAngleMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>angle</h3>
@@ -23,7 +23,7 @@ title: AxisAngleMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the angle of rotation in degrees</p>
+        <p class="scene-class-attr-comment">the angle of rotation in degrees</p>
       
     </p>
     
@@ -37,7 +37,7 @@ title: AxisAngleMap
           | object = 4
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the space of the axis to rotate about</p>
+        <p class="scene-class-attr-comment">the space of the axis to rotate about</p>
       
     </p>
     
@@ -57,7 +57,7 @@ title: AxisAngleMap
           | object = 4
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the space to transform from</p>
+        <p class="scene-class-attr-comment">the space to transform from</p>
       
     </p>
     
@@ -68,7 +68,7 @@ title: AxisAngleMap
       
         default: [ 0, 0, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">input vector to be rotated</p>
+        <p class="scene-class-attr-comment">input vector to be rotated</p>
       
     </p>
     
@@ -88,7 +88,7 @@ title: AxisAngleMap
           | object = 4
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the space to transform the resulting vector to</p>
+        <p class="scene-class-attr-comment">the space to transform the resulting vector to</p>
       
     </p>
     
@@ -99,7 +99,7 @@ title: AxisAngleMap
       
         default: [ 0, 1, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">axis to be rotated around</p>
+        <p class="scene-class-attr-comment">axis to be rotated around</p>
       
     </p>
     

@@ -13,7 +13,7 @@ title: DebugMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Normal attributes</summary>
+  <summary class="scene-class-attr-group">Normal attributes</summary>
   <p>
     
     <h3>input_normal_space</h3>
@@ -26,7 +26,7 @@ title: DebugMap
           | render = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Specifies what space the input normal is in.  Usually this is tangent space for texture maps and render space for projections</p>
+        <p class="scene-class-attr-comment">Specifies what space the input normal is in.  Usually this is tangent space for texture maps and render space for projections</p>
       
     </p>
     
@@ -35,7 +35,7 @@ title: DebugMap
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Primitive Attribute attributes</summary>
+  <summary class="scene-class-attr-group">Primitive Attribute attributes</summary>
   <p>
     
     <h3>primitive_attribute_name</h3>
@@ -45,7 +45,7 @@ title: DebugMap
       
         default: surface_st
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the name of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'</p>
+        <p class="scene-class-attr-comment">the name of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'</p>
       
     </p>
     
@@ -63,7 +63,7 @@ title: DebugMap
           | rgb = 3
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the type of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'</p>
+        <p class="scene-class-attr-comment">the type of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'</p>
       
     </p>
     
@@ -72,7 +72,7 @@ title: DebugMap
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>checkerboard</h3>
@@ -82,7 +82,7 @@ title: DebugMap
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -93,7 +93,7 @@ title: DebugMap
       
         default: [ 0, 0, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -104,7 +104,7 @@ title: DebugMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -128,7 +128,7 @@ title: DebugMap
           | primitive attribute = 6
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

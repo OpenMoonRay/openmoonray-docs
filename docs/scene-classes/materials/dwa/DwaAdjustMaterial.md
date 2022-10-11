@@ -13,7 +13,7 @@ title: DwaAdjustMaterial
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Enable attributes</summary>
+  <summary class="scene-class-attr-group">Enable attributes</summary>
   <p>
     
     <h3>adjust_color</h3>
@@ -23,7 +23,7 @@ title: DwaAdjustMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">use color adjustment attrs: color_hue_shift, color_saturation, color_gain</p>
+        <p class="scene-class-attr-comment">use color adjustment attrs: color_hue_shift, color_saturation, color_gain</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: DwaAdjustMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">use presence adjustment attrs: presence_set, presence_set_blend, presence_mult</p>
+        <p class="scene-class-attr-comment">use presence adjustment attrs: presence_set, presence_set_blend, presence_mult</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: DwaAdjustMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">use roughness adjustment attrs: roughness_set, roughness_set_blend, roughness_mult, roughness_remap_{in/out}_{min/max}</p>
+        <p class="scene-class-attr-comment">use roughness adjustment attrs: roughness_set, roughness_set_blend, roughness_mult, roughness_remap_{in/out}_{min/max}</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: DwaAdjustMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">use specular adjustment attrs: specular_set, specular_set_blend, specular_mult</p>
+        <p class="scene-class-attr-comment">use specular adjustment attrs: specular_set, specular_set_blend, specular_mult</p>
       
     </p>
     
@@ -65,7 +65,7 @@ title: DwaAdjustMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Override attributes</summary>
+  <summary class="scene-class-attr-group">Override attributes</summary>
   <p>
     
     <h3>casts_caustics</h3>
@@ -80,7 +80,7 @@ title: DwaAdjustMaterial
           | force off = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">allows you to keep or set casts caustics attribute</p>
+        <p class="scene-class-attr-comment">allows you to keep or set casts caustics attribute</p>
       
     </p>
     
@@ -91,7 +91,7 @@ title: DwaAdjustMaterial
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">when checked, turn off clearcoat from input</p>
+        <p class="scene-class-attr-comment">when checked, turn off clearcoat from input</p>
       
     </p>
     
@@ -102,7 +102,7 @@ title: DwaAdjustMaterial
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">when checked, turn off all diffuse from input</p>
+        <p class="scene-class-attr-comment">when checked, turn off all diffuse from input</p>
       
     </p>
     
@@ -113,7 +113,7 @@ title: DwaAdjustMaterial
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">when checked, turn off all specular from input</p>
+        <p class="scene-class-attr-comment">when checked, turn off all specular from input</p>
       
     </p>
     
@@ -129,7 +129,7 @@ title: DwaAdjustMaterial
           | force off = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">allows you to keep or set thin geometry attribute</p>
+        <p class="scene-class-attr-comment">allows you to keep or set thin geometry attribute</p>
       
     </p>
     
@@ -138,7 +138,7 @@ title: DwaAdjustMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>emission</h3>
@@ -148,7 +148,7 @@ title: DwaAdjustMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">emissive map to add to material's emission</p>
+        <p class="scene-class-attr-comment">emissive map to add to material's emission</p>
       
     </p>
     
@@ -164,7 +164,7 @@ title: DwaAdjustMaterial
           | unmasked = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">how to handle emission input. masked uses mix input, unmasked is mix = 1</p>
+        <p class="scene-class-attr-comment">how to handle emission input. masked uses mix input, unmasked is mix = 1</p>
       
     </p>
     
@@ -175,7 +175,7 @@ title: DwaAdjustMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+        <p class="scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       
     </p>
     
@@ -186,7 +186,7 @@ title: DwaAdjustMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -197,7 +197,7 @@ title: DwaAdjustMaterial
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
+        <p class="scene-class-attr-comment">label used in material and light aovs</p>
       
     </p>
     
@@ -208,7 +208,7 @@ title: DwaAdjustMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">weight of adjustments applied to the material</p>
+        <p class="scene-class-attr-comment">weight of adjustments applied to the material</p>
       
     </p>
     
@@ -219,7 +219,7 @@ title: DwaAdjustMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Enable/disable all adjustments</p>
+        <p class="scene-class-attr-comment">Enable/disable all adjustments</p>
       
     </p>
     
@@ -230,7 +230,7 @@ title: DwaAdjustMaterial
       
         default: 0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+        <p class="scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       
     </p>
     

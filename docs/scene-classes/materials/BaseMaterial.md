@@ -13,7 +13,7 @@ title: BaseMaterial
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Diffuse attributes</summary>
+  <summary class="scene-class-attr-group">Diffuse attributes</summary>
   <p>
     
     <h3>diffuse</h3>
@@ -23,7 +23,7 @@ title: BaseMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: BaseMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: BaseMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -54,7 +54,7 @@ title: BaseMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Directional Diffuse attributes</summary>
+  <summary class="scene-class-attr-group">Directional Diffuse attributes</summary>
   <p>
     
     <h3>directional_diffuse</h3>
@@ -64,7 +64,7 @@ title: BaseMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -75,7 +75,7 @@ title: BaseMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -86,7 +86,7 @@ title: BaseMaterial
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -97,7 +97,7 @@ title: BaseMaterial
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -106,7 +106,7 @@ title: BaseMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Emission attributes</summary>
+  <summary class="scene-class-attr-group">Emission attributes</summary>
   <p>
     
     <h3>emission</h3>
@@ -116,7 +116,7 @@ title: BaseMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -127,7 +127,7 @@ title: BaseMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -138,7 +138,7 @@ title: BaseMaterial
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -147,7 +147,7 @@ title: BaseMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Iridescence attributes</summary>
+  <summary class="scene-class-attr-group">Iridescence attributes</summary>
   <p>
     
     <h3>iridescence</h3>
@@ -157,7 +157,7 @@ title: BaseMaterial
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -168,7 +168,7 @@ title: BaseMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Iridescence effect at 0 degree viewing angle</p>
+        <p class="scene-class-attr-comment">Iridescence effect at 0 degree viewing angle</p>
       
     </p>
     
@@ -179,7 +179,7 @@ title: BaseMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Tightens or broadens the distribution of colors</p>
+        <p class="scene-class-attr-comment">Tightens or broadens the distribution of colors</p>
       
     </p>
     
@@ -190,7 +190,7 @@ title: BaseMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">overall multiplier on effect of iridescence</p>
+        <p class="scene-class-attr-comment">overall multiplier on effect of iridescence</p>
       
     </p>
     
@@ -201,7 +201,7 @@ title: BaseMaterial
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -212,7 +212,7 @@ title: BaseMaterial
       
         default: [ 1, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">First color to interpolate from around the hue wheel</p>
+        <p class="scene-class-attr-comment">First color to interpolate from around the hue wheel</p>
       
     </p>
     
@@ -223,7 +223,7 @@ title: BaseMaterial
       
         default: [ 1, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Second color to interpolate to around the hue wheel</p>
+        <p class="scene-class-attr-comment">Second color to interpolate to around the hue wheel</p>
       
     </p>
     
@@ -234,7 +234,7 @@ title: BaseMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls how much the color spectrum is repeated</p>
+        <p class="scene-class-attr-comment">Controls how much the color spectrum is repeated</p>
       
     </p>
     
@@ -243,7 +243,7 @@ title: BaseMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Normal attributes</summary>
+  <summary class="scene-class-attr-group">Normal attributes</summary>
   <p>
     
     <h3>input_normal_space</h3>
@@ -256,7 +256,7 @@ title: BaseMaterial
           | render = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Specifies what space the input normal is in.  Usually this is tangent space for texture maps and render space for projections</p>
+        <p class="scene-class-attr-comment">Specifies what space the input normal is in.  Usually this is tangent space for texture maps and render space for projections</p>
       
     </p>
     
@@ -265,7 +265,7 @@ title: BaseMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Opacity attributes</summary>
+  <summary class="scene-class-attr-group">Opacity attributes</summary>
   <p>
     
     <h3>opacity</h3>
@@ -275,7 +275,7 @@ title: BaseMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -286,7 +286,7 @@ title: BaseMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -295,7 +295,7 @@ title: BaseMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Specular attributes</summary>
+  <summary class="scene-class-attr-group">Specular attributes</summary>
   <p>
     
     <h3>retroreflectivity</h3>
@@ -305,7 +305,7 @@ title: BaseMaterial
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -316,7 +316,7 @@ title: BaseMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -327,7 +327,7 @@ title: BaseMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -338,7 +338,7 @@ title: BaseMaterial
       
         default: 0.10000000149
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -349,7 +349,7 @@ title: BaseMaterial
       
         default: 0.300000011921
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -358,7 +358,7 @@ title: BaseMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Translucency attributes</summary>
+  <summary class="scene-class-attr-group">Translucency attributes</summary>
   <p>
     
     <h3>translucency</h3>
@@ -368,7 +368,7 @@ title: BaseMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -379,7 +379,7 @@ title: BaseMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -390,7 +390,7 @@ title: BaseMaterial
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -401,7 +401,7 @@ title: BaseMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -412,7 +412,7 @@ title: BaseMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -421,7 +421,7 @@ title: BaseMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Translucent Diffuse attributes</summary>
+  <summary class="scene-class-attr-group">Translucent Diffuse attributes</summary>
   <p>
     
     <h3>translucent_diffuse</h3>
@@ -431,7 +431,7 @@ title: BaseMaterial
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -442,7 +442,7 @@ title: BaseMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -453,7 +453,7 @@ title: BaseMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -462,7 +462,7 @@ title: BaseMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Transmission attributes</summary>
+  <summary class="scene-class-attr-group">Transmission attributes</summary>
   <p>
     
     <h3>transmission</h3>
@@ -472,7 +472,7 @@ title: BaseMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -483,7 +483,7 @@ title: BaseMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -494,7 +494,7 @@ title: BaseMaterial
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -503,7 +503,7 @@ title: BaseMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>anisotropic_direction</h3>
@@ -513,7 +513,7 @@ title: BaseMaterial
       
         default: [ 1, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -524,7 +524,7 @@ title: BaseMaterial
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -535,7 +535,7 @@ title: BaseMaterial
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -546,7 +546,7 @@ title: BaseMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+        <p class="scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       
     </p>
     
@@ -557,7 +557,7 @@ title: BaseMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -568,7 +568,7 @@ title: BaseMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">affects transmission and translucency</p>
+        <p class="scene-class-attr-comment">affects transmission and translucency</p>
       
     </p>
     
@@ -579,7 +579,7 @@ title: BaseMaterial
       
         default: [ 0, 0, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -590,7 +590,7 @@ title: BaseMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -601,7 +601,7 @@ title: BaseMaterial
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
+        <p class="scene-class-attr-comment">label used in material and light aovs</p>
       
     </p>
     
@@ -612,7 +612,7 @@ title: BaseMaterial
       
         default: 0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+        <p class="scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       
     </p>
     
@@ -623,7 +623,7 @@ title: BaseMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

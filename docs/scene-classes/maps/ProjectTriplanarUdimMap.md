@@ -13,7 +13,7 @@ title: ProjectTriplanarUdimMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>TRS_order</h3>
@@ -34,7 +34,7 @@ title: ProjectTriplanarUdimMap
           | Trans Rot Scale = 5
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply transformations</p>
+        <p class="scene-class-attr-comment">Order in which to apply transformations</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: ProjectTriplanarUdimMap
       
         default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the transform to use for projection</p>
+        <p class="scene-class-attr-comment">the transform to use for projection</p>
       
     </p>
     
@@ -61,7 +61,7 @@ title: ProjectTriplanarUdimMap
           | TRS = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Source parameters to use for projection transform</p>
+        <p class="scene-class-attr-comment">Source parameters to use for projection transform</p>
       
     </p>
     
@@ -72,7 +72,7 @@ title: ProjectTriplanarUdimMap
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the object whose transform to use for projection</p>
+        <p class="scene-class-attr-comment">the object whose transform to use for projection</p>
       
     </p>
     
@@ -83,7 +83,7 @@ title: ProjectTriplanarUdimMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Rotation of the projection transform</p>
+        <p class="scene-class-attr-comment">Rotation of the projection transform</p>
       
     </p>
     
@@ -105,7 +105,7 @@ title: ProjectTriplanarUdimMap
           | zyx = 5
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply rotation transformations</p>
+        <p class="scene-class-attr-comment">Order in which to apply rotation transformations</p>
       
     </p>
     
@@ -116,7 +116,7 @@ title: ProjectTriplanarUdimMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Scale of the projection transform</p>
+        <p class="scene-class-attr-comment">Scale of the projection transform</p>
       
     </p>
     
@@ -127,7 +127,7 @@ title: ProjectTriplanarUdimMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Tranlation of the projection transform</p>
+        <p class="scene-class-attr-comment">Tranlation of the projection transform</p>
       
     </p>
     
@@ -138,7 +138,7 @@ title: ProjectTriplanarUdimMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">use correct uv orientation</p>
+        <p class="scene-class-attr-comment">use correct uv orientation</p>
       
     </p>
     
@@ -149,7 +149,7 @@ title: ProjectTriplanarUdimMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">use reference space</p>
+        <p class="scene-class-attr-comment">use reference space</p>
       
     </p>
     
@@ -160,7 +160,7 @@ title: ProjectTriplanarUdimMap
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset for x projected map</p>
+        <p class="scene-class-attr-comment">2D offset for x projected map</p>
       
     </p>
     
@@ -171,7 +171,7 @@ title: ProjectTriplanarUdimMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation for x projected map</p>
+        <p class="scene-class-attr-comment">2D rotation for x projected map</p>
       
     </p>
     
@@ -182,7 +182,7 @@ title: ProjectTriplanarUdimMap
       
         default: [ 0.5, 0.5 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center for x projected map</p>
+        <p class="scene-class-attr-comment">2D rotation center for x projected map</p>
       
     </p>
     
@@ -193,7 +193,7 @@ title: ProjectTriplanarUdimMap
       
         default: [ 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale for x projected map</p>
+        <p class="scene-class-attr-comment">2D scale for x projected map</p>
       
     </p>
     
@@ -204,7 +204,7 @@ title: ProjectTriplanarUdimMap
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset for y projected map</p>
+        <p class="scene-class-attr-comment">2D offset for y projected map</p>
       
     </p>
     
@@ -215,7 +215,7 @@ title: ProjectTriplanarUdimMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation for y projected map</p>
+        <p class="scene-class-attr-comment">2D rotation for y projected map</p>
       
     </p>
     
@@ -226,7 +226,7 @@ title: ProjectTriplanarUdimMap
       
         default: [ 0.5, 0.5 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center for y projected map</p>
+        <p class="scene-class-attr-comment">2D rotation center for y projected map</p>
       
     </p>
     
@@ -237,7 +237,7 @@ title: ProjectTriplanarUdimMap
       
         default: [ 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale for y projected map</p>
+        <p class="scene-class-attr-comment">2D scale for y projected map</p>
       
     </p>
     
@@ -248,7 +248,7 @@ title: ProjectTriplanarUdimMap
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset for z projected map</p>
+        <p class="scene-class-attr-comment">2D offset for z projected map</p>
       
     </p>
     
@@ -259,7 +259,7 @@ title: ProjectTriplanarUdimMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation for z projected map</p>
+        <p class="scene-class-attr-comment">2D rotation for z projected map</p>
       
     </p>
     
@@ -270,7 +270,7 @@ title: ProjectTriplanarUdimMap
       
         default: [ 0.5, 0.5 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center for z projected map</p>
+        <p class="scene-class-attr-comment">2D rotation center for z projected map</p>
       
     </p>
     
@@ -281,7 +281,7 @@ title: ProjectTriplanarUdimMap
       
         default: [ 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale for z projected map</p>
+        <p class="scene-class-attr-comment">2D scale for z projected map</p>
       
     </p>
     

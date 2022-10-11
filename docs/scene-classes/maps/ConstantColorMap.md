@@ -13,7 +13,7 @@ title: ConstantColorMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>color_value</h3>
@@ -23,7 +23,7 @@ title: ConstantColorMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">constant color value</p>
+        <p class="scene-class-attr-comment">constant color value</p>
       
     </p>
     

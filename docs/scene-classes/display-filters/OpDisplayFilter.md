@@ -13,7 +13,7 @@ title: OpDisplayFilter
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <summary class="scene-class-attr-group">Advanced attributes</summary>
   <p>
     
     <h3>invert_mask</h3>
@@ -23,7 +23,7 @@ title: OpDisplayFilter
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        <p class="scene-class-attr-comment">invert value of mask</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: OpDisplayFilter
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        <p class="scene-class-attr-comment">blend between output and input</p>
       
     </p>
     
@@ -43,7 +43,7 @@ title: OpDisplayFilter
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>input1</h3>
@@ -53,7 +53,7 @@ title: OpDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">first operand</p>
+        <p class="scene-class-attr-comment">first operand</p>
       
     </p>
     
@@ -64,7 +64,7 @@ title: OpDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">second operand</p>
+        <p class="scene-class-attr-comment">second operand</p>
       
     </p>
     
@@ -75,7 +75,7 @@ title: OpDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -145,7 +145,7 @@ title: OpDisplayFilter
           | not = 29
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

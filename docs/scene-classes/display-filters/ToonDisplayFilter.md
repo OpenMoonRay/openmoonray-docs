@@ -13,7 +13,7 @@ title: ToonDisplayFilter
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>ambient</h3>
@@ -23,7 +23,7 @@ title: ToonDisplayFilter
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Adds an ambient light to the cel shading</p>
+        <p class="scene-class-attr-comment">Adds an ambient light to the cel shading</p>
       
     </p>
     
@@ -41,7 +41,7 @@ title: ToonDisplayFilter
           | Laplacian of Gaussian = 3
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -52,7 +52,7 @@ title: ToonDisplayFilter
       
         default: 0.00999999977648
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The threshold for the depth-based ink outline</p>
+        <p class="scene-class-attr-comment">The threshold for the depth-based ink outline</p>
       
     </p>
     
@@ -63,7 +63,7 @@ title: ToonDisplayFilter
       
         default: 0.00999999977648
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Increase for a more pronounced normal-based ink outline</p>
+        <p class="scene-class-attr-comment">Increase for a more pronounced normal-based ink outline</p>
       
     </p>
     
@@ -74,7 +74,7 @@ title: ToonDisplayFilter
       
         default: 0.00999999977648
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The threshold for the normal-based ink outline</p>
+        <p class="scene-class-attr-comment">The threshold for the normal-based ink outline</p>
       
     </p>
     
@@ -85,7 +85,7 @@ title: ToonDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">RenderOutput that represents diffuse albedo material aov</p>
+        <p class="scene-class-attr-comment">RenderOutput that represents diffuse albedo material aov</p>
       
     </p>
     
@@ -96,7 +96,7 @@ title: ToonDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">RenderOutput with 'depth' result</p>
+        <p class="scene-class-attr-comment">RenderOutput with 'depth' result</p>
       
     </p>
     
@@ -107,7 +107,7 @@ title: ToonDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">RenderOutput that represents diffuse reflection LPE</p>
+        <p class="scene-class-attr-comment">RenderOutput that represents diffuse reflection LPE</p>
       
     </p>
     
@@ -118,7 +118,7 @@ title: ToonDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">RenderOutput that represents glossy reflection LPE</p>
+        <p class="scene-class-attr-comment">RenderOutput that represents glossy reflection LPE</p>
       
     </p>
     
@@ -129,7 +129,7 @@ title: ToonDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">RenderOutput with 'normal' result</p>
+        <p class="scene-class-attr-comment">RenderOutput with 'normal' result</p>
       
     </p>
     
@@ -140,7 +140,7 @@ title: ToonDisplayFilter
       
         default: 2
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Sets number of toon cels in diffuse shading</p>
+        <p class="scene-class-attr-comment">Sets number of toon cels in diffuse shading</p>
       
     </p>
     

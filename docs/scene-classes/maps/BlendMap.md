@@ -13,7 +13,7 @@ title: BlendMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>blend_amount</h3>
@@ -23,7 +23,7 @@ title: BlendMap
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The amount to blend between color A (0) and color B (1)</p>
+        <p class="scene-class-attr-comment">The amount to blend between color A (0) and color B (1)</p>
       
     </p>
     
@@ -37,7 +37,7 @@ title: BlendMap
           | cubic = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The type of blending algorithm</p>
+        <p class="scene-class-attr-comment">The type of blending algorithm</p>
       
     </p>
     
@@ -48,7 +48,7 @@ title: BlendMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The color you get if blend amount is 0</p>
+        <p class="scene-class-attr-comment">The color you get if blend amount is 0</p>
       
     </p>
     
@@ -59,7 +59,7 @@ title: BlendMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The color you get if blend amount is 1</p>
+        <p class="scene-class-attr-comment">The color you get if blend amount is 1</p>
       
     </p>
     
@@ -70,7 +70,7 @@ title: BlendMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If the blend amount is greater than this amount, it will choose color B (1)</p>
+        <p class="scene-class-attr-comment">If the blend amount is greater than this amount, it will choose color B (1)</p>
       
     </p>
     
@@ -81,7 +81,7 @@ title: BlendMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If the blend amount is less than or equal to this amount, it will choose color A (0)</p>
+        <p class="scene-class-attr-comment">If the blend amount is less than or equal to this amount, it will choose color A (0)</p>
       
     </p>
     

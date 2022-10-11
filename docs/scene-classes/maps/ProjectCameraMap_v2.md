@@ -13,7 +13,7 @@ title: ProjectCameraMap_v2
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>alpha_only</h3>
@@ -23,7 +23,7 @@ title: ProjectCameraMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When enabled, the alpha channel is returned instead of RGB</p>
+        <p class="scene-class-attr-comment">When enabled, the alpha channel is returned instead of RGB</p>
       
     </p>
     
@@ -37,7 +37,7 @@ title: ProjectCameraMap_v2
           | custom = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio</p>
+        <p class="scene-class-attr-comment">Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio</p>
       
     </p>
     
@@ -48,7 +48,7 @@ title: ProjectCameraMap_v2
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
+        <p class="scene-class-attr-comment">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
       
     </p>
     
@@ -59,7 +59,7 @@ title: ProjectCameraMap_v2
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">a custom aspect ratio for the projected texture</p>
+        <p class="scene-class-attr-comment">a custom aspect ratio for the projected texture</p>
       
     </p>
     
@@ -75,7 +75,7 @@ title: ProjectCameraMap_v2
           | auto = 2 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls application of gamma to images (off -0, on - 1, auto - 2).   Auto will apply gamma decoding to 8-bit images</p>
+        <p class="scene-class-attr-comment">Controls application of gamma to images (off -0, on - 1, auto - 2).   Auto will apply gamma decoding to 8-bit images</p>
       
     </p>
     
@@ -86,7 +86,7 @@ title: ProjectCameraMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Toggles whether camera projections appear on back faces.</p>
+        <p class="scene-class-attr-comment">Toggles whether camera projections appear on back faces.</p>
       
     </p>
     
@@ -97,7 +97,7 @@ title: ProjectCameraMap_v2
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the camera to project from</p>
+        <p class="scene-class-attr-comment">the camera to project from</p>
       
     </p>
     
@@ -108,7 +108,7 @@ title: ProjectCameraMap_v2
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        <p class="scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       
     </p>
     
@@ -119,7 +119,7 @@ title: ProjectCameraMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When enabled, the rgb channels are divided by the alpha channel (where non-zero)</p>
+        <p class="scene-class-attr-comment">When enabled, the rgb channels are divided by the alpha channel (where non-zero)</p>
       
     </p>
     
@@ -130,7 +130,7 @@ title: ProjectCameraMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">use reference space</p>
+        <p class="scene-class-attr-comment">use reference space</p>
       
     </p>
     

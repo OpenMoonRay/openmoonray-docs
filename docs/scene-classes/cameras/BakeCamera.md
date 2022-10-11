@@ -13,7 +13,7 @@ title: BakeCamera
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Frustum attributes</summary>
+  <summary class="scene-class-attr-group">Frustum attributes</summary>
   <p>
     
     <h3>far</h3>
@@ -23,7 +23,7 @@ title: BakeCamera
       
         default: 10000.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: BakeCamera
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -43,7 +43,7 @@ title: BakeCamera
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Motion Blur attributes</summary>
+  <summary class="scene-class-attr-group">Motion Blur attributes</summary>
   <p>
     
     <h3>mb_shutter_bias</h3>
@@ -53,7 +53,7 @@ title: BakeCamera
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -64,7 +64,7 @@ title: BakeCamera
       
         default: 0.25
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -75,7 +75,7 @@ title: BakeCamera
       
         default: -0.25
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -84,7 +84,7 @@ title: BakeCamera
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Render Masks attributes</summary>
+  <summary class="scene-class-attr-group">Render Masks attributes</summary>
   <p>
     
     <h3>pixel_sample_map</h3>
@@ -94,7 +94,7 @@ title: BakeCamera
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -103,7 +103,7 @@ title: BakeCamera
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>bias</h3>
@@ -113,7 +113,7 @@ title: BakeCamera
       
         default: 0.00300000002608
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Ray-tracing offset for primary ray origin</p>
+        <p class="scene-class-attr-comment">Ray-tracing offset for primary ray origin</p>
       
     </p>
     
@@ -124,7 +124,7 @@ title: BakeCamera
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The geometry object to bake</p>
+        <p class="scene-class-attr-comment">The geometry object to bake</p>
       
     </p>
     
@@ -135,7 +135,7 @@ title: BakeCamera
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Increase or decrease the internal position map buffer resolution</p>
+        <p class="scene-class-attr-comment">Increase or decrease the internal position map buffer resolution</p>
       
     </p>
     
@@ -153,7 +153,7 @@ title: BakeCamera
           | above surface reverse normal = 3 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">How to generate primary rays</p>
+        <p class="scene-class-attr-comment">How to generate primary rays</p>
       
     </p>
     
@@ -164,7 +164,7 @@ title: BakeCamera
       
         default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -175,7 +175,7 @@ title: BakeCamera
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Use this option to supply your own normals that are used when computing ray directions.  Without this option, normals are computed from the geometry and do not take into account any material applied normal mapping.</p>
+        <p class="scene-class-attr-comment">Use this option to supply your own normals that are used when computing ray directions.  Without this option, normals are computed from the geometry and do not take into account any material applied normal mapping.</p>
       
     </p>
     
@@ -189,7 +189,7 @@ title: BakeCamera
           | tangent space = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Use camera space if you generated per frame normal maps in a pre-pass using the normal material aov.  You probably want to use tangent space if you are using a normal map that is also used in the surfacing setup.</p>
+        <p class="scene-class-attr-comment">Use camera space if you generated per frame normal maps in a pre-pass using the normal material aov.  You probably want to use tangent space if you are using a normal map that is also used in the surfacing setup.</p>
       
     </p>
     
@@ -200,7 +200,7 @@ title: BakeCamera
       
         default: 1001
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Udim tile to bake</p>
+        <p class="scene-class-attr-comment">Udim tile to bake</p>
       
     </p>
     
@@ -211,7 +211,7 @@ title: BakeCamera
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If true, bias is scaled based on position magnitude</p>
+        <p class="scene-class-attr-comment">If true, bias is scaled based on position magnitude</p>
       
     </p>
     
@@ -222,7 +222,7 @@ title: BakeCamera
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Specifies a Vec2f primitive attribute to use as the uv coordinates.  If empty, the default uv for the mesh is used.  The uvs must provide a unique parameterization of the mesh, i.e. a given (u, v) can appear only once on the mesh being baked.</p>
+        <p class="scene-class-attr-comment">Specifies a Vec2f primitive attribute to use as the uv coordinates.  If empty, the default uv for the mesh is used.  The uvs must provide a unique parameterization of the mesh, i.e. a given (u, v) can appear only once on the mesh being baked.</p>
       
     </p>
     

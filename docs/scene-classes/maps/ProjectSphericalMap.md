@@ -13,7 +13,7 @@ title: ProjectSphericalMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>TRS_order</h3>
@@ -34,7 +34,7 @@ title: ProjectSphericalMap
           | Trans Rot Scale = 5
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply transformations</p>
+        <p class="scene-class-attr-comment">Order in which to apply transformations</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: ProjectSphericalMap
       
         default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the transform to use for projection</p>
+        <p class="scene-class-attr-comment">the transform to use for projection</p>
       
     </p>
     
@@ -61,7 +61,7 @@ title: ProjectSphericalMap
           | TRS = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Source parameters to use for projection transform</p>
+        <p class="scene-class-attr-comment">Source parameters to use for projection transform</p>
       
     </p>
     
@@ -72,7 +72,7 @@ title: ProjectSphericalMap
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the object whose transform to use for projection</p>
+        <p class="scene-class-attr-comment">the object whose transform to use for projection</p>
       
     </p>
     
@@ -83,7 +83,7 @@ title: ProjectSphericalMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Rotation of the projection transform</p>
+        <p class="scene-class-attr-comment">Rotation of the projection transform</p>
       
     </p>
     
@@ -105,7 +105,7 @@ title: ProjectSphericalMap
           | zyx = 5
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply rotation transformations</p>
+        <p class="scene-class-attr-comment">Order in which to apply rotation transformations</p>
       
     </p>
     
@@ -116,7 +116,7 @@ title: ProjectSphericalMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Scale of the projection transform</p>
+        <p class="scene-class-attr-comment">Scale of the projection transform</p>
       
     </p>
     
@@ -127,7 +127,7 @@ title: ProjectSphericalMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Tranlation of the projection transform</p>
+        <p class="scene-class-attr-comment">Tranlation of the projection transform</p>
       
     </p>
     
@@ -138,7 +138,7 @@ title: ProjectSphericalMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">use reference space</p>
+        <p class="scene-class-attr-comment">use reference space</p>
       
     </p>
     

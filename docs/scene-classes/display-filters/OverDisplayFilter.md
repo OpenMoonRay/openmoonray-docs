@@ -13,7 +13,7 @@ title: OverDisplayFilter
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>alpha</h3>
@@ -23,7 +23,7 @@ title: OverDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">alpha for over operation</p>
+        <p class="scene-class-attr-comment">alpha for over operation</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: OverDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">RenderOutput on bottom</p>
+        <p class="scene-class-attr-comment">RenderOutput on bottom</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: OverDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">RenderOutput on top</p>
+        <p class="scene-class-attr-comment">RenderOutput on top</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: OverDisplayFilter
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of alpha</p>
+        <p class="scene-class-attr-comment">invert value of alpha</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: OverDisplayFilter
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        <p class="scene-class-attr-comment">blend between output and input</p>
       
     </p>
     

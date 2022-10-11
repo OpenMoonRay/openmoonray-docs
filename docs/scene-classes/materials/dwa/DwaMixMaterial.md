@@ -13,7 +13,7 @@ title: DwaMixMaterial
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <summary class="scene-class-attr-group">Advanced attributes</summary>
   <p>
     
     <h3>blend_color_space</h3>
@@ -28,7 +28,7 @@ title: DwaMixMaterial
           | HSL = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Color space used when blending the two material's color parameters</p>
+        <p class="scene-class-attr-comment">Color space used when blending the two material's color parameters</p>
       
     </p>
     
@@ -44,7 +44,7 @@ title: DwaMixMaterial
           | random walk = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If child materials disagree on the type of bssrdf, this type will be used instead.</p>
+        <p class="scene-class-attr-comment">If child materials disagree on the type of bssrdf, this type will be used instead.</p>
       
     </p>
     
@@ -55,7 +55,7 @@ title: DwaMixMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If child materials disagree on the type of clearcoat use bending, this type will be used instead.</p>
+        <p class="scene-class-attr-comment">If child materials disagree on the type of clearcoat use bending, this type will be used instead.</p>
       
     </p>
     
@@ -69,7 +69,7 @@ title: DwaMixMaterial
           | GGX = 1 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If child materials disagree on the type of outer specular model, this type will be used instead.</p>
+        <p class="scene-class-attr-comment">If child materials disagree on the type of outer specular model, this type will be used instead.</p>
       
     </p>
     
@@ -83,7 +83,7 @@ title: DwaMixMaterial
           | GGX = 1 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If child materials disagree on the type of specular model, this type will be used instead.</p>
+        <p class="scene-class-attr-comment">If child materials disagree on the type of specular model, this type will be used instead.</p>
       
     </p>
     
@@ -94,7 +94,7 @@ title: DwaMixMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If child materials disagree on the type of thin geometry, this type will be used instead.</p>
+        <p class="scene-class-attr-comment">If child materials disagree on the type of thin geometry, this type will be used instead.</p>
       
     </p>
     
@@ -110,7 +110,7 @@ title: DwaMixMaterial
           | Toon = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If child materials disagree on the type of toon specular model, this type will be used instead.</p>
+        <p class="scene-class-attr-comment">If child materials disagree on the type of toon specular model, this type will be used instead.</p>
       
     </p>
     
@@ -121,7 +121,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">By default, only the geometry associated with this material contributes to subsurface. The DwaLayerMaterial ignores the sss trace sets of the submaterials. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
+        <p class="scene-class-attr-comment">By default, only the geometry associated with this material contributes to subsurface. The DwaLayerMaterial ignores the sss trace sets of the submaterials. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
       
     </p>
     
@@ -130,7 +130,7 @@ title: DwaMixMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Glitter Fallback attributes</summary>
+  <summary class="scene-class-attr-group">Glitter Fallback attributes</summary>
   <p>
     
     <h3>fallback_glitter_LOD_quality</h3>
@@ -140,7 +140,7 @@ title: DwaMixMaterial
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier.  This parameter will only be used when layering two distinct glitter materials.</p>
+        <p class="scene-class-attr-comment">controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier.  This parameter will only be used when layering two distinct glitter materials.</p>
       
     </p>
     
@@ -162,7 +162,7 @@ title: DwaMixMaterial
           | radius = 5
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">developer debug visualization modes.  This parameter will only be used when layering two distinct glitter materials.</p>
+        <p class="scene-class-attr-comment">developer debug visualization modes.  This parameter will only be used when layering two distinct glitter materials.</p>
       
     </p>
     
@@ -176,7 +176,7 @@ title: DwaMixMaterial
           | additive = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow).  This parameter will only be used when layering two distinct glitter materials.</p>
+        <p class="scene-class-attr-comment">layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow).  This parameter will only be used when layering two distinct glitter materials.</p>
       
     </p>
     
@@ -187,7 +187,7 @@ title: DwaMixMaterial
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">randomness of flake orientation.  This parameter will only be used when layering two distinct glitter materials.</p>
+        <p class="scene-class-attr-comment">randomness of flake orientation.  This parameter will only be used when layering two distinct glitter materials.</p>
       
     </p>
     
@@ -198,7 +198,7 @@ title: DwaMixMaterial
       
         default: 0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The seed for the glitter random number generator.  This parameter will only be used when layering two distinct glitter materials.</p>
+        <p class="scene-class-attr-comment">The seed for the glitter random number generator.  This parameter will only be used when layering two distinct glitter materials.</p>
       
     </p>
     
@@ -212,7 +212,7 @@ title: DwaMixMaterial
           | reference = 5 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The space to calculate the worley noise in, defaults to reference space.  This parameter will only be used when layering two distinct glitter materials.</p>
+        <p class="scene-class-attr-comment">The space to calculate the worley noise in, defaults to reference space.  This parameter will only be used when layering two distinct glitter materials.</p>
       
     </p>
     
@@ -223,7 +223,7 @@ title: DwaMixMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">0 implies none of this style, 1 implies all the flakes will get this style.  This parameter will only be used when layering two distinct glitter materials.</p>
+        <p class="scene-class-attr-comment">0 implies none of this style, 1 implies all the flakes will get this style.  This parameter will only be used when layering two distinct glitter materials.</p>
       
     </p>
     
@@ -234,7 +234,7 @@ title: DwaMixMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">0 implies none of this style, 1 implies all the flakes will get this style.  This parameter will only be used when layering two distinct glitter materials.</p>
+        <p class="scene-class-attr-comment">0 implies none of this style, 1 implies all the flakes will get this style.  This parameter will only be used when layering two distinct glitter materials.</p>
       
     </p>
     
@@ -245,7 +245,7 @@ title: DwaMixMaterial
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).  This parameter will only be used when layering two distinct glitter materials.</p>
+        <p class="scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).  This parameter will only be used when layering two distinct glitter materials.</p>
       
     </p>
     
@@ -256,7 +256,7 @@ title: DwaMixMaterial
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).  This parameter will only be used when layering two distinct glitter materials.</p>
+        <p class="scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).  This parameter will only be used when layering two distinct glitter materials.</p>
       
     </p>
     
@@ -265,7 +265,7 @@ title: DwaMixMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>extra_aovs</h3>
@@ -275,7 +275,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+        <p class="scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       
     </p>
     
@@ -286,7 +286,7 @@ title: DwaMixMaterial
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
+        <p class="scene-class-attr-comment">label used in material and light aovs</p>
       
     </p>
     
@@ -297,7 +297,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -308,7 +308,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -319,7 +319,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -330,7 +330,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -341,7 +341,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -352,7 +352,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -363,7 +363,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -374,7 +374,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -385,7 +385,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -396,7 +396,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -407,7 +407,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -418,7 +418,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -429,7 +429,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -440,7 +440,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -451,7 +451,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -462,7 +462,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -473,7 +473,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -484,7 +484,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -495,7 +495,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -506,7 +506,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -517,7 +517,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -528,7 +528,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -539,7 +539,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -550,7 +550,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -561,7 +561,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -572,7 +572,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -583,7 +583,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -594,7 +594,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -605,7 +605,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -616,7 +616,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -627,7 +627,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -638,7 +638,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -649,7 +649,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -660,7 +660,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -671,7 +671,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -682,7 +682,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -693,7 +693,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -704,7 +704,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -715,7 +715,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -726,7 +726,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -737,7 +737,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -748,7 +748,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -759,7 +759,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -770,7 +770,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -781,7 +781,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -792,7 +792,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -803,7 +803,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -814,7 +814,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -825,7 +825,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -836,7 +836,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -847,7 +847,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -858,7 +858,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -869,7 +869,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -880,7 +880,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -891,7 +891,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -902,7 +902,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -913,7 +913,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -924,7 +924,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -935,7 +935,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -946,7 +946,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -957,7 +957,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -968,7 +968,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -979,7 +979,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -990,7 +990,7 @@ title: DwaMixMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -1001,7 +1001,7 @@ title: DwaMixMaterial
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Which of the 64 inputs (0 to 63) to use. Fractional values will mix the two materials the value lies between</p>
+        <p class="scene-class-attr-comment">Which of the 64 inputs (0 to 63) to use. Fractional values will mix the two materials the value lies between</p>
       
     </p>
     
@@ -1019,7 +1019,7 @@ title: DwaMixMaterial
           | smooth = 3
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Adjusts rate of transition from one material to the next based on mix value</p>
+        <p class="scene-class-attr-comment">Adjusts rate of transition from one material to the next based on mix value</p>
       
     </p>
     
@@ -1030,7 +1030,7 @@ title: DwaMixMaterial
       
         default: 0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+        <p class="scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       
     </p>
     
@@ -1041,7 +1041,7 @@ title: DwaMixMaterial
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When enabled, multiplies mix value by number of inputs used. Inputs should start at 0 with no gaps</p>
+        <p class="scene-class-attr-comment">When enabled, multiplies mix value by number of inputs used. Inputs should start at 0 with no gaps</p>
       
     </p>
     

@@ -13,7 +13,7 @@ title: SphericalCamera
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Frustum attributes</summary>
+  <summary class="scene-class-attr-group">Frustum attributes</summary>
   <p>
     
     <h3>far</h3>
@@ -23,7 +23,7 @@ title: SphericalCamera
       
         default: 10000.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: SphericalCamera
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -43,7 +43,7 @@ title: SphericalCamera
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Motion Blur attributes</summary>
+  <summary class="scene-class-attr-group">Motion Blur attributes</summary>
   <p>
     
     <h3>mb_shutter_bias</h3>
@@ -53,7 +53,7 @@ title: SphericalCamera
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -64,7 +64,7 @@ title: SphericalCamera
       
         default: 0.25
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -75,7 +75,7 @@ title: SphericalCamera
       
         default: -0.25
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -84,7 +84,7 @@ title: SphericalCamera
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Render Masks attributes</summary>
+  <summary class="scene-class-attr-group">Render Masks attributes</summary>
   <p>
     
     <h3>pixel_sample_map</h3>
@@ -94,7 +94,7 @@ title: SphericalCamera
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -103,7 +103,7 @@ title: SphericalCamera
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>node_xform</h3>
@@ -113,7 +113,7 @@ title: SphericalCamera
       
         default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

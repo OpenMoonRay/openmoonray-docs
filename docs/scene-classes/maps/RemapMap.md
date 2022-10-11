@@ -13,7 +13,7 @@ title: RemapMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Channel attributes</summary>
+  <summary class="scene-class-attr-group">Channel attributes</summary>
   <p>
     
     <h3>clamp_max_RGB</h3>
@@ -23,7 +23,7 @@ title: RemapMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the maximum value output by this map when 'clamp' is enabled</p>
+        <p class="scene-class-attr-comment">the maximum value output by this map when 'clamp' is enabled</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: RemapMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the minimum value output by this map when 'clamp' is enabled</p>
+        <p class="scene-class-attr-comment">the minimum value output by this map when 'clamp' is enabled</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: RemapMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the input value that will be remapped to the 'output max' value</p>
+        <p class="scene-class-attr-comment">the input value that will be remapped to the 'output max' value</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: RemapMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the input value that will be remapped to the 'output min' value</p>
+        <p class="scene-class-attr-comment">the input value that will be remapped to the 'output min' value</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: RemapMap
       
         default: [ 0.5, 0.5, 0.5 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">biases the in-between values toward 'output min' or 'output max'. Default = 0.5</p>
+        <p class="scene-class-attr-comment">biases the in-between values toward 'output min' or 'output max'. Default = 0.5</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: RemapMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the value that 'input max' is remapped to</p>
+        <p class="scene-class-attr-comment">the value that 'input max' is remapped to</p>
       
     </p>
     
@@ -89,7 +89,7 @@ title: RemapMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the value that 'input min' is remapped to</p>
+        <p class="scene-class-attr-comment">the value that 'input min' is remapped to</p>
       
     </p>
     
@@ -98,7 +98,7 @@ title: RemapMap
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>clamp</h3>
@@ -108,7 +108,7 @@ title: RemapMap
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.</p>
+        <p class="scene-class-attr-comment">enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.</p>
       
     </p>
     
@@ -119,7 +119,7 @@ title: RemapMap
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.</p>
+        <p class="scene-class-attr-comment">enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.</p>
       
     </p>
     
@@ -130,7 +130,7 @@ title: RemapMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the maximum value output by this map when 'clamp' is enabled</p>
+        <p class="scene-class-attr-comment">the maximum value output by this map when 'clamp' is enabled</p>
       
     </p>
     
@@ -141,7 +141,7 @@ title: RemapMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the minimum value output by this map when 'clamp' is enabled</p>
+        <p class="scene-class-attr-comment">the minimum value output by this map when 'clamp' is enabled</p>
       
     </p>
     
@@ -152,7 +152,7 @@ title: RemapMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the input values to be remapped</p>
+        <p class="scene-class-attr-comment">the input values to be remapped</p>
       
     </p>
     
@@ -163,7 +163,7 @@ title: RemapMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the input value that will be remapped to the 'output max' value</p>
+        <p class="scene-class-attr-comment">the input value that will be remapped to the 'output max' value</p>
       
     </p>
     
@@ -174,7 +174,7 @@ title: RemapMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the input value that will be remapped to the 'output min' value</p>
+        <p class="scene-class-attr-comment">the input value that will be remapped to the 'output min' value</p>
       
     </p>
     
@@ -185,7 +185,7 @@ title: RemapMap
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">biases the in-between values toward 'output min' or 'output max'. Default = 0.5</p>
+        <p class="scene-class-attr-comment">biases the in-between values toward 'output min' or 'output max'. Default = 0.5</p>
       
     </p>
     
@@ -196,7 +196,7 @@ title: RemapMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the value that 'input max' is remapped to</p>
+        <p class="scene-class-attr-comment">the value that 'input max' is remapped to</p>
       
     </p>
     
@@ -207,7 +207,7 @@ title: RemapMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the value that 'input min' is remapped to</p>
+        <p class="scene-class-attr-comment">the value that 'input min' is remapped to</p>
       
     </p>
     
@@ -221,7 +221,7 @@ title: RemapMap
           | RGB = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Choose whether you are remapping using single values (uniform) or with separate RGB channels</p>
+        <p class="scene-class-attr-comment">Choose whether you are remapping using single values (uniform) or with separate RGB channels</p>
       
     </p>
     

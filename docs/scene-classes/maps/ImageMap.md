@@ -13,7 +13,7 @@ title: ImageMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Blur attributes</summary>
+  <summary class="scene-class-attr-group">Blur attributes</summary>
   <p>
     
     <h3>blur</h3>
@@ -23,7 +23,7 @@ title: ImageMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">This parameter is deprecated, do not use!   Number of pixels to blur the image</p>
+        <p class="scene-class-attr-comment">This parameter is deprecated, do not use!   Number of pixels to blur the image</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: ImageMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Amount to scale derivatives which controls mipmap selection</p>
+        <p class="scene-class-attr-comment">Amount to scale derivatives which controls mipmap selection</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: ImageMap
       
         default: 3
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">This parameter is deprecated, do not use!  Number of internal samples for blur.   Higher values increase quality</p>
+        <p class="scene-class-attr-comment">This parameter is deprecated, do not use!  Number of internal samples for blur.   Higher values increase quality</p>
       
     </p>
     
@@ -54,7 +54,7 @@ title: ImageMap
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Color Correction attributes</summary>
+  <summary class="scene-class-attr-group">Color Correction attributes</summary>
   <p>
     
     <h3>TMI</h3>
@@ -64,7 +64,7 @@ title: ImageMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
+        <p class="scene-class-attr-comment">T = Temperature where positive values push towards blue and negative towards red.   M = Magenta where positive values push towards magenta and negative towards green.  I = Intensity where negative values remove and positive values add energy </p>
       
     </p>
     
@@ -75,7 +75,7 @@ title: ImageMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -86,7 +86,7 @@ title: ImageMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -97,7 +97,7 @@ title: ImageMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -108,7 +108,7 @@ title: ImageMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -119,7 +119,7 @@ title: ImageMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -130,7 +130,7 @@ title: ImageMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -141,7 +141,7 @@ title: ImageMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -152,7 +152,7 @@ title: ImageMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -163,7 +163,7 @@ title: ImageMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -174,7 +174,7 @@ title: ImageMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -183,7 +183,7 @@ title: ImageMap
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>alpha_only</h3>
@@ -193,7 +193,7 @@ title: ImageMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If true, the alpha channel of the texture will be placed in the rgb channels.  If the texture has no alpha channel, 1.0 is used, and the resulting texture lookup is then always white.</p>
+        <p class="scene-class-attr-comment">If true, the alpha channel of the texture will be placed in the rgb channels.  If the texture has no alpha channel, 1.0 is used, and the resulting texture lookup is then always white.</p>
       
     </p>
     
@@ -204,7 +204,7 @@ title: ImageMap
       
         default: [ 0, 1, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">default color to be used for missing udims when 'use default color when missing' is enabled</p>
+        <p class="scene-class-attr-comment">default color to be used for missing udims when 'use default color when missing' is enabled</p>
       
     </p>
     
@@ -220,7 +220,7 @@ title: ImageMap
           | auto = 2 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -231,7 +231,7 @@ title: ImageMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -242,7 +242,7 @@ title: ImageMap
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -253,7 +253,7 @@ title: ImageMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Rotation in degrees</p>
+        <p class="scene-class-attr-comment">Rotation in degrees</p>
       
     </p>
     
@@ -264,7 +264,7 @@ title: ImageMap
       
         default: [ 0.5, 0.5 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">UV coordinate around which to rotate</p>
+        <p class="scene-class-attr-comment">UV coordinate around which to rotate</p>
       
     </p>
     
@@ -275,7 +275,7 @@ title: ImageMap
       
         default: [ 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -286,7 +286,7 @@ title: ImageMap
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx). If filename contains '&lt;UDIM&gt;', udim index substitution is performed on filename.  In the UDIM case, 'scale', 'offset', and 'wrap around' are ignored.</p>
+        <p class="scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx). If filename contains '&lt;UDIM&gt;', udim index substitution is performed on filename.  In the UDIM case, 'scale', 'offset', and 'wrap around' are ignored.</p>
       
     </p>
     
@@ -304,7 +304,7 @@ title: ImageMap
           | hair closest surface = 3
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -315,7 +315,7 @@ title: ImageMap
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -326,7 +326,7 @@ title: ImageMap
       
         default: 10
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">udim maximum v value</p>
+        <p class="scene-class-attr-comment">udim maximum v value</p>
       
     </p>
     
@@ -337,7 +337,7 @@ title: ImageMap
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -348,7 +348,7 @@ title: ImageMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Uses the 'default color' for missing udims and does not report error</p>
+        <p class="scene-class-attr-comment">Uses the 'default color' for missing udims and does not report error</p>
       
     </p>
     
@@ -359,7 +359,7 @@ title: ImageMap
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

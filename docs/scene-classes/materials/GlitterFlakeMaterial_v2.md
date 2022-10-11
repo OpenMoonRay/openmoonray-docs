@@ -13,7 +13,7 @@ title: GlitterFlakeMaterial_v2
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <summary class="scene-class-attr-group">Advanced attributes</summary>
   <p>
     
     <h3>approximate_glitter_for_secondary_rays</h3>
@@ -23,7 +23,7 @@ title: GlitterFlakeMaterial_v2
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">use an approximation to shade glitter for non-mirror secondary rays</p>
+        <p class="scene-class-attr-comment">use an approximation to shade glitter for non-mirror secondary rays</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: GlitterFlakeMaterial_v2
           | radius = 5
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">developer debug visualization modes</p>
+        <p class="scene-class-attr-comment">developer debug visualization modes</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier</p>
+        <p class="scene-class-attr-comment">controls quality of glitter at distances where individual flakes cannot be perceived; at lower values, approximation kicks in earlier</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">use this to control where glitter appears</p>
+        <p class="scene-class-attr-comment">use this to control where glitter appears</p>
       
     </p>
     
@@ -76,7 +76,7 @@ title: GlitterFlakeMaterial_v2
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Appearance attributes</summary>
+  <summary class="scene-class-attr-group">Appearance attributes</summary>
   <p>
     
     <h3>decouple_flake_size</h3>
@@ -86,7 +86,7 @@ title: GlitterFlakeMaterial_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">makes flake size independent of flake density</p>
+        <p class="scene-class-attr-comment">makes flake size independent of flake density</p>
       
     </p>
     
@@ -97,7 +97,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">introduce hue variation in flake color centered at the base flake color's hue on the hue wheel</p>
+        <p class="scene-class-attr-comment">introduce hue variation in flake color centered at the base flake color's hue on the hue wheel</p>
       
     </p>
     
@@ -108,7 +108,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">introduce saturation variation in flake color centered at the base flake color's saturation</p>
+        <p class="scene-class-attr-comment">introduce saturation variation in flake color centered at the base flake color's saturation</p>
       
     </p>
     
@@ -119,7 +119,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">introduce value variation in flake color centered at the base flake color's value</p>
+        <p class="scene-class-attr-comment">introduce value variation in flake color centered at the base flake color's value</p>
       
     </p>
     
@@ -130,7 +130,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">controls the number of flakes per unit length; larger density packs more flakes into same space</p>
+        <p class="scene-class-attr-comment">controls the number of flakes per unit length; larger density packs more flakes into same space</p>
       
     </p>
     
@@ -141,7 +141,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls how much the flakes are randomly offset from a regular grid</p>
+        <p class="scene-class-attr-comment">Controls how much the flakes are randomly offset from a regular grid</p>
       
     </p>
     
@@ -152,7 +152,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 0.15000000596
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">randomly orient each texture</p>
+        <p class="scene-class-attr-comment">randomly orient each texture</p>
       
     </p>
     
@@ -163,7 +163,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">randomness of flake orientation</p>
+        <p class="scene-class-attr-comment">randomness of flake orientation</p>
       
     </p>
     
@@ -174,7 +174,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        <p class="scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       
     </p>
     
@@ -185,7 +185,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">0 implies none of this texture, 1 implies all the flakes will get this texture</p>
+        <p class="scene-class-attr-comment">0 implies none of this texture, 1 implies all the flakes will get this texture</p>
       
     </p>
     
@@ -196,7 +196,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        <p class="scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       
     </p>
     
@@ -207,7 +207,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">0 implies none of this texture, 1 implies all the flakes will get this texture</p>
+        <p class="scene-class-attr-comment">0 implies none of this texture, 1 implies all the flakes will get this texture</p>
       
     </p>
     
@@ -218,7 +218,7 @@ title: GlitterFlakeMaterial_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">use textured glitter flakes</p>
+        <p class="scene-class-attr-comment">use textured glitter flakes</p>
       
     </p>
     
@@ -227,7 +227,7 @@ title: GlitterFlakeMaterial_v2
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Common attributes</summary>
+  <summary class="scene-class-attr-group">Common attributes</summary>
   <p>
     
     <h3>presence</h3>
@@ -237,7 +237,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
+        <p class="scene-class-attr-comment">controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
       
     </p>
     
@@ -246,7 +246,7 @@ title: GlitterFlakeMaterial_v2
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Flake Generation attributes</summary>
+  <summary class="scene-class-attr-group">Flake Generation attributes</summary>
   <p>
     
     <h3>compensate_reference_space_deformation</h3>
@@ -256,7 +256,7 @@ title: GlitterFlakeMaterial_v2
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">(In ReferenceSpace) Compensates for stretch/compression/shear in glitter shapes resulting from animation etc</p>
+        <p class="scene-class-attr-comment">(In ReferenceSpace) Compensates for stretch/compression/shear in glitter shapes resulting from animation etc</p>
       
     </p>
     
@@ -267,7 +267,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The seed for the random number generator</p>
+        <p class="scene-class-attr-comment">The seed for the random number generator</p>
       
     </p>
     
@@ -281,7 +281,7 @@ title: GlitterFlakeMaterial_v2
           | reference = 5 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The space to calculate the noise in, defaults to reference space</p>
+        <p class="scene-class-attr-comment">The space to calculate the noise in, defaults to reference space</p>
       
     </p>
     
@@ -290,7 +290,7 @@ title: GlitterFlakeMaterial_v2
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Glitter A Appearance attributes</summary>
+  <summary class="scene-class-attr-group">Glitter A Appearance attributes</summary>
   <p>
     
     <h3>flake_color_A</h3>
@@ -300,7 +300,7 @@ title: GlitterFlakeMaterial_v2
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">base flake color (use physical metallic color values)</p>
+        <p class="scene-class-attr-comment">base flake color (use physical metallic color values)</p>
       
     </p>
     
@@ -311,7 +311,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 0.140000000596
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
+        <p class="scene-class-attr-comment">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       
     </p>
     
@@ -322,7 +322,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">size of the flakes.   Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
+        <p class="scene-class-attr-comment">size of the flakes.   Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
       
     </p>
     
@@ -333,7 +333,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">0 implies none of this style, 1 implies all the flakes will get this style</p>
+        <p class="scene-class-attr-comment">0 implies none of this style, 1 implies all the flakes will get this style</p>
       
     </p>
     
@@ -342,7 +342,7 @@ title: GlitterFlakeMaterial_v2
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Glitter B Appearance attributes</summary>
+  <summary class="scene-class-attr-group">Glitter B Appearance attributes</summary>
   <p>
     
     <h3>flake_color_B</h3>
@@ -352,7 +352,7 @@ title: GlitterFlakeMaterial_v2
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">base flake color (use physical metallic color values)</p>
+        <p class="scene-class-attr-comment">base flake color (use physical metallic color values)</p>
       
     </p>
     
@@ -363,7 +363,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 0.140000000596
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
+        <p class="scene-class-attr-comment">specular roughness of individual flakes (0 makes flakes mirror-like)</p>
       
     </p>
     
@@ -374,7 +374,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">size of the flakes.   Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
+        <p class="scene-class-attr-comment">size of the flakes.   Apparent flake size may vary based on how much the flake spheres intersect the surface</p>
       
     </p>
     
@@ -385,7 +385,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">0 implies none of this style, 1 implies all the flakes will get this style</p>
+        <p class="scene-class-attr-comment">0 implies none of this style, 1 implies all the flakes will get this style</p>
       
     </p>
     
@@ -394,7 +394,7 @@ title: GlitterFlakeMaterial_v2
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Layering attributes</summary>
+  <summary class="scene-class-attr-group">Layering attributes</summary>
   <p>
     
     <h3>layering_mode</h3>
@@ -407,7 +407,7 @@ title: GlitterFlakeMaterial_v2
           | additive = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)</p>
+        <p class="scene-class-attr-comment">layering mode for glitter on top of the under material. physical: conserves energy and glitter attenuates under material, additive: breaks energy conservation but glitter is never darker than the under material (eg. use case: snow)</p>
       
     </p>
     
@@ -418,7 +418,7 @@ title: GlitterFlakeMaterial_v2
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">material that fills the gaps between glitter flakes</p>
+        <p class="scene-class-attr-comment">material that fills the gaps between glitter flakes</p>
       
     </p>
     
@@ -427,7 +427,7 @@ title: GlitterFlakeMaterial_v2
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>extra_aovs</h3>
@@ -437,7 +437,7 @@ title: GlitterFlakeMaterial_v2
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+        <p class="scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       
     </p>
     
@@ -448,7 +448,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
+        <p class="scene-class-attr-comment">label used in material and light aovs</p>
       
     </p>
     
@@ -459,7 +459,7 @@ title: GlitterFlakeMaterial_v2
       
         default: 0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+        <p class="scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       
     </p>
     

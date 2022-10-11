@@ -13,7 +13,7 @@ title: UsdUVTexture
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>bias</h3>
@@ -23,7 +23,7 @@ title: UsdUVTexture
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Bias to be applied to all components of the texture.  output = textureValue * scale + bias</p>
+        <p class="scene-class-attr-comment">Bias to be applied to all components of the texture.  output = textureValue * scale + bias</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: UsdUVTexture
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Fallback value used when texture can not be read.</p>
+        <p class="scene-class-attr-comment">Fallback value used when texture can not be read.</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: UsdUVTexture
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Path to the texture</p>
+        <p class="scene-class-attr-comment">Path to the texture</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: UsdUVTexture
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Scale to be applied to all components of the texture.  output = textureValue * scale + bias</p>
+        <p class="scene-class-attr-comment">Scale to be applied to all components of the texture.  output = textureValue * scale + bias</p>
       
     </p>
     
@@ -72,7 +72,7 @@ title: UsdUVTexture
           | auto = 2 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flag indicating the color space in which the source texture is encoded.</p>
+        <p class="scene-class-attr-comment">Flag indicating the color space in which the source texture is encoded.</p>
       
     </p>
     
@@ -83,7 +83,7 @@ title: UsdUVTexture
       
         default: [ 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Texture coordinate to use to fetch this texture.</p>
+        <p class="scene-class-attr-comment">Texture coordinate to use to fetch this texture.</p>
       
     </p>
     
@@ -94,7 +94,7 @@ title: UsdUVTexture
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -105,7 +105,7 @@ title: UsdUVTexture
       
         default: 10
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">udim maximum v value</p>
+        <p class="scene-class-attr-comment">udim maximum v value</p>
       
     </p>
     
@@ -116,7 +116,7 @@ title: UsdUVTexture
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -136,7 +136,7 @@ title: UsdUVTexture
           | useMetadata = 4 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Wrap mode when reading this texture.</p>
+        <p class="scene-class-attr-comment">Wrap mode when reading this texture.</p>
       
     </p>
     
@@ -156,7 +156,7 @@ title: UsdUVTexture
           | useMetadata = 4 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Wrap mode when reading this texture.</p>
+        <p class="scene-class-attr-comment">Wrap mode when reading this texture.</p>
       
     </p>
     

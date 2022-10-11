@@ -13,7 +13,7 @@ title: UserData
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>bool_key</h3>
@@ -23,7 +23,7 @@ title: UserData
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">key name for bool type user data</p>
+        <p class="scene-class-attr-comment">key name for bool type user data</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: UserData
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">bool type user data values</p>
+        <p class="scene-class-attr-comment">bool type user data values</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: UserData
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">key name for color type user data</p>
+        <p class="scene-class-attr-comment">key name for color type user data</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: UserData
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">color type user data values for motion step 0</p>
+        <p class="scene-class-attr-comment">color type user data values for motion step 0</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: UserData
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">color type user data values for motion step 1</p>
+        <p class="scene-class-attr-comment">color type user data values for motion step 1</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: UserData
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">key name for float type user data</p>
+        <p class="scene-class-attr-comment">key name for float type user data</p>
       
     </p>
     
@@ -89,7 +89,7 @@ title: UserData
       
         default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">float type user data values for motion step 0</p>
+        <p class="scene-class-attr-comment">float type user data values for motion step 0</p>
       
     </p>
     
@@ -100,7 +100,7 @@ title: UserData
       
         default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">float type user data values for motion step 1</p>
+        <p class="scene-class-attr-comment">float type user data values for motion step 1</p>
       
     </p>
     
@@ -111,7 +111,7 @@ title: UserData
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">key name for integer type user data</p>
+        <p class="scene-class-attr-comment">key name for integer type user data</p>
       
     </p>
     
@@ -122,7 +122,7 @@ title: UserData
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">integer type user data values</p>
+        <p class="scene-class-attr-comment">integer type user data values</p>
       
     </p>
     
@@ -133,7 +133,7 @@ title: UserData
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">key name for mat4f type user data</p>
+        <p class="scene-class-attr-comment">key name for mat4f type user data</p>
       
     </p>
     
@@ -144,7 +144,7 @@ title: UserData
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">mat4f type user data values for motion step 0</p>
+        <p class="scene-class-attr-comment">mat4f type user data values for motion step 0</p>
       
     </p>
     
@@ -155,7 +155,7 @@ title: UserData
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">mat4f type user data values for motion step 1</p>
+        <p class="scene-class-attr-comment">mat4f type user data values for motion step 1</p>
       
     </p>
     
@@ -166,7 +166,7 @@ title: UserData
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">key name for string type user data</p>
+        <p class="scene-class-attr-comment">key name for string type user data</p>
       
     </p>
     
@@ -177,7 +177,7 @@ title: UserData
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">string type user data values</p>
+        <p class="scene-class-attr-comment">string type user data values</p>
       
     </p>
     
@@ -188,7 +188,7 @@ title: UserData
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">key name for vec2f type user data</p>
+        <p class="scene-class-attr-comment">key name for vec2f type user data</p>
       
     </p>
     
@@ -199,7 +199,7 @@ title: UserData
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">vec2f type user data values for motion step 0</p>
+        <p class="scene-class-attr-comment">vec2f type user data values for motion step 0</p>
       
     </p>
     
@@ -210,7 +210,7 @@ title: UserData
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">vec2f type user data values for motion step 1</p>
+        <p class="scene-class-attr-comment">vec2f type user data values for motion step 1</p>
       
     </p>
     
@@ -221,7 +221,7 @@ title: UserData
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">key name for vec3f type user data</p>
+        <p class="scene-class-attr-comment">key name for vec3f type user data</p>
       
     </p>
     
@@ -232,7 +232,7 @@ title: UserData
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">vec3f type user data values for motion step 0</p>
+        <p class="scene-class-attr-comment">vec3f type user data values for motion step 0</p>
       
     </p>
     
@@ -243,7 +243,7 @@ title: UserData
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">vec3f type user data values for motion step 1</p>
+        <p class="scene-class-attr-comment">vec3f type user data values for motion step 1</p>
       
     </p>
     

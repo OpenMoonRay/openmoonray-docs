@@ -13,7 +13,7 @@ title: RgbToFloatMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>input</h3>
@@ -23,7 +23,7 @@ title: RgbToFloatMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -49,7 +49,7 @@ title: RgbToFloatMap
           | luminance = 7
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">specify the method to convert RGB Color to float</p>
+        <p class="scene-class-attr-comment">specify the method to convert RGB Color to float</p>
       
     </p>
     

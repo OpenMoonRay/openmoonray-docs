@@ -13,7 +13,7 @@ title: DofDisplayFilter
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <summary class="scene-class-attr-group">Advanced attributes</summary>
   <p>
     
     <h3>invert_mask</h3>
@@ -23,7 +23,7 @@ title: DofDisplayFilter
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        <p class="scene-class-attr-comment">invert value of mask</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: DofDisplayFilter
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        <p class="scene-class-attr-comment">blend between output and input</p>
       
     </p>
     
@@ -43,7 +43,7 @@ title: DofDisplayFilter
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>aperture</h3>
@@ -53,7 +53,7 @@ title: DofDisplayFilter
       
         default: 8.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">aperture in millimeters</p>
+        <p class="scene-class-attr-comment">aperture in millimeters</p>
       
     </p>
     
@@ -64,7 +64,7 @@ title: DofDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the 'depth' result RenderOutput to sample z depth values from</p>
+        <p class="scene-class-attr-comment">the 'depth' result RenderOutput to sample z depth values from</p>
       
     </p>
     
@@ -75,7 +75,7 @@ title: DofDisplayFilter
       
         default: 30.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">focal length in millimeters</p>
+        <p class="scene-class-attr-comment">focal length in millimeters</p>
       
     </p>
     
@@ -86,7 +86,7 @@ title: DofDisplayFilter
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -97,7 +97,7 @@ title: DofDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">RenderOutput to apply depth of field</p>
+        <p class="scene-class-attr-comment">RenderOutput to apply depth of field</p>
       
     </p>
     
@@ -108,7 +108,7 @@ title: DofDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -119,7 +119,7 @@ title: DofDisplayFilter
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">read dof attributes from active scene camera</p>
+        <p class="scene-class-attr-comment">read dof attributes from active scene camera</p>
       
     </p>
     

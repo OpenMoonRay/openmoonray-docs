@@ -13,7 +13,7 @@ title: HairColorPresetsMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>color</h3>
@@ -52,7 +52,7 @@ title: HairColorPresetsMap
           | chestnut brown = 14
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

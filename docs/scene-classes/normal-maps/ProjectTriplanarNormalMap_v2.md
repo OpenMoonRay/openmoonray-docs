@@ -13,7 +13,7 @@ title: ProjectTriplanarNormalMap_v2
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Negative X Modifiers attributes</summary>
+  <summary class="scene-class-attr-group">Negative X Modifiers attributes</summary>
   <p>
     
     <h3>negative_x_invert_s</h3>
@@ -23,7 +23,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
+        <p class="scene-class-attr-comment">Flip in the s direction (horizontal)</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
+        <p class="scene-class-attr-comment">Flip in the t direction (vertical)</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
+        <p class="scene-class-attr-comment">2D offset</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
+        <p class="scene-class-attr-comment">2D rotation amount</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
+        <p class="scene-class-attr-comment">2D rotation center</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
+        <p class="scene-class-attr-comment">2D scale</p>
       
     </p>
     
@@ -89,7 +89,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
+        <p class="scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
       
     </p>
     
@@ -100,7 +100,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
+        <p class="scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
       
     </p>
     
@@ -109,7 +109,7 @@ title: ProjectTriplanarNormalMap_v2
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Negative Y Modifiers attributes</summary>
+  <summary class="scene-class-attr-group">Negative Y Modifiers attributes</summary>
   <p>
     
     <h3>negative_y_invert_s</h3>
@@ -119,7 +119,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
+        <p class="scene-class-attr-comment">Flip in the s direction (horizontal)</p>
       
     </p>
     
@@ -130,7 +130,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
+        <p class="scene-class-attr-comment">Flip in the t direction (vertical)</p>
       
     </p>
     
@@ -141,7 +141,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
+        <p class="scene-class-attr-comment">2D offset</p>
       
     </p>
     
@@ -152,7 +152,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
+        <p class="scene-class-attr-comment">2D rotation amount</p>
       
     </p>
     
@@ -163,7 +163,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
+        <p class="scene-class-attr-comment">2D rotation center</p>
       
     </p>
     
@@ -174,7 +174,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
+        <p class="scene-class-attr-comment">2D scale</p>
       
     </p>
     
@@ -185,7 +185,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
+        <p class="scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
       
     </p>
     
@@ -196,7 +196,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
+        <p class="scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
       
     </p>
     
@@ -205,7 +205,7 @@ title: ProjectTriplanarNormalMap_v2
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Negative Z Modifiers attributes</summary>
+  <summary class="scene-class-attr-group">Negative Z Modifiers attributes</summary>
   <p>
     
     <h3>negative_z_invert_s</h3>
@@ -215,7 +215,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
+        <p class="scene-class-attr-comment">Flip in the s direction (horizontal)</p>
       
     </p>
     
@@ -226,7 +226,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
+        <p class="scene-class-attr-comment">Flip in the t direction (vertical)</p>
       
     </p>
     
@@ -237,7 +237,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
+        <p class="scene-class-attr-comment">2D offset</p>
       
     </p>
     
@@ -248,7 +248,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
+        <p class="scene-class-attr-comment">2D rotation amount</p>
       
     </p>
     
@@ -259,7 +259,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
+        <p class="scene-class-attr-comment">2D rotation center</p>
       
     </p>
     
@@ -270,7 +270,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
+        <p class="scene-class-attr-comment">2D scale</p>
       
     </p>
     
@@ -281,7 +281,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
+        <p class="scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
       
     </p>
     
@@ -292,7 +292,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
+        <p class="scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
       
     </p>
     
@@ -301,7 +301,7 @@ title: ProjectTriplanarNormalMap_v2
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Positive X Modifiers attributes</summary>
+  <summary class="scene-class-attr-group">Positive X Modifiers attributes</summary>
   <p>
     
     <h3>positive_x_invert_s</h3>
@@ -311,7 +311,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
+        <p class="scene-class-attr-comment">Flip in the s direction (horizontal)</p>
       
     </p>
     
@@ -322,7 +322,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
+        <p class="scene-class-attr-comment">Flip in the t direction (vertical)</p>
       
     </p>
     
@@ -333,7 +333,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
+        <p class="scene-class-attr-comment">2D offset</p>
       
     </p>
     
@@ -344,7 +344,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
+        <p class="scene-class-attr-comment">2D rotation amount</p>
       
     </p>
     
@@ -355,7 +355,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
+        <p class="scene-class-attr-comment">2D rotation center</p>
       
     </p>
     
@@ -366,7 +366,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
+        <p class="scene-class-attr-comment">2D scale</p>
       
     </p>
     
@@ -377,7 +377,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
+        <p class="scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
       
     </p>
     
@@ -388,7 +388,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
+        <p class="scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
       
     </p>
     
@@ -397,7 +397,7 @@ title: ProjectTriplanarNormalMap_v2
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Positive Y Modifiers attributes</summary>
+  <summary class="scene-class-attr-group">Positive Y Modifiers attributes</summary>
   <p>
     
     <h3>positive_y_invert_s</h3>
@@ -407,7 +407,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
+        <p class="scene-class-attr-comment">Flip in the s direction (horizontal)</p>
       
     </p>
     
@@ -418,7 +418,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
+        <p class="scene-class-attr-comment">Flip in the t direction (vertical)</p>
       
     </p>
     
@@ -429,7 +429,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
+        <p class="scene-class-attr-comment">2D offset</p>
       
     </p>
     
@@ -440,7 +440,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
+        <p class="scene-class-attr-comment">2D rotation amount</p>
       
     </p>
     
@@ -451,7 +451,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
+        <p class="scene-class-attr-comment">2D rotation center</p>
       
     </p>
     
@@ -462,7 +462,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
+        <p class="scene-class-attr-comment">2D scale</p>
       
     </p>
     
@@ -473,7 +473,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
+        <p class="scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
       
     </p>
     
@@ -484,7 +484,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
+        <p class="scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
       
     </p>
     
@@ -493,7 +493,7 @@ title: ProjectTriplanarNormalMap_v2
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Positive Z Modifiers attributes</summary>
+  <summary class="scene-class-attr-group">Positive Z Modifiers attributes</summary>
   <p>
     
     <h3>positive_z_invert_s</h3>
@@ -503,7 +503,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the s direction (horizontal)</p>
+        <p class="scene-class-attr-comment">Flip in the s direction (horizontal)</p>
       
     </p>
     
@@ -514,7 +514,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Flip in the t direction (vertical)</p>
+        <p class="scene-class-attr-comment">Flip in the t direction (vertical)</p>
       
     </p>
     
@@ -525,7 +525,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D offset</p>
+        <p class="scene-class-attr-comment">2D offset</p>
       
     </p>
     
@@ -536,7 +536,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation amount</p>
+        <p class="scene-class-attr-comment">2D rotation amount</p>
       
     </p>
     
@@ -547,7 +547,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D rotation center</p>
+        <p class="scene-class-attr-comment">2D rotation center</p>
       
     </p>
     
@@ -558,7 +558,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">2D scale</p>
+        <p class="scene-class-attr-comment">2D scale</p>
       
     </p>
     
@@ -569,7 +569,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
+        <p class="scene-class-attr-comment">Swap the s and t directions.   Same as a 90 degree rotation</p>
       
     </p>
     
@@ -580,7 +580,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
+        <p class="scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
       
     </p>
     
@@ -589,7 +589,7 @@ title: ProjectTriplanarNormalMap_v2
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>TRS_order</h3>
@@ -610,7 +610,7 @@ title: ProjectTriplanarNormalMap_v2
           | Trans Rot Scale = 5
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply transformations</p>
+        <p class="scene-class-attr-comment">Order in which to apply transformations</p>
       
     </p>
     
@@ -621,7 +621,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Bind normal data here</p>
+        <p class="scene-class-attr-comment">Bind normal data here</p>
       
     </p>
     
@@ -632,7 +632,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Bind position data here</p>
+        <p class="scene-class-attr-comment">Bind position data here</p>
       
     </p>
     
@@ -648,7 +648,7 @@ title: ProjectTriplanarNormalMap_v2
           | input_position/input_normal = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Input position to use</p>
+        <p class="scene-class-attr-comment">Input position to use</p>
       
     </p>
     
@@ -659,7 +659,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
+        <p class="scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
       
     </p>
     
@@ -670,7 +670,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        <p class="scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       
     </p>
     
@@ -681,7 +681,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
+        <p class="scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
       
     </p>
     
@@ -692,7 +692,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        <p class="scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       
     </p>
     
@@ -703,7 +703,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
+        <p class="scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
       
     </p>
     
@@ -714,7 +714,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        <p class="scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       
     </p>
     
@@ -728,7 +728,7 @@ title: ProjectTriplanarNormalMap_v2
           | [-1,1] = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
+        <p class="scene-class-attr-comment">Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
       
     </p>
     
@@ -744,7 +744,7 @@ title: ProjectTriplanarNormalMap_v2
           | six = 6
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls the number of active textures.   If set to 'one', only the 'pos x' texture settings will be used for all sides.   If set to 'three' the pos x, pos y, and pos z settings will be used for their respective negative sides.   If set to 'six', each side has independent controls and texture.</p>
+        <p class="scene-class-attr-comment">Controls the number of active textures.   If set to 'one', only the 'pos x' texture settings will be used for all sides.   If set to 'three' the pos x, pos y, and pos z settings will be used for their respective negative sides.   If set to 'six', each side has independent controls and texture.</p>
       
     </p>
     
@@ -755,7 +755,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
+        <p class="scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
       
     </p>
     
@@ -766,7 +766,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        <p class="scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       
     </p>
     
@@ -777,7 +777,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
+        <p class="scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
       
     </p>
     
@@ -788,7 +788,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        <p class="scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       
     </p>
     
@@ -799,7 +799,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
+        <p class="scene-class-attr-comment">Turns this direction on/off.  Output is black if off.</p>
       
     </p>
     
@@ -810,7 +810,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        <p class="scene-class-attr-comment">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       
     </p>
     
@@ -821,7 +821,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the transform to use for projection</p>
+        <p class="scene-class-attr-comment">the transform to use for projection</p>
       
     </p>
     
@@ -837,7 +837,7 @@ title: ProjectTriplanarNormalMap_v2
           | TRS = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Source parameters to use for projection transform</p>
+        <p class="scene-class-attr-comment">Source parameters to use for projection transform</p>
       
     </p>
     
@@ -848,7 +848,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the object whose transform to use for projection</p>
+        <p class="scene-class-attr-comment">the object whose transform to use for projection</p>
       
     </p>
     
@@ -859,7 +859,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: 8241
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Seed for randomizing orientation, offset, and flip</p>
+        <p class="scene-class-attr-comment">Seed for randomizing orientation, offset, and flip</p>
       
     </p>
     
@@ -870,7 +870,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Rnd flipping in S or T for each active texture</p>
+        <p class="scene-class-attr-comment">Rnd flipping in S or T for each active texture</p>
       
     </p>
     
@@ -881,7 +881,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Rnd offset in S or T for each active texture</p>
+        <p class="scene-class-attr-comment">Rnd offset in S or T for each active texture</p>
       
     </p>
     
@@ -892,7 +892,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Rnd 2d rotation of each active texture</p>
+        <p class="scene-class-attr-comment">Rnd 2d rotation of each active texture</p>
       
     </p>
     
@@ -903,7 +903,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Rotation of the projection transform</p>
+        <p class="scene-class-attr-comment">Rotation of the projection transform</p>
       
     </p>
     
@@ -925,7 +925,7 @@ title: ProjectTriplanarNormalMap_v2
           | zyx = 5
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Order in which to apply rotation transformations</p>
+        <p class="scene-class-attr-comment">Order in which to apply rotation transformations</p>
       
     </p>
     
@@ -936,7 +936,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Scale of the projection transform</p>
+        <p class="scene-class-attr-comment">Scale of the projection transform</p>
       
     </p>
     
@@ -947,7 +947,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls blending of per-axis projections.   Valid range is 0.0 (no blending) to 1.0 (max blending)</p>
+        <p class="scene-class-attr-comment">Controls blending of per-axis projections.   Valid range is 0.0 (no blending) to 1.0 (max blending)</p>
       
     </p>
     
@@ -958,7 +958,7 @@ title: ProjectTriplanarNormalMap_v2
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Tranlation of the projection transform</p>
+        <p class="scene-class-attr-comment">Tranlation of the projection transform</p>
       
     </p>
     

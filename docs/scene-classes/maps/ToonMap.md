@@ -13,7 +13,7 @@ title: ToonMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>crease_color</h3>
@@ -23,7 +23,7 @@ title: ToonMap
       
         default: [ 1, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Creases are sharp edges like corners in the geometry.</p>
+        <p class="scene-class-attr-comment">Creases are sharp edges like corners in the geometry.</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: ToonMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">This attribute controls the thickness of creases.</p>
+        <p class="scene-class-attr-comment">This attribute controls the thickness of creases.</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: ToonMap
       
         default: 45.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">This attribute sets the threshold angle (in degree units) to draw creases. The more the threshold angle is, the less the creases are traced.</p>
+        <p class="scene-class-attr-comment">This attribute sets the threshold angle (in degree units) to draw creases. The more the threshold angle is, the less the creases are traced.</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: ToonMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -72,7 +72,7 @@ title: ToonMap
           | both = 2 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -83,7 +83,7 @@ title: ToonMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Outlines are silhouettes of the geometry</p>
+        <p class="scene-class-attr-comment">Outlines are silhouettes of the geometry</p>
       
     </p>
     
@@ -94,7 +94,7 @@ title: ToonMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">This attribute controls the thickness of outlines.</p>
+        <p class="scene-class-attr-comment">This attribute controls the thickness of outlines.</p>
       
     </p>
     
@@ -105,7 +105,7 @@ title: ToonMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">In most cases, the shader would trace an outline of a model well when this threshold is zero.</p>
+        <p class="scene-class-attr-comment">In most cases, the shader would trace an outline of a model well when this threshold is zero.</p>
       
     </p>
     

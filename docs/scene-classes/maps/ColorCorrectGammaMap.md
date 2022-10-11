@@ -13,7 +13,7 @@ title: ColorCorrectGammaMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>gamma</h3>
@@ -23,7 +23,7 @@ title: ColorCorrectGammaMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">raises the input to the specified exponents</p>
+        <p class="scene-class-attr-comment">raises the input to the specified exponents</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: ColorCorrectGammaMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">raises the blue channel to the specified exponents</p>
+        <p class="scene-class-attr-comment">raises the blue channel to the specified exponents</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: ColorCorrectGammaMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">raises the green channel to the specified exponents</p>
+        <p class="scene-class-attr-comment">raises the green channel to the specified exponents</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: ColorCorrectGammaMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">raises the red channel to the specified exponents</p>
+        <p class="scene-class-attr-comment">raises the red channel to the specified exponents</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: ColorCorrectGammaMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
+        <p class="scene-class-attr-comment">bind the input here</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: ColorCorrectGammaMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">how much of the overall color correct to mix in</p>
+        <p class="scene-class-attr-comment">how much of the overall color correct to mix in</p>
       
     </p>
     
@@ -89,7 +89,7 @@ title: ColorCorrectGammaMap
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables all color correct operations</p>
+        <p class="scene-class-attr-comment">enables/disables all color correct operations</p>
       
     </p>
     
@@ -100,7 +100,7 @@ title: ColorCorrectGammaMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables separate RGB controls for gamma</p>
+        <p class="scene-class-attr-comment">enables separate RGB controls for gamma</p>
       
     </p>
     

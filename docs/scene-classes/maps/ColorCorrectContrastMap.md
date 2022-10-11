@@ -13,7 +13,7 @@ title: ColorCorrectContrastMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>contrast</h3>
@@ -23,7 +23,7 @@ title: ColorCorrectContrastMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance</p>
+        <p class="scene-class-attr-comment">negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: ColorCorrectContrastMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the blue channel</p>
+        <p class="scene-class-attr-comment">negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the blue channel</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: ColorCorrectContrastMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the green channel</p>
+        <p class="scene-class-attr-comment">negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the green channel</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: ColorCorrectContrastMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the red channel</p>
+        <p class="scene-class-attr-comment">negative values reduce the difference in luminance towards grey and positive values increase the difference in luminance for the red channel</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: ColorCorrectContrastMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
+        <p class="scene-class-attr-comment">bind the input here</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: ColorCorrectContrastMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">how much of the overall color correct to mix in</p>
+        <p class="scene-class-attr-comment">how much of the overall color correct to mix in</p>
       
     </p>
     
@@ -89,7 +89,7 @@ title: ColorCorrectContrastMap
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables all color correct operations</p>
+        <p class="scene-class-attr-comment">enables/disables all color correct operations</p>
       
     </p>
     
@@ -100,7 +100,7 @@ title: ColorCorrectContrastMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables separate RGB controls for contrast</p>
+        <p class="scene-class-attr-comment">enables separate RGB controls for contrast</p>
       
     </p>
     

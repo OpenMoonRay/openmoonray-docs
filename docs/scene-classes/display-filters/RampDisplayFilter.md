@@ -13,7 +13,7 @@ title: RampDisplayFilter
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <summary class="scene-class-attr-group">Advanced attributes</summary>
   <p>
     
     <h3>invert_mask</h3>
@@ -23,7 +23,7 @@ title: RampDisplayFilter
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        <p class="scene-class-attr-comment">invert value of mask</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: RampDisplayFilter
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        <p class="scene-class-attr-comment">blend between output and input</p>
       
     </p>
     
@@ -43,7 +43,7 @@ title: RampDisplayFilter
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Ramp Knot attributes</summary>
+  <summary class="scene-class-attr-group">Ramp Knot attributes</summary>
   <p>
     
     <h3>colors</h3>
@@ -53,7 +53,7 @@ title: RampDisplayFilter
       
         default: [[ 0, 0, 0 ], [ 0.25, 0.25, 0.25 ], [ 0.75, 0.75, 0.75 ], [ 1, 1, 1 ]]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">List of colors on the ramp</p>
+        <p class="scene-class-attr-comment">List of colors on the ramp</p>
       
     </p>
     
@@ -64,7 +64,7 @@ title: RampDisplayFilter
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">None: 0, Linear: 1, Exponential Up: 2, Exponential Down: 3, Smooth: 4, Catmull-Rom: 5</p>
+        <p class="scene-class-attr-comment">None: 0, Linear: 1, Exponential Up: 2, Exponential Down: 3, Smooth: 4, Catmull-Rom: 5</p>
       
     </p>
     
@@ -75,7 +75,7 @@ title: RampDisplayFilter
       
         default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Color ramp</p>
+        <p class="scene-class-attr-comment">Color ramp</p>
       
     </p>
     
@@ -84,7 +84,7 @@ title: RampDisplayFilter
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Ramp properties attributes</summary>
+  <summary class="scene-class-attr-group">Ramp properties attributes</summary>
   <p>
     
     <h3>input</h3>
@@ -94,7 +94,7 @@ title: RampDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">input to the input ramp</p>
+        <p class="scene-class-attr-comment">input to the input ramp</p>
       
     </p>
     
@@ -122,7 +122,7 @@ title: RampDisplayFilter
           | input_ramp = 8
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -131,7 +131,7 @@ title: RampDisplayFilter
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>mask</h3>
@@ -141,7 +141,7 @@ title: RampDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

@@ -13,7 +13,7 @@ title: HairDiffuseMaterial
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <summary class="scene-class-attr-group">Advanced attributes</summary>
   <p>
     
     <h3>back_hair_color</h3>
@@ -23,7 +23,7 @@ title: HairDiffuseMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">(advanced only) hair color used for back-lit hair (transmission/forward reflectance)</p>
+        <p class="scene-class-attr-comment">(advanced only) hair color used for back-lit hair (transmission/forward reflectance)</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: HairDiffuseMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">(advanced only) hair color used for front-lit hair (backward reflectance)</p>
+        <p class="scene-class-attr-comment">(advanced only) hair color used for front-lit hair (backward reflectance)</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: HairDiffuseMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
+        <p class="scene-class-attr-comment">Set of geometries that contribute neighboring subsurface points. By default, only the geometry associated with this material contributes to subsurface. If you want adjacent geometry with different material to contribute as well, specify all those parts here.</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: HairDiffuseMaterial
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">(advanced) use a separate hair color for front and back</p>
+        <p class="scene-class-attr-comment">(advanced) use a separate hair color for front and back</p>
       
     </p>
     
@@ -65,7 +65,7 @@ title: HairDiffuseMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Common attributes</summary>
+  <summary class="scene-class-attr-group">Common attributes</summary>
   <p>
     
     <h3>casts_caustics</h3>
@@ -75,7 +75,7 @@ title: HairDiffuseMaterial
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">allows continuation of caustic light paths.</p>
+        <p class="scene-class-attr-comment">allows continuation of caustic light paths.</p>
       
     </p>
     
@@ -86,7 +86,7 @@ title: HairDiffuseMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
+        <p class="scene-class-attr-comment">controls the visibility of this object. Useful for fading an object in/out, or to specify a cut-out mask on thin single-sided geometry (eg. a complex leaf texture on a simple card).</p>
       
     </p>
     
@@ -95,7 +95,7 @@ title: HairDiffuseMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Emission attributes</summary>
+  <summary class="scene-class-attr-group">Emission attributes</summary>
   <p>
     
     <h3>emission</h3>
@@ -105,7 +105,7 @@ title: HairDiffuseMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the energy emitted from this material</p>
+        <p class="scene-class-attr-comment">the energy emitted from this material</p>
       
     </p>
     
@@ -116,7 +116,7 @@ title: HairDiffuseMaterial
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disable emission</p>
+        <p class="scene-class-attr-comment">enables/disable emission</p>
       
     </p>
     
@@ -125,7 +125,7 @@ title: HairDiffuseMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Subsurface attributes</summary>
+  <summary class="scene-class-attr-group">Subsurface attributes</summary>
   <p>
     
     <h3>bssrdf</h3>
@@ -138,7 +138,7 @@ title: HairDiffuseMaterial
           | dipole = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">0 for NormalizedDiffuse, 1 for Dipole. Random walk unsupported for hair.</p>
+        <p class="scene-class-attr-comment">0 for NormalizedDiffuse, 1 for Dipole. Random walk unsupported for hair.</p>
       
     </p>
     
@@ -149,7 +149,7 @@ title: HairDiffuseMaterial
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables sampling the normal map for sss samples. More accurate but potentially expensive</p>
+        <p class="scene-class-attr-comment">enables sampling the normal map for sss samples. More accurate but potentially expensive</p>
       
     </p>
     
@@ -160,7 +160,7 @@ title: HairDiffuseMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">specifies an alternate shading normal (only for SSS lobe)</p>
+        <p class="scene-class-attr-comment">specifies an alternate shading normal (only for SSS lobe)</p>
       
     </p>
     
@@ -171,7 +171,7 @@ title: HairDiffuseMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">controls influence of input normal versus hair normal for SSS</p>
+        <p class="scene-class-attr-comment">controls influence of input normal versus hair normal for SSS</p>
       
     </p>
     
@@ -182,7 +182,7 @@ title: HairDiffuseMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the subsurface scattering 'falloff' color</p>
+        <p class="scene-class-attr-comment">the subsurface scattering 'falloff' color</p>
       
     </p>
     
@@ -193,7 +193,7 @@ title: HairDiffuseMaterial
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the distance the light scatters beneath the surface.  When 0 surface diffuse is used</p>
+        <p class="scene-class-attr-comment">the distance the light scatters beneath the surface.  When 0 surface diffuse is used</p>
       
     </p>
     
@@ -204,7 +204,7 @@ title: HairDiffuseMaterial
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">0 is fully hair diffuse, 1 is fully SSS. No effect if scattering radius is 0.</p>
+        <p class="scene-class-attr-comment">0 is fully hair diffuse, 1 is fully SSS. No effect if scattering radius is 0.</p>
       
     </p>
     
@@ -213,7 +213,7 @@ title: HairDiffuseMaterial
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>extra_aovs</h3>
@@ -223,7 +223,7 @@ title: HairDiffuseMaterial
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
+        <p class="scene-class-attr-comment">Bind this attribute to a 'ListMap' that contains references to ExtraAovMaps that specify additional outputs that can be assigned to a RenderOutput "light aov" result</p>
       
     </p>
     
@@ -234,7 +234,7 @@ title: HairDiffuseMaterial
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -245,7 +245,7 @@ title: HairDiffuseMaterial
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material and light aovs</p>
+        <p class="scene-class-attr-comment">label used in material and light aovs</p>
       
     </p>
     
@@ -256,7 +256,7 @@ title: HairDiffuseMaterial
       
         default: 0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
+        <p class="scene-class-attr-comment">The material's place in an order of precedence for overlapping dielectrics. A value of 0 means the priority should be ignored. Materials with lower numbers (higher priority) "override" materials with higher numbers (lower priority).  To enable automatic removal of self-overlapping geometry, a non-zero priority must be set on the geometry's material.</p>
       
     </p>
     

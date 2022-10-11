@@ -13,7 +13,7 @@ title: RgbToHsvDisplayFilter
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <summary class="scene-class-attr-group">Advanced attributes</summary>
   <p>
     
     <h3>invert_mask</h3>
@@ -23,7 +23,7 @@ title: RgbToHsvDisplayFilter
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        <p class="scene-class-attr-comment">invert value of mask</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: RgbToHsvDisplayFilter
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        <p class="scene-class-attr-comment">blend between output and input</p>
       
     </p>
     
@@ -43,7 +43,7 @@ title: RgbToHsvDisplayFilter
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>input</h3>
@@ -53,7 +53,7 @@ title: RgbToHsvDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">image buffer</p>
+        <p class="scene-class-attr-comment">image buffer</p>
       
     </p>
     
@@ -64,7 +64,7 @@ title: RgbToHsvDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: RgbToHsvDisplayFilter
           | hsv_to_rgb = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">specify whether you are converting rgb-&gt;hsv or hsv-&gt;rgb</p>
+        <p class="scene-class-attr-comment">specify whether you are converting rgb-&gt;hsv or hsv-&gt;rgb</p>
       
     </p>
     

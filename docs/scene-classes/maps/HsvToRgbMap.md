@@ -13,7 +13,7 @@ title: HsvToRgbMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>input</h3>
@@ -23,7 +23,7 @@ title: HsvToRgbMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
+        <p class="scene-class-attr-comment">bind the input here</p>
       
     </p>
     

@@ -13,7 +13,7 @@ title: OpMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>clamp</h3>
@@ -23,7 +23,7 @@ title: OpMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">if on, the result is clamped to 0 - 1</p>
+        <p class="scene-class-attr-comment">if on, the result is clamped to 0 - 1</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: OpMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the first operand</p>
+        <p class="scene-class-attr-comment">the first operand</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: OpMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">a scalar multiplier on op1</p>
+        <p class="scene-class-attr-comment">a scalar multiplier on op1</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: OpMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the second operand</p>
+        <p class="scene-class-attr-comment">the second operand</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: OpMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">a scalar multiplier on op2</p>
+        <p class="scene-class-attr-comment">a scalar multiplier on op2</p>
       
     </p>
     
@@ -155,7 +155,7 @@ title: OpMap
           | bitwise_or = 38
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

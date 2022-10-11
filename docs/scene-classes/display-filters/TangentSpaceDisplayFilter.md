@@ -13,7 +13,7 @@ title: TangentSpaceDisplayFilter
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <summary class="scene-class-attr-group">Advanced attributes</summary>
   <p>
     
     <h3>invert_mask</h3>
@@ -23,7 +23,7 @@ title: TangentSpaceDisplayFilter
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        <p class="scene-class-attr-comment">invert value of mask</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: TangentSpaceDisplayFilter
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        <p class="scene-class-attr-comment">blend between output and input</p>
       
     </p>
     
@@ -43,7 +43,7 @@ title: TangentSpaceDisplayFilter
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>N</h3>
@@ -53,7 +53,7 @@ title: TangentSpaceDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Connect a RenderOutput with State N AOV here. Used to construct tangent space.</p>
+        <p class="scene-class-attr-comment">Connect a RenderOutput with State N AOV here. Used to construct tangent space.</p>
       
     </p>
     
@@ -64,7 +64,7 @@ title: TangentSpaceDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Connect a RenderOutput with State dPds AOV here. Used to construct tangent space.</p>
+        <p class="scene-class-attr-comment">Connect a RenderOutput with State dPds AOV here. Used to construct tangent space.</p>
       
     </p>
     
@@ -75,7 +75,7 @@ title: TangentSpaceDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">data to transform into tangent space</p>
+        <p class="scene-class-attr-comment">data to transform into tangent space</p>
       
     </p>
     
@@ -86,7 +86,7 @@ title: TangentSpaceDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -97,7 +97,7 @@ title: TangentSpaceDisplayFilter
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">when on, encodes the output to clamped [0, 1] in the same manner as a normal map</p>
+        <p class="scene-class-attr-comment">when on, encodes the output to clamped [0, 1] in the same manner as a normal map</p>
       
     </p>
     

@@ -13,7 +13,7 @@ title: CheckerboardMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>color_A</h3>
@@ -23,7 +23,7 @@ title: CheckerboardMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: CheckerboardMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: CheckerboardMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">bind a shader that outputs UV coordinates (such as a projection shader) here</p>
+        <p class="scene-class-attr-comment">bind a shader that outputs UV coordinates (such as a projection shader) here</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: CheckerboardMap
       
         default: 8
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">number of checkerboard squares in the U direction</p>
+        <p class="scene-class-attr-comment">number of checkerboard squares in the U direction</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: CheckerboardMap
       
         default: 8
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">number of checkerboard squares in the V direction</p>
+        <p class="scene-class-attr-comment">number of checkerboard squares in the V direction</p>
       
     </p>
     
@@ -81,7 +81,7 @@ title: CheckerboardMap
           | input texture coordinates = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">switches between the model's uv coordinates or the input texture coordinates</p>
+        <p class="scene-class-attr-comment">switches between the model's uv coordinates or the input texture coordinates</p>
       
     </p>
     

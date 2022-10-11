@@ -13,7 +13,7 @@ title: AttributeMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Primitive Attribute attributes</summary>
+  <summary class="scene-class-attr-group">Primitive Attribute attributes</summary>
   <p>
     
     <h3>primitive_attribute_name</h3>
@@ -23,7 +23,7 @@ title: AttributeMap
       
         default: Cd
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the name of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
+        <p class="scene-class-attr-comment">the name of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
       
     </p>
     
@@ -43,7 +43,7 @@ title: AttributeMap
           | int = 4
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
+        <p class="scene-class-attr-comment">the type of primitive attribute to display when attribute 'map type' is set to 'primitive attribute'</p>
       
     </p>
     
@@ -52,7 +52,7 @@ title: AttributeMap
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>color</h3>
@@ -62,7 +62,7 @@ title: AttributeMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">input color - preferably a connected map</p>
+        <p class="scene-class-attr-comment">input color - preferably a connected map</p>
       
     </p>
     
@@ -73,7 +73,7 @@ title: AttributeMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">default value to display when the requested attribute is not available</p>
+        <p class="scene-class-attr-comment">default value to display when the requested attribute is not available</p>
       
     </p>
     
@@ -119,7 +119,7 @@ title: AttributeMap
           | motionvec = 19
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -130,7 +130,7 @@ title: AttributeMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Whether or not to issue a warning when the requested attribute is unavailable</p>
+        <p class="scene-class-attr-comment">Whether or not to issue a warning when the requested attribute is unavailable</p>
       
     </p>
     

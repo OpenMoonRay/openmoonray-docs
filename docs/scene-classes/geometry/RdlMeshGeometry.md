@@ -13,7 +13,7 @@ title: RdlMeshGeometry
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>accleration_list</h3>
@@ -23,7 +23,7 @@ title: RdlMeshGeometry
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Optionally declare vertex accelerations for quadratic motion interpolation</p>
+        <p class="scene-class-attr-comment">Optionally declare vertex accelerations for quadratic motion interpolation</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: RdlMeshGeometry
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.</p>
+        <p class="scene-class-attr-comment">the maximum allowable difference in pixels for subdivison mesh adaptive tessellation (each final tessellated edge won't be longer than n pixels if adaptive error is set to n).A value of 0 disables adaptive tessellation, reverting to uniform tessellation, which sometimes is more stable in animation.Adaptive tessellation is not supported for instances.</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: RdlMeshGeometry
       
         default: 10
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Number of time samples generated along each curve when using curved motion blur</p>
+        <p class="scene-class-attr-comment">Number of time samples generated along each curve when using curved motion blur</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: RdlMeshGeometry
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Ordered list of vertices per face, used in conjection with vertices by index to construct the mesh</p>
+        <p class="scene-class-attr-comment">Ordered list of vertices per face, used in conjection with vertices by index to construct the mesh</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: RdlMeshGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If true, a SubdivisionMesh primitive will be created - PolygonMesh otherwise</p>
+        <p class="scene-class-attr-comment">If true, a SubdivisionMesh primitive will be created - PolygonMesh otherwise</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: RdlMeshGeometry
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in material aov expresssions</p>
+        <p class="scene-class-attr-comment">label used in material aov expresssions</p>
       
     </p>
     
@@ -89,7 +89,7 @@ title: RdlMeshGeometry
       
         default: 2.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The maximum resolution to tessellate a mesh. An edge on input face will be tessellated to at most n segments when "mesh resolution" is set to n. If "adaptive error" is set to 0, every edge on input face will be uniformly tessellated to "mesh resolution". Otherwise renderer will adaptively tessellate mesh based on camera information</p>
+        <p class="scene-class-attr-comment">The maximum resolution to tessellate a mesh. An edge on input face will be tessellated to at most n segments when "mesh resolution" is set to n. If "adaptive error" is set to 0, every edge on input face will be uniformly tessellated to "mesh resolution". Otherwise renderer will adaptively tessellate mesh based on camera information</p>
       
     </p>
     
@@ -111,7 +111,7 @@ title: RdlMeshGeometry
           | hermite = 4
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
+        <p class="scene-class-attr-comment">Motion blur type for PolygonMesh/Points/Curves in alembic file.<br>"static" will treat the mesh as static.<br>"velocity" will blur using the supplied vertex positions and velocities.<br>"frame delta" will interpolate between the two supplied vertex positions.<br>"acceleration" will blur using the supplied vertex positions, velocities and accelerations.<br>"hermite" will use supplied pair of positions and pair of velocities to interpolate along a cubic Hermite curve.<br>"best" will use choose the method which provides the highest quality given the available data.<br></p>
       
     </p>
     
@@ -122,7 +122,7 @@ title: RdlMeshGeometry
       
         default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -133,7 +133,7 @@ title: RdlMeshGeometry
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment"> If the mesh is using normals, store them per-face-vertex in this list</p>
+        <p class="scene-class-attr-comment"> If the mesh is using normals, store them per-face-vertex in this list</p>
       
     </p>
     
@@ -147,7 +147,7 @@ title: RdlMeshGeometry
           | left-handed = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When set to "left-handed", normals are generated using the left-handed rule. This reverses the direction of generated normals, and which side of surfaces is considered the front, without affecting supplied normals.</p>
+        <p class="scene-class-attr-comment">When set to "left-handed", normals are generated using the left-handed rule. This reverses the direction of generated normals, and which side of surfaces is considered the front, without affecting supplied normals.</p>
       
     </p>
     
@@ -158,7 +158,7 @@ title: RdlMeshGeometry
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">The number of faces belonging to the part with corresponding index in 'part list'.</p>
+        <p class="scene-class-attr-comment">The number of faces belonging to the part with corresponding index in 'part list'.</p>
       
     </p>
     
@@ -169,7 +169,7 @@ title: RdlMeshGeometry
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Ordered list of face indices. No index should have a value greater than the size of 'face vertex count'</p>
+        <p class="scene-class-attr-comment">Ordered list of face indices. No index should have a value greater than the size of 'face vertex count'</p>
       
     </p>
     
@@ -180,7 +180,7 @@ title: RdlMeshGeometry
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Ordered list of part names, used in conjunction with 'part face count list' and 'part faces indicies' to assign per-part materials</p>
+        <p class="scene-class-attr-comment">Ordered list of part names, used in conjunction with 'part face count list' and 'part faces indicies' to assign per-part materials</p>
       
     </p>
     
@@ -196,7 +196,7 @@ title: RdlMeshGeometry
           | both motion steps = 2 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Which frame(s) do we take the primitive attributes from?<br>&emsp;O : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
+        <p class="scene-class-attr-comment">Which frame(s) do we take the primitive attributes from?<br>&emsp;O : first motion step<br>&emsp;1 : second motion step<br>&emsp;2 : both motion steps</p>
       
     </p>
     
@@ -207,7 +207,7 @@ title: RdlMeshGeometry
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Vector of UserData.Each key/value pair will be added as a primitive attribute of the mesh.</p>
+        <p class="scene-class-attr-comment">Vector of UserData.Each key/value pair will be added as a primitive attribute of the mesh.</p>
       
     </p>
     
@@ -218,7 +218,7 @@ title: RdlMeshGeometry
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
+        <p class="scene-class-attr-comment">When a secondary ray is fired, anything within this distance of the intersection point will be ignored.  Instead, it is considered part of the current intersection's geometry.  If zero, an automatically calculated epsilon will be used.</p>
       
     </p>
     
@@ -229,7 +229,7 @@ title: RdlMeshGeometry
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
+        <p class="scene-class-attr-comment">list of geometries that geometry procedural can reference during procedural generate/update stages. For example, an instancer geometry procedural can instance primitives generated by the reference geometry procedural.</p>
       
     </p>
     
@@ -240,7 +240,7 @@ title: RdlMeshGeometry
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enable to reverse the normals in the geometry</p>
+        <p class="scene-class-attr-comment">enable to reverse the normals in the geometry</p>
       
     </p>
     
@@ -251,7 +251,7 @@ title: RdlMeshGeometry
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
+        <p class="scene-class-attr-comment">List of mappings of the form A:B where:<br>A is a list of names of parts to be mapped, or asterisk to map the whole geometry<br>B is a list of labels corresponding to the sets corresponding to distinct values of ["shadow_receiver_label"], or asterisk to map to all such sets.</p>
       
     </p>
     
@@ -262,7 +262,7 @@ title: RdlMeshGeometry
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
+        <p class="scene-class-attr-comment">When a shadow ray is fired, anything within this distance of the intersection point will be ignored.  If this value is less than "ray_epsilon", then it has no additional effect.</p>
       
     </p>
     
@@ -273,7 +273,7 @@ title: RdlMeshGeometry
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
+        <p class="scene-class-attr-comment">Label used to associate Geometry objects into sets. Then, using the ["shadow_exclusion_mappings"] attribute, shadows from specified geometry parts can be suppressed from casting onto specified sets.</p>
       
     </p>
     
@@ -289,7 +289,7 @@ title: RdlMeshGeometry
           | use mesh sidedness = 2
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
+        <p class="scene-class-attr-comment">set single sidedness of the mesh, will affect the visibility of the mesh based on normal direction</p>
       
     </p>
     
@@ -300,7 +300,7 @@ title: RdlMeshGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">generate smooth shading normal when rendering PolygonMesh and the mesh doesn't provide shading normal itself</p>
+        <p class="scene-class-attr-comment">generate smooth shading normal when rendering PolygonMesh and the mesh doesn't provide shading normal itself</p>
       
     </p>
     
@@ -311,7 +311,7 @@ title: RdlMeshGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">disable if the geometry will be updated between frames</p>
+        <p class="scene-class-attr-comment">disable if the geometry will be updated between frames</p>
       
     </p>
     
@@ -327,7 +327,7 @@ title: RdlMeshGeometry
           | edge and corner = 2 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Boundary interpolation: Corners, Edges or None</p>
+        <p class="scene-class-attr-comment">Boundary interpolation: Corners, Edges or None</p>
       
     </p>
     
@@ -338,7 +338,7 @@ title: RdlMeshGeometry
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">List of indices for each corner vertex with an assigned sharpness.</p>
+        <p class="scene-class-attr-comment">List of indices for each corner vertex with an assigned sharpness.</p>
       
     </p>
     
@@ -349,7 +349,7 @@ title: RdlMeshGeometry
       
         default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Sharpness value for each corner vertex.</p>
+        <p class="scene-class-attr-comment">Sharpness value for each corner vertex.</p>
       
     </p>
     
@@ -360,7 +360,7 @@ title: RdlMeshGeometry
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">List of vertex index pairs for each crease edge with an assigned sharpness.</p>
+        <p class="scene-class-attr-comment">List of vertex index pairs for each crease edge with an assigned sharpness.</p>
       
     </p>
     
@@ -371,7 +371,7 @@ title: RdlMeshGeometry
       
         default: &lt;scene_rdl2.__scene_rdl2__.FloatVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Sharpness value for each crease edge.</p>
+        <p class="scene-class-attr-comment">Sharpness value for each crease edge.</p>
       
     </p>
     
@@ -393,7 +393,7 @@ title: RdlMeshGeometry
           | all = 5
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Face-varying linear interpolation: None, Corners Only, Corners Plus 1 or Plus 2 (RenderMan), Boundaries, or All</p>
+        <p class="scene-class-attr-comment">Face-varying linear interpolation: None, Corners Only, Corners Plus 1 or Plus 2 (RenderMan), Boundaries, or All</p>
       
     </p>
     
@@ -407,7 +407,7 @@ title: RdlMeshGeometry
           | catclark = 1 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">CatClark or Bilinear</p>
+        <p class="scene-class-attr-comment">CatClark or Bilinear</p>
       
     </p>
     
@@ -418,7 +418,7 @@ title: RdlMeshGeometry
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
+        <p class="scene-class-attr-comment">if "xform" is time varying and motion blur is turned on, Turning on this toggle can generate better rotation trail. Known limitation: turning on this toggle will disable adaptive tessellation</p>
       
     </p>
     
@@ -429,7 +429,7 @@ title: RdlMeshGeometry
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If the mesh is using UVs, store them per-face-vertex in this list</p>
+        <p class="scene-class-attr-comment">If the mesh is using UVs, store them per-face-vertex in this list</p>
       
     </p>
     
@@ -440,7 +440,7 @@ title: RdlMeshGeometry
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Optionally declare vertex velocities instead of a second motion step'</p>
+        <p class="scene-class-attr-comment">Optionally declare vertex velocities instead of a second motion step'</p>
       
     </p>
     
@@ -451,7 +451,7 @@ title: RdlMeshGeometry
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Optionally declare second set ofvertex velocities together with second motion step for cubic motion interpolation</p>
+        <p class="scene-class-attr-comment">Optionally declare second set ofvertex velocities together with second motion step for cubic motion interpolation</p>
       
     </p>
     
@@ -462,7 +462,7 @@ title: RdlMeshGeometry
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Adjust magnitude of velocity-based motion blur</p>
+        <p class="scene-class-attr-comment">Adjust magnitude of velocity-based motion blur</p>
       
     </p>
     
@@ -473,7 +473,7 @@ title: RdlMeshGeometry
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Stores all vertices used by the mesh at motion step 0</p>
+        <p class="scene-class-attr-comment">Stores all vertices used by the mesh at motion step 0</p>
       
     </p>
     
@@ -484,7 +484,7 @@ title: RdlMeshGeometry
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">If the mesh is in motion, the second motion step is stored in this attribute</p>
+        <p class="scene-class-attr-comment">If the mesh is in motion, the second motion step is stored in this attribute</p>
       
     </p>
     
@@ -495,7 +495,7 @@ title: RdlMeshGeometry
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Ordered list of vertex indices used to construct the mesh using the vertex list</p>
+        <p class="scene-class-attr-comment">Ordered list of vertex indices used to construct the mesh using the vertex list</p>
       
     </p>
     
@@ -506,7 +506,7 @@ title: RdlMeshGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse reflection</p>
+        <p class="scene-class-attr-comment">whether the geometry is visible in diffuse reflection</p>
       
     </p>
     
@@ -517,7 +517,7 @@ title: RdlMeshGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in diffuse transmission</p>
+        <p class="scene-class-attr-comment">whether the geometry is visible in diffuse transmission</p>
       
     </p>
     
@@ -528,7 +528,7 @@ title: RdlMeshGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy reflection.</p>
+        <p class="scene-class-attr-comment">whether the geometry is visible in glossy reflection.</p>
       
     </p>
     
@@ -539,7 +539,7 @@ title: RdlMeshGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in glossy transmission (refraction).</p>
+        <p class="scene-class-attr-comment">whether the geometry is visible in glossy transmission (refraction).</p>
       
     </p>
     
@@ -550,7 +550,7 @@ title: RdlMeshGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible to camera rays</p>
+        <p class="scene-class-attr-comment">whether the geometry is visible to camera rays</p>
       
     </p>
     
@@ -561,7 +561,7 @@ title: RdlMeshGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror reflection.</p>
+        <p class="scene-class-attr-comment">whether the geometry is visible in miror reflection.</p>
       
     </p>
     
@@ -572,7 +572,7 @@ title: RdlMeshGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in miror transmission (refraction).</p>
+        <p class="scene-class-attr-comment">whether the geometry is visible in miror transmission (refraction).</p>
       
     </p>
     
@@ -583,7 +583,7 @@ title: RdlMeshGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry casts shadows</p>
+        <p class="scene-class-attr-comment">whether the geometry casts shadows</p>
       
     </p>
     
@@ -594,7 +594,7 @@ title: RdlMeshGeometry
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the geometry is visible in indirect volume rays</p>
+        <p class="scene-class-attr-comment">whether the geometry is visible in indirect volume rays</p>
       
     </p>
     

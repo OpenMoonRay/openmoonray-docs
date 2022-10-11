@@ -13,7 +13,7 @@ title: ProjectCameraMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>black_outside_projection</h3>
@@ -23,7 +23,7 @@ title: ProjectCameraMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
+        <p class="scene-class-attr-comment">Toggles whether projections appear outside the 0-1 uv range of the projector</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: ProjectCameraMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Toggles whether camera projections appear on back faces.</p>
+        <p class="scene-class-attr-comment">Toggles whether camera projections appear on back faces.</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: ProjectCameraMap
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: ProjectCameraMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">used to apply non-uniform scaling to projection</p>
+        <p class="scene-class-attr-comment">used to apply non-uniform scaling to projection</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: ProjectCameraMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">use reference space</p>
+        <p class="scene-class-attr-comment">use reference space</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: ProjectCameraMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">maximum projected x coordinate</p>
+        <p class="scene-class-attr-comment">maximum projected x coordinate</p>
       
     </p>
     
@@ -89,7 +89,7 @@ title: ProjectCameraMap
       
         default: -1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">minimum projected x coordinate</p>
+        <p class="scene-class-attr-comment">minimum projected x coordinate</p>
       
     </p>
     
@@ -100,7 +100,7 @@ title: ProjectCameraMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">maximum projected y coordinate</p>
+        <p class="scene-class-attr-comment">maximum projected y coordinate</p>
       
     </p>
     
@@ -111,7 +111,7 @@ title: ProjectCameraMap
       
         default: -1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">minimum projected y coordinate</p>
+        <p class="scene-class-attr-comment">minimum projected y coordinate</p>
       
     </p>
     

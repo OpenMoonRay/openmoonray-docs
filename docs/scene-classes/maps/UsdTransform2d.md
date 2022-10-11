@@ -13,7 +13,7 @@ title: UsdTransform2d
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>in</h3>
@@ -23,7 +23,7 @@ title: UsdTransform2d
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">This input provides the data. It is usually connected to a UsdPrimvarReader_float2 that will provide the data.</p>
+        <p class="scene-class-attr-comment">This input provides the data. It is usually connected to a UsdPrimvarReader_float2 that will provide the data.</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: UsdTransform2d
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Counter-clockwise rotation in degrees around the origin to be applied to all components of the data.</p>
+        <p class="scene-class-attr-comment">Counter-clockwise rotation in degrees around the origin to be applied to all components of the data.</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: UsdTransform2d
       
         default: [ 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Scale around the origin to be applied to all components of the data.</p>
+        <p class="scene-class-attr-comment">Scale around the origin to be applied to all components of the data.</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: UsdTransform2d
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Translation to be applied to all components of the data.</p>
+        <p class="scene-class-attr-comment">Translation to be applied to all components of the data.</p>
       
     </p>
     

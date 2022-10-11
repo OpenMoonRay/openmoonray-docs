@@ -13,7 +13,7 @@ title: RemapDisplayFilter
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Advanced attributes</summary>
+  <summary class="scene-class-attr-group">Advanced attributes</summary>
   <p>
     
     <h3>invert_mask</h3>
@@ -23,7 +23,7 @@ title: RemapDisplayFilter
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">invert value of mask</p>
+        <p class="scene-class-attr-comment">invert value of mask</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: RemapDisplayFilter
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">blend between output and input</p>
+        <p class="scene-class-attr-comment">blend between output and input</p>
       
     </p>
     
@@ -43,7 +43,7 @@ title: RemapDisplayFilter
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Channel attributes</summary>
+  <summary class="scene-class-attr-group">Channel attributes</summary>
   <p>
     
     <h3>clamp_max_RGB</h3>
@@ -53,7 +53,7 @@ title: RemapDisplayFilter
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the maximum value output by this map when 'clamp' is enabled</p>
+        <p class="scene-class-attr-comment">the maximum value output by this map when 'clamp' is enabled</p>
       
     </p>
     
@@ -64,7 +64,7 @@ title: RemapDisplayFilter
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the minimum value output by this map when 'clamp' is enabled</p>
+        <p class="scene-class-attr-comment">the minimum value output by this map when 'clamp' is enabled</p>
       
     </p>
     
@@ -75,7 +75,7 @@ title: RemapDisplayFilter
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the input value that will be remapped to the 'output max' value</p>
+        <p class="scene-class-attr-comment">the input value that will be remapped to the 'output max' value</p>
       
     </p>
     
@@ -86,7 +86,7 @@ title: RemapDisplayFilter
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the input value that will be remapped to the 'output min' value</p>
+        <p class="scene-class-attr-comment">the input value that will be remapped to the 'output min' value</p>
       
     </p>
     
@@ -97,7 +97,7 @@ title: RemapDisplayFilter
       
         default: [ 0.5, 0.5, 0.5 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">biases the in-between values toward 'output min' or 'output max'. Default = 0.5</p>
+        <p class="scene-class-attr-comment">biases the in-between values toward 'output min' or 'output max'. Default = 0.5</p>
       
     </p>
     
@@ -108,7 +108,7 @@ title: RemapDisplayFilter
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the value that 'input max' is remapped to</p>
+        <p class="scene-class-attr-comment">the value that 'input max' is remapped to</p>
       
     </p>
     
@@ -119,7 +119,7 @@ title: RemapDisplayFilter
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the value that 'input min' is remapped to</p>
+        <p class="scene-class-attr-comment">the value that 'input min' is remapped to</p>
       
     </p>
     
@@ -128,7 +128,7 @@ title: RemapDisplayFilter
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>clamp</h3>
@@ -138,7 +138,7 @@ title: RemapDisplayFilter
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.</p>
+        <p class="scene-class-attr-comment">enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.</p>
       
     </p>
     
@@ -149,7 +149,7 @@ title: RemapDisplayFilter
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.</p>
+        <p class="scene-class-attr-comment">enables/disables clamping of the output values.  This useful prevent out-of-range values when expanding the input values.</p>
       
     </p>
     
@@ -160,7 +160,7 @@ title: RemapDisplayFilter
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the maximum value output by this map when 'clamp' is enabled</p>
+        <p class="scene-class-attr-comment">the maximum value output by this map when 'clamp' is enabled</p>
       
     </p>
     
@@ -171,7 +171,7 @@ title: RemapDisplayFilter
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the minimum value output by this map when 'clamp' is enabled</p>
+        <p class="scene-class-attr-comment">the minimum value output by this map when 'clamp' is enabled</p>
       
     </p>
     
@@ -182,7 +182,7 @@ title: RemapDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Input buffer</p>
+        <p class="scene-class-attr-comment">Input buffer</p>
       
     </p>
     
@@ -193,7 +193,7 @@ title: RemapDisplayFilter
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the input value that will be remapped to the 'output max' value</p>
+        <p class="scene-class-attr-comment">the input value that will be remapped to the 'output max' value</p>
       
     </p>
     
@@ -204,7 +204,7 @@ title: RemapDisplayFilter
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the input value that will be remapped to the 'output min' value</p>
+        <p class="scene-class-attr-comment">the input value that will be remapped to the 'output min' value</p>
       
     </p>
     
@@ -215,7 +215,7 @@ title: RemapDisplayFilter
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -226,7 +226,7 @@ title: RemapDisplayFilter
       
         default: 0.5
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">biases the in-between values toward 'output min' or 'output max'. Default = 0.5</p>
+        <p class="scene-class-attr-comment">biases the in-between values toward 'output min' or 'output max'. Default = 0.5</p>
       
     </p>
     
@@ -237,7 +237,7 @@ title: RemapDisplayFilter
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the value that 'input max' is remapped to</p>
+        <p class="scene-class-attr-comment">the value that 'input max' is remapped to</p>
       
     </p>
     
@@ -248,7 +248,7 @@ title: RemapDisplayFilter
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">the value that 'input min' is remapped to</p>
+        <p class="scene-class-attr-comment">the value that 'input min' is remapped to</p>
       
     </p>
     
@@ -262,7 +262,7 @@ title: RemapDisplayFilter
           | RGB = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Choose whether you are remapping using single values (uniform) or with separate RGB channels</p>
+        <p class="scene-class-attr-comment">Choose whether you are remapping using single values (uniform) or with separate RGB channels</p>
       
     </p>
     

@@ -13,7 +13,7 @@ title: ColorCorrectHueShiftMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>hue_shift</h3>
@@ -23,7 +23,7 @@ title: ColorCorrectHueShiftMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">shifts the hue of the input (spectrum range is 0-1)</p>
+        <p class="scene-class-attr-comment">shifts the hue of the input (spectrum range is 0-1)</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: ColorCorrectHueShiftMap
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">bind the input here</p>
+        <p class="scene-class-attr-comment">bind the input here</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: ColorCorrectHueShiftMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">how much of the overall color correct to mix in</p>
+        <p class="scene-class-attr-comment">how much of the overall color correct to mix in</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: ColorCorrectHueShiftMap
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">enables/disables all color correct operations</p>
+        <p class="scene-class-attr-comment">enables/disables all color correct operations</p>
       
     </p>
     

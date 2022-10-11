@@ -13,7 +13,7 @@ title: MeshLight
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Map attributes</summary>
+  <summary class="scene-class-attr-group">Map attributes</summary>
   <p>
     
     <h3>contrast</h3>
@@ -23,7 +23,7 @@ title: MeshLight
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: MeshLight
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: MeshLight
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: MeshLight
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: MeshLight
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: MeshLight
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">color temperature using Nuke-like T/M/E settings</p>
+        <p class="scene-class-attr-comment">color temperature using Nuke-like T/M/E settings</p>
       
     </p>
     
@@ -89,7 +89,7 @@ title: MeshLight
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a texture (formats: .exr, .tif, .jpg, etc.)</p>
+        <p class="scene-class-attr-comment">filename that points to a texture (formats: .exr, .tif, .jpg, etc.)</p>
       
     </p>
     
@@ -100,7 +100,7 @@ title: MeshLight
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">RGB value used when a texture lookup occurs outside the texture</p>
+        <p class="scene-class-attr-comment">RGB value used when a texture lookup occurs outside the texture</p>
       
     </p>
     
@@ -111,7 +111,7 @@ title: MeshLight
       
         default: [ 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Scales in (u,v)</p>
+        <p class="scene-class-attr-comment">Scales in (u,v)</p>
       
     </p>
     
@@ -122,7 +122,7 @@ title: MeshLight
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">true =&gt; mirror in u, false =&gt; repeat in u</p>
+        <p class="scene-class-attr-comment">true =&gt; mirror in u, false =&gt; repeat in u</p>
       
     </p>
     
@@ -133,7 +133,7 @@ title: MeshLight
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">true =&gt; mirror in v, false =&gt; repeat in v</p>
+        <p class="scene-class-attr-comment">true =&gt; mirror in v, false =&gt; repeat in v</p>
       
     </p>
     
@@ -144,7 +144,7 @@ title: MeshLight
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Number of times texture repeats in u over the scaled texture space</p>
+        <p class="scene-class-attr-comment">Number of times texture repeats in u over the scaled texture space</p>
       
     </p>
     
@@ -155,7 +155,7 @@ title: MeshLight
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Number of times texture repeats in v over the scaled texture space</p>
+        <p class="scene-class-attr-comment">Number of times texture repeats in v over the scaled texture space</p>
       
     </p>
     
@@ -166,7 +166,7 @@ title: MeshLight
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Clockwise rotation angle in degrees</p>
+        <p class="scene-class-attr-comment">Clockwise rotation angle in degrees</p>
       
     </p>
     
@@ -177,7 +177,7 @@ title: MeshLight
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Translations in (u,v) expressed as fractions of the unscaled texture space</p>
+        <p class="scene-class-attr-comment">Translations in (u,v) expressed as fractions of the unscaled texture space</p>
       
     </p>
     
@@ -186,7 +186,7 @@ title: MeshLight
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Properties attributes</summary>
+  <summary class="scene-class-attr-group">Properties attributes</summary>
   <p>
     
     <h3>apply_scene_scale</h3>
@@ -196,7 +196,7 @@ title: MeshLight
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">apply scene scale variable when normalized</p>
+        <p class="scene-class-attr-comment">apply scene scale variable when normalized</p>
       
     </p>
     
@@ -207,7 +207,7 @@ title: MeshLight
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">clear radius: shadows less than this distance from the light are ignored (disabled if &lt;= 0.0)</p>
+        <p class="scene-class-attr-comment">clear radius: shadows less than this distance from the light are ignored (disabled if &lt;= 0.0)</p>
       
     </p>
     
@@ -218,7 +218,7 @@ title: MeshLight
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">clear radius falloff distance: distance over which the shadows fall off, where shadows start to falloff at clear radius + falloff distance and disappear entirely at clear radius</p>
+        <p class="scene-class-attr-comment">clear radius falloff distance: distance over which the shadows fall off, where shadows start to falloff at clear radius + falloff distance and disappear entirely at clear radius</p>
       
     </p>
     
@@ -236,7 +236,7 @@ title: MeshLight
           | smoothstep = 3
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">clear radius interpolation: interpolation type to use for the clear radius shadow falloff</p>
+        <p class="scene-class-attr-comment">clear radius interpolation: interpolation type to use for the clear radius shadow falloff</p>
       
     </p>
     
@@ -247,7 +247,7 @@ title: MeshLight
       
         default: [ 1, 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -258,7 +258,7 @@ title: MeshLight
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -269,7 +269,7 @@ title: MeshLight
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -280,7 +280,7 @@ title: MeshLight
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -291,7 +291,7 @@ title: MeshLight
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">label used in light aov expressions</p>
+        <p class="scene-class-attr-comment">label used in light aov expressions</p>
       
     </p>
     
@@ -302,7 +302,7 @@ title: MeshLight
       
         default: None
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -313,7 +313,7 @@ title: MeshLight
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -324,7 +324,7 @@ title: MeshLight
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Does light motion affect motion-blur?</p>
+        <p class="scene-class-attr-comment">Does light motion affect motion-blur?</p>
       
     </p>
     
@@ -335,7 +335,7 @@ title: MeshLight
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -346,7 +346,7 @@ title: MeshLight
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -357,7 +357,7 @@ title: MeshLight
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -373,7 +373,7 @@ title: MeshLight
           | use default = 2 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -384,7 +384,7 @@ title: MeshLight
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Is light used for ray termination color? Ray termination color is used for filling in falsely dark areas where ray paths have been terminated too early by the depth controls. Such a ray path immediately exits to any ray termination light(s) present in the light set being applied to the lobe, ignoring occlusion by scene geometry. Any light can either be a regular light or a ray termination light (but not both). Thus they can be freely assigned to light sets, which provides a mechanism for applying specific ray termination lights to specific materials, parts or objects. Ray termination color is only applied to non-hair transmission lobes.</p>
+        <p class="scene-class-attr-comment">Is light used for ray termination color? Ray termination color is used for filling in falsely dark areas where ray paths have been terminated too early by the depth controls. Such a ray path immediately exits to any ray termination light(s) present in the light set being applied to the lobe, ignoring occlusion by scene geometry. Any light can either be a regular light or a ray termination light (but not both). Thus they can be freely assigned to light sets, which provides a mechanism for applying specific ray termination lights to specific materials, parts or objects. Ray termination color is only applied to non-hair transmission lobes.</p>
       
     </p>
     
@@ -402,7 +402,7 @@ title: MeshLight
           | bilinear with nearest mip = 3
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -418,7 +418,7 @@ title: MeshLight
           | use default = 2 (default)
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -427,7 +427,7 @@ title: MeshLight
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">Visibility Flags attributes</summary>
+  <summary class="scene-class-attr-group">Visibility Flags attributes</summary>
   <p>
     
     <h3>visible_diffuse_reflection</h3>
@@ -437,7 +437,7 @@ title: MeshLight
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the light is visible in diffuse reflection</p>
+        <p class="scene-class-attr-comment">whether the light is visible in diffuse reflection</p>
       
     </p>
     
@@ -448,7 +448,7 @@ title: MeshLight
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the light is visible in diffuse transmission</p>
+        <p class="scene-class-attr-comment">whether the light is visible in diffuse transmission</p>
       
     </p>
     
@@ -459,7 +459,7 @@ title: MeshLight
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the light is visible in glossy reflection.</p>
+        <p class="scene-class-attr-comment">whether the light is visible in glossy reflection.</p>
       
     </p>
     
@@ -470,7 +470,7 @@ title: MeshLight
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the light is visible in glossy transmission (refraction).</p>
+        <p class="scene-class-attr-comment">whether the light is visible in glossy transmission (refraction).</p>
       
     </p>
     
@@ -481,7 +481,7 @@ title: MeshLight
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the light is visible in miror reflection.</p>
+        <p class="scene-class-attr-comment">whether the light is visible in miror reflection.</p>
       
     </p>
     
@@ -492,7 +492,7 @@ title: MeshLight
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">whether the light is visible in miror transmission (refraction).</p>
+        <p class="scene-class-attr-comment">whether the light is visible in miror transmission (refraction).</p>
       
     </p>
     
@@ -501,7 +501,7 @@ title: MeshLight
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>light_filters</h3>
@@ -511,7 +511,7 @@ title: MeshLight
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -522,7 +522,7 @@ title: MeshLight
       
         default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     

@@ -13,7 +13,7 @@ title: ImageNormalMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">UVs attributes</summary>
+  <summary class="scene-class-attr-group">UVs attributes</summary>
   <p>
     
     <h3>offset</h3>
@@ -23,7 +23,7 @@ title: ImageNormalMap
       
         default: [ 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -34,7 +34,7 @@ title: ImageNormalMap
       
         default: 0.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Rotation in degrees</p>
+        <p class="scene-class-attr-comment">Rotation in degrees</p>
       
     </p>
     
@@ -45,7 +45,7 @@ title: ImageNormalMap
       
         default: [ 0.5, 0.5 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">UV coordinate around which to rotate</p>
+        <p class="scene-class-attr-comment">UV coordinate around which to rotate</p>
       
     </p>
     
@@ -56,7 +56,7 @@ title: ImageNormalMap
       
         default: [ 1, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -67,7 +67,7 @@ title: ImageNormalMap
       
         default: []
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -78,7 +78,7 @@ title: ImageNormalMap
       
         default: 10
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">udim maximum v value</p>
+        <p class="scene-class-attr-comment">udim maximum v value</p>
       
     </p>
     
@@ -89,7 +89,7 @@ title: ImageNormalMap
       
         default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -98,7 +98,7 @@ title: ImageNormalMap
 
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>default_value</h3>
@@ -108,7 +108,7 @@ title: ImageNormalMap
       
         default: [ 0, 0, 1 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">default value to be used for missing udims when 'use_default_value_when_missing' is enabled</p>
+        <p class="scene-class-attr-comment">default value to be used for missing udims when 'use_default_value_when_missing' is enabled</p>
       
     </p>
     
@@ -119,7 +119,7 @@ title: ImageNormalMap
       
         default: [ 0, 0, 0 ]
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -133,7 +133,7 @@ title: ImageNormalMap
           | [-1,1] = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Most normal maps are encoded [0,1]. Only certain rare floating point normal maps are encoded [-1,1]</p>
+        <p class="scene-class-attr-comment">Most normal maps are encoded [0,1]. Only certain rare floating point normal maps are encoded [-1,1]</p>
       
     </p>
     
@@ -144,7 +144,7 @@ title: ImageNormalMap
       
         default: 
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">filename that points to a tangent space normal texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+        <p class="scene-class-attr-comment">filename that points to a tangent space normal texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
       
     </p>
     
@@ -158,7 +158,7 @@ title: ImageNormalMap
           | input texture coordinates = 1
         
       
-        <p class="jekyll-theme-minimal scene-class-attr-missing">No documentation available</p>
+        <p class="scene-class-attr-missing">No documentation available</p>
       
     </p>
     
@@ -169,7 +169,7 @@ title: ImageNormalMap
       
         default: False
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Uses the 'default_value' for missing udims and does not report error</p>
+        <p class="scene-class-attr-comment">Uses the 'default_value' for missing udims and does not report error</p>
       
     </p>
     
@@ -180,7 +180,7 @@ title: ImageNormalMap
       
         default: True
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
+        <p class="scene-class-attr-comment">Controls whether to repeat (true) or clamp (false) the texture</p>
       
     </p>
     

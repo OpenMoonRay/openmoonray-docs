@@ -13,7 +13,7 @@ title: ConstantScalarMap
 ---
 
 <details open>
-  <summary class="jekyll-theme-minimal scene-class-attr-group">General attributes</summary>
+  <summary class="scene-class-attr-group">General attributes</summary>
   <p>
     
     <h3>scalar_value</h3>
@@ -23,7 +23,7 @@ title: ConstantScalarMap
       
         default: 1.0
       
-        <p class="jekyll-theme-minimal scene-class-attr-comment">constant scalar value</p>
+        <p class="scene-class-attr-comment">constant scalar value</p>
       
     </p>
     
