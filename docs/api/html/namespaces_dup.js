@@ -1,5 +1,6 @@
 var namespaces_dup =
 [
+    [ "af_detail", "namespaceaf__detail.html", "namespaceaf__detail" ],
     [ "animate_plot", "namespaceanimate__plot.html", [
       [ "cant_read", "namespaceanimate__plot.html#aded7c39957ffd47612f5af6282ebb498", null ],
       [ "cranley_patterson_rotation", "namespaceanimate__plot.html#a869ba389c4fa4fe3137b63595a4c231a", null ],
@@ -27,6 +28,9 @@ var namespaces_dup =
       [ "LOG_USER", "namespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03.html#a05e448480438c71d27e77cf10a7ed7c7", null ],
       [ "SYSLOG_PRIO", "namespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03.html#a5fb6d32b1c4ab1aecf86cec6a4cf8214", null ]
     ] ],
+    [ "anonymous_namespace{Attribute.cc}", "namespaceanonymous__namespace_02_attribute_8cc_03.html", [
+      [ "showVec", "namespaceanonymous__namespace_02_attribute_8cc_03.html#a60f59abd3923bb4093429230827f2f81", null ]
+    ] ],
     [ "anonymous_namespace{BsdfBuilder.cc}", "namespaceanonymous__namespace_02_bsdf_builder_8cc_03.html", [
       [ "clampHairRoughness", "namespaceanonymous__namespace_02_bsdf_builder_8cc_03.html#a8728c8ca559dbd76f65eb96bdae444c2", null ],
       [ "sHairGlintRoughnessMin", "namespaceanonymous__namespace_02_bsdf_builder_8cc_03.html#a3538f9e366b19cdcfa4d49b785ebdb8a", null ],
@@ -42,9 +46,42 @@ var namespaces_dup =
       [ "sample2D", "namespaceanonymous__namespace_02_debug_map_8cc_03.html#a76557cb9bcf4009f786200fbf66d1448", null ],
       [ "sample3D", "namespaceanonymous__namespace_02_debug_map_8cc_03.html#a90e92e3e756c3cd341e3296bcf51e048", null ]
     ] ],
+    [ "anonymous_namespace{DeclareAndCreateObject.cc}", "namespaceanonymous__namespace_02_declare_and_create_object_8cc_03.html", "namespaceanonymous__namespace_02_declare_and_create_object_8cc_03" ],
+    [ "anonymous_namespace{DeclareAndDestroyObject.cc}", "namespaceanonymous__namespace_02_declare_and_destroy_object_8cc_03.html", "namespaceanonymous__namespace_02_declare_and_destroy_object_8cc_03" ],
+    [ "anonymous_namespace{FakeDisplacement.cc}", "namespaceanonymous__namespace_02_fake_displacement_8cc_03.html", [
+      [ "fakeDisplace", "namespaceanonymous__namespace_02_fake_displacement_8cc_03.html#affd80645cf6a10d75d0de1bbb79aa6cb", null ]
+    ] ],
+    [ "anonymous_namespace{FakeMaterial.cc}", "namespaceanonymous__namespace_02_fake_material_8cc_03.html", [
+      [ "fakeShade", "namespaceanonymous__namespace_02_fake_material_8cc_03.html#a08ce696d09b80c1f9805411c9b9701ed", null ]
+    ] ],
+    [ "anonymous_namespace{FakeVolumeShader.cc}", "namespaceanonymous__namespace_02_fake_volume_shader_8cc_03.html", null ],
     [ "anonymous_namespace{InstanceProceduralLeaf.cc}", "namespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03.html", [
       [ "isValidXform", "namespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03.html#aa3fa557907d9a0efd7badf083aee844d", null ],
       [ "validateXformAttrs", "namespaceanonymous__namespace_02_instance_procedural_leaf_8cc_03.html#a6ee91e3c69da7660db508dabdc34e99f", null ]
+    ] ],
+    [ "anonymous_namespace{Layer.cc}", "namespaceanonymous__namespace_02_layer_8cc_03.html", [
+      [ "isDeformed", "namespaceanonymous__namespace_02_layer_8cc_03.html#a2d0d0aaf50a216959a15cc1e6a5db1d1", null ]
+    ] ],
+    [ "anonymous_namespace{LibLadenMap.cc}", "namespaceanonymous__namespace_02_lib_laden_map_8cc_03.html", [
+      [ "fakeSample", "namespaceanonymous__namespace_02_lib_laden_map_8cc_03.html#aff6bc90d905776519dec88ddcdd45675", null ]
+    ] ],
+    [ "anonymous_namespace{LibLadenMaterial.cc}", "namespaceanonymous__namespace_02_lib_laden_material_8cc_03.html", [
+      [ "fakeShade", "namespaceanonymous__namespace_02_lib_laden_material_8cc_03.html#ad550ef72c055ace54357347fe853f7cf", null ]
+    ] ],
+    [ "anonymous_namespace{LibLadenNormalMap.cc}", "namespaceanonymous__namespace_02_lib_laden_normal_map_8cc_03.html", [
+      [ "fakeSample", "namespaceanonymous__namespace_02_lib_laden_normal_map_8cc_03.html#a8908cb6221a29e22e2425a6eb2b84184", null ]
+    ] ],
+    [ "anonymous_namespace{logging.cc}", "namespaceanonymous__namespace_02logging_8cc_03.html", [
+      [ "getProcessArgs", "namespaceanonymous__namespace_02logging_8cc_03.html#ae7ba0ed6247e81621242dad54adfb85e", null ]
+    ] ],
+    [ "anonymous_namespace{logging.h}", "namespaceanonymous__namespace_02logging_8h_03.html", [
+      [ "buildString", "namespaceanonymous__namespace_02logging_8h_03.html#a09e8bacb3942e191016e3e9346e46b45", null ],
+      [ "combineString", "namespaceanonymous__namespace_02logging_8h_03.html#a93cb0b1723ee291d52884ef622d645a2", null ],
+      [ "combineString", "namespaceanonymous__namespace_02logging_8h_03.html#a51e799aa8884b07a49141d67dda05a45", null ]
+    ] ],
+    [ "anonymous_namespace{LuaScriptRunner.cc}", "namespaceanonymous__namespace_02_lua_script_runner_8cc_03.html", [
+      [ "errorHandler", "namespaceanonymous__namespace_02_lua_script_runner_8cc_03.html#a98f0b96a2c0ba651b292bda7c8d8d8b2", null ],
+      [ "panicHandler", "namespaceanonymous__namespace_02_lua_script_runner_8cc_03.html#a21dc1a3850504493159ddcc880cb76cc", null ]
     ] ],
     [ "anonymous_namespace{McrtFbSender.cc}", "namespaceanonymous__namespace_02_mcrt_fb_sender_8cc_03.html", [
       [ "AOV_BEAUTY", "namespaceanonymous__namespace_02_mcrt_fb_sender_8cc_03.html#aa1dcfc2532ea27b0918652c5243e0c52", null ],
@@ -65,7 +102,48 @@ var namespaces_dup =
     [ "anonymous_namespace{OpenVdbSampler.cc}", "namespaceanonymous__namespace_02_open_vdb_sampler_8cc_03.html", [
       [ "readGrid", "namespaceanonymous__namespace_02_open_vdb_sampler_8cc_03.html#aefc01433ffdda4fad86fd0f1656a40f5", null ]
     ] ],
+    [ "anonymous_namespace{printers.cc}", "namespaceanonymous__namespace_02printers_8cc_03.html", [
+      [ "fetchBinding", "namespaceanonymous__namespace_02printers_8cc_03.html#a09842abfa16defc8f173caf385c4ff7f", null ],
+      [ "fetchBindingHelper", "namespaceanonymous__namespace_02printers_8cc_03.html#ab8e4f339a77015c4ac06c6383a7109d1", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#ae6c99c2c58be334889796807e474cd3a", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#ad6e2b99a888c866475ffcf9756b9c5e0", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#a1493594b520c3bcd0eec75b04ae92018", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#aa0c99d535a6e09145989ae0c9e145899", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#a02bbd04383de77fc0e40f49588e8a7a6", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#a13902f7a2037c936ce83b80f2f4d403d", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#a50999ad76f1a26612cadfe8a0c721e53", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#abba50cb492c5d53d16ddb41a6f47dafd", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#a1b56dc9a0399eef4e170ea85d9f07a96", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#a7e3d962aa1d44d12259bc3d2da1d046b", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#aa111bae9c4d9639b2610efdae1be7092", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#ae2a3a63182305e8aed1448b052ebf7b0", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#ab4aa4bbc7a68d8006cfda3e59b725638", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#a9ec5dca86d0608d5fa52514a351ea87c", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#ac360e1b60d83f807296486bca2146907", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#ae10c7b90bf99ab6bb75f6e025780cd9b", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#a1fa69ea749181637ef4741427db2cdf0", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#ae26f240f5cffd8a3bc0d9a2420e5499d", null ],
+      [ "operator<<", "namespaceanonymous__namespace_02printers_8cc_03.html#a59dd6c00043e5436d95d98ca9af47120", null ],
+      [ "outputDefault", "namespaceanonymous__namespace_02printers_8cc_03.html#a7d7c15e42955d8950f81c956020d6203", null ],
+      [ "outputDefaultHelper", "namespaceanonymous__namespace_02printers_8cc_03.html#afae01a73350ce0a3d59a071c0300dd69", null ],
+      [ "outputDefaultHelper< rdl2::Bool >", "namespaceanonymous__namespace_02printers_8cc_03.html#afffbccdf98422adf12447331870c84bf", null ],
+      [ "outputValue", "namespaceanonymous__namespace_02printers_8cc_03.html#a52fa5c3bc3c7479e4a9fa3d73a42ee2a", null ],
+      [ "outputValueHelper", "namespaceanonymous__namespace_02printers_8cc_03.html#a5fcdaa4933ddbf547b5fc8c7977442e4", null ],
+      [ "outputValueHelper< rdl2::Bool >", "namespaceanonymous__namespace_02printers_8cc_03.html#a9775c260a1ad87a8cdfc2aeea88f4530", null ],
+      [ "outputValueHelper< rdl2::Int >", "namespaceanonymous__namespace_02printers_8cc_03.html#a4c9c3e16eee083e0dbb595d7c6dede0d", null ],
+      [ "rdl2IndexablePrint", "namespaceanonymous__namespace_02printers_8cc_03.html#ac8607177fb7b8845b0fb0f73e789a7f2", null ],
+      [ "rdl2VectorPrint", "namespaceanonymous__namespace_02printers_8cc_03.html#ac38f57378a527e2fd9e1116a4edc1317", null ],
+      [ "INDENT", "namespaceanonymous__namespace_02printers_8cc_03.html#ad2e61384765d5a084d987b2ff8c1f1d3", null ]
+    ] ],
     [ "anonymous_namespace{RampControl.cc}", "namespaceanonymous__namespace_02_ramp_control_8cc_03.html", "namespaceanonymous__namespace_02_ramp_control_8cc_03" ],
+    [ "anonymous_namespace{rdl2_convert.cc}", "namespaceanonymous__namespace_02rdl2__convert_8cc_03.html", [
+      [ "printUsage", "namespaceanonymous__namespace_02rdl2__convert_8cc_03.html#ab35a9cd088bbdda9c6299d1c0c253793", null ]
+    ] ],
+    [ "anonymous_namespace{rdl2_json_exporter.cc}", "namespaceanonymous__namespace_02rdl2__json__exporter_8cc_03.html", "namespaceanonymous__namespace_02rdl2__json__exporter_8cc_03" ],
+    [ "anonymous_namespace{rdl2_localize.cc}", "namespaceanonymous__namespace_02rdl2__localize_8cc_03.html", [
+      [ "printUsage", "namespaceanonymous__namespace_02rdl2__localize_8cc_03.html#a4741ff964651e6db764f1686d3c221ea", null ]
+    ] ],
+    [ "anonymous_namespace{rdl2_print.cc}", "namespaceanonymous__namespace_02rdl2__print_8cc_03.html", "namespaceanonymous__namespace_02rdl2__print_8cc_03" ],
     [ "anonymous_namespace{RdlCurveGeometry.cc}", "namespaceanonymous__namespace_02_rdl_curve_geometry_8cc_03.html", [
       [ "createPerCurveAssignmentId", "namespaceanonymous__namespace_02_rdl_curve_geometry_8cc_03.html#a4415095ffc6c454e77a81d67261ec366", null ],
       [ "sDefaultPartName", "namespaceanonymous__namespace_02_rdl_curve_geometry_8cc_03.html#abd3eb0a71c4e48430903ea909d991415", null ]
@@ -126,7 +204,11 @@ var namespaces_dup =
       [ "runTestMax", "namespaceanonymous__namespace_02test__atomic__functions_8cc_03.html#a00ebd4453277b2f9ac245bb07efae1ac", null ],
       [ "runTestMin", "namespaceanonymous__namespace_02test__atomic__functions_8cc_03.html#a7a22c3f9d1b2ac43c7051d3610d855d9", null ]
     ] ],
+    [ "anonymous_namespace{test_math_Xform.cc}", "namespaceanonymous__namespace_02test__math___xform_8cc_03.html", [
+      [ "bbExtents", "namespaceanonymous__namespace_02test__math___xform_8cc_03.html#a772ad1af3d05c9d61752a264a65e3e14", null ]
+    ] ],
     [ "anonymous_namespace{test_ring_buffer.cc}", "namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html", "namespaceanonymous__namespace_02test__ring__buffer_8cc_03" ],
+    [ "anonymous_namespace{test_util.cc}", "namespaceanonymous__namespace_02test__util_8cc_03.html", "namespaceanonymous__namespace_02test__util_8cc_03" ],
     [ "anonymous_namespace{test_wait.cc}", "namespaceanonymous__namespace_02test__wait_8cc_03.html", "namespaceanonymous__namespace_02test__wait_8cc_03" ],
     [ "anonymous_namespace{TestEvalAttribute.cc}", "namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html", "namespaceanonymous__namespace_02_test_eval_attribute_8cc_03" ],
     [ "anonymous_namespace{TestPrimitiveAttribute.cc}", "namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html", [
@@ -140,6 +222,7 @@ var namespaces_dup =
       [ "keysPerStride", "namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#abcc4ab5fdb82ef5ed8fb01660ae55465", null ],
       [ "nStrides", "namespaceanonymous__namespace_02_test_primitive_attribute_8cc_03.html#a31738bb5c2869957ac4413ed3f588186", null ]
     ] ],
+    [ "anonymous_namespace{TestRandom.cc}", "namespaceanonymous__namespace_02_test_random_8cc_03.html", "namespaceanonymous__namespace_02_test_random_8cc_03" ],
     [ "anonymous_namespace{TextureSampler.cc}", "namespaceanonymous__namespace_02_texture_sampler_8cc_03.html", [
       [ "findLine", "namespaceanonymous__namespace_02_texture_sampler_8cc_03.html#a00fb9e78ef9e1d56eddd7cdb8fb4285a", null ]
     ] ],
@@ -148,6 +231,9 @@ var namespaces_dup =
       [ "addMicrofacetDielectricLobe", "namespaceanonymous__namespace_02_usd_preview_surface_8cc_03.html#a22d745ec548c046fadaedc3420277d2b", null ],
       [ "addMirrorConductorLobe", "namespaceanonymous__namespace_02_usd_preview_surface_8cc_03.html#a3ff6a6f0cc99dcc16d2844a6f7f7051c", null ],
       [ "addMirrorDielectricLobe", "namespaceanonymous__namespace_02_usd_preview_surface_8cc_03.html#a90aaf6b745f5febfd66dd5da09b72c00", null ]
+    ] ],
+    [ "anonymous_namespace{Utils.cc}", "namespaceanonymous__namespace_02_utils_8cc_03.html", [
+      [ "SPLIT_VEC_SIZE", "namespaceanonymous__namespace_02_utils_8cc_03.html#a8750fe7f465939924ead60c968d20bbe", null ]
     ] ],
     [ "convert_samples_to_array", "namespaceconvert__samples__to__array.html", [
       [ "countValues", "namespaceconvert__samples__to__array.html#a32471d10a87a2732194fedda662ea941", null ],
@@ -162,7 +248,9 @@ var namespaces_dup =
       [ "writeLine", "namespaceconvert__samples__to__array.html#aca6c7de15f68a44c5b1c16450fc12578", null ]
     ] ],
     [ "detail", "namespacedetail.html", "namespacedetail" ],
+    [ "fauxstd", "namespacefauxstd.html", "namespacefauxstd" ],
     [ "ispc", "namespaceispc.html", [
+      [ "Color", "namespaceispc.html#a03763f6969b47cdce2092f8b178cf840", null ],
       [ "AttributeTable_hvdValidation", "namespaceispc.html#a8269cec5e6397f0bbb626a63e18a00e4", null ],
       [ "BaseTLState_hudValidation", "namespaceispc.html#ac28046a96d00306f96898efbe8a1772c", null ],
       [ "BundledOcclRay_hvdValidation", "namespaceispc.html#ae24c3d64f123d66d42d833e209711005", null ],
@@ -208,32 +296,38 @@ var namespaces_dup =
       [ "IspcType", "namespaceispc__dso.html#a5bf06305af61b073fb9a4bc32cd7a871", null ],
       [ "mergeJson", "namespaceispc__dso.html#a49586a55785ba74db874ad7a29df541d", null ]
     ] ],
+    [ "llvm", "namespacellvm.html", null ],
     [ "lpexp", "namespacelpexp.html", "namespacelpexp" ],
     [ "mm", "namespacemm.html", null ],
     [ "moonray", "namespacemoonray.html", "namespacemoonray" ],
     [ "moonshine", "namespacemoonshine.html", "namespacemoonshine" ],
     [ "package", "namespacepackage.html", [
-      [ "commands", "namespacepackage.html#ac8c75140eb27afe0d6e7d526026fdd09", null ],
-      [ "early", "namespacepackage.html#a640b85ec3769483ad989b022a9f57c54", null ],
-      [ "version", "namespacepackage.html#a6e76b3113eb5f252a56cd1db469e3f9a", null ],
-      [ "authors", "namespacepackage.html#a93fccbc9db3555fa7379d151e457e627", null ],
-      [ "conf_rats_variants", "namespacepackage.html#a595c0f77057c6b4cf236e3d9e00d2f78", null ],
-      [ "config_version", "namespacepackage.html#a4cd442b0ebe3b7acdbd5a9ae747def8d", null ],
-      [ "description", "namespacepackage.html#a1bf55ca64634b72b9400e7f707881a21", null ],
-      [ "help", "namespacepackage.html#a08c08267f50c6b5bbcc4f1336b176367", null ],
-      [ "name", "namespacepackage.html#a781101519999e91f2fc32335a8969fc2", null ],
+      [ "commands", "namespacepackage.html#a3896d1dec937e222d554fa552f1b9bd3", null ],
+      [ "early", "namespacepackage.html#a0a5f241ee21f4b9c83247d4b57576768", null ],
+      [ "pre_build_commands", "namespacepackage.html#a51948cd2700f95bd2aef095ea19d205d", null ],
+      [ "version", "namespacepackage.html#a445e6aeaf059215f882a6c61c8cdbbfc", null ],
+      [ "authors", "namespacepackage.html#a86baa91374272fc5901a096cc7f78fed", null ],
+      [ "build_system", "namespacepackage.html#ab60796549ef9c57bae3402ee138eae69", null ],
+      [ "conf_rats_variants", "namespacepackage.html#a8bb86e7e7d3f0de1e4fb4c9d49f61018", null ],
+      [ "config_version", "namespacepackage.html#a8aa9bc227209cdd5f4da4025ecce9247", null ],
+      [ "description", "namespacepackage.html#a30af6e65015ed070f68671bd61439ddf", null ],
+      [ "help", "namespacepackage.html#aaa597800403d444472f883e131df0159", null ],
+      [ "name", "namespacepackage.html#a3debccbf73e2b62d978f577333b9850c", null ],
       [ "no_unit_targets", "namespacepackage.html#aec7ef4353332e446ff475476f106ee79", null ],
-      [ "private_build_requires", "namespacepackage.html#a742b2858487ff06af2e7da1c8d241554", null ],
+      [ "private_build_requires", "namespacepackage.html#afa11105e0989f1d448a549ed4b4bac63", null ],
       [ "proxy_resource", "namespacepackage.html#a5becd442961196aaeadfbc4d87cbb32e", null ],
       [ "proxy_targets", "namespacepackage.html#abcfe51d29815d04121a19a725e1fbf3a", null ],
-      [ "requires", "namespacepackage.html#a747832de338b4a01ff235c9f92777427", null ],
+      [ "requires", "namespacepackage.html#aa67c60fdd21dcd7cd59fcce0355189ea", null ],
       [ "scons_resource", "namespacepackage.html#a98e09ab0276c68b3c5050622a38d9463", null ],
-      [ "scons_targets", "namespacepackage.html#ad0f50fe3eebe18137f987fe8a901f6eb", null ],
-      [ "sconsTargets", "namespacepackage.html#aa8f6ba1e1ac79287cfa94be43356eb1f", null ],
-      [ "unittestflags", "namespacepackage.html#a7c74584e174335a3c11f0bc924ec5de2", null ],
-      [ "uuid", "namespacepackage.html#a7f35f2a70cca782ccf4ab7af0370c2be", null ],
+      [ "scons_targets", "namespacepackage.html#aeb42062842dc0f9c0a8aec1ec2ce4a27", null ],
+      [ "sconsTargets", "namespacepackage.html#a17bc5bba2ecc2db0a99b24ba330c5f51", null ],
+      [ "unittestflags", "namespacepackage.html#affa157954314b081c95b76ffbeb3791e", null ],
+      [ "uuid", "namespacepackage.html#a60aa5a989595bb5cbebce0fe3b0b4588", null ],
       [ "variant_resource_targets", "namespacepackage.html#af555def747e3baa76dd9a002604c6681", null ],
-      [ "variants", "namespacepackage.html#aa7ffdd880a83f8cff4436df3d16e9077", null ]
+      [ "variants", "namespacepackage.html#a4b323085d111f365e0c7ea1f9614362d", null ]
+    ] ],
+    [ "pdevunit", "namespacepdevunit.html", [
+      [ "run", "namespacepdevunit.html#a0c6b651e27d3a7fe9c40623dd883d629", null ]
     ] ],
     [ "polymesh2rdlmesh", "namespacepolymesh2rdlmesh.html", [
       [ "dump_array", "namespacepolymesh2rdlmesh.html#a0a0e089f6b01fbe75f2748b895ce3951", null ],
@@ -256,13 +350,35 @@ var namespaces_dup =
       [ "vlist", "namespacepolymesh2rdlmesh.html#a6ba13806a6aff432f5f272355095b10c", null ]
     ] ],
     [ "ppadetail", "namespaceppadetail.html", "namespaceppadetail" ],
+    [ "py_scene_rdl2", "namespacepy__scene__rdl2.html", "namespacepy__scene__rdl2" ],
+    [ "rdl2_dso", "namespacerdl2__dso.html", "namespacerdl2__dso" ],
+    [ "rdl2_localize", "namespacerdl2__localize.html", "namespacerdl2__localize" ],
     [ "scene_rdl2", "namespacescene__rdl2.html", "namespacescene__rdl2" ],
+    [ "scene_rdl2_utils", "namespacescene__rdl2__utils.html", [
+      [ "_localizeAction", "namespacescene__rdl2__utils.html#afc4c6d6d22582b1d835c540ceff94208", null ],
+      [ "AddExtraCPPDEFINES", "namespacescene__rdl2__utils.html#a9639c67d6dc330d55e114e2ac6339048", null ],
+      [ "CompilerCheckAndExit", "namespacescene__rdl2__utils.html#a35dfce0edc397ed5059f002ffbf9bdd9", null ],
+      [ "CopyExternDeps", "namespacescene__rdl2__utils.html#a192a7056be3a254c6bb4055a8acfd2e2", null ],
+      [ "CopyProxies", "namespacescene__rdl2__utils.html#ac89435be30e3ae9c38f8b8382d5cb9db", null ],
+      [ "DefaultToAVX", "namespacescene__rdl2__utils.html#a840efc4785043ea6e239a53a50c235cb", null ],
+      [ "EnvCleanUp", "namespacescene__rdl2__utils.html#a3619d8ec0b8201df32983f7fe0a19bce", null ],
+      [ "exists", "namespacescene__rdl2__utils.html#a4ba36439083ba057fafc4b893b84ca37", null ],
+      [ "GatherProxies", "namespacescene__rdl2__utils.html#adac22bcc7400e12280e425b1aeb08c1e", null ],
+      [ "generate", "namespacescene__rdl2__utils.html#a12452a245d530f35cc5bf086ec365485", null ],
+      [ "InstallAnimation", "namespacescene__rdl2__utils.html#a3a242ac6363c8979e2070ae484a280b3", null ],
+      [ "PreloadTBBMalloc", "namespacescene__rdl2__utils.html#adceebfb030068ebc52fc0e976b91fb0b", null ],
+      [ "runCmd", "namespacescene__rdl2__utils.html#a8345af1497c30bf9ab1e419cb9ef783e", null ],
+      [ "strfunc", "namespacescene__rdl2__utils.html#ac671fab4fcaaf1ca0e75f3584a3a0047", null ],
+      [ "TreatAllWarningsAsErrors", "namespacescene__rdl2__utils.html#adcfecc8bb4c24ff87b11fbcb5188edb5", null ],
+      [ "proxyLocations", "namespacescene__rdl2__utils.html#a498486a7dfce2f378a64d64ea8b8482b", null ]
+    ] ],
     [ "sequence_discrepancy", "namespacesequence__discrepancy.html", [
       [ "average_files", "namespacesequence__discrepancy.html#a2020bc79b7f73484ef2851454fa19ac8", null ],
       [ "a", "namespacesequence__discrepancy.html#a06f968c2f5ed1f9d42f00351b2b1efb2", null ],
       [ "directory", "namespacesequence__discrepancy.html#ac3de5a1c250c3f044b615a910b27bff1", null ],
       [ "outfile", "namespacesequence__discrepancy.html#a9bda8b99c9227a9c9b5997507ef3c319", null ]
     ] ],
+    [ "simd", "namespacesimd.html", "namespacesimd" ],
     [ "std", "namespacestd.html", "namespacestd" ],
     [ "wait_impl", "namespacewait__impl.html", "namespacewait__impl" ]
 ];

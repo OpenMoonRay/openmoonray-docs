@@ -4,31 +4,75 @@ var hierarchy =
     [ "moonray::mcrt_common::Accumulator", "structmoonray_1_1mcrt__common_1_1_accumulator.html", null ],
     [ "moonray::mcrt_common::AccumulatorHandles", "structmoonray_1_1mcrt__common_1_1_accumulator_handles.html", null ],
     [ "moonray::mcrt_common::AccumulatorResult", "structmoonray_1_1mcrt__common_1_1_accumulator_result.html", null ],
+    [ "scene_rdl2::grid_util::ActiveBitTable", "classscene__rdl2_1_1grid__util_1_1_active_bit_table.html", null ],
+    [ "scene_rdl2::grid_util::ActiveBitTables", "classscene__rdl2_1_1grid__util_1_1_active_bit_tables.html", null ],
+    [ "scene_rdl2::fb_util::ActivePixels", "classscene__rdl2_1_1fb__util_1_1_active_pixels.html", null ],
+    [ "scene_rdl2::grid_util::ActivePixelsArray", "classscene__rdl2_1_1grid__util_1_1_active_pixels_array.html", null ],
     [ "moonray::rndr::AdaptiveRegions", "classmoonray_1_1rndr_1_1_adaptive_regions.html", null ],
     [ "moonray::rndr::AdaptiveRegionTree", "classmoonray_1_1rndr_1_1_adaptive_region_tree.html", null ],
     [ "moonray::rndr::AdaptiveRenderTileInfo", "classmoonray_1_1rndr_1_1_adaptive_render_tile_info.html", null ],
     [ "moonray::rndr::AdaptiveRenderTilesTable", "classmoonray_1_1rndr_1_1_adaptive_render_tiles_table.html", null ],
     [ "moonray::mcrt_common::Address64v", "structmoonray_1_1mcrt__common_1_1_address64v.html", null ],
-    [ "scene_rdl2::alloc::AlignedAllocator", null, [
+    [ "scene_rdl2::alloc::AlignedAllocator< T, alignment >", "classscene__rdl2_1_1alloc_1_1_aligned_allocator.html", [
       [ "moonray::geom::InterleavedTraits< T, Allocator >", "classmoonray_1_1geom_1_1_interleaved_traits.html", null ]
     ] ],
+    [ "scene_rdl2::alloc::AlignedAllocator< T, SIMD_MEMORY_ALIGNMENT >", "classscene__rdl2_1_1alloc_1_1_aligned_allocator.html", null ],
+    [ "scene_rdl2::alloc::AlignedAllocator< void, alignment >", "classscene__rdl2_1_1alloc_1_1_aligned_allocator_3_01void_00_01alignment_01_4.html", null ],
+    [ "scene_rdl2::fb_util::PixelBuffer< T >::AlignedDeleter", "structscene__rdl2_1_1fb__util_1_1_pixel_buffer_1_1_aligned_deleter.html", null ],
+    [ "scene_rdl2::util::AlignedDeleter< T >", "structscene__rdl2_1_1util_1_1_aligned_deleter.html", null ],
     [ "moonray::util::AlignedElementArray< T, desired_alignment >", "classmoonray_1_1util_1_1_aligned_element_array.html", null ],
     [ "moonray::util::AlignedElementArray< std::atomic_size_t, CACHE_LINE_SIZE >", "classmoonray_1_1util_1_1_aligned_element_array.html", null ],
+    [ "Allocator", null, [
+      [ "scene_rdl2::util::Array2DBase< T, order, Allocator >::DataBlock", "structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html", null ]
+    ] ],
     [ "moonray::geom::internal::AmorphousVolume::AmorphousSampler", "structmoonray_1_1geom_1_1internal_1_1_amorphous_volume_1_1_amorphous_sampler.html", null ],
+    [ "fauxstd::detail::And<... >", "structfauxstd_1_1detail_1_1_and.html", null ],
     [ "moonray::shading::AnisotropicBsdfTable", "classmoonray_1_1shading_1_1_anisotropic_bsdf_table.html", null ],
     [ "moonray::mcrt_common::AOSData", "structmoonray_1_1mcrt__common_1_1_a_o_s_data.html", null ],
     [ "moonray::pbr::AovSchema", "classmoonray_1_1pbr_1_1_aov_schema.html", null ],
     [ "moonray::pbr::TestBssrdf::AParams", "structmoonray_1_1pbr_1_1_test_bssrdf_1_1_a_params.html", null ],
     [ "detail::AreEqual< a, b >", "structdetail_1_1_are_equal.html", null ],
     [ "ppadetail::AreEqual< a, b >", "structppadetail_1_1_are_equal.html", null ],
+    [ "scene_rdl2::alloc::Arena", "classscene__rdl2_1_1alloc_1_1_arena.html", null ],
+    [ "scene_rdl2::alloc::ArenaAllocator< T, alignment >", "classscene__rdl2_1_1alloc_1_1_arena_allocator.html", null ],
+    [ "scene_rdl2::grid_util::Arg", "classscene__rdl2_1_1grid__util_1_1_arg.html", null ],
+    [ "scene_rdl2::util::Args", "classscene__rdl2_1_1util_1_1_args.html", null ],
     [ "ArgumentParser", "class_argument_parser.html", null ],
     [ "Array< T, S, OtherS >", "class_array.html", null ],
+    [ "scene_rdl2::math::Array12f", "structscene__rdl2_1_1math_1_1_array12f.html", null ],
+    [ "scene_rdl2::util::Array2DBase< T, order, Allocator >", "classscene__rdl2_1_1util_1_1_array2_d_base.html", [
+      [ "scene_rdl2::util::Array2D< float >", "classscene__rdl2_1_1util_1_1_array2_d.html", null ],
+      [ "scene_rdl2::util::Array2D< T, Allocator >", "classscene__rdl2_1_1util_1_1_array2_d.html", null ],
+      [ "scene_rdl2::util::Array2DC< T, Allocator >", "classscene__rdl2_1_1util_1_1_array2_d_c.html", null ]
+    ] ],
+    [ "scene_rdl2::util::Array2DBase< float, Array2DOrder::COL_MAJOR, std::allocator< float > >", "classscene__rdl2_1_1util_1_1_array2_d_base.html", null ],
+    [ "scene_rdl2::util::Array2DBase< T, Array2DOrder::COL_MAJOR, std::allocator< T > >", "classscene__rdl2_1_1util_1_1_array2_d_base.html", null ],
+    [ "scene_rdl2::util::Array2DBase< T, Array2DOrder::ROW_MAJOR, std::allocator< T > >", "classscene__rdl2_1_1util_1_1_array2_d_base.html", null ],
     [ "Array8", "class_array8.html", null ],
+    [ "scene_rdl2::rdl2::AsciiReader", "classscene__rdl2_1_1rdl2_1_1_ascii_reader.html", null ],
+    [ "scene_rdl2::rdl2::AsciiWriter", "classscene__rdl2_1_1rdl2_1_1_ascii_writer.html", null ],
+    [ "tbb::atomic", null, [
+      [ "scene_rdl2::util::CacheLineAtomic< T >", "structscene__rdl2_1_1util_1_1_cache_line_atomic.html", null ]
+    ] ],
+    [ "af_detail::atomic_fp< T >", "classaf__detail_1_1atomic__fp.html", null ],
+    [ "af_detail::atomic_fp< double >", "classaf__detail_1_1atomic__fp.html", [
+      [ "std::atomic< double >", "classstd_1_1atomic_3_01double_01_4.html", null ]
+    ] ],
+    [ "af_detail::atomic_fp< float >", "classaf__detail_1_1atomic__fp.html", [
+      [ "std::atomic< float >", "classstd_1_1atomic_3_01float_01_4.html", null ]
+    ] ],
+    [ "af_detail::atomic_fp< long double >", "classaf__detail_1_1atomic__fp.html", [
+      [ "std::atomic< long double >", "classstd_1_1atomic_3_01long_01double_01_4.html", null ]
+    ] ],
     [ "moonray::util::atomic_value_type< T >", "structmoonray_1_1util_1_1atomic__value__type.html", null ],
     [ "moonray::util::atomic_value_type< std::atomic< T > >", "structmoonray_1_1util_1_1atomic__value__type_3_01std_1_1atomic_3_01_t_01_4_01_4.html", null ],
+    [ "scene_rdl2::pbr::anonymous_namespace{TestAtomicFloat.cc}::AtomicFloatAdditionTester", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_addition_tester.html", null ],
+    [ "scene_rdl2::pbr::anonymous_namespace{TestAtomicFloat.cc}::AtomicFloatCASTesterStrong", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_c_a_s_tester_strong.html", null ],
+    [ "scene_rdl2::pbr::anonymous_namespace{TestAtomicFloat.cc}::AtomicFloatCASTesterWeak", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_c_a_s_tester_weak.html", null ],
+    [ "scene_rdl2::rdl2::Attribute", "classscene__rdl2_1_1rdl2_1_1_attribute.html", null ],
     [ "moonray::geom::internal::FaceVaryingAttributes::AttributeBuffer", "structmoonray_1_1geom_1_1internal_1_1_face_varying_attributes_1_1_attribute_buffer.html", null ],
     [ "moonray::shading::AttributeKey", "classmoonray_1_1shading_1_1_attribute_key.html", [
-      [ "moonray::shading::TypedAttributeKey< scene_rdl2::math::Vec2f >", "classmoonray_1_1shading_1_1_typed_attribute_key.html", null ],
+      [ "moonray::shading::TypedAttributeKey< scene_rdl2::math::Vec2 >", "classmoonray_1_1shading_1_1_typed_attribute_key.html", null ],
       [ "moonray::shading::TypedAttributeKey< bool >", "classmoonray_1_1shading_1_1_typed_attribute_key.html", null ],
       [ "moonray::shading::TypedAttributeKey< int >", "classmoonray_1_1shading_1_1_typed_attribute_key.html", null ],
       [ "moonray::shading::TypedAttributeKey< long >", "classmoonray_1_1shading_1_1_typed_attribute_key.html", null ],
@@ -36,21 +80,75 @@ var hierarchy =
       [ "moonray::shading::TypedAttributeKey< std::string >", "classmoonray_1_1shading_1_1_typed_attribute_key.html", null ],
       [ "moonray::shading::TypedAttributeKey< scene_rdl2::math::Color >", "classmoonray_1_1shading_1_1_typed_attribute_key.html", null ],
       [ "moonray::shading::TypedAttributeKey< scene_rdl2::math::Color4 >", "classmoonray_1_1shading_1_1_typed_attribute_key.html", null ],
-      [ "moonray::shading::TypedAttributeKey< scene_rdl2::math::Vec3f >", "classmoonray_1_1shading_1_1_typed_attribute_key.html", null ],
-      [ "moonray::shading::TypedAttributeKey< scene_rdl2::math::Mat4f >", "classmoonray_1_1shading_1_1_typed_attribute_key.html", null ],
+      [ "moonray::shading::TypedAttributeKey< scene_rdl2::math::Vec3 >", "classmoonray_1_1shading_1_1_typed_attribute_key.html", null ],
+      [ "moonray::shading::TypedAttributeKey< scene_rdl2::math::Mat4 >", "classmoonray_1_1shading_1_1_typed_attribute_key.html", null ],
       [ "moonray::shading::TypedAttributeKey< T >", "classmoonray_1_1shading_1_1_typed_attribute_key.html", null ]
     ] ],
+    [ "scene_rdl2::rdl2::AttributeKey< T >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< Bool >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< BoolVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< Float >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< FloatVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< int >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< Int >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< IntVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< Mat4fVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< RgbVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::IndexableArray >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::math::Color >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::math::Color4 >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::math::Mat4 >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::math::Vec2 >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::math::Vec3 >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::math::Vec4 >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::Bool >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::BoolVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::Double >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::DoubleVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::Float >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::FloatVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::Int >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::IntVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::Long >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::LongVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::Mat4dVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::Mat4fVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::RgbaVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::RgbVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::SceneObject * >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::SceneObjectVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::String >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::StringVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::Vec2dVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::Vec2fVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::Vec3dVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::Vec3fVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::Vec4dVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< scene_rdl2::rdl2::Vec4fVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< SceneObjectVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< String >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< StringVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< Vec2fVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
+    [ "scene_rdl2::rdl2::AttributeKey< Vec3fVector >", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", null ],
     [ "moonray::shading::AttributeKeyHash", "classmoonray_1_1shading_1_1_attribute_key_hash.html", null ],
     [ "moonray::rndr::RenderOptions::AttributeOverride", "classmoonray_1_1rndr_1_1_render_options_1_1_attribute_override.html", null ],
     [ "moonray::shading::Attributes", "classmoonray_1_1shading_1_1_attributes.html", null ],
     [ "moonray::shading::AttributeTable", "classmoonray_1_1shading_1_1_attribute_table.html", null ],
+    [ "rdl2_localize::AttrUpdate", "structrdl2__localize_1_1_attr_update.html", null ],
     [ "moonray::util::Average< T >", "classmoonray_1_1util_1_1_average.html", [
       [ "moonray::util::InclusiveExclusiveAverage< int64 >", "classmoonray_1_1util_1_1_inclusive_exclusive_average.html", null ],
       [ "moonray::util::InclusiveExclusiveAverage< T >", "classmoonray_1_1util_1_1_inclusive_exclusive_average.html", null ]
     ] ],
     [ "moonray::util::Average< int64 >", "classmoonray_1_1util_1_1_average.html", null ],
+    [ "simd::avxb", "structsimd_1_1avxb.html", null ],
+    [ "simd::avxf", "structsimd_1_1avxf.html", null ],
+    [ "simd::avxi", "structsimd_1_1avxi.html", null ],
+    [ "B1", null, [
+      [ "fauxstd::detail::And< B1 >", "structfauxstd_1_1detail_1_1_and_3_01_b1_01_4.html", null ]
+    ] ],
     [ "moonray::pbr::LightAovs::BackgroundExtraAov", "structmoonray_1_1pbr_1_1_light_aovs_1_1_background_extra_aov.html", null ],
     [ "moonray::pbr::LightAovs::BackgroundExtraAovs", "structmoonray_1_1pbr_1_1_light_aovs_1_1_background_extra_aovs.html", null ],
+    [ "BadObject", "class_bad_object.html", null ],
     [ "moonray::geom::BakedAttribute", "classmoonray_1_1geom_1_1_baked_attribute.html", null ],
     [ "moonray::geom::BakedCurves", "structmoonray_1_1geom_1_1_baked_curves.html", null ],
     [ "moonray::geom::BakedMesh", "structmoonray_1_1geom_1_1_baked_mesh.html", null ],
@@ -61,13 +159,36 @@ var hierarchy =
         [ "moonray::shading::TLState", "classmoonray_1_1shading_1_1_t_l_state.html", null ]
       ] ]
     ] ],
+    [ "scene_rdl2::math::BaseViewport", "structscene__rdl2_1_1math_1_1_base_viewport.html", [
+      [ "scene_rdl2::math::HalfOpenViewport", "structscene__rdl2_1_1math_1_1_half_open_viewport.html", null ],
+      [ "scene_rdl2::math::Viewport", "structscene__rdl2_1_1math_1_1_viewport.html", null ]
+    ] ],
+    [ "std::basic_ostream", null, [
+      [ "fauxstd::basic_osyncstream< CharT, Traits, Allocator >", "classfauxstd_1_1basic__osyncstream.html", null ]
+    ] ],
+    [ "std::basic_streambuf", null, [
+      [ "fauxstd::basic_syncbuf< CharT, std::char_traits< CharT > >", "classfauxstd_1_1basic__syncbuf.html", null ],
+      [ "fauxstd::basic_syncbuf< CharT, Traits, Allocator >", "classfauxstd_1_1basic__syncbuf.html", null ]
+    ] ],
     [ "moonray::shading::BasicTexture", "classmoonray_1_1shading_1_1_basic_texture.html", null ],
+    [ "anonymous_namespace{test_util.cc}::BasicType", "structanonymous__namespace_02test__util_8cc_03_1_1_basic_type.html", null ],
     [ "anonymous_namespace{test_ring_buffer.cc}::BatchInsertCompleteRandomAccessIterator", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_complete_random_access_iterator.html", null ],
     [ "anonymous_namespace{test_ring_buffer.cc}::BatchInsertForwardIterator", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_forward_iterator.html", null ],
     [ "anonymous_namespace{test_ring_buffer.cc}::BatchInsertInputIterator", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_input_iterator.html", null ],
     [ "anonymous_namespace{test_ring_buffer.cc}::BatchInsertRandomAccessIterator", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_random_access_iterator.html", null ],
+    [ "scene_rdl2::math::BBox< T >", "structscene__rdl2_1_1math_1_1_b_box.html", null ],
+    [ "scene_rdl2::math::BBox2iIterator", "classscene__rdl2_1_1math_1_1_b_box2i_iterator.html", null ],
+    [ "scene_rdl2::math::BBox< Vec2f >", "structscene__rdl2_1_1math_1_1_b_box.html", null ],
+    [ "scene_rdl2::math::BBox< Vec2i >", "structscene__rdl2_1_1math_1_1_b_box.html", null ],
+    [ "scene_rdl2::math::BBox< Vec3f >", "structscene__rdl2_1_1math_1_1_b_box.html", null ],
+    [ "scene_rdl2::rdl2::BinaryReader", "classscene__rdl2_1_1rdl2_1_1_binary_reader.html", null ],
+    [ "scene_rdl2::rdl2::BinaryReaderLayerUnpackStrings", "classscene__rdl2_1_1rdl2_1_1_binary_reader_layer_unpack_strings.html", null ],
+    [ "scene_rdl2::rdl2::BinaryWriter", "classscene__rdl2_1_1rdl2_1_1_binary_writer.html", null ],
+    [ "scene_rdl2::util::BitArray", "classscene__rdl2_1_1util_1_1_bit_array.html", null ],
     [ "BitVec", "class_bit_vec.html", null ],
     [ "moonray::geom::unittest::Bomb", "structmoonray_1_1geom_1_1unittest_1_1_bomb.html", null ],
+    [ "py_scene_rdl2::BoolVectorWrapper", "classpy__scene__rdl2_1_1_bool_vector_wrapper.html", null ],
+    [ "anonymous_namespace{TestRandom.cc}::BoundIntRangeCheckRandomTraits", "structanonymous__namespace_02_test_random_8cc_03_1_1_bound_int_range_check_random_traits.html", null ],
     [ "moonray::shading::Bsdf", "classmoonray_1_1shading_1_1_bsdf.html", null ],
     [ "moonray::shading::BsdfBuilder", "classmoonray_1_1shading_1_1_bsdf_builder.html", null ],
     [ "moonray::shading::BsdfComponent", "classmoonray_1_1shading_1_1_bsdf_component.html", [
@@ -200,6 +321,8 @@ var hierarchy =
     [ "moonray::rndr::detail::BufferTraits< scene_rdl2::fb_util::FloatBuffer >", "structmoonray_1_1rndr_1_1detail_1_1_buffer_traits_3_01scene__rdl2_1_1fb__util_1_1_float_buffer_01_4.html", null ],
     [ "moonray::rndr::detail::BufferTraits< scene_rdl2::fb_util::RenderBuffer >", "structmoonray_1_1rndr_1_1detail_1_1_buffer_traits_3_01scene__rdl2_1_1fb__util_1_1_render_buffer_01_4.html", null ],
     [ "moonray::rndr::detail::BufferTraits< scene_rdl2::fb_util::Rgb888Buffer >", "structmoonray_1_1rndr_1_1detail_1_1_buffer_traits_3_01scene__rdl2_1_1fb__util_1_1_rgb888_buffer_01_4.html", null ],
+    [ "fauxstd::detail::BuildIndexTuple< Num >", "structfauxstd_1_1detail_1_1_build_index_tuple.html", null ],
+    [ "fauxstd::detail::BuildIndexTuple< 0 >", "structfauxstd_1_1detail_1_1_build_index_tuple_3_010_01_4.html", null ],
     [ "BuildStandardChannels", "struct_build_standard_channels.html", null ],
     [ "moonray::pbr::BundledOcclRay", "structmoonray_1_1pbr_1_1_bundled_occl_ray.html", null ],
     [ "moonray::pbr::BundledOcclRayData", "structmoonray_1_1pbr_1_1_bundled_occl_ray_data.html", null ],
@@ -207,7 +330,11 @@ var hierarchy =
     [ "moonray::pbr::BundledRadiancev", "structmoonray_1_1pbr_1_1_bundled_radiancev.html", null ],
     [ "moonray::geom::internal::BVHHandle", "classmoonray_1_1geom_1_1internal_1_1_b_v_h_handle.html", null ],
     [ "moonray::geom::internal::BVHUserData", "structmoonray_1_1geom_1_1internal_1_1_b_v_h_user_data.html", null ],
+    [ "scene_rdl2::fb_util::ByteColor", "structscene__rdl2_1_1fb__util_1_1_byte_color.html", null ],
+    [ "scene_rdl2::fb_util::ByteColor4", "structscene__rdl2_1_1fb__util_1_1_byte_color4.html", null ],
+    [ "scene_rdl2::cache::CacheAllocator< T >", "classscene__rdl2_1_1cache_1_1_cache_allocator.html", null ],
     [ "moonray::rndr::ImageWriteCache::CacheQueue", "unionmoonray_1_1rndr_1_1_image_write_cache_1_1_cache_queue.html", null ],
+    [ "scene_rdl2::cache::CacheUtil", "classscene__rdl2_1_1cache_1_1_cache_util.html", null ],
     [ "moonray::pbr::Camera", "classmoonray_1_1pbr_1_1_camera.html", [
       [ "moonray::pbr::BakeCamera", "classmoonray_1_1pbr_1_1_bake_camera.html", null ],
       [ "moonray::pbr::DomeMaster3DCamera", "classmoonray_1_1pbr_1_1_dome_master3_d_camera.html", null ],
@@ -233,6 +360,10 @@ var hierarchy =
     [ "moonray::rndr::CheckpointSigIntHandler", "classmoonray_1_1rndr_1_1_checkpoint_sig_int_handler.html", null ],
     [ "moonray::rndr::CheckpointSnapshotEstimator", "classmoonray_1_1rndr_1_1_checkpoint_snapshot_estimator.html", null ],
     [ "moonray::mcrt_common::Clock", "classmoonray_1_1mcrt__common_1_1_clock.html", null ],
+    [ "scene_rdl2::math::Col3< T >", "structscene__rdl2_1_1math_1_1_col3.html", null ],
+    [ "scene_rdl2::math::Col4< T >", "structscene__rdl2_1_1math_1_1_col4.html", null ],
+    [ "scene_rdl2::math::Color", "structscene__rdl2_1_1math_1_1_color.html", null ],
+    [ "scene_rdl2::math::Color4", "structscene__rdl2_1_1math_1_1_color4.html", null ],
     [ "moonray::shading::ColorRampControl", "classmoonray_1_1shading_1_1_color_ramp_control.html", null ],
     [ "DeepPixel::CombineContext", "struct_deep_pixel_1_1_combine_context.html", null ],
     [ "moonray::engine::Computation", null, [
@@ -245,12 +376,14 @@ var hierarchy =
     [ "moonray::pbr::ComputeRadianceAovParams", "structmoonray_1_1pbr_1_1_compute_radiance_aov_params.html", null ],
     [ "moonray::pbr::Cone", "structmoonray_1_1pbr_1_1_cone.html", null ],
     [ "moonray::mcrt_common::ConstAddress64v", "structmoonray_1_1mcrt__common_1_1_const_address64v.html", null ],
+    [ "anonymous_namespace{test_util.cc}::ConstantHash< T >", "structanonymous__namespace_02test__util_8cc_03_1_1_constant_hash.html", null ],
     [ "Constructable", "struct_constructable.html", null ],
     [ "anonymous_namespace{test_ring_buffer.cc}::ConsumerTest< T, Traits >", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_consumer_test.html", null ],
     [ "detail::ContainedType< T, OtherS >", "structdetail_1_1_contained_type.html", null ],
     [ "ppadetail::ContainedType< T, D >", "structppadetail_1_1_contained_type.html", null ],
     [ "detail::ContainedType< T >", "structdetail_1_1_contained_type_3_01_t_01_4.html", null ],
     [ "ppadetail::ContainedType< T, 1u >", "structppadetail_1_1_contained_type_3_01_t_00_011u_01_4.html", null ],
+    [ "scene_rdl2::rdl2::detail::ContainerWrapper< Container >", "structscene__rdl2_1_1rdl2_1_1detail_1_1_container_wrapper.html", null ],
     [ "moonray::geom::internal::ControlEdge", "structmoonray_1_1geom_1_1internal_1_1_control_edge.html", null ],
     [ "moonray::geom::internal::ControlMeshData", "classmoonray_1_1geom_1_1internal_1_1_control_mesh_data.html", null ],
     [ "moonray::shading::CookTorranceEnergyCompensation", "classmoonray_1_1shading_1_1_cook_torrance_energy_compensation.html", null ],
@@ -258,7 +391,7 @@ var hierarchy =
     [ "moonray::pbr::CryptomatteData", "structmoonray_1_1pbr_1_1_cryptomatte_data.html", null ],
     [ "moonray::pbr::PathIntegrator::CryptomatteParams", "structmoonray_1_1pbr_1_1_path_integrator_1_1_cryptomatte_params.html", null ],
     [ "moonray::geom::internal::DDAIntersector", "classmoonray_1_1geom_1_1internal_1_1_d_d_a_intersector.html", null ],
-    [ "scene_rdl2::grid_util::DebugConsoleDriver", null, [
+    [ "scene_rdl2::grid_util::DebugConsoleDriver", "classscene__rdl2_1_1grid__util_1_1_debug_console_driver.html", [
       [ "moonray::rndr::RenderContextConsoleDriver", "classmoonray_1_1rndr_1_1_render_context_console_driver.html", null ]
     ] ],
     [ "moonray::pbr::DebugRayBuilder", "classmoonray_1_1pbr_1_1_debug_ray_builder.html", null ],
@@ -275,6 +408,7 @@ var hierarchy =
     [ "moonray::pbr::PathIntegrator::DeepParams", "structmoonray_1_1pbr_1_1_path_integrator_1_1_deep_params.html", null ],
     [ "DeepPixel", "class_deep_pixel.html", null ],
     [ "DeepSegment", "class_deep_segment.html", null ],
+    [ "anonymous_namespace{test_util.cc}::DefaultAlignmentPolicy", "structanonymous__namespace_02test__util_8cc_03_1_1_default_alignment_policy.html", null ],
     [ "DefaultRingBufferTraits", "struct_default_ring_buffer_traits.html", null ],
     [ "wait_impl::DefaultSpinPolicy", "structwait__impl_1_1_default_spin_policy.html", null ],
     [ "DfAutomata", "class_df_automata.html", null ],
@@ -288,6 +422,9 @@ var hierarchy =
     [ "moonray::geom::internal::Distribution3D::Distribution1D", "structmoonray_1_1geom_1_1internal_1_1_distribution3_d_1_1_distribution1_d.html", null ],
     [ "moonray::pbr::Distribution2D", "classmoonray_1_1pbr_1_1_distribution2_d.html", null ],
     [ "moonray::geom::internal::Distribution3D", "structmoonray_1_1geom_1_1internal_1_1_distribution3_d.html", null ],
+    [ "anonymous_namespace{TestRandom.cc}::DoubleCheckRandomTraits", "structanonymous__namespace_02_test_random_8cc_03_1_1_double_check_random_traits.html", null ],
+    [ "scene_rdl2::rdl2::Dso", "classscene__rdl2_1_1rdl2_1_1_dso.html", null ],
+    [ "scene_rdl2::rdl2::DsoFinder", "classscene__rdl2_1_1rdl2_1_1_dso_finder.html", null ],
     [ "DynamicHyperGrid< T, Dimensions, IncomingRange >", "class_dynamic_hyper_grid.html", null ],
     [ "DynamicHyperGrid< T, 1, IncomingRange >", "class_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html", null ],
     [ "DeepSegment::Edge", "struct_deep_segment_1_1_edge.html", null ],
@@ -303,19 +440,25 @@ var hierarchy =
     [ "anonymous_namespace{test_ring_buffer.cc}::Emplacer< TestDataExceptions >", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_exceptions_01_4.html", null ],
     [ "anonymous_namespace{test_ring_buffer.cc}::Emplacer< TestDataMoveExceptions >", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_move_exceptions_01_4.html", null ],
     [ "anonymous_namespace{test_ring_buffer.cc}::Emplacer< TestDataNoExceptions >", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_no_exceptions_01_4.html", null ],
+    [ "scene_rdl2::util::EmptyTy", "structscene__rdl2_1_1util_1_1_empty_ty.html", null ],
     [ "moonray::pbr::AovSchema::Entry", "classmoonray_1_1pbr_1_1_aov_schema_1_1_entry.html", null ],
     [ "moonray::pbr::MaterialAovs::Entry", "structmoonray_1_1pbr_1_1_material_aovs_1_1_entry.html", null ],
     [ "moonray::rndr::Entry", "structmoonray_1_1rndr_1_1_entry.html", null ],
+    [ "scene_rdl2::util::SList::Entry", "structscene__rdl2_1_1util_1_1_s_list_1_1_entry.html", [
+      [ "scene_rdl2::alloc::ArenaBlock", "structscene__rdl2_1_1alloc_1_1_arena_block.html", null ]
+    ] ],
     [ "moonray::pbr::AovSchema::EntryData", "structmoonray_1_1pbr_1_1_aov_schema_1_1_entry_data.html", null ],
+    [ "scene_rdl2::math::EpsilonTy", "structscene__rdl2_1_1math_1_1_epsilon_ty.html", null ],
     [ "EvalBsdfIntegralTask", "struct_eval_bsdf_integral_task.html", null ],
     [ "moonray::pbr::LightFilter::EvalData", "structmoonray_1_1pbr_1_1_light_filter_1_1_eval_data.html", null ],
     [ "moonray::mcrt_common::ExclusiveAccumulators", "classmoonray_1_1mcrt__common_1_1_exclusive_accumulators.html", null ],
     [ "moonray::pbr::ExtendDebugRay", "structmoonray_1_1pbr_1_1_extend_debug_ray.html", null ],
-    [ "scene_rdl2::rdl2::SceneObject::Extension", null, [
+    [ "scene_rdl2::rdl2::SceneObject::Extension", "classscene__rdl2_1_1rdl2_1_1_scene_object_1_1_extension.html", [
       [ "moonray::shading::Geometry", "classmoonray_1_1shading_1_1_geometry.html", null ],
       [ "moonray::shading::RootShader", "classmoonray_1_1shading_1_1_root_shader.html", [
         [ "moonray::shading::Material", "classmoonray_1_1shading_1_1_material.html", null ]
-      ] ]
+      ] ],
+      [ "scene_rdl2::rdl2::unittest::ExtensionTest", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_extension_test.html", null ]
     ] ],
     [ "moonray::shading::Material::ExtraAov", "structmoonray_1_1shading_1_1_material_1_1_extra_aov.html", null ],
     [ "moonray::shading::Bsdf::ExtraAovs", "structmoonray_1_1shading_1_1_bsdf_1_1_extra_aovs.html", null ],
@@ -328,25 +471,38 @@ var hierarchy =
       [ "is_search_result< T >", "structis__search__result.html", null ],
       [ "moonray::util::IsIterator< T, typename >", "structmoonray_1_1util_1_1_is_iterator.html", null ]
     ] ],
+    [ "scene_rdl2::util::FalseTy", "structscene__rdl2_1_1util_1_1_false_ty.html", null ],
+    [ "scene_rdl2::grid_util::Fb", "classscene__rdl2_1_1grid__util_1_1_fb.html", null ],
+    [ "scene_rdl2::grid_util::FbActivePixels", "classscene__rdl2_1_1grid__util_1_1_fb_active_pixels.html", null ],
+    [ "scene_rdl2::grid_util::FbActivePixelsAov", "classscene__rdl2_1_1grid__util_1_1_fb_active_pixels_aov.html", null ],
+    [ "scene_rdl2::grid_util::FbAov", "classscene__rdl2_1_1grid__util_1_1_fb_aov.html", null ],
     [ "FibonacciSampler", "class_fibonacci_sampler.html", null ],
     [ "moonray::rndr::File", "structmoonray_1_1rndr_1_1_file.html", null ],
+    [ "rdl2_localize::FileCopy", "structrdl2__localize_1_1_file_copy.html", null ],
+    [ "scene_rdl2::util::FileDescriptorGuard", "structscene__rdl2_1_1util_1_1_file_descriptor_guard.html", null ],
     [ "moonray::rndr::FileNameParam", "structmoonray_1_1rndr_1_1_file_name_param.html", null ],
     [ "moonray::file_resource::FileResource", "classmoonray_1_1file__resource_1_1_file_resource.html", [
       [ "moonray::file_resource::UNIXFileResource", "classmoonray_1_1file__resource_1_1_u_n_i_x_file_resource.html", null ]
     ] ],
     [ "moonray::rndr::Film", "classmoonray_1_1rndr_1_1_film.html", null ],
+    [ "scene_rdl2::rdl2::FilterIndexIterator< ListType, EnumerableIterator >", "classscene__rdl2_1_1rdl2_1_1_filter_index_iterator.html", null ],
     [ "Finally< F >", "class_finally.html", null ],
     [ "FindFarthest< Container, DistanceFunction >", "struct_find_farthest.html", null ],
+    [ "scene_rdl2::alloc::FixedArena", "classscene__rdl2_1_1alloc_1_1_fixed_arena.html", null ],
     [ "moonray::mcrt_common::Flags", "classmoonray_1_1mcrt__common_1_1_flags.html", null ],
     [ "moonray::shading::StochasticFlakesBsdfLobe::FlakeCaches", "structmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_1_1_flake_caches.html", null ],
     [ "DeepPixel::FlattenOptions", "struct_deep_pixel_1_1_flatten_options.html", null ],
+    [ "anonymous_namespace{TestRandom.cc}::FloatCheckRandomTraits", "structanonymous__namespace_02_test_random_8cc_03_1_1_float_check_random_traits.html", null ],
     [ "moonray::shading::FloatRampControl", "classmoonray_1_1shading_1_1_float_ramp_control.html", null ],
     [ "SpMask8::floatUnion", "union_sp_mask8_1_1float_union.html", null ],
+    [ "scene_rdl2::grid_util::FloatValueTracker", "classscene__rdl2_1_1grid__util_1_1_float_value_tracker.html", null ],
+    [ "scene_rdl2::math::FourPiTy", "structscene__rdl2_1_1math_1_1_four_pi_ty.html", null ],
     [ "moonray::pbr::CryptomatteBuffer::Fragment", "structmoonray_1_1pbr_1_1_cryptomatte_buffer_1_1_fragment.html", null ],
     [ "moonray::pbr::FrameState", "structmoonray_1_1pbr_1_1_frame_state.html", [
       [ "moonray::rndr::FrameState", "structmoonray_1_1rndr_1_1_frame_state.html", null ]
     ] ],
     [ "moonray::mcrt_common::anonymous_namespace{ThreadLocalState.cc}::FrameUpdateTLSProxy", "structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_thread_local_state_8cc_03_1_1_frame_update_t_l_s_proxy.html", null ],
+    [ "scene_rdl2::util::anonymous_namespace{Files.cc}::FreeDeleter", "structscene__rdl2_1_1util_1_1anonymous__namespace_02_files_8cc_03_1_1_free_deleter.html", null ],
     [ "moonray::shading::Fresnel", "classmoonray_1_1shading_1_1_fresnel.html", [
       [ "moonray::shading::ConductorFresnel", "classmoonray_1_1shading_1_1_conductor_fresnel.html", null ],
       [ "moonray::shading::DielectricFresnel", "classmoonray_1_1shading_1_1_dielectric_fresnel.html", [
@@ -364,13 +520,18 @@ var hierarchy =
       [ "moonray::shading::Dielectric", "classmoonray_1_1shading_1_1_dielectric.html", null ]
     ] ],
     [ "moonray::mcrt_common::Frustum", "structmoonray_1_1mcrt__common_1_1_frustum.html", null ],
+    [ "anonymous_namespace{TestRandom.cc}::FullIntRangeCheckRandomTraits", "structanonymous__namespace_02_test_random_8cc_03_1_1_full_int_range_check_random_traits.html", null ],
+    [ "scene_rdl2::util::FullTy", "structscene__rdl2_1_1util_1_1_full_ty.html", null ],
     [ "moonray::geom::internal::FVarVertex< T >", "structmoonray_1_1geom_1_1internal_1_1_f_var_vertex.html", null ],
+    [ "scene_rdl2::fb_util::GammaF2C", "classscene__rdl2_1_1fb__util_1_1_gamma_f2_c.html", null ],
+    [ "scene_rdl2::fb_util::GammaF2CLUT", "classscene__rdl2_1_1fb__util_1_1_gamma_f2_c_l_u_t.html", null ],
     [ "moonray::pbr::GenerateRandomPointImpl< T >", "structmoonray_1_1pbr_1_1_generate_random_point_impl.html", null ],
     [ "moonray::pbr::GenerateRandomPointImpl< Sample >", "structmoonray_1_1pbr_1_1_generate_random_point_impl_3_01_sample_01_4.html", null ],
     [ "moonray::pbr::GenerateRandomPointImpl< Sample2D >", "structmoonray_1_1pbr_1_1_generate_random_point_impl_3_01_sample2_d_01_4.html", null ],
     [ "moonray::pbr::GenerateRandomPointImpl< Sample3D >", "structmoonray_1_1pbr_1_1_generate_random_point_impl_3_01_sample3_d_01_4.html", null ],
     [ "moonray::pbr::GenerateRandomPointImpl< TestPoint >", "structmoonray_1_1pbr_1_1_generate_random_point_impl_3_01_test_point_01_4.html", null ],
     [ "moonray::pbr::anonymous_namespace{TestQmc.cc}::Generator02", "classmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_generator02.html", null ],
+    [ "anonymous_namespace{rdl2_json_exporter.cc}::GeneratorData", "structanonymous__namespace_02rdl2__json__exporter_8cc_03_1_1_generator_data.html", null ],
     [ "moonray::pbr::anonymous_namespace{TestQmc.cc}::GeneratorHalton", "classmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_generator_halton.html", null ],
     [ "moonray::pbr::anonymous_namespace{TestQmc.cc}::GeneratorPermutedHalton", "classmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_generator_permuted_halton.html", null ],
     [ "anonymous_namespace{test_ring_buffer.cc}::GenericInputIterator< Container >", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_generic_input_iterator.html", null ],
@@ -415,13 +576,19 @@ var hierarchy =
     [ "moonray::geom::internal::GridSampler< GridType >", "structmoonray_1_1geom_1_1internal_1_1_grid_sampler.html", null ],
     [ "moonray::texture::TypedVDBSampler< GridT >::GridSampler", "structmoonray_1_1texture_1_1_typed_v_d_b_sampler_1_1_grid_sampler.html", null ],
     [ "moonray::geom::internal::GridSamplerEvalData", "classmoonray_1_1geom_1_1internal_1_1_grid_sampler_eval_data.html", null ],
+    [ "scene_rdl2::util::GUID", "classscene__rdl2_1_1util_1_1_g_u_i_d.html", null ],
     [ "moonray::pbr::GuideDistribution1D", "classmoonray_1_1pbr_1_1_guide_distribution1_d.html", null ],
     [ "HairLobe", "class_hair_lobe.html", null ],
     [ "moonray::shading::HairState", "classmoonray_1_1shading_1_1_hair_state.html", null ],
     [ "moonray::shading::HairUtil", "classmoonray_1_1shading_1_1_hair_util.html", null ],
     [ "moonray::pbr::DeepBuffer::HardSurfaceSegment", "structmoonray_1_1pbr_1_1_deep_buffer_1_1_hard_surface_segment.html", null ],
+    [ "fauxstd::detail::has_is_always_equal< T >", "structfauxstd_1_1detail_1_1has__is__always__equal.html", null ],
+    [ "std::hash< BasicType >", "structstd_1_1hash_3_01_basic_type_01_4.html", null ],
+    [ "std::hash< MoveOnly >", "structstd_1_1hash_3_01_move_only_01_4.html", null ],
     [ "std::hash< NPoint< D > >", "structstd_1_1hash_3_01_n_point_3_01_d_01_4_01_4.html", null ],
     [ "moonray::rt::HitGroupData", "structmoonray_1_1rt_1_1_hit_group_data.html", null ],
+    [ "scene_rdl2::util::HudValidator< CppHudType, ispcHudValidation >", "classscene__rdl2_1_1util_1_1_hud_validator.html", null ],
+    [ "scene_rdl2::util::HvdValidator< CppHvdType, ispcHvdValidation >", "classscene__rdl2_1_1util_1_1_hvd_validator.html", null ],
     [ "Image", "class_image.html", null ],
     [ "moonray::rndr::Image", "structmoonray_1_1rndr_1_1_image.html", null ],
     [ "moonray::pbr::ImageDistribution", "classmoonray_1_1pbr_1_1_image_distribution.html", null ],
@@ -439,6 +606,7 @@ var hierarchy =
     [ "moonray::rndr::ImageWriteCacheTimingLog", "classmoonray_1_1rndr_1_1_image_write_cache_timing_log.html", null ],
     [ "moonray::rndr::ImageWriteCacheTmpFileItem", "classmoonray_1_1rndr_1_1_image_write_cache_tmp_file_item.html", null ],
     [ "moonray::rndr::ImageWriteDriver", "classmoonray_1_1rndr_1_1_image_write_driver.html", null ],
+    [ "ImaginaryThing", "class_imaginary_thing.html", null ],
     [ "moonray::file_resource::Impl", "classmoonray_1_1file__resource_1_1_impl.html", null ],
     [ "moonray::geom::AmorphousVolume::Impl", "structmoonray_1_1geom_1_1_amorphous_volume_1_1_impl.html", null ],
     [ "moonray::geom::Box::Impl", "structmoonray_1_1geom_1_1_box_1_1_impl.html", null ],
@@ -462,10 +630,16 @@ var hierarchy =
     [ "moonray::shading::BasicTexture::Impl", "classmoonray_1_1shading_1_1_basic_texture_1_1_impl.html", null ],
     [ "moonray::shading::BsdfBuilder::Impl", "classmoonray_1_1shading_1_1_bsdf_builder_1_1_impl.html", null ],
     [ "moonray::shading::UdimTexture::Impl", "classmoonray_1_1shading_1_1_udim_texture_1_1_impl.html", null ],
+    [ "scene_rdl2::grid_util::Sha1Gen::Impl", "classscene__rdl2_1_1grid__util_1_1_sha1_gen_1_1_impl.html", null ],
+    [ "scene_rdl2::util::LuaScriptRunner::Impl", "classscene__rdl2_1_1util_1_1_lua_script_runner_1_1_impl.html", null ],
     [ "anonymous_namespace{test_wait.cc}::IncrementHelper< isEnum >", "structanonymous__namespace_02test__wait_8cc_03_1_1_increment_helper.html", null ],
     [ "anonymous_namespace{test_wait.cc}::IncrementHelper< false >", "structanonymous__namespace_02test__wait_8cc_03_1_1_increment_helper_3_01false_01_4.html", null ],
     [ "anonymous_namespace{test_wait.cc}::IncrementHelper< true >", "structanonymous__namespace_02test__wait_8cc_03_1_1_increment_helper_3_01true_01_4.html", null ],
+    [ "scene_rdl2::IndexableArray< T, Hash, KeyEqual >", "classscene__rdl2_1_1_indexable_array.html", null ],
+    [ "scene_rdl2::IndexableArray< T, Hash, KeyEqual >", "classscene__rdl2_1_1_indexable_array.html", null ],
     [ "moonray::geom::internal::Curves::IndexData", "structmoonray_1_1geom_1_1internal_1_1_curves_1_1_index_data.html", null ],
+    [ "scene_rdl2::rdl2::IndexIterator", "classscene__rdl2_1_1rdl2_1_1_index_iterator.html", null ],
+    [ "fauxstd::detail::IndexTuple< Indices >", "structfauxstd_1_1detail_1_1_index_tuple.html", null ],
     [ "moonray::displayfilter::InitializeData", "structmoonray_1_1displayfilter_1_1_initialize_data.html", null ],
     [ "moonray::displayfilter::InputBuffer", "classmoonray_1_1displayfilter_1_1_input_buffer.html", null ],
     [ "moonray::displayfilter::InputData", "structmoonray_1_1displayfilter_1_1_input_data.html", null ],
@@ -474,7 +648,9 @@ var hierarchy =
       [ "moonray::geom::unittest::CopyBomb< detCount >", "structmoonray_1_1geom_1_1unittest_1_1_copy_bomb.html", null ]
     ] ],
     [ "moonray::geom::unittest::InstanceCounter< CopyBomb< 23 > >", "structmoonray_1_1geom_1_1unittest_1_1_instance_counter.html", null ],
+    [ "fauxstd::integer_sequence< T, Ints >", "structfauxstd_1_1integer__sequence.html", null ],
     [ "std::integral_constant", null, [
+      [ "fauxstd::is_always_equal< T >", "structfauxstd_1_1is__always__equal.html", null ],
       [ "moonray::shading::is_string< T >", "structmoonray_1_1shading_1_1is__string.html", null ],
       [ "moonray::shading::is_string< std::basic_string< CharT, Traits, Allocator > >", "structmoonray_1_1shading_1_1is__string_3_01std_1_1basic__string_3_01_char_t_00_01_traits_00_01_allocator_01_4_01_4.html", null ]
     ] ],
@@ -486,8 +662,8 @@ var hierarchy =
       [ "moonray::geom::VertexBuffer< Vec3fa, InterleavedTraits >", "classmoonray_1_1geom_1_1_vertex_buffer.html", null ]
     ] ],
     [ "moonray::geom::InterleavedTraits", null, [
-      [ "moonray::geom::VertexBuffer< Vec3f, moonray::geom::InterleavedTraits >", "classmoonray_1_1geom_1_1_vertex_buffer.html", null ],
-      [ "moonray::geom::VertexBuffer< Vec2f, moonray::geom::InterleavedTraits >", "classmoonray_1_1geom_1_1_vertex_buffer.html", null ],
+      [ "moonray::geom::VertexBuffer< scene_rdl2::math::Vec3, moonray::geom::InterleavedTraits >", "classmoonray_1_1geom_1_1_vertex_buffer.html", null ],
+      [ "moonray::geom::VertexBuffer< scene_rdl2::math::Vec2, moonray::geom::InterleavedTraits >", "classmoonray_1_1geom_1_1_vertex_buffer.html", null ],
       [ "moonray::geom::VertexBuffer< Vec3f, InterleavedTraits >", "classmoonray_1_1geom_1_1_vertex_buffer.html", null ]
     ] ],
     [ "moonray::shading::Interpolator", "classmoonray_1_1shading_1_1_interpolator.html", [
@@ -502,13 +678,23 @@ var hierarchy =
     [ "moonray::shading::Intersection", "classmoonray_1_1shading_1_1_intersection.html", null ],
     [ "moonray::geom::internal::BVHUserData::IntersectionFilterManager", "classmoonray_1_1geom_1_1internal_1_1_b_v_h_user_data_1_1_intersection_filter_manager.html", null ],
     [ "moonray::shading::Intersectionv", "structmoonray_1_1shading_1_1_intersectionv.html", null ],
+    [ "std::invalid_argument", null, [
+      [ "scene_rdl2::except::FormatError", "classscene__rdl2_1_1except_1_1_format_error.html", null ],
+      [ "scene_rdl2::except::KeyError", "classscene__rdl2_1_1except_1_1_key_error.html", null ],
+      [ "scene_rdl2::except::ValueError", "classscene__rdl2_1_1except_1_1_value_error.html", null ]
+    ] ],
     [ "IOStateSaver", "class_i_o_state_saver.html", null ],
     [ "std::iostream", null, [
       [ "moonray::stats::SocketStream", "classmoonray_1_1stats_1_1_socket_stream.html", null ]
     ] ],
     [ "moonray::shading::Iridescence", "classmoonray_1_1shading_1_1_iridescence.html", null ],
+    [ "fauxstd::detail::is_always_equal_helper< T >", "structfauxstd_1_1detail_1_1is__always__equal__helper.html", null ],
+    [ "fauxstd::detail::is_always_equal_helper_dispatched< T, has_iae >", "structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched.html", null ],
+    [ "fauxstd::detail::is_always_equal_helper_dispatched< T, false >", "structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched_3_01_t_00_01false_01_4.html", null ],
+    [ "fauxstd::detail::is_always_equal_helper_dispatched< T, true >", "structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched_3_01_t_00_01true_01_4.html", null ],
     [ "moonray::shading::IsotropicBsdfTable", "classmoonray_1_1shading_1_1_isotropic_bsdf_table.html", null ],
     [ "moonray::pbr::DebugRayDatabase::Iterator", "classmoonray_1_1pbr_1_1_debug_ray_database_1_1_iterator.html", null ],
+    [ "scene_rdl2::util::Random::Iterator< T >", "classscene__rdl2_1_1util_1_1_random_1_1_iterator.html", null ],
     [ "moonray::util::AlignedElementArray< T, desired_alignment >::iterator_base< ContainerType >", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator__base.html", null ],
     [ "moonray::util::AlignedElementArray< T, desired_alignment >::iterator_base< AlignedElementArray >", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator__base.html", [
       [ "moonray::util::AlignedElementArray< T, desired_alignment >::iterator", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html", null ]
@@ -516,9 +702,15 @@ var hierarchy =
     [ "moonray::util::AlignedElementArray< T, desired_alignment >::iterator_base< const AlignedElementArray >", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator__base.html", [
       [ "moonray::util::AlignedElementArray< T, desired_alignment >::const_iterator", "classmoonray_1_1util_1_1_aligned_element_array_1_1const__iterator.html", null ]
     ] ],
+    [ "rdl2_localize::MinUniqueSuffixMap::IteratorWrapper", "classrdl2__localize_1_1_min_unique_suffix_map_1_1_iterator_wrapper.html", null ],
     [ "moonray::rt::LabeledGeometrySet", "structmoonray_1_1rt_1_1_labeled_geometry_set.html", null ],
     [ "Labels", "class_labels.html", null ],
+    [ "scene_rdl2::grid_util::LatencyClockOffset", "classscene__rdl2_1_1grid__util_1_1_latency_clock_offset.html", null ],
+    [ "scene_rdl2::grid_util::LatencyItem", "classscene__rdl2_1_1grid__util_1_1_latency_item.html", null ],
+    [ "scene_rdl2::grid_util::LatencyLog", "classscene__rdl2_1_1grid__util_1_1_latency_log.html", null ],
+    [ "scene_rdl2::grid_util::LatencyLogUpstream", "classscene__rdl2_1_1grid__util_1_1_latency_log_upstream.html", null ],
     [ "ChannelContext::Layer", "struct_channel_context_1_1_layer.html", null ],
+    [ "scene_rdl2::rdl2::LayerAssignment", "structscene__rdl2_1_1rdl2_1_1_layer_assignment.html", null ],
     [ "moonray::geom::LayerAssignmentId", "classmoonray_1_1geom_1_1_layer_assignment_id.html", null ],
     [ "moonray::pbr::LensDistribution", "classmoonray_1_1pbr_1_1_lens_distribution.html", null ],
     [ "moonray::pbr::Light", "classmoonray_1_1pbr_1_1_light.html", [
@@ -569,6 +761,9 @@ var hierarchy =
     ] ],
     [ "moonray::geom::internal::LimitSurfaceSample", "structmoonray_1_1geom_1_1internal_1_1_limit_surface_sample.html", null ],
     [ "moonray::geom::internal::VdbVolume::LinearGridTransform", "structmoonray_1_1geom_1_1internal_1_1_vdb_volume_1_1_linear_grid_transform.html", null ],
+    [ "scene_rdl2::alloc::LinkedListNode", "structscene__rdl2_1_1alloc_1_1_linked_list_node.html", [
+      [ "scene_rdl2::alloc::MemBlock< INTR_TYPE, LEAF_TYPE >", "classscene__rdl2_1_1alloc_1_1_mem_block.html", null ]
+    ] ],
     [ "moonray::stats::ListeningSocket", "classmoonray_1_1stats_1_1_listening_socket.html", null ],
     [ "moonray::shading::LobeAttenuator", "classmoonray_1_1shading_1_1_lobe_attenuator.html", [
       [ "moonray::shading::ClearcoatAttenuator", "classmoonray_1_1shading_1_1_clearcoat_attenuator.html", null ],
@@ -578,11 +773,23 @@ var hierarchy =
     ] ],
     [ "moonray::pbr::BsdfOneSampler::LobesContribution", "structmoonray_1_1pbr_1_1_bsdf_one_sampler_1_1_lobes_contribution.html", null ],
     [ "moonray::pbr::BsdfOneSamplervOneLane::LobesContribution", "structmoonray_1_1pbr_1_1_bsdf_one_samplerv_one_lane_1_1_lobes_contribution.html", null ],
+    [ "rdl2_localize::LocalizableAttributes", "classrdl2__localize_1_1_localizable_attributes.html", null ],
+    [ "rdl2_localize::Localizer", "classrdl2__localize_1_1_localizer.html", null ],
     [ "moonray::mcrt_common::LocalLargeEntryQueue< T, SORTED, SORT_KEY_OFFSET >", "classmoonray_1_1mcrt__common_1_1_local_large_entry_queue.html", null ],
     [ "moonray::mcrt_common::LocalQueue< T, SORTED, SORT_KEY_OFFSET >", "classmoonray_1_1mcrt__common_1_1_local_queue.html", [
       [ "moonray::pbr::IncoherentRayQueue", "classmoonray_1_1pbr_1_1_incoherent_ray_queue.html", null ]
     ] ],
+    [ "scene_rdl2::alloc::LocalUntypedMemPool< BLOCK_TYPE >", "classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html", [
+      [ "scene_rdl2::alloc::MemPool< MemBlockType, EntryType >", "classscene__rdl2_1_1alloc_1_1_mem_pool.html", null ],
+      [ "scene_rdl2::alloc::MemPool< BLOCK_TYPE, T >", "classscene__rdl2_1_1alloc_1_1_mem_pool.html", null ]
+    ] ],
+    [ "scene_rdl2::alloc::LocalUntypedMemPool< MemBlockType >", "classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html", null ],
     [ "LockFreeTraits", "struct_lock_free_traits.html", null ],
+    [ "scene_rdl2::util::Log< T >", "classscene__rdl2_1_1util_1_1_log.html", null ],
+    [ "scene_rdl2::logging::LogEventRegistry", "classscene__rdl2_1_1logging_1_1_log_event_registry.html", null ],
+    [ "scene_rdl2::logging::Logger", "classscene__rdl2_1_1logging_1_1_logger.html", null ],
+    [ "scene_rdl2::logging::LoggerMap", "classscene__rdl2_1_1logging_1_1_logger_map.html", null ],
+    [ "scene_rdl2::util::LogOutput", "classscene__rdl2_1_1util_1_1_log_output.html", null ],
     [ "lpexp::LPexp", "classlpexp_1_1_l_pexp.html", [
       [ "lpexp::Cat", "classlpexp_1_1_cat.html", null ],
       [ "lpexp::NRepeat", "classlpexp_1_1_n_repeat.html", null ],
@@ -591,9 +798,23 @@ var hierarchy =
       [ "lpexp::Symbol", "classlpexp_1_1_symbol.html", null ],
       [ "lpexp::Wildexp", "classlpexp_1_1_wildexp.html", null ]
     ] ],
+    [ "scene_rdl2::util::LuaGlobalVarBase", "classscene__rdl2_1_1util_1_1_lua_global_var_base.html", [
+      [ "scene_rdl2::util::LuaGlobalVar< T >", "classscene__rdl2_1_1util_1_1_lua_global_var.html", null ],
+      [ "scene_rdl2::util::LuaGlobalVarArray< T >", "classscene__rdl2_1_1util_1_1_lua_global_var_array.html", null ],
+      [ "scene_rdl2::util::LuaGlobalVarDictionary", "classscene__rdl2_1_1util_1_1_lua_global_var_dictionary.html", null ]
+    ] ],
+    [ "scene_rdl2::rdl2::anonymous_namespace{AsciiReader.cc}::LuaPopGuard", "classscene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1_lua_pop_guard.html", null ],
+    [ "scene_rdl2::util::LuaScriptRunner", "classscene__rdl2_1_1util_1_1_lua_script_runner.html", null ],
+    [ "fauxstd::detail::MakeIntegerSequence< T, Num, InSeq >", "structfauxstd_1_1detail_1_1_make_integer_sequence.html", null ],
+    [ "fauxstd::detail::MakeIntegerSequence< T, Num, IndexTuple< Idx... > >", "structfauxstd_1_1detail_1_1_make_integer_sequence_3_01_t_00_01_num_00_01_index_tuple_3_01_idx_8_8_8_01_4_01_4.html", null ],
     [ "std::map", null, [
       [ "moonray::pbr::anonymous_namespace{DebugRay.cc}::IdRemapper< FROM, TO >", "structmoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03_1_1_id_remapper.html", null ]
     ] ],
+    [ "scene_rdl2::IndexableArray< T, Hash, KeyEqual >::MapIndexIterator", "classscene__rdl2_1_1_indexable_array_1_1_map_index_iterator.html", null ],
+    [ "scene_rdl2::math::Mat3< T >", "structscene__rdl2_1_1math_1_1_mat3.html", null ],
+    [ "scene_rdl2::math::Mat4< T >", "structscene__rdl2_1_1math_1_1_mat4.html", null ],
+    [ "scene_rdl2::math::Mat4< Vec4d >", "structscene__rdl2_1_1math_1_1_mat4.html", null ],
+    [ "scene_rdl2::math::Mat4< Vec4f >", "structscene__rdl2_1_1math_1_1_mat4.html", null ],
     [ "moonray::pbr::MaterialAovs", "classmoonray_1_1pbr_1_1_material_aovs.html", null ],
     [ "anonymous_namespace{test_wait.cc}::MaxThreads< T >", "structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads.html", null ],
     [ "anonymous_namespace{test_wait.cc}::MaxThreads< float >", "structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads_3_01float_01_4.html", null ],
@@ -610,12 +831,20 @@ var hierarchy =
     [ "moonray::rndr::ResumeHistoryMetaData::MCRTStint", "classmoonray_1_1rndr_1_1_resume_history_meta_data_1_1_m_c_r_t_stint.html", null ],
     [ "MeasureStarDiscrepancySplit", "class_measure_star_discrepancy_split.html", null ],
     [ "moonray::pbr::anonymous_namespace{TestQmc.cc}::MeasureStarDiscrepancySplit", "classmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_measure_star_discrepancy_split.html", null ],
+    [ "scene_rdl2::alloc::MemBlockManager< BLOCK_TYPE >", "classscene__rdl2_1_1alloc_1_1_mem_block_manager.html", null ],
+    [ "scene_rdl2::alloc::MemBlockManager< BlockType >", "classscene__rdl2_1_1alloc_1_1_mem_block_manager.html", null ],
+    [ "MemoryArenaAllocator", "class_memory_arena_allocator.html", null ],
+    [ "simd::mic_f", "classsimd_1_1mic__f.html", null ],
+    [ "simd::mic_i", "classsimd_1_1mic__i.html", null ],
+    [ "simd::mic_m", "classsimd_1_1mic__m.html", null ],
     [ "MinkowskiWrappedDistanceSquared", "class_minkowski_wrapped_distance_squared.html", null ],
+    [ "rdl2_localize::MinUniqueSuffixMap", "classrdl2__localize_1_1_min_unique_suffix_map.html", null ],
     [ "moonray::rt::MissData", "structmoonray_1_1rt_1_1_miss_data.html", null ],
     [ "moonray::util::MixMaxAverage< T >", "classmoonray_1_1util_1_1_mix_max_average.html", null ],
     [ "moonray::geom::MotionBlurParams", "classmoonray_1_1geom_1_1_motion_blur_params.html", null ],
     [ "moonray::geom::internal::MotionTransform::MotionData", "classmoonray_1_1geom_1_1internal_1_1_motion_transform_1_1_motion_data.html", null ],
     [ "moonray::geom::internal::MotionTransform", "classmoonray_1_1geom_1_1internal_1_1_motion_transform.html", null ],
+    [ "anonymous_namespace{test_util.cc}::MoveOnly", "structanonymous__namespace_02test__util_8cc_03_1_1_move_only.html", null ],
     [ "tbb::mutex", null, [
       [ "moonray::pbr::CryptomatteBuffer::AlignedMutex", "structmoonray_1_1pbr_1_1_cryptomatte_buffer_1_1_aligned_mutex.html", null ],
       [ "moonray::pbr::DeepBuffer::AlignedMutex", "structmoonray_1_1pbr_1_1_deep_buffer_1_1_aligned_mutex.html", null ]
@@ -624,7 +853,10 @@ var hierarchy =
     [ "moonray::MutexPool2D< sLog2MutexCount, MutexType >", "classmoonray_1_1_mutex_pool2_d.html", null ],
     [ "moonray::MutexPool2D< 7 >", "classmoonray_1_1_mutex_pool2_d.html", null ],
     [ "moonray::MutexPool2D< sLogMutexCount, MutexType >", "classmoonray_1_1_mutex_pool2_d.html", null ],
+    [ "anonymous_namespace{test_util.cc}::MyContainer", "classanonymous__namespace_02test__util_8cc_03_1_1_my_container.html", null ],
+    [ "scene_rdl2::math::NaNTy", "structscene__rdl2_1_1math_1_1_na_n_ty.html", null ],
     [ "NdfAutomata", "class_ndf_automata.html", null ],
+    [ "scene_rdl2::math::NegInfTy", "structscene__rdl2_1_1math_1_1_neg_inf_ty.html", null ],
     [ "DynamicHyperGrid< T, 1, IncomingRange >::Node< S >", "struct_dynamic_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4_1_1_node.html", null ],
     [ "moonray::geom::internal::VolumeIdFSM::Node", "structmoonray_1_1geom_1_1internal_1_1_volume_id_f_s_m_1_1_node.html", null ],
     [ "moonray::pbr::DebugRayBuilder::Node", "structmoonray_1_1pbr_1_1_debug_ray_builder_1_1_node.html", null ],
@@ -644,36 +876,73 @@ var hierarchy =
     ] ],
     [ "NPoint< 1 >", "class_n_point_3_011_01_4.html", null ],
     [ "NPoint< kDimensions >", "class_n_point.html", null ],
+    [ "scene_rdl2::util::NullTy", "structscene__rdl2_1_1util_1_1_null_ty.html", null ],
+    [ "object", null, [
+      [ "rdl2_dso.Rdl2BuiltinClassNameFetcher", "classrdl2__dso_1_1_rdl2_builtin_class_name_fetcher.html", null ],
+      [ "rdl2_dso.Rdl2BuiltinClassTargetsFetcher", "classrdl2__dso_1_1_rdl2_builtin_class_targets_fetcher.html", null ],
+      [ "rdl2_dso.Rdl2BuiltinGroupTargetsFetcher", "classrdl2__dso_1_1_rdl2_builtin_group_targets_fetcher.html", null ],
+      [ "rdl2_dso.Rdl2DsoPathExpander", "classrdl2__dso_1_1_rdl2_dso_path_expander.html", null ],
+      [ "rdl2_dso.Rdl2JsonExporterBinFetcher", "classrdl2__dso_1_1_rdl2_json_exporter_bin_fetcher.html", null ],
+      [ "rdl2_dso.Rdl2XclsExporterBinFetcher", "classrdl2__dso_1_1_rdl2_xcls_exporter_bin_fetcher.html", null ]
+    ] ],
     [ "moonray::ObjectData", "structmoonray_1_1_object_data.html", null ],
+    [ "scene_rdl2::rdl2::ObjectFactory", "classscene__rdl2_1_1rdl2_1_1_object_factory.html", null ],
+    [ "scene_rdl2::logging::ObjectLogs", "classscene__rdl2_1_1logging_1_1_object_logs.html", null ],
     [ "moonray::ObjectMesh", "structmoonray_1_1_object_mesh.html", null ],
     [ "moonray::pbr::detail::OddInt< IntType, v >", "structmoonray_1_1pbr_1_1detail_1_1_odd_int.html", null ],
     [ "moonray::rndr::TileWorkQueue::OffsetData", "structmoonray_1_1rndr_1_1_tile_work_queue_1_1_offset_data.html", null ],
     [ "moonray::rndr::OiioReader", "classmoonray_1_1rndr_1_1_oiio_reader.html", null ],
     [ "moonray::rndr::OiioUtils", "classmoonray_1_1rndr_1_1_oiio_utils.html", null ],
     [ "moonray::pbr::OldFalloffCurve", "classmoonray_1_1pbr_1_1_old_falloff_curve.html", null ],
+    [ "scene_rdl2::math::OneOverEpsilonTy", "structscene__rdl2_1_1math_1_1_one_over_epsilon_ty.html", null ],
+    [ "scene_rdl2::math::OneOverFourPiTy", "structscene__rdl2_1_1math_1_1_one_over_four_pi_ty.html", null ],
+    [ "scene_rdl2::math::OneOverPiTy", "structscene__rdl2_1_1math_1_1_one_over_pi_ty.html", null ],
+    [ "scene_rdl2::math::OneOverTwoPiTy", "structscene__rdl2_1_1math_1_1_one_over_two_pi_ty.html", null ],
+    [ "scene_rdl2::math::OneTy", "structscene__rdl2_1_1math_1_1_one_ty.html", null ],
     [ "moonray::shading::OpenVdbSampler", "classmoonray_1_1shading_1_1_open_vdb_sampler.html", null ],
+    [ "anonymous_namespace{rdl2_print.cc}::Options", "structanonymous__namespace_02rdl2__print_8cc_03_1_1_options.html", null ],
     [ "std::ostream", null, [
       [ "moonray::stats::AthenaCSVStream", "classmoonray_1_1stats_1_1_athena_c_s_v_stream.html", null ],
       [ "moonray::stats::LogStream< StreamBuf >", "classmoonray_1_1stats_1_1_log_stream.html", null ]
     ] ],
+    [ "std::out_of_range", null, [
+      [ "scene_rdl2::except::IndexError", "classscene__rdl2_1_1except_1_1_index_error.html", null ]
+    ] ],
     [ "moonray::rndr::OverlappingRegions< sRegionOverlap, sTileWidth, sTileHeight, sDesiredNRegionsPerDimension >", "classmoonray_1_1rndr_1_1_overlapping_regions.html", null ],
+    [ "scene_rdl2::grid_util::PackActiveTiles", "classscene__rdl2_1_1grid__util_1_1_pack_active_tiles.html", null ],
+    [ "scene_rdl2::grid_util::PackTiles", "classscene__rdl2_1_1grid__util_1_1_pack_tiles.html", null ],
+    [ "scene_rdl2::grid_util::PackTilesImpl", "classscene__rdl2_1_1grid__util_1_1_pack_tiles_impl.html", null ],
+    [ "scene_rdl2::grid_util::PackTilesTest", "classscene__rdl2_1_1grid__util_1_1_pack_tiles_test.html", null ],
     [ "moonray::pbr::ParsedMaterialExpression", "structmoonray_1_1pbr_1_1_parsed_material_expression.html", null ],
     [ "Parser", "class_parser.html", null ],
+    [ "scene_rdl2::grid_util::Parser", "classscene__rdl2_1_1grid__util_1_1_parser.html", null ],
+    [ "scene_rdl2::grid_util::ParserItem", "classscene__rdl2_1_1grid__util_1_1_parser_item.html", null ],
     [ "moonray::rndr::Pass", "structmoonray_1_1rndr_1_1_pass.html", null ],
     [ "moonray::rndr::TileWorkQueue::PassInfo", "structmoonray_1_1rndr_1_1_tile_work_queue_1_1_pass_info.html", null ],
     [ "moonray::geom::internal::PatchCV", "structmoonray_1_1geom_1_1internal_1_1_patch_c_v.html", null ],
+    [ "rdl2_localize::MinUniqueSuffixMap::PathData", "structrdl2__localize_1_1_min_unique_suffix_map_1_1_path_data.html", null ],
     [ "moonray::pbr::PathGuide", "classmoonray_1_1pbr_1_1_path_guide.html", null ],
     [ "moonray::pbr::PathIntegrator", "classmoonray_1_1pbr_1_1_path_integrator.html", null ],
     [ "moonray::pbr::PathIntegratorParams", "structmoonray_1_1pbr_1_1_path_integrator_params.html", null ],
+    [ "rdl2_localize::PathNode", "structrdl2__localize_1_1_path_node.html", null ],
+    [ "rdl2_localize::PathTree", "classrdl2__localize_1_1_path_tree.html", null ],
     [ "moonray::pbr::PathVertex", "structmoonray_1_1pbr_1_1_path_vertex.html", null ],
+    [ "log4cplus::PatternLayout", null, [
+      [ "scene_rdl2::logging::ColorPatternLayout", "classscene__rdl2_1_1logging_1_1_color_pattern_layout.html", null ]
+    ] ],
     [ "PerfectPowerArray< T, D >", "class_perfect_power_array.html", null ],
+    [ "scene_rdl2::math::Permutation", "classscene__rdl2_1_1math_1_1_permutation.html", null ],
+    [ "scene_rdl2::math::PiTy", "structscene__rdl2_1_1math_1_1_pi_ty.html", null ],
     [ "Pixel< T >", "class_pixel.html", null ],
+    [ "scene_rdl2::fb_util::PixelBuffer< T >", "classscene__rdl2_1_1fb__util_1_1_pixel_buffer.html", null ],
+    [ "scene_rdl2::fb_util::PixelBuffer< unsigned int >", "classscene__rdl2_1_1fb__util_1_1_pixel_buffer.html", null ],
     [ "moonray::pbr::CryptomatteBuffer::PixelEntry", "structmoonray_1_1pbr_1_1_cryptomatte_buffer_1_1_pixel_entry.html", null ],
     [ "moonray::pbr::PixelFilter", "classmoonray_1_1pbr_1_1_pixel_filter.html", [
       [ "moonray::pbr::BoxPixelFilter", "classmoonray_1_1pbr_1_1_box_pixel_filter.html", null ],
       [ "moonray::pbr::CubicBSplinePixelFilter", "classmoonray_1_1pbr_1_1_cubic_b_spline_pixel_filter.html", null ],
       [ "moonray::pbr::QuadraticBSplinePixelFilter", "classmoonray_1_1pbr_1_1_quadratic_b_spline_pixel_filter.html", null ]
     ] ],
+    [ "scene_rdl2::fb_util::PixelInfo", "structscene__rdl2_1_1fb__util_1_1_pixel_info.html", null ],
     [ "moonray::pbr::PixelScramble", "classmoonray_1_1pbr_1_1_pixel_scramble.html", null ],
     [ "PixelTile", "class_pixel_tile.html", [
       [ "DeepTile", "class_deep_tile.html", [
@@ -682,7 +951,11 @@ var hierarchy =
       ] ]
     ] ],
     [ "moonray::pbr::Plane", "structmoonray_1_1pbr_1_1_plane.html", null ],
+    [ "scene_rdl2::pbr::anonymous_namespace{TestArray2D.cc}::Point2D", "structscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_array2_d_8cc_03_1_1_point2_d.html", null ],
     [ "PointData", "struct_point_data.html", null ],
+    [ "scene_rdl2::rdl2::detail::PointerToConst< T >", "structscene__rdl2_1_1rdl2_1_1detail_1_1_pointer_to_const.html", null ],
+    [ "scene_rdl2::rdl2::detail::PointerToConst< T * >", "structscene__rdl2_1_1rdl2_1_1detail_1_1_pointer_to_const_3_01_t_01_5_01_4.html", null ],
+    [ "scene_rdl2::rdl2::detail::PointerToConst< typename ListType::value_type >", "structscene__rdl2_1_1rdl2_1_1detail_1_1_pointer_to_const.html", null ],
     [ "PointLess< D, current >", "struct_point_less.html", null ],
     [ "PointLess< D, 1 >", "struct_point_less_3_01_d_00_011_01_4.html", null ],
     [ "PointManager2D< Point >", "class_point_manager2_d.html", null ],
@@ -694,6 +967,8 @@ var hierarchy =
     [ "moonray::geom::internal::PolyMeshData", "classmoonray_1_1geom_1_1internal_1_1_poly_mesh_data.html", null ],
     [ "moonray::geom::internal::PolyTessellationFactor", "structmoonray_1_1geom_1_1internal_1_1_poly_tessellation_factor.html", null ],
     [ "moonray::pbr::anonymous_namespace{PbrTLState.cc}::PoolInfo", "structmoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03_1_1_pool_info.html", null ],
+    [ "anonymous_namespace{test_util.cc}::PoorHash< T >", "structanonymous__namespace_02test__util_8cc_03_1_1_poor_hash.html", null ],
+    [ "scene_rdl2::math::PosInfTy", "structscene__rdl2_1_1math_1_1_pos_inf_ty.html", null ],
     [ "moonray::pbr::TestBssrdf::PParams", "structmoonray_1_1pbr_1_1_test_bssrdf_1_1_p_params.html", null ],
     [ "moonray::geom::internal::Primitive", "classmoonray_1_1geom_1_1internal_1_1_primitive.html", [
       [ "moonray::geom::internal::Instance", "classmoonray_1_1geom_1_1internal_1_1_instance.html", [
@@ -788,6 +1063,12 @@ var hierarchy =
     [ "ProgressBar", "class_progress_bar.html", null ],
     [ "ProjectionVectorCalculator< D >", "struct_projection_vector_calculator.html", null ],
     [ "ProjectionVectorCalculator< 1 >", "struct_projection_vector_calculator_3_011_01_4.html", null ],
+    [ "py_scene_rdl2::PyAsciiReader", "classpy__scene__rdl2_1_1_py_ascii_reader.html", null ],
+    [ "py_scene_rdl2::PyAsciiWriter", "classpy__scene__rdl2_1_1_py_ascii_writer.html", null ],
+    [ "py_scene_rdl2::PyBinaryReader", "classpy__scene__rdl2_1_1_py_binary_reader.html", null ],
+    [ "py_scene_rdl2::PyBinaryWriter", "classpy__scene__rdl2_1_1_py_binary_writer.html", null ],
+    [ "scene_rdl2::math::QuaternionT< T >", "structscene__rdl2_1_1math_1_1_quaternion_t.html", null ],
+    [ "scene_rdl2::math::QuaternionT< float >", "structscene__rdl2_1_1math_1_1_quaternion_t.html", null ],
     [ "moonray::RaasApplication", "classmoonray_1_1_raas_application.html", [
       [ "moonray::RaasCommandLineApplication", "classmoonray_1_1_raas_command_line_application.html", null ]
     ] ],
@@ -795,6 +1076,7 @@ var hierarchy =
     [ "moonray::time::RAIITicker< T >", "classmoonray_1_1time_1_1_r_a_i_i_ticker.html", null ],
     [ "moonray::time::RAIITimer< T >", "classmoonray_1_1time_1_1_r_a_i_i_timer.html", null ],
     [ "anonymous_namespace{RampControl.cc}::RampCv< OutputType >", "structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html", null ],
+    [ "scene_rdl2::util::Random", "classscene__rdl2_1_1util_1_1_random.html", null ],
     [ "anonymous_namespace{test_ring_buffer.cc}::RandomTime< Duration >", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_random_time.html", null ],
     [ "anonymous_namespace{test_ring_buffer.cc}::RandomTime< std::chrono::nanoseconds >", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_random_time.html", null ],
     [ "RangeScale", "struct_range_scale.html", null ],
@@ -807,14 +1089,36 @@ var hierarchy =
     [ "moonray::rt::RaygenData", "structmoonray_1_1rt_1_1_raygen_data.html", null ],
     [ "moonray::pbr::RayState", "structmoonray_1_1pbr_1_1_ray_state.html", null ],
     [ "moonray::pbr::RayStatev", "structmoonray_1_1pbr_1_1_ray_statev.html", null ],
+    [ "scene_rdl2::rdl2::RaySwitchContext", "structscene__rdl2_1_1rdl2_1_1_ray_switch_context.html", null ],
+    [ "py_scene_rdl2::Rdl2PrimitiveTypeWrapper< T >", "classpy__scene__rdl2_1_1_rdl2_primitive_type_wrapper.html", null ],
     [ "moonray::rndr::RenderOptions::RdlaGlobal", "structmoonray_1_1rndr_1_1_render_options_1_1_rdla_global.html", null ],
     [ "moonray::rndr::RealtimeFrameStats", "structmoonray_1_1rndr_1_1_realtime_frame_stats.html", null ],
+    [ "scene_rdl2::alloc::AlignedAllocator< T, alignment >::rebind< U >", "structscene__rdl2_1_1alloc_1_1_aligned_allocator_1_1rebind.html", null ],
+    [ "scene_rdl2::alloc::AlignedAllocator< void, alignment >::rebind< U >", "structscene__rdl2_1_1alloc_1_1_aligned_allocator_3_01void_00_01alignment_01_4_1_1rebind.html", null ],
+    [ "scene_rdl2::alloc::ArenaAllocator< T, alignment >::rebind< U >", "structscene__rdl2_1_1alloc_1_1_arena_allocator_1_1rebind.html", null ],
+    [ "scene_rdl2::alloc::TypedStaticallySizedPoolAllocator< T >::rebind< U >", "structscene__rdl2_1_1alloc_1_1_typed_statically_sized_pool_allocator_1_1rebind.html", null ],
+    [ "scene_rdl2::rec_time::RecDoubleManualInterval", "classscene__rdl2_1_1rec__time_1_1_rec_double_manual_interval.html", null ],
     [ "moonray::rec_load::RecLoad", "classmoonray_1_1rec__load_1_1_rec_load.html", null ],
     [ "moonray::rec_load::RecLoadCoreSpec", "classmoonray_1_1rec__load_1_1_rec_load_core_spec.html", null ],
     [ "moonray::rec_load::RecLoadCoresStat", "classmoonray_1_1rec__load_1_1_rec_load_cores_stat.html", null ],
     [ "moonray::rec_load::RecLoadCoreStat", "classmoonray_1_1rec__load_1_1_rec_load_core_stat.html", null ],
     [ "moonray::rec_load::RecLoadHostTimelog", "classmoonray_1_1rec__load_1_1_rec_load_host_timelog.html", null ],
-    [ "scene_rdl2::util::RefCount", null, [
+    [ "scene_rdl2::rdl2::BinaryReader::RecordInfo", "structscene__rdl2_1_1rdl2_1_1_binary_reader_1_1_record_info.html", null ],
+    [ "scene_rdl2::rdl2::BinaryWriter::RecordInfo", "structscene__rdl2_1_1rdl2_1_1_binary_writer_1_1_record_info.html", null ],
+    [ "scene_rdl2::rec_time::RecTick", "classscene__rdl2_1_1rec__time_1_1_rec_tick.html", null ],
+    [ "scene_rdl2::rec_time::RecTickManualInterval", "classscene__rdl2_1_1rec__time_1_1_rec_tick_manual_interval.html", null ],
+    [ "scene_rdl2::rec_time::RecTickTimeManualInterval", "classscene__rdl2_1_1rec__time_1_1_rec_tick_time_manual_interval.html", null ],
+    [ "scene_rdl2::rec_time::RecTime", "classscene__rdl2_1_1rec__time_1_1_rec_time.html", null ],
+    [ "scene_rdl2::rec_time::RecTimeAutoInterval", "classscene__rdl2_1_1rec__time_1_1_rec_time_auto_interval.html", null ],
+    [ "scene_rdl2::rec_time::RecTimeLap", "classscene__rdl2_1_1rec__time_1_1_rec_time_lap.html", null ],
+    [ "scene_rdl2::rec_time::RecUInt64ManualInterval", "classscene__rdl2_1_1rec__time_1_1_rec_u_int64_manual_interval.html", null ],
+    [ "scene_rdl2::util::Ref< Type >", "classscene__rdl2_1_1util_1_1_ref.html", null ],
+    [ "scene_rdl2::util::Ref< scene_rdl2::alloc::ArenaBlockPool >", "classscene__rdl2_1_1util_1_1_ref.html", null ],
+    [ "scene_rdl2::util::RefCount< Derived, Deleter >", "classscene__rdl2_1_1util_1_1_ref_count.html", null ],
+    [ "scene_rdl2::util::RefCount< ArenaBlockPool, util::AlignedDeleter< ArenaBlockPool > >", "classscene__rdl2_1_1util_1_1_ref_count.html", [
+      [ "scene_rdl2::alloc::ArenaBlockPool", "classscene__rdl2_1_1alloc_1_1_arena_block_pool.html", null ]
+    ] ],
+    [ "scene_rdl2::util::RefCount< Procedural >", "classscene__rdl2_1_1util_1_1_ref_count.html", [
       [ "moonray::geom::Procedural", "classmoonray_1_1geom_1_1_procedural.html", [
         [ "moonray::geom::ProceduralLeaf", "classmoonray_1_1geom_1_1_procedural_leaf.html", [
           [ "moonray::geom::InstanceProceduralLeaf", "classmoonray_1_1geom_1_1_instance_procedural_leaf.html", [
@@ -830,7 +1134,10 @@ var hierarchy =
         [ "moonray::geom::ProceduralNode", "classmoonray_1_1geom_1_1_procedural_node.html", null ]
       ] ]
     ] ],
+    [ "scene_rdl2::math::ReferenceFrame", "classscene__rdl2_1_1math_1_1_reference_frame.html", null ],
     [ "moonray::shading::ReflectionAlbedo", "classmoonray_1_1shading_1_1_reflection_albedo.html", null ],
+    [ "scene_rdl2::fb_util::ReGammaC2F", "classscene__rdl2_1_1fb__util_1_1_re_gamma_c2_f.html", null ],
+    [ "scene_rdl2::fb_util::ReGammaC2FLUT", "classscene__rdl2_1_1fb__util_1_1_re_gamma_c2_f_l_u_t.html", null ],
     [ "moonray::rndr::AdaptiveRegions::RegionTileCount", "structmoonray_1_1rndr_1_1_adaptive_regions_1_1_region_tile_count.html", null ],
     [ "moonray::rndr::RenderContext", "classmoonray_1_1rndr_1_1_render_context.html", null ],
     [ "moonray::rndr::RenderDriver", "classmoonray_1_1rndr_1_1_render_driver.html", null ],
@@ -843,11 +1150,14 @@ var hierarchy =
     [ "moonray::rndr::RenderOutputWriter", "classmoonray_1_1rndr_1_1_render_output_writer.html", null ],
     [ "moonray::rndr::RenderPassesTimingRecord", "classmoonray_1_1rndr_1_1_render_passes_timing_record.html", null ],
     [ "moonray::rndr::RenderPrepExecTracker", "classmoonray_1_1rndr_1_1_render_prep_exec_tracker.html", null ],
+    [ "scene_rdl2::grid_util::RenderPrepStats", "classscene__rdl2_1_1grid__util_1_1_render_prep_stats.html", null ],
     [ "moonray::rndr::RenderPrepTimingStats", "classmoonray_1_1rndr_1_1_render_prep_timing_stats.html", null ],
     [ "moonray::rndr::RenderProgressEstimation", "classmoonray_1_1rndr_1_1_render_progress_estimation.html", null ],
     [ "moonray::rndr::RenderSamplesParams", "structmoonray_1_1rndr_1_1_render_samples_params.html", null ],
     [ "moonray::rndr::RenderStats", "classmoonray_1_1rndr_1_1_render_stats.html", null ],
     [ "moonray::rndr::RenderDriver::RenderThreadStateManager", "classmoonray_1_1rndr_1_1_render_driver_1_1_render_thread_state_manager.html", null ],
+    [ "scene_rdl2::fb_util::ReSrgbC2F", "classscene__rdl2_1_1fb__util_1_1_re_srgb_c2_f.html", null ],
+    [ "scene_rdl2::fb_util::ReSrgbC2FLUT", "classscene__rdl2_1_1fb__util_1_1_re_srgb_c2_f_l_u_t.html", null ],
     [ "moonray::pbr::TestBsdfConsistencyTask::Result", "structmoonray_1_1pbr_1_1_test_bsdf_consistency_task_1_1_result.html", null ],
     [ "moonray::pbr::TestBsdfEvalIntegralTask::Result", "structmoonray_1_1pbr_1_1_test_bsdf_eval_integral_task_1_1_result.html", null ],
     [ "moonray::pbr::TestBsdfPdfIntegralTask::Result", "structmoonray_1_1pbr_1_1_test_bsdf_pdf_integral_task_1_1_result.html", null ],
@@ -861,10 +1171,23 @@ var hierarchy =
       [ "moonray::mcrt_common::RayPacket< N >", "structmoonray_1_1mcrt__common_1_1_ray_packet.html", null ]
     ] ],
     [ "lpexp::Rule", "classlpexp_1_1_rule.html", null ],
+    [ "scene_rdl2::grid_util::RunLenBitTable", "classscene__rdl2_1_1grid__util_1_1_run_len_bit_table.html", null ],
+    [ "scene_rdl2::fb_util::RunningStats< T >", "classscene__rdl2_1_1fb__util_1_1_running_stats.html", null ],
+    [ "scene_rdl2::fb_util::RunningStatsLightWeight< T >", "classscene__rdl2_1_1fb__util_1_1_running_stats_light_weight.html", [
+      [ "scene_rdl2::fb_util::RunningStatsLightWeightFulldump< T >", "classscene__rdl2_1_1fb__util_1_1_running_stats_light_weight_fulldump.html", null ]
+    ] ],
+    [ "scene_rdl2::fb_util::RunningStatsLightWeight< float >", "classscene__rdl2_1_1fb__util_1_1_running_stats_light_weight.html", null ],
     [ "std::runtime_error", null, [
       [ "ArgumentException", "class_argument_exception.html", null ],
       [ "anonymous_namespace{test_ring_buffer.cc}::TestException", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_test_exception.html", null ],
-      [ "moonray::stats::SocketException", "classmoonray_1_1stats_1_1_socket_exception.html", null ]
+      [ "moonray::stats::SocketException", "classmoonray_1_1stats_1_1_socket_exception.html", null ],
+      [ "scene_rdl2::except::IoError", "classscene__rdl2_1_1except_1_1_io_error.html", null ],
+      [ "scene_rdl2::except::NotImplementedError", "classscene__rdl2_1_1except_1_1_not_implemented_error.html", null ],
+      [ "scene_rdl2::except::RuntimeError", "classscene__rdl2_1_1except_1_1_runtime_error.html", null ],
+      [ "scene_rdl2::except::TypeError", "classscene__rdl2_1_1except_1_1_type_error.html", null ],
+      [ "scene_rdl2::rdl2::NoProjectionException", "classscene__rdl2_1_1rdl2_1_1_no_projection_exception.html", null ],
+      [ "scene_rdl2::util::GUIDException", "classscene__rdl2_1_1util_1_1_g_u_i_d_exception.html", null ],
+      [ "scene_rdl2::util::GetEnvException", "classscene__rdl2_1_1util_1_1_get_env_exception.html", null ]
     ] ],
     [ "moonray::pbr::Sample", "structmoonray_1_1pbr_1_1_sample.html", null ],
     [ "Sample", "struct_sample.html", null ],
@@ -879,15 +1202,88 @@ var hierarchy =
     [ "moonray::pbr::anonymous_namespace{TestQmc.cc}::SamplePoint2D", "structmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_sample_point2_d.html", null ],
     [ "moonray::pbr::Sampler", "classmoonray_1_1pbr_1_1_sampler.html", null ],
     [ "moonray::pbr::Scene", "classmoonray_1_1pbr_1_1_scene.html", null ],
+    [ "scene_rdl2::rdl2::SceneClass", "classscene__rdl2_1_1rdl2_1_1_scene_class.html", null ],
+    [ "scene_rdl2::rdl2::SceneContext", "classscene__rdl2_1_1rdl2_1_1_scene_context.html", null ],
+    [ "scene_rdl2::rdl2::SceneObject", "classscene__rdl2_1_1rdl2_1_1_scene_object.html", [
+      [ "anonymous_namespace{DeclareAndCreateObject.cc}::DeclareAndCreateObject", "classanonymous__namespace_02_declare_and_create_object_8cc_03_1_1_declare_and_create_object.html", null ],
+      [ "anonymous_namespace{DeclareAndDestroyObject.cc}::DeclareAndDestroyObject", "classanonymous__namespace_02_declare_and_destroy_object_8cc_03_1_1_declare_and_destroy_object.html", null ],
+      [ "scene_rdl2::rdl2::DisplayFilter", "classscene__rdl2_1_1rdl2_1_1_display_filter.html", [
+        [ "scene_rdl2::rdl2::DisplayFilterProxy", "classscene__rdl2_1_1rdl2_1_1_display_filter_proxy.html", null ]
+      ] ],
+      [ "scene_rdl2::rdl2::GeometrySet", "classscene__rdl2_1_1rdl2_1_1_geometry_set.html", [
+        [ "scene_rdl2::rdl2::ShadowReceiverSet", "classscene__rdl2_1_1rdl2_1_1_shadow_receiver_set.html", null ]
+      ] ],
+      [ "scene_rdl2::rdl2::LightFilter", "classscene__rdl2_1_1rdl2_1_1_light_filter.html", [
+        [ "scene_rdl2::rdl2::LightFilterProxy", "classscene__rdl2_1_1rdl2_1_1_light_filter_proxy.html", null ]
+      ] ],
+      [ "scene_rdl2::rdl2::LightFilterSet", "classscene__rdl2_1_1rdl2_1_1_light_filter_set.html", null ],
+      [ "scene_rdl2::rdl2::LightSet", "classscene__rdl2_1_1rdl2_1_1_light_set.html", [
+        [ "scene_rdl2::rdl2::ShadowSet", "classscene__rdl2_1_1rdl2_1_1_shadow_set.html", null ]
+      ] ],
+      [ "scene_rdl2::rdl2::Metadata", "classscene__rdl2_1_1rdl2_1_1_metadata.html", null ],
+      [ "scene_rdl2::rdl2::Node", "classscene__rdl2_1_1rdl2_1_1_node.html", [
+        [ "scene_rdl2::rdl2::Camera", "classscene__rdl2_1_1rdl2_1_1_camera.html", [
+          [ "scene_rdl2::rdl2::CameraProxy", "classscene__rdl2_1_1rdl2_1_1_camera_proxy.html", null ]
+        ] ],
+        [ "scene_rdl2::rdl2::EnvMap", "classscene__rdl2_1_1rdl2_1_1_env_map.html", [
+          [ "scene_rdl2::rdl2::EnvMapProxy", "classscene__rdl2_1_1rdl2_1_1_env_map_proxy.html", null ]
+        ] ],
+        [ "scene_rdl2::rdl2::Geometry", "classscene__rdl2_1_1rdl2_1_1_geometry.html", [
+          [ "py_scene_rdl2::PyGeometry", "classpy__scene__rdl2_1_1_py_geometry.html", null ],
+          [ "scene_rdl2::rdl2::GeometryProxy", "classscene__rdl2_1_1rdl2_1_1_geometry_proxy.html", null ]
+        ] ],
+        [ "scene_rdl2::rdl2::Joint", "classscene__rdl2_1_1rdl2_1_1_joint.html", null ],
+        [ "scene_rdl2::rdl2::Light", "classscene__rdl2_1_1rdl2_1_1_light.html", [
+          [ "scene_rdl2::rdl2::LightProxy", "classscene__rdl2_1_1rdl2_1_1_light_proxy.html", null ]
+        ] ]
+      ] ],
+      [ "scene_rdl2::rdl2::RenderOutput", "classscene__rdl2_1_1rdl2_1_1_render_output.html", null ],
+      [ "scene_rdl2::rdl2::SceneObjectProxy", "classscene__rdl2_1_1rdl2_1_1_scene_object_proxy.html", null ],
+      [ "scene_rdl2::rdl2::SceneVariables", "classscene__rdl2_1_1rdl2_1_1_scene_variables.html", null ],
+      [ "scene_rdl2::rdl2::Shader", "classscene__rdl2_1_1rdl2_1_1_shader.html", [
+        [ "scene_rdl2::rdl2::Map", "classscene__rdl2_1_1rdl2_1_1_map.html", [
+          [ "scene_rdl2::rdl2::MapProxy", "classscene__rdl2_1_1rdl2_1_1_map_proxy.html", null ]
+        ] ],
+        [ "scene_rdl2::rdl2::NormalMap", "classscene__rdl2_1_1rdl2_1_1_normal_map.html", [
+          [ "scene_rdl2::rdl2::NormalMapProxy", "classscene__rdl2_1_1rdl2_1_1_normal_map_proxy.html", null ]
+        ] ],
+        [ "scene_rdl2::rdl2::RootShader", "classscene__rdl2_1_1rdl2_1_1_root_shader.html", [
+          [ "scene_rdl2::rdl2::Displacement", "classscene__rdl2_1_1rdl2_1_1_displacement.html", [
+            [ "scene_rdl2::rdl2::DisplacementProxy", "classscene__rdl2_1_1rdl2_1_1_displacement_proxy.html", null ]
+          ] ],
+          [ "scene_rdl2::rdl2::Material", "classscene__rdl2_1_1rdl2_1_1_material.html", [
+            [ "scene_rdl2::rdl2::DwaBaseHairLayerableProxy", "classscene__rdl2_1_1rdl2_1_1_dwa_base_hair_layerable_proxy.html", null ],
+            [ "scene_rdl2::rdl2::DwaBaseLayerableProxy", "classscene__rdl2_1_1rdl2_1_1_dwa_base_layerable_proxy.html", null ],
+            [ "scene_rdl2::rdl2::MaterialProxy", "classscene__rdl2_1_1rdl2_1_1_material_proxy.html", null ]
+          ] ],
+          [ "scene_rdl2::rdl2::VolumeShader", "classscene__rdl2_1_1rdl2_1_1_volume_shader.html", [
+            [ "scene_rdl2::rdl2::VolumeShaderProxy", "classscene__rdl2_1_1rdl2_1_1_volume_shader_proxy.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "scene_rdl2::rdl2::TraceSet", "classscene__rdl2_1_1rdl2_1_1_trace_set.html", [
+        [ "scene_rdl2::rdl2::Layer", "classscene__rdl2_1_1rdl2_1_1_layer.html", null ]
+      ] ],
+      [ "scene_rdl2::rdl2::UserData", "classscene__rdl2_1_1rdl2_1_1_user_data.html", null ]
+    ] ],
+    [ "SceneObjectISPC", "struct_scene_object_i_s_p_c.html", null ],
+    [ "py_scene_rdl2::SceneObjectVectorWrapper", "classpy__scene__rdl2_1_1_scene_object_vector_wrapper.html", null ],
     [ "anonymous_namespace{TestEvalAttribute.cc}::SceneSetup", "classanonymous__namespace_02_test_eval_attribute_8cc_03_1_1_scene_setup.html", null ],
     [ "moonray::mcrt_common::ScopedAccumulator", "classmoonray_1_1mcrt__common_1_1_scoped_accumulator.html", null ],
+    [ "scene_rdl2::alloc::ScopedArenaMem< T >", "classscene__rdl2_1_1alloc_1_1_scoped_arena_mem.html", null ],
     [ "moonray::mcrt_common::ScopedExclAccumulator", "classmoonray_1_1mcrt__common_1_1_scoped_excl_accumulator.html", null ],
+    [ "scene_rdl2::alloc::ScopedHighArenaMem", "classscene__rdl2_1_1alloc_1_1_scoped_high_arena_mem.html", null ],
     [ "anonymous_namespace{test_ring_buffer.cc}::WorkDistributor< IntType >::Segment", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_work_distributor_1_1_segment.html", null ],
     [ "moonray::pbr::SequenceID", "classmoonray_1_1pbr_1_1_sequence_i_d.html", null ],
+    [ "scene_rdl2::grid_util::Sha1Gen", "classscene__rdl2_1_1grid__util_1_1_sha1_gen.html", null ],
+    [ "scene_rdl2::grid_util::Sha1Util", "classscene__rdl2_1_1grid__util_1_1_sha1_util.html", null ],
     [ "moonray::shading::ShaderComplexIor", "classmoonray_1_1shading_1_1_shader_complex_ior.html", null ],
     [ "moonray::shading::ShaderIor", "classmoonray_1_1shading_1_1_shader_ior.html", null ],
     [ "moonray::rt::ShadowExclusionMapping", "structmoonray_1_1rt_1_1_shadow_exclusion_mapping.html", null ],
     [ "moonray::geom::internal::ShadowLinking", "classmoonray_1_1geom_1_1internal_1_1_shadow_linking.html", null ],
+    [ "fauxstd::shared_lock< Mutex >", "classfauxstd_1_1shared__lock.html", null ],
+    [ "fauxstd::shared_mutex", "classfauxstd_1_1shared__mutex.html", null ],
+    [ "fauxstd::shared_mutex_pthread", "classfauxstd_1_1shared__mutex__pthread.html", null ],
     [ "moonray::geom::SharedPrimitive", "classmoonray_1_1geom_1_1_shared_primitive.html", null ],
     [ "moonray::geom::SharedPtrHash", "classmoonray_1_1geom_1_1_shared_ptr_hash.html", null ],
     [ "moonray::mcrt_common::SharedQueue< T, SORTED, SORT_KEY_OFFSET >", "classmoonray_1_1mcrt__common_1_1_shared_queue.html", null ],
@@ -896,12 +1292,18 @@ var hierarchy =
     [ "SingleProducerRingBufferTraits", "struct_single_producer_ring_buffer_traits.html", null ],
     [ "SingleProducerSingleConsumerRingBufferTraits", "struct_single_producer_single_consumer_ring_buffer_traits.html", null ],
     [ "SizeVerifyingAllocator< T >", "class_size_verifying_allocator.html", null ],
+    [ "scene_rdl2::rdl2::Slice", "classscene__rdl2_1_1rdl2_1_1_slice.html", null ],
     [ "moonray::pbr::SlidingWindowCache", "classmoonray_1_1pbr_1_1_sliding_window_cache.html", null ],
+    [ "scene_rdl2::util::SList", "classscene__rdl2_1_1util_1_1_s_list.html", [
+      [ "scene_rdl2::util::ConcurrentSList", "classscene__rdl2_1_1util_1_1_concurrent_s_list.html", null ]
+    ] ],
+    [ "scene_rdl2::util::SManip< Args >", "structscene__rdl2_1_1util_1_1_s_manip.html", null ],
     [ "moonray::rndr::SnapshotDeltaAovFloatN< dimension >", "structmoonray_1_1rndr_1_1_snapshot_delta_aov_float_n.html", null ],
     [ "moonray::rndr::SnapshotDeltaAovFloatN< 1 >", "structmoonray_1_1rndr_1_1_snapshot_delta_aov_float_n_3_011_01_4.html", null ],
     [ "moonray::rndr::SnapshotDeltaAovFloatN< 2 >", "structmoonray_1_1rndr_1_1_snapshot_delta_aov_float_n_3_012_01_4.html", null ],
     [ "moonray::rndr::SnapshotDeltaAovFloatN< 3 >", "structmoonray_1_1rndr_1_1_snapshot_delta_aov_float_n_3_013_01_4.html", null ],
     [ "moonray::rndr::SnapshotDeltaAovFloatN< 4 >", "structmoonray_1_1rndr_1_1_snapshot_delta_aov_float_n_3_014_01_4.html", null ],
+    [ "scene_rdl2::fb_util::SnapshotUtil", "classscene__rdl2_1_1fb__util_1_1_snapshot_util.html", null ],
     [ "moonray::stats::Socket", "classmoonray_1_1stats_1_1_socket.html", null ],
     [ "moonray::pbr::DebugRayBuilder::SortChildren", "structmoonray_1_1pbr_1_1_debug_ray_builder_1_1_sort_children.html", null ],
     [ "moonray::mcrt_common::SortOrder", "structmoonray_1_1mcrt__common_1_1_sort_order.html", null ],
@@ -912,6 +1314,12 @@ var hierarchy =
     [ "moonray::pbr::SpatialTree", "classmoonray_1_1pbr_1_1_spatial_tree.html", null ],
     [ "moonray::pbr::SplitCost", "structmoonray_1_1pbr_1_1_split_cost.html", null ],
     [ "SpMask8", "class_sp_mask8.html", null ],
+    [ "scene_rdl2::fb_util::SrgbF2C", "classscene__rdl2_1_1fb__util_1_1_srgb_f2_c.html", null ],
+    [ "scene_rdl2::fb_util::SrgbF2CLUT", "classscene__rdl2_1_1fb__util_1_1_srgb_f2_c_l_u_t.html", null ],
+    [ "simd::sseb", "structsimd_1_1sseb.html", null ],
+    [ "simd::sseb_t", "structsimd_1_1sseb__t.html", null ],
+    [ "simd::ssef", "structsimd_1_1ssef.html", null ],
+    [ "simd::ssei", "structsimd_1_1ssei.html", null ],
     [ "moonray::shading::StandardAttributes", "classmoonray_1_1shading_1_1_standard_attributes.html", null ],
     [ "StandardChannel", "struct_standard_channel.html", null ],
     [ "moonray::pbr::StartNewDebugRay", "structmoonray_1_1pbr_1_1_start_new_debug_ray.html", null ],
@@ -928,6 +1336,7 @@ var hierarchy =
     [ "StaticHyperGrid< T *, 1, IncomingRange >", "class_static_hyper_grid_3_01_t_01_5_00_011_00_01_incoming_range_01_4.html", null ],
     [ "StaticHyperGrid< T *, Dimensions, IncomingRange >", "class_static_hyper_grid_3_01_t_01_5_00_01_dimensions_00_01_incoming_range_01_4.html", null ],
     [ "StaticHyperGrid< T, 1, IncomingRange >", "class_static_hyper_grid_3_01_t_00_011_00_01_incoming_range_01_4.html", null ],
+    [ "scene_rdl2::util::StaticIsPowerOfTwo< v >", "structscene__rdl2_1_1util_1_1_static_is_power_of_two.html", null ],
     [ "moonray::util::StaticVector< T, N >", "classmoonray_1_1util_1_1_static_vector.html", null ],
     [ "StaticVector< T, N >", "class_static_vector.html", null ],
     [ "moonray::util::StaticVector< BsdfLobe *, maxLobes >", "classmoonray_1_1util_1_1_static_vector.html", null ],
@@ -936,6 +1345,9 @@ var hierarchy =
     [ "moonray::pbr::Statistics", "classmoonray_1_1pbr_1_1_statistics.html", null ],
     [ "moonray::mcrt_rt_computation::StatisticsBusyMessage", "classmoonray_1_1mcrt__rt__computation_1_1_statistics_busy_message.html", null ],
     [ "moonray::mcrt_rt_computation::StatisticsPrimaryRayTotal", "classmoonray_1_1mcrt__rt__computation_1_1_statistics_primary_ray_total.html", null ],
+    [ "scene_rdl2::alloc::LocalUntypedMemPool< BLOCK_TYPE >::Stats", "structscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool_1_1_stats.html", null ],
+    [ "py_scene_rdl2::StdVectorWrapper< T >", "classpy__scene__rdl2_1_1_std_vector_wrapper.html", null ],
+    [ "scene_rdl2::math::StepTy", "structscene__rdl2_1_1math_1_1_step_ty.html", null ],
     [ "moonray::geom::internal::StitchPoint", "structmoonray_1_1geom_1_1internal_1_1_stitch_point.html", null ],
     [ "anonymous_namespace{test_ring_buffer.cc}::StopWatch", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_stop_watch.html", null ],
     [ "Strata", "class_strata.html", null ],
@@ -968,9 +1380,22 @@ var hierarchy =
     [ "CppUnit::TestCase", null, [
       [ "TestAlignedElementArray", "class_test_aligned_element_array.html", null ],
       [ "TestAtomicFunctions", "class_test_atomic_functions.html", null ],
+      [ "TestCommonColorSpace", "class_test_common_color_space.html", null ],
+      [ "TestCommonMath", "class_test_common_math.html", null ],
+      [ "TestCommonMathColor", "class_test_common_math_color.html", null ],
+      [ "TestCommonMathMat3", "class_test_common_math_mat3.html", null ],
+      [ "TestCommonMathMat4", "class_test_common_math_mat4.html", null ],
+      [ "TestCommonMathQuaternion", "class_test_common_math_quaternion.html", null ],
+      [ "TestCommonMathReferenceFrame", "class_test_common_math_reference_frame.html", null ],
+      [ "TestCommonMathVec4", "class_test_common_math_vec4.html", null ],
+      [ "TestCommonMathXform", "class_test_common_math_xform.html", null ],
+      [ "TestCommonSIMD", "class_test_common_s_i_m_d.html", null ],
       [ "TestCommonTime", "class_test_common_time.html", null ],
+      [ "TestCommonUtil", "class_test_common_util.html", null ],
+      [ "TestRandom", "class_test_random.html", null ],
       [ "TestRenderingRT", "class_test_rendering_r_t.html", null ],
       [ "TestRingBuffer", "class_test_ring_buffer.html", null ],
+      [ "TestViewport", "class_test_viewport.html", null ],
       [ "TestWait", "class_test_wait.html", null ]
     ] ],
     [ "anonymous_namespace{test_ring_buffer.cc}::TestDataNoExceptions", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_test_data_no_exceptions.html", [
@@ -1005,7 +1430,54 @@ var hierarchy =
       [ "moonray::shading::unittest::TestEvalAttribute", "classmoonray_1_1shading_1_1unittest_1_1_test_eval_attribute.html", null ],
       [ "moonray::shading::unittest::TestPrimitiveAttribute", "classmoonray_1_1shading_1_1unittest_1_1_test_primitive_attribute.html", null ],
       [ "moonray::shading::unittest::TestShading", "classmoonray_1_1shading_1_1unittest_1_1_test_shading.html", null ],
-      [ "moonray::unittest::TestSceneContext", "classmoonray_1_1unittest_1_1_test_scene_context.html", null ]
+      [ "moonray::unittest::TestSceneContext", "classmoonray_1_1unittest_1_1_test_scene_context.html", null ],
+      [ "scene_rdl2::alloc::TestMemPool", "classscene__rdl2_1_1alloc_1_1_test_mem_pool.html", null ],
+      [ "scene_rdl2::cache::unittest::TestCacheUtil", "classscene__rdl2_1_1cache_1_1unittest_1_1_test_cache_util.html", null ],
+      [ "scene_rdl2::common::math::ispc::unittest::Test", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test.html", null ],
+      [ "scene_rdl2::common::math::ispc::unittest::TestAsA", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_as_a.html", null ],
+      [ "scene_rdl2::common::math::ispc::unittest::TestAutodiff", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_autodiff.html", null ],
+      [ "scene_rdl2::common::math::ispc::unittest::TestCol3", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_col3.html", null ],
+      [ "scene_rdl2::common::math::ispc::unittest::TestCol4", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_col4.html", null ],
+      [ "scene_rdl2::common::math::ispc::unittest::TestColorSpace", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_color_space.html", null ],
+      [ "scene_rdl2::common::math::ispc::unittest::TestConstants", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_constants.html", null ],
+      [ "scene_rdl2::common::math::ispc::unittest::TestMat3", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_mat3.html", null ],
+      [ "scene_rdl2::common::math::ispc::unittest::TestMat4", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_mat4.html", null ],
+      [ "scene_rdl2::common::math::ispc::unittest::TestQuaternion", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_quaternion.html", null ],
+      [ "scene_rdl2::common::math::ispc::unittest::TestRandom", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_random.html", null ],
+      [ "scene_rdl2::common::math::ispc::unittest::TestReferenceFrame", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_reference_frame.html", null ],
+      [ "scene_rdl2::common::math::ispc::unittest::TestVec2", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_vec2.html", null ],
+      [ "scene_rdl2::common::math::ispc::unittest::TestVec3", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_vec3.html", null ],
+      [ "scene_rdl2::common::math::ispc::unittest::TestVec4", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_vec4.html", null ],
+      [ "scene_rdl2::common::math::ispc::unittest::TestXform", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_xform.html", null ],
+      [ "scene_rdl2::common::math::ispc::unittest::TestXformv", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_xformv.html", null ],
+      [ "scene_rdl2::fb_util::unittest::TestPixelBuffer", "classscene__rdl2_1_1fb__util_1_1unittest_1_1_test_pixel_buffer.html", null ],
+      [ "scene_rdl2::fb_util::unittest::TestRunningStats", "classscene__rdl2_1_1fb__util_1_1unittest_1_1_test_running_stats.html", null ],
+      [ "scene_rdl2::fb_util::unittest::TestSnapshotUtil", "classscene__rdl2_1_1fb__util_1_1unittest_1_1_test_snapshot_util.html", null ],
+      [ "scene_rdl2::grid_util::unittest::TestArg", "classscene__rdl2_1_1grid__util_1_1unittest_1_1_test_arg.html", null ],
+      [ "scene_rdl2::grid_util::unittest::TestParser", "classscene__rdl2_1_1grid__util_1_1unittest_1_1_test_parser.html", null ],
+      [ "scene_rdl2::grid_util::unittest::TestParser", "classscene__rdl2_1_1grid__util_1_1unittest_1_1_test_parser.html", null ],
+      [ "scene_rdl2::grid_util::unittest::TestSha1", "classscene__rdl2_1_1grid__util_1_1unittest_1_1_test_sha1.html", null ],
+      [ "scene_rdl2::pbr::TestArray2D", "classscene__rdl2_1_1pbr_1_1_test_array2_d.html", null ],
+      [ "scene_rdl2::pbr::TestAtomicFloat", "classscene__rdl2_1_1pbr_1_1_test_atomic_float.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestAscii", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_ascii.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestAttribute", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_attribute.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestAttributeKey", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_attribute_key.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestBinary", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_binary.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestDso", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_dso.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestDsoFinder", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_dso_finder.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestJoint", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_joint.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestLayer", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_layer.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestProxies", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_proxies.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestRenderOutput", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_render_output.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestSceneClass", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_scene_class.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestSceneContext", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_scene_context.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestSceneObject", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_scene_object.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestSets", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_sets.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestSplit", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_split.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestTraceSet", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_trace_set.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestTypes", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_types.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestUserData", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_user_data.html", null ],
+      [ "scene_rdl2::rdl2::unittest::TestValueContainer", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_value_container.html", null ]
     ] ],
     [ "moonray::pbr::TestPoint", "structmoonray_1_1pbr_1_1_test_point.html", null ],
     [ "moonray::shading::TestRender", "classmoonray_1_1shading_1_1_test_render.html", null ],
@@ -1017,7 +1489,14 @@ var hierarchy =
     [ "moonray::time::Ticker< T >", "classmoonray_1_1time_1_1_ticker.html", null ],
     [ "moonray::mcrt_common::Ticks", "structmoonray_1_1mcrt__common_1_1_ticks.html", null ],
     [ "moonray::time::TicksPerSecond", "classmoonray_1_1time_1_1_ticks_per_second.html", null ],
+    [ "scene_rdl2::fb_util::Tile", "structscene__rdl2_1_1fb__util_1_1_tile.html", null ],
+    [ "scene_rdl2::fb_util::TileExtrapolation", "classscene__rdl2_1_1fb__util_1_1_tile_extrapolation.html", null ],
+    [ "scene_rdl2::fb_util::TileExtrapolationPhase", "classscene__rdl2_1_1fb__util_1_1_tile_extrapolation_phase.html", null ],
+    [ "scene_rdl2::fb_util::TileExtrapolationPhaseManager", "classscene__rdl2_1_1fb__util_1_1_tile_extrapolation_phase_manager.html", null ],
+    [ "scene_rdl2::fb_util::TileExtrapolationPix", "classscene__rdl2_1_1fb__util_1_1_tile_extrapolation_pix.html", null ],
+    [ "scene_rdl2::fb_util::TileExtrapolationTile", "classscene__rdl2_1_1fb__util_1_1_tile_extrapolation_tile.html", null ],
     [ "moonray::rndr::TileGroup", "structmoonray_1_1rndr_1_1_tile_group.html", null ],
+    [ "scene_rdl2::fb_util::Tiler", "classscene__rdl2_1_1fb__util_1_1_tiler.html", null ],
     [ "moonray::rndr::TileSampleSpecialEvent", "classmoonray_1_1rndr_1_1_tile_sample_special_event.html", null ],
     [ "moonray::rndr::TileScheduler", "classmoonray_1_1rndr_1_1_tile_scheduler.html", [
       [ "moonray::rndr::BottomTileScheduler", "classmoonray_1_1rndr_1_1_bottom_tile_scheduler.html", null ],
@@ -1030,8 +1509,13 @@ var hierarchy =
       [ "moonray::rndr::TopTileScheduler", "classmoonray_1_1rndr_1_1_top_tile_scheduler.html", null ]
     ] ],
     [ "moonray::rndr::TileWorkQueue", "classmoonray_1_1rndr_1_1_tile_work_queue.html", null ],
+    [ "scene_rdl2::pbr::detail::TimeBomb< numCopies >", "classscene__rdl2_1_1pbr_1_1detail_1_1_time_bomb.html", null ],
     [ "moonray::time::Timer< T >", "classmoonray_1_1time_1_1_timer.html", null ],
+    [ "scene_rdl2::rdl2::TimeRescalingCoeffs", "structscene__rdl2_1_1rdl2_1_1_time_rescaling_coeffs.html", null ],
     [ "moonray::mcrt_common::TLSInitParams", "structmoonray_1_1mcrt__common_1_1_t_l_s_init_params.html", null ],
+    [ "scene_rdl2::alloc::anonymous_namespace{TestMemPool.cc}::TLSProxy", "structscene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03_1_1_t_l_s_proxy.html", null ],
+    [ "scene_rdl2::alloc::anonymous_namespace{TestMemPool.cc}::TLState", "structscene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03_1_1_t_l_state.html", null ],
+    [ "scene_rdl2::grid_util::TlSvr", "classscene__rdl2_1_1grid__util_1_1_tl_svr.html", null ],
     [ "moonray::util::Tokenizer", "classmoonray_1_1util_1_1_tokenizer.html", null ],
     [ "moonray::geom::internal::TopologyIdLookup", "classmoonray_1_1geom_1_1internal_1_1_topology_id_lookup.html", [
       [ "moonray::geom::internal::PolyTopologyIdLookup", "classmoonray_1_1geom_1_1internal_1_1_poly_topology_id_lookup.html", null ],
@@ -1046,13 +1530,42 @@ var hierarchy =
     [ "moonray::shading::TransmissionCookTorranceEnergyCompensation", "classmoonray_1_1shading_1_1_transmission_cook_torrance_energy_compensation.html", null ],
     [ "moonray::pbr::DirTree::Tree", "structmoonray_1_1pbr_1_1_dir_tree_1_1_tree.html", null ],
     [ "std::true_type", null, [
+      [ "fauxstd::detail::And<>", "structfauxstd_1_1detail_1_1_and_3_4.html", null ],
       [ "is_search_result< SearchResult >", "structis__search__result_3_01_search_result_01_4.html", null ],
       [ "is_search_result< SearchResult >", "structis__search__result_3_01_search_result_01_4.html", null ],
       [ "moonray::util::IsIterator< T, AEAImpl::void_t< typename std::iterator_traits< T >::iterator_category > >", "structmoonray_1_1util_1_1_is_iterator_3_01_t_00_01_a_e_a_impl_1_1void__t_3_01typename_01std_1_1ibd441f100c96e25f8774a67e0407ee21.html", null ]
     ] ],
+    [ "scene_rdl2::util::TrueTy", "structscene__rdl2_1_1util_1_1_true_ty.html", null ],
+    [ "scene_rdl2::math::TwoPiTy", "structscene__rdl2_1_1math_1_1_two_pi_ty.html", null ],
+    [ "std::conditional::type", null, [
+      [ "fauxstd::detail::And< B1, B2, B3, Bn... >", "structfauxstd_1_1detail_1_1_and_3_01_b1_00_01_b2_00_01_b3_00_01_bn_8_8_8_01_4.html", null ]
+    ] ],
+    [ "std::conditional::type", null, [
+      [ "fauxstd::detail::And< B1, B2 >", "structfauxstd_1_1detail_1_1_and_3_01_b1_00_01_b2_01_4.html", null ]
+    ] ],
+    [ "anonymous_namespace{test_util.cc}::TypeAlignmentPolicy", "structanonymous__namespace_02test__util_8cc_03_1_1_type_alignment_policy.html", null ],
+    [ "scene_rdl2::alloc::TypedStaticallySizedMemoryPool< T >", "classscene__rdl2_1_1alloc_1_1_typed_statically_sized_memory_pool.html", null ],
+    [ "scene_rdl2::alloc::TypedStaticallySizedMemoryPool< float >", "classscene__rdl2_1_1alloc_1_1_typed_statically_sized_memory_pool.html", null ],
+    [ "scene_rdl2::alloc::TypedStaticallySizedMemoryPool< moonray::rndr::AdaptiveRegionTree::Node >", "classscene__rdl2_1_1alloc_1_1_typed_statically_sized_memory_pool.html", null ],
+    [ "scene_rdl2::alloc::TypedStaticallySizedPoolAllocator< T >", "classscene__rdl2_1_1alloc_1_1_typed_statically_sized_pool_allocator.html", null ],
+    [ "scene_rdl2::alloc::TypedStaticalySizedMemoryPoolRAII< T >", "classscene__rdl2_1_1alloc_1_1_typed_staticaly_sized_memory_pool_r_a_i_i.html", null ],
     [ "moonray::shading::UdimTexture", "classmoonray_1_1shading_1_1_udim_texture.html", null ],
+    [ "scene_rdl2::math::UlpTy", "structscene__rdl2_1_1math_1_1_ulp_ty.html", null ],
+    [ "scene_rdl2::rdl2::anonymous_namespace{AsciiReader.cc}::anonymous_namespace{AsciiReader.cc}::Undef", "structscene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1anonymous__namespace473350620376eb28537bfe076655a45a.html", null ],
+    [ "scene_rdl2::StatisticalTestSuite::UniformCDFContinuous< T >", "classscene__rdl2_1_1_statistical_test_suite_1_1_uniform_c_d_f_continuous.html", null ],
+    [ "scene_rdl2::StatisticalTestSuite::UniformCDFDiscrete< T >", "classscene__rdl2_1_1_statistical_test_suite_1_1_uniform_c_d_f_discrete.html", null ],
     [ "moonray::geom::internal::MotionTransform::UninitializedData", "classmoonray_1_1geom_1_1internal_1_1_motion_transform_1_1_uninitialized_data.html", null ],
+    [ "scene_rdl2::rdl2::SceneObject::UpdateGuard", "classscene__rdl2_1_1rdl2_1_1_scene_object_1_1_update_guard.html", null ],
+    [ "scene_rdl2::rdl2::UpdateHelper", "classscene__rdl2_1_1rdl2_1_1_update_helper.html", null ],
     [ "moonray::rndr::UpdateSentinel", "classmoonray_1_1rndr_1_1_update_sentinel.html", null ],
+    [ "scene_rdl2::rdl2::ValueContainerDeq", "classscene__rdl2_1_1rdl2_1_1_value_container_deq.html", [
+      [ "scene_rdl2::cache::CacheDequeue", "classscene__rdl2_1_1cache_1_1_cache_dequeue.html", null ]
+    ] ],
+    [ "scene_rdl2::rdl2::ValueContainerEnq", "classscene__rdl2_1_1rdl2_1_1_value_container_enq.html", [
+      [ "scene_rdl2::cache::CacheEnqueue", "classscene__rdl2_1_1cache_1_1_cache_enqueue.html", null ]
+    ] ],
+    [ "scene_rdl2::rdl2::ValueContainerUtil", "classscene__rdl2_1_1rdl2_1_1_value_container_util.html", null ],
+    [ "scene_rdl2::fb_util::VariablePixelBuffer", "classscene__rdl2_1_1fb__util_1_1_variable_pixel_buffer.html", null ],
     [ "VarianceAOVMap", "class_variance_a_o_v_map.html", null ],
     [ "moonray::geom::VdbVolume::VdbInitData", "structmoonray_1_1geom_1_1_vdb_volume_1_1_vdb_init_data.html", null ],
     [ "moonray::geom::internal::VDBSampler< GridType >", "structmoonray_1_1geom_1_1internal_1_1_v_d_b_sampler.html", null ],
@@ -1063,6 +1576,13 @@ var hierarchy =
     [ "moonray::geom::internal::VDBSampler< openvdb::Vec3SGrid >", "structmoonray_1_1geom_1_1internal_1_1_v_d_b_sampler.html", null ],
     [ "moonray::geom::internal::VDBVelocity", "classmoonray_1_1geom_1_1internal_1_1_v_d_b_velocity.html", null ],
     [ "moonray::geom::internal::VdbVolumeData", "structmoonray_1_1geom_1_1internal_1_1_vdb_volume_data.html", null ],
+    [ "scene_rdl2::math::Vec2< T >", "structscene__rdl2_1_1math_1_1_vec2.html", null ],
+    [ "scene_rdl2::math::Vec2< float >", "structscene__rdl2_1_1math_1_1_vec2.html", null ],
+    [ "scene_rdl2::math::Vec3< T >", "structscene__rdl2_1_1math_1_1_vec3.html", null ],
+    [ "scene_rdl2::math::Vec3< float >", "structscene__rdl2_1_1math_1_1_vec3.html", null ],
+    [ "scene_rdl2::math::Vec3< int >", "structscene__rdl2_1_1math_1_1_vec3.html", null ],
+    [ "scene_rdl2::math::Vec3ba", "structscene__rdl2_1_1math_1_1_vec3ba.html", null ],
+    [ "scene_rdl2::math::Vec4< T >", "structscene__rdl2_1_1math_1_1_vec4.html", null ],
     [ "moonray::shading::VelvetAlbedo", "classmoonray_1_1shading_1_1_velvet_albedo.html", null ],
     [ "moonray::geom::internal::VolumeAssignment", "structmoonray_1_1geom_1_1internal_1_1_volume_assignment.html", null ],
     [ "moonray::geom::internal::VolumeAssignmentTable", "classmoonray_1_1geom_1_1internal_1_1_volume_assignment_table.html", null ],
@@ -1088,6 +1608,16 @@ var hierarchy =
     [ "Wildcard", "struct_wildcard.html", null ],
     [ "anonymous_namespace{test_ring_buffer.cc}::WorkDistributor< IntType >", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_work_distributor.html", null ],
     [ "WrappedDistanceSquared< D >", "struct_wrapped_distance_squared.html", null ],
+    [ "boost::python::wrapper", null, [
+      [ "py_scene_rdl2::PyGeometry", "classpy__scene__rdl2_1_1_py_geometry.html", null ]
+    ] ],
     [ "moonray::shading::Xform", "classmoonray_1_1shading_1_1_xform.html", null ],
-    [ "moonray::pbr::XPUAcceleratorQueue< EntryType >", "classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html", null ]
+    [ "scene_rdl2::math::XformComponent< L >", "structscene__rdl2_1_1math_1_1_xform_component.html", null ],
+    [ "scene_rdl2::math::XformComponent< Mat3f >", "structscene__rdl2_1_1math_1_1_xform_component.html", null ],
+    [ "scene_rdl2::math::XformComponent< scene_rdl2::math::Mat3 >", "structscene__rdl2_1_1math_1_1_xform_component.html", null ],
+    [ "scene_rdl2::math::XformT< L >", "structscene__rdl2_1_1math_1_1_xform_t.html", null ],
+    [ "scene_rdl2::math::XformT< Mat3f >", "structscene__rdl2_1_1math_1_1_xform_t.html", null ],
+    [ "xmm_mm_union", "unionxmm__mm__union.html", null ],
+    [ "moonray::pbr::XPUAcceleratorQueue< EntryType >", "classmoonray_1_1pbr_1_1_x_p_u_accelerator_queue.html", null ],
+    [ "scene_rdl2::math::ZeroTy", "structscene__rdl2_1_1math_1_1_zero_ty.html", null ]
 ];

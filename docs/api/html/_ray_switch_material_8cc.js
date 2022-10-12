@@ -1,8 +1,8 @@
 var _ray_switch_material_8cc =
 [
-    [ "ior", "_ray_switch_material_8cc.html#a2c3d7201cc33b39ba638e0d97a3f54e3", null ],
-    [ "presence", "_ray_switch_material_8cc.html#a292943d9fba2379152bfc81d81a5bf0b", null ],
-    [ "raySwitch", "_ray_switch_material_8cc.html#ad214b16e60d3c54fb09c8d3a08a12df4", null ],
+    [ "ior", "_ray_switch_material_8cc.html#a94dd683df05e6152dc188b8a6b1f3bc5", null ],
+    [ "presence", "_ray_switch_material_8cc.html#af265822a39adf7ee1f39ba67d97b1702", null ],
+    [ "raySwitch", "_ray_switch_material_8cc.html#ab6df3a54c3a75c62e3566585898eb176", null ],
     [ "RaySwitchMaterial", "_ray_switch_material_8cc.html#a5cef66a24b4156372d669b86981cf0de", null ],
     [ "shade", "_ray_switch_material_8cc.html#ace9c5b20bbf47da39e211ce3fac3864d", null ],
     [ "update", "_ray_switch_material_8cc.html#af9f317a6530155acd7adfb119bed731c", null ],

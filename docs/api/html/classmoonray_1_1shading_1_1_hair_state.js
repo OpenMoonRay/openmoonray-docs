@@ -5,7 +5,7 @@ var classmoonray_1_1shading_1_1_hair_state =
     [ "HairState", "classmoonray_1_1shading_1_1_hair_state.html#a2d1839f513f3be65916422ce4ec0f821", null ],
     [ "~HairState", "classmoonray_1_1shading_1_1_hair_state.html#a7a2470b8322acf7da28b2b5b08d0ceaf", null ],
     [ "absorptionTerm", "classmoonray_1_1shading_1_1_hair_state.html#a1aeba5426e746b76c3e39189757d753c", null ],
-    [ "calculateAbsorptionTerm", "classmoonray_1_1shading_1_1_hair_state.html#ab4d21bb772a3a8934edc48c70209620e", null ],
+    [ "calculateAbsorptionTerm", "classmoonray_1_1shading_1_1_hair_state.html#a599acf240674ba3e69c4284fbf494185", null ],
     [ "calculateAbsorptionTerm", "classmoonray_1_1shading_1_1_hair_state.html#ab1a820ee9d61e1d09481d364eb236498", null ],
     [ "calculateHairFrame", "classmoonray_1_1shading_1_1_hair_state.html#a4c01a3dc6dbbb55ebde552f31f49dddd", null ],
     [ "computeAngles", "classmoonray_1_1shading_1_1_hair_state.html#a375fc14edefc221bf7d306a0b4586eff", null ],

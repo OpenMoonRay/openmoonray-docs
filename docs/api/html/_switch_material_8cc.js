@@ -1,7 +1,7 @@
 var _switch_material_8cc =
 [
-    [ "ior", "_switch_material_8cc.html#acaabe6276d4a24ad65d2ae84ff11ac9c", null ],
-    [ "presence", "_switch_material_8cc.html#ab85685f4248f93f8138bd2ce9ea7e7bb", null ],
+    [ "ior", "_switch_material_8cc.html#a94dd683df05e6152dc188b8a6b1f3bc5", null ],
+    [ "presence", "_switch_material_8cc.html#af265822a39adf7ee1f39ba67d97b1702", null ],
     [ "shade", "_switch_material_8cc.html#ace9c5b20bbf47da39e211ce3fac3864d", null ],
     [ "SwitchMaterial", "_switch_material_8cc.html#acf1d487b4e797da6caa0882b7c867721", null ],
     [ "update", "_switch_material_8cc.html#acd36d7881ea8503d5c5824e7a5ad6c7e", null ],

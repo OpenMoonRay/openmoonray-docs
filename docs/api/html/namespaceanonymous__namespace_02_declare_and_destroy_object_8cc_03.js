@@ -1,0 +1,4 @@
+var namespaceanonymous__namespace_02_declare_and_destroy_object_8cc_03 =
+[
+    [ "DeclareAndDestroyObject", "classanonymous__namespace_02_declare_and_destroy_object_8cc_03_1_1_declare_and_destroy_object.html", "classanonymous__namespace_02_declare_and_destroy_object_8cc_03_1_1_declare_and_destroy_object" ]
+];

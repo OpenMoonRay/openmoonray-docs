@@ -1,7 +1,22 @@
 var annotated_dup =
 [
+    [ "af_detail", "namespaceaf__detail.html", [
+      [ "atomic_fp", "classaf__detail_1_1atomic__fp.html", "classaf__detail_1_1atomic__fp" ]
+    ] ],
+    [ "anonymous_namespace{DeclareAndCreateObject.cc}", "namespaceanonymous__namespace_02_declare_and_create_object_8cc_03.html", [
+      [ "DeclareAndCreateObject", "classanonymous__namespace_02_declare_and_create_object_8cc_03_1_1_declare_and_create_object.html", "classanonymous__namespace_02_declare_and_create_object_8cc_03_1_1_declare_and_create_object" ]
+    ] ],
+    [ "anonymous_namespace{DeclareAndDestroyObject.cc}", "namespaceanonymous__namespace_02_declare_and_destroy_object_8cc_03.html", [
+      [ "DeclareAndDestroyObject", "classanonymous__namespace_02_declare_and_destroy_object_8cc_03_1_1_declare_and_destroy_object.html", "classanonymous__namespace_02_declare_and_destroy_object_8cc_03_1_1_declare_and_destroy_object" ]
+    ] ],
     [ "anonymous_namespace{RampControl.cc}", "namespaceanonymous__namespace_02_ramp_control_8cc_03.html", [
       [ "RampCv", "structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html", "structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv" ]
+    ] ],
+    [ "anonymous_namespace{rdl2_json_exporter.cc}", "namespaceanonymous__namespace_02rdl2__json__exporter_8cc_03.html", [
+      [ "GeneratorData", "structanonymous__namespace_02rdl2__json__exporter_8cc_03_1_1_generator_data.html", "structanonymous__namespace_02rdl2__json__exporter_8cc_03_1_1_generator_data" ]
+    ] ],
+    [ "anonymous_namespace{rdl2_print.cc}", "namespaceanonymous__namespace_02rdl2__print_8cc_03.html", [
+      [ "Options", "structanonymous__namespace_02rdl2__print_8cc_03_1_1_options.html", "structanonymous__namespace_02rdl2__print_8cc_03_1_1_options" ]
     ] ],
     [ "anonymous_namespace{test_ring_buffer.cc}", "namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html", [
       [ "BatchInsertCompleteRandomAccessIterator", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_complete_random_access_iterator.html", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_complete_random_access_iterator" ],
@@ -25,6 +40,15 @@ var annotated_dup =
       [ "TestException", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_test_exception.html", null ],
       [ "WorkDistributor", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_work_distributor.html", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_work_distributor" ]
     ] ],
+    [ "anonymous_namespace{test_util.cc}", "namespaceanonymous__namespace_02test__util_8cc_03.html", [
+      [ "BasicType", "structanonymous__namespace_02test__util_8cc_03_1_1_basic_type.html", "structanonymous__namespace_02test__util_8cc_03_1_1_basic_type" ],
+      [ "ConstantHash", "structanonymous__namespace_02test__util_8cc_03_1_1_constant_hash.html", "structanonymous__namespace_02test__util_8cc_03_1_1_constant_hash" ],
+      [ "DefaultAlignmentPolicy", "structanonymous__namespace_02test__util_8cc_03_1_1_default_alignment_policy.html", "structanonymous__namespace_02test__util_8cc_03_1_1_default_alignment_policy" ],
+      [ "MoveOnly", "structanonymous__namespace_02test__util_8cc_03_1_1_move_only.html", "structanonymous__namespace_02test__util_8cc_03_1_1_move_only" ],
+      [ "MyContainer", "classanonymous__namespace_02test__util_8cc_03_1_1_my_container.html", "classanonymous__namespace_02test__util_8cc_03_1_1_my_container" ],
+      [ "PoorHash", "structanonymous__namespace_02test__util_8cc_03_1_1_poor_hash.html", "structanonymous__namespace_02test__util_8cc_03_1_1_poor_hash" ],
+      [ "TypeAlignmentPolicy", "structanonymous__namespace_02test__util_8cc_03_1_1_type_alignment_policy.html", "structanonymous__namespace_02test__util_8cc_03_1_1_type_alignment_policy" ]
+    ] ],
     [ "anonymous_namespace{test_wait.cc}", "namespaceanonymous__namespace_02test__wait_8cc_03.html", [
       [ "IncrementHelper", "structanonymous__namespace_02test__wait_8cc_03_1_1_increment_helper.html", null ],
       [ "IncrementHelper< false >", "structanonymous__namespace_02test__wait_8cc_03_1_1_increment_helper_3_01false_01_4.html", "structanonymous__namespace_02test__wait_8cc_03_1_1_increment_helper_3_01false_01_4" ],
@@ -40,10 +64,42 @@ var annotated_dup =
     [ "anonymous_namespace{TestEvalAttribute.cc}", "namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html", [
       [ "SceneSetup", "classanonymous__namespace_02_test_eval_attribute_8cc_03_1_1_scene_setup.html", "classanonymous__namespace_02_test_eval_attribute_8cc_03_1_1_scene_setup" ]
     ] ],
+    [ "anonymous_namespace{TestRandom.cc}", "namespaceanonymous__namespace_02_test_random_8cc_03.html", [
+      [ "BoundIntRangeCheckRandomTraits", "structanonymous__namespace_02_test_random_8cc_03_1_1_bound_int_range_check_random_traits.html", "structanonymous__namespace_02_test_random_8cc_03_1_1_bound_int_range_check_random_traits" ],
+      [ "DoubleCheckRandomTraits", "structanonymous__namespace_02_test_random_8cc_03_1_1_double_check_random_traits.html", "structanonymous__namespace_02_test_random_8cc_03_1_1_double_check_random_traits" ],
+      [ "FloatCheckRandomTraits", "structanonymous__namespace_02_test_random_8cc_03_1_1_float_check_random_traits.html", "structanonymous__namespace_02_test_random_8cc_03_1_1_float_check_random_traits" ],
+      [ "FullIntRangeCheckRandomTraits", "structanonymous__namespace_02_test_random_8cc_03_1_1_full_int_range_check_random_traits.html", "structanonymous__namespace_02_test_random_8cc_03_1_1_full_int_range_check_random_traits" ]
+    ] ],
     [ "detail", "namespacedetail.html", [
       [ "AreEqual", "structdetail_1_1_are_equal.html", "structdetail_1_1_are_equal" ],
       [ "ContainedType", "structdetail_1_1_contained_type.html", "structdetail_1_1_contained_type" ],
       [ "ContainedType< T >", "structdetail_1_1_contained_type_3_01_t_01_4.html", "structdetail_1_1_contained_type_3_01_t_01_4" ]
+    ] ],
+    [ "fauxstd", "namespacefauxstd.html", [
+      [ "detail", "namespacefauxstd_1_1detail.html", [
+        [ "And", "structfauxstd_1_1detail_1_1_and.html", null ],
+        [ "And< B1 >", "structfauxstd_1_1detail_1_1_and_3_01_b1_01_4.html", null ],
+        [ "And< B1, B2 >", "structfauxstd_1_1detail_1_1_and_3_01_b1_00_01_b2_01_4.html", null ],
+        [ "And< B1, B2, B3, Bn... >", "structfauxstd_1_1detail_1_1_and_3_01_b1_00_01_b2_00_01_b3_00_01_bn_8_8_8_01_4.html", null ],
+        [ "And<>", "structfauxstd_1_1detail_1_1_and_3_4.html", null ],
+        [ "BuildIndexTuple", "structfauxstd_1_1detail_1_1_build_index_tuple.html", "structfauxstd_1_1detail_1_1_build_index_tuple" ],
+        [ "BuildIndexTuple< 0 >", "structfauxstd_1_1detail_1_1_build_index_tuple_3_010_01_4.html", "structfauxstd_1_1detail_1_1_build_index_tuple_3_010_01_4" ],
+        [ "has_is_always_equal", "structfauxstd_1_1detail_1_1has__is__always__equal.html", "structfauxstd_1_1detail_1_1has__is__always__equal" ],
+        [ "IndexTuple", "structfauxstd_1_1detail_1_1_index_tuple.html", "structfauxstd_1_1detail_1_1_index_tuple" ],
+        [ "is_always_equal_helper", "structfauxstd_1_1detail_1_1is__always__equal__helper.html", "structfauxstd_1_1detail_1_1is__always__equal__helper" ],
+        [ "is_always_equal_helper_dispatched", "structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched.html", null ],
+        [ "is_always_equal_helper_dispatched< T, false >", "structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched_3_01_t_00_01false_01_4.html", "structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched_3_01_t_00_01false_01_4" ],
+        [ "is_always_equal_helper_dispatched< T, true >", "structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched_3_01_t_00_01true_01_4.html", "structfauxstd_1_1detail_1_1is__always__equal__helper__dispatched_3_01_t_00_01true_01_4" ],
+        [ "MakeIntegerSequence", "structfauxstd_1_1detail_1_1_make_integer_sequence.html", null ],
+        [ "MakeIntegerSequence< T, Num, IndexTuple< Idx... > >", "structfauxstd_1_1detail_1_1_make_integer_sequence_3_01_t_00_01_num_00_01_index_tuple_3_01_idx_8_8_8_01_4_01_4.html", "structfauxstd_1_1detail_1_1_make_integer_sequence_3_01_t_00_01_num_00_01_index_tuple_3_01_idx_8_8_8_01_4_01_4" ]
+      ] ],
+      [ "basic_osyncstream", "classfauxstd_1_1basic__osyncstream.html", "classfauxstd_1_1basic__osyncstream" ],
+      [ "basic_syncbuf", "classfauxstd_1_1basic__syncbuf.html", "classfauxstd_1_1basic__syncbuf" ],
+      [ "integer_sequence", "structfauxstd_1_1integer__sequence.html", "structfauxstd_1_1integer__sequence" ],
+      [ "is_always_equal", "structfauxstd_1_1is__always__equal.html", null ],
+      [ "shared_lock", "classfauxstd_1_1shared__lock.html", "classfauxstd_1_1shared__lock" ],
+      [ "shared_mutex", "classfauxstd_1_1shared__mutex.html", "classfauxstd_1_1shared__mutex" ],
+      [ "shared_mutex_pthread", "classfauxstd_1_1shared__mutex__pthread.html", "classfauxstd_1_1shared__mutex__pthread" ]
     ] ],
     [ "lpexp", "namespacelpexp.html", [
       [ "Cat", "classlpexp_1_1_cat.html", "classlpexp_1_1_cat" ],
@@ -803,12 +859,400 @@ var annotated_dup =
       [ "ContainedType", "structppadetail_1_1_contained_type.html", "structppadetail_1_1_contained_type" ],
       [ "ContainedType< T, 1u >", "structppadetail_1_1_contained_type_3_01_t_00_011u_01_4.html", "structppadetail_1_1_contained_type_3_01_t_00_011u_01_4" ]
     ] ],
+    [ "py_scene_rdl2", "namespacepy__scene__rdl2.html", [
+      [ "BoolVectorWrapper", "classpy__scene__rdl2_1_1_bool_vector_wrapper.html", "classpy__scene__rdl2_1_1_bool_vector_wrapper" ],
+      [ "PyAsciiReader", "classpy__scene__rdl2_1_1_py_ascii_reader.html", "classpy__scene__rdl2_1_1_py_ascii_reader" ],
+      [ "PyAsciiWriter", "classpy__scene__rdl2_1_1_py_ascii_writer.html", "classpy__scene__rdl2_1_1_py_ascii_writer" ],
+      [ "PyBinaryReader", "classpy__scene__rdl2_1_1_py_binary_reader.html", "classpy__scene__rdl2_1_1_py_binary_reader" ],
+      [ "PyBinaryWriter", "classpy__scene__rdl2_1_1_py_binary_writer.html", "classpy__scene__rdl2_1_1_py_binary_writer" ],
+      [ "PyGeometry", "classpy__scene__rdl2_1_1_py_geometry.html", "classpy__scene__rdl2_1_1_py_geometry" ],
+      [ "Rdl2PrimitiveTypeWrapper", "classpy__scene__rdl2_1_1_rdl2_primitive_type_wrapper.html", "classpy__scene__rdl2_1_1_rdl2_primitive_type_wrapper" ],
+      [ "SceneObjectVectorWrapper", "classpy__scene__rdl2_1_1_scene_object_vector_wrapper.html", "classpy__scene__rdl2_1_1_scene_object_vector_wrapper" ],
+      [ "StdVectorWrapper", "classpy__scene__rdl2_1_1_std_vector_wrapper.html", "classpy__scene__rdl2_1_1_std_vector_wrapper" ]
+    ] ],
+    [ "rdl2_dso", "namespacerdl2__dso.html", [
+      [ "Rdl2BuiltinClassNameFetcher", "classrdl2__dso_1_1_rdl2_builtin_class_name_fetcher.html", "classrdl2__dso_1_1_rdl2_builtin_class_name_fetcher" ],
+      [ "Rdl2BuiltinClassTargetsFetcher", "classrdl2__dso_1_1_rdl2_builtin_class_targets_fetcher.html", "classrdl2__dso_1_1_rdl2_builtin_class_targets_fetcher" ],
+      [ "Rdl2BuiltinGroupTargetsFetcher", "classrdl2__dso_1_1_rdl2_builtin_group_targets_fetcher.html", "classrdl2__dso_1_1_rdl2_builtin_group_targets_fetcher" ],
+      [ "Rdl2DsoPathExpander", "classrdl2__dso_1_1_rdl2_dso_path_expander.html", "classrdl2__dso_1_1_rdl2_dso_path_expander" ],
+      [ "Rdl2JsonExporterBinFetcher", "classrdl2__dso_1_1_rdl2_json_exporter_bin_fetcher.html", "classrdl2__dso_1_1_rdl2_json_exporter_bin_fetcher" ],
+      [ "Rdl2XclsExporterBinFetcher", "classrdl2__dso_1_1_rdl2_xcls_exporter_bin_fetcher.html", "classrdl2__dso_1_1_rdl2_xcls_exporter_bin_fetcher" ]
+    ] ],
+    [ "rdl2_localize", "namespacerdl2__localize.html", [
+      [ "AttrUpdate", "structrdl2__localize_1_1_attr_update.html", "structrdl2__localize_1_1_attr_update" ],
+      [ "FileCopy", "structrdl2__localize_1_1_file_copy.html", "structrdl2__localize_1_1_file_copy" ],
+      [ "LocalizableAttributes", "classrdl2__localize_1_1_localizable_attributes.html", "classrdl2__localize_1_1_localizable_attributes" ],
+      [ "Localizer", "classrdl2__localize_1_1_localizer.html", "classrdl2__localize_1_1_localizer" ],
+      [ "MinUniqueSuffixMap", "classrdl2__localize_1_1_min_unique_suffix_map.html", "classrdl2__localize_1_1_min_unique_suffix_map" ],
+      [ "PathNode", "structrdl2__localize_1_1_path_node.html", "structrdl2__localize_1_1_path_node" ],
+      [ "PathTree", "classrdl2__localize_1_1_path_tree.html", "classrdl2__localize_1_1_path_tree" ]
+    ] ],
     [ "scene_rdl2", "namespacescene__rdl2.html", [
+      [ "alloc", "namespacescene__rdl2_1_1alloc.html", [
+        [ "anonymous_namespace{TestMemPool.cc}", "namespacescene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03.html", [
+          [ "TLSProxy", "structscene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03_1_1_t_l_s_proxy.html", "structscene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03_1_1_t_l_s_proxy" ],
+          [ "TLState", "structscene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03_1_1_t_l_state.html", "structscene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03_1_1_t_l_state" ]
+        ] ],
+        [ "AlignedAllocator", "classscene__rdl2_1_1alloc_1_1_aligned_allocator.html", "classscene__rdl2_1_1alloc_1_1_aligned_allocator" ],
+        [ "AlignedAllocator< void, alignment >", "classscene__rdl2_1_1alloc_1_1_aligned_allocator_3_01void_00_01alignment_01_4.html", "classscene__rdl2_1_1alloc_1_1_aligned_allocator_3_01void_00_01alignment_01_4" ],
+        [ "Arena", "classscene__rdl2_1_1alloc_1_1_arena.html", "classscene__rdl2_1_1alloc_1_1_arena" ],
+        [ "ArenaAllocator", "classscene__rdl2_1_1alloc_1_1_arena_allocator.html", "classscene__rdl2_1_1alloc_1_1_arena_allocator" ],
+        [ "ArenaBlock", "structscene__rdl2_1_1alloc_1_1_arena_block.html", "structscene__rdl2_1_1alloc_1_1_arena_block" ],
+        [ "ArenaBlockPool", "classscene__rdl2_1_1alloc_1_1_arena_block_pool.html", "classscene__rdl2_1_1alloc_1_1_arena_block_pool" ],
+        [ "FixedArena", "classscene__rdl2_1_1alloc_1_1_fixed_arena.html", "classscene__rdl2_1_1alloc_1_1_fixed_arena" ],
+        [ "LinkedListNode", "structscene__rdl2_1_1alloc_1_1_linked_list_node.html", "structscene__rdl2_1_1alloc_1_1_linked_list_node" ],
+        [ "LocalUntypedMemPool", "classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool.html", "classscene__rdl2_1_1alloc_1_1_local_untyped_mem_pool" ],
+        [ "MemBlock", "classscene__rdl2_1_1alloc_1_1_mem_block.html", "classscene__rdl2_1_1alloc_1_1_mem_block" ],
+        [ "MemBlockManager", "classscene__rdl2_1_1alloc_1_1_mem_block_manager.html", "classscene__rdl2_1_1alloc_1_1_mem_block_manager" ],
+        [ "MemPool", "classscene__rdl2_1_1alloc_1_1_mem_pool.html", "classscene__rdl2_1_1alloc_1_1_mem_pool" ],
+        [ "ScopedArenaMem", "classscene__rdl2_1_1alloc_1_1_scoped_arena_mem.html", "classscene__rdl2_1_1alloc_1_1_scoped_arena_mem" ],
+        [ "ScopedHighArenaMem", "classscene__rdl2_1_1alloc_1_1_scoped_high_arena_mem.html", "classscene__rdl2_1_1alloc_1_1_scoped_high_arena_mem" ],
+        [ "TestMemPool", "classscene__rdl2_1_1alloc_1_1_test_mem_pool.html", "classscene__rdl2_1_1alloc_1_1_test_mem_pool" ],
+        [ "TypedStaticallySizedMemoryPool", "classscene__rdl2_1_1alloc_1_1_typed_statically_sized_memory_pool.html", "classscene__rdl2_1_1alloc_1_1_typed_statically_sized_memory_pool" ],
+        [ "TypedStaticallySizedPoolAllocator", "classscene__rdl2_1_1alloc_1_1_typed_statically_sized_pool_allocator.html", "classscene__rdl2_1_1alloc_1_1_typed_statically_sized_pool_allocator" ],
+        [ "TypedStaticalySizedMemoryPoolRAII", "classscene__rdl2_1_1alloc_1_1_typed_staticaly_sized_memory_pool_r_a_i_i.html", "classscene__rdl2_1_1alloc_1_1_typed_staticaly_sized_memory_pool_r_a_i_i" ]
+      ] ],
+      [ "cache", "namespacescene__rdl2_1_1cache.html", [
+        [ "unittest", "namespacescene__rdl2_1_1cache_1_1unittest.html", [
+          [ "TestCacheUtil", "classscene__rdl2_1_1cache_1_1unittest_1_1_test_cache_util.html", "classscene__rdl2_1_1cache_1_1unittest_1_1_test_cache_util" ]
+        ] ],
+        [ "CacheAllocator", "classscene__rdl2_1_1cache_1_1_cache_allocator.html", "classscene__rdl2_1_1cache_1_1_cache_allocator" ],
+        [ "CacheDequeue", "classscene__rdl2_1_1cache_1_1_cache_dequeue.html", "classscene__rdl2_1_1cache_1_1_cache_dequeue" ],
+        [ "CacheEnqueue", "classscene__rdl2_1_1cache_1_1_cache_enqueue.html", "classscene__rdl2_1_1cache_1_1_cache_enqueue" ],
+        [ "CacheUtil", "classscene__rdl2_1_1cache_1_1_cache_util.html", "classscene__rdl2_1_1cache_1_1_cache_util" ]
+      ] ],
+      [ "common", "namespacescene__rdl2_1_1common.html", [
+        [ "math", "namespacescene__rdl2_1_1common_1_1math.html", [
+          [ "ispc", "namespacescene__rdl2_1_1common_1_1math_1_1ispc.html", [
+            [ "unittest", "namespacescene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest.html", [
+              [ "Test", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test.html", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test" ],
+              [ "TestAsA", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_as_a.html", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_as_a" ],
+              [ "TestAutodiff", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_autodiff.html", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_autodiff" ],
+              [ "TestCol3", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_col3.html", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_col3" ],
+              [ "TestCol4", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_col4.html", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_col4" ],
+              [ "TestColorSpace", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_color_space.html", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_color_space" ],
+              [ "TestConstants", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_constants.html", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_constants" ],
+              [ "TestMat3", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_mat3.html", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_mat3" ],
+              [ "TestMat4", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_mat4.html", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_mat4" ],
+              [ "TestQuaternion", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_quaternion.html", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_quaternion" ],
+              [ "TestRandom", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_random.html", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_random" ],
+              [ "TestReferenceFrame", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_reference_frame.html", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_reference_frame" ],
+              [ "TestVec2", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_vec2.html", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_vec2" ],
+              [ "TestVec3", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_vec3.html", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_vec3" ],
+              [ "TestVec4", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_vec4.html", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_vec4" ],
+              [ "TestXform", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_xform.html", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_xform" ],
+              [ "TestXformv", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_xformv.html", "classscene__rdl2_1_1common_1_1math_1_1ispc_1_1unittest_1_1_test_xformv" ]
+            ] ]
+          ] ]
+        ] ]
+      ] ],
+      [ "except", "namespacescene__rdl2_1_1except.html", [
+        [ "FormatError", "classscene__rdl2_1_1except_1_1_format_error.html", null ],
+        [ "IndexError", "classscene__rdl2_1_1except_1_1_index_error.html", null ],
+        [ "IoError", "classscene__rdl2_1_1except_1_1_io_error.html", null ],
+        [ "KeyError", "classscene__rdl2_1_1except_1_1_key_error.html", null ],
+        [ "NotImplementedError", "classscene__rdl2_1_1except_1_1_not_implemented_error.html", null ],
+        [ "RuntimeError", "classscene__rdl2_1_1except_1_1_runtime_error.html", null ],
+        [ "TypeError", "classscene__rdl2_1_1except_1_1_type_error.html", null ],
+        [ "ValueError", "classscene__rdl2_1_1except_1_1_value_error.html", null ]
+      ] ],
+      [ "fb_util", "namespacescene__rdl2_1_1fb__util.html", [
+        [ "unittest", "namespacescene__rdl2_1_1fb__util_1_1unittest.html", [
+          [ "TestPixelBuffer", "classscene__rdl2_1_1fb__util_1_1unittest_1_1_test_pixel_buffer.html", "classscene__rdl2_1_1fb__util_1_1unittest_1_1_test_pixel_buffer" ],
+          [ "TestRunningStats", "classscene__rdl2_1_1fb__util_1_1unittest_1_1_test_running_stats.html", "classscene__rdl2_1_1fb__util_1_1unittest_1_1_test_running_stats" ],
+          [ "TestSnapshotUtil", "classscene__rdl2_1_1fb__util_1_1unittest_1_1_test_snapshot_util.html", "classscene__rdl2_1_1fb__util_1_1unittest_1_1_test_snapshot_util" ]
+        ] ],
+        [ "ActivePixels", "classscene__rdl2_1_1fb__util_1_1_active_pixels.html", "classscene__rdl2_1_1fb__util_1_1_active_pixels" ],
+        [ "ByteColor", "structscene__rdl2_1_1fb__util_1_1_byte_color.html", "structscene__rdl2_1_1fb__util_1_1_byte_color" ],
+        [ "ByteColor4", "structscene__rdl2_1_1fb__util_1_1_byte_color4.html", "structscene__rdl2_1_1fb__util_1_1_byte_color4" ],
+        [ "GammaF2C", "classscene__rdl2_1_1fb__util_1_1_gamma_f2_c.html", "classscene__rdl2_1_1fb__util_1_1_gamma_f2_c" ],
+        [ "GammaF2CLUT", "classscene__rdl2_1_1fb__util_1_1_gamma_f2_c_l_u_t.html", "classscene__rdl2_1_1fb__util_1_1_gamma_f2_c_l_u_t" ],
+        [ "PixelBuffer", "classscene__rdl2_1_1fb__util_1_1_pixel_buffer.html", "classscene__rdl2_1_1fb__util_1_1_pixel_buffer" ],
+        [ "PixelInfo", "structscene__rdl2_1_1fb__util_1_1_pixel_info.html", "structscene__rdl2_1_1fb__util_1_1_pixel_info" ],
+        [ "ReGammaC2F", "classscene__rdl2_1_1fb__util_1_1_re_gamma_c2_f.html", "classscene__rdl2_1_1fb__util_1_1_re_gamma_c2_f" ],
+        [ "ReGammaC2FLUT", "classscene__rdl2_1_1fb__util_1_1_re_gamma_c2_f_l_u_t.html", "classscene__rdl2_1_1fb__util_1_1_re_gamma_c2_f_l_u_t" ],
+        [ "ReSrgbC2F", "classscene__rdl2_1_1fb__util_1_1_re_srgb_c2_f.html", "classscene__rdl2_1_1fb__util_1_1_re_srgb_c2_f" ],
+        [ "ReSrgbC2FLUT", "classscene__rdl2_1_1fb__util_1_1_re_srgb_c2_f_l_u_t.html", "classscene__rdl2_1_1fb__util_1_1_re_srgb_c2_f_l_u_t" ],
+        [ "RunningStats", "classscene__rdl2_1_1fb__util_1_1_running_stats.html", "classscene__rdl2_1_1fb__util_1_1_running_stats" ],
+        [ "RunningStatsLightWeight", "classscene__rdl2_1_1fb__util_1_1_running_stats_light_weight.html", "classscene__rdl2_1_1fb__util_1_1_running_stats_light_weight" ],
+        [ "RunningStatsLightWeightFulldump", "classscene__rdl2_1_1fb__util_1_1_running_stats_light_weight_fulldump.html", "classscene__rdl2_1_1fb__util_1_1_running_stats_light_weight_fulldump" ],
+        [ "SnapshotUtil", "classscene__rdl2_1_1fb__util_1_1_snapshot_util.html", "classscene__rdl2_1_1fb__util_1_1_snapshot_util" ],
+        [ "SrgbF2C", "classscene__rdl2_1_1fb__util_1_1_srgb_f2_c.html", "classscene__rdl2_1_1fb__util_1_1_srgb_f2_c" ],
+        [ "SrgbF2CLUT", "classscene__rdl2_1_1fb__util_1_1_srgb_f2_c_l_u_t.html", "classscene__rdl2_1_1fb__util_1_1_srgb_f2_c_l_u_t" ],
+        [ "Tile", "structscene__rdl2_1_1fb__util_1_1_tile.html", "structscene__rdl2_1_1fb__util_1_1_tile" ],
+        [ "TileExtrapolation", "classscene__rdl2_1_1fb__util_1_1_tile_extrapolation.html", "classscene__rdl2_1_1fb__util_1_1_tile_extrapolation" ],
+        [ "TileExtrapolationPhase", "classscene__rdl2_1_1fb__util_1_1_tile_extrapolation_phase.html", "classscene__rdl2_1_1fb__util_1_1_tile_extrapolation_phase" ],
+        [ "TileExtrapolationPhaseManager", "classscene__rdl2_1_1fb__util_1_1_tile_extrapolation_phase_manager.html", "classscene__rdl2_1_1fb__util_1_1_tile_extrapolation_phase_manager" ],
+        [ "TileExtrapolationPix", "classscene__rdl2_1_1fb__util_1_1_tile_extrapolation_pix.html", "classscene__rdl2_1_1fb__util_1_1_tile_extrapolation_pix" ],
+        [ "TileExtrapolationTile", "classscene__rdl2_1_1fb__util_1_1_tile_extrapolation_tile.html", "classscene__rdl2_1_1fb__util_1_1_tile_extrapolation_tile" ],
+        [ "Tiler", "classscene__rdl2_1_1fb__util_1_1_tiler.html", "classscene__rdl2_1_1fb__util_1_1_tiler" ],
+        [ "VariablePixelBuffer", "classscene__rdl2_1_1fb__util_1_1_variable_pixel_buffer.html", "classscene__rdl2_1_1fb__util_1_1_variable_pixel_buffer" ]
+      ] ],
+      [ "grid_util", "namespacescene__rdl2_1_1grid__util.html", [
+        [ "unittest", "namespacescene__rdl2_1_1grid__util_1_1unittest.html", [
+          [ "TestArg", "classscene__rdl2_1_1grid__util_1_1unittest_1_1_test_arg.html", "classscene__rdl2_1_1grid__util_1_1unittest_1_1_test_arg" ],
+          [ "TestParser", "classscene__rdl2_1_1grid__util_1_1unittest_1_1_test_parser.html", "classscene__rdl2_1_1grid__util_1_1unittest_1_1_test_parser" ],
+          [ "TestSha1", "classscene__rdl2_1_1grid__util_1_1unittest_1_1_test_sha1.html", "classscene__rdl2_1_1grid__util_1_1unittest_1_1_test_sha1" ]
+        ] ],
+        [ "ActiveBitTable", "classscene__rdl2_1_1grid__util_1_1_active_bit_table.html", "classscene__rdl2_1_1grid__util_1_1_active_bit_table" ],
+        [ "ActiveBitTables", "classscene__rdl2_1_1grid__util_1_1_active_bit_tables.html", "classscene__rdl2_1_1grid__util_1_1_active_bit_tables" ],
+        [ "ActivePixelsArray", "classscene__rdl2_1_1grid__util_1_1_active_pixels_array.html", "classscene__rdl2_1_1grid__util_1_1_active_pixels_array" ],
+        [ "Arg", "classscene__rdl2_1_1grid__util_1_1_arg.html", "classscene__rdl2_1_1grid__util_1_1_arg" ],
+        [ "DebugConsoleDriver", "classscene__rdl2_1_1grid__util_1_1_debug_console_driver.html", "classscene__rdl2_1_1grid__util_1_1_debug_console_driver" ],
+        [ "Fb", "classscene__rdl2_1_1grid__util_1_1_fb.html", "classscene__rdl2_1_1grid__util_1_1_fb" ],
+        [ "FbActivePixels", "classscene__rdl2_1_1grid__util_1_1_fb_active_pixels.html", "classscene__rdl2_1_1grid__util_1_1_fb_active_pixels" ],
+        [ "FbActivePixelsAov", "classscene__rdl2_1_1grid__util_1_1_fb_active_pixels_aov.html", "classscene__rdl2_1_1grid__util_1_1_fb_active_pixels_aov" ],
+        [ "FbAov", "classscene__rdl2_1_1grid__util_1_1_fb_aov.html", "classscene__rdl2_1_1grid__util_1_1_fb_aov" ],
+        [ "FloatValueTracker", "classscene__rdl2_1_1grid__util_1_1_float_value_tracker.html", "classscene__rdl2_1_1grid__util_1_1_float_value_tracker" ],
+        [ "LatencyClockOffset", "classscene__rdl2_1_1grid__util_1_1_latency_clock_offset.html", "classscene__rdl2_1_1grid__util_1_1_latency_clock_offset" ],
+        [ "LatencyItem", "classscene__rdl2_1_1grid__util_1_1_latency_item.html", "classscene__rdl2_1_1grid__util_1_1_latency_item" ],
+        [ "LatencyLog", "classscene__rdl2_1_1grid__util_1_1_latency_log.html", "classscene__rdl2_1_1grid__util_1_1_latency_log" ],
+        [ "LatencyLogUpstream", "classscene__rdl2_1_1grid__util_1_1_latency_log_upstream.html", "classscene__rdl2_1_1grid__util_1_1_latency_log_upstream" ],
+        [ "PackActiveTiles", "classscene__rdl2_1_1grid__util_1_1_pack_active_tiles.html", "classscene__rdl2_1_1grid__util_1_1_pack_active_tiles" ],
+        [ "PackTiles", "classscene__rdl2_1_1grid__util_1_1_pack_tiles.html", "classscene__rdl2_1_1grid__util_1_1_pack_tiles" ],
+        [ "PackTilesImpl", "classscene__rdl2_1_1grid__util_1_1_pack_tiles_impl.html", "classscene__rdl2_1_1grid__util_1_1_pack_tiles_impl" ],
+        [ "PackTilesTest", "classscene__rdl2_1_1grid__util_1_1_pack_tiles_test.html", "classscene__rdl2_1_1grid__util_1_1_pack_tiles_test" ],
+        [ "Parser", "classscene__rdl2_1_1grid__util_1_1_parser.html", "classscene__rdl2_1_1grid__util_1_1_parser" ],
+        [ "ParserItem", "classscene__rdl2_1_1grid__util_1_1_parser_item.html", "classscene__rdl2_1_1grid__util_1_1_parser_item" ],
+        [ "RenderPrepStats", "classscene__rdl2_1_1grid__util_1_1_render_prep_stats.html", "classscene__rdl2_1_1grid__util_1_1_render_prep_stats" ],
+        [ "RunLenBitTable", "classscene__rdl2_1_1grid__util_1_1_run_len_bit_table.html", "classscene__rdl2_1_1grid__util_1_1_run_len_bit_table" ],
+        [ "Sha1Gen", "classscene__rdl2_1_1grid__util_1_1_sha1_gen.html", "classscene__rdl2_1_1grid__util_1_1_sha1_gen" ],
+        [ "Sha1Util", "classscene__rdl2_1_1grid__util_1_1_sha1_util.html", "classscene__rdl2_1_1grid__util_1_1_sha1_util" ],
+        [ "TlSvr", "classscene__rdl2_1_1grid__util_1_1_tl_svr.html", "classscene__rdl2_1_1grid__util_1_1_tl_svr" ]
+      ] ],
+      [ "logging", "namespacescene__rdl2_1_1logging.html", [
+        [ "ColorPatternLayout", "classscene__rdl2_1_1logging_1_1_color_pattern_layout.html", "classscene__rdl2_1_1logging_1_1_color_pattern_layout" ],
+        [ "LogEventRegistry", "classscene__rdl2_1_1logging_1_1_log_event_registry.html", "classscene__rdl2_1_1logging_1_1_log_event_registry" ],
+        [ "Logger", "classscene__rdl2_1_1logging_1_1_logger.html", "classscene__rdl2_1_1logging_1_1_logger" ],
+        [ "LoggerMap", "classscene__rdl2_1_1logging_1_1_logger_map.html", "classscene__rdl2_1_1logging_1_1_logger_map" ],
+        [ "ObjectLogs", "classscene__rdl2_1_1logging_1_1_object_logs.html", "classscene__rdl2_1_1logging_1_1_object_logs" ]
+      ] ],
+      [ "math", "namespacescene__rdl2_1_1math.html", [
+        [ "Array12f", "structscene__rdl2_1_1math_1_1_array12f.html", "structscene__rdl2_1_1math_1_1_array12f" ],
+        [ "BaseViewport", "structscene__rdl2_1_1math_1_1_base_viewport.html", "structscene__rdl2_1_1math_1_1_base_viewport" ],
+        [ "BBox", "structscene__rdl2_1_1math_1_1_b_box.html", "structscene__rdl2_1_1math_1_1_b_box" ],
+        [ "BBox2iIterator", "classscene__rdl2_1_1math_1_1_b_box2i_iterator.html", "classscene__rdl2_1_1math_1_1_b_box2i_iterator" ],
+        [ "Col3", "structscene__rdl2_1_1math_1_1_col3.html", "structscene__rdl2_1_1math_1_1_col3" ],
+        [ "Col4", "structscene__rdl2_1_1math_1_1_col4.html", "structscene__rdl2_1_1math_1_1_col4" ],
+        [ "Color", "structscene__rdl2_1_1math_1_1_color.html", "structscene__rdl2_1_1math_1_1_color" ],
+        [ "Color4", "structscene__rdl2_1_1math_1_1_color4.html", "structscene__rdl2_1_1math_1_1_color4" ],
+        [ "EpsilonTy", "structscene__rdl2_1_1math_1_1_epsilon_ty.html", "structscene__rdl2_1_1math_1_1_epsilon_ty" ],
+        [ "FourPiTy", "structscene__rdl2_1_1math_1_1_four_pi_ty.html", "structscene__rdl2_1_1math_1_1_four_pi_ty" ],
+        [ "HalfOpenViewport", "structscene__rdl2_1_1math_1_1_half_open_viewport.html", "structscene__rdl2_1_1math_1_1_half_open_viewport" ],
+        [ "Mat3", "structscene__rdl2_1_1math_1_1_mat3.html", "structscene__rdl2_1_1math_1_1_mat3" ],
+        [ "Mat4", "structscene__rdl2_1_1math_1_1_mat4.html", "structscene__rdl2_1_1math_1_1_mat4" ],
+        [ "NaNTy", "structscene__rdl2_1_1math_1_1_na_n_ty.html", "structscene__rdl2_1_1math_1_1_na_n_ty" ],
+        [ "NegInfTy", "structscene__rdl2_1_1math_1_1_neg_inf_ty.html", "structscene__rdl2_1_1math_1_1_neg_inf_ty" ],
+        [ "OneOverEpsilonTy", "structscene__rdl2_1_1math_1_1_one_over_epsilon_ty.html", "structscene__rdl2_1_1math_1_1_one_over_epsilon_ty" ],
+        [ "OneOverFourPiTy", "structscene__rdl2_1_1math_1_1_one_over_four_pi_ty.html", "structscene__rdl2_1_1math_1_1_one_over_four_pi_ty" ],
+        [ "OneOverPiTy", "structscene__rdl2_1_1math_1_1_one_over_pi_ty.html", "structscene__rdl2_1_1math_1_1_one_over_pi_ty" ],
+        [ "OneOverTwoPiTy", "structscene__rdl2_1_1math_1_1_one_over_two_pi_ty.html", "structscene__rdl2_1_1math_1_1_one_over_two_pi_ty" ],
+        [ "OneTy", "structscene__rdl2_1_1math_1_1_one_ty.html", "structscene__rdl2_1_1math_1_1_one_ty" ],
+        [ "Permutation", "classscene__rdl2_1_1math_1_1_permutation.html", "classscene__rdl2_1_1math_1_1_permutation" ],
+        [ "PiTy", "structscene__rdl2_1_1math_1_1_pi_ty.html", "structscene__rdl2_1_1math_1_1_pi_ty" ],
+        [ "PosInfTy", "structscene__rdl2_1_1math_1_1_pos_inf_ty.html", "structscene__rdl2_1_1math_1_1_pos_inf_ty" ],
+        [ "QuaternionT", "structscene__rdl2_1_1math_1_1_quaternion_t.html", "structscene__rdl2_1_1math_1_1_quaternion_t" ],
+        [ "ReferenceFrame", "classscene__rdl2_1_1math_1_1_reference_frame.html", "classscene__rdl2_1_1math_1_1_reference_frame" ],
+        [ "StepTy", "structscene__rdl2_1_1math_1_1_step_ty.html", null ],
+        [ "TwoPiTy", "structscene__rdl2_1_1math_1_1_two_pi_ty.html", "structscene__rdl2_1_1math_1_1_two_pi_ty" ],
+        [ "UlpTy", "structscene__rdl2_1_1math_1_1_ulp_ty.html", "structscene__rdl2_1_1math_1_1_ulp_ty" ],
+        [ "Vec2", "structscene__rdl2_1_1math_1_1_vec2.html", "structscene__rdl2_1_1math_1_1_vec2" ],
+        [ "Vec3", "structscene__rdl2_1_1math_1_1_vec3.html", "structscene__rdl2_1_1math_1_1_vec3" ],
+        [ "Vec3ba", "structscene__rdl2_1_1math_1_1_vec3ba.html", "structscene__rdl2_1_1math_1_1_vec3ba" ],
+        [ "Vec4", "structscene__rdl2_1_1math_1_1_vec4.html", "structscene__rdl2_1_1math_1_1_vec4" ],
+        [ "Viewport", "structscene__rdl2_1_1math_1_1_viewport.html", "structscene__rdl2_1_1math_1_1_viewport" ],
+        [ "XformComponent", "structscene__rdl2_1_1math_1_1_xform_component.html", "structscene__rdl2_1_1math_1_1_xform_component" ],
+        [ "XformT", "structscene__rdl2_1_1math_1_1_xform_t.html", "structscene__rdl2_1_1math_1_1_xform_t" ],
+        [ "ZeroTy", "structscene__rdl2_1_1math_1_1_zero_ty.html", "structscene__rdl2_1_1math_1_1_zero_ty" ]
+      ] ],
       [ "mcrt_rt_dispatch_computation", "namespacescene__rdl2_1_1mcrt__rt__dispatch__computation.html", [
         [ "McrtRtDispatchComputationDebugConsole", "classscene__rdl2_1_1mcrt__rt__dispatch__computation_1_1_mcrt_rt_dispatch_computation_debug_console.html", "classscene__rdl2_1_1mcrt__rt__dispatch__computation_1_1_mcrt_rt_dispatch_computation_debug_console" ]
-      ] ]
+      ] ],
+      [ "pbr", "namespacescene__rdl2_1_1pbr.html", [
+        [ "anonymous_namespace{TestArray2D.cc}", "namespacescene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_array2_d_8cc_03.html", [
+          [ "Point2D", "structscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_array2_d_8cc_03_1_1_point2_d.html", "structscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_array2_d_8cc_03_1_1_point2_d" ]
+        ] ],
+        [ "anonymous_namespace{TestAtomicFloat.cc}", "namespacescene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03.html", [
+          [ "AtomicFloatAdditionTester", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_addition_tester.html", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_addition_tester" ],
+          [ "AtomicFloatCASTesterStrong", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_c_a_s_tester_strong.html", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_c_a_s_tester_strong" ],
+          [ "AtomicFloatCASTesterWeak", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_c_a_s_tester_weak.html", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_c_a_s_tester_weak" ]
+        ] ],
+        [ "detail", "namespacescene__rdl2_1_1pbr_1_1detail.html", [
+          [ "TimeBomb", "classscene__rdl2_1_1pbr_1_1detail_1_1_time_bomb.html", "classscene__rdl2_1_1pbr_1_1detail_1_1_time_bomb" ]
+        ] ],
+        [ "TestArray2D", "classscene__rdl2_1_1pbr_1_1_test_array2_d.html", "classscene__rdl2_1_1pbr_1_1_test_array2_d" ],
+        [ "TestAtomicFloat", "classscene__rdl2_1_1pbr_1_1_test_atomic_float.html", "classscene__rdl2_1_1pbr_1_1_test_atomic_float" ]
+      ] ],
+      [ "rdl2", "namespacescene__rdl2_1_1rdl2.html", [
+        [ "anonymous_namespace{AsciiReader.cc}", "namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03.html", [
+          [ "anonymous_namespace{AsciiReader.cc}", "namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1anonymous__namespace_02_ascii_reader_8cc_03.html", [
+            [ "Undef", "structscene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1anonymous__namespace473350620376eb28537bfe076655a45a.html", "structscene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1anonymous__namespace473350620376eb28537bfe076655a45a" ]
+          ] ],
+          [ "LuaPopGuard", "classscene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1_lua_pop_guard.html", "classscene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1_lua_pop_guard" ]
+        ] ],
+        [ "detail", "namespacescene__rdl2_1_1rdl2_1_1detail.html", [
+          [ "ContainerWrapper", "structscene__rdl2_1_1rdl2_1_1detail_1_1_container_wrapper.html", "structscene__rdl2_1_1rdl2_1_1detail_1_1_container_wrapper" ],
+          [ "PointerToConst", "structscene__rdl2_1_1rdl2_1_1detail_1_1_pointer_to_const.html", "structscene__rdl2_1_1rdl2_1_1detail_1_1_pointer_to_const" ],
+          [ "PointerToConst< T * >", "structscene__rdl2_1_1rdl2_1_1detail_1_1_pointer_to_const_3_01_t_01_5_01_4.html", "structscene__rdl2_1_1rdl2_1_1detail_1_1_pointer_to_const_3_01_t_01_5_01_4" ]
+        ] ],
+        [ "unittest", "namespacescene__rdl2_1_1rdl2_1_1unittest.html", [
+          [ "ExtensionTest", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_extension_test.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_extension_test" ],
+          [ "TestAscii", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_ascii.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_ascii" ],
+          [ "TestAttribute", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_attribute.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_attribute" ],
+          [ "TestAttributeKey", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_attribute_key.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_attribute_key" ],
+          [ "TestBinary", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_binary.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_binary" ],
+          [ "TestDso", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_dso.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_dso" ],
+          [ "TestDsoFinder", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_dso_finder.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_dso_finder" ],
+          [ "TestJoint", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_joint.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_joint" ],
+          [ "TestLayer", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_layer.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_layer" ],
+          [ "TestProxies", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_proxies.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_proxies" ],
+          [ "TestRenderOutput", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_render_output.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_render_output" ],
+          [ "TestSceneClass", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_scene_class.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_scene_class" ],
+          [ "TestSceneContext", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_scene_context.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_scene_context" ],
+          [ "TestSceneObject", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_scene_object.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_scene_object" ],
+          [ "TestSets", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_sets.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_sets" ],
+          [ "TestSplit", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_split.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_split" ],
+          [ "TestTraceSet", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_trace_set.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_trace_set" ],
+          [ "TestTypes", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_types.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_types" ],
+          [ "TestUserData", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_user_data.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_user_data" ],
+          [ "TestValueContainer", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_value_container.html", "classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_value_container" ]
+        ] ],
+        [ "AsciiReader", "classscene__rdl2_1_1rdl2_1_1_ascii_reader.html", "classscene__rdl2_1_1rdl2_1_1_ascii_reader" ],
+        [ "AsciiWriter", "classscene__rdl2_1_1rdl2_1_1_ascii_writer.html", "classscene__rdl2_1_1rdl2_1_1_ascii_writer" ],
+        [ "Attribute", "classscene__rdl2_1_1rdl2_1_1_attribute.html", "classscene__rdl2_1_1rdl2_1_1_attribute" ],
+        [ "AttributeKey", "classscene__rdl2_1_1rdl2_1_1_attribute_key.html", "classscene__rdl2_1_1rdl2_1_1_attribute_key" ],
+        [ "BinaryReader", "classscene__rdl2_1_1rdl2_1_1_binary_reader.html", "classscene__rdl2_1_1rdl2_1_1_binary_reader" ],
+        [ "BinaryReaderLayerUnpackStrings", "classscene__rdl2_1_1rdl2_1_1_binary_reader_layer_unpack_strings.html", "classscene__rdl2_1_1rdl2_1_1_binary_reader_layer_unpack_strings" ],
+        [ "BinaryWriter", "classscene__rdl2_1_1rdl2_1_1_binary_writer.html", "classscene__rdl2_1_1rdl2_1_1_binary_writer" ],
+        [ "Camera", "classscene__rdl2_1_1rdl2_1_1_camera.html", "classscene__rdl2_1_1rdl2_1_1_camera" ],
+        [ "CameraProxy", "classscene__rdl2_1_1rdl2_1_1_camera_proxy.html", "classscene__rdl2_1_1rdl2_1_1_camera_proxy" ],
+        [ "Displacement", "classscene__rdl2_1_1rdl2_1_1_displacement.html", "classscene__rdl2_1_1rdl2_1_1_displacement" ],
+        [ "DisplacementProxy", "classscene__rdl2_1_1rdl2_1_1_displacement_proxy.html", "classscene__rdl2_1_1rdl2_1_1_displacement_proxy" ],
+        [ "DisplayFilter", "classscene__rdl2_1_1rdl2_1_1_display_filter.html", "classscene__rdl2_1_1rdl2_1_1_display_filter" ],
+        [ "DisplayFilterProxy", "classscene__rdl2_1_1rdl2_1_1_display_filter_proxy.html", "classscene__rdl2_1_1rdl2_1_1_display_filter_proxy" ],
+        [ "Dso", "classscene__rdl2_1_1rdl2_1_1_dso.html", "classscene__rdl2_1_1rdl2_1_1_dso" ],
+        [ "DsoFinder", "classscene__rdl2_1_1rdl2_1_1_dso_finder.html", "classscene__rdl2_1_1rdl2_1_1_dso_finder" ],
+        [ "DwaBaseHairLayerableProxy", "classscene__rdl2_1_1rdl2_1_1_dwa_base_hair_layerable_proxy.html", "classscene__rdl2_1_1rdl2_1_1_dwa_base_hair_layerable_proxy" ],
+        [ "DwaBaseLayerableProxy", "classscene__rdl2_1_1rdl2_1_1_dwa_base_layerable_proxy.html", "classscene__rdl2_1_1rdl2_1_1_dwa_base_layerable_proxy" ],
+        [ "EnvMap", "classscene__rdl2_1_1rdl2_1_1_env_map.html", "classscene__rdl2_1_1rdl2_1_1_env_map" ],
+        [ "EnvMapProxy", "classscene__rdl2_1_1rdl2_1_1_env_map_proxy.html", "classscene__rdl2_1_1rdl2_1_1_env_map_proxy" ],
+        [ "FilterIndexIterator", "classscene__rdl2_1_1rdl2_1_1_filter_index_iterator.html", "classscene__rdl2_1_1rdl2_1_1_filter_index_iterator" ],
+        [ "Geometry", "classscene__rdl2_1_1rdl2_1_1_geometry.html", "classscene__rdl2_1_1rdl2_1_1_geometry" ],
+        [ "GeometryProxy", "classscene__rdl2_1_1rdl2_1_1_geometry_proxy.html", "classscene__rdl2_1_1rdl2_1_1_geometry_proxy" ],
+        [ "GeometrySet", "classscene__rdl2_1_1rdl2_1_1_geometry_set.html", "classscene__rdl2_1_1rdl2_1_1_geometry_set" ],
+        [ "IndexIterator", "classscene__rdl2_1_1rdl2_1_1_index_iterator.html", "classscene__rdl2_1_1rdl2_1_1_index_iterator" ],
+        [ "Joint", "classscene__rdl2_1_1rdl2_1_1_joint.html", "classscene__rdl2_1_1rdl2_1_1_joint" ],
+        [ "Layer", "classscene__rdl2_1_1rdl2_1_1_layer.html", "classscene__rdl2_1_1rdl2_1_1_layer" ],
+        [ "LayerAssignment", "structscene__rdl2_1_1rdl2_1_1_layer_assignment.html", "structscene__rdl2_1_1rdl2_1_1_layer_assignment" ],
+        [ "Light", "classscene__rdl2_1_1rdl2_1_1_light.html", "classscene__rdl2_1_1rdl2_1_1_light" ],
+        [ "LightFilter", "classscene__rdl2_1_1rdl2_1_1_light_filter.html", "classscene__rdl2_1_1rdl2_1_1_light_filter" ],
+        [ "LightFilterProxy", "classscene__rdl2_1_1rdl2_1_1_light_filter_proxy.html", "classscene__rdl2_1_1rdl2_1_1_light_filter_proxy" ],
+        [ "LightFilterSet", "classscene__rdl2_1_1rdl2_1_1_light_filter_set.html", "classscene__rdl2_1_1rdl2_1_1_light_filter_set" ],
+        [ "LightProxy", "classscene__rdl2_1_1rdl2_1_1_light_proxy.html", "classscene__rdl2_1_1rdl2_1_1_light_proxy" ],
+        [ "LightSet", "classscene__rdl2_1_1rdl2_1_1_light_set.html", "classscene__rdl2_1_1rdl2_1_1_light_set" ],
+        [ "Map", "classscene__rdl2_1_1rdl2_1_1_map.html", "classscene__rdl2_1_1rdl2_1_1_map" ],
+        [ "MapProxy", "classscene__rdl2_1_1rdl2_1_1_map_proxy.html", "classscene__rdl2_1_1rdl2_1_1_map_proxy" ],
+        [ "Material", "classscene__rdl2_1_1rdl2_1_1_material.html", "classscene__rdl2_1_1rdl2_1_1_material" ],
+        [ "MaterialProxy", "classscene__rdl2_1_1rdl2_1_1_material_proxy.html", "classscene__rdl2_1_1rdl2_1_1_material_proxy" ],
+        [ "Metadata", "classscene__rdl2_1_1rdl2_1_1_metadata.html", "classscene__rdl2_1_1rdl2_1_1_metadata" ],
+        [ "Node", "classscene__rdl2_1_1rdl2_1_1_node.html", "classscene__rdl2_1_1rdl2_1_1_node" ],
+        [ "NoProjectionException", "classscene__rdl2_1_1rdl2_1_1_no_projection_exception.html", null ],
+        [ "NormalMap", "classscene__rdl2_1_1rdl2_1_1_normal_map.html", "classscene__rdl2_1_1rdl2_1_1_normal_map" ],
+        [ "NormalMapProxy", "classscene__rdl2_1_1rdl2_1_1_normal_map_proxy.html", "classscene__rdl2_1_1rdl2_1_1_normal_map_proxy" ],
+        [ "ObjectFactory", "classscene__rdl2_1_1rdl2_1_1_object_factory.html", "classscene__rdl2_1_1rdl2_1_1_object_factory" ],
+        [ "RaySwitchContext", "structscene__rdl2_1_1rdl2_1_1_ray_switch_context.html", "structscene__rdl2_1_1rdl2_1_1_ray_switch_context" ],
+        [ "RenderOutput", "classscene__rdl2_1_1rdl2_1_1_render_output.html", "classscene__rdl2_1_1rdl2_1_1_render_output" ],
+        [ "RootShader", "classscene__rdl2_1_1rdl2_1_1_root_shader.html", "classscene__rdl2_1_1rdl2_1_1_root_shader" ],
+        [ "SceneClass", "classscene__rdl2_1_1rdl2_1_1_scene_class.html", "classscene__rdl2_1_1rdl2_1_1_scene_class" ],
+        [ "SceneContext", "classscene__rdl2_1_1rdl2_1_1_scene_context.html", "classscene__rdl2_1_1rdl2_1_1_scene_context" ],
+        [ "SceneObject", "classscene__rdl2_1_1rdl2_1_1_scene_object.html", "classscene__rdl2_1_1rdl2_1_1_scene_object" ],
+        [ "SceneObjectProxy", "classscene__rdl2_1_1rdl2_1_1_scene_object_proxy.html", "classscene__rdl2_1_1rdl2_1_1_scene_object_proxy" ],
+        [ "SceneVariables", "classscene__rdl2_1_1rdl2_1_1_scene_variables.html", "classscene__rdl2_1_1rdl2_1_1_scene_variables" ],
+        [ "Shader", "classscene__rdl2_1_1rdl2_1_1_shader.html", "classscene__rdl2_1_1rdl2_1_1_shader" ],
+        [ "ShadowReceiverSet", "classscene__rdl2_1_1rdl2_1_1_shadow_receiver_set.html", "classscene__rdl2_1_1rdl2_1_1_shadow_receiver_set" ],
+        [ "ShadowSet", "classscene__rdl2_1_1rdl2_1_1_shadow_set.html", "classscene__rdl2_1_1rdl2_1_1_shadow_set" ],
+        [ "Slice", "classscene__rdl2_1_1rdl2_1_1_slice.html", "classscene__rdl2_1_1rdl2_1_1_slice" ],
+        [ "TimeRescalingCoeffs", "structscene__rdl2_1_1rdl2_1_1_time_rescaling_coeffs.html", "structscene__rdl2_1_1rdl2_1_1_time_rescaling_coeffs" ],
+        [ "TraceSet", "classscene__rdl2_1_1rdl2_1_1_trace_set.html", "classscene__rdl2_1_1rdl2_1_1_trace_set" ],
+        [ "UpdateHelper", "classscene__rdl2_1_1rdl2_1_1_update_helper.html", "classscene__rdl2_1_1rdl2_1_1_update_helper" ],
+        [ "UserData", "classscene__rdl2_1_1rdl2_1_1_user_data.html", "classscene__rdl2_1_1rdl2_1_1_user_data" ],
+        [ "ValueContainerDeq", "classscene__rdl2_1_1rdl2_1_1_value_container_deq.html", "classscene__rdl2_1_1rdl2_1_1_value_container_deq" ],
+        [ "ValueContainerEnq", "classscene__rdl2_1_1rdl2_1_1_value_container_enq.html", "classscene__rdl2_1_1rdl2_1_1_value_container_enq" ],
+        [ "ValueContainerUtil", "classscene__rdl2_1_1rdl2_1_1_value_container_util.html", "classscene__rdl2_1_1rdl2_1_1_value_container_util" ],
+        [ "VolumeShader", "classscene__rdl2_1_1rdl2_1_1_volume_shader.html", "classscene__rdl2_1_1rdl2_1_1_volume_shader" ],
+        [ "VolumeShaderProxy", "classscene__rdl2_1_1rdl2_1_1_volume_shader_proxy.html", "classscene__rdl2_1_1rdl2_1_1_volume_shader_proxy" ]
+      ] ],
+      [ "rec_time", "namespacescene__rdl2_1_1rec__time.html", [
+        [ "RecDoubleManualInterval", "classscene__rdl2_1_1rec__time_1_1_rec_double_manual_interval.html", "classscene__rdl2_1_1rec__time_1_1_rec_double_manual_interval" ],
+        [ "RecTick", "classscene__rdl2_1_1rec__time_1_1_rec_tick.html", "classscene__rdl2_1_1rec__time_1_1_rec_tick" ],
+        [ "RecTickManualInterval", "classscene__rdl2_1_1rec__time_1_1_rec_tick_manual_interval.html", "classscene__rdl2_1_1rec__time_1_1_rec_tick_manual_interval" ],
+        [ "RecTickTimeManualInterval", "classscene__rdl2_1_1rec__time_1_1_rec_tick_time_manual_interval.html", "classscene__rdl2_1_1rec__time_1_1_rec_tick_time_manual_interval" ],
+        [ "RecTime", "classscene__rdl2_1_1rec__time_1_1_rec_time.html", "classscene__rdl2_1_1rec__time_1_1_rec_time" ],
+        [ "RecTimeAutoInterval", "classscene__rdl2_1_1rec__time_1_1_rec_time_auto_interval.html", "classscene__rdl2_1_1rec__time_1_1_rec_time_auto_interval" ],
+        [ "RecTimeLap", "classscene__rdl2_1_1rec__time_1_1_rec_time_lap.html", "classscene__rdl2_1_1rec__time_1_1_rec_time_lap" ],
+        [ "RecUInt64ManualInterval", "classscene__rdl2_1_1rec__time_1_1_rec_u_int64_manual_interval.html", "classscene__rdl2_1_1rec__time_1_1_rec_u_int64_manual_interval" ]
+      ] ],
+      [ "StatisticalTestSuite", "namespacescene__rdl2_1_1_statistical_test_suite.html", [
+        [ "UniformCDFContinuous", "classscene__rdl2_1_1_statistical_test_suite_1_1_uniform_c_d_f_continuous.html", "classscene__rdl2_1_1_statistical_test_suite_1_1_uniform_c_d_f_continuous" ],
+        [ "UniformCDFDiscrete", "classscene__rdl2_1_1_statistical_test_suite_1_1_uniform_c_d_f_discrete.html", "classscene__rdl2_1_1_statistical_test_suite_1_1_uniform_c_d_f_discrete" ]
+      ] ],
+      [ "util", "namespacescene__rdl2_1_1util.html", [
+        [ "anonymous_namespace{Files.cc}", "namespacescene__rdl2_1_1util_1_1anonymous__namespace_02_files_8cc_03.html", [
+          [ "FreeDeleter", "structscene__rdl2_1_1util_1_1anonymous__namespace_02_files_8cc_03_1_1_free_deleter.html", "structscene__rdl2_1_1util_1_1anonymous__namespace_02_files_8cc_03_1_1_free_deleter" ]
+        ] ],
+        [ "AlignedDeleter", "structscene__rdl2_1_1util_1_1_aligned_deleter.html", "structscene__rdl2_1_1util_1_1_aligned_deleter" ],
+        [ "Args", "classscene__rdl2_1_1util_1_1_args.html", "classscene__rdl2_1_1util_1_1_args" ],
+        [ "Array2D", "classscene__rdl2_1_1util_1_1_array2_d.html", "classscene__rdl2_1_1util_1_1_array2_d" ],
+        [ "Array2DBase", "classscene__rdl2_1_1util_1_1_array2_d_base.html", "classscene__rdl2_1_1util_1_1_array2_d_base" ],
+        [ "Array2DC", "classscene__rdl2_1_1util_1_1_array2_d_c.html", "classscene__rdl2_1_1util_1_1_array2_d_c" ],
+        [ "BitArray", "classscene__rdl2_1_1util_1_1_bit_array.html", "classscene__rdl2_1_1util_1_1_bit_array" ],
+        [ "CacheLineAtomic", "structscene__rdl2_1_1util_1_1_cache_line_atomic.html", null ],
+        [ "ConcurrentSList", "classscene__rdl2_1_1util_1_1_concurrent_s_list.html", "classscene__rdl2_1_1util_1_1_concurrent_s_list" ],
+        [ "EmptyTy", "structscene__rdl2_1_1util_1_1_empty_ty.html", null ],
+        [ "FalseTy", "structscene__rdl2_1_1util_1_1_false_ty.html", "structscene__rdl2_1_1util_1_1_false_ty" ],
+        [ "FileDescriptorGuard", "structscene__rdl2_1_1util_1_1_file_descriptor_guard.html", "structscene__rdl2_1_1util_1_1_file_descriptor_guard" ],
+        [ "FullTy", "structscene__rdl2_1_1util_1_1_full_ty.html", null ],
+        [ "GetEnvException", "classscene__rdl2_1_1util_1_1_get_env_exception.html", null ],
+        [ "GUID", "classscene__rdl2_1_1util_1_1_g_u_i_d.html", "classscene__rdl2_1_1util_1_1_g_u_i_d" ],
+        [ "GUIDException", "classscene__rdl2_1_1util_1_1_g_u_i_d_exception.html", null ],
+        [ "HudValidator", "classscene__rdl2_1_1util_1_1_hud_validator.html", "classscene__rdl2_1_1util_1_1_hud_validator" ],
+        [ "HvdValidator", "classscene__rdl2_1_1util_1_1_hvd_validator.html", "classscene__rdl2_1_1util_1_1_hvd_validator" ],
+        [ "Log", "classscene__rdl2_1_1util_1_1_log.html", "classscene__rdl2_1_1util_1_1_log" ],
+        [ "LogOutput", "classscene__rdl2_1_1util_1_1_log_output.html", "classscene__rdl2_1_1util_1_1_log_output" ],
+        [ "LuaGlobalVar", "classscene__rdl2_1_1util_1_1_lua_global_var.html", "classscene__rdl2_1_1util_1_1_lua_global_var" ],
+        [ "LuaGlobalVarArray", "classscene__rdl2_1_1util_1_1_lua_global_var_array.html", "classscene__rdl2_1_1util_1_1_lua_global_var_array" ],
+        [ "LuaGlobalVarBase", "classscene__rdl2_1_1util_1_1_lua_global_var_base.html", "classscene__rdl2_1_1util_1_1_lua_global_var_base" ],
+        [ "LuaGlobalVarDictionary", "classscene__rdl2_1_1util_1_1_lua_global_var_dictionary.html", "classscene__rdl2_1_1util_1_1_lua_global_var_dictionary" ],
+        [ "LuaScriptRunner", "classscene__rdl2_1_1util_1_1_lua_script_runner.html", "classscene__rdl2_1_1util_1_1_lua_script_runner" ],
+        [ "NullTy", "structscene__rdl2_1_1util_1_1_null_ty.html", null ],
+        [ "Random", "classscene__rdl2_1_1util_1_1_random.html", "classscene__rdl2_1_1util_1_1_random" ],
+        [ "Ref", "classscene__rdl2_1_1util_1_1_ref.html", "classscene__rdl2_1_1util_1_1_ref" ],
+        [ "RefCount", "classscene__rdl2_1_1util_1_1_ref_count.html", "classscene__rdl2_1_1util_1_1_ref_count" ],
+        [ "SList", "classscene__rdl2_1_1util_1_1_s_list.html", "classscene__rdl2_1_1util_1_1_s_list" ],
+        [ "SManip", "structscene__rdl2_1_1util_1_1_s_manip.html", "structscene__rdl2_1_1util_1_1_s_manip" ],
+        [ "StaticIsPowerOfTwo", "structscene__rdl2_1_1util_1_1_static_is_power_of_two.html", "structscene__rdl2_1_1util_1_1_static_is_power_of_two" ],
+        [ "TrueTy", "structscene__rdl2_1_1util_1_1_true_ty.html", "structscene__rdl2_1_1util_1_1_true_ty" ]
+      ] ],
+      [ "IndexableArray", "classscene__rdl2_1_1_indexable_array.html", "classscene__rdl2_1_1_indexable_array" ]
+    ] ],
+    [ "simd", "namespacesimd.html", [
+      [ "avxb", "structsimd_1_1avxb.html", "structsimd_1_1avxb" ],
+      [ "avxf", "structsimd_1_1avxf.html", "structsimd_1_1avxf" ],
+      [ "avxi", "structsimd_1_1avxi.html", "structsimd_1_1avxi" ],
+      [ "mic_f", "classsimd_1_1mic__f.html", "classsimd_1_1mic__f" ],
+      [ "mic_i", "classsimd_1_1mic__i.html", "classsimd_1_1mic__i" ],
+      [ "mic_m", "classsimd_1_1mic__m.html", "classsimd_1_1mic__m" ],
+      [ "sseb", "structsimd_1_1sseb.html", "structsimd_1_1sseb" ],
+      [ "sseb_t", "structsimd_1_1sseb__t.html", "structsimd_1_1sseb__t" ],
+      [ "ssef", "structsimd_1_1ssef.html", "structsimd_1_1ssef" ],
+      [ "ssei", "structsimd_1_1ssei.html", "structsimd_1_1ssei" ]
     ] ],
     [ "std", "namespacestd.html", [
+      [ "atomic< double >", "classstd_1_1atomic_3_01double_01_4.html", "classstd_1_1atomic_3_01double_01_4" ],
+      [ "atomic< float >", "classstd_1_1atomic_3_01float_01_4.html", "classstd_1_1atomic_3_01float_01_4" ],
+      [ "atomic< long double >", "classstd_1_1atomic_3_01long_01double_01_4.html", "classstd_1_1atomic_3_01long_01double_01_4" ],
+      [ "hash< BasicType >", "structstd_1_1hash_3_01_basic_type_01_4.html", "structstd_1_1hash_3_01_basic_type_01_4" ],
+      [ "hash< MoveOnly >", "structstd_1_1hash_3_01_move_only_01_4.html", "structstd_1_1hash_3_01_move_only_01_4" ],
       [ "hash< NPoint< D > >", "structstd_1_1hash_3_01_n_point_3_01_d_01_4_01_4.html", "structstd_1_1hash_3_01_n_point_3_01_d_01_4_01_4" ]
     ] ],
     [ "wait_impl", "namespacewait__impl.html", [
@@ -818,6 +1262,7 @@ var annotated_dup =
     [ "ArgumentParser", "class_argument_parser.html", "class_argument_parser" ],
     [ "Array", "class_array.html", "class_array" ],
     [ "Array8", "class_array8.html", "class_array8" ],
+    [ "BadObject", "class_bad_object.html", null ],
     [ "BitVec", "class_bit_vec.html", "class_bit_vec" ],
     [ "BsdfFactory", "class_bsdf_factory.html", "class_bsdf_factory" ],
     [ "BuildStandardChannels", "struct_build_standard_channels.html", "struct_build_standard_channels" ],
@@ -853,12 +1298,14 @@ var annotated_dup =
     [ "HairLobe", "class_hair_lobe.html", null ],
     [ "Image", "class_image.html", "class_image" ],
     [ "ImageFormat", "class_image_format.html", "class_image_format" ],
+    [ "ImaginaryThing", "class_imaginary_thing.html", "class_imaginary_thing" ],
     [ "IOStateSaver", "class_i_o_state_saver.html", "class_i_o_state_saver" ],
     [ "is_search_result", "structis__search__result.html", null ],
     [ "is_search_result< SearchResult >", "structis__search__result_3_01_search_result_01_4.html", null ],
     [ "Labels", "class_labels.html", "class_labels" ],
     [ "LockFreeTraits", "struct_lock_free_traits.html", "struct_lock_free_traits" ],
     [ "MeasureStarDiscrepancySplit", "class_measure_star_discrepancy_split.html", "class_measure_star_discrepancy_split" ],
+    [ "MemoryArenaAllocator", "class_memory_arena_allocator.html", null ],
     [ "MinkowskiWrappedDistanceSquared", "class_minkowski_wrapped_distance_squared.html", "class_minkowski_wrapped_distance_squared" ],
     [ "NdfAutomata", "class_ndf_automata.html", "class_ndf_automata" ],
     [ "NonCopyable", "struct_non_copyable.html", "struct_non_copyable" ],
@@ -881,6 +1328,7 @@ var annotated_dup =
     [ "RingBufferImpl", "class_ring_buffer_impl.html", "class_ring_buffer_impl" ],
     [ "RSequenceGenerator", "class_r_sequence_generator.html", "class_r_sequence_generator" ],
     [ "Sample", "struct_sample.html", "struct_sample" ],
+    [ "SceneObjectISPC", "struct_scene_object_i_s_p_c.html", "struct_scene_object_i_s_p_c" ],
     [ "SingleConsumerRingBufferTraits", "struct_single_consumer_ring_buffer_traits.html", "struct_single_consumer_ring_buffer_traits" ],
     [ "SingleProducerRingBufferTraits", "struct_single_producer_ring_buffer_traits.html", "struct_single_producer_ring_buffer_traits" ],
     [ "SingleProducerSingleConsumerRingBufferTraits", "struct_single_producer_single_consumer_ring_buffer_traits.html", "struct_single_producer_single_consumer_ring_buffer_traits" ],
@@ -898,14 +1346,28 @@ var annotated_dup =
     [ "TaskSettings", "struct_task_settings.html", "struct_task_settings" ],
     [ "TestAlignedElementArray", "class_test_aligned_element_array.html", "class_test_aligned_element_array" ],
     [ "TestAtomicFunctions", "class_test_atomic_functions.html", "class_test_atomic_functions" ],
+    [ "TestCommonColorSpace", "class_test_common_color_space.html", "class_test_common_color_space" ],
+    [ "TestCommonMath", "class_test_common_math.html", "class_test_common_math" ],
+    [ "TestCommonMathColor", "class_test_common_math_color.html", "class_test_common_math_color" ],
+    [ "TestCommonMathMat3", "class_test_common_math_mat3.html", "class_test_common_math_mat3" ],
+    [ "TestCommonMathMat4", "class_test_common_math_mat4.html", "class_test_common_math_mat4" ],
+    [ "TestCommonMathQuaternion", "class_test_common_math_quaternion.html", "class_test_common_math_quaternion" ],
+    [ "TestCommonMathReferenceFrame", "class_test_common_math_reference_frame.html", "class_test_common_math_reference_frame" ],
+    [ "TestCommonMathVec4", "class_test_common_math_vec4.html", "class_test_common_math_vec4" ],
+    [ "TestCommonMathXform", "class_test_common_math_xform.html", "class_test_common_math_xform" ],
+    [ "TestCommonSIMD", "class_test_common_s_i_m_d.html", "class_test_common_s_i_m_d" ],
     [ "TestCommonTime", "class_test_common_time.html", "class_test_common_time" ],
+    [ "TestCommonUtil", "class_test_common_util.html", "class_test_common_util" ],
+    [ "TestRandom", "class_test_random.html", "class_test_random" ],
     [ "TestRenderingRT", "class_test_rendering_r_t.html", "class_test_rendering_r_t" ],
     [ "TestRingBuffer", "class_test_ring_buffer.html", "class_test_ring_buffer" ],
+    [ "TestViewport", "class_test_viewport.html", "class_test_viewport" ],
     [ "TestWait", "class_test_wait.html", "class_test_wait" ],
     [ "TransformConcatenator", "class_transform_concatenator.html", "class_transform_concatenator" ],
     [ "VarianceAOVMap", "class_variance_a_o_v_map.html", "class_variance_a_o_v_map" ],
     [ "WeightFunction", "class_weight_function.html", "class_weight_function" ],
     [ "Wildcard", "struct_wildcard.html", "struct_wildcard" ],
     [ "WrappedDistanceSquared", "struct_wrapped_distance_squared.html", "struct_wrapped_distance_squared" ],
-    [ "XformInitializer", "class_xform_initializer.html", "class_xform_initializer" ]
+    [ "XformInitializer", "class_xform_initializer.html", "class_xform_initializer" ],
+    [ "xmm_mm_union", "unionxmm__mm__union.html", "unionxmm__mm__union" ]
 ];
