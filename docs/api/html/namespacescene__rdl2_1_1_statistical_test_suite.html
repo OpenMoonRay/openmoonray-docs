@@ -114,7 +114,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a02cb9119c2ca92f9f307f676d31397d7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2_1_1_statistical_test_suite.html#a02cb9119c2ca92f9f307f676d31397d7">testRange</a> (typename std::iterator_traits&lt; Iterator &gt;::value_type lower, typename std::iterator_traits&lt; Iterator &gt;::value_type upper, Iterator first, Iterator last)</td></tr>
 <tr class="separator:a02cb9119c2ca92f9f307f676d31397d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aebb7ff45c192f8c7cdf4845df25bb6"><td class="memTemplParams" colspan="2">template&lt;typename FwdIter &gt; </td></tr>
-<tr class="memitem:a9aebb7ff45c192f8c7cdf4845df25bb6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#a142050680749415346125493d63b8810">double</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2_1_1_statistical_test_suite.html#a9aebb7ff45c192f8c7cdf4845df25bb6">empiricalDistributionFunction</a> (FwdIter first, FwdIter last, <a class="el" href="immintrin__emu_8h.html#a142050680749415346125493d63b8810">double</a> x)</td></tr>
+<tr class="memitem:a9aebb7ff45c192f8c7cdf4845df25bb6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#a142050680749415346125493d63b8810">double</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2_1_1_statistical_test_suite.html#a9aebb7ff45c192f8c7cdf4845df25bb6">empiricalDistributionFunction</a> (FwdIter first, FwdIter last, <a class="el" href="immintrin__emu_8h.html#a142050680749415346125493d63b8810">double</a> <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)</td></tr>
 <tr class="separator:a9aebb7ff45c192f8c7cdf4845df25bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a814729aa5242e6a3eba9e398143f524c"><td class="memTemplParams" colspan="2">template&lt;typename FwdIter , typename CDF &gt; </td></tr>
 <tr class="memitem:a814729aa5242e6a3eba9e398143f524c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2_1_1_statistical_test_suite.html#a814729aa5242e6a3eba9e398143f524c">testKolmogorovSmirnov</a> (FwdIter first, FwdIter last, CDF cdf)</td></tr>
@@ -178,12 +178,13 @@ template&lt;typename FwdIter &gt; </div>
 <div class="line"><span class="lineno">   87</span>    <span class="keywordtype">unsigned</span> numLess = 0;</div>
 <div class="line"><span class="lineno">   88</span>    <span class="keywordflow">for</span> ( ; first != last; ++first) {</div>
 <div class="line"><span class="lineno">   89</span>        ++count;</div>
-<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">if</span> (*first &lt;= x) {</div>
+<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">if</span> (*first &lt;= <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
 <div class="line"><span class="lineno">   91</span>            ++numLess;</div>
 <div class="line"><span class="lineno">   92</span>        }</div>
 <div class="line"><span class="lineno">   93</span>    }</div>
 <div class="line"><span class="lineno">   94</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(numLess) / <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(count);</div>
 <div class="line"><span class="lineno">   95</span>}</div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -243,12 +244,12 @@ template&lt;typename Traits , typename Generator &gt; </div>
 <div class="line"><span class="lineno">  207</span>        stats.<a class="code hl_function" href="classscene__rdl2_1_1fb__util_1_1_running_stats.html#a2e2167ff54d9a7955039c8bfa67fe52f">clear</a>();</div>
 <div class="line"><span class="lineno">  208</span> </div>
 <div class="line"><span class="lineno">  209</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; std::max(fullSamples, statisticalSamples); ++i) {</div>
-<div class="line"><span class="lineno">  210</span>            <span class="keyword">const</span> <span class="keyword">auto</span> x = function();</div>
+<div class="line"><span class="lineno">  210</span>            <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = function();</div>
 <div class="line"><span class="lineno">  211</span>            <span class="keywordflow">if</span> (i &lt; fullSamples) {</div>
-<div class="line"><span class="lineno">  212</span>                samples.push_back(x);</div>
+<div class="line"><span class="lineno">  212</span>                samples.push_back(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>);</div>
 <div class="line"><span class="lineno">  213</span>            }</div>
 <div class="line"><span class="lineno">  214</span>            <span class="keywordflow">if</span> (i &lt; statisticalSamples) {</div>
-<div class="line"><span class="lineno">  215</span>                stats.<a class="code hl_function" href="classscene__rdl2_1_1fb__util_1_1_running_stats.html#a906ed3e20ceabfc2a409bccf22924066">push</a>(x);</div>
+<div class="line"><span class="lineno">  215</span>                stats.<a class="code hl_function" href="classscene__rdl2_1_1fb__util_1_1_running_stats.html#a906ed3e20ceabfc2a409bccf22924066">push</a>(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>);</div>
 <div class="line"><span class="lineno">  216</span>            }</div>
 <div class="line"><span class="lineno">  217</span>        }</div>
 <div class="line"><span class="lineno">  218</span> </div>
@@ -341,9 +342,9 @@ template&lt;typename FwdIter , typename CDF &gt; </div>
 <div class="line"><span class="lineno">  115</span> </div>
 <div class="line"><span class="lineno">  116</span>    <span class="keyword">auto</span> kPos = std::numeric_limits&lt;double&gt;::lowest();</div>
 <div class="line"><span class="lineno">  117</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = first; it != last; ++it) {</div>
-<div class="line"><span class="lineno">  118</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> x  = *it;</div>
-<div class="line"><span class="lineno">  119</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> Fx = cdf(x);</div>
-<div class="line"><span class="lineno">  120</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> Fn = <a class="code hl_function" href="namespacescene__rdl2_1_1_statistical_test_suite.html#a9aebb7ff45c192f8c7cdf4845df25bb6">empiricalDistributionFunction</a>(first, last, x);</div>
+<div class="line"><span class="lineno">  118</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>  = *it;</div>
+<div class="line"><span class="lineno">  119</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> Fx = cdf(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>);</div>
+<div class="line"><span class="lineno">  120</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> Fn = <a class="code hl_function" href="namespacescene__rdl2_1_1_statistical_test_suite.html#a9aebb7ff45c192f8c7cdf4845df25bb6">empiricalDistributionFunction</a>(first, last, <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>);</div>
 <div class="line"><span class="lineno">  121</span>        kPos = std::max(kPos, std::abs(Fx - Fn));</div>
 <div class="line"><span class="lineno">  122</span>    }</div>
 <div class="line"><span class="lineno">  123</span> </div>

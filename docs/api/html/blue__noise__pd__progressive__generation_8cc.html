@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('blue__noise__pd__progressive__generati
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a98c0a4328eb52468c390370948fc783d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blue__noise__pd__progressive__generation_8cc.html#a98c0a4328eb52468c390370948fc783d">prints</a>(x)&#160;&#160;&#160;std::cout &lt;&lt; #x &lt;&lt; &quot;: &quot; &lt;&lt; (x) &lt;&lt; std::endl</td></tr>
+<tr class="memitem:a98c0a4328eb52468c390370948fc783d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blue__noise__pd__progressive__generation_8cc.html#a98c0a4328eb52468c390370948fc783d">prints</a>(<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)&#160;&#160;&#160;std::cout &lt;&lt; #<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt;&lt; &quot;: &quot; &lt;&lt; (<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) &lt;&lt; std::endl</td></tr>
 <tr class="separator:a98c0a4328eb52468c390370948fc783d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -144,8 +144,8 @@ Variables</h2></td></tr>
           <td class="memname">#define prints</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;std::cout &lt;&lt; #x &lt;&lt; &quot;: &quot; &lt;&lt; (x) &lt;&lt; std::endl</td>
+          <td class="paramname"><a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></td><td>)</td>
+          <td>&#160;&#160;&#160;std::cout &lt;&lt; #<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt;&lt; &quot;: &quot; &lt;&lt; (<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) &lt;&lt; std::endl</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -220,7 +220,7 @@ template&lt;unsigned D&gt; </div>
 <div class="line"><span class="lineno">  171</span> </div>
 <div class="line"><span class="lineno">  172</span><span class="preprocessor">#if 1</span></div>
 <div class="line"><span class="lineno">  173</span>    uint32_t seed = 0;</div>
-<div class="line"><span class="lineno">  174</span>    <span class="keywordtype">unsigned</span> <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> = 1024;</div>
+<div class="line"><span class="lineno">  174</span>    <span class="keywordtype">unsigned</span> count = 1024;</div>
 <div class="line"><span class="lineno">  175</span>    std::string filename(<span class="stringliteral">&quot;points.dat&quot;</span>);</div>
 <div class="line"><span class="lineno">  176</span> </div>
 <div class="line"><span class="lineno">  177</span>    <span class="keywordflow">try</span> {</div>
@@ -232,7 +232,7 @@ template&lt;unsigned D&gt; </div>
 <div class="line"><span class="lineno">  183</span>            filename = parser.getModifier&lt;std::string&gt;(<span class="stringliteral">&quot;-out&quot;</span>, 0);</div>
 <div class="line"><span class="lineno">  184</span>        }</div>
 <div class="line"><span class="lineno">  185</span>        <span class="keywordflow">if</span> (parser.has(<span class="stringliteral">&quot;-count&quot;</span>)) {</div>
-<div class="line"><span class="lineno">  186</span>            <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> = parser.getModifier&lt;<span class="keywordtype">unsigned</span>&gt;(<span class="stringliteral">&quot;-count&quot;</span>, 0);</div>
+<div class="line"><span class="lineno">  186</span>            count = parser.getModifier&lt;<span class="keywordtype">unsigned</span>&gt;(<span class="stringliteral">&quot;-count&quot;</span>, 0);</div>
 <div class="line"><span class="lineno">  187</span>        }</div>
 <div class="line"><span class="lineno">  188</span>    } <span class="keywordflow">catch</span> (std::exception&amp; e) {</div>
 <div class="line"><span class="lineno">  189</span>        std::cerr &lt;&lt; e.what() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
@@ -248,7 +248,6 @@ template&lt;unsigned D&gt; </div>
 <div class="ttc" id="a_n_point_8h_html_a1e91cb34cb5cb30a85d091e2aea03b68"><div class="ttname"><a href="_n_point_8h.html#a1e91cb34cb5cb30a85d091e2aea03b68">writePoints</a></div><div class="ttdeci">void writePoints(const std::vector&lt; NPoint&lt; D &gt; &gt; &amp;points, std::ostream &amp;outs)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00396">NPoint.h:396</a></div></div>
 <div class="ttc" id="ablue__noise__pd__progressive__generation_8cc_html_aefacc19f4239e110a4853fcfbf75fe02"><div class="ttname"><a href="blue__noise__pd__progressive__generation_8cc.html#aefacc19f4239e110a4853fcfbf75fe02">run</a></div><div class="ttdeci">std::vector&lt; NPoint&lt; kDims &gt; &gt; run(std::uint32_t seed, unsigned numDesired)</div><div class="ttdef"><b>Definition:</b> <a href="blue__noise__pd__progressive__generation_8cc_source.html#l00091">blue_noise_pd_progressive_generation.cc:91</a></div></div>
 <div class="ttc" id="aclass_argument_parser_html"><div class="ttname"><a href="class_argument_parser.html">ArgumentParser</a></div><div class="ttdef"><b>Definition:</b> <a href="_argument_parser_8h_source.html#l00028">ArgumentParser.h:29</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03_html_ac002aa9e7f277e6c84e4fe1aeb5bb8cb"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">moonray::rndr::unittest::anonymous_namespace{TestOverlappingRegions.cc}::count</a></div><div class="ttdeci">void count(const OverlappingRegions&lt; sRegionOverlap, sTileWidth, sTileHeight, sDesiredRegionsPerDimension &gt; &amp;regions, int line)</div><div class="ttdef"><b>Definition:</b> <a href="_test_overlapping_regions_8cc_source.html#l00024">TestOverlappingRegions.cc:24</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

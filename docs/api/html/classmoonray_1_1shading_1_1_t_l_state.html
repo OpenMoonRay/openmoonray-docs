@@ -276,14 +276,14 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_shading_t_l_state_8cc_source.html#l00070">70</a> of file <a class="el" href="_shading_t_l_state_8cc_source.html">ShadingTLState.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   71</span>{</div>
-<div class="line"><span class="lineno">   72</span>    <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_variable" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03.html#a01cbdf7fe0fe4a5e2171ca7bfcd26d10">gPrivate</a>.<a class="code hl_variable" href="structmoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03_1_1_private.html#a04c007348522da812f9aed910c1fa2fb">mRefCount</a>);</div>
+<div class="line"><span class="lineno">   72</span>    <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(gPrivate.mRefCount);</div>
 <div class="line"><span class="lineno">   73</span> </div>
 <div class="line"><span class="lineno">   74</span>    {</div>
 <div class="line"><span class="lineno">   75</span>        <span class="comment">// Protect against races the during gPrivate clean up.</span></div>
 <div class="line"><span class="lineno">   76</span>        <span class="comment">//tbb::mutex::scoped_lock lock(gInitMutex);</span></div>
 <div class="line"><span class="lineno">   77</span> </div>
-<div class="line"><span class="lineno">   78</span>        <a class="code hl_define" href="moonray__static__check_8h.html#a767999960d41541954eb2e6e4157e9d9">MOONRAY_THREADSAFE_STATIC_WRITE</a>(--<a class="code hl_variable" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03.html#a01cbdf7fe0fe4a5e2171ca7bfcd26d10">gPrivate</a>.<a class="code hl_variable" href="structmoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03_1_1_private.html#a04c007348522da812f9aed910c1fa2fb">mRefCount</a>);</div>
-<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03.html#a01cbdf7fe0fe4a5e2171ca7bfcd26d10">gPrivate</a>.<a class="code hl_variable" href="structmoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03_1_1_private.html#a04c007348522da812f9aed910c1fa2fb">mRefCount</a> == 0) {</div>
+<div class="line"><span class="lineno">   78</span>        <a class="code hl_define" href="moonray__static__check_8h.html#a767999960d41541954eb2e6e4157e9d9">MOONRAY_THREADSAFE_STATIC_WRITE</a>(--gPrivate.mRefCount);</div>
+<div class="line"><span class="lineno">   79</span>        <span class="keywordflow">if</span> (gPrivate.mRefCount == 0) {</div>
 <div class="line"><span class="lineno">   80</span>            shading::cleanUpPrivate();</div>
 <div class="line"><span class="lineno">   81</span>            <a class="code hl_function" href="classmoonray_1_1texture_1_1_t_l_state.html#a36b250d8422b92f189693abfc19bad7b">texture::TLState::cleanUpPrivate</a>();</div>
 <div class="line"><span class="lineno">   82</span>        }</div>
@@ -292,8 +292,6 @@ Public Attributes</h2></td></tr>
 <div class="ttc" id="a_platform_8h_html_ac6bd494653a0872080be86890bea8639"><div class="ttname"><a href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a></div><div class="ttdeci">#define MNRY_ASSERT(a,...)</div><div class="ttdoc">Use MNRY_ASSERT for assertions you want compiled out of opt builds.</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00425">Platform.h:425</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1texture_1_1_t_l_state_html_a36b250d8422b92f189693abfc19bad7b"><div class="ttname"><a href="classmoonray_1_1texture_1_1_t_l_state.html#a36b250d8422b92f189693abfc19bad7b">moonray::texture::TLState::cleanUpPrivate</a></div><div class="ttdeci">static void cleanUpPrivate()</div><div class="ttdef"><b>Definition:</b> <a href="_texture_t_l_state_8cc_source.html#l00081">TextureTLState.cc:81</a></div></div>
 <div class="ttc" id="amoonray__static__check_8h_html_a767999960d41541954eb2e6e4157e9d9"><div class="ttname"><a href="moonray__static__check_8h.html#a767999960d41541954eb2e6e4157e9d9">MOONRAY_THREADSAFE_STATIC_WRITE</a></div><div class="ttdeci">#define MOONRAY_THREADSAFE_STATIC_WRITE(CODE)</div><div class="ttdef"><b>Definition:</b> <a href="moonray__static__check_8h_source.html#l00112">moonray_static_check.h:112</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03_html_a01cbdf7fe0fe4a5e2171ca7bfcd26d10"><div class="ttname"><a href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03.html#a01cbdf7fe0fe4a5e2171ca7bfcd26d10">moonray::shading::anonymous_namespace{ShadingTLState.cc}::gPrivate</a></div><div class="ttdeci">Private gPrivate</div><div class="ttdef"><b>Definition:</b> <a href="_shading_t_l_state_8cc_source.html#l00037">ShadingTLState.cc:37</a></div></div>
-<div class="ttc" id="astructmoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03_1_1_private_html_a04c007348522da812f9aed910c1fa2fb"><div class="ttname"><a href="structmoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03_1_1_private.html#a04c007348522da812f9aed910c1fa2fb">moonray::shading::anonymous_namespace{ShadingTLState.cc}::Private::mRefCount</a></div><div class="ttdeci">unsigned mRefCount</div><div class="ttdef"><b>Definition:</b> <a href="_shading_t_l_state_8cc_source.html#l00034">ShadingTLState.cc:34</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -344,12 +342,12 @@ Public Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  101</span>        <span class="comment">// Protect against races the very first time we initialize gPrivate.</span></div>
 <div class="line"><span class="lineno">  102</span>        tbb::mutex::scoped_lock lock(gInitMutex);</div>
 <div class="line"><span class="lineno">  103</span> </div>
-<div class="line"><span class="lineno">  104</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03.html#a01cbdf7fe0fe4a5e2171ca7bfcd26d10">gPrivate</a>.<a class="code hl_variable" href="structmoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03_1_1_private.html#a04c007348522da812f9aed910c1fa2fb">mRefCount</a> == 0) {</div>
+<div class="line"><span class="lineno">  104</span>        <span class="keywordflow">if</span> (gPrivate.mRefCount == 0) {</div>
 <div class="line"><span class="lineno">  105</span>            <a class="code hl_function" href="classmoonray_1_1texture_1_1_t_l_state.html#ababb20cf8ccec22f50173e9fc619c99c">texture::TLState::initPrivate</a>(initParams);</div>
 <div class="line"><span class="lineno">  106</span>            shading::initPrivate(initParams);</div>
 <div class="line"><span class="lineno">  107</span>        }</div>
 <div class="line"><span class="lineno">  108</span> </div>
-<div class="line"><span class="lineno">  109</span>        <a class="code hl_define" href="moonray__static__check_8h.html#a767999960d41541954eb2e6e4157e9d9">MOONRAY_THREADSAFE_STATIC_WRITE</a>(++<a class="code hl_variable" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03.html#a01cbdf7fe0fe4a5e2171ca7bfcd26d10">gPrivate</a>.<a class="code hl_variable" href="structmoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03_1_1_private.html#a04c007348522da812f9aed910c1fa2fb">mRefCount</a>);</div>
+<div class="line"><span class="lineno">  109</span>        <a class="code hl_define" href="moonray__static__check_8h.html#a767999960d41541954eb2e6e4157e9d9">MOONRAY_THREADSAFE_STATIC_WRITE</a>(++gPrivate.mRefCount);</div>
 <div class="line"><span class="lineno">  110</span>    }</div>
 <div class="line"><span class="lineno">  111</span> </div>
 <div class="line"><span class="lineno">  112</span>    <span class="keywordflow">return</span> std::make_shared&lt;TLState&gt;(tls, initParams, okToAllocBundledResources);</div>

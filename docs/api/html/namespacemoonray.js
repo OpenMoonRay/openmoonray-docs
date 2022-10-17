@@ -1,42 +1,5 @@
 var namespacemoonray =
 [
-    [ "anonymous_namespace{BakeCamera.cc}", "namespacemoonray_1_1anonymous__namespace_02_bake_camera_8cc_03.html", "namespacemoonray_1_1anonymous__namespace_02_bake_camera_8cc_03" ],
-    [ "anonymous_namespace{McrtRtComputation.cc}", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html", [
-      [ "convertImageEncoding", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a16722b66c74504a912b0f8de10d2e734", null ],
-      [ "AOV_BEAUTY", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a894905096ddcfa904df8bb13b1a63551", null ],
-      [ "AOV_DEPTH", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a0c14b58b0c9a1618466b13d822196424", null ],
-      [ "RENDER_SETUP_KEY", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#add8776b0ca1c2d9f7984514fe2c0cbeb", null ],
-      [ "sApplicationMode", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#ad89e124f38aaf7eeed77d2c900ab5c9f", null ],
-      [ "sConfigCamera", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#aa6069e17fe4b65982db48cd805795a2e", null ],
-      [ "sConfigDsopath", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a08b4349b72bc6e73b48c6ae4c2ae2f5c", null ],
-      [ "sConfigEnableDepthBuffer", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#ace41490573dff2219fb13ecae8e4131a", null ],
-      [ "sConfigFps", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a01e26220b8b16858ab96587bbc806bcd", null ],
-      [ "sConfigFrameGating", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a78fa69f3d15665b3958bbb7d775030a9", null ],
-      [ "sConfigGamma", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#acc59c9b3356d201540f951beee35b663", null ],
-      [ "sConfigLayer", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a4c6d308088b65e2a6a91f4c62a1c2ecd", null ],
-      [ "sConfigMachineId", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a0ea01f055a63869adc91e13f12d4538d", null ],
-      [ "sConfigNumMachines", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a5c2dc6cd49cb04e6513ada771b805bfd", null ],
-      [ "sConfigScene", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a8858cb4475bab8c13b3bc5075bad41bb", null ],
-      [ "sConfigSendLogMessages", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a080615e6cf2b0575a26e83a0a3f00f57", null ],
-      [ "sExecMode", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#abf54ca74a7dfe22d98820b5210aac4c3", null ],
-      [ "sFastGeometryUpdate", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a1a348dd0a84d3ae73a024029c3eb6ca9", null ],
-      [ "sImageEncoding", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#ae676a9bbf56b6451db31b956466ad896", null ],
-      [ "sRayStreaming", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#ae0691e25b76ed2305e18f95b036d075e", null ],
-      [ "sRenderedEye", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#abd3d07abd3c140d3155f9d9e8e123178", null ],
-      [ "sRenderMode", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a2970e217cf13c341539ac8b482f5fbff", null ],
-      [ "sTextureCacheSize", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#a991d6c0d73698117449e177a823df4e1", null ],
-      [ "sTextureSystem", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_computation_8cc_03.html#ab0baf511825c271bff3a34fb87c6bb9e", null ]
-    ] ],
-    [ "anonymous_namespace{McrtRtMergeComputation.cc}", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_merge_computation_8cc_03.html", [
-      [ "boolToString", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_merge_computation_8cc_03.html#ac9f0b10e7ef71e4326ad3e03ad6f8685", null ],
-      [ "convertImageEncoding", "namespacemoonray_1_1anonymous__namespace_02_mcrt_rt_merge_computation_8cc_03.html#a70c037862da73f4e5c04667443957829", null ]
-    ] ],
-    [ "anonymous_namespace{ShadeBundleHandler.cc}", "namespacemoonray_1_1anonymous__namespace_02_shade_bundle_handler_8cc_03.html", [
-      [ "ALIGN", "namespacemoonray_1_1anonymous__namespace_02_shade_bundle_handler_8cc_03.html#a75d6e044e7a02686fb1b3ced54821aa5", null ],
-      [ "convertAOSIntersectionsToSOA", "namespacemoonray_1_1anonymous__namespace_02_shade_bundle_handler_8cc_03.html#a889892351ad6a14e7dbc168a1df200ab", null ],
-      [ "convertAOSRayStatesToSOA", "namespacemoonray_1_1anonymous__namespace_02_shade_bundle_handler_8cc_03.html#ae5262788f26ab6813d2c08bd3f8136e5", null ],
-      [ "MNRY_STATIC_ASSERT", "namespacemoonray_1_1anonymous__namespace_02_shade_bundle_handler_8cc_03.html#a4a139e06098caaef935ebc21ac24ce4f", null ]
-    ] ],
     [ "displayfilter", "namespacemoonray_1_1displayfilter.html", "namespacemoonray_1_1displayfilter" ],
     [ "engine_tool", "namespacemoonray_1_1engine__tool.html", "namespacemoonray_1_1engine__tool" ],
     [ "fb_util", "namespacemoonray_1_1fb__util.html", null ],

@@ -198,12 +198,12 @@ Static Protected Member Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">  925</span>{</div>
 <div class="line"><span class="lineno">  926</span>    std::ostringstream ostr;</div>
 <div class="line"><span class="lineno">  927</span>    ostr &lt;&lt; <span class="stringliteral">&quot;mask 0x&quot;</span> &lt;&lt; std::setw(16) &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; std::hex &lt;&lt; mask64 &lt;&lt; <span class="stringliteral">&quot; {\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  928</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 7; y &gt;= 0; --y) {</div>
+<div class="line"><span class="lineno">  928</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 7; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &gt;= 0; --<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
 <div class="line"><span class="lineno">  929</span>        ostr &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
-<div class="line"><span class="lineno">  930</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; 8; ++x) {</div>
-<div class="line"><span class="lineno">  931</span>            <span class="keywordflow">if</span> (mask64 &amp; (<span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x1) &lt;&lt; ((y &lt;&lt; 3) + x))) {</div>
+<div class="line"><span class="lineno">  930</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
+<div class="line"><span class="lineno">  931</span>            <span class="keywordflow">if</span> (mask64 &amp; (<span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x1) &lt;&lt; ((<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>))) {</div>
 <div class="line"><span class="lineno">  932</span>                <span class="comment">// ostr &lt;&lt; &quot;* &quot;;</span></div>
-<div class="line"><span class="lineno">  933</span>                ostr &lt;&lt; std::setw(2) &lt;&lt; std::oct &lt;&lt; ((y &lt;&lt; 3) + x) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><span class="lineno">  933</span>                ostr &lt;&lt; std::setw(2) &lt;&lt; std::oct &lt;&lt; ((<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><span class="lineno">  934</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">  935</span>                <span class="comment">// ostr &lt;&lt; &quot;. &quot;;</span></div>
 <div class="line"><span class="lineno">  936</span>                ostr &lt;&lt; <span class="stringliteral">&quot; . &quot;</span>;</div>
@@ -214,6 +214,8 @@ Static Protected Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  941</span>    ostr &lt;&lt; <span class="stringliteral">&quot;}&quot;</span>;</div>
 <div class="line"><span class="lineno">  942</span>    <span class="keywordflow">return</span> ostr.str();</div>
 <div class="line"><span class="lineno">  943</span>}</div>
+<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -471,8 +473,8 @@ Static Protected Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  530</span>    <span class="keywordflow">if</span> (!srcTileMask) <span class="keywordflow">return</span> 0x0;</div>
 <div class="line"><span class="lineno">  531</span> </div>
 <div class="line"><span class="lineno">  532</span>    uint64_t activePixelMask = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x0);</div>
-<div class="line"><span class="lineno">  533</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = 0; y &lt; 8; ++y) {</div>
-<div class="line"><span class="lineno">  534</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (y &lt;&lt; 3); <span class="comment">// y * 8</span></div>
+<div class="line"><span class="lineno">  533</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  534</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3); <span class="comment">// y * 8</span></div>
 <div class="line"><span class="lineno">  535</span> </div>
 <div class="line"><span class="lineno">  536</span>        uint64_t currSrcTileMask = srcTileMask &gt;&gt; <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  537</span>        <span class="keywordflow">if</span> (!currSrcTileMask) <span class="keywordflow">break</span>; <span class="comment">// early exit : rest of them are all empty</span></div>
@@ -485,7 +487,7 @@ Static Protected Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  544</span> </div>
 <div class="line"><span class="lineno">  545</span>        uint64_t currSrcTileScanlineMask = currSrcTileMask &amp; <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0xff); <span class="comment">// get one scanline mask</span></div>
 <div class="line"><span class="lineno">  546</span>        uint64_t currDstTileScanlineMask = currDstTileMask &amp; <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0xff); <span class="comment">// get one scanline mask</span></div>
-<div class="line"><span class="lineno">  547</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> x = 0; x &lt; 8; ++x) {</div>
+<div class="line"><span class="lineno">  547</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
 <div class="line"><span class="lineno">  548</span>            <span class="keywordflow">if</span> (!currSrcTileScanlineMask) <span class="keywordflow">break</span>; <span class="comment">// early exit for scanline</span></div>
 <div class="line"><span class="lineno">  549</span> </div>
 <div class="line"><span class="lineno">  550</span>            <span class="keywordflow">if</span> (currSrcTileScanlineMask &amp; <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x1)) {</div>
@@ -635,14 +637,14 @@ Static Protected Member Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_snapshot_util_8cc_source.html#l00467">467</a> of file <a class="el" href="_snapshot_util_8cc_source.html">SnapshotUtil.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  471</span>{</div>
 <div class="line"><span class="lineno">  472</span>    uint64_t activePixelMask = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x0);</div>
-<div class="line"><span class="lineno">  473</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = 0; y &lt; 8; ++y) {</div>
-<div class="line"><span class="lineno">  474</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (y &lt;&lt; 3);</div>
+<div class="line"><span class="lineno">  473</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  474</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3);</div>
 <div class="line"><span class="lineno">  475</span>        <span class="keyword">const</span> uint32_t *currSrcV = srcV + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> * 2;</div>
 <div class="line"><span class="lineno">  476</span>        <span class="keyword">const</span> uint32_t *currSrcW = srcW + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  477</span>        uint32_t *currDstV = dstV + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> * 2;</div>
 <div class="line"><span class="lineno">  478</span>        uint32_t *currDstW = dstW + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  479</span> </div>
-<div class="line"><span class="lineno">  480</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> x = 0; x &lt; 8; ++x) {</div>
+<div class="line"><span class="lineno">  480</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
 <div class="line"><span class="lineno">  481</span>            <span class="comment">//</span></div>
 <div class="line"><span class="lineno">  482</span>            <span class="comment">// Compare bit pattern between previous and current</span></div>
 <div class="line"><span class="lineno">  483</span>            <span class="comment">//</span></div>
@@ -801,8 +803,8 @@ Static Protected Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  668</span>    <span class="keywordflow">if</span> (!srcTileMask) <span class="keywordflow">return</span> 0x0;</div>
 <div class="line"><span class="lineno">  669</span> </div>
 <div class="line"><span class="lineno">  670</span>    uint64_t activePixelMask = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x0);</div>
-<div class="line"><span class="lineno">  671</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = 0; y &lt; 8; ++y) {</div>
-<div class="line"><span class="lineno">  672</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (y &lt;&lt; 3); <span class="comment">// y * 8</span></div>
+<div class="line"><span class="lineno">  671</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  672</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3); <span class="comment">// y * 8</span></div>
 <div class="line"><span class="lineno">  673</span> </div>
 <div class="line"><span class="lineno">  674</span>        uint64_t currSrcTileMask = srcTileMask &gt;&gt; <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  675</span>        <span class="keywordflow">if</span> (!currSrcTileMask) <span class="keywordflow">break</span>; <span class="comment">// early exit : rest of them are all empty</span></div>
@@ -815,7 +817,7 @@ Static Protected Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  682</span> </div>
 <div class="line"><span class="lineno">  683</span>        uint64_t currSrcTileScanlineMask = currSrcTileMask &amp; <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0xff); <span class="comment">// get one scanline mask</span></div>
 <div class="line"><span class="lineno">  684</span>        uint64_t currDstTileScanlineMask = currDstTileMask &amp; <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0xff); <span class="comment">// get one scanline mask</span></div>
-<div class="line"><span class="lineno">  685</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> x = 0; x &lt; 8; ++x) {</div>
+<div class="line"><span class="lineno">  685</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
 <div class="line"><span class="lineno">  686</span>            <span class="keywordflow">if</span> (!currSrcTileScanlineMask) <span class="keywordflow">break</span>; <span class="comment">// early exit for scanline</span></div>
 <div class="line"><span class="lineno">  687</span> </div>
 <div class="line"><span class="lineno">  688</span>            <span class="keywordflow">if</span> (currSrcTileScanlineMask &amp; <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x1)) {</div>
@@ -966,14 +968,14 @@ Static Protected Member Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_snapshot_util_8cc_source.html#l00603">603</a> of file <a class="el" href="_snapshot_util_8cc_source.html">SnapshotUtil.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  607</span>{</div>
 <div class="line"><span class="lineno">  608</span>    uint64_t activePixelMask = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x0);</div>
-<div class="line"><span class="lineno">  609</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = 0; y &lt; 8; ++y) {</div>
-<div class="line"><span class="lineno">  610</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (y &lt;&lt; 3);</div>
+<div class="line"><span class="lineno">  609</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  610</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3);</div>
 <div class="line"><span class="lineno">  611</span>        <span class="keyword">const</span> uint32_t *currSrcV = srcV + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> * 3;</div>
 <div class="line"><span class="lineno">  612</span>        <span class="keyword">const</span> uint32_t *currSrcW = srcW + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  613</span>        uint32_t *currDstV = dstV + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> * 3;</div>
 <div class="line"><span class="lineno">  614</span>        uint32_t *currDstW = dstW + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  615</span> </div>
-<div class="line"><span class="lineno">  616</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> x = 0; x &lt; 8; ++x) {</div>
+<div class="line"><span class="lineno">  616</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
 <div class="line"><span class="lineno">  617</span>            <span class="comment">//</span></div>
 <div class="line"><span class="lineno">  618</span>            <span class="comment">// Compare bit pattern between previous and current</span></div>
 <div class="line"><span class="lineno">  619</span>            <span class="comment">//</span></div>
@@ -1134,8 +1136,8 @@ Static Protected Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  809</span>    <span class="keywordflow">if</span> (!srcTileMask) <span class="keywordflow">return</span> 0x0;</div>
 <div class="line"><span class="lineno">  810</span> </div>
 <div class="line"><span class="lineno">  811</span>    uint64_t activePixelMask = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x0);</div>
-<div class="line"><span class="lineno">  812</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = 0; y &lt; 8; ++y) {</div>
-<div class="line"><span class="lineno">  813</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (y &lt;&lt; 3); <span class="comment">// y * 8</span></div>
+<div class="line"><span class="lineno">  812</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  813</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3); <span class="comment">// y * 8</span></div>
 <div class="line"><span class="lineno">  814</span> </div>
 <div class="line"><span class="lineno">  815</span>        uint64_t currSrcTileMask = srcTileMask &gt;&gt; <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  816</span>        <span class="keywordflow">if</span> (!currSrcTileMask) <span class="keywordflow">break</span>; <span class="comment">// early exit : rest of them are all empty</span></div>
@@ -1148,7 +1150,7 @@ Static Protected Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  823</span> </div>
 <div class="line"><span class="lineno">  824</span>        uint64_t currSrcTileScanlineMask = currSrcTileMask &amp; <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0xff); <span class="comment">// get one scanline mask</span></div>
 <div class="line"><span class="lineno">  825</span>        uint64_t currDstTileScanlineMask = currDstTileMask &amp; <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0xff); <span class="comment">// get one scanline mask</span></div>
-<div class="line"><span class="lineno">  826</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> x = 0; x &lt; 8; ++x) {</div>
+<div class="line"><span class="lineno">  826</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
 <div class="line"><span class="lineno">  827</span>            <span class="keywordflow">if</span> (!currSrcTileScanlineMask) <span class="keywordflow">break</span>; <span class="comment">// early exit for scanline</span></div>
 <div class="line"><span class="lineno">  828</span> </div>
 <div class="line"><span class="lineno">  829</span>            <span class="keywordflow">if</span> (currSrcTileScanlineMask &amp; <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x1)) {</div>
@@ -1301,14 +1303,14 @@ Static Protected Member Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_snapshot_util_8cc_source.html#l00743">743</a> of file <a class="el" href="_snapshot_util_8cc_source.html">SnapshotUtil.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  747</span>{</div>
 <div class="line"><span class="lineno">  748</span>    uint64_t activePixelMask = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x0);</div>
-<div class="line"><span class="lineno">  749</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = 0; y &lt; 8; ++y) {</div>
-<div class="line"><span class="lineno">  750</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (y &lt;&lt; 3);</div>
+<div class="line"><span class="lineno">  749</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  750</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3);</div>
 <div class="line"><span class="lineno">  751</span>        <span class="keyword">const</span> uint32_t *currSrcV = srcV + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> * 4;</div>
 <div class="line"><span class="lineno">  752</span>        <span class="keyword">const</span> uint32_t *currSrcW = srcW + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  753</span>        uint32_t *currDstV = dstV + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> * 4;</div>
 <div class="line"><span class="lineno">  754</span>        uint32_t *currDstW = dstW + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  755</span> </div>
-<div class="line"><span class="lineno">  756</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> x = 0; x &lt; 8; ++x) {</div>
+<div class="line"><span class="lineno">  756</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
 <div class="line"><span class="lineno">  757</span>            <span class="comment">//</span></div>
 <div class="line"><span class="lineno">  758</span>            <span class="comment">// Compare bit pattern between previous and current</span></div>
 <div class="line"><span class="lineno">  759</span>            <span class="comment">//</span></div>
@@ -1471,8 +1473,8 @@ Static Protected Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  395</span>    <span class="keywordflow">if</span> (!srcTileMask) <span class="keywordflow">return</span> 0x0;</div>
 <div class="line"><span class="lineno">  396</span> </div>
 <div class="line"><span class="lineno">  397</span>    uint64_t activePixelMask = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x0);</div>
-<div class="line"><span class="lineno">  398</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = 0; y &lt; 8; ++y) {</div>
-<div class="line"><span class="lineno">  399</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (y &lt;&lt; 3); <span class="comment">// y * 8</span></div>
+<div class="line"><span class="lineno">  398</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  399</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3); <span class="comment">// y * 8</span></div>
 <div class="line"><span class="lineno">  400</span> </div>
 <div class="line"><span class="lineno">  401</span>        uint64_t currSrcTileMask = srcTileMask &gt;&gt; <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  402</span>        <span class="keywordflow">if</span> (!currSrcTileMask) <span class="keywordflow">break</span>; <span class="comment">// early exit : rest of them are all empty</span></div>
@@ -1485,7 +1487,7 @@ Static Protected Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  409</span> </div>
 <div class="line"><span class="lineno">  410</span>        uint64_t currSrcTileScanlineMask = currSrcTileMask &amp; <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0xff); <span class="comment">// get one scanline mask</span></div>
 <div class="line"><span class="lineno">  411</span>        uint64_t currDstTileScanlineMask = currDstTileMask &amp; <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0xff); <span class="comment">// get one scanline mask</span></div>
-<div class="line"><span class="lineno">  412</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> x = 0; x &lt; 8; ++x) {</div>
+<div class="line"><span class="lineno">  412</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
 <div class="line"><span class="lineno">  413</span>            <span class="keywordflow">if</span> (!currSrcTileScanlineMask) <span class="keywordflow">break</span>; <span class="comment">// early exit for scanline</span></div>
 <div class="line"><span class="lineno">  414</span> </div>
 <div class="line"><span class="lineno">  415</span>            <span class="keywordflow">if</span> (currSrcTileScanlineMask &amp; <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x1)) {</div>
@@ -1633,14 +1635,14 @@ Static Protected Member Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_snapshot_util_8cc_source.html#l00334">334</a> of file <a class="el" href="_snapshot_util_8cc_source.html">SnapshotUtil.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  338</span>{</div>
 <div class="line"><span class="lineno">  339</span>    uint64_t activePixelMask = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x0);</div>
-<div class="line"><span class="lineno">  340</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = 0; y &lt; 8; ++y) {</div>
-<div class="line"><span class="lineno">  341</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (y &lt;&lt; 3);</div>
+<div class="line"><span class="lineno">  340</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  341</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3);</div>
 <div class="line"><span class="lineno">  342</span>        <span class="keyword">const</span> uint32_t *currSrcV = srcV + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  343</span>        <span class="keyword">const</span> uint32_t *currSrcW = srcW + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  344</span>        uint32_t *currDstV = dstV + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  345</span>        uint32_t *currDstW = dstW + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  346</span> </div>
-<div class="line"><span class="lineno">  347</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> x = 0; x &lt; 8; ++x) {</div>
+<div class="line"><span class="lineno">  347</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
 <div class="line"><span class="lineno">  348</span>            <span class="comment">//</span></div>
 <div class="line"><span class="lineno">  349</span>            <span class="comment">// Compare bit pattern between previous and current</span></div>
 <div class="line"><span class="lineno">  350</span>            <span class="comment">//</span></div>
@@ -1848,14 +1850,14 @@ Static Protected Member Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_snapshot_util_8cc_source.html#l00201">201</a> of file <a class="el" href="_snapshot_util_8cc_source.html">SnapshotUtil.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  205</span>{</div>
 <div class="line"><span class="lineno">  206</span>    uint64_t activePixelMask = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x0);</div>
-<div class="line"><span class="lineno">  207</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = 0; y &lt; 8; ++y) {</div>
-<div class="line"><span class="lineno">  208</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (y &lt;&lt; 3);</div>
+<div class="line"><span class="lineno">  207</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  208</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3);</div>
 <div class="line"><span class="lineno">  209</span>        <span class="keyword">const</span> uint64_t *currSrcVPtr = srcV + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  210</span>        <span class="keyword">const</span> uint32_t *currSrcWPtr = srcW + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  211</span>        uint64_t       *currDstVPtr = dstV + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  212</span>        uint32_t       *currDstWPtr = dstW + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  213</span> </div>
-<div class="line"><span class="lineno">  214</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> x = 0; x &lt; 8; ++x) {</div>
+<div class="line"><span class="lineno">  214</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
 <div class="line"><span class="lineno">  215</span>            <span class="comment">//</span></div>
 <div class="line"><span class="lineno">  216</span>            <span class="comment">// Compare bit pattern between previous and current</span></div>
 <div class="line"><span class="lineno">  217</span>            <span class="comment">//</span></div>
@@ -2095,8 +2097,8 @@ Static Protected Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  883</span>    <span class="keywordflow">if</span> (!srcTileMask) <span class="keywordflow">return</span> 0x0;</div>
 <div class="line"><span class="lineno">  884</span> </div>
 <div class="line"><span class="lineno">  885</span>    uint64_t activePixelMask = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x0);</div>
-<div class="line"><span class="lineno">  886</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = 0; y &lt; 8; ++y) {</div>
-<div class="line"><span class="lineno">  887</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (y &lt;&lt; 3); <span class="comment">// y * 8</span></div>
+<div class="line"><span class="lineno">  886</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  887</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3); <span class="comment">// y * 8</span></div>
 <div class="line"><span class="lineno">  888</span> </div>
 <div class="line"><span class="lineno">  889</span>        uint64_t currSrcTileMask = srcTileMask &gt;&gt; <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  890</span>        <span class="keywordflow">if</span> (!currSrcTileMask) <span class="keywordflow">break</span>; <span class="comment">// early exit : rest of them are all empty</span></div>
@@ -2107,7 +2109,7 @@ Static Protected Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  895</span> </div>
 <div class="line"><span class="lineno">  896</span>        uint64_t currSrcTileScanlineMask = currSrcTileMask &amp; <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0xff); <span class="comment">// get one scanline mask</span></div>
 <div class="line"><span class="lineno">  897</span>        uint64_t currDstTileMaskScanline = currDstTileMask &amp; <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0xff); <span class="comment">// get one scanline mask</span></div>
-<div class="line"><span class="lineno">  898</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> x = 0; x &lt; 8; ++x) {</div>
+<div class="line"><span class="lineno">  898</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
 <div class="line"><span class="lineno">  899</span>            <span class="keywordflow">if</span> (!currSrcTileScanlineMask) <span class="keywordflow">break</span>; <span class="comment">// early exit for scanline</span></div>
 <div class="line"><span class="lineno">  900</span> </div>
 <div class="line"><span class="lineno">  901</span>            <span class="keywordflow">if</span> (currSrcTileScanlineMask &amp; <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x1)) {</div>
@@ -2275,12 +2277,12 @@ Static Protected Member Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_snapshot_util_8cc_source.html#l00277">277</a> of file <a class="el" href="_snapshot_util_8cc_source.html">SnapshotUtil.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  279</span>{</div>
 <div class="line"><span class="lineno">  280</span>    uint64_t activePixelMask = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x0);</div>
-<div class="line"><span class="lineno">  281</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = 0; y &lt; 8; ++y) {</div>
-<div class="line"><span class="lineno">  282</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (y &lt;&lt; 3);</div>
+<div class="line"><span class="lineno">  281</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  282</span>        <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a> = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3);</div>
 <div class="line"><span class="lineno">  283</span>        <span class="keyword">const</span> uint32_t *currSrc = src + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  284</span>        uint32_t       *currDst = dst + <a class="code hl_variable" href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a>;</div>
 <div class="line"><span class="lineno">  285</span> </div>
-<div class="line"><span class="lineno">  286</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> x = 0; x &lt; 8; ++x) {</div>
+<div class="line"><span class="lineno">  286</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
 <div class="line"><span class="lineno">  287</span>            <span class="comment">//</span></div>
 <div class="line"><span class="lineno">  288</span>            <span class="comment">// Compare bit pattern between previous and current</span></div>
 <div class="line"><span class="lineno">  289</span>            <span class="comment">//</span></div>

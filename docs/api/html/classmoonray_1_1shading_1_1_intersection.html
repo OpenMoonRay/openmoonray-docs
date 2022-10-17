@@ -703,30 +703,30 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  677</span>    <span class="comment">// in each dimension. Quads are themselves stored in Morton order.</span></div>
 <div class="line"><span class="lineno">  678</span> </div>
 <div class="line"><span class="lineno">  679</span>    <span class="comment">// n = 128 quads per dimension.</span></div>
-<div class="line"><span class="lineno">  680</span>    uint64_t x = ((uint64_t)(mSt.x * 127.9999f)) &amp; 0x7f;</div>
-<div class="line"><span class="lineno">  681</span>    uint64_t y = ((uint64_t)(mSt.y * 127.9999f)) &amp; 0x7f;</div>
+<div class="line"><span class="lineno">  680</span>    uint64_t <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = ((uint64_t)(mSt.x * 127.9999f)) &amp; 0x7f;</div>
+<div class="line"><span class="lineno">  681</span>    uint64_t <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = ((uint64_t)(mSt.y * 127.9999f)) &amp; 0x7f;</div>
 <div class="line"><span class="lineno">  682</span> </div>
 <div class="line"><span class="lineno">  683</span>    <span class="comment">// Interleave bits with 64-bit multiplies.</span></div>
 <div class="line"><span class="lineno">  684</span>    <span class="comment">// http://graphics.stanford.edu/~seander/bithacks.html#Interleave64bitOps</span></div>
 <div class="line"><span class="lineno">  685</span>    <span class="comment">// This interleaved multiply is what converts the coorindates from linear</span></div>
 <div class="line"><span class="lineno">  686</span>    <span class="comment">// to morton ordering.</span></div>
-<div class="line"><span class="lineno">  687</span>    uint32_t uv = ((x * 0x0101010101010101ULL &amp; 0x8040201008040201ULL) *</div>
+<div class="line"><span class="lineno">  687</span>    uint32_t uv = ((<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> * 0x0101010101010101ULL &amp; 0x8040201008040201ULL) *</div>
 <div class="line"><span class="lineno">  688</span>                  0x0102040810204081ULL &gt;&gt; 49) &amp; 0x5555 |</div>
-<div class="line"><span class="lineno">  689</span>                  ((y * 0x0101010101010101ULL &amp; 0x8040201008040201ULL) *</div>
+<div class="line"><span class="lineno">  689</span>                  ((<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> * 0x0101010101010101ULL &amp; 0x8040201008040201ULL) *</div>
 <div class="line"><span class="lineno">  690</span>                  0x0102040810204081ULL &gt;&gt; 48) &amp; 0xAAAA;</div>
 <div class="line"><span class="lineno">  691</span> </div>
 <div class="line"><span class="lineno">  692</span>    <span class="keywordtype">float</span> mipSelector = <a class="code hl_function" href="namespacemoonray_1_1shading.html#a0f10d292b6e8ea9c918a9933a20bc29e">computeMipSelector</a>(mdSdx, mdTdx, mdSdy, mdTdy);</div>
 <div class="line"><span class="lineno">  693</span> </div>
-<div class="line"><span class="lineno">  694</span>    uint32_t ms = (uint32_t)<a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_intersection_8h_03.html#a74a771f0776287d6e049532bb078231c">minI32</a>(<span class="keywordtype">int</span>(mipSelector), 15);</div>
+<div class="line"><span class="lineno">  694</span>    uint32_t ms = (uint32_t)minI32(<span class="keywordtype">int</span>(mipSelector), 15);</div>
 <div class="line"><span class="lineno">  695</span> </div>
 <div class="line"><span class="lineno">  696</span>    <span class="comment">// Convert uv coordinates into a udim index.</span></div>
-<div class="line"><span class="lineno">  697</span>    int32_t tileU = <a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_intersection_8h_03.html#a8cd3bde945ee4faa7cfa0be11d2ec6db">clampI32</a>(<span class="keywordtype">int</span>(mSt.x), 0, 9);</div>
-<div class="line"><span class="lineno">  698</span>    int32_t tileV = <a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_intersection_8h_03.html#a8b0cafdabc1962c0a74b3e0f4833cda3">maxI32</a>(<span class="keywordtype">int</span>(mSt.y), 0);</div>
-<div class="line"><span class="lineno">  699</span>    uint32_t udim = (uint32_t)<a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_intersection_8h_03.html#a74a771f0776287d6e049532bb078231c">minI32</a>(tileV * 10 + tileU, 127);</div>
+<div class="line"><span class="lineno">  697</span>    int32_t tileU = clampI32(<span class="keywordtype">int</span>(mSt.x), 0, 9);</div>
+<div class="line"><span class="lineno">  698</span>    int32_t tileV = maxI32(<span class="keywordtype">int</span>(mSt.y), 0);</div>
+<div class="line"><span class="lineno">  699</span>    uint32_t udim = (uint32_t)minI32(tileV * 10 + tileU, 127);</div>
 <div class="line"><span class="lineno">  700</span> </div>
 <div class="line"><span class="lineno">  701</span>    <span class="comment">// Entries without light set assignments are placed at the end of the</span></div>
 <div class="line"><span class="lineno">  702</span>    <span class="comment">// sorted list.</span></div>
-<div class="line"><span class="lineno">  703</span>    uint32_t ls = (uint32_t)<a class="code hl_function" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_intersection_8h_03.html#a74a771f0776287d6e049532bb078231c">minI32</a>(<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#a55ded78d86ab40c0a128bd9a4de487d5">getLayerAssignmentId</a>(), 127);</div>
+<div class="line"><span class="lineno">  703</span>    uint32_t ls = (uint32_t)minI32(<a class="code hl_function" href="classmoonray_1_1shading_1_1_intersection.html#a55ded78d86ab40c0a128bd9a4de487d5">getLayerAssignmentId</a>(), 127);</div>
 <div class="line"><span class="lineno">  704</span> </div>
 <div class="line"><span class="lineno">  705</span>    <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(uv &lt; 16384);</div>
 <div class="line"><span class="lineno">  706</span>    <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(ms &lt; 16);</div>
@@ -736,10 +736,9 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  710</span>    <span class="keywordflow">return</span> (ls &lt;&lt; 25) | (udim &lt;&lt; 18) | (ms &lt;&lt; 14) | uv;</div>
 <div class="line"><span class="lineno">  711</span>}</div>
 <div class="ttc" id="a_platform_8h_html_ac6bd494653a0872080be86890bea8639"><div class="ttname"><a href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a></div><div class="ttdeci">#define MNRY_ASSERT(a,...)</div><div class="ttdoc">Use MNRY_ASSERT for assertions you want compiled out of opt builds.</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00425">Platform.h:425</a></div></div>
+<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_intersection_html_a55ded78d86ab40c0a128bd9a4de487d5"><div class="ttname"><a href="classmoonray_1_1shading_1_1_intersection.html#a55ded78d86ab40c0a128bd9a4de487d5">moonray::shading::Intersection::getLayerAssignmentId</a></div><div class="ttdeci">finline int32_t getLayerAssignmentId() const</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00381">Intersection.h:381</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1shading_1_1anonymous__namespace_02_intersection_8h_03_html_a74a771f0776287d6e049532bb078231c"><div class="ttname"><a href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_intersection_8h_03.html#a74a771f0776287d6e049532bb078231c">moonray::shading::anonymous_namespace{Intersection.h}::minI32</a></div><div class="ttdeci">finline int32_t minI32(int32_t a, int32_t b)</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00642">Intersection.h:642</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1shading_1_1anonymous__namespace_02_intersection_8h_03_html_a8b0cafdabc1962c0a74b3e0f4833cda3"><div class="ttname"><a href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_intersection_8h_03.html#a8b0cafdabc1962c0a74b3e0f4833cda3">moonray::shading::anonymous_namespace{Intersection.h}::maxI32</a></div><div class="ttdeci">finline int32_t maxI32(int32_t a, int32_t b)</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00648">Intersection.h:648</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1shading_1_1anonymous__namespace_02_intersection_8h_03_html_a8cd3bde945ee4faa7cfa0be11d2ec6db"><div class="ttname"><a href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_intersection_8h_03.html#a8cd3bde945ee4faa7cfa0be11d2ec6db">moonray::shading::anonymous_namespace{Intersection.h}::clampI32</a></div><div class="ttdeci">finline int32_t clampI32(int32_t v, int32_t min, int32_t max)</div><div class="ttdef"><b>Definition:</b> <a href="_intersection_8h_source.html#l00654">Intersection.h:654</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1shading_html_a0f10d292b6e8ea9c918a9933a20bc29e"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a0f10d292b6e8ea9c918a9933a20bc29e">moonray::shading::computeMipSelector</a></div><div class="ttdeci">float computeMipSelector(float dsdx, float dtdx, float dsdy, float dtdy)</div><div class="ttdef"><b>Definition:</b> <a href="_mip_selector_8cc_source.html#l00170">MipSelector.cc:170</a></div></div>
 </div><!-- fragment -->
 </div>

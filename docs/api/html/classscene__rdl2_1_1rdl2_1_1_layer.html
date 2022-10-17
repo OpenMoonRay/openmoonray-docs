@@ -2497,13 +2497,12 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  537</span>    <span class="comment">// reset the modified flag for rdl geometries</span></div>
 <div class="line"><span class="lineno">  538</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iter = <a class="code hl_variable" href="classscene__rdl2_1_1rdl2_1_1_layer.html#a36a557a59f00c1e800acf5dc83f9c58f">mChangedOrDeformedGeometries</a>.begin();</div>
 <div class="line"><span class="lineno">  539</span>         iter != <a class="code hl_variable" href="classscene__rdl2_1_1rdl2_1_1_layer.html#a36a557a59f00c1e800acf5dc83f9c58f">mChangedOrDeformedGeometries</a>.end(); ++iter) {</div>
-<div class="line"><span class="lineno">  540</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="namespaceanonymous__namespace_02_layer_8cc_03.html#a2d0d0aaf50a216959a15cc1e6a5db1d1">isDeformed</a>(iter-&gt;first)) {</div>
+<div class="line"><span class="lineno">  540</span>        <span class="keywordflow">if</span> (isDeformed(iter-&gt;first)) {</div>
 <div class="line"><span class="lineno">  541</span>            iter-&gt;first-&gt;resetDeformed();</div>
 <div class="line"><span class="lineno">  542</span>        }</div>
 <div class="line"><span class="lineno">  543</span>    }</div>
 <div class="line"><span class="lineno">  544</span>    <a class="code hl_variable" href="classscene__rdl2_1_1rdl2_1_1_layer.html#a36a557a59f00c1e800acf5dc83f9c58f">mChangedOrDeformedGeometries</a>.clear();</div>
 <div class="line"><span class="lineno">  545</span>}</div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_layer_8cc_03_html_a2d0d0aaf50a216959a15cc1e6a5db1d1"><div class="ttname"><a href="namespaceanonymous__namespace_02_layer_8cc_03.html#a2d0d0aaf50a216959a15cc1e6a5db1d1">anonymous_namespace{Layer.cc}::isDeformed</a></div><div class="ttdeci">bool isDeformed(const scene_rdl2::rdl2::Geometry *geom)</div><div class="ttdef"><b>Definition:</b> <a href="_layer_8cc_source.html#l00037">Layer.cc:37</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2641,7 +2640,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  420</span>            }</div>
 <div class="line"><span class="lineno">  421</span>        }</div>
 <div class="line"><span class="lineno">  422</span>        <span class="keywordflow">if</span> (geometry) {</div>
-<div class="line"><span class="lineno">  423</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="namespaceanonymous__namespace_02_layer_8cc_03.html#a2d0d0aaf50a216959a15cc1e6a5db1d1">isDeformed</a>(geometry)) {</div>
+<div class="line"><span class="lineno">  423</span>            <span class="keywordflow">if</span> (isDeformed(geometry)) {</div>
 <div class="line"><span class="lineno">  424</span>                <a class="code hl_variable" href="classscene__rdl2_1_1rdl2_1_1_layer.html#a36a557a59f00c1e800acf5dc83f9c58f">mChangedOrDeformedGeometries</a>[geometry] = i;</div>
 <div class="line"><span class="lineno">  425</span>                changed = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  426</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (geometry-&gt;updatePrep(sceneObjects, depth + 1)) {</div>

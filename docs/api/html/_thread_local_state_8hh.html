@@ -119,12 +119,13 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_define" href="_hybrid_uniform_data_8hh.html#ac2f5906cdbf4c3fb55a5b9a884a53309">HUD_VIRTUAL_BASE_CLASS</a>();                                       \</div>
-<div class="line">    HUD_MEMBER( <span class="keyword">const</span> uint32_t, mThreadIdx );                       \</div>
+<div class="line">    HUD_MEMBER( <span class="keyword">const</span> uint32_t, <a class="code hl_variable" href="_test_mem_pool_8cc.html#aca1491cdad195b1b38410c07395948ba">mThreadIdx</a> );                       \</div>
 <div class="line">    HUD_PTR( Arena*, mArena );                                      \</div>
 <div class="line">    HUD_PTR( Arena*, mPixelArena );                                 \</div>
 <div class="line">    HUD_CPP_PTR(ThreadLocalAccumulator *, mIspcAccumulator);        \</div>
 <div class="line">    HUD_CPP_PTR(ExclusiveAccumulators *, mExclusiveAccumulatorsPtr)</div>
 <div class="ttc" id="a_hybrid_uniform_data_8hh_html_ac2f5906cdbf4c3fb55a5b9a884a53309"><div class="ttname"><a href="_hybrid_uniform_data_8hh.html#ac2f5906cdbf4c3fb55a5b9a884a53309">HUD_VIRTUAL_BASE_CLASS</a></div><div class="ttdeci">#define HUD_VIRTUAL_BASE_CLASS()</div><div class="ttdef"><b>Definition:</b> <a href="_hybrid_uniform_data_8hh_source.html#l00138">HybridUniformData.hh:138</a></div></div>
+<div class="ttc" id="a_test_mem_pool_8cc_html_aca1491cdad195b1b38410c07395948ba"><div class="ttname"><a href="_test_mem_pool_8cc.html#aca1491cdad195b1b38410c07395948ba">mThreadIdx</a></div><div class="ttdeci">uint32_t mThreadIdx</div><div class="ttdef"><b>Definition:</b> <a href="_test_mem_pool_8cc_source.html#l00241">TestMemPool.cc:241</a></div></div>
 </div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Bruce Tartaglia </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_thread_local_state_8hh_source.html#l00016">16</a> of file <a class="el" href="_thread_local_state_8hh_source.html">ThreadLocalState.hh</a>.</p>
@@ -143,7 +144,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_define" href="_hybrid_uniform_data_8hh.html#ab0f4ab8a7f4c87f7a558d53fa1b1efa9">HUD_BEGIN_VALIDATION</a>(BaseTLState);                      \</div>
-<div class="line">    HUD_VALIDATE(BaseTLState, mThreadIdx);                  \</div>
+<div class="line">    HUD_VALIDATE(BaseTLState, <a class="code hl_variable" href="_test_mem_pool_8cc.html#aca1491cdad195b1b38410c07395948ba">mThreadIdx</a>);                  \</div>
 <div class="line">    HUD_VALIDATE(BaseTLState, mArena);                      \</div>
 <div class="line">    HUD_VALIDATE(BaseTLState, mPixelArena);                 \</div>
 <div class="line">    HUD_VALIDATE(BaseTLState, mIspcAccumulator);            \</div>

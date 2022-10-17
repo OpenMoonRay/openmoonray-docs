@@ -103,22 +103,6 @@ $(document).ready(function(){initNavTree('namespacescene__rdl2_1_1rdl2.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03.html">anonymous_namespace{AsciiReader.cc}</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_writer_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_writer_8cc_03.html">anonymous_namespace{AsciiWriter.cc}</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_binary_writer_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_binary_writer_8cc_03.html">anonymous_namespace{BinaryWriter.cc}</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_object_factory_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_object_factory_8cc_03.html">anonymous_namespace{ObjectFactory.cc}</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_scene_context_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_scene_context_8cc_03.html">anonymous_namespace{SceneContext.cc}</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_scene_object_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_scene_object_8cc_03.html">anonymous_namespace{SceneObject.cc}</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_scene_object_8h_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_scene_object_8h_03.html">anonymous_namespace{SceneObject.h}</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_types_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_types_8cc_03.html">anonymous_namespace{Types.cc}</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacescene__rdl2_1_1rdl2_1_1detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2_1_1rdl2_1_1detail.html">detail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacescene__rdl2_1_1rdl2_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2_1_1rdl2_1_1internal.html">internal</a></td></tr>
@@ -9681,11 +9665,13 @@ template&lt;typename T &gt; </div>
 <p class="definition">Definition at line <a class="el" href="_ascii_reader_8cc_source.html#l03378">3378</a> of file <a class="el" href="_ascii_reader_8cc_source.html">AsciiReader.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 3379</span>{</div>
 <div class="line"><span class="lineno"> 3380</span>    checkArgCount(2, <span class="stringliteral">&quot;Vec2&quot;</span>);</div>
-<div class="line"><span class="lineno"> 3381</span>    <span class="keywordtype">double</span> x = luaL_checknumber(mLua, 1);</div>
-<div class="line"><span class="lineno"> 3382</span>    <span class="keywordtype">double</span> y = luaL_checknumber(mLua, 2);</div>
-<div class="line"><span class="lineno"> 3383</span>    boxNew&lt;Vec2d&gt;(VEC2_METATABLE, x, y);</div>
+<div class="line"><span class="lineno"> 3381</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = luaL_checknumber(mLua, 1);</div>
+<div class="line"><span class="lineno"> 3382</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = luaL_checknumber(mLua, 2);</div>
+<div class="line"><span class="lineno"> 3383</span>    boxNew&lt;Vec2d&gt;(VEC2_METATABLE, <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>);</div>
 <div class="line"><span class="lineno"> 3384</span>    <span class="keywordflow">return</span> 1;</div>
 <div class="line"><span class="lineno"> 3385</span>}</div>
+<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -9990,10 +9976,10 @@ template&lt;typename T &gt; </div>
 <p class="definition">Definition at line <a class="el" href="_ascii_reader_8cc_source.html#l03456">3456</a> of file <a class="el" href="_ascii_reader_8cc_source.html">AsciiReader.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 3457</span>{</div>
 <div class="line"><span class="lineno"> 3458</span>    checkArgCount(3, <span class="stringliteral">&quot;Vec3&quot;</span>);</div>
-<div class="line"><span class="lineno"> 3459</span>    <span class="keywordtype">double</span> x = luaL_checknumber(mLua, 1);</div>
-<div class="line"><span class="lineno"> 3460</span>    <span class="keywordtype">double</span> y = luaL_checknumber(mLua, 2);</div>
+<div class="line"><span class="lineno"> 3459</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = luaL_checknumber(mLua, 1);</div>
+<div class="line"><span class="lineno"> 3460</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = luaL_checknumber(mLua, 2);</div>
 <div class="line"><span class="lineno"> 3461</span>    <span class="keywordtype">double</span> z = luaL_checknumber(mLua, 3);</div>
-<div class="line"><span class="lineno"> 3462</span>    boxNew&lt;Vec3d&gt;(VEC3_METATABLE, x, y, z);</div>
+<div class="line"><span class="lineno"> 3462</span>    boxNew&lt;Vec3d&gt;(VEC3_METATABLE, <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, z);</div>
 <div class="line"><span class="lineno"> 3463</span>    <span class="keywordflow">return</span> 1;</div>
 <div class="line"><span class="lineno"> 3464</span>}</div>
 </div><!-- fragment -->
@@ -10305,11 +10291,11 @@ template&lt;typename T &gt; </div>
 <p class="definition">Definition at line <a class="el" href="_ascii_reader_8cc_source.html#l03539">3539</a> of file <a class="el" href="_ascii_reader_8cc_source.html">AsciiReader.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 3540</span>{</div>
 <div class="line"><span class="lineno"> 3541</span>    checkArgCount(4, <span class="stringliteral">&quot;Vec4&quot;</span>);</div>
-<div class="line"><span class="lineno"> 3542</span>    <span class="keywordtype">double</span> x = luaL_checknumber(mLua, 1);</div>
-<div class="line"><span class="lineno"> 3543</span>    <span class="keywordtype">double</span> y = luaL_checknumber(mLua, 2);</div>
+<div class="line"><span class="lineno"> 3542</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = luaL_checknumber(mLua, 1);</div>
+<div class="line"><span class="lineno"> 3543</span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = luaL_checknumber(mLua, 2);</div>
 <div class="line"><span class="lineno"> 3544</span>    <span class="keywordtype">double</span> z = luaL_checknumber(mLua, 3);</div>
 <div class="line"><span class="lineno"> 3545</span>    <span class="keywordtype">double</span> w = luaL_checknumber(mLua, 4);</div>
-<div class="line"><span class="lineno"> 3546</span>    boxNew&lt;Vec4d&gt;(VEC4_METATABLE, x, y, z, w);</div>
+<div class="line"><span class="lineno"> 3546</span>    boxNew&lt;Vec4d&gt;(VEC4_METATABLE, <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, z, w);</div>
 <div class="line"><span class="lineno"> 3547</span>    <span class="keywordflow">return</span> 1;</div>
 <div class="line"><span class="lineno"> 3548</span>}</div>
 </div><!-- fragment -->
@@ -10970,13 +10956,13 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   82</span>        awriter.setSkipDefaults(skipDefaults);</div>
 <div class="line"><span class="lineno">   83</span>        awriter.setDeltaEncoding(deltaEncoding);</div>
 <div class="line"><span class="lineno">   84</span>        awriter.setElementsPerLine(elemsPerLine);</div>
-<div class="line"><span class="lineno">   85</span>        awriter.setMaxVectorSize(<a class="code hl_variable" href="namespaceanonymous__namespace_02_utils_8cc_03.html#a8750fe7f465939924ead60c968d20bbe">SPLIT_VEC_SIZE</a>);</div>
+<div class="line"><span class="lineno">   85</span>        awriter.setMaxVectorSize(SPLIT_VEC_SIZE);</div>
 <div class="line"><span class="lineno">   86</span>        awriter.toFile(filePath + <span class="stringliteral">&quot;.rdla&quot;</span>);</div>
 <div class="line"><span class="lineno">   87</span>        BinaryWriter bwriter(context);</div>
 <div class="line"><span class="lineno">   88</span>        bwriter.setSkipDefaults(skipDefaults);</div>
 <div class="line"><span class="lineno">   89</span>        bwriter.setTransientEncoding(<span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">   90</span>        bwriter.setDeltaEncoding(deltaEncoding);</div>
-<div class="line"><span class="lineno">   91</span>        bwriter.setSplitMode(<a class="code hl_variable" href="namespaceanonymous__namespace_02_utils_8cc_03.html#a8750fe7f465939924ead60c968d20bbe">SPLIT_VEC_SIZE</a> + 1);</div>
+<div class="line"><span class="lineno">   91</span>        bwriter.setSplitMode(SPLIT_VEC_SIZE + 1);</div>
 <div class="line"><span class="lineno">   92</span>        bwriter.toFile(filePath + <span class="stringliteral">&quot;.rdlb&quot;</span>);</div>
 <div class="line"><span class="lineno">   93</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">   94</span>        <span class="keywordflow">throw</span> except::RuntimeError(util::buildString(</div>
@@ -10985,7 +10971,6 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   97</span>    }</div>
 <div class="line"><span class="lineno">   98</span>}</div>
 <div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_ascii_writer_html"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_ascii_writer.html">scene_rdl2::rdl2::AsciiWriter</a></div><div class="ttdef"><b>Definition:</b> <a href="_ascii_writer_8h_source.html#l00019">AsciiWriter.h:20</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_utils_8cc_03_html_a8750fe7f465939924ead60c968d20bbe"><div class="ttname"><a href="namespaceanonymous__namespace_02_utils_8cc_03.html#a8750fe7f465939924ead60c968d20bbe">anonymous_namespace{Utils.cc}::SPLIT_VEC_SIZE</a></div><div class="ttdeci">constexpr int SPLIT_VEC_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8cc_source.html#l00030">Utils.cc:30</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

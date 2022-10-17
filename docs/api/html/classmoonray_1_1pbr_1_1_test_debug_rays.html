@@ -385,13 +385,13 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  305</span>            vertex-&gt;mUserTags = tags;</div>
 <div class="line"><span class="lineno">  306</span>        }</div>
 <div class="line"><span class="lineno">  307</span> </div>
-<div class="line"><span class="lineno">  308</span>        <span class="keywordtype">float</span> x = rnd.getNextFloat();</div>
+<div class="line"><span class="lineno">  308</span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = rnd.getNextFloat();</div>
 <div class="line"><span class="lineno">  309</span>        <span class="keywordflow">if</span> (x &lt; 0.05f || parent-&gt;mDepth == 254) {</div>
 <div class="line"><span class="lineno">  310</span>            <span class="comment">// start new ray</span></div>
 <div class="line"><span class="lineno">  311</span>            parent = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  312</span>            sx = rnd.getNextUInt(<a class="code hl_define" href="_test_debug_rays_8cc.html#a241aeeb764887ae5e3de58b98f04b16d">WIDTH</a>);</div>
 <div class="line"><span class="lineno">  313</span>            sy = rnd.getNextUInt(<a class="code hl_define" href="_test_debug_rays_8cc.html#aed89bd71aee8be823e8a20ec4e093c1e">HEIGHT</a>);</div>
-<div class="line"><span class="lineno">  314</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (x &lt; 0.6f) {</div>
+<div class="line"><span class="lineno">  314</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; 0.6f) {</div>
 <div class="line"><span class="lineno">  315</span>            <span class="comment">// continue ray</span></div>
 <div class="line"><span class="lineno">  316</span>            parent = vertex;</div>
 <div class="line"><span class="lineno">  317</span>        } <span class="keywordflow">else</span> {</div>
@@ -404,6 +404,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="a_test_debug_rays_8cc_html_a241aeeb764887ae5e3de58b98f04b16d"><div class="ttname"><a href="_test_debug_rays_8cc.html#a241aeeb764887ae5e3de58b98f04b16d">WIDTH</a></div><div class="ttdeci">#define WIDTH</div><div class="ttdef"><b>Definition:</b> <a href="_test_debug_rays_8cc_source.html#l00014">TestDebugRays.cc:14</a></div></div>
 <div class="ttc" id="a_test_debug_rays_8cc_html_aed89bd71aee8be823e8a20ec4e093c1e"><div class="ttname"><a href="_test_debug_rays_8cc.html#aed89bd71aee8be823e8a20ec4e093c1e">HEIGHT</a></div><div class="ttdeci">#define HEIGHT</div><div class="ttdef"><b>Definition:</b> <a href="_test_debug_rays_8cc_source.html#l00015">TestDebugRays.cc:15</a></div></div>
 <div class="ttc" id="a_test_debug_rays_8cc_html_af84588ca6e1f7529a0df0caced7dabe4"><div class="ttname"><a href="_test_debug_rays_8cc.html#af84588ca6e1f7529a0df0caced7dabe4">NUM_VERTICES_PER_RECORDER</a></div><div class="ttdeci">#define NUM_VERTICES_PER_RECORDER</div><div class="ttdef"><b>Definition:</b> <a href="_test_debug_rays_8cc_source.html#l00017">TestDebugRays.cc:17</a></div></div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 <div class="ttc" id="aclassscene__rdl2_1_1util_1_1_random_html"><div class="ttname"><a href="classscene__rdl2_1_1util_1_1_random.html">scene_rdl2::util::Random</a></div><div class="ttdef"><b>Definition:</b> <a href="_random_8h_source.html#l00019">Random.h:20</a></div></div>
 <div class="ttc" id="amoonray__static__check_8h_html_a767999960d41541954eb2e6e4157e9d9"><div class="ttname"><a href="moonray__static__check_8h.html#a767999960d41541954eb2e6e4157e9d9">MOONRAY_THREADSAFE_STATIC_WRITE</a></div><div class="ttdeci">#define MOONRAY_THREADSAFE_STATIC_WRITE(CODE)</div><div class="ttdef"><b>Definition:</b> <a href="moonray__static__check_8h_source.html#l00112">moonray_static_check.h:112</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1math_html_aed955464c560f29d9c8e8595baf58c09"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a></div><div class="ttdeci">Vec3&lt; float &gt; Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="_vec3_8h_source.html#l00383">Vec3.h:383</a></div></div>

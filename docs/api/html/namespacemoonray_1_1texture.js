@@ -1,6 +1,5 @@
 var namespacemoonray_1_1texture =
 [
-    [ "anonymous_namespace{TextureTLState.cc}", "namespacemoonray_1_1texture_1_1anonymous__namespace_02_texture_t_l_state_8cc_03.html", "namespacemoonray_1_1texture_1_1anonymous__namespace_02_texture_t_l_state_8cc_03" ],
     [ "TextureSampler", "classmoonray_1_1texture_1_1_texture_sampler.html", "classmoonray_1_1texture_1_1_texture_sampler" ],
     [ "TLState", "classmoonray_1_1texture_1_1_t_l_state.html", "classmoonray_1_1texture_1_1_t_l_state" ],
     [ "TypedVDBSampler", "classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html", "classmoonray_1_1texture_1_1_typed_v_d_b_sampler" ],

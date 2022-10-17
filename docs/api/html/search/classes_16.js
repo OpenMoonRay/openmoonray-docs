@@ -9,6 +9,5 @@ var searchData=
   ['weightfunction_6',['WeightFunction',['../class_weight_function.html',1,'']]],
   ['wildcard_7',['Wildcard',['../struct_wildcard.html',1,'']]],
   ['wildexp_8',['Wildexp',['../classlpexp_1_1_wildexp.html',1,'lpexp']]],
-  ['workdistributor_9',['WorkDistributor',['../classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_work_distributor.html',1,'anonymous_namespace{test_ring_buffer.cc}']]],
-  ['wrappeddistancesquared_10',['WrappedDistanceSquared',['../struct_wrapped_distance_squared.html',1,'']]]
+  ['wrappeddistancesquared_9',['WrappedDistanceSquared',['../struct_wrapped_distance_squared.html',1,'']]]
 ];

@@ -293,7 +293,7 @@ template&lt;typename T &gt; </div>
 <p class="definition">Definition at line <a class="el" href="pd__progressive__generation_8cc_source.html#l00141">141</a> of file <a class="el" href="pd__progressive__generation_8cc_source.html">pd_progressive_generation.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  142</span>{</div>
 <div class="line"><span class="lineno">  143</span>    uint32_t seed = 0;</div>
-<div class="line"><span class="lineno">  144</span>    <span class="keywordtype">unsigned</span> <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> = 1024;</div>
+<div class="line"><span class="lineno">  144</span>    <span class="keywordtype">unsigned</span> count = 1024;</div>
 <div class="line"><span class="lineno">  145</span>    std::string filename(<span class="stringliteral">&quot;points.dat&quot;</span>);</div>
 <div class="line"><span class="lineno">  146</span> </div>
 <div class="line"><span class="lineno">  147</span>    <span class="keywordflow">try</span> {</div>
@@ -305,7 +305,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  153</span>            filename = parser.getModifier&lt;std::string&gt;(<span class="stringliteral">&quot;-out&quot;</span>, 0);</div>
 <div class="line"><span class="lineno">  154</span>        }</div>
 <div class="line"><span class="lineno">  155</span>        <span class="keywordflow">if</span> (parser.has(<span class="stringliteral">&quot;-count&quot;</span>)) {</div>
-<div class="line"><span class="lineno">  156</span>            <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> = parser.getModifier&lt;<span class="keywordtype">unsigned</span>&gt;(<span class="stringliteral">&quot;-count&quot;</span>, 0);</div>
+<div class="line"><span class="lineno">  156</span>            count = parser.getModifier&lt;<span class="keywordtype">unsigned</span>&gt;(<span class="stringliteral">&quot;-count&quot;</span>, 0);</div>
 <div class="line"><span class="lineno">  157</span>        }</div>
 <div class="line"><span class="lineno">  158</span>    } <span class="keywordflow">catch</span> (std::exception&amp; e) {</div>
 <div class="line"><span class="lineno">  159</span>        std::cerr &lt;&lt; e.what() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
@@ -319,7 +319,6 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  167</span>}</div>
 <div class="ttc" id="a_n_point_8h_html_a1e91cb34cb5cb30a85d091e2aea03b68"><div class="ttname"><a href="_n_point_8h.html#a1e91cb34cb5cb30a85d091e2aea03b68">writePoints</a></div><div class="ttdeci">void writePoints(const std::vector&lt; NPoint&lt; D &gt; &gt; &amp;points, std::ostream &amp;outs)</div><div class="ttdef"><b>Definition:</b> <a href="_n_point_8h_source.html#l00396">NPoint.h:396</a></div></div>
 <div class="ttc" id="aclass_argument_parser_html"><div class="ttname"><a href="class_argument_parser.html">ArgumentParser</a></div><div class="ttdef"><b>Definition:</b> <a href="_argument_parser_8h_source.html#l00028">ArgumentParser.h:29</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03_html_ac002aa9e7f277e6c84e4fe1aeb5bb8cb"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">moonray::rndr::unittest::anonymous_namespace{TestOverlappingRegions.cc}::count</a></div><div class="ttdeci">void count(const OverlappingRegions&lt; sRegionOverlap, sTileWidth, sTileHeight, sDesiredRegionsPerDimension &gt; &amp;regions, int line)</div><div class="ttdef"><b>Definition:</b> <a href="_test_overlapping_regions_8cc_source.html#l00024">TestOverlappingRegions.cc:24</a></div></div>
 <div class="ttc" id="apd__progressive__generation_8cc_html_aa296d26a7cd4d784bca03252e96755cd"><div class="ttname"><a href="pd__progressive__generation_8cc.html#aa296d26a7cd4d784bca03252e96755cd">run</a></div><div class="ttdeci">std::vector&lt; NPoint&lt; kDims &gt; &gt; run(uint32_t seed, unsigned numDesired)</div><div class="ttdef"><b>Definition:</b> <a href="pd__progressive__generation_8cc_source.html#l00044">pd_progressive_generation.cc:44</a></div></div>
 </div><!-- fragment -->
 </div>

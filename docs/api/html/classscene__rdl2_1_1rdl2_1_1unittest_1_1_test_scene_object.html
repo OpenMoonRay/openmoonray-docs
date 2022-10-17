@@ -1070,8 +1070,8 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_test_scene_object_8cc_source.html#l00591">591</a> of file <a class="el" href="_test_scene_object_8cc_source.html">TestSceneObject.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  592</span>{</div>
-<div class="line"><span class="lineno">  593</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a608a1b33b2e05e509ebaa7e2dc53d746">one</a> = 1;</div>
-<div class="line"><span class="lineno">  594</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#ad2817c5194070844a501a30f9976a961">two</a> = 2;</div>
+<div class="line"><span class="lineno">  593</span>    <span class="keywordtype">int</span> one = 1;</div>
+<div class="line"><span class="lineno">  594</span>    <span class="keywordtype">int</span> two = 2;</div>
 <div class="line"><span class="lineno">  595</span>    <span class="keywordtype">int</span> three = 3;</div>
 <div class="line"><span class="lineno">  596</span>    </div>
 <div class="line"><span class="lineno">  597</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> One = 1;</div>
@@ -1083,24 +1083,22 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  603</span>    </div>
 <div class="line"><span class="lineno">  604</span>    <span class="comment">// Lvalues where possible.</span></div>
 <div class="line"><span class="lineno">  605</span>    obj = <a class="code hl_variable" href="classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_scene_object.html#a2c4c0603590c6e653b80c8938942e79f">mDsoClass</a>-&gt;createObject(<span class="stringliteral">&quot;/seq/shot/pizza&quot;</span>);</div>
-<div class="line"><span class="lineno">  606</span>    obj-&gt;getOrCreate&lt;ExtensionTest&gt;(<a class="code hl_function" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a608a1b33b2e05e509ebaa7e2dc53d746">one</a>, <a class="code hl_function" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#ad2817c5194070844a501a30f9976a961">two</a>, three, 4);</div>
+<div class="line"><span class="lineno">  606</span>    obj-&gt;getOrCreate&lt;ExtensionTest&gt;(one, two, three, 4);</div>
 <div class="line"><span class="lineno">  607</span>    obj-&gt;get&lt;ExtensionTest&gt;().<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#ac1cb64841abd9664c25d5fe962574738">check</a>();</div>
 <div class="line"><span class="lineno">  608</span>    <a class="code hl_variable" href="classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_scene_object.html#a2c4c0603590c6e653b80c8938942e79f">mDsoClass</a>-&gt;destroyObject(obj);</div>
 <div class="line"><span class="lineno">  609</span> </div>
 <div class="line"><span class="lineno">  610</span>    <span class="comment">// Const lvalues where possible.</span></div>
 <div class="line"><span class="lineno">  611</span>    obj = <a class="code hl_variable" href="classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_scene_object.html#a2c4c0603590c6e653b80c8938942e79f">mDsoClass</a>-&gt;createObject(<span class="stringliteral">&quot;/seq/shot/pizza&quot;</span>);</div>
-<div class="line"><span class="lineno">  612</span>    obj-&gt;getOrCreate&lt;ExtensionTest&gt;(One, <a class="code hl_function" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#ad2817c5194070844a501a30f9976a961">two</a>, Three, 4);</div>
+<div class="line"><span class="lineno">  612</span>    obj-&gt;getOrCreate&lt;ExtensionTest&gt;(One, two, Three, 4);</div>
 <div class="line"><span class="lineno">  613</span>    obj-&gt;get&lt;ExtensionTest&gt;().<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#ac1cb64841abd9664c25d5fe962574738">check</a>();</div>
 <div class="line"><span class="lineno">  614</span>    <a class="code hl_variable" href="classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_scene_object.html#a2c4c0603590c6e653b80c8938942e79f">mDsoClass</a>-&gt;destroyObject(obj);</div>
 <div class="line"><span class="lineno">  615</span> </div>
 <div class="line"><span class="lineno">  616</span>    <span class="comment">// Rvalues where possible.</span></div>
 <div class="line"><span class="lineno">  617</span>    obj = <a class="code hl_variable" href="classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_scene_object.html#a2c4c0603590c6e653b80c8938942e79f">mDsoClass</a>-&gt;createObject(<span class="stringliteral">&quot;/seq/shot/pizza&quot;</span>);</div>
-<div class="line"><span class="lineno">  618</span>    obj-&gt;getOrCreate&lt;ExtensionTest&gt;(1, <a class="code hl_function" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#ad2817c5194070844a501a30f9976a961">two</a>, 3, 4);</div>
+<div class="line"><span class="lineno">  618</span>    obj-&gt;getOrCreate&lt;ExtensionTest&gt;(1, two, 3, 4);</div>
 <div class="line"><span class="lineno">  619</span>    obj-&gt;get&lt;ExtensionTest&gt;().<a class="code hl_function" href="namespacemoonray_1_1geom_1_1unittest.html#ac1cb64841abd9664c25d5fe962574738">check</a>();</div>
 <div class="line"><span class="lineno">  620</span>    <a class="code hl_variable" href="classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_scene_object.html#a2c4c0603590c6e653b80c8938942e79f">mDsoClass</a>-&gt;destroyObject(obj);</div>
 <div class="line"><span class="lineno">  621</span>}</div>
-<div class="ttc" id="anamespaceanonymous__namespace_02test__wait_8cc_03_html_a608a1b33b2e05e509ebaa7e2dc53d746"><div class="ttname"><a href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a608a1b33b2e05e509ebaa7e2dc53d746">anonymous_namespace{test_wait.cc}::one</a></div><div class="ttdeci">constexpr T one(static_cast&lt; T &gt;(1))</div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02test__wait_8cc_03_html_ad2817c5194070844a501a30f9976a961"><div class="ttname"><a href="namespaceanonymous__namespace_02test__wait_8cc_03.html#ad2817c5194070844a501a30f9976a961">anonymous_namespace{test_wait.cc}::two</a></div><div class="ttdeci">constexpr T two(static_cast&lt; T &gt;(2))</div></div>
 <div class="ttc" id="anamespacemoonray_1_1geom_1_1unittest_html_ac1cb64841abd9664c25d5fe962574738"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1unittest.html#ac1cb64841abd9664c25d5fe962574738">moonray::geom::unittest::check</a></div><div class="ttdeci">void check(const T &amp;t)</div><div class="ttdef"><b>Definition:</b> <a href="_test_geom_api_8cc_source.html#l00877">TestGeomApi.cc:877</a></div></div>
 </div><!-- fragment -->
 </div>

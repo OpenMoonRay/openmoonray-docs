@@ -268,7 +268,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   57</span>    <span class="comment">//         3) These types should produce lock-free atomics</span></div>
 <div class="line"><span class="lineno">   58</span>    <span class="keyword">struct </span><span class="keyword">alignas</span>(util::kAtomicAlignment) Float4Aligned</div>
 <div class="line"><span class="lineno">   59</span>    {</div>
-<div class="line"><span class="lineno">   60</span>        <span class="keywordtype">float</span> x, y, z, w;</div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, z, w;</div>
 <div class="line"><span class="lineno">   61</span>    };</div>
 <div class="line"><span class="lineno">   62</span>    Float4Aligned* <span class="keyword">const</span> dstStruct = <span class="keyword">reinterpret_cast&lt;</span>Float4Aligned*<span class="keyword">&gt;</span>(dst);</div>
 <div class="line"><span class="lineno">   63</span>    <span class="keyword">const</span> Float4Aligned* <span class="keyword">const</span> srcStruct = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>Float4Aligned*<span class="keyword">&gt;</span>(src);</div>
@@ -281,6 +281,8 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   70</span>    __atomic_load(srcStruct, dstStruct, __ATOMIC_RELAXED);</div>
 <div class="line"><span class="lineno">   71</span>}</div>
 <div class="ttc" id="a_platform_8h_html_ac6bd494653a0872080be86890bea8639"><div class="ttname"><a href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a></div><div class="ttdeci">#define MNRY_ASSERT(a,...)</div><div class="ttdoc">Use MNRY_ASSERT for assertions you want compiled out of opt builds.</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00425">Platform.h:425</a></div></div>
+<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

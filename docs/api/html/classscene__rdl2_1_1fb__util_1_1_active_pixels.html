@@ -1233,12 +1233,12 @@ template&lt;typename F &gt; </div>
 <div class="line"><span class="lineno">   85</span>    std::ostringstream ostr;</div>
 <div class="line"><span class="lineno">   86</span> </div>
 <div class="line"><span class="lineno">   87</span>    ostr &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;mask 0x&quot;</span> &lt;&lt; std::setw(16) &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; std::hex &lt;&lt; mask64 &lt;&lt; <span class="stringliteral">&quot; {\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 7; y &gt;= 0; --y) {</div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 7; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &gt;= 0; --<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
 <div class="line"><span class="lineno">   89</span>        ostr &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
-<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; 8; ++x) {</div>
-<div class="line"><span class="lineno">   91</span>            <span class="keywordflow">if</span> (mask64 &amp; (<span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x1) &lt;&lt; ((y &lt;&lt; 3) + x))) {</div>
+<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
+<div class="line"><span class="lineno">   91</span>            <span class="keywordflow">if</span> (mask64 &amp; (<span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x1) &lt;&lt; ((<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>))) {</div>
 <div class="line"><span class="lineno">   92</span>                <span class="comment">// ostr &lt;&lt; &quot;* &quot;;</span></div>
-<div class="line"><span class="lineno">   93</span>                ostr &lt;&lt; std::setw(2) &lt;&lt; std::oct &lt;&lt; ((y &lt;&lt; 3) + x) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><span class="lineno">   93</span>                ostr &lt;&lt; std::setw(2) &lt;&lt; std::oct &lt;&lt; ((<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><span class="lineno">   94</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">   95</span>                <span class="comment">// ostr &lt;&lt; &quot;. &quot;;</span></div>
 <div class="line"><span class="lineno">   96</span>                ostr &lt;&lt; <span class="stringliteral">&quot; . &quot;</span>;</div>
@@ -1249,6 +1249,8 @@ template&lt;typename F &gt; </div>
 <div class="line"><span class="lineno">  101</span>    ostr &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;}&quot;</span>;</div>
 <div class="line"><span class="lineno">  102</span>    <span class="keywordflow">return</span> ostr.str();</div>
 <div class="line"><span class="lineno">  103</span>}</div>
+<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

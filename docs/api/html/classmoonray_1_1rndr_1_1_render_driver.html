@@ -1482,7 +1482,7 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno"> 1290</span>    <span class="comment">//</span></div>
 <div class="line"><span class="lineno"> 1291</span>    std::vector&lt;Pass&gt; newPasses;</div>
 <div class="line"><span class="lineno"> 1292</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="namespaceanimate__plot.html#a41e1e0b4a88ca08aec463225f921720c">fs</a>.mSamplingMode == <a class="code hl_enumvalue" href="namespacemoonray_1_1rndr.html#a5de5c1d6313b7563d80eb65e13a1a06ea891f35a29c3d51d02ffd42dd6dcc69b2">SamplingMode::UNIFORM</a>) {</div>
-<div class="line"><span class="lineno"> 1293</span>        <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_checkpoint_resume_8cc_03.html#a706b2543795ccc3c4e4796a7719c9fe2">convertSampleIdRangeToPasses</a>(startSampleId, endSampleId, newPasses);</div>
+<div class="line"><span class="lineno"> 1293</span>        convertSampleIdRangeToPasses(startSampleId, endSampleId, newPasses);</div>
 <div class="line"><span class="lineno"> 1294</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno"> 1295</span>        convertSampleIdRangeToPassesAdaptive&lt;false&gt;(startSampleId, endSampleId,</div>
 <div class="line"><span class="lineno"> 1296</span>                                                    *adaptiveIterationPixSampleIdTable, newPasses,</div>
@@ -1524,7 +1524,6 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno"> 1332</span>}</div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_driver_html_a630eff5a6f585937147db99538c629ec"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_driver.html#a630eff5a6f585937147db99538c629ec">moonray::rndr::RenderDriver::checkpointModeStr</a></div><div class="ttdeci">static std::string checkpointModeStr(const CheckpointMode &amp;mode)</div><div class="ttdef"><b>Definition:</b> <a href="_render_frame_checkpoint_resume_8cc_source.html#l01372">RenderFrameCheckpointResume.cc:1372</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1mcrt__common_html_a7ff501cd76f8ecfcbb6268b8725d57f0"><div class="ttname"><a href="namespacemoonray_1_1mcrt__common.html#a7ff501cd76f8ecfcbb6268b8725d57f0">moonray::mcrt_common::getNumTBBThreads</a></div><div class="ttdeci">unsigned getNumTBBThreads()</div><div class="ttdef"><b>Definition:</b> <a href="_thread_local_state_8cc_source.html#l00380">ThreadLocalState.cc:380</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_checkpoint_resume_8cc_03_html_a706b2543795ccc3c4e4796a7719c9fe2"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_checkpoint_resume_8cc_03.html#a706b2543795ccc3c4e4796a7719c9fe2">moonray::rndr::anonymous_namespace{RenderFrameCheckpointResume.cc}::convertSampleIdRangeToPasses</a></div><div class="ttdeci">void convertSampleIdRangeToPasses(const unsigned startSampleId, const unsigned endSampleId, std::vector&lt; Pass &gt; &amp;passes)</div><div class="ttdef"><b>Definition:</b> <a href="_render_frame_checkpoint_resume_8cc_source.html#l00051">RenderFrameCheckpointResume.cc:51</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1rndr_html_ab482b33a0962d149bab8d070686979dea9cebf3255a18213ffaec375a4de1ebb9"><div class="ttname"><a href="namespacemoonray_1_1rndr.html#ab482b33a0962d149bab8d070686979dea9cebf3255a18213ffaec375a4de1ebb9">moonray::rndr::RenderMode::PROGRESS_CHECKPOINT</a></div><div class="ttdeci">@ PROGRESS_CHECKPOINT</div></div>
 </div><!-- fragment -->
 </div>
@@ -1987,12 +1986,12 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">  553</span>    }</div>
 <div class="line"><span class="lineno">  554</span> </div>
 <div class="line"><span class="lineno">  555</span>    <span class="keywordtype">int</span> qualitySteps =</div>
-<div class="line"><span class="lineno">  556</span>        <a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a52e0edcb63babb42efbac0582c6ea058">calcQualityStepsWithSampleStartControl</a>(checkpointStartSPP,</div>
+<div class="line"><span class="lineno">  556</span>        calcQualityStepsWithSampleStartControl(checkpointStartSPP,</div>
 <div class="line"><span class="lineno">  557</span>                                               maxSPP,</div>
 <div class="line"><span class="lineno">  558</span>                                               internalTotalCheckpointFiles,</div>
 <div class="line"><span class="lineno">  559</span>                                               tblPtr);</div>
 <div class="line"><span class="lineno">  560</span> </div>
-<div class="line"><span class="lineno">  561</span>    logMessage = <a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a81176a1eca4a79d34a50eb7e5623f287">showCheckpointSampleTable</a>(userDefinedTotalCheckpointFiles,</div>
+<div class="line"><span class="lineno">  561</span>    logMessage = showCheckpointSampleTable(userDefinedTotalCheckpointFiles,</div>
 <div class="line"><span class="lineno">  562</span>                                           checkpointStartSPP,</div>
 <div class="line"><span class="lineno">  563</span>                                           maxSPP,</div>
 <div class="line"><span class="lineno">  564</span>                                           qualitySteps,</div>
@@ -2001,8 +2000,6 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">  567</span>    <span class="keywordflow">return</span> qualitySteps;</div>
 <div class="line"><span class="lineno">  568</span>}</div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_driver_html_a7b182400fd05239245ff2de440afc15d"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_driver.html#a7b182400fd05239245ff2de440afc15d">moonray::rndr::RenderDriver::createKJSequenceTable</a></div><div class="ttdeci">static std::vector&lt; unsigned &gt; createKJSequenceTable(const unsigned maxSampleId)</div><div class="ttdef"><b>Definition:</b> <a href="_render_frame_checkpoint_resume_8cc_source.html#l00435">RenderFrameCheckpointResume.cc:435</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03_html_a52e0edcb63babb42efbac0582c6ea058"><div class="ttname"><a href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a52e0edcb63babb42efbac0582c6ea058">anonymous_namespace{RenderDriverCheckpointUtil.cc}::calcQualityStepsWithSampleStartControl</a></div><div class="ttdeci">int calcQualityStepsWithSampleStartControl(int minSPP, int maxSPP, int requestedNumFiles, const std::vector&lt; unsigned &gt; *sequenceTbl)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_checkpoint_util_8cc_source.html#l00249">RenderDriverCheckpointUtil.cc:249</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03_html_a81176a1eca4a79d34a50eb7e5623f287"><div class="ttname"><a href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a81176a1eca4a79d34a50eb7e5623f287">anonymous_namespace{RenderDriverCheckpointUtil.cc}::showCheckpointSampleTable</a></div><div class="ttdeci">std::string showCheckpointSampleTable(int userDefinedNumFiles, int min, int max, int steps, const std::vector&lt; unsigned &gt; *sequenceTbl, int *totalFilesForVerify=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_checkpoint_util_8cc_source.html#l00069">RenderDriverCheckpointUtil.cc:69</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2155,9 +2152,8 @@ template&lt;typename F &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_render_frame_checkpoint_resume_8cc_source.html#l00435">435</a> of file <a class="el" href="_render_frame_checkpoint_resume_8cc_source.html">RenderFrameCheckpointResume.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  436</span>{</div>
-<div class="line"><span class="lineno">  437</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_checkpoint_resume_8cc_03.html#aaf4ecfa667f88fd6313cf57e0f514889">createAdaptiveIterationPixSampleIdTable</a>(maxSampleId);</div>
+<div class="line"><span class="lineno">  437</span>    <span class="keywordflow">return</span> createAdaptiveIterationPixSampleIdTable(maxSampleId);</div>
 <div class="line"><span class="lineno">  438</span>}</div>
-<div class="ttc" id="anamespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_checkpoint_resume_8cc_03_html_aaf4ecfa667f88fd6313cf57e0f514889"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_checkpoint_resume_8cc_03.html#aaf4ecfa667f88fd6313cf57e0f514889">moonray::rndr::anonymous_namespace{RenderFrameCheckpointResume.cc}::createAdaptiveIterationPixSampleIdTable</a></div><div class="ttdeci">std::vector&lt; unsigned &gt; createAdaptiveIterationPixSampleIdTable(const unsigned maxSampleId)</div><div class="ttdef"><b>Definition:</b> <a href="_render_frame_checkpoint_resume_8cc_source.html#l00091">RenderFrameCheckpointResume.cc:91</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2523,7 +2519,7 @@ template&lt;typename F &gt; </div>
 <div class="line"><span class="lineno"> 1087</span> </div>
 <div class="line"><span class="lineno"> 1088</span>        default : { <span class="comment">// adaptive sampling</span></div>
 <div class="line"><span class="lineno"> 1089</span>            <span class="keywordtype">unsigned</span> pixStartSampleId = (startTileSampleId + fillUpSamples) / 64;</div>
-<div class="line"><span class="lineno"> 1090</span>            <span class="keywordtype">unsigned</span> pixEndSampleId = <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_checkpoint_resume_8cc_03.html#acc74220854f007dccfae49f60d7a60ec">findAdaptiveEndPixSampleId</a>(*adaptiveIterationPixSampleIdTable,</div>
+<div class="line"><span class="lineno"> 1090</span>            <span class="keywordtype">unsigned</span> pixEndSampleId = findAdaptiveEndPixSampleId(*adaptiveIterationPixSampleIdTable,</div>
 <div class="line"><span class="lineno"> 1091</span>                                                                 pixStartSampleId,</div>
 <div class="line"><span class="lineno"> 1092</span>                                                                 <a class="code hl_variable" href="namespaceanimate__plot.html#a41e1e0b4a88ca08aec463225f921720c">fs</a>.mCheckpointQualitySteps);</div>
 <div class="line"><span class="lineno"> 1093</span>            estimatedSamplesPerTile =</div>
@@ -2546,7 +2542,6 @@ template&lt;typename F &gt; </div>
 <div class="line"><span class="lineno"> 1110</span> </div>
 <div class="line"><span class="lineno"> 1111</span>    <span class="keywordflow">return</span> estimatedSamplesPerTile;</div>
 <div class="line"><span class="lineno"> 1112</span>}</div>
-<div class="ttc" id="anamespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_checkpoint_resume_8cc_03_html_acc74220854f007dccfae49f60d7a60ec"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_checkpoint_resume_8cc_03.html#acc74220854f007dccfae49f60d7a60ec">moonray::rndr::anonymous_namespace{RenderFrameCheckpointResume.cc}::findAdaptiveEndPixSampleId</a></div><div class="ttdeci">unsigned findAdaptiveEndPixSampleId(const std::vector&lt; unsigned &gt; &amp;adaptiveIterationPixSampleIdTbl, const unsigned startPixSampleId, const unsigned adaptiveIterationSteps)</div><div class="ttdef"><b>Definition:</b> <a href="_render_frame_checkpoint_resume_8cc_source.html#l00318">RenderFrameCheckpointResume.cc:318</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3970,7 +3965,7 @@ template&lt;typename F &gt; </div>
 <div class="line"><span class="lineno">  823</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_render_driver.html#a86be12e9eaf320068b67777ef2597349">UIntTable</a> *adaptiveIterationPixSampleIdTablePtr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  824</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="namespaceanimate__plot.html#a41e1e0b4a88ca08aec463225f921720c">fs</a>.mSamplingMode != <a class="code hl_enumvalue" href="namespacemoonray_1_1rndr.html#a5de5c1d6313b7563d80eb65e13a1a06ea891f35a29c3d51d02ffd42dd6dcc69b2">SamplingMode::UNIFORM</a>) {</div>
 <div class="line"><span class="lineno">  825</span>        <span class="comment">// Adaptive sampling case, we setup adaptiveIterationPixSampleIdTable</span></div>
-<div class="line"><span class="lineno">  826</span>        adaptiveIterationPixSampleIdTable = <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_checkpoint_resume_8cc_03.html#aaf4ecfa667f88fd6313cf57e0f514889">createAdaptiveIterationPixSampleIdTable</a>(<a class="code hl_variable" href="namespaceanimate__plot.html#a41e1e0b4a88ca08aec463225f921720c">fs</a>.mMaxSamplesPerPixel);</div>
+<div class="line"><span class="lineno">  826</span>        adaptiveIterationPixSampleIdTable = createAdaptiveIterationPixSampleIdTable(<a class="code hl_variable" href="namespaceanimate__plot.html#a41e1e0b4a88ca08aec463225f921720c">fs</a>.mMaxSamplesPerPixel);</div>
 <div class="line"><span class="lineno">  827</span>        adaptiveIterationPixSampleIdTablePtr = &amp;adaptiveIterationPixSampleIdTable;</div>
 <div class="line"><span class="lineno">  828</span> </div>
 <div class="line"><span class="lineno">  829</span>        <span class="comment">// We do enable adjust adaptiveTree update timing logic for checkpoint + adaptive sampling.</span></div>
@@ -4157,7 +4152,7 @@ template&lt;typename F &gt; </div>
 <div class="line"><span class="lineno">  459</span>    <span class="comment">// Don&#39;t render any more if user has triggered a cancel.</span></div>
 <div class="line"><span class="lineno">  460</span>    <span class="keywordflow">if</span> (workQueue-&gt;getNumPasses() &gt; 0) {</div>
 <div class="line"><span class="lineno">  461</span> </div>
-<div class="line"><span class="lineno">  462</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_8cc_03.html#a6bd6b0e0dd2eb50d7ed44acdae98bcd1">getPrimaryTLS</a>()-&gt;mPbrTls-&gt;isCanceled()) {</div>
+<div class="line"><span class="lineno">  462</span>        <span class="keywordflow">if</span> (!getPrimaryTLS()-&gt;mPbrTls-&gt;isCanceled()) {</div>
 <div class="line"><span class="lineno">  463</span>            <span class="keywordtype">bool</span> enablePathGuide = <a class="code hl_variable" href="namespaceanimate__plot.html#a41e1e0b4a88ca08aec463225f921720c">fs</a>.mIntegrator-&gt;getEnablePathGuide();</div>
 <div class="line"><span class="lineno">  464</span>            <span class="comment">// Clamp coarse passes for display filters. Some pixels do not</span></div>
 <div class="line"><span class="lineno">  465</span>            <span class="comment">// yet have data during coarse passes so display filters</span></div>
@@ -4218,7 +4213,6 @@ template&lt;typename F &gt; </div>
 <div class="line"><span class="lineno">  520</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  521</span>}</div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_render_driver_html_ab8531bdc87e83aa72c07a94e83ab0236"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_render_driver.html#ab8531bdc87e83aa72c07a94e83ab0236">moonray::rndr::RenderDriver::runDisplayFiltersEndOfPass</a></div><div class="ttdeci">static void runDisplayFiltersEndOfPass(RenderDriver *driver, const FrameState &amp;fs)</div><div class="ttdef"><b>Definition:</b> <a href="_render_frame_8cc_source.html#l00414">RenderFrame.cc:414</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_8cc_03_html_a6bd6b0e0dd2eb50d7ed44acdae98bcd1"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_8cc_03.html#a6bd6b0e0dd2eb50d7ed44acdae98bcd1">moonray::rndr::anonymous_namespace{RenderFrame.cc}::getPrimaryTLS</a></div><div class="ttdeci">mcrt_common::ThreadLocalState * getPrimaryTLS()</div><div class="ttdef"><b>Definition:</b> <a href="_render_frame_8cc_source.html#l00051">RenderFrame.cc:51</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4454,7 +4448,7 @@ template&lt;typename F &gt; </div>
 <div class="line"><span class="lineno">   92</span>    verifyPassesLogicForAdaptiveSampling();</div>
 <div class="line"><span class="lineno">   93</span><span class="preprocessor">#   endif </span><span class="comment">// end VERIFY_ADAPTIVE_SAMPLING_PASSES_CONVERSION_LOGIC</span></div>
 <div class="line"><span class="lineno">   94</span> </div>
-<div class="line"><span class="lineno">   95</span>    <a class="code hl_define" href="_profile_accumulator_8h.html#a96b8f24c9dd8891d6711950ed7ca4bfa">ACCUMULATOR_PROFILE</a>(<a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_8cc_03.html#a6bd6b0e0dd2eb50d7ed44acdae98bcd1">getPrimaryTLS</a>(), <a class="code hl_define" href="_profile_accumulator_handles_8h.html#ab4096354b5f001e011355b8ba8f2aac9">ACCUM_ROOT</a>);</div>
+<div class="line"><span class="lineno">   95</span>    <a class="code hl_define" href="_profile_accumulator_8h.html#a96b8f24c9dd8891d6711950ed7ca4bfa">ACCUMULATOR_PROFILE</a>(getPrimaryTLS(), <a class="code hl_define" href="_profile_accumulator_handles_8h.html#ab4096354b5f001e011355b8ba8f2aac9">ACCUM_ROOT</a>);</div>
 <div class="line"><span class="lineno">   96</span> </div>
 <div class="line"><span class="lineno">   97</span>    <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_variable" href="namespaceanimate__plot.html#a41e1e0b4a88ca08aec463225f921720c">fs</a>.mIntegrator);</div>
 <div class="line"><span class="lineno">   98</span> </div>
@@ -4867,7 +4861,7 @@ template&lt;typename F &gt; </div>
 <div class="line"><span class="lineno">  144</span>        <span class="comment">// from under us as other threads are subsequently spawned.</span></div>
 <div class="line"><span class="lineno">  145</span> </div>
 <div class="line"><span class="lineno">  146</span><span class="preprocessor">#ifdef FORCE_SINGLE_THREADED_RENDERING</span></div>
-<div class="line"><span class="lineno">  147</span>        <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_passes_8cc_03.html#a55a59904fbd92f09e285ed62d3fb0dca">callLambda</a>([&amp;, topLevelTls]()</div>
+<div class="line"><span class="lineno">  147</span>        callLambda([&amp;, topLevelTls]()</div>
 <div class="line"><span class="lineno">  148</span>#<span class="keywordflow">else</span></div>
 <div class="line"><span class="lineno">  149</span>        taskGroup.run([&amp;, topLevelTls]()</div>
 <div class="line"><span class="lineno">  150</span>#endif</div>
@@ -5102,7 +5096,6 @@ template&lt;typename F &gt; </div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_material_html_a465b7d365fa025e79aaad6f0ea4710ee"><div class="ttname"><a href="classmoonray_1_1shading_1_1_material.html#a465b7d365fa025e79aaad6f0ea4710ee">moonray::shading::Material::flushNonEmptyShadeQueue</a></div><div class="ttdeci">static unsigned flushNonEmptyShadeQueue(mcrt_common::ThreadLocalState *tls)</div><div class="ttdef"><b>Definition:</b> <a href="moonray-main_2lib_2rendering_2shading_2_material_8cc_source.html#l00198">Material.cc:198</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1mcrt__common_html_a9ed5a00d72297353ccc170aa2e741b75"><div class="ttname"><a href="namespacemoonray_1_1mcrt__common.html#a9ed5a00d72297353ccc170aa2e741b75">moonray::mcrt_common::getTLSList</a></div><div class="ttdeci">ThreadLocalState * getTLSList()</div><div class="ttdef"><b>Definition:</b> <a href="_thread_local_state_8cc_source.html#l00386">ThreadLocalState.cc:386</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1mcrt__common_html_afa1e0f71923d0396b6108c0ff5402715"><div class="ttname"><a href="namespacemoonray_1_1mcrt__common.html#afa1e0f71923d0396b6108c0ff5402715">moonray::mcrt_common::getThreadIdx</a></div><div class="ttdeci">finline uint32_t getThreadIdx(const void *tls)</div><div class="ttdef"><b>Definition:</b> <a href="lib_2rendering_2mcrt__common_2util_8h_source.html#l00062">Util.h:62</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_passes_8cc_03_html_a55a59904fbd92f09e285ed62d3fb0dca"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_passes_8cc_03.html#a55a59904fbd92f09e285ed62d3fb0dca">moonray::rndr::anonymous_namespace{RenderFramePasses.cc}::callLambda</a></div><div class="ttdeci">void callLambda(F f)</div><div class="ttdef"><b>Definition:</b> <a href="_render_frame_passes_8cc_source.html#l00057">RenderFramePasses.cc:57</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -6857,7 +6850,7 @@ template&lt;bool adaptive&gt; </div>
 <div class="line"><span class="lineno">  489</span>            <span class="comment">// We need to enable adjust adaptiveTree update timing logic and execute adaptiveTreeUpdate operation by current film</span></div>
 <div class="line"><span class="lineno">  490</span>            <span class="comment">// condition before start rendering under resume adaptive sampling rendering mode.</span></div>
 <div class="line"><span class="lineno">  491</span>            <a class="code hl_typedef" href="classmoonray_1_1rndr_1_1_render_driver.html#a86be12e9eaf320068b67777ef2597349">UIntTable</a> adaptiveIterationPixSampleIdTable =</div>
-<div class="line"><span class="lineno">  492</span>                <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_checkpoint_resume_8cc_03.html#aaf4ecfa667f88fd6313cf57e0f514889">createAdaptiveIterationPixSampleIdTable</a>(<a class="code hl_variable" href="namespaceanimate__plot.html#a41e1e0b4a88ca08aec463225f921720c">fs</a>.mMaxSamplesPerPixel);</div>
+<div class="line"><span class="lineno">  492</span>                createAdaptiveIterationPixSampleIdTable(<a class="code hl_variable" href="namespaceanimate__plot.html#a41e1e0b4a88ca08aec463225f921720c">fs</a>.mMaxSamplesPerPixel);</div>
 <div class="line"><span class="lineno">  493</span>            film.enableAdjustAdaptiveTreeUpdateTiming(adaptiveIterationPixSampleIdTable);</div>
 <div class="line"><span class="lineno">  494</span>            film.updateAdaptiveErrorAll(film.getRenderBuffer(), *film.getRenderBufferOdd(), <a class="code hl_variable" href="namespaceanimate__plot.html#a41e1e0b4a88ca08aec463225f921720c">fs</a>.mTargetAdaptiveError);</div>
 <div class="line"><span class="lineno">  495</span> </div>
@@ -6906,7 +6899,7 @@ template&lt;bool adaptive&gt; </div>
 <div class="line"><span class="lineno">  538</span> </div>
 <div class="line"><span class="lineno">  539</span>            <span class="comment">// Setup start condition for uniform resume sampling. This is important for progress info</span></div>
 <div class="line"><span class="lineno">  540</span>            <span class="keywordtype">unsigned</span> startSamples =</div>
-<div class="line"><span class="lineno">  541</span>                <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_checkpoint_resume_8cc_03.html#a8d656a80318eba10d9c90c079c6682de">calcStartResumeUniformSampleTotal</a>(driver-&gt;mUnalignedW,</div>
+<div class="line"><span class="lineno">  541</span>                calcStartResumeUniformSampleTotal(driver-&gt;mUnalignedW,</div>
 <div class="line"><span class="lineno">  542</span>                                                  driver-&gt;mUnalignedH,</div>
 <div class="line"><span class="lineno">  543</span>                                                  progressCheckpointStartTileSampleId);</div>
 <div class="line"><span class="lineno">  544</span>            driver-&gt;mProgressEstimation.setStartUniformSamples(startSamples);</div>
@@ -6918,7 +6911,7 @@ template&lt;bool adaptive&gt; </div>
 <div class="line"><span class="lineno">  550</span>                <span class="comment">//</span></div>
 <div class="line"><span class="lineno">  551</span>                <span class="comment">// re-create workQueue based on resume start sampleId for first renderPasses()</span></div>
 <div class="line"><span class="lineno">  552</span>                std::vector&lt;Pass&gt; newPasses;</div>
-<div class="line"><span class="lineno">  553</span>                <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_checkpoint_resume_8cc_03.html#a706b2543795ccc3c4e4796a7719c9fe2">convertSampleIdRangeToPasses</a>(startSampleId, endSampleId, newPasses);</div>
+<div class="line"><span class="lineno">  553</span>                convertSampleIdRangeToPasses(startSampleId, endSampleId, newPasses);</div>
 <div class="line"><span class="lineno">  554</span><span class="preprocessor">#               ifdef PRINT_DEBUG_MESSAGE_PROGRESS_CHECKPOINT</span></div>
 <div class="line"><span class="lineno">  555</span>                std::cerr &lt;&lt; <span class="stringliteral">&quot;&gt;&gt; RenderFrameCheckpointResume.cc 1st estimate renderPasses &quot;</span></div>
 <div class="line"><span class="lineno">  556</span>                          &lt;&lt; showAllPasses(<span class="stringliteral">&quot;&quot;</span>, newPasses) &lt;&lt; std::endl;</div>
@@ -6937,7 +6930,6 @@ template&lt;bool adaptive&gt; </div>
 <div class="line"><span class="lineno">  569</span> </div>
 <div class="line"><span class="lineno">  570</span>    <span class="keywordflow">return</span> progressCheckpointStartTileSampleId;</div>
 <div class="line"><span class="lineno">  571</span>}</div>
-<div class="ttc" id="anamespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_checkpoint_resume_8cc_03_html_a8d656a80318eba10d9c90c079c6682de"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_frame_checkpoint_resume_8cc_03.html#a8d656a80318eba10d9c90c079c6682de">moonray::rndr::anonymous_namespace{RenderFrameCheckpointResume.cc}::calcStartResumeUniformSampleTotal</a></div><div class="ttdeci">unsigned calcStartResumeUniformSampleTotal(const unsigned unAlignedW, const unsigned unAlignedH, const unsigned checkpointStartTileSampleId)</div><div class="ttdef"><b>Definition:</b> <a href="_render_frame_checkpoint_resume_8cc_source.html#l00338">RenderFrameCheckpointResume.cc:338</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -10389,7 +10381,7 @@ template&lt;typename DST_PIXEL_TYPE , typename SRC_PIXEL_TYPE , typename HAS_DAT
 <div class="line"><span class="lineno">  811</span>    }</div>
 <div class="line"><span class="lineno">  812</span> </div>
 <div class="line"><span class="lineno">  813</span>    std::vector&lt;Pass&gt; passes;</div>
-<div class="line"><span class="lineno">  814</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_driver.html#a09e9dfee9c435f59906f1b86be4b0a8a">mLastCoarsePassIdx</a> = <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_driver_8cc_03.html#ad995867c22fc2c02e934bd53b0f058c8">initPasses</a>(&amp;passes, <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_driver.html#ab378117d0313c269091f06e4781f00dc">mFs</a>.<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_frame_state.html#ac8d5c6e5c583bca85612b11b4296417e">mMaxSamplesPerPixel</a>, <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_driver.html#ab378117d0313c269091f06e4781f00dc">mFs</a>.<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_frame_state.html#aef2b23734699f1d40c65d1bd8c54bf60">mRenderMode</a>, <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_driver.html#ab378117d0313c269091f06e4781f00dc">mFs</a>.<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_frame_state.html#a49f14bc438690dea82db1f2199968268">mSamplingMode</a>);</div>
+<div class="line"><span class="lineno">  814</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_driver.html#a09e9dfee9c435f59906f1b86be4b0a8a">mLastCoarsePassIdx</a> = initPasses(&amp;passes, <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_driver.html#ab378117d0313c269091f06e4781f00dc">mFs</a>.<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_frame_state.html#ac8d5c6e5c583bca85612b11b4296417e">mMaxSamplesPerPixel</a>, <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_driver.html#ab378117d0313c269091f06e4781f00dc">mFs</a>.<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_frame_state.html#aef2b23734699f1d40c65d1bd8c54bf60">mRenderMode</a>, <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_driver.html#ab378117d0313c269091f06e4781f00dc">mFs</a>.<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_frame_state.html#a49f14bc438690dea82db1f2199968268">mSamplingMode</a>);</div>
 <div class="line"><span class="lineno">  815</span> </div>
 <div class="line"><span class="lineno">  816</span>    <span class="comment">// Reset progress state.</span></div>
 <div class="line"><span class="lineno">  817</span>    <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_driver.html#a511a0abf3af1fae3c40b198300dfd873">mReadyForDisplay</a> = <span class="keyword">false</span>;</div>
@@ -10419,7 +10411,7 @@ template&lt;typename DST_PIXEL_TYPE , typename SRC_PIXEL_TYPE , typename HAS_DAT
 <div class="line"><span class="lineno">  841</span>        <span class="keywordtype">size_t</span> *samplesPerPass = <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  842</span> </div>
 <div class="line"><span class="lineno">  843</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_driver.html#ab378117d0313c269091f06e4781f00dc">mFs</a>.<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_frame_state.html#aef2b23734699f1d40c65d1bd8c54bf60">mRenderMode</a> != <a class="code hl_enumvalue" href="namespacemoonray_1_1rndr.html#ab482b33a0962d149bab8d070686979dea4abfc22ad3c3ef567d80c65263fd7754">RenderMode::REALTIME</a> &amp;&amp; <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_driver.html#ab378117d0313c269091f06e4781f00dc">mFs</a>.<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_frame_state.html#aef2b23734699f1d40c65d1bd8c54bf60">mRenderMode</a> != <a class="code hl_enumvalue" href="namespacemoonray_1_1rndr.html#ab482b33a0962d149bab8d070686979dea9cebf3255a18213ffaec375a4de1ebb9">RenderMode::PROGRESS_CHECKPOINT</a>) {</div>
-<div class="line"><span class="lineno">  844</span>            <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_driver_8cc_03.html#a643c708b3a311214aa5d0e31271c830e">computeSamplesPerPass</a>(<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_driver.html#afcb20849e27a934e77c59f595c09866f">mSamplesPerPass</a>, passes,</div>
+<div class="line"><span class="lineno">  844</span>            computeSamplesPerPass(<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_driver.html#afcb20849e27a934e77c59f595c09866f">mSamplesPerPass</a>, passes,</div>
 <div class="line"><span class="lineno">  845</span>                                  <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_driver.html#a461ab6db97706a597b9e14c4402b4b45">mTileScheduler</a>-&gt;getTiles(),</div>
 <div class="line"><span class="lineno">  846</span>                                  <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_driver.html#ab378117d0313c269091f06e4781f00dc">mFs</a>.<a class="code hl_variable" href="structmoonray_1_1rndr_1_1_frame_state.html#abaa7292502c2aff61189ca4c1e147f9e">mViewport</a>,</div>
 <div class="line"><span class="lineno">  847</span>                                  <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_render_driver.html#a461ab6db97706a597b9e14c4402b4b45">mTileScheduler</a>-&gt;isDistributed());</div>
@@ -10508,8 +10500,6 @@ template&lt;typename DST_PIXEL_TYPE , typename SRC_PIXEL_TYPE , typename HAS_DAT
 <div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_context_html_afd4f28f69af1909b57c300d7d018e3f5"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#afd4f28f69af1909b57c300d7d018e3f5">scene_rdl2::rdl2::SceneContext::getResumableOutput</a></div><div class="ttdeci">finline bool getResumableOutput() const</div><div class="ttdef"><b>Definition:</b> <a href="_scene_context_8h_source.html#l00539">SceneContext.h:539</a></div></div>
 <div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_variables_html"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_variables.html">scene_rdl2::rdl2::SceneVariables</a></div><div class="ttdef"><b>Definition:</b> <a href="_scene_variables_8h_source.html#l00078">SceneVariables.h:79</a></div></div>
 <div class="ttc" id="aimmintrin__emu_8h_html_a142050680749415346125493d63b8810"><div class="ttname"><a href="immintrin__emu_8h.html#a142050680749415346125493d63b8810">double</a></div><div class="ttdeci">double</div><div class="ttdef"><b>Definition:</b> <a href="immintrin__emu_8h_source.html#l00610">immintrin_emu.h:610</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_driver_8cc_03_html_a643c708b3a311214aa5d0e31271c830e"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_driver_8cc_03.html#a643c708b3a311214aa5d0e31271c830e">moonray::rndr::anonymous_namespace{RenderDriver.cc}::computeSamplesPerPass</a></div><div class="ttdeci">size_t computeSamplesPerPass(size_t *samplesPerPass, const std::vector&lt; Pass &gt; &amp;passes, const std::vector&lt; scene_rdl2::fb_util::Tile &gt; &amp;tiles, const scene_rdl2::math::Viewport &amp;viewport, bool distributed)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_8cc_source.html#l00181">RenderDriver.cc:181</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_driver_8cc_03_html_ad995867c22fc2c02e934bd53b0f058c8"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_render_driver_8cc_03.html#ad995867c22fc2c02e934bd53b0f058c8">moonray::rndr::anonymous_namespace{RenderDriver.cc}::initPasses</a></div><div class="ttdeci">unsigned initPasses(std::vector&lt; Pass &gt; *passes, unsigned samplesPerPixel, RenderMode renderMode, SamplingMode samplingMode)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_8cc_source.html#l00407">RenderDriver.cc:407</a></div></div>
 <div class="ttc" id="astructmoonray_1_1rndr_1_1_frame_state_html_a08444a56b56bdeb52ba989d84b322263"><div class="ttname"><a href="structmoonray_1_1rndr_1_1_frame_state.html#a08444a56b56bdeb52ba989d84b322263">moonray::rndr::FrameState::mDeepIDChannelNames</a></div><div class="ttdeci">std::vector&lt; std::string &gt; * mDeepIDChannelNames</div><div class="ttdef"><b>Definition:</b> <a href="_frame_state_8h_source.html#l00068">FrameState.h:68</a></div></div>
 <div class="ttc" id="astructmoonray_1_1rndr_1_1_frame_state_html_a14afb02f445af4cc465a739ae9146886"><div class="ttname"><a href="structmoonray_1_1rndr_1_1_frame_state.html#a14afb02f445af4cc465a739ae9146886">moonray::rndr::FrameState::mDeepMaxLayers</a></div><div class="ttdeci">int mDeepMaxLayers</div><div class="ttdef"><b>Definition:</b> <a href="_frame_state_8h_source.html#l00069">FrameState.h:69</a></div></div>
 <div class="ttc" id="astructmoonray_1_1rndr_1_1_frame_state_html_a257513865039d797cc10b8189f0d2a08"><div class="ttname"><a href="structmoonray_1_1rndr_1_1_frame_state.html#a257513865039d797cc10b8189f0d2a08">moonray::rndr::FrameState::mDeepZTolerance</a></div><div class="ttdeci">float mDeepZTolerance</div><div class="ttdef"><b>Definition:</b> <a href="_frame_state_8h_source.html#l00066">FrameState.h:66</a></div></div>
@@ -10889,14 +10879,14 @@ template&lt;typename DST_PIXEL_TYPE , typename SRC_PIXEL_TYPE , typename HAS_DAT
 <div class="line"><span class="lineno">  635</span> </div>
 <div class="line"><span class="lineno">  636</span>    std::string verifyMsgMainLogic, verifyMsgLogMessage;</div>
 <div class="line"><span class="lineno">  637</span>    <span class="keywordtype">bool</span> mainLogicVerifyResult =</div>
-<div class="line"><span class="lineno">  638</span>        <a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a7db3c538a57565ed9431e324ab5555a7">verifyConvertTotalCheckpointToQStepsMainLogic</a>(checkpointStartSPP,</div>
+<div class="line"><span class="lineno">  638</span>        verifyConvertTotalCheckpointToQStepsMainLogic(checkpointStartSPP,</div>
 <div class="line"><span class="lineno">  639</span>                                                      maxSPP,</div>
 <div class="line"><span class="lineno">  640</span>                                                      userDefinedTotalCheckpointFiles,</div>
 <div class="line"><span class="lineno">  641</span>                                                      verifyQSteps,</div>
 <div class="line"><span class="lineno">  642</span>                                                      tblPtr,</div>
 <div class="line"><span class="lineno">  643</span>                                                      (verifyErrorMessage) ? &amp;verifyMsgMainLogic : <span class="keyword">nullptr</span>);</div>
 <div class="line"><span class="lineno">  644</span>    <span class="keywordtype">bool</span> logMessageVerifyResult =</div>
-<div class="line"><span class="lineno">  645</span>        <a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a848d84902bd1b01650f9eaacaa0394f0">verifyConvertTotalCheckpointToQStepsLogMessage</a>(checkpointStartSPP,</div>
+<div class="line"><span class="lineno">  645</span>        verifyConvertTotalCheckpointToQStepsLogMessage(checkpointStartSPP,</div>
 <div class="line"><span class="lineno">  646</span>                                                       maxSPP,</div>
 <div class="line"><span class="lineno">  647</span>                                                       userDefinedTotalCheckpointFiles,</div>
 <div class="line"><span class="lineno">  648</span>                                                       verifyQSteps,</div>
@@ -10915,7 +10905,7 @@ template&lt;typename DST_PIXEL_TYPE , typename SRC_PIXEL_TYPE , typename HAS_DAT
 <div class="line"><span class="lineno">  661</span>    }</div>
 <div class="line"><span class="lineno">  662</span> </div>
 <div class="line"><span class="lineno">  663</span>    <span class="keywordflow">if</span> (logMessage) {</div>
-<div class="line"><span class="lineno">  664</span>        (*logMessage) = <a class="code hl_function" href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a81176a1eca4a79d34a50eb7e5623f287">showCheckpointSampleTable</a>(userDefinedTotalCheckpointFiles,</div>
+<div class="line"><span class="lineno">  664</span>        (*logMessage) = showCheckpointSampleTable(userDefinedTotalCheckpointFiles,</div>
 <div class="line"><span class="lineno">  665</span>                                                  checkpointStartSPP,</div>
 <div class="line"><span class="lineno">  666</span>                                                  maxSPP,</div>
 <div class="line"><span class="lineno">  667</span>                                                  verifyQSteps,</div>
@@ -10923,8 +10913,6 @@ template&lt;typename DST_PIXEL_TYPE , typename SRC_PIXEL_TYPE , typename HAS_DAT
 <div class="line"><span class="lineno">  669</span>    }</div>
 <div class="line"><span class="lineno">  670</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  671</span>}</div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03_html_a7db3c538a57565ed9431e324ab5555a7"><div class="ttname"><a href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a7db3c538a57565ed9431e324ab5555a7">anonymous_namespace{RenderDriverCheckpointUtil.cc}::verifyConvertTotalCheckpointToQStepsMainLogic</a></div><div class="ttdeci">bool verifyConvertTotalCheckpointToQStepsMainLogic(int checkpointStartSPP, int maxSPP, int userDefinedTotalCheckpointFiles, int verifyQSteps, const std::vector&lt; unsigned &gt; *sequenceTbl, std::string *verifyMsg)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_checkpoint_util_8cc_source.html#l00352">RenderDriverCheckpointUtil.cc:352</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03_html_a848d84902bd1b01650f9eaacaa0394f0"><div class="ttname"><a href="namespaceanonymous__namespace_02_render_driver_checkpoint_util_8cc_03.html#a848d84902bd1b01650f9eaacaa0394f0">anonymous_namespace{RenderDriverCheckpointUtil.cc}::verifyConvertTotalCheckpointToQStepsLogMessage</a></div><div class="ttdeci">bool verifyConvertTotalCheckpointToQStepsLogMessage(int checkpointStartSPP, int maxSPP, int userDefinedTotalCheckpointFiles, int verifyQSteps, const std::vector&lt; unsigned &gt; *sequenceTbl, std::string *verifyMsg)</div><div class="ttdef"><b>Definition:</b> <a href="_render_driver_checkpoint_util_8cc_source.html#l00463">RenderDriverCheckpointUtil.cc:463</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

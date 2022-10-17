@@ -8,6 +8,5 @@ var _sample_partition_8h =
     [ "operator<<", "_sample_partition_8h.html#a88210566ce9b80febe86c19cfe5ac9ea", null ],
     [ "operator<<", "_sample_partition_8h.html#aec39fbfaad5c76b053aced7ce477ebaa", null ],
     [ "print", "_sample_partition_8h.html#a124b920f9ae8b74aba7e5e2714474aeb", null ],
-    [ "setDepth", "_sample_partition_8h.html#a7d8a26cfbaebf3e2fdfe45a1d0eace18", null ],
-    [ "sOutputDepth", "_sample_partition_8h.html#a240a70ced4be2ce7db614223848606d2", null ]
+    [ "setDepth", "_sample_partition_8h.html#a7d8a26cfbaebf3e2fdfe45a1d0eace18", null ]
 ];

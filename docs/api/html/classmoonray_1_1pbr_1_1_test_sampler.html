@@ -514,7 +514,7 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  471</span>    hammingSum = 0;</div>
 <div class="line"><span class="lineno">  472</span>    ispc::PBRTest_SequenceID1(seed, output, 1);</div>
 <div class="line"><span class="lineno">  473</span>    <span class="keywordflow">for</span> (IntType i = 1; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">kSIMDSize</a>; ++i) {</div>
-<div class="line"><span class="lineno">  474</span>        hammingSum += <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_sampler_8cc_03.html#ad8059d41eb8d8ffa7f31055ad384e5d0">hammingDistance</a>(output[i-1], output[i]);</div>
+<div class="line"><span class="lineno">  474</span>        hammingSum += hammingDistance(output[i-1], output[i]);</div>
 <div class="line"><span class="lineno">  475</span>    }</div>
 <div class="line"><span class="lineno">  476</span>    <span class="comment">// We want neighboring values to generally be far apart. Check to see that</span></div>
 <div class="line"><span class="lineno">  477</span>    <span class="comment">// the average is greater than our arbitrary value.</span></div>
@@ -523,7 +523,7 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  480</span>    hammingSum = 0;</div>
 <div class="line"><span class="lineno">  481</span>    ispc::PBRTest_SequenceID2(seed, output, 1, 2);</div>
 <div class="line"><span class="lineno">  482</span>    <span class="keywordflow">for</span> (IntType i = 1; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">kSIMDSize</a>; ++i) {</div>
-<div class="line"><span class="lineno">  483</span>        hammingSum += <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_sampler_8cc_03.html#ad8059d41eb8d8ffa7f31055ad384e5d0">hammingDistance</a>(output[i-1], output[i]);</div>
+<div class="line"><span class="lineno">  483</span>        hammingSum += hammingDistance(output[i-1], output[i]);</div>
 <div class="line"><span class="lineno">  484</span>    }</div>
 <div class="line"><span class="lineno">  485</span>    <span class="comment">// We want neighboring values to generally be far apart. Check to see that</span></div>
 <div class="line"><span class="lineno">  486</span>    <span class="comment">// the average is greater than our arbitrary value.</span></div>
@@ -532,13 +532,12 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  489</span>    hammingSum = 0;</div>
 <div class="line"><span class="lineno">  490</span>    ispc::PBRTest_SequenceID3(seed, output, 1, 2, 3);</div>
 <div class="line"><span class="lineno">  491</span>    <span class="keywordflow">for</span> (IntType i = 1; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">kSIMDSize</a>; ++i) {</div>
-<div class="line"><span class="lineno">  492</span>        hammingSum += <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_sampler_8cc_03.html#ad8059d41eb8d8ffa7f31055ad384e5d0">hammingDistance</a>(output[i-1], output[i]);</div>
+<div class="line"><span class="lineno">  492</span>        hammingSum += hammingDistance(output[i-1], output[i]);</div>
 <div class="line"><span class="lineno">  493</span>    }</div>
 <div class="line"><span class="lineno">  494</span>    <span class="comment">// We want neighboring values to generally be far apart. Check to see that</span></div>
 <div class="line"><span class="lineno">  495</span>    <span class="comment">// the average is greater than our arbitrary value.</span></div>
 <div class="line"><span class="lineno">  496</span>    CPPUNIT_ASSERT(hammingSum &gt; (<a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">kSIMDSize</a> - 1) * arbitraryCheck);</div>
 <div class="line"><span class="lineno">  497</span>}</div>
-<div class="ttc" id="anamespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_sampler_8cc_03_html_ad8059d41eb8d8ffa7f31055ad384e5d0"><div class="ttname"><a href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_sampler_8cc_03.html#ad8059d41eb8d8ffa7f31055ad384e5d0">moonray::pbr::anonymous_namespace{TestSampler.cc}::hammingDistance</a></div><div class="ttdeci">uint32_t hammingDistance(uint32_t a, uint32_t b)</div><div class="ttdef"><b>Definition:</b> <a href="_test_sampler_8cc_source.html#l00455">TestSampler.cc:455</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a05be203e492310c81d3203056ed33d0e"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a05be203e492310c81d3203056ed33d0e">moonray::pbr::kSIMDSize</a></div><div class="ttdeci">constexpr utype kSIMDSize</div><div class="ttdef"><b>Definition:</b> <a href="_sampling_constants_8h_source.html#l00019">SamplingConstants.h:19</a></div></div>
 </div><!-- fragment -->
 </div>

@@ -1,21 +1,5 @@
 var namespacemoonray_1_1mcrt__common =
 [
-    [ "anonymous_namespace{ProfileAccumulator.cc}", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03.html", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03" ],
-    [ "anonymous_namespace{ProfileAccumulatorHandles.cc}", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_handles_8cc_03.html", [
-      [ "conditionTimes", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_handles_8cc_03.html#abe1717fe4ecf66058987e7a7981f156e", null ],
-      [ "getAccIndex", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_handles_8cc_03.html#a67d6a148ead50d6835c6a3b07802b266", null ],
-      [ "getAccIndex", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_handles_8cc_03.html#a6e10b05934b9d70a1f09fec55fa7d273", null ],
-      [ "getAccIndex", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_handles_8cc_03.html#ae69d42096510165f3270c43c970a6610", null ],
-      [ "getAccIndex", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_handles_8cc_03.html#aa0d9a79844df28ef82d61f9e61e9bba9", null ]
-    ] ],
-    [ "anonymous_namespace{TestAosSoa.cc}", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_test_aos_soa_8cc_03.html", [
-      [ "displayStats", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_test_aos_soa_8cc_03.html#a031905bdae711e9d3ee289fb8e649503", null ],
-      [ "generateAOSData", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_test_aos_soa_8cc_03.html#a4f7351e4167223d9c173eca5de780368", null ],
-      [ "runTests", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_test_aos_soa_8cc_03.html#a993a4d7ab55ce90870bf7be014476a80", null ],
-      [ "validateAOSToSOAResults", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_test_aos_soa_8cc_03.html#ad6ed222ac395df3434e95b2c1ebb4309", null ],
-      [ "validateSOAToAOSResults", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_test_aos_soa_8cc_03.html#a284cc03f9b70b95423f5f45da591b973", null ]
-    ] ],
-    [ "anonymous_namespace{ThreadLocalState.cc}", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_thread_local_state_8cc_03.html", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_thread_local_state_8cc_03" ],
     [ "Accumulator", "structmoonray_1_1mcrt__common_1_1_accumulator.html", "structmoonray_1_1mcrt__common_1_1_accumulator" ],
     [ "AccumulatorHandles", "structmoonray_1_1mcrt__common_1_1_accumulator_handles.html", "structmoonray_1_1mcrt__common_1_1_accumulator_handles" ],
     [ "AccumulatorResult", "structmoonray_1_1mcrt__common_1_1_accumulator_result.html", "structmoonray_1_1mcrt__common_1_1_accumulator_result" ],

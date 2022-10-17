@@ -261,18 +261,17 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  502</span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> entriesPerBlock = MemBlockType::getNumEntries();</div>
 <div class="line"><span class="lineno">  503</span> </div>
 <div class="line"><span class="lineno">  504</span>    <span class="comment">// Test single element allocations and frees.</span></div>
-<div class="line"><span class="lineno">  505</span>    <a class="code hl_function" href="namespacescene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03.html#a9f734ef136140291cdd02f1a79839e97">testMemPoolAllocator</a>(<span class="stringliteral">&quot;single element allocations and frees&quot;</span>, 4, 1, 1, 1024, 2048);</div>
+<div class="line"><span class="lineno">  505</span>    testMemPoolAllocator(<span class="stringliteral">&quot;single element allocations and frees&quot;</span>, 4, 1, 1, 1024, 2048);</div>
 <div class="line"><span class="lineno">  506</span> </div>
 <div class="line"><span class="lineno">  507</span>    <span class="comment">// Test production comparible allocations and frees.</span></div>
-<div class="line"><span class="lineno">  508</span>    <a class="code hl_function" href="namespacescene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03.html#a9f734ef136140291cdd02f1a79839e97">testMemPoolAllocator</a>(<span class="stringliteral">&quot;production comparible allocations and frees&quot;</span>, 16, 1024, 2048, 128, 2048);</div>
+<div class="line"><span class="lineno">  508</span>    testMemPoolAllocator(<span class="stringliteral">&quot;production comparible allocations and frees&quot;</span>, 16, 1024, 2048, 128, 2048);</div>
 <div class="line"><span class="lineno">  509</span> </div>
 <div class="line"><span class="lineno">  510</span>    <span class="comment">// Test large allocations and frees.</span></div>
-<div class="line"><span class="lineno">  511</span>    <a class="code hl_function" href="namespacescene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03.html#a9f734ef136140291cdd02f1a79839e97">testMemPoolAllocator</a>(<span class="stringliteral">&quot;large allocations and frees&quot;</span>, 16, entriesPerBlock * 3, entriesPerBlock * 3, 8, 2048);</div>
+<div class="line"><span class="lineno">  511</span>    testMemPoolAllocator(<span class="stringliteral">&quot;large allocations and frees&quot;</span>, 16, entriesPerBlock * 3, entriesPerBlock * 3, 8, 2048);</div>
 <div class="line"><span class="lineno">  512</span> </div>
 <div class="line"><span class="lineno">  513</span>    <span class="comment">// Test low memory conditions.</span></div>
-<div class="line"><span class="lineno">  514</span>    <a class="code hl_function" href="namespacescene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03.html#a9f734ef136140291cdd02f1a79839e97">testMemPoolAllocator</a>(<span class="stringliteral">&quot;low memory conditions&quot;</span>, 2, entriesPerBlock, entriesPerBlock * 2, 256, 2048);</div>
+<div class="line"><span class="lineno">  514</span>    testMemPoolAllocator(<span class="stringliteral">&quot;low memory conditions&quot;</span>, 2, entriesPerBlock, entriesPerBlock * 2, 256, 2048);</div>
 <div class="line"><span class="lineno">  515</span>}</div>
-<div class="ttc" id="anamespacescene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03_html_a9f734ef136140291cdd02f1a79839e97"><div class="ttname"><a href="namespacescene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03.html#a9f734ef136140291cdd02f1a79839e97">scene_rdl2::alloc::anonymous_namespace{TestMemPool.cc}::testMemPoolAllocator</a></div><div class="ttdeci">void testMemPoolAllocator(const char *name, unsigned numBlocksToReservePerThread, unsigned maxAllocsPerCall, unsigned maxFreesPerCall, unsigned numLoops, unsigned numOpsPerLoop)</div><div class="ttdef"><b>Definition:</b> <a href="_test_mem_pool_8cc_source.html#l00248">TestMemPool.cc:248</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

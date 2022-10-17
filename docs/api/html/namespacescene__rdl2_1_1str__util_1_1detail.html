@@ -269,8 +269,9 @@ template&lt;typename First , typename... Rest&gt; </div>
 <p class="definition">Definition at line <a class="el" href="_str_util_8h_source.html#l00044">44</a> of file <a class="el" href="_str_util_8h_source.html">StrUtil.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   45</span>{</div>
 <div class="line"><span class="lineno">   46</span>    result += first;</div>
-<div class="line"><span class="lineno">   47</span>    stringCatHelper(result, rest...);</div>
+<div class="line"><span class="lineno">   47</span>    <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a4e2a075d15c61f8dbee04e6895854e0d">stringCatHelper</a>(result, rest...);</div>
 <div class="line"><span class="lineno">   48</span>}</div>
+<div class="ttc" id="anamespacescene__rdl2_1_1str__util_1_1detail_html_a4e2a075d15c61f8dbee04e6895854e0d"><div class="ttname"><a href="namespacescene__rdl2_1_1str__util_1_1detail.html#a4e2a075d15c61f8dbee04e6895854e0d">scene_rdl2::str_util::detail::stringCatHelper</a></div><div class="ttdeci">void stringCatHelper(std::string &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="_str_util_8h_source.html#l00040">StrUtil.h:40</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -332,8 +333,10 @@ template&lt;typename First , typename... Rest&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_str_util_8h_source.html#l00035">35</a> of file <a class="el" href="_str_util_8h_source.html">StrUtil.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   36</span>{</div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">return</span> size(first) + totalSize(rest...);</div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>(first) + <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a>(rest...);</div>
 <div class="line"><span class="lineno">   38</span>}</div>
+<div class="ttc" id="anamespacescene__rdl2_1_1math_html_a5277a7946ff4d740ccf0c9651ffbaff5"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">scene_rdl2::math::size</a></div><div class="ttdeci">__forceinline const T size(const BBox&lt; T &gt; &amp;box)</div><div class="ttdef"><b>Definition:</b> <a href="_b_box_8h_source.html#l00105">BBox.h:105</a></div></div>
+<div class="ttc" id="anamespacescene__rdl2_1_1str__util_1_1detail_html_a5c0fa7a0375e7b7f647a69e509ab516c"><div class="ttname"><a href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">scene_rdl2::str_util::detail::totalSize</a></div><div class="ttdeci">std::size_t totalSize()</div><div class="ttdef"><b>Definition:</b> <a href="_str_util_8h_source.html#l00031">StrUtil.h:31</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

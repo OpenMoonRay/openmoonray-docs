@@ -14,7 +14,7 @@ var searchData=
   ['toleranceconsistency_11',['toleranceConsistency',['../structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a3c598720ac72e767616e66264bb08f71',1,'moonray::pbr::TestBsdfSettings']]],
   ['toleranceintegral_12',['toleranceIntegral',['../structmoonray_1_1pbr_1_1_test_bsdf_settings.html#a260718081e180a53dba303b2f03d27aa',1,'moonray::pbr::TestBsdfSettings']]],
   ['trace_5fset_5fmetatable_13',['TRACE_SET_METATABLE',['../classscene__rdl2_1_1rdl2_1_1_ascii_reader.html#a5e5880fa08fb17a737729b1de702c970',1,'scene_rdl2::rdl2::AsciiReader']]],
-  ['traits_14',['traits',['../struct_get_lock_traits_3_01_t_00_01_lock_traits_1_1_a_u_t_o___d_e_t_e_c_t_01_4.html#a9ae76ee11794c2c0ec15e8576704d9cf',1,'GetLockTraits&lt; T, LockTraits::AUTO_DETECT &gt;::traits()'],['../struct_get_lock_traits.html#af8d59ad1dc29d0d83c8e0d6ca56a3c60',1,'GetLockTraits::traits()']]],
+  ['traits_14',['traits',['../struct_get_lock_traits.html#af8d59ad1dc29d0d83c8e0d6ca56a3c60',1,'GetLockTraits::traits()'],['../struct_get_lock_traits_3_01_t_00_01_lock_traits_1_1_a_u_t_o___d_e_t_e_c_t_01_4.html#a9ae76ee11794c2c0ec15e8576704d9cf',1,'GetLockTraits&lt; T, LockTraits::AUTO_DETECT &gt;::traits()']]],
   ['translucentcolor_15',['translucentColor',['../structmoonray_1_1pbr_1_1_test_bssrdf_1_1_a_params.html#a71e9d7a7dec645d85d90380977771acf',1,'moonray::pbr::TestBssrdf::AParams']]],
   ['translucentfactor_16',['translucentFactor',['../structmoonray_1_1pbr_1_1_test_bssrdf_1_1_a_params.html#a855c2c4ee896c6e663016f85d2e5d807',1,'moonray::pbr::TestBssrdf::AParams']]],
   ['transmission_17',['TRANSMISSION',['../structmoonray_1_1pbr_1_1_parsed_material_expression.html#aa6f15f895f65fdf4650b5357e529ed98',1,'moonray::pbr::ParsedMaterialExpression']]],
@@ -26,6 +26,5 @@ var searchData=
   ['trrtlobe_23',['trrtLobe',['../classmoonray_1_1shading_1_1_hair_one_sample_lobe.html#a57ad4a8e9f27c37605aeb479cf64cd09',1,'moonray::shading::HairOneSampleLobe']]],
   ['trtlobe_24',['trtLobe',['../classmoonray_1_1shading_1_1_hair_one_sample_lobe.html#aaa2a8495729f1f5085d162dccae651f6',1,'moonray::shading::HairOneSampleLobe']]],
   ['ttlobe_25',['ttLobe',['../classmoonray_1_1shading_1_1_hair_one_sample_lobe.html#a2513e159416c68bf4d5c7329c4d8a231',1,'moonray::shading::HairOneSampleLobe']]],
-  ['two_3c_20nonscalar_20_3e_26',['two&lt; NonScalar &gt;',['../namespaceanonymous__namespace_02test__wait_8cc_03.html#ab2952f1296cabbaadd0d83a07ee97a37',1,'anonymous_namespace{test_wait.cc}']]],
-  ['type_27',['type',['../struct_deep_segment_1_1_edge.html#afc0ebc96563f68af4f09439adae7da3b',1,'DeepSegment::Edge']]]
+  ['type_26',['type',['../struct_deep_segment_1_1_edge.html#afc0ebc96563f68af4f09439adae7da3b',1,'DeepSegment::Edge']]]
 ];

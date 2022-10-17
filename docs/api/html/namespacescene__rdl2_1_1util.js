@@ -1,6 +1,5 @@
 var namespacescene__rdl2_1_1util =
 [
-    [ "anonymous_namespace{Files.cc}", "namespacescene__rdl2_1_1util_1_1anonymous__namespace_02_files_8cc_03.html", "namespacescene__rdl2_1_1util_1_1anonymous__namespace_02_files_8cc_03" ],
     [ "detail", "namespacescene__rdl2_1_1util_1_1detail.html", [
       [ "combineString", "namespacescene__rdl2_1_1util_1_1detail.html#a958b1b6799d4057902a72be7cb762124", null ],
       [ "combineString", "namespacescene__rdl2_1_1util_1_1detail.html#a18ad3afb7432630de88df085d8fdbf72", null ],

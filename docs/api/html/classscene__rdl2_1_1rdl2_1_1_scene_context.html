@@ -1416,7 +1416,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  378</span>  </div>
 <div class="line"><span class="lineno">  379</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a17d4f3f07f989151b52c901b9fedb6f5">mSceneObjects</a>.find(reader, objectName)) {</div>
 <div class="line"><span class="lineno">  380</span>            <span class="comment">// Found it.</span></div>
-<div class="line"><span class="lineno">  381</span>            <a class="code hl_function" href="namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_scene_context_8cc_03.html#acc64652242b4c9981931e73030d6840d">verifyMatchingSceneClass</a>(className, reader-&gt;second);</div>
+<div class="line"><span class="lineno">  381</span>            verifyMatchingSceneClass(className, reader-&gt;second);</div>
 <div class="line"><span class="lineno">  382</span>            <span class="keywordflow">return</span> reader-&gt;second;</div>
 <div class="line"><span class="lineno">  383</span>        }</div>
 <div class="line"><span class="lineno">  384</span>    } <span class="comment">// End reader lock scope.</span></div>
@@ -1498,7 +1498,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  460</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">  461</span>        <span class="comment">// We didn&#39;t win the insertion race, so verify that the SceneClass</span></div>
 <div class="line"><span class="lineno">  462</span>        <span class="comment">// matches.</span></div>
-<div class="line"><span class="lineno">  463</span>        <a class="code hl_function" href="namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_scene_context_8cc_03.html#acc64652242b4c9981931e73030d6840d">verifyMatchingSceneClass</a>(className, writer-&gt;second);</div>
+<div class="line"><span class="lineno">  463</span>        verifyMatchingSceneClass(className, writer-&gt;second);</div>
 <div class="line"><span class="lineno">  464</span>    }</div>
 <div class="line"><span class="lineno">  465</span> </div>
 <div class="line"><span class="lineno">  466</span>    <span class="comment">// Regardless of whether we created the SceneObject just now because it was</span></div>
@@ -1509,7 +1509,6 @@ template&lt;typename T &gt; </div>
 <div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_context_html_a18a01c549cce2357b7a3cd84e7c684d5"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a18a01c549cce2357b7a3cd84e7c684d5">scene_rdl2::rdl2::SceneContext::mCreateSceneObjectMutex</a></div><div class="ttdeci">tbb::mutex mCreateSceneObjectMutex</div><div class="ttdef"><b>Definition:</b> <a href="_scene_context_8h_source.html#l00417">SceneContext.h:417</a></div></div>
 <div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_context_html_a4400c3ed5a9c9875cc5f90d3bdc759b4"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a4400c3ed5a9c9875cc5f90d3bdc759b4">scene_rdl2::rdl2::SceneContext::mRenderOutputs</a></div><div class="ttdeci">RenderOutputVector mRenderOutputs</div><div class="ttdef"><b>Definition:</b> <a href="_scene_context_8h_source.html#l00419">SceneContext.h:419</a></div></div>
 <div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_context_html_a8ba749b5091b61aa948f23f5c5a64e19"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a8ba749b5091b61aa948f23f5c5a64e19">scene_rdl2::rdl2::SceneContext::createSceneClass</a></div><div class="ttdeci">SceneClass * createSceneClass(const std::string &amp;className)</div><div class="ttdef"><b>Definition:</b> <a href="_scene_context_8cc_source.html#l00278">SceneContext.cc:278</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_scene_context_8cc_03_html_acc64652242b4c9981931e73030d6840d"><div class="ttname"><a href="namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_scene_context_8cc_03.html#acc64652242b4c9981931e73030d6840d">scene_rdl2::rdl2::anonymous_namespace{SceneContext.cc}::verifyMatchingSceneClass</a></div><div class="ttdeci">void verifyMatchingSceneClass(const std::string &amp;className, const SceneObject *obj)</div><div class="ttdef"><b>Definition:</b> <a href="_scene_context_8cc_source.html#l00063">SceneContext.cc:63</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

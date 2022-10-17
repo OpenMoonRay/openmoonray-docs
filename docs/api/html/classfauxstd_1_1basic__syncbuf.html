@@ -609,7 +609,7 @@ template&lt;typename CharT , typename Traits  = std::char_traits&lt;CharT&gt;, t
 <div class="line"><span class="lineno">   81</span> </div>
 <div class="line"><span class="lineno">   82</span>        <span class="keyword">auto</span> s = std::move(<a class="code hl_variable" href="classfauxstd_1_1basic__syncbuf.html#a0f49e46017d5536a962e545b2c689e6c">m_buffer</a>).str();</div>
 <div class="line"><span class="lineno">   83</span> </div>
-<div class="line"><span class="lineno">   84</span>        <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a> = s.size();</div>
+<div class="line"><span class="lineno">   84</span>        <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a> = s.size();</div>
 <div class="line"><span class="lineno">   85</span>        <span class="keywordflow">if</span> (size == 0) {</div>
 <div class="line"><span class="lineno">   86</span>            <a class="code hl_variable" href="classfauxstd_1_1basic__syncbuf.html#a113b92fdb65ba3a044295015a172011b">m_need_pubsync</a> = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   87</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -632,7 +632,7 @@ template&lt;typename CharT , typename Traits  = std::char_traits&lt;CharT&gt;, t
 <div class="line"><span class="lineno">  104</span>    }</div>
 <div class="ttc" id="aclassfauxstd_1_1basic__syncbuf_html_a3d0f327a28b9c4b59960c91f29c24fdc"><div class="ttname"><a href="classfauxstd_1_1basic__syncbuf.html#a3d0f327a28b9c4b59960c91f29c24fdc">fauxstd::basic_syncbuf::get_mutex_index</a></div><div class="ttdeci">static std::size_t get_mutex_index(void *p) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="syncstream_8h_source.html#l00172">syncstream.h:172</a></div></div>
 <div class="ttc" id="aclassfauxstd_1_1basic__syncbuf_html_aee1d3b380bb3d8b0d707e07771e0af97"><div class="ttname"><a href="classfauxstd_1_1basic__syncbuf.html#aee1d3b380bb3d8b0d707e07771e0af97">fauxstd::basic_syncbuf::s_stream_mutexes</a></div><div class="ttdeci">static map_type s_stream_mutexes</div><div class="ttdef"><b>Definition:</b> <a href="syncstream_8h_source.html#l00180">syncstream.h:180</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_resume_history_meta_data_8cc_03_html_a9a38a2aa0f811fa9e3761cd0049c46b8"><div class="ttname"><a href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">anonymous_namespace{ResumeHistoryMetaData.cc}::size</a></div><div class="ttdeci">MAYBE_UNUSED std::size_t size(const std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="_resume_history_meta_data_8cc_source.html#l00047">ResumeHistoryMetaData.cc:47</a></div></div>
+<div class="ttc" id="anamespacescene__rdl2_1_1math_html_a5277a7946ff4d740ccf0c9651ffbaff5"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">scene_rdl2::math::size</a></div><div class="ttdeci">__forceinline const T size(const BBox&lt; T &gt; &amp;box)</div><div class="ttdef"><b>Definition:</b> <a href="_b_box_8h_source.html#l00105">BBox.h:105</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -733,14 +733,15 @@ template&lt;typename CharT , typename Traits  = std::char_traits&lt;CharT&gt;, t
 <div class="line"><span class="lineno">  160</span>        <span class="comment">// std::hash&lt;void*&gt; is well within its rights to return the pointer unchanged. With pointer alignment, taking</span></div>
 <div class="line"><span class="lineno">  161</span>        <span class="comment">// the mod of this value against small values probably results in 0 each time. Therefore, we provide a separate</span></div>
 <div class="line"><span class="lineno">  162</span>        <span class="comment">// hash function (https://nullprogram.com/blog/2018/07/31/).</span></div>
-<div class="line"><span class="lineno">  163</span>        <span class="keyword">auto</span> x = <span class="keyword">reinterpret_cast&lt;</span>std::uintptr_t<span class="keyword">&gt;</span>(p);</div>
-<div class="line"><span class="lineno">  164</span>        x ^= x &gt;&gt; 30;</div>
-<div class="line"><span class="lineno">  165</span>        x *= 0xbf58476d1ce4e5b9U;</div>
-<div class="line"><span class="lineno">  166</span>        x ^= x &gt;&gt; 27;</div>
-<div class="line"><span class="lineno">  167</span>        x *= 0x94d049bb133111ebU;</div>
-<div class="line"><span class="lineno">  168</span>        x ^= x &gt;&gt; 31;</div>
-<div class="line"><span class="lineno">  169</span>        <span class="keywordflow">return</span> x;</div>
+<div class="line"><span class="lineno">  163</span>        <span class="keyword">auto</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = <span class="keyword">reinterpret_cast&lt;</span>std::uintptr_t<span class="keyword">&gt;</span>(p);</div>
+<div class="line"><span class="lineno">  164</span>        <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> ^= <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &gt;&gt; 30;</div>
+<div class="line"><span class="lineno">  165</span>        <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> *= 0xbf58476d1ce4e5b9U;</div>
+<div class="line"><span class="lineno">  166</span>        <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> ^= <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &gt;&gt; 27;</div>
+<div class="line"><span class="lineno">  167</span>        <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> *= 0x94d049bb133111ebU;</div>
+<div class="line"><span class="lineno">  168</span>        <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> ^= <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &gt;&gt; 31;</div>
+<div class="line"><span class="lineno">  169</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
 <div class="line"><span class="lineno">  170</span>    }</div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

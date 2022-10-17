@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('_geom_t_l_state_8cc_source.html',''); 
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_t_l_state.html#a9bab3cf2dd66c28ff0b35cdb2219fd28">TLState::TLState</a>(mcrt_common::ThreadLocalState *tls, </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keyword">const</span> mcrt_common::TLSInitParams &amp;initParams,</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordtype">bool</span> okToAllocBundledResources):</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    BaseTLState(tls-&gt;mThreadIdx, tls-&gt;mArena, tls-&gt;mPixelArena),</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    BaseTLState(tls-&gt;<a class="code hl_variable" href="_test_mem_pool_8cc.html#aca1491cdad195b1b38410c07395948ba">mThreadIdx</a>, tls-&gt;mArena, tls-&gt;mPixelArena),</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    mSubsurfaceTraceSet(nullptr)</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    reset();</div>
@@ -141,6 +141,7 @@ $(document).ready(function(){initNavTree('_geom_t_l_state_8cc_source.html',''); 
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="ttc" id="a_geom_t_l_state_8h_html"><div class="ttname"><a href="_geom_t_l_state_8h.html">GeomTLState.h</a></div></div>
+<div class="ttc" id="a_test_mem_pool_8cc_html_aca1491cdad195b1b38410c07395948ba"><div class="ttname"><a href="_test_mem_pool_8cc.html#aca1491cdad195b1b38410c07395948ba">mThreadIdx</a></div><div class="ttdeci">uint32_t mThreadIdx</div><div class="ttdef"><b>Definition:</b> <a href="_test_mem_pool_8cc_source.html#l00241">TestMemPool.cc:241</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_t_l_state_html_a9bab3cf2dd66c28ff0b35cdb2219fd28"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_t_l_state.html#a9bab3cf2dd66c28ff0b35cdb2219fd28">moonray::geom::internal::TLState::TLState</a></div><div class="ttdeci">TLState(mcrt_common::ThreadLocalState *tls, const mcrt_common::TLSInitParams &amp;initParams, bool okToAllocBundledResources)</div></div>
 <div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

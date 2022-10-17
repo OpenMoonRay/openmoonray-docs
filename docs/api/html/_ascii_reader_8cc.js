@@ -1,7 +1,5 @@
 var _ascii_reader_8cc =
 [
-    [ "scene_rdl2::rdl2::anonymous_namespace{AsciiReader.cc}::LuaPopGuard", "classscene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1_lua_pop_guard.html", "classscene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1_lua_pop_guard" ],
-    [ "scene_rdl2::rdl2::anonymous_namespace{AsciiReader.cc}::anonymous_namespace{AsciiReader.cc}::Undef", "structscene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1anonymous__namespace473350620376eb28537bfe076655a45a.html", "structscene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1anonymous__namespace473350620376eb28537bfe076655a45a" ],
     [ "RDL2_LUA_DEFINE", "_ascii_reader_8cc.html#a504394a8844bfec0d0af1616745b8e62", null ],
     [ "RDL2_LUA_FUNCPTR", "_ascii_reader_8cc.html#a8fa62013b6ab4dd82b94109c077be40f", null ],
     [ "RDL2_LUA_METAMETHOD", "_ascii_reader_8cc.html#a9331c08393921e1d5ad611734d8b1a22", null ],
@@ -115,5 +113,6 @@ var _ascii_reader_8cc =
     [ "RDL2_LUA_DEFINE", "_ascii_reader_8cc.html#a97acdc53a2c41ddc1b91081204e87fad", null ],
     [ "RDL2_LUA_DEFINE", "_ascii_reader_8cc.html#a646b15cef936d6747967567575b47777", null ],
     [ "RDL2_LUA_DEFINE", "_ascii_reader_8cc.html#ab7d8ff23a29f16f940e1cd970d37b08d", null ],
-    [ "undef", "_ascii_reader_8cc.html#a3f2179ce638e1c6cc95645c040bbf52f", null ]
+    [ "mNumPops", "_ascii_reader_8cc.html#a141cd4523cd9f29e56f8705b920494fe", null ],
+    [ "mState", "_ascii_reader_8cc.html#add03601870d5db087a2f60259e2b1ab6", null ]
 ];

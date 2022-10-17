@@ -929,11 +929,10 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  265</span> </div>
 <div class="line"><span class="lineno">  266</span>    isect.N = -wi;</div>
 <div class="line"><span class="lineno">  267</span>    isect.distance = <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a0a0816780fe8bef3098e3b97f7ed0a26">sDistantLightDistance</a>;</div>
-<div class="line"><span class="lineno">  268</span>    isect.uv = <a class="code hl_function" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a21b25d2e274a883266dbaeeef16a9c97">zero</a>;</div>
+<div class="line"><span class="lineno">  268</span>    isect.uv = zero;</div>
 <div class="line"><span class="lineno">  269</span> </div>
 <div class="line"><span class="lineno">  270</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  271</span>}</div>
-<div class="ttc" id="anamespaceanonymous__namespace_02test__wait_8cc_03_html_a21b25d2e274a883266dbaeeef16a9c97"><div class="ttname"><a href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a21b25d2e274a883266dbaeeef16a9c97">anonymous_namespace{test_wait.cc}::zero</a></div><div class="ttdeci">constexpr T zero(static_cast&lt; T &gt;(0))</div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a0a0816780fe8bef3098e3b97f7ed0a26"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a0a0816780fe8bef3098e3b97f7ed0a26">moonray::pbr::sDistantLightDistance</a></div><div class="ttdeci">static const float sDistantLightDistance</div><div class="ttdef"><b>Definition:</b> <a href="moonray-main_2lib_2rendering_2pbr_2light_2_light_8h_source.html#l00037">Light.h:37</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1190,7 +1189,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  285</span> </div>
 <div class="line"><span class="lineno">  286</span>    isect.N = -wi;</div>
 <div class="line"><span class="lineno">  287</span>    isect.distance = <a class="code hl_variable" href="namespacemoonray_1_1pbr.html#a0a0816780fe8bef3098e3b97f7ed0a26">sDistantLightDistance</a>;</div>
-<div class="line"><span class="lineno">  288</span>    isect.uv = <a class="code hl_function" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a21b25d2e274a883266dbaeeef16a9c97">zero</a>;</div>
+<div class="line"><span class="lineno">  288</span>    isect.uv = zero;</div>
 <div class="line"><span class="lineno">  289</span> </div>
 <div class="line"><span class="lineno">  290</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  291</span>}</div>
@@ -1249,7 +1248,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  153</span>    <span class="keyword">const</span> <a class="code hl_class" href="structscene__rdl2_1_1math_1_1_mat4.html">Mat4f</a> local2render1 = <a class="code hl_function" href="structscene__rdl2_1_1math_1_1_mat4.html#adf8395fd3390044c48d8a472d091ca55">Mat4f::orthonormalize</a>(<a class="code hl_variable" href="classmoonray_1_1pbr_1_1_light.html#ac6b8ef1054fc5cbece049ce968d2db97">sRotateX180</a> * <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a4a4d84135583ab6a1c37809e7d4dbcab">toFloat</a>(l2w1 * world2render));</div>
 <div class="line"><span class="lineno">  154</span>    <a class="code hl_class" href="classscene__rdl2_1_1math_1_1_reference_frame.html">ReferenceFrame</a> frame0(local2render0);</div>
 <div class="line"><span class="lineno">  155</span>    <a class="code hl_class" href="classscene__rdl2_1_1math_1_1_reference_frame.html">ReferenceFrame</a> frame1(local2render1);</div>
-<div class="line"><span class="lineno">  156</span>    mPosition[0] = mPosition[1] = <a class="code hl_function" href="namespaceanonymous__namespace_02test__wait_8cc_03.html#a21b25d2e274a883266dbaeeef16a9c97">zero</a>;</div>
+<div class="line"><span class="lineno">  156</span>    mPosition[0] = mPosition[1] = zero;</div>
 <div class="line"><span class="lineno">  157</span>    mOrientation[0] = <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a3401cfa71faa336560e3034893ea8cdb">normalize</a>(<a class="code hl_class" href="structscene__rdl2_1_1math_1_1_quaternion_t.html">math::Quaternion3f</a>(frame0.getX(), frame0.getY(), frame0.getZ()));</div>
 <div class="line"><span class="lineno">  158</span>    mOrientation[1] = <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a3401cfa71faa336560e3034893ea8cdb">normalize</a>(<a class="code hl_class" href="structscene__rdl2_1_1math_1_1_quaternion_t.html">math::Quaternion3f</a>(frame1.getX(), frame1.getY(), frame1.getZ()));</div>
 <div class="line"><span class="lineno">  159</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a7c08c0e1d6574bd6b3af9438401d275f">dot</a>(mOrientation[0], mOrientation[1]) &lt; 0) {</div>

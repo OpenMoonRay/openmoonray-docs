@@ -199,17 +199,18 @@ template&lt;std::size_t size = 8&gt; </div>
 <p class="definition">Definition at line <a class="el" href="_pixel_scramble_8h_source.html#l00033">33</a> of file <a class="el" href="_pixel_scramble_8h_source.html">PixelScramble.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   34</span>{</div>
 <div class="line"><span class="lineno">   35</span>    std::array&lt;int, size&gt; array;</div>
-<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; size; ++i) {</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>; ++i) {</div>
 <div class="line"><span class="lineno">   37</span>        array[i] = in[i];</div>
 <div class="line"><span class="lineno">   38</span>    }</div>
 <div class="line"><span class="lineno">   39</span>    std::sort(array.begin(), array.end());</div>
-<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; size; ++i) {</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>; ++i) {</div>
 <div class="line"><span class="lineno">   41</span>        <span class="keywordflow">if</span> (array[i] != i) {</div>
 <div class="line"><span class="lineno">   42</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   43</span>        }</div>
 <div class="line"><span class="lineno">   44</span>    }</div>
 <div class="line"><span class="lineno">   45</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   46</span>}</div>
+<div class="ttc" id="anamespacescene__rdl2_1_1math_html_a5277a7946ff4d740ccf0c9651ffbaff5"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">scene_rdl2::math::size</a></div><div class="ttdeci">__forceinline const T size(const BBox&lt; T &gt; &amp;box)</div><div class="ttdef"><b>Definition:</b> <a href="_b_box_8h_source.html#l00105">BBox.h:105</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

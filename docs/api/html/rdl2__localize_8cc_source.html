@@ -113,15 +113,15 @@ $(document).ready(function(){initNavTree('rdl2__localize_8cc_source.html',''); i
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span>po = boost::program_options;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02rdl2__localize_8cc_03.html">   21</a></span><span class="keyword">namespace </span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>{</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// Prints a helpful usage message to the given output stream. The program</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// name (argv[0]) should be passed as &quot;name&quot;, and the boost::program_options</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// should be passed as &quot;options&quot;.</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordtype">void</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespaceanonymous__namespace_02rdl2__localize_8cc_03.html#a4741ff964651e6db764f1686d3c221ea">   27</a></span>printUsage(std::ostream&amp; o, <span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keyword">const</span> po::options_description&amp; options)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>printUsage(std::ostream&amp; o, <span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keyword">const</span> po::options_description&amp; options)</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    o &lt;&lt; <span class="stringliteral">&quot;Usage: &quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; [options] -o &lt;output file&gt; &lt;input file&gt;\n&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    o &lt;&lt; <span class="stringliteral">&quot;Usage: &quot;</span> &lt;&lt; <a class="code hl_variable" href="namespacepackage.html#a3debccbf73e2b62d978f577333b9850c">name</a> &lt;&lt; <span class="stringliteral">&quot; [options] -o &lt;output file&gt; &lt;input file&gt;\n&quot;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="stringliteral">&quot;Copies all dependent assets locally and writes a new RDL2 file.\n\n&quot;</span> &lt;&lt;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            options &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('rdl2__localize_8cc_source.html',''); i
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                                                     .<a class="code hl_function" href="blue__noise__pd__progressive__generation_8cc.html#aefacc19f4239e110a4853fcfbf75fe02">run</a>(), varsMap);</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">if</span> (varsMap.count(<span class="stringliteral">&quot;help&quot;</span>)) {</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="comment">// Dump a usage friendly message rather than an error message.</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <a class="code hl_function" href="namespaceanonymous__namespace_02rdl2__localize_8cc_03.html#a4741ff964651e6db764f1686d3c221ea">printUsage</a>(std::cout, argv[0], optionsDesc);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            printUsage(std::cout, argv[0], optionsDesc);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        }</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        </div>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('rdl2__localize_8cc_source.html',''); i
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="comment">// Something went wrong while parsing the options. Print the error</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="comment">// message and a usage message.</span></div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <a class="code hl_function" href="classscene__rdl2_1_1logging_1_1_logger.html#a5309cb66c8fd71ffe2f43cdd3901930e">scene_rdl2::logging::Logger::error</a>(e.what());</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <a class="code hl_function" href="namespaceanonymous__namespace_02rdl2__localize_8cc_03.html#a4741ff964651e6db764f1686d3c221ea">printUsage</a>(std::cerr, argv[0], optionsDesc);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        printUsage(std::cerr, argv[0], optionsDesc);</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">return</span> EXIT_FAILURE;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
@@ -205,7 +205,7 @@ $(document).ready(function(){initNavTree('rdl2__localize_8cc_source.html',''); i
 <div class="ttc" id="aclassscene__rdl2_1_1logging_1_1_logger_html_a962af6c047c556943707102559423ee0"><div class="ttname"><a href="classscene__rdl2_1_1logging_1_1_logger.html#a962af6c047c556943707102559423ee0">scene_rdl2::logging::Logger::init</a></div><div class="ttdeci">static void init()</div><div class="ttdef"><b>Definition:</b> <a href="logging_8cc_source.html#l00237">logging.cc:237</a></div></div>
 <div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_dso_finder_html_af3a8d19f400adacefc9ca8b8c3c10619"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_dso_finder.html#af3a8d19f400adacefc9ca8b8c3c10619">scene_rdl2::rdl2::DsoFinder::parseDsoPath</a></div><div class="ttdeci">static std::string parseDsoPath(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="_dso_finder_8cc_source.html#l00104">DsoFinder.cc:104</a></div></div>
 <div class="ttc" id="acmd_2rdl2__cmd_2rdl2__ispc__util_2rdl2__ispc__util_8cc_html_a840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="cmd_2rdl2__cmd_2rdl2__ispc__util_2rdl2__ispc__util_8cc.html#a840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdef"><b>Definition:</b> <a href="cmd_2rdl2__cmd_2rdl2__ispc__util_2rdl2__ispc__util_8cc_source.html#l00040">rdl2_ispc_util.cc:40</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02rdl2__localize_8cc_03_html_a4741ff964651e6db764f1686d3c221ea"><div class="ttname"><a href="namespaceanonymous__namespace_02rdl2__localize_8cc_03.html#a4741ff964651e6db764f1686d3c221ea">anonymous_namespace{rdl2_localize.cc}::printUsage</a></div><div class="ttdeci">void printUsage(std::ostream &amp;o, const char *name, const po::options_description &amp;options)</div><div class="ttdef"><b>Definition:</b> <a href="rdl2__localize_8cc_source.html#l00027">rdl2_localize.cc:27</a></div></div>
+<div class="ttc" id="anamespacepackage_html_a3debccbf73e2b62d978f577333b9850c"><div class="ttname"><a href="namespacepackage.html#a3debccbf73e2b62d978f577333b9850c">package.name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> <a href="moonray-main_2package_8py_source.html#l00007">package.py:7</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -103,11 +103,11 @@ $(document).ready(function(){initNavTree('class_measure_star_discrepancy_split.h
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a97588338d797ab0187cbdfba43c1a0da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_measure_star_discrepancy_split.html#a97588338d797ab0187cbdfba43c1a0da">MeasureStarDiscrepancySplit</a> (const <a class="el" href="discrepancy_8cc.html#a73845c52820b806f986820e591a6613b">PointContainer</a> &amp;points)</td></tr>
 <tr class="separator:a97588338d797ab0187cbdfba43c1a0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed6ad36cdcbb1148ff578c9c396e8e7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_measure_star_discrepancy_split.html#aed6ad36cdcbb1148ff578c9c396e8e7d">MeasureStarDiscrepancySplit</a> (<a class="el" href="class_measure_star_discrepancy_split.html">MeasureStarDiscrepancySplit</a> &amp;x, tbb::split)</td></tr>
+<tr class="memitem:aed6ad36cdcbb1148ff578c9c396e8e7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_measure_star_discrepancy_split.html#aed6ad36cdcbb1148ff578c9c396e8e7d">MeasureStarDiscrepancySplit</a> (<a class="el" href="class_measure_star_discrepancy_split.html">MeasureStarDiscrepancySplit</a> &amp;<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, tbb::split)</td></tr>
 <tr class="separator:aed6ad36cdcbb1148ff578c9c396e8e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8190708d513325d0f2a0b3e7b82ea268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_measure_star_discrepancy_split.html#a8190708d513325d0f2a0b3e7b82ea268">operator()</a> (const ::tbb::blocked_range&lt; unsigned &gt; &amp;r)</td></tr>
 <tr class="separator:a8190708d513325d0f2a0b3e7b82ea268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad07c1a33429d79de5a7b275c7c60f6ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_measure_star_discrepancy_split.html#ad07c1a33429d79de5a7b275c7c60f6ba">join</a> (const <a class="el" href="class_measure_star_discrepancy_split.html">MeasureStarDiscrepancySplit</a> &amp;y)</td></tr>
+<tr class="memitem:ad07c1a33429d79de5a7b275c7c60f6ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_measure_star_discrepancy_split.html#ad07c1a33429d79de5a7b275c7c60f6ba">join</a> (const <a class="el" href="class_measure_star_discrepancy_split.html">MeasureStarDiscrepancySplit</a> &amp;<a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
 <tr class="separator:ad07c1a33429d79de5a7b275c7c60f6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8edfba4d53a3f35f13a1761e900d3c4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_measure_star_discrepancy_split.html#a8edfba4d53a3f35f13a1761e900d3c4a">getLUB</a> () const</td></tr>
 <tr class="separator:a8edfba4d53a3f35f13a1761e900d3c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,9 +206,10 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   58</span>                                                                          :</div>
 <div class="line"><span class="lineno">   59</span>        <a class="code hl_variable" href="class_measure_star_discrepancy_split.html#a573e33b8c0a6ea3a3125c14486f62029">mLUB</a>(0.0f),</div>
 <div class="line"><span class="lineno">   60</span>        <a class="code hl_variable" href="class_measure_star_discrepancy_split.html#aa7690dacd7e7ecb1526b905d4b46b9c6">mRand</a>(<a class="code hl_variable" href="class_measure_star_discrepancy_split.html#a16089dcf4fe4b8de55e8d871c7daa932">sSeed</a>++), <span class="comment">// Call with new seed</span></div>
-<div class="line"><span class="lineno">   61</span>        <a class="code hl_variable" href="class_measure_star_discrepancy_split.html#a56ffd246deee45fcbe55b948953fc6be">mPoints</a>(x.<a class="code hl_variable" href="class_measure_star_discrepancy_split.html#a56ffd246deee45fcbe55b948953fc6be">mPoints</a>)</div>
+<div class="line"><span class="lineno">   61</span>        <a class="code hl_variable" href="class_measure_star_discrepancy_split.html#a56ffd246deee45fcbe55b948953fc6be">mPoints</a>(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>.mPoints)</div>
 <div class="line"><span class="lineno">   62</span>    {</div>
 <div class="line"><span class="lineno">   63</span>    }</div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -269,8 +270,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="discrepancy_8cc_source.html#l00075">75</a> of file <a class="el" href="discrepancy_8cc_source.html">discrepancy.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   76</span>    {</div>
-<div class="line"><span class="lineno">   77</span>        <a class="code hl_variable" href="class_measure_star_discrepancy_split.html#a573e33b8c0a6ea3a3125c14486f62029">mLUB</a> = std::max(<a class="code hl_variable" href="class_measure_star_discrepancy_split.html#a573e33b8c0a6ea3a3125c14486f62029">mLUB</a>, y.<a class="code hl_variable" href="class_measure_star_discrepancy_split.html#a573e33b8c0a6ea3a3125c14486f62029">mLUB</a>);</div>
+<div class="line"><span class="lineno">   77</span>        <a class="code hl_variable" href="class_measure_star_discrepancy_split.html#a573e33b8c0a6ea3a3125c14486f62029">mLUB</a> = std::max(<a class="code hl_variable" href="class_measure_star_discrepancy_split.html#a573e33b8c0a6ea3a3125c14486f62029">mLUB</a>, <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>.mLUB);</div>
 <div class="line"><span class="lineno">   78</span>    }</div>
+<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

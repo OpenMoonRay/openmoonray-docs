@@ -1,7 +1,0 @@
-var namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03 =
-[
-    [ "AssignInstanceMasks", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_instance_masks.html", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_instance_masks" ],
-    [ "AssignVolumeInstances", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances.html", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances" ],
-    [ "evaluateInstanceXform", "namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03.html#a4d66bdb434c31652283a363fdd81d973", null ],
-    [ "isSharedReference", "namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03.html#a43bafa03696304fec5206c42f4f97467", null ]
-];

@@ -155,7 +155,7 @@ Functions</h2></td></tr>
 <tr class="separator:a4a8003f3fe64ed9a24bec0e2dda458f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc5974cb4965dd37cc50606114d2dd5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#af93b819ac40799ac392e16f6a90729fd">__forceinline</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_intrinsics_8h.html#adc5974cb4965dd37cc50606114d2dd5c">bitscan</a> (size_t v)</td></tr>
 <tr class="separator:adc5974cb4965dd37cc50606114d2dd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1911bd48a1e8f83fdbb963c1c5130679"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#af93b819ac40799ac392e16f6a90729fd">__forceinline</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_intrinsics_8h.html#a1911bd48a1e8f83fdbb963c1c5130679">clz</a> (const int x)</td></tr>
+<tr class="memitem:a1911bd48a1e8f83fdbb963c1c5130679"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#af93b819ac40799ac392e16f6a90729fd">__forceinline</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_intrinsics_8h.html#a1911bd48a1e8f83fdbb963c1c5130679">clz</a> (const int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)</td></tr>
 <tr class="separator:a1911bd48a1e8f83fdbb963c1c5130679"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa05202e7925d80fd7a973aebd46acffa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#af93b819ac40799ac392e16f6a90729fd">__forceinline</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_intrinsics_8h.html#aa05202e7925d80fd7a973aebd46acffa">__bscf</a> (int &amp;v)</td></tr>
 <tr class="separator:aa05202e7925d80fd7a973aebd46acffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1568,14 +1568,15 @@ template&lt;typename T &gt; </div>
 <p class="definition">Definition at line <a class="el" href="_intrinsics_8h_source.html#l00397">397</a> of file <a class="el" href="_intrinsics_8h_source.html">Intrinsics.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  398</span>{</div>
 <div class="line"><span class="lineno">  399</span><span class="preprocessor">#if defined(__AVX2__)</span></div>
-<div class="line"><span class="lineno">  400</span>  <span class="keywordflow">return</span> _lzcnt_u32(x);</div>
+<div class="line"><span class="lineno">  400</span>  <span class="keywordflow">return</span> _lzcnt_u32(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>);</div>
 <div class="line"><span class="lineno">  401</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno">  402</span>  <span class="keywordflow">if</span> (<a class="code hl_define" href="_platform_8h.html#ad8700448546b3b5111404cc021061fd5">unlikely</a>(x == 0)) <span class="keywordflow">return</span> 32;</div>
-<div class="line"><span class="lineno">  403</span>  <span class="keywordflow">return</span> 31 - <a class="code hl_function" href="_intrinsics_8h.html#a4de3eeda6b6b68fdbe72210a0088d467">__bsr</a>(x);    </div>
+<div class="line"><span class="lineno">  402</span>  <span class="keywordflow">if</span> (<a class="code hl_define" href="_platform_8h.html#ad8700448546b3b5111404cc021061fd5">unlikely</a>(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> == 0)) <span class="keywordflow">return</span> 32;</div>
+<div class="line"><span class="lineno">  403</span>  <span class="keywordflow">return</span> 31 - <a class="code hl_function" href="_intrinsics_8h.html#a4de3eeda6b6b68fdbe72210a0088d467">__bsr</a>(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>);    </div>
 <div class="line"><span class="lineno">  404</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno">  405</span>}</div>
 <div class="ttc" id="a_intrinsics_8h_html_a4de3eeda6b6b68fdbe72210a0088d467"><div class="ttname"><a href="_intrinsics_8h.html#a4de3eeda6b6b68fdbe72210a0088d467">__bsr</a></div><div class="ttdeci">__forceinline int __bsr(int v)</div><div class="ttdef"><b>Definition:</b> <a href="_intrinsics_8h_source.html#l00329">Intrinsics.h:329</a></div></div>
 <div class="ttc" id="a_platform_8h_html_ad8700448546b3b5111404cc021061fd5"><div class="ttname"><a href="_platform_8h.html#ad8700448546b3b5111404cc021061fd5">unlikely</a></div><div class="ttdeci">#define unlikely(expr)</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00239">Platform.h:239</a></div></div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

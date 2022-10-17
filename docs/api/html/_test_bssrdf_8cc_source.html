@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('_test_bssrdf_8cc_source.html',''); ini
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#a5f942f63225c4d2486241d1a640626e6">   51</a></span><a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5f942f63225c4d2486241d1a640626e6">printDistribution</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;u, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;v,</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                  <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;x, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;red,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                  <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;red,</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                  <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;grn, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> &amp;blu,</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                  <span class="keyword">const</span> std::string &amp;prefix)</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
@@ -160,17 +160,17 @@ $(document).ready(function(){initNavTree('_test_bssrdf_8cc_source.html',''); ini
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    filename = prefix;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    filename += <span class="stringliteral">&quot;-red&quot;</span>;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    filename += <span class="stringliteral">&quot;.txt&quot;</span>;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5407d723e277e938e9c2f25cd3a41de1">save2dTxtFile</a>(filename, x, red);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5407d723e277e938e9c2f25cd3a41de1">save2dTxtFile</a>(filename, <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, red);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    filename = prefix;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    filename += <span class="stringliteral">&quot;-grn&quot;</span>;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    filename += <span class="stringliteral">&quot;.txt&quot;</span>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5407d723e277e938e9c2f25cd3a41de1">save2dTxtFile</a>(filename, x, grn);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5407d723e277e938e9c2f25cd3a41de1">save2dTxtFile</a>(filename, <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, grn);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    filename = prefix;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    filename += <span class="stringliteral">&quot;-blu&quot;</span>;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    filename += <span class="stringliteral">&quot;.txt&quot;</span>;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5407d723e277e938e9c2f25cd3a41de1">save2dTxtFile</a>(filename, x, blu);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5407d723e277e938e9c2f25cd3a41de1">save2dTxtFile</a>(filename, <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, blu);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keywordtype">void</span></div>
@@ -179,17 +179,17 @@ $(document).ready(function(){initNavTree('_test_bssrdf_8cc_source.html',''); ini
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> u, v;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a374fee2659397a01f055786041deed85">generateSamples</a>(sampleCount, u, v);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> x, red, grn, blu;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    x.resize(sampleCount);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, red, grn, blu;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>.resize(sampleCount);</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    red.resize(sampleCount);</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    grn.resize(sampleCount);</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    blu.resize(sampleCount);</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    ispc::TestBssrdf_distribution(&amp;bssrdfv, sampleCount, &amp;u[0], &amp;v[0], &amp;x[0],</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    ispc::TestBssrdf_distribution(&amp;bssrdfv, sampleCount, &amp;u[0], &amp;v[0], &amp;<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>[0],</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                                  &amp;red[0], &amp;grn[0], &amp;blu[0]);</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    std::string prefix = std::string(<span class="stringliteral">&quot;mat/testBssrdfvDistribution-&quot;</span>) + suffix;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5f942f63225c4d2486241d1a640626e6">printDistribution</a>(u, v, x, red, grn, blu, prefix);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5f942f63225c4d2486241d1a640626e6">printDistribution</a>(u, v, <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, red, grn, blu, prefix);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keywordtype">void</span></div>
@@ -198,8 +198,8 @@ $(document).ready(function(){initNavTree('_test_bssrdf_8cc_source.html',''); ini
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> u, v;</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a374fee2659397a01f055786041deed85">generateSamples</a>(sampleCount, u, v);</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> x, red, grn, blu;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    x.resize(sampleCount);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, red, grn, blu;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>.resize(sampleCount);</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    red.resize(sampleCount);</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    grn.resize(sampleCount);</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    blu.resize(sampleCount);</div>
@@ -212,14 +212,14 @@ $(document).ready(function(){initNavTree('_test_bssrdf_8cc_source.html',''); ini
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        v[i] = xi[1];</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <a class="code hl_struct" href="structscene__rdl2_1_1math_1_1_color.html">Color</a> rd = bssrdf.<a class="code hl_function" href="classmoonray_1_1shading_1_1_bssrdf.html#a5b2874aabf594cd9b1d638307b524740">eval</a>(r);</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        x[i] = r;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>[i] = r;</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        red[i] = rd[0];</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        grn[i] = rd[1];</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        blu[i] = rd[2];</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    std::string prefix = std::string(<span class="stringliteral">&quot;mat/testBssrdfDistribution-&quot;</span>) + suffix;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5f942f63225c4d2486241d1a640626e6">printDistribution</a>(u, v, x, red, grn, blu, prefix);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5f942f63225c4d2486241d1a640626e6">printDistribution</a>(u, v, <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, red, grn, blu, prefix);</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">//----------------------------------------------------------------------------</span></div>
@@ -486,6 +486,7 @@ $(document).ready(function(){initNavTree('_test_bssrdf_8cc_source.html',''); ini
 <div class="ttc" id="a_dipole_8h_html"><div class="ttname"><a href="_dipole_8h.html">Dipole.h</a></div></div>
 <div class="ttc" id="a_test_bssrdf_8cc_html_a8ffdc7cf075985d0ce4bd1598b015ccc"><div class="ttname"><a href="_test_bssrdf_8cc.html#a8ffdc7cf075985d0ce4bd1598b015ccc">CPPUNIT_TEST_SUITE_REGISTRATION</a></div><div class="ttdeci">CPPUNIT_TEST_SUITE_REGISTRATION(moonray::pbr::TestBssrdf)</div></div>
 <div class="ttc" id="a_test_bssrdf_8h_html"><div class="ttname"><a href="_test_bssrdf_8h.html">TestBssrdf.h</a></div></div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 <div class="ttc" id="a_test_util_8h_html"><div class="ttname"><a href="_test_util_8h.html">TestUtil.h</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_bssrdf_html"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_bssrdf.html">moonray::pbr::TestBssrdf</a></div><div class="ttdoc">This class tests response and statistical properties of all the brdf models we have in lib/pbr.</div><div class="ttdef"><b>Definition:</b> <a href="_test_bssrdf_8h_source.html#l00030">TestBssrdf.h:31</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_test_bssrdf_html_a2284b966c8c2555dbf8a79dae9423283"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_test_bssrdf.html#a2284b966c8c2555dbf8a79dae9423283">moonray::pbr::TestBssrdf::testDipole</a></div><div class="ttdeci">void testDipole()</div><div class="ttdef"><b>Definition:</b> <a href="_test_bssrdf_8cc_source.html#l00337">TestBssrdf.cc:337</a></div></div>

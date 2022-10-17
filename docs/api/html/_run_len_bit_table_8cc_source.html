@@ -444,7 +444,7 @@ $(document).ready(function(){initNavTree('_run_len_bit_table_8cc_source.html',''
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>{</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    <span class="keywordtype">unsigned</span> endId = startId;</div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    <span class="keywordtype">unsigned</span> maxId = mMask.size() - 1;</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    <span class="keywordtype">unsigned</span> maxId = <a class="code hl_variable" href="_volume_assignment_table_8cc.html#ae19f6386d22ca7856b488588e4fd19af">mMask</a>.size() - 1;</div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <span class="keywordflow">if</span> (maxId - startId + 1 &gt; MAX_RUNLEN) {</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        maxId = startId + MAX_RUNLEN - 1;</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    }</div>
@@ -467,7 +467,7 @@ $(document).ready(function(){initNavTree('_run_len_bit_table_8cc_source.html',''
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>        }</div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    }</div>
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span> </div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    <span class="keywordflow">if</span> (endId + 1 &lt; mMask.size()) {</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    <span class="keywordflow">if</span> (endId + 1 &lt; <a class="code hl_variable" href="_volume_assignment_table_8cc.html#ae19f6386d22ca7856b488588e4fd19af">mMask</a>.size()) {</div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        nextMode = calcInitialMode(endId + 1);</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    }</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    <span class="keywordflow">return</span> endId;</div>
@@ -587,6 +587,7 @@ $(document).ready(function(){initNavTree('_run_len_bit_table_8cc_source.html',''
 <div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="ttc" id="a_platform_8h_html_ac6bd494653a0872080be86890bea8639"><div class="ttname"><a href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a></div><div class="ttdeci">#define MNRY_ASSERT(a,...)</div><div class="ttdoc">Use MNRY_ASSERT for assertions you want compiled out of opt builds.</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00425">Platform.h:425</a></div></div>
 <div class="ttc" id="a_run_len_bit_table_8h_html"><div class="ttname"><a href="_run_len_bit_table_8h.html">RunLenBitTable.h</a></div></div>
+<div class="ttc" id="a_volume_assignment_table_8cc_html_ae19f6386d22ca7856b488588e4fd19af"><div class="ttname"><a href="_volume_assignment_table_8cc.html#ae19f6386d22ca7856b488588e4fd19af">mMask</a></div><div class="ttdeci">int32_t mMask</div><div class="ttdef"><b>Definition:</b> <a href="_volume_assignment_table_8cc_source.html#l00169">VolumeAssignmentTable.cc:169</a></div></div>
 <div class="ttc" id="aclassscene__rdl2_1_1grid__util_1_1_run_len_bit_table_html"><div class="ttname"><a href="classscene__rdl2_1_1grid__util_1_1_run_len_bit_table.html">scene_rdl2::grid_util::RunLenBitTable</a></div><div class="ttdef"><b>Definition:</b> <a href="_run_len_bit_table_8h_source.html#l00065">RunLenBitTable.h:66</a></div></div>
 <div class="ttc" id="aclassscene__rdl2_1_1grid__util_1_1_run_len_bit_table_html_a00b7d5a6db0926da05d6814ab17c260e"><div class="ttname"><a href="classscene__rdl2_1_1grid__util_1_1_run_len_bit_table.html#a00b7d5a6db0926da05d6814ab17c260e">scene_rdl2::grid_util::RunLenBitTable::show</a></div><div class="ttdeci">std::string show(const std::string &amp;hd) const</div><div class="ttdef"><b>Definition:</b> <a href="_run_len_bit_table_8cc_source.html#l00268">RunLenBitTable.cc:268</a></div></div>
 <div class="ttc" id="aclassscene__rdl2_1_1grid__util_1_1_run_len_bit_table_html_a00f6087854bb5ede32f41d4428395654"><div class="ttname"><a href="classscene__rdl2_1_1grid__util_1_1_run_len_bit_table.html#a00f6087854bb5ede32f41d4428395654">scene_rdl2::grid_util::RunLenBitTable::enqSingleMaskById</a></div><div class="ttdeci">void enqSingleMaskById(const unsigned id, VContainerEnq &amp;vContainerEnq) const</div><div class="ttdef"><b>Definition:</b> <a href="_run_len_bit_table_8cc_source.html#l00412">RunLenBitTable.cc:412</a></div></div>

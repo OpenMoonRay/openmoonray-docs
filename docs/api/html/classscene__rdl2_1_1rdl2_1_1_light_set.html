@@ -492,7 +492,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   59</span> </div>
 <div class="line"><span class="lineno">   60</span>    <span class="comment">// Binary search for the insertion point.</span></div>
 <div class="line"><span class="lineno">   61</span>    SceneObjectVector::iterator insertPoint = </div>
-<div class="line"><span class="lineno">   62</span>            <a class="code hl_function" href="namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_scene_object_8h_03.html#ab3b4ceb2321476dde47efd03ee933df7">lowerBoundByName</a>(lights.begin(), lights.end(), light);</div>
+<div class="line"><span class="lineno">   62</span>            lowerBoundByName(lights.begin(), lights.end(), light);</div>
 <div class="line"><span class="lineno">   63</span> </div>
 <div class="line"><span class="lineno">   64</span>    <span class="comment">// Is the light at the insertion point the same? If so, it&#39;s already in the</span></div>
 <div class="line"><span class="lineno">   65</span>    <span class="comment">// set.</span></div>
@@ -517,7 +517,6 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_object_html_ab793da37a789fea53c24a5768860ff72"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_object.html#ab793da37a789fea53c24a5768860ff72">scene_rdl2::rdl2::SceneObject::getMutable</a></div><div class="ttdeci">finline T &amp; getMutable(AttributeKey&lt; T &gt; key)</div></div>
 <div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_object_html_abe1d71a310a22263b77ffe8525ce67ae"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_object.html#abe1d71a310a22263b77ffe8525ce67ae">scene_rdl2::rdl2::SceneObject::mUpdateActive</a></div><div class="ttdeci">bool mUpdateActive</div><div class="ttdef"><b>Definition:</b> <a href="_scene_object_8h_source.html#l01026">SceneObject.h:1026</a></div></div>
 <div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_object_html_ad49e14710d9df2ff7e87e46f6e2577c1"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_object.html#ad49e14710d9df2ff7e87e46f6e2577c1">scene_rdl2::rdl2::SceneObject::mAttributeUpdateMask</a></div><div class="ttdeci">boost::dynamic_bitset mAttributeUpdateMask</div><div class="ttdef"><b>Definition:</b> <a href="_scene_object_8h_source.html#l01016">SceneObject.h:1016</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_scene_object_8h_03_html_ab3b4ceb2321476dde47efd03ee933df7"><div class="ttname"><a href="namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_scene_object_8h_03.html#ab3b4ceb2321476dde47efd03ee933df7">scene_rdl2::rdl2::anonymous_namespace{SceneObject.h}::lowerBoundByName</a></div><div class="ttdeci">Iter lowerBoundByName(Iter first, Iter last, const SceneObject *value)</div><div class="ttdef"><b>Definition:</b> <a href="_scene_object_8h_source.html#l01266">SceneObject.h:1266</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1rdl2_html_a8775700f4e3bd1145dd4df3eee660a17"><div class="ttname"><a href="namespacescene__rdl2_1_1rdl2.html#a8775700f4e3bd1145dd4df3eee660a17">scene_rdl2::rdl2::SceneObjectVector</a></div><div class="ttdeci">std::vector&lt; SceneObject * &gt; SceneObjectVector</div><div class="ttdef"><b>Definition:</b> <a href="scene__rdl2-main_2lib_2scene_2rdl2_2_types_8h_source.html#l00146">Types.h:146</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -592,7 +591,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  115</span> </div>
 <div class="line"><span class="lineno">  116</span>    <span class="comment">// Binary search for the light.</span></div>
 <div class="line"><span class="lineno">  117</span>    SceneObjectVector::const_iterator iter =</div>
-<div class="line"><span class="lineno">  118</span>            <a class="code hl_function" href="namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_scene_object_8h_03.html#ab3b4ceb2321476dde47efd03ee933df7">lowerBoundByName</a>(lights.begin(), lights.end(), light);</div>
+<div class="line"><span class="lineno">  118</span>            lowerBoundByName(lights.begin(), lights.end(), light);</div>
 <div class="line"><span class="lineno">  119</span> </div>
 <div class="line"><span class="lineno">  120</span>    <span class="keywordflow">return</span> iter != lights.end() &amp;&amp; *iter == light;</div>
 <div class="line"><span class="lineno">  121</span>}</div>
@@ -698,7 +697,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   93</span> </div>
 <div class="line"><span class="lineno">   94</span>    <span class="comment">// Binary search for the light.</span></div>
 <div class="line"><span class="lineno">   95</span>    SceneObjectVector::iterator removePoint =</div>
-<div class="line"><span class="lineno">   96</span>            <a class="code hl_function" href="namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_scene_object_8h_03.html#ab3b4ceb2321476dde47efd03ee933df7">lowerBoundByName</a>(lights.begin(), lights.end(), light);</div>
+<div class="line"><span class="lineno">   96</span>            lowerBoundByName(lights.begin(), lights.end(), light);</div>
 <div class="line"><span class="lineno">   97</span> </div>
 <div class="line"><span class="lineno">   98</span>    <span class="comment">// If found, remove it.</span></div>
 <div class="line"><span class="lineno">   99</span>    <span class="keywordflow">if</span> (removePoint != lights.end() &amp;&amp; *removePoint == light) {</div>

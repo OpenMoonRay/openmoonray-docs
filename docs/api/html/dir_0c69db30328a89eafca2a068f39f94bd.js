@@ -15,11 +15,11 @@ var dir_0c69db30328a89eafca2a068f39f94bd =
     [ "test_math_ReferenceFrame.h", "test__math___reference_frame_8h.html", "test__math___reference_frame_8h" ],
     [ "test_math_Vec4.cc", "test__math___vec4_8cc.html", null ],
     [ "test_math_Vec4.h", "test__math___vec4_8h.html", "test__math___vec4_8h" ],
-    [ "test_math_Xform.cc", "test__math___xform_8cc.html", "test__math___xform_8cc" ],
+    [ "test_math_Xform.cc", "test__math___xform_8cc.html", null ],
     [ "test_math_Xform.h", "test__math___xform_8h.html", "test__math___xform_8h" ],
     [ "TestColorSpace.cc", "_test_color_space_8cc.html", null ],
     [ "TestColorSpace.h", "_test_color_space_8h.html", "_test_color_space_8h" ],
-    [ "TestRandom.cc", "_test_random_8cc.html", "_test_random_8cc" ],
+    [ "TestRandom.cc", "_test_random_8cc.html", null ],
     [ "TestRandom.h", "_test_random_8h.html", "_test_random_8h" ],
     [ "TestViewport.cc", "_test_viewport_8cc.html", null ],
     [ "TestViewport.h", "_test_viewport_8h.html", "_test_viewport_8h" ]

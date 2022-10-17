@@ -476,7 +476,7 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  365</span>        start += <a class="code hl_variable" href="classmoonray_1_1stats_1_1_socket_streambuf.html#a02d32d159c8f265a17082ce7aa6f5b05">sPutBack</a>;</div>
 <div class="line"><span class="lineno">  366</span>    }</div>
 <div class="line"><span class="lineno">  367</span> </div>
-<div class="line"><span class="lineno">  368</span>    <span class="keyword">const</span> std::size_t <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> = <a class="code hl_variable" href="classmoonray_1_1stats_1_1_socket_streambuf.html#a7b708aa55d291b333e0088cfb9606af6">mInputBuffer</a>.size() - (start - base);</div>
+<div class="line"><span class="lineno">  368</span>    <span class="keyword">const</span> std::size_t count = <a class="code hl_variable" href="classmoonray_1_1stats_1_1_socket_streambuf.html#a7b708aa55d291b333e0088cfb9606af6">mInputBuffer</a>.size() - (start - base);</div>
 <div class="line"><span class="lineno">  369</span>    <span class="keyword">const</span> ssize_t rc = <a class="code hl_variable" href="classmoonray_1_1stats_1_1_socket_streambuf.html#a52dbd05a1105ecc26b5d6e24401bbdec">mSock</a>.<a class="code hl_function" href="classmoonray_1_1stats_1_1_socket.html#a093c53d4a558e45cb9ceea6424b9d2f0">read</a>(start, count);</div>
 <div class="line"><span class="lineno">  370</span>    <span class="keywordflow">if</span> (rc &lt;= 0) {</div>
 <div class="line"><span class="lineno">  371</span>        <span class="keywordflow">return</span> traits_type::eof();</div>
@@ -485,7 +485,6 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  374</span>    <span class="keywordflow">return</span> traits_type::not_eof(*gptr());</div>
 <div class="line"><span class="lineno">  375</span>}</div>
 <div class="ttc" id="aclassmoonray_1_1stats_1_1_socket_html_a093c53d4a558e45cb9ceea6424b9d2f0"><div class="ttname"><a href="classmoonray_1_1stats_1_1_socket.html#a093c53d4a558e45cb9ceea6424b9d2f0">moonray::stats::Socket::read</a></div><div class="ttdeci">ssize_t read(char *buf, ssize_t count)</div><div class="ttdef"><b>Definition:</b> <a href="_socket_stream_8cc_source.html#l00247">SocketStream.cc:247</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03_html_ac002aa9e7f277e6c84e4fe1aeb5bb8cb"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">moonray::rndr::unittest::anonymous_namespace{TestOverlappingRegions.cc}::count</a></div><div class="ttdeci">void count(const OverlappingRegions&lt; sRegionOverlap, sTileWidth, sTileHeight, sDesiredRegionsPerDimension &gt; &amp;regions, int line)</div><div class="ttdef"><b>Definition:</b> <a href="_test_overlapping_regions_8cc_source.html#l00024">TestOverlappingRegions.cc:24</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -514,7 +513,7 @@ Static Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_socket_stream_8cc_source.html#l00319">319</a> of file <a class="el" href="_socket_stream_8cc_source.html">SocketStream.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  320</span>{</div>
-<div class="line"><span class="lineno">  321</span>    <span class="keyword">const</span> std::ptrdiff_t <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> = pptr() - pbase();</div>
+<div class="line"><span class="lineno">  321</span>    <span class="keyword">const</span> std::ptrdiff_t count = pptr() - pbase();</div>
 <div class="line"><span class="lineno">  322</span>    <span class="keyword">const</span> ssize_t n = <a class="code hl_variable" href="classmoonray_1_1stats_1_1_socket_streambuf.html#a52dbd05a1105ecc26b5d6e24401bbdec">mSock</a>.<a class="code hl_function" href="classmoonray_1_1stats_1_1_socket.html#a419a609dabd49223839c10c83a9d7f3e">write</a>(pbase(), count);</div>
 <div class="line"><span class="lineno">  323</span>    <span class="keywordflow">if</span> (n != count) {</div>
 <div class="line"><span class="lineno">  324</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>

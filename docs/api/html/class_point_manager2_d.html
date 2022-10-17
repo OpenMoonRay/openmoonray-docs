@@ -120,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad3ce11454bd1fd999943d4797e14fff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a026ddfa65164eaa8e444584b4f0656e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point_manager2_d.html#a026ddfa65164eaa8e444584b4f0656e8">erase</a> (<a class="el" href="class_point_manager2_d.html#ad61ea09d65f8132ed88c03c5fa7453e5">iterator</a> it)</td></tr>
 <tr class="separator:a026ddfa65164eaa8e444584b4f0656e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7db67ebd9eb35ee80f56d97fa66ff2a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point_manager2_d.html#a7db67ebd9eb35ee80f56d97fa66ff2a6">erase</a> (const <a class="el" href="class_point_manager2_d.html#ac121c7bc974a57d610b5817eebdcf454">ProjectedPoint</a> &amp;x, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> y)</td></tr>
+<tr class="memitem:a7db67ebd9eb35ee80f56d97fa66ff2a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point_manager2_d.html#a7db67ebd9eb35ee80f56d97fa66ff2a6">erase</a> (const <a class="el" href="class_point_manager2_d.html#ac121c7bc974a57d610b5817eebdcf454">ProjectedPoint</a> &amp;<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
 <tr class="separator:a7db67ebd9eb35ee80f56d97fa66ff2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f1104696bb702ab6f1d9bfaa902f89b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point_manager2_d.html#ab2342899d0322223ee8875963202f130">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point_manager2_d.html#a4f1104696bb702ab6f1d9bfaa902f89b">size</a> () const</td></tr>
 <tr class="separator:a4f1104696bb702ab6f1d9bfaa902f89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -376,16 +376,17 @@ template&lt;typename PointIter , typename floatIter &gt; </div>
 <p class="definition">Definition at line <a class="el" href="_point_container2_d_8h_source.html#l00029">29</a> of file <a class="el" href="_point_container2_d_8h_source.html">PointContainer2D.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   30</span>    {</div>
 <div class="line"><span class="lineno">   31</span>        <span class="keywordflow">for</span> ( ; floatFirst != floatLast; ++floatFirst) {</div>
-<div class="line"><span class="lineno">   32</span>            <span class="keywordflow">for</span> (PointIter x = pointFirst; x != pointLast; ++x) {</div>
-<div class="line"><span class="lineno">   33</span>                <a class="code hl_variable" href="class_point_manager2_d.html#af418d477c70d4175c42f40de6cf2740f">mPoints</a>.emplace_front(*x, *floatFirst);</div>
+<div class="line"><span class="lineno">   32</span>            <span class="keywordflow">for</span> (PointIter <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = pointFirst; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> != pointLast; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
+<div class="line"><span class="lineno">   33</span>                <a class="code hl_variable" href="class_point_manager2_d.html#af418d477c70d4175c42f40de6cf2740f">mPoints</a>.emplace_front(*<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, *floatFirst);</div>
 <div class="line"><span class="lineno">   34</span>                <span class="keyword">auto</span> p = std::make_shared&lt;iterator&gt;(<a class="code hl_variable" href="class_point_manager2_d.html#af418d477c70d4175c42f40de6cf2740f">mPoints</a>.begin());</div>
-<div class="line"><span class="lineno">   35</span>                <a class="code hl_variable" href="class_point_manager2_d.html#ab142d3f19477cb30ce2d43c902d54e7e">mKeysX</a>.insert(std::make_pair(*x, p));</div>
+<div class="line"><span class="lineno">   35</span>                <a class="code hl_variable" href="class_point_manager2_d.html#ab142d3f19477cb30ce2d43c902d54e7e">mKeysX</a>.insert(std::make_pair(*<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, p));</div>
 <div class="line"><span class="lineno">   36</span>                <a class="code hl_variable" href="class_point_manager2_d.html#a8f7166be4ba58b7e89f11b810e849123">mKeysY</a>.insert(std::make_pair(*floatFirst, p));</div>
 <div class="line"><span class="lineno">   37</span>            }</div>
 <div class="line"><span class="lineno">   38</span>            std::cout &lt;&lt; <span class="stringliteral">&quot;Outer\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   39</span>        }</div>
 <div class="line"><span class="lineno">   40</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Done\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   41</span>    }</div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 <div class="ttc" id="aclass_point_manager2_d_html_a8f7166be4ba58b7e89f11b810e849123"><div class="ttname"><a href="class_point_manager2_d.html#a8f7166be4ba58b7e89f11b810e849123">PointManager2D::mKeysY</a></div><div class="ttdeci">FloatKeyList mKeysY</div><div class="ttdef"><b>Definition:</b> <a href="_point_container2_d_8h_source.html#l00123">PointContainer2D.h:123</a></div></div>
 <div class="ttc" id="aclass_point_manager2_d_html_ab142d3f19477cb30ce2d43c902d54e7e"><div class="ttname"><a href="class_point_manager2_d.html#ab142d3f19477cb30ce2d43c902d54e7e">PointManager2D::mKeysX</a></div><div class="ttdeci">PointKeyList mKeysX</div><div class="ttdef"><b>Definition:</b> <a href="_point_container2_d_8h_source.html#l00122">PointContainer2D.h:122</a></div></div>
 <div class="ttc" id="aclass_point_manager2_d_html_af418d477c70d4175c42f40de6cf2740f"><div class="ttname"><a href="class_point_manager2_d.html#af418d477c70d4175c42f40de6cf2740f">PointManager2D::mPoints</a></div><div class="ttdeci">ListType mPoints</div><div class="ttdef"><b>Definition:</b> <a href="_point_container2_d_8h_source.html#l00121">PointContainer2D.h:121</a></div></div>
@@ -691,8 +692,8 @@ template&lt;typename <a class="el" href="discrepancy_8cc.html#afe63f4f8126770dc3
 
 <p class="definition">Definition at line <a class="el" href="_point_container2_d_8h_source.html#l00055">55</a> of file <a class="el" href="_point_container2_d_8h_source.html">PointContainer2D.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   56</span>    {</div>
-<div class="line"><span class="lineno">   57</span>        <span class="keyword">auto</span> xrange = <a class="code hl_variable" href="class_point_manager2_d.html#ab142d3f19477cb30ce2d43c902d54e7e">mKeysX</a>.equal_range(x);</div>
-<div class="line"><span class="lineno">   58</span>        <span class="keyword">auto</span> yrange = <a class="code hl_variable" href="class_point_manager2_d.html#a8f7166be4ba58b7e89f11b810e849123">mKeysY</a>.equal_range(y);</div>
+<div class="line"><span class="lineno">   57</span>        <span class="keyword">auto</span> xrange = <a class="code hl_variable" href="class_point_manager2_d.html#ab142d3f19477cb30ce2d43c902d54e7e">mKeysX</a>.equal_range(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>);</div>
+<div class="line"><span class="lineno">   58</span>        <span class="keyword">auto</span> yrange = <a class="code hl_variable" href="class_point_manager2_d.html#a8f7166be4ba58b7e89f11b810e849123">mKeysY</a>.equal_range(<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>);</div>
 <div class="line"><span class="lineno">   59</span> </div>
 <div class="line"><span class="lineno">   60</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> xit = xrange.first; xit != xrange.second; ++xit) {</div>
 <div class="line"><span class="lineno">   61</span>            <span class="keywordflow">if</span> (xit-&gt;second &amp;&amp; !xit-&gt;second.unique()) {</div>
@@ -710,6 +711,7 @@ template&lt;typename <a class="el" href="discrepancy_8cc.html#afe63f4f8126770dc3
 <div class="line"><span class="lineno">   73</span>        <a class="code hl_variable" href="class_point_manager2_d.html#a8f7166be4ba58b7e89f11b810e849123">mKeysY</a>.erase(yrange.first, yrange.second);</div>
 <div class="line"><span class="lineno">   74</span>        <a class="code hl_variable" href="class_point_manager2_d.html#ab142d3f19477cb30ce2d43c902d54e7e">mKeysX</a>.erase(xrange.first, xrange.second);</div>
 <div class="line"><span class="lineno">   75</span>    }</div>
+<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

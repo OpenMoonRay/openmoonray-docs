@@ -209,7 +209,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  172</span>    u = u * 2.0f - 1.0f;</div>
 <div class="line"><span class="lineno">  173</span>    v = v * 2.0f - 1.0f;</div>
 <div class="line"><span class="lineno">  174</span> </div>
-<div class="line"><span class="lineno">  175</span>    <span class="keywordtype">float</span> attenuation = <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_elliptical_falloff_8cc_03.html#ab865a260f20e31be3a27a4861204997b">evalSuperEllipse</a>(</div>
+<div class="line"><span class="lineno">  175</span>    <span class="keywordtype">float</span> attenuation = evalSuperEllipse(</div>
 <div class="line"><span class="lineno">  176</span>        u, v,</div>
 <div class="line"><span class="lineno">  177</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_elliptical_falloff.html#aece575dbf15151c3932126bba25f4ff3">mInnerW</a>, <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_elliptical_falloff.html#a1237f77f3c6212cc7af8cb3ae84d405d">mInnerH</a>,</div>
 <div class="line"><span class="lineno">  178</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_elliptical_falloff.html#a50ee771be15fe616de39c0793e6c976f">mOuterW</a>, <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_elliptical_falloff.html#a687218f5a29837fdf4164e87afb9185f">mOuterH</a>,</div>
@@ -226,7 +226,6 @@ Protected Attributes</h2></td></tr>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_elliptical_falloff_html_a7e113a0701a28f6e3aee5f172b43ad1f"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_elliptical_falloff.html#a7e113a0701a28f6e3aee5f172b43ad1f">moonray::pbr::EllipticalFalloff::mOldFalloffCurve</a></div><div class="ttdeci">OldFalloffCurve mOldFalloffCurve</div><div class="ttdef"><b>Definition:</b> <a href="_elliptical_falloff_8h_source.html#l00066">EllipticalFalloff.h:66</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_elliptical_falloff_html_aece575dbf15151c3932126bba25f4ff3"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_elliptical_falloff.html#aece575dbf15151c3932126bba25f4ff3">moonray::pbr::EllipticalFalloff::mInnerW</a></div><div class="ttdeci">float mInnerW</div><div class="ttdef"><b>Definition:</b> <a href="_elliptical_falloff_8h_source.html#l00068">EllipticalFalloff.h:68</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_old_falloff_curve_html_a34a0f08f5155443a91ffc0f0c3d6c962"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_old_falloff_curve.html#a34a0f08f5155443a91ffc0f0c3d6c962">moonray::pbr::OldFalloffCurve::eval</a></div><div class="ttdeci">float eval(float t) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_util_8h_source.html#l00198">LightUtil.h:198</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1pbr_1_1anonymous__namespace_02_elliptical_falloff_8cc_03_html_ab865a260f20e31be3a27a4861204997b"><div class="ttname"><a href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_elliptical_falloff_8cc_03.html#ab865a260f20e31be3a27a4861204997b">moonray::pbr::anonymous_namespace{EllipticalFalloff.cc}::evalSuperEllipse</a></div><div class="ttdeci">float evalSuperEllipse(float x, float y, float a, float b, float A, float B, float roundness)</div><div class="ttdef"><b>Definition:</b> <a href="_elliptical_falloff_8cc_source.html#l00036">EllipticalFalloff.cc:36</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -370,7 +369,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  157</span>    u = u * 2.0f - 1.0f;</div>
 <div class="line"><span class="lineno">  158</span>    v = v * 2.0f - 1.0f;</div>
 <div class="line"><span class="lineno">  159</span> </div>
-<div class="line"><span class="lineno">  160</span>    <span class="keywordtype">float</span> attenuation = <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_elliptical_falloff_8cc_03.html#ab865a260f20e31be3a27a4861204997b">evalSuperEllipse</a>(</div>
+<div class="line"><span class="lineno">  160</span>    <span class="keywordtype">float</span> attenuation = evalSuperEllipse(</div>
 <div class="line"><span class="lineno">  161</span>        u, v,</div>
 <div class="line"><span class="lineno">  162</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_elliptical_falloff.html#aece575dbf15151c3932126bba25f4ff3">mInnerW</a>, <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_elliptical_falloff.html#a1237f77f3c6212cc7af8cb3ae84d405d">mInnerH</a>,</div>
 <div class="line"><span class="lineno">  163</span>        <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_elliptical_falloff.html#a50ee771be15fe616de39c0793e6c976f">mOuterW</a>, <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_elliptical_falloff.html#a687218f5a29837fdf4164e87afb9185f">mOuterH</a>,</div>

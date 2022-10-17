@@ -102,10 +102,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ab34b0336f6669aea3680977bb09924be"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1_pixel_scramble_n_s.html#ab34b0336f6669aea3680977bb09924be">roundDownPower2MaxShift</a> () noexcept</td></tr>
 <tr class="separator:ab34b0336f6669aea3680977bb09924be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99dd90dd5410050eea73ef42fe0d8f5e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a99dd90dd5410050eea73ef42fe0d8f5e"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1_pixel_scramble_n_s.html#a99dd90dd5410050eea73ef42fe0d8f5e">roundDownPower2Helper</a> (T x, T shift) noexcept</td></tr>
+<tr class="memitem:a99dd90dd5410050eea73ef42fe0d8f5e"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1_pixel_scramble_n_s.html#a99dd90dd5410050eea73ef42fe0d8f5e">roundDownPower2Helper</a> (T <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, T shift) noexcept</td></tr>
 <tr class="separator:a99dd90dd5410050eea73ef42fe0d8f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8fc1c94c14fadc4a0cb75ff32b32a54"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af8fc1c94c14fadc4a0cb75ff32b32a54"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1_pixel_scramble_n_s.html#af8fc1c94c14fadc4a0cb75ff32b32a54">roundDownPower2</a> (T x) noexcept</td></tr>
+<tr class="memitem:af8fc1c94c14fadc4a0cb75ff32b32a54"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr_1_1_pixel_scramble_n_s.html#af8fc1c94c14fadc4a0cb75ff32b32a54">roundDownPower2</a> (T <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) noexcept</td></tr>
 <tr class="separator:af8fc1c94c14fadc4a0cb75ff32b32a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -137,8 +137,9 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_pixel_scramble_8h_source.html#l00103">103</a> of file <a class="el" href="_pixel_scramble_8h_source.html">PixelScramble.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  104</span>{</div>
-<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1_pixel_scramble_n_s.html#a99dd90dd5410050eea73ef42fe0d8f5e">roundDownPower2Helper</a>(x, T(1)) - (<a class="code hl_function" href="namespacemoonray_1_1pbr_1_1_pixel_scramble_n_s.html#a99dd90dd5410050eea73ef42fe0d8f5e">roundDownPower2Helper</a>(x, T(1)) &gt;&gt; T(1));</div>
+<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1_pixel_scramble_n_s.html#a99dd90dd5410050eea73ef42fe0d8f5e">roundDownPower2Helper</a>(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, T(1)) - (<a class="code hl_function" href="namespacemoonray_1_1pbr_1_1_pixel_scramble_n_s.html#a99dd90dd5410050eea73ef42fe0d8f5e">roundDownPower2Helper</a>(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, T(1)) &gt;&gt; T(1));</div>
 <div class="line"><span class="lineno">  106</span>}</div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_1_1_pixel_scramble_n_s_html_a99dd90dd5410050eea73ef42fe0d8f5e"><div class="ttname"><a href="namespacemoonray_1_1pbr_1_1_pixel_scramble_n_s.html#a99dd90dd5410050eea73ef42fe0d8f5e">moonray::pbr::PixelScrambleNS::roundDownPower2Helper</a></div><div class="ttdeci">constexpr T roundDownPower2Helper(T x, T shift) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_pixel_scramble_8h_source.html#l00097">PixelScramble.h:97</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -181,7 +182,7 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="_pixel_scramble_8h_source.html#l00097">97</a> of file <a class="el" href="_pixel_scramble_8h_source.html">PixelScramble.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   98</span>{</div>
-<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">return</span> (shift &gt; roundDownPower2MaxShift&lt;T&gt;()) ? x : <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1_pixel_scramble_n_s.html#a99dd90dd5410050eea73ef42fe0d8f5e">roundDownPower2Helper</a>(x | (x &gt;&gt; shift), shift * 2);</div>
+<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">return</span> (shift &gt; roundDownPower2MaxShift&lt;T&gt;()) ? <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> : <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1_pixel_scramble_n_s.html#a99dd90dd5410050eea73ef42fe0d8f5e">roundDownPower2Helper</a>(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> | (<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &gt;&gt; shift), shift * 2);</div>
 <div class="line"><span class="lineno">  100</span>}</div>
 </div><!-- fragment -->
 </div>

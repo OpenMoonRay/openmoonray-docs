@@ -1066,7 +1066,7 @@ template&lt;typename Allocator , typename... Args&gt; </div>
 <div class="line"><span class="lineno">   37</span> </div>
 <div class="line"><span class="lineno">   38</span>    size_type n = 0;</div>
 <div class="line"><span class="lineno">   39</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">for</span> (n = 0; n &lt; size; ++n) {</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">for</span> (n = 0; n &lt; <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>; ++n) {</div>
 <div class="line"><span class="lineno">   41</span>            traits::construct(alloc, p + n,</div>
 <div class="line"><span class="lineno">   42</span>                              std::forward&lt;Args&gt;(args)...);</div>
 <div class="line"><span class="lineno">   43</span>        }</div>
@@ -1077,6 +1077,7 @@ template&lt;typename Allocator , typename... Args&gt; </div>
 <div class="line"><span class="lineno">   48</span>        <span class="keywordflow">throw</span>;</div>
 <div class="line"><span class="lineno">   49</span>    }</div>
 <div class="line"><span class="lineno">   50</span>}</div>
+<div class="ttc" id="anamespacescene__rdl2_1_1math_html_a5277a7946ff4d740ccf0c9651ffbaff5"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">scene_rdl2::math::size</a></div><div class="ttdeci">__forceinline const T size(const BBox&lt; T &gt; &amp;box)</div><div class="ttdef"><b>Definition:</b> <a href="_b_box_8h_source.html#l00105">BBox.h:105</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1191,7 +1192,7 @@ template&lt;typename Allocator , typename... Args&gt; </div>
 <div class="line"><span class="lineno">   67</span> </div>
 <div class="line"><span class="lineno">   68</span>    size_type n = 0;</div>
 <div class="line"><span class="lineno">   69</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   70</span>        <span class="keywordflow">for</span> (n = 0; n &lt; size; ++n) {</div>
+<div class="line"><span class="lineno">   70</span>        <span class="keywordflow">for</span> (n = 0; n &lt; <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>; ++n) {</div>
 <div class="line"><span class="lineno">   71</span>            traits::construct(alloc, p + n, src[n]);</div>
 <div class="line"><span class="lineno">   72</span>        }</div>
 <div class="line"><span class="lineno">   73</span>    } <span class="keywordflow">catch</span> (...) {</div>
@@ -2089,7 +2090,7 @@ template&lt;typename Allocator &gt; </div>
 <div class="line"><span class="lineno">  122</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><span class="lineno">  123</span>    }</div>
 <div class="line"><span class="lineno">  124</span> </div>
-<div class="line"><span class="lineno">  125</span>    <span class="keywordflow">for</span> (size_type i = 0; i &lt; size; ++i) {</div>
+<div class="line"><span class="lineno">  125</span>    <span class="keywordflow">for</span> (size_type i = 0; i &lt; <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>; ++i) {</div>
 <div class="line"><span class="lineno">  126</span>        pointer q = p + i;</div>
 <div class="line"><span class="lineno">  127</span>        <span class="keywordflow">if</span> (q) {</div>
 <div class="line"><span class="lineno">  128</span>            traits::destroy(alloc, q);</div>
@@ -2129,7 +2130,7 @@ template&lt;typename Predicate &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="lib_2rendering_2geom_2prim_2util_8h_source.html#l00029">29</a> of file <a class="el" href="lib_2rendering_2geom_2prim_2util_8h_source.html">Util.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   30</span>{</div>
-<div class="line"><span class="lineno">   31</span>    <span class="keywordtype">int</span> first = 0, len = size;</div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordtype">int</span> first = 0, len = <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>;</div>
 <div class="line"><span class="lineno">   32</span>    <span class="keywordflow">while</span> (len &gt; 0) {</div>
 <div class="line"><span class="lineno">   33</span>        <span class="keywordtype">int</span> half = len &gt;&gt; 1, middle = first + half;</div>
 <div class="line"><span class="lineno">   34</span>        <span class="keywordflow">if</span> (pred(middle)) {</div>
@@ -2140,11 +2141,10 @@ template&lt;typename Predicate &gt; </div>
 <div class="line"><span class="lineno">   39</span>        }</div>
 <div class="line"><span class="lineno">   40</span>    }</div>
 <div class="line"><span class="lineno">   41</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> result = first - 1;</div>
-<div class="line"><span class="lineno">   42</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> maxRes = <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">size</a> - 2;</div>
+<div class="line"><span class="lineno">   42</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> maxRes = <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a> - 2;</div>
 <div class="line"><span class="lineno">   43</span>    <span class="keywordflow">return</span> result &lt; 0 ? 0 :</div>
 <div class="line"><span class="lineno">   44</span>           result &gt; maxRes ? maxRes : result;</div>
 <div class="line"><span class="lineno">   45</span>}</div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_resume_history_meta_data_8cc_03_html_a9a38a2aa0f811fa9e3761cd0049c46b8"><div class="ttname"><a href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#a9a38a2aa0f811fa9e3761cd0049c46b8">anonymous_namespace{ResumeHistoryMetaData.cc}::size</a></div><div class="ttdeci">MAYBE_UNUSED std::size_t size(const std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="_resume_history_meta_data_8cc_source.html#l00047">ResumeHistoryMetaData.cc:47</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2927,7 +2927,7 @@ template&lt;typename Allocator &gt; </div>
 <div class="line"><span class="lineno">   97</span> </div>
 <div class="line"><span class="lineno">   98</span>    size_type n = 0;</div>
 <div class="line"><span class="lineno">   99</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">for</span> (n = 0; n &lt; size; ++n) {</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">for</span> (n = 0; n &lt; <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>; ++n) {</div>
 <div class="line"><span class="lineno">  101</span>            traits::construct(alloc, p + n, std::move_if_noexcept(src[n]));</div>
 <div class="line"><span class="lineno">  102</span>        }</div>
 <div class="line"><span class="lineno">  103</span>    } <span class="keywordflow">catch</span> (...) {</div>
@@ -3632,7 +3632,6 @@ template&lt;typename Allocator &gt; </div>
 <div class="line"><span class="lineno">  696</span>        }</div>
 <div class="line"><span class="lineno">  697</span>    }</div>
 <div class="line"><span class="lineno">  698</span>}</div>
-<div class="ttc" id="anamespacescene__rdl2_1_1math_html_a5277a7946ff4d740ccf0c9651ffbaff5"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">scene_rdl2::math::size</a></div><div class="ttdeci">__forceinline const T size(const BBox&lt; T &gt; &amp;box)</div><div class="ttdef"><b>Definition:</b> <a href="_b_box_8h_source.html#l00105">BBox.h:105</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4424,13 +4423,13 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  122</span>    <span class="keywordtype">bool</span> isValid = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">  123</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> v = 0; v &lt; vertices.size(); ++v) {</div>
 <div class="line"><span class="lineno">  124</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> t = 0; t &lt; vertices.get_time_steps(); ++t) {</div>
-<div class="line"><span class="lineno">  125</span>            <span class="keywordflow">if</span> (std::isnan(vertices(v, t).x) ||</div>
-<div class="line"><span class="lineno">  126</span>                std::isnan(vertices(v, t).y) ||</div>
+<div class="line"><span class="lineno">  125</span>            <span class="keywordflow">if</span> (std::isnan(vertices(v, t).<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) ||</div>
+<div class="line"><span class="lineno">  126</span>                std::isnan(vertices(v, t).<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) ||</div>
 <div class="line"><span class="lineno">  127</span>                std::isnan(vertices(v, t).z)) {</div>
 <div class="line"><span class="lineno">  128</span>                isValid = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  129</span>                rdlGeometry-&gt;<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_object.html#a64d98b035637af4ead22d6e92ff083da">error</a>(<span class="stringliteral">&quot;Vertex data has a nan value at index (&quot;</span>, v, <span class="stringliteral">&quot;, &quot;</span>, t, <span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><span class="lineno">  130</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!std::isfinite(vertices(v, t).x) ||</div>
-<div class="line"><span class="lineno">  131</span>                       !std::isfinite(vertices(v, t).y) ||</div>
+<div class="line"><span class="lineno">  130</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!std::isfinite(vertices(v, t).<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) ||</div>
+<div class="line"><span class="lineno">  131</span>                       !std::isfinite(vertices(v, t).<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) ||</div>
 <div class="line"><span class="lineno">  132</span>                       !std::isfinite(vertices(v, t).z)) {</div>
 <div class="line"><span class="lineno">  133</span>                isValid = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  134</span>                rdlGeometry-&gt;<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_object.html#a64d98b035637af4ead22d6e92ff083da">error</a>(<span class="stringliteral">&quot;Vertex data has a infinite value at index (&quot;</span>, v, <span class="stringliteral">&quot;, &quot;</span>, t, <span class="stringliteral">&quot;)&quot;</span>);</div>
@@ -4439,6 +4438,8 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  137</span>    }</div>
 <div class="line"><span class="lineno">  138</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ac4fce9de722f318d3cc6e553d5d2f271">isValid</a>;</div>
 <div class="line"><span class="lineno">  139</span>}</div>
+<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4473,14 +4474,14 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   97</span>    <span class="keywordtype">bool</span> isValid = <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   98</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> v = 0; v &lt; vertices.size(); ++v) {</div>
 <div class="line"><span class="lineno">   99</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> t = 0; t &lt; vertices.get_time_steps(); ++t) {</div>
-<div class="line"><span class="lineno">  100</span>            <span class="keywordflow">if</span> (std::isnan(vertices(v, t).x) ||</div>
-<div class="line"><span class="lineno">  101</span>                std::isnan(vertices(v, t).y) ||</div>
+<div class="line"><span class="lineno">  100</span>            <span class="keywordflow">if</span> (std::isnan(vertices(v, t).<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) ||</div>
+<div class="line"><span class="lineno">  101</span>                std::isnan(vertices(v, t).<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) ||</div>
 <div class="line"><span class="lineno">  102</span>                std::isnan(vertices(v, t).z) ||</div>
 <div class="line"><span class="lineno">  103</span>                std::isnan(vertices(v, t).w)) {</div>
 <div class="line"><span class="lineno">  104</span>                isValid = <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">  105</span>                rdlGeometry-&gt;<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_object.html#a64d98b035637af4ead22d6e92ff083da">error</a>(<span class="stringliteral">&quot;Vertex data has a nan value at index (&quot;</span>, v, <span class="stringliteral">&quot;, &quot;</span>, t, <span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><span class="lineno">  106</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!std::isfinite(vertices(v, t).x) ||</div>
-<div class="line"><span class="lineno">  107</span>                       !std::isfinite(vertices(v, t).y) ||</div>
+<div class="line"><span class="lineno">  106</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!std::isfinite(vertices(v, t).<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) ||</div>
+<div class="line"><span class="lineno">  107</span>                       !std::isfinite(vertices(v, t).<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) ||</div>
 <div class="line"><span class="lineno">  108</span>                       !std::isfinite(vertices(v, t).z) ||</div>
 <div class="line"><span class="lineno">  109</span>                       !std::isfinite(vertices(v, t).w)) {</div>
 <div class="line"><span class="lineno">  110</span>                isValid = <span class="keyword">false</span>;</div>

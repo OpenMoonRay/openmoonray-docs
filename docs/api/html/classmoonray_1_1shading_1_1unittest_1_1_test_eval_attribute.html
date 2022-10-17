@@ -454,7 +454,7 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00399">399</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  400</span>{</div>
-<div class="line"><span class="lineno">  401</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  401</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = getShadingTLS();</div>
 <div class="line"><span class="lineno">  402</span> </div>
 <div class="line"><span class="lineno">  403</span>    <a class="code hl_class" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html">scene_rdl2::rdl2::SceneContext</a> ctx;</div>
 <div class="line"><span class="lineno">  404</span>    ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#abdf667823af6bf872e38f200b072f09b">setDsoPath</a>(ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a451f0edea1861a63320d2d5a0905082d">getDsoPath</a>() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
@@ -495,7 +495,6 @@ Public Member Functions</h2></td></tr>
 <div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_object_html_a37a53a0c1b9c757b5c754e008aa29364"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_object.html#a37a53a0c1b9c757b5c754e008aa29364">scene_rdl2::rdl2::SceneObject::applyUpdates</a></div><div class="ttdeci">void applyUpdates()</div><div class="ttdef"><b>Definition:</b> <a href="_scene_object_8h_source.html#l00602">SceneObject.h:602</a></div></div>
 <div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_object_html_a5b6de8731104050e9fe89922402f8fab"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_object.html#a5b6de8731104050e9fe89922402f8fab">scene_rdl2::rdl2::SceneObject::set</a></div><div class="ttdeci">void set(AttributeKey&lt; T &gt; key, const T &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="_scene_object_8cc_source.html#l00177">SceneObject.cc:177</a></div></div>
 <div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_object_html_aae4d8dcfde7ba7196a3dd164a5e3a3ee"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_object.html#aae4d8dcfde7ba7196a3dd164a5e3a3ee">scene_rdl2::rdl2::SceneObject::setBinding</a></div><div class="ttdeci">void setBinding(AttributeKey&lt; T &gt; key, SceneObject *sceneObject)</div><div class="ttdef"><b>Definition:</b> <a href="_scene_object_8cc_source.html#l00592">SceneObject.cc:592</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_test_eval_attribute_8cc_03_html_a7b1c936e4b89946449c58c88d12303f2"><div class="ttname"><a href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">anonymous_namespace{TestEvalAttribute.cc}::getShadingTLS</a></div><div class="ttdeci">moonray::shading::TLState * getShadingTLS()</div><div class="ttdef"><b>Definition:</b> <a href="_test_eval_attribute_8cc_source.html#l00064">TestEvalAttribute.cc:64</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1shading_html_a98b66f6dc23506252551035dbc90c747"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a98b66f6dc23506252551035dbc90c747">moonray::shading::samplev</a></div><div class="ttdeci">void samplev(const scene_rdl2::rdl2::Map *map, shading::TLState *tls, const shading::Statev *statev, shading::Colorv *result)</div><div class="ttdoc">sample a map shader</div></div>
 <div class="ttc" id="anamespacemoonray_1_1shading_html_ad0b8c0ebb4de2029dd12ef61e2f4004c"><div class="ttname"><a href="namespacemoonray_1_1shading.html#ad0b8c0ebb4de2029dd12ef61e2f4004c">moonray::shading::Colorv</a></div><div class="ttdeci">scene_rdl2::math::Colorv Colorv</div><div class="ttdef"><b>Definition:</b> <a href="_shadingv_8h_source.html#l00049">Shadingv.h:49</a></div></div>
 <div class="ttc" id="astructscene__rdl2_1_1math_1_1_color_html"><div class="ttname"><a href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a></div><div class="ttdoc">RGB Color Class.</div><div class="ttdef"><b>Definition:</b> <a href="_color_8h_source.html#l00139">Color.h:140</a></div></div>
@@ -519,7 +518,7 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00366">366</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  367</span>{</div>
-<div class="line"><span class="lineno">  368</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  368</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = getShadingTLS();</div>
 <div class="line"><span class="lineno">  369</span> </div>
 <div class="line"><span class="lineno">  370</span>    <a class="code hl_class" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html">scene_rdl2::rdl2::SceneContext</a> ctx;</div>
 <div class="line"><span class="lineno">  371</span>    ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#abdf667823af6bf872e38f200b072f09b">setDsoPath</a>(ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a451f0edea1861a63320d2d5a0905082d">getDsoPath</a>() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
@@ -568,7 +567,7 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00517">517</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  518</span>{</div>
-<div class="line"><span class="lineno">  519</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  519</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = getShadingTLS();</div>
 <div class="line"><span class="lineno">  520</span> </div>
 <div class="line"><span class="lineno">  521</span>    <a class="code hl_class" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html">scene_rdl2::rdl2::SceneContext</a> ctx;</div>
 <div class="line"><span class="lineno">  522</span>    ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#abdf667823af6bf872e38f200b072f09b">setDsoPath</a>(ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a451f0edea1861a63320d2d5a0905082d">getDsoPath</a>() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
@@ -617,7 +616,7 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00484">484</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  485</span>{</div>
-<div class="line"><span class="lineno">  486</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  486</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = getShadingTLS();</div>
 <div class="line"><span class="lineno">  487</span> </div>
 <div class="line"><span class="lineno">  488</span>    <a class="code hl_class" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html">scene_rdl2::rdl2::SceneContext</a> ctx;</div>
 <div class="line"><span class="lineno">  489</span>    ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#abdf667823af6bf872e38f200b072f09b">setDsoPath</a>(ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a451f0edea1861a63320d2d5a0905082d">getDsoPath</a>() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
@@ -761,7 +760,7 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00432">432</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  433</span>{</div>
-<div class="line"><span class="lineno">  434</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  434</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = getShadingTLS();</div>
 <div class="line"><span class="lineno">  435</span> </div>
 <div class="line"><span class="lineno">  436</span>    <a class="code hl_class" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html">scene_rdl2::rdl2::SceneContext</a> ctx;</div>
 <div class="line"><span class="lineno">  437</span>    ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#abdf667823af6bf872e38f200b072f09b">setDsoPath</a>(ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a451f0edea1861a63320d2d5a0905082d">getDsoPath</a>() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
@@ -833,7 +832,7 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00194">194</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  195</span>{</div>
-<div class="line"><span class="lineno">  196</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  196</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = getShadingTLS();</div>
 <div class="line"><span class="lineno">  197</span> </div>
 <div class="line"><span class="lineno">  198</span>    <a class="code hl_class" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html">scene_rdl2::rdl2::SceneContext</a> ctx;</div>
 <div class="line"><span class="lineno">  199</span>    ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#abdf667823af6bf872e38f200b072f09b">setDsoPath</a>(ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a451f0edea1861a63320d2d5a0905082d">getDsoPath</a>() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
@@ -892,7 +891,7 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00236">236</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  237</span>{</div>
-<div class="line"><span class="lineno">  238</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  238</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = getShadingTLS();</div>
 <div class="line"><span class="lineno">  239</span> </div>
 <div class="line"><span class="lineno">  240</span>    <a class="code hl_class" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html">scene_rdl2::rdl2::SceneContext</a> ctx;</div>
 <div class="line"><span class="lineno">  241</span>    ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#abdf667823af6bf872e38f200b072f09b">setDsoPath</a>(ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a451f0edea1861a63320d2d5a0905082d">getDsoPath</a>() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
@@ -934,7 +933,7 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00288">288</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  289</span>{</div>
-<div class="line"><span class="lineno">  290</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  290</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = getShadingTLS();</div>
 <div class="line"><span class="lineno">  291</span> </div>
 <div class="line"><span class="lineno">  292</span>    <a class="code hl_class" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html">scene_rdl2::rdl2::SceneContext</a> ctx;</div>
 <div class="line"><span class="lineno">  293</span>    ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#abdf667823af6bf872e38f200b072f09b">setDsoPath</a>(ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a451f0edea1861a63320d2d5a0905082d">getDsoPath</a>() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
@@ -976,7 +975,7 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00262">262</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  263</span>{</div>
-<div class="line"><span class="lineno">  264</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  264</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = getShadingTLS();</div>
 <div class="line"><span class="lineno">  265</span> </div>
 <div class="line"><span class="lineno">  266</span>    <a class="code hl_class" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html">scene_rdl2::rdl2::SceneContext</a> ctx;</div>
 <div class="line"><span class="lineno">  267</span>    ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#abdf667823af6bf872e38f200b072f09b">setDsoPath</a>(ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a451f0edea1861a63320d2d5a0905082d">getDsoPath</a>() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
@@ -1018,7 +1017,7 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00314">314</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  315</span>{</div>
-<div class="line"><span class="lineno">  316</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  316</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = getShadingTLS();</div>
 <div class="line"><span class="lineno">  317</span> </div>
 <div class="line"><span class="lineno">  318</span>    <a class="code hl_class" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html">scene_rdl2::rdl2::SceneContext</a> ctx;</div>
 <div class="line"><span class="lineno">  319</span>    ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#abdf667823af6bf872e38f200b072f09b">setDsoPath</a>(ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a451f0edea1861a63320d2d5a0905082d">getDsoPath</a>() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>
@@ -1060,7 +1059,7 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_test_eval_attribute_8cc_source.html#l00340">340</a> of file <a class="el" href="_test_eval_attribute_8cc_source.html">TestEvalAttribute.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  341</span>{</div>
-<div class="line"><span class="lineno">  342</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = <a class="code hl_function" href="namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html#a7b1c936e4b89946449c58c88d12303f2">getShadingTLS</a>();</div>
+<div class="line"><span class="lineno">  342</span>    <a class="code hl_class" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls = getShadingTLS();</div>
 <div class="line"><span class="lineno">  343</span> </div>
 <div class="line"><span class="lineno">  344</span>    <a class="code hl_class" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html">scene_rdl2::rdl2::SceneContext</a> ctx;</div>
 <div class="line"><span class="lineno">  345</span>    ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#abdf667823af6bf872e38f200b072f09b">setDsoPath</a>(ctx.<a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a451f0edea1861a63320d2d5a0905082d">getDsoPath</a>() + <span class="stringliteral">&quot;:dso/map&quot;</span>);</div>

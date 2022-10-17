@@ -198,9 +198,8 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_profile_accumulator_8cc_source.html#l00257">257</a> of file <a class="el" href="_profile_accumulator_8cc_source.html">ProfileAccumulator.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  258</span>{</div>
-<div class="line"><span class="lineno">  259</span>    <a class="code hl_function" href="namespacescene__rdl2_1_1util.html#a9cc201e1d547b7cbb5c7df6ec6b2ead0">scene_rdl2::util::alignedFreeArrayDtor</a>(<a class="code hl_variable" href="structmoonray_1_1mcrt__common_1_1_accumulator.html#a45534d8b2d0eb95276ebc75716ec70d7">mThreadLocal</a>, <a class="code hl_variable" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03.html#a01cbdf7fe0fe4a5e2171ca7bfcd26d10">gPrivate</a>.mNumTLS);</div>
+<div class="line"><span class="lineno">  259</span>    <a class="code hl_function" href="namespacescene__rdl2_1_1util.html#a9cc201e1d547b7cbb5c7df6ec6b2ead0">scene_rdl2::util::alignedFreeArrayDtor</a>(<a class="code hl_variable" href="structmoonray_1_1mcrt__common_1_1_accumulator.html#a45534d8b2d0eb95276ebc75716ec70d7">mThreadLocal</a>, gPrivate.mNumTLS);</div>
 <div class="line"><span class="lineno">  260</span>}</div>
-<div class="ttc" id="anamespacemoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03_html_a01cbdf7fe0fe4a5e2171ca7bfcd26d10"><div class="ttname"><a href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03.html#a01cbdf7fe0fe4a5e2171ca7bfcd26d10">moonray::shading::anonymous_namespace{ShadingTLState.cc}::gPrivate</a></div><div class="ttdeci">Private gPrivate</div><div class="ttdef"><b>Definition:</b> <a href="_shading_t_l_state_8cc_source.html#l00037">ShadingTLState.cc:37</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1util_html_a9cc201e1d547b7cbb5c7df6ec6b2ead0"><div class="ttname"><a href="namespacescene__rdl2_1_1util.html#a9cc201e1d547b7cbb5c7df6ec6b2ead0">scene_rdl2::util::alignedFreeArrayDtor</a></div><div class="ttdeci">void alignedFreeArrayDtor(T *ptr, size_t numElems)</div><div class="ttdef"><b>Definition:</b> <a href="_memory_8h_source.html#l00139">Memory.h:139</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -225,7 +224,7 @@ Public Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">  270</span>{</div>
 <div class="line"><span class="lineno">  271</span>    uint64_t localTicks = 0;</div>
 <div class="line"><span class="lineno">  272</span> </div>
-<div class="line"><span class="lineno">  273</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03.html#a01cbdf7fe0fe4a5e2171ca7bfcd26d10">gPrivate</a>.mNumThreads; ++i) {</div>
+<div class="line"><span class="lineno">  273</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; gPrivate.mNumThreads; ++i) {</div>
 <div class="line"><span class="lineno">  274</span> </div>
 <div class="line"><span class="lineno">  275</span>        <span class="keyword">const</span> <span class="keyword">auto</span> &amp;tla = <a class="code hl_variable" href="structmoonray_1_1mcrt__common_1_1_accumulator.html#a45534d8b2d0eb95276ebc75716ec70d7">mThreadLocal</a>[i];</div>
 <div class="line"><span class="lineno">  276</span> </div>
@@ -257,7 +256,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_profile_accumulator_8cc_source.html#l00262">262</a> of file <a class="el" href="_profile_accumulator_8cc_source.html">ProfileAccumulator.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  263</span>{</div>
-<div class="line"><span class="lineno">  264</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03.html#a01cbdf7fe0fe4a5e2171ca7bfcd26d10">gPrivate</a>.mNumTLS; ++i) {</div>
+<div class="line"><span class="lineno">  264</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; gPrivate.mNumTLS; ++i) {</div>
 <div class="line"><span class="lineno">  265</span>        <a class="code hl_variable" href="structmoonray_1_1mcrt__common_1_1_accumulator.html#a45534d8b2d0eb95276ebc75716ec70d7">mThreadLocal</a>[i].<a class="code hl_function" href="structmoonray_1_1mcrt__common_1_1_thread_local_accumulator.html#af952ccb2f9c1af65dc73dccd0849a517">reset</a>();</div>
 <div class="line"><span class="lineno">  266</span>    }</div>
 <div class="line"><span class="lineno">  267</span>}</div>

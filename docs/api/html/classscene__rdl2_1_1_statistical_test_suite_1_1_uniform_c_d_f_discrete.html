@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('classscene__rdl2_1_1_statistical_test_
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa1d1306ffdecf00e7c39fb7baa79ccd2"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1_statistical_test_suite_1_1_uniform_c_d_f_discrete.html#aa1d1306ffdecf00e7c39fb7baa79ccd2">UniformCDFDiscrete</a> (T <a class="el" href="immintrin__emu_8h.html#a8a1a0a26c50cc4becfc754bb68d1dc6b">a</a>, T <a class="el" href="immintrin__emu_8h.html#ab5fe720200eed3b8fca39c153696c5d2">b</a>) noexcept</td></tr>
 <tr class="separator:aa1d1306ffdecf00e7c39fb7baa79ccd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0f4df853cdf2335197d0979e57f94a4"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1_statistical_test_suite_1_1_uniform_c_d_f_discrete.html#ad0f4df853cdf2335197d0979e57f94a4">operator()</a> (T x) const noexcept</td></tr>
+<tr class="memitem:ad0f4df853cdf2335197d0979e57f94a4"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1_statistical_test_suite_1_1_uniform_c_d_f_discrete.html#ad0f4df853cdf2335197d0979e57f94a4">operator()</a> (T <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) const noexcept</td></tr>
 <tr class="separator:ad0f4df853cdf2335197d0979e57f94a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -194,8 +194,9 @@ template&lt;typename T &gt; </div>
 <p class="definition">Definition at line <a class="el" href="_statistical_test_suite_8h_source.html#l00053">53</a> of file <a class="el" href="_statistical_test_suite_8h_source.html">StatisticalTestSuite.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   54</span>    {</div>
 <div class="line"><span class="lineno">   55</span>        <span class="keyword">const</span> std::uint32_t n = <a class="code hl_variable" href="classscene__rdl2_1_1_statistical_test_suite_1_1_uniform_c_d_f_discrete.html#a68136c8ef84b1e2bf76c6d02945517fc">mB</a> - <a class="code hl_variable" href="classscene__rdl2_1_1_statistical_test_suite_1_1_uniform_c_d_f_discrete.html#a3817f6bec9b3e493d0a3dd47e05af233">mA</a>; <span class="comment">// Exclusive max: e.g. [0, 4) is four values</span></div>
-<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">return</span> (std::floor(x) - <a class="code hl_variable" href="classscene__rdl2_1_1_statistical_test_suite_1_1_uniform_c_d_f_discrete.html#a3817f6bec9b3e493d0a3dd47e05af233">mA</a> + 1) / n;</div>
+<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">return</span> (std::floor(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) - <a class="code hl_variable" href="classscene__rdl2_1_1_statistical_test_suite_1_1_uniform_c_d_f_discrete.html#a3817f6bec9b3e493d0a3dd47e05af233">mA</a> + 1) / n;</div>
 <div class="line"><span class="lineno">   57</span>    }</div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

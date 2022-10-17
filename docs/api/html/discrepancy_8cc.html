@@ -329,7 +329,7 @@ template&lt;typename Generator &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="discrepancy_8cc_source.html#l00138">138</a> of file <a class="el" href="discrepancy_8cc_source.html">discrepancy.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  139</span>{</div>
-<div class="line"><span class="lineno">  140</span>    <span class="keywordtype">unsigned</span> <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> = std::numeric_limits&lt;unsigned&gt;::max();</div>
+<div class="line"><span class="lineno">  140</span>    <span class="keywordtype">unsigned</span> count = std::numeric_limits&lt;unsigned&gt;::max();</div>
 <div class="line"><span class="lineno">  141</span>    std::string filename;</div>
 <div class="line"><span class="lineno">  142</span>    <span class="keywordflow">try</span> {</div>
 <div class="line"><span class="lineno">  143</span>        <a class="code hl_class" href="class_argument_parser.html">ArgumentParser</a> parser(argc, argv);</div>
@@ -339,7 +339,7 @@ template&lt;typename Generator &gt; </div>
 <div class="line"><span class="lineno">  147</span>        }</div>
 <div class="line"><span class="lineno">  148</span>        filename = parser.getModifier&lt;std::string&gt;(<span class="stringliteral">&quot;-in&quot;</span>, 0);</div>
 <div class="line"><span class="lineno">  149</span>        <span class="keywordflow">if</span> (parser.has(<span class="stringliteral">&quot;-count&quot;</span>)) {</div>
-<div class="line"><span class="lineno">  150</span>            <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> = parser.getModifier&lt;<span class="keywordtype">unsigned</span>&gt;(<span class="stringliteral">&quot;-count&quot;</span>, 0);</div>
+<div class="line"><span class="lineno">  150</span>            count = parser.getModifier&lt;<span class="keywordtype">unsigned</span>&gt;(<span class="stringliteral">&quot;-count&quot;</span>, 0);</div>
 <div class="line"><span class="lineno">  151</span>        }</div>
 <div class="line"><span class="lineno">  152</span>    } <span class="keywordflow">catch</span> (std::exception&amp; e) {</div>
 <div class="line"><span class="lineno">  153</span>        std::cerr &lt;&lt; e.what() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
@@ -352,7 +352,6 @@ template&lt;typename Generator &gt; </div>
 <div class="ttc" id="aclass_argument_parser_html"><div class="ttname"><a href="class_argument_parser.html">ArgumentParser</a></div><div class="ttdef"><b>Definition:</b> <a href="_argument_parser_8h_source.html#l00028">ArgumentParser.h:29</a></div></div>
 <div class="ttc" id="adiscrepancy_8cc_html_a47d5ad887aeb8d9d35a85c3227056e64"><div class="ttname"><a href="discrepancy_8cc.html#a47d5ad887aeb8d9d35a85c3227056e64">measureStarDiscrepancy</a></div><div class="ttdeci">float measureStarDiscrepancy(const Point &amp;measurePoint, const PointContainer &amp;points)</div><div class="ttdef"><b>Definition:</b> <a href="discrepancy_8cc_source.html#l00041">discrepancy.cc:41</a></div></div>
 <div class="ttc" id="adiscrepancy_8cc_html_ab5623cea48b0b217daed46ddf645529c"><div class="ttname"><a href="discrepancy_8cc.html#ab5623cea48b0b217daed46ddf645529c">readPoints</a></div><div class="ttdeci">PointContainer readPoints(std::istream &amp;ins, unsigned count)</div><div class="ttdef"><b>Definition:</b> <a href="discrepancy_8cc_source.html#l00120">discrepancy.cc:120</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03_html_ac002aa9e7f277e6c84e4fe1aeb5bb8cb"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">moonray::rndr::unittest::anonymous_namespace{TestOverlappingRegions.cc}::count</a></div><div class="ttdeci">void count(const OverlappingRegions&lt; sRegionOverlap, sTileWidth, sTileHeight, sDesiredRegionsPerDimension &gt; &amp;regions, int line)</div><div class="ttdef"><b>Definition:</b> <a href="_test_overlapping_regions_8cc_source.html#l00024">TestOverlappingRegions.cc:24</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -492,7 +491,7 @@ template&lt;typename Generator &gt; </div>
 <div class="fragment"><div class="line"><span class="lineno">  121</span>{</div>
 <div class="line"><span class="lineno">  122</span>    <a class="code hl_typedef" href="discrepancy_8cc.html#a73845c52820b806f986820e591a6613b">PointContainer</a> r;</div>
 <div class="line"><span class="lineno">  123</span> </div>
-<div class="line"><span class="lineno">  124</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> &amp;&amp; ins; ++i) {</div>
+<div class="line"><span class="lineno">  124</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; count &amp;&amp; ins; ++i) {</div>
 <div class="line"><span class="lineno">  125</span>        <a class="code hl_class" href="class_n_point.html">Point</a> p;</div>
 <div class="line"><span class="lineno">  126</span>        ins &gt;&gt; p;</div>
 <div class="line"><span class="lineno">  127</span>        r.push_back(p);</div>

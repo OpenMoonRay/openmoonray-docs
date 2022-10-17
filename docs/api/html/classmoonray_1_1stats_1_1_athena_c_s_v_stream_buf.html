@@ -504,7 +504,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  152</span>    strftime(timestamp, 256, <span class="stringliteral">&quot;%b %e %H:%M:%S&quot;</span>, &amp;tmnow);</div>
 <div class="line"><span class="lineno">  153</span>    </div>
 <div class="line"><span class="lineno">  154</span>    std::ostringstream msg;</div>
-<div class="line"><span class="lineno">  155</span>    msg &lt;&lt; <span class="stringliteral">&quot;&lt;&quot;</span> &lt;&lt; <a class="code hl_variable" href="namespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03.html#a5fb6d32b1c4ab1aecf86cec6a4cf8214">SYSLOG_PRIO</a> &lt;&lt; <span class="stringliteral">&quot;&gt; &quot;</span></div>
+<div class="line"><span class="lineno">  155</span>    msg &lt;&lt; <span class="stringliteral">&quot;&lt;&quot;</span> &lt;&lt; SYSLOG_PRIO &lt;&lt; <span class="stringliteral">&quot;&gt; &quot;</span></div>
 <div class="line"><span class="lineno">  156</span>        &lt;&lt; timestamp &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
 <div class="line"><span class="lineno">  157</span>        &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a142fd228f8c57620ef06417b05d7bd7c">mHostname</a> &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
 <div class="line"><span class="lineno">  158</span>        &lt;&lt; <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#ac06daaecb553e8072efea687fbc947de">mIdent</a> &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
@@ -520,7 +520,6 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  168</span>    <a class="code hl_variable" href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#a6703f60232946a78c882dfbebc82adb5">mSyslogBuffer</a>.clear();</div>
 <div class="line"><span class="lineno">  169</span>}</div>
 <div class="ttc" id="aclassmoonray_1_1stats_1_1_athena_c_s_v_stream_buf_html_ac06daaecb553e8072efea687fbc947de"><div class="ttname"><a href="classmoonray_1_1stats_1_1_athena_c_s_v_stream_buf.html#ac06daaecb553e8072efea687fbc947de">moonray::stats::AthenaCSVStreamBuf::mIdent</a></div><div class="ttdeci">std::string mIdent</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8h_source.html#l00080">AthenaCSVStream.h:80</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03_html_a5fb6d32b1c4ab1aecf86cec6a4cf8214"><div class="ttname"><a href="namespaceanonymous__namespace_02_athena_c_s_v_stream_8cc_03.html#a5fb6d32b1c4ab1aecf86cec6a4cf8214">anonymous_namespace{AthenaCSVStream.cc}::SYSLOG_PRIO</a></div><div class="ttdeci">constexpr unsigned int SYSLOG_PRIO</div><div class="ttdef"><b>Definition:</b> <a href="_athena_c_s_v_stream_8cc_source.html#l00025">AthenaCSVStream.cc:25</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1rndr_html_a9760c77475d484e483c7afa7a699dffc"><div class="ttname"><a href="namespacemoonray_1_1rndr.html#a9760c77475d484e483c7afa7a699dffc">moonray::rndr::getErrorDescription</a></div><div class="ttdeci">const std::string getErrorDescription()</div><div class="ttdef"><b>Definition:</b> <a href="_error_8cc_source.html#l00023">Error.cc:23</a></div></div>
 </div><!-- fragment -->
 </div>

@@ -144,7 +144,7 @@ Private Types</h2></td></tr>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a8ec13b1b0ea0003a503d163e97b5e933"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a91ca44d8b728c46d1ca93df2a8457c5a">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a8ec13b1b0ea0003a503d163e97b5e933">dimensionMod</a> (<a class="el" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a91ca44d8b728c46d1ca93df2a8457c5a">size_type</a> n)</td></tr>
 <tr class="separator:a8ec13b1b0ea0003a503d163e97b5e933"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c3c84c0ea664e01d6b4daa59ff297c0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a91ca44d8b728c46d1ca93df2a8457c5a">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a4c3c84c0ea664e01d6b4daa59ff297c0">getStratum</a> (<a class="el" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a91ca44d8b728c46d1ca93df2a8457c5a">size_type</a> x, <a class="el" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a91ca44d8b728c46d1ca93df2a8457c5a">size_type</a> y)</td></tr>
+<tr class="memitem:a4c3c84c0ea664e01d6b4daa59ff297c0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a91ca44d8b728c46d1ca93df2a8457c5a">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a4c3c84c0ea664e01d6b4daa59ff297c0">getStratum</a> (<a class="el" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a91ca44d8b728c46d1ca93df2a8457c5a">size_type</a> <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="el" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a91ca44d8b728c46d1ca93df2a8457c5a">size_type</a> <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
 <tr class="separator:a4c3c84c0ea664e01d6b4daa59ff297c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a984fc20edfe8b9f139b9b6d96b89eb20"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a8ba2ba4f86cf043291983c85cb91595c">BuildInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a984fc20edfe8b9f139b9b6d96b89eb20">build</a> (const T &amp;t)</td></tr>
 <tr class="separator:a984fc20edfe8b9f139b9b6d96b89eb20"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -540,15 +540,15 @@ template&lt;typename RandIter &gt; </div>
 <div class="line"><span class="lineno">  298</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a91ca44d8b728c46d1ca93df2a8457c5a">size_type</a> numStrata = kDimension * kDimension;</div>
 <div class="line"><span class="lineno">  299</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a91ca44d8b728c46d1ca93df2a8457c5a">size_type</a> pointsPerStratum = <a class="code hl_function" href="namespacescene__rdl2_1_1util.html#aad045e908255d09ed08e6ab20223e304">scene_rdl2::util::roundUpToPowerOfTwo</a>(numPoints / numStrata);</div>
 <div class="line"><span class="lineno">  300</span> </div>
-<div class="line"><span class="lineno">  301</span>    std::vector&lt;int&gt; <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>(numStrata);</div>
+<div class="line"><span class="lineno">  301</span>    std::vector&lt;int&gt; count(numStrata);</div>
 <div class="line"><span class="lineno">  302</span>    <a class="code hl_typedef" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a9d8f6a808cefed1c586bd61ae5acdec4">Container</a> data(numStrata * pointsPerStratum);</div>
 <div class="line"><span class="lineno">  303</span> </div>
 <div class="line"><span class="lineno">  304</span>    <span class="keywordflow">for</span> ( ; first != last; ++first) {</div>
 <div class="line"><span class="lineno">  305</span>        <span class="keyword">const</span> <span class="keyword">auto</span> bi = <a class="code hl_function" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a984fc20edfe8b9f139b9b6d96b89eb20">build</a>(*first);</div>
 <div class="line"><span class="lineno">  306</span>        <span class="keyword">const</span> <span class="keyword">auto</span> stratum = bi.second;</div>
 <div class="line"><span class="lineno">  307</span>        <span class="keywordflow">if</span> (count[stratum] &lt; pointsPerStratum) {</div>
-<div class="line"><span class="lineno">  308</span>            data[stratum * pointsPerStratum + <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>[stratum]] = bi.first;</div>
-<div class="line"><span class="lineno">  309</span>            ++<a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>[stratum];</div>
+<div class="line"><span class="lineno">  308</span>            data[stratum * pointsPerStratum + count[stratum]] = bi.first;</div>
+<div class="line"><span class="lineno">  309</span>            ++count[stratum];</div>
 <div class="line"><span class="lineno">  310</span>        }</div>
 <div class="line"><span class="lineno">  311</span>    }</div>
 <div class="line"><span class="lineno">  312</span> </div>
@@ -560,21 +560,21 @@ template&lt;typename RandIter &gt; </div>
 <div class="line"><span class="lineno">  318</span>    };</div>
 <div class="line"><span class="lineno">  319</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a91ca44d8b728c46d1ca93df2a8457c5a">size_type</a> i = 0; i &lt; numStrata; ++i) {</div>
 <div class="line"><span class="lineno">  320</span>        <span class="keywordflow">while</span> (count[i] &lt; pointsPerStratum) {</div>
-<div class="line"><span class="lineno">  321</span>            data[i * pointsPerStratum + <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>[i]] = generateRandomPoint&lt;T&gt;(canon);</div>
-<div class="line"><span class="lineno">  322</span>            ++<a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>[i];</div>
+<div class="line"><span class="lineno">  321</span>            data[i * pointsPerStratum + count[i]] = generateRandomPoint&lt;T&gt;(canon);</div>
+<div class="line"><span class="lineno">  322</span>            ++count[i];</div>
 <div class="line"><span class="lineno">  323</span>        }</div>
 <div class="line"><span class="lineno">  324</span>    }</div>
 <div class="line"><span class="lineno">  325</span> </div>
-<div class="line"><span class="lineno">  326</span>    <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(std::all_of(<a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>.cbegin(), <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>.cend(), [=](<span class="keywordtype">int</span> x)</div>
+<div class="line"><span class="lineno">  326</span>    <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(std::all_of(count.cbegin(), count.cend(), [=](<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)</div>
 <div class="line"><span class="lineno">  327</span>    {</div>
 <div class="line"><span class="lineno">  328</span>        return x == pointsPerStratum;</div>
 <div class="line"><span class="lineno">  329</span>    }));</div>
 <div class="line"><span class="lineno">  330</span> </div>
 <div class="line"><span class="lineno">  331</span>    <span class="keywordflow">return</span> data;</div>
 <div class="line"><span class="lineno">  332</span>}</div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1pbr_1_1_spatial_sample_partition_html_a9d8f6a808cefed1c586bd61ae5acdec4"><div class="ttname"><a href="classmoonray_1_1pbr_1_1_spatial_sample_partition.html#a9d8f6a808cefed1c586bd61ae5acdec4">moonray::pbr::SpatialSamplePartition::Container</a></div><div class="ttdeci">std::vector&lt; T, scene_rdl2::alloc::AlignedAllocator&lt; T, kSIMDAlignment &gt; &gt; Container</div><div class="ttdef"><b>Definition:</b> <a href="_sample_partition_8h_source.html#l00135">SamplePartition.h:135</a></div></div>
 <div class="ttc" id="aclassscene__rdl2_1_1util_1_1_random_html"><div class="ttname"><a href="classscene__rdl2_1_1util_1_1_random.html">scene_rdl2::util::Random</a></div><div class="ttdef"><b>Definition:</b> <a href="_random_8h_source.html#l00019">Random.h:20</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03_html_ac002aa9e7f277e6c84e4fe1aeb5bb8cb"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">moonray::rndr::unittest::anonymous_namespace{TestOverlappingRegions.cc}::count</a></div><div class="ttdeci">void count(const OverlappingRegions&lt; sRegionOverlap, sTileWidth, sTileHeight, sDesiredRegionsPerDimension &gt; &amp;regions, int line)</div><div class="ttdef"><b>Definition:</b> <a href="_test_overlapping_regions_8cc_source.html#l00024">TestOverlappingRegions.cc:24</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1util_html_aad045e908255d09ed08e6ab20223e304"><div class="ttname"><a href="namespacescene__rdl2_1_1util.html#aad045e908255d09ed08e6ab20223e304">scene_rdl2::util::roundUpToPowerOfTwo</a></div><div class="ttdeci">constexpr uint32_t roundUpToPowerOfTwo(uint32_t v) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_bit_utils_8h_source.html#l00057">BitUtils.h:57</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -663,13 +663,14 @@ template&lt;typename T , <a class="el" href="namespacemoonray_1_1pbr_1_1sp.html#
 <div class="line"><span class="lineno">  250</span> </div>
 <div class="line"><span class="lineno">  251</span>    <span class="comment">// Precondition: x and y have been modded to range, so that we can wrap our</span></div>
 <div class="line"><span class="lineno">  252</span>    <span class="comment">// values.</span></div>
-<div class="line"><span class="lineno">  253</span>    <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(x &lt; kDimension);</div>
-<div class="line"><span class="lineno">  254</span>    <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(y &lt; kDimension);</div>
+<div class="line"><span class="lineno">  253</span>    <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; kDimension);</div>
+<div class="line"><span class="lineno">  254</span>    <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; kDimension);</div>
 <div class="line"><span class="lineno">  255</span> </div>
 <div class="line"><span class="lineno">  256</span>    <span class="comment">// This is analogous to the usual 2D indexing scheme, were we would take</span></div>
 <div class="line"><span class="lineno">  257</span>    <span class="comment">// y * width + x, but with nice power of 2 math!</span></div>
-<div class="line"><span class="lineno">  258</span>    <span class="keywordflow">return</span> ((y &lt;&lt; sShift) | x);</div>
+<div class="line"><span class="lineno">  258</span>    <span class="keywordflow">return</span> ((<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; sShift) | <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>);</div>
 <div class="line"><span class="lineno">  259</span>}</div>
+<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1math_1_1compile__time_html_ac32fb18807ffdd68a56e0b49ca5e18d8"><div class="ttname"><a href="namespacescene__rdl2_1_1math_1_1compile__time.html#ac32fb18807ffdd68a56e0b49ca5e18d8">scene_rdl2::math::compile_time::log2i</a></div><div class="ttdeci">constexpr IntType log2i(IntType v)</div><div class="ttdef"><b>Definition:</b> <a href="_math_util_8h_source.html#l00141">MathUtil.h:141</a></div></div>
 </div><!-- fragment -->
 </div>

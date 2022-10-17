@@ -148,7 +148,7 @@ Static Private Member Functions</h2></td></tr>
 <tr class="separator:ae1649a1076f81a5d519bc0ffa607524b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc9cf8f55de675b8686d2349cc2fc0a8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmoonray_1_1pbr_1_1_sample_partition.html#a1575d33c7a51543363411fff7c92cbfe">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sample_partition.html#acc9cf8f55de675b8686d2349cc2fc0a8">dimensionMod</a> (<a class="el" href="classmoonray_1_1pbr_1_1_sample_partition.html#a1575d33c7a51543363411fff7c92cbfe">size_type</a> n)</td></tr>
 <tr class="separator:acc9cf8f55de675b8686d2349cc2fc0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c49c6838a0179259d8a7f919d62fe33"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmoonray_1_1pbr_1_1_sample_partition.html#a1575d33c7a51543363411fff7c92cbfe">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sample_partition.html#a6c49c6838a0179259d8a7f919d62fe33">getStratum</a> (<a class="el" href="classmoonray_1_1pbr_1_1_sample_partition.html#a1575d33c7a51543363411fff7c92cbfe">size_type</a> x, <a class="el" href="classmoonray_1_1pbr_1_1_sample_partition.html#a1575d33c7a51543363411fff7c92cbfe">size_type</a> y)</td></tr>
+<tr class="memitem:a6c49c6838a0179259d8a7f919d62fe33"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmoonray_1_1pbr_1_1_sample_partition.html#a1575d33c7a51543363411fff7c92cbfe">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_sample_partition.html#a6c49c6838a0179259d8a7f919d62fe33">getStratum</a> (<a class="el" href="classmoonray_1_1pbr_1_1_sample_partition.html#a1575d33c7a51543363411fff7c92cbfe">size_type</a> <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="el" href="classmoonray_1_1pbr_1_1_sample_partition.html#a1575d33c7a51543363411fff7c92cbfe">size_type</a> <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>)</td></tr>
 <tr class="separator:a6c49c6838a0179259d8a7f919d62fe33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -362,11 +362,13 @@ template&lt;typename T , <a class="el" href="namespacemoonray_1_1pbr_1_1sp.html#
 <div class="line"><span class="lineno">  481</span> </div>
 <div class="line"><span class="lineno">  482</span>    <span class="comment">// Precondition: x and y have been modded to range, so that we can wrap our</span></div>
 <div class="line"><span class="lineno">  483</span>    <span class="comment">// values.</span></div>
-<div class="line"><span class="lineno">  484</span>    <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(x &lt; dimension);</div>
-<div class="line"><span class="lineno">  485</span>    <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(y &lt; dimension);</div>
+<div class="line"><span class="lineno">  484</span>    <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; dimension);</div>
+<div class="line"><span class="lineno">  485</span>    <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; dimension);</div>
 <div class="line"><span class="lineno">  486</span> </div>
-<div class="line"><span class="lineno">  487</span>    <span class="keywordflow">return</span> y * dimension + x;</div>
+<div class="line"><span class="lineno">  487</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> * dimension + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
 <div class="line"><span class="lineno">  488</span>}</div>
+<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -623,37 +625,37 @@ template&lt;typename <a class="el" href="discrepancy_8cc.html#afe63f4f8126770dc3
 <div class="line"><span class="lineno">  410</span> </div>
 <div class="line"><span class="lineno">  411</span>    which &amp;= 7u;</div>
 <div class="line"><span class="lineno">  412</span> </div>
-<div class="line"><span class="lineno">  413</span>    <span class="keywordtype">float</span>&amp; x = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aeef063f281bb548dd9a0fd394fd70456">getPrimaryValue0</a>(p);</div>
-<div class="line"><span class="lineno">  414</span>    <span class="keywordtype">float</span>&amp; y = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ae26afac02c5157c16abe1675fdbce6be">getPrimaryValue1</a>(p);</div>
+<div class="line"><span class="lineno">  413</span>    <span class="keywordtype">float</span>&amp; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#aeef063f281bb548dd9a0fd394fd70456">getPrimaryValue0</a>(p);</div>
+<div class="line"><span class="lineno">  414</span>    <span class="keywordtype">float</span>&amp; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = <a class="code hl_function" href="namespacemoonray_1_1pbr.html#ae26afac02c5157c16abe1675fdbce6be">getPrimaryValue1</a>(p);</div>
 <div class="line"><span class="lineno">  415</span> </div>
 <div class="line"><span class="lineno">  416</span>    <span class="keywordflow">switch</span> (which) {</div>
 <div class="line"><span class="lineno">  417</span>        <span class="keywordflow">case</span> 0:</div>
 <div class="line"><span class="lineno">  418</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  419</span>        <span class="keywordflow">case</span> 1:</div>
-<div class="line"><span class="lineno">  420</span>            x = 1.0f - x;</div>
+<div class="line"><span class="lineno">  420</span>            <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 1.0f - <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
 <div class="line"><span class="lineno">  421</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  422</span>        <span class="keywordflow">case</span> 2:</div>
-<div class="line"><span class="lineno">  423</span>            y = 1.0f - y;</div>
+<div class="line"><span class="lineno">  423</span>            <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 1.0f - <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>;</div>
 <div class="line"><span class="lineno">  424</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  425</span>        <span class="keywordflow">case</span> 3:</div>
-<div class="line"><span class="lineno">  426</span>            x = 1.0f - x;</div>
-<div class="line"><span class="lineno">  427</span>            y = 1.0f - y;</div>
+<div class="line"><span class="lineno">  426</span>            <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 1.0f - <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
+<div class="line"><span class="lineno">  427</span>            <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 1.0f - <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>;</div>
 <div class="line"><span class="lineno">  428</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  429</span>        <span class="keywordflow">case</span> 4:</div>
-<div class="line"><span class="lineno">  430</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#ac1469378fc1d6fedf3e08c2906b4d75e">swap</a>(x, y);</div>
+<div class="line"><span class="lineno">  430</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#ac1469378fc1d6fedf3e08c2906b4d75e">swap</a>(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>);</div>
 <div class="line"><span class="lineno">  431</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  432</span>        <span class="keywordflow">case</span> 5:</div>
-<div class="line"><span class="lineno">  433</span>            x = 1.0f - x;</div>
-<div class="line"><span class="lineno">  434</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#ac1469378fc1d6fedf3e08c2906b4d75e">swap</a>(x, y);</div>
+<div class="line"><span class="lineno">  433</span>            <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 1.0f - <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
+<div class="line"><span class="lineno">  434</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#ac1469378fc1d6fedf3e08c2906b4d75e">swap</a>(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>);</div>
 <div class="line"><span class="lineno">  435</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  436</span>        <span class="keywordflow">case</span> 6:</div>
-<div class="line"><span class="lineno">  437</span>            y = 1.0f - y;</div>
-<div class="line"><span class="lineno">  438</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#ac1469378fc1d6fedf3e08c2906b4d75e">swap</a>(x, y);</div>
+<div class="line"><span class="lineno">  437</span>            <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 1.0f - <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>;</div>
+<div class="line"><span class="lineno">  438</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#ac1469378fc1d6fedf3e08c2906b4d75e">swap</a>(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>);</div>
 <div class="line"><span class="lineno">  439</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  440</span>        <span class="keywordflow">case</span> 7:</div>
-<div class="line"><span class="lineno">  441</span>            x = 1.0f - x;</div>
-<div class="line"><span class="lineno">  442</span>            y = 1.0f - y;</div>
-<div class="line"><span class="lineno">  443</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#ac1469378fc1d6fedf3e08c2906b4d75e">swap</a>(x, y);</div>
+<div class="line"><span class="lineno">  441</span>            <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 1.0f - <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
+<div class="line"><span class="lineno">  442</span>            <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 1.0f - <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>;</div>
+<div class="line"><span class="lineno">  443</span>            <a class="code hl_function" href="namespacemoonray_1_1shading.html#ac1469378fc1d6fedf3e08c2906b4d75e">swap</a>(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>);</div>
 <div class="line"><span class="lineno">  444</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  445</span>        <span class="keywordflow">default</span>:</div>
 <div class="line"><span class="lineno">  446</span>            <span class="keywordflow">break</span>;</div>

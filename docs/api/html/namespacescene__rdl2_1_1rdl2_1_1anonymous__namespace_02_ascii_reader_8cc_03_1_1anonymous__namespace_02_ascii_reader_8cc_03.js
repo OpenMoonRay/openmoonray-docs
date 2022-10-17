@@ -1,4 +1,0 @@
-var namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1anonymous__namespace_02_ascii_reader_8cc_03 =
-[
-    [ "Undef", "structscene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1anonymous__namespace473350620376eb28537bfe076655a45a.html", "structscene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1anonymous__namespace473350620376eb28537bfe076655a45a" ]
-];

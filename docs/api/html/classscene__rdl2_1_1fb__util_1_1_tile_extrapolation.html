@@ -133,7 +133,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aae52212a21ca13bf47a3507b919c3ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e29b44fd95c9230a91973a81e99029"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1fb__util_1_1_tile_extrapolation.html#aa0e29b44fd95c9230a91973a81e99029">showPixIdArray</a> (const std::string &amp;hd, const int extrapolatePixIdArray[64])</td></tr>
 <tr class="separator:aa0e29b44fd95c9230a91973a81e99029"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae57a6032be81fae06f19e8a9f3fc494a"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1fb__util_1_1_tile_extrapolation.html#ae57a6032be81fae06f19e8a9f3fc494a">getPixelSearchMask</a> (const int x, const int y, const int maskId)</td></tr>
+<tr class="memitem:ae57a6032be81fae06f19e8a9f3fc494a"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1fb__util_1_1_tile_extrapolation.html#ae57a6032be81fae06f19e8a9f3fc494a">getPixelSearchMask</a> (const int <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, const int <a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>, const int maskId)</td></tr>
 <tr class="separator:ae57a6032be81fae06f19e8a9f3fc494a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -382,8 +382,10 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_tile_extrapolation_8cc_source.html#l01182">1182</a> of file <a class="el" href="_tile_extrapolation_8cc_source.html">TileExtrapolation.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno"> 1183</span>{</div>
-<div class="line"><span class="lineno"> 1184</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacescene__rdl2_1_1fb__util.html#a6f2515d5c3237bad4fb1618312990b0f">pixelSearchMask</a>[(y &lt;&lt; 3) + x][maskId];</div>
+<div class="line"><span class="lineno"> 1184</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacescene__rdl2_1_1fb__util.html#a6f2515d5c3237bad4fb1618312990b0f">pixelSearchMask</a>[(<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>][maskId];</div>
 <div class="line"><span class="lineno"> 1185</span>}</div>
+<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1fb__util_html_a6f2515d5c3237bad4fb1618312990b0f"><div class="ttname"><a href="namespacescene__rdl2_1_1fb__util.html#a6f2515d5c3237bad4fb1618312990b0f">scene_rdl2::fb_util::pixelSearchMask</a></div><div class="ttdeci">static uint64_t pixelSearchMask[64][pixelSearchMaskTotalId+1]</div><div class="ttdef"><b>Definition:</b> <a href="_tile_extrapolation_8cc_source.html#l00088">TileExtrapolation.cc:88</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -541,9 +543,9 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_tile_extrapolation_8h_source.html#l00413">413</a> of file <a class="el" href="_tile_extrapolation_8h_source.html">TileExtrapolation.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  415</span>                                                                                             {</div>
-<div class="line"><span class="lineno">  416</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = minY; y &lt; maxY; ++y) {</div>
-<div class="line"><span class="lineno">  417</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = minX; x &lt; maxX; ++x) {</div>
-<div class="line"><span class="lineno">  418</span>                <span class="keywordtype">unsigned</span> pixId = (y &lt;&lt; 3) + x;</div>
+<div class="line"><span class="lineno">  416</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = minY; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; maxY; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  417</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = minX; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; maxX; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
+<div class="line"><span class="lineno">  418</span>                <span class="keywordtype">unsigned</span> pixId = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
 <div class="line"><span class="lineno">  419</span>                extrapolatePixIdArray[pixId] = <a class="code hl_function" href="classscene__rdl2_1_1fb__util_1_1_tile_extrapolation.html#a7698d71da4b8b4b33dde3ed8817643a7">searchActiveNearestPixelMain_maskBundle1</a>(activePixelMask, pixId);</div>
 <div class="line"><span class="lineno">  420</span>            }</div>
 <div class="line"><span class="lineno">  421</span>        }</div>
@@ -612,9 +614,9 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_tile_extrapolation_8h_source.html#l00423">423</a> of file <a class="el" href="_tile_extrapolation_8h_source.html">TileExtrapolation.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  425</span>                                                                                             {</div>
-<div class="line"><span class="lineno">  426</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = minY; y &lt; maxY; ++y) {</div>
-<div class="line"><span class="lineno">  427</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = minX; x &lt; maxX; ++x) {</div>
-<div class="line"><span class="lineno">  428</span>                <span class="keywordtype">unsigned</span> pixId = (y &lt;&lt; 3) + x;</div>
+<div class="line"><span class="lineno">  426</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = minY; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; maxY; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  427</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = minX; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; maxX; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
+<div class="line"><span class="lineno">  428</span>                <span class="keywordtype">unsigned</span> pixId = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
 <div class="line"><span class="lineno">  429</span>                extrapolatePixIdArray[pixId] = <a class="code hl_function" href="classscene__rdl2_1_1fb__util_1_1_tile_extrapolation.html#ab0d4f4413b4552aaaa804e7f7d0acd03">searchActiveNearestPixelMain_maskBundle2</a>(activePixelMask, pixId);</div>
 <div class="line"><span class="lineno">  430</span>            }</div>
 <div class="line"><span class="lineno">  431</span>        }</div>
@@ -683,9 +685,9 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_tile_extrapolation_8h_source.html#l00433">433</a> of file <a class="el" href="_tile_extrapolation_8h_source.html">TileExtrapolation.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  435</span>                                                                                             {</div>
-<div class="line"><span class="lineno">  436</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = minY; y &lt; maxY; ++y) {</div>
-<div class="line"><span class="lineno">  437</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = minX; x &lt; maxX; ++x) {</div>
-<div class="line"><span class="lineno">  438</span>                <span class="keywordtype">unsigned</span> pixId = (y &lt;&lt; 3) + x;</div>
+<div class="line"><span class="lineno">  436</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = minY; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; maxY; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  437</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = minX; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; maxX; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
+<div class="line"><span class="lineno">  438</span>                <span class="keywordtype">unsigned</span> pixId = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
 <div class="line"><span class="lineno">  439</span>                extrapolatePixIdArray[pixId] = <a class="code hl_function" href="classscene__rdl2_1_1fb__util_1_1_tile_extrapolation.html#afea228f85264a2cd4cf033df4b50727f">searchActiveNearestPixelMain_maskBundle3</a>(activePixelMask, pixId);</div>
 <div class="line"><span class="lineno">  440</span>            }</div>
 <div class="line"><span class="lineno">  441</span>        }</div>
@@ -754,9 +756,9 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_tile_extrapolation_8h_source.html#l00443">443</a> of file <a class="el" href="_tile_extrapolation_8h_source.html">TileExtrapolation.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  445</span>                                                                                             {</div>
-<div class="line"><span class="lineno">  446</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = minY; y &lt; maxY; ++y) {</div>
-<div class="line"><span class="lineno">  447</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = minX; x &lt; maxX; ++x) {</div>
-<div class="line"><span class="lineno">  448</span>                <span class="keywordtype">unsigned</span> pixId = (y &lt;&lt; 3) + x;</div>
+<div class="line"><span class="lineno">  446</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = minY; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; maxY; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  447</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = minX; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; maxX; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
+<div class="line"><span class="lineno">  448</span>                <span class="keywordtype">unsigned</span> pixId = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
 <div class="line"><span class="lineno">  449</span>                extrapolatePixIdArray[pixId] = <a class="code hl_function" href="classscene__rdl2_1_1fb__util_1_1_tile_extrapolation.html#a68c094e8d3155b799d79641f0549ce30">searchActiveNearestPixelMain_maskBundle4</a>(activePixelMask, pixId);</div>
 <div class="line"><span class="lineno">  450</span>            }</div>
 <div class="line"><span class="lineno">  451</span>        }</div>
@@ -825,9 +827,9 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_tile_extrapolation_8h_source.html#l00453">453</a> of file <a class="el" href="_tile_extrapolation_8h_source.html">TileExtrapolation.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  455</span>                                                                                             {</div>
-<div class="line"><span class="lineno">  456</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = minY; y &lt; maxY; ++y) {</div>
-<div class="line"><span class="lineno">  457</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = minX; x &lt; maxX; ++x) {</div>
-<div class="line"><span class="lineno">  458</span>                <span class="keywordtype">unsigned</span> pixId = (y &lt;&lt; 3) + x;</div>
+<div class="line"><span class="lineno">  456</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = minY; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; maxY; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  457</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = minX; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; maxX; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
+<div class="line"><span class="lineno">  458</span>                <span class="keywordtype">unsigned</span> pixId = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
 <div class="line"><span class="lineno">  459</span>                extrapolatePixIdArray[pixId] = <a class="code hl_function" href="classscene__rdl2_1_1fb__util_1_1_tile_extrapolation.html#a4d4a26049046a0c9f573fa09abfb8179">searchActiveNearestPixelMain_maskBundle5</a>(activePixelMask, pixId);</div>
 <div class="line"><span class="lineno">  460</span>            }</div>
 <div class="line"><span class="lineno">  461</span>        }</div>
@@ -896,9 +898,9 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_tile_extrapolation_8h_source.html#l00463">463</a> of file <a class="el" href="_tile_extrapolation_8h_source.html">TileExtrapolation.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  465</span>                                                                                             {</div>
-<div class="line"><span class="lineno">  466</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = minY; y &lt; maxY; ++y) {</div>
-<div class="line"><span class="lineno">  467</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = minX; x &lt; maxX; ++x) {</div>
-<div class="line"><span class="lineno">  468</span>                <span class="keywordtype">unsigned</span> pixId = (y &lt;&lt; 3) + x;</div>
+<div class="line"><span class="lineno">  466</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = minY; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; maxY; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  467</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = minX; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; maxX; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
+<div class="line"><span class="lineno">  468</span>                <span class="keywordtype">unsigned</span> pixId = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
 <div class="line"><span class="lineno">  469</span>                extrapolatePixIdArray[pixId] = <a class="code hl_function" href="classscene__rdl2_1_1fb__util_1_1_tile_extrapolation.html#a697c9f3dcc14a5f28d9c9bdc982bc59c">searchActiveNearestPixelMain_maskBundle6</a>(activePixelMask, pixId);</div>
 <div class="line"><span class="lineno">  470</span>            }</div>
 <div class="line"><span class="lineno">  471</span>        }</div>
@@ -967,9 +969,9 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_tile_extrapolation_8h_source.html#l00473">473</a> of file <a class="el" href="_tile_extrapolation_8h_source.html">TileExtrapolation.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  475</span>                                                                                             {</div>
-<div class="line"><span class="lineno">  476</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = minY; y &lt; maxY; ++y) {</div>
-<div class="line"><span class="lineno">  477</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = minX; x &lt; maxX; ++x) {</div>
-<div class="line"><span class="lineno">  478</span>                <span class="keywordtype">unsigned</span> pixId = (y &lt;&lt; 3) + x;</div>
+<div class="line"><span class="lineno">  476</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = minY; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; maxY; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  477</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = minX; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; maxX; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
+<div class="line"><span class="lineno">  478</span>                <span class="keywordtype">unsigned</span> pixId = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
 <div class="line"><span class="lineno">  479</span>                extrapolatePixIdArray[pixId] = <a class="code hl_function" href="classscene__rdl2_1_1fb__util_1_1_tile_extrapolation.html#ac5791969351ba93b6a1a9ce347a57d6d">searchActiveNearestPixelMain_maskBundle7</a>(activePixelMask, pixId);</div>
 <div class="line"><span class="lineno">  480</span>            }</div>
 <div class="line"><span class="lineno">  481</span>        }</div>
@@ -1038,9 +1040,9 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_tile_extrapolation_8h_source.html#l00483">483</a> of file <a class="el" href="_tile_extrapolation_8h_source.html">TileExtrapolation.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  485</span>                                                                                             {</div>
-<div class="line"><span class="lineno">  486</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = minY; y &lt; maxY; ++y) {</div>
-<div class="line"><span class="lineno">  487</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = minX; x &lt; maxX; ++x) {</div>
-<div class="line"><span class="lineno">  488</span>                <span class="keywordtype">unsigned</span> pixId = (y &lt;&lt; 3) + x;</div>
+<div class="line"><span class="lineno">  486</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = minY; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; maxY; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  487</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = minX; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; maxX; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
+<div class="line"><span class="lineno">  488</span>                <span class="keywordtype">unsigned</span> pixId = (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
 <div class="line"><span class="lineno">  489</span>                extrapolatePixIdArray[pixId] = <a class="code hl_function" href="classscene__rdl2_1_1fb__util_1_1_tile_extrapolation.html#a0872156ba834052d364bb0337145a03a">searchActiveNearestPixelMain_maskBundle8</a>(activePixelMask, pixId);</div>
 <div class="line"><span class="lineno">  490</span>            }</div>
 <div class="line"><span class="lineno">  491</span>        }</div>
@@ -1433,12 +1435,12 @@ Protected Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 1123</span>    std::ostringstream ostr;</div>
 <div class="line"><span class="lineno"> 1124</span> </div>
 <div class="line"><span class="lineno"> 1125</span>    ostr &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;mask 0x&quot;</span> &lt;&lt; std::setw(16) &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; std::hex &lt;&lt; mask &lt;&lt; <span class="stringliteral">&quot; {\n&quot;</span>;</div>
-<div class="line"><span class="lineno"> 1126</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 7; y &gt;= 0; --y) {</div>
+<div class="line"><span class="lineno"> 1126</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 7; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &gt;= 0; --<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
 <div class="line"><span class="lineno"> 1127</span>        ostr &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
-<div class="line"><span class="lineno"> 1128</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; 8; ++x) {</div>
-<div class="line"><span class="lineno"> 1129</span>            <span class="keywordflow">if</span> (mask &amp; (<span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x1) &lt;&lt; ((y &lt;&lt; 3) + x))) {</div>
+<div class="line"><span class="lineno"> 1128</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
+<div class="line"><span class="lineno"> 1129</span>            <span class="keywordflow">if</span> (mask &amp; (<span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(0x1) &lt;&lt; ((<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>))) {</div>
 <div class="line"><span class="lineno"> 1130</span>                <span class="comment">// ostr &lt;&lt; &quot;* &quot;;</span></div>
-<div class="line"><span class="lineno"> 1131</span>                ostr &lt;&lt; std::setw(2) &lt;&lt; std::oct &lt;&lt; ((y &lt;&lt; 3) + x) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><span class="lineno"> 1131</span>                ostr &lt;&lt; std::setw(2) &lt;&lt; std::oct &lt;&lt; ((<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><span class="lineno"> 1132</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno"> 1133</span>                <span class="comment">// ostr &lt;&lt; &quot;. &quot;;</span></div>
 <div class="line"><span class="lineno"> 1134</span>                ostr &lt;&lt; <span class="stringliteral">&quot; . &quot;</span>;</div>
@@ -1491,10 +1493,10 @@ Protected Attributes</h2></td></tr>
 <div class="line"><span class="lineno"> 1146</span>    std::ostringstream ostr;</div>
 <div class="line"><span class="lineno"> 1147</span> </div>
 <div class="line"><span class="lineno"> 1148</span>    ostr &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;extrapolatePixIdArray {\n&quot;</span>;</div>
-<div class="line"><span class="lineno"> 1149</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 7; y &gt;= 0; --y) {</div>
+<div class="line"><span class="lineno"> 1149</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 7; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &gt;= 0; --<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
 <div class="line"><span class="lineno"> 1150</span>        ostr &lt;&lt; hd &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
-<div class="line"><span class="lineno"> 1151</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; 8; ++x) {</div>
-<div class="line"><span class="lineno"> 1152</span>            <span class="keywordtype">int</span> currPixId = extrapolatePixIdArray[(y &lt;&lt; 3) + x];</div>
+<div class="line"><span class="lineno"> 1151</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; 8; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) {</div>
+<div class="line"><span class="lineno"> 1152</span>            <span class="keywordtype">int</span> currPixId = extrapolatePixIdArray[(<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt;&lt; 3) + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>];</div>
 <div class="line"><span class="lineno"> 1153</span>            ostr &lt;&lt; std::setw(2) &lt;&lt; std::oct &lt;&lt; currPixId &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"><span class="lineno"> 1154</span>        }</div>
 <div class="line"><span class="lineno"> 1155</span>        ostr &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>

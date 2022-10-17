@@ -263,16 +263,16 @@ Additional Inherited Members</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_tile_scheduler_8cc_source.html#l00173">173</a> of file <a class="el" href="_tile_scheduler_8cc_source.html">TileScheduler.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  176</span>{</div>
 <div class="line"><span class="lineno">  177</span>    <span class="keywordtype">unsigned</span> tileIdx = 0;</div>
-<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> y = 0; y &lt; numTilesY; ++y) {</div>
-<div class="line"><span class="lineno">  179</span>        <span class="keywordflow">if</span> (y &amp; 1) {</div>
+<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &lt; numTilesY; ++<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) {</div>
+<div class="line"><span class="lineno">  179</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> &amp; 1) {</div>
 <div class="line"><span class="lineno">  180</span>            <span class="comment">// Odd rows go right to left:</span></div>
-<div class="line"><span class="lineno">  181</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = numTilesX - 1; x &gt;= 0; --x, ++tileIdx) {</div>
-<div class="line"><span class="lineno">  182</span>                tileIndices[y * numTilesX + unsigned(x)] = tileIdx;</div>
+<div class="line"><span class="lineno">  181</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = numTilesX - 1; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &gt;= 0; --<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, ++tileIdx) {</div>
+<div class="line"><span class="lineno">  182</span>                tileIndices[<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> * numTilesX + unsigned(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)] = tileIdx;</div>
 <div class="line"><span class="lineno">  183</span>            }</div>
 <div class="line"><span class="lineno">  184</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><span class="lineno">  185</span>            <span class="comment">// Even rows go left to right:</span></div>
-<div class="line"><span class="lineno">  186</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> x = 0; x &lt; numTilesX; ++x, ++tileIdx) {</div>
-<div class="line"><span class="lineno">  187</span>                tileIndices[y * numTilesX + x] = tileIdx;</div>
+<div class="line"><span class="lineno">  186</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 0; <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &lt; numTilesX; ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, ++tileIdx) {</div>
+<div class="line"><span class="lineno">  187</span>                tileIndices[<a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> * numTilesX + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>] = tileIdx;</div>
 <div class="line"><span class="lineno">  188</span>            }</div>
 <div class="line"><span class="lineno">  189</span>        }</div>
 <div class="line"><span class="lineno">  190</span>    }</div>
@@ -280,6 +280,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  192</span>    <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(tileIdx == numTilesX * numTilesY);</div>
 <div class="line"><span class="lineno">  193</span>}</div>
 <div class="ttc" id="a_platform_8h_html_ac6bd494653a0872080be86890bea8639"><div class="ttname"><a href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a></div><div class="ttdeci">#define MNRY_ASSERT(a,...)</div><div class="ttdoc">Use MNRY_ASSERT for assertions you want compiled out of opt builds.</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00425">Platform.h:425</a></div></div>
+<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

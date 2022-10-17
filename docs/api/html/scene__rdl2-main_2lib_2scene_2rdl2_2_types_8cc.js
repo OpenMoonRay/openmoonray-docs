@@ -37,13 +37,6 @@ var scene__rdl2_main_2lib_2scene_2rdl2_2_types_8cc =
     [ "convertFromString< Vec4dVector >", "scene__rdl2-main_2lib_2scene_2rdl2_2_types_8cc.html#aab9ee8d5bff82d8b5c258297d9b2e499", null ],
     [ "convertFromString< Vec4f >", "scene__rdl2-main_2lib_2scene_2rdl2_2_types_8cc.html#a733ed8209f0490209c69a6c0aeb512fe", null ],
     [ "convertFromString< Vec4fVector >", "scene__rdl2-main_2lib_2scene_2rdl2_2_types_8cc.html#aa44cd0461d00b0ae2eb2dca06965fa8c", null ],
-    [ "convertNumericFromString", "scene__rdl2-main_2lib_2scene_2rdl2_2_types_8cc.html#a566fe54cbf93425a31fd6a2a135223aa", null ],
     [ "interfaceTypeName", "scene__rdl2-main_2lib_2scene_2rdl2_2_types_8cc.html#a4f2deed8573b24f9fec30b32c3a2911f", null ],
-    [ "removeOptionalBrackets", "scene__rdl2-main_2lib_2scene_2rdl2_2_types_8cc.html#a88490f91d00af763af48368121075b1e", null ],
-    [ "removeOptionalParens", "scene__rdl2-main_2lib_2scene_2rdl2_2_types_8cc.html#a0cd1e11123c2ee4df20114cf7462cc71", null ],
-    [ "removeOptionalQuoting", "scene__rdl2-main_2lib_2scene_2rdl2_2_types_8cc.html#ab16ad30838b2c3b469db6c2aadb77b4b", null ],
-    [ "showAttributeFlags", "scene__rdl2-main_2lib_2scene_2rdl2_2_types_8cc.html#aafd65fc0d82f2a89d683421094dfcafe", null ],
-    [ "tokenizeGroupedList", "scene__rdl2-main_2lib_2scene_2rdl2_2_types_8cc.html#a5309930b7ae6e1ef9076b7ef96fa9ab3", null ],
-    [ "tokenizeTuple", "scene__rdl2-main_2lib_2scene_2rdl2_2_types_8cc.html#a49f57dfe5d6bed978dcbf8b8d9d823b1", null ],
-    [ "tokensToVector", "scene__rdl2-main_2lib_2scene_2rdl2_2_types_8cc.html#a8f2f84207309b25d0cd0feb4b03bf3ff", null ]
+    [ "showAttributeFlags", "scene__rdl2-main_2lib_2scene_2rdl2_2_types_8cc.html#aafd65fc0d82f2a89d683421094dfcafe", null ]
 ];

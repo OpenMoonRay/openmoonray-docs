@@ -1597,12 +1597,12 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  633</span> </div>
 <div class="line"><span class="lineno">  634</span>    <a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_value_container.html#a29f2f5833bacfaf94155e5fd76a3a298">testMain</a>(<span class="stringliteral">&quot;testByteData&quot;</span>,</div>
 <div class="line"><span class="lineno">  635</span>             [&amp;](ValueContainerEnq *vcEnq) -&gt; <span class="keywordtype">size_t</span> { <span class="comment">// enqFunc</span></div>
-<div class="line"><span class="lineno">  636</span>                 <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a> = 0;</div>
+<div class="line"><span class="lineno">  636</span>                 <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a> = 0;</div>
 <div class="line"><span class="lineno">  637</span>                 <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; dataSize.size(); ++i) {</div>
 <div class="line"><span class="lineno">  638</span>                     vcEnq-&gt;enqByteData((<span class="keyword">const</span> <span class="keywordtype">void</span> *)(data[i]), dataSize[i]);</div>
-<div class="line"><span class="lineno">  639</span>                     <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a> += dataSize[i];</div>
+<div class="line"><span class="lineno">  639</span>                     <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a> += dataSize[i];</div>
 <div class="line"><span class="lineno">  640</span>                 }</div>
-<div class="line"><span class="lineno">  641</span>                 <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a>;</div>
+<div class="line"><span class="lineno">  641</span>                 <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a>;</div>
 <div class="line"><span class="lineno">  642</span>             },</div>
 <div class="line"><span class="lineno">  643</span>             [&amp;](ValueContainerDeq *vcDeq) { <span class="comment">// deqFunc</span></div>
 <div class="line"><span class="lineno">  644</span>                 <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; dataSize.size(); ++i) {</div>
@@ -1619,7 +1619,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">  655</span>        <span class="keywordflow">if</span> (dataSize[i]) <span class="keyword">delete</span> [] data[i];</div>
 <div class="line"><span class="lineno">  656</span>    }</div>
 <div class="line"><span class="lineno">  657</span>}</div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_resume_history_meta_data_8cc_03_html_ac9892f19154ee73f5bb753a99609290e"><div class="ttname"><a href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">anonymous_namespace{ResumeHistoryMetaData.cc}::totalSize</a></div><div class="ttdeci">std::size_t totalSize()</div><div class="ttdef"><b>Definition:</b> <a href="_resume_history_meta_data_8cc_source.html#l00050">ResumeHistoryMetaData.cc:50</a></div></div>
+<div class="ttc" id="anamespacescene__rdl2_1_1str__util_1_1detail_html_a5c0fa7a0375e7b7f647a69e509ab516c"><div class="ttname"><a href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">scene_rdl2::str_util::detail::totalSize</a></div><div class="ttdeci">std::size_t totalSize()</div><div class="ttdef"><b>Definition:</b> <a href="_str_util_8h_source.html#l00031">StrUtil.h:31</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2580,12 +2580,12 @@ template&lt;typename T , typename EnqFunc , typename DeqFunc &gt; </div>
 <div class="line"><span class="lineno">  592</span> </div>
 <div class="line"><span class="lineno">  593</span>    <a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_value_container.html#a29f2f5833bacfaf94155e5fd76a3a298">testMain</a>(<span class="stringliteral">&quot;testSceneObject&quot;</span>,</div>
 <div class="line"><span class="lineno">  594</span>             [&amp;](ValueContainerEnq *vcEnq) -&gt; <span class="keywordtype">size_t</span> { <span class="comment">// enqFunc</span></div>
-<div class="line"><span class="lineno">  595</span>                 <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a> = 0;</div>
+<div class="line"><span class="lineno">  595</span>                 <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a> = 0;</div>
 <div class="line"><span class="lineno">  596</span>                 <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; data.size(); ++i) {</div>
 <div class="line"><span class="lineno">  597</span>                     vcEnq-&gt;enqSceneObject(data[i]);</div>
-<div class="line"><span class="lineno">  598</span>                     <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a> += dataSize[i];</div>
+<div class="line"><span class="lineno">  598</span>                     <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a> += dataSize[i];</div>
 <div class="line"><span class="lineno">  599</span>                 }</div>
-<div class="line"><span class="lineno">  600</span>                 <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a>;</div>
+<div class="line"><span class="lineno">  600</span>                 <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a>;</div>
 <div class="line"><span class="lineno">  601</span>             },</div>
 <div class="line"><span class="lineno">  602</span>             [&amp;](ValueContainerDeq *vcDeq) { <span class="comment">// deqFunc</span></div>
 <div class="line"><span class="lineno">  603</span>                 <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; data.size(); ++i) {</div>
@@ -2640,11 +2640,11 @@ template&lt;typename T , typename EnqFunc , typename DeqFunc &gt; </div>
 <div class="line"><span class="lineno"> 1142</span>             [&amp;](ValueContainerEnq *vcEnq) -&gt; <span class="keywordtype">size_t</span> { <span class="comment">// enqFunc</span></div>
 <div class="line"><span class="lineno"> 1143</span>                 vcEnq-&gt;enqSceneObjectIndexable(data);</div>
 <div class="line"><span class="lineno"> 1144</span> </div>
-<div class="line"><span class="lineno"> 1145</span>                 <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a> = <a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_value_container_util.html#a6a98014a0a06d6a3ee677241e36e7239">ValueContainerUtil::variableLengthEncodingSize</a>(data.size());</div>
+<div class="line"><span class="lineno"> 1145</span>                 <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a> = <a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_value_container_util.html#a6a98014a0a06d6a3ee677241e36e7239">ValueContainerUtil::variableLengthEncodingSize</a>(data.size());</div>
 <div class="line"><span class="lineno"> 1146</span>                 <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; data.size(); ++i) {</div>
-<div class="line"><span class="lineno"> 1147</span>                     <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a> += dataSize[i];</div>
+<div class="line"><span class="lineno"> 1147</span>                     <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a> += dataSize[i];</div>
 <div class="line"><span class="lineno"> 1148</span>                 }</div>
-<div class="line"><span class="lineno"> 1149</span>                 <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a>;</div>
+<div class="line"><span class="lineno"> 1149</span>                 <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a>;</div>
 <div class="line"><span class="lineno"> 1150</span>             },</div>
 <div class="line"><span class="lineno"> 1151</span>             [&amp;](ValueContainerDeq *vcDeq) { <span class="comment">// deqFunc</span></div>
 <div class="line"><span class="lineno"> 1152</span>                 <a class="code hl_typedef" href="namespacescene__rdl2_1_1rdl2.html#a61e621623964a4645a7d075cf719002f">StringVector</a> klassNameVec;</div>
@@ -2709,11 +2709,11 @@ template&lt;typename T , typename EnqFunc , typename DeqFunc &gt; </div>
 <div class="line"><span class="lineno"> 1091</span>             [&amp;](ValueContainerEnq *vcEnq) -&gt; <span class="keywordtype">size_t</span> { <span class="comment">// enqFunc</span></div>
 <div class="line"><span class="lineno"> 1092</span>                 vcEnq-&gt;enqSceneObjectVector(data);</div>
 <div class="line"><span class="lineno"> 1093</span> </div>
-<div class="line"><span class="lineno"> 1094</span>                 <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a> = <a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_value_container_util.html#a6a98014a0a06d6a3ee677241e36e7239">ValueContainerUtil::variableLengthEncodingSize</a>(data.size());</div>
+<div class="line"><span class="lineno"> 1094</span>                 <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a> = <a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_value_container_util.html#a6a98014a0a06d6a3ee677241e36e7239">ValueContainerUtil::variableLengthEncodingSize</a>(data.size());</div>
 <div class="line"><span class="lineno"> 1095</span>                 <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; data.size(); ++i) {</div>
-<div class="line"><span class="lineno"> 1096</span>                     <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a> += dataSize[i];</div>
+<div class="line"><span class="lineno"> 1096</span>                     <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a> += dataSize[i];</div>
 <div class="line"><span class="lineno"> 1097</span>                 }</div>
-<div class="line"><span class="lineno"> 1098</span>                 <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a>;</div>
+<div class="line"><span class="lineno"> 1098</span>                 <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a>;</div>
 <div class="line"><span class="lineno"> 1099</span>             },</div>
 <div class="line"><span class="lineno"> 1100</span>             [&amp;](ValueContainerDeq *vcDeq) { <span class="comment">// deqFunc</span></div>
 <div class="line"><span class="lineno"> 1101</span>                 <a class="code hl_typedef" href="namespacescene__rdl2_1_1rdl2.html#a61e621623964a4645a7d075cf719002f">StringVector</a> klassNameVec;</div>
@@ -2763,16 +2763,16 @@ template&lt;typename T , typename EnqFunc , typename DeqFunc &gt; </div>
 <div class="line"><span class="lineno">  344</span> </div>
 <div class="line"><span class="lineno">  345</span>    <a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1unittest_1_1_test_value_container.html#a29f2f5833bacfaf94155e5fd76a3a298">testMain</a>(<span class="stringliteral">&quot;testString&quot;</span>,</div>
 <div class="line"><span class="lineno">  346</span>             [&amp;](ValueContainerEnq *vcEnq) -&gt; <span class="keywordtype">size_t</span> { <span class="comment">// enqFunc</span></div>
-<div class="line"><span class="lineno">  347</span>                 <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a> = 0;</div>
+<div class="line"><span class="lineno">  347</span>                 <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a> = 0;</div>
 <div class="line"><span class="lineno">  348</span>                 <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; data.size(); ++i) {</div>
 <div class="line"><span class="lineno">  349</span>                     vcEnq-&gt;enqString(data[i]);</div>
 <div class="line"><span class="lineno">  350</span>                     <span class="comment">// string encoded size = variableLen(size) + size</span></div>
 <div class="line"><span class="lineno">  351</span>                     <span class="keywordtype">size_t</span> currSize =</div>
 <div class="line"><span class="lineno">  352</span>                         <a class="code hl_function" href="classscene__rdl2_1_1rdl2_1_1_value_container_util.html#a6a98014a0a06d6a3ee677241e36e7239">ValueContainerUtil::variableLengthEncodingSize</a>(data[i].<a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>()) +</div>
 <div class="line"><span class="lineno">  353</span>                         data[i].size();</div>
-<div class="line"><span class="lineno">  354</span>                     <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a> += currSize;</div>
+<div class="line"><span class="lineno">  354</span>                     <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a> += currSize;</div>
 <div class="line"><span class="lineno">  355</span>                 }</div>
-<div class="line"><span class="lineno">  356</span>                 <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a>;</div>
+<div class="line"><span class="lineno">  356</span>                 <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a>;</div>
 <div class="line"><span class="lineno">  357</span>             },</div>
 <div class="line"><span class="lineno">  358</span>             [&amp;](ValueContainerDeq *vcDeq) { <span class="comment">// deqFunc</span></div>
 <div class="line"><span class="lineno">  359</span>                 <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; data.size(); ++i) {</div>

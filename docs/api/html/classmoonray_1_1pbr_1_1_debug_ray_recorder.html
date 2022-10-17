@@ -610,7 +610,7 @@ Friends</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_debug_ray_8cc_source.html#l00261">261</a> of file <a class="el" href="_debug_ray_8cc_source.html">DebugRay.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  262</span>{</div>
 <div class="line"><span class="lineno">  263</span>    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> &lt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_recorder.html#a0becb7a061d095a672de959e8ec7cfe5">mEndId</a>) {</div>
-<div class="line"><span class="lineno">  264</span>        <span class="keywordtype">size_t</span> listIdx = <span class="keywordtype">id</span> &gt;&gt; <a class="code hl_variable" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a648d5cfe950707f68997da3e924ad0db">MAX_VERTS_PER_BLOCK_SHIFT</a>;</div>
+<div class="line"><span class="lineno">  264</span>        <span class="keywordtype">size_t</span> listIdx = <span class="keywordtype">id</span> &gt;&gt; MAX_VERTS_PER_BLOCK_SHIFT;</div>
 <div class="line"><span class="lineno">  265</span>        <span class="keywordtype">size_t</span> elemIdx = <span class="keywordtype">id</span> &amp; (<a class="code hl_define" href="_debug_ray_8cc.html#a175d591731ef5d9d80c5ac21d31f885b">MAX_VERTS_PER_BLOCK</a> - 1);</div>
 <div class="line"><span class="lineno">  266</span> </div>
 <div class="line"><span class="lineno">  267</span>        <span class="keywordflow">if</span> (listIdx &lt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_recorder.html#a1249b1b6214aeff3c52b62ccab1529c1">mVertexBlocks</a>.size() &amp;&amp; elemIdx &lt; <a class="code hl_variable" href="classmoonray_1_1pbr_1_1_debug_ray_recorder.html#a1249b1b6214aeff3c52b62ccab1529c1">mVertexBlocks</a>[listIdx]-&gt;size()) {</div>
@@ -619,7 +619,6 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">  270</span>    }</div>
 <div class="line"><span class="lineno">  271</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><span class="lineno">  272</span>}</div>
-<div class="ttc" id="anamespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03_html_a648d5cfe950707f68997da3e924ad0db"><div class="ttname"><a href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a648d5cfe950707f68997da3e924ad0db">moonray::pbr::anonymous_namespace{DebugRay.cc}::MAX_VERTS_PER_BLOCK_SHIFT</a></div><div class="ttdeci">const unsigned MAX_VERTS_PER_BLOCK_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8cc_source.html#l00028">DebugRay.cc:28</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

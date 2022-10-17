@@ -130,7 +130,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:afd45fd09edd038ffe7777afbda29e574"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#afd45fd09edd038ffe7777afbda29e574">getRegionCoords</a> (int idx, int numRegionsPerDimension, int &amp;x, int &amp;y) noexcept</td></tr>
+<tr class="memitem:afd45fd09edd038ffe7777afbda29e574"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#afd45fd09edd038ffe7777afbda29e574">getRegionCoords</a> (int idx, int numRegionsPerDimension, int &amp;<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int &amp;<a class="el" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>) noexcept</td></tr>
 <tr class="separator:afd45fd09edd038ffe7777afbda29e574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -356,9 +356,9 @@ template&lt;int sRegionOverlap, int sTileWidth, int sTileHeight, int sDesiredNRe
 <div class="line"><span class="lineno">  179</span>        <span class="keyword">const</span> <a class="code hl_struct" href="structscene__rdl2_1_1math_1_1_vec2.html">scene_rdl2::math::Vec2i</a>&amp; p = tile.<a class="code hl_variable" href="structscene__rdl2_1_1math_1_1_b_box.html#ad7a92e9605da5b21c6584760b30528d4">lower</a>;</div>
 <div class="line"><span class="lineno">  180</span> </div>
 <div class="line"><span class="lineno">  181</span>        <span class="keywordtype">int</span> idx = 0;</div>
-<div class="line"><span class="lineno">  182</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y : {-sRegionOverlap, 0, sRegionOverlap}) {</div>
-<div class="line"><span class="lineno">  183</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x : {-sRegionOverlap, 0, sRegionOverlap}) {</div>
-<div class="line"><span class="lineno">  184</span>                <span class="keyword">const</span> <a class="code hl_struct" href="structscene__rdl2_1_1math_1_1_vec2.html">scene_rdl2::math::Vec2i</a> toCheck = p + <a class="code hl_struct" href="structscene__rdl2_1_1math_1_1_vec2.html">scene_rdl2::math::Vec2i</a>{x, y};</div>
+<div class="line"><span class="lineno">  182</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> : {-sRegionOverlap, 0, sRegionOverlap}) {</div>
+<div class="line"><span class="lineno">  183</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> : {-sRegionOverlap, 0, sRegionOverlap}) {</div>
+<div class="line"><span class="lineno">  184</span>                <span class="keyword">const</span> <a class="code hl_struct" href="structscene__rdl2_1_1math_1_1_vec2.html">scene_rdl2::math::Vec2i</a> toCheck = p + <a class="code hl_struct" href="structscene__rdl2_1_1math_1_1_vec2.html">scene_rdl2::math::Vec2i</a>{<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a>};</div>
 <div class="line"><span class="lineno">  185</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacescene__rdl2_1_1math.html#aaed9012bf4a73ef2d8b139859ffc9dcf">conjointExclusive</a>(<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#a4f39a03caf7ed666c5314d25adf382e6">mOverallBounds</a>, toCheck)) {</div>
 <div class="line"><span class="lineno">  186</span>                    indices[idx++] = <a class="code hl_function" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#abf31b714c0fc3f16f8508f6120e8bf71">getRegionIndex</a>(toCheck);</div>
 <div class="line"><span class="lineno">  187</span>                }</div>
@@ -367,6 +367,8 @@ template&lt;int sRegionOverlap, int sTileWidth, int sTileHeight, int sDesiredNRe
 <div class="line"><span class="lineno">  190</span>        <span class="comment">// Mark the end of the array.</span></div>
 <div class="line"><span class="lineno">  191</span>        <span class="keywordflow">if</span> (idx &lt; 9) indices[idx] = -1;</div>
 <div class="line"><span class="lineno">  192</span>    }</div>
+<div class="ttc" id="a_test_qmc_8cc_html_aa4f0d3eebc3c443f9be81bf48561a217"><div class="ttname"><a href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00147">TestQmc.cc:147</a></div></div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_overlapping_regions_html_abf31b714c0fc3f16f8508f6120e8bf71"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_overlapping_regions.html#abf31b714c0fc3f16f8508f6120e8bf71">moonray::rndr::OverlappingRegions::getRegionIndex</a></div><div class="ttdeci">int getRegionIndex(scene_rdl2::math::Vec2i p) const</div><div class="ttdef"><b>Definition:</b> <a href="_overlapping_regions_8h_source.html#l00157">OverlappingRegions.h:157</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1math_html_aaed9012bf4a73ef2d8b139859ffc9dcf"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#aaed9012bf4a73ef2d8b139859ffc9dcf">scene_rdl2::math::conjointExclusive</a></div><div class="ttdeci">__inline bool conjointExclusive(const BBox&lt; T &gt; &amp;a, const T &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_b_box_8h_source.html#l00168">BBox.h:168</a></div></div>
 <div class="ttc" id="astructscene__rdl2_1_1math_1_1_b_box_html_ad7a92e9605da5b21c6584760b30528d4"><div class="ttname"><a href="structscene__rdl2_1_1math_1_1_b_box.html#ad7a92e9605da5b21c6584760b30528d4">scene_rdl2::math::BBox::lower</a></div><div class="ttdeci">T lower</div><div class="ttdef"><b>Definition:</b> <a href="_b_box_8h_source.html#l00038">BBox.h:38</a></div></div>
@@ -493,8 +495,8 @@ template&lt;int sRegionOverlap, int sTileWidth, int sTileHeight, int sDesiredNRe
 
 <p class="definition">Definition at line <a class="el" href="_overlapping_regions_8h_source.html#l00200">200</a> of file <a class="el" href="_overlapping_regions_8h_source.html">OverlappingRegions.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  201</span>    {</div>
-<div class="line"><span class="lineno">  202</span>        x = idx%numRegionsPerDimension;</div>
-<div class="line"><span class="lineno">  203</span>        y = idx/numRegionsPerDimension;</div>
+<div class="line"><span class="lineno">  202</span>        <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = idx%numRegionsPerDimension;</div>
+<div class="line"><span class="lineno">  203</span>        <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = idx/numRegionsPerDimension;</div>
 <div class="line"><span class="lineno">  204</span>    }</div>
 </div><!-- fragment -->
 </div>
@@ -563,9 +565,9 @@ template&lt;int sRegionOverlap, int sTileWidth, int sTileHeight, int sDesiredNRe
 <p class="definition">Definition at line <a class="el" href="_overlapping_regions_8h_source.html#l00157">157</a> of file <a class="el" href="_overlapping_regions_8h_source.html">OverlappingRegions.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  158</span>    {</div>
 <div class="line"><span class="lineno">  159</span>        p -= <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#a4f39a03caf7ed666c5314d25adf382e6">mOverallBounds</a>.<a class="code hl_variable" href="structscene__rdl2_1_1math_1_1_b_box.html#ad7a92e9605da5b21c6584760b30528d4">lower</a>;</div>
-<div class="line"><span class="lineno">  160</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> x = p[0]/<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#a4f677220a1f003954b3a5cf898957c4a">mRegionWidth</a>;</div>
-<div class="line"><span class="lineno">  161</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> y = p[1]/<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#a2d15dc37bf4e3ce42d766fef0756d88c">mRegionHeight</a>;</div>
-<div class="line"><span class="lineno">  162</span>        <span class="keywordflow">return</span> y * <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#a55b96a0c62ad96afdab60fa339c6aee1">mNumRegionsPerDimension</a> + x;</div>
+<div class="line"><span class="lineno">  160</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = p[0]/<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#a4f677220a1f003954b3a5cf898957c4a">mRegionWidth</a>;</div>
+<div class="line"><span class="lineno">  161</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> = p[1]/<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#a2d15dc37bf4e3ce42d766fef0756d88c">mRegionHeight</a>;</div>
+<div class="line"><span class="lineno">  162</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="_test_qmc_8cc.html#aa4f0d3eebc3c443f9be81bf48561a217">y</a> * <a class="code hl_variable" href="classmoonray_1_1rndr_1_1_overlapping_regions.html#a55b96a0c62ad96afdab60fa339c6aee1">mNumRegionsPerDimension</a> + <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
 <div class="line"><span class="lineno">  163</span>    }</div>
 </div><!-- fragment -->
 </div>

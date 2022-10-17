@@ -952,7 +952,7 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  109</span>        <span class="comment">// the AdaptiveRegionTree.</span></div>
 <div class="line"><span class="lineno">  110</span>        <span class="keywordflow">if</span> (--<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#a84a3214e90b68de17c3972261194fd22">mRegionTileCount</a>[idx].value == 0) {</div>
 <div class="line"><span class="lineno">  111</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#afc0dc8a406b483235cdc7db58ac603e2">mVectorized</a>) {</div>
-<div class="line"><span class="lineno">  112</span>                <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_adaptive_regions_8cc_03.html#ad6341f18a6188ebef39a61396e708d8a">doFlush</a>(tls);</div>
+<div class="line"><span class="lineno">  112</span>                doFlush(tls);</div>
 <div class="line"><span class="lineno">  113</span>            }</div>
 <div class="line"><span class="lineno">  114</span> </div>
 <div class="line"><span class="lineno">  115</span>            <a class="code hl_define" href="_profile_accumulator_handles_8h.html#a6335af8746974a0365ae8756b7d5d73f">EXCL_ACCUMULATOR_PROFILE</a>(tls, <a class="code hl_enumvalue" href="_profile_accumulator_handles_8hh.html#ae7f4a146d68256e9f19dcbde6c38c9b2a95fdc9e32a1d5a15981c4fa319800dda">EXCL_EXCL_LOCK_ADAPTIVE_TREE</a>);</div>
@@ -992,7 +992,7 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  149</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1rndr_1_1_adaptive_regions.html#afc0dc8a406b483235cdc7db58ac603e2">mVectorized</a> &amp;&amp; idx != localRegionID) {</div>
 <div class="line"><span class="lineno">  150</span>            <span class="comment">// We don&#39;t want to flush too often, so we do it once per thread per adaptive region by keeping track of the</span></div>
 <div class="line"><span class="lineno">  151</span>            <span class="comment">// last region we were in. This falls down a bit if we restart the render (we may miss a flush).</span></div>
-<div class="line"><span class="lineno">  152</span>            <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_adaptive_regions_8cc_03.html#ad6341f18a6188ebef39a61396e708d8a">doFlush</a>(tls);</div>
+<div class="line"><span class="lineno">  152</span>            doFlush(tls);</div>
 <div class="line"><span class="lineno">  153</span><span class="preprocessor">#pragma warning push</span></div>
 <div class="line"><span class="lineno">  154</span><span class="preprocessor">#pragma warning disable 1711</span></div>
 <div class="line"><span class="lineno">  155</span>            <span class="comment">// warning #1711: assignment to statically allocated variable</span></div>
@@ -1013,7 +1013,6 @@ Static Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_overlapping_regions_html_a1caed2d4248ad62d7f40952183ed766e"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_overlapping_regions.html#a1caed2d4248ad62d7f40952183ed766e">moonray::rndr::OverlappingRegions::getOverlappedRegions</a></div><div class="ttdeci">void getOverlappedRegions(const scene_rdl2::math::BBox2i &amp;tile, IndexArray &amp;indices) const</div><div class="ttdef"><b>Definition:</b> <a href="_overlapping_regions_8h_source.html#l00177">OverlappingRegions.h:177</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1rndr_1_1_update_sentinel_html_af695cce45d17c08b5b98323135c2c85b"><div class="ttname"><a href="classmoonray_1_1rndr_1_1_update_sentinel.html#af695cce45d17c08b5b98323135c2c85b">moonray::rndr::UpdateSentinel::shouldUpdate</a></div><div class="ttdeci">bool shouldUpdate(const unsigned endSampleId)</div><div class="ttdef"><b>Definition:</b> <a href="_update_sentinel_8h_source.html#l00062">UpdateSentinel.h:62</a></div></div>
 <div class="ttc" id="aimmintrin__emu_8h_html_ab5fe720200eed3b8fca39c153696c5d2"><div class="ttname"><a href="immintrin__emu_8h.html#ab5fe720200eed3b8fca39c153696c5d2">b</a></div><div class="ttdeci">__emu__m256d float double __m128 __m128 b</div><div class="ttdef"><b>Definition:</b> <a href="immintrin__emu_8h_source.html#l00590">immintrin_emu.h:590</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1rndr_1_1anonymous__namespace_02_adaptive_regions_8cc_03_html_ad6341f18a6188ebef39a61396e708d8a"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1anonymous__namespace_02_adaptive_regions_8cc_03.html#ad6341f18a6188ebef39a61396e708d8a">moonray::rndr::anonymous_namespace{AdaptiveRegions.cc}::doFlush</a></div><div class="ttdeci">void doFlush(mcrt_common::ThreadLocalState *tls)</div><div class="ttdef"><b>Definition:</b> <a href="_adaptive_regions_8cc_source.html#l00028">AdaptiveRegions.cc:28</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

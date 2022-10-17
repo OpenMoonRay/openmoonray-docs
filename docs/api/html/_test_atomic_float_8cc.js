@@ -1,8 +1,9 @@
 var _test_atomic_float_8cc =
 [
-    [ "scene_rdl2::pbr::anonymous_namespace{TestAtomicFloat.cc}::AtomicFloatAdditionTester", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_addition_tester.html", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_addition_tester" ],
-    [ "scene_rdl2::pbr::anonymous_namespace{TestAtomicFloat.cc}::AtomicFloatCASTesterWeak", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_c_a_s_tester_weak.html", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_c_a_s_tester_weak" ],
-    [ "scene_rdl2::pbr::anonymous_namespace{TestAtomicFloat.cc}::AtomicFloatCASTesterStrong", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_c_a_s_tester_strong.html", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_c_a_s_tester_strong" ],
-    [ "atomicFloatTest", "_test_atomic_float_8cc.html#a78c2e73d67a13056946b95c32be23573", null ],
-    [ "CPPUNIT_TEST_SUITE_REGISTRATION", "_test_atomic_float_8cc.html#a842a749842497597f0d635e7b5a04154", null ]
+    [ "CPPUNIT_TEST_SUITE_REGISTRATION", "_test_atomic_float_8cc.html#a842a749842497597f0d635e7b5a04154", null ],
+    [ "kNumOperations", "_test_atomic_float_8cc.html#a7f6a5f08ca54ec6ad8f4341c4575b939", null ],
+    [ "kVectorSize", "_test_atomic_float_8cc.html#a45f75c746e747150953dea8c6afc483e", null ],
+    [ "mCounter", "_test_atomic_float_8cc.html#ac9bc5518c5a8a067a93d1be3c5448bee", null ],
+    [ "mTestArray", "_test_atomic_float_8cc.html#ad6bda7d8aa95873f6c264e47ac2fbb9e", null ],
+    [ "mTestVar", "_test_atomic_float_8cc.html#a34af3b992342ec4701022f50c69c75b5", null ]
 ];

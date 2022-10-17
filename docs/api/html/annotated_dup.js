@@ -3,73 +3,6 @@ var annotated_dup =
     [ "af_detail", "namespaceaf__detail.html", [
       [ "atomic_fp", "classaf__detail_1_1atomic__fp.html", "classaf__detail_1_1atomic__fp" ]
     ] ],
-    [ "anonymous_namespace{DeclareAndCreateObject.cc}", "namespaceanonymous__namespace_02_declare_and_create_object_8cc_03.html", [
-      [ "DeclareAndCreateObject", "classanonymous__namespace_02_declare_and_create_object_8cc_03_1_1_declare_and_create_object.html", "classanonymous__namespace_02_declare_and_create_object_8cc_03_1_1_declare_and_create_object" ]
-    ] ],
-    [ "anonymous_namespace{DeclareAndDestroyObject.cc}", "namespaceanonymous__namespace_02_declare_and_destroy_object_8cc_03.html", [
-      [ "DeclareAndDestroyObject", "classanonymous__namespace_02_declare_and_destroy_object_8cc_03_1_1_declare_and_destroy_object.html", "classanonymous__namespace_02_declare_and_destroy_object_8cc_03_1_1_declare_and_destroy_object" ]
-    ] ],
-    [ "anonymous_namespace{RampControl.cc}", "namespaceanonymous__namespace_02_ramp_control_8cc_03.html", [
-      [ "RampCv", "structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv.html", "structanonymous__namespace_02_ramp_control_8cc_03_1_1_ramp_cv" ]
-    ] ],
-    [ "anonymous_namespace{rdl2_json_exporter.cc}", "namespaceanonymous__namespace_02rdl2__json__exporter_8cc_03.html", [
-      [ "GeneratorData", "structanonymous__namespace_02rdl2__json__exporter_8cc_03_1_1_generator_data.html", "structanonymous__namespace_02rdl2__json__exporter_8cc_03_1_1_generator_data" ]
-    ] ],
-    [ "anonymous_namespace{rdl2_print.cc}", "namespaceanonymous__namespace_02rdl2__print_8cc_03.html", [
-      [ "Options", "structanonymous__namespace_02rdl2__print_8cc_03_1_1_options.html", "structanonymous__namespace_02rdl2__print_8cc_03_1_1_options" ]
-    ] ],
-    [ "anonymous_namespace{test_ring_buffer.cc}", "namespaceanonymous__namespace_02test__ring__buffer_8cc_03.html", [
-      [ "BatchInsertCompleteRandomAccessIterator", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_complete_random_access_iterator.html", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_complete_random_access_iterator" ],
-      [ "BatchInsertForwardIterator", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_forward_iterator.html", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_forward_iterator" ],
-      [ "BatchInsertInputIterator", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_input_iterator.html", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_input_iterator" ],
-      [ "BatchInsertRandomAccessIterator", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_random_access_iterator.html", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_batch_insert_random_access_iterator" ],
-      [ "ConsumerTest", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_consumer_test.html", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_consumer_test" ],
-      [ "Emplacer", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer.html", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer" ],
-      [ "Emplacer< TestDataCopyExceptions >", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_copy_exceptions_01_4.html", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_copy_exceptions_01_4" ],
-      [ "Emplacer< TestDataExceptions >", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_exceptions_01_4.html", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_exceptions_01_4" ],
-      [ "Emplacer< TestDataMoveExceptions >", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_move_exceptions_01_4.html", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_move_exceptions_01_4" ],
-      [ "Emplacer< TestDataNoExceptions >", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_no_exceptions_01_4.html", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_emplacer_3_01_test_data_no_exceptions_01_4" ],
-      [ "GenericInputIterator", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_generic_input_iterator.html", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_generic_input_iterator" ],
-      [ "ProducerTest", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_producer_test.html", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_producer_test" ],
-      [ "RandomTime", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_random_time.html", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_random_time" ],
-      [ "StopWatch", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_stop_watch.html", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_stop_watch" ],
-      [ "TestDataCopyExceptions", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_test_data_copy_exceptions.html", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_test_data_copy_exceptions" ],
-      [ "TestDataExceptions", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_test_data_exceptions.html", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_test_data_exceptions" ],
-      [ "TestDataMoveExceptions", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_test_data_move_exceptions.html", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_test_data_move_exceptions" ],
-      [ "TestDataNoExceptions", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_test_data_no_exceptions.html", "structanonymous__namespace_02test__ring__buffer_8cc_03_1_1_test_data_no_exceptions" ],
-      [ "TestException", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_test_exception.html", null ],
-      [ "WorkDistributor", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_work_distributor.html", "classanonymous__namespace_02test__ring__buffer_8cc_03_1_1_work_distributor" ]
-    ] ],
-    [ "anonymous_namespace{test_util.cc}", "namespaceanonymous__namespace_02test__util_8cc_03.html", [
-      [ "BasicType", "structanonymous__namespace_02test__util_8cc_03_1_1_basic_type.html", "structanonymous__namespace_02test__util_8cc_03_1_1_basic_type" ],
-      [ "ConstantHash", "structanonymous__namespace_02test__util_8cc_03_1_1_constant_hash.html", "structanonymous__namespace_02test__util_8cc_03_1_1_constant_hash" ],
-      [ "DefaultAlignmentPolicy", "structanonymous__namespace_02test__util_8cc_03_1_1_default_alignment_policy.html", "structanonymous__namespace_02test__util_8cc_03_1_1_default_alignment_policy" ],
-      [ "MoveOnly", "structanonymous__namespace_02test__util_8cc_03_1_1_move_only.html", "structanonymous__namespace_02test__util_8cc_03_1_1_move_only" ],
-      [ "MyContainer", "classanonymous__namespace_02test__util_8cc_03_1_1_my_container.html", "classanonymous__namespace_02test__util_8cc_03_1_1_my_container" ],
-      [ "PoorHash", "structanonymous__namespace_02test__util_8cc_03_1_1_poor_hash.html", "structanonymous__namespace_02test__util_8cc_03_1_1_poor_hash" ],
-      [ "TypeAlignmentPolicy", "structanonymous__namespace_02test__util_8cc_03_1_1_type_alignment_policy.html", "structanonymous__namespace_02test__util_8cc_03_1_1_type_alignment_policy" ]
-    ] ],
-    [ "anonymous_namespace{test_wait.cc}", "namespaceanonymous__namespace_02test__wait_8cc_03.html", [
-      [ "IncrementHelper", "structanonymous__namespace_02test__wait_8cc_03_1_1_increment_helper.html", null ],
-      [ "IncrementHelper< false >", "structanonymous__namespace_02test__wait_8cc_03_1_1_increment_helper_3_01false_01_4.html", "structanonymous__namespace_02test__wait_8cc_03_1_1_increment_helper_3_01false_01_4" ],
-      [ "IncrementHelper< true >", "structanonymous__namespace_02test__wait_8cc_03_1_1_increment_helper_3_01true_01_4.html", "structanonymous__namespace_02test__wait_8cc_03_1_1_increment_helper_3_01true_01_4" ],
-      [ "MaxThreads", "structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads.html", "structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads" ],
-      [ "MaxThreads< float >", "structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads_3_01float_01_4.html", "structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads_3_01float_01_4" ],
-      [ "MaxThreads< NonScalar >", "structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads_3_01_non_scalar_01_4.html", "structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads_3_01_non_scalar_01_4" ],
-      [ "MaxThreadsHelper", "structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads_helper.html", null ],
-      [ "MaxThreadsHelper< T, false >", "structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads_helper_3_01_t_00_01false_01_4.html", "structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads_helper_3_01_t_00_01false_01_4" ],
-      [ "MaxThreadsHelper< T, true >", "structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads_helper_3_01_t_00_01true_01_4.html", "structanonymous__namespace_02test__wait_8cc_03_1_1_max_threads_helper_3_01_t_00_01true_01_4" ],
-      [ "NonScalar", "structanonymous__namespace_02test__wait_8cc_03_1_1_non_scalar.html", "structanonymous__namespace_02test__wait_8cc_03_1_1_non_scalar" ]
-    ] ],
-    [ "anonymous_namespace{TestEvalAttribute.cc}", "namespaceanonymous__namespace_02_test_eval_attribute_8cc_03.html", [
-      [ "SceneSetup", "classanonymous__namespace_02_test_eval_attribute_8cc_03_1_1_scene_setup.html", "classanonymous__namespace_02_test_eval_attribute_8cc_03_1_1_scene_setup" ]
-    ] ],
-    [ "anonymous_namespace{TestRandom.cc}", "namespaceanonymous__namespace_02_test_random_8cc_03.html", [
-      [ "BoundIntRangeCheckRandomTraits", "structanonymous__namespace_02_test_random_8cc_03_1_1_bound_int_range_check_random_traits.html", "structanonymous__namespace_02_test_random_8cc_03_1_1_bound_int_range_check_random_traits" ],
-      [ "DoubleCheckRandomTraits", "structanonymous__namespace_02_test_random_8cc_03_1_1_double_check_random_traits.html", "structanonymous__namespace_02_test_random_8cc_03_1_1_double_check_random_traits" ],
-      [ "FloatCheckRandomTraits", "structanonymous__namespace_02_test_random_8cc_03_1_1_float_check_random_traits.html", "structanonymous__namespace_02_test_random_8cc_03_1_1_float_check_random_traits" ],
-      [ "FullIntRangeCheckRandomTraits", "structanonymous__namespace_02_test_random_8cc_03_1_1_full_int_range_check_random_traits.html", "structanonymous__namespace_02_test_random_8cc_03_1_1_full_int_range_check_random_traits" ]
-    ] ],
     [ "detail", "namespacedetail.html", [
       [ "AreEqual", "structdetail_1_1_are_equal.html", "structdetail_1_1_are_equal" ],
       [ "ContainedType", "structdetail_1_1_contained_type.html", "structdetail_1_1_contained_type" ],
@@ -112,9 +45,6 @@ var annotated_dup =
       [ "Wildexp", "classlpexp_1_1_wildexp.html", "classlpexp_1_1_wildexp" ]
     ] ],
     [ "moonray", "namespacemoonray.html", [
-      [ "anonymous_namespace{BakeCamera.cc}", "namespacemoonray_1_1anonymous__namespace_02_bake_camera_8cc_03.html", [
-        [ "PosMapBuilder", "classmoonray_1_1anonymous__namespace_02_bake_camera_8cc_03_1_1_pos_map_builder.html", "classmoonray_1_1anonymous__namespace_02_bake_camera_8cc_03_1_1_pos_map_builder" ]
-      ] ],
       [ "displayfilter", "namespacemoonray_1_1displayfilter.html", [
         [ "DisplayFilterState", "structmoonray_1_1displayfilter_1_1_display_filter_state.html", "structmoonray_1_1displayfilter_1_1_display_filter_state" ],
         [ "InitializeData", "structmoonray_1_1displayfilter_1_1_initialize_data.html", "structmoonray_1_1displayfilter_1_1_initialize_data" ],
@@ -131,10 +61,6 @@ var annotated_dup =
       ] ],
       [ "geom", "namespacemoonray_1_1geom.html", [
         [ "internal", "namespacemoonray_1_1geom_1_1internal.html", [
-          [ "anonymous_namespace{VolumeAssignmentTable.cc}", "namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03.html", [
-            [ "AssignInstanceMasks", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_instance_masks.html", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_instance_masks" ],
-            [ "AssignVolumeInstances", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances.html", "classmoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03_1_1_assign_volume_instances" ]
-          ] ],
           [ "AmorphousVolume", "classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html", "classmoonray_1_1geom_1_1internal_1_1_amorphous_volume" ],
           [ "BezierSpanChains", "classmoonray_1_1geom_1_1internal_1_1_bezier_span_chains.html", "classmoonray_1_1geom_1_1internal_1_1_bezier_span_chains" ],
           [ "Box", "classmoonray_1_1geom_1_1internal_1_1_box.html", "classmoonray_1_1geom_1_1internal_1_1_box" ],
@@ -271,13 +197,6 @@ var annotated_dup =
         [ "StateMachine", "classmoonray_1_1lpe_1_1_state_machine.html", "classmoonray_1_1lpe_1_1_state_machine" ]
       ] ],
       [ "mcrt_common", "namespacemoonray_1_1mcrt__common.html", [
-        [ "anonymous_namespace{ProfileAccumulator.cc}", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03.html", [
-          [ "Private", "structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private.html", "structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_profile_accumulator_8cc_03_1_1_private" ]
-        ] ],
-        [ "anonymous_namespace{ThreadLocalState.cc}", "namespacemoonray_1_1mcrt__common_1_1anonymous__namespace_02_thread_local_state_8cc_03.html", [
-          [ "FrameUpdateTLSProxy", "structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_thread_local_state_8cc_03_1_1_frame_update_t_l_s_proxy.html", "structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_thread_local_state_8cc_03_1_1_frame_update_t_l_s_proxy" ],
-          [ "Private", "structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_thread_local_state_8cc_03_1_1_private.html", "structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_thread_local_state_8cc_03_1_1_private" ]
-        ] ],
         [ "Accumulator", "structmoonray_1_1mcrt__common_1_1_accumulator.html", "structmoonray_1_1mcrt__common_1_1_accumulator" ],
         [ "AccumulatorHandles", "structmoonray_1_1mcrt__common_1_1_accumulator_handles.html", "structmoonray_1_1mcrt__common_1_1_accumulator_handles" ],
         [ "AccumulatorResult", "structmoonray_1_1mcrt__common_1_1_accumulator_result.html", "structmoonray_1_1mcrt__common_1_1_accumulator_result" ],
@@ -324,20 +243,6 @@ var annotated_dup =
         [ "RenderFbArray", "classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array.html", "classmoonray_1_1mcrt__rt__merge__computation_1_1_render_fb_array" ]
       ] ],
       [ "pbr", "namespacemoonray_1_1pbr.html", [
-        [ "anonymous_namespace{DebugRay.cc}", "namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html", [
-          [ "IdRemapper", "structmoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03_1_1_id_remapper.html", "structmoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03_1_1_id_remapper" ]
-        ] ],
-        [ "anonymous_namespace{PbrTLState.cc}", "namespacemoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03.html", [
-          [ "PoolInfo", "structmoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03_1_1_pool_info.html", "structmoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03_1_1_pool_info" ],
-          [ "Private", "structmoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03_1_1_private.html", "structmoonray_1_1pbr_1_1anonymous__namespace_02_pbr_t_l_state_8cc_03_1_1_private" ]
-        ] ],
-        [ "anonymous_namespace{TestQmc.cc}", "namespacemoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03.html", [
-          [ "Generator02", "classmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_generator02.html", "classmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_generator02" ],
-          [ "GeneratorHalton", "classmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_generator_halton.html", "classmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_generator_halton" ],
-          [ "GeneratorPermutedHalton", "classmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_generator_permuted_halton.html", "classmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_generator_permuted_halton" ],
-          [ "MeasureStarDiscrepancySplit", "classmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_measure_star_discrepancy_split.html", "classmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_measure_star_discrepancy_split" ],
-          [ "SamplePoint2D", "structmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_sample_point2_d.html", "structmoonray_1_1pbr_1_1anonymous__namespace_02_test_qmc_8cc_03_1_1_sample_point2_d" ]
-        ] ],
         [ "detail", "namespacemoonray_1_1pbr_1_1detail.html", [
           [ "OddInt", "structmoonray_1_1pbr_1_1detail_1_1_odd_int.html", "structmoonray_1_1pbr_1_1detail_1_1_odd_int" ]
         ] ],
@@ -642,9 +547,6 @@ var annotated_dup =
         [ "TransformConcatenator", "classmoonray_1_1rt_1_1_transform_concatenator.html", "classmoonray_1_1rt_1_1_transform_concatenator" ]
       ] ],
       [ "shading", "namespacemoonray_1_1shading.html", [
-        [ "anonymous_namespace{ShadingTLState.cc}", "namespacemoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03.html", [
-          [ "Private", "structmoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03_1_1_private.html", "structmoonray_1_1shading_1_1anonymous__namespace_02_shading_t_l_state_8cc_03_1_1_private" ]
-        ] ],
         [ "unittest", "namespacemoonray_1_1shading_1_1unittest.html", [
           [ "TestBase", "classmoonray_1_1shading_1_1unittest_1_1_test_base.html", "classmoonray_1_1shading_1_1unittest_1_1_test_base" ],
           [ "TestDisplace", "classmoonray_1_1shading_1_1unittest_1_1_test_displace.html", "classmoonray_1_1shading_1_1unittest_1_1_test_displace" ],
@@ -812,9 +714,6 @@ var annotated_dup =
         [ "SocketStreambuf", "classmoonray_1_1stats_1_1_socket_streambuf.html", "classmoonray_1_1stats_1_1_socket_streambuf" ]
       ] ],
       [ "texture", "namespacemoonray_1_1texture.html", [
-        [ "anonymous_namespace{TextureTLState.cc}", "namespacemoonray_1_1texture_1_1anonymous__namespace_02_texture_t_l_state_8cc_03.html", [
-          [ "Private", "structmoonray_1_1texture_1_1anonymous__namespace_02_texture_t_l_state_8cc_03_1_1_private.html", "structmoonray_1_1texture_1_1anonymous__namespace_02_texture_t_l_state_8cc_03_1_1_private" ]
-        ] ],
         [ "TextureSampler", "classmoonray_1_1texture_1_1_texture_sampler.html", "classmoonray_1_1texture_1_1_texture_sampler" ],
         [ "TLState", "classmoonray_1_1texture_1_1_t_l_state.html", "classmoonray_1_1texture_1_1_t_l_state" ],
         [ "TypedVDBSampler", "classmoonray_1_1texture_1_1_typed_v_d_b_sampler.html", "classmoonray_1_1texture_1_1_typed_v_d_b_sampler" ],
@@ -889,10 +788,6 @@ var annotated_dup =
     ] ],
     [ "scene_rdl2", "namespacescene__rdl2.html", [
       [ "alloc", "namespacescene__rdl2_1_1alloc.html", [
-        [ "anonymous_namespace{TestMemPool.cc}", "namespacescene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03.html", [
-          [ "TLSProxy", "structscene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03_1_1_t_l_s_proxy.html", "structscene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03_1_1_t_l_s_proxy" ],
-          [ "TLState", "structscene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03_1_1_t_l_state.html", "structscene__rdl2_1_1alloc_1_1anonymous__namespace_02_test_mem_pool_8cc_03_1_1_t_l_state" ]
-        ] ],
         [ "AlignedAllocator", "classscene__rdl2_1_1alloc_1_1_aligned_allocator.html", "classscene__rdl2_1_1alloc_1_1_aligned_allocator" ],
         [ "AlignedAllocator< void, alignment >", "classscene__rdl2_1_1alloc_1_1_aligned_allocator_3_01void_00_01alignment_01_4.html", "classscene__rdl2_1_1alloc_1_1_aligned_allocator_3_01void_00_01alignment_01_4" ],
         [ "Arena", "classscene__rdl2_1_1alloc_1_1_arena.html", "classscene__rdl2_1_1alloc_1_1_arena" ],
@@ -1069,14 +964,6 @@ var annotated_dup =
         [ "McrtRtDispatchComputationDebugConsole", "classscene__rdl2_1_1mcrt__rt__dispatch__computation_1_1_mcrt_rt_dispatch_computation_debug_console.html", "classscene__rdl2_1_1mcrt__rt__dispatch__computation_1_1_mcrt_rt_dispatch_computation_debug_console" ]
       ] ],
       [ "pbr", "namespacescene__rdl2_1_1pbr.html", [
-        [ "anonymous_namespace{TestArray2D.cc}", "namespacescene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_array2_d_8cc_03.html", [
-          [ "Point2D", "structscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_array2_d_8cc_03_1_1_point2_d.html", "structscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_array2_d_8cc_03_1_1_point2_d" ]
-        ] ],
-        [ "anonymous_namespace{TestAtomicFloat.cc}", "namespacescene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03.html", [
-          [ "AtomicFloatAdditionTester", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_addition_tester.html", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_addition_tester" ],
-          [ "AtomicFloatCASTesterStrong", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_c_a_s_tester_strong.html", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_c_a_s_tester_strong" ],
-          [ "AtomicFloatCASTesterWeak", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_c_a_s_tester_weak.html", "classscene__rdl2_1_1pbr_1_1anonymous__namespace_02_test_atomic_float_8cc_03_1_1_atomic_float_c_a_s_tester_weak" ]
-        ] ],
         [ "detail", "namespacescene__rdl2_1_1pbr_1_1detail.html", [
           [ "TimeBomb", "classscene__rdl2_1_1pbr_1_1detail_1_1_time_bomb.html", "classscene__rdl2_1_1pbr_1_1detail_1_1_time_bomb" ]
         ] ],
@@ -1084,12 +971,6 @@ var annotated_dup =
         [ "TestAtomicFloat", "classscene__rdl2_1_1pbr_1_1_test_atomic_float.html", "classscene__rdl2_1_1pbr_1_1_test_atomic_float" ]
       ] ],
       [ "rdl2", "namespacescene__rdl2_1_1rdl2.html", [
-        [ "anonymous_namespace{AsciiReader.cc}", "namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03.html", [
-          [ "anonymous_namespace{AsciiReader.cc}", "namespacescene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1anonymous__namespace_02_ascii_reader_8cc_03.html", [
-            [ "Undef", "structscene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1anonymous__namespace473350620376eb28537bfe076655a45a.html", "structscene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1anonymous__namespace473350620376eb28537bfe076655a45a" ]
-          ] ],
-          [ "LuaPopGuard", "classscene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1_lua_pop_guard.html", "classscene__rdl2_1_1rdl2_1_1anonymous__namespace_02_ascii_reader_8cc_03_1_1_lua_pop_guard" ]
-        ] ],
         [ "detail", "namespacescene__rdl2_1_1rdl2_1_1detail.html", [
           [ "ContainerWrapper", "structscene__rdl2_1_1rdl2_1_1detail_1_1_container_wrapper.html", "structscene__rdl2_1_1rdl2_1_1detail_1_1_container_wrapper" ],
           [ "PointerToConst", "structscene__rdl2_1_1rdl2_1_1detail_1_1_pointer_to_const.html", "structscene__rdl2_1_1rdl2_1_1detail_1_1_pointer_to_const" ],
@@ -1197,9 +1078,6 @@ var annotated_dup =
         [ "UniformCDFDiscrete", "classscene__rdl2_1_1_statistical_test_suite_1_1_uniform_c_d_f_discrete.html", "classscene__rdl2_1_1_statistical_test_suite_1_1_uniform_c_d_f_discrete" ]
       ] ],
       [ "util", "namespacescene__rdl2_1_1util.html", [
-        [ "anonymous_namespace{Files.cc}", "namespacescene__rdl2_1_1util_1_1anonymous__namespace_02_files_8cc_03.html", [
-          [ "FreeDeleter", "structscene__rdl2_1_1util_1_1anonymous__namespace_02_files_8cc_03_1_1_free_deleter.html", "structscene__rdl2_1_1util_1_1anonymous__namespace_02_files_8cc_03_1_1_free_deleter" ]
-        ] ],
         [ "AlignedDeleter", "structscene__rdl2_1_1util_1_1_aligned_deleter.html", "structscene__rdl2_1_1util_1_1_aligned_deleter" ],
         [ "Args", "classscene__rdl2_1_1util_1_1_args.html", "classscene__rdl2_1_1util_1_1_args" ],
         [ "Array2D", "classscene__rdl2_1_1util_1_1_array2_d.html", "classscene__rdl2_1_1util_1_1_array2_d" ],

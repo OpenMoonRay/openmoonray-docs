@@ -1,15 +1,5 @@
 var namespacemoonray_1_1geom_1_1internal =
 [
-    [ "anonymous_namespace{AmorphousVolume.cc}", "namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_amorphous_volume_8cc_03.html", [
-      [ "getGridLuminance", "namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_amorphous_volume_8cc_03.html#ab8a6ef200c1f526e2b7823578df2b6f6", null ]
-    ] ],
-    [ "anonymous_namespace{VdbVolume.cc}", "namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_vdb_volume_8cc_03.html", [
-      [ "getGridLuminance", "namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_vdb_volume_8cc_03.html#aee759b6d0ae255b54789138d32633d51", null ]
-    ] ],
-    [ "anonymous_namespace{VdbVolume.h}", "namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_vdb_volume_8h_03.html", [
-      [ "computeEmissionDistributionImpl", "namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_vdb_volume_8h_03.html#ae3f3a98f4e6cd66ce20a186a5d85579a", null ]
-    ] ],
-    [ "anonymous_namespace{VolumeAssignmentTable.cc}", "namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03.html", "namespacemoonray_1_1geom_1_1internal_1_1anonymous__namespace_02_volume_assignment_table_8cc_03" ],
     [ "AmorphousVolume", "classmoonray_1_1geom_1_1internal_1_1_amorphous_volume.html", "classmoonray_1_1geom_1_1internal_1_1_amorphous_volume" ],
     [ "BezierSpanChains", "classmoonray_1_1geom_1_1internal_1_1_bezier_span_chains.html", "classmoonray_1_1geom_1_1internal_1_1_bezier_span_chains" ],
     [ "Box", "classmoonray_1_1geom_1_1internal_1_1_box.html", "classmoonray_1_1geom_1_1internal_1_1_box" ],

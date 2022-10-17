@@ -11,6 +11,5 @@ var _eval_attribute_8h =
     [ "evalToonNormal", "_eval_attribute_8h.html#a579ca4171b103f94bd55baa9f3a8c8b3", null ],
     [ "evalToonNormal", "_eval_attribute_8h.html#a1a58f8f73b041539bdd82c4b7d406915", null ],
     [ "evalVec2f", "_eval_attribute_8h.html#aeb6f33da475b1633861206aa35a0a815", null ],
-    [ "evalVec3f", "_eval_attribute_8h.html#a390ab287898c3414aa830fc2f9b41fa9", null ],
-    [ "getNormalMap", "_eval_attribute_8h.html#a3cc73eb33f30f71824b8d2f3da58b4ae", null ]
+    [ "evalVec3f", "_eval_attribute_8h.html#a390ab287898c3414aa830fc2f9b41fa9", null ]
 ];

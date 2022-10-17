@@ -2053,7 +2053,7 @@ template&lt;typename InputIt &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h_source.html#l00481">481</a> of file <a class="el" href="cmd_2point__generation__cmd_2_static_vector_8h_source.html">StaticVector.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  482</span>    {</div>
-<div class="line"><span class="lineno">  483</span>        <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> = <a class="code hl_function" href="class_static_vector.html#af469b6e06eb668bc5a795e0102fa69f4">iterator_distance</a>(first, last);</div>
+<div class="line"><span class="lineno">  483</span>        <span class="keyword">const</span> <span class="keyword">auto</span> count = <a class="code hl_function" href="class_static_vector.html#af469b6e06eb668bc5a795e0102fa69f4">iterator_distance</a>(first, last);</div>
 <div class="line"><span class="lineno">  484</span>        assert(<a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a> + count &lt; N);</div>
 <div class="line"><span class="lineno">  485</span> </div>
 <div class="line"><span class="lineno">  486</span>        <a class="code hl_typedef" href="class_static_vector.html#a476ecc4a7b452f6bed38155dcb6cddc3">iterator</a> pc(pos - <a class="code hl_function" href="class_static_vector.html#af221ada3d24b2a95bcc55220f95ca507">cbegin</a>() + <a class="code hl_function" href="class_static_vector.html#a4458533fc9e0da6972f26fd6d71f3eaa">begin</a>());</div>
@@ -2065,7 +2065,6 @@ template&lt;typename InputIt &gt; </div>
 <div class="line"><span class="lineno">  492</span>        }</div>
 <div class="line"><span class="lineno">  493</span>        <span class="keywordflow">return</span> pc;</div>
 <div class="line"><span class="lineno">  494</span>    }</div>
-<div class="ttc" id="anamespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03_html_ac002aa9e7f277e6c84e4fe1aeb5bb8cb"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">moonray::rndr::unittest::anonymous_namespace{TestOverlappingRegions.cc}::count</a></div><div class="ttdeci">void count(const OverlappingRegions&lt; sRegionOverlap, sTileWidth, sTileHeight, sDesiredRegionsPerDimension &gt; &amp;regions, int line)</div><div class="ttdef"><b>Definition:</b> <a href="_test_overlapping_regions_8cc_source.html#l00024">TestOverlappingRegions.cc:24</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2726,11 +2725,11 @@ template&lt;typename T , std::size_t N&gt; </div>
 <div class="line"><span class="lineno">  396</span>        <span class="keywordflow">if</span> (count &lt; <a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a>) {</div>
 <div class="line"><span class="lineno">  397</span>            std::for_each(<a class="code hl_function" href="class_static_vector.html#a4458533fc9e0da6972f26fd6d71f3eaa">begin</a>() + count, <a class="code hl_function" href="class_static_vector.html#aa9d7656b4bca0018ced75b2c79a929dc">end</a>(), [](T&amp; t) { t.~T(); });</div>
 <div class="line"><span class="lineno">  398</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (count &gt; <a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a>) {</div>
-<div class="line"><span class="lineno">  399</span>            <span class="keywordflow">for</span> ( ; <a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a> &lt; <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>; ++<a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a>) {</div>
+<div class="line"><span class="lineno">  399</span>            <span class="keywordflow">for</span> ( ; <a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a> &lt; count; ++<a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a>) {</div>
 <div class="line"><span class="lineno">  400</span>                <span class="keyword">new</span>(<a class="code hl_function" href="class_static_vector.html#a0d47a9b7221589f4ae7b31e27809ed24">get_address</a>(<a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a>)) T;</div>
 <div class="line"><span class="lineno">  401</span>            }</div>
 <div class="line"><span class="lineno">  402</span>        }</div>
-<div class="line"><span class="lineno">  403</span>        <a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a> = <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>;</div>
+<div class="line"><span class="lineno">  403</span>        <a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a> = count;</div>
 <div class="line"><span class="lineno">  404</span>    }</div>
 </div><!-- fragment -->
 </div>
@@ -2777,11 +2776,11 @@ template&lt;typename T , std::size_t N&gt; </div>
 <div class="line"><span class="lineno">  409</span>        <span class="keywordflow">if</span> (count &lt; <a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a>) {</div>
 <div class="line"><span class="lineno">  410</span>            std::for_each(<a class="code hl_function" href="class_static_vector.html#a4458533fc9e0da6972f26fd6d71f3eaa">begin</a>() + count, <a class="code hl_function" href="class_static_vector.html#aa9d7656b4bca0018ced75b2c79a929dc">end</a>(), [](T&amp; t) { t.~T(); });</div>
 <div class="line"><span class="lineno">  411</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (count &gt; <a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a>) {</div>
-<div class="line"><span class="lineno">  412</span>            <span class="keywordflow">for</span> ( ; <a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a> &lt; <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>; ++<a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a>) {</div>
+<div class="line"><span class="lineno">  412</span>            <span class="keywordflow">for</span> ( ; <a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a> &lt; count; ++<a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a>) {</div>
 <div class="line"><span class="lineno">  413</span>                <span class="keyword">new</span>(<a class="code hl_function" href="class_static_vector.html#a0d47a9b7221589f4ae7b31e27809ed24">get_address</a>(<a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a>)) T(value);</div>
 <div class="line"><span class="lineno">  414</span>            }</div>
 <div class="line"><span class="lineno">  415</span>        }</div>
-<div class="line"><span class="lineno">  416</span>        <a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a> = <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>;</div>
+<div class="line"><span class="lineno">  416</span>        <a class="code hl_variable" href="class_static_vector.html#a176ffd7119aa05a1d1b06dc6140e49c8">mSize</a> = count;</div>
 <div class="line"><span class="lineno">  417</span>    }</div>
 </div><!-- fragment -->
 </div>

@@ -91,7 +91,6 @@ $(document).ready(function(){initNavTree('rdl2__convert_8cc.html',''); initResiz
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">rdl2_convert.cc File Reference</div></div>
 </div><!--header-->
@@ -105,15 +104,8 @@ $(document).ready(function(){initNavTree('rdl2__convert_8cc.html',''); initResiz
 </div>
 <p><a href="rdl2__convert_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespaceanonymous__namespace_02rdl2__convert_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02rdl2__convert_8cc_03.html">anonymous_namespace{rdl2_convert.cc}</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab35a9cd088bbdda9c6299d1c0c253793"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02rdl2__convert_8cc_03.html#ab35a9cd088bbdda9c6299d1c0c253793">anonymous_namespace{rdl2_convert.cc}::printUsage</a> (std::ostream &amp;o, const char *name, const po::options_description &amp;options)</td></tr>
-<tr class="separator:ab35a9cd088bbdda9c6299d1c0c253793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rdl2__convert_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -174,7 +166,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   61</span>                                                     .<a class="code hl_function" href="blue__noise__pd__progressive__generation_8cc.html#aefacc19f4239e110a4853fcfbf75fe02">run</a>(), varsMap);</div>
 <div class="line"><span class="lineno">   62</span>        <span class="keywordflow">if</span> (varsMap.count(<span class="stringliteral">&quot;help&quot;</span>)) {</div>
 <div class="line"><span class="lineno">   63</span>            <span class="comment">// Dump a usage friendly message rather than an error message.</span></div>
-<div class="line"><span class="lineno">   64</span>            <a class="code hl_function" href="namespaceanonymous__namespace_02rdl2__convert_8cc_03.html#ab35a9cd088bbdda9c6299d1c0c253793">printUsage</a>(std::cout, argv[0], optionsDesc);</div>
+<div class="line"><span class="lineno">   64</span>            printUsage(std::cout, argv[0], optionsDesc);</div>
 <div class="line"><span class="lineno">   65</span>            <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
 <div class="line"><span class="lineno">   66</span>        }</div>
 <div class="line"><span class="lineno">   67</span>        po::notify(varsMap);</div>
@@ -186,7 +178,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   73</span>        <span class="comment">// Something went wrong while parsing the options. Print the error</span></div>
 <div class="line"><span class="lineno">   74</span>        <span class="comment">// message and a usage message.</span></div>
 <div class="line"><span class="lineno">   75</span>        <a class="code hl_function" href="classscene__rdl2_1_1logging_1_1_logger.html#a5309cb66c8fd71ffe2f43cdd3901930e">logging::Logger::error</a>(e.what());</div>
-<div class="line"><span class="lineno">   76</span>        <a class="code hl_function" href="namespaceanonymous__namespace_02rdl2__convert_8cc_03.html#ab35a9cd088bbdda9c6299d1c0c253793">printUsage</a>(std::cerr, argv[0], optionsDesc);</div>
+<div class="line"><span class="lineno">   76</span>        printUsage(std::cerr, argv[0], optionsDesc);</div>
 <div class="line"><span class="lineno">   77</span>        <span class="keywordflow">return</span> EXIT_FAILURE;</div>
 <div class="line"><span class="lineno">   78</span>    }</div>
 <div class="line"><span class="lineno">   79</span> </div>
@@ -217,7 +209,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_context_html"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_context.html">scene_rdl2::rdl2::SceneContext</a></div><div class="ttdef"><b>Definition:</b> <a href="_scene_context_8h_source.html#l00058">SceneContext.h:59</a></div></div>
 <div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_context_html_a61e8490e1951a1260be6a92166609290"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#a61e8490e1951a1260be6a92166609290">scene_rdl2::rdl2::SceneContext::setProxyModeEnabled</a></div><div class="ttdeci">finline void setProxyModeEnabled(bool enabled)</div><div class="ttdef"><b>Definition:</b> <a href="_scene_context_8h_source.html#l00447">SceneContext.h:447</a></div></div>
 <div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_scene_context_html_abdf667823af6bf872e38f200b072f09b"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_scene_context.html#abdf667823af6bf872e38f200b072f09b">scene_rdl2::rdl2::SceneContext::setDsoPath</a></div><div class="ttdeci">finline void setDsoPath(const std::string &amp;dsoPath)</div><div class="ttdef"><b>Definition:</b> <a href="_scene_context_8h_source.html#l00435">SceneContext.h:435</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02rdl2__convert_8cc_03_html_ab35a9cd088bbdda9c6299d1c0c253793"><div class="ttname"><a href="namespaceanonymous__namespace_02rdl2__convert_8cc_03.html#ab35a9cd088bbdda9c6299d1c0c253793">anonymous_namespace{rdl2_convert.cc}::printUsage</a></div><div class="ttdeci">void printUsage(std::ostream &amp;o, const char *name, const po::options_description &amp;options)</div><div class="ttdef"><b>Definition:</b> <a href="rdl2__convert_8cc_source.html#l00025">rdl2_convert.cc:25</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1rdl2_html_a51d50085f471a74fb11dbf7ee4215fd6"><div class="ttname"><a href="namespacescene__rdl2_1_1rdl2.html#a51d50085f471a74fb11dbf7ee4215fd6">scene_rdl2::rdl2::readSceneFromFile</a></div><div class="ttdeci">void readSceneFromFile(const std::string &amp;filePath, SceneContext &amp;context)</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8cc_source.html#l00038">Utils.cc:38</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1rdl2_html_a72e385c6a85b6a4c547435081d19a2f7"><div class="ttname"><a href="namespacescene__rdl2_1_1rdl2.html#a72e385c6a85b6a4c547435081d19a2f7">scene_rdl2::rdl2::writeSceneToFile</a></div><div class="ttdeci">void writeSceneToFile(const SceneContext &amp;context, const std::string &amp;filePath, bool deltaEncoding, bool skipDefaults, size_t elemsPerLine)</div><div class="ttdef"><b>Definition:</b> <a href="_utils_8cc_source.html#l00062">Utils.cc:62</a></div></div>
 </div><!-- fragment -->

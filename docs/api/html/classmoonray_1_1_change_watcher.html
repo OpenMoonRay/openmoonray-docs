@@ -227,7 +227,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  121</span> </div>
 <div class="line"><span class="lineno">  122</span>    <span class="comment">// We set up inotify in non-blocking mode, so this read should never block.</span></div>
 <div class="line"><span class="lineno">  123</span>tryread:</div>
-<div class="line"><span class="lineno">  124</span>    readLen = <a class="code hl_function" href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a429e5dad64b881d2fdccdef90364d5cd">read</a>(<a class="code hl_variable" href="classmoonray_1_1_change_watcher.html#a62c1dffbfa63426f8be78bdda77867eb">mNotifyDesc</a>, &amp;<a class="code hl_variable" href="classmoonray_1_1_change_watcher.html#a4db01ec6de49c52bb50df2f2158872aa">mReadBuffer</a>[0], <a class="code hl_variable" href="classmoonray_1_1_change_watcher.html#a4db01ec6de49c52bb50df2f2158872aa">mReadBuffer</a>.size());</div>
+<div class="line"><span class="lineno">  124</span>    readLen = read(<a class="code hl_variable" href="classmoonray_1_1_change_watcher.html#a62c1dffbfa63426f8be78bdda77867eb">mNotifyDesc</a>, &amp;<a class="code hl_variable" href="classmoonray_1_1_change_watcher.html#a4db01ec6de49c52bb50df2f2158872aa">mReadBuffer</a>[0], <a class="code hl_variable" href="classmoonray_1_1_change_watcher.html#a4db01ec6de49c52bb50df2f2158872aa">mReadBuffer</a>.size());</div>
 <div class="line"><span class="lineno">  125</span>    <span class="keywordflow">if</span> (readLen &lt; 0) {</div>
 <div class="line"><span class="lineno">  126</span>        <span class="keywordflow">if</span> (errno == EAGAIN) {</div>
 <div class="line"><span class="lineno">  127</span>            <span class="comment">// No notification, so nothing has changed since the last read().</span></div>
@@ -288,7 +288,6 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  182</span>    <span class="keywordflow">return</span> changeOccurred;</div>
 <div class="line"><span class="lineno">  183</span>}</div>
 <div class="ttc" id="aimmintrin__emu_8h_html_a28b2522712ac6b9451f5228ea919848f"><div class="ttname"><a href="immintrin__emu_8h.html#a28b2522712ac6b9451f5228ea919848f">offset</a></div><div class="ttdeci">__emu__m256d float double __m128 __m128 int offset</div><div class="ttdef"><b>Definition:</b> <a href="immintrin__emu_8h_source.html#l00590">immintrin_emu.h:590</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03_html_a429e5dad64b881d2fdccdef90364d5cd"><div class="ttname"><a href="namespacemoonray_1_1pbr_1_1anonymous__namespace_02_debug_ray_8cc_03.html#a429e5dad64b881d2fdccdef90364d5cd">moonray::pbr::anonymous_namespace{DebugRay.cc}::read</a></div><div class="ttdeci">finline bool read(FILE *file, T *dest)</div><div class="ttdef"><b>Definition:</b> <a href="_debug_ray_8cc_source.html#l00079">DebugRay.cc:79</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -190,30 +190,30 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   43</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> k : optionalKeys) {</div>
 <div class="line"><span class="lineno">   44</span>        attrSizeMap[k.getSize()].push_back(k);</div>
 <div class="line"><span class="lineno">   45</span>    }</div>
-<div class="line"><span class="lineno">   46</span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a> = 0;</div>
+<div class="line"><span class="lineno">   46</span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a> = 0;</div>
 <div class="line"><span class="lineno">   47</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> rit = attrSizeMap.rbegin(); rit != attrSizeMap.rend(); ++rit) {</div>
 <div class="line"><span class="lineno">   48</span>        <span class="keywordtype">size_t</span> attrSize = rit-&gt;first;</div>
 <div class="line"><span class="lineno">   49</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> k: rit-&gt;second) {</div>
-<div class="line"><span class="lineno">   50</span>            mKeyOffset[k] = <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a>;</div>
+<div class="line"><span class="lineno">   50</span>            mKeyOffset[k] = <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a>;</div>
 <div class="line"><span class="lineno">   51</span>            <span class="keywordflow">if</span> (k.hasDerivatives()) {</div>
 <div class="line"><span class="lineno">   52</span>                <span class="comment">// for an attribute f we need to store f, dfds, dfdt</span></div>
-<div class="line"><span class="lineno">   53</span>                <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a> += 3 * attrSize;</div>
+<div class="line"><span class="lineno">   53</span>                <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a> += 3 * attrSize;</div>
 <div class="line"><span class="lineno">   54</span>                mDifferentialAttributes.push_back(k);</div>
 <div class="line"><span class="lineno">   55</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   56</span>                <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a> += attrSize;</div>
+<div class="line"><span class="lineno">   56</span>                <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a> += attrSize;</div>
 <div class="line"><span class="lineno">   57</span>            }</div>
 <div class="line"><span class="lineno">   58</span>        }</div>
 <div class="line"><span class="lineno">   59</span>    }</div>
-<div class="line"><span class="lineno">   60</span>    <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a> = <a class="code hl_function" href="namespacescene__rdl2_1_1util.html#a422b183840fb2cdf3d4bc6f2e3700526">util::alignUp</a>(totalSize, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><span class="lineno">   60</span>    <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a> = <a class="code hl_function" href="namespacescene__rdl2_1_1util.html#a422b183840fb2cdf3d4bc6f2e3700526">util::alignUp</a>(totalSize, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
 <div class="line"><span class="lineno">   61</span> </div>
-<div class="line"><span class="lineno">   62</span>    mTotalSize = <a class="code hl_function" href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">totalSize</a>;</div>
+<div class="line"><span class="lineno">   62</span>    mTotalSize = <a class="code hl_function" href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">totalSize</a>;</div>
 <div class="line"><span class="lineno">   63</span>    mRequiredAttributes.insert(mRequiredAttributes.begin(),</div>
 <div class="line"><span class="lineno">   64</span>        requiredKeys.begin(), requiredKeys.end());</div>
 <div class="line"><span class="lineno">   65</span>    mOptionalAttributes.insert(mOptionalAttributes.begin(),</div>
 <div class="line"><span class="lineno">   66</span>        optionalKeys.begin(), optionalKeys.end());</div>
 <div class="line"><span class="lineno">   67</span>}</div>
-<div class="ttc" id="anamespaceanonymous__namespace_02_resume_history_meta_data_8cc_03_html_ac9892f19154ee73f5bb753a99609290e"><div class="ttname"><a href="namespaceanonymous__namespace_02_resume_history_meta_data_8cc_03.html#ac9892f19154ee73f5bb753a99609290e">anonymous_namespace{ResumeHistoryMetaData.cc}::totalSize</a></div><div class="ttdeci">std::size_t totalSize()</div><div class="ttdef"><b>Definition:</b> <a href="_resume_history_meta_data_8cc_source.html#l00050">ResumeHistoryMetaData.cc:50</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1math_html_a564409890eff3a37c8edc00b64159607"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#a564409890eff3a37c8edc00b64159607">scene_rdl2::math::max</a></div><div class="ttdeci">__forceinline const Color max(const Color &amp;a, const Color &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_color_8h_source.html#l00215">Color.h:215</a></div></div>
+<div class="ttc" id="anamespacescene__rdl2_1_1str__util_1_1detail_html_a5c0fa7a0375e7b7f647a69e509ab516c"><div class="ttname"><a href="namespacescene__rdl2_1_1str__util_1_1detail.html#a5c0fa7a0375e7b7f647a69e509ab516c">scene_rdl2::str_util::detail::totalSize</a></div><div class="ttdeci">std::size_t totalSize()</div><div class="ttdef"><b>Definition:</b> <a href="_str_util_8h_source.html#l00031">StrUtil.h:31</a></div></div>
 <div class="ttc" id="anamespacescene__rdl2_1_1util_html_a422b183840fb2cdf3d4bc6f2e3700526"><div class="ttname"><a href="namespacescene__rdl2_1_1util.html#a422b183840fb2cdf3d4bc6f2e3700526">scene_rdl2::util::alignUp</a></div><div class="ttdeci">T alignUp(T v, T alignment)</div><div class="ttdef"><b>Definition:</b> <a href="_bit_utils_8h_source.html#l00040">BitUtils.h:40</a></div></div>
 </div><!-- fragment -->
 </div>

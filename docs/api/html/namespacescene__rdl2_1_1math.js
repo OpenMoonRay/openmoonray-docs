@@ -1,9 +1,5 @@
 var namespacescene__rdl2_1_1math =
 [
-    [ "anonymous_namespace{ColorSpace.cc}", "namespacescene__rdl2_1_1math_1_1anonymous__namespace_02_color_space_8cc_03.html", [
-      [ "maxRgbChannel", "namespacescene__rdl2_1_1math_1_1anonymous__namespace_02_color_space_8cc_03.html#a2398ca2c04f2402ac2a732950b60a4fa", null ],
-      [ "rgbToHue", "namespacescene__rdl2_1_1math_1_1anonymous__namespace_02_color_space_8cc_03.html#a9cae9ef435eb131f18bea028a5b6dcc9", null ]
-    ] ],
     [ "compile_time", "namespacescene__rdl2_1_1math_1_1compile__time.html", "namespacescene__rdl2_1_1math_1_1compile__time" ],
     [ "Array12f", "structscene__rdl2_1_1math_1_1_array12f.html", "structscene__rdl2_1_1math_1_1_array12f" ],
     [ "BaseViewport", "structscene__rdl2_1_1math_1_1_base_viewport.html", "structscene__rdl2_1_1math_1_1_base_viewport" ],

@@ -540,8 +540,8 @@ Private Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  103</span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> u, v;</div>
 <div class="line"><span class="lineno">  104</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a374fee2659397a01f055786041deed85">generateSamples</a>(sampleCount, u, v);</div>
 <div class="line"><span class="lineno">  105</span> </div>
-<div class="line"><span class="lineno">  106</span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> x, red, grn, blu;</div>
-<div class="line"><span class="lineno">  107</span>    x.resize(sampleCount);</div>
+<div class="line"><span class="lineno">  106</span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, red, grn, blu;</div>
+<div class="line"><span class="lineno">  107</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>.resize(sampleCount);</div>
 <div class="line"><span class="lineno">  108</span>    red.resize(sampleCount);</div>
 <div class="line"><span class="lineno">  109</span>    grn.resize(sampleCount);</div>
 <div class="line"><span class="lineno">  110</span>    blu.resize(sampleCount);</div>
@@ -554,15 +554,16 @@ Private Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">  117</span>        v[i] = xi[1];</div>
 <div class="line"><span class="lineno">  118</span> </div>
 <div class="line"><span class="lineno">  119</span>        <a class="code hl_typedef" href="namespaceispc.html#a03763f6969b47cdce2092f8b178cf840">Color</a> rd = bssrdf.eval(r);</div>
-<div class="line"><span class="lineno">  120</span>        x[i] = r;</div>
+<div class="line"><span class="lineno">  120</span>        <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>[i] = r;</div>
 <div class="line"><span class="lineno">  121</span>        red[i] = rd[0];</div>
 <div class="line"><span class="lineno">  122</span>        grn[i] = rd[1];</div>
 <div class="line"><span class="lineno">  123</span>        blu[i] = rd[2];</div>
 <div class="line"><span class="lineno">  124</span>    }</div>
 <div class="line"><span class="lineno">  125</span> </div>
 <div class="line"><span class="lineno">  126</span>    std::string prefix = std::string(<span class="stringliteral">&quot;mat/testBssrdfDistribution-&quot;</span>) + suffix;</div>
-<div class="line"><span class="lineno">  127</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5f942f63225c4d2486241d1a640626e6">printDistribution</a>(u, v, x, red, grn, blu, prefix);</div>
+<div class="line"><span class="lineno">  127</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5f942f63225c4d2486241d1a640626e6">printDistribution</a>(u, v, <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, red, grn, blu, prefix);</div>
 <div class="line"><span class="lineno">  128</span>}</div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a374fee2659397a01f055786041deed85"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a374fee2659397a01f055786041deed85">moonray::pbr::generateSamples</a></div><div class="ttdeci">static void generateSamples(const int sampleCount, uint32_t scramble[], FloatArray &amp;u, FloatArray &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_test_bssrdf_8cc_source.html#l00031">TestBssrdf.cc:31</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a5f942f63225c4d2486241d1a640626e6"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a5f942f63225c4d2486241d1a640626e6">moonray::pbr::printDistribution</a></div><div class="ttdeci">static void printDistribution(const FloatArray &amp;u, const FloatArray &amp;v, const FloatArray &amp;x, const FloatArray &amp;red, const FloatArray &amp;grn, const FloatArray &amp;blu, const std::string &amp;prefix)</div><div class="ttdef"><b>Definition:</b> <a href="_test_bssrdf_8cc_source.html#l00051">TestBssrdf.cc:51</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_aa46c7dda5bcfa71e457a8249f27cf96f"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">moonray::pbr::FloatArray</a></div><div class="ttdeci">std::vector&lt; float, scene_rdl2::alloc::AlignedAllocator&lt; float, SIMD_MEMORY_ALIGNMENT &gt; &gt; FloatArray</div><div class="ttdef"><b>Definition:</b> <a href="_test_util_8h_source.html#l00067">TestUtil.h:67</a></div></div>
@@ -614,17 +615,17 @@ Private Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   84</span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> u, v;</div>
 <div class="line"><span class="lineno">   85</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a374fee2659397a01f055786041deed85">generateSamples</a>(sampleCount, u, v);</div>
 <div class="line"><span class="lineno">   86</span> </div>
-<div class="line"><span class="lineno">   87</span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> x, red, grn, blu;</div>
-<div class="line"><span class="lineno">   88</span>    x.resize(sampleCount);</div>
+<div class="line"><span class="lineno">   87</span>    <a class="code hl_typedef" href="namespacemoonray_1_1pbr.html#aa46c7dda5bcfa71e457a8249f27cf96f">FloatArray</a> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, red, grn, blu;</div>
+<div class="line"><span class="lineno">   88</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>.resize(sampleCount);</div>
 <div class="line"><span class="lineno">   89</span>    red.resize(sampleCount);</div>
 <div class="line"><span class="lineno">   90</span>    grn.resize(sampleCount);</div>
 <div class="line"><span class="lineno">   91</span>    blu.resize(sampleCount);</div>
 <div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>    ispc::TestBssrdf_distribution(&amp;bssrdfv, sampleCount, &amp;u[0], &amp;v[0], &amp;x[0],</div>
+<div class="line"><span class="lineno">   93</span>    ispc::TestBssrdf_distribution(&amp;bssrdfv, sampleCount, &amp;u[0], &amp;v[0], &amp;<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>[0],</div>
 <div class="line"><span class="lineno">   94</span>                                  &amp;red[0], &amp;grn[0], &amp;blu[0]);</div>
 <div class="line"><span class="lineno">   95</span> </div>
 <div class="line"><span class="lineno">   96</span>    std::string prefix = std::string(<span class="stringliteral">&quot;mat/testBssrdfvDistribution-&quot;</span>) + suffix;</div>
-<div class="line"><span class="lineno">   97</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5f942f63225c4d2486241d1a640626e6">printDistribution</a>(u, v, x, red, grn, blu, prefix);</div>
+<div class="line"><span class="lineno">   97</span>    <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a5f942f63225c4d2486241d1a640626e6">printDistribution</a>(u, v, <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, red, grn, blu, prefix);</div>
 <div class="line"><span class="lineno">   98</span>}</div>
 </div><!-- fragment -->
 </div>

@@ -91,7 +91,6 @@ $(document).ready(function(){initNavTree('rdl2__localize_8cc.html',''); initResi
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">rdl2_localize.cc File Reference</div></div>
 </div><!--header-->
@@ -106,15 +105,8 @@ $(document).ready(function(){initNavTree('rdl2__localize_8cc.html',''); initResi
 </div>
 <p><a href="rdl2__localize_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespaceanonymous__namespace_02rdl2__localize_8cc_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02rdl2__localize_8cc_03.html">anonymous_namespace{rdl2_localize.cc}</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4741ff964651e6db764f1686d3c221ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02rdl2__localize_8cc_03.html#a4741ff964651e6db764f1686d3c221ea">anonymous_namespace{rdl2_localize.cc}::printUsage</a> (std::ostream &amp;o, const char *name, const po::options_description &amp;options)</td></tr>
-<tr class="separator:a4741ff964651e6db764f1686d3c221ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rdl2__localize_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -176,7 +168,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   64</span>                                                     .<a class="code hl_function" href="blue__noise__pd__progressive__generation_8cc.html#aefacc19f4239e110a4853fcfbf75fe02">run</a>(), varsMap);</div>
 <div class="line"><span class="lineno">   65</span>        <span class="keywordflow">if</span> (varsMap.count(<span class="stringliteral">&quot;help&quot;</span>)) {</div>
 <div class="line"><span class="lineno">   66</span>            <span class="comment">// Dump a usage friendly message rather than an error message.</span></div>
-<div class="line"><span class="lineno">   67</span>            <a class="code hl_function" href="namespaceanonymous__namespace_02rdl2__localize_8cc_03.html#a4741ff964651e6db764f1686d3c221ea">printUsage</a>(std::cout, argv[0], optionsDesc);</div>
+<div class="line"><span class="lineno">   67</span>            printUsage(std::cout, argv[0], optionsDesc);</div>
 <div class="line"><span class="lineno">   68</span>            <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
 <div class="line"><span class="lineno">   69</span>        }</div>
 <div class="line"><span class="lineno">   70</span>        </div>
@@ -192,7 +184,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   80</span>        <span class="comment">// Something went wrong while parsing the options. Print the error</span></div>
 <div class="line"><span class="lineno">   81</span>        <span class="comment">// message and a usage message.</span></div>
 <div class="line"><span class="lineno">   82</span>        <a class="code hl_function" href="classscene__rdl2_1_1logging_1_1_logger.html#a5309cb66c8fd71ffe2f43cdd3901930e">scene_rdl2::logging::Logger::error</a>(e.what());</div>
-<div class="line"><span class="lineno">   83</span>        <a class="code hl_function" href="namespaceanonymous__namespace_02rdl2__localize_8cc_03.html#a4741ff964651e6db764f1686d3c221ea">printUsage</a>(std::cerr, argv[0], optionsDesc);</div>
+<div class="line"><span class="lineno">   83</span>        printUsage(std::cerr, argv[0], optionsDesc);</div>
 <div class="line"><span class="lineno">   84</span>        <span class="keywordflow">return</span> EXIT_FAILURE;</div>
 <div class="line"><span class="lineno">   85</span>    }</div>
 <div class="line"><span class="lineno">   86</span> </div>
@@ -215,7 +207,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="aclassscene__rdl2_1_1logging_1_1_logger_html_a5309cb66c8fd71ffe2f43cdd3901930e"><div class="ttname"><a href="classscene__rdl2_1_1logging_1_1_logger.html#a5309cb66c8fd71ffe2f43cdd3901930e">scene_rdl2::logging::Logger::error</a></div><div class="ttdeci">static void error(const T &amp;... value)</div><div class="ttdef"><b>Definition:</b> <a href="logging_8h_source.html#l00102">logging.h:102</a></div></div>
 <div class="ttc" id="aclassscene__rdl2_1_1logging_1_1_logger_html_a962af6c047c556943707102559423ee0"><div class="ttname"><a href="classscene__rdl2_1_1logging_1_1_logger.html#a962af6c047c556943707102559423ee0">scene_rdl2::logging::Logger::init</a></div><div class="ttdeci">static void init()</div><div class="ttdef"><b>Definition:</b> <a href="logging_8cc_source.html#l00237">logging.cc:237</a></div></div>
 <div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_dso_finder_html_af3a8d19f400adacefc9ca8b8c3c10619"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_dso_finder.html#af3a8d19f400adacefc9ca8b8c3c10619">scene_rdl2::rdl2::DsoFinder::parseDsoPath</a></div><div class="ttdeci">static std::string parseDsoPath(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="_dso_finder_8cc_source.html#l00104">DsoFinder.cc:104</a></div></div>
-<div class="ttc" id="anamespaceanonymous__namespace_02rdl2__localize_8cc_03_html_a4741ff964651e6db764f1686d3c221ea"><div class="ttname"><a href="namespaceanonymous__namespace_02rdl2__localize_8cc_03.html#a4741ff964651e6db764f1686d3c221ea">anonymous_namespace{rdl2_localize.cc}::printUsage</a></div><div class="ttdeci">void printUsage(std::ostream &amp;o, const char *name, const po::options_description &amp;options)</div><div class="ttdef"><b>Definition:</b> <a href="rdl2__localize_8cc_source.html#l00027">rdl2_localize.cc:27</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

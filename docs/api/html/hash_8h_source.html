@@ -108,43 +108,43 @@ $(document).ready(function(){initNavTree('hash_8h_source.html',''); initResizabl
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>pbr {</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// From https://github.com/skeeto/hash-prospector</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#a674caefa6eb4060fbb12c79b9ea09436">   16</a></span><span class="keyword">inline</span> uint32_t <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a674caefa6eb4060fbb12c79b9ea09436">triple32inc</a>(uint32_t x)</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#a674caefa6eb4060fbb12c79b9ea09436">   16</a></span><span class="keyword">inline</span> uint32_t <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a674caefa6eb4060fbb12c79b9ea09436">triple32inc</a>(uint32_t <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    ++x;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    x ^= x &gt;&gt; 17;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    x *= 0xed5ad4bb;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    x ^= x &gt;&gt; 11;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    x *= 0xac4c1b51;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    x ^= x &gt;&gt; 15;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    x *= 0x31848bab;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    x ^= x &gt;&gt; 14;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">return</span> x;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    ++<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> ^= <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &gt;&gt; 17;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> *= 0xed5ad4bb;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> ^= <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &gt;&gt; 11;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> *= 0xac4c1b51;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> ^= <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &gt;&gt; 15;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> *= 0x31848bab;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> ^= <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &gt;&gt; 14;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// From https://github.com/skeeto/hash-prospector</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// inverse</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#a1e58c891e7b93bf7c17e7f1f6d8a35ef">   31</a></span><span class="keyword">inline</span> uint32_t <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a1e58c891e7b93bf7c17e7f1f6d8a35ef">triple32inc_inverse</a>(uint32_t x)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#a1e58c891e7b93bf7c17e7f1f6d8a35ef">   31</a></span><span class="keyword">inline</span> uint32_t <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a1e58c891e7b93bf7c17e7f1f6d8a35ef">triple32inc_inverse</a>(uint32_t <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    x ^= (x &gt;&gt; 14) ^ (x &gt;&gt; 28);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    x *= 0x32b21703;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    x ^= (x &gt;&gt; 15) ^ (x &gt;&gt; 30);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    x *= 0x469e0db1;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    x ^= (x &gt;&gt; 11) ^ (x &gt;&gt; 22);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    x *= 0x79a85073;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    x ^= x &gt;&gt; 17;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    --x;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">return</span> x;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> ^= (<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &gt;&gt; 14) ^ (<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &gt;&gt; 28);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> *= 0x32b21703;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> ^= (<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &gt;&gt; 15) ^ (<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &gt;&gt; 30);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> *= 0x469e0db1;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> ^= (<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &gt;&gt; 11) ^ (<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &gt;&gt; 22);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> *= 0x79a85073;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> ^= <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> &gt;&gt; 17;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    --<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// From https://github.com/skeeto/hash-prospector</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// No multiplication (-Imn6)</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// bias = 0.023840118344741465</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#a027706b0d6697669a88462f5b29a43a4">   47</a></span><span class="keyword">inline</span> uint16_t <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a027706b0d6697669a88462f5b29a43a4">hash16_s6</a>(uint16_t x)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1pbr.html#a027706b0d6697669a88462f5b29a43a4">   47</a></span><span class="keyword">inline</span> uint16_t <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a027706b0d6697669a88462f5b29a43a4">hash16_s6</a>(uint16_t <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    x += x &lt;&lt; 7; x ^= x &gt;&gt; 8;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    x += x &lt;&lt; 3; x ^= x &gt;&gt; 2;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    x += x &lt;&lt; 4; x ^= x &gt;&gt; 8;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">return</span> x;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> += x &lt;&lt; 7; x ^= x &gt;&gt; 8;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> += x &lt;&lt; 3; x ^= x &gt;&gt; 2;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> += x &lt;&lt; 4; x ^= x &gt;&gt; 8;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>} <span class="comment">// namespace pbr</span></div>
@@ -154,6 +154,7 @@ $(document).ready(function(){initNavTree('hash_8h_source.html',''); initResizabl
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">// TM and (c) 2018-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">// duly authorized representative is prohibited.</span></div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a027706b0d6697669a88462f5b29a43a4"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a027706b0d6697669a88462f5b29a43a4">moonray::pbr::hash16_s6</a></div><div class="ttdeci">uint16_t hash16_s6(uint16_t x)</div><div class="ttdef"><b>Definition:</b> <a href="hash_8h_source.html#l00047">hash.h:47</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a1e58c891e7b93bf7c17e7f1f6d8a35ef"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a1e58c891e7b93bf7c17e7f1f6d8a35ef">moonray::pbr::triple32inc_inverse</a></div><div class="ttdeci">uint32_t triple32inc_inverse(uint32_t x)</div><div class="ttdef"><b>Definition:</b> <a href="hash_8h_source.html#l00031">hash.h:31</a></div></div>
 <div class="ttc" id="anamespacemoonray_1_1pbr_html_a674caefa6eb4060fbb12c79b9ea09436"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a674caefa6eb4060fbb12c79b9ea09436">moonray::pbr::triple32inc</a></div><div class="ttdeci">uint32_t triple32inc(uint32_t x)</div><div class="ttdef"><b>Definition:</b> <a href="hash_8h_source.html#l00016">hash.h:16</a></div></div>

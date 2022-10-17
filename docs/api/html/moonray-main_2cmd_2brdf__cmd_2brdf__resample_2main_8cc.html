@@ -178,8 +178,8 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="moonray-main_2cmd_2brdf__cmd_2brdf__resample_2main_8cc_source.html#l00098">98</a> of file <a class="el" href="moonray-main_2cmd_2brdf__cmd_2brdf__resample_2main_8cc_source.html">main.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   99</span>{</div>
-<div class="line"><span class="lineno">  100</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> = 6;</div>
-<div class="line"><span class="lineno">  101</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> localWo[<a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>][3] = {</div>
+<div class="line"><span class="lineno">  100</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> count = 6;</div>
+<div class="line"><span class="lineno">  101</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> localWo[count][3] = {</div>
 <div class="line"><span class="lineno">  102</span>            {0.345851, 0.197468, 0.917275},</div>
 <div class="line"><span class="lineno">  103</span>            {0.3796, 0.192993, 0.904797},</div>
 <div class="line"><span class="lineno">  104</span>            {0.413411, 0.189192, 0.890672},</div>
@@ -187,7 +187,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  106</span>            {0.477533, 0.180847, 0.8598},</div>
 <div class="line"><span class="lineno">  107</span>            {0.510601, 0.178477, 0.84109}</div>
 <div class="line"><span class="lineno">  108</span>    };</div>
-<div class="line"><span class="lineno">  109</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> localWi[<a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>][3] = {</div>
+<div class="line"><span class="lineno">  109</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> localWi[count][3] = {</div>
 <div class="line"><span class="lineno">  110</span>            {-0.518066, -0.202658, 0.830985},</div>
 <div class="line"><span class="lineno">  111</span>            {-0.484293, -0.204995, 0.850551},</div>
 <div class="line"><span class="lineno">  112</span>            {-0.453608, -0.189106, 0.870907},</div>
@@ -216,7 +216,6 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  135</span>}</div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_isotropic_bsdf_table_html_ae4d76ae01e768d99722233b435fd9df1"><div class="ttname"><a href="classmoonray_1_1shading_1_1_isotropic_bsdf_table.html#ae4d76ae01e768d99722233b435fd9df1">moonray::shading::IsotropicBsdfTable::getBsdf</a></div><div class="ttdeci">scene_rdl2::math::Color getBsdf(const scene_rdl2::math::Vec3f &amp;localWo, const scene_rdl2::math::Vec3f &amp;localWi, bool useLerp=false) const</div><div class="ttdef"><b>Definition:</b> <a href="_bsdf_table_8cc_source.html#l00326">BsdfTable.cc:326</a></div></div>
 <div class="ttc" id="aclassmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice_html_a516d98750c192b4c7f07de43ddb722f1"><div class="ttname"><a href="classmoonray_1_1shading_1_1_light_stage_cylinder_bsdf_slice.html#a516d98750c192b4c7f07de43ddb722f1">moonray::shading::LightStageCylinderBsdfSlice::getBsdf</a></div><div class="ttdeci">scene_rdl2::math::Color getBsdf(const scene_rdl2::math::Vec3f &amp;localWo, const scene_rdl2::math::Vec3f &amp;localWi, const scene_rdl2::math::Vec2f &amp;smoothThetaWoRange, bool useLerp=true) const</div><div class="ttdef"><b>Definition:</b> <a href="_light_stage_8cc_source.html#l01210">LightStage.cc:1210</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03_html_ac002aa9e7f277e6c84e4fe1aeb5bb8cb"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">moonray::rndr::unittest::anonymous_namespace{TestOverlappingRegions.cc}::count</a></div><div class="ttdeci">void count(const OverlappingRegions&lt; sRegionOverlap, sTileWidth, sTileHeight, sDesiredRegionsPerDimension &gt; &amp;regions, int line)</div><div class="ttdef"><b>Definition:</b> <a href="_test_overlapping_regions_8cc_source.html#l00024">TestOverlappingRegions.cc:24</a></div></div>
 <div class="ttc" id="astructscene__rdl2_1_1math_1_1_color_html"><div class="ttname"><a href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a></div><div class="ttdoc">RGB Color Class.</div><div class="ttdef"><b>Definition:</b> <a href="_color_8h_source.html#l00139">Color.h:140</a></div></div>
 <div class="ttc" id="astructscene__rdl2_1_1math_1_1_vec2_html"><div class="ttname"><a href="structscene__rdl2_1_1math_1_1_vec2.html">scene_rdl2::math::Vec2&lt; float &gt;</a></div></div>
 <div class="ttc" id="astructscene__rdl2_1_1math_1_1_vec3_html"><div class="ttname"><a href="structscene__rdl2_1_1math_1_1_vec3.html">scene_rdl2::math::Vec3&lt; float &gt;</a></div></div>

@@ -737,16 +737,15 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_bsdf_8cc_source.html#l00085">85</a> of file <a class="el" href="_bsdf_8cc_source.html">Bsdf.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   86</span>{</div>
-<div class="line"><span class="lineno">   87</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> = 0;</div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordtype">int</span> count = 0;</div>
 <div class="line"><span class="lineno">   88</span> </div>
 <div class="line"><span class="lineno">   89</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a> = <a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>.<a class="code hl_function" href="classmoonray_1_1util_1_1_static_vector.html#a89ee63742ced2a326750d1d6369ca349">size</a>();</div>
 <div class="line"><span class="lineno">   90</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> l=0; l &lt; <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a5277a7946ff4d740ccf0c9651ffbaff5">size</a>; l++) {</div>
-<div class="line"><span class="lineno">   91</span>        <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a> += (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>[l]-&gt;matchesFlags(flags)  ?  1  : 0);</div>
+<div class="line"><span class="lineno">   91</span>        count += (<a class="code hl_variable" href="classmoonray_1_1shading_1_1_bsdf.html#a4d66545d3a14d857df00ddded56a1b1a">mLobeArray</a>[l]-&gt;matchesFlags(flags)  ?  1  : 0);</div>
 <div class="line"><span class="lineno">   92</span>    }</div>
 <div class="line"><span class="lineno">   93</span> </div>
-<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">count</a>;</div>
+<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">return</span> count;</div>
 <div class="line"><span class="lineno">   95</span>}</div>
-<div class="ttc" id="anamespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03_html_ac002aa9e7f277e6c84e4fe1aeb5bb8cb"><div class="ttname"><a href="namespacemoonray_1_1rndr_1_1unittest_1_1anonymous__namespace_02_test_overlapping_regions_8cc_03.html#ac002aa9e7f277e6c84e4fe1aeb5bb8cb">moonray::rndr::unittest::anonymous_namespace{TestOverlappingRegions.cc}::count</a></div><div class="ttdeci">void count(const OverlappingRegions&lt; sRegionOverlap, sTileWidth, sTileHeight, sDesiredRegionsPerDimension &gt; &amp;regions, int line)</div><div class="ttdef"><b>Definition:</b> <a href="_test_overlapping_regions_8cc_source.html#l00024">TestOverlappingRegions.cc:24</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

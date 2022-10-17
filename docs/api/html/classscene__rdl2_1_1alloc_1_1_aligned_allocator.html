@@ -154,9 +154,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9d2ac76eec2e10c0414c877703d2310"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr class="memitem:ac9d2ac76eec2e10c0414c877703d2310"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_aligned_allocator.html#ac9d2ac76eec2e10c0414c877703d2310">AlignedAllocator</a> (const <a class="el" href="classscene__rdl2_1_1alloc_1_1_aligned_allocator.html">AlignedAllocator</a>&lt; U, alignment &gt; &amp;)</td></tr>
 <tr class="separator:ac9d2ac76eec2e10c0414c877703d2310"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fee609dce8c1852fa064a61c92488ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1alloc_1_1_aligned_allocator.html#acedc069e2258e8cc9a720f9245063b0c">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_aligned_allocator.html#a8fee609dce8c1852fa064a61c92488ae">address</a> (<a class="el" href="classscene__rdl2_1_1alloc_1_1_aligned_allocator.html#ad2a39c80d55281bf14dce6ac43dcf55a">reference</a> x) const noexcept</td></tr>
+<tr class="memitem:a8fee609dce8c1852fa064a61c92488ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1alloc_1_1_aligned_allocator.html#acedc069e2258e8cc9a720f9245063b0c">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_aligned_allocator.html#a8fee609dce8c1852fa064a61c92488ae">address</a> (<a class="el" href="classscene__rdl2_1_1alloc_1_1_aligned_allocator.html#ad2a39c80d55281bf14dce6ac43dcf55a">reference</a> <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) const noexcept</td></tr>
 <tr class="separator:a8fee609dce8c1852fa064a61c92488ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab67bfee18b1d9d5aca4df696b849a71c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1alloc_1_1_aligned_allocator.html#ae1912df3a4493f9e281c063d7875ac44">const_pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_aligned_allocator.html#ab67bfee18b1d9d5aca4df696b849a71c">address</a> (<a class="el" href="classscene__rdl2_1_1alloc_1_1_aligned_allocator.html#ae03a063e7668d7e80a934e7723351351">const_reference</a> x) const noexcept</td></tr>
+<tr class="memitem:ab67bfee18b1d9d5aca4df696b849a71c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1alloc_1_1_aligned_allocator.html#ae1912df3a4493f9e281c063d7875ac44">const_pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_aligned_allocator.html#ab67bfee18b1d9d5aca4df696b849a71c">address</a> (<a class="el" href="classscene__rdl2_1_1alloc_1_1_aligned_allocator.html#ae03a063e7668d7e80a934e7723351351">const_reference</a> <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) const noexcept</td></tr>
 <tr class="separator:ab67bfee18b1d9d5aca4df696b849a71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2848790ec0f7207466182ecfe10d25d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1alloc_1_1_aligned_allocator.html#acedc069e2258e8cc9a720f9245063b0c">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1alloc_1_1_aligned_allocator.html#ad2848790ec0f7207466182ecfe10d25d">allocate</a> (<a class="el" href="classscene__rdl2_1_1alloc_1_1_aligned_allocator.html#abeabbdee14dd49f08ab7588a128ca8a8">size_type</a> n, void *const =nullptr)</td></tr>
 <tr class="separator:ad2848790ec0f7207466182ecfe10d25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -493,7 +493,8 @@ template&lt;typename T , std::size_t alignment&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aligned_allocator_8h_source.html#l00063">63</a> of file <a class="el" href="_aligned_allocator_8h_source.html">AlignedAllocator.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>{ <span class="keywordflow">return</span> std::addressof(x); }</div>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>{ <span class="keywordflow">return</span> std::addressof(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>); }</div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -524,7 +525,7 @@ template&lt;typename T , std::size_t alignment&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_aligned_allocator_8h_source.html#l00062">62</a> of file <a class="el" href="_aligned_allocator_8h_source.html">AlignedAllocator.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   62</span>{ <span class="keywordflow">return</span> std::addressof(x); }</div>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>{ <span class="keywordflow">return</span> std::addressof(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>); }</div>
 </div><!-- fragment -->
 </div>
 </div>

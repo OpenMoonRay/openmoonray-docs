@@ -1,19 +1,5 @@
 var namespacescene__rdl2_1_1fb__util =
 [
-    [ "anonymous_namespace{PixelBufferUtilsGamma8bit.cc}", "namespacescene__rdl2_1_1fb__util_1_1anonymous__namespace_02_pixel_buffer_utils_gamma8bit_8cc_03.html", [
-      [ "computeNormalizedScaleAndOffset", "namespacescene__rdl2_1_1fb__util_1_1anonymous__namespace_02_pixel_buffer_utils_gamma8bit_8cc_03.html#a330cd79235599cc7fd23ddce4b65c501", null ],
-      [ "computeNormalizedScaleAndOffset", "namespacescene__rdl2_1_1fb__util_1_1anonymous__namespace_02_pixel_buffer_utils_gamma8bit_8cc_03.html#a8baa8f40939eb6ac64b53f0c792874d5", null ],
-      [ "computeNormalizedScaleAndOffset", "namespacescene__rdl2_1_1fb__util_1_1anonymous__namespace_02_pixel_buffer_utils_gamma8bit_8cc_03.html#acf1b1f3e53cd93448b9ab5dfca1561fa", null ],
-      [ "gammaCorrectColorComponent", "namespacescene__rdl2_1_1fb__util_1_1anonymous__namespace_02_pixel_buffer_utils_gamma8bit_8cc_03.html#a46185738e3c2f47b996d193cef064732", null ],
-      [ "gammaCorrectDitherQuantize", "namespacescene__rdl2_1_1fb__util_1_1anonymous__namespace_02_pixel_buffer_utils_gamma8bit_8cc_03.html#ad1abdb94bd10169d76de266769c39711", null ],
-      [ "MNRY_STATIC_ASSERT", "namespacescene__rdl2_1_1fb__util_1_1anonymous__namespace_02_pixel_buffer_utils_gamma8bit_8cc_03.html#a82707702ce0ba88a673085582f9aedcb", null ],
-      [ "MNRY_STATIC_ASSERT", "namespacescene__rdl2_1_1fb__util_1_1anonymous__namespace_02_pixel_buffer_utils_gamma8bit_8cc_03.html#a420025c8a598ddbd8761dfbcc17dcd7f", null ],
-      [ "processPixelBuffer", "namespacescene__rdl2_1_1fb__util_1_1anonymous__namespace_02_pixel_buffer_utils_gamma8bit_8cc_03.html#a666f38b9113ec78df12138060353ff9c", null ],
-      [ "simpleLoop", "namespacescene__rdl2_1_1fb__util_1_1anonymous__namespace_02_pixel_buffer_utils_gamma8bit_8cc_03.html#a34279ef286676d7341b86c5369cfed05", null ],
-      [ "sDitherMatrix", "namespacescene__rdl2_1_1fb__util_1_1anonymous__namespace_02_pixel_buffer_utils_gamma8bit_8cc_03.html#a158f9841f51ec4fb87f58f2f8c48fe4a", null ],
-      [ "sGammaTable1", "namespacescene__rdl2_1_1fb__util_1_1anonymous__namespace_02_pixel_buffer_utils_gamma8bit_8cc_03.html#aca0c77ca6ac56b1c13bb6167ef26de98", null ],
-      [ "sGammaTable2", "namespacescene__rdl2_1_1fb__util_1_1anonymous__namespace_02_pixel_buffer_utils_gamma8bit_8cc_03.html#a6c985ef465b71c2e5898b91a10e75a7a", null ]
-    ] ],
     [ "unittest", "namespacescene__rdl2_1_1fb__util_1_1unittest.html", "namespacescene__rdl2_1_1fb__util_1_1unittest" ],
     [ "ActivePixels", "classscene__rdl2_1_1fb__util_1_1_active_pixels.html", "classscene__rdl2_1_1fb__util_1_1_active_pixels" ],
     [ "ByteColor", "structscene__rdl2_1_1fb__util_1_1_byte_color.html", "structscene__rdl2_1_1fb__util_1_1_byte_color" ],

@@ -13,7 +13,7 @@ var dir_d0e63b6b504ebcadfa7798e4195f713b =
     [ "Distribution.cc", "_distribution_8cc.html", "_distribution_8cc" ],
     [ "Distribution.h", "_distribution_8h.html", "_distribution_8h" ],
     [ "Distribution.hh", "_distribution_8hh.html", "_distribution_8hh" ],
-    [ "IncoherentRayQueue.cc", "_incoherent_ray_queue_8cc.html", "_incoherent_ray_queue_8cc" ],
+    [ "IncoherentRayQueue.cc", "_incoherent_ray_queue_8cc.html", null ],
     [ "IncoherentRayQueue.h", "_incoherent_ray_queue_8h.html", "_incoherent_ray_queue_8h" ],
     [ "PbrTLState.cc", "_pbr_t_l_state_8cc.html", "_pbr_t_l_state_8cc" ],
     [ "PbrTLState.h", "_pbr_t_l_state_8h.html", "_pbr_t_l_state_8h" ],

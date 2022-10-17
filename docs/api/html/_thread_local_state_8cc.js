@@ -1,7 +1,5 @@
 var _thread_local_state_8cc =
 [
-    [ "moonray::mcrt_common::anonymous_namespace{ThreadLocalState.cc}::FrameUpdateTLSProxy", "structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_thread_local_state_8cc_03_1_1_frame_update_t_l_s_proxy.html", "structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_thread_local_state_8cc_03_1_1_frame_update_t_l_s_proxy" ],
-    [ "moonray::mcrt_common::anonymous_namespace{ThreadLocalState.cc}::Private", "structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_thread_local_state_8cc_03_1_1_private.html", "structmoonray_1_1mcrt__common_1_1anonymous__namespace_02_thread_local_state_8cc_03_1_1_private" ],
     [ "MAX_HANDLER_STACK_SIZE", "_thread_local_state_8cc.html#a50ea344638b3be2e876e8f31d321b1d9", null ],
     [ "MAX_OVERFLOW_POOL_SIZE", "_thread_local_state_8cc.html#a7ecdce2191e0d16496a67225c4c475d3", null ],
     [ "BaseTLState_hudValidation", "_thread_local_state_8cc.html#ac28046a96d00306f96898efbe8a1772c", null ],
@@ -18,7 +16,13 @@ var _thread_local_state_8cc =
     [ "initTLS", "_thread_local_state_8cc.html#aec25c06fdbb38a02765134d7ca405754", null ],
     [ "startRenderPhaseOfFrame", "_thread_local_state_8cc.html#afd9cd7fb0273f98ecffc2d99cbd44050", null ],
     [ "startUpdatePhaseOfFrame", "_thread_local_state_8cc.html#a6d4b2fe5654efc6317bfbd721adbac5c", null ],
-    [ "updateToLatestOIIOTLS", "_thread_local_state_8cc.html#a8e79d810117f54cd829e012309a28b7c", null ],
-    [ "gNextFrameUpdateTLSIndex", "_thread_local_state_8cc.html#a467ef0a81c44e257fda14702b35fa570", null ],
-    [ "gPrivate", "_thread_local_state_8cc.html#afb253816da2d198ee4fbdc2be575639d", null ]
+    [ "mFrameUpdateTLSMapping", "_thread_local_state_8cc.html#a89ade7239dc951158596d3e3894b0d24", null ],
+    [ "mGuiTLS", "_thread_local_state_8cc.html#aac7bc62c02ecf7832c7506030d6c11f2", null ],
+    [ "mInitParams", "_thread_local_state_8cc.html#a87a3dd17ed6206d66a4dd59e7225c625", null ],
+    [ "mOverflowPool", "_thread_local_state_8cc.html#a9324f473d1d4a9f44b85663fee613c7a", null ],
+    [ "mRenderPhaseOfFrame", "_thread_local_state_8cc.html#afe5a2c6fa4d9e92534ceac4b760ea9b3", null ],
+    [ "mTicksPerSecond", "_thread_local_state_8cc.html#a20b18bdef3d0eb310d74770de8f35101", null ],
+    [ "mTLSIndex", "_thread_local_state_8cc.html#a61e83c847642e8cc2d500e49c53568d9", null ],
+    [ "mTLSInitialized", "_thread_local_state_8cc.html#a5b029e57a8dceb69d74b1708422d9090", null ],
+    [ "mTLSList", "_thread_local_state_8cc.html#a6b3b59db51ac76298b5a37cda6bd21b5", null ]
 ];

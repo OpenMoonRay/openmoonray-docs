@@ -6,6 +6,5 @@ var _utils_8cc =
     [ "vectorSize", "_utils_8cc.html#a7b7d5ab4aefb420ea4b3d663c1792f68", null ],
     [ "writeSceneToFile", "_utils_8cc.html#aa497790cb064ba98293fd77e9831cc6b", null ],
     [ "writeSceneToFile", "_utils_8cc.html#a72e385c6a85b6a4c547435081d19a2f7", null ],
-    [ "writeSceneToFile", "_utils_8cc.html#abba31a8205ca14acc050707a8a96fff9", null ],
-    [ "SPLIT_VEC_SIZE", "_utils_8cc.html#a8750fe7f465939924ead60c968d20bbe", null ]
+    [ "writeSceneToFile", "_utils_8cc.html#abba31a8205ca14acc050707a8a96fff9", null ]
 ];

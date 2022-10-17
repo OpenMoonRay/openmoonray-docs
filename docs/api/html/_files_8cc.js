@@ -1,6 +1,5 @@
 var _files_8cc =
 [
-    [ "scene_rdl2::util::anonymous_namespace{Files.cc}::FreeDeleter", "structscene__rdl2_1_1util_1_1anonymous__namespace_02_files_8cc_03_1_1_free_deleter.html", "structscene__rdl2_1_1util_1_1anonymous__namespace_02_files_8cc_03_1_1_free_deleter" ],
     [ "absolutePath", "_files_8cc.html#a68c0d8aa1dced15f271662f6380ed268", null ],
     [ "copyFile", "_files_8cc.html#ae0d0da8306584abd32b0ba9c9e874d34", null ],
     [ "currentWorkingDirectory", "_files_8cc.html#a0e2109b594195150e8b567bcaae45e02", null ],

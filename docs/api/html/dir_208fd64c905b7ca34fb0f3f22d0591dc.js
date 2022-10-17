@@ -13,7 +13,7 @@ var dir_208fd64c905b7ca34fb0f3f22d0591dc =
     [ "Sample.h", "_sample_8h.html", "_sample_8h" ],
     [ "Sample.hh", "_sample_8hh.html", "_sample_8hh" ],
     [ "SamplePartition.h", "_sample_partition_8h.html", "_sample_partition_8h" ],
-    [ "Sampler.cc", "_sampler_8cc.html", "_sampler_8cc" ],
+    [ "Sampler.cc", "_sampler_8cc.html", null ],
     [ "Sampler.h", "_sampler_8h.html", "_sampler_8h" ],
     [ "SamplingAlgorithms.h", "_sampling_algorithms_8h.html", "_sampling_algorithms_8h" ],
     [ "SamplingConstants.h", "_sampling_constants_8h.html", "_sampling_constants_8h" ],

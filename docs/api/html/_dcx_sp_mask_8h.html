@@ -114,9 +114,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a9d840b6e347c42d0ba838f051b6308a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_sp_mask_8h.html#a9d840b6e347c42d0ba838f051b6308a9">BX_</a>(x)</td></tr>
+<tr class="memitem:a9d840b6e347c42d0ba838f051b6308a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_sp_mask_8h.html#a9d840b6e347c42d0ba838f051b6308a9">BX_</a>(<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)</td></tr>
 <tr class="separator:a9d840b6e347c42d0ba838f051b6308a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a057fab31906ed6c063d579467dce2c60"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_sp_mask_8h.html#a057fab31906ed6c063d579467dce2c60">BITCOUNT</a>(x)&#160;&#160;&#160;(((<a class="el" href="_dcx_sp_mask_8h.html#a9d840b6e347c42d0ba838f051b6308a9">BX_</a>(x)+(<a class="el" href="_dcx_sp_mask_8h.html#a9d840b6e347c42d0ba838f051b6308a9">BX_</a>(x)&gt;&gt;4)) &amp; 0x0F0F0F0F) % 255)</td></tr>
+<tr class="memitem:a057fab31906ed6c063d579467dce2c60"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_dcx_sp_mask_8h.html#a057fab31906ed6c063d579467dce2c60">BITCOUNT</a>(<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)&#160;&#160;&#160;(((<a class="el" href="_dcx_sp_mask_8h.html#a9d840b6e347c42d0ba838f051b6308a9">BX_</a>(<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)+(<a class="el" href="_dcx_sp_mask_8h.html#a9d840b6e347c42d0ba838f051b6308a9">BX_</a>(<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)&gt;&gt;4)) &amp; 0x0F0F0F0F) % 255)</td></tr>
 <tr class="separator:a057fab31906ed6c063d579467dce2c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -130,8 +130,8 @@ Macros</h2></td></tr>
           <td class="memname">#define BITCOUNT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;(((<a class="el" href="_dcx_sp_mask_8h.html#a9d840b6e347c42d0ba838f051b6308a9">BX_</a>(x)+(<a class="el" href="_dcx_sp_mask_8h.html#a9d840b6e347c42d0ba838f051b6308a9">BX_</a>(x)&gt;&gt;4)) &amp; 0x0F0F0F0F) % 255)</td>
+          <td class="paramname"><a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></td><td>)</td>
+          <td>&#160;&#160;&#160;(((<a class="el" href="_dcx_sp_mask_8h.html#a9d840b6e347c42d0ba838f051b6308a9">BX_</a>(<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)+(<a class="el" href="_dcx_sp_mask_8h.html#a9d840b6e347c42d0ba838f051b6308a9">BX_</a>(<a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)&gt;&gt;4)) &amp; 0x0F0F0F0F) % 255)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -148,14 +148,15 @@ Macros</h2></td></tr>
           <td class="memname">#define BX_</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
+          <td class="paramname"><a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">                    ((x) - (((x)&gt;&gt;1)&amp;0x77777777)  \</div>
-<div class="line">                    - (((x)&gt;&gt;2)&amp;0x33333333)  \</div>
-<div class="line">                    - (((x)&gt;&gt;3)&amp;0x11111111))</div>
+<b>Value:</b><div class="fragment"><div class="line">                    ((<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>) - (((<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)&gt;&gt;1)&amp;0x77777777)  \</div>
+<div class="line">                    - (((<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)&gt;&gt;2)&amp;0x33333333)  \</div>
+<div class="line">                    - (((<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)&gt;&gt;3)&amp;0x11111111))</div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

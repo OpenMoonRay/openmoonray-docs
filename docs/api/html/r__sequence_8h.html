@@ -109,7 +109,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a000586c1b7b4e9f9b8b7d9642fa0c2fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="r__sequence_8h.html#a000586c1b7b4e9f9b8b7d9642fa0c2fa">mod1</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> x)</td></tr>
+<tr class="memitem:a000586c1b7b4e9f9b8b7d9642fa0c2fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="r__sequence_8h.html#a000586c1b7b4e9f9b8b7d9642fa0c2fa">mod1</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>)</td></tr>
 <tr class="separator:a000586c1b7b4e9f9b8b7d9642fa0c2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89be75bd940ac9e0d644d601b91e8f89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="r__sequence_8h.html#a89be75bd940ac9e0d644d601b91e8f89">phi</a> (int d)</td></tr>
 <tr class="separator:a89be75bd940ac9e0d644d601b91e8f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,8 +142,9 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="r__sequence_8h_source.html#l00013">13</a> of file <a class="el" href="r__sequence_8h_source.html">r_sequence.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   14</span>{</div>
 <div class="line"><span class="lineno">   15</span>    <span class="keywordtype">float</span> throwaway;</div>
-<div class="line"><span class="lineno">   16</span>    <span class="keywordflow">return</span> std::modf(x, &amp;throwaway);</div>
+<div class="line"><span class="lineno">   16</span>    <span class="keywordflow">return</span> std::modf(<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, &amp;throwaway);</div>
 <div class="line"><span class="lineno">   17</span>}</div>
+<div class="ttc" id="a_test_qmc_8cc_html_ad0da36b2558901e21e7a30f6c227a45e"><div class="ttname"><a href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> <a href="_test_qmc_8cc_source.html#l00146">TestQmc.cc:146</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -173,11 +174,11 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="r__sequence_8h_source.html#l00021">21</a> of file <a class="el" href="r__sequence_8h_source.html">r_sequence.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   22</span>{</div>
-<div class="line"><span class="lineno">   23</span>    <span class="keywordtype">float</span> x = 2.0f;</div>
+<div class="line"><span class="lineno">   23</span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = 2.0f;</div>
 <div class="line"><span class="lineno">   24</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 10; ++i) {</div>
-<div class="line"><span class="lineno">   25</span>        x = std::pow(1.0f+x, 1.0f/(d+1));</div>
+<div class="line"><span class="lineno">   25</span>        <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a> = std::pow(1.0f+<a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, 1.0f/(d+1));</div>
 <div class="line"><span class="lineno">   26</span>    }</div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">return</span> x;</div>
+<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>;</div>
 <div class="line"><span class="lineno">   28</span>}</div>
 </div><!-- fragment -->
 </div>
