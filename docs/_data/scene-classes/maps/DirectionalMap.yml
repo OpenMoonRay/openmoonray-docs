@@ -1,5 +1,5 @@
 ---
-directory: assets/images/scene-classes/maps/DirectionalMap
+image_dir: assets/images/scene-classes/maps/DirectionalMap
 gallery:
   - DirectionalMap.1.jpg
   - DirectionalMap.2.jpg
