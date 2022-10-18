@@ -9,7 +9,12 @@ title: HairColorPresetsMap
 ---
 # HairColorPresetsMap
 ---
+{%assign image_dir=site.data.scene-classes.maps.HairColorPresetsMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.maps.HairColorPresetsMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -32,6 +37,10 @@ title: HairColorPresetsMap
           | ash brown = 13
           | chestnut brown = 14
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.HairColorPresetsMap.color
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

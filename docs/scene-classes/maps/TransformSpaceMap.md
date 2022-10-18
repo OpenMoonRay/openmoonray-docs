@@ -9,7 +9,12 @@ title: TransformSpaceMap
 ---
 # TransformSpaceMap
 ---
+{%assign image_dir=site.data.scene-classes.maps.TransformSpaceMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.maps.TransformSpaceMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,12 +23,20 @@ title: TransformSpaceMap
       <b>Camera</b>
       default: None
       <p class="scene-class-comments">an alternate camera to use when transforming to/from 'camera' space</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.TransformSpaceMap.camera
+          image_dir=image_dir
+      %}
     </p>
     <h3>concatenate_instance_level_transforms</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">When true, instance level transforms below the specified one are concatenated otherwise only the selected level's transform is used</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.TransformSpaceMap.concatenate_instance_level_transforms
+          image_dir=image_dir
+      %}
     </p>
     <h3>from_space</h3>
     <p class="scene-class-type">
@@ -41,12 +54,20 @@ title: TransformSpaceMap
           | instance level 3 = 10
           | instance level 4 = 11
       <p class="scene-class-comments">the space to transform from</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.TransformSpaceMap.from_space
+          image_dir=image_dir
+      %}
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the input value to transform</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.TransformSpaceMap.input
+          image_dir=image_dir
+      %}
     </p>
     <h3>input_type</h3>
     <p class="scene-class-type">
@@ -55,12 +76,20 @@ title: TransformSpaceMap
           | vector = 1 (default)
           | normal = 2
       <p class="scene-class-comments">the type of input value provided</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.TransformSpaceMap.input_type
+          image_dir=image_dir
+      %}
     </p>
     <h3>object</h3>
     <p class="scene-class-type">
       <b>Geometry</b>
       default: None
       <p class="scene-class-comments">an alternate object to use when transforming to/from 'object' space</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.TransformSpaceMap.object
+          image_dir=image_dir
+      %}
     </p>
     <h3>to_space</h3>
     <p class="scene-class-type">
@@ -78,36 +107,60 @@ title: TransformSpaceMap
           | instance level 4 = 10
           | instance object transform = 11
       <p class="scene-class-comments">the space to transform to</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.TransformSpaceMap.to_space
+          image_dir=image_dir
+      %}
     </p>
     <h3>use_custom_window_coordinates</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">used to apply non-uniform scaling to projection</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.TransformSpaceMap.use_custom_window_coordinates
+          image_dir=image_dir
+      %}
     </p>
     <h3>window_x_max</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">maximum projected x coordinate</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.TransformSpaceMap.window_x_max
+          image_dir=image_dir
+      %}
     </p>
     <h3>window_x_min</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: -1.0
       <p class="scene-class-comments">minimum projected x coordinate</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.TransformSpaceMap.window_x_min
+          image_dir=image_dir
+      %}
     </p>
     <h3>window_y_max</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">maximum projected y coordinate</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.TransformSpaceMap.window_y_max
+          image_dir=image_dir
+      %}
     </p>
     <h3>window_y_min</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: -1.0
       <p class="scene-class-comments">minimum projected y coordinate</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.TransformSpaceMap.window_y_min
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

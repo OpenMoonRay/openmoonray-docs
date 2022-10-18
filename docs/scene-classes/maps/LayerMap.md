@@ -9,7 +9,12 @@ title: LayerMap
 ---
 # LayerMap
 ---
+{%assign image_dir=site.data.scene-classes.maps.LayerMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.maps.LayerMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,18 +23,30 @@ title: LayerMap
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.LayerMap.input_A
+          image_dir=image_dir
+      %}
     </p>
     <h3>input_B</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.LayerMap.input_B
+          image_dir=image_dir
+      %}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
       <b>Float</b> <i>bindable</i>
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.LayerMap.mask
+          image_dir=image_dir
+      %}
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
@@ -51,6 +68,10 @@ title: LayerMap
           | difference = 14
           | exclusion = 15
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.LayerMap.mode
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

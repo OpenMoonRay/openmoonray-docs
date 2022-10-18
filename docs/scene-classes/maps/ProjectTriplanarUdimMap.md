@@ -9,7 +9,12 @@ title: ProjectTriplanarUdimMap
 ---
 # ProjectTriplanarUdimMap
 ---
+{%assign image_dir=site.data.scene-classes.maps.ProjectTriplanarUdimMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -23,12 +28,20 @@ title: ProjectTriplanarUdimMap
           | Trans Scale Rot = 4
           | Trans Rot Scale = 5
       <p class="scene-class-comments">Order in which to apply transformations</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.TRS_order
+          image_dir=image_dir
+      %}
     </p>
     <h3>projection_matrix</h3>
     <p class="scene-class-type">
       <b>Mat4d</b>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">the transform to use for projection</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.projection_matrix
+          image_dir=image_dir
+      %}
     </p>
     <h3>projection_mode</h3>
     <p class="scene-class-type">
@@ -37,18 +50,30 @@ title: ProjectTriplanarUdimMap
           | projection_matrix = 1
           | TRS = 2
       <p class="scene-class-comments">Source parameters to use for projection transform</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.projection_mode
+          image_dir=image_dir
+      %}
     </p>
     <h3>projector</h3>
     <p class="scene-class-type">
       <b>Node</b>
       default: None
       <p class="scene-class-comments">the object whose transform to use for projection</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.projector
+          image_dir=image_dir
+      %}
     </p>
     <h3>rotate</h3>
     <p class="scene-class-type">
       <b>Vec3d</b>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Rotation of the projection transform</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.rotate
+          image_dir=image_dir
+      %}
     </p>
     <h3>rotation_order</h3>
     <p class="scene-class-type">
@@ -60,102 +85,170 @@ title: ProjectTriplanarUdimMap
           | zxy = 4
           | zyx = 5
       <p class="scene-class-comments">Order in which to apply rotation transformations</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.rotation_order
+          image_dir=image_dir
+      %}
     </p>
     <h3>scale</h3>
     <p class="scene-class-type">
       <b>Vec3d</b>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Scale of the projection transform</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.scale
+          image_dir=image_dir
+      %}
     </p>
     <h3>translate</h3>
     <p class="scene-class-type">
       <b>Vec3d</b>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Tranlation of the projection transform</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.translate
+          image_dir=image_dir
+      %}
     </p>
     <h3>use_correct_uv</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">use correct uv orientation</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.use_correct_uv
+          image_dir=image_dir
+      %}
     </p>
     <h3>use_reference_space</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">use reference space</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.use_reference_space
+          image_dir=image_dir
+      %}
     </p>
     <h3>x_offset</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset for x projected map</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.x_offset
+          image_dir=image_dir
+      %}
     </p>
     <h3>x_rotation</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">2D rotation for x projected map</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.x_rotation
+          image_dir=image_dir
+      %}
     </p>
     <h3>x_rotation_center</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0.5, 0.5 ]
       <p class="scene-class-comments">2D rotation center for x projected map</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.x_rotation_center
+          image_dir=image_dir
+      %}
     </p>
     <h3>x_scale</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale for x projected map</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.x_scale
+          image_dir=image_dir
+      %}
     </p>
     <h3>y_offset</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset for y projected map</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.y_offset
+          image_dir=image_dir
+      %}
     </p>
     <h3>y_rotation</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">2D rotation for y projected map</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.y_rotation
+          image_dir=image_dir
+      %}
     </p>
     <h3>y_rotation_center</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0.5, 0.5 ]
       <p class="scene-class-comments">2D rotation center for y projected map</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.y_rotation_center
+          image_dir=image_dir
+      %}
     </p>
     <h3>y_scale</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale for y projected map</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.y_scale
+          image_dir=image_dir
+      %}
     </p>
     <h3>z_offset</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0, 0 ]
       <p class="scene-class-comments">2D offset for z projected map</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.z_offset
+          image_dir=image_dir
+      %}
     </p>
     <h3>z_rotation</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">2D rotation for z projected map</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.z_rotation
+          image_dir=image_dir
+      %}
     </p>
     <h3>z_rotation_center</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0.5, 0.5 ]
       <p class="scene-class-comments">2D rotation center for z projected map</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.z_rotation_center
+          image_dir=image_dir
+      %}
     </p>
     <h3>z_scale</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 1, 1 ]
       <p class="scene-class-comments">2D scale for z projected map</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ProjectTriplanarUdimMap.z_scale
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

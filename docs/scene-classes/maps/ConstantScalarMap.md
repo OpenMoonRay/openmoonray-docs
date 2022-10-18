@@ -9,7 +9,12 @@ title: ConstantScalarMap
 ---
 # ConstantScalarMap
 ---
+{%assign image_dir=site.data.scene-classes.maps.ConstantScalarMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.maps.ConstantScalarMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,6 +23,10 @@ title: ConstantScalarMap
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">constant scalar value</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ConstantScalarMap.scalar_value
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

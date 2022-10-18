@@ -9,7 +9,12 @@ title: SphericalCamera
 ---
 # SphericalCamera
 ---
+{%assign image_dir=site.data.scene-classes.cameras.SphericalCamera.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.cameras.SphericalCamera.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>Frustum attributes</summary>
   <p>
@@ -18,12 +23,20 @@ title: SphericalCamera
       <b>Float</b>
       default: 10000.0
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.SphericalCamera.far
+          image_dir=image_dir
+      %}
     </p>
     <h3>near</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.SphericalCamera.near
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -35,18 +48,30 @@ title: SphericalCamera
       <b>Float</b>
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.SphericalCamera.mb_shutter_bias
+          image_dir=image_dir
+      %}
     </p>
     <h3>mb_shutter_close</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.25
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.SphericalCamera.mb_shutter_close
+          image_dir=image_dir
+      %}
     </p>
     <h3>mb_shutter_open</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: -0.25
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.SphericalCamera.mb_shutter_open
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -58,6 +83,10 @@ title: SphericalCamera
       <b>String</b>
       default: 
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.SphericalCamera.pixel_sample_map
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -69,6 +98,10 @@ title: SphericalCamera
       <b>Mat4d</b> <i>blurrable</i>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.SphericalCamera.node_xform
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

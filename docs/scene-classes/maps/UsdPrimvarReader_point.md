@@ -9,7 +9,12 @@ title: UsdPrimvarReader_point
 ---
 # UsdPrimvarReader_point
 ---
+{%assign image_dir=site.data.scene-classes.maps.UsdPrimvarReader_point.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.maps.UsdPrimvarReader_point.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,18 +23,30 @@ title: UsdPrimvarReader_point
       <b>Vec3f</b> <i>bindable</i>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">fallback value to be returned if geometry fetch failed.</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UsdPrimvarReader_point.fallback
+          image_dir=image_dir
+      %}
     </p>
     <h3>varname</h3>
     <p class="scene-class-type">
       <b>String</b>
       default: 
       <p class="scene-class-comments">Name of the primvar to be read from the mesh</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UsdPrimvarReader_point.varname
+          image_dir=image_dir
+      %}
     </p>
     <h3>warn_when_unavailable</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Whether or not to issue a warning when the requested attribute is unavailable</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UsdPrimvarReader_point.warn_when_unavailable
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

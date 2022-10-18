@@ -9,7 +9,12 @@ title: DiscretizeDisplayFilter
 ---
 # DiscretizeDisplayFilter
 ---
+{%assign image_dir=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>Advanced attributes</summary>
   <p>
@@ -18,12 +23,20 @@ title: DiscretizeDisplayFilter
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">invert value of mask</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.invert_mask
+          image_dir=image_dir
+      %}
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.mix
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -35,18 +48,30 @@ title: DiscretizeDisplayFilter
       <b>67141632</b>
       default: None
       <p class="scene-class-comments">Image buffer to discretize</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.input
+          image_dir=image_dir
+      %}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
       <b>67141632</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.mask
+          image_dir=image_dir
+      %}
     </p>
     <h3>num_bins</h3>
     <p class="scene-class-type">
       <b>Int</b>
       default: 8
       <p class="scene-class-comments">number of discrete color bins</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.DiscretizeDisplayFilter.num_bins
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

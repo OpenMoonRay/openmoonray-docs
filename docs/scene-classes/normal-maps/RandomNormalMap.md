@@ -9,7 +9,12 @@ title: RandomNormalMap
 ---
 # RandomNormalMap
 ---
+{%assign image_dir=site.data.scene-classes.normal-maps.RandomNormalMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.normal-maps.RandomNormalMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,12 +23,20 @@ title: RandomNormalMap
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">the input color used as a base seed to generate the random value</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.RandomNormalMap.input
+          image_dir=image_dir
+      %}
     </p>
     <h3>seed</h3>
     <p class="scene-class-type">
       <b>Int</b>
       default: 0
       <p class="scene-class-comments">additional seed added to input for random number generator</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.RandomNormalMap.seed
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

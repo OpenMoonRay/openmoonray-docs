@@ -9,7 +9,12 @@ title: RgbToHsvMap
 ---
 # RgbToHsvMap
 ---
+{%assign image_dir=site.data.scene-classes.maps.RgbToHsvMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.maps.RgbToHsvMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,6 +23,10 @@ title: RgbToHsvMap
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">bind the input here</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.RgbToHsvMap.input
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

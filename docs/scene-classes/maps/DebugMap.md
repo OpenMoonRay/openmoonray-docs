@@ -9,7 +9,12 @@ title: DebugMap
 ---
 # DebugMap
 ---
+{%assign image_dir=site.data.scene-classes.maps.DebugMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.maps.DebugMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>Normal attributes</summary>
   <p>
@@ -19,6 +24,10 @@ title: DebugMap
           | tangent = 0 (default)
           | render = 1
       <p class="scene-class-comments">Specifies what space the input normal is in.  Usually this is tangent space for texture maps and render space for projections</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.DebugMap.input_normal_space
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -30,6 +39,10 @@ title: DebugMap
       <b>String</b>
       default: surface_st
       <p class="scene-class-comments">the name of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.DebugMap.primitive_attribute_name
+          image_dir=image_dir
+      %}
     </p>
     <h3>primitive_attribute_type</h3>
     <p class="scene-class-type">
@@ -39,6 +52,10 @@ title: DebugMap
           | vec3f = 2
           | rgb = 3
       <p class="scene-class-comments">the type of primitive attribute to displayed when attribute 'map type' is set to 'primitive attribute'</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.DebugMap.primitive_attribute_type
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -50,18 +67,30 @@ title: DebugMap
       <b>Bool</b>
       default: True
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.DebugMap.checkerboard
+          image_dir=image_dir
+      %}
     </p>
     <h3>input_normal</h3>
     <p class="scene-class-type">
       <b>Vec3f</b> <i>bindable</i>
       default: [ 0, 0, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.DebugMap.input_normal
+          image_dir=image_dir
+      %}
     </p>
     <h3>input_normal_dial</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.DebugMap.input_normal_dial
+          image_dir=image_dir
+      %}
     </p>
     <h3>map_type</h3>
     <p class="scene-class-type">
@@ -74,6 +103,10 @@ title: DebugMap
           | dpdt = 5
           | primitive attribute = 6
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.DebugMap.map_type
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

@@ -9,7 +9,12 @@ title: TraceSet
 ---
 # TraceSet
 ---
+{%assign image_dir=site.data.scene-classes.trace-set.TraceSet.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.trace-set.TraceSet.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,12 +23,20 @@ title: TraceSet
       <b>SceneObjectIndexable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.trace-set.TraceSet.geometries
+          image_dir=image_dir
+      %}
     </p>
     <h3>parts</h3>
     <p class="scene-class-type">
       <b>StringVector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.trace-set.TraceSet.parts
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
