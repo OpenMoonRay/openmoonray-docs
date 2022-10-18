@@ -1,5 +1,9 @@
 {% if include.images.size > 0 %}
-  <div class="image-gallery">
-    {% for img in include.images %} <img src="{{site.baseurl}}/{{include.image_dir}}/{{img}}"> {% endfor %}
+<div class="image-gallery cf">
+{%- for img in include.images -%}
+  <div>
+    <img src="{{site.baseurl}}/{{include.image_dir}}/{{img}}">
   </div>
+{% endfor %}
+</div>
 {% endif %}
