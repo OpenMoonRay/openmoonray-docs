@@ -1,0 +1,45 @@
+var classmoonray_1_1rndr_1_1_proc_keeper =
+[
+    [ "ProcKeeperShPtr", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#aae475ba72f9e052d51ce46e6ab06e8f8", null ],
+    [ "RunState", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#ad7c31067db3ef02fcd4771d8b25d5bf1", [
+      [ "WAIT", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#ad7c31067db3ef02fcd4771d8b25d5bf1ad5cc6a0064b5c25ba37826aa3fda910c", null ],
+      [ "START", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#ad7c31067db3ef02fcd4771d8b25d5bf1ab078ffd28db767c502ac367053f6e0ac", null ]
+    ] ],
+    [ "ThreadState", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a5bf4ae992aeb45ce854dae1331fd5dd2", [
+      [ "INIT", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a5bf4ae992aeb45ce854dae1331fd5dd2afaee4ca3c30ee18148ce3ada37466498", null ],
+      [ "IDLE", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a5bf4ae992aeb45ce854dae1331fd5dd2aa5daf7f2ebbba4975d61dab1c40188c7", null ],
+      [ "BUSY", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a5bf4ae992aeb45ce854dae1331fd5dd2a802706a9238e2928077f97736854bad4", null ],
+      [ "DONE", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a5bf4ae992aeb45ce854dae1331fd5dd2a2ba22e58ca17bb728d522bba36cf8350", null ]
+    ] ],
+    [ "ProcKeeper", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a32ee4cec5ab2635f1b6e5adf92e818f7", null ],
+    [ "ProcKeeper", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#ace71585182845e4e54802e46944d53fa", null ],
+    [ "~ProcKeeper", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#ae75f2c692dcd15a9e94c37d300add1d7", null ],
+    [ "closeWriteProgressFile", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a638019ad4764b337456cd39fa1771ecb", null ],
+    [ "finishImageWrite", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a86b82da4f083a81f5a7d08e4d3a34623", null ],
+    [ "get", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a278de51fe7a8e34cedbcbb5f772362a0", null ],
+    [ "init", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#adfd0a137d4b621832641c0dd72d288f3", null ],
+    [ "main", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a6f7f25e9c7822c1c24eacfff74425624", null ],
+    [ "openWriteProgressFile", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#afe75ef0842d63fa70c5b1cdb97620389", null ],
+    [ "openWriteProgressFileMain", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#ade15e2096a9c60bd8ab3c7df8d9d58a0", null ],
+    [ "operator=", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#ad6744b4739faf3e25323cb565cb091df", null ],
+    [ "progressSymbol", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#ac89465f54bc782256d6b789c7038df68", null ],
+    [ "runStateStr", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a2b77f0f11beb2a9753ff1bf9403519a2", null ],
+    [ "setupImageWriteProgressFilename", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a44332697b9519fd12baab31c2babcadd", null ],
+    [ "signalActionSceneContextDump", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a58a2da5cb63063c65ecd7b8cbe08dbef", null ],
+    [ "signalActionSceneContextDumpMain", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a5d150bdee483342d3aeb699208c89c46", null ],
+    [ "startImageWrite", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a7127a63a8844fadbfab23acf8aa82fce", null ],
+    [ "threadMain", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a7d2d985d14e83c20680024d9c4d925b5", null ],
+    [ "updateWriteProgressFile", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#ad0a4f752577d063fc146d4616fd8157f", null ],
+    [ "mCvRun", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a0441f61411b7f479c2f3a8d65f129ee5", null ],
+    [ "mImageWriteCache", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a13067cca3618b7756f0367bf285e18da", null ],
+    [ "mImageWriteProgress", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#ac23434c8fbb0fe41d645f2e265e86988", null ],
+    [ "mImageWriteProgressFd", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a0a5cb0a7160b12c7d656468284919d4e", null ],
+    [ "mImageWriteProgressFilename", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a98d7acf8794fe97bae1767807e1d8595", null ],
+    [ "mMainTaskCancel", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a04d4e5b0bbfe02ef32c7f4ed6caa5b82", null ],
+    [ "mMutexRun", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a12063e533cca7741a94f1ae51610a795", null ],
+    [ "mRunState", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a48a80953c718f49974c8103f3a4edd0e", null ],
+    [ "mSceneContextDump", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a930b26d553e12819cc8404f68a541fe2", null ],
+    [ "mThread", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a91e3badc4399e6ccc12b711eb80085fd", null ],
+    [ "mThreadShutdown", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a543f7d2e3f84135c4f7b2c15c002a98f", null ],
+    [ "mThreadState", "d0/d56/classmoonray_1_1rndr_1_1_proc_keeper.html#a1777b52b688010fda68f10c4ab410e2d", null ]
+];

@@ -1,0 +1,37 @@
+var _profile_accumulator_8h =
+[
+    [ "moonray::mcrt_common::AccumulatorResult", "d7/d10/structmoonray_1_1mcrt__common_1_1_accumulator_result.html", "d7/d10/structmoonray_1_1mcrt__common_1_1_accumulator_result" ],
+    [ "moonray::mcrt_common::ThreadLocalAccumulator", "d7/d86/structmoonray_1_1mcrt__common_1_1_thread_local_accumulator.html", "d7/d86/structmoonray_1_1mcrt__common_1_1_thread_local_accumulator" ],
+    [ "moonray::mcrt_common::Accumulator", "da/d9a/structmoonray_1_1mcrt__common_1_1_accumulator.html", "da/d9a/structmoonray_1_1mcrt__common_1_1_accumulator" ],
+    [ "moonray::mcrt_common::ScopedAccumulator", "d6/dcf/classmoonray_1_1mcrt__common_1_1_scoped_accumulator.html", "d6/dcf/classmoonray_1_1mcrt__common_1_1_scoped_accumulator" ],
+    [ "ACCUMULATOR_GET_AND_START", "d8/d1b/_profile_accumulator_8h.html#aca9d8b5124ad14b493f6fabff5a36b88", null ],
+    [ "ACCUMULATOR_GET_PAUSED", "d8/d1b/_profile_accumulator_8h.html#a21154aa30107d7004a919432511eb481", null ],
+    [ "ACCUMULATOR_PAUSE", "d8/d1b/_profile_accumulator_8h.html#a28ea74377dbc35e00cf7aeeaa8988a10", null ],
+    [ "ACCUMULATOR_PROFILE", "d8/d1b/_profile_accumulator_8h.html#a96b8f24c9dd8891d6711950ed7ca4bfa", null ],
+    [ "ACCUMULATOR_STOP", "d8/d1b/_profile_accumulator_8h.html#ae5d796661e7ab100e023acd26ee69749", null ],
+    [ "ACCUMULATOR_UNPAUSE", "d8/d1b/_profile_accumulator_8h.html#a27e2eb7693cfea33efe400d0cc809548", null ],
+    [ "PROFILE_ACCUMULATORS_ENABLED", "d8/d1b/_profile_accumulator_8h.html#a1513c29e98da180b2ca2271b179c6729", null ],
+    [ "UNIQUE_IDENTIFIER", "d8/d1b/_profile_accumulator_8h.html#a4d9d8ec50d5bd68f90e35871bb074b04", null ],
+    [ "UNIQUE_INNER", "d8/d1b/_profile_accumulator_8h.html#a957f3befe6cb996de0e164f511a11c1a", null ],
+    [ "UNIQUE_OUTER", "d8/d1b/_profile_accumulator_8h.html#a2cc634ac361e16c64da08c6f9a5ff870", null ],
+    [ "AccumulatorFlags", "d8/d1b/_profile_accumulator_8h.html#a3e34440c5780687d10efe807550d353d", [
+      [ "ACCFLAG_NONE", "d8/d1b/_profile_accumulator_8h.html#a3e34440c5780687d10efe807550d353da0c853aa90ec35446dac65033aaf4e508", null ],
+      [ "ACCFLAG_DISPLAYABLE", "d8/d1b/_profile_accumulator_8h.html#a3e34440c5780687d10efe807550d353da33cad6bd926373754023707985e18d6f", null ],
+      [ "ACCFLAG_TOTAL", "d8/d1b/_profile_accumulator_8h.html#a3e34440c5780687d10efe807550d353dabe02c6e64a5967c34d392ee05733af82", null ]
+    ] ],
+    [ "allocAccumulator", "d8/d1b/_profile_accumulator_8h.html#abcca8c85cd24632008754e694b034c59", null ],
+    [ "cleanUpAccumulators", "d8/d1b/_profile_accumulator_8h.html#a185b1c25a50bb0c796ca46de62173529", null ],
+    [ "getAccumulator", "d8/d1b/_profile_accumulator_8h.html#a13f5b5ee6b6ab9469be9c29360c84830", null ],
+    [ "getAccumulatorActiveState", "d8/d1b/_profile_accumulator_8h.html#acb36ab655046bde311de1fa3264986e9", null ],
+    [ "getAccumulatorThreadIndex", "d8/d1b/_profile_accumulator_8h.html#a4df921b729e23000ccafde6628d4016b", null ],
+    [ "getNumAccumulators", "d8/d1b/_profile_accumulator_8h.html#ae0e159f97b25dc1d3a70d574bd4e8aa2", null ],
+    [ "getNumAccumulatorThreads", "d8/d1b/_profile_accumulator_8h.html#ac0610e87ff86633c60c4ad9787f7e0e6", null ],
+    [ "getProfileAccumulatorTicks", "d8/d1b/_profile_accumulator_8h.html#a7527a17d04fa979e36cf9b6263253c6b", null ],
+    [ "initAccumulators", "d8/d1b/_profile_accumulator_8h.html#ade53035b4b2d5c0d375e7b8a8b955689", null ],
+    [ "MNRY_DURING_ASSERTS", "d8/d1b/_profile_accumulator_8h.html#aec381a495fa236bf1f2dfe4fc61c105c", null ],
+    [ "MNRY_STATIC_ASSERT", "d8/d1b/_profile_accumulator_8h.html#a1ae5ca489dfd5986ea4325c8d229043c", null ],
+    [ "resetAllAccumulators", "d8/d1b/_profile_accumulator_8h.html#aef5ecc7247d870fc38ef03246c27665d", null ],
+    [ "setAccumulatorActiveState", "d8/d1b/_profile_accumulator_8h.html#ad427fc0a001860592b900775c07a06f6", null ],
+    [ "snapshotRawAccumulators", "d8/d1b/_profile_accumulator_8h.html#a56c6ecbd98180aeca7c9a877001d45f6", null ],
+    [ "snapshotSortedAccumulators", "d8/d1b/_profile_accumulator_8h.html#a2abecf840967e4aefaf69c6a6a137d7f", null ]
+];

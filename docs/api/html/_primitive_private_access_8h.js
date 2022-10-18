@@ -1,4 +1,0 @@
-var _primitive_private_access_8h =
-[
-    [ "moonray::geom::internal::PrimitivePrivateAccess", "classmoonray_1_1geom_1_1internal_1_1_primitive_private_access.html", "classmoonray_1_1geom_1_1internal_1_1_primitive_private_access" ]
-];

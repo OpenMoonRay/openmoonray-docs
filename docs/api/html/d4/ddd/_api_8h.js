@@ -1,0 +1,35 @@
+var _api_8h =
+[
+    [ "PrimitiveType", "d4/ddd/_api_8h.html#aeff13bf32e880bf3b7d22dc67b35f069", [
+      [ "BOX", "d4/ddd/_api_8h.html#aeff13bf32e880bf3b7d22dc67b35f069ae657cce1913c857166b0475f18668ef5", null ],
+      [ "CURVES", "d4/ddd/_api_8h.html#aeff13bf32e880bf3b7d22dc67b35f069ab09e7191334b009f4549433248470205", null ],
+      [ "INSTANCE", "d4/ddd/_api_8h.html#aeff13bf32e880bf3b7d22dc67b35f069a76425f17a58d9249cadacc9a27771a80", null ],
+      [ "POINTS", "d4/ddd/_api_8h.html#aeff13bf32e880bf3b7d22dc67b35f069a70b71cabeeaf8c2bf473c896d5442ddb", null ],
+      [ "POLYGON_MESH", "d4/ddd/_api_8h.html#aeff13bf32e880bf3b7d22dc67b35f069a89d8fdf241b5780a922f286f315f5a31", null ],
+      [ "PRIMITIVE_GROUP", "d4/ddd/_api_8h.html#aeff13bf32e880bf3b7d22dc67b35f069a37bc0b63421103befa5d6d58456287fd", null ],
+      [ "SPHERE", "d4/ddd/_api_8h.html#aeff13bf32e880bf3b7d22dc67b35f069a6f7cea7381e843e2ee0338b4a92b0d43", null ],
+      [ "SUBDIVISION_MESH", "d4/ddd/_api_8h.html#aeff13bf32e880bf3b7d22dc67b35f069a8e16d511598e8cbac2847ae43ff254a9", null ],
+      [ "TRANSFORMED_PRIMITIVE", "d4/ddd/_api_8h.html#aeff13bf32e880bf3b7d22dc67b35f069a803a2fc1638b74b66220299785b9b8be", null ],
+      [ "VDB_VOLUME", "d4/ddd/_api_8h.html#aeff13bf32e880bf3b7d22dc67b35f069a10bcb2c42b3b42c380e6e5f65411decb", null ],
+      [ "UNKNOWN", "d4/ddd/_api_8h.html#aeff13bf32e880bf3b7d22dc67b35f069a696b031073e74bf2cb98e5ef201d4aa3", null ]
+    ] ],
+    [ "computePrim2Render", "d4/ddd/_api_8h.html#ad37f60dd325131a09efaf4d35543ae03", null ],
+    [ "concatenate", "d4/ddd/_api_8h.html#afd7055366476bf0667f97770c153337c", null ],
+    [ "convertForMotionBlur", "d4/ddd/_api_8h.html#aaebac535b9d513d16d9376043a57030b", null ],
+    [ "createBox", "d4/ddd/_api_8h.html#acd4e744e8ec8f7cd1b3fc519a02b1fdb", null ],
+    [ "createCurves", "d4/ddd/_api_8h.html#a31c3f7ed89b825514ef41f7e77be611e", null ],
+    [ "createInstance", "d4/ddd/_api_8h.html#af43ff3e3efb6aabddaf5977840a65475", null ],
+    [ "createInstance", "d4/ddd/_api_8h.html#a102492f5855c03073238f1ef13a5a96e", null ],
+    [ "createPoints", "d4/ddd/_api_8h.html#aa1a3b16666293e671e3372e2eed3f473", null ],
+    [ "createPolygonMesh", "d4/ddd/_api_8h.html#a33998ca6d20fb8eb6dcffddfcb492306", null ],
+    [ "createPrimitiveGroup", "d4/ddd/_api_8h.html#a3691409951bd29b140bc59cfb33200d8", null ],
+    [ "createSharedPrimitive", "d4/ddd/_api_8h.html#a17b37f60198612f9d940fd6e9fab148e", null ],
+    [ "createSphere", "d4/ddd/_api_8h.html#a3a272b38177b7d5f7849b99cf1041e77", null ],
+    [ "createSubdivisionMesh", "d4/ddd/_api_8h.html#a95b85c4b4c7ae7b1542ed2b9167d0d5c", null ],
+    [ "createTransformedPrimitive", "d4/ddd/_api_8h.html#ae0b237d02cfcd695b43cc86bff73d429", null ],
+    [ "createTransformedPrimitive", "d4/ddd/_api_8h.html#abb37a6d64bd734b41fe6670554231610", null ],
+    [ "createVdbVolume", "d4/ddd/_api_8h.html#a96e2d2e5b141212f15a7356248d35237", null ],
+    [ "getAssignmentId", "d4/ddd/_api_8h.html#a2c2b7f8f471f41d78afd2ec3a566e6e7", null ],
+    [ "getPrimitiveType", "d4/ddd/_api_8h.html#aa6328f7011f0e8c15051b1bbc8e198d0", null ],
+    [ "removeUnassignedFaces", "d4/ddd/_api_8h.html#a394192fde2bcb46ddcac2a4a65fd5ea2", null ]
+];

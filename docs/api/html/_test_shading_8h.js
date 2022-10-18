@@ -1,4 +1,0 @@
-var _test_shading_8h =
-[
-    [ "moonray::shading::unittest::TestShading", "classmoonray_1_1shading_1_1unittest_1_1_test_shading.html", "classmoonray_1_1shading_1_1unittest_1_1_test_shading" ]
-];

@@ -1,0 +1,26 @@
+var classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe =
+[
+    [ "FlakeCaches", "db/dba/structmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_1_1_flake_caches.html", "db/dba/structmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe_1_1_flake_caches" ],
+    [ "StochasticFlakesBsdfLobe", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#aafd251199b22e94088fa90cacdb4d69f", null ],
+    [ "albedo", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a6be341a9dd2c1c6c51c8d939cac792b5", null ],
+    [ "computeBrdf", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a02f6a9e38b187dbecbb357e981cb1743", null ],
+    [ "computeD", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a43fbd048509038dd0683ee26a3fa3a5d", null ],
+    [ "computeEta", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#aceb4dbd6b93ae060f23e4a9920589d4f", null ],
+    [ "computeGeometryTerm", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a217a84045e95711bd2b3ff06b040ce56", null ],
+    [ "computeK", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a6982613f93ef8259c15d8ec5e42a3c51", null ],
+    [ "computeReflectionCache", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a7617df1a0342b66593b173690253d41e", null ],
+    [ "differentials", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a1ac45d690e9093bb0be95667d7ca7391", null ],
+    [ "eval", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#aac0622945304a48b385a84d2d6910a00", null ],
+    [ "getProperty", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#afa9de721cef4b0c812b02e9510233944", null ],
+    [ "nMax", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a2d274d92eed88b2aae1aae9fd3a43719", null ],
+    [ "nMin", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#ac351cd553905c38915175ba7611c6e54", null ],
+    [ "sample", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#ab23cd9fa225f665630fb184ae2960ed4", null ],
+    [ "show", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a47c2880f5dbb74381139e98469475bec", null ],
+    [ "mCosGamma", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#af5db3b40dc13643106bbadabaf4240e2", null ],
+    [ "mFlakeColors", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#aa995502256e2e05c2fb567cd98347b4b", null ],
+    [ "mFlakeCount", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a2d611471b862a0d03ae348febb93892e", null ],
+    [ "mFlakeNormals", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a4d2201ac27b3e6f521c68343afa508a0", null ],
+    [ "mFlakeRandomness", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#afa5582eef59ea76384cdf2836b3bd742", null ],
+    [ "mFrame", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#a1dc3529a8793304d468507645e7e635d", null ],
+    [ "sMaxFlakes", "df/dde/classmoonray_1_1shading_1_1_stochastic_flakes_bsdf_lobe.html#aacff0e09cb74514c8d5b68f0a1dbfca2", null ]
+];
