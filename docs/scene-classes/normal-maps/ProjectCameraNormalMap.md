@@ -9,7 +9,12 @@ title: ProjectCameraNormalMap
 ---
 # ProjectCameraNormalMap
 ---
+{%assign image_dir=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -19,12 +24,20 @@ title: ProjectCameraNormalMap
           | from texture = 0 (default)
           | custom = 1
       <p class="scene-class-comments">Whether to use the image and pixel aspect ratio of the texture being projected, or a custom aspect ratio</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.aspect_ratio_source
+          image_dir=image_dir
+      %}
     </p>
     <h3>custom_aspect_ratio</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">a custom aspect ratio for the projected texture</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.custom_aspect_ratio
+          image_dir=image_dir
+      %}
     </p>
     <h3>normal_encoding</h3>
     <p class="scene-class-type">
@@ -32,30 +45,50 @@ title: ProjectCameraNormalMap
           | [0,1] = 0 (default)
           | [-1,1] = 1
       <p class="scene-class-comments">Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.normal_encoding
+          image_dir=image_dir
+      %}
     </p>
     <h3>project_on_back_faces</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Toggles whether camera projections appear on back faces.</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.project_on_back_faces
+          image_dir=image_dir
+      %}
     </p>
     <h3>projector</h3>
     <p class="scene-class-type">
       <b>Camera</b>
       default: None
       <p class="scene-class-comments">the camera to project from</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.projector
+          image_dir=image_dir
+      %}
     </p>
     <h3>texture</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.texture
+          image_dir=image_dir
+      %}
     </p>
     <h3>use_reference_space</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">use reference space</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectCameraNormalMap.use_reference_space
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

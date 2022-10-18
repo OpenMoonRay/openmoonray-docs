@@ -9,7 +9,12 @@ title: BakeCamera
 ---
 # BakeCamera
 ---
+{%assign image_dir=site.data.scene-classes.cameras.BakeCamera.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.cameras.BakeCamera.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>Frustum attributes</summary>
   <p>
@@ -18,12 +23,20 @@ title: BakeCamera
       <b>Float</b>
       default: 10000.0
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.BakeCamera.far
+          image_dir=image_dir
+      %}
     </p>
     <h3>near</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.BakeCamera.near
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -35,18 +48,30 @@ title: BakeCamera
       <b>Float</b>
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.BakeCamera.mb_shutter_bias
+          image_dir=image_dir
+      %}
     </p>
     <h3>mb_shutter_close</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.25
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.BakeCamera.mb_shutter_close
+          image_dir=image_dir
+      %}
     </p>
     <h3>mb_shutter_open</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: -0.25
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.BakeCamera.mb_shutter_open
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -58,6 +83,10 @@ title: BakeCamera
       <b>String</b>
       default: 
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.BakeCamera.pixel_sample_map
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -69,18 +98,30 @@ title: BakeCamera
       <b>Float</b>
       default: 0.00300000002608
       <p class="scene-class-comments">Ray-tracing offset for primary ray origin</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.BakeCamera.bias
+          image_dir=image_dir
+      %}
     </p>
     <h3>geometry</h3>
     <p class="scene-class-type">
       <b>Geometry</b>
       default: None
       <p class="scene-class-comments">The geometry object to bake</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.BakeCamera.geometry
+          image_dir=image_dir
+      %}
     </p>
     <h3>map_factor</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">Increase or decrease the internal position map buffer resolution</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.BakeCamera.map_factor
+          image_dir=image_dir
+      %}
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
@@ -90,18 +131,30 @@ title: BakeCamera
           | from surface along reflection vector = 2
           | above surface reverse normal = 3 (default)
       <p class="scene-class-comments">How to generate primary rays</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.BakeCamera.mode
+          image_dir=image_dir
+      %}
     </p>
     <h3>node_xform</h3>
     <p class="scene-class-type">
       <b>Mat4d</b> <i>blurrable</i>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.BakeCamera.node_xform
+          image_dir=image_dir
+      %}
     </p>
     <h3>normal_map</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       default: 
       <p class="scene-class-comments">Use this option to supply your own normals that are used when computing ray directions.  Without this option, normals are computed from the geometry and do not take into account any material applied normal mapping.</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.BakeCamera.normal_map
+          image_dir=image_dir
+      %}
     </p>
     <h3>normal_map_space</h3>
     <p class="scene-class-type">
@@ -109,24 +162,40 @@ title: BakeCamera
           | camera space = 0 (default)
           | tangent space = 1
       <p class="scene-class-comments">Use camera space if you generated per frame normal maps in a pre-pass using the normal material aov.  You probably want to use tangent space if you are using a normal map that is also used in the surfacing setup.</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.BakeCamera.normal_map_space
+          image_dir=image_dir
+      %}
     </p>
     <h3>udim</h3>
     <p class="scene-class-type">
       <b>Int</b>
       default: 1001
       <p class="scene-class-comments">Udim tile to bake</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.BakeCamera.udim
+          image_dir=image_dir
+      %}
     </p>
     <h3>use_relative_bias</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">If true, bias is scaled based on position magnitude</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.BakeCamera.use_relative_bias
+          image_dir=image_dir
+      %}
     </p>
     <h3>uv_attribute</h3>
     <p class="scene-class-type">
       <b>String</b>
       default: 
       <p class="scene-class-comments">Specifies a Vec2f primitive attribute to use as the uv coordinates.  If empty, the default uv for the mesh is used.  The uvs must provide a unique parameterization of the mesh, i.e. a given (u, v) can appear only once on the mesh being baked.</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.BakeCamera.uv_attribute
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

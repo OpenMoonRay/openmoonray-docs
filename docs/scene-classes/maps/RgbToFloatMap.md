@@ -9,7 +9,12 @@ title: RgbToFloatMap
 ---
 # RgbToFloatMap
 ---
+{%assign image_dir=site.data.scene-classes.maps.RgbToFloatMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.maps.RgbToFloatMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,6 +23,10 @@ title: RgbToFloatMap
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.RgbToFloatMap.input
+          image_dir=image_dir
+      %}
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
@@ -31,6 +40,10 @@ title: RgbToFloatMap
           | sum = 6
           | luminance = 7
       <p class="scene-class-comments">specify the method to convert RGB Color to float</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.RgbToFloatMap.mode
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

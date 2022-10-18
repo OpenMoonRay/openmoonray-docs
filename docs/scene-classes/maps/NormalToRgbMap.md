@@ -9,7 +9,12 @@ title: NormalToRgbMap
 ---
 # NormalToRgbMap
 ---
+{%assign image_dir=site.data.scene-classes.maps.NormalToRgbMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.maps.NormalToRgbMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,6 +23,10 @@ title: NormalToRgbMap
       <b>33554432</b>
       default: None
       <p class="scene-class-comments">Input normal map to convert to a color</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.NormalToRgbMap.input
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

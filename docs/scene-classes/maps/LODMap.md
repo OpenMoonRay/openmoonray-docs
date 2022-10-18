@@ -9,7 +9,12 @@ title: LODMap
 ---
 # LODMap
 ---
+{%assign image_dir=site.data.scene-classes.maps.LODMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.maps.LODMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,6 +23,10 @@ title: LODMap
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">value output when feature_width/camera_distance is more than or equal to stop</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.LODMap.far_value
+          image_dir=image_dir
+      %}
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
@@ -25,24 +34,40 @@ title: LODMap
           | feature width = 0 (default)
           | camera distance = 1
       <p class="scene-class-comments">Use feature_width for LOD based on average, world-space feature-width visible in a pixel, correctly changing with resolution. Use camera_distance for LOD based on distance from render cam.</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.LODMap.mode
+          image_dir=image_dir
+      %}
     </p>
     <h3>near_value</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">value output when feature_width/camera_distance is less than or equal to start</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.LODMap.near_value
+          image_dir=image_dir
+      %}
     </p>
     <h3>start</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.00999999977648
       <p class="scene-class-comments">feature_width/camera_distance at which to start blending near_value-&gt;far_value</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.LODMap.start
+          image_dir=image_dir
+      %}
     </p>
     <h3>stop</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.10000000149
       <p class="scene-class-comments">feature_width/camera_distance at which to stop blending near_value-&gt;far_value</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.LODMap.stop
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

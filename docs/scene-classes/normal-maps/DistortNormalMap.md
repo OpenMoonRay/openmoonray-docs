@@ -9,7 +9,12 @@ title: DistortNormalMap
 ---
 # DistortNormalMap
 ---
+{%assign image_dir=site.data.scene-classes.normal-maps.DistortNormalMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.normal-maps.DistortNormalMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>Space attributes</summary>
   <p>
@@ -18,6 +23,10 @@ title: DistortNormalMap
       <b>Vec3f</b> <i>bindable</i>
       default: [ 0, 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.input_texture_coordinates
+          image_dir=image_dir
+      %}
     </p>
     <h3>noise_space</h3>
     <p class="scene-class-type">
@@ -30,6 +39,10 @@ title: DistortNormalMap
           | hair_surface_uv = 8
           | hair_closest_surface_uv = 9
       <p class="scene-class-comments">The space to calculate the noise in</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.noise_space
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -41,54 +54,90 @@ title: DistortNormalMap
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">controls amplitude of U distortion</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.amplitude_U
+          image_dir=image_dir
+      %}
     </p>
     <h3>amplitude_V</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">controls amplitude of V distortion</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.amplitude_V
+          image_dir=image_dir
+      %}
     </p>
     <h3>frequency_U</h3>
     <p class="scene-class-type">
       <b>Vec3f</b>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">controls noise frequency for U distortion</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.frequency_U
+          image_dir=image_dir
+      %}
     </p>
     <h3>frequency_V</h3>
     <p class="scene-class-type">
       <b>Vec3f</b>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">controls noise frequency for V distortion</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.frequency_V
+          image_dir=image_dir
+      %}
     </p>
     <h3>input_U</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">input U / tangent for distortion</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.input_U
+          image_dir=image_dir
+      %}
     </p>
     <h3>input_V</h3>
     <p class="scene-class-type">
       <b>Rgb</b> <i>bindable</i>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">input V / bitangent for distortion</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.input_V
+          image_dir=image_dir
+      %}
     </p>
     <h3>input_normals</h3>
     <p class="scene-class-type">
       <b>33554432</b>
       default: None
       <p class="scene-class-comments">optional input to distort. if not connected, use geom normals</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.input_normals
+          image_dir=image_dir
+      %}
     </p>
     <h3>seed</h3>
     <p class="scene-class-type">
       <b>Int</b>
       default: 0
       <p class="scene-class-comments">the seed for the noise generation</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.seed
+          image_dir=image_dir
+      %}
     </p>
     <h3>use_input_vectors</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">when checked, use input_U and V. otherwise use geometry dPds/t</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.DistortNormalMap.use_input_vectors
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

@@ -9,7 +9,12 @@ title: Joint
 ---
 # Joint
 ---
+{%assign image_dir=site.data.scene-classes.joint.Joint.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.joint.Joint.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,6 +23,10 @@ title: Joint
       <b>Mat4d</b> <i>blurrable</i>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.joint.Joint.node_xform
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

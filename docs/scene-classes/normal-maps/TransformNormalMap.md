@@ -9,7 +9,12 @@ title: TransformNormalMap
 ---
 # TransformNormalMap
 ---
+{%assign image_dir=site.data.scene-classes.normal-maps.TransformNormalMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.normal-maps.TransformNormalMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>Normal attributes</summary>
   <p>
@@ -18,6 +23,10 @@ title: TransformNormalMap
       <b>Vec3f</b> <i>bindable</i>
       default: [ 0, 0, 1 ]
       <p class="scene-class-comments">input normal in either tangent or render space</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.TransformNormalMap.input_normal
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -29,6 +38,10 @@ title: TransformNormalMap
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">decode the input normal if it's in tangent space [0,1] -&gt; [-1,1]</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.TransformNormalMap.decode_input_normal
+          image_dir=image_dir
+      %}
     </p>
     <h3>transform</h3>
     <p class="scene-class-type">
@@ -36,6 +49,10 @@ title: TransformNormalMap
           | tangent to render = 0 (default)
           | render to tangent = 1
       <p class="scene-class-comments">transform to apply to the normals</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.TransformNormalMap.transform
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

@@ -9,7 +9,12 @@ title: ConstantColorMap
 ---
 # ConstantColorMap
 ---
+{%assign image_dir=site.data.scene-classes.maps.ConstantColorMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.maps.ConstantColorMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,6 +23,10 @@ title: ConstantColorMap
       <b>Rgb</b>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">constant color value</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.ConstantColorMap.color_value
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

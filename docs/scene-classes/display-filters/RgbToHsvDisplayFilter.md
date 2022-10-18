@@ -9,7 +9,12 @@ title: RgbToHsvDisplayFilter
 ---
 # RgbToHsvDisplayFilter
 ---
+{%assign image_dir=site.data.scene-classes.display-filters.RgbToHsvDisplayFilter.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.display-filters.RgbToHsvDisplayFilter.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>Advanced attributes</summary>
   <p>
@@ -18,12 +23,20 @@ title: RgbToHsvDisplayFilter
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">invert value of mask</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.RgbToHsvDisplayFilter.invert_mask
+          image_dir=image_dir
+      %}
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.RgbToHsvDisplayFilter.mix
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -35,12 +48,20 @@ title: RgbToHsvDisplayFilter
       <b>67141632</b>
       default: None
       <p class="scene-class-comments">image buffer</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.RgbToHsvDisplayFilter.input
+          image_dir=image_dir
+      %}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
       <b>67141632</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.RgbToHsvDisplayFilter.mask
+          image_dir=image_dir
+      %}
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
@@ -48,6 +69,10 @@ title: RgbToHsvDisplayFilter
           | rgb_to_hsv = 0 (default)
           | hsv_to_rgb = 1
       <p class="scene-class-comments">specify whether you are converting rgb-&gt;hsv or hsv-&gt;rgb</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.RgbToHsvDisplayFilter.mode
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

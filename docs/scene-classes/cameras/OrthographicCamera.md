@@ -9,7 +9,12 @@ title: OrthographicCamera
 ---
 # OrthographicCamera
 ---
+{%assign image_dir=site.data.scene-classes.cameras.OrthographicCamera.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.cameras.OrthographicCamera.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>Depth of Field attributes</summary>
   <p>
@@ -18,54 +23,90 @@ title: OrthographicCamera
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">Enable Bokeh. Requires DOF to be enabled.</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.bokeh
+          image_dir=image_dir
+      %}
     </p>
     <h3>bokeh_angle</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">Angle of iris rotation</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.bokeh_angle
+          image_dir=image_dir
+      %}
     </p>
     <h3>bokeh_image</h3>
     <p class="scene-class-type">
       <b>String</b>
       default: 
       <p class="scene-class-comments">Path to image file to be used for the iris</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.bokeh_image
+          image_dir=image_dir
+      %}
     </p>
     <h3>bokeh_sides</h3>
     <p class="scene-class-type">
       <b>Int</b>
       default: 0
       <p class="scene-class-comments">Number of sides of the iris. Specifying less than 3 sides will default to a disk.</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.bokeh_sides
+          image_dir=image_dir
+      %}
     </p>
     <h3>bokeh_weight_location</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">Distance from the origin of Bokeh shape</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.bokeh_weight_location
+          image_dir=image_dir
+      %}
     </p>
     <h3>bokeh_weight_strength</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">Controls the strength of weights as samples approach the weight location</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.bokeh_weight_strength
+          image_dir=image_dir
+      %}
     </p>
     <h3>dof</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.dof
+          image_dir=image_dir
+      %}
     </p>
     <h3>dof_aperture</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 8.0
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.dof_aperture
+          image_dir=image_dir
+      %}
     </p>
     <h3>dof_focus_distance</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.dof_focus_distance
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -77,36 +118,60 @@ title: OrthographicCamera
       <b>Float</b>
       default: 10000.0
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.far
+          image_dir=image_dir
+      %}
     </p>
     <h3>film_width_aperture</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 24.0
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.film_width_aperture
+          image_dir=image_dir
+      %}
     </p>
     <h3>horizontal_film_offset</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.horizontal_film_offset
+          image_dir=image_dir
+      %}
     </p>
     <h3>near</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.near
+          image_dir=image_dir
+      %}
     </p>
     <h3>pixel_aspect_ratio</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">ratio of pixel size y / x</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.pixel_aspect_ratio
+          image_dir=image_dir
+      %}
     </p>
     <h3>vertical_film_offset</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.vertical_film_offset
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -118,18 +183,30 @@ title: OrthographicCamera
       <b>Float</b>
       default: 0.0
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.mb_shutter_bias
+          image_dir=image_dir
+      %}
     </p>
     <h3>mb_shutter_close</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.25
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.mb_shutter_close
+          image_dir=image_dir
+      %}
     </p>
     <h3>mb_shutter_open</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: -0.25
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.mb_shutter_open
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -141,6 +218,10 @@ title: OrthographicCamera
       <b>String</b>
       default: 
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.pixel_sample_map
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -152,6 +233,10 @@ title: OrthographicCamera
       <b>Mat4d</b> <i>blurrable</i>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.cameras.OrthographicCamera.node_xform
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

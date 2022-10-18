@@ -9,7 +9,12 @@ title: ShadowReceiverSet
 ---
 # ShadowReceiverSet
 ---
+{%assign image_dir=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>Properties attributes</summary>
   <p>
@@ -18,6 +23,10 @@ title: ShadowReceiverSet
       <b>Bool</b>
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.complement
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -29,6 +38,10 @@ title: ShadowReceiverSet
       <b>SceneObjectIndexable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.shadow-receiver-set.ShadowReceiverSet.geometries
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

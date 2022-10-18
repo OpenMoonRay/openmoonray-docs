@@ -9,7 +9,12 @@ title: GeometrySet
 ---
 # GeometrySet
 ---
+{%assign image_dir=site.data.scene-classes.geometry-set.GeometrySet.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.geometry-set.GeometrySet.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,6 +23,10 @@ title: GeometrySet
       <b>SceneObjectIndexable</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.geometry-set.GeometrySet.geometries
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

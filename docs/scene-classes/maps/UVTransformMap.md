@@ -9,7 +9,12 @@ title: UVTransformMap
 ---
 # UVTransformMap
 ---
+{%assign image_dir=site.data.scene-classes.maps.UVTransformMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.maps.UVTransformMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,30 +23,50 @@ title: UVTransformMap
       <b>Vec2f</b>
       default: [ 0, 0 ]
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UVTransformMap.offset
+          image_dir=image_dir
+      %}
     </p>
     <h3>rotation_angle</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.0
       <p class="scene-class-comments">Rotation in degrees</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UVTransformMap.rotation_angle
+          image_dir=image_dir
+      %}
     </p>
     <h3>rotation_axis</h3>
     <p class="scene-class-type">
       <b>Vec3f</b>
       default: [ 0, 0, 1 ]
       <p class="scene-class-comments">Axis in which to rotate (only for 3D spaces)</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UVTransformMap.rotation_axis
+          image_dir=image_dir
+      %}
     </p>
     <h3>rotation_center</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 0.5, 0.5 ]
       <p class="scene-class-comments">UV coordinate around which to rotate</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UVTransformMap.rotation_center
+          image_dir=image_dir
+      %}
     </p>
     <h3>scale</h3>
     <p class="scene-class-type">
       <b>Vec2f</b>
       default: [ 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UVTransformMap.scale
+          image_dir=image_dir
+      %}
     </p>
     <h3>space</h3>
     <p class="scene-class-type">
@@ -54,6 +79,10 @@ title: UVTransformMap
           | reference = 5
           | texture = 6 (default)
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UVTransformMap.space
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

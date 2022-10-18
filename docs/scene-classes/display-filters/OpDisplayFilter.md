@@ -9,7 +9,12 @@ title: OpDisplayFilter
 ---
 # OpDisplayFilter
 ---
+{%assign image_dir=site.data.scene-classes.display-filters.OpDisplayFilter.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.display-filters.OpDisplayFilter.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>Advanced attributes</summary>
   <p>
@@ -18,12 +23,20 @@ title: OpDisplayFilter
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">invert value of mask</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.OpDisplayFilter.invert_mask
+          image_dir=image_dir
+      %}
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.OpDisplayFilter.mix
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -35,18 +48,30 @@ title: OpDisplayFilter
       <b>67141632</b>
       default: None
       <p class="scene-class-comments">first operand</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.OpDisplayFilter.input1
+          image_dir=image_dir
+      %}
     </p>
     <h3>input2</h3>
     <p class="scene-class-type">
       <b>67141632</b>
       default: None
       <p class="scene-class-comments">second operand</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.OpDisplayFilter.input2
+          image_dir=image_dir
+      %}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
       <b>67141632</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.OpDisplayFilter.mask
+          image_dir=image_dir
+      %}
     </p>
     <h3>operation</h3>
     <p class="scene-class-type">
@@ -82,6 +107,10 @@ title: OpDisplayFilter
           | acos = 28
           | not = 29
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.OpDisplayFilter.operation
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

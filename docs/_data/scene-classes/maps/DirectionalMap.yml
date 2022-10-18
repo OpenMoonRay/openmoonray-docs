@@ -1,0 +1,14 @@
+---
+image_dir: assets/images/scene-classes/maps/DirectionalMap
+gallery:
+  - DirectionalMap.1.jpg
+  - DirectionalMap.2.jpg
+  - DirectionalMap.3.jpg
+bias:
+  - bias_wedge.gif
+  - DirectionalMap.2.jpg
+  - DirectionalMap.2.jpg
+  - DirectionalMap.2.jpg
+  - bias_wedge.gif
+  - DirectionalMap.2.jpg
+  - DirectionalMap.2.jpg

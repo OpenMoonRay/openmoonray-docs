@@ -9,7 +9,12 @@ title: LightSet
 ---
 # LightSet
 ---
+{%assign image_dir=site.data.scene-classes.light-set.LightSet.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.light-set.LightSet.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,6 +23,10 @@ title: LightSet
       <b>Light Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.light-set.LightSet.lights
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

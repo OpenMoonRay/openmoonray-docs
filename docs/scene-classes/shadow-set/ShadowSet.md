@@ -9,7 +9,12 @@ title: ShadowSet
 ---
 # ShadowSet
 ---
+{%assign image_dir=site.data.scene-classes.shadow-set.ShadowSet.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.shadow-set.ShadowSet.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,6 +23,10 @@ title: ShadowSet
       <b>Light Vector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.shadow-set.ShadowSet.lights
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

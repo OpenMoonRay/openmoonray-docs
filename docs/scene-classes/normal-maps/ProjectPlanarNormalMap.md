@@ -9,7 +9,12 @@ title: ProjectPlanarNormalMap
 ---
 # ProjectPlanarNormalMap
 ---
+{%assign image_dir=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -23,6 +28,10 @@ title: ProjectPlanarNormalMap
           | Trans Scale Rot = 4
           | Trans Rot Scale = 5
       <p class="scene-class-comments">Order in which to apply transformations</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.TRS_order
+          image_dir=image_dir
+      %}
     </p>
     <h3>normal_encoding</h3>
     <p class="scene-class-type">
@@ -30,12 +39,20 @@ title: ProjectPlanarNormalMap
           | [0,1] = 0 (default)
           | [-1,1] = 1
       <p class="scene-class-comments">Most normal maps are encoded [0,1].   Only certain rare floating point normal maps are encoded [-1,1]</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.normal_encoding
+          image_dir=image_dir
+      %}
     </p>
     <h3>projection_matrix</h3>
     <p class="scene-class-type">
       <b>Mat4d</b>
       default: [ [ 1, 0, 0, 0 ], [ 0, 1, 0, 0 ], [ 0, 0, 1, 0 ], [ 0, 0, 0, 1 ] ]
       <p class="scene-class-comments">the transform to use for projection</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.projection_matrix
+          image_dir=image_dir
+      %}
     </p>
     <h3>projection_mode</h3>
     <p class="scene-class-type">
@@ -44,18 +61,30 @@ title: ProjectPlanarNormalMap
           | projection_matrix = 1
           | TRS = 2
       <p class="scene-class-comments">Source parameters to use for projection transform</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.projection_mode
+          image_dir=image_dir
+      %}
     </p>
     <h3>projector</h3>
     <p class="scene-class-type">
       <b>Node</b>
       default: None
       <p class="scene-class-comments">the object whose transform to use for projection</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.projector
+          image_dir=image_dir
+      %}
     </p>
     <h3>rotate</h3>
     <p class="scene-class-type">
       <b>Vec3d</b>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Rotation of the projection transform</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.rotate
+          image_dir=image_dir
+      %}
     </p>
     <h3>rotation_order</h3>
     <p class="scene-class-type">
@@ -67,36 +96,60 @@ title: ProjectPlanarNormalMap
           | zxy = 4
           | zyx = 5
       <p class="scene-class-comments">Order in which to apply rotation transformations</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.rotation_order
+          image_dir=image_dir
+      %}
     </p>
     <h3>scale</h3>
     <p class="scene-class-type">
       <b>Vec3d</b>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Scale of the projection transform</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.scale
+          image_dir=image_dir
+      %}
     </p>
     <h3>texture</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       default: 
       <p class="scene-class-comments">filename that points to a texture .exr or .tx file (must be mip-mapped and tiled with maketx).</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.texture
+          image_dir=image_dir
+      %}
     </p>
     <h3>translate</h3>
     <p class="scene-class-type">
       <b>Vec3d</b>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Tranlation of the projection transform</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.translate
+          image_dir=image_dir
+      %}
     </p>
     <h3>use_reference_space</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">use reference space</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.use_reference_space
+          image_dir=image_dir
+      %}
     </p>
     <h3>wrap_around</h3>
     <p class="scene-class-type">
       <b>Bool</b>
       default: True
       <p class="scene-class-comments">Controls whether to repeat (true) or clamp (false) the texture</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.normal-maps.ProjectPlanarNormalMap.wrap_around
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

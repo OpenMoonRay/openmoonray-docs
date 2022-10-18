@@ -9,7 +9,12 @@ title: UsdUVTexture
 ---
 # UsdUVTexture
 ---
+{%assign image_dir=site.data.scene-classes.maps.UsdUVTexture.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.maps.UsdUVTexture.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,24 +23,40 @@ title: UsdUVTexture
       <b>Rgb</b>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Bias to be applied to all components of the texture.  output = textureValue * scale + bias</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UsdUVTexture.bias
+          image_dir=image_dir
+      %}
     </p>
     <h3>fallback</h3>
     <p class="scene-class-type">
       <b>Rgb</b>
       default: [ 0, 0, 0 ]
       <p class="scene-class-comments">Fallback value used when texture can not be read.</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UsdUVTexture.fallback
+          image_dir=image_dir
+      %}
     </p>
     <h3>file</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       default: 
       <p class="scene-class-comments">Path to the texture</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UsdUVTexture.file
+          image_dir=image_dir
+      %}
     </p>
     <h3>scale</h3>
     <p class="scene-class-type">
       <b>Rgb</b>
       default: [ 1, 1, 1 ]
       <p class="scene-class-comments">Scale to be applied to all components of the texture.  output = textureValue * scale + bias</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UsdUVTexture.scale
+          image_dir=image_dir
+      %}
     </p>
     <h3>sourceColorSpace</h3>
     <p class="scene-class-type">
@@ -44,30 +65,50 @@ title: UsdUVTexture
           | sRGB = 1
           | auto = 2 (default)
       <p class="scene-class-comments">Flag indicating the color space in which the source texture is encoded.</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UsdUVTexture.sourceColorSpace
+          image_dir=image_dir
+      %}
     </p>
     <h3>st</h3>
     <p class="scene-class-type">
       <b>Vec2f</b> <i>bindable</i>
       default: [ 1, 1 ]
       <p class="scene-class-comments">Texture coordinate to use to fetch this texture.</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UsdUVTexture.st
+          image_dir=image_dir
+      %}
     </p>
     <h3>udim_files</h3>
     <p class="scene-class-type">
       <b>StringVector</b>
       default: []
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UsdUVTexture.udim_files
+          image_dir=image_dir
+      %}
     </p>
     <h3>udim_max_v</h3>
     <p class="scene-class-type">
       <b>Int</b>
       default: 10
       <p class="scene-class-comments">udim maximum v value</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UsdUVTexture.udim_max_v
+          image_dir=image_dir
+      %}
     </p>
     <h3>udim_values</h3>
     <p class="scene-class-type">
       <b>IntVector</b>
       default: &lt;scene_rdl2.__scene_rdl2__.IntVector object at ...&gt;
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UsdUVTexture.udim_values
+          image_dir=image_dir
+      %}
     </p>
     <h3>wrapS</h3>
     <p class="scene-class-type">
@@ -78,6 +119,10 @@ title: UsdUVTexture
           | mirror = 3
           | useMetadata = 4 (default)
       <p class="scene-class-comments">Wrap mode when reading this texture.</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UsdUVTexture.wrapS
+          image_dir=image_dir
+      %}
     </p>
     <h3>wrapT</h3>
     <p class="scene-class-type">
@@ -88,6 +133,10 @@ title: UsdUVTexture
           | mirror = 3
           | useMetadata = 4 (default)
       <p class="scene-class-comments">Wrap mode when reading this texture.</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.UsdUVTexture.wrapT
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

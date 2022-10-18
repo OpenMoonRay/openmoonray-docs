@@ -9,7 +9,12 @@ title: ImageDisplayFilter
 ---
 # ImageDisplayFilter
 ---
+{%assign image_dir=site.data.scene-classes.display-filters.ImageDisplayFilter.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.display-filters.ImageDisplayFilter.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>Advanced attributes</summary>
   <p>
@@ -18,12 +23,20 @@ title: ImageDisplayFilter
       <b>Bool</b>
       default: False
       <p class="scene-class-comments">invert value of mask</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.invert_mask
+          image_dir=image_dir
+      %}
     </p>
     <h3>mix</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-comments">blend between output and input</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.mix
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
@@ -40,24 +53,40 @@ title: ImageDisplayFilter
           | fit_by_largest_dimension = 4
           | no_scale = 5
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.display_type
+          image_dir=image_dir
+      %}
     </p>
     <h3>image_path</h3>
     <p class="scene-class-type">
       <b>String</b> <i>filename</i>
       default: 
       <p class="scene-class-comments">file path to the .exr we want to fit to the plane</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.image_path
+          image_dir=image_dir
+      %}
     </p>
     <h3>input</h3>
     <p class="scene-class-type">
       <b>67141632</b>
       default: None
       <p class="scene-class-comments">Input buffer</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.input
+          image_dir=image_dir
+      %}
     </p>
     <h3>mask</h3>
     <p class="scene-class-type">
       <b>67141632</b>
       default: None
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.display-filters.ImageDisplayFilter.mask
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

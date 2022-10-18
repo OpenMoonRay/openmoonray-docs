@@ -9,5 +9,10 @@ title: HairColumnMap
 ---
 # HairColumnMap
 ---
+{%assign image_dir=site.data.scene-classes.maps.HairColumnMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.maps.HairColumnMap.gallery
+    image_dir=image_dir
+%}
 </div>

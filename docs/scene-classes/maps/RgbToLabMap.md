@@ -9,7 +9,12 @@ title: RgbToLabMap
 ---
 # RgbToLabMap
 ---
+{%assign image_dir=site.data.scene-classes.maps.RgbToLabMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.maps.RgbToLabMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,6 +23,10 @@ title: RgbToLabMap
       <b>Rgb</b> <i>bindable</i>
       default: [ 1, 1, 1 ]
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.RgbToLabMap.input_color
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>

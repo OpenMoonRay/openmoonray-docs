@@ -9,7 +9,12 @@ title: CurvatureMap
 ---
 # CurvatureMap
 ---
+{%assign image_dir=site.data.scene-classes.maps.CurvatureMap.image_dir%}
 <div class="scene-class">
+{% include image-gallery.html
+    images=site.data.scene-classes.maps.CurvatureMap.gallery
+    image_dir=image_dir
+%}
 <details open>
   <summary>General attributes</summary>
   <p>
@@ -18,6 +23,10 @@ title: CurvatureMap
       <b>Bool</b>
       default: False
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.CurvatureMap.invert
+          image_dir=image_dir
+      %}
     </p>
     <h3>mode</h3>
     <p class="scene-class-type">
@@ -27,18 +36,30 @@ title: CurvatureMap
           | composite = 2
           | all = 3 (default)
       <p class="scene-class-comments">The composite mode outputs the composite of convex curvature and concave curvature as grayscale ((concave - convex) * 0.5) + 0.5. The all mode outputs the convex curvature in the red channel, concave curvature in the green channel, and composite of both curvatures in the blue channel.</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.CurvatureMap.mode
+          image_dir=image_dir
+      %}
     </p>
     <h3>power</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 0.5
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.CurvatureMap.power
+          image_dir=image_dir
+      %}
     </p>
     <h3>scale</h3>
     <p class="scene-class-type">
       <b>Float</b>
       default: 1.0
       <p class="scene-class-no-doc">No documentation available</p>
+      {% include image-gallery.html
+          images=site.data.scene-classes.maps.CurvatureMap.scale
+          image_dir=image_dir
+      %}
     </p>
   </p>
 </details>
