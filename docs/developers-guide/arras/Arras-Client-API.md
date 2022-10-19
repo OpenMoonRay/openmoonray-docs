@@ -68,7 +68,7 @@ COORDINATOR_URL is hard-coded to "arras:local" at the start of the code, which w
 `SessionOptions` contains information about what is being rendered and by whom : production name, shot, asset, team, and so on. It is used by Coordinator for logging and auditing Arras usage. In this case we leave all the fields undefined.
 
 ```C++
-   	    std::string sessionId;
+        std::string sessionId;
     	try {
         	sessionId = theSdk->createSession(session_def, url, options);
     	} catch (const arras4::sdk::SDKException& e) {
@@ -107,7 +107,7 @@ For this example, we are loading the scene from an RDLA file using the `scene_rd
 To start the session rendering, we need to send it an `RDLMessage` with the scene contents. `BinaryWriter` encodes the `SceneContext` as RDLB and places it in a message:
 
 ```C++
-    	mcrt::RDLMessage::Ptr rdlMsg = std::make_shared<mcrt::RDLMessage>();
+        mcrt::RDLMessage::Ptr rdlMsg = std::make_shared<mcrt::RDLMessage>();
     	scene_rdl2::rdl2::BinaryWriter writer(scene);
     	writer.toBytes(rdlMsg->mManifest, rdlMsg->mPayload);
    	    theSdk->sendMessage(rdlMsg);

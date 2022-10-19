@@ -51,7 +51,7 @@ To add a new `SceneObject` to the `SceneContext`, use:
 
 ```C++
 SceneObject* createSceneObject(const std::string& className, 
-             	 const std::string& objectName);
+             	               const std::string& objectName);
 ```
 
 Classes are discussed in the next section. If an object with the class and name you specify already exists, this function will simply return it. If an object with the same name but different class exists, *scene_rdl2* will throw an exception.
@@ -151,14 +151,14 @@ Enumerable attributes should be `TYPE_INT`, and they have a list of valid `Int` 
 
 ```C++
 bool isValidEnumValue(Int enumValue) const;
-      EnumValueConstIterator beginEnumValues() const;
+EnumValueConstIterator beginEnumValues() const;
 EnumValueConstIterator endEnumValues() const;
 ```
 
 `Attribute` objects can also hold arbitrary string metadata. The most common use for this is to associate a documentation string with the attribute, under the key "comment".
 
 ```C++
-	const std::string& getMetadata(const std::string& key) const;
+const std::string& getMetadata(const std::string& key) const;
 ```
 ## SceneObject subclasses
 
@@ -177,13 +177,13 @@ AttributeKey<Float> attrFocalKey;
 for the attribute named "focal". `AttributeKey` directly stores the data offset of the attribute within a scene object of this class, and therefore can be used to get and set attributes much more efficiently than lookup by name. Code like this:
 
 ```C++
-	float focal = shot_camera.get(PerspectiveCamera::attrFocalKey);
+float focal = shot_camera.get(PerspectiveCamera::attrFocalKey);
 ```
 
 uses the `AttributeKey` overload of the get function, and is much faster than:
 
 ```C++
-	float focal = shot_camera.get<float>("focal");
+float focal = shot_camera.get<float>("focal");
 ```
 
 The first version has the added advantage that it will automatically use the correct C++ type for the attribute, and fail at compile time if conversion is not possible.
@@ -191,7 +191,7 @@ The first version has the added advantage that it will automatically use the cor
 In practice, outside the implementation of a specific scene class, you are more likely to want to access attributes common to an entire sub-type of classes. For example, many scene classes inherit from Node, and they all have a "node_xform" attribute that you can access like this:
 
 ```C++
-	Mat4d xform = any_node_object.get(Node::sNodeXformKey)
+Mat4d xform = any_node_object.get(Node::sNodeXformKey)
 ```
 
 `SceneObject` subclasses often also provide utility functions. For example, `Camera` provides `setNear` (which simply sets the `Camera::sNear` attribute) and `computeProjectionMatrix` (which is overridden by `Camera` subclasses like `PerspectiveCamera`).
@@ -200,8 +200,8 @@ For built-in types like `Node` and `Camera`, `SceneObject` provides a fast dynam
 
 ```C++
 if (an_object->isA<Camera>()) {
- 		Camera* a_camera = an_object->asA<Camera>();
-		a_camera->setNear(0.001);
+ 	Camera* a_camera = an_object->asA<Camera>();
+	a_camera->setNear(0.001);
 }
 ```
 
@@ -213,28 +213,28 @@ This is the full hierarchy defined in *scene_rdl2*:
 SceneObject
 DisplayFilter
 GeometrySet
-		ShadowReceiverSet
+	ShadowReceiverSet
 LightFilter
 LightFilterSet
 LightSet
-		ShadowSet
+	ShadowSet
 Metadata
 Node
-		Camera
-		EnvMap
-		Geometry
-		Joint
-		Light
+	Camera
+	EnvMap
+	Geometry
+	Joint
+	Light
 RenderOutput
 SceneVariables
 Shader
-		Map
-		NormalMap
-		RootShader
-			Displacement
-			Material
+	Map
+	NormalMap
+	RootShader
+		Displacement
+		Material
 TraceSet
-		Layer
+	Layer
 UserData
 ```
 
@@ -245,20 +245,20 @@ Attributes with type `TYPE_SCENE_OBJECT`, `TYPE_SCENE_OBJECT_VECTOR` or `TYPE_SC
 Attributes defined with one of these types can specify an "interface set' restricting the type of objects that they can refer to. `SceneObjectInterface` is an int acting as a bitset, with these values:
 
 ```
-INTERFACE_GENERIC			    INTERFACE_GEOMETRYSET
-INTERFACE_LAYER  			    INTERFACE_LIGHTSET 
+INTERFACE_GENERIC		        INTERFACE_GEOMETRYSET
+INTERFACE_LAYER  		        INTERFACE_LIGHTSET 
 INTERFACE_NODE                  INTERFACE_CAMERA
-INTERFACE_ENVMAP          	    INTERFACE_GEOMETRY 
+INTERFACE_ENVMAP                INTERFACE_GEOMETRY 
 INTERFACE_LIGHT                 INTERFACE_SHADER
 INTERFACE_DISPLACEMENT          INTERFACE_MAP 
-INTERFACE_MATERIAL        	    INTERFACE_USERDATA
-INTERFACE_METADATA  		    INTERFACE_LIGHTFILTER
-INTERFACE_TRACESET 		        INTERFACE_JOINT
-INTERFACE_LIGHTFILTERSET    	INTERFACE_SHADOWSET
-INTERFACE_NORMALMAP  		    INTERFACE_DISPLAYFILTER
-INTERFACE_SHADOWRECEIVERSET  	INTERFACE_ROOTSHADER
-INTERFACE_VOLUMESHADER 		    INTERFACE_RENDEROUTPUT
-INTERFACE_DWABASELAYERABLE 	    INTERFACE_DWABASEHAIRLAYERABLE
+INTERFACE_MATERIAL              INTERFACE_USERDATA
+INTERFACE_METADATA              INTERFACE_LIGHTFILTER
+INTERFACE_TRACESET              INTERFACE_JOINT
+INTERFACE_LIGHTFILTERSET        INTERFACE_SHADOWSET
+INTERFACE_NORMALMAP             INTERFACE_DISPLAYFILTER
+INTERFACE_SHADOWRECEIVERSET     INTERFACE_ROOTSHADER
+INTERFACE_VOLUMESHADER          INTERFACE_RENDEROUTPUT
+INTERFACE_DWABASELAYERABLE      INTERFACE_DWABASEHAIRLAYERABLE
 ```
 
 which correspond roughly to the `SceneObject` base classes in *scene_rdl2*, with a couple of additions. Each `SceneObject` subclass declares itself to belong to one or more of these interfaces, and each `SceneObject`-valued attribute can list the interfaces it allows.
@@ -274,7 +274,7 @@ These are the main `SceneObject` functions to get and set bindings:
 ```C++
 template <typename T> SceneObject* getBinding(AttributeKey<T> key);
 template <typename T> void setBinding(AttributeKey<T> key, 
-  SceneObject* sceneObject);
+                                      SceneObject* sceneObject);
 ```
 
 There are a few other variants of these in defined in *SceneObject.h*, including functions to set by attribute name.
@@ -291,14 +291,14 @@ Attributes with the blurrable flag set have two values, indexed by TIMESTEP_BEGI
 
 ```C++
 enum AttributeTimestep {
-    		TIMESTEP_BEGIN = 0,
-    		TIMESTEP_END   = 1,
-    		NUM_TIMESTEPS  = 2 // not a valid timestep
+    TIMESTEP_BEGIN = 0,
+    TIMESTEP_END   = 1,
+    NUM_TIMESTEPS  = 2 // not a valid timestep
 };
 template <typename T> const T& get(AttributeKey<T> key,
-     AttributeTimestep timestep) const;
+                                   AttributeTimestep timestep) const;
 template <typename T> void set(AttributeKey<T> key, const T& value, 
-     		 AttributeTimestep timestep);
+                               AttributeTimestep timestep);
 ```
 ## Reading and writing
 
@@ -310,7 +310,7 @@ The full set of arguments is:
 
 ```C++
 void writeSceneToFile(const SceneContext& context, 
-    const std::string& filePath,
+                      const std::string& filePath,
                       bool deltaEncoding, 
                       bool skipDefaults, 
                       size_t elemsPerLine);
