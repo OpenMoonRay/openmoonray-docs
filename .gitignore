@@ -2,3 +2,4 @@
 Gemfile*
 *.jekyll-cache
 _site
+/docs/*.bak
