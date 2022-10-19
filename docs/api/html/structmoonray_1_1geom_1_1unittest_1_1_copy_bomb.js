@@ -7,5 +7,6 @@ var structmoonray_1_1geom_1_1unittest_1_1_copy_bomb =
     [ "operator=", "structmoonray_1_1geom_1_1unittest_1_1_copy_bomb.html#a446152ccb60bc849f16d9811248c87f9", null ],
     [ "reset", "structmoonray_1_1geom_1_1unittest_1_1_copy_bomb.html#a83e2fa4f9cb8ef62092f476d48a2e2f1", null ],
     [ "tick", "structmoonray_1_1geom_1_1unittest_1_1_copy_bomb.html#a6418885f7a4e2df820dcd3d187b14918", null ],
+    [ "sCount", "structmoonray_1_1geom_1_1unittest_1_1_copy_bomb.html#a1b8079dfe0cc422033ab3876aecd20d3", null ],
     [ "ticks", "structmoonray_1_1geom_1_1unittest_1_1_copy_bomb.html#a9df05cec021db30a8d99c6f4d4f7a5a2", null ]
 ];

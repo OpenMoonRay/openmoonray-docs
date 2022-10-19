@@ -6,6 +6,8 @@ var classmoonray_1_1pbr_1_1_under_clearcoat_bsdf_factory =
     ] ],
     [ "UnderClearcoatBsdfFactory", "classmoonray_1_1pbr_1_1_under_clearcoat_bsdf_factory.html#ad9c2aa2ce6b500799d8a37685c43581c", null ],
     [ "getBsdfv", "classmoonray_1_1pbr_1_1_under_clearcoat_bsdf_factory.html#a59a661887bdc15fe4eb0dcd7f9ebd0b3", null ],
+    [ "ispcArena", "classmoonray_1_1pbr_1_1_under_clearcoat_bsdf_factory.html#a686cc34b2b7c6ea7505a3e777cf0a1ef", null ],
+    [ "ispcFrame", "classmoonray_1_1pbr_1_1_under_clearcoat_bsdf_factory.html#ab25d63f51cbcdc9cafc94e154217d11a", null ],
     [ "operator()", "classmoonray_1_1pbr_1_1_under_clearcoat_bsdf_factory.html#ace38eefb1a9d806d544b4fed2a42e99b", null ],
     [ "setRoughness", "classmoonray_1_1pbr_1_1_under_clearcoat_bsdf_factory.html#ab7a0a02b31b5517aafbed7a80c6eff73", null ],
     [ "mAttenuationColor", "classmoonray_1_1pbr_1_1_under_clearcoat_bsdf_factory.html#aeebf259fe6b42961024fd327c84a222a", null ],

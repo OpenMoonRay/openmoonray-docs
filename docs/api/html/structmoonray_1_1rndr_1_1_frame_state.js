@@ -1,5 +1,7 @@
 var structmoonray_1_1rndr_1_1_frame_state =
 [
+    [ "hudValidation", "structmoonray_1_1rndr_1_1_frame_state.html#ae866b842d4e4e31362cde62194fe01c1", null ],
+    [ "FRAME_STATE_MEMBERS", "structmoonray_1_1rndr_1_1_frame_state.html#af16d38355d8162983e8d3e6cfd7e678a", null ],
     [ "mCheckpointBgWrite", "structmoonray_1_1rndr_1_1_frame_state.html#a738d1b1a430f53da61b37c718f3af9f2", null ],
     [ "mCheckpointInterval", "structmoonray_1_1rndr_1_1_frame_state.html#aec25ea1a3596c409cf0077ab7d23a8bc", null ],
     [ "mCheckpointMode", "structmoonray_1_1rndr_1_1_frame_state.html#a4d07fffc24965b4e71538110ab6b7dbd", null ],

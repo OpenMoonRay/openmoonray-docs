@@ -1,13 +1,26 @@
 var classmoonray_1_1shading_1_1_t_l_state =
 [
+    [ "Arena", "classmoonray_1_1shading_1_1_t_l_state.html#a2cbcf54325d1f30b2b0129adeb030c52", null ],
     [ "ExclusiveAccumulators", "classmoonray_1_1shading_1_1_t_l_state.html#afa2464b8178d5c5078848afc45d6cdde", null ],
+    [ "Perthread", "classmoonray_1_1shading_1_1_t_l_state.html#a785c9f95acc509278897b5e5d88e3639", null ],
+    [ "TextureSystem", "classmoonray_1_1shading_1_1_t_l_state.html#ab8bfb7e499ca08f332277eea34c02d51", null ],
+    [ "ThreadLocalAccumulator", "classmoonray_1_1shading_1_1_t_l_state.html#a732cc2c59497c11aac4dcc158ebcf0b0", null ],
     [ "TLState", "classmoonray_1_1shading_1_1_t_l_state.html#a45c22b13103ee400a1d3635b370e23fa", null ],
     [ "~TLState", "classmoonray_1_1shading_1_1_t_l_state.html#a620abae1a57b0f57c29725c756317dfd", null ],
     [ "allocTls", "classmoonray_1_1shading_1_1_t_l_state.html#a8f4d362a3c280828d346d880613a0123", null ],
+    [ "cleanUpPrivate", "classmoonray_1_1shading_1_1_t_l_state.html#a36b250d8422b92f189693abfc19bad7b", null ],
     [ "clearAttributeOffsets", "classmoonray_1_1shading_1_1_t_l_state.html#a1df9acbd545f2a632099b045bcad6e95", null ],
     [ "DISALLOW_COPY_OR_ASSIGNMENT", "classmoonray_1_1shading_1_1_t_l_state.html#a8d2116b7c34c4368d47a357566e12106", null ],
     [ "getAttributeOffsetsFromRootShader", "classmoonray_1_1shading_1_1_t_l_state.html#a446531a6fcc45448ca7abd07521f72b7", null ],
+    [ "getInternalExclusiveAccumulatorsPtr", "classmoonray_1_1shading_1_1_t_l_state.html#a8ec9512b5ad02a728ea91b8c98eb3495", null ],
     [ "hudValidation", "classmoonray_1_1shading_1_1_t_l_state.html#a3f55883055f34793fa81b9e212330bc5", null ],
+    [ "initPrivate", "classmoonray_1_1shading_1_1_t_l_state.html#ababb20cf8ccec22f50173e9fc619c99c", null ],
+    [ "initTexturingSupport", "classmoonray_1_1shading_1_1_t_l_state.html#a3afd809fb18766e15d5017f87c07ac54", null ],
+    [ "isIspcAccumulatorRunning", "classmoonray_1_1shading_1_1_t_l_state.html#a37c8148aa9fb1fd53ebcabacd4a8073d", null ],
     [ "reset", "classmoonray_1_1shading_1_1_t_l_state.html#a94d4e292ee8d8c720cc16df103b6bbf4", null ],
-    [ "SHADING_TL_STATE_MEMBERS", "classmoonray_1_1shading_1_1_t_l_state.html#a83013d43a78e08d19d146e459fca2f92", null ]
+    [ "startIspcAccumulator", "classmoonray_1_1shading_1_1_t_l_state.html#a7856701c07013bded4ceb21c0adaefbd", null ],
+    [ "stopIspcAccumulator", "classmoonray_1_1shading_1_1_t_l_state.html#adc38e28ffbf106be9dadf9d35b711b47", null ],
+    [ "BASE_TL_STATE_MEMBERS", "classmoonray_1_1shading_1_1_t_l_state.html#af1fa533aed3a392809bd026b75ca0f1e", null ],
+    [ "SHADING_TL_STATE_MEMBERS", "classmoonray_1_1shading_1_1_t_l_state.html#a83013d43a78e08d19d146e459fca2f92", null ],
+    [ "TEXTURE_TL_STATE_MEMBERS", "classmoonray_1_1shading_1_1_t_l_state.html#abe9fdec2518c2ba59a711891572b3ddb", null ]
 ];

@@ -16,6 +16,7 @@ var classmoonray_1_1rt_1_1_g_p_u_b_v_h_builder =
     [ "visitInstance", "classmoonray_1_1rt_1_1_g_p_u_b_v_h_builder.html#ab33f7064ccc9b26e82103b7a064b9798", null ],
     [ "visitPoints", "classmoonray_1_1rt_1_1_g_p_u_b_v_h_builder.html#a1fbdc28eb2332d87704f47e5f9f573fd", null ],
     [ "visitPolygonMesh", "classmoonray_1_1rt_1_1_g_p_u_b_v_h_builder.html#a7ec8f58878c75dd1568fc5e5a9627e1f", null ],
+    [ "visitPrimitive", "classmoonray_1_1rt_1_1_g_p_u_b_v_h_builder.html#ac19902f40208b82fc96f816a872ddba8", null ],
     [ "visitPrimitiveGroup", "classmoonray_1_1rt_1_1_g_p_u_b_v_h_builder.html#a924ba366de61b813a4f133b8dd7c6ade", null ],
     [ "visitSphere", "classmoonray_1_1rt_1_1_g_p_u_b_v_h_builder.html#ae1ef286004c6d4a2a2695ff23a38f8e2", null ],
     [ "visitSubdivisionMesh", "classmoonray_1_1rt_1_1_g_p_u_b_v_h_builder.html#a9e3c35bb06bf28c91eaf537f02e498cd", null ],

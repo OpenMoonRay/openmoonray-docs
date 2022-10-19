@@ -21,11 +21,14 @@ var classmoonray_1_1geom_1_1_procedural =
     [ "isLeaf", "classmoonray_1_1geom_1_1_procedural.html#a2758645208992e901b7acf367ddd9f86", null ],
     [ "isReference", "classmoonray_1_1geom_1_1_procedural.html#a9399716b25e8ae4b5283d3647529e83d", null ],
     [ "operator=", "classmoonray_1_1geom_1_1_procedural.html#a6e3d3e92be8243d0f49db32af9d93c32", null ],
+    [ "refCount", "classmoonray_1_1geom_1_1_procedural.html#ae486fd62364da01ba0bbe80f44ef06cb", null ],
     [ "resetDeformed", "classmoonray_1_1geom_1_1_procedural.html#aeef0efeb37f6c976283571e953a21584", null ],
     [ "setState", "classmoonray_1_1geom_1_1_procedural.html#a6ebacb9009306f0f05c8d27453393cac", null ],
+    [ "swap", "classmoonray_1_1geom_1_1_procedural.html#ae18ebcdeb1ded4b22dd43471196712b0", null ],
     [ "transformToReference", "classmoonray_1_1geom_1_1_procedural.html#a4dc02ae950319b84f6e3fd30baab76dc", null ],
     [ "update", "classmoonray_1_1geom_1_1_procedural.html#a14eea8cd3cab89dd456bf92d446bbd5a", null ],
     [ "internal::PrimitivePrivateAccess", "classmoonray_1_1geom_1_1_procedural.html#aeee764d49db34982e2ede4f91b0b79ca", null ],
     [ "mDeformed", "classmoonray_1_1geom_1_1_procedural.html#abb4aa4e117155933f987362a10865eca", null ],
-    [ "mState", "classmoonray_1_1geom_1_1_procedural.html#a6f90f2f027ad8aa80c8cbdaf0421c3f2", null ]
+    [ "mState", "classmoonray_1_1geom_1_1_procedural.html#a6f90f2f027ad8aa80c8cbdaf0421c3f2", null ],
+    [ "refCounter", "classmoonray_1_1geom_1_1_procedural.html#ac6a43483737db00262fc54d68b41c211", null ]
 ];

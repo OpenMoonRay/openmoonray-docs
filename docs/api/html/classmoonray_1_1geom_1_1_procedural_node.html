@@ -92,11 +92,14 @@ $(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1_procedural_no
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1geom_1_1_procedural_node-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">moonray::geom::ProceduralNode Class Reference</div></div>
+  <div class="headertitle"><div class="title">moonray::geom::ProceduralNode Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -119,6 +122,11 @@ Inheritance diagram for moonray::geom::ProceduralNode:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural_node_1_1_impl.html">Impl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a54f90afbf54b4a1df6eee23fabfb1c60"><td class="memItemLeft" align="right" valign="top">typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a54f90afbf54b4a1df6eee23fabfb1c60">size_type</a></td></tr>
+<tr class="separator:a54f90afbf54b4a1df6eee23fabfb1c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -161,95 +169,89 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a62348225b8485c364292afdbe24bea07"><td class="memItemLeft" align="right" valign="top">virtual const std::shared_ptr&lt; <a class="el" href="classmoonray_1_1geom_1_1_shared_primitive.html">SharedPrimitive</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural_node.html#a62348225b8485c364292afdbe24bea07">getReference</a> () const override</td></tr>
 <tr class="memdesc:a62348225b8485c364292afdbe24bea07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the <a class="el" href="classmoonray_1_1geom_1_1_shared_primitive.html">SharedPrimitive</a> stored in this procedural when the owner geometry is referenced by other geometry.  <a href="classmoonray_1_1geom_1_1_procedural_node.html#a62348225b8485c364292afdbe24bea07">More...</a><br /></td></tr>
 <tr class="separator:a62348225b8485c364292afdbe24bea07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classmoonray_1_1geom_1_1_procedural"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmoonray_1_1geom_1_1_procedural')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmoonray_1_1geom_1_1_procedural.html">moonray::geom::Procedural</a></td></tr>
-<tr class="memitem:a136bbd3e614dda40ed5ffdcaa786a6fd inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a136bbd3e614dda40ed5ffdcaa786a6fd">Procedural</a> (const <a class="el" href="classmoonray_1_1geom_1_1_state.html">State</a> &amp;state)</td></tr>
-<tr class="memdesc:a136bbd3e614dda40ed5ffdcaa786a6fd inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor / Destructor.  <a href="classmoonray_1_1geom_1_1_procedural.html#a136bbd3e614dda40ed5ffdcaa786a6fd">More...</a><br /></td></tr>
-<tr class="separator:a136bbd3e614dda40ed5ffdcaa786a6fd inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4e76ce0907c78216fe7c44dec60c6ec inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#ad4e76ce0907c78216fe7c44dec60c6ec">~Procedural</a> ()=default</td></tr>
-<tr class="separator:ad4e76ce0907c78216fe7c44dec60c6ec inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95620f06267d1ee823e26cb8d0951819 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a95620f06267d1ee823e26cb8d0951819">Procedural</a> (const <a class="el" href="classmoonray_1_1geom_1_1_procedural.html">Procedural</a> &amp;other)=delete</td></tr>
-<tr class="separator:a95620f06267d1ee823e26cb8d0951819 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e3d3e92be8243d0f49db32af9d93c32 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmoonray_1_1geom_1_1_procedural.html">Procedural</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a6e3d3e92be8243d0f49db32af9d93c32">operator=</a> (const <a class="el" href="classmoonray_1_1geom_1_1_procedural.html">Procedural</a> &amp;other)=delete</td></tr>
-<tr class="separator:a6e3d3e92be8243d0f49db32af9d93c32 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2758645208992e901b7acf367ddd9f86 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a2758645208992e901b7acf367ddd9f86">isLeaf</a> () const =0</td></tr>
-<tr class="memdesc:a2758645208992e901b7acf367ddd9f86 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this procedural a leaf procedural.  <a href="classmoonray_1_1geom_1_1_procedural.html#a2758645208992e901b7acf367ddd9f86">More...</a><br /></td></tr>
-<tr class="separator:a2758645208992e901b7acf367ddd9f86 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ac794716cd3ca19794fadd4dffc211d inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacemoonray_1_1geom.html#a0f7237d1fa0a8544984c7889b6f5fe28">BBox3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a5ac794716cd3ca19794fadd4dffc211d">bound</a> (const <a class="el" href="classmoonray_1_1geom_1_1_generate_context.html">GenerateContext</a> &amp;generateContext, const <a class="el" href="namespacemoonray_1_1geom.html#ab7892247efa392e8a034ebe31f7bebd3">Mat43</a> &amp;parent2render) const</td></tr>
-<tr class="separator:a5ac794716cd3ca19794fadd4dffc211d inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a4824f28f6aac011a42a87f012cb995 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a7a4824f28f6aac011a42a87f012cb995">generate</a> (const <a class="el" href="classmoonray_1_1geom_1_1_generate_context.html">GenerateContext</a> &amp;generateContext, const <a class="el" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> &amp;parent2render)=0</td></tr>
-<tr class="memdesc:a7a4824f28f6aac011a42a87f012cb995 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation should create child procedurals / geometric Primitives.  <a href="classmoonray_1_1geom_1_1_procedural.html#a7a4824f28f6aac011a42a87f012cb995">More...</a><br /></td></tr>
-<tr class="separator:a7a4824f28f6aac011a42a87f012cb995 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14eea8cd3cab89dd456bf92d446bbd5a inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a14eea8cd3cab89dd456bf92d446bbd5a">update</a> (const <a class="el" href="classmoonray_1_1geom_1_1_update_context.html">UpdateContext</a> &amp;updateContext, const <a class="el" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> &amp;parent2render)=0</td></tr>
-<tr class="memdesc:a14eea8cd3cab89dd456bf92d446bbd5a inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation should update child procedurals / geometric Primitives.  <a href="classmoonray_1_1geom_1_1_procedural.html#a14eea8cd3cab89dd456bf92d446bbd5a">More...</a><br /></td></tr>
-<tr class="separator:a14eea8cd3cab89dd456bf92d446bbd5a inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ce5fed2dfe23adcd6715a366236eadb inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a3ce5fed2dfe23adcd6715a366236eadb">forEachPrimitive</a> (<a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html">PrimitiveVisitor</a> &amp;visitor, bool parallel=true)=0</td></tr>
-<tr class="memdesc:a3ce5fed2dfe23adcd6715a366236eadb inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each <a class="el" href="classmoonray_1_1geom_1_1_primitive.html" title="base class for all primitive types.">Primitive</a> in this procedural, apply a visitor function.  <a href="classmoonray_1_1geom_1_1_procedural.html#a3ce5fed2dfe23adcd6715a366236eadb">More...</a><br /></td></tr>
-<tr class="separator:a3ce5fed2dfe23adcd6715a366236eadb inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeed69cfb64578282a58be5ef2f1318ff inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#aeed69cfb64578282a58be5ef2f1318ff">forEachStatic</a> (<a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html">PrimitiveVisitor</a> &amp;visitor, bool parallel=true)=0</td></tr>
-<tr class="memdesc:aeed69cfb64578282a58be5ef2f1318ff inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each static <a class="el" href="classmoonray_1_1geom_1_1_primitive.html" title="base class for all primitive types.">Primitive</a>, apply a visitor function.  <a href="classmoonray_1_1geom_1_1_procedural.html#aeed69cfb64578282a58be5ef2f1318ff">More...</a><br /></td></tr>
-<tr class="separator:aeed69cfb64578282a58be5ef2f1318ff inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9909f9e3ff226f875992eb1b0e05a2ca inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a9909f9e3ff226f875992eb1b0e05a2ca">forEachDynamic</a> (<a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html">PrimitiveVisitor</a> &amp;visitor, bool parallel=true)=0</td></tr>
-<tr class="memdesc:a9909f9e3ff226f875992eb1b0e05a2ca inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each dynamic <a class="el" href="classmoonray_1_1geom_1_1_primitive.html" title="base class for all primitive types.">Primitive</a>, apply a visitor function.  <a href="classmoonray_1_1geom_1_1_procedural.html#a9909f9e3ff226f875992eb1b0e05a2ca">More...</a><br /></td></tr>
-<tr class="separator:a9909f9e3ff226f875992eb1b0e05a2ca inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85193bccd63a137e9a224c2496d95a0f inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a85193bccd63a137e9a224c2496d95a0f">forEachDeformable</a> (<a class="el" href="classmoonray_1_1geom_1_1_primitive_visitor.html">PrimitiveVisitor</a> &amp;visitor, bool parallel=true)=0</td></tr>
-<tr class="memdesc:a85193bccd63a137e9a224c2496d95a0f inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each deformable <a class="el" href="classmoonray_1_1geom_1_1_primitive.html" title="base class for all primitive types.">Primitive</a>, apply a visitor function.  <a href="classmoonray_1_1geom_1_1_procedural.html#a85193bccd63a137e9a224c2496d95a0f">More...</a><br /></td></tr>
-<tr class="separator:a85193bccd63a137e9a224c2496d95a0f inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a692954e3656d11828f200d860eb242c3 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a54f90afbf54b4a1df6eee23fabfb1c60">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a692954e3656d11828f200d860eb242c3">getPrimitivesCount</a> () const =0</td></tr>
-<tr class="memdesc:a692954e3656d11828f200d860eb242c3 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="mdescLeft">&#160;</td><td class="mdescRight">The count of primitives in this procedural.  <a href="classmoonray_1_1geom_1_1_procedural.html#a692954e3656d11828f200d860eb242c3">More...</a><br /></td></tr>
-<tr class="separator:a692954e3656d11828f200d860eb242c3 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4a6da49dd9d23e3f2f5bba725d69cf6 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a54f90afbf54b4a1df6eee23fabfb1c60">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#ae4a6da49dd9d23e3f2f5bba725d69cf6">getMemory</a> ()</td></tr>
-<tr class="memdesc:ae4a6da49dd9d23e3f2f5bba725d69cf6 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the primitives memory usage in bytes.  <a href="classmoonray_1_1geom_1_1_procedural.html#ae4a6da49dd9d23e3f2f5bba725d69cf6">More...</a><br /></td></tr>
-<tr class="separator:ae4a6da49dd9d23e3f2f5bba725d69cf6 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d5098e9673b60320cd5e5f1504b3a25 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmoonray_1_1geom_1_1_geometry_statistics.html">GeometryStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a6d5098e9673b60320cd5e5f1504b3a25">getStatistics</a> () const</td></tr>
-<tr class="separator:a6d5098e9673b60320cd5e5f1504b3a25 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6823e5b5e0a590a2512300ab18d31598 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacemoonray_1_1geom.html#ab7892247efa392e8a034ebe31f7bebd3">Mat43</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a6823e5b5e0a590a2512300ab18d31598">getProc2Parent</a> () const</td></tr>
-<tr class="memdesc:a6823e5b5e0a590a2512300ab18d31598 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get transform from procedural space to parent space.  <a href="classmoonray_1_1geom_1_1_procedural.html#a6823e5b5e0a590a2512300ab18d31598">More...</a><br /></td></tr>
-<tr class="separator:a6823e5b5e0a590a2512300ab18d31598 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96cf49ebf9230be608f73e3bb9a1d616 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a96cf49ebf9230be608f73e3bb9a1d616">clear</a> ()=0</td></tr>
-<tr class="memdesc:a96cf49ebf9230be608f73e3bb9a1d616 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all the primitives in this procedural.  <a href="classmoonray_1_1geom_1_1_procedural.html#a96cf49ebf9230be608f73e3bb9a1d616">More...</a><br /></td></tr>
-<tr class="separator:a96cf49ebf9230be608f73e3bb9a1d616 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9399716b25e8ae4b5283d3647529e83d inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a9399716b25e8ae4b5283d3647529e83d">isReference</a> () const =0</td></tr>
-<tr class="memdesc:a9399716b25e8ae4b5283d3647529e83d inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the generated primitives in this procedural can be referenced by other geometry procedural through <a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a5ab6d0bf3c263ef02e3471eebffcccd2" title="Query the SharedPrimitive stored in this procedural when the owner geometry is referenced by other ge...">getReference()</a>  <a href="classmoonray_1_1geom_1_1_procedural.html#a9399716b25e8ae4b5283d3647529e83d">More...</a><br /></td></tr>
-<tr class="separator:a9399716b25e8ae4b5283d3647529e83d inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ab6d0bf3c263ef02e3471eebffcccd2 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">virtual const std::shared_ptr&lt; <a class="el" href="classmoonray_1_1geom_1_1_shared_primitive.html">SharedPrimitive</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a5ab6d0bf3c263ef02e3471eebffcccd2">getReference</a> () const =0</td></tr>
-<tr class="memdesc:a5ab6d0bf3c263ef02e3471eebffcccd2 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the <a class="el" href="classmoonray_1_1geom_1_1_shared_primitive.html">SharedPrimitive</a> stored in this procedural when the owner geometry is referenced by other geometry.  <a href="classmoonray_1_1geom_1_1_procedural.html#a5ab6d0bf3c263ef02e3471eebffcccd2">More...</a><br /></td></tr>
-<tr class="separator:a5ab6d0bf3c263ef02e3471eebffcccd2 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2c7e63eba32131664504c4a55374113 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#aa2c7e63eba32131664504c4a55374113">deformed</a> () const</td></tr>
-<tr class="separator:aa2c7e63eba32131664504c4a55374113 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeef0efeb37f6c976283571e953a21584 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#aeef0efeb37f6c976283571e953a21584">resetDeformed</a> ()</td></tr>
-<tr class="separator:aeef0efeb37f6c976283571e953a21584 inherit pub_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac794716cd3ca19794fadd4dffc211d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacemoonray_1_1geom.html#a0f7237d1fa0a8544984c7889b6f5fe28">BBox3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a5ac794716cd3ca19794fadd4dffc211d">bound</a> (const <a class="el" href="classmoonray_1_1geom_1_1_generate_context.html">GenerateContext</a> &amp;generateContext, const <a class="el" href="namespacemoonray_1_1geom.html#ab7892247efa392e8a034ebe31f7bebd3">Mat43</a> &amp;parent2render) const</td></tr>
+<tr class="separator:a5ac794716cd3ca19794fadd4dffc211d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a4824f28f6aac011a42a87f012cb995"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a7a4824f28f6aac011a42a87f012cb995">generate</a> (const <a class="el" href="classmoonray_1_1geom_1_1_generate_context.html">GenerateContext</a> &amp;generateContext, const <a class="el" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> &amp;parent2render)=0</td></tr>
+<tr class="memdesc:a7a4824f28f6aac011a42a87f012cb995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation should create child procedurals / geometric Primitives.  <a href="classmoonray_1_1geom_1_1_procedural.html#a7a4824f28f6aac011a42a87f012cb995">More...</a><br /></td></tr>
+<tr class="separator:a7a4824f28f6aac011a42a87f012cb995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14eea8cd3cab89dd456bf92d446bbd5a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a14eea8cd3cab89dd456bf92d446bbd5a">update</a> (const <a class="el" href="classmoonray_1_1geom_1_1_update_context.html">UpdateContext</a> &amp;updateContext, const <a class="el" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> &amp;parent2render)=0</td></tr>
+<tr class="memdesc:a14eea8cd3cab89dd456bf92d446bbd5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation should update child procedurals / geometric Primitives.  <a href="classmoonray_1_1geom_1_1_procedural.html#a14eea8cd3cab89dd456bf92d446bbd5a">More...</a><br /></td></tr>
+<tr class="separator:a14eea8cd3cab89dd456bf92d446bbd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a6da49dd9d23e3f2f5bba725d69cf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a54f90afbf54b4a1df6eee23fabfb1c60">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#ae4a6da49dd9d23e3f2f5bba725d69cf6">getMemory</a> ()</td></tr>
+<tr class="memdesc:ae4a6da49dd9d23e3f2f5bba725d69cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the primitives memory usage in bytes.  <a href="classmoonray_1_1geom_1_1_procedural.html#ae4a6da49dd9d23e3f2f5bba725d69cf6">More...</a><br /></td></tr>
+<tr class="separator:ae4a6da49dd9d23e3f2f5bba725d69cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d5098e9673b60320cd5e5f1504b3a25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmoonray_1_1geom_1_1_geometry_statistics.html">GeometryStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a6d5098e9673b60320cd5e5f1504b3a25">getStatistics</a> () const</td></tr>
+<tr class="separator:a6d5098e9673b60320cd5e5f1504b3a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6823e5b5e0a590a2512300ab18d31598"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacemoonray_1_1geom.html#ab7892247efa392e8a034ebe31f7bebd3">Mat43</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a6823e5b5e0a590a2512300ab18d31598">getProc2Parent</a> () const</td></tr>
+<tr class="memdesc:a6823e5b5e0a590a2512300ab18d31598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get transform from procedural space to parent space.  <a href="classmoonray_1_1geom_1_1_procedural.html#a6823e5b5e0a590a2512300ab18d31598">More...</a><br /></td></tr>
+<tr class="separator:a6823e5b5e0a590a2512300ab18d31598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c7e63eba32131664504c4a55374113"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#aa2c7e63eba32131664504c4a55374113">deformed</a> () const</td></tr>
+<tr class="separator:aa2c7e63eba32131664504c4a55374113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef0efeb37f6c976283571e953a21584"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#aeef0efeb37f6c976283571e953a21584">resetDeformed</a> ()</td></tr>
+<tr class="separator:aeef0efeb37f6c976283571e953a21584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6ebacb9009306f0f05c8d27453393cac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a6ebacb9009306f0f05c8d27453393cac">setState</a> (const <a class="el" href="classmoonray_1_1geom_1_1_state.html">State</a> &amp;state)</td></tr>
+<tr class="memdesc:a6ebacb9009306f0f05c8d27453393cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify / Access the state associated with this procedural.  <a href="classmoonray_1_1geom_1_1_procedural.html#a6ebacb9009306f0f05c8d27453393cac">More...</a><br /></td></tr>
+<tr class="separator:a6ebacb9009306f0f05c8d27453393cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada06afba20f2a5045ff1a66ed0719b2d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmoonray_1_1geom_1_1_state.html">State</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#ada06afba20f2a5045ff1a66ed0719b2d">getState</a> () const</td></tr>
+<tr class="separator:ada06afba20f2a5045ff1a66ed0719b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:abb4aa4e117155933f987362a10865eca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#abb4aa4e117155933f987362a10865eca">mDeformed</a></td></tr>
+<tr class="separator:abb4aa4e117155933f987362a10865eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a8849f91c430e1ac0a2849153bd0364ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural_node.html#a8849f91c430e1ac0a2849153bd0364ee">transformToReference</a> () override</td></tr>
 <tr class="separator:a8849f91c430e1ac0a2849153bd0364ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae18ebcdeb1ded4b22dd43471196712b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_ref_count.html#ae18ebcdeb1ded4b22dd43471196712b0">swap</a> (<a class="el" href="classscene__rdl2_1_1util_1_1_ref_count.html">RefCount</a> &amp;) noexcept</td></tr>
+<tr class="separator:ae18ebcdeb1ded4b22dd43471196712b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae486fd62364da01ba0bbe80f44ef06cb"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_ref_count.html#ae486fd62364da01ba0bbe80f44ef06cb">refCount</a> () const</td></tr>
+<tr class="separator:ae486fd62364da01ba0bbe80f44ef06cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a16d7b4a9826824726b777824c49e848c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classmoonray_1_1geom_1_1_procedural_node_1_1_impl.html">Impl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural_node.html#a16d7b4a9826824726b777824c49e848c">mImpl</a></td></tr>
 <tr class="separator:a16d7b4a9826824726b777824c49e848c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classmoonray_1_1geom_1_1_procedural"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmoonray_1_1geom_1_1_procedural')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmoonray_1_1geom_1_1_procedural.html">moonray::geom::Procedural</a></td></tr>
-<tr class="memitem:a54f90afbf54b4a1df6eee23fabfb1c60 inherit pub_types_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a54f90afbf54b4a1df6eee23fabfb1c60">size_type</a></td></tr>
-<tr class="separator:a54f90afbf54b4a1df6eee23fabfb1c60 inherit pub_types_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classmoonray_1_1geom_1_1_procedural"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmoonray_1_1geom_1_1_procedural')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmoonray_1_1geom_1_1_procedural.html">moonray::geom::Procedural</a></td></tr>
-<tr class="memitem:a6ebacb9009306f0f05c8d27453393cac inherit pro_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a6ebacb9009306f0f05c8d27453393cac">setState</a> (const <a class="el" href="classmoonray_1_1geom_1_1_state.html">State</a> &amp;state)</td></tr>
-<tr class="memdesc:a6ebacb9009306f0f05c8d27453393cac inherit pro_methods_classmoonray_1_1geom_1_1_procedural"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify / Access the state associated with this procedural.  <a href="classmoonray_1_1geom_1_1_procedural.html#a6ebacb9009306f0f05c8d27453393cac">More...</a><br /></td></tr>
-<tr class="separator:a6ebacb9009306f0f05c8d27453393cac inherit pro_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada06afba20f2a5045ff1a66ed0719b2d inherit pro_methods_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmoonray_1_1geom_1_1_state.html">State</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#ada06afba20f2a5045ff1a66ed0719b2d">getState</a> () const</td></tr>
-<tr class="separator:ada06afba20f2a5045ff1a66ed0719b2d inherit pro_methods_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classmoonray_1_1geom_1_1_procedural"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmoonray_1_1geom_1_1_procedural')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classmoonray_1_1geom_1_1_procedural.html">moonray::geom::Procedural</a></td></tr>
-<tr class="memitem:abb4aa4e117155933f987362a10865eca inherit pro_attribs_classmoonray_1_1geom_1_1_procedural"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#abb4aa4e117155933f987362a10865eca">mDeformed</a></td></tr>
-<tr class="separator:abb4aa4e117155933f987362a10865eca inherit pro_attribs_classmoonray_1_1geom_1_1_procedural"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f90f2f027ad8aa80c8cbdaf0421c3f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1geom_1_1_state.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a6f90f2f027ad8aa80c8cbdaf0421c3f2">mState</a></td></tr>
+<tr class="separator:a6f90f2f027ad8aa80c8cbdaf0421c3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a43483737db00262fc54d68b41c211"><td class="memItemLeft" align="right" valign="top">std::atomic_uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_ref_count.html#ac6a43483737db00262fc54d68b41c211">refCounter</a></td></tr>
+<tr class="separator:ac6a43483737db00262fc54d68b41c211"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A <a class="el" href="classmoonray_1_1geom_1_1_procedural_node.html" title="A ProceduralNode can be sub-classed by procedurals that subdivide themselves into sub-procedurals.">ProceduralNode</a> can be sub-classed by procedurals that subdivide themselves into sub-procedurals. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>this class is not actually in use at the moment. It will be used for nested procedural support that a procedural node can generate sub-procedural to create primitives (and sub-procedural potentially)</dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_procedural_node_8h_source.html#l00030">30</a> of file <a class="el" href="_procedural_node_8h_source.html">ProceduralNode.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a54f90afbf54b4a1df6eee23fabfb1c60" name="a54f90afbf54b4a1df6eee23fabfb1c60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f90afbf54b4a1df6eee23fabfb1c60">&#9670;&#160;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef size_t <a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a54f90afbf54b4a1df6eee23fabfb1c60">moonray::geom::Procedural::size_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_procedural_8h_source.html#l00070">70</a> of file <a class="el" href="_procedural_8h_source.html">Procedural.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2741441a57b624340f86b2eb56a5c71c" name="a2741441a57b624340f86b2eb56a5c71c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2741441a57b624340f86b2eb56a5c71c">&#9670;&#160;</a></span>ProceduralNode() <span class="overload">[1/2]</span></h2>
 
@@ -336,6 +338,47 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5ac794716cd3ca19794fadd4dffc211d" name="a5ac794716cd3ca19794fadd4dffc211d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ac794716cd3ca19794fadd4dffc211d">&#9670;&#160;</a></span>bound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacemoonray_1_1geom.html#a0f7237d1fa0a8544984c7889b6f5fe28">BBox3f</a> moonray::geom::Procedural::bound </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1geom_1_1_generate_context.html">GenerateContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>generateContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacemoonray_1_1geom.html#ab7892247efa392e8a034ebe31f7bebd3">Mat43</a> &amp;&#160;</td>
+          <td class="paramname"><em>parent2render</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Implementation must compute and return a conservative estimate of its bounding box in render space (according to state.getProc2Parent * parent2render transform) The default implementation will return an invalid bound, in which case the procedural will be immediately generated and its bound computed by the renderer based on the generated sub-procedurals / primitives. </p>
+
+<p class="definition">Definition at line <a class="el" href="_procedural_8h_source.html#l00089">89</a> of file <a class="el" href="_procedural_8h_source.html">Procedural.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   91</span>    {  <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#a0f7237d1fa0a8544984c7889b6f5fe28">BBox3f</a>(scene_rdl2::util::False);  }</div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_a0f7237d1fa0a8544984c7889b6f5fe28"><div class="ttname"><a href="namespacemoonray_1_1geom.html#a0f7237d1fa0a8544984c7889b6f5fe28">moonray::geom::BBox3f</a></div><div class="ttdeci">scene_rdl2::math::BBox3f BBox3f</div><div class="ttdef"><b>Definition:</b> <a href="moonray-main_2lib_2rendering_2geom_2_types_8h_source.html#l00035">Types.h:35</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a836e0833ee768d5e033d148150ce7cfc" name="a836e0833ee768d5e033d148150ce7cfc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a836e0833ee768d5e033d148150ce7cfc">&#9670;&#160;</a></span>clear()</h2>
 
@@ -370,6 +413,35 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  144</span>    }</div>
 <div class="line"><span class="lineno">  145</span>    <a class="code hl_variable" href="classmoonray_1_1geom_1_1_procedural_node.html#a16d7b4a9826824726b777824c49e848c">mImpl</a>-&gt;mChildren.clear();</div>
 <div class="line"><span class="lineno">  146</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa2c7e63eba32131664504c4a55374113" name="aa2c7e63eba32131664504c4a55374113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2c7e63eba32131664504c4a55374113">&#9670;&#160;</a></span>deformed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::geom::Procedural::deformed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_procedural_8h_source.html#l00155">155</a> of file <a class="el" href="_procedural_8h_source.html">Procedural.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  155</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_procedural.html#abb4aa4e117155933f987362a10865eca">mDeformed</a>; }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_procedural_html_abb4aa4e117155933f987362a10865eca"><div class="ttname"><a href="classmoonray_1_1geom_1_1_procedural.html#abb4aa4e117155933f987362a10865eca">moonray::geom::Procedural::mDeformed</a></div><div class="ttdeci">bool mDeformed</div><div class="ttdef"><b>Definition:</b> <a href="_procedural_8h_source.html#l00162">Procedural.h:162</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -597,6 +669,46 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a7a4824f28f6aac011a42a87f012cb995" name="a7a4824f28f6aac011a42a87f012cb995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a4824f28f6aac011a42a87f012cb995">&#9670;&#160;</a></span>generate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void moonray::geom::Procedural::generate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1geom_1_1_generate_context.html">GenerateContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>generateContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> &amp;&#160;</td>
+          <td class="paramname"><em>parent2render</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementation should create child procedurals / geometric Primitives. </p>
+
+<p>Implemented in <a class="el" href="classmoonray_1_1geom_1_1_open_vdb_procedural.html#a030b5c8ae8b4ac1eb823eb8c43bbfb9a">moonray::geom::OpenVdbProcedural</a>, <a class="el" href="classmoonray_1_1geom_1_1_template_procedural.html#abee17edcbdbd727b40e4c2328305e44e">moonray::geom::TemplateProcedural</a>, <a class="el" href="classmoonray_1_1geom_1_1_rdl_curve_procedural.html#a087bec96b4812612e1b90a1663e3625e">moonray::geom::RdlCurveProcedural</a>, <a class="el" href="classmoonray_1_1geom_1_1_rdl_mesh_procedural.html#afff2dfd672f9c75b561471ac7fbfbfe4">moonray::geom::RdlMeshProcedural</a>, <a class="el" href="classmoonray_1_1geom_1_1_rdl_point_procedural.html#a66a6b477f12445ae40bc2c114111b4a3">moonray::geom::RdlPointProcedural</a>, <a class="el" href="classmoonray_1_1geom_1_1_template_procedural.html#a010fb3ac7defce311f7906625103a5da">moonray::geom::TemplateProcedural</a>, and <a class="el" href="classmoonray_1_1geom_1_1_rdl_instancer_procedural.html#a6408d5308a817059c350582f1de5243e">moonray::geom::RdlInstancerProcedural</a>.</p>
+
+</div>
+</div>
 <a id="aac8649beee750645a3717b967d187769" name="aac8649beee750645a3717b967d187769"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac8649beee750645a3717b967d187769">&#9670;&#160;</a></span>getChildren()</h2>
 
@@ -618,6 +730,45 @@ Additional Inherited Members</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   54</span>{</div>
 <div class="line"><span class="lineno">   55</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_procedural_node.html#a16d7b4a9826824726b777824c49e848c">mImpl</a>-&gt;mChildren;</div>
 <div class="line"><span class="lineno">   56</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae4a6da49dd9d23e3f2f5bba725d69cf6" name="ae4a6da49dd9d23e3f2f5bba725d69cf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4a6da49dd9d23e3f2f5bba725d69cf6">&#9670;&#160;</a></span>getMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1geom_1_1_procedural.html#a54f90afbf54b4a1df6eee23fabfb1c60">Procedural::size_type</a> moonray::geom::Procedural::getMemory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the primitives memory usage in bytes. </p>
+
+<p class="definition">Definition at line <a class="el" href="_procedural_8cc_source.html#l00126">126</a> of file <a class="el" href="_procedural_8cc_source.html">Procedural.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  127</span>{</div>
+<div class="line"><span class="lineno">  128</span>    tbb::atomic&lt;Primitive::size_type&gt; <a class="code hl_function" href="moonray-main_2cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#aed1fbfe83f8b76764faaac4bbb198d8b">usage</a> {0u};</div>
+<div class="line"><span class="lineno">  129</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#ad0ec64db36f943ec0d9dc7fbf07a2ed4">SharedPrimitiveSet</a> sharedPrimitives;</div>
+<div class="line"><span class="lineno">  130</span>    PrimitiveMemoryAccumulator accumulator(<a class="code hl_function" href="moonray-main_2cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#aed1fbfe83f8b76764faaac4bbb198d8b">usage</a>, sharedPrimitives);</div>
+<div class="line"><span class="lineno">  131</span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1_procedural.html#a3ce5fed2dfe23adcd6715a366236eadb">forEachPrimitive</a>(accumulator);</div>
+<div class="line"><span class="lineno">  132</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="moonray-main_2cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#aed1fbfe83f8b76764faaac4bbb198d8b">usage</a>;</div>
+<div class="line"><span class="lineno">  133</span>}</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_procedural_html_a3ce5fed2dfe23adcd6715a366236eadb"><div class="ttname"><a href="classmoonray_1_1geom_1_1_procedural.html#a3ce5fed2dfe23adcd6715a366236eadb">moonray::geom::Procedural::forEachPrimitive</a></div><div class="ttdeci">virtual void forEachPrimitive(PrimitiveVisitor &amp;visitor, bool parallel=true)=0</div><div class="ttdoc">For each Primitive in this procedural, apply a visitor function.</div></div>
+<div class="ttc" id="amoonray-main_2cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_html_aed1fbfe83f8b76764faaac4bbb198d8b"><div class="ttname"><a href="moonray-main_2cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc.html#aed1fbfe83f8b76764faaac4bbb198d8b">usage</a></div><div class="ttdeci">void usage(char *argv0, const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="moonray-main_2cmd_2brdf__cmd_2brdf__cylinder__extract_2main_8cc_source.html#l00289">main.cc:289</a></div></div>
+<div class="ttc" id="anamespacemoonray_1_1geom_html_ad0ec64db36f943ec0d9dc7fbf07a2ed4"><div class="ttname"><a href="namespacemoonray_1_1geom.html#ad0ec64db36f943ec0d9dc7fbf07a2ed4">moonray::geom::SharedPrimitiveSet</a></div><div class="ttdeci">tbb::concurrent_unordered_set&lt; std::shared_ptr&lt; SharedPrimitive &gt;, SharedPtrHash &gt; SharedPrimitiveSet</div><div class="ttdef"><b>Definition:</b> <a href="_procedural_8h_source.html#l00057">Procedural.h:57</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -659,6 +810,38 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a6823e5b5e0a590a2512300ab18d31598" name="a6823e5b5e0a590a2512300ab18d31598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6823e5b5e0a590a2512300ab18d31598">&#9670;&#160;</a></span>getProc2Parent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacemoonray_1_1geom.html#ab7892247efa392e8a034ebe31f7bebd3">Mat43</a> &amp; moonray::geom::Procedural::getProc2Parent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get transform from procedural space to parent space. </p>
+
+<p class="definition">Definition at line <a class="el" href="_procedural_8h_source.html#l00139">139</a> of file <a class="el" href="_procedural_8h_source.html">Procedural.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  139</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_procedural.html#a6f90f2f027ad8aa80c8cbdaf0421c3f2">mState</a>.<a class="code hl_function" href="classmoonray_1_1geom_1_1_state.html#afa719b7cc34283889e9236cc65a4fde4">getProc2Parent</a>(); }</div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_procedural_html_a6f90f2f027ad8aa80c8cbdaf0421c3f2"><div class="ttname"><a href="classmoonray_1_1geom_1_1_procedural.html#a6f90f2f027ad8aa80c8cbdaf0421c3f2">moonray::geom::Procedural::mState</a></div><div class="ttdeci">State mState</div><div class="ttdef"><b>Definition:</b> <a href="_procedural_8h_source.html#l00173">Procedural.h:173</a></div></div>
+<div class="ttc" id="aclassmoonray_1_1geom_1_1_state_html_afa719b7cc34283889e9236cc65a4fde4"><div class="ttname"><a href="classmoonray_1_1geom_1_1_state.html#afa719b7cc34283889e9236cc65a4fde4">moonray::geom::State::getProc2Parent</a></div><div class="ttdeci">const Mat43 &amp; getProc2Parent() const</div><div class="ttdef"><b>Definition:</b> <a href="geom_2_state_8h_source.html#l00040">State.h:40</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a62348225b8485c364292afdbe24bea07" name="a62348225b8485c364292afdbe24bea07"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62348225b8485c364292afdbe24bea07">&#9670;&#160;</a></span>getReference()</h2>
 
@@ -690,6 +873,70 @@ Additional Inherited Members</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">  156</span>{</div>
 <div class="line"><span class="lineno">  157</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_procedural_node.html#a16d7b4a9826824726b777824c49e848c">mImpl</a>-&gt;getReference();</div>
 <div class="line"><span class="lineno">  158</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ada06afba20f2a5045ff1a66ed0719b2d" name="ada06afba20f2a5045ff1a66ed0719b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada06afba20f2a5045ff1a66ed0719b2d">&#9670;&#160;</a></span>getState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmoonray_1_1geom_1_1_state.html">State</a> &amp; moonray::geom::Procedural::getState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_procedural_8h_source.html#l00161">161</a> of file <a class="el" href="_procedural_8h_source.html">Procedural.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  161</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1_procedural.html#a6f90f2f027ad8aa80c8cbdaf0421c3f2">mState</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6d5098e9673b60320cd5e5f1504b3a25" name="a6d5098e9673b60320cd5e5f1504b3a25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d5098e9673b60320cd5e5f1504b3a25">&#9670;&#160;</a></span>getStatistics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmoonray_1_1geom_1_1_geometry_statistics.html">GeometryStatistics</a> moonray::geom::Procedural::getStatistics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_procedural_8cc_source.html#l00136">136</a> of file <a class="el" href="_procedural_8cc_source.html">Procedural.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  137</span>{</div>
+<div class="line"><span class="lineno">  138</span>    GeometryStatistics geometryStatistics;</div>
+<div class="line"><span class="lineno">  139</span> </div>
+<div class="line"><span class="lineno">  140</span>    <a class="code hl_typedef" href="namespacemoonray_1_1geom.html#ad0ec64db36f943ec0d9dc7fbf07a2ed4">SharedPrimitiveSet</a> sharedPrimitives;</div>
+<div class="line"><span class="lineno">  141</span>    StatisticsAccumulator accumulator(geometryStatistics, sharedPrimitives);</div>
+<div class="line"><span class="lineno">  142</span>    <span class="keyword">const_cast&lt;</span><a class="code hl_function" href="classmoonray_1_1geom_1_1_procedural.html#a136bbd3e614dda40ed5ffdcaa786a6fd">Procedural</a> *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;<a class="code hl_function" href="classmoonray_1_1geom_1_1_procedural.html#a3ce5fed2dfe23adcd6715a366236eadb">forEachPrimitive</a>(accumulator);</div>
+<div class="line"><span class="lineno">  143</span> </div>
+<div class="line"><span class="lineno">  144</span>    <span class="keywordflow">return</span> geometryStatistics;</div>
+<div class="line"><span class="lineno">  145</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -785,6 +1032,123 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ae486fd62364da01ba0bbe80f44ef06cb" name="ae486fd62364da01ba0bbe80f44ef06cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae486fd62364da01ba0bbe80f44ef06cb">&#9670;&#160;</a></span>refCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="classscene__rdl2_1_1util_1_1_ref_count.html">scene_rdl2::util::RefCount</a>&lt; <a class="el" href="classmoonray_1_1geom_1_1_procedural.html">Procedural</a> , std::default_delete&lt;<a class="el" href="classmoonray_1_1geom_1_1_procedural.html">Procedural</a> &gt;  &gt;::refCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ref_8h_source.html#l00068">68</a> of file <a class="el" href="_ref_8h_source.html">Ref.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classscene__rdl2_1_1util_1_1_ref_count.html#ac6a43483737db00262fc54d68b41c211">refCounter</a>; }</div>
+<div class="ttc" id="aclassscene__rdl2_1_1util_1_1_ref_count_html_ac6a43483737db00262fc54d68b41c211"><div class="ttname"><a href="classscene__rdl2_1_1util_1_1_ref_count.html#ac6a43483737db00262fc54d68b41c211">scene_rdl2::util::RefCount&lt; Procedural &gt;::refCounter</a></div><div class="ttdeci">std::atomic_uint refCounter</div><div class="ttdef"><b>Definition:</b> <a href="_ref_8h_source.html#l00072">Ref.h:72</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aeef0efeb37f6c976283571e953a21584" name="aeef0efeb37f6c976283571e953a21584"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeef0efeb37f6c976283571e953a21584">&#9670;&#160;</a></span>resetDeformed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::geom::Procedural::resetDeformed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_procedural_8h_source.html#l00156">156</a> of file <a class="el" href="_procedural_8h_source.html">Procedural.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  156</span>{ <a class="code hl_variable" href="classmoonray_1_1geom_1_1_procedural.html#abb4aa4e117155933f987362a10865eca">mDeformed</a> = <span class="keyword">false</span>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6ebacb9009306f0f05c8d27453393cac" name="a6ebacb9009306f0f05c8d27453393cac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ebacb9009306f0f05c8d27453393cac">&#9670;&#160;</a></span>setState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moonray::geom::Procedural::setState </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1geom_1_1_state.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Modify / Access the state associated with this procedural. </p>
+
+<p class="definition">Definition at line <a class="el" href="_procedural_8h_source.html#l00160">160</a> of file <a class="el" href="_procedural_8h_source.html">Procedural.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  160</span>{ <a class="code hl_variable" href="classmoonray_1_1geom_1_1_procedural.html#a6f90f2f027ad8aa80c8cbdaf0421c3f2">mState</a> = state; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae18ebcdeb1ded4b22dd43471196712b0" name="ae18ebcdeb1ded4b22dd43471196712b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae18ebcdeb1ded4b22dd43471196712b0">&#9670;&#160;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classscene__rdl2_1_1util_1_1_ref_count.html">scene_rdl2::util::RefCount</a>&lt; <a class="el" href="classmoonray_1_1geom_1_1_procedural.html">Procedural</a> , std::default_delete&lt;<a class="el" href="classmoonray_1_1geom_1_1_procedural.html">Procedural</a> &gt;  &gt;::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscene__rdl2_1_1util_1_1_ref_count.html">RefCount</a>&lt; Procedural &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ref_8h_source.html#l00067">67</a> of file <a class="el" href="_ref_8h_source.html">Ref.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   67</span>{};</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a8849f91c430e1ac0a2849153bd0364ee" name="a8849f91c430e1ac0a2849153bd0364ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8849f91c430e1ac0a2849153bd0364ee">&#9670;&#160;</a></span>transformToReference()</h2>
 
@@ -818,7 +1182,72 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a14eea8cd3cab89dd456bf92d446bbd5a" name="a14eea8cd3cab89dd456bf92d446bbd5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14eea8cd3cab89dd456bf92d446bbd5a">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void moonray::geom::Procedural::update </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1geom_1_1_update_context.html">UpdateContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>updateContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacemoonray_1_1shading.html#ac42657410f98444ece5b9a1b39839f4e">shading::XformSamples</a> &amp;&#160;</td>
+          <td class="paramname"><em>parent2render</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implementation should update child procedurals / geometric Primitives. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>For realtime rendering use. Feature film shader development does not require this functionality. </dd></dl>
+
+<p>Implemented in <a class="el" href="classmoonray_1_1geom_1_1_open_vdb_procedural.html#a457c8766e147938c2df3ad901b65a7d6">moonray::geom::OpenVdbProcedural</a>, <a class="el" href="classmoonray_1_1geom_1_1_template_procedural.html#a18d726a040330cc157109695c743a75d">moonray::geom::TemplateProcedural</a>, <a class="el" href="classmoonray_1_1geom_1_1_rdl_curve_procedural.html#a15bfa1e7d2a4327e03a3246de5f80fbf">moonray::geom::RdlCurveProcedural</a>, <a class="el" href="classmoonray_1_1geom_1_1_rdl_mesh_procedural.html#a2ff2cf32c5e1c04e05f4af9dca6e2c39">moonray::geom::RdlMeshProcedural</a>, <a class="el" href="classmoonray_1_1geom_1_1_rdl_point_procedural.html#a7384f302b7416857fec8bf422baa545c">moonray::geom::RdlPointProcedural</a>, <a class="el" href="classmoonray_1_1geom_1_1_template_procedural.html#ade954c90dedba80d2ed6e897225e6f28">moonray::geom::TemplateProcedural</a>, and <a class="el" href="classmoonray_1_1geom_1_1_rdl_instancer_procedural.html#a1bc26d6cfaf12b2adba9f8b0f9a46f81">moonray::geom::RdlInstancerProcedural</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="abb4aa4e117155933f987362a10865eca" name="abb4aa4e117155933f987362a10865eca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb4aa4e117155933f987362a10865eca">&#9670;&#160;</a></span>mDeformed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moonray::geom::Procedural::mDeformed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_procedural_8h_source.html#l00162">162</a> of file <a class="el" href="_procedural_8h_source.html">Procedural.h</a>.</p>
+
+</div>
+</div>
 <a id="a16d7b4a9826824726b777824c49e848c" name="a16d7b4a9826824726b777824c49e848c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a16d7b4a9826824726b777824c49e848c">&#9670;&#160;</a></span>mImpl</h2>
 
@@ -840,6 +1269,54 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_procedural_node_8h_source.html#l00085">85</a> of file <a class="el" href="_procedural_node_8h_source.html">ProceduralNode.h</a>.</p>
+
+</div>
+</div>
+<a id="a6f90f2f027ad8aa80c8cbdaf0421c3f2" name="a6f90f2f027ad8aa80c8cbdaf0421c3f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f90f2f027ad8aa80c8cbdaf0421c3f2">&#9670;&#160;</a></span>mState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmoonray_1_1geom_1_1_state.html">State</a> moonray::geom::Procedural::mState</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_procedural_8h_source.html#l00173">173</a> of file <a class="el" href="_procedural_8h_source.html">Procedural.h</a>.</p>
+
+</div>
+</div>
+<a id="ac6a43483737db00262fc54d68b41c211" name="ac6a43483737db00262fc54d68b41c211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6a43483737db00262fc54d68b41c211">&#9670;&#160;</a></span>refCounter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic_uint <a class="el" href="classscene__rdl2_1_1util_1_1_ref_count.html">scene_rdl2::util::RefCount</a>&lt; <a class="el" href="classmoonray_1_1geom_1_1_procedural.html">Procedural</a> , std::default_delete&lt;<a class="el" href="classmoonray_1_1geom_1_1_procedural.html">Procedural</a> &gt;  &gt;::refCounter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_ref_8h_source.html#l00072">72</a> of file <a class="el" href="_ref_8h_source.html">Ref.h</a>.</p>
 
 </div>
 </div>

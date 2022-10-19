@@ -7,11 +7,13 @@ var classmoonray_1_1shading_1_1_stochastic_flakes_b_r_d_f =
     [ "getFlakeNormals", "classmoonray_1_1shading_1_1_stochastic_flakes_b_r_d_f.html#aa6633ecd83d5c0ed470e304ca8b6af23", null ],
     [ "getFlakeRandomness", "classmoonray_1_1shading_1_1_stochastic_flakes_b_r_d_f.html#ac75704c48848f48d8d3e7c3e71c2c2bd", null ],
     [ "getFlakeRoughness", "classmoonray_1_1shading_1_1_stochastic_flakes_b_r_d_f.html#a944309d0645ae366836fd921f908fd4f", null ],
+    [ "getIridescence", "classmoonray_1_1shading_1_1_stochastic_flakes_b_r_d_f.html#a94bd0095fdec676fa6c55736cfa9d351", null ],
     [ "getN", "classmoonray_1_1shading_1_1_stochastic_flakes_b_r_d_f.html#acb68a501a0a23d0e8467ef90916fdf95", null ],
     [ "mFlakeColors", "classmoonray_1_1shading_1_1_stochastic_flakes_b_r_d_f.html#af0e2fec5cf1ded1bb8b52f6bba1c6821", null ],
     [ "mFlakeCount", "classmoonray_1_1shading_1_1_stochastic_flakes_b_r_d_f.html#aeafc910ea293e20d77d31aeed8ac93e7", null ],
     [ "mFlakeNormals", "classmoonray_1_1shading_1_1_stochastic_flakes_b_r_d_f.html#aa2b4ba50b89c1bfaf76ecb4da9eff078", null ],
     [ "mFlakeRandomness", "classmoonray_1_1shading_1_1_stochastic_flakes_b_r_d_f.html#ae064ec2f57f8475684c7bfb09139e725", null ],
     [ "mFlakeRoughness", "classmoonray_1_1shading_1_1_stochastic_flakes_b_r_d_f.html#a8303ad4ce79d4a02f6eabe7e6459b121", null ],
+    [ "mIridescence", "classmoonray_1_1shading_1_1_stochastic_flakes_b_r_d_f.html#a3d70f6a01030a7bb5c423945c29c1897", null ],
     [ "mN", "classmoonray_1_1shading_1_1_stochastic_flakes_b_r_d_f.html#ab48a3190e45b8175b9720d1125cd64ba", null ]
 ];

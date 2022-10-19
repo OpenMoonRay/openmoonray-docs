@@ -1,9 +1,24 @@
 var classmoonray_1_1util_1_1_aligned_element_array_1_1iterator =
 [
     [ "Base", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a7cd3f99d040ecf634e1f2f6564652169", null ],
+    [ "const_pointer", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a493c7f4658a86b710752275e9f790847", null ],
+    [ "const_reference", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a3a1d141233584bfec4e2830b309c9f8c", null ],
+    [ "difference_type", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a7896e284b7474b890450a9b1a78158f4", null ],
+    [ "iterator_category", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#afe1da033a97275f4fdd1708fdcf304e8", null ],
     [ "pointer", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#ace85f215a5303364ca1e8a65754bb3f3", null ],
     [ "reference", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a2f2458b2d4bd011e686ff9e92b618964", null ],
+    [ "value_type", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a804add7bae4656e4582a5c945ebae2e0", null ],
+    [ "access", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#ab32303b5fa2cb289218417b8e6643870", null ],
+    [ "access", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#ab00f7bb49fd3577f6df443608182af37", null ],
+    [ "access", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#aeb70376c8f7880d26b2749c794aade62", null ],
+    [ "access", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a7f83c9342104ab2a786ada008b0ac48a", null ],
     [ "operator*", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a14a5ed75e070c9aca6ce7c3e162c8a74", null ],
+    [ "operator++", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a20c9ec1606c2deb89ba4f23c1d6eed90", null ],
+    [ "operator++", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#aa2676bca25f3996f2a73747afeeb2c03", null ],
+    [ "operator+=", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a2204048de4c2bdd4966ef5cbd7eb4700", null ],
+    [ "operator--", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a2e37f111906b48edbe7dc487be455996", null ],
+    [ "operator--", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a672028ef124d207735dda14ec962abba", null ],
+    [ "operator-=", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a1b0714f1302fccdf6f35f26640b4d91c", null ],
     [ "operator->", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a4ef0d788aa30698e668153576039e4b8", null ],
     [ "operator[]", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#aa8382025d48597c7f8da492056213c73", null ],
     [ "operator!=", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a24d77d626249061901432bfbcf448fef", null ],
@@ -15,5 +30,7 @@ var classmoonray_1_1util_1_1_aligned_element_array_1_1iterator =
     [ "operator<=", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a46d04179f5465c545040360725177fec", null ],
     [ "operator==", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#aea9dc293645164bb5d5f8fd30b2eff23", null ],
     [ "operator>", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a1a89966a7e097a726418d714f77538b8", null ],
-    [ "operator>=", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a80d9934674c691ba64fe2751bfa37bdd", null ]
+    [ "operator>=", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a80d9934674c691ba64fe2751bfa37bdd", null ],
+    [ "mArray", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#aafbf47854f56c9534a4600e18e39430d", null ],
+    [ "mIdx", "classmoonray_1_1util_1_1_aligned_element_array_1_1iterator.html#a6042502ebc40280874cfb31f2346ea1f", null ]
 ];

@@ -1,6 +1,7 @@
 var classmoonray_1_1pbr_1_1_t_l_state =
 [
     [ "AovQueue", "classmoonray_1_1pbr_1_1_t_l_state.html#aa80b21064e4093d3cfc107033abe57d0", null ],
+    [ "Arena", "classmoonray_1_1pbr_1_1_t_l_state.html#a2cbcf54325d1f30b2b0129adeb030c52", null ],
     [ "CacheLine1", "classmoonray_1_1pbr_1_1_t_l_state.html#ad0a254cd2bb781eebc594ae2fd751065", null ],
     [ "CL1Pool", "classmoonray_1_1pbr_1_1_t_l_state.html#a3ae4ddbf10524f5afad6d616b6f3a129", null ],
     [ "ExclusiveAccumulators", "classmoonray_1_1pbr_1_1_t_l_state.html#aa727bd6a44fe97080905b0d668dada09", null ],
@@ -42,11 +43,13 @@ var classmoonray_1_1pbr_1_1_t_l_state =
     [ "freeList", "classmoonray_1_1pbr_1_1_t_l_state.html#a0f855b1f6857036eb7532d7a7ea65a11", null ],
     [ "freeRayStates", "classmoonray_1_1pbr_1_1_t_l_state.html#a27aad266519b3e49ac0248cc3289876c", null ],
     [ "getInternalExclusiveAccumulators", "classmoonray_1_1pbr_1_1_t_l_state.html#a79902358f61807375b379f127eb31a5f", null ],
+    [ "getInternalExclusiveAccumulatorsPtr", "classmoonray_1_1pbr_1_1_t_l_state.html#a8ec9512b5ad02a728ea91b8c98eb3495", null ],
     [ "getListItem", "classmoonray_1_1pbr_1_1_t_l_state.html#aac3d09ba9501015457e92e02fce42406", null ],
     [ "getNumListItems", "classmoonray_1_1pbr_1_1_t_l_state.html#a96e8b66016e5798cff6c1142bbbcf1b8", null ],
     [ "hudValidation", "classmoonray_1_1pbr_1_1_t_l_state.html#a5c4080b6db949f8b22990d70462aa8dd", null ],
     [ "isCanceled", "classmoonray_1_1pbr_1_1_t_l_state.html#a5e50102c93840598a17d4d3cc5b04727", null ],
     [ "isIntegratorAccumulatorRunning", "classmoonray_1_1pbr_1_1_t_l_state.html#a148ca2ca41ed41eb9b5759808b1524af", null ],
+    [ "isIspcAccumulatorRunning", "classmoonray_1_1pbr_1_1_t_l_state.html#a37c8148aa9fb1fd53ebcabacd4a8073d", null ],
     [ "poolAlloc", "classmoonray_1_1pbr_1_1_t_l_state.html#a0b0b56726aa15e59b257aa5e0897ab16", null ],
     [ "poolAlloc", "classmoonray_1_1pbr_1_1_t_l_state.html#ab52201cf0e9f6430634c48249dc2f750", null ],
     [ "releaseCryptomatteData", "classmoonray_1_1pbr_1_1_t_l_state.html#ae470462ac8052ee1eed504c26a9d38a6", null ],
@@ -57,6 +60,9 @@ var classmoonray_1_1pbr_1_1_t_l_state =
     [ "setHeatMapQueueHandler", "classmoonray_1_1pbr_1_1_t_l_state.html#a7d1c0b2598fe08ed320b927917ad1853", null ],
     [ "setRadianceQueueHandler", "classmoonray_1_1pbr_1_1_t_l_state.html#a8cedb3bcdd4cc8287c6203e6b0c3a942", null ],
     [ "setXPUOcclusionRayQueue", "classmoonray_1_1pbr_1_1_t_l_state.html#a701851bff4f6a320868b54814eaa9920", null ],
+    [ "startIspcAccumulator", "classmoonray_1_1pbr_1_1_t_l_state.html#a7856701c07013bded4ceb21c0adaefbd", null ],
+    [ "stopIspcAccumulator", "classmoonray_1_1pbr_1_1_t_l_state.html#adc38e28ffbf106be9dadf9d35b711b47", null ],
     [ "verifyNoOutstandingAllocs", "classmoonray_1_1pbr_1_1_t_l_state.html#a2b014b5a1123b01fd7793604c7bb1c0e", null ],
+    [ "BASE_TL_STATE_MEMBERS", "classmoonray_1_1pbr_1_1_t_l_state.html#af1fa533aed3a392809bd026b75ca0f1e", null ],
     [ "PBR_TL_STATE_MEMBERS", "classmoonray_1_1pbr_1_1_t_l_state.html#a1192bd1f8f1de80f4233367cf1d3860d", null ]
 ];

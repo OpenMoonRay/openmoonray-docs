@@ -12,6 +12,8 @@ var classmoonray_1_1shading_1_1_primitive_attribute =
     [ "size_type", "classmoonray_1_1shading_1_1_primitive_attribute.html#a8bd59c1d2276b5681617ed2e77c74304", null ],
     [ "value_type", "classmoonray_1_1shading_1_1_primitive_attribute.html#abf1ec1f6eceb7d70a18f7596dc54ebdf", null ],
     [ "PrimitiveAttribute", "classmoonray_1_1shading_1_1_primitive_attribute.html#a79fd16e77cb88281aadc9b19952c1d75", null ],
+    [ "as", "classmoonray_1_1shading_1_1_primitive_attribute.html#ab168b017dfc82b6727b8f2a892f72038", null ],
+    [ "as", "classmoonray_1_1shading_1_1_primitive_attribute.html#a114763be34c71ada9adc7d92a5b3af48", null ],
     [ "begin", "classmoonray_1_1shading_1_1_primitive_attribute.html#aacbe5c8d12335b2ff993a7823810f14f", null ],
     [ "begin", "classmoonray_1_1shading_1_1_primitive_attribute.html#affb74e783f25a588575aacf2c1eb28df", null ],
     [ "cbegin", "classmoonray_1_1shading_1_1_primitive_attribute.html#a6617414f23c2d01aaf394d1cfee4833b", null ],
@@ -27,6 +29,7 @@ var classmoonray_1_1shading_1_1_primitive_attribute =
     [ "erase", "classmoonray_1_1shading_1_1_primitive_attribute.html#ad1b49406e8e21c0ebb9e156b6aa9f156", null ],
     [ "fetchData", "classmoonray_1_1shading_1_1_primitive_attribute.html#ab48a8dbfd802206af5ac86497d042229", null ],
     [ "fetchData", "classmoonray_1_1shading_1_1_primitive_attribute.html#ac447b5e615b608a46b19a7e0cde52463", null ],
+    [ "getRate", "classmoonray_1_1shading_1_1_primitive_attribute.html#a5e38da2179032bf630586c66685bb0ee", null ],
     [ "insert", "classmoonray_1_1shading_1_1_primitive_attribute.html#ac057f29871350706323a37c5e1ff41cc", null ],
     [ "insert", "classmoonray_1_1shading_1_1_primitive_attribute.html#aec42d42871580cc7683f5e072ddd3ed6", null ],
     [ "insert", "classmoonray_1_1shading_1_1_primitive_attribute.html#a7f15d75a212079b0fb1c5144cf902cb8", null ],
@@ -42,8 +45,10 @@ var classmoonray_1_1shading_1_1_primitive_attribute =
     [ "rend", "classmoonray_1_1shading_1_1_primitive_attribute.html#a14f42b855d76d3dcdb1b9caec1495f48", null ],
     [ "reserve", "classmoonray_1_1shading_1_1_primitive_attribute.html#aaeaa060c8b4e06f03d44f351a3faae85", null ],
     [ "resize", "classmoonray_1_1shading_1_1_primitive_attribute.html#ada00b9150e6a90e39b5578632c5258fb", null ],
+    [ "setRate", "classmoonray_1_1shading_1_1_primitive_attribute.html#a3bfae421286d39885498a045a1aae265", null ],
     [ "size", "classmoonray_1_1shading_1_1_primitive_attribute.html#aa45c83b4206160b8bcecc2ec74dc9220", null ],
     [ "swap", "classmoonray_1_1shading_1_1_primitive_attribute.html#ad65fe5060c0f20f7f15bda25f101b5bd", null ],
     [ "toNonConst", "classmoonray_1_1shading_1_1_primitive_attribute.html#a63685fdbcbb9a117c7ea1907e239e268", null ],
-    [ "mList", "classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd", null ]
+    [ "mList", "classmoonray_1_1shading_1_1_primitive_attribute.html#ad685e50c44f986c2f79ee6372bae0fdd", null ],
+    [ "mRate", "classmoonray_1_1shading_1_1_primitive_attribute.html#af99c48bd74c9cebaeda3ec7ff8c6f254", null ]
 ];

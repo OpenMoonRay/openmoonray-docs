@@ -94,6 +94,9 @@ $(document).ready(function(){initNavTree('classscene__rdl2_1_1util_1_1_array2_d.
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classscene__rdl2_1_1util_1_1_array2_d-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">scene_rdl2::util::Array2D&lt; T, Allocator &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -189,93 +192,33 @@ Public Member Functions</h2></td></tr>
 Private Types</h2></td></tr>
 <tr class="memitem:a224fe904c39808cd61a1fc70a0620c90"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d.html#a224fe904c39808cd61a1fc70a0620c90">BaseArray</a> = <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">Array2DBase</a>&lt; T, <a class="el" href="namespacescene__rdl2_1_1util.html#ad3fce28f94127c1e0f8dea389c499aada34d2765ffc490951febdcca04bc4f7cd">Array2DOrder::COL_MAJOR</a>, Allocator &gt;</td></tr>
 <tr class="separator:a224fe904c39808cd61a1fc70a0620c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classscene__rdl2_1_1util_1_1_array2_d_base')"><img src="closed.png" alt="-"/>&#160;Private Types inherited from <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">scene_rdl2::util::Array2DBase&lt; T, order, Allocator &gt;</a></td></tr>
-<tr class="memitem:adbad66119046aa3de39c739ebe2121ad inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#adbad66119046aa3de39c739ebe2121ad">traits</a> = typename <a class="el" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#a0f8cb53ce34600f2850bebb8d9f86432">DataBlock::traits</a></td></tr>
-<tr class="separator:adbad66119046aa3de39c739ebe2121ad inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc5fd32640dc9c69acf5305774aff50e inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#abc5fd32640dc9c69acf5305774aff50e">value_type</a> = typename <a class="el" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#ad8dc0d6c09c350637def4028ba1a24b5">DataBlock::value_type</a></td></tr>
-<tr class="separator:abc5fd32640dc9c69acf5305774aff50e inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd8b739610dc15706d2b6e44635a5040 inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#acd8b739610dc15706d2b6e44635a5040">allocator_type</a> = typename <a class="el" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#a5072044b856b2f12eca764e99a4ccc27">DataBlock::allocator_type</a></td></tr>
-<tr class="separator:acd8b739610dc15706d2b6e44635a5040 inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76b4221c803449babd559e3bb15802c9 inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a76b4221c803449babd559e3bb15802c9">size_type</a> = typename <a class="el" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#a0d77123db556239b6a3fbbe0165c77b1">DataBlock::size_type</a></td></tr>
-<tr class="separator:a76b4221c803449babd559e3bb15802c9 inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34cf912c91bead0ddc3de2ff09af6e06 inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a34cf912c91bead0ddc3de2ff09af6e06">difference_type</a> = typename <a class="el" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#afc3575ce8799dbd38f80919ec5b1cec2">DataBlock::difference_type</a></td></tr>
-<tr class="separator:a34cf912c91bead0ddc3de2ff09af6e06 inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a292eb88249c9e118dc4cd51f59bf5c61 inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a292eb88249c9e118dc4cd51f59bf5c61">reference</a> = typename <a class="el" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#a8244bd03d36e9952acbf0e9f4202f7b3">DataBlock::reference</a></td></tr>
-<tr class="separator:a292eb88249c9e118dc4cd51f59bf5c61 inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cc66f0de9097f4d42514be14e752a7a inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a1cc66f0de9097f4d42514be14e752a7a">const_reference</a> = typename <a class="el" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#ae5e43fa70510179ccc3a34a9eeb48bb1">DataBlock::const_reference</a></td></tr>
-<tr class="separator:a1cc66f0de9097f4d42514be14e752a7a inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed205c0036d0ef440cbe08f2e1092237 inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#aed205c0036d0ef440cbe08f2e1092237">pointer</a> = typename <a class="el" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#ad6fccd82ebd02ccd88d1450b66b4c6e3">DataBlock::pointer</a></td></tr>
-<tr class="separator:aed205c0036d0ef440cbe08f2e1092237 inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e52dce23d78638cfd45258420acb1a0 inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a5e52dce23d78638cfd45258420acb1a0">const_pointer</a> = typename <a class="el" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#a3db83f985d3214c47099768e4397c3fb">DataBlock::const_pointer</a></td></tr>
-<tr class="separator:a5e52dce23d78638cfd45258420acb1a0 inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c9b86d1648e0ef72dc90a35e11bda1b inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a3c9b86d1648e0ef72dc90a35e11bda1b">iterator</a> = typename <a class="el" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#a545a533da9e2cbc493101bedc6280802">DataBlock::iterator</a></td></tr>
-<tr class="separator:a3c9b86d1648e0ef72dc90a35e11bda1b inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fe371aa67eb26f1bb2831ec14c21372 inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a2fe371aa67eb26f1bb2831ec14c21372">const_iterator</a> = typename <a class="el" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#ade40f3a24d6434699eeffb824bfa06fd">DataBlock::const_iterator</a></td></tr>
-<tr class="separator:a2fe371aa67eb26f1bb2831ec14c21372 inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a736740103f0712b93762ae628a580361 inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a736740103f0712b93762ae628a580361">reverse_iterator</a> = typename <a class="el" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#a27de47f4ba4e778cea2a28cabc091232">DataBlock::reverse_iterator</a></td></tr>
-<tr class="separator:a736740103f0712b93762ae628a580361 inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b612ae1b72dc494bbb51cf8da9de69c inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a6b612ae1b72dc494bbb51cf8da9de69c">const_reverse_iterator</a> = typename <a class="el" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#aca6d2efafe49c585326db945178607d2">DataBlock::const_reverse_iterator</a></td></tr>
-<tr class="separator:a6b612ae1b72dc494bbb51cf8da9de69c inherit pub_types_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base')"><img src="closed.png" alt="-"/>&#160;Private Member Functions inherited from <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">scene_rdl2::util::Array2DBase&lt; T, order, Allocator &gt;</a></td></tr>
-<tr class="memitem:ac10551aad6585aa66296f9baebe408a2 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#ac10551aad6585aa66296f9baebe408a2">Array2DBase</a> (const Allocator &amp;alloc=Allocator())</td></tr>
-<tr class="separator:ac10551aad6585aa66296f9baebe408a2 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c6170e089789212aabc7c998e8985d6 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a8c6170e089789212aabc7c998e8985d6">Array2DBase</a> (const <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">Array2DBase</a> &amp;other) noexcept(<a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#ad3211e0189c04af632583a02f34dbbee">no_except_copy_constructor</a>)</td></tr>
-<tr class="separator:a8c6170e089789212aabc7c998e8985d6 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af11ac1d4cf9133bfd760f4b72faa2eb8 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#af11ac1d4cf9133bfd760f4b72faa2eb8">Array2DBase</a> (<a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">Array2DBase</a> &amp;&amp;other) noexcept(<a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a4832c9bc08d981969d878173508d1c50">no_except_move_constructor</a>)</td></tr>
-<tr class="separator:af11ac1d4cf9133bfd760f4b72faa2eb8 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a741f7caea3e9d2e91bc39490f4e0fc78 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a741f7caea3e9d2e91bc39490f4e0fc78">Array2DBase</a> (<a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a76b4221c803449babd559e3bb15802c9">size_type</a> nu, <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a76b4221c803449babd559e3bb15802c9">size_type</a> nv, const T &amp;t, const Allocator &amp;alloc=Allocator())</td></tr>
-<tr class="separator:a741f7caea3e9d2e91bc39490f4e0fc78 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c97dc1b1f61224e0a0cb3a90fea0fd9 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a3c97dc1b1f61224e0a0cb3a90fea0fd9">Array2DBase</a> (<a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a76b4221c803449babd559e3bb15802c9">size_type</a> nu, <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a76b4221c803449babd559e3bb15802c9">size_type</a> nv, const Allocator &amp;alloc=Allocator())</td></tr>
-<tr class="separator:a3c97dc1b1f61224e0a0cb3a90fea0fd9 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a177eaec1417f15b83f649ca26f2a63de inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memTemplParams" colspan="2">template&lt;typename InputIter &gt; </td></tr>
-<tr class="memitem:a177eaec1417f15b83f649ca26f2a63de inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a177eaec1417f15b83f649ca26f2a63de">Array2DBase</a> (<a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a76b4221c803449babd559e3bb15802c9">size_type</a> nu, <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a76b4221c803449babd559e3bb15802c9">size_type</a> nv, InputIter first, InputIter last, const Allocator &amp;alloc=Allocator())</td></tr>
-<tr class="separator:a177eaec1417f15b83f649ca26f2a63de inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f9956705149ef299dc0191faf016fe5 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">Array2DBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a3f9956705149ef299dc0191faf016fe5">operator=</a> (const <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">Array2DBase</a> &amp;other) noexcept(<a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#af996fccdc19f8a6e4209d05b2ac03f72">no_except_copy_assignment</a>)</td></tr>
-<tr class="separator:a3f9956705149ef299dc0191faf016fe5 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3eafa73a1b18885ffb03677765bff32 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">Array2DBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#aa3eafa73a1b18885ffb03677765bff32">operator=</a> (<a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">Array2DBase</a> &amp;&amp;other) noexcept(<a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a274509ecc131a42833c49bae54f707f1">no_except_move_assignment</a>)</td></tr>
-<tr class="separator:aa3eafa73a1b18885ffb03677765bff32 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadce52cc7d98bece2fb8c57a3168fe14 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#aadce52cc7d98bece2fb8c57a3168fe14">swap</a> (<a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">Array2DBase</a> &amp;other) noexcept</td></tr>
-<tr class="separator:aadce52cc7d98bece2fb8c57a3168fe14 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a670393739dbee2cd0a32a7a609d2c741 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a76b4221c803449babd559e3bb15802c9">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a670393739dbee2cd0a32a7a609d2c741">uSize</a> () const noexcept</td></tr>
-<tr class="separator:a670393739dbee2cd0a32a7a609d2c741 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa6a8d8263f3e19bfd1dac7f3fdd459b inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a76b4221c803449babd559e3bb15802c9">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#afa6a8d8263f3e19bfd1dac7f3fdd459b">vSize</a> () const noexcept</td></tr>
-<tr class="separator:afa6a8d8263f3e19bfd1dac7f3fdd459b inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3ee898781e88c3f082d15d2f6df63f8 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a292eb88249c9e118dc4cd51f59bf5c61">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#aa3ee898781e88c3f082d15d2f6df63f8">operator()</a> (<a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a76b4221c803449babd559e3bb15802c9">size_type</a> u, <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a76b4221c803449babd559e3bb15802c9">size_type</a> v) noexcept</td></tr>
-<tr class="separator:aa3ee898781e88c3f082d15d2f6df63f8 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a330e36052dd404cd342dd8ad8fc61a91 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a1cc66f0de9097f4d42514be14e752a7a">const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a330e36052dd404cd342dd8ad8fc61a91">operator()</a> (<a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a76b4221c803449babd559e3bb15802c9">size_type</a> u, <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a76b4221c803449babd559e3bb15802c9">size_type</a> v) const noexcept</td></tr>
-<tr class="separator:a330e36052dd404cd342dd8ad8fc61a91 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a38b287e799abec3c7cdaba03d157b2 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a3c9b86d1648e0ef72dc90a35e11bda1b">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a8a38b287e799abec3c7cdaba03d157b2">begin</a> () noexcept</td></tr>
-<tr class="separator:a8a38b287e799abec3c7cdaba03d157b2 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac764d3858139da3ff85d0313b221cd20 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a2fe371aa67eb26f1bb2831ec14c21372">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#ac764d3858139da3ff85d0313b221cd20">begin</a> () const noexcept</td></tr>
-<tr class="separator:ac764d3858139da3ff85d0313b221cd20 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a310eb60f74b939b907c0beff8aaf55 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a2fe371aa67eb26f1bb2831ec14c21372">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a0a310eb60f74b939b907c0beff8aaf55">cbegin</a> () const noexcept</td></tr>
-<tr class="separator:a0a310eb60f74b939b907c0beff8aaf55 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fb524c3d4b8505c934f28a42287f97f inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a3c9b86d1648e0ef72dc90a35e11bda1b">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a6fb524c3d4b8505c934f28a42287f97f">end</a> () noexcept</td></tr>
-<tr class="separator:a6fb524c3d4b8505c934f28a42287f97f inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72f1d9eb82f3bf1704942fcbd1792730 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a2fe371aa67eb26f1bb2831ec14c21372">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a72f1d9eb82f3bf1704942fcbd1792730">end</a> () const noexcept</td></tr>
-<tr class="separator:a72f1d9eb82f3bf1704942fcbd1792730 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5818ed1efb3b95353ce970d7057c298b inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a2fe371aa67eb26f1bb2831ec14c21372">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a5818ed1efb3b95353ce970d7057c298b">cend</a> () const noexcept</td></tr>
-<tr class="separator:a5818ed1efb3b95353ce970d7057c298b inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaadd1234e76293965f204e1836b701ef inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#aed205c0036d0ef440cbe08f2e1092237">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#aaadd1234e76293965f204e1836b701ef">data</a> () noexcept</td></tr>
-<tr class="separator:aaadd1234e76293965f204e1836b701ef inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8abb2a2f7e274924ca2c4496fa6f8f79 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a5e52dce23d78638cfd45258420acb1a0">const_pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a8abb2a2f7e274924ca2c4496fa6f8f79">data</a> () const noexcept</td></tr>
-<tr class="separator:a8abb2a2f7e274924ca2c4496fa6f8f79 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af65894222a4a2cc9e5326e124a9cbb00 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#acd8b739610dc15706d2b6e44635a5040">allocator_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#af65894222a4a2cc9e5326e124a9cbb00">get_allocator</a> () const</td></tr>
-<tr class="separator:af65894222a4a2cc9e5326e124a9cbb00 inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67cfaf3233ac3f6f73c7a1ea78a192ce inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a67cfaf3233ac3f6f73c7a1ea78a192ce">~Array2DBase</a> ()=default</td></tr>
-<tr class="separator:a67cfaf3233ac3f6f73c7a1ea78a192ce inherit pub_methods_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_attribs_classscene__rdl2_1_1util_1_1_array2_d_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classscene__rdl2_1_1util_1_1_array2_d_base')"><img src="closed.png" alt="-"/>&#160;Static Private Attributes inherited from <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">scene_rdl2::util::Array2DBase&lt; T, order, Allocator &gt;</a></td></tr>
-<tr class="memitem:ad3211e0189c04af632583a02f34dbbee inherit pub_static_attribs_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#ad3211e0189c04af632583a02f34dbbee">no_except_copy_constructor</a> = false</td></tr>
-<tr class="separator:ad3211e0189c04af632583a02f34dbbee inherit pub_static_attribs_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4832c9bc08d981969d878173508d1c50 inherit pub_static_attribs_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a4832c9bc08d981969d878173508d1c50">no_except_move_constructor</a> = true</td></tr>
-<tr class="separator:a4832c9bc08d981969d878173508d1c50 inherit pub_static_attribs_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af996fccdc19f8a6e4209d05b2ac03f72 inherit pub_static_attribs_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#af996fccdc19f8a6e4209d05b2ac03f72">no_except_copy_assignment</a> = false</td></tr>
-<tr class="separator:af996fccdc19f8a6e4209d05b2ac03f72 inherit pub_static_attribs_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a274509ecc131a42833c49bae54f707f1 inherit pub_static_attribs_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a274509ecc131a42833c49bae54f707f1">no_except_move_assignment</a></td></tr>
-<tr class="separator:a274509ecc131a42833c49bae54f707f1 inherit pub_static_attribs_classscene__rdl2_1_1util_1_1_array2_d_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a670393739dbee2cd0a32a7a609d2c741"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d.html#a1338835310f89de345a85699381734a1">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a670393739dbee2cd0a32a7a609d2c741">uSize</a> () const noexcept</td></tr>
+<tr class="separator:a670393739dbee2cd0a32a7a609d2c741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa6a8d8263f3e19bfd1dac7f3fdd459b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d.html#a1338835310f89de345a85699381734a1">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#afa6a8d8263f3e19bfd1dac7f3fdd459b">vSize</a> () const noexcept</td></tr>
+<tr class="separator:afa6a8d8263f3e19bfd1dac7f3fdd459b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ee898781e88c3f082d15d2f6df63f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d.html#af3879ee449a89459a0f33cde79931234">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#aa3ee898781e88c3f082d15d2f6df63f8">operator()</a> (<a class="el" href="classscene__rdl2_1_1util_1_1_array2_d.html#a1338835310f89de345a85699381734a1">size_type</a> u, <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d.html#a1338835310f89de345a85699381734a1">size_type</a> v) noexcept</td></tr>
+<tr class="separator:aa3ee898781e88c3f082d15d2f6df63f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330e36052dd404cd342dd8ad8fc61a91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d.html#a4776fcc1786d1f9072b2723d56e01bbc">const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a330e36052dd404cd342dd8ad8fc61a91">operator()</a> (<a class="el" href="classscene__rdl2_1_1util_1_1_array2_d.html#a1338835310f89de345a85699381734a1">size_type</a> u, <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d.html#a1338835310f89de345a85699381734a1">size_type</a> v) const noexcept</td></tr>
+<tr class="separator:a330e36052dd404cd342dd8ad8fc61a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a760c1b50a691ba528ac890112317bea2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html">DataBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a760c1b50a691ba528ac890112317bea2">mData</a></td></tr>
+<tr class="separator:a760c1b50a691ba528ac890112317bea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:ad3211e0189c04af632583a02f34dbbee"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#ad3211e0189c04af632583a02f34dbbee">no_except_copy_constructor</a> = false</td></tr>
+<tr class="separator:ad3211e0189c04af632583a02f34dbbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4832c9bc08d981969d878173508d1c50"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a4832c9bc08d981969d878173508d1c50">no_except_move_constructor</a> = true</td></tr>
+<tr class="separator:a4832c9bc08d981969d878173508d1c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af996fccdc19f8a6e4209d05b2ac03f72"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#af996fccdc19f8a6e4209d05b2ac03f72">no_except_copy_assignment</a> = false</td></tr>
+<tr class="separator:af996fccdc19f8a6e4209d05b2ac03f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a274509ecc131a42833c49bae54f707f1"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a274509ecc131a42833c49bae54f707f1">no_except_move_assignment</a></td></tr>
+<tr class="separator:a274509ecc131a42833c49bae54f707f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, typename Allocator = std::allocator&lt;T&gt;&gt;<br />
@@ -1172,6 +1115,95 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a330e36052dd404cd342dd8ad8fc61a91" name="a330e36052dd404cd342dd8ad8fc61a91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a330e36052dd404cd342dd8ad8fc61a91">&#9670;&#160;</a></span>operator()() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="namespacescene__rdl2_1_1util.html#ad3fce28f94127c1e0f8dea389c499aad">Array2DOrder</a> order, typename Allocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d.html#a4776fcc1786d1f9072b2723d56e01bbc">const_reference</a> <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">scene_rdl2::util::Array2DBase</a>&lt; T, order, Allocator &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a76b4221c803449babd559e3bb15802c9">size_type</a>&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a76b4221c803449babd559e3bb15802c9">size_type</a>&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_array2_d_8h_source.html#l00308">308</a> of file <a class="el" href="_array2_d_8h_source.html">Array2D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  309</span>    {</div>
+<div class="line"><span class="lineno">  310</span>        <span class="keyword">const</span> <span class="keyword">auto</span> p = <a class="code hl_variable" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a760c1b50a691ba528ac890112317bea2">mData</a>.<a class="code hl_function" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#acd54376c270a06031e1ca4142cf2b32c">getAddress</a>(u, v);</div>
+<div class="line"><span class="lineno">  311</span>        <span class="keywordflow">return</span> *p;</div>
+<div class="line"><span class="lineno">  312</span>    }</div>
+<div class="ttc" id="astructscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block_html_acd54376c270a06031e1ca4142cf2b32c"><div class="ttname"><a href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#acd54376c270a06031e1ca4142cf2b32c">scene_rdl2::util::Array2DBase::DataBlock::getAddress</a></div><div class="ttdeci">pointer getAddress(size_type u, size_type v) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_array2_d_8h_source.html#l00792">Array2D.h:792</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa3ee898781e88c3f082d15d2f6df63f8" name="aa3ee898781e88c3f082d15d2f6df63f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ee898781e88c3f082d15d2f6df63f8">&#9670;&#160;</a></span>operator()() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="namespacescene__rdl2_1_1util.html#ad3fce28f94127c1e0f8dea389c499aad">Array2DOrder</a> order, typename Allocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d.html#af3879ee449a89459a0f33cde79931234">reference</a> <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">scene_rdl2::util::Array2DBase</a>&lt; T, order, Allocator &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a76b4221c803449babd559e3bb15802c9">size_type</a>&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a76b4221c803449babd559e3bb15802c9">size_type</a>&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_array2_d_8h_source.html#l00302">302</a> of file <a class="el" href="_array2_d_8h_source.html">Array2D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  303</span>    {</div>
+<div class="line"><span class="lineno">  304</span>        <span class="keyword">const</span> <span class="keyword">auto</span> p = <a class="code hl_variable" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a760c1b50a691ba528ac890112317bea2">mData</a>.<a class="code hl_function" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#acd54376c270a06031e1ca4142cf2b32c">getAddress</a>(u, v);</div>
+<div class="line"><span class="lineno">  305</span>        <span class="keywordflow">return</span> *p;</div>
+<div class="line"><span class="lineno">  306</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ad1e0b448840aafb92fb22946a97975d1" name="ad1e0b448840aafb92fb22946a97975d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad1e0b448840aafb92fb22946a97975d1">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
@@ -1307,6 +1339,205 @@ template&lt;typename T , typename Allocator  = std::allocator&lt;T&gt;&gt; </div
 <div class="line"><span class="lineno">  290</span>    }</div>
 <div class="ttc" id="astructscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block_html_a7b4d9d828acf532e4b0298b9278aa073"><div class="ttname"><a href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#a7b4d9d828acf532e4b0298b9278aa073">scene_rdl2::util::Array2DBase::DataBlock::swap</a></div><div class="ttdeci">void swap(DataBlock &amp;other) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="_array2_d_8h_source.html#l00752">Array2D.h:752</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a670393739dbee2cd0a32a7a609d2c741" name="a670393739dbee2cd0a32a7a609d2c741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a670393739dbee2cd0a32a7a609d2c741">&#9670;&#160;</a></span>uSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="namespacescene__rdl2_1_1util.html#ad3fce28f94127c1e0f8dea389c499aad">Array2DOrder</a> order, typename Allocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d.html#a1338835310f89de345a85699381734a1">size_type</a> <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">scene_rdl2::util::Array2DBase</a>&lt; T, order, Allocator &gt;::uSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_array2_d_8h_source.html#l00292">292</a> of file <a class="el" href="_array2_d_8h_source.html">Array2D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  293</span>    {</div>
+<div class="line"><span class="lineno">  294</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a760c1b50a691ba528ac890112317bea2">mData</a>.<a class="code hl_variable" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#abe92528ef48813595ee6ad4fd0e8974a">mURes</a>;</div>
+<div class="line"><span class="lineno">  295</span>    }</div>
+<div class="ttc" id="astructscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block_html_abe92528ef48813595ee6ad4fd0e8974a"><div class="ttname"><a href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#abe92528ef48813595ee6ad4fd0e8974a">scene_rdl2::util::Array2DBase::DataBlock::mURes</a></div><div class="ttdeci">size_type mURes</div><div class="ttdef"><b>Definition:</b> <a href="_array2_d_8h_source.html#l00119">Array2D.h:119</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afa6a8d8263f3e19bfd1dac7f3fdd459b" name="afa6a8d8263f3e19bfd1dac7f3fdd459b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa6a8d8263f3e19bfd1dac7f3fdd459b">&#9670;&#160;</a></span>vSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="namespacescene__rdl2_1_1util.html#ad3fce28f94127c1e0f8dea389c499aad">Array2DOrder</a> order, typename Allocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classscene__rdl2_1_1util_1_1_array2_d.html#a1338835310f89de345a85699381734a1">size_type</a> <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">scene_rdl2::util::Array2DBase</a>&lt; T, order, Allocator &gt;::vSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_array2_d_8h_source.html#l00297">297</a> of file <a class="el" href="_array2_d_8h_source.html">Array2D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  298</span>    {</div>
+<div class="line"><span class="lineno">  299</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classscene__rdl2_1_1util_1_1_array2_d_base.html#a760c1b50a691ba528ac890112317bea2">mData</a>.<a class="code hl_variable" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#a7f57ca90aa5b8a670dc6112ae610fc8c">mVRes</a>;</div>
+<div class="line"><span class="lineno">  300</span>    }</div>
+<div class="ttc" id="astructscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block_html_a7f57ca90aa5b8a670dc6112ae610fc8c"><div class="ttname"><a href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html#a7f57ca90aa5b8a670dc6112ae610fc8c">scene_rdl2::util::Array2DBase::DataBlock::mVRes</a></div><div class="ttdeci">size_type mVRes</div><div class="ttdef"><b>Definition:</b> <a href="_array2_d_8h_source.html#l00120">Array2D.h:120</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a760c1b50a691ba528ac890112317bea2" name="a760c1b50a691ba528ac890112317bea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a760c1b50a691ba528ac890112317bea2">&#9670;&#160;</a></span>mData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="namespacescene__rdl2_1_1util.html#ad3fce28f94127c1e0f8dea389c499aad">Array2DOrder</a> order, typename Allocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structscene__rdl2_1_1util_1_1_array2_d_base_1_1_data_block.html">DataBlock</a> <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">scene_rdl2::util::Array2DBase</a>&lt; T, order, Allocator &gt;::mData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_array2_d_8h_source.html#l00360">360</a> of file <a class="el" href="_array2_d_8h_source.html">Array2D.h</a>.</p>
+
+</div>
+</div>
+<a id="af996fccdc19f8a6e4209d05b2ac03f72" name="af996fccdc19f8a6e4209d05b2ac03f72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af996fccdc19f8a6e4209d05b2ac03f72">&#9670;&#160;</a></span>no_except_copy_assignment</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="namespacescene__rdl2_1_1util.html#ad3fce28f94127c1e0f8dea389c499aad">Array2DOrder</a> order, typename Allocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">scene_rdl2::util::Array2DBase</a>&lt; T, order, Allocator &gt;::no_except_copy_assignment = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_array2_d_8h_source.html#l00217">217</a> of file <a class="el" href="_array2_d_8h_source.html">Array2D.h</a>.</p>
+
+</div>
+</div>
+<a id="ad3211e0189c04af632583a02f34dbbee" name="ad3211e0189c04af632583a02f34dbbee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3211e0189c04af632583a02f34dbbee">&#9670;&#160;</a></span>no_except_copy_constructor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="namespacescene__rdl2_1_1util.html#ad3fce28f94127c1e0f8dea389c499aad">Array2DOrder</a> order, typename Allocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">scene_rdl2::util::Array2DBase</a>&lt; T, order, Allocator &gt;::no_except_copy_constructor = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_array2_d_8h_source.html#l00215">215</a> of file <a class="el" href="_array2_d_8h_source.html">Array2D.h</a>.</p>
+
+</div>
+</div>
+<a id="a274509ecc131a42833c49bae54f707f1" name="a274509ecc131a42833c49bae54f707f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a274509ecc131a42833c49bae54f707f1">&#9670;&#160;</a></span>no_except_move_assignment</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="namespacescene__rdl2_1_1util.html#ad3fce28f94127c1e0f8dea389c499aad">Array2DOrder</a> order, typename Allocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">scene_rdl2::util::Array2DBase</a>&lt; T, order, Allocator &gt;::no_except_move_assignment</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">        <span class="keyword">noexcept</span>(std::declval&lt;DataBlock&amp;&gt;().operator=(std::declval&lt;DataBlock&amp;&amp;&gt;()))</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_array2_d_8h_source.html#l00218">218</a> of file <a class="el" href="_array2_d_8h_source.html">Array2D.h</a>.</p>
+
+</div>
+</div>
+<a id="a4832c9bc08d981969d878173508d1c50" name="a4832c9bc08d981969d878173508d1c50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4832c9bc08d981969d878173508d1c50">&#9670;&#160;</a></span>no_except_move_constructor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="namespacescene__rdl2_1_1util.html#ad3fce28f94127c1e0f8dea389c499aad">Array2DOrder</a> order, typename Allocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="classscene__rdl2_1_1util_1_1_array2_d_base.html">scene_rdl2::util::Array2DBase</a>&lt; T, order, Allocator &gt;::no_except_move_constructor = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_array2_d_8h_source.html#l00216">216</a> of file <a class="el" href="_array2_d_8h_source.html">Array2D.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

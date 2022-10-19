@@ -1,19 +1,47 @@
 var classmoonray_1_1geom_1_1_sphere =
 [
     [ "Impl", "structmoonray_1_1geom_1_1_sphere_1_1_impl.html", "structmoonray_1_1geom_1_1_sphere_1_1_impl" ],
+    [ "IndexType", "classmoonray_1_1geom_1_1_sphere.html#adbece00593ce87679dbb45ac906073bd", null ],
+    [ "size_type", "classmoonray_1_1geom_1_1_sphere.html#a6ec1e752af007a2007fe341be5aa5810", null ],
+    [ "DataValidness", "classmoonray_1_1geom_1_1_sphere.html#a5013abfc5a53a70a1658afcec6937e70", [
+      [ "VALID", "classmoonray_1_1geom_1_1_sphere.html#a5013abfc5a53a70a1658afcec6937e70ac9f1a6384b1c466d4612f513bd8e13ea", null ],
+      [ "INVALID_VERTEX_BUFFER", "classmoonray_1_1geom_1_1_sphere.html#a5013abfc5a53a70a1658afcec6937e70ada139deab637b338e4d46673ab5faf18", null ],
+      [ "INVALID_TOPOLOGY", "classmoonray_1_1geom_1_1_sphere.html#a5013abfc5a53a70a1658afcec6937e70ac0f0aa224ab569a076f3210eb3f9d7f7", null ],
+      [ "INVALID_CONSTANT_ATTRIBUTE", "classmoonray_1_1geom_1_1_sphere.html#a5013abfc5a53a70a1658afcec6937e70add9b7b8b308bd5960511c4e6d8b2b15c", null ],
+      [ "INVALID_UNIFORM_ATTRIBUTE", "classmoonray_1_1geom_1_1_sphere.html#a5013abfc5a53a70a1658afcec6937e70a59364eff5c2610eb21493d271a92c8ad", null ],
+      [ "INVALID_VARYING_ATTRIBUTE", "classmoonray_1_1geom_1_1_sphere.html#a5013abfc5a53a70a1658afcec6937e70a0a125fbd0ea88edf59a41d6faebd5f20", null ],
+      [ "INVALID_FACEVARYING_ATTRIBUTE", "classmoonray_1_1geom_1_1_sphere.html#a5013abfc5a53a70a1658afcec6937e70abf4fbde68ea0d9214d98302c9a6f0f0b", null ],
+      [ "INVALID_VERTEX_ATTRIBUTE", "classmoonray_1_1geom_1_1_sphere.html#a5013abfc5a53a70a1658afcec6937e70a6316905e79fee46c05854b37fb406c16", null ]
+    ] ],
+    [ "Modifiability", "classmoonray_1_1geom_1_1_sphere.html#aff577e14a875dcb8f4a766bd4d907a3a", [
+      [ "STATIC", "classmoonray_1_1geom_1_1_sphere.html#aff577e14a875dcb8f4a766bd4d907a3aafe6f99ef1ec99efbdc19a9786cf1facc", null ],
+      [ "DEFORMABLE", "classmoonray_1_1geom_1_1_sphere.html#aff577e14a875dcb8f4a766bd4d907a3aa5561e11142ce59d67da73372acb30ded", null ],
+      [ "DYNAMIC", "classmoonray_1_1geom_1_1_sphere.html#aff577e14a875dcb8f4a766bd4d907a3aa0fcc90da4811c877ba9f9c12f7d60bc9", null ]
+    ] ],
     [ "Sphere", "classmoonray_1_1geom_1_1_sphere.html#a32c231920722f26180d0ed441585452f", null ],
     [ "~Sphere", "classmoonray_1_1geom_1_1_sphere.html#a7bd1e91f21d142c8a2011ef3294b17cb", null ],
     [ "accept", "classmoonray_1_1geom_1_1_sphere.html#ac8848d6c9f474c91fa0089701384e66d", null ],
+    [ "applyTransformation", "classmoonray_1_1geom_1_1_sphere.html#ae26b559b7c9726cd874bb15623b3329d", null ],
+    [ "applyTransformationToSingleTimeStep", "classmoonray_1_1geom_1_1_sphere.html#ad48d0439e7f6def21ef60f24be9f6ddc", null ],
+    [ "applyTransformationToSingleTimeStep", "classmoonray_1_1geom_1_1_sphere.html#a7c251c4d9daa4184f7060a237da46fa8", null ],
+    [ "generateBezierPolygons", "classmoonray_1_1geom_1_1_sphere.html#a938c9dfcac727de7829bea2b8bcf212f", null ],
+    [ "generateBezierPolygons", "classmoonray_1_1geom_1_1_sphere.html#a8c4a419a09d670f9f1b1272e7526bc23", null ],
+    [ "generateMotionSamples", "classmoonray_1_1geom_1_1_sphere.html#a2234280c5ddce5c213edf3aac116968f", null ],
     [ "getIsNormalReversed", "classmoonray_1_1geom_1_1_sphere.html#a58e70819c677aca72c8af6696f8c84e5", null ],
     [ "getIsSingleSided", "classmoonray_1_1geom_1_1_sphere.html#a515a482fd323f48facb9a378a7977a52", null ],
     [ "getMemory", "classmoonray_1_1geom_1_1_sphere.html#a2485dfe845aed756a65abd2c31f868d2", null ],
+    [ "getModifiability", "classmoonray_1_1geom_1_1_sphere.html#ab719fbd600bd973dbeb03ce2a8ef9ebc", null ],
     [ "getMotionSamplesCount", "classmoonray_1_1geom_1_1_sphere.html#aca60cda2cfede9df901fb4c345c4bc66", null ],
     [ "getName", "classmoonray_1_1geom_1_1_sphere.html#a1cc4f731fdd7d53553fc24295ae85212", null ],
     [ "getPrimitiveImpl", "classmoonray_1_1geom_1_1_sphere.html#aaccd896a1555c3a3a2e4515f12f1d733", null ],
+    [ "getUpdated", "classmoonray_1_1geom_1_1_sphere.html#aaa619ea87737cc38ac1cb74447395aa1", null ],
     [ "setClippingRange", "classmoonray_1_1geom_1_1_sphere.html#aab62a73c345c2c9c2fd4a10618e1405a", null ],
     [ "setIsNormalReversed", "classmoonray_1_1geom_1_1_sphere.html#ab2018977e859eb1ff652f556bc9d6b08", null ],
     [ "setIsSingleSided", "classmoonray_1_1geom_1_1_sphere.html#a64a0112302025e6ccb486049fb3e97aa", null ],
+    [ "setModifiability", "classmoonray_1_1geom_1_1_sphere.html#aa2779c4ab5d56c2290e275b8b02ad020", null ],
     [ "setName", "classmoonray_1_1geom_1_1_sphere.html#a416ccf1ea166c1468701f7f9f3f94a01", null ],
+    [ "setUpdated", "classmoonray_1_1geom_1_1_sphere.html#a2c9de28d660eab9137b53e8e82041793", null ],
     [ "transformPrimitive", "classmoonray_1_1geom_1_1_sphere.html#ae3a2b1a8d25994571e020c1edf8f6c90", null ],
+    [ "transformVertexBuffer", "classmoonray_1_1geom_1_1_sphere.html#ab419eab3c2c3d53be9894b5bddbdce1c", null ],
     [ "mImpl", "classmoonray_1_1geom_1_1_sphere.html#a1bc2ed0918df2b5a07fa3dd3ce64d958", null ]
 ];

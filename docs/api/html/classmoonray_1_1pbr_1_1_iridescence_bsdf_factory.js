@@ -2,6 +2,8 @@ var classmoonray_1_1pbr_1_1_iridescence_bsdf_factory =
 [
     [ "IridescenceBsdfFactory", "classmoonray_1_1pbr_1_1_iridescence_bsdf_factory.html#ad2380795545d786c957b74657c39bff7", null ],
     [ "getBsdfv", "classmoonray_1_1pbr_1_1_iridescence_bsdf_factory.html#a9d4b38cb0c8cd1fd9d4212baa7b38b06", null ],
+    [ "ispcArena", "classmoonray_1_1pbr_1_1_iridescence_bsdf_factory.html#a686cc34b2b7c6ea7505a3e777cf0a1ef", null ],
+    [ "ispcFrame", "classmoonray_1_1pbr_1_1_iridescence_bsdf_factory.html#ab25d63f51cbcdc9cafc94e154217d11a", null ],
     [ "operator()", "classmoonray_1_1pbr_1_1_iridescence_bsdf_factory.html#a68417c42c67d6681b2e8f9719e127e54", null ],
     [ "mColorControl", "classmoonray_1_1pbr_1_1_iridescence_bsdf_factory.html#ae6508b1642327c710bea8370ec50e32d", null ],
     [ "mExponent", "classmoonray_1_1pbr_1_1_iridescence_bsdf_factory.html#a2458a48c92795b6f742af5978722f4d4", null ],
