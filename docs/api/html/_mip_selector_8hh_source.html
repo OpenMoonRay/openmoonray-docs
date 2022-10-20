@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/bvh/shading/MipSelector.hh Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/bvh/shading/MipSelector.hh Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -97,25 +97,23 @@ $(document).ready(function(){initNavTree('_mip_selector_8hh_source.html',''); in
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2016 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @file MipSelector.hh</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @author Mark Lee</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"></span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// See the TextureOpt::conservative_filter flag - true means over-blur rather than alias.</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="_mip_selector_8hh.html#aa81eb9e9bfa222cd5ba36a215afd2763">   12</a></span><span class="preprocessor">#define MIP_FILTER_MIN          1       </span><span class="comment">// Slow since it&#39;ll tend to pick higher mips, but most comparable to OIIO EWA scheme.</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="_mip_selector_8hh.html#a8b29d88631cd695c2f271571c5fbd8e9">   13</a></span><span class="preprocessor">#define MIP_FILTER_MAX          2       </span><span class="comment">// Closest to OIIO_CONSERVATIVE for testing. Not a great choice though.</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="_mip_selector_8hh.html#a3b4420b23d239d2460bfb44cb689ca2c">   14</a></span><span class="preprocessor">#define MIP_FILTER_AVG          3       </span><span class="comment">// Good general purpose choice. Take the average of *square* lengths.</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="_mip_selector_8hh.html#abd6d6a050201ed0e8807e7a065f5c58b">   15</a></span><span class="preprocessor">#define MIP_FILTER_AREA         4       </span><span class="comment">// Good general purpose choice. Take the area of the parallelogram.</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define MIP_FILTER_MIN          1       </span><span class="comment">// Slow since it&#39;ll tend to pick higher mips, but most comparable to OIIO EWA scheme.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define MIP_FILTER_MAX          2       </span><span class="comment">// Closest to OIIO_CONSERVATIVE for testing. Not a great choice though.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define MIP_FILTER_AVG          3       </span><span class="comment">// Good general purpose choice. Take the average of *square* lengths.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define MIP_FILTER_AREA         4       </span><span class="comment">// Good general purpose choice. Take the area of the parallelogram.</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                                        <span class="comment">// More accurate than MIP_FILTER_AVG.</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="_mip_selector_8hh.html#ac849d9a15c5d15766fcb8ae6e05e5de6">   18</a></span><span class="preprocessor">#define START_OIIO_FILTER       6</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define START_OIIO_FILTER       6</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="_mip_selector_8hh.html#a3a635837be9a19c2932c292bb8d607f6">   20</a></span><span class="preprocessor">#define OIIO_CONSERVATIVE       6       </span><span class="comment">// opts-&gt;mipmode = OIIO::TextureOpt::MipModeTrilinear, conservative_filter = true</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="_mip_selector_8hh.html#a109b4f1dc464ed73e87f7c73c850a175">   21</a></span><span class="preprocessor">#define OIIO_NON_CONSERVATIVE   7       </span><span class="comment">// opts-&gt;mipmode = OIIO::TextureOpt::MipModeTrilinear, conservative_filter = false</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define OIIO_CONSERVATIVE       6       </span><span class="comment">// opts-&gt;mipmode = OIIO::TextureOpt::MipModeTrilinear, conservative_filter = true</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#define OIIO_NON_CONSERVATIVE   7       </span><span class="comment">// opts-&gt;mipmode = OIIO::TextureOpt::MipModeTrilinear, conservative_filter = false</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="_mip_selector_8hh.html#aca20b3f9c8d84eebd2ddbc3fda4e73d8">   23</a></span><span class="preprocessor">#define DEFAULT_MIP_FILTER      MIP_FILTER_AREA</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define DEFAULT_MIP_FILTER      MIP_FILTER_AREA</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// TM and (c) 2016 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>

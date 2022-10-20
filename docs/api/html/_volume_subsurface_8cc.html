@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bssrdf/VolumeSubsurface.cc File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bssrdf/VolumeSubsurface.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -92,43 +92,34 @@ $(document).ready(function(){initNavTree('_volume_subsurface_8cc.html',''); init
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">VolumeSubsurface.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_volume_subsurface_8h_source.html">VolumeSubsurface.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="_pbr_validity_8h_source.html">rendering/shading/PbrValidity.h</a>&gt;</code><br />
+<code>#include &lt;rendering/shading/PbrValidity.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/math/ispc/Typesv.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/render/util/Arena.h&gt;</code><br />
-</div>
-<p><a href="_volume_subsurface_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1shading"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html">moonray::shading</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa7ff8873878f0793c61209642687a932"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#aa7ff8873878f0793c61209642687a932">moonray::shading::colorvToColor</a> (const scene_rdl2::math::Colorv &amp;col, int lane)</td></tr>
+<tr class="memitem:aa7ff8873878f0793c61209642687a932"><td class="memItemLeft" align="right" valign="top"><a id="aa7ff8873878f0793c61209642687a932" name="aa7ff8873878f0793c61209642687a932"></a>
+<a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::colorvToColor</b> (const scene_rdl2::math::Colorv &amp;col, int lane)</td></tr>
 <tr class="separator:aa7ff8873878f0793c61209642687a932"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adedb0d0a362fb848450668985e624ec3"><td class="memItemLeft" align="right" valign="top">VolumeSubsurface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#adedb0d0a362fb848450668985e624ec3">moonray::shading::createVolumeSubsurface</a> (<a class="el" href="classscene__rdl2_1_1alloc_1_1_arena.html">scene_rdl2::alloc::Arena</a> *arena, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;trlColor, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;trlRadius, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, <a class="el" href="namespacescene__rdl2_1_1rdl2.html#a41a6336b3fcafcde7ca8ba5512cc41c7">scene_rdl2::rdl2::EvalNormalFunc</a> evalNormalFn, const <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;N, bool resolveSelfIntersections)</td></tr>
+<tr class="memitem:adedb0d0a362fb848450668985e624ec3"><td class="memItemLeft" align="right" valign="top"><a id="adedb0d0a362fb848450668985e624ec3" name="adedb0d0a362fb848450668985e624ec3"></a>
+VolumeSubsurface *&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::createVolumeSubsurface</b> (<a class="el" href="classscene__rdl2_1_1alloc_1_1_arena.html">scene_rdl2::alloc::Arena</a> *arena, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;trlColor, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;trlRadius, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, scene_rdl2::rdl2::EvalNormalFunc evalNormalFn, const <a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">scene_rdl2::math::Vec3f</a> &amp;N, bool resolveSelfIntersections)</td></tr>
 <tr class="separator:adedb0d0a362fb848450668985e624ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7719f43d099ef3be40a4e1d1b9b1c000"><td class="memItemLeft" align="right" valign="top">VolumeSubsurface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a7719f43d099ef3be40a4e1d1b9b1c000">moonray::shading::createVolumeSubsurface</a> (<a class="el" href="classscene__rdl2_1_1alloc_1_1_arena.html">scene_rdl2::alloc::Arena</a> *arena, const VolumeSubsurfacev *volumeSubsurfacev, int lane)</td></tr>
+<tr class="memitem:a7719f43d099ef3be40a4e1d1b9b1c000"><td class="memItemLeft" align="right" valign="top"><a id="a7719f43d099ef3be40a4e1d1b9b1c000" name="a7719f43d099ef3be40a4e1d1b9b1c000"></a>
+VolumeSubsurface *&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::createVolumeSubsurface</b> (<a class="el" href="classscene__rdl2_1_1alloc_1_1_arena.html">scene_rdl2::alloc::Arena</a> *arena, const VolumeSubsurfacev *volumeSubsurfacev, int lane)</td></tr>
 <tr class="separator:a7719f43d099ef3be40a4e1d1b9b1c000"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a23f775d3348e9c71d24d133277e94ddd"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a23f775d3348e9c71d24d133277e94ddd">moonray::shading::sLargeZeroScatterSigmaT</a> = 1e5</td></tr>
-<tr class="separator:a23f775d3348e9c71d24d133277e94ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Wayne Huang </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_volume_subsurface_8cc_source.html">VolumeSubsurface.cc</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

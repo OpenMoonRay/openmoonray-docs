@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bssrdf/Bssrdf.cc File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bssrdf/Bssrdf.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -97,32 +97,28 @@ $(document).ready(function(){initNavTree('_bssrdf_8cc.html',''); initResizable()
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_bssrdf_8h_source.html">Bssrdf.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_dipole_8h_source.html">Dipole.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_normalized_diffusion_8h_source.html">NormalizedDiffusion.h</a>&quot;</code><br />
+<code>#include &quot;Dipole.h&quot;</code><br />
+<code>#include &quot;NormalizedDiffusion.h&quot;</code><br />
 <code>#include &lt;<a class="el" href="_fresnel_8h_source.html">rendering/shading/bsdf/Fresnel.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="lib_2rendering_2shading_2util_8h_source.html">rendering/shading/Util.h</a>&gt;</code><br />
+<code>#include &lt;rendering/shading/Util.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/render/util/Arena.h&gt;</code><br />
-</div>
-<p><a href="_bssrdf_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1shading"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html">moonray::shading</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a468ccb14a0e82d7ebdf4a6c9280813a9"><td class="memItemLeft" align="right" valign="top">Bssrdf *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a468ccb14a0e82d7ebdf4a6c9280813a9">moonray::shading::createBSSRDF</a> (ispc::SubsurfaceType type, <a class="el" href="classscene__rdl2_1_1alloc_1_1_arena.html">scene_rdl2::alloc::Arena</a> *arena, const <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">Vec3f</a> &amp;N, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">Color</a> &amp;trlColor, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">Color</a> &amp;trlRadius, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, const <a class="el" href="namespacescene__rdl2_1_1rdl2.html#a41a6336b3fcafcde7ca8ba5512cc41c7">scene_rdl2::rdl2::EvalNormalFunc</a> evalNormalFn)</td></tr>
+<tr class="memitem:a468ccb14a0e82d7ebdf4a6c9280813a9"><td class="memItemLeft" align="right" valign="top"><a id="a468ccb14a0e82d7ebdf4a6c9280813a9" name="a468ccb14a0e82d7ebdf4a6c9280813a9"></a>
+Bssrdf *&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::createBSSRDF</b> (ispc::SubsurfaceType type, <a class="el" href="classscene__rdl2_1_1alloc_1_1_arena.html">scene_rdl2::alloc::Arena</a> *arena, const <a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">Vec3f</a> &amp;N, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">Color</a> &amp;trlColor, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">Color</a> &amp;trlRadius, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, const scene_rdl2::rdl2::EvalNormalFunc evalNormalFn)</td></tr>
 <tr class="separator:a468ccb14a0e82d7ebdf4a6c9280813a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3760a296baaba003c27000eb5d6c02e2"><td class="memItemLeft" align="right" valign="top">Bssrdf *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a3760a296baaba003c27000eb5d6c02e2">moonray::shading::createBSSRDF</a> (<a class="el" href="classscene__rdl2_1_1alloc_1_1_arena.html">scene_rdl2::alloc::Arena</a> *arena, const Bssrdfv *bssrdfv, int lane)</td></tr>
+<tr class="memitem:a3760a296baaba003c27000eb5d6c02e2"><td class="memItemLeft" align="right" valign="top"><a id="a3760a296baaba003c27000eb5d6c02e2" name="a3760a296baaba003c27000eb5d6c02e2"></a>
+Bssrdf *&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::createBSSRDF</b> (<a class="el" href="classscene__rdl2_1_1alloc_1_1_arena.html">scene_rdl2::alloc::Arena</a> *arena, const Bssrdfv *bssrdfv, int lane)</td></tr>
 <tr class="separator:a3760a296baaba003c27000eb5d6c02e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Eric Tabellion </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_bssrdf_8cc_source.html">Bssrdf.cc</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

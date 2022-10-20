@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/EvalShader.h File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/EvalShader.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('_eval_shader_8h.html',''); initResizab
   <div class="headertitle"><div class="title">EvalShader.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_bsdf_util_8hh_source.html">rendering/shading/BsdfUtil.hh</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;rendering/shading/BsdfUtil.hh&gt;</code><br />
 <code>#include &lt;<a class="el" href="bvh_2shading_2_state_8h_source.html">rendering/bvh/shading/State.h</a>&gt;</code><br />
 <code>#include &lt;scene_rdl2/scene/rdl2/rdl2.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/scene/rdl2/Material.h&gt;</code><br />
@@ -109,55 +109,175 @@ $(document).ready(function(){initNavTree('_eval_shader_8h.html',''); initResizab
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1shading"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html">moonray::shading</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1fa5d45a5d64758d8f8cf3352cec69ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a1fa5d45a5d64758d8f8cf3352cec69ec">moonray::shading::sample</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">scene_rdl2::rdl2::Shader</a> *parent, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_map.html">scene_rdl2::rdl2::Map</a> *map, shading::TLState *tls, const State &amp;state, <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> *result)</td></tr>
-<tr class="memdesc:a1fa5d45a5d64758d8f8cf3352cec69ec"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_sample.html">Sample</a> a child map from a parent shader.  <a href="namespacemoonray_1_1shading.html#a1fa5d45a5d64758d8f8cf3352cec69ec">More...</a><br /></td></tr>
+<tr class="memitem:a1fa5d45a5d64758d8f8cf3352cec69ec"><td class="memItemLeft" align="right" valign="top">finline void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eval_shader_8h.html#a1fa5d45a5d64758d8f8cf3352cec69ec">moonray::shading::sample</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">scene_rdl2::rdl2::Shader</a> *parent, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_map.html">scene_rdl2::rdl2::Map</a> *map, shading::TLState *tls, const State &amp;state, <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> *result)</td></tr>
+<tr class="memdesc:a1fa5d45a5d64758d8f8cf3352cec69ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample a child map from a parent shader.  <a href="_eval_shader_8h.html#a1fa5d45a5d64758d8f8cf3352cec69ec">More...</a><br /></td></tr>
 <tr class="separator:a1fa5d45a5d64758d8f8cf3352cec69ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae480f75f442dcebb46081191482c24d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#ae480f75f442dcebb46081191482c24d0">moonray::shading::sampleNormal</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">scene_rdl2::rdl2::Shader</a> *parent, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_normal_map.html">scene_rdl2::rdl2::NormalMap</a> *normalMap, shading::TLState *tls, const State &amp;state, <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> *result)</td></tr>
-<tr class="memdesc:ae480f75f442dcebb46081191482c24d0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_sample.html">Sample</a> a child normal map from a parent shader.  <a href="namespacemoonray_1_1shading.html#ae480f75f442dcebb46081191482c24d0">More...</a><br /></td></tr>
+<tr class="memitem:ae480f75f442dcebb46081191482c24d0"><td class="memItemLeft" align="right" valign="top"><a id="ae480f75f442dcebb46081191482c24d0" name="ae480f75f442dcebb46081191482c24d0"></a>
+finline void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::sampleNormal</b> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">scene_rdl2::rdl2::Shader</a> *parent, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_normal_map.html">scene_rdl2::rdl2::NormalMap</a> *normalMap, shading::TLState *tls, const State &amp;state, <a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">scene_rdl2::math::Vec3f</a> *result)</td></tr>
+<tr class="memdesc:ae480f75f442dcebb46081191482c24d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample a child normal map from a parent shader. <br /></td></tr>
 <tr class="separator:ae480f75f442dcebb46081191482c24d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b143b192623a8893d6cb1bfb2a989c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a9b143b192623a8893d6cb1bfb2a989c4">moonray::shading::xformLobeLabels</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> &amp;material, Bsdf *bsdf, int parentLobeCount)</td></tr>
-<tr class="memdesc:a9b143b192623a8893d6cb1bfb2a989c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform the shader local aov labels to global aov label ids.  <a href="namespacemoonray_1_1shading.html#a9b143b192623a8893d6cb1bfb2a989c4">More...</a><br /></td></tr>
+<tr class="memitem:a9b143b192623a8893d6cb1bfb2a989c4"><td class="memItemLeft" align="right" valign="top"><a id="a9b143b192623a8893d6cb1bfb2a989c4" name="a9b143b192623a8893d6cb1bfb2a989c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::xformLobeLabels</b> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> &amp;material, Bsdf *bsdf, int parentLobeCount)</td></tr>
+<tr class="memdesc:a9b143b192623a8893d6cb1bfb2a989c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform the shader local aov labels to global aov label ids. <br /></td></tr>
 <tr class="separator:a9b143b192623a8893d6cb1bfb2a989c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d9e308d6129eefde58b1f9f454b4593"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a3d9e308d6129eefde58b1f9f454b4593">moonray::shading::setBsdfLabels</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> &amp;material, const State &amp;state, Bsdf *bsdf, int parentLobeCount)</td></tr>
-<tr class="memdesc:a3d9e308d6129eefde58b1f9f454b4593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hack in bsdf label ids used for aovs.  <a href="namespacemoonray_1_1shading.html#a3d9e308d6129eefde58b1f9f454b4593">More...</a><br /></td></tr>
+<tr class="memitem:a3d9e308d6129eefde58b1f9f454b4593"><td class="memItemLeft" align="right" valign="top"><a id="a3d9e308d6129eefde58b1f9f454b4593" name="a3d9e308d6129eefde58b1f9f454b4593"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::setBsdfLabels</b> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> &amp;material, const State &amp;state, Bsdf *bsdf, int parentLobeCount)</td></tr>
+<tr class="memdesc:a3d9e308d6129eefde58b1f9f454b4593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hack in bsdf label ids used for aovs. <br /></td></tr>
 <tr class="separator:a3d9e308d6129eefde58b1f9f454b4593"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99318d75b3ee910a3c5c6b06b67fb856"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a99318d75b3ee910a3c5c6b06b67fb856">moonray::shading::shade</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, shading::TLState *tls, const State &amp;state, BsdfBuilder &amp;bsdfBuilder)</td></tr>
-<tr class="memdesc:a99318d75b3ee910a3c5c6b06b67fb856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a root material from the rendering application.  <a href="namespacemoonray_1_1shading.html#a99318d75b3ee910a3c5c6b06b67fb856">More...</a><br /></td></tr>
+<tr class="memitem:a99318d75b3ee910a3c5c6b06b67fb856"><td class="memItemLeft" align="right" valign="top"><a id="a99318d75b3ee910a3c5c6b06b67fb856" name="a99318d75b3ee910a3c5c6b06b67fb856"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::shade</b> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, shading::TLState *tls, const State &amp;state, BsdfBuilder &amp;bsdfBuilder)</td></tr>
+<tr class="memdesc:a99318d75b3ee910a3c5c6b06b67fb856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a root material from the rendering application. <br /></td></tr>
 <tr class="separator:a99318d75b3ee910a3c5c6b06b67fb856"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3857531e4c3bc6e3870385ca546c6157"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a3857531e4c3bc6e3870385ca546c6157">moonray::shading::shade</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *parent, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, shading::TLState *tls, const State &amp;state, BsdfBuilder &amp;bsdfBuilder)</td></tr>
-<tr class="memdesc:a3857531e4c3bc6e3870385ca546c6157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a child material from a parent material using <a class="el" href="classmoonray_1_1shading_1_1_bsdf_builder.html">BsdfBuilder</a>.  <a href="namespacemoonray_1_1shading.html#a3857531e4c3bc6e3870385ca546c6157">More...</a><br /></td></tr>
+<tr class="memitem:a3857531e4c3bc6e3870385ca546c6157"><td class="memItemLeft" align="right" valign="top"><a id="a3857531e4c3bc6e3870385ca546c6157" name="a3857531e4c3bc6e3870385ca546c6157"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::shade</b> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *parent, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, shading::TLState *tls, const State &amp;state, BsdfBuilder &amp;bsdfBuilder)</td></tr>
+<tr class="memdesc:a3857531e4c3bc6e3870385ca546c6157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a child material from a parent material using <a class="el" href="classmoonray_1_1shading_1_1_bsdf_builder.html">BsdfBuilder</a>. <br /></td></tr>
 <tr class="separator:a3857531e4c3bc6e3870385ca546c6157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27a695e3cda6789e0c6e2fe907e91e03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a27a695e3cda6789e0c6e2fe907e91e03">moonray::shading::displace</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_displacement.html">scene_rdl2::rdl2::Displacement</a> *displacement, shading::TLState *tls, const State &amp;state, <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> *result)</td></tr>
-<tr class="memdesc:a27a695e3cda6789e0c6e2fe907e91e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a displacement shader.  <a href="namespacemoonray_1_1shading.html#a27a695e3cda6789e0c6e2fe907e91e03">More...</a><br /></td></tr>
+<tr class="memitem:a27a695e3cda6789e0c6e2fe907e91e03"><td class="memItemLeft" align="right" valign="top"><a id="a27a695e3cda6789e0c6e2fe907e91e03" name="a27a695e3cda6789e0c6e2fe907e91e03"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::displace</b> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_displacement.html">scene_rdl2::rdl2::Displacement</a> *displacement, shading::TLState *tls, const State &amp;state, <a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">scene_rdl2::math::Vec3f</a> *result)</td></tr>
+<tr class="memdesc:a27a695e3cda6789e0c6e2fe907e91e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a displacement shader. <br /></td></tr>
 <tr class="separator:a27a695e3cda6789e0c6e2fe907e91e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4815cc2ae7e188b0dffcd0a11c0a7add"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a4815cc2ae7e188b0dffcd0a11c0a7add">moonray::shading::presence</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, shading::TLState *tls, const State &amp;state)</td></tr>
-<tr class="memdesc:a4815cc2ae7e188b0dffcd0a11c0a7add"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate presence.  <a href="namespacemoonray_1_1shading.html#a4815cc2ae7e188b0dffcd0a11c0a7add">More...</a><br /></td></tr>
+<tr class="memitem:a4815cc2ae7e188b0dffcd0a11c0a7add"><td class="memItemLeft" align="right" valign="top"><a id="a4815cc2ae7e188b0dffcd0a11c0a7add" name="a4815cc2ae7e188b0dffcd0a11c0a7add"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::presence</b> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, shading::TLState *tls, const State &amp;state)</td></tr>
+<tr class="memdesc:a4815cc2ae7e188b0dffcd0a11c0a7add"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate presence. <br /></td></tr>
 <tr class="separator:a4815cc2ae7e188b0dffcd0a11c0a7add"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4854d830e2734d8c8ef520014cfc81d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#ad4854d830e2734d8c8ef520014cfc81d">moonray::shading::presence</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *parent, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, shading::TLState *tls, const shading::State &amp;state)</td></tr>
-<tr class="memdesc:ad4854d830e2734d8c8ef520014cfc81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a child presence material from a parent material.  <a href="namespacemoonray_1_1shading.html#ad4854d830e2734d8c8ef520014cfc81d">More...</a><br /></td></tr>
+<tr class="memitem:ad4854d830e2734d8c8ef520014cfc81d"><td class="memItemLeft" align="right" valign="top"><a id="ad4854d830e2734d8c8ef520014cfc81d" name="ad4854d830e2734d8c8ef520014cfc81d"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::presence</b> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *parent, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, shading::TLState *tls, const shading::State &amp;state)</td></tr>
+<tr class="memdesc:ad4854d830e2734d8c8ef520014cfc81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a child presence material from a parent material. <br /></td></tr>
 <tr class="separator:ad4854d830e2734d8c8ef520014cfc81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87bded4ce0925ce77bcac6f70173db5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a87bded4ce0925ce77bcac6f70173db5a">moonray::shading::ior</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, shading::TLState *tls, const State &amp;state)</td></tr>
-<tr class="memdesc:a87bded4ce0925ce77bcac6f70173db5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate ior.  <a href="namespacemoonray_1_1shading.html#a87bded4ce0925ce77bcac6f70173db5a">More...</a><br /></td></tr>
+<tr class="memitem:a87bded4ce0925ce77bcac6f70173db5a"><td class="memItemLeft" align="right" valign="top"><a id="a87bded4ce0925ce77bcac6f70173db5a" name="a87bded4ce0925ce77bcac6f70173db5a"></a>
+finline float&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::ior</b> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, shading::TLState *tls, const State &amp;state)</td></tr>
+<tr class="memdesc:a87bded4ce0925ce77bcac6f70173db5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate ior. <br /></td></tr>
 <tr class="separator:a87bded4ce0925ce77bcac6f70173db5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d9a9dff0864db86d49d34dd87876077"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a0d9a9dff0864db86d49d34dd87876077">moonray::shading::ior</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *parent, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, shading::TLState *tls, const shading::State &amp;state)</td></tr>
-<tr class="memdesc:a0d9a9dff0864db86d49d34dd87876077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a child material ior from a parent material.  <a href="namespacemoonray_1_1shading.html#a0d9a9dff0864db86d49d34dd87876077">More...</a><br /></td></tr>
+<tr class="memitem:a0d9a9dff0864db86d49d34dd87876077"><td class="memItemLeft" align="right" valign="top"><a id="a0d9a9dff0864db86d49d34dd87876077" name="a0d9a9dff0864db86d49d34dd87876077"></a>
+finline float&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::ior</b> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *parent, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, shading::TLState *tls, const shading::State &amp;state)</td></tr>
+<tr class="memdesc:a0d9a9dff0864db86d49d34dd87876077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a child material ior from a parent material. <br /></td></tr>
 <tr class="separator:a0d9a9dff0864db86d49d34dd87876077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33bfd875e80ce19e84367ef5f99e86c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a33bfd875e80ce19e84367ef5f99e86c0">moonray::shading::preventLightCulling</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, const State &amp;state)</td></tr>
+<tr class="memitem:a33bfd875e80ce19e84367ef5f99e86c0"><td class="memItemLeft" align="right" valign="top">finline bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eval_shader_8h.html#a33bfd875e80ce19e84367ef5f99e86c0">moonray::shading::preventLightCulling</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, const State &amp;state)</td></tr>
 <tr class="separator:a33bfd875e80ce19e84367ef5f99e86c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae01d2e3a81fd4216935b058db76d2f68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#ae01d2e3a81fd4216935b058db76d2f68">moonray::shading::preventLightCulling</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *parent, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, const shading::State &amp;state)</td></tr>
+<tr class="memitem:ae01d2e3a81fd4216935b058db76d2f68"><td class="memItemLeft" align="right" valign="top">finline bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eval_shader_8h.html#ae01d2e3a81fd4216935b058db76d2f68">moonray::shading::preventLightCulling</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *parent, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *material, const shading::State &amp;state)</td></tr>
 <tr class="separator:ae01d2e3a81fd4216935b058db76d2f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >$Id$</p>
 <dl class="section author"><dt>Author</dt><dd>Brian Green </dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a33bfd875e80ce19e84367ef5f99e86c0" name="a33bfd875e80ce19e84367ef5f99e86c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33bfd875e80ce19e84367ef5f99e86c0">&#9670;&#160;</a></span>preventLightCulling() <span class="overload">[1/2]</span></h2>
 
-<p class="definition">Definition in file <a class="el" href="_eval_shader_8h_source.html">EvalShader.h</a>.</p>
-</div></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">finline bool moonray::shading::preventLightCulling </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *&#160;</td>
+          <td class="paramname"><em>material</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_state.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Evaluate whether material is preventing light culling Which is necessary when the material is using an input normal that is no longer in the same hemisphere as the geometric normal as part of certain non-photoreal techniques </p>
+
+</div>
+</div>
+<a id="ae01d2e3a81fd4216935b058db76d2f68" name="ae01d2e3a81fd4216935b058db76d2f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae01d2e3a81fd4216935b058db76d2f68">&#9670;&#160;</a></span>preventLightCulling() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">finline bool moonray::shading::preventLightCulling </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_material.html">scene_rdl2::rdl2::Material</a> *&#160;</td>
+          <td class="paramname"><em>material</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_state.html">shading::State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Evaluate whether a child material preventing light culling from a parent material Which is necessary when the material is using an input normal that is no longer in the same hemisphere as the geometric normal as part of certain non-photoreal techniques </p>
+
+</div>
+</div>
+<a id="a1fa5d45a5d64758d8f8cf3352cec69ec" name="a1fa5d45a5d64758d8f8cf3352cec69ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa5d45a5d64758d8f8cf3352cec69ec">&#9670;&#160;</a></span>sample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">finline void moonray::shading::sample </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">scene_rdl2::rdl2::Shader</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_map.html">scene_rdl2::rdl2::Map</a> *&#160;</td>
+          <td class="paramname"><em>map</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">shading::TLState</a> *&#160;</td>
+          <td class="paramname"><em>tls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_state.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sample a child map from a parent shader. </p>
+<p >This header contains low-level API calls to run shaders (material, map, displacement, etc.). These API calls are used by rendering applications to call shaders directly (integrator, displacement mapping) or by high-level functions that allow shaders to evaluate their attributes bound to other map shaders (See: <a class="el" href="_eval_attribute_8h.html">EvalAttribute.h</a>) </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/camera/BakeCamera.cc File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/camera/BakeCamera.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -105,174 +105,23 @@ $(document).ready(function(){initNavTree('lib_2rendering_2pbr_2camera_2_bake_cam
 <code>#include &lt;<a class="el" href="_transformed_primitive_8h_source.html">rendering/geom/TransformedPrimitive.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="prim_2_primitive_8h_source.html">rendering/geom/prim/Primitive.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_primitive_private_access_8h_source.html">rendering/geom/prim/PrimitivePrivateAccess.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="lib_2rendering_2shading_2util_8h_source.html">rendering/shading/Util.h</a>&gt;</code><br />
+<code>#include &lt;rendering/shading/Util.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/math/BBox.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/math/Math.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/math/ReferenceFrame.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/render/util/Memory.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
-</div>
-<p><a href="lib_2rendering_2pbr_2camera_2_bake_camera_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacescene__rdl2"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2.html">scene_rdl2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1pbr"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html">moonray::pbr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Brian Green </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="lib_2rendering_2pbr_2camera_2_bake_camera_8cc_source.html">BakeCamera.cc</a>.</p>
-</div><h2 class="groupheader">Variable Documentation</h2>
-<a id="a35f00b8ea70f981ad0ceafe4dcfd1a83" name="a35f00b8ea70f981ad0ceafe4dcfd1a83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35f00b8ea70f981ad0ceafe4dcfd1a83">&#9670;&#160;</a></span>mHeight</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int mHeight</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2camera_2_bake_camera_8cc_source.html#l00074">74</a> of file <a class="el" href="lib_2rendering_2pbr_2camera_2_bake_camera_8cc_source.html">BakeCamera.cc</a>.</p>
-
-</div>
-</div>
-<a id="a76a17a11e50e24b00f18b1aa1f5246b3" name="a76a17a11e50e24b00f18b1aa1f5246b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76a17a11e50e24b00f18b1aa1f5246b3">&#9670;&#160;</a></span>mNrmResult</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a>* mNrmResult</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2camera_2_bake_camera_8cc_source.html#l00078">78</a> of file <a class="el" href="lib_2rendering_2pbr_2camera_2_bake_camera_8cc_source.html">BakeCamera.cc</a>.</p>
-
-</div>
-</div>
-<a id="a9d56ce949cdb0a20b70653bed374a81b" name="a9d56ce949cdb0a20b70653bed374a81b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d56ce949cdb0a20b70653bed374a81b">&#9670;&#160;</a></span>mPosResult</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">scene_rdl2::math::Vec3fa* mPosResult</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2camera_2_bake_camera_8cc_source.html#l00077">77</a> of file <a class="el" href="lib_2rendering_2pbr_2camera_2_bake_camera_8cc_source.html">BakeCamera.cc</a>.</p>
-
-</div>
-</div>
-<a id="a2904ded1426a84537ab39cab83482abf" name="a2904ded1426a84537ab39cab83482abf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2904ded1426a84537ab39cab83482abf">&#9670;&#160;</a></span>mStKey</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">shading::TypedAttributeKey&lt;<a class="el" href="namespacescene__rdl2_1_1math.html#a5a45b8a9116842cc13f6cd2c2202b8f1">scene_rdl2::math::Vec2f</a>&gt; mStKey</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2camera_2_bake_camera_8cc_source.html#l00076">76</a> of file <a class="el" href="lib_2rendering_2pbr_2camera_2_bake_camera_8cc_source.html">BakeCamera.cc</a>.</p>
-
-</div>
-</div>
-<a id="adc144a654662e1f6279fa196a0f0ad71" name="adc144a654662e1f6279fa196a0f0ad71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc144a654662e1f6279fa196a0f0ad71">&#9670;&#160;</a></span>mUdim</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int mUdim</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2camera_2_bake_camera_8cc_source.html#l00075">75</a> of file <a class="el" href="lib_2rendering_2pbr_2camera_2_bake_camera_8cc_source.html">BakeCamera.cc</a>.</p>
-
-</div>
-</div>
-<a id="a6e1275e1d63f0d5d0bfc64048020b847" name="a6e1275e1d63f0d5d0bfc64048020b847"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e1275e1d63f0d5d0bfc64048020b847">&#9670;&#160;</a></span>mWidth</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int mWidth</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lib_2rendering_2pbr_2camera_2_bake_camera_8cc_source.html#l00073">73</a> of file <a class="el" href="lib_2rendering_2pbr_2camera_2_bake_camera_8cc_source.html">BakeCamera.cc</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -23,12 +23,9 @@ var searchData=
   ['hairttlobe_20',['HairTTLobe',['../classmoonray_1_1shading_1_1_hair_t_t_lobe.html',1,'moonray::shading']]],
   ['hairutil_21',['HairUtil',['../classmoonray_1_1shading_1_1_hair_util.html',1,'moonray::shading']]],
   ['halfopenviewport_22',['HalfOpenViewport',['../structscene__rdl2_1_1math_1_1_half_open_viewport.html',1,'scene_rdl2::math']]],
-  ['hardsurfacesegment_23',['HardSurfaceSegment',['../structmoonray_1_1pbr_1_1_deep_buffer_1_1_hard_surface_segment.html',1,'moonray::pbr::DeepBuffer']]],
-  ['has_5fis_5falways_5fequal_24',['has_is_always_equal',['../structfauxstd_1_1detail_1_1has__is__always__equal.html',1,'fauxstd::detail']]],
-  ['hash_3c_20basictype_20_3e_25',['hash&lt; BasicType &gt;',['../structstd_1_1hash_3_01_basic_type_01_4.html',1,'std']]],
-  ['hash_3c_20moveonly_20_3e_26',['hash&lt; MoveOnly &gt;',['../structstd_1_1hash_3_01_move_only_01_4.html',1,'std']]],
-  ['hash_3c_20npoint_3c_20d_20_3e_20_3e_27',['hash&lt; NPoint&lt; D &gt; &gt;',['../structstd_1_1hash_3_01_n_point_3_01_d_01_4_01_4.html',1,'std']]],
-  ['hitgroupdata_28',['HitGroupData',['../structmoonray_1_1rt_1_1_hit_group_data.html',1,'moonray::rt']]],
-  ['hudvalidator_29',['HudValidator',['../classscene__rdl2_1_1util_1_1_hud_validator.html',1,'scene_rdl2::util']]],
-  ['hvdvalidator_30',['HvdValidator',['../classscene__rdl2_1_1util_1_1_hvd_validator.html',1,'scene_rdl2::util']]]
+  ['has_5fis_5falways_5fequal_23',['has_is_always_equal',['../structfauxstd_1_1detail_1_1has__is__always__equal.html',1,'fauxstd::detail']]],
+  ['hash_3c_20npoint_3c_20d_20_3e_20_3e_24',['hash&lt; NPoint&lt; D &gt; &gt;',['../structstd_1_1hash_3_01_n_point_3_01_d_01_4_01_4.html',1,'std']]],
+  ['hitgroupdata_25',['HitGroupData',['../structmoonray_1_1rt_1_1_hit_group_data.html',1,'moonray::rt']]],
+  ['hudvalidator_26',['HudValidator',['../classscene__rdl2_1_1util_1_1_hud_validator.html',1,'scene_rdl2::util']]],
+  ['hvdvalidator_27',['HvdValidator',['../classscene__rdl2_1_1util_1_1_hvd_validator.html',1,'scene_rdl2::util']]]
 ];

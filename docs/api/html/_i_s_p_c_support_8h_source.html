@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/scene/rdl2/ISPCSupport.h Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/scene/rdl2/ISPCSupport.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -93,38 +93,37 @@ $(document).ready(function(){initNavTree('_i_s_p_c_support_8h_source.html',''); 
   <div class="headertitle"><div class="title">ISPCSupport.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_i_s_p_c_support_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2013 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @author Matt Walsh</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"></span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// NOTE: this file is included in ISPC and C++ shader source files</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_macros_8h.html">Macros.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;Macros.h&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// Establish our ISPC key types.  These types are shared in ISPC and</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//  C++.   They are quasi-typed pointers.</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//  (see lib/rdl2/Macros.h for info)</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="_i_s_p_c_support_8h.html#afb0bd3005f96933d42dc5adc8ccb066c">   17</a></span><a class="code hl_define" href="_macros_8h.html#aec4871ff366a33730b02718ef1c85c0c">DECLARE_HANDLE</a>(BoolAttrKey);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="_i_s_p_c_support_8h.html#a0cbdf227dcecd01fb2d5f125cdfcdf20">   18</a></span><a class="code hl_define" href="_macros_8h.html#aec4871ff366a33730b02718ef1c85c0c">DECLARE_HANDLE</a>(IntAttrKey);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_i_s_p_c_support_8h.html#acad28857795c7a46c58c3bd8fde3301c">   19</a></span><a class="code hl_define" href="_macros_8h.html#aec4871ff366a33730b02718ef1c85c0c">DECLARE_HANDLE</a>(FloatAttrKey);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="_i_s_p_c_support_8h.html#accea336ca05b1fd9a35e9240d90cbc45">   20</a></span><a class="code hl_define" href="_macros_8h.html#aec4871ff366a33730b02718ef1c85c0c">DECLARE_HANDLE</a>(Float2AttrKey);  </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="_i_s_p_c_support_8h.html#af9abcadbde86058a04d3b17c3dd7675b">   21</a></span><a class="code hl_define" href="_macros_8h.html#aec4871ff366a33730b02718ef1c85c0c">DECLARE_HANDLE</a>(Float3AttrKey);  <span class="comment">// and Color</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="_i_s_p_c_support_8h.html#ae6299d60c5f61149b67ed2de97c33851">   22</a></span><a class="code hl_define" href="_macros_8h.html#aec4871ff366a33730b02718ef1c85c0c">DECLARE_HANDLE</a>(Float4AttrKey);  <span class="comment">// and Color4</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>DECLARE_HANDLE(BoolAttrKey);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>DECLARE_HANDLE(IntAttrKey);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>DECLARE_HANDLE(FloatAttrKey);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>DECLARE_HANDLE(Float2AttrKey);  </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>DECLARE_HANDLE(Float3AttrKey);  <span class="comment">// and Color</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>DECLARE_HANDLE(Float4AttrKey);  <span class="comment">// and Color4</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Used as a context to allow C to pass SceneObject pointers</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">//  that ISPC needs</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_scene_object_i_s_p_c.html">   26</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_scene_object_i_s_p_c.html">SceneObjectISPC</a> {</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#ifdef ISPC</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span>* uniform <a class="code hl_variable" href="struct_scene_object_i_s_p_c.html#aafc84ebcbd4d2de3d4723ad74f5e01d6">attribBase</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span>* uniform <a class="code hl_variable" href="struct_scene_object_i_s_p_c.html#a170c193456c1c0b964372a644a1c9f77">bindings</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span>* uniform attribBase;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span>* uniform bindings;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#else </span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_scene_object_i_s_p_c.html#aafc84ebcbd4d2de3d4723ad74f5e01d6">   31</a></span>    <span class="keyword">const</span> <span class="keywordtype">void</span>* <a class="code hl_variable" href="struct_scene_object_i_s_p_c.html#aafc84ebcbd4d2de3d4723ad74f5e01d6">attribBase</a>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_scene_object_i_s_p_c.html#a170c193456c1c0b964372a644a1c9f77">   32</a></span>    <span class="keyword">const</span> <span class="keywordtype">void</span>* <a class="code hl_variable" href="struct_scene_object_i_s_p_c.html#a170c193456c1c0b964372a644a1c9f77">bindings</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">const</span> <span class="keywordtype">void</span>* attribBase;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">const</span> <span class="keywordtype">void</span>* bindings;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
@@ -133,8 +132,8 @@ $(document).ready(function(){initNavTree('_i_s_p_c_support_8h_source.html',''); 
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">// convenience / clarity typedef&#39;s.  Why both 8 &amp; 64 bit pointers?</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//  We have byte-wise offsets for some things (offsets in attrib keys)</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//  and using an 8-bit pointer saves math in the pointer arithmetic</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">typedef</span> uniform <a class="code hl_typedef" href="_platform_8h.html#a3bb8a71f4ae9af551f71e9eb2c9c3325">int8</a>*  uniform PTR8;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">typedef</span> uniform <a class="code hl_typedef" href="_platform_8h.html#ad7a3bd3be7bd59e7fb6337fcbc956eb1">int64</a>* uniform PTR64;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">typedef</span> uniform int8*  uniform PTR8;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">typedef</span> uniform int64* uniform PTR64;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// when ISPC de-references the attribute key pointers it needs to</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">//  get to the data contained therein.  The current AttributeKey</span></div>
@@ -163,7 +162,7 @@ $(document).ready(function(){initNavTree('_i_s_p_c_support_8h_source.html',''); 
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        (PTR64)(sceneObj + SCENEOBJ_ATTRIB_OFFSET);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// deref pointer to get mAttributeStorage</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    r.attributes = (<a class="code hl_typedef" href="_platform_8h.html#a3bb8a71f4ae9af551f71e9eb2c9c3325">int8</a>*)(*attribStoragePtr);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    r.attributes = (int8*)(*attribStoragePtr);</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// find where (map) mBindings live</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    PTR64 uniform bindingsPtr =</div>
@@ -185,7 +184,7 @@ $(document).ready(function(){initNavTree('_i_s_p_c_support_8h_source.html',''); 
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        (PTR64)(ctx.bindings + key-&gt;mIndex);</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="comment">// now de-ref to get my map object pointer</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    PTR64 mapObjPtr = (<a class="code hl_typedef" href="_platform_8h.html#ad7a3bd3be7bd59e7fb6337fcbc956eb1">int64</a>*)(*ptrToMapObjPtr);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    PTR64 mapObjPtr = (int64*)(*ptrToMapObjPtr);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="comment">// is there a mapping?  There isn&#39;t if the mapping object pointer </span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="comment">//  is null</span></div>
@@ -293,19 +292,13 @@ $(document).ready(function(){initNavTree('_i_s_p_c_support_8h_source.html',''); 
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">// TM and (c) 2013 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="ttc" id="a_macros_8h_html"><div class="ttname"><a href="_macros_8h.html">Macros.h</a></div></div>
-<div class="ttc" id="a_macros_8h_html_aec4871ff366a33730b02718ef1c85c0c"><div class="ttname"><a href="_macros_8h.html#aec4871ff366a33730b02718ef1c85c0c">DECLARE_HANDLE</a></div><div class="ttdeci">#define DECLARE_HANDLE(name)</div><div class="ttdef"><b>Definition:</b> <a href="_macros_8h_source.html#l00123">Macros.h:123</a></div></div>
-<div class="ttc" id="a_platform_8h_html_a3bb8a71f4ae9af551f71e9eb2c9c3325"><div class="ttname"><a href="_platform_8h.html#a3bb8a71f4ae9af551f71e9eb2c9c3325">int8</a></div><div class="ttdeci">std::int8_t int8</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00332">Platform.h:332</a></div></div>
-<div class="ttc" id="a_platform_8h_html_ad7a3bd3be7bd59e7fb6337fcbc956eb1"><div class="ttname"><a href="_platform_8h.html#ad7a3bd3be7bd59e7fb6337fcbc956eb1">int64</a></div><div class="ttdeci">std::int64_t int64</div><div class="ttdoc">Basic Types.</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00326">Platform.h:326</a></div></div>
-<div class="ttc" id="astruct_scene_object_i_s_p_c_html"><div class="ttname"><a href="struct_scene_object_i_s_p_c.html">SceneObjectISPC</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_s_p_c_support_8h_source.html#l00026">ISPCSupport.h:26</a></div></div>
-<div class="ttc" id="astruct_scene_object_i_s_p_c_html_a170c193456c1c0b964372a644a1c9f77"><div class="ttname"><a href="struct_scene_object_i_s_p_c.html#a170c193456c1c0b964372a644a1c9f77">SceneObjectISPC::bindings</a></div><div class="ttdeci">const void * bindings</div><div class="ttdef"><b>Definition:</b> <a href="_i_s_p_c_support_8h_source.html#l00032">ISPCSupport.h:32</a></div></div>
-<div class="ttc" id="astruct_scene_object_i_s_p_c_html_aafc84ebcbd4d2de3d4723ad74f5e01d6"><div class="ttname"><a href="struct_scene_object_i_s_p_c.html#aafc84ebcbd4d2de3d4723ad74f5e01d6">SceneObjectISPC::attribBase</a></div><div class="ttdeci">const void * attribBase</div><div class="ttdef"><b>Definition:</b> <a href="_i_s_p_c_support_8h_source.html#l00031">ISPCSupport.h:31</a></div></div>
+<div class="ttc" id="astruct_scene_object_i_s_p_c_html"><div class="ttname"><a href="struct_scene_object_i_s_p_c.html">SceneObjectISPC</a></div><div class="ttdef"><b>Definition:</b> ISPCSupport.h:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_bfad318135196d921c73299781eb9ac8.html">scene</a></li><li class="navelem"><a class="el" href="dir_28597d7401579fcad661c10a0fb8eb4c.html">rdl2</a></li><li class="navelem"><a class="el" href="_i_s_p_c_support_8h.html">ISPCSupport.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_bfad318135196d921c73299781eb9ac8.html">scene</a></li><li class="navelem"><a class="el" href="dir_28597d7401579fcad661c10a0fb8eb4c.html">rdl2</a></li><li class="navelem"><b>ISPCSupport.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

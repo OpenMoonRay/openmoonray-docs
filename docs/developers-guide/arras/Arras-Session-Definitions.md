@@ -1,0 +1,382 @@
+---
+title: Arras Session Definitions
+---
+
+# Arras Session Definitions
+
+Arras clients use a ***session definition*** when creating a new session, to describe the computations that should be created. This is an example session:
+
+![Arras Session Diagram](../images/arras-session-diagram.png)
+
+The definition for this session is essentially a JSON document describing this diagram. In outline, it looks like this:
+
+```json
+{
+    "name": "multi-render",
+    "computations": {
+        "(client)": { ... },
+        "dispatch": { ... },
+        "render": {
+            "arrayExpand": 4, ...
+        },
+        "merge": { ... }
+   }
+}
+```
+
+`name` is mainly for documentation, and has no effect of the meaning of the definition.
+
+`(client)` is used to specify message connections for the session client, which isn't actually a computation. The names of the remaining computations are arbitrary, as long as they are unique within the session.
+
+Only one entry is needed for the four render computations : the `arrayExpand` field causes Arras to duplicate this computation four times.
+
+Inside each computation block are parameters pertaining to that computation. Some of these are general and used with every computation type, others are specific. The most important of the parameters is `dso`, providing the name of the shared library that implements the computation's logic:
+
+```json
+    "(client)": { ... },
+    "dispatch": { 
+        "dso": "libmcrt_computation_progmcrt_dispatch.so",...
+    },
+    "render": {
+		"dso": "libmcrt_computation_progmcrt.so",
+        "arrayExpand": 4, ...
+    },
+    "merge": { 
+        "dso": "libmcrt_computation_progmcrt_merge.so",... 
+    }
+```
+
+The dsos shown here are part of the Moonray release. Another general parameter is entry, which should appear in just one computation. Arras will use whichever machine is assigned to this computation as the entry node -- meaning that this is the machine that the client will connect to, to communicate with the session. It is not required, but the session may be slightly more efficient if the entry computation is one that communicates directly with the client. In this case, we pick the dispatch computation:
+
+```json
+    "dispatch": { 
+        "dso": "libmcrt_computation_progmcrt_dispatch.so",
+        "entry":"yes",...
+    },
+```
+
+One of the parameters specific to the Moonray computations is `fps`, which says how many times per second the session should snapshot the current render progress and send it back to the client. If fps is set too low, then visual feedback to the application user may suffer. In principle, if it is set too high, returning image messages might overload network bandwidth to the client. However, in practice,  the nature of the encoding used for rendered images means that the required bandwidth is roughly the same over a broad range of fps values. fps should be specified for all computations (merge, render and dispatch) in a multi-machine render.
+
+```json
+    "dispatch": { 
+        "dso": "libmcrt_computation_progmcrt_dispatch.so",
+        "entry":"yes",
+        "fps":1
+    },
+```
+
+Each of the computations also needs to know the number of render computations in the session. Rather than specify this directly, we can use the array variable `$arrayNumber.render`, which evaluates to the number of computations in the render array (4, in this case). Doing it this way means that we only have to modify one parameter ("render"/"arrayExpand") to change the session size. Each of the render computations also needs to know its own index in the array, which is provided by the variable `$arrayIndex`. 
+
+```json
+    "dispatch": { 
+        ...
+        "numMachines":"$arrayNumber.render",...
+    },
+    "render": {
+		...
+        "arrayExpand": 4,
+		"numMachines": "$arrayNumber",
+		"machineId": "$arrayIndex, ...
+    },
+    "merge": { 
+		...
+        "numMachines":"$arrayNumber.render",...
+    }
+```
+
+The name of these parameters is a bit misleading since, strictly speaking, they refer to the number of render computations rather than the number of machines used. In practice, the session is usually set up so that each render computation is placed on a different machine, since there is no advantage in splitting the cores on one machine between two or more different computations.
+
+The Moonray render computations have a number of other optional parameters, but these are not described in detail here.
+
+## Requirements
+
+Another section in each computation block is used by the Coordinator service to decide how to allocate the computations to actual machines. The most important part of this is the number of CPU cores and the amount of memory required by each computation.
+
+```json
+"render": {
+		...
+        "requirements": {
+            "resources": {
+                "maxCores": "*",
+                "minCores": 1.0,
+                "memoryMB": 16384
+            }
+        },
+```
+
+These settings will only assign a render computation to a machine that has at least 1 CPU core and 16384 Mb of memory remaining. Setting `maxCores` to '*' causes Coordinator to give the render computation all remaining cores on the machine it is assigned to. 
+
+We are not providing any resource specifications for the dispatch and merge computations, which means that they will get the default of exactly 1 core and 16384 Mb of memory. To specify an exact number of cores explicitly, use the parameter `cores` in place of `maxCores` and `minCores`. 
+
+Coordinator will always allocate all computations with a fixed cores requirement before allocating those with a min/max range. In practice this rule, together with the requirements just discussed, means that each machine can only host one render computation, but the merge and dispatch computations can be placed on any of the render machines.
+
+The number of cores that Coordinator assigns to a render computation determines the number of threads that Moonray will use for rendering. If CPU cores are oversubscribed by the total number of Moonray threads on the machine, then rendering may lose efficiency. For this reason, the total assigned core count is enforced by Arras and by the Moonray computations.
+
+It is currently quite difficult to predict the total amount of RAM that will be used by a render, and there isn't really a useful way to constrain it to be within fixed limits. Although Coordinator will not oversubscribe memory on a machine -- according to the usage listed in the "requirements" section of the session definition -- actual memory usage by Moonray is not, by default, constrained to be within these limits. In other words, the render computation will use as much memory as it needs, regardless of what is listed in the session definition. Therefore it is not critical to set the "memoryMB" value in "requirements" accurately : especially if the CPU core settings prevent multiple render computations on the same machine. The Arras Node implementation is capable of enforcing computation memory constraints, using cgroups, but this is not a mechanism that we have enabled in production use.
+
+Another part of the requirements section describes the software environment required to run the computations. 
+
+```json
+	"render": {
+		...
+        "requirements": {
+            "computationAPI": "4.x",
+			"packaging_system": "current-environment",...
+        }
+    }
+```
+               
+`computationAPI` is the version of Arras required to run the computation, and should always be "4.x". 
+
+Arras is written to support software versioned using the Rez system. When Rez is being used, `packaging_system` would be set to "rez", and additional parameters in the requirements section would specify the Rez packages needed. Setting packaging_system to "current-environment" is simpler, and causes the computation to run in the same environment that the Node launching the computation was started in. Session definitions may also use the parameter `context`, which refers to a complex environment attached to the definition in a separate section. Since these methods are quite specific to the software versioning systems used at DWA, they are not discussed further here.
+
+## Messages
+
+The messages sections describe the messaging connections between computations -- the arrows in the diagram at the beginning of this section. Each computation describes the types of messages that it wants to receive from other computations. 
+
+The client wants to receive all messages sent by the merge computation:
+
+```json
+    "(client)": {
+	    ...,
+        "messages": {
+            "merge": "*"
+        }
+    }
+```
+
+Dispatch receives `RDLMessage`s containing scene data and forwards them to the render computations. It also handles `GenericMessage` for debugging support and `JSONMessage` to support picking:
+
+```json
+	"dispatch": {
+		...,
+        "messages": {
+                	"(client)": {
+                    	"accept": [
+                        	"RDLMessage",
+                        	"GenericMessage",
+                        	"JSONMessage"
+                        ]
+                	}
+}
+```
+
+In the `(client)` message section, "*" is shorthand for "accept": [ "*" ]. The messages section can also contain an "ignore" list, but this is never used in practice.
+
+```json
+	"render": { 
+        ...,
+        "messages": {
+                	"(client)": {
+                    	"accept": [
+                        	"GenericMessage",
+                        	"ViewportMessage"
+                    	]
+                	},
+                	"dispatch": "*",
+            }
+}
+```
+
+`GenericMessage` is used for debugging. `ViewportMessage`s are sent by the client to modify the render viewport : all of the render computations receive these.
+
+```json
+	"merge": {
+		...,
+        "messages": {
+                	"(client)": {
+                    	"accept": [
+                        	"ViewportMessage",
+                        	"GenericMessage"
+                    	]
+                    },
+                	"render": {
+                    	"accept": [
+                        	"PartialFrame",
+                        	"ProgressiveFrame",
+                        	"GenericMessage",
+                        	"JSONMessage"
+                    	]
+                	},
+        }
+}
+```
+
+`PartialFrame` and `ProgressiveFrame` are two different types of render result that can be produced by the render computations.
+## Credit Messages
+
+Credit messages are sent by the client to limit the rate at which render and merge computations output render snapshot frames. If this rate exceeds the rate at which they can be transmitted by the network or processed by the client, messages will accumulate in intermediate buffers and cause ever-increasing latency. The progressive frame format is incremental, and means that Arras cannot safely drop messages even if it is overloaded. However it also means that the size of `ProgressiveFrame` messages decreases as they are sent more frequently. The overall bandwidth required tends to remain the same regardless of the snapshot frequency, within reasonable limits, so the credit mechanism is less critical than it has been in the past. It still can be useful to enable credit messages to protect against unusual network conditions.
+
+Computations that receive credit messages need the parameter `initialCredit` set, and `CreditUpdate` added to their messages. Credit messages travel in the reverse direction to the rendered frames : in a multi-machine render, the client sends credit messages to merge and merge sends credit messages to the render computations.
+
+```json
+	"merge" : {
+		...,
+		"sendCredit": true
+		"initialCredit": 2,
+		"messages": {
+			"(client)": {
+                    	"accept": [
+                        	"ViewportMessage",
+                       		"CreditUpdate"
+                    	]
+                	},
+...
+}
+},
+"render" : {
+	...,
+	"initialCredit":2,
+	"messages": {
+		...,
+		"merge": {
+			"accept": [
+				"CreditUpdate"
+			]
+		}
+	}
+}
+```
+
+`initialCredit` = 2 means that these computations will only allow 2 render frame messages to be in the pipeline and not yet received and processed. The client code is responsible for explicitly sending a `CreditUpdate` message when it has received and processed each frame.
+## Session definition files
+
+Session definitions are usually written as a JSON template file loaded by the client. After loading, the client modifies any fields in the template that are configurable. The most common modification is to the `arrayExpand` field in a multi-machine render. The client code can obtain information from the user on how many render machines are desired, and place that value in `arrayExpand`. `fps` is another commonly modified field.
+
+Session definitions files have the extension ".sessiondef"
+
+## Complete session definitions
+
+***Single machine render with credit***
+
+```json
+{
+   	"name": "single_credit",
+    	"computations": {
+        	"(client)": {
+            	"messages": {
+                		"render": "*"
+            	}
+        	},
+        	"render": {
+            	"dso": "libmcrt_computation_progmcrt.so",
+            	"entry": "yes",
+            	"fps": 1,
+                  "initialCredit": 2,
+            	"requirements": {
+                		"computationAPI": "4.x",
+               		"packaging_system":"current-environment",
+                		"resources": {
+                    		"maxCores": "*",
+                    		"minCores": 1.0,
+                    		"memoryMB": 16384.0
+                		}
+            	},
+           		"messages": {
+                		"(client)": {
+                    		"accept": [
+                        		"RDLMessage",
+                        		"GenericMessage",
+                        		"ViewportMessage",
+                       			"JSONMessage",
+                        		"CreditUpdate"
+             			]
+                		}
+            	}
+        	}
+    	}
+}
+```
+
+***Multi-machine render with credit***
+
+```json
+{
+    	"name": "multi_credit",
+    	"computations": {
+        	"(client)": {
+            	"messages": {
+                		"merge": "*"
+            	}
+        	},
+        	"dispatch": {
+			"dso": "libmcrt_computation_progmcrt_dispatch.so",
+            	"entry": "yes",
+                  "fps": 1,
+"numMachines": "$arrayNumber.render",
+            	"requirements": {
+                		"computationAPI": "4.x",
+				"packaging_system":"current-environment",
+                  },
+            	"messages": {
+                		"(client)": {
+                    		"accept": [
+                        		"RDLMessage",
+                        		"GenericMessage",
+                        	      "JSONMessage"                    ]
+]           
+     				}
+               	}
+  	},
+        	"render": {
+            	"arrayExpand": 4,
+            	"dso": "libmcrt_computation_progmcrt.so",
+            	"fps": 1,
+                  "machineId": "$arrayIndex",
+            	"numMachines": "$arrayNumber",
+                  "initialCredit": 2,
+            	"requirements": {
+                		"computationAPI": "4.x",
+				"packaging_system":"current-environment",
+                		"resources": {
+                    		"maxCores": "*",
+                    		"minCores": 1.0,
+                    		"memoryMB": 16384
+                		}
+            	},
+            	"messages": {
+                		"(client)": {
+                    		"accept": [
+                        		"GenericMessage",
+                        		"ViewportMessage"
+                    		]
+                		},
+                		"merge": {
+                    		"accept": [
+                        		"CreditUpdate"
+                    		]
+                		},
+                		"dispatch": "*"
+            	}
+        	},
+        	"merge": {
+            	"dso": "libmcrt_computation_progmcrt_merge.so",
+            	"fps": 1,
+                  "initialCredit": 2,
+            	"sendCredit": true,
+			"numMachines": "$arrayNumber.render",
+            	"requirements": {
+                		"computationAPI": "4.x",
+				"packaging_system":"current-environment"
+},
+            	"messages": {
+                		"(client)": {
+                    		"accept": [
+                        		"ViewportMessage",
+                        		"CreditUpdate"
+                    		]
+                		},
+                		"render": {
+                    		"accept": [
+                        		"PartialFrame",
+                        		"ProgressiveFrame",
+                        		"GenericMessage",
+                        		"JSONMessage"
+                    		]
+                		}  
+            	}
+          	}
+    	}
+}
+```
+

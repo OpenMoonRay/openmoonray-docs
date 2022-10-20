@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/common/fb_util/SrgbF2C.h Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/common/fb_util/SrgbF2C.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('_srgb_f2_c_8h_source.html',''); initRe
   <div class="headertitle"><div class="title">SrgbF2C.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_srgb_f2_c_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2020-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('_srgb_f2_c_8h_source.html',''); initRe
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">//      return (f &lt;= 0.0031308f)? (f * 12.92f): (1.055f * powf(f, 1.0f / 2.4f) - 0.055f);</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">//   }</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">//</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">static</span> uint8_t <a class="code hl_function" href="classscene__rdl2_1_1fb__util_1_1_srgb_f2_c.html#a91663a465de6d7b69eb264c48809b27a">sRGB</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> f); <span class="comment">// convert to sRGB space and 8bit quantization from linear float</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">static</span> uint8_t sRGB(<span class="keyword">const</span> <span class="keywordtype">float</span> f); <span class="comment">// convert to sRGB space and 8bit quantization from linear float</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}; <span class="comment">// SrgbF2C</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
@@ -142,15 +142,14 @@ $(document).ready(function(){initNavTree('_srgb_f2_c_8h_source.html',''); initRe
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// TM and (c) 2020-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="ttc" id="aclassscene__rdl2_1_1fb__util_1_1_srgb_f2_c_html"><div class="ttname"><a href="classscene__rdl2_1_1fb__util_1_1_srgb_f2_c.html">scene_rdl2::fb_util::SrgbF2C</a></div><div class="ttdef"><b>Definition:</b> <a href="_srgb_f2_c_8h_source.html#l00015">SrgbF2C.h:16</a></div></div>
-<div class="ttc" id="aclassscene__rdl2_1_1fb__util_1_1_srgb_f2_c_html_a91663a465de6d7b69eb264c48809b27a"><div class="ttname"><a href="classscene__rdl2_1_1fb__util_1_1_srgb_f2_c.html#a91663a465de6d7b69eb264c48809b27a">scene_rdl2::fb_util::SrgbF2C::sRGB</a></div><div class="ttdeci">static uint8_t sRGB(const float f)</div><div class="ttdef"><b>Definition:</b> <a href="_srgb_f2_c_8cc_source.html#l02072">SrgbF2C.cc:2072</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_dispatch_computation_8cc_source.html#l00044">McrtRtDispatchComputation.cc:44</a></div></div>
+<div class="ttc" id="aclassscene__rdl2_1_1fb__util_1_1_srgb_f2_c_html"><div class="ttname"><a href="classscene__rdl2_1_1fb__util_1_1_srgb_f2_c.html">scene_rdl2::fb_util::SrgbF2C</a></div><div class="ttdef"><b>Definition:</b> SrgbF2C.h:16</div></div>
+<div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> McrtRtDispatchComputation.cc:44</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_98bf6363159b156e9be2b7c097b1406b.html">common</a></li><li class="navelem"><a class="el" href="dir_eab50e84d6354c2815faf3dd0e1375d1.html">fb_util</a></li><li class="navelem"><a class="el" href="_srgb_f2_c_8h.html">SrgbF2C.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_98bf6363159b156e9be2b7c097b1406b.html">common</a></li><li class="navelem"><a class="el" href="dir_eab50e84d6354c2815faf3dd0e1375d1.html">fb_util</a></li><li class="navelem"><b>SrgbF2C.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

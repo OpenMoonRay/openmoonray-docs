@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/core/Distribution.cc File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/core/Distribution.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -92,17 +92,16 @@ $(document).ready(function(){initNavTree('_distribution_8cc.html',''); initResiz
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Distribution.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_distribution_8h_source.html">Distribution.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="lib_2rendering_2pbr_2core_2util_8h_source.html">Util.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;Distribution.h&quot;</code><br />
+<code>#include &quot;Util.h&quot;</code><br />
 <code>#include &lt;rendering/pbr/core/Distribution_ispc_stubs.h&gt;</code><br />
 <code>#include &lt;rendering/pbr/core/ImageColorCorrect_ispc_stubs.h&gt;</code><br />
 <code>#include &lt;rendering/pbr/core/Util_ispc_stubs.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="_oiio_utils_8h_source.html">rendering/rndr/OiioUtils.h</a>&gt;</code><br />
+<code>#include &lt;rendering/rndr/OiioUtils.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/except/exceptions.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/math/MathUtil.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/render/logging/logging.h&gt;</code><br />
@@ -113,40 +112,35 @@ $(document).ready(function(){initNavTree('_distribution_8cc.html',''); initResiz
 <code>#include &lt;OpenImageIO/imagebufalgo.h&gt;</code><br />
 <code>#include &lt;tbb/parallel_for.h&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
-</div>
-<p><a href="_distribution_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1pbr"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html">moonray::pbr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:acb87d59c48a44e6f185bfed201420391"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#acb87d59c48a44e6f185bfed201420391">moonray::pbr::intAndFrac</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> <a class="el" href="_test_qmc_8cc.html#ad0da36b2558901e21e7a30f6c227a45e">x</a>, int *xInt, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> *xFrac)</td></tr>
+<tr class="memitem:acb87d59c48a44e6f185bfed201420391"><td class="memItemLeft" align="right" valign="top"><a id="acb87d59c48a44e6f185bfed201420391" name="acb87d59c48a44e6f185bfed201420391"></a>
+finline void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::intAndFrac</b> (float x, int *xInt, float *xFrac)</td></tr>
 <tr class="separator:acb87d59c48a44e6f185bfed201420391"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bd13d22b0de02894e7d8defabfb0d0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a9bd13d22b0de02894e7d8defabfb0d0f">moonray::pbr::HUD_VALIDATOR</a> (GuideDistribution1D)</td></tr>
+<tr class="memitem:a9bd13d22b0de02894e7d8defabfb0d0f"><td class="memItemLeft" align="right" valign="top"><a id="a9bd13d22b0de02894e7d8defabfb0d0f" name="a9bd13d22b0de02894e7d8defabfb0d0f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::HUD_VALIDATOR</b> (GuideDistribution1D)</td></tr>
 <tr class="separator:a9bd13d22b0de02894e7d8defabfb0d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f6b52b5fa64d14f3eb7a1842aecdc6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a7f6b52b5fa64d14f3eb7a1842aecdc6f">moonray::pbr::quadraticHelper</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> c0, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> c1, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> c2, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> twoK, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> &amp;p)</td></tr>
+<tr class="memitem:a7f6b52b5fa64d14f3eb7a1842aecdc6f"><td class="memItemLeft" align="right" valign="top"><a id="a7f6b52b5fa64d14f3eb7a1842aecdc6f" name="a7f6b52b5fa64d14f3eb7a1842aecdc6f"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::quadraticHelper</b> (float c0, float c1, float c2, float twoK, float &amp;p)</td></tr>
 <tr class="separator:a7f6b52b5fa64d14f3eb7a1842aecdc6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa73e467b4901380c4f9c61a20aac2b02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#aa73e467b4901380c4f9c61a20aac2b02">moonray::pbr::HUD_VALIDATOR</a> (Distribution2D)</td></tr>
+<tr class="memitem:aa73e467b4901380c4f9c61a20aac2b02"><td class="memItemLeft" align="right" valign="top"><a id="aa73e467b4901380c4f9c61a20aac2b02" name="aa73e467b4901380c4f9c61a20aac2b02"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::HUD_VALIDATOR</b> (Distribution2D)</td></tr>
 <tr class="separator:aa73e467b4901380c4f9c61a20aac2b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb30981ca98e5eeb5c78737469e0c55d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#abb30981ca98e5eeb5c78737469e0c55d">moonray::pbr::sampleLinearBlended</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> r, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> *pdf, const GuideDistribution1D *cond0, const GuideDistribution1D *cond1, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> s)</td></tr>
+<tr class="memitem:abb30981ca98e5eeb5c78737469e0c55d"><td class="memItemLeft" align="right" valign="top"><a id="abb30981ca98e5eeb5c78737469e0c55d" name="abb30981ca98e5eeb5c78737469e0c55d"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::sampleLinearBlended</b> (float r, float *pdf, const GuideDistribution1D *cond0, const GuideDistribution1D *cond1, float s)</td></tr>
 <tr class="separator:abb30981ca98e5eeb5c78737469e0c55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e2070ea5204fd5201149349982ab82e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a8e2070ea5204fd5201149349982ab82e">moonray::pbr::HUD_VALIDATOR</a> (ImageDistribution)</td></tr>
+<tr class="memitem:a8e2070ea5204fd5201149349982ab82e"><td class="memItemLeft" align="right" valign="top"><a id="a8e2070ea5204fd5201149349982ab82e" name="a8e2070ea5204fd5201149349982ab82e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::HUD_VALIDATOR</b> (ImageDistribution)</td></tr>
 <tr class="separator:a8e2070ea5204fd5201149349982ab82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a27e32abee816ddc5bd0e312c534e6042"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a27e32abee816ddc5bd0e312c534e6042">moonray::pbr::sRangeDivider</a> = 80</td></tr>
-<tr class="separator:a27e32abee816ddc5bd0e312c534e6042"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Eric Tabellion $Id$ </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_distribution_8cc_source.html">Distribution.cc</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

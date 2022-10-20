@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/common/geometry/GeometryObjects.h Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/common/geometry/GeometryObjects.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('_geometry_objects_8h_source.html','');
   <div class="headertitle"><div class="title">GeometryObjects.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_geometry_objects_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2016-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
@@ -111,16 +111,16 @@ $(document).ready(function(){initNavTree('_geometry_objects_8h_source.html','');
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemoonray.html">moonray</a> {</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structmoonray_1_1_object_mesh.html">   18</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structmoonray_1_1_object_mesh.html">ObjectMesh</a> {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structmoonray_1_1_object_mesh.html#ad1df6ff2c6932e4f3a3347d600521319">   19</a></span>    std::string <a class="code hl_variable" href="structmoonray_1_1_object_mesh.html#ad1df6ff2c6932e4f3a3347d600521319">mMeshName</a>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structmoonray_1_1_object_mesh.html#a0a92cba46df2c3527583976512f8f5f0">   20</a></span>    std::vector&lt;float&gt; <a class="code hl_variable" href="structmoonray_1_1_object_mesh.html#a0a92cba46df2c3527583976512f8f5f0">mMeshPositions</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    std::string mMeshName;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    std::vector&lt;float&gt; mMeshPositions;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="namespacemoonray.html#af78527a9848977ebcfcb070f32256c9d">   22</a></span><span class="keyword">typedef</span> std::vector&lt;ObjectMesh&gt; <a class="code hl_typedef" href="namespacemoonray.html#af78527a9848977ebcfcb070f32256c9d">ObjectMeshes</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">typedef</span> std::vector&lt;ObjectMesh&gt; ObjectMeshes;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structmoonray_1_1_object_data.html">   24</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structmoonray_1_1_object_data.html">ObjectData</a> {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structmoonray_1_1_object_data.html#a25a7f7a423febf872fe06144812d1ad0">   25</a></span>    std::string <a class="code hl_variable" href="structmoonray_1_1_object_data.html#a25a7f7a423febf872fe06144812d1ad0">mAssetName</a>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structmoonray_1_1_object_data.html#a439c2e4cd94e0b08574d57d80e5d374c">   26</a></span>    std::string <a class="code hl_variable" href="structmoonray_1_1_object_data.html#a439c2e4cd94e0b08574d57d80e5d374c">mSubAssetName</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structmoonray_1_1_object_data.html#af04ae1cadbaad813da7d1c409656371b">   27</a></span>    std::string <a class="code hl_variable" href="structmoonray_1_1_object_data.html#af04ae1cadbaad813da7d1c409656371b">mNodeName</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structmoonray_1_1_object_data.html#a00bca920fcd63b4032c0e00d4d036987">   28</a></span>    <a class="code hl_typedef" href="namespacemoonray.html#af78527a9848977ebcfcb070f32256c9d">ObjectMeshes</a> <a class="code hl_variable" href="structmoonray_1_1_object_data.html#a00bca920fcd63b4032c0e00d4d036987">mObjectMeshes</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    std::string mAssetName;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    std::string mSubAssetName;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    std::string mNodeName;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    ObjectMeshes mObjectMeshes;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>} <span class="comment">// end namespace moonray</span></div>
@@ -130,22 +130,15 @@ $(document).ready(function(){initNavTree('_geometry_objects_8h_source.html','');
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">// TM and (c) 2016-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
-<div class="ttc" id="anamespacemoonray_html_af78527a9848977ebcfcb070f32256c9d"><div class="ttname"><a href="namespacemoonray.html#af78527a9848977ebcfcb070f32256c9d">moonray::ObjectMeshes</a></div><div class="ttdeci">std::vector&lt; ObjectMesh &gt; ObjectMeshes</div><div class="ttdef"><b>Definition:</b> <a href="_geometry_objects_8h_source.html#l00022">GeometryObjects.h:22</a></div></div>
-<div class="ttc" id="astructmoonray_1_1_object_data_html"><div class="ttname"><a href="structmoonray_1_1_object_data.html">moonray::ObjectData</a></div><div class="ttdef"><b>Definition:</b> <a href="_geometry_objects_8h_source.html#l00024">GeometryObjects.h:24</a></div></div>
-<div class="ttc" id="astructmoonray_1_1_object_data_html_a00bca920fcd63b4032c0e00d4d036987"><div class="ttname"><a href="structmoonray_1_1_object_data.html#a00bca920fcd63b4032c0e00d4d036987">moonray::ObjectData::mObjectMeshes</a></div><div class="ttdeci">ObjectMeshes mObjectMeshes</div><div class="ttdef"><b>Definition:</b> <a href="_geometry_objects_8h_source.html#l00028">GeometryObjects.h:28</a></div></div>
-<div class="ttc" id="astructmoonray_1_1_object_data_html_a25a7f7a423febf872fe06144812d1ad0"><div class="ttname"><a href="structmoonray_1_1_object_data.html#a25a7f7a423febf872fe06144812d1ad0">moonray::ObjectData::mAssetName</a></div><div class="ttdeci">std::string mAssetName</div><div class="ttdef"><b>Definition:</b> <a href="_geometry_objects_8h_source.html#l00025">GeometryObjects.h:25</a></div></div>
-<div class="ttc" id="astructmoonray_1_1_object_data_html_a439c2e4cd94e0b08574d57d80e5d374c"><div class="ttname"><a href="structmoonray_1_1_object_data.html#a439c2e4cd94e0b08574d57d80e5d374c">moonray::ObjectData::mSubAssetName</a></div><div class="ttdeci">std::string mSubAssetName</div><div class="ttdef"><b>Definition:</b> <a href="_geometry_objects_8h_source.html#l00026">GeometryObjects.h:26</a></div></div>
-<div class="ttc" id="astructmoonray_1_1_object_data_html_af04ae1cadbaad813da7d1c409656371b"><div class="ttname"><a href="structmoonray_1_1_object_data.html#af04ae1cadbaad813da7d1c409656371b">moonray::ObjectData::mNodeName</a></div><div class="ttdeci">std::string mNodeName</div><div class="ttdef"><b>Definition:</b> <a href="_geometry_objects_8h_source.html#l00027">GeometryObjects.h:27</a></div></div>
-<div class="ttc" id="astructmoonray_1_1_object_mesh_html"><div class="ttname"><a href="structmoonray_1_1_object_mesh.html">moonray::ObjectMesh</a></div><div class="ttdef"><b>Definition:</b> <a href="_geometry_objects_8h_source.html#l00018">GeometryObjects.h:18</a></div></div>
-<div class="ttc" id="astructmoonray_1_1_object_mesh_html_a0a92cba46df2c3527583976512f8f5f0"><div class="ttname"><a href="structmoonray_1_1_object_mesh.html#a0a92cba46df2c3527583976512f8f5f0">moonray::ObjectMesh::mMeshPositions</a></div><div class="ttdeci">std::vector&lt; float &gt; mMeshPositions</div><div class="ttdef"><b>Definition:</b> <a href="_geometry_objects_8h_source.html#l00020">GeometryObjects.h:20</a></div></div>
-<div class="ttc" id="astructmoonray_1_1_object_mesh_html_ad1df6ff2c6932e4f3a3347d600521319"><div class="ttname"><a href="structmoonray_1_1_object_mesh.html#ad1df6ff2c6932e4f3a3347d600521319">moonray::ObjectMesh::mMeshName</a></div><div class="ttdeci">std::string mMeshName</div><div class="ttdef"><b>Definition:</b> <a href="_geometry_objects_8h_source.html#l00019">GeometryObjects.h:19</a></div></div>
+<div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> moonray.cc:19</div></div>
+<div class="ttc" id="astructmoonray_1_1_object_data_html"><div class="ttname"><a href="structmoonray_1_1_object_data.html">moonray::ObjectData</a></div><div class="ttdef"><b>Definition:</b> GeometryObjects.h:24</div></div>
+<div class="ttc" id="astructmoonray_1_1_object_mesh_html"><div class="ttname"><a href="structmoonray_1_1_object_mesh.html">moonray::ObjectMesh</a></div><div class="ttdef"><b>Definition:</b> GeometryObjects.h:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_26bb93814b9e3833617d1a6c0b0e1fb3.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_057a8e804fa21f5c97fdff16c5652908.html">lib</a></li><li class="navelem"><a class="el" href="dir_6ba13bed146c39e06880cd7377d9eb9b.html">common</a></li><li class="navelem"><a class="el" href="dir_5bac1de40147f6215456e13ffc88a07e.html">geometry</a></li><li class="navelem"><a class="el" href="_geometry_objects_8h.html">GeometryObjects.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_26bb93814b9e3833617d1a6c0b0e1fb3.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_057a8e804fa21f5c97fdff16c5652908.html">lib</a></li><li class="navelem"><a class="el" href="dir_6ba13bed146c39e06880cd7377d9eb9b.html">common</a></li><li class="navelem"><a class="el" href="dir_5bac1de40147f6215456e13ffc88a07e.html">geometry</a></li><li class="navelem"><b>GeometryObjects.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

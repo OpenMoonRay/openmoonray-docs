@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/bvh/shading/Log.h Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/bvh/shading/Log.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -97,12 +97,8 @@ $(document).ready(function(){initNavTree('_log_8h_source.html',''); initResizabl
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2013-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">///</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/// @file Log.h</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/// $Id$</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">///</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;scene_rdl2/render/logging/logging.h&gt;</span></div>
@@ -114,22 +110,8 @@ $(document).ready(function(){initNavTree('_log_8h_source.html',''); initResizabl
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">class </span>Intersection;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//---------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"></span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * Convenience function to allow for fast local (in the thread-local sense)</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * logging from within a Shader.</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * Sample usage:</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * </span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * In constructor/update:</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * LogEvent mBadValueError = mLogEventRegistry.createEvent(logging::ERROR_LEVEL, &quot;Bad value&quot;);</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * </span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * In sample/shade:</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> * shading::localLog(me, tls, mBadValueError)</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> * </span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * See lib/scene_rdl2/render/logging/logging.h for more details</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacemoonray_1_1shading.html#a23997fadc0d76ba69f46153b3e9a691b">logEvent</a>(<span class="keyword">const</span> <a class="code hl_class" href="classscene__rdl2_1_1rdl2_1_1_shader.html">scene_rdl2::rdl2::Shader</a> *shader, <span class="keyword">const</span> shading::TLState *tls, <a class="code hl_typedef" href="namespacescene__rdl2_1_1logging.html#ae76c8e0ebe84e20bd0bcec9c9b07efb7">scene_rdl2::logging::LogEvent</a> event);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keywordtype">void</span> logEvent(<span class="keyword">const</span> <a class="code hl_class" href="classscene__rdl2_1_1rdl2_1_1_shader.html">scene_rdl2::rdl2::Shader</a> *shader, <span class="keyword">const</span> shading::TLState *tls, scene_rdl2::logging::LogEvent event);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//---------------------------------------------------------------------------</span></div>
@@ -141,10 +123,8 @@ $(document).ready(function(){initNavTree('_log_8h_source.html',''); initResizabl
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// TM and (c) 2013-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_shader_html"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_shader.html">scene_rdl2::rdl2::Shader</a></div><div class="ttdef"><b>Definition:</b> <a href="_shader_8h_source.html#l00031">Shader.h:32</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1shading_html_a23997fadc0d76ba69f46153b3e9a691b"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a23997fadc0d76ba69f46153b3e9a691b">moonray::shading::logEvent</a></div><div class="ttdeci">void logEvent(const scene_rdl2::rdl2::Shader *shader, const shading::TLState *tls, scene_rdl2::logging::LogEvent event)</div><div class="ttdef"><b>Definition:</b> <a href="_log_8cc_source.html#l00020">Log.cc:20</a></div></div>
-<div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1logging_html_ae76c8e0ebe84e20bd0bcec9c9b07efb7"><div class="ttname"><a href="namespacescene__rdl2_1_1logging.html#ae76c8e0ebe84e20bd0bcec9c9b07efb7">scene_rdl2::logging::LogEvent</a></div><div class="ttdeci">int LogEvent</div><div class="ttdef"><b>Definition:</b> <a href="logging_8h_source.html#l00152">logging.h:152</a></div></div>
+<div class="ttc" id="aclassscene__rdl2_1_1rdl2_1_1_shader_html"><div class="ttname"><a href="classscene__rdl2_1_1rdl2_1_1_shader.html">scene_rdl2::rdl2::Shader</a></div><div class="ttdef"><b>Definition:</b> Shader.h:32</div></div>
+<div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> moonray.cc:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

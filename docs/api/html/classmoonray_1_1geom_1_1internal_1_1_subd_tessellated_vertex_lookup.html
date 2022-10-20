@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: moonray::geom::internal::SubdTessellatedVertexLookup Class Reference</title>
+<title>OpenMoonrayTEST #4: moonray::geom::internal::SubdTessellatedVertexLookup Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -92,14 +92,10 @@ $(document).ready(function(){initNavTree('classmoonray_1_1geom_1_1internal_1_1_s
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">moonray::geom::internal::SubdTessellatedVertexLookup Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for moonray::geom::internal::SubdTessellatedVertexLookup:</div>
 <div class="dyncontent">
@@ -112,685 +108,63 @@ Inheritance diagram for moonray::geom::internal::SubdTessellatedVertexLookup:</d
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae465f97ab1971366f5b895d3da44980c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#ae465f97ab1971366f5b895d3da44980c">SubdTessellatedVertexLookup</a> (const std::vector&lt; <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_subd_quad_topology.html">SubdQuadTopology</a> &gt; &amp;quadTopologies, const <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_subd_topology_id_lookup.html">SubdTopologyIdLookup</a> &amp;topologyIdLookup, const std::vector&lt; <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_subd_tessellation_factor.html">SubdTessellationFactor</a> &gt; &amp;tessellationFactors, bool noTessellation)</td></tr>
+<tr class="memitem:ae465f97ab1971366f5b895d3da44980c"><td class="memItemLeft" align="right" valign="top"><a id="ae465f97ab1971366f5b895d3da44980c" name="ae465f97ab1971366f5b895d3da44980c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SubdTessellatedVertexLookup</b> (const std::vector&lt; <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_subd_quad_topology.html">SubdQuadTopology</a> &gt; &amp;quadTopologies, const <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_subd_topology_id_lookup.html">SubdTopologyIdLookup</a> &amp;topologyIdLookup, const std::vector&lt; <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_subd_tessellation_factor.html">SubdTessellationFactor</a> &gt; &amp;tessellationFactors, bool noTessellation)</td></tr>
 <tr class="separator:ae465f97ab1971366f5b895d3da44980c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9fffbb8f60d587298f686fa45bccda5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#ac9fffbb8f60d587298f686fa45bccda5">getEdgeVertexId</a> (int edgeId, int n, bool endAtEdgeMiddle) const</td></tr>
+<tr class="memitem:ac9fffbb8f60d587298f686fa45bccda5"><td class="memItemLeft" align="right" valign="top"><a id="ac9fffbb8f60d587298f686fa45bccda5" name="ac9fffbb8f60d587298f686fa45bccda5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getEdgeVertexId</b> (int edgeId, int n, bool endAtEdgeMiddle) const</td></tr>
 <tr class="separator:ac9fffbb8f60d587298f686fa45bccda5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd99f4a3bf7d3513271d1062e3d62943"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#abd99f4a3bf7d3513271d1062e3d62943">getInteriorRowVertexCount</a> (const <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_subd_quad_topology.html">SubdQuadTopology</a> &amp;quadTopology) const</td></tr>
+<tr class="memitem:abd99f4a3bf7d3513271d1062e3d62943"><td class="memItemLeft" align="right" valign="top"><a id="abd99f4a3bf7d3513271d1062e3d62943" name="abd99f4a3bf7d3513271d1062e3d62943"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getInteriorRowVertexCount</b> (const <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_subd_quad_topology.html">SubdQuadTopology</a> &amp;quadTopology) const</td></tr>
 <tr class="separator:abd99f4a3bf7d3513271d1062e3d62943"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae89be8a455d8f0f86260d2823fdd1f2d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#ae89be8a455d8f0f86260d2823fdd1f2d">getInteriorColVertexCount</a> (const <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_subd_quad_topology.html">SubdQuadTopology</a> &amp;quadTopology) const</td></tr>
+<tr class="memitem:ae89be8a455d8f0f86260d2823fdd1f2d"><td class="memItemLeft" align="right" valign="top"><a id="ae89be8a455d8f0f86260d2823fdd1f2d" name="ae89be8a455d8f0f86260d2823fdd1f2d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getInteriorColVertexCount</b> (const <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_subd_quad_topology.html">SubdQuadTopology</a> &amp;quadTopology) const</td></tr>
 <tr class="separator:ae89be8a455d8f0f86260d2823fdd1f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4484765e81ca76efd0c787a01b48de8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#ac4484765e81ca76efd0c787a01b48de8">noRingToStitch</a> (const <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_subd_quad_topology.html">SubdQuadTopology</a> &amp;quadTopology) const</td></tr>
+<tr class="memitem:ac4484765e81ca76efd0c787a01b48de8"><td class="memItemLeft" align="right" valign="top"><a id="ac4484765e81ca76efd0c787a01b48de8" name="ac4484765e81ca76efd0c787a01b48de8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>noRingToStitch</b> (const <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_subd_quad_topology.html">SubdQuadTopology</a> &amp;quadTopology) const</td></tr>
 <tr class="separator:ac4484765e81ca76efd0c787a01b48de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40f8c7735c20295f812fafcf64a40da2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#a40f8c7735c20295f812fafcf64a40da2">getMaxEdgeResolution</a> () const</td></tr>
+<tr class="memitem:a40f8c7735c20295f812fafcf64a40da2"><td class="memItemLeft" align="right" valign="top"><a id="a40f8c7735c20295f812fafcf64a40da2" name="a40f8c7735c20295f812fafcf64a40da2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxEdgeResolution</b> () const</td></tr>
 <tr class="separator:a40f8c7735c20295f812fafcf64a40da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f04bcc8e8662a0cb04af5968718ee4d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a5f04bcc8e8662a0cb04af5968718ee4d">getEdgeVertexCount</a> (int edgeId) const</td></tr>
-<tr class="separator:a5f04bcc8e8662a0cb04af5968718ee4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8488ca8a8627121f89f0262195e9428b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a8488ca8a8627121f89f0262195e9428b">getTessellatedVertexCount</a> () const</td></tr>
-<tr class="separator:a8488ca8a8627121f89f0262195e9428b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a312c3a60c17c4c1028092034d78f382d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a312c3a60c17c4c1028092034d78f382d">getInteriorVertexId</a> (int face, int <a class="el" href="namespacescene__rdl2_1_1math.html#a1a937db98c05237cb552ca6b0dec3d1f">row</a>, int <a class="el" href="namespacescene__rdl2_1_1math.html#a773029e4c1d98a894a6a3c73036f3413">col</a>, int interiorColVertexCount) const</td></tr>
-<tr class="separator:a312c3a60c17c4c1028092034d78f382d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dcda95e78650944e75da41a6d47cf57"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a7dcda95e78650944e75da41a6d47cf57">getTessellatedVertexId</a> (int controlVertexId) const</td></tr>
-<tr class="separator:a7dcda95e78650944e75da41a6d47cf57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html">moonray::geom::internal::TessellatedVertexLookup</a></td></tr>
+<tr class="memitem:a5f04bcc8e8662a0cb04af5968718ee4d inherit pub_methods_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memItemLeft" align="right" valign="top"><a id="a5f04bcc8e8662a0cb04af5968718ee4d" name="a5f04bcc8e8662a0cb04af5968718ee4d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getEdgeVertexCount</b> (int edgeId) const</td></tr>
+<tr class="separator:a5f04bcc8e8662a0cb04af5968718ee4d inherit pub_methods_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8488ca8a8627121f89f0262195e9428b inherit pub_methods_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memItemLeft" align="right" valign="top"><a id="a8488ca8a8627121f89f0262195e9428b" name="a8488ca8a8627121f89f0262195e9428b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getTessellatedVertexCount</b> () const</td></tr>
+<tr class="separator:a8488ca8a8627121f89f0262195e9428b inherit pub_methods_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a312c3a60c17c4c1028092034d78f382d inherit pub_methods_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memItemLeft" align="right" valign="top"><a id="a312c3a60c17c4c1028092034d78f382d" name="a312c3a60c17c4c1028092034d78f382d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getInteriorVertexId</b> (int face, int row, int col, int interiorColVertexCount) const</td></tr>
+<tr class="separator:a312c3a60c17c4c1028092034d78f382d inherit pub_methods_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dcda95e78650944e75da41a6d47cf57 inherit pub_methods_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memItemLeft" align="right" valign="top"><a id="a7dcda95e78650944e75da41a6d47cf57" name="a7dcda95e78650944e75da41a6d47cf57"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getTessellatedVertexId</b> (int controlVertexId) const</td></tr>
+<tr class="separator:a7dcda95e78650944e75da41a6d47cf57 inherit pub_methods_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a31f5e798b511c599f8ac9e4521831aee"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a31f5e798b511c599f8ac9e4521831aee">mOuterRingVertexIds</a></td></tr>
-<tr class="separator:a31f5e798b511c599f8ac9e4521831aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66f8879d2db943d3a691e498a54a1354"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a66f8879d2db943d3a691e498a54a1354">mOuterEdgeVertexIdsStart</a></td></tr>
-<tr class="separator:a66f8879d2db943d3a691e498a54a1354"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad934a9b75fca4c9ef2b0c2a33c95b1d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a></td></tr>
-<tr class="separator:aad934a9b75fca4c9ef2b0c2a33c95b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bfa68ce7239e8bef547e7bb8497d58d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a0bfa68ce7239e8bef547e7bb8497d58d">mInteriorVertexIdsStart</a></td></tr>
-<tr class="separator:a0bfa68ce7239e8bef547e7bb8497d58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f986ecebb79c8c932fac113a797d9fd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a8f986ecebb79c8c932fac113a797d9fd">mTotalVertexCount</a></td></tr>
-<tr class="separator:a8f986ecebb79c8c932fac113a797d9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a302e7aecacfd2441c17613a19196b3fa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#a302e7aecacfd2441c17613a19196b3fa">mMaxEdgeResolution</a></td></tr>
-<tr class="separator:a302e7aecacfd2441c17613a19196b3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html">moonray::geom::internal::TessellatedVertexLookup</a></td></tr>
+<tr class="memitem:a31f5e798b511c599f8ac9e4521831aee inherit pro_attribs_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memItemLeft" align="right" valign="top"><a id="a31f5e798b511c599f8ac9e4521831aee" name="a31f5e798b511c599f8ac9e4521831aee"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mOuterRingVertexIds</b></td></tr>
+<tr class="separator:a31f5e798b511c599f8ac9e4521831aee inherit pro_attribs_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f8879d2db943d3a691e498a54a1354 inherit pro_attribs_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memItemLeft" align="right" valign="top"><a id="a66f8879d2db943d3a691e498a54a1354" name="a66f8879d2db943d3a691e498a54a1354"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mOuterEdgeVertexIdsStart</b></td></tr>
+<tr class="separator:a66f8879d2db943d3a691e498a54a1354 inherit pro_attribs_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad934a9b75fca4c9ef2b0c2a33c95b1d inherit pro_attribs_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memItemLeft" align="right" valign="top"><a id="aad934a9b75fca4c9ef2b0c2a33c95b1d" name="aad934a9b75fca4c9ef2b0c2a33c95b1d"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mOuterEdgeVertexIdsCount</b></td></tr>
+<tr class="separator:aad934a9b75fca4c9ef2b0c2a33c95b1d inherit pro_attribs_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bfa68ce7239e8bef547e7bb8497d58d inherit pro_attribs_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memItemLeft" align="right" valign="top"><a id="a0bfa68ce7239e8bef547e7bb8497d58d" name="a0bfa68ce7239e8bef547e7bb8497d58d"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mInteriorVertexIdsStart</b></td></tr>
+<tr class="separator:a0bfa68ce7239e8bef547e7bb8497d58d inherit pro_attribs_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f986ecebb79c8c932fac113a797d9fd inherit pro_attribs_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memItemLeft" align="right" valign="top"><a id="a8f986ecebb79c8c932fac113a797d9fd" name="a8f986ecebb79c8c932fac113a797d9fd"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>mTotalVertexCount</b></td></tr>
+<tr class="separator:a8f986ecebb79c8c932fac113a797d9fd inherit pro_attribs_classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00430">430</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae465f97ab1971366f5b895d3da44980c" name="ae465f97ab1971366f5b895d3da44980c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae465f97ab1971366f5b895d3da44980c">&#9670;&#160;</a></span>SubdTessellatedVertexLookup()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">moonray::geom::internal::SubdTessellatedVertexLookup::SubdTessellatedVertexLookup </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_subd_quad_topology.html">SubdQuadTopology</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>quadTopologies</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classmoonray_1_1geom_1_1internal_1_1_subd_topology_id_lookup.html">SubdTopologyIdLookup</a> &amp;&#160;</td>
-          <td class="paramname"><em>topologyIdLookup</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_subd_tessellation_factor.html">SubdTessellationFactor</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>tessellationFactors</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>noTessellation</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8cc_source.html#l00366">366</a> of file <a class="el" href="_mesh_tessellation_util_8cc_source.html">MeshTessellationUtil.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  370</span>                            :</div>
-<div class="line"><span class="lineno">  371</span>    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a249d386eccecb02674b13029528ffcc3">TessellatedVertexLookup</a>(), <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#a302e7aecacfd2441c17613a19196b3fa">mMaxEdgeResolution</a>(1)</div>
-<div class="line"><span class="lineno">  372</span>{</div>
-<div class="line"><span class="lineno">  373</span>    <span class="keywordflow">if</span> (noTessellation) {</div>
-<div class="line"><span class="lineno">  374</span>        <span class="keywordtype">int</span> coarseVertexCount = topologyIdLookup.getCoarseVertexCount();</div>
-<div class="line"><span class="lineno">  375</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a31f5e798b511c599f8ac9e4521831aee">mOuterRingVertexIds</a>.resize(coarseVertexCount, -1);</div>
-<div class="line"><span class="lineno">  376</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  377</span>        <span class="keywordtype">int</span> splitVertexCount = topologyIdLookup.getSplitVertexCount();</div>
-<div class="line"><span class="lineno">  378</span>        <span class="keywordtype">int</span> splitEdgeCount = topologyIdLookup.getSplitEdgeCount();</div>
-<div class="line"><span class="lineno">  379</span>        <span class="comment">// cache the result when loop through every quadTopology&#39;s</span></div>
-<div class="line"><span class="lineno">  380</span>        <span class="comment">// vertices, edges and faces so shared vertices only got counted once</span></div>
-<div class="line"><span class="lineno">  381</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a31f5e798b511c599f8ac9e4521831aee">mOuterRingVertexIds</a>.resize(splitVertexCount, -1);</div>
-<div class="line"><span class="lineno">  382</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a66f8879d2db943d3a691e498a54a1354">mOuterEdgeVertexIdsStart</a>.resize(splitEdgeCount, -1);</div>
-<div class="line"><span class="lineno">  383</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>.resize(splitEdgeCount, -1);</div>
-<div class="line"><span class="lineno">  384</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a0bfa68ce7239e8bef547e7bb8497d58d">mInteriorVertexIdsStart</a>.resize(quadTopologies.size(), -1);</div>
-<div class="line"><span class="lineno">  385</span>    }</div>
-<div class="line"><span class="lineno">  386</span> </div>
-<div class="line"><span class="lineno">  387</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> f = 0; f &lt; quadTopologies.size(); ++f) {</div>
-<div class="line"><span class="lineno">  388</span>        <span class="keyword">const</span> SubdQuadTopology&amp; quadTopology = quadTopologies[f];</div>
-<div class="line"><span class="lineno">  389</span>        <span class="comment">// unassigned control face won&#39;t contribute vertices in final</span></div>
-<div class="line"><span class="lineno">  390</span>        <span class="comment">// tessellated vertex buffer</span></div>
-<div class="line"><span class="lineno">  391</span>        <span class="keywordflow">if</span> (!quadTopology.mHasAssignment) {</div>
-<div class="line"><span class="lineno">  392</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  393</span>        }</div>
-<div class="line"><span class="lineno">  394</span>        <span class="comment">// outer ring corner vertex</span></div>
-<div class="line"><span class="lineno">  395</span>        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1geom_1_1internal.html#acb6818809dd604a8277c8dfd60c5ec3f">sQuadVertexCount</a>; ++i) {</div>
-<div class="line"><span class="lineno">  396</span>            <span class="keywordtype">int</span> vid = quadTopology.mCornerVertexId[i];</div>
-<div class="line"><span class="lineno">  397</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a31f5e798b511c599f8ac9e4521831aee">mOuterRingVertexIds</a>[vid] == -1) {</div>
-<div class="line"><span class="lineno">  398</span>                <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a31f5e798b511c599f8ac9e4521831aee">mOuterRingVertexIds</a>[vid] = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a8f986ecebb79c8c932fac113a797d9fd">mTotalVertexCount</a>++;</div>
-<div class="line"><span class="lineno">  399</span>            }</div>
-<div class="line"><span class="lineno">  400</span>        }</div>
-<div class="line"><span class="lineno">  401</span>        <span class="comment">// when rendering control cage only, we don&#39;t need to handle</span></div>
-<div class="line"><span class="lineno">  402</span>        <span class="comment">// following edge tessellation and interior vertices</span></div>
-<div class="line"><span class="lineno">  403</span>        <span class="keywordflow">if</span> (noTessellation) {</div>
-<div class="line"><span class="lineno">  404</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">  405</span>        }</div>
-<div class="line"><span class="lineno">  406</span>        <span class="keyword">const</span> SubdTessellationFactor&amp; factor = tessellationFactors[f];</div>
-<div class="line"><span class="lineno">  407</span>        <span class="keywordflow">if</span> (quadTopology.nonQuadParent()) {</div>
-<div class="line"><span class="lineno">  408</span>            <span class="comment">// outer ring edge</span></div>
-<div class="line"><span class="lineno">  409</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1geom_1_1internal.html#acb6818809dd604a8277c8dfd60c5ec3f">sQuadVertexCount</a>; ++i) {</div>
-<div class="line"><span class="lineno">  410</span>                <span class="keywordtype">int</span> eid = quadTopology.mEdgeId0[i];</div>
-<div class="line"><span class="lineno">  411</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a66f8879d2db943d3a691e498a54a1354">mOuterEdgeVertexIdsStart</a>[eid] == -1) {</div>
-<div class="line"><span class="lineno">  412</span>                    <span class="keywordtype">int</span> edgeVertexCount = factor.mEdge0Factor[i];</div>
-<div class="line"><span class="lineno">  413</span>                    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a66f8879d2db943d3a691e498a54a1354">mOuterEdgeVertexIdsStart</a>[eid] = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a8f986ecebb79c8c932fac113a797d9fd">mTotalVertexCount</a>;</div>
-<div class="line"><span class="lineno">  414</span>                    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[eid] = edgeVertexCount;</div>
-<div class="line"><span class="lineno">  415</span>                    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a8f986ecebb79c8c932fac113a797d9fd">mTotalVertexCount</a> += edgeVertexCount;</div>
-<div class="line"><span class="lineno">  416</span>                    <span class="keywordtype">int</span> controlEdgeResolution = 2 * (edgeVertexCount + 1);</div>
-<div class="line"><span class="lineno">  417</span>                    <span class="keywordflow">if</span> (controlEdgeResolution &gt; <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#a302e7aecacfd2441c17613a19196b3fa">mMaxEdgeResolution</a>) {</div>
-<div class="line"><span class="lineno">  418</span>                        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#a302e7aecacfd2441c17613a19196b3fa">mMaxEdgeResolution</a> = controlEdgeResolution;</div>
-<div class="line"><span class="lineno">  419</span>                    }</div>
-<div class="line"><span class="lineno">  420</span>                }</div>
-<div class="line"><span class="lineno">  421</span>            }</div>
-<div class="line"><span class="lineno">  422</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  423</span>            <span class="comment">// outer ring mid edge vertex</span></div>
-<div class="line"><span class="lineno">  424</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1geom_1_1internal.html#acb6818809dd604a8277c8dfd60c5ec3f">sQuadVertexCount</a>; ++i) {</div>
-<div class="line"><span class="lineno">  425</span>                <span class="keywordtype">int</span> vid = quadTopology.mMidEdgeVertexId[i];</div>
-<div class="line"><span class="lineno">  426</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a31f5e798b511c599f8ac9e4521831aee">mOuterRingVertexIds</a>[vid] == -1) {</div>
-<div class="line"><span class="lineno">  427</span>                    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a31f5e798b511c599f8ac9e4521831aee">mOuterRingVertexIds</a>[vid] = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a8f986ecebb79c8c932fac113a797d9fd">mTotalVertexCount</a>++;</div>
-<div class="line"><span class="lineno">  428</span>                }</div>
-<div class="line"><span class="lineno">  429</span>            }</div>
-<div class="line"><span class="lineno">  430</span>            <span class="comment">// outer ring edge</span></div>
-<div class="line"><span class="lineno">  431</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="namespacemoonray_1_1geom_1_1internal.html#acb6818809dd604a8277c8dfd60c5ec3f">sQuadVertexCount</a>; ++i) {</div>
-<div class="line"><span class="lineno">  432</span>                <span class="keywordtype">int</span> eid0 = quadTopology.mEdgeId0[i];</div>
-<div class="line"><span class="lineno">  433</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a66f8879d2db943d3a691e498a54a1354">mOuterEdgeVertexIdsStart</a>[eid0] == -1) {</div>
-<div class="line"><span class="lineno">  434</span>                    <span class="keywordtype">int</span> edgeVertexCount = factor.mEdge0Factor[i];</div>
-<div class="line"><span class="lineno">  435</span>                    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a66f8879d2db943d3a691e498a54a1354">mOuterEdgeVertexIdsStart</a>[eid0] = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a8f986ecebb79c8c932fac113a797d9fd">mTotalVertexCount</a>;</div>
-<div class="line"><span class="lineno">  436</span>                    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[eid0] = edgeVertexCount;</div>
-<div class="line"><span class="lineno">  437</span>                    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a8f986ecebb79c8c932fac113a797d9fd">mTotalVertexCount</a> += edgeVertexCount;</div>
-<div class="line"><span class="lineno">  438</span>                }</div>
-<div class="line"><span class="lineno">  439</span>                <span class="keywordtype">int</span> eid1 = quadTopology.mEdgeId1[i];</div>
-<div class="line"><span class="lineno">  440</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a66f8879d2db943d3a691e498a54a1354">mOuterEdgeVertexIdsStart</a>[eid1] == -1) {</div>
-<div class="line"><span class="lineno">  441</span>                    <span class="keywordtype">int</span> edgeVertexCount = factor.mEdge1Factor[i];</div>
-<div class="line"><span class="lineno">  442</span>                    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a66f8879d2db943d3a691e498a54a1354">mOuterEdgeVertexIdsStart</a>[eid1] = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a8f986ecebb79c8c932fac113a797d9fd">mTotalVertexCount</a>;</div>
-<div class="line"><span class="lineno">  443</span>                    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[eid1] = edgeVertexCount;</div>
-<div class="line"><span class="lineno">  444</span>                    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a8f986ecebb79c8c932fac113a797d9fd">mTotalVertexCount</a> += edgeVertexCount;</div>
-<div class="line"><span class="lineno">  445</span>                }</div>
-<div class="line"><span class="lineno">  446</span>                <span class="keywordtype">int</span> controlEdgeResolution = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a5f04bcc8e8662a0cb04af5968718ee4d">getEdgeVertexCount</a>(eid0) +</div>
-<div class="line"><span class="lineno">  447</span>                    <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a5f04bcc8e8662a0cb04af5968718ee4d">getEdgeVertexCount</a>(eid1) + 2;</div>
-<div class="line"><span class="lineno">  448</span>                <span class="keywordflow">if</span> (controlEdgeResolution &gt; <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#a302e7aecacfd2441c17613a19196b3fa">mMaxEdgeResolution</a>) {</div>
-<div class="line"><span class="lineno">  449</span>                    <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#a302e7aecacfd2441c17613a19196b3fa">mMaxEdgeResolution</a> = controlEdgeResolution;</div>
-<div class="line"><span class="lineno">  450</span>                }</div>
-<div class="line"><span class="lineno">  451</span>            }</div>
-<div class="line"><span class="lineno">  452</span>        }</div>
-<div class="line"><span class="lineno">  453</span>        <span class="keywordtype">int</span> interiorVertexCount = <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#abd99f4a3bf7d3513271d1062e3d62943">getInteriorRowVertexCount</a>(quadTopology) *</div>
-<div class="line"><span class="lineno">  454</span>            <a class="code hl_function" href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#ae89be8a455d8f0f86260d2823fdd1f2d">getInteriorColVertexCount</a>(quadTopology);</div>
-<div class="line"><span class="lineno">  455</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a0bfa68ce7239e8bef547e7bb8497d58d">mInteriorVertexIdsStart</a>[f] = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a8f986ecebb79c8c932fac113a797d9fd">mTotalVertexCount</a>;</div>
-<div class="line"><span class="lineno">  456</span>        <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a8f986ecebb79c8c932fac113a797d9fd">mTotalVertexCount</a> += interiorVertexCount;</div>
-<div class="line"><span class="lineno">  457</span>    }</div>
-<div class="line"><span class="lineno">  458</span>}</div>
-<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup_html_a302e7aecacfd2441c17613a19196b3fa"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#a302e7aecacfd2441c17613a19196b3fa">moonray::geom::internal::SubdTessellatedVertexLookup::mMaxEdgeResolution</a></div><div class="ttdeci">int mMaxEdgeResolution</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8h_source.html#l00480">MeshTessellationUtil.h:480</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup_html_abd99f4a3bf7d3513271d1062e3d62943"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#abd99f4a3bf7d3513271d1062e3d62943">moonray::geom::internal::SubdTessellatedVertexLookup::getInteriorRowVertexCount</a></div><div class="ttdeci">int getInteriorRowVertexCount(const SubdQuadTopology &amp;quadTopology) const</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8cc_source.html#l00461">MeshTessellationUtil.cc:461</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup_html_ae89be8a455d8f0f86260d2823fdd1f2d"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#ae89be8a455d8f0f86260d2823fdd1f2d">moonray::geom::internal::SubdTessellatedVertexLookup::getInteriorColVertexCount</a></div><div class="ttdeci">int getInteriorColVertexCount(const SubdQuadTopology &amp;quadTopology) const</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8cc_source.html#l00480">MeshTessellationUtil.cc:480</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup_html_a0bfa68ce7239e8bef547e7bb8497d58d"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a0bfa68ce7239e8bef547e7bb8497d58d">moonray::geom::internal::TessellatedVertexLookup::mInteriorVertexIdsStart</a></div><div class="ttdeci">std::vector&lt; int &gt; mInteriorVertexIdsStart</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8h_source.html#l00351">MeshTessellationUtil.h:351</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup_html_a249d386eccecb02674b13029528ffcc3"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a249d386eccecb02674b13029528ffcc3">moonray::geom::internal::TessellatedVertexLookup::TessellatedVertexLookup</a></div><div class="ttdeci">TessellatedVertexLookup()</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8h_source.html#l00342">MeshTessellationUtil.h:342</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup_html_a31f5e798b511c599f8ac9e4521831aee"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a31f5e798b511c599f8ac9e4521831aee">moonray::geom::internal::TessellatedVertexLookup::mOuterRingVertexIds</a></div><div class="ttdeci">std::vector&lt; int &gt; mOuterRingVertexIds</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8h_source.html#l00348">MeshTessellationUtil.h:348</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup_html_a5f04bcc8e8662a0cb04af5968718ee4d"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a5f04bcc8e8662a0cb04af5968718ee4d">moonray::geom::internal::TessellatedVertexLookup::getEdgeVertexCount</a></div><div class="ttdeci">int getEdgeVertexCount(int edgeId) const</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8h_source.html#l00317">MeshTessellationUtil.h:317</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup_html_a66f8879d2db943d3a691e498a54a1354"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a66f8879d2db943d3a691e498a54a1354">moonray::geom::internal::TessellatedVertexLookup::mOuterEdgeVertexIdsStart</a></div><div class="ttdeci">std::vector&lt; int &gt; mOuterEdgeVertexIdsStart</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8h_source.html#l00349">MeshTessellationUtil.h:349</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup_html_a8f986ecebb79c8c932fac113a797d9fd"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a8f986ecebb79c8c932fac113a797d9fd">moonray::geom::internal::TessellatedVertexLookup::mTotalVertexCount</a></div><div class="ttdeci">size_t mTotalVertexCount</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8h_source.html#l00352">MeshTessellationUtil.h:352</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup_html_aad934a9b75fca4c9ef2b0c2a33c95b1d"><div class="ttname"><a href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">moonray::geom::internal::TessellatedVertexLookup::mOuterEdgeVertexIdsCount</a></div><div class="ttdeci">std::vector&lt; int &gt; mOuterEdgeVertexIdsCount</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_tessellation_util_8h_source.html#l00350">MeshTessellationUtil.h:350</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1geom_1_1internal_html_acb6818809dd604a8277c8dfd60c5ec3f"><div class="ttname"><a href="namespacemoonray_1_1geom_1_1internal.html#acb6818809dd604a8277c8dfd60c5ec3f">moonray::geom::internal::sQuadVertexCount</a></div><div class="ttdeci">static constexpr size_t sQuadVertexCount</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_8h_source.html#l00032">Mesh.h:32</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5f04bcc8e8662a0cb04af5968718ee4d" name="a5f04bcc8e8662a0cb04af5968718ee4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f04bcc8e8662a0cb04af5968718ee4d">&#9670;&#160;</a></span>getEdgeVertexCount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int moonray::geom::internal::TessellatedVertexLookup::getEdgeVertexCount </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>edgeId</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00317">317</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  318</span>    {</div>
-<div class="line"><span class="lineno">  319</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[edgeId];</div>
-<div class="line"><span class="lineno">  320</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ac9fffbb8f60d587298f686fa45bccda5" name="ac9fffbb8f60d587298f686fa45bccda5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9fffbb8f60d587298f686fa45bccda5">&#9670;&#160;</a></span>getEdgeVertexId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int moonray::geom::internal::SubdTessellatedVertexLookup::getEdgeVertexId </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>edgeId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>endAtEdgeMiddle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00460">460</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  461</span>    {</div>
-<div class="line"><span class="lineno">  462</span>        <a class="code hl_define" href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a>(n &lt; <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[edgeId]);</div>
-<div class="line"><span class="lineno">  463</span>        <span class="keywordtype">int</span> start = <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a66f8879d2db943d3a691e498a54a1354">mOuterEdgeVertexIdsStart</a>[edgeId];</div>
-<div class="line"><span class="lineno">  464</span>        <span class="keywordflow">return</span> endAtEdgeMiddle ?</div>
-<div class="line"><span class="lineno">  465</span>            start + n : start + <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[edgeId] - 1 - n;</div>
-<div class="line"><span class="lineno">  466</span>    }</div>
-<div class="ttc" id="a_platform_8h_html_ac6bd494653a0872080be86890bea8639"><div class="ttname"><a href="_platform_8h.html#ac6bd494653a0872080be86890bea8639">MNRY_ASSERT</a></div><div class="ttdeci">#define MNRY_ASSERT(a,...)</div><div class="ttdoc">Use MNRY_ASSERT for assertions you want compiled out of opt builds.</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00425">Platform.h:425</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ae89be8a455d8f0f86260d2823fdd1f2d" name="ae89be8a455d8f0f86260d2823fdd1f2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae89be8a455d8f0f86260d2823fdd1f2d">&#9670;&#160;</a></span>getInteriorColVertexCount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int moonray::geom::internal::SubdTessellatedVertexLookup::getInteriorColVertexCount </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_subd_quad_topology.html">SubdQuadTopology</a> &amp;&#160;</td>
-          <td class="paramname"><em>quadTopology</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8cc_source.html#l00480">480</a> of file <a class="el" href="_mesh_tessellation_util_8cc_source.html">MeshTessellationUtil.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  482</span>{</div>
-<div class="line"><span class="lineno">  483</span>    <span class="keywordtype">int</span> interiorColVertexCount;</div>
-<div class="line"><span class="lineno">  484</span>    <span class="keywordflow">if</span> (quadTopology.nonQuadParent()) {</div>
-<div class="line"><span class="lineno">  485</span>        interiorColVertexCount = <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a564409890eff3a37c8edc00b64159607">scene_rdl2::math::max</a>(</div>
-<div class="line"><span class="lineno">  486</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId0[0]],</div>
-<div class="line"><span class="lineno">  487</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId0[2]]);</div>
-<div class="line"><span class="lineno">  488</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  489</span>        interiorColVertexCount = 1 + <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a564409890eff3a37c8edc00b64159607">scene_rdl2::math::max</a>(</div>
-<div class="line"><span class="lineno">  490</span>            (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId0[0]] +</div>
-<div class="line"><span class="lineno">  491</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId1[0]]),</div>
-<div class="line"><span class="lineno">  492</span>            (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId0[2]] +</div>
-<div class="line"><span class="lineno">  493</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId1[2]]));</div>
-<div class="line"><span class="lineno">  494</span>    }</div>
-<div class="line"><span class="lineno">  495</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a564409890eff3a37c8edc00b64159607">scene_rdl2::math::max</a>(1, interiorColVertexCount);</div>
-<div class="line"><span class="lineno">  496</span>}</div>
-<div class="ttc" id="anamespacescene__rdl2_1_1math_html_a564409890eff3a37c8edc00b64159607"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#a564409890eff3a37c8edc00b64159607">scene_rdl2::math::max</a></div><div class="ttdeci">__forceinline const Color max(const Color &amp;a, const Color &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="_color_8h_source.html#l00215">Color.h:215</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="abd99f4a3bf7d3513271d1062e3d62943" name="abd99f4a3bf7d3513271d1062e3d62943"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd99f4a3bf7d3513271d1062e3d62943">&#9670;&#160;</a></span>getInteriorRowVertexCount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int moonray::geom::internal::SubdTessellatedVertexLookup::getInteriorRowVertexCount </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_subd_quad_topology.html">SubdQuadTopology</a> &amp;&#160;</td>
-          <td class="paramname"><em>quadTopology</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8cc_source.html#l00461">461</a> of file <a class="el" href="_mesh_tessellation_util_8cc_source.html">MeshTessellationUtil.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  463</span>{</div>
-<div class="line"><span class="lineno">  464</span>    <span class="keywordtype">int</span> interiorRowVertexCount;</div>
-<div class="line"><span class="lineno">  465</span>    <span class="keywordflow">if</span> (quadTopology.nonQuadParent()) {</div>
-<div class="line"><span class="lineno">  466</span>        interiorRowVertexCount = <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a564409890eff3a37c8edc00b64159607">scene_rdl2::math::max</a>(</div>
-<div class="line"><span class="lineno">  467</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId0[1]],</div>
-<div class="line"><span class="lineno">  468</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId0[3]]);</div>
-<div class="line"><span class="lineno">  469</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  470</span>        interiorRowVertexCount = 1 + <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a564409890eff3a37c8edc00b64159607">scene_rdl2::math::max</a>(</div>
-<div class="line"><span class="lineno">  471</span>            (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId0[1]] +</div>
-<div class="line"><span class="lineno">  472</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId1[1]]),</div>
-<div class="line"><span class="lineno">  473</span>            (<a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId0[3]] +</div>
-<div class="line"><span class="lineno">  474</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId1[3]]));</div>
-<div class="line"><span class="lineno">  475</span>    }</div>
-<div class="line"><span class="lineno">  476</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a564409890eff3a37c8edc00b64159607">scene_rdl2::math::max</a>(1, interiorRowVertexCount);</div>
-<div class="line"><span class="lineno">  477</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a312c3a60c17c4c1028092034d78f382d" name="a312c3a60c17c4c1028092034d78f382d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a312c3a60c17c4c1028092034d78f382d">&#9670;&#160;</a></span>getInteriorVertexId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int moonray::geom::internal::TessellatedVertexLookup::getInteriorVertexId </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>face</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>row</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>col</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>interiorColVertexCount</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00327">327</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  329</span>    {</div>
-<div class="line"><span class="lineno">  330</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a0bfa68ce7239e8bef547e7bb8497d58d">mInteriorVertexIdsStart</a>[face] +</div>
-<div class="line"><span class="lineno">  331</span>            interiorColVertexCount * <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a1a937db98c05237cb552ca6b0dec3d1f">row</a> + <a class="code hl_function" href="namespacescene__rdl2_1_1math.html#a773029e4c1d98a894a6a3c73036f3413">col</a>;</div>
-<div class="line"><span class="lineno">  332</span>    }</div>
-<div class="ttc" id="anamespacescene__rdl2_1_1math_html_a1a937db98c05237cb552ca6b0dec3d1f"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#a1a937db98c05237cb552ca6b0dec3d1f">scene_rdl2::math::row</a></div><div class="ttdeci">__forceinline const VectorT &amp; row(const Mat3&lt; VectorT &gt; &amp;a, const size_t idx)</div><div class="ttdef"><b>Definition:</b> <a href="_mat3_8h_source.html#l00231">Mat3.h:231</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1math_html_a773029e4c1d98a894a6a3c73036f3413"><div class="ttname"><a href="namespacescene__rdl2_1_1math.html#a773029e4c1d98a894a6a3c73036f3413">scene_rdl2::math::col</a></div><div class="ttdeci">__forceinline VectorT col(const Mat3&lt; VectorT &gt; &amp;a, const size_t idx)</div><div class="ttdef"><b>Definition:</b> <a href="_mat3_8h_source.html#l00240">Mat3.h:240</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a40f8c7735c20295f812fafcf64a40da2" name="a40f8c7735c20295f812fafcf64a40da2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40f8c7735c20295f812fafcf64a40da2">&#9670;&#160;</a></span>getMaxEdgeResolution()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int moonray::geom::internal::SubdTessellatedVertexLookup::getMaxEdgeResolution </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00474">474</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  475</span>    {</div>
-<div class="line"><span class="lineno">  476</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html#a302e7aecacfd2441c17613a19196b3fa">mMaxEdgeResolution</a>;</div>
-<div class="line"><span class="lineno">  477</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a8488ca8a8627121f89f0262195e9428b" name="a8488ca8a8627121f89f0262195e9428b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8488ca8a8627121f89f0262195e9428b">&#9670;&#160;</a></span>getTessellatedVertexCount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int moonray::geom::internal::TessellatedVertexLookup::getTessellatedVertexCount </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00322">322</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  323</span>    {</div>
-<div class="line"><span class="lineno">  324</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a8f986ecebb79c8c932fac113a797d9fd">mTotalVertexCount</a>;</div>
-<div class="line"><span class="lineno">  325</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a7dcda95e78650944e75da41a6d47cf57" name="a7dcda95e78650944e75da41a6d47cf57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dcda95e78650944e75da41a6d47cf57">&#9670;&#160;</a></span>getTessellatedVertexId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int moonray::geom::internal::TessellatedVertexLookup::getTessellatedVertexId </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>controlVertexId</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00334">334</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  335</span>    {</div>
-<div class="line"><span class="lineno">  336</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#a31f5e798b511c599f8ac9e4521831aee">mOuterRingVertexIds</a>[controlVertexId];</div>
-<div class="line"><span class="lineno">  337</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ac4484765e81ca76efd0c787a01b48de8" name="ac4484765e81ca76efd0c787a01b48de8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4484765e81ca76efd0c787a01b48de8">&#9670;&#160;</a></span>noRingToStitch()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool moonray::geom::internal::SubdTessellatedVertexLookup::noRingToStitch </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structmoonray_1_1geom_1_1internal_1_1_subd_quad_topology.html">SubdQuadTopology</a> &amp;&#160;</td>
-          <td class="paramname"><em>quadTopology</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8cc_source.html#l00499">499</a> of file <a class="el" href="_mesh_tessellation_util_8cc_source.html">MeshTessellationUtil.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  501</span>{</div>
-<div class="line"><span class="lineno">  502</span>    <span class="keywordflow">if</span> (quadTopology.nonQuadParent()) {</div>
-<div class="line"><span class="lineno">  503</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId0[0]] == 0 &amp;&amp;</div>
-<div class="line"><span class="lineno">  504</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId0[1]] == 0 &amp;&amp;</div>
-<div class="line"><span class="lineno">  505</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId0[2]] == 0 &amp;&amp;</div>
-<div class="line"><span class="lineno">  506</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId0[3]] == 0;</div>
-<div class="line"><span class="lineno">  507</span> </div>
-<div class="line"><span class="lineno">  508</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  509</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId0[0]] == 0 &amp;&amp;</div>
-<div class="line"><span class="lineno">  510</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId0[1]] == 0 &amp;&amp;</div>
-<div class="line"><span class="lineno">  511</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId0[2]] == 0 &amp;&amp;</div>
-<div class="line"><span class="lineno">  512</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId0[3]] == 0 &amp;&amp;</div>
-<div class="line"><span class="lineno">  513</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId1[0]] == 0 &amp;&amp;</div>
-<div class="line"><span class="lineno">  514</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId1[1]] == 0 &amp;&amp;</div>
-<div class="line"><span class="lineno">  515</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId1[2]] == 0 &amp;&amp;</div>
-<div class="line"><span class="lineno">  516</span>            <a class="code hl_variable" href="classmoonray_1_1geom_1_1internal_1_1_tessellated_vertex_lookup.html#aad934a9b75fca4c9ef2b0c2a33c95b1d">mOuterEdgeVertexIdsCount</a>[quadTopology.mEdgeId1[3]] == 0;</div>
-<div class="line"><span class="lineno">  517</span>    }</div>
-<div class="line"><span class="lineno">  518</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a0bfa68ce7239e8bef547e7bb8497d58d" name="a0bfa68ce7239e8bef547e7bb8497d58d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bfa68ce7239e8bef547e7bb8497d58d">&#9670;&#160;</a></span>mInteriorVertexIdsStart</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;int&gt; moonray::geom::internal::TessellatedVertexLookup::mInteriorVertexIdsStart</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00351">351</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-
-</div>
-</div>
-<a id="a302e7aecacfd2441c17613a19196b3fa" name="a302e7aecacfd2441c17613a19196b3fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a302e7aecacfd2441c17613a19196b3fa">&#9670;&#160;</a></span>mMaxEdgeResolution</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int moonray::geom::internal::SubdTessellatedVertexLookup::mMaxEdgeResolution</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00480">480</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-
-</div>
-</div>
-<a id="aad934a9b75fca4c9ef2b0c2a33c95b1d" name="aad934a9b75fca4c9ef2b0c2a33c95b1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad934a9b75fca4c9ef2b0c2a33c95b1d">&#9670;&#160;</a></span>mOuterEdgeVertexIdsCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;int&gt; moonray::geom::internal::TessellatedVertexLookup::mOuterEdgeVertexIdsCount</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00350">350</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-
-</div>
-</div>
-<a id="a66f8879d2db943d3a691e498a54a1354" name="a66f8879d2db943d3a691e498a54a1354"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66f8879d2db943d3a691e498a54a1354">&#9670;&#160;</a></span>mOuterEdgeVertexIdsStart</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;int&gt; moonray::geom::internal::TessellatedVertexLookup::mOuterEdgeVertexIdsStart</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00349">349</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-
-</div>
-</div>
-<a id="a31f5e798b511c599f8ac9e4521831aee" name="a31f5e798b511c599f8ac9e4521831aee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31f5e798b511c599f8ac9e4521831aee">&#9670;&#160;</a></span>mOuterRingVertexIds</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;int&gt; moonray::geom::internal::TessellatedVertexLookup::mOuterRingVertexIds</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00348">348</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-
-</div>
-</div>
-<a id="a8f986ecebb79c8c932fac113a797d9fd" name="a8f986ecebb79c8c932fac113a797d9fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f986ecebb79c8c932fac113a797d9fd">&#9670;&#160;</a></span>mTotalVertexCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t moonray::geom::internal::TessellatedVertexLookup::mTotalVertexCount</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_mesh_tessellation_util_8h_source.html#l00352">352</a> of file <a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/geom/prim/<a class="el" href="_mesh_tessellation_util_8h_source.html">MeshTessellationUtil.h</a></li>
-<li>C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/geom/prim/<a class="el" href="_mesh_tessellation_util_8cc_source.html">MeshTessellationUtil.cc</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom.html">geom</a></li><li class="navelem"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html">SubdTessellatedVertexLookup</a></li>
+    <li class="navelem"><a class="el" href="namespacemoonray.html">moonray</a></li><li class="navelem"><b>geom</b></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_subd_tessellated_vertex_lookup.html">SubdTessellatedVertexLookup</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

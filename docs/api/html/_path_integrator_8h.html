@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/integrator/PathIntegrator.h File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/integrator/PathIntegrator.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -98,17 +98,17 @@ $(document).ready(function(){initNavTree('_path_integrator_8h.html',''); initRes
   <div class="headertitle"><div class="title">PathIntegrator.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_path_integrator_8hh_source.html">PathIntegrator.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;PathIntegrator.hh&quot;</code><br />
 <code>#include &quot;<a class="el" href="_bsdf_one_sampler_8h_source.html">BsdfOneSampler.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_bsdf_sampler_8h_source.html">BsdfSampler.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_light_set_sampler_8h_source.html">LightSetSampler.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="moonray__static__check_8h_source.html">common/mcrt_macros/moonray_static_check.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_intersection_8h_source.html">rendering/bvh/shading/Intersection.h</a>&gt;</code><br />
+<code>#include &lt;common/mcrt_macros/moonray_static_check.h&gt;</code><br />
+<code>#include &lt;rendering/bvh/shading/Intersection.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="prim_2_primitive_8h_source.html">rendering/geom/prim/Primitive.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_integrator_sample_8h_source.html">rendering/pbr/sampler/IntegratorSample.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_sampler_8h_source.html">rendering/pbr/sampler/Sampler.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="rndr_8h_source.html">rendering/rndr/rndr.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2rndr_2_types_8h_source.html">rendering/rndr/Types.h</a>&gt;</code><br />
+<code>#include &lt;rendering/pbr/sampler/IntegratorSample.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/sampler/Sampler.h&gt;</code><br />
+<code>#include &lt;rendering/rndr/rndr.h&gt;</code><br />
+<code>#include &lt;rendering/rndr/Types.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_bsdf_8h_source.html">rendering/shading/bsdf/Bsdf.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_shadingv_8h_source.html">rendering/shading/ispc/Shadingv.h</a>&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/math/Color.h&gt;</code><br />
@@ -130,51 +130,41 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1pbr_1_1_path_integrator_1_1_deep_params.html">moonray::pbr::PathIntegrator::DeepParams</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1pbr_1_1_path_integrator_1_1_cryptomatte_params.html">moonray::pbr::PathIntegrator::CryptomatteParams</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1geom"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html">moonray::geom</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1geom_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">moonray::geom::internal</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1mcrt__common"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1mcrt__common.html">moonray::mcrt_common</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1shading"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html">moonray::shading</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1pbr"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html">moonray::pbr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ac0ada9378dd5390999104f728fd7150c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#ac0ada9378dd5390999104f728fd7150c">moonray::pbr::VolumeOverlapMode</a> { <a class="el" href="namespacemoonray_1_1pbr.html#ac0ada9378dd5390999104f728fd7150ca6970bdc2201030b9c03fbdcf3973858a">moonray::pbr::SUM</a> = static_cast&lt;int&gt;(scene_rdl2::rdl2::VolumeOverlapMode::SUM)
-, <a class="el" href="namespacemoonray_1_1pbr.html#ac0ada9378dd5390999104f728fd7150ca26a4b44a837bf97b972628509912b4a5">moonray::pbr::MAX</a> = static_cast&lt;int&gt;(scene_rdl2::rdl2::VolumeOverlapMode::MAX)
-, <a class="el" href="namespacemoonray_1_1pbr.html#ac0ada9378dd5390999104f728fd7150ca477f9701a73bca06b17af65b469ecfda">moonray::pbr::RND</a> = static_cast&lt;int&gt;(scene_rdl2::rdl2::VolumeOverlapMode::RND)
-, <a class="el" href="namespacemoonray_1_1pbr.html#ac0ada9378dd5390999104f728fd7150ca14c0cf4d663946795addcc2a6a7c029a">moonray::pbr::NUM_MODES</a>
+<tr class="memitem:ac0ada9378dd5390999104f728fd7150c"><td class="memItemLeft" align="right" valign="top"><a id="ac0ada9378dd5390999104f728fd7150c" name="ac0ada9378dd5390999104f728fd7150c"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>VolumeOverlapMode</b> { <b>SUM</b> = static_cast&lt;int&gt;(scene_rdl2::rdl2::VolumeOverlapMode::SUM)
+, <b>MAX</b> = static_cast&lt;int&gt;(scene_rdl2::rdl2::VolumeOverlapMode::MAX)
+, <b>RND</b> = static_cast&lt;int&gt;(scene_rdl2::rdl2::VolumeOverlapMode::RND)
+, <b>NUM_MODES</b>
  }</td></tr>
 <tr class="separator:ac0ada9378dd5390999104f728fd7150c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64fd2043c3822562d2519d9587ea4fc3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a64fd2043c3822562d2519d9587ea4fc3">moonray::pbr::BsdfSamplerStrategy</a> { <a class="el" href="namespacemoonray_1_1pbr.html#a64fd2043c3822562d2519d9587ea4fc3a7980d15ea88bac4a81a3802f0b597ce0">moonray::pbr::BSDF_SAMPLER_STRATEGY_ENUMERATIONS</a>
+<tr class="memitem:a64fd2043c3822562d2519d9587ea4fc3"><td class="memItemLeft" align="right" valign="top"><a id="a64fd2043c3822562d2519d9587ea4fc3" name="a64fd2043c3822562d2519d9587ea4fc3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>BsdfSamplerStrategy</b> { <b>BSDF_SAMPLER_STRATEGY_ENUMERATIONS</b>
  }</td></tr>
 <tr class="separator:a64fd2043c3822562d2519d9587ea4fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8d15284449d5cf852a59ce75c881afd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a8d15284449d5cf852a59ce75c881afd3">moonray::pbr::MNRY_STATIC_ASSERT</a> (static_cast&lt; int &gt;(BSDF_SAMPLER_STRATEGY_MULTI_SAMPLE)==static_cast&lt; int &gt;(<a class="el" href="namespacescene__rdl2_1_1rdl2.html#ad9ce677f13ac03a1b979658d135bf77ba8e70de061a6eb0d9488e0edf09774dec">scene_rdl2::rdl2::BsdfSamplerStrategy::MULTI_SAMPLE</a>))</td></tr>
+<tr class="memitem:a8d15284449d5cf852a59ce75c881afd3"><td class="memItemLeft" align="right" valign="top"><a id="a8d15284449d5cf852a59ce75c881afd3" name="a8d15284449d5cf852a59ce75c881afd3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::MNRY_STATIC_ASSERT</b> (static_cast&lt; int &gt;(BSDF_SAMPLER_STRATEGY_MULTI_SAMPLE)==static_cast&lt; int &gt;(scene_rdl2::rdl2::BsdfSamplerStrategy::MULTI_SAMPLE))</td></tr>
 <tr class="separator:a8d15284449d5cf852a59ce75c881afd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd32000076fe2e8fb3fc92d46e0e2830"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#afd32000076fe2e8fb3fc92d46e0e2830">moonray::pbr::MNRY_STATIC_ASSERT</a> (static_cast&lt; int &gt;(BSDF_SAMPLER_STRATEGY_ONE_SAMPLE)==static_cast&lt; int &gt;(<a class="el" href="namespacescene__rdl2_1_1rdl2.html#ad9ce677f13ac03a1b979658d135bf77ba68264f4e5c014b56cdeb80bb15c551b5">scene_rdl2::rdl2::BsdfSamplerStrategy::ONE_SAMPLE</a>))</td></tr>
+<tr class="memitem:afd32000076fe2e8fb3fc92d46e0e2830"><td class="memItemLeft" align="right" valign="top"><a id="afd32000076fe2e8fb3fc92d46e0e2830" name="afd32000076fe2e8fb3fc92d46e0e2830"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::MNRY_STATIC_ASSERT</b> (static_cast&lt; int &gt;(BSDF_SAMPLER_STRATEGY_ONE_SAMPLE)==static_cast&lt; int &gt;(scene_rdl2::rdl2::BsdfSamplerStrategy::ONE_SAMPLE))</td></tr>
 <tr class="separator:afd32000076fe2e8fb3fc92d46e0e2830"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73016b3987ca2f49aef8831a79bfa1c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a73016b3987ca2f49aef8831a79bfa1c2">moonray::pbr::MNRY_STATIC_ASSERT</a> (static_cast&lt; int &gt;(BSDF_SAMPLER_STRATEGY_ONE_LOBE)==static_cast&lt; int &gt;(<a class="el" href="namespacescene__rdl2_1_1rdl2.html#ad9ce677f13ac03a1b979658d135bf77bab4d098f93d103f0c10cf616236251c84">scene_rdl2::rdl2::BsdfSamplerStrategy::ONE_LOBE</a>))</td></tr>
+<tr class="memitem:a73016b3987ca2f49aef8831a79bfa1c2"><td class="memItemLeft" align="right" valign="top"><a id="a73016b3987ca2f49aef8831a79bfa1c2" name="a73016b3987ca2f49aef8831a79bfa1c2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::MNRY_STATIC_ASSERT</b> (static_cast&lt; int &gt;(BSDF_SAMPLER_STRATEGY_ONE_LOBE)==static_cast&lt; int &gt;(scene_rdl2::rdl2::BsdfSamplerStrategy::ONE_LOBE))</td></tr>
 <tr class="separator:a73016b3987ca2f49aef8831a79bfa1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8b0183579a495855241419ca13a83d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#ab8b0183579a495855241419ca13a83d6">moonray::pbr::MNRY_STATIC_ASSERT</a> (BSDF_SAMPLER_STRATEGY_NUM_MODES==3)</td></tr>
+<tr class="memitem:ab8b0183579a495855241419ca13a83d6"><td class="memItemLeft" align="right" valign="top"><a id="ab8b0183579a495855241419ca13a83d6" name="ab8b0183579a495855241419ca13a83d6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::MNRY_STATIC_ASSERT</b> (BSDF_SAMPLER_STRATEGY_NUM_MODES==3)</td></tr>
 <tr class="separator:ab8b0183579a495855241419ca13a83d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Eric Tabellion $Id$ </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_path_integrator_8h_source.html">PathIntegrator.h</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

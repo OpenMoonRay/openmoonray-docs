@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/Types.h Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/Types.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('moonray-main_2lib_2rendering_2shading_
   <div class="headertitle"><div class="title">Types.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="moonray-main_2lib_2rendering_2shading_2_types_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2019-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
@@ -103,17 +103,17 @@ $(document).ready(function(){initNavTree('moonray-main_2lib_2rendering_2shading_
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemoonray.html">moonray</a> {</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>shading {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1shading.html#ac2e568dee49296d0de424c661f5c8c35">   11</a></span><span class="keyword">typedef</span> uint32_t <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#a4cd9afd953100b5ac47d23e5cdd6427a">RayStateIndex</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">typedef</span> uint32_t RayStateIndex;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// Important that this structure has a memory footprint no larger than a pointer</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// (we assume 64-bit).</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">struct </span><a class="code hl_define" href="_platform_8h.html#abe7f8cd9a0ce69b71567a3870415be66">ALIGN</a>(8) SortedRayState</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">struct </span>ALIGN(8) SortedRayState</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_typedef" href="namespacemoonray_1_1shading.html#a4cd9afd953100b5ac47d23e5cdd6427a">RayStateIndex</a>   mRsIdx;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    RayStateIndex   mRsIdx;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    uint32_t        mSortKey;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="namespacemoonray_1_1shading.html#a758b3748a3168e60d471e565554a9cee">   21</a></span><a class="code hl_define" href="_platform_8h.html#a2a0f1864b1baf076c8bc33b4c92cf50d">MNRY_STATIC_ASSERT</a>(<span class="keyword">sizeof</span>(SortedRayState) &lt;= <span class="keyword">sizeof</span>(<span class="keywordtype">void</span> *));</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>MNRY_STATIC_ASSERT(<span class="keyword">sizeof</span>(SortedRayState) &lt;= <span class="keyword">sizeof</span>(<span class="keywordtype">void</span> *));</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>} <span class="comment">// namespace shading</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>} <span class="comment">// namespace moonray</span></div>
@@ -122,16 +122,13 @@ $(document).ready(function(){initNavTree('moonray-main_2lib_2rendering_2shading_
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="ttc" id="a_platform_8h_html_a2a0f1864b1baf076c8bc33b4c92cf50d"><div class="ttname"><a href="_platform_8h.html#a2a0f1864b1baf076c8bc33b4c92cf50d">MNRY_STATIC_ASSERT</a></div><div class="ttdeci">#define MNRY_STATIC_ASSERT(exp)</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00448">Platform.h:448</a></div></div>
-<div class="ttc" id="a_platform_8h_html_abe7f8cd9a0ce69b71567a3870415be66"><div class="ttname"><a href="_platform_8h.html#abe7f8cd9a0ce69b71567a3870415be66">ALIGN</a></div><div class="ttdeci">#define ALIGN(x)</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00209">Platform.h:209</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1shading_html_a4cd9afd953100b5ac47d23e5cdd6427a"><div class="ttname"><a href="namespacemoonray_1_1shading.html#a4cd9afd953100b5ac47d23e5cdd6427a">moonray::shading::RayStateIndex</a></div><div class="ttdeci">uint32_t RayStateIndex</div><div class="ttdef"><b>Definition:</b> <a href="moonray-main_2lib_2rendering_2shading_2_types_8h_source.html#l00011">Types.h:11</a></div></div>
-<div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
+<div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> moonray.cc:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_26bb93814b9e3833617d1a6c0b0e1fb3.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_057a8e804fa21f5c97fdff16c5652908.html">lib</a></li><li class="navelem"><a class="el" href="dir_1baa063aa8b2a36fe6b5318d1cb38099.html">rendering</a></li><li class="navelem"><a class="el" href="dir_1a4f2f90048bfaeb4cb82ac64bfc0ada.html">shading</a></li><li class="navelem"><a class="el" href="moonray-main_2lib_2rendering_2shading_2_types_8h.html">Types.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_26bb93814b9e3833617d1a6c0b0e1fb3.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_057a8e804fa21f5c97fdff16c5652908.html">lib</a></li><li class="navelem"><a class="el" href="dir_1baa063aa8b2a36fe6b5318d1cb38099.html">rendering</a></li><li class="navelem"><a class="el" href="dir_1a4f2f90048bfaeb4cb82ac64bfc0ada.html">shading</a></li><li class="navelem"><b>Types.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

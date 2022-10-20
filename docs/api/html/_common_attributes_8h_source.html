@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/scene/rdl2/CommonAttributes.h Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/scene/rdl2/CommonAttributes.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -93,25 +93,17 @@ $(document).ready(function(){initNavTree('_common_attributes_8h_source.html','')
   <div class="headertitle"><div class="title">CommonAttributes.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_common_attributes_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2018-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @author Wayne Huang</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">///</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">///</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"></span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * This header file defines common attributes shared across multiple</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * dso plug-ins for avoiding code duplication and easier maintenance</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="_common_attributes_8h.html#adf1d35241d8c1a52c3ef6f4e98985f67">   16</a></span><span class="preprocessor">#define DECLARE_COMMON_CURVES_ATTRIBUTES                                       \</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#define DECLARE_COMMON_CURVES_ATTRIBUTES                                       \</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Int&gt; attrTessellationRate;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_common_attributes_8h.html#a88f9e1afa2547c34040a3fab253d2fb9">   19</a></span><span class="preprocessor">#define DEFINE_COMMON_CURVES_ATTRIBUTES                                        \</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define DEFINE_COMMON_CURVES_ATTRIBUTES                                        \</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">    attrTessellationRate =                                                     \</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">        sceneClass.declareAttribute&lt;scene_rdl2::rdl2::Int&gt;(&quot;tessellation_rate&quot;</span>, 4);        \</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    sceneClass.setMetadata(attrTessellationRate, &quot;label&quot;, &quot;tessellation_rate&quot;);\</div>
@@ -119,12 +111,12 @@ $(document).ready(function(){initNavTree('_common_attributes_8h_source.html','')
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        &quot;Number of segments to split curve spans into&quot;);                       \</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    sceneClass.setGroup(&quot;Curve&quot;, attrTessellationRate);</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="_common_attributes_8h.html#af4365d598cfed59908ace2e2e5a0392b">   27</a></span><span class="preprocessor">#define DECLARE_COMMON_MESH_ATTRIBUTES                                         \</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#define DECLARE_COMMON_MESH_ATTRIBUTES                                         \</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt; attrMeshResolution;                        \</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt; attrAdaptiveError;                         \</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Bool&gt;  attrSmoothNormal;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="_common_attributes_8h.html#a73933f7872e4a6a594bd6b9fdd80b69c">   32</a></span><span class="preprocessor">#define DEFINE_COMMON_MESH_ATTRIBUTES                                          \</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#define DEFINE_COMMON_MESH_ATTRIBUTES                                          \</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">    attrMeshResolution =                                                       \</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">        sceneClass.declareAttribute&lt;scene_rdl2::rdl2::Float&gt;(&quot;mesh_resolution&quot;</span>, 2.0f,      \</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        scene_rdl2::rdl2::FLAGS_NONE, scene_rdl2::rdl2::INTERFACE_GENERIC,                             \</div>
@@ -155,13 +147,13 @@ $(document).ready(function(){initNavTree('_common_attributes_8h_source.html','')
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        &quot;generate smooth shading normal when rendering PolygonMesh &quot;           \</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        &quot;and the mesh doesn&#39;t provide shading normal itself&quot;);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="_common_attributes_8h.html#a3a4d31d8abefe60b734493fd1c383eab">   63</a></span><span class="preprocessor">#define DECLARE_COMMON_MOTION_BLUR_ATTRIBUTES                                  \</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#define DECLARE_COMMON_MOTION_BLUR_ATTRIBUTES                                  \</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Bool&gt; attrUseRotationMotionBlur;                  \</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Int&gt;  attrMotionBlurType;                         \</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Int&gt;  attrCurvedMotionBlurSampleCount;            \</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Int&gt;  attrPrimitiveAttributeFrame;</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="_common_attributes_8h.html#a4f5279ab1c82621b6b35e319887d0d96">   69</a></span><span class="preprocessor">#define DEFINE_COMMON_MOTION_BLUR_ATTRIBUTES                                                                                    \</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#define DEFINE_COMMON_MOTION_BLUR_ATTRIBUTES                                                                                    \</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">    attrUseRotationMotionBlur = sceneClass.declareAttribute&lt;scene_rdl2::rdl2::Bool&gt;(                                                        \</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">        &quot;use_rotation_motion_blur&quot;</span>, false, {&quot;use_rotation_motion_blur&quot;});                                                       \</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    sceneClass.setMetadata(attrUseRotationMotionBlur, &quot;label&quot;,                                                                  \</div>
@@ -206,11 +198,11 @@ $(document).ready(function(){initNavTree('_common_attributes_8h_source.html','')
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    sceneClass.setEnumValue(attrPrimitiveAttributeFrame, 1, &quot;second motion step&quot;);                                              \</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    sceneClass.setEnumValue(attrPrimitiveAttributeFrame, 2, &quot;both motion steps&quot;);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="_common_attributes_8h.html#a135b034a7d64c902f3f31bc9e775b776">  114</a></span><span class="preprocessor">#define DECLARE_COMMON_EVALUATION_FRAME_ATTRIBUTES           \</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">#define DECLARE_COMMON_EVALUATION_FRAME_ATTRIBUTES           \</span></div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Bool&gt;   attrUseEvaluationFrame; \</span></div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt;  attrEvaluationFrame;</span></div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="_common_attributes_8h.html#a98e79bb0d5495dcd2b082bce893e70ea">  118</a></span><span class="preprocessor">#define DEFINE_COMMON_EVALUATION_FRAME_ATTRIBUTES                                                                   \</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="preprocessor">#define DEFINE_COMMON_EVALUATION_FRAME_ATTRIBUTES                                                                   \</span></div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">    attrUseEvaluationFrame =                                                                                        \</span></div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">        sceneClass.declareAttribute&lt;scene_rdl2::rdl2::Bool&gt;(&quot;use_evaluation_frame&quot;</span>, false, { &quot;use evaluation frame&quot; });         \</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    sceneClass.setMetadata(attrUseEvaluationFrame, &quot;label&quot;, &quot;use evaluation frame&quot;);                                \</div>
@@ -224,11 +216,11 @@ $(document).ready(function(){initNavTree('_common_attributes_8h_source.html','')
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        &quot;evaluate geometry at specified frame instead of SceneVariables frame\n&quot;);                                  \</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    sceneClass.setMetadata(attrEvaluationFrame, &quot;enable if&quot;, &quot;OrderedDict([(u&#39;use_evaluation_frame&#39;, u&#39;true&#39;)])&quot;);</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="_common_attributes_8h.html#a072a79c0fc7933209fbb55a5ff2a0306">  132</a></span><span class="preprocessor">#define DECLARE_COMMON_USER_DATA_ATTRIBUTES                                  \</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">#define DECLARE_COMMON_USER_DATA_ATTRIBUTES                                  \</span></div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::StringVector&gt; attrPartList;                     \</span></div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::SceneObjectVector&gt; attrPrimitiveAttributes;     \</span></div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="preprocessor"></span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="_common_attributes_8h.html#a77caef85aa7b105cef265c5f541836a6">  136</a></span><span class="preprocessor">#define DEFINE_COMMON_USER_DATA_ATTRIBUTES                                                  \</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="preprocessor">#define DEFINE_COMMON_USER_DATA_ATTRIBUTES                                                  \</span></div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">    attrPartList =                                                                          \</span></div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="preprocessor">        sceneClass.declareAttribute&lt;scene_rdl2::rdl2::StringVector&gt;(&quot;part_list&quot;</span>, {}, { &quot;part list&quot; });  \</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    sceneClass.setMetadata(attrPartList, &quot;label&quot;, &quot;part list&quot;);                             \</div>
@@ -242,7 +234,7 @@ $(document).ready(function(){initNavTree('_common_attributes_8h_source.html','')
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    sceneClass.setMetadata(attrPrimitiveAttributes, &quot;comment&quot;,                              \</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        &quot;A list of UserData to specify arbitrary primitive attributes&quot;);</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="_common_attributes_8h.html#a3324361a8aea465117fc46eb61fbe191">  150</a></span><span class="preprocessor">#define DECLARE_COMMON_MOTIONGUIDE_ATTRIBUTES                                               \</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="preprocessor">#define DECLARE_COMMON_MOTIONGUIDE_ATTRIBUTES                                               \</span></div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Bool&gt;   attrApplyMotionGuides;                                 \</span></div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Int&gt;    attrMotionGuidesDeformationMode;                       \</span></div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Int&gt;    attrMotionGuidesBindingMode;                           \</span></div>
@@ -254,7 +246,7 @@ $(document).ready(function(){initNavTree('_common_attributes_8h_source.html','')
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::String&gt; attrMotionGuidesCollisionTrack;                        \</span></div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="preprocessor">    scene_rdl2::rdl2::AttributeKey&lt;scene_rdl2::rdl2::Float&gt;  attrMotionGuidesCollisionTolerance;</span></div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="_common_attributes_8h.html#aaab6d645a210b5314b7419f1adf88cfc">  162</a></span><span class="preprocessor">#define DEFINE_COMMON_MOTIONGUIDE_ATTRIBUTES                                                \</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="preprocessor">#define DEFINE_COMMON_MOTIONGUIDE_ATTRIBUTES                                                \</span></div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="preprocessor">    attrApplyMotionGuides =                                                                 \</span></div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="preprocessor">        sceneClass.declareAttribute&lt;scene_rdl2::rdl2::Bool&gt;(&quot;apply_motion_guides&quot;</span>, false,               \</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                                                { &quot;apply motion guides&quot; });                 \</div>
@@ -347,7 +339,7 @@ $(document).ready(function(){initNavTree('_common_attributes_8h_source.html','')
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_bfad318135196d921c73299781eb9ac8.html">scene</a></li><li class="navelem"><a class="el" href="dir_28597d7401579fcad661c10a0fb8eb4c.html">rdl2</a></li><li class="navelem"><a class="el" href="_common_attributes_8h.html">CommonAttributes.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_bfad318135196d921c73299781eb9ac8.html">scene</a></li><li class="navelem"><a class="el" href="dir_28597d7401579fcad661c10a0fb8eb4c.html">rdl2</a></li><li class="navelem"><b>CommonAttributes.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

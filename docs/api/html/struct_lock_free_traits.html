@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: LockFreeTraits Struct Reference</title>
+<title>OpenMoonrayTEST #4: LockFreeTraits Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -96,97 +96,19 @@ $(document).ready(function(){initNavTree('struct_lock_free_traits.html',''); ini
   <div class="headertitle"><div class="title">LockFreeTraits Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_ring_buffer_8h_source.html">RingBuffer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a3a5f3372da6786c10820784217db8d59"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="_ring_buffer_8h.html#a7d6a80a7c2afce8bbe1d7214396f7fd9">ProducerTraits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lock_free_traits.html#a3a5f3372da6786c10820784217db8d59">producer_traits</a> = ProducerTraits::MULTIPLE_PRODUCERS</td></tr>
+<tr class="memitem:a3a5f3372da6786c10820784217db8d59"><td class="memItemLeft" align="right" valign="top"><a id="a3a5f3372da6786c10820784217db8d59" name="a3a5f3372da6786c10820784217db8d59"></a>
+static constexpr ProducerTraits&#160;</td><td class="memItemRight" valign="bottom"><b>producer_traits</b> = ProducerTraits::MULTIPLE_PRODUCERS</td></tr>
 <tr class="separator:a3a5f3372da6786c10820784217db8d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a200b6eeebc2ff8f9efd054e3165e62"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="_ring_buffer_8h.html#a4864510bfebe4a9b145edca479db635e">ConsumerTraits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lock_free_traits.html#a2a200b6eeebc2ff8f9efd054e3165e62">consumer_traits</a> = ConsumerTraits::MULTIPLE_CONSUMERS</td></tr>
+<tr class="memitem:a2a200b6eeebc2ff8f9efd054e3165e62"><td class="memItemLeft" align="right" valign="top"><a id="a2a200b6eeebc2ff8f9efd054e3165e62" name="a2a200b6eeebc2ff8f9efd054e3165e62"></a>
+static constexpr ConsumerTraits&#160;</td><td class="memItemRight" valign="bottom"><b>consumer_traits</b> = ConsumerTraits::MULTIPLE_CONSUMERS</td></tr>
 <tr class="separator:a2a200b6eeebc2ff8f9efd054e3165e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a219a14df286e204f9b268d3d0a578623"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="_ring_buffer_8h.html#abc9b83430fd3c6795aca9edefc3ecc7d">LockTraits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lock_free_traits.html#a219a14df286e204f9b268d3d0a578623">lock_traits</a> = LockTraits::LOCK_FREE</td></tr>
+<tr class="memitem:a219a14df286e204f9b268d3d0a578623"><td class="memItemLeft" align="right" valign="top"><a id="a219a14df286e204f9b268d3d0a578623" name="a219a14df286e204f9b268d3d0a578623"></a>
+static constexpr LockTraits&#160;</td><td class="memItemRight" valign="bottom"><b>lock_traits</b> = LockTraits::LOCK_FREE</td></tr>
 <tr class="separator:a219a14df286e204f9b268d3d0a578623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_ring_buffer_8h_source.html#l00918">918</a> of file <a class="el" href="_ring_buffer_8h_source.html">RingBuffer.h</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2a200b6eeebc2ff8f9efd054e3165e62" name="a2a200b6eeebc2ff8f9efd054e3165e62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a200b6eeebc2ff8f9efd054e3165e62">&#9670;&#160;</a></span>consumer_traits</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="_ring_buffer_8h.html#a4864510bfebe4a9b145edca479db635e">ConsumerTraits</a> LockFreeTraits::consumer_traits = ConsumerTraits::MULTIPLE_CONSUMERS</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_ring_buffer_8h_source.html#l00921">921</a> of file <a class="el" href="_ring_buffer_8h_source.html">RingBuffer.h</a>.</p>
-
-</div>
-</div>
-<a id="a219a14df286e204f9b268d3d0a578623" name="a219a14df286e204f9b268d3d0a578623"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a219a14df286e204f9b268d3d0a578623">&#9670;&#160;</a></span>lock_traits</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="_ring_buffer_8h.html#abc9b83430fd3c6795aca9edefc3ecc7d">LockTraits</a> LockFreeTraits::lock_traits = LockTraits::LOCK_FREE</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_ring_buffer_8h_source.html#l00922">922</a> of file <a class="el" href="_ring_buffer_8h_source.html">RingBuffer.h</a>.</p>
-
-</div>
-</div>
-<a id="a3a5f3372da6786c10820784217db8d59" name="a3a5f3372da6786c10820784217db8d59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a5f3372da6786c10820784217db8d59">&#9670;&#160;</a></span>producer_traits</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="_ring_buffer_8h.html#a7d6a80a7c2afce8bbe1d7214396f7fd9">ProducerTraits</a> LockFreeTraits::producer_traits = ProducerTraits::MULTIPLE_PRODUCERS</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_ring_buffer_8h_source.html#l00920">920</a> of file <a class="el" href="_ring_buffer_8h_source.html">RingBuffer.h</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/common/mcrt_util/<a class="el" href="_ring_buffer_8h_source.html">RingBuffer.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

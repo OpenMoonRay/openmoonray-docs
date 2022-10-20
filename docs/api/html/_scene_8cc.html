@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/core/Scene.cc File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/core/Scene.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -91,106 +91,71 @@ $(document).ready(function(){initNavTree('_scene_8cc.html',''); initResizable();
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Scene.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_pbr_t_l_state_8h_source.html">PbrTLState.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;PbrTLState.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_scene_8h_source.html">Scene.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="lib_2rendering_2pbr_2core_2util_8h_source.html">Util.h</a>&quot;</code><br />
+<code>#include &quot;Util.h&quot;</code><br />
 <code>#include &lt;<a class="el" href="_bake_camera_8h_source.html">rendering/pbr/camera/BakeCamera.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2pbr_2camera_2_camera_8h_source.html">rendering/pbr/camera/Camera.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_dome_master3_d_camera_8h_source.html">rendering/pbr/camera/DomeMaster3DCamera.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_orthographic_camera_8h_source.html">rendering/pbr/camera/OrthographicCamera.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_perspective_camera_8h_source.html">rendering/pbr/camera/PerspectiveCamera.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_spherical_camera_8h_source.html">rendering/pbr/camera/SphericalCamera.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_path_integrator_util_8h_source.html">rendering/pbr/integrator/PathIntegratorUtil.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_cylinder_light_8h_source.html">rendering/pbr/light/CylinderLight.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_disk_light_8h_source.html">rendering/pbr/light/DiskLight.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_env_light_8h_source.html">rendering/pbr/light/EnvLight.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_mesh_light_8h_source.html">rendering/pbr/light/MeshLight.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_rect_light_8h_source.html">rendering/pbr/light/RectLight.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_sphere_light_8h_source.html">rendering/pbr/light/SphereLight.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_spot_light_8h_source.html">rendering/pbr/light/SpotLight.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_distant_light_8h_source.html">rendering/pbr/light/DistantLight.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_color_ramp_light_filter_8h_source.html">rendering/pbr/lightfilter/ColorRampLightFilter.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_combine_light_filter_8h_source.html">rendering/pbr/lightfilter/CombineLightFilter.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_cookie_light_filter_8h_source.html">rendering/pbr/lightfilter/CookieLightFilter.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_barn_door_light_filter_8h_source.html">rendering/pbr/lightfilter/BarnDoorLightFilter.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_decay_light_filter_8h_source.html">rendering/pbr/lightfilter/DecayLightFilter.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_intensity_light_filter_8h_source.html">rendering/pbr/lightfilter/IntensityLightFilter.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_rod_light_filter_8h_source.html">rendering/pbr/lightfilter/RodLightFilter.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_vdb_light_filter_8h_source.html">rendering/pbr/lightfilter/VdbLightFilter.h</a>&gt;</code><br />
+<code>#include &lt;rendering/pbr/camera/Camera.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/camera/DomeMaster3DCamera.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/camera/OrthographicCamera.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/camera/PerspectiveCamera.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/camera/SphericalCamera.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/integrator/PathIntegratorUtil.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/light/CylinderLight.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/light/DiskLight.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/light/EnvLight.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/light/MeshLight.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/light/RectLight.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/light/SphereLight.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/light/SpotLight.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/light/DistantLight.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/lightfilter/ColorRampLightFilter.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/lightfilter/CombineLightFilter.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/lightfilter/CookieLightFilter.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/lightfilter/BarnDoorLightFilter.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/lightfilter/DecayLightFilter.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/lightfilter/IntensityLightFilter.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/lightfilter/RodLightFilter.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/lightfilter/VdbLightFilter.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_instance_8h_source.html">rendering/geom/Instance.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_intersection_init_8h_source.html">rendering/geom/IntersectionInit.h</a>&gt;</code><br />
+<code>#include &lt;rendering/geom/IntersectionInit.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_primitive_group_8h_source.html">rendering/geom/PrimitiveGroup.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_primitive_visitor_8h_source.html">rendering/geom/PrimitiveVisitor.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_geom_t_l_state_8h_source.html">rendering/geom/prim/GeomTLState.h</a>&gt;</code><br />
+<code>#include &lt;rendering/geom/prim/GeomTLState.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_primitive_private_access_8h_source.html">rendering/geom/prim/PrimitivePrivateAccess.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_volume_assignment_table_8h_source.html">rendering/geom/prim/VolumeAssignmentTable.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_volume_regions_8h_source.html">rendering/geom/prim/VolumeRegions.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2geom_2_types_8h_source.html">rendering/geom/Types.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_ray_8h_source.html">rendering/mcrt_common/Ray.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_geometry_manager_8h_source.html">rendering/rt/GeometryManager.h</a>&gt;</code><br />
+<code>#include &lt;rendering/geom/Types.h&gt;</code><br />
+<code>#include &lt;rendering/mcrt_common/Ray.h&gt;</code><br />
+<code>#include &lt;rendering/rt/GeometryManager.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_bsdf_8h_source.html">rendering/shading/bsdf/Bsdf.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_bssrdf_8h_source.html">rendering/shading/bssrdf/Bssrdf.h</a>&gt;</code><br />
 <code>#include &lt;scene_rdl2/render/logging/logging.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/scene/rdl2/VisibilityFlags.h&gt;</code><br />
 <code>#include &lt;iomanip&gt;</code><br />
-</div>
-<p><a href="_scene_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1pbr_1_1_mesh_light_setter.html">moonray::pbr::MeshLightSetter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1pbr"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html">moonray::pbr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9c25396023a22b5d0e9ba82496298686"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a9c25396023a22b5d0e9ba82496298686">moonray::pbr::setAttributeTableOnMeshLight</a> (MeshLight *meshLight, const std::string &amp;refGeomName, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html">rdl2::SceneContext</a> *sceneContext)</td></tr>
+<tr class="memitem:a9c25396023a22b5d0e9ba82496298686"><td class="memItemLeft" align="right" valign="top"><a id="a9c25396023a22b5d0e9ba82496298686" name="a9c25396023a22b5d0e9ba82496298686"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::setAttributeTableOnMeshLight</b> (MeshLight *meshLight, const std::string &amp;refGeomName, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_scene_context.html">rdl2::SceneContext</a> *sceneContext)</td></tr>
 <tr class="separator:a9c25396023a22b5d0e9ba82496298686"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8c292d6d4058ed73e13901cf3bff9d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_scene_8cc.html#ac8c292d6d4058ed73e13901cf3bff9d0">CPP_LightFilterNeedsSamples</a> (const <a class="el" href="classmoonray_1_1pbr_1_1_scene.html">moonray::pbr::Scene</a> *scene)</td></tr>
+<tr class="memitem:ac8c292d6d4058ed73e13901cf3bff9d0"><td class="memItemLeft" align="right" valign="top"><a id="ac8c292d6d4058ed73e13901cf3bff9d0" name="ac8c292d6d4058ed73e13901cf3bff9d0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CPP_LightFilterNeedsSamples</b> (const <a class="el" href="classmoonray_1_1pbr_1_1_scene.html">moonray::pbr::Scene</a> *scene)</td></tr>
 <tr class="separator:ac8c292d6d4058ed73e13901cf3bff9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Eric Tabellion $Id$ </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_scene_8cc_source.html">Scene.cc</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="ac8c292d6d4058ed73e13901cf3bff9d0" name="ac8c292d6d4058ed73e13901cf3bff9d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8c292d6d4058ed73e13901cf3bff9d0">&#9670;&#160;</a></span>CPP_LightFilterNeedsSamples()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CPP_LightFilterNeedsSamples </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmoonray_1_1pbr_1_1_scene.html">moonray::pbr::Scene</a> *&#160;</td>
-          <td class="paramname"><em>scene</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_scene_8cc_source.html#l00968">968</a> of file <a class="el" href="_scene_8cc_source.html">Scene.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  969</span>{</div>
-<div class="line"><span class="lineno">  970</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="_platform_8h.html#acf927ff672f054dc9d6f73573a38f800">MNRY_VERIFY</a>(scene)-&gt;lightFilterNeedsSamples();</div>
-<div class="line"><span class="lineno">  971</span>}</div>
-<div class="ttc" id="a_platform_8h_html_acf927ff672f054dc9d6f73573a38f800"><div class="ttname"><a href="_platform_8h.html#acf927ff672f054dc9d6f73573a38f800">MNRY_VERIFY</a></div><div class="ttdeci">#define MNRY_VERIFY(exp)</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00475">Platform.h:475</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

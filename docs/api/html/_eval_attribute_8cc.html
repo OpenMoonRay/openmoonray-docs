@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/EvalAttribute.cc File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/EvalAttribute.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -98,38 +98,177 @@ $(document).ready(function(){initNavTree('_eval_attribute_8cc.html',''); initRes
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_eval_attribute_8h_source.html">EvalAttribute.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="_thread_local_object_state_8h_source.html">rendering/bvh/shading/ThreadLocalObjectState.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="lib_2rendering_2mcrt__common_2util_8h_source.html">rendering/mcrt_common/Util.h</a>&gt;</code><br />
-</div>
-<p><a href="_eval_attribute_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<code>#include &lt;rendering/mcrt_common/Util.h&gt;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1shading"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html">moonray::shading</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a952cd71948922c3c50ff8d2eae90ca8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">math::Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a952cd71948922c3c50ff8d2eae90ca8e">moonray::shading::evalNormal</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">rdl2::Shader</a> *const obj, shading::TLState *tls, const State &amp;state, const <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">math::Vec3f</a> &amp;normalMapValue, const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> normalDial, const int normalMapSpace, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> *lengthN)</td></tr>
+<tr class="memitem:a952cd71948922c3c50ff8d2eae90ca8e"><td class="memItemLeft" align="right" valign="top"><a id="a952cd71948922c3c50ff8d2eae90ca8e" name="a952cd71948922c3c50ff8d2eae90ca8e"></a>
+<a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">math::Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::evalNormal</b> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">rdl2::Shader</a> *const obj, shading::TLState *tls, const State &amp;state, const <a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">math::Vec3f</a> &amp;normalMapValue, const float normalDial, const int normalMapSpace, float *lengthN)</td></tr>
 <tr class="separator:a952cd71948922c3c50ff8d2eae90ca8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a579ca4171b103f94bd55baa9f3a8c8b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">math::Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a579ca4171b103f94bd55baa9f3a8c8b3">moonray::shading::evalToonNormal</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">rdl2::Shader</a> *const obj, shading::TLState *tls, const State &amp;state, const <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">math::Vec3f</a> &amp;normalMapValue, const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> normalDial, const int normalMapSpace, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> *lengthN)</td></tr>
+<tr class="memitem:a579ca4171b103f94bd55baa9f3a8c8b3"><td class="memItemLeft" align="right" valign="top"><a id="a579ca4171b103f94bd55baa9f3a8c8b3" name="a579ca4171b103f94bd55baa9f3a8c8b3"></a>
+<a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">math::Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::evalToonNormal</b> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">rdl2::Shader</a> *const obj, shading::TLState *tls, const State &amp;state, const <a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">math::Vec3f</a> &amp;normalMapValue, const float normalDial, const int normalMapSpace, float *lengthN)</td></tr>
 <tr class="separator:a579ca4171b103f94bd55baa9f3a8c8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a469ab2f3050aa2979dea22a1b55cc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a3a469ab2f3050aa2979dea22a1b55cc3">moonray::shading::evalFloatWithPreAdd</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">rdl2::Shader</a> *const obj, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_attribute_key.html">rdl2::AttributeKey</a>&lt; <a class="el" href="namespacescene__rdl2_1_1rdl2.html#a440789ae6e77a17e0e23c1839c3d8374">rdl2::Float</a> &gt; &amp;valueKey, shading::TLState *tls, const State &amp;state, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> preAddValue)</td></tr>
+<tr class="memitem:a3a469ab2f3050aa2979dea22a1b55cc3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eval_attribute_8cc.html#a3a469ab2f3050aa2979dea22a1b55cc3">moonray::shading::evalFloatWithPreAdd</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">rdl2::Shader</a> *const obj, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_attribute_key.html">rdl2::AttributeKey</a>&lt; rdl2::Float &gt; &amp;valueKey, shading::TLState *tls, const State &amp;state, float preAddValue)</td></tr>
 <tr class="separator:a3a469ab2f3050aa2979dea22a1b55cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb6f33da475b1633861206aa35a0a815"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacescene__rdl2_1_1math.html#a5a45b8a9116842cc13f6cd2c2202b8f1">math::Vec2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#aeb6f33da475b1633861206aa35a0a815">moonray::shading::evalVec2f</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">rdl2::Shader</a> *const obj, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_attribute_key.html">rdl2::AttributeKey</a>&lt; <a class="el" href="namespacescene__rdl2_1_1rdl2.html#a61e8d7481564191eb4f2749cfcf87205">rdl2::Vec2f</a> &gt; &amp;valueKey, shading::TLState *tls, const State &amp;state)</td></tr>
-<tr class="memdesc:aeb6f33da475b1633861206aa35a0a815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as evalColor but for Vec2f.  <a href="namespacemoonray_1_1shading.html#aeb6f33da475b1633861206aa35a0a815">More...</a><br /></td></tr>
+<tr class="memitem:aeb6f33da475b1633861206aa35a0a815"><td class="memItemLeft" align="right" valign="top"><a id="aeb6f33da475b1633861206aa35a0a815" name="aeb6f33da475b1633861206aa35a0a815"></a>
+<a class="el" href="structscene__rdl2_1_1math_1_1_vec2.html">math::Vec2f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::evalVec2f</b> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">rdl2::Shader</a> *const obj, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_attribute_key.html">rdl2::AttributeKey</a>&lt; <a class="el" href="structscene__rdl2_1_1math_1_1_vec2.html">rdl2::Vec2f</a> &gt; &amp;valueKey, shading::TLState *tls, const State &amp;state)</td></tr>
+<tr class="memdesc:aeb6f33da475b1633861206aa35a0a815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as evalColor but for Vec2f. <br /></td></tr>
 <tr class="separator:aeb6f33da475b1633861206aa35a0a815"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a390ab287898c3414aa830fc2f9b41fa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">math::Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a390ab287898c3414aa830fc2f9b41fa9">moonray::shading::evalVec3f</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">rdl2::Shader</a> *const obj, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_attribute_key.html">rdl2::AttributeKey</a>&lt; <a class="el" href="namespacescene__rdl2_1_1rdl2.html#a27e21e0b88654937fc3f68f47fbddbf8">rdl2::Vec3f</a> &gt; &amp;valueKey, shading::TLState *tls, const State &amp;state)</td></tr>
+<tr class="memitem:a390ab287898c3414aa830fc2f9b41fa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">math::Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eval_attribute_8cc.html#a390ab287898c3414aa830fc2f9b41fa9">moonray::shading::evalVec3f</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">rdl2::Shader</a> *const obj, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_attribute_key.html">rdl2::AttributeKey</a>&lt; <a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">rdl2::Vec3f</a> &gt; &amp;valueKey, shading::TLState *tls, const State &amp;state)</td></tr>
 <tr class="separator:a390ab287898c3414aa830fc2f9b41fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0264fd06d3f1a0b5c17e86bcdc4f6738"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscene__rdl2_1_1math_1_1_color.html">math::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a0264fd06d3f1a0b5c17e86bcdc4f6738">moonray::shading::evalColorComponent</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">rdl2::Shader</a> *const obj, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_attribute_key.html">rdl2::AttributeKey</a>&lt; <a class="el" href="namespacescene__rdl2_1_1rdl2.html#a9b357bf6e1efdbf1c90a7daf045f8902">rdl2::Bool</a> &gt; &amp;showKey, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_attribute_key.html">rdl2::AttributeKey</a>&lt; <a class="el" href="namespacescene__rdl2_1_1rdl2.html#a440789ae6e77a17e0e23c1839c3d8374">rdl2::Float</a> &gt; &amp;factorKey, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_attribute_key.html">rdl2::AttributeKey</a>&lt; <a class="el" href="namespacescene__rdl2_1_1rdl2.html#a44c5cdbf59188c2cf827b27416f4bdd8">rdl2::Rgb</a> &gt; &amp;valueKey, shading::TLState *tls, const State &amp;state)</td></tr>
+<tr class="memitem:a0264fd06d3f1a0b5c17e86bcdc4f6738"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscene__rdl2_1_1math_1_1_color.html">math::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_eval_attribute_8cc.html#a0264fd06d3f1a0b5c17e86bcdc4f6738">moonray::shading::evalColorComponent</a> (const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">rdl2::Shader</a> *const obj, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_attribute_key.html">rdl2::AttributeKey</a>&lt; rdl2::Bool &gt; &amp;showKey, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_attribute_key.html">rdl2::AttributeKey</a>&lt; rdl2::Float &gt; &amp;factorKey, const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_attribute_key.html">rdl2::AttributeKey</a>&lt; <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">rdl2::Rgb</a> &gt; &amp;valueKey, shading::TLState *tls, const State &amp;state)</td></tr>
 <tr class="separator:a0264fd06d3f1a0b5c17e86bcdc4f6738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >$Id$ </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a0264fd06d3f1a0b5c17e86bcdc4f6738" name="a0264fd06d3f1a0b5c17e86bcdc4f6738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0264fd06d3f1a0b5c17e86bcdc4f6738">&#9670;&#160;</a></span>evalColorComponent()</h2>
 
-<p class="definition">Definition in file <a class="el" href="_eval_attribute_8cc_source.html">EvalAttribute.cc</a>.</p>
-</div></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> moonray::shading::evalColorComponent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">rdl2::Shader</a> *const&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_attribute_key.html">rdl2::AttributeKey</a>&lt; rdl2::Bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>showKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_attribute_key.html">rdl2::AttributeKey</a>&lt; rdl2::Float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>factorKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_attribute_key.html">rdl2::AttributeKey</a>&lt; <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">rdl2::Rgb</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>valueKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">shading::TLState</a> *&#160;</td>
+          <td class="paramname"><em>tls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_state.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Convenience function that evaluates an attribute triplet: color, factor and boolean toggle. This is a very common case in material shaders (ex: "diffuse color", "diffuse factor", "show diffuse"). This function will only try to evaluate the color attribute if the boolean toggle is on and if the factor attribute is non-zero. This function returns the product of the three. </p>
+
+</div>
+</div>
+<a id="a3a469ab2f3050aa2979dea22a1b55cc3" name="a3a469ab2f3050aa2979dea22a1b55cc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a469ab2f3050aa2979dea22a1b55cc3">&#9670;&#160;</a></span>evalFloatWithPreAdd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float moonray::shading::evalFloatWithPreAdd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">rdl2::Shader</a> *const&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_attribute_key.html">rdl2::AttributeKey</a>&lt; rdl2::Float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>valueKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">shading::TLState</a> *&#160;</td>
+          <td class="paramname"><em>tls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_state.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>preAddValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Same as evalColor but for floats, including an additive term before the multiplicative term = (mapEvalValue + preAddValue) * attributeValue </p>
+
+</div>
+</div>
+<a id="a390ab287898c3414aa830fc2f9b41fa9" name="a390ab287898c3414aa830fc2f9b41fa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a390ab287898c3414aa830fc2f9b41fa9">&#9670;&#160;</a></span>evalVec3f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">scene_rdl2::math::Vec3f</a> moonray::shading::evalVec3f </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_shader.html">rdl2::Shader</a> *const&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classscene__rdl2_1_1rdl2_1_1_attribute_key.html">rdl2::AttributeKey</a>&lt; <a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">rdl2::Vec3f</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>valueKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">shading::TLState</a> *&#160;</td>
+          <td class="paramname"><em>tls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmoonray_1_1shading_1_1_state.html">State</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Similar to evalColor for Vec3f. Note that if the attribute is bound to a map, the attribute value is ignored and is NOT multiplied to the result of the map. If the attribute is not bound to a map, the attribute value is returned. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

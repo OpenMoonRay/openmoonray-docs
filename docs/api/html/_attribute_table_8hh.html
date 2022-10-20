@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/bvh/shading/ispc/AttributeTable.hh File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/bvh/shading/ispc/AttributeTable.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -108,8 +108,6 @@ Macros</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Brian Green </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_attribute_table_8hh_source.html">AttributeTable.hh</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a5531b15883229d852c7211766295d49b" name="a5531b15883229d852c7211766295d49b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5531b15883229d852c7211766295d49b">&#9670;&#160;</a></span>SHADING_ATTRIBUTE_TABLE_MEMBERS</h2>
@@ -122,17 +120,14 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_define" href="_hybrid_varying_data_8hh.html#a715ffc2be9684ea07a72412a85bebca5">HVD_MEMBER</a>(int32_t, mNumKeys);                                      \</div>
+<b>Value:</b><div class="fragment"><div class="line">    HVD_MEMBER(int32_t, mNumKeys);                                      \</div>
 <div class="line">    HVD_MEMBER(int32_t, mTotalSize);                                    \</div>
 <div class="line">    HVD_PTR(int32_t *, mKeyOffset);                                     \</div>
 <div class="line">    <span class="comment">/* sizeof(std::vector&lt;AttributeKey&gt;) == 24 */</span>                       \</div>
 <div class="line">    HVD_CPP_MEMBER(std::vector&lt;AttributeKey&gt;, mRequiredAttributes, 24); \</div>
 <div class="line">    HVD_CPP_MEMBER(std::vector&lt;AttributeKey&gt;, mOptionalAttributes, 24); \</div>
 <div class="line">    HVD_CPP_MEMBER(std::vector&lt;AttributeKey&gt;, mDifferentialAttributes, 24)</div>
-<div class="ttc" id="a_hybrid_varying_data_8hh_html_a715ffc2be9684ea07a72412a85bebca5"><div class="ttname"><a href="_hybrid_varying_data_8hh.html#a715ffc2be9684ea07a72412a85bebca5">HVD_MEMBER</a></div><div class="ttdeci">#define HVD_MEMBER(member_type, member_name)</div><div class="ttdef"><b>Definition:</b> <a href="_hybrid_varying_data_8hh_source.html#l00037">HybridVaryingData.hh:37</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_attribute_table_8hh_source.html#l00012">12</a> of file <a class="el" href="_attribute_table_8hh_source.html">AttributeTable.hh</a>.</p>
-
 </div>
 </div>
 <a id="aaf8fdbeec1bcacd9907ccf044e786a8a" name="aaf8fdbeec1bcacd9907ccf044e786a8a"></a>
@@ -150,19 +145,15 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_define" href="_hybrid_varying_data_8hh.html#a10f93a71204463c0e3a0e35f5df00dca">HVD_BEGIN_VALIDATION</a>(AttributeTable, vlen);                 \</div>
+<b>Value:</b><div class="fragment"><div class="line">    HVD_BEGIN_VALIDATION(AttributeTable, vlen);                 \</div>
 <div class="line">    HVD_VALIDATE(AttributeTable, mNumKeys);                     \</div>
 <div class="line">    HVD_VALIDATE(AttributeTable, mKeyOffset);                   \</div>
 <div class="line">    HVD_VALIDATE(AttributeTable, mTotalSize);                   \</div>
 <div class="line">    HVD_VALIDATE(AttributeTable, mRequiredAttributes);          \</div>
 <div class="line">    HVD_VALIDATE(AttributeTable, mOptionalAttributes);          \</div>
 <div class="line">    HVD_VALIDATE(AttributeTable, mDifferentialAttributes);      \</div>
-<div class="line">    <a class="code hl_define" href="_hybrid_varying_data_8hh.html#aed3d87d9d21558c6519cf8f5c8eaed8c">HVD_END_VALIDATION</a></div>
-<div class="ttc" id="a_hybrid_varying_data_8hh_html_a10f93a71204463c0e3a0e35f5df00dca"><div class="ttname"><a href="_hybrid_varying_data_8hh.html#a10f93a71204463c0e3a0e35f5df00dca">HVD_BEGIN_VALIDATION</a></div><div class="ttdeci">#define HVD_BEGIN_VALIDATION(type_name, vlen)</div><div class="ttdef"><b>Definition:</b> <a href="_hybrid_varying_data_8hh_source.html#l00086">HybridVaryingData.hh:86</a></div></div>
-<div class="ttc" id="a_hybrid_varying_data_8hh_html_aed3d87d9d21558c6519cf8f5c8eaed8c"><div class="ttname"><a href="_hybrid_varying_data_8hh.html#aed3d87d9d21558c6519cf8f5c8eaed8c">HVD_END_VALIDATION</a></div><div class="ttdeci">#define HVD_END_VALIDATION</div><div class="ttdef"><b>Definition:</b> <a href="_hybrid_varying_data_8hh_source.html#l00102">HybridVaryingData.hh:102</a></div></div>
+<div class="line">    HVD_END_VALIDATION</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_attribute_table_8hh_source.html#l00021">21</a> of file <a class="el" href="_attribute_table_8hh_source.html">AttributeTable.hh</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->

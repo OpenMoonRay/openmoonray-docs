@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/unittest/TestQmc.cc File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/unittest/TestQmc.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -97,9 +97,9 @@ $(document).ready(function(){initNavTree('_test_qmc_8cc.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_test_qmc_8h_source.html">TestQmc.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="_sampler_8h_source.html">rendering/pbr/sampler/Sampler.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_sequence_i_d_8h_source.html">rendering/pbr/sampler/SequenceID.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_integrator_sample_8h_source.html">rendering/pbr/sampler/IntegratorSample.h</a>&gt;</code><br />
+<code>#include &lt;rendering/pbr/sampler/Sampler.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/sampler/SequenceID.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/sampler/IntegratorSample.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/fb_util/RunningStats.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/render/util/Random.h&gt;</code><br />
 <code>#include &lt;tbb/atomic.h&gt;</code><br />
@@ -109,198 +109,21 @@ $(document).ready(function(){initNavTree('_test_qmc_8cc.html',''); initResizable
 <code>#include &lt;iomanip&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-</div>
-<p><a href="_test_qmc_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1pbr"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html">moonray::pbr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a14577049e46563acd5cc1076b67026b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_test_qmc_8cc.html#a14577049e46563acd5cc1076b67026b1">CPPUNIT_TEST_SUITE_REGISTRATION</a> (<a class="el" href="classmoonray_1_1pbr_1_1_test_qmc.html">moonray::pbr::TestQmc</a>)</td></tr>
+<tr class="memitem:a14577049e46563acd5cc1076b67026b1"><td class="memItemLeft" align="right" valign="top"><a id="a14577049e46563acd5cc1076b67026b1" name="a14577049e46563acd5cc1076b67026b1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CPPUNIT_TEST_SUITE_REGISTRATION</b> (<a class="el" href="classmoonray_1_1pbr_1_1_test_qmc.html">moonray::pbr::TestQmc</a>)</td></tr>
 <tr class="separator:a14577049e46563acd5cc1076b67026b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Eric Tabellion $Id$ </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_test_qmc_8cc_source.html">TestQmc.cc</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a14577049e46563acd5cc1076b67026b1" name="a14577049e46563acd5cc1076b67026b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14577049e46563acd5cc1076b67026b1">&#9670;&#160;</a></span>CPPUNIT_TEST_SUITE_REGISTRATION()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">CPPUNIT_TEST_SUITE_REGISTRATION </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmoonray_1_1pbr_1_1_test_qmc.html">moonray::pbr::TestQmc</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a97073394e16eab036c242afb0694e3af" name="a97073394e16eab036c242afb0694e3af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97073394e16eab036c242afb0694e3af">&#9670;&#160;</a></span>mLUB</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> mLUB</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_test_qmc_8cc_source.html#l00229">229</a> of file <a class="el" href="_test_qmc_8cc_source.html">TestQmc.cc</a>.</p>
-
-</div>
-</div>
-<a id="a6934a04fdaa4f57a7f4f62c1621d2364" name="a6934a04fdaa4f57a7f4f62c1621d2364"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6934a04fdaa4f57a7f4f62c1621d2364">&#9670;&#160;</a></span>mPoints</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="discrepancy_8cc.html#a73845c52820b806f986820e591a6613b">PointContainer</a>&amp; mPoints</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_test_qmc_8cc_source.html#l00231">231</a> of file <a class="el" href="_test_qmc_8cc_source.html">TestQmc.cc</a>.</p>
-
-</div>
-</div>
-<a id="a9d99fc1bf01a6d64140d104eba1bb61f" name="a9d99fc1bf01a6d64140d104eba1bb61f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d99fc1bf01a6d64140d104eba1bb61f">&#9670;&#160;</a></span>mRand</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">util::Random mRand</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_test_qmc_8cc_source.html#l00230">230</a> of file <a class="el" href="_test_qmc_8cc_source.html">TestQmc.cc</a>.</p>
-
-</div>
-</div>
-<a id="acdfc2f8492f39791732f31d14fdbd5f3" name="acdfc2f8492f39791732f31d14fdbd5f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdfc2f8492f39791732f31d14fdbd5f3">&#9670;&#160;</a></span>mScramble</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t mScramble[2]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_test_qmc_8cc_source.html#l00361">361</a> of file <a class="el" href="_test_qmc_8cc_source.html">TestQmc.cc</a>.</p>
-
-</div>
-</div>
-<a id="aba2151e1d5f6e820811562b0c70b07eb" name="aba2151e1d5f6e820811562b0c70b07eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba2151e1d5f6e820811562b0c70b07eb">&#9670;&#160;</a></span>sSeed</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">tbb::atomic&lt;unsigned&gt; sSeed</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_test_qmc_8cc_source.html#l00226">226</a> of file <a class="el" href="_test_qmc_8cc_source.html">TestQmc.cc</a>.</p>
-
-</div>
-</div>
-<a id="ad0da36b2558901e21e7a30f6c227a45e" name="ad0da36b2558901e21e7a30f6c227a45e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0da36b2558901e21e7a30f6c227a45e">&#9670;&#160;</a></span>x</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> x</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_test_qmc_8cc_source.html#l00146">146</a> of file <a class="el" href="_test_qmc_8cc_source.html">TestQmc.cc</a>.</p>
-
-</div>
-</div>
-<a id="aa4f0d3eebc3c443f9be81bf48561a217" name="aa4f0d3eebc3c443f9be81bf48561a217"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4f0d3eebc3c443f9be81bf48561a217">&#9670;&#160;</a></span>y</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> y</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_test_qmc_8cc_source.html#l00147">147</a> of file <a class="el" href="_test_qmc_8cc_source.html">TestQmc.cc</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

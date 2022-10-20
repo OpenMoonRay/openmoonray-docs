@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: lpexp::LPexp Class Reference</title>
+<title>OpenMoonrayTEST #4: lpexp::LPexp Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -118,11 +118,9 @@ Inheritance diagram for lpexp::LPexp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a46172faa4d80d5b9803a918ca56ebd70"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlpexp_1_1_l_pexp.html#a46172faa4d80d5b9803a918ca56ebd70">~LPexp</a> ()</td></tr>
-<tr class="separator:a46172faa4d80d5b9803a918ca56ebd70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1946e62fec1d7b4bd17e1d6b9720475"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelpexp.html#a4487868d5aa11faafc330ab1e465010b">FirstLast</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlpexp_1_1_l_pexp.html#ae1946e62fec1d7b4bd17e1d6b9720475">genAuto</a> (<a class="el" href="class_ndf_automata.html">NdfAutomata</a> &amp;automata) const =0</td></tr>
+<tr class="memitem:ae1946e62fec1d7b4bd17e1d6b9720475"><td class="memItemLeft" align="right" valign="top">virtual FirstLast&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlpexp_1_1_l_pexp.html#ae1946e62fec1d7b4bd17e1d6b9720475">genAuto</a> (<a class="el" href="class_ndf_automata.html">NdfAutomata</a> &amp;automata) const =0</td></tr>
 <tr class="separator:ae1946e62fec1d7b4bd17e1d6b9720475"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa45b9e8c424ea79053b8f69ba451198f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelpexp.html#a17a89e98bfd8d490194978fa7b72f76c">Regtype</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlpexp_1_1_l_pexp.html#aa45b9e8c424ea79053b8f69ba451198f">getType</a> () const =0</td></tr>
+<tr class="memitem:aa45b9e8c424ea79053b8f69ba451198f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lpexp_8h.html#a17a89e98bfd8d490194978fa7b72f76c">Regtype</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlpexp_1_1_l_pexp.html#aa45b9e8c424ea79053b8f69ba451198f">getType</a> () const =0</td></tr>
 <tr class="memdesc:aa45b9e8c424ea79053b8f69ba451198f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type for this node.  <a href="classlpexp_1_1_l_pexp.html#aa45b9e8c424ea79053b8f69ba451198f">More...</a><br /></td></tr>
 <tr class="separator:aa45b9e8c424ea79053b8f69ba451198f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb052579d7f4abd7b704bd5bdfe7abfe"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlpexp_1_1_l_pexp.html">LPexp</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlpexp_1_1_l_pexp.html#abb052579d7f4abd7b704bd5bdfe7abfe">clone</a> () const =0</td></tr>
@@ -132,38 +130,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p >Base class for a light path expression. </p>
 <p >Light path expressions are arranged as an abstract syntax tree. All the nodes in that tree satisfy this interface that basicaly makes the automate generation easy and clear.</p>
 <p >The node types for this tree are: CAT: Concatenation of regexps like abcde or (abcde) OR: Ored union of two or more expressions like a|b|c|d SYMBOL Just a symbol like G or 'customlabel' WILDCARD The wildcard regexp for . or [^GS] REPEAT Generic unlimited repetition of the child expression (exp)* NREPEAT Bounded repetition of the child expression like (exp){n,m} </p>
-
-<p class="definition">Definition at line <a class="el" href="lpexp_8h_source.html#l00076">76</a> of file <a class="el" href="lpexp_8h_source.html">lpexp.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a46172faa4d80d5b9803a918ca56ebd70" name="a46172faa4d80d5b9803a918ca56ebd70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46172faa4d80d5b9803a918ca56ebd70">&#9670;&#160;</a></span>~LPexp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual lpexp::LPexp::~LPexp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="lpexp_8h_source.html#l00078">78</a> of file <a class="el" href="lpexp_8h_source.html">lpexp.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   78</span>{};</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="abb052579d7f4abd7b704bd5bdfe7abfe" name="abb052579d7f4abd7b704bd5bdfe7abfe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb052579d7f4abd7b704bd5bdfe7abfe">&#9670;&#160;</a></span>clone()</h2>
 
@@ -202,7 +169,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespacelpexp.html#a4487868d5aa11faafc330ab1e465010b">FirstLast</a> lpexp::LPexp::genAuto </td>
+          <td class="memname">virtual FirstLast lpexp::LPexp::genAuto </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_ndf_automata.html">NdfAutomata</a> &amp;&#160;</td>
           <td class="paramname"><em>automata</em></td><td>)</td>
@@ -232,7 +199,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespacelpexp.html#a17a89e98bfd8d490194978fa7b72f76c">Regtype</a> lpexp::LPexp::getType </td>
+          <td class="memname">virtual <a class="el" href="lpexp_8h.html#a17a89e98bfd8d490194978fa7b72f76c">Regtype</a> lpexp::LPexp::getType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -251,15 +218,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/lpe/osl/<a class="el" href="lpexp_8h_source.html">lpexp.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacelpexp.html">lpexp</a></li><li class="navelem"><a class="el" href="classlpexp_1_1_l_pexp.html">LPexp</a></li>
+    <li class="navelem"><b>lpexp</b></li><li class="navelem"><a class="el" href="classlpexp_1_1_l_pexp.html">LPexp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/geom/prim/OpenSubdivMesh.cc File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/geom/prim/OpenSubdivMesh.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -91,23 +91,21 @@ $(document).ready(function(){initNavTree('_open_subdiv_mesh_8cc.html',''); initR
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">OpenSubdivMesh.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_open_subdiv_mesh_8h_source.html">OpenSubdivMesh.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="_geom_t_l_state_8h_source.html">rendering/geom/prim/GeomTLState.h</a>&gt;</code><br />
+<code>#include &lt;rendering/geom/prim/GeomTLState.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_mesh_tessellation_util_8h_source.html">rendering/geom/prim/MeshTessellationUtil.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="lib_2rendering_2geom_2prim_2util_8h_source.html">rendering/geom/prim/Util.h</a>&gt;</code><br />
+<code>#include &lt;rendering/geom/prim/Util.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_attributes_8h_source.html">rendering/bvh/shading/Attributes.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_primitive_attribute_8h_source.html">rendering/bvh/shading/PrimitiveAttribute.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2bvh_2shading_2_root_shader_8h_source.html">rendering/bvh/shading/RootShader.h</a>&gt;</code><br />
+<code>#include &lt;rendering/bvh/shading/RootShader.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="bvh_2shading_2_state_8h_source.html">rendering/bvh/shading/State.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_baked_attribute_8h_source.html">rendering/geom/BakedAttribute.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_thread_local_state_8h_source.html">rendering/mcrt_common/ThreadLocalState.h</a>&gt;</code><br />
+<code>#include &lt;rendering/mcrt_common/ThreadLocalState.h&gt;</code><br />
 <code>#include &lt;opensubdiv/far/patchDescriptor.h&gt;</code><br />
 <code>#include &lt;opensubdiv/far/patchMap.h&gt;</code><br />
 <code>#include &lt;opensubdiv/far/patchTable.h&gt;</code><br />
@@ -122,65 +120,35 @@ $(document).ready(function(){initNavTree('_open_subdiv_mesh_8cc.html',''); initR
 <code>#include &lt;scene_rdl2/common/math/Vec2.h&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;numeric&gt;</code><br />
-</div>
-<p><a href="_open_subdiv_mesh_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1geom_1_1internal_1_1_face_varying_attributes.html">moonray::geom::internal::FaceVaryingAttributes</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1geom_1_1internal_1_1_face_varying_attributes_1_1_attribute_buffer.html">moonray::geom::internal::FaceVaryingAttributes::AttributeBuffer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1geom_1_1internal_1_1_patch_c_v.html">moonray::geom::internal::PatchCV</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1geom_1_1internal_1_1_texture_c_v.html">moonray::geom::internal::TextureCV</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1geom_1_1internal_1_1_prim_var_c_v.html">moonray::geom::internal::PrimVarCV</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1geom_1_1internal_1_1_limit_surface_sample.html">moonray::geom::internal::LimitSurfaceSample</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmoonray_1_1geom_1_1internal_1_1_displacement_footprint.html">moonray::geom::internal::DisplacementFootprint</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1geom"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html">moonray::geom</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1geom_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">moonray::geom::internal</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa9e3d924293e92dea072b358361b5b1a"><td class="memItemLeft" align="right" valign="top">static OpenSubdiv::Far::TopologyRefiner *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html#aa9e3d924293e92dea072b358361b5b1a">moonray::geom::internal::createTopologyRefiner</a> (const ControlMeshData &amp;controlMeshData, const FaceVaryingAttributes &amp;faceVaryingAttributes)</td></tr>
-<tr class="separator:aa9e3d924293e92dea072b358361b5b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5e93e7323a10b4022ea01d0cde8a846"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html#ae5e93e7323a10b4022ea01d0cde8a846">moonray::geom::internal::getOverlapVertexClusters</a> (const FaceVaryingSeams &amp;faceVaryingSeams, const SubdTessellatedVertexLookup &amp;tessellatedVertexLookup, std::vector&lt; std::vector&lt; int &gt; &gt; &amp;vertexClusters)</td></tr>
+<tr class="memitem:ae5e93e7323a10b4022ea01d0cde8a846"><td class="memItemLeft" align="right" valign="top"><a id="ae5e93e7323a10b4022ea01d0cde8a846" name="ae5e93e7323a10b4022ea01d0cde8a846"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::geom::internal::getOverlapVertexClusters</b> (const FaceVaryingSeams &amp;faceVaryingSeams, const SubdTessellatedVertexLookup &amp;tessellatedVertexLookup, std::vector&lt; std::vector&lt; int &gt; &gt; &amp;vertexClusters)</td></tr>
 <tr class="separator:ae5e93e7323a10b4022ea01d0cde8a846"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a595eda4a47124bf63e974e8606f1fd54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html#a595eda4a47124bf63e974e8606f1fd54">moonray::geom::internal::generateZeroStitchIndexBufferAndSurfaceSamples</a> (const SubdQuadTopology &amp;quadTopology, const SubdTessellatedVertexLookup &amp;tessellatedVertexLookup, int fid, int assignmentId, SubdivisionMesh::IndexBuffer &amp;indices, std::vector&lt; LimitSurfaceSample &gt; &amp;limitSurfaceSamples, std::vector&lt; int &gt; *tessellatedToControlFace)</td></tr>
+<tr class="memitem:a595eda4a47124bf63e974e8606f1fd54"><td class="memItemLeft" align="right" valign="top"><a id="a595eda4a47124bf63e974e8606f1fd54" name="a595eda4a47124bf63e974e8606f1fd54"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::geom::internal::generateZeroStitchIndexBufferAndSurfaceSamples</b> (const SubdQuadTopology &amp;quadTopology, const SubdTessellatedVertexLookup &amp;tessellatedVertexLookup, int fid, int assignmentId, SubdivisionMesh::IndexBuffer &amp;indices, std::vector&lt; LimitSurfaceSample &gt; &amp;limitSurfaceSamples, std::vector&lt; int &gt; *tessellatedToControlFace)</td></tr>
 <tr class="separator:a595eda4a47124bf63e974e8606f1fd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a410e29ac60b01ba545b1dad9d83021f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html#a410e29ac60b01ba545b1dad9d83021f9">moonray::geom::internal::generatePatchCvs</a> (const OpenSubdiv::Far::TopologyRefiner *refiner, const OpenSubdiv::Far::PatchTable *patchTable, const SubdivisionMesh::VertexBuffer &amp;controlVertices, const Vector&lt; Vec2f &gt; &amp;textureVertices, AttributeRate textureRate, std::vector&lt; PatchCV &gt; &amp;patchCvs, std::vector&lt; TextureCV &gt; &amp;textureCvs, bool requireUniformFix, uint motionSampleCount)</td></tr>
+<tr class="memitem:a410e29ac60b01ba545b1dad9d83021f9"><td class="memItemLeft" align="right" valign="top"><a id="a410e29ac60b01ba545b1dad9d83021f9" name="a410e29ac60b01ba545b1dad9d83021f9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::geom::internal::generatePatchCvs</b> (const OpenSubdiv::Far::TopologyRefiner *refiner, const OpenSubdiv::Far::PatchTable *patchTable, const SubdivisionMesh::VertexBuffer &amp;controlVertices, const Vector&lt; Vec2f &gt; &amp;textureVertices, AttributeRate textureRate, std::vector&lt; PatchCV &gt; &amp;patchCvs, std::vector&lt; TextureCV &gt; &amp;textureCvs, bool requireUniformFix, uint motionSampleCount)</td></tr>
 <tr class="separator:a410e29ac60b01ba545b1dad9d83021f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba565a9db44b5a73b57e6a680610efac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html#aba565a9db44b5a73b57e6a680610efac">moonray::geom::internal::generatePrimVarCvs</a> (const OpenSubdiv::Far::TopologyRefiner *refiner, const OpenSubdiv::Far::PatchTable *patchTable, Attributes *primitiveAttributes, FaceVaryingAttributes &amp;faceVaryingAttributes, size_t controlVertexCount, std::vector&lt; <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> &gt; &amp;varyingData, std::vector&lt; PrimVarCV &gt; &amp;varyingPrimVarCvs, std::vector&lt; <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> &gt; &amp;vertexData, std::vector&lt; PrimVarCV &gt; &amp;vertexPrimVarCvs, std::unordered_map&lt; int, std::vector&lt; PrimVarCV &gt; &gt; &amp;faceVaryingPrimVarCvs, bool requireUniformFix)</td></tr>
+<tr class="memitem:aba565a9db44b5a73b57e6a680610efac"><td class="memItemLeft" align="right" valign="top"><a id="aba565a9db44b5a73b57e6a680610efac" name="aba565a9db44b5a73b57e6a680610efac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::geom::internal::generatePrimVarCvs</b> (const OpenSubdiv::Far::TopologyRefiner *refiner, const OpenSubdiv::Far::PatchTable *patchTable, Attributes *primitiveAttributes, FaceVaryingAttributes &amp;faceVaryingAttributes, size_t controlVertexCount, std::vector&lt; float &gt; &amp;varyingData, std::vector&lt; PrimVarCV &gt; &amp;varyingPrimVarCvs, std::vector&lt; float &gt; &amp;vertexData, std::vector&lt; PrimVarCV &gt; &amp;vertexPrimVarCvs, std::unordered_map&lt; int, std::vector&lt; PrimVarCV &gt; &gt; &amp;faceVaryingPrimVarCvs, bool requireUniformFix)</td></tr>
 <tr class="separator:aba565a9db44b5a73b57e6a680610efac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20226c36d6a5f6d7aa4a0d61916c223b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html#a20226c36d6a5f6d7aa4a0d61916c223b">moonray::geom::internal::evalLimitSurface</a> (const OpenSubdiv::Far::PatchTable *patchTable, const std::vector&lt; LimitSurfaceSample &gt; &amp;limitSurfaceSamples, const std::vector&lt; PatchCV &gt; &amp;patchCvs, const std::vector&lt; TextureCV &gt; &amp;textureCvs, AttributeRate textureRate, SubdivisionMesh::VertexBuffer &amp;tessellatedVertices, VertexBuffer&lt; Vec3f, InterleavedTraits &gt; &amp;surfaceNormal, VertexBuffer&lt; Vec2f, InterleavedTraits &gt; &amp;surfaceSt, VertexBuffer&lt; Vec3f, InterleavedTraits &gt; &amp;surfaceDpds, VertexBuffer&lt; Vec3f, InterleavedTraits &gt; &amp;surfaceDpdt, std::vector&lt; DisplacementFootprint &gt; &amp;displacementFootprints, bool &amp;hasBadDerivatives, bool requireUniformFix, uint motionSampleCount)</td></tr>
+<tr class="memitem:a20226c36d6a5f6d7aa4a0d61916c223b"><td class="memItemLeft" align="right" valign="top"><a id="a20226c36d6a5f6d7aa4a0d61916c223b" name="a20226c36d6a5f6d7aa4a0d61916c223b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::geom::internal::evalLimitSurface</b> (const OpenSubdiv::Far::PatchTable *patchTable, const std::vector&lt; LimitSurfaceSample &gt; &amp;limitSurfaceSamples, const std::vector&lt; PatchCV &gt; &amp;patchCvs, const std::vector&lt; TextureCV &gt; &amp;textureCvs, AttributeRate textureRate, SubdivisionMesh::VertexBuffer &amp;tessellatedVertices, VertexBuffer&lt; Vec3f, InterleavedTraits &gt; &amp;surfaceNormal, VertexBuffer&lt; Vec2f, InterleavedTraits &gt; &amp;surfaceSt, VertexBuffer&lt; Vec3f, InterleavedTraits &gt; &amp;surfaceDpds, VertexBuffer&lt; Vec3f, InterleavedTraits &gt; &amp;surfaceDpdt, std::vector&lt; DisplacementFootprint &gt; &amp;displacementFootprints, bool &amp;hasBadDerivatives, bool requireUniformFix, uint motionSampleCount)</td></tr>
 <tr class="separator:a20226c36d6a5f6d7aa4a0d61916c223b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49ba2141754fa172529392a55388d45f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html#a49ba2141754fa172529392a55388d45f">moonray::geom::internal::evalLimitAttributes</a> (const OpenSubdiv::Far::PatchTable *patchTable, const std::vector&lt; LimitSurfaceSample &gt; &amp;limitSurfaceSamples, const std::vector&lt; PrimVarCV &gt; &amp;varyingPrimVarCvs, const std::vector&lt; PrimVarCV &gt; &amp;vertexPrimVarCvs, const std::unordered_map&lt; int, std::vector&lt; LimitSurfaceSample &gt; &gt; &amp;fvarLimitSamples, const std::unordered_map&lt; int, std::vector&lt; PrimVarCV &gt; &gt; &amp;faceVaryingPrimVarCvs, std::unordered_map&lt; int, SubdivisionMesh::IndexBuffer &gt; &amp;&amp;fvarIndices, Attributes *primitiveAttributes, FaceVaryingAttributes &amp;faceVaryingAttributes, bool requireUniformFix)</td></tr>
+<tr class="memitem:a49ba2141754fa172529392a55388d45f"><td class="memItemLeft" align="right" valign="top"><a id="a49ba2141754fa172529392a55388d45f" name="a49ba2141754fa172529392a55388d45f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::geom::internal::evalLimitAttributes</b> (const OpenSubdiv::Far::PatchTable *patchTable, const std::vector&lt; LimitSurfaceSample &gt; &amp;limitSurfaceSamples, const std::vector&lt; PrimVarCV &gt; &amp;varyingPrimVarCvs, const std::vector&lt; PrimVarCV &gt; &amp;vertexPrimVarCvs, const std::unordered_map&lt; int, std::vector&lt; LimitSurfaceSample &gt; &gt; &amp;fvarLimitSamples, const std::unordered_map&lt; int, std::vector&lt; PrimVarCV &gt; &gt; &amp;faceVaryingPrimVarCvs, std::unordered_map&lt; int, SubdivisionMesh::IndexBuffer &gt; &amp;&amp;fvarIndices, Attributes *primitiveAttributes, FaceVaryingAttributes &amp;faceVaryingAttributes, bool requireUniformFix)</td></tr>
 <tr class="separator:a49ba2141754fa172529392a55388d45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe604b7112683c92f43c95b6980affbf"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html#afe604b7112683c92f43c95b6980affbf">moonray::geom::internal::outsideFrustum</a> (uint8_t *outcodes, int vid0, int vid1, int vid2, int vid3)</td></tr>
-<tr class="separator:afe604b7112683c92f43c95b6980affbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b7decc323a5a0787e2ff07cb0c6f26"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html#a74b7decc323a5a0787e2ff07cb0c6f26">moonray::geom::internal::insideFrustum</a> (uint8_t *outcodes, int vid0, int vid1, int vid2, int vid3, uint8_t &amp;outcode)</td></tr>
-<tr class="separator:a74b7decc323a5a0787e2ff07cb0c6f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:af82c0d1d4c7151c753f1704647ee105e"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html#af82c0d1d4c7151c753f1704647ee105e">moonray::geom::internal::sTextureStFVarChannel</a> = 0</td></tr>
-<tr class="separator:af82c0d1d4c7151c753f1704647ee105e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Wayne Huang </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_open_subdiv_mesh_8cc_source.html">OpenSubdivMesh.cc</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

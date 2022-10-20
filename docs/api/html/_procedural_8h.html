@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/geom/Procedural.h File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/geom/Procedural.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -100,9 +100,9 @@ $(document).ready(function(){initNavTree('_procedural_8h.html',''); initResizabl
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="_shared_primitive_8h_source.html">rendering/geom/SharedPrimitive.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="geom_2_state_8h_source.html">rendering/geom/State.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2geom_2_types_8h_source.html">rendering/geom/Types.h</a>&gt;</code><br />
+<code>#include &lt;rendering/geom/Types.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_procedural_context_8h_source.html">rendering/geom/ProceduralContext.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2bvh_2shading_2_xform_8h_source.html">rendering/bvh/shading/Xform.h</a>&gt;</code><br />
+<code>#include &lt;rendering/bvh/shading/Xform.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/render/util/Ref.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/scene/rdl2/Geometry.h&gt;</code><br />
 <code>#include &lt;tbb/concurrent_vector.h&gt;</code><br />
@@ -124,43 +124,19 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1geom"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html">moonray::geom</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a51cf23e752473f1a05b0b881d47bc00f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_procedural_8h.html#a51cf23e752473f1a05b0b881d47bc00f">GEOM_PROCEDURAL_HAS_BEEN_INCLUDED</a></td></tr>
-<tr class="separator:a51cf23e752473f1a05b0b881d47bc00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ad0ec64db36f943ec0d9dc7fbf07a2ed4"><td class="memItemLeft" align="right" valign="top">typedef tbb::concurrent_unordered_set&lt; std::shared_ptr&lt; SharedPrimitive &gt;, SharedPtrHash &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#ad0ec64db36f943ec0d9dc7fbf07a2ed4">moonray::geom::SharedPrimitiveSet</a></td></tr>
+<tr class="memitem:ad0ec64db36f943ec0d9dc7fbf07a2ed4"><td class="memItemLeft" align="right" valign="top"><a id="ad0ec64db36f943ec0d9dc7fbf07a2ed4" name="ad0ec64db36f943ec0d9dc7fbf07a2ed4"></a>
+typedef tbb::concurrent_unordered_set&lt; std::shared_ptr&lt; SharedPrimitive &gt;, SharedPtrHash &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::geom::SharedPrimitiveSet</b></td></tr>
 <tr class="separator:ad0ec64db36f943ec0d9dc7fbf07a2ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae32fe2c2dbc36e1d715ed9b88ab8e86f"><td class="memItemLeft" align="right" valign="top">typedef tbb::concurrent_vector&lt; Procedural * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html#ae32fe2c2dbc36e1d715ed9b88ab8e86f">moonray::geom::ProceduralArray</a></td></tr>
+<tr class="memitem:ae32fe2c2dbc36e1d715ed9b88ab8e86f"><td class="memItemLeft" align="right" valign="top"><a id="ae32fe2c2dbc36e1d715ed9b88ab8e86f" name="ae32fe2c2dbc36e1d715ed9b88ab8e86f"></a>
+typedef tbb::concurrent_vector&lt; Procedural * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::geom::ProceduralArray</b></td></tr>
 <tr class="separator:ae32fe2c2dbc36e1d715ed9b88ab8e86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Eric Tabellion $Id$ </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_procedural_8h_source.html">Procedural.h</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a51cf23e752473f1a05b0b881d47bc00f" name="a51cf23e752473f1a05b0b881d47bc00f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51cf23e752473f1a05b0b881d47bc00f">&#9670;&#160;</a></span>GEOM_PROCEDURAL_HAS_BEEN_INCLUDED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GEOM_PROCEDURAL_HAS_BEEN_INCLUDED</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_procedural_8h_source.html#l00014">14</a> of file <a class="el" href="_procedural_8h_source.html">Procedural.h</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

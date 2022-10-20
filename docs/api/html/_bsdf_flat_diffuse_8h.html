@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bsdf/npr/BsdfFlatDiffuse.h File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bsdf/npr/BsdfFlatDiffuse.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -100,8 +100,8 @@ $(document).ready(function(){initNavTree('_bsdf_flat_diffuse_8h.html',''); initR
 <div class="textblock"><code>#include &lt;<a class="el" href="_bsdf_oren_nayar_8h_source.html">rendering/shading/bsdf/BsdfOrenNayar.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_bsdf_8h_source.html">rendering/shading/bsdf/Bsdf.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_bsdf_slice_8h_source.html">rendering/shading/bsdf/BsdfSlice.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_pbr_validity_8h_source.html">rendering/shading/PbrValidity.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="lib_2rendering_2shading_2util_8h_source.html">rendering/shading/Util.h</a>&gt;</code><br />
+<code>#include &lt;rendering/shading/PbrValidity.h&gt;</code><br />
+<code>#include &lt;rendering/shading/Util.h&gt;</code><br />
 <code>#include &lt;rendering/shading/ispc/bsdf/npr/BsdfFlatDiffuse_ispc_stubs.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/math/Color.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/math/ReferenceFrame.h&gt;</code><br />
@@ -120,20 +120,15 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1shading"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html">moonray::shading</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:acb914aaf921bd57b3672a8178dbf8df0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#acb914aaf921bd57b3672a8178dbf8df0">moonray::shading::getOrenNayarFalloffIntensity</a> (const <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;n, const <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;v, const <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;l, const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> <a class="el" href="immintrin__emu_8h.html#a8a1a0a26c50cc4becfc754bb68d1dc6b">a</a>, const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> <a class="el" href="immintrin__emu_8h.html#ab5fe720200eed3b8fca39c153696c5d2">b</a>, const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> terminatorShift)</td></tr>
-<tr class="separator:acb914aaf921bd57b3672a8178dbf8df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4457bc8b7db7233104dcf079d75b6d22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a4457bc8b7db7233104dcf079d75b6d22">moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</a> (FlatDiffuseBsdfLobe, FlatDiffuseBsdfLobev)</td></tr>
+<tr class="memitem:a4457bc8b7db7233104dcf079d75b6d22"><td class="memItemLeft" align="right" valign="top"><a id="a4457bc8b7db7233104dcf079d75b6d22" name="a4457bc8b7db7233104dcf079d75b6d22"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</b> (FlatDiffuseBsdfLobe, FlatDiffuseBsdfLobev)</td></tr>
 <tr class="separator:a4457bc8b7db7233104dcf079d75b6d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Scott Cegielski $Id$ </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_bsdf_flat_diffuse_8h_source.html">BsdfFlatDiffuse.h</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

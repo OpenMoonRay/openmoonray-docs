@@ -7,8 +7,7 @@ var lpexp_8h =
     [ "lpexp::Orlist", "classlpexp_1_1_orlist.html", "classlpexp_1_1_orlist" ],
     [ "lpexp::Repeat", "classlpexp_1_1_repeat.html", "classlpexp_1_1_repeat" ],
     [ "lpexp::NRepeat", "classlpexp_1_1_n_repeat.html", "classlpexp_1_1_n_repeat" ],
-    [ "lpexp::Rule", "classlpexp_1_1_rule.html", "classlpexp_1_1_rule" ],
-    [ "FirstLast", "lpexp_8h.html#a4487868d5aa11faafc330ab1e465010b", null ],
+    [ "lpexp::Rule", "classlpexp_1_1_rule.html", null ],
     [ "Regtype", "lpexp_8h.html#a17a89e98bfd8d490194978fa7b72f76c", [
       [ "CAT", "lpexp_8h.html#a17a89e98bfd8d490194978fa7b72f76ca8df8e6ecdffc48b3d822cc4ade147215", null ],
       [ "OR", "lpexp_8h.html#a17a89e98bfd8d490194978fa7b72f76ca128364d634b63ad551286fdaa076ef31", null ],

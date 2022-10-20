@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/geom/prim/Box.cc File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/geom/prim/Box.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -91,51 +91,25 @@ $(document).ready(function(){initNavTree('prim_2_box_8cc.html',''); initResizabl
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">Box.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="prim_2_box_8h_source.html">Box.h</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="_b_v_h_user_data_8h_source.html">rendering/geom/prim/BVHUserData.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="lib_2rendering_2geom_2prim_2util_8h_source.html">rendering/geom/prim/Util.h</a>&gt;</code><br />
+<code>#include &lt;rendering/geom/prim/Util.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_attributes_8h_source.html">rendering/bvh/shading/Attributes.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_attribute_table_8h_source.html">rendering/bvh/shading/AttributeTable.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_interpolator_8h_source.html">rendering/bvh/shading/Interpolator.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2bvh_2shading_2_root_shader_8h_source.html">rendering/bvh/shading/RootShader.h</a>&gt;</code><br />
-</div>
-<p><a href="prim_2_box_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<code>#include &lt;rendering/bvh/shading/AttributeTable.h&gt;</code><br />
+<code>#include &lt;rendering/bvh/shading/Interpolator.h&gt;</code><br />
+<code>#include &lt;rendering/bvh/shading/RootShader.h&gt;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1geom"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom.html">moonray::geom</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1geom_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html">moonray::geom::internal</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a80807ac6ad0892f5ed2510d0f590c6b4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html#a80807ac6ad0892f5ed2510d0f590c6b4">moonray::geom::internal::boundsFunc</a> (const RTCBoundsFunctionArguments *args)</td></tr>
-<tr class="separator:a80807ac6ad0892f5ed2510d0f590c6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac112705aba773f60edddb880dd6cc78"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html#aac112705aba773f60edddb880dd6cc78">moonray::geom::internal::bboxTest</a> (const Vec3f &amp;org, const Vec3f &amp;dir, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> rayTnear, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> rayTfar, const Vec3f &amp;pMin, const Vec3f &amp;pMax, bool isSingleSided, bool isNormalReversed, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> &amp;tHit)</td></tr>
-<tr class="separator:aac112705aba773f60edddb880dd6cc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a48e33ba788a98f3e3d243507ef0d0d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html#a2a48e33ba788a98f3e3d243507ef0d0d">moonray::geom::internal::intersectFunc</a> (const RTCIntersectFunctionNArguments *args)</td></tr>
-<tr class="separator:a2a48e33ba788a98f3e3d243507ef0d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04abaf0a4a387a82e715d556b32d0ea9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html#a04abaf0a4a387a82e715d556b32d0ea9">moonray::geom::internal::occludedFunc</a> (const RTCOccludedFunctionNArguments *args)</td></tr>
-<tr class="separator:a04abaf0a4a387a82e715d556b32d0ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ac483d65843e5f4994cd99eb329c0c873"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1geom_1_1internal.html#ac483d65843e5f4994cd99eb329c0c873">moonray::geom::internal::sEpsilonEdge</a> = 1e-5f</td></tr>
-<tr class="separator:ac483d65843e5f4994cd99eb329c0c873"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Marianna Neubauer $Id$ </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="prim_2_box_8cc_source.html">Box.cc</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

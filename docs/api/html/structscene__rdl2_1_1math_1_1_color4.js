@@ -1,27 +1,6 @@
 var structscene__rdl2_1_1math_1_1_color4 =
 [
-    [ "Scalar", "structscene__rdl2_1_1math_1_1_color4.html#a0b64362cf2f16321e7857474ee10b04c", null ],
     [ "Color4", "structscene__rdl2_1_1math_1_1_color4.html#a8227b8b6059afa9fab22768a32eee1eb", null ],
-    [ "Color4", "structscene__rdl2_1_1math_1_1_color4.html#aede864c49fb99b78016b8b25c650583b", null ],
-    [ "Color4", "structscene__rdl2_1_1math_1_1_color4.html#ac75c41fc3688bd9eadba96b4a0f4e6d2", null ],
-    [ "Color4", "structscene__rdl2_1_1math_1_1_color4.html#a77e1863f3fd2e181cb18514a96cae85c", null ],
-    [ "Color4", "structscene__rdl2_1_1math_1_1_color4.html#ab692fbafec8266c2a6ffd5abb331b339", null ],
-    [ "Color4", "structscene__rdl2_1_1math_1_1_color4.html#af03babacd3c78fcd692ad194736be492", null ],
-    [ "Color4", "structscene__rdl2_1_1math_1_1_color4.html#aee03c17593ffe74b5006420051871603", null ],
-    [ "Color4", "structscene__rdl2_1_1math_1_1_color4.html#a2fade2ae53afae225ae5001b5d5817c3", null ],
     [ "Color4", "structscene__rdl2_1_1math_1_1_color4.html#a3c9a7b1c21bbd203159ded21cbe358e0", null ],
-    [ "Color4", "structscene__rdl2_1_1math_1_1_color4.html#ab2b680897c82468fe90948a44c211108", null ],
-    [ "Color4", "structscene__rdl2_1_1math_1_1_color4.html#a8e1a0becd0e12fc34043c88ea240c758", null ],
-    [ "Color4", "structscene__rdl2_1_1math_1_1_color4.html#a2718e51480bbd0dec2323af9bd5a419d", null ],
-    [ "operator=", "structscene__rdl2_1_1math_1_1_color4.html#a36490477d0e22f66fedbc2a90dafdd9e", null ],
-    [ "operator[]", "structscene__rdl2_1_1math_1_1_color4.html#acbf13e7c507f82e30bc5ed403d8d3579", null ],
-    [ "operator[]", "structscene__rdl2_1_1math_1_1_color4.html#a14112b2347d65c49b92197c57b5f0306", null ],
-    [ "set", "structscene__rdl2_1_1math_1_1_color4.html#a1e40faa4af10cf3c30a77bdc35984a46", null ],
-    [ "set", "structscene__rdl2_1_1math_1_1_color4.html#a6ebc9cc7d761d9b722d5f2bd24b79d5f", null ],
-    [ "set", "structscene__rdl2_1_1math_1_1_color4.html#a1841e7ffc78f7df53984f7acb2495782", null ],
-    [ "set", "structscene__rdl2_1_1math_1_1_color4.html#ae718ecbaf3b1c5d54c5bb31be689bd76", null ],
-    [ "a", "structscene__rdl2_1_1math_1_1_color4.html#a229b793960555f0f98b27995bf2a87cc", null ],
-    [ "b", "structscene__rdl2_1_1math_1_1_color4.html#a7d33dc76b9a3bcf6b874709efc9f3505", null ],
-    [ "g", "structscene__rdl2_1_1math_1_1_color4.html#a06465e96a8cf8d6d8043e57f30d4412c", null ],
-    [ "r", "structscene__rdl2_1_1math_1_1_color4.html#ae029ac0c1dab463ddaf22d0549744097", null ]
+    [ "set", "structscene__rdl2_1_1math_1_1_color4.html#a6ebc9cc7d761d9b722d5f2bd24b79d5f", null ]
 ];

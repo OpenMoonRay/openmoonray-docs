@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bsdf/ward/BsdfWard.cc File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bsdf/ward/BsdfWard.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -91,41 +91,21 @@ $(document).ready(function(){initNavTree('_bsdf_ward_8cc.html',''); initResizabl
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">BsdfWard.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_bsdf_ward_8h_source.html">BsdfWard.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="lib_2rendering_2shading_2util_8h_source.html">rendering/shading/Util.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_math_8h_source.html">math.h</a>&gt;</code><br />
-</div>
-<p><a href="_bsdf_ward_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<code>#include &lt;rendering/shading/Util.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1shading"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html">moonray::shading</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a1f0a268fba7f0bda8cf8c6652f4d2453"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a1f0a268fba7f0bda8cf8c6652f4d2453">moonray::shading::sCosGrazingAngleSample</a> = <a class="el" href="namespacescene__rdl2_1_1math.html#a3a7081d60ce2da6f7a97ebcd075ab549">scene_rdl2::math::cos</a>((90.0 - 0.11) / 180.0 * <a class="el" href="immintrin__emu_8h.html#a142050680749415346125493d63b8810">double</a>(<a class="el" href="cmd_2point__generation__cmd_2util_8h.html#abce8f0db8a5282e441988c8d2e73f79e">pi</a>))</td></tr>
-<tr class="separator:a1f0a268fba7f0bda8cf8c6652f4d2453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d730bb1606eee70e79dca26fbf712de"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a4d730bb1606eee70e79dca26fbf712de">moonray::shading::sCosGrazingAngle</a> = <a class="el" href="namespacescene__rdl2_1_1math.html#a3a7081d60ce2da6f7a97ebcd075ab549">scene_rdl2::math::cos</a>((90.0 - 0.1) / 180.0 * <a class="el" href="immintrin__emu_8h.html#a142050680749415346125493d63b8810">double</a>(<a class="el" href="cmd_2point__generation__cmd_2util_8h.html#abce8f0db8a5282e441988c8d2e73f79e">pi</a>))</td></tr>
-<tr class="separator:a4d730bb1606eee70e79dca26fbf712de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addb67fe55872f5c14407a6cbb361d911"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#addb67fe55872f5c14407a6cbb361d911">moonray::shading::sMinTheta</a> = 0.1 / 180.0 * <a class="el" href="immintrin__emu_8h.html#a142050680749415346125493d63b8810">double</a>(<a class="el" href="cmd_2point__generation__cmd_2util_8h.html#abce8f0db8a5282e441988c8d2e73f79e">pi</a>)</td></tr>
-<tr class="separator:addb67fe55872f5c14407a6cbb361d911"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f9705c2595aea1900714f05ffbac017"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a0f9705c2595aea1900714f05ffbac017">moonray::shading::sMinSinTheta</a> = <a class="el" href="namespacescene__rdl2_1_1math.html#a5629d5c93f0a01dae34503abf52c6d1b">scene_rdl2::math::sin</a>(sMinTheta)</td></tr>
-<tr class="separator:a0f9705c2595aea1900714f05ffbac017"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd9ac45cb5714f5060c7f91750f35345"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#acd9ac45cb5714f5060c7f91750f35345">moonray::shading::sMaxCosTheta</a> = <a class="el" href="namespacescene__rdl2_1_1math.html#a3a7081d60ce2da6f7a97ebcd075ab549">scene_rdl2::math::cos</a>(sMinTheta)</td></tr>
-<tr class="separator:acd9ac45cb5714f5060c7f91750f35345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Eric Tabellion $Id$ </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_bsdf_ward_8cc_source.html">BsdfWard.cc</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

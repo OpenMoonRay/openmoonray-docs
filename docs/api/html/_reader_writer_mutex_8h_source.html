@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/render/util/ReaderWriterMutex.h Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/render/util/ReaderWriterMutex.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('_reader_writer_mutex_8h_source.html','
   <div class="headertitle"><div class="title">ReaderWriterMutex.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_reader_writer_mutex_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2019-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
@@ -111,10 +111,10 @@ $(document).ready(function(){initNavTree('_reader_writer_mutex_8h_source.html','
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#            define USE_SHARED_TIMED_MUTEX</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#        endif</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#    else</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#        include &quot;<a class="code" href="shared__mutex_8h.html">shared_mutex.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#        include &quot;shared_mutex.h&quot;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#    endif</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#    include &quot;<a class="code" href="shared__mutex_8h.html">shared_mutex.h</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#    include &quot;shared_mutex.h&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
@@ -122,17 +122,17 @@ $(document).ready(function(){initNavTree('_reader_writer_mutex_8h_source.html','
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">namespace </span>util {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#if defined(USE_SHARED_MUTEX)</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacescene__rdl2_1_1util.html#ae6a7d06fa669443fa4c9b399303cb574">ReaderWriterMutex</a>    = std::shared_mutex;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacescene__rdl2_1_1util.html#a1ac0bc79724cea589404b1174fdc4712">ReadLock</a>             = std::shared_lock&lt;ReaderWriterMutex&gt;;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacescene__rdl2_1_1util.html#a79fcb401e6ba0bbefb4d249d9640dcf8">WriteLock</a>            = std::unique_lock&lt;ReaderWriterMutex&gt;;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">using </span>ReaderWriterMutex    = std::shared_mutex;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">using </span>ReadLock             = std::shared_lock&lt;ReaderWriterMutex&gt;;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">using </span>WriteLock            = std::unique_lock&lt;ReaderWriterMutex&gt;;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#elif defined(USE_SHARED_TIMED_MUTEX)</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacescene__rdl2_1_1util.html#ae6a7d06fa669443fa4c9b399303cb574">ReaderWriterMutex</a>    = std::shared_timed_mutex;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacescene__rdl2_1_1util.html#a1ac0bc79724cea589404b1174fdc4712">ReadLock</a>             = std::shared_lock&lt;ReaderWriterMutex&gt;;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacescene__rdl2_1_1util.html#a79fcb401e6ba0bbefb4d249d9640dcf8">WriteLock</a>            = std::unique_lock&lt;ReaderWriterMutex&gt;;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">using </span>ReaderWriterMutex    = std::shared_timed_mutex;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">using </span>ReadLock             = std::shared_lock&lt;ReaderWriterMutex&gt;;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">using </span>WriteLock            = std::unique_lock&lt;ReaderWriterMutex&gt;;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="namespacescene__rdl2_1_1util.html#ae6a7d06fa669443fa4c9b399303cb574">   38</a></span>    <span class="keyword">using </span><a class="code hl_class" href="classfauxstd_1_1shared__mutex.html">ReaderWriterMutex</a>    = <a class="code hl_class" href="classfauxstd_1_1shared__mutex.html">fauxstd::shared_mutex</a>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="namespacescene__rdl2_1_1util.html#a1ac0bc79724cea589404b1174fdc4712">   39</a></span>    <span class="keyword">using </span><a class="code hl_class" href="classfauxstd_1_1shared__lock.html">ReadLock</a>             = <a class="code hl_class" href="classfauxstd_1_1shared__lock.html">fauxstd::shared_lock&lt;ReaderWriterMutex&gt;</a>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="namespacescene__rdl2_1_1util.html#a79fcb401e6ba0bbefb4d249d9640dcf8">   40</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacescene__rdl2_1_1util.html#a79fcb401e6ba0bbefb4d249d9640dcf8">WriteLock</a>            = std::unique_lock&lt;ReaderWriterMutex&gt;;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">using </span>ReaderWriterMutex    = <a class="code hl_class" href="classfauxstd_1_1shared__mutex.html">fauxstd::shared_mutex</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">using </span>ReadLock             = <a class="code hl_class" href="classfauxstd_1_1shared__lock.html">fauxstd::shared_lock&lt;ReaderWriterMutex&gt;</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">using </span>WriteLock            = std::unique_lock&lt;ReaderWriterMutex&gt;;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>} <span class="comment">// namespace util</span></div>
@@ -142,19 +142,15 @@ $(document).ready(function(){initNavTree('_reader_writer_mutex_8h_source.html','
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// TM and (c) 2019-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="ttc" id="aclassfauxstd_1_1shared__lock_html"><div class="ttname"><a href="classfauxstd_1_1shared__lock.html">fauxstd::shared_lock</a></div><div class="ttdef"><b>Definition:</b> <a href="shared__mutex_8h_source.html#l00119">shared_mutex.h:120</a></div></div>
-<div class="ttc" id="aclassfauxstd_1_1shared__mutex_html"><div class="ttname"><a href="classfauxstd_1_1shared__mutex.html">fauxstd::shared_mutex</a></div><div class="ttdef"><b>Definition:</b> <a href="shared__mutex_8h_source.html#l00092">shared_mutex.h:93</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1util_html_a1ac0bc79724cea589404b1174fdc4712"><div class="ttname"><a href="namespacescene__rdl2_1_1util.html#a1ac0bc79724cea589404b1174fdc4712">scene_rdl2::util::ReadLock</a></div><div class="ttdeci">fauxstd::shared_lock&lt; ReaderWriterMutex &gt; ReadLock</div><div class="ttdef"><b>Definition:</b> <a href="_reader_writer_mutex_8h_source.html#l00039">ReaderWriterMutex.h:39</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1util_html_a79fcb401e6ba0bbefb4d249d9640dcf8"><div class="ttname"><a href="namespacescene__rdl2_1_1util.html#a79fcb401e6ba0bbefb4d249d9640dcf8">scene_rdl2::util::WriteLock</a></div><div class="ttdeci">std::unique_lock&lt; ReaderWriterMutex &gt; WriteLock</div><div class="ttdef"><b>Definition:</b> <a href="_reader_writer_mutex_8h_source.html#l00040">ReaderWriterMutex.h:40</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_1_1util_html_ae6a7d06fa669443fa4c9b399303cb574"><div class="ttname"><a href="namespacescene__rdl2_1_1util.html#ae6a7d06fa669443fa4c9b399303cb574">scene_rdl2::util::ReaderWriterMutex</a></div><div class="ttdeci">fauxstd::shared_mutex ReaderWriterMutex</div><div class="ttdef"><b>Definition:</b> <a href="_reader_writer_mutex_8h_source.html#l00038">ReaderWriterMutex.h:38</a></div></div>
-<div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> <a href="_mcrt_rt_dispatch_computation_8cc_source.html#l00044">McrtRtDispatchComputation.cc:44</a></div></div>
-<div class="ttc" id="ashared__mutex_8h_html"><div class="ttname"><a href="shared__mutex_8h.html">shared_mutex.h</a></div></div>
+<div class="ttc" id="aclassfauxstd_1_1shared__lock_html"><div class="ttname"><a href="classfauxstd_1_1shared__lock.html">fauxstd::shared_lock</a></div><div class="ttdef"><b>Definition:</b> shared_mutex.h:120</div></div>
+<div class="ttc" id="aclassfauxstd_1_1shared__mutex_html"><div class="ttname"><a href="classfauxstd_1_1shared__mutex.html">fauxstd::shared_mutex</a></div><div class="ttdef"><b>Definition:</b> shared_mutex.h:93</div></div>
+<div class="ttc" id="anamespacescene__rdl2_html"><div class="ttname"><a href="namespacescene__rdl2.html">scene_rdl2</a></div><div class="ttdef"><b>Definition:</b> McrtRtDispatchComputation.cc:44</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_54592004fde66bbc4b780960e14d69c6.html">render</a></li><li class="navelem"><a class="el" href="dir_16afeb4fe301969e2c5af3f2d782aad0.html">util</a></li><li class="navelem"><a class="el" href="_reader_writer_mutex_8h.html">ReaderWriterMutex.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_54592004fde66bbc4b780960e14d69c6.html">render</a></li><li class="navelem"><a class="el" href="dir_16afeb4fe301969e2c5af3f2d782aad0.html">util</a></li><li class="navelem"><b>ReaderWriterMutex.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

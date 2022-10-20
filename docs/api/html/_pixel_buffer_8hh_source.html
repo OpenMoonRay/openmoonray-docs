@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/common/fb_util/ispc/PixelBuffer.hh Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/common/fb_util/ispc/PixelBuffer.hh Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -93,18 +93,17 @@ $(document).ready(function(){initNavTree('_pixel_buffer_8hh_source.html',''); in
   <div class="headertitle"><div class="title">PixelBuffer.hh</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_pixel_buffer_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2020-2022 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"></span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/// @author Marianna Neubauer</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"></span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;scene_rdl2/common/platform/HybridUniformData.hh&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="_pixel_buffer_8hh.html#a791adbb2b03bf3b9d35ad916554b04b7">   12</a></span><span class="preprocessor">#define PIXELBUFFER_MEMBERS                     \</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define PIXELBUFFER_MEMBERS                     \</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">    HUD_ISPC_PAD(mPad, 16);                     \</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">    HUD_MEMBER(uint8_t *, mRawData);            \</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">    HUD_MEMBER(uint32_t, mWidth);               \</span></div>
@@ -112,7 +111,7 @@ $(document).ready(function(){initNavTree('_pixel_buffer_8hh_source.html',''); in
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">    HUD_MEMBER(uint32_t, mBytesAllocated);      \</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">    HUD_ARRAY(int32_t, mPad1, 7)</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="_pixel_buffer_8hh.html#ac0750282318e767403791bf23b667028">   20</a></span><span class="preprocessor">#define PIXELBUFFER_VALIDATION                  \</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define PIXELBUFFER_VALIDATION                  \</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">    HUD_BEGIN_VALIDATION(PixelBuffer);          \</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">    HUD_VALIDATE(PixelBuffer, mWidth);          \</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">    HUD_VALIDATE(PixelBuffer, mHeight);         \</span></div>
@@ -121,12 +120,12 @@ $(document).ready(function(){initNavTree('_pixel_buffer_8hh_source.html',''); in
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">    HUD_END_VALIDATION</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="_pixel_buffer_8hh.html#ae747cbcafedaf19e50354bfaaecb1aa7">   29</a></span><span class="preprocessor">#define VARIABLE_PIXELBUFFER_MEMBERS            \</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define VARIABLE_PIXELBUFFER_MEMBERS            \</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">    HUD_MEMBER(PixelBufferU8, mBuffer);         \</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">    HUD_MEMBER(Format, mFormat);                \</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">    HUD_ARRAY(int32_t, mPad2, 15)</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="_pixel_buffer_8hh.html#ae25866f267ce50178e75f3c6e08e788d">   34</a></span><span class="preprocessor">#define VARIABLE_PIXELBUFFER_VALIDATION         \</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#define VARIABLE_PIXELBUFFER_VALIDATION         \</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">    HUD_BEGIN_VALIDATION(VariablePixelBuffer);  \</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">    HUD_VALIDATE(VariablePixelBuffer, mBuffer); \</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">    HUD_VALIDATE(VariablePixelBuffer, mFormat); \</span></div>
@@ -142,7 +141,7 @@ $(document).ready(function(){initNavTree('_pixel_buffer_8hh_source.html',''); in
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_98bf6363159b156e9be2b7c097b1406b.html">common</a></li><li class="navelem"><a class="el" href="dir_eab50e84d6354c2815faf3dd0e1375d1.html">fb_util</a></li><li class="navelem"><a class="el" href="dir_e0ffd0f3e1b5a77fc566223664e689b0.html">ispc</a></li><li class="navelem"><a class="el" href="_pixel_buffer_8hh.html">PixelBuffer.hh</a></li>
+    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_98bf6363159b156e9be2b7c097b1406b.html">common</a></li><li class="navelem"><a class="el" href="dir_eab50e84d6354c2815faf3dd0e1375d1.html">fb_util</a></li><li class="navelem"><a class="el" href="dir_e0ffd0f3e1b5a77fc566223664e689b0.html">ispc</a></li><li class="navelem"><b>PixelBuffer.hh</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

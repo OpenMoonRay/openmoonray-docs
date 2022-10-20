@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: moonray::rt::GPUPoints Class Reference</title>
+<title>OpenMoonrayTEST #4: moonray::rt::GPUPoints Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -97,8 +97,6 @@ $(document).ready(function(){initNavTree('classmoonray_1_1rt_1_1_g_p_u_points.ht
   <div class="headertitle"><div class="title">moonray::rt::GPUPoints Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_g_p_u_primitive_8h_source.html">GPUPrimitive.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for moonray::rt::GPUPoints:</div>
 <div class="dyncontent">
@@ -116,36 +114,51 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a51e9fb153a5c9ac647fc9174adbf8464"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c1e5cbeb8ac10d2291a4a197e0ad6cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_points.html#a9c1e5cbeb8ac10d2291a4a197e0ad6cd">freeHostMemory</a> () override</td></tr>
 <tr class="separator:a9c1e5cbeb8ac10d2291a4a197e0ad6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c59e50abfe2f2a0d753e3665d490d3"><td class="memItemLeft" align="right" valign="top"><a id="ac1c59e50abfe2f2a0d753e3665d490d3" name="ac1c59e50abfe2f2a0d753e3665d490d3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>getPrimitiveAabbs</b> (std::vector&lt; OptixAabb &gt; *aabbs) const =0</td></tr>
+<tr class="separator:ac1c59e50abfe2f2a0d753e3665d490d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c8f9cef645b36d46e7011d39a533b5"><td class="memItemLeft" align="right" valign="top"><a id="a39c8f9cef645b36d46e7011d39a533b5" name="a39c8f9cef645b36d46e7011d39a533b5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>freeHostMemory</b> ()</td></tr>
+<tr class="separator:a39c8f9cef645b36d46e7011d39a533b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a613ef1afae5d96c61017d2e11174dea1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_points.html#a613ef1afae5d96c61017d2e11174dea1">mMotionSamplesCount</a></td></tr>
+<tr class="memitem:a613ef1afae5d96c61017d2e11174dea1"><td class="memItemLeft" align="right" valign="top"><a id="a613ef1afae5d96c61017d2e11174dea1" name="a613ef1afae5d96c61017d2e11174dea1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>mMotionSamplesCount</b></td></tr>
 <tr class="separator:a613ef1afae5d96c61017d2e11174dea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4a96588fb2b6b72f8ff0ffd7d9c274e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_points.html#ae4a96588fb2b6b72f8ff0ffd7d9c274e">mHostPoints</a></td></tr>
+<tr class="memitem:ae4a96588fb2b6b72f8ff0ffd7d9c274e"><td class="memItemLeft" align="right" valign="top"><a id="ae4a96588fb2b6b72f8ff0ffd7d9c274e" name="ae4a96588fb2b6b72f8ff0ffd7d9c274e"></a>
+std::vector&lt; float4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mHostPoints</b></td></tr>
 <tr class="separator:ae4a96588fb2b6b72f8ff0ffd7d9c274e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8aca9049f73bbbba08c3fafd9ba262aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_buffer.html">GPUBuffer</a>&lt; float4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_points.html#a8aca9049f73bbbba08c3fafd9ba262aa">mPoints</a></td></tr>
+<tr class="memitem:a8aca9049f73bbbba08c3fafd9ba262aa"><td class="memItemLeft" align="right" valign="top"><a id="a8aca9049f73bbbba08c3fafd9ba262aa" name="a8aca9049f73bbbba08c3fafd9ba262aa"></a>
+<a class="el" href="classmoonray_1_1rt_1_1_g_p_u_buffer.html">GPUBuffer</a>&lt; float4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mPoints</b></td></tr>
 <tr class="separator:a8aca9049f73bbbba08c3fafd9ba262aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cd06c116fc8c4141750401dfb0217a3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_primitive.html#a3cd06c116fc8c4141750401dfb0217a3">mName</a></td></tr>
-<tr class="separator:a3cd06c116fc8c4141750401dfb0217a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d0a01d44019791c7e5f244054f50c0a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_primitive.html#a2d0a01d44019791c7e5f244054f50c0a">mInputFlags</a></td></tr>
-<tr class="separator:a2d0a01d44019791c7e5f244054f50c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e6fd0e06c00c160f5a2571129a716ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_primitive.html#a3e6fd0e06c00c160f5a2571129a716ae">mIsSingleSided</a></td></tr>
-<tr class="separator:a3e6fd0e06c00c160f5a2571129a716ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd68e193e25a9670544627759e794289"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_primitive.html#acd68e193e25a9670544627759e794289">mIsNormalReversed</a></td></tr>
-<tr class="separator:acd68e193e25a9670544627759e794289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28df8e0c830d222749202111e64ef360"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_primitive.html#a28df8e0c830d222749202111e64ef360">mVisibleShadow</a></td></tr>
-<tr class="separator:a28df8e0c830d222749202111e64ef360"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e2958eef12e991327a1ebc56bc0684f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_buffer.html">GPUBuffer</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_primitive.html#a1e2958eef12e991327a1ebc56bc0684f">mAssignmentIds</a></td></tr>
-<tr class="separator:a1e2958eef12e991327a1ebc56bc0684f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a636e54094cdf1585714cd4f4a082e339"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_buffer.html">GPUBuffer</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_primitive.html#a636e54094cdf1585714cd4f4a082e339">mShadowLinkAssignmentIds</a></td></tr>
-<tr class="separator:a636e54094cdf1585714cd4f4a082e339"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a427e3ba30861ec05ce2fa127d0f1e40d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_buffer.html">GPUBuffer</a>&lt; unsigned long long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_primitive.html#a427e3ba30861ec05ce2fa127d0f1e40d">mShadowLinkLightIds</a></td></tr>
-<tr class="separator:a427e3ba30861ec05ce2fa127d0f1e40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classmoonray_1_1rt_1_1_g_p_u_primitive.html">moonray::rt::GPUPrimitive</a></td></tr>
+<tr class="memitem:a3cd06c116fc8c4141750401dfb0217a3 inherit pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive"><td class="memItemLeft" align="right" valign="top"><a id="a3cd06c116fc8c4141750401dfb0217a3" name="a3cd06c116fc8c4141750401dfb0217a3"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>mName</b></td></tr>
+<tr class="separator:a3cd06c116fc8c4141750401dfb0217a3 inherit pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0a01d44019791c7e5f244054f50c0a inherit pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive"><td class="memItemLeft" align="right" valign="top"><a id="a2d0a01d44019791c7e5f244054f50c0a" name="a2d0a01d44019791c7e5f244054f50c0a"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>mInputFlags</b></td></tr>
+<tr class="separator:a2d0a01d44019791c7e5f244054f50c0a inherit pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e6fd0e06c00c160f5a2571129a716ae inherit pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive"><td class="memItemLeft" align="right" valign="top"><a id="a3e6fd0e06c00c160f5a2571129a716ae" name="a3e6fd0e06c00c160f5a2571129a716ae"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>mIsSingleSided</b></td></tr>
+<tr class="separator:a3e6fd0e06c00c160f5a2571129a716ae inherit pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd68e193e25a9670544627759e794289 inherit pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive"><td class="memItemLeft" align="right" valign="top"><a id="acd68e193e25a9670544627759e794289" name="acd68e193e25a9670544627759e794289"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>mIsNormalReversed</b></td></tr>
+<tr class="separator:acd68e193e25a9670544627759e794289 inherit pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28df8e0c830d222749202111e64ef360 inherit pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive"><td class="memItemLeft" align="right" valign="top"><a id="a28df8e0c830d222749202111e64ef360" name="a28df8e0c830d222749202111e64ef360"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>mVisibleShadow</b></td></tr>
+<tr class="separator:a28df8e0c830d222749202111e64ef360 inherit pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2958eef12e991327a1ebc56bc0684f inherit pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive"><td class="memItemLeft" align="right" valign="top"><a id="a1e2958eef12e991327a1ebc56bc0684f" name="a1e2958eef12e991327a1ebc56bc0684f"></a>
+<a class="el" href="classmoonray_1_1rt_1_1_g_p_u_buffer.html">GPUBuffer</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mAssignmentIds</b></td></tr>
+<tr class="separator:a1e2958eef12e991327a1ebc56bc0684f inherit pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a636e54094cdf1585714cd4f4a082e339 inherit pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive"><td class="memItemLeft" align="right" valign="top"><a id="a636e54094cdf1585714cd4f4a082e339" name="a636e54094cdf1585714cd4f4a082e339"></a>
+<a class="el" href="classmoonray_1_1rt_1_1_g_p_u_buffer.html">GPUBuffer</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mShadowLinkAssignmentIds</b></td></tr>
+<tr class="separator:a636e54094cdf1585714cd4f4a082e339 inherit pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a427e3ba30861ec05ce2fa127d0f1e40d inherit pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive"><td class="memItemLeft" align="right" valign="top"><a id="a427e3ba30861ec05ce2fa127d0f1e40d" name="a427e3ba30861ec05ce2fa127d0f1e40d"></a>
+<a class="el" href="classmoonray_1_1rt_1_1_g_p_u_buffer.html">GPUBuffer</a>&lt; unsigned long long &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mShadowLinkLightIds</b></td></tr>
+<tr class="separator:a427e3ba30861ec05ce2fa127d0f1e40d inherit pub_attribs_classmoonray_1_1rt_1_1_g_p_u_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_g_p_u_primitive_8h_source.html#l00139">139</a> of file <a class="el" href="_g_p_u_primitive_8h_source.html">GPUPrimitive.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9c1e5cbeb8ac10d2291a4a197e0ad6cd" name="a9c1e5cbeb8ac10d2291a4a197e0ad6cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c1e5cbeb8ac10d2291a4a197e0ad6cd">&#9670;&#160;</a></span>freeHostMemory()</h2>
 
@@ -169,15 +182,8 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classmoonray_1_1rt_1_1_g_p_u_custom_primitive.html#a39c8f9cef645b36d46e7011d39a533b5">moonray::rt::GPUCustomPrimitive</a>.</p>
+<p>Reimplemented from <a class="el" href="classmoonray_1_1rt_1_1_g_p_u_custom_primitive.html">moonray::rt::GPUCustomPrimitive</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_g_p_u_primitive_8cc_source.html#l00076">76</a> of file <a class="el" href="_g_p_u_primitive_8cc_source.html">GPUPrimitive.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   77</span>{</div>
-<div class="line"><span class="lineno">   78</span>    <a class="code hl_function" href="namespacemoonray_1_1rt.html#a5fb0204ffd3313e82b3b51c0539dc73a">clearMemory</a>(<a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#ae4a96588fb2b6b72f8ff0ffd7d9c274e">mHostPoints</a>);</div>
-<div class="line"><span class="lineno">   79</span>}</div>
-<div class="ttc" id="aclassmoonray_1_1rt_1_1_g_p_u_points_html_ae4a96588fb2b6b72f8ff0ffd7d9c274e"><div class="ttname"><a href="classmoonray_1_1rt_1_1_g_p_u_points.html#ae4a96588fb2b6b72f8ff0ffd7d9c274e">moonray::rt::GPUPoints::mHostPoints</a></div><div class="ttdeci">std::vector&lt; float4 &gt; mHostPoints</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_primitive_8h_source.html#l00149">GPUPrimitive.h:149</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1rt_html_a5fb0204ffd3313e82b3b51c0539dc73a"><div class="ttname"><a href="namespacemoonray_1_1rt.html#a5fb0204ffd3313e82b3b51c0539dc73a">moonray::rt::clearMemory</a></div><div class="ttdeci">void clearMemory(std::vector&lt; T &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_primitive_8cc_source.html#l00013">GPUPrimitive.cc:13</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a51e9fb153a5c9ac647fc9174adbf8464" name="a51e9fb153a5c9ac647fc9174adbf8464"></a>
@@ -204,278 +210,10 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classmoonray_1_1rt_1_1_g_p_u_custom_primitive.html#ac1c59e50abfe2f2a0d753e3665d490d3">moonray::rt::GPUCustomPrimitive</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_primitive_8cc_source.html#l00057">57</a> of file <a class="el" href="_g_p_u_primitive_8cc_source.html">GPUPrimitive.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   58</span>{</div>
-<div class="line"><span class="lineno">   59</span>    aabbs-&gt;resize(<a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#ae4a96588fb2b6b72f8ff0ffd7d9c274e">mHostPoints</a>.size() / <a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#a613ef1afae5d96c61017d2e11174dea1">mMotionSamplesCount</a>);</div>
-<div class="line"><span class="lineno">   60</span> </div>
-<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#ae4a96588fb2b6b72f8ff0ffd7d9c274e">mHostPoints</a>.size() / <a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#a613ef1afae5d96c61017d2e11174dea1">mMotionSamplesCount</a>; i++) {</div>
-<div class="line"><span class="lineno">   62</span>        OptixAabb &amp;bb = (*aabbs)[i];</div>
-<div class="line"><span class="lineno">   63</span>        bb = <a class="code hl_function" href="_g_p_u_math_8h.html#a5f7970132612e4be61c13a005d84b127">emptyAabb</a>();</div>
-<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ms = 0; ms &lt; <a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#a613ef1afae5d96c61017d2e11174dea1">mMotionSamplesCount</a>; ms++) {</div>
-<div class="line"><span class="lineno">   65</span>            <span class="keywordtype">size_t</span> idx = i * <a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#a613ef1afae5d96c61017d2e11174dea1">mMotionSamplesCount</a> + ms;</div>
-<div class="line"><span class="lineno">   66</span>            float3 <a class="code hl_variable" href="test__math___mat3_8cc.html#a9241b76126f89f94c2c3ece373af7fee">point</a> = <a class="code hl_function" href="_g_p_u_math_8h.html#af0b6a520b26caa2922d64fec42af9077">make_float3</a>(<a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#ae4a96588fb2b6b72f8ff0ffd7d9c274e">mHostPoints</a>[idx]);</div>
-<div class="line"><span class="lineno">   67</span>            <span class="keywordtype">float</span> radius = <a class="code hl_variable" href="classmoonray_1_1rt_1_1_g_p_u_points.html#ae4a96588fb2b6b72f8ff0ffd7d9c274e">mHostPoints</a>[idx].w;</div>
-<div class="line"><span class="lineno">   68</span>            OptixAabb sampleBB = {<a class="code hl_variable" href="test__math___mat3_8cc.html#a9241b76126f89f94c2c3ece373af7fee">point</a>.x - radius, <a class="code hl_variable" href="test__math___mat3_8cc.html#a9241b76126f89f94c2c3ece373af7fee">point</a>.y - radius, <a class="code hl_variable" href="test__math___mat3_8cc.html#a9241b76126f89f94c2c3ece373af7fee">point</a>.z - radius,</div>
-<div class="line"><span class="lineno">   69</span>                                  <a class="code hl_variable" href="test__math___mat3_8cc.html#a9241b76126f89f94c2c3ece373af7fee">point</a>.x + radius, <a class="code hl_variable" href="test__math___mat3_8cc.html#a9241b76126f89f94c2c3ece373af7fee">point</a>.y + radius, <a class="code hl_variable" href="test__math___mat3_8cc.html#a9241b76126f89f94c2c3ece373af7fee">point</a>.z + radius};</div>
-<div class="line"><span class="lineno">   70</span>            bb = <a class="code hl_function" href="_g_p_u_math_8h.html#ade4f32927b6a2462fb915e872f855a65">combineAabbs</a>(bb, sampleBB);</div>
-<div class="line"><span class="lineno">   71</span>        }</div>
-<div class="line"><span class="lineno">   72</span>    }</div>
-<div class="line"><span class="lineno">   73</span>}</div>
-<div class="ttc" id="a_g_p_u_math_8h_html_a5f7970132612e4be61c13a005d84b127"><div class="ttname"><a href="_g_p_u_math_8h.html#a5f7970132612e4be61c13a005d84b127">emptyAabb</a></div><div class="ttdeci">__host__ __device__ OptixAabb emptyAabb()</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00239">GPUMath.h:239</a></div></div>
-<div class="ttc" id="a_g_p_u_math_8h_html_ade4f32927b6a2462fb915e872f855a65"><div class="ttname"><a href="_g_p_u_math_8h.html#ade4f32927b6a2462fb915e872f855a65">combineAabbs</a></div><div class="ttdeci">__host__ __device__ OptixAabb combineAabbs(const OptixAabb &amp;bb0, const OptixAabb &amp;bb1)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00256">GPUMath.h:256</a></div></div>
-<div class="ttc" id="a_g_p_u_math_8h_html_af0b6a520b26caa2922d64fec42af9077"><div class="ttname"><a href="_g_p_u_math_8h.html#af0b6a520b26caa2922d64fec42af9077">make_float3</a></div><div class="ttdeci">__host__ __device__ float3 make_float3(const float4 &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_math_8h_source.html#l00225">GPUMath.h:225</a></div></div>
-<div class="ttc" id="aclassmoonray_1_1rt_1_1_g_p_u_points_html_a613ef1afae5d96c61017d2e11174dea1"><div class="ttname"><a href="classmoonray_1_1rt_1_1_g_p_u_points.html#a613ef1afae5d96c61017d2e11174dea1">moonray::rt::GPUPoints::mMotionSamplesCount</a></div><div class="ttdeci">int mMotionSamplesCount</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_u_primitive_8h_source.html#l00146">GPUPrimitive.h:146</a></div></div>
-<div class="ttc" id="atest__math___mat3_8cc_html_a9241b76126f89f94c2c3ece373af7fee"><div class="ttname"><a href="test__math___mat3_8cc.html#a9241b76126f89f94c2c3ece373af7fee">point</a></div><div class="ttdeci">const std::vector&lt; M &gt; const std::vector&lt; M &gt; const std::vector&lt; V &gt; &amp; point</div><div class="ttdef"><b>Definition:</b> <a href="test__math___mat3_8cc_source.html#l00066">test_math_Mat3.cc:66</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1e2958eef12e991327a1ebc56bc0684f" name="a1e2958eef12e991327a1ebc56bc0684f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e2958eef12e991327a1ebc56bc0684f">&#9670;&#160;</a></span>mAssignmentIds</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_buffer.html">GPUBuffer</a>&lt;int&gt; moonray::rt::GPUPrimitive::mAssignmentIds</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_primitive_8h_source.html#l00033">33</a> of file <a class="el" href="_g_p_u_primitive_8h_source.html">GPUPrimitive.h</a>.</p>
+<p>Implements <a class="el" href="classmoonray_1_1rt_1_1_g_p_u_custom_primitive.html">moonray::rt::GPUCustomPrimitive</a>.</p>
 
 </div>
 </div>
-<a id="ae4a96588fb2b6b72f8ff0ffd7d9c274e" name="ae4a96588fb2b6b72f8ff0ffd7d9c274e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4a96588fb2b6b72f8ff0ffd7d9c274e">&#9670;&#160;</a></span>mHostPoints</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;float4&gt; moonray::rt::GPUPoints::mHostPoints</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_primitive_8h_source.html#l00149">149</a> of file <a class="el" href="_g_p_u_primitive_8h_source.html">GPUPrimitive.h</a>.</p>
-
-</div>
-</div>
-<a id="a2d0a01d44019791c7e5f244054f50c0a" name="a2d0a01d44019791c7e5f244054f50c0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d0a01d44019791c7e5f244054f50c0a">&#9670;&#160;</a></span>mInputFlags</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int moonray::rt::GPUPrimitive::mInputFlags</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_primitive_8h_source.html#l00027">27</a> of file <a class="el" href="_g_p_u_primitive_8h_source.html">GPUPrimitive.h</a>.</p>
-
-</div>
-</div>
-<a id="acd68e193e25a9670544627759e794289" name="acd68e193e25a9670544627759e794289"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd68e193e25a9670544627759e794289">&#9670;&#160;</a></span>mIsNormalReversed</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool moonray::rt::GPUPrimitive::mIsNormalReversed</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_primitive_8h_source.html#l00029">29</a> of file <a class="el" href="_g_p_u_primitive_8h_source.html">GPUPrimitive.h</a>.</p>
-
-</div>
-</div>
-<a id="a3e6fd0e06c00c160f5a2571129a716ae" name="a3e6fd0e06c00c160f5a2571129a716ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e6fd0e06c00c160f5a2571129a716ae">&#9670;&#160;</a></span>mIsSingleSided</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool moonray::rt::GPUPrimitive::mIsSingleSided</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_primitive_8h_source.html#l00028">28</a> of file <a class="el" href="_g_p_u_primitive_8h_source.html">GPUPrimitive.h</a>.</p>
-
-</div>
-</div>
-<a id="a613ef1afae5d96c61017d2e11174dea1" name="a613ef1afae5d96c61017d2e11174dea1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a613ef1afae5d96c61017d2e11174dea1">&#9670;&#160;</a></span>mMotionSamplesCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int moonray::rt::GPUPoints::mMotionSamplesCount</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_primitive_8h_source.html#l00146">146</a> of file <a class="el" href="_g_p_u_primitive_8h_source.html">GPUPrimitive.h</a>.</p>
-
-</div>
-</div>
-<a id="a3cd06c116fc8c4141750401dfb0217a3" name="a3cd06c116fc8c4141750401dfb0217a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cd06c116fc8c4141750401dfb0217a3">&#9670;&#160;</a></span>mName</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string moonray::rt::GPUPrimitive::mName</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_primitive_8h_source.html#l00026">26</a> of file <a class="el" href="_g_p_u_primitive_8h_source.html">GPUPrimitive.h</a>.</p>
-
-</div>
-</div>
-<a id="a8aca9049f73bbbba08c3fafd9ba262aa" name="a8aca9049f73bbbba08c3fafd9ba262aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8aca9049f73bbbba08c3fafd9ba262aa">&#9670;&#160;</a></span>mPoints</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_buffer.html">GPUBuffer</a>&lt;float4&gt; moonray::rt::GPUPoints::mPoints</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_primitive_8h_source.html#l00152">152</a> of file <a class="el" href="_g_p_u_primitive_8h_source.html">GPUPrimitive.h</a>.</p>
-
-</div>
-</div>
-<a id="a636e54094cdf1585714cd4f4a082e339" name="a636e54094cdf1585714cd4f4a082e339"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a636e54094cdf1585714cd4f4a082e339">&#9670;&#160;</a></span>mShadowLinkAssignmentIds</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_buffer.html">GPUBuffer</a>&lt;int&gt; moonray::rt::GPUPrimitive::mShadowLinkAssignmentIds</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_primitive_8h_source.html#l00034">34</a> of file <a class="el" href="_g_p_u_primitive_8h_source.html">GPUPrimitive.h</a>.</p>
-
-</div>
-</div>
-<a id="a427e3ba30861ec05ce2fa127d0f1e40d" name="a427e3ba30861ec05ce2fa127d0f1e40d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a427e3ba30861ec05ce2fa127d0f1e40d">&#9670;&#160;</a></span>mShadowLinkLightIds</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmoonray_1_1rt_1_1_g_p_u_buffer.html">GPUBuffer</a>&lt;unsigned long long&gt; moonray::rt::GPUPrimitive::mShadowLinkLightIds</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_primitive_8h_source.html#l00035">35</a> of file <a class="el" href="_g_p_u_primitive_8h_source.html">GPUPrimitive.h</a>.</p>
-
-</div>
-</div>
-<a id="a28df8e0c830d222749202111e64ef360" name="a28df8e0c830d222749202111e64ef360"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28df8e0c830d222749202111e64ef360">&#9670;&#160;</a></span>mVisibleShadow</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool moonray::rt::GPUPrimitive::mVisibleShadow</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_g_p_u_primitive_8h_source.html#l00030">30</a> of file <a class="el" href="_g_p_u_primitive_8h_source.html">GPUPrimitive.h</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/rt/gpu/<a class="el" href="_g_p_u_primitive_8h_source.html">GPUPrimitive.h</a></li>
-<li>C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/rt/gpu/<a class="el" href="_g_p_u_primitive_8cc_source.html">GPUPrimitive.cc</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

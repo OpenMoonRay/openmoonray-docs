@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/handlers/ShadeBundleHandler.h Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/handlers/ShadeBundleHandler.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -93,13 +93,13 @@ $(document).ready(function(){initNavTree('_shade_bundle_handler_8h_source.html',
   <div class="headertitle"><div class="title">ShadeBundleHandler.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_shade_bundle_handler_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2015-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="_bundle_8h.html">rendering/mcrt_common/Bundle.h</a>&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;rendering/mcrt_common/Bundle.h&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacemoonray.html">moonray</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_shade_bundle_handler_8h_source.html',
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// This function is responsible generating differential geometry, evalating</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// shade points and routing BSDFs through to the integrator.</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacemoonray_1_1pbr.html#a8181119820dd1a4b1cc08ad5913ec767">shadeBundleHandler</a>(mcrt_common::ThreadLocalState *tls, <span class="keywordtype">unsigned</span> numEntries,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">void</span> shadeBundleHandler(mcrt_common::ThreadLocalState *tls, <span class="keywordtype">unsigned</span> numEntries,</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                        shading::SortedRayState *entries, <span class="keywordtype">void</span> *userData);</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>} <span class="comment">// namespace pbr</span></div>
@@ -120,15 +120,13 @@ $(document).ready(function(){initNavTree('_shade_bundle_handler_8h_source.html',
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// TM and (c) 2015-2021 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// duly authorized representative is prohibited.</span></div>
-<div class="ttc" id="a_bundle_8h_html"><div class="ttname"><a href="_bundle_8h.html">Bundle.h</a></div></div>
-<div class="ttc" id="anamespacemoonray_1_1pbr_html_a8181119820dd1a4b1cc08ad5913ec767"><div class="ttname"><a href="namespacemoonray_1_1pbr.html#a8181119820dd1a4b1cc08ad5913ec767">moonray::pbr::shadeBundleHandler</a></div><div class="ttdeci">void shadeBundleHandler(mcrt_common::ThreadLocalState *tls, unsigned numEntries, shading::SortedRayState *entries, void *userData)</div><div class="ttdef"><b>Definition:</b> <a href="_shade_bundle_handler_8cc_source.html#l00091">ShadeBundleHandler.cc:91</a></div></div>
-<div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> <a href="moonray_8cc_source.html#l00019">moonray.cc:19</a></div></div>
+<div class="ttc" id="anamespacemoonray_html"><div class="ttname"><a href="namespacemoonray.html">moonray</a></div><div class="ttdef"><b>Definition:</b> moonray.cc:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_26bb93814b9e3833617d1a6c0b0e1fb3.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_057a8e804fa21f5c97fdff16c5652908.html">lib</a></li><li class="navelem"><a class="el" href="dir_1baa063aa8b2a36fe6b5318d1cb38099.html">rendering</a></li><li class="navelem"><a class="el" href="dir_8c75c31d310b339fa1b633378be7da6a.html">pbr</a></li><li class="navelem"><a class="el" href="dir_7d9c8fce6fd5810ac2ffc901d7c38d31.html">handlers</a></li><li class="navelem"><a class="el" href="_shade_bundle_handler_8h.html">ShadeBundleHandler.h</a></li>
+    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_26bb93814b9e3833617d1a6c0b0e1fb3.html">moonray-main</a></li><li class="navelem"><a class="el" href="dir_057a8e804fa21f5c97fdff16c5652908.html">lib</a></li><li class="navelem"><a class="el" href="dir_1baa063aa8b2a36fe6b5318d1cb38099.html">rendering</a></li><li class="navelem"><a class="el" href="dir_8c75c31d310b339fa1b633378be7da6a.html">pbr</a></li><li class="navelem"><a class="el" href="dir_7d9c8fce6fd5810ac2ffc901d7c38d31.html">handlers</a></li><li class="navelem"><b>ShadeBundleHandler.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>

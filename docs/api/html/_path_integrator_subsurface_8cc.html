@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/integrator/PathIntegratorSubsurface.cc File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/pbr/integrator/PathIntegratorSubsurface.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -97,64 +97,63 @@ $(document).ready(function(){initNavTree('_path_integrator_subsurface_8cc.html',
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_path_integrator_8h_source.html">PathIntegrator.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_path_integrator_util_8h_source.html">PathIntegratorUtil.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_volume_transmittance_8h_source.html">VolumeTransmittance.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2pbr_2camera_2_camera_8h_source.html">rendering/pbr/camera/Camera.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_aov_8h_source.html">rendering/pbr/core/Aov.h</a>&gt;</code><br />
+<code>#include &quot;PathIntegratorUtil.h&quot;</code><br />
+<code>#include &quot;VolumeTransmittance.h&quot;</code><br />
+<code>#include &lt;rendering/pbr/camera/Camera.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/core/Aov.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2pbr_2core_2_constants_8h_source.html">rendering/pbr/core/Constants.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_debug_ray_8h_source.html">rendering/pbr/core/DebugRay.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_pbr_t_l_state_8h_source.html">rendering/pbr/core/PbrTLState.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_ray_state_8h_source.html">rendering/pbr/core/RayState.h</a>&gt;</code><br />
+<code>#include &lt;rendering/pbr/core/DebugRay.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/core/PbrTLState.h&gt;</code><br />
+<code>#include &lt;rendering/pbr/core/RayState.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_scene_8h_source.html">rendering/pbr/core/Scene.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="lib_2rendering_2pbr_2core_2util_8h_source.html">rendering/pbr/core/Util.h</a>&gt;</code><br />
+<code>#include &lt;rendering/pbr/core/Util.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_volume_phase_8h_source.html">rendering/pbr/core/VolumePhase.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2pbr_2light_2_light_8h_source.html">rendering/pbr/light/Light.h</a>&gt;</code><br />
+<code>#include &lt;rendering/pbr/light/Light.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2pbr_2light_2_light_set_8h_source.html">rendering/pbr/light/LightSet.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="bvh_2shading_2_state_8h_source.html">rendering/bvh/shading/State.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_intersection_init_8h_source.html">rendering/geom/IntersectionInit.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_geom_t_l_state_8h_source.html">rendering/geom/prim/GeomTLState.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_ray_8h_source.html">rendering/mcrt_common/Ray.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_intersection_8h_source.html">rendering/bvh/shading/Intersection.h</a>&gt;</code><br />
+<code>#include &lt;rendering/geom/IntersectionInit.h&gt;</code><br />
+<code>#include &lt;rendering/geom/prim/GeomTLState.h&gt;</code><br />
+<code>#include &lt;rendering/mcrt_common/Ray.h&gt;</code><br />
+<code>#include &lt;rendering/bvh/shading/Intersection.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_bsdf_lambert_8h_source.html">rendering/shading/bsdf/BsdfLambert.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_bsdf_slice_8h_source.html">rendering/shading/bsdf/BsdfSlice.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_fresnel_8h_source.html">rendering/shading/bsdf/Fresnel.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_bssrdf_8h_source.html">rendering/shading/bssrdf/Bssrdf.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_volume_subsurface_8h_source.html">rendering/shading/bssrdf/VolumeSubsurface.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="moonray-main_2lib_2rendering_2shading_2_material_8h_source.html">rendering/shading/Material.h</a>&gt;</code><br />
+<code>#include &lt;rendering/shading/Material.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/scene/rdl2/VisibilityFlags.h&gt;</code><br />
-</div>
-<p><a href="_path_integrator_subsurface_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1pbr"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html">moonray::pbr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3762a10428d834c48deaf9dfe0c33958"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a3762a10428d834c48deaf9dfe0c33958">moonray::pbr::evalFresnel</a> (const Fresnel *fresnel, const <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;N, const <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;w)</td></tr>
-<tr class="separator:a3762a10428d834c48deaf9dfe0c33958"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c04c37044ffab9669bcf108971e0145"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a1c04c37044ffab9669bcf108971e0145">moonray::pbr::canSubstituteSubsurface</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> sssRadius, const shading::Intersection &amp;isect)</td></tr>
+<tr class="memitem:a1c04c37044ffab9669bcf108971e0145"><td class="memItemLeft" align="right" valign="top"><a id="a1c04c37044ffab9669bcf108971e0145" name="a1c04c37044ffab9669bcf108971e0145"></a>
+finline bool&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::canSubstituteSubsurface</b> (float sssRadius, const shading::Intersection &amp;isect)</td></tr>
 <tr class="separator:a1c04c37044ffab9669bcf108971e0145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a597c5fc48ff7acda97e68a3990c59a2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a597c5fc48ff7acda97e68a3990c59a2c">moonray::pbr::sampleDistanceZeroScatter</a> (const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;channelWeights, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;sigmaT, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> uChannel, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> uDistance, <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;tr, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> &amp;pdfDistance)</td></tr>
+<tr class="memitem:a597c5fc48ff7acda97e68a3990c59a2c"><td class="memItemLeft" align="right" valign="top"><a id="a597c5fc48ff7acda97e68a3990c59a2c" name="a597c5fc48ff7acda97e68a3990c59a2c"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::sampleDistanceZeroScatter</b> (const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;channelWeights, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;sigmaT, float uChannel, float uDistance, <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;tr, float &amp;pdfDistance)</td></tr>
 <tr class="separator:a597c5fc48ff7acda97e68a3990c59a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a999c244c1eefd8cc0a53cd5a3bee685d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a999c244c1eefd8cc0a53cd5a3bee685d">moonray::pbr::sampleDistanceMultiScatter</a> (const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;sigmaT, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;sigmaTPrime, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;channelSamplingWeights, int chIndex, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> uDistance, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> NdotDir, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;dwivediV0, bool choseDwivediSampling, <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;tr, <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;pdfDistance, <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;pdfDistanceDwivedi)</td></tr>
+<tr class="memitem:a999c244c1eefd8cc0a53cd5a3bee685d"><td class="memItemLeft" align="right" valign="top"><a id="a999c244c1eefd8cc0a53cd5a3bee685d" name="a999c244c1eefd8cc0a53cd5a3bee685d"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::sampleDistanceMultiScatter</b> (const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;sigmaT, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;sigmaTPrime, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;channelSamplingWeights, int chIndex, float uDistance, float NdotDir, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;dwivediV0, bool choseDwivediSampling, <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;tr, <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;pdfDistance, <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;pdfDistanceDwivedi)</td></tr>
 <tr class="separator:a999c244c1eefd8cc0a53cd5a3bee685d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b4f53e9fff07b6b9889281712699e4b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a3b4f53e9fff07b6b9889281712699e4b">moonray::pbr::sampleChannel</a> (const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;channelWeights, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> uChannel, <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;channelSamplingWeights)</td></tr>
+<tr class="memitem:a3b4f53e9fff07b6b9889281712699e4b"><td class="memItemLeft" align="right" valign="top"><a id="a3b4f53e9fff07b6b9889281712699e4b" name="a3b4f53e9fff07b6b9889281712699e4b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::sampleChannel</b> (const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;channelWeights, float uChannel, <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;channelSamplingWeights)</td></tr>
 <tr class="separator:a3b4f53e9fff07b6b9889281712699e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a910bfb7eee1d3fc473d17ce928be3dbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a910bfb7eee1d3fc473d17ce928be3dbd">moonray::pbr::sampleDirection</a> (const <a class="el" href="namespacescene__rdl2_1_1math.html#a5a45b8a9116842cc13f6cd2c2202b8f1">scene_rdl2::math::Vec2f</a> &amp;uDir, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> backwardDirectionSample, int chIndex, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> phaseSamplingWeight, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> wBackwardSampling, const VolumePhase &amp;sssPhaseFunction, const Ray &amp;sssRay, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;dwivediV0, const <a class="el" href="classscene__rdl2_1_1math_1_1_reference_frame.html">scene_rdl2::math::ReferenceFrame</a> &amp;inReferenceFrame, bool &amp;choseDwivediSampling, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> &amp;outputCosine, <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;outputDir)</td></tr>
+<tr class="memitem:a910bfb7eee1d3fc473d17ce928be3dbd"><td class="memItemLeft" align="right" valign="top"><a id="a910bfb7eee1d3fc473d17ce928be3dbd" name="a910bfb7eee1d3fc473d17ce928be3dbd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::sampleDirection</b> (const <a class="el" href="structscene__rdl2_1_1math_1_1_vec2.html">scene_rdl2::math::Vec2f</a> &amp;uDir, float backwardDirectionSample, int chIndex, float phaseSamplingWeight, float wBackwardSampling, const VolumePhase &amp;sssPhaseFunction, const Ray &amp;sssRay, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;dwivediV0, const <a class="el" href="classscene__rdl2_1_1math_1_1_reference_frame.html">scene_rdl2::math::ReferenceFrame</a> &amp;inReferenceFrame, bool &amp;choseDwivediSampling, float &amp;outputCosine, <a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">scene_rdl2::math::Vec3f</a> &amp;outputDir)</td></tr>
 <tr class="separator:a910bfb7eee1d3fc473d17ce928be3dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c8feeebb96af0fe0c67c0cfd91a406d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#a6c8feeebb96af0fe0c67c0cfd91a406d">moonray::pbr::calculateOneSamplePDF</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> NdotDir, const <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;wo, const <a class="el" href="namespacescene__rdl2_1_1math.html#aed955464c560f29d9c8e8595baf58c09">scene_rdl2::math::Vec3f</a> &amp;wi, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;dwivediV0, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;dwivediNormalization, const VolumePhase &amp;sssPhaseFunction, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;wChannelSampling, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> phaseSamplingWeight, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;pdfDistance, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;pdfDistanceDwivedi)</td></tr>
+<tr class="memitem:a6c8feeebb96af0fe0c67c0cfd91a406d"><td class="memItemLeft" align="right" valign="top"><a id="a6c8feeebb96af0fe0c67c0cfd91a406d" name="a6c8feeebb96af0fe0c67c0cfd91a406d"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::calculateOneSamplePDF</b> (float NdotDir, const <a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">scene_rdl2::math::Vec3f</a> &amp;wo, const <a class="el" href="structscene__rdl2_1_1math_1_1_vec3.html">scene_rdl2::math::Vec3f</a> &amp;wi, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;dwivediV0, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;dwivediNormalization, const VolumePhase &amp;sssPhaseFunction, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;wChannelSampling, float phaseSamplingWeight, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;pdfDistance, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;pdfDistanceDwivedi)</td></tr>
 <tr class="separator:a6c8feeebb96af0fe0c67c0cfd91a406d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebec12f77edbc3f6a57f9cd8eb643030"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1pbr.html#aebec12f77edbc3f6a57f9cd8eb643030">moonray::pbr::isValidIntersection</a> (const Intersection &amp;isect, const VolumeSubsurface &amp;volumeSubsurface)</td></tr>
+<tr class="memitem:aebec12f77edbc3f6a57f9cd8eb643030"><td class="memItemLeft" align="right" valign="top"><a id="aebec12f77edbc3f6a57f9cd8eb643030" name="aebec12f77edbc3f6a57f9cd8eb643030"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::pbr::isValidIntersection</b> (const Intersection &amp;isect, const VolumeSubsurface &amp;volumeSubsurface)</td></tr>
 <tr class="separator:aebec12f77edbc3f6a57f9cd8eb643030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Eric Tabellion $Id$ </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_path_integrator_subsurface_8cc_source.html">PathIntegratorSubsurface.cc</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

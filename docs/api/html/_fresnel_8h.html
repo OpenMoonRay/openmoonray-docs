@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bsdf/Fresnel.h File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/bsdf/Fresnel.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -98,9 +98,9 @@ $(document).ready(function(){initNavTree('_fresnel_8h.html',''); initResizable()
   <div class="headertitle"><div class="title">Fresnel.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_fresnel_8hh_source.html">rendering/shading/ispc/bsdf/Fresnel.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_pbr_validity_8h_source.html">rendering/shading/PbrValidity.h</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="_velvet_albedo_8h_source.html">fabric/VelvetAlbedo.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;rendering/shading/ispc/bsdf/Fresnel.hh&gt;</code><br />
+<code>#include &lt;rendering/shading/PbrValidity.h&gt;</code><br />
+<code>#include &quot;fabric/VelvetAlbedo.h&quot;</code><br />
 <code>#include &lt;rendering/shading/ispc/bsdf/Fresnel_ispc_stubs.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/math/Color.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/platform/IspcUtil.h&gt;</code><br />
@@ -138,62 +138,72 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A conductor fresnel reflectance object.  <a href="classmoonray_1_1shading_1_1_conductor_fresnel.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoonray_1_1shading_1_1_multiple_transmission_fresnel.html">moonray::shading::MultipleTransmissionFresnel</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packages up to sixteen 'transmission' (OneMinus*) <a class="el" href="classmoonray_1_1shading_1_1_fresnel.html" title="Base class defining the Fresnel reflectance interface.">Fresnel</a> objects. Use the <a class="el" href="classmoonray_1_1shading_1_1_multiple_transmission_fresnel.html#a80ac286fa888c740d17340b70365d90e">add()</a> function to add these fresnel objects.  <a href="classmoonray_1_1shading_1_1_multiple_transmission_fresnel.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packages up to sixteen 'transmission' (OneMinus*) <a class="el" href="classmoonray_1_1shading_1_1_fresnel.html" title="Base class defining the Fresnel reflectance interface.">Fresnel</a> objects. Use the add() function to add these fresnel objects.  <a href="classmoonray_1_1shading_1_1_multiple_transmission_fresnel.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacescene__rdl2"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2.html">scene_rdl2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacescene__rdl2_1_1alloc"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2_1_1alloc.html">scene_rdl2::alloc</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemoonray"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray.html">moonray</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacemoonray_1_1shading"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html">moonray::shading</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:afd254741ab687cb2d034581b99d63918"><td class="memItemLeft" align="right" valign="top">typedef ispc::FresnelType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#afd254741ab687cb2d034581b99d63918">moonray::shading::FresnelType</a></td></tr>
+<tr class="memitem:afd254741ab687cb2d034581b99d63918"><td class="memItemLeft" align="right" valign="top"><a id="afd254741ab687cb2d034581b99d63918" name="afd254741ab687cb2d034581b99d63918"></a>
+typedef ispc::FresnelType&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::FresnelType</b></td></tr>
 <tr class="separator:afd254741ab687cb2d034581b99d63918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af4d1fb592a8bce3c8170d06c997f04c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#af4d1fb592a8bce3c8170d06c997f04c1">moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</a> (Fresnel, Fresnelv)</td></tr>
+<tr class="memitem:af4d1fb592a8bce3c8170d06c997f04c1"><td class="memItemLeft" align="right" valign="top"><a id="af4d1fb592a8bce3c8170d06c997f04c1" name="af4d1fb592a8bce3c8170d06c997f04c1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</b> (Fresnel, Fresnelv)</td></tr>
 <tr class="separator:af4d1fb592a8bce3c8170d06c997f04c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21130da9e81cb29afb0904c6db8e06d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a21130da9e81cb29afb0904c6db8e06d8">moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</a> (SchlickFresnel, SchlickFresnelv)</td></tr>
+<tr class="memitem:a21130da9e81cb29afb0904c6db8e06d8"><td class="memItemLeft" align="right" valign="top"><a id="a21130da9e81cb29afb0904c6db8e06d8" name="a21130da9e81cb29afb0904c6db8e06d8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</b> (SchlickFresnel, SchlickFresnelv)</td></tr>
 <tr class="separator:a21130da9e81cb29afb0904c6db8e06d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5833193cdfb8d820f4383fe9061a0055"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a5833193cdfb8d820f4383fe9061a0055">moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</a> (OneMinusRoughSchlickFresnel, OneMinusRoughSchlickFresnelv)</td></tr>
+<tr class="memitem:a5833193cdfb8d820f4383fe9061a0055"><td class="memItemLeft" align="right" valign="top"><a id="a5833193cdfb8d820f4383fe9061a0055" name="a5833193cdfb8d820f4383fe9061a0055"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</b> (OneMinusRoughSchlickFresnel, OneMinusRoughSchlickFresnelv)</td></tr>
 <tr class="separator:a5833193cdfb8d820f4383fe9061a0055"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25e4dba660d38ff2d4bd3ca61d6dfb0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a25e4dba660d38ff2d4bd3ca61d6dfb0f">moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</a> (DielectricFresnel, DielectricFresnelv)</td></tr>
+<tr class="memitem:a25e4dba660d38ff2d4bd3ca61d6dfb0f"><td class="memItemLeft" align="right" valign="top"><a id="a25e4dba660d38ff2d4bd3ca61d6dfb0f" name="a25e4dba660d38ff2d4bd3ca61d6dfb0f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</b> (DielectricFresnel, DielectricFresnelv)</td></tr>
 <tr class="separator:a25e4dba660d38ff2d4bd3ca61d6dfb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93376379b2452b0aa0012233aafaeb74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a93376379b2452b0aa0012233aafaeb74">moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</a> (ConductorFresnel, ConductorFresnelv)</td></tr>
+<tr class="memitem:a93376379b2452b0aa0012233aafaeb74"><td class="memItemLeft" align="right" valign="top"><a id="a93376379b2452b0aa0012233aafaeb74" name="a93376379b2452b0aa0012233aafaeb74"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</b> (ConductorFresnel, ConductorFresnelv)</td></tr>
 <tr class="separator:a93376379b2452b0aa0012233aafaeb74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67af63901062797fabb778e469082c62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a67af63901062797fabb778e469082c62">moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</a> (OneMinusFresnel, OneMinusFresnelv)</td></tr>
+<tr class="memitem:a67af63901062797fabb778e469082c62"><td class="memItemLeft" align="right" valign="top"><a id="a67af63901062797fabb778e469082c62" name="a67af63901062797fabb778e469082c62"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</b> (OneMinusFresnel, OneMinusFresnelv)</td></tr>
 <tr class="separator:a67af63901062797fabb778e469082c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41e7164b61bde5e5e55ce6d657c0bf0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a41e7164b61bde5e5e55ce6d657c0bf0b">moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</a> (OneMinusVelvetFresnel, OneMinusVelvetFresnelv)</td></tr>
+<tr class="memitem:a41e7164b61bde5e5e55ce6d657c0bf0b"><td class="memItemLeft" align="right" valign="top"><a id="a41e7164b61bde5e5e55ce6d657c0bf0b" name="a41e7164b61bde5e5e55ce6d657c0bf0b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</b> (OneMinusVelvetFresnel, OneMinusVelvetFresnelv)</td></tr>
 <tr class="separator:a41e7164b61bde5e5e55ce6d657c0bf0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe5a1898c89b2661d3303fd1a600311a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#afe5a1898c89b2661d3303fd1a600311a">moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</a> (OneMinusRoughFresnel, OneMinusRoughFresnelv)</td></tr>
+<tr class="memitem:afe5a1898c89b2661d3303fd1a600311a"><td class="memItemLeft" align="right" valign="top"><a id="afe5a1898c89b2661d3303fd1a600311a" name="afe5a1898c89b2661d3303fd1a600311a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</b> (OneMinusRoughFresnel, OneMinusRoughFresnelv)</td></tr>
 <tr class="separator:afe5a1898c89b2661d3303fd1a600311a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad77f3a967babaea075a365f0fd1b7082"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#ad77f3a967babaea075a365f0fd1b7082">moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</a> (MultipleTransmissionFresnel, MultipleTransmissionFresnelv)</td></tr>
+<tr class="memitem:ad77f3a967babaea075a365f0fd1b7082"><td class="memItemLeft" align="right" valign="top"><a id="ad77f3a967babaea075a365f0fd1b7082" name="ad77f3a967babaea075a365f0fd1b7082"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::ISPC_UTIL_TYPEDEF_STRUCT</b> (MultipleTransmissionFresnel, MultipleTransmissionFresnelv)</td></tr>
 <tr class="separator:ad77f3a967babaea075a365f0fd1b7082"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3be9c589599fed5d3cdf30047815263"><td class="memItemLeft" align="right" valign="top">Fresnel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#aa3be9c589599fed5d3cdf30047815263">moonray::shading::createFresnel</a> (<a class="el" href="classscene__rdl2_1_1alloc_1_1_arena.html">scene_rdl2::alloc::Arena</a> *arena, const Fresnelv *fresnelv, int lane)</td></tr>
+<tr class="memitem:aa3be9c589599fed5d3cdf30047815263"><td class="memItemLeft" align="right" valign="top"><a id="aa3be9c589599fed5d3cdf30047815263" name="aa3be9c589599fed5d3cdf30047815263"></a>
+Fresnel *&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::createFresnel</b> (<a class="el" href="classscene__rdl2_1_1alloc_1_1_arena.html">scene_rdl2::alloc::Arena</a> *arena, const Fresnelv *fresnelv, int lane)</td></tr>
 <tr class="separator:aa3be9c589599fed5d3cdf30047815263"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cfe5d795c207aa212afcd9d1a7d7a95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a7cfe5d795c207aa212afcd9d1a7d7a95">moonray::shading::diffuseFresnelReflectance</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> eta)</td></tr>
+<tr class="memitem:a7cfe5d795c207aa212afcd9d1a7d7a95"><td class="memItemLeft" align="right" valign="top"><a id="a7cfe5d795c207aa212afcd9d1a7d7a95" name="a7cfe5d795c207aa212afcd9d1a7d7a95"></a>
+finline float&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::diffuseFresnelReflectance</b> (float eta)</td></tr>
 <tr class="separator:a7cfe5d795c207aa212afcd9d1a7d7a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6343d34b6ee2b750f54d1d802445b302"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a6343d34b6ee2b750f54d1d802445b302">moonray::shading::averageFresnelReflectance</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> neta)</td></tr>
+<tr class="memitem:a6343d34b6ee2b750f54d1d802445b302"><td class="memItemLeft" align="right" valign="top"><a id="a6343d34b6ee2b750f54d1d802445b302" name="a6343d34b6ee2b750f54d1d802445b302"></a>
+finline float&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::averageFresnelReflectance</b> (float neta)</td></tr>
 <tr class="separator:a6343d34b6ee2b750f54d1d802445b302"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13aa098b5f292577961b75f938a8a813"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a13aa098b5f292577961b75f938a8a813">moonray::shading::averageInvFresnelReflectance</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> neta)</td></tr>
+<tr class="memitem:a13aa098b5f292577961b75f938a8a813"><td class="memItemLeft" align="right" valign="top"><a id="a13aa098b5f292577961b75f938a8a813" name="a13aa098b5f292577961b75f938a8a813"></a>
+finline float&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::averageInvFresnelReflectance</b> (float neta)</td></tr>
 <tr class="separator:a13aa098b5f292577961b75f938a8a813"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa20c553c46d0976f213059703a5baf4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#aa20c553c46d0976f213059703a5baf4d">moonray::shading::averageFresnelReflectance</a> (const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;reflectivity, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;edgeTint)</td></tr>
+<tr class="memitem:aa20c553c46d0976f213059703a5baf4d"><td class="memItemLeft" align="right" valign="top"><a id="aa20c553c46d0976f213059703a5baf4d" name="aa20c553c46d0976f213059703a5baf4d"></a>
+finline <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a>&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::averageFresnelReflectance</b> (const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;reflectivity, const <a class="el" href="structscene__rdl2_1_1math_1_1_color.html">scene_rdl2::math::Color</a> &amp;edgeTint)</td></tr>
 <tr class="separator:aa20c553c46d0976f213059703a5baf4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49627da8afba581a787dcb4167d2582b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a0883b9b2f3533041de8c56cc25c7140e">finline</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemoonray_1_1shading.html#a49627da8afba581a787dcb4167d2582b">moonray::shading::averageFresnelReflectance</a> (<a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> neta, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> &amp;favg, <a class="el" href="immintrin__emu_8h.html#ab2f1a26a8dd4ebbd8cb2d630fbca9160">float</a> &amp;favgInv)</td></tr>
+<tr class="memitem:a49627da8afba581a787dcb4167d2582b"><td class="memItemLeft" align="right" valign="top"><a id="a49627da8afba581a787dcb4167d2582b" name="a49627da8afba581a787dcb4167d2582b"></a>
+finline void&#160;</td><td class="memItemRight" valign="bottom"><b>moonray::shading::averageFresnelReflectance</b> (float neta, float &amp;favg, float &amp;favgInv)</td></tr>
 <tr class="separator:a49627da8afba581a787dcb4167d2582b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Eric Tabellion $Id$ </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_fresnel_8h_source.html">Fresnel.h</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

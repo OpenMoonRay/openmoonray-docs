@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/ispc/Shadingv.cc File Reference</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/moonray-main/lib/rendering/shading/ispc/Shadingv.cc File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -97,10 +97,10 @@ $(document).ready(function(){initNavTree('_shadingv_8cc.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_shadingv_8h_source.html">Shadingv.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="_bsdf_labels_8h_source.html">rendering/shading/ispc/BsdfLabels.h</a>&gt;</code><br />
+<code>#include &lt;rendering/shading/ispc/BsdfLabels.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="_bsdfv_8h_source.html">rendering/shading/bsdf/Bsdfv.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_bsdf_builder_8h_source.html">rendering/shading/BsdfBuilder.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_shading_t_l_state_8h_source.html">rendering/bvh/shading/ShadingTLState.h</a>&gt;</code><br />
+<code>#include &lt;rendering/shading/BsdfBuilder.h&gt;</code><br />
+<code>#include &lt;rendering/bvh/shading/ShadingTLState.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/common/platform/Platform.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/render/util/Arena.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/scene/rdl2/Displacement.h&gt;</code><br />
@@ -108,43 +108,21 @@ $(document).ready(function(){initNavTree('_shadingv_8cc.html',''); initResizable
 <code>#include &lt;scene_rdl2/scene/rdl2/Map.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/scene/rdl2/NormalMap.h&gt;</code><br />
 <code>#include &lt;scene_rdl2/scene/rdl2/Material.h&gt;</code><br />
-</div>
-<p><a href="_shadingv_8cc_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacescene__rdl2"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2.html">scene_rdl2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacescene__rdl2_1_1rdl2"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescene__rdl2_1_1rdl2.html">scene_rdl2::rdl2</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ab7771e554e1fc73f40753784e231d227"><td class="memItemLeft" align="right" valign="top">typedef void(__cdecl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_shadingv_8cc.html#ab7771e554e1fc73f40753784e231d227">BsdfBuilderArrayInitFuncv</a>) (<a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls, unsigned numStatev, const moonray::shading::Statev *state, rdl2::Bsdfv *bsdfv, moonray::shading::BsdfBuilderv *bsdfBuilderv, SIMD_MASK_TYPE implicitMask)</td></tr>
+<tr class="memitem:ab7771e554e1fc73f40753784e231d227"><td class="memItemLeft" align="right" valign="top"><a id="ab7771e554e1fc73f40753784e231d227" name="ab7771e554e1fc73f40753784e231d227"></a>
+typedef void(__cdecl *&#160;</td><td class="memItemRight" valign="bottom"><b>BsdfBuilderArrayInitFuncv</b>) (<a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls, unsigned numStatev, const moonray::shading::Statev *state, rdl2::Bsdfv *bsdfv, moonray::shading::BsdfBuilderv *bsdfBuilderv, SIMD_MASK_TYPE implicitMask)</td></tr>
 <tr class="separator:ab7771e554e1fc73f40753784e231d227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Brian Green </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="_shadingv_8cc_source.html">Shadingv.cc</a>.</p>
-</div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="ab7771e554e1fc73f40753784e231d227" name="ab7771e554e1fc73f40753784e231d227"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7771e554e1fc73f40753784e231d227">&#9670;&#160;</a></span>BsdfBuilderArrayInitFuncv</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(__cdecl * BsdfBuilderArrayInitFuncv) (<a class="el" href="classmoonray_1_1shading_1_1_t_l_state.html">moonray::shading::TLState</a> *tls, unsigned numStatev, const moonray::shading::Statev *state, rdl2::Bsdfv *bsdfv, moonray::shading::BsdfBuilderv *bsdfBuilderv, SIMD_MASK_TYPE implicitMask)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_shadingv_8cc_source.html#l00082">82</a> of file <a class="el" href="_shadingv_8cc_source.html">Shadingv.cc</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenMoonrayTEST #3: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/common/platform/HybridVaryingData.hh Source File</title>
+<title>OpenMoonrayTEST #4: C:/Users/PUremovic/Documents/GitHub/INPUT/scene_rdl2-main/lib/common/platform/HybridVaryingData.hh Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">OpenMoonrayTEST #3
+   <div id="projectname">OpenMoonrayTEST #4
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('_hybrid_varying_data_8hh_source.html',
   <div class="headertitle"><div class="title">HybridVaryingData.hh</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_hybrid_varying_data_8hh.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// DreamWorks Animation LLC Confidential Information.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// TM and (c) 2015 DreamWorks Animation LLC.  All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Reproduction in whole or in part without prior written permission of a</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// duly authorized representative is prohibited.</span></div>
@@ -129,18 +129,18 @@ $(document).ready(function(){initNavTree('_hybrid_varying_data_8hh_source.html',
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">//</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">// C++ code:</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">//</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="_hybrid_varying_data_8hh.html#a715ffc2be9684ea07a72412a85bebca5">   37</a></span><span class="preprocessor">    #define HVD_MEMBER(member_type, member_name)                        member_type member_name</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="_hybrid_varying_data_8hh.html#abbffbf48613a9344a75fe2d215fb6947">   38</a></span><span class="preprocessor">    #define HVD_CPP_MEMBER(member_type, member_name, size_in_bytes)     HVD_MEMBER(member_type, member_name)</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="_hybrid_varying_data_8hh.html#a6afb79b4099d4866497e2ab6abd529dd">   39</a></span><span class="preprocessor">    #define HVD_PTR(member_type, member_name)                           HVD_MEMBER(member_type, member_name)</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="_hybrid_varying_data_8hh.html#ad451ef34ee10c135410e13a4e5b3eded">   40</a></span><span class="preprocessor">    #define HVD_ARRAY(member_type, member_name, num_elems)              HVD_MEMBER(member_type, member_name[num_elems])</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="_hybrid_varying_data_8hh.html#a162e7888f4a61479242562d90ced4136">   41</a></span><span class="preprocessor">    #define HVD_CPP_PAD(member_name, size_in_bytes)                     HVD_MEMBER(uint8_t, member_name[size_in_bytes])</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="_hybrid_varying_data_8hh.html#a8679e0651f96cbfe8641ba87cd65fd44">   42</a></span><span class="preprocessor">    #define HVD_ISPC_PAD(member_name, size_in_bytes)</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="_hybrid_varying_data_8hh.html#a9088c903dd6b1a43867ec97676c26bbf">   43</a></span><span class="preprocessor">    #define HVD_REAL_PTR(member_type, member_name)                      HVD_MEMBER(member_type, member_name)</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="_hybrid_varying_data_8hh.html#a5120ee18cc01315a4fbb792ab73cde11">   44</a></span><span class="preprocessor">    #define HVD_REAL_PTR_ARRAY(member_type, member_name, num_elems)     HVD_MEMBER(member_type, member_name[num_elems])</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="_hybrid_varying_data_8hh.html#af76ee46a23a947f65f90efd76be05087">   45</a></span><span class="preprocessor">    #define HVD_PUBLIC()                                                public:</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="_hybrid_varying_data_8hh.html#a1630225bc883eaf4186a4e05f23991ec">   46</a></span><span class="preprocessor">    #define HVD_PROTECTED()                                             protected:</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="_hybrid_varying_data_8hh.html#ae4579319b61ab07c3c6f4c3c9a3b7235">   47</a></span><span class="preprocessor">    #define HVD_PRIVATE()                                               private:</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="_hybrid_varying_data_8hh.html#a5ad2711abe7b22541ea706053dcf226c">   48</a></span><span class="preprocessor">    #define HVD_NAMESPACE(namespace, subject)                           namespace::subject</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">    #define HVD_MEMBER(member_type, member_name)                        member_type member_name</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">    #define HVD_CPP_MEMBER(member_type, member_name, size_in_bytes)     HVD_MEMBER(member_type, member_name)</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">    #define HVD_PTR(member_type, member_name)                           HVD_MEMBER(member_type, member_name)</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">    #define HVD_ARRAY(member_type, member_name, num_elems)              HVD_MEMBER(member_type, member_name[num_elems])</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">    #define HVD_CPP_PAD(member_name, size_in_bytes)                     HVD_MEMBER(uint8_t, member_name[size_in_bytes])</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">    #define HVD_ISPC_PAD(member_name, size_in_bytes)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">    #define HVD_REAL_PTR(member_type, member_name)                      HVD_MEMBER(member_type, member_name)</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">    #define HVD_REAL_PTR_ARRAY(member_type, member_name, num_elems)     HVD_MEMBER(member_type, member_name[num_elems])</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">    #define HVD_PUBLIC()                                                public:</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">    #define HVD_PROTECTED()                                             protected:</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">    #define HVD_PRIVATE()                                               private:</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">    #define HVD_NAMESPACE(namespace, subject)                           namespace::subject</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('_hybrid_varying_data_8hh_source.html',
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">// each validated data member within the type as well as the size of the</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">// type. See the HVD_VALIDATOR() macro in &lt;HybridVaryingData.h&gt; for more details.</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="_hybrid_varying_data_8hh.html#a3e9e147943a80b5001f929801b21e2f9">   61</a></span><span class="preprocessor">#define HVD_UPDATE_CRC()                        \</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#define HVD_UPDATE_CRC()                        \</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">    crc = crc ^ (ofs &lt;&lt; 13);                    \</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">    crc = (crc &gt;&gt; 1) | ((crc &amp; 0x1) &lt;&lt; 31)</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
@@ -178,13 +178,13 @@ $(document).ready(function(){initNavTree('_hybrid_varying_data_8hh_source.html',
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="_hybrid_varying_data_8hh.html#a10f93a71204463c0e3a0e35f5df00dca">   86</a></span><span class="preprocessor">    #define HVD_BEGIN_VALIDATION(type_name, vlen)       \</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">    #define HVD_BEGIN_VALIDATION(type_name, vlen)       \</span></div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">        uint32_t crc = 0xffaaf0af;                      \</span></div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">        uint32_t ofs = 0;                               \</span></div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">        uint32_t numLanes = vlen;                       \</span></div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">        if (verbose) printf(#type_name &quot; (C++):\n&quot;</span>)</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="_hybrid_varying_data_8hh.html#ac56c511287f04ef58e4c6dc9a19aba9b">   92</a></span><span class="preprocessor">    #define HVD_VALIDATE(type_name, member_name)                            \</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">    #define HVD_VALIDATE(type_name, member_name)                            \</span></div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">        ofs = (uint32_t)((intptr_t)(&amp;((((type_name *)(0))-&gt;member_name)))); \</span></div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">        ofs *= numLanes;                                                    \</span></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">        if (verbose) {                                                      \</span></div>
@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('_hybrid_varying_data_8hh_source.html',
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        ofs += sizeof(type_name) * numLanes;                                \</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        HVD_UPDATE_CRC()</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="_hybrid_varying_data_8hh.html#aed3d87d9d21558c6519cf8f5c8eaed8c">  102</a></span><span class="preprocessor">    #define HVD_END_VALIDATION                          \</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">    #define HVD_END_VALIDATION                          \</span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">        if (verbose) printf(&quot;    CRC = %u\n&quot;</span>, crc);     \</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        return crc</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('_hybrid_varying_data_8hh_source.html',
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_98bf6363159b156e9be2b7c097b1406b.html">common</a></li><li class="navelem"><a class="el" href="dir_47be96c5fe1ca429515e5f48dd965746.html">platform</a></li><li class="navelem"><a class="el" href="_hybrid_varying_data_8hh.html">HybridVaryingData.hh</a></li>
+    <li class="navelem"><a class="el" href="dir_a53ad1cf27888d10001018eef0551761.html">INPUT</a></li><li class="navelem"><a class="el" href="dir_d79ac17d8564fdb9136de5614dd8df14.html">scene_rdl2-main</a></li><li class="navelem"><a class="el" href="dir_291ba26a4c2d0e0e83aef9721e441528.html">lib</a></li><li class="navelem"><a class="el" href="dir_98bf6363159b156e9be2b7c097b1406b.html">common</a></li><li class="navelem"><a class="el" href="dir_47be96c5fe1ca429515e5f48dd965746.html">platform</a></li><li class="navelem"><b>HybridVaryingData.hh</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
